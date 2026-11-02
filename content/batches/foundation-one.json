@@ -1,0 +1,981 @@
+{
+  "schema": 1,
+  "batch_id": "foundation-one",
+  "review": {
+    "status": "reviewed",
+    "by": "Codex linguistic and scene-design review",
+    "date": "2026-11-02",
+    "human_review": false,
+    "notes": "Reviewed authored examples, translations and construction contrasts. Image meaning and independent listening remain separate production gates."
+  },
+  "patterns": [
+    {
+      "source_key": "that-is",
+      "key": "that",
+      "id": 102,
+      "form": "That is + singular noun",
+      "wrong": "That are our school.",
+      "examples": [
+        [
+          "That is my house.",
+          "ذلك منزلي.",
+          "A man pointing across a road to his modest house"
+        ],
+        [
+          "That is our school.",
+          "تلك مدرستنا.",
+          "A student pointing to a school across a courtyard"
+        ],
+        [
+          "That is my car.",
+          "تلك سيارتي.",
+          "A woman pointing to her parked car in the distance"
+        ],
+        [
+          "That is a big tree.",
+          "تلك شجرة كبيرة.",
+          "A child and parent looking at a distant large tree"
+        ],
+        [
+          "That is the train to London.",
+          "ذلك هو القطار المتجه إلى لندن.",
+          "A traveler pointing to a train on the opposite platform"
+        ],
+        [
+          "That is a beautiful painting.",
+          "تلك لوحة جميلة.",
+          "A visitor admiring a painting on a distant gallery wall"
+        ],
+        [
+          "That is the entrance to the museum.",
+          "ذلك مدخل المتحف.",
+          "A guide indicating a museum entrance across a plaza"
+        ],
+        [
+          "That is our new teacher.",
+          "تلك معلمتنا الجديدة.",
+          "Two adult learners noticing a teacher across a classroom"
+        ],
+        [
+          "That is a good place for a picnic.",
+          "ذلك مكان مناسب للنزهة.",
+          "A family pointing to a shaded spot across a park"
+        ],
+        [
+          "That is the bridge we need to cross.",
+          "ذلك الجسر الذي علينا عبوره.",
+          "Two hikers looking ahead toward a footbridge"
+        ],
+        [
+          "That is the shop with the blue door.",
+          "ذلك هو المتجر ذو الباب الأزرق.",
+          "A pedestrian pointing down a street to a shop with a blue door"
+        ],
+        [
+          "That is my suitcase beside the counter.",
+          "تلك حقيبتي بجوار المنضدة.",
+          "A traveler identifying a suitcase several meters away near a counter"
+        ]
+      ]
+    },
+    {
+      "source_key": "i-am",
+      "key": "am",
+      "id": 103,
+      "form": "I am / I'm + adjective, noun or place",
+      "wrong": "I is ready.",
+      "examples": [
+        [
+          "I'm a student.",
+          "أنا طالب.",
+          "An adult student carrying books into a college"
+        ],
+        [
+          "I am happy.",
+          "أنا سعيد.",
+          "A smiling person enjoying a quiet sunny garden"
+        ],
+        [
+          "I'm at home.",
+          "أنا في المنزل.",
+          "A woman relaxing in her living room"
+        ],
+        [
+          "I am ready.",
+          "أنا مستعد.",
+          "A man with a packed bag ready to leave"
+        ],
+        [
+          "I'm a nurse at the local hospital.",
+          "أنا ممرضة في المستشفى المحلي.",
+          "A nurse standing in a bright hospital corridor"
+        ],
+        [
+          "I'm tired after the long journey.",
+          "أنا متعب بعد الرحلة الطويلة.",
+          "A tired traveler sitting beside a suitcase"
+        ],
+        [
+          "I am from Yemen.",
+          "أنا من اليمن.",
+          "A Yemeni adult introducing himself to an international study group"
+        ],
+        [
+          "I'm interested in photography.",
+          "أنا مهتم بالتصوير.",
+          "A learner examining a camera at a photography workshop"
+        ],
+        [
+          "I'm in the kitchen.",
+          "أنا في المطبخ.",
+          "A woman preparing vegetables in a home kitchen"
+        ],
+        [
+          "I am responsible for the garden.",
+          "أنا مسؤول عن الحديقة.",
+          "A gardener holding a watering can beside healthy plants"
+        ],
+        [
+          "I'm early for the meeting.",
+          "وصلت مبكرًا إلى الاجتماع.",
+          "An office worker waiting in an almost empty meeting room"
+        ],
+        [
+          "I'm proud of our team.",
+          "أنا فخور بفريقنا.",
+          "A team member smiling beside a completed community project"
+        ]
+      ]
+    },
+    {
+      "source_key": "it-is",
+      "key": "it",
+      "id": 104,
+      "form": "It is / It's + complement",
+      "wrong": "It are cold.",
+      "examples": [
+        [
+          "It's a beautiful day.",
+          "إنه يوم جميل.",
+          "A person enjoying a bright day in a park"
+        ],
+        [
+          "It is cold.",
+          "الجو بارد.",
+          "A person in a warm coat beside a frosty window"
+        ],
+        [
+          "It's my phone.",
+          "إنه هاتفي.",
+          "A woman identifying her phone on a table"
+        ],
+        [
+          "It's just a game.",
+          "إنها مجرد لعبة.",
+          "Friends smiling reassuringly during a board game"
+        ],
+        [
+          "It's time for breakfast.",
+          "حان وقت الإفطار.",
+          "A family gathering around a breakfast table"
+        ],
+        [
+          "It is important to listen carefully.",
+          "من المهم الإصغاء بعناية.",
+          "An adult learner paying attention to a tutor"
+        ],
+        [
+          "It's too heavy for this shelf.",
+          "إنه أثقل مما يحتمله هذا الرف.",
+          "A person checking a heavy box beside a delicate shelf"
+        ],
+        [
+          "It's only a short walk from here.",
+          "إنها مسافة قصيرة سيرًا من هنا.",
+          "Two pedestrians discussing a nearby destination"
+        ],
+        [
+          "It's a present for my sister.",
+          "إنها هدية لأختي.",
+          "A person wrapping a present beside a family photo"
+        ],
+        [
+          "It is difficult to hear in this room.",
+          "يصعب السماع في هذه الغرفة.",
+          "A learner leaning forward to hear in a busy room"
+        ],
+        [
+          "It's safe to cross now.",
+          "أصبح عبور الطريق آمنًا الآن.",
+          "A parent and child at a pedestrian crossing with stopped traffic"
+        ],
+        [
+          "It's our first day in this city.",
+          "إنه يومنا الأول في هذه المدينة.",
+          "Two travelers exploring a city with a folded map"
+        ]
+      ]
+    },
+    {
+      "source_key": "i-have",
+      "key": "possess",
+      "id": 105,
+      "form": "I have + noun",
+      "wrong": "I has two books.",
+      "examples": [
+        [
+          "I have a good job.",
+          "لدي وظيفة جيدة.",
+          "A contented adult working at a tidy desk"
+        ],
+        [
+          "I have a laptop.",
+          "لدي حاسوب محمول.",
+          "A student holding a laptop"
+        ],
+        [
+          "I have a new idea.",
+          "لدي فكرة جديدة.",
+          "A designer presenting a fresh sketch to a colleague"
+        ],
+        [
+          "I have two books.",
+          "لدي كتابان.",
+          "An adult learner holding exactly two books"
+        ],
+        [
+          "I have a small garden behind my house.",
+          "لدي حديقة صغيرة خلف منزلي.",
+          "A homeowner standing in a small back garden"
+        ],
+        [
+          "I have an appointment this afternoon.",
+          "لدي موعد بعد ظهر اليوم.",
+          "A person checking an appointment in a paper diary"
+        ],
+        [
+          "I have enough time to help you.",
+          "لدي وقت كافٍ لمساعدتك.",
+          "A colleague sitting down to help another worker"
+        ],
+        [
+          "I have three sisters.",
+          "لدي ثلاث أخوات.",
+          "A man standing with his three adult sisters"
+        ],
+        [
+          "I have a question about the lesson.",
+          "لدي سؤال عن الدرس.",
+          "An adult learner raising a hand over a notebook"
+        ],
+        [
+          "I have some experience with computers.",
+          "لدي بعض الخبرة في استخدام الحواسيب.",
+          "A person helping a colleague use a desktop computer"
+        ],
+        [
+          "I have a ticket for the evening train.",
+          "لدي تذكرة لقطار المساء.",
+          "A traveler holding a ticket near a station at dusk"
+        ],
+        [
+          "I have everything we need for dinner.",
+          "لدي كل ما نحتاجه للعشاء.",
+          "A cook showing fresh dinner ingredients on a counter"
+        ]
+      ]
+    },
+    {
+      "source_key": "ive-got",
+      "key": "got",
+      "id": 106,
+      "form": "I've got + noun",
+      "wrong": "I've got to a ticket.",
+      "note_ar": "هنا have got للامتلاك أو الحالة الحالية. تختلف عن have got to + فعل التي تدل على الضرورة.",
+      "note_en": "Here have got expresses possession or a current situation. Have got to + verb expresses necessity.",
+      "examples": [
+        [
+          "I've got a job!",
+          "لدي وظيفة!",
+          "An adult happily holding an employment letter"
+        ],
+        [
+          "I've got a new phone.",
+          "لدي هاتف جديد.",
+          "A woman showing her new phone to a friend"
+        ],
+        [
+          "I've got a ticket.",
+          "لدي تذكرة.",
+          "A traveler holding a ticket at a station"
+        ],
+        [
+          "I've got a book.",
+          "لدي كتاب.",
+          "A learner taking a book from a bag"
+        ],
+        [
+          "I've got an umbrella in my bag.",
+          "لدي مظلة في حقيبتي.",
+          "A person finding a folded umbrella in a bag on a rainy day"
+        ],
+        [
+          "I've got a free afternoon tomorrow.",
+          "لدي وقت فراغ غدًا بعد الظهر.",
+          "A person looking at an open afternoon in a diary"
+        ],
+        [
+          "I've got a problem with this printer.",
+          "لدي مشكلة في هذه الطابعة.",
+          "An office worker inspecting a printer jam"
+        ],
+        [
+          "I've got some good news for you.",
+          "لدي أخبار سارة لك.",
+          "An adult sharing happy news with a friend"
+        ],
+        [
+          "I've got a spare key at home.",
+          "لدي مفتاح احتياطي في المنزل.",
+          "A person holding a spare key near a home entrance"
+        ],
+        [
+          "I've got two cousins in this town.",
+          "لدي اثنان من أبناء عمي في هذه البلدة.",
+          "Three adult relatives meeting in a town square"
+        ],
+        [
+          "I've got enough money for the bus.",
+          "لدي مال كافٍ لركوب الحافلة.",
+          "A passenger counting coins beside a bus stop"
+        ],
+        [
+          "I've got a plan for our next lesson.",
+          "لدي خطة لدرسنا القادم.",
+          "A tutor showing a lesson plan to learners"
+        ]
+      ]
+    },
+    {
+      "source_key": "i-want",
+      "key": "want-noun",
+      "id": 107,
+      "form": "I want + noun",
+      "wrong": "I want to an apple.",
+      "examples": [
+        [
+          "I want a dog.",
+          "أريد كلبًا.",
+          "An adult looking thoughtfully at a dog in an adoption center"
+        ],
+        [
+          "I want some water.",
+          "أريد بعض الماء.",
+          "A thirsty hiker gesturing toward a water bottle"
+        ],
+        [
+          "I want a new book.",
+          "أريد كتابًا جديدًا.",
+          "A reader choosing a new book in a bookshop"
+        ],
+        [
+          "I want an apple.",
+          "أريد تفاحة.",
+          "A shopper reaching toward apples at a fruit stall"
+        ],
+        [
+          "I want a quiet place to study.",
+          "أريد مكانًا هادئًا للدراسة.",
+          "A learner looking for a quiet library desk"
+        ],
+        [
+          "I want a window seat.",
+          "أريد مقعدًا بجوار النافذة.",
+          "A traveler indicating a window seat on a train"
+        ],
+        [
+          "I want more time for my family.",
+          "أريد مزيدًا من الوقت لأسرتي.",
+          "A parent setting aside a work laptop to join family"
+        ],
+        [
+          "I want a pair of comfortable shoes.",
+          "أريد حذاءً مريحًا.",
+          "A shopper testing comfortable walking shoes"
+        ],
+        [
+          "I want some advice about this course.",
+          "أريد بعض النصائح بشأن هذه الدورة.",
+          "A learner talking with a course adviser"
+        ],
+        [
+          "I want a smaller bag for the trip.",
+          "أريد حقيبة أصغر للرحلة.",
+          "A traveler comparing a small and a large travel bag"
+        ],
+        [
+          "I want a table near the garden.",
+          "أريد طاولة قرب الحديقة.",
+          "A diner indicating a table beside a restaurant garden"
+        ],
+        [
+          "I want a chance to explain.",
+          "أريد فرصة للتوضيح.",
+          "A person calmly asking to speak in a group discussion"
+        ]
+      ]
+    },
+    {
+      "source_key": "id-like",
+      "key": "like-noun",
+      "id": 109,
+      "form": "I'd like + noun",
+      "wrong": "I'd like to some water.",
+      "examples": [
+        [
+          "I'd like some water.",
+          "أود بعض الماء.",
+          "A guest politely asking a host for water"
+        ],
+        [
+          "I'd like a cup of tea.",
+          "أود كوبًا من الشاي.",
+          "A cafe customer politely ordering tea"
+        ],
+        [
+          "I'd like a sandwich.",
+          "أود شطيرة.",
+          "A customer ordering a sandwich at a cafe counter"
+        ],
+        [
+          "I'd like a ticket.",
+          "أود تذكرة.",
+          "A passenger politely asking a station employee for a ticket"
+        ],
+        [
+          "I'd like a room for two nights.",
+          "أود غرفة لليلتين.",
+          "A traveler speaking politely to a hotel receptionist"
+        ],
+        [
+          "I'd like some information about the museum.",
+          "أود بعض المعلومات عن المتحف.",
+          "A tourist requesting a museum brochure"
+        ],
+        [
+          "I'd like a different size, please.",
+          "أود مقاسًا مختلفًا، من فضلك.",
+          "A customer showing a jacket to a shop assistant"
+        ],
+        [
+          "I'd like a seat near the front.",
+          "أود مقعدًا قرب المقدمة.",
+          "A visitor discussing seating with an usher"
+        ],
+        [
+          "I'd like a copy of the timetable.",
+          "أود نسخة من الجدول.",
+          "A student requesting a timetable at a reception desk"
+        ],
+        [
+          "I'd like some soup before the main course.",
+          "أود بعض الحساء قبل الطبق الرئيسي.",
+          "A diner politely discussing a meal with a waiter"
+        ],
+        [
+          "I'd like an appointment on Monday.",
+          "أود موعدًا يوم الاثنين.",
+          "A person arranging an appointment at a reception desk"
+        ],
+        [
+          "I'd like a little more time to decide.",
+          "أود وقتًا إضافيًا قليلًا لاتخاذ القرار.",
+          "A customer thoughtfully considering two options with an adviser"
+        ]
+      ]
+    },
+    {
+      "source_key": "i-like",
+      "key": "enjoy",
+      "id": 111,
+      "form": "I like + noun or verb-ing",
+      "wrong": "I like read books.",
+      "examples": [
+        [
+          "I like English.",
+          "أحب اللغة الإنجليزية.",
+          "An adult enjoying an English lesson with a tutor"
+        ],
+        [
+          "I like reading.",
+          "أحب القراءة.",
+          "A woman reading comfortably in an armchair"
+        ],
+        [
+          "I like apples.",
+          "أحب التفاح.",
+          "A person selecting apples at a market"
+        ],
+        [
+          "I like England.",
+          "تعجبني إنجلترا.",
+          "A traveler enjoying an English village street"
+        ],
+        [
+          "I like cooking with my family.",
+          "أحب الطبخ مع أسرتي.",
+          "A family preparing a meal together"
+        ],
+        [
+          "I like quiet mornings.",
+          "أحب الصباح الهادئ.",
+          "A person enjoying tea beside a sunlit window"
+        ],
+        [
+          "I like learning new skills.",
+          "أحب تعلم مهارات جديدة.",
+          "An adult learning pottery in a workshop"
+        ],
+        [
+          "I like this blue jacket.",
+          "تعجبني هذه السترة الزرقاء.",
+          "A shopper admiring a blue jacket"
+        ],
+        [
+          "I like walking by the sea.",
+          "أحب المشي بجوار البحر.",
+          "A person walking along a peaceful coast"
+        ],
+        [
+          "I like working with this team.",
+          "أحب العمل مع هذا الفريق.",
+          "Colleagues cooperating warmly on a small project"
+        ],
+        [
+          "I like fresh bread in the morning.",
+          "أحب الخبز الطازج في الصباح.",
+          "A person enjoying fresh bread at breakfast"
+        ],
+        [
+          "I like helping my neighbors.",
+          "أحب مساعدة جيراني.",
+          "A person helping a neighbor carry groceries"
+        ]
+      ]
+    },
+    {
+      "source_key": "i-dont-like",
+      "key": "dislike",
+      "id": 112,
+      "form": "I don't like + noun or verb-ing",
+      "wrong": "I don't likes waiting.",
+      "examples": [
+        [
+          "I don't like loud music.",
+          "لا أحب الموسيقى الصاخبة.",
+          "An adult covering an ear near a loud speaker"
+        ],
+        [
+          "I don't like cold weather.",
+          "لا أحب الطقس البارد.",
+          "A person looking uncomfortable in cold windy weather"
+        ],
+        [
+          "I don't like waiting.",
+          "لا أحب الانتظار.",
+          "An adult waiting impatiently in a long queue"
+        ],
+        [
+          "I don't like this color.",
+          "لا يعجبني هذا اللون.",
+          "A shopper politely rejecting a bright fabric sample"
+        ],
+        [
+          "I don't like wasting food.",
+          "لا أحب إهدار الطعام.",
+          "A person carefully saving leftovers in a container"
+        ],
+        [
+          "I don't like driving in heavy traffic.",
+          "لا أحب القيادة وسط الازدحام الشديد.",
+          "A driver looking tired in stopped traffic"
+        ],
+        [
+          "I don't like very sweet tea.",
+          "لا أحب الشاي شديد الحلاوة.",
+          "A person politely declining extra sugar in tea"
+        ],
+        [
+          "I don't like studying in a noisy room.",
+          "لا أحب الدراسة في غرفة صاخبة.",
+          "A learner distracted by a busy conversation nearby"
+        ],
+        [
+          "I don't like leaving work unfinished.",
+          "لا أحب ترك العمل دون إنجاز.",
+          "An adult carefully finishing a small repair project"
+        ],
+        [
+          "I don't like wet shoes.",
+          "لا أحب الأحذية المبتلة.",
+          "A person looking at wet shoes beside a rainy doorway"
+        ],
+        [
+          "I don't like getting up before sunrise.",
+          "لا أحب الاستيقاظ قبل شروق الشمس.",
+          "A sleepy adult sitting up beside a pre-dawn window"
+        ],
+        [
+          "I don't like making promises I can't keep.",
+          "لا أحب تقديم وعود لا أستطيع الوفاء بها.",
+          "A person thoughtfully checking a diary before agreeing to a request"
+        ]
+      ]
+    },
+    {
+      "source_key": "my-name-is",
+      "key": "name",
+      "id": 113,
+      "form": "My name is + name",
+      "wrong": "My name are Ali.",
+      "examples": [
+        [
+          "My name is Ali.",
+          "اسمي علي.",
+          "A man introducing himself to a new study partner"
+        ],
+        [
+          "My name is Sara.",
+          "اسمي سارة.",
+          "A woman introducing herself at a classroom doorway"
+        ],
+        [
+          "My name is Omar.",
+          "اسمي عمر.",
+          "A man introducing himself to a hotel receptionist"
+        ],
+        [
+          "My name is Noor.",
+          "اسمي نور.",
+          "A woman introducing herself in an online language class"
+        ],
+        [
+          "My name is Amal, and I'm your guide.",
+          "اسمي أمل، وأنا مرشدتكم.",
+          "A woman introducing herself to a small tour group"
+        ],
+        [
+          "My name is Sami. I'm here for the interview.",
+          "اسمي سامي. حضرت لإجراء المقابلة.",
+          "A man introducing himself at an office reception"
+        ],
+        [
+          "My name is Huda, and this is my sister.",
+          "اسمي هدى، وهذه أختي.",
+          "A woman introducing herself and her sister to a neighbor"
+        ],
+        [
+          "My name is Adam. I booked a table for two.",
+          "اسمي آدم. حجزت طاولة لشخصين.",
+          "A man greeting a restaurant host beside his companion"
+        ],
+        [
+          "My name is Lina, but my friends call me Lin.",
+          "اسمي لينا، لكن أصدقائي ينادونني لين.",
+          "A woman introducing herself to new friends at a cafe"
+        ],
+        [
+          "My name is Yasser. I'm the new librarian.",
+          "اسمي ياسر. أنا أمين المكتبة الجديد.",
+          "A new librarian introducing himself in a library"
+        ],
+        [
+          "My name is Mariam, and I'll be helping you today.",
+          "اسمي مريم، وسأساعدك اليوم.",
+          "A woman at an information desk welcoming a visitor"
+        ],
+        [
+          "My name is Fadi. We spoke on the phone yesterday.",
+          "اسمي فادي. تحدثنا هاتفيًا أمس.",
+          "A man greeting a colleague he is meeting in person"
+        ]
+      ]
+    },
+    {
+      "source_key": "whats-your-name",
+      "key": "ask-name",
+      "id": 114,
+      "form": "What's + possessive + name?",
+      "wrong": "What your name is?",
+      "examples": [
+        [
+          "What's your name?",
+          "ما اسمك؟",
+          "Two adults meeting for the first time at a language class"
+        ],
+        [
+          "What's your first name?",
+          "ما اسمك الأول؟",
+          "A receptionist asking a visitor for a first name"
+        ],
+        [
+          "What's your friend's name?",
+          "ما اسم صديقك؟",
+          "A learner asking a classmate about a friend across the room"
+        ],
+        [
+          "What's your teacher's name?",
+          "ما اسم معلمك؟",
+          "Two learners talking beside a classroom"
+        ],
+        [
+          "What's your family name?",
+          "ما اسم عائلتك؟",
+          "A visitor giving registration details at a desk"
+        ],
+        [
+          "What's your sister's name?",
+          "ما اسم أختك؟",
+          "An adult asking a friend about a sister in a family photo"
+        ],
+        [
+          "What's your brother's name?",
+          "ما اسم أخيك؟",
+          "Two adults discussing a brother in a family photo"
+        ],
+        [
+          "What's your manager's name?",
+          "ما اسم مديرك؟",
+          "A new employee asking a colleague about their manager"
+        ],
+        [
+          "What's your dog's name?",
+          "ما اسم كلبك؟",
+          "A person asking an owner about a friendly dog in a park"
+        ],
+        [
+          "What's your guide's name?",
+          "ما اسم مرشدكم؟",
+          "A traveler asking another visitor about their tour guide"
+        ],
+        [
+          "What's your neighbor's name?",
+          "ما اسم جارك؟",
+          "Two people talking near neighboring homes"
+        ],
+        [
+          "What's your colleague's name?",
+          "ما اسم زميلك؟",
+          "An adult asking about a colleague at an office gathering"
+        ]
+      ]
+    },
+    {
+      "source_key": "these-are",
+      "key": "these",
+      "id": 116,
+      "form": "These are + plural noun",
+      "wrong": "These is my books.",
+      "examples": [
+        [
+          "These are my books.",
+          "هذه كتبي.",
+          "An adult presenting several books on a nearby table"
+        ],
+        [
+          "These are my shoes.",
+          "هذا حذائي.",
+          "A person showing a pair of shoes held close"
+        ],
+        [
+          "These are my friends.",
+          "هؤلاء أصدقائي.",
+          "An adult introducing a nearby group of friends"
+        ],
+        [
+          "These are apples.",
+          "هذه تفاحات.",
+          "A seller showing a nearby basket of apples"
+        ],
+        [
+          "These are the keys to our new home.",
+          "هذه مفاتيح منزلنا الجديد.",
+          "A couple holding several house keys"
+        ],
+        [
+          "These are fresh vegetables from our garden.",
+          "هذه خضروات طازجة من حديقتنا.",
+          "A gardener showing a basket of fresh vegetables"
+        ],
+        [
+          "These are the photos from our trip.",
+          "هذه صور رحلتنا.",
+          "Friends looking at printed travel photos on a table"
+        ],
+        [
+          "These are your tickets for tonight.",
+          "هذه تذاكركم لهذه الليلة.",
+          "A host handing several tickets to guests"
+        ],
+        [
+          "These are the tools we need.",
+          "هذه الأدوات التي نحتاجها.",
+          "A craftsperson showing a small set of tools"
+        ],
+        [
+          "These are my notes from the lesson.",
+          "هذه ملاحظاتي من الدرس.",
+          "An adult learner spreading several pages of notes on a desk"
+        ],
+        [
+          "These are comfortable chairs.",
+          "هذه كراسٍ مريحة.",
+          "Two adults testing chairs in a furniture shop"
+        ],
+        [
+          "These are the cups for our guests.",
+          "هذه أكواب ضيوفنا.",
+          "A host arranging several cups on a tray"
+        ]
+      ]
+    },
+    {
+      "source_key": "there-is",
+      "key": "there-is",
+      "id": 117,
+      "form": "There is + singular or uncountable noun",
+      "wrong": "There are a book on the table.",
+      "examples": [
+        [
+          "There is a book on the table.",
+          "يوجد كتاب على الطاولة.",
+          "One book lying on a clear wooden table"
+        ],
+        [
+          "There is a bank in front of the hotel.",
+          "يوجد بنك أمام الفندق.",
+          "A bank building facing a hotel across a street"
+        ],
+        [
+          "There is some water.",
+          "يوجد بعض الماء.",
+          "A glass jug containing some water on a table"
+        ],
+        [
+          "There is a cat in the garden.",
+          "توجد قطة في الحديقة.",
+          "A cat sitting among plants in a garden"
+        ],
+        [
+          "There is a bus stop near the school.",
+          "يوجد موقف حافلات قرب المدرسة.",
+          "A bus stop beside a school entrance"
+        ],
+        [
+          "There is enough rice for everyone.",
+          "يوجد أرز يكفي الجميع.",
+          "A generous bowl of cooked rice on a family table"
+        ],
+        [
+          "There is a message on your phone.",
+          "توجد رسالة على هاتفك.",
+          "A person noticing a message notification on a phone with no readable text"
+        ],
+        [
+          "There is a small shop around the corner.",
+          "يوجد متجر صغير عند المنعطف.",
+          "A pedestrian discovering a small corner shop"
+        ],
+        [
+          "There is a mistake in this drawing.",
+          "يوجد خطأ في هذا الرسم.",
+          "A designer noticing an obviously misplaced shape in a simple sketch"
+        ],
+        [
+          "There is a clean towel in the bathroom.",
+          "توجد منشفة نظيفة في الحمام.",
+          "A folded clean towel on a bathroom shelf"
+        ],
+        [
+          "There is room for one more person.",
+          "يوجد متسع لشخص إضافي.",
+          "Friends making space for another person on a bench"
+        ],
+        [
+          "There is a meeting after lunch.",
+          "يوجد اجتماع بعد الغداء.",
+          "Colleagues preparing a meeting table after a shared lunch"
+        ]
+      ]
+    },
+    {
+      "source_key": "there-are",
+      "key": "there-are",
+      "id": 118,
+      "form": "There are + plural noun",
+      "wrong": "There is three chairs here.",
+      "examples": [
+        [
+          "There are two books on the desk.",
+          "يوجد كتابان على المكتب.",
+          "Exactly two books lying on a desk"
+        ],
+        [
+          "There are many trees in the park.",
+          "توجد أشجار كثيرة في الحديقة.",
+          "A broad park filled with many trees"
+        ],
+        [
+          "There are three chairs here.",
+          "توجد ثلاثة كراسٍ هنا.",
+          "Exactly three chairs in a small meeting area"
+        ],
+        [
+          "There are a lot of books in the library.",
+          "توجد كتب كثيرة في المكتبة.",
+          "A library with many books on shelves"
+        ],
+        [
+          "There are two windows in this room.",
+          "توجد نافذتان في هذه الغرفة.",
+          "A bright room with exactly two windows"
+        ],
+        [
+          "There are fresh oranges in the kitchen.",
+          "توجد برتقالات طازجة في المطبخ.",
+          "Several fresh oranges in a kitchen bowl"
+        ],
+        [
+          "There are several ways to solve this problem.",
+          "توجد عدة طرق لحل هذه المشكلة.",
+          "Colleagues comparing different paper prototypes for one task"
+        ],
+        [
+          "There are four people waiting outside.",
+          "يوجد أربعة أشخاص ينتظرون بالخارج.",
+          "Exactly four adults waiting outside a reception door"
+        ],
+        [
+          "There are clean cups on the shelf.",
+          "توجد أكواب نظيفة على الرف.",
+          "Several clean cups arranged on a shelf"
+        ],
+        [
+          "There are new students in our class.",
+          "يوجد طلاب جدد في صفنا.",
+          "A tutor welcoming several new adult students"
+        ],
+        [
+          "There are flowers beside the entrance.",
+          "توجد أزهار بجوار المدخل.",
+          "Flower pots beside a welcoming entrance"
+        ],
+        [
+          "There are plenty of seats on this bus.",
+          "توجد مقاعد كثيرة متاحة في هذه الحافلة.",
+          "The interior of a bus with many empty seats"
+        ]
+      ]
+    }
+  ]
+}

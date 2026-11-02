@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "source-corpus-1000",
+  "type": "reference-corpus",
+  "batch_path": "content/batches/source-corpus-1000.json",
+  "content_sha256": "48d4a42348980992aca76808893ca6838f0d490bd50f975f60f0caa8d58bb2bd",
+  "approval": {
+    "status": "reviewed",
+    "by": "Codex exact-source, Arabic translation and scene-brief review",
+    "date": "2026-11-02",
+    "human_review": false,
+    "notes": "Source sentences preserved verbatim, all 1000 Arabic meanings authored. Audio has independent measured alignment. Reference examples do not increase the published pattern count; original rule and provisional facets are not final linguistic certification."
+  },
+  "image_contract": {
+    "columns": 3,
+    "rows": 4,
+    "width": 1536,
+    "height": 2048,
+    "cell_width": 512,
+    "cell_height": 512,
+    "max_width": 1536,
+    "max_height": 2048,
+    "safe_inset_pixels": 40,
+    "order": "row-major-left-to-right"
+  },
+  "events": [
+    {
+      "id": "plan-reviewed",
+      "after": [],
+      "state": "complete"
+    },
+    {
+      "id": "audio-render",
+      "after": [
+        "plan-reviewed"
+      ],
+      "trigger": "GitHub Actions push/workflow_dispatch",
+      "voices": [
+        "am_adam",
+        "af_bella"
+      ],
+      "alignment": "each exact encoded MP3"
+    },
+    {
+      "id": "image-render",
+      "after": [
+        "plan-reviewed"
+      ],
+      "trigger": "built-in imagegen, one atlas per 12 source references"
+    },
+    {
+      "id": "verify",
+      "after": [
+        "audio-render",
+        "image-render"
+      ]
+    },
+    {
+      "id": "publish",
+      "after": [
+        "verify"
+      ]
+    }
+  ],
+  "manifest_paths": [
+    "production/manifests/source-corpus-00.json",
+    "production/manifests/source-corpus-01.json",
+    "production/manifests/source-corpus-02.json",
+    "production/manifests/source-corpus-03.json",
+    "production/manifests/source-corpus-04.json",
+    "production/manifests/source-corpus-05.json",
+    "production/manifests/source-corpus-06.json",
+    "production/manifests/source-corpus-07.json",
+    "production/manifests/source-corpus-08.json",
+    "production/manifests/source-corpus-09.json",
+    "production/manifests/source-corpus-10.json",
+    "production/manifests/source-corpus-11.json",
+    "production/manifests/source-corpus-12.json",
+    "production/manifests/source-corpus-13.json",
+    "production/manifests/source-corpus-14.json",
+    "production/manifests/source-corpus-15.json",
+    "production/manifests/source-corpus-16.json",
+    "production/manifests/source-corpus-17.json",
+    "production/manifests/source-corpus-18.json",
+    "production/manifests/source-corpus-19.json"
+  ]
+}

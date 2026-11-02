@@ -1,0 +1,22 @@
+{
+  "schema": 2,
+  "date": "2026-11-02",
+  "timezone": "Asia/Aden",
+  "release": "full-media-exams-20261102",
+  "tests": {
+    "automated_tests": "16 passing tests: all 156 route entries, independent voice policy, same-recording resume, actual-time cue lookup, purpose order, automatic next-pattern option, old-pilot migration, all exam answer relationships and route/keyword references",
+    "core_media_audit": "13 patterns x 12 different sentences; 312 independent verified MP3s; 2042 word cues; 156 visually reviewed cells in 13 WebP atlases; no structural errors",
+    "preservation": "All 72 recordings from Site version 2 preserved byte-for-byte",
+    "supplement_media": "28 actual MP3s for 14 preserved story/dialogue sentences, with 270 complete independent cue rows",
+    "real_browser_route": "Actual playback of a stage-1 selection traversed all 13 patterns and four groups: 26 sentences plus comparisons reached 100 percent. Complete 156-entry traversal is additionally tested with the sequencer test fixture.",
+    "lesson_flow": "Opened discovery with 12 thumbnails; understanding had 12 scene-backed rows; selected grammar comparison; reconstructed I want to learn English and received automatic correct feedback without a Verify action; entered a new production; completed all eight exam formats; automatically opened I need to after completion",
+    "exam_feedback": "Wrong and right choices produced automatic Arabic/English explanations. Typing wants and learn checked automatically. Advancing directly after a typed answer now commits the answer before changing question; a blur-related lost click was fixed and retested.",
+    "advanced": "Optional advanced accordion opened, showed bilingual explanation and the object + to-infinitive example, and graded to check automatically. Optional be used to contrast is separately identified, not presented as the same past-habit form.",
+    "keyword_category": "Exact keyword ماضي filtered to two tagged patterns, then launched both as a continuous coach route; actual MP3 used-01-male played and the route label displayed the selected category",
+    "mobile_layout": "390x844 iframe / 375 effective CSS pixels. Understanding view retained thumbnail, Arabic/English explanations, word highlighting structure and sound controls; document scrollWidth equaled clientWidth with no horizontal overflow.",
+    "supplement_playback": "Story playback used supplement-story-01-male.mp3 rather than browser speech; speaker identities use fixed narrator/Omar male and Sara female mappings",
+    "archive": "ZIP reopened and every indexed media SHA-256 matched; all 340 MP3s present"
+  },
+  "limits": ["No independent human listening sign-off for every recording/word boundary", "Physical Android/iOS devices not tested", "CEFR labels provisional; no certified exam claims", "Open production receives a structural heuristic and self-assessment, not complete semantic or pronunciation grading", "GitHub Actions workflow prepared and archived but not executed; canonical source remains Sites"],
+  "raw_asr_review": "Eight recordings have ASR spelling/word-splitting differences above the configured threshold; raw transcripts and the exact media remain in pilot-audit.json for review."
+}

@@ -1,0 +1,150 @@
+{
+  "key": "reference-055",
+  "source": "production/source-images/reference-055.png",
+  "source_sha256": "30ba9d7003e24ffabc52750b8be59207959c9e11bae8e53f7f08a2ee7b3334a2",
+  "source_dimensions": [
+    1086,
+    1448
+  ],
+  "measured_cuts": {
+    "x": [
+      0,
+      364,
+      722,
+      1086
+    ],
+    "y": [
+      0,
+      358,
+      721,
+      1067,
+      1448
+    ]
+  },
+  "atlas": "assets/scenes/reference-055-v1.webp",
+  "sha256": "0f2e1ff74547a118860f5396397f40978ec97a47c8d81c2e4f8fadaaf90662b6",
+  "width": 1536,
+  "height": 2048,
+  "tool": "built-in imagegen",
+  "review": "assistant visual review",
+  "human_review": false,
+  "cell_count": 12,
+  "geometry_verification": {
+    "width": 1086,
+    "height": 1448,
+    "x_gutters": [
+      {
+        "start": 361,
+        "end": 362,
+        "center": 361,
+        "white_fraction": 1.0
+      },
+      {
+        "start": 723,
+        "end": 726,
+        "center": 724,
+        "white_fraction": 0.9979296066252588
+      }
+    ],
+    "y_gutters": [
+      {
+        "start": 359,
+        "end": 363,
+        "center": 360,
+        "white_fraction": 0.994475138121547
+      },
+      {
+        "start": 721,
+        "end": 725,
+        "center": 722,
+        "white_fraction": 0.994475138121547
+      },
+      {
+        "start": 1069,
+        "end": 1071,
+        "center": 1070,
+        "white_fraction": 1.0
+      }
+    ],
+    "source_rects": [
+      {
+        "x": 1,
+        "y": 1,
+        "width": 359,
+        "height": 357
+      },
+      {
+        "x": 363,
+        "y": 1,
+        "width": 359,
+        "height": 357
+      },
+      {
+        "x": 727,
+        "y": 1,
+        "width": 358,
+        "height": 357
+      },
+      {
+        "x": 1,
+        "y": 364,
+        "width": 359,
+        "height": 356
+      },
+      {
+        "x": 363,
+        "y": 364,
+        "width": 359,
+        "height": 356
+      },
+      {
+        "x": 727,
+        "y": 364,
+        "width": 358,
+        "height": 356
+      },
+      {
+        "x": 1,
+        "y": 726,
+        "width": 359,
+        "height": 342
+      },
+      {
+        "x": 363,
+        "y": 726,
+        "width": 359,
+        "height": 342
+      },
+      {
+        "x": 727,
+        "y": 726,
+        "width": 358,
+        "height": 342
+      },
+      {
+        "x": 1,
+        "y": 1072,
+        "width": 359,
+        "height": 375
+      },
+      {
+        "x": 363,
+        "y": 1072,
+        "width": 359,
+        "height": 375
+      },
+      {
+        "x": 727,
+        "y": 1072,
+        "width": 358,
+        "height": 375
+      }
+    ],
+    "method": "continuous near-white gutter runs, sampled across the entire row or column"
+  },
+  "rejected_cells": [
+    5
+  ],
+  "review_scope": "All cells inspected in atlas order; context illustration is not grammatical proof. Rejected cells withheld from runtime.",
+  "repair_reason": "Floating Tom portrait bubble"
+}

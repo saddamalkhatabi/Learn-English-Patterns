@@ -1,0 +1,1566 @@
+{
+  "schema": 1,
+  "group": "feelings-opinions-and-impressions",
+  "title": "المجموعة السابعة: المشاعر والآراء والانطباعات",
+  "status": "18 authored patterns, 72 contextual scenes, 54 micro-story lines, 36 dialogues, three linked stories; realistic photographs intentionally deferred; voice recording subject to verified audio pipeline",
+  "items": [
+    {
+      "id": 1,
+      "key": "i-feel-1",
+      "title": "I feel",
+      "meaning": "أشعر بـ",
+      "formula": "I feel + adjective",
+      "explanation": "نصف حالتنا الشعورية باستخدام صفة بعد feel، وليس اسمًا بلا أداة مناسبة.",
+      "explanationEn": "Use I feel with an adjective to describe how you feel now. Feel can describe physical or emotional states.",
+      "contrast": "I feel tired تصف الحالة؛ I feel like resting تعبر عن الرغبة في فعل شيء.",
+      "sourceIds": [
+        139,
+        208
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I feel calm after my walk.",
+          "ar": "أشعر بالهدوء بعد المشي.",
+          "context": "بعد التنزه",
+          "icon": "🌿",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I feel nervous before an exam.",
+          "ar": "أشعر بالتوتر قبل الامتحان.",
+          "context": "قبل الاختبار",
+          "icon": "📝",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I feel better today.",
+          "ar": "أشعر بتحسن اليوم.",
+          "context": "بداية التعافي",
+          "icon": "☀️",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I feel sad when I miss my family.",
+          "ar": "أشعر بالحزن عندما أشتاق إلى عائلتي.",
+          "context": "الحنين للأسرة",
+          "icon": "🏡",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Maya had a busy morning.",
+          "ar": "كان صباح مايا مزدحمًا."
+        },
+        {
+          "id": 2,
+          "en": "She took a short walk outside.",
+          "ar": "خرجت لتتمشى قليلًا."
+        },
+        {
+          "id": 3,
+          "en": "After the walk, she said, 'I feel calm now.'",
+          "ar": "بعد المشي قالت: أشعر بالهدوء الآن."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "How do you feel after the walk?",
+          "ar": "كيف تشعر بعد المشي؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "I feel relaxed and happy.",
+          "ar": "أشعر بالاسترخاء والسعادة."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "key": "im-happy-with-2",
+      "title": "I'm happy with",
+      "meaning": "أنا راضٍ عن",
+      "formula": "I'm happy with + noun phrase",
+      "explanation": "نعبر عن الرضا بنتيجة أو شيء باستخدام with، وليس عن السعادة عمومًا فقط.",
+      "explanationEn": "Use happy with to express satisfaction with a result, choice, or thing.",
+      "contrast": "I'm happy with my work رضا بالنتيجة؛ I feel happy شعور بالسعادة عمومًا.",
+      "sourceIds": [
+        133,
+        182
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I'm happy with my test result.",
+          "ar": "أنا راضٍ عن نتيجة اختباري.",
+          "context": "نتيجة الامتحان",
+          "icon": "📄",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I'm happy with our new classroom.",
+          "ar": "أنا سعيد بفصلنا الدراسي الجديد.",
+          "context": "المدرسة",
+          "icon": "🏫",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I'm happy with the final design.",
+          "ar": "أنا راضٍ عن التصميم النهائي.",
+          "context": "مشروع تصميم",
+          "icon": "🎨",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I'm happy with the way we worked together.",
+          "ar": "أنا سعيد بالطريقة التي عملنا بها معًا.",
+          "context": "إنجاز جماعي",
+          "icon": "🤝",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Hassan worked hard on his drawing.",
+          "ar": "اجتهد حسن في رسمته."
+        },
+        {
+          "id": 2,
+          "en": "He showed it to his teacher.",
+          "ar": "عرضها على معلمه."
+        },
+        {
+          "id": 3,
+          "en": "He was happy with the result.",
+          "ar": "كان راضيًا عن النتيجة."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "What do you think of your project?",
+          "ar": "ما رأيك في مشروعك؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "I'm happy with the result.",
+          "ar": "أنا راضٍ عن النتيجة."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "key": "im-worried-about-3",
+      "title": "I'm worried about",
+      "meaning": "أنا قلق بشأن",
+      "formula": "I'm worried about + noun or verb ending in ing",
+      "explanation": "نعبر عن القلق بشأن شخص أو أمر باستخدام about يليها اسم أو صيغة ing.",
+      "explanationEn": "Use worried about to express concern about someone or something.",
+      "contrast": "I'm worried about the test قلق؛ I'm excited about the test حماس.",
+      "sourceIds": [
+        108,
+        119
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I'm worried about tomorrow's exam.",
+          "ar": "أنا قلق بشأن اختبار الغد.",
+          "context": "الاستعداد للاختبار",
+          "icon": "📚",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I'm worried about my friend's health.",
+          "ar": "أنا قلق بشأن صحة صديقي.",
+          "context": "الاهتمام بصديق",
+          "icon": "❤️",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I'm worried about missing the bus.",
+          "ar": "أنا قلق من تفويت الحافلة.",
+          "context": "الطريق للمدرسة",
+          "icon": "🚌",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I'm worried about the heavy rain.",
+          "ar": "أنا قلق بشأن المطر الغزير.",
+          "context": "الطقس",
+          "icon": "🌧️",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Rania heard that her brother was sick.",
+          "ar": "سمعت رانيا أن أخاها مريض."
+        },
+        {
+          "id": 2,
+          "en": "She was worried about his health.",
+          "ar": "كانت قلقة على صحته."
+        },
+        {
+          "id": 3,
+          "en": "She called him and felt relieved.",
+          "ar": "اتصلت به وشعرت بالارتياح."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Why are you quiet today?",
+          "ar": "لماذا أنت هادئ اليوم؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "I'm worried about my brother.",
+          "ar": "أنا قلق على أخي."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "key": "im-proud-of-4",
+      "title": "I'm proud of",
+      "meaning": "أنا فخور بـ",
+      "formula": "I'm proud of + person or achievement",
+      "explanation": "نستخدم proud of للتعبير عن الفخر بإنجاز أو بشخص، وقد نعبر عن الفخر بأنفسنا.",
+      "explanationEn": "Use proud of for a person or an achievement that makes you feel proud.",
+      "contrast": "I'm proud of you فخر بإنجاز؛ I'm happy with you تعبير مختلف بحسب السياق.",
+      "sourceIds": [
+        239,
+        207
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I'm proud of my sister's success.",
+          "ar": "أنا فخور بنجاح أختي.",
+          "context": "تفوق الأخت",
+          "icon": "🏅",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I'm proud of our team.",
+          "ar": "أنا فخور بفريقنا.",
+          "context": "فريق المدرسة",
+          "icon": "🏆",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I'm proud of my progress in English.",
+          "ar": "أنا فخور بتقدمي في الإنجليزية.",
+          "context": "تقدم التعلم",
+          "icon": "📘",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I'm proud of you for trying again.",
+          "ar": "أنا فخور بك لأنك حاولت مجددًا.",
+          "context": "التشجيع",
+          "icon": "👏",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Ali practiced reading every day.",
+          "ar": "تدرب علي على القراءة كل يوم."
+        },
+        {
+          "id": 2,
+          "en": "His teacher noticed his improvement.",
+          "ar": "لاحظ معلمه تحسنه."
+        },
+        {
+          "id": 3,
+          "en": "She said, 'I'm proud of your progress.'",
+          "ar": "قالت: أنا فخورة بتقدمك."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "I finally finished the book!",
+          "ar": "أخيرًا أنهيت الكتاب!"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "I'm proud of you!",
+          "ar": "أنا فخور بك!"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "key": "im-surprised-that-5",
+      "title": "I'm surprised that",
+      "meaning": "أنا متفاجئ بأن",
+      "formula": "I'm surprised that + clause",
+      "explanation": "نستخدم surprised that للتعجب من معلومة أو نتيجة غير متوقعة، ويمكن حذف that في الحديث الطبيعي.",
+      "explanationEn": "Use surprised that followed by a complete clause to react to unexpected information.",
+      "contrast": "I'm surprised that she won تعجب من خبر؛ I'm surprised by the gift تعجب من شيء.",
+      "sourceIds": [
+        105,
+        253
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I'm surprised that you remember my name.",
+          "ar": "أنا متفاجئ لأنك تتذكر اسمي.",
+          "context": "تذكر الأسماء",
+          "icon": "😊",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I'm surprised that the shop is open.",
+          "ar": "أنا متفاجئ بأن المتجر مفتوح.",
+          "context": "متجر مفتوح",
+          "icon": "🏬",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I'm surprised that he finished so early.",
+          "ar": "أنا متفاجئ بأنه انتهى مبكرًا جدًا.",
+          "context": "سرعة الإنجاز",
+          "icon": "⏱️",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I'm surprised that this book is so interesting.",
+          "ar": "أنا متفاجئ بأن هذا الكتاب ممتع جدًا.",
+          "context": "اكتشاف كتاب",
+          "icon": "📖",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Lina entered the library after school.",
+          "ar": "دخلت لينا المكتبة بعد المدرسة."
+        },
+        {
+          "id": 2,
+          "en": "She found her favorite author there.",
+          "ar": "وجدت كاتبها المفضل هناك."
+        },
+        {
+          "id": 3,
+          "en": "She said, 'I'm surprised that he's here!'",
+          "ar": "قالت: أنا متفاجئة من وجوده هنا!"
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Did you know Sara won the prize?",
+          "ar": "هل علمت أن سارة فازت بالجائزة؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "I'm surprised that she won!",
+          "ar": "أنا متفاجئ بأنها فازت!"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "key": "im-disappointed-that-6",
+      "title": "I'm disappointed that",
+      "meaning": "أنا محبط لأن",
+      "formula": "I'm disappointed that + clause",
+      "explanation": "نعبر عن خيبة الأمل بسبب حدث أو نتيجة؛ الوصف هنا شعور تجاه ما وقع.",
+      "explanationEn": "Use disappointed that followed by a clause to describe an unmet expectation.",
+      "contrast": "I'm disappointed that it was canceled خيبة أمل؛ I'm surprised that it was canceled دهشة.",
+      "sourceIds": [
+        358,
+        452
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I'm disappointed that the game was canceled.",
+          "ar": "أنا محبط لأن المباراة أُلغيت.",
+          "context": "إلغاء مباراة",
+          "icon": "⚽",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I'm disappointed that we lost the match.",
+          "ar": "أنا محبط لأننا خسرنا المباراة.",
+          "context": "بعد المباراة",
+          "icon": "🏟️",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I'm disappointed that the package is late.",
+          "ar": "أنا محبط لأن الطرد تأخر.",
+          "context": "انتظار طرد",
+          "icon": "📦",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I'm disappointed that I missed the concert.",
+          "ar": "أنا محبط لأنني فاتني الحفل.",
+          "context": "فرصة ضائعة",
+          "icon": "🎵",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Noura planned a picnic with her friends.",
+          "ar": "خططت نورة لنزهة مع صديقاتها."
+        },
+        {
+          "id": 2,
+          "en": "Rain forced them to cancel it.",
+          "ar": "أجبرهن المطر على إلغائها."
+        },
+        {
+          "id": 3,
+          "en": "She was disappointed that the picnic was canceled.",
+          "ar": "شعرت بخيبة أمل لإلغاء النزهة."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "How do you feel about the canceled trip?",
+          "ar": "كيف تشعر حيال الرحلة الملغاة؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "I'm disappointed that we can't go.",
+          "ar": "أنا محبط لأننا لا نستطيع الذهاب."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "key": "im-grateful-for-7",
+      "title": "I'm grateful for",
+      "meaning": "أنا ممتن لـ",
+      "formula": "I'm grateful for + noun phrase",
+      "explanation": "نعبر عن الامتنان لشيء تلقيناه أو فرصة حصلنا عليها باستخدام for؛ ونستخدم grateful to لمن ساعدنا.",
+      "explanationEn": "Use grateful for a gift, kindness, or opportunity. Use grateful to for the person you thank.",
+      "contrast": "I'm grateful for your help مساعدة؛ I'm grateful to you شخص ساعدني.",
+      "sourceIds": [
+        311,
+        182
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I'm grateful for your kindness.",
+          "ar": "أنا ممتن للطفك.",
+          "context": "مساعدة لطيفة",
+          "icon": "💝",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I'm grateful for this opportunity.",
+          "ar": "أنا ممتن لهذه الفرصة.",
+          "context": "فرصة جديدة",
+          "icon": "🌟",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I'm grateful for my family's support.",
+          "ar": "أنا ممتن لدعم عائلتي.",
+          "context": "دعم الأسرة",
+          "icon": "👨‍👩‍👧",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I'm grateful for the time you gave me.",
+          "ar": "أنا ممتن للوقت الذي خصصته لي.",
+          "context": "تقدير الوقت",
+          "icon": "⌛",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Khaled was struggling with his lesson.",
+          "ar": "كان خالد يواجه صعوبة في الدرس."
+        },
+        {
+          "id": 2,
+          "en": "His friend explained it slowly.",
+          "ar": "شرح له صديقه الأمر ببطء."
+        },
+        {
+          "id": 3,
+          "en": "Khaled said, 'I'm grateful for your help.'",
+          "ar": "قال خالد: أنا ممتن لمساعدتك."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "I'm glad the explanation helped.",
+          "ar": "يسرني أن الشرح أفادك."
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "I'm grateful for your patience.",
+          "ar": "أنا ممتن لصبرك."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "key": "im-interested-in-8",
+      "title": "I'm interested in",
+      "meaning": "أنا مهتم بـ",
+      "formula": "I'm interested in + noun or verb ending in ing",
+      "explanation": "نستخدم interested in للتعبير عن اهتمام حقيقي بموضوع أو نشاط، ويأتي الفعل بعد in بصيغة ing.",
+      "explanationEn": "Use interested in before a topic, noun, or an activity ending in ing.",
+      "contrast": "I'm interested in painting اهتمام؛ I'm good at painting مهارة.",
+      "sourceIds": [
+        117,
+        177
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I'm interested in learning new languages.",
+          "ar": "أنا مهتم بتعلم لغات جديدة.",
+          "context": "تعلم اللغات",
+          "icon": "🌍",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I'm interested in space and science.",
+          "ar": "أنا مهتم بالفضاء والعلوم.",
+          "context": "العلوم",
+          "icon": "🚀",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I'm interested in improving my writing.",
+          "ar": "أنا مهتم بتحسين كتابتي.",
+          "context": "مهارة الكتابة",
+          "icon": "✍️",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I'm interested in joining the art club.",
+          "ar": "أنا مهتم بالانضمام إلى نادي الفن.",
+          "context": "نادي الفن",
+          "icon": "🖼️",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Mariam saw a poster for a science club.",
+          "ar": "رأت مريم ملصقًا لنادي العلوم."
+        },
+        {
+          "id": 2,
+          "en": "She was interested in joining it.",
+          "ar": "كانت مهتمة بالانضمام إليه."
+        },
+        {
+          "id": 3,
+          "en": "She asked her teacher how to register.",
+          "ar": "سألت معلمتها كيف تسجل."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Would you like to join the club?",
+          "ar": "هل تود الانضمام إلى النادي؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Yes, I'm interested in science.",
+          "ar": "نعم، أنا مهتم بالعلوم."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "key": "i-feel-like-9",
+      "title": "I feel like",
+      "meaning": "أرغب في",
+      "formula": "I feel like + verb ending in ing",
+      "explanation": "عندما يأتي بعد feel like فعل بصيغة ing نعبر عن الرغبة الآنية، لا عن شعور جسدي.",
+      "explanationEn": "Use feel like followed by an activity ending in ing to express what you want to do.",
+      "contrast": "I feel like walking أرغب في المشي؛ I feel tired أشعر بالتعب.",
+      "sourceIds": [
+        42,
+        62
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I feel like taking a short walk.",
+          "ar": "أرغب في نزهة قصيرة.",
+          "context": "التمشية",
+          "icon": "🚶",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I feel like reading a story.",
+          "ar": "أرغب في قراءة قصة.",
+          "context": "وقت القراءة",
+          "icon": "📗",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I feel like drinking some water.",
+          "ar": "أرغب في شرب بعض الماء.",
+          "context": "استراحة",
+          "icon": "💧",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I feel like listening to music.",
+          "ar": "أرغب في الاستماع إلى الموسيقى.",
+          "context": "وقت الراحة",
+          "icon": "🎧",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Fahd finished his homework early.",
+          "ar": "أنهى فهد واجبه مبكرًا."
+        },
+        {
+          "id": 2,
+          "en": "He felt like going outside.",
+          "ar": "رغب في الخروج."
+        },
+        {
+          "id": 3,
+          "en": "He asked his father to join him for a walk.",
+          "ar": "طلب من والده مرافقته للمشي."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "What do you want to do now?",
+          "ar": "ماذا تريد أن تفعل الآن؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "I feel like reading a story.",
+          "ar": "أرغب في قراءة قصة."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "key": "i-dont-feel-like-10",
+      "title": "I don't feel like",
+      "meaning": "لا أرغب في",
+      "formula": "I don't feel like + verb ending in ing",
+      "explanation": "للتعبير بلطف عن عدم الرغبة الحالية في نشاط معين، وليس رفضه إلى الأبد.",
+      "explanationEn": "Use don't feel like before an activity ending in ing when you are not in the mood.",
+      "contrast": "I don't feel like going out رغبة الآن؛ I won't go قرار أو رفض للمستقبل.",
+      "sourceIds": [
+        62,
+        42
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I don't feel like going out tonight.",
+          "ar": "لا أرغب في الخروج الليلة.",
+          "context": "مساء هادئ",
+          "icon": "🌙",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I don't feel like watching TV.",
+          "ar": "لا أشعر برغبة في مشاهدة التلفاز.",
+          "context": "اختيار نشاط",
+          "icon": "📺",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I don't feel like eating yet.",
+          "ar": "لا أرغب في الأكل بعد.",
+          "context": "وقت الطعام",
+          "icon": "🍽️",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I don't feel like talking right now.",
+          "ar": "لا أرغب في الحديث الآن.",
+          "context": "الحاجة للهدوء",
+          "icon": "🤫",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Salma came home after a long day.",
+          "ar": "عادت سلمى إلى المنزل بعد يوم طويل."
+        },
+        {
+          "id": 2,
+          "en": "She didn't feel like going out.",
+          "ar": "لم تكن ترغب في الخروج."
+        },
+        {
+          "id": 3,
+          "en": "She stayed home and rested.",
+          "ar": "بقيت في المنزل واستراحت."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Shall we go for a walk?",
+          "ar": "هل نذهب للمشي؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "I don't feel like walking now.",
+          "ar": "لا أرغب في المشي الآن."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "key": "i-think-11",
+      "title": "I think",
+      "meaning": "أعتقد أن",
+      "formula": "I think + clause",
+      "explanation": "نقدم رأيًا أو تقديرًا شخصيًا باستخدام I think، وقد نحذف that، ولا يُعامل الرأي حقيقة مؤكدة.",
+      "explanationEn": "Use I think before a complete clause to share an opinion or judgment.",
+      "contrast": "I think it's useful رأي؛ I know it's useful معرفة أو تأكد.",
+      "sourceIds": [
+        313,
+        56
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I think this lesson is useful.",
+          "ar": "أعتقد أن هذا الدرس مفيد.",
+          "context": "رأي في درس",
+          "icon": "📘",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I think the blue shirt looks better.",
+          "ar": "أعتقد أن القميص الأزرق يبدو أفضل.",
+          "context": "اختيار ملابس",
+          "icon": "👕",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I think we should start early.",
+          "ar": "أعتقد أنه ينبغي أن نبدأ مبكرًا.",
+          "context": "رأي في خطة",
+          "icon": "⏰",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I think this story has a good ending.",
+          "ar": "أعتقد أن لهذه القصة نهاية جيدة.",
+          "context": "نقاش قصة",
+          "icon": "📚",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Omar read a new story at school.",
+          "ar": "قرأ عمر قصة جديدة في المدرسة."
+        },
+        {
+          "id": 2,
+          "en": "He thought the ending was interesting.",
+          "ar": "اعتقد أن النهاية مثيرة للاهتمام."
+        },
+        {
+          "id": 3,
+          "en": "He shared his opinion with his classmates.",
+          "ar": "شارك رأيه مع زملائه."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "What do you think of this idea?",
+          "ar": "ما رأيك في هذه الفكرة؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "I think it's a great idea.",
+          "ar": "أعتقد أنها فكرة رائعة."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "key": "in-my-opinion-12",
+      "title": "In my opinion",
+      "meaning": "في رأيي",
+      "formula": "In my opinion, + clause",
+      "explanation": "نوضح أن الكلام رأينا الشخصي، ويستحسن إسناده إلى سبب بدل تقديمه كحقيقة مطلقة.",
+      "explanationEn": "Use in my opinion before a sentence to make it clear you are giving a personal view.",
+      "contrast": "In my opinion رأي واضح؛ In fact تستخدم لتقديم حقيقة أو تصحيح.",
+      "sourceIds": [
+        313,
+        830
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "In my opinion, reading every day helps.",
+          "ar": "في رأيي، القراءة يوميًا مفيدة.",
+          "context": "نقاش تعليمي",
+          "icon": "📖",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "In my opinion, the park is a great place to relax.",
+          "ar": "في رأيي، الحديقة مكان رائع للاسترخاء.",
+          "context": "مكان مفضل",
+          "icon": "🌳",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "In my opinion, we need more practice.",
+          "ar": "في رأيي، نحتاج إلى مزيد من التدريب.",
+          "context": "مراجعة المستوى",
+          "icon": "🎯",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "In my opinion, teamwork is important.",
+          "ar": "في رأيي، العمل الجماعي مهم.",
+          "context": "روح الفريق",
+          "icon": "🤝",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "The class discussed ways to study better.",
+          "ar": "ناقش الصف طرق الدراسة الأفضل."
+        },
+        {
+          "id": 2,
+          "en": "Huda listened to her classmates.",
+          "ar": "استمعت هدى إلى زملائها."
+        },
+        {
+          "id": 3,
+          "en": "She said, 'In my opinion, short daily practice is best.'",
+          "ar": "قالت: في رأيي، التدريب اليومي القصير هو الأفضل."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Which study method do you prefer?",
+          "ar": "أي طريقة دراسة تفضل؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "In my opinion, daily practice works best.",
+          "ar": "في رأيي، التدريب اليومي هو الأفضل."
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "key": "i-believe-13",
+      "title": "I believe",
+      "meaning": "أؤمن / أعتقد",
+      "formula": "I believe + clause",
+      "explanation": "نستخدم believe للتعبير عن اعتقاد أو قناعة، وقد يكون أرسخ من I think بحسب السياق.",
+      "explanationEn": "Use I believe to express a belief or conviction. It can sound stronger than I think.",
+      "contrast": "I believe we can succeed قناعة؛ I think we can succeed رأي أو تقدير.",
+      "sourceIds": [
+        304,
+        226
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I believe everyone can learn.",
+          "ar": "أؤمن بأن الجميع يستطيع التعلم.",
+          "context": "الإيمان بالتعلم",
+          "icon": "🌱",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I believe we can solve this problem.",
+          "ar": "أعتقد أننا نستطيع حل هذه المشكلة.",
+          "context": "حل المشكلات",
+          "icon": "🧩",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I believe honesty is important.",
+          "ar": "أؤمن بأن الصدق مهم.",
+          "context": "القيم",
+          "icon": "🤝",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I believe practice makes a difference.",
+          "ar": "أعتقد أن التدريب يحدث فرقًا.",
+          "context": "التحسن",
+          "icon": "📈",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Yasser tried a difficult exercise.",
+          "ar": "حاول ياسر حل تمرين صعب."
+        },
+        {
+          "id": 2,
+          "en": "At first, he wanted to give up.",
+          "ar": "في البداية أراد الاستسلام."
+        },
+        {
+          "id": 3,
+          "en": "His teacher said, 'I believe you can do it.'",
+          "ar": "قال معلمه: أؤمن أنك قادر على فعله."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Do you think we can finish?",
+          "ar": "هل تظن أننا نستطيع الإكمال؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "I believe we can finish together.",
+          "ar": "أؤمن بأننا نستطيع الإكمال معًا."
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "key": "i-prefer-14",
+      "title": "I prefer",
+      "meaning": "أفضل",
+      "formula": "I prefer + noun or verb ending in ing + to + alternative",
+      "explanation": "نستخدم prefer للمقارنة بين اختيارين، وقد يأتي بعده اسم أو فعل بصيغة ing مع to للمقارنة.",
+      "explanationEn": "Use prefer to express your choice between alternatives, often with to before the second choice.",
+      "contrast": "I prefer tea to coffee اختيار مفضل؛ I'd rather drink tea تفضيل لفعل بصيغة مختلفة.",
+      "sourceIds": [
+        177,
+        136,
+        704
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I prefer tea to coffee.",
+          "ar": "أفضل الشاي على القهوة.",
+          "context": "اختيار مشروب",
+          "icon": "🍵",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I prefer walking to driving.",
+          "ar": "أفضل المشي على القيادة.",
+          "context": "وسيلة التنقل",
+          "icon": "🚶",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I prefer studying in the morning.",
+          "ar": "أفضل الدراسة صباحًا.",
+          "context": "وقت الدراسة",
+          "icon": "🌅",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I prefer quiet places to crowded ones.",
+          "ar": "أفضل الأماكن الهادئة على المزدحمة.",
+          "context": "مكان للراحة",
+          "icon": "🌳",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Nadia visited two cafés near her school.",
+          "ar": "زارت نادية مقهيين قرب مدرستها."
+        },
+        {
+          "id": 2,
+          "en": "One was quiet, and the other was noisy.",
+          "ar": "كان أحدهما هادئًا والآخر صاخبًا."
+        },
+        {
+          "id": 3,
+          "en": "She preferred the quiet café.",
+          "ar": "فضلت المقهى الهادئ."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Would you like tea or coffee?",
+          "ar": "هل تود الشاي أم القهوة؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "I prefer tea to coffee.",
+          "ar": "أفضل الشاي على القهوة."
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "key": "i-agree-with-15",
+      "title": "I agree with",
+      "meaning": "أتفق مع",
+      "formula": "I agree with + person or opinion",
+      "explanation": "لإبداء الاتفاق مع شخص نستخدم with، ونستخدم agree on عند تحديد مسألة مشتركة.",
+      "explanationEn": "Use agree with for a person or a viewpoint, and agree on for a shared decision.",
+      "contrast": "I agree with you أتفق معك؛ I agree on a date اتفقنا على موعد.",
+      "sourceIds": [
+        830,
+        727
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I agree with your suggestion.",
+          "ar": "أتفق مع اقتراحك.",
+          "context": "اقتراح عمل",
+          "icon": "💡",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I agree with my teacher on this point.",
+          "ar": "أتفق مع معلمي في هذه النقطة.",
+          "context": "حوار دراسي",
+          "icon": "🏫",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I agree with you about the schedule.",
+          "ar": "أتفق معك بشأن الجدول.",
+          "context": "تنظيم الوقت",
+          "icon": "📅",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I agree with her decision.",
+          "ar": "أتفق مع قرارها.",
+          "context": "قرار جماعي",
+          "icon": "✅",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "The team discussed their next project.",
+          "ar": "ناقش الفريق مشروعهم القادم."
+        },
+        {
+          "id": 2,
+          "en": "Sara suggested a simple plan.",
+          "ar": "اقترحت سارة خطة بسيطة."
+        },
+        {
+          "id": 3,
+          "en": "Ali said, 'I agree with your idea.'",
+          "ar": "قال علي: أتفق مع فكرتك."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Do you think we should start early?",
+          "ar": "هل تظن أنه ينبغي أن نبدأ مبكرًا؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Yes, I agree with you.",
+          "ar": "نعم، أتفق معك."
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "key": "i-dont-agree-with-16",
+      "title": "I don't agree with",
+      "meaning": "لا أتفق مع",
+      "formula": "I don't agree with + person or opinion",
+      "explanation": "نستخدمه للتعبير عن اختلاف الرأي باحترام؛ يمكن أن نوضح السبب ونقترح بديلًا.",
+      "explanationEn": "Use don't agree with to disagree respectfully with a person or opinion.",
+      "contrast": "I don't agree with the plan خلاف في الرأي؛ I don't understand the plan عدم فهم.",
+      "sourceIds": [
+        727,
+        830
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I don't agree with that idea.",
+          "ar": "لا أتفق مع تلك الفكرة.",
+          "context": "نقاش مشروع",
+          "icon": "💬",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I don't agree with the new schedule.",
+          "ar": "لا أتفق مع الجدول الجديد.",
+          "context": "جدول جديد",
+          "icon": "🗓️",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I don't agree with his conclusion.",
+          "ar": "لا أتفق مع استنتاجه.",
+          "context": "نقاش علمي",
+          "icon": "🔬",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I don't agree with every part of the plan.",
+          "ar": "لا أتفق مع كل جزء من الخطة.",
+          "context": "مراجعة خطة",
+          "icon": "📋",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Kareem listened carefully during the meeting.",
+          "ar": "استمع كريم بعناية خلال الاجتماع."
+        },
+        {
+          "id": 2,
+          "en": "He didn't agree with one suggestion.",
+          "ar": "لم يتفق مع أحد الاقتراحات."
+        },
+        {
+          "id": 3,
+          "en": "He explained his reasons politely.",
+          "ar": "شرح أسبابه بأدب."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Do you agree with this change?",
+          "ar": "هل تتفق مع هذا التغيير؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "I don't agree with it, but I respect your view.",
+          "ar": "لا أتفق معه، لكنني أحترم رأيك."
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "key": "it-seems-like-17",
+      "title": "It seems like",
+      "meaning": "يبدو أن",
+      "formula": "It seems like + clause",
+      "explanation": "نعبر عن انطباع أو استنتاج غير مؤكد يعتمد على قرائن، وليس عن حقيقة مُثبتة.",
+      "explanationEn": "Use it seems like to describe an impression drawn from what you notice.",
+      "contrast": "It seems like she's tired استنتاج؛ She is tired تقرير أقوى عن حالتها.",
+      "sourceIds": [
+        44,
+        355,
+        821
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "It seems like the shop is closed.",
+          "ar": "يبدو أن المتجر مغلق.",
+          "context": "أمام المتجر",
+          "icon": "🏪",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "It seems like everyone is ready.",
+          "ar": "يبدو أن الجميع مستعد.",
+          "context": "بداية النشاط",
+          "icon": "🙌",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "It seems like the weather is changing.",
+          "ar": "يبدو أن الطقس يتغير.",
+          "context": "مراقبة الغيوم",
+          "icon": "☁️",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "It seems like she enjoyed the party.",
+          "ar": "يبدو أنها استمتعت بالحفلة.",
+          "context": "انطباع بعد الحفلة",
+          "icon": "🎉",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Mona walked past the school gate.",
+          "ar": "مرت منى بجوار بوابة المدرسة."
+        },
+        {
+          "id": 2,
+          "en": "The lights were off and no one was outside.",
+          "ar": "كانت الأنوار مطفأة ولم يكن أحد في الخارج."
+        },
+        {
+          "id": 3,
+          "en": "She said, 'It seems like the school is closed.'",
+          "ar": "قالت: يبدو أن المدرسة مغلقة."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Why are the doors locked?",
+          "ar": "لماذا الأبواب مغلقة؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "It seems like the building is closed.",
+          "ar": "يبدو أن المبنى مغلق."
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "key": "it-sounds-like-18",
+      "title": "It sounds like",
+      "meaning": "يبدو من الصوت / الكلام أن",
+      "formula": "It sounds like + noun or clause",
+      "explanation": "نعبر عن انطباع مصدره ما نسمعه، سواء صوتًا فعليًا أو وصفًا سمعناه من شخص.",
+      "explanationEn": "Use it sounds like when your impression comes from what you hear or what someone tells you.",
+      "contrast": "It sounds like rain صوت؛ It looks like rain منظر؛ It seems like rain انطباع عام.",
+      "sourceIds": [
+        46,
+        813
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "It sounds like rain outside.",
+          "ar": "يبدو أن المطر يتساقط في الخارج من صوته.",
+          "context": "صوت المطر",
+          "icon": "🌧️",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "It sounds like a great idea.",
+          "ar": "تبدو فكرة رائعة من وصفك لها.",
+          "context": "اقتراح جميل",
+          "icon": "💡",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "It sounds like someone is at the door.",
+          "ar": "يبدو أن هناك شخصًا عند الباب من الصوت.",
+          "context": "طرق الباب",
+          "icon": "🚪",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "It sounds like the children are having fun.",
+          "ar": "يبدو أن الأطفال يستمتعون من أصواتهم.",
+          "context": "لعب الأطفال",
+          "icon": "🎈",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Amir heard laughter from the garden.",
+          "ar": "سمع أمير ضحكًا من الحديقة."
+        },
+        {
+          "id": 2,
+          "en": "His little cousins were playing outside.",
+          "ar": "كان أبناء عمه الصغار يلعبون بالخارج."
+        },
+        {
+          "id": 3,
+          "en": "He said, 'It sounds like they're having fun.'",
+          "ar": "قال: يبدو أنهم يستمتعون من أصواتهم."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Can you hear that noise outside?",
+          "ar": "هل تسمع ذلك الصوت في الخارج؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "It sounds like heavy rain.",
+          "ar": "يبدو من صوته أنه مطر غزير."
+        }
+      ]
+    }
+  ],
+  "chapters": [
+    {
+      "id": 1,
+      "key": "the-first-day",
+      "title": "The First Day",
+      "titleAr": "اليوم الأول",
+      "icon": "🏫",
+      "lines": [
+        {
+          "id": 1,
+          "en": "It was Maya's first day at a new school.",
+          "ar": "كان ذلك أول يوم لمايا في مدرستها الجديدة."
+        },
+        {
+          "id": 2,
+          "en": "She felt nervous before entering the classroom.",
+          "ar": "شعرت بالتوتر قبل دخول الفصل."
+        },
+        {
+          "id": 3,
+          "en": "Her teacher welcomed her with a kind smile.",
+          "ar": "رحبت بها معلمتها بابتسامة لطيفة."
+        },
+        {
+          "id": 4,
+          "en": "Maya said, 'I'm grateful for your kindness.'",
+          "ar": "قالت مايا: أنا ممتنة للطفك."
+        },
+        {
+          "id": 5,
+          "en": "At lunchtime, she told a friend, 'I feel happy now.'",
+          "ar": "وقت الغداء قالت لصديقة: أشعر بالسعادة الآن."
+        },
+        {
+          "id": 6,
+          "en": "She was proud of herself for trying something new.",
+          "ar": "شعرت بالفخر بنفسها لأنها جربت شيئًا جديدًا."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "key": "a-different-opinion",
+      "title": "A Different Opinion",
+      "titleAr": "رأي مختلف",
+      "icon": "💬",
+      "lines": [
+        {
+          "id": 1,
+          "en": "Omar and Lina planned a class reading corner.",
+          "ar": "خطط عمر ولينا لركن قراءة صفي."
+        },
+        {
+          "id": 2,
+          "en": "Omar said, 'I think we need more shelves.'",
+          "ar": "قال عمر: أعتقد أننا نحتاج إلى مزيد من الرفوف."
+        },
+        {
+          "id": 3,
+          "en": "Lina replied, 'In my opinion, we should add more books first.'",
+          "ar": "ردت لينا: في رأيي، علينا إضافة كتب أكثر أولًا."
+        },
+        {
+          "id": 4,
+          "en": "Omar said, 'I don't agree with every part of that plan.'",
+          "ar": "قال عمر: لا أتفق مع كل جزء من تلك الخطة."
+        },
+        {
+          "id": 5,
+          "en": "They listened to each other respectfully.",
+          "ar": "استمع كل منهما إلى الآخر باحترام."
+        },
+        {
+          "id": 6,
+          "en": "Finally, they agreed to begin with a small shelf and new books.",
+          "ar": "وأخيرًا اتفقا على البدء برف صغير وكتب جديدة."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "key": "the-unexpected-gift",
+      "title": "The Unexpected Gift",
+      "titleAr": "الهدية غير المتوقعة",
+      "icon": "🎁",
+      "lines": [
+        {
+          "id": 1,
+          "en": "Noura was worried about her friend's big exam.",
+          "ar": "كانت نورة قلقة بشأن اختبار صديقتها المهم."
+        },
+        {
+          "id": 2,
+          "en": "After the exam, her friend came to visit.",
+          "ar": "بعد الاختبار، جاءت صديقتها لزيارتها."
+        },
+        {
+          "id": 3,
+          "en": "She brought a handmade card to say thank you.",
+          "ar": "أحضرت بطاقة مصنوعة يدويًا للتعبير عن الشكر."
+        },
+        {
+          "id": 4,
+          "en": "Noura said, 'I'm surprised that you made this for me!'",
+          "ar": "قالت نورة: أنا متفاجئة أنك صنعتِ هذه من أجلي!"
+        },
+        {
+          "id": 5,
+          "en": "Her friend replied, 'I'm grateful for your support.'",
+          "ar": "ردت صديقتها: أنا ممتنة لدعمك."
+        },
+        {
+          "id": 6,
+          "en": "It seemed like a small gift, but it meant a lot.",
+          "ar": "بدت هدية صغيرة، لكنها حملت معنى كبيرًا."
+        }
+      ]
+    }
+  ],
+  "requirements": {
+    "patternCount": 18,
+    "scenesPerPattern": 4,
+    "storyLinesPerPattern": 3,
+    "dialogueTurnsPerPattern": 2,
+    "chapters": 3,
+    "skills": [
+      "التعبير عن الشعور والرضا والقلق والفخر",
+      "الدهشة وخيبة الأمل والامتنان والاهتمام",
+      "الرغبة الحالية وعدم الرغبة",
+      "رأي شخصي واعتقاد وتفضيل",
+      "الاتفاق والاختلاف باحترام",
+      "انطباع عام أو سمعي دون ادعاء اليقين"
+    ]
+  }
+}

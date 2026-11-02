@@ -1,0 +1,5293 @@
+{
+  "schema": 1,
+  "plan_id": "foundation-one",
+  "plan_sha256": "7f08c10a7ed08371c24c6f0aafe869e06aa4735402d2db3a54c6b220dcd61f54",
+  "sentences": [
+    {
+      "id": "possess-01",
+      "pattern_id": 105,
+      "group_id": "g-foundation",
+      "en": "I have a good job.",
+      "ar": "لدي وظيفة جيدة.",
+      "context": "لدي وظيفة جيدة.",
+      "scene_description": "A contented adult working at a tidy desk",
+      "difficulty": {
+        "cefr": "A1",
+        "stage": 1,
+        "stage_label": "فهم النمط"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "have",
+        "good"
+      ],
+      "exercise_ids": [
+        "possess-01-transfer"
+      ],
+      "image": {
+        "id": "scene-possess-01",
+        "atlas": "assets/scenes/possess-atlas-v1.webp",
+        "cell": 0,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "ef15bbf91f2b9888ec60efd7d96c59f0c6f2f59a9e3f512780c05b5ad7b28733",
+        "crop": {
+          "x": 1,
+          "y": 1,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/possess-01-male.mp3",
+          "text": "I have a good job.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I",
+              "start_ms": 362,
+              "end_ms": 382
+            },
+            {
+              "index": 1,
+              "text": "have",
+              "start_ms": 482,
+              "end_ms": 623
+            },
+            {
+              "index": 2,
+              "text": "a",
+              "start_ms": 663,
+              "end_ms": 683
+            },
+            {
+              "index": 3,
+              "text": "good",
+              "start_ms": 724,
+              "end_ms": 884
+            },
+            {
+              "index": 4,
+              "text": "job.",
+              "start_ms": 1005,
+              "end_ms": 1427
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2050,
+          "sha256": "7945ab8e78d554999b57878fd5ac939c65121f07ae1eb80f6e829d5f25334c77",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I HAVE A GOOD JOB",
+          "produced_at": "2026-11-02T02:54:24.248343+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2112,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/possess-01-female.mp3",
+          "text": "I have a good job.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I",
+              "start_ms": 481,
+              "end_ms": 501
+            },
+            {
+              "index": 1,
+              "text": "have",
+              "start_ms": 602,
+              "end_ms": 722
+            },
+            {
+              "index": 2,
+              "text": "a",
+              "start_ms": 762,
+              "end_ms": 782
+            },
+            {
+              "index": 3,
+              "text": "good",
+              "start_ms": 822,
+              "end_ms": 942
+            },
+            {
+              "index": 4,
+              "text": "job.",
+              "start_ms": 1003,
+              "end_ms": 1384
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 1925,
+          "sha256": "930f7c885e62b93531f8b1b1d7ec83138c8c07641b0fe06ed124288b87f0f601",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I HAVE A GOOD JOB",
+          "produced_at": "2026-11-02T02:54:25.988803+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 1992,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "possess-02",
+      "pattern_id": 105,
+      "group_id": "g-foundation",
+      "en": "I have a laptop.",
+      "ar": "لدي حاسوب محمول.",
+      "context": "لدي حاسوب محمول.",
+      "scene_description": "A student holding a laptop",
+      "difficulty": {
+        "cefr": "A1",
+        "stage": 1,
+        "stage_label": "فهم النمط"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "have",
+        "laptop"
+      ],
+      "exercise_ids": [
+        "possess-02-transfer"
+      ],
+      "image": {
+        "id": "scene-possess-02",
+        "atlas": "assets/scenes/possess-atlas-v1.webp",
+        "cell": 1,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "ef15bbf91f2b9888ec60efd7d96c59f0c6f2f59a9e3f512780c05b5ad7b28733",
+        "crop": {
+          "x": 513,
+          "y": 1,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/possess-02-male.mp3",
+          "text": "I have a laptop.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I",
+              "start_ms": 363,
+              "end_ms": 383
+            },
+            {
+              "index": 1,
+              "text": "have",
+              "start_ms": 484,
+              "end_ms": 625
+            },
+            {
+              "index": 2,
+              "text": "a",
+              "start_ms": 665,
+              "end_ms": 685
+            },
+            {
+              "index": 3,
+              "text": "laptop.",
+              "start_ms": 766,
+              "end_ms": 1250
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 1875,
+          "sha256": "09571abfa80de2c7017958be9cd9f464776304582d5fc99c608d44449a081366",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I HAVE A LAP TOP",
+          "produced_at": "2026-11-02T02:54:27.566357+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 1944,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/possess-02-female.mp3",
+          "text": "I have a laptop.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I",
+              "start_ms": 464,
+              "end_ms": 484
+            },
+            {
+              "index": 1,
+              "text": "have",
+              "start_ms": 565,
+              "end_ms": 665
+            },
+            {
+              "index": 2,
+              "text": "a",
+              "start_ms": 706,
+              "end_ms": 726
+            },
+            {
+              "index": 3,
+              "text": "laptop.",
+              "start_ms": 786,
+              "end_ms": 1250
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 1875,
+          "sha256": "7222894ef1ce0add0267e77cf81ceee0a513583927aa30f9249bed334f7a03e3",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I HAVE A LAP TOP",
+          "produced_at": "2026-11-02T02:54:28.943431+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 1944,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "possess-03",
+      "pattern_id": 105,
+      "group_id": "g-foundation",
+      "en": "I have a new idea.",
+      "ar": "لدي فكرة جديدة.",
+      "context": "لدي فكرة جديدة.",
+      "scene_description": "A designer presenting a fresh sketch to a colleague",
+      "difficulty": {
+        "cefr": "A1",
+        "stage": 2,
+        "stage_label": "توسيع النمط"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "have",
+        "idea"
+      ],
+      "exercise_ids": [
+        "possess-03-transfer"
+      ],
+      "image": {
+        "id": "scene-possess-03",
+        "atlas": "assets/scenes/possess-atlas-v1.webp",
+        "cell": 2,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "ef15bbf91f2b9888ec60efd7d96c59f0c6f2f59a9e3f512780c05b5ad7b28733",
+        "crop": {
+          "x": 1025,
+          "y": 1,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/possess-03-male.mp3",
+          "text": "I have a new idea.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I",
+              "start_ms": 361,
+              "end_ms": 381
+            },
+            {
+              "index": 1,
+              "text": "have",
+              "start_ms": 461,
+              "end_ms": 601
+            },
+            {
+              "index": 2,
+              "text": "a",
+              "start_ms": 642,
+              "end_ms": 662
+            },
+            {
+              "index": 3,
+              "text": "new",
+              "start_ms": 742,
+              "end_ms": 842
+            },
+            {
+              "index": 4,
+              "text": "idea.",
+              "start_ms": 982,
+              "end_ms": 1403
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2025,
+          "sha256": "be535ac31ca4a9ffd2a958792906d18f19f1d552e8c64cac80b9a05234c02000",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I HAVE A NEW IDEA",
+          "produced_at": "2026-11-02T02:54:30.574897+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2088,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/possess-03-female.mp3",
+          "text": "I have a new idea.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I",
+              "start_ms": 462,
+              "end_ms": 482
+            },
+            {
+              "index": 1,
+              "text": "have",
+              "start_ms": 563,
+              "end_ms": 704
+            },
+            {
+              "index": 2,
+              "text": "a",
+              "start_ms": 724,
+              "end_ms": 764
+            },
+            {
+              "index": 3,
+              "text": "new",
+              "start_ms": 804,
+              "end_ms": 905
+            },
+            {
+              "index": 4,
+              "text": "idea.",
+              "start_ms": 1005,
+              "end_ms": 1367
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 1950,
+          "sha256": "289009a54f888a1974dad99fd55085bf4483091d6516d3824df54c09b17a2cb1",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I HAVE A NEW IDEA",
+          "produced_at": "2026-11-02T02:54:32.090483+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2016,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "possess-04",
+      "pattern_id": 105,
+      "group_id": "g-foundation",
+      "en": "I have two books.",
+      "ar": "لدي كتابان.",
+      "context": "لدي كتابان.",
+      "scene_description": "An adult learner holding exactly two books",
+      "difficulty": {
+        "cefr": "A1",
+        "stage": 2,
+        "stage_label": "توسيع النمط"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "have",
+        "books"
+      ],
+      "exercise_ids": [
+        "possess-04-transfer"
+      ],
+      "image": {
+        "id": "scene-possess-04",
+        "atlas": "assets/scenes/possess-atlas-v1.webp",
+        "cell": 3,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "ef15bbf91f2b9888ec60efd7d96c59f0c6f2f59a9e3f512780c05b5ad7b28733",
+        "crop": {
+          "x": 1,
+          "y": 513,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/possess-04-male.mp3",
+          "text": "I have two books.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I",
+              "start_ms": 342,
+              "end_ms": 362
+            },
+            {
+              "index": 1,
+              "text": "have",
+              "start_ms": 462,
+              "end_ms": 603
+            },
+            {
+              "index": 2,
+              "text": "two",
+              "start_ms": 684,
+              "end_ms": 804
+            },
+            {
+              "index": 3,
+              "text": "books.",
+              "start_ms": 905,
+              "end_ms": 1166
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 1850,
+          "sha256": "b3595b26d12398d04ff880b7f1320b34ad64d807ce07c4123527bd4dbbf8d9c8",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I HAVE TWO BOOKS",
+          "produced_at": "2026-11-02T02:54:33.635002+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 1920,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/possess-04-female.mp3",
+          "text": "I have two books.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I",
+              "start_ms": 444,
+              "end_ms": 484
+            },
+            {
+              "index": 1,
+              "text": "have",
+              "start_ms": 544,
+              "end_ms": 685
+            },
+            {
+              "index": 2,
+              "text": "two",
+              "start_ms": 746,
+              "end_ms": 867
+            },
+            {
+              "index": 3,
+              "text": "books.",
+              "start_ms": 968,
+              "end_ms": 1250
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 1875,
+          "sha256": "6bc4f4b032403509b1aafad5941b0f5f947f451a4287371e9f8eb777bc507319",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I HAVE TWO BOOKS",
+          "produced_at": "2026-11-02T02:54:35.003026+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 1944,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "possess-05",
+      "pattern_id": 105,
+      "group_id": "g-foundation",
+      "en": "I have a small garden behind my house.",
+      "ar": "لدي حديقة صغيرة خلف منزلي.",
+      "context": "لدي حديقة صغيرة خلف منزلي.",
+      "scene_description": "A homeowner standing in a small back garden",
+      "difficulty": {
+        "cefr": "A1",
+        "stage": 3,
+        "stage_label": "المقارنة في موقف"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "have",
+        "small",
+        "garden",
+        "behind",
+        "house"
+      ],
+      "exercise_ids": [
+        "possess-05-transfer"
+      ],
+      "image": {
+        "id": "scene-possess-05",
+        "atlas": "assets/scenes/possess-atlas-v1.webp",
+        "cell": 4,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "ef15bbf91f2b9888ec60efd7d96c59f0c6f2f59a9e3f512780c05b5ad7b28733",
+        "crop": {
+          "x": 513,
+          "y": 513,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/possess-05-male.mp3",
+          "text": "I have a small garden behind my house.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I",
+              "start_ms": 322,
+              "end_ms": 342
+            },
+            {
+              "index": 1,
+              "text": "have",
+              "start_ms": 422,
+              "end_ms": 543
+            },
+            {
+              "index": 2,
+              "text": "a",
+              "start_ms": 583,
+              "end_ms": 603
+            },
+            {
+              "index": 3,
+              "text": "small",
+              "start_ms": 663,
+              "end_ms": 945
+            },
+            {
+              "index": 4,
+              "text": "garden",
+              "start_ms": 1065,
+              "end_ms": 1347
+            },
+            {
+              "index": 5,
+              "text": "behind",
+              "start_ms": 1427,
+              "end_ms": 1709
+            },
+            {
+              "index": 6,
+              "text": "my",
+              "start_ms": 1789,
+              "end_ms": 1890
+            },
+            {
+              "index": 7,
+              "text": "house.",
+              "start_ms": 1970,
+              "end_ms": 2231
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2975,
+          "sha256": "b8e46ababcaec8bcaae76158072b0c78ac967cf320ac3ce1c1da22c1c31ccf72",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I HAVE A SMALL GARDEN BEHIND MY HOUSE",
+          "produced_at": "2026-11-02T02:54:37.304886+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 3024,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/possess-05-female.mp3",
+          "text": "I have a small garden behind my house.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I",
+              "start_ms": 482,
+              "end_ms": 523
+            },
+            {
+              "index": 1,
+              "text": "have",
+              "start_ms": 603,
+              "end_ms": 724
+            },
+            {
+              "index": 2,
+              "text": "a",
+              "start_ms": 764,
+              "end_ms": 784
+            },
+            {
+              "index": 3,
+              "text": "small",
+              "start_ms": 844,
+              "end_ms": 1106
+            },
+            {
+              "index": 4,
+              "text": "garden",
+              "start_ms": 1166,
+              "end_ms": 1447
+            },
+            {
+              "index": 5,
+              "text": "behind",
+              "start_ms": 1528,
+              "end_ms": 1829
+            },
+            {
+              "index": 6,
+              "text": "my",
+              "start_ms": 1890,
+              "end_ms": 1990
+            },
+            {
+              "index": 7,
+              "text": "house.",
+              "start_ms": 2050,
+              "end_ms": 2352
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2975,
+          "sha256": "2827dee0e0fec70c407520116efd1246b6b0a569769aecac6b995699c550e291",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I HAVE A SMALL GARDEN BEHIND MY HOUSE",
+          "produced_at": "2026-11-02T02:54:39.314479+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 3024,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "possess-06",
+      "pattern_id": 105,
+      "group_id": "g-foundation",
+      "en": "I have an appointment this afternoon.",
+      "ar": "لدي موعد بعد ظهر اليوم.",
+      "context": "لدي موعد بعد ظهر اليوم.",
+      "scene_description": "A person checking an appointment in a paper diary",
+      "difficulty": {
+        "cefr": "A1",
+        "stage": 3,
+        "stage_label": "المقارنة في موقف"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "have",
+        "appointment",
+        "this",
+        "afternoon"
+      ],
+      "exercise_ids": [
+        "possess-06-transfer"
+      ],
+      "image": {
+        "id": "scene-possess-06",
+        "atlas": "assets/scenes/possess-atlas-v1.webp",
+        "cell": 5,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "ef15bbf91f2b9888ec60efd7d96c59f0c6f2f59a9e3f512780c05b5ad7b28733",
+        "crop": {
+          "x": 1025,
+          "y": 513,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/possess-06-male.mp3",
+          "text": "I have an appointment this afternoon.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I",
+              "start_ms": 362,
+              "end_ms": 382
+            },
+            {
+              "index": 1,
+              "text": "have",
+              "start_ms": 483,
+              "end_ms": 623
+            },
+            {
+              "index": 2,
+              "text": "an",
+              "start_ms": 664,
+              "end_ms": 704
+            },
+            {
+              "index": 3,
+              "text": "appointment",
+              "start_ms": 764,
+              "end_ms": 1227
+            },
+            {
+              "index": 4,
+              "text": "this",
+              "start_ms": 1287,
+              "end_ms": 1428
+            },
+            {
+              "index": 5,
+              "text": "afternoon.",
+              "start_ms": 1568,
+              "end_ms": 2132
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2775,
+          "sha256": "fd9053e3eb31357289ae78599e43259866b5bb330a75350489fd44bf8c419020",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I HAVE AN APPOINTMENT THIS AFTERNOON",
+          "produced_at": "2026-11-02T02:54:41.405186+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2832,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/possess-06-female.mp3",
+          "text": "I have an appointment this afternoon.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I",
+              "start_ms": 482,
+              "end_ms": 502
+            },
+            {
+              "index": 1,
+              "text": "have",
+              "start_ms": 602,
+              "end_ms": 723
+            },
+            {
+              "index": 2,
+              "text": "an",
+              "start_ms": 743,
+              "end_ms": 803
+            },
+            {
+              "index": 3,
+              "text": "appointment",
+              "start_ms": 843,
+              "end_ms": 1285
+            },
+            {
+              "index": 4,
+              "text": "this",
+              "start_ms": 1325,
+              "end_ms": 1465
+            },
+            {
+              "index": 5,
+              "text": "afternoon.",
+              "start_ms": 1586,
+              "end_ms": 2148
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2750,
+          "sha256": "355320396de6f9ff2aa96a1b0c554a234c8a92ace8f16073d94b61c8869d0167",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I HAVE AN APPOINTMENT THIS AFTERNOON",
+          "produced_at": "2026-11-02T02:54:43.359966+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2808,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "possess-07",
+      "pattern_id": 105,
+      "group_id": "g-foundation",
+      "en": "I have enough time to help you.",
+      "ar": "لدي وقت كافٍ لمساعدتك.",
+      "context": "لدي وقت كافٍ لمساعدتك.",
+      "scene_description": "A colleague sitting down to help another worker",
+      "difficulty": {
+        "cefr": "A2",
+        "stage": 4,
+        "stage_label": "الاستخدام الحقيقي"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "have",
+        "enough",
+        "time",
+        "help"
+      ],
+      "exercise_ids": [
+        "possess-07-transfer"
+      ],
+      "image": {
+        "id": "scene-possess-07",
+        "atlas": "assets/scenes/possess-atlas-v1.webp",
+        "cell": 6,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "ef15bbf91f2b9888ec60efd7d96c59f0c6f2f59a9e3f512780c05b5ad7b28733",
+        "crop": {
+          "x": 1,
+          "y": 1025,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/possess-07-male.mp3",
+          "text": "I have enough time to help you.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I",
+              "start_ms": 321,
+              "end_ms": 341
+            },
+            {
+              "index": 1,
+              "text": "have",
+              "start_ms": 422,
+              "end_ms": 542
+            },
+            {
+              "index": 2,
+              "text": "enough",
+              "start_ms": 582,
+              "end_ms": 803
+            },
+            {
+              "index": 3,
+              "text": "time",
+              "start_ms": 904,
+              "end_ms": 1185
+            },
+            {
+              "index": 4,
+              "text": "to",
+              "start_ms": 1265,
+              "end_ms": 1325
+            },
+            {
+              "index": 5,
+              "text": "help",
+              "start_ms": 1386,
+              "end_ms": 1526
+            },
+            {
+              "index": 6,
+              "text": "you.",
+              "start_ms": 1627,
+              "end_ms": 1848
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2450,
+          "sha256": "8622164e469f886133d07eeb46416670d7e345e6e1cd05142c4d8c36a8c79884",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I HAVE ENOUGH TIME TO HELP YOU",
+          "produced_at": "2026-11-02T02:54:45.310335+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2520,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/possess-07-female.mp3",
+          "text": "I have enough time to help you.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I",
+              "start_ms": 463,
+              "end_ms": 483
+            },
+            {
+              "index": 1,
+              "text": "have",
+              "start_ms": 564,
+              "end_ms": 704
+            },
+            {
+              "index": 2,
+              "text": "enough",
+              "start_ms": 745,
+              "end_ms": 946
+            },
+            {
+              "index": 3,
+              "text": "time",
+              "start_ms": 1026,
+              "end_ms": 1228
+            },
+            {
+              "index": 4,
+              "text": "to",
+              "start_ms": 1268,
+              "end_ms": 1328
+            },
+            {
+              "index": 5,
+              "text": "help",
+              "start_ms": 1369,
+              "end_ms": 1489
+            },
+            {
+              "index": 6,
+              "text": "you.",
+              "start_ms": 1570,
+              "end_ms": 1771
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2375,
+          "sha256": "fda1ca0967ac49790b7960581cbfed4c229371261e235af3f1354eefca43246d",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I HAVE ENOUGH TIME TO HELP YOU",
+          "produced_at": "2026-11-02T02:54:47.184297+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2424,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "possess-08",
+      "pattern_id": 105,
+      "group_id": "g-foundation",
+      "en": "I have three sisters.",
+      "ar": "لدي ثلاث أخوات.",
+      "context": "لدي ثلاث أخوات.",
+      "scene_description": "A man standing with his three adult sisters",
+      "difficulty": {
+        "cefr": "A2",
+        "stage": 4,
+        "stage_label": "الاستخدام الحقيقي"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "have",
+        "three",
+        "sisters"
+      ],
+      "exercise_ids": [
+        "possess-08-transfer"
+      ],
+      "image": {
+        "id": "scene-possess-08",
+        "atlas": "assets/scenes/possess-atlas-v1.webp",
+        "cell": 7,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "ef15bbf91f2b9888ec60efd7d96c59f0c6f2f59a9e3f512780c05b5ad7b28733",
+        "crop": {
+          "x": 513,
+          "y": 1025,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/possess-08-male.mp3",
+          "text": "I have three sisters.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I",
+              "start_ms": 382,
+              "end_ms": 402
+            },
+            {
+              "index": 1,
+              "text": "have",
+              "start_ms": 502,
+              "end_ms": 643
+            },
+            {
+              "index": 2,
+              "text": "three",
+              "start_ms": 723,
+              "end_ms": 924
+            },
+            {
+              "index": 3,
+              "text": "sisters.",
+              "start_ms": 1025,
+              "end_ms": 1467
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2150,
+          "sha256": "08cad2a4b769a4a16a78eebb43fcde95f682e71f1bef06c6d6c091d936aa6ba6",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I HAVE THREE SISTERS",
+          "produced_at": "2026-11-02T02:54:48.894105+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2208,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/possess-08-female.mp3",
+          "text": "I have three sisters.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I",
+              "start_ms": 443,
+              "end_ms": 463
+            },
+            {
+              "index": 1,
+              "text": "have",
+              "start_ms": 544,
+              "end_ms": 665
+            },
+            {
+              "index": 2,
+              "text": "three",
+              "start_ms": 725,
+              "end_ms": 907
+            },
+            {
+              "index": 3,
+              "text": "sisters.",
+              "start_ms": 987,
+              "end_ms": 1410
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2075,
+          "sha256": "452789c3ba63c06bcdc1cebc97e3c56e5977caf373799b08f9faf3174bb4bc89",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I HAVE THREE SISTERS",
+          "produced_at": "2026-11-02T02:54:50.573216+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2136,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "possess-09",
+      "pattern_id": 105,
+      "group_id": "g-foundation",
+      "en": "I have a question about the lesson.",
+      "ar": "لدي سؤال عن الدرس.",
+      "context": "لدي سؤال عن الدرس.",
+      "scene_description": "An adult learner raising a hand over a notebook",
+      "difficulty": {
+        "cefr": "A2",
+        "stage": 5,
+        "stage_label": "ترابط الأفكار"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "have",
+        "question",
+        "about",
+        "lesson"
+      ],
+      "exercise_ids": [
+        "possess-09-transfer"
+      ],
+      "image": {
+        "id": "scene-possess-09",
+        "atlas": "assets/scenes/possess-atlas-v1.webp",
+        "cell": 8,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "ef15bbf91f2b9888ec60efd7d96c59f0c6f2f59a9e3f512780c05b5ad7b28733",
+        "crop": {
+          "x": 1025,
+          "y": 1025,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/possess-09-male.mp3",
+          "text": "I have a question about the lesson.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I",
+              "start_ms": 321,
+              "end_ms": 341
+            },
+            {
+              "index": 1,
+              "text": "have",
+              "start_ms": 421,
+              "end_ms": 541
+            },
+            {
+              "index": 2,
+              "text": "a",
+              "start_ms": 581,
+              "end_ms": 601
+            },
+            {
+              "index": 3,
+              "text": "question",
+              "start_ms": 661,
+              "end_ms": 1022
+            },
+            {
+              "index": 4,
+              "text": "about",
+              "start_ms": 1102,
+              "end_ms": 1303
+            },
+            {
+              "index": 5,
+              "text": "the",
+              "start_ms": 1343,
+              "end_ms": 1403
+            },
+            {
+              "index": 6,
+              "text": "lesson.",
+              "start_ms": 1463,
+              "end_ms": 1884
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2525,
+          "sha256": "326ce613c9537f79c76fc5c814d76469fb65e84265d1481fa6744a902ddcb30d",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I HAVE A QUESTION ABOUT THE LESSON",
+          "produced_at": "2026-11-02T02:54:52.605203+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2592,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/possess-09-female.mp3",
+          "text": "I have a question about the lesson.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I",
+              "start_ms": 482,
+              "end_ms": 502
+            },
+            {
+              "index": 1,
+              "text": "have",
+              "start_ms": 602,
+              "end_ms": 723
+            },
+            {
+              "index": 2,
+              "text": "a",
+              "start_ms": 763,
+              "end_ms": 783
+            },
+            {
+              "index": 3,
+              "text": "question",
+              "start_ms": 843,
+              "end_ms": 1185
+            },
+            {
+              "index": 4,
+              "text": "about",
+              "start_ms": 1245,
+              "end_ms": 1406
+            },
+            {
+              "index": 5,
+              "text": "the",
+              "start_ms": 1446,
+              "end_ms": 1506
+            },
+            {
+              "index": 6,
+              "text": "lesson.",
+              "start_ms": 1566,
+              "end_ms": 1988
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2550,
+          "sha256": "578bb3dee9d24e011592db327e9f0764e2c5bc1a032d28c76c88ef003b12e7d0",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I HAVE A QUESTION ABOUT THE LESSON",
+          "produced_at": "2026-11-02T02:54:54.455883+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2616,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "possess-10",
+      "pattern_id": 105,
+      "group_id": "g-foundation",
+      "en": "I have some experience with computers.",
+      "ar": "لدي بعض الخبرة في استخدام الحواسيب.",
+      "context": "لدي بعض الخبرة في استخدام الحواسيب.",
+      "scene_description": "A person helping a colleague use a desktop computer",
+      "difficulty": {
+        "cefr": "A2",
+        "stage": 5,
+        "stage_label": "ترابط الأفكار"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "have",
+        "some",
+        "experience",
+        "with",
+        "computers"
+      ],
+      "exercise_ids": [
+        "possess-10-transfer"
+      ],
+      "image": {
+        "id": "scene-possess-10",
+        "atlas": "assets/scenes/possess-atlas-v1.webp",
+        "cell": 9,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "ef15bbf91f2b9888ec60efd7d96c59f0c6f2f59a9e3f512780c05b5ad7b28733",
+        "crop": {
+          "x": 1,
+          "y": 1537,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/possess-10-male.mp3",
+          "text": "I have some experience with computers.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I",
+              "start_ms": 321,
+              "end_ms": 341
+            },
+            {
+              "index": 1,
+              "text": "have",
+              "start_ms": 421,
+              "end_ms": 561
+            },
+            {
+              "index": 2,
+              "text": "some",
+              "start_ms": 621,
+              "end_ms": 761
+            },
+            {
+              "index": 3,
+              "text": "experience",
+              "start_ms": 801,
+              "end_ms": 1362
+            },
+            {
+              "index": 4,
+              "text": "with",
+              "start_ms": 1402,
+              "end_ms": 1523
+            },
+            {
+              "index": 5,
+              "text": "computers.",
+              "start_ms": 1583,
+              "end_ms": 2144
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2825,
+          "sha256": "5f2bae5b284e561d66e0d0e8fbce0875bdc5b870766dbee0e708c457121322c7",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I HAVE SOME EXPERIENCE WITH COMPUTERS",
+          "produced_at": "2026-11-02T02:54:56.684847+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2880,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/possess-10-female.mp3",
+          "text": "I have some experience with computers.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I",
+              "start_ms": 482,
+              "end_ms": 502
+            },
+            {
+              "index": 1,
+              "text": "have",
+              "start_ms": 602,
+              "end_ms": 722
+            },
+            {
+              "index": 2,
+              "text": "some",
+              "start_ms": 783,
+              "end_ms": 903
+            },
+            {
+              "index": 3,
+              "text": "experience",
+              "start_ms": 943,
+              "end_ms": 1525
+            },
+            {
+              "index": 4,
+              "text": "with",
+              "start_ms": 1585,
+              "end_ms": 1686
+            },
+            {
+              "index": 5,
+              "text": "computers.",
+              "start_ms": 1746,
+              "end_ms": 2308
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2950,
+          "sha256": "449f8dfc5c59a263b151b8e6002948f19336522065240a4ff9d47a3521a30005",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I HAVE SOME EXPERIENCE WITH COMPUTERS",
+          "produced_at": "2026-11-02T02:54:58.991388+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 3000,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "possess-11",
+      "pattern_id": 105,
+      "group_id": "g-foundation",
+      "en": "I have a ticket for the evening train.",
+      "ar": "لدي تذكرة لقطار المساء.",
+      "context": "لدي تذكرة لقطار المساء.",
+      "scene_description": "A traveler holding a ticket near a station at dusk",
+      "difficulty": {
+        "cefr": "A2",
+        "stage": 6,
+        "stage_label": "الإنتاج والطلاقة"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "have",
+        "ticket",
+        "evening",
+        "train"
+      ],
+      "exercise_ids": [
+        "possess-11-transfer"
+      ],
+      "image": {
+        "id": "scene-possess-11",
+        "atlas": "assets/scenes/possess-atlas-v1.webp",
+        "cell": 10,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "ef15bbf91f2b9888ec60efd7d96c59f0c6f2f59a9e3f512780c05b5ad7b28733",
+        "crop": {
+          "x": 513,
+          "y": 1537,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/possess-11-male.mp3",
+          "text": "I have a ticket for the evening train.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I",
+              "start_ms": 363,
+              "end_ms": 383
+            },
+            {
+              "index": 1,
+              "text": "have",
+              "start_ms": 483,
+              "end_ms": 604
+            },
+            {
+              "index": 2,
+              "text": "a",
+              "start_ms": 645,
+              "end_ms": 665
+            },
+            {
+              "index": 3,
+              "text": "ticket",
+              "start_ms": 725,
+              "end_ms": 1027
+            },
+            {
+              "index": 4,
+              "text": "for",
+              "start_ms": 1108,
+              "end_ms": 1188
+            },
+            {
+              "index": 5,
+              "text": "the",
+              "start_ms": 1229,
+              "end_ms": 1309
+            },
+            {
+              "index": 6,
+              "text": "evening",
+              "start_ms": 1430,
+              "end_ms": 1652
+            },
+            {
+              "index": 7,
+              "text": "train.",
+              "start_ms": 1732,
+              "end_ms": 2155
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2800,
+          "sha256": "e5ac8230143b486971bed45bac6748c7946172ce66d1715908fa1fd485e3eeed",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I HAVE A TICKET FOR THE EVENING TRAIN",
+          "produced_at": "2026-11-02T02:55:01.330445+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2856,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/possess-11-female.mp3",
+          "text": "I have a ticket for the evening train.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I",
+              "start_ms": 483,
+              "end_ms": 503
+            },
+            {
+              "index": 1,
+              "text": "have",
+              "start_ms": 583,
+              "end_ms": 684
+            },
+            {
+              "index": 2,
+              "text": "a",
+              "start_ms": 704,
+              "end_ms": 744
+            },
+            {
+              "index": 3,
+              "text": "ticket",
+              "start_ms": 784,
+              "end_ms": 1046
+            },
+            {
+              "index": 4,
+              "text": "for",
+              "start_ms": 1106,
+              "end_ms": 1187
+            },
+            {
+              "index": 5,
+              "text": "the",
+              "start_ms": 1227,
+              "end_ms": 1307
+            },
+            {
+              "index": 6,
+              "text": "evening",
+              "start_ms": 1388,
+              "end_ms": 1629
+            },
+            {
+              "index": 7,
+              "text": "train.",
+              "start_ms": 1710,
+              "end_ms": 2092
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2675,
+          "sha256": "302b347fa4d302a88f5ef8764b1aabb50496de70d189a68032611f8b3d527076",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I HAVE A TICKET FOR THE EVENING TRAIN",
+          "produced_at": "2026-11-02T02:55:03.923420+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2736,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "possess-12",
+      "pattern_id": 105,
+      "group_id": "g-foundation",
+      "en": "I have everything we need for dinner.",
+      "ar": "لدي كل ما نحتاجه للعشاء.",
+      "context": "لدي كل ما نحتاجه للعشاء.",
+      "scene_description": "A cook showing fresh dinner ingredients on a counter",
+      "difficulty": {
+        "cefr": "A2",
+        "stage": 6,
+        "stage_label": "الإنتاج والطلاقة"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "have",
+        "everything",
+        "need",
+        "dinner"
+      ],
+      "exercise_ids": [
+        "possess-12-transfer"
+      ],
+      "image": {
+        "id": "scene-possess-12",
+        "atlas": "assets/scenes/possess-atlas-v1.webp",
+        "cell": 11,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "ef15bbf91f2b9888ec60efd7d96c59f0c6f2f59a9e3f512780c05b5ad7b28733",
+        "crop": {
+          "x": 1025,
+          "y": 1537,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/possess-12-male.mp3",
+          "text": "I have everything we need for dinner.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I",
+              "start_ms": 361,
+              "end_ms": 381
+            },
+            {
+              "index": 1,
+              "text": "have",
+              "start_ms": 502,
+              "end_ms": 682
+            },
+            {
+              "index": 2,
+              "text": "everything",
+              "start_ms": 863,
+              "end_ms": 1244
+            },
+            {
+              "index": 3,
+              "text": "we",
+              "start_ms": 1324,
+              "end_ms": 1405
+            },
+            {
+              "index": 4,
+              "text": "need",
+              "start_ms": 1505,
+              "end_ms": 1686
+            },
+            {
+              "index": 5,
+              "text": "for",
+              "start_ms": 1766,
+              "end_ms": 1866
+            },
+            {
+              "index": 6,
+              "text": "dinner.",
+              "start_ms": 1947,
+              "end_ms": 2268
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2950,
+          "sha256": "e34bbaec8bbc0a1514e2877ddc3d49749545cc6e26618010807f2a59b95ece52",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I HAVE EVERYTHING WE NEED FOR DINNER",
+          "produced_at": "2026-11-02T02:55:05.924295+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 3000,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/possess-12-female.mp3",
+          "text": "I have everything we need for dinner.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I",
+              "start_ms": 502,
+              "end_ms": 522
+            },
+            {
+              "index": 1,
+              "text": "have",
+              "start_ms": 622,
+              "end_ms": 783
+            },
+            {
+              "index": 2,
+              "text": "everything",
+              "start_ms": 1044,
+              "end_ms": 1405
+            },
+            {
+              "index": 3,
+              "text": "we",
+              "start_ms": 1485,
+              "end_ms": 1565
+            },
+            {
+              "index": 4,
+              "text": "need",
+              "start_ms": 1646,
+              "end_ms": 1806
+            },
+            {
+              "index": 5,
+              "text": "for",
+              "start_ms": 1886,
+              "end_ms": 1967
+            },
+            {
+              "index": 6,
+              "text": "dinner.",
+              "start_ms": 2027,
+              "end_ms": 2328
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2950,
+          "sha256": "b0c7238105705fe8dd5fb2dcab06f651a5a995fea6ce97d8eb2a27e9f1091c49",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I HAVE EVERYTHING WE NEED FOR DINNER",
+          "produced_at": "2026-11-02T02:55:07.917391+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 3000,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "enjoy-01",
+      "pattern_id": 111,
+      "group_id": "g-foundation",
+      "en": "I like English.",
+      "ar": "أحب اللغة الإنجليزية.",
+      "context": "أحب اللغة الإنجليزية.",
+      "scene_description": "An adult enjoying an English lesson with a tutor",
+      "difficulty": {
+        "cefr": "A1",
+        "stage": 1,
+        "stage_label": "فهم النمط"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "like",
+        "english"
+      ],
+      "exercise_ids": [
+        "enjoy-01-transfer"
+      ],
+      "image": {
+        "id": "scene-enjoy-01",
+        "atlas": "assets/scenes/enjoy-atlas-v1.webp",
+        "cell": 0,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "4a3d0612cf6198d7f3df9863877adb8bd89220e2fe00aed823b6425566ba43d4",
+        "crop": {
+          "x": 1,
+          "y": 1,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/enjoy-01-male.mp3",
+          "text": "I like English.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I",
+              "start_ms": 384,
+              "end_ms": 404
+            },
+            {
+              "index": 1,
+              "text": "like",
+              "start_ms": 506,
+              "end_ms": 667
+            },
+            {
+              "index": 2,
+              "text": "English.",
+              "start_ms": 789,
+              "end_ms": 1092
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 1800,
+          "sha256": "8a944857f589560ccca8d3931e6cbc5c1f59d7c992569f9d585ce8ad9240d866",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I LIKE ENGLISH",
+          "produced_at": "2026-11-02T02:55:09.452652+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 1848,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/enjoy-01-female.mp3",
+          "text": "I like English.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I",
+              "start_ms": 482,
+              "end_ms": 502
+            },
+            {
+              "index": 1,
+              "text": "like",
+              "start_ms": 582,
+              "end_ms": 742
+            },
+            {
+              "index": 2,
+              "text": "English.",
+              "start_ms": 843,
+              "end_ms": 1164
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 1826,
+          "sha256": "62510a26921facafbe0270a13d4e55625bed756b3c7b375f1c330b707ad69b7c",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I LIKE ENGLISH",
+          "produced_at": "2026-11-02T02:55:11.002109+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 1896,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "enjoy-02",
+      "pattern_id": 111,
+      "group_id": "g-foundation",
+      "en": "I like reading.",
+      "ar": "أحب القراءة.",
+      "context": "أحب القراءة.",
+      "scene_description": "A woman reading comfortably in an armchair",
+      "difficulty": {
+        "cefr": "A1",
+        "stage": 1,
+        "stage_label": "فهم النمط"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "like",
+        "reading"
+      ],
+      "exercise_ids": [
+        "enjoy-02-transfer"
+      ],
+      "image": {
+        "id": "scene-enjoy-02",
+        "atlas": "assets/scenes/enjoy-atlas-v1.webp",
+        "cell": 1,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "4a3d0612cf6198d7f3df9863877adb8bd89220e2fe00aed823b6425566ba43d4",
+        "crop": {
+          "x": 513,
+          "y": 1,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/enjoy-02-male.mp3",
+          "text": "I like reading.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I",
+              "start_ms": 383,
+              "end_ms": 403
+            },
+            {
+              "index": 1,
+              "text": "like",
+              "start_ms": 504,
+              "end_ms": 666
+            },
+            {
+              "index": 2,
+              "text": "reading.",
+              "start_ms": 766,
+              "end_ms": 1170
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 1775,
+          "sha256": "0536ac73335c7f356a15c6474df9176f8775b1850343aa103fa20324c36d556a",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I LIKE READING",
+          "produced_at": "2026-11-02T02:55:12.515195+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 1824,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/enjoy-02-female.mp3",
+          "text": "I like reading.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I",
+              "start_ms": 484,
+              "end_ms": 504
+            },
+            {
+              "index": 1,
+              "text": "like",
+              "start_ms": 585,
+              "end_ms": 746
+            },
+            {
+              "index": 2,
+              "text": "reading.",
+              "start_ms": 827,
+              "end_ms": 1210
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 1775,
+          "sha256": "160a6af5111a0d2b67335d73a1053faf0f471dd5b190d040982a24dda6860fee",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I LIKE READING",
+          "produced_at": "2026-11-02T02:55:13.820566+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 1824,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "enjoy-03",
+      "pattern_id": 111,
+      "group_id": "g-foundation",
+      "en": "I like apples.",
+      "ar": "أحب التفاح.",
+      "context": "أحب التفاح.",
+      "scene_description": "A person selecting apples at a market",
+      "difficulty": {
+        "cefr": "A1",
+        "stage": 2,
+        "stage_label": "توسيع النمط"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "like",
+        "apples"
+      ],
+      "exercise_ids": [
+        "enjoy-03-transfer"
+      ],
+      "image": {
+        "id": "scene-enjoy-03",
+        "atlas": "assets/scenes/enjoy-atlas-v1.webp",
+        "cell": 2,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "4a3d0612cf6198d7f3df9863877adb8bd89220e2fe00aed823b6425566ba43d4",
+        "crop": {
+          "x": 1025,
+          "y": 1,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/enjoy-03-male.mp3",
+          "text": "I like apples.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I",
+              "start_ms": 381,
+              "end_ms": 401
+            },
+            {
+              "index": 1,
+              "text": "like",
+              "start_ms": 502,
+              "end_ms": 662
+            },
+            {
+              "index": 2,
+              "text": "apples.",
+              "start_ms": 803,
+              "end_ms": 1164
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 1826,
+          "sha256": "12405e727145244f94402c1477c414d5aa3f219736189d592d8170c0ae8a6d66",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I LIKE APPLES",
+          "produced_at": "2026-11-02T02:55:15.160464+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 1896,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/enjoy-03-female.mp3",
+          "text": "I like apples.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I",
+              "start_ms": 441,
+              "end_ms": 462
+            },
+            {
+              "index": 1,
+              "text": "like",
+              "start_ms": 542,
+              "end_ms": 702
+            },
+            {
+              "index": 2,
+              "text": "apples.",
+              "start_ms": 823,
+              "end_ms": 1204
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 1826,
+          "sha256": "1e472bd36fa1c6b1193ecdb8e45242c5bb8c89e3f09d98ca559d47c771598226",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I LIKE APPLES",
+          "produced_at": "2026-11-02T02:55:16.496194+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 1896,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "enjoy-04",
+      "pattern_id": 111,
+      "group_id": "g-foundation",
+      "en": "I like England.",
+      "ar": "تعجبني إنجلترا.",
+      "context": "تعجبني إنجلترا.",
+      "scene_description": "A traveler enjoying an English village street",
+      "difficulty": {
+        "cefr": "A1",
+        "stage": 2,
+        "stage_label": "توسيع النمط"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "like",
+        "england"
+      ],
+      "exercise_ids": [
+        "enjoy-04-transfer"
+      ],
+      "image": {
+        "id": "scene-enjoy-04",
+        "atlas": "assets/scenes/enjoy-atlas-v1.webp",
+        "cell": 3,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "4a3d0612cf6198d7f3df9863877adb8bd89220e2fe00aed823b6425566ba43d4",
+        "crop": {
+          "x": 1,
+          "y": 513,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/enjoy-04-male.mp3",
+          "text": "I like England.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I",
+              "start_ms": 382,
+              "end_ms": 402
+            },
+            {
+              "index": 1,
+              "text": "like",
+              "start_ms": 503,
+              "end_ms": 664
+            },
+            {
+              "index": 2,
+              "text": "England.",
+              "start_ms": 804,
+              "end_ms": 1227
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 1850,
+          "sha256": "3ac4174cef2c08b51139d5d369050c60cfabde36951228606a4ffa4404f990e8",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I LIKE ENGLAND",
+          "produced_at": "2026-11-02T02:55:17.931379+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 1920,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/enjoy-04-female.mp3",
+          "text": "I like England.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I",
+              "start_ms": 484,
+              "end_ms": 504
+            },
+            {
+              "index": 1,
+              "text": "like",
+              "start_ms": 605,
+              "end_ms": 766
+            },
+            {
+              "index": 2,
+              "text": "England.",
+              "start_ms": 887,
+              "end_ms": 1290
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 1875,
+          "sha256": "5accdaa526b9e416f9bf8233cdd3691d01483cb89479ffae8192f46e7f578b15",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I LIKE ENGLAND",
+          "produced_at": "2026-11-02T02:55:19.353054+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 1944,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "enjoy-05",
+      "pattern_id": 111,
+      "group_id": "g-foundation",
+      "en": "I like cooking with my family.",
+      "ar": "أحب الطبخ مع أسرتي.",
+      "context": "أحب الطبخ مع أسرتي.",
+      "scene_description": "A family preparing a meal together",
+      "difficulty": {
+        "cefr": "A1",
+        "stage": 3,
+        "stage_label": "المقارنة في موقف"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "like",
+        "cooking",
+        "with",
+        "family"
+      ],
+      "exercise_ids": [
+        "enjoy-05-transfer"
+      ],
+      "image": {
+        "id": "scene-enjoy-05",
+        "atlas": "assets/scenes/enjoy-atlas-v1.webp",
+        "cell": 4,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "4a3d0612cf6198d7f3df9863877adb8bd89220e2fe00aed823b6425566ba43d4",
+        "crop": {
+          "x": 513,
+          "y": 513,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/enjoy-05-male.mp3",
+          "text": "I like cooking with my family.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I",
+              "start_ms": 361,
+              "end_ms": 381
+            },
+            {
+              "index": 1,
+              "text": "like",
+              "start_ms": 461,
+              "end_ms": 601
+            },
+            {
+              "index": 2,
+              "text": "cooking",
+              "start_ms": 721,
+              "end_ms": 1002
+            },
+            {
+              "index": 3,
+              "text": "with",
+              "start_ms": 1042,
+              "end_ms": 1142
+            },
+            {
+              "index": 4,
+              "text": "my",
+              "start_ms": 1222,
+              "end_ms": 1303
+            },
+            {
+              "index": 5,
+              "text": "family.",
+              "start_ms": 1423,
+              "end_ms": 1884
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2525,
+          "sha256": "2187cd888e7f611a0d0196ec91fbc8860f49faa0cf23cf345172842425834c37",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I LIKE COOKING WITH MY FAMILY",
+          "produced_at": "2026-11-02T02:55:21.171092+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2592,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/enjoy-05-female.mp3",
+          "text": "I like cooking with my family.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I",
+              "start_ms": 463,
+              "end_ms": 483
+            },
+            {
+              "index": 1,
+              "text": "like",
+              "start_ms": 564,
+              "end_ms": 704
+            },
+            {
+              "index": 2,
+              "text": "cooking",
+              "start_ms": 805,
+              "end_ms": 1026
+            },
+            {
+              "index": 3,
+              "text": "with",
+              "start_ms": 1067,
+              "end_ms": 1167
+            },
+            {
+              "index": 4,
+              "text": "my",
+              "start_ms": 1208,
+              "end_ms": 1268
+            },
+            {
+              "index": 5,
+              "text": "family.",
+              "start_ms": 1369,
+              "end_ms": 1791
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2375,
+          "sha256": "bbc1833cb18d23eeb861c718389754b3b04cc71da41f0c6fc32dd53eb6692e63",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I LIKE COOKING WITH MY FAMILY",
+          "produced_at": "2026-11-02T02:55:22.894658+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2424,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "enjoy-06",
+      "pattern_id": 111,
+      "group_id": "g-foundation",
+      "en": "I like quiet mornings.",
+      "ar": "أحب الصباح الهادئ.",
+      "context": "أحب الصباح الهادئ.",
+      "scene_description": "A person enjoying tea beside a sunlit window",
+      "difficulty": {
+        "cefr": "A1",
+        "stage": 3,
+        "stage_label": "المقارنة في موقف"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "like",
+        "quiet",
+        "mornings"
+      ],
+      "exercise_ids": [
+        "enjoy-06-transfer"
+      ],
+      "image": {
+        "id": "scene-enjoy-06",
+        "atlas": "assets/scenes/enjoy-atlas-v1.webp",
+        "cell": 5,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "4a3d0612cf6198d7f3df9863877adb8bd89220e2fe00aed823b6425566ba43d4",
+        "crop": {
+          "x": 1025,
+          "y": 513,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/enjoy-06-male.mp3",
+          "text": "I like quiet mornings.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I",
+              "start_ms": 342,
+              "end_ms": 362
+            },
+            {
+              "index": 1,
+              "text": "like",
+              "start_ms": 442,
+              "end_ms": 603
+            },
+            {
+              "index": 2,
+              "text": "quiet",
+              "start_ms": 683,
+              "end_ms": 985
+            },
+            {
+              "index": 3,
+              "text": "mornings.",
+              "start_ms": 1045,
+              "end_ms": 1487
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2150,
+          "sha256": "ff5469f184778e494bde542f36ac90593bf3a5d8e1b45bbfe6de162585e8d60f",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I LIKE QUIET MORNINGS",
+          "produced_at": "2026-11-02T02:55:24.483207+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2208,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/enjoy-06-female.mp3",
+          "text": "I like quiet mornings.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I",
+              "start_ms": 444,
+              "end_ms": 464
+            },
+            {
+              "index": 1,
+              "text": "like",
+              "start_ms": 525,
+              "end_ms": 666
+            },
+            {
+              "index": 2,
+              "text": "quiet",
+              "start_ms": 767,
+              "end_ms": 1050
+            },
+            {
+              "index": 3,
+              "text": "mornings.",
+              "start_ms": 1130,
+              "end_ms": 1594
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2200,
+          "sha256": "e17d0a910d6137b1fe9d4d19d29fc241f115cafe410825c6dfafe9b5cda0071c",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I LIKE QUIET MORNINGS",
+          "produced_at": "2026-11-02T02:55:26.139165+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2256,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "enjoy-07",
+      "pattern_id": 111,
+      "group_id": "g-foundation",
+      "en": "I like learning new skills.",
+      "ar": "أحب تعلم مهارات جديدة.",
+      "context": "أحب تعلم مهارات جديدة.",
+      "scene_description": "An adult learning pottery in a workshop",
+      "difficulty": {
+        "cefr": "A2",
+        "stage": 4,
+        "stage_label": "الاستخدام الحقيقي"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "like",
+        "learning",
+        "skills"
+      ],
+      "exercise_ids": [
+        "enjoy-07-transfer"
+      ],
+      "image": {
+        "id": "scene-enjoy-07",
+        "atlas": "assets/scenes/enjoy-atlas-v1.webp",
+        "cell": 6,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "4a3d0612cf6198d7f3df9863877adb8bd89220e2fe00aed823b6425566ba43d4",
+        "crop": {
+          "x": 1,
+          "y": 1025,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/enjoy-07-male.mp3",
+          "text": "I like learning new skills.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I",
+              "start_ms": 362,
+              "end_ms": 383
+            },
+            {
+              "index": 1,
+              "text": "like",
+              "start_ms": 463,
+              "end_ms": 604
+            },
+            {
+              "index": 2,
+              "text": "learning",
+              "start_ms": 685,
+              "end_ms": 946
+            },
+            {
+              "index": 3,
+              "text": "new",
+              "start_ms": 1027,
+              "end_ms": 1127
+            },
+            {
+              "index": 4,
+              "text": "skills.",
+              "start_ms": 1208,
+              "end_ms": 1590
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2275,
+          "sha256": "7a96d246059db6cd9c068eba5f6dbd51d63d5ffb8c6c82ea1840e99238599032",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I LIKE LEARNING NEW SKILLS",
+          "produced_at": "2026-11-02T02:55:27.921114+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2328,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/enjoy-07-female.mp3",
+          "text": "I like learning new skills.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I",
+              "start_ms": 441,
+              "end_ms": 461
+            },
+            {
+              "index": 1,
+              "text": "like",
+              "start_ms": 521,
+              "end_ms": 641
+            },
+            {
+              "index": 2,
+              "text": "learning",
+              "start_ms": 702,
+              "end_ms": 942
+            },
+            {
+              "index": 3,
+              "text": "new",
+              "start_ms": 1002,
+              "end_ms": 1102
+            },
+            {
+              "index": 4,
+              "text": "skills.",
+              "start_ms": 1183,
+              "end_ms": 1604
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2225,
+          "sha256": "01b3f0cca87377be0962193d9e812811ff8dafca926a862873b60050a26dbb6e",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I LIKE LEARNING NEW SKILLS",
+          "produced_at": "2026-11-02T02:55:29.682060+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2280,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "enjoy-08",
+      "pattern_id": 111,
+      "group_id": "g-foundation",
+      "en": "I like this blue jacket.",
+      "ar": "تعجبني هذه السترة الزرقاء.",
+      "context": "تعجبني هذه السترة الزرقاء.",
+      "scene_description": "A shopper admiring a blue jacket",
+      "difficulty": {
+        "cefr": "A2",
+        "stage": 4,
+        "stage_label": "الاستخدام الحقيقي"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "like",
+        "this",
+        "blue",
+        "jacket"
+      ],
+      "exercise_ids": [
+        "enjoy-08-transfer"
+      ],
+      "image": {
+        "id": "scene-enjoy-08",
+        "atlas": "assets/scenes/enjoy-atlas-v1.webp",
+        "cell": 7,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "4a3d0612cf6198d7f3df9863877adb8bd89220e2fe00aed823b6425566ba43d4",
+        "crop": {
+          "x": 513,
+          "y": 1025,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/enjoy-08-male.mp3",
+          "text": "I like this blue jacket.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I",
+              "start_ms": 363,
+              "end_ms": 383
+            },
+            {
+              "index": 1,
+              "text": "like",
+              "start_ms": 464,
+              "end_ms": 625
+            },
+            {
+              "index": 2,
+              "text": "this",
+              "start_ms": 686,
+              "end_ms": 827
+            },
+            {
+              "index": 3,
+              "text": "blue",
+              "start_ms": 948,
+              "end_ms": 1150
+            },
+            {
+              "index": 4,
+              "text": "jacket.",
+              "start_ms": 1231,
+              "end_ms": 1695
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2300,
+          "sha256": "7089776d8a0b9ff1e6255952f5b450238d9f8598ab9cbc822930f28e82436038",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I LIKE THIS BLUE JACKET",
+          "produced_at": "2026-11-02T02:55:31.467789+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2352,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/enjoy-08-female.mp3",
+          "text": "I like this blue jacket.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I",
+              "start_ms": 464,
+              "end_ms": 484
+            },
+            {
+              "index": 1,
+              "text": "like",
+              "start_ms": 565,
+              "end_ms": 726
+            },
+            {
+              "index": 2,
+              "text": "this",
+              "start_ms": 787,
+              "end_ms": 928
+            },
+            {
+              "index": 3,
+              "text": "blue",
+              "start_ms": 989,
+              "end_ms": 1190
+            },
+            {
+              "index": 4,
+              "text": "jacket.",
+              "start_ms": 1231,
+              "end_ms": 1735
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2300,
+          "sha256": "066409b546b646ea79d75f2b43a143e0a6c5cbcc69f8eee5a6f1a3ff80149654",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I LIKE THIS BLUE JACKET",
+          "produced_at": "2026-11-02T02:55:33.069175+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2352,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "enjoy-09",
+      "pattern_id": 111,
+      "group_id": "g-foundation",
+      "en": "I like walking by the sea.",
+      "ar": "أحب المشي بجوار البحر.",
+      "context": "أحب المشي بجوار البحر.",
+      "scene_description": "A person walking along a peaceful coast",
+      "difficulty": {
+        "cefr": "A2",
+        "stage": 5,
+        "stage_label": "ترابط الأفكار"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "like",
+        "walking"
+      ],
+      "exercise_ids": [
+        "enjoy-09-transfer"
+      ],
+      "image": {
+        "id": "scene-enjoy-09",
+        "atlas": "assets/scenes/enjoy-atlas-v1.webp",
+        "cell": 8,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "4a3d0612cf6198d7f3df9863877adb8bd89220e2fe00aed823b6425566ba43d4",
+        "crop": {
+          "x": 1025,
+          "y": 1025,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/enjoy-09-male.mp3",
+          "text": "I like walking by the sea.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I",
+              "start_ms": 322,
+              "end_ms": 342
+            },
+            {
+              "index": 1,
+              "text": "like",
+              "start_ms": 423,
+              "end_ms": 564
+            },
+            {
+              "index": 2,
+              "text": "walking",
+              "start_ms": 644,
+              "end_ms": 966
+            },
+            {
+              "index": 3,
+              "text": "by",
+              "start_ms": 1047,
+              "end_ms": 1148
+            },
+            {
+              "index": 4,
+              "text": "the",
+              "start_ms": 1208,
+              "end_ms": 1268
+            },
+            {
+              "index": 5,
+              "text": "sea.",
+              "start_ms": 1349,
+              "end_ms": 1631
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2275,
+          "sha256": "74bb61b07e2805fbd042efd6dd8f93997e08e54ae046d05a215f3f5734c29a9c",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I LIKE WALKING BY THE SEA",
+          "produced_at": "2026-11-02T02:55:34.657936+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2328,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/enjoy-09-female.mp3",
+          "text": "I like walking by the sea.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I",
+              "start_ms": 442,
+              "end_ms": 462
+            },
+            {
+              "index": 1,
+              "text": "like",
+              "start_ms": 522,
+              "end_ms": 663
+            },
+            {
+              "index": 2,
+              "text": "walking",
+              "start_ms": 743,
+              "end_ms": 1045
+            },
+            {
+              "index": 3,
+              "text": "by",
+              "start_ms": 1085,
+              "end_ms": 1165
+            },
+            {
+              "index": 4,
+              "text": "the",
+              "start_ms": 1225,
+              "end_ms": 1306
+            },
+            {
+              "index": 5,
+              "text": "sea.",
+              "start_ms": 1366,
+              "end_ms": 1527
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2250,
+          "sha256": "067109303f667faeac0918d3ee05627df0e58b476563d394e10c048c44aaed61",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I LIKE WALKING BY THE SEA",
+          "produced_at": "2026-11-02T02:55:36.334754+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2304,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "enjoy-10",
+      "pattern_id": 111,
+      "group_id": "g-foundation",
+      "en": "I like working with this team.",
+      "ar": "أحب العمل مع هذا الفريق.",
+      "context": "أحب العمل مع هذا الفريق.",
+      "scene_description": "Colleagues cooperating warmly on a small project",
+      "difficulty": {
+        "cefr": "A2",
+        "stage": 5,
+        "stage_label": "ترابط الأفكار"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "like",
+        "working",
+        "with",
+        "this",
+        "team"
+      ],
+      "exercise_ids": [
+        "enjoy-10-transfer"
+      ],
+      "image": {
+        "id": "scene-enjoy-10",
+        "atlas": "assets/scenes/enjoy-atlas-v1.webp",
+        "cell": 9,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "4a3d0612cf6198d7f3df9863877adb8bd89220e2fe00aed823b6425566ba43d4",
+        "crop": {
+          "x": 1,
+          "y": 1537,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/enjoy-10-male.mp3",
+          "text": "I like working with this team.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I",
+              "start_ms": 363,
+              "end_ms": 383
+            },
+            {
+              "index": 1,
+              "text": "like",
+              "start_ms": 464,
+              "end_ms": 605
+            },
+            {
+              "index": 2,
+              "text": "working",
+              "start_ms": 706,
+              "end_ms": 988
+            },
+            {
+              "index": 3,
+              "text": "with",
+              "start_ms": 1029,
+              "end_ms": 1129
+            },
+            {
+              "index": 4,
+              "text": "this",
+              "start_ms": 1170,
+              "end_ms": 1291
+            },
+            {
+              "index": 5,
+              "text": "team.",
+              "start_ms": 1371,
+              "end_ms": 1755
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2400,
+          "sha256": "ef6d7b07cc68fad126c9c6d0dae2c596fd38f5ec8a38f331134574a80c10a72c",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I LIKE WORKING WITH THIS TEAM",
+          "produced_at": "2026-11-02T02:55:38.086153+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2448,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/enjoy-10-female.mp3",
+          "text": "I like working with this team.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I",
+              "start_ms": 443,
+              "end_ms": 463
+            },
+            {
+              "index": 1,
+              "text": "like",
+              "start_ms": 544,
+              "end_ms": 685
+            },
+            {
+              "index": 2,
+              "text": "working",
+              "start_ms": 765,
+              "end_ms": 1007
+            },
+            {
+              "index": 3,
+              "text": "with",
+              "start_ms": 1027,
+              "end_ms": 1127
+            },
+            {
+              "index": 4,
+              "text": "this",
+              "start_ms": 1168,
+              "end_ms": 1268
+            },
+            {
+              "index": 5,
+              "text": "team.",
+              "start_ms": 1329,
+              "end_ms": 1671
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2275,
+          "sha256": "1f68158ecc69c296e118b672312b913cdfbc5df6d681eb5138ca881b4eb93441",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I LIKE WORKING WITH THIS TEAM",
+          "produced_at": "2026-11-02T02:55:39.678663+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2328,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "enjoy-11",
+      "pattern_id": 111,
+      "group_id": "g-foundation",
+      "en": "I like fresh bread in the morning.",
+      "ar": "أحب الخبز الطازج في الصباح.",
+      "context": "أحب الخبز الطازج في الصباح.",
+      "scene_description": "A person enjoying fresh bread at breakfast",
+      "difficulty": {
+        "cefr": "A2",
+        "stage": 6,
+        "stage_label": "الإنتاج والطلاقة"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "like",
+        "fresh",
+        "bread",
+        "morning"
+      ],
+      "exercise_ids": [
+        "enjoy-11-transfer"
+      ],
+      "image": {
+        "id": "scene-enjoy-11",
+        "atlas": "assets/scenes/enjoy-atlas-v1.webp",
+        "cell": 10,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "4a3d0612cf6198d7f3df9863877adb8bd89220e2fe00aed823b6425566ba43d4",
+        "crop": {
+          "x": 513,
+          "y": 1537,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/enjoy-11-male.mp3",
+          "text": "I like fresh bread in the morning.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I",
+              "start_ms": 321,
+              "end_ms": 341
+            },
+            {
+              "index": 1,
+              "text": "like",
+              "start_ms": 422,
+              "end_ms": 562
+            },
+            {
+              "index": 2,
+              "text": "fresh",
+              "start_ms": 663,
+              "end_ms": 904
+            },
+            {
+              "index": 3,
+              "text": "bread",
+              "start_ms": 1024,
+              "end_ms": 1245
+            },
+            {
+              "index": 4,
+              "text": "in",
+              "start_ms": 1305,
+              "end_ms": 1345
+            },
+            {
+              "index": 5,
+              "text": "the",
+              "start_ms": 1385,
+              "end_ms": 1446
+            },
+            {
+              "index": 6,
+              "text": "morning.",
+              "start_ms": 1486,
+              "end_ms": 1887
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2550,
+          "sha256": "82c0b25c4d91619c9fdc51d5e3a4190a2c57c631e08ae41544f4fd57c7f7979e",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I LIKE FRESH BREAD IN THE MORNING",
+          "produced_at": "2026-11-02T02:55:41.504326+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2616,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/enjoy-11-female.mp3",
+          "text": "I like fresh bread in the morning.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I",
+              "start_ms": 442,
+              "end_ms": 462
+            },
+            {
+              "index": 1,
+              "text": "like",
+              "start_ms": 542,
+              "end_ms": 683
+            },
+            {
+              "index": 2,
+              "text": "fresh",
+              "start_ms": 783,
+              "end_ms": 1004
+            },
+            {
+              "index": 3,
+              "text": "bread",
+              "start_ms": 1124,
+              "end_ms": 1325
+            },
+            {
+              "index": 4,
+              "text": "in",
+              "start_ms": 1365,
+              "end_ms": 1406
+            },
+            {
+              "index": 5,
+              "text": "the",
+              "start_ms": 1446,
+              "end_ms": 1526
+            },
+            {
+              "index": 6,
+              "text": "morning.",
+              "start_ms": 1566,
+              "end_ms": 1948
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2550,
+          "sha256": "562645dd30ca2044838593cbe0412d5109f99e20fce8cfaa20495b39488caed5",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I LIKE FRESH BREAD IN THE MORNING",
+          "produced_at": "2026-11-02T02:55:43.257726+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2616,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "enjoy-12",
+      "pattern_id": 111,
+      "group_id": "g-foundation",
+      "en": "I like helping my neighbors.",
+      "ar": "أحب مساعدة جيراني.",
+      "context": "أحب مساعدة جيراني.",
+      "scene_description": "A person helping a neighbor carry groceries",
+      "difficulty": {
+        "cefr": "A2",
+        "stage": 6,
+        "stage_label": "الإنتاج والطلاقة"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "like",
+        "helping",
+        "neighbors"
+      ],
+      "exercise_ids": [
+        "enjoy-12-transfer"
+      ],
+      "image": {
+        "id": "scene-enjoy-12",
+        "atlas": "assets/scenes/enjoy-atlas-v1.webp",
+        "cell": 11,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "4a3d0612cf6198d7f3df9863877adb8bd89220e2fe00aed823b6425566ba43d4",
+        "crop": {
+          "x": 1025,
+          "y": 1537,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/enjoy-12-male.mp3",
+          "text": "I like helping my neighbors.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I",
+              "start_ms": 323,
+              "end_ms": 343
+            },
+            {
+              "index": 1,
+              "text": "like",
+              "start_ms": 424,
+              "end_ms": 565
+            },
+            {
+              "index": 2,
+              "text": "helping",
+              "start_ms": 645,
+              "end_ms": 988
+            },
+            {
+              "index": 3,
+              "text": "my",
+              "start_ms": 1069,
+              "end_ms": 1170
+            },
+            {
+              "index": 4,
+              "text": "neighbors.",
+              "start_ms": 1271,
+              "end_ms": 1714
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2400,
+          "sha256": "92251a0ac7b362eee8bf1e1c4851d663c204f161564d710e683f3aa66e4ae8f5",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I LIKE HELPING MY NEIGHBORS",
+          "produced_at": "2026-11-02T02:55:44.913079+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2448,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/enjoy-12-female.mp3",
+          "text": "I like helping my neighbors.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I",
+              "start_ms": 442,
+              "end_ms": 462
+            },
+            {
+              "index": 1,
+              "text": "like",
+              "start_ms": 542,
+              "end_ms": 683
+            },
+            {
+              "index": 2,
+              "text": "helping",
+              "start_ms": 743,
+              "end_ms": 1004
+            },
+            {
+              "index": 3,
+              "text": "my",
+              "start_ms": 1065,
+              "end_ms": 1125
+            },
+            {
+              "index": 4,
+              "text": "neighbors.",
+              "start_ms": 1225,
+              "end_ms": 1627
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2250,
+          "sha256": "657c3c689143340a4303296c0c58b300a4e41389359c96ffab1815090d394db6",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I LIKE HELPING MY NEIGHBORS",
+          "produced_at": "2026-11-02T02:55:46.497234+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2304,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "these-01",
+      "pattern_id": 116,
+      "group_id": "g-foundation",
+      "en": "These are my books.",
+      "ar": "هذه كتبي.",
+      "context": "هذه كتبي.",
+      "scene_description": "An adult presenting several books on a nearby table",
+      "difficulty": {
+        "cefr": "A1",
+        "stage": 1,
+        "stage_label": "فهم النمط"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "these",
+        "books"
+      ],
+      "exercise_ids": [
+        "these-01-transfer"
+      ],
+      "image": {
+        "id": "scene-these-01",
+        "atlas": "assets/scenes/these-atlas-v1.webp",
+        "cell": 0,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "76c9ddd86307ad9582bceca492ebf0f12c6c9f555b05dcc4e240f5ef54cbb716",
+        "crop": {
+          "x": 1,
+          "y": 1,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/these-01-male.mp3",
+          "text": "These are my books.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "These",
+              "start_ms": 342,
+              "end_ms": 543
+            },
+            {
+              "index": 1,
+              "text": "are",
+              "start_ms": 643,
+              "end_ms": 724
+            },
+            {
+              "index": 2,
+              "text": "my",
+              "start_ms": 784,
+              "end_ms": 885
+            },
+            {
+              "index": 3,
+              "text": "books.",
+              "start_ms": 985,
+              "end_ms": 1266
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 1950,
+          "sha256": "41f2b479a52d554cfa0d369374b5884ed54309d2a1e85714db06e4623260715e",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "THESE ARE MY BOOKS",
+          "produced_at": "2026-11-02T02:55:47.988452+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2016,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/these-01-female.mp3",
+          "text": "These are my books.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "These",
+              "start_ms": 462,
+              "end_ms": 623
+            },
+            {
+              "index": 1,
+              "text": "are",
+              "start_ms": 664,
+              "end_ms": 744
+            },
+            {
+              "index": 2,
+              "text": "my",
+              "start_ms": 784,
+              "end_ms": 845
+            },
+            {
+              "index": 3,
+              "text": "books.",
+              "start_ms": 925,
+              "end_ms": 1186
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 1850,
+          "sha256": "8d47b110950249211e95192cd006f9e1fabf0878da31e01c5e00852f69668187",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "THESE ARE MY BOOKS",
+          "produced_at": "2026-11-02T02:55:49.399843+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 1920,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "these-02",
+      "pattern_id": 116,
+      "group_id": "g-foundation",
+      "en": "These are my shoes.",
+      "ar": "هذا حذائي.",
+      "context": "هذا حذائي.",
+      "scene_description": "A person showing a pair of shoes held close",
+      "difficulty": {
+        "cefr": "A1",
+        "stage": 1,
+        "stage_label": "فهم النمط"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "these",
+        "shoes"
+      ],
+      "exercise_ids": [
+        "these-02-transfer"
+      ],
+      "image": {
+        "id": "scene-these-02",
+        "atlas": "assets/scenes/these-atlas-v1.webp",
+        "cell": 1,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "76c9ddd86307ad9582bceca492ebf0f12c6c9f555b05dcc4e240f5ef54cbb716",
+        "crop": {
+          "x": 513,
+          "y": 1,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/these-02-male.mp3",
+          "text": "These are my shoes.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "These",
+              "start_ms": 342,
+              "end_ms": 523
+            },
+            {
+              "index": 1,
+              "text": "are",
+              "start_ms": 623,
+              "end_ms": 703
+            },
+            {
+              "index": 2,
+              "text": "my",
+              "start_ms": 744,
+              "end_ms": 844
+            },
+            {
+              "index": 3,
+              "text": "shoes.",
+              "start_ms": 945,
+              "end_ms": 1306
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2050,
+          "sha256": "6eabd2cfa38f95f49356cc9dc9fa6e74c6c3f3a7d3b73af7e0459f7796c3da6e",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "THESE ARE MY SHOES",
+          "produced_at": "2026-11-02T02:55:50.923123+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2112,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/these-02-female.mp3",
+          "text": "These are my shoes.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "These",
+              "start_ms": 461,
+              "end_ms": 622
+            },
+            {
+              "index": 1,
+              "text": "are",
+              "start_ms": 682,
+              "end_ms": 762
+            },
+            {
+              "index": 2,
+              "text": "my",
+              "start_ms": 802,
+              "end_ms": 862
+            },
+            {
+              "index": 3,
+              "text": "shoes.",
+              "start_ms": 942,
+              "end_ms": 1243
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 1925,
+          "sha256": "57e3c9ca4a71014e0d65dae98429d29d2a31c96adfcf18b02417d7c3d8013f01",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "THESE ARE MY SHOES",
+          "produced_at": "2026-11-02T02:55:52.381293+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 1992,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "these-03",
+      "pattern_id": 116,
+      "group_id": "g-foundation",
+      "en": "These are my friends.",
+      "ar": "هؤلاء أصدقائي.",
+      "context": "هؤلاء أصدقائي.",
+      "scene_description": "An adult introducing a nearby group of friends",
+      "difficulty": {
+        "cefr": "A1",
+        "stage": 2,
+        "stage_label": "توسيع النمط"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "these",
+        "friends"
+      ],
+      "exercise_ids": [
+        "these-03-transfer"
+      ],
+      "image": {
+        "id": "scene-these-03",
+        "atlas": "assets/scenes/these-atlas-v1.webp",
+        "cell": 2,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "76c9ddd86307ad9582bceca492ebf0f12c6c9f555b05dcc4e240f5ef54cbb716",
+        "crop": {
+          "x": 1025,
+          "y": 1,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/these-03-male.mp3",
+          "text": "These are my friends.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "These",
+              "start_ms": 341,
+              "end_ms": 561
+            },
+            {
+              "index": 1,
+              "text": "are",
+              "start_ms": 662,
+              "end_ms": 762
+            },
+            {
+              "index": 2,
+              "text": "my",
+              "start_ms": 802,
+              "end_ms": 902
+            },
+            {
+              "index": 3,
+              "text": "friends.",
+              "start_ms": 1002,
+              "end_ms": 1423
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2125,
+          "sha256": "38e6406fab2c3e8e5bfdceddf90c361dd168f92690e821b1ef2dd854f2ef40f5",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "THESE ARE MY FRIENDS",
+          "produced_at": "2026-11-02T02:55:54.082132+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2184,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/these-03-female.mp3",
+          "text": "These are my friends.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "These",
+              "start_ms": 462,
+              "end_ms": 623
+            },
+            {
+              "index": 1,
+              "text": "are",
+              "start_ms": 643,
+              "end_ms": 744
+            },
+            {
+              "index": 2,
+              "text": "my",
+              "start_ms": 764,
+              "end_ms": 824
+            },
+            {
+              "index": 3,
+              "text": "friends.",
+              "start_ms": 905,
+              "end_ms": 1287
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 1950,
+          "sha256": "dafadfedb5f1ca626c2d525c25a25c2433dbe240dca8d0314e138f37b111d514",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "THESE ARE MY FRIENDS",
+          "produced_at": "2026-11-02T02:55:55.493948+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2016,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "these-04",
+      "pattern_id": 116,
+      "group_id": "g-foundation",
+      "en": "These are apples.",
+      "ar": "هذه تفاحات.",
+      "context": "هذه تفاحات.",
+      "scene_description": "A seller showing a nearby basket of apples",
+      "difficulty": {
+        "cefr": "A1",
+        "stage": 2,
+        "stage_label": "توسيع النمط"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "these",
+        "apples"
+      ],
+      "exercise_ids": [
+        "these-04-transfer"
+      ],
+      "image": {
+        "id": "scene-these-04",
+        "atlas": "assets/scenes/these-atlas-v1.webp",
+        "cell": 3,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "76c9ddd86307ad9582bceca492ebf0f12c6c9f555b05dcc4e240f5ef54cbb716",
+        "crop": {
+          "x": 1,
+          "y": 513,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/these-04-male.mp3",
+          "text": "These are apples.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "These",
+              "start_ms": 343,
+              "end_ms": 524
+            },
+            {
+              "index": 1,
+              "text": "are",
+              "start_ms": 625,
+              "end_ms": 706
+            },
+            {
+              "index": 2,
+              "text": "apples.",
+              "start_ms": 827,
+              "end_ms": 1149
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 1875,
+          "sha256": "3988bff058aa035759ebd92d3dadd993f6c640881860720943bbcedc48fb0ffe",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "THESE ARE APPLES",
+          "produced_at": "2026-11-02T02:55:56.945336+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 1944,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/these-04-female.mp3",
+          "text": "These are apples.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "These",
+              "start_ms": 462,
+              "end_ms": 623
+            },
+            {
+              "index": 1,
+              "text": "are",
+              "start_ms": 664,
+              "end_ms": 764
+            },
+            {
+              "index": 2,
+              "text": "apples.",
+              "start_ms": 865,
+              "end_ms": 1207
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 1850,
+          "sha256": "eb5a517a9fa6bef5c2282821bf5fe80dd77b36293cb672a06626bb3099cf5693",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "THESE ARE APPLES",
+          "produced_at": "2026-11-02T02:55:58.301979+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 1920,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "these-05",
+      "pattern_id": 116,
+      "group_id": "g-foundation",
+      "en": "These are the keys to our new home.",
+      "ar": "هذه مفاتيح منزلنا الجديد.",
+      "context": "هذه مفاتيح منزلنا الجديد.",
+      "scene_description": "A couple holding several house keys",
+      "difficulty": {
+        "cefr": "A1",
+        "stage": 3,
+        "stage_label": "المقارنة في موقف"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "these",
+        "keys",
+        "home"
+      ],
+      "exercise_ids": [
+        "these-05-transfer"
+      ],
+      "image": {
+        "id": "scene-these-05",
+        "atlas": "assets/scenes/these-atlas-v1.webp",
+        "cell": 4,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "76c9ddd86307ad9582bceca492ebf0f12c6c9f555b05dcc4e240f5ef54cbb716",
+        "crop": {
+          "x": 513,
+          "y": 513,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/these-05-male.mp3",
+          "text": "These are the keys to our new home.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "These",
+              "start_ms": 322,
+              "end_ms": 503
+            },
+            {
+              "index": 1,
+              "text": "are",
+              "start_ms": 563,
+              "end_ms": 644
+            },
+            {
+              "index": 2,
+              "text": "the",
+              "start_ms": 684,
+              "end_ms": 744
+            },
+            {
+              "index": 3,
+              "text": "keys",
+              "start_ms": 805,
+              "end_ms": 1126
+            },
+            {
+              "index": 4,
+              "text": "to",
+              "start_ms": 1207,
+              "end_ms": 1267
+            },
+            {
+              "index": 5,
+              "text": "our",
+              "start_ms": 1348,
+              "end_ms": 1428
+            },
+            {
+              "index": 6,
+              "text": "new",
+              "start_ms": 1488,
+              "end_ms": 1609
+            },
+            {
+              "index": 7,
+              "text": "home.",
+              "start_ms": 1689,
+              "end_ms": 2011
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2675,
+          "sha256": "98fc6cc811660ea39491d126e423d5e758d633d6694c67b2f510051569a8e4ed",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "THESE ARE THE KEYS TO OUR NEW HOME",
+          "produced_at": "2026-11-02T02:56:00.193618+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2736,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/these-05-female.mp3",
+          "text": "These are the keys to our new home.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "These",
+              "start_ms": 462,
+              "end_ms": 622
+            },
+            {
+              "index": 1,
+              "text": "are",
+              "start_ms": 683,
+              "end_ms": 743
+            },
+            {
+              "index": 2,
+              "text": "the",
+              "start_ms": 783,
+              "end_ms": 843
+            },
+            {
+              "index": 3,
+              "text": "keys",
+              "start_ms": 863,
+              "end_ms": 1104
+            },
+            {
+              "index": 4,
+              "text": "to",
+              "start_ms": 1165,
+              "end_ms": 1225
+            },
+            {
+              "index": 5,
+              "text": "our",
+              "start_ms": 1305,
+              "end_ms": 1385
+            },
+            {
+              "index": 6,
+              "text": "new",
+              "start_ms": 1426,
+              "end_ms": 1526
+            },
+            {
+              "index": 7,
+              "text": "home.",
+              "start_ms": 1606,
+              "end_ms": 1928
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2550,
+          "sha256": "e5d9e82c7232ba4eb250b274c771200800e96068974f93d1451958390fe5ed6f",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "THESE ARE THE KEYS TO OUR NEW HOME",
+          "produced_at": "2026-11-02T02:56:02.011962+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2616,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "these-06",
+      "pattern_id": 116,
+      "group_id": "g-foundation",
+      "en": "These are fresh vegetables from our garden.",
+      "ar": "هذه خضروات طازجة من حديقتنا.",
+      "context": "هذه خضروات طازجة من حديقتنا.",
+      "scene_description": "A gardener showing a basket of fresh vegetables",
+      "difficulty": {
+        "cefr": "A1",
+        "stage": 3,
+        "stage_label": "المقارنة في موقف"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "these",
+        "fresh",
+        "vegetables",
+        "from",
+        "garden"
+      ],
+      "exercise_ids": [
+        "these-06-transfer"
+      ],
+      "image": {
+        "id": "scene-these-06",
+        "atlas": "assets/scenes/these-atlas-v1.webp",
+        "cell": 5,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "76c9ddd86307ad9582bceca492ebf0f12c6c9f555b05dcc4e240f5ef54cbb716",
+        "crop": {
+          "x": 1025,
+          "y": 513,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/these-06-male.mp3",
+          "text": "These are fresh vegetables from our garden.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "These",
+              "start_ms": 341,
+              "end_ms": 562
+            },
+            {
+              "index": 1,
+              "text": "are",
+              "start_ms": 682,
+              "end_ms": 762
+            },
+            {
+              "index": 2,
+              "text": "fresh",
+              "start_ms": 863,
+              "end_ms": 1144
+            },
+            {
+              "index": 3,
+              "text": "vegetables",
+              "start_ms": 1304,
+              "end_ms": 1806
+            },
+            {
+              "index": 4,
+              "text": "from",
+              "start_ms": 1866,
+              "end_ms": 1986
+            },
+            {
+              "index": 5,
+              "text": "our",
+              "start_ms": 2046,
+              "end_ms": 2147
+            },
+            {
+              "index": 6,
+              "text": "garden.",
+              "start_ms": 2187,
+              "end_ms": 2588
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 3250,
+          "sha256": "c5db227989d3d66b932d01d786650ec56f0eefee5e15ba1d0c1704756135b8ad",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "THESE ARE FRESH VEGETABLES FROM OUR GARDEN",
+          "produced_at": "2026-11-02T02:56:04.479094+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 3312,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/these-06-female.mp3",
+          "text": "These are fresh vegetables from our garden.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "These",
+              "start_ms": 483,
+              "end_ms": 724
+            },
+            {
+              "index": 1,
+              "text": "are",
+              "start_ms": 885,
+              "end_ms": 966
+            },
+            {
+              "index": 2,
+              "text": "fresh",
+              "start_ms": 1066,
+              "end_ms": 1348
+            },
+            {
+              "index": 3,
+              "text": "vegetables",
+              "start_ms": 1449,
+              "end_ms": 1932
+            },
+            {
+              "index": 4,
+              "text": "from",
+              "start_ms": 2012,
+              "end_ms": 2113
+            },
+            {
+              "index": 5,
+              "text": "our",
+              "start_ms": 2193,
+              "end_ms": 2274
+            },
+            {
+              "index": 6,
+              "text": "garden.",
+              "start_ms": 2314,
+              "end_ms": 2696
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 3300,
+          "sha256": "acdbf23584f24ffb7ccdb06c5d368010a2effdbb2daec70518ae94b3313e1846",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "THESE ARE FRESH VEGETABLES FROM OUR GARDEN",
+          "produced_at": "2026-11-02T02:56:06.764138+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 3360,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "these-07",
+      "pattern_id": 116,
+      "group_id": "g-foundation",
+      "en": "These are the photos from our trip.",
+      "ar": "هذه صور رحلتنا.",
+      "context": "هذه صور رحلتنا.",
+      "scene_description": "Friends looking at printed travel photos on a table",
+      "difficulty": {
+        "cefr": "A2",
+        "stage": 4,
+        "stage_label": "الاستخدام الحقيقي"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "these",
+        "photos",
+        "from",
+        "trip"
+      ],
+      "exercise_ids": [
+        "these-07-transfer"
+      ],
+      "image": {
+        "id": "scene-these-07",
+        "atlas": "assets/scenes/these-atlas-v1.webp",
+        "cell": 6,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "76c9ddd86307ad9582bceca492ebf0f12c6c9f555b05dcc4e240f5ef54cbb716",
+        "crop": {
+          "x": 1,
+          "y": 1025,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/these-07-male.mp3",
+          "text": "These are the photos from our trip.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "These",
+              "start_ms": 341,
+              "end_ms": 561
+            },
+            {
+              "index": 1,
+              "text": "are",
+              "start_ms": 641,
+              "end_ms": 721
+            },
+            {
+              "index": 2,
+              "text": "the",
+              "start_ms": 761,
+              "end_ms": 822
+            },
+            {
+              "index": 3,
+              "text": "photos",
+              "start_ms": 902,
+              "end_ms": 1323
+            },
+            {
+              "index": 4,
+              "text": "from",
+              "start_ms": 1403,
+              "end_ms": 1503
+            },
+            {
+              "index": 5,
+              "text": "our",
+              "start_ms": 1563,
+              "end_ms": 1643
+            },
+            {
+              "index": 6,
+              "text": "trip.",
+              "start_ms": 1703,
+              "end_ms": 1924
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2625,
+          "sha256": "4072ffd55116c8821a93c50104dc94875603ba432918bfcc4d6862e0f7718b98",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "THESE ARE THE PHOTOS FROM OUR TRIP",
+          "produced_at": "2026-11-02T02:56:08.775528+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2688,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/these-07-female.mp3",
+          "text": "These are the photos from our trip.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "These",
+              "start_ms": 483,
+              "end_ms": 724
+            },
+            {
+              "index": 1,
+              "text": "are",
+              "start_ms": 784,
+              "end_ms": 865
+            },
+            {
+              "index": 2,
+              "text": "the",
+              "start_ms": 905,
+              "end_ms": 965
+            },
+            {
+              "index": 3,
+              "text": "photos",
+              "start_ms": 1026,
+              "end_ms": 1428
+            },
+            {
+              "index": 4,
+              "text": "from",
+              "start_ms": 1508,
+              "end_ms": 1609
+            },
+            {
+              "index": 5,
+              "text": "our",
+              "start_ms": 1669,
+              "end_ms": 1750
+            },
+            {
+              "index": 6,
+              "text": "trip.",
+              "start_ms": 1810,
+              "end_ms": 2011
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2675,
+          "sha256": "55c35b6cb1edf58c38f7ef68746a95d3398256b84a69b9309fabeaa3874b670c",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "THESE ARE THE PHOTOS FROM OUR TRIP",
+          "produced_at": "2026-11-02T02:56:10.604861+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2736,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "these-08",
+      "pattern_id": 116,
+      "group_id": "g-foundation",
+      "en": "These are your tickets for tonight.",
+      "ar": "هذه تذاكركم لهذه الليلة.",
+      "context": "هذه تذاكركم لهذه الليلة.",
+      "scene_description": "A host handing several tickets to guests",
+      "difficulty": {
+        "cefr": "A2",
+        "stage": 4,
+        "stage_label": "الاستخدام الحقيقي"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "these",
+        "your",
+        "tickets",
+        "tonight"
+      ],
+      "exercise_ids": [
+        "these-08-transfer"
+      ],
+      "image": {
+        "id": "scene-these-08",
+        "atlas": "assets/scenes/these-atlas-v1.webp",
+        "cell": 7,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "76c9ddd86307ad9582bceca492ebf0f12c6c9f555b05dcc4e240f5ef54cbb716",
+        "crop": {
+          "x": 513,
+          "y": 1025,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/these-08-male.mp3",
+          "text": "These are your tickets for tonight.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "These",
+              "start_ms": 321,
+              "end_ms": 562
+            },
+            {
+              "index": 1,
+              "text": "are",
+              "start_ms": 622,
+              "end_ms": 703
+            },
+            {
+              "index": 2,
+              "text": "your",
+              "start_ms": 743,
+              "end_ms": 863
+            },
+            {
+              "index": 3,
+              "text": "tickets",
+              "start_ms": 924,
+              "end_ms": 1285
+            },
+            {
+              "index": 4,
+              "text": "for",
+              "start_ms": 1345,
+              "end_ms": 1446
+            },
+            {
+              "index": 5,
+              "text": "tonight.",
+              "start_ms": 1506,
+              "end_ms": 1907
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2550,
+          "sha256": "d7f8fa482ecdcf02de006db0c0b439d59e2bc9ef4c96809d6d9f3875a46a22c4",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "THESE ARE YOUR TICKETS FOR TO NIGHT",
+          "produced_at": "2026-11-02T02:56:12.361729+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2616,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/these-08-female.mp3",
+          "text": "These are your tickets for tonight.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "These",
+              "start_ms": 484,
+              "end_ms": 645
+            },
+            {
+              "index": 1,
+              "text": "are",
+              "start_ms": 666,
+              "end_ms": 746
+            },
+            {
+              "index": 2,
+              "text": "your",
+              "start_ms": 766,
+              "end_ms": 867
+            },
+            {
+              "index": 3,
+              "text": "tickets",
+              "start_ms": 908,
+              "end_ms": 1210
+            },
+            {
+              "index": 4,
+              "text": "for",
+              "start_ms": 1291,
+              "end_ms": 1371
+            },
+            {
+              "index": 5,
+              "text": "tonight.",
+              "start_ms": 1432,
+              "end_ms": 1815
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2400,
+          "sha256": "8e2ee74e6f403a8c986afeb6e971e564058f01792714aec517c31fe35c3fda1c",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "THESE ARE YOUR TICKETS FOR TO NIGHT",
+          "produced_at": "2026-11-02T02:56:14.088850+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2448,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "these-09",
+      "pattern_id": 116,
+      "group_id": "g-foundation",
+      "en": "These are the tools we need.",
+      "ar": "هذه الأدوات التي نحتاجها.",
+      "context": "هذه الأدوات التي نحتاجها.",
+      "scene_description": "A craftsperson showing a small set of tools",
+      "difficulty": {
+        "cefr": "A2",
+        "stage": 5,
+        "stage_label": "ترابط الأفكار"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "these",
+        "tools",
+        "need"
+      ],
+      "exercise_ids": [
+        "these-09-transfer"
+      ],
+      "image": {
+        "id": "scene-these-09",
+        "atlas": "assets/scenes/these-atlas-v1.webp",
+        "cell": 8,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "76c9ddd86307ad9582bceca492ebf0f12c6c9f555b05dcc4e240f5ef54cbb716",
+        "crop": {
+          "x": 1025,
+          "y": 1025,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/these-09-male.mp3",
+          "text": "These are the tools we need.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "These",
+              "start_ms": 341,
+              "end_ms": 541
+            },
+            {
+              "index": 1,
+              "text": "are",
+              "start_ms": 601,
+              "end_ms": 702
+            },
+            {
+              "index": 2,
+              "text": "the",
+              "start_ms": 742,
+              "end_ms": 802
+            },
+            {
+              "index": 3,
+              "text": "tools",
+              "start_ms": 862,
+              "end_ms": 1223
+            },
+            {
+              "index": 4,
+              "text": "we",
+              "start_ms": 1303,
+              "end_ms": 1383
+            },
+            {
+              "index": 5,
+              "text": "need.",
+              "start_ms": 1484,
+              "end_ms": 1804
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2426,
+          "sha256": "8e589fb41e4d6aa18494bd717659159848f48702e129397ab11ff6b4da11df5b",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "THESE ARE THE TOOLS WE NEED",
+          "produced_at": "2026-11-02T02:56:16.030873+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2496,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/these-09-female.mp3",
+          "text": "These are the tools we need.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "These",
+              "start_ms": 464,
+              "end_ms": 625
+            },
+            {
+              "index": 1,
+              "text": "are",
+              "start_ms": 686,
+              "end_ms": 746
+            },
+            {
+              "index": 2,
+              "text": "the",
+              "start_ms": 787,
+              "end_ms": 847
+            },
+            {
+              "index": 3,
+              "text": "tools",
+              "start_ms": 888,
+              "end_ms": 1190
+            },
+            {
+              "index": 4,
+              "text": "we",
+              "start_ms": 1271,
+              "end_ms": 1352
+            },
+            {
+              "index": 5,
+              "text": "need.",
+              "start_ms": 1432,
+              "end_ms": 1735
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2300,
+          "sha256": "eabea221d7e1d8627055531a6d9e6f017968a09e9a70b298c76e29242e952e3c",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "THESE ARE THE TOOLS WE NEED",
+          "produced_at": "2026-11-02T02:56:17.705469+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2352,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "these-10",
+      "pattern_id": 116,
+      "group_id": "g-foundation",
+      "en": "These are my notes from the lesson.",
+      "ar": "هذه ملاحظاتي من الدرس.",
+      "context": "هذه ملاحظاتي من الدرس.",
+      "scene_description": "An adult learner spreading several pages of notes on a desk",
+      "difficulty": {
+        "cefr": "A2",
+        "stage": 5,
+        "stage_label": "ترابط الأفكار"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "these",
+        "notes",
+        "from",
+        "lesson"
+      ],
+      "exercise_ids": [
+        "these-10-transfer"
+      ],
+      "image": {
+        "id": "scene-these-10",
+        "atlas": "assets/scenes/these-atlas-v1.webp",
+        "cell": 9,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "76c9ddd86307ad9582bceca492ebf0f12c6c9f555b05dcc4e240f5ef54cbb716",
+        "crop": {
+          "x": 1,
+          "y": 1537,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/these-10-male.mp3",
+          "text": "These are my notes from the lesson.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "These",
+              "start_ms": 341,
+              "end_ms": 562
+            },
+            {
+              "index": 1,
+              "text": "are",
+              "start_ms": 662,
+              "end_ms": 743
+            },
+            {
+              "index": 2,
+              "text": "my",
+              "start_ms": 803,
+              "end_ms": 903
+            },
+            {
+              "index": 3,
+              "text": "notes",
+              "start_ms": 1024,
+              "end_ms": 1265
+            },
+            {
+              "index": 4,
+              "text": "from",
+              "start_ms": 1325,
+              "end_ms": 1425
+            },
+            {
+              "index": 5,
+              "text": "the",
+              "start_ms": 1466,
+              "end_ms": 1546
+            },
+            {
+              "index": 6,
+              "text": "lesson.",
+              "start_ms": 1586,
+              "end_ms": 1987
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2650,
+          "sha256": "b882599e604fd190124330b749c00f1af41fcb67883bb920bad7a666737a777b",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "THESE ARE MY NOTES FROM THE LESSON",
+          "produced_at": "2026-11-02T02:56:19.814634+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2712,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/these-10-female.mp3",
+          "text": "These are my notes from the lesson.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "These",
+              "start_ms": 482,
+              "end_ms": 663
+            },
+            {
+              "index": 1,
+              "text": "are",
+              "start_ms": 743,
+              "end_ms": 823
+            },
+            {
+              "index": 2,
+              "text": "my",
+              "start_ms": 863,
+              "end_ms": 944
+            },
+            {
+              "index": 3,
+              "text": "notes",
+              "start_ms": 1024,
+              "end_ms": 1245
+            },
+            {
+              "index": 4,
+              "text": "from",
+              "start_ms": 1305,
+              "end_ms": 1406
+            },
+            {
+              "index": 5,
+              "text": "the",
+              "start_ms": 1446,
+              "end_ms": 1506
+            },
+            {
+              "index": 6,
+              "text": "lesson.",
+              "start_ms": 1566,
+              "end_ms": 1968
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2550,
+          "sha256": "8d5af9fda8e66a4e70bceca5b859be1f9979961113ff5fd172be637051901fad",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "THESE ARE MY NOTES FROM THE LESSON",
+          "produced_at": "2026-11-02T02:56:21.575828+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2616,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "these-11",
+      "pattern_id": 116,
+      "group_id": "g-foundation",
+      "en": "These are comfortable chairs.",
+      "ar": "هذه كراسٍ مريحة.",
+      "context": "هذه كراسٍ مريحة.",
+      "scene_description": "Two adults testing chairs in a furniture shop",
+      "difficulty": {
+        "cefr": "A2",
+        "stage": 6,
+        "stage_label": "الإنتاج والطلاقة"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "these",
+        "comfortable",
+        "chairs"
+      ],
+      "exercise_ids": [
+        "these-11-transfer"
+      ],
+      "image": {
+        "id": "scene-these-11",
+        "atlas": "assets/scenes/these-atlas-v1.webp",
+        "cell": 10,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "76c9ddd86307ad9582bceca492ebf0f12c6c9f555b05dcc4e240f5ef54cbb716",
+        "crop": {
+          "x": 513,
+          "y": 1537,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/these-11-male.mp3",
+          "text": "These are comfortable chairs.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "These",
+              "start_ms": 341,
+              "end_ms": 561
+            },
+            {
+              "index": 1,
+              "text": "are",
+              "start_ms": 661,
+              "end_ms": 762
+            },
+            {
+              "index": 2,
+              "text": "comfortable",
+              "start_ms": 862,
+              "end_ms": 1323
+            },
+            {
+              "index": 3,
+              "text": "chairs.",
+              "start_ms": 1403,
+              "end_ms": 1824
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2525,
+          "sha256": "caac5177a432b8e8ecc833518fb53fb858894091f7c7336661f6c4b5ccdebd4f",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "THESE ARE COMFORTABLE CHAIRS",
+          "produced_at": "2026-11-02T02:56:23.402224+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2592,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/these-11-female.mp3",
+          "text": "These are comfortable chairs.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "These",
+              "start_ms": 484,
+              "end_ms": 686
+            },
+            {
+              "index": 1,
+              "text": "are",
+              "start_ms": 766,
+              "end_ms": 847
+            },
+            {
+              "index": 2,
+              "text": "comfortable",
+              "start_ms": 887,
+              "end_ms": 1291
+            },
+            {
+              "index": 3,
+              "text": "chairs.",
+              "start_ms": 1351,
+              "end_ms": 1755
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2400,
+          "sha256": "90d48e43c6de982a7aaf4ba4651b1b72aff2ba429ca1fbd638fd1c7e53c45b6e",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "THESE ARE COMFORTABLE CHAIRS",
+          "produced_at": "2026-11-02T02:56:25.075952+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2448,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "these-12",
+      "pattern_id": 116,
+      "group_id": "g-foundation",
+      "en": "These are the cups for our guests.",
+      "ar": "هذه أكواب ضيوفنا.",
+      "context": "هذه أكواب ضيوفنا.",
+      "scene_description": "A host arranging several cups on a tray",
+      "difficulty": {
+        "cefr": "A2",
+        "stage": 6,
+        "stage_label": "الإنتاج والطلاقة"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "these",
+        "cups",
+        "guests"
+      ],
+      "exercise_ids": [
+        "these-12-transfer"
+      ],
+      "image": {
+        "id": "scene-these-12",
+        "atlas": "assets/scenes/these-atlas-v1.webp",
+        "cell": 11,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "76c9ddd86307ad9582bceca492ebf0f12c6c9f555b05dcc4e240f5ef54cbb716",
+        "crop": {
+          "x": 1025,
+          "y": 1537,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/these-12-male.mp3",
+          "text": "These are the cups for our guests.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "These",
+              "start_ms": 341,
+              "end_ms": 542
+            },
+            {
+              "index": 1,
+              "text": "are",
+              "start_ms": 623,
+              "end_ms": 703
+            },
+            {
+              "index": 2,
+              "text": "the",
+              "start_ms": 743,
+              "end_ms": 803
+            },
+            {
+              "index": 3,
+              "text": "cups",
+              "start_ms": 843,
+              "end_ms": 1064
+            },
+            {
+              "index": 4,
+              "text": "for",
+              "start_ms": 1125,
+              "end_ms": 1205
+            },
+            {
+              "index": 5,
+              "text": "our",
+              "start_ms": 1285,
+              "end_ms": 1366
+            },
+            {
+              "index": 6,
+              "text": "guests.",
+              "start_ms": 1406,
+              "end_ms": 1747
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2450,
+          "sha256": "01e6d31e33a54c310cb1cbf5f292fa1c9b9c9e1bca17efe1bb0ecd4ec850963f",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "THESE ARE THE CUPS FOR OUR GUESTS",
+          "produced_at": "2026-11-02T02:56:26.862149+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2520,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/these-12-female.mp3",
+          "text": "These are the cups for our guests.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "These",
+              "start_ms": 464,
+              "end_ms": 625
+            },
+            {
+              "index": 1,
+              "text": "are",
+              "start_ms": 666,
+              "end_ms": 746
+            },
+            {
+              "index": 2,
+              "text": "the",
+              "start_ms": 787,
+              "end_ms": 847
+            },
+            {
+              "index": 3,
+              "text": "cups",
+              "start_ms": 887,
+              "end_ms": 1109
+            },
+            {
+              "index": 4,
+              "text": "for",
+              "start_ms": 1150,
+              "end_ms": 1230
+            },
+            {
+              "index": 5,
+              "text": "our",
+              "start_ms": 1311,
+              "end_ms": 1392
+            },
+            {
+              "index": 6,
+              "text": "guests.",
+              "start_ms": 1432,
+              "end_ms": 1795
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2400,
+          "sha256": "a9506c6780c7df931e8b8a3b4d6e5e60905b4e471fa4c9ab369026d7d3d8ce2b",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "THESE ARE THE CUPS FOR OUR GUESTS",
+          "produced_at": "2026-11-02T02:56:28.547598+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2448,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    }
+  ]
+}

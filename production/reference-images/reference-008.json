@@ -1,0 +1,33 @@
+{
+  "key": "reference-008",
+  "source": "production/source-images/reference-008.png",
+  "source_sha256": "a49ea8c00c226082c979164dd96846bdf184bcddf62440afc459b669354ca180",
+  "source_dimensions": [
+    1086,
+    1448
+  ],
+  "measured_cuts": {
+    "x": [
+      0,
+      361,
+      726,
+      1086
+    ],
+    "y": [
+      0,
+      358,
+      722,
+      1079,
+      1448
+    ]
+  },
+  "atlas": "assets/scenes/reference-008-v1.webp",
+  "sha256": "61df7e6a236b87759dcab7b06e2f2f4fb611e1b97faec63b0034d030ef25ba8e",
+  "width": 1536,
+  "height": 2048,
+  "tool": "built-in imagegen",
+  "review": "needs geometry follow-up",
+  "human_review": false,
+  "cell_count": 12,
+  "geometry_error": "No continuous y gutter near 2/4; inspect grid before production"
+}

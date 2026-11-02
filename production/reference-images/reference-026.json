@@ -1,0 +1,147 @@
+{
+  "key": "reference-026",
+  "source": "production/source-images/reference-026.png",
+  "source_sha256": "0422fe3922d214c02ce570a97a407648068d06850fa98964248977d1d3f4211d",
+  "source_dimensions": [
+    1086,
+    1448
+  ],
+  "measured_cuts": {
+    "x": [
+      0,
+      364,
+      728,
+      1086
+    ],
+    "y": [
+      0,
+      354,
+      711,
+      1063,
+      1448
+    ]
+  },
+  "atlas": "assets/scenes/reference-026-v1.webp",
+  "sha256": "693311ffa30f067b491dea6af2d9254a31d842f8ed9c4ea245440759ef00c914",
+  "width": 1536,
+  "height": 2048,
+  "tool": "built-in imagegen",
+  "review": "assistant visual review",
+  "human_review": false,
+  "cell_count": 12,
+  "review_scope": "All cells inspected in atlas order; context illustration is not grammatical proof. Rejected cells withheld from runtime.",
+  "geometry_verification": {
+    "width": 1086,
+    "height": 1448,
+    "x_gutters": [
+      {
+        "start": 359,
+        "end": 363,
+        "center": 360,
+        "white_fraction": 0.9958592132505176
+      },
+      {
+        "start": 723,
+        "end": 727,
+        "center": 724,
+        "white_fraction": 1.0
+      }
+    ],
+    "y_gutters": [
+      {
+        "start": 355,
+        "end": 359,
+        "center": 356,
+        "white_fraction": 1.0
+      },
+      {
+        "start": 711,
+        "end": 716,
+        "center": 713,
+        "white_fraction": 1.0
+      },
+      {
+        "start": 1063,
+        "end": 1067,
+        "center": 1064,
+        "white_fraction": 1.0
+      }
+    ],
+    "source_rects": [
+      {
+        "x": 1,
+        "y": 1,
+        "width": 357,
+        "height": 353
+      },
+      {
+        "x": 364,
+        "y": 1,
+        "width": 358,
+        "height": 353
+      },
+      {
+        "x": 728,
+        "y": 1,
+        "width": 357,
+        "height": 353
+      },
+      {
+        "x": 1,
+        "y": 360,
+        "width": 357,
+        "height": 350
+      },
+      {
+        "x": 364,
+        "y": 360,
+        "width": 358,
+        "height": 350
+      },
+      {
+        "x": 728,
+        "y": 360,
+        "width": 357,
+        "height": 350
+      },
+      {
+        "x": 1,
+        "y": 717,
+        "width": 357,
+        "height": 345
+      },
+      {
+        "x": 364,
+        "y": 717,
+        "width": 358,
+        "height": 345
+      },
+      {
+        "x": 728,
+        "y": 717,
+        "width": 357,
+        "height": 345
+      },
+      {
+        "x": 1,
+        "y": 1068,
+        "width": 357,
+        "height": 379
+      },
+      {
+        "x": 364,
+        "y": 1068,
+        "width": 358,
+        "height": 379
+      },
+      {
+        "x": 728,
+        "y": 1068,
+        "width": 357,
+        "height": 379
+      }
+    ],
+    "method": "continuous near-white gutter runs, sampled across the entire row or column"
+  },
+  "rejected_cells": []
+}

@@ -1,0 +1,734 @@
+{
+  "schema": 1,
+  "date": "2026-11-02",
+  "human_review": false,
+  "atlases": [
+    {
+      "atlas": "reference-001",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": true,
+      "geometry": "continuous gutters checked",
+      "sha256": "f5cde86bd40f1cecc136fdbe638a11b627b91385072dbaf75f33d47065165c54"
+    },
+    {
+      "atlas": "reference-002",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": true,
+      "geometry": "continuous gutters checked",
+      "sha256": "f097362760d370cd880f5212ba8dbb2184a47abb05be0125548d91088cb05cce"
+    },
+    {
+      "atlas": "reference-003",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": false,
+      "geometry": "continuous gutters checked",
+      "sha256": "e928a0a81b1ea089771f52bcf61ac880615098b02af7f0dcadfa3b1cc7cbf9d7"
+    },
+    {
+      "atlas": "reference-004",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": false,
+      "geometry": "continuous gutters checked",
+      "sha256": "4058c93217133718b1709128475b97ba2809216afc237ff18075e413580110ee"
+    },
+    {
+      "atlas": "reference-005",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": true,
+      "geometry": "continuous gutters checked",
+      "sha256": "f1a8dff48211247e4217e8e414f117c26c14d4a3be92cfabc32ae8d63a1c1756"
+    },
+    {
+      "atlas": "reference-006",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": true,
+      "geometry": "continuous gutters checked",
+      "sha256": "07b433e7779f975e74b53ab50cdb8d757a14ab1871d78bcb91f598e0e12665e4"
+    },
+    {
+      "atlas": "reference-007",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": true,
+      "geometry": "continuous gutters checked",
+      "sha256": "2722407c9b5128c0fdfd10f4bdd918c0fcae1f371d57d0817a1f30ec424b1122"
+    },
+    {
+      "atlas": "reference-008",
+      "cells": 12,
+      "accepted_cells": 0,
+      "geometry": "withheld pending manual gutter measurement",
+      "sha256": "61df7e6a236b87759dcab7b06e2f2f4fb611e1b97faec63b0034d030ef25ba8e"
+    },
+    {
+      "atlas": "reference-009",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": false,
+      "geometry": "continuous gutters checked",
+      "sha256": "e179c243c01cc38a9746abb86388582830b65abc54ce6b2f00c3ad7063fd8561"
+    },
+    {
+      "atlas": "reference-010",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": false,
+      "geometry": "continuous gutters checked",
+      "sha256": "3024533e6efdad43f120a098f03b79fb0c54dadc4a004a133adeafa4ec5b2825"
+    },
+    {
+      "atlas": "reference-011",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": false,
+      "geometry": "continuous gutters checked",
+      "sha256": "45da8243724227d19432698c8510d09a44a2aac91214b76367688660f9f7a6b1"
+    },
+    {
+      "atlas": "reference-012",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": false,
+      "geometry": "continuous gutters checked",
+      "sha256": "a59589a964fe7c79b28bb544058045bd7d3c7ec6df3d2efad33acee56d2a9a9c"
+    },
+    {
+      "atlas": "reference-013",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": true,
+      "geometry": "continuous gutters checked",
+      "sha256": "d015d2ed2669c42127b2dba8863cfb6fa2ae4e25e54eca5bb26946ea588dc1f1"
+    },
+    {
+      "atlas": "reference-014",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": false,
+      "geometry": "continuous gutters checked",
+      "sha256": "3bdcbe2de6805da92470c8fae374da2542058fb54eb1b3028979e1cf0bb2d732"
+    },
+    {
+      "atlas": "reference-015",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": false,
+      "geometry": "continuous gutters checked",
+      "sha256": "fbbfe63279efe00e385ac56bc3ce3d9dfa8540233f2e8bc91e63ef0df575737f"
+    },
+    {
+      "atlas": "reference-016",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": true,
+      "geometry": "continuous gutters checked",
+      "sha256": "5652ff7c1ba5853b2eac423c99d948d8e7951ab4c11e89c5ee5fea3854dcb4d5"
+    },
+    {
+      "atlas": "reference-017",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": true,
+      "geometry": "continuous gutters checked",
+      "sha256": "daa39df7b6e41e40523eaad0029e415b6c57d7dad5a9057db2c06eca2d6e6110"
+    },
+    {
+      "atlas": "reference-018",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": false,
+      "geometry": "continuous gutters checked",
+      "sha256": "801412951dcb973abec8bca4216be604a0d02d392528b472dc076d74e8e8e43c"
+    },
+    {
+      "atlas": "reference-019",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": false,
+      "geometry": "continuous gutters checked",
+      "sha256": "a15ff2d3c8afc12a60c26fef9b9000526f78ae5497265cee2ecc54c4f9641dcf"
+    },
+    {
+      "atlas": "reference-020",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": true,
+      "geometry": "continuous gutters checked",
+      "sha256": "aced10af49846aa6f53d31c300b056354221a85a47d1e5c4c165d7ba0db1ff09"
+    },
+    {
+      "atlas": "reference-021",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": true,
+      "geometry": "continuous gutters checked",
+      "sha256": "35fac9fd38c54516785046b4282f46ae7269ad37fd7f25f013b89583527d9bf9"
+    },
+    {
+      "atlas": "reference-022",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": true,
+      "geometry": "continuous gutters checked",
+      "sha256": "e56c7bd3ee7d7330f1467eff3c342ece3ebd78f06e35481fa9c4314c9466af7e"
+    },
+    {
+      "atlas": "reference-023",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": false,
+      "geometry": "continuous gutters checked",
+      "sha256": "0b58319f03b4b95c08a556b24f4112b512f464ad47c5a36f5460330f45c8d53c"
+    },
+    {
+      "atlas": "reference-024",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": false,
+      "geometry": "continuous gutters checked",
+      "sha256": "ed7efa728cd21c900e0b729771b4a3a9a49d4dc4adbaea7499eb0c69d0670d06"
+    },
+    {
+      "atlas": "reference-025",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": true,
+      "geometry": "continuous gutters checked",
+      "sha256": "444ef362b64751bc67a43437ff65ffb9c744882cd333c06c178d91537a660be0"
+    },
+    {
+      "atlas": "reference-026",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": true,
+      "geometry": "continuous gutters checked",
+      "sha256": "693311ffa30f067b491dea6af2d9254a31d842f8ed9c4ea245440759ef00c914"
+    },
+    {
+      "atlas": "reference-027",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": true,
+      "geometry": "continuous gutters checked",
+      "sha256": "bc5ec97ab700ce03b75cb13aaf28632af61c27d032a51d65ede9a36d7b2c50a2"
+    },
+    {
+      "atlas": "reference-028",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": false,
+      "geometry": "continuous gutters checked",
+      "sha256": "da729befafbaf467f2cc621e1efcb4064a94e1abf50e9c4d6040bc841077429d"
+    },
+    {
+      "atlas": "reference-029",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": false,
+      "geometry": "continuous gutters checked",
+      "sha256": "5109679f4c5abcd438e20294766add5d90afafc931510fe83aa1945a04fdd63f"
+    },
+    {
+      "atlas": "reference-030",
+      "cells": 12,
+      "accepted_cells": 11,
+      "previous_cut_agreement": false,
+      "geometry": "continuous gutters checked",
+      "sha256": "f2aab93b2358f05e5af56c1f267cc6bb05c3287debcbc247519c042c2c2e1c3a"
+    },
+    {
+      "atlas": "reference-031",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": false,
+      "geometry": "continuous gutters checked",
+      "sha256": "783a95dea46ab1747a7c5f25bcc42d68c0b2ecf708a7bee8e9626cbe9d6f86ea"
+    },
+    {
+      "atlas": "reference-032",
+      "cells": 12,
+      "accepted_cells": 11,
+      "previous_cut_agreement": true,
+      "geometry": "continuous gutters checked",
+      "sha256": "992e7183bf6691526457e3bf02c98bd543872d09667a54954e8f0d4f5c6b73ca"
+    },
+    {
+      "atlas": "reference-033",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": false,
+      "geometry": "continuous gutters checked",
+      "sha256": "773bf391a57eac9eccf162b55072b89a52306aa99df52c1198bd011992a4f79c"
+    },
+    {
+      "atlas": "reference-034",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": false,
+      "geometry": "continuous gutters checked",
+      "sha256": "0b7147f6d323009a034c67039a26ebbf8a45eebd09d4b1973bc9ac6604ab5666"
+    },
+    {
+      "atlas": "reference-035",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": false,
+      "geometry": "continuous gutters checked",
+      "sha256": "151ab9ee17df554224b454971f309f690349362783ecde87d2bb57c4b57f0b59"
+    },
+    {
+      "atlas": "reference-036",
+      "cells": 12,
+      "accepted_cells": 11,
+      "previous_cut_agreement": false,
+      "geometry": "continuous gutters checked",
+      "sha256": "c4e704fa4976d03fc64a3679eeb88bd6ca7254dc9d402facddcd6900e01206ff"
+    },
+    {
+      "atlas": "reference-037",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": false,
+      "geometry": "continuous gutters checked",
+      "sha256": "cd642e85cb47e521b3418c18e635c282d8ea76468980e19e6bb590a65c836caf"
+    },
+    {
+      "atlas": "reference-038",
+      "cells": 12,
+      "accepted_cells": 11,
+      "previous_cut_agreement": false,
+      "geometry": "continuous gutters checked",
+      "sha256": "da1fa8656a4101a76c4df06d084d3a07e9531ba4a32efa7e741223070f950450"
+    },
+    {
+      "atlas": "reference-039",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": false,
+      "geometry": "continuous gutters checked",
+      "sha256": "5696f325b48cdaa7a3a34c0bf9ddb891258c972bbf86aca5cdbc502db74601ea"
+    },
+    {
+      "atlas": "reference-040",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": true,
+      "geometry": "continuous gutters checked",
+      "sha256": "8807bb2888ab7ca52478ef0040cda967c352758b37fe703b9f38770a1ab4fc98"
+    },
+    {
+      "atlas": "reference-041",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": false,
+      "geometry": "continuous gutters checked",
+      "sha256": "3cc418d97f7d2837715f88e814524fa10eec4329f090b574165dbf420f718724"
+    },
+    {
+      "atlas": "reference-042",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": false,
+      "geometry": "continuous gutters checked",
+      "sha256": "e6a7f0feb95c8482fdb23116d35ec09c53986a340ecc8cbe1b5d440763f51920"
+    },
+    {
+      "atlas": "reference-043",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": false,
+      "geometry": "continuous gutters checked",
+      "sha256": "40b03e32c51a0f0f3548c10f1379302a7b740f1bf1e7fccfff716cd5b197decc"
+    },
+    {
+      "atlas": "reference-044",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": true,
+      "geometry": "continuous gutters checked",
+      "sha256": "dcaaad0aada8a8f8686884f302934a90831e10fd10537f110aef548c496e2bea"
+    },
+    {
+      "atlas": "reference-045",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": true,
+      "geometry": "continuous gutters checked",
+      "sha256": "7e01a6b018fcfb838fb4fe75cd6eeabcdffc5c71d5a144f7f2d43bfd89cc547e"
+    },
+    {
+      "atlas": "reference-046",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": true,
+      "geometry": "continuous gutters checked",
+      "sha256": "c472beebf16fcb5e540fe398d325ef2c5aff17e8ce67484ce4719acb3a6de0ed"
+    },
+    {
+      "atlas": "reference-047",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": true,
+      "geometry": "continuous gutters checked",
+      "sha256": "84701fda2a44a84bbc9488867cae90af6afbf13108e22b3c5ed79cf34f31f0fc"
+    },
+    {
+      "atlas": "reference-048",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": false,
+      "geometry": "continuous gutters checked",
+      "sha256": "5df2279f1c93b2e8421e9122ac791c7adf7cce11680329d4bab3e3ef5393b002"
+    },
+    {
+      "atlas": "reference-049",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": true,
+      "geometry": "continuous gutters checked",
+      "sha256": "df5300dba2c575133a475d367df1be3abf1451c02779166d9785bf68171e3e87"
+    },
+    {
+      "atlas": "reference-050",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": true,
+      "geometry": "continuous gutters checked",
+      "sha256": "bb8197c0270ca2247d3798450a20f34f3522de2a5d2966ba0474ed850812a96d"
+    },
+    {
+      "atlas": "reference-051",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": false,
+      "geometry": "continuous gutters checked",
+      "sha256": "639e44104693de9e6d80eea57eec0ca04bb4337e219e105fe9e475a59d09cba6"
+    },
+    {
+      "atlas": "reference-052",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": false,
+      "geometry": "continuous gutters checked",
+      "sha256": "6a91fdd98666b4b2b01e14888d0aff72b273c4ae3dd7de057678347a09a5d324"
+    },
+    {
+      "atlas": "reference-053",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": true,
+      "geometry": "continuous gutters checked",
+      "sha256": "c0fe17e0406e166fbfe7eb5db1ddaa6c102bd4e2b27805687bb794cb81c0598c"
+    },
+    {
+      "atlas": "reference-054",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": true,
+      "geometry": "continuous gutters checked",
+      "sha256": "cb6cc5c7fef0b87cd582b1dddc7780239d2a1326ec6831e7bdd81f93122d8da1"
+    },
+    {
+      "atlas": "reference-055",
+      "cells": 12,
+      "accepted_cells": 11,
+      "previous_cut_agreement": true,
+      "geometry": "continuous gutters checked",
+      "sha256": "0f2e1ff74547a118860f5396397f40978ec97a47c8d81c2e4f8fadaaf90662b6"
+    },
+    {
+      "atlas": "reference-056",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": true,
+      "geometry": "continuous gutters checked",
+      "sha256": "a7f91b682d5286654f95ea4ca4f1d29126e28fe6a1078af7f8898b3088ace180"
+    },
+    {
+      "atlas": "reference-057",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": true,
+      "geometry": "continuous gutters checked",
+      "sha256": "38ca5d11ea1d34627738b4c55d3ddbf987f8c28eaa486baac7378e78cf6abdfa"
+    },
+    {
+      "atlas": "reference-058",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": false,
+      "geometry": "continuous gutters checked",
+      "sha256": "35f779b2ad1588714cfd4733ca93c2028652e193f3feaa27296e67c7981f7002"
+    },
+    {
+      "atlas": "reference-059",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": false,
+      "geometry": "continuous gutters checked",
+      "sha256": "580e788cfdbc0d97b46ad8f15f1707ab2f565f4f8ee354c74d0e06f5fd14cbf7"
+    },
+    {
+      "atlas": "reference-060",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": false,
+      "geometry": "continuous gutters checked",
+      "sha256": "3515dddce92ed76c35142a03a84c6af3e11263dac1688c0c66cff885e21bc2bf"
+    },
+    {
+      "atlas": "reference-061",
+      "cells": 12,
+      "accepted_cells": 11,
+      "previous_cut_agreement": false,
+      "geometry": "continuous gutters checked",
+      "sha256": "510ab27a992b9bcb079f0ee61621c7e67629beab54bc7f6af14ac5113e0ccdd3"
+    },
+    {
+      "atlas": "reference-062",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": false,
+      "geometry": "continuous gutters checked",
+      "sha256": "ef9b481e1ca36b24a4a2773db3184e5d4c1f1c7cbd0b9e8d1e9b88ce7ff88716"
+    },
+    {
+      "atlas": "reference-063",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": false,
+      "geometry": "continuous gutters checked",
+      "sha256": "0d3b90a9684446471ea9f753b5b768c5a769e822761b801643c36f5cd13e91d9"
+    },
+    {
+      "atlas": "reference-064",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": false,
+      "geometry": "continuous gutters checked",
+      "sha256": "fdc72306f9fb977db3a2aafee6350a8c0174bca46861bac78f9fb4f1f6a4bef6"
+    },
+    {
+      "atlas": "reference-065",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": false,
+      "geometry": "continuous gutters checked",
+      "sha256": "86e82230dacdb6cbc94da2d085a3e4c659133915e812113e75cbed32b59ca6de"
+    },
+    {
+      "atlas": "reference-066",
+      "cells": 12,
+      "accepted_cells": 11,
+      "previous_cut_agreement": true,
+      "geometry": "continuous gutters checked",
+      "sha256": "a1001290593fbcb94d982e321974422b6ad41d73d8333df0e7ab88705e09fc49"
+    },
+    {
+      "atlas": "reference-067",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": true,
+      "geometry": "continuous gutters checked",
+      "sha256": "444b66746519bbe58c16803f94e5d0ff6cd0069fd6b37924e5911679e6c44b68"
+    },
+    {
+      "atlas": "reference-068",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": false,
+      "geometry": "continuous gutters checked",
+      "sha256": "312659530b2208fbefa2e0f1434b16eb2b250f2816866762aa57f4c97376acce"
+    },
+    {
+      "atlas": "reference-069",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": true,
+      "geometry": "continuous gutters checked",
+      "sha256": "88b1ac8bd6c451826f588af4bd2eb2241894d7c8afb2b4865841b898988ed6f1"
+    },
+    {
+      "atlas": "reference-070",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": false,
+      "geometry": "continuous gutters checked",
+      "sha256": "8c3301ecdafb0ce06f20baf87b88fb9d238c462b1c4d29efa6bbaf2c431cc8dc"
+    },
+    {
+      "atlas": "reference-071",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": false,
+      "geometry": "continuous gutters checked",
+      "sha256": "f4baf863f0aaf119cb74ed818d628a25be53a892c332df315043ca1d1283d60c"
+    },
+    {
+      "atlas": "reference-072",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": true,
+      "geometry": "continuous gutters checked",
+      "sha256": "ddf4c78da726a93ce421952e494a31eb8f7e309970f1af709f9d6a0b8b8193d3"
+    },
+    {
+      "atlas": "reference-073",
+      "cells": 12,
+      "accepted_cells": 11,
+      "previous_cut_agreement": false,
+      "geometry": "continuous gutters checked",
+      "sha256": "2b460f2f10ffe48edbb6d0377f189e1daf3673cf3fa90a31ec02e9222150b090"
+    },
+    {
+      "atlas": "reference-074",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": false,
+      "geometry": "continuous gutters checked",
+      "sha256": "10d491ac3e83941bc85205a88625238ece3100185f71a0a707df5ed8cd05769c"
+    },
+    {
+      "atlas": "reference-075",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": false,
+      "geometry": "continuous gutters checked",
+      "sha256": "7498366b8001026ed9eab9157ff8024ae57820e4e648281a7db3c4ff4fec7f8e"
+    },
+    {
+      "atlas": "reference-076",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": true,
+      "geometry": "continuous gutters checked",
+      "sha256": "fd1fa305e0cfd2fc0e7a1abd7b6176ace539f910a1f386b1ca759e418563f5e2"
+    },
+    {
+      "atlas": "reference-077",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": true,
+      "geometry": "continuous gutters checked",
+      "sha256": "be03468da4a56f78313b4e4acb8d33cb3c9bd81d029594140fa48f9b5e9ab2f3"
+    },
+    {
+      "atlas": "reference-078",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": true,
+      "geometry": "continuous gutters checked",
+      "sha256": "3989fb4707a88793245cb5fc2013946ff30fdff000f385ebec29941d8a7cb8ce"
+    },
+    {
+      "atlas": "reference-079",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": false,
+      "geometry": "continuous gutters checked",
+      "sha256": "65e504b0fb9fd0db142fa6858b426a88fe49691dcc003cb8b50331fe0b585377"
+    },
+    {
+      "atlas": "reference-080",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": false,
+      "geometry": "continuous gutters checked",
+      "sha256": "762b55ec381afe91303b1f54e9e59027b285ff4d51970bfba529898ff7efc4ac"
+    },
+    {
+      "atlas": "reference-081",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": true,
+      "geometry": "continuous gutters checked",
+      "sha256": "76def7b4e08ec75eafa961a5675334059d1e7031144362b9616d73ebb0c1acd2"
+    },
+    {
+      "atlas": "reference-082",
+      "cells": 12,
+      "accepted_cells": 11,
+      "previous_cut_agreement": false,
+      "geometry": "continuous gutters checked",
+      "sha256": "79f7633945fc8def247850400c91521e47d404df62983025888fe700d7de4bd2"
+    },
+    {
+      "atlas": "reference-083",
+      "cells": 12,
+      "accepted_cells": 12,
+      "previous_cut_agreement": true,
+      "geometry": "continuous gutters checked",
+      "sha256": "7d7c9cbd67a58611d1ab4a5a66d9d1b455487bfa0be180607f699e1664abf71f"
+    }
+  ],
+  "repair_cells": [
+    {
+      "atlas": "reference-030",
+      "cell_one_based": 7,
+      "reason": "Floating prisoner thought bubble"
+    },
+    {
+      "atlas": "reference-032",
+      "cell_one_based": 1,
+      "reason": "Floating Tom portrait"
+    },
+    {
+      "atlas": "reference-036",
+      "cell_one_based": 7,
+      "reason": "Floating portrait/question bubble"
+    },
+    {
+      "atlas": "reference-038",
+      "cell_one_based": 2,
+      "reason": "Floating angry-woman portrait"
+    },
+    {
+      "atlas": "reference-055",
+      "cell_one_based": 6,
+      "reason": "Floating Tom portrait bubble"
+    },
+    {
+      "atlas": "reference-061",
+      "cell_one_based": 7,
+      "reason": "Literal collision instead of a chance encounter"
+    },
+    {
+      "atlas": "reference-066",
+      "cell_one_based": 6,
+      "reason": "Drawn phone ringing rays"
+    },
+    {
+      "atlas": "reference-073",
+      "cell_one_based": 11,
+      "reason": "Floating wish portrait/scene"
+    },
+    {
+      "atlas": "reference-082",
+      "cell_one_based": 2,
+      "reason": "Child is too close to fire for the safety instruction"
+    }
+  ],
+  "geometry_failures": [
+    {
+      "atlas": "reference-008",
+      "reason": "No continuous y gutter near 2/4; inspect grid before production"
+    }
+  ],
+  "invalid_atlas": {
+    "atlas": "reference-084",
+    "reason": "Generator returned 4 columns by 4 rows, not the required 3 by 4. Four valid source sentences remain without approved image. No new generation at the user-requested checkpoint.",
+    "source_ids": [
+      "ref-0997",
+      "ref-0998",
+      "ref-0999",
+      "ref-1000"
+    ]
+  },
+  "accepted_reference_scenes": 975
+}

@@ -1,0 +1,23 @@
+{
+  "schema":2,
+  "date":"2026-11-02",
+  "release":"nasaq-independent-v4",
+  "reviewer":"Codex automated checks and browser interaction",
+  "automated":{"javascript_tests":24,"python_recording_tests":2,"historical_snapshot_files":396,"status":"pass"},
+  "browser":{"tool":"Codex in-app browser","origin":"http://127.0.0.1:4173","viewports":[{"width":360,"height":800},{"width":390,"height":844},{"width":1280,"height":900}],"checks":[
+    {"name":"Complete source catalog loads, searches and shows 180 candidates with separate published/imported states","status":"pass"},
+    {"name":"New That is lesson displays the correct first scene and all twelve thumbnail-backed examples","status":"pass"},
+    {"name":"Bilingual comparison, closed grammar choice and four-word reconstruction correct immediately","status":"pass"},
+    {"name":"Sparse new pattern ID supports a clearly labelled structural-only free-production check","status":"pass"},
+    {"name":"Typed closed answer and choice answer preserve two visible checked exam results; advanced details remain closed","status":"pass"},
+    {"name":"Foundation route contains 17 patterns and 204 distinct sentences and progresses through examples with alternating voices","status":"pass"},
+    {"name":"Paused got-10-female.mp3 restores exactly at 1.727318 seconds and playbackRate 0.75 after reload","status":"pass"},
+    {"name":"Polite-request comparison enters contextual cafe story with narrator/Omar/Sara identities","status":"pass"},
+    {"name":"Homepage units account for 17+2+2+3+3 published patterns","status":"pass"},
+    {"name":"Scene catalog renders 24 cards per page, advances from 1–24 to 25–48, and filters one pattern to twelve scenes","status":"pass"},
+    {"name":"No horizontal document overflow observed at mobile and desktop widths; modal stays within viewport","status":"pass"},
+    {"name":"No JavaScript console errors observed in this browser session","status":"pass"}
+  ],"screenshot":"docs/qa/coverage-mobile-v4.jpg"},
+  "media":{"core_patterns":27,"core_sentences":324,"recordings_total":676,"word_cues_total":4262,"scenes":324,"atlases":27,"original_assets":"byte-for-byte preserved","new_image_review":"assistant visual review; no human sign-off claimed"},
+  "limits":["153 organized candidates remain outside the produced course pending authoring/review/media.","No independent human listening sign-off or certified CEFR assessment.","Physical phones, screen readers and every browser/device combination were not tested.","This local browser report does not by itself attest a Sites production deployment."]
+}

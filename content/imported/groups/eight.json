@@ -1,0 +1,1565 @@
+{
+  "schema": 1,
+  "group": "polite-social-interactions",
+  "title": "المجموعة الثامنة: التفاعل الاجتماعي واللباقة",
+  "status": "18 authored conversation patterns; 72 scenes, 54 micro-story lines, 36 dialogue turns, three linked stories; image production deferred; audio not considered verified until workflow succeeds",
+  "items": [
+    {
+      "id": 1,
+      "key": "excuse-me-1",
+      "title": "Excuse me",
+      "meaning": "عذرًا / لو سمحت",
+      "formula": "Excuse me + request or polite interruption",
+      "explanation": "لجذب الانتباه أو المرور أو المقاطعة المؤدبة؛ لا تستخدمها اعتذارًا عن خطأ وقع بالفعل بدل sorry.",
+      "explanationEn": "Use excuse me to get attention, pass someone, or interrupt politely. Use sorry when apologizing for a mistake.",
+      "contrast": "Excuse me قبل السؤال أو المرور، بينما I'm sorry اعتذار عن الخطأ.",
+      "sourceIds": [
+        645,
+        310
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "Excuse me, is this seat free?",
+          "ar": "عذرًا، هل هذا المقعد شاغر؟",
+          "context": "في الحافلة",
+          "icon": "🚌",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "Excuse me, where is the library?",
+          "ar": "عذرًا، أين المكتبة؟",
+          "context": "السؤال عن الاتجاه",
+          "icon": "📚",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "Excuse me, can I pass through?",
+          "ar": "عذرًا، هل يمكنني المرور؟",
+          "context": "ممر مزدحم",
+          "icon": "🚶",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "Excuse me, may I ask a question?",
+          "ar": "عذرًا، هل يمكنني طرح سؤال؟",
+          "context": "أثناء الدرس",
+          "icon": "🙋",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Nora needed to find the right classroom.",
+          "ar": "احتاجت نورا إلى معرفة فصلها الصحيح."
+        },
+        {
+          "id": 2,
+          "en": "She saw a teacher near the stairs.",
+          "ar": "رأت معلمة قرب السلالم."
+        },
+        {
+          "id": 3,
+          "en": "She said, 'Excuse me, where is room five?'",
+          "ar": "قالت: عذرًا، أين الغرفة الخامسة؟"
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Excuse me, is this the science room?",
+          "ar": "عذرًا، هل هذه غرفة العلوم؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Yes, it's the room on your left.",
+          "ar": "نعم، إنها الغرفة على يسارك."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "key": "could-you-please-2",
+      "title": "Could you please",
+      "meaning": "هل يمكنك من فضلك",
+      "formula": "Could you please + base verb",
+      "explanation": "صيغة مهذبة لطلب فعل من شخص؛ يأتي بعدها الفعل في المصدر دون to، وهي ألطف غالبًا من الأمر المباشر.",
+      "explanationEn": "Use could you please with a base verb to ask someone to do something politely.",
+      "contrast": "Open the door أمر مباشر؛ Could you please open the door طلب مهذب.",
+      "sourceIds": [
+        649,
+        645
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "Could you please speak a little slower?",
+          "ar": "هل يمكنك التحدث ببطء أكثر قليلًا من فضلك؟",
+          "context": "فهم اللغة",
+          "icon": "🗣️",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "Could you please close the window?",
+          "ar": "هل يمكنك إغلاق النافذة من فضلك؟",
+          "context": "داخل الصف",
+          "icon": "🪟",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "Could you please send me the address?",
+          "ar": "هل يمكنك إرسال العنوان إلي من فضلك؟",
+          "context": "تنظيم لقاء",
+          "icon": "📍",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "Could you please repeat the last sentence?",
+          "ar": "هل يمكنك إعادة الجملة الأخيرة من فضلك؟",
+          "context": "أثناء المحادثة",
+          "icon": "🔁",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Yasser could not hear the speaker clearly.",
+          "ar": "لم يستطع ياسر سماع المتحدث بوضوح."
+        },
+        {
+          "id": 2,
+          "en": "He waited for a pause.",
+          "ar": "انتظر حتى توقف المتحدث قليلًا."
+        },
+        {
+          "id": 3,
+          "en": "He asked, 'Could you please repeat that?'",
+          "ar": "سأل: هل يمكنك إعادة ذلك من فضلك؟"
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Could you please help me carry this box?",
+          "ar": "هل يمكنك مساعدتي في حمل هذا الصندوق من فضلك؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Of course, I'd be happy to help.",
+          "ar": "بالطبع، يسعدني أن أساعد."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "key": "would-you-mind-3",
+      "title": "Would you mind",
+      "meaning": "هل تمانع أن",
+      "formula": "Would you mind + verb ending in ing",
+      "explanation": "للطلب المؤدب بصيغة السؤال عن الانزعاج؛ عند الموافقة على الطلب يمكن الرد No, not at all.",
+      "explanationEn": "Use would you mind before an activity ending in ing to make a gentle request.",
+      "contrast": "Would you mind opening the door طلب؛ Do you mind if I open it استئذان.",
+      "sourceIds": [
+        651,
+        502
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "Would you mind moving your bag?",
+          "ar": "هل تمانع نقل حقيبتك؟",
+          "context": "مقعد مشغول",
+          "icon": "🎒",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "Would you mind lowering the music?",
+          "ar": "هل تمانع خفض صوت الموسيقى؟",
+          "context": "مكان هادئ",
+          "icon": "🎵",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "Would you mind waiting a moment?",
+          "ar": "هل تمانع الانتظار لحظة؟",
+          "context": "عند الاستقبال",
+          "icon": "⏳",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "Would you mind checking this sentence?",
+          "ar": "هل تمانع مراجعة هذه الجملة؟",
+          "context": "تدقيق اللغة",
+          "icon": "📝",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Amal was reading in a quiet room.",
+          "ar": "كانت أمل تقرأ في غرفة هادئة."
+        },
+        {
+          "id": 2,
+          "en": "The music nearby was too loud.",
+          "ar": "كانت الموسيقى القريبة مرتفعة جدًا."
+        },
+        {
+          "id": 3,
+          "en": "She asked politely if it could be quieter.",
+          "ar": "طلبت بلطف خفض الصوت."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Would you mind closing the door?",
+          "ar": "هل تمانع إغلاق الباب؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "No, not at all. I'll close it.",
+          "ar": "لا، إطلاقًا. سأغلقه."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "key": "do-you-mind-if-i-4",
+      "title": "Do you mind if I",
+      "meaning": "هل تمانع إذا أنا",
+      "formula": "Do you mind if I + present verb",
+      "explanation": "نستأذن للقيام بفعل من جانبنا؛ الرد No, go ahead يعني لا مانع، بينما Yes, I do يعني وجود مانع.",
+      "explanationEn": "Use do you mind if I before an action you want permission to do. No means permission is given.",
+      "contrast": "Do you mind if I sit? إذن لنفسي؛ Would you mind sitting? أطلب من الطرف الآخر.",
+      "sourceIds": [
+        615,
+        502
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "Do you mind if I sit here?",
+          "ar": "هل تمانع إن جلست هنا؟",
+          "context": "مقعد بجوار شخص",
+          "icon": "🪑",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "Do you mind if I open the window?",
+          "ar": "هل تمانع إن فتحت النافذة؟",
+          "context": "تهوية الغرفة",
+          "icon": "🪟",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "Do you mind if I use your pen?",
+          "ar": "هل تمانع إن استخدمت قلمك؟",
+          "context": "داخل الصف",
+          "icon": "🖊️",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "Do you mind if I join the discussion?",
+          "ar": "هل تمانع إن شاركت في النقاش؟",
+          "context": "اجتماع صغير",
+          "icon": "💬",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Kareem found a seat beside the window.",
+          "ar": "وجد كريم مقعدًا بجوار النافذة."
+        },
+        {
+          "id": 2,
+          "en": "He wanted to sit next to a classmate.",
+          "ar": "أراد الجلوس قرب أحد زملائه."
+        },
+        {
+          "id": 3,
+          "en": "He asked, 'Do you mind if I sit here?'",
+          "ar": "سأل: هل تمانع إن جلست هنا؟"
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Do you mind if I borrow your ruler?",
+          "ar": "هل تمانع إن استعرت مسطرتك؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "No, go ahead. Here it is.",
+          "ar": "لا مانع، تفضل. ها هي."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "key": "may-i-5",
+      "title": "May I",
+      "meaning": "هل لي أن",
+      "formula": "May I + base verb",
+      "explanation": "صيغة استئذان أكثر رسمية غالبًا، تأتي بعدها صيغة الفعل الأساسية، ومناسبة للمواقف الرسمية أو الصفية.",
+      "explanationEn": "Use may I with a base verb to ask for permission, often in a formal or respectful setting.",
+      "contrast": "May I enter? استئذان رسمي؛ Can I enter? استئذان يومي شائع.",
+      "sourceIds": [
+        527,
+        20
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "May I come in, please?",
+          "ar": "هل تسمح لي بالدخول من فضلك؟",
+          "context": "عند باب الفصل",
+          "icon": "🚪",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "May I use this computer?",
+          "ar": "هل يمكنني استخدام هذا الحاسوب؟",
+          "context": "مختبر المدرسة",
+          "icon": "💻",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "May I take a photo here?",
+          "ar": "هل تسمح لي بالتقاط صورة هنا؟",
+          "context": "داخل متحف",
+          "icon": "📷",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "May I leave a little early today?",
+          "ar": "هل يمكنني المغادرة مبكرًا قليلًا اليوم؟",
+          "context": "استئذان من المعلم",
+          "icon": "⏰",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Huda arrived after the lesson began.",
+          "ar": "وصلت هدى بعد بدء الدرس."
+        },
+        {
+          "id": 2,
+          "en": "She waited by the classroom door.",
+          "ar": "انتظرت قرب باب الفصل."
+        },
+        {
+          "id": 3,
+          "en": "She asked her teacher, 'May I come in?'",
+          "ar": "سألت معلمتها: هل يمكنني الدخول؟"
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "May I borrow this book for a week?",
+          "ar": "هل يمكنني استعارة هذا الكتاب لأسبوع؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Yes, you may. Please return it on time.",
+          "ar": "نعم، يمكنك ذلك. أعده في موعده من فضلك."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "key": "would-you-like-to-6",
+      "title": "Would you like to",
+      "meaning": "هل تود أن",
+      "formula": "Would you like to + base verb",
+      "explanation": "للدعوة أو العرض المهذب إلى القيام بنشاط؛ وهي ألطف من Do you want to في سياقات كثيرة.",
+      "explanationEn": "Use would you like to before a base verb to offer an invitation politely.",
+      "contrast": "Would you like to join us? دعوة؛ Would you mind joining us? تسأل عن الممانعة.",
+      "sourceIds": [
+        13,
+        14
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "Would you like to join us for lunch?",
+          "ar": "هل تود الانضمام إلينا للغداء؟",
+          "context": "دعوة للغداء",
+          "icon": "🍽️",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "Would you like to visit the museum?",
+          "ar": "هل تود زيارة المتحف؟",
+          "context": "اقتراح زيارة",
+          "icon": "🏛️",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "Would you like to practice English together?",
+          "ar": "هل تود أن نتدرب على الإنجليزية معًا؟",
+          "context": "تدريب مع صديق",
+          "icon": "📘",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "Would you like to take a short break?",
+          "ar": "هل تود أخذ استراحة قصيرة؟",
+          "context": "وقت الاستراحة",
+          "icon": "☕",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Lina had an extra ticket to the exhibition.",
+          "ar": "كان لدى لينا تذكرة إضافية للمعرض."
+        },
+        {
+          "id": 2,
+          "en": "She called her cousin to invite her.",
+          "ar": "اتصلت بابنة عمها لدعوتها."
+        },
+        {
+          "id": 3,
+          "en": "She asked, 'Would you like to come with me?'",
+          "ar": "سألت: هل تودين المجيء معي؟"
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Would you like to come to our book club?",
+          "ar": "هل تود الانضمام إلى نادي الكتب لدينا؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Yes, that sounds wonderful.",
+          "ar": "نعم، يبدو ذلك رائعًا."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "key": "id-love-to-7",
+      "title": "I'd love to",
+      "meaning": "يسعدني أن",
+      "formula": "I'd love to + base verb",
+      "explanation": "نقبل دعوة بحماس؛ قد تأتي وحدها إذا كان النشاط مفهومًا من السياق.",
+      "explanationEn": "Use I'd love to when you gladly accept an invitation, with or without repeating the verb.",
+      "contrast": "I'd love to قبول حماسي؛ I'd like to تعبير مهذب عن رغبة.",
+      "sourceIds": [
+        11,
+        13
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I'd love to join the trip.",
+          "ar": "يسعدني الانضمام إلى الرحلة.",
+          "context": "قبول رحلة",
+          "icon": "🚌",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I'd love to meet your family.",
+          "ar": "يسعدني التعرف إلى عائلتك.",
+          "context": "زيارة عائلية",
+          "icon": "👨‍👩‍👧",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I'd love to learn that recipe.",
+          "ar": "يسعدني تعلم تلك الوصفة.",
+          "context": "في المطبخ",
+          "icon": "🥣",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I'd love to help with the project.",
+          "ar": "يسعدني المساعدة في المشروع.",
+          "context": "التعاون",
+          "icon": "🤝",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Sami was invited to a weekend walk.",
+          "ar": "دُعي سامي للمشي في عطلة الأسبوع."
+        },
+        {
+          "id": 2,
+          "en": "He was excited about the invitation.",
+          "ar": "كان متحمسًا للدعوة."
+        },
+        {
+          "id": 3,
+          "en": "He smiled and said, 'I'd love to join you.'",
+          "ar": "ابتسم وقال: يسعدني الانضمام إليكم."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Would you like to study with us tonight?",
+          "ar": "هل تود المذاكرة معنا الليلة؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "I'd love to. Thanks for inviting me.",
+          "ar": "يسعدني ذلك. شكرًا على دعوتي."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "key": "im-afraid-i-cant-8",
+      "title": "I'm afraid I can't",
+      "meaning": "أخشى أنني لا أستطيع",
+      "formula": "I'm afraid I can't + base verb",
+      "explanation": "رفض لطيف أو إبلاغ غير سار؛ لا تعني afraid هنا بالضرورة الخوف الحقيقي.",
+      "explanationEn": "Use I'm afraid I can't to refuse a request gently or express a limitation, without meaning that you are scared.",
+      "contrast": "I can't come رفض مباشر؛ I'm afraid I can't come رفض أكثر لطفًا.",
+      "sourceIds": [
+        39,
+        14
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I'm afraid I can't come on Friday.",
+          "ar": "أخشى أنني لا أستطيع الحضور يوم الجمعة.",
+          "context": "اعتذار عن دعوة",
+          "icon": "📅",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I'm afraid I can't stay very long.",
+          "ar": "أخشى أنني لا أستطيع البقاء طويلًا.",
+          "context": "زيارة قصيرة",
+          "icon": "⌛",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I'm afraid I can't answer that question yet.",
+          "ar": "أخشى أنني لا أستطيع الإجابة عن ذلك السؤال بعد.",
+          "context": "نقاش عمل",
+          "icon": "❓",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I'm afraid I can't help this afternoon.",
+          "ar": "أخشى أنني لا أستطيع المساعدة بعد الظهر.",
+          "context": "اعتذار عن مساعدة",
+          "icon": "🤲",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Mona received an invitation to a picnic.",
+          "ar": "تلقت منى دعوة لنزهة."
+        },
+        {
+          "id": 2,
+          "en": "She already had an appointment that day.",
+          "ar": "كان لديها موعد سابق في ذلك اليوم."
+        },
+        {
+          "id": 3,
+          "en": "She said, 'I'm afraid I can't join you.'",
+          "ar": "قالت: أخشى أنني لا أستطيع الانضمام إليكم."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Can you come to the meeting tomorrow?",
+          "ar": "هل يمكنك الحضور إلى الاجتماع غدًا؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "I'm afraid I can't. I have an appointment.",
+          "ar": "أخشى أنني لا أستطيع. لدي موعد."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "key": "how-about-9",
+      "title": "How about",
+      "meaning": "ما رأيك في",
+      "formula": "How about + noun or verb ending in ing",
+      "explanation": "نقترح خيارًا أو نشاطًا، وبعد about يأتي اسم أو فعل بصيغة ing لا صيغة الفعل المجرد وحدها.",
+      "explanationEn": "Use how about with a noun or an activity ending in ing to suggest an option.",
+      "contrast": "How about walking? اقتراح؛ Would you like to walk? دعوة مهذبة مباشرة.",
+      "sourceIds": [
+        549,
+        693
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "How about having tea after class?",
+          "ar": "ما رأيك في تناول الشاي بعد الحصة؟",
+          "context": "جلسة بعد الدرس",
+          "icon": "🍵",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "How about meeting at the library?",
+          "ar": "ما رأيك في اللقاء في المكتبة؟",
+          "context": "تنسيق موعد",
+          "icon": "📚",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "How about a different color?",
+          "ar": "ما رأيك في لون مختلف؟",
+          "context": "اختيار تصميم",
+          "icon": "🎨",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "How about taking the earlier bus?",
+          "ar": "ما رأيك في ركوب الحافلة الأسبق؟",
+          "context": "اقتراح مواصلات",
+          "icon": "🚌",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "The team needed a quiet place to meet.",
+          "ar": "احتاج الفريق إلى مكان هادئ للاجتماع."
+        },
+        {
+          "id": 2,
+          "en": "Everyone suggested a different location.",
+          "ar": "اقترح كل واحد مكانًا مختلفًا."
+        },
+        {
+          "id": 3,
+          "en": "Hassan asked, 'How about meeting at the library?'",
+          "ar": "سأل حسن: ما رأيكم في الاجتماع بالمكتبة؟"
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Where should we have our meeting?",
+          "ar": "أين ينبغي أن نعقد اجتماعنا؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "How about the reading room?",
+          "ar": "ما رأيك في غرفة القراءة؟"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "key": "lets-10",
+      "title": "Let's",
+      "meaning": "هيا بنا",
+      "formula": "Let's + base verb",
+      "explanation": "ندعو الآخرين إلى فعل مشترك؛ لا نضيف to بعد Let's.",
+      "explanationEn": "Use let's followed by a base verb to suggest doing something together.",
+      "contrast": "Let's start اقتراح مشترك؛ Could you start? طلب إلى شخص آخر.",
+      "sourceIds": [
+        305,
+        352
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "Let's start with the easy question.",
+          "ar": "لنبدأ بالسؤال السهل.",
+          "context": "تمرين جماعي",
+          "icon": "📝",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "Let's clean the room together.",
+          "ar": "هيا ننظف الغرفة معًا.",
+          "context": "تعاون منزلي",
+          "icon": "🧹",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "Let's try a different solution.",
+          "ar": "لنجرب حلًا آخر.",
+          "context": "حل المشكلات",
+          "icon": "🧩",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "Let's meet after the lesson.",
+          "ar": "لنلتقِ بعد الدرس.",
+          "context": "تنسيق لقاء",
+          "icon": "📅",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "The class had a difficult puzzle.",
+          "ar": "كان لدى الصف لغز صعب."
+        },
+        {
+          "id": 2,
+          "en": "The students shared their ideas.",
+          "ar": "تبادل الطلاب أفكارهم."
+        },
+        {
+          "id": 3,
+          "en": "Their teacher said, 'Let's try again together.'",
+          "ar": "قال معلمهم: لنجرب مرة أخرى معًا."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "We can't solve this part yet.",
+          "ar": "لا نستطيع حل هذا الجزء بعد."
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Let's work on it together.",
+          "ar": "لنعمل عليه معًا."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "key": "let-me-11",
+      "title": "Let me",
+      "meaning": "دعني",
+      "formula": "Let me + base verb",
+      "explanation": "للعرض أو التقدم للمساعدة أو التوضيح، يليها الفعل في المصدر.",
+      "explanationEn": "Use let me with a base verb to offer help or ask to do something yourself.",
+      "contrast": "Let me help you عرض مبادرة؛ Could you help me? طلب مساعدة.",
+      "sourceIds": [
+        248,
+        803
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "Let me carry that bag for you.",
+          "ar": "دعني أحمل تلك الحقيبة عنك.",
+          "context": "مساعدة عند المدخل",
+          "icon": "🧳",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "Let me explain the first step.",
+          "ar": "دعني أشرح الخطوة الأولى.",
+          "context": "شرح درس",
+          "icon": "🧠",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "Let me check the timetable.",
+          "ar": "دعني أراجع الجدول.",
+          "context": "تنظيم موعد",
+          "icon": "📋",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "Let me introduce my friend.",
+          "ar": "دعني أقدم صديقي.",
+          "context": "تعارف",
+          "icon": "👋",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Yasmin noticed an older neighbor carrying boxes.",
+          "ar": "لاحظت ياسمين جارتها المسنة تحمل صناديق."
+        },
+        {
+          "id": 2,
+          "en": "She walked over and offered her help.",
+          "ar": "اقتربت وعرضت مساعدتها."
+        },
+        {
+          "id": 3,
+          "en": "She said, 'Let me carry one for you.'",
+          "ar": "قالت: دعيني أحمل واحدًا عنك."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "These books are too heavy for me.",
+          "ar": "هذه الكتب ثقيلة جدًا بالنسبة لي."
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Let me help you carry them.",
+          "ar": "دعني أساعدك في حملها."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "key": "thank-you-for-12",
+      "title": "Thank you for",
+      "meaning": "شكرًا لك على",
+      "formula": "Thank you for + noun or verb ending in ing",
+      "explanation": "نعبر عن الامتنان لفعل محدد، وبعد for يأتي اسم أو فعل بصيغة ing.",
+      "explanationEn": "Use thank you for before a noun or activity ending in ing to show specific gratitude.",
+      "contrast": "Thank you for coming شكر على الفعل؛ Thank you very much شكر عام.",
+      "sourceIds": [
+        179,
+        16
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "Thank you for waiting for me.",
+          "ar": "شكرًا على انتظاري.",
+          "context": "تأخر عن موعد",
+          "icon": "⏰",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "Thank you for your kind message.",
+          "ar": "شكرًا على رسالتك اللطيفة.",
+          "context": "رسالة مشجعة",
+          "icon": "💌",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "Thank you for helping our team.",
+          "ar": "شكرًا على مساعدة فريقنا.",
+          "context": "مشروع جماعي",
+          "icon": "🤝",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "Thank you for explaining the answer.",
+          "ar": "شكرًا على شرح الإجابة.",
+          "context": "نهاية الدرس",
+          "icon": "📚",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Fadi missed part of the lesson.",
+          "ar": "فات فادي جزء من الدرس."
+        },
+        {
+          "id": 2,
+          "en": "His classmate shared her notes.",
+          "ar": "شاركت زميلته ملاحظاتها معه."
+        },
+        {
+          "id": 3,
+          "en": "He said, 'Thank you for helping me.'",
+          "ar": "قال: شكرًا لمساعدتي."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "I saved you a seat.",
+          "ar": "حجزت لك مقعدًا."
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Thank you for thinking of me.",
+          "ar": "شكرًا لأنك تذكرتني."
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "key": "i-appreciate-13",
+      "title": "I appreciate",
+      "meaning": "أقدّر",
+      "formula": "I appreciate + noun or verb ending in ing",
+      "explanation": "نعبّر عن تقدير عميق لمساعدة أو جهد، ويمكن أن يأتي بعدها اسم أو فعل بصيغة ing.",
+      "explanationEn": "Use I appreciate for gratitude that emphasizes effort, kindness, or support.",
+      "contrast": "I appreciate your help تقدير خاص؛ Thank you for helping me شكر مباشر عن فعل.",
+      "sourceIds": [
+        468,
+        224
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I appreciate your honest feedback.",
+          "ar": "أقدّر ملاحظاتك الصادقة.",
+          "context": "مراجعة مشروع",
+          "icon": "📝",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I appreciate your patience today.",
+          "ar": "أقدّر صبرك اليوم.",
+          "context": "تعلم ببطء",
+          "icon": "⌛",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I appreciate you taking the time to explain.",
+          "ar": "أقدّر تخصيصك وقتًا للشرح.",
+          "context": "جلسة شرح",
+          "icon": "🎓",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I appreciate everything you did.",
+          "ar": "أقدّر كل ما فعلته.",
+          "context": "بعد تقديم دعم",
+          "icon": "💝",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "A teacher stayed late to help a student.",
+          "ar": "بقي معلم بعد الدوام لمساعدة طالب."
+        },
+        {
+          "id": 2,
+          "en": "The student finally understood the lesson.",
+          "ar": "فهم الطالب الدرس أخيرًا."
+        },
+        {
+          "id": 3,
+          "en": "He said, 'I appreciate your patience.'",
+          "ar": "قال: أقدّر صبرك."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Did the explanation help?",
+          "ar": "هل أفادك الشرح؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Yes, I appreciate your time and support.",
+          "ar": "نعم، أقدّر وقتك ودعمك."
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "key": "youre-welcome-14",
+      "title": "You're welcome",
+      "meaning": "على الرحب والسعة",
+      "formula": "You're welcome + optional friendly reply",
+      "explanation": "رد مهذب على الشكر؛ يمكن أن تأتي العبارة وحدها، وليست بمعنى الترحيب بضيف فقط.",
+      "explanationEn": "Use you're welcome as a polite response to thanks. It can stand alone.",
+      "contrast": "You're welcome رد على Thank you؛ Welcome to our home ترحيب بقدوم ضيف.",
+      "sourceIds": [
+        179,
+        725
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "You're welcome. I'm happy to help.",
+          "ar": "على الرحب والسعة. يسعدني المساعدة.",
+          "context": "بعد تقديم دعم",
+          "icon": "😊",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "You're welcome. It was no trouble.",
+          "ar": "على الرحب والسعة. لم يكن هناك أي إزعاج.",
+          "context": "مساعدة بسيطة",
+          "icon": "🤝",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "You're welcome. See you tomorrow.",
+          "ar": "على الرحب والسعة. أراك غدًا.",
+          "context": "نهاية حديث",
+          "icon": "👋",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "You're welcome. Let me know if you need more.",
+          "ar": "على الرحب والسعة. أخبرني إذا احتجت المزيد.",
+          "context": "بعد الشرح",
+          "icon": "📚",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Omar helped his neighbor carry groceries.",
+          "ar": "ساعد عمر جاره في حمل المشتريات."
+        },
+        {
+          "id": 2,
+          "en": "His neighbor thanked him warmly.",
+          "ar": "شكره جاره بحرارة."
+        },
+        {
+          "id": 3,
+          "en": "Omar smiled and said, 'You're welcome.'",
+          "ar": "ابتسم عمر وقال: على الرحب والسعة."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Thank you for opening the door.",
+          "ar": "شكرًا على فتح الباب."
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "You're welcome. Have a nice day.",
+          "ar": "على الرحب والسعة. أتمنى لك يومًا سعيدًا."
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "key": "im-sorry-for-15",
+      "title": "I'm sorry for",
+      "meaning": "أنا آسف على",
+      "formula": "I'm sorry for + noun or verb ending in ing",
+      "explanation": "اعتذار عن خطأ أو فعل حدث، وبعد for يأتي اسم أو فعل بصيغة ing.",
+      "explanationEn": "Use I'm sorry for before a noun or activity ending in ing when apologizing for something.",
+      "contrast": "I'm sorry for being late اعتذار؛ Excuse me مقاطعة مؤدبة قبل السؤال.",
+      "sourceIds": [
+        368,
+        395
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I'm sorry for being late today.",
+          "ar": "أنا آسف على التأخر اليوم.",
+          "context": "تأخر عن موعد",
+          "icon": "⏰",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I'm sorry for the confusion.",
+          "ar": "أنا آسف على الالتباس.",
+          "context": "سوء فهم",
+          "icon": "💬",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I'm sorry for interrupting you.",
+          "ar": "أنا آسف لمقاطعتك.",
+          "context": "حديث جماعي",
+          "icon": "🙋",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I'm sorry for losing your pen.",
+          "ar": "أنا آسف لإضاعة قلمك.",
+          "context": "اعتذار عن فقدان",
+          "icon": "🖊️",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Laila arrived late for a group meeting.",
+          "ar": "وصلت ليلى متأخرة إلى اجتماع المجموعة."
+        },
+        {
+          "id": 2,
+          "en": "She explained that the bus had been delayed.",
+          "ar": "شرحت أن الحافلة تأخرت."
+        },
+        {
+          "id": 3,
+          "en": "She said, 'I'm sorry for keeping you waiting.'",
+          "ar": "قالت: أنا آسفة لجعلكم تنتظرون."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "I'm sorry for interrupting your work.",
+          "ar": "أنا آسف لمقاطعة عملك."
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "That's all right. How can I help?",
+          "ar": "لا بأس. كيف يمكنني المساعدة؟"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "key": "thats-all-right-16",
+      "title": "That's all right",
+      "meaning": "لا بأس",
+      "formula": "That's all right + optional reassuring sentence",
+      "explanation": "للرد على اعتذار أو طمأنة شخص بأن الأمر مقبول؛ يختلف عن قبول المسؤولية عن المشكلة.",
+      "explanationEn": "Use that's all right to respond kindly to an apology or reassure someone.",
+      "contrast": "That's all right طمأنة بعد الاعتذار؛ You're welcome رد على الشكر.",
+      "sourceIds": [
+        310,
+        179
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "That's all right. We can try again.",
+          "ar": "لا بأس. يمكننا المحاولة مجددًا.",
+          "context": "خطأ في تمرين",
+          "icon": "📝",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "That's all right. Please take your time.",
+          "ar": "لا بأس. خذ وقتك من فضلك.",
+          "context": "انتظار شخص",
+          "icon": "⏳",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "That's all right. I understand.",
+          "ar": "لا بأس. أتفهم الأمر.",
+          "context": "اعتذار صديق",
+          "icon": "🤝",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "That's all right. Everyone makes mistakes.",
+          "ar": "لا بأس. الجميع يرتكب أخطاء.",
+          "context": "تشجيع متعلم",
+          "icon": "💛",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Sami spilled a little water on the table.",
+          "ar": "سكب سامي قليلًا من الماء على الطاولة."
+        },
+        {
+          "id": 2,
+          "en": "He apologized and reached for a cloth.",
+          "ar": "اعتذر ومد يده إلى قطعة قماش."
+        },
+        {
+          "id": 3,
+          "en": "His friend said, 'That's all right. Let's clean it.'",
+          "ar": "قال صديقه: لا بأس. لننظفها."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "I'm sorry I forgot the book.",
+          "ar": "أنا آسف لأنني نسيت الكتاب."
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "That's all right. Bring it tomorrow.",
+          "ar": "لا بأس. أحضره غدًا."
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "key": "could-you-clarify-17",
+      "title": "Could you clarify",
+      "meaning": "هل يمكنك التوضيح",
+      "formula": "Could you clarify + noun or what you mean",
+      "explanation": "للاستفسار بأدب عند عدم فهم المقصود؛ يمكن إضافة please، ولا تعني الاعتراض.",
+      "explanationEn": "Use could you clarify to request a clearer explanation without sounding argumentative.",
+      "contrast": "Could you clarify? طلب توضيح؛ I don't agree with you اختلاف في الرأي.",
+      "sourceIds": [
+        20,
+        803
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "Could you clarify the last point?",
+          "ar": "هل يمكنك توضيح النقطة الأخيرة؟",
+          "context": "أثناء اجتماع",
+          "icon": "💬",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "Could you clarify what you mean?",
+          "ar": "هل يمكنك توضيح ما تقصده؟",
+          "context": "حديث مع صديق",
+          "icon": "🤔",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "Could you clarify the instructions, please?",
+          "ar": "هل يمكنك توضيح التعليمات من فضلك؟",
+          "context": "قبل نشاط",
+          "icon": "📋",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "Could you clarify which room we need?",
+          "ar": "هل يمكنك توضيح أي غرفة نحتاجها؟",
+          "context": "تنظيم فعالية",
+          "icon": "🏫",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "During a lesson, Kareem heard a new word.",
+          "ar": "سمع كريم كلمة جديدة أثناء الدرس."
+        },
+        {
+          "id": 2,
+          "en": "He was unsure what the teacher meant.",
+          "ar": "لم يكن متأكدًا مما قصدته المعلمة."
+        },
+        {
+          "id": 3,
+          "en": "He asked her politely to clarify it.",
+          "ar": "طلب منها بأدب توضيحها."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Could you clarify what the next step is?",
+          "ar": "هل يمكنك توضيح الخطوة التالية؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Of course. First, open your notebook.",
+          "ar": "بالطبع. أولًا، افتح دفترك."
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "key": "let-me-know-if-18",
+      "title": "Let me know if",
+      "meaning": "أخبرني إذا",
+      "formula": "Let me know if + clause",
+      "explanation": "عرض متابعة أو طلب إبلاغ عند تحقق شرط؛ يلي if جملة كاملة تصف الحالة.",
+      "explanationEn": "Use let me know if before a full clause to offer support or ask for an update.",
+      "contrast": "Let me know if you need help عرض دعم؛ Tell me now طلب فوري.",
+      "sourceIds": [
+        421,
+        343
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "Let me know if you need help.",
+          "ar": "أخبرني إذا احتجت مساعدة.",
+          "context": "بعد تقديم شرح",
+          "icon": "🤝",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "Let me know if the time changes.",
+          "ar": "أخبرني إذا تغير الموعد.",
+          "context": "تنسيق موعد",
+          "icon": "📅",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "Let me know if you have a question.",
+          "ar": "أخبرني إذا كان لديك سؤال.",
+          "context": "أثناء الدرس",
+          "icon": "❓",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "Let me know if you arrive early.",
+          "ar": "أخبرني إذا وصلت مبكرًا.",
+          "context": "انتظار زيارة",
+          "icon": "📱",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Mariam was preparing for her first interview.",
+          "ar": "كانت مريم تستعد لأول مقابلة لها."
+        },
+        {
+          "id": 2,
+          "en": "Her sister offered to practice with her.",
+          "ar": "عرضت أختها التدريب معها."
+        },
+        {
+          "id": 3,
+          "en": "She said, 'Let me know if you need help.'",
+          "ar": "قالت: أخبريني إذا احتجت مساعدة."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Thank you for explaining the form.",
+          "ar": "شكرًا على شرح الاستمارة."
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "You're welcome. Let me know if you have questions.",
+          "ar": "على الرحب والسعة. أخبرني إذا كانت لديك أسئلة."
+        }
+      ]
+    }
+  ],
+  "chapters": [
+    {
+      "id": 1,
+      "key": "a-new-student",
+      "title": "A New Student",
+      "titleAr": "الطالب الجديد",
+      "icon": "🏫",
+      "lines": [
+        {
+          "id": 1,
+          "en": "On his first day, Hadi could not find the classroom.",
+          "ar": "في يومه الأول، لم يعرف هادي مكان الفصل."
+        },
+        {
+          "id": 2,
+          "en": "He asked a teacher, 'Excuse me, where is room four?'",
+          "ar": "سأل معلمًا: عذرًا، أين الغرفة الرابعة؟"
+        },
+        {
+          "id": 3,
+          "en": "The teacher showed him the correct corridor.",
+          "ar": "أرشده المعلم إلى الممر الصحيح."
+        },
+        {
+          "id": 4,
+          "en": "Hadi said, 'Thank you for your help.'",
+          "ar": "قال هادي: شكرًا على مساعدتك."
+        },
+        {
+          "id": 5,
+          "en": "His classmate asked, 'Would you like to sit here?'",
+          "ar": "سأله زميله: هل تود الجلوس هنا؟"
+        },
+        {
+          "id": 6,
+          "en": "Hadi smiled and replied, 'I'd love to.'",
+          "ar": "ابتسم هادي ورد: يسعدني ذلك."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "key": "the-community-project",
+      "title": "The Community Project",
+      "titleAr": "المشروع المجتمعي",
+      "icon": "🤝",
+      "lines": [
+        {
+          "id": 1,
+          "en": "The team met to plan a neighborhood clean-up.",
+          "ar": "اجتمع الفريق للتخطيط لتنظيف الحي."
+        },
+        {
+          "id": 2,
+          "en": "Lina said, 'Let's start near the park.'",
+          "ar": "قالت لينا: لنبدأ بالقرب من الحديقة."
+        },
+        {
+          "id": 3,
+          "en": "Omar asked, 'Could you clarify the meeting time?'",
+          "ar": "سأل عمر: هل يمكنك توضيح موعد اللقاء؟"
+        },
+        {
+          "id": 4,
+          "en": "They agreed to begin early on Saturday.",
+          "ar": "اتفقوا على البدء مبكرًا يوم السبت."
+        },
+        {
+          "id": 5,
+          "en": "Sara offered, 'Let me bring some extra gloves.'",
+          "ar": "عرضت سارة: دعوني أحضر قفازات إضافية."
+        },
+        {
+          "id": 6,
+          "en": "Everyone thanked her for helping the team.",
+          "ar": "شكرها الجميع على مساعدة الفريق."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "key": "a-kind-apology",
+      "title": "A Kind Apology",
+      "titleAr": "اعتذار لطيف",
+      "icon": "☕",
+      "lines": [
+        {
+          "id": 1,
+          "en": "Mona arranged to meet her friend at the café.",
+          "ar": "رتبت منى لقاء صديقتها في المقهى."
+        },
+        {
+          "id": 2,
+          "en": "The bus was late, so Mona arrived after her friend.",
+          "ar": "تأخرت الحافلة، فوصلت منى بعد صديقتها."
+        },
+        {
+          "id": 3,
+          "en": "She said, 'I'm sorry for keeping you waiting.'",
+          "ar": "قالت: أنا آسفة لأنني جعلتك تنتظرين."
+        },
+        {
+          "id": 4,
+          "en": "Her friend replied, 'That's all right. Please sit down.'",
+          "ar": "ردت صديقتها: لا بأس. اجلسي من فضلك."
+        },
+        {
+          "id": 5,
+          "en": "Mona said, 'I appreciate your patience.'",
+          "ar": "قالت منى: أقدّر صبرك."
+        },
+        {
+          "id": 6,
+          "en": "They smiled and enjoyed a warm conversation.",
+          "ar": "ابتسمتا واستمتعتا بحديث لطيف."
+        }
+      ]
+    }
+  ],
+  "requirements": {
+    "patternCount": 18,
+    "scenesPerPattern": 4,
+    "storyLinesPerPattern": 3,
+    "dialogueTurnsPerPattern": 2,
+    "chapters": 3,
+    "skills": [
+      "الاستئذان وجذب الانتباه والطلبات المهذبة",
+      "التمييز بين الطلب من الآخرين والاستئذان لفعلنا",
+      "الدعوة والقبول والاعتذار المهذب عن المشاركة",
+      "الاقتراح والمبادرة للمساعدة",
+      "الشكر والتقدير والرد على الامتنان",
+      "الاعتذار والتسامح وطلب توضيح محترم",
+      "إبقاء التواصل مفتوحًا عند الحاجة"
+    ]
+  }
+}

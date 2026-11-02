@@ -1,0 +1,245 @@
+{
+  "key": "reference-029",
+  "source": "production/source-images/reference-029.png",
+  "source_sha256": "4d74aa8df33d313fd340a2a9fc9049255109118160db99d5e3e06a0632a9d66c",
+  "source_dimensions": [
+    1086,
+    1448
+  ],
+  "geometry": {
+    "width": 1086,
+    "height": 1448,
+    "x_gutters": [
+      {
+        "start": 361,
+        "end": 365,
+        "center": 362,
+        "white_fraction": 1.0
+      },
+      {
+        "start": 722,
+        "end": 727,
+        "center": 724,
+        "white_fraction": 0.9937888198757764
+      }
+    ],
+    "y_gutters": [
+      {
+        "start": 363,
+        "end": 364,
+        "center": 363,
+        "white_fraction": 0.9972375690607734
+      },
+      {
+        "start": 724,
+        "end": 725,
+        "center": 724,
+        "white_fraction": 0.994475138121547
+      },
+      {
+        "start": 1069,
+        "end": 1072,
+        "center": 1070,
+        "white_fraction": 1.0
+      }
+    ],
+    "source_rects": [
+      {
+        "x": 1,
+        "y": 1,
+        "width": 359,
+        "height": 361
+      },
+      {
+        "x": 366,
+        "y": 1,
+        "width": 355,
+        "height": 361
+      },
+      {
+        "x": 728,
+        "y": 1,
+        "width": 357,
+        "height": 361
+      },
+      {
+        "x": 1,
+        "y": 365,
+        "width": 359,
+        "height": 358
+      },
+      {
+        "x": 366,
+        "y": 365,
+        "width": 355,
+        "height": 358
+      },
+      {
+        "x": 728,
+        "y": 365,
+        "width": 357,
+        "height": 358
+      },
+      {
+        "x": 1,
+        "y": 726,
+        "width": 359,
+        "height": 342
+      },
+      {
+        "x": 366,
+        "y": 726,
+        "width": 355,
+        "height": 342
+      },
+      {
+        "x": 728,
+        "y": 726,
+        "width": 357,
+        "height": 342
+      },
+      {
+        "x": 1,
+        "y": 1073,
+        "width": 359,
+        "height": 374
+      },
+      {
+        "x": 366,
+        "y": 1073,
+        "width": 355,
+        "height": 374
+      },
+      {
+        "x": 728,
+        "y": 1073,
+        "width": 357,
+        "height": 374
+      }
+    ],
+    "method": "continuous near-white gutter runs, sampled across the entire row or column"
+  },
+  "atlas": "assets/scenes/reference-029-v1.webp",
+  "sha256": "5109679f4c5abcd438e20294766add5d90afafc931510fe83aa1945a04fdd63f",
+  "width": 1536,
+  "height": 2048,
+  "tool": "built-in imagegen",
+  "review": "assistant visual review",
+  "human_review": false,
+  "cell_count": 12,
+  "geometry_verification": {
+    "width": 1086,
+    "height": 1448,
+    "x_gutters": [
+      {
+        "start": 361,
+        "end": 365,
+        "center": 362,
+        "white_fraction": 1.0
+      },
+      {
+        "start": 722,
+        "end": 727,
+        "center": 724,
+        "white_fraction": 0.9937888198757764
+      }
+    ],
+    "y_gutters": [
+      {
+        "start": 363,
+        "end": 364,
+        "center": 363,
+        "white_fraction": 0.9972375690607734
+      },
+      {
+        "start": 724,
+        "end": 725,
+        "center": 724,
+        "white_fraction": 0.994475138121547
+      },
+      {
+        "start": 1069,
+        "end": 1072,
+        "center": 1070,
+        "white_fraction": 1.0
+      }
+    ],
+    "source_rects": [
+      {
+        "x": 1,
+        "y": 1,
+        "width": 359,
+        "height": 361
+      },
+      {
+        "x": 366,
+        "y": 1,
+        "width": 355,
+        "height": 361
+      },
+      {
+        "x": 728,
+        "y": 1,
+        "width": 357,
+        "height": 361
+      },
+      {
+        "x": 1,
+        "y": 365,
+        "width": 359,
+        "height": 358
+      },
+      {
+        "x": 366,
+        "y": 365,
+        "width": 355,
+        "height": 358
+      },
+      {
+        "x": 728,
+        "y": 365,
+        "width": 357,
+        "height": 358
+      },
+      {
+        "x": 1,
+        "y": 726,
+        "width": 359,
+        "height": 342
+      },
+      {
+        "x": 366,
+        "y": 726,
+        "width": 355,
+        "height": 342
+      },
+      {
+        "x": 728,
+        "y": 726,
+        "width": 357,
+        "height": 342
+      },
+      {
+        "x": 1,
+        "y": 1073,
+        "width": 359,
+        "height": 374
+      },
+      {
+        "x": 366,
+        "y": 1073,
+        "width": 355,
+        "height": 374
+      },
+      {
+        "x": 728,
+        "y": 1073,
+        "width": 357,
+        "height": 374
+      }
+    ],
+    "method": "continuous near-white gutter runs, sampled across the entire row or column"
+  },
+  "rejected_cells": [],
+  "review_scope": "All cells inspected in atlas order; context illustration is not grammatical proof. Rejected cells withheld from runtime."
+}

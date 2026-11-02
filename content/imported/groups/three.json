@@ -1,0 +1,1546 @@
+{
+  "schema": 1,
+  "group": "abilities-help-permission-advice",
+  "title": "المجموعة الثالثة: القدرة والاحتياج والإذن والنصيحة والدعوة",
+  "status": "18 full authored lesson paths; illustrations provisional until photographic atlas production; audio verified separately",
+  "requirements": {
+    "patternCount": 18,
+    "scenesPerPattern": 4,
+    "storyLinesPerPattern": 3,
+    "dialogueTurnsPerPattern": 2,
+    "chapters": 3,
+    "skills": [
+      "التعبير عن القدرة",
+      "طلب المساعدة والإذن",
+      "التعبير عن الاحتياجات",
+      "الالتزام وعدم الإلزام",
+      "النصح والاقتراح",
+      "العروض والدعوات المهذبة"
+    ]
+  },
+  "items": [
+    {
+      "id": 1,
+      "key": "i-can",
+      "title": "I can",
+      "meaning": "أستطيع",
+      "formula": "I can + base verb",
+      "explanation": "نستخدم can للتعبير عن القدرة الحالية أو الإمكانية، ويتبعها الفعل في صورته الأساسية دون to.",
+      "explanationEn": "Use can plus the base form of a verb to express present ability.",
+      "contrast": "I can swim = أستطيع السباحة؛ I can't swim = لا أستطيع.",
+      "sourceIds": [
+        5
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I can speak English.",
+          "ar": "أستطيع التحدث بالإنجليزية.",
+          "context": "المحادثة بالإنجليزية",
+          "icon": "🗣️",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I can help you today.",
+          "ar": "أستطيع مساعدتك اليوم.",
+          "context": "مساعدة صديق",
+          "icon": "🤝",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I can ride a bike.",
+          "ar": "أستطيع ركوب الدراجة.",
+          "context": "ركوب الدراجة",
+          "icon": "🚲",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I can answer this question.",
+          "ar": "أستطيع الإجابة عن هذا السؤال.",
+          "context": "إجابة في الصف",
+          "icon": "🙋",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Lina is learning new skills.",
+          "ar": "تتعلم لينا مهارات جديدة."
+        },
+        {
+          "id": 2,
+          "en": "She can ride a bike now.",
+          "ar": "أصبحت تستطيع ركوب الدراجة الآن."
+        },
+        {
+          "id": 3,
+          "en": "She says, 'I can do it!'",
+          "ar": "تقول: أستطيع فعل ذلك!"
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Can you speak English?",
+          "ar": "هل تستطيع التحدث بالإنجليزية؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Yes, I can speak a little English.",
+          "ar": "نعم، أستطيع التحدث بقليل من الإنجليزية."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "key": "i-cant",
+      "title": "I can't",
+      "meaning": "لا أستطيع",
+      "formula": "I can't + base verb",
+      "explanation": "Can't تعني عدم القدرة أو عدم الإمكانية، وقد تعني أن الظروف لا تسمح بالفعل، وليس بالضرورة أن المهارة غير موجودة.",
+      "explanationEn": "Can't expresses inability or something that is not possible right now.",
+      "contrast": "I can't come today (ظرف مؤقت) تختلف عن I can't swim (مهارة غير متاحة).",
+      "sourceIds": [
+        70
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I can't come today.",
+          "ar": "لا أستطيع الحضور اليوم.",
+          "context": "اعتذار عن موعد",
+          "icon": "📅",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I can't lift this box.",
+          "ar": "لا أستطيع رفع هذا الصندوق.",
+          "context": "صندوق ثقيل",
+          "icon": "📦",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I can't see the board.",
+          "ar": "لا أستطيع رؤية السبورة.",
+          "context": "الجلوس في الصف",
+          "icon": "👀",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I can't hear you clearly.",
+          "ar": "لا أستطيع سماعك بوضوح.",
+          "context": "مكالمة غير واضحة",
+          "icon": "📞",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Omar wants to move a heavy box.",
+          "ar": "يريد عمر نقل صندوق ثقيل."
+        },
+        {
+          "id": 2,
+          "en": "He tries, but he can't lift it.",
+          "ar": "يحاول، لكنه لا يستطيع رفعه."
+        },
+        {
+          "id": 3,
+          "en": "His brother comes to help.",
+          "ar": "يأتي أخوه للمساعدة."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Can you join us today?",
+          "ar": "هل تستطيع الانضمام إلينا اليوم؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Sorry, I can't come today.",
+          "ar": "آسف، لا أستطيع الحضور اليوم."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "key": "can-you",
+      "title": "Can you",
+      "meaning": "هل يمكنك / هل تستطيع",
+      "formula": "Can you + base verb + ... ?",
+      "explanation": "Can you يُستعمل للسؤال عن القدرة، ويُستخدم كثيرًا أيضًا لطلب المساعدة بطريقة مهذبة نسبيًا.",
+      "explanationEn": "Can you can ask about ability or request a helpful action.",
+      "contrast": "Can you swim? للسؤال عن القدرة؛ Can you help me? لطلب المساعدة.",
+      "sourceIds": [
+        705
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "Can you help me with this bag?",
+          "ar": "هل يمكنك مساعدتي بهذه الحقيبة؟",
+          "context": "حقيبة ثقيلة",
+          "icon": "👜",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "Can you open the window?",
+          "ar": "هل يمكنك فتح النافذة؟",
+          "context": "الهواء في الغرفة",
+          "icon": "🪟",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "Can you speak more slowly?",
+          "ar": "هل يمكنك التحدث ببطء أكثر؟",
+          "context": "فهم الكلام",
+          "icon": "🐢",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "Can you show me an example?",
+          "ar": "هل يمكنك أن تريني مثالًا؟",
+          "context": "التعلم من مثال",
+          "icon": "📝",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Sara cannot understand the new word.",
+          "ar": "لا تفهم سارة الكلمة الجديدة."
+        },
+        {
+          "id": 2,
+          "en": "She asks, 'Can you show me an example?'",
+          "ar": "تسأل: هل يمكنك أن تريني مثالًا؟"
+        },
+        {
+          "id": 3,
+          "en": "Her teacher explains with a picture.",
+          "ar": "تشرح المعلمة باستخدام صورة."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Can you help me, please?",
+          "ar": "هل يمكنك مساعدتي، من فضلك؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Of course, I can help you.",
+          "ar": "بالطبع، أستطيع مساعدتك."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "key": "can-i",
+      "title": "Can I",
+      "meaning": "هل يمكنني",
+      "formula": "Can I + base verb + ... ?",
+      "explanation": "Can I صيغة شائعة للسؤال عن الإذن أو عرض المساعدة. ويمكن أن يكون الرد Yes, you can أو Sorry, you can't.",
+      "explanationEn": "Can I asks for permission or offers to do something.",
+      "contrast": "Can I open the door? إذن؛ Can I help you? عرض للمساعدة.",
+      "sourceIds": [
+        20
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "Can I ask a question?",
+          "ar": "هل يمكنني طرح سؤال؟",
+          "context": "رفع اليد",
+          "icon": "🙋",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "Can I sit here?",
+          "ar": "هل يمكنني الجلوس هنا؟",
+          "context": "مقعد فارغ",
+          "icon": "🪑",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "Can I use your pen?",
+          "ar": "هل يمكنني استخدام قلمك؟",
+          "context": "استعارة قلم",
+          "icon": "🖊️",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "Can I help you?",
+          "ar": "هل يمكنني مساعدتك؟",
+          "context": "عرض المساعدة",
+          "icon": "🤝",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Maya wants to ask the teacher something.",
+          "ar": "تريد مايا سؤال المعلمة عن شيء."
+        },
+        {
+          "id": 2,
+          "en": "She raises her hand politely.",
+          "ar": "ترفع يدها بأدب."
+        },
+        {
+          "id": 3,
+          "en": "She asks, 'Can I ask a question?'",
+          "ar": "تسأل: هل يمكنني طرح سؤال؟"
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Can I use your book?",
+          "ar": "هل يمكنني استخدام كتابك؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Yes, you can use it.",
+          "ar": "نعم، يمكنك استخدامه."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "key": "is-it-okay-if",
+      "title": "Is it okay if",
+      "meaning": "هل من المقبول إذا",
+      "formula": "Is it okay if + subject + verb ... ?",
+      "explanation": "صيغة لطيفة لطلب الإذن. يبقى الفعل بعد الفاعل في صورته المناسبة ولا نضع do إضافية داخل العبارة.",
+      "explanationEn": "Is it okay if asks whether an action is acceptable.",
+      "contrast": "Is it okay if I leave? أقل مباشرة من Can I leave?",
+      "sourceIds": [
+        24
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "Is it okay if I open the window?",
+          "ar": "هل من المقبول إذا فتحت النافذة؟",
+          "context": "طلب فتح النافذة",
+          "icon": "🪟",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "Is it okay if we sit here?",
+          "ar": "هل من المقبول إذا جلسنا هنا؟",
+          "context": "الجلوس في الحديقة",
+          "icon": "🪑",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "Is it okay if I call you later?",
+          "ar": "هل يناسبك إذا اتصلت بك لاحقًا؟",
+          "context": "موعد الاتصال",
+          "icon": "📱",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "Is it okay if I take a photo?",
+          "ar": "هل من المقبول إذا التقطت صورة؟",
+          "context": "طلب التصوير",
+          "icon": "📷",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Ali wants to take a photo of the class project.",
+          "ar": "يريد علي تصوير مشروع الصف."
+        },
+        {
+          "id": 2,
+          "en": "He asks for permission first.",
+          "ar": "يطلب الإذن أولًا."
+        },
+        {
+          "id": 3,
+          "en": "His teacher says it is okay.",
+          "ar": "تخبره المعلمة أن ذلك مقبول."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Is it okay if I open the door?",
+          "ar": "هل من المقبول إذا فتحت الباب؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Yes, that's fine.",
+          "ar": "نعم، لا بأس بذلك."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "key": "you-may",
+      "title": "You may",
+      "meaning": "يمكنك / مسموح لك",
+      "formula": "You may + base verb",
+      "explanation": "تستعمل May للإذن الرسمي أو المهذب، وفي الاستعمال اليومي كثيرًا ما نستخدم can للإذن.",
+      "explanationEn": "You may gives permission in a polite or more formal way.",
+      "contrast": "You may leave = لديك إذن؛ You can leave قد تعني الإذن أو القدرة.",
+      "sourceIds": [
+        43
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "You may enter the room now.",
+          "ar": "يمكنك دخول الغرفة الآن.",
+          "context": "إذن الدخول",
+          "icon": "🚪",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "You may use this computer.",
+          "ar": "يُسمح لك باستخدام هذا الحاسوب.",
+          "context": "استخدام الحاسوب",
+          "icon": "💻",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "You may leave after the lesson.",
+          "ar": "يمكنك المغادرة بعد الدرس.",
+          "context": "نهاية الحصة",
+          "icon": "🏫",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "You may borrow this book.",
+          "ar": "يمكنك استعارة هذا الكتاب.",
+          "context": "المكتبة",
+          "icon": "📚",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "The lesson is finished.",
+          "ar": "انتهى الدرس."
+        },
+        {
+          "id": 2,
+          "en": "The teacher says, 'You may leave now.'",
+          "ar": "تقول المعلمة: يمكنكم المغادرة الآن."
+        },
+        {
+          "id": 3,
+          "en": "The students thank her and leave.",
+          "ar": "يشكرها الطلاب ويغادرون."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "May I borrow this book?",
+          "ar": "هل يمكنني استعارة هذا الكتاب؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Yes, you may borrow it.",
+          "ar": "نعم، يمكنك استعارته."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "key": "i-need",
+      "title": "I need",
+      "meaning": "أحتاج إلى",
+      "formula": "I need + noun",
+      "explanation": "Need يتبعها اسم عند طلب شيء أو بيان الحاجة إليه. أما الفعل فنتبع need بكلمة to.",
+      "explanationEn": "Need a thing? Use I need plus a noun.",
+      "contrast": "I need water = أحتاج ماءً؛ I need to drink water = أحتاج أن أشرب ماءً.",
+      "sourceIds": [
+        76
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I need some water.",
+          "ar": "أحتاج بعض الماء.",
+          "context": "بعد التمرين",
+          "icon": "💧",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I need a pencil.",
+          "ar": "أحتاج قلم رصاص.",
+          "context": "كتابة واجب",
+          "icon": "✏️",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I need more time.",
+          "ar": "أحتاج وقتًا إضافيًا.",
+          "context": "إنهاء مشروع",
+          "icon": "⏳",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I need your help.",
+          "ar": "أحتاج مساعدتك.",
+          "context": "طلب المساعدة",
+          "icon": "🤝",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Nour is doing her homework.",
+          "ar": "تؤدي نور واجبها."
+        },
+        {
+          "id": 2,
+          "en": "She cannot find her pencil.",
+          "ar": "لا تجد قلمها."
+        },
+        {
+          "id": 3,
+          "en": "She says, 'I need a pencil.'",
+          "ar": "تقول: أحتاج قلم رصاص."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "What do you need?",
+          "ar": "ماذا تحتاج؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "I need a little more time.",
+          "ar": "أحتاج قليلًا من الوقت الإضافي."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "key": "i-need-to",
+      "title": "I need to",
+      "meaning": "أحتاج أن / عليّ أن",
+      "formula": "I need to + base verb",
+      "explanation": "Need to تُستخدم عندما تكون الحاجة إلى القيام بفعل، وليس مجرد امتلاك شيء.",
+      "explanationEn": "Need to plus a verb expresses an action that is necessary.",
+      "contrast": "I need a break اسم؛ I need to rest فعل.",
+      "sourceIds": [
+        118
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I need to study tonight.",
+          "ar": "أحتاج أن أدرس الليلة.",
+          "context": "الاستعداد للاختبار",
+          "icon": "📘",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I need to call my mother.",
+          "ar": "أحتاج أن أتصل بأمي.",
+          "context": "مكالمة للأسرة",
+          "icon": "📞",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I need to finish this task.",
+          "ar": "أحتاج أن أنهي هذه المهمة.",
+          "context": "إنجاز مهمة",
+          "icon": "✅",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I need to drink water.",
+          "ar": "أحتاج أن أشرب الماء.",
+          "context": "بعد اللعب",
+          "icon": "💦",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Omar has a test tomorrow.",
+          "ar": "لدى عمر اختبار غدًا."
+        },
+        {
+          "id": 2,
+          "en": "He needs to study this evening.",
+          "ar": "يحتاج أن يدرس هذا المساء."
+        },
+        {
+          "id": 3,
+          "en": "He makes a plan and starts.",
+          "ar": "يضع خطة ويبدأ."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Do you need to leave now?",
+          "ar": "هل تحتاج إلى المغادرة الآن؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Yes, I need to catch the bus.",
+          "ar": "نعم، أحتاج أن ألحق بالحافلة."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "key": "i-have-to",
+      "title": "I have to",
+      "meaning": "يجب عليّ / مضطر إلى",
+      "formula": "I have to + base verb",
+      "explanation": "Have to تصف واجبًا أو ضرورة غالبًا بسبب ظروف أو قواعد خارجية. في الغائب: He has to.",
+      "explanationEn": "Have to expresses a requirement or obligation.",
+      "contrast": "I have to finish = واجب؛ I want to finish = رغبة.",
+      "sourceIds": [
+        4
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I have to do my homework.",
+          "ar": "يجب عليّ أداء واجبي.",
+          "context": "الواجب المدرسي",
+          "icon": "📚",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I have to leave at seven.",
+          "ar": "يجب عليّ المغادرة الساعة السابعة.",
+          "context": "موعد المغادرة",
+          "icon": "🕖",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I have to wear a helmet.",
+          "ar": "يجب عليّ ارتداء خوذة.",
+          "context": "السلامة على الدراجة",
+          "icon": "⛑️",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I have to finish this report.",
+          "ar": "يجب عليّ إنهاء هذا التقرير.",
+          "context": "تقرير العمل",
+          "icon": "🗂️",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Sara wants to play outside.",
+          "ar": "تريد سارة اللعب في الخارج."
+        },
+        {
+          "id": 2,
+          "en": "First, she has to finish her homework.",
+          "ar": "عليها أولًا إنهاء واجبها."
+        },
+        {
+          "id": 3,
+          "en": "She finishes it and goes out.",
+          "ar": "تنهيه وتخرج."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Can you play now?",
+          "ar": "هل يمكنك اللعب الآن؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Not yet, I have to study.",
+          "ar": "ليس بعد، يجب عليّ الدراسة."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "key": "dont-have-to",
+      "title": "I don't have to",
+      "meaning": "لست مضطرًا إلى",
+      "formula": "I don't have to + base verb",
+      "explanation": "Don't have to تعني عدم وجود إلزام، ولا تعني المنع. فرق مهم للغاية بين don't have to و mustn't.",
+      "explanationEn": "Don't have to means there is no requirement; the action is still allowed.",
+      "contrast": "You don't have to go = لست مضطرًا؛ You mustn't go = ممنوع أن تذهب.",
+      "sourceIds": [
+        23
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I don't have to wake up early tomorrow.",
+          "ar": "لست مضطرًا للاستيقاظ مبكرًا غدًا.",
+          "context": "يوم إجازة",
+          "icon": "🌤️",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I don't have to work today.",
+          "ar": "لست مضطرًا للعمل اليوم.",
+          "context": "عطلة عمل",
+          "icon": "🏡",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I don't have to bring my laptop.",
+          "ar": "لست مضطرًا لإحضار حاسوبي المحمول.",
+          "context": "حقيبة خفيفة",
+          "icon": "💻",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I don't have to pay for this ticket.",
+          "ar": "لست مضطرًا لدفع ثمن هذه التذكرة.",
+          "context": "تذكرة مجانية",
+          "icon": "🎟️",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Tomorrow is a school holiday.",
+          "ar": "غدًا عطلة مدرسية."
+        },
+        {
+          "id": 2,
+          "en": "Ali doesn't have to go to school.",
+          "ar": "ليس على علي الذهاب إلى المدرسة."
+        },
+        {
+          "id": 3,
+          "en": "He can enjoy a quiet morning.",
+          "ar": "يمكنه الاستمتاع بصباح هادئ."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Do I have to bring a notebook?",
+          "ar": "هل يجب علي إحضار دفتر؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "No, you don't have to bring one.",
+          "ar": "لا، لست مضطرًا لإحضار واحد."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "key": "i-must",
+      "title": "I must",
+      "meaning": "يجب عليّ بشدة",
+      "formula": "I must + base verb",
+      "explanation": "Must تدل على ضرورة قوية أو التزام يؤكده المتحدث، دون to قبل الفعل. وقد تعبر عن قاعدة أو تعليمات.",
+      "explanationEn": "Must expresses a strong obligation or necessity.",
+      "contrast": "I must leave تأكيد قوي؛ I have to leave إلزام أو ظرف.",
+      "sourceIds": [
+        288
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I must finish my work today.",
+          "ar": "يجب عليّ إنهاء عملي اليوم.",
+          "context": "موعد تسليم",
+          "icon": "📋",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I must remember this password.",
+          "ar": "يجب عليّ تذكر كلمة المرور هذه.",
+          "context": "الانتباه للمعلومات",
+          "icon": "🔐",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I must wear my seat belt.",
+          "ar": "يجب عليّ وضع حزام الأمان.",
+          "context": "سلامة السيارة",
+          "icon": "🚗",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I must tell the truth.",
+          "ar": "يجب عليّ قول الحقيقة.",
+          "context": "الصدق",
+          "icon": "🤍",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Maya is getting into the car.",
+          "ar": "تركب مايا السيارة."
+        },
+        {
+          "id": 2,
+          "en": "She says, 'I must wear my seat belt.'",
+          "ar": "تقول: يجب أن أضع حزام الأمان."
+        },
+        {
+          "id": 3,
+          "en": "She checks it before the trip.",
+          "ar": "تفحصه قبل الرحلة."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Must we wear seat belts?",
+          "ar": "هل يجب علينا وضع أحزمة الأمان؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Yes, we must wear them.",
+          "ar": "نعم، يجب علينا وضعها."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "key": "i-should",
+      "title": "I should",
+      "meaning": "من الأفضل أن / ينبغي لي",
+      "formula": "I should + base verb",
+      "explanation": "Should تستخدم للنصيحة أو الخيار الجيد، وعادة أقل إلزامًا من must أو have to.",
+      "explanationEn": "Should gives advice about what is sensible or right.",
+      "contrast": "I should rest نصيحة؛ I must rest ضرورة قوية.",
+      "sourceIds": [
+        61
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I should sleep earlier.",
+          "ar": "ينبغي أن أنام أبكر.",
+          "context": "تنظيم النوم",
+          "icon": "🛏️",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I should practice more.",
+          "ar": "ينبغي أن أتدرب أكثر.",
+          "context": "التدرب على الإنجليزية",
+          "icon": "✍️",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I should call my grandparents.",
+          "ar": "ينبغي أن أتصل بجدي وجدتي.",
+          "context": "زيارة واهتمام",
+          "icon": "📞",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I should drink more water.",
+          "ar": "ينبغي أن أشرب ماءً أكثر.",
+          "context": "العناية بالصحة",
+          "icon": "💧",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Omar feels tired in class.",
+          "ar": "يشعر عمر بالتعب في الصف."
+        },
+        {
+          "id": 2,
+          "en": "He thinks he should sleep earlier.",
+          "ar": "يعتقد أنه ينبغي أن ينام أبكر."
+        },
+        {
+          "id": 3,
+          "en": "Tonight, he changes his routine.",
+          "ar": "يغير روتينه الليلة."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "What should I do?",
+          "ar": "ماذا ينبغي عليّ أن أفعل؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "I think you should take a break.",
+          "ar": "أعتقد أنه ينبغي لك أخذ استراحة."
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "key": "you-should",
+      "title": "You should",
+      "meaning": "ينبغي لك / أنصحك أن",
+      "formula": "You should + base verb",
+      "explanation": "صيغة مباشرة ولطيفة نسبيًا لتقديم نصيحة لشخص آخر، وليست أمرًا ملزمًا في كل الأحوال.",
+      "explanationEn": "You should gives another person a recommendation.",
+      "contrast": "You should ask = نصيحة؛ You must ask = إلزام قوي.",
+      "sourceIds": [
+        325
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "You should ask the teacher.",
+          "ar": "ينبغي لك سؤال المعلم.",
+          "context": "سؤال المعلم",
+          "icon": "🙋",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "You should take a short break.",
+          "ar": "ينبغي لك أخذ استراحة قصيرة.",
+          "context": "الاستراحة",
+          "icon": "☕",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "You should check your answer.",
+          "ar": "ينبغي لك مراجعة إجابتك.",
+          "context": "مراجعة الواجب",
+          "icon": "✔️",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "You should try again.",
+          "ar": "ينبغي لك المحاولة مرة أخرى.",
+          "context": "التشجيع على المحاولة",
+          "icon": "🌟",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Sara makes a small mistake.",
+          "ar": "ترتكب سارة خطأً بسيطًا."
+        },
+        {
+          "id": 2,
+          "en": "Her friend says, 'You should try again.'",
+          "ar": "يقول صديقها: ينبغي أن تحاولي مجددًا."
+        },
+        {
+          "id": 3,
+          "en": "She smiles and tries once more.",
+          "ar": "تبتسم وتحاول مرة أخرى."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "I don't understand this lesson.",
+          "ar": "لا أفهم هذا الدرس."
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "You should ask the teacher.",
+          "ar": "ينبغي لك سؤال المعلم."
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "key": "lets",
+      "title": "Let's",
+      "meaning": "هيا بنا / لنفعل",
+      "formula": "Let's + base verb",
+      "explanation": "Let's اقتراح للقيام بفعل معًا. تأتي بعدها صيغة الفعل الأساسية مباشرة.",
+      "explanationEn": "Let's suggests something we can do together.",
+      "contrast": "Let's go = هيا بنا؛ Let me go = دعني أذهب.",
+      "sourceIds": [
+        26
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "Let's study together.",
+          "ar": "هيا ندرس معًا.",
+          "context": "مذاكرة جماعية",
+          "icon": "📚",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "Let's play in the park.",
+          "ar": "هيا نلعب في الحديقة.",
+          "context": "وقت اللعب",
+          "icon": "🌳",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "Let's start the lesson.",
+          "ar": "لنبدأ الدرس.",
+          "context": "بداية الحصة",
+          "icon": "📖",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "Let's take a break.",
+          "ar": "لنأخذ استراحة.",
+          "context": "استراحة قصيرة",
+          "icon": "☕",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Ali and Nour finish their homework.",
+          "ar": "ينهي علي ونور واجبهما."
+        },
+        {
+          "id": 2,
+          "en": "Ali says, 'Let's play in the park.'",
+          "ar": "يقول علي: هيا نلعب في الحديقة."
+        },
+        {
+          "id": 3,
+          "en": "Nour agrees and takes her ball.",
+          "ar": "توافق نور وتحضر كرتها."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "What shall we do now?",
+          "ar": "ماذا نفعل الآن؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Let's start with a short game.",
+          "ar": "هيا نبدأ بلعبة قصيرة."
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "key": "let-me",
+      "title": "Let me",
+      "meaning": "دعني / اسمح لي",
+      "formula": "Let me + base verb",
+      "explanation": "Let me تستخدم لعرض قيام المتحدث بفعل، أو طلب السماح له بالقيام به. لا نضع to بعدها.",
+      "explanationEn": "Let me offers to do something or asks to do it.",
+      "contrast": "Let me help you = دعني أساعدك؛ Let's help = هيا نساعد.",
+      "sourceIds": [
+        34
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "Let me help you.",
+          "ar": "دعني أساعدك.",
+          "context": "مساعدة في حمل الأغراض",
+          "icon": "🤝",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "Let me explain the answer.",
+          "ar": "دعني أشرح الإجابة.",
+          "context": "تفسير درس",
+          "icon": "📝",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "Let me open the door.",
+          "ar": "دعني أفتح الباب.",
+          "context": "فتح الباب",
+          "icon": "🚪",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "Let me check my schedule.",
+          "ar": "دعني أتحقق من جدولي.",
+          "context": "مراجعة المواعيد",
+          "icon": "📅",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "The box is heavy.",
+          "ar": "الصندوق ثقيل."
+        },
+        {
+          "id": 2,
+          "en": "Omar says, 'Let me help you.'",
+          "ar": "يقول عمر: دعني أساعدك."
+        },
+        {
+          "id": 3,
+          "en": "Together, they carry it safely.",
+          "ar": "يحملانه معًا بأمان."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "This bag is very heavy.",
+          "ar": "هذه الحقيبة ثقيلة جدًا."
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Let me carry it for you.",
+          "ar": "دعني أحملها عنك."
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "key": "please",
+      "title": "Please",
+      "meaning": "من فضلك",
+      "formula": "Please + base verb / Could you + verb + please?",
+      "explanation": "Please تجعل الطلب المباشر أكثر تهذيبًا. يمكن وضعها في البداية أو النهاية؛ السياق والنبرة مهمان.",
+      "explanationEn": "Please makes a request more polite, though tone and context also matter.",
+      "contrast": "Open the door أمر مباشر؛ Please open the door طلب مهذب.",
+      "sourceIds": [
+        30
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "Close the door, please.",
+          "ar": "من فضلك أغلق الباب.",
+          "context": "إغلاق الباب",
+          "icon": "🚪",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "Wait a moment, please.",
+          "ar": "من فضلك انتظر لحظة.",
+          "context": "الانتظار قليلًا",
+          "icon": "⏱️",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "Speak slowly, please.",
+          "ar": "من فضلك تحدث ببطء.",
+          "context": "فهم الشرح",
+          "icon": "🐢",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "Show me the way, please.",
+          "ar": "من فضلك أرشدني إلى الطريق.",
+          "context": "طلب الاتجاهات",
+          "icon": "🧭",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "A visitor cannot find the library.",
+          "ar": "لا يستطيع زائر العثور على المكتبة."
+        },
+        {
+          "id": 2,
+          "en": "He asks, 'Show me the way, please.'",
+          "ar": "يسأل: من فضلك أرشدني إلى الطريق."
+        },
+        {
+          "id": 3,
+          "en": "A student points to the library.",
+          "ar": "يشير طالب إلى المكتبة."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Can you help me, please?",
+          "ar": "هل يمكنك مساعدتي من فضلك؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Yes, of course.",
+          "ar": "نعم، بالتأكيد."
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "key": "would-you-like",
+      "title": "Would you like",
+      "meaning": "هل ترغب في / هل تود",
+      "formula": "Would you like + noun ... ?",
+      "explanation": "تستخدم لتقديم شيء بطريقة مهذبة، مثل مشروب أو طعام أو مساعدة. وهي تختلف عن Do you like التي تسأل عن التفضيل العام.",
+      "explanationEn": "Would you like offers someone something politely.",
+      "contrast": "Do you like tea? تفضيل عام؛ Would you like tea? عرض الآن.",
+      "sourceIds": [
+        13
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "Would you like some tea?",
+          "ar": "هل ترغب في بعض الشاي؟",
+          "context": "تقديم الشاي",
+          "icon": "🍵",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "Would you like a sandwich?",
+          "ar": "هل تود شطيرة؟",
+          "context": "عرض وجبة",
+          "icon": "🥪",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "Would you like some water?",
+          "ar": "هل ترغب في بعض الماء؟",
+          "context": "تقديم ماء",
+          "icon": "💧",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "Would you like another book?",
+          "ar": "هل ترغب في كتاب آخر؟",
+          "context": "عرض كتاب",
+          "icon": "📚",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "The guest sits at the table.",
+          "ar": "يجلس الضيف إلى الطاولة."
+        },
+        {
+          "id": 2,
+          "en": "Nour asks, 'Would you like some tea?'",
+          "ar": "تسأل نور: هل ترغب في بعض الشاي؟"
+        },
+        {
+          "id": 3,
+          "en": "The guest thanks her kindly.",
+          "ar": "يشكرها الضيف بلطف."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Would you like a cup of tea?",
+          "ar": "هل ترغب في كوب شاي؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Yes, please. Thank you.",
+          "ar": "نعم، من فضلك. شكرًا لك."
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "key": "would-you-like-to",
+      "title": "Would you like to",
+      "meaning": "هل تود أن / هل ترغب أن",
+      "formula": "Would you like to + base verb ... ?",
+      "explanation": "تستخدم لدعوة شخص للقيام بفعل بطريقة مهذبة، ويتبعها الفعل الأساسي مباشرة بعد to.",
+      "explanationEn": "Would you like to politely invites someone to do an action.",
+      "contrast": "Would you like tea? اسم؛ Would you like to drink tea? فعل.",
+      "sourceIds": [
+        14
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "Would you like to join us?",
+          "ar": "هل تود الانضمام إلينا؟",
+          "context": "دعوة للانضمام",
+          "icon": "👥",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "Would you like to play a game?",
+          "ar": "هل ترغب في لعب لعبة؟",
+          "context": "دعوة للعب",
+          "icon": "🎲",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "Would you like to study together?",
+          "ar": "هل تود أن ندرس معًا؟",
+          "context": "دعوة للمذاكرة",
+          "icon": "📘",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "Would you like to ask a question?",
+          "ar": "هل تود طرح سؤال؟",
+          "context": "فتح باب الأسئلة",
+          "icon": "🙋",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "The group is planning a game.",
+          "ar": "تخطط المجموعة للعب لعبة."
+        },
+        {
+          "id": 2,
+          "en": "Ali asks, 'Would you like to join us?'",
+          "ar": "يسأل علي: هل تود الانضمام إلينا؟"
+        },
+        {
+          "id": 3,
+          "en": "His friend smiles and says yes.",
+          "ar": "يبتسم صديقه ويقول نعم."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Would you like to study together?",
+          "ar": "هل تود أن ندرس معًا؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Yes, I'd love to.",
+          "ar": "نعم، يسعدني ذلك."
+        }
+      ]
+    }
+  ],
+  "chapters": [
+    {
+      "id": 1,
+      "key": "helping-in-class",
+      "title": "Helping in Class",
+      "titleAr": "المساعدة داخل الصف",
+      "icon": "🏫",
+      "lines": [
+        {
+          "id": 1,
+          "en": "I can answer this question.",
+          "ar": "أستطيع الإجابة عن هذا السؤال."
+        },
+        {
+          "id": 2,
+          "en": "Can I ask a question?",
+          "ar": "هل يمكنني طرح سؤال؟"
+        },
+        {
+          "id": 3,
+          "en": "Can you show me an example?",
+          "ar": "هل يمكنك أن تريني مثالًا؟"
+        },
+        {
+          "id": 4,
+          "en": "Speak slowly, please.",
+          "ar": "من فضلك تحدث ببطء."
+        },
+        {
+          "id": 5,
+          "en": "You should try again.",
+          "ar": "ينبغي لك المحاولة مجددًا."
+        },
+        {
+          "id": 6,
+          "en": "Let's study together.",
+          "ar": "هيا ندرس معًا."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "key": "a-busy-afternoon",
+      "title": "A Busy Afternoon",
+      "titleAr": "ظهيرة مزدحمة",
+      "icon": "🧰",
+      "lines": [
+        {
+          "id": 1,
+          "en": "I need to finish this task.",
+          "ar": "أحتاج إلى إنهاء هذه المهمة."
+        },
+        {
+          "id": 2,
+          "en": "I have to do my homework.",
+          "ar": "يجب عليّ أداء واجبي."
+        },
+        {
+          "id": 3,
+          "en": "I can't lift this box.",
+          "ar": "لا أستطيع رفع هذا الصندوق."
+        },
+        {
+          "id": 4,
+          "en": "Let me help you.",
+          "ar": "دعني أساعدك."
+        },
+        {
+          "id": 5,
+          "en": "You don't have to do it alone.",
+          "ar": "لست مضطرًا لفعل ذلك وحدك."
+        },
+        {
+          "id": 6,
+          "en": "I should take a short break.",
+          "ar": "ينبغي أن آخذ استراحة قصيرة."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "key": "a-polite-invitation",
+      "title": "A Polite Invitation",
+      "titleAr": "دعوة لطيفة",
+      "icon": "☕",
+      "lines": [
+        {
+          "id": 1,
+          "en": "Would you like to join us?",
+          "ar": "هل تود الانضمام إلينا؟"
+        },
+        {
+          "id": 2,
+          "en": "Yes, I'd love to.",
+          "ar": "نعم، يسعدني ذلك."
+        },
+        {
+          "id": 3,
+          "en": "Would you like some tea?",
+          "ar": "هل ترغب في بعض الشاي؟"
+        },
+        {
+          "id": 4,
+          "en": "Can I sit here?",
+          "ar": "هل يمكنني الجلوس هنا؟"
+        },
+        {
+          "id": 5,
+          "en": "You may sit here.",
+          "ar": "يمكنك الجلوس هنا."
+        },
+        {
+          "id": 6,
+          "en": "Let's start the game.",
+          "ar": "هيا نبدأ اللعبة."
+        }
+      ]
+    }
+  ]
+}

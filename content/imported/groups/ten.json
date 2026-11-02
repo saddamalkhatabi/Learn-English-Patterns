@@ -1,0 +1,1581 @@
+{
+  "schema": 1,
+  "group": "advanced-expression-and-complex-sentences",
+  "title": "المجموعة العاشرة: التعبير المركب وبناء الجمل المتقدمة",
+  "status": "18 authored advanced patterns; 72 translated scenes, 54 pattern story lines, 36 dialogue turns, and three connected chapters; realistic images deferred; voice verified only after CI generation",
+  "items": [
+    {
+      "id": 1,
+      "key": "what-i-mean-is-1",
+      "title": "What I mean is",
+      "meaning": "ما أقصده هو",
+      "formula": "What I mean is + clause",
+      "explanation": "نستعمل هذا النمط لتوضيح فكرة سابقة أو تصحيح سوء فهم، ثم نذكر ما نعنيه بجملة واضحة.",
+      "explanationEn": "Use what I mean is to clarify a previous statement or explain your intended meaning.",
+      "contrast": "What I mean is يوضح كلامًا سبق؛ I think يقدم رأيًا جديدًا.",
+      "sourceIds": [
+        365,
+        465,
+        36
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "What I mean is we need more practice.",
+          "ar": "ما أقصده هو أننا نحتاج إلى تدريب أكثر.",
+          "context": "شرح خطة دراسة",
+          "icon": "📚",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "What I mean is the room needs more light.",
+          "ar": "ما أقصده هو أن الغرفة تحتاج إلى إضاءة أكثر.",
+          "context": "مناقشة تصميم",
+          "icon": "💡",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "What I mean is we should leave earlier.",
+          "ar": "ما أقصده هو أننا ينبغي أن نغادر أبكر.",
+          "context": "تنظيم موعد",
+          "icon": "⏰",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "What I mean is the first answer was correct.",
+          "ar": "ما أقصده هو أن الإجابة الأولى كانت صحيحة.",
+          "context": "مراجعة إجابة",
+          "icon": "📝",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Nabil suggested changing the class schedule.",
+          "ar": "اقترح نبيل تغيير جدول الحصص."
+        },
+        {
+          "id": 2,
+          "en": "His friend thought he wanted fewer lessons.",
+          "ar": "اعتقد صديقه أنه يريد حصصًا أقل."
+        },
+        {
+          "id": 3,
+          "en": "Nabil explained what he really meant.",
+          "ar": "أوضح نبيل ما قصده بالفعل."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Do you want us to cancel the lesson?",
+          "ar": "هل تريد منا إلغاء الدرس؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "No. What I mean is we need a shorter break.",
+          "ar": "لا، ما أقصده هو أننا نحتاج إلى استراحة أقصر."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "key": "what-matters-is-2",
+      "title": "What matters is",
+      "meaning": "ما يهم هو",
+      "formula": "What matters is + noun or clause",
+      "explanation": "نركّز على الشيء الأهم في موقف معقد، وقد يتبعه اسم أو جملة كاملة.",
+      "explanationEn": "Use what matters is to identify the most important point in a situation.",
+      "contrast": "What matters is the effort يبرز الأولوية؛ What I mean is يشرح المقصود.",
+      "sourceIds": [
+        36,
+        289,
+        465
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "What matters is that everyone feels safe.",
+          "ar": "المهم هو أن يشعر الجميع بالأمان.",
+          "context": "سلامة المشاركين",
+          "icon": "🛟",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "What matters is our progress over time.",
+          "ar": "ما يهم هو تقدمنا مع الوقت.",
+          "context": "تقييم التعلم",
+          "icon": "📈",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "What matters is that we keep trying.",
+          "ar": "المهم هو أن نواصل المحاولة.",
+          "context": "حل تمرين",
+          "icon": "🧩",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "What matters is the quality of our work.",
+          "ar": "ما يهم هو جودة عملنا.",
+          "context": "إنجاز مشروع",
+          "icon": "✅",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "The team lost an important game.",
+          "ar": "خسر الفريق مباراة مهمة."
+        },
+        {
+          "id": 2,
+          "en": "The players were disappointed with the score.",
+          "ar": "شعر اللاعبون بخيبة أمل بسبب النتيجة."
+        },
+        {
+          "id": 3,
+          "en": "Their coach reminded them that effort mattered most.",
+          "ar": "ذكّرهم مدربهم بأن الجهد هو الأهم."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Did our project have to be perfect?",
+          "ar": "هل كان يجب أن يكون مشروعنا مثاليًا؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "No. What matters is that we learned something.",
+          "ar": "لا، المهم أننا تعلمنا شيئًا."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "key": "the-reason-is-that-3",
+      "title": "The reason is that",
+      "meaning": "السبب هو أن",
+      "formula": "The reason is that + clause",
+      "explanation": "نقدّم سببًا واضحًا ومحددًا، وتأتي بعد that جملة كاملة، بخلاف because of التي يليها اسم.",
+      "explanationEn": "Use the reason is that before a full clause to explicitly explain a cause.",
+      "contrast": "The reason is that the bus was late شرح مفصل؛ because of traffic يتبعها اسم.",
+      "sourceIds": [
+        256,
+        184,
+        869
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "The reason is that our team needs more time.",
+          "ar": "السبب هو أن فريقنا يحتاج إلى وقت إضافي.",
+          "context": "موعد تسليم",
+          "icon": "📆",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "The reason is that the library closes early.",
+          "ar": "السبب هو أن المكتبة تغلق مبكرًا.",
+          "context": "جدول المكتبة",
+          "icon": "📚",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "The reason is that we want better results.",
+          "ar": "السبب هو أننا نريد نتائج أفضل.",
+          "context": "خطة تحسين",
+          "icon": "📊",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "The reason is that the road is being repaired.",
+          "ar": "السبب هو أن الطريق يخضع للإصلاح.",
+          "context": "تغير المسار",
+          "icon": "🚧",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Lama changed the meeting location.",
+          "ar": "غيرت لمى مكان الاجتماع."
+        },
+        {
+          "id": 2,
+          "en": "Her colleagues asked why the plan changed.",
+          "ar": "سأل زملاؤها لماذا تغيرت الخطة."
+        },
+        {
+          "id": 3,
+          "en": "She explained that the old room was unavailable.",
+          "ar": "أوضحت أن الغرفة القديمة غير متاحة."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Why did you move the meeting?",
+          "ar": "لماذا نقلت الاجتماع؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "The reason is that the first room is too small.",
+          "ar": "السبب هو أن الغرفة الأولى صغيرة جدًا."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "key": "i-wonder-if-4",
+      "title": "I wonder if",
+      "meaning": "أتساءل إن كان",
+      "formula": "I wonder if + statement word order",
+      "explanation": "نستخدمه لطرح تساؤل غير مباشر أو مهذب، وترتيب الكلمات بعد if يكون ترتيب جملة خبرية لا سؤال مباشر.",
+      "explanationEn": "Use I wonder if to express curiosity or uncertainty. Keep normal statement word order after if.",
+      "contrast": "I wonder if she is ready سؤال غير مباشر؛ Is she ready? سؤال مباشر.",
+      "sourceIds": [
+        141,
+        755,
+        436
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I wonder if the museum is open today.",
+          "ar": "أتساءل إن كان المتحف مفتوحًا اليوم.",
+          "context": "زيارة متحف",
+          "icon": "🏛️",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I wonder if she received my message.",
+          "ar": "أتساءل هل استلمت رسالتي.",
+          "context": "رسالة هاتف",
+          "icon": "📱",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I wonder if this method will work.",
+          "ar": "أتساءل إن كانت هذه الطريقة ستنجح.",
+          "context": "تجربة جديدة",
+          "icon": "🧪",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I wonder if we have enough time.",
+          "ar": "أتساءل إن كان لدينا وقت كافٍ.",
+          "context": "التحضير لاختبار",
+          "icon": "⌛",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Mariam planned to visit the science museum.",
+          "ar": "خططت مريم لزيارة متحف العلوم."
+        },
+        {
+          "id": 2,
+          "en": "She had not checked the opening hours.",
+          "ar": "لم تتحقق بعد من ساعات العمل."
+        },
+        {
+          "id": 3,
+          "en": "She wondered if the museum was open.",
+          "ar": "تساءلت إن كان المتحف مفتوحًا."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Are you sure the class starts at nine?",
+          "ar": "هل أنت متأكد أن الحصة تبدأ في التاسعة؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "I'm not sure. I wonder if it starts at ten.",
+          "ar": "لست متأكدًا. أتساءل هل تبدأ في العاشرة."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "key": "i-wonder-how-5",
+      "title": "I wonder how",
+      "meaning": "أتساءل كيف",
+      "formula": "I wonder how + statement word order",
+      "explanation": "نستخدمه للتساؤل عن الطريقة بصورة غير مباشرة، فلا نعكس الفاعل والفعل المساعد بعد how.",
+      "explanationEn": "Use I wonder how to ask indirectly about a process or method, with normal statement order.",
+      "contrast": "I wonder how it works سؤال غير مباشر؛ How does it work? سؤال مباشر.",
+      "sourceIds": [
+        350,
+        560,
+        749
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I wonder how this machine works.",
+          "ar": "أتساءل كيف تعمل هذه الآلة.",
+          "context": "مختبر العلوم",
+          "icon": "⚙️",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I wonder how she learned so quickly.",
+          "ar": "أتساءل كيف تعلمت بهذه السرعة.",
+          "context": "طرق التعلم",
+          "icon": "📚",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I wonder how we can solve this problem.",
+          "ar": "أتساءل كيف يمكننا حل هذه المشكلة.",
+          "context": "اجتماع فريق",
+          "icon": "🧠",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I wonder how birds find their way home.",
+          "ar": "أتساءل كيف تجد الطيور طريقها إلى المنزل.",
+          "context": "مراقبة الطبيعة",
+          "icon": "🐦",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Ali saw a small robot move across a table.",
+          "ar": "رأى علي روبوتًا صغيرًا يتحرك فوق الطاولة."
+        },
+        {
+          "id": 2,
+          "en": "He wanted to understand its sensors.",
+          "ar": "أراد فهم طريقة عمل حسّاساته."
+        },
+        {
+          "id": 3,
+          "en": "He wondered how the robot avoided obstacles.",
+          "ar": "تساءل كيف يتجنب الروبوت العوائق."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Do you understand this new tool?",
+          "ar": "هل تفهم هذه الأداة الجديدة؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Not yet. I wonder how it saves the data.",
+          "ar": "ليس بعد. أتساءل كيف تحفظ البيانات."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "key": "could-you-tell-me-whether-6",
+      "title": "Could you tell me whether",
+      "meaning": "هل يمكنك إخباري ما إذا",
+      "formula": "Could you tell me whether + statement clause",
+      "explanation": "طلب معلومات مهذب يتبعه سؤال غير مباشر بترتيب خبري؛ ويمكن استعمال if غالبًا بدل whether في الأسئلة الثنائية.",
+      "explanationEn": "Use could you tell me whether for a polite indirect yes-or-no question. Follow whether with normal statement word order.",
+      "contrast": "Could you tell me whether it is open صيغة غير مباشرة؛ Is it open? سؤال مباشر.",
+      "sourceIds": [
+        436,
+        962,
+        649
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "Could you tell me whether the office is open?",
+          "ar": "هل يمكنك إخباري ما إذا كان المكتب مفتوحًا؟",
+          "context": "استعلام خدمة",
+          "icon": "🏢",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "Could you tell me whether this bus goes downtown?",
+          "ar": "هل يمكنك إخباري ما إذا كانت هذه الحافلة تذهب إلى وسط المدينة؟",
+          "context": "محطة حافلات",
+          "icon": "🚌",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "Could you tell me whether the course is free?",
+          "ar": "هل يمكنك إخباري ما إذا كانت الدورة مجانية؟",
+          "context": "استفسار تدريبي",
+          "icon": "🎓",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "Could you tell me whether my application arrived?",
+          "ar": "هل يمكنك إخباري ما إذا كان طلبي قد وصل؟",
+          "context": "متابعة طلب",
+          "icon": "📄",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Hadi needed information about a training course.",
+          "ar": "احتاج هادي إلى معلومات عن دورة تدريبية."
+        },
+        {
+          "id": 2,
+          "en": "He called the learning center.",
+          "ar": "اتصل بمركز التدريب."
+        },
+        {
+          "id": 3,
+          "en": "He asked politely whether the course was available online.",
+          "ar": "سأل بأدب ما إذا كانت الدورة متاحة عبر الإنترنت."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Could you tell me whether the course starts today?",
+          "ar": "هل يمكنك إخباري هل تبدأ الدورة اليوم؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Yes, it begins this afternoon.",
+          "ar": "نعم، تبدأ بعد الظهر."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "key": "the-person-who-7",
+      "title": "The person who",
+      "meaning": "الشخص الذي",
+      "formula": "the person who + verb phrase",
+      "explanation": "نربط اسم شخص بمعلومة تصفه باستخدام who، بدل كتابة جملتين منفصلتين عنه.",
+      "explanationEn": "Use who in a relative clause to describe or identify a person.",
+      "contrast": "The person who helped me يصف شخصًا؛ The place where we met يصف مكانًا.",
+      "sourceIds": [
+        945,
+        185,
+        35
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "The person who helped me is my neighbor.",
+          "ar": "الشخص الذي ساعدني هو جاري.",
+          "context": "مساعدة جار",
+          "icon": "🤝",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "The person who teaches science is very patient.",
+          "ar": "الشخص الذي يدرس العلوم صبور جدًا.",
+          "context": "مدرسة العلوم",
+          "icon": "🔬",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "The person who called yesterday is my cousin.",
+          "ar": "الشخص الذي اتصل أمس هو ابن عمي.",
+          "context": "اتصال عائلي",
+          "icon": "📞",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "The person who won the race trained every day.",
+          "ar": "الشخص الذي فاز بالسباق كان يتدرب كل يوم.",
+          "context": "سباق مدرسي",
+          "icon": "🏅",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Our town held a small reading festival.",
+          "ar": "أقامت بلدتنا مهرجان قراءة صغيرًا."
+        },
+        {
+          "id": 2,
+          "en": "A volunteer helped children choose books.",
+          "ar": "ساعد متطوع الأطفال على اختيار كتب."
+        },
+        {
+          "id": 3,
+          "en": "Everyone thanked the person who organized the event.",
+          "ar": "شكر الجميع الشخص الذي نظّم الفعالية."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Who is standing beside the teacher?",
+          "ar": "من يقف بجوار المعلم؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "He's the person who designed the poster.",
+          "ar": "إنه الشخص الذي صمم الملصق."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "key": "the-book-that-8",
+      "title": "The book that",
+      "meaning": "الكتاب الذي",
+      "formula": "the thing or book that + relative clause",
+      "explanation": "نستخدم that لإضافة معلومة عن شيء، وقد يكون مفعولًا في جملة الوصل ويمكن حذفه أحيانًا، بخلاف who للأشخاص عادة.",
+      "explanationEn": "Use that in a relative clause to identify a thing. It can sometimes be omitted when it is the object.",
+      "contrast": "The book that I borrowed لوصف كتاب؛ The person who lent it لوصف شخص.",
+      "sourceIds": [
+        465,
+        998,
+        945
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "The book that I borrowed is very interesting.",
+          "ar": "الكتاب الذي استعرته ممتع جدًا.",
+          "context": "مكتبة المدرسة",
+          "icon": "📖",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "The song that we heard was beautiful.",
+          "ar": "الأغنية التي سمعناها جميلة.",
+          "context": "حفل موسيقي",
+          "icon": "🎵",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "The phone that she bought works well.",
+          "ar": "الهاتف الذي اشترته يعمل جيدًا.",
+          "context": "هاتف جديد",
+          "icon": "📱",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "The picture that he drew tells a story.",
+          "ar": "الصورة التي رسمها تروي قصة.",
+          "context": "معرض رسم",
+          "icon": "🎨",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Lina borrowed a mystery novel.",
+          "ar": "استعارت لينا رواية غموض."
+        },
+        {
+          "id": 2,
+          "en": "She finished it in two days.",
+          "ar": "أنهتها خلال يومين."
+        },
+        {
+          "id": 3,
+          "en": "She recommended the book that she had enjoyed.",
+          "ar": "أوصت بالكتاب الذي استمتعت به."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Which story should I read next?",
+          "ar": "أي قصة ينبغي أن أقرأ بعد ذلك؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Read the story that our teacher recommended.",
+          "ar": "اقرأ القصة التي أوصى بها معلمنا."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "key": "the-place-where-9",
+      "title": "The place where",
+      "meaning": "المكان الذي",
+      "formula": "the place where + subject + verb",
+      "explanation": "نصف مكانًا وقع فيه حدث بواسطة where؛ لا نضيف in بعده عادة إذا أدى where معنى المكان بالفعل.",
+      "explanationEn": "Use where in a relative clause to identify a place and explain what happens there.",
+      "contrast": "The place where we met مكان؛ The day when we met زمان.",
+      "sourceIds": [
+        884,
+        875,
+        887
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "We revisited the place where we first met. It is now a library.",
+          "ar": "عدنا إلى المكان الذي التقينا فيه أول مرة. وقد أصبح مكتبة الآن.",
+          "context": "ذكرى مكان",
+          "icon": "🏛️",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "She works at the café where we met last summer.",
+          "ar": "تعمل في المقهى الذي التقينا فيه الصيف الماضي.",
+          "context": "مقهى الحي",
+          "icon": "☕",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I often think about the village where I grew up.",
+          "ar": "كثيرًا ما أفكر في القرية التي نشأت فيها.",
+          "context": "ذكريات الطفولة",
+          "icon": "🏡",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "We like the room where we study because it has large windows.",
+          "ar": "نحب الغرفة التي ندرس فيها لأنها ذات نوافذ كبيرة.",
+          "context": "غرفة الدراسة",
+          "icon": "🪟",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Khaled visited his childhood neighborhood.",
+          "ar": "زار خالد حي طفولته."
+        },
+        {
+          "id": 2,
+          "en": "He walked past a small playground.",
+          "ar": "مر بساحة لعب صغيرة."
+        },
+        {
+          "id": 3,
+          "en": "He remembered the place where he learned to ride a bike.",
+          "ar": "تذكر المكان الذي تعلم فيه ركوب الدراجة."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Is this the building you mentioned?",
+          "ar": "هل هذا المبنى الذي ذكرته؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Yes, it's the place where I took my first course.",
+          "ar": "نعم، إنه المكان الذي أخذت فيه دورتي الأولى."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "key": "the-day-when-10",
+      "title": "The day when",
+      "meaning": "اليوم الذي",
+      "formula": "the day when + subject + verb",
+      "explanation": "نحدد زمن حدث باستخدام when في جملة وصل؛ يمكن أحيانًا حذف when بعد كلمات الزمن مثل day.",
+      "explanationEn": "Use when in a relative clause to describe a particular day or time.",
+      "contrast": "The day when we met زمن؛ The place where we met مكان.",
+      "sourceIds": [
+        87,
+        728,
+        932
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I will always remember the day when we graduated.",
+          "ar": "سأتذكر دائمًا اليوم الذي تخرجنا فيه.",
+          "context": "يوم التخرج",
+          "icon": "🎓",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "We recall the day when she arrived in the rain.",
+          "ar": "نتذكر اليوم الذي وصلت فيه تحت المطر.",
+          "context": "استقبال ضيف",
+          "icon": "☔",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I still think about the year when I started school.",
+          "ar": "ما زلت أفكر في السنة التي بدأت فيها المدرسة.",
+          "context": "بداية الدراسة",
+          "icon": "🏫",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "We all remember the moment when he smiled.",
+          "ar": "نتذكر جميعًا اللحظة التي ابتسم فيها.",
+          "context": "لحظة جميلة",
+          "icon": "😊",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Nora looked through her old photographs.",
+          "ar": "تصفحت نورا صورها القديمة."
+        },
+        {
+          "id": 2,
+          "en": "She found a picture from graduation.",
+          "ar": "وجدت صورة من يوم التخرج."
+        },
+        {
+          "id": 3,
+          "en": "She remembered the day when her family celebrated.",
+          "ar": "تذكرت اليوم الذي احتفلت فيه عائلتها."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Do you remember our first lesson?",
+          "ar": "هل تتذكر أول درس لنا؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Yes, I remember the day when we started.",
+          "ar": "نعم، أتذكر اليوم الذي بدأنا فيه."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "key": "i-wish-i-could-11",
+      "title": "I wish I could",
+      "meaning": "أتمنى لو استطعت",
+      "formula": "I wish I could + base verb",
+      "explanation": "نعبر عن رغبة في قدرة أو إمكانية غير متاحة الآن أو يصعب تحقيقها، ولا تعني أننا سنفعل ذلك فعلًا.",
+      "explanationEn": "Use I wish I could to express a present wish about an ability or opportunity that is not available.",
+      "contrast": "I wish I could travel أمنية حاليًا؛ I'm going to travel خطة فعلية.",
+      "sourceIds": [
+        254,
+        400
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I wish I could visit my grandparents today.",
+          "ar": "أتمنى لو أستطيع زيارة جدي وجدتي اليوم.",
+          "context": "شوق للأهل",
+          "icon": "👴",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I wish I could speak every language.",
+          "ar": "أتمنى لو أستطيع التحدث بكل اللغات.",
+          "context": "حلم تعلم",
+          "icon": "🌍",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I wish I could join the trip tomorrow.",
+          "ar": "أتمنى لو أستطيع الانضمام إلى رحلة الغد.",
+          "context": "رحلة مدرسية",
+          "icon": "🧳",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I wish I could play the piano well.",
+          "ar": "أتمنى لو أستطيع العزف على البيانو جيدًا.",
+          "context": "تعلم الموسيقى",
+          "icon": "🎹",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Yousef saw a poster about a music class.",
+          "ar": "رأى يوسف ملصقًا عن درس موسيقى."
+        },
+        {
+          "id": 2,
+          "en": "He wanted to join, but he had another lesson.",
+          "ar": "أراد الانضمام، لكن لديه درسًا آخر."
+        },
+        {
+          "id": 3,
+          "en": "He wished he could attend both classes.",
+          "ar": "تمنى لو استطاع حضور الدرسين."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Can you travel with us this weekend?",
+          "ar": "هل يمكنك السفر معنا في عطلة الأسبوع؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "I wish I could, but I have an exam.",
+          "ar": "أتمنى لو استطعت، لكن لدي اختبار."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "key": "if-i-were-12",
+      "title": "If I were",
+      "meaning": "لو كنت",
+      "formula": "If I were + imaginary situation, I would + base verb",
+      "explanation": "نستخدم الشرط الافتراضي للتخيل غير الواقعي أو غير المرجح في الحاضر؛ يجوز were مع I في الأسلوب القياسي الافتراضي.",
+      "explanationEn": "Use if I were for an imagined present situation, followed by would and a base verb for its result.",
+      "contrast": "If I were a teacher, I would help خيال؛ If I am late, I'll call احتمال واقعي.",
+      "sourceIds": [
+        218,
+        630,
+        254
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "If I were a teacher, I would make lessons fun.",
+          "ar": "لو كنت معلمًا، لجعلت الدروس ممتعة.",
+          "context": "التخيل المهني",
+          "icon": "👩‍🏫",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "If I were taller, I would reach that shelf.",
+          "ar": "لو كنت أطول، لوصلت إلى ذلك الرف.",
+          "context": "رف مرتفع",
+          "icon": "📚",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "If I were the team leader, I would ask everyone.",
+          "ar": "لو كنت قائد الفريق، لاستشرت الجميع.",
+          "context": "اجتماع فريق",
+          "icon": "🤝",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "If I were you, I would rest before the exam.",
+          "ar": "لو كنت مكانك، لاستَرحت قبل الاختبار.",
+          "context": "نصيحة صديق",
+          "icon": "🛌",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Maya imagined becoming a scientist.",
+          "ar": "تخيلت مايا أنها عالمة."
+        },
+        {
+          "id": 2,
+          "en": "She wanted to study ocean animals.",
+          "ar": "أرادت دراسة الحيوانات البحرية."
+        },
+        {
+          "id": 3,
+          "en": "If she were a scientist, she would explore the sea.",
+          "ar": "لو كانت عالمة، لاستكشفت البحر."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "What would you do as the school principal?",
+          "ar": "ماذا كنت ستفعل لو كنت مدير المدرسة؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "If I were the principal, I'd add a reading room.",
+          "ar": "لو كنت المدير، لأضفت غرفة قراءة."
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "key": "if-i-had-i-would-have-13",
+      "title": "If I had ..., I would have",
+      "meaning": "لو كنت قد ... لكنت قد",
+      "formula": "If + past perfect, subject + would have + past participle",
+      "explanation": "الشرط الثالث نتخيل به ماضيًا لم يحدث ونتيجة مختلفة لم تقع؛ نستخدم had مع التصريف الثالث في الشرط.",
+      "explanationEn": "Use the third conditional to imagine a different past. Use had with a past participle and would have with a past participle.",
+      "contrast": "If I had studied, I would have passed ماضٍ مخالف للواقع؛ If I study, I'll pass مستقبل ممكن.",
+      "sourceIds": [
+        400,
+        87,
+        841
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "If I had left early, I would have caught the bus.",
+          "ar": "لو غادرت مبكرًا، لكنت لحقت بالحافلة.",
+          "context": "حافلة فائتة",
+          "icon": "🚌",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "If she had practiced, she would have felt ready.",
+          "ar": "لو تدربت، لشعرت بالاستعداد.",
+          "context": "عرض مدرسي",
+          "icon": "🎤",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "If we had checked the map, we would have arrived sooner.",
+          "ar": "لو راجعنا الخريطة، لوصلنا أبكر.",
+          "context": "طريق الرحلة",
+          "icon": "🗺️",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "If he had saved the file, he would have kept his work.",
+          "ar": "لو حفظ الملف، لاحتفظ بعمله.",
+          "context": "عمل على الحاسوب",
+          "icon": "💻",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Hadi missed the first bus to school.",
+          "ar": "فاتت هادي الحافلة الأولى إلى المدرسة."
+        },
+        {
+          "id": 2,
+          "en": "He had stayed up late the night before.",
+          "ar": "كان قد سهر حتى وقت متأخر في الليلة السابقة."
+        },
+        {
+          "id": 3,
+          "en": "If he had slept earlier, he would have woken on time.",
+          "ar": "لو نام أبكر، لاستيقظ في الموعد."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Why did you miss the train?",
+          "ar": "لماذا فاتك القطار؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "If I had left sooner, I would have caught it.",
+          "ar": "لو غادرت أبكر، لكنت لحقت به."
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "key": "i-should-have-14",
+      "title": "I should have",
+      "meaning": "كان ينبغي أن",
+      "formula": "I should have + past participle",
+      "explanation": "نراجع فعلًا في الماضي ونرى أن خيارًا آخر كان أفضل؛ غالبًا للتعبير عن الندم أو النقد البنّاء.",
+      "explanationEn": "Use should have and a past participle to say a different past action would have been better.",
+      "contrast": "I should have called انتقاد قرار ماضٍ؛ I could have called إمكانية كانت متاحة.",
+      "sourceIds": [
+        400,
+        841,
+        125
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I should have checked the meeting time.",
+          "ar": "كان ينبغي أن أتحقق من موعد الاجتماع.",
+          "context": "موعد خاطئ",
+          "icon": "📅",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I should have brought my umbrella.",
+          "ar": "كان ينبغي أن أحضر مظلتي.",
+          "context": "مطر مفاجئ",
+          "icon": "☔",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I should have listened more carefully.",
+          "ar": "كان ينبغي أن أستمع بعناية أكبر.",
+          "context": "مراجعة درس",
+          "icon": "🎧",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I should have saved my work earlier.",
+          "ar": "كان ينبغي أن أحفظ عملي مبكرًا.",
+          "context": "ملف لم يُحفظ",
+          "icon": "💾",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Lina forgot to charge her tablet.",
+          "ar": "نسيت لينا شحن جهازها اللوحي."
+        },
+        {
+          "id": 2,
+          "en": "The battery ran out during the lesson.",
+          "ar": "نفدت البطارية أثناء الدرس."
+        },
+        {
+          "id": 3,
+          "en": "She realized she should have charged it earlier.",
+          "ar": "أدركت أنه كان ينبغي شحنه مبكرًا."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "What happened to your presentation?",
+          "ar": "ماذا حدث لعرضك؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "I should have saved a backup copy.",
+          "ar": "كان ينبغي أن أحفظ نسخة احتياطية."
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "key": "i-could-have-15",
+      "title": "I could have",
+      "meaning": "كان بإمكاني أن",
+      "formula": "I could have + past participle",
+      "explanation": "نصف إمكانية كانت متاحة في الماضي ولم تتحقق بالضرورة؛ قد تأتي مع إحساس بالفرصة الضائعة.",
+      "explanationEn": "Use could have and a past participle for a past possibility or an action that was possible but may not have happened.",
+      "contrast": "I could have helped قدرة أو فرصة؛ I should have helped حكم بأنه كان الأفضل أن أساعد.",
+      "sourceIds": [
+        841,
+        400,
+        218
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I could have taken the earlier bus.",
+          "ar": "كان بإمكاني ركوب الحافلة الأسبق.",
+          "context": "اختيار المواصلات",
+          "icon": "🚌",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "She could have asked for help.",
+          "ar": "كان بإمكانها طلب المساعدة.",
+          "context": "مشروع صعب",
+          "icon": "🤝",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "We could have finished the work together.",
+          "ar": "كان بإمكاننا إنهاء العمل معًا.",
+          "context": "عمل جماعي",
+          "icon": "📋",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "He could have called before arriving.",
+          "ar": "كان بإمكانه الاتصال قبل الوصول.",
+          "context": "زيارة مفاجئة",
+          "icon": "📞",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Omar struggled with a difficult exercise.",
+          "ar": "واجه عمر صعوبة في تمرين."
+        },
+        {
+          "id": 2,
+          "en": "His friends were happy to explain it.",
+          "ar": "كان أصدقاؤه مستعدين لشرحه."
+        },
+        {
+          "id": 3,
+          "en": "He knew he could have asked for help.",
+          "ar": "عرف أنه كان بإمكانه طلب المساعدة."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Was there another way to get home?",
+          "ar": "هل كانت هناك طريقة أخرى للعودة؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Yes, we could have taken the bus.",
+          "ar": "نعم، كان بإمكاننا ركوب الحافلة."
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "key": "i-had-already-16",
+      "title": "I had already",
+      "meaning": "كنت قد فعلت بالفعل",
+      "formula": "I had already + past participle + before past event",
+      "explanation": "يصف الماضي التام فعلًا انتهى قبل نقطة ماضية أخرى، وتساعد already على توضيح أن الفعل سبق تلك النقطة.",
+      "explanationEn": "Use had already with a past participle for an action completed before another moment in the past.",
+      "contrast": "I had already eaten before he arrived حدث أسبق؛ I ate when he arrived حدث عند الوصول.",
+      "sourceIds": [
+        328,
+        87,
+        354
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I had already eaten when my friend called.",
+          "ar": "كنت قد تناولت الطعام عندما اتصل صديقي.",
+          "context": "اتصال بعد الغداء",
+          "icon": "🍽️",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "She had already finished the book before Monday.",
+          "ar": "كانت قد أنهت الكتاب قبل الاثنين.",
+          "context": "قراءة كتاب",
+          "icon": "📖",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "We had already left when the rain started.",
+          "ar": "كنا قد غادرنا عندما بدأ المطر.",
+          "context": "قبل المطر",
+          "icon": "☔",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "He had already sent the email before the meeting.",
+          "ar": "كان قد أرسل البريد قبل الاجتماع.",
+          "context": "ترتيب عمل",
+          "icon": "📧",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Mariam arrived at the community library.",
+          "ar": "وصلت مريم إلى مكتبة الحي."
+        },
+        {
+          "id": 2,
+          "en": "She wanted to borrow a popular novel.",
+          "ar": "أرادت استعارة رواية مشهورة."
+        },
+        {
+          "id": 3,
+          "en": "Someone had already borrowed the last copy.",
+          "ar": "كان شخص قد استعار آخر نسخة بالفعل."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Did you hear the announcement at noon?",
+          "ar": "هل سمعت الإعلان عند الظهر؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Yes, I had already read the news.",
+          "ar": "نعم، كنت قد قرأت الخبر بالفعل."
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "key": "by-the-time-17",
+      "title": "By the time",
+      "meaning": "بحلول الوقت الذي",
+      "formula": "By the time + past simple, past perfect clause",
+      "explanation": "يوضح ترتيب حدثين ماضيين: وقع حدث واكتمل الآخر قبله. ويشيع الماضي التام للحدث الأسبق.",
+      "explanationEn": "Use by the time with a past event to show that something else had already happened before it.",
+      "contrast": "By the time we arrived, it had started ترتيب ماضٍ؛ When we arrived, it started تزامن أقرب.",
+      "sourceIds": [
+        87,
+        328,
+        125
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "By the time we arrived, the film had started.",
+          "ar": "بحلول وصولنا، كان الفيلم قد بدأ.",
+          "context": "موعد سينما",
+          "icon": "🎬",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "By the time she called, I had finished cooking.",
+          "ar": "بحلول اتصالها، كنت قد أنهيت الطبخ.",
+          "context": "إعداد عشاء",
+          "icon": "🍲",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "By the time the class began, everyone had arrived.",
+          "ar": "بحلول بدء الحصة، كان الجميع قد وصل.",
+          "context": "بداية حصة",
+          "icon": "🏫",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "By the time it rained, we had reached home.",
+          "ar": "بحلول هطول المطر، كنا قد وصلنا إلى المنزل.",
+          "context": "العودة قبل المطر",
+          "icon": "🏡",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "The team planned to meet at eight.",
+          "ar": "خطط الفريق للقاء عند الثامنة."
+        },
+        {
+          "id": 2,
+          "en": "Nabil got there at half past eight.",
+          "ar": "وصل نبيل عند الثامنة والنصف."
+        },
+        {
+          "id": 3,
+          "en": "By the time he arrived, the meeting had begun.",
+          "ar": "بحلول وصوله، كان الاجتماع قد بدأ."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Did you arrive before the speaker started?",
+          "ar": "هل وصلت قبل بدء المتحدث؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "No, by the time I arrived, she had finished.",
+          "ar": "لا، بحلول وصولي، كانت قد انتهت."
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "key": "the-more-the-more-18",
+      "title": "The more ..., the more",
+      "meaning": "كلما ازداد ... ازداد",
+      "formula": "The + comparative clause, the + comparative clause",
+      "explanation": "نعبّر عن ارتباط متدرج بين تغيرين: كلما ازداد الأول ازداد الثاني أو نقص وفق صيغة المقارنة.",
+      "explanationEn": "Use the more and another comparative clause to show that two changes occur together.",
+      "contrast": "The more I practice, the better I get تغير متدرج؛ Because I practice, I improve سبب مباشر.",
+      "sourceIds": [
+        159,
+        307
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I notice that the more I read, the more words I learn.",
+          "ar": "ألاحظ أنه كلما قرأت أكثر، تعلمت كلمات أكثر.",
+          "context": "توسيع المفردات",
+          "icon": "📚",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "We find that the more we practice, the more confident we become.",
+          "ar": "نجد أنه كلما تدربنا أكثر، أصبحنا أكثر ثقة.",
+          "context": "تدريب لغوي",
+          "icon": "🗣️",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "She discovers that the more she listens, the better she understands.",
+          "ar": "تكتشف أنه كلما استمعت أكثر، فهمت بصورة أفضل.",
+          "context": "فهم الاستماع",
+          "icon": "🎧",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I believe that the more we share ideas, the more creative we become.",
+          "ar": "أعتقد أنه كلما تبادلنا الأفكار أكثر، أصبحنا أكثر إبداعًا.",
+          "context": "عصف ذهني",
+          "icon": "💡",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Huda wanted to speak English more naturally.",
+          "ar": "أرادت هدى التحدث بالإنجليزية بطبيعية أكبر."
+        },
+        {
+          "id": 2,
+          "en": "She practiced a little every day.",
+          "ar": "تدربت قليلًا كل يوم."
+        },
+        {
+          "id": 3,
+          "en": "She noticed that the more she practiced, the more confident she became.",
+          "ar": "لاحظت أنه كلما تدربت أكثر، ازدادت ثقتها بنفسها."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Why do you read a little every day?",
+          "ar": "لماذا تقرأ قليلًا كل يوم؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "I find that the more I read, the faster I learn.",
+          "ar": "أجد أنه كلما قرأت أكثر، تعلمت أسرع."
+        }
+      ]
+    }
+  ],
+  "chapters": [
+    {
+      "id": 1,
+      "key": "a-thoughtful-classroom",
+      "title": "A Thoughtful Classroom",
+      "titleAr": "صف يفكر بعمق",
+      "icon": "🧠",
+      "lines": [
+        {
+          "id": 1,
+          "en": "Huda wanted to explain an idea to her classmates.",
+          "ar": "أرادت هدى شرح فكرة لزملائها."
+        },
+        {
+          "id": 2,
+          "en": "She said, 'What I mean is we should practice together.'",
+          "ar": "قالت: ما أقصده هو أننا ينبغي أن نتدرب معًا."
+        },
+        {
+          "id": 3,
+          "en": "A student wondered how the new approach would work.",
+          "ar": "تساءل أحد الطلاب كيف ستنجح الطريقة الجديدة."
+        },
+        {
+          "id": 4,
+          "en": "Their teacher said, 'What matters is that everyone participates.'",
+          "ar": "قال معلمهم: ما يهم هو أن يشارك الجميع."
+        },
+        {
+          "id": 5,
+          "en": "Everyone thanked the person who organized the activity.",
+          "ar": "شكر الجميع الشخص الذي نظم النشاط."
+        },
+        {
+          "id": 6,
+          "en": "They found that the more the class practiced, the more confident everyone became.",
+          "ar": "وجدوا أنه كلما تدرب الصف أكثر، ازدادت ثقة الجميع."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "key": "the-missed-opportunity",
+      "title": "The Missed Opportunity",
+      "titleAr": "الفرصة التي فاتت",
+      "icon": "🚌",
+      "lines": [
+        {
+          "id": 1,
+          "en": "Sami planned to join a school trip on Saturday.",
+          "ar": "خطط سامي للانضمام إلى رحلة مدرسية يوم السبت."
+        },
+        {
+          "id": 2,
+          "en": "He forgot to set his alarm the night before.",
+          "ar": "نسي ضبط المنبه في الليلة السابقة."
+        },
+        {
+          "id": 3,
+          "en": "By the time he woke up, the bus had left.",
+          "ar": "بحلول استيقاظه، كانت الحافلة قد غادرت."
+        },
+        {
+          "id": 4,
+          "en": "He said, 'I should have checked the departure time.'",
+          "ar": "قال: كان ينبغي أن أتحقق من وقت المغادرة."
+        },
+        {
+          "id": 5,
+          "en": "If he had set an alarm, he would have caught the bus.",
+          "ar": "لو ضبط منبهًا، لكان قد لحق بالحافلة."
+        },
+        {
+          "id": 6,
+          "en": "His friend reminded him that he could have called for help.",
+          "ar": "ذكّره صديقه بأنه كان بإمكانه الاتصال طلبًا للمساعدة."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "key": "the-future-inventors",
+      "title": "The Future Inventors",
+      "titleAr": "مخترعو المستقبل",
+      "icon": "🔬",
+      "lines": [
+        {
+          "id": 1,
+          "en": "Maya and Lina designed a small robot for the science fair.",
+          "ar": "صممت مايا ولينا روبوتًا صغيرًا لمعرض العلوم."
+        },
+        {
+          "id": 2,
+          "en": "They wondered if the sensors would work outside.",
+          "ar": "تساءلتا إن كانت الحساسات ستعمل في الخارج."
+        },
+        {
+          "id": 3,
+          "en": "They tested the robot in a quiet garden, the place where they could work best.",
+          "ar": "اختبرتا الروبوت في حديقة هادئة، المكان الذي كان بإمكانهما العمل فيه بأفضل صورة."
+        },
+        {
+          "id": 4,
+          "en": "Maya said, 'I wish I could build a larger version.'",
+          "ar": "قالت مايا: أتمنى لو أستطيع بناء نسخة أكبر."
+        },
+        {
+          "id": 5,
+          "en": "Lina replied, 'If I were an engineer, I would improve the wheels.'",
+          "ar": "ردت لينا: لو كنت مهندسة، لحسنت العجلات."
+        },
+        {
+          "id": 6,
+          "en": "They agreed that the more they learned, the better their design would become.",
+          "ar": "اتفقتا على أنه كلما تعلّمتا أكثر، أصبح تصميمهما أفضل."
+        }
+      ]
+    }
+  ],
+  "requirements": {
+    "patternCount": 18,
+    "scenesPerPattern": 4,
+    "storyLinesPerPattern": 3,
+    "dialogueTurnsPerPattern": 2,
+    "chapters": 3,
+    "skills": [
+      "توضيح المقصود وإبراز الأهم والسبب",
+      "الأسئلة غير المباشرة بترتيب خبري",
+      "جمل الوصل للأشخاص والأشياء والأماكن والأزمنة",
+      "الخيال والشرط الثاني والثالث",
+      "تقييم قرارات الماضي وإمكانياته",
+      "الماضي التام وترتيب الأحداث",
+      "تغيران مترابطان باستخدام المقارنات"
+    ]
+  }
+}

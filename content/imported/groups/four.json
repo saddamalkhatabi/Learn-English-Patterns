@@ -1,0 +1,1561 @@
+{
+  "schema": 1,
+  "group": "asking-questions-finding-information",
+  "title": "المجموعة الرابعة: تكوين الأسئلة وفهم الإجابات",
+  "status": "18 complete authored patterns; realistic photo scenes pending; voices counted after verification",
+  "items": [
+    {
+      "id": 1,
+      "key": "what-is",
+      "title": "What is",
+      "meaning": "ما هو / ما هي",
+      "formula": "What is + singular noun / this / that?",
+      "explanation": "للسؤال عن تعريف شيء واحد. يمكن اختصار What is إلى What's.",
+      "explanationEn": "What is asks for the identity or meaning of a single thing.",
+      "contrast": "What is this? مفرد، What are these? جمع.",
+      "sourceIds": [
+        518,
+        506
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "What is this word?",
+          "ar": "ما معنى هذه الكلمة؟",
+          "context": "كلمة جديدة",
+          "icon": "🔤",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "What is your favorite color?",
+          "ar": "ما لونك المفضل؟",
+          "context": "اختيار لون",
+          "icon": "🎨",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "What is in the box?",
+          "ar": "ما الذي في الصندوق؟",
+          "context": "صندوق مغلق",
+          "icon": "📦",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "What is today's lesson?",
+          "ar": "ما درس اليوم؟",
+          "context": "بداية الحصة",
+          "icon": "📚",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Maya finds a new word.",
+          "ar": "تعثر مايا على كلمة جديدة."
+        },
+        {
+          "id": 2,
+          "en": "She asks, 'What is this word?'",
+          "ar": "تسأل: ما معنى هذه الكلمة؟"
+        },
+        {
+          "id": 3,
+          "en": "Her teacher explains it with a picture.",
+          "ar": "تشرح معلمتها باستخدام صورة."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "What is in your bag?",
+          "ar": "ماذا في حقيبتك؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "It is my English book.",
+          "ar": "إنه كتاب الإنجليزية الخاص بي."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "key": "where-is",
+      "title": "Where is",
+      "meaning": "أين يوجد / أين هي",
+      "formula": "Where is + singular person / thing?",
+      "explanation": "لمعرفة مكان شخص أو شيء مفرد، نضع is قبل الفاعل.",
+      "explanationEn": "Where is asks for the location of one person or thing.",
+      "contrast": "Where is my bag? مفرد؛ Where are my bags? جمع.",
+      "sourceIds": [
+        589
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "Where is my phone?",
+          "ar": "أين هاتفي؟",
+          "context": "البحث عن الهاتف",
+          "icon": "📱",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "Where is the library?",
+          "ar": "أين المكتبة؟",
+          "context": "البحث عن المكتبة",
+          "icon": "📚",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "Where is the bus stop?",
+          "ar": "أين موقف الحافلة؟",
+          "context": "الموقف القريب",
+          "icon": "🚌",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "Where is your classroom?",
+          "ar": "أين صفك؟",
+          "context": "ممر المدرسة",
+          "icon": "🏫",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Omar cannot find his phone.",
+          "ar": "لا يجد عمر هاتفه."
+        },
+        {
+          "id": 2,
+          "en": "He asks, 'Where is my phone?'",
+          "ar": "يسأل: أين هاتفي؟"
+        },
+        {
+          "id": 3,
+          "en": "His sister points to the desk.",
+          "ar": "تشير أخته إلى المكتب."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Where is the library?",
+          "ar": "أين المكتبة؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "It is next to the school.",
+          "ar": "إنها بجوار المدرسة."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "key": "who-is",
+      "title": "Who is",
+      "meaning": "من هو / من هي",
+      "formula": "Who is + person?",
+      "explanation": "نسأل عن هوية شخص باستخدام Who is، وليس What is عندما نريد التعرف إلى شخص.",
+      "explanationEn": "Who is asks us to identify a person.",
+      "contrast": "Who is that? شخص؛ What is that? شيء.",
+      "sourceIds": [
+        511,
+        545
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "Who is that teacher?",
+          "ar": "من ذلك المعلم؟",
+          "context": "معلم جديد",
+          "icon": "👩‍🏫",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "Who is at the door?",
+          "ar": "من عند الباب؟",
+          "context": "جرس الباب",
+          "icon": "🚪",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "Who is your best friend?",
+          "ar": "من أفضل أصدقائك؟",
+          "context": "صديق مقرّب",
+          "icon": "🤝",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "Who is in this picture?",
+          "ar": "من في هذه الصورة؟",
+          "context": "مشاهدة صورة",
+          "icon": "🖼️",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "A new teacher enters the classroom.",
+          "ar": "يدخل معلم جديد إلى الصف."
+        },
+        {
+          "id": 2,
+          "en": "Nour asks, 'Who is that teacher?'",
+          "ar": "تسأل نور: من ذلك المعلم؟"
+        },
+        {
+          "id": 3,
+          "en": "Her friend says, 'He is Mr. Adam.'",
+          "ar": "تخبرها صديقتها: إنه الأستاذ آدم."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Who is at the door?",
+          "ar": "من عند الباب؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "It is my brother.",
+          "ar": "إنه أخي."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "key": "when-is",
+      "title": "When is",
+      "meaning": "متى يكون / متى موعد",
+      "formula": "When is + event / singular subject?",
+      "explanation": "لمعرفة موعد حدث أو وقت شيء، ونستخدم at للساعة وon لليوم.",
+      "explanationEn": "When is asks for the date or time of an event.",
+      "contrast": "When is the test? الوقت؛ Where is the test? المكان.",
+      "sourceIds": [
+        557,
+        528
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "When is the English test?",
+          "ar": "متى اختبار الإنجليزية؟",
+          "context": "موعد الاختبار",
+          "icon": "📝",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "When is your birthday?",
+          "ar": "متى عيد ميلادك؟",
+          "context": "تاريخ الميلاد",
+          "icon": "🎂",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "When is the next bus?",
+          "ar": "متى الحافلة القادمة؟",
+          "context": "وقت الحافلة",
+          "icon": "🚌",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "When is the meeting?",
+          "ar": "متى الاجتماع؟",
+          "context": "تحديد موعد",
+          "icon": "📅",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Ali checks the timetable.",
+          "ar": "يتفقد علي الجدول."
+        },
+        {
+          "id": 2,
+          "en": "He asks, 'When is the English test?'",
+          "ar": "يسأل: متى اختبار الإنجليزية؟"
+        },
+        {
+          "id": 3,
+          "en": "The teacher says it is on Monday.",
+          "ar": "تقول المعلمة إنه يوم الاثنين."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "When is the meeting?",
+          "ar": "متى الاجتماع؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "It is at ten o'clock.",
+          "ar": "إنه الساعة العاشرة."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "key": "why-is",
+      "title": "Why is",
+      "meaning": "لماذا يكون / لماذا هو",
+      "formula": "Why is + singular subject + adjective?",
+      "explanation": "للسؤال عن سبب حالة أو وضع، وغالبًا نجيب باستخدام Because.",
+      "explanationEn": "Why is asks for the reason behind a situation.",
+      "contrast": "Why is the bus late? سبب؛ When is the bus here? توقيت.",
+      "sourceIds": [
+        517,
+        566
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "Why is the door open?",
+          "ar": "لماذا الباب مفتوح؟",
+          "context": "باب مفتوح",
+          "icon": "🚪",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "Why is the room so cold?",
+          "ar": "لماذا الغرفة باردة؟",
+          "context": "برد الغرفة",
+          "icon": "❄️",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "Why is the bus late?",
+          "ar": "لماذا الحافلة متأخرة؟",
+          "context": "الانتظار",
+          "icon": "🚌",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "Why is the sky dark?",
+          "ar": "لماذا السماء مظلمة؟",
+          "context": "غيوم في السماء",
+          "icon": "☁️",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "The bus does not arrive on time.",
+          "ar": "لا تصل الحافلة في موعدها."
+        },
+        {
+          "id": 2,
+          "en": "Sara asks, 'Why is the bus late?'",
+          "ar": "تسأل سارة: لماذا تأخرت الحافلة؟"
+        },
+        {
+          "id": 3,
+          "en": "The driver says the road is busy.",
+          "ar": "يوضح السائق أن الطريق مزدحم."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Why is the room cold?",
+          "ar": "لماذا الغرفة باردة؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Because the window is open.",
+          "ar": "لأن النافذة مفتوحة."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "key": "how-is",
+      "title": "How is",
+      "meaning": "كيف حال / كيف يكون",
+      "formula": "How is + person / thing?",
+      "explanation": "للسؤال عن حالة شخص أو أمر، وليس عن هويته.",
+      "explanationEn": "How is asks about a person's condition or how something is going.",
+      "contrast": "How is she? الحال؛ Who is she? الهوية.",
+      "sourceIds": [
+        516,
+        567
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "How is your mother?",
+          "ar": "كيف حال والدتك؟",
+          "context": "السؤال عن الأسرة",
+          "icon": "👩",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "How is your new school?",
+          "ar": "كيف مدرستك الجديدة؟",
+          "context": "مدرسة جديدة",
+          "icon": "🏫",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "How is the weather today?",
+          "ar": "كيف الطقس اليوم؟",
+          "context": "حالة الطقس",
+          "icon": "🌤️",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "How is your English class?",
+          "ar": "كيف صف الإنجليزية؟",
+          "context": "تجربة الدرس",
+          "icon": "📚",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Maya visits her grandmother.",
+          "ar": "تزور مايا جدتها."
+        },
+        {
+          "id": 2,
+          "en": "She asks, 'How is your health today?'",
+          "ar": "تسأل: كيف صحتك اليوم؟"
+        },
+        {
+          "id": 3,
+          "en": "Her grandmother says she feels well.",
+          "ar": "تقول جدتها إنها بخير."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "How is your new school?",
+          "ar": "كيف مدرستك الجديدة؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "It is great, thank you.",
+          "ar": "إنها رائعة، شكرًا لك."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "key": "what-do-you",
+      "title": "What do you",
+      "meaning": "ماذا تفعل / ماذا",
+      "formula": "What do you + base verb...?",
+      "explanation": "نسأل عن فعل أو اختيار في المضارع البسيط باستخدام do ثم you والفعل الأساسي.",
+      "explanationEn": "What do you followed by a base verb asks about actions or preferences.",
+      "contrast": "What do you eat? فعل؛ What is this? تعريف شيء.",
+      "sourceIds": [
+        21,
+        550
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "What do you do after school?",
+          "ar": "ماذا تفعل بعد المدرسة؟",
+          "context": "بعد الدراسة",
+          "icon": "🎒",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "What do you want to learn?",
+          "ar": "ماذا تريد أن تتعلم؟",
+          "context": "هدف التعلم",
+          "icon": "🎯",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "What do you eat for breakfast?",
+          "ar": "ماذا تأكل في الإفطار؟",
+          "context": "الإفطار",
+          "icon": "🍳",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "What do you think about this idea?",
+          "ar": "ما رأيك في هذه الفكرة؟",
+          "context": "مناقشة فكرة",
+          "icon": "💡",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "The class chooses a new activity.",
+          "ar": "يختار الصف نشاطًا جديدًا."
+        },
+        {
+          "id": 2,
+          "en": "The teacher asks, 'What do you want to learn?'",
+          "ar": "تسأل المعلمة: ماذا تريدون أن تتعلموا؟"
+        },
+        {
+          "id": 3,
+          "en": "The students say they want to learn English.",
+          "ar": "يقول الطلاب إنهم يريدون تعلم الإنجليزية."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "What do you do in the evening?",
+          "ar": "ماذا تفعل في المساء؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "I read and practice English.",
+          "ar": "أقرأ وأمارس الإنجليزية."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "key": "where-do-you",
+      "title": "Where do you",
+      "meaning": "أين تفعل / إلى أين",
+      "formula": "Where do you + base verb...?",
+      "explanation": "للسؤال عن مكان نشاط معتاد أو وجهته، نستخدم do مع you والفعل الأساسي.",
+      "explanationEn": "Where do you asks about the place of a habit or regular activity.",
+      "contrast": "Where do you work? عادة؛ Where are you working? نشاط جارٍ.",
+      "sourceIds": [
+        598,
+        653
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "Where do you live?",
+          "ar": "أين تسكن؟",
+          "context": "عنوان السكن",
+          "icon": "🏠",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "Where do you work?",
+          "ar": "أين تعمل؟",
+          "context": "مكان العمل",
+          "icon": "🏢",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "Where do you study English?",
+          "ar": "أين تدرس الإنجليزية؟",
+          "context": "مركز تعلم",
+          "icon": "📘",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "Where do you buy books?",
+          "ar": "من أين تشتري الكتب؟",
+          "context": "متجر الكتب",
+          "icon": "📚",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Omar meets a new classmate.",
+          "ar": "يقابل عمر زميلًا جديدًا."
+        },
+        {
+          "id": 2,
+          "en": "He asks, 'Where do you live?'",
+          "ar": "يسأله: أين تسكن؟"
+        },
+        {
+          "id": 3,
+          "en": "His classmate lives near the park.",
+          "ar": "يسكن زميله قرب الحديقة."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Where do you study English?",
+          "ar": "أين تدرس الإنجليزية؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "I study at home.",
+          "ar": "أدرس في المنزل."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "key": "when-do-you",
+      "title": "When do you",
+      "meaning": "متى تفعل",
+      "formula": "When do you + base verb...?",
+      "explanation": "للسؤال عن وقت فعل معتاد، نستخدم do you مع الفعل الأساسي.",
+      "explanationEn": "When do you asks about the usual time of an action.",
+      "contrast": "When do you wake up? عادة؛ When are you waking up? ترتيب محدد.",
+      "sourceIds": [
+        507,
+        528
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "When do you wake up?",
+          "ar": "متى تستيقظ؟",
+          "context": "منبه الصباح",
+          "icon": "⏰",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "When do you have lunch?",
+          "ar": "متى تتناول الغداء؟",
+          "context": "وقت الغداء",
+          "icon": "🍽️",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "When do you start work?",
+          "ar": "متى تبدأ العمل؟",
+          "context": "بداية العمل",
+          "icon": "💼",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "When do you practice English?",
+          "ar": "متى تمارس الإنجليزية؟",
+          "context": "وقت المذاكرة",
+          "icon": "📚",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Nour plans her study time.",
+          "ar": "تخطط نور لموعد مذاكرتها."
+        },
+        {
+          "id": 2,
+          "en": "Her friend asks, 'When do you practice English?'",
+          "ar": "تسألها صديقتها: متى تمارسين الإنجليزية؟"
+        },
+        {
+          "id": 3,
+          "en": "Nour says she practices every evening.",
+          "ar": "تقول نور إنها تمارسها كل مساء."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "When do you have breakfast?",
+          "ar": "متى تتناول الإفطار؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "I have breakfast at seven.",
+          "ar": "أتناول الإفطار الساعة السابعة."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "key": "why-do-you",
+      "title": "Why do you",
+      "meaning": "لماذا تفعل",
+      "formula": "Why do you + base verb...?",
+      "explanation": "للسؤال عن سبب فعل معتاد أو قرار، وغالبًا نجيب باستخدام because.",
+      "explanationEn": "Why do you asks why someone does something.",
+      "contrast": "Why do you study? سبب؛ When do you study? وقت.",
+      "sourceIds": [
+        512,
+        593
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "Why do you study English?",
+          "ar": "لماذا تدرس الإنجليزية؟",
+          "context": "دافع التعلم",
+          "icon": "📘",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "Why do you walk to school?",
+          "ar": "لماذا تمشي إلى المدرسة؟",
+          "context": "المشي إلى المدرسة",
+          "icon": "🚶",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "Why do you need this book?",
+          "ar": "لماذا تحتاج هذا الكتاب؟",
+          "context": "اختيار كتاب",
+          "icon": "📚",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "Why do you like this song?",
+          "ar": "لماذا تحب هذه الأغنية؟",
+          "context": "موسيقى مفضلة",
+          "icon": "🎵",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "The teacher asks about learning goals.",
+          "ar": "تسأل المعلمة عن أهداف التعلم."
+        },
+        {
+          "id": 2,
+          "en": "She asks, 'Why do you study English?'",
+          "ar": "تسأل: لماذا تدرسون الإنجليزية؟"
+        },
+        {
+          "id": 3,
+          "en": "Ali answers, 'Because I want to travel.'",
+          "ar": "يجيب علي: لأنني أريد السفر."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Why do you walk to school?",
+          "ar": "لماذا تمشي إلى المدرسة؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Because it is near my house.",
+          "ar": "لأنها قريبة من منزلي."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "key": "how-do-you",
+      "title": "How do you",
+      "meaning": "كيف تفعل",
+      "formula": "How do you + base verb...?",
+      "explanation": "للسؤال عن الطريقة أو الوسيلة أو الخطوات اللازمة للفعل.",
+      "explanationEn": "How do you asks about the method or means of doing something.",
+      "contrast": "How do you get there? الطريقة؛ Where do you go? الوجهة.",
+      "sourceIds": [
+        536,
+        584
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "How do you get to school?",
+          "ar": "كيف تصل إلى المدرسة؟",
+          "context": "وسيلة النقل",
+          "icon": "🚌",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "How do you spell your name?",
+          "ar": "كيف تتهجى اسمك؟",
+          "context": "تهجئة الاسم",
+          "icon": "🔤",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "How do you make tea?",
+          "ar": "كيف تصنع الشاي؟",
+          "context": "تحضير الشاي",
+          "icon": "🍵",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "How do you open this app?",
+          "ar": "كيف تفتح هذا التطبيق؟",
+          "context": "استخدام التطبيق",
+          "icon": "📱",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Sara learns a new game.",
+          "ar": "تتعلم سارة لعبة جديدة."
+        },
+        {
+          "id": 2,
+          "en": "She asks, 'How do you play this game?'",
+          "ar": "تسأل: كيف تلعب هذه اللعبة؟"
+        },
+        {
+          "id": 3,
+          "en": "Her friend shows her the first step.",
+          "ar": "يريها صديقها الخطوة الأولى."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "How do you go to school?",
+          "ar": "كيف تذهب إلى المدرسة؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "I go by bus.",
+          "ar": "أذهب بالحافلة."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "key": "do-you",
+      "title": "Do you",
+      "meaning": "هل تفعل",
+      "formula": "Do you + base verb...?",
+      "explanation": "لصياغة سؤال نعم/لا عن عادة أو رأي أو امتلاك في المضارع البسيط؛ بعد do يأتي الفعل الأساسي.",
+      "explanationEn": "Do you starts a yes-or-no question about habits, preferences, or facts.",
+      "contrast": "Do you like apples? نعم أو لا؛ What do you like? إجابة مفتوحة.",
+      "sourceIds": [
+        12,
+        504
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "Do you like apples?",
+          "ar": "هل تحب التفاح؟",
+          "context": "تفضيل الطعام",
+          "icon": "🍎",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "Do you speak English?",
+          "ar": "هل تتحدث الإنجليزية؟",
+          "context": "التعارف",
+          "icon": "🗣️",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "Do you have a pencil?",
+          "ar": "هل لديك قلم رصاص؟",
+          "context": "استعارة قلم",
+          "icon": "✏️",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "Do you study every day?",
+          "ar": "هل تدرس كل يوم؟",
+          "context": "عادة الدراسة",
+          "icon": "📚",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Maya meets a new student.",
+          "ar": "تلتقي مايا طالبًا جديدًا."
+        },
+        {
+          "id": 2,
+          "en": "She asks, 'Do you speak English?'",
+          "ar": "تسأله: هل تتحدث الإنجليزية؟"
+        },
+        {
+          "id": 3,
+          "en": "He replies, 'Yes, I do.'",
+          "ar": "يجيب: نعم، أفعل."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Do you have a notebook?",
+          "ar": "هل لديك دفتر؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Yes, I do.",
+          "ar": "نعم، لدي."
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "key": "does-he",
+      "title": "Does he / she",
+      "meaning": "هل هو يفعل / هل هي تفعل",
+      "formula": "Does + he / she + base verb...?",
+      "explanation": "مع he أو she نستخدم does، ويأتي الفعل بعدها بصيغته الأساسية دون -s.",
+      "explanationEn": "Does he or she makes a present-simple yes-or-no question with a base verb.",
+      "contrast": "Do you work? مع you؛ Does she work? مع she.",
+      "sourceIds": [
+        569
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "Does she speak English?",
+          "ar": "هل تتحدث الإنجليزية؟",
+          "context": "الحديث عن زميلة",
+          "icon": "🗣️",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "Does he live near here?",
+          "ar": "هل يسكن قريبًا من هنا؟",
+          "context": "السكن",
+          "icon": "🏠",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "Does she like reading?",
+          "ar": "هل تحب القراءة؟",
+          "context": "القراءة",
+          "icon": "📖",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "Does he take the bus?",
+          "ar": "هل يستقل الحافلة؟",
+          "context": "الطريق للمدرسة",
+          "icon": "🚌",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "A new student joins the group.",
+          "ar": "ينضم طالب جديد إلى المجموعة."
+        },
+        {
+          "id": 2,
+          "en": "Sara asks, 'Does he speak English?'",
+          "ar": "تسأل سارة: هل يتحدث الإنجليزية؟"
+        },
+        {
+          "id": 3,
+          "en": "His friend says, 'Yes, he does.'",
+          "ar": "يقول صديقه: نعم، يفعل."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Does she read every day?",
+          "ar": "هل تقرأ كل يوم؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Yes, she does.",
+          "ar": "نعم، تقرأ كل يوم."
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "key": "is-there",
+      "title": "Is there",
+      "meaning": "هل يوجد مفرد",
+      "formula": "Is there + singular / uncountable noun...?",
+      "explanation": "Is there للاستفسار عن وجود شيء مفرد أو كمية غير معدودة، أما الجمع فنستخدم Are there.",
+      "explanationEn": "Is there asks if one thing or an uncountable amount exists.",
+      "contrast": "Is there a chair? مفرد؛ Are there chairs? جمع.",
+      "sourceIds": [
+        616,
+        639
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "Is there a bank nearby?",
+          "ar": "هل يوجد بنك قريب؟",
+          "context": "البحث عن بنك",
+          "icon": "🏦",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "Is there a bus stop here?",
+          "ar": "هل يوجد موقف حافلات هنا؟",
+          "context": "موقف الحافلة",
+          "icon": "🚌",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "Is there a book on the table?",
+          "ar": "هل يوجد كتاب على الطاولة؟",
+          "context": "مكتب",
+          "icon": "📘",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "Is there any water left?",
+          "ar": "هل بقي بعض الماء؟",
+          "context": "ماء متبقٍ",
+          "icon": "💧",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Omar is new to the area.",
+          "ar": "عمر جديد في المنطقة."
+        },
+        {
+          "id": 2,
+          "en": "He asks, 'Is there a bank nearby?'",
+          "ar": "يسأل: هل يوجد بنك قريب؟"
+        },
+        {
+          "id": 3,
+          "en": "A neighbor points to the next street.",
+          "ar": "يشير جار إلى الشارع التالي."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Is there a library here?",
+          "ar": "هل توجد مكتبة هنا؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Yes, there is one near the park.",
+          "ar": "نعم، توجد واحدة قرب الحديقة."
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "key": "are-there",
+      "title": "Are there",
+      "meaning": "هل توجد أشياء متعددة",
+      "formula": "Are there + plural noun...?",
+      "explanation": "Are there للاستفسار عن وجود أشياء أو أشخاص بصيغة الجمع، وغالبًا نستخدم any في السؤال.",
+      "explanationEn": "Are there asks whether plural things are available or present.",
+      "contrast": "Are there two seats? جمع؛ Is there one seat? مفرد.",
+      "sourceIds": [
+        525
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "Are there any seats available?",
+          "ar": "هل توجد مقاعد شاغرة؟",
+          "context": "مقاعد الانتظار",
+          "icon": "🪑",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "Are there three books here?",
+          "ar": "هل توجد ثلاثة كتب هنا؟",
+          "context": "عد الكتب",
+          "icon": "📚",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "Are there any shops nearby?",
+          "ar": "هل توجد متاجر قريبة؟",
+          "context": "متاجر قريبة",
+          "icon": "🏬",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "Are there many students in class?",
+          "ar": "هل يوجد طلاب كثيرون في الصف؟",
+          "context": "الصف",
+          "icon": "🏫",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "The family arrives at a busy café.",
+          "ar": "تصل الأسرة إلى مقهى مزدحم."
+        },
+        {
+          "id": 2,
+          "en": "They ask, 'Are there any seats available?'",
+          "ar": "يسألون: هل توجد مقاعد شاغرة؟"
+        },
+        {
+          "id": 3,
+          "en": "The waiter shows them an empty table.",
+          "ar": "يريهم النادل طاولة فارغة."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Are there two chairs in the room?",
+          "ar": "هل يوجد كرسيان في الغرفة؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Yes, there are two chairs.",
+          "ar": "نعم، يوجد كرسيان."
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "key": "how-many",
+      "title": "How many",
+      "meaning": "كم عدد",
+      "formula": "How many + countable plural noun...?",
+      "explanation": "How many للسؤال عن عدد الأشياء القابلة للعد، ثم يأتي الاسم في صيغة الجمع.",
+      "explanationEn": "How many asks about the number of countable things.",
+      "contrast": "How many books? معدود؛ How much water? غير معدود.",
+      "sourceIds": [
+        514,
+        608
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "How many books do you have?",
+          "ar": "كم كتابًا لديك؟",
+          "context": "عد الكتب",
+          "icon": "📚",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "How many students are here?",
+          "ar": "كم طالبًا هنا؟",
+          "context": "عدد الطلاب",
+          "icon": "👥",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "How many apples do you want?",
+          "ar": "كم تفاحة تريد؟",
+          "context": "عد التفاح",
+          "icon": "🍎",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "How many days are in a week?",
+          "ar": "كم يومًا في الأسبوع؟",
+          "context": "أيام الأسبوع",
+          "icon": "📅",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Nour counts the books on her desk.",
+          "ar": "تعد نور الكتب على مكتبها."
+        },
+        {
+          "id": 2,
+          "en": "Her teacher asks, 'How many books do you have?'",
+          "ar": "تسأل المعلمة: كم كتابًا لديك؟"
+        },
+        {
+          "id": 3,
+          "en": "Nour says, 'I have three books.'",
+          "ar": "تقول نور: لدي ثلاثة كتب."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "How many chairs do we need?",
+          "ar": "كم كرسيًا نحتاج؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "We need four chairs.",
+          "ar": "نحتاج أربعة كراسٍ."
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "key": "how-much",
+      "title": "How much",
+      "meaning": "كم المقدار / ما السعر",
+      "formula": "How much + uncountable noun...? / How much is...?",
+      "explanation": "How much للسؤال عن مقدار شيء غير معدود أو سعر شيء.",
+      "explanationEn": "How much asks about uncountable amounts or prices.",
+      "contrast": "How much milk? غير معدود؛ How many cups? معدود.",
+      "sourceIds": [
+        646,
+        597
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "How much water do you need?",
+          "ar": "كم ماءً تحتاج؟",
+          "context": "قياس الماء",
+          "icon": "💧",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "How much is this book?",
+          "ar": "كم سعر هذا الكتاب؟",
+          "context": "سعر كتاب",
+          "icon": "📘",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "How much time do we have?",
+          "ar": "كم وقتًا لدينا؟",
+          "context": "الوقت المتبقي",
+          "icon": "⏳",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "How much rice should I cook?",
+          "ar": "كم أرزًا ينبغي أن أطبخ؟",
+          "context": "تحضير الأرز",
+          "icon": "🍚",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Ali wants to buy a book.",
+          "ar": "يريد علي شراء كتاب."
+        },
+        {
+          "id": 2,
+          "en": "He asks, 'How much is this book?'",
+          "ar": "يسأل: كم سعر هذا الكتاب؟"
+        },
+        {
+          "id": 3,
+          "en": "The seller says it is five dollars.",
+          "ar": "يخبره البائع أن سعره خمسة دولارات."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "How much water do you need?",
+          "ar": "كم ماءً تحتاج؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "I need one glass of water.",
+          "ar": "أحتاج كوبًا واحدًا من الماء."
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "key": "which-one",
+      "title": "Which one",
+      "meaning": "أي واحد / أي واحدة",
+      "formula": "Which one + auxiliary / verb...?",
+      "explanation": "Which one لاختيار شيء بين بدائل محددة معروفة، وليس سؤالًا مفتوحًا بالكامل.",
+      "explanationEn": "Which one asks a person to choose among known options.",
+      "contrast": "Which one do you prefer? خيارات محددة؛ What do you want? سؤال مفتوح.",
+      "sourceIds": [
+        578,
+        611
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "Which one do you prefer?",
+          "ar": "أي واحدة تفضل؟",
+          "context": "الاختيار بين كتب",
+          "icon": "📚",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "Which one is your bag?",
+          "ar": "أي واحدة حقيبتك؟",
+          "context": "حقائب متعددة",
+          "icon": "🎒",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "Which one should I choose?",
+          "ar": "أي واحد ينبغي أن أختار؟",
+          "context": "اتخاذ قرار",
+          "icon": "🤔",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "Which one is bigger?",
+          "ar": "أي واحد أكبر؟",
+          "context": "مقارنة حجم",
+          "icon": "📏",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Maya looks at two colorful bags.",
+          "ar": "تنظر مايا إلى حقيبتين ملونتين."
+        },
+        {
+          "id": 2,
+          "en": "Her mother asks, 'Which one do you prefer?'",
+          "ar": "تسألها أمها: أي واحدة تفضلين؟"
+        },
+        {
+          "id": 3,
+          "en": "Maya chooses the blue bag.",
+          "ar": "تختار مايا الحقيبة الزرقاء."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Which one is yours?",
+          "ar": "أي واحد لك؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "The blue one is mine.",
+          "ar": "الأزرق هو لي."
+        }
+      ]
+    }
+  ],
+  "chapters": [
+    {
+      "id": 1,
+      "key": "asking-in-class",
+      "title": "Asking in Class",
+      "titleAr": "الأسئلة داخل الصف",
+      "icon": "🏫",
+      "lines": [
+        {
+          "id": 1,
+          "en": "What is today's lesson?",
+          "ar": "ما درس اليوم؟"
+        },
+        {
+          "id": 2,
+          "en": "Who is our new teacher?",
+          "ar": "من معلمنا الجديد؟"
+        },
+        {
+          "id": 3,
+          "en": "When is the English test?",
+          "ar": "متى اختبار الإنجليزية؟"
+        },
+        {
+          "id": 4,
+          "en": "How do you spell this word?",
+          "ar": "كيف تتهجى هذه الكلمة؟"
+        },
+        {
+          "id": 5,
+          "en": "Do you have a pencil?",
+          "ar": "هل لديك قلم رصاص؟"
+        },
+        {
+          "id": 6,
+          "en": "How many books do we need?",
+          "ar": "كم كتابًا نحتاج؟"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "key": "finding-my-way",
+      "title": "Finding My Way",
+      "titleAr": "البحث عن الطريق",
+      "icon": "🧭",
+      "lines": [
+        {
+          "id": 1,
+          "en": "Where is the bus stop?",
+          "ar": "أين موقف الحافلة؟"
+        },
+        {
+          "id": 2,
+          "en": "Is there a bank nearby?",
+          "ar": "هل يوجد بنك قريب؟"
+        },
+        {
+          "id": 3,
+          "en": "Are there any shops nearby?",
+          "ar": "هل توجد متاجر قريبة؟"
+        },
+        {
+          "id": 4,
+          "en": "When is the next bus?",
+          "ar": "متى الحافلة القادمة؟"
+        },
+        {
+          "id": 5,
+          "en": "How do you get to the park?",
+          "ar": "كيف تصل إلى الحديقة؟"
+        },
+        {
+          "id": 6,
+          "en": "Which one is the right bus?",
+          "ar": "أي حافلة هي الصحيحة؟"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "key": "planning-a-day",
+      "title": "Planning a Day",
+      "titleAr": "التخطيط ليومنا",
+      "icon": "📅",
+      "lines": [
+        {
+          "id": 1,
+          "en": "What do you want to do today?",
+          "ar": "ماذا تريد أن تفعل اليوم؟"
+        },
+        {
+          "id": 2,
+          "en": "Where do you want to go?",
+          "ar": "إلى أين تريد الذهاب؟"
+        },
+        {
+          "id": 3,
+          "en": "Why do you want to visit the park?",
+          "ar": "لماذا تريد زيارة الحديقة؟"
+        },
+        {
+          "id": 4,
+          "en": "When do you want to leave?",
+          "ar": "متى تريد المغادرة؟"
+        },
+        {
+          "id": 5,
+          "en": "How much time do we have?",
+          "ar": "كم وقتًا لدينا؟"
+        },
+        {
+          "id": 6,
+          "en": "How is the weather today?",
+          "ar": "كيف الطقس اليوم؟"
+        }
+      ]
+    }
+  ],
+  "requirements": {
+    "patternCount": 18,
+    "scenesPerPattern": 4,
+    "storyLinesPerPattern": 3,
+    "dialogueTurnsPerPattern": 2,
+    "chapters": 3,
+    "skills": [
+      "التعريف والهوية",
+      "السؤال عن الزمان والمكان والسبب والطريقة",
+      "أسئلة المضارع البسيط",
+      "أسئلة نعم أو لا",
+      "وجود الأشياء وعددها",
+      "الأسعار والكميات والاختيار"
+    ]
+  }
+}

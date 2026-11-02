@@ -1,0 +1,853 @@
+{
+  "schema": 1,
+  "id": "foundation-one",
+  "content_sha256": "7f08c10a7ed08371c24c6f0aafe869e06aa4735402d2db3a54c6b220dcd61f54",
+  "approval": {
+    "status": "reviewed",
+    "by": "Codex linguistic and scene-design review",
+    "date": "2026-11-02",
+    "human_review": false,
+    "notes": "Reviewed authored examples, translations and construction contrasts. Image meaning and independent listening remain separate production gates."
+  },
+  "image_contract": {
+    "columns": 3,
+    "rows": 4,
+    "width": 1536,
+    "height": 2048,
+    "cell_width": 512,
+    "cell_height": 512,
+    "safe_inset_pixels": 40,
+    "max_width": 1536,
+    "max_height": 2048,
+    "order": "row-major-left-to-right"
+  },
+  "events": [
+    {
+      "id": "plan-reviewed",
+      "after": [],
+      "state": "complete"
+    },
+    {
+      "id": "audio-render",
+      "after": [
+        "plan-reviewed"
+      ],
+      "trigger": "push to production/plans or workflow_dispatch",
+      "voices": [
+        "am_adam",
+        "af_bella"
+      ],
+      "alignment": "each exact encoded MP3"
+    },
+    {
+      "id": "image-render",
+      "after": [
+        "plan-reviewed"
+      ],
+      "trigger": "imagegen per pattern; validate grid and meaning"
+    },
+    {
+      "id": "verify",
+      "after": [
+        "audio-render",
+        "image-render"
+      ]
+    },
+    {
+      "id": "publish",
+      "after": [
+        "verify"
+      ]
+    }
+  ],
+  "patterns": [
+    {
+      "id": 102,
+      "key": "that",
+      "form": "That is + singular noun",
+      "title": "ذلك / تلك",
+      "group_id": "g-foundation",
+      "topic": "التعريف والملكية والوجود",
+      "level": "A1–A2",
+      "source": [
+        1
+      ],
+      "explanation_ar": "That is للإشارة إلى شيء واحد بعيد نسبيًا عن المتحدث. لا نخلط بينها وبين These are الخاصة بالجمع.",
+      "explanation_en": "That is points to one thing farther from the speaker.",
+      "comparison": {
+        "ar": "This is = قريب؛ That is = بعيد.",
+        "en": "That is points to one thing farther from the speaker."
+      },
+      "wrong": "That are our school.",
+      "keywords": [
+        "تأسيس",
+        "تعريف",
+        "يومي",
+        "foundation",
+        "that",
+        "إشارة",
+        "مفرد"
+      ],
+      "sentence_ids": [
+        "that-01",
+        "that-02",
+        "that-03",
+        "that-04",
+        "that-05",
+        "that-06",
+        "that-07",
+        "that-08",
+        "that-09",
+        "that-10",
+        "that-11",
+        "that-12"
+      ],
+      "transfer": {
+        "prompt": "صف موقفًا جديدًا في حياتك بهذا النمط، مع تغيير الفعل أو الشيء أو المكان. لا تنسخ مثالًا.",
+        "unseen": true
+      },
+      "source_refs": [
+        {
+          "group": "one",
+          "item_id": 2,
+          "key": "that-is"
+        }
+      ],
+      "prerequisite_ids": [
+        5
+      ]
+    },
+    {
+      "id": 103,
+      "key": "am",
+      "form": "I am / I'm + adjective, noun or place",
+      "title": "أنا",
+      "group_id": "g-foundation",
+      "topic": "التعريف والملكية والوجود",
+      "level": "A1–A2",
+      "source": [
+        15
+      ],
+      "explanation_ar": "I am للتعريف بالنفس أو التعبير عن الحالة. I'm هو الاختصار الطبيعي في الحديث. لا نقول I is.",
+      "explanation_en": "I am introduces who you are or how you feel. I'm is the natural short form.",
+      "comparison": {
+        "ar": "I am = الحاضر؛ I was = الماضي. I am لا تعني I have.",
+        "en": "I am introduces who you are or how you feel. I'm is the natural short form."
+      },
+      "wrong": "I is ready.",
+      "keywords": [
+        "تأسيس",
+        "تعريف",
+        "يومي",
+        "foundation",
+        "am",
+        "تعارف",
+        "هوية"
+      ],
+      "sentence_ids": [
+        "am-01",
+        "am-02",
+        "am-03",
+        "am-04",
+        "am-05",
+        "am-06",
+        "am-07",
+        "am-08",
+        "am-09",
+        "am-10",
+        "am-11",
+        "am-12"
+      ],
+      "transfer": {
+        "prompt": "صف موقفًا جديدًا في حياتك بهذا النمط، مع تغيير الفعل أو الشيء أو المكان. لا تنسخ مثالًا.",
+        "unseen": true
+      },
+      "source_refs": [
+        {
+          "group": "one",
+          "item_id": 3,
+          "key": "i-am"
+        }
+      ],
+      "prerequisite_ids": []
+    },
+    {
+      "id": 104,
+      "key": "it",
+      "form": "It is / It's + complement",
+      "title": "إنه / إنها",
+      "group_id": "g-foundation",
+      "topic": "التعريف والملكية والوجود",
+      "level": "A1–A2",
+      "source": [
+        730
+      ],
+      "explanation_ar": "It is لوصف شيء أو موقف معروف. It's اختصار It is. لا نستخدم It's بمعنى الملكية its.",
+      "explanation_en": "It is describes a thing or a situation. It's is the contracted form of it is.",
+      "comparison": {
+        "ar": "It's = it is أو it has بحسب السياق؛ its = ملكية بدون فاصلة.",
+        "en": "It is describes a thing or a situation. It's is the contracted form of it is."
+      },
+      "wrong": "It are cold.",
+      "keywords": [
+        "تأسيس",
+        "تعريف",
+        "يومي",
+        "foundation",
+        "it",
+        "وصف",
+        "أشياء"
+      ],
+      "sentence_ids": [
+        "it-01",
+        "it-02",
+        "it-03",
+        "it-04",
+        "it-05",
+        "it-06",
+        "it-07",
+        "it-08",
+        "it-09",
+        "it-10",
+        "it-11",
+        "it-12"
+      ],
+      "transfer": {
+        "prompt": "صف موقفًا جديدًا في حياتك بهذا النمط، مع تغيير الفعل أو الشيء أو المكان. لا تنسخ مثالًا.",
+        "unseen": true
+      },
+      "source_refs": [
+        {
+          "group": "one",
+          "item_id": 4,
+          "key": "it-is"
+        }
+      ],
+      "prerequisite_ids": [
+        103
+      ]
+    },
+    {
+      "id": 105,
+      "key": "possess",
+      "form": "I have + noun",
+      "title": "لدي / أملك",
+      "group_id": "g-foundation",
+      "topic": "التعريف والملكية والوجود",
+      "level": "A1–A2",
+      "source": [
+        2
+      ],
+      "explanation_ar": "I have للتعبير عن امتلاك شيء أو وجوده لدينا. بعد I تأتي have وليس has.",
+      "explanation_en": "I have means that something belongs to you or is available to you.",
+      "comparison": {
+        "ar": "I have = أمتلك؛ I have to = يجب عليّ؛ I've got = صيغة أخرى للملكية.",
+        "en": "I have means that something belongs to you or is available to you."
+      },
+      "wrong": "I has two books.",
+      "keywords": [
+        "تأسيس",
+        "تعريف",
+        "يومي",
+        "foundation",
+        "possess",
+        "ملكية",
+        "أشياء"
+      ],
+      "sentence_ids": [
+        "possess-01",
+        "possess-02",
+        "possess-03",
+        "possess-04",
+        "possess-05",
+        "possess-06",
+        "possess-07",
+        "possess-08",
+        "possess-09",
+        "possess-10",
+        "possess-11",
+        "possess-12"
+      ],
+      "transfer": {
+        "prompt": "صف موقفًا جديدًا في حياتك بهذا النمط، مع تغيير الفعل أو الشيء أو المكان. لا تنسخ مثالًا.",
+        "unseen": true
+      },
+      "source_refs": [
+        {
+          "group": "one",
+          "item_id": 5,
+          "key": "i-have"
+        }
+      ],
+      "prerequisite_ids": []
+    },
+    {
+      "id": 106,
+      "key": "got",
+      "form": "I've got + noun",
+      "title": "لدي / معي",
+      "group_id": "g-foundation",
+      "topic": "التعريف والملكية والوجود",
+      "level": "A1–A2",
+      "source": [
+        3
+      ],
+      "explanation_ar": "I've got صيغة شائعة للملكية، وخاصة في الإنجليزية البريطانية. تُعامل هنا بمعنى I have، لكنها ليست مثل I've got to التي تعبر عن الضرورة. هنا have got للامتلاك أو الحالة الحالية. تختلف عن have got to + فعل التي تدل على الضرورة.",
+      "explanation_en": "I've got often means the same as I have when talking about possession. Here have got expresses possession or a current situation. Have got to + verb expresses necessity.",
+      "comparison": {
+        "ar": "I've got a pen = لدي قلم؛ I've got to go = يجب أن أذهب.",
+        "en": "Here have got expresses possession or a current situation. Have got to + verb expresses necessity."
+      },
+      "wrong": "I've got to a ticket.",
+      "keywords": [
+        "تأسيس",
+        "تعريف",
+        "يومي",
+        "foundation",
+        "got",
+        "ملكية",
+        "محادثة"
+      ],
+      "sentence_ids": [
+        "got-01",
+        "got-02",
+        "got-03",
+        "got-04",
+        "got-05",
+        "got-06",
+        "got-07",
+        "got-08",
+        "got-09",
+        "got-10",
+        "got-11",
+        "got-12"
+      ],
+      "transfer": {
+        "prompt": "صف موقفًا جديدًا في حياتك بهذا النمط، مع تغيير الفعل أو الشيء أو المكان. لا تنسخ مثالًا.",
+        "unseen": true
+      },
+      "source_refs": [
+        {
+          "group": "one",
+          "item_id": 6,
+          "key": "ive-got"
+        }
+      ],
+      "prerequisite_ids": [
+        105
+      ]
+    },
+    {
+      "id": 107,
+      "key": "want-noun",
+      "form": "I want + noun",
+      "title": "أريد شيئًا",
+      "group_id": "g-foundation",
+      "topic": "التعريف والملكية والوجود",
+      "level": "A1–A2",
+      "source": [
+        9
+      ],
+      "explanation_ar": "بعد I want يمكن أن يأتي اسم مباشرة، مثل ماء أو كتاب. عندما نريد القيام بفعل نستخدم I want to.",
+      "explanation_en": "I want followed by a noun expresses a desire for a thing.",
+      "comparison": {
+        "ar": "I want water = أريد ماء؛ I want to drink = أريد أن أشرب.",
+        "en": "I want followed by a noun expresses a desire for a thing."
+      },
+      "wrong": "I want to an apple.",
+      "keywords": [
+        "تأسيس",
+        "تعريف",
+        "يومي",
+        "foundation",
+        "want-noun",
+        "رغبات",
+        "أشياء"
+      ],
+      "sentence_ids": [
+        "want-noun-01",
+        "want-noun-02",
+        "want-noun-03",
+        "want-noun-04",
+        "want-noun-05",
+        "want-noun-06",
+        "want-noun-07",
+        "want-noun-08",
+        "want-noun-09",
+        "want-noun-10",
+        "want-noun-11",
+        "want-noun-12"
+      ],
+      "transfer": {
+        "prompt": "صف موقفًا جديدًا في حياتك بهذا النمط، مع تغيير الفعل أو الشيء أو المكان. لا تنسخ مثالًا.",
+        "unseen": true
+      },
+      "source_refs": [
+        {
+          "group": "one",
+          "item_id": 7,
+          "key": "i-want"
+        }
+      ],
+      "prerequisite_ids": []
+    },
+    {
+      "id": 109,
+      "key": "like-noun",
+      "form": "I'd like + noun",
+      "title": "أودّ / أريد بأدب",
+      "group_id": "g-foundation",
+      "topic": "التعريف والملكية والوجود",
+      "level": "A1–A2",
+      "source": [
+        135
+      ],
+      "explanation_ar": "I'd like عبارة مهذبة لطلب شيء. تعادل I would like، وتناسب المطاعم والمواقف الاجتماعية. لا نضع to إذا كان التالي اسمًا.",
+      "explanation_en": "I'd like plus a noun makes a polite request.",
+      "comparison": {
+        "ar": "I'd like tea = أود شايًا؛ I'd like to drink tea = أود شرب الشاي.",
+        "en": "I'd like plus a noun makes a polite request."
+      },
+      "wrong": "I'd like to some water.",
+      "keywords": [
+        "تأسيس",
+        "تعريف",
+        "يومي",
+        "foundation",
+        "like-noun",
+        "تهذيب",
+        "طلبات"
+      ],
+      "sentence_ids": [
+        "like-noun-01",
+        "like-noun-02",
+        "like-noun-03",
+        "like-noun-04",
+        "like-noun-05",
+        "like-noun-06",
+        "like-noun-07",
+        "like-noun-08",
+        "like-noun-09",
+        "like-noun-10",
+        "like-noun-11",
+        "like-noun-12"
+      ],
+      "transfer": {
+        "prompt": "صف موقفًا جديدًا في حياتك بهذا النمط، مع تغيير الفعل أو الشيء أو المكان. لا تنسخ مثالًا.",
+        "unseen": true
+      },
+      "source_refs": [
+        {
+          "group": "one",
+          "item_id": 9,
+          "key": "id-like"
+        }
+      ],
+      "prerequisite_ids": [
+        107
+      ]
+    },
+    {
+      "id": 111,
+      "key": "enjoy",
+      "form": "I like + noun or verb-ing",
+      "title": "أحب / يعجبني",
+      "group_id": "g-foundation",
+      "topic": "التعريف والملكية والوجود",
+      "level": "A1–A2",
+      "source": [
+        126
+      ],
+      "explanation_ar": "نستخدم I like للتفضيلات العامة. يمكن أن يأتي بعدها اسم أو فعل مع ing مثل reading. وهي أهدأ من I love.",
+      "explanation_en": "I like describes things or activities that you enjoy.",
+      "comparison": {
+        "ar": "I like reading = أحب القراءة؛ I want to read = أرغب بالقراءة الآن.",
+        "en": "I like describes things or activities that you enjoy."
+      },
+      "wrong": "I like read books.",
+      "keywords": [
+        "تأسيس",
+        "تعريف",
+        "يومي",
+        "foundation",
+        "enjoy",
+        "تفضيلات",
+        "هوايات"
+      ],
+      "sentence_ids": [
+        "enjoy-01",
+        "enjoy-02",
+        "enjoy-03",
+        "enjoy-04",
+        "enjoy-05",
+        "enjoy-06",
+        "enjoy-07",
+        "enjoy-08",
+        "enjoy-09",
+        "enjoy-10",
+        "enjoy-11",
+        "enjoy-12"
+      ],
+      "transfer": {
+        "prompt": "صف موقفًا جديدًا في حياتك بهذا النمط، مع تغيير الفعل أو الشيء أو المكان. لا تنسخ مثالًا.",
+        "unseen": true
+      },
+      "source_refs": [
+        {
+          "group": "one",
+          "item_id": 11,
+          "key": "i-like"
+        }
+      ],
+      "prerequisite_ids": []
+    },
+    {
+      "id": 112,
+      "key": "dislike",
+      "form": "I don't like + noun or verb-ing",
+      "title": "لا أحب",
+      "group_id": "g-foundation",
+      "topic": "التعريف والملكية والوجود",
+      "level": "A1–A2",
+      "source": [
+        126
+      ],
+      "explanation_ar": "للنفي مع I نستخدم don't قبل like. لا نقول I am not like عندما نقصد عدم تفضيل شيء.",
+      "explanation_en": "I don't like expresses a preference against a thing or activity.",
+      "comparison": {
+        "ar": "I don't like tea = لا أحب الشاي؛ I don't want tea = لا أريد شايًا الآن.",
+        "en": "I don't like expresses a preference against a thing or activity."
+      },
+      "wrong": "I don't likes waiting.",
+      "keywords": [
+        "تأسيس",
+        "تعريف",
+        "يومي",
+        "foundation",
+        "dislike",
+        "تفضيلات",
+        "نفي"
+      ],
+      "sentence_ids": [
+        "dislike-01",
+        "dislike-02",
+        "dislike-03",
+        "dislike-04",
+        "dislike-05",
+        "dislike-06",
+        "dislike-07",
+        "dislike-08",
+        "dislike-09",
+        "dislike-10",
+        "dislike-11",
+        "dislike-12"
+      ],
+      "transfer": {
+        "prompt": "صف موقفًا جديدًا في حياتك بهذا النمط، مع تغيير الفعل أو الشيء أو المكان. لا تنسخ مثالًا.",
+        "unseen": true
+      },
+      "source_refs": [
+        {
+          "group": "one",
+          "item_id": 12,
+          "key": "i-dont-like"
+        }
+      ],
+      "prerequisite_ids": [
+        111
+      ]
+    },
+    {
+      "id": 113,
+      "key": "name",
+      "form": "My name is + name",
+      "title": "اسمي",
+      "group_id": "g-foundation",
+      "topic": "التعريف والملكية والوجود",
+      "level": "A1–A2",
+      "source": [
+        8
+      ],
+      "explanation_ar": "نستخدم My name is للتعريف بالاسم، ويمكن اختصار الحديث بقول I'm + اسم. My للملكية وليس I.",
+      "explanation_en": "My name is introduces your personal name.",
+      "comparison": {
+        "ar": "My name is Ali = اسمي علي؛ I'm Ali = أنا علي.",
+        "en": "My name is introduces your personal name."
+      },
+      "wrong": "My name are Ali.",
+      "keywords": [
+        "تأسيس",
+        "تعريف",
+        "يومي",
+        "foundation",
+        "name",
+        "تعارف",
+        "أسماء"
+      ],
+      "sentence_ids": [
+        "name-01",
+        "name-02",
+        "name-03",
+        "name-04",
+        "name-05",
+        "name-06",
+        "name-07",
+        "name-08",
+        "name-09",
+        "name-10",
+        "name-11",
+        "name-12"
+      ],
+      "transfer": {
+        "prompt": "صف موقفًا جديدًا في حياتك بهذا النمط، مع تغيير الفعل أو الشيء أو المكان. لا تنسخ مثالًا.",
+        "unseen": true
+      },
+      "source_refs": [
+        {
+          "group": "one",
+          "item_id": 13,
+          "key": "my-name-is"
+        }
+      ],
+      "prerequisite_ids": [
+        103
+      ]
+    },
+    {
+      "id": 114,
+      "key": "ask-name",
+      "form": "What's + possessive + name?",
+      "title": "ما اسمك؟",
+      "group_id": "g-foundation",
+      "topic": "التعريف والملكية والوجود",
+      "level": "A1–A2",
+      "source": [
+        8
+      ],
+      "explanation_ar": "What's اختصار What is هنا. يأتي بعدها your name للسؤال عن اسم المخاطب، ونجاوب عادة بـ My name is أو I'm.",
+      "explanation_en": "What's your name asks someone to introduce their name.",
+      "comparison": {
+        "ar": "What's your name? = سؤال؛ My name is ... = جواب.",
+        "en": "What's your name asks someone to introduce their name."
+      },
+      "wrong": "What your name is?",
+      "keywords": [
+        "تأسيس",
+        "تعريف",
+        "يومي",
+        "foundation",
+        "ask-name",
+        "تعارف",
+        "أسئلة"
+      ],
+      "sentence_ids": [
+        "ask-name-01",
+        "ask-name-02",
+        "ask-name-03",
+        "ask-name-04",
+        "ask-name-05",
+        "ask-name-06",
+        "ask-name-07",
+        "ask-name-08",
+        "ask-name-09",
+        "ask-name-10",
+        "ask-name-11",
+        "ask-name-12"
+      ],
+      "transfer": {
+        "prompt": "صف موقفًا جديدًا في حياتك بهذا النمط، مع تغيير الفعل أو الشيء أو المكان. لا تنسخ مثالًا.",
+        "unseen": true
+      },
+      "source_refs": [
+        {
+          "group": "one",
+          "item_id": 14,
+          "key": "whats-your-name"
+        }
+      ],
+      "prerequisite_ids": [
+        113
+      ]
+    },
+    {
+      "id": 116,
+      "key": "these",
+      "form": "These are + plural noun",
+      "title": "هؤلاء / هذه الأشياء",
+      "group_id": "g-foundation",
+      "topic": "التعريف والملكية والوجود",
+      "level": "A1–A2",
+      "source": [
+        1
+      ],
+      "explanation_ar": "These للجمع القريب ونتبعها بـ are، وليس is. المفرد القريب This is.",
+      "explanation_en": "These are introduces more than one person or thing nearby.",
+      "comparison": {
+        "ar": "This is my book = كتاب واحد؛ These are my books = عدة كتب.",
+        "en": "These are introduces more than one person or thing nearby."
+      },
+      "wrong": "These is my books.",
+      "keywords": [
+        "تأسيس",
+        "تعريف",
+        "يومي",
+        "foundation",
+        "these",
+        "إشارة",
+        "جمع"
+      ],
+      "sentence_ids": [
+        "these-01",
+        "these-02",
+        "these-03",
+        "these-04",
+        "these-05",
+        "these-06",
+        "these-07",
+        "these-08",
+        "these-09",
+        "these-10",
+        "these-11",
+        "these-12"
+      ],
+      "transfer": {
+        "prompt": "صف موقفًا جديدًا في حياتك بهذا النمط، مع تغيير الفعل أو الشيء أو المكان. لا تنسخ مثالًا.",
+        "unseen": true
+      },
+      "source_refs": [
+        {
+          "group": "one",
+          "item_id": 16,
+          "key": "these-are"
+        }
+      ],
+      "prerequisite_ids": [
+        5
+      ]
+    },
+    {
+      "id": 117,
+      "key": "there-is",
+      "form": "There is + singular or uncountable noun",
+      "title": "يوجد (مفرد)",
+      "group_id": "g-foundation",
+      "topic": "التعريف والملكية والوجود",
+      "level": "A1–A2",
+      "source": [
+        93
+      ],
+      "explanation_ar": "نستخدم There is عندما نخبر عن وجود شيء واحد أو كمية غير معدودة في مكان. لا تعني هذه الصيغة الإشارة This is.",
+      "explanation_en": "There is says that something exists in a place.",
+      "comparison": {
+        "ar": "There is a chair = يوجد كرسي؛ This is a chair = هذا كرسي.",
+        "en": "There is says that something exists in a place."
+      },
+      "wrong": "There are a book on the table.",
+      "keywords": [
+        "تأسيس",
+        "تعريف",
+        "يومي",
+        "foundation",
+        "there-is",
+        "وجود",
+        "مفرد"
+      ],
+      "sentence_ids": [
+        "there-is-01",
+        "there-is-02",
+        "there-is-03",
+        "there-is-04",
+        "there-is-05",
+        "there-is-06",
+        "there-is-07",
+        "there-is-08",
+        "there-is-09",
+        "there-is-10",
+        "there-is-11",
+        "there-is-12"
+      ],
+      "transfer": {
+        "prompt": "صف موقفًا جديدًا في حياتك بهذا النمط، مع تغيير الفعل أو الشيء أو المكان. لا تنسخ مثالًا.",
+        "unseen": true
+      },
+      "source_refs": [
+        {
+          "group": "one",
+          "item_id": 17,
+          "key": "there-is"
+        }
+      ],
+      "prerequisite_ids": [
+        5,
+        104
+      ]
+    },
+    {
+      "id": 118,
+      "key": "there-are",
+      "form": "There are + plural noun",
+      "title": "يوجد (جمع)",
+      "group_id": "g-foundation",
+      "topic": "التعريف والملكية والوجود",
+      "level": "A1–A2",
+      "source": [
+        276,
+        122
+      ],
+      "explanation_ar": "نستخدم There are للإخبار عن وجود أشياء متعددة. عند السؤال نقول Are there، وللمفرد There is.",
+      "explanation_en": "There are states that two or more things exist in a place.",
+      "comparison": {
+        "ar": "There is one book = مفرد؛ There are two books = جمع.",
+        "en": "There are states that two or more things exist in a place."
+      },
+      "wrong": "There is three chairs here.",
+      "keywords": [
+        "تأسيس",
+        "تعريف",
+        "يومي",
+        "foundation",
+        "there-are",
+        "وجود",
+        "جمع"
+      ],
+      "sentence_ids": [
+        "there-are-01",
+        "there-are-02",
+        "there-are-03",
+        "there-are-04",
+        "there-are-05",
+        "there-are-06",
+        "there-are-07",
+        "there-are-08",
+        "there-are-09",
+        "there-are-10",
+        "there-are-11",
+        "there-are-12"
+      ],
+      "transfer": {
+        "prompt": "صف موقفًا جديدًا في حياتك بهذا النمط، مع تغيير الفعل أو الشيء أو المكان. لا تنسخ مثالًا.",
+        "unseen": true
+      },
+      "source_refs": [
+        {
+          "group": "one",
+          "item_id": 18,
+          "key": "there-are"
+        }
+      ],
+      "prerequisite_ids": [
+        116,
+        117
+      ]
+    }
+  ],
+  "manifest_paths": [
+    "production/manifests/foundation-one-0.json",
+    "production/manifests/foundation-one-1.json",
+    "production/manifests/foundation-one-2.json",
+    "production/manifests/foundation-one-3.json"
+  ],
+  "batch_path": "content/batches/foundation-one.json",
+  "source_group": "one",
+  "assessments_path": "content/batches/foundation-assessments.json"
+}

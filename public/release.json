@@ -1,0 +1,61 @@
+{
+  "schema": 2,
+  "id": "nasaq-independent-v5",
+  "date": "2026-11-02",
+  "repository": "https://github.com/saddamalkhatabi/Learn-English-nasaq",
+  "restore_tag": "restore-before-expansion-20261102",
+  "archive": "downloads/nasaq-release-20261102-v5-app.zip",
+  "archives": [
+    {
+      "path": "downloads/nasaq-release-20261102-v5-app.zip",
+      "role": "application, content, source and checks"
+    },
+    {
+      "path": "downloads/nasaq-release-20261102-v5-media-01.zip",
+      "role": "verified media; extract all volumes together"
+    },
+    {
+      "path": "downloads/nasaq-release-20261102-v5-media-02.zip",
+      "role": "verified media; extract all volumes together"
+    },
+    {
+      "path": "downloads/nasaq-release-20261102-v5-media-03.zip",
+      "role": "verified media; extract all volumes together"
+    }
+  ],
+  "extract_instructions_ar": "نزّل حزمة التطبيق وجميع حزم الوسائط، ثم فكها في المجلد نفسه قبل تشغيل npm start. كل حزمة ZIP مستقلة وسليمة.",
+  "counts": {
+    "published_patterns": 27,
+    "core_sentences": 324,
+    "supplement_sentences": 14,
+    "recording_bindings": 2520,
+    "recordings": 2498,
+    "word_cues": 16896,
+    "scenes": 564,
+    "atlases": 47,
+    "core_questions": 216,
+    "optional_questions": 54,
+    "purpose_routes": 17,
+    "source_entries": 1034,
+    "source_unique_texts": 1000,
+    "source_translations": 1000,
+    "source_audio_ready": 922,
+    "source_scenes_ready": 240,
+    "source_group_items": 180,
+    "organized_catalog_candidates": 180,
+    "remaining_candidates": 153
+  },
+  "audio_workflow": {
+    "run_id": 41404840094,
+    "status": "partial results retained; continuation follows",
+    "url": "https://github.com/saddamalkhatabi/Learn-English-nasaq/actions/runs/41404840094"
+  },
+  "validation": "Structural checks are separate from human listening and full pattern authoring. See source-corpus-audit.json and qa-report-v5.json.",
+  "review_limits": [
+    "Human listening review remains pending.",
+    "1000 translated source references are not 1000 completed 12-example lessons.",
+    "Imported candidates still require full lesson authoring and production.",
+    "Search facets and CEFR ranges are provisional."
+  ],
+  "yem1_integration": "deferred by user"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "learn-english-patterns",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "description": "Learn English through patterns, contextual scenes and synchronized dual voices",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test tests/*.cjs",
+    "check": "npm test && node scripts/verify-media.cjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

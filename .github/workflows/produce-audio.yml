@@ -1,0 +1,93 @@
+name: Produce remaining reviewed audio
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['production/plans/**', 'production/manifests/**', '.github/workflows/produce-audio.yml']
+permissions:
+  contents: read
+concurrency:
+  group: english-patterns-reviewed-audio
+  cancel-in-progress: false
+env:
+  PATTERNS_ROOT: ${{ github.workspace }}
+jobs:
+  plans:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.plan.outputs.matrix }}
+      has_work: ${{ steps.plan.outputs.has_work }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with: {ref: media-tools, path: .media-tools}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - id: plan
+        run: |
+          python .media-tools/scripts/production_matrix.py > matrix.json
+          echo "matrix=$(cat matrix.json)" >> "$GITHUB_OUTPUT"
+          echo "has_work=$(python -c 'import json; print(str(bool(json.load(open("matrix.json"))["include"])).lower())')" >> "$GITHUB_OUTPUT"
+  audio:
+    needs: plans
+    if: needs.plans.outputs.has_work == 'true'
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix: ${{ fromJSON(needs.plans.outputs.matrix) }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with: {ref: media-tools, path: .media-tools}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11', cache: pip, cache-dependency-path: .media-tools/scripts/audio-requirements.txt}
+      - uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/huggingface
+            ~/.cache/torch
+          key: patterns-kokoro094-ctc-v1
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg espeak-ng
+      - run: pip install torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu
+      - run: pip install -r .media-tools/scripts/audio-requirements.txt
+      - run: python .media-tools/scripts/produce_reviewed_audio.py --manifest '${{ matrix.manifest }}'
+      - run: python .media-tools/scripts/produce_reviewed_audio.py --manifest '${{ matrix.manifest }}' --verify-only
+      - name: Preserve successful recordings even after a partial failure
+        if: always()
+        env:
+          MANIFEST: ${{ matrix.manifest }}
+          JOB: ${{ matrix.job }}
+        run: python .media-tools/scripts/stage_production.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: media-${{ matrix.job }}
+          path: production-output/
+          retention-days: 90
+  preserve:
+    if: always() && needs.plans.result == 'success' && needs.plans.outputs.has_work == 'true'
+    needs: [plans, audio]
+    runs-on: ubuntu-latest
+    permissions: {contents: write}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with: {ref: media-tools, path: .media-tools}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - uses: actions/download-artifact@v4
+        with: {pattern: 'media-*', path: incoming}
+      - run: python .media-tools/scripts/merge_production.py --incoming incoming
+      - name: Keep exact results in a permanent production branch
+        run: |
+          git config user.name 'English Patterns media'
+          git config user.email 'noreply@users.noreply.github.com'
+          git add public/assets/audio production/manifests production/results
+          if ! git diff --cached --quiet; then
+            git checkout -b production/run-${{ github.run_id }}
+            git commit -m "Preserve measured audio run ${{ github.run_id }}"
+            git push origin HEAD
+          fi

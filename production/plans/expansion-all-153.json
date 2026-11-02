@@ -1,0 +1,5448 @@
+{
+  "schema": 1,
+  "id": "expansion-all-153",
+  "type": "authored-pattern-expansion",
+  "batch_path": "content/batches/expansion-all-153.json",
+  "content_sha256": "d718fc8f4e6836b9c1459f0096e341ab3b748695cef2d291854cea06cadb4f92",
+  "approval": {
+    "status": "reviewed",
+    "by": "Codex authoring agents and primary integration validation",
+    "date": "2026-11-02",
+    "human_review": false,
+    "notes": "English/Arabic examples and scene briefs assistant-reviewed; complete answer banks and candidate coverage validated. Audio production is independent of lesson publication. Cross-candidate overlaps are logged for reconciliation before promotion."
+  },
+  "image_contract": {
+    "columns": 3,
+    "rows": 4,
+    "width": 1536,
+    "height": 2048,
+    "cell_width": 512,
+    "cell_height": 512,
+    "max_width": 1536,
+    "max_height": 2048,
+    "safe_inset_pixels": 40,
+    "order": "row-major-left-to-right"
+  },
+  "events": [
+    {
+      "id": "plan-reviewed",
+      "after": [],
+      "state": "complete"
+    },
+    {
+      "id": "audio-render",
+      "after": [
+        "plan-reviewed"
+      ],
+      "trigger": "push main / workflow_dispatch",
+      "voices": [
+        "am_adam",
+        "af_bella"
+      ],
+      "alignment": "each exact encoded MP3; preserve partial success"
+    },
+    {
+      "id": "image-render",
+      "after": [
+        "plan-reviewed"
+      ],
+      "state": "deferred at user checkpoint",
+      "trigger": "built-in imagegen per reviewed pattern, explicit grid validation"
+    },
+    {
+      "id": "verify",
+      "after": [
+        "audio-render",
+        "image-render"
+      ]
+    },
+    {
+      "id": "promote-lessons",
+      "after": [
+        "verify"
+      ],
+      "state": "pending; no new lesson publication claimed"
+    }
+  ],
+  "patterns": [
+    {
+      "id": 9017,
+      "catalog_id": "import-two-1",
+      "key": "pattern-9017",
+      "form": "I wake up + optional time / cause / circumstance",
+      "title": "أستيقظ",
+      "source_refs": [
+        {
+          "group": "two",
+          "item_id": 1,
+          "key": "i-wake-up"
+        }
+      ],
+      "source_ids": [
+        121
+      ],
+      "prerequisite_ids": [],
+      "sentence_ids": [
+        "pattern-9017-01",
+        "pattern-9017-02",
+        "pattern-9017-03",
+        "pattern-9017-04",
+        "pattern-9017-05",
+        "pattern-9017-06",
+        "pattern-9017-07",
+        "pattern-9017-08",
+        "pattern-9017-09",
+        "pattern-9017-10",
+        "pattern-9017-11",
+        "pattern-9017-12"
+      ]
+    },
+    {
+      "id": 9018,
+      "catalog_id": "import-two-2",
+      "key": "pattern-9018",
+      "form": "I get up + optional time / purpose / circumstance",
+      "title": "أنهض من السرير",
+      "source_refs": [
+        {
+          "group": "two",
+          "item_id": 2,
+          "key": "i-get-up"
+        }
+      ],
+      "source_ids": [
+        121
+      ],
+      "prerequisite_ids": [
+        "import-two-1"
+      ],
+      "sentence_ids": [
+        "pattern-9018-01",
+        "pattern-9018-02",
+        "pattern-9018-03",
+        "pattern-9018-04",
+        "pattern-9018-05",
+        "pattern-9018-06",
+        "pattern-9018-07",
+        "pattern-9018-08",
+        "pattern-9018-09",
+        "pattern-9018-10",
+        "pattern-9018-11",
+        "pattern-9018-12"
+      ]
+    },
+    {
+      "id": 9019,
+      "catalog_id": "import-two-3",
+      "key": "pattern-9019",
+      "form": "In the morning + جملة / I + فعل + in the morning",
+      "title": "في الصباح",
+      "source_refs": [
+        {
+          "group": "two",
+          "item_id": 3,
+          "key": "in-the-morning"
+        }
+      ],
+      "source_ids": [
+        121
+      ],
+      "prerequisite_ids": [
+        "import-two-1"
+      ],
+      "sentence_ids": [
+        "pattern-9019-01",
+        "pattern-9019-02",
+        "pattern-9019-03",
+        "pattern-9019-04",
+        "pattern-9019-05",
+        "pattern-9019-06",
+        "pattern-9019-07",
+        "pattern-9019-08",
+        "pattern-9019-09",
+        "pattern-9019-10",
+        "pattern-9019-11",
+        "pattern-9019-12"
+      ]
+    },
+    {
+      "id": 9020,
+      "catalog_id": "import-two-4",
+      "key": "pattern-9020",
+      "form": "I brush my teeth + optional time / duration / method",
+      "title": "أنظّف أسناني بالفرشاة",
+      "source_refs": [
+        {
+          "group": "two",
+          "item_id": 4,
+          "key": "i-brush-my-teeth"
+        }
+      ],
+      "source_ids": [
+        125
+      ],
+      "prerequisite_ids": [
+        "import-two-1"
+      ],
+      "sentence_ids": [
+        "pattern-9020-01",
+        "pattern-9020-02",
+        "pattern-9020-03",
+        "pattern-9020-04",
+        "pattern-9020-05",
+        "pattern-9020-06",
+        "pattern-9020-07",
+        "pattern-9020-08",
+        "pattern-9020-09",
+        "pattern-9020-10",
+        "pattern-9020-11",
+        "pattern-9020-12"
+      ]
+    },
+    {
+      "id": 9021,
+      "catalog_id": "import-two-5",
+      "key": "pattern-9021",
+      "form": "I have breakfast + optional time / place / company",
+      "title": "أتناول الإفطار",
+      "source_refs": [
+        {
+          "group": "two",
+          "item_id": 5,
+          "key": "i-have-breakfast"
+        }
+      ],
+      "source_ids": [
+        19
+      ],
+      "prerequisite_ids": [
+        "import-two-1"
+      ],
+      "sentence_ids": [
+        "pattern-9021-01",
+        "pattern-9021-02",
+        "pattern-9021-03",
+        "pattern-9021-04",
+        "pattern-9021-05",
+        "pattern-9021-06",
+        "pattern-9021-07",
+        "pattern-9021-08",
+        "pattern-9021-09",
+        "pattern-9021-10",
+        "pattern-9021-11",
+        "pattern-9021-12"
+      ]
+    },
+    {
+      "id": 9022,
+      "catalog_id": "import-two-6",
+      "key": "pattern-9022",
+      "form": "I go to + مكان",
+      "title": "أذهب إلى",
+      "source_refs": [
+        {
+          "group": "two",
+          "item_id": 6,
+          "key": "i-go-to"
+        }
+      ],
+      "source_ids": [
+        19
+      ],
+      "prerequisite_ids": [
+        "import-two-1"
+      ],
+      "sentence_ids": [
+        "pattern-9022-01",
+        "pattern-9022-02",
+        "pattern-9022-03",
+        "pattern-9022-04",
+        "pattern-9022-05",
+        "pattern-9022-06",
+        "pattern-9022-07",
+        "pattern-9022-08",
+        "pattern-9022-09",
+        "pattern-9022-10",
+        "pattern-9022-11",
+        "pattern-9022-12"
+      ]
+    },
+    {
+      "id": 9023,
+      "catalog_id": "import-two-7",
+      "key": "pattern-9023",
+      "form": "I usually + الفعل الأساسي",
+      "title": "عادةً",
+      "source_refs": [
+        {
+          "group": "two",
+          "item_id": 7,
+          "key": "i-usually"
+        }
+      ],
+      "source_ids": [
+        121
+      ],
+      "prerequisite_ids": [
+        "import-two-1"
+      ],
+      "sentence_ids": [
+        "pattern-9023-01",
+        "pattern-9023-02",
+        "pattern-9023-03",
+        "pattern-9023-04",
+        "pattern-9023-05",
+        "pattern-9023-06",
+        "pattern-9023-07",
+        "pattern-9023-08",
+        "pattern-9023-09",
+        "pattern-9023-10",
+        "pattern-9023-11",
+        "pattern-9023-12"
+      ]
+    },
+    {
+      "id": 9024,
+      "catalog_id": "import-two-8",
+      "key": "pattern-9024",
+      "form": "I always + فعل أساسي",
+      "title": "دائمًا",
+      "source_refs": [
+        {
+          "group": "two",
+          "item_id": 8,
+          "key": "i-always"
+        }
+      ],
+      "source_ids": [
+        125
+      ],
+      "prerequisite_ids": [
+        "import-two-7"
+      ],
+      "sentence_ids": [
+        "pattern-9024-01",
+        "pattern-9024-02",
+        "pattern-9024-03",
+        "pattern-9024-04",
+        "pattern-9024-05",
+        "pattern-9024-06",
+        "pattern-9024-07",
+        "pattern-9024-08",
+        "pattern-9024-09",
+        "pattern-9024-10",
+        "pattern-9024-11",
+        "pattern-9024-12"
+      ]
+    },
+    {
+      "id": 9025,
+      "catalog_id": "import-two-9",
+      "key": "pattern-9025",
+      "form": "I often + فعل أساسي",
+      "title": "غالبًا / كثيرًا",
+      "source_refs": [
+        {
+          "group": "two",
+          "item_id": 9,
+          "key": "i-often"
+        }
+      ],
+      "source_ids": [
+        84
+      ],
+      "prerequisite_ids": [
+        "import-two-7"
+      ],
+      "sentence_ids": [
+        "pattern-9025-01",
+        "pattern-9025-02",
+        "pattern-9025-03",
+        "pattern-9025-04",
+        "pattern-9025-05",
+        "pattern-9025-06",
+        "pattern-9025-07",
+        "pattern-9025-08",
+        "pattern-9025-09",
+        "pattern-9025-10",
+        "pattern-9025-11",
+        "pattern-9025-12"
+      ]
+    },
+    {
+      "id": 9026,
+      "catalog_id": "import-two-10",
+      "key": "pattern-9026",
+      "form": "I sometimes + فعل أساسي",
+      "title": "أحيانًا",
+      "source_refs": [
+        {
+          "group": "two",
+          "item_id": 10,
+          "key": "i-sometimes"
+        }
+      ],
+      "source_ids": [
+        183
+      ],
+      "prerequisite_ids": [
+        "import-two-7"
+      ],
+      "sentence_ids": [
+        "pattern-9026-01",
+        "pattern-9026-02",
+        "pattern-9026-03",
+        "pattern-9026-04",
+        "pattern-9026-05",
+        "pattern-9026-06",
+        "pattern-9026-07",
+        "pattern-9026-08",
+        "pattern-9026-09",
+        "pattern-9026-10",
+        "pattern-9026-11",
+        "pattern-9026-12"
+      ]
+    },
+    {
+      "id": 9027,
+      "catalog_id": "import-two-11",
+      "key": "pattern-9027",
+      "form": "I never + فعل مثبت (بدون don't)",
+      "title": "لا أفعل أبدًا",
+      "source_refs": [
+        {
+          "group": "two",
+          "item_id": 11,
+          "key": "i-never"
+        }
+      ],
+      "source_ids": [
+        120
+      ],
+      "prerequisite_ids": [
+        "import-two-10"
+      ],
+      "sentence_ids": [
+        "pattern-9027-01",
+        "pattern-9027-02",
+        "pattern-9027-03",
+        "pattern-9027-04",
+        "pattern-9027-05",
+        "pattern-9027-06",
+        "pattern-9027-07",
+        "pattern-9027-08",
+        "pattern-9027-09",
+        "pattern-9027-10",
+        "pattern-9027-11",
+        "pattern-9027-12"
+      ]
+    },
+    {
+      "id": 9028,
+      "catalog_id": "import-two-12",
+      "key": "pattern-9028",
+      "form": "I eat + food / meal + optional time / place / circumstance",
+      "title": "آكل / أتناول",
+      "source_refs": [
+        {
+          "group": "two",
+          "item_id": 12,
+          "key": "i-eat"
+        }
+      ],
+      "source_ids": [
+        19
+      ],
+      "prerequisite_ids": [
+        "import-two-5"
+      ],
+      "sentence_ids": [
+        "pattern-9028-01",
+        "pattern-9028-02",
+        "pattern-9028-03",
+        "pattern-9028-04",
+        "pattern-9028-05",
+        "pattern-9028-06",
+        "pattern-9028-07",
+        "pattern-9028-08",
+        "pattern-9028-09",
+        "pattern-9028-10",
+        "pattern-9028-11",
+        "pattern-9028-12"
+      ]
+    },
+    {
+      "id": 9029,
+      "catalog_id": "import-two-13",
+      "key": "pattern-9029",
+      "form": "Before I + فعل مضارع، جملة رئيسية",
+      "title": "قبل أن أفعل",
+      "source_refs": [
+        {
+          "group": "two",
+          "item_id": 13,
+          "key": "before-i"
+        }
+      ],
+      "source_ids": [
+        125,
+        282
+      ],
+      "prerequisite_ids": [
+        "import-two-4"
+      ],
+      "sentence_ids": [
+        "pattern-9029-01",
+        "pattern-9029-02",
+        "pattern-9029-03",
+        "pattern-9029-04",
+        "pattern-9029-05",
+        "pattern-9029-06",
+        "pattern-9029-07",
+        "pattern-9029-08",
+        "pattern-9029-09",
+        "pattern-9029-10",
+        "pattern-9029-11",
+        "pattern-9029-12"
+      ]
+    },
+    {
+      "id": 9030,
+      "catalog_id": "import-two-14",
+      "key": "pattern-9030",
+      "form": "After I + فعل مضارع، جملة رئيسية",
+      "title": "بعد أن أفعل",
+      "source_refs": [
+        {
+          "group": "two",
+          "item_id": 14,
+          "key": "after-i"
+        }
+      ],
+      "source_ids": [
+        110,
+        125
+      ],
+      "prerequisite_ids": [
+        "import-two-13"
+      ],
+      "sentence_ids": [
+        "pattern-9030-01",
+        "pattern-9030-02",
+        "pattern-9030-03",
+        "pattern-9030-04",
+        "pattern-9030-05",
+        "pattern-9030-06",
+        "pattern-9030-07",
+        "pattern-9030-08",
+        "pattern-9030-09",
+        "pattern-9030-10",
+        "pattern-9030-11",
+        "pattern-9030-12"
+      ]
+    },
+    {
+      "id": 9031,
+      "catalog_id": "import-two-15",
+      "key": "pattern-9031",
+      "form": "I + فعل بالمضارع البسيط + every day",
+      "title": "كل يوم",
+      "source_refs": [
+        {
+          "group": "two",
+          "item_id": 15,
+          "key": "every-day"
+        }
+      ],
+      "source_ids": [
+        19
+      ],
+      "prerequisite_ids": [
+        "import-two-7"
+      ],
+      "sentence_ids": [
+        "pattern-9031-01",
+        "pattern-9031-02",
+        "pattern-9031-03",
+        "pattern-9031-04",
+        "pattern-9031-05",
+        "pattern-9031-06",
+        "pattern-9031-07",
+        "pattern-9031-08",
+        "pattern-9031-09",
+        "pattern-9031-10",
+        "pattern-9031-11",
+        "pattern-9031-12"
+      ]
+    },
+    {
+      "id": 9032,
+      "catalog_id": "import-two-16",
+      "key": "pattern-9032",
+      "form": "subject + verb + at night / At night, + clause",
+      "title": "ليلًا / في الليل",
+      "source_refs": [
+        {
+          "group": "two",
+          "item_id": 16,
+          "key": "at-night"
+        }
+      ],
+      "source_ids": [
+        125
+      ],
+      "prerequisite_ids": [
+        "import-two-3"
+      ],
+      "sentence_ids": [
+        "pattern-9032-01",
+        "pattern-9032-02",
+        "pattern-9032-03",
+        "pattern-9032-04",
+        "pattern-9032-05",
+        "pattern-9032-06",
+        "pattern-9032-07",
+        "pattern-9032-08",
+        "pattern-9032-09",
+        "pattern-9032-10",
+        "pattern-9032-11",
+        "pattern-9032-12"
+      ]
+    },
+    {
+      "id": 9033,
+      "catalog_id": "import-two-17",
+      "key": "pattern-9033",
+      "form": "I go to bed + optional time / circumstance",
+      "title": "أذهب إلى الفراش للنوم",
+      "source_refs": [
+        {
+          "group": "two",
+          "item_id": 17,
+          "key": "i-go-to-bed"
+        }
+      ],
+      "source_ids": [
+        125
+      ],
+      "prerequisite_ids": [
+        "import-two-2"
+      ],
+      "sentence_ids": [
+        "pattern-9033-01",
+        "pattern-9033-02",
+        "pattern-9033-03",
+        "pattern-9033-04",
+        "pattern-9033-05",
+        "pattern-9033-06",
+        "pattern-9033-07",
+        "pattern-9033-08",
+        "pattern-9033-09",
+        "pattern-9033-10",
+        "pattern-9033-11",
+        "pattern-9033-12"
+      ]
+    },
+    {
+      "id": 9034,
+      "catalog_id": "import-two-18",
+      "key": "pattern-9034",
+      "form": "On weekends + جملة / I + فعل + on weekends",
+      "title": "في عطلات نهاية الأسبوع",
+      "source_refs": [
+        {
+          "group": "two",
+          "item_id": 18,
+          "key": "on-weekends"
+        }
+      ],
+      "source_ids": [
+        19,
+        84
+      ],
+      "prerequisite_ids": [
+        "import-two-15"
+      ],
+      "sentence_ids": [
+        "pattern-9034-01",
+        "pattern-9034-02",
+        "pattern-9034-03",
+        "pattern-9034-04",
+        "pattern-9034-05",
+        "pattern-9034-06",
+        "pattern-9034-07",
+        "pattern-9034-08",
+        "pattern-9034-09",
+        "pattern-9034-10",
+        "pattern-9034-11",
+        "pattern-9034-12"
+      ]
+    },
+    {
+      "id": 9035,
+      "catalog_id": "import-three-1",
+      "key": "pattern-9035",
+      "form": "I can + base verb",
+      "title": "أستطيع",
+      "source_refs": [
+        {
+          "group": "three",
+          "item_id": 1,
+          "key": "i-can"
+        }
+      ],
+      "source_ids": [
+        5
+      ],
+      "prerequisite_ids": [
+        1
+      ],
+      "sentence_ids": [
+        "pattern-9035-01",
+        "pattern-9035-02",
+        "pattern-9035-03",
+        "pattern-9035-04",
+        "pattern-9035-05",
+        "pattern-9035-06",
+        "pattern-9035-07",
+        "pattern-9035-08",
+        "pattern-9035-09",
+        "pattern-9035-10",
+        "pattern-9035-11",
+        "pattern-9035-12"
+      ]
+    },
+    {
+      "id": 9036,
+      "catalog_id": "import-three-2",
+      "key": "pattern-9036",
+      "form": "I can't + base verb",
+      "title": "لا أستطيع",
+      "source_refs": [
+        {
+          "group": "three",
+          "item_id": 2,
+          "key": "i-cant"
+        }
+      ],
+      "source_ids": [
+        70
+      ],
+      "prerequisite_ids": [
+        "import-three-1"
+      ],
+      "sentence_ids": [
+        "pattern-9036-01",
+        "pattern-9036-02",
+        "pattern-9036-03",
+        "pattern-9036-04",
+        "pattern-9036-05",
+        "pattern-9036-06",
+        "pattern-9036-07",
+        "pattern-9036-08",
+        "pattern-9036-09",
+        "pattern-9036-10",
+        "pattern-9036-11",
+        "pattern-9036-12"
+      ]
+    },
+    {
+      "id": 9037,
+      "catalog_id": "import-three-3",
+      "key": "pattern-9037",
+      "form": "Can you + base verb + ... ?",
+      "title": "هل يمكنك / هل تستطيع",
+      "source_refs": [
+        {
+          "group": "three",
+          "item_id": 3,
+          "key": "can-you"
+        }
+      ],
+      "source_ids": [
+        705
+      ],
+      "prerequisite_ids": [
+        "import-three-1",
+        4
+      ],
+      "sentence_ids": [
+        "pattern-9037-01",
+        "pattern-9037-02",
+        "pattern-9037-03",
+        "pattern-9037-04",
+        "pattern-9037-05",
+        "pattern-9037-06",
+        "pattern-9037-07",
+        "pattern-9037-08",
+        "pattern-9037-09",
+        "pattern-9037-10",
+        "pattern-9037-11",
+        "pattern-9037-12"
+      ]
+    },
+    {
+      "id": 9039,
+      "catalog_id": "import-three-5",
+      "key": "pattern-9039",
+      "form": "Is it okay if + subject + verb ... ?",
+      "title": "هل من المقبول إذا",
+      "source_refs": [
+        {
+          "group": "three",
+          "item_id": 5,
+          "key": "is-it-okay-if"
+        }
+      ],
+      "source_ids": [
+        24
+      ],
+      "prerequisite_ids": [
+        4
+      ],
+      "sentence_ids": [
+        "pattern-9039-01",
+        "pattern-9039-02",
+        "pattern-9039-03",
+        "pattern-9039-04",
+        "pattern-9039-05",
+        "pattern-9039-06",
+        "pattern-9039-07",
+        "pattern-9039-08",
+        "pattern-9039-09",
+        "pattern-9039-10",
+        "pattern-9039-11",
+        "pattern-9039-12"
+      ]
+    },
+    {
+      "id": 9040,
+      "catalog_id": "import-three-6",
+      "key": "pattern-9040",
+      "form": "You may + base verb",
+      "title": "يمكنك / مسموح لك",
+      "source_refs": [
+        {
+          "group": "three",
+          "item_id": 6,
+          "key": "you-may"
+        }
+      ],
+      "source_ids": [
+        43
+      ],
+      "prerequisite_ids": [
+        4
+      ],
+      "sentence_ids": [
+        "pattern-9040-01",
+        "pattern-9040-02",
+        "pattern-9040-03",
+        "pattern-9040-04",
+        "pattern-9040-05",
+        "pattern-9040-06",
+        "pattern-9040-07",
+        "pattern-9040-08",
+        "pattern-9040-09",
+        "pattern-9040-10",
+        "pattern-9040-11",
+        "pattern-9040-12"
+      ]
+    },
+    {
+      "id": 9041,
+      "catalog_id": "import-three-7",
+      "key": "pattern-9041",
+      "form": "I need + noun",
+      "title": "أحتاج إلى",
+      "source_refs": [
+        {
+          "group": "three",
+          "item_id": 7,
+          "key": "i-need"
+        }
+      ],
+      "source_ids": [
+        76
+      ],
+      "prerequisite_ids": [
+        13
+      ],
+      "sentence_ids": [
+        "pattern-9041-01",
+        "pattern-9041-02",
+        "pattern-9041-03",
+        "pattern-9041-04",
+        "pattern-9041-05",
+        "pattern-9041-06",
+        "pattern-9041-07",
+        "pattern-9041-08",
+        "pattern-9041-09",
+        "pattern-9041-10",
+        "pattern-9041-11",
+        "pattern-9041-12"
+      ]
+    },
+    {
+      "id": 9044,
+      "catalog_id": "import-three-10",
+      "key": "pattern-9044",
+      "form": "I don't have to + base verb",
+      "title": "لست مضطرًا إلى",
+      "source_refs": [
+        {
+          "group": "three",
+          "item_id": 10,
+          "key": "dont-have-to"
+        }
+      ],
+      "source_ids": [
+        23
+      ],
+      "prerequisite_ids": [
+        2
+      ],
+      "sentence_ids": [
+        "pattern-9044-01",
+        "pattern-9044-02",
+        "pattern-9044-03",
+        "pattern-9044-04",
+        "pattern-9044-05",
+        "pattern-9044-06",
+        "pattern-9044-07",
+        "pattern-9044-08",
+        "pattern-9044-09",
+        "pattern-9044-10",
+        "pattern-9044-11",
+        "pattern-9044-12"
+      ]
+    },
+    {
+      "id": 9045,
+      "catalog_id": "import-three-11",
+      "key": "pattern-9045",
+      "form": "I must + base verb",
+      "title": "يجب عليّ بشدة",
+      "source_refs": [
+        {
+          "group": "three",
+          "item_id": 11,
+          "key": "i-must"
+        }
+      ],
+      "source_ids": [
+        288
+      ],
+      "prerequisite_ids": [
+        2
+      ],
+      "sentence_ids": [
+        "pattern-9045-01",
+        "pattern-9045-02",
+        "pattern-9045-03",
+        "pattern-9045-04",
+        "pattern-9045-05",
+        "pattern-9045-06",
+        "pattern-9045-07",
+        "pattern-9045-08",
+        "pattern-9045-09",
+        "pattern-9045-10",
+        "pattern-9045-11",
+        "pattern-9045-12"
+      ]
+    },
+    {
+      "id": 9046,
+      "catalog_id": "import-three-12",
+      "key": "pattern-9046",
+      "form": "I should + base verb",
+      "title": "من الأفضل أن / ينبغي لي",
+      "source_refs": [
+        {
+          "group": "three",
+          "item_id": 12,
+          "key": "i-should"
+        }
+      ],
+      "source_ids": [
+        61
+      ],
+      "prerequisite_ids": [
+        "import-three-11"
+      ],
+      "sentence_ids": [
+        "pattern-9046-01",
+        "pattern-9046-02",
+        "pattern-9046-03",
+        "pattern-9046-04",
+        "pattern-9046-05",
+        "pattern-9046-06",
+        "pattern-9046-07",
+        "pattern-9046-08",
+        "pattern-9046-09",
+        "pattern-9046-10",
+        "pattern-9046-11",
+        "pattern-9046-12"
+      ]
+    },
+    {
+      "id": 9047,
+      "catalog_id": "import-three-13",
+      "key": "pattern-9047",
+      "form": "You should + base verb",
+      "title": "ينبغي لك / أنصحك أن",
+      "source_refs": [
+        {
+          "group": "three",
+          "item_id": 13,
+          "key": "you-should"
+        }
+      ],
+      "source_ids": [
+        325
+      ],
+      "prerequisite_ids": [
+        "import-three-12"
+      ],
+      "sentence_ids": [
+        "pattern-9047-01",
+        "pattern-9047-02",
+        "pattern-9047-03",
+        "pattern-9047-04",
+        "pattern-9047-05",
+        "pattern-9047-06",
+        "pattern-9047-07",
+        "pattern-9047-08",
+        "pattern-9047-09",
+        "pattern-9047-10",
+        "pattern-9047-11",
+        "pattern-9047-12"
+      ]
+    },
+    {
+      "id": 9049,
+      "catalog_id": "import-three-15",
+      "key": "pattern-9049",
+      "form": "Let me + base verb",
+      "title": "دعني / اسمح لي",
+      "source_refs": [
+        {
+          "group": "three",
+          "item_id": 15,
+          "key": "let-me"
+        },
+        {
+          "group": "eight",
+          "item_id": 11,
+          "key": "let-me-11"
+        }
+      ],
+      "source_ids": [
+        34,
+        248,
+        803
+      ],
+      "prerequisite_ids": [
+        "import-three-1"
+      ],
+      "sentence_ids": [
+        "pattern-9049-01",
+        "pattern-9049-02",
+        "pattern-9049-03",
+        "pattern-9049-04",
+        "pattern-9049-05",
+        "pattern-9049-06",
+        "pattern-9049-07",
+        "pattern-9049-08",
+        "pattern-9049-09",
+        "pattern-9049-10",
+        "pattern-9049-11",
+        "pattern-9049-12"
+      ]
+    },
+    {
+      "id": 9050,
+      "catalog_id": "import-three-16",
+      "key": "pattern-9050",
+      "form": "Please + base verb / base verb ..., please / Could you + base verb ..., please?",
+      "title": "من فضلك",
+      "source_refs": [
+        {
+          "group": "three",
+          "item_id": 16,
+          "key": "please"
+        }
+      ],
+      "source_ids": [
+        30
+      ],
+      "prerequisite_ids": [
+        4
+      ],
+      "sentence_ids": [
+        "pattern-9050-01",
+        "pattern-9050-02",
+        "pattern-9050-03",
+        "pattern-9050-04",
+        "pattern-9050-05",
+        "pattern-9050-06",
+        "pattern-9050-07",
+        "pattern-9050-08",
+        "pattern-9050-09",
+        "pattern-9050-10",
+        "pattern-9050-11",
+        "pattern-9050-12"
+      ]
+    },
+    {
+      "id": 9051,
+      "catalog_id": "import-three-17",
+      "key": "pattern-9051",
+      "form": "Would you like + noun ... ?",
+      "title": "هل ترغب في / هل تود",
+      "source_refs": [
+        {
+          "group": "three",
+          "item_id": 17,
+          "key": "would-you-like"
+        }
+      ],
+      "source_ids": [
+        13
+      ],
+      "prerequisite_ids": [
+        107
+      ],
+      "sentence_ids": [
+        "pattern-9051-01",
+        "pattern-9051-02",
+        "pattern-9051-03",
+        "pattern-9051-04",
+        "pattern-9051-05",
+        "pattern-9051-06",
+        "pattern-9051-07",
+        "pattern-9051-08",
+        "pattern-9051-09",
+        "pattern-9051-10",
+        "pattern-9051-11",
+        "pattern-9051-12"
+      ]
+    },
+    {
+      "id": 9052,
+      "catalog_id": "import-three-18",
+      "key": "pattern-9052",
+      "form": "Would you like to + base verb ... ?",
+      "title": "هل تود أن / هل ترغب أن",
+      "source_refs": [
+        {
+          "group": "three",
+          "item_id": 18,
+          "key": "would-you-like-to"
+        },
+        {
+          "group": "eight",
+          "item_id": 6,
+          "key": "would-you-like-to-6"
+        }
+      ],
+      "source_ids": [
+        14,
+        13
+      ],
+      "prerequisite_ids": [
+        1,
+        3
+      ],
+      "sentence_ids": [
+        "pattern-9052-01",
+        "pattern-9052-02",
+        "pattern-9052-03",
+        "pattern-9052-04",
+        "pattern-9052-05",
+        "pattern-9052-06",
+        "pattern-9052-07",
+        "pattern-9052-08",
+        "pattern-9052-09",
+        "pattern-9052-10",
+        "pattern-9052-11",
+        "pattern-9052-12"
+      ]
+    },
+    {
+      "id": 9053,
+      "catalog_id": "import-four-1",
+      "key": "pattern-9053",
+      "form": "What is + singular noun / this / that?",
+      "title": "ما هو / ما هي",
+      "source_refs": [
+        {
+          "group": "four",
+          "item_id": 1,
+          "key": "what-is"
+        }
+      ],
+      "source_ids": [
+        518,
+        506
+      ],
+      "prerequisite_ids": [
+        5
+      ],
+      "sentence_ids": [
+        "pattern-9053-01",
+        "pattern-9053-02",
+        "pattern-9053-03",
+        "pattern-9053-04",
+        "pattern-9053-05",
+        "pattern-9053-06",
+        "pattern-9053-07",
+        "pattern-9053-08",
+        "pattern-9053-09",
+        "pattern-9053-10",
+        "pattern-9053-11",
+        "pattern-9053-12"
+      ]
+    },
+    {
+      "id": 9054,
+      "catalog_id": "import-four-2",
+      "key": "pattern-9054",
+      "form": "Where is + singular person / thing?",
+      "title": "أين يوجد / أين هي",
+      "source_refs": [
+        {
+          "group": "four",
+          "item_id": 2,
+          "key": "where-is"
+        }
+      ],
+      "source_ids": [
+        589
+      ],
+      "prerequisite_ids": [
+        "import-four-1"
+      ],
+      "sentence_ids": [
+        "pattern-9054-01",
+        "pattern-9054-02",
+        "pattern-9054-03",
+        "pattern-9054-04",
+        "pattern-9054-05",
+        "pattern-9054-06",
+        "pattern-9054-07",
+        "pattern-9054-08",
+        "pattern-9054-09",
+        "pattern-9054-10",
+        "pattern-9054-11",
+        "pattern-9054-12"
+      ]
+    },
+    {
+      "id": 9055,
+      "catalog_id": "import-four-3",
+      "key": "pattern-9055",
+      "form": "Who is + person?",
+      "title": "من هو / من هي",
+      "source_refs": [
+        {
+          "group": "four",
+          "item_id": 3,
+          "key": "who-is"
+        }
+      ],
+      "source_ids": [
+        511,
+        545
+      ],
+      "prerequisite_ids": [
+        "import-four-1"
+      ],
+      "sentence_ids": [
+        "pattern-9055-01",
+        "pattern-9055-02",
+        "pattern-9055-03",
+        "pattern-9055-04",
+        "pattern-9055-05",
+        "pattern-9055-06",
+        "pattern-9055-07",
+        "pattern-9055-08",
+        "pattern-9055-09",
+        "pattern-9055-10",
+        "pattern-9055-11",
+        "pattern-9055-12"
+      ]
+    },
+    {
+      "id": 9056,
+      "catalog_id": "import-four-4",
+      "key": "pattern-9056",
+      "form": "When is + event / singular subject?",
+      "title": "متى يكون / متى موعد",
+      "source_refs": [
+        {
+          "group": "four",
+          "item_id": 4,
+          "key": "when-is"
+        }
+      ],
+      "source_ids": [
+        557,
+        528
+      ],
+      "prerequisite_ids": [
+        "import-four-1",
+        "import-two-3"
+      ],
+      "sentence_ids": [
+        "pattern-9056-01",
+        "pattern-9056-02",
+        "pattern-9056-03",
+        "pattern-9056-04",
+        "pattern-9056-05",
+        "pattern-9056-06",
+        "pattern-9056-07",
+        "pattern-9056-08",
+        "pattern-9056-09",
+        "pattern-9056-10",
+        "pattern-9056-11",
+        "pattern-9056-12"
+      ]
+    },
+    {
+      "id": 9057,
+      "catalog_id": "import-four-5",
+      "key": "pattern-9057",
+      "form": "Why is + singular subject + adjective?",
+      "title": "لماذا يكون / لماذا هو",
+      "source_refs": [
+        {
+          "group": "four",
+          "item_id": 5,
+          "key": "why-is"
+        }
+      ],
+      "source_ids": [
+        517,
+        566
+      ],
+      "prerequisite_ids": [
+        "import-four-1"
+      ],
+      "sentence_ids": [
+        "pattern-9057-01",
+        "pattern-9057-02",
+        "pattern-9057-03",
+        "pattern-9057-04",
+        "pattern-9057-05",
+        "pattern-9057-06",
+        "pattern-9057-07",
+        "pattern-9057-08",
+        "pattern-9057-09",
+        "pattern-9057-10",
+        "pattern-9057-11",
+        "pattern-9057-12"
+      ]
+    },
+    {
+      "id": 9058,
+      "catalog_id": "import-four-6",
+      "key": "pattern-9058",
+      "form": "How is + person / thing?",
+      "title": "كيف حال / كيف يكون",
+      "source_refs": [
+        {
+          "group": "four",
+          "item_id": 6,
+          "key": "how-is"
+        }
+      ],
+      "source_ids": [
+        516,
+        567
+      ],
+      "prerequisite_ids": [
+        "import-four-1"
+      ],
+      "sentence_ids": [
+        "pattern-9058-01",
+        "pattern-9058-02",
+        "pattern-9058-03",
+        "pattern-9058-04",
+        "pattern-9058-05",
+        "pattern-9058-06",
+        "pattern-9058-07",
+        "pattern-9058-08",
+        "pattern-9058-09",
+        "pattern-9058-10",
+        "pattern-9058-11",
+        "pattern-9058-12"
+      ]
+    },
+    {
+      "id": 9059,
+      "catalog_id": "import-four-7",
+      "key": "pattern-9059",
+      "form": "What do you + base verb...?",
+      "title": "ماذا تفعل / ماذا",
+      "source_refs": [
+        {
+          "group": "four",
+          "item_id": 7,
+          "key": "what-do-you"
+        }
+      ],
+      "source_ids": [
+        21,
+        550
+      ],
+      "prerequisite_ids": [
+        "import-four-12"
+      ],
+      "sentence_ids": [
+        "pattern-9059-01",
+        "pattern-9059-02",
+        "pattern-9059-03",
+        "pattern-9059-04",
+        "pattern-9059-05",
+        "pattern-9059-06",
+        "pattern-9059-07",
+        "pattern-9059-08",
+        "pattern-9059-09",
+        "pattern-9059-10",
+        "pattern-9059-11",
+        "pattern-9059-12"
+      ]
+    },
+    {
+      "id": 9060,
+      "catalog_id": "import-four-8",
+      "key": "pattern-9060",
+      "form": "Where do you + base verb...?",
+      "title": "أين تفعل / إلى أين",
+      "source_refs": [
+        {
+          "group": "four",
+          "item_id": 8,
+          "key": "where-do-you"
+        }
+      ],
+      "source_ids": [
+        598,
+        653
+      ],
+      "prerequisite_ids": [
+        "import-four-12"
+      ],
+      "sentence_ids": [
+        "pattern-9060-01",
+        "pattern-9060-02",
+        "pattern-9060-03",
+        "pattern-9060-04",
+        "pattern-9060-05",
+        "pattern-9060-06",
+        "pattern-9060-07",
+        "pattern-9060-08",
+        "pattern-9060-09",
+        "pattern-9060-10",
+        "pattern-9060-11",
+        "pattern-9060-12"
+      ]
+    },
+    {
+      "id": 9061,
+      "catalog_id": "import-four-9",
+      "key": "pattern-9061",
+      "form": "When do you + base verb...?",
+      "title": "متى تفعل",
+      "source_refs": [
+        {
+          "group": "four",
+          "item_id": 9,
+          "key": "when-do-you"
+        }
+      ],
+      "source_ids": [
+        507,
+        528
+      ],
+      "prerequisite_ids": [
+        "import-four-12"
+      ],
+      "sentence_ids": [
+        "pattern-9061-01",
+        "pattern-9061-02",
+        "pattern-9061-03",
+        "pattern-9061-04",
+        "pattern-9061-05",
+        "pattern-9061-06",
+        "pattern-9061-07",
+        "pattern-9061-08",
+        "pattern-9061-09",
+        "pattern-9061-10",
+        "pattern-9061-11",
+        "pattern-9061-12"
+      ]
+    },
+    {
+      "id": 9062,
+      "catalog_id": "import-four-10",
+      "key": "pattern-9062",
+      "form": "Why do you + base verb...?",
+      "title": "لماذا تفعل",
+      "source_refs": [
+        {
+          "group": "four",
+          "item_id": 10,
+          "key": "why-do-you"
+        }
+      ],
+      "source_ids": [
+        512,
+        593
+      ],
+      "prerequisite_ids": [
+        "import-four-12"
+      ],
+      "sentence_ids": [
+        "pattern-9062-01",
+        "pattern-9062-02",
+        "pattern-9062-03",
+        "pattern-9062-04",
+        "pattern-9062-05",
+        "pattern-9062-06",
+        "pattern-9062-07",
+        "pattern-9062-08",
+        "pattern-9062-09",
+        "pattern-9062-10",
+        "pattern-9062-11",
+        "pattern-9062-12"
+      ]
+    },
+    {
+      "id": 9063,
+      "catalog_id": "import-four-11",
+      "key": "pattern-9063",
+      "form": "How do you + base verb...?",
+      "title": "كيف تفعل",
+      "source_refs": [
+        {
+          "group": "four",
+          "item_id": 11,
+          "key": "how-do-you"
+        }
+      ],
+      "source_ids": [
+        536,
+        584
+      ],
+      "prerequisite_ids": [
+        "import-four-12"
+      ],
+      "sentence_ids": [
+        "pattern-9063-01",
+        "pattern-9063-02",
+        "pattern-9063-03",
+        "pattern-9063-04",
+        "pattern-9063-05",
+        "pattern-9063-06",
+        "pattern-9063-07",
+        "pattern-9063-08",
+        "pattern-9063-09",
+        "pattern-9063-10",
+        "pattern-9063-11",
+        "pattern-9063-12"
+      ]
+    },
+    {
+      "id": 9064,
+      "catalog_id": "import-four-12",
+      "key": "pattern-9064",
+      "form": "Do you + base verb...?",
+      "title": "هل تفعل",
+      "source_refs": [
+        {
+          "group": "four",
+          "item_id": 12,
+          "key": "do-you"
+        }
+      ],
+      "source_ids": [
+        12,
+        504
+      ],
+      "prerequisite_ids": [
+        "import-two-15"
+      ],
+      "sentence_ids": [
+        "pattern-9064-01",
+        "pattern-9064-02",
+        "pattern-9064-03",
+        "pattern-9064-04",
+        "pattern-9064-05",
+        "pattern-9064-06",
+        "pattern-9064-07",
+        "pattern-9064-08",
+        "pattern-9064-09",
+        "pattern-9064-10",
+        "pattern-9064-11",
+        "pattern-9064-12"
+      ]
+    },
+    {
+      "id": 9065,
+      "catalog_id": "import-four-13",
+      "key": "pattern-9065",
+      "form": "Does + he / she + base verb...?",
+      "title": "هل هو يفعل / هل هي تفعل",
+      "source_refs": [
+        {
+          "group": "four",
+          "item_id": 13,
+          "key": "does-he"
+        }
+      ],
+      "source_ids": [
+        569
+      ],
+      "prerequisite_ids": [
+        "import-four-12"
+      ],
+      "sentence_ids": [
+        "pattern-9065-01",
+        "pattern-9065-02",
+        "pattern-9065-03",
+        "pattern-9065-04",
+        "pattern-9065-05",
+        "pattern-9065-06",
+        "pattern-9065-07",
+        "pattern-9065-08",
+        "pattern-9065-09",
+        "pattern-9065-10",
+        "pattern-9065-11",
+        "pattern-9065-12"
+      ]
+    },
+    {
+      "id": 9066,
+      "catalog_id": "import-four-14",
+      "key": "pattern-9066",
+      "form": "Is there + singular / uncountable noun...?",
+      "title": "هل يوجد مفرد",
+      "source_refs": [
+        {
+          "group": "four",
+          "item_id": 14,
+          "key": "is-there"
+        }
+      ],
+      "source_ids": [
+        616,
+        639
+      ],
+      "prerequisite_ids": [
+        117
+      ],
+      "sentence_ids": [
+        "pattern-9066-01",
+        "pattern-9066-02",
+        "pattern-9066-03",
+        "pattern-9066-04",
+        "pattern-9066-05",
+        "pattern-9066-06",
+        "pattern-9066-07",
+        "pattern-9066-08",
+        "pattern-9066-09",
+        "pattern-9066-10",
+        "pattern-9066-11",
+        "pattern-9066-12"
+      ]
+    },
+    {
+      "id": 9067,
+      "catalog_id": "import-four-15",
+      "key": "pattern-9067",
+      "form": "Are there + plural noun...?",
+      "title": "هل توجد أشياء متعددة",
+      "source_refs": [
+        {
+          "group": "four",
+          "item_id": 15,
+          "key": "are-there"
+        }
+      ],
+      "source_ids": [
+        525
+      ],
+      "prerequisite_ids": [
+        "import-four-14",
+        118
+      ],
+      "sentence_ids": [
+        "pattern-9067-01",
+        "pattern-9067-02",
+        "pattern-9067-03",
+        "pattern-9067-04",
+        "pattern-9067-05",
+        "pattern-9067-06",
+        "pattern-9067-07",
+        "pattern-9067-08",
+        "pattern-9067-09",
+        "pattern-9067-10",
+        "pattern-9067-11",
+        "pattern-9067-12"
+      ]
+    },
+    {
+      "id": 9068,
+      "catalog_id": "import-four-16",
+      "key": "pattern-9068",
+      "form": "How many + countable plural noun...?",
+      "title": "كم عدد",
+      "source_refs": [
+        {
+          "group": "four",
+          "item_id": 16,
+          "key": "how-many"
+        }
+      ],
+      "source_ids": [
+        514,
+        608
+      ],
+      "prerequisite_ids": [
+        "import-four-15"
+      ],
+      "sentence_ids": [
+        "pattern-9068-01",
+        "pattern-9068-02",
+        "pattern-9068-03",
+        "pattern-9068-04",
+        "pattern-9068-05",
+        "pattern-9068-06",
+        "pattern-9068-07",
+        "pattern-9068-08",
+        "pattern-9068-09",
+        "pattern-9068-10",
+        "pattern-9068-11",
+        "pattern-9068-12"
+      ]
+    },
+    {
+      "id": 9069,
+      "catalog_id": "import-four-17",
+      "key": "pattern-9069",
+      "form": "How much + uncountable noun...? / How much + be ...? / How much + do/does ... cost?",
+      "title": "كم المقدار / ما السعر",
+      "source_refs": [
+        {
+          "group": "four",
+          "item_id": 17,
+          "key": "how-much"
+        }
+      ],
+      "source_ids": [
+        646,
+        597
+      ],
+      "prerequisite_ids": [
+        "import-three-7",
+        "import-four-14"
+      ],
+      "sentence_ids": [
+        "pattern-9069-01",
+        "pattern-9069-02",
+        "pattern-9069-03",
+        "pattern-9069-04",
+        "pattern-9069-05",
+        "pattern-9069-06",
+        "pattern-9069-07",
+        "pattern-9069-08",
+        "pattern-9069-09",
+        "pattern-9069-10",
+        "pattern-9069-11",
+        "pattern-9069-12"
+      ]
+    },
+    {
+      "id": 9070,
+      "catalog_id": "import-four-18",
+      "key": "pattern-9070",
+      "form": "Which one + auxiliary / verb...?",
+      "title": "أي واحد / أي واحدة",
+      "source_refs": [
+        {
+          "group": "four",
+          "item_id": 18,
+          "key": "which-one"
+        }
+      ],
+      "source_ids": [
+        578,
+        611
+      ],
+      "prerequisite_ids": [
+        "import-four-1",
+        "import-four-12"
+      ],
+      "sentence_ids": [
+        "pattern-9070-01",
+        "pattern-9070-02",
+        "pattern-9070-03",
+        "pattern-9070-04",
+        "pattern-9070-05",
+        "pattern-9070-06",
+        "pattern-9070-07",
+        "pattern-9070-08",
+        "pattern-9070-09",
+        "pattern-9070-10",
+        "pattern-9070-11",
+        "pattern-9070-12"
+      ]
+    },
+    {
+      "id": 9071,
+      "catalog_id": "import-five-1",
+      "key": "pattern-9071",
+      "form": "I was + adjective / noun / place",
+      "title": "كنتُ",
+      "source_refs": [
+        {
+          "group": "five",
+          "item_id": 1,
+          "key": "i-was"
+        }
+      ],
+      "source_ids": [
+        6,
+        238,
+        251
+      ],
+      "prerequisite_ids": [
+        103
+      ],
+      "sentence_ids": [
+        "pattern-9071-01",
+        "pattern-9071-02",
+        "pattern-9071-03",
+        "pattern-9071-04",
+        "pattern-9071-05",
+        "pattern-9071-06",
+        "pattern-9071-07",
+        "pattern-9071-08",
+        "pattern-9071-09",
+        "pattern-9071-10",
+        "pattern-9071-11",
+        "pattern-9071-12"
+      ]
+    },
+    {
+      "id": 9072,
+      "catalog_id": "import-five-2",
+      "key": "pattern-9072",
+      "form": "I wasn't + adjective / noun / place",
+      "title": "لم أكن",
+      "source_refs": [
+        {
+          "group": "five",
+          "item_id": 2,
+          "key": "i-wasnt"
+        }
+      ],
+      "source_ids": [
+        6,
+        238
+      ],
+      "prerequisite_ids": [
+        "import-five-1"
+      ],
+      "sentence_ids": [
+        "pattern-9072-01",
+        "pattern-9072-02",
+        "pattern-9072-03",
+        "pattern-9072-04",
+        "pattern-9072-05",
+        "pattern-9072-06",
+        "pattern-9072-07",
+        "pattern-9072-08",
+        "pattern-9072-09",
+        "pattern-9072-10",
+        "pattern-9072-11",
+        "pattern-9072-12"
+      ]
+    },
+    {
+      "id": 9073,
+      "catalog_id": "import-five-3",
+      "key": "pattern-9073",
+      "form": "Were you + adjective / place / noun?",
+      "title": "هل كنتَ / كنتم",
+      "source_refs": [
+        {
+          "group": "five",
+          "item_id": 3,
+          "key": "were-you"
+        }
+      ],
+      "source_ids": [
+        610,
+        331
+      ],
+      "prerequisite_ids": [
+        "import-five-1"
+      ],
+      "sentence_ids": [
+        "pattern-9073-01",
+        "pattern-9073-02",
+        "pattern-9073-03",
+        "pattern-9073-04",
+        "pattern-9073-05",
+        "pattern-9073-06",
+        "pattern-9073-07",
+        "pattern-9073-08",
+        "pattern-9073-09",
+        "pattern-9073-10",
+        "pattern-9073-11",
+        "pattern-9073-12"
+      ]
+    },
+    {
+      "id": 9074,
+      "catalog_id": "import-five-4",
+      "key": "pattern-9074",
+      "form": "I went + to + place / I went home",
+      "title": "ذهبتُ",
+      "source_refs": [
+        {
+          "group": "five",
+          "item_id": 4,
+          "key": "i-went"
+        }
+      ],
+      "source_ids": [
+        188,
+        274
+      ],
+      "prerequisite_ids": [
+        103
+      ],
+      "sentence_ids": [
+        "pattern-9074-01",
+        "pattern-9074-02",
+        "pattern-9074-03",
+        "pattern-9074-04",
+        "pattern-9074-05",
+        "pattern-9074-06",
+        "pattern-9074-07",
+        "pattern-9074-08",
+        "pattern-9074-09",
+        "pattern-9074-10",
+        "pattern-9074-11",
+        "pattern-9074-12"
+      ]
+    },
+    {
+      "id": 9075,
+      "catalog_id": "import-five-5",
+      "key": "pattern-9075",
+      "form": "I didn't + base verb",
+      "title": "لم أفعل",
+      "source_refs": [
+        {
+          "group": "five",
+          "item_id": 5,
+          "key": "i-didnt"
+        }
+      ],
+      "source_ids": [
+        160,
+        265
+      ],
+      "prerequisite_ids": [
+        103
+      ],
+      "sentence_ids": [
+        "pattern-9075-01",
+        "pattern-9075-02",
+        "pattern-9075-03",
+        "pattern-9075-04",
+        "pattern-9075-05",
+        "pattern-9075-06",
+        "pattern-9075-07",
+        "pattern-9075-08",
+        "pattern-9075-09",
+        "pattern-9075-10",
+        "pattern-9075-11",
+        "pattern-9075-12"
+      ]
+    },
+    {
+      "id": 9076,
+      "catalog_id": "import-five-6",
+      "key": "pattern-9076",
+      "form": "Did you + base verb?",
+      "title": "هل فعلتَ",
+      "source_refs": [
+        {
+          "group": "five",
+          "item_id": 6,
+          "key": "did-you"
+        }
+      ],
+      "source_ids": [
+        519,
+        522
+      ],
+      "prerequisite_ids": [
+        103
+      ],
+      "sentence_ids": [
+        "pattern-9076-01",
+        "pattern-9076-02",
+        "pattern-9076-03",
+        "pattern-9076-04",
+        "pattern-9076-05",
+        "pattern-9076-06",
+        "pattern-9076-07",
+        "pattern-9076-08",
+        "pattern-9076-09",
+        "pattern-9076-10",
+        "pattern-9076-11",
+        "pattern-9076-12"
+      ]
+    },
+    {
+      "id": 9077,
+      "catalog_id": "import-five-7",
+      "key": "pattern-9077",
+      "form": "I had + noun",
+      "title": "كان لدي",
+      "source_refs": [
+        {
+          "group": "five",
+          "item_id": 7,
+          "key": "i-had"
+        }
+      ],
+      "source_ids": [
+        300,
+        279
+      ],
+      "prerequisite_ids": [
+        103
+      ],
+      "sentence_ids": [
+        "pattern-9077-01",
+        "pattern-9077-02",
+        "pattern-9077-03",
+        "pattern-9077-04",
+        "pattern-9077-05",
+        "pattern-9077-06",
+        "pattern-9077-07",
+        "pattern-9077-08",
+        "pattern-9077-09",
+        "pattern-9077-10",
+        "pattern-9077-11",
+        "pattern-9077-12"
+      ]
+    },
+    {
+      "id": 9078,
+      "catalog_id": "import-five-8",
+      "key": "pattern-9078",
+      "form": "I saw + object",
+      "title": "رأيتُ",
+      "source_refs": [
+        {
+          "group": "five",
+          "item_id": 8,
+          "key": "i-saw"
+        }
+      ],
+      "source_ids": [
+        378,
+        922
+      ],
+      "prerequisite_ids": [
+        103
+      ],
+      "sentence_ids": [
+        "pattern-9078-01",
+        "pattern-9078-02",
+        "pattern-9078-03",
+        "pattern-9078-04",
+        "pattern-9078-05",
+        "pattern-9078-06",
+        "pattern-9078-07",
+        "pattern-9078-08",
+        "pattern-9078-09",
+        "pattern-9078-10",
+        "pattern-9078-11",
+        "pattern-9078-12"
+      ]
+    },
+    {
+      "id": 9079,
+      "catalog_id": "import-five-9",
+      "key": "pattern-9079",
+      "form": "I met + person",
+      "title": "قابلتُ",
+      "source_refs": [
+        {
+          "group": "five",
+          "item_id": 9,
+          "key": "i-met"
+        }
+      ],
+      "source_ids": [
+        746,
+        188
+      ],
+      "prerequisite_ids": [
+        103
+      ],
+      "sentence_ids": [
+        "pattern-9079-01",
+        "pattern-9079-02",
+        "pattern-9079-03",
+        "pattern-9079-04",
+        "pattern-9079-05",
+        "pattern-9079-06",
+        "pattern-9079-07",
+        "pattern-9079-08",
+        "pattern-9079-09",
+        "pattern-9079-10",
+        "pattern-9079-11",
+        "pattern-9079-12"
+      ]
+    },
+    {
+      "id": 9080,
+      "catalog_id": "import-five-10",
+      "key": "pattern-9080",
+      "form": "I bought + noun",
+      "title": "اشتريتُ",
+      "source_refs": [
+        {
+          "group": "five",
+          "item_id": 10,
+          "key": "i-bought"
+        }
+      ],
+      "source_ids": [
+        266,
+        442
+      ],
+      "prerequisite_ids": [
+        103
+      ],
+      "sentence_ids": [
+        "pattern-9080-01",
+        "pattern-9080-02",
+        "pattern-9080-03",
+        "pattern-9080-04",
+        "pattern-9080-05",
+        "pattern-9080-06",
+        "pattern-9080-07",
+        "pattern-9080-08",
+        "pattern-9080-09",
+        "pattern-9080-10",
+        "pattern-9080-11",
+        "pattern-9080-12"
+      ]
+    },
+    {
+      "id": 9081,
+      "catalog_id": "import-five-11",
+      "key": "pattern-9081",
+      "form": "I made + noun",
+      "title": "صنعتُ / أعددتُ",
+      "source_refs": [
+        {
+          "group": "five",
+          "item_id": 11,
+          "key": "i-made"
+        }
+      ],
+      "source_ids": [
+        242,
+        617
+      ],
+      "prerequisite_ids": [
+        103
+      ],
+      "sentence_ids": [
+        "pattern-9081-01",
+        "pattern-9081-02",
+        "pattern-9081-03",
+        "pattern-9081-04",
+        "pattern-9081-05",
+        "pattern-9081-06",
+        "pattern-9081-07",
+        "pattern-9081-08",
+        "pattern-9081-09",
+        "pattern-9081-10",
+        "pattern-9081-11",
+        "pattern-9081-12"
+      ]
+    },
+    {
+      "id": 9082,
+      "catalog_id": "import-five-12",
+      "key": "pattern-9082",
+      "form": "I forgot to + base verb",
+      "title": "نسيتُ أن",
+      "source_refs": [
+        {
+          "group": "five",
+          "item_id": 12,
+          "key": "i-forgot-to"
+        }
+      ],
+      "source_ids": [
+        18,
+        198
+      ],
+      "prerequisite_ids": [
+        103
+      ],
+      "sentence_ids": [
+        "pattern-9082-01",
+        "pattern-9082-02",
+        "pattern-9082-03",
+        "pattern-9082-04",
+        "pattern-9082-05",
+        "pattern-9082-06",
+        "pattern-9082-07",
+        "pattern-9082-08",
+        "pattern-9082-09",
+        "pattern-9082-10",
+        "pattern-9082-11",
+        "pattern-9082-12"
+      ]
+    },
+    {
+      "id": 9083,
+      "catalog_id": "import-five-13",
+      "key": "pattern-9083",
+      "form": "I decided to + base verb",
+      "title": "قررتُ أن",
+      "source_refs": [
+        {
+          "group": "five",
+          "item_id": 13,
+          "key": "i-decided-to"
+        }
+      ],
+      "source_ids": [
+        53,
+        294
+      ],
+      "prerequisite_ids": [
+        103
+      ],
+      "sentence_ids": [
+        "pattern-9083-01",
+        "pattern-9083-02",
+        "pattern-9083-03",
+        "pattern-9083-04",
+        "pattern-9083-05",
+        "pattern-9083-06",
+        "pattern-9083-07",
+        "pattern-9083-08",
+        "pattern-9083-09",
+        "pattern-9083-10",
+        "pattern-9083-11",
+        "pattern-9083-12"
+      ]
+    },
+    {
+      "id": 9084,
+      "catalog_id": "import-five-14",
+      "key": "pattern-9084",
+      "form": "I started + verb-ing / to + verb",
+      "title": "بدأتُ",
+      "source_refs": [
+        {
+          "group": "five",
+          "item_id": 14,
+          "key": "i-started"
+        }
+      ],
+      "source_ids": [
+        261,
+        196
+      ],
+      "prerequisite_ids": [
+        103
+      ],
+      "sentence_ids": [
+        "pattern-9084-01",
+        "pattern-9084-02",
+        "pattern-9084-03",
+        "pattern-9084-04",
+        "pattern-9084-05",
+        "pattern-9084-06",
+        "pattern-9084-07",
+        "pattern-9084-08",
+        "pattern-9084-09",
+        "pattern-9084-10",
+        "pattern-9084-11",
+        "pattern-9084-12"
+      ]
+    },
+    {
+      "id": 9086,
+      "catalog_id": "import-five-16",
+      "key": "pattern-9086",
+      "form": "I was + verb-ing",
+      "title": "كنتُ أفعل",
+      "source_refs": [
+        {
+          "group": "five",
+          "item_id": 16,
+          "key": "i-was-doing"
+        }
+      ],
+      "source_ids": [
+        553,
+        330
+      ],
+      "prerequisite_ids": [
+        "import-five-1"
+      ],
+      "sentence_ids": [
+        "pattern-9086-01",
+        "pattern-9086-02",
+        "pattern-9086-03",
+        "pattern-9086-04",
+        "pattern-9086-05",
+        "pattern-9086-06",
+        "pattern-9086-07",
+        "pattern-9086-08",
+        "pattern-9086-09",
+        "pattern-9086-10",
+        "pattern-9086-11",
+        "pattern-9086-12"
+      ]
+    },
+    {
+      "id": 9087,
+      "catalog_id": "import-five-17",
+      "key": "pattern-9087",
+      "form": "While I was + verb-ing, + past simple",
+      "title": "بينما كنتُ",
+      "source_refs": [
+        {
+          "group": "five",
+          "item_id": 17,
+          "key": "while-i-was"
+        }
+      ],
+      "source_ids": [
+        330,
+        453
+      ],
+      "prerequisite_ids": [
+        "import-five-16"
+      ],
+      "sentence_ids": [
+        "pattern-9087-01",
+        "pattern-9087-02",
+        "pattern-9087-03",
+        "pattern-9087-04",
+        "pattern-9087-05",
+        "pattern-9087-06",
+        "pattern-9087-07",
+        "pattern-9087-08",
+        "pattern-9087-09",
+        "pattern-9087-10",
+        "pattern-9087-11",
+        "pattern-9087-12"
+      ]
+    },
+    {
+      "id": 9088,
+      "catalog_id": "import-five-18",
+      "key": "pattern-9088",
+      "form": "When + past simple, + past simple",
+      "title": "عندما",
+      "source_refs": [
+        {
+          "group": "five",
+          "item_id": 18,
+          "key": "when-i"
+        }
+      ],
+      "source_ids": [
+        380,
+        805
+      ],
+      "prerequisite_ids": [
+        "import-five-4"
+      ],
+      "sentence_ids": [
+        "pattern-9088-01",
+        "pattern-9088-02",
+        "pattern-9088-03",
+        "pattern-9088-04",
+        "pattern-9088-05",
+        "pattern-9088-06",
+        "pattern-9088-07",
+        "pattern-9088-08",
+        "pattern-9088-09",
+        "pattern-9088-10",
+        "pattern-9088-11",
+        "pattern-9088-12"
+      ]
+    },
+    {
+      "id": 9089,
+      "catalog_id": "import-six-1",
+      "key": "pattern-9089",
+      "form": "I'll + base verb",
+      "title": "سوف أفعل / سأفعل",
+      "source_refs": [
+        {
+          "group": "six",
+          "item_id": 1,
+          "key": "ill-1"
+        }
+      ],
+      "source_ids": [
+        82,
+        83,
+        781
+      ],
+      "prerequisite_ids": [
+        1
+      ],
+      "sentence_ids": [
+        "pattern-9089-01",
+        "pattern-9089-02",
+        "pattern-9089-03",
+        "pattern-9089-04",
+        "pattern-9089-05",
+        "pattern-9089-06",
+        "pattern-9089-07",
+        "pattern-9089-08",
+        "pattern-9089-09",
+        "pattern-9089-10",
+        "pattern-9089-11",
+        "pattern-9089-12"
+      ]
+    },
+    {
+      "id": 9090,
+      "catalog_id": "import-six-2",
+      "key": "pattern-9090",
+      "form": "I won't + base verb",
+      "title": "لن أفعل",
+      "source_refs": [
+        {
+          "group": "six",
+          "item_id": 2,
+          "key": "i-wont-2"
+        }
+      ],
+      "source_ids": [
+        55,
+        273
+      ],
+      "prerequisite_ids": [
+        1
+      ],
+      "sentence_ids": [
+        "pattern-9090-01",
+        "pattern-9090-02",
+        "pattern-9090-03",
+        "pattern-9090-04",
+        "pattern-9090-05",
+        "pattern-9090-06",
+        "pattern-9090-07",
+        "pattern-9090-08",
+        "pattern-9090-09",
+        "pattern-9090-10",
+        "pattern-9090-11",
+        "pattern-9090-12"
+      ]
+    },
+    {
+      "id": 9091,
+      "catalog_id": "import-six-3",
+      "key": "pattern-9091",
+      "form": "Will you + base verb + ...?",
+      "title": "هل ستفعل؟",
+      "source_refs": [
+        {
+          "group": "six",
+          "item_id": 3,
+          "key": "will-you-3"
+        }
+      ],
+      "source_ids": [
+        702,
+        718
+      ],
+      "prerequisite_ids": [
+        1
+      ],
+      "sentence_ids": [
+        "pattern-9091-01",
+        "pattern-9091-02",
+        "pattern-9091-03",
+        "pattern-9091-04",
+        "pattern-9091-05",
+        "pattern-9091-06",
+        "pattern-9091-07",
+        "pattern-9091-08",
+        "pattern-9091-09",
+        "pattern-9091-10",
+        "pattern-9091-11",
+        "pattern-9091-12"
+      ]
+    },
+    {
+      "id": 9092,
+      "catalog_id": "import-six-4",
+      "key": "pattern-9092",
+      "form": "I'm going to + base verb",
+      "title": "أنوي أن / سوف",
+      "source_refs": [
+        {
+          "group": "six",
+          "item_id": 4,
+          "key": "im-going-to-4"
+        }
+      ],
+      "source_ids": [
+        149,
+        280,
+        341
+      ],
+      "prerequisite_ids": [
+        1
+      ],
+      "sentence_ids": [
+        "pattern-9092-01",
+        "pattern-9092-02",
+        "pattern-9092-03",
+        "pattern-9092-04",
+        "pattern-9092-05",
+        "pattern-9092-06",
+        "pattern-9092-07",
+        "pattern-9092-08",
+        "pattern-9092-09",
+        "pattern-9092-10",
+        "pattern-9092-11",
+        "pattern-9092-12"
+      ]
+    },
+    {
+      "id": 9093,
+      "catalog_id": "import-six-5",
+      "key": "pattern-9093",
+      "form": "I'm not going to + base verb",
+      "title": "لا أنوي أن",
+      "source_refs": [
+        {
+          "group": "six",
+          "item_id": 5,
+          "key": "im-not-going-to-5"
+        }
+      ],
+      "source_ids": [
+        149,
+        280
+      ],
+      "prerequisite_ids": [
+        "import-six-4"
+      ],
+      "sentence_ids": [
+        "pattern-9093-01",
+        "pattern-9093-02",
+        "pattern-9093-03",
+        "pattern-9093-04",
+        "pattern-9093-05",
+        "pattern-9093-06",
+        "pattern-9093-07",
+        "pattern-9093-08",
+        "pattern-9093-09",
+        "pattern-9093-10",
+        "pattern-9093-11",
+        "pattern-9093-12"
+      ]
+    },
+    {
+      "id": 9094,
+      "catalog_id": "import-six-6",
+      "key": "pattern-9094",
+      "form": "Are you going to + base verb + ...?",
+      "title": "هل تنوي أن؟",
+      "source_refs": [
+        {
+          "group": "six",
+          "item_id": 6,
+          "key": "are-you-going-to-6"
+        }
+      ],
+      "source_ids": [
+        149,
+        156
+      ],
+      "prerequisite_ids": [
+        "import-six-4"
+      ],
+      "sentence_ids": [
+        "pattern-9094-01",
+        "pattern-9094-02",
+        "pattern-9094-03",
+        "pattern-9094-04",
+        "pattern-9094-05",
+        "pattern-9094-06",
+        "pattern-9094-07",
+        "pattern-9094-08",
+        "pattern-9094-09",
+        "pattern-9094-10",
+        "pattern-9094-11",
+        "pattern-9094-12"
+      ]
+    },
+    {
+      "id": 9095,
+      "catalog_id": "import-six-7",
+      "key": "pattern-9095",
+      "form": "I'm planning to + base verb",
+      "title": "أخطط لأن",
+      "source_refs": [
+        {
+          "group": "six",
+          "item_id": 7,
+          "key": "im-planning-to-7"
+        }
+      ],
+      "source_ids": [
+        317,
+        156
+      ],
+      "prerequisite_ids": [
+        1
+      ],
+      "sentence_ids": [
+        "pattern-9095-01",
+        "pattern-9095-02",
+        "pattern-9095-03",
+        "pattern-9095-04",
+        "pattern-9095-05",
+        "pattern-9095-06",
+        "pattern-9095-07",
+        "pattern-9095-08",
+        "pattern-9095-09",
+        "pattern-9095-10",
+        "pattern-9095-11",
+        "pattern-9095-12"
+      ]
+    },
+    {
+      "id": 9096,
+      "catalog_id": "import-six-8",
+      "key": "pattern-9096",
+      "form": "I'm meeting + person + future time",
+      "title": "لدي لقاء مرتب",
+      "source_refs": [
+        {
+          "group": "six",
+          "item_id": 8,
+          "key": "im-meeting-8"
+        }
+      ],
+      "source_ids": [
+        781,
+        169
+      ],
+      "prerequisite_ids": [
+        1
+      ],
+      "sentence_ids": [
+        "pattern-9096-01",
+        "pattern-9096-02",
+        "pattern-9096-03",
+        "pattern-9096-04",
+        "pattern-9096-05",
+        "pattern-9096-06",
+        "pattern-9096-07",
+        "pattern-9096-08",
+        "pattern-9096-09",
+        "pattern-9096-10",
+        "pattern-9096-11",
+        "pattern-9096-12"
+      ]
+    },
+    {
+      "id": 9097,
+      "catalog_id": "import-six-9",
+      "key": "pattern-9097",
+      "form": "The + scheduled event + starts / leaves / opens / begins + at + time",
+      "title": "يبدأ عند / موعده",
+      "source_refs": [
+        {
+          "group": "six",
+          "item_id": 9,
+          "key": "it-starts-at-9"
+        }
+      ],
+      "source_ids": [
+        781,
+        719
+      ],
+      "prerequisite_ids": [
+        1
+      ],
+      "sentence_ids": [
+        "pattern-9097-01",
+        "pattern-9097-02",
+        "pattern-9097-03",
+        "pattern-9097-04",
+        "pattern-9097-05",
+        "pattern-9097-06",
+        "pattern-9097-07",
+        "pattern-9097-08",
+        "pattern-9097-09",
+        "pattern-9097-10",
+        "pattern-9097-11",
+        "pattern-9097-12"
+      ]
+    },
+    {
+      "id": 9098,
+      "catalog_id": "import-six-10",
+      "key": "pattern-9098",
+      "form": "I hope to + base verb",
+      "title": "آمل أن",
+      "source_refs": [
+        {
+          "group": "six",
+          "item_id": 10,
+          "key": "i-hope-to-10"
+        }
+      ],
+      "source_ids": [
+        169,
+        156
+      ],
+      "prerequisite_ids": [
+        1
+      ],
+      "sentence_ids": [
+        "pattern-9098-01",
+        "pattern-9098-02",
+        "pattern-9098-03",
+        "pattern-9098-04",
+        "pattern-9098-05",
+        "pattern-9098-06",
+        "pattern-9098-07",
+        "pattern-9098-08",
+        "pattern-9098-09",
+        "pattern-9098-10",
+        "pattern-9098-11",
+        "pattern-9098-12"
+      ]
+    },
+    {
+      "id": 9099,
+      "catalog_id": "import-six-11",
+      "key": "pattern-9099",
+      "form": "I expect to + base verb",
+      "title": "أتوقع أن",
+      "source_refs": [
+        {
+          "group": "six",
+          "item_id": 11,
+          "key": "i-expect-to-11"
+        }
+      ],
+      "source_ids": [
+        169,
+        178
+      ],
+      "prerequisite_ids": [
+        1
+      ],
+      "sentence_ids": [
+        "pattern-9099-01",
+        "pattern-9099-02",
+        "pattern-9099-03",
+        "pattern-9099-04",
+        "pattern-9099-05",
+        "pattern-9099-06",
+        "pattern-9099-07",
+        "pattern-9099-08",
+        "pattern-9099-09",
+        "pattern-9099-10",
+        "pattern-9099-11",
+        "pattern-9099-12"
+      ]
+    },
+    {
+      "id": 9100,
+      "catalog_id": "import-six-12",
+      "key": "pattern-9100",
+      "form": "I might + base verb",
+      "title": "قد / ربما",
+      "source_refs": [
+        {
+          "group": "six",
+          "item_id": 12,
+          "key": "i-might-12"
+        }
+      ],
+      "source_ids": [
+        223,
+        715
+      ],
+      "prerequisite_ids": [
+        1
+      ],
+      "sentence_ids": [
+        "pattern-9100-01",
+        "pattern-9100-02",
+        "pattern-9100-03",
+        "pattern-9100-04",
+        "pattern-9100-05",
+        "pattern-9100-06",
+        "pattern-9100-07",
+        "pattern-9100-08",
+        "pattern-9100-09",
+        "pattern-9100-10",
+        "pattern-9100-11",
+        "pattern-9100-12"
+      ]
+    },
+    {
+      "id": 9101,
+      "catalog_id": "import-six-13",
+      "key": "pattern-9101",
+      "form": "I may + base verb",
+      "title": "قد / من المحتمل",
+      "source_refs": [
+        {
+          "group": "six",
+          "item_id": 13,
+          "key": "i-may-13"
+        }
+      ],
+      "source_ids": [
+        456,
+        795
+      ],
+      "prerequisite_ids": [
+        1
+      ],
+      "sentence_ids": [
+        "pattern-9101-01",
+        "pattern-9101-02",
+        "pattern-9101-03",
+        "pattern-9101-04",
+        "pattern-9101-05",
+        "pattern-9101-06",
+        "pattern-9101-07",
+        "pattern-9101-08",
+        "pattern-9101-09",
+        "pattern-9101-10",
+        "pattern-9101-11",
+        "pattern-9101-12"
+      ]
+    },
+    {
+      "id": 9102,
+      "catalog_id": "import-six-14",
+      "key": "pattern-9102",
+      "form": "I'll probably + base verb",
+      "title": "غالبًا سأفعل",
+      "source_refs": [
+        {
+          "group": "six",
+          "item_id": 14,
+          "key": "ill-probably-14"
+        }
+      ],
+      "source_ids": [
+        106,
+        740
+      ],
+      "prerequisite_ids": [
+        "import-six-1"
+      ],
+      "sentence_ids": [
+        "pattern-9102-01",
+        "pattern-9102-02",
+        "pattern-9102-03",
+        "pattern-9102-04",
+        "pattern-9102-05",
+        "pattern-9102-06",
+        "pattern-9102-07",
+        "pattern-9102-08",
+        "pattern-9102-09",
+        "pattern-9102-10",
+        "pattern-9102-11",
+        "pattern-9102-12"
+      ]
+    },
+    {
+      "id": 9103,
+      "catalog_id": "import-six-15",
+      "key": "pattern-9103",
+      "form": "I'm about to + base verb",
+      "title": "أنا على وشك أن",
+      "source_refs": [
+        {
+          "group": "six",
+          "item_id": 15,
+          "key": "im-about-to-15"
+        }
+      ],
+      "source_ids": [
+        403,
+        486
+      ],
+      "prerequisite_ids": [
+        1
+      ],
+      "sentence_ids": [
+        "pattern-9103-01",
+        "pattern-9103-02",
+        "pattern-9103-03",
+        "pattern-9103-04",
+        "pattern-9103-05",
+        "pattern-9103-06",
+        "pattern-9103-07",
+        "pattern-9103-08",
+        "pattern-9103-09",
+        "pattern-9103-10",
+        "pattern-9103-11",
+        "pattern-9103-12"
+      ]
+    },
+    {
+      "id": 9104,
+      "catalog_id": "import-six-16",
+      "key": "pattern-9104",
+      "form": "If + present simple, I'll + base verb",
+      "title": "إذا ... فسوف",
+      "source_refs": [
+        {
+          "group": "six",
+          "item_id": 16,
+          "key": "if-ill-16"
+        }
+      ],
+      "source_ids": [
+        275,
+        421,
+        205
+      ],
+      "prerequisite_ids": [
+        "import-six-1"
+      ],
+      "sentence_ids": [
+        "pattern-9104-01",
+        "pattern-9104-02",
+        "pattern-9104-03",
+        "pattern-9104-04",
+        "pattern-9104-05",
+        "pattern-9104-06",
+        "pattern-9104-07",
+        "pattern-9104-08",
+        "pattern-9104-09",
+        "pattern-9104-10",
+        "pattern-9104-11",
+        "pattern-9104-12"
+      ]
+    },
+    {
+      "id": 9105,
+      "catalog_id": "import-six-17",
+      "key": "pattern-9105",
+      "form": "When + present simple, I'll + base verb",
+      "title": "عندما ... سوف",
+      "source_refs": [
+        {
+          "group": "six",
+          "item_id": 17,
+          "key": "when-ill-17"
+        }
+      ],
+      "source_ids": [
+        175,
+        719
+      ],
+      "prerequisite_ids": [
+        "import-six-1"
+      ],
+      "sentence_ids": [
+        "pattern-9105-01",
+        "pattern-9105-02",
+        "pattern-9105-03",
+        "pattern-9105-04",
+        "pattern-9105-05",
+        "pattern-9105-06",
+        "pattern-9105-07",
+        "pattern-9105-08",
+        "pattern-9105-09",
+        "pattern-9105-10",
+        "pattern-9105-11",
+        "pattern-9105-12"
+      ]
+    },
+    {
+      "id": 9106,
+      "catalog_id": "import-six-18",
+      "key": "pattern-9106",
+      "form": "As soon as + present simple, I'll + base verb",
+      "title": "فور أن ... سوف",
+      "source_refs": [
+        {
+          "group": "six",
+          "item_id": 18,
+          "key": "as-soon-as-ill-18"
+        }
+      ],
+      "source_ids": [
+        175,
+        380
+      ],
+      "prerequisite_ids": [
+        "import-six-1"
+      ],
+      "sentence_ids": [
+        "pattern-9106-01",
+        "pattern-9106-02",
+        "pattern-9106-03",
+        "pattern-9106-04",
+        "pattern-9106-05",
+        "pattern-9106-06",
+        "pattern-9106-07",
+        "pattern-9106-08",
+        "pattern-9106-09",
+        "pattern-9106-10",
+        "pattern-9106-11",
+        "pattern-9106-12"
+      ]
+    },
+    {
+      "id": 9107,
+      "catalog_id": "import-seven-1",
+      "key": "pattern-9107",
+      "form": "I feel + adjective",
+      "title": "أشعر بـ",
+      "source_refs": [
+        {
+          "group": "seven",
+          "item_id": 1,
+          "key": "i-feel-1"
+        }
+      ],
+      "source_ids": [
+        139,
+        208
+      ],
+      "prerequisite_ids": [
+        103
+      ],
+      "sentence_ids": [
+        "pattern-9107-01",
+        "pattern-9107-02",
+        "pattern-9107-03",
+        "pattern-9107-04",
+        "pattern-9107-05",
+        "pattern-9107-06",
+        "pattern-9107-07",
+        "pattern-9107-08",
+        "pattern-9107-09",
+        "pattern-9107-10",
+        "pattern-9107-11",
+        "pattern-9107-12"
+      ]
+    },
+    {
+      "id": 9108,
+      "catalog_id": "import-seven-2",
+      "key": "pattern-9108",
+      "form": "I'm happy with + noun phrase",
+      "title": "أنا راضٍ عن",
+      "source_refs": [
+        {
+          "group": "seven",
+          "item_id": 2,
+          "key": "im-happy-with-2"
+        }
+      ],
+      "source_ids": [
+        133,
+        182
+      ],
+      "prerequisite_ids": [
+        103
+      ],
+      "sentence_ids": [
+        "pattern-9108-01",
+        "pattern-9108-02",
+        "pattern-9108-03",
+        "pattern-9108-04",
+        "pattern-9108-05",
+        "pattern-9108-06",
+        "pattern-9108-07",
+        "pattern-9108-08",
+        "pattern-9108-09",
+        "pattern-9108-10",
+        "pattern-9108-11",
+        "pattern-9108-12"
+      ]
+    },
+    {
+      "id": 9109,
+      "catalog_id": "import-seven-3",
+      "key": "pattern-9109",
+      "form": "I'm worried about + noun or verb ending in ing",
+      "title": "أنا قلق بشأن",
+      "source_refs": [
+        {
+          "group": "seven",
+          "item_id": 3,
+          "key": "im-worried-about-3"
+        }
+      ],
+      "source_ids": [
+        108,
+        119
+      ],
+      "prerequisite_ids": [
+        7,
+        103
+      ],
+      "sentence_ids": [
+        "pattern-9109-01",
+        "pattern-9109-02",
+        "pattern-9109-03",
+        "pattern-9109-04",
+        "pattern-9109-05",
+        "pattern-9109-06",
+        "pattern-9109-07",
+        "pattern-9109-08",
+        "pattern-9109-09",
+        "pattern-9109-10",
+        "pattern-9109-11",
+        "pattern-9109-12"
+      ]
+    },
+    {
+      "id": 9110,
+      "catalog_id": "import-seven-4",
+      "key": "pattern-9110",
+      "form": "I'm proud of + person or achievement",
+      "title": "أنا فخور بـ",
+      "source_refs": [
+        {
+          "group": "seven",
+          "item_id": 4,
+          "key": "im-proud-of-4"
+        }
+      ],
+      "source_ids": [
+        239,
+        207
+      ],
+      "prerequisite_ids": [
+        103
+      ],
+      "sentence_ids": [
+        "pattern-9110-01",
+        "pattern-9110-02",
+        "pattern-9110-03",
+        "pattern-9110-04",
+        "pattern-9110-05",
+        "pattern-9110-06",
+        "pattern-9110-07",
+        "pattern-9110-08",
+        "pattern-9110-09",
+        "pattern-9110-10",
+        "pattern-9110-11",
+        "pattern-9110-12"
+      ]
+    },
+    {
+      "id": 9111,
+      "catalog_id": "import-seven-5",
+      "key": "pattern-9111",
+      "form": "I'm surprised that + clause",
+      "title": "أنا متفاجئ بأن",
+      "source_refs": [
+        {
+          "group": "seven",
+          "item_id": 5,
+          "key": "im-surprised-that-5"
+        }
+      ],
+      "source_ids": [
+        105,
+        253
+      ],
+      "prerequisite_ids": [
+        103
+      ],
+      "sentence_ids": [
+        "pattern-9111-01",
+        "pattern-9111-02",
+        "pattern-9111-03",
+        "pattern-9111-04",
+        "pattern-9111-05",
+        "pattern-9111-06",
+        "pattern-9111-07",
+        "pattern-9111-08",
+        "pattern-9111-09",
+        "pattern-9111-10",
+        "pattern-9111-11",
+        "pattern-9111-12"
+      ]
+    },
+    {
+      "id": 9112,
+      "catalog_id": "import-seven-6",
+      "key": "pattern-9112",
+      "form": "I'm disappointed that + clause",
+      "title": "أنا محبط لأن",
+      "source_refs": [
+        {
+          "group": "seven",
+          "item_id": 6,
+          "key": "im-disappointed-that-6"
+        }
+      ],
+      "source_ids": [
+        358,
+        452
+      ],
+      "prerequisite_ids": [
+        103
+      ],
+      "sentence_ids": [
+        "pattern-9112-01",
+        "pattern-9112-02",
+        "pattern-9112-03",
+        "pattern-9112-04",
+        "pattern-9112-05",
+        "pattern-9112-06",
+        "pattern-9112-07",
+        "pattern-9112-08",
+        "pattern-9112-09",
+        "pattern-9112-10",
+        "pattern-9112-11",
+        "pattern-9112-12"
+      ]
+    },
+    {
+      "id": 9113,
+      "catalog_id": "import-seven-7",
+      "key": "pattern-9113",
+      "form": "I'm grateful for + noun phrase",
+      "title": "أنا ممتن لـ",
+      "source_refs": [
+        {
+          "group": "seven",
+          "item_id": 7,
+          "key": "im-grateful-for-7"
+        }
+      ],
+      "source_ids": [
+        311,
+        182
+      ],
+      "prerequisite_ids": [
+        103
+      ],
+      "sentence_ids": [
+        "pattern-9113-01",
+        "pattern-9113-02",
+        "pattern-9113-03",
+        "pattern-9113-04",
+        "pattern-9113-05",
+        "pattern-9113-06",
+        "pattern-9113-07",
+        "pattern-9113-08",
+        "pattern-9113-09",
+        "pattern-9113-10",
+        "pattern-9113-11",
+        "pattern-9113-12"
+      ]
+    },
+    {
+      "id": 9114,
+      "catalog_id": "import-seven-8",
+      "key": "pattern-9114",
+      "form": "I'm interested in + noun or verb ending in ing",
+      "title": "أنا مهتم بـ",
+      "source_refs": [
+        {
+          "group": "seven",
+          "item_id": 8,
+          "key": "im-interested-in-8"
+        }
+      ],
+      "source_ids": [
+        117,
+        177
+      ],
+      "prerequisite_ids": [
+        7,
+        103
+      ],
+      "sentence_ids": [
+        "pattern-9114-01",
+        "pattern-9114-02",
+        "pattern-9114-03",
+        "pattern-9114-04",
+        "pattern-9114-05",
+        "pattern-9114-06",
+        "pattern-9114-07",
+        "pattern-9114-08",
+        "pattern-9114-09",
+        "pattern-9114-10",
+        "pattern-9114-11",
+        "pattern-9114-12"
+      ]
+    },
+    {
+      "id": 9116,
+      "catalog_id": "import-seven-10",
+      "key": "pattern-9116",
+      "form": "I don't feel like + verb ending in ing",
+      "title": "لا أرغب في",
+      "source_refs": [
+        {
+          "group": "seven",
+          "item_id": 10,
+          "key": "i-dont-feel-like-10"
+        }
+      ],
+      "source_ids": [
+        62,
+        42
+      ],
+      "prerequisite_ids": [
+        7,
+        103
+      ],
+      "sentence_ids": [
+        "pattern-9116-01",
+        "pattern-9116-02",
+        "pattern-9116-03",
+        "pattern-9116-04",
+        "pattern-9116-05",
+        "pattern-9116-06",
+        "pattern-9116-07",
+        "pattern-9116-08",
+        "pattern-9116-09",
+        "pattern-9116-10",
+        "pattern-9116-11",
+        "pattern-9116-12"
+      ]
+    },
+    {
+      "id": 9117,
+      "catalog_id": "import-seven-11",
+      "key": "pattern-9117",
+      "form": "I think + clause",
+      "title": "أعتقد أن",
+      "source_refs": [
+        {
+          "group": "seven",
+          "item_id": 11,
+          "key": "i-think-11"
+        }
+      ],
+      "source_ids": [
+        313,
+        56
+      ],
+      "prerequisite_ids": [
+        103
+      ],
+      "sentence_ids": [
+        "pattern-9117-01",
+        "pattern-9117-02",
+        "pattern-9117-03",
+        "pattern-9117-04",
+        "pattern-9117-05",
+        "pattern-9117-06",
+        "pattern-9117-07",
+        "pattern-9117-08",
+        "pattern-9117-09",
+        "pattern-9117-10",
+        "pattern-9117-11",
+        "pattern-9117-12"
+      ]
+    },
+    {
+      "id": 9118,
+      "catalog_id": "import-seven-12",
+      "key": "pattern-9118",
+      "form": "In my opinion, + clause",
+      "title": "في رأيي",
+      "source_refs": [
+        {
+          "group": "seven",
+          "item_id": 12,
+          "key": "in-my-opinion-12"
+        }
+      ],
+      "source_ids": [
+        313,
+        830
+      ],
+      "prerequisite_ids": [
+        103
+      ],
+      "sentence_ids": [
+        "pattern-9118-01",
+        "pattern-9118-02",
+        "pattern-9118-03",
+        "pattern-9118-04",
+        "pattern-9118-05",
+        "pattern-9118-06",
+        "pattern-9118-07",
+        "pattern-9118-08",
+        "pattern-9118-09",
+        "pattern-9118-10",
+        "pattern-9118-11",
+        "pattern-9118-12"
+      ]
+    },
+    {
+      "id": 9119,
+      "catalog_id": "import-seven-13",
+      "key": "pattern-9119",
+      "form": "I believe + clause",
+      "title": "أؤمن / أعتقد",
+      "source_refs": [
+        {
+          "group": "seven",
+          "item_id": 13,
+          "key": "i-believe-13"
+        }
+      ],
+      "source_ids": [
+        304,
+        226
+      ],
+      "prerequisite_ids": [
+        103
+      ],
+      "sentence_ids": [
+        "pattern-9119-01",
+        "pattern-9119-02",
+        "pattern-9119-03",
+        "pattern-9119-04",
+        "pattern-9119-05",
+        "pattern-9119-06",
+        "pattern-9119-07",
+        "pattern-9119-08",
+        "pattern-9119-09",
+        "pattern-9119-10",
+        "pattern-9119-11",
+        "pattern-9119-12"
+      ]
+    },
+    {
+      "id": 9120,
+      "catalog_id": "import-seven-14",
+      "key": "pattern-9120",
+      "form": "I prefer + noun or verb ending in ing + to + alternative",
+      "title": "أفضل",
+      "source_refs": [
+        {
+          "group": "seven",
+          "item_id": 14,
+          "key": "i-prefer-14"
+        }
+      ],
+      "source_ids": [
+        177,
+        136,
+        704
+      ],
+      "prerequisite_ids": [
+        103
+      ],
+      "sentence_ids": [
+        "pattern-9120-01",
+        "pattern-9120-02",
+        "pattern-9120-03",
+        "pattern-9120-04",
+        "pattern-9120-05",
+        "pattern-9120-06",
+        "pattern-9120-07",
+        "pattern-9120-08",
+        "pattern-9120-09",
+        "pattern-9120-10",
+        "pattern-9120-11",
+        "pattern-9120-12"
+      ]
+    },
+    {
+      "id": 9121,
+      "catalog_id": "import-seven-15",
+      "key": "pattern-9121",
+      "form": "I agree with + person or opinion",
+      "title": "أتفق مع",
+      "source_refs": [
+        {
+          "group": "seven",
+          "item_id": 15,
+          "key": "i-agree-with-15"
+        }
+      ],
+      "source_ids": [
+        830,
+        727
+      ],
+      "prerequisite_ids": [
+        103
+      ],
+      "sentence_ids": [
+        "pattern-9121-01",
+        "pattern-9121-02",
+        "pattern-9121-03",
+        "pattern-9121-04",
+        "pattern-9121-05",
+        "pattern-9121-06",
+        "pattern-9121-07",
+        "pattern-9121-08",
+        "pattern-9121-09",
+        "pattern-9121-10",
+        "pattern-9121-11",
+        "pattern-9121-12"
+      ]
+    },
+    {
+      "id": 9122,
+      "catalog_id": "import-seven-16",
+      "key": "pattern-9122",
+      "form": "I don't agree with + person or opinion",
+      "title": "لا أتفق مع",
+      "source_refs": [
+        {
+          "group": "seven",
+          "item_id": 16,
+          "key": "i-dont-agree-with-16"
+        }
+      ],
+      "source_ids": [
+        727,
+        830
+      ],
+      "prerequisite_ids": [
+        "import-seven-15"
+      ],
+      "sentence_ids": [
+        "pattern-9122-01",
+        "pattern-9122-02",
+        "pattern-9122-03",
+        "pattern-9122-04",
+        "pattern-9122-05",
+        "pattern-9122-06",
+        "pattern-9122-07",
+        "pattern-9122-08",
+        "pattern-9122-09",
+        "pattern-9122-10",
+        "pattern-9122-11",
+        "pattern-9122-12"
+      ]
+    },
+    {
+      "id": 9123,
+      "catalog_id": "import-seven-17",
+      "key": "pattern-9123",
+      "form": "It seems like + clause",
+      "title": "يبدو أن",
+      "source_refs": [
+        {
+          "group": "seven",
+          "item_id": 17,
+          "key": "it-seems-like-17"
+        }
+      ],
+      "source_ids": [
+        44,
+        355,
+        821
+      ],
+      "prerequisite_ids": [
+        103
+      ],
+      "sentence_ids": [
+        "pattern-9123-01",
+        "pattern-9123-02",
+        "pattern-9123-03",
+        "pattern-9123-04",
+        "pattern-9123-05",
+        "pattern-9123-06",
+        "pattern-9123-07",
+        "pattern-9123-08",
+        "pattern-9123-09",
+        "pattern-9123-10",
+        "pattern-9123-11",
+        "pattern-9123-12"
+      ]
+    },
+    {
+      "id": 9124,
+      "catalog_id": "import-seven-18",
+      "key": "pattern-9124",
+      "form": "It sounds like + noun or clause",
+      "title": "يبدو من الصوت / الكلام أن",
+      "source_refs": [
+        {
+          "group": "seven",
+          "item_id": 18,
+          "key": "it-sounds-like-18"
+        }
+      ],
+      "source_ids": [
+        46,
+        813
+      ],
+      "prerequisite_ids": [
+        103
+      ],
+      "sentence_ids": [
+        "pattern-9124-01",
+        "pattern-9124-02",
+        "pattern-9124-03",
+        "pattern-9124-04",
+        "pattern-9124-05",
+        "pattern-9124-06",
+        "pattern-9124-07",
+        "pattern-9124-08",
+        "pattern-9124-09",
+        "pattern-9124-10",
+        "pattern-9124-11",
+        "pattern-9124-12"
+      ]
+    },
+    {
+      "id": 9125,
+      "catalog_id": "import-eight-1",
+      "key": "pattern-9125",
+      "form": "Excuse me + request or polite interruption",
+      "title": "عذرًا / لو سمحت",
+      "source_refs": [
+        {
+          "group": "eight",
+          "item_id": 1,
+          "key": "excuse-me-1"
+        }
+      ],
+      "source_ids": [
+        645,
+        310
+      ],
+      "prerequisite_ids": [
+        4
+      ],
+      "sentence_ids": [
+        "pattern-9125-01",
+        "pattern-9125-02",
+        "pattern-9125-03",
+        "pattern-9125-04",
+        "pattern-9125-05",
+        "pattern-9125-06",
+        "pattern-9125-07",
+        "pattern-9125-08",
+        "pattern-9125-09",
+        "pattern-9125-10",
+        "pattern-9125-11",
+        "pattern-9125-12"
+      ]
+    },
+    {
+      "id": 9126,
+      "catalog_id": "import-eight-2",
+      "key": "pattern-9126",
+      "form": "Could you please + base verb",
+      "title": "هل يمكنك من فضلك",
+      "source_refs": [
+        {
+          "group": "eight",
+          "item_id": 2,
+          "key": "could-you-please-2"
+        }
+      ],
+      "source_ids": [
+        649,
+        645
+      ],
+      "prerequisite_ids": [
+        "import-three-3"
+      ],
+      "sentence_ids": [
+        "pattern-9126-01",
+        "pattern-9126-02",
+        "pattern-9126-03",
+        "pattern-9126-04",
+        "pattern-9126-05",
+        "pattern-9126-06",
+        "pattern-9126-07",
+        "pattern-9126-08",
+        "pattern-9126-09",
+        "pattern-9126-10",
+        "pattern-9126-11",
+        "pattern-9126-12"
+      ]
+    },
+    {
+      "id": 9127,
+      "catalog_id": "import-eight-3",
+      "key": "pattern-9127",
+      "form": "Would you mind + verb ending in ing",
+      "title": "هل تمانع أن",
+      "source_refs": [
+        {
+          "group": "eight",
+          "item_id": 3,
+          "key": "would-you-mind-3"
+        }
+      ],
+      "source_ids": [
+        651,
+        502
+      ],
+      "prerequisite_ids": [
+        "import-eight-2"
+      ],
+      "sentence_ids": [
+        "pattern-9127-01",
+        "pattern-9127-02",
+        "pattern-9127-03",
+        "pattern-9127-04",
+        "pattern-9127-05",
+        "pattern-9127-06",
+        "pattern-9127-07",
+        "pattern-9127-08",
+        "pattern-9127-09",
+        "pattern-9127-10",
+        "pattern-9127-11",
+        "pattern-9127-12"
+      ]
+    },
+    {
+      "id": 9128,
+      "catalog_id": "import-eight-4",
+      "key": "pattern-9128",
+      "form": "Do you mind if I + present verb",
+      "title": "هل تمانع إذا أنا",
+      "source_refs": [
+        {
+          "group": "eight",
+          "item_id": 4,
+          "key": "do-you-mind-if-i-4"
+        }
+      ],
+      "source_ids": [
+        615,
+        502
+      ],
+      "prerequisite_ids": [
+        "import-eight-5"
+      ],
+      "sentence_ids": [
+        "pattern-9128-01",
+        "pattern-9128-02",
+        "pattern-9128-03",
+        "pattern-9128-04",
+        "pattern-9128-05",
+        "pattern-9128-06",
+        "pattern-9128-07",
+        "pattern-9128-08",
+        "pattern-9128-09",
+        "pattern-9128-10",
+        "pattern-9128-11",
+        "pattern-9128-12"
+      ]
+    },
+    {
+      "id": 9129,
+      "catalog_id": "import-eight-5",
+      "key": "pattern-9129",
+      "form": "May I + base verb",
+      "title": "هل لي أن",
+      "source_refs": [
+        {
+          "group": "eight",
+          "item_id": 5,
+          "key": "may-i-5"
+        }
+      ],
+      "source_ids": [
+        527,
+        20
+      ],
+      "prerequisite_ids": [
+        4
+      ],
+      "sentence_ids": [
+        "pattern-9129-01",
+        "pattern-9129-02",
+        "pattern-9129-03",
+        "pattern-9129-04",
+        "pattern-9129-05",
+        "pattern-9129-06",
+        "pattern-9129-07",
+        "pattern-9129-08",
+        "pattern-9129-09",
+        "pattern-9129-10",
+        "pattern-9129-11",
+        "pattern-9129-12"
+      ]
+    },
+    {
+      "id": 9130,
+      "catalog_id": "import-eight-7",
+      "key": "pattern-9130",
+      "form": "I'd love to + base verb",
+      "title": "يسعدني أن",
+      "source_refs": [
+        {
+          "group": "eight",
+          "item_id": 7,
+          "key": "id-love-to-7"
+        }
+      ],
+      "source_ids": [
+        11,
+        13
+      ],
+      "prerequisite_ids": [
+        3
+      ],
+      "sentence_ids": [
+        "pattern-9130-01",
+        "pattern-9130-02",
+        "pattern-9130-03",
+        "pattern-9130-04",
+        "pattern-9130-05",
+        "pattern-9130-06",
+        "pattern-9130-07",
+        "pattern-9130-08",
+        "pattern-9130-09",
+        "pattern-9130-10",
+        "pattern-9130-11",
+        "pattern-9130-12"
+      ]
+    },
+    {
+      "id": 9131,
+      "catalog_id": "import-eight-8",
+      "key": "pattern-9131",
+      "form": "I'm afraid I can't + base verb",
+      "title": "أخشى أنني لا أستطيع",
+      "source_refs": [
+        {
+          "group": "eight",
+          "item_id": 8,
+          "key": "im-afraid-i-cant-8"
+        }
+      ],
+      "source_ids": [
+        39,
+        14
+      ],
+      "prerequisite_ids": [
+        "import-three-2"
+      ],
+      "sentence_ids": [
+        "pattern-9131-01",
+        "pattern-9131-02",
+        "pattern-9131-03",
+        "pattern-9131-04",
+        "pattern-9131-05",
+        "pattern-9131-06",
+        "pattern-9131-07",
+        "pattern-9131-08",
+        "pattern-9131-09",
+        "pattern-9131-10",
+        "pattern-9131-11",
+        "pattern-9131-12"
+      ]
+    },
+    {
+      "id": 9132,
+      "catalog_id": "import-eight-9",
+      "key": "pattern-9132",
+      "form": "How about + noun or verb ending in ing",
+      "title": "ما رأيك في",
+      "source_refs": [
+        {
+          "group": "eight",
+          "item_id": 9,
+          "key": "how-about-9"
+        }
+      ],
+      "source_ids": [
+        549,
+        693
+      ],
+      "prerequisite_ids": [
+        6
+      ],
+      "sentence_ids": [
+        "pattern-9132-01",
+        "pattern-9132-02",
+        "pattern-9132-03",
+        "pattern-9132-04",
+        "pattern-9132-05",
+        "pattern-9132-06",
+        "pattern-9132-07",
+        "pattern-9132-08",
+        "pattern-9132-09",
+        "pattern-9132-10",
+        "pattern-9132-11",
+        "pattern-9132-12"
+      ]
+    },
+    {
+      "id": 9133,
+      "catalog_id": "import-eight-12",
+      "key": "pattern-9133",
+      "form": "Thank you for + noun or verb ending in ing",
+      "title": "شكرًا لك على",
+      "source_refs": [
+        {
+          "group": "eight",
+          "item_id": 12,
+          "key": "thank-you-for-12"
+        }
+      ],
+      "source_ids": [
+        179,
+        16
+      ],
+      "prerequisite_ids": [
+        7
+      ],
+      "sentence_ids": [
+        "pattern-9133-01",
+        "pattern-9133-02",
+        "pattern-9133-03",
+        "pattern-9133-04",
+        "pattern-9133-05",
+        "pattern-9133-06",
+        "pattern-9133-07",
+        "pattern-9133-08",
+        "pattern-9133-09",
+        "pattern-9133-10",
+        "pattern-9133-11",
+        "pattern-9133-12"
+      ]
+    },
+    {
+      "id": 9134,
+      "catalog_id": "import-eight-13",
+      "key": "pattern-9134",
+      "form": "I appreciate + noun or verb ending in ing",
+      "title": "أقدّر",
+      "source_refs": [
+        {
+          "group": "eight",
+          "item_id": 13,
+          "key": "i-appreciate-13"
+        }
+      ],
+      "source_ids": [
+        468,
+        224
+      ],
+      "prerequisite_ids": [
+        "import-eight-12"
+      ],
+      "sentence_ids": [
+        "pattern-9134-01",
+        "pattern-9134-02",
+        "pattern-9134-03",
+        "pattern-9134-04",
+        "pattern-9134-05",
+        "pattern-9134-06",
+        "pattern-9134-07",
+        "pattern-9134-08",
+        "pattern-9134-09",
+        "pattern-9134-10",
+        "pattern-9134-11",
+        "pattern-9134-12"
+      ]
+    },
+    {
+      "id": 9135,
+      "catalog_id": "import-eight-14",
+      "key": "pattern-9135",
+      "form": "You're welcome + optional friendly reply",
+      "title": "على الرحب والسعة",
+      "source_refs": [
+        {
+          "group": "eight",
+          "item_id": 14,
+          "key": "youre-welcome-14"
+        }
+      ],
+      "source_ids": [
+        179,
+        725
+      ],
+      "prerequisite_ids": [
+        "import-eight-12"
+      ],
+      "sentence_ids": [
+        "pattern-9135-01",
+        "pattern-9135-02",
+        "pattern-9135-03",
+        "pattern-9135-04",
+        "pattern-9135-05",
+        "pattern-9135-06",
+        "pattern-9135-07",
+        "pattern-9135-08",
+        "pattern-9135-09",
+        "pattern-9135-10",
+        "pattern-9135-11",
+        "pattern-9135-12"
+      ]
+    },
+    {
+      "id": 9136,
+      "catalog_id": "import-eight-15",
+      "key": "pattern-9136",
+      "form": "I'm sorry for + noun or verb ending in ing",
+      "title": "أنا آسف على",
+      "source_refs": [
+        {
+          "group": "eight",
+          "item_id": 15,
+          "key": "im-sorry-for-15"
+        }
+      ],
+      "source_ids": [
+        368,
+        395
+      ],
+      "prerequisite_ids": [
+        7
+      ],
+      "sentence_ids": [
+        "pattern-9136-01",
+        "pattern-9136-02",
+        "pattern-9136-03",
+        "pattern-9136-04",
+        "pattern-9136-05",
+        "pattern-9136-06",
+        "pattern-9136-07",
+        "pattern-9136-08",
+        "pattern-9136-09",
+        "pattern-9136-10",
+        "pattern-9136-11",
+        "pattern-9136-12"
+      ]
+    },
+    {
+      "id": 9137,
+      "catalog_id": "import-eight-16",
+      "key": "pattern-9137",
+      "form": "That's all right + optional reassuring sentence",
+      "title": "لا بأس",
+      "source_refs": [
+        {
+          "group": "eight",
+          "item_id": 16,
+          "key": "thats-all-right-16"
+        }
+      ],
+      "source_ids": [
+        310,
+        179
+      ],
+      "prerequisite_ids": [
+        "import-eight-15"
+      ],
+      "sentence_ids": [
+        "pattern-9137-01",
+        "pattern-9137-02",
+        "pattern-9137-03",
+        "pattern-9137-04",
+        "pattern-9137-05",
+        "pattern-9137-06",
+        "pattern-9137-07",
+        "pattern-9137-08",
+        "pattern-9137-09",
+        "pattern-9137-10",
+        "pattern-9137-11",
+        "pattern-9137-12"
+      ]
+    },
+    {
+      "id": 9138,
+      "catalog_id": "import-eight-17",
+      "key": "pattern-9138",
+      "form": "Could you clarify + noun or what you mean",
+      "title": "هل يمكنك التوضيح",
+      "source_refs": [
+        {
+          "group": "eight",
+          "item_id": 17,
+          "key": "could-you-clarify-17"
+        }
+      ],
+      "source_ids": [
+        20,
+        803
+      ],
+      "prerequisite_ids": [
+        "import-three-3"
+      ],
+      "sentence_ids": [
+        "pattern-9138-01",
+        "pattern-9138-02",
+        "pattern-9138-03",
+        "pattern-9138-04",
+        "pattern-9138-05",
+        "pattern-9138-06",
+        "pattern-9138-07",
+        "pattern-9138-08",
+        "pattern-9138-09",
+        "pattern-9138-10",
+        "pattern-9138-11",
+        "pattern-9138-12"
+      ]
+    },
+    {
+      "id": 9139,
+      "catalog_id": "import-eight-18",
+      "key": "pattern-9139",
+      "form": "Let me know if + clause",
+      "title": "أخبرني إذا",
+      "source_refs": [
+        {
+          "group": "eight",
+          "item_id": 18,
+          "key": "let-me-know-if-18"
+        }
+      ],
+      "source_ids": [
+        421,
+        343
+      ],
+      "prerequisite_ids": [
+        "import-three-15"
+      ],
+      "sentence_ids": [
+        "pattern-9139-01",
+        "pattern-9139-02",
+        "pattern-9139-03",
+        "pattern-9139-04",
+        "pattern-9139-05",
+        "pattern-9139-06",
+        "pattern-9139-07",
+        "pattern-9139-08",
+        "pattern-9139-09",
+        "pattern-9139-10",
+        "pattern-9139-11",
+        "pattern-9139-12"
+      ]
+    },
+    {
+      "id": 9140,
+      "catalog_id": "import-nine-1",
+      "key": "pattern-9140",
+      "form": "main clause + because + reason clause",
+      "title": "لأن",
+      "source_refs": [
+        {
+          "group": "nine",
+          "item_id": 1,
+          "key": "because-1"
+        }
+      ],
+      "source_ids": [
+        256,
+        184
+      ],
+      "prerequisite_ids": [
+        "import-five-1"
+      ],
+      "sentence_ids": [
+        "pattern-9140-01",
+        "pattern-9140-02",
+        "pattern-9140-03",
+        "pattern-9140-04",
+        "pattern-9140-05",
+        "pattern-9140-06",
+        "pattern-9140-07",
+        "pattern-9140-08",
+        "pattern-9140-09",
+        "pattern-9140-10",
+        "pattern-9140-11",
+        "pattern-9140-12"
+      ]
+    },
+    {
+      "id": 9141,
+      "catalog_id": "import-nine-2",
+      "key": "pattern-9141",
+      "form": "main clause + because of + noun or gerund",
+      "title": "بسبب",
+      "source_refs": [
+        {
+          "group": "nine",
+          "item_id": 2,
+          "key": "because-of-2"
+        }
+      ],
+      "source_ids": [
+        89,
+        274
+      ],
+      "prerequisite_ids": [
+        "import-nine-1"
+      ],
+      "sentence_ids": [
+        "pattern-9141-01",
+        "pattern-9141-02",
+        "pattern-9141-03",
+        "pattern-9141-04",
+        "pattern-9141-05",
+        "pattern-9141-06",
+        "pattern-9141-07",
+        "pattern-9141-08",
+        "pattern-9141-09",
+        "pattern-9141-10",
+        "pattern-9141-11",
+        "pattern-9141-12"
+      ]
+    },
+    {
+      "id": 9142,
+      "catalog_id": "import-nine-3",
+      "key": "pattern-9142",
+      "form": "reason clause + so + result clause",
+      "title": "لذلك / لذا",
+      "source_refs": [
+        {
+          "group": "nine",
+          "item_id": 3,
+          "key": "so-3"
+        }
+      ],
+      "source_ids": [
+        256,
+        274
+      ],
+      "prerequisite_ids": [
+        "import-nine-1"
+      ],
+      "sentence_ids": [
+        "pattern-9142-01",
+        "pattern-9142-02",
+        "pattern-9142-03",
+        "pattern-9142-04",
+        "pattern-9142-05",
+        "pattern-9142-06",
+        "pattern-9142-07",
+        "pattern-9142-08",
+        "pattern-9142-09",
+        "pattern-9142-10",
+        "pattern-9142-11",
+        "pattern-9142-12"
+      ]
+    },
+    {
+      "id": 9143,
+      "catalog_id": "import-nine-4",
+      "key": "pattern-9143",
+      "form": "reason sentence. That's why + result clause",
+      "title": "لهذا السبب",
+      "source_refs": [
+        {
+          "group": "nine",
+          "item_id": 4,
+          "key": "thats-why-4"
+        }
+      ],
+      "source_ids": [
+        256,
+        274
+      ],
+      "prerequisite_ids": [
+        "import-nine-3"
+      ],
+      "sentence_ids": [
+        "pattern-9143-01",
+        "pattern-9143-02",
+        "pattern-9143-03",
+        "pattern-9143-04",
+        "pattern-9143-05",
+        "pattern-9143-06",
+        "pattern-9143-07",
+        "pattern-9143-08",
+        "pattern-9143-09",
+        "pattern-9143-10",
+        "pattern-9143-11",
+        "pattern-9143-12"
+      ]
+    },
+    {
+      "id": 9144,
+      "catalog_id": "import-nine-5",
+      "key": "pattern-9144",
+      "form": "main clause + so that + subject + can or could + base verb",
+      "title": "لكي / حتى",
+      "source_refs": [
+        {
+          "group": "nine",
+          "item_id": 5,
+          "key": "so-that-5"
+        }
+      ],
+      "source_ids": [
+        304,
+        256
+      ],
+      "prerequisite_ids": [
+        "import-nine-6"
+      ],
+      "sentence_ids": [
+        "pattern-9144-01",
+        "pattern-9144-02",
+        "pattern-9144-03",
+        "pattern-9144-04",
+        "pattern-9144-05",
+        "pattern-9144-06",
+        "pattern-9144-07",
+        "pattern-9144-08",
+        "pattern-9144-09",
+        "pattern-9144-10",
+        "pattern-9144-11",
+        "pattern-9144-12"
+      ]
+    },
+    {
+      "id": 9145,
+      "catalog_id": "import-nine-6",
+      "key": "pattern-9145",
+      "form": "action + to + base verb for purpose",
+      "title": "لكي / من أجل",
+      "source_refs": [
+        {
+          "group": "nine",
+          "item_id": 6,
+          "key": "to-6"
+        }
+      ],
+      "source_ids": [
+        11,
+        16
+      ],
+      "prerequisite_ids": [
+        1
+      ],
+      "sentence_ids": [
+        "pattern-9145-01",
+        "pattern-9145-02",
+        "pattern-9145-03",
+        "pattern-9145-04",
+        "pattern-9145-05",
+        "pattern-9145-06",
+        "pattern-9145-07",
+        "pattern-9145-08",
+        "pattern-9145-09",
+        "pattern-9145-10",
+        "pattern-9145-11",
+        "pattern-9145-12"
+      ]
+    },
+    {
+      "id": 9146,
+      "catalog_id": "import-nine-7",
+      "key": "pattern-9146",
+      "form": "although + subject + verb, main clause",
+      "title": "رغم أن",
+      "source_refs": [
+        {
+          "group": "nine",
+          "item_id": 7,
+          "key": "although-7"
+        }
+      ],
+      "source_ids": [
+        294,
+        218
+      ],
+      "prerequisite_ids": [
+        "import-nine-9"
+      ],
+      "sentence_ids": [
+        "pattern-9146-01",
+        "pattern-9146-02",
+        "pattern-9146-03",
+        "pattern-9146-04",
+        "pattern-9146-05",
+        "pattern-9146-06",
+        "pattern-9146-07",
+        "pattern-9146-08",
+        "pattern-9146-09",
+        "pattern-9146-10",
+        "pattern-9146-11",
+        "pattern-9146-12"
+      ]
+    },
+    {
+      "id": 9147,
+      "catalog_id": "import-nine-8",
+      "key": "pattern-9147",
+      "form": "even though + subject + verb, main clause",
+      "title": "مع أن / بالرغم من أن",
+      "source_refs": [
+        {
+          "group": "nine",
+          "item_id": 8,
+          "key": "even-though-8"
+        }
+      ],
+      "source_ids": [
+        294,
+        218
+      ],
+      "prerequisite_ids": [
+        "import-nine-7"
+      ],
+      "sentence_ids": [
+        "pattern-9147-01",
+        "pattern-9147-02",
+        "pattern-9147-03",
+        "pattern-9147-04",
+        "pattern-9147-05",
+        "pattern-9147-06",
+        "pattern-9147-07",
+        "pattern-9147-08",
+        "pattern-9147-09",
+        "pattern-9147-10",
+        "pattern-9147-11",
+        "pattern-9147-12"
+      ]
+    },
+    {
+      "id": 9148,
+      "catalog_id": "import-nine-9",
+      "key": "pattern-9148",
+      "form": "first clause + but + contrasting clause",
+      "title": "لكن",
+      "source_refs": [
+        {
+          "group": "nine",
+          "item_id": 9,
+          "key": "but-9"
+        }
+      ],
+      "source_ids": [
+        294,
+        727
+      ],
+      "prerequisite_ids": [
+        "import-seven-11"
+      ],
+      "sentence_ids": [
+        "pattern-9148-01",
+        "pattern-9148-02",
+        "pattern-9148-03",
+        "pattern-9148-04",
+        "pattern-9148-05",
+        "pattern-9148-06",
+        "pattern-9148-07",
+        "pattern-9148-08",
+        "pattern-9148-09",
+        "pattern-9148-10",
+        "pattern-9148-11",
+        "pattern-9148-12"
+      ]
+    },
+    {
+      "id": 9149,
+      "catalog_id": "import-nine-10",
+      "key": "pattern-9149",
+      "form": "sentence. However, contrasting sentence",
+      "title": "ومع ذلك / لكن",
+      "source_refs": [
+        {
+          "group": "nine",
+          "item_id": 10,
+          "key": "however-10"
+        }
+      ],
+      "source_ids": [
+        294,
+        727
+      ],
+      "prerequisite_ids": [
+        "import-nine-9"
+      ],
+      "sentence_ids": [
+        "pattern-9149-01",
+        "pattern-9149-02",
+        "pattern-9149-03",
+        "pattern-9149-04",
+        "pattern-9149-05",
+        "pattern-9149-06",
+        "pattern-9149-07",
+        "pattern-9149-08",
+        "pattern-9149-09",
+        "pattern-9149-10",
+        "pattern-9149-11",
+        "pattern-9149-12"
+      ]
+    },
+    {
+      "id": 9150,
+      "catalog_id": "import-nine-11",
+      "key": "pattern-9150",
+      "form": "while + contrasting clause, main clause",
+      "title": "بينما / في حين أن",
+      "source_refs": [
+        {
+          "group": "nine",
+          "item_id": 11,
+          "key": "while-11"
+        }
+      ],
+      "source_ids": [
+        330,
+        453
+      ],
+      "prerequisite_ids": [
+        "import-nine-9"
+      ],
+      "sentence_ids": [
+        "pattern-9150-01",
+        "pattern-9150-02",
+        "pattern-9150-03",
+        "pattern-9150-04",
+        "pattern-9150-05",
+        "pattern-9150-06",
+        "pattern-9150-07",
+        "pattern-9150-08",
+        "pattern-9150-09",
+        "pattern-9150-10",
+        "pattern-9150-11",
+        "pattern-9150-12"
+      ]
+    },
+    {
+      "id": 9151,
+      "catalog_id": "import-nine-12",
+      "key": "pattern-9151",
+      "form": "instead of + noun or verb ending in ing",
+      "title": "بدلًا من",
+      "source_refs": [
+        {
+          "group": "nine",
+          "item_id": 12,
+          "key": "instead-of-12"
+        }
+      ],
+      "source_ids": [
+        167,
+        177
+      ],
+      "prerequisite_ids": [
+        7
+      ],
+      "sentence_ids": [
+        "pattern-9151-01",
+        "pattern-9151-02",
+        "pattern-9151-03",
+        "pattern-9151-04",
+        "pattern-9151-05",
+        "pattern-9151-06",
+        "pattern-9151-07",
+        "pattern-9151-08",
+        "pattern-9151-09",
+        "pattern-9151-10",
+        "pattern-9151-11",
+        "pattern-9151-12"
+      ]
+    },
+    {
+      "id": 9152,
+      "catalog_id": "import-nine-13",
+      "key": "pattern-9152",
+      "form": "in addition to + noun or verb ending in ing",
+      "title": "بالإضافة إلى",
+      "source_refs": [
+        {
+          "group": "nine",
+          "item_id": 13,
+          "key": "in-addition-to-13"
+        }
+      ],
+      "source_ids": [
+        150,
+        177
+      ],
+      "prerequisite_ids": [
+        "import-nine-12"
+      ],
+      "sentence_ids": [
+        "pattern-9152-01",
+        "pattern-9152-02",
+        "pattern-9152-03",
+        "pattern-9152-04",
+        "pattern-9152-05",
+        "pattern-9152-06",
+        "pattern-9152-07",
+        "pattern-9152-08",
+        "pattern-9152-09",
+        "pattern-9152-10",
+        "pattern-9152-11",
+        "pattern-9152-12"
+      ]
+    },
+    {
+      "id": 9153,
+      "catalog_id": "import-nine-14",
+      "key": "pattern-9153",
+      "form": "not only + parallel item + but also + parallel item",
+      "title": "ليس فقط ... بل أيضًا",
+      "source_refs": [
+        {
+          "group": "nine",
+          "item_id": 14,
+          "key": "not-only-but-also-14"
+        }
+      ],
+      "source_ids": [
+        250,
+        150
+      ],
+      "prerequisite_ids": [
+        "import-nine-9"
+      ],
+      "sentence_ids": [
+        "pattern-9153-01",
+        "pattern-9153-02",
+        "pattern-9153-03",
+        "pattern-9153-04",
+        "pattern-9153-05",
+        "pattern-9153-06",
+        "pattern-9153-07",
+        "pattern-9153-08",
+        "pattern-9153-09",
+        "pattern-9153-10",
+        "pattern-9153-11",
+        "pattern-9153-12"
+      ]
+    },
+    {
+      "id": 9154,
+      "catalog_id": "import-nine-15",
+      "key": "pattern-9154",
+      "form": "general idea. For example, specific illustration",
+      "title": "على سبيل المثال",
+      "source_refs": [
+        {
+          "group": "nine",
+          "item_id": 15,
+          "key": "for-example-15"
+        }
+      ],
+      "source_ids": [
+        150,
+        159
+      ],
+      "prerequisite_ids": [
+        "import-nine-1"
+      ],
+      "sentence_ids": [
+        "pattern-9154-01",
+        "pattern-9154-02",
+        "pattern-9154-03",
+        "pattern-9154-04",
+        "pattern-9154-05",
+        "pattern-9154-06",
+        "pattern-9154-07",
+        "pattern-9154-08",
+        "pattern-9154-09",
+        "pattern-9154-10",
+        "pattern-9154-11",
+        "pattern-9154-12"
+      ]
+    },
+    {
+      "id": 9155,
+      "catalog_id": "import-nine-16",
+      "key": "pattern-9155",
+      "form": "general noun + such as + example nouns or phrases",
+      "title": "مثل / من قبيل",
+      "source_refs": [
+        {
+          "group": "nine",
+          "item_id": 16,
+          "key": "such-as-16"
+        }
+      ],
+      "source_ids": [
+        150,
+        174
+      ],
+      "prerequisite_ids": [
+        "import-nine-15"
+      ],
+      "sentence_ids": [
+        "pattern-9155-01",
+        "pattern-9155-02",
+        "pattern-9155-03",
+        "pattern-9155-04",
+        "pattern-9155-05",
+        "pattern-9155-06",
+        "pattern-9155-07",
+        "pattern-9155-08",
+        "pattern-9155-09",
+        "pattern-9155-10",
+        "pattern-9155-11",
+        "pattern-9155-12"
+      ]
+    },
+    {
+      "id": 9156,
+      "catalog_id": "import-nine-17",
+      "key": "pattern-9156",
+      "form": "main clause + unless + present simple condition",
+      "title": "ما لم / إلا إذا",
+      "source_refs": [
+        {
+          "group": "nine",
+          "item_id": 17,
+          "key": "unless-17"
+        }
+      ],
+      "source_ids": [
+        218,
+        94
+      ],
+      "prerequisite_ids": [
+        "import-six-16"
+      ],
+      "sentence_ids": [
+        "pattern-9156-01",
+        "pattern-9156-02",
+        "pattern-9156-03",
+        "pattern-9156-04",
+        "pattern-9156-05",
+        "pattern-9156-06",
+        "pattern-9156-07",
+        "pattern-9156-08",
+        "pattern-9156-09",
+        "pattern-9156-10",
+        "pattern-9156-11",
+        "pattern-9156-12"
+      ]
+    },
+    {
+      "id": 9157,
+      "catalog_id": "import-nine-18",
+      "key": "pattern-9157",
+      "form": "even if + hypothetical or possible condition",
+      "title": "حتى لو",
+      "source_refs": [
+        {
+          "group": "nine",
+          "item_id": 18,
+          "key": "even-if-18"
+        }
+      ],
+      "source_ids": [
+        218,
+        294
+      ],
+      "prerequisite_ids": [
+        "import-nine-8"
+      ],
+      "sentence_ids": [
+        "pattern-9157-01",
+        "pattern-9157-02",
+        "pattern-9157-03",
+        "pattern-9157-04",
+        "pattern-9157-05",
+        "pattern-9157-06",
+        "pattern-9157-07",
+        "pattern-9157-08",
+        "pattern-9157-09",
+        "pattern-9157-10",
+        "pattern-9157-11",
+        "pattern-9157-12"
+      ]
+    },
+    {
+      "id": 9158,
+      "catalog_id": "import-ten-1",
+      "key": "pattern-9158",
+      "form": "What I mean is + clause",
+      "title": "ما أقصده هو",
+      "source_refs": [
+        {
+          "group": "ten",
+          "item_id": 1,
+          "key": "what-i-mean-is-1"
+        }
+      ],
+      "source_ids": [
+        365,
+        465,
+        36
+      ],
+      "prerequisite_ids": [
+        "import-seven-11"
+      ],
+      "sentence_ids": [
+        "pattern-9158-01",
+        "pattern-9158-02",
+        "pattern-9158-03",
+        "pattern-9158-04",
+        "pattern-9158-05",
+        "pattern-9158-06",
+        "pattern-9158-07",
+        "pattern-9158-08",
+        "pattern-9158-09",
+        "pattern-9158-10",
+        "pattern-9158-11",
+        "pattern-9158-12"
+      ]
+    },
+    {
+      "id": 9159,
+      "catalog_id": "import-ten-2",
+      "key": "pattern-9159",
+      "form": "What matters is + noun or clause",
+      "title": "ما يهم هو",
+      "source_refs": [
+        {
+          "group": "ten",
+          "item_id": 2,
+          "key": "what-matters-is-2"
+        }
+      ],
+      "source_ids": [
+        36,
+        289,
+        465
+      ],
+      "prerequisite_ids": [
+        "import-ten-1"
+      ],
+      "sentence_ids": [
+        "pattern-9159-01",
+        "pattern-9159-02",
+        "pattern-9159-03",
+        "pattern-9159-04",
+        "pattern-9159-05",
+        "pattern-9159-06",
+        "pattern-9159-07",
+        "pattern-9159-08",
+        "pattern-9159-09",
+        "pattern-9159-10",
+        "pattern-9159-11",
+        "pattern-9159-12"
+      ]
+    },
+    {
+      "id": 9160,
+      "catalog_id": "import-ten-3",
+      "key": "pattern-9160",
+      "form": "The reason is that + clause",
+      "title": "السبب هو أن",
+      "source_refs": [
+        {
+          "group": "ten",
+          "item_id": 3,
+          "key": "the-reason-is-that-3"
+        }
+      ],
+      "source_ids": [
+        256,
+        184,
+        869
+      ],
+      "prerequisite_ids": [
+        "import-nine-1"
+      ],
+      "sentence_ids": [
+        "pattern-9160-01",
+        "pattern-9160-02",
+        "pattern-9160-03",
+        "pattern-9160-04",
+        "pattern-9160-05",
+        "pattern-9160-06",
+        "pattern-9160-07",
+        "pattern-9160-08",
+        "pattern-9160-09",
+        "pattern-9160-10",
+        "pattern-9160-11",
+        "pattern-9160-12"
+      ]
+    },
+    {
+      "id": 9161,
+      "catalog_id": "import-ten-4",
+      "key": "pattern-9161",
+      "form": "I wonder if + statement word order",
+      "title": "أتساءل إن كان",
+      "source_refs": [
+        {
+          "group": "ten",
+          "item_id": 4,
+          "key": "i-wonder-if-4"
+        }
+      ],
+      "source_ids": [
+        141,
+        755,
+        436
+      ],
+      "prerequisite_ids": [
+        "import-four-12"
+      ],
+      "sentence_ids": [
+        "pattern-9161-01",
+        "pattern-9161-02",
+        "pattern-9161-03",
+        "pattern-9161-04",
+        "pattern-9161-05",
+        "pattern-9161-06",
+        "pattern-9161-07",
+        "pattern-9161-08",
+        "pattern-9161-09",
+        "pattern-9161-10",
+        "pattern-9161-11",
+        "pattern-9161-12"
+      ]
+    },
+    {
+      "id": 9162,
+      "catalog_id": "import-ten-5",
+      "key": "pattern-9162",
+      "form": "I wonder how + statement word order",
+      "title": "أتساءل كيف",
+      "source_refs": [
+        {
+          "group": "ten",
+          "item_id": 5,
+          "key": "i-wonder-how-5"
+        }
+      ],
+      "source_ids": [
+        350,
+        560,
+        749
+      ],
+      "prerequisite_ids": [
+        "import-four-11"
+      ],
+      "sentence_ids": [
+        "pattern-9162-01",
+        "pattern-9162-02",
+        "pattern-9162-03",
+        "pattern-9162-04",
+        "pattern-9162-05",
+        "pattern-9162-06",
+        "pattern-9162-07",
+        "pattern-9162-08",
+        "pattern-9162-09",
+        "pattern-9162-10",
+        "pattern-9162-11",
+        "pattern-9162-12"
+      ]
+    },
+    {
+      "id": 9163,
+      "catalog_id": "import-ten-6",
+      "key": "pattern-9163",
+      "form": "Could you tell me whether + statement clause",
+      "title": "هل يمكنك إخباري ما إذا",
+      "source_refs": [
+        {
+          "group": "ten",
+          "item_id": 6,
+          "key": "could-you-tell-me-whether-6"
+        }
+      ],
+      "source_ids": [
+        436,
+        962,
+        649
+      ],
+      "prerequisite_ids": [
+        "import-ten-4"
+      ],
+      "sentence_ids": [
+        "pattern-9163-01",
+        "pattern-9163-02",
+        "pattern-9163-03",
+        "pattern-9163-04",
+        "pattern-9163-05",
+        "pattern-9163-06",
+        "pattern-9163-07",
+        "pattern-9163-08",
+        "pattern-9163-09",
+        "pattern-9163-10",
+        "pattern-9163-11",
+        "pattern-9163-12"
+      ]
+    },
+    {
+      "id": 9164,
+      "catalog_id": "import-ten-7",
+      "key": "pattern-9164",
+      "form": "the person who + verb phrase",
+      "title": "الشخص الذي",
+      "source_refs": [
+        {
+          "group": "ten",
+          "item_id": 7,
+          "key": "the-person-who-7"
+        }
+      ],
+      "source_ids": [
+        945,
+        185,
+        35
+      ],
+      "prerequisite_ids": [
+        "import-four-3"
+      ],
+      "sentence_ids": [
+        "pattern-9164-01",
+        "pattern-9164-02",
+        "pattern-9164-03",
+        "pattern-9164-04",
+        "pattern-9164-05",
+        "pattern-9164-06",
+        "pattern-9164-07",
+        "pattern-9164-08",
+        "pattern-9164-09",
+        "pattern-9164-10",
+        "pattern-9164-11",
+        "pattern-9164-12"
+      ]
+    },
+    {
+      "id": 9165,
+      "catalog_id": "import-ten-8",
+      "key": "pattern-9165",
+      "form": "the thing or book that + relative clause",
+      "title": "الكتاب الذي",
+      "source_refs": [
+        {
+          "group": "ten",
+          "item_id": 8,
+          "key": "the-book-that-8"
+        }
+      ],
+      "source_ids": [
+        465,
+        998,
+        945
+      ],
+      "prerequisite_ids": [
+        5
+      ],
+      "sentence_ids": [
+        "pattern-9165-01",
+        "pattern-9165-02",
+        "pattern-9165-03",
+        "pattern-9165-04",
+        "pattern-9165-05",
+        "pattern-9165-06",
+        "pattern-9165-07",
+        "pattern-9165-08",
+        "pattern-9165-09",
+        "pattern-9165-10",
+        "pattern-9165-11",
+        "pattern-9165-12"
+      ]
+    },
+    {
+      "id": 9166,
+      "catalog_id": "import-ten-9",
+      "key": "pattern-9166",
+      "form": "the place where + subject + verb",
+      "title": "المكان الذي",
+      "source_refs": [
+        {
+          "group": "ten",
+          "item_id": 9,
+          "key": "the-place-where-9"
+        }
+      ],
+      "source_ids": [
+        884,
+        875,
+        887
+      ],
+      "prerequisite_ids": [
+        "import-four-2"
+      ],
+      "sentence_ids": [
+        "pattern-9166-01",
+        "pattern-9166-02",
+        "pattern-9166-03",
+        "pattern-9166-04",
+        "pattern-9166-05",
+        "pattern-9166-06",
+        "pattern-9166-07",
+        "pattern-9166-08",
+        "pattern-9166-09",
+        "pattern-9166-10",
+        "pattern-9166-11",
+        "pattern-9166-12"
+      ]
+    },
+    {
+      "id": 9167,
+      "catalog_id": "import-ten-10",
+      "key": "pattern-9167",
+      "form": "the day when + subject + verb",
+      "title": "اليوم الذي",
+      "source_refs": [
+        {
+          "group": "ten",
+          "item_id": 10,
+          "key": "the-day-when-10"
+        }
+      ],
+      "source_ids": [
+        87,
+        728,
+        932
+      ],
+      "prerequisite_ids": [
+        "import-four-4"
+      ],
+      "sentence_ids": [
+        "pattern-9167-01",
+        "pattern-9167-02",
+        "pattern-9167-03",
+        "pattern-9167-04",
+        "pattern-9167-05",
+        "pattern-9167-06",
+        "pattern-9167-07",
+        "pattern-9167-08",
+        "pattern-9167-09",
+        "pattern-9167-10",
+        "pattern-9167-11",
+        "pattern-9167-12"
+      ]
+    },
+    {
+      "id": 9168,
+      "catalog_id": "import-ten-11",
+      "key": "pattern-9168",
+      "form": "I wish I could + base verb",
+      "title": "أتمنى لو استطعت",
+      "source_refs": [
+        {
+          "group": "ten",
+          "item_id": 11,
+          "key": "i-wish-i-could-11"
+        }
+      ],
+      "source_ids": [
+        254,
+        400
+      ],
+      "prerequisite_ids": [
+        "import-three-1"
+      ],
+      "sentence_ids": [
+        "pattern-9168-01",
+        "pattern-9168-02",
+        "pattern-9168-03",
+        "pattern-9168-04",
+        "pattern-9168-05",
+        "pattern-9168-06",
+        "pattern-9168-07",
+        "pattern-9168-08",
+        "pattern-9168-09",
+        "pattern-9168-10",
+        "pattern-9168-11",
+        "pattern-9168-12"
+      ]
+    },
+    {
+      "id": 9169,
+      "catalog_id": "import-ten-12",
+      "key": "pattern-9169",
+      "form": "If I were + imaginary situation, I would + base verb",
+      "title": "لو كنت",
+      "source_refs": [
+        {
+          "group": "ten",
+          "item_id": 12,
+          "key": "if-i-were-12"
+        }
+      ],
+      "source_ids": [
+        218,
+        630,
+        254
+      ],
+      "prerequisite_ids": [
+        "import-six-12"
+      ],
+      "sentence_ids": [
+        "pattern-9169-01",
+        "pattern-9169-02",
+        "pattern-9169-03",
+        "pattern-9169-04",
+        "pattern-9169-05",
+        "pattern-9169-06",
+        "pattern-9169-07",
+        "pattern-9169-08",
+        "pattern-9169-09",
+        "pattern-9169-10",
+        "pattern-9169-11",
+        "pattern-9169-12"
+      ]
+    },
+    {
+      "id": 9170,
+      "catalog_id": "import-ten-13",
+      "key": "pattern-9170",
+      "form": "If + past perfect, subject + would have + past participle",
+      "title": "لو كنت قد ... لكنت قد",
+      "source_refs": [
+        {
+          "group": "ten",
+          "item_id": 13,
+          "key": "if-i-had-i-would-have-13"
+        }
+      ],
+      "source_ids": [
+        400,
+        87,
+        841
+      ],
+      "prerequisite_ids": [
+        "import-ten-16"
+      ],
+      "sentence_ids": [
+        "pattern-9170-01",
+        "pattern-9170-02",
+        "pattern-9170-03",
+        "pattern-9170-04",
+        "pattern-9170-05",
+        "pattern-9170-06",
+        "pattern-9170-07",
+        "pattern-9170-08",
+        "pattern-9170-09",
+        "pattern-9170-10",
+        "pattern-9170-11",
+        "pattern-9170-12"
+      ]
+    },
+    {
+      "id": 9171,
+      "catalog_id": "import-ten-14",
+      "key": "pattern-9171",
+      "form": "I should have + past participle",
+      "title": "كان ينبغي أن",
+      "source_refs": [
+        {
+          "group": "ten",
+          "item_id": 14,
+          "key": "i-should-have-14"
+        }
+      ],
+      "source_ids": [
+        400,
+        841,
+        125
+      ],
+      "prerequisite_ids": [
+        "import-three-12"
+      ],
+      "sentence_ids": [
+        "pattern-9171-01",
+        "pattern-9171-02",
+        "pattern-9171-03",
+        "pattern-9171-04",
+        "pattern-9171-05",
+        "pattern-9171-06",
+        "pattern-9171-07",
+        "pattern-9171-08",
+        "pattern-9171-09",
+        "pattern-9171-10",
+        "pattern-9171-11",
+        "pattern-9171-12"
+      ]
+    },
+    {
+      "id": 9172,
+      "catalog_id": "import-ten-15",
+      "key": "pattern-9172",
+      "form": "I could have + past participle",
+      "title": "كان بإمكاني أن",
+      "source_refs": [
+        {
+          "group": "ten",
+          "item_id": 15,
+          "key": "i-could-have-15"
+        }
+      ],
+      "source_ids": [
+        841,
+        400,
+        218
+      ],
+      "prerequisite_ids": [
+        "import-three-1"
+      ],
+      "sentence_ids": [
+        "pattern-9172-01",
+        "pattern-9172-02",
+        "pattern-9172-03",
+        "pattern-9172-04",
+        "pattern-9172-05",
+        "pattern-9172-06",
+        "pattern-9172-07",
+        "pattern-9172-08",
+        "pattern-9172-09",
+        "pattern-9172-10",
+        "pattern-9172-11",
+        "pattern-9172-12"
+      ]
+    },
+    {
+      "id": 9173,
+      "catalog_id": "import-ten-16",
+      "key": "pattern-9173",
+      "form": "I had already + past participle + before past event",
+      "title": "كنت قد فعلت بالفعل",
+      "source_refs": [
+        {
+          "group": "ten",
+          "item_id": 16,
+          "key": "i-had-already-16"
+        }
+      ],
+      "source_ids": [
+        328,
+        87,
+        354
+      ],
+      "prerequisite_ids": [
+        "import-five-1"
+      ],
+      "sentence_ids": [
+        "pattern-9173-01",
+        "pattern-9173-02",
+        "pattern-9173-03",
+        "pattern-9173-04",
+        "pattern-9173-05",
+        "pattern-9173-06",
+        "pattern-9173-07",
+        "pattern-9173-08",
+        "pattern-9173-09",
+        "pattern-9173-10",
+        "pattern-9173-11",
+        "pattern-9173-12"
+      ]
+    },
+    {
+      "id": 9174,
+      "catalog_id": "import-ten-17",
+      "key": "pattern-9174",
+      "form": "By the time + past simple, past perfect clause",
+      "title": "بحلول الوقت الذي",
+      "source_refs": [
+        {
+          "group": "ten",
+          "item_id": 17,
+          "key": "by-the-time-17"
+        }
+      ],
+      "source_ids": [
+        87,
+        328,
+        125
+      ],
+      "prerequisite_ids": [
+        "import-ten-16"
+      ],
+      "sentence_ids": [
+        "pattern-9174-01",
+        "pattern-9174-02",
+        "pattern-9174-03",
+        "pattern-9174-04",
+        "pattern-9174-05",
+        "pattern-9174-06",
+        "pattern-9174-07",
+        "pattern-9174-08",
+        "pattern-9174-09",
+        "pattern-9174-10",
+        "pattern-9174-11",
+        "pattern-9174-12"
+      ]
+    },
+    {
+      "id": 9175,
+      "catalog_id": "import-ten-18",
+      "key": "pattern-9175",
+      "form": "The + comparative clause, the + comparative clause",
+      "title": "كلما ازداد ... ازداد",
+      "source_refs": [
+        {
+          "group": "ten",
+          "item_id": 18,
+          "key": "the-more-the-more-18"
+        }
+      ],
+      "source_ids": [
+        159,
+        307
+      ],
+      "prerequisite_ids": [
+        "import-nine-9"
+      ],
+      "sentence_ids": [
+        "pattern-9175-01",
+        "pattern-9175-02",
+        "pattern-9175-03",
+        "pattern-9175-04",
+        "pattern-9175-05",
+        "pattern-9175-06",
+        "pattern-9175-07",
+        "pattern-9175-08",
+        "pattern-9175-09",
+        "pattern-9175-10",
+        "pattern-9175-11",
+        "pattern-9175-12"
+      ]
+    }
+  ],
+  "manifest_paths": [
+    "production/manifests/expansion-all-153-00.json",
+    "production/manifests/expansion-all-153-01.json",
+    "production/manifests/expansion-all-153-02.json",
+    "production/manifests/expansion-all-153-03.json",
+    "production/manifests/expansion-all-153-04.json",
+    "production/manifests/expansion-all-153-05.json",
+    "production/manifests/expansion-all-153-06.json",
+    "production/manifests/expansion-all-153-07.json",
+    "production/manifests/expansion-all-153-08.json",
+    "production/manifests/expansion-all-153-09.json",
+    "production/manifests/expansion-all-153-10.json",
+    "production/manifests/expansion-all-153-11.json"
+  ]
+}

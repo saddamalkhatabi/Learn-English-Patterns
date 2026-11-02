@@ -1,0 +1,544 @@
+{
+  "schema": 2,
+  "generated_at": "2026-11-02T05:15:20.377611+00:00",
+  "patterns": 27,
+  "sentences": 324,
+  "core_recordings": 648,
+  "supplement_sentences": 14,
+  "recordings_verified": 676,
+  "word_cues_verified": 4262,
+  "visual_scenes_reviewed": 324,
+  "scene_atlases": 27,
+  "structural_errors": [],
+  "review_notes": [
+    {
+      "sentence_id": "want-04",
+      "gender": "male",
+      "expected": "I want to visit my friend.",
+      "recognized": "I WANT A VISIT MY FRIEND",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "want-04",
+      "gender": "female",
+      "expected": "I want to visit my friend.",
+      "recognized": "I WANT A VISIT MY FRIEND",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "want-08",
+      "gender": "male",
+      "expected": "I want to travel next year.",
+      "recognized": "I WANT A TRAVEL NEXT YEAR",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "want-08",
+      "gender": "female",
+      "expected": "I want to travel next year.",
+      "recognized": "I WANT A TRAVEL NEXT YEAR",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "have-11",
+      "gender": "male",
+      "expected": "I have to return this book today.",
+      "recognized": "I HAVE TO RETURN THIS BOOK TO DAY",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "have-11",
+      "gender": "female",
+      "expected": "I have to return this book today.",
+      "recognized": "I HAVE TO RETURN THIS BOOK TO DAY",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "have-12",
+      "gender": "male",
+      "expected": "I have to get up early tomorrow.",
+      "recognized": "I HAVE TO GET UP EARLY TO MORROW",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "have-12",
+      "gender": "female",
+      "expected": "I have to get up early tomorrow.",
+      "recognized": "I HAVE TO GET UP EARLY TO MORROW",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "like-12",
+      "gender": "male",
+      "expected": "I'd like to spend the weekend by the sea.",
+      "recognized": "I'D LIKE TO SPEND THE WEEK END BY THE SEA",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "like-12",
+      "gender": "female",
+      "expected": "I'd like to spend the weekend by the sea.",
+      "recognized": "I'D LIKE TO SPEND THE WEEK END BY THE SEA",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "this-05",
+      "gender": "male",
+      "expected": "This is our classroom.",
+      "recognized": "THIS IS OUR CLASS ROOM",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "this-07",
+      "gender": "male",
+      "expected": "This is my favourite book.",
+      "recognized": "THIS IS MY FAVORITE BOOK",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "this-07",
+      "gender": "female",
+      "expected": "This is my favourite book.",
+      "recognized": "THIS IS MY FAVORITE BOK",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "this-08",
+      "gender": "male",
+      "expected": "This is the key to your room.",
+      "recognized": "THIS IS THE KAY TO YOUR ROOM",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "this-08",
+      "gender": "female",
+      "expected": "This is the key to your room.",
+      "recognized": "THIS IS THE KEY TO YOU ROOM",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "feel-06",
+      "gender": "male",
+      "expected": "I feel like watching a film tonight.",
+      "recognized": "I FEEL LIKE WATCHING A FILM TO NIGHT",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "feel-06",
+      "gender": "female",
+      "expected": "I feel like watching a film tonight.",
+      "recognized": "I FEEL LIKE WATCHING A FILM TO NIGHT",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "feel-08",
+      "gender": "male",
+      "expected": "I feel like taking a different route today.",
+      "recognized": "I FEEL LIKE TAKING A DIFFERENT ROUTE TO DAY",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "feel-08",
+      "gender": "female",
+      "expected": "I feel like taking a different route today.",
+      "recognized": "I FEEL LIKE TAKING A DIFFERENT ROUTE TO DAY",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "used-05",
+      "gender": "female",
+      "expected": "I used to read before bed.",
+      "recognized": "I USED TO READ BEFORE BAD",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "used-10",
+      "gender": "male",
+      "expected": "Did you use to take this bus?",
+      "recognized": "DID YOU USE TO TAKE THIS BUSS",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "used-10",
+      "gender": "female",
+      "expected": "Did you use to take this bus?",
+      "recognized": "DID YOU USE TO TAKE THIS BUSS",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "managed-01",
+      "gender": "male",
+      "expected": "I managed to finish on time.",
+      "recognized": "I MANAGE TO FINISH ON TIME",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "managed-05",
+      "gender": "male",
+      "expected": "I managed to repair the chair.",
+      "recognized": "I MANAGE TO REPAIR THE CHAIR",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "managed-09",
+      "gender": "male",
+      "expected": "They managed to organise the event in one week.",
+      "recognized": "THEY MANAGED TO ORGANIZE THE EVENT IN ONE WEEK",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "managed-09",
+      "gender": "female",
+      "expected": "They managed to organise the event in one week.",
+      "recognized": "THEY MANAGED TO ORGANIZE THE EVENT IN ONE WEEK",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "managed-12",
+      "gender": "male",
+      "expected": "We tried to fix it, but we didn't manage to.",
+      "recognized": "WE TRIED TO FIX IT BUT WE DIDN'T MANAGE TOO",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "managed-12",
+      "gender": "female",
+      "expected": "We tried to fix it, but we didn't manage to.",
+      "recognized": "WE TRIED TO FIX IT BUT WE DIDN'T MANAGE TOO",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "takes-12",
+      "gender": "female",
+      "expected": "Learning this skill takes practice.",
+      "recognized": "LEARNING THE SKILL TAKES PRACTICE",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "know-08",
+      "gender": "male",
+      "expected": "Do you know why the bus is late?",
+      "recognized": "DO YOU KNOW WHY THE BUSS IS LATE",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "know-10",
+      "gender": "male",
+      "expected": "Could you tell me where the nearest pharmacy is?",
+      "recognized": "COULD YOU TELL ME WHERE THE NEAREST FHARMECEE IS",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "know-10",
+      "gender": "female",
+      "expected": "Could you tell me where the nearest pharmacy is?",
+      "recognized": "COULD YOU TELL ME WHERE THE NEAREST PHARMESEE IS",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "that-12",
+      "gender": "male",
+      "expected": "That is my suitcase beside the counter.",
+      "recognized": "THAT IS MY SUIT CASE BESIDE THE COUNTER",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "that-12",
+      "gender": "female",
+      "expected": "That is my suitcase beside the counter.",
+      "recognized": "THAT IS MY SUIT CASE BESIDE THE COUNTER",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "got-06",
+      "gender": "male",
+      "expected": "I've got a free afternoon tomorrow.",
+      "recognized": "I'VE GOT A FREE AFTERNOON TO MORROW",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "got-06",
+      "gender": "female",
+      "expected": "I've got a free afternoon tomorrow.",
+      "recognized": "I'VE GOT A FREE AFTERNOON TO MORROW",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "dislike-06",
+      "gender": "female",
+      "expected": "I don't like driving in heavy traffic.",
+      "recognized": "I DON'T LIKE DRIVING AN HEAVY TRAFFIC",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "there-is-08",
+      "gender": "female",
+      "expected": "There is a small shop around the corner.",
+      "recognized": "THERE'S A SMALL SHOP AROUND THE CORNER",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "there-is-10",
+      "gender": "female",
+      "expected": "There is a clean towel in the bathroom.",
+      "recognized": "THERE'S A CLEAN TOWEL IN THE BATHROOM",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "am-07",
+      "gender": "female",
+      "expected": "I am from Yemen.",
+      "recognized": "I AM FROM YEMMEN",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "name-02",
+      "gender": "male",
+      "expected": "My name is Sara.",
+      "recognized": "MY NAME IS SARAH",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "name-02",
+      "gender": "female",
+      "expected": "My name is Sara.",
+      "recognized": "MY NAME IS SARAH",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "name-04",
+      "gender": "male",
+      "expected": "My name is Noor.",
+      "recognized": "MY NAME IS NOR",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "name-04",
+      "gender": "female",
+      "expected": "My name is Noor.",
+      "recognized": "MY NAME IS NORE",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "name-06",
+      "gender": "male",
+      "expected": "My name is Sami. I'm here for the interview.",
+      "recognized": "MY NAME IS SAWME I'M HERE FOR THE INTERVIEW",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "name-06",
+      "gender": "female",
+      "expected": "My name is Sami. I'm here for the interview.",
+      "recognized": "MY NAME IS SAWME I'M HERE FOR THE INTERVIEW",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "name-07",
+      "gender": "female",
+      "expected": "My name is Huda, and this is my sister.",
+      "recognized": "MY NAME IS HUGHDAH AND THIS IS MY SISTER",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "name-09",
+      "gender": "male",
+      "expected": "My name is Lina, but my friends call me Lin.",
+      "recognized": "MY NAME IS LENA BUT MY FRIENDS CALL ME LYNNE",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "name-09",
+      "gender": "female",
+      "expected": "My name is Lina, but my friends call me Lin.",
+      "recognized": "MY NAME IS LENA BUT MY FRIENDS CALL ME LYNNE",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "name-10",
+      "gender": "male",
+      "expected": "My name is Yasser. I'm the new librarian.",
+      "recognized": "MY NAME IS YAESER I'M THE NEW LIBRARIAN",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "name-10",
+      "gender": "female",
+      "expected": "My name is Yasser. I'm the new librarian.",
+      "recognized": "MY NAME IS YASESER I'M THE NEW LIBRARIAN",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "name-11",
+      "gender": "male",
+      "expected": "My name is Mariam, and I'll be helping you today.",
+      "recognized": "MY NAME IS MARIAM AND I'LL BE HELPING YOU TO DAY",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "name-11",
+      "gender": "female",
+      "expected": "My name is Mariam, and I'll be helping you today.",
+      "recognized": "MY NAME IS MARIAM AND I'LL BE HELPING YOU TO DAY",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "name-12",
+      "gender": "male",
+      "expected": "My name is Fadi. We spoke on the phone yesterday.",
+      "recognized": "MY NAME IS FATTY WE SPOKE ON THE PHONE YESTERDAY",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "name-12",
+      "gender": "female",
+      "expected": "My name is Fadi. We spoke on the phone yesterday.",
+      "recognized": "MY NAME IS FATTY WE SPOKE ON THE PHONE YESTERDAY",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "there-are-12",
+      "gender": "male",
+      "expected": "There are plenty of seats on this bus.",
+      "recognized": "THERE ARE PLENTY OF SEATS ON THIS BUSS",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "there-are-12",
+      "gender": "female",
+      "expected": "There are plenty of seats on this bus.",
+      "recognized": "THERE ARE PLENTY OF SEATS ON THIS BUSS",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "it-07",
+      "gender": "female",
+      "expected": "It's too heavy for this shelf.",
+      "recognized": "IT'S TOO HEAVY FOR THE SHELF",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "it-12",
+      "gender": "female",
+      "expected": "It's our first day in this city.",
+      "recognized": "IT'S OUR FIRST DAY IN THE CITY",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "like-noun-03",
+      "gender": "male",
+      "expected": "I'd like a sandwich.",
+      "recognized": "I'D LIKE A SANDWITCH",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "like-noun-09",
+      "gender": "male",
+      "expected": "I'd like a copy of the timetable.",
+      "recognized": "I'D LIKE A COPY OF THE TIME TABLE",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "like-noun-09",
+      "gender": "female",
+      "expected": "I'd like a copy of the timetable.",
+      "recognized": "I'D LIKE A COPY OF THE TIME TABLE",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "possess-02",
+      "gender": "male",
+      "expected": "I have a laptop.",
+      "recognized": "I HAVE A LAP TOP",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "possess-02",
+      "gender": "female",
+      "expected": "I have a laptop.",
+      "recognized": "I HAVE A LAP TOP",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "these-08",
+      "gender": "male",
+      "expected": "These are your tickets for tonight.",
+      "recognized": "THESE ARE YOUR TICKETS FOR TO NIGHT",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "these-08",
+      "gender": "female",
+      "expected": "These are your tickets for tonight.",
+      "recognized": "THESE ARE YOUR TICKETS FOR TO NIGHT",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "story-01",
+      "gender": "male",
+      "expected": "Omar is in a new city. He sees a small café.",
+      "recognized": "OMAR IS IN A NEW CITY HE SEES A SMALL CAFE",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "story-01",
+      "gender": "female",
+      "expected": "Omar is in a new city. He sees a small café.",
+      "recognized": "OMAR IS IN A NEW CITY HE SEES A SMALL CAFE",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "story-05",
+      "gender": "male",
+      "expected": "Let's start with the park. It's beautiful.",
+      "recognized": "LET'S START WITH A PARK IT'S BEAUTIFUL",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "dialogue-cafe",
+      "gender": "male",
+      "expected": "Hi! Welcome to our café. What would you like to order?",
+      "recognized": "HIGH WELCOME TO OUR CAFE WHAT WOULD YOU LIKE TO ORDER",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "dialogue-cafe",
+      "gender": "female",
+      "expected": "Hi! Welcome to our café. What would you like to order?",
+      "recognized": "HIGH WELCOME TO OUR CAFE WHAT WOULD YOU LIKE TO ORDER",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "dialogue-station",
+      "gender": "male",
+      "expected": "Hello! Where would you like to go today?",
+      "recognized": "HULLO WHERE WOULD YOU LIKE TO GO TO DAY",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "dialogue-station",
+      "gender": "female",
+      "expected": "Hello! Where would you like to go today?",
+      "recognized": "HULLO WHERE WOULD YOU LIKE TO GO TO DAY",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "dialogue-work",
+      "gender": "male",
+      "expected": "Morning! What are you working on today?",
+      "recognized": "MORNING WHAT ARE YOU WORKING ON TO DAY",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    },
+    {
+      "sentence_id": "dialogue-work",
+      "gender": "female",
+      "expected": "Morning! What are you working on today?",
+      "recognized": "MORNING WHAT ARE YOU WORKING ON TO DAY",
+      "action": "ASR difference; listening review pending, not an automatic pronunciation score"
+    }
+  ],
+  "validation_status": "pass",
+  "auditory_review": "pending; no independent human listening sign-off",
+  "duration_basis": "decoded PCM timeline; source container durations retained where normalized",
+  "browser_test_report": "qa-report-v4.json"
+}

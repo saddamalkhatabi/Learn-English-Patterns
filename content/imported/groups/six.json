@@ -1,0 +1,1567 @@
+{
+  "schema": 1,
+  "group": "future-plans-predictions-and-conditions",
+  "title": "المجموعة السادسة: المستقبل والخطط والنية",
+  "status": "18 authored future-focused patterns, 72 translated scenes and three connected stories; realistic photographs intentionally deferred; sound production requires verified CI media",
+  "items": [
+    {
+      "id": 1,
+      "key": "ill-1",
+      "title": "I'll",
+      "meaning": "سوف أفعل / سأفعل",
+      "formula": "I'll + base verb",
+      "explanation": "للقرار اللحظي أو الوعد أو التنبؤ؛ بعد will يأتي الفعل بصيغته الأساسية.",
+      "explanationEn": "Use will for a decision made now, a promise, or a prediction; follow it with a base verb.",
+      "contrast": "I'll help قرار اتخذته الآن؛ I'm going to help نية مقررة مسبقًا.",
+      "sourceIds": [
+        82,
+        83,
+        781
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I'll call you after class.",
+          "ar": "سأتصل بك بعد الحصة.",
+          "context": "بعد الدرس",
+          "icon": "📱",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I'll help you carry the boxes.",
+          "ar": "سأساعدك في حمل الصناديق.",
+          "context": "المساعدة",
+          "icon": "📦",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I'll send the address tonight.",
+          "ar": "سأرسل العنوان الليلة.",
+          "context": "ترتيب لقاء",
+          "icon": "📍",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I'll open the window.",
+          "ar": "سأفتح النافذة.",
+          "context": "قرار سريع",
+          "icon": "🪟",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Sara sees her friend carrying heavy bags.",
+          "ar": "ترى سارة صديقتها تحمل حقائب ثقيلة."
+        },
+        {
+          "id": 2,
+          "en": "She says, 'I'll carry one for you.'",
+          "ar": "تقول: سأحمل واحدة عنك."
+        },
+        {
+          "id": 3,
+          "en": "Her friend smiles and thanks her.",
+          "ar": "تبتسم صديقتها وتشكرها."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "This box is heavy.",
+          "ar": "هذا الصندوق ثقيل."
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "I'll help you with it.",
+          "ar": "سأساعدك فيه."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "key": "i-wont-2",
+      "title": "I won't",
+      "meaning": "لن أفعل",
+      "formula": "I won't + base verb",
+      "explanation": "ننفي حدوث فعل مستقبلي أو نؤكد رفضًا أو وعدًا بعدم القيام بشيء؛ won't اختصار will not.",
+      "explanationEn": "Use won't to say a future action will not happen or to make a negative promise.",
+      "contrast": "I won't go للمستقبل؛ I didn't go للماضي.",
+      "sourceIds": [
+        55,
+        273
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I won't be late tomorrow.",
+          "ar": "لن أتأخر غدًا.",
+          "context": "الالتزام بالمواعيد",
+          "icon": "⏰",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I won't forget your birthday.",
+          "ar": "لن أنسى عيد ميلادك.",
+          "context": "وعد لصديق",
+          "icon": "🎂",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I won't share your secret.",
+          "ar": "لن أفشي سرك.",
+          "context": "الثقة",
+          "icon": "🤝",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I won't buy that broken phone.",
+          "ar": "لن أشتري ذلك الهاتف المعطل.",
+          "context": "قرار شراء",
+          "icon": "📱",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Omar promises to arrive early.",
+          "ar": "يعد عمر بأن يصل مبكرًا."
+        },
+        {
+          "id": 2,
+          "en": "He says, 'I won't be late again.'",
+          "ar": "يقول: لن أتأخر مرة أخرى."
+        },
+        {
+          "id": 3,
+          "en": "The next morning, he leaves home on time.",
+          "ar": "في الصباح التالي، يغادر المنزل في الموعد."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Please remember our meeting.",
+          "ar": "من فضلك تذكر اجتماعنا."
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "I won't forget it.",
+          "ar": "لن أنساه."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "key": "will-you-3",
+      "title": "Will you",
+      "meaning": "هل ستفعل؟",
+      "formula": "Will you + base verb + ...?",
+      "explanation": "نستخدم Will you للسؤال عن فعل مستقبلي، ويمكن أن تكون طلبًا مهذبًا بحسب السياق والنبرة.",
+      "explanationEn": "Use Will you to ask about a future action or make a request.",
+      "contrast": "Will you help? قد تكون طلبًا؛ Are you going to help? تسأل غالبًا عن النية.",
+      "sourceIds": [
+        702,
+        718
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "Will you join us tomorrow?",
+          "ar": "هل ستنضم إلينا غدًا؟",
+          "context": "دعوة أصدقاء",
+          "icon": "👥",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "Will you call me tonight?",
+          "ar": "هل ستتصل بي الليلة؟",
+          "context": "مكالمة مسائية",
+          "icon": "📞",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "Will you open the door, please?",
+          "ar": "هل تفتح الباب من فضلك؟",
+          "context": "طلب مهذب",
+          "icon": "🚪",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "Will you come to the lesson?",
+          "ar": "هل ستحضر الدرس؟",
+          "context": "حضور المدرسة",
+          "icon": "🏫",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Lina invites her cousin to lunch.",
+          "ar": "تدعو لينا ابنة عمها إلى الغداء."
+        },
+        {
+          "id": 2,
+          "en": "She asks, 'Will you come on Friday?'",
+          "ar": "تسأل: هل ستأتين يوم الجمعة؟"
+        },
+        {
+          "id": 3,
+          "en": "Her cousin says yes and checks the time.",
+          "ar": "توافق ابنة عمها وتسأل عن الموعد."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Will you visit us this weekend?",
+          "ar": "هل ستزورنا في عطلة الأسبوع؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Yes, I'll come on Saturday.",
+          "ar": "نعم، سأأتي يوم السبت."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "key": "im-going-to-4",
+      "title": "I'm going to",
+      "meaning": "أنوي أن / سوف",
+      "formula": "I'm going to + base verb",
+      "explanation": "لنية أو خطة اتخذنا قرارها قبل لحظة الحديث؛ وقد يدل على توقع مبني على دليل ظاهر.",
+      "explanationEn": "Use be going to for a prior intention or a prediction based on present evidence.",
+      "contrast": "I'm going to study خطة مسبقة؛ I'll study قد يكون قرارًا آنيًا.",
+      "sourceIds": [
+        149,
+        280,
+        341
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I'm going to practice English tonight.",
+          "ar": "سأتدرب على الإنجليزية الليلة.",
+          "context": "خطة المساء",
+          "icon": "📘",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I'm going to visit my grandmother.",
+          "ar": "سأزور جدتي.",
+          "context": "زيارة عائلية",
+          "icon": "👵",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I'm going to save some money.",
+          "ar": "أنوي ادخار بعض المال.",
+          "context": "الادخار",
+          "icon": "💰",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I'm going to cook dinner at home.",
+          "ar": "سأعد العشاء في المنزل.",
+          "context": "العشاء",
+          "icon": "🍲",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Nabil writes his weekend goals.",
+          "ar": "يكتب نبيل أهداف عطلة الأسبوع."
+        },
+        {
+          "id": 2,
+          "en": "He says, 'I'm going to practice every morning.'",
+          "ar": "يقول: سأتدرب كل صباح."
+        },
+        {
+          "id": 3,
+          "en": "He puts the plan beside his desk.",
+          "ar": "يضع الخطة بجانب مكتبه."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "What are your plans for tonight?",
+          "ar": "ما خططك لليلة؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "I'm going to read a new book.",
+          "ar": "سأقرأ كتابًا جديدًا."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "key": "im-not-going-to-5",
+      "title": "I'm not going to",
+      "meaning": "لا أنوي أن",
+      "formula": "I'm not going to + base verb",
+      "explanation": "لنُبيّن أن فعلًا ليس ضمن نيتنا أو خطتنا المسبقة؛ لا نضع الفعل في الماضي.",
+      "explanationEn": "Use am not going to for a future action you do not intend to do.",
+      "contrast": "I'm not going to travel قرار مسبق؛ I won't travel قد يدل على وعد أو رفض.",
+      "sourceIds": [
+        149,
+        280
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I'm not going to drive tonight.",
+          "ar": "لا أنوي القيادة الليلة.",
+          "context": "المواصلات",
+          "icon": "🚕",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I'm not going to skip breakfast.",
+          "ar": "لن أتجاوز وجبة الإفطار.",
+          "context": "عادة صحية",
+          "icon": "🥣",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I'm not going to buy a new laptop yet.",
+          "ar": "لا أنوي شراء حاسوب جديد بعد.",
+          "context": "ميزانية",
+          "icon": "💻",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I'm not going to watch TV before studying.",
+          "ar": "لن أشاهد التلفاز قبل الدراسة.",
+          "context": "تنظيم الوقت",
+          "icon": "📺",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Mariam has an exam on Monday.",
+          "ar": "لدى مريم اختبار يوم الاثنين."
+        },
+        {
+          "id": 2,
+          "en": "She isn't going to stay up late.",
+          "ar": "لا تنوي السهر حتى وقت متأخر."
+        },
+        {
+          "id": 3,
+          "en": "Instead, she plans to sleep early.",
+          "ar": "بل تخطط للنوم مبكرًا."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Are you buying a new phone?",
+          "ar": "هل ستشتري هاتفًا جديدًا؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "No, I'm not going to buy one yet.",
+          "ar": "لا، لا أنوي شراء واحد بعد."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "key": "are-you-going-to-6",
+      "title": "Are you going to",
+      "meaning": "هل تنوي أن؟",
+      "formula": "Are you going to + base verb + ...?",
+      "explanation": "نسأل به عن نية أو خطة اتُخذت مسبقًا، وليس بالضرورة عن وعد أو قرار فوري.",
+      "explanationEn": "Ask about someone's prior intention or future plan using Are you going to.",
+      "contrast": "Are you going to call? سؤال عن النية؛ Will you call? سؤال عام أو طلب.",
+      "sourceIds": [
+        149,
+        156
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "Are you going to study tonight?",
+          "ar": "هل تنوي الدراسة الليلة؟",
+          "context": "التحضير للاختبار",
+          "icon": "📚",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "Are you going to visit your uncle?",
+          "ar": "هل تنوي زيارة عمك؟",
+          "context": "خطة عائلية",
+          "icon": "👨‍👩‍👧",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "Are you going to take the bus?",
+          "ar": "هل تنوي ركوب الحافلة؟",
+          "context": "وسيلة نقل",
+          "icon": "🚌",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "Are you going to cook lunch?",
+          "ar": "هل تنوي إعداد الغداء؟",
+          "context": "المطبخ",
+          "icon": "🍳",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Hadi sees his friend's packed bag.",
+          "ar": "يرى هادي حقيبة صديقه المجهزة."
+        },
+        {
+          "id": 2,
+          "en": "He asks, 'Are you going to travel tomorrow?'",
+          "ar": "يسأل: هل تنوي السفر غدًا؟"
+        },
+        {
+          "id": 3,
+          "en": "His friend tells him about the trip.",
+          "ar": "يخبره صديقه عن الرحلة."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Are you going to attend the workshop?",
+          "ar": "هل تنوي حضور الورشة؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Yes, I'm going to attend it.",
+          "ar": "نعم، أنوي حضورها."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "key": "im-planning-to-7",
+      "title": "I'm planning to",
+      "meaning": "أخطط لأن",
+      "formula": "I'm planning to + base verb",
+      "explanation": "يشير إلى نشاط التخطيط الجاري لمشروع أو فعل مستقبلي، وقد تتغير التفاصيل.",
+      "explanationEn": "Use I'm planning to for an intention you are actively arranging or considering.",
+      "contrast": "I'm planning to move تبرز عملية التخطيط؛ I'm going to move تبرز النية.",
+      "sourceIds": [
+        317,
+        156
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I'm planning to learn ten new words.",
+          "ar": "أخطط لتعلم عشر كلمات جديدة.",
+          "context": "خطة تعلم",
+          "icon": "🔤",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I'm planning to visit Aden next month.",
+          "ar": "أخطط لزيارة عدن الشهر المقبل.",
+          "context": "رحلة مستقبلية",
+          "icon": "🧳",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I'm planning to change my schedule.",
+          "ar": "أخطط لتغيير جدولي.",
+          "context": "إدارة الوقت",
+          "icon": "📅",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I'm planning to start a small garden.",
+          "ar": "أخطط لإنشاء حديقة صغيرة.",
+          "context": "حديقة المنزل",
+          "icon": "🌱",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Rana wants a quieter study corner.",
+          "ar": "تريد رنا ركنًا أكثر هدوءًا للدراسة."
+        },
+        {
+          "id": 2,
+          "en": "She is planning to move her desk.",
+          "ar": "تخطط لنقل مكتبها."
+        },
+        {
+          "id": 3,
+          "en": "She measures the space by the window.",
+          "ar": "تقيس المساحة بجوار النافذة."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "What are you planning to do next month?",
+          "ar": "ماذا تخطط أن تفعل الشهر المقبل؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "I'm planning to take a short course.",
+          "ar": "أخطط للالتحاق بدورة قصيرة."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "key": "im-meeting-8",
+      "title": "I'm meeting",
+      "meaning": "لدي لقاء مرتب",
+      "formula": "I'm meeting + person + future time",
+      "explanation": "المضارع المستمر يُستخدم للترتيبات المستقبلية المحددة بالفعل، خصوصًا اللقاءات ذات الموعد.",
+      "explanationEn": "Use the present continuous for a future arrangement already made.",
+      "contrast": "I'm meeting Ali tomorrow ترتيب مؤكد؛ I might meet Ali احتمال فقط.",
+      "sourceIds": [
+        781,
+        169
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I'm meeting my teacher tomorrow.",
+          "ar": "سألتقي معلمي غدًا وفق موعد.",
+          "context": "موعد مع المعلم",
+          "icon": "👩‍🏫",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I'm meeting my friends at six.",
+          "ar": "سألتقي أصدقائي عند السادسة.",
+          "context": "لقاء الأصدقاء",
+          "icon": "🕕",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I'm visiting the dentist on Tuesday.",
+          "ar": "لدي زيارة لطبيب الأسنان يوم الثلاثاء.",
+          "context": "موعد طبي",
+          "icon": "🦷",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "We're having lunch with our cousins on Friday.",
+          "ar": "سنتناول الغداء مع أقاربنا يوم الجمعة.",
+          "context": "دعوة غداء",
+          "icon": "🍽️",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Yousef receives a message from his teacher.",
+          "ar": "يتلقى يوسف رسالة من معلمه."
+        },
+        {
+          "id": 2,
+          "en": "He says, 'I'm meeting her at ten.'",
+          "ar": "يقول: لدي موعد للقائها عند العاشرة."
+        },
+        {
+          "id": 3,
+          "en": "He writes the appointment in his calendar.",
+          "ar": "يدوّن الموعد في تقويمه."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Are you free tomorrow morning?",
+          "ar": "هل أنت متفرغ صباح الغد؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "No, I'm meeting my teacher.",
+          "ar": "لا، لدي موعد مع معلمي."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "key": "it-starts-at-9",
+      "title": "It starts at",
+      "meaning": "يبدأ عند / موعده",
+      "formula": "The + scheduled event + starts/leaves/opens at + time",
+      "explanation": "نستخدم المضارع البسيط لجداول الرحلات والبرامج والمواعيد الثابتة حتى لو كان وقتها مستقبلًا.",
+      "explanationEn": "Use the present simple for fixed timetables and scheduled events.",
+      "contrast": "The train leaves at eight جدول رسمي؛ I'm leaving at eight ترتيبي الشخصي.",
+      "sourceIds": [
+        781,
+        719
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "The class starts at nine tomorrow.",
+          "ar": "تبدأ الحصة غدًا عند التاسعة.",
+          "context": "جدول المدرسة",
+          "icon": "🏫",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "The bus leaves at seven in the morning.",
+          "ar": "تغادر الحافلة عند السابعة صباحًا.",
+          "context": "جدول الحافلات",
+          "icon": "🚌",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "The shop opens at eight on Monday.",
+          "ar": "يفتح المتجر عند الثامنة يوم الاثنين.",
+          "context": "ساعات المتجر",
+          "icon": "🏬",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "The movie begins at six tonight.",
+          "ar": "يبدأ الفيلم عند السادسة مساءً.",
+          "context": "موعد العرض",
+          "icon": "🎬",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Hiba checks the bus timetable.",
+          "ar": "تراجع هبة جدول الحافلات."
+        },
+        {
+          "id": 2,
+          "en": "The first bus leaves at seven.",
+          "ar": "تغادر أول حافلة عند السابعة."
+        },
+        {
+          "id": 3,
+          "en": "She sets her alarm for six.",
+          "ar": "تضبط المنبه على السادسة."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "What time does the class start tomorrow?",
+          "ar": "متى تبدأ الحصة غدًا؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "It starts at nine.",
+          "ar": "تبدأ عند التاسعة."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "key": "i-hope-to-10",
+      "title": "I hope to",
+      "meaning": "آمل أن",
+      "formula": "I hope to + base verb",
+      "explanation": "نعبر عن أمنية أو رجاء بحدوث شيء في المستقبل، من دون أن نؤكد تحققه.",
+      "explanationEn": "Use I hope to for a desired future result that is not guaranteed.",
+      "contrast": "I hope to pass أمل؛ I expect to pass توقع مبني على ما نعرفه.",
+      "sourceIds": [
+        169,
+        156
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I hope to visit my cousins soon.",
+          "ar": "آمل زيارة أبناء عمي قريبًا.",
+          "context": "صلة الرحم",
+          "icon": "👨‍👩‍👦",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I hope to pass the exam.",
+          "ar": "آمل النجاح في الاختبار.",
+          "context": "نتائج الدراسة",
+          "icon": "📝",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I hope to learn English well.",
+          "ar": "آمل تعلم الإنجليزية جيدًا.",
+          "context": "هدف تعلم",
+          "icon": "📖",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I hope to see the sea this summer.",
+          "ar": "آمل رؤية البحر هذا الصيف.",
+          "context": "رحلة شاطئية",
+          "icon": "🌊",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Salma practices every afternoon.",
+          "ar": "تتدرب سلمى كل عصر."
+        },
+        {
+          "id": 2,
+          "en": "She says, 'I hope to speak English confidently.'",
+          "ar": "تقول: آمل أن أتحدث الإنجليزية بثقة."
+        },
+        {
+          "id": 3,
+          "en": "Her brother encourages her progress.",
+          "ar": "يشجعها أخوها على تقدمها."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "What do you hope to achieve this year?",
+          "ar": "ماذا تأمل أن تحقق هذا العام؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "I hope to read twelve books.",
+          "ar": "آمل قراءة اثني عشر كتابًا."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "key": "i-expect-to-11",
+      "title": "I expect to",
+      "meaning": "أتوقع أن",
+      "formula": "I expect to + base verb",
+      "explanation": "نعبر عن توقع لنتيجة مستقبلية نرجحها بناءً على معلومات أو تقدير.",
+      "explanationEn": "Use I expect to when you think something is likely to happen.",
+      "contrast": "I expect to finish توقع؛ I hope to finish أمنية.",
+      "sourceIds": [
+        169,
+        178
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I expect to finish the report on Friday.",
+          "ar": "أتوقع إنهاء التقرير يوم الجمعة.",
+          "context": "تسليم عمل",
+          "icon": "📄",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I expect to arrive before sunset.",
+          "ar": "أتوقع الوصول قبل الغروب.",
+          "context": "موعد الوصول",
+          "icon": "🌅",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I expect to hear from them tomorrow.",
+          "ar": "أتوقع أن أتلقى ردًا منهم غدًا.",
+          "context": "انتظار الرد",
+          "icon": "📧",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I expect to complete the lesson today.",
+          "ar": "أتوقع إكمال الدرس اليوم.",
+          "context": "تقدم الدراسة",
+          "icon": "✅",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Bilal checks how much work remains.",
+          "ar": "يراجع بلال مقدار العمل المتبقي."
+        },
+        {
+          "id": 2,
+          "en": "He expects to finish before five.",
+          "ar": "يتوقع أن ينتهي قبل الخامسة."
+        },
+        {
+          "id": 3,
+          "en": "He updates his teammates about the timing.",
+          "ar": "يطلع زملاءه على التوقيت."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "When do you expect to arrive?",
+          "ar": "متى تتوقع أن تصل؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "I expect to arrive by four.",
+          "ar": "أتوقع الوصول بحلول الرابعة."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "key": "i-might-12",
+      "title": "I might",
+      "meaning": "قد / ربما",
+      "formula": "I might + base verb",
+      "explanation": "يشير إلى احتمال مستقبلي غير مؤكد؛ الفعل بعد might في المصدر دون to.",
+      "explanationEn": "Use might followed by a base verb to describe an uncertain future possibility.",
+      "contrast": "I might come احتمال؛ I'm going to come نية؛ I'll definitely come تأكيد.",
+      "sourceIds": [
+        223,
+        715
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I might go to the park after lunch.",
+          "ar": "قد أذهب إلى الحديقة بعد الغداء.",
+          "context": "خروج محتمل",
+          "icon": "🌳",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I might call you this evening.",
+          "ar": "ربما أتصل بك هذا المساء.",
+          "context": "اتصال محتمل",
+          "icon": "📞",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I might need more time.",
+          "ar": "قد أحتاج إلى مزيد من الوقت.",
+          "context": "إنجاز مهمة",
+          "icon": "⌛",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I might study at the library tomorrow.",
+          "ar": "ربما أدرس في المكتبة غدًا.",
+          "context": "مكان الدراسة",
+          "icon": "📚",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Nora is deciding what to do tomorrow.",
+          "ar": "تفكر نورا ماذا ستفعل غدًا."
+        },
+        {
+          "id": 2,
+          "en": "She might visit the library.",
+          "ar": "قد تزور المكتبة."
+        },
+        {
+          "id": 3,
+          "en": "She will decide after checking the weather.",
+          "ar": "ستقرر بعد الاطلاع على الطقس."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Are you coming to the park?",
+          "ar": "هل ستأتي إلى الحديقة؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "I might come if I finish early.",
+          "ar": "قد آتي إن انتهيت مبكرًا."
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "key": "i-may-13",
+      "title": "I may",
+      "meaning": "قد / من المحتمل",
+      "formula": "I may + base verb",
+      "explanation": "نستخدم may للتعبير عن احتمال، وقد تبدو أكثر رسمية من might؛ ولها أيضًا استعمال مستقل للإذن.",
+      "explanationEn": "Use may followed by a base verb to express possibility. May can also express permission.",
+      "contrast": "It may rain احتمال؛ May I leave? طلب إذن، وهذا معنى مختلف.",
+      "sourceIds": [
+        456,
+        795
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I may arrive a little late.",
+          "ar": "قد أصل متأخرًا قليلًا.",
+          "context": "موعد وصول",
+          "icon": "⌚",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I may work from home tomorrow.",
+          "ar": "قد أعمل من المنزل غدًا.",
+          "context": "العمل عن بعد",
+          "icon": "🏠",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "It may rain this afternoon.",
+          "ar": "قد تمطر بعد الظهر.",
+          "context": "احتمال المطر",
+          "icon": "🌧️",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "We may change the meeting time.",
+          "ar": "قد نغير موعد الاجتماع.",
+          "context": "تعديل موعد",
+          "icon": "📆",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Fadi hears that the road is busy.",
+          "ar": "يسمع فادي أن الطريق مزدحم."
+        },
+        {
+          "id": 2,
+          "en": "He may arrive later than usual.",
+          "ar": "قد يصل متأخرًا عن المعتاد."
+        },
+        {
+          "id": 3,
+          "en": "He sends a message to the group.",
+          "ar": "يرسل رسالة إلى المجموعة."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Will the meeting start on time?",
+          "ar": "هل سيبدأ الاجتماع في موعده؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "It may start a little late.",
+          "ar": "قد يبدأ متأخرًا قليلًا."
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "key": "ill-probably-14",
+      "title": "I'll probably",
+      "meaning": "غالبًا سأفعل",
+      "formula": "I'll probably + base verb",
+      "explanation": "نستخدم probably لبيان ترجيح أعلى من الاحتمال المفتوح، من دون ضمان.",
+      "explanationEn": "Use will probably for a future event you think is likely.",
+      "contrast": "I'll probably go مرجح؛ I might go أقل حسمًا.",
+      "sourceIds": [
+        106,
+        740
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I'll probably study after dinner.",
+          "ar": "غالبًا سأدرس بعد العشاء.",
+          "context": "خطة مساء",
+          "icon": "📙",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I'll probably take the early bus.",
+          "ar": "غالبًا سأستقل الحافلة المبكرة.",
+          "context": "اختيار النقل",
+          "icon": "🚌",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "We'll probably finish before noon.",
+          "ar": "غالبًا سننتهي قبل الظهر.",
+          "context": "تقدير وقت",
+          "icon": "🕛",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "It'll probably be warm tomorrow.",
+          "ar": "غالبًا سيكون الجو دافئًا غدًا.",
+          "context": "توقع الجو",
+          "icon": "☀️",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Amal has only two pages left.",
+          "ar": "لم يتبقَّ لأمل سوى صفحتين."
+        },
+        {
+          "id": 2,
+          "en": "She says, 'I'll probably finish soon.'",
+          "ar": "تقول: غالبًا سأنتهي قريبًا."
+        },
+        {
+          "id": 3,
+          "en": "Her sister offers to wait for her.",
+          "ar": "تعرض أختها انتظارها."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Do you think you'll finish today?",
+          "ar": "هل تعتقد أنك ستنتهي اليوم؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "I'll probably finish before dinner.",
+          "ar": "غالبًا سأنتهي قبل العشاء."
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "key": "im-about-to-15",
+      "title": "I'm about to",
+      "meaning": "أنا على وشك أن",
+      "formula": "I'm about to + base verb",
+      "explanation": "نعبر عن فعل سيبدأ خلال لحظات أو فورًا تقريبًا؛ لا نستخدمه لخطة بعيدة.",
+      "explanationEn": "Use be about to for something that will happen very soon.",
+      "contrast": "I'm about to leave الآن تقريبًا؛ I'm going to leave tomorrow خطة غد.",
+      "sourceIds": [
+        403,
+        486
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I'm about to leave the house.",
+          "ar": "أنا على وشك مغادرة المنزل.",
+          "context": "لحظة الخروج",
+          "icon": "🚪",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "The lesson is about to start.",
+          "ar": "الدرس على وشك البدء.",
+          "context": "بداية الدرس",
+          "icon": "🔔",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I'm about to answer the question.",
+          "ar": "أنا على وشك الإجابة عن السؤال.",
+          "context": "المشاركة",
+          "icon": "🙋",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "We're about to eat lunch.",
+          "ar": "نحن على وشك تناول الغداء.",
+          "context": "الطعام جاهز",
+          "icon": "🍽️",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Mona puts on her shoes.",
+          "ar": "تنتعل منى حذاءها."
+        },
+        {
+          "id": 2,
+          "en": "She says, 'I'm about to leave.'",
+          "ar": "تقول: أنا على وشك الخروج."
+        },
+        {
+          "id": 3,
+          "en": "Her mother gives her the keys.",
+          "ar": "تعطيها أمها المفاتيح."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Can we talk now?",
+          "ar": "هل يمكننا التحدث الآن؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "I'm about to leave. Can I call later?",
+          "ar": "أنا على وشك الخروج. هل يمكن أن أتصل لاحقًا؟"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "key": "if-ill-16",
+      "title": "If ..., I'll",
+      "meaning": "إذا ... فسوف",
+      "formula": "If + present simple, I'll + base verb",
+      "explanation": "في الشرط المستقبلي الممكن نستخدم المضارع البسيط بعد if، وwill في جملة النتيجة؛ لا نكتب عادة if it will rain.",
+      "explanationEn": "Use if followed by the simple present, then will in the result clause for a real future possibility.",
+      "contrast": "If it rains, I'll stay home شرط؛ When it rains, I'll ... يتعامل مع حدوثه بوصفه متوقعًا.",
+      "sourceIds": [
+        275,
+        421,
+        205
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "If it rains, I'll stay at home.",
+          "ar": "إذا أمطرت، فسأبقى في المنزل.",
+          "context": "خطة مشروطة",
+          "icon": "🌧️",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "If I finish early, I'll call you.",
+          "ar": "إن انتهيت مبكرًا، سأتصل بك.",
+          "context": "بعد إنجاز مهمة",
+          "icon": "📞",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "If you need help, I'll explain it.",
+          "ar": "إذا احتجت مساعدة، فسأشرح الأمر.",
+          "context": "مساعدة زميل",
+          "icon": "🤝",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "If the bus is late, I'll walk.",
+          "ar": "إذا تأخرت الحافلة، فسأمشي.",
+          "context": "بديل المواصلات",
+          "icon": "🚶",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Ali wants to play outside tomorrow.",
+          "ar": "يريد علي اللعب خارجًا غدًا."
+        },
+        {
+          "id": 2,
+          "en": "He says, 'If it rains, I'll stay inside.'",
+          "ar": "يقول: إذا أمطرت، فسأبقى بالداخل."
+        },
+        {
+          "id": 3,
+          "en": "He prepares a book as another plan.",
+          "ar": "يجهز كتابًا كخطة بديلة."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "What will you do if it rains?",
+          "ar": "ماذا ستفعل إذا أمطرت؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "If it rains, I'll read at home.",
+          "ar": "إذا أمطرت، سأقرأ في المنزل."
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "key": "when-ill-17",
+      "title": "When ..., I'll",
+      "meaning": "عندما ... سوف",
+      "formula": "When + present simple, I'll + base verb",
+      "explanation": "نربط فعلًا مستقبلًا متوقع الحدوث بنتيجته؛ بعد when الزمن للمستقبل يكون غالبًا المضارع لا will.",
+      "explanationEn": "Use when followed by the simple present for an expected future time, and will in the main clause.",
+      "contrast": "When I get home, I'll call = عند الوصول المتوقع؛ If I get home early = شرط.",
+      "sourceIds": [
+        175,
+        719
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "When I get home, I'll call my mother.",
+          "ar": "عندما أصل إلى المنزل، سأتصل بأمي.",
+          "context": "العودة للمنزل",
+          "icon": "🏠",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "When the class ends, I'll go outside.",
+          "ar": "عندما تنتهي الحصة، سأخرج.",
+          "context": "نهاية الدرس",
+          "icon": "🏫",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "When she arrives, we'll start.",
+          "ar": "عندما تصل، سنبدأ.",
+          "context": "انتظار ضيف",
+          "icon": "🚪",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "When I save enough money, I'll buy a bike.",
+          "ar": "عندما أدخر ما يكفي من المال، سأشتري دراجة.",
+          "context": "هدف ادخار",
+          "icon": "🚲",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Lama finishes her morning tasks.",
+          "ar": "تنهي لمى أعمالها الصباحية."
+        },
+        {
+          "id": 2,
+          "en": "She says, 'When I finish, I'll visit Grandma.'",
+          "ar": "تقول: عندما أنتهي، سأزور جدتي."
+        },
+        {
+          "id": 3,
+          "en": "She checks that Grandma is at home.",
+          "ar": "تتأكد من أن جدتها في المنزل."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "When will you send the photos?",
+          "ar": "متى سترسل الصور؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "When I get home, I'll send them.",
+          "ar": "عندما أصل إلى المنزل، سأرسلها."
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "key": "as-soon-as-ill-18",
+      "title": "As soon as ..., I'll",
+      "meaning": "فور أن ... سوف",
+      "formula": "As soon as + present simple, I'll + base verb",
+      "explanation": "يعني حصول الفعل الثاني فور وقوع الأول تقريبًا؛ وبعد as soon as نستخدم المضارع للمعنى المستقبلي.",
+      "explanationEn": "Use as soon as followed by the simple present for a future action that follows immediately.",
+      "contrast": "As soon as I arrive أقوى في الفورية من When I arrive.",
+      "sourceIds": [
+        175,
+        380
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "As soon as I finish, I'll help you.",
+          "ar": "فور أن أنتهي، سأساعدك.",
+          "context": "بعد إنجاز المهمة",
+          "icon": "✅",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "As soon as the bus arrives, we'll get on.",
+          "ar": "فور وصول الحافلة، سنركب.",
+          "context": "المحطة",
+          "icon": "🚌",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "As soon as I hear the news, I'll tell you.",
+          "ar": "فور سماعي الخبر، سأخبرك.",
+          "context": "انتظار خبر",
+          "icon": "🗞️",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "As soon as she calls, I'll answer.",
+          "ar": "فور اتصالها، سأجيب.",
+          "context": "انتظار مكالمة",
+          "icon": "📲",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Khaled waits for his sister's message.",
+          "ar": "ينتظر خالد رسالة أخته."
+        },
+        {
+          "id": 2,
+          "en": "He says, 'As soon as she writes, I'll reply.'",
+          "ar": "يقول: فور أن تكتب، سأرد."
+        },
+        {
+          "id": 3,
+          "en": "He keeps his phone nearby.",
+          "ar": "يحتفظ بهاتفه بالقرب منه."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "When will you reply to my message?",
+          "ar": "متى سترد على رسالتي؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "As soon as I see it, I'll reply.",
+          "ar": "فور أن أراها، سأرد."
+        }
+      ]
+    }
+  ],
+  "chapters": [
+    {
+      "id": 1,
+      "key": "the-weekend-plan",
+      "title": "The Weekend Plan",
+      "titleAr": "خطة عطلة الأسبوع",
+      "icon": "🗓️",
+      "lines": [
+        {
+          "id": 1,
+          "en": "On Thursday, Dana writes down her weekend plans.",
+          "ar": "يوم الخميس، تكتب دانا خطط عطلة الأسبوع."
+        },
+        {
+          "id": 2,
+          "en": "She is going to visit her aunt on Friday.",
+          "ar": "تنوي زيارة عمتها يوم الجمعة."
+        },
+        {
+          "id": 3,
+          "en": "She is meeting her cousin at ten in the morning.",
+          "ar": "لديها موعد مع ابنة عمها عند العاشرة صباحًا."
+        },
+        {
+          "id": 4,
+          "en": "If the weather is good, they will walk in the park.",
+          "ar": "إذا كان الطقس جيدًا، فسيمشيان في الحديقة."
+        },
+        {
+          "id": 5,
+          "en": "Dana might take her camera with her.",
+          "ar": "ربما تأخذ دانا كاميرتها معها."
+        },
+        {
+          "id": 6,
+          "en": "She hopes to make a happy memory.",
+          "ar": "تأمل أن تصنع ذكرى سعيدة."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "key": "the-school-project",
+      "title": "The School Project",
+      "titleAr": "مشروع المدرسة",
+      "icon": "🏫",
+      "lines": [
+        {
+          "id": 1,
+          "en": "Omar and Lina are planning a small class project.",
+          "ar": "يخطط عمر ولينا لمشروع صفي صغير."
+        },
+        {
+          "id": 2,
+          "en": "The presentation starts at nine on Monday.",
+          "ar": "يبدأ العرض عند التاسعة يوم الاثنين."
+        },
+        {
+          "id": 3,
+          "en": "Lina says, 'I'll bring the pictures.'",
+          "ar": "تقول لينا: سأحضر الصور."
+        },
+        {
+          "id": 4,
+          "en": "Omar promises he won't forget his notes.",
+          "ar": "يعد عمر بأنه لن ينسى ملاحظاته."
+        },
+        {
+          "id": 5,
+          "en": "When they finish the poster, they'll practice together.",
+          "ar": "عندما ينهون الملصق، سيتدربون معًا."
+        },
+        {
+          "id": 6,
+          "en": "They'll probably be ready before Sunday night.",
+          "ar": "غالبًا سيكونون مستعدين قبل مساء الأحد."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "key": "the-journey-home",
+      "title": "The Journey Home",
+      "titleAr": "رحلة العودة",
+      "icon": "🚌",
+      "lines": [
+        {
+          "id": 1,
+          "en": "Hadi checks the bus schedule after work.",
+          "ar": "يراجع هادي جدول الحافلات بعد العمل."
+        },
+        {
+          "id": 2,
+          "en": "The last bus leaves at six this evening.",
+          "ar": "تغادر آخر حافلة عند السادسة مساءً."
+        },
+        {
+          "id": 3,
+          "en": "He might miss it if the meeting runs late.",
+          "ar": "قد تفوته إذا تأخر الاجتماع."
+        },
+        {
+          "id": 4,
+          "en": "He says, 'I'll take a taxi if I have to.'",
+          "ar": "يقول: سأستقل سيارة أجرة إن اضطررت."
+        },
+        {
+          "id": 5,
+          "en": "As soon as he gets home, he'll call his family.",
+          "ar": "فور وصوله إلى المنزل، سيتصل بعائلته."
+        },
+        {
+          "id": 6,
+          "en": "He expects to arrive before dinner.",
+          "ar": "يتوقع الوصول قبل العشاء."
+        }
+      ]
+    }
+  ],
+  "requirements": {
+    "patternCount": 18,
+    "scenesPerPattern": 4,
+    "storyLinesPerPattern": 3,
+    "dialogueTurnsPerPattern": 2,
+    "chapters": 3,
+    "skills": [
+      "will و won't للقرار والوعد والتنبؤ",
+      "going to للنوايا السابقة",
+      "المضارع المستمر للترتيبات والمضارع البسيط للجداول",
+      "الأمل والتوقع والاحتمال ودرجة الترجيح",
+      "المستقبل القريب جدًا",
+      "الجمل الزمنية والشرطية من دون will بعد if/when/as soon as"
+    ]
+  }
+}

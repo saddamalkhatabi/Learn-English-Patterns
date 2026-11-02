@@ -1,0 +1,5176 @@
+{
+  "schema": 1,
+  "plan_id": "foundation-one",
+  "plan_sha256": "7f08c10a7ed08371c24c6f0aafe869e06aa4735402d2db3a54c6b220dcd61f54",
+  "sentences": [
+    {
+      "id": "it-01",
+      "pattern_id": 104,
+      "group_id": "g-foundation",
+      "en": "It's a beautiful day.",
+      "ar": "إنه يوم جميل.",
+      "context": "إنه يوم جميل.",
+      "scene_description": "A person enjoying a bright day in a park",
+      "difficulty": {
+        "cefr": "A1",
+        "stage": 1,
+        "stage_label": "فهم النمط"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "beautiful"
+      ],
+      "exercise_ids": [
+        "it-01-transfer"
+      ],
+      "image": {
+        "id": "scene-it-01",
+        "atlas": "assets/scenes/it-atlas-v1.webp",
+        "cell": 0,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "607a25893e117a2d458afaeb1d6852816b142e1b7df4846bf08907dcc8d15a52",
+        "crop": {
+          "x": 1,
+          "y": 1,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/it-01-male.mp3",
+          "text": "It's a beautiful day.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "It's",
+              "start_ms": 343,
+              "end_ms": 464
+            },
+            {
+              "index": 1,
+              "text": "a",
+              "start_ms": 525,
+              "end_ms": 545
+            },
+            {
+              "index": 2,
+              "text": "beautiful",
+              "start_ms": 606,
+              "end_ms": 1010
+            },
+            {
+              "index": 3,
+              "text": "day.",
+              "start_ms": 1111,
+              "end_ms": 1514
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2100,
+          "sha256": "c4dacba2ebae099738ef1f1bdb148cefb976f05a6c29f1f9971037ab85fa8fff",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "IT'S A BEAUTIFUL DAY",
+          "produced_at": "2026-11-02T02:54:27.899015+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2160,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/it-01-female.mp3",
+          "text": "It's a beautiful day.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "It's",
+              "start_ms": 464,
+              "end_ms": 584
+            },
+            {
+              "index": 1,
+              "text": "a",
+              "start_ms": 645,
+              "end_ms": 665
+            },
+            {
+              "index": 2,
+              "text": "beautiful",
+              "start_ms": 705,
+              "end_ms": 1008
+            },
+            {
+              "index": 3,
+              "text": "day.",
+              "start_ms": 1088,
+              "end_ms": 1411
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 1975,
+          "sha256": "a8797fcc5fb9a5667f2546e2ecc22e7eff26680d9c30e512ff22494c13a511ae",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "IT'S A BEAUTIFUL DAY",
+          "produced_at": "2026-11-02T02:54:30.568732+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2040,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "it-02",
+      "pattern_id": 104,
+      "group_id": "g-foundation",
+      "en": "It is cold.",
+      "ar": "الجو بارد.",
+      "context": "الجو بارد.",
+      "scene_description": "A person in a warm coat beside a frosty window",
+      "difficulty": {
+        "cefr": "A1",
+        "stage": 1,
+        "stage_label": "فهم النمط"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "cold"
+      ],
+      "exercise_ids": [
+        "it-02-transfer"
+      ],
+      "image": {
+        "id": "scene-it-02",
+        "atlas": "assets/scenes/it-atlas-v1.webp",
+        "cell": 1,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "607a25893e117a2d458afaeb1d6852816b142e1b7df4846bf08907dcc8d15a52",
+        "crop": {
+          "x": 513,
+          "y": 1,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/it-02-male.mp3",
+          "text": "It is cold.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "It",
+              "start_ms": 341,
+              "end_ms": 381
+            },
+            {
+              "index": 1,
+              "text": "is",
+              "start_ms": 461,
+              "end_ms": 522
+            },
+            {
+              "index": 2,
+              "text": "cold.",
+              "start_ms": 622,
+              "end_ms": 1123
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 1725,
+          "sha256": "ded560b9a645b57043b4ed32aad0baccf6da07ea2aa639b69e31014f0a0dbae0",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "IT IS COLD",
+          "produced_at": "2026-11-02T02:54:32.770037+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 1776,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/it-02-female.mp3",
+          "text": "It is cold.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "It",
+              "start_ms": 463,
+              "end_ms": 503
+            },
+            {
+              "index": 1,
+              "text": "is",
+              "start_ms": 583,
+              "end_ms": 644
+            },
+            {
+              "index": 2,
+              "text": "cold.",
+              "start_ms": 744,
+              "end_ms": 1207
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 1750,
+          "sha256": "1e67405b114b98524d72946d0929f5e965be06ee1cb758bf85f8a46a63927f96",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "IT IS COLD",
+          "produced_at": "2026-11-02T02:54:35.007031+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 1800,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "it-03",
+      "pattern_id": 104,
+      "group_id": "g-foundation",
+      "en": "It's my phone.",
+      "ar": "إنه هاتفي.",
+      "context": "إنه هاتفي.",
+      "scene_description": "A woman identifying her phone on a table",
+      "difficulty": {
+        "cefr": "A1",
+        "stage": 2,
+        "stage_label": "توسيع النمط"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "phone"
+      ],
+      "exercise_ids": [
+        "it-03-transfer"
+      ],
+      "image": {
+        "id": "scene-it-03",
+        "atlas": "assets/scenes/it-atlas-v1.webp",
+        "cell": 2,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "607a25893e117a2d458afaeb1d6852816b142e1b7df4846bf08907dcc8d15a52",
+        "crop": {
+          "x": 1025,
+          "y": 1,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/it-03-male.mp3",
+          "text": "It's my phone.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "It's",
+              "start_ms": 341,
+              "end_ms": 462
+            },
+            {
+              "index": 1,
+              "text": "my",
+              "start_ms": 542,
+              "end_ms": 662
+            },
+            {
+              "index": 2,
+              "text": "phone.",
+              "start_ms": 803,
+              "end_ms": 1204
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 1826,
+          "sha256": "674586c88d54c634cd21846a4fd69842f104826561b16bbd315fe23ad3c0a29a",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "IT'S MY PHONE",
+          "produced_at": "2026-11-02T02:54:37.282428+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 1896,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/it-03-female.mp3",
+          "text": "It's my phone.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "It's",
+              "start_ms": 482,
+              "end_ms": 602
+            },
+            {
+              "index": 1,
+              "text": "my",
+              "start_ms": 662,
+              "end_ms": 783
+            },
+            {
+              "index": 2,
+              "text": "phone.",
+              "start_ms": 883,
+              "end_ms": 1244
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 1826,
+          "sha256": "54e4ef5a895a82d7a2e54702be2d63294ec0a48a867ccfd714135d2f40c37bc6",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "IT'S MY PHONE",
+          "produced_at": "2026-11-02T02:54:39.424487+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 1896,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "it-04",
+      "pattern_id": 104,
+      "group_id": "g-foundation",
+      "en": "It's just a game.",
+      "ar": "إنها مجرد لعبة.",
+      "context": "إنها مجرد لعبة.",
+      "scene_description": "Friends smiling reassuringly during a board game",
+      "difficulty": {
+        "cefr": "A1",
+        "stage": 2,
+        "stage_label": "توسيع النمط"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "just",
+        "game"
+      ],
+      "exercise_ids": [
+        "it-04-transfer"
+      ],
+      "image": {
+        "id": "scene-it-04",
+        "atlas": "assets/scenes/it-atlas-v1.webp",
+        "cell": 3,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "607a25893e117a2d458afaeb1d6852816b142e1b7df4846bf08907dcc8d15a52",
+        "crop": {
+          "x": 1,
+          "y": 513,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/it-04-male.mp3",
+          "text": "It's just a game.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "It's",
+              "start_ms": 343,
+              "end_ms": 464
+            },
+            {
+              "index": 1,
+              "text": "just",
+              "start_ms": 544,
+              "end_ms": 726
+            },
+            {
+              "index": 2,
+              "text": "a",
+              "start_ms": 806,
+              "end_ms": 826
+            },
+            {
+              "index": 3,
+              "text": "game.",
+              "start_ms": 887,
+              "end_ms": 1330
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 1975,
+          "sha256": "02f45f3ec2ce8bf46ae0172f10b7e79218a1226c159d93780a6abb27e3f6cd5b",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "IT'S JUST A GAME",
+          "produced_at": "2026-11-02T02:54:41.709094+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2040,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/it-04-female.mp3",
+          "text": "It's just a game.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "It's",
+              "start_ms": 461,
+              "end_ms": 582
+            },
+            {
+              "index": 1,
+              "text": "just",
+              "start_ms": 642,
+              "end_ms": 822
+            },
+            {
+              "index": 2,
+              "text": "a",
+              "start_ms": 882,
+              "end_ms": 902
+            },
+            {
+              "index": 3,
+              "text": "game.",
+              "start_ms": 942,
+              "end_ms": 1343
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 1925,
+          "sha256": "2d6c288238b381b1021dc61807f694748aebbddae77a44532e2bf29238efd6b8",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "IT'S JUST A GAME",
+          "produced_at": "2026-11-02T02:54:44.144806+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 1992,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "it-05",
+      "pattern_id": 104,
+      "group_id": "g-foundation",
+      "en": "It's time for breakfast.",
+      "ar": "حان وقت الإفطار.",
+      "context": "حان وقت الإفطار.",
+      "scene_description": "A family gathering around a breakfast table",
+      "difficulty": {
+        "cefr": "A1",
+        "stage": 3,
+        "stage_label": "المقارنة في موقف"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "time",
+        "breakfast"
+      ],
+      "exercise_ids": [
+        "it-05-transfer"
+      ],
+      "image": {
+        "id": "scene-it-05",
+        "atlas": "assets/scenes/it-atlas-v1.webp",
+        "cell": 4,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "607a25893e117a2d458afaeb1d6852816b142e1b7df4846bf08907dcc8d15a52",
+        "crop": {
+          "x": 513,
+          "y": 513,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/it-05-male.mp3",
+          "text": "It's time for breakfast.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "It's",
+              "start_ms": 343,
+              "end_ms": 464
+            },
+            {
+              "index": 1,
+              "text": "time",
+              "start_ms": 545,
+              "end_ms": 807
+            },
+            {
+              "index": 2,
+              "text": "for",
+              "start_ms": 888,
+              "end_ms": 969
+            },
+            {
+              "index": 3,
+              "text": "breakfast.",
+              "start_ms": 1050,
+              "end_ms": 1514
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2200,
+          "sha256": "ea8c80ecb64dac8d1481f0ce42ddff2f0138b67153438ee5721391d26ad7fcca",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "IT'S TIME FOR BREAKFAST",
+          "produced_at": "2026-11-02T02:54:46.880141+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2256,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/it-05-female.mp3",
+          "text": "It's time for breakfast.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "It's",
+              "start_ms": 443,
+              "end_ms": 564
+            },
+            {
+              "index": 1,
+              "text": "time",
+              "start_ms": 644,
+              "end_ms": 866
+            },
+            {
+              "index": 2,
+              "text": "for",
+              "start_ms": 926,
+              "end_ms": 1027
+            },
+            {
+              "index": 3,
+              "text": "breakfast.",
+              "start_ms": 1088,
+              "end_ms": 1551
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2175,
+          "sha256": "177e5aa184149de93a72a1be46e6fbc9c5a5edc4c68891ce553d467bace6a0cc",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "IT'S TIME FOR BREAKFAST",
+          "produced_at": "2026-11-02T02:54:49.546071+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2232,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "it-06",
+      "pattern_id": 104,
+      "group_id": "g-foundation",
+      "en": "It is important to listen carefully.",
+      "ar": "من المهم الإصغاء بعناية.",
+      "context": "من المهم الإصغاء بعناية.",
+      "scene_description": "An adult learner paying attention to a tutor",
+      "difficulty": {
+        "cefr": "A1",
+        "stage": 3,
+        "stage_label": "المقارنة في موقف"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "important",
+        "listen",
+        "carefully"
+      ],
+      "exercise_ids": [
+        "it-06-transfer"
+      ],
+      "image": {
+        "id": "scene-it-06",
+        "atlas": "assets/scenes/it-atlas-v1.webp",
+        "cell": 5,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "607a25893e117a2d458afaeb1d6852816b142e1b7df4846bf08907dcc8d15a52",
+        "crop": {
+          "x": 1025,
+          "y": 513,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/it-06-male.mp3",
+          "text": "It is important to listen carefully.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "It",
+              "start_ms": 341,
+              "end_ms": 381
+            },
+            {
+              "index": 1,
+              "text": "is",
+              "start_ms": 462,
+              "end_ms": 522
+            },
+            {
+              "index": 2,
+              "text": "important",
+              "start_ms": 602,
+              "end_ms": 1084
+            },
+            {
+              "index": 3,
+              "text": "to",
+              "start_ms": 1124,
+              "end_ms": 1204
+            },
+            {
+              "index": 4,
+              "text": "listen",
+              "start_ms": 1265,
+              "end_ms": 1505
+            },
+            {
+              "index": 5,
+              "text": "carefully.",
+              "start_ms": 1606,
+              "end_ms": 2128
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2750,
+          "sha256": "8dce9a528303dc0e3a69db6813cdae26c38013474a6eeef9deec0e9a199cd8e4",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "IT IS IMPORTANT TO LISTEN CAREFULLY",
+          "produced_at": "2026-11-02T02:54:52.841294+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2808,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/it-06-female.mp3",
+          "text": "It is important to listen carefully.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "It",
+              "start_ms": 463,
+              "end_ms": 503
+            },
+            {
+              "index": 1,
+              "text": "is",
+              "start_ms": 584,
+              "end_ms": 644
+            },
+            {
+              "index": 2,
+              "text": "important",
+              "start_ms": 725,
+              "end_ms": 1208
+            },
+            {
+              "index": 3,
+              "text": "to",
+              "start_ms": 1289,
+              "end_ms": 1349
+            },
+            {
+              "index": 4,
+              "text": "listen",
+              "start_ms": 1410,
+              "end_ms": 1651
+            },
+            {
+              "index": 5,
+              "text": "carefully.",
+              "start_ms": 1752,
+              "end_ms": 2296
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2900,
+          "sha256": "b2b5f3e4ab1b778a5f1ce97046bc303d430a1ae7ce2a4313559adf6669c8c340",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "IT IS IMPORTANT TO LISTEN CAREFULLY",
+          "produced_at": "2026-11-02T02:54:57.213029+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2952,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "it-07",
+      "pattern_id": 104,
+      "group_id": "g-foundation",
+      "en": "It's too heavy for this shelf.",
+      "ar": "إنه أثقل مما يحتمله هذا الرف.",
+      "context": "إنه أثقل مما يحتمله هذا الرف.",
+      "scene_description": "A person checking a heavy box beside a delicate shelf",
+      "difficulty": {
+        "cefr": "A2",
+        "stage": 4,
+        "stage_label": "الاستخدام الحقيقي"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "heavy",
+        "this",
+        "shelf"
+      ],
+      "exercise_ids": [
+        "it-07-transfer"
+      ],
+      "image": {
+        "id": "scene-it-07",
+        "atlas": "assets/scenes/it-atlas-v1.webp",
+        "cell": 6,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "607a25893e117a2d458afaeb1d6852816b142e1b7df4846bf08907dcc8d15a52",
+        "crop": {
+          "x": 1,
+          "y": 1025,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/it-07-male.mp3",
+          "text": "It's too heavy for this shelf.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "It's",
+              "start_ms": 343,
+              "end_ms": 464
+            },
+            {
+              "index": 1,
+              "text": "too",
+              "start_ms": 525,
+              "end_ms": 666
+            },
+            {
+              "index": 2,
+              "text": "heavy",
+              "start_ms": 767,
+              "end_ms": 968
+            },
+            {
+              "index": 3,
+              "text": "for",
+              "start_ms": 1029,
+              "end_ms": 1110
+            },
+            {
+              "index": 4,
+              "text": "this",
+              "start_ms": 1150,
+              "end_ms": 1271
+            },
+            {
+              "index": 5,
+              "text": "shelf.",
+              "start_ms": 1332,
+              "end_ms": 1574
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2300,
+          "sha256": "2e681907434aa2111496a742b46f78db1816c44325e9fec989602b9ff3b66b8d",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "IT'S TOO HEAVY FOR THIS SHELF",
+          "produced_at": "2026-11-02T02:55:00.021131+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2352,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/it-07-female.mp3",
+          "text": "It's too heavy for this shelf.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "It's",
+              "start_ms": 461,
+              "end_ms": 581
+            },
+            {
+              "index": 1,
+              "text": "too",
+              "start_ms": 661,
+              "end_ms": 802
+            },
+            {
+              "index": 2,
+              "text": "heavy",
+              "start_ms": 882,
+              "end_ms": 1082
+            },
+            {
+              "index": 3,
+              "text": "for",
+              "start_ms": 1122,
+              "end_ms": 1203
+            },
+            {
+              "index": 4,
+              "text": "this",
+              "start_ms": 1263,
+              "end_ms": 1343
+            },
+            {
+              "index": 5,
+              "text": "shelf.",
+              "start_ms": 1383,
+              "end_ms": 1664
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2325,
+          "sha256": "ca1c8f77281d4a3aa61cfe97557416dd10523a4b31f3890a9d37311b1ca1c299",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "IT'S TOO HEAVY FOR THE SHELF",
+          "produced_at": "2026-11-02T02:55:02.903826+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2376,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "it-08",
+      "pattern_id": 104,
+      "group_id": "g-foundation",
+      "en": "It's only a short walk from here.",
+      "ar": "إنها مسافة قصيرة سيرًا من هنا.",
+      "context": "إنها مسافة قصيرة سيرًا من هنا.",
+      "scene_description": "Two pedestrians discussing a nearby destination",
+      "difficulty": {
+        "cefr": "A2",
+        "stage": 4,
+        "stage_label": "الاستخدام الحقيقي"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "only",
+        "short",
+        "walk",
+        "from",
+        "here"
+      ],
+      "exercise_ids": [
+        "it-08-transfer"
+      ],
+      "image": {
+        "id": "scene-it-08",
+        "atlas": "assets/scenes/it-atlas-v1.webp",
+        "cell": 7,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "607a25893e117a2d458afaeb1d6852816b142e1b7df4846bf08907dcc8d15a52",
+        "crop": {
+          "x": 513,
+          "y": 1025,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/it-08-male.mp3",
+          "text": "It's only a short walk from here.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "It's",
+              "start_ms": 322,
+              "end_ms": 443
+            },
+            {
+              "index": 1,
+              "text": "only",
+              "start_ms": 503,
+              "end_ms": 664
+            },
+            {
+              "index": 2,
+              "text": "a",
+              "start_ms": 764,
+              "end_ms": 785
+            },
+            {
+              "index": 3,
+              "text": "short",
+              "start_ms": 885,
+              "end_ms": 1086
+            },
+            {
+              "index": 4,
+              "text": "walk",
+              "start_ms": 1187,
+              "end_ms": 1388
+            },
+            {
+              "index": 5,
+              "text": "from",
+              "start_ms": 1489,
+              "end_ms": 1609
+            },
+            {
+              "index": 6,
+              "text": "here.",
+              "start_ms": 1670,
+              "end_ms": 1951
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2575,
+          "sha256": "a464ae13e9ba250dee16e73ffba792068eb570ef21bab79887d06c3b62d308a7",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "IT'S ONLY A SHORT WALK FROM HERE",
+          "produced_at": "2026-11-02T02:55:06.012657+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2640,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/it-08-female.mp3",
+          "text": "It's only a short walk from here.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "It's",
+              "start_ms": 421,
+              "end_ms": 541
+            },
+            {
+              "index": 1,
+              "text": "only",
+              "start_ms": 601,
+              "end_ms": 762
+            },
+            {
+              "index": 2,
+              "text": "a",
+              "start_ms": 842,
+              "end_ms": 862
+            },
+            {
+              "index": 3,
+              "text": "short",
+              "start_ms": 942,
+              "end_ms": 1162
+            },
+            {
+              "index": 4,
+              "text": "walk",
+              "start_ms": 1262,
+              "end_ms": 1443
+            },
+            {
+              "index": 5,
+              "text": "from",
+              "start_ms": 1523,
+              "end_ms": 1643
+            },
+            {
+              "index": 6,
+              "text": "here.",
+              "start_ms": 1703,
+              "end_ms": 1924
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2525,
+          "sha256": "01b4cc3ff6f05dccddbc2ff51de070bc1fcca9d29c9a58d27c406b10cdcea596",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "IT'S ONLY A SHORT WALK FROM HERE",
+          "produced_at": "2026-11-02T02:55:09.097988+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2592,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "it-09",
+      "pattern_id": 104,
+      "group_id": "g-foundation",
+      "en": "It's a present for my sister.",
+      "ar": "إنها هدية لأختي.",
+      "context": "إنها هدية لأختي.",
+      "scene_description": "A person wrapping a present beside a family photo",
+      "difficulty": {
+        "cefr": "A2",
+        "stage": 5,
+        "stage_label": "ترابط الأفكار"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "present",
+        "sister"
+      ],
+      "exercise_ids": [
+        "it-09-transfer"
+      ],
+      "image": {
+        "id": "scene-it-09",
+        "atlas": "assets/scenes/it-atlas-v1.webp",
+        "cell": 8,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "607a25893e117a2d458afaeb1d6852816b142e1b7df4846bf08907dcc8d15a52",
+        "crop": {
+          "x": 1025,
+          "y": 1025,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/it-09-male.mp3",
+          "text": "It's a present for my sister.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "It's",
+              "start_ms": 341,
+              "end_ms": 462
+            },
+            {
+              "index": 1,
+              "text": "a",
+              "start_ms": 522,
+              "end_ms": 542
+            },
+            {
+              "index": 2,
+              "text": "present",
+              "start_ms": 623,
+              "end_ms": 964
+            },
+            {
+              "index": 3,
+              "text": "for",
+              "start_ms": 1004,
+              "end_ms": 1084
+            },
+            {
+              "index": 4,
+              "text": "my",
+              "start_ms": 1165,
+              "end_ms": 1245
+            },
+            {
+              "index": 5,
+              "text": "sister.",
+              "start_ms": 1366,
+              "end_ms": 1807
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2450,
+          "sha256": "f446ebf6d8966873eb98e5a44db3742f6220a9c7e2b3a0285ba43ce57144f3ff",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "IT'S A PRESENT FOR MY SISTER",
+          "produced_at": "2026-11-02T02:55:12.088453+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2520,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/it-09-female.mp3",
+          "text": "It's a present for my sister.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "It's",
+              "start_ms": 421,
+              "end_ms": 541
+            },
+            {
+              "index": 1,
+              "text": "a",
+              "start_ms": 581,
+              "end_ms": 601
+            },
+            {
+              "index": 2,
+              "text": "present",
+              "start_ms": 661,
+              "end_ms": 942
+            },
+            {
+              "index": 3,
+              "text": "for",
+              "start_ms": 982,
+              "end_ms": 1062
+            },
+            {
+              "index": 4,
+              "text": "my",
+              "start_ms": 1122,
+              "end_ms": 1203
+            },
+            {
+              "index": 5,
+              "text": "sister.",
+              "start_ms": 1303,
+              "end_ms": 1744
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2325,
+          "sha256": "d481f80cfdc5d5fc8faf50aef316d481af45143449546c5f58a18c002a1fa335",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "IT'S A PRESENT FOR MY SISTER",
+          "produced_at": "2026-11-02T02:55:14.751518+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2376,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "it-10",
+      "pattern_id": 104,
+      "group_id": "g-foundation",
+      "en": "It is difficult to hear in this room.",
+      "ar": "يصعب السماع في هذه الغرفة.",
+      "context": "يصعب السماع في هذه الغرفة.",
+      "scene_description": "A learner leaning forward to hear in a busy room",
+      "difficulty": {
+        "cefr": "A2",
+        "stage": 5,
+        "stage_label": "ترابط الأفكار"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "difficult",
+        "hear",
+        "this",
+        "room"
+      ],
+      "exercise_ids": [
+        "it-10-transfer"
+      ],
+      "image": {
+        "id": "scene-it-10",
+        "atlas": "assets/scenes/it-atlas-v1.webp",
+        "cell": 9,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "607a25893e117a2d458afaeb1d6852816b142e1b7df4846bf08907dcc8d15a52",
+        "crop": {
+          "x": 1,
+          "y": 1537,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/it-10-male.mp3",
+          "text": "It is difficult to hear in this room.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "It",
+              "start_ms": 341,
+              "end_ms": 381
+            },
+            {
+              "index": 1,
+              "text": "is",
+              "start_ms": 462,
+              "end_ms": 522
+            },
+            {
+              "index": 2,
+              "text": "difficult",
+              "start_ms": 602,
+              "end_ms": 1004
+            },
+            {
+              "index": 3,
+              "text": "to",
+              "start_ms": 1064,
+              "end_ms": 1124
+            },
+            {
+              "index": 4,
+              "text": "hear",
+              "start_ms": 1184,
+              "end_ms": 1405
+            },
+            {
+              "index": 5,
+              "text": "in",
+              "start_ms": 1485,
+              "end_ms": 1526
+            },
+            {
+              "index": 6,
+              "text": "this",
+              "start_ms": 1586,
+              "end_ms": 1706
+            },
+            {
+              "index": 7,
+              "text": "room.",
+              "start_ms": 1786,
+              "end_ms": 2088
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2750,
+          "sha256": "329f06e415921680caf2ff9396ae231dd8f235c3b9f63ac6b88403ce30ea7ddd",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "IT IS DIFFICULT TO HEAR IN THIS ROOM",
+          "produced_at": "2026-11-02T02:55:17.852584+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2808,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/it-10-female.mp3",
+          "text": "It is difficult to hear in this room.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "It",
+              "start_ms": 461,
+              "end_ms": 501
+            },
+            {
+              "index": 1,
+              "text": "is",
+              "start_ms": 581,
+              "end_ms": 641
+            },
+            {
+              "index": 2,
+              "text": "difficult",
+              "start_ms": 761,
+              "end_ms": 1122
+            },
+            {
+              "index": 3,
+              "text": "to",
+              "start_ms": 1162,
+              "end_ms": 1222
+            },
+            {
+              "index": 4,
+              "text": "hear",
+              "start_ms": 1282,
+              "end_ms": 1463
+            },
+            {
+              "index": 5,
+              "text": "in",
+              "start_ms": 1523,
+              "end_ms": 1563
+            },
+            {
+              "index": 6,
+              "text": "this",
+              "start_ms": 1623,
+              "end_ms": 1723
+            },
+            {
+              "index": 7,
+              "text": "room.",
+              "start_ms": 1823,
+              "end_ms": 2124
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2725,
+          "sha256": "443fd27343c2da2d59899ce808b07554ec507334d9e3ddab07adac98179c989a",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "IT IS DIFFICULT TO HEAR IN THIS ROOM",
+          "produced_at": "2026-11-02T02:55:21.158973+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2784,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "it-11",
+      "pattern_id": 104,
+      "group_id": "g-foundation",
+      "en": "It's safe to cross now.",
+      "ar": "أصبح عبور الطريق آمنًا الآن.",
+      "context": "أصبح عبور الطريق آمنًا الآن.",
+      "scene_description": "A parent and child at a pedestrian crossing with stopped traffic",
+      "difficulty": {
+        "cefr": "A2",
+        "stage": 6,
+        "stage_label": "الإنتاج والطلاقة"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "safe",
+        "cross"
+      ],
+      "exercise_ids": [
+        "it-11-transfer"
+      ],
+      "image": {
+        "id": "scene-it-11",
+        "atlas": "assets/scenes/it-atlas-v1.webp",
+        "cell": 10,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "607a25893e117a2d458afaeb1d6852816b142e1b7df4846bf08907dcc8d15a52",
+        "crop": {
+          "x": 513,
+          "y": 1537,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/it-11-male.mp3",
+          "text": "It's safe to cross now.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "It's",
+              "start_ms": 341,
+              "end_ms": 461
+            },
+            {
+              "index": 1,
+              "text": "safe",
+              "start_ms": 501,
+              "end_ms": 702
+            },
+            {
+              "index": 2,
+              "text": "to",
+              "start_ms": 762,
+              "end_ms": 822
+            },
+            {
+              "index": 3,
+              "text": "cross",
+              "start_ms": 902,
+              "end_ms": 1183
+            },
+            {
+              "index": 4,
+              "text": "now.",
+              "start_ms": 1303,
+              "end_ms": 1604
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2225,
+          "sha256": "baa973d7b37392e1657b4fa6f3c33fcaf71c66018072a992c2976e6f6ae06322",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "IT'S SAFE TO CROSS NOW",
+          "produced_at": "2026-11-02T02:55:23.891596+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2280,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/it-11-female.mp3",
+          "text": "It's safe to cross now.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "It's",
+              "start_ms": 463,
+              "end_ms": 584
+            },
+            {
+              "index": 1,
+              "text": "safe",
+              "start_ms": 624,
+              "end_ms": 826
+            },
+            {
+              "index": 2,
+              "text": "to",
+              "start_ms": 866,
+              "end_ms": 926
+            },
+            {
+              "index": 3,
+              "text": "cross",
+              "start_ms": 987,
+              "end_ms": 1228
+            },
+            {
+              "index": 4,
+              "text": "now.",
+              "start_ms": 1329,
+              "end_ms": 1591
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2175,
+          "sha256": "610a59bd3bf94c7934c67315240eb79f1d4a4a522683a19cb9c9e3233692d7ae",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "IT'S SAFE TO CROSS NOW",
+          "produced_at": "2026-11-02T02:55:26.413551+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2232,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "it-12",
+      "pattern_id": 104,
+      "group_id": "g-foundation",
+      "en": "It's our first day in this city.",
+      "ar": "إنه يومنا الأول في هذه المدينة.",
+      "context": "إنه يومنا الأول في هذه المدينة.",
+      "scene_description": "Two travelers exploring a city with a folded map",
+      "difficulty": {
+        "cefr": "A2",
+        "stage": 6,
+        "stage_label": "الإنتاج والطلاقة"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "first",
+        "this",
+        "city"
+      ],
+      "exercise_ids": [
+        "it-12-transfer"
+      ],
+      "image": {
+        "id": "scene-it-12",
+        "atlas": "assets/scenes/it-atlas-v1.webp",
+        "cell": 11,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "607a25893e117a2d458afaeb1d6852816b142e1b7df4846bf08907dcc8d15a52",
+        "crop": {
+          "x": 1025,
+          "y": 1537,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/it-12-male.mp3",
+          "text": "It's our first day in this city.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "It's",
+              "start_ms": 321,
+              "end_ms": 441
+            },
+            {
+              "index": 1,
+              "text": "our",
+              "start_ms": 501,
+              "end_ms": 581
+            },
+            {
+              "index": 2,
+              "text": "first",
+              "start_ms": 641,
+              "end_ms": 862
+            },
+            {
+              "index": 3,
+              "text": "day",
+              "start_ms": 942,
+              "end_ms": 1122
+            },
+            {
+              "index": 4,
+              "text": "in",
+              "start_ms": 1222,
+              "end_ms": 1262
+            },
+            {
+              "index": 5,
+              "text": "this",
+              "start_ms": 1323,
+              "end_ms": 1443
+            },
+            {
+              "index": 6,
+              "text": "city.",
+              "start_ms": 1503,
+              "end_ms": 1864
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2525,
+          "sha256": "e7d07fc9706671ee82306d2d956a88612e8f596b319b410fe489ab4d2838ab90",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "IT'S OUR FIRST DAY IN THIS CITY",
+          "produced_at": "2026-11-02T02:55:29.273881+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2592,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/it-12-female.mp3",
+          "text": "It's our first day in this city.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "It's",
+              "start_ms": 423,
+              "end_ms": 543
+            },
+            {
+              "index": 1,
+              "text": "our",
+              "start_ms": 564,
+              "end_ms": 644
+            },
+            {
+              "index": 2,
+              "text": "first",
+              "start_ms": 704,
+              "end_ms": 886
+            },
+            {
+              "index": 3,
+              "text": "day",
+              "start_ms": 966,
+              "end_ms": 1127
+            },
+            {
+              "index": 4,
+              "text": "in",
+              "start_ms": 1188,
+              "end_ms": 1228
+            },
+            {
+              "index": 5,
+              "text": "this",
+              "start_ms": 1288,
+              "end_ms": 1369
+            },
+            {
+              "index": 6,
+              "text": "city.",
+              "start_ms": 1429,
+              "end_ms": 1771
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2375,
+          "sha256": "ea1b2e92123165401474d15faa771aef96017d69f0b7b569ccf69bb95f4afec4",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "IT'S OUR FIRST DAY IN THE CITY",
+          "produced_at": "2026-11-02T02:55:32.219810+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2424,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "like-noun-01",
+      "pattern_id": 109,
+      "group_id": "g-foundation",
+      "en": "I'd like some water.",
+      "ar": "أود بعض الماء.",
+      "context": "أود بعض الماء.",
+      "scene_description": "A guest politely asking a host for water",
+      "difficulty": {
+        "cefr": "A1",
+        "stage": 1,
+        "stage_label": "فهم النمط"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "like",
+        "some",
+        "water"
+      ],
+      "exercise_ids": [
+        "like-noun-01-transfer"
+      ],
+      "image": {
+        "id": "scene-like-noun-01",
+        "atlas": "assets/scenes/like-noun-atlas-v1.webp",
+        "cell": 0,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "fcf5db20400790a0fca20a0bab2da103ef75060995a262364d997b2279c77fc0",
+        "crop": {
+          "x": 1,
+          "y": 1,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/like-noun-01-male.mp3",
+          "text": "I'd like some water.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I'd",
+              "start_ms": 364,
+              "end_ms": 465
+            },
+            {
+              "index": 1,
+              "text": "like",
+              "start_ms": 525,
+              "end_ms": 667
+            },
+            {
+              "index": 2,
+              "text": "some",
+              "start_ms": 747,
+              "end_ms": 929
+            },
+            {
+              "index": 3,
+              "text": "water.",
+              "start_ms": 990,
+              "end_ms": 1394
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2000,
+          "sha256": "87759569f0f626777fdcd9052fc9471561a8fc5a2893b45e689106e81357a341",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I'D LIKE SOME WATER",
+          "produced_at": "2026-11-02T02:55:34.702306+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2064,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/like-noun-01-female.mp3",
+          "text": "I'd like some water.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I'd",
+              "start_ms": 462,
+              "end_ms": 563
+            },
+            {
+              "index": 1,
+              "text": "like",
+              "start_ms": 603,
+              "end_ms": 744
+            },
+            {
+              "index": 2,
+              "text": "some",
+              "start_ms": 804,
+              "end_ms": 965
+            },
+            {
+              "index": 3,
+              "text": "water.",
+              "start_ms": 1005,
+              "end_ms": 1387
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 1950,
+          "sha256": "1e210870841e8ae5dbeea6989837deff50cb7b03c8bf28d166a1b84dab4eaf75",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I'D LIKE SOME WATER",
+          "produced_at": "2026-11-02T02:55:37.160822+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2016,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "like-noun-02",
+      "pattern_id": 109,
+      "group_id": "g-foundation",
+      "en": "I'd like a cup of tea.",
+      "ar": "أود كوبًا من الشاي.",
+      "context": "أود كوبًا من الشاي.",
+      "scene_description": "A cafe customer politely ordering tea",
+      "difficulty": {
+        "cefr": "A1",
+        "stage": 1,
+        "stage_label": "فهم النمط"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "like"
+      ],
+      "exercise_ids": [
+        "like-noun-02-transfer"
+      ],
+      "image": {
+        "id": "scene-like-noun-02",
+        "atlas": "assets/scenes/like-noun-atlas-v1.webp",
+        "cell": 1,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "fcf5db20400790a0fca20a0bab2da103ef75060995a262364d997b2279c77fc0",
+        "crop": {
+          "x": 513,
+          "y": 1,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/like-noun-02-male.mp3",
+          "text": "I'd like a cup of tea.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I'd",
+              "start_ms": 361,
+              "end_ms": 461
+            },
+            {
+              "index": 1,
+              "text": "like",
+              "start_ms": 521,
+              "end_ms": 662
+            },
+            {
+              "index": 2,
+              "text": "a",
+              "start_ms": 722,
+              "end_ms": 742
+            },
+            {
+              "index": 3,
+              "text": "cup",
+              "start_ms": 802,
+              "end_ms": 942
+            },
+            {
+              "index": 4,
+              "text": "of",
+              "start_ms": 1022,
+              "end_ms": 1062
+            },
+            {
+              "index": 5,
+              "text": "tea.",
+              "start_ms": 1163,
+              "end_ms": 1524
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2125,
+          "sha256": "6676d93c25b8c11c8f83695c5afcd05d6993eafca939a7f2b292a97ed8fb8cc6",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I'D LIKE A CUP OF TEA",
+          "produced_at": "2026-11-02T02:55:39.793351+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2184,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/like-noun-02-female.mp3",
+          "text": "I'd like a cup of tea.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I'd",
+              "start_ms": 463,
+              "end_ms": 564
+            },
+            {
+              "index": 1,
+              "text": "like",
+              "start_ms": 604,
+              "end_ms": 725
+            },
+            {
+              "index": 2,
+              "text": "a",
+              "start_ms": 786,
+              "end_ms": 806
+            },
+            {
+              "index": 3,
+              "text": "cup",
+              "start_ms": 846,
+              "end_ms": 987
+            },
+            {
+              "index": 4,
+              "text": "of",
+              "start_ms": 1068,
+              "end_ms": 1108
+            },
+            {
+              "index": 5,
+              "text": "tea.",
+              "start_ms": 1189,
+              "end_ms": 1491
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2075,
+          "sha256": "7bd4a266b413a8ae6b96fdad1e18259ba52bbbcdf882e48cc8b5c3d9d395a510",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I'D LIKE A CUP OF TEA",
+          "produced_at": "2026-11-02T02:55:42.376771+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2136,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "like-noun-03",
+      "pattern_id": 109,
+      "group_id": "g-foundation",
+      "en": "I'd like a sandwich.",
+      "ar": "أود شطيرة.",
+      "context": "أود شطيرة.",
+      "scene_description": "A customer ordering a sandwich at a cafe counter",
+      "difficulty": {
+        "cefr": "A1",
+        "stage": 2,
+        "stage_label": "توسيع النمط"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "like",
+        "sandwich"
+      ],
+      "exercise_ids": [
+        "like-noun-03-transfer"
+      ],
+      "image": {
+        "id": "scene-like-noun-03",
+        "atlas": "assets/scenes/like-noun-atlas-v1.webp",
+        "cell": 2,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "fcf5db20400790a0fca20a0bab2da103ef75060995a262364d997b2279c77fc0",
+        "crop": {
+          "x": 1025,
+          "y": 1,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/like-noun-03-male.mp3",
+          "text": "I'd like a sandwich.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I'd",
+              "start_ms": 361,
+              "end_ms": 461
+            },
+            {
+              "index": 1,
+              "text": "like",
+              "start_ms": 501,
+              "end_ms": 642
+            },
+            {
+              "index": 2,
+              "text": "a",
+              "start_ms": 702,
+              "end_ms": 722
+            },
+            {
+              "index": 3,
+              "text": "sandwich.",
+              "start_ms": 802,
+              "end_ms": 1343
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2025,
+          "sha256": "abf6be9f16cc5945cba7963c4565f46097c19756666f2703c8c24b68c01dbcc8",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I'D LIKE A SANDWITCH",
+          "produced_at": "2026-11-02T02:55:44.983957+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2088,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/like-noun-03-female.mp3",
+          "text": "I'd like a sandwich.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I'd",
+              "start_ms": 461,
+              "end_ms": 561
+            },
+            {
+              "index": 1,
+              "text": "like",
+              "start_ms": 601,
+              "end_ms": 742
+            },
+            {
+              "index": 2,
+              "text": "a",
+              "start_ms": 782,
+              "end_ms": 802
+            },
+            {
+              "index": 3,
+              "text": "sandwich.",
+              "start_ms": 882,
+              "end_ms": 1363
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2025,
+          "sha256": "7d6075e50be53e7b17dda0aa18cc1bbfa0d84a6600eaa7351da2a0d7e250d848",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I'D LIKE A SANDWICH",
+          "produced_at": "2026-11-02T02:55:47.424443+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2088,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "like-noun-04",
+      "pattern_id": 109,
+      "group_id": "g-foundation",
+      "en": "I'd like a ticket.",
+      "ar": "أود تذكرة.",
+      "context": "أود تذكرة.",
+      "scene_description": "A passenger politely asking a station employee for a ticket",
+      "difficulty": {
+        "cefr": "A1",
+        "stage": 2,
+        "stage_label": "توسيع النمط"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "like",
+        "ticket"
+      ],
+      "exercise_ids": [
+        "like-noun-04-transfer"
+      ],
+      "image": {
+        "id": "scene-like-noun-04",
+        "atlas": "assets/scenes/like-noun-atlas-v1.webp",
+        "cell": 3,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "fcf5db20400790a0fca20a0bab2da103ef75060995a262364d997b2279c77fc0",
+        "crop": {
+          "x": 1,
+          "y": 513,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/like-noun-04-male.mp3",
+          "text": "I'd like a ticket.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I'd",
+              "start_ms": 384,
+              "end_ms": 485
+            },
+            {
+              "index": 1,
+              "text": "like",
+              "start_ms": 546,
+              "end_ms": 707
+            },
+            {
+              "index": 2,
+              "text": "a",
+              "start_ms": 768,
+              "end_ms": 788
+            },
+            {
+              "index": 3,
+              "text": "ticket.",
+              "start_ms": 869,
+              "end_ms": 1314
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 1900,
+          "sha256": "31378d63bc64068301bb03506e1d40a10424a1b8e5f8b38d71a8793c40b8683f",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I'D LIKE A TICKET",
+          "produced_at": "2026-11-02T02:55:49.762227+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 1968,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/like-noun-04-female.mp3",
+          "text": "I'd like a ticket.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I'd",
+              "start_ms": 462,
+              "end_ms": 562
+            },
+            {
+              "index": 1,
+              "text": "like",
+              "start_ms": 602,
+              "end_ms": 722
+            },
+            {
+              "index": 2,
+              "text": "a",
+              "start_ms": 783,
+              "end_ms": 803
+            },
+            {
+              "index": 3,
+              "text": "ticket.",
+              "start_ms": 843,
+              "end_ms": 1244
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 1826,
+          "sha256": "f5750de73e181d407a643d9342e04c1375d65012cda5221c4518ea8db1d11624",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I'D LIKE A TICKET",
+          "produced_at": "2026-11-02T02:55:51.942161+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 1896,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "like-noun-05",
+      "pattern_id": 109,
+      "group_id": "g-foundation",
+      "en": "I'd like a room for two nights.",
+      "ar": "أود غرفة لليلتين.",
+      "context": "أود غرفة لليلتين.",
+      "scene_description": "A traveler speaking politely to a hotel receptionist",
+      "difficulty": {
+        "cefr": "A1",
+        "stage": 3,
+        "stage_label": "المقارنة في موقف"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "like",
+        "room",
+        "nights"
+      ],
+      "exercise_ids": [
+        "like-noun-05-transfer"
+      ],
+      "image": {
+        "id": "scene-like-noun-05",
+        "atlas": "assets/scenes/like-noun-atlas-v1.webp",
+        "cell": 4,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "fcf5db20400790a0fca20a0bab2da103ef75060995a262364d997b2279c77fc0",
+        "crop": {
+          "x": 513,
+          "y": 513,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/like-noun-05-male.mp3",
+          "text": "I'd like a room for two nights.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I'd",
+              "start_ms": 361,
+              "end_ms": 461
+            },
+            {
+              "index": 1,
+              "text": "like",
+              "start_ms": 501,
+              "end_ms": 642
+            },
+            {
+              "index": 2,
+              "text": "a",
+              "start_ms": 682,
+              "end_ms": 702
+            },
+            {
+              "index": 3,
+              "text": "room",
+              "start_ms": 762,
+              "end_ms": 942
+            },
+            {
+              "index": 4,
+              "text": "for",
+              "start_ms": 1063,
+              "end_ms": 1143
+            },
+            {
+              "index": 5,
+              "text": "two",
+              "start_ms": 1203,
+              "end_ms": 1323
+            },
+            {
+              "index": 6,
+              "text": "nights.",
+              "start_ms": 1444,
+              "end_ms": 1744
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2426,
+          "sha256": "a7d415f96bb330844bb0a6abbaa0c287e2b04d2d1517fb17e8d58f56a5e43db5",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I'D LIKE A ROOM FOR TWO NIGHTS",
+          "produced_at": "2026-11-02T02:55:54.895194+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2496,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/like-noun-05-female.mp3",
+          "text": "I'd like a room for two nights.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I'd",
+              "start_ms": 463,
+              "end_ms": 564
+            },
+            {
+              "index": 1,
+              "text": "like",
+              "start_ms": 604,
+              "end_ms": 725
+            },
+            {
+              "index": 2,
+              "text": "a",
+              "start_ms": 785,
+              "end_ms": 805
+            },
+            {
+              "index": 3,
+              "text": "room",
+              "start_ms": 845,
+              "end_ms": 1006
+            },
+            {
+              "index": 4,
+              "text": "for",
+              "start_ms": 1107,
+              "end_ms": 1188
+            },
+            {
+              "index": 5,
+              "text": "two",
+              "start_ms": 1248,
+              "end_ms": 1369
+            },
+            {
+              "index": 6,
+              "text": "nights.",
+              "start_ms": 1469,
+              "end_ms": 1771
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2375,
+          "sha256": "9a0adf91c29fbdd927e5d81025a47be603fb84526aed6596515d3031b31eca24",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I'D LIKE A ROOM FOR TWO NIGHTS",
+          "produced_at": "2026-11-02T02:55:57.647339+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2424,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "like-noun-06",
+      "pattern_id": 109,
+      "group_id": "g-foundation",
+      "en": "I'd like some information about the museum.",
+      "ar": "أود بعض المعلومات عن المتحف.",
+      "context": "أود بعض المعلومات عن المتحف.",
+      "scene_description": "A tourist requesting a museum brochure",
+      "difficulty": {
+        "cefr": "A1",
+        "stage": 3,
+        "stage_label": "المقارنة في موقف"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "like",
+        "some",
+        "information",
+        "about",
+        "museum"
+      ],
+      "exercise_ids": [
+        "like-noun-06-transfer"
+      ],
+      "image": {
+        "id": "scene-like-noun-06",
+        "atlas": "assets/scenes/like-noun-atlas-v1.webp",
+        "cell": 5,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "fcf5db20400790a0fca20a0bab2da103ef75060995a262364d997b2279c77fc0",
+        "crop": {
+          "x": 1025,
+          "y": 513,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/like-noun-06-male.mp3",
+          "text": "I'd like some information about the museum.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I'd",
+              "start_ms": 362,
+              "end_ms": 463
+            },
+            {
+              "index": 1,
+              "text": "like",
+              "start_ms": 523,
+              "end_ms": 664
+            },
+            {
+              "index": 2,
+              "text": "some",
+              "start_ms": 725,
+              "end_ms": 866
+            },
+            {
+              "index": 3,
+              "text": "information",
+              "start_ms": 926,
+              "end_ms": 1490
+            },
+            {
+              "index": 4,
+              "text": "about",
+              "start_ms": 1590,
+              "end_ms": 1792
+            },
+            {
+              "index": 5,
+              "text": "the",
+              "start_ms": 1832,
+              "end_ms": 1892
+            },
+            {
+              "index": 6,
+              "text": "museum.",
+              "start_ms": 1953,
+              "end_ms": 2476
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 3100,
+          "sha256": "9aff37d184b8f8b695a3468b2f7c0ffc586312bd22bc195054895f336c8d4f1c",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I'D LIKE SOME INFORMATION ABOUT THE MUSEUM",
+          "produced_at": "2026-11-02T02:56:01.314998+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 3168,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/like-noun-06-female.mp3",
+          "text": "I'd like some information about the museum.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I'd",
+              "start_ms": 482,
+              "end_ms": 582
+            },
+            {
+              "index": 1,
+              "text": "like",
+              "start_ms": 642,
+              "end_ms": 782
+            },
+            {
+              "index": 2,
+              "text": "some",
+              "start_ms": 863,
+              "end_ms": 983
+            },
+            {
+              "index": 3,
+              "text": "information",
+              "start_ms": 1023,
+              "end_ms": 1545
+            },
+            {
+              "index": 4,
+              "text": "about",
+              "start_ms": 1766,
+              "end_ms": 1926
+            },
+            {
+              "index": 5,
+              "text": "the",
+              "start_ms": 1946,
+              "end_ms": 2026
+            },
+            {
+              "index": 6,
+              "text": "museum.",
+              "start_ms": 2067,
+              "end_ms": 2548
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 3150,
+          "sha256": "32c473a6f9fdca3ff250933141b13969d9b8dc59a26a199795a2cda3a045c4ba",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I'D LIKE SOME INFORMATION ABOUT THE MUSEUM",
+          "produced_at": "2026-11-02T02:56:05.092822+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 3216,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "like-noun-07",
+      "pattern_id": 109,
+      "group_id": "g-foundation",
+      "en": "I'd like a different size, please.",
+      "ar": "أود مقاسًا مختلفًا، من فضلك.",
+      "context": "أود مقاسًا مختلفًا، من فضلك.",
+      "scene_description": "A customer showing a jacket to a shop assistant",
+      "difficulty": {
+        "cefr": "A2",
+        "stage": 4,
+        "stage_label": "الاستخدام الحقيقي"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "like",
+        "different",
+        "size",
+        "please"
+      ],
+      "exercise_ids": [
+        "like-noun-07-transfer"
+      ],
+      "image": {
+        "id": "scene-like-noun-07",
+        "atlas": "assets/scenes/like-noun-atlas-v1.webp",
+        "cell": 6,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "fcf5db20400790a0fca20a0bab2da103ef75060995a262364d997b2279c77fc0",
+        "crop": {
+          "x": 1,
+          "y": 1025,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/like-noun-07-male.mp3",
+          "text": "I'd like a different size, please.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I'd",
+              "start_ms": 341,
+              "end_ms": 461
+            },
+            {
+              "index": 1,
+              "text": "like",
+              "start_ms": 501,
+              "end_ms": 641
+            },
+            {
+              "index": 2,
+              "text": "a",
+              "start_ms": 681,
+              "end_ms": 701
+            },
+            {
+              "index": 3,
+              "text": "different",
+              "start_ms": 761,
+              "end_ms": 1022
+            },
+            {
+              "index": 4,
+              "text": "size,",
+              "start_ms": 1082,
+              "end_ms": 1403
+            },
+            {
+              "index": 5,
+              "text": "please.",
+              "start_ms": 1523,
+              "end_ms": 1944
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2625,
+          "sha256": "d653c942fd906aec436830d0254359149016e1c7df7c1bea9a796bb9b3217a5a",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I'D LIKE A DIFFERENT SIZE PLEASE",
+          "produced_at": "2026-11-02T02:56:08.211187+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2688,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/like-noun-07-female.mp3",
+          "text": "I'd like a different size, please.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I'd",
+              "start_ms": 463,
+              "end_ms": 564
+            },
+            {
+              "index": 1,
+              "text": "like",
+              "start_ms": 604,
+              "end_ms": 746
+            },
+            {
+              "index": 2,
+              "text": "a",
+              "start_ms": 786,
+              "end_ms": 806
+            },
+            {
+              "index": 3,
+              "text": "different",
+              "start_ms": 846,
+              "end_ms": 1108
+            },
+            {
+              "index": 4,
+              "text": "size,",
+              "start_ms": 1149,
+              "end_ms": 1451
+            },
+            {
+              "index": 5,
+              "text": "please.",
+              "start_ms": 1652,
+              "end_ms": 2075
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2700,
+          "sha256": "3e50d7643eeaf7dec27b7b81df240b36ed4c5ba5ea1ad96d6a25d1dfa3f727ff",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I'D LIKE A DIFFERENT SIZE PLEASE",
+          "produced_at": "2026-11-02T02:56:11.400418+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2760,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "like-noun-08",
+      "pattern_id": 109,
+      "group_id": "g-foundation",
+      "en": "I'd like a seat near the front.",
+      "ar": "أود مقعدًا قرب المقدمة.",
+      "context": "أود مقعدًا قرب المقدمة.",
+      "scene_description": "A visitor discussing seating with an usher",
+      "difficulty": {
+        "cefr": "A2",
+        "stage": 4,
+        "stage_label": "الاستخدام الحقيقي"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "like",
+        "seat",
+        "near",
+        "front"
+      ],
+      "exercise_ids": [
+        "like-noun-08-transfer"
+      ],
+      "image": {
+        "id": "scene-like-noun-08",
+        "atlas": "assets/scenes/like-noun-atlas-v1.webp",
+        "cell": 7,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "fcf5db20400790a0fca20a0bab2da103ef75060995a262364d997b2279c77fc0",
+        "crop": {
+          "x": 513,
+          "y": 1025,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/like-noun-08-male.mp3",
+          "text": "I'd like a seat near the front.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I'd",
+              "start_ms": 361,
+              "end_ms": 461
+            },
+            {
+              "index": 1,
+              "text": "like",
+              "start_ms": 501,
+              "end_ms": 641
+            },
+            {
+              "index": 2,
+              "text": "a",
+              "start_ms": 702,
+              "end_ms": 722
+            },
+            {
+              "index": 3,
+              "text": "seat",
+              "start_ms": 802,
+              "end_ms": 982
+            },
+            {
+              "index": 4,
+              "text": "near",
+              "start_ms": 1062,
+              "end_ms": 1183
+            },
+            {
+              "index": 5,
+              "text": "the",
+              "start_ms": 1223,
+              "end_ms": 1283
+            },
+            {
+              "index": 6,
+              "text": "front.",
+              "start_ms": 1343,
+              "end_ms": 1603
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2325,
+          "sha256": "cbfd7a8282558c89a354798ecbdeab76bc1519c554580a32cde01ba0b09d21bb",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I'D LIKE A SEAT NEAR THE FRONT",
+          "produced_at": "2026-11-02T02:56:14.043814+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2376,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/like-noun-08-female.mp3",
+          "text": "I'd like a seat near the front.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I'd",
+              "start_ms": 463,
+              "end_ms": 564
+            },
+            {
+              "index": 1,
+              "text": "like",
+              "start_ms": 604,
+              "end_ms": 745
+            },
+            {
+              "index": 2,
+              "text": "a",
+              "start_ms": 785,
+              "end_ms": 805
+            },
+            {
+              "index": 3,
+              "text": "seat",
+              "start_ms": 886,
+              "end_ms": 1047
+            },
+            {
+              "index": 4,
+              "text": "near",
+              "start_ms": 1087,
+              "end_ms": 1188
+            },
+            {
+              "index": 5,
+              "text": "the",
+              "start_ms": 1228,
+              "end_ms": 1309
+            },
+            {
+              "index": 6,
+              "text": "front.",
+              "start_ms": 1349,
+              "end_ms": 1711
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2275,
+          "sha256": "b21460e7a7a6d99901f0327453ba022d3b2c5cb213386835925dd678edc87a84",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I'D LIKE A SEAT NEAR THE FRONT",
+          "produced_at": "2026-11-02T02:56:16.821416+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2328,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "like-noun-09",
+      "pattern_id": 109,
+      "group_id": "g-foundation",
+      "en": "I'd like a copy of the timetable.",
+      "ar": "أود نسخة من الجدول.",
+      "context": "أود نسخة من الجدول.",
+      "scene_description": "A student requesting a timetable at a reception desk",
+      "difficulty": {
+        "cefr": "A2",
+        "stage": 5,
+        "stage_label": "ترابط الأفكار"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "like",
+        "copy",
+        "timetable"
+      ],
+      "exercise_ids": [
+        "like-noun-09-transfer"
+      ],
+      "image": {
+        "id": "scene-like-noun-09",
+        "atlas": "assets/scenes/like-noun-atlas-v1.webp",
+        "cell": 8,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "fcf5db20400790a0fca20a0bab2da103ef75060995a262364d997b2279c77fc0",
+        "crop": {
+          "x": 1025,
+          "y": 1025,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/like-noun-09-male.mp3",
+          "text": "I'd like a copy of the timetable.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I'd",
+              "start_ms": 361,
+              "end_ms": 461
+            },
+            {
+              "index": 1,
+              "text": "like",
+              "start_ms": 501,
+              "end_ms": 641
+            },
+            {
+              "index": 2,
+              "text": "a",
+              "start_ms": 681,
+              "end_ms": 721
+            },
+            {
+              "index": 3,
+              "text": "copy",
+              "start_ms": 801,
+              "end_ms": 1082
+            },
+            {
+              "index": 4,
+              "text": "of",
+              "start_ms": 1142,
+              "end_ms": 1182
+            },
+            {
+              "index": 5,
+              "text": "the",
+              "start_ms": 1222,
+              "end_ms": 1302
+            },
+            {
+              "index": 6,
+              "text": "timetable.",
+              "start_ms": 1362,
+              "end_ms": 2064
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2725,
+          "sha256": "f0d5b63bef400516e7fe01505830ed7c4c8775b43cee0839dd1ecfd8a7eb0376",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I'D LIKE A COPY OF THE TIME TABLE",
+          "produced_at": "2026-11-02T02:56:19.876982+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2784,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/like-noun-09-female.mp3",
+          "text": "I'd like a copy of the timetable.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I'd",
+              "start_ms": 483,
+              "end_ms": 583
+            },
+            {
+              "index": 1,
+              "text": "like",
+              "start_ms": 624,
+              "end_ms": 764
+            },
+            {
+              "index": 2,
+              "text": "a",
+              "start_ms": 805,
+              "end_ms": 825
+            },
+            {
+              "index": 3,
+              "text": "copy",
+              "start_ms": 885,
+              "end_ms": 1167
+            },
+            {
+              "index": 4,
+              "text": "of",
+              "start_ms": 1207,
+              "end_ms": 1247
+            },
+            {
+              "index": 5,
+              "text": "the",
+              "start_ms": 1308,
+              "end_ms": 1368
+            },
+            {
+              "index": 6,
+              "text": "timetable.",
+              "start_ms": 1408,
+              "end_ms": 1911
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2575,
+          "sha256": "ce3a50db9317497ddc10776820ff124b64eb2b3003ace4f779e288b6571ba541",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I'D LIKE A COPY OF THE TIME TABLE",
+          "produced_at": "2026-11-02T02:56:22.780727+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2640,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "like-noun-10",
+      "pattern_id": 109,
+      "group_id": "g-foundation",
+      "en": "I'd like some soup before the main course.",
+      "ar": "أود بعض الحساء قبل الطبق الرئيسي.",
+      "context": "أود بعض الحساء قبل الطبق الرئيسي.",
+      "scene_description": "A diner politely discussing a meal with a waiter",
+      "difficulty": {
+        "cefr": "A2",
+        "stage": 5,
+        "stage_label": "ترابط الأفكار"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "like",
+        "some",
+        "soup",
+        "before",
+        "main",
+        "course"
+      ],
+      "exercise_ids": [
+        "like-noun-10-transfer"
+      ],
+      "image": {
+        "id": "scene-like-noun-10",
+        "atlas": "assets/scenes/like-noun-atlas-v1.webp",
+        "cell": 9,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "fcf5db20400790a0fca20a0bab2da103ef75060995a262364d997b2279c77fc0",
+        "crop": {
+          "x": 1,
+          "y": 1537,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/like-noun-10-male.mp3",
+          "text": "I'd like some soup before the main course.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I'd",
+              "start_ms": 321,
+              "end_ms": 421
+            },
+            {
+              "index": 1,
+              "text": "like",
+              "start_ms": 462,
+              "end_ms": 582
+            },
+            {
+              "index": 2,
+              "text": "some",
+              "start_ms": 662,
+              "end_ms": 803
+            },
+            {
+              "index": 3,
+              "text": "soup",
+              "start_ms": 903,
+              "end_ms": 1084
+            },
+            {
+              "index": 4,
+              "text": "before",
+              "start_ms": 1204,
+              "end_ms": 1445
+            },
+            {
+              "index": 5,
+              "text": "the",
+              "start_ms": 1485,
+              "end_ms": 1545
+            },
+            {
+              "index": 6,
+              "text": "main",
+              "start_ms": 1585,
+              "end_ms": 1766
+            },
+            {
+              "index": 7,
+              "text": "course.",
+              "start_ms": 1906,
+              "end_ms": 2207
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2950,
+          "sha256": "d1280404a50e75ebb501322b4679a0b13bdab57e8c97292153f6e3035294df23",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I'D LIKE SOME SOUP BEFORE THE MAIN COURSE",
+          "produced_at": "2026-11-02T02:56:26.233731+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 3000,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/like-noun-10-female.mp3",
+          "text": "I'd like some soup before the main course.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I'd",
+              "start_ms": 441,
+              "end_ms": 541
+            },
+            {
+              "index": 1,
+              "text": "like",
+              "start_ms": 581,
+              "end_ms": 721
+            },
+            {
+              "index": 2,
+              "text": "some",
+              "start_ms": 781,
+              "end_ms": 922
+            },
+            {
+              "index": 3,
+              "text": "soup",
+              "start_ms": 1002,
+              "end_ms": 1182
+            },
+            {
+              "index": 4,
+              "text": "before",
+              "start_ms": 1282,
+              "end_ms": 1503
+            },
+            {
+              "index": 5,
+              "text": "the",
+              "start_ms": 1523,
+              "end_ms": 1583
+            },
+            {
+              "index": 6,
+              "text": "main",
+              "start_ms": 1643,
+              "end_ms": 1803
+            },
+            {
+              "index": 7,
+              "text": "course.",
+              "start_ms": 1923,
+              "end_ms": 2284
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2925,
+          "sha256": "313004c5c0b845d4d9de2a742056a4cb2024eb1e3130860b667e6416bc2f37ce",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I'D LIKE SOME SOUP BEFORE THE MAIN COURSE",
+          "produced_at": "2026-11-02T02:56:29.667128+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2976,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "like-noun-11",
+      "pattern_id": 109,
+      "group_id": "g-foundation",
+      "en": "I'd like an appointment on Monday.",
+      "ar": "أود موعدًا يوم الاثنين.",
+      "context": "أود موعدًا يوم الاثنين.",
+      "scene_description": "A person arranging an appointment at a reception desk",
+      "difficulty": {
+        "cefr": "A2",
+        "stage": 6,
+        "stage_label": "الإنتاج والطلاقة"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "like",
+        "appointment",
+        "monday"
+      ],
+      "exercise_ids": [
+        "like-noun-11-transfer"
+      ],
+      "image": {
+        "id": "scene-like-noun-11",
+        "atlas": "assets/scenes/like-noun-atlas-v1.webp",
+        "cell": 10,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "fcf5db20400790a0fca20a0bab2da103ef75060995a262364d997b2279c77fc0",
+        "crop": {
+          "x": 513,
+          "y": 1537,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/like-noun-11-male.mp3",
+          "text": "I'd like an appointment on Monday.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I'd",
+              "start_ms": 363,
+              "end_ms": 463
+            },
+            {
+              "index": 1,
+              "text": "like",
+              "start_ms": 524,
+              "end_ms": 665
+            },
+            {
+              "index": 2,
+              "text": "an",
+              "start_ms": 705,
+              "end_ms": 746
+            },
+            {
+              "index": 3,
+              "text": "appointment",
+              "start_ms": 806,
+              "end_ms": 1290
+            },
+            {
+              "index": 4,
+              "text": "on",
+              "start_ms": 1410,
+              "end_ms": 1451
+            },
+            {
+              "index": 5,
+              "text": "Monday.",
+              "start_ms": 1572,
+              "end_ms": 2075
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2700,
+          "sha256": "bb9f6f2ff7a9694b9de0d97befe95fcea4c267e939fbb3f29e5bdacd0e1ed20d",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I'D LIKE AN APPOINTMENT ON MONDAY",
+          "produced_at": "2026-11-02T02:56:32.705471+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2760,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/like-noun-11-female.mp3",
+          "text": "I'd like an appointment on Monday.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I'd",
+              "start_ms": 482,
+              "end_ms": 582
+            },
+            {
+              "index": 1,
+              "text": "like",
+              "start_ms": 642,
+              "end_ms": 783
+            },
+            {
+              "index": 2,
+              "text": "an",
+              "start_ms": 823,
+              "end_ms": 863
+            },
+            {
+              "index": 3,
+              "text": "appointment",
+              "start_ms": 923,
+              "end_ms": 1405
+            },
+            {
+              "index": 4,
+              "text": "on",
+              "start_ms": 1526,
+              "end_ms": 1566
+            },
+            {
+              "index": 5,
+              "text": "Monday.",
+              "start_ms": 1686,
+              "end_ms": 2168
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2750,
+          "sha256": "7baa60ee337805ca43d1f297dfc3e53d33808ee18070dd184b47b874aaf19abc",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I'D LIKE AN APPOINTMENT ON MONDAY",
+          "produced_at": "2026-11-02T02:56:35.767952+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2808,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "like-noun-12",
+      "pattern_id": 109,
+      "group_id": "g-foundation",
+      "en": "I'd like a little more time to decide.",
+      "ar": "أود وقتًا إضافيًا قليلًا لاتخاذ القرار.",
+      "context": "أود وقتًا إضافيًا قليلًا لاتخاذ القرار.",
+      "scene_description": "A customer thoughtfully considering two options with an adviser",
+      "difficulty": {
+        "cefr": "A2",
+        "stage": 6,
+        "stage_label": "الإنتاج والطلاقة"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "like",
+        "little",
+        "more",
+        "time",
+        "decide"
+      ],
+      "exercise_ids": [
+        "like-noun-12-transfer"
+      ],
+      "image": {
+        "id": "scene-like-noun-12",
+        "atlas": "assets/scenes/like-noun-atlas-v1.webp",
+        "cell": 11,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "fcf5db20400790a0fca20a0bab2da103ef75060995a262364d997b2279c77fc0",
+        "crop": {
+          "x": 1025,
+          "y": 1537,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/like-noun-12-male.mp3",
+          "text": "I'd like a little more time to decide.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I'd",
+              "start_ms": 342,
+              "end_ms": 463
+            },
+            {
+              "index": 1,
+              "text": "like",
+              "start_ms": 504,
+              "end_ms": 624
+            },
+            {
+              "index": 2,
+              "text": "a",
+              "start_ms": 685,
+              "end_ms": 705
+            },
+            {
+              "index": 3,
+              "text": "little",
+              "start_ms": 725,
+              "end_ms": 886
+            },
+            {
+              "index": 4,
+              "text": "more",
+              "start_ms": 927,
+              "end_ms": 1068
+            },
+            {
+              "index": 5,
+              "text": "time",
+              "start_ms": 1168,
+              "end_ms": 1450
+            },
+            {
+              "index": 6,
+              "text": "to",
+              "start_ms": 1531,
+              "end_ms": 1591
+            },
+            {
+              "index": 7,
+              "text": "decide.",
+              "start_ms": 1632,
+              "end_ms": 2176
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2800,
+          "sha256": "3d60de66567a5ad6b07a45f06e14dc826ec45d44ed222812d8a1571376bb2ded",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I'D LIKE A LITTLE MORE TIME TO DECIDE",
+          "produced_at": "2026-11-02T02:56:39.079711+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2856,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/like-noun-12-female.mp3",
+          "text": "I'd like a little more time to decide.",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "I'd",
+              "start_ms": 483,
+              "end_ms": 583
+            },
+            {
+              "index": 1,
+              "text": "like",
+              "start_ms": 623,
+              "end_ms": 764
+            },
+            {
+              "index": 2,
+              "text": "a",
+              "start_ms": 804,
+              "end_ms": 824
+            },
+            {
+              "index": 3,
+              "text": "little",
+              "start_ms": 845,
+              "end_ms": 1026
+            },
+            {
+              "index": 4,
+              "text": "more",
+              "start_ms": 1046,
+              "end_ms": 1186
+            },
+            {
+              "index": 5,
+              "text": "time",
+              "start_ms": 1267,
+              "end_ms": 1528
+            },
+            {
+              "index": 6,
+              "text": "to",
+              "start_ms": 1609,
+              "end_ms": 1669
+            },
+            {
+              "index": 7,
+              "text": "decide.",
+              "start_ms": 1709,
+              "end_ms": 2212
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2775,
+          "sha256": "3ac2466c613a8c219f23e42512034f1e9cebb1e5ed00422e6b0475c7e7ff4368",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "I'D LIKE A LITTLE MORE TIME TO DECIDE",
+          "produced_at": "2026-11-02T02:56:42.386690+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2832,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "ask-name-01",
+      "pattern_id": 114,
+      "group_id": "g-foundation",
+      "en": "What's your name?",
+      "ar": "ما اسمك؟",
+      "context": "ما اسمك؟",
+      "scene_description": "Two adults meeting for the first time at a language class",
+      "difficulty": {
+        "cefr": "A1",
+        "stage": 1,
+        "stage_label": "فهم النمط"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "whats",
+        "your",
+        "name"
+      ],
+      "exercise_ids": [
+        "ask-name-01-transfer"
+      ],
+      "image": {
+        "id": "scene-ask-name-01",
+        "atlas": "assets/scenes/ask-name-atlas-v1.webp",
+        "cell": 0,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "7456b3bf3b07fbc8791ba96533cf9ae7806dc8b099690a22ffc90d6e7a1ba285",
+        "crop": {
+          "x": 1,
+          "y": 1,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/ask-name-01-male.mp3",
+          "text": "What's your name?",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "What's",
+              "start_ms": 321,
+              "end_ms": 522
+            },
+            {
+              "index": 1,
+              "text": "your",
+              "start_ms": 562,
+              "end_ms": 702
+            },
+            {
+              "index": 2,
+              "text": "name?",
+              "start_ms": 742,
+              "end_ms": 1083
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 1725,
+          "sha256": "a49a946acc22454ceb122ddef9c8842e977e7fe1fada80d97688037f65655167",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "WHAT'S YOUR NAME",
+          "produced_at": "2026-11-02T02:56:44.497176+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 1776,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/ask-name-01-female.mp3",
+          "text": "What's your name?",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "What's",
+              "start_ms": 444,
+              "end_ms": 605
+            },
+            {
+              "index": 1,
+              "text": "your",
+              "start_ms": 646,
+              "end_ms": 767
+            },
+            {
+              "index": 2,
+              "text": "name?",
+              "start_ms": 807,
+              "end_ms": 1110
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 1675,
+          "sha256": "821e08e9e3a9b90534864fef46b3f5fc3d07d4a4241d2674331382c63c16fd86",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "WHAT'S YOUR NAME",
+          "produced_at": "2026-11-02T02:56:46.622198+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 1728,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "ask-name-02",
+      "pattern_id": 114,
+      "group_id": "g-foundation",
+      "en": "What's your first name?",
+      "ar": "ما اسمك الأول؟",
+      "context": "ما اسمك الأول؟",
+      "scene_description": "A receptionist asking a visitor for a first name",
+      "difficulty": {
+        "cefr": "A1",
+        "stage": 1,
+        "stage_label": "فهم النمط"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "whats",
+        "your",
+        "first",
+        "name"
+      ],
+      "exercise_ids": [
+        "ask-name-02-transfer"
+      ],
+      "image": {
+        "id": "scene-ask-name-02",
+        "atlas": "assets/scenes/ask-name-atlas-v1.webp",
+        "cell": 1,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "7456b3bf3b07fbc8791ba96533cf9ae7806dc8b099690a22ffc90d6e7a1ba285",
+        "crop": {
+          "x": 513,
+          "y": 1,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/ask-name-02-male.mp3",
+          "text": "What's your first name?",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "What's",
+              "start_ms": 302,
+              "end_ms": 484
+            },
+            {
+              "index": 1,
+              "text": "your",
+              "start_ms": 524,
+              "end_ms": 625
+            },
+            {
+              "index": 2,
+              "text": "first",
+              "start_ms": 685,
+              "end_ms": 927
+            },
+            {
+              "index": 3,
+              "text": "name?",
+              "start_ms": 1008,
+              "end_ms": 1330
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 1975,
+          "sha256": "450a6c335b19f3dc51fc8df09477837bb05615942ecbb29302b6c3477545af33",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "WHAT'S YOUR FIRST NAME",
+          "produced_at": "2026-11-02T02:56:48.972083+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2040,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/ask-name-02-female.mp3",
+          "text": "What's your first name?",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "What's",
+              "start_ms": 421,
+              "end_ms": 582
+            },
+            {
+              "index": 1,
+              "text": "your",
+              "start_ms": 622,
+              "end_ms": 722
+            },
+            {
+              "index": 2,
+              "text": "first",
+              "start_ms": 762,
+              "end_ms": 942
+            },
+            {
+              "index": 3,
+              "text": "name?",
+              "start_ms": 1023,
+              "end_ms": 1323
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 1925,
+          "sha256": "6b97efed06bcda2081baebbd57070dfd7d644024724aebf7f31ba3e7cf3ffb3e",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "WHAT'S YOUR FIRST NAME",
+          "produced_at": "2026-11-02T02:56:51.236288+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 1992,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "ask-name-03",
+      "pattern_id": 114,
+      "group_id": "g-foundation",
+      "en": "What's your friend's name?",
+      "ar": "ما اسم صديقك؟",
+      "context": "ما اسم صديقك؟",
+      "scene_description": "A learner asking a classmate about a friend across the room",
+      "difficulty": {
+        "cefr": "A1",
+        "stage": 2,
+        "stage_label": "توسيع النمط"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "whats",
+        "your",
+        "friends",
+        "name"
+      ],
+      "exercise_ids": [
+        "ask-name-03-transfer"
+      ],
+      "image": {
+        "id": "scene-ask-name-03",
+        "atlas": "assets/scenes/ask-name-atlas-v1.webp",
+        "cell": 2,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "7456b3bf3b07fbc8791ba96533cf9ae7806dc8b099690a22ffc90d6e7a1ba285",
+        "crop": {
+          "x": 1025,
+          "y": 1,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/ask-name-03-male.mp3",
+          "text": "What's your friend's name?",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "What's",
+              "start_ms": 302,
+              "end_ms": 483
+            },
+            {
+              "index": 1,
+              "text": "your",
+              "start_ms": 524,
+              "end_ms": 625
+            },
+            {
+              "index": 2,
+              "text": "friend's",
+              "start_ms": 685,
+              "end_ms": 1027
+            },
+            {
+              "index": 3,
+              "text": "name?",
+              "start_ms": 1108,
+              "end_ms": 1350
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2075,
+          "sha256": "075de8d8ff7c3d78057828e8bfcea202cef4139fc215118fcb3fc8b2ce332219",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "WHAT'S YOUR FRIEND'S NAME",
+          "produced_at": "2026-11-02T02:56:53.646586+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2136,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/ask-name-03-female.mp3",
+          "text": "What's your friend's name?",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "What's",
+              "start_ms": 422,
+              "end_ms": 583
+            },
+            {
+              "index": 1,
+              "text": "your",
+              "start_ms": 623,
+              "end_ms": 724
+            },
+            {
+              "index": 2,
+              "text": "friend's",
+              "start_ms": 764,
+              "end_ms": 1045
+            },
+            {
+              "index": 3,
+              "text": "name?",
+              "start_ms": 1125,
+              "end_ms": 1447
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2050,
+          "sha256": "87c86685e777f89a98eefc652ebd5f970ab0689534811113b9836c67f8be901c",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "WHAT'S YOUR FRIEND'S NAME",
+          "produced_at": "2026-11-02T02:56:56.166821+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2112,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "ask-name-04",
+      "pattern_id": 114,
+      "group_id": "g-foundation",
+      "en": "What's your teacher's name?",
+      "ar": "ما اسم معلمك؟",
+      "context": "ما اسم معلمك؟",
+      "scene_description": "Two learners talking beside a classroom",
+      "difficulty": {
+        "cefr": "A1",
+        "stage": 2,
+        "stage_label": "توسيع النمط"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "whats",
+        "your",
+        "teachers",
+        "name"
+      ],
+      "exercise_ids": [
+        "ask-name-04-transfer"
+      ],
+      "image": {
+        "id": "scene-ask-name-04",
+        "atlas": "assets/scenes/ask-name-atlas-v1.webp",
+        "cell": 3,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "7456b3bf3b07fbc8791ba96533cf9ae7806dc8b099690a22ffc90d6e7a1ba285",
+        "crop": {
+          "x": 1,
+          "y": 513,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/ask-name-04-male.mp3",
+          "text": "What's your teacher's name?",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "What's",
+              "start_ms": 301,
+              "end_ms": 482
+            },
+            {
+              "index": 1,
+              "text": "your",
+              "start_ms": 502,
+              "end_ms": 623
+            },
+            {
+              "index": 2,
+              "text": "teacher's",
+              "start_ms": 683,
+              "end_ms": 1085
+            },
+            {
+              "index": 3,
+              "text": "name?",
+              "start_ms": 1165,
+              "end_ms": 1507
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2150,
+          "sha256": "aa3c18deb3a2bccf6aaa0b01a163dec9ee95015b528ebb654b3a7a8c74c81b6e",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "WHAT'S YOUR TEACHER'S NAME",
+          "produced_at": "2026-11-02T02:56:58.778827+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2208,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/ask-name-04-female.mp3",
+          "text": "What's your teacher's name?",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "What's",
+              "start_ms": 424,
+              "end_ms": 586
+            },
+            {
+              "index": 1,
+              "text": "your",
+              "start_ms": 626,
+              "end_ms": 727
+            },
+            {
+              "index": 2,
+              "text": "teacher's",
+              "start_ms": 767,
+              "end_ms": 1131
+            },
+            {
+              "index": 3,
+              "text": "name?",
+              "start_ms": 1191,
+              "end_ms": 1514
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2100,
+          "sha256": "8a2a8dd45e4928f451af5525bed6512c546f244cb5b24a57e015bce1f1626de2",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "WHAT'S YOUR TEACHER'S NAME",
+          "produced_at": "2026-11-02T02:57:01.208401+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2160,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "ask-name-05",
+      "pattern_id": 114,
+      "group_id": "g-foundation",
+      "en": "What's your family name?",
+      "ar": "ما اسم عائلتك؟",
+      "context": "ما اسم عائلتك؟",
+      "scene_description": "A visitor giving registration details at a desk",
+      "difficulty": {
+        "cefr": "A1",
+        "stage": 3,
+        "stage_label": "المقارنة في موقف"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "whats",
+        "your",
+        "family",
+        "name"
+      ],
+      "exercise_ids": [
+        "ask-name-05-transfer"
+      ],
+      "image": {
+        "id": "scene-ask-name-05",
+        "atlas": "assets/scenes/ask-name-atlas-v1.webp",
+        "cell": 4,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "7456b3bf3b07fbc8791ba96533cf9ae7806dc8b099690a22ffc90d6e7a1ba285",
+        "crop": {
+          "x": 513,
+          "y": 513,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/ask-name-05-male.mp3",
+          "text": "What's your family name?",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "What's",
+              "start_ms": 302,
+              "end_ms": 483
+            },
+            {
+              "index": 1,
+              "text": "your",
+              "start_ms": 524,
+              "end_ms": 625
+            },
+            {
+              "index": 2,
+              "text": "family",
+              "start_ms": 705,
+              "end_ms": 1027
+            },
+            {
+              "index": 3,
+              "text": "name?",
+              "start_ms": 1108,
+              "end_ms": 1430
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2075,
+          "sha256": "07455e6b67e3ece2cc5fb4a117641e256e0b21c13d8f8953302b6c92ad531593",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "WHAT'S YOUR FAMILY NAME",
+          "produced_at": "2026-11-02T02:57:03.594588+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2136,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/ask-name-05-female.mp3",
+          "text": "What's your family name?",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "What's",
+              "start_ms": 421,
+              "end_ms": 581
+            },
+            {
+              "index": 1,
+              "text": "your",
+              "start_ms": 622,
+              "end_ms": 722
+            },
+            {
+              "index": 2,
+              "text": "family",
+              "start_ms": 762,
+              "end_ms": 1063
+            },
+            {
+              "index": 3,
+              "text": "name?",
+              "start_ms": 1123,
+              "end_ms": 1424
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2025,
+          "sha256": "2ddd6d17abb8230cad26496f2fb43caa7ae4f28f66f7398d550611242975b7e0",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "WHAT'S YOUR FAMILY NAME",
+          "produced_at": "2026-11-02T02:57:05.962755+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2088,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "ask-name-06",
+      "pattern_id": 114,
+      "group_id": "g-foundation",
+      "en": "What's your sister's name?",
+      "ar": "ما اسم أختك؟",
+      "context": "ما اسم أختك؟",
+      "scene_description": "An adult asking a friend about a sister in a family photo",
+      "difficulty": {
+        "cefr": "A1",
+        "stage": 3,
+        "stage_label": "المقارنة في موقف"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "whats",
+        "your",
+        "sisters",
+        "name"
+      ],
+      "exercise_ids": [
+        "ask-name-06-transfer"
+      ],
+      "image": {
+        "id": "scene-ask-name-06",
+        "atlas": "assets/scenes/ask-name-atlas-v1.webp",
+        "cell": 5,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "7456b3bf3b07fbc8791ba96533cf9ae7806dc8b099690a22ffc90d6e7a1ba285",
+        "crop": {
+          "x": 1025,
+          "y": 513,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/ask-name-06-male.mp3",
+          "text": "What's your sister's name?",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "What's",
+              "start_ms": 301,
+              "end_ms": 481
+            },
+            {
+              "index": 1,
+              "text": "your",
+              "start_ms": 521,
+              "end_ms": 641
+            },
+            {
+              "index": 2,
+              "text": "sister's",
+              "start_ms": 722,
+              "end_ms": 1143
+            },
+            {
+              "index": 3,
+              "text": "name?",
+              "start_ms": 1223,
+              "end_ms": 1483
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2225,
+          "sha256": "976972142ac5b48cee5c5830ea1c520d9ea5edb030cd2eeb289956158a43b241",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "WHAT'S YOUR SISTER'S NAME",
+          "produced_at": "2026-11-02T02:57:08.528628+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2280,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/ask-name-06-female.mp3",
+          "text": "What's your sister's name?",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "What's",
+              "start_ms": 441,
+              "end_ms": 581
+            },
+            {
+              "index": 1,
+              "text": "your",
+              "start_ms": 621,
+              "end_ms": 722
+            },
+            {
+              "index": 2,
+              "text": "sister's",
+              "start_ms": 782,
+              "end_ms": 1143
+            },
+            {
+              "index": 3,
+              "text": "name?",
+              "start_ms": 1203,
+              "end_ms": 1524
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2125,
+          "sha256": "f73a8ec80cab1f7ced5834dc117f66642af95c7b5d32d74ccf15492620503f2c",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "WHAT'S YOUR SISTER'S NAME",
+          "produced_at": "2026-11-02T02:57:11.011799+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2184,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "ask-name-07",
+      "pattern_id": 114,
+      "group_id": "g-foundation",
+      "en": "What's your brother's name?",
+      "ar": "ما اسم أخيك؟",
+      "context": "ما اسم أخيك؟",
+      "scene_description": "Two adults discussing a brother in a family photo",
+      "difficulty": {
+        "cefr": "A2",
+        "stage": 4,
+        "stage_label": "الاستخدام الحقيقي"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "whats",
+        "your",
+        "brothers",
+        "name"
+      ],
+      "exercise_ids": [
+        "ask-name-07-transfer"
+      ],
+      "image": {
+        "id": "scene-ask-name-07",
+        "atlas": "assets/scenes/ask-name-atlas-v1.webp",
+        "cell": 6,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "7456b3bf3b07fbc8791ba96533cf9ae7806dc8b099690a22ffc90d6e7a1ba285",
+        "crop": {
+          "x": 1,
+          "y": 1025,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/ask-name-07-male.mp3",
+          "text": "What's your brother's name?",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "What's",
+              "start_ms": 301,
+              "end_ms": 482
+            },
+            {
+              "index": 1,
+              "text": "your",
+              "start_ms": 522,
+              "end_ms": 643
+            },
+            {
+              "index": 2,
+              "text": "brother's",
+              "start_ms": 703,
+              "end_ms": 1085
+            },
+            {
+              "index": 3,
+              "text": "name?",
+              "start_ms": 1145,
+              "end_ms": 1507
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2150,
+          "sha256": "98de01aa4f4e9b2c816c5deecb6b79aa366de8c36c5a47d1facf284a66e58572",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "WHAT'S YOUR BROTHER'S NAME",
+          "produced_at": "2026-11-02T02:57:13.457383+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2208,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/ask-name-07-female.mp3",
+          "text": "What's your brother's name?",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "What's",
+              "start_ms": 441,
+              "end_ms": 621
+            },
+            {
+              "index": 1,
+              "text": "your",
+              "start_ms": 642,
+              "end_ms": 742
+            },
+            {
+              "index": 2,
+              "text": "brother's",
+              "start_ms": 782,
+              "end_ms": 1123
+            },
+            {
+              "index": 3,
+              "text": "name?",
+              "start_ms": 1203,
+              "end_ms": 1524
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2125,
+          "sha256": "88b7d1c9dc66e094952b6220106d65fff716ef5ba99317e30daca6dd701a82c7",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "WHAT'S YOUR BROTHER'S NAME",
+          "produced_at": "2026-11-02T02:57:15.899048+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2184,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "ask-name-08",
+      "pattern_id": 114,
+      "group_id": "g-foundation",
+      "en": "What's your manager's name?",
+      "ar": "ما اسم مديرك؟",
+      "context": "ما اسم مديرك؟",
+      "scene_description": "A new employee asking a colleague about their manager",
+      "difficulty": {
+        "cefr": "A2",
+        "stage": 4,
+        "stage_label": "الاستخدام الحقيقي"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "whats",
+        "your",
+        "managers",
+        "name"
+      ],
+      "exercise_ids": [
+        "ask-name-08-transfer"
+      ],
+      "image": {
+        "id": "scene-ask-name-08",
+        "atlas": "assets/scenes/ask-name-atlas-v1.webp",
+        "cell": 7,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "7456b3bf3b07fbc8791ba96533cf9ae7806dc8b099690a22ffc90d6e7a1ba285",
+        "crop": {
+          "x": 513,
+          "y": 1025,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/ask-name-08-male.mp3",
+          "text": "What's your manager's name?",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "What's",
+              "start_ms": 303,
+              "end_ms": 484
+            },
+            {
+              "index": 1,
+              "text": "your",
+              "start_ms": 525,
+              "end_ms": 626
+            },
+            {
+              "index": 2,
+              "text": "manager's",
+              "start_ms": 686,
+              "end_ms": 1150
+            },
+            {
+              "index": 3,
+              "text": "name?",
+              "start_ms": 1211,
+              "end_ms": 1554
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2200,
+          "sha256": "da5c5a1090878c29033c0e9b61d88e5fbd8baed3a23252bf5095108068d9a893",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "WHAT'S YOUR MANAGER'S NAME",
+          "produced_at": "2026-11-02T02:57:18.451789+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2256,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/ask-name-08-female.mp3",
+          "text": "What's your manager's name?",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "What's",
+              "start_ms": 444,
+              "end_ms": 585
+            },
+            {
+              "index": 1,
+              "text": "your",
+              "start_ms": 626,
+              "end_ms": 727
+            },
+            {
+              "index": 2,
+              "text": "manager's",
+              "start_ms": 787,
+              "end_ms": 1231
+            },
+            {
+              "index": 3,
+              "text": "name?",
+              "start_ms": 1292,
+              "end_ms": 1615
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2200,
+          "sha256": "ebdef7edeb1a42bdde57d89b2710c57ce4f2f53c9d94a954e31ee6d6153732f6",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "WHAT'S YOUR MANAGER'S NAME",
+          "produced_at": "2026-11-02T02:57:20.976674+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2256,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "ask-name-09",
+      "pattern_id": 114,
+      "group_id": "g-foundation",
+      "en": "What's your dog's name?",
+      "ar": "ما اسم كلبك؟",
+      "context": "ما اسم كلبك؟",
+      "scene_description": "A person asking an owner about a friendly dog in a park",
+      "difficulty": {
+        "cefr": "A2",
+        "stage": 5,
+        "stage_label": "ترابط الأفكار"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "whats",
+        "your",
+        "dogs",
+        "name"
+      ],
+      "exercise_ids": [
+        "ask-name-09-transfer"
+      ],
+      "image": {
+        "id": "scene-ask-name-09",
+        "atlas": "assets/scenes/ask-name-atlas-v1.webp",
+        "cell": 8,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "7456b3bf3b07fbc8791ba96533cf9ae7806dc8b099690a22ffc90d6e7a1ba285",
+        "crop": {
+          "x": 1025,
+          "y": 1025,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/ask-name-09-male.mp3",
+          "text": "What's your dog's name?",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "What's",
+              "start_ms": 302,
+              "end_ms": 483
+            },
+            {
+              "index": 1,
+              "text": "your",
+              "start_ms": 524,
+              "end_ms": 625
+            },
+            {
+              "index": 2,
+              "text": "dog's",
+              "start_ms": 685,
+              "end_ms": 1027
+            },
+            {
+              "index": 3,
+              "text": "name?",
+              "start_ms": 1108,
+              "end_ms": 1430
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2075,
+          "sha256": "a79430ff9eb83ee2743c82361ce4765525fd8a1a5e4b5459daa6635320880395",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "WHAT'S YOUR DOG'S NAME",
+          "produced_at": "2026-11-02T02:57:23.381009+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2136,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/ask-name-09-female.mp3",
+          "text": "What's your dog's name?",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "What's",
+              "start_ms": 424,
+              "end_ms": 586
+            },
+            {
+              "index": 1,
+              "text": "your",
+              "start_ms": 626,
+              "end_ms": 727
+            },
+            {
+              "index": 2,
+              "text": "dog's",
+              "start_ms": 768,
+              "end_ms": 1051
+            },
+            {
+              "index": 3,
+              "text": "name?",
+              "start_ms": 1111,
+              "end_ms": 1414
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2000,
+          "sha256": "c85d757ff6b2e7dd60a11a1393dc89d9b0e0cb01b3f975311d28d27de17f2f2e",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "WHAT'S YOUR DOG'S NAME",
+          "produced_at": "2026-11-02T02:57:25.742715+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2064,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "ask-name-10",
+      "pattern_id": 114,
+      "group_id": "g-foundation",
+      "en": "What's your guide's name?",
+      "ar": "ما اسم مرشدكم؟",
+      "context": "ما اسم مرشدكم؟",
+      "scene_description": "A traveler asking another visitor about their tour guide",
+      "difficulty": {
+        "cefr": "A2",
+        "stage": 5,
+        "stage_label": "ترابط الأفكار"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "whats",
+        "your",
+        "guides",
+        "name"
+      ],
+      "exercise_ids": [
+        "ask-name-10-transfer"
+      ],
+      "image": {
+        "id": "scene-ask-name-10",
+        "atlas": "assets/scenes/ask-name-atlas-v1.webp",
+        "cell": 9,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "7456b3bf3b07fbc8791ba96533cf9ae7806dc8b099690a22ffc90d6e7a1ba285",
+        "crop": {
+          "x": 1,
+          "y": 1537,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/ask-name-10-male.mp3",
+          "text": "What's your guide's name?",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "What's",
+              "start_ms": 301,
+              "end_ms": 482
+            },
+            {
+              "index": 1,
+              "text": "your",
+              "start_ms": 523,
+              "end_ms": 643
+            },
+            {
+              "index": 2,
+              "text": "guide's",
+              "start_ms": 683,
+              "end_ms": 1005
+            },
+            {
+              "index": 3,
+              "text": "name?",
+              "start_ms": 1085,
+              "end_ms": 1407
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2050,
+          "sha256": "40e1ef412bb9a7a599ec1285bda39caa21ef8f242ee5ab6f5f2ce64c91939547",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "WHAT'S YOUR GUIDE'S NAME",
+          "produced_at": "2026-11-02T02:57:28.087047+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2112,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/ask-name-10-female.mp3",
+          "text": "What's your guide's name?",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "What's",
+              "start_ms": 444,
+              "end_ms": 586
+            },
+            {
+              "index": 1,
+              "text": "your",
+              "start_ms": 626,
+              "end_ms": 727
+            },
+            {
+              "index": 2,
+              "text": "guide's",
+              "start_ms": 768,
+              "end_ms": 1051
+            },
+            {
+              "index": 3,
+              "text": "name?",
+              "start_ms": 1111,
+              "end_ms": 1414
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2000,
+          "sha256": "3cff12d111bc5123964c0b118b049d53305107a553149fc92c182f5d02188597",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "WHAT'S YOUR GUIDE'S NAME",
+          "produced_at": "2026-11-02T02:57:30.394503+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2064,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "ask-name-11",
+      "pattern_id": 114,
+      "group_id": "g-foundation",
+      "en": "What's your neighbor's name?",
+      "ar": "ما اسم جارك؟",
+      "context": "ما اسم جارك؟",
+      "scene_description": "Two people talking near neighboring homes",
+      "difficulty": {
+        "cefr": "A2",
+        "stage": 6,
+        "stage_label": "الإنتاج والطلاقة"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "whats",
+        "your",
+        "neighbors",
+        "name"
+      ],
+      "exercise_ids": [
+        "ask-name-11-transfer"
+      ],
+      "image": {
+        "id": "scene-ask-name-11",
+        "atlas": "assets/scenes/ask-name-atlas-v1.webp",
+        "cell": 10,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "7456b3bf3b07fbc8791ba96533cf9ae7806dc8b099690a22ffc90d6e7a1ba285",
+        "crop": {
+          "x": 513,
+          "y": 1537,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/ask-name-11-male.mp3",
+          "text": "What's your neighbor's name?",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "What's",
+              "start_ms": 302,
+              "end_ms": 483
+            },
+            {
+              "index": 1,
+              "text": "your",
+              "start_ms": 524,
+              "end_ms": 644
+            },
+            {
+              "index": 2,
+              "text": "neighbor's",
+              "start_ms": 725,
+              "end_ms": 1108
+            },
+            {
+              "index": 3,
+              "text": "name?",
+              "start_ms": 1168,
+              "end_ms": 1531
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2175,
+          "sha256": "923da16d75d70b78d24a37d935554c4979fbf03bd17c6d15f184696890556d5b",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "WHAT'S YOUR NEIGHBOR'S NAME",
+          "produced_at": "2026-11-02T02:57:33.039164+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2232,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/ask-name-11-female.mp3",
+          "text": "What's your neighbor's name?",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "What's",
+              "start_ms": 442,
+              "end_ms": 583
+            },
+            {
+              "index": 1,
+              "text": "your",
+              "start_ms": 623,
+              "end_ms": 724
+            },
+            {
+              "index": 2,
+              "text": "neighbor's",
+              "start_ms": 764,
+              "end_ms": 1065
+            },
+            {
+              "index": 3,
+              "text": "name?",
+              "start_ms": 1146,
+              "end_ms": 1367
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2050,
+          "sha256": "abf42e7377e2969fdcc000696fcd8795f7dfbe73d8e8cee48036d41b7266d712",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "WHAT'S YOUR NEIGHBOR'S NAME",
+          "produced_at": "2026-11-02T02:57:35.419593+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2112,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    },
+    {
+      "id": "ask-name-12",
+      "pattern_id": 114,
+      "group_id": "g-foundation",
+      "en": "What's your colleague's name?",
+      "ar": "ما اسم زميلك؟",
+      "context": "ما اسم زميلك؟",
+      "scene_description": "An adult asking about a colleague at an office gathering",
+      "difficulty": {
+        "cefr": "A2",
+        "stage": 6,
+        "stage_label": "الإنتاج والطلاقة"
+      },
+      "related_pattern_ids": [],
+      "vocabulary": [
+        "whats",
+        "your",
+        "colleagues",
+        "name"
+      ],
+      "exercise_ids": [
+        "ask-name-12-transfer"
+      ],
+      "image": {
+        "id": "scene-ask-name-12",
+        "atlas": "assets/scenes/ask-name-atlas-v1.webp",
+        "cell": 11,
+        "columns": 3,
+        "rows": 4,
+        "width": 1536,
+        "height": 2048,
+        "tile_aspect": 1,
+        "status": "visually_reviewed",
+        "origin": "generated_photorealistic",
+        "sha256": "7456b3bf3b07fbc8791ba96533cf9ae7806dc8b099690a22ffc90d6e7a1ba285",
+        "crop": {
+          "x": 1025,
+          "y": 1537,
+          "width": 510,
+          "height": 510
+        },
+        "geometry_status": "verified",
+        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+      },
+      "recordings": {
+        "male": {
+          "voice_id": "am_adam",
+          "path": "assets/audio/ask-name-12-male.mp3",
+          "text": "What's your colleague's name?",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "What's",
+              "start_ms": 301,
+              "end_ms": 461
+            },
+            {
+              "index": 1,
+              "text": "your",
+              "start_ms": 501,
+              "end_ms": 621
+            },
+            {
+              "index": 2,
+              "text": "colleague's",
+              "start_ms": 662,
+              "end_ms": 1083
+            },
+            {
+              "index": 3,
+              "text": "name?",
+              "start_ms": 1143,
+              "end_ms": 1483
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2125,
+          "sha256": "9fc05e04566202721a59afa020e5a0b67a4579ac3a1e402917dceba258e48951",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "WHAT'S YOUR COLLEAGUE'S NAME",
+          "produced_at": "2026-11-02T02:57:37.855391+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2184,
+          "duration_basis": "decoded-pcm-24000-mono"
+        },
+        "female": {
+          "voice_id": "af_bella",
+          "path": "assets/audio/ask-name-12-female.mp3",
+          "text": "What's your colleague's name?",
+          "status": "structurally_verified",
+          "words": [
+            {
+              "index": 0,
+              "text": "What's",
+              "start_ms": 423,
+              "end_ms": 564
+            },
+            {
+              "index": 1,
+              "text": "your",
+              "start_ms": 604,
+              "end_ms": 705
+            },
+            {
+              "index": 2,
+              "text": "colleague's",
+              "start_ms": 745,
+              "end_ms": 1108
+            },
+            {
+              "index": 3,
+              "text": "name?",
+              "start_ms": 1189,
+              "end_ms": 1491
+            }
+          ],
+          "auditory_review": "pending",
+          "duration_ms": 2075,
+          "sha256": "e6de1aa85386d0b223a3ff15e9baa0ad2c523f003ea6b7994a347f44167ed2a6",
+          "alignment": "wav2vec2-ctc-exact-mp3",
+          "ctc_transcript": "WHAT'S YOUR COLLEAGUE'S NAME",
+          "produced_at": "2026-11-02T02:57:40.253187+00:00",
+          "model": "hexgrad/Kokoro-82M",
+          "pipeline_version": "kokoro-0.9.4",
+          "source_container_duration_ms": 2136,
+          "duration_basis": "decoded-pcm-24000-mono"
+        }
+      }
+    }
+  ]
+}

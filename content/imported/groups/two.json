@@ -1,0 +1,1549 @@
+{
+  "schema": 1,
+  "group": "daily-routines",
+  "title": "المجموعة الثانية: الحياة اليومية والعادات",
+  "status": "18 complete authored patterns; realistic photos pending; voices only count after verification",
+  "requirements": {
+    "patternCount": 18,
+    "scenesPerPattern": 4,
+    "storyLinesPerPattern": 3,
+    "dialogueTurnsPerPattern": 2,
+    "chapters": 3,
+    "skills": [
+      "الروتين الصباحي",
+      "العادات المتكررة",
+      "التعبير عن معدل التكرار",
+      "ترتيب الأحداث",
+      "الروتين المسائي",
+      "عطلة نهاية الأسبوع"
+    ]
+  },
+  "items": [
+    {
+      "key": "i-wake-up",
+      "title": "I wake up",
+      "meaning": "أستيقظ",
+      "formula": "I wake up + at + وقت",
+      "explanation": "نستخدم wake up للحظة الاستيقاظ، ولا يعني بالضرورة مغادرة السرير؛ نقول at six عند الساعة السادسة.",
+      "explanationEn": "Wake up means to stop sleeping. Use at before a clock time.",
+      "contrast": "I wake up = أستيقظ، I get up = أنهض من السرير.",
+      "sourceIds": [
+        121
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I wake up at six.",
+          "ar": "أستيقظ الساعة السادسة.",
+          "context": "المنبه صباحًا",
+          "icon": "⏰",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I wake up early.",
+          "ar": "أستيقظ مبكرًا.",
+          "context": "الاستيقاظ مع الشروق",
+          "icon": "🌅",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I wake up at seven on Sunday.",
+          "ar": "أستيقظ الساعة السابعة يوم الأحد.",
+          "context": "بداية أسبوع جديد",
+          "icon": "🗓️",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I wake up when my alarm rings.",
+          "ar": "أستيقظ عندما يرن المنبه.",
+          "context": "صوت المنبه",
+          "icon": "🔔",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Maya wakes up at six.",
+          "ar": "تستيقظ مايا الساعة السادسة."
+        },
+        {
+          "id": 2,
+          "en": "She opens her eyes and smiles.",
+          "ar": "تفتح عينيها وتبتسم."
+        },
+        {
+          "id": 3,
+          "en": "She says, 'I wake up early on school days.'",
+          "ar": "تقول: أستيقظ مبكرًا في أيام المدرسة."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "What time do you wake up?",
+          "ar": "في أي ساعة تستيقظ؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "I wake up at six.",
+          "ar": "أستيقظ الساعة السادسة."
+        }
+      ],
+      "id": 1
+    },
+    {
+      "key": "i-get-up",
+      "title": "I get up",
+      "meaning": "أنهض من السرير",
+      "formula": "I get up + at + وقت",
+      "explanation": "Get up يصف النهوض فعليًا من السرير. يمكن أن تستيقظ أولًا ثم تنهض بعد دقائق.",
+      "explanationEn": "Get up means to leave your bed. You can wake up before you get up.",
+      "contrast": "Wake up لحظة انتهاء النوم، وGet up مغادرة السرير.",
+      "sourceIds": [
+        121
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I get up at six thirty.",
+          "ar": "أنهض من السرير الساعة السادسة والنصف.",
+          "context": "مغادرة السرير",
+          "icon": "🛏️",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I get up and open the window.",
+          "ar": "أنهض وأفتح النافذة.",
+          "context": "غرفة النوم",
+          "icon": "🪟",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I get up early for school.",
+          "ar": "أنهض مبكرًا للمدرسة.",
+          "context": "الاستعداد للمدرسة",
+          "icon": "🎒",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I get up slowly on weekends.",
+          "ar": "أنهض ببطء في عطلة نهاية الأسبوع.",
+          "context": "صباح العطلة",
+          "icon": "☀️",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Omar wakes up at six.",
+          "ar": "يستيقظ عمر الساعة السادسة."
+        },
+        {
+          "id": 2,
+          "en": "He stays in bed for five minutes.",
+          "ar": "يبقى في السرير خمس دقائق."
+        },
+        {
+          "id": 3,
+          "en": "Then he gets up and starts his day.",
+          "ar": "ثم ينهض ويبدأ يومه."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Do you get up right away?",
+          "ar": "هل تنهض مباشرة؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "No, I get up after a few minutes.",
+          "ar": "لا، أنهض بعد بضع دقائق."
+        }
+      ],
+      "id": 2
+    },
+    {
+      "key": "in-the-morning",
+      "title": "In the morning",
+      "meaning": "في الصباح",
+      "formula": "In the morning + جملة / I + فعل + in the morning",
+      "explanation": "تستخدم In the morning لفترة الصباح عمومًا، لا لوقت ساعة محدد. ويمكن وضعها في بداية الجملة أو آخرها.",
+      "explanationEn": "In the morning names a part of the day, not one exact clock time.",
+      "contrast": "In the morning = خلال الصباح، At seven = عند الساعة السابعة.",
+      "sourceIds": [
+        121
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "In the morning, I drink water.",
+          "ar": "في الصباح أشرب الماء.",
+          "context": "كوب ماء صباحًا",
+          "icon": "🥛",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I study English in the morning.",
+          "ar": "أدرس الإنجليزية في الصباح.",
+          "context": "المذاكرة باكرًا",
+          "icon": "📚",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "In the morning, the streets are quiet.",
+          "ar": "تكون الشوارع هادئة في الصباح.",
+          "context": "شارع هادئ",
+          "icon": "🌤️",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I take a short walk in the morning.",
+          "ar": "أتمشى قليلًا في الصباح.",
+          "context": "جولة الصباح",
+          "icon": "🚶",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Sara loves the quiet morning.",
+          "ar": "تحب سارة الصباح الهادئ."
+        },
+        {
+          "id": 2,
+          "en": "In the morning, she drinks water.",
+          "ar": "تشرب الماء في الصباح."
+        },
+        {
+          "id": 3,
+          "en": "Then she reads for ten minutes.",
+          "ar": "ثم تقرأ لمدة عشر دقائق."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "When do you study?",
+          "ar": "متى تدرس؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "I study in the morning.",
+          "ar": "أدرس في الصباح."
+        }
+      ],
+      "id": 3
+    },
+    {
+      "key": "i-brush-my-teeth",
+      "title": "I brush my teeth",
+      "meaning": "أنظّف أسناني بالفرشاة",
+      "formula": "I brush my teeth + before / after + اسم أو فعل-ing",
+      "explanation": "نقول brush my teeth لا wash my teeth. ويمكن ربط العادة بوقت محدد مثل after breakfast.",
+      "explanationEn": "Say brush my teeth for cleaning teeth with a toothbrush.",
+      "contrast": "Brush my teeth لتنظيف الأسنان، Wash my face لغسل الوجه.",
+      "sourceIds": [
+        125
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I brush my teeth every morning.",
+          "ar": "أنظف أسناني كل صباح.",
+          "context": "فرشاة ومعجون",
+          "icon": "🪥",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I brush my teeth after breakfast.",
+          "ar": "أنظف أسناني بعد الإفطار.",
+          "context": "بعد الإفطار",
+          "icon": "🦷",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I brush my teeth before bed.",
+          "ar": "أنظف أسناني قبل النوم.",
+          "context": "الاستعداد للنوم",
+          "icon": "🌙",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I brush my teeth for two minutes.",
+          "ar": "أنظف أسناني لمدة دقيقتين.",
+          "context": "مؤقت تنظيف الأسنان",
+          "icon": "⏳",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Ali finishes breakfast.",
+          "ar": "ينهي علي إفطاره."
+        },
+        {
+          "id": 2,
+          "en": "He brushes his teeth carefully.",
+          "ar": "ينظف أسنانه بعناية."
+        },
+        {
+          "id": 3,
+          "en": "He smiles before leaving home.",
+          "ar": "يبتسم قبل مغادرة المنزل."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Do you brush your teeth before bed?",
+          "ar": "هل تنظف أسنانك قبل النوم؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Yes, I brush my teeth every night.",
+          "ar": "نعم، أنظف أسناني كل ليلة."
+        }
+      ],
+      "id": 4
+    },
+    {
+      "key": "i-have-breakfast",
+      "title": "I have breakfast",
+      "meaning": "أتناول الإفطار",
+      "formula": "I have breakfast + at + وقت",
+      "explanation": "في الوجبات نقول have breakfast أو eat breakfast، وغالبًا لا نضع a قبل breakfast.",
+      "explanationEn": "Have breakfast means eat your morning meal. Usually do not add a before breakfast.",
+      "contrast": "Have breakfast = تناول وجبة الإفطار؛ Have a sandwich = تناول شطيرة.",
+      "sourceIds": [
+        19
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I have breakfast at seven.",
+          "ar": "أتناول الإفطار الساعة السابعة.",
+          "context": "طاولة الإفطار",
+          "icon": "🍳",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I have breakfast with my family.",
+          "ar": "أتناول الإفطار مع أسرتي.",
+          "context": "إفطار عائلي",
+          "icon": "👨‍👩‍👧",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I have breakfast before school.",
+          "ar": "أتناول الإفطار قبل المدرسة.",
+          "context": "وجبة قبل الخروج",
+          "icon": "🥣",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I have breakfast at home.",
+          "ar": "أتناول الإفطار في المنزل.",
+          "context": "مائدة المنزل",
+          "icon": "🏠",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "The family sits at the table.",
+          "ar": "تجلس الأسرة إلى المائدة."
+        },
+        {
+          "id": 2,
+          "en": "They have breakfast together.",
+          "ar": "يتناولون الإفطار معًا."
+        },
+        {
+          "id": 3,
+          "en": "Nour says, 'I have breakfast at home.'",
+          "ar": "تقول نور: أتناول الإفطار في المنزل."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Where do you have breakfast?",
+          "ar": "أين تتناول الإفطار؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "I have breakfast at home.",
+          "ar": "أتناول الإفطار في المنزل."
+        }
+      ],
+      "id": 5
+    },
+    {
+      "key": "i-go-to",
+      "title": "I go to",
+      "meaning": "أذهب إلى",
+      "formula": "I go to + مكان",
+      "explanation": "نستخدم المضارع البسيط لوصف الذهاب المتكرر. نقول go to school أو go to work، لكن go home دون to.",
+      "explanationEn": "Use go to for regular destinations, but say go home without to.",
+      "contrast": "I go to school / I go to work، لكن I go home.",
+      "sourceIds": [
+        19
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I go to school five days a week.",
+          "ar": "أذهب إلى المدرسة خمسة أيام في الأسبوع.",
+          "context": "الطريق إلى المدرسة",
+          "icon": "🏫",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I go to work by bus.",
+          "ar": "أذهب إلى العمل بالحافلة.",
+          "context": "حافلة العمل",
+          "icon": "🚌",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I go to the park after school.",
+          "ar": "أذهب إلى الحديقة بعد المدرسة.",
+          "context": "الحديقة بعد الدوام",
+          "icon": "🌳",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I go to the library on Thursday.",
+          "ar": "أذهب إلى المكتبة يوم الخميس.",
+          "context": "زيارة المكتبة",
+          "icon": "📖",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Maya puts on her backpack.",
+          "ar": "ترتدي مايا حقيبتها."
+        },
+        {
+          "id": 2,
+          "en": "She goes to school with her friend.",
+          "ar": "تذهب إلى المدرسة مع صديقتها."
+        },
+        {
+          "id": 3,
+          "en": "She says, 'I go to school every weekday.'",
+          "ar": "تقول: أذهب إلى المدرسة كل يوم دراسي."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "How do you go to school?",
+          "ar": "كيف تذهب إلى المدرسة؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "I go to school by bus.",
+          "ar": "أذهب إلى المدرسة بالحافلة."
+        }
+      ],
+      "id": 6
+    },
+    {
+      "key": "i-usually",
+      "title": "I usually",
+      "meaning": "عادةً",
+      "formula": "I usually + الفعل الأساسي",
+      "explanation": "Usually تعني حدوث الفعل في معظم الأوقات، وليس في كل مرة. تأتي قبل الفعل الأساسي، ولكن بعد am/is/are.",
+      "explanationEn": "Usually describes something that happens most of the time, but not always.",
+      "contrast": "Always = دائمًا، Usually = عادةً، Sometimes = أحيانًا.",
+      "sourceIds": [
+        121
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I usually wake up at six.",
+          "ar": "عادةً أستيقظ الساعة السادسة.",
+          "context": "نظام الاستيقاظ",
+          "icon": "⏰",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I usually walk to school.",
+          "ar": "عادةً أمشي إلى المدرسة.",
+          "context": "المشي إلى المدرسة",
+          "icon": "🚶",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I usually eat rice for lunch.",
+          "ar": "عادةً أتناول الأرز في الغداء.",
+          "context": "الغداء المعتاد",
+          "icon": "🍚",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I usually read before bed.",
+          "ar": "عادةً أقرأ قبل النوم.",
+          "context": "قراءة مسائية",
+          "icon": "📘",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Omar has a simple routine.",
+          "ar": "لدى عمر روتين بسيط."
+        },
+        {
+          "id": 2,
+          "en": "He usually walks to school.",
+          "ar": "عادةً يذهب إلى المدرسة مشيًا."
+        },
+        {
+          "id": 3,
+          "en": "On rainy days, he takes the bus.",
+          "ar": "في الأيام الممطرة يستقل الحافلة."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Do you usually walk to school?",
+          "ar": "هل تذهب إلى المدرسة مشيًا عادةً؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Yes, I usually walk.",
+          "ar": "نعم، عادةً أمشي."
+        }
+      ],
+      "id": 7
+    },
+    {
+      "key": "i-always",
+      "title": "I always",
+      "meaning": "دائمًا",
+      "formula": "I always + فعل أساسي",
+      "explanation": "Always تشير إلى عادة ثابتة في كل مرة تقريبًا. توضع قبل الفعل الرئيسي، وبعد be في مثل I am always ready.",
+      "explanationEn": "Always means every time. Put it before most main verbs.",
+      "contrast": "Always أقوى من Usually: دائمًا مقابل عادةً.",
+      "sourceIds": [
+        125
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I always wash my hands before eating.",
+          "ar": "أغسل يدي دائمًا قبل الأكل.",
+          "context": "غسل اليدين",
+          "icon": "🧼",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I always brush my teeth at night.",
+          "ar": "أنظف أسناني دائمًا ليلًا.",
+          "context": "العناية بالأسنان",
+          "icon": "🪥",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I always carry my keys.",
+          "ar": "أحمل مفاتيحي دائمًا.",
+          "context": "المفاتيح قبل الخروج",
+          "icon": "🔑",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I always say good morning.",
+          "ar": "أقول صباح الخير دائمًا.",
+          "context": "تحية الصباح",
+          "icon": "👋",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Lina always checks her bag.",
+          "ar": "تفحص لينا حقيبتها دائمًا."
+        },
+        {
+          "id": 2,
+          "en": "She always carries her notebook.",
+          "ar": "تحمل دفترها دائمًا."
+        },
+        {
+          "id": 3,
+          "en": "Then she leaves for school.",
+          "ar": "ثم تغادر إلى المدرسة."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Do you always bring your notebook?",
+          "ar": "هل تحضر دفترك دائمًا؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Yes, I always bring it.",
+          "ar": "نعم، أحضره دائمًا."
+        }
+      ],
+      "id": 8
+    },
+    {
+      "key": "i-often",
+      "title": "I often",
+      "meaning": "غالبًا / كثيرًا",
+      "formula": "I often + فعل أساسي",
+      "explanation": "Often تعني أن الفعل يتكرر كثيرًا، ولكن ليس بالضرورة معظم الأيام. وهي عادةً أقل قوة من usually.",
+      "explanationEn": "Often means many times, though not every time.",
+      "contrast": "Usually = في معظم المرات؛ Often = في مرات كثيرة؛ Sometimes = أحيانًا.",
+      "sourceIds": [
+        84
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I often visit my grandparents.",
+          "ar": "أزور جدي وجدتي كثيرًا.",
+          "context": "زيارة الأجداد",
+          "icon": "👵",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I often play football after school.",
+          "ar": "ألعب كرة القدم كثيرًا بعد المدرسة.",
+          "context": "الملعب",
+          "icon": "⚽",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I often go to the library.",
+          "ar": "أذهب إلى المكتبة كثيرًا.",
+          "context": "زيارة متكررة",
+          "icon": "📚",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I often help my mother.",
+          "ar": "أساعد أمي كثيرًا.",
+          "context": "المساعدة في المنزل",
+          "icon": "🤝",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Nour likes spending time outside.",
+          "ar": "تحب نور قضاء الوقت خارج المنزل."
+        },
+        {
+          "id": 2,
+          "en": "She often plays with her friends.",
+          "ar": "غالبًا ما تلعب مع أصدقائها."
+        },
+        {
+          "id": 3,
+          "en": "After playing, she helps at home.",
+          "ar": "بعد اللعب تساعد في المنزل."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Do you often visit the library?",
+          "ar": "هل تزور المكتبة كثيرًا؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Yes, I often visit it on Thursdays.",
+          "ar": "نعم، أزورها كثيرًا يوم الخميس."
+        }
+      ],
+      "id": 9
+    },
+    {
+      "key": "i-sometimes",
+      "title": "I sometimes",
+      "meaning": "أحيانًا",
+      "formula": "I sometimes + فعل أساسي",
+      "explanation": "Sometimes لشيء يقع من حين إلى آخر. يمكن وضعها قبل الفعل أو في أول الجملة، مع مراعاة الفاصلة.",
+      "explanationEn": "Sometimes describes an action that happens now and then.",
+      "contrast": "Often = كثيرًا؛ Sometimes = أحيانًا؛ Never = أبدًا.",
+      "sourceIds": [
+        183
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I sometimes watch TV after dinner.",
+          "ar": "أشاهد التلفاز أحيانًا بعد العشاء.",
+          "context": "التلفاز مساءً",
+          "icon": "📺",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I sometimes walk to work.",
+          "ar": "أذهب إلى العمل مشيًا أحيانًا.",
+          "context": "الذهاب للعمل",
+          "icon": "🚶",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I sometimes eat fruit for breakfast.",
+          "ar": "أتناول الفاكهة أحيانًا في الإفطار.",
+          "context": "فاكهة الصباح",
+          "icon": "🍌",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I sometimes study with my friends.",
+          "ar": "أدرس أحيانًا مع أصدقائي.",
+          "context": "جلسة دراسة",
+          "icon": "👥",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Ali usually studies alone.",
+          "ar": "عادةً يدرس علي وحده."
+        },
+        {
+          "id": 2,
+          "en": "Sometimes, his friends join him.",
+          "ar": "أحيانًا ينضم إليه أصدقاؤه."
+        },
+        {
+          "id": 3,
+          "en": "They learn new words together.",
+          "ar": "يتعلمون كلمات جديدة معًا."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Do you always study alone?",
+          "ar": "هل تدرس وحدك دائمًا؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "No, I sometimes study with friends.",
+          "ar": "لا، أدرس أحيانًا مع أصدقائي."
+        }
+      ],
+      "id": 10
+    },
+    {
+      "key": "i-never",
+      "title": "I never",
+      "meaning": "لا أفعل أبدًا",
+      "formula": "I never + فعل مثبت (بدون don't)",
+      "explanation": "Never تحمل النفي بنفسها، لذلك لا نضيف don't معها في الإنجليزية القياسية. نقول I never skip breakfast.",
+      "explanationEn": "Never already makes the sentence negative. Do not add don't before never.",
+      "contrast": "I never eat late صحيحة؛ I don't never eat late غير صحيحة في الإنجليزية القياسية.",
+      "sourceIds": [
+        120
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I never skip breakfast.",
+          "ar": "لا أفوت الإفطار أبدًا.",
+          "context": "الحرص على الإفطار",
+          "icon": "🥪",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I never forget my school bag.",
+          "ar": "لا أنسى حقيبتي المدرسية أبدًا.",
+          "context": "تفقد الحقيبة",
+          "icon": "🎒",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I never drink coffee at night.",
+          "ar": "لا أشرب القهوة أبدًا ليلًا.",
+          "context": "اختيار المشروب",
+          "icon": "☕",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I never go to bed very late.",
+          "ar": "لا أذهب إلى الفراش متأخرًا جدًا أبدًا.",
+          "context": "موعد النوم",
+          "icon": "🕘",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Sara plans her school day.",
+          "ar": "تخطط سارة ليومها الدراسي."
+        },
+        {
+          "id": 2,
+          "en": "She never forgets her lunch box.",
+          "ar": "لا تنسى علبة طعامها أبدًا."
+        },
+        {
+          "id": 3,
+          "en": "She checks her bag before leaving.",
+          "ar": "تفحص حقيبتها قبل المغادرة."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Do you ever skip breakfast?",
+          "ar": "هل تفوت الإفطار في أي وقت؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "No, I never skip breakfast.",
+          "ar": "لا، لا أفوت الإفطار أبدًا."
+        }
+      ],
+      "id": 11
+    },
+    {
+      "key": "i-eat",
+      "title": "I eat",
+      "meaning": "آكل / أتناول",
+      "formula": "I eat + طعام + at / for + وجبة",
+      "explanation": "Eat يتحدث عن تناول الطعام، ويمكن تحديد ما نأكله أو وقت الوجبة. لا نستخدم eat مع المشروبات بل drink.",
+      "explanationEn": "Use eat with food, and drink with water, milk, or other beverages.",
+      "contrast": "I eat apples، لكن I drink water.",
+      "sourceIds": [
+        19
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I eat lunch at one.",
+          "ar": "أتناول الغداء الساعة الواحدة.",
+          "context": "وقت الغداء",
+          "icon": "🍽️",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I eat an apple after school.",
+          "ar": "آكل تفاحة بعد المدرسة.",
+          "context": "وجبة خفيفة",
+          "icon": "🍎",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I eat vegetables every day.",
+          "ar": "آكل الخضروات كل يوم.",
+          "context": "طبق الخضروات",
+          "icon": "🥕",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I eat dinner with my family.",
+          "ar": "أتناول العشاء مع عائلتي.",
+          "context": "مائدة العشاء",
+          "icon": "🥗",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Omar comes home after school.",
+          "ar": "يعود عمر إلى المنزل بعد المدرسة."
+        },
+        {
+          "id": 2,
+          "en": "He eats lunch with his family.",
+          "ar": "يتناول الغداء مع عائلته."
+        },
+        {
+          "id": 3,
+          "en": "Then he rests for a short time.",
+          "ar": "ثم يستريح قليلًا."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "What do you eat for lunch?",
+          "ar": "ماذا تأكل في الغداء؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "I eat rice and vegetables.",
+          "ar": "آكل الأرز والخضروات."
+        }
+      ],
+      "id": 12
+    },
+    {
+      "key": "before-i",
+      "title": "Before I",
+      "meaning": "قبل أن أفعل",
+      "formula": "Before I + فعل مضارع، جملة رئيسية",
+      "explanation": "تربط Before I بين حدثين، وتحدد ما يحدث أولًا. يمكن تقديم before أو وضعها بعد الجملة الرئيسية.",
+      "explanationEn": "Before I links two actions and tells what happens first.",
+      "contrast": "Before I sleep, I read = القراءة أولًا؛ After I sleep, I wake up = النوم أولًا.",
+      "sourceIds": [
+        125,
+        282
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "Before I leave, I check my bag.",
+          "ar": "قبل أن أغادر، أفحص حقيبتي.",
+          "context": "التأكد من الحقيبة",
+          "icon": "🎒",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "Before I eat, I wash my hands.",
+          "ar": "قبل أن آكل، أغسل يدي.",
+          "context": "قبل الوجبة",
+          "icon": "🧼",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "Before I sleep, I read a book.",
+          "ar": "قبل أن أنام، أقرأ كتابًا.",
+          "context": "كتاب قبل النوم",
+          "icon": "📖",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "Before I study, I clean my desk.",
+          "ar": "قبل أن أدرس، أنظف مكتبي.",
+          "context": "ترتيب المكتب",
+          "icon": "🧹",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Maya gets ready for school.",
+          "ar": "تستعد مايا للمدرسة."
+        },
+        {
+          "id": 2,
+          "en": "Before she leaves, she checks her bag.",
+          "ar": "قبل أن تغادر، تفحص حقيبتها."
+        },
+        {
+          "id": 3,
+          "en": "Then she walks to the bus stop.",
+          "ar": "ثم تمشي إلى موقف الحافلة."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "What do you do before you eat?",
+          "ar": "ماذا تفعل قبل أن تأكل؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Before I eat, I wash my hands.",
+          "ar": "قبل أن آكل، أغسل يدي."
+        }
+      ],
+      "id": 13
+    },
+    {
+      "key": "after-i",
+      "title": "After I",
+      "meaning": "بعد أن أفعل",
+      "formula": "After I + فعل مضارع، جملة رئيسية",
+      "explanation": "After I ترتب حدثًا يقع بعد حدث آخر. يمكن استخدام After + verb-ing حين لا نذكر الفاعل من جديد.",
+      "explanationEn": "After I introduces an action that happens before the main action.",
+      "contrast": "Before I eat, I wash = أغسل أولًا؛ After I eat, I wash = آكل أولًا.",
+      "sourceIds": [
+        110,
+        125
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "After I wake up, I drink water.",
+          "ar": "بعد أن أستيقظ، أشرب الماء.",
+          "context": "كوب بعد الاستيقاظ",
+          "icon": "💧",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "After I study, I take a break.",
+          "ar": "بعد أن أدرس، آخذ استراحة.",
+          "context": "الاستراحة بعد الدراسة",
+          "icon": "☕",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "After I eat lunch, I rest.",
+          "ar": "بعد أن أتناول الغداء، أستريح.",
+          "context": "الاستراحة بعد الغداء",
+          "icon": "🛋️",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "After I brush my teeth, I go to bed.",
+          "ar": "بعد أن أنظف أسناني، أذهب إلى الفراش.",
+          "context": "الاستعداد للنوم",
+          "icon": "🌙",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Ali finishes his homework.",
+          "ar": "ينهي علي واجباته."
+        },
+        {
+          "id": 2,
+          "en": "After he studies, he takes a short break.",
+          "ar": "بعد أن يدرس، يأخذ استراحة قصيرة."
+        },
+        {
+          "id": 3,
+          "en": "Then he plays with his brother.",
+          "ar": "ثم يلعب مع أخيه."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "What do you do after school?",
+          "ar": "ماذا تفعل بعد المدرسة؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "After I get home, I eat lunch.",
+          "ar": "بعد أن أصل إلى المنزل، أتناول الغداء."
+        }
+      ],
+      "id": 14
+    },
+    {
+      "key": "every-day",
+      "title": "Every day",
+      "meaning": "كل يوم",
+      "formula": "I + فعل بالمضارع البسيط + every day",
+      "explanation": "Every day كلمتان تعنيان كل يوم وتصفان التكرار. أما Everyday كلمة واحدة فهي صفة قبل الاسم مثل everyday routine.",
+      "explanationEn": "Every day means each day. Everyday is an adjective, as in everyday routine.",
+      "contrast": "I read every day = كل يوم؛ My everyday routine = روتيني اليومي.",
+      "sourceIds": [
+        19
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I practice English every day.",
+          "ar": "أمارس الإنجليزية كل يوم.",
+          "context": "المذاكرة اليومية",
+          "icon": "🗣️",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I drink water every day.",
+          "ar": "أشرب الماء كل يوم.",
+          "context": "عادة شرب الماء",
+          "icon": "💧",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I walk for twenty minutes every day.",
+          "ar": "أمشي عشرين دقيقة كل يوم.",
+          "context": "المشي اليومي",
+          "icon": "🚶",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I write three sentences every day.",
+          "ar": "أكتب ثلاث جمل كل يوم.",
+          "context": "دفتر التعلم",
+          "icon": "✏️",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Nour wants to improve her English.",
+          "ar": "تريد نور تحسين لغتها الإنجليزية."
+        },
+        {
+          "id": 2,
+          "en": "She learns a few words every day.",
+          "ar": "تتعلم كلمات قليلة كل يوم."
+        },
+        {
+          "id": 3,
+          "en": "After a week, she sees progress.",
+          "ar": "بعد أسبوع تلاحظ تقدمًا."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "How often do you practice English?",
+          "ar": "كم مرة تمارس الإنجليزية؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "I practice English every day.",
+          "ar": "أمارس الإنجليزية كل يوم."
+        }
+      ],
+      "id": 15
+    },
+    {
+      "key": "at-night",
+      "title": "At night",
+      "meaning": "ليلًا / في الليل",
+      "formula": "I + فعل + at night",
+      "explanation": "At night لتحديد فترة الليل؛ نقول in the morning وفي المقابل at night. لا تستخدم in the night لوصف العادة اليومية المعتادة.",
+      "explanationEn": "Use at night for regular nighttime activities.",
+      "contrast": "In the morning، In the afternoon، In the evening، لكن At night.",
+      "sourceIds": [
+        125
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "At night, I read a short story.",
+          "ar": "ليلًا أقرأ قصة قصيرة.",
+          "context": "قراءة مسائية",
+          "icon": "📗",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I brush my teeth at night.",
+          "ar": "أنظف أسناني ليلًا.",
+          "context": "تنظيف الأسنان مساءً",
+          "icon": "🪥",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "At night, the street is quiet.",
+          "ar": "يكون الشارع هادئًا ليلًا.",
+          "context": "الحي الهادئ",
+          "icon": "🌃",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I turn off my phone at night.",
+          "ar": "أغلق هاتفي ليلًا.",
+          "context": "وضع الهاتف جانبًا",
+          "icon": "📱",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "The day is almost over.",
+          "ar": "أوشك اليوم على الانتهاء."
+        },
+        {
+          "id": 2,
+          "en": "At night, Omar reads a short story.",
+          "ar": "ليلًا يقرأ عمر قصة قصيرة."
+        },
+        {
+          "id": 3,
+          "en": "Then he turns off the light.",
+          "ar": "ثم يطفئ الضوء."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "What do you do at night?",
+          "ar": "ماذا تفعل ليلًا؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "At night, I read and rest.",
+          "ar": "ليلًا أقرأ وأستريح."
+        }
+      ],
+      "id": 16
+    },
+    {
+      "key": "i-go-to-bed",
+      "title": "I go to bed",
+      "meaning": "أذهب إلى الفراش للنوم",
+      "formula": "I go to bed + at + وقت",
+      "explanation": "Go to bed تعني الذهاب للفراش استعدادًا للنوم، وهي تختلف عن fall asleep التي تعني الدخول الفعلي في النوم.",
+      "explanationEn": "Go to bed means prepare to sleep; fall asleep means begin sleeping.",
+      "contrast": "I go to bed at ten؛ I fall asleep at ten fifteen.",
+      "sourceIds": [
+        125
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I go to bed at nine.",
+          "ar": "أذهب إلى الفراش الساعة التاسعة.",
+          "context": "وقت النوم",
+          "icon": "🛏️",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I go to bed after reading.",
+          "ar": "أذهب للفراش بعد القراءة.",
+          "context": "كتاب قبل النوم",
+          "icon": "📘",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "I go to bed early on school nights.",
+          "ar": "أذهب للفراش مبكرًا في ليالي الدراسة.",
+          "context": "ليلة دراسية",
+          "icon": "🌙",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I go to bed when I feel sleepy.",
+          "ar": "أذهب للفراش عندما أشعر بالنعاس.",
+          "context": "الاستعداد للنوم",
+          "icon": "😴",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Sara finishes her evening routine.",
+          "ar": "تنهي سارة روتينها المسائي."
+        },
+        {
+          "id": 2,
+          "en": "She says good night to her family.",
+          "ar": "تقول لعائلتها تصبحون على خير."
+        },
+        {
+          "id": 3,
+          "en": "She goes to bed at nine.",
+          "ar": "تذهب للفراش الساعة التاسعة."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "What time do you go to bed?",
+          "ar": "في أي ساعة تذهب للفراش؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "I go to bed at nine.",
+          "ar": "أذهب إلى الفراش الساعة التاسعة."
+        }
+      ],
+      "id": 17
+    },
+    {
+      "key": "on-weekends",
+      "title": "On weekends",
+      "meaning": "في عطلات نهاية الأسبوع",
+      "formula": "On weekends + جملة / I + فعل + on weekends",
+      "explanation": "On weekends شائعة في الإنجليزية الأمريكية؛ at weekends شائعة في البريطانية. كلاهما يصف العادة في أيام العطلة.",
+      "explanationEn": "On weekends describes regular weekend habits in American English.",
+      "contrast": "On weekends (أمريكي)، At weekends (بريطاني)، On Saturday (يوم محدد).",
+      "sourceIds": [
+        19,
+        84
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "On weekends, I visit my grandparents.",
+          "ar": "في عطلة نهاية الأسبوع أزور جدي وجدتي.",
+          "context": "زيارة عائلية",
+          "icon": "👴",
+          "photo": null
+        },
+        {
+          "id": 2,
+          "en": "I play football on weekends.",
+          "ar": "ألعب كرة القدم في عطلة نهاية الأسبوع.",
+          "context": "كرة القدم في العطلة",
+          "icon": "⚽",
+          "photo": null
+        },
+        {
+          "id": 3,
+          "en": "On weekends, I wake up later.",
+          "ar": "أستيقظ متأخرًا أكثر في عطلة نهاية الأسبوع.",
+          "context": "صباح العطلة",
+          "icon": "🌤️",
+          "photo": null
+        },
+        {
+          "id": 4,
+          "en": "I spend time with my family on weekends.",
+          "ar": "أقضي وقتًا مع أسرتي في عطلات نهاية الأسبوع.",
+          "context": "جلسة عائلية",
+          "icon": "👨‍👩‍👧",
+          "photo": null
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "The school week is over.",
+          "ar": "انتهى الأسبوع الدراسي."
+        },
+        {
+          "id": 2,
+          "en": "On weekends, Maya visits her grandparents.",
+          "ar": "في عطلة نهاية الأسبوع تزور مايا جديها."
+        },
+        {
+          "id": 3,
+          "en": "She feels happy with her family.",
+          "ar": "تشعر بالسعادة مع عائلتها."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "What do you do on weekends?",
+          "ar": "ماذا تفعل في عطلة نهاية الأسبوع؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "I visit my grandparents on weekends.",
+          "ar": "أزور جدي وجدتي في عطلات نهاية الأسبوع."
+        }
+      ],
+      "id": 18
+    }
+  ],
+  "chapters": [
+    {
+      "key": "my-morning",
+      "title": "My Morning",
+      "titleAr": "صباحي",
+      "icon": "🌅",
+      "lines": [
+        {
+          "id": 1,
+          "en": "I usually wake up at six.",
+          "ar": "عادةً أستيقظ الساعة السادسة."
+        },
+        {
+          "id": 2,
+          "en": "I get up and open the window.",
+          "ar": "أنهض وأفتح النافذة."
+        },
+        {
+          "id": 3,
+          "en": "In the morning, I drink water.",
+          "ar": "في الصباح أشرب الماء."
+        },
+        {
+          "id": 4,
+          "en": "I always brush my teeth.",
+          "ar": "أنظف أسناني دائمًا."
+        },
+        {
+          "id": 5,
+          "en": "I have breakfast with my family.",
+          "ar": "أتناول الإفطار مع عائلتي."
+        },
+        {
+          "id": 6,
+          "en": "Before I leave, I check my bag.",
+          "ar": "قبل أن أغادر، أفحص حقيبتي."
+        }
+      ],
+      "id": 1
+    },
+    {
+      "key": "my-school-day",
+      "title": "My School Day",
+      "titleAr": "يومي الدراسي",
+      "icon": "🏫",
+      "lines": [
+        {
+          "id": 1,
+          "en": "I go to school five days a week.",
+          "ar": "أذهب إلى المدرسة خمسة أيام في الأسبوع."
+        },
+        {
+          "id": 2,
+          "en": "I usually walk to school.",
+          "ar": "عادةً أمشي إلى المدرسة."
+        },
+        {
+          "id": 3,
+          "en": "I often study with my friends.",
+          "ar": "أدرس كثيرًا مع أصدقائي."
+        },
+        {
+          "id": 4,
+          "en": "I sometimes eat fruit for lunch.",
+          "ar": "أتناول الفاكهة أحيانًا في الغداء."
+        },
+        {
+          "id": 5,
+          "en": "After I get home, I eat lunch.",
+          "ar": "بعد أن أصل إلى المنزل، أتناول الغداء."
+        },
+        {
+          "id": 6,
+          "en": "I practice English every day.",
+          "ar": "أمارس الإنجليزية كل يوم."
+        }
+      ],
+      "id": 2
+    },
+    {
+      "key": "my-weekend",
+      "title": "My Weekend",
+      "titleAr": "عطلة نهاية الأسبوع",
+      "icon": "🌳",
+      "lines": [
+        {
+          "id": 1,
+          "en": "On weekends, I wake up later.",
+          "ar": "في عطلات نهاية الأسبوع أستيقظ متأخرًا أكثر."
+        },
+        {
+          "id": 2,
+          "en": "I have breakfast at home.",
+          "ar": "أتناول الإفطار في المنزل."
+        },
+        {
+          "id": 3,
+          "en": "I often visit my grandparents.",
+          "ar": "أزور جدي وجدتي كثيرًا."
+        },
+        {
+          "id": 4,
+          "en": "Sometimes, I play football with friends.",
+          "ar": "أحيانًا ألعب كرة القدم مع أصدقائي."
+        },
+        {
+          "id": 5,
+          "en": "At night, I read a short story.",
+          "ar": "ليلًا أقرأ قصة قصيرة."
+        },
+        {
+          "id": 6,
+          "en": "I go to bed early.",
+          "ar": "أذهب للفراش مبكرًا."
+        }
+      ],
+      "id": 3
+    }
+  ]
+}

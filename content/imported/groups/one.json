@@ -1,0 +1,1757 @@
+{
+  "schema": 1,
+  "group": "self-and-things",
+  "title": "المجموعة الأولى: أساس التعبير عن الذات والأشياء",
+  "status": "18 authored learning journeys; audio and pictures are independently verified before presentation",
+  "requirements": {
+    "patternCount": 18,
+    "scenesPerPattern": 4,
+    "storyLinesPerPattern": 3,
+    "dialogueTurnsPerPattern": 2,
+    "skills": [
+      "التعريف بالنفس",
+      "الإشارة والمفرد والجمع",
+      "الملكية",
+      "الرغبة والتفضيل",
+      "السؤال والإجابة",
+      "الوجود في المكان"
+    ]
+  },
+  "items": [
+    {
+      "id": 1,
+      "key": "this-is",
+      "title": "This is",
+      "meaning": "هذا / هذه",
+      "formula": "This is + a / my / the + اسم مفرد",
+      "explanation": "نستخدم This is لعرض شخص أو شيء قريب منا. بعد This يأتي is مع المفرد، وليس are.",
+      "explanationEn": "This is introduces one thing or person near you. Use is for singular nouns.",
+      "contrast": "This is للقريب المفرد، That is للبعيد؛ These are للجمع القريب.",
+      "sourceIds": [
+        1
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "This is my house.",
+          "ar": "هذا منزلي.",
+          "context": "أمام المنزل",
+          "icon": "🏠",
+          "photo": [
+            "this",
+            0
+          ],
+          "atlas": [
+            "atlas-01",
+            0
+          ]
+        },
+        {
+          "id": 2,
+          "en": "This is my book.",
+          "ar": "هذا كتابي.",
+          "context": "كتاب بين يديك",
+          "icon": "📘",
+          "photo": [
+            "this",
+            1
+          ],
+          "atlas": [
+            "atlas-01",
+            1
+          ]
+        },
+        {
+          "id": 3,
+          "en": "This is my friend.",
+          "ar": "هذا صديقي.",
+          "context": "تقديم صديق",
+          "icon": "🧑",
+          "photo": [
+            "this",
+            2
+          ],
+          "atlas": [
+            "atlas-01",
+            2
+          ]
+        },
+        {
+          "id": 4,
+          "en": "This is my laptop.",
+          "ar": "هذا حاسوبي المحمول.",
+          "context": "الإشارة إلى الحاسوب",
+          "icon": "💻",
+          "photo": null,
+          "atlas": [
+            "atlas-01",
+            3
+          ]
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Lina is standing near her house.",
+          "ar": "لينا تقف قرب منزلها."
+        },
+        {
+          "id": 2,
+          "en": "She smiles and says, 'This is my house.'",
+          "ar": "تبتسم وتقول: هذا منزلي."
+        },
+        {
+          "id": 3,
+          "en": "Her friend says, 'It is beautiful.'",
+          "ar": "يقول صديقها: إنه جميل."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "What is this?",
+          "ar": "ما هذا؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "This is my book.",
+          "ar": "هذا كتابي."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "key": "that-is",
+      "title": "That is",
+      "meaning": "ذلك / تلك",
+      "formula": "That is + a / my + اسم مفرد",
+      "explanation": "That is للإشارة إلى شيء واحد بعيد نسبيًا عن المتحدث. لا نخلط بينها وبين These are الخاصة بالجمع.",
+      "explanationEn": "That is points to one thing farther from the speaker.",
+      "contrast": "This is = قريب؛ That is = بعيد.",
+      "sourceIds": [
+        1
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "That is my house.",
+          "ar": "ذلك منزلي.",
+          "context": "منزل بعيد في الشارع",
+          "icon": "🏠",
+          "photo": [
+            "this",
+            4
+          ],
+          "atlas": [
+            "atlas-01",
+            4
+          ]
+        },
+        {
+          "id": 2,
+          "en": "That is our school.",
+          "ar": "تلك مدرستنا.",
+          "context": "مدرسة على الجانب الآخر",
+          "icon": "🏫",
+          "photo": null,
+          "atlas": [
+            "atlas-01",
+            5
+          ]
+        },
+        {
+          "id": 3,
+          "en": "That is my car.",
+          "ar": "تلك سيارتي.",
+          "context": "سيارة في موقف بعيد",
+          "icon": "🚗",
+          "photo": null,
+          "atlas": [
+            "atlas-01",
+            6
+          ]
+        },
+        {
+          "id": 4,
+          "en": "That is a big tree.",
+          "ar": "تلك شجرة كبيرة.",
+          "context": "شجرة في نهاية الحديقة",
+          "icon": "🌳",
+          "photo": null,
+          "atlas": [
+            "atlas-01",
+            7
+          ]
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Adam sees a house across the road.",
+          "ar": "آدم يرى منزلًا على الجهة المقابلة."
+        },
+        {
+          "id": 2,
+          "en": "He points and says, 'That is my house.'",
+          "ar": "يشير ويقول: ذلك منزلي."
+        },
+        {
+          "id": 3,
+          "en": "His friend asks, 'Is it far?'",
+          "ar": "يسأل صديقه: هل هو بعيد؟"
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Is that your house?",
+          "ar": "هل ذلك منزلك؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Yes, that is my house.",
+          "ar": "نعم، ذلك منزلي."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "key": "i-am",
+      "title": "I am / I'm",
+      "meaning": "أنا",
+      "formula": "I am + صفة / اسم / مكان",
+      "explanation": "I am للتعريف بالنفس أو التعبير عن الحالة. I'm هو الاختصار الطبيعي في الحديث. لا نقول I is.",
+      "explanationEn": "I am introduces who you are or how you feel. I'm is the natural short form.",
+      "contrast": "I am = الحاضر؛ I was = الماضي. I am لا تعني I have.",
+      "sourceIds": [
+        15
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I'm a student.",
+          "ar": "أنا طالب.",
+          "context": "طالب يحمل كتبه",
+          "icon": "🎒",
+          "photo": null,
+          "atlas": [
+            "atlas-01",
+            8
+          ]
+        },
+        {
+          "id": 2,
+          "en": "I am happy.",
+          "ar": "أنا سعيد.",
+          "context": "لحظة فرح",
+          "icon": "😊",
+          "photo": null,
+          "atlas": [
+            "atlas-01",
+            9
+          ]
+        },
+        {
+          "id": 3,
+          "en": "I'm at home.",
+          "ar": "أنا في المنزل.",
+          "context": "داخل غرفة المعيشة",
+          "icon": "🏡",
+          "photo": null,
+          "atlas": [
+            "atlas-01",
+            10
+          ]
+        },
+        {
+          "id": 4,
+          "en": "I am ready.",
+          "ar": "أنا مستعد.",
+          "context": "الاستعداد للانطلاق",
+          "icon": "✅",
+          "photo": null,
+          "atlas": [
+            "atlas-01",
+            11
+          ]
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Yousef starts at a new school.",
+          "ar": "يوسف يبدأ في مدرسة جديدة."
+        },
+        {
+          "id": 2,
+          "en": "He says, 'I'm a student.'",
+          "ar": "يقول: أنا طالب."
+        },
+        {
+          "id": 3,
+          "en": "Then he smiles and says, 'I am ready.'",
+          "ar": "ثم يبتسم ويقول: أنا مستعد."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Who are you?",
+          "ar": "من أنت؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "I'm a student.",
+          "ar": "أنا طالب."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "key": "it-is",
+      "title": "It is / It's",
+      "meaning": "إنه / إنها",
+      "formula": "It is + صفة / اسم",
+      "explanation": "It is لوصف شيء أو موقف معروف. It's اختصار It is. لا نستخدم It's بمعنى الملكية its.",
+      "explanationEn": "It is describes a thing or a situation. It's is the contracted form of it is.",
+      "contrast": "It's = it is أو it has بحسب السياق؛ its = ملكية بدون فاصلة.",
+      "sourceIds": [
+        730
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "It's a beautiful day.",
+          "ar": "إنه يوم جميل.",
+          "context": "سماء صافية",
+          "icon": "☀️",
+          "photo": null,
+          "atlas": [
+            "atlas-02",
+            0
+          ]
+        },
+        {
+          "id": 2,
+          "en": "It is cold.",
+          "ar": "الجو بارد.",
+          "context": "يوم شتوي",
+          "icon": "❄️",
+          "photo": null,
+          "atlas": [
+            "atlas-02",
+            1
+          ]
+        },
+        {
+          "id": 3,
+          "en": "It's my phone.",
+          "ar": "إنه هاتفي.",
+          "context": "الهاتف على الطاولة",
+          "icon": "📱",
+          "photo": null,
+          "atlas": [
+            "atlas-02",
+            2
+          ]
+        },
+        {
+          "id": 4,
+          "en": "It's just a game.",
+          "ar": "إنها مجرد لعبة.",
+          "context": "لعبة على الطاولة",
+          "icon": "🎲",
+          "photo": null,
+          "atlas": [
+            "atlas-02",
+            3
+          ]
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Maya looks outside the window.",
+          "ar": "مايا تنظر من النافذة."
+        },
+        {
+          "id": 2,
+          "en": "She says, 'It's a beautiful day.'",
+          "ar": "تقول: إنه يوم جميل."
+        },
+        {
+          "id": 3,
+          "en": "Her brother says, 'It is warm, too.'",
+          "ar": "يقول أخوها: والجو دافئ أيضًا."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "How is the weather?",
+          "ar": "كيف الطقس؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "It's warm and sunny.",
+          "ar": "الجو دافئ ومشمس."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "key": "i-have",
+      "title": "I have",
+      "meaning": "لدي / أملك",
+      "formula": "I have + اسم",
+      "explanation": "I have للتعبير عن امتلاك شيء أو وجوده لدينا. بعد I تأتي have وليس has.",
+      "explanationEn": "I have means that something belongs to you or is available to you.",
+      "contrast": "I have = أمتلك؛ I have to = يجب عليّ؛ I've got = صيغة أخرى للملكية.",
+      "sourceIds": [
+        2
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I have a good job.",
+          "ar": "لدي وظيفة جيدة.",
+          "context": "في المكتب",
+          "icon": "💼",
+          "photo": [
+            "have",
+            0
+          ],
+          "atlas": [
+            "atlas-02",
+            4
+          ]
+        },
+        {
+          "id": 2,
+          "en": "I have a laptop.",
+          "ar": "لدي حاسوب محمول.",
+          "context": "الحاسوب على المكتب",
+          "icon": "💻",
+          "photo": [
+            "have",
+            1
+          ],
+          "atlas": [
+            "atlas-02",
+            5
+          ]
+        },
+        {
+          "id": 3,
+          "en": "I have a new idea.",
+          "ar": "لدي فكرة جديدة.",
+          "context": "مناقشة فكرة",
+          "icon": "💡",
+          "photo": [
+            "have",
+            2
+          ],
+          "atlas": [
+            "atlas-02",
+            6
+          ]
+        },
+        {
+          "id": 4,
+          "en": "I have two books.",
+          "ar": "لدي كتابان.",
+          "context": "كتابان في حقيبة",
+          "icon": "📚",
+          "photo": null,
+          "atlas": [
+            "atlas-02",
+            7
+          ]
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Omar comes to the office.",
+          "ar": "عمر يصل إلى المكتب."
+        },
+        {
+          "id": 2,
+          "en": "He says, 'I have a good job.'",
+          "ar": "يقول: لدي وظيفة جيدة."
+        },
+        {
+          "id": 3,
+          "en": "His friend says, 'I have a job, too.'",
+          "ar": "يقول صديقه: لدي وظيفة أيضًا."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Do you have a laptop?",
+          "ar": "هل لديك حاسوب محمول؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Yes, I have a laptop.",
+          "ar": "نعم، لدي حاسوب محمول."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "key": "ive-got",
+      "title": "I've got",
+      "meaning": "لدي / معي",
+      "formula": "I have got + اسم = I've got + اسم",
+      "explanation": "I've got صيغة شائعة للملكية، وخاصة في الإنجليزية البريطانية. تُعامل هنا بمعنى I have، لكنها ليست مثل I've got to التي تعبر عن الضرورة.",
+      "explanationEn": "I've got often means the same as I have when talking about possession.",
+      "contrast": "I've got a pen = لدي قلم؛ I've got to go = يجب أن أذهب.",
+      "sourceIds": [
+        3
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I've got a job!",
+          "ar": "لقد حصلت على وظيفة!",
+          "context": "إعلان خبر العمل",
+          "icon": "💼",
+          "photo": [
+            "got",
+            0
+          ],
+          "atlas": [
+            "atlas-02",
+            8
+          ]
+        },
+        {
+          "id": 2,
+          "en": "I've got a new phone.",
+          "ar": "لدي هاتف جديد.",
+          "context": "عرض هاتف جديد",
+          "icon": "📱",
+          "photo": [
+            "got",
+            1
+          ],
+          "atlas": [
+            "atlas-02",
+            9
+          ]
+        },
+        {
+          "id": 3,
+          "en": "I've got a ticket.",
+          "ar": "لدي تذكرة.",
+          "context": "في محطة سفر",
+          "icon": "🎫",
+          "photo": null,
+          "atlas": [
+            "atlas-02",
+            10
+          ]
+        },
+        {
+          "id": 4,
+          "en": "I've got a book.",
+          "ar": "لدي كتاب.",
+          "context": "إظهار الكتاب",
+          "icon": "📗",
+          "photo": null,
+          "atlas": [
+            "atlas-02",
+            11
+          ]
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Lina has good news today.",
+          "ar": "لدى لينا خبر جيد اليوم."
+        },
+        {
+          "id": 2,
+          "en": "She says, 'I've got a job.'",
+          "ar": "تقول: لقد حصلت على وظيفة."
+        },
+        {
+          "id": 3,
+          "en": "Her brother says, 'That's great!'",
+          "ar": "يقول أخوها: هذا رائع!"
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Have you got a pen?",
+          "ar": "هل معك قلم؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Yes, I've got a pen.",
+          "ar": "نعم، معي قلم."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "key": "i-want",
+      "title": "I want",
+      "meaning": "أريد شيئًا",
+      "formula": "I want + اسم",
+      "explanation": "بعد I want يمكن أن يأتي اسم مباشرة، مثل ماء أو كتاب. عندما نريد القيام بفعل نستخدم I want to.",
+      "explanationEn": "I want followed by a noun expresses a desire for a thing.",
+      "contrast": "I want water = أريد ماء؛ I want to drink = أريد أن أشرب.",
+      "sourceIds": [
+        9
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I want a dog.",
+          "ar": "أريد كلبًا.",
+          "context": "التعرف إلى كلب لطيف",
+          "icon": "🐶",
+          "photo": null,
+          "atlas": [
+            "atlas-03",
+            0
+          ]
+        },
+        {
+          "id": 2,
+          "en": "I want some water.",
+          "ar": "أريد بعض الماء.",
+          "context": "كأس ماء",
+          "icon": "💧",
+          "photo": null,
+          "atlas": [
+            "atlas-03",
+            1
+          ]
+        },
+        {
+          "id": 3,
+          "en": "I want a new book.",
+          "ar": "أريد كتابًا جديدًا.",
+          "context": "في المكتبة",
+          "icon": "📘",
+          "photo": null,
+          "atlas": [
+            "atlas-03",
+            2
+          ]
+        },
+        {
+          "id": 4,
+          "en": "I want an apple.",
+          "ar": "أريد تفاحة.",
+          "context": "عند بائع الفاكهة",
+          "icon": "🍎",
+          "photo": null,
+          "atlas": [
+            "atlas-03",
+            3
+          ]
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Noor visits a small library.",
+          "ar": "تزور نور مكتبة صغيرة."
+        },
+        {
+          "id": 2,
+          "en": "She sees a colorful book.",
+          "ar": "ترى كتابًا ملوّنًا."
+        },
+        {
+          "id": 3,
+          "en": "She says, 'I want this book.'",
+          "ar": "تقول: أريد هذا الكتاب."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "What do you want?",
+          "ar": "ماذا تريد؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "I want some water.",
+          "ar": "أريد بعض الماء."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "key": "i-want-to",
+      "title": "I want to",
+      "meaning": "أريد أن أفعل",
+      "formula": "I want to + الفعل الأساسي",
+      "explanation": "نضع to بعد want عندما نتحدث عن رغبتنا في تنفيذ فعل. بعد to يأتي الفعل في صورته الأساسية، مثل learn أو go.",
+      "explanationEn": "I want to plus a base verb expresses something you wish to do.",
+      "contrast": "I want a book = شيء؛ I want to read = فعل.",
+      "sourceIds": [
+        10
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I want to learn English.",
+          "ar": "أريد أن أتعلم الإنجليزية.",
+          "context": "أمام كتب اللغة",
+          "icon": "📖",
+          "photo": null,
+          "atlas": [
+            "atlas-03",
+            4
+          ]
+        },
+        {
+          "id": 2,
+          "en": "I want to play.",
+          "ar": "أريد أن ألعب.",
+          "context": "وقت اللعب",
+          "icon": "⚽",
+          "photo": null,
+          "atlas": [
+            "atlas-03",
+            5
+          ]
+        },
+        {
+          "id": 3,
+          "en": "I want to go home.",
+          "ar": "أريد الذهاب إلى المنزل.",
+          "context": "بعد انتهاء اليوم",
+          "icon": "🏡",
+          "photo": null,
+          "atlas": [
+            "atlas-03",
+            6
+          ]
+        },
+        {
+          "id": 4,
+          "en": "I want to apologize.",
+          "ar": "أريد أن أعتذر.",
+          "context": "الحديث مع صديق",
+          "icon": "🤝",
+          "photo": null,
+          "atlas": [
+            "atlas-03",
+            7
+          ]
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Omar has a new goal.",
+          "ar": "لدى عمر هدف جديد."
+        },
+        {
+          "id": 2,
+          "en": "He says, 'I want to learn English.'",
+          "ar": "يقول: أريد تعلم الإنجليزية."
+        },
+        {
+          "id": 3,
+          "en": "He practices a little every day.",
+          "ar": "يتدرب قليلًا كل يوم."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "What do you want to do?",
+          "ar": "ماذا تريد أن تفعل؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "I want to learn English.",
+          "ar": "أريد تعلم الإنجليزية."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "key": "id-like",
+      "title": "I'd like",
+      "meaning": "أودّ / أريد بأدب",
+      "formula": "I would like + اسم",
+      "explanation": "I'd like عبارة مهذبة لطلب شيء. تعادل I would like، وتناسب المطاعم والمواقف الاجتماعية. لا نضع to إذا كان التالي اسمًا.",
+      "explanationEn": "I'd like plus a noun makes a polite request.",
+      "contrast": "I'd like tea = أود شايًا؛ I'd like to drink tea = أود شرب الشاي.",
+      "sourceIds": [
+        135
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I'd like some water.",
+          "ar": "أود بعض الماء.",
+          "context": "طلب الماء بأدب",
+          "icon": "🥤",
+          "photo": null,
+          "atlas": [
+            "atlas-03",
+            8
+          ]
+        },
+        {
+          "id": 2,
+          "en": "I'd like a cup of tea.",
+          "ar": "أود كوب شاي.",
+          "context": "جلسة مع ضيف",
+          "icon": "🍵",
+          "photo": null,
+          "atlas": [
+            "atlas-03",
+            9
+          ]
+        },
+        {
+          "id": 3,
+          "en": "I'd like a sandwich.",
+          "ar": "أود شطيرة.",
+          "context": "في مقهى",
+          "icon": "🥪",
+          "photo": null,
+          "atlas": [
+            "atlas-03",
+            10
+          ]
+        },
+        {
+          "id": 4,
+          "en": "I'd like a ticket.",
+          "ar": "أود تذكرة.",
+          "context": "شباك تذاكر",
+          "icon": "🎟️",
+          "photo": null,
+          "atlas": [
+            "atlas-03",
+            11
+          ]
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Maya is at a café.",
+          "ar": "مايا في مقهى."
+        },
+        {
+          "id": 2,
+          "en": "The waiter asks what she wants.",
+          "ar": "يسألها النادل عمّا تريد."
+        },
+        {
+          "id": 3,
+          "en": "She says, 'I'd like some water, please.'",
+          "ar": "تقول: أود بعض الماء من فضلك."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "What would you like?",
+          "ar": "بماذا ترغب؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "I'd like some water, please.",
+          "ar": "أود بعض الماء، من فضلك."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "key": "id-like-to",
+      "title": "I'd like to",
+      "meaning": "أودّ أن أفعل",
+      "formula": "I would like to + الفعل الأساسي",
+      "explanation": "نستخدم I'd like to عندما نعبر عن رغبة مهذبة في القيام بفعل. يأتي بعد to فعل مثل visit أو learn.",
+      "explanationEn": "I'd like to plus a base verb is a polite way to express a wish to do something.",
+      "contrast": "I'd like coffee = شيء؛ I'd like to drink coffee = فعل.",
+      "sourceIds": [
+        11
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I'd like to live in New York.",
+          "ar": "أود العيش في نيويورك.",
+          "context": "حلم بمدينة جديدة",
+          "icon": "🌆",
+          "photo": null,
+          "atlas": [
+            "atlas-04",
+            0
+          ]
+        },
+        {
+          "id": 2,
+          "en": "I'd like to learn English.",
+          "ar": "أود تعلم الإنجليزية.",
+          "context": "القراءة والتعلم",
+          "icon": "📚",
+          "photo": null,
+          "atlas": [
+            "atlas-04",
+            1
+          ]
+        },
+        {
+          "id": 3,
+          "en": "I'd like to visit my friend.",
+          "ar": "أود زيارة صديقي.",
+          "context": "زيارة منزل صديق",
+          "icon": "🏠",
+          "photo": null,
+          "atlas": [
+            "atlas-04",
+            2
+          ]
+        },
+        {
+          "id": 4,
+          "en": "I'd like to ask a question.",
+          "ar": "أود طرح سؤال.",
+          "context": "رفع اليد في الصف",
+          "icon": "🙋",
+          "photo": null,
+          "atlas": [
+            "atlas-04",
+            3
+          ]
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Salma wants to travel one day.",
+          "ar": "تريد سلمى السفر يومًا ما."
+        },
+        {
+          "id": 2,
+          "en": "She says, 'I'd like to visit New York.'",
+          "ar": "تقول: أود زيارة نيويورك."
+        },
+        {
+          "id": 3,
+          "en": "Her friend says, 'I'd like to go, too.'",
+          "ar": "يقول صديقها: أود الذهاب أيضًا."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "What would you like to do?",
+          "ar": "ماذا تود أن تفعل؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "I'd like to ask a question.",
+          "ar": "أود أن أطرح سؤالًا."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "key": "i-like",
+      "title": "I like",
+      "meaning": "أحب / يعجبني",
+      "formula": "I like + اسم / فعل مع ing",
+      "explanation": "نستخدم I like للتفضيلات العامة. يمكن أن يأتي بعدها اسم أو فعل مع ing مثل reading. وهي أهدأ من I love.",
+      "explanationEn": "I like describes things or activities that you enjoy.",
+      "contrast": "I like reading = أحب القراءة؛ I want to read = أرغب بالقراءة الآن.",
+      "sourceIds": [
+        126
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I like English.",
+          "ar": "أحب الإنجليزية.",
+          "context": "الاستمتاع بالدرس",
+          "icon": "🔤",
+          "photo": null,
+          "atlas": [
+            "atlas-04",
+            4
+          ]
+        },
+        {
+          "id": 2,
+          "en": "I like reading.",
+          "ar": "أحب القراءة.",
+          "context": "كتاب في يد القارئ",
+          "icon": "📖",
+          "photo": null,
+          "atlas": [
+            "atlas-04",
+            5
+          ]
+        },
+        {
+          "id": 3,
+          "en": "I like apples.",
+          "ar": "أحب التفاح.",
+          "context": "طبق تفاح",
+          "icon": "🍎",
+          "photo": null,
+          "atlas": [
+            "atlas-04",
+            6
+          ]
+        },
+        {
+          "id": 4,
+          "en": "I like England.",
+          "ar": "تعجبني إنجلترا.",
+          "context": "الحديث عن بلد",
+          "icon": "🌍",
+          "photo": null,
+          "atlas": [
+            "atlas-04",
+            7
+          ]
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Ali enjoys learning new words.",
+          "ar": "يستمتع علي بتعلّم كلمات جديدة."
+        },
+        {
+          "id": 2,
+          "en": "He says, 'I like English.'",
+          "ar": "يقول: أحب الإنجليزية."
+        },
+        {
+          "id": 3,
+          "en": "He also likes reading books.",
+          "ar": "وهو يحب قراءة الكتب أيضًا."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Do you like reading?",
+          "ar": "هل تحب القراءة؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Yes, I like reading.",
+          "ar": "نعم، أحب القراءة."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "key": "i-dont-like",
+      "title": "I don't like",
+      "meaning": "لا أحب",
+      "formula": "I do not like / I don't like + اسم أو ing",
+      "explanation": "للنفي مع I نستخدم don't قبل like. لا نقول I am not like عندما نقصد عدم تفضيل شيء.",
+      "explanationEn": "I don't like expresses a preference against a thing or activity.",
+      "contrast": "I don't like tea = لا أحب الشاي؛ I don't want tea = لا أريد شايًا الآن.",
+      "sourceIds": [
+        126
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "I don't like loud music.",
+          "ar": "لا أحب الموسيقى الصاخبة.",
+          "context": "الضوضاء تزعج الشخص",
+          "icon": "🔊",
+          "photo": null,
+          "atlas": [
+            "atlas-04",
+            8
+          ]
+        },
+        {
+          "id": 2,
+          "en": "I don't like cold weather.",
+          "ar": "لا أحب الطقس البارد.",
+          "context": "برد الشتاء",
+          "icon": "🥶",
+          "photo": null,
+          "atlas": [
+            "atlas-04",
+            9
+          ]
+        },
+        {
+          "id": 3,
+          "en": "I don't like waiting.",
+          "ar": "لا أحب الانتظار.",
+          "context": "الوقوف في طابور",
+          "icon": "⏳",
+          "photo": null,
+          "atlas": [
+            "atlas-04",
+            10
+          ]
+        },
+        {
+          "id": 4,
+          "en": "I don't like this color.",
+          "ar": "لا يعجبني هذا اللون.",
+          "context": "اختيار الألوان",
+          "icon": "🎨",
+          "photo": null,
+          "atlas": [
+            "atlas-04",
+            11
+          ]
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Lina tries a new drink.",
+          "ar": "تجرّب لينا مشروبًا جديدًا."
+        },
+        {
+          "id": 2,
+          "en": "She says, 'I don't like it.'",
+          "ar": "تقول: لا يعجبني."
+        },
+        {
+          "id": 3,
+          "en": "She asks for water instead.",
+          "ar": "وتطلب ماءً بدلًا منه."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Do you like this song?",
+          "ar": "هل تحب هذه الأغنية؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "No, I don't like it.",
+          "ar": "لا، لا أحبها."
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "key": "my-name-is",
+      "title": "My name is",
+      "meaning": "اسمي",
+      "formula": "My name is + اسم علم",
+      "explanation": "نستخدم My name is للتعريف بالاسم، ويمكن اختصار الحديث بقول I'm + اسم. My للملكية وليس I.",
+      "explanationEn": "My name is introduces your personal name.",
+      "contrast": "My name is Ali = اسمي علي؛ I'm Ali = أنا علي.",
+      "sourceIds": [
+        8
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "My name is Ali.",
+          "ar": "اسمي علي.",
+          "context": "تقديم النفس في الصف",
+          "icon": "👋",
+          "photo": null,
+          "atlas": [
+            "atlas-05",
+            0
+          ]
+        },
+        {
+          "id": 2,
+          "en": "My name is Sara.",
+          "ar": "اسمي سارة.",
+          "context": "الترحيب بزميلة",
+          "icon": "🙋",
+          "photo": null,
+          "atlas": [
+            "atlas-05",
+            1
+          ]
+        },
+        {
+          "id": 3,
+          "en": "My name is Omar.",
+          "ar": "اسمي عمر.",
+          "context": "تقديم النفس في اجتماع",
+          "icon": "🧑",
+          "photo": null,
+          "atlas": [
+            "atlas-05",
+            2
+          ]
+        },
+        {
+          "id": 4,
+          "en": "My name is Noor.",
+          "ar": "اسمي نور.",
+          "context": "تقديم النفس في نشاط",
+          "icon": "🌟",
+          "photo": null,
+          "atlas": [
+            "atlas-05",
+            3
+          ]
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Two children meet for the first time.",
+          "ar": "يلتقي طفلان لأول مرة."
+        },
+        {
+          "id": 2,
+          "en": "One says, 'My name is Ali.'",
+          "ar": "يقول أحدهما: اسمي علي."
+        },
+        {
+          "id": 3,
+          "en": "The other says, 'My name is Sara.'",
+          "ar": "يقول الآخر: اسمي سارة."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "What's your name?",
+          "ar": "ما اسمك؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "My name is Noor.",
+          "ar": "اسمي نور."
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "key": "whats-your-name",
+      "title": "What's your name?",
+      "meaning": "ما اسمك؟",
+      "formula": "What is your name? = What's your name?",
+      "explanation": "What's اختصار What is هنا. يأتي بعدها your name للسؤال عن اسم المخاطب، ونجاوب عادة بـ My name is أو I'm.",
+      "explanationEn": "What's your name asks someone to introduce their name.",
+      "contrast": "What's your name? = سؤال؛ My name is ... = جواب.",
+      "sourceIds": [
+        8
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "What's your name?",
+          "ar": "ما اسمك؟",
+          "context": "تعارف شخصين",
+          "icon": "🤝",
+          "photo": null,
+          "atlas": [
+            "atlas-05",
+            4
+          ]
+        },
+        {
+          "id": 2,
+          "en": "What's your first name?",
+          "ar": "ما اسمك الأول؟",
+          "context": "استمارة تعارف",
+          "icon": "🪪",
+          "photo": null,
+          "atlas": [
+            "atlas-05",
+            5
+          ]
+        },
+        {
+          "id": 3,
+          "en": "What's your friend's name?",
+          "ar": "ما اسم صديقك؟",
+          "context": "التعريف بصديق",
+          "icon": "🧑‍🤝‍🧑",
+          "photo": null,
+          "atlas": [
+            "atlas-05",
+            6
+          ]
+        },
+        {
+          "id": 4,
+          "en": "What's your teacher's name?",
+          "ar": "ما اسم معلمك؟",
+          "context": "في الصف",
+          "icon": "🏫",
+          "photo": null,
+          "atlas": [
+            "atlas-05",
+            7
+          ]
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Lina meets a new friend.",
+          "ar": "تلتقي لينا صديقة جديدة."
+        },
+        {
+          "id": 2,
+          "en": "She asks, 'What's your name?'",
+          "ar": "تسأل: ما اسمك؟"
+        },
+        {
+          "id": 3,
+          "en": "The friend answers, 'My name is Maya.'",
+          "ar": "تجيب الصديقة: اسمي مايا."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "What's your name?",
+          "ar": "ما اسمك؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "My name is Ali.",
+          "ar": "اسمي علي."
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "key": "this-is-my",
+      "title": "This is my",
+      "meaning": "هذا لي / هذا خاص بي",
+      "formula": "This is my + اسم مفرد",
+      "explanation": "My صفة ملكية تأتي قبل الاسم مباشرة. نستخدم This is my لتقديم شيء قريب أو أحد أفراد العائلة.",
+      "explanationEn": "This is my points to something or someone near you that belongs to or is connected to you.",
+      "contrast": "This is a book = تعريف؛ This is my book = ملكيتي.",
+      "sourceIds": [
+        1
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "This is my bag.",
+          "ar": "هذه حقيبتي.",
+          "context": "حقيبة قريبة",
+          "icon": "👜",
+          "photo": null,
+          "atlas": [
+            "atlas-05",
+            8
+          ]
+        },
+        {
+          "id": 2,
+          "en": "This is my mother.",
+          "ar": "هذه أمي.",
+          "context": "التعريف بأحد أفراد الأسرة",
+          "icon": "👩",
+          "photo": null,
+          "atlas": [
+            "atlas-05",
+            9
+          ]
+        },
+        {
+          "id": 3,
+          "en": "This is my room.",
+          "ar": "هذه غرفتي.",
+          "context": "عند باب الغرفة",
+          "icon": "🚪",
+          "photo": null,
+          "atlas": [
+            "atlas-05",
+            10
+          ]
+        },
+        {
+          "id": 4,
+          "en": "This is my book.",
+          "ar": "هذا كتابي.",
+          "context": "كتاب على الطاولة",
+          "icon": "📘",
+          "photo": [
+            "this",
+            1
+          ],
+          "atlas": [
+            "atlas-05",
+            11
+          ]
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Omar invites a friend home.",
+          "ar": "يدعو عمر صديقًا إلى المنزل."
+        },
+        {
+          "id": 2,
+          "en": "He says, 'This is my room.'",
+          "ar": "يقول: هذه غرفتي."
+        },
+        {
+          "id": 3,
+          "en": "Then he shows him his new book.",
+          "ar": "ثم يريه كتابه الجديد."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Whose bag is this?",
+          "ar": "لمن هذه الحقيبة؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "This is my bag.",
+          "ar": "هذه حقيبتي."
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "key": "these-are",
+      "title": "These are",
+      "meaning": "هؤلاء / هذه الأشياء",
+      "formula": "These are + اسم جمع",
+      "explanation": "These للجمع القريب ونتبعها بـ are، وليس is. المفرد القريب This is.",
+      "explanationEn": "These are introduces more than one person or thing nearby.",
+      "contrast": "This is my book = كتاب واحد؛ These are my books = عدة كتب.",
+      "sourceIds": [
+        1
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "These are my books.",
+          "ar": "هذه كتبي.",
+          "context": "عدة كتب قريبة",
+          "icon": "📚",
+          "photo": [
+            "this",
+            5
+          ],
+          "atlas": [
+            "atlas-06",
+            0
+          ]
+        },
+        {
+          "id": 2,
+          "en": "These are my shoes.",
+          "ar": "هذا حذائي (زوج الأحذية).",
+          "context": "حذاء على الأرض",
+          "icon": "👟",
+          "photo": null,
+          "atlas": [
+            "atlas-06",
+            1
+          ]
+        },
+        {
+          "id": 3,
+          "en": "These are my friends.",
+          "ar": "هؤلاء أصدقائي.",
+          "context": "مجموعة أصدقاء",
+          "icon": "👫",
+          "photo": null,
+          "atlas": [
+            "atlas-06",
+            2
+          ]
+        },
+        {
+          "id": 4,
+          "en": "These are apples.",
+          "ar": "هذه تفاحات.",
+          "context": "طبق فاكهة",
+          "icon": "🍎",
+          "photo": null,
+          "atlas": [
+            "atlas-06",
+            3
+          ]
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Sara brings several books to class.",
+          "ar": "تحضر سارة عدة كتب إلى الصف."
+        },
+        {
+          "id": 2,
+          "en": "She says, 'These are my books.'",
+          "ar": "تقول: هذه كتبي."
+        },
+        {
+          "id": 3,
+          "en": "Her teacher asks her to read one.",
+          "ar": "تطلب منها المعلمة قراءة أحدها."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Are these your books?",
+          "ar": "هل هذه كتبك؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Yes, these are my books.",
+          "ar": "نعم، هذه كتبي."
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "key": "there-is",
+      "title": "There is",
+      "meaning": "يوجد (مفرد)",
+      "formula": "There is + اسم مفرد أو غير معدود",
+      "explanation": "نستخدم There is عندما نخبر عن وجود شيء واحد أو كمية غير معدودة في مكان. لا تعني هذه الصيغة الإشارة This is.",
+      "explanationEn": "There is says that something exists in a place.",
+      "contrast": "There is a chair = يوجد كرسي؛ This is a chair = هذا كرسي.",
+      "sourceIds": [
+        93
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "There is a book on the table.",
+          "ar": "يوجد كتاب على الطاولة.",
+          "context": "كتاب على طاولة",
+          "icon": "📕",
+          "photo": null,
+          "atlas": [
+            "atlas-06",
+            4
+          ]
+        },
+        {
+          "id": 2,
+          "en": "There is a bank in front of the hotel.",
+          "ar": "يوجد بنك أمام الفندق.",
+          "context": "شارع ومبانٍ",
+          "icon": "🏦",
+          "photo": null,
+          "atlas": [
+            "atlas-06",
+            5
+          ]
+        },
+        {
+          "id": 3,
+          "en": "There is some water.",
+          "ar": "يوجد بعض الماء.",
+          "context": "إبريق ماء",
+          "icon": "💧",
+          "photo": null,
+          "atlas": [
+            "atlas-06",
+            6
+          ]
+        },
+        {
+          "id": 4,
+          "en": "There is a cat in the garden.",
+          "ar": "توجد قطة في الحديقة.",
+          "context": "قطة قرب الأشجار",
+          "icon": "🐈",
+          "photo": null,
+          "atlas": [
+            "atlas-06",
+            7
+          ]
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Maya looks around her new room.",
+          "ar": "تنظر مايا حول غرفتها الجديدة."
+        },
+        {
+          "id": 2,
+          "en": "She says, 'There is a desk near the window.'",
+          "ar": "تقول: يوجد مكتب قرب النافذة."
+        },
+        {
+          "id": 3,
+          "en": "She puts her book on the desk.",
+          "ar": "تضع كتابها على المكتب."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Is there a book here?",
+          "ar": "هل يوجد كتاب هنا؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Yes, there is a book.",
+          "ar": "نعم، يوجد كتاب."
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "key": "there-are",
+      "title": "There are",
+      "meaning": "يوجد (جمع)",
+      "formula": "There are + اسم جمع",
+      "explanation": "نستخدم There are للإخبار عن وجود أشياء متعددة. عند السؤال نقول Are there، وللمفرد There is.",
+      "explanationEn": "There are states that two or more things exist in a place.",
+      "contrast": "There is one book = مفرد؛ There are two books = جمع.",
+      "sourceIds": [
+        276,
+        122
+      ],
+      "scenes": [
+        {
+          "id": 1,
+          "en": "There are two books on the desk.",
+          "ar": "يوجد كتابان على المكتب.",
+          "context": "كتابان فوق مكتب",
+          "icon": "📚",
+          "photo": null,
+          "atlas": [
+            "atlas-06",
+            8
+          ]
+        },
+        {
+          "id": 2,
+          "en": "There are many trees in the park.",
+          "ar": "توجد أشجار كثيرة في الحديقة.",
+          "context": "حديقة مليئة بالأشجار",
+          "icon": "🌳",
+          "photo": null,
+          "atlas": [
+            "atlas-06",
+            9
+          ]
+        },
+        {
+          "id": 3,
+          "en": "There are three chairs here.",
+          "ar": "توجد ثلاثة كراسٍ هنا.",
+          "context": "ثلاثة كراسٍ",
+          "icon": "🪑",
+          "photo": null,
+          "atlas": [
+            "atlas-06",
+            10
+          ]
+        },
+        {
+          "id": 4,
+          "en": "There are a lot of books in the library.",
+          "ar": "توجد كتب كثيرة في المكتبة.",
+          "context": "رفوف مكتبة",
+          "icon": "📚",
+          "photo": null,
+          "atlas": [
+            "atlas-06",
+            11
+          ]
+        }
+      ],
+      "story": [
+        {
+          "id": 1,
+          "en": "Ali visits a big library.",
+          "ar": "يزور علي مكتبة كبيرة."
+        },
+        {
+          "id": 2,
+          "en": "He says, 'There are many books here.'",
+          "ar": "يقول: توجد كتب كثيرة هنا."
+        },
+        {
+          "id": 3,
+          "en": "He chooses two books to read.",
+          "ar": "يختار كتابين ليقرأهما."
+        }
+      ],
+      "dialogue": [
+        {
+          "id": 1,
+          "speaker": "A",
+          "en": "Are there any books?",
+          "ar": "هل توجد كتب؟"
+        },
+        {
+          "id": 2,
+          "speaker": "B",
+          "en": "Yes, there are many books.",
+          "ar": "نعم، توجد كتب كثيرة."
+        }
+      ]
+    }
+  ],
+  "visualMedia": {
+    "status": "assets-not-yet-committed",
+    "kind": "webp-atlas",
+    "columns": 4,
+    "rows": 3,
+    "atlases": 6,
+    "scenes": 72,
+    "assetDirectory": "assets/group-one/"
+  }
+}

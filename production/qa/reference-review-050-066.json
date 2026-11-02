@@ -1,0 +1,2331 @@
+{
+  "schema": 1,
+  "reviewer": "Codex assistant",
+  "human_review": false,
+  "range": [
+    50,
+    66
+  ],
+  "atlas_count": 17,
+  "cell_count": 204,
+  "review_scope": "All 204 source cells reviewed against the exact English prompts and current Arabic meaning where relevant; contact overviews plus individual source050/055/061/064/066 and runtime050/052/061.",
+  "important_correction": "Initial suspicion that y1044 was a wrong cut in reference050 was withdrawn after RGB-white-line inspection. The original PNG has genuinely unequal row heights; it must not be cut into equal raw quarters.",
+  "geometry_samples": {
+    "method": "Decoded source RGB; sampled row/column fraction whose minimum RGB channel exceeds240; listed positions have >98% near-white samples. Read-only measurement.",
+    "reference050": {
+      "white_rows": [
+        [
+          359,
+          361,
+          362
+        ],
+        [
+          712,
+          713,
+          716,
+          717
+        ],
+        [
+          1045,
+          1046,
+          1047,
+          1048,
+          1049
+        ]
+      ],
+      "white_columns": [
+        [
+          359,
+          360,
+          361,
+          362,
+          363
+        ],
+        [
+          721,
+          722,
+          723,
+          724,
+          726
+        ]
+      ]
+    },
+    "reference052": {
+      "white_rows": [
+        [
+          357,
+          358,
+          359,
+          360,
+          361
+        ],
+        [
+          692,
+          693,
+          694,
+          695
+        ],
+        [
+          1061,
+          1064
+        ]
+      ],
+      "white_columns": [
+        [
+          358,
+          359,
+          360,
+          361,
+          362
+        ],
+        [
+          722,
+          723,
+          724,
+          725,
+          726
+        ]
+      ]
+    },
+    "reference061": {
+      "white_rows": [
+        [
+          356,
+          360
+        ],
+        [
+          720,
+          721,
+          722,
+          723,
+          724
+        ],
+        [
+          1053,
+          1055,
+          1056,
+          1057
+        ]
+      ],
+      "white_columns": [
+        [
+          359,
+          360,
+          361,
+          362,
+          363
+        ],
+        [
+          722,
+          723,
+          724,
+          726
+        ]
+      ]
+    }
+  },
+  "summary": {
+    "repair_required": [
+      {
+        "atlas": 55,
+        "cells": [
+          6
+        ],
+        "reason": "floating portrait thought bubble"
+      },
+      {
+        "atlas": 66,
+        "cells": [
+          6
+        ],
+        "reason": "drawn telephone ringing rays"
+      }
+    ],
+    "repair_recommended": [
+      {
+        "atlas": 61,
+        "cells": [
+          7
+        ],
+        "reason": "literal physical collision versus chance-encounter Arabic reading"
+      }
+    ],
+    "wrong_order_cases": [],
+    "important_crop_loss_cases": [],
+    "abstract_context_limit": "Frequency, tense, modality, mental states and exact quantities are not proven by a still image."
+  },
+  "atlases": [
+    {
+      "number": 50,
+      "key": "reference-050",
+      "source_path": "production/source-images/reference-050.png",
+      "source_sha256": "a49fd7ee5952156ecc60087cc6d98a4cea6634e3f16dc17f4134c6ba513b928f",
+      "source_dimensions": [
+        1086,
+        1448
+      ],
+      "runtime_path": "assets/scenes/reference-050-v1.webp",
+      "runtime_sha256_at_review": "bb8197c0270ca2247d3798450a20f34f3522de2a5d2966ba0474ed850812a96d",
+      "inspected_cells": [
+        {
+          "cell": 1,
+          "sentence_id": "ref-0589",
+          "en": "How many times a day do you feed your dog?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 2,
+          "sentence_id": "ref-0590",
+          "en": "Have you already spent the money Tom gave you?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 3,
+          "sentence_id": "ref-0591",
+          "en": "Were you busy?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 4,
+          "sentence_id": "ref-0592",
+          "en": "Which one would you choose?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 5,
+          "sentence_id": "ref-0593",
+          "en": "Don't go anywhere, okay?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 6,
+          "sentence_id": "ref-0594",
+          "en": "How am I supposed to do this by myself?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 7,
+          "sentence_id": "ref-0595",
+          "en": "Exactly what kind of work do you do?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 8,
+          "sentence_id": "ref-0596",
+          "en": "Do you mind if I open the window?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 9,
+          "sentence_id": "ref-0597",
+          "en": "Is there any place around here where we can get something to eat?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 10,
+          "sentence_id": "ref-0598",
+          "en": "What made her do that?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 11,
+          "sentence_id": "ref-0599",
+          "en": "Exactly how much money was stolen?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 12,
+          "sentence_id": "ref-0600",
+          "en": "Don't you have friends?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        }
+      ],
+      "grid_assessment": {
+        "source": "Three columns and four rows, visibly separated white gutters; source row heights can be unequal.",
+        "runtime": "Assembled to 1536x2048 with 512x512 cells. Runtime WebPs 050,052,061 individually inspected: no visible neighbor-scene strip or important crop loss detected.",
+        "measured_cuts_at_review": {
+          "x": [
+            0,
+            365,
+            720,
+            1086
+          ],
+          "y": [
+            0,
+            364,
+            712,
+            1044,
+            1448
+          ]
+        },
+        "wrong_cell_order_detected": false,
+        "important_crop_loss_detected": false,
+        "neighbor_bleed_detected": false,
+        "geometry_review_limit": "Only runtime 050,052,061 individually inspected in this review; all 17 source atlases inspected. Revised gutter detector must be checked separately if reassembled."
+      },
+      "scene_support_summary": "Dog feeding, empty wallet, busy work desk, garment choices, stopping a departing person, difficult assembly, workplace conversation, window permission, food-search street, questioning a woman’s action, theft interview and social isolation occur in the requested order. No floating overlays detected.",
+      "findings": [
+        {
+          "cells": [
+            1,
+            2,
+            3,
+            6,
+            7,
+            10,
+            11,
+            12
+          ],
+          "severity": "context-limit",
+          "type": "abstract_or_temporal_meaning",
+          "detail": "Frequency, already-spent provenance, past busyness, self-reliance, exact work type, motives, stolen amount and friendship status are not provable from a single still. Contexts are plausible; no wrong cell order or contradictory key object was identified."
+        }
+      ],
+      "bad_cells": [],
+      "disposition": "supporting-context visual review passed"
+    },
+    {
+      "number": 51,
+      "key": "reference-051",
+      "source_path": "production/source-images/reference-051.png",
+      "source_sha256": "c659c12de82c2e98690cacda183ca07f035c9f40cb57b39b9fb941e628717298",
+      "source_dimensions": [
+        1086,
+        1448
+      ],
+      "runtime_path": "assets/scenes/reference-051-v1.webp",
+      "runtime_sha256_at_review": "fb30cba486206d7b9b727443782ed6b13d71f89b8fb448bd96c53f4a9d465889",
+      "inspected_cells": [
+        {
+          "cell": 1,
+          "sentence_id": "ref-0601",
+          "en": "About how long will it take?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 2,
+          "sentence_id": "ref-0602",
+          "en": "What more do I need?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 3,
+          "sentence_id": "ref-0603",
+          "en": "When are we leaving?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 4,
+          "sentence_id": "ref-0604",
+          "en": "What are you cooking today?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 5,
+          "sentence_id": "ref-0605",
+          "en": "How's the weather where you are?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 6,
+          "sentence_id": "ref-0606",
+          "en": "How was the food?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 7,
+          "sentence_id": "ref-0607",
+          "en": "How tall is the Eiffel Tower?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 8,
+          "sentence_id": "ref-0608",
+          "en": "Have you finished writing that song you've been working on?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 9,
+          "sentence_id": "ref-0609",
+          "en": "Would it be okay if I didn't invite Tom to my party?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 10,
+          "sentence_id": "ref-0610",
+          "en": "Do you have any idea what Tom wants?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 11,
+          "sentence_id": "ref-0611",
+          "en": "What would happen if I push this button?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 12,
+          "sentence_id": "ref-0612",
+          "en": "Exactly how does this work?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        }
+      ],
+      "grid_assessment": {
+        "source": "Three columns and four rows, visibly separated white gutters; source row heights can be unequal.",
+        "runtime": "Assembled to 1536x2048 with 512x512 cells. Runtime WebPs 050,052,061 individually inspected: no visible neighbor-scene strip or important crop loss detected.",
+        "measured_cuts_at_review": {
+          "x": [
+            0,
+            366,
+            726,
+            1086
+          ],
+          "y": [
+            0,
+            357,
+            718,
+            1051,
+            1448
+          ]
+        },
+        "wrong_cell_order_detected": false,
+        "important_crop_loss_detected": false,
+        "neighbor_bleed_detected": false,
+        "geometry_review_limit": "Only runtime 050,052,061 individually inspected in this review; all 17 source atlases inspected. Revised gutter detector must be checked separately if reassembled."
+      },
+      "scene_support_summary": "Waiting/time, packing needs, departure, cooking, weather call, food response, Eiffel Tower, songwriting, optional invitation, wondering, red button and machine inspection match the requested contexts. Abstract questions remain contextual rather than visual proof.",
+      "findings": [
+        {
+          "cells": [
+            1,
+            3,
+            5,
+            6,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "severity": "context-limit",
+          "type": "abstract_or_temporal_meaning",
+          "detail": "The stills provide plausible settings for duration, departure, remote weather, evaluation, completion, invitation, desire, conditional outcome and operation questions; precise answers require text/audio."
+        }
+      ],
+      "bad_cells": [],
+      "disposition": "supporting-context visual review passed"
+    },
+    {
+      "number": 52,
+      "key": "reference-052",
+      "source_path": "production/source-images/reference-052.png",
+      "source_sha256": "634c9614917310b4254593758802a4906f4b68d6eb07d1619162c444acd0d342",
+      "source_dimensions": [
+        1086,
+        1448
+      ],
+      "runtime_path": "assets/scenes/reference-052-v1.webp",
+      "runtime_sha256_at_review": "759291ed76d6b2749709edee786954f4aa32404bad7046fd3500f437ea514f97",
+      "inspected_cells": [
+        {
+          "cell": 1,
+          "sentence_id": "ref-0613",
+          "en": "How did Tom do that?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 2,
+          "sentence_id": "ref-0614",
+          "en": "How long can you hold your breath?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 3,
+          "sentence_id": "ref-0615",
+          "en": "How long was Tom here yesterday?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 4,
+          "sentence_id": "ref-0616",
+          "en": "Is it hard to learn French?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 5,
+          "sentence_id": "ref-0617",
+          "en": "Are you telling me you don't remember where you parked your car?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 6,
+          "sentence_id": "ref-0618",
+          "en": "Did you really go to Boston last weekend?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 7,
+          "sentence_id": "ref-0619",
+          "en": "How fast can you run?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 8,
+          "sentence_id": "ref-0620",
+          "en": "Is there anyone here who can speak French?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 9,
+          "sentence_id": "ref-0621",
+          "en": "Are you kidding me?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 10,
+          "sentence_id": "ref-0622",
+          "en": "How do you like your new job?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 11,
+          "sentence_id": "ref-0623",
+          "en": "How many hours a day do you study French?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 12,
+          "sentence_id": "ref-0624",
+          "en": "How old are your kids?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        }
+      ],
+      "grid_assessment": {
+        "source": "Three columns and four rows, visibly separated white gutters; source row heights can be unequal.",
+        "runtime": "Assembled to 1536x2048 with 512x512 cells. Runtime WebPs 050,052,061 individually inspected: no visible neighbor-scene strip or important crop loss detected.",
+        "measured_cuts_at_review": {
+          "x": [
+            0,
+            364,
+            721,
+            1086
+          ],
+          "y": [
+            0,
+            356,
+            691,
+            1060,
+            1448
+          ]
+        },
+        "wrong_cell_order_detected": false,
+        "important_crop_loss_detected": false,
+        "neighbor_bleed_detected": false,
+        "geometry_review_limit": "Only runtime 050,052,061 individually inspected in this review; all 17 source atlases inspected. Revised gutter detector must be checked separately if reassembled."
+      },
+      "scene_support_summary": "A surprising card trick, underwater breath-holding, past-visit recollection, French study, parked-car search, Boston visit, running speed, raised-hand language ability, disbelief, new-job discussion, studying and children’s ages are in order.",
+      "findings": [
+        {
+          "cells": [
+            2
+          ],
+          "severity": "context-limit",
+          "type": "diegetic_bubbles",
+          "detail": "Small bubbles in the underwater scene are physical air bubbles, not a floating thought/speech overlay."
+        },
+        {
+          "cells": [
+            3,
+            6,
+            11,
+            12
+          ],
+          "severity": "context-limit",
+          "type": "quantity_or_temporal_meaning",
+          "detail": "Past duration, last weekend, study hours and exact ages are not visibly established; no conflicting displayed numbers were found."
+        }
+      ],
+      "bad_cells": [],
+      "disposition": "supporting-context visual review passed"
+    },
+    {
+      "number": 53,
+      "key": "reference-053",
+      "source_path": "production/source-images/reference-053.png",
+      "source_sha256": "524b56d674bea0f66e3a160cf084fed34aef25de8613ea9551fbadc6b7dee916",
+      "source_dimensions": [
+        1086,
+        1448
+      ],
+      "runtime_path": "assets/scenes/reference-053-v1.webp",
+      "runtime_sha256_at_review": "c0fe17e0406e166fbfe7eb5db1ddaa6c102bd4e2b27805687bb794cb81c0598c",
+      "inspected_cells": [
+        {
+          "cell": 1,
+          "sentence_id": "ref-0625",
+          "en": "Where is Tom going?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 2,
+          "sentence_id": "ref-0626",
+          "en": "Excuse me, can you help me?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 3,
+          "sentence_id": "ref-0627",
+          "en": "How much are these shoes?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 4,
+          "sentence_id": "ref-0628",
+          "en": "When was the last time that happened?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 5,
+          "sentence_id": "ref-0629",
+          "en": "Didn't you hear what Tom just said?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 6,
+          "sentence_id": "ref-0630",
+          "en": "Could you please drive a little faster?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 7,
+          "sentence_id": "ref-0631",
+          "en": "Are you ready for dinner?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 8,
+          "sentence_id": "ref-0632",
+          "en": "Would you mind closing the window?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 9,
+          "sentence_id": "ref-0633",
+          "en": "Am I supposed to be shocked?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 10,
+          "sentence_id": "ref-0634",
+          "en": "Where would you like to go first?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 11,
+          "sentence_id": "ref-0635",
+          "en": "Did you want to tell me something?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 12,
+          "sentence_id": "ref-0636",
+          "en": "How would you like to pay?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        }
+      ],
+      "grid_assessment": {
+        "source": "Three columns and four rows, visibly separated white gutters; source row heights can be unequal.",
+        "runtime": "Assembled to 1536x2048 with 512x512 cells. Runtime WebPs 050,052,061 individually inspected: no visible neighbor-scene strip or important crop loss detected.",
+        "measured_cuts_at_review": {
+          "x": [
+            0,
+            366,
+            719,
+            1086
+          ],
+          "y": [
+            0,
+            356,
+            721,
+            1080,
+            1448
+          ]
+        },
+        "wrong_cell_order_detected": false,
+        "important_crop_loss_detected": false,
+        "neighbor_bleed_detected": false,
+        "geometry_review_limit": "Only runtime 050,052,061 individually inspected in this review; all 17 source atlases inspected. Revised gutter detector must be checked separately if reassembled."
+      },
+      "scene_support_summary": "Departure, requesting help, shoe shopping, remembering an event, listening, driving, dinner, window closure, expected shock, choosing a destination, private conversation and payment are in order. Requests or past timing cannot be established from a still.",
+      "findings": [
+        {
+          "cells": [
+            6
+          ],
+          "severity": "context-limit",
+          "type": "request_context",
+          "detail": "Driver/passenger conversation supports a speed request; the still does not assert speeding or a measured speed."
+        }
+      ],
+      "bad_cells": [],
+      "disposition": "supporting-context visual review passed"
+    },
+    {
+      "number": 54,
+      "key": "reference-054",
+      "source_path": "production/source-images/reference-054.png",
+      "source_sha256": "6b7be33ecec748e79b68066261f5671941e06325f5f724d1599ec3ecf4e28191",
+      "source_dimensions": [
+        1086,
+        1448
+      ],
+      "runtime_path": "assets/scenes/reference-054-v1.webp",
+      "runtime_sha256_at_review": "cb6cc5c7fef0b87cd582b1dddc7780239d2a1326ec6831e7bdd81f93122d8da1",
+      "inspected_cells": [
+        {
+          "cell": 1,
+          "sentence_id": "ref-0637",
+          "en": "What did you buy Tom for Christmas?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 2,
+          "sentence_id": "ref-0638",
+          "en": "Is there an ATM nearby?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 3,
+          "sentence_id": "ref-0639",
+          "en": "What do you want to drink with your meal?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 4,
+          "sentence_id": "ref-0640",
+          "en": "Are you able to swim?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 5,
+          "sentence_id": "ref-0641",
+          "en": "Who are the others?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 6,
+          "sentence_id": "ref-0642",
+          "en": "Exactly what happened here?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 7,
+          "sentence_id": "ref-0643",
+          "en": "How much money do you have with you now?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 8,
+          "sentence_id": "ref-0644",
+          "en": "How will you convince Tom to lend you the money you need?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 9,
+          "sentence_id": "ref-0645",
+          "en": "Do you remember the first time we met?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 10,
+          "sentence_id": "ref-0646",
+          "en": "Can't we wait until tomorrow to finish this?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 11,
+          "sentence_id": "ref-0647",
+          "en": "What are you going to be in the future?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 12,
+          "sentence_id": "ref-0648",
+          "en": "How long do butterflies live?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        }
+      ],
+      "grid_assessment": {
+        "source": "Three columns and four rows, visibly separated white gutters; source row heights can be unequal.",
+        "runtime": "Assembled to 1536x2048 with 512x512 cells. Runtime WebPs 050,052,061 individually inspected: no visible neighbor-scene strip or important crop loss detected.",
+        "measured_cuts_at_review": {
+          "x": [
+            0,
+            365,
+            721,
+            1086
+          ],
+          "y": [
+            0,
+            356,
+            719,
+            1081,
+            1448
+          ]
+        },
+        "wrong_cell_order_detected": false,
+        "important_crop_loss_detected": false,
+        "neighbor_bleed_detected": false,
+        "geometry_review_limit": "Only runtime 050,052,061 individually inspected in this review; all 17 source atlases inspected. Revised gutter detector must be checked separately if reassembled."
+      },
+      "scene_support_summary": "Christmas gift, ATM, meal drink, swimming, identifying others, damaged-car incident, counting cash, lending discussion, remembered relationship, postponing work, future profession and butterfly context are correctly ordered.",
+      "findings": [
+        {
+          "cells": [
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "severity": "context-limit",
+          "type": "abstract_or_temporal_meaning",
+          "detail": "Persuasion, remembering the first meeting, postponing, future profession and lifespan are contexts rather than visible evidence of the exact proposition."
+        }
+      ],
+      "bad_cells": [],
+      "disposition": "supporting-context visual review passed"
+    },
+    {
+      "number": 55,
+      "key": "reference-055",
+      "source_path": "production/source-images/reference-055.png",
+      "source_sha256": "30ba9d7003e24ffabc52750b8be59207959c9e11bae8e53f7f08a2ee7b3334a2",
+      "source_dimensions": [
+        1086,
+        1448
+      ],
+      "runtime_path": "assets/scenes/reference-055-v1.webp",
+      "runtime_sha256_at_review": "0f2e1ff74547a118860f5396397f40978ec97a47c8d81c2e4f8fadaaf90662b6",
+      "inspected_cells": [
+        {
+          "cell": 1,
+          "sentence_id": "ref-0649",
+          "en": "What was so funny?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 2,
+          "sentence_id": "ref-0650",
+          "en": "Can you show me where the bathroom is?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 3,
+          "sentence_id": "ref-0651",
+          "en": "Have you been to Boston or Chicago in the past three weeks?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 4,
+          "sentence_id": "ref-0652",
+          "en": "Do you have anything in the refrigerator that I can eat?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 5,
+          "sentence_id": "ref-0653",
+          "en": "Do you have to work tonight?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 6,
+          "sentence_id": "ref-0654",
+          "en": "What sort of person is Tom?",
+          "assessment": "material finding listed below"
+        },
+        {
+          "cell": 7,
+          "sentence_id": "ref-0655",
+          "en": "What would you like to do in the future?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 8,
+          "sentence_id": "ref-0656",
+          "en": "Did you tell Tom about what Mary did?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 9,
+          "sentence_id": "ref-0657",
+          "en": "What kind of books do you read?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 10,
+          "sentence_id": "ref-0658",
+          "en": "Do you plan to stay long?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 11,
+          "sentence_id": "ref-0659",
+          "en": "Are you allergic to anything?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 12,
+          "sentence_id": "ref-0660",
+          "en": "Do you often take business trips?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        }
+      ],
+      "grid_assessment": {
+        "source": "Three columns and four rows, visibly separated white gutters; source row heights can be unequal.",
+        "runtime": "Assembled to 1536x2048 with 512x512 cells. Runtime WebPs 050,052,061 individually inspected: no visible neighbor-scene strip or important crop loss detected.",
+        "measured_cuts_at_review": {
+          "x": [
+            0,
+            364,
+            722,
+            1086
+          ],
+          "y": [
+            0,
+            358,
+            721,
+            1067,
+            1448
+          ]
+        },
+        "wrong_cell_order_detected": false,
+        "important_crop_loss_detected": false,
+        "neighbor_bleed_detected": false,
+        "geometry_review_limit": "Only runtime 050,052,061 individually inspected in this review; all 17 source atlases inspected. Revised gutter detector must be checked separately if reassembled."
+      },
+      "scene_support_summary": "Laughter, bathroom directions, Chicago/Boston travel, refrigerator contents, evening work, character discussion, future plans, private disclosure, books, hotel length of stay, allergy and business travel are ordered correctly; cell 6 contains a material floating portrait bubble.",
+      "findings": [
+        {
+          "cells": [
+            6
+          ],
+          "severity": "repair-required",
+          "type": "floating_thought_bubble",
+          "detail": "A white thought bubble with an inset male portrait floats above the woman. This violates the photographic no-overlay contract.",
+          "recommendation": "Remove the entire portrait bubble and reconstruct the natural background while preserving the people and grid."
+        }
+      ],
+      "bad_cells": [
+        6
+      ],
+      "disposition": "repair-before-final-visual-approval"
+    },
+    {
+      "number": 56,
+      "key": "reference-056",
+      "source_path": "production/source-images/reference-056.png",
+      "source_sha256": "7d9df758be1cd096da4194d67b32bc923a7b9d93179b4a0460403054641f1d83",
+      "source_dimensions": [
+        1086,
+        1448
+      ],
+      "runtime_path": "assets/scenes/reference-056-v1.webp",
+      "runtime_sha256_at_review": "a7f91b682d5286654f95ea4ca4f1d29126e28fe6a1078af7f8898b3088ace180",
+      "inspected_cells": [
+        {
+          "cell": 1,
+          "sentence_id": "ref-0661",
+          "en": "Can someone help me?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 2,
+          "sentence_id": "ref-0662",
+          "en": "How long have you been learning English?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 3,
+          "sentence_id": "ref-0663",
+          "en": "What was the first concert you went to?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 4,
+          "sentence_id": "ref-0664",
+          "en": "How's married life going?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 5,
+          "sentence_id": "ref-0665",
+          "en": "What would have happened if Tom had come?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 6,
+          "sentence_id": "ref-0666",
+          "en": "How do you know for sure?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 7,
+          "sentence_id": "ref-0667",
+          "en": "Do you want to be rich?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 8,
+          "sentence_id": "ref-0668",
+          "en": "How long ago did you start studying French?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 9,
+          "sentence_id": "ref-0669",
+          "en": "What's the point of all this?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 10,
+          "sentence_id": "ref-0670",
+          "en": "Do you understand what you have to do?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 11,
+          "sentence_id": "ref-0671",
+          "en": "Do you think I care what you think of me?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 12,
+          "sentence_id": "ref-0672",
+          "en": "Am I allowed to be in here?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        }
+      ],
+      "grid_assessment": {
+        "source": "Three columns and four rows, visibly separated white gutters; source row heights can be unequal.",
+        "runtime": "Assembled to 1536x2048 with 512x512 cells. Runtime WebPs 050,052,061 individually inspected: no visible neighbor-scene strip or important crop loss detected.",
+        "measured_cuts_at_review": {
+          "x": [
+            0,
+            363,
+            733,
+            1086
+          ],
+          "y": [
+            0,
+            353,
+            715,
+            1061,
+            1448
+          ]
+        },
+        "wrong_cell_order_detected": false,
+        "important_crop_loss_detected": false,
+        "neighbor_bleed_detected": false,
+        "geometry_review_limit": "Only runtime 050,052,061 individually inspected in this review; all 17 source atlases inspected. Revised gutter detector must be checked separately if reassembled."
+      },
+      "scene_support_summary": "Asking for assistance, language study duration, a concert, marriage, counterfactual thought, certainty, wealth, language-study history, purpose, instructions, indifference and permission to enter appear in the planned sequence.",
+      "findings": [
+        {
+          "cells": [
+            5,
+            6,
+            8,
+            9,
+            11
+          ],
+          "severity": "context-limit",
+          "type": "abstract_or_temporal_meaning",
+          "detail": "Counterfactual events, certainty, elapsed learning time, purpose and indifference are represented through expressions and props; no still can prove these grammatical distinctions."
+        }
+      ],
+      "bad_cells": [],
+      "disposition": "supporting-context visual review passed"
+    },
+    {
+      "number": 57,
+      "key": "reference-057",
+      "source_path": "production/source-images/reference-057.png",
+      "source_sha256": "a8b9eafdb6501d6201abcf2425a4570ede6f22039c421ee363cb77b002403f01",
+      "source_dimensions": [
+        1086,
+        1448
+      ],
+      "runtime_path": "assets/scenes/reference-057-v1.webp",
+      "runtime_sha256_at_review": "38ca5d11ea1d34627738b4c55d3ddbf987f8c28eaa486baac7378e78cf6abdfa",
+      "inspected_cells": [
+        {
+          "cell": 1,
+          "sentence_id": "ref-0673",
+          "en": "What's the name of this place?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 2,
+          "sentence_id": "ref-0674",
+          "en": "What about next Sunday?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 3,
+          "sentence_id": "ref-0675",
+          "en": "Are you a student?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 4,
+          "sentence_id": "ref-0676",
+          "en": "Do you have something to make this headache go away?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 5,
+          "sentence_id": "ref-0677",
+          "en": "How has your life changed since you got married?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 6,
+          "sentence_id": "ref-0678",
+          "en": "Where were you born?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 7,
+          "sentence_id": "ref-0679",
+          "en": "How are you going to get up to the roof?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 8,
+          "sentence_id": "ref-0680",
+          "en": "What time are you meeting Tom?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 9,
+          "sentence_id": "ref-0681",
+          "en": "How long were you married to Tom?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 10,
+          "sentence_id": "ref-0682",
+          "en": "Is it possible to cry underwater?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 11,
+          "sentence_id": "ref-0683",
+          "en": "What time do you think Tom will be back?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 12,
+          "sentence_id": "ref-0684",
+          "en": "Are you really married?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        }
+      ],
+      "grid_assessment": {
+        "source": "Three columns and four rows, visibly separated white gutters; source row heights can be unequal.",
+        "runtime": "Assembled to 1536x2048 with 512x512 cells. Runtime WebPs 050,052,061 individually inspected: no visible neighbor-scene strip or important crop loss detected.",
+        "measured_cuts_at_review": {
+          "x": [
+            0,
+            359,
+            728,
+            1086
+          ],
+          "y": [
+            0,
+            353,
+            713,
+            1078,
+            1448
+          ]
+        },
+        "wrong_cell_order_detected": false,
+        "important_crop_loss_detected": false,
+        "neighbor_bleed_detected": false,
+        "geometry_review_limit": "Only runtime 050,052,061 individually inspected in this review; all 17 source atlases inspected. Revised gutter detector must be checked separately if reassembled."
+      },
+      "scene_support_summary": "Place name, a calendar, student identity, headache, marriage changes, birthplace map, roof access, appointment time, past marriage, underwater crying, expected return time and marital status have supporting contexts in order.",
+      "findings": [
+        {
+          "cells": [
+            10
+          ],
+          "severity": "context-limit",
+          "type": "hypothetical_context",
+          "detail": "An underwater adult face supplies the setting for the question about crying underwater; the image should not be presented as scientific evidence that tears behave a particular way."
+        },
+        {
+          "cells": [
+            2,
+            8,
+            9,
+            11
+          ],
+          "severity": "context-limit",
+          "type": "time_reference",
+          "detail": "Calendar and clock contexts support time questions, but Sunday, meeting time, marriage duration and expected return cannot be read as exact answers."
+        }
+      ],
+      "bad_cells": [],
+      "disposition": "supporting-context visual review passed"
+    },
+    {
+      "number": 58,
+      "key": "reference-058",
+      "source_path": "production/source-images/reference-058.png",
+      "source_sha256": "9fa49b7745981b30a65bcdcd511603cc6b3f35b6db589e206310c0087eb291a0",
+      "source_dimensions": [
+        1086,
+        1448
+      ],
+      "runtime_path": "assets/scenes/reference-058-v1.webp",
+      "runtime_sha256_at_review": "adb74064011038c99a3279448d2c233e0577e15a4446f3a8a140301686eb14b1",
+      "inspected_cells": [
+        {
+          "cell": 1,
+          "sentence_id": "ref-0685",
+          "en": "Which do you prefer, dogs or cats?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 2,
+          "sentence_id": "ref-0686",
+          "en": "Can you give me an example?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 3,
+          "sentence_id": "ref-0687",
+          "en": "What more can I ask?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 4,
+          "sentence_id": "ref-0688",
+          "en": "Where should I put my coat?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 5,
+          "sentence_id": "ref-0689",
+          "en": "Am I doing this right?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 6,
+          "sentence_id": "ref-0690",
+          "en": "What time do you usually get up on Saturday?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 7,
+          "sentence_id": "ref-0691",
+          "en": "How does it work?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 8,
+          "sentence_id": "ref-0692",
+          "en": "What do I have to be afraid of?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 9,
+          "sentence_id": "ref-0693",
+          "en": "What if I refuse?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 10,
+          "sentence_id": "ref-0694",
+          "en": "What's the worst injury you've ever had?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 11,
+          "sentence_id": "ref-0695",
+          "en": "How well do you speak French?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 12,
+          "sentence_id": "ref-0696",
+          "en": "Can you think of anyone who might be able to babysit our kids tonight?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        }
+      ],
+      "grid_assessment": {
+        "source": "Three columns and four rows, visibly separated white gutters; source row heights can be unequal.",
+        "runtime": "Assembled to 1536x2048 with 512x512 cells. Runtime WebPs 050,052,061 individually inspected: no visible neighbor-scene strip or important crop loss detected.",
+        "measured_cuts_at_review": {
+          "x": [
+            0,
+            366,
+            721,
+            1086
+          ],
+          "y": [
+            0,
+            345,
+            706,
+            1061,
+            1448
+          ]
+        },
+        "wrong_cell_order_detected": false,
+        "important_crop_loss_detected": false,
+        "neighbor_bleed_detected": false,
+        "geometry_review_limit": "Only runtime 050,052,061 individually inspected in this review; all 17 source atlases inspected. Revised gutter detector must be checked separately if reassembled."
+      },
+      "scene_support_summary": "Dogs versus cats, asking for an example, additional requests, coat storage, task checking, waking time, mechanism inspection, fear, refusal, a bandaged knee, French conversation and babysitting are in the requested order.",
+      "findings": [
+        {
+          "cells": [
+            10
+          ],
+          "severity": "context-limit",
+          "type": "personal_history",
+          "detail": "A bandaged knee is a non-graphic injury context; it does not establish that this was the speaker’s worst-ever injury."
+        }
+      ],
+      "bad_cells": [],
+      "disposition": "supporting-context visual review passed"
+    },
+    {
+      "number": 59,
+      "key": "reference-059",
+      "source_path": "production/source-images/reference-059.png",
+      "source_sha256": "86affd2a37e4b40243ded5c61863526e7165444b2da893ba7f45db2efa46febc",
+      "source_dimensions": [
+        1087,
+        1446
+      ],
+      "runtime_path": "assets/scenes/reference-059-v1.webp",
+      "runtime_sha256_at_review": "bf76b646c0e3d6e1f0451fa32faf498b4a5d67fa909be3f2174d09628a60cf48",
+      "inspected_cells": [
+        {
+          "cell": 1,
+          "sentence_id": "ref-0697",
+          "en": "Which one do you think I should buy?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 2,
+          "sentence_id": "ref-0698",
+          "en": "Does Tom speak French fluently?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 3,
+          "sentence_id": "ref-0699",
+          "en": "Shall we be going now?",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 4,
+          "sentence_id": "ref-0700",
+          "en": "See you tomorrow at school.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 5,
+          "sentence_id": "ref-0701",
+          "en": "Return to your room.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 6,
+          "sentence_id": "ref-0702",
+          "en": "Let's wait till he comes back.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 7,
+          "sentence_id": "ref-0703",
+          "en": "It doesn't look like water.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 8,
+          "sentence_id": "ref-0704",
+          "en": "Let's start with the good news.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 9,
+          "sentence_id": "ref-0705",
+          "en": "This place is really noisy.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 10,
+          "sentence_id": "ref-0706",
+          "en": "Remember to say thank you.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 11,
+          "sentence_id": "ref-0707",
+          "en": "I can still remember a little French.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 12,
+          "sentence_id": "ref-0708",
+          "en": "I don't agree with you on this point.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        }
+      ],
+      "grid_assessment": {
+        "source": "Three columns and four rows, visibly separated white gutters; source row heights can be unequal.",
+        "runtime": "Assembled to 1536x2048 with 512x512 cells. Runtime WebPs 050,052,061 individually inspected: no visible neighbor-scene strip or important crop loss detected.",
+        "measured_cuts_at_review": {
+          "x": [
+            0,
+            365,
+            728,
+            1087
+          ],
+          "y": [
+            0,
+            356,
+            720,
+            1079,
+            1446
+          ]
+        },
+        "wrong_cell_order_detected": false,
+        "important_crop_loss_detected": false,
+        "neighbor_bleed_detected": false,
+        "geometry_review_limit": "Only runtime 050,052,061 individually inspected in this review; all 17 source atlases inspected. Revised gutter detector must be checked separately if reassembled."
+      },
+      "scene_support_summary": "Buying among alternatives, French conversation, leaving, school farewell, returning to a room, waiting for someone, non-water liquid, good news, a noisy venue, thanking, remembered French and disagreement are ordered correctly.",
+      "findings": [
+        {
+          "cells": [
+            7
+          ],
+          "severity": "context-limit",
+          "type": "object_support",
+          "detail": "An opaque pale drink in a glass plausibly supports It does not look like water; exact substance remains intentionally unspecified."
+        },
+        {
+          "cells": [
+            2,
+            11
+          ],
+          "severity": "context-limit",
+          "type": "language_ability",
+          "detail": "Conversation and French/Eiffel context support language discussion but do not prove fluency or remembered proficiency."
+        }
+      ],
+      "bad_cells": [],
+      "disposition": "supporting-context visual review passed"
+    },
+    {
+      "number": 60,
+      "key": "reference-060",
+      "source_path": "production/source-images/reference-060.png",
+      "source_sha256": "a5d661217be43559a79fb510450a6a37fd8bef161e512893790123f24b3bffb3",
+      "source_dimensions": [
+        1086,
+        1448
+      ],
+      "runtime_path": "assets/scenes/reference-060-v1.webp",
+      "runtime_sha256_at_review": "3cd886c2d733aef3678111c730120008c0e41f612081958a04a4a9f81604928b",
+      "inspected_cells": [
+        {
+          "cell": 1,
+          "sentence_id": "ref-0709",
+          "en": "Wake me up when we get to Tom's.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 2,
+          "sentence_id": "ref-0710",
+          "en": "Don't be late for the meeting tomorrow.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 3,
+          "sentence_id": "ref-0711",
+          "en": "It's just a game.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 4,
+          "sentence_id": "ref-0712",
+          "en": "It was nothing but coincidence.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 5,
+          "sentence_id": "ref-0713",
+          "en": "I can see why Tom doesn't want to go.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 6,
+          "sentence_id": "ref-0714",
+          "en": "Go back to your seat.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 7,
+          "sentence_id": "ref-0715",
+          "en": "I can't remember the last time I took a vacation.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 8,
+          "sentence_id": "ref-0716",
+          "en": "It was me who paid the bill.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 9,
+          "sentence_id": "ref-0717",
+          "en": "Be careful when crossing the street.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 10,
+          "sentence_id": "ref-0718",
+          "en": "See if the gas is turned off.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 11,
+          "sentence_id": "ref-0719",
+          "en": "Keep away from the fire.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 12,
+          "sentence_id": "ref-0720",
+          "en": "Tom became a policeman.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        }
+      ],
+      "grid_assessment": {
+        "source": "Three columns and four rows, visibly separated white gutters; source row heights can be unequal.",
+        "runtime": "Assembled to 1536x2048 with 512x512 cells. Runtime WebPs 050,052,061 individually inspected: no visible neighbor-scene strip or important crop loss detected.",
+        "measured_cuts_at_review": {
+          "x": [
+            0,
+            365,
+            727,
+            1086
+          ],
+          "y": [
+            0,
+            357,
+            720,
+            1084,
+            1448
+          ]
+        },
+        "wrong_cell_order_detected": false,
+        "important_crop_loss_detected": false,
+        "neighbor_bleed_detected": false,
+        "geometry_review_limit": "Only runtime 050,052,061 individually inspected in this review; all 17 source atlases inspected. Revised gutter detector must be checked separately if reassembled."
+      },
+      "scene_support_summary": "Sleeping passenger, punctuality, a board game, coincidence, reluctance to go, returning to a seat, vacation recollection, bill payment, road crossing, gas check, keeping away from fire and police profession occur in order.",
+      "findings": [
+        {
+          "cells": [
+            7
+          ],
+          "severity": "context-limit",
+          "type": "personal_history",
+          "detail": "A person thinking about a vacation does not establish last vacation timing."
+        },
+        {
+          "cells": [
+            10
+          ],
+          "severity": "context-limit",
+          "type": "instruction_context",
+          "detail": "The hand at the cooker control supports checking the gas. This is a checking instruction, not proof that the gas is already off."
+        }
+      ],
+      "bad_cells": [],
+      "disposition": "supporting-context visual review passed"
+    },
+    {
+      "number": 61,
+      "key": "reference-061",
+      "source_path": "production/source-images/reference-061.png",
+      "source_sha256": "a501b12ce96d59fdb79deaed7faf08ca13ea39ca127ef1c5923f936ae2d4d9ed",
+      "source_dimensions": [
+        1086,
+        1448
+      ],
+      "runtime_path": "assets/scenes/reference-061-v1.webp",
+      "runtime_sha256_at_review": "f5b7bf0b7629baf0e2e790959e25ef5dac43b4d2f76b8697a61809f73d561ef7",
+      "inspected_cells": [
+        {
+          "cell": 1,
+          "sentence_id": "ref-0721",
+          "en": "Perhaps it will rain tomorrow.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 2,
+          "sentence_id": "ref-0722",
+          "en": "I've never been to Boston before.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 3,
+          "sentence_id": "ref-0723",
+          "en": "It's already open.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 4,
+          "sentence_id": "ref-0724",
+          "en": "Tom knows how to make Mary happy.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 5,
+          "sentence_id": "ref-0725",
+          "en": "It was obvious Tom wanted to kiss Mary.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 6,
+          "sentence_id": "ref-0726",
+          "en": "Tom began to try to lose weight a few months ago.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 7,
+          "sentence_id": "ref-0727",
+          "en": "Tom bumped into Mary on his way to school.",
+          "assessment": "material finding listed below"
+        },
+        {
+          "cell": 8,
+          "sentence_id": "ref-0728",
+          "en": "This looks delicious.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 9,
+          "sentence_id": "ref-0729",
+          "en": "All I need is three more days.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 10,
+          "sentence_id": "ref-0730",
+          "en": "Tom wondered which one he should buy.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 11,
+          "sentence_id": "ref-0731",
+          "en": "It's too expensive.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 12,
+          "sentence_id": "ref-0732",
+          "en": "Try not to think about it.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        }
+      ],
+      "grid_assessment": {
+        "source": "Three columns and four rows, visibly separated white gutters; source row heights can be unequal.",
+        "runtime": "Assembled to 1536x2048 with 512x512 cells. Runtime WebPs 050,052,061 individually inspected: no visible neighbor-scene strip or important crop loss detected.",
+        "measured_cuts_at_review": {
+          "x": [
+            0,
+            365,
+            721,
+            1086
+          ],
+          "y": [
+            0,
+            355,
+            726,
+            1052,
+            1448
+          ]
+        },
+        "wrong_cell_order_detected": false,
+        "important_crop_loss_detected": false,
+        "neighbor_bleed_detected": false,
+        "geometry_review_limit": "Only runtime 050,052,061 individually inspected in this review; all 17 source atlases inspected. Revised gutter detector must be checked separately if reassembled."
+      },
+      "scene_support_summary": "Rain possibility, Boston, an open door, making someone happy, a near kiss, exercise, an encounter, food, requested time, choosing a purchase, price and mindful redirection are ordered. Cell 7 leans toward the literal collision reading rather than the Arabic chance-encounter meaning.",
+      "findings": [
+        {
+          "cells": [
+            7
+          ],
+          "severity": "repair-recommended",
+          "type": "idiom_reading_mismatch",
+          "detail": "Two students physically collide with books/documents between them. Arabic says صادف توم ماري في طريقه إلى المدرسة, meaning an unexpected meeting. The literal collision can teach the wrong reading of bump into.",
+          "recommendation": "Show two classmates unexpectedly recognizing and greeting one another on a school path, with books securely held and no collision."
+        },
+        {
+          "cells": [
+            9
+          ],
+          "severity": "context-limit",
+          "type": "quantity_not_encoded",
+          "detail": "The physical desk calendar shows four crossed marks. This is not necessarily a contradiction because crosses can mark elapsed days, but it does not encode the requested three MORE days. Avoid treating the count of crosses as the answer."
+        }
+      ],
+      "bad_cells": [
+        7
+      ],
+      "disposition": "repair-before-final-visual-approval"
+    },
+    {
+      "number": 62,
+      "key": "reference-062",
+      "source_path": "production/source-images/reference-062.png",
+      "source_sha256": "da79eec34e5e123b19ec1a2f72913ccfe5d1068e7cdb4c03bbf167fd3e65c61a",
+      "source_dimensions": [
+        1086,
+        1448
+      ],
+      "runtime_path": "assets/scenes/reference-062-v1.webp",
+      "runtime_sha256_at_review": "3414cd463676faa5ccd9693f9a4a7caa9aba4a626ef10d906c23d8e01b81d04f",
+      "inspected_cells": [
+        {
+          "cell": 1,
+          "sentence_id": "ref-0733",
+          "en": "Tom managed to put the fire out by himself.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 2,
+          "sentence_id": "ref-0734",
+          "en": "Some of the workers have no experience.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 3,
+          "sentence_id": "ref-0735",
+          "en": "No matter who says so, it's not true.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 4,
+          "sentence_id": "ref-0736",
+          "en": "Tom asked if I needed a taxi.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 5,
+          "sentence_id": "ref-0737",
+          "en": "Let's ask Tom if he knows what to do.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 6,
+          "sentence_id": "ref-0738",
+          "en": "Tom is a native speaker of French.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 7,
+          "sentence_id": "ref-0739",
+          "en": "Tom must be getting sleepy.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 8,
+          "sentence_id": "ref-0740",
+          "en": "There's plenty of time.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 9,
+          "sentence_id": "ref-0741",
+          "en": "All you ever talk about is work.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 10,
+          "sentence_id": "ref-0742",
+          "en": "Put away your toys.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 11,
+          "sentence_id": "ref-0743",
+          "en": "Tom only drinks coffee.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 12,
+          "sentence_id": "ref-0744",
+          "en": "Tom was very rude to Mary.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        }
+      ],
+      "grid_assessment": {
+        "source": "Three columns and four rows, visibly separated white gutters; source row heights can be unequal.",
+        "runtime": "Assembled to 1536x2048 with 512x512 cells. Runtime WebPs 050,052,061 individually inspected: no visible neighbor-scene strip or important crop loss detected.",
+        "measured_cuts_at_review": {
+          "x": [
+            0,
+            360,
+            727,
+            1086
+          ],
+          "y": [
+            0,
+            358,
+            726,
+            1083,
+            1448
+          ]
+        },
+        "wrong_cell_order_detected": false,
+        "important_crop_loss_detected": false,
+        "neighbor_bleed_detected": false,
+        "geometry_review_limit": "Only runtime 050,052,061 individually inspected in this review; all 17 source atlases inspected. Revised gutter detector must be checked separately if reassembled."
+      },
+      "scene_support_summary": "Extinguishing a fire, novice workers, denying a claim, taxi inquiry, group problem solving, French speaking, drowsiness, ample time, work-focused conversation, toy storage, coffee and rudeness are correctly ordered. No floating graphic overlay found.",
+      "findings": [
+        {
+          "cells": [
+            1
+          ],
+          "severity": "context-limit",
+          "type": "aspect",
+          "detail": "The image shows fire-extinguishing in progress; it supports the action but not the completed-past success by itself."
+        },
+        {
+          "cells": [
+            11
+          ],
+          "severity": "context-limit",
+          "type": "exclusivity",
+          "detail": "The man drinks coffee while other drinks are on the table; they could belong to others. Only cannot be established visually, but no active contradictory drinking is depicted."
+        }
+      ],
+      "bad_cells": [],
+      "disposition": "supporting-context visual review passed"
+    },
+    {
+      "number": 63,
+      "key": "reference-063",
+      "source_path": "production/source-images/reference-063.png",
+      "source_sha256": "69296dc13f61a1bca48dca8d766255f6e61179f24915a660146b5370b69fdbe2",
+      "source_dimensions": [
+        1086,
+        1448
+      ],
+      "runtime_path": "assets/scenes/reference-063-v1.webp",
+      "runtime_sha256_at_review": "89f4e26eaf692cd0186a0768fd416b6f6013c4bd946e47d5d4cbaf7eb7367bb5",
+      "inspected_cells": [
+        {
+          "cell": 1,
+          "sentence_id": "ref-0745",
+          "en": "Tom made me swear not to tell Mary about what he did.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 2,
+          "sentence_id": "ref-0746",
+          "en": "There's obviously been a mistake.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 3,
+          "sentence_id": "ref-0747",
+          "en": "Tom hardly ever listens to the radio.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 4,
+          "sentence_id": "ref-0748",
+          "en": "Tom never dates older women.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 5,
+          "sentence_id": "ref-0749",
+          "en": "This is one of my favorite movies.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 6,
+          "sentence_id": "ref-0750",
+          "en": "All we have to do is wait.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 7,
+          "sentence_id": "ref-0751",
+          "en": "Tom asked Mary when she had bought her car.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 8,
+          "sentence_id": "ref-0752",
+          "en": "Tom wants to be a hero.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 9,
+          "sentence_id": "ref-0753",
+          "en": "Tom came back home after dark.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 10,
+          "sentence_id": "ref-0754",
+          "en": "Wait here for a while.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 11,
+          "sentence_id": "ref-0755",
+          "en": "There's nothing more to say.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 12,
+          "sentence_id": "ref-0756",
+          "en": "This is your last chance.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        }
+      ],
+      "grid_assessment": {
+        "source": "Three columns and four rows, visibly separated white gutters; source row heights can be unequal.",
+        "runtime": "Assembled to 1536x2048 with 512x512 cells. Runtime WebPs 050,052,061 individually inspected: no visible neighbor-scene strip or important crop loss detected.",
+        "measured_cuts_at_review": {
+          "x": [
+            0,
+            365,
+            728,
+            1086
+          ],
+          "y": [
+            0,
+            354,
+            704,
+            1063,
+            1448
+          ]
+        },
+        "wrong_cell_order_detected": false,
+        "important_crop_loss_detected": false,
+        "neighbor_bleed_detected": false,
+        "geometry_review_limit": "Only runtime 050,052,061 individually inspected in this review; all 17 source atlases inspected. Revised gutter detector must be checked separately if reassembled."
+      },
+      "scene_support_summary": "Confidentiality, a mistaken document, radio, dating preferences, a film, waiting, a car discussion, heroic aspiration, arriving after dark, waiting, no more to say and a last chance appear in order.",
+      "findings": [
+        {
+          "cells": [
+            3,
+            4,
+            8,
+            12
+          ],
+          "severity": "context-limit",
+          "type": "frequency_desire_or_limit",
+          "detail": "Rare listening, never dating a category, wanting to be a hero and a final chance cannot be proven by the still. The scenes are supporting contexts."
+        }
+      ],
+      "bad_cells": [],
+      "disposition": "supporting-context visual review passed"
+    },
+    {
+      "number": 64,
+      "key": "reference-064",
+      "source_path": "production/source-images/reference-064.png",
+      "source_sha256": "c1e50f3002b0db19c32761be21a8bfb7c64b3630fdec3de5758790202e552453",
+      "source_dimensions": [
+        1086,
+        1448
+      ],
+      "runtime_path": "assets/scenes/reference-064-v1.webp",
+      "runtime_sha256_at_review": "561f9387dab36daa1520fd25d8d55ffc56c7b2e1783336b2934659af999d828e",
+      "inspected_cells": [
+        {
+          "cell": 1,
+          "sentence_id": "ref-0757",
+          "en": "Tom found the keys he thought he had lost.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 2,
+          "sentence_id": "ref-0758",
+          "en": "It's one of the most difficult things I've ever had to do.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 3,
+          "sentence_id": "ref-0759",
+          "en": "Put down your weapons.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 4,
+          "sentence_id": "ref-0760",
+          "en": "This room is too dark.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 5,
+          "sentence_id": "ref-0761",
+          "en": "Tom told Mary he had a lot of money.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 6,
+          "sentence_id": "ref-0762",
+          "en": "Tom will arrive in Boston at 2:30.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 7,
+          "sentence_id": "ref-0763",
+          "en": "This should be washed.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 8,
+          "sentence_id": "ref-0764",
+          "en": "Let's hope that's the last time that happens.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 9,
+          "sentence_id": "ref-0765",
+          "en": "Tom asked Mary about her new job in Boston.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 10,
+          "sentence_id": "ref-0766",
+          "en": "This looks like a good spot to set up camp.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 11,
+          "sentence_id": "ref-0767",
+          "en": "Tom finds it difficult to keep up with the rest of the class.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 12,
+          "sentence_id": "ref-0768",
+          "en": "Tom has been to Boston only once.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        }
+      ],
+      "grid_assessment": {
+        "source": "Three columns and four rows, visibly separated white gutters; source row heights can be unequal.",
+        "runtime": "Assembled to 1536x2048 with 512x512 cells. Runtime WebPs 050,052,061 individually inspected: no visible neighbor-scene strip or important crop loss detected.",
+        "measured_cuts_at_review": {
+          "x": [
+            0,
+            358,
+            721,
+            1086
+          ],
+          "y": [
+            0,
+            358,
+            718,
+            1064,
+            1448
+          ]
+        },
+        "wrong_cell_order_detected": false,
+        "important_crop_loss_detected": false,
+        "neighbor_bleed_detected": false,
+        "geometry_review_limit": "Only runtime 050,052,061 individually inspected in this review; all 17 source atlases inspected. Revised gutter detector must be checked separately if reassembled."
+      },
+      "scene_support_summary": "Found keys, a challenging climb, raised empty hands, a dark room, cash, Boston travel at a half-hour clock, dirty clothing, hoping for no recurrence, a new job, camping, class difficulty and Boston travel are in order.",
+      "findings": [
+        {
+          "cells": [
+            3
+          ],
+          "severity": "context-limit",
+          "type": "weapons_omitted_by_brief",
+          "detail": "The planned nonviolent raised-empty-hands interpretation is used. Actual weapons are not visible; the scene supports surrender but not the noun weapons on its own."
+        },
+        {
+          "cells": [
+            6
+          ],
+          "severity": "context-limit",
+          "type": "future_time",
+          "detail": "A half-hour clock and Boston travel context support the scheduled-arrival sentence; the future reading still comes from the words."
+        }
+      ],
+      "bad_cells": [],
+      "disposition": "supporting-context visual review passed"
+    },
+    {
+      "number": 65,
+      "key": "reference-065",
+      "source_path": "production/source-images/reference-065.png",
+      "source_sha256": "3abddbf4f26276b544296d0bd23e20dce966a8bc7ab2a0c30e137e16d38ba9b1",
+      "source_dimensions": [
+        1086,
+        1448
+      ],
+      "runtime_path": "assets/scenes/reference-065-v1.webp",
+      "runtime_sha256_at_review": "4519a5e6f91492149b0f70c47ff0edeaa6d7f59ef8da0cef69c52c50bc0520db",
+      "inspected_cells": [
+        {
+          "cell": 1,
+          "sentence_id": "ref-0769",
+          "en": "Tom wanted to become a lawyer.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 2,
+          "sentence_id": "ref-0770",
+          "en": "This is just what I needed.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 3,
+          "sentence_id": "ref-0771",
+          "en": "This sounds fishy.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 4,
+          "sentence_id": "ref-0772",
+          "en": "Tom ought to show more respect to his grandfather.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 5,
+          "sentence_id": "ref-0773",
+          "en": "Tom invited me to his house after school.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 6,
+          "sentence_id": "ref-0774",
+          "en": "There are many books on this subject.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 7,
+          "sentence_id": "ref-0775",
+          "en": "Check Tom's pulse.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 8,
+          "sentence_id": "ref-0776",
+          "en": "There may be something there.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 9,
+          "sentence_id": "ref-0777",
+          "en": "Let's stop talking and start working.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 10,
+          "sentence_id": "ref-0778",
+          "en": "Tom wants to know why you didn't call him back.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 11,
+          "sentence_id": "ref-0779",
+          "en": "Tom understood what Mary was saying.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 12,
+          "sentence_id": "ref-0780",
+          "en": "Let's begin with the first chapter.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        }
+      ],
+      "grid_assessment": {
+        "source": "Three columns and four rows, visibly separated white gutters; source row heights can be unequal.",
+        "runtime": "Assembled to 1536x2048 with 512x512 cells. Runtime WebPs 050,052,061 individually inspected: no visible neighbor-scene strip or important crop loss detected.",
+        "measured_cuts_at_review": {
+          "x": [
+            0,
+            357,
+            728,
+            1086
+          ],
+          "y": [
+            0,
+            354,
+            710,
+            1060,
+            1448
+          ]
+        },
+        "wrong_cell_order_detected": false,
+        "important_crop_loss_detected": false,
+        "neighbor_bleed_detected": false,
+        "geometry_review_limit": "Only runtime 050,052,061 individually inspected in this review; all 17 source atlases inspected. Revised gutter detector must be checked separately if reassembled."
+      },
+      "scene_support_summary": "Legal career aspiration, a needed item, skeptical response to an offer, respect for a grandfather, a home invitation, books, pulse check, searching, starting work, an unanswered call, understanding and the opening chapter are in order.",
+      "findings": [
+        {
+          "cells": [
+            3
+          ],
+          "severity": "positive",
+          "type": "idiom_supported",
+          "detail": "A skeptical person examines a paper/offer; no literal fish is shown. The intended suspicious meaning of fishy is supported."
+        }
+      ],
+      "bad_cells": [],
+      "disposition": "supporting-context visual review passed"
+    },
+    {
+      "number": 66,
+      "key": "reference-066",
+      "source_path": "production/source-images/reference-066.png",
+      "source_sha256": "042add1a8044ba796e2db951362d0aa67cbea4cd93251d381af78ae425685f94",
+      "source_dimensions": [
+        1086,
+        1448
+      ],
+      "runtime_path": "assets/scenes/reference-066-v1.webp",
+      "runtime_sha256_at_review": "a1001290593fbcb94d982e321974422b6ad41d73d8333df0e7ab88705e09fc49",
+      "inspected_cells": [
+        {
+          "cell": 1,
+          "sentence_id": "ref-0781",
+          "en": "I can teach you how to dance.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 2,
+          "sentence_id": "ref-0782",
+          "en": "I don't care for sports.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 3,
+          "sentence_id": "ref-0783",
+          "en": "Tom was the last person I expected to see here.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 4,
+          "sentence_id": "ref-0784",
+          "en": "Let me ask you a simple question.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 5,
+          "sentence_id": "ref-0785",
+          "en": "Tom agreed to help Mary with her work.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 6,
+          "sentence_id": "ref-0786",
+          "en": "Tom woke up when the telephone rang.",
+          "assessment": "material finding listed below"
+        },
+        {
+          "cell": 7,
+          "sentence_id": "ref-0787",
+          "en": "This is something Tom made for you.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 8,
+          "sentence_id": "ref-0788",
+          "en": "It was very enjoyable.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 9,
+          "sentence_id": "ref-0789",
+          "en": "Tom asked Mary how many hours a week she spent reading.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 10,
+          "sentence_id": "ref-0790",
+          "en": "The sooner you leave, the better.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 11,
+          "sentence_id": "ref-0791",
+          "en": "The truth is that I didn't want to eat with Tom.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        },
+        {
+          "cell": 12,
+          "sentence_id": "ref-0792",
+          "en": "Most Hollywood movies have happy endings.",
+          "assessment": "supporting context reviewed; exact abstract meaning remains in text/audio"
+        }
+      ],
+      "grid_assessment": {
+        "source": "Three columns and four rows, visibly separated white gutters; source row heights can be unequal.",
+        "runtime": "Assembled to 1536x2048 with 512x512 cells. Runtime WebPs 050,052,061 individually inspected: no visible neighbor-scene strip or important crop loss detected.",
+        "measured_cuts_at_review": {
+          "x": [
+            0,
+            365,
+            729,
+            1086
+          ],
+          "y": [
+            0,
+            351,
+            714,
+            1066,
+            1448
+          ]
+        },
+        "wrong_cell_order_detected": false,
+        "important_crop_loss_detected": false,
+        "neighbor_bleed_detected": false,
+        "geometry_review_limit": "Only runtime 050,052,061 individually inspected in this review; all 17 source atlases inspected. Revised gutter detector must be checked separately if reassembled."
+      },
+      "scene_support_summary": "Dance teaching, sports disinterest, unexpected meeting, asking a question, help with work, waking to a phone, a handmade bowl, enjoyment, reading-time discussion, leaving sooner, declined meal and a happy movie ending occur in order. Drawn ringing rays are visible in cell 6.",
+      "findings": [
+        {
+          "cells": [
+            6
+          ],
+          "severity": "repair-required",
+          "type": "drawn_sound_rays",
+          "detail": "White drawn sound/ringing rays float around the bedside telephone. They are graphical overlays, not part of the photographed scene.",
+          "recommendation": "Remove the white rays and show the phone and waking person naturally; keep the cell boundary and phone visible."
+        }
+      ],
+      "bad_cells": [
+        6
+      ],
+      "disposition": "repair-before-final-visual-approval"
+    }
+  ]
+}
