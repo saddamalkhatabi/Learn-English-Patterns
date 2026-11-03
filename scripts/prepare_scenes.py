@@ -21,7 +21,7 @@ def cuts(path,columns,rows):
 def main():
  ap=argparse.ArgumentParser();ap.add_argument('--legacy',action='store_true');ap.add_argument('--new',action='store_true');args=ap.parse_args()
  if args.legacy:
-  file=ROOT/'dist/pilot.json';d=json.loads(file.read_text(encoding='utf-8'));reports=[]
+  file=ROOT/'public/pilot.json';d=json.loads(file.read_text(encoding='utf-8'));reports=[]
   for atlas in sorted({s['image']['atlas'] for s in d['sentences']}):
    rows=[s for s in d['sentences'] if s['image']['atlas']==atlas];meta=rows[0]['image'];w,h,xs,ys=cuts(ROOT/'public'/atlas,meta['columns'],meta['rows']);reports.append({'atlas':atlas,'width':w,'height':h,'x':xs,'y':ys,'method':'whole-line RGB discontinuity near expected grid; visual QA follows'})
    for s in rows:
@@ -33,7 +33,7 @@ def main():
   for p in plan['patterns']:
    source=ROOT/'production/source-images'/f'{p["key"]}.png';assert source.is_file(),source
    w,h=dimensions(source);assert abs(w/h-3/4)<.002,'Wrong atlas aspect ratio: requires re-generation'
-   target=ROOT/'dist/assets/scenes'/f'{p["key"]}-atlas-v1.webp'
+   target=ROOT/'public/assets/scenes'/f'{p["key"]}-atlas-v1.webp'
    _,_,xs,ys=cuts(source,3,4)
    filters=['[0:v]split=12'+''.join(f'[s{i}]' for i in range(12))]
    for i in range(12):

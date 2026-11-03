@@ -10,7 +10,7 @@ key=f'reference-{args.number:03}';source=ROOT/'production/source-images'/f'{key}
 if not source.is_file():source=ROOT/'production/source-archives'/f'{key}.webp'
 geometry=gutter_geometry(source);w,h=geometry['width'],geometry['height'];assert abs(w/h-.75)<.01,'Requires portrait 3:4 atlas'
 for rect in geometry['source_rects']:assert .85<rect['width']/rect['height']<1.15,'Irregular cells: visually review and regenerate'
-target=ROOT/'dist/assets/scenes'/f'{key}-v1.webp'
+target=ROOT/'public/assets/scenes'/f'{key}-v1.webp'
 filters=['[0:v]split=12'+''.join(f'[s{i}]' for i in range(12))]
 for i in range(12):
  c=geometry['source_rects'][i];filters.append(f'[s{i}]crop={c["width"]}:{c["height"]}:{c["x"]}:{c["y"]},scale=512:512:flags=lanczos[c{i}]')

@@ -10,9 +10,9 @@ for result_path in sorted((root/args.incoming).rglob('result.json')):
  for row in result['records']:
   sentence=next(s for s in data['sentences'] if s['id']==row['sentence_id']);assert sentence['en']==row['text']
   r=row['recording'];gender=row['gender'];assert r['path']==sentence['recordings'][gender]['path']
-  source=(result_path.parent/'public'/r['path']).resolve();assert source.is_relative_to(result_path.parent.resolve()/'dist/assets/audio')
+  source=(result_path.parent/'public'/r['path']).resolve();assert source.is_relative_to(result_path.parent.resolve()/'public/assets/audio')
   assert validate(r,source,sentence['en'],gender)
-  target=(root/'public'/r['path']).resolve();assert target.is_relative_to(root/'dist/assets/audio')
+  target=(root/'public'/r['path']).resolve();assert target.is_relative_to(root/'public/assets/audio')
   existing=sentence['recordings'][gender]
   if validate(existing,target,sentence['en'],gender) and existing['sha256']!=r['sha256']:continue
   target.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(source,target);sentence['recordings'][gender]=r;count+=1

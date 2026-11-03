@@ -7,7 +7,7 @@ ROOT=pathlib.Path(os.environ.get('PATTERNS_ROOT',os.getcwd())).resolve()
 def save(path,data):
  temp=path.with_suffix('.tmp');temp.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n');temp.replace(path)
 def main():
- ap=argparse.ArgumentParser();ap.add_argument('--manifest',default='dist/pilot.json');ap.add_argument('--limit',type=int,default=0);ap.add_argument('--verify-only',action='store_true');args=ap.parse_args()
+ ap=argparse.ArgumentParser();ap.add_argument('--manifest',default='public/pilot.json');ap.add_argument('--limit',type=int,default=0);ap.add_argument('--verify-only',action='store_true');args=ap.parse_args()
  manifest=(ROOT/args.manifest).resolve();assert manifest.is_relative_to(ROOT)
  data=json.loads(manifest.read_text(encoding='utf-8'));pending=[];available={};reused=0
  for name in ['pilot','supplement','source-corpus']:
@@ -21,7 +21,7 @@ def main():
  for s in data['sentences']:
   assert set(s['recordings'])==set(VOICES)
   for gender,r in s['recordings'].items():
-   target=(ROOT/'public'/r['path']).resolve();assert target.is_relative_to(ROOT/'dist/assets/audio')
+   target=(ROOT/'public'/r['path']).resolve();assert target.is_relative_to(ROOT/'public/assets/audio')
    if not validate(r,target,s['en'],gender):
     prior=available.get((s['en'],gender));source=ROOT/'public'/prior['path'] if prior else None
     if prior and validate(prior,source,s['en'],gender):
