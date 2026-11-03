@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "round": "20261103b",
+  "checks": {
+    "build": "passed; offline manifest6446media files and version3a1c1a1f7b4cc1a3",
+    "npm_run_check": "passed;40/40 tests and media/status verification",
+    "audio_main_integration": "passed; original production recordings match prior main and workspace audio remains unchanged",
+    "baseline_preservation": "passed; no baseline files missing",
+    "new_atlases": "16 approved sources and1536x2048 outputs; all192 cell crops adopted, source and atlas SHA verified",
+    "dependencies": "no packages or model weights installed"
+  },
+  "environment_note": "The first sandboxed test attempt could not fetch the local test server. The unchanged full suite passed when run with local network access.",
+  "human_auditory_review": "pending; automated checks are not human listening"
+}

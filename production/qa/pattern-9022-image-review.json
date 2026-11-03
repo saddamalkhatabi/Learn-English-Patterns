@@ -1,28 +1,73 @@
 {
   "schema": 1,
   "pattern_key": "pattern-9022",
+  "source_sha256": "0233c0c1897d3d489af356bd16bfa449d3a36308b75157023913854411ed7615",
   "policy": "arab-muslim-family-v1",
   "human_review": false,
-  "status": "held-geometry",
+  "reviewer": "assistant visual review of complete source atlas",
   "date": "2026-11-03",
-  "approved_cells": 0,
-  "reason": "Three imagegen attempts failed the exact square-cell layout contract. No production WebP prepared and no manifest fields changed.",
-  "generation_record": "production/expansion-images/pattern-9022-generation.json",
-  "source_sha256": "b26dac6e26b7d64baaca55a269cbb47f93f799ab18d7ca4cf748a841fda802f7",
-  "geometry": {
-    "width": 1086,
-    "height": 1448,
-    "column_cell_widths": [
-      337,
-      344,
-      395
-    ],
-    "row_cell_heights": [
-      360,
-      356,
-      355,
-      361
-    ]
-  },
-  "next_step": "Regenerate a regular3x4 square-cell atlas from the archived prompt; re-measure gutters and inspect every cell before approval."
+  "generation_record": "production/expansion-images/pattern-9022-generation-round-20261103b.json",
+  "prior_hold_record": "production/qa/pattern-9022-image-review-held-round1.json",
+  "cells": [
+    {
+      "cell": 1,
+      "status": "accepted",
+      "notes": "Adult student in full-length loose clothing approaching a school entrance; other students are modestly covered."
+    },
+    {
+      "cell": 2,
+      "status": "accepted",
+      "notes": "Fully clothed commuter boarding a real city bus with an office bag."
+    },
+    {
+      "cell": 3,
+      "status": "accepted",
+      "notes": "Woman in loose abaya and opaque hijab arriving at a leafy park with a school bag."
+    },
+    {
+      "cell": 4,
+      "status": "accepted",
+      "notes": "Modestly clothed adult entering a library with real bookshelves visible inside."
+    },
+    {
+      "cell": 5,
+      "status": "accepted",
+      "notes": "Man choosing fresh vegetables at a market; ordinary covered background customers."
+    },
+    {
+      "cell": 6,
+      "status": "accepted",
+      "notes": "Fully clothed adult outside an empty gym, office bag and sports bag visible, real gym equipment inside."
+    },
+    {
+      "cell": 7,
+      "status": "accepted",
+      "notes": "Adult greets covered elderly grandparents at their doorway; respectful distance and no intimate contact."
+    },
+    {
+      "cell": 8,
+      "status": "accepted",
+      "notes": "Commuter on foot at a railway station, visible train and station architecture."
+    },
+    {
+      "cell": 9,
+      "status": "accepted",
+      "notes": "Fully clothed adult consults a male doctor in white coat with real stethoscope; checkup context is clear without exposure."
+    },
+    {
+      "cell": 10,
+      "status": "accepted",
+      "notes": "Adult learner with notebook entering a classroom; adult classmates and background woman are fully covered."
+    },
+    {
+      "cell": 11,
+      "status": "accepted",
+      "notes": "Three men in loose full-length clothing walking on a dry coastal promenade; shoreline and empty water, no swimmers or swimwear."
+    },
+    {
+      "cell": 12,
+      "status": "accepted",
+      "notes": "Adult with laptop/office bag entering an office with work desks visible inside."
+    }
+  ]
 }

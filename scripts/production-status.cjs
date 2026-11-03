@@ -36,8 +36,13 @@ const patterns = plan.patterns.map(p => {
 const sum = field => patterns.reduce((n, p) => n + p[field], 0);
 const male = patterns.reduce((n, p) => n + p.audio.male, 0), female = patterns.reduce((n, p) => n + p.audio.female, 0);
 const percent = (n, d) => Math.round(n / d * 10000) / 100;
+const allRows=[...new Map([...pilot.sentences,...read('public/supplement.json').sentences,...source.sentences,...rows].map(s=>[s.id,s])).values()];
+const audioFiles=new Set(),allVoices={male:0,female:0};let allAudioBindings=0;
+for(const s of allRows)for(const gender of ['male','female']){const rec=s.recordings[gender],valid=validate(rec,asset(root,rec.path),s.en,gender);if(rec.sha256)assert(valid,'Invalid audio in total project coverage: '+s.id+'/'+gender);if(valid){audioFiles.add(rec.path);allAudioBindings++;allVoices[gender]++}}
 const summary = {
   schema: 1, project: 'Learn-English-Patterns', measured_at: new Date().toISOString(),
+  all_project_audio: { sentence_records: allRows.length, voice_bindings: allAudioBindings, male: allVoices.male, female: allVoices.female, distinct_files: audioFiles.size, pending_bindings: allRows.length*2-allAudioBindings,
+    note: 'Bindings can reuse the same exact recording. Sentence records include lessons, story lines, references and authored expansion; they are not all distinct English texts.' },
   published_patterns: { complete: pilot.patterns.length, total: catalog.patterns.length, percent: percent(pilot.patterns.length, catalog.patterns.length) },
   expansion: { patterns: patterns.length, sentences: rows.length, audio: { male, female, complete: male + female, total: rows.length * 2,
     missing: rows.length * 2 - male - female, percent: percent(male + female, rows.length * 2) },

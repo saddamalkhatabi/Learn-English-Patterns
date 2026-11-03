@@ -1,6 +1,6 @@
 """Prepare a reviewed expansion atlas using measured gutters, without model packages.
 
-Usage: python scripts/prepare-expansion-scenes.py pattern-9017 source.png review.json
+Usage: python scripts/prepare-expansion-scenes.py pattern-9017 source.png review.json [--defer-manifest]
 Needs the repository's media-tools scripts and FFmpeg/FFprobe only.
 """
 import hashlib
@@ -27,7 +27,11 @@ def save(file, data):
 
 
 def main():
-    key, source_arg, review_arg = sys.argv[1:]
+    arguments = sys.argv[1:]
+    defer_manifest = '--defer-manifest' in arguments
+    if defer_manifest:
+        arguments.remove('--defer-manifest')
+    key, source_arg, review_arg = arguments
     source, review_file = pathlib.Path(source_arg).resolve(), pathlib.Path(review_arg).resolve()
     plan = json.loads((ROOT / 'production/plans/expansion-all-153.json').read_text(encoding='utf-8'))
     pattern = next(p for p in plan['patterns'] if p['key'] == key)
@@ -68,13 +72,15 @@ def main():
             updates.append((file, data))
     assert sum(sum(s['pattern_id'] == pattern['id'] for s in d['sentences']) for _, d in updates) == 12
     temporary.replace(target)
-    for file, data in updates:
-        save(file, data)
+    if not defer_manifest:
+        for file, data in updates:
+            save(file, data)
     provenance = {'schema': 1, 'key': key, 'source': source.relative_to(ROOT).as_posix(), 'source_sha256': digest(source),
                   'source_dimensions': [geometry['width'], geometry['height']], 'geometry_verification': geometry,
                   'atlas': target.relative_to(ROOT / 'public').as_posix(), 'sha256': atlas_hash, 'width': 1536, 'height': 2048,
                   'tool': 'built-in imagegen', 'review': review_file.relative_to(ROOT).as_posix(), 'policy': policy['id'],
-                  'prompt': f'production/expansion-image-prompts/{key}.txt', 'publication': 'production only; lesson promotion remains separate'}
+                  'prompt': f'production/expansion-image-prompts/{key}.txt', 'publication': 'production only; lesson promotion remains separate',
+                  'manifest_sync': 'pending' if defer_manifest else 'applied'}
     save(ROOT / 'production/expansion-images' / f'{key}.json', provenance)
     print(json.dumps({'key': key, 'atlas': provenance['atlas'], 'reviewed_cells': 12, 'sha256': atlas_hash}))
 

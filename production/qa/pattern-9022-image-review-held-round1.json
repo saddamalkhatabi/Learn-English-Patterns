@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "pattern_key": "pattern-9022",
+  "policy": "arab-muslim-family-v1",
+  "human_review": false,
+  "status": "held-geometry",
+  "date": "2026-11-03",
+  "approved_cells": 0,
+  "reason": "Three imagegen attempts failed the exact square-cell layout contract. No production WebP prepared and no manifest fields changed.",
+  "generation_record": "production/expansion-images/pattern-9022-generation.json",
+  "source_sha256": "b26dac6e26b7d64baaca55a269cbb47f93f799ab18d7ca4cf748a841fda802f7",
+  "geometry": {
+    "width": 1086,
+    "height": 1448,
+    "column_cell_widths": [
+      337,
+      344,
+      395
+    ],
+    "row_cell_heights": [
+      360,
+      356,
+      355,
+      361
+    ]
+  },
+  "next_step": "Regenerate a regular3x4 square-cell atlas from the archived prompt; re-measure gutters and inspect every cell before approval."
+}
