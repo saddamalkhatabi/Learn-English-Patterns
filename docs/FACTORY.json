@@ -1,7 +1,8 @@
 {
   "branch": "media-tools",
-  "commit": "02ce28f3adca9ac6cff11b2dedad549e12d1219e",
+  "commit": "17345b2153c3c184259f51367e653be4bc461487",
   "recovery_bundle": "handoff/media-tools.bundle",
   "runtime_requires_python": false,
-  "model_weights_in_repository": false
+  "model_weights_in_repository": false,
+  "smoke_test": "passed exact MP3 validation, staging and merge for both voices"
 }
