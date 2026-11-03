@@ -20,12 +20,14 @@ for s in d['sentences']:
   if meta.get('review')=='assistant visual review' and cell not in meta.get('rejected_cells',[]):
    i=(s['ordinal']-1)%12;im={'id':'scene-'+s['id'],'atlas':meta['atlas'],'sha256':meta['sha256'],'cell':i,'columns':3,'rows':4,'width':1536,'height':2048,'tile_aspect':1,'crop':{'x':i%3*512+1,'y':i//3*512+1,'width':510,'height':510},'status':'assistant-reviewed','origin':'generated_photorealistic'}
   elif cell in meta.get('rejected_cells',[]):im={**incoming['image'],'status':'review-rejected'}
+  else:im={**incoming['image'],'status':'generated-pending-review'}
  p=(ROOT/'public'/im['atlas']).resolve();assert p.is_relative_to(ROOT/'public/assets/scenes');ok=False
  if im.get('sha256') and im.get('status')=='assistant-reviewed' and p.is_file():
   if str(p) not in image_cache:image_cache[str(p)]=(hashlib.sha256(p.read_bytes()).hexdigest(),dimensions(p))
   digest,size=image_cache[str(p)];c=im['crop'];ok=digest==im['sha256'] and size==(1536,2048) and c['x']>=0 and c['y']>=0 and c['width']>0 and c['height']>0 and c['x']+c['width']<=1536 and c['y']+c['height']<=2048
   assert ok,'Invalid reviewed reference atlas'
- if ok:s['image']=im;images+=1;atlases.add(im['atlas'])
+ s['image']=im
+ if ok:images+=1;atlases.add(im['atlas'])
  s['lifecycle']['image']='assistant-reviewed' if ok else 'pending';s['lifecycle']['available']=valid
 assert not args.require_audio or audio==len(d['sentences'])*2,'Incomplete reference audio'
 assert not args.require_images or images==len(d['sentences']),'Incomplete reference scenes'
@@ -33,3 +35,4 @@ d['counts'].update({'recordings':audio,'distinct_audio_files':len(paths),'measur
 report={'schema':1,'counts':d['counts'],'audio_validation':'hash, exact voice, exact words, monotonic measured cues and '+('duration metadata only' if args.fast else 'decoded PCM duration'),'images_validation':'SHA-256, actual dimensions, reviewed cell order and in-bounds crop','pending_recordings':unavailable,'human_listening_review':'pending','complete_audio':audio==2000,'complete_images':images==1000}
 for p,obj in [(file,d),(ROOT/'public/source-corpus-audit.json',report)]:p.write_text(json.dumps(obj,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
 print(json.dumps(report['counts']))
+
