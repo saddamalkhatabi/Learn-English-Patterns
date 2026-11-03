@@ -20,3 +20,14 @@ test('reference production keeps source IDs stable and publishes no invented mea
  const plan=require('../production/plans/source-corpus-1000.json'),rows=plan.manifest_paths.flatMap(p=>JSON.parse(fs.readFileSync(p)).sentences);assert.equal(rows.length,1000);
  for(const r of rows){assert.equal(corpus.sentences.find(s=>s.id===r.id).en,r.en);assert.equal(r.recordings.male.voice_id,'am_adam');assert.equal(r.recordings.female.voice_id,'af_bella');for(const rec of Object.values(r.recordings))if(rec.status==='planned'){assert.equal(rec.words.length,0);assert(!rec.duration_ms)}assert(r.image.width<=1536&&r.image.height<=2048)}
 });
+
+test('reference library hides every withheld or rejected sidecar cell, including stale prior approvals',()=>{
+ for(const s of corpus.sentences){
+  const key=`reference-${String(Math.floor((s.ordinal-1)/12)+1).padStart(3,'0')}`,file=`production/reference-images/${key}.json`;
+  const meta=fs.existsSync(file)?JSON.parse(fs.readFileSync(file)):null,cell=(s.ordinal-1)%12;
+  const approved=meta?.review==='assistant visual review'&&!meta.rejected_cells?.includes(cell);
+  assert.equal(s.image.status==='assistant-reviewed',Boolean(approved),s.id);
+  assert.equal(s.lifecycle.image==='assistant-reviewed',Boolean(approved),s.id);
+ }
+ assert.equal(corpus.counts.scenes,corpus.sentences.filter(s=>s.image.status==='assistant-reviewed').length);
+});

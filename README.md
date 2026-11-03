@@ -10,6 +10,8 @@ node server.js
 
 ابدأ الاستكمال من **[HANDOFF.md](HANDOFF.md)**، ثم [قائمة النواقص](docs/COMPLETION-BACKLOG.md) و[حالة الفحص](docs/VERIFIED-STATUS.json).
 
+تغطية الإنتاج الحالية والنسب حسب المرحلة: [PRODUCTION-STATUS.json](docs/PRODUCTION-STATUS.json). توجيه جميع الصور الجديدة: [سياسة المشاهد المناسبة للثقافة العربية والإسلامية](production/scene-policy.json).
+
 - main: تطبيق Node وملفات public والمحتوى والخطط والوثائق والاختبارات.
 - media-tools: أدوات إنتاج الصوت ومعالجة الصور الصغيرة. ينزل GitHub مكتباتها على خوادمه؛ ليست متطلبات لتشغيل التطبيق.
 - production/run-ID: نتائج صوت متحققة ومحفوظة قبل دمجها إلى main.

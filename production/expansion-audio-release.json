@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "plan_id": "expansion-all-153",
+  "plan_sha256": "d718fc8f4e6836b9c1459f0096e341ab3b748695cef2d291854cea06cadb4f92",
+  "run_id": 41555717077,
+  "run_url": "https://github.com/saddamalkhatabi/Learn-English-Patterns/actions/runs/41555717077",
+  "run_conclusion": "success",
+  "production_branch": "production/run-41555717077",
+  "production_commit": "4e88617cba618ac4370c7bf8a408f661265eb4e9",
+  "import_date": "2026-11-03",
+  "patterns": 153,
+  "sentences": 1836,
+  "male_bindings": 1836,
+  "female_bindings": 1836,
+  "previously_reusable_bindings": 10,
+  "new_audio_files": 3662,
+  "pending_recordings": 0,
+  "validation": "Each exact MP3 was validated on the GitHub runner and checked again for local hash, voice, text and monotonic word cues on import. A further 306 local decoded-duration checks sample both voices in all 153 patterns.",
+  "import_validation_report": "production/qa/expansion-import-validation.json",
+  "audio_factory_after_import": {"include": []},
+  "human_listening_review": "pending",
+  "lesson_publication": "separate; 27 published patterns remain unchanged"
+}

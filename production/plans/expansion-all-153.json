@@ -39,14 +39,17 @@
         "am_adam",
         "af_bella"
       ],
-      "alignment": "each exact encoded MP3; preserve partial success"
+      "alignment": "each exact encoded MP3; preserve partial success",
+      "state": "complete; 3672 exact voice bindings imported and verified",
+      "completed_run_id": 41555717077
     },
     {
       "id": "image-render",
       "after": [
         "plan-reviewed"
       ],
-      "state": "deferred at user checkpoint",
+      "state": "in progress; see docs/PRODUCTION-STATUS.json for measured coverage",
+      "cultural_policy_path": "production/scene-policy.json",
       "trigger": "built-in imagegen per reviewed pattern, explicit grid validation"
     },
     {

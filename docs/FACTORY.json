@@ -1,8 +1,12 @@
 {
   "branch": "media-tools",
-  "commit": "17345b2153c3c184259f51367e653be4bc461487",
+  "commit": "a3b87bb5a1b07593a40973443459bcf3395fd1c3",
   "recovery_bundle": "handoff/media-tools.bundle",
   "runtime_requires_python": false,
   "model_weights_in_repository": false,
-  "smoke_test": "passed exact MP3 validation, staging and merge for both voices"
+  "smoke_test": "passed exact MP3 validation, staging and merge for both voices",
+  "reference_image_sync_fix": "Always propagate withheld/rejected image metadata instead of retaining stale prior approvals.",
+  "completed_audio_run": 41555717077,
+  "expansion_audio_bindings": 3672,
+  "pending_expansion_recordings": 0
 }

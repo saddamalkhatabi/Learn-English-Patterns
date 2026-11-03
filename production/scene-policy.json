@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "arab-muslim-family-v1",
+  "effective_date": "2026-11-03",
+  "scope": "All newly generated or regenerated scenes; legacy cultural repairs remain deferred at the user's request.",
+  "style": "Photorealistic everyday editorial photography, warm natural light, coherent with the existing learning atlases.",
+  "constraints": [
+    "Conservative Arab Muslim family learning contexts. Men wear loose opaque long-sleeved high-neck shirts and full-length trousers or thobes. Women wear loose opaque full-coverage clothing and hijab. Apply modest clothing to background people too.",
+    "No bare torso, shoulders, midriff or thighs, tight or transparent clothes, revealing nightwear, swimwear, underwear, changing, bathing, showering, intimate or romantic poses, kissing or inappropriate physical contact.",
+    "Water and beach contexts use fully clothed people on a dry shore, promenade or empty poolside. Never show swimmers, sunbathers, mixed bathing or distant revealing figures. Depict swimming discussions before the activity, with equipment where useful.",
+    "No alcohol, gambling, nightclub setting, graphic injury, active weapon violence, or religious caricatures. Use ordinary respectful Arab settings without adding religious rituals unrelated to the sentence.",
+    "Preserve the exact English sentence and Arabic meaning. Adapt only the visual staging. If a compliant scene cannot convey the meaning honestly, hold the cell for review instead of substituting an unrelated picture.",
+    "No captions, words, numbers, logos, speech/thought bubbles, graphic overlays or floating inset pictures. Physical analog clocks can use hands and tick marks for time examples.",
+    "Exactly three columns and four rows in row-major order, twelve square cells, portrait 3:4, final atlas 1536x2048, 512x512 per cell with 40px safe inset and continuous straight white dividers. Measure actual source gutters before preparing the display atlas."
+  ],
+  "acceptance": [
+    "Inspect every foreground and background person for clothing and cultural suitability.",
+    "Check each scene against its exact sentence, cell order, clocks and important objects.",
+    "Check source aspect ratio, continuous gutters and every resulting crop; generation alone is not approval.",
+    "Record source/output SHA-256 and per-cell assistant review; keep human review explicitly separate."
+  ]
+}

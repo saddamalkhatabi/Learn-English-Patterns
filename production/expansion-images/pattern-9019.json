@@ -1,0 +1,132 @@
+{
+  "schema": 1,
+  "key": "pattern-9019",
+  "source": "production/expansion-images/sources/pattern-9019-v1.png",
+  "source_sha256": "e64abcda45a036aac45b366ebad4f1ef9e8f7d2da3492b631e56970a5bacf163",
+  "source_dimensions": [
+    1086,
+    1448
+  ],
+  "geometry_verification": {
+    "width": 1086,
+    "height": 1448,
+    "x_gutters": [
+      {
+        "start": 360,
+        "end": 366,
+        "center": 362,
+        "white_fraction": 0.9958592132505176
+      },
+      {
+        "start": 725,
+        "end": 726,
+        "center": 725,
+        "white_fraction": 1.0
+      }
+    ],
+    "y_gutters": [
+      {
+        "start": 360,
+        "end": 365,
+        "center": 362,
+        "white_fraction": 1.0
+      },
+      {
+        "start": 721,
+        "end": 726,
+        "center": 723,
+        "white_fraction": 1.0
+      },
+      {
+        "start": 1082,
+        "end": 1088,
+        "center": 1084,
+        "white_fraction": 1.0
+      }
+    ],
+    "source_rects": [
+      {
+        "x": 1,
+        "y": 1,
+        "width": 358,
+        "height": 358
+      },
+      {
+        "x": 367,
+        "y": 1,
+        "width": 357,
+        "height": 358
+      },
+      {
+        "x": 727,
+        "y": 1,
+        "width": 358,
+        "height": 358
+      },
+      {
+        "x": 1,
+        "y": 366,
+        "width": 358,
+        "height": 354
+      },
+      {
+        "x": 367,
+        "y": 366,
+        "width": 357,
+        "height": 354
+      },
+      {
+        "x": 727,
+        "y": 366,
+        "width": 358,
+        "height": 354
+      },
+      {
+        "x": 1,
+        "y": 727,
+        "width": 358,
+        "height": 354
+      },
+      {
+        "x": 367,
+        "y": 727,
+        "width": 357,
+        "height": 354
+      },
+      {
+        "x": 727,
+        "y": 727,
+        "width": 358,
+        "height": 354
+      },
+      {
+        "x": 1,
+        "y": 1089,
+        "width": 358,
+        "height": 358
+      },
+      {
+        "x": 367,
+        "y": 1089,
+        "width": 357,
+        "height": 358
+      },
+      {
+        "x": 727,
+        "y": 1089,
+        "width": 358,
+        "height": 358
+      }
+    ],
+    "method": "continuous near-white gutter runs, sampled across the entire row or column"
+  },
+  "atlas": "assets/scenes/pattern-9019-atlas-v1.webp",
+  "sha256": "347a4e4dfd83b928f9e5c3242d87b11064baae4172c9bf3ff4a6497a00d0444f",
+  "width": 1536,
+  "height": 2048,
+  "tool": "built-in imagegen",
+  "review": "production/qa/pattern-9019-image-review.json",
+  "policy": "arab-muslim-family-v1",
+  "prompt": "production/expansion-image-prompts/pattern-9019.txt",
+  "publication": "production only; lesson promotion remains separate"
+}
