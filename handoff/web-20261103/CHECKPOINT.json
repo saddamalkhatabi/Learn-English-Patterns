@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-03",
+  "baseline_commit": "d3cd363e85e3da53d47e06a8c8ac488e33fa61e2",
+  "all_project_audio": {
+    "sentence_records": 3174,
+    "voice_bindings": 6348,
+    "male": 3174,
+    "female": 3174,
+    "distinct_files": 6316,
+    "pending_bindings": 0,
+    "note": "Bindings can reuse the same exact recording. Sentence records include lessons, story lines, references and authored expansion; they are not all distinct English texts."
+  },
+  "expansion": {
+    "patterns": 153,
+    "sentences": 1836,
+    "audio": {
+      "male": 1836,
+      "female": 1836,
+      "complete": 3672,
+      "total": 3672,
+      "missing": 0,
+      "percent": 100
+    },
+    "images": {
+      "complete": 252,
+      "total": 1836,
+      "missing": 1584,
+      "percent": 13.73
+    },
+    "patterns_with_complete_media": 21,
+    "note": "Completed production assets are not published lessons. Human listening and lesson promotion remain separate."
+  },
+  "reference_library": {
+    "sentences": 1000,
+    "audio_bindings": 2000,
+    "reviewed_images": 975
+  },
+  "published_patterns": {
+    "complete": 27,
+    "total": 180,
+    "percent": 15
+  },
+  "remaining_scene_count": 1609,
+  "image_tasks": 16,
+  "lesson_context_packets": 39,
+  "not_done": [
+    "1584 expansion scenes",
+    "25 withheld reference scenes",
+    "153 authored patterns not yet promoted to complete published lessons",
+    "Full actual human listening",
+    "Later legacy cultural audit as separately requested"
+  ]
+}

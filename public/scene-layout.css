@@ -11,3 +11,11 @@ html body .scene-frame>.scene-photo{flex:none;min-height:0!important;max-height:
 @media(max-width:1000px){.reference-player{inset-inline-start:270px}.coach-body:has(.coach-scene){grid-template-columns:180px minmax(0,1fr)}.coach-body .coach-scene{margin:20px 0 0 15px}}
 @media(max-width:760px){.reference-player{inset-inline-start:8px;inset-inline-end:8px}.coach-body:has(.coach-scene),html[data-pattern-image=compact] .coach-body:has(.coach-scene){display:grid;grid-template-columns:1fr}.coach-body .coach-scene{margin:16px auto 0;width:160px;max-width:160px}.coach-sentence{padding:16px 20px}.coach-rule>.rule-card{margin:14px}.lesson-active-example{grid-template-columns:1fr;gap:10px}.lesson-active-example .lesson-scene{max-width:160px;margin:auto}.lesson-active-text>.sentence{font-size:23px}.lesson-body{padding:18px}.lesson-mini-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.lesson-bottom{flex-wrap:wrap;gap:10px}.lesson-bottom .auto-next-label{font-size:12px}.sentence-strip button{grid-template-columns:55px 22px minmax(0,1fr)}.sentence-strip .lesson-thumb{width:55px;height:55px}.brand-name{max-width:190px}.unitart{max-height:none}.cards{grid-template-columns:1fr}.reference-player .ar-content{font-size:17px!important}}
 html[data-pattern-image=hidden] .coach-scene,html[data-pattern-image=hidden] .lesson-active-example .lesson-scene,html[data-pattern-image=hidden] .reference-photo,html[data-pattern-image=hidden] .reference-player-scene{display:none!important}html[data-pattern-image=hidden] .coach-body:has(.coach-scene),html[data-pattern-image=hidden] .lesson-active-example{grid-template-columns:1fr}
+/* An expanded media preview needs room for its image, text and both voices. */
+.ep-pattern-item[open]:has(.expansion-media-preview){grid-column:1/-1}
+.imported-examples:has(.expansion-media-preview){grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr))}
+.expansion-media-preview{min-width:0}
+.expansion-media-preview .scene-frame{width:100%;max-width:none}
+.expansion-media-preview .audio-controls{display:flex;flex-wrap:wrap;gap:8px;margin-block:10px}
+html[data-pattern-image=hidden] .expansion-media-preview .scene-frame{display:none!important}
+html[data-pattern-image=compact] .expansion-media-preview .scene-frame{max-width:120px;margin-inline:auto}

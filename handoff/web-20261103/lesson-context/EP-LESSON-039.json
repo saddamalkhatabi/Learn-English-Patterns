@@ -1,0 +1,2718 @@
+{
+  "id": "EP-LESSON-039",
+  "instruction": "Promote only after media and adapter checks pass. Text/source IDs/recordings are exact; no fabricated replacements.",
+  "patterns": [
+    {
+      "plan": {
+        "id": 9175,
+        "catalog_id": "import-ten-18",
+        "key": "pattern-9175",
+        "form": "The + comparative clause, the + comparative clause",
+        "title": "كلما ازداد ... ازداد",
+        "source_refs": [
+          {
+            "group": "ten",
+            "item_id": 18,
+            "key": "the-more-the-more-18"
+          }
+        ],
+        "source_ids": [
+          159,
+          307
+        ],
+        "prerequisite_ids": [
+          "import-nine-9"
+        ],
+        "sentence_ids": [
+          "pattern-9175-01",
+          "pattern-9175-02",
+          "pattern-9175-03",
+          "pattern-9175-04",
+          "pattern-9175-05",
+          "pattern-9175-06",
+          "pattern-9175-07",
+          "pattern-9175-08",
+          "pattern-9175-09",
+          "pattern-9175-10",
+          "pattern-9175-11",
+          "pattern-9175-12"
+        ]
+      },
+      "authored": {
+        "catalog_id": "import-ten-18",
+        "key": "the-more-the-more",
+        "source_refs": [
+          {
+            "group": "ten",
+            "item_id": 18,
+            "key": "the-more-the-more-18"
+          }
+        ],
+        "source_ids": [
+          159,
+          307
+        ],
+        "source_form": "The + comparative clause, the + comparative clause",
+        "form": "The + comparative clause, the + comparative clause",
+        "title": "كلما ازداد ... ازداد",
+        "explanation_ar": "نعبّر عن ارتباط متدرج بين تغيرين: كلما ازداد الأول ازداد الثاني أو نقص وفق صيغة المقارنة.",
+        "explanation_en": "Use the more and another comparative clause to show that two changes occur together.",
+        "contrast_ar": "The more I practice, the better I get تغير متدرج؛ Because I practice, I improve سبب مباشر.",
+        "contrast_en": "The more ... the better links gradual changes; an ordinary comparative such as faster than compares two items.",
+        "examples": [
+          {
+            "en": "I notice that the more I read, the more words I learn.",
+            "ar": "ألاحظ أنه كلما قرأت أكثر، تعلمت كلمات أكثر.",
+            "scene": "Reader building vocabulary",
+            "source": {
+              "group": "ten",
+              "item_id": 18,
+              "scene_id": 1,
+              "original_en": "I notice that the more I read, the more words I learn.",
+              "original_ar": "ألاحظ أنه كلما قرأت أكثر، تعلمت كلمات أكثر."
+            },
+            "review": "assistant-reviewed"
+          },
+          {
+            "en": "We find that the more we practice, the more confident we become.",
+            "ar": "نجد أنه كلما تدربنا أكثر، أصبحنا أكثر ثقة.",
+            "scene": "Learners gaining confidence through practice",
+            "source": {
+              "group": "ten",
+              "item_id": 18,
+              "scene_id": 2,
+              "original_en": "We find that the more we practice, the more confident we become.",
+              "original_ar": "نجد أنه كلما تدربنا أكثر، أصبحنا أكثر ثقة."
+            },
+            "review": "assistant-reviewed"
+          },
+          {
+            "en": "She discovers that the more she listens, the better she understands.",
+            "ar": "تكتشف أنه كلما استمعت أكثر، فهمت بصورة أفضل.",
+            "scene": "Learner improving listening comprehension",
+            "source": {
+              "group": "ten",
+              "item_id": 18,
+              "scene_id": 3,
+              "original_en": "She discovers that the more she listens, the better she understands.",
+              "original_ar": "تكتشف أنه كلما استمعت أكثر، فهمت بصورة أفضل."
+            },
+            "review": "assistant-reviewed"
+          },
+          {
+            "en": "I believe that the more we share ideas, the more creative we become.",
+            "ar": "أعتقد أنه كلما تبادلنا الأفكار أكثر، أصبحنا أكثر إبداعًا.",
+            "scene": "Team sharing creative ideas",
+            "source": {
+              "group": "ten",
+              "item_id": 18,
+              "scene_id": 4,
+              "original_en": "I believe that the more we share ideas, the more creative we become.",
+              "original_ar": "أعتقد أنه كلما تبادلنا الأفكار أكثر، أصبحنا أكثر إبداعًا."
+            },
+            "review": "assistant-reviewed"
+          },
+          {
+            "en": "The earlier we leave, the less traffic we will face.",
+            "ar": "كلما غادرنا أبكر، قل الازدحام الذي سنواجهه.",
+            "scene": "Travelers choosing an early departure",
+            "origin": "new authoring",
+            "review": "assistant-reviewed"
+          },
+          {
+            "en": "The more carefully you listen, the more details you notice.",
+            "ar": "كلما أصغيت بعناية أكبر، لاحظت تفاصيل أكثر.",
+            "scene": "Learner concentrating on a speaker",
+            "origin": "new authoring",
+            "review": "assistant-reviewed"
+          },
+          {
+            "en": "The longer I wait, the more nervous I become.",
+            "ar": "كلما طال انتظاري، ازددت توترًا.",
+            "scene": "Adult waiting anxiously at reception",
+            "origin": "new authoring",
+            "review": "assistant-reviewed"
+          },
+          {
+            "en": "The more often we meet, the easier our conversations become.",
+            "ar": "كلما التقينا أكثر، أصبحت محادثاتنا أسهل.",
+            "scene": "Regular conversation partners chatting comfortably",
+            "origin": "new authoring",
+            "review": "assistant-reviewed"
+          },
+          {
+            "en": "The less luggage we carry, the easier the journey will be.",
+            "ar": "كلما قلّت الأمتعة التي نحملها، كانت الرحلة أسهل.",
+            "scene": "Travelers comparing light and heavy bags",
+            "origin": "new authoring",
+            "review": "assistant-reviewed"
+          },
+          {
+            "en": "The closer we got to the sea, the cooler the air became.",
+            "ar": "كلما اقتربنا من البحر، أصبح الهواء أبرد.",
+            "scene": "Walkers approaching a breezy coast",
+            "origin": "new authoring",
+            "review": "assistant-reviewed"
+          },
+          {
+            "en": "The more you explain, the better I understand your plan.",
+            "ar": "كلما شرحت أكثر، فهمت خطتك بصورة أفضل.",
+            "scene": "Colleagues discussing a plan in detail",
+            "origin": "new authoring",
+            "review": "assistant-reviewed"
+          },
+          {
+            "en": "The sooner we fix the leak, the less water we will waste.",
+            "ar": "كلما أصلحنا التسرب أسرع، قل الماء الذي سنهدره.",
+            "scene": "Adults inspecting a leaking tap",
+            "origin": "new authoring",
+            "review": "assistant-reviewed"
+          }
+        ],
+        "questions": [
+          {
+            "id": "q1",
+            "type": "choice",
+            "prompt": "اختر الجملة التي تطابق البناء القياسي المستهدف.",
+            "options": [
+              "More I practice, the better I become.",
+              "The more I practice, the better I become.",
+              "The more I practice, better I become."
+            ],
+            "answer": "The more I practice, the better I become.",
+            "explanation_ar": "نعبّر عن ارتباط متدرج بين تغيرين: كلما ازداد الأول ازداد الثاني أو نقص وفق صيغة المقارنة."
+          },
+          {
+            "id": "q2",
+            "type": "choice",
+            "prompt": "ما معنى هذه الجملة؟ We find that the more we practice, the more confident we become.",
+            "options": [
+              "نجد أنه كلما تدربنا أكثر، أصبحنا أكثر ثقة.",
+              "كلما غادرنا أبكر، قل الازدحام الذي سنواجهه.",
+              "كلما طال انتظاري، ازددت توترًا."
+            ],
+            "answer": "نجد أنه كلما تدربنا أكثر، أصبحنا أكثر ثقة.",
+            "explanation_ar": "قارن الفعل والفاعل والتفاصيل بالترجمة العربية."
+          },
+          {
+            "id": "q3",
+            "type": "choice",
+            "prompt": "أي جملة تعبّر عن: تكتشف أنه كلما استمعت أكثر، فهمت بصورة أفضل.",
+            "options": [
+              "The more carefully you listen, the more details you notice.",
+              "The more often we meet, the easier our conversations become.",
+              "She discovers that the more she listens, the better she understands."
+            ],
+            "answer": "She discovers that the more she listens, the better she understands.",
+            "explanation_ar": "اختر المعنى الكامل، لا كلمة متشابهة فقط."
+          },
+          {
+            "id": "q4",
+            "type": "order",
+            "prompt": "رتب الكلمات لتعبّر عن: كلما غادرنا أبكر، قل الازدحام الذي سنواجهه.",
+            "options": [
+              "we",
+              "traffic",
+              "less",
+              "the",
+              "leave,",
+              "we",
+              "earlier",
+              "The",
+              "face.",
+              "will"
+            ],
+            "answer": "The earlier we leave, the less traffic we will face.",
+            "explanation_ar": "نعبّر عن ارتباط متدرج بين تغيرين: كلما ازداد الأول ازداد الثاني أو نقص وفق صيغة المقارنة."
+          },
+          {
+            "id": "q5",
+            "type": "gap",
+            "prompt": "اختر العبارة الناقصة: I notice that ____ I read, the more words I learn.",
+            "options": [
+              "that",
+              "the more",
+              "to"
+            ],
+            "answer": "the more",
+            "explanation_ar": "نعبّر عن ارتباط متدرج بين تغيرين: كلما ازداد الأول ازداد الثاني أو نقص وفق صيغة المقارنة."
+          },
+          {
+            "id": "q6",
+            "type": "order",
+            "prompt": "أعد ترتيب الجملة: كلما أصغيت بعناية أكبر، لاحظت تفاصيل أكثر.",
+            "options": [
+              "you",
+              "listen,",
+              "the",
+              "more",
+              "details",
+              "you",
+              "notice.",
+              "The",
+              "more",
+              "carefully"
+            ],
+            "answer": "The more carefully you listen, the more details you notice.",
+            "explanation_ar": "نعبّر عن ارتباط متدرج بين تغيرين: كلما ازداد الأول ازداد الثاني أو نقص وفق صيغة المقارنة."
+          },
+          {
+            "id": "q7",
+            "type": "choice",
+            "prompt": "أي وصف يناسب وظيفة هذا البناء؟",
+            "options": [
+              "ربط تغيرين متدرجين بالمقارنة",
+              "الرد على الشكر فقط في جميع السياقات",
+              "تحديد مكان مادي دون أي فعل"
+            ],
+            "answer": "ربط تغيرين متدرجين بالمقارنة",
+            "explanation_ar": "The more I practice, the better I get تغير متدرج؛ Because I practice, I improve سبب مباشر."
+          },
+          {
+            "id": "q8",
+            "type": "gap",
+            "prompt": "أكمل لتطابق المعنى: كلما قلّت الأمتعة التي نحملها، كانت الرحلة أسهل. — The less luggage we carry, the easier the ____ will be.",
+            "options": [
+              "closer",
+              "cooler",
+              "journey"
+            ],
+            "answer": "journey",
+            "explanation_ar": "معنى الكلمة والعبارة معًا يحددان الاختيار؛ راجع الجملة الكاملة بعد الإجابة."
+          }
+        ],
+        "advanced": [
+          {
+            "id": "a1",
+            "type": "choice",
+            "prompt": "في المثال الآتي، ما وظيفة البناء المستهدف؟ The more you explain, the better I understand your plan.",
+            "options": [
+              "ربط تغيرين متدرجين بالمقارنة",
+              "الرد على الشكر",
+              "الاستئذان لفعل المتكلم"
+            ],
+            "answer": "ربط تغيرين متدرجين بالمقارنة",
+            "explanation_ar": "نعبّر عن ارتباط متدرج بين تغيرين: كلما ازداد الأول ازداد الثاني أو نقص وفق صيغة المقارنة.",
+            "level_note": "Optional extension: interpret function in a longer context; not a standardized CEFR question"
+          },
+          {
+            "id": "a2",
+            "type": "choice",
+            "prompt": "أي تفسير دقيق يميز هذا البناء عن الأنماط المرتبطة؟",
+            "options": [
+              "The paired comparative construction always lists two completed past events only.",
+              "Remove the from both parts of The more ... the better.",
+              "The paired comparative construction links two gradual changes; both comparative parts normally begin with the."
+            ],
+            "answer": "The paired comparative construction links two gradual changes; both comparative parts normally begin with the.",
+            "explanation_ar": "The more I practice, the better I get تغير متدرج؛ Because I practice, I improve سبب مباشر."
+          }
+        ],
+        "wrong": {
+          "en": "The more I practice, better I become.",
+          "correct": "The more I practice, the better I become.",
+          "reason_ar": "نعبّر عن ارتباط متدرج بين تغيرين: كلما ازداد الأول ازداد الثاني أو نقص وفق صيغة المقارنة."
+        },
+        "keywords": [
+          "the-more-the-more",
+          "كلما ازداد ... ازداد",
+          "ربط تغيرين متدرجين بالمقارنة",
+          "notice",
+          "read",
+          "words",
+          "learn",
+          "find",
+          "practice",
+          "confident",
+          "become",
+          "discovers",
+          "listens",
+          "better",
+          "understands",
+          "تراكيب مركبة"
+        ],
+        "domains": [
+          "learning",
+          "food"
+        ],
+        "purposes": [
+          {
+            "ar": "ربط تغيرين متدرجين بالمقارنة",
+            "en": "Use the more and another comparative clause to show that two changes occur together."
+          }
+        ],
+        "level": "B1–B2",
+        "level_review": "Provisional editorial range, not independently certified",
+        "prerequisite_ids": [
+          "import-nine-9"
+        ],
+        "transfer": {
+          "prompt_ar": "اكتب فكرة جديدة بهذا البناء عن موقف لم يظهر في الأمثلة، وغيّر شخصًا أو فعلًا أو مكانًا. راجع المعنى بنفسك.",
+          "prompt_en": "Use this construction for a new situation. Change the people, action or place rather than copying an example.",
+          "assessment": "self review; no automatic fluency grade"
+        },
+        "review": {
+          "status": "assistant-reviewed",
+          "human_review": false,
+          "source_examples_reviewed": true,
+          "media": "not produced",
+          "primary_review": "pending"
+        }
+      },
+      "sentences": [
+        {
+          "id": "pattern-9175-01",
+          "pattern_id": 9175,
+          "catalog_id": "import-ten-18",
+          "en": "I notice that the more I read, the more words I learn.",
+          "ar": "ألاحظ أنه كلما قرأت أكثر، تعلمت كلمات أكثر.",
+          "context": "ألاحظ أنه كلما قرأت أكثر، تعلمت كلمات أكثر.",
+          "scene_description": "Reader building vocabulary",
+          "difficulty": {
+            "stage": 1,
+            "cefr": "B1–B2",
+            "stage_label": "فهم"
+          },
+          "vocabulary": [],
+          "exercise_ids": [
+            "pattern-9175-01-transfer"
+          ],
+          "recordings": {
+            "male": {
+              "voice_id": "am_adam",
+              "path": "assets/audio/pattern-9175-01-male.mp3",
+              "text": "I notice that the more I read, the more words I learn.",
+              "status": "structurally_verified",
+              "words": [
+                {
+                  "index": 0,
+                  "text": "I",
+                  "start_ms": 381,
+                  "end_ms": 401
+                },
+                {
+                  "index": 1,
+                  "text": "notice",
+                  "start_ms": 501,
+                  "end_ms": 742
+                },
+                {
+                  "index": 2,
+                  "text": "that",
+                  "start_ms": 802,
+                  "end_ms": 902
+                },
+                {
+                  "index": 3,
+                  "text": "the",
+                  "start_ms": 942,
+                  "end_ms": 1023
+                },
+                {
+                  "index": 4,
+                  "text": "more",
+                  "start_ms": 1063,
+                  "end_ms": 1223
+                },
+                {
+                  "index": 5,
+                  "text": "I",
+                  "start_ms": 1323,
+                  "end_ms": 1343
+                },
+                {
+                  "index": 6,
+                  "text": "read,",
+                  "start_ms": 1464,
+                  "end_ms": 1684
+                },
+                {
+                  "index": 7,
+                  "text": "the",
+                  "start_ms": 2045,
+                  "end_ms": 2105
+                },
+                {
+                  "index": 8,
+                  "text": "more",
+                  "start_ms": 2166,
+                  "end_ms": 2306
+                },
+                {
+                  "index": 9,
+                  "text": "words",
+                  "start_ms": 2366,
+                  "end_ms": 2607
+                },
+                {
+                  "index": 10,
+                  "text": "I",
+                  "start_ms": 2687,
+                  "end_ms": 2707
+                },
+                {
+                  "index": 11,
+                  "text": "learn.",
+                  "start_ms": 2807,
+                  "end_ms": 3168
+                }
+              ],
+              "auditory_review": "pending",
+              "duration_ms": 3850,
+              "sha256": "4f76df6cdaeccb921da0c3f0bf28cc4a30e859fee2eaa47986a6df2d3758a267",
+              "alignment": "wav2vec2-ctc-exact-mp3",
+              "ctc_transcript": "I NOTICED THAT THE MORE I READ THE MORE WORDS I LEARN",
+              "produced_at": "2026-11-03T01:17:52.178401+00:00",
+              "model": "hexgrad/Kokoro-82M",
+              "pipeline_version": "kokoro-0.9.4",
+              "duration_basis": "decoded-pcm-24000-mono"
+            },
+            "female": {
+              "voice_id": "af_bella",
+              "path": "assets/audio/pattern-9175-01-female.mp3",
+              "text": "I notice that the more I read, the more words I learn.",
+              "status": "structurally_verified",
+              "words": [
+                {
+                  "index": 0,
+                  "text": "I",
+                  "start_ms": 502,
+                  "end_ms": 522
+                },
+                {
+                  "index": 1,
+                  "text": "notice",
+                  "start_ms": 622,
+                  "end_ms": 883
+                },
+                {
+                  "index": 2,
+                  "text": "that",
+                  "start_ms": 944,
+                  "end_ms": 1044
+                },
+                {
+                  "index": 3,
+                  "text": "the",
+                  "start_ms": 1064,
+                  "end_ms": 1144
+                },
+                {
+                  "index": 4,
+                  "text": "more",
+                  "start_ms": 1184,
+                  "end_ms": 1345
+                },
+                {
+                  "index": 5,
+                  "text": "I",
+                  "start_ms": 1466,
+                  "end_ms": 1486
+                },
+                {
+                  "index": 6,
+                  "text": "read,",
+                  "start_ms": 1586,
+                  "end_ms": 1807
+                },
+                {
+                  "index": 7,
+                  "text": "the",
+                  "start_ms": 2269,
+                  "end_ms": 2349
+                },
+                {
+                  "index": 8,
+                  "text": "more",
+                  "start_ms": 2389,
+                  "end_ms": 2530
+                },
+                {
+                  "index": 9,
+                  "text": "words",
+                  "start_ms": 2590,
+                  "end_ms": 2831
+                },
+                {
+                  "index": 10,
+                  "text": "I",
+                  "start_ms": 2911,
+                  "end_ms": 2931
+                },
+                {
+                  "index": 11,
+                  "text": "learn.",
+                  "start_ms": 3011,
+                  "end_ms": 3373
+                }
+              ],
+              "auditory_review": "pending",
+              "duration_ms": 3975,
+              "sha256": "3042a58c81eb28565380951a92be04bd26103abf2b37d79915147e05d024e7fb",
+              "alignment": "wav2vec2-ctc-exact-mp3",
+              "ctc_transcript": "I NOTICED THAT THE MORE I READ THE MORE WORDS I LEARN",
+              "produced_at": "2026-11-03T01:17:54.073078+00:00",
+              "model": "hexgrad/Kokoro-82M",
+              "pipeline_version": "kokoro-0.9.4",
+              "duration_basis": "decoded-pcm-24000-mono"
+            }
+          },
+          "image": {
+            "id": "scene-pattern-9175-01",
+            "atlas": "assets/scenes/pattern-9175-atlas-v1.webp",
+            "cell": 0,
+            "columns": 3,
+            "rows": 4,
+            "width": 1536,
+            "height": 2048,
+            "status": "planned"
+          }
+        },
+        {
+          "id": "pattern-9175-02",
+          "pattern_id": 9175,
+          "catalog_id": "import-ten-18",
+          "en": "We find that the more we practice, the more confident we become.",
+          "ar": "نجد أنه كلما تدربنا أكثر، أصبحنا أكثر ثقة.",
+          "context": "نجد أنه كلما تدربنا أكثر، أصبحنا أكثر ثقة.",
+          "scene_description": "Learners gaining confidence through practice",
+          "difficulty": {
+            "stage": 1,
+            "cefr": "B1–B2",
+            "stage_label": "فهم"
+          },
+          "vocabulary": [],
+          "exercise_ids": [
+            "pattern-9175-02-transfer"
+          ],
+          "recordings": {
+            "male": {
+              "voice_id": "am_adam",
+              "path": "assets/audio/pattern-9175-02-male.mp3",
+              "text": "We find that the more we practice, the more confident we become.",
+              "status": "structurally_verified",
+              "words": [
+                {
+                  "index": 0,
+                  "text": "We",
+                  "start_ms": 301,
+                  "end_ms": 362
+                },
+                {
+                  "index": 1,
+                  "text": "find",
+                  "start_ms": 442,
+                  "end_ms": 663
+                },
+                {
+                  "index": 2,
+                  "text": "that",
+                  "start_ms": 703,
+                  "end_ms": 804
+                },
+                {
+                  "index": 3,
+                  "text": "the",
+                  "start_ms": 844,
+                  "end_ms": 924
+                },
+                {
+                  "index": 4,
+                  "text": "more",
+                  "start_ms": 964,
+                  "end_ms": 1125
+                },
+                {
+                  "index": 5,
+                  "text": "we",
+                  "start_ms": 1205,
+                  "end_ms": 1286
+                },
+                {
+                  "index": 6,
+                  "text": "practice,",
+                  "start_ms": 1386,
+                  "end_ms": 1848
+                },
+                {
+                  "index": 7,
+                  "text": "the",
+                  "start_ms": 2250,
+                  "end_ms": 2311
+                },
+                {
+                  "index": 8,
+                  "text": "more",
+                  "start_ms": 2351,
+                  "end_ms": 2511
+                },
+                {
+                  "index": 9,
+                  "text": "confident",
+                  "start_ms": 2612,
+                  "end_ms": 3074
+                },
+                {
+                  "index": 10,
+                  "text": "we",
+                  "start_ms": 3134,
+                  "end_ms": 3215
+                },
+                {
+                  "index": 11,
+                  "text": "become.",
+                  "start_ms": 3295,
+                  "end_ms": 3737
+                }
+              ],
+              "auditory_review": "pending",
+              "duration_ms": 4400,
+              "sha256": "711c3e0bfa466c6ffcc65e48e193fc593ce4de9d7fdfd055bc09eec34283802c",
+              "alignment": "wav2vec2-ctc-exact-mp3",
+              "ctc_transcript": "WE FIND THAT THE MORE WE PRACTICE THE MORE CONFIDENT WE BECOME",
+              "produced_at": "2026-11-03T01:17:56.171281+00:00",
+              "model": "hexgrad/Kokoro-82M",
+              "pipeline_version": "kokoro-0.9.4",
+              "duration_basis": "decoded-pcm-24000-mono"
+            },
+            "female": {
+              "voice_id": "af_bella",
+              "path": "assets/audio/pattern-9175-02-female.mp3",
+              "text": "We find that the more we practice, the more confident we become.",
+              "status": "structurally_verified",
+              "words": [
+                {
+                  "index": 0,
+                  "text": "We",
+                  "start_ms": 422,
+                  "end_ms": 482
+                },
+                {
+                  "index": 1,
+                  "text": "find",
+                  "start_ms": 583,
+                  "end_ms": 803
+                },
+                {
+                  "index": 2,
+                  "text": "that",
+                  "start_ms": 844,
+                  "end_ms": 944
+                },
+                {
+                  "index": 3,
+                  "text": "the",
+                  "start_ms": 964,
+                  "end_ms": 1045
+                },
+                {
+                  "index": 4,
+                  "text": "more",
+                  "start_ms": 1105,
+                  "end_ms": 1286
+                },
+                {
+                  "index": 5,
+                  "text": "we",
+                  "start_ms": 1346,
+                  "end_ms": 1426
+                },
+                {
+                  "index": 6,
+                  "text": "practice,",
+                  "start_ms": 1507,
+                  "end_ms": 1989
+                },
+                {
+                  "index": 7,
+                  "text": "the",
+                  "start_ms": 2491,
+                  "end_ms": 2571
+                },
+                {
+                  "index": 8,
+                  "text": "more",
+                  "start_ms": 2611,
+                  "end_ms": 2752
+                },
+                {
+                  "index": 9,
+                  "text": "confident",
+                  "start_ms": 2852,
+                  "end_ms": 3334
+                },
+                {
+                  "index": 10,
+                  "text": "we",
+                  "start_ms": 3375,
+                  "end_ms": 3435
+                },
+                {
+                  "index": 11,
+                  "text": "become.",
+                  "start_ms": 3515,
+                  "end_ms": 3977
+                }
+              ],
+              "auditory_review": "pending",
+              "duration_ms": 4600,
+              "sha256": "d58f2a302565bb801bc3cb3870e4318005c01814132c959d9769c9db2a533cd2",
+              "alignment": "wav2vec2-ctc-exact-mp3",
+              "ctc_transcript": "WE FIND THAT THE MORE WE PRACTISE THE MORE CONFIDENT WE BECOME",
+              "produced_at": "2026-11-03T01:17:58.640571+00:00",
+              "model": "hexgrad/Kokoro-82M",
+              "pipeline_version": "kokoro-0.9.4",
+              "duration_basis": "decoded-pcm-24000-mono"
+            }
+          },
+          "image": {
+            "id": "scene-pattern-9175-02",
+            "atlas": "assets/scenes/pattern-9175-atlas-v1.webp",
+            "cell": 1,
+            "columns": 3,
+            "rows": 4,
+            "width": 1536,
+            "height": 2048,
+            "status": "planned"
+          }
+        },
+        {
+          "id": "pattern-9175-03",
+          "pattern_id": 9175,
+          "catalog_id": "import-ten-18",
+          "en": "She discovers that the more she listens, the better she understands.",
+          "ar": "تكتشف أنه كلما استمعت أكثر، فهمت بصورة أفضل.",
+          "context": "تكتشف أنه كلما استمعت أكثر، فهمت بصورة أفضل.",
+          "scene_description": "Learner improving listening comprehension",
+          "difficulty": {
+            "stage": 2,
+            "cefr": "B1–B2",
+            "stage_label": "توسيع"
+          },
+          "vocabulary": [],
+          "exercise_ids": [
+            "pattern-9175-03-transfer"
+          ],
+          "recordings": {
+            "male": {
+              "voice_id": "am_adam",
+              "path": "assets/audio/pattern-9175-03-male.mp3",
+              "text": "She discovers that the more she listens, the better she understands.",
+              "status": "structurally_verified",
+              "words": [
+                {
+                  "index": 0,
+                  "text": "She",
+                  "start_ms": 321,
+                  "end_ms": 421
+                },
+                {
+                  "index": 1,
+                  "text": "discovers",
+                  "start_ms": 482,
+                  "end_ms": 963
+                },
+                {
+                  "index": 2,
+                  "text": "that",
+                  "start_ms": 1023,
+                  "end_ms": 1164
+                },
+                {
+                  "index": 3,
+                  "text": "the",
+                  "start_ms": 1204,
+                  "end_ms": 1284
+                },
+                {
+                  "index": 4,
+                  "text": "more",
+                  "start_ms": 1344,
+                  "end_ms": 1525
+                },
+                {
+                  "index": 5,
+                  "text": "she",
+                  "start_ms": 1625,
+                  "end_ms": 1726
+                },
+                {
+                  "index": 6,
+                  "text": "listens,",
+                  "start_ms": 1806,
+                  "end_ms": 2167
+                },
+                {
+                  "index": 7,
+                  "text": "the",
+                  "start_ms": 2568,
+                  "end_ms": 2649
+                },
+                {
+                  "index": 8,
+                  "text": "better",
+                  "start_ms": 2709,
+                  "end_ms": 2950
+                },
+                {
+                  "index": 9,
+                  "text": "she",
+                  "start_ms": 3030,
+                  "end_ms": 3130
+                },
+                {
+                  "index": 10,
+                  "text": "understands.",
+                  "start_ms": 3190,
+                  "end_ms": 3792
+                }
+              ],
+              "auditory_review": "pending",
+              "duration_ms": 4575,
+              "sha256": "33a6123f56fe38d14ade209eb7b74c91793a4ec5b06761a62bb08ce462fbc6f8",
+              "alignment": "wav2vec2-ctc-exact-mp3",
+              "ctc_transcript": "SHE DISCOVERS THAT THE MORE SHE LISTENS THE BETTER SHE UNDERSTANDS",
+              "produced_at": "2026-11-03T01:18:00.785792+00:00",
+              "model": "hexgrad/Kokoro-82M",
+              "pipeline_version": "kokoro-0.9.4",
+              "duration_basis": "decoded-pcm-24000-mono"
+            },
+            "female": {
+              "voice_id": "af_bella",
+              "path": "assets/audio/pattern-9175-03-female.mp3",
+              "text": "She discovers that the more she listens, the better she understands.",
+              "status": "structurally_verified",
+              "words": [
+                {
+                  "index": 0,
+                  "text": "She",
+                  "start_ms": 422,
+                  "end_ms": 522
+                },
+                {
+                  "index": 1,
+                  "text": "discovers",
+                  "start_ms": 582,
+                  "end_ms": 1085
+                },
+                {
+                  "index": 2,
+                  "text": "that",
+                  "start_ms": 1145,
+                  "end_ms": 1265
+                },
+                {
+                  "index": 3,
+                  "text": "the",
+                  "start_ms": 1305,
+                  "end_ms": 1386
+                },
+                {
+                  "index": 4,
+                  "text": "more",
+                  "start_ms": 1466,
+                  "end_ms": 1687
+                },
+                {
+                  "index": 5,
+                  "text": "she",
+                  "start_ms": 1767,
+                  "end_ms": 1868
+                },
+                {
+                  "index": 6,
+                  "text": "listens,",
+                  "start_ms": 1948,
+                  "end_ms": 2370
+                },
+                {
+                  "index": 7,
+                  "text": "the",
+                  "start_ms": 2872,
+                  "end_ms": 2952
+                },
+                {
+                  "index": 8,
+                  "text": "better",
+                  "start_ms": 3013,
+                  "end_ms": 3254
+                },
+                {
+                  "index": 9,
+                  "text": "she",
+                  "start_ms": 3354,
+                  "end_ms": 3454
+                },
+                {
+                  "index": 10,
+                  "text": "understands.",
+                  "start_ms": 3515,
+                  "end_ms": 4117
+                }
+              ],
+              "auditory_review": "pending",
+              "duration_ms": 4800,
+              "sha256": "c92f803cdc3627aa97651e3c451b7234a2272d90521860b6895fc18166210ec9",
+              "alignment": "wav2vec2-ctc-exact-mp3",
+              "ctc_transcript": "SHE DISCOVERS THAT THE MORE SHE LISTENS THE BETTER SHE UNDERSTANDS",
+              "produced_at": "2026-11-03T01:18:03.358479+00:00",
+              "model": "hexgrad/Kokoro-82M",
+              "pipeline_version": "kokoro-0.9.4",
+              "duration_basis": "decoded-pcm-24000-mono"
+            }
+          },
+          "image": {
+            "id": "scene-pattern-9175-03",
+            "atlas": "assets/scenes/pattern-9175-atlas-v1.webp",
+            "cell": 2,
+            "columns": 3,
+            "rows": 4,
+            "width": 1536,
+            "height": 2048,
+            "status": "planned"
+          }
+        },
+        {
+          "id": "pattern-9175-04",
+          "pattern_id": 9175,
+          "catalog_id": "import-ten-18",
+          "en": "I believe that the more we share ideas, the more creative we become.",
+          "ar": "أعتقد أنه كلما تبادلنا الأفكار أكثر، أصبحنا أكثر إبداعًا.",
+          "context": "أعتقد أنه كلما تبادلنا الأفكار أكثر، أصبحنا أكثر إبداعًا.",
+          "scene_description": "Team sharing creative ideas",
+          "difficulty": {
+            "stage": 2,
+            "cefr": "B1–B2",
+            "stage_label": "توسيع"
+          },
+          "vocabulary": [],
+          "exercise_ids": [
+            "pattern-9175-04-transfer"
+          ],
+          "recordings": {
+            "male": {
+              "voice_id": "am_adam",
+              "path": "assets/audio/pattern-9175-04-male.mp3",
+              "text": "I believe that the more we share ideas, the more creative we become.",
+              "status": "structurally_verified",
+              "words": [
+                {
+                  "index": 0,
+                  "text": "I",
+                  "start_ms": 360,
+                  "end_ms": 380
+                },
+                {
+                  "index": 1,
+                  "text": "believe",
+                  "start_ms": 461,
+                  "end_ms": 781
+                },
+                {
+                  "index": 2,
+                  "text": "that",
+                  "start_ms": 841,
+                  "end_ms": 961
+                },
+                {
+                  "index": 3,
+                  "text": "the",
+                  "start_ms": 1001,
+                  "end_ms": 1081
+                },
+                {
+                  "index": 4,
+                  "text": "more",
+                  "start_ms": 1121,
+                  "end_ms": 1282
+                },
+                {
+                  "index": 5,
+                  "text": "we",
+                  "start_ms": 1342,
+                  "end_ms": 1442
+                },
+                {
+                  "index": 6,
+                  "text": "share",
+                  "start_ms": 1502,
+                  "end_ms": 1722
+                },
+                {
+                  "index": 7,
+                  "text": "ideas,",
+                  "start_ms": 1862,
+                  "end_ms": 2263
+                },
+                {
+                  "index": 8,
+                  "text": "the",
+                  "start_ms": 2663,
+                  "end_ms": 2743
+                },
+                {
+                  "index": 9,
+                  "text": "more",
+                  "start_ms": 2763,
+                  "end_ms": 2904
+                },
+                {
+                  "index": 10,
+                  "text": "creative",
+                  "start_ms": 3024,
+                  "end_ms": 3464
+                },
+                {
+                  "index": 11,
+                  "text": "we",
+                  "start_ms": 3504,
+                  "end_ms": 3584
+                },
+                {
+                  "index": 12,
+                  "text": "become.",
+                  "start_ms": 3685,
+                  "end_ms": 4125
+                }
+              ],
+              "auditory_review": "pending",
+              "duration_ms": 4826,
+              "sha256": "2f16e71c0ce7abf43f1b917242c21a3a6e8fda22be9b45acac7bf971ef6adc43",
+              "alignment": "wav2vec2-ctc-exact-mp3",
+              "ctc_transcript": "I BELIEVE THAT THE MORE WE SHARE IDEAS THE MORE CREATIVE WE BECOME",
+              "produced_at": "2026-11-03T01:18:05.920503+00:00",
+              "model": "hexgrad/Kokoro-82M",
+              "pipeline_version": "kokoro-0.9.4",
+              "duration_basis": "decoded-pcm-24000-mono"
+            },
+            "female": {
+              "voice_id": "af_bella",
+              "path": "assets/audio/pattern-9175-04-female.mp3",
+              "text": "I believe that the more we share ideas, the more creative we become.",
+              "status": "structurally_verified",
+              "words": [
+                {
+                  "index": 0,
+                  "text": "I",
+                  "start_ms": 502,
+                  "end_ms": 522
+                },
+                {
+                  "index": 1,
+                  "text": "believe",
+                  "start_ms": 622,
+                  "end_ms": 964
+                },
+                {
+                  "index": 2,
+                  "text": "that",
+                  "start_ms": 1024,
+                  "end_ms": 1145
+                },
+                {
+                  "index": 3,
+                  "text": "the",
+                  "start_ms": 1185,
+                  "end_ms": 1265
+                },
+                {
+                  "index": 4,
+                  "text": "more",
+                  "start_ms": 1305,
+                  "end_ms": 1486
+                },
+                {
+                  "index": 5,
+                  "text": "we",
+                  "start_ms": 1546,
+                  "end_ms": 1647
+                },
+                {
+                  "index": 6,
+                  "text": "share",
+                  "start_ms": 1727,
+                  "end_ms": 1928
+                },
+                {
+                  "index": 7,
+                  "text": "ideas,",
+                  "start_ms": 2048,
+                  "end_ms": 2450
+                },
+                {
+                  "index": 8,
+                  "text": "the",
+                  "start_ms": 2912,
+                  "end_ms": 2992
+                },
+                {
+                  "index": 9,
+                  "text": "more",
+                  "start_ms": 3032,
+                  "end_ms": 3173
+                },
+                {
+                  "index": 10,
+                  "text": "creative",
+                  "start_ms": 3273,
+                  "end_ms": 3735
+                },
+                {
+                  "index": 11,
+                  "text": "we",
+                  "start_ms": 3755,
+                  "end_ms": 3835
+                },
+                {
+                  "index": 12,
+                  "text": "become.",
+                  "start_ms": 3916,
+                  "end_ms": 4378
+                }
+              ],
+              "auditory_review": "pending",
+              "duration_ms": 5000,
+              "sha256": "f146c10fdde77cb073a098e61a764927fe51a7142aa950b852be35c4cee1f60b",
+              "alignment": "wav2vec2-ctc-exact-mp3",
+              "ctc_transcript": "I BELIEVE THAT THE MORE WE SHARE IDEAS THE MORE CREATIVE WE BECOME",
+              "produced_at": "2026-11-03T01:18:08.561430+00:00",
+              "model": "hexgrad/Kokoro-82M",
+              "pipeline_version": "kokoro-0.9.4",
+              "duration_basis": "decoded-pcm-24000-mono"
+            }
+          },
+          "image": {
+            "id": "scene-pattern-9175-04",
+            "atlas": "assets/scenes/pattern-9175-atlas-v1.webp",
+            "cell": 3,
+            "columns": 3,
+            "rows": 4,
+            "width": 1536,
+            "height": 2048,
+            "status": "planned"
+          }
+        },
+        {
+          "id": "pattern-9175-05",
+          "pattern_id": 9175,
+          "catalog_id": "import-ten-18",
+          "en": "The earlier we leave, the less traffic we will face.",
+          "ar": "كلما غادرنا أبكر، قل الازدحام الذي سنواجهه.",
+          "context": "كلما غادرنا أبكر، قل الازدحام الذي سنواجهه.",
+          "scene_description": "Travelers choosing an early departure",
+          "difficulty": {
+            "stage": 3,
+            "cefr": "B1–B2",
+            "stage_label": "مقارنة"
+          },
+          "vocabulary": [],
+          "exercise_ids": [
+            "pattern-9175-05-transfer"
+          ],
+          "recordings": {
+            "male": {
+              "voice_id": "am_adam",
+              "path": "assets/audio/pattern-9175-05-male.mp3",
+              "text": "The earlier we leave, the less traffic we will face.",
+              "status": "structurally_verified",
+              "words": [
+                {
+                  "index": 0,
+                  "text": "The",
+                  "start_ms": 301,
+                  "end_ms": 402
+                },
+                {
+                  "index": 1,
+                  "text": "earlier",
+                  "start_ms": 462,
+                  "end_ms": 723
+                },
+                {
+                  "index": 2,
+                  "text": "we",
+                  "start_ms": 783,
+                  "end_ms": 864
+                },
+                {
+                  "index": 3,
+                  "text": "leave,",
+                  "start_ms": 964,
+                  "end_ms": 1245
+                },
+                {
+                  "index": 4,
+                  "text": "the",
+                  "start_ms": 1506,
+                  "end_ms": 1587
+                },
+                {
+                  "index": 5,
+                  "text": "less",
+                  "start_ms": 1627,
+                  "end_ms": 1788
+                },
+                {
+                  "index": 6,
+                  "text": "traffic",
+                  "start_ms": 1868,
+                  "end_ms": 2189
+                },
+                {
+                  "index": 7,
+                  "text": "we",
+                  "start_ms": 2249,
+                  "end_ms": 2310
+                },
+                {
+                  "index": 8,
+                  "text": "will",
+                  "start_ms": 2350,
+                  "end_ms": 2511
+                },
+                {
+                  "index": 9,
+                  "text": "face.",
+                  "start_ms": 2551,
+                  "end_ms": 2912
+                }
+              ],
+              "auditory_review": "pending",
+              "duration_ms": 3575,
+              "sha256": "6aa3e1f34ccd3e508ae2b3e9ff8473288295e7388370224451de8de5a0be7567",
+              "alignment": "wav2vec2-ctc-exact-mp3",
+              "ctc_transcript": "THE EARLIER WE LEAVE THE LESS TRAFFIC WE WILL FACE",
+              "produced_at": "2026-11-03T01:18:10.290604+00:00",
+              "model": "hexgrad/Kokoro-82M",
+              "pipeline_version": "kokoro-0.9.4",
+              "duration_basis": "decoded-pcm-24000-mono"
+            },
+            "female": {
+              "voice_id": "af_bella",
+              "path": "assets/audio/pattern-9175-05-female.mp3",
+              "text": "The earlier we leave, the less traffic we will face.",
+              "status": "structurally_verified",
+              "words": [
+                {
+                  "index": 0,
+                  "text": "The",
+                  "start_ms": 422,
+                  "end_ms": 522
+                },
+                {
+                  "index": 1,
+                  "text": "earlier",
+                  "start_ms": 602,
+                  "end_ms": 904
+                },
+                {
+                  "index": 2,
+                  "text": "we",
+                  "start_ms": 944,
+                  "end_ms": 1024
+                },
+                {
+                  "index": 3,
+                  "text": "leave,",
+                  "start_ms": 1104,
+                  "end_ms": 1386
+                },
+                {
+                  "index": 4,
+                  "text": "the",
+                  "start_ms": 1767,
+                  "end_ms": 1827
+                },
+                {
+                  "index": 5,
+                  "text": "less",
+                  "start_ms": 1867,
+                  "end_ms": 2048
+                },
+                {
+                  "index": 6,
+                  "text": "traffic",
+                  "start_ms": 2108,
+                  "end_ms": 2450
+                },
+                {
+                  "index": 7,
+                  "text": "we",
+                  "start_ms": 2510,
+                  "end_ms": 2570
+                },
+                {
+                  "index": 8,
+                  "text": "will",
+                  "start_ms": 2610,
+                  "end_ms": 2751
+                },
+                {
+                  "index": 9,
+                  "text": "face.",
+                  "start_ms": 2791,
+                  "end_ms": 3132
+                }
+              ],
+              "auditory_review": "pending",
+              "duration_ms": 3775,
+              "sha256": "a289601e5cb9c70bb8aec8a53e7fae06d55d0d8e3b4c6e60cf1bfbbeb032bf33",
+              "alignment": "wav2vec2-ctc-exact-mp3",
+              "ctc_transcript": "THE EARLIER WE LEAVE THE LESS TRAFFIC WE WILL FACE",
+              "produced_at": "2026-11-03T01:18:12.111076+00:00",
+              "model": "hexgrad/Kokoro-82M",
+              "pipeline_version": "kokoro-0.9.4",
+              "duration_basis": "decoded-pcm-24000-mono"
+            }
+          },
+          "image": {
+            "id": "scene-pattern-9175-05",
+            "atlas": "assets/scenes/pattern-9175-atlas-v1.webp",
+            "cell": 4,
+            "columns": 3,
+            "rows": 4,
+            "width": 1536,
+            "height": 2048,
+            "status": "planned"
+          }
+        },
+        {
+          "id": "pattern-9175-06",
+          "pattern_id": 9175,
+          "catalog_id": "import-ten-18",
+          "en": "The more carefully you listen, the more details you notice.",
+          "ar": "كلما أصغيت بعناية أكبر، لاحظت تفاصيل أكثر.",
+          "context": "كلما أصغيت بعناية أكبر، لاحظت تفاصيل أكثر.",
+          "scene_description": "Learner concentrating on a speaker",
+          "difficulty": {
+            "stage": 3,
+            "cefr": "B1–B2",
+            "stage_label": "مقارنة"
+          },
+          "vocabulary": [],
+          "exercise_ids": [
+            "pattern-9175-06-transfer"
+          ],
+          "recordings": {
+            "male": {
+              "voice_id": "am_adam",
+              "path": "assets/audio/pattern-9175-06-male.mp3",
+              "text": "The more carefully you listen, the more details you notice.",
+              "status": "structurally_verified",
+              "words": [
+                {
+                  "index": 0,
+                  "text": "The",
+                  "start_ms": 301,
+                  "end_ms": 362
+                },
+                {
+                  "index": 1,
+                  "text": "more",
+                  "start_ms": 402,
+                  "end_ms": 543
+                },
+                {
+                  "index": 2,
+                  "text": "carefully",
+                  "start_ms": 623,
+                  "end_ms": 1065
+                },
+                {
+                  "index": 3,
+                  "text": "you",
+                  "start_ms": 1105,
+                  "end_ms": 1186
+                },
+                {
+                  "index": 4,
+                  "text": "listen,",
+                  "start_ms": 1266,
+                  "end_ms": 1548
+                },
+                {
+                  "index": 5,
+                  "text": "the",
+                  "start_ms": 1909,
+                  "end_ms": 1990
+                },
+                {
+                  "index": 6,
+                  "text": "more",
+                  "start_ms": 2030,
+                  "end_ms": 2191
+                },
+                {
+                  "index": 7,
+                  "text": "details",
+                  "start_ms": 2271,
+                  "end_ms": 2733
+                },
+                {
+                  "index": 8,
+                  "text": "you",
+                  "start_ms": 2794,
+                  "end_ms": 2874
+                },
+                {
+                  "index": 9,
+                  "text": "notice.",
+                  "start_ms": 2995,
+                  "end_ms": 3336
+                }
+              ],
+              "auditory_review": "pending",
+              "duration_ms": 4100,
+              "sha256": "f1b611ee12e026f5ae56706bdd7641af9b01dce5117571f3b893824d86b2be66",
+              "alignment": "wav2vec2-ctc-exact-mp3",
+              "ctc_transcript": "THE MORE CAREFULLY YOU LISTEN THE MORE DETAILS YOU NOTICE",
+              "produced_at": "2026-11-03T01:18:14.371959+00:00",
+              "model": "hexgrad/Kokoro-82M",
+              "pipeline_version": "kokoro-0.9.4",
+              "duration_basis": "decoded-pcm-24000-mono"
+            },
+            "female": {
+              "voice_id": "af_bella",
+              "path": "assets/audio/pattern-9175-06-female.mp3",
+              "text": "The more carefully you listen, the more details you notice.",
+              "status": "structurally_verified",
+              "words": [
+                {
+                  "index": 0,
+                  "text": "The",
+                  "start_ms": 421,
+                  "end_ms": 481
+                },
+                {
+                  "index": 1,
+                  "text": "more",
+                  "start_ms": 521,
+                  "end_ms": 661
+                },
+                {
+                  "index": 2,
+                  "text": "carefully",
+                  "start_ms": 761,
+                  "end_ms": 1181
+                },
+                {
+                  "index": 3,
+                  "text": "you",
+                  "start_ms": 1221,
+                  "end_ms": 1322
+                },
+                {
+                  "index": 4,
+                  "text": "listen,",
+                  "start_ms": 1402,
+                  "end_ms": 1682
+                },
+                {
+                  "index": 5,
+                  "text": "the",
+                  "start_ms": 2143,
+                  "end_ms": 2203
+                },
+                {
+                  "index": 6,
+                  "text": "more",
+                  "start_ms": 2243,
+                  "end_ms": 2383
+                },
+                {
+                  "index": 7,
+                  "text": "details",
+                  "start_ms": 2463,
+                  "end_ms": 2883
+                },
+                {
+                  "index": 8,
+                  "text": "you",
+                  "start_ms": 2924,
+                  "end_ms": 3004
+                },
+                {
+                  "index": 9,
+                  "text": "notice.",
+                  "start_ms": 3084,
+                  "end_ms": 3424
+                }
+              ],
+              "auditory_review": "pending",
+              "duration_ms": 4125,
+              "sha256": "7cb3b6263b61c73867bb00e0e276caf02066dc34a05b6205764c77f28b8e4e4d",
+              "alignment": "wav2vec2-ctc-exact-mp3",
+              "ctc_transcript": "THE MORE CAREFULLY YOU LISTEN THE MORE DETAILS YOU NOTICE",
+              "produced_at": "2026-11-03T01:18:16.329584+00:00",
+              "model": "hexgrad/Kokoro-82M",
+              "pipeline_version": "kokoro-0.9.4",
+              "duration_basis": "decoded-pcm-24000-mono"
+            }
+          },
+          "image": {
+            "id": "scene-pattern-9175-06",
+            "atlas": "assets/scenes/pattern-9175-atlas-v1.webp",
+            "cell": 5,
+            "columns": 3,
+            "rows": 4,
+            "width": 1536,
+            "height": 2048,
+            "status": "planned"
+          }
+        },
+        {
+          "id": "pattern-9175-07",
+          "pattern_id": 9175,
+          "catalog_id": "import-ten-18",
+          "en": "The longer I wait, the more nervous I become.",
+          "ar": "كلما طال انتظاري، ازددت توترًا.",
+          "context": "كلما طال انتظاري، ازددت توترًا.",
+          "scene_description": "Adult waiting anxiously at reception",
+          "difficulty": {
+            "stage": 4,
+            "cefr": "B1–B2",
+            "stage_label": "استخدام"
+          },
+          "vocabulary": [],
+          "exercise_ids": [
+            "pattern-9175-07-transfer"
+          ],
+          "recordings": {
+            "male": {
+              "voice_id": "am_adam",
+              "path": "assets/audio/pattern-9175-07-male.mp3",
+              "text": "The longer I wait, the more nervous I become.",
+              "status": "structurally_verified",
+              "words": [
+                {
+                  "index": 0,
+                  "text": "The",
+                  "start_ms": 321,
+                  "end_ms": 402
+                },
+                {
+                  "index": 1,
+                  "text": "longer",
+                  "start_ms": 482,
+                  "end_ms": 783
+                },
+                {
+                  "index": 2,
+                  "text": "I",
+                  "start_ms": 864,
+                  "end_ms": 884
+                },
+                {
+                  "index": 3,
+                  "text": "wait,",
+                  "start_ms": 964,
+                  "end_ms": 1185
+                },
+                {
+                  "index": 4,
+                  "text": "the",
+                  "start_ms": 1466,
+                  "end_ms": 1547
+                },
+                {
+                  "index": 5,
+                  "text": "more",
+                  "start_ms": 1587,
+                  "end_ms": 1727
+                },
+                {
+                  "index": 6,
+                  "text": "nervous",
+                  "start_ms": 1808,
+                  "end_ms": 2129
+                },
+                {
+                  "index": 7,
+                  "text": "I",
+                  "start_ms": 2230,
+                  "end_ms": 2270
+                },
+                {
+                  "index": 8,
+                  "text": "become.",
+                  "start_ms": 2350,
+                  "end_ms": 2792
+                }
+              ],
+              "auditory_review": "pending",
+              "duration_ms": 3475,
+              "sha256": "8bed369b94e6af1786303229f3d50e3a8dbe6bce797a59ac075a5abee779b8f6",
+              "alignment": "wav2vec2-ctc-exact-mp3",
+              "ctc_transcript": "THE LONGER I WAIT THE MORE NERVOUS I BECOME",
+              "produced_at": "2026-11-03T01:18:18.044547+00:00",
+              "model": "hexgrad/Kokoro-82M",
+              "pipeline_version": "kokoro-0.9.4",
+              "duration_basis": "decoded-pcm-24000-mono"
+            },
+            "female": {
+              "voice_id": "af_bella",
+              "path": "assets/audio/pattern-9175-07-female.mp3",
+              "text": "The longer I wait, the more nervous I become.",
+              "status": "structurally_verified",
+              "words": [
+                {
+                  "index": 0,
+                  "text": "The",
+                  "start_ms": 421,
+                  "end_ms": 501
+                },
+                {
+                  "index": 1,
+                  "text": "longer",
+                  "start_ms": 562,
+                  "end_ms": 862
+                },
+                {
+                  "index": 2,
+                  "text": "I",
+                  "start_ms": 923,
+                  "end_ms": 943
+                },
+                {
+                  "index": 3,
+                  "text": "wait,",
+                  "start_ms": 1043,
+                  "end_ms": 1244
+                },
+                {
+                  "index": 4,
+                  "text": "the",
+                  "start_ms": 1665,
+                  "end_ms": 1745
+                },
+                {
+                  "index": 5,
+                  "text": "more",
+                  "start_ms": 1785,
+                  "end_ms": 1925
+                },
+                {
+                  "index": 6,
+                  "text": "nervous",
+                  "start_ms": 2006,
+                  "end_ms": 2306
+                },
+                {
+                  "index": 7,
+                  "text": "I",
+                  "start_ms": 2387,
+                  "end_ms": 2407
+                },
+                {
+                  "index": 8,
+                  "text": "become.",
+                  "start_ms": 2487,
+                  "end_ms": 2948
+                }
+              ],
+              "auditory_review": "pending",
+              "duration_ms": 3550,
+              "sha256": "91ec78d122a2e5b2b82322a2a79a3968e802264ab332cee010a902d50dc1bb34",
+              "alignment": "wav2vec2-ctc-exact-mp3",
+              "ctc_transcript": "THE LONGER I WAIT THE MORE NERVOUS I BECOME",
+              "produced_at": "2026-11-03T01:18:20.018692+00:00",
+              "model": "hexgrad/Kokoro-82M",
+              "pipeline_version": "kokoro-0.9.4",
+              "duration_basis": "decoded-pcm-24000-mono"
+            }
+          },
+          "image": {
+            "id": "scene-pattern-9175-07",
+            "atlas": "assets/scenes/pattern-9175-atlas-v1.webp",
+            "cell": 6,
+            "columns": 3,
+            "rows": 4,
+            "width": 1536,
+            "height": 2048,
+            "status": "planned"
+          }
+        },
+        {
+          "id": "pattern-9175-08",
+          "pattern_id": 9175,
+          "catalog_id": "import-ten-18",
+          "en": "The more often we meet, the easier our conversations become.",
+          "ar": "كلما التقينا أكثر، أصبحت محادثاتنا أسهل.",
+          "context": "كلما التقينا أكثر، أصبحت محادثاتنا أسهل.",
+          "scene_description": "Regular conversation partners chatting comfortably",
+          "difficulty": {
+            "stage": 4,
+            "cefr": "B1–B2",
+            "stage_label": "استخدام"
+          },
+          "vocabulary": [],
+          "exercise_ids": [
+            "pattern-9175-08-transfer"
+          ],
+          "recordings": {
+            "male": {
+              "voice_id": "am_adam",
+              "path": "assets/audio/pattern-9175-08-male.mp3",
+              "text": "The more often we meet, the easier our conversations become.",
+              "status": "structurally_verified",
+              "words": [
+                {
+                  "index": 0,
+                  "text": "The",
+                  "start_ms": 301,
+                  "end_ms": 382
+                },
+                {
+                  "index": 1,
+                  "text": "more",
+                  "start_ms": 422,
+                  "end_ms": 583
+                },
+                {
+                  "index": 2,
+                  "text": "often",
+                  "start_ms": 703,
+                  "end_ms": 924
+                },
+                {
+                  "index": 3,
+                  "text": "we",
+                  "start_ms": 984,
+                  "end_ms": 1065
+                },
+                {
+                  "index": 4,
+                  "text": "meet,",
+                  "start_ms": 1145,
+                  "end_ms": 1346
+                },
+                {
+                  "index": 5,
+                  "text": "the",
+                  "start_ms": 1748,
+                  "end_ms": 1848
+                },
+                {
+                  "index": 6,
+                  "text": "easier",
+                  "start_ms": 1949,
+                  "end_ms": 2250
+                },
+                {
+                  "index": 7,
+                  "text": "our",
+                  "start_ms": 2331,
+                  "end_ms": 2411
+                },
+                {
+                  "index": 8,
+                  "text": "conversations",
+                  "start_ms": 2471,
+                  "end_ms": 3174
+                },
+                {
+                  "index": 9,
+                  "text": "become.",
+                  "start_ms": 3255,
+                  "end_ms": 3717
+                }
+              ],
+              "auditory_review": "pending",
+              "duration_ms": 4400,
+              "sha256": "031db40c8661d3f7bf83f4f706f00c43dc90d21498b0ffbb280e5edcdd924413",
+              "alignment": "wav2vec2-ctc-exact-mp3",
+              "ctc_transcript": "THE MORE OFTEN WE MEET THE EASIER OUR CONVERSATIONS BECOME",
+              "produced_at": "2026-11-03T01:18:22.124716+00:00",
+              "model": "hexgrad/Kokoro-82M",
+              "pipeline_version": "kokoro-0.9.4",
+              "duration_basis": "decoded-pcm-24000-mono"
+            },
+            "female": {
+              "voice_id": "af_bella",
+              "path": "assets/audio/pattern-9175-08-female.mp3",
+              "text": "The more often we meet, the easier our conversations become.",
+              "status": "structurally_verified",
+              "words": [
+                {
+                  "index": 0,
+                  "text": "The",
+                  "start_ms": 422,
+                  "end_ms": 482
+                },
+                {
+                  "index": 1,
+                  "text": "more",
+                  "start_ms": 522,
+                  "end_ms": 683
+                },
+                {
+                  "index": 2,
+                  "text": "often",
+                  "start_ms": 804,
+                  "end_ms": 1025
+                },
+                {
+                  "index": 3,
+                  "text": "we",
+                  "start_ms": 1085,
+                  "end_ms": 1165
+                },
+                {
+                  "index": 4,
+                  "text": "meet,",
+                  "start_ms": 1246,
+                  "end_ms": 1426
+                },
+                {
+                  "index": 5,
+                  "text": "the",
+                  "start_ms": 1908,
+                  "end_ms": 1989
+                },
+                {
+                  "index": 6,
+                  "text": "easier",
+                  "start_ms": 2109,
+                  "end_ms": 2411
+                },
+                {
+                  "index": 7,
+                  "text": "our",
+                  "start_ms": 2491,
+                  "end_ms": 2571
+                },
+                {
+                  "index": 8,
+                  "text": "conversations",
+                  "start_ms": 2632,
+                  "end_ms": 3335
+                },
+                {
+                  "index": 9,
+                  "text": "become.",
+                  "start_ms": 3395,
+                  "end_ms": 3877
+                }
+              ],
+              "auditory_review": "pending",
+              "duration_ms": 4500,
+              "sha256": "d47b0431fd11485c1c661e520ecfd93fe657d3c80322da272c63f8d58574f900",
+              "alignment": "wav2vec2-ctc-exact-mp3",
+              "ctc_transcript": "THE MORE OFTEN WE MEET THE EASIER OUR CONVERSATIONS BECOME",
+              "produced_at": "2026-11-03T01:18:24.556687+00:00",
+              "model": "hexgrad/Kokoro-82M",
+              "pipeline_version": "kokoro-0.9.4",
+              "duration_basis": "decoded-pcm-24000-mono"
+            }
+          },
+          "image": {
+            "id": "scene-pattern-9175-08",
+            "atlas": "assets/scenes/pattern-9175-atlas-v1.webp",
+            "cell": 7,
+            "columns": 3,
+            "rows": 4,
+            "width": 1536,
+            "height": 2048,
+            "status": "planned"
+          }
+        },
+        {
+          "id": "pattern-9175-09",
+          "pattern_id": 9175,
+          "catalog_id": "import-ten-18",
+          "en": "The less luggage we carry, the easier the journey will be.",
+          "ar": "كلما قلّت الأمتعة التي نحملها، كانت الرحلة أسهل.",
+          "context": "كلما قلّت الأمتعة التي نحملها، كانت الرحلة أسهل.",
+          "scene_description": "Travelers comparing light and heavy bags",
+          "difficulty": {
+            "stage": 5,
+            "cefr": "B1–B2",
+            "stage_label": "ربط"
+          },
+          "vocabulary": [],
+          "exercise_ids": [
+            "pattern-9175-09-transfer"
+          ],
+          "recordings": {
+            "male": {
+              "voice_id": "am_adam",
+              "path": "assets/audio/pattern-9175-09-male.mp3",
+              "text": "The less luggage we carry, the easier the journey will be.",
+              "status": "structurally_verified",
+              "words": [
+                {
+                  "index": 0,
+                  "text": "The",
+                  "start_ms": 301,
+                  "end_ms": 382
+                },
+                {
+                  "index": 1,
+                  "text": "less",
+                  "start_ms": 462,
+                  "end_ms": 643
+                },
+                {
+                  "index": 2,
+                  "text": "luggage",
+                  "start_ms": 764,
+                  "end_ms": 1045
+                },
+                {
+                  "index": 3,
+                  "text": "we",
+                  "start_ms": 1105,
+                  "end_ms": 1186
+                },
+                {
+                  "index": 4,
+                  "text": "carry,",
+                  "start_ms": 1266,
+                  "end_ms": 1588
+                },
+                {
+                  "index": 5,
+                  "text": "the",
+                  "start_ms": 1950,
+                  "end_ms": 2050
+                },
+                {
+                  "index": 6,
+                  "text": "easier",
+                  "start_ms": 2171,
+                  "end_ms": 2432
+                },
+                {
+                  "index": 7,
+                  "text": "the",
+                  "start_ms": 2492,
+                  "end_ms": 2552
+                },
+                {
+                  "index": 8,
+                  "text": "journey",
+                  "start_ms": 2613,
+                  "end_ms": 2914
+                },
+                {
+                  "index": 9,
+                  "text": "will",
+                  "start_ms": 2954,
+                  "end_ms": 3115
+                },
+                {
+                  "index": 10,
+                  "text": "be.",
+                  "start_ms": 3397,
+                  "end_ms": 3437
+                }
+              ],
+              "auditory_review": "pending",
+              "duration_ms": 4100,
+              "sha256": "0166785a8bcb82bd814d0a57e66799ddcb7744632040488076aa1f3d60ae4e4b",
+              "alignment": "wav2vec2-ctc-exact-mp3",
+              "ctc_transcript": "THE LESS LUGGAGE WE CARRY THE EASIER THE JOURNEY WILL BE",
+              "produced_at": "2026-11-03T01:18:26.462087+00:00",
+              "model": "hexgrad/Kokoro-82M",
+              "pipeline_version": "kokoro-0.9.4",
+              "duration_basis": "decoded-pcm-24000-mono"
+            },
+            "female": {
+              "voice_id": "af_bella",
+              "path": "assets/audio/pattern-9175-09-female.mp3",
+              "text": "The less luggage we carry, the easier the journey will be.",
+              "status": "structurally_verified",
+              "words": [
+                {
+                  "index": 0,
+                  "text": "The",
+                  "start_ms": 421,
+                  "end_ms": 501
+                },
+                {
+                  "index": 1,
+                  "text": "less",
+                  "start_ms": 561,
+                  "end_ms": 742
+                },
+                {
+                  "index": 2,
+                  "text": "luggage",
+                  "start_ms": 822,
+                  "end_ms": 1123
+                },
+                {
+                  "index": 3,
+                  "text": "we",
+                  "start_ms": 1183,
+                  "end_ms": 1263
+                },
+                {
+                  "index": 4,
+                  "text": "carry,",
+                  "start_ms": 1323,
+                  "end_ms": 1584
+                },
+                {
+                  "index": 5,
+                  "text": "the",
+                  "start_ms": 2045,
+                  "end_ms": 2145
+                },
+                {
+                  "index": 6,
+                  "text": "easier",
+                  "start_ms": 2245,
+                  "end_ms": 2526
+                },
+                {
+                  "index": 7,
+                  "text": "the",
+                  "start_ms": 2586,
+                  "end_ms": 2646
+                },
+                {
+                  "index": 8,
+                  "text": "journey",
+                  "start_ms": 2707,
+                  "end_ms": 3007
+                },
+                {
+                  "index": 9,
+                  "text": "will",
+                  "start_ms": 3067,
+                  "end_ms": 3208
+                },
+                {
+                  "index": 10,
+                  "text": "be.",
+                  "start_ms": 3488,
+                  "end_ms": 3529
+                }
+              ],
+              "auditory_review": "pending",
+              "duration_ms": 4150,
+              "sha256": "1ae35f6d70ab309d8c87dc14f388782b4f89c729028f4de740988498dfa5a1ad",
+              "alignment": "wav2vec2-ctc-exact-mp3",
+              "ctc_transcript": "THE LESS LUGGAGE WE CARRY THE EASIER THE JOURNEY WILL BE",
+              "produced_at": "2026-11-03T01:18:28.720480+00:00",
+              "model": "hexgrad/Kokoro-82M",
+              "pipeline_version": "kokoro-0.9.4",
+              "duration_basis": "decoded-pcm-24000-mono"
+            }
+          },
+          "image": {
+            "id": "scene-pattern-9175-09",
+            "atlas": "assets/scenes/pattern-9175-atlas-v1.webp",
+            "cell": 8,
+            "columns": 3,
+            "rows": 4,
+            "width": 1536,
+            "height": 2048,
+            "status": "planned"
+          }
+        },
+        {
+          "id": "pattern-9175-10",
+          "pattern_id": 9175,
+          "catalog_id": "import-ten-18",
+          "en": "The closer we got to the sea, the cooler the air became.",
+          "ar": "كلما اقتربنا من البحر، أصبح الهواء أبرد.",
+          "context": "كلما اقتربنا من البحر، أصبح الهواء أبرد.",
+          "scene_description": "Walkers approaching a breezy coast",
+          "difficulty": {
+            "stage": 5,
+            "cefr": "B1–B2",
+            "stage_label": "ربط"
+          },
+          "vocabulary": [],
+          "exercise_ids": [
+            "pattern-9175-10-transfer"
+          ],
+          "recordings": {
+            "male": {
+              "voice_id": "am_adam",
+              "path": "assets/audio/pattern-9175-10-male.mp3",
+              "text": "The closer we got to the sea, the cooler the air became.",
+              "status": "structurally_verified",
+              "words": [
+                {
+                  "index": 0,
+                  "text": "The",
+                  "start_ms": 280,
+                  "end_ms": 360
+                },
+                {
+                  "index": 1,
+                  "text": "closer",
+                  "start_ms": 400,
+                  "end_ms": 701
+                },
+                {
+                  "index": 2,
+                  "text": "we",
+                  "start_ms": 761,
+                  "end_ms": 841
+                },
+                {
+                  "index": 3,
+                  "text": "got",
+                  "start_ms": 921,
+                  "end_ms": 1061
+                },
+                {
+                  "index": 4,
+                  "text": "to",
+                  "start_ms": 1101,
+                  "end_ms": 1161
+                },
+                {
+                  "index": 5,
+                  "text": "the",
+                  "start_ms": 1201,
+                  "end_ms": 1262
+                },
+                {
+                  "index": 6,
+                  "text": "sea,",
+                  "start_ms": 1342,
+                  "end_ms": 1502
+                },
+                {
+                  "index": 7,
+                  "text": "the",
+                  "start_ms": 1902,
+                  "end_ms": 1982
+                },
+                {
+                  "index": 8,
+                  "text": "cooler",
+                  "start_ms": 2063,
+                  "end_ms": 2343
+                },
+                {
+                  "index": 9,
+                  "text": "the",
+                  "start_ms": 2403,
+                  "end_ms": 2483
+                },
+                {
+                  "index": 10,
+                  "text": "air",
+                  "start_ms": 2603,
+                  "end_ms": 2723
+                },
+                {
+                  "index": 11,
+                  "text": "became.",
+                  "start_ms": 2783,
+                  "end_ms": 3324
+                }
+              ],
+              "auditory_review": "pending",
+              "duration_ms": 4025,
+              "sha256": "9861c854467d6f90af350454ab33ea4c699063153e2e0528cae74130ca96d964",
+              "alignment": "wav2vec2-ctc-exact-mp3",
+              "ctc_transcript": "THE CLOSER WE GOT TO THE SEA THE COOLER THE AIR BECAME",
+              "produced_at": "2026-11-03T01:18:30.664589+00:00",
+              "model": "hexgrad/Kokoro-82M",
+              "pipeline_version": "kokoro-0.9.4",
+              "duration_basis": "decoded-pcm-24000-mono"
+            },
+            "female": {
+              "voice_id": "af_bella",
+              "path": "assets/audio/pattern-9175-10-female.mp3",
+              "text": "The closer we got to the sea, the cooler the air became.",
+              "status": "structurally_verified",
+              "words": [
+                {
+                  "index": 0,
+                  "text": "The",
+                  "start_ms": 422,
+                  "end_ms": 482
+                },
+                {
+                  "index": 1,
+                  "text": "closer",
+                  "start_ms": 522,
+                  "end_ms": 843
+                },
+                {
+                  "index": 2,
+                  "text": "we",
+                  "start_ms": 883,
+                  "end_ms": 943
+                },
+                {
+                  "index": 3,
+                  "text": "got",
+                  "start_ms": 1024,
+                  "end_ms": 1164
+                },
+                {
+                  "index": 4,
+                  "text": "to",
+                  "start_ms": 1204,
+                  "end_ms": 1265
+                },
+                {
+                  "index": 5,
+                  "text": "the",
+                  "start_ms": 1305,
+                  "end_ms": 1365
+                },
+                {
+                  "index": 6,
+                  "text": "sea,",
+                  "start_ms": 1425,
+                  "end_ms": 1606
+                },
+                {
+                  "index": 7,
+                  "text": "the",
+                  "start_ms": 2108,
+                  "end_ms": 2168
+                },
+                {
+                  "index": 8,
+                  "text": "cooler",
+                  "start_ms": 2248,
+                  "end_ms": 2549
+                },
+                {
+                  "index": 9,
+                  "text": "the",
+                  "start_ms": 2609,
+                  "end_ms": 2690
+                },
+                {
+                  "index": 10,
+                  "text": "air",
+                  "start_ms": 2830,
+                  "end_ms": 2951
+                },
+                {
+                  "index": 11,
+                  "text": "became.",
+                  "start_ms": 3031,
+                  "end_ms": 3533
+                }
+              ],
+              "auditory_review": "pending",
+              "duration_ms": 4175,
+              "sha256": "6b7e7470cf4523dafec84ac56bbc1bdd91f86d70526e42d06ce6979611f1ee96",
+              "alignment": "wav2vec2-ctc-exact-mp3",
+              "ctc_transcript": "THE CLOSER WE GOT TO THE SEA THE COOLER THE AIR BECAME",
+              "produced_at": "2026-11-03T01:18:32.990995+00:00",
+              "model": "hexgrad/Kokoro-82M",
+              "pipeline_version": "kokoro-0.9.4",
+              "duration_basis": "decoded-pcm-24000-mono"
+            }
+          },
+          "image": {
+            "id": "scene-pattern-9175-10",
+            "atlas": "assets/scenes/pattern-9175-atlas-v1.webp",
+            "cell": 9,
+            "columns": 3,
+            "rows": 4,
+            "width": 1536,
+            "height": 2048,
+            "status": "planned"
+          }
+        },
+        {
+          "id": "pattern-9175-11",
+          "pattern_id": 9175,
+          "catalog_id": "import-ten-18",
+          "en": "The more you explain, the better I understand your plan.",
+          "ar": "كلما شرحت أكثر، فهمت خطتك بصورة أفضل.",
+          "context": "كلما شرحت أكثر، فهمت خطتك بصورة أفضل.",
+          "scene_description": "Colleagues discussing a plan in detail",
+          "difficulty": {
+            "stage": 6,
+            "cefr": "B1–B2",
+            "stage_label": "إنتاج"
+          },
+          "vocabulary": [],
+          "exercise_ids": [
+            "pattern-9175-11-transfer"
+          ],
+          "recordings": {
+            "male": {
+              "voice_id": "am_adam",
+              "path": "assets/audio/pattern-9175-11-male.mp3",
+              "text": "The more you explain, the better I understand your plan.",
+              "status": "structurally_verified",
+              "words": [
+                {
+                  "index": 0,
+                  "text": "The",
+                  "start_ms": 281,
+                  "end_ms": 361
+                },
+                {
+                  "index": 1,
+                  "text": "more",
+                  "start_ms": 401,
+                  "end_ms": 541
+                },
+                {
+                  "index": 2,
+                  "text": "you",
+                  "start_ms": 602,
+                  "end_ms": 682
+                },
+                {
+                  "index": 3,
+                  "text": "explain,",
+                  "start_ms": 782,
+                  "end_ms": 1243
+                },
+                {
+                  "index": 4,
+                  "text": "the",
+                  "start_ms": 1544,
+                  "end_ms": 1624
+                },
+                {
+                  "index": 5,
+                  "text": "better",
+                  "start_ms": 1684,
+                  "end_ms": 1925
+                },
+                {
+                  "index": 6,
+                  "text": "I",
+                  "start_ms": 2025,
+                  "end_ms": 2045
+                },
+                {
+                  "index": 7,
+                  "text": "understand",
+                  "start_ms": 2146,
+                  "end_ms": 2587
+                },
+                {
+                  "index": 8,
+                  "text": "your",
+                  "start_ms": 2627,
+                  "end_ms": 2747
+                },
+                {
+                  "index": 9,
+                  "text": "plan.",
+                  "start_ms": 2787,
+                  "end_ms": 3168
+                }
+              ],
+              "auditory_review": "pending",
+              "duration_ms": 3850,
+              "sha256": "5a9f545802e61552b673a0ff193971f19affcea1caf139a5fd7ff238b58fda4b",
+              "alignment": "wav2vec2-ctc-exact-mp3",
+              "ctc_transcript": "THE MORE YOU EXPLAIN THE BETTER I UNDERSTAND YOUR PLAN",
+              "produced_at": "2026-11-03T01:18:34.854280+00:00",
+              "model": "hexgrad/Kokoro-82M",
+              "pipeline_version": "kokoro-0.9.4",
+              "duration_basis": "decoded-pcm-24000-mono"
+            },
+            "female": {
+              "voice_id": "af_bella",
+              "path": "assets/audio/pattern-9175-11-female.mp3",
+              "text": "The more you explain, the better I understand your plan.",
+              "status": "structurally_verified",
+              "words": [
+                {
+                  "index": 0,
+                  "text": "The",
+                  "start_ms": 421,
+                  "end_ms": 501
+                },
+                {
+                  "index": 1,
+                  "text": "more",
+                  "start_ms": 541,
+                  "end_ms": 682
+                },
+                {
+                  "index": 2,
+                  "text": "you",
+                  "start_ms": 742,
+                  "end_ms": 842
+                },
+                {
+                  "index": 3,
+                  "text": "explain,",
+                  "start_ms": 942,
+                  "end_ms": 1363
+                },
+                {
+                  "index": 4,
+                  "text": "the",
+                  "start_ms": 1844,
+                  "end_ms": 1925
+                },
+                {
+                  "index": 5,
+                  "text": "better",
+                  "start_ms": 1985,
+                  "end_ms": 2225
+                },
+                {
+                  "index": 6,
+                  "text": "I",
+                  "start_ms": 2366,
+                  "end_ms": 2386
+                },
+                {
+                  "index": 7,
+                  "text": "understand",
+                  "start_ms": 2486,
+                  "end_ms": 2927
+                },
+                {
+                  "index": 8,
+                  "text": "your",
+                  "start_ms": 2987,
+                  "end_ms": 3087
+                },
+                {
+                  "index": 9,
+                  "text": "plan.",
+                  "start_ms": 3128,
+                  "end_ms": 3529
+                }
+              ],
+              "auditory_review": "pending",
+              "duration_ms": 4150,
+              "sha256": "561f9e3c464e6f814869542058110a03f6f1690dd2a27cda5614c292ca5fc175",
+              "alignment": "wav2vec2-ctc-exact-mp3",
+              "ctc_transcript": "THE MORE YOU EXPLAIN THE BETTER I UNDERSTAND YOUR PLAN",
+              "produced_at": "2026-11-03T01:18:36.834491+00:00",
+              "model": "hexgrad/Kokoro-82M",
+              "pipeline_version": "kokoro-0.9.4",
+              "duration_basis": "decoded-pcm-24000-mono"
+            }
+          },
+          "image": {
+            "id": "scene-pattern-9175-11",
+            "atlas": "assets/scenes/pattern-9175-atlas-v1.webp",
+            "cell": 10,
+            "columns": 3,
+            "rows": 4,
+            "width": 1536,
+            "height": 2048,
+            "status": "planned"
+          }
+        },
+        {
+          "id": "pattern-9175-12",
+          "pattern_id": 9175,
+          "catalog_id": "import-ten-18",
+          "en": "The sooner we fix the leak, the less water we will waste.",
+          "ar": "كلما أصلحنا التسرب أسرع، قل الماء الذي سنهدره.",
+          "context": "كلما أصلحنا التسرب أسرع، قل الماء الذي سنهدره.",
+          "scene_description": "Adults inspecting a leaking tap",
+          "difficulty": {
+            "stage": 6,
+            "cefr": "B1–B2",
+            "stage_label": "إنتاج"
+          },
+          "vocabulary": [],
+          "exercise_ids": [
+            "pattern-9175-12-transfer"
+          ],
+          "recordings": {
+            "male": {
+              "voice_id": "am_adam",
+              "path": "assets/audio/pattern-9175-12-male.mp3",
+              "text": "The sooner we fix the leak, the less water we will waste.",
+              "status": "structurally_verified",
+              "words": [
+                {
+                  "index": 0,
+                  "text": "The",
+                  "start_ms": 281,
+                  "end_ms": 381
+                },
+                {
+                  "index": 1,
+                  "text": "sooner",
+                  "start_ms": 441,
+                  "end_ms": 682
+                },
+                {
+                  "index": 2,
+                  "text": "we",
+                  "start_ms": 742,
+                  "end_ms": 822
+                },
+                {
+                  "index": 3,
+                  "text": "fix",
+                  "start_ms": 942,
+                  "end_ms": 1063
+                },
+                {
+                  "index": 4,
+                  "text": "the",
+                  "start_ms": 1183,
+                  "end_ms": 1263
+                },
+                {
+                  "index": 5,
+                  "text": "leak,",
+                  "start_ms": 1323,
+                  "end_ms": 1504
+                },
+                {
+                  "index": 6,
+                  "text": "the",
+                  "start_ms": 1885,
+                  "end_ms": 1965
+                },
+                {
+                  "index": 7,
+                  "text": "less",
+                  "start_ms": 2025,
+                  "end_ms": 2225
+                },
+                {
+                  "index": 8,
+                  "text": "water",
+                  "start_ms": 2306,
+                  "end_ms": 2606
+                },
+                {
+                  "index": 9,
+                  "text": "we",
+                  "start_ms": 2647,
+                  "end_ms": 2747
+                },
+                {
+                  "index": 10,
+                  "text": "will",
+                  "start_ms": 2787,
+                  "end_ms": 2947
+                },
+                {
+                  "index": 11,
+                  "text": "waste.",
+                  "start_ms": 2987,
+                  "end_ms": 3348
+                }
+              ],
+              "auditory_review": "pending",
+              "duration_ms": 4050,
+              "sha256": "53aa13c0f563bbf03cc51d9ea4e030e8e11709c86dcddc1ead6b04fa6be72563",
+              "alignment": "wav2vec2-ctc-exact-mp3",
+              "ctc_transcript": "THE SOONER WE FIX THE LEAK THE LESS WATER WE WILL WASTE",
+              "produced_at": "2026-11-03T01:18:39.054152+00:00",
+              "model": "hexgrad/Kokoro-82M",
+              "pipeline_version": "kokoro-0.9.4",
+              "duration_basis": "decoded-pcm-24000-mono"
+            },
+            "female": {
+              "voice_id": "af_bella",
+              "path": "assets/audio/pattern-9175-12-female.mp3",
+              "text": "The sooner we fix the leak, the less water we will waste.",
+              "status": "structurally_verified",
+              "words": [
+                {
+                  "index": 0,
+                  "text": "The",
+                  "start_ms": 402,
+                  "end_ms": 502
+                },
+                {
+                  "index": 1,
+                  "text": "sooner",
+                  "start_ms": 583,
+                  "end_ms": 844
+                },
+                {
+                  "index": 2,
+                  "text": "we",
+                  "start_ms": 884,
+                  "end_ms": 965
+                },
+                {
+                  "index": 3,
+                  "text": "fix",
+                  "start_ms": 1065,
+                  "end_ms": 1186
+                },
+                {
+                  "index": 4,
+                  "text": "the",
+                  "start_ms": 1306,
+                  "end_ms": 1387
+                },
+                {
+                  "index": 5,
+                  "text": "leak,",
+                  "start_ms": 1447,
+                  "end_ms": 1628
+                },
+                {
+                  "index": 6,
+                  "text": "the",
+                  "start_ms": 2090,
+                  "end_ms": 2170
+                },
+                {
+                  "index": 7,
+                  "text": "less",
+                  "start_ms": 2231,
+                  "end_ms": 2432
+                },
+                {
+                  "index": 8,
+                  "text": "water",
+                  "start_ms": 2512,
+                  "end_ms": 2813
+                },
+                {
+                  "index": 9,
+                  "text": "we",
+                  "start_ms": 2874,
+                  "end_ms": 2954
+                },
+                {
+                  "index": 10,
+                  "text": "will",
+                  "start_ms": 3014,
+                  "end_ms": 3155
+                },
+                {
+                  "index": 11,
+                  "text": "waste.",
+                  "start_ms": 3195,
+                  "end_ms": 3577
+                }
+              ],
+              "auditory_review": "pending",
+              "duration_ms": 4200,
+              "sha256": "6cbc66cc8ef8df089c0f9c034de92c21d68bf35fab2dc6b972cfe0abbcc5aad7",
+              "alignment": "wav2vec2-ctc-exact-mp3",
+              "ctc_transcript": "THE SOONER WE FIX THE LEAK THE LESS WATER WE WILL WASTE",
+              "produced_at": "2026-11-03T01:18:41.305504+00:00",
+              "model": "hexgrad/Kokoro-82M",
+              "pipeline_version": "kokoro-0.9.4",
+              "duration_basis": "decoded-pcm-24000-mono"
+            }
+          },
+          "image": {
+            "id": "scene-pattern-9175-12",
+            "atlas": "assets/scenes/pattern-9175-atlas-v1.webp",
+            "cell": 11,
+            "columns": 3,
+            "rows": 4,
+            "width": 1536,
+            "height": 2048,
+            "status": "planned"
+          }
+        }
+      ]
+    }
+  ]
+}

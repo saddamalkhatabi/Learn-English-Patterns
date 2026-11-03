@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "checkpoint_date": "2026-11-04",
+  "baseline_main": "d3cd363e85e3da53d47e06a8c8ac488e33fa61e2",
+  "image_tasks": 16,
+  "max_primary_files_per_task": 10,
+  "expansion_atlases_to_generate": 132,
+  "reference_atlases_to_generate": 2,
+  "reference_squares_to_generate": 9,
+  "primary_files_total": 143,
+  "remaining_scene_descriptions": 1609,
+  "lesson_context_packets": 39,
+  "audio_generation_missing": 0,
+  "audio_files": 6316,
+  "audio_bindings": 6348,
+  "listening_batches": 99,
+  "node_tests": "41/41 passed",
+  "zip_intake_tests": "6/6 passed",
+  "isolated_integration": {
+    "result": "passed; test copy removed",
+    "expansion_twelve_single_cells_composed": true,
+    "reference_twelve_cell_atlas_imported": true,
+    "reference_single_rejected_cell_replaced": true,
+    "reference_four_cells_and_eight_fillers_composed": true,
+    "same_zip_retry": true,
+    "identical_pngs_repacked_in_another_zip": true,
+    "recovery_without_final_receipt": true,
+    "complete_node_check_in_fixture": true,
+    "fixture_counts_not_production": "264 expansion scenes,992 reference scenes,6316 unchanged audio files"
+  },
+  "actual_production_unchanged": {
+    "expansion_scenes": 252,
+    "reference_scenes": 975,
+    "published_patterns": 27
+  },
+  "browser_preview": "Verified image, red construction, Arabic translation and both voice controls in the local pattern catalog; no console errors captured. Screenshot:production/qa/web-handoff-preview.png",
+  "github_zip_workflow": "Prepared for manual dispatch; a real owner-supplied scene ZIP has not yet been received or imported remotely.",
+  "dependencies": "No packages or model weights installed; Python standard library, existing FFmpeg and Node22 only.",
+  "human_listening": "Still pending; no claim of full human auditory review."
+}

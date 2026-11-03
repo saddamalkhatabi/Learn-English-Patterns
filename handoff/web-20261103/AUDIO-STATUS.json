@@ -1,0 +1,20 @@
+{
+  "sentence_records": 3174,
+  "voice_bindings": 6348,
+  "male": 3174,
+  "female": 3174,
+  "distinct_files": 6316,
+  "pending_bindings": 0,
+  "note": "Bindings can reuse the same exact recording. Sentence records include lessons, story lines, references and authored expansion; they are not all distinct English texts.",
+  "expansion": {
+    "male": 1836,
+    "female": 1836,
+    "complete": 3672,
+    "total": 3672,
+    "missing": 0,
+    "percent": 100
+  },
+  "missing_generation_tasks": [],
+  "human_listening": "pending;99 optional listening batches of at most64 distinct files; never infer listening from ASR/hash alone",
+  "review_batches": 99
+}

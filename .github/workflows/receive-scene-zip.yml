@@ -1,0 +1,78 @@
+name: Receive reviewed scene ZIP
+on:
+  workflow_dispatch:
+    inputs:
+      zip_path:
+        description: ZIP already uploaded to media-inbox (uploads/EP-IMG-001.zip)
+        required: true
+        type: string
+      task_id:
+        description: EP-IMG-001 through EP-IMG-014, or EP-REF-001/002
+        required: true
+        type: string
+      apply_reviewed:
+        description: Import only with complete source-hash per-cell reviews; save to a review branch
+        type: boolean
+        default: false
+permissions:
+  contents: write
+concurrency:
+  group: scene-zip-intake
+  cancel-in-progress: false
+jobs:
+  receive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      ZIP_PATH: ${{ inputs.zip_path }}
+      TASK_ID: ${{ inputs.task_id }}
+      APPLY_REVIEWED: ${{ inputs.apply_reviewed }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/checkout@v4
+        with:
+          ref: media-tools
+          path: .media-tools
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Fetch and safely stage ZIP
+        run: |
+          python scripts/fetch-scene-inbox.py "$ZIP_PATH"
+          ZIP_FILE="incoming/scene-zips/$(basename "$ZIP_PATH")"
+          python scripts/receive-scene-zip.py "$ZIP_FILE" --task "$TASK_ID" > intake-result.json
+          python -c 'import json,os; d=json.load(open("intake-result.json")); open(os.environ["GITHUB_ENV"],"a").write("SCENE_STAGE="+d["stage"]+"\n")'
+      - name: Import reviewed source files and rebuild preview/offline content
+        if: inputs.apply_reviewed
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          python scripts/import-reviewed-scenes.py "$SCENE_STAGE"
+          npm run check
+      - name: Preserve checked changes on review branch
+        if: inputs.apply_reviewed
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          BRANCH="media/import-${TASK_ID}-${GITHUB_RUN_ID}"
+          git switch -c "$BRANCH"
+          git add -- production public docs/PRODUCTION-STATUS.json docs/VERIFIED-STATUS.json
+          git diff --cached --check
+          if ! git diff --cached --quiet; then
+            git commit -m "Import reviewed scene ZIP $TASK_ID"
+            git push origin "$BRANCH"
+          fi
+          echo "Review branch: $BRANCH. Merge into main after final review; later runs start from main." >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: scene-intake-${{ github.run_id }}
+          path: |
+            intake-result.json
+            incoming/scene-staging/**/INTAKE.json
+            incoming/scene-staging/**/REPORT.json
+          retention-days: 30
