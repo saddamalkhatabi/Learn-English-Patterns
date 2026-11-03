@@ -1,18 +1,33 @@
 {
-  "name": "English Patterns — تعلّم الإنجليزية بالأنماط",
+  "name": "English Patterns — Learn, notice, create",
   "short_name": "English Patterns",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#f7f8f3",
-  "theme_color": "#1c5c4e",
-  "lang": "ar",
-  "dir": "rtl",
+  "background_color": "#f5f6ef",
+  "theme_color": "#195d4c",
+  "lang": "en",
+  "dir": "auto",
   "icons": [
     {
       "src": "icon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any"
+    },
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
     }
-  ]
+  ],
+  "id": "./",
+  "description": "Learn English through reusable patterns, clear rules and synchronized dual voices.",
+  "scope": "./"
 }

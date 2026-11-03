@@ -63,4 +63,4 @@ async function toggleRecord(){if(recorder?.state==='recording'){recorder.stop();
 fetch('source.json').then(r=>r.json()).then(d=>{sources=d;if(page==='library')renderSources()}).catch(()=>toast('تعذر تحميل الأرشيف. أعد المحاولة بعد الاتصال.'));
 if('speechSynthesis'in window)speechSynthesis.addEventListener('voiceschanged',populateVoices);
 page=location.hash.slice(1)||'home';if(!labels[page])page='home';render();
-if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js').catch(()=>{});
+// Service worker registration and update preservation are managed by offline.js.

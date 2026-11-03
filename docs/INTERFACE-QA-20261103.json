@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "date": "2026-11-03",
+  "app_version": "25681804fa84245e",
+  "browser": "Chromium in-app browser on local project",
+  "desktop": {
+    "viewport": [1440, 1000],
+    "horizontal_overflow": false,
+    "sampled_card_picture_dimensions": [353, 353],
+    "sampled_card_count": 6,
+    "current_sentence_and_scene_visible_together": true,
+    "lesson_auto_sequence": "12 examples completed and moved to the structure stage",
+    "screenshot": ".local/qa/desktop-listening.jpg"
+  },
+  "mobile": {
+    "viewport": [390, 844],
+    "horizontal_overflow": false,
+    "current_sentence_and_scene_visible_together": true,
+    "one_image_control_in_coach": true,
+    "screenshot": ".local/qa/mobile-listening.jpg"
+  },
+  "languages": {
+    "arabic_and_english_interface_switch": "passed",
+    "arabic_learning_content_toggle": "passed; English guidance remains visible",
+    "preferences_survive_reload": true
+  },
+  "filtering": {
+    "case": "Query used to + past-habit structure + rows view",
+    "matching_sentences": 3,
+    "highlight_color": "rgb(180, 35, 53)",
+    "filters_reset_to_full_library_after_QA": 1000
+  },
+  "reading_stop": {
+    "continue_disabled_before_reading_time": true,
+    "pause_preserves_remaining_time": true,
+    "add_ten_seconds": "passed in browser and player unit test"
+  },
+  "offline": {
+    "browser_course_download": "completed with both voices and available scenes",
+    "course_files": 703,
+    "course_media_mebibytes": 17.4,
+    "range_response_without_network": "verified by isolated service-worker test",
+    "valid_media_survives_shell_update": "verified by isolated service-worker test",
+    "automatic_reload_after_new_worker": "observed during browser verification",
+    "native_os_install": "not performed; install prompt depends on browser support"
+  },
+  "checks": {
+    "automated_tests": 40,
+    "failures": 0,
+    "browser_console_errors": [],
+    "python_packages_or_models_installed": false,
+    "runtime_external_dependencies": 0
+  },
+  "media": {
+    "expansion_voice_bindings": 3672,
+    "pending_audio": 0,
+    "reviewed_expansion_scenes": 60,
+    "pending_expansion_scenes": 1776,
+    "reference_scenes_pending": 25,
+    "human_full_listening_review": false,
+    "pattern_9022": "held; no geometry approval"
+  }
+}

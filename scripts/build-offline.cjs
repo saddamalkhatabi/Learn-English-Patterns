@@ -1,0 +1,12 @@
+const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');const root=path.resolve(__dirname,'../public'),sha=p=>crypto.createHash('sha256').update(fs.readFileSync(path.join(root,p))).digest('hex');
+const shell=fs.readdirSync(root).filter(p=>/\.(?:html|css|js|json|svg)$/.test(p)&&!['sw.js','app-version.js','app-version.json','offline-manifest.json','generation-index.json','release-volumes.json','qa-report.json','qa-report-v4.json'].includes(p));
+const sets={course:new Set(),library:new Set(),all:new Set()},add=(rows,set)=>{for(const s of rows){for(const r of Object.values(s.recordings||{}))if(r.sha256)set.add(r.path);if(s.image&&['assistant-reviewed','visually_reviewed'].includes(s.image.status))set.add(s.image.atlas)}};
+for(const p of ['pilot','supplement'])add(require('../public/'+p+'.json').sentences,sets.course);add(require('../public/source-corpus.json').sentences,sets.library);
+for(const set of [sets.course,sets.library])for(const p of set)sets.all.add(p);
+const plan=require('../production/plans/expansion-all-153.json');for(const file of plan.manifest_paths)add(JSON.parse(fs.readFileSync(file)).sentences,sets.all);
+const media=[...sets.all].sort().map(p=>({path:p,sha256:sha(p),bytes:fs.statSync(path.join(root,p)).size,groups:['course','library','all'].filter(g=>sets[g].has(p))}));
+for(const p of ['icon-192.png','icon-512.png'])if(fs.existsSync(path.join(root,p)))shell.push(p);
+const version=crypto.createHash('sha256').update(JSON.stringify({shell:shell.sort().map(p=>[p,sha(p)]),media,worker:sha('sw.js')})).digest('hex').slice(0,16),build={version,label:'2026.11 · Learn, notice, create'};
+fs.writeFileSync(path.join(root,'app-version.js'),'self.EP_BUILD='+JSON.stringify(build)+';\n');fs.writeFileSync(path.join(root,'app-version.json'),JSON.stringify(build,null,2)+'\n');
+shell.push('app-version.js','app-version.json');
+fs.writeFileSync(path.join(root,'offline-manifest.json'),JSON.stringify({schema:1,version,shell,media},null,2)+'\n');console.log(JSON.stringify({version,shell:shell.length,media:media.length,bytes:media.reduce((n,x)=>n+x.bytes,0)}));
