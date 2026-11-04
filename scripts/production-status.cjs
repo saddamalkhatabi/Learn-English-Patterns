@@ -29,8 +29,9 @@ const patterns = plan.patterns.map(p => {
     if (valid) voices[gender]++; else missing.push(s.id + '/' + gender);
   }
   const images = sentences.filter(s => reviewedImage(s.image)).length;
+  const displayable = sentences.filter(s => ['assistant-reviewed','visually_reviewed','imported-unreviewed'].includes(s.image?.status)).length;
   return { key: p.key, catalog_id: p.catalog_id, title: p.title, form: p.form, sentences: 12, audio: voices,
-    missing_recordings: missing, reviewed_images: images, missing_images: sentences.filter(s => !reviewedImage(s.image)).map(s => s.id),
+    missing_recordings: missing, reviewed_images: images, displayable_images: displayable, missing_images: sentences.filter(s => !reviewedImage(s.image)).map(s => s.id),
     media_complete: missing.length === 0 && images === 12, published: pilot.patterns.some(x => x.id === p.id) };
 });
 const sum = field => patterns.reduce((n, p) => n + p[field], 0);
@@ -48,6 +49,7 @@ const summary = {
     missing: rows.length * 2 - male - female, percent: percent(male + female, rows.length * 2) },
     images: { complete: sum('reviewed_images'), total: rows.length, missing: rows.length - sum('reviewed_images'), percent: percent(sum('reviewed_images'), rows.length) },
     patterns_with_complete_media: patterns.filter(p => p.media_complete).length,
+    displayable_images: sum('displayable_images'), patterns_with_displayable_media: patterns.filter(p => p.displayable_images === 12 && !p.missing_recordings.length).length,
     note: 'Completed production assets are not published lessons. Human listening and lesson promotion remain separate.' },
   reference_library: { sentences: source.sentences.length, audio_bindings: source.sentences.reduce((n, s) => n + ['male', 'female'].filter(g => validate(s.recordings[g], asset(root, s.recordings[g].path), s.en, g)).length, 0),
     reviewed_images: source.sentences.filter(s => reviewedImage(s.image)).length },

@@ -6,11 +6,12 @@ test('offline audio serves exact closed, open and suffix ranges from a complete 
  for(const range of ['bytes=999-','bytes=-0','bytes=80-20','bytes=1-2,5-6'])assert.equal((await ranged(make(),range)).status,416);
  assert.equal((await ranged(make(),null)).status,200);
 });
-test('offline collections contain both exact voices and only reviewed scene atlases',()=>{
+test('offline collections contain both exact voices and only displayable scene atlases',()=>{
  const offline=require('../public/offline-manifest.json'),corpus=require('../public/source-corpus.json');
  const files=new Map(offline.media.map(x=>[x.path,x]));
  for(const s of corpus.sentences){for(const rec of Object.values(s.recordings)){assert(files.has(rec.path));assert.equal(files.get(rec.path).sha256,rec.sha256);assert(files.get(rec.path).groups.includes('library'))}if(s.image.status==='assistant-reviewed')assert(files.has(s.image.atlas))}
  assert(!files.has('assets/scenes/reference-008-v1.webp'));
+ assert(files.has('assets/scenes/pattern-9039-atlas-v1.webp'));
  for(const item of offline.media)assert.equal(fs.statSync('public/'+item.path).size,item.bytes);
  for(const file of offline.shell)assert(fs.existsSync('public/'+file),file);
 });

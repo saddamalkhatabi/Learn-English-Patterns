@@ -1,0 +1,55 @@
+name: Unpack and connect WebP scene atlases
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'public/assets/scenes/*.zip'
+      - 'public/assets/scenes/pattern-*-atlas-v*.webp'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: webp-scene-main
+  cancel-in-progress: false
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/checkout@v4
+        with:
+          ref: media-tools
+          path: .media-tools
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Unpack exact WebP batches and measure their grid
+        shell: bash
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          shopt -s nullglob
+          for archive in public/assets/scenes/*.zip; do
+            python scripts/unpack-webp-atlases.py "$archive"
+          done
+      - name: Rebuild all text, audio, image and offline indexes
+        run: |
+          npm run build
+          npm run check
+          python tests/scene_zip_test.py
+      - name: Save generated assets and indexes to main
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A -- public/assets/scenes public/expansion-media.json public/offline-manifest.json public/app-version.js public/app-version.json production/manifests production/qa/webp-grid-overrides.json production/qa/expansion-status.json docs/PRODUCTION-STATUS.json docs/VERIFIED-STATUS.json
+          git diff --cached --check
+          if ! git diff --cached --quiet; then
+            git commit -m 'Connect uploaded WebP scene atlases'
+            git push origin HEAD:main
+          fi

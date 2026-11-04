@@ -8,7 +8,7 @@
     "start": "node server.js",
     "test": "node --test tests/*.cjs",
     "check": "npm test && node scripts/verify-media.cjs && node scripts/production-status.cjs",
-    "build": "node scripts/build-teaching-index.cjs && node scripts/build-expansion-media.cjs && node scripts/build-offline.cjs"
+    "build": "node scripts/sync-expansion-atlases.cjs && node scripts/build-teaching-index.cjs && node scripts/build-expansion-media.cjs && node scripts/build-offline.cjs"
   },
   "engines": {
     "node": ">=22"
