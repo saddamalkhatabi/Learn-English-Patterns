@@ -1,0 +1,82 @@
+name: Preview image atlases - isolated
+on:
+  push:
+    branches:
+      - preview/images-pattern-1
+    paths:
+      - .github/workflows/preview-images-pattern-1.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check existing application
+        run: |
+          npm run build
+          npm run check
+      - name: Unpack unique WebP images and connect preview-only entries
+        run: |
+          python3 - <<'PY'
+          import os,zipfile,hashlib,json,re,pathlib,copy
+          root=pathlib.Path('.')
+          archive=root/'public/assets/scenes/new_images_pattern_1_a.zip'
+          target=root/'public/assets/scenes'
+          ids=[9039,9040,9041,9044,9045,9046,9047,9049,9050,9051,*range(9052,9072)]
+          expected={f'pattern-{n}-atlas-v1.webp' for n in ids}
+          assert archive.is_file(), 'Uploaded ZIP is missing'
+          with zipfile.ZipFile(archive) as z:
+            assert z.testzip() is None, 'Corrupt ZIP'
+            files=[x for x in z.infolist() if not x.is_dir()]
+            names=[pathlib.PurePosixPath(x.filename).name for x in files]
+            assert len(files)==30 and set(names)==expected and len(set(names))==30, (len(files),set(names)^expected)
+            for f in files:
+              assert pathlib.PurePosixPath(f.filename).name == f.filename, f.filename
+              assert f.file_size < 12*1024*1024, f.filename
+              b=z.read(f)
+              assert b[:4]==b'RIFF' and b[8:12]==b'WEBP',f.filename
+              output=target/f.filename
+              assert not output.exists(), f'Refusing overwrite: {output}'
+              output.write_bytes(b)
+          p=root/'production/plans/expansion-all-153.json'
+          plan=json.loads(p.read_text())
+          lookup={}
+          for path in plan['manifest_paths']:
+            for s in json.loads((root/path).read_text())['sentences']:
+              if s['pattern_id'] in ids:
+                lookup[s['id']]=s
+          assert len(lookup)==360, f'Expected 360 exact sentences, got {len(lookup)}'
+          index=root/'public/expansion-media.json'
+          data=json.loads(index.read_text())
+          original_ids={s['id'] for s in data['sentences']}
+          assert not original_ids.intersection(lookup),'Preview pattern already published: refuse overwrite'
+          for sid,s in sorted(lookup.items()):
+            img=copy.deepcopy(s['image'])
+            name=f"pattern-{s['pattern_id']}-atlas-v1.webp"
+            img.update({'atlas':'assets/scenes/'+name,'cell':int(sid.rsplit('-',1)[1])-1,'columns':3,'rows':4,'width':1536,'height':2048,'status':'preview-unreviewed','tile_aspect':1,'crop':{'x':1,'y':1,'width':510,'height':510},'sha256':hashlib.sha256((target/name).read_bytes()).hexdigest()})
+            data['sentences'].append({'id':sid,'pattern_id':s['pattern_id'],'catalog_id':s['catalog_id'],'en':s['en'],'ar':s['ar'],'image':img,'recordings':{g:{k:s['recordings'][g][k] for k in ['path','sha256','voice_id']} for g in ['male','female']}})
+          data['notice']='Temporary preview-only image links. NOT reviewed, imported or published lessons. Do not merge into main.'
+          index.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
+          assert len(data['sentences'])>=360
+          index_preview={'status':'preview-only-unreviewed','branch':'preview/images-pattern-1','patterns':ids,'image_count':len(expected),'sentence_count':len(lookup),'examples':[{ 'id':sid, 'en':lookup[sid]['en'],'ar':lookup[sid]['ar']} for sid in sorted(lookup)]}
+          (root/'public/preview-images-check.json').write_text(json.dumps(index_preview,ensure_ascii=False,indent=2)+'\n')
+          print('PREVIEW READY',len(expected),'atlases',len(lookup),'linked sentences')
+          PY
+      - name: Create preview checkpoint and push on preview branch only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add public/assets/scenes/pattern-*-atlas-v1.webp public/expansion-media.json public/preview-images-check.json
+          git diff --cached --check
+          if ! git diff --cached --quiet; then
+            git commit -m 'Unpack 30 WebP atlases for isolated preview'
+            git push origin HEAD:preview/images-pattern-1
+          fi
