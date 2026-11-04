@@ -1,0 +1,39 @@
+name: Deploy English Patterns image preview to Pages
+on:
+  push:
+    branches:
+      - preview/images-pattern-1
+    paths:
+      - .github/workflows/preview-pages.yml
+      - public/preview-images-check.json
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: english-patterns-preview-pages
+  cancel-in-progress: true
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify preview content was committed
+        run: |
+          test -f public/preview-images-check.json
+          test -f public/assets/scenes/pattern-9039-atlas-v1.webp
+          test -f public/assets/scenes/pattern-9052-atlas-v1.webp
+          test -f public/assets/scenes/pattern-9062-atlas-v1.webp
+          node -e "let x=require('./public/preview-images-check.json');if(x.image_count!==30||x.sentence_count!==360)process.exit(1)"
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+      - id: deploy
+        uses: actions/deploy-pages@v4
