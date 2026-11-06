@@ -20,3 +20,30 @@ html[data-pattern-image=hidden] .coach-scene,html[data-pattern-image=hidden] .le
 html[data-pattern-image=hidden] .expansion-media-preview .scene-frame{display:none!important}
 html[data-pattern-image=compact] .expansion-media-preview .scene-frame{max-width:120px;margin-inline:auto}
 .expansion-detail{padding:18px}.expansion-detail .imported-examples{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:14px;margin-top:16px}.expansion-example{min-width:0;padding:12px;border:1px solid var(--line);border-radius:14px;background:#fff;display:flex;flex-direction:column;gap:8px}.expansion-example.active{outline:3px solid var(--red);outline-offset:2px}.expansion-example>b{font-size:17px;line-height:1.5;overflow-wrap:anywhere}.expansion-example .ar-content{margin:0}.expansion-example .pending-scene{display:flex;align-items:center;justify-content:center;aspect-ratio:1;border-radius:10px;background:#eef2e9;color:#50645e;text-align:center}.expansion-example .audio-controls{margin-top:auto}.expansion-detail progress{width:100%;height:12px;accent-color:var(--red)}html[data-pattern-image=hidden] .expansion-example .pending-scene{display:none}
+
+.teacher-patterns{grid-column:1/-1}
+.teacher-patterns fieldset{max-height:280px;overflow:auto;margin-top:12px}
+.teacher-patterns [hidden]{display:none!important}
+.teacher-patterns input[type=search]{width:100%;margin-top:8px}
+.teacher-patterns small{margin-inline-start:5px}
+#teacher-selection-status{align-self:center;margin:0}
+.reference-rule{margin-block:8px}
+.reference-rule summary{cursor:pointer;color:var(--red);font-weight:600}
+.reference-player-minimize{margin-inline-end:36px;margin-block-end:4px}
+.reference-player[data-mini="true"]{padding:8px 14px;max-height:34vh}
+.reference-player[data-mini="true"] :is(.reference-player-details,.reference-player-scene,.ep-player-progress-label,#reference-seek,#reference-player-status,.reference-player-actions label){display:none!important}
+.reference-player[data-mini="true"] .reference-player-words{font-size:17px;margin:0;line-height:1.45}
+.reference-player [data-reference-word].speaking,.expansion-example [data-expansion-word].speaking{background:#fee2a5;color:#462409;text-decoration:underline;text-underline-offset:3px}
+.reference-player [data-reference-word].pattern-token{color:var(--red)}
+.reference-grid[data-view="compact"]{grid-template-columns:1fr;gap:8px}
+.reference-grid[data-view="compact"] .reference-card{display:flex;align-items:center;flex-wrap:wrap;gap:8px;padding:10px}
+.reference-grid[data-view="compact"] .reference-card-content{flex:1 1 225px;padding:0}
+.reference-grid[data-view="compact"] .reference-photo{width:64px;flex:none}
+.reference-grid[data-view="compact"] .reference-card-content h2{font-size:17px;margin:0}
+.reference-grid[data-view="compact"] .reference-card-content .ar-content{font-size:15px!important;margin:0}
+html[data-pattern-image="focus"] .reference-player[data-mini="false"] .reference-player-scene{float:none;width:min(100%,380px);max-width:none;margin:8px auto}
+html[data-pattern-image="focus"] .coach-body:has(.coach-scene){grid-template-columns:minmax(0,1fr)}
+html[data-pattern-image="focus"] .coach-scene{width:min(100%,440px);max-width:none;margin:14px auto 0}
+html[data-pattern-image="focus"] .coach-scene>.scene-frame{max-width:none}
+html[data-pattern-image="focus"] .lesson-active-example{grid-template-columns:minmax(0,1fr)}
+html[data-pattern-image="focus"] .lesson-active-example .lesson-scene{max-width:420px;margin:auto}

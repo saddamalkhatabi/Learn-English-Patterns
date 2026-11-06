@@ -1,4 +1,23 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs');
+test('expansion lessons supply answerable exams and measured cues to each listening strategy',()=>{
+ const expansion=require('../public/expansion-media.json'),pilot=require('../public/pilot.json');
+ const RoutePlayer=require('../public/route-player.js');
+ const order=[...pilot.pattern_order,...expansion.patterns.map(p=>p.id)];
+ const data={pattern_order:order,sentences:[...pilot.sentences,...expansion.sentences]};
+ const queue=RoutePlayer.prototype.queue.bind({data});
+ assert.equal(order.length,180);
+ for(const sample of [0,3,6])assert.equal(queue({sample}).length,180*(sample||12));
+ const questionIds=new Set();
+ for(const p of expansion.patterns){
+  assert.equal(p.lesson.exams.length,8);
+  for(const q of p.lesson.exams){
+   assert(!questionIds.has(q.id));
+   questionIds.add(q.id);
+   assert(q.answer&&(!q.options||q.options.includes(q.answer)));
+  }
+ }
+ for(const s of expansion.sentences)for(const voice of Object.values(s.recordings))assert(voice.words.length>0);
+});
 test('all expansion examples have two real voices and only displayable scenes appear',()=>{
  const plan=require('../production/plans/expansion-all-153.json'),rows=plan.manifest_paths.flatMap(p=>JSON.parse(fs.readFileSync(p)).sentences);
  const preview=require('../public/expansion-media.json');assert.deepEqual(preview.sentences.map(s=>s.id),rows.map(s=>s.id));

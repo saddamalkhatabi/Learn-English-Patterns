@@ -11,7 +11,7 @@ class NasaqRoutePlayer{
   const oldPilot=this.session.ids.length===36&&this.session.ids.every(id=>/^(want|need|have)-/.test(id));
   if(oldPilot&&data.sentences.length>36&&!this.session.filters?.routeId&&!this.session.expandedFromPilot){this.session.ids=data.pattern_order.flatMap(pid=>data.sentences.filter(s=>s.pattern_id===pid).map(s=>s.id));if(this.session.phase==='finished'){this.session.cursor=36;this.session.phase='sentence';this.session.offset=0;this.session.voice='male'}this.session.expandedFromPilot=true;this.save()}
   const priorFull=(data.previous_courses||[]).some(c=>c.sentence_ids.length===this.session.ids.length&&c.sentence_ids.every(id=>this.session.ids.includes(id)));
-  if((this.session.fullCourse||priorFull)&&!this.session.filters?.routeId&&!this.session.filters?.stage&&!this.session.filters?.cefr&&this.session.curriculumRevision!==data.revision){this.session.ids=data.pattern_order.flatMap(pid=>data.sentences.filter(s=>s.pattern_id===pid).map(s=>s.id));this.session.fullCourse=true;this.session.curriculumRevision=data.revision;this.save()}
+  if((this.session.fullCourse||priorFull)&&!this.session.filters?.sample&&!this.session.filters?.routeId&&!this.session.filters?.stage&&!this.session.filters?.cefr&&this.session.curriculumRevision!==data.revision){this.session.ids=data.pattern_order.flatMap(pid=>data.sentences.filter(s=>s.pattern_id===pid).map(s=>s.id));this.session.filters={...this.session.filters,patternIds:data.pattern_order};this.session.fullCourse=true;this.session.curriculumRevision=data.revision;this.save()}
   if(resumeId&&this.session.phase!=='finished'&&this.session.ids.includes(resumeId))this.session.cursor=this.session.ids.indexOf(resumeId);
   if(!this.session.ids.length)this.configure({patternIds:data.pattern_order});
   this.session.cursor=Math.min(Math.max(0,this.session.cursor),Math.max(0,this.session.ids.length-1));
@@ -20,9 +20,17 @@ class NasaqRoutePlayer{
   audio.addEventListener('error',()=>{this.error='تعذر تحميل التسجيل. لم نتجاوز الجملة؛ يمكنك المحاولة مجددًا.';this.running=false;this.emit()});
   root.addEventListener?.('pagehide',()=>this.pause());
  }
- configure({patternIds=this.data.pattern_order,stage=0,cefr='',mode='listen',voiceMode='alternate',rate=1,autoNextPattern=true,routeId=''}={}){
-  this.pause();const ids=[];for(const pid of [...new Set(patternIds)].filter(id=>this.data.pattern_order.includes(id))){for(const s of this.data.sentences.filter(s=>s.pattern_id===pid&&(!stage||s.difficulty.stage===+stage)&&(!cefr||s.difficulty.cefr===cefr)))ids.push(s.id)}
-  this.session={schema:2,ids,cursor:0,phase:'sentence',offset:0,voice:voiceMode==='female'?'female':'male',voiceMode,mode,rate:+rate,completed:[],autoNextPattern,fullCourse:!stage&&!cefr&&!routeId&&new Set(patternIds).size===this.data.pattern_order.length,curriculumRevision:this.data.revision,filters:{patternIds,stage:+stage,cefr,routeId}};this.save();this.emit();return ids.length;
+ queue({patternIds=this.data.pattern_order,stage=0,cefr='',sample=0}={}){
+  return [...new Set(patternIds)].filter(id=>this.data.pattern_order.includes(id)).flatMap(pid=>{
+   const rows=this.data.sentences.filter(s=>s.pattern_id===pid&&(!stage||s.difficulty.stage===+stage)&&(!cefr||s.difficulty.cefr===cefr));
+   if(sample===3)return rows.slice(0,3).map(s=>s.id);
+   if(sample!==6||rows.length<=sample)return rows.map(s=>s.id);
+   return Array.from({length:sample},(_,i)=>rows[Math.round(i*(rows.length-1)/(sample-1))].id);
+  });
+ }
+ configure({patternIds=this.data.pattern_order,stage=0,cefr='',mode='listen',voiceMode='alternate',rate=1,autoNextPattern=true,routeId='',sample=0}={}){
+  this.pause();const ids=this.queue({patternIds,stage,cefr,sample});
+  this.session={schema:2,ids,cursor:0,phase:'sentence',offset:0,voice:voiceMode==='female'?'female':'male',voiceMode,mode,rate:+rate,completed:[],autoNextPattern,fullCourse:!sample&&!stage&&!cefr&&!routeId&&new Set(patternIds).size===this.data.pattern_order.length,curriculumRevision:this.data.revision,filters:{patternIds,stage:+stage,cefr,routeId,sample}};this.error='';this.save();this.emit();return ids.length;
  }
  get comparisonRemaining(){return this.comparisonEndsAt?Math.max(0,this.comparisonEndsAt-this.now()):Math.max(0,this.session.comparisonRemainingMs??this.session.comparisonDurationMs??25000)}
  get comparisonDuration(){return this.session.comparisonDurationMs||25000}
