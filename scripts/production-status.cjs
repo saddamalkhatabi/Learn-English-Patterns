@@ -52,7 +52,7 @@ const summary = {
     displayable_images: sum('displayable_images'), patterns_with_displayable_media: patterns.filter(p => p.displayable_images === 12 && !p.missing_recordings.length).length,
     note: 'Completed production assets are not published lessons. Human listening and lesson promotion remain separate.' },
   reference_library: { sentences: source.sentences.length, audio_bindings: source.sentences.reduce((n, s) => n + ['male', 'female'].filter(g => validate(s.recordings[g], asset(root, s.recordings[g].path), s.en, g)).length, 0),
-    reviewed_images: source.sentences.filter(s => reviewedImage(s.image)).length },
+    reviewed_images: source.sentences.filter(s => reviewedImage(s.image)).length, displayable_images: source.counts.scenes },
   cultural_policy: 'arab-muslim-family-v1', human_auditory_review: 'pending; no full human listening claim',
   legacy_cultural_repairs: 'deferred by user; earlier image acceptance did not certify the new cultural policy'
 };

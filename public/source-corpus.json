@@ -330,8 +330,8 @@
     "distinct_audio_files": 2000,
     "measured_word_cues": 13762,
     "ready_audio_references": 1000,
-    "scenes": 975,
-    "atlases": 82
+    "scenes": 1000,
+    "atlases": 93
   },
   "sentences": [
     {
@@ -15580,8 +15580,8 @@
       },
       "image": {
         "id": "scene-ref-0085",
-        "atlas": "assets/scenes/reference-008-v1.webp",
-        "sha256": "61df7e6a236b87759dcab7b06e2f2f4fb611e1b97faec63b0034d030ef25ba8e",
+        "atlas": "assets/scenes/imported-references/reference-008-v2.webp",
+        "sha256": "eac03278ddb5af9fbd5ddcd8a4fec6e8e0616a1b6bdc041bedef1086dec3d9dc",
         "cell": 0,
         "columns": 3,
         "rows": 4,
@@ -15589,14 +15589,14 @@
         "height": 2048,
         "tile_aspect": 1,
         "crop": {
-          "x": 1,
-          "y": 1,
-          "width": 510,
-          "height": 510
+          "x": 6,
+          "y": 5,
+          "width": 500,
+          "height": 500
         },
-        "status": "generated-pending-review",
+        "status": "imported-unreviewed",
         "origin": "generated_photorealistic",
-        "review_note": "No continuous y gutter near 2/4; inspect grid before production"
+        "review_note": "Imported WebP; visual review pending"
       },
       "lifecycle": {
         "imported": true,
@@ -15604,7 +15604,7 @@
         "translation_review": "assistant-reviewed",
         "linguistic_review": "original source rule retained; not a full authored lesson",
         "audio": "structurally_verified",
-        "image": "pending",
+        "image": "imported-unreviewed",
         "available": true
       }
     },
@@ -15729,8 +15729,8 @@
       },
       "image": {
         "id": "scene-ref-0086",
-        "atlas": "assets/scenes/reference-008-v1.webp",
-        "sha256": "61df7e6a236b87759dcab7b06e2f2f4fb611e1b97faec63b0034d030ef25ba8e",
+        "atlas": "assets/scenes/imported-references/reference-008-v2.webp",
+        "sha256": "eac03278ddb5af9fbd5ddcd8a4fec6e8e0616a1b6bdc041bedef1086dec3d9dc",
         "cell": 1,
         "columns": 3,
         "rows": 4,
@@ -15738,14 +15738,14 @@
         "height": 2048,
         "tile_aspect": 1,
         "crop": {
-          "x": 513,
-          "y": 1,
-          "width": 510,
-          "height": 510
+          "x": 521,
+          "y": 5,
+          "width": 499,
+          "height": 499
         },
-        "status": "generated-pending-review",
+        "status": "imported-unreviewed",
         "origin": "generated_photorealistic",
-        "review_note": "No continuous y gutter near 2/4; inspect grid before production"
+        "review_note": "Imported WebP; visual review pending"
       },
       "lifecycle": {
         "imported": true,
@@ -15753,7 +15753,7 @@
         "translation_review": "assistant-reviewed",
         "linguistic_review": "original source rule retained; not a full authored lesson",
         "audio": "structurally_verified",
-        "image": "pending",
+        "image": "imported-unreviewed",
         "available": true
       }
     },
@@ -15965,8 +15965,8 @@
       },
       "image": {
         "id": "scene-ref-0087",
-        "atlas": "assets/scenes/reference-008-v1.webp",
-        "sha256": "61df7e6a236b87759dcab7b06e2f2f4fb611e1b97faec63b0034d030ef25ba8e",
+        "atlas": "assets/scenes/imported-references/reference-008-v2.webp",
+        "sha256": "eac03278ddb5af9fbd5ddcd8a4fec6e8e0616a1b6bdc041bedef1086dec3d9dc",
         "cell": 2,
         "columns": 3,
         "rows": 4,
@@ -15974,14 +15974,14 @@
         "height": 2048,
         "tile_aspect": 1,
         "crop": {
-          "x": 1025,
-          "y": 1,
-          "width": 510,
-          "height": 510
+          "x": 1031,
+          "y": 5,
+          "width": 500,
+          "height": 500
         },
-        "status": "generated-pending-review",
+        "status": "imported-unreviewed",
         "origin": "generated_photorealistic",
-        "review_note": "No continuous y gutter near 2/4; inspect grid before production"
+        "review_note": "Imported WebP; visual review pending"
       },
       "lifecycle": {
         "imported": true,
@@ -15989,7 +15989,7 @@
         "translation_review": "assistant-reviewed",
         "linguistic_review": "original source rule retained; not a full authored lesson",
         "audio": "structurally_verified",
-        "image": "pending",
+        "image": "imported-unreviewed",
         "available": true
       }
     },
@@ -16163,8 +16163,8 @@
       },
       "image": {
         "id": "scene-ref-0088",
-        "atlas": "assets/scenes/reference-008-v1.webp",
-        "sha256": "61df7e6a236b87759dcab7b06e2f2f4fb611e1b97faec63b0034d030ef25ba8e",
+        "atlas": "assets/scenes/imported-references/reference-008-v2.webp",
+        "sha256": "eac03278ddb5af9fbd5ddcd8a4fec6e8e0616a1b6bdc041bedef1086dec3d9dc",
         "cell": 3,
         "columns": 3,
         "rows": 4,
@@ -16172,14 +16172,14 @@
         "height": 2048,
         "tile_aspect": 1,
         "crop": {
-          "x": 1,
-          "y": 513,
-          "width": 510,
-          "height": 510
+          "x": 6,
+          "y": 521,
+          "width": 499,
+          "height": 499
         },
-        "status": "generated-pending-review",
+        "status": "imported-unreviewed",
         "origin": "generated_photorealistic",
-        "review_note": "No continuous y gutter near 2/4; inspect grid before production"
+        "review_note": "Imported WebP; visual review pending"
       },
       "lifecycle": {
         "imported": true,
@@ -16187,7 +16187,7 @@
         "translation_review": "assistant-reviewed",
         "linguistic_review": "original source rule retained; not a full authored lesson",
         "audio": "structurally_verified",
-        "image": "pending",
+        "image": "imported-unreviewed",
         "available": true
       }
     },
@@ -16365,8 +16365,8 @@
       },
       "image": {
         "id": "scene-ref-0089",
-        "atlas": "assets/scenes/reference-008-v1.webp",
-        "sha256": "61df7e6a236b87759dcab7b06e2f2f4fb611e1b97faec63b0034d030ef25ba8e",
+        "atlas": "assets/scenes/imported-references/reference-008-v2.webp",
+        "sha256": "eac03278ddb5af9fbd5ddcd8a4fec6e8e0616a1b6bdc041bedef1086dec3d9dc",
         "cell": 4,
         "columns": 3,
         "rows": 4,
@@ -16374,14 +16374,14 @@
         "height": 2048,
         "tile_aspect": 1,
         "crop": {
-          "x": 513,
-          "y": 513,
-          "width": 510,
-          "height": 510
+          "x": 521,
+          "y": 521,
+          "width": 499,
+          "height": 499
         },
-        "status": "generated-pending-review",
+        "status": "imported-unreviewed",
         "origin": "generated_photorealistic",
-        "review_note": "No continuous y gutter near 2/4; inspect grid before production"
+        "review_note": "Imported WebP; visual review pending"
       },
       "lifecycle": {
         "imported": true,
@@ -16389,7 +16389,7 @@
         "translation_review": "assistant-reviewed",
         "linguistic_review": "original source rule retained; not a full authored lesson",
         "audio": "structurally_verified",
-        "image": "pending",
+        "image": "imported-unreviewed",
         "available": true
       }
     },
@@ -16535,8 +16535,8 @@
       },
       "image": {
         "id": "scene-ref-0090",
-        "atlas": "assets/scenes/reference-008-v1.webp",
-        "sha256": "61df7e6a236b87759dcab7b06e2f2f4fb611e1b97faec63b0034d030ef25ba8e",
+        "atlas": "assets/scenes/imported-references/reference-008-v2.webp",
+        "sha256": "eac03278ddb5af9fbd5ddcd8a4fec6e8e0616a1b6bdc041bedef1086dec3d9dc",
         "cell": 5,
         "columns": 3,
         "rows": 4,
@@ -16544,14 +16544,14 @@
         "height": 2048,
         "tile_aspect": 1,
         "crop": {
-          "x": 1025,
-          "y": 513,
-          "width": 510,
-          "height": 510
+          "x": 1031,
+          "y": 521,
+          "width": 499,
+          "height": 499
         },
-        "status": "generated-pending-review",
+        "status": "imported-unreviewed",
         "origin": "generated_photorealistic",
-        "review_note": "No continuous y gutter near 2/4; inspect grid before production"
+        "review_note": "Imported WebP; visual review pending"
       },
       "lifecycle": {
         "imported": true,
@@ -16559,7 +16559,7 @@
         "translation_review": "assistant-reviewed",
         "linguistic_review": "original source rule retained; not a full authored lesson",
         "audio": "structurally_verified",
-        "image": "pending",
+        "image": "imported-unreviewed",
         "available": true
       }
     },
@@ -16706,8 +16706,8 @@
       },
       "image": {
         "id": "scene-ref-0091",
-        "atlas": "assets/scenes/reference-008-v1.webp",
-        "sha256": "61df7e6a236b87759dcab7b06e2f2f4fb611e1b97faec63b0034d030ef25ba8e",
+        "atlas": "assets/scenes/imported-references/reference-008-v2.webp",
+        "sha256": "eac03278ddb5af9fbd5ddcd8a4fec6e8e0616a1b6bdc041bedef1086dec3d9dc",
         "cell": 6,
         "columns": 3,
         "rows": 4,
@@ -16715,14 +16715,14 @@
         "height": 2048,
         "tile_aspect": 1,
         "crop": {
-          "x": 1,
-          "y": 1025,
-          "width": 510,
-          "height": 510
+          "x": 5,
+          "y": 1031,
+          "width": 501,
+          "height": 501
         },
-        "status": "generated-pending-review",
+        "status": "imported-unreviewed",
         "origin": "generated_photorealistic",
-        "review_note": "No continuous y gutter near 2/4; inspect grid before production"
+        "review_note": "Imported WebP; visual review pending"
       },
       "lifecycle": {
         "imported": true,
@@ -16730,7 +16730,7 @@
         "translation_review": "assistant-reviewed",
         "linguistic_review": "original source rule retained; not a full authored lesson",
         "audio": "structurally_verified",
-        "image": "pending",
+        "image": "imported-unreviewed",
         "available": true
       }
     },
@@ -16880,8 +16880,8 @@
       },
       "image": {
         "id": "scene-ref-0092",
-        "atlas": "assets/scenes/reference-008-v1.webp",
-        "sha256": "61df7e6a236b87759dcab7b06e2f2f4fb611e1b97faec63b0034d030ef25ba8e",
+        "atlas": "assets/scenes/imported-references/reference-008-v2.webp",
+        "sha256": "eac03278ddb5af9fbd5ddcd8a4fec6e8e0616a1b6bdc041bedef1086dec3d9dc",
         "cell": 7,
         "columns": 3,
         "rows": 4,
@@ -16889,14 +16889,14 @@
         "height": 2048,
         "tile_aspect": 1,
         "crop": {
-          "x": 513,
-          "y": 1025,
-          "width": 510,
-          "height": 510
+          "x": 521,
+          "y": 1032,
+          "width": 499,
+          "height": 499
         },
-        "status": "generated-pending-review",
+        "status": "imported-unreviewed",
         "origin": "generated_photorealistic",
-        "review_note": "No continuous y gutter near 2/4; inspect grid before production"
+        "review_note": "Imported WebP; visual review pending"
       },
       "lifecycle": {
         "imported": true,
@@ -16904,7 +16904,7 @@
         "translation_review": "assistant-reviewed",
         "linguistic_review": "original source rule retained; not a full authored lesson",
         "audio": "structurally_verified",
-        "image": "pending",
+        "image": "imported-unreviewed",
         "available": true
       }
     },
@@ -17094,8 +17094,8 @@
       },
       "image": {
         "id": "scene-ref-0093",
-        "atlas": "assets/scenes/reference-008-v1.webp",
-        "sha256": "61df7e6a236b87759dcab7b06e2f2f4fb611e1b97faec63b0034d030ef25ba8e",
+        "atlas": "assets/scenes/imported-references/reference-008-v2.webp",
+        "sha256": "eac03278ddb5af9fbd5ddcd8a4fec6e8e0616a1b6bdc041bedef1086dec3d9dc",
         "cell": 8,
         "columns": 3,
         "rows": 4,
@@ -17103,14 +17103,14 @@
         "height": 2048,
         "tile_aspect": 1,
         "crop": {
-          "x": 1025,
-          "y": 1025,
-          "width": 510,
-          "height": 510
+          "x": 1031,
+          "y": 1031,
+          "width": 500,
+          "height": 500
         },
-        "status": "generated-pending-review",
+        "status": "imported-unreviewed",
         "origin": "generated_photorealistic",
-        "review_note": "No continuous y gutter near 2/4; inspect grid before production"
+        "review_note": "Imported WebP; visual review pending"
       },
       "lifecycle": {
         "imported": true,
@@ -17118,7 +17118,7 @@
         "translation_review": "assistant-reviewed",
         "linguistic_review": "original source rule retained; not a full authored lesson",
         "audio": "structurally_verified",
-        "image": "pending",
+        "image": "imported-unreviewed",
         "available": true
       }
     },
@@ -17381,8 +17381,8 @@
       },
       "image": {
         "id": "scene-ref-0094",
-        "atlas": "assets/scenes/reference-008-v1.webp",
-        "sha256": "61df7e6a236b87759dcab7b06e2f2f4fb611e1b97faec63b0034d030ef25ba8e",
+        "atlas": "assets/scenes/imported-references/reference-008-v2.webp",
+        "sha256": "eac03278ddb5af9fbd5ddcd8a4fec6e8e0616a1b6bdc041bedef1086dec3d9dc",
         "cell": 9,
         "columns": 3,
         "rows": 4,
@@ -17390,14 +17390,14 @@
         "height": 2048,
         "tile_aspect": 1,
         "crop": {
-          "x": 1,
-          "y": 1537,
-          "width": 510,
-          "height": 510
+          "x": 6,
+          "y": 1543,
+          "width": 500,
+          "height": 500
         },
-        "status": "generated-pending-review",
+        "status": "imported-unreviewed",
         "origin": "generated_photorealistic",
-        "review_note": "No continuous y gutter near 2/4; inspect grid before production"
+        "review_note": "Imported WebP; visual review pending"
       },
       "lifecycle": {
         "imported": true,
@@ -17405,7 +17405,7 @@
         "translation_review": "assistant-reviewed",
         "linguistic_review": "original source rule retained; not a full authored lesson",
         "audio": "structurally_verified",
-        "image": "pending",
+        "image": "imported-unreviewed",
         "available": true
       }
     },
@@ -17591,8 +17591,8 @@
       },
       "image": {
         "id": "scene-ref-0095",
-        "atlas": "assets/scenes/reference-008-v1.webp",
-        "sha256": "61df7e6a236b87759dcab7b06e2f2f4fb611e1b97faec63b0034d030ef25ba8e",
+        "atlas": "assets/scenes/imported-references/reference-008-v2.webp",
+        "sha256": "eac03278ddb5af9fbd5ddcd8a4fec6e8e0616a1b6bdc041bedef1086dec3d9dc",
         "cell": 10,
         "columns": 3,
         "rows": 4,
@@ -17600,14 +17600,14 @@
         "height": 2048,
         "tile_aspect": 1,
         "crop": {
-          "x": 513,
-          "y": 1537,
-          "width": 510,
-          "height": 510
+          "x": 521,
+          "y": 1543,
+          "width": 499,
+          "height": 499
         },
-        "status": "generated-pending-review",
+        "status": "imported-unreviewed",
         "origin": "generated_photorealistic",
-        "review_note": "No continuous y gutter near 2/4; inspect grid before production"
+        "review_note": "Imported WebP; visual review pending"
       },
       "lifecycle": {
         "imported": true,
@@ -17615,7 +17615,7 @@
         "translation_review": "assistant-reviewed",
         "linguistic_review": "original source rule retained; not a full authored lesson",
         "audio": "structurally_verified",
-        "image": "pending",
+        "image": "imported-unreviewed",
         "available": true
       }
     },
@@ -17777,8 +17777,8 @@
       },
       "image": {
         "id": "scene-ref-0096",
-        "atlas": "assets/scenes/reference-008-v1.webp",
-        "sha256": "61df7e6a236b87759dcab7b06e2f2f4fb611e1b97faec63b0034d030ef25ba8e",
+        "atlas": "assets/scenes/imported-references/reference-008-v2.webp",
+        "sha256": "eac03278ddb5af9fbd5ddcd8a4fec6e8e0616a1b6bdc041bedef1086dec3d9dc",
         "cell": 11,
         "columns": 3,
         "rows": 4,
@@ -17786,14 +17786,14 @@
         "height": 2048,
         "tile_aspect": 1,
         "crop": {
-          "x": 1025,
-          "y": 1537,
-          "width": 510,
-          "height": 510
+          "x": 1031,
+          "y": 1543,
+          "width": 500,
+          "height": 500
         },
-        "status": "generated-pending-review",
+        "status": "imported-unreviewed",
         "origin": "generated_photorealistic",
-        "review_note": "No continuous y gutter near 2/4; inspect grid before production"
+        "review_note": "Imported WebP; visual review pending"
       },
       "lifecycle": {
         "imported": true,
@@ -17801,7 +17801,7 @@
         "translation_review": "assistant-reviewed",
         "linguistic_review": "original source rule retained; not a full authored lesson",
         "audio": "structurally_verified",
-        "image": "pending",
+        "image": "imported-unreviewed",
         "available": true
       }
     },
@@ -65515,14 +65515,22 @@
       },
       "image": {
         "id": "scene-ref-0355",
-        "atlas": "assets/scenes/reference-030-v1.webp",
-        "cell": 6,
-        "columns": 3,
-        "rows": 4,
-        "width": 1536,
-        "height": 2048,
-        "status": "review-rejected",
-        "review_note": "assistant visual review"
+        "atlas": "assets/scenes/imported-references/ref-0355-v2.webp",
+        "cell": 0,
+        "columns": 1,
+        "rows": 1,
+        "width": 1024,
+        "height": 1024,
+        "status": "imported-unreviewed",
+        "sha256": "9eb5db407083667913ebe22dab945105623760429743de36d4fad8143a1df93e",
+        "tile_aspect": 1,
+        "crop": {
+          "x": 0,
+          "y": 0,
+          "width": 1024,
+          "height": 1024
+        },
+        "review_note": "Imported WebP; visual review pending"
       },
       "lifecycle": {
         "imported": true,
@@ -65530,7 +65538,7 @@
         "translation_review": "assistant-reviewed",
         "linguistic_review": "original source rule retained; not a full authored lesson",
         "audio": "structurally_verified",
-        "image": "pending",
+        "image": "imported-unreviewed",
         "available": true
       }
     },
@@ -68774,14 +68782,22 @@
       },
       "image": {
         "id": "scene-ref-0373",
-        "atlas": "assets/scenes/reference-032-v1.webp",
+        "atlas": "assets/scenes/imported-references/ref-0373-v2.webp",
         "cell": 0,
-        "columns": 3,
-        "rows": 4,
-        "width": 1536,
-        "height": 2048,
-        "status": "review-rejected",
-        "review_note": "assistant visual review"
+        "columns": 1,
+        "rows": 1,
+        "width": 1024,
+        "height": 1024,
+        "status": "imported-unreviewed",
+        "sha256": "294b98df863c6f63524b1b21850baff6bbec356e3d1ffd7da7a9cbdedd052232",
+        "tile_aspect": 1,
+        "crop": {
+          "x": 0,
+          "y": 0,
+          "width": 1024,
+          "height": 1024
+        },
+        "review_note": "Imported WebP; visual review pending"
       },
       "lifecycle": {
         "imported": true,
@@ -68789,7 +68805,7 @@
         "translation_review": "assistant-reviewed",
         "linguistic_review": "original source rule retained; not a full authored lesson",
         "audio": "structurally_verified",
-        "image": "pending",
+        "image": "imported-unreviewed",
         "available": true
       }
     },
@@ -78901,14 +78917,22 @@
       },
       "image": {
         "id": "scene-ref-0427",
-        "atlas": "assets/scenes/reference-036-v1.webp",
-        "cell": 6,
-        "columns": 3,
-        "rows": 4,
-        "width": 1536,
-        "height": 2048,
-        "status": "review-rejected",
-        "review_note": "assistant visual review"
+        "atlas": "assets/scenes/imported-references/ref-0427-v2.webp",
+        "cell": 0,
+        "columns": 1,
+        "rows": 1,
+        "width": 1024,
+        "height": 1024,
+        "status": "imported-unreviewed",
+        "sha256": "0a8aa4365afac3b0bc38c34a630c37f916249f43a70fba5e6c6ea0175da9b34b",
+        "tile_aspect": 1,
+        "crop": {
+          "x": 0,
+          "y": 0,
+          "width": 1024,
+          "height": 1024
+        },
+        "review_note": "Imported WebP; visual review pending"
       },
       "lifecycle": {
         "imported": true,
@@ -78916,7 +78940,7 @@
         "translation_review": "assistant-reviewed",
         "linguistic_review": "original source rule retained; not a full authored lesson",
         "audio": "structurally_verified",
-        "image": "pending",
+        "image": "imported-unreviewed",
         "available": true
       }
     },
@@ -82331,14 +82355,22 @@
       },
       "image": {
         "id": "scene-ref-0446",
-        "atlas": "assets/scenes/reference-038-v1.webp",
-        "cell": 1,
-        "columns": 3,
-        "rows": 4,
-        "width": 1536,
-        "height": 2048,
-        "status": "review-rejected",
-        "review_note": "assistant visual review"
+        "atlas": "assets/scenes/imported-references/ref-0446-v2.webp",
+        "cell": 0,
+        "columns": 1,
+        "rows": 1,
+        "width": 1024,
+        "height": 1024,
+        "status": "imported-unreviewed",
+        "sha256": "cdfaf39edd4c9311ad6754706f06bf5a92a1d23b7b38dc69e174b1ac1a3ef2e8",
+        "tile_aspect": 1,
+        "crop": {
+          "x": 0,
+          "y": 0,
+          "width": 1024,
+          "height": 1024
+        },
+        "review_note": "Imported WebP; visual review pending"
       },
       "lifecycle": {
         "imported": true,
@@ -82346,7 +82378,7 @@
         "translation_review": "assistant-reviewed",
         "linguistic_review": "original source rule retained; not a full authored lesson",
         "audio": "structurally_verified",
-        "image": "pending",
+        "image": "imported-unreviewed",
         "available": true
       }
     },
@@ -119734,14 +119766,22 @@
       },
       "image": {
         "id": "scene-ref-0654",
-        "atlas": "assets/scenes/reference-055-v1.webp",
-        "cell": 5,
-        "columns": 3,
-        "rows": 4,
-        "width": 1536,
-        "height": 2048,
-        "status": "review-rejected",
-        "review_note": "assistant visual review"
+        "atlas": "assets/scenes/imported-references/ref-0654-v2.webp",
+        "cell": 0,
+        "columns": 1,
+        "rows": 1,
+        "width": 1024,
+        "height": 1024,
+        "status": "imported-unreviewed",
+        "sha256": "538f94249ae2d552273fad7cee37554f926a2e4d1738e1019fb7f5b04c33eb23",
+        "tile_aspect": 1,
+        "crop": {
+          "x": 0,
+          "y": 0,
+          "width": 1024,
+          "height": 1024
+        },
+        "review_note": "Imported WebP; visual review pending"
       },
       "lifecycle": {
         "imported": true,
@@ -119749,7 +119789,7 @@
         "translation_review": "assistant-reviewed",
         "linguistic_review": "original source rule retained; not a full authored lesson",
         "audio": "structurally_verified",
-        "image": "pending",
+        "image": "imported-unreviewed",
         "available": true
       }
     },
@@ -132734,14 +132774,22 @@
       },
       "image": {
         "id": "scene-ref-0727",
-        "atlas": "assets/scenes/reference-061-v1.webp",
-        "cell": 6,
-        "columns": 3,
-        "rows": 4,
-        "width": 1536,
-        "height": 2048,
-        "status": "review-rejected",
-        "review_note": "assistant visual review"
+        "atlas": "assets/scenes/imported-references/ref-0727-v2.webp",
+        "cell": 0,
+        "columns": 1,
+        "rows": 1,
+        "width": 1024,
+        "height": 1024,
+        "status": "imported-unreviewed",
+        "sha256": "bb037a9ab768b838616cd1c88fc051efd6f7a8cf160fbeb6718ee8a93b74b777",
+        "tile_aspect": 1,
+        "crop": {
+          "x": 0,
+          "y": 0,
+          "width": 1024,
+          "height": 1024
+        },
+        "review_note": "Imported WebP; visual review pending"
       },
       "lifecycle": {
         "imported": true,
@@ -132749,7 +132797,7 @@
         "translation_review": "assistant-reviewed",
         "linguistic_review": "original source rule retained; not a full authored lesson",
         "audio": "structurally_verified",
-        "image": "pending",
+        "image": "imported-unreviewed",
         "available": true
       }
     },
@@ -143337,14 +143385,22 @@
       },
       "image": {
         "id": "scene-ref-0786",
-        "atlas": "assets/scenes/reference-066-v1.webp",
-        "cell": 5,
-        "columns": 3,
-        "rows": 4,
-        "width": 1536,
-        "height": 2048,
-        "status": "review-rejected",
-        "review_note": "assistant visual review"
+        "atlas": "assets/scenes/imported-references/ref-0786-v2.webp",
+        "cell": 0,
+        "columns": 1,
+        "rows": 1,
+        "width": 1024,
+        "height": 1024,
+        "status": "imported-unreviewed",
+        "sha256": "a421e34a7423c4c31090214e2851884fd94f3828b357c27d65ee32789e4b1796",
+        "tile_aspect": 1,
+        "crop": {
+          "x": 0,
+          "y": 0,
+          "width": 1024,
+          "height": 1024
+        },
+        "review_note": "Imported WebP; visual review pending"
       },
       "lifecycle": {
         "imported": true,
@@ -143352,7 +143408,7 @@
         "translation_review": "assistant-reviewed",
         "linguistic_review": "original source rule retained; not a full authored lesson",
         "audio": "structurally_verified",
-        "image": "pending",
+        "image": "imported-unreviewed",
         "available": true
       }
     },
@@ -160072,14 +160128,22 @@
       },
       "image": {
         "id": "scene-ref-0875",
-        "atlas": "assets/scenes/reference-073-v1.webp",
-        "cell": 10,
-        "columns": 3,
-        "rows": 4,
-        "width": 1536,
-        "height": 2048,
-        "status": "review-rejected",
-        "review_note": "assistant visual review"
+        "atlas": "assets/scenes/imported-references/ref-0875-v2.webp",
+        "cell": 0,
+        "columns": 1,
+        "rows": 1,
+        "width": 1024,
+        "height": 1024,
+        "status": "imported-unreviewed",
+        "sha256": "9aec72caf10f9bf7bf0ffd890a6eb1efe6b141ce9ee113523a55df6b47bd12a1",
+        "tile_aspect": 1,
+        "crop": {
+          "x": 0,
+          "y": 0,
+          "width": 1024,
+          "height": 1024
+        },
+        "review_note": "Imported WebP; visual review pending"
       },
       "lifecycle": {
         "imported": true,
@@ -160087,7 +160151,7 @@
         "translation_review": "assistant-reviewed",
         "linguistic_review": "original source rule retained; not a full authored lesson",
         "audio": "structurally_verified",
-        "image": "pending",
+        "image": "imported-unreviewed",
         "available": true
       }
     },
@@ -178113,14 +178177,22 @@
       },
       "image": {
         "id": "scene-ref-0974",
-        "atlas": "assets/scenes/reference-082-v1.webp",
-        "cell": 1,
-        "columns": 3,
-        "rows": 4,
-        "width": 1536,
-        "height": 2048,
-        "status": "review-rejected",
-        "review_note": "assistant visual review"
+        "atlas": "assets/scenes/imported-references/ref-0974-v2.webp",
+        "cell": 0,
+        "columns": 1,
+        "rows": 1,
+        "width": 1024,
+        "height": 1024,
+        "status": "imported-unreviewed",
+        "sha256": "7d02caad6e1804ca5f12bf91fbad64ef78c4cb5400d9358e2958e1d34da59d2f",
+        "tile_aspect": 1,
+        "crop": {
+          "x": 0,
+          "y": 0,
+          "width": 1024,
+          "height": 1024
+        },
+        "review_note": "Imported WebP; visual review pending"
       },
       "lifecycle": {
         "imported": true,
@@ -178128,7 +178200,7 @@
         "translation_review": "assistant-reviewed",
         "linguistic_review": "original source rule retained; not a full authored lesson",
         "audio": "structurally_verified",
-        "image": "pending",
+        "image": "imported-unreviewed",
         "available": true
       }
     },
@@ -182128,14 +182200,22 @@
       },
       "image": {
         "id": "scene-ref-0997",
-        "atlas": "assets/scenes/reference-084-v1.webp",
+        "atlas": "assets/scenes/imported-references/reference-084-v2.webp",
         "cell": 0,
         "columns": 3,
         "rows": 4,
         "width": 1536,
         "height": 2048,
-        "status": "generated-pending-review",
-        "review_note": "No approved source sidecar"
+        "status": "imported-unreviewed",
+        "sha256": "58a8643f2926f5c51c0e853994f937a16778131f0259ffddc18b13fd81b2d370",
+        "tile_aspect": 1,
+        "crop": {
+          "x": 10,
+          "y": 10,
+          "width": 492,
+          "height": 492
+        },
+        "review_note": "Imported WebP; visual review pending"
       },
       "lifecycle": {
         "imported": true,
@@ -182143,7 +182223,7 @@
         "translation_review": "assistant-reviewed",
         "linguistic_review": "original source rule retained; not a full authored lesson",
         "audio": "structurally_verified",
-        "image": "pending",
+        "image": "imported-unreviewed",
         "available": true
       }
     },
@@ -182267,14 +182347,22 @@
       },
       "image": {
         "id": "scene-ref-0998",
-        "atlas": "assets/scenes/reference-084-v1.webp",
+        "atlas": "assets/scenes/imported-references/reference-084-v2.webp",
         "cell": 1,
         "columns": 3,
         "rows": 4,
         "width": 1536,
         "height": 2048,
-        "status": "generated-pending-review",
-        "review_note": "No approved source sidecar"
+        "status": "imported-unreviewed",
+        "sha256": "58a8643f2926f5c51c0e853994f937a16778131f0259ffddc18b13fd81b2d370",
+        "tile_aspect": 1,
+        "crop": {
+          "x": 522,
+          "y": 10,
+          "width": 492,
+          "height": 492
+        },
+        "review_note": "Imported WebP; visual review pending"
       },
       "lifecycle": {
         "imported": true,
@@ -182282,7 +182370,7 @@
         "translation_review": "assistant-reviewed",
         "linguistic_review": "original source rule retained; not a full authored lesson",
         "audio": "structurally_verified",
-        "image": "pending",
+        "image": "imported-unreviewed",
         "available": true
       }
     },
@@ -182483,14 +182571,22 @@
       },
       "image": {
         "id": "scene-ref-0999",
-        "atlas": "assets/scenes/reference-084-v1.webp",
+        "atlas": "assets/scenes/imported-references/reference-084-v2.webp",
         "cell": 2,
         "columns": 3,
         "rows": 4,
         "width": 1536,
         "height": 2048,
-        "status": "generated-pending-review",
-        "review_note": "No approved source sidecar"
+        "status": "imported-unreviewed",
+        "sha256": "58a8643f2926f5c51c0e853994f937a16778131f0259ffddc18b13fd81b2d370",
+        "tile_aspect": 1,
+        "crop": {
+          "x": 1034,
+          "y": 10,
+          "width": 492,
+          "height": 492
+        },
+        "review_note": "Imported WebP; visual review pending"
       },
       "lifecycle": {
         "imported": true,
@@ -182498,7 +182594,7 @@
         "translation_review": "assistant-reviewed",
         "linguistic_review": "original source rule retained; not a full authored lesson",
         "audio": "structurally_verified",
-        "image": "pending",
+        "image": "imported-unreviewed",
         "available": true
       }
     },
@@ -182610,14 +182706,22 @@
       },
       "image": {
         "id": "scene-ref-1000",
-        "atlas": "assets/scenes/reference-084-v1.webp",
+        "atlas": "assets/scenes/imported-references/reference-084-v2.webp",
         "cell": 3,
         "columns": 3,
         "rows": 4,
         "width": 1536,
         "height": 2048,
-        "status": "generated-pending-review",
-        "review_note": "No approved source sidecar"
+        "status": "imported-unreviewed",
+        "sha256": "58a8643f2926f5c51c0e853994f937a16778131f0259ffddc18b13fd81b2d370",
+        "tile_aspect": 1,
+        "crop": {
+          "x": 10,
+          "y": 522,
+          "width": 492,
+          "height": 492
+        },
+        "review_note": "Imported WebP; visual review pending"
       },
       "lifecycle": {
         "imported": true,
@@ -182625,7 +182729,7 @@
         "translation_review": "assistant-reviewed",
         "linguistic_review": "original source rule retained; not a full authored lesson",
         "audio": "structurally_verified",
-        "image": "pending",
+        "image": "imported-unreviewed",
         "available": true
       }
     }

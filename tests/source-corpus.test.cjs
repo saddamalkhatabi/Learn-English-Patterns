@@ -21,7 +21,7 @@ test('reference production keeps source IDs stable and publishes no invented mea
  for(const r of rows){assert.equal(corpus.sentences.find(s=>s.id===r.id).en,r.en);assert.equal(r.recordings.male.voice_id,'am_adam');assert.equal(r.recordings.female.voice_id,'af_bella');for(const rec of Object.values(r.recordings))if(rec.status==='planned'){assert.equal(rec.words.length,0);assert(!rec.duration_ms)}assert(r.image.width<=1536&&r.image.height<=2048)}
 });
 
-test('reference library hides every withheld or rejected sidecar cell, including stale prior approvals',()=>{
+test('reference library distinguishes verified WebP imports from visually approved scenes',()=>{
  for(const s of corpus.sentences){
   const key=`reference-${String(Math.floor((s.ordinal-1)/12)+1).padStart(3,'0')}`,file=`production/reference-images/${key}.json`;
   const meta=fs.existsSync(file)?JSON.parse(fs.readFileSync(file)):null,cell=(s.ordinal-1)%12;
@@ -29,5 +29,7 @@ test('reference library hides every withheld or rejected sidecar cell, including
   assert.equal(s.image.status==='assistant-reviewed',Boolean(approved),s.id);
   assert.equal(s.lifecycle.image==='assistant-reviewed',Boolean(approved),s.id);
  }
- assert.equal(corpus.counts.scenes,corpus.sentences.filter(s=>s.image.status==='assistant-reviewed').length);
+ const imports=corpus.sentences.filter(s=>s.image.status==='imported-unreviewed');
+ for(const s of imports)assert(s.image.atlas.startsWith('assets/scenes/imported-references/'));
+ assert.equal(corpus.counts.scenes,corpus.sentences.filter(s=>['assistant-reviewed','imported-unreviewed'].includes(s.image.status)).length);
 });
