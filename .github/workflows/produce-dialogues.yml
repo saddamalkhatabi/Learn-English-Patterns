@@ -1,0 +1,48 @@
+name: Record and align conversations
+on:
+  push:
+    branches: [main]
+    paths: [public/dialogues.json, scripts/produce-dialogues.py, .github/workflows/produce-dialogues.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: dialogue-production
+  cancel-in-progress: false
+jobs:
+  record:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: main, fetch-depth: 0}
+      - uses: actions/checkout@v4
+        with: {ref: media-tools, path: .media-tools}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/huggingface
+            ~/.cache/torch
+          key: patterns-kokoro094-ctc-v1
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg espeak-ng
+      - run: pip install torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu
+      - run: pip install -r .media-tools/scripts/audio-requirements.txt
+      - run: python scripts/produce-dialogues.py
+      - name: Publish measured recordings and refresh offline indexes
+        run: |
+          git config user.name 'English Patterns media'
+          git config user.email 'noreply@users.noreply.github.com'
+          git add public/dialogue-audio.json public/assets/audio
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Publish measured conversation audio'
+          git fetch origin main
+          git rebase origin/main
+          npm run build
+          npm test
+          git add public/app-version.js public/app-version.json public/offline-manifest.json
+          if ! git diff --cached --quiet; then git commit -m 'Refresh offline conversation media'; fi
+          git push origin HEAD:main
