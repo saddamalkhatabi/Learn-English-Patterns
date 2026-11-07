@@ -3,6 +3,10 @@ const shell=fs.readdirSync(root).filter(p=>/\.(?:html|css|js|json|svg)$/.test(p)
 const sets={course:new Set(),library:new Set(),all:new Set()},add=(rows,set)=>{for(const s of rows){for(const r of Object.values(s.recordings||{}))if(r.sha256)set.add(r.path);if(s.image&&['assistant-reviewed','visually_reviewed','imported-unreviewed'].includes(s.image.status))set.add(s.image.atlas)}};
 for(const p of ['pilot','supplement'])add(require('../public/'+p+'.json').sentences,sets.course);add(require('../public/source-corpus.json').sentences,sets.library);
 add(require('../public/expansion-media.json').sentences,sets.course);
+for(const dialogue of require('../public/dialogues.json').dialogues){
+ const audio=require('../public/dialogue-audio.json')[dialogue.id];
+ if(audio&&JSON.stringify(audio.signature)===JSON.stringify(dialogue.lines.map(line=>[line.en,line.voice])))sets.course.add(audio.path);
+}
 for(const set of [sets.course,sets.library])for(const p of set)sets.all.add(p);
 const plan=require('../production/plans/expansion-all-153.json');for(const file of plan.manifest_paths)add(JSON.parse(fs.readFileSync(file)).sentences,sets.all);
 const media=[...sets.all].sort().map(p=>({path:p,sha256:sha(p),bytes:fs.statSync(path.join(root,p)).size,groups:['course','library','all'].filter(g=>sets[g].has(p))}));

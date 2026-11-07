@@ -6,11 +6,18 @@
   "description": "Learn English through patterns, contextual scenes and synchronized dual voices",
   "scripts": {
     "start": "node server.js",
+    "db:sync": "node scripts/content-db.cjs sync",
+    "db:summary": "node scripts/content-db.cjs summary",
+    "db:scene": "node scripts/content-db.cjs scene",
     "test": "node --test tests/*.cjs",
     "check": "npm test && node scripts/verify-media.cjs && node scripts/production-status.cjs",
     "build": "node scripts/sync-expansion-atlases.cjs && node scripts/sync-reference-images.cjs && node scripts/build-teaching-index.cjs && node scripts/build-expansion-media.cjs && node scripts/build-offline.cjs"
   },
   "engines": {
     "node": ">=22"
+  },
+  "dependencies": {
+    "better-sqlite3": "^13.0.3",
+    "knex": "^3.3.0"
   }
 }

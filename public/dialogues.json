@@ -7,7 +7,7 @@
         {"voice":"female","en":"I'm Sara. This is my first day in the neighborhood.","ar":"أنا سارة. هذا أول يوم لي في الحي.","patterns":[103,5],"scene":"this-01"},
         {"voice":"male","en":"Welcome! That is the library across the street.","ar":"أهلًا بك! تلك هي المكتبة على الجانب الآخر من الشارع.","patterns":[102],"scene":"that-01"},
         {"voice":"female","en":"Is there a place to buy bread nearby?","ar":"هل يوجد مكان قريب لشراء الخبز؟","patterns":[9066],"scene":"pattern-9066-01"},
-        {"voice":"male","en":"Yes, there is a bakery next to the library.","ar":"نعم، يوجد مخبز بجوار المكتبة.","patterns":[117],"scene":"there-is-08"}
+        {"voice":"male","en":"Yes, there is a bakery next to the library.","ar":"نعم، يوجد مخبز بجوار المكتبة.","patterns":[117],"scene":"pattern-9019-06"}
       ]
     },
     {
@@ -15,7 +15,7 @@
       "lines": [
         {"voice":"female","en":"Good morning. What would you like?","ar":"صباح الخير. ماذا تود أن تطلب؟","patterns":[9051],"scene":"like-02"},
         {"voice":"male","en":"I'd like to order a cup of tea, please.","ar":"أود أن أطلب كوبًا من الشاي، من فضلك.","patterns":[3],"scene":"like-02"},
-        {"voice":"female","en":"Would you like some milk with your tea?","ar":"هل ترغب في بعض الحليب مع الشاي؟","patterns":[9051],"scene":"like-02"},
+        {"voice":"female","en":"Would you like some milk with your tea?","ar":"هل ترغب في بعض الحليب مع الشاي؟","patterns":[9051],"scene":"pattern-9051-01"},
         {"voice":"male","en":"No, thank you. Can I have some water as well?","ar":"لا، شكرًا. هل يمكنني الحصول على بعض الماء أيضًا؟","patterns":[4],"scene":"can-01"},
         {"voice":"female","en":"Of course. You don't have to pay until you leave.","ar":"بالتأكيد. لست مضطرًا للدفع حتى تغادر.","patterns":[9044],"scene":"like-02"}
       ]
@@ -24,19 +24,19 @@
       "id": "find-the-platform", "ar": "العثور على الرصيف", "en": "Finding the platform", "after": 12,
       "lines": [
         {"voice":"female","en":"Excuse me. Do you know where the train leaves from?","ar":"عذرًا. هل تعرف من أين ينطلق القطار؟","patterns":[12],"scene":"know-01"},
-        {"voice":"male","en":"It leaves from platform three. This is the way to the platforms.","ar":"ينطلق من الرصيف الثالث. هذا هو الطريق إلى الأرصفة.","patterns":[5],"scene":"this-06"},
-        {"voice":"female","en":"Do I have to show my ticket here?","ar":"هل يجب عليّ أن أُظهر تذكرتي هنا؟","patterns":[2],"scene":"have-01"},
-        {"voice":"male","en":"You can show it on the train. You need to be there before ten.","ar":"يمكنك إظهارها في القطار. عليك أن تكوني هناك قبل العاشرة.","patterns":[13],"scene":"need-01"},
-        {"voice":"female","en":"Thank you. I think I have enough time.","ar":"شكرًا لك. أظن أن لدي وقتًا كافيًا.","patterns":[105],"scene":"possess-01"}
+        {"voice":"male","en":"It leaves from platform three. This is the way to the platforms.","ar":"ينطلق من الرصيف الثالث. هذا هو الطريق إلى الأرصفة.","patterns":[5],"scene":"that-05"},
+        {"voice":"female","en":"Do I have to show my ticket here?","ar":"هل يجب عليّ أن أُظهر تذكرتي هنا؟","patterns":[2],"scene":"possess-11"},
+        {"voice":"male","en":"You can show it on the train. You need to be there before ten.","ar":"يمكنك إظهارها في القطار. عليك أن تكوني هناك قبل العاشرة.","patterns":[13],"scene":"pattern-9054-08"},
+        {"voice":"female","en":"Thank you. I think I have enough time.","ar":"شكرًا لك. أظن أن لدي وقتًا كافيًا.","patterns":[105],"scene":"pattern-9080-05"}
       ]
     },
     {
       "id": "study-together", "ar": "التخطيط للمذاكرة", "en": "Planning a study session", "after": 13,
       "lines": [
         {"voice":"male","en":"I want to practise English before the exam.","ar":"أريد أن أتدرّب على الإنجليزية قبل الاختبار.","patterns":[1],"scene":"want-01"},
-        {"voice":"female","en":"Let's study together after class.","ar":"لنذاكر معًا بعد الدرس.","patterns":[6],"scene":"want-01"},
+        {"voice":"female","en":"Let's study together after class.","ar":"لنذاكر معًا بعد الدرس.","patterns":[6],"scene":"this-05"},
         {"voice":"male","en":"I have to work this afternoon. Can I meet you tomorrow?","ar":"عليّ أن أعمل بعد ظهر اليوم. هل يمكنني أن أقابلك غدًا؟","patterns":[2,4],"scene":"have-01"},
-        {"voice":"female","en":"Of course. We need to bring our notebooks.","ar":"بالتأكيد. علينا إحضار دفاترنا.","patterns":[13],"scene":"need-01"},
+        {"voice":"female","en":"Of course. We need to bring our notebooks.","ar":"بالتأكيد. علينا إحضار دفاترنا.","patterns":[13],"scene":"pattern-9024-11"},
         {"voice":"male","en":"It's worth reviewing the difficult examples first.","ar":"من المفيد أن نراجع الأمثلة الصعبة أولًا.","patterns":[11],"scene":"want-01"}
       ]
     },
@@ -45,8 +45,8 @@
       "lines": [
         {"voice":"female","en":"I used to take the bus to work every day.","ar":"كنت أستقل الحافلة إلى العمل كل يوم.","patterns":[8],"scene":"this-06"},
         {"voice":"male","en":"How do you get to work now?","ar":"كيف تذهبين إلى العمل الآن؟","patterns":[9063],"scene":"pattern-9063-01"},
-        {"voice":"female","en":"I usually walk. It takes twenty minutes to get there.","ar":"أمشي عادةً. يستغرق الوصول إلى هناك عشرين دقيقة.","patterns":[9023,10],"scene":"pattern-9023-01"},
-        {"voice":"male","en":"I managed to walk to work twice this week.","ar":"تمكنت من الذهاب إلى العمل مشيًا مرتين هذا الأسبوع.","patterns":[9],"scene":"managed-01"},
+        {"voice":"female","en":"I usually walk. It takes twenty minutes to get there.","ar":"أمشي عادةً. يستغرق الوصول إلى هناك عشرين دقيقة.","patterns":[9023,10],"scene":"takes-04"},
+        {"voice":"male","en":"I managed to walk to work twice this week.","ar":"تمكنت من الذهاب إلى العمل مشيًا مرتين هذا الأسبوع.","patterns":[9],"scene":"pattern-9026-02"},
         {"voice":"female","en":"That's a good start. Let's walk together on Monday.","ar":"هذه بداية جيدة. لنمشِ معًا يوم الاثنين.","patterns":[102,6],"scene":"managed-01"}
       ]
     }

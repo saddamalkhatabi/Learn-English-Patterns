@@ -20,8 +20,63 @@ test('browser timer methods preserve their required host receiver',()=>{let call
 test('reading stops preserve remaining time while paused and can be extended before automatic transition',async()=>{let clock=1000,scheduled;const {p,audio}=make(source,null,{now:()=>clock,setTimer:(fn,delay)=>{scheduled={fn,delay};return 1},clearTimer:()=>{}});p.configure({patternIds:[1,13]});p.jumpTo('want-12');await p.play();audio.fire('ended');assert.equal(p.session.phase,'comparison');assert.equal(scheduled.delay,25000);clock+=5000;assert.equal(p.comparisonRemaining,20000);p.pause();clock+=10000;assert.equal(p.comparisonRemaining,20000);await p.play();assert.equal(scheduled.delay,20000);p.extendComparison(10000);assert.equal(scheduled.delay,30000);clock+=30000;scheduled.fn();assert.equal(p.sentence.id,'need-01')});
 test('progress never regresses when a sentence completes into comparison',async()=>{const {p,audio}=make();p.jumpTo('want-12');await p.play();p.session.offset=p.recording.duration_ms/1000;const before=p.progress;audio.fire('ended');assert.equal(p.session.phase,'comparison');assert(p.progress>=before)});
 test('purpose routes preserve their declared pattern order',async()=>{const {p,audio}=make();p.configure({patternIds:[4,12,3],routeId:'questions'});assert.equal(p.session.ids[0],'can-01');p.jumpTo('can-12');await p.play();audio.fire('ended');p.continueAfterComparison();assert.equal(p.sentence.id,'know-01');assert.equal(p.session.filters.routeId,'questions')});
-test('automatic next-pattern switch can be turned off without skipping content',async()=>{const {p,audio}=make();p.configure({patternIds:[1,13],autoNextPattern:false});p.jumpTo('want-12');await p.play();audio.fire('ended');assert.equal(p.session.phase,'comparison');assert.equal(p.running,false);assert.equal(p.sentence.id,'want-12');await p.play();assert.equal(p.sentence.id,'need-01')});
+test('manual advance waits for the configured reading break and then requires a click',async()=>{
+ const {p,audio,timer}=make();
+ p.configure({patternIds:[1,13],autoNextPattern:false,readingSeconds:5});
+ p.jumpTo('want-12');
+ await p.play();
+ audio.fire('ended');
+ assert.equal(p.session.phase,'comparison');
+ assert.equal(p.comparisonDuration,5000);
+ timer();
+ assert.equal(p.running,false);
+ assert.equal(p.sentence.id,'want-12');
+ await p.play();
+ assert.equal(p.sentence.id,'need-01');
+});
 test('an earlier full pilot expands without losing the recorded resume point',()=>{const previous={ids:source.sentences.filter(s=>[1,13,2].includes(s.pattern_id)).map(s=>s.id),cursor:5,phase:'sentence',offset:1.2,voice:'female',completed:[],filters:{patternIds:[1,13,2],stage:0,cefr:''}};const {p}=make(source,previous);assert.equal(p.session.ids.length,source.sentences.length);assert.equal(p.sentence.id,'want-06');assert.equal(p.session.offset,1.2);assert.equal(p.session.voice,'female')});
-test('the contextual story plays after comparison with stable character voices before the next pattern',async()=>{const {p,audio}=make();p.configure({patternIds:[3,111]});p.jumpTo('like-12');await p.play();audio.fire('ended');p.continueAfterComparison();const seen=[];for(let i=0;i<5;i++){assert.equal(p.session.phase,'interlude');seen.push([p.sentence.id,p.session.voice]);p.otherVoice();assert.equal(p.session.voice,seen.at(-1)[1]);audio.fire('ended')}assert.deepEqual(seen,[['story-01','male'],['story-02','male'],['story-03','female'],['story-04','male'],['story-05','female']]);assert.equal(p.sentence.id,'enjoy-01');assert.equal(p.session.voice,'male')});
-test('story pause restores exact character, line, rate and offset without replacing the voice',async()=>{const {p,audio,storage}=make();p.configure({patternIds:[3,111],rate:.75});p.jumpTo('like-12');await p.play();audio.fire('ended');p.continueAfterComparison();audio.fire('ended');audio.fire('ended');assert.equal(p.sentence.id,'story-03');audio.currentTime=.87;audio.fire('timeupdate');p.pause();const restored=make(source,JSON.parse(storage.getItem('nasaq-route-v2')));await restored.p.play();assert.equal(restored.p.session.phase,'interlude');assert.equal(restored.p.sentence.id,'story-03');assert.equal(restored.p.session.voice,'female');assert.equal(restored.audio.currentTime,.87);assert.equal(restored.audio.playbackRate,.75)});
+test('the contextual story plays after comparison with stable character voices before the next pattern',async()=>{const {p,audio}=make();p.configure({patternIds:[3,111],includeDialogues:true});p.jumpTo('like-12');await p.play();audio.fire('ended');p.continueAfterComparison();const seen=[];for(let i=0;i<5;i++){assert.equal(p.session.phase,'interlude');seen.push([p.sentence.id,p.session.voice]);p.otherVoice();assert.equal(p.session.voice,seen.at(-1)[1]);audio.fire('ended')}assert.deepEqual(seen,[['story-01','male'],['story-02','male'],['story-03','female'],['story-04','male'],['story-05','female']]);assert.equal(p.sentence.id,'enjoy-01');assert.equal(p.session.voice,'male')});
+test('story pause restores exact character, line, rate and offset without replacing the voice',async()=>{const {p,audio,storage}=make();p.configure({patternIds:[3,111],rate:.75,includeDialogues:true});p.jumpTo('like-12');await p.play();audio.fire('ended');p.continueAfterComparison();audio.fire('ended');audio.fire('ended');assert.equal(p.sentence.id,'story-03');audio.currentTime=.87;audio.fire('timeupdate');p.pause();const restored=make(source,JSON.parse(storage.getItem('nasaq-route-v2')));await restored.p.play();assert.equal(restored.p.session.phase,'interlude');assert.equal(restored.p.sentence.id,'story-03');assert.equal(restored.p.session.voice,'female');assert.equal(restored.audio.currentTime,.87);assert.equal(restored.audio.playbackRate,.75)});
 test('old complete-course sessions expand by sentence identity instead of retaining an obsolete cursor',()=>{const previousIds=source.previous_courses[0].sentence_ids,anchor=previousIds[37],previous={ids:previousIds,cursor:37,phase:'sentence',offset:1.1,voice:'female',filters:{patternIds:[],stage:0,cefr:''}};const {p}=make(source,previous);assert.equal(p.sentence.id,anchor);assert.equal(p.session.offset,1.1);assert.equal(p.session.ids.length,source.sentences.length);assert.equal(p.session.voice,'female')});
+
+test('the standard route skips legacy stories and honours hidden reading breaks',async()=>{
+ const {p,audio}=make();
+ p.configure({patternIds:[3,111],readingSeconds:0});
+ p.jumpTo('like-12');
+ await p.play();
+ audio.fire('ended');
+ assert.equal(p.session.phase,'sentence');
+ assert.equal(p.sentence.id,'enjoy-01');
+});
+
+test('one opted-in conversation plays once at the boundary and resumes at the saved position',async()=>{
+ const data={...source,dialogues:[{id:'cafe',after:3,audio:{
+  path:'assets/audio/dialogue-cafe.mp3',sha256:'test-only',duration_ms:6000,turns:[{},{}]
+ }}]};
+ const {p,audio,storage}=make(data);
+ p.configure({patternIds:[3,111],readingSeconds:0,includeDialogues:true});
+ p.jumpTo('like-12');
+ await p.play();
+ audio.fire('ended');
+ assert.equal(p.session.phase,'dialogue');
+ assert.equal(audio.getAttribute('src'),data.dialogues[0].audio.path);
+ p.seek(2.5);
+ p.pause();
+ const next=make(data,JSON.parse(storage.getItem('nasaq-route-v2')));
+ await next.p.play();
+ assert.equal(next.audio.currentTime,2.5);
+ next.audio.fire('ended');
+ assert.equal(next.p.sentence.id,'enjoy-01');
+});
+
+test('finished listening can replay from its first selected example',async()=>{
+ const {p,audio}=make();
+ p.configure({patternIds:[3],readingSeconds:0});
+ p.jumpTo('like-12');
+ await p.play();
+ audio.fire('ended');
+ assert.equal(p.session.phase,'finished');
+ await p.play();
+ assert.equal(p.session.phase,'sentence');
+ assert.equal(p.sentence.id,'like-01');
+});

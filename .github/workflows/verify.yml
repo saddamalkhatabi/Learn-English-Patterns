@@ -16,6 +16,9 @@ jobs:
       - run: npm run build
       - run: npm run check
       - run: python tests/scene_zip_test.py
+      - run: npm ci --no-audit --no-fund
+      - run: npm run db:sync
+      - run: npm run db:sync
       - uses: actions/upload-artifact@v4
         with:
           name: verified-status

@@ -22,17 +22,35 @@ jobs:
         with: {python-version: '3.11'}
       - uses: actions/setup-node@v4
         with: {node-version: '22'}
+      - id: audio
+        run: |
+          node - <<'NODE'
+          const fs=require('node:fs'), crypto=require('node:crypto');
+          const assets=require('./public/dialogue-audio.json');
+          const needed=require('./public/dialogues.json').dialogues.some(d=>{
+            const r=assets[d.id];
+            if(!r||JSON.stringify(r.signature)!==JSON.stringify(d.lines.map(l=>[l.en,l.voice])))return true;
+            return !fs.existsSync('public/'+r.path)||crypto.createHash('sha256').update(fs.readFileSync('public/'+r.path)).digest('hex')!==r.sha256;
+          });
+          fs.appendFileSync(process.env.GITHUB_OUTPUT,'needed='+needed+'\n');
+          NODE
       - uses: actions/cache@v4
+        if: steps.audio.outputs.needed == 'true'
         with:
           path: |
             ~/.cache/huggingface
             ~/.cache/torch
           key: patterns-kokoro094-ctc-v1
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg espeak-ng
+        if: steps.audio.outputs.needed == 'true'
       - run: pip install torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu
+        if: steps.audio.outputs.needed == 'true'
       - run: pip install -r .media-tools/scripts/audio-requirements.txt
+        if: steps.audio.outputs.needed == 'true'
       - run: python scripts/produce-dialogues.py
+        if: steps.audio.outputs.needed == 'true'
       - name: Publish measured recordings and refresh offline indexes
+        if: steps.audio.outputs.needed == 'true'
         run: |
           git config user.name 'English Patterns media'
           git config user.email 'noreply@users.noreply.github.com'

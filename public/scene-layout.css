@@ -47,3 +47,27 @@ html[data-pattern-image="focus"] .coach-scene{width:min(100%,440px);max-width:no
 html[data-pattern-image="focus"] .coach-scene>.scene-frame{max-width:none}
 html[data-pattern-image="focus"] .lesson-active-example{grid-template-columns:minmax(0,1fr)}
 html[data-pattern-image="focus"] .lesson-active-example .lesson-scene{max-width:420px;margin:auto}
+
+.dialogue-panel{padding:clamp(12px,3vw,24px);min-width:0}
+.dialogue-active:not(:empty){display:grid;grid-template-columns:minmax(0,190px) minmax(0,1fr);align-items:center;gap:16px}
+.dialogue-active [lang="en"]{font-size:clamp(18px,3vw,27px)!important}
+.dialogue-photo:empty{display:none}
+.dialogue-active:has(.dialogue-photo:empty){grid-template-columns:1fr}
+.dialogue-photo .scene-frame{border-radius:12px}
+.dialogue-transcript{margin-top:14px}
+.dialogue-transcript li{padding:10px;border-inline-start:3px solid transparent}
+.dialogue-transcript li.active{border-color:var(--red);background:#fff2e8}
+[data-dialogue-word].speaking{background:#fee2a5;text-decoration:underline;text-underline-offset:3px}
+#dialogue-player audio{width:100%;margin-block:10px}
+html[data-pattern-image="hidden"] .dialogue-photo{display:none}
+html[data-pattern-image="hidden"] .dialogue-active:not(:empty){grid-template-columns:1fr}
+html[data-pattern-image="focus"] .dialogue-active:not(:empty){grid-template-columns:minmax(0,1fr)}
+html[data-pattern-image="focus"] .dialogue-photo{width:min(100%,400px);margin:auto}
+.comparison-card{padding:14px;border-bottom:1px solid var(--line)}
+.comparison-card summary,.dialogue-transcript summary{cursor:pointer;font-weight:700}
+.comparison-examples{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:12px}
+.comparison-examples>div{border:1px solid var(--line);padding:12px;border-radius:12px}
+.lesson-play-all{margin-block:10px 14px}
+.lesson-step-feedback:not(:empty),#coach-transfer-feedback:not(:empty){padding:10px 14px;border-inline-start:3px solid var(--red);background:#fff0ef;color:#65232c}
+.lesson-step-feedback:empty{display:none}
+@media(max-width:760px){.dialogue-active:not(:empty){grid-template-columns:1fr}.dialogue-photo{max-width:200px;margin:auto}}

@@ -1,15 +1,17 @@
 {
   "schema": 1,
-  "version": "3c93074b316bf8cf",
+  "version": "296f6a65f0a4cb4f",
   "shell": [
     "app.js",
     "collection-experience.js",
+    "comparisons.json",
     "corpus-player.js",
     "corpus-ui.js",
     "corpus.css",
     "curriculum.json",
     "data.js",
     "dialogue-audio.json",
+    "dialogue-experience.js",
     "dialogues.json",
     "enhancements.js",
     "expansion-media.json",
@@ -700,6 +702,51 @@
       "path": "assets/audio/can-12-male.mp3",
       "sha256": "e692a59ff44662de1b1fd59c5b93d94b1216357e0c6cc41ffddfb61159cd692b",
       "bytes": 14421,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/dialogue-a-new-routine-2e0cba306577.mp3",
+      "sha256": "2e0cba306577137674aedaff3fdb964ad5e8bf840cf46ccddeb18519f8ebbbc1",
+      "bytes": 139820,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/dialogue-cafe-order-5bdfa1850aff.mp3",
+      "sha256": "5bdfa1850aff9ca288d91d2d7908507cbe6efe3071b27b578e35cd1d0f999dba",
+      "bytes": 129260,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/dialogue-find-the-platform-8496137c223e.mp3",
+      "sha256": "8496137c223e50e023600368986a73f37a12a89e33629c27040915296e22185f",
+      "bytes": 151148,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/dialogue-new-neighbor-99b432a2a1ba.mp3",
+      "sha256": "99b432a2a1bae16e9b73f657f456e8966f764898430954d892a753ed5a58d3e5",
+      "bytes": 141548,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/dialogue-study-together-08f99d40e88d.mp3",
+      "sha256": "08f99d40e88d3afe0d83b7a5af7834b6e6d69ad93cc50ee70467a6fc4aaedc0a",
+      "bytes": 144236,
       "groups": [
         "course",
         "all"

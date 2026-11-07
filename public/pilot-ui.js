@@ -1,7 +1,14 @@
 /* One shared sentence registry powers coach, catalog, lesson examples, and Idea Lab. */
 let PILOT=null,route=null,pilotAudit=null,coachFrame=0,hideCoachText=false,hideCoachArabic=false,coachPaintKey='';
 const expansionReady=fetch('expansion-media.json').then(r=>r.ok?r.json():null).catch(()=>null);
-const pilotReady=Promise.all([fetch('pilot.json').then(r=>{if(!r.ok)throw Error('pilot');return r.json()}),expansionReady]).then(([data,expansion])=>{
+const dialogueReady=Promise.all(['dialogues.json','dialogue-audio.json'].map(path=>fetch(path).then(r=>r.ok?r.json():null).catch(()=>null)))
+ .then(([source,media])=>(source?.dialogues||[]).map(dialogue=>{
+  const audio=media?.[dialogue.id];
+  const signature=dialogue.lines.map(line=>[line.en,line.voice]);
+  return {...dialogue,audio:audio&&JSON.stringify(audio.signature)===JSON.stringify(signature)?audio:null};
+ }));
+const pilotReady=Promise.all([fetch('pilot.json').then(r=>{if(!r.ok)throw Error('pilot');return r.json()}),expansionReady,dialogueReady]).then(([data,expansion,dialogues])=>{
+ data.dialogues=dialogues;
  if(expansion?.schema===3){
   data.patterns.push(...expansion.patterns);
   data.sentences.push(...expansion.sentences);
@@ -27,7 +34,22 @@ function toggleCoach(){if('speechSynthesis'in window)speechSynthesis.cancel();st
 function coachPrevious(){const n=Math.max(0,route.session.cursor-1);route.jumpTo(route.session.ids[n]);route.play()}
 function coachNext(){if(route.session.phase==='comparison'){route.running=true;route.continueAfterComparison()}else if(route.session.phase==='interlude'){route.running=true;route.finishInterlude()}else if(route.session.phase==='exercise')completeTransfer();else{route.running=true;route.advance()}}
 function isNewPilotIdea(t){const norm=x=>x.toLowerCase().replace(/[^a-z0-9 ]/g,'').replace(/\s+/g,' ').trim();return !PILOT.sentences.some(s=>norm(s.en)===norm(t))}
-function completeTransfer(){const t=$('#coach-transfer')?.value.trim();if(!t||t.split(/\s+/).length<4){toast('اكتب فكرة جديدة من أربع كلمات على الأقل قبل المتابعة.');return}if(!isNewPilotIdea(t)){toast('هذه جملة سبق عرضها. غيّر الفعل أو الفكرة لتنتج عبارة جديدة.');return}let answers;try{answers=JSON.parse(localStorage.getItem('nasaq-transfer-v2')||'{}')}catch{answers={}}answers[route.sentence.id]={text:t,at:Date.now(),self_assessed:true};localStorage.setItem('nasaq-transfer-v2',JSON.stringify(answers));route.continueAfterExercise()}
+function completeTransfer(){
+ const input=$('#coach-transfer'), text=input?.value.trim();
+ let message='';
+ if(!text||text.split(/\s+/).length<4)message='اكتب فكرة جديدة بالإنجليزية من أربع كلمات على الأقل حتى تتابع.';
+ else if(!isNewPilotIdea(text))message='هذه جملة من أمثلة المنهج. غيّر الفعل أو الموقف واكتب فكرة من عندك.';
+ if(message){
+  const feedback=$('#coach-transfer-feedback');
+  if(feedback){feedback.textContent=message;input?.setAttribute('aria-describedby',feedback.id);input?.focus()}
+  else toast(message);
+  return;
+ }
+ let answers;try{answers=JSON.parse(localStorage.getItem('nasaq-transfer-v2')||'{}')}catch{answers={}}
+ answers[route.sentence.id]={text,at:Date.now(),self_assessed:true};
+ localStorage.setItem('nasaq-transfer-v2',JSON.stringify(answers));
+ route.continueAfterExercise();
+}
 function timeText(t){return `${Math.floor(t/60)}:${String(Math.floor(t%60)).padStart(2,'0')}`}
 function updateCoach(){if(page!=='coach'||!$('#coach-body')||!route)return;const s=route.sentence,p=route.pattern,r=route.recording;if(!s){$('#coach-body').innerHTML='<div class="empty">لا توجد جمل في هذا المسار. غيّر خيارات المسار.</div>';return}const original=PILOT.sentences.filter(x=>x.pattern_id===s.pattern_id),position=original.findIndex(x=>x.id===s.id)+1,key=s.id+route.session.phase+route.session.voice;const duration=(r?.duration_ms||0)/1000;
  $('#coach-meta').innerHTML=`<span>المجموعة 1 / 1</span><span>النمط ${PILOT.pattern_order.indexOf(s.pattern_id)+1} / ${PILOT.patterns.length}</span><span>الجملة ${position} / ${original.length}</span><span>${s.difficulty.cefr} · ${s.difficulty.stage_label}</span><b>${route.progress.toFixed(1)}% من المسار المختار</b>`;$('#coach-progress').style.width=route.progress+'%';
@@ -36,7 +58,7 @@ function updateCoach(){if(page!=='coach'||!$('#coach-body')||!route)return;const
  if($('#coach-toggle'))$('#coach-toggle').textContent=route.running?'Ⅱ إيقاف مؤقت':'▷ تشغيل / استكمال';$('#coach-time').textContent=timeText(route.session.offset);$('#coach-duration').textContent=timeText(duration);const seek=$('#coach-seek');seek.max=duration||1;seek.value=route.session.offset;seek.disabled=route.session.phase!=='sentence';$('#coach-status').textContent=route.error||`${route.session.voice==='male'?'Adam':'Bella'} · ${route.session.phase==='sentence'?'MP3 + محاذاة التسجيل الفعلي':route.session.phase==='finished'?'اكتمل المسار':'توقف تعليمي'} · موضع محفوظ`;paintCoachWords(route.session.offset*1000);
 }
 function paintTextVisibility(){if($('#coach-english'))$('#coach-english').classList.toggle('masked-text',hideCoachText);if($('#coach-arabic'))$('#coach-arabic').classList.toggle('masked-text',hideCoachArabic)}
-function paintCoachWords(ms){if(!route||!$('#coach-english'))return;const active=route.recording?.words.findIndex(w=>w.start_ms<=ms&&ms<w.end_ms)??-1;document.querySelectorAll('#coach-english [data-cue]').forEach(el=>el.classList.toggle('speaking',+el.dataset.cue===active))}
+function paintCoachWords(ms){if(!route)return;if(route.session.phase==='dialogue'){paintDialogue($('#coach-body'),route.activeDialogue,ms);return}if(!$('#coach-english'))return;const active=route.recording?.words?.findIndex(w=>w.start_ms<=ms&&ms<w.end_ms)??-1;document.querySelectorAll('#coach-english [data-cue]').forEach(el=>el.classList.toggle('speaking',+el.dataset.cue===active))}
 function catalog(){if(!PILOT)return head('كتالوج المشاهد','جارٍ تحميل المشاهد…');return `${head('معنى تراه. ونمط تعيد استخدامه.','${PILOT.sentences.length} جملة مختلفة، مع مشهد لكل جملة وصوتين مستقلين وتوقيتين منفصلين.','THE VISUAL CATALOG')}<div class="toolbar"><input class="search" id="scene-search" aria-label="البحث في المشاهد" placeholder="ابحث في الجملة أو الموقف أو الترجمة…" oninput="filterScenes()"><select id="scene-pattern" aria-label="نمط المشاهد" onchange="filterScenes()"><option value="">كل الأنماط</option>${PILOT.patterns.map(p=>`<option value="${p.id}">${esc(p.form)}</option>`).join('')}</select><select id="scene-level" aria-label="مرحلة المشاهد" onchange="filterScenes()"><option value="">كل مراحل الممارسة</option>${[1,2,3,4,5,6].map(n=>`<option value="${n}">مرحلة ${n}</option>`).join('')}</select></div><p id="scene-count" class="countnote"></p><div class="catalog-grid" id="scene-grid"></div>`}
 function filterScenes(){if(!$('#scene-grid')||!PILOT)return;const q=$('#scene-search').value.toLowerCase(),pid=$('#scene-pattern').value,level=$('#scene-level').value;const a=PILOT.sentences.filter(s=>(!pid||s.pattern_id===+pid)&&(!level||s.difficulty.stage===+level)&&`${s.en} ${s.ar} ${s.context}`.toLowerCase().includes(q));$('#scene-count').textContent=`${a.length} مشهدًا · صور واقعية مولّدة للتعليم`;$('#scene-grid').innerHTML=a.map(s=>`<article class="scene-card">${pilotScene(s)}<div class="scene-card-body"><span class="eyebrow">${s.id} · ${s.difficulty.cefr}</span><h3 id="catalog-${s.id}" dir="ltr">${s.en.split(' ').map((w,i)=>`<span data-cue="${i}">${esc(w)}</span>`).join(' ')}</h3><p>${esc(s.ar)}</p><small>${esc(s.context)} · ${s.difficulty.stage_label}</small><div class="buttonrow"><button class="secondary" onclick="previewRecording('${s.id}','male')">▷ Adam</button><button class="secondary" onclick="previewRecording('${s.id}','female')">▷ Bella</button><button class="textlink" onclick="playCatalogSentence('${s.id}')">تعلّمها في المسار ←</button></div></div></article>`).join('')||'<div class="empty">لا توجد نتائج.</div>'}
 function playCatalogSentence(id){if(!route)return;if(!route.session.ids.includes(id))route.configure({patternIds:PILOT.pattern_order});stopRecorded();if(catalogAudio)catalogAudio.pause();route.jumpTo(id);navigate('coach');route.play()}
