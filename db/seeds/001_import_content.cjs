@@ -4,13 +4,13 @@ const crypto = require('node:crypto');
 const root = path.resolve(__dirname, '../..');
 const hash = bytes => crypto.createHash('sha256').update(bytes).digest('hex');
 const names = ['pilot', 'supplement', 'expansion-media', 'source-corpus', 'curriculum', 'pattern-catalog',
-  'dialogues', 'dialogue-audio', 'comparisons'];
+  'dialogues', 'dialogue-audio', 'comparisons', 'scene-archive'];
 const displayable = new Set(['visually_reviewed', 'assistant-reviewed', 'imported-unreviewed']);
 
 exports.seed = async db => {
   const files = Object.fromEntries(names.map(name => [name, fs.readFileSync(path.join(root, 'public', name+'.json'))]));
   const sources = Object.fromEntries(names.map(name => [name, hash(files[name])]));
-  const fingerprint = hash(JSON.stringify({ format: 3, sources }));
+  const fingerprint = hash(JSON.stringify({ format: 4, sources }));
   if ((await db('content_state').where('key', 'current_import').first())?.value === fingerprint) {
     console.log('Content already indexed: ' + fingerprint.slice(0, 12));
     return;
@@ -90,6 +90,20 @@ exports.seed = async db => {
       sentenceTerms.push({sentence_id:row.id,term_id});
     }
   }
+  const sceneDescriptions=[], sceneTerms=[];
+  const archive=data['scene-archive'], topics=new Map(archive.topics.map(t=>[t.id,t]));
+  for(const row of archive.scenes){
+    const scene_id=bySentence.get(row.id);
+    if(!scene_id)continue;
+    sceneDescriptions.push({scene_id,description_en:row.description,description_ar:row.descriptionAr});
+    const labels=row.topics.flatMap(id=>[topics.get(id).ar,topics.get(id).en]);
+    const words=[...row.keywords,...labels];
+    for(const term_id of termIds({
+      scene_keyword_ar:words.filter(word=>/[\u0600-\u06ff]/.test(word)),
+      scene_keyword_en:words.filter(word=>!/[\u0600-\u06ff]/.test(word)),
+      scene_topic:row.topics
+    }))sceneTerms.push({scene_id,term_id});
+  }
   const patternSentences=new Map();
   for(const pattern of patterns)pattern.sentence_ids.forEach((sentence_id,position)=>{
     patternSentences.set(pattern.id+'/'+sentence_id,{pattern_id:pattern.id,sentence_id,position});
@@ -119,7 +133,8 @@ exports.seed = async db => {
       return [...(lesson?.exams||[]),...(lesson?.advanced||[])].map(q=>({id:q.id,pattern_id:p.id,
         kind:q.question?'advanced':'closed',body_json:JSON.stringify(q)}));
     }),
-    terms:[...terms.values()],pattern_terms:patternTerms,sentence_terms:sentenceTerms,coverage_gaps:gaps
+    terms:[...terms.values()],pattern_terms:patternTerms,sentence_terms:sentenceTerms,
+    scene_descriptions:sceneDescriptions,scene_terms:sceneTerms,coverage_gaps:gaps
   };
   await db.transaction(async trx=>{
     if((await trx('content_state').where('key','current_import').first())?.value===fingerprint)return;

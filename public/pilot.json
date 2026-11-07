@@ -39825,24 +39825,25 @@
       ],
       "image": {
         "id": "scene-it-01",
-        "atlas": "assets/scenes/it-atlas-v1.webp",
-        "cell": 0,
+        "atlas": "assets/scenes/pattern-9034-atlas-v1.webp",
+        "cell": 10,
         "columns": 3,
         "rows": 4,
         "width": 1536,
         "height": 2048,
-        "tile_aspect": 1,
         "status": "visually_reviewed",
-        "origin": "generated_photorealistic",
-        "sha256": "607a25893e117a2d458afaeb1d6852816b142e1b7df4846bf08907dcc8d15a52",
+        "sha256": "9af1e3733fb90bf4bb47ab13f79fc41236c0b08fa080ebca3aa549dbc6c1992c",
+        "tile_aspect": 1,
         "crop": {
-          "x": 1,
-          "y": 1,
+          "x": 513,
+          "y": 1537,
           "width": 510,
           "height": 510
         },
-        "geometry_status": "verified",
-        "review": "Assistant visual review of twelve cells in sentence order; abstract meaning requires the accompanying sentence. No human sign-off claimed."
+        "cultural_policy": "arab-muslim-family-v1",
+        "review_path": "production/qa/pattern-9034-image-review.json",
+        "review_note": "Contextual scene reassignment after targeted visual inspection",
+        "replacement_source": "pattern-9034-11"
       },
       "recordings": {
         "male": {

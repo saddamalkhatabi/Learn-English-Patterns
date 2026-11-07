@@ -4373,22 +4373,25 @@
       },
       "image": {
         "id": "scene-ref-0024",
-        "atlas": "assets/scenes/reference-002-v1.webp",
-        "sha256": "f097362760d370cd880f5212ba8dbb2184a47abb05be0125548d91088cb05cce",
-        "cell": 11,
+        "atlas": "assets/scenes/pattern-9037-atlas-v1.webp",
+        "cell": 6,
         "columns": 3,
         "rows": 4,
         "width": 1536,
         "height": 2048,
+        "status": "assistant-reviewed",
+        "sha256": "5d97daf0a634414bc83459606439002f480087bc18563e462752830883574155",
         "tile_aspect": 1,
         "crop": {
-          "x": 1025,
-          "y": 1537,
+          "x": 1,
+          "y": 1025,
           "width": 510,
           "height": 510
         },
-        "status": "assistant-reviewed",
-        "origin": "generated_photorealistic"
+        "cultural_policy": "arab-muslim-family-v1",
+        "review_path": "production/qa/pattern-9037-image-review.json",
+        "review_note": "Contextual scene reassignment after targeted visual inspection",
+        "replacement_source": "pattern-9037-07"
       },
       "lifecycle": {
         "imported": true,
@@ -9505,22 +9508,23 @@
       },
       "image": {
         "id": "scene-ref-0053",
-        "atlas": "assets/scenes/reference-005-v1.webp",
-        "sha256": "f1a8dff48211247e4217e8e414f117c26c14d4a3be92cfabc32ae8d63a1c1756",
-        "cell": 4,
+        "atlas": "assets/scenes/reference-054-v1.webp",
+        "cell": 3,
         "columns": 3,
         "rows": 4,
         "width": 1536,
         "height": 2048,
+        "status": "assistant-reviewed",
+        "sha256": "cb6cc5c7fef0b87cd582b1dddc7780239d2a1326ec6831e7bdd81f93122d8da1",
         "tile_aspect": 1,
         "crop": {
-          "x": 513,
+          "x": 1,
           "y": 513,
           "width": 510,
           "height": 510
         },
-        "status": "assistant-reviewed",
-        "origin": "generated_photorealistic"
+        "review_note": "Contextual scene reassignment after targeted visual inspection",
+        "replacement_source": "ref-0640"
       },
       "lifecycle": {
         "imported": true,
@@ -80254,21 +80258,24 @@
       },
       "image": {
         "id": "scene-ref-0434",
-        "atlas": "assets/scenes/reference-037-v1.webp",
+        "atlas": "assets/scenes/imported-references/reference-008-v2.webp",
+        "sha256": "eac03278ddb5af9fbd5ddcd8a4fec6e8e0616a1b6bdc041bedef1086dec3d9dc",
         "cell": 1,
         "columns": 3,
         "rows": 4,
         "width": 1536,
         "height": 2048,
-        "status": "assistant-reviewed",
-        "sha256": "cd642e85cb47e521b3418c18e635c282d8ea76468980e19e6bb590a65c836caf",
         "tile_aspect": 1,
         "crop": {
-          "x": 513,
-          "y": 1,
-          "width": 510,
-          "height": 510
-        }
+          "x": 521,
+          "y": 5,
+          "width": 499,
+          "height": 499
+        },
+        "status": "assistant-reviewed",
+        "origin": "generated_photorealistic",
+        "review_note": "Contextual scene reassignment after targeted visual inspection",
+        "replacement_source": "ref-0086"
       },
       "lifecycle": {
         "imported": true,
@@ -99811,21 +99818,23 @@
       },
       "image": {
         "id": "scene-ref-0543",
-        "atlas": "assets/scenes/reference-046-v1.webp",
-        "cell": 2,
+        "atlas": "assets/scenes/pattern-9161-atlas-v1.webp",
+        "cell": 8,
         "columns": 3,
         "rows": 4,
         "width": 1536,
         "height": 2048,
         "status": "assistant-reviewed",
-        "sha256": "c472beebf16fcb5e540fe398d325ef2c5aff17e8ce67484ce4719acb3a6de0ed",
+        "sha256": "db917d4ab0129ebedb285d0197bcc6274f3b55376608258eab5e79c5717fc278",
         "tile_aspect": 1,
         "crop": {
-          "x": 1025,
-          "y": 1,
-          "width": 510,
-          "height": 510
-        }
+          "x": 1034,
+          "y": 1034,
+          "width": 492,
+          "height": 492
+        },
+        "review_note": "Contextual scene reassignment after targeted visual inspection",
+        "replacement_source": "pattern-9161-09"
       },
       "lifecycle": {
         "imported": true,
@@ -124811,21 +124820,23 @@
       },
       "image": {
         "id": "scene-ref-0682",
-        "atlas": "assets/scenes/reference-057-v1.webp",
-        "cell": 9,
+        "atlas": "assets/scenes/reference-052-v1.webp",
+        "cell": 1,
         "columns": 3,
         "rows": 4,
         "width": 1536,
         "height": 2048,
         "status": "assistant-reviewed",
-        "sha256": "38ca5d11ea1d34627738b4c55d3ddbf987f8c28eaa486baac7378e78cf6abdfa",
+        "sha256": "6a91fdd98666b4b2b01e14888d0aff72b273c4ae3dd7de057678347a09a5d324",
         "tile_aspect": 1,
         "crop": {
-          "x": 1,
-          "y": 1537,
+          "x": 513,
+          "y": 1,
           "width": 510,
           "height": 510
-        }
+        },
+        "review_note": "Contextual scene reassignment after targeted visual inspection",
+        "replacement_source": "ref-0614"
       },
       "lifecycle": {
         "imported": true,

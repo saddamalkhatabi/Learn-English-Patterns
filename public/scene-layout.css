@@ -71,3 +71,29 @@ html[data-pattern-image="focus"] .dialogue-photo{width:min(100%,400px);margin:au
 .lesson-step-feedback:not(:empty),#coach-transfer-feedback:not(:empty){padding:10px 14px;border-inline-start:3px solid var(--red);background:#fff0ef;color:#65232c}
 .lesson-step-feedback:empty{display:none}
 @media(max-width:760px){.dialogue-active:not(:empty){grid-template-columns:1fr}.dialogue-photo{max-width:200px;margin:auto}}
+
+.scene-studio-grid,.dialogue-catalog{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,195px),1fr));gap:12px}
+.scene-studio-grid>.panel,.dialogue-cover{margin:0;min-width:0;padding:12px}
+.scene-studio-grid .scene-frame,.dialogue-cover .scene-frame{border-radius:10px}
+.scene-studio-grid [lang="ar"]{font-size:.9rem;margin:4px 0}
+.studio-exercise{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:16px;scroll-margin-top:70px}
+.studio-exercise textarea{width:100%;margin-block:8px}
+.studio-exercise .scene-frame{border-radius:12px}
+.studio-exercise details{margin-top:10px}
+[data-studio-word].speaking{background:#fee2a5;text-decoration:underline}
+.dialogue-transcript ol{list-style:none;padding:0;margin:8px 0}
+.dialogue-transcript li{display:grid;grid-template-columns:3rem minmax(0,1fr) auto;align-items:start;gap:8px;padding:7px 9px}
+.dialogue-transcript li p{margin:0;line-height:1.45;font-size:1rem!important}
+.dialogue-transcript li p.ar-content{font-size:.95rem!important;line-height:1.5!important}
+.dialogue-transcript li button{min-width:36px}
+.dialogue-transcript li>strong{padding-top:2px}
+.dialogue-turn-patterns,.dialogue-patterns .buttonrow{display:flex;flex-wrap:wrap;gap:4px 10px}
+.dialogue-turn-patterns button,.dialogue-patterns button{padding:3px 0;text-align:start;font-size:.85rem}
+.dialogue-cover h3{margin:4px 0 8px}
+.dialogue-play-status:empty{display:none}
+.comparison-examples>article{border:1px solid var(--line);padding:12px;border-radius:12px;min-width:0}
+.comparison-examples [lang="en"]{overflow-wrap:anywhere}
+.comparison-examples details p{margin-block:6px}
+#comparison-guide .panel{border:2px solid var(--red)}
+#comparison-meter{width:min(100%,380px)}
+@media(max-width:680px){.studio-exercise{grid-template-columns:minmax(0,1fr)}.dialogue-transcript li{grid-template-columns:2.5rem minmax(0,1fr) auto;gap:5px}}

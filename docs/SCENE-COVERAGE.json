@@ -1,0 +1,413 @@
+{
+  "expected": 3160,
+  "available": 3099,
+  "assets": 268,
+  "importedPendingVisualReview": 1548,
+  "technicalCheck": "File hash and crop bounds verified for each available scene",
+  "visualReview": {
+    "scope": "Preliminary overview of 268 active image assets across six contact sheets; focused inspection of 35 weather, beach and swimming scenes",
+    "limitations": "The overview is not a full-resolution review of each atlas cell.",
+    "date": "2026-11-07",
+    "human_review": false
+  },
+  "replacements": {
+    "it-01": {
+      "source": "pattern-9034-11",
+      "en": "A family enjoying a sunny day in a green park.",
+      "ar": "عائلة تستمتع بيوم مشمس في حديقة خضراء."
+    },
+    "ref-0024": {
+      "source": "pattern-9037-07",
+      "en": "Two men beside a pool discussing swimming, with a float.",
+      "ar": "رجلان يتحدثان عن السباحة بجوار المسبح، ومعهما عوامة."
+    },
+    "ref-0053": {
+      "source": "ref-0640",
+      "en": "A man swimming in a pool.",
+      "ar": "رجل يسبح في مسبح."
+    },
+    "ref-0434": {
+      "source": "ref-0086",
+      "en": "People talking about swimming beside an empty pool.",
+      "ar": "أشخاص يتحدثون عن السباحة بجوار مسبح خالٍ من السباحين."
+    },
+    "ref-0543": {
+      "source": "pattern-9161-09",
+      "en": "A man looking at the water from the edge of a swimming pool.",
+      "ar": "رجل يتفقّد الماء من حافة المسبح."
+    },
+    "ref-0682": {
+      "source": "ref-0614",
+      "en": "A man underwater in a swimming pool.",
+      "ar": "رجل تحت الماء في مسبح."
+    }
+  },
+  "missing": [
+    {
+      "id": "pattern-9143-01",
+      "en": "I missed the bus. That's why I'm late.",
+      "pattern_id": 9143,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9143-02",
+      "en": "A fallen tree blocked the road. That's why we turned back.",
+      "pattern_id": 9143,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9143-03",
+      "en": "She trained daily. That's why she improved.",
+      "pattern_id": 9143,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9143-04",
+      "en": "The room was noisy. That's why I moved.",
+      "pattern_id": 9143,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9143-05",
+      "en": "My phone battery died. That's why I didn't reply.",
+      "pattern_id": 9143,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9143-06",
+      "en": "The library is quiet. That's why I study there.",
+      "pattern_id": 9143,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9143-07",
+      "en": "She knows the route well. That's why she's leading the walk.",
+      "pattern_id": 9143,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9143-08",
+      "en": "I washed the floor. That's why it's still wet.",
+      "pattern_id": 9143,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9143-09",
+      "en": "The train leaves soon. That's why we're hurrying.",
+      "pattern_id": 9143,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9143-10",
+      "en": "He forgot his glasses. That's why he can't read the menu.",
+      "pattern_id": 9143,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9143-11",
+      "en": "We saved a little every week. That's why we can afford the trip.",
+      "pattern_id": 9143,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9143-12",
+      "en": "I misunderstood the date. That's why I came a day early.",
+      "pattern_id": 9143,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9071-02",
+      "en": "I was happy after the game.",
+      "pattern_id": 9071,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9139-01",
+      "en": "Let me know if you need help.",
+      "pattern_id": 9139,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9139-02",
+      "en": "Let me know if the time changes.",
+      "pattern_id": 9139,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9139-03",
+      "en": "Let me know if you have a question.",
+      "pattern_id": 9139,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9139-04",
+      "en": "Let me know if you arrive early.",
+      "pattern_id": 9139,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9139-05",
+      "en": "Let me know if you can't find the entrance.",
+      "pattern_id": 9139,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9139-06",
+      "en": "Let me know if the room feels too cold.",
+      "pattern_id": 9139,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9139-07",
+      "en": "Let me know if your flight is delayed.",
+      "pattern_id": 9139,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9139-08",
+      "en": "Let me know if you'd prefer a different date.",
+      "pattern_id": 9139,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9139-09",
+      "en": "Let me know if the instructions are unclear.",
+      "pattern_id": 9139,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9139-10",
+      "en": "Let me know if you hear from the repair shop.",
+      "pattern_id": 9139,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9139-11",
+      "en": "Let me know if there is any food you can't eat.",
+      "pattern_id": 9139,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9139-12",
+      "en": "Let me know if you change your mind about joining us.",
+      "pattern_id": 9139,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9140-01",
+      "en": "I stayed inside because it was raining.",
+      "pattern_id": 9140,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9140-02",
+      "en": "I practice English because I want to travel.",
+      "pattern_id": 9140,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9140-03",
+      "en": "She smiled because she heard good news.",
+      "pattern_id": 9140,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9140-04",
+      "en": "We left early because the road was busy.",
+      "pattern_id": 9140,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9140-05",
+      "en": "I brought an umbrella because the sky looked dark.",
+      "pattern_id": 9140,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9140-06",
+      "en": "We chose this cafe because it has a quiet garden.",
+      "pattern_id": 9140,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9140-07",
+      "en": "She took a break because her eyes were tired.",
+      "pattern_id": 9140,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9140-08",
+      "en": "I called you because I needed your advice.",
+      "pattern_id": 9140,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9140-09",
+      "en": "The children whispered because the baby was asleep.",
+      "pattern_id": 9140,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9140-10",
+      "en": "He walked to work because his bicycle was broken.",
+      "pattern_id": 9140,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9140-11",
+      "en": "We moved the plants because they needed more light.",
+      "pattern_id": 9140,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9140-12",
+      "en": "I read the instructions twice because I wanted to be sure.",
+      "pattern_id": 9140,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9141-01",
+      "en": "The game stopped because of the rain.",
+      "pattern_id": 9141,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9141-02",
+      "en": "The bus was late because of traffic.",
+      "pattern_id": 9141,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9141-03",
+      "en": "The plants grew well because of the sunlight.",
+      "pattern_id": 9141,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9141-04",
+      "en": "I was tired because of working late.",
+      "pattern_id": 9141,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9141-05",
+      "en": "The road was closed because of a fallen tree.",
+      "pattern_id": 9141,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9141-06",
+      "en": "I couldn't sleep because of the noise outside.",
+      "pattern_id": 9141,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9141-07",
+      "en": "The event moved indoors because of the strong wind.",
+      "pattern_id": 9141,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9141-08",
+      "en": "She found the station because of your clear directions.",
+      "pattern_id": 9141,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9141-09",
+      "en": "We arrived late because of a flat tire.",
+      "pattern_id": 9141,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9141-10",
+      "en": "He felt tired because of working two shifts.",
+      "pattern_id": 9141,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9141-11",
+      "en": "The room smelled fresh because of the flowers.",
+      "pattern_id": 9141,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9141-12",
+      "en": "I missed the announcement because of wearing headphones.",
+      "pattern_id": 9141,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9142-01",
+      "en": "It was cold, so I wore a jacket.",
+      "pattern_id": 9142,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9142-02",
+      "en": "She studied hard, so she passed the test.",
+      "pattern_id": 9142,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9142-03",
+      "en": "We were hungry, so we made lunch.",
+      "pattern_id": 9142,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9142-04",
+      "en": "The shop was closed, so we went home.",
+      "pattern_id": 9142,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9142-05",
+      "en": "The bus was full, so we waited for the next one.",
+      "pattern_id": 9142,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9142-06",
+      "en": "I couldn't reach the shelf, so I asked for help.",
+      "pattern_id": 9142,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9142-07",
+      "en": "She lost her key, so she called the landlord.",
+      "pattern_id": 9142,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9142-08",
+      "en": "We had extra vegetables, so we made soup.",
+      "pattern_id": 9142,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9142-09",
+      "en": "The room was too dark, so I opened the curtains.",
+      "pattern_id": 9142,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9142-10",
+      "en": "He wanted to improve his pronunciation, so he recorded himself.",
+      "pattern_id": 9142,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9142-11",
+      "en": "The path was slippery, so we walked slowly.",
+      "pattern_id": 9142,
+      "status": "missing-or-withheld"
+    },
+    {
+      "id": "pattern-9142-12",
+      "en": "Our team finished early, so we helped the others.",
+      "pattern_id": 9142,
+      "status": "missing-or-withheld"
+    }
+  ]
+}

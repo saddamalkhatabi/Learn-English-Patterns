@@ -1,9 +1,10 @@
 {
   "schema": 1,
-  "version": "43b2bb0b4f5369c0",
+  "version": "b345283e130124e0",
   "shell": [
     "app.js",
     "collection-experience.js",
+    "comparison-experience.js",
     "comparisons.json",
     "corpus-player.js",
     "corpus-ui.js",
@@ -38,7 +39,9 @@
     "reference-experience.js",
     "release.json",
     "route-player.js",
+    "scene-archive.json",
     "scene-layout.css",
+    "scene-studio.js",
     "source-corpus-audit.json",
     "source-corpus.json",
     "source.json",
@@ -57473,6 +57476,7 @@
       "bytes": 416294,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -58490,6 +58494,7 @@
       "bytes": 569074,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },

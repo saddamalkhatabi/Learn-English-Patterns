@@ -18,6 +18,12 @@ test('conversation turns link to real patterns, scenes and measured cues within 
   if(audio && JSON.stringify(audio.signature)===JSON.stringify(signature)){
    assert.equal(crypto.createHash('sha256').update(fs.readFileSync('public/'+audio.path)).digest('hex'),audio.sha256);
    assert.equal(audio.turns.length,dialogue.lines.length);
+   if(audio.intro){
+    assert.equal(audio.title,dialogue.en.trim().replace(/[.!?]+$/,'')+'.');
+    assert.equal(audio.intro.start_ms,0);
+    assert(audio.intro.end_ms<audio.turns[0].start_ms);
+    assert.equal(audio.intro.words.length,audio.title.split(/\s+/).length);
+   }
   }
   for(const [i,line] of dialogue.lines.entries()){
    assert(line.patterns.every(id=>patterns.has(id)),line.en);
