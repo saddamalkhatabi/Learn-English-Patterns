@@ -17,14 +17,35 @@ test('scene archive covers every displayable binding with bilingual search topic
  assert(bilingual.keywords.includes('notebook')&&bilingual.keywords.includes('دفتر'));
  assert.match(bilingual.descriptionAr,/دفتر/);
 });
-test('comparison panels have aligned examples and valid two to five way pattern links',()=>{
+test('comparison panels cover all course patterns and have recorded samples with scenes',()=>{
  const patterns=new Set([...require('../public/pilot.json').patterns,...require('../public/expansion-media.json').patterns].map(p=>p.id));
  const comparisons=require('../public/comparisons.json');
+ const sentences=new Map(rows.map(sentence=>[sentence.id,sentence]));
+ const seen=new Set();
+ assert.equal(new Set(comparisons.map(item=>item.id)).size,comparisons.length);
  for(const item of comparisons){
-  assert(item.patterns.every(id=>patterns.has(id)),item.id);
   assert.equal(new Set(item.patterns).size,item.patterns.length,item.id);
   assert.equal(item.examples.length,item.patterns.length,item.id);
   assert(item.options[item.answer],item.id);
+  assert(item.samples.length>=2&&item.samples.length>=item.patterns.length,item.id);
+  for(const [index,sample] of item.samples.entries()){
+   const sentence=sentences.get(sample.sentenceId);
+   assert(sentence,sample.sentenceId);
+   if(index<item.patterns.length){
+    assert.equal(sentence.pattern_id,item.patterns[index],item.id);
+    seen.add(sentence.pattern_id);
+   }else{
+    assert(sample.form&&sentence.id.startsWith('ref-'),item.id);
+   }
+   for(const voice of ['male','female']){
+    const recording=sentence.recordings[voice];
+    assert(recording?.sha256&&recording.words.length===sentence.en.split(/\s+/).length,sample.sentenceId);
+   }
+   const scene=sentences.get(sample.sceneId||sample.sentenceId);
+   assert(visible.has(scene?.image?.status),sample.sentenceId);
+  }
  }
- assert([2,3,4,5].every(size=>comparisons.some(c=>c.patterns.length===size)));
+ assert.deepEqual(seen,patterns);
+ assert([2,3,4,5].every(size=>comparisons.some(c=>c.samples.length===size)));
+ assert.deepEqual(new Set(comparisons.map(c=>c.level)),new Set(['basic','intermediate','advanced']));
 });

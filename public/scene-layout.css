@@ -105,6 +105,19 @@ html[data-pattern-image="focus"] .dialogue-photo{width:min(100%,400px);margin:au
 .comparison-examples>article{border:1px solid var(--line);padding:12px;border-radius:12px;min-width:0}
 .comparison-examples [lang="en"]{overflow-wrap:anywhere}
 .comparison-examples details p{margin-block:6px}
+#comparison-list .comparison-card summary small{margin-inline-start:8px;color:var(--muted)}
+.comparison-card .comparison-examples{margin-block:12px}
+.comparison-stages{padding-inline-start:20px}
+.comparison-stages button{text-align:start;padding:4px 0}
+.comparison-sample{display:grid;grid-template-columns:minmax(0,240px) minmax(0,1fr);gap:16px;align-items:center;margin-block:12px}
+.comparison-photo small{display:block;padding-block:5px}
+.comparison-sample .sentence{margin-block:8px}
+.comparison-sample .speaking{background:#fee2a5;text-decoration:underline}
+#comparison-guide{scroll-margin-top:20px}
+#comparison-audio-error:empty{display:none}
 #comparison-guide .panel{border:2px solid var(--red)}
 #comparison-meter{width:min(100%,380px)}
+html[data-pattern-image="hidden"] .comparison-sample,html[data-pattern-image="focus"] .comparison-sample{grid-template-columns:minmax(0,1fr)}
+html[data-pattern-image="hidden"] .comparison-photo{display:none}
+@media(max-width:680px){.comparison-sample{grid-template-columns:minmax(0,1fr)}.comparison-photo{max-width:280px}}
 @media(max-width:680px){.studio-exercise{grid-template-columns:minmax(0,1fr)}.dialogue-transcript li{grid-template-columns:2.5rem minmax(0,1fr) auto;gap:5px}}

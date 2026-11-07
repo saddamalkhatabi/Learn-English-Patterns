@@ -303,6 +303,7 @@ epNavGroups[1][2].splice(2,0,['dialogues','▧','المحادثات','Conversati
 const renderBeforeDialogues=render;
 render=function(){
  releaseDialoguePlayer();
+ releaseComparisonGuide();
  if(!['dialogues','comparisons'].includes(page)){renderBeforeDialogues();return}
  if(route?.running)route.pause();
  nav();

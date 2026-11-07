@@ -21,7 +21,20 @@
       "have to",
       "would like to"
     ],
-    "answer": 1
+    "answer": 1,
+    "level": "basic",
+    "type": "usage",
+    "samples": [
+      {
+        "sentenceId": "want-02"
+      },
+      {
+        "sentenceId": "need-02"
+      },
+      {
+        "sentenceId": "have-02"
+      }
+    ]
   },
   {
     "id": "like-would-like",
@@ -45,7 +58,20 @@
       "I'd like",
       "I like to"
     ],
-    "answer": 1
+    "answer": 1,
+    "level": "basic",
+    "type": "speech",
+    "samples": [
+      {
+        "sentenceId": "enjoy-03"
+      },
+      {
+        "sentenceId": "like-noun-02"
+      },
+      {
+        "sentenceId": "like-02"
+      }
+    ]
   },
   {
     "id": "near-far",
@@ -69,7 +95,20 @@
       "This is",
       "These are"
     ],
-    "answer": 2
+    "answer": 2,
+    "level": "basic",
+    "type": "usage",
+    "samples": [
+      {
+        "sentenceId": "this-01"
+      },
+      {
+        "sentenceId": "that-01"
+      },
+      {
+        "sentenceId": "these-01"
+      }
+    ]
   },
   {
     "id": "there-is-are",
@@ -90,7 +129,17 @@
       "There are",
       "There is"
     ],
-    "answer": 1
+    "answer": 1,
+    "level": "basic",
+    "type": "errors",
+    "samples": [
+      {
+        "sentenceId": "there-is-01"
+      },
+      {
+        "sentenceId": "there-are-01"
+      }
+    ]
   },
   {
     "id": "permission-and-questions",
@@ -111,7 +160,17 @@
       "is the exit",
       "the exit is"
     ],
-    "answer": 1
+    "answer": 1,
+    "level": "basic",
+    "type": "speech",
+    "samples": [
+      {
+        "sentenceId": "can-03"
+      },
+      {
+        "sentenceId": "know-03"
+      }
+    ]
   },
   {
     "id": "past-habit-and-success",
@@ -132,7 +191,17 @@
       "used to",
       "managed to"
     ],
-    "answer": 1
+    "answer": 1,
+    "level": "intermediate",
+    "type": "relation",
+    "samples": [
+      {
+        "sentenceId": "used-02"
+      },
+      {
+        "sentenceId": "managed-01"
+      }
+    ]
   },
   {
     "id": "time-value",
@@ -154,7 +223,17 @@
       "to read",
       "reading"
     ],
-    "answer": 2
+    "answer": 2,
+    "level": "intermediate",
+    "type": "usage",
+    "samples": [
+      {
+        "sentenceId": "takes-01"
+      },
+      {
+        "sentenceId": "worth-02"
+      }
+    ]
   },
   {
     "id": "suggestion-desire",
@@ -176,7 +255,17 @@
       "walk",
       "to walk"
     ],
-    "answer": 1
+    "answer": 1,
+    "level": "basic",
+    "type": "speech",
+    "samples": [
+      {
+        "sentenceId": "lets-01"
+      },
+      {
+        "sentenceId": "feel-01"
+      }
+    ]
   },
   {
     "id": "want-vs-need",
@@ -197,7 +286,17 @@
       "want to",
       "need to"
     ],
-    "answer": 1
+    "answer": 1,
+    "level": "basic",
+    "type": "usage",
+    "samples": [
+      {
+        "sentenceId": "want-03"
+      },
+      {
+        "sentenceId": "need-03"
+      }
+    ]
   },
   {
     "id": "motivation-four",
@@ -224,7 +323,23 @@
       "I have to",
       "I want to"
     ],
-    "answer": 1
+    "answer": 1,
+    "level": "basic",
+    "type": "usage",
+    "samples": [
+      {
+        "sentenceId": "want-01"
+      },
+      {
+        "sentenceId": "like-noun-02"
+      },
+      {
+        "sentenceId": "need-03"
+      },
+      {
+        "sentenceId": "have-01"
+      }
+    ]
   },
   {
     "id": "reason-and-condition",
@@ -251,7 +366,25 @@
       "unless",
       "if"
     ],
-    "answer": 1
+    "answer": 1,
+    "level": "advanced",
+    "type": "relation",
+    "samples": [
+      {
+        "sentenceId": "pattern-9140-01",
+        "sceneId": "pattern-9104-01"
+      },
+      {
+        "sentenceId": "pattern-9141-02",
+        "sceneId": "pattern-9054-03"
+      },
+      {
+        "sentenceId": "pattern-9156-01"
+      },
+      {
+        "sentenceId": "pattern-9169-01"
+      }
+    ]
   },
   {
     "id": "request-ladder",
@@ -279,7 +412,26 @@
       "to close",
       "closing"
     ],
-    "answer": 2
+    "answer": 2,
+    "level": "intermediate",
+    "type": "speech",
+    "samples": [
+      {
+        "sentenceId": "can-02"
+      },
+      {
+        "sentenceId": "pattern-9051-01"
+      },
+      {
+        "sentenceId": "pattern-9052-01"
+      },
+      {
+        "sentenceId": "pattern-9126-01"
+      },
+      {
+        "sentenceId": "pattern-9127-01"
+      }
+    ]
   },
   {
     "id": "certainty-and-obligation",
@@ -305,6 +457,1875 @@
       "should",
       "might"
     ],
-    "answer": 2
+    "answer": 2,
+    "level": "intermediate",
+    "type": "relation",
+    "samples": [
+      {
+        "sentenceId": "pattern-9045-01"
+      },
+      {
+        "sentenceId": "pattern-9046-01"
+      },
+      {
+        "sentenceId": "pattern-9047-01"
+      },
+      {
+        "sentenceId": "pattern-9100-01"
+      }
+    ]
+  },
+  {
+    "id": "introducing-people",
+    "patterns": [
+      114,
+      113,
+      103,
+      5,
+      9055
+    ],
+    "ar": "من السؤال عن الاسم إلى تقديم شخص",
+    "en": "From asking a name to introducing someone",
+    "level": "basic",
+    "type": "sequence",
+    "noteAr": "ابدأ بسؤال الاسم، عرّف بنفسك، ثم قدّم شخصًا معك. استخدم Who is للسؤال عن هوية شخص.",
+    "noteEn": "Ask for a name, introduce yourself, then introduce someone with you. Use Who is to ask about someone’s identity.",
+    "examples": [
+      "What's your name?",
+      "My name is Ali.",
+      "I'm a student.",
+      "This is my friend.",
+      "Who is that teacher?"
+    ],
+    "question": "Which phrase introduces someone standing beside you?",
+    "options": [
+      "This is my friend.",
+      "What is your name?",
+      "Who is that?"
+    ],
+    "answer": 0,
+    "samples": [
+      {
+        "sentenceId": "ask-name-01"
+      },
+      {
+        "sentenceId": "name-01"
+      },
+      {
+        "sentenceId": "am-01"
+      },
+      {
+        "sentenceId": "this-02"
+      },
+      {
+        "sentenceId": "pattern-9055-01"
+      }
+    ]
+  },
+  {
+    "id": "be-and-possession",
+    "patterns": [
+      103,
+      104,
+      105,
+      106,
+      9053
+    ],
+    "ar": "الهوية والوصف والملكية",
+    "en": "Identity, description and possession",
+    "level": "basic",
+    "type": "usage",
+    "noteAr": "I am يعرّف المتحدث أو يصفه. It is يصف شيئًا أو الطقس. I have وI have got تعبّران عن الملكية. اسأل What is للتعرّف إلى الشيء.",
+    "noteEn": "I am identifies or describes the speaker. It is describes a thing or the weather. I have and I have got express possession. Ask What is to identify a thing.",
+    "examples": [
+      "I'm a student.",
+      "It's a beautiful day.",
+      "I have a laptop.",
+      "I've got a new phone.",
+      "What is this word?"
+    ],
+    "question": "Which sentence tells us what the speaker owns?",
+    "options": [
+      "I'm a student.",
+      "I've got a new phone.",
+      "It's a beautiful day."
+    ],
+    "answer": 1,
+    "samples": [
+      {
+        "sentenceId": "am-01"
+      },
+      {
+        "sentenceId": "it-01"
+      },
+      {
+        "sentenceId": "possess-02"
+      },
+      {
+        "sentenceId": "got-02"
+      },
+      {
+        "sentenceId": "pattern-9053-01"
+      }
+    ]
+  },
+  {
+    "id": "nouns-and-actions",
+    "patterns": [
+      107,
+      1,
+      109,
+      3,
+      9041
+    ],
+    "ar": "الاسم والفعل بعد الرغبة والطلب",
+    "en": "Nouns and verbs after want and would like",
+    "level": "basic",
+    "type": "errors",
+    "noteAr": "بعد want وwould like وneed يمكن أن يأتي اسم مباشرة. عند التعبير عن فعل مقصود نضع to ثم الفعل الأساسي.",
+    "noteEn": "A noun can follow want, would like and need directly. To express an intended action, use to followed by a base verb.",
+    "examples": [
+      "I want some water.",
+      "I want to go home.",
+      "I'd like a cup of tea.",
+      "I'd like to order lunch.",
+      "I need some water."
+    ],
+    "question": "Complete the action request: I’d like ___ lunch.",
+    "options": [
+      "to order",
+      "order",
+      "to ordering"
+    ],
+    "answer": 0,
+    "samples": [
+      {
+        "sentenceId": "want-noun-02"
+      },
+      {
+        "sentenceId": "want-02"
+      },
+      {
+        "sentenceId": "like-noun-02"
+      },
+      {
+        "sentenceId": "like-02"
+      },
+      {
+        "sentenceId": "pattern-9041-01"
+      }
+    ]
+  },
+  {
+    "id": "likes-and-dislikes",
+    "patterns": [
+      111,
+      112,
+      9064,
+      9065,
+      9062
+    ],
+    "ar": "ما أحب وما لا أحب",
+    "en": "Likes and dislikes",
+    "level": "basic",
+    "type": "errors",
+    "noteAr": "بعد like يمكن استعمال الاسم أو صيغة ing. نكوّن السؤال بـDo مع you، وبـDoes مع he أو she ثم الفعل الأساسي.",
+    "noteEn": "Like can take a noun or an -ing form. Use Do with you and Does with he or she, followed by the base verb.",
+    "examples": [
+      "I like reading.",
+      "I don't like waiting.",
+      "Do you like apples?",
+      "Does she speak English?",
+      "Why do you study English?"
+    ],
+    "question": "Which question uses the correct form?",
+    "options": [
+      "Does she likes reading?",
+      "Do she like reading?",
+      "Does she like reading?"
+    ],
+    "answer": 2,
+    "samples": [
+      {
+        "sentenceId": "enjoy-02"
+      },
+      {
+        "sentenceId": "dislike-03"
+      },
+      {
+        "sentenceId": "pattern-9064-01"
+      },
+      {
+        "sentenceId": "pattern-9065-01"
+      },
+      {
+        "sentenceId": "pattern-9062-01"
+      }
+    ]
+  },
+  {
+    "id": "wh-questions",
+    "patterns": [
+      9053,
+      9054,
+      9055,
+      9056,
+      9057,
+      9058
+    ],
+    "ar": "ما وأين ومن ومتى وكيف ولماذا",
+    "en": "What, where, who, when, how and why",
+    "level": "basic",
+    "type": "usage",
+    "noteAr": "حدّد نوع المعلومة قبل السؤال. What للشيء، Where للمكان، Who للشخص، When للوقت، Why للسبب وHow للحال أو الكيفية.",
+    "noteEn": "Choose the question word for the information you need: thing, place, person, time, reason or condition.",
+    "examples": [
+      "What is this word?",
+      "Where is the library?",
+      "Who is that teacher?",
+      "When is the next lesson?",
+      "Why is the door open?",
+      "How is your mother?"
+    ],
+    "question": "You need the room location. Which question helps?",
+    "options": [
+      "When is the lesson?",
+      "Where is the classroom?",
+      "Who is the teacher?"
+    ],
+    "answer": 1,
+    "samples": [
+      {
+        "sentenceId": "pattern-9053-01"
+      },
+      {
+        "sentenceId": "pattern-9054-02"
+      },
+      {
+        "sentenceId": "pattern-9055-01"
+      },
+      {
+        "sentenceId": "pattern-9056-05"
+      },
+      {
+        "sentenceId": "pattern-9057-01"
+      },
+      {
+        "sentenceId": "pattern-9058-01"
+      }
+    ]
+  },
+  {
+    "id": "questions-about-actions",
+    "patterns": [
+      9059,
+      9060,
+      9061,
+      9062,
+      9063,
+      9064,
+      9065
+    ],
+    "ar": "الأسئلة عن الأفعال والعادات",
+    "en": "Questions about actions and habits",
+    "level": "basic",
+    "type": "errors",
+    "noteAr": "استخدم do أو does قبل الفاعل، ثم الفعل الأساسي. سؤال Wh يطلب معلومة محددة، أما Do you فيقبل نعم أو لا أولًا.",
+    "noteEn": "Put do or does before the subject and use a base verb. A Wh-question asks for specific information. A Do you question can begin with yes or no.",
+    "examples": [
+      "What do you do after school?",
+      "Where do you live?",
+      "When do you wake up?",
+      "Why do you study English?",
+      "How do you get to school?",
+      "Do you study every day?",
+      "Does she speak English?"
+    ],
+    "question": "Which word asks for a reason in ___ do you study at night?",
+    "options": [
+      "When",
+      "Where",
+      "Why"
+    ],
+    "answer": 2,
+    "samples": [
+      {
+        "sentenceId": "pattern-9059-01"
+      },
+      {
+        "sentenceId": "pattern-9060-01"
+      },
+      {
+        "sentenceId": "pattern-9061-01"
+      },
+      {
+        "sentenceId": "pattern-9062-01"
+      },
+      {
+        "sentenceId": "pattern-9063-01"
+      },
+      {
+        "sentenceId": "pattern-9064-04"
+      },
+      {
+        "sentenceId": "pattern-9065-01"
+      }
+    ]
+  },
+  {
+    "id": "availability-and-quantity",
+    "patterns": [
+      9066,
+      9067,
+      9068,
+      9069,
+      9070
+    ],
+    "ar": "السؤال عن التوفّر والعدد والسعر",
+    "en": "Availability, quantity and price",
+    "level": "basic",
+    "type": "usage",
+    "noteAr": "Is there للمفرد أو غير المعدود، وAre there للجمع. How many للعدد، وHow much للسعر أو الكمية غير المعدودة، وWhich one للاختيار.",
+    "noteEn": "Use Is there for singular or uncountable things and Are there for plurals. How many asks for a count, How much for price or uncountable quantity, and Which one for a choice.",
+    "examples": [
+      "Is there a bank nearby?",
+      "Are there any seats available?",
+      "How many books do you have?",
+      "How much water do you need?",
+      "Which one do you prefer?"
+    ],
+    "question": "Ask about the number of available seats.",
+    "options": [
+      "How much seats are there?",
+      "How many seats are there?",
+      "Which one is the seat?"
+    ],
+    "answer": 1,
+    "samples": [
+      {
+        "sentenceId": "pattern-9066-01"
+      },
+      {
+        "sentenceId": "pattern-9067-01"
+      },
+      {
+        "sentenceId": "pattern-9068-01"
+      },
+      {
+        "sentenceId": "pattern-9069-01"
+      },
+      {
+        "sentenceId": "pattern-9070-01"
+      }
+    ]
+  },
+  {
+    "id": "morning-routine",
+    "patterns": [
+      9017,
+      9018,
+      9020,
+      9021,
+      9022
+    ],
+    "ar": "خطوات روتين الصباح",
+    "en": "The morning routine in order",
+    "level": "basic",
+    "type": "sequence",
+    "noteAr": "Wake up لحظة الاستيقاظ وget up للنهوض من السرير. بعدها صف الأفعال بترتيبها، مثل تنظيف الأسنان ثم الفطور ثم الذهاب.",
+    "noteEn": "Wake up is the end of sleep and get up is leaving bed. Then put the actions in order, such as brushing your teeth, having breakfast and leaving.",
+    "examples": [
+      "I wake up at six.",
+      "I get up at six thirty.",
+      "I brush my teeth every morning.",
+      "I have breakfast at seven.",
+      "I go to school five days a week."
+    ],
+    "question": "Which expression means leaving your bed?",
+    "options": [
+      "wake up",
+      "get up",
+      "have breakfast"
+    ],
+    "answer": 1,
+    "samples": [
+      {
+        "sentenceId": "pattern-9017-01"
+      },
+      {
+        "sentenceId": "pattern-9018-01"
+      },
+      {
+        "sentenceId": "pattern-9020-01"
+      },
+      {
+        "sentenceId": "pattern-9021-01"
+      },
+      {
+        "sentenceId": "pattern-9022-01"
+      }
+    ]
+  },
+  {
+    "id": "day-and-night",
+    "patterns": [
+      9019,
+      9029,
+      9028,
+      9030,
+      9032,
+      9033
+    ],
+    "ar": "وصف اليوم من الصباح إلى النوم",
+    "en": "From morning to bedtime",
+    "level": "basic",
+    "type": "sequence",
+    "noteAr": "In the morning وat night يحددان وقتًا. Before وafter يحددان علاقة الترتيب بين فعلين داخل اليوم.",
+    "noteEn": "In the morning and at night set a time. Before and after show the order of two actions.",
+    "examples": [
+      "In the morning, I drink water.",
+      "Before I leave, I check my bag.",
+      "I eat lunch at one.",
+      "After I wake up, I drink water.",
+      "At night, I read a short story.",
+      "I go to bed at nine."
+    ],
+    "question": "In “Before I eat, I wash my hands,” which action happens first?",
+    "options": [
+      "I eat.",
+      "I wash my hands.",
+      "Both happen at once."
+    ],
+    "answer": 1,
+    "samples": [
+      {
+        "sentenceId": "pattern-9019-01"
+      },
+      {
+        "sentenceId": "pattern-9029-01"
+      },
+      {
+        "sentenceId": "pattern-9028-01"
+      },
+      {
+        "sentenceId": "pattern-9030-01"
+      },
+      {
+        "sentenceId": "pattern-9032-01"
+      },
+      {
+        "sentenceId": "pattern-9033-01"
+      }
+    ]
+  },
+  {
+    "id": "frequency-scale",
+    "patterns": [
+      9024,
+      9023,
+      9025,
+      9026,
+      9027,
+      9031,
+      9034
+    ],
+    "ar": "من دائمًا إلى أبدًا",
+    "en": "From always to never",
+    "level": "basic",
+    "type": "relation",
+    "noteAr": "Always ثم usually وoften وsometimes وصولًا إلى never. Every day وon weekends تحددان إطارًا زمنيًا. Never يحمل النفي في ذاته.",
+    "noteEn": "Move from always through usually, often and sometimes to never. Every day and on weekends specify a time frame. Never already carries a negative meaning.",
+    "examples": [
+      "I always wash my hands before eating.",
+      "I usually wake up at six.",
+      "I often visit my grandparents.",
+      "I sometimes watch TV after dinner.",
+      "I never skip breakfast.",
+      "I practice English every day.",
+      "On weekends, I visit my grandparents."
+    ],
+    "question": "Which phrase means the action happens zero times?",
+    "options": [
+      "I often go.",
+      "I sometimes go.",
+      "I never go."
+    ],
+    "answer": 2,
+    "samples": [
+      {
+        "sentenceId": "pattern-9024-01"
+      },
+      {
+        "sentenceId": "pattern-9023-01"
+      },
+      {
+        "sentenceId": "pattern-9025-01"
+      },
+      {
+        "sentenceId": "pattern-9026-01"
+      },
+      {
+        "sentenceId": "pattern-9027-01"
+      },
+      {
+        "sentenceId": "pattern-9031-01"
+      },
+      {
+        "sentenceId": "pattern-9034-01"
+      }
+    ]
+  },
+  {
+    "id": "ability-and-help",
+    "patterns": [
+      9035,
+      9036,
+      9037,
+      4,
+      9050
+    ],
+    "ar": "القدرة وطلب المساعدة",
+    "en": "Ability and asking for help",
+    "level": "basic",
+    "type": "usage",
+    "noteAr": "I can وI can’t تصفان القدرة. Can you تطلب مساعدة وقد تسأل عن قدرة. Can I تطلب الإذن، وplease تلطف الطلب.",
+    "noteEn": "I can and I can’t express ability. Can you can ask for help or ability. Can I asks for permission, and please softens a request.",
+    "examples": [
+      "I can speak English.",
+      "I can't come today.",
+      "Can you hold the door while I carry this box?",
+      "Can I borrow your pen?",
+      "Close the door, please."
+    ],
+    "question": "You need someone to hold the door. What do you say?",
+    "options": [
+      "Can you hold the door?",
+      "I can hold the door.",
+      "Can I hold the door?"
+    ],
+    "answer": 0,
+    "samples": [
+      {
+        "sentenceId": "pattern-9035-01"
+      },
+      {
+        "sentenceId": "pattern-9036-01"
+      },
+      {
+        "sentenceId": "pattern-9037-05"
+      },
+      {
+        "sentenceId": "can-04"
+      },
+      {
+        "sentenceId": "pattern-9050-01"
+      }
+    ]
+  },
+  {
+    "id": "asking-permission",
+    "patterns": [
+      4,
+      9039,
+      9128,
+      9129,
+      9040
+    ],
+    "ar": "طلب الإذن ومنحه",
+    "en": "Asking for and granting permission",
+    "level": "intermediate",
+    "type": "speech",
+    "noteAr": "Can I وMay I تطلبان الإذن. Is it okay if وDo you mind if يتحققان من موافقة الطرف الآخر. You may يمنح الإذن.",
+    "noteEn": "Can I and May I ask for permission. Is it okay if and Do you mind if check the other person’s agreement. You may grants permission.",
+    "examples": [
+      "Can I open the window?",
+      "Is it okay if I open the window?",
+      "Do you mind if I open the window?",
+      "May I come in, please?",
+      "You may enter the room now."
+    ],
+    "question": "What does “Not at all” mean after “Do you mind if I sit here?”",
+    "options": [
+      "You may sit here.",
+      "The seat is reserved.",
+      "You should leave."
+    ],
+    "answer": 0,
+    "samples": [
+      {
+        "sentenceId": "can-06"
+      },
+      {
+        "sentenceId": "pattern-9039-01"
+      },
+      {
+        "sentenceId": "pattern-9128-02"
+      },
+      {
+        "sentenceId": "pattern-9129-01"
+      },
+      {
+        "sentenceId": "pattern-9040-01"
+      }
+    ]
+  },
+  {
+    "id": "must-or-dont-have-to",
+    "patterns": [
+      2,
+      9045,
+      9044,
+      9046,
+      9047
+    ],
+    "ar": "الإلزام وغياب الإلزام",
+    "en": "Obligation and no obligation",
+    "level": "intermediate",
+    "type": "errors",
+    "noteAr": "Have to وmust للإلزام. Don’t have to تعني أن الفعل اختياري. Should يقدم نصيحة. Mustn’t تعني أن الفعل ممنوع.",
+    "noteEn": "Have to and must express obligation. Don’t have to means the action is optional. Should gives advice. Mustn’t means the action is prohibited.",
+    "examples": [
+      "I have to finish my work.",
+      "I must finish my work today.",
+      "I don't have to wake up early tomorrow.",
+      "I should sleep earlier.",
+      "You should ask the teacher."
+    ],
+    "question": "Attendance is optional. Which sentence fits?",
+    "options": [
+      "You must attend.",
+      "You mustn’t attend.",
+      "You don’t have to attend."
+    ],
+    "answer": 2,
+    "samples": [
+      {
+        "sentenceId": "have-01"
+      },
+      {
+        "sentenceId": "pattern-9045-01"
+      },
+      {
+        "sentenceId": "pattern-9044-01"
+      },
+      {
+        "sentenceId": "pattern-9046-01"
+      },
+      {
+        "sentenceId": "pattern-9047-01"
+      }
+    ]
+  },
+  {
+    "id": "past-be",
+    "patterns": [
+      9071,
+      9072,
+      9073
+    ],
+    "ar": "الوصف والسؤال مع was وwere",
+    "en": "Statements and questions with was and were",
+    "level": "basic",
+    "type": "errors",
+    "noteAr": "مع I استعمل was أو wasn’t. في السؤال مع you نقدّم Were قبل الفاعل.",
+    "noteEn": "Use was or wasn’t with I. To ask a question with you, put Were before the subject.",
+    "examples": [
+      "I was at home yesterday.",
+      "I wasn't tired yesterday.",
+      "Were you at school yesterday?"
+    ],
+    "question": "Which question has the correct word order?",
+    "options": [
+      "Were you at home?",
+      "Did you were at home?",
+      "Was you at home?"
+    ],
+    "answer": 0,
+    "samples": [
+      {
+        "sentenceId": "pattern-9071-01"
+      },
+      {
+        "sentenceId": "pattern-9072-01"
+      },
+      {
+        "sentenceId": "pattern-9073-01"
+      }
+    ]
+  },
+  {
+    "id": "past-actions",
+    "patterns": [
+      9074,
+      9078,
+      9079,
+      9080,
+      9081,
+      9077
+    ],
+    "ar": "سرد حدث: ذهبت ورأيت والتقيت",
+    "en": "Telling a past event: went, saw and met",
+    "level": "intermediate",
+    "type": "sequence",
+    "noteAr": "ابدأ بمكان الحدث، ثم اذكر من التقيت أو ماذا رأيت. أضف ما اشتريت أو صنعت أو ما كان معك لتكتمل القصة.",
+    "noteEn": "Start with where you went, then say who you met or what you saw. Add what you bought, made or had to complete the story.",
+    "examples": [
+      "I went to the market yesterday.",
+      "I saw a beautiful bird yesterday.",
+      "I met my new teacher yesterday.",
+      "I bought a new notebook yesterday.",
+      "I made breakfast for my family.",
+      "I had a red bicycle as a child."
+    ],
+    "question": "Which sentence says what the speaker made?",
+    "options": [
+      "I saw a cake.",
+      "I bought a cake.",
+      "I made a cake."
+    ],
+    "answer": 2,
+    "samples": [
+      {
+        "sentenceId": "pattern-9074-01"
+      },
+      {
+        "sentenceId": "pattern-9078-01"
+      },
+      {
+        "sentenceId": "pattern-9079-01"
+      },
+      {
+        "sentenceId": "pattern-9080-01"
+      },
+      {
+        "sentenceId": "pattern-9081-01"
+      },
+      {
+        "sentenceId": "pattern-9077-01"
+      }
+    ]
+  },
+  {
+    "id": "did-and-didnt",
+    "patterns": [
+      9076,
+      9075,
+      9074
+    ],
+    "ar": "السؤال والنفي في الماضي",
+    "en": "Past questions and negatives",
+    "level": "basic",
+    "type": "errors",
+    "noteAr": "بعد did أو didn’t استخدم الفعل الأساسي. في الجملة المثبتة دون did يظهر الماضي في الفعل نفسه، مثل went.",
+    "noteEn": "After did or didn’t, use the base verb. In an affirmative sentence without did, the verb itself takes the past form, such as went.",
+    "examples": [
+      "Did you finish your homework?",
+      "I didn't finish my homework.",
+      "I went to the market yesterday."
+    ],
+    "question": "Which negative sentence is correct?",
+    "options": [
+      "I didn’t went.",
+      "I didn’t go.",
+      "I don’t went."
+    ],
+    "answer": 1,
+    "samples": [
+      {
+        "sentenceId": "pattern-9076-01"
+      },
+      {
+        "sentenceId": "pattern-9075-03"
+      },
+      {
+        "sentenceId": "pattern-9074-01"
+      }
+    ]
+  },
+  {
+    "id": "decision-start-result",
+    "patterns": [
+      9082,
+      9083,
+      9084,
+      9,
+      8
+    ],
+    "ar": "من القرار إلى المحاولة والنتيجة",
+    "en": "From a decision to a result",
+    "level": "intermediate",
+    "type": "sequence",
+    "noteAr": "Forgot to لفعل لم يُنفّذ بسبب النسيان، وdecided to للقرار، وstarted للبداية، وmanaged to للنجاح بعد جهد. Used to يصف عادة سابقة.",
+    "noteEn": "Forgot to marks an omitted action, decided to a decision, started a beginning, and managed to a success after effort. Used to describes a former habit.",
+    "examples": [
+      "I forgot to bring my book.",
+      "I decided to learn English.",
+      "I started learning English last year.",
+      "I managed to finish on time.",
+      "I used to walk to school."
+    ],
+    "question": "You succeeded after several attempts. Which verb fits?",
+    "options": [
+      "forgot to",
+      "used to",
+      "managed to"
+    ],
+    "answer": 2,
+    "samples": [
+      {
+        "sentenceId": "pattern-9082-01"
+      },
+      {
+        "sentenceId": "pattern-9083-01"
+      },
+      {
+        "sentenceId": "pattern-9084-01"
+      },
+      {
+        "sentenceId": "managed-01"
+      },
+      {
+        "sentenceId": "used-02"
+      }
+    ]
+  },
+  {
+    "id": "past-background",
+    "patterns": [
+      9086,
+      9087,
+      9088,
+      9076
+    ],
+    "ar": "الخلفية والحدث في السرد",
+    "en": "Background and events in a story",
+    "level": "intermediate",
+    "type": "relation",
+    "noteAr": "Was doing يضع الحدث في خلفية جارية. While يربط الخلفية بما حدث خلالها. When يربط وقت حدث بما وقع عنده أو بعده.",
+    "noteEn": "Was doing establishes an ongoing background. While links that background to an event during it. When links an event’s time to what happened then or next.",
+    "examples": [
+      "I was reading at eight o'clock.",
+      "While I was reading, the phone rang.",
+      "When I arrived, my family smiled.",
+      "Did you finish your homework?"
+    ],
+    "question": "Choose the background action: While I was cooking, the phone rang.",
+    "options": [
+      "the phone rang",
+      "I was cooking"
+    ],
+    "answer": 1,
+    "samples": [
+      {
+        "sentenceId": "pattern-9086-01"
+      },
+      {
+        "sentenceId": "pattern-9087-01"
+      },
+      {
+        "sentenceId": "pattern-9088-01"
+      },
+      {
+        "sentenceId": "pattern-9076-01"
+      }
+    ]
+  },
+  {
+    "id": "future-commitment",
+    "patterns": [
+      9089,
+      9090,
+      9091,
+      9092,
+      9093,
+      9094
+    ],
+    "ar": "الوعد والخطة والقرار بعدم الفعل",
+    "en": "Promises, plans and decisions against an action",
+    "level": "intermediate",
+    "type": "relation",
+    "noteAr": "I’ll يناسب الوعد أو قرار اللحظة، وI won’t للرفض أو الالتزام بالامتناع. Going to يصف نية أو خطة، ويمكن السؤال عنها أو نفيها.",
+    "noteEn": "I’ll can signal a promise or a decision made now. I won’t can signal refusal or a promise to refrain. Going to describes an intention and can be questioned or negated.",
+    "examples": [
+      "I'll call you after class.",
+      "I won't be late tomorrow.",
+      "Will you join us tomorrow?",
+      "I'm going to practice English tonight.",
+      "I'm not going to drive tonight.",
+      "Are you going to study tonight?"
+    ],
+    "question": "You just decided to answer the phone. Which reply fits?",
+    "options": [
+      "I used to answer it.",
+      "I’ll answer it.",
+      "I answered it yesterday."
+    ],
+    "answer": 1,
+    "samples": [
+      {
+        "sentenceId": "pattern-9089-01"
+      },
+      {
+        "sentenceId": "pattern-9090-01"
+      },
+      {
+        "sentenceId": "pattern-9091-01"
+      },
+      {
+        "sentenceId": "pattern-9092-01"
+      },
+      {
+        "sentenceId": "pattern-9093-01"
+      },
+      {
+        "sentenceId": "pattern-9094-01"
+      }
+    ]
+  },
+  {
+    "id": "arrangements-and-timetable",
+    "patterns": [
+      9095,
+      9096,
+      9097,
+      9103,
+      9098,
+      9099
+    ],
+    "ar": "نية وترتيب شخصي وموعد ثابت",
+    "en": "Intentions, arrangements and timetables",
+    "level": "intermediate",
+    "type": "usage",
+    "noteAr": "Planning to يدل على خطة، وI’m meeting مع موعد يدل على ترتيب شخصي، والمضارع البسيط يناسب الجدول. About to يعني أن الفعل وشيك، وhope رغبة، وexpect توقع.",
+    "noteEn": "Planning to expresses a plan, I’m meeting with a time expresses an arrangement, and simple present can show a timetable. About to means imminent, hope expresses a wish, and expect a prediction.",
+    "examples": [
+      "I'm planning to learn ten new words.",
+      "I'm meeting my teacher tomorrow.",
+      "The class starts at nine tomorrow.",
+      "I'm about to leave the house.",
+      "I hope to visit my cousins soon.",
+      "I expect to finish the report on Friday."
+    ],
+    "question": "Which sentence gives a fixed timetable?",
+    "options": [
+      "I hope to leave early.",
+      "The bus leaves at seven.",
+      "I’m meeting Sara at seven."
+    ],
+    "answer": 1,
+    "samples": [
+      {
+        "sentenceId": "pattern-9095-01"
+      },
+      {
+        "sentenceId": "pattern-9096-01"
+      },
+      {
+        "sentenceId": "pattern-9097-01"
+      },
+      {
+        "sentenceId": "pattern-9103-01"
+      },
+      {
+        "sentenceId": "pattern-9098-01"
+      },
+      {
+        "sentenceId": "pattern-9099-01"
+      }
+    ]
+  },
+  {
+    "id": "future-triggers",
+    "patterns": [
+      9104,
+      9105,
+      9106,
+      9139,
+      9156,
+      9157
+    ],
+    "ar": "إذا ومتى وبمجرد أن",
+    "en": "If, when and as soon as",
+    "level": "intermediate",
+    "type": "errors",
+    "noteAr": "If يعلّق الفعل على شرط. When يتوقع وقوعه. As soon as يشدّد على الفورية. في جملة الزمن المستقبلية نقول when I arrive ثم I’ll call.",
+    "noteEn": "If introduces a condition. When expects an event. As soon as stresses immediacy. In a future time clause, use when I arrive followed by I’ll call.",
+    "examples": [
+      "If it rains, I'll stay at home.",
+      "When I get home, I'll call my mother.",
+      "As soon as I finish, I'll help you.",
+      "Let me know if the time changes.",
+      "We'll go outside unless it rains.",
+      "Even if it rains, I'll attend the event."
+    ],
+    "question": "Which future time clause is correct?",
+    "options": [
+      "When I arrive, I’ll call.",
+      "When I will arrive, I’ll call.",
+      "When I arrived, I’ll call."
+    ],
+    "answer": 0,
+    "samples": [
+      {
+        "sentenceId": "pattern-9104-01"
+      },
+      {
+        "sentenceId": "pattern-9105-01"
+      },
+      {
+        "sentenceId": "pattern-9106-01"
+      },
+      {
+        "sentenceId": "pattern-9139-02",
+        "sceneId": "pattern-9056-04"
+      },
+      {
+        "sentenceId": "pattern-9156-01"
+      },
+      {
+        "sentenceId": "pattern-9157-01"
+      }
+    ]
+  },
+  {
+    "id": "degrees-of-certainty",
+    "patterns": [
+      9100,
+      9101,
+      9102,
+      9099,
+      9123,
+      9124
+    ],
+    "ar": "الإمكان والتوقّع والانطباع",
+    "en": "Possibility, expectation and impressions",
+    "level": "intermediate",
+    "type": "relation",
+    "noteAr": "Might وmay يفتحان احتمالًا. Probably يرجّح النتيجة. Expect يذكر ما تتوقعه. Seems like يصف الانطباع، وsounds like يناسب ما سمعته.",
+    "noteEn": "Might and may express possibility. Probably marks a likely outcome. Expect reports a prediction. Seems like gives an impression, and sounds like often responds to what you heard.",
+    "examples": [
+      "I might go to the park after lunch.",
+      "I may arrive a little late.",
+      "I'll probably study after dinner.",
+      "I expect to finish the report on Friday.",
+      "It seems like the shop is closed.",
+      "It sounds like rain outside."
+    ],
+    "question": "You are replying to someone’s description. Which opening fits?",
+    "options": [
+      "I used to…",
+      "It sounds like…",
+      "I have to…"
+    ],
+    "answer": 1,
+    "samples": [
+      {
+        "sentenceId": "pattern-9100-01"
+      },
+      {
+        "sentenceId": "pattern-9101-01"
+      },
+      {
+        "sentenceId": "pattern-9102-01"
+      },
+      {
+        "sentenceId": "pattern-9099-01"
+      },
+      {
+        "sentenceId": "pattern-9123-01"
+      },
+      {
+        "sentenceId": "pattern-9124-01"
+      }
+    ]
+  },
+  {
+    "id": "talking-about-feelings",
+    "patterns": [
+      9107,
+      9108,
+      9109,
+      9110,
+      9111,
+      9112,
+      9113
+    ],
+    "ar": "وصف المشاعر وأسبابها",
+    "en": "Describing feelings and their causes",
+    "level": "intermediate",
+    "type": "usage",
+    "noteAr": "Feel يتبعه وصف. Happy with وworried about وproud of وgrateful for تأتي بعدها عبارات اسمية أو ما يعادلها. Surprised that وdisappointed that تتبعهما جملة.",
+    "noteEn": "Feel takes an adjective. Happy with, worried about, proud of and grateful for take noun phrases or equivalents. Surprised that and disappointed that take clauses.",
+    "examples": [
+      "I feel calm after my walk.",
+      "I'm happy with my test result.",
+      "I'm worried about tomorrow's exam.",
+      "I'm proud of my sister's success.",
+      "I'm surprised that you remember my name.",
+      "I'm disappointed that the game was canceled.",
+      "I'm grateful for your kindness."
+    ],
+    "question": "Which preposition fits “I’m proud ___ my team”?",
+    "options": [
+      "for",
+      "of",
+      "with"
+    ],
+    "answer": 1,
+    "samples": [
+      {
+        "sentenceId": "pattern-9107-01"
+      },
+      {
+        "sentenceId": "pattern-9108-01"
+      },
+      {
+        "sentenceId": "pattern-9109-01"
+      },
+      {
+        "sentenceId": "pattern-9110-01"
+      },
+      {
+        "sentenceId": "pattern-9111-01"
+      },
+      {
+        "sentenceId": "pattern-9112-01"
+      },
+      {
+        "sentenceId": "pattern-9113-01"
+      }
+    ]
+  },
+  {
+    "id": "interests-and-mood",
+    "patterns": [
+      9114,
+      7,
+      9116,
+      111,
+      112
+    ],
+    "ar": "اهتمام عام أم رغبة الآن؟",
+    "en": "An interest or a desire right now?",
+    "level": "intermediate",
+    "type": "errors",
+    "noteAr": "Interested in وlike يصفان اهتمامًا عامًا. Feel like وdon’t feel like يصفان رغبة لحظية. استخدم ing بعد feel like وعند ذكر نشاط بعد interested in.",
+    "noteEn": "Interested in and like can describe general interests. Feel like and don’t feel like describe a present inclination. Use -ing after feel like and for activities after interested in.",
+    "examples": [
+      "I'm interested in learning new languages.",
+      "I feel like reading a book.",
+      "I don't feel like going out tonight.",
+      "I like reading.",
+      "I don't like waiting."
+    ],
+    "question": "Complete “I feel like ___ a book.”",
+    "options": [
+      "read",
+      "to read",
+      "reading"
+    ],
+    "answer": 2,
+    "samples": [
+      {
+        "sentenceId": "pattern-9114-01"
+      },
+      {
+        "sentenceId": "feel-02"
+      },
+      {
+        "sentenceId": "pattern-9116-01"
+      },
+      {
+        "sentenceId": "enjoy-02"
+      },
+      {
+        "sentenceId": "dislike-03"
+      }
+    ]
+  },
+  {
+    "id": "opinion-and-disagreement",
+    "patterns": [
+      9117,
+      9118,
+      9119,
+      9121,
+      9122,
+      9120
+    ],
+    "ar": "طرح الرأي والاتفاق والاختلاف",
+    "en": "Stating an opinion, agreeing and disagreeing",
+    "level": "intermediate",
+    "type": "speech",
+    "noteAr": "قدّم رأيك بـI think أوIn my opinion، وعبّر عن قناعتك بـI believe. يمكن الاتفاق أو الاختلاف ثم توضيح سبب تفضيل خيار.",
+    "noteEn": "Introduce a view with I think or In my opinion, and a belief with I believe. Agree or disagree, then explain your preference.",
+    "examples": [
+      "I think this lesson is useful.",
+      "In my opinion, reading every day helps.",
+      "I believe everyone can learn.",
+      "I agree with your suggestion.",
+      "I don't agree with that idea.",
+      "I prefer tea to coffee."
+    ],
+    "question": "Which phrase politely signals a different opinion?",
+    "options": [
+      "I don’t agree with that.",
+      "I have to leave.",
+      "You’re welcome."
+    ],
+    "answer": 0,
+    "samples": [
+      {
+        "sentenceId": "pattern-9117-01"
+      },
+      {
+        "sentenceId": "pattern-9118-01"
+      },
+      {
+        "sentenceId": "pattern-9119-01"
+      },
+      {
+        "sentenceId": "pattern-9121-01"
+      },
+      {
+        "sentenceId": "pattern-9122-01"
+      },
+      {
+        "sentenceId": "pattern-9120-01"
+      }
+    ]
+  },
+  {
+    "id": "polite-requests",
+    "patterns": [
+      9125,
+      9126,
+      9127,
+      9049,
+      9138
+    ],
+    "ar": "لفت الانتباه ثم طلب المساعدة",
+    "en": "Getting attention and asking for help",
+    "level": "intermediate",
+    "type": "speech",
+    "noteAr": "Excuse me يفتح الحديث. Could you please يليها فعل أساسي، وWould you mind يليها فعل بصيغة ing. Let me يعرض مبادرة، وCould you clarify يطلب توضيحًا.",
+    "noteEn": "Excuse me opens the exchange. Could you please takes a base verb and Would you mind takes -ing. Let me offers to act, and Could you clarify asks for an explanation.",
+    "examples": [
+      "Excuse me, where is the library?",
+      "Could you please hold the door for a moment?",
+      "Would you mind moving your bag?",
+      "Let me help you.",
+      "Could you clarify what you mean?"
+    ],
+    "question": "Complete “Would you mind ___ your bag?”",
+    "options": [
+      "move",
+      "moving",
+      "to move"
+    ],
+    "answer": 1,
+    "samples": [
+      {
+        "sentenceId": "pattern-9125-02"
+      },
+      {
+        "sentenceId": "pattern-9126-05"
+      },
+      {
+        "sentenceId": "pattern-9127-01"
+      },
+      {
+        "sentenceId": "pattern-9049-01"
+      },
+      {
+        "sentenceId": "pattern-9138-02"
+      }
+    ]
+  },
+  {
+    "id": "invite-and-respond",
+    "patterns": [
+      9052,
+      9130,
+      9131,
+      9132,
+      6
+    ],
+    "ar": "الدعوة والقبول والاعتذار واقتراح بديل",
+    "en": "Invite, accept, decline and offer an alternative",
+    "level": "intermediate",
+    "type": "sequence",
+    "noteAr": "ابدأ بدعوة، ثم اقبل بـI’d love to أو اعتذر بـI’m afraid I can’t. أعد فتح الحوار ببديل مع How about أو اقتراح مشترك مع Let’s.",
+    "noteEn": "Invite someone, then accept with I’d love to or decline with I’m afraid I can’t. Offer an alternative with How about or a joint action with Let’s.",
+    "examples": [
+      "Would you like to join us?",
+      "I'd love to join the trip.",
+      "I'm afraid I can't come on Friday.",
+      "How about having tea after class?",
+      "Let's meet outside the library."
+    ],
+    "question": "You cannot meet today. Which reply keeps the plan open?",
+    "options": [
+      "I’m afraid I can’t. How about tomorrow?",
+      "I’d love to meet today.",
+      "That is our meeting room."
+    ],
+    "answer": 0,
+    "samples": [
+      {
+        "sentenceId": "pattern-9052-01"
+      },
+      {
+        "sentenceId": "pattern-9130-01"
+      },
+      {
+        "sentenceId": "pattern-9131-01"
+      },
+      {
+        "sentenceId": "pattern-9132-01"
+      },
+      {
+        "sentenceId": "lets-07"
+      }
+    ]
+  },
+  {
+    "id": "thanks-and-repair",
+    "patterns": [
+      9133,
+      9134,
+      9135,
+      9136,
+      9137
+    ],
+    "ar": "الشكر والاعتذار والرد المناسب",
+    "en": "Thanks, apologies and suitable replies",
+    "level": "intermediate",
+    "type": "speech",
+    "noteAr": "اذكر ما تشكر عليه مع Thank you for، أو عبّر عن التقدير مع I appreciate. ردّ على الشكر بـYou’re welcome، وعلى الاعتذار عند قبوله بـThat’s all right.",
+    "noteEn": "Name what you are thanking someone for with Thank you for, or express appreciation with I appreciate. Reply to thanks with You’re welcome and accept an apology with That’s all right.",
+    "examples": [
+      "Thank you for waiting for me.",
+      "I appreciate your honest feedback.",
+      "You're welcome. I'm happy to help.",
+      "I'm sorry for being late today.",
+      "That's all right. We can try again."
+    ],
+    "question": "Which reply accepts “I’m sorry for being late”?",
+    "options": [
+      "You’re welcome.",
+      "That’s all right.",
+      "Could you clarify?"
+    ],
+    "answer": 1,
+    "samples": [
+      {
+        "sentenceId": "pattern-9133-01"
+      },
+      {
+        "sentenceId": "pattern-9134-01"
+      },
+      {
+        "sentenceId": "pattern-9135-01"
+      },
+      {
+        "sentenceId": "pattern-9136-01"
+      },
+      {
+        "sentenceId": "pattern-9137-01"
+      }
+    ]
+  },
+  {
+    "id": "cause-to-result",
+    "patterns": [
+      9140,
+      9141,
+      9142,
+      9143,
+      9160
+    ],
+    "ar": "من السبب إلى النتيجة",
+    "en": "From cause to result",
+    "level": "intermediate",
+    "type": "relation",
+    "noteAr": "Because يتبعه سبب في جملة، وbecause of يتبعه اسم أو ما يقوم مقامه. So وThat’s why يقدمان النتيجة. The reason is that يصرّح بالسبب.",
+    "noteEn": "Because introduces a reason clause, and because of introduces a noun phrase or equivalent. So and That’s why introduce the result. The reason is that states the reason explicitly.",
+    "examples": [
+      "I stayed inside because it was raining.",
+      "The bus was late because of traffic.",
+      "It was cold, so I wore a jacket.",
+      "I missed the bus. That's why I'm late.",
+      "The reason is that our team needs more time."
+    ],
+    "question": "Complete “The bus was late ___ heavy traffic.”",
+    "options": [
+      "so",
+      "because",
+      "because of"
+    ],
+    "answer": 2,
+    "samples": [
+      {
+        "sentenceId": "pattern-9140-01",
+        "sceneId": "pattern-9104-01"
+      },
+      {
+        "sentenceId": "pattern-9141-02",
+        "sceneId": "pattern-9054-03"
+      },
+      {
+        "sentenceId": "pattern-9142-01",
+        "sceneId": "pattern-9102-04"
+      },
+      {
+        "sentenceId": "pattern-9143-01",
+        "sceneId": "pattern-9056-03"
+      },
+      {
+        "sentenceId": "pattern-9160-01"
+      }
+    ]
+  },
+  {
+    "id": "purpose-and-examples",
+    "patterns": [
+      9144,
+      9145,
+      9154,
+      9155,
+      9158
+    ],
+    "ar": "شرح الهدف وإعطاء أمثلة",
+    "en": "Explaining a purpose and giving examples",
+    "level": "advanced",
+    "type": "usage",
+    "noteAr": "To يختصر الغرض، وso that يتيح التصريح بمن سيستفيد أو يفعل شيئًا. For example يقدّم مثالًا مستقلًا، وsuch as يذكر أمثلة داخل العبارة.",
+    "noteEn": "To expresses purpose briefly. So that lets you state who will act or benefit. For example introduces a separate example, and such as embeds examples in a phrase.",
+    "examples": [
+      "I write notes so that I can remember more.",
+      "I opened the book to check the answer.",
+      "I like outdoor activities. For example, I enjoy hiking.",
+      "I enjoy fruits such as apples and oranges.",
+      "What I mean is we need more practice."
+    ],
+    "question": "Which expression introduces items inside a noun phrase?",
+    "options": [
+      "such as",
+      "What I mean is",
+      "so that"
+    ],
+    "answer": 0,
+    "samples": [
+      {
+        "sentenceId": "pattern-9144-01"
+      },
+      {
+        "sentenceId": "pattern-9145-01"
+      },
+      {
+        "sentenceId": "pattern-9154-01"
+      },
+      {
+        "sentenceId": "pattern-9155-01"
+      },
+      {
+        "sentenceId": "pattern-9158-01"
+      }
+    ]
+  },
+  {
+    "id": "contrast-in-speaking-and-writing",
+    "patterns": [
+      9146,
+      9147,
+      9148,
+      9149,
+      9150
+    ],
+    "ar": "التباين في الكلام والكتابة",
+    "en": "Contrast in speech and writing",
+    "level": "advanced",
+    "type": "errors",
+    "noteAr": "Although وeven though تدخلان التنازل داخل الجملة. But يربط فكرتين، وHowever يبدأ انتقالًا بين جملتين. While يستطيع المقابلة بين خيارين.",
+    "noteEn": "Although and even though introduce concession inside a sentence. But links ideas. However can start a contrasting sentence. While can set two options against each other.",
+    "examples": [
+      "Although it was late, we finished the game.",
+      "Even though it was raining, we went outside.",
+      "I like tea, but my sister prefers coffee.",
+      "The bus was late. However, we arrived on time.",
+      "While I enjoy reading, my brother prefers sports."
+    ],
+    "question": "Which version works in standard edited writing?",
+    "options": [
+      "Although it rained, we went.",
+      "Although it rained, but we went.",
+      "It rained, however we went."
+    ],
+    "answer": 0,
+    "samples": [
+      {
+        "sentenceId": "pattern-9146-01"
+      },
+      {
+        "sentenceId": "pattern-9147-01"
+      },
+      {
+        "sentenceId": "pattern-9148-01"
+      },
+      {
+        "sentenceId": "pattern-9149-01"
+      },
+      {
+        "sentenceId": "pattern-9150-01"
+      }
+    ]
+  },
+  {
+    "id": "substitute-add-emphasize",
+    "patterns": [
+      9151,
+      9152,
+      9153,
+      9159
+    ],
+    "ar": "الاستبدال والإضافة والتوكيد",
+    "en": "Replacement, addition and emphasis",
+    "level": "advanced",
+    "type": "relation",
+    "noteAr": "Instead of يستبدل خيارًا. In addition to يضيف عنصرًا. Not only… but also يؤكد الإضافة ويحتاج تركيبًا متوازيًا. What matters is يحدّد الأهم.",
+    "noteEn": "Instead of replaces an option. In addition to adds an item. Not only… but also emphasises addition and needs parallel structure. What matters is identifies the priority.",
+    "examples": [
+      "Instead of driving, we walked to school.",
+      "In addition to English, I study mathematics.",
+      "She speaks not only English but also French.",
+      "What matters is that everyone feels safe."
+    ],
+    "question": "Choose the parallel pair: “She not only ___ but also ___.”",
+    "options": [
+      "plans / teaches",
+      "plans / a teacher",
+      "a plan / teaches"
+    ],
+    "answer": 0,
+    "samples": [
+      {
+        "sentenceId": "pattern-9151-01"
+      },
+      {
+        "sentenceId": "pattern-9152-01"
+      },
+      {
+        "sentenceId": "pattern-9153-01"
+      },
+      {
+        "sentenceId": "pattern-9159-01"
+      }
+    ]
+  },
+  {
+    "id": "indirect-questions",
+    "patterns": [
+      12,
+      9161,
+      9162,
+      9163,
+      9138
+    ],
+    "ar": "ترتيب الكلمات في السؤال غير المباشر",
+    "en": "Word order in indirect questions",
+    "level": "advanced",
+    "type": "errors",
+    "noteAr": "داخل السؤال غير المباشر، يأتي الفاعل قبل الفعل. Where the station is داخل Do you know، وif أوwhether عندما يكون السؤال عن نعم أو لا.",
+    "noteEn": "In an embedded question, put the subject before the verb. Use where the station is inside Do you know, and if or whether for a yes-or-no question.",
+    "examples": [
+      "Do you know where the station is?",
+      "I wonder if the museum is open today.",
+      "I wonder how this machine works.",
+      "Could you tell me whether the office is open?",
+      "Could you clarify what you mean?"
+    ],
+    "question": "Which sentence uses indirect-question order?",
+    "options": [
+      "Do you know where is the station?",
+      "Do you know where the station is?",
+      "Do you know is where the station?"
+    ],
+    "answer": 1,
+    "samples": [
+      {
+        "sentenceId": "know-01"
+      },
+      {
+        "sentenceId": "pattern-9161-01"
+      },
+      {
+        "sentenceId": "pattern-9162-01"
+      },
+      {
+        "sentenceId": "pattern-9163-01"
+      },
+      {
+        "sentenceId": "pattern-9138-02"
+      }
+    ]
+  },
+  {
+    "id": "relative-clauses",
+    "patterns": [
+      9164,
+      9165,
+      9166,
+      9167
+    ],
+    "ar": "ربط الشخص والشيء والمكان والوقت",
+    "en": "Linking people, things, places and times",
+    "level": "advanced",
+    "type": "relation",
+    "noteAr": "Who يصف شخصًا، وthat يحدد شيئًا، وwhere يربط مكانًا بما يحدث فيه، وwhen يربط زمنًا بما وقع فيه.",
+    "noteEn": "Who describes a person, that identifies a thing, where links a place to what happens there, and when links a time to its event.",
+    "examples": [
+      "The person who helped me is my neighbor.",
+      "The book that I borrowed is very interesting.",
+      "We revisited the place where we first met. It is now a library.",
+      "I will always remember the day when we graduated."
+    ],
+    "question": "Complete “This is the place ___ we first met.”",
+    "options": [
+      "who",
+      "where",
+      "when"
+    ],
+    "answer": 1,
+    "samples": [
+      {
+        "sentenceId": "pattern-9164-01"
+      },
+      {
+        "sentenceId": "pattern-9165-01"
+      },
+      {
+        "sentenceId": "pattern-9166-01"
+      },
+      {
+        "sentenceId": "pattern-9167-01"
+      }
+    ]
+  },
+  {
+    "id": "imagined-versus-real",
+    "patterns": [
+      9104,
+      9157,
+      9168,
+      9169,
+      9170
+    ],
+    "ar": "شرط محتمل وموقف متخيّل",
+    "en": "A real possibility and an imagined situation",
+    "level": "advanced",
+    "type": "relation",
+    "noteAr": "If it rains, I’ll… لخيار ممكن. If I were…, I would… لموقف متخيّل الآن. If I had…, I would have… لتخيّل نتيجة مختلفة في الماضي. I wish I could يعبر عن أمنية.",
+    "noteEn": "If it rains, I’ll… is an open possibility. If I were…, I would… imagines a present situation. If I had…, I would have… imagines a different past result. I wish I could expresses a wish.",
+    "examples": [
+      "If it rains, I'll stay at home.",
+      "Even if it rains, I'll attend the event.",
+      "I wish I could visit my grandparents today.",
+      "If I were a teacher, I would make lessons fun.",
+      "If I had left early, I would have caught the bus."
+    ],
+    "question": "Which beginning imagines a different past?",
+    "options": [
+      "If I had called earlier…",
+      "If it rains tomorrow…",
+      "When I arrive…"
+    ],
+    "answer": 0,
+    "samples": [
+      {
+        "sentenceId": "pattern-9104-01"
+      },
+      {
+        "sentenceId": "pattern-9157-01"
+      },
+      {
+        "sentenceId": "pattern-9168-01"
+      },
+      {
+        "sentenceId": "pattern-9169-01"
+      },
+      {
+        "sentenceId": "pattern-9170-01"
+      }
+    ]
+  },
+  {
+    "id": "past-perfect-timeline",
+    "patterns": [
+      9088,
+      9173,
+      9174,
+      9170,
+      9171,
+      9172
+    ],
+    "ar": "ما حدث أولًا وما تبيّن بعده",
+    "en": "What happened first and what we found later",
+    "level": "advanced",
+    "type": "sequence",
+    "noteAr": "حدّد لحظة في الماضي ثم استخدم had مع التصريف الثالث لما سبقها. Should have يراجع ما كان الأفضل فعله، وcould have يذكر فرصة أو احتمالًا سابقًا.",
+    "noteEn": "Set a past reference point and use had plus the past participle for the earlier action. Should have looks back on better action, and could have points to a past possibility.",
+    "examples": [
+      "When I arrived, my family smiled.",
+      "I had already eaten when my friend called.",
+      "By the time we arrived, the film had started.",
+      "If I had left early, I would have caught the bus.",
+      "I should have checked the meeting time.",
+      "I could have taken the earlier bus."
+    ],
+    "question": "In “By the time I arrived, they had left,” what happened first?",
+    "options": [
+      "I arrived.",
+      "They left.",
+      "Both happened together."
+    ],
+    "answer": 1,
+    "samples": [
+      {
+        "sentenceId": "pattern-9088-01"
+      },
+      {
+        "sentenceId": "pattern-9173-01"
+      },
+      {
+        "sentenceId": "pattern-9174-01"
+      },
+      {
+        "sentenceId": "pattern-9170-01"
+      },
+      {
+        "sentenceId": "pattern-9171-01"
+      },
+      {
+        "sentenceId": "pattern-9172-01"
+      }
+    ]
+  },
+  {
+    "id": "process-time-value",
+    "patterns": [
+      10,
+      11,
+      9175,
+      9144,
+      9
+    ],
+    "ar": "مدة التعلّم وقيمته وأثر الممارسة",
+    "en": "Learning time, value and the effect of practice",
+    "level": "advanced",
+    "type": "relation",
+    "noteAr": "It takes يحدد المدة، وIt’s worth يقوّم جدوى الجهد. The more…, the more… يربط تغيرين، وso that يذكر الهدف، وmanaged to يصف النتيجة بعد جهد.",
+    "noteEn": "It takes gives the time required, and It’s worth evaluates the effort. The more…, the more… links two changes, so that states a purpose, and managed to marks a result after effort.",
+    "examples": [
+      "It takes time to learn a language.",
+      "It's worth trying again.",
+      "I notice that the more I read, the more words I learn.",
+      "I write notes so that I can remember more.",
+      "I managed to finish on time."
+    ],
+    "question": "Which phrase links more practice to greater confidence?",
+    "options": [
+      "It takes an hour.",
+      "The more I practise, the more confident I feel.",
+      "It’s worth trying."
+    ],
+    "answer": 1,
+    "samples": [
+      {
+        "sentenceId": "takes-02"
+      },
+      {
+        "sentenceId": "worth-01"
+      },
+      {
+        "sentenceId": "pattern-9175-01"
+      },
+      {
+        "sentenceId": "pattern-9144-01"
+      },
+      {
+        "sentenceId": "managed-01"
+      }
+    ]
+  },
+  {
+    "id": "used-to-three-meanings",
+    "patterns": [
+      8
+    ],
+    "ar": "عادة قديمة أم اعتياد؟",
+    "en": "A past habit or getting accustomed?",
+    "level": "advanced",
+    "type": "errors",
+    "noteAr": "Used to ثم فعل أساسي يصف عادة سابقة. Be used to ثم اسم أو صيغة ing يصف حالة الاعتياد. Get used to يصف الانتقال إلى الاعتياد.",
+    "noteEn": "Used to followed by a base verb describes a past habit. Be used to followed by a noun or -ing form describes familiarity. Get used to describes becoming familiar.",
+    "examples": [
+      "I used to live near the sea."
+    ],
+    "question": "Complete “I’m getting used to ___ here.”",
+    "options": [
+      "live",
+      "living",
+      "lived"
+    ],
+    "answer": 1,
+    "samples": [
+      {
+        "sentenceId": "used-01"
+      },
+      {
+        "sentenceId": "ref-0054",
+        "form": "be used to + noun / -ing"
+      },
+      {
+        "sentenceId": "ref-0396",
+        "form": "get used to + noun / -ing"
+      }
+    ]
+  },
+  {
+    "id": "past-date-or-life-experience",
+    "patterns": [
+      9074
+    ],
+    "ar": "ماضٍ محدد أم تجربة في الحياة؟",
+    "en": "A finished time or a life experience?",
+    "level": "advanced",
+    "type": "usage",
+    "noteAr": "Went يلائم حدثًا وقع في وقت ماضٍ منتهٍ مثل yesterday. Have you ever been to يسأل عن تجربة إلى الآن، وI have never been to ينفي حدوثها إلى الآن.",
+    "noteEn": "Went suits a finished past event, for example yesterday. Have you ever been to asks about experience up to now, and I have never been to says it has not happened up to now.",
+    "examples": [
+      "I went to the market yesterday."
+    ],
+    "question": "Which question asks about a life experience without naming a finished time?",
+    "options": [
+      "Did you go to Boston yesterday?",
+      "When did you go to Boston?",
+      "Have you ever been to Boston?"
+    ],
+    "answer": 2,
+    "samples": [
+      {
+        "sentenceId": "pattern-9074-01"
+      },
+      {
+        "sentenceId": "ref-0505",
+        "form": "Have you ever been to + place?"
+      },
+      {
+        "sentenceId": "ref-0722",
+        "form": "I have never been to + place"
+      }
+    ]
   }
 ]
