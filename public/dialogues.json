@@ -120,5 +120,96 @@
         {"voice":"male","en":"How many people are coming?","ar":"كم شخصًا سيأتي؟","patterns":[9068],"scene":"there-is-11"},
         {"voice":"female","en":"There are four of us. Let's make enough for everyone.","ar":"نحن أربعة. لنعدّ ما يكفي للجميع.","patterns":[118,6],"scene":"there-is-06"}
       ]
+    },
+    {
+      "id": "museum-entrance", "ar": "العثور على مدخل المتحف", "en": "Finding the museum entrance", "after": 9054, "category": "travel",
+      "lines": [
+        {"voice":"male","en":"Excuse me, where is the entrance to the museum?","ar":"عذرًا، أين مدخل المتحف؟","patterns":[9125,9054],"scene":"pattern-9054-07"},
+        {"voice":"female","en":"That is the main entrance, just past the garden.","ar":"ذاك هو المدخل الرئيسي، بعد الحديقة مباشرةً.","patterns":[102],"scene":"that-01"},
+        {"voice":"male","en":"Can I buy a ticket there?","ar":"هل يمكنني شراء تذكرة هناك؟","patterns":[4],"scene":"pattern-9125-06"},
+        {"voice":"female","en":"Yes. There is a ticket desk just inside.","ar":"نعم. يوجد شباك تذاكر بعد المدخل مباشرةً.","patterns":[117],"scene":"pattern-9054-07"}
+      ]
+    },
+    {
+      "id": "shared-table", "ar": "مقعد على طاولة مشتركة", "en": "Sharing a table", "after": 9128, "category": "study",
+      "lines": [
+        {"voice":"male","en":"Excuse me, do you mind if I sit here?","ar":"عذرًا، هل تمانع أن أجلس هنا؟","patterns":[9125,9128],"scene":"pattern-9128-01"},
+        {"voice":"female","en":"Not at all. This is the only free seat.","ar":"تفضل. هذا هو المقعد الشاغر الوحيد.","patterns":[5],"scene":"pattern-9067-01"},
+        {"voice":"male","en":"Thanks. Is it okay if I charge my phone here?","ar":"شكرًا. هل يمكنني شحن هاتفي هنا؟","patterns":[9039],"scene":"pattern-9128-05"},
+        {"voice":"female","en":"Of course. There is an outlet under the table.","ar":"بالطبع. يوجد مقبس تحت الطاولة.","patterns":[117],"scene":"pattern-9128-05"}
+      ]
+    },
+    {
+      "id": "lesson-time", "ar": "تأكيد موعد درس", "en": "Confirming the lesson time", "after": 9056, "category": "study",
+      "lines": [
+        {"voice":"male","en":"When is the next English lesson?","ar":"متى درس الإنجليزية القادم؟","patterns":[9056],"scene":"pattern-9056-05"},
+        {"voice":"female","en":"The class starts at nine tomorrow.","ar":"يبدأ الدرس غدًا الساعة التاسعة.","patterns":[9097],"scene":"pattern-9097-01"},
+        {"voice":"male","en":"Do you have the room number?","ar":"هل لديك رقم القاعة؟","patterns":[9064],"scene":"pattern-9054-04"},
+        {"voice":"female","en":"Yes, I have it here. I'll send it to you.","ar":"نعم، الرقم معي هنا. سأرسله إليك.","patterns":[105,9089],"scene":"pattern-9089-03"}
+      ]
+    },
+    {
+      "id": "missing-coat", "ar": "معطف في الحافلة", "en": "A coat left on the bus", "after": 9076, "category": "travel",
+      "lines": [
+        {"voice":"male","en":"Did you leave your coat on the bus?","ar":"هل تركت معطفك في الحافلة؟","patterns":[9076],"scene":"pattern-9076-06"},
+        {"voice":"female","en":"I didn't take it with me when I got off.","ar":"لم آخذه معي حين نزلت.","patterns":[9075],"scene":"pattern-9076-06"},
+        {"voice":"male","en":"Do you know where the lost property office is?","ar":"هل تعرف أين مكتب المفقودات؟","patterns":[12],"scene":"lets-05"},
+        {"voice":"female","en":"Yes. I'll call the office and give them the bus number.","ar":"نعم. سأتصل بالمكتب وأعطيهم رقم الحافلة.","patterns":[9089],"scene":"pattern-9089-01"}
+      ]
+    },
+    {
+      "id": "forgot-receipt", "ar": "استرجاع سلعة بلا إيصال", "en": "Returning an item without a receipt", "after": 9041, "category": "shopping",
+      "lines": [
+        {"voice":"male","en":"I'd like to return this bag. I forgot to bring the receipt.","ar":"أودّ إرجاع هذه الحقيبة. نسيت إحضار الإيصال.","patterns":[3,9082],"scene":"pattern-9041-06"},
+        {"voice":"female","en":"I need a receipt or the order number.","ar":"أحتاج إلى الإيصال أو رقم الطلب.","patterns":[9041],"scene":"pattern-9041-06"},
+        {"voice":"male","en":"Can I show you the confirmation on my phone?","ar":"هل يمكنني أن أريك تأكيد الطلب على هاتفي؟","patterns":[4],"scene":"pattern-9128-05"},
+        {"voice":"female","en":"Yes. Let me check the order number.","ar":"نعم. دعني أتحقق من رقم الطلب.","patterns":[9049],"scene":"pattern-9041-06"}
+      ]
+    },
+    {
+      "id": "bicycle-saturday", "ar": "خطة إصلاح الدراجة", "en": "Fixing a bike on Saturday", "after": 9092, "category": "daily",
+      "lines": [
+        {"voice":"male","en":"Are you going to use your bike this weekend?","ar":"هل ستستخدم دراجتك في نهاية الأسبوع؟","patterns":[9094],"scene":"pattern-9092-06"},
+        {"voice":"female","en":"I'm going to repair it first. I need a new tire.","ar":"سأصلحها أولًا. أحتاج إلى إطار جديد.","patterns":[9092,9041],"scene":"pattern-9092-06"},
+        {"voice":"male","en":"Can you bring the wheel to my place on Saturday?","ar":"هل يمكنك إحضار العجلة إلى منزلي يوم السبت؟","patterns":[9037],"scene":"pattern-9092-06"},
+        {"voice":"female","en":"Yes. If the shop is open, I'll bring a tire too.","ar":"نعم. إذا كان المتجر مفتوحًا، فسأحضر إطارًا أيضًا.","patterns":[9104,9089],"scene":"pattern-9104-05"}
+      ]
+    },
+    {
+      "id": "quiet-room", "ar": "طلب الهدوء بأدب", "en": "Asking for a quieter room", "after": 9127, "category": "social",
+      "lines": [
+        {"voice":"male","en":"Would you mind lowering the music a little?","ar":"هل يمكنك خفض صوت الموسيقى قليلًا؟","patterns":[9127],"scene":"pattern-9127-02"},
+        {"voice":"female","en":"Of course. I'm sorry for playing it so loudly.","ar":"بالتأكيد. أعتذر عن تشغيلها بهذا الصوت المرتفع.","patterns":[9136],"scene":"pattern-9127-02"},
+        {"voice":"male","en":"That's all right. I have an online lesson in five minutes.","ar":"لا بأس. لديّ درس عبر الإنترنت بعد خمس دقائق.","patterns":[9137,105],"scene":"pattern-9056-05"},
+        {"voice":"female","en":"I'll use my headphones until your lesson is over.","ar":"سأستخدم سماعاتي حتى ينتهي درسك.","patterns":[9089],"scene":"pattern-9127-02"}
+      ]
+    },
+    {
+      "id": "help-with-boxes", "ar": "المساعدة في نقل الصناديق", "en": "Helping with some boxes", "after": 9037, "category": "social",
+      "lines": [
+        {"voice":"male","en":"Can you hold the door while I carry this box?","ar":"هل يمكنك إمساك الباب بينما أحمل هذا الصندوق؟","patterns":[9037],"scene":"pattern-9037-05"},
+        {"voice":"female","en":"Of course. How many boxes are there?","ar":"بالتأكيد. كم صندوقًا هناك؟","patterns":[9068],"scene":"pattern-9037-05"},
+        {"voice":"male","en":"There are three. I'll carry the small ones first.","ar":"هناك ثلاثة. سأحمل الصناديق الصغيرة أولًا.","patterns":[118,9089],"scene":"pattern-9037-05"},
+        {"voice":"female","en":"Let's leave the heavy one until we're both free.","ar":"لندع الصندوق الثقيل حتى نتفرّغ معًا.","patterns":[6],"scene":"pattern-9089-02"}
+      ]
+    },
+    {
+      "id": "rainy-picnic", "ar": "خطة بديلة للنزهة", "en": "A backup plan for the picnic", "after": 9104, "category": "daily",
+      "lines": [
+        {"voice":"male","en":"Are you going to the park tomorrow?","ar":"هل ستذهب إلى الحديقة غدًا؟","patterns":[9094],"scene":"lets-01"},
+        {"voice":"female","en":"I might go, but the weather doesn't look good.","ar":"ربما أذهب، لكن الطقس لا يبدو مناسبًا.","patterns":[9100,9148],"scene":"pattern-9100-01"},
+        {"voice":"male","en":"If it rains, I'll make lunch at home instead.","ar":"إذا أمطرت، فسأعدّ الغداء في المنزل.","patterns":[9104,9089],"scene":"pattern-9104-01"},
+        {"voice":"female","en":"Good idea. Let me know if you need anything.","ar":"فكرة جيدة. أخبرني إن احتجت إلى شيء.","patterns":[9139],"scene":"lets-04"}
+      ]
+    },
+    {
+      "id": "first-day-office", "ar": "توضيح المهمة الأولى", "en": "Clarifying the first task", "after": 9138, "category": "work",
+      "lines": [
+        {"voice":"male","en":"Could you clarify the instructions for my first task?","ar":"هل يمكنك توضيح تعليمات مهمتي الأولى؟","patterns":[9138],"scene":"pattern-9138-03"},
+        {"voice":"female","en":"Please check the names on this list today.","ar":"يرجى التحقق من الأسماء في هذه القائمة اليوم.","patterns":[9050],"scene":"pattern-9138-03"},
+        {"voice":"male","en":"So I have to check the names today. What about the phone numbers?","ar":"إذن عليّ التحقق من الأسماء اليوم. وماذا عن أرقام الهواتف؟","patterns":[2],"scene":"pattern-9138-01"},
+        {"voice":"female","en":"I'll check the phone numbers tomorrow. You can leave those to me.","ar":"سأتحقق من أرقام الهواتف غدًا. يمكنك تركها لي.","patterns":[9089],"scene":"pattern-9089-06"},
+        {"voice":"male","en":"Thanks. I don't have to wait to send the list, then.","ar":"شكرًا. إذن لست مضطرًا للانتظار قبل إرسال القائمة.","patterns":[9044],"scene":"pattern-9138-03"}
+      ]
     }
-]}
+  ]}

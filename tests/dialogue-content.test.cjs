@@ -6,6 +6,7 @@ const { dialogues } = require('../public/dialogues.json');
 const media = require('../public/dialogue-audio.json');
 const foundation = require('../public/pilot.json');
 const expansion = require('../public/expansion-media.json');
+const plan = require('../public/dialogue-plan.json');
 
 test('conversation turns link to real patterns, scenes and measured cues within a single file', () => {
  const patterns = new Set([...foundation.patterns, ...expansion.patterns].map(p => p.id));
@@ -36,5 +37,32 @@ test('conversation turns link to real patterns, scenes and measured cues within 
    assert(turn.words.every((word,j)=>word.start_ms >= (turn.words[j-1]?.end_ms ?? turn.start_ms)
     && word.start_ms<word.end_ms && word.end_ms<=turn.end_ms));
   }
+ }
+});
+
+test('the 100-situation roadmap covers the curriculum and revisits core patterns across domains', () => {
+ const published = new Map(dialogues.map(dialogue => [dialogue.id,dialogue]));
+ const entries = new Map(plan.entries.map(entry => [entry.id,entry]));
+ assert.equal(entries.size,plan.entries.length,'duplicate conversation IDs');
+ assert(entries.size>=100);
+ for(const dialogue of dialogues){
+  const entry=entries.get(dialogue.id);
+  assert(entry,dialogue.id);
+  assert.equal(entry.category,dialogue.category);
+ }
+ const categoriesByPattern=new Map();
+ for(const entry of entries.values()){
+  const dialogue=published.get(entry.id);
+  const targets=dialogue?dialogue.lines.flatMap(line=>line.patterns):entry.targets;
+  assert(entry.taskAr&&entry.taskEn&&targets.length,entry.id);
+  for(const id of targets){
+   if(!categoriesByPattern.has(id))categoriesByPattern.set(id,new Set());
+   categoriesByPattern.get(id).add(entry.category);
+  }
+ }
+ const curriculum=[...foundation.patterns,...expansion.patterns].map(pattern=>pattern.id);
+ assert.deepEqual(new Set(categoriesByPattern.keys()),new Set(curriculum));
+ for(const id of plan.corePatterns){
+  assert(categoriesByPattern.get(id)?.size>=2,`Core pattern ${id} needs two domains`);
  }
 });

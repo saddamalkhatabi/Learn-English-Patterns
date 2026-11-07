@@ -5,20 +5,42 @@ const dialogueCategories={
  daily:['الحياة اليومية','Everyday situations'],shopping:['التسوق','Shopping'],
  health:['الصحة','Health'],work:['العمل','Work']
 };
+const dialoguePurposes={
+ ask:['السؤال والتحقّق','Ask and confirm'],
+ request:['الطلب والاستئذان','Request and ask permission'],
+ describe:['التعارف والوصف','Introduce and describe'],
+ choose:['المقارنة والاختيار','Compare and choose'],
+ plan:['الاتفاق والتخطيط','Make a plan'],
+ retell:['سرد ما حدث','Tell what happened'],
+ explain:['التوضيح والتبرير','Explain and give reasons'],
+ solve:['حلّ مشكلة','Solve a problem']
+};
+const dialoguePlanReady=fetch('dialogue-plan.json')
+ .then(response=>response.ok?response.json():null).catch(()=>null);
+let dialoguePlan=null;
+let dialogueCatalogPage=0;
+const dialoguesPerPage=12;
 const dialogueAnchors={
  1:/\bwant to\b/i,2:/\b(?:have|has) to\b/i,3:/\b(?:i['’]d|i would) like to\b/i,
  4:/\bcan i\b/i,5:/\bthis is\b/i,6:/\blet['’]s\b/i,8:/\bused to\b/i,
  9:/\bmanaged to\b/i,10:/\bit takes\b/i,11:/\b(?:it['’]s|it is) worth\b/i,
  12:/\bdo you know (?:where|if)\b/i,13:/\bneed to\b/i,102:/\bthat(?: is|['’]s)\b/i,
  103:/\bi(?: am|['’]m)\b/i,105:/\b(?:i have|do you have)\b/i,
- 109:/\b(?:i['’]d|i would) like\b(?! to)/i,113:/\bmy name is\b/i,114:/\bwhat(?: is|['’]s) your name\b/i,
- 116:/\bthese are\b/i,117:/\bthere is\b/i,118:/\bthere are\b/i,9023:/\bi usually\b/i,
+  109:/\b(?:i['’]d|i would) like\b(?! to)/i,113:/\bmy name is\b/i,114:/\bwhat(?: is|['’]s) your name\b/i,
+  116:/\bthese are\b/i,117:/\bthere is\b/i,118:/\bthere are\b/i,9023:/\bi usually\b/i,
+  9037:/\bcan you\b/i,9039:/\bis it okay if\b/i,9041:/\bi need\b(?! to)/i,
  9044:/\b(?:don't|don’t|do not) have to\b/i,9047:/\byou should\b/i,9049:/\blet me\b/i,
  9051:/\b(?:what )?would you like\b(?! to)/i,9052:/\bwould you like to\b/i,
- 9063:/\bhow do you\b/i,9066:/\bis there\b/i,9068:/\bhow many\b/i,9069:/\bhow much\b/i,
- 9080:/\bi bought\b/i,9082:/\bi forgot to\b/i,9107:/\bi feel\b/i,9117:/\bi think\b/i,
+  9050:/\bplease\b/i,9054:/\bwhere is\b/i,9056:/\bwhen is\b/i,9064:/\bdo you\b/i,
+  9063:/\bhow do you\b/i,9066:/\bis there\b/i,9068:/\bhow many\b/i,9069:/\bhow much\b/i,
+  9075:/\bi didn['’]t\b/i,9076:/\bdid you\b/i,9080:/\bi bought\b/i,9082:/\bi forgot to\b/i,
+  9089:/\bi['’]ll\b/i,9092:/\bi['’]m going to\b/i,9094:/\bare you going to\b/i,
+  9097:/\b(?:starts|leaves|opens|begins) at\b/i,9100:/\bi might\b/i,9104:/\bif\b|\bi['’]ll\b/gi,
+  9107:/\bi feel\b/i,9117:/\bi think\b/i,9125:/\bexcuse me\b/i,
  9120:/\bi prefer\b|\bto\b/gi,9126:/\bcould you please\b/i,9139:/\blet me know if\b/i,
- 9140:/\bbecause\b(?! of)/i,9141:/\bbecause of\b/i
+  9127:/\bwould you mind\b/i,9128:/\bdo you mind if\b/i,
+  9136:/\bi['’]m sorry for\b/i,9137:/\bthat['’]s all right\b/i,9138:/\bcould you clarify\b/i,
+  9140:/\bbecause\b(?! of)/i,9141:/\bbecause of\b/i,9148:/\bbut\b/i
 };
 let dialogueQueue=null;
 function releaseDialoguePlayer(){
@@ -96,7 +118,7 @@ function openDialogue(id,queued=false){
  stopSpeech();
  host.querySelector('audio')?.pause();
  host.innerHTML=(dialogue.audio?
-  `<div class="dialogue-play-status" role="status">${queued?`${dialogueQueue.index+1} / ${dialogueQueue.ids.length} · ${T('تشغيل كل المحادثات','Playing all conversations')}`:''}</div>
+  `<div class="dialogue-play-status" role="status">${queued?`${dialogueQueue.index+1} / ${dialogueQueue.ids.length} · ${dialogueQueue.label}`:''}</div>
   <audio controls preload="metadata" src="${H(dialogue.audio.path)}"></audio>${queued?`<div class="buttonrow">
   <button class="secondary" onclick="advanceDialogueQueue(-1)">${T('الحوار السابق','Previous conversation')}</button>
   <button class="secondary" onclick="advanceDialogueQueue(1)">${T('الحوار التالي','Next conversation')}</button>
@@ -115,10 +137,12 @@ function openDialogue(id,queued=false){
  }
  host.scrollIntoView({block:'start'});
 }
-function playAllDialogues(){
- const ids=(PILOT?.dialogues||[]).filter(d=>d.audio).map(d=>d.id);
+function playAllDialogues(filtered=false){
+ const rows=filtered?filteredDialogueEntries().map(entry=>entry.dialogue):(PILOT?.dialogues||[]);
+ const ids=rows.filter(dialogue=>dialogue?.audio).map(dialogue=>dialogue.id);
  if(!ids.length)return;
- dialogueQueue={ids,index:0};
+ const label=filtered?T('تشغيل نتائج البحث','Playing filtered results'):T('تشغيل كل المحادثات','Playing all conversations');
+ dialogueQueue={ids,index:0,label};
  openDialogue(ids[0],true);
 }
 function advanceDialogueQueue(delta){
@@ -126,7 +150,7 @@ function advanceDialogueQueue(delta){
  dialogueQueue.index=Math.max(0,dialogueQueue.index+delta);
  if(dialogueQueue.index>=dialogueQueue.ids.length){
   dialogueQueue=null;
-  $('.dialogue-play-status').textContent=T('اكتمل تشغيل المحادثات.','All conversations played.');
+  $('.dialogue-play-status').textContent=T('اكتمل تشغيل القائمة.','Playback complete.');
   return;
  }
  openDialogue(dialogueQueue.ids[dialogueQueue.index],true);
@@ -144,28 +168,132 @@ function jumpStandaloneDialogue(index){
 }
 function dialoguesPage(){
  return head(T('المحادثات','Conversations'),T('استمع إلى عنوان كل محادثة ثم إلى شخصين يستخدمان الأنماط في موقف واحد. يتغيّر المشهد مع الأدوار، ويمكنك فتح النص الكامل في أي وقت.','Hear each title, then listen to two people use patterns in context. The scene follows the turns, and the full transcript is always available.'))+
-  `<div class="toolbar"><button class="primary" onclick="playAllDialogues()">▷ ${T('شغّل كل المحادثات','Play all conversations')}</button>
-   <input type="search" id="dialogue-query" oninput="paintDialogueCatalog()" placeholder="${T('عنوان، موقف، أو نمط…','Title, situation, or pattern…')}" aria-label="${T('بحث المحادثات','Search conversations')}">
-   <select id="dialogue-category" onchange="paintDialogueCatalog()" aria-label="${T('تصنيف المحادثات','Conversation category')}">
-    <option value="">${T('كل التصنيفات','All categories')}</option>
-    ${Object.entries(dialogueCategories).map(([id,labels])=>`<option value="${id}">${T(...labels)}</option>`).join('')}</select></div>
-   <div id="dialogue-player"></div><div class="dialogue-catalog" id="dialogue-catalog"></div>`;
+  `<form class="panel dialogue-filters" onsubmit="event.preventDefault()" onreset="requestAnimationFrame(resetDialogueCatalog)">
+   <label class="dialogue-search">${T('البحث','Search')}<input type="search" id="dialogue-query" oninput="resetDialogueFilters()" placeholder="${T('عنوان، موقف، أو نمط…','Title, situation, or pattern…')}"></label>
+   ${dialogueSelect('category',T('الموقف','Situation'),T('كل المواقف','All situations'),dialogueCategories)}
+   ${dialogueSelect('purpose',T('هدف المحادثة','Speaking goal'),T('كل الأهداف','All goals'),dialoguePurposes)}
+   ${dialogueSelect('level',T('المستوى المقترح','Suggested level'),T('كل المستويات','All levels'),{A1:['A1','A1'],A2:['A2','A2'],B1:['B1','B1'],B2:['B2','B2']})}
+   ${dialogueSelect('status',T('الجاهزية','Availability'),T('المحادثات المتاحة','Available conversations'),{
+    audio:['مسجّلة','Recorded'],text:['نص فقط','Transcript only'],planned:['مواقف في خطة التوسّع','Planned situations']
+   },'resetDialogueCatalog()')}
+   <label>${T('النمط','Pattern')}<select id="dialogue-pattern" onchange="resetDialogueFilters()" dir="ltr"></select></label>
+   <button class="secondary" type="reset">${T('مسح الفلاتر','Reset filters')}</button>
+  </form>
+  <div class="buttonrow">
+   <button class="primary" id="dialogue-play-all" onclick="playAllDialogues()">▷ ${T('شغّل كل المحادثات','Play all conversations')}</button>
+   <button class="secondary" id="dialogue-play-filtered" onclick="playAllDialogues(true)">▷ ${T('شغّل النتائج المسجّلة','Play recorded results')}</button>
+  </div>
+  <div id="dialogue-player"></div>
+  <p id="dialogue-count" role="status"></p>
+  <div class="dialogue-catalog" id="dialogue-catalog"></div>
+  <div class="buttonrow" id="dialogue-pagination" hidden>
+   <button class="secondary" id="dialogue-prev-page" onclick="moveDialoguePage(-1)">${T('السابق','Previous')}</button>
+   <button class="secondary" id="dialogue-next-page" onclick="moveDialoguePage(1)">${T('التالي','Next')}</button>
+  </div>`;
+}
+function dialogueSelect(key,label,all,choices,onchange='resetDialogueFilters()'){
+ return `<label>${label}<select id="dialogue-${key}" onchange="${onchange}">
+  <option value="">${all}</option>${Object.entries(choices).map(([id,names])=>`<option value="${id}">${T(...names)}</option>`).join('')}
+ </select></label>`;
+}
+function dialogueEntries(){
+ const dialogues=new Map((PILOT?.dialogues||[]).map(dialogue=>[dialogue.id,dialogue]));
+ const plan=new Map((dialoguePlan?.entries||[]).map(entry=>[entry.id,entry]));
+ for(const dialogue of dialogues.values()){
+  if(!plan.has(dialogue.id))plan.set(dialogue.id,dialogue);
+ }
+ return [...plan.values()].map(entry=>{
+  const dialogue=dialogues.get(entry.id);
+  const patternIds=dialogue?dialogue.lines.flatMap(line=>line.patterns):entry.targets;
+  const status=dialogue?(dialogue.audio?'audio':'text'):'planned';
+  return {...entry,dialogue,status,patternIds:[...new Set(patternIds)]};
+ });
+}
+function dialogueStatusMatches(entry,status){
+ return status?entry.status===status:entry.status!=='planned';
+}
+function paintDialoguePatternOptions(){
+ const status=$('#dialogue-status').value;
+ const patternIds=new Set(dialogueEntries().filter(entry=>dialogueStatusMatches(entry,status)).flatMap(entry=>entry.patternIds));
+ const options=(PILOT?.patterns||[]).filter(pattern=>patternIds.has(pattern.id))
+  .sort((left,right)=>left.form.localeCompare(right.form,'en'));
+ $('#dialogue-pattern').innerHTML=`<option value="">${T('كل الأنماط','All patterns')}</option>`+
+  options.map(pattern=>`<option value="${pattern.id}">${H(pattern.form)}</option>`).join('');
+}
+function resetDialogueFilters(){
+ dialogueCatalogPage=0;
+ paintDialogueCatalog();
+}
+function resetDialogueCatalog(){
+ paintDialoguePatternOptions();
+ resetDialogueFilters();
+}
+function moveDialoguePage(delta){
+ dialogueCatalogPage+=delta;
+ paintDialogueCatalog();
+ $('#dialogue-count').scrollIntoView({block:'start'});
+}
+function normalizeDialogueSearch(value){
+ return value.toLowerCase().replace(/[\u064b-\u065f\u0670\u0640]/g,'')
+  .replace(/[أإآ]/g,'ا').replace(/’/g,"'");
+}
+function filteredDialogueEntries(){
+ const status=$('#dialogue-status').value;
+ const facets=['category','purpose','level'].map(key=>[key,$('#dialogue-'+key).value]);
+ const patternId=Number($('#dialogue-pattern').value);
+ const tokens=normalizeDialogueSearch($('#dialogue-query').value).trim().split(/\s+/).filter(Boolean);
+ const patterns=new Map((PILOT?.patterns||[]).map(pattern=>[pattern.id,pattern]));
+ return dialogueEntries().filter(entry=>{
+  if(!dialogueStatusMatches(entry,status))return false;
+  if(facets.some(([key,value])=>value&&entry[key]!==value))return false;
+  if(patternId&&!entry.patternIds.includes(patternId))return false;
+  if(!tokens.length)return true;
+  const forms=entry.patternIds.flatMap(id=>{
+   const pattern=patterns.get(id);
+   return pattern?[pattern.form,pattern.title]:[];
+  });
+  const text=normalizeDialogueSearch([
+   entry.ar,entry.en,entry.taskAr,entry.taskEn,
+   ...(dialogueCategories[entry.category]||[]),...(dialoguePurposes[entry.purpose]||[]),...forms,
+   ...(entry.dialogue?.lines||[]).flatMap(line=>[line.en,line.ar])
+  ].join(' '));
+  return tokens.every(token=>text.includes(token));
+ });
 }
 function paintDialogueCatalog(){
  const host=$('#dialogue-catalog');
  if(!host)return;
- const term=$('#dialogue-query').value.trim().toLowerCase(),category=$('#dialogue-category').value;
- const items=(PILOT?.dialogues||[]).filter(d=>{
-  const ids=new Set(d.lines.flatMap(l=>l.patterns));
-  const forms=PILOT.patterns.filter(p=>ids.has(p.id)).flatMap(p=>[p.form,p.title]);
-  return (!category||d.category===category)&&[d.ar,d.en,...(dialogueCategories[d.category]||[]),...forms].join(' ').toLowerCase().includes(term);
- });
- host.innerHTML=items.map(d=>{
-  const scene=PILOT.sentences.find(s=>s.id===d.lines[0].scene);
+ const entries=filteredDialogueEntries();
+ const totalPages=Math.max(1,Math.ceil(entries.length/dialoguesPerPage));
+ dialogueCatalogPage=Math.max(0,Math.min(dialogueCatalogPage,totalPages-1));
+ const offset=dialogueCatalogPage*dialoguesPerPage;
+ const pageLabel=totalPages>1?` · ${T('الصفحة','Page')} ${dialogueCatalogPage+1}/${totalPages}`:'';
+ const planned=dialoguePlan?.entries.filter(entry=>entry.targets&&!PILOT?.dialogues.some(d=>d.id===entry.id)).length||0;
+ const plannedLabel=planned?` · ${T(`${planned} موقفًا في خطة التوسّع`,`${planned} situations on the roadmap`)}`:'';
+ $('#dialogue-count').textContent=T(`${entries.length} نتيجة`,`${entries.length} results`)+pageLabel+plannedLabel;
+ $('#dialogue-pagination').hidden=totalPages===1;
+ $('#dialogue-prev-page').disabled=dialogueCatalogPage===0;
+ $('#dialogue-next-page').disabled=dialogueCatalogPage+1===totalPages;
+ $('#dialogue-play-all').disabled=!PILOT?.dialogues.some(dialogue=>dialogue.audio);
+ $('#dialogue-play-filtered').disabled=!entries.some(entry=>entry.dialogue?.audio);
+ if(!entries.length){
+  host.innerHTML=`<p class="panel">${PILOT?T('لا توجد نتائج لهذه الفلاتر. جرّب مسحها أو تغيير البحث.','No matches. Reset the filters or try a different search.'):T('جارٍ تحميل المحادثات…','Loading conversations…')}</p>`;
+  return;
+ }
+ const scenes=new Map((PILOT?.sentences||[]).map(row=>[row.id,row]));
+ host.innerHTML=entries.slice(offset,offset+dialoguesPerPage).map(entry=>{
+  const {dialogue,category,level,purpose}=entry;
+  const scene=scenes.get(dialogue?.lines[0].scene);
+  const meta=[T(...(dialogueCategories[category]||dialogueCategories.daily)),level,purpose&&T(...dialoguePurposes[purpose])].filter(Boolean).join(' · ');
+  const label=dialogue?.audio?T('مسجّلة','Recorded'):dialogue?T('نص متاح','Transcript available'):T('ضمن الخطة','Planned');
+  const action=dialogue?`<button class="secondary" onclick="openDialogue('${H(dialogue.id)}')">
+    ${dialogue.audio?T('استمع','Listen'):T('اقرأ النص','Read transcript')} ↗</button>`:
+   `<details><summary>${T('الأنماط المستهدفة','Target patterns')}</summary><div class="buttonrow">${dialoguePatterns(entry.patternIds)}</div></details>`;
   return `<article class="panel dialogue-cover">${scene?.image?pilotScene(scene):''}
-   <div><small>${T(...(dialogueCategories[d.category]||dialogueCategories.daily))} · ${d.lines.length}</small>
-   <h3>${H(T(d.ar,d.en))}</h3><button class="secondary" onclick="openDialogue('${H(d.id)}')">
-    ${d.audio?T('استمع','Listen'):T('اقرأ النص','Read transcript')} ↗</button></div></article>`;
+   <div><small>${H(meta)}</small><span class="chip dialogue-status">${label}</span>
+   <h3>${H(T(entry.ar,entry.en))}</h3>
+   ${entry.taskEn?`<p>${H(T(entry.taskAr,entry.taskEn))}</p>`:''}
+   ${action}</div></article>`;
  }).join('');
 }
 labels.dialogues='المحادثات';
@@ -180,8 +308,11 @@ render=function(){
  nav();
  $('#app').innerHTML=page==='dialogues'?dialoguesPage():comparisonsPage();
  if(page==='comparisons')paintComparisonSelection();
- if(page==='dialogues')paintDialogueCatalog();
+ if(page==='dialogues')resetDialogueCatalog();
  EP.decorate();
 };
-pilotReady.then(()=>{if(['dialogues','comparisons'].includes(page))render()});
+Promise.all([pilotReady,dialoguePlanReady]).then(([,plan])=>{
+ dialoguePlan=plan;
+ if(['dialogues','comparisons'].includes(page))render();
+});
 render();
