@@ -308,7 +308,10 @@ render=function(){
  if(route?.running)route.pause();
  nav();
  $('#app').innerHTML=page==='dialogues'?dialoguesPage():comparisonsPage();
- if(page==='comparisons')paintComparisonSelection();
+ if(page==='comparisons'){
+  paintComparisonSelection();
+  applyPatternsImageMode();
+ }
  if(page==='dialogues')resetDialogueCatalog();
  EP.decorate();
 };

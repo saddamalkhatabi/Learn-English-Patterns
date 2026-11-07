@@ -39,6 +39,7 @@ function comparisonsPage(){
    <label>${T('الصوت','Voice')} <select id="comparison-voice">
     <option value="alternate">${T('تناوب الصوتين','Alternate voices')}</option><option value="male">Adam</option><option value="female">Bella</option>
    </select></label>
+   ${patternsImageControls()}
   </div>
   <div class="buttonrow">
    <button class="primary" id="comparison-listen-all" onclick="startComparisonGuide('listen')">▷ ${T('استمع إلى المقارنات بالتتابع','Listen to comparisons in sequence')}</button>
@@ -235,6 +236,8 @@ function advanceComparisonGuide(delta){
  }
  guide.left=guide.delay;
  paintComparisonGuide();
+ const panel=$('#comparison-guide');
+ if(panel.getBoundingClientRect().top<0)panel.scrollIntoView({block:'start'});
  if(running)resumeComparisonGuide();
 }
 function updateComparisonGuide(){
