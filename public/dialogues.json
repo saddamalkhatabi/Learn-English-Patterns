@@ -211,5 +211,725 @@
         {"voice":"female","en":"I'll check the phone numbers tomorrow. You can leave those to me.","ar":"سأتحقق من أرقام الهواتف غدًا. يمكنك تركها لي.","patterns":[9089],"scene":"pattern-9089-06"},
         {"voice":"male","en":"Thanks. I don't have to wait to send the list, then.","ar":"شكرًا. إذن لست مضطرًا للانتظار قبل إرسال القائمة.","patterns":[9044],"scene":"pattern-9138-03"}
       ]
+    },
+    {
+      "id": "shoe-size", "ar": "مقاس الحذاء المناسب", "en": "Trying a different shoe size", "category": "shopping", "after": 4,
+      "lines": [
+        {"voice":"male","en":"Is there a larger size in these shoes?","ar":"هل يوجد مقاس أكبر من هذا الحذاء؟","patterns":[9066],"scene":"can-05","focus":[0,1]},
+        {"voice":"female","en":"Yes. I'll bring you the next size up.","ar":"نعم. سأحضر لك المقاس الأكبر مباشرةً.","patterns":[9089],"scene":"can-05","focus":[1]},
+        {"voice":"male","en":"Can I try these shoes on?","ar":"هل يمكنني أن أجرّب هذا الحذاء؟","patterns":[4],"scene":"can-05","focus":[0,1]},
+        {"voice":"female","en":"Of course. There's a bench by the mirror.","ar":"بالتأكيد. هناك مقعد بجانب المرآة.","patterns":[],"scene":"these-02","focus":[]},
+        {"voice":"male","en":"These fit much better. I'd like this pair, please.","ar":"هذا المقاس أنسب بكثير. أودّ شراء هذا الحذاء، من فضلك.","patterns":[109],"scene":"these-02","focus":[4,5]}
+      ]
+    },
+    {
+      "id": "fruit-for-guests", "ar": "فاكهة للضيوف", "en": "Fruit for the guests", "category": "shopping", "after": 9068,
+      "lines": [
+        {"voice":"male","en":"How many guests are coming?","ar":"كم ضيفًا سيأتي؟","patterns":[9068],"scene":"pattern-9155-01","focus":[0,1]},
+        {"voice":"female","en":"Six. These are the oranges we bought last week. We need a few more.","ar":"ستة. هذا البرتقال الذي اشتريناه الأسبوع الماضي. نحتاج إلى بعض البرتقال الإضافي.","patterns":[116],"scene":"pattern-9155-01","focus":[1,2]},
+        {"voice":"male","en":"How much are the oranges?","ar":"كم سعر البرتقال؟","patterns":[9069],"scene":"pattern-9120-05","focus":[0,1]},
+        {"voice":"female","en":"Two dollars a kilo. Let's get a kilo and put out the apples too.","ar":"دولاران للكيلوغرام. لنأخذ كيلوغرامًا ونقدّم التفاح أيضًا.","patterns":[6],"scene":"pattern-9120-05","focus":[4]}
+      ]
+    },
+    {
+      "id": "card-payment", "ar": "الدفع بالبطاقة", "en": "Paying by card", "category": "shopping", "after": 4,
+      "lines": [
+        {"voice":"male","en":"Can I pay by card?","ar":"هل يمكنني الدفع بالبطاقة؟","patterns":[4],"scene":"can-03","focus":[0,1]},
+        {"voice":"female","en":"Yes. Please tap your card here.","ar":"نعم. مرّر بطاقتك هنا من فضلك.","patterns":[9050],"scene":"can-03","focus":[1]},
+        {"voice":"male","en":"Thanks. I need a receipt for this purchase.","ar":"شكرًا. أحتاج إلى إيصال لهذه المشتريات.","patterns":[9041],"scene":"pattern-9126-11","focus":[1,2]},
+        {"voice":"female","en":"Let me print one for you.","ar":"دعني أطبع لك إيصالًا.","patterns":[9049],"scene":"pattern-9126-11","focus":[0,1]}
+      ]
+    },
+    {
+      "id": "bread-before-closing", "ar": "خبز قبل الإغلاق", "en": "Bread before closing", "category": "shopping", "after": 9066,
+      "lines": [
+        {"voice":"male","en":"Is there any fresh bread left?","ar":"هل بقي خبز طازج؟","patterns":[9066],"scene":"need-07","focus":[0,1]},
+        {"voice":"female","en":"There is one loaf left. Would you like me to put it aside?","ar":"بقي رغيف واحد. هل تحب أن أحتفظ به لك؟","patterns":[117],"scene":"need-07","focus":[0,1]},
+        {"voice":"male","en":"Yes, please. When is closing time?","ar":"نعم من فضلك. متى موعد الإغلاق؟","patterns":[9056],"scene":"know-06","focus":[2,3]},
+        {"voice":"female","en":"The shop closes at six. I'll keep it behind the counter until then.","ar":"يُغلق المتجر الساعة السادسة. سأحتفظ به خلف المنضدة حتى ذلك الوقت.","patterns":[9097],"scene":"know-06","focus":[0,1,2,3]}
+      ]
+    },
+    {
+      "id": "wrong-size-online", "ar": "وصل مقاس مختلف", "en": "The wrong size arrived", "category": "shopping", "after": 9080,
+      "lines": [
+        {"voice":"male","en":"I bought a jacket online, but the one that arrived is too small.","ar":"اشتريت سترة عبر الإنترنت، لكن التي وصلتني أصغر مما ينبغي.","patterns":[9080],"scene":"pattern-9080-12","focus":[0,1]},
+        {"voice":"female","en":"What size did you order?","ar":"ما المقاس الذي طلبته؟","patterns":[],"scene":"pattern-9080-12","focus":[]},
+        {"voice":"male","en":"A medium. I didn't order a small. Could you please check the order number?","ar":"طلبت مقاسًا متوسطًا. لم أطلب مقاسًا صغيرًا. هل يمكنك مراجعة رقم الطلب من فضلك؟","patterns":[9075,9126],"scene":"pattern-9126-11","focus":[2,3,7,8,9]},
+        {"voice":"female","en":"You're right. I'll arrange an exchange. Let me know if the return label doesn't arrive by email.","ar":"معك حق. سأرتب الاستبدال. أخبرني إذا لم تصلك بطاقة الإرجاع بالبريد الإلكتروني.","patterns":[9139],"scene":"pattern-9126-11","focus":[6,7,8,9]}
+      ]
+    },
+    {
+      "id": "charger-included", "ar": "هل الشاحن مرفق؟", "en": "Does it come with a charger?", "category": "shopping", "after": 9070,
+      "lines": [
+        {"voice":"male","en":"What is this port for?","ar":"ما وظيفة هذا المنفذ؟","patterns":[9053],"scene":"pattern-9070-05","focus":[0,1]},
+        {"voice":"female","en":"That's for charging. Both devices use the same kind of cable.","ar":"هذا للشحن. الجهازان يستخدمان النوع نفسه من الكابلات.","patterns":[],"scene":"pattern-9070-05","focus":[]},
+        {"voice":"male","en":"Which one is cheaper? How much is the smaller one?","ar":"أيهما أرخص؟ كم سعر الجهاز الأصغر؟","patterns":[9070,9069],"scene":"pattern-9070-05","focus":[0,1,4,5]},
+        {"voice":"female","en":"It's ninety dollars. The larger one is one hundred and ten.","ar":"سعره تسعون دولارًا. أما الأكبر فسعره مئة وعشرة دولارات.","patterns":[],"scene":"possess-02","focus":[]},
+        {"voice":"male","en":"Does the smaller one come with a charger?","ar":"هل يأتي الجهاز الأصغر مع شاحن؟","patterns":[9065],"scene":"possess-02","focus":[0,1,2,3,4]},
+        {"voice":"female","en":"Just a cable. I have a compatible charger here if you need one.","ar":"يأتي مع كابل فقط. لديّ شاحن متوافق هنا إن احتجت إليه.","patterns":[105],"scene":"possess-02","focus":[3,4]}
+      ]
+    },
+    {
+      "id": "parcel-pickup", "ar": "استلام طرد", "en": "Picking up a parcel", "category": "shopping", "after": 9125,
+      "lines": [
+        {"voice":"male","en":"Excuse me. I'd like to pick up a parcel.","ar":"عذرًا. أودّ استلام طرد.","patterns":[9125,3],"scene":"pattern-9037-05","focus":[0,1,2,3,4]},
+        {"voice":"female","en":"Who is the parcel for?","ar":"لمن هذا الطرد؟","patterns":[9055],"scene":"pattern-9037-05","focus":[0,1]},
+        {"voice":"male","en":"It's for Omar Ali. Here's the pickup code.","ar":"إنه لعمر علي. هذا رمز الاستلام.","patterns":[],"scene":"pattern-9037-05","focus":[]},
+        {"voice":"female","en":"Thank you. May I see your ID as well?","ar":"شكرًا. هل يمكنني الاطّلاع على بطاقة هويتك أيضًا؟","patterns":[9129],"scene":"pattern-9037-05","focus":[2,3]},
+        {"voice":"male","en":"Of course. Here you are.","ar":"بالطبع. تفضّلي.","patterns":[],"scene":"pattern-9037-05","focus":[]}
+      ]
+    },
+    {
+      "id": "printer-quote", "ar": "تسعيرة للطباعة", "en": "Getting a printing quote", "category": "shopping", "after": 9069,
+      "lines": [
+        {"voice":"male","en":"How much does it cost to print in black and white?","ar":"كم تكلف الطباعة بالأبيض والأسود؟","patterns":[9069],"scene":"got-07","focus":[0,1]},
+        {"voice":"female","en":"Ten cents per page. How many pages do you need?","ar":"عشرة سنتات للصفحة. كم صفحة تحتاج؟","patterns":[9068],"scene":"got-07","focus":[4,5]},
+        {"voice":"male","en":"Twenty. Could you please tell me whether I need to bring a USB drive?","ar":"عشرين صفحة. هل يمكنك إخباري إن كنت بحاجة إلى إحضار ذاكرة USB؟","patterns":[9126],"scene":"pattern-9044-09","focus":[1,2,3]},
+        {"voice":"female","en":"You don't have to bring one. Just email us the file and we'll print it for two dollars.","ar":"لست مضطرًا إلى إحضارها. أرسل الملف بالبريد الإلكتروني وسنطبعه مقابل دولارين.","patterns":[9044],"scene":"pattern-9044-09","focus":[0,1,2,3]}
+      ]
+    },
+    {
+      "id": "faulty-kettle", "ar": "غلاية لا تعمل", "en": "A kettle that stopped working", "category": "shopping", "after": 9076,
+      "lines": [
+        {"voice":"male","en":"Did you try plugging the kettle into another outlet?","ar":"هل جرّبت توصيل الغلاية بمقبس آخر؟","patterns":[9076],"scene":"pattern-9063-08","focus":[0,1]},
+        {"voice":"female","en":"I did, but it still wouldn't turn on. I didn't try opening it.","ar":"نعم، لكنها لم تعمل. لم أحاول فتحها.","patterns":[9075],"scene":"pattern-9063-08","focus":[8,9]},
+        {"voice":"male","en":"I'm sorry for the trouble. I'll ask our technician to check it this afternoon.","ar":"أعتذر عن الإزعاج. سأطلب من الفني فحصها بعد ظهر اليوم.","patterns":[9136,9089],"scene":"pattern-9063-08","focus":[0,1,2,5]},
+        {"voice":"female","en":"Thank you. Here's my number. Please call me before replacing anything.","ar":"شكرًا. هذا رقمي. اتّصل بي من فضلك قبل استبدال أي قطعة.","patterns":[],"scene":"pattern-9063-08","focus":[]}
+      ]
+    },
+    {
+      "id": "gift-budget", "ar": "هدية ضمن الميزانية", "en": "Choosing a gift on a budget", "category": "shopping", "after": 107,
+      "lines": [
+        {"voice":"male","en":"I want a gift for my sister. I can spend fifteen dollars.","ar":"أريد هدية لأختي. يمكنني إنفاق خمسة عشر دولارًا.","patterns":[107],"scene":"want-noun-03","focus":[0,1]},
+        {"voice":"female","en":"Which one would she use more, a notebook or a book?","ar":"أيهما ستستخدم أكثر، دفترًا أم كتابًا؟","patterns":[9070],"scene":"want-noun-03","focus":[0,1]},
+        {"voice":"male","en":"I usually prefer notebooks to books as gifts, but she reads every night.","ar":"أفضّل عادةً الدفاتر على الكتب كهدايا، لكنها تقرأ كل ليلة.","patterns":[9120,9148],"scene":"pattern-9120-05","focus":[2,4,8]},
+        {"voice":"female","en":"Then this short novel might suit her. It costs twelve dollars.","ar":"إذن قد تناسبها هذه الرواية القصيرة. سعرها اثنا عشر دولارًا.","patterns":[],"scene":"pattern-9120-05","focus":[]}
+      ]
+    },
+    {
+      "id": "tailor-pickup", "ar": "موعد استلام الثوب", "en": "Picking up a garment", "category": "shopping", "after": 9056,
+      "lines": [
+        {"voice":"male","en":"When is the earliest I can pick up the trousers?","ar":"ما أقرب وقت يمكنني فيه استلام البنطال؟","patterns":[9056],"scene":"pattern-9080-12","focus":[0,1]},
+        {"voice":"female","en":"I can finish the hem tomorrow afternoon.","ar":"أستطيع إنهاء تعديل الحاشية غدًا بعد الظهر.","patterns":[],"scene":"pattern-9080-12","focus":[]},
+        {"voice":"male","en":"As soon as they're ready, I'll come by.","ar":"سأمرّ فور أن يصبح البنطال جاهزًا.","patterns":[9106,9089],"scene":"pattern-9106-09","focus":[0,1,2,5]},
+        {"voice":"female","en":"I'll text you before five. Let me know if you need to come the following morning instead.","ar":"سأرسل لك رسالة قبل الخامسة. أخبرني إن كنت تحتاج إلى الحضور صباح اليوم التالي بدلًا من ذلك.","patterns":[9139],"scene":"pattern-9106-09","focus":[5,6,7,8]}
+      ]
+    },
+    {
+      "id": "bus-stop-directions", "ar": "أين موقف الحافلة؟", "en": "Directions to the bus stop", "category": "travel", "after": 9054,
+      "lines": [
+        {"voice":"male","en":"Excuse me, where is the bus stop?","ar":"عذرًا، أين موقف الحافلة؟","patterns":[9125,9054],"scene":"pattern-9054-03","focus":[0,1,2,3]},
+        {"voice":"female","en":"See the building across the road? That is the school.","ar":"هل ترى المبنى المقابل؟ تلك هي المدرسة.","patterns":[102],"scene":"pattern-9054-03","focus":[6,7]},
+        {"voice":"male","en":"Should I cross at the lights?","ar":"هل أعبر عند الإشارة؟","patterns":[],"scene":"there-is-05","focus":[]},
+        {"voice":"female","en":"Yes. There is a bus stop just past the school gate.","ar":"نعم. يوجد موقف للحافلة بعد بوابة المدرسة مباشرةً.","patterns":[117],"scene":"there-is-05","focus":[1,2]}
+      ]
+    },
+    {
+      "id": "direct-airport-train", "ar": "قطار مباشر للمطار", "en": "A direct train to the airport", "category": "travel", "after": 9067,
+      "lines": [
+        {"voice":"male","en":"Are there any direct trains to the airport?","ar":"هل توجد قطارات مباشرة إلى المطار؟","patterns":[9067],"scene":"pattern-9125-07","focus":[0,1]},
+        {"voice":"female","en":"Yes. The next one leaves at seven.","ar":"نعم. يغادر القطار التالي في السابعة.","patterns":[9097],"scene":"pattern-9125-07","focus":[1,2,3,4,5]},
+        {"voice":"male","en":"Does it leave from this platform?","ar":"هل يغادر من هذا الرصيف؟","patterns":[9065],"scene":"possess-11","focus":[0,1,2]},
+        {"voice":"female","en":"No. You have to go to platform three, but you stay on that train all the way.","ar":"لا. عليك الذهاب إلى الرصيف الثالث، ثم تبقى في القطار نفسه حتى تصل.","patterns":[2],"scene":"possess-11","focus":[1,2,3]}
+      ]
+    },
+    {
+      "id": "seat-on-train", "ar": "مقعد شاغر في القطار", "en": "A seat on the train", "category": "travel", "after": 9067,
+      "lines": [
+        {"voice":"male","en":"Are there any free seats in this carriage?","ar":"هل توجد مقاعد شاغرة في هذه العربة؟","patterns":[9067],"scene":"pattern-9067-01","focus":[0,1]},
+        {"voice":"female","en":"There are two by the window.","ar":"يوجد مقعدان بجانب النافذة.","patterns":[118],"scene":"pattern-9067-01","focus":[0,1]},
+        {"voice":"male","en":"Can I put my bag on the rack?","ar":"هل يمكنني وضع حقيبتي على الرف؟","patterns":[4],"scene":"pattern-9067-01","focus":[0,1]},
+        {"voice":"female","en":"Sure. Do you mind if I take the window seat?","ar":"بالتأكيد. هل تمانع أن أجلس عند النافذة؟","patterns":[9128],"scene":"pattern-9087-12","focus":[1,2,3,4,5]},
+        {"voice":"male","en":"Not at all. I'll take the aisle seat.","ar":"لا أمانع. سأجلس بجانب الممر.","patterns":[],"scene":"pattern-9087-12","focus":[]}
+      ]
+    },
+    {
+      "id": "hotel-checkin", "ar": "التسجيل في الفندق", "en": "Checking in at the hotel", "category": "travel", "after": 105,
+      "lines": [
+        {"voice":"male","en":"Good evening. My name is Omar Ali, and I have a reservation.","ar":"مساء الخير. اسمي عمر علي ولديّ حجز.","patterns":[113,105],"scene":"need-09","focus":[2,3,4,8,9]},
+        {"voice":"female","en":"Welcome. May I see your passport, please?","ar":"أهلًا بك. هل يمكنني الاطّلاع على جواز سفرك من فضلك؟","patterns":[9129],"scene":"need-09","focus":[1,2]},
+        {"voice":"male","en":"Of course. Where is the elevator?","ar":"بالطبع. أين المصعد؟","patterns":[9054],"scene":"pattern-9108-05","focus":[2,3]},
+        {"voice":"female","en":"Just past the lobby on your right. Your room is on the second floor.","ar":"بعد البهو مباشرةً على يمينك. غرفتك في الطابق الثاني.","patterns":[],"scene":"pattern-9108-05","focus":[]}
+      ]
+    },
+    {
+      "id": "bus-or-walk", "ar": "الحافلة أم المشي؟", "en": "Taking the bus or walking", "category": "travel", "after": 10,
+      "lines": [
+        {"voice":"male","en":"How much is the bus fare?","ar":"كم أجرة الحافلة؟","patterns":[9069],"scene":"lets-05","focus":[0,1]},
+        {"voice":"female","en":"Two dollars. It takes ten minutes to get there by bus.","ar":"دولاران. يستغرق الوصول بالحافلة عشر دقائق.","patterns":[10],"scene":"lets-05","focus":[2,3]},
+        {"voice":"male","en":"I prefer walking to taking the bus if we have time.","ar":"أفضّل المشي على ركوب الحافلة إن كان لدينا وقت.","patterns":[9120],"scene":"pattern-9054-03","focus":[0,1,3]},
+        {"voice":"female","en":"We've got half an hour. Let's walk along the river.","ar":"لدينا نصف ساعة. لنمشِ بمحاذاة النهر.","patterns":[6],"scene":"pattern-9054-03","focus":[5]}
+      ]
+    },
+    {
+      "id": "wrong-gate", "ar": "تغيّر رقم البوابة", "en": "A gate change", "category": "travel", "after": 9066,
+      "lines": [
+        {"voice":"male","en":"Is there a departure screen near here?","ar":"هل توجد شاشة للمغادرة بالقرب من هنا؟","patterns":[9066],"scene":"pattern-9096-09","focus":[0,1]},
+        {"voice":"female","en":"There's one by the stairs. Do you know where your flight is boarding?","ar":"توجد شاشة عند الدرج. هل تعرف من أي بوابة يبدأ صعود ركّاب رحلتك؟","patterns":[12],"scene":"pattern-9096-09","focus":[5,6,7,8]},
+        {"voice":"male","en":"I didn't see the gate change on my phone. It still says twelve.","ar":"لم أرَ إشعار تغيير البوابة على هاتفي. ما زال يعرض البوابة الثانية عشرة.","patterns":[9075],"scene":"pattern-9160-05","focus":[0,1]},
+        {"voice":"female","en":"They changed the gate, so you need to go to twenty. It's just down this hall.","ar":"غيّروا البوابة، لذا عليك الذهاب إلى البوابة العشرين. إنها في نهاية هذا الممر.","patterns":[9142],"scene":"pattern-9160-05","focus":[4]}
+      ]
+    },
+    {
+      "id": "two-tickets", "ar": "تذكرتان للعبّارة", "en": "Two ferry tickets", "category": "travel", "after": 109,
+      "lines": [
+        {"voice":"male","en":"I'd like two tickets for the ferry, please.","ar":"أودّ تذكرتين للعبّارة من فضلك.","patterns":[109],"scene":"pattern-9097-05","focus":[0,1]},
+        {"voice":"female","en":"For today or tomorrow?","ar":"لليوم أم للغد؟","patterns":[],"scene":"pattern-9097-05","focus":[]},
+        {"voice":"male","en":"Tomorrow. I want seats together if possible. How much are the tickets?","ar":"للغد. أريد مقعدين متجاورين إن أمكن. كم سعر التذكرتين؟","patterns":[107,9069],"scene":"pattern-9097-05","focus":[1,2,7,8]},
+        {"voice":"female","en":"Eight dollars each. I have two seats together by the window.","ar":"ثمانية دولارات للتذكرة. لديّ مقعدان متجاوران بجانب النافذة.","patterns":[],"scene":"possess-11","focus":[]},
+        {"voice":"male","en":"Perfect. When is the departure?","ar":"ممتاز. متى موعد الانطلاق؟","patterns":[9056],"scene":"possess-11","focus":[1,2]},
+        {"voice":"female","en":"The ferry leaves at noon tomorrow.","ar":"تنطلق العبّارة غدًا عند الظهر.","patterns":[9097],"scene":"possess-11","focus":[0,1,2,3]}
+      ]
+    },
+    {
+      "id": "calling-a-driver", "ar": "الاتفاق مع السائق", "en": "Arranging a pickup", "category": "travel", "after": 9054,
+      "lines": [
+        {"voice":"male","en":"Where is the pickup point?","ar":"أين نقطة الالتقاء؟","patterns":[9054],"scene":"pattern-9096-09","focus":[0,1]},
+        {"voice":"female","en":"It's outside the main entrance. Could you please wait near the blue sign?","ar":"إنها خارج المدخل الرئيسي. هل يمكنك الانتظار عند اللافتة الزرقاء من فضلك؟","patterns":[9126],"scene":"pattern-9096-09","focus":[5,6,7]},
+        {"voice":"male","en":"Sure. I'm meeting my brother at the airport at six, so I need to leave by five.","ar":"بالتأكيد. سألتقي بأخي في المطار الساعة السادسة، لذا أحتاج إلى المغادرة بحلول الخامسة.","patterns":[9096],"scene":"pattern-9089-03","focus":[1,2]},
+        {"voice":"female","en":"When I get there, I'll call you. I should be at the sign by five.","ar":"سأتصل بك عندما أصل. يُفترض أن أكون عند اللافتة بحلول الخامسة.","patterns":[9105,9089],"scene":"pattern-9089-03","focus":[0,1,2,3,4]}
+      ]
+    },
+    {
+      "id": "map-without-signal", "ar": "خريطة بلا اتصال", "en": "Using a map without a signal", "category": "travel", "after": 9036,
+      "lines": [
+        {"voice":"male","en":"I can't load the map. There's no signal here.","ar":"لا أستطيع تحميل الخريطة. لا توجد إشارة هنا.","patterns":[9036],"scene":"lets-05","focus":[0,1]},
+        {"voice":"female","en":"I can explain the route without a map. We turn left at the next crossing.","ar":"أستطيع شرح الطريق من دون خريطة. ننعطف يسارًا عند التقاطع التالي.","patterns":[9035],"scene":"lets-05","focus":[0,1]},
+        {"voice":"male","en":"Let me write that down before we move.","ar":"دعني أدوّن ذلك قبل أن نتحرّك.","patterns":[9049],"scene":"pattern-9035-06","focus":[0,1]},
+        {"voice":"female","en":"If we see the library, I'll know we're on the right road.","ar":"إذا رأينا المكتبة، فسأعرف أننا على الطريق الصحيح.","patterns":[9104],"scene":"pattern-9035-06","focus":[0,5]}
+      ]
+    },
+    {
+      "id": "bag-at-station", "ar": "الحقيبة في المحطة", "en": "A bag at the station", "category": "travel", "after": 106,
+      "lines": [
+        {"voice":"male","en":"Which one is your bag?","ar":"أيّ واحدة هي حقيبتك؟","patterns":[9070],"scene":"pattern-9070-02","focus":[0,1]},
+        {"voice":"female","en":"I've got a blue bag with a gray strap.","ar":"لديّ حقيبة زرقاء بحزام رمادي.","patterns":[106],"scene":"pattern-9070-02","focus":[0,1]},
+        {"voice":"male","en":"This is the one we found near the platform. Does it look familiar?","ar":"هذه هي الحقيبة التي وجدناها قرب الرصيف. هل تبدو مألوفة لك؟","patterns":[5],"scene":"pattern-9070-02","focus":[0,1]},
+        {"voice":"female","en":"Yes. The bag that I left has a name tag inside. Could you check it?","ar":"نعم. الحقيبة التي تركتها فيها بطاقة اسم من الداخل. هل يمكنك التحقق منها؟","patterns":[9165],"scene":"that-12","focus":[1,2,3,4,5]},
+        {"voice":"male","en":"It says Omar Ali. You can take it now.","ar":"مكتوب عليها عمر علي. يمكنك أخذها الآن.","patterns":[],"scene":"that-12","focus":[]}
+      ]
+    },
+    {
+      "id": "delay-announcement", "ar": "إعلان التأخير", "en": "Understanding a delay announcement", "category": "travel", "after": 9138,
+      "lines": [
+        {"voice":"male","en":"Could you clarify what the announcement said?","ar":"هل يمكنك توضيح ما جاء في الإعلان؟","patterns":[9138],"scene":"pattern-9123-05","focus":[0,1,2]},
+        {"voice":"female","en":"The train is delayed because of a signal problem.","ar":"تأخر القطار بسبب عطل في الإشارة.","patterns":[9141],"scene":"pattern-9123-05","focus":[4,5]},
+        {"voice":"male","en":"Could you tell me whether my ticket is valid on the next train?","ar":"هل يمكنك إخباري إن كانت تذكرتي صالحة للقطار التالي؟","patterns":[9163],"scene":"possess-11","focus":[0,1,2,3,4]},
+        {"voice":"female","en":"Yes. This train won't run, so we'll accept your ticket on the next one.","ar":"نعم. لن يسير هذا القطار، لذلك سنقبل تذكرتك على القطار التالي.","patterns":[9142],"scene":"possess-11","focus":[5]}
+      ]
+    },
+    {
+      "id": "early-alarm", "ar": "منبّه الصباح", "en": "An early alarm", "category": "daily", "after": 9017,
+      "lines": [
+        {"voice":"male","en":"I wake up at six. What time does your alarm go off?","ar":"أستيقظ الساعة السادسة. متى يرنّ منبّهك؟","patterns":[9017],"scene":"pattern-9017-04","focus":[0,1,2]},
+        {"voice":"female","en":"At six too, but I get up as soon as it rings.","ar":"في السادسة أيضًا، لكنني أنهض من السرير فور أن يرنّ.","patterns":[9018],"scene":"pattern-9017-04","focus":[4,5,6]},
+        {"voice":"male","en":"I usually stay in bed for ten more minutes.","ar":"أبقى عادةً في السرير عشر دقائق إضافية.","patterns":[9023],"scene":"pattern-9018-05","focus":[0,1]},
+        {"voice":"female","en":"I take the bus to work every day, so I can't do that.","ar":"أذهب إلى العمل بالحافلة كل يوم، لذلك لا أستطيع فعل ذلك.","patterns":[9031],"scene":"pattern-9018-05","focus":[0,1,2,3,4,5,6,7]}
+      ]
+    },
+    {
+      "id": "before-school", "ar": "قبل الخروج إلى المدرسة", "en": "Before leaving for school", "category": "daily", "after": 9019,
+      "lines": [
+        {"voice":"male","en":"What do you do first in the morning?","ar":"ما أول شيء تفعله في الصباح؟","patterns":[9019],"scene":"pattern-9020-01","focus":[5,6,7]},
+        {"voice":"female","en":"I brush my teeth first. Then I get dressed.","ar":"أنظّف أسناني أولًا، ثم أرتدي ملابسي.","patterns":[9020],"scene":"pattern-9020-01","focus":[0,1,2,3]},
+        {"voice":"male","en":"Do you eat at home or on the way to school?","ar":"هل تأكل في البيت أم في الطريق إلى المدرسة؟","patterns":[],"scene":"pattern-9021-05","focus":[]},
+        {"voice":"female","en":"I have breakfast at home. Before I leave, I check my bag.","ar":"أتناول الفطور في البيت. وقبل أن أخرج أتفقد حقيبتي.","patterns":[9021,9029],"scene":"pattern-9021-05","focus":[0,1,2,5,6,7]}
+      ]
+    },
+    {
+      "id": "after-work", "ar": "ماذا تفعل بعد العمل؟", "en": "After work", "category": "daily", "after": 9030,
+      "lines": [
+        {"voice":"male","en":"What do you do after work?","ar":"ماذا تفعل بعد العمل؟","patterns":[9059],"scene":"pattern-9022-02","focus":[0,1,2,3]},
+        {"voice":"female","en":"After I finish work, I go home and change clothes.","ar":"بعد أن أنتهي من العمل، أعود إلى البيت وأغيّر ملابسي.","patterns":[9030],"scene":"pattern-9022-02","focus":[0,1,2,3]},
+        {"voice":"male","en":"Do you stay home for the rest of the evening?","ar":"هل تبقى في البيت بقية المساء؟","patterns":[],"scene":"pattern-9026-01","focus":[]},
+        {"voice":"female","en":"I sometimes go for a walk. On Thursdays, I go to the library.","ar":"أخرج أحيانًا للمشي. وأذهب إلى المكتبة يوم الخميس.","patterns":[9026,9022],"scene":"pattern-9026-01","focus":[0,1,8,9,10]}
+      ]
+    },
+    {
+      "id": "weekend-sport", "ar": "رياضة نهاية الأسبوع", "en": "Weekend exercise", "category": "daily", "after": 9034,
+      "lines": [
+        {"voice":"male","en":"When do you go running?","ar":"متى تخرج للركض؟","patterns":[9061],"scene":"pattern-9034-11","focus":[0,1,2]},
+        {"voice":"female","en":"On weekends, I often run before breakfast.","ar":"في عطلة نهاية الأسبوع أركض كثيرًا قبل الفطور.","patterns":[9034,9025],"scene":"pattern-9034-11","focus":[0,1,2,3]},
+        {"voice":"male","en":"Why do you go so early?","ar":"لماذا تخرج مبكرًا هكذا؟","patterns":[9062],"scene":"pattern-9025-01","focus":[0,1,2]},
+        {"voice":"female","en":"It's quieter. I never run at noon because the park is too hot.","ar":"المكان أهدأ. لا أركض أبدًا وقت الظهيرة لأن الحديقة تكون شديدة الحرّ.","patterns":[9027],"scene":"pattern-9025-01","focus":[2,3]}
+      ]
+    },
+    {
+      "id": "night-routine", "ar": "الاستعداد للنوم", "en": "Getting ready for bed", "category": "daily", "after": 9032,
+      "lines": [
+        {"voice":"male","en":"What do you do at night before bed?","ar":"ماذا تفعل في الليل قبل النوم؟","patterns":[9032],"scene":"pattern-9029-11","focus":[4,5]},
+        {"voice":"female","en":"I always set my alarm first. Then I read a little.","ar":"أضبط المنبّه دائمًا أولًا، ثم أقرأ قليلًا.","patterns":[9024],"scene":"pattern-9029-11","focus":[0,1]},
+        {"voice":"male","en":"Do you finish the book in one evening?","ar":"هل تنهي الكتاب في أمسية واحدة؟","patterns":[],"scene":"pattern-9033-01","focus":[]},
+        {"voice":"female","en":"No. It's usually quiet by nine, so I go to bed then.","ar":"لا. يسود الهدوء عادةً بحلول التاسعة، فأذهب للنوم عندها.","patterns":[104,9033],"scene":"pattern-9033-01","focus":[1,3,7,8,9,10]}
+      ]
+    },
+    {
+      "id": "breakfast-choices", "ar": "اختيار الفطور", "en": "Choosing breakfast", "category": "daily", "after": 9028,
+      "lines": [
+        {"voice":"male","en":"Would you like eggs or oatmeal for breakfast?","ar":"هل تودّ البيض أم الشوفان للفطور؟","patterns":[9051],"scene":"pattern-9021-09","focus":[0,1,2]},
+        {"voice":"female","en":"I like eggs, but I don't like oatmeal.","ar":"أحبّ البيض، لكنني لا أحبّ الشوفان.","patterns":[111,112],"scene":"pattern-9021-09","focus":[0,1,4,5,6]},
+        {"voice":"male","en":"Do you want any fruit with the eggs?","ar":"هل تريد بعض الفاكهة مع البيض؟","patterns":[],"scene":"pattern-9108-12","focus":[]},
+        {"voice":"female","en":"Yes, please. I eat an apple most mornings.","ar":"نعم من فضلك. آكل تفاحة في معظم الصباحات.","patterns":[9028],"scene":"pattern-9108-12","focus":[2,3]}
+      ]
+    },
+    {
+      "id": "find-the-key", "ar": "البحث عن المفتاح", "en": "Looking for the key", "category": "daily", "after": 9054,
+      "lines": [
+        {"voice":"male","en":"Where is the key to the front door?","ar":"أين مفتاح الباب الرئيسي؟","patterns":[9054],"scene":"managed-02","focus":[0,1]},
+        {"voice":"female","en":"I saw it beside your notebook this morning.","ar":"رأيته بجانب دفترك هذا الصباح.","patterns":[9078],"scene":"managed-02","focus":[0,1]},
+        {"voice":"male","en":"I've got the notebook here, but the key isn't under it.","ar":"الدفتر معي هنا، لكن المفتاح ليس تحته.","patterns":[106],"scene":"pattern-9082-11","focus":[0,1]},
+        {"voice":"female","en":"Wait. That is your key on the hook by the door.","ar":"لحظة. ذلك مفتاحك على العلّاقة بجانب الباب.","patterns":[102],"scene":"pattern-9082-11","focus":[1,2]}
+      ]
+    },
+    {
+      "id": "lend-a-pen", "ar": "استعارة قلم", "en": "Borrowing a pen", "category": "daily", "after": 9064,
+      "lines": [
+        {"voice":"male","en":"Do you have a pen I could use?","ar":"هل لديك قلم يمكنني استخدامه؟","patterns":[9064],"scene":"can-04","focus":[0,1]},
+        {"voice":"female","en":"Yes, I have a spare blue one.","ar":"نعم، لديّ قلم أزرق إضافي.","patterns":[105],"scene":"can-04","focus":[1,2]},
+        {"voice":"male","en":"Can I borrow it to fill in this form?","ar":"هل يمكنني استعارته لملء هذه الاستمارة؟","patterns":[4],"scene":"can-04","focus":[0,1]},
+        {"voice":"female","en":"Sure. Here you are.","ar":"بالتأكيد. تفضّل.","patterns":[],"scene":"pattern-9128-03","focus":[]},
+        {"voice":"male","en":"Thank you. I'll give it back in a minute.","ar":"شكرًا. سأعيده لك بعد دقيقة.","patterns":[],"scene":"pattern-9128-03","focus":[]},
+        {"voice":"female","en":"You're welcome. Take your time.","ar":"على الرحب والسعة. خذ وقتك.","patterns":[9135],"scene":"pattern-9128-03","focus":[0,1]}
+      ]
+    },
+    {
+      "id": "window-or-fan", "ar": "نافذة أم مروحة؟", "en": "The window or the fan?", "category": "daily", "after": 9039,
+      "lines": [
+        {"voice":"male","en":"Is it okay if I open the window? It's warm in here.","ar":"هل تمانعين أن أفتح النافذة؟ الجو دافئ هنا.","patterns":[9039],"scene":"pattern-9039-01","focus":[0,1,2,3]},
+        {"voice":"female","en":"I think the street is too noisy. Would you mind turning on the fan instead?","ar":"أظن أن ضوضاء الشارع مرتفعة. هل يمكنك تشغيل المروحة بدلًا من ذلك؟","patterns":[9117,9127],"scene":"pattern-9039-01","focus":[0,1,7,8,9]},
+        {"voice":"male","en":"That's fine. I prefer a little noise from the fan to the traffic outside.","ar":"لا بأس. أفضّل صوت المروحة الخفيف على ضوضاء السيارات في الخارج.","patterns":[9120],"scene":"pattern-9126-02","focus":[2,3,10]},
+        {"voice":"female","en":"Great. The low setting should be enough.","ar":"رائع. يفترض أن تكفي السرعة المنخفضة.","patterns":[],"scene":"pattern-9126-02","focus":[]}
+      ]
+    },
+    {
+      "id": "dinner-ingredients", "ar": "مكونات العشاء", "en": "Ingredients for dinner", "category": "daily", "after": 118,
+      "lines": [
+        {"voice":"male","en":"How many people are we cooking for?","ar":"كم شخصًا نُعدّ العشاء لهم؟","patterns":[9068],"scene":"lets-04","focus":[0,1]},
+        {"voice":"female","en":"Six. There are four potatoes in the cupboard.","ar":"ستة. توجد أربع حبّات بطاطس في الخزانة.","patterns":[118],"scene":"lets-04","focus":[1,2]},
+        {"voice":"male","en":"I need two more for the soup.","ar":"أحتاج إلى حبّتين إضافيتين للحساء.","patterns":[9041],"scene":"pattern-9081-06","focus":[0,1]},
+        {"voice":"female","en":"Let's get a small bag of potatoes and use the rest tomorrow.","ar":"لنشترِ كيسًا صغيرًا من البطاطس ونستخدم ما يتبقى غدًا.","patterns":[6],"scene":"pattern-9081-06","focus":[0]}
+      ]
+    },
+    {
+      "id": "first-aid-supplies", "ar": "مستلزمات الإسعافات الأولية", "en": "First-aid supplies", "category": "health", "after": 9053,
+      "lines": [
+        {"voice":"male","en":"What is in that small red bag?","ar":"ماذا يوجد في تلك الحقيبة الحمراء الصغيرة؟","patterns":[9053],"scene":"pattern-9054-06","focus":[0,1]},
+        {"voice":"female","en":"Just a few supplies for the class.","ar":"بعض المستلزمات للصفّ فحسب.","patterns":[],"scene":"pattern-9054-06","focus":[]},
+        {"voice":"male","en":"Where is the first-aid kit, then?","ar":"أين حقيبة الإسعافات الأولية إذن؟","patterns":[9054],"scene":"pattern-9054-06","focus":[0,1]},
+        {"voice":"female","en":"There is one in the cupboard by the door.","ar":"توجد واحدة في الخزانة بجانب الباب.","patterns":[117],"scene":"pattern-9126-05","focus":[0,1]},
+        {"voice":"male","en":"Could you please bring it to the desk?","ar":"هل يمكنك إحضارها إلى المكتب من فضلك؟","patterns":[9126],"scene":"pattern-9126-05","focus":[0,1,2]}
+      ]
+    },
+    {
+      "id": "class-introduction", "ar": "تعارف في أول درس", "en": "Introductions on the first day", "category": "study", "after": 113,
+      "lines": [
+        {"voice":"male","en":"Hi. My name is Omar. What's your name?","ar":"مرحبًا. اسمي عمر. ما اسمك؟","patterns":[113,114],"scene":"am-01","focus":[1,2,3,5,6,7]},
+        {"voice":"female","en":"I'm Sara. I'm a new student here.","ar":"أنا سارة. أنا طالبة جديدة هنا.","patterns":[103],"scene":"am-01","focus":[2]},
+        {"voice":"male","en":"So am I. Who is the woman by the board?","ar":"وأنا أيضًا. من المرأة الواقفة بجانب السبورة؟","patterns":[9055],"scene":"that-08","focus":[3,4]},
+        {"voice":"female","en":"That's our English teacher. Class is about to start.","ar":"تلك معلّمة الإنجليزية. سيبدأ الدرس بعد قليل.","patterns":[],"scene":"that-08","focus":[]}
+      ]
+    },
+    {
+      "id": "repeat-instructions", "ar": "إعادة التعليمات", "en": "Asking for instructions again", "category": "study", "after": 9126,
+      "lines": [
+        {"voice":"male","en":"Could you please repeat the last instruction?","ar":"هل يمكنك إعادة آخر تعليمة من فضلك؟","patterns":[9126],"scene":"pattern-9126-04","focus":[0,1,2]},
+        {"voice":"female","en":"Sure. Write two examples, then exchange your paper with a partner.","ar":"بالتأكيد. اكتب مثالين، ثم تبادل ورقتك مع زميل.","patterns":[],"scene":"pattern-9126-04","focus":[]},
+        {"voice":"male","en":"Could you clarify which part we check for each other?","ar":"هل يمكنك توضيح الجزء الذي يراجعه كل منا للآخر؟","patterns":[9138],"scene":"pattern-9126-04","focus":[0,1,2]},
+        {"voice":"female","en":"Let me show you. Check that the verb comes after the subject.","ar":"دعيني أريك. تحقّقي من أن الفعل يأتي بعد الفاعل.","patterns":[9049],"scene":"pattern-9138-03","focus":[0,1]},
+        {"voice":"male","en":"Thank you for showing me. I'll check the word order first.","ar":"شكرًا لأنك أريتني. سأتحقق من ترتيب الكلمات أولًا.","patterns":[9133],"scene":"pattern-9138-03","focus":[0,1,2]}
+      ]
+    },
+    {
+      "id": "quiet-study-place", "ar": "مكان مناسب للمذاكرة", "en": "Finding a place to study", "category": "study", "after": 9041,
+      "lines": [
+        {"voice":"male","en":"I need a quiet place to study. Is there a library near campus?","ar":"أحتاج إلى مكان هادئ للمذاكرة. هل توجد مكتبة قرب الجامعة؟","patterns":[9041,9066],"scene":"pattern-9041-05","focus":[0,1,7,8]},
+        {"voice":"female","en":"Yes. There is a small library behind the main building.","ar":"نعم. توجد مكتبة صغيرة خلف المبنى الرئيسي.","patterns":[117],"scene":"pattern-9041-05","focus":[1,2]},
+        {"voice":"male","en":"Where do you usually study there?","ar":"أين تذاكرين هناك عادةً؟","patterns":[9060],"scene":"pattern-9054-02","focus":[0,1,2]},
+        {"voice":"female","en":"On the second floor. It's quieter than the entrance hall.","ar":"في الطابق الثاني. إنه أهدأ من قاعة المدخل.","patterns":[],"scene":"pattern-9054-02","focus":[]}
+      ]
+    },
+    {
+      "id": "group-presentation", "ar": "توزيع العرض الجماعي", "en": "Dividing up a presentation", "category": "study", "after": 9035,
+      "lines": [
+        {"voice":"male","en":"I can make the slides, but I can't stay late to rehearse.","ar":"أستطيع إعداد الشرائح، لكن لا أستطيع البقاء إلى وقت متأخر للتدرّب.","patterns":[9035,9036],"scene":"pattern-9086-06","focus":[0,1,6,7]},
+        {"voice":"female","en":"I can do the introduction. We still need someone for the conclusion.","ar":"أستطيع تقديم المقدمة. ما زلنا نحتاج إلى شخص يتولى الخاتمة.","patterns":[],"scene":"pattern-9086-06","focus":[]},
+        {"voice":"male","en":"I must leave by four, but I can write a short conclusion now.","ar":"يجب أن أغادر بحلول الرابعة، لكن يمكنني كتابة خاتمة قصيرة الآن.","patterns":[9045],"scene":"possess-02","focus":[0,1]},
+        {"voice":"female","en":"Good. Let's rehearse the whole presentation at three.","ar":"جيد. لنتدرّب على العرض كاملًا في الثالثة.","patterns":[6],"scene":"possess-02","focus":[1]}
+      ]
+    },
+    {
+      "id": "teacher-office-hours", "ar": "وقت مقابلة المعلّم", "en": "Meeting the teacher", "category": "study", "after": 9056,
+      "lines": [
+        {"voice":"male","en":"May I come by to ask about my essay?","ar":"هل يمكنني الحضور لأسأل عن مقالتي؟","patterns":[9129],"scene":"pattern-9056-05","focus":[0,1]},
+        {"voice":"female","en":"Of course. My office hours are on Tuesdays.","ar":"بالتأكيد. أستقبل الطلاب في مكتبي أيام الثلاثاء.","patterns":[],"scene":"pattern-9056-05","focus":[]},
+        {"voice":"male","en":"When is the first slot on Tuesday?","ar":"متى أول موعد يوم الثلاثاء؟","patterns":[9056],"scene":"pattern-9056-05","focus":[0,1]},
+        {"voice":"female","en":"At ten, but I'm meeting another student then. I can see you at eleven.","ar":"في العاشرة، لكنني سألتقي طالبًا آخر حينها. أستطيع مقابلتك في الحادية عشرة.","patterns":[9096],"scene":"pattern-9096-01","focus":[3,4]},
+        {"voice":"male","en":"I'm afraid I can't come at eleven. Would noon work?","ar":"للأسف لا أستطيع الحضور في الحادية عشرة. هل يناسبك الظهر؟","patterns":[9131],"scene":"pattern-9096-01","focus":[0,1,2,3]},
+        {"voice":"female","en":"Yes. Bring your draft and we'll go through it together.","ar":"نعم. أحضر مسوّدتك وسنراجعها معًا.","patterns":[],"scene":"pattern-9096-01","focus":[]}
+      ]
+    },
+    {
+      "id": "report-deadline", "ar": "الموعد النهائي للتقرير", "en": "The report deadline", "category": "study", "after": 9056,
+      "lines": [
+        {"voice":"male","en":"When is the report due?","ar":"متى يحين تسليم التقرير؟","patterns":[9056],"scene":"pattern-9086-11","focus":[0,1]},
+        {"voice":"female","en":"The first draft is due on Friday. The final version is due next week.","ar":"تُسلّم المسوّدة الأولى يوم الجمعة، والنسخة النهائية الأسبوع المقبل.","patterns":[],"scene":"pattern-9086-11","focus":[]},
+        {"voice":"male","en":"So I have to finish the draft this week. Could you please send me the checklist?","ar":"إذن عليّ إنهاء المسوّدة هذا الأسبوع. هل يمكنك إرسال قائمة التحقق من فضلك؟","patterns":[2,9126],"scene":"pattern-9056-07","focus":[1,2,3,9,10,11]},
+        {"voice":"female","en":"I'll send it now. You don't have to add the charts until the final version.","ar":"سأرسلها الآن. لست مضطرًا إلى إضافة الرسوم البيانية حتى موعد النسخة النهائية.","patterns":[9044],"scene":"pattern-9056-07","focus":[4,5,6,7]}
+      ]
+    },
+    {
+      "id": "book-recommendation", "ar": "ترشيح كتاب", "en": "Recommending a book", "category": "study", "after": 9114,
+      "lines": [
+        {"voice":"male","en":"I'm interested in hiking. Do you know any books for beginners?","ar":"أنا مهتمّ بالمشي في الطبيعة. هل تعرفين كتبًا مناسبة للمبتدئين؟","patterns":[9114],"scene":"pattern-9165-01","focus":[0,1,2]},
+        {"voice":"female","en":"The book that I borrowed last week has some easy routes.","ar":"الكتاب الذي استعرته الأسبوع الماضي فيه مسارات سهلة.","patterns":[9165],"scene":"pattern-9165-01","focus":[0,1,2,3,4]},
+        {"voice":"male","en":"Does it tell you what to bring?","ar":"هل يوضّح ما ينبغي إحضاره؟","patterns":[],"scene":"pattern-9155-07","focus":[]},
+        {"voice":"female","en":"Yes. It lists useful items such as a torch and a map. It's worth reading before your first trip.","ar":"نعم. يسرد أشياء مفيدة مثل المصباح والخريطة. يستحق القراءة قبل رحلتك الأولى.","patterns":[9155,11],"scene":"pattern-9155-07","focus":[5,6,12,13]}
+      ]
+    },
+    {
+      "id": "practice-club", "ar": "نادي الممارسة", "en": "An English practice club", "category": "study", "after": 9052,
+      "lines": [
+        {"voice":"male","en":"Would you like to join our English practice club?","ar":"هل تودّين الانضمام إلى نادي ممارسة الإنجليزية؟","patterns":[9052],"scene":"lets-07","focus":[0,1,2,3]},
+        {"voice":"female","en":"I'd love to. What do you do at the meetings?","ar":"أودّ ذلك كثيرًا. ماذا تفعلون في اللقاءات؟","patterns":[9130],"scene":"lets-07","focus":[0,1,2]},
+        {"voice":"male","en":"I usually bring a short dialogue. This week I'm planning to practise ordering food.","ar":"أحضر عادةً حوارًا قصيرًا. أخطّط هذا الأسبوع للتدرّب على طلب الطعام.","patterns":[9023,9095],"scene":"lets-07","focus":[0,1,8,9,10]},
+        {"voice":"female","en":"How about taking turns as the customer and the server?","ar":"ما رأيك أن نتناوب على دور الزبون ودور من يتلقى الطلب؟","patterns":[9132],"scene":"pattern-9095-07","focus":[0,1]},
+        {"voice":"male","en":"Good idea. I'll bring a menu we can use.","ar":"فكرة جيدة. سأحضر قائمة طعام يمكننا استخدامها.","patterns":[],"scene":"pattern-9095-07","focus":[]}
+      ]
+    },
+    {
+      "id": "online-lesson-audio", "ar": "صوت الدرس لا يصل", "en": "Trouble hearing the online lesson", "category": "study", "after": 9036,
+      "lines": [
+        {"voice":"male","en":"I can't hear you clearly. Could you please repeat the last sentence?","ar":"لا أسمعك بوضوح. هل يمكنك إعادة الجملة الأخيرة من فضلك؟","patterns":[9036,9126],"scene":"possess-02","focus":[0,1,5,6,7]},
+        {"voice":"female","en":"Let me check the microphone. Can you hear me now?","ar":"دعيني أتحقق من الميكروفون. هل تسمعينني الآن؟","patterns":[9049],"scene":"possess-02","focus":[0,1]},
+        {"voice":"male","en":"Yes. I didn't catch the first part because the sound cut out.","ar":"نعم. لم أسمع الجزء الأول لأن الصوت انقطع.","patterns":[9075,9140],"scene":"pattern-9126-04","focus":[1,2,7]},
+        {"voice":"female","en":"I'll start the sentence again and write it in the chat too.","ar":"سأعيد الجملة من البداية وأكتبها في الدردشة أيضًا.","patterns":[],"scene":"pattern-9126-04","focus":[]}
+      ]
+    },
+    {
+      "id": "exam-mistake", "ar": "فهم خطأ في الاختبار", "en": "Understanding a test mistake", "category": "study", "after": 9076,
+      "lines": [
+        {"voice":"male","en":"Did you see why you lost a point on question three?","ar":"هل عرفت لماذا خسرت نقطة في السؤال الثالث؟","patterns":[9076],"scene":"pattern-9109-02","focus":[0,1]},
+        {"voice":"female","en":"I didn't understand what it meant by “give one reason.”","ar":"لم أفهم المقصود بعبارة «اذكر سببًا واحدًا».","patterns":[9075],"scene":"pattern-9109-02","focus":[0,1]},
+        {"voice":"male","en":"What I mean is that you gave an example, but you didn't say why it mattered.","ar":"أقصد أنك أعطيت مثالًا، لكنك لم تبيّن سبب أهميته.","patterns":[9158],"scene":"pattern-9173-12","focus":[0,1,2,3]},
+        {"voice":"female","en":"I see. I should have explained the reason in a full sentence.","ar":"فهمت. كان ينبغي أن أشرح السبب بجملة كاملة.","patterns":[9171],"scene":"pattern-9173-12","focus":[2,3,4]}
+      ]
+    },
+    {
+      "id": "study-methods", "ar": "اختيار طريقة المذاكرة", "en": "Choosing a study method", "category": "study", "after": 9063,
+      "lines": [
+        {"voice":"male","en":"How do you remember the phrases you learn?","ar":"كيف تتذكّرين العبارات التي تتعلّمينها؟","patterns":[9063],"scene":"pattern-9120-03","focus":[0,1,2]},
+        {"voice":"female","en":"I prefer saying them aloud to copying them out.","ar":"أفضّل قولها بصوت مرتفع على نسخها كتابةً.","patterns":[9120],"scene":"pattern-9120-03","focus":[0,1,5]},
+        {"voice":"male","en":"In my opinion, it helps to hide the text first.","ar":"في رأيي، من المفيد إخفاء النص أولًا.","patterns":[9118],"scene":"pattern-9144-01","focus":[0,1,2]},
+        {"voice":"female","en":"Exactly. For example, I look at a picture, say a sentence, and then check the original.","ar":"بالضبط. مثلًا، أنظر إلى صورة، وأقول جملة، ثم أراجع الجملة الأصلية.","patterns":[9154],"scene":"pattern-9144-01","focus":[1,2]}
+      ]
+    },
+    {
+      "id": "last-shift", "ar": "ماذا حدث في الوردية؟", "en": "What happened on the last shift?", "category": "work", "after": 9073,
+      "lines": [
+        {"voice":"male","en":"Were you at reception when the delivery arrived?","ar":"هل كنتِ عند الاستقبال حين وصلت الشحنة؟","patterns":[9073],"scene":"pattern-9086-11","focus":[0,1]},
+        {"voice":"female","en":"I was in the back office. I was checking the order list.","ar":"كنت في المكتب الخلفي أراجع قائمة الطلبات.","patterns":[9071,9086],"scene":"pattern-9086-11","focus":[0,1,6,7,8]},
+        {"voice":"male","en":"Who signed for the boxes?","ar":"من وقّع على استلام الصناديق؟","patterns":[],"scene":"pattern-9088-01","focus":[]},
+        {"voice":"female","en":"When the driver arrived, Noor signed for them and called me.","ar":"عندما وصل السائق، وقّعت نور على الاستلام واتصلت بي.","patterns":[9088],"scene":"pattern-9088-01","focus":[0,1,2,3]}
+      ]
+    },
+    {
+      "id": "missed-message", "ar": "رسالة لم تصل في وقتها", "en": "A missed message", "category": "work", "after": 9075,
+      "lines": [
+        {"voice":"male","en":"Did you get my message about the meeting?","ar":"هل وصلتك رسالتي عن الاجتماع؟","patterns":[],"scene":"pattern-9075-02","focus":[]},
+        {"voice":"female","en":"I didn't see it. While I was helping a customer, my phone was in a drawer.","ar":"لم أرها. بينما كنت أساعد أحد الزبائن، كان هاتفي في الدرج.","patterns":[9075,9087],"scene":"pattern-9075-02","focus":[0,1,4,5,6,7]},
+        {"voice":"male","en":"We moved the meeting to tomorrow morning.","ar":"نقلنا الاجتماع إلى صباح الغد.","patterns":[],"scene":"pattern-9075-02","focus":[]},
+        {"voice":"female","en":"I'm sorry for missing the update. I'll check my messages at lunch next time.","ar":"أعتذر عن فوات التحديث. سأراجع رسائلي وقت الغداء في المرة المقبلة.","patterns":[9136],"scene":"pattern-9137-06","focus":[0,1,2]},
+        {"voice":"male","en":"That's all right. You still have time to read the notes.","ar":"لا بأس. ما زال لديك وقت لقراءة الملاحظات.","patterns":[9137],"scene":"pattern-9137-06","focus":[0,1,2]}
+      ]
+    },
+    {
+      "id": "old-and-new-job", "ar": "من الوظيفة السابقة إلى الجديدة", "en": "From the old job to the new one", "category": "work", "after": 8,
+      "lines": [
+        {"voice":"male","en":"I used to work in a small shop near my house.","ar":"كنت أعمل في متجر صغير قرب منزلي.","patterns":[8],"scene":"used-04","focus":[0,1,2]},
+        {"voice":"female","en":"How did you find your new job?","ar":"كيف وجدت وظيفتك الجديدة؟","patterns":[],"scene":"used-04","focus":[]},
+        {"voice":"male","en":"I went to a careers fair and I met the manager of a hotel there.","ar":"ذهبت إلى معرض للوظائف والتقيت هناك بمدير فندق.","patterns":[9074,9079],"scene":"used-04","focus":[0,1,7,8]},
+        {"voice":"female","en":"Did you start right away?","ar":"هل بدأت العمل مباشرة؟","patterns":[],"scene":"pattern-9084-04","focus":[]},
+        {"voice":"male","en":"No. I started working there the following month.","ar":"لا. بدأت العمل هناك في الشهر التالي.","patterns":[9084],"scene":"pattern-9084-04","focus":[1,2]}
+      ]
+    },
+    {
+      "id": "equipment-repair", "ar": "إصلاح المعدات", "en": "Repairing equipment", "category": "work", "after": 9076,
+      "lines": [
+        {"voice":"male","en":"Did you find out why the printer kept jamming?","ar":"هل عرفت لماذا كان الورق يعلق في الطابعة باستمرار؟","patterns":[9076],"scene":"got-07","focus":[0,1]},
+        {"voice":"female","en":"Yes. I decided to check the back because the front tray was clear.","ar":"نعم. قررت فحص الجهة الخلفية لأن درج الورق الأمامي كان خاليًا.","patterns":[9083,9140],"scene":"got-07","focus":[1,2,3,7]},
+        {"voice":"male","en":"Was there any paper stuck back there?","ar":"هل كان هناك ورق عالق في الخلف؟","patterns":[],"scene":"managed-03","focus":[]},
+        {"voice":"female","en":"A torn sheet was stuck inside, so I removed it with the power off. I managed to print a test page afterwards.","ar":"كانت هناك ورقة ممزقة عالقة، فأزلتها بعد فصل الكهرباء. وتمكّنت بعدها من طباعة صفحة اختبار.","patterns":[9142,9],"scene":"managed-03","focus":[6,14,15,16]}
+      ]
+    },
+    {
+      "id": "welcoming-intern", "ar": "استقبال المتدرّب", "en": "Welcoming an intern", "category": "work", "after": 5,
+      "lines": [
+        {"voice":"male","en":"This is Sara, our new intern.","ar":"هذه سارة، متدرّبتنا الجديدة.","patterns":[5],"scene":"this-02","focus":[0,1]},
+        {"voice":"female","en":"Hi. I'm here for two weeks. Who is in charge of the schedule?","ar":"مرحبًا. سأكون هنا لأسبوعين. من المسؤول عن الجدول؟","patterns":[103,9055],"scene":"this-02","focus":[1,6,7]},
+        {"voice":"male","en":"Lina is the person who plans the shifts. She sits by the window.","ar":"لينا هي من ترتّب الورديات. تجلس قرب النافذة.","patterns":[9164],"scene":"pattern-9164-01","focus":[2,3,4]},
+        {"voice":"female","en":"Thanks. I'll go and introduce myself.","ar":"شكرًا. سأذهب لأعرّفها بنفسي.","patterns":[],"scene":"pattern-9164-01","focus":[]}
+      ]
+    },
+    {
+      "id": "new-procedure", "ar": "إجراء عمل جديد", "en": "A new office procedure", "category": "work", "after": 9050,
+      "lines": [
+        {"voice":"male","en":"Please save each order as a PDF before you send it.","ar":"احفظ كل طلب بصيغة PDF من فضلك قبل إرساله.","patterns":[9050],"scene":"pattern-9138-03","focus":[0]},
+        {"voice":"female","en":"Could you clarify where to save the file?","ar":"هل يمكنك توضيح مكان حفظ الملف؟","patterns":[9138],"scene":"pattern-9138-03","focus":[0,1,2]},
+        {"voice":"male","en":"Use the shared folder so that the whole team can find it.","ar":"استخدم المجلد المشترك حتى يتمكّن الفريق كله من العثور عليه.","patterns":[9144],"scene":"pattern-9138-03","focus":[4,5]},
+        {"voice":"female","en":"Should I put the date in the file name?","ar":"هل أضع التاريخ في اسم الملف؟","patterns":[],"scene":"pattern-9044-09","focus":[]},
+        {"voice":"male","en":"Yes. Add the date to make older orders easier to find.","ar":"نعم. أضف التاريخ ليسهل العثور على الطلبات القديمة.","patterns":[9145],"scene":"pattern-9044-09","focus":[4,5]}
+      ]
+    },
+    {
+      "id": "meeting-followup", "ar": "متابعة اجتماع", "en": "Following up after a meeting", "category": "work", "after": 9091,
+      "lines": [
+        {"voice":"male","en":"Will you send everyone the meeting notes?","ar":"هل سترسل ملاحظات الاجتماع إلى الجميع؟","patterns":[9091],"scene":"pattern-9056-04","focus":[0,1]},
+        {"voice":"female","en":"Yes. I'll send them before lunch. Could you check the dates?","ar":"نعم. سأرسلها قبل الغداء. هل يمكنك مراجعة التواريخ؟","patterns":[9089],"scene":"pattern-9056-04","focus":[1]},
+        {"voice":"male","en":"Of course. As soon as I check them, I'll message you.","ar":"بالطبع. سأراسلك فور الانتهاء من مراجعتها.","patterns":[9106],"scene":"pattern-9089-06","focus":[2,3,4]},
+        {"voice":"female","en":"Thanks. Let me know if any of the deadlines have changed.","ar":"شكرًا. أخبرني إن تغيّر أي موعد للتسليم.","patterns":[9139],"scene":"pattern-9089-06","focus":[1,2,3,4]}
+      ]
+    },
+    {
+      "id": "safety-check", "ar": "فحص قبل تشغيل جهاز", "en": "Checking equipment before use", "category": "work", "after": 9045,
+      "lines": [
+        {"voice":"male","en":"I must check the guard before I switch the machine on, right?","ar":"يجب أن أفحص الواقي قبل تشغيل الجهاز، صحيح؟","patterns":[9045],"scene":"pattern-9045-11","focus":[0,1]},
+        {"voice":"female","en":"Yes. And you should keep the checklist where you can see it.","ar":"نعم. ومن الأفضل إبقاء قائمة التحقق في مكان تستطيع رؤيتها فيه.","patterns":[9047],"scene":"pattern-9045-11","focus":[2,3]},
+        {"voice":"male","en":"Do I need to print a new copy every day?","ar":"هل أحتاج إلى طباعة نسخة جديدة كل يوم؟","patterns":[],"scene":"pattern-9045-11","focus":[]},
+        {"voice":"female","en":"You don't have to print another copy unless the instructions change.","ar":"لست مضطرًا إلى طباعة نسخة أخرى إلا إذا تغيّرت التعليمات.","patterns":[9044,9156],"scene":"pattern-9138-03","focus":[0,1,2,3,7]},
+        {"voice":"male","en":"Understood. I won't start the machine if the guard is loose.","ar":"فهمت. لن أشغّل الجهاز إذا كان الواقي غير ثابت.","patterns":[9090],"scene":"pattern-9138-03","focus":[1,2]}
+      ]
+    },
+    {
+      "id": "workshop-choices", "ar": "اختيار ورشة عمل", "en": "Choosing a workshop", "category": "work", "after": 9121,
+      "lines": [
+        {"voice":"male","en":"I think we should choose the afternoon workshop.","ar":"أظن أن علينا اختيار ورشة بعد الظهر.","patterns":[9117],"scene":"pattern-9124-07","focus":[0,1]},
+        {"voice":"female","en":"I don't agree with that suggestion. Half the team is on shift then.","ar":"لا أوافق على ذلك الاقتراح. نصف الفريق يعمل في ذلك الوقت.","patterns":[9122],"scene":"pattern-9124-07","focus":[0,1,2,3]},
+        {"voice":"male","en":"Fair point. What matters is that everyone can attend.","ar":"معك حق. المهم أن يستطيع الجميع الحضور.","patterns":[9159],"scene":"pattern-9122-07","focus":[2,3,4]},
+        {"voice":"female","en":"I agree with you on that. Let's ask for a morning session next week.","ar":"أتفق معك في ذلك. لنطلب جلسة صباحية الأسبوع المقبل.","patterns":[9121],"scene":"pattern-9122-07","focus":[0,1,2]}
+      ]
+    },
+    {
+      "id": "new-deadline", "ar": "تفاوض على موعد التسليم", "en": "Negotiating a new deadline", "category": "work", "after": 9100,
+      "lines": [
+        {"voice":"male","en":"Can you send me the report by Thursday?","ar":"هل يمكنك إرسال التقرير بحلول الخميس؟","patterns":[],"scene":"pattern-9086-11","focus":[]},
+        {"voice":"female","en":"I might need another day. I expect to finish the figures by Thursday afternoon.","ar":"قد أحتاج إلى يوم إضافي. أتوقع إنهاء الأرقام بعد ظهر الخميس.","patterns":[9100,9099],"scene":"pattern-9086-11","focus":[0,1,5,6,7]},
+        {"voice":"male","en":"Friday is fine, but I need the summary before the meeting at ten.","ar":"الجمعة مناسبة، لكنني أحتاج إلى الملخّص قبل اجتماع العاشرة.","patterns":[9148],"scene":"pattern-9099-11","focus":[3]},
+        {"voice":"female","en":"If I get the figures early, I'll send the summary on Thursday evening.","ar":"إذا حصلت على الأرقام مبكرًا، فسأرسل الملخص مساء الخميس.","patterns":[9104],"scene":"pattern-9099-11","focus":[0,6]}
+      ]
+    },
+    {
+      "id": "launch-feedback", "ar": "ملاحظات بعد إطلاق خدمة", "en": "Feedback after a launch", "category": "work", "after": 9108,
+      "lines": [
+        {"voice":"male","en":"How do you feel about the first week of the new service?","ar":"ما رأيك في الأسبوع الأول من الخدمة الجديدة؟","patterns":[],"scene":"pattern-9111-02","focus":[]},
+        {"voice":"female","en":"I'm happy with the response. I'm surprised that so many people used it on the first day.","ar":"أنا راضية عن الإقبال. أدهشني أن هذا العدد الكبير استخدم الخدمة في اليوم الأول.","patterns":[9108,9111],"scene":"pattern-9111-02","focus":[0,1,2,5,6,7]},
+        {"voice":"male","en":"I'm disappointed that we had to turn some people away. The waiting area was full.","ar":"خاب أملي لأننا اضطررنا إلى الاعتذار لبعض الناس. كانت منطقة الانتظار ممتلئة.","patterns":[9112],"scene":"pattern-9108-05","focus":[0,1,2]},
+        {"voice":"female","en":"I agree. I appreciate your suggestion to offer more appointments next week.","ar":"أتفق معك. أقدّر اقتراحك بإتاحة المزيد من المواعيد الأسبوع المقبل.","patterns":[9134],"scene":"pattern-9108-05","focus":[2,3]}
+      ]
+    },
+    {
+      "id": "tea-with-a-guest", "ar": "تقديم الشاي لضيف", "en": "Offering tea to a guest", "category": "social", "after": 9051,
+      "lines": [
+        {"voice":"male","en":"Would you like tea or coffee?","ar":"هل تودّين الشاي أم القهوة؟","patterns":[9051],"scene":"pattern-9051-09","focus":[0,1,2]},
+        {"voice":"female","en":"I'd like a cup of tea, please. I like it without sugar.","ar":"أودّ كوب شاي من فضلك. أحبّه من دون سكّر.","patterns":[109,111],"scene":"pattern-9051-09","focus":[0,1,7,8]},
+        {"voice":"male","en":"Here you are. It's hot, so be careful.","ar":"تفضّلي. إنه ساخن، فكوني حذرة.","patterns":[104],"scene":"pattern-9051-09","focus":[3,4]},
+        {"voice":"female","en":"Thank you for making it. It smells lovely.","ar":"شكرًا على إعداده. رائحته جميلة.","patterns":[],"scene":"like-noun-02","focus":[]},
+        {"voice":"male","en":"You're welcome. Please help yourself to a biscuit.","ar":"على الرحب والسعة. تفضّلي بتناول قطعة بسكويت.","patterns":[9135],"scene":"like-noun-02","focus":[0,1]}
+      ]
+    },
+    {
+      "id": "visiting-grandmother", "ar": "موعد زيارة الجدة", "en": "Visiting Grandma", "category": "social", "after": 9094,
+      "lines": [
+        {"voice":"male","en":"Are you going to visit Grandma on Saturday?","ar":"هل ستزورين جدّتنا يوم السبت؟","patterns":[9094],"scene":"pattern-9092-02","focus":[0,1,2,3]},
+        {"voice":"female","en":"Yes. I'm going to take her some lunch. What time is the first bus?","ar":"نعم. سأحمل لها بعض الغداء. متى موعد أول حافلة؟","patterns":[9092],"scene":"pattern-9092-02","focus":[1,2,3]},
+        {"voice":"male","en":"The bus leaves at seven in the morning, but there's another at nine.","ar":"تغادر الحافلة في السابعة صباحًا، وهناك حافلة أخرى في التاسعة.","patterns":[9097],"scene":"pattern-9092-02","focus":[0,1,2,3]},
+        {"voice":"female","en":"I'll take the nine o'clock bus.","ar":"سأركب حافلة التاسعة.","patterns":[],"scene":"pattern-9097-02","focus":[]},
+        {"voice":"male","en":"Great. I'll call Grandma and tell her when to expect you.","ar":"رائع. سأتصل بجدّتنا وأخبرها متى تتوقّع وصولك.","patterns":[9089],"scene":"pattern-9097-02","focus":[1]}
+      ]
+    },
+    {
+      "id": "changing-a-visit", "ar": "تغيير موعد زيارة", "en": "Rescheduling a visit", "category": "social", "after": 9131,
+      "lines": [
+        {"voice":"male","en":"Are we still on for this afternoon?","ar":"هل موعدنا بعد ظهر اليوم ما زال قائمًا؟","patterns":[],"scene":"pattern-9136-07","focus":[]},
+        {"voice":"female","en":"I'm afraid I can't make it. I'm sorry for changing the plan at the last minute.","ar":"للأسف لا أستطيع الحضور. أعتذر عن تغيير الخطة في اللحظة الأخيرة.","patterns":[9131,9136],"scene":"pattern-9136-07","focus":[0,1,2,3,6,7,8]},
+        {"voice":"male","en":"That's all right. We can meet tomorrow.","ar":"لا بأس. يمكننا أن نلتقي غدًا.","patterns":[9137],"scene":"pattern-9136-07","focus":[0,1,2]},
+        {"voice":"female","en":"I'm not going to be home tomorrow morning. How about coming after lunch?","ar":"لن أكون في البيت غدًا صباحًا. ما رأيك أن تأتي بعد الغداء؟","patterns":[9093,9132],"scene":"pattern-9137-06","focus":[0,1,2,3,8,9]},
+        {"voice":"male","en":"That works. See you at two.","ar":"هذا يناسبني. أراك في الثانية.","patterns":[],"scene":"pattern-9137-06","focus":[]}
+      ]
+    },
+    {
+      "id": "joining-the-group", "ar": "الانضمام إلى المجموعة", "en": "Joining the group", "category": "social", "after": 9128,
+      "lines": [
+        {"voice":"male","en":"Do you mind if I join your group?","ar":"هل تمانعين أن أنضمّ إلى مجموعتكم؟","patterns":[9128],"scene":"pattern-9128-04","focus":[0,1,2,3,4]},
+        {"voice":"female","en":"Not at all. You may sit here. We're planning a walk on Saturday.","ar":"إطلاقًا. يمكنك الجلوس هنا. نخطّط لجولة مشي يوم السبت.","patterns":[9040],"scene":"pattern-9128-04","focus":[3,4]},
+        {"voice":"male","en":"That sounds fun. Where will you meet?","ar":"تبدو فكرة ممتعة. أين ستلتقون؟","patterns":[],"scene":"pattern-9128-04","focus":[]},
+        {"voice":"female","en":"At the park gate. Would you like to come with us?","ar":"عند بوابة الحديقة. هل تودّ المجيء معنا؟","patterns":[9052],"scene":"pattern-9052-01","focus":[4,5,6,7]},
+        {"voice":"male","en":"I'd love to. What time should I be there?","ar":"أودّ ذلك كثيرًا. في أي وقت ينبغي أن أكون هناك؟","patterns":[9130],"scene":"pattern-9052-01","focus":[0,1,2]}
+      ]
+    },
+    {
+      "id": "a-friend-feels-tired", "ar": "صديق يشعر بالإرهاق", "en": "A friend feels tired", "category": "health", "after": 9058,
+      "lines": [
+        {"voice":"male","en":"How is your day going?","ar":"كيف يسير يومك؟","patterns":[9058],"scene":"pattern-9107-01","focus":[0,1]},
+        {"voice":"female","en":"I feel tired. I'm worried about getting everything done before dinner.","ar":"أشعر بالتعب. يقلقني ألا أنتهي من كل شيء قبل العشاء.","patterns":[9107,9109],"scene":"pattern-9107-01","focus":[0,1,3,4,5]},
+        {"voice":"male","en":"Which task is most urgent? I can help with the others.","ar":"ما المهمة الأكثر إلحاحًا؟ يمكنني مساعدتك في الباقي.","patterns":[],"scene":"pattern-9100-05","focus":[]},
+        {"voice":"female","en":"The shopping can wait. I should take a short break before I finish the report.","ar":"يمكن تأجيل التسوّق. ينبغي أن أستريح قليلًا قبل أن أنهي التقرير.","patterns":[9046],"scene":"pattern-9100-05","focus":[4,5]}
+      ]
+    },
+    {
+      "id": "family-memory", "ar": "ذكرى عائلية", "en": "Remembering a family day", "category": "social", "after": 9077,
+      "lines": [
+        {"voice":"male","en":"These are the photos from Grandma's party.","ar":"هذه صور حفل جدّتنا.","patterns":[116],"scene":"these-03","focus":[0,1]},
+        {"voice":"female","en":"I remember the day when we all surprised her. I had the camera ready by the door.","ar":"أذكر اليوم الذي فاجأناها فيه جميعًا. كان معي الكاميرا جاهزة عند الباب.","patterns":[9167,9077],"scene":"these-03","focus":[2,3,4,9,10]},
+        {"voice":"male","en":"When she walked in, everyone started clapping.","ar":"عندما دخلت، بدأ الجميع بالتصفيق.","patterns":[9088],"scene":"pattern-9081-01","focus":[0,1,2,3]},
+        {"voice":"female","en":"And I made the cake you can see in this photo. She asked for another slice.","ar":"وأنا صنعت الكعكة التي تراها في هذه الصورة. طلبت قطعةً أخرى منها.","patterns":[9081],"scene":"pattern-9081-01","focus":[1,2]}
+      ]
+    },
+    {
+      "id": "finding-the-playground", "ar": "المكان المناسب للعب", "en": "Finding a place to play", "category": "social", "after": 9067,
+      "lines": [
+        {"voice":"male","en":"Where is the playground near the library?","ar":"أين ساحة اللعب القريبة من المكتبة؟","patterns":[9054],"scene":"pattern-9034-11","focus":[0,1]},
+        {"voice":"female","en":"It's the place where we met after class last week. That is the entrance across the road.","ar":"إنه المكان الذي التقينا فيه بعد الدرس الأسبوع الماضي. ذاك هو المدخل على الجهة المقابلة من الطريق.","patterns":[9166,102],"scene":"pattern-9034-11","focus":[1,2,3,10,11]},
+        {"voice":"male","en":"Are there any swings there?","ar":"هل توجد أراجيح هناك؟","patterns":[9067],"scene":"lets-05","focus":[0,1]},
+        {"voice":"female","en":"Yes, two. Let's cross at the lights and walk in together.","ar":"نعم، أرجوحتان. لنعبر عند الإشارة وندخل معًا.","patterns":[],"scene":"lets-05","focus":[]}
+      ]
+    },
+    {
+      "id": "friend-s-new-hobby", "ar": "هواية جديدة لصديق", "en": "A friend’s new hobby", "category": "social", "after": 9114,
+      "lines": [
+        {"voice":"male","en":"What do you do in your free time these days?","ar":"ماذا تفعلين في وقت فراغك هذه الأيام؟","patterns":[9059],"scene":"pattern-9114-01","focus":[0,1,2,3]},
+        {"voice":"female","en":"I'm interested in photography. I've been practising in the park.","ar":"أنا مهتمة بالتصوير. أتدرّب عليه في الحديقة.","patterns":[9114],"scene":"pattern-9114-01","focus":[0,1,2]},
+        {"voice":"male","en":"The photos you sent are lovely. I'm proud of how much you've improved.","ar":"الصور التي أرسلتِها جميلة. أنا فخور بمقدار تحسّنك.","patterns":[9110],"scene":"pattern-9084-01","focus":[6,7,8]},
+        {"voice":"female","en":"Thanks. I hope to put together a small album by the end of the month.","ar":"شكرًا. آمل أن أُعدّ ألبومًا صغيرًا بحلول نهاية الشهر.","patterns":[9098],"scene":"pattern-9084-01","focus":[1,2,3]}
+      ]
+    },
+    {
+      "id": "shared-celebration", "ar": "التحضير لمناسبة", "en": "Preparing a celebration", "category": "social", "after": 7,
+      "lines": [
+        {"voice":"male","en":"Would you like to have dinner out for your birthday?","ar":"هل تودّين تناول العشاء خارج البيت في عيد ميلادك؟","patterns":[9052],"scene":"lets-01","focus":[0,1,2,3]},
+        {"voice":"female","en":"I don't feel like going out. I don't like crowded restaurants on Fridays.","ar":"لا أرغب في الخروج. لا أحبّ المطاعم المزدحمة أيام الجمعة.","patterns":[9116,112],"scene":"lets-01","focus":[0,1,2,3,6,7,8]},
+        {"voice":"male","en":"How about making dinner at home instead of eating out?","ar":"ما رأيك أن نُعدّ العشاء في البيت بدلًا من الأكل خارجه؟","patterns":[9151],"scene":"lets-04","focus":[6,7]},
+        {"voice":"female","en":"That sounds good. I feel like making a pizza, and we can invite a few friends.","ar":"تبدو فكرة جيدة. أشتهي إعداد بيتزا، ويمكننا دعوة بعض الأصدقاء.","patterns":[7],"scene":"lets-04","focus":[3,4,5]}
+      ]
+    },
+    {
+      "id": "thank-you-for-help", "ar": "شكر الجار على مساعدته", "en": "Thanking a helpful neighbor", "category": "social", "after": 9133,
+      "lines": [
+        {"voice":"male","en":"Thank you for helping me carry those boxes upstairs.","ar":"شكرًا على مساعدتي في حمل تلك الصناديق إلى الطابق العلوي.","patterns":[9133],"scene":"pattern-9089-02","focus":[0,1,2]},
+        {"voice":"female","en":"You're welcome. I'm glad I got home in time to help.","ar":"على الرحب والسعة. يسعدني أنني عدت في الوقت المناسب للمساعدة.","patterns":[9135],"scene":"pattern-9089-02","focus":[0,1]},
+        {"voice":"male","en":"I'm grateful for your help. I wouldn't have managed the big box alone.","ar":"أنا ممتنّ لمساعدتك. لم أكن لأتمكّن من حمل الصندوق الكبير بمفردي.","patterns":[9113],"scene":"pattern-9135-07","focus":[0,1,2]},
+        {"voice":"female","en":"It was no trouble. I appreciate you lending me your cart last week, too.","ar":"لم يكن في ذلك أيّ عناء. وأنا أقدّر أيضًا إعارتك لي عربة النقل الأسبوع الماضي.","patterns":[9134],"scene":"pattern-9135-07","focus":[4,5]}
+      ]
+    },
+    {
+      "id": "keeping-the-plan", "ar": "هل نمضي في الخطة؟", "en": "Keeping the plan", "category": "social", "after": 9101,
+      "lines": [
+        {"voice":"male","en":"I may get there late if the bus is delayed again.","ar":"قد أصل متأخرًا إذا تأخّرت الحافلة مرةً أخرى.","patterns":[9101],"scene":"pattern-9157-05","focus":[0,1]},
+        {"voice":"female","en":"Even if you're late, we'll still have time for the walk.","ar":"حتى لو تأخّرت، سيبقى لدينا وقت للمشي.","patterns":[9157],"scene":"pattern-9157-05","focus":[0,1]},
+        {"voice":"male","en":"Although the path might be wet, I'd still like to go.","ar":"مع أن المسار قد يكون مبتلًا، ما زلت أودّ الذهاب.","patterns":[9146],"scene":"pattern-9046-10","focus":[0]},
+        {"voice":"female","en":"Me too. I'll probably bring a spare pair of socks, just in case.","ar":"وأنا أيضًا. سأحضر على الأرجح زوجًا إضافيًا من الجوارب احتياطًا.","patterns":[9102],"scene":"pattern-9046-10","focus":[2,3]}
+      ]
+    },
+    {
+      "id": "office-signup", "ar": "التسجيل في ورشة", "en": "Signing up for a workshop", "category": "work", "after": 3,
+      "lines": [
+        {"voice":"male","en":"I'd like to sign up for the Saturday workshop.","ar":"أودّ التسجيل في ورشة يوم السبت.","patterns":[3],"scene":"pattern-9124-07","focus":[0,1,2]},
+        {"voice":"female","en":"Sure. Do you have an account on our website?","ar":"بالتأكيد. هل لديك حساب على موقعنا؟","patterns":[9064],"scene":"pattern-9124-07","focus":[1,2]},
+        {"voice":"male","en":"Not yet. May I register here instead?","ar":"ليس بعد. هل يمكنني التسجيل هنا بدلًا من ذلك؟","patterns":[9129],"scene":"pattern-9124-07","focus":[2,3]},
+        {"voice":"female","en":"Yes, just fill in this form.","ar":"نعم، املأ هذه الاستمارة فقط.","patterns":[],"scene":"pattern-9056-07","focus":[]},
+        {"voice":"male","en":"Thanks. When is the deadline to hand it in?","ar":"شكرًا. متى آخر موعد لتسليمها؟","patterns":[9056],"scene":"pattern-9056-07","focus":[1,2]},
+        {"voice":"female","en":"Five o'clock today. You can leave it with me when you're done.","ar":"الساعة الخامسة اليوم. يمكنك تركها معي حين تنتهي.","patterns":[],"scene":"pattern-9056-07","focus":[]}
+      ]
+    },
+    {
+      "id": "community-room", "ar": "حجز قاعة الحي", "en": "Booking a community room", "category": "social", "after": 9161,
+      "lines": [
+        {"voice":"male","en":"I wonder if the community room is free on Friday evening.","ar":"أتساءل هل قاعة الحي متاحة مساء الجمعة.","patterns":[9161],"scene":"pattern-9158-12","focus":[0,1,2]},
+        {"voice":"female","en":"It is, but someone has asked to use it until five.","ar":"نعم، لكن أحدهم طلب استخدامها حتى الخامسة.","patterns":[],"scene":"pattern-9158-12","focus":[]},
+        {"voice":"male","en":"I wonder how we can book it for six. Could you tell me whether we need to pay in advance?","ar":"أتساءل كيف يمكننا حجزها للساعة السادسة. هل يمكنك إخباري إن كان علينا الدفع مقدمًا؟","patterns":[9162,9163],"scene":"pattern-9056-04","focus":[0,1,2,9,10,11,12,13]},
+        {"voice":"female","en":"No payment is due until the day. Fill in this form, and let me know if you need the chairs set out before six.","ar":"لا يلزم الدفع حتى يوم الحجز. املأ هذه الاستمارة، وأخبرني إن كنت تحتاج إلى ترتيب الكراسي قبل السادسة.","patterns":[9139],"scene":"pattern-9056-04","focus":[12,13,14,15]}
+      ]
+    },
+    {
+      "id": "team-options", "ar": "اختيار حل للمشروع", "en": "Choosing a project solution", "category": "work", "after": 9119,
+      "lines": [
+        {"voice":"male","en":"I believe a short online form is the quickest way to collect feedback.","ar":"أعتقد أن استمارة إلكترونية قصيرة هي أسرع طريقة لجمع الآراء.","patterns":[9119],"scene":"pattern-9122-07","focus":[0,1]},
+        {"voice":"female","en":"I don't agree with using an online form alone. Some visitors don't have internet access.","ar":"لا أوافق على الاكتفاء باستمارة إلكترونية. بعض الزوّار ليس لديهم اتصال بالإنترنت.","patterns":[9122],"scene":"pattern-9122-07","focus":[0,1,2,3]},
+        {"voice":"male","en":"Printing separate forms would take more time. However, we could leave one tablet at reception.","ar":"ستستغرق طباعة استمارات منفصلة وقتًا أطول. ومع ذلك، يمكننا وضع جهاز لوحي عند الاستقبال.","patterns":[9149],"scene":"pattern-9086-11","focus":[7]},
+        {"voice":"female","en":"Good idea. In addition to the tablet, let's keep a few paper copies for anyone who needs one.","ar":"فكرة جيدة. وإلى جانب الجهاز اللوحي، لنحتفظ ببضع نسخ ورقية لمن يحتاج إليها.","patterns":[9152],"scene":"pattern-9086-11","focus":[2,3,4]}
+      ]
+    },
+    {
+      "id": "testing-assumptions", "ar": "التحقق من سبب الخلل", "en": "Testing an assumption", "category": "work", "after": 9123,
+      "lines": [
+        {"voice":"male","en":"Why is the printer so slow? It seems like the network is down again.","ar":"لماذا الطابعة بطيئة هكذا؟ يبدو أن الشبكة تعطّلت مجددًا.","patterns":[9057,9123],"scene":"got-07","focus":[0,1,6,7,8]},
+        {"voice":"female","en":"It sounds like a network problem, but let's try printing a test page without the network first.","ar":"يبدو من كلامك أنها مشكلة في الشبكة، لكن لنجرب أولًا طباعة صفحة اختبار من دون الشبكة.","patterns":[9124],"scene":"got-07","focus":[0,1,2]},
+        {"voice":"male","en":"The test page is slow too. The reason is that the printer is set to its highest quality.","ar":"صفحة الاختبار بطيئة أيضًا. السبب هو أن الطابعة مضبوطة على أعلى جودة.","patterns":[9160],"scene":"managed-03","focus":[6,7,8,9]},
+        {"voice":"female","en":"That's why it took so long. Let's use the standard setting for these drafts.","ar":"لهذا السبب استغرقت الطباعة كل هذا الوقت. لنعتمد الإعداد العادي لهذه المسوّدات.","patterns":[9143],"scene":"managed-03","focus":[0,1]}
+      ]
+    },
+    {
+      "id": "supporting-a-claim", "ar": "توضيح الرأي بالأمثلة", "en": "Supporting a claim with examples", "category": "work", "after": 9118,
+      "lines": [
+        {"voice":"male","en":"In my opinion, we should give new staff a short checklist for their first week.","ar":"في رأيي، ينبغي أن نعطي الموظفين الجدد قائمة قصيرة لأسبوعهم الأول.","patterns":[9118],"scene":"pattern-9118-01","focus":[0,1,2]},
+        {"voice":"female","en":"Which tasks would it cover?","ar":"ما المهام التي ستشملها؟","patterns":[],"scene":"pattern-9118-01","focus":[]},
+        {"voice":"male","en":"Routine tasks such as booking a room and sending a receipt. For example, a new starter could use it to see who approves a booking.","ar":"المهام المعتادة مثل حجز قاعة وإرسال إيصال. فمثلًا، يمكن للموظف الجديد استخدامها لمعرفة من يوافق على الحجز.","patterns":[9155,9154],"scene":"pattern-9144-01","focus":[2,3,11,12]},
+        {"voice":"female","en":"That would not only save time but also reduce mistakes. Let's try it with the next group.","ar":"هذا سيوفر الوقت ويقلّل الأخطاء أيضًا. لنجربها مع المجموعة التالية.","patterns":[9153],"scene":"pattern-9144-01","focus":[2,3,6,7]}
+      ]
+    },
+    {
+      "id": "competing-priorities", "ar": "أولويات متنافسة", "en": "Balancing competing priorities", "category": "work", "after": 9150,
+      "lines": [
+        {"voice":"male","en":"While a quick release would help customers today, a full review would catch more errors.","ar":"في حين أن النشر السريع سيساعد العملاء اليوم، ستكشف المراجعة الكاملة أخطاء أكثر.","patterns":[9150],"scene":"pattern-9086-11","focus":[0]},
+        {"voice":"female","en":"Even though the draft looks good, we haven't checked the prices yet.","ar":"رغم أن المسوّدة تبدو جيدة، لم نتحقق من الأسعار بعد.","patterns":[9147],"scene":"pattern-9086-11","focus":[0,1]},
+        {"voice":"male","en":"What matters is that people see the correct prices.","ar":"المهم أن يرى الناس الأسعار الصحيحة.","patterns":[9159],"scene":"pattern-9099-11","focus":[0,1,2]},
+        {"voice":"female","en":"Then let's check the price list now instead of publishing the whole page immediately.","ar":"إذن لنتحقق من قائمة الأسعار الآن بدلًا من نشر الصفحة كاملة فورًا.","patterns":[9151],"scene":"pattern-9099-11","focus":[7,8]}
+      ]
+    },
+    {
+      "id": "before-the-departure", "ar": "ما الذي حدث قبل المغادرة؟", "en": "What happened before departure?", "category": "travel", "after": 9103,
+      "lines": [
+        {"voice":"male","en":"I heard you nearly missed the train. What happened?","ar":"سمعت أنك كدت تفوّت القطار. ماذا حدث؟","patterns":[],"scene":"pattern-9173-08","focus":[]},
+        {"voice":"female","en":"I had already packed my bag before my ride arrived. But I wasn't ready to leave because I couldn't find my ticket.","ar":"كنت قد حزمت حقيبتي قبل أن تصل السيارة. لكنني لم أكن مستعدًا للمغادرة لأنني لم أجد تذكرتي.","patterns":[9173,9072],"scene":"pattern-9173-08","focus":[0,1,2,3,6,11,12]},
+        {"voice":"male","en":"Did you find it in time?","ar":"هل وجدتها في الوقت المناسب؟","patterns":[],"scene":"pattern-9173-08","focus":[]},
+        {"voice":"female","en":"Yes, in my jacket. By the time we got to the station, boarding had already started.","ar":"نعم، وجدتها في سترتي. وحين وصلنا إلى المحطة، كان صعود الركّاب قد بدأ بالفعل.","patterns":[9174],"scene":"pattern-9074-09","focus":[4,5,6,13,14,15]},
+        {"voice":"male","en":"So how did you make it?","ar":"وكيف لحقت بالقطار إذن؟","patterns":[],"scene":"pattern-9074-09","focus":[]},
+        {"voice":"female","en":"The conductor said, “I'm about to close the doors.” I showed him my ticket just in time.","ar":"قال المحصّل: «أنا على وشك إغلاق الأبواب». أريته تذكرتي في اللحظة الأخيرة.","patterns":[9103],"scene":"pattern-9074-09","focus":[3,4,5]}
+      ]
+    },
+    {
+      "id": "if-we-had-called", "ar": "لو اتصلنا مسبقًا", "en": "If we had called first", "category": "work", "after": 9170,
+      "lines": [
+        {"voice":"male","en":"The hall was locked when we arrived. If we had called first, we would have known it was closed.","ar":"كانت القاعة مقفلة حين وصلنا. لو اتصلنا أولًا، لعرفنا أنها مغلقة.","patterns":[9170],"scene":"pattern-9123-01","focus":[7,8,9,10,13,14,15]},
+        {"voice":"female","en":"I'm sorry for assuming it would be open. I should have checked the opening hours.","ar":"أعتذر عن افتراضي أنها ستكون مفتوحة. كان ينبغي أن أتحقّق من ساعات العمل.","patterns":[9136,9171],"scene":"pattern-9123-01","focus":[0,1,2,8,9,10]},
+        {"voice":"male","en":"We could have met at the library instead. It stays open late.","ar":"كان بإمكاننا أن نلتقي في المكتبة بدلًا من ذلك. فهي تبقى مفتوحة لوقت متأخر.","patterns":[9172],"scene":"pattern-9171-02","focus":[1,2]},
+        {"voice":"female","en":"I'll call the hall tomorrow. If it's still closed, we'll book a table at the library.","ar":"سأتصل بالقاعة غدًا. إذا كانت لا تزال مغلقة، فسنحجز طاولة في المكتبة.","patterns":[],"scene":"pattern-9171-02","focus":[]}
+      ]
+    },
+    {
+      "id": "imagining-a-solution", "ar": "لو كنت مكانك", "en": "Imagining a different solution", "category": "work", "after": 9168,
+      "lines": [
+        {"voice":"male","en":"I wish I could find a quiet room for our study group. The usual room is full.","ar":"ليتني أجد غرفة هادئة لمجموعتنا الدراسية. الغرفة المعتادة ممتلئة.","patterns":[9168],"scene":"pattern-9041-05","focus":[0,1,2,3]},
+        {"voice":"female","en":"If I were you, I would ask the librarian about a room upstairs.","ar":"لو كنت مكانك، لسألت أمين المكتبة عن غرفة في الطابق العلوي.","patterns":[9169],"scene":"pattern-9041-05","focus":[0,1,2,4,5]},
+        {"voice":"male","en":"Even if there's no room, we could use two small tables near each other.","ar":"حتى لو لم تتوفر غرفة، يمكننا استخدام طاولتين صغيرتين متجاورتين.","patterns":[9157],"scene":"pattern-9169-01","focus":[0,1]},
+        {"voice":"female","en":"Good idea. If you ask about the room now, I'll look for tables.","ar":"فكرة جيدة. إذا سألت عن الغرفة الآن، فسأبحث عن طاولات.","patterns":[9104],"scene":"pattern-9169-01","focus":[2,9]}
+      ]
+    },
+    {
+      "id": "improving-with-practice", "ar": "كيف يتحسّن الأداء؟", "en": "Getting better with practice", "category": "work", "after": 9175,
+      "lines": [
+        {"voice":"male","en":"I keep forgetting new phrases. How much time do you spend reviewing them?","ar":"أستمر في نسيان العبارات الجديدة. كم من الوقت تقضين في مراجعتها؟","patterns":[],"scene":"pattern-9175-01","focus":[]},
+        {"voice":"female","en":"It takes about ten minutes to review five phrases. The more I use them in conversation, the easier they are to remember.","ar":"تستغرق مراجعة خمس عبارات نحو عشر دقائق. وكلما استخدمتها أكثر في الحوار، كان تذكّرها أسهل.","patterns":[10,9175],"scene":"pattern-9175-01","focus":[0,1,9,10,16,17]},
+        {"voice":"male","en":"I think I can fit that in after lunch. Could we practise together on Fridays?","ar":"أظن أنني أستطيع تخصيص هذا الوقت بعد الغداء. هل يمكننا التدرّب معًا أيام الجمعة؟","patterns":[9117],"scene":"pattern-9144-01","focus":[0,1]},
+        {"voice":"female","en":"Yes. Let's each bring one new situation so that we can use the same phrases in different ways.","ar":"نعم. ليحضر كل منا موقفًا جديدًا حتى نستطيع استخدام العبارات نفسها بطرق مختلفة.","patterns":[9144],"scene":"pattern-9144-01","focus":[7,8]}
+      ]
+    },
+    {
+      "id": "food-plan-alternatives", "ar": "بدائل لضيوف لديهم تفضيلات", "en": "Alternatives for guests", "category": "food", "after": 9156,
+      "lines": [
+        {"voice":"male","en":"Would you like rice with the soup, or bread?","ar":"هل تودّين الأرز مع الحساء أم الخبز؟","patterns":[9051],"scene":"lets-04","focus":[0,1,2]},
+        {"voice":"female","en":"Rice, please. I don't eat bread unless it's gluten-free.","ar":"الأرز من فضلك. لا آكل الخبز إلا إذا كان خاليًا من الغلوتين.","patterns":[9156],"scene":"lets-04","focus":[6]},
+        {"voice":"male","en":"We've got plenty of rice. In addition to the soup, we can make a salad.","ar":"لدينا أرز يكفي الجميع. وإلى جانب الحساء، يمكننا إعداد سلطة.","patterns":[9152],"scene":"pattern-9108-12","focus":[5,6,7]},
+        {"voice":"female","en":"Great. I need two more cucumbers for the salad. I'll get them on my way home.","ar":"رائع. أحتاج إلى حبّتين إضافيتين من الخيار للسلطة. سأشتريهما في طريقي إلى البيت.","patterns":[9041],"scene":"pattern-9108-12","focus":[1,2]}
+      ]
     }
-  ]}
+]}

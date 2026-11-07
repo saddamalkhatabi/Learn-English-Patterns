@@ -24,7 +24,7 @@ def main():
     published = json.loads(output.read_text(encoding='utf-8'))
     dialogues = json.loads((PUBLIC / 'dialogues.json').read_text(encoding='utf-8'))['dialogues']
     catalog = {}
-    for name in ('pilot', 'supplement', 'source-corpus'):
+    for name in ('pilot', 'supplement', 'source-corpus', 'expansion-media'):
         for row in json.loads((PUBLIC / (name + '.json')).read_text(encoding='utf-8'))['sentences']:
             for voice, recording in row['recordings'].items():
                 catalog[(row['en'], voice)] = recording

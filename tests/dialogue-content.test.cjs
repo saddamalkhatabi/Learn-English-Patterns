@@ -10,13 +10,19 @@ const plan = require('../public/dialogue-plan.json');
 
 test('conversation turns link to real patterns, scenes and measured cues within a single file', () => {
  const patterns = new Set([...foundation.patterns, ...expansion.patterns].map(p => p.id));
- const scenes = new Set([...foundation.sentences, ...expansion.sentences].filter(s => s.image).map(s => s.id));
+ const {scenes:archive} = require('../public/scene-archive.json');
+ const approvedScenes = new Set(archive.map(scene => scene.id));
+ const scenes = new Set([...foundation.sentences, ...expansion.sentences].filter(s => approvedScenes.has(s.id)).map(s => s.id));
  for(const dialogue of dialogues){
   assert(patterns.has(dialogue.after));
   const audio=media[dialogue.id];
   const signature=dialogue.lines.map(line=>[line.en,line.voice]);
+  const matches=audio&&JSON.stringify(audio.signature)===JSON.stringify(signature);
+  if(process.env.DIALOGUE_AUDIO_REQUIRED==='1'){
+   assert(matches&&audio.intro,`Missing aligned audio for ${dialogue.id}`);
+  }
   assert.deepEqual(new Set(signature.map(([,voice])=>voice)),new Set(['male','female']));
-  if(audio && JSON.stringify(audio.signature)===JSON.stringify(signature)){
+  if(matches){
    assert.equal(crypto.createHash('sha256').update(fs.readFileSync('public/'+audio.path)).digest('hex'),audio.sha256);
    assert.equal(audio.turns.length,dialogue.lines.length);
    if(audio.intro){
@@ -29,7 +35,12 @@ test('conversation turns link to real patterns, scenes and measured cues within 
   for(const [i,line] of dialogue.lines.entries()){
    assert(line.patterns.every(id=>patterns.has(id)),line.en);
    assert(scenes.has(line.scene),line.scene);
-   if(!audio||JSON.stringify(audio.signature)!==JSON.stringify(signature))continue;
+   if(line.focus){
+    assert.equal(Boolean(line.focus.length),Boolean(line.patterns.length),line.en);
+    assert(line.focus.every((index,j)=>Number.isInteger(index)&&index>(line.focus[j-1]??-1)
+     &&index<line.en.split(/\s+/).length),line.en);
+   }
+   if(!matches)continue;
    const turn=audio.turns[i];
    assert(turn.start_ms >= (audio.turns[i-1]?.end_ms ?? 0));
    assert(turn.end_ms <= audio.duration_ms+2);
@@ -44,6 +55,8 @@ test('the 100-situation roadmap covers the curriculum and revisits core patterns
  const published = new Map(dialogues.map(dialogue => [dialogue.id,dialogue]));
  const entries = new Map(plan.entries.map(entry => [entry.id,entry]));
  assert.equal(entries.size,plan.entries.length,'duplicate conversation IDs');
+ assert.equal(published.size,dialogues.length,'duplicate published conversation IDs');
+ assert.equal(published.size,entries.size,'every planned situation needs a transcript');
  assert(entries.size>=100);
  for(const dialogue of dialogues){
   const entry=entries.get(dialogue.id);
@@ -53,7 +66,9 @@ test('the 100-situation roadmap covers the curriculum and revisits core patterns
  const categoriesByPattern=new Map();
  for(const entry of entries.values()){
   const dialogue=published.get(entry.id);
-  const targets=dialogue?dialogue.lines.flatMap(line=>line.patterns):entry.targets;
+  assert(dialogue,entry.id);
+  const targets=dialogue.lines.flatMap(line=>line.patterns);
+  if(entry.targets)assert.deepEqual(new Set(targets),new Set(entry.targets),entry.id);
   assert(entry.taskAr&&entry.taskEn&&targets.length,entry.id);
   for(const id of targets){
    if(!categoriesByPattern.has(id))categoriesByPattern.set(id,new Set());

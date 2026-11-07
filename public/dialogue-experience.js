@@ -48,7 +48,7 @@ function releaseDialoguePlayer(){
  dialogueQueue=null;
 }
 function dialogueWords(line){
- const highlighted=new Set(line.patterns.flatMap(id=>{
+ const highlighted=new Set(line.focus??line.patterns.flatMap(id=>{
   const pattern=PILOT?.patterns.find(p=>p.id===id);
   return dialogueAnchors[id]?EPTeaching.indices(line.en,dialogueAnchors[id]):EPTeaching.describe(line,pattern).highlight;
  }));

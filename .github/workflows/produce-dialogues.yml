@@ -61,7 +61,7 @@ jobs:
           git fetch origin main
           git rebase origin/main
           npm run build
-          npm test
+          DIALOGUE_AUDIO_REQUIRED=1 npm test
           git add public/app-version.js public/app-version.json public/offline-manifest.json
           if ! git diff --cached --quiet; then git commit -m 'Refresh offline conversation media'; fi
           git push origin HEAD:main
