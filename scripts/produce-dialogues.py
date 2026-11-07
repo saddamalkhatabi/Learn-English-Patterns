@@ -38,19 +38,30 @@ def main():
         path = prior.get('path', '')
         assert not path or re.fullmatch(rf'assets/audio/dialogue-{key}-[0-9a-f]{{12}}\.mp3', path)
         target = PUBLIC / path
-        if target.is_file() and prior.get('signature') == signature and prior.get('sha256') == hashlib.sha256(target.read_bytes()).hexdigest():
+        reusable = (target.is_file() and prior.get('signature') == signature
+                    and len(prior.get('turns', [])) == len(signature)
+                    and prior.get('sha256') == hashlib.sha256(target.read_bytes()).hexdigest())
+        title = dialogue['en'].strip().rstrip('.!?') + '.'
+        if reusable and prior.get('title') == title and prior.get('intro'):
             result[key] = prior
             continue
+        previous_pcm = pcm(target) if reusable else None
         parts = []
         turns = []
         offset_bytes = 0
         gap = bytes(48 * 300)
         with tempfile.TemporaryDirectory(dir=ROOT) as directory:
             temp = Path(directory)
-            for index, (english, voice) in enumerate(signature):
+            for index, (english, voice) in enumerate([[title, 'female'], *signature]):
                 recording = catalog.get((english, voice))
                 clip = PUBLIC / recording['path'] if recording else None
-                if recording and validate(recording, clip, english, voice, probe=False):
+                raw = None
+                if previous_pcm is not None and index > 0:
+                    old = prior['turns'][index - 1]
+                    start_ms, end_ms = old['start_ms'], old['end_ms']
+                    raw = previous_pcm[start_ms * 48:end_ms * 48]
+                    cues = [[w['start_ms'] - start_ms, w['end_ms'] - start_ms] for w in old['words']]
+                elif recording and validate(recording, clip, english, voice, probe=False):
                     cues = [[word['start_ms'], word['end_ms']] for word in recording['words']]
                 else:
                     if model is None:
@@ -67,7 +78,8 @@ def main():
                     clip = temp / f'{index}.mp3'
                     write_clip(pipeline, VOICES[voice], english, clip)
                     cues = [[start, end] for _, start, end in aligner.align(clip, english)]
-                raw = pcm(clip)
+                if raw is None:
+                    raw = pcm(clip)
                 start = round(offset_bytes / 48)
                 end = round((offset_bytes + len(raw)) / 48)
                 assert len(cues) == len(english.split()), (key, index, cues)
@@ -88,7 +100,7 @@ def main():
             path = f'assets/audio/dialogue-{key}-{digest[:12]}.mp3'
             (PUBLIC / path).write_bytes(data)
             result[key] = {'path': path, 'sha256': digest, 'duration_ms': duration,
-                           'signature': signature, 'turns': turns}
+                           'title': title, 'intro': turns[0], 'signature': signature, 'turns': turns[1:]}
     output.write_text(json.dumps(result, indent=2, ensure_ascii=False) + '\n', encoding='utf-8', newline='\n')
 
 

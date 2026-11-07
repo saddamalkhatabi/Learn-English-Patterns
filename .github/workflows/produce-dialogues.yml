@@ -29,7 +29,8 @@ jobs:
           const assets=require('./public/dialogue-audio.json');
           const needed=require('./public/dialogues.json').dialogues.some(d=>{
             const r=assets[d.id];
-            if(!r||JSON.stringify(r.signature)!==JSON.stringify(d.lines.map(l=>[l.en,l.voice])))return true;
+            const title=d.en.trim().replace(/[.!?]+$/,'')+'.';
+            if(!r||r.title!==title||!r.intro||JSON.stringify(r.signature)!==JSON.stringify(d.lines.map(l=>[l.en,l.voice])))return true;
             return !fs.existsSync('public/'+r.path)||crypto.createHash('sha256').update(fs.readFileSync('public/'+r.path)).digest('hex')!==r.sha256;
           });
           fs.appendFileSync(process.env.GITHUB_OUTPUT,'needed='+needed+'\n');
