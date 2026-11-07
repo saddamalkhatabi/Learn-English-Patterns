@@ -1,7 +1,6 @@
-{
-  "dialogues": [
+{"dialogues": [
     {
-      "id": "new-neighbor", "ar": "التعارف في الحي", "en": "Meeting a new neighbor", "after": 5,
+      "id": "new-neighbor", "ar": "التعارف في الحي", "en": "Meeting a new neighbor", "after": 5, "category": "social",
       "lines": [
         {"voice":"male","en":"Hello. My name is Omar. What's your name?","ar":"مرحبًا. اسمي عمر. ما اسمك؟","patterns":[113,114],"scene":"name-01"},
         {"voice":"female","en":"I'm Sara. This is my first day in the neighborhood.","ar":"أنا سارة. هذا أول يوم لي في الحي.","patterns":[103,5],"scene":"this-01"},
@@ -11,7 +10,7 @@
       ]
     },
     {
-      "id": "cafe-order", "ar": "طلب في المقهى", "en": "Ordering at a café", "after": 3,
+      "id": "cafe-order", "ar": "طلب في المقهى", "en": "Ordering at a café", "after": 3, "category": "food",
       "lines": [
         {"voice":"female","en":"Good morning. What would you like?","ar":"صباح الخير. ماذا تود أن تطلب؟","patterns":[9051],"scene":"like-02"},
         {"voice":"male","en":"I'd like to order a cup of tea, please.","ar":"أود أن أطلب كوبًا من الشاي، من فضلك.","patterns":[3],"scene":"like-02"},
@@ -21,7 +20,7 @@
       ]
     },
     {
-      "id": "find-the-platform", "ar": "العثور على الرصيف", "en": "Finding the platform", "after": 12,
+      "id": "find-the-platform", "ar": "العثور على الرصيف", "en": "Finding the platform", "after": 12, "category": "travel",
       "lines": [
         {"voice":"female","en":"Excuse me. Do you know where the train leaves from?","ar":"عذرًا. هل تعرف من أين ينطلق القطار؟","patterns":[12],"scene":"know-01"},
         {"voice":"male","en":"It leaves from platform three. This is the way to the platforms.","ar":"ينطلق من الرصيف الثالث. هذا هو الطريق إلى الأرصفة.","patterns":[5],"scene":"that-05"},
@@ -31,7 +30,7 @@
       ]
     },
     {
-      "id": "study-together", "ar": "التخطيط للمذاكرة", "en": "Planning a study session", "after": 13,
+      "id": "study-together", "ar": "التخطيط للمذاكرة", "en": "Planning a study session", "after": 13, "category": "study",
       "lines": [
         {"voice":"male","en":"I want to practise English before the exam.","ar":"أريد أن أتدرّب على الإنجليزية قبل الاختبار.","patterns":[1],"scene":"want-01"},
         {"voice":"female","en":"Let's study together after class.","ar":"لنذاكر معًا بعد الدرس.","patterns":[6],"scene":"this-05"},
@@ -41,7 +40,7 @@
       ]
     },
     {
-      "id": "a-new-routine", "ar": "عادة قديمة وروتين جديد", "en": "An old habit and a new routine", "after": 8,
+      "id": "a-new-routine", "ar": "عادة قديمة وروتين جديد", "en": "An old habit and a new routine", "after": 8, "category": "daily",
       "lines": [
         {"voice":"female","en":"I used to take the bus to work every day.","ar":"كنت أستقل الحافلة إلى العمل كل يوم.","patterns":[8],"scene":"this-06"},
         {"voice":"male","en":"How do you get to work now?","ar":"كيف تذهبين إلى العمل الآن؟","patterns":[9063],"scene":"pattern-9063-01"},
@@ -49,6 +48,77 @@
         {"voice":"male","en":"I managed to walk to work twice this week.","ar":"تمكنت من الذهاب إلى العمل مشيًا مرتين هذا الأسبوع.","patterns":[9],"scene":"pattern-9026-02"},
         {"voice":"female","en":"That's a good start. Let's walk together on Monday.","ar":"هذه بداية جيدة. لنمشِ معًا يوم الاثنين.","patterns":[102,6],"scene":"managed-01"}
       ]
+    },
+    {
+      "id": "market-budget", "ar": "التسوّق بميزانية", "en": "Shopping on a budget", "category": "shopping", "after": 9069,
+      "lines": [
+        {"voice":"female","en":"How much do these tomatoes cost?","ar":"كم سعر هذه الطماطم؟","patterns":[9069],"scene":"pattern-9022-05"},
+        {"voice":"male","en":"These are three dollars a kilo. Would you like a bag?","ar":"سعر الكيلو ثلاثة دولارات. هل تودين كيسًا؟","patterns":[116,9051],"scene":"pattern-9022-05"},
+        {"voice":"female","en":"I bought a bag yesterday. I only need two kilos today.","ar":"اشتريت كيسًا بالأمس. أحتاج اليوم إلى كيلوغرامين فقط.","patterns":[9080],"scene":"pattern-9074-01"},
+        {"voice":"male","en":"Let me weigh them for you.","ar":"دعيني أزنها لك.","patterns":[9049],"scene":"pattern-9022-05"}
+      ]
+    },
+    {
+      "id": "clinic-desk", "ar": "موعد في العيادة", "en": "An appointment at the clinic", "category": "health", "after": 9107,
+      "lines": [
+        {"voice":"male","en":"I feel tired, and I need to see a doctor.","ar":"أشعر بالتعب وأحتاج إلى زيارة الطبيب.","patterns":[9107,13],"scene":"need-04"},
+        {"voice":"female","en":"Do you have an appointment?","ar":"هل لديك موعد؟","patterns":[105],"scene":"possess-06"},
+        {"voice":"male","en":"I'd like an appointment this afternoon.","ar":"أود موعدًا بعد ظهر اليوم.","patterns":[109],"scene":"like-noun-11"},
+        {"voice":"female","en":"There is an appointment at three. You should arrive ten minutes early.","ar":"يوجد موعد في الثالثة. يُستحسن أن تصل قبل الموعد بعشر دقائق.","patterns":[117,9047],"scene":"have-09"}
+      ]
+    },
+    {
+      "id": "project-meeting", "ar": "تغيير موعد اجتماع", "en": "Moving a project meeting", "category": "work", "after": 9139,
+      "lines": [
+        {"voice":"female","en":"Could you please move the meeting to Thursday?","ar":"هل يمكنك نقل الاجتماع إلى الخميس، من فضلك؟","patterns":[9126],"scene":"know-05"},
+        {"voice":"male","en":"I think Thursday will work because the team is free.","ar":"أظن أن الخميس مناسب لأن الفريق متاح.","patterns":[9117,9140],"scene":"there-is-12"},
+        {"voice":"female","en":"Let me know if the time changes.","ar":"أخبرني إذا تغيّر الوقت.","patterns":[9139],"scene":"am-11"},
+        {"voice":"male","en":"I'll send you a message. We don't have to book a new room.","ar":"سأرسل لك رسالة. لسنا مضطرين لحجز غرفة جديدة.","patterns":[9044],"scene":"pattern-9072-02"}
+      ]
+    },
+    {
+      "id": "library-book", "ar": "استعارة كتاب", "en": "Borrowing a library book", "category": "study", "after": 9126,
+      "lines": [
+        {"voice":"male","en":"Do you know if the library is open today?","ar":"هل تعرفين إن كانت المكتبة مفتوحة اليوم؟","patterns":[12],"scene":"know-09"},
+        {"voice":"female","en":"Yes. There are two copies of your book on that shelf.","ar":"نعم. توجد نسختان من كتابك على ذلك الرف.","patterns":[118],"scene":"there-are-04"},
+        {"voice":"male","en":"Can I borrow one?","ar":"هل يمكنني استعارة واحدة؟","patterns":[4],"scene":"can-04"},
+        {"voice":"female","en":"Of course. Could you please show me your library card?","ar":"بالطبع. هل يمكنك إظهار بطاقة المكتبة، من فضلك؟","patterns":[9126],"scene":"there-are-04"}
+      ]
+    },
+    {
+      "id": "family-weekend", "ar": "زيارة عائلية في عطلة الأسبوع", "en": "A family visit at the weekend", "category": "social", "after": 9052,
+      "lines": [
+        {"voice":"female","en":"Would you like to visit our grandparents this weekend?","ar":"هل تود زيارة جدّينا في عطلة الأسبوع؟","patterns":[9052],"scene":"used-07"},
+        {"voice":"male","en":"I used to visit them every Friday. I want to see them again.","ar":"كنت أزورهما كل جمعة. أريد رؤيتهما مجددًا.","patterns":[8,1],"scene":"want-12"},
+        {"voice":"female","en":"Let's take some fruit with us.","ar":"لنأخذ معنا بعض الفاكهة.","patterns":[6],"scene":"want-12"},
+        {"voice":"male","en":"It's worth leaving early so we can spend more time with them.","ar":"من المفيد أن ننطلق مبكرًا كي نقضي معهما وقتًا أطول.","patterns":[11],"scene":"worth-06"}
+      ]
+    },
+    {
+      "id": "missed-bus", "ar": "عند فوات الحافلة", "en": "After missing the bus", "category": "travel", "after": 9141,
+      "lines": [
+        {"voice":"male","en":"I missed the bus because of the rain.","ar":"فاتتني الحافلة بسبب المطر.","patterns":[9141],"scene":"feel-11"},
+        {"voice":"female","en":"Is there another bus stop nearby?","ar":"هل توجد محطة حافلات أخرى قريبة؟","patterns":[9066],"scene":"pattern-9066-02"},
+        {"voice":"male","en":"There is one near the school, but it takes ten minutes to walk there.","ar":"توجد واحدة قرب المدرسة، لكن المشي إليها يستغرق عشر دقائق.","patterns":[117,10],"scene":"there-is-05"},
+        {"voice":"female","en":"Let's walk there. I prefer walking to waiting here.","ar":"لنمشِ إليها. أفضّل المشي على الانتظار هنا.","patterns":[6,9120],"scene":"takes-04"}
+      ]
+    },
+    {
+      "id": "phone-help", "ar": "مساعدة عند نفاد الشحن", "en": "Help with a flat battery", "category": "daily", "after": 9082,
+      "lines": [
+        {"voice":"female","en":"I forgot to charge my phone.","ar":"نسيت شحن هاتفي.","patterns":[9082],"scene":"need-05"},
+        {"voice":"male","en":"Would you like to use my charger?","ar":"هل تودين استخدام شاحني؟","patterns":[9052],"scene":"this-04"},
+        {"voice":"female","en":"Thank you. Can I use your phone for a moment?","ar":"شكرًا. هل يمكنني استخدام هاتفك للحظة؟","patterns":[4],"scene":"can-08"},
+        {"voice":"male","en":"Of course. Let me show you where to plug in the charger.","ar":"بالطبع. دعيني أريك أين توصلين الشاحن.","patterns":[9049],"scene":"need-05"}
+      ]
+    },
+    {
+      "id": "meal-plan", "ar": "التخطيط للغداء", "en": "Planning lunch", "category": "food", "after": 9120,
+      "lines": [
+        {"voice":"male","en":"Would you like some rice for lunch?","ar":"هل تودين بعض الأرز للغداء؟","patterns":[9051],"scene":"there-is-06"},
+        {"voice":"female","en":"I prefer soup to rice today.","ar":"أفضّل الحساء على الأرز اليوم.","patterns":[9120],"scene":"like-02"},
+        {"voice":"male","en":"How many people are coming?","ar":"كم شخصًا سيأتي؟","patterns":[9068],"scene":"there-is-11"},
+        {"voice":"female","en":"There are four of us. Let's make enough for everyone.","ar":"نحن أربعة. لنعدّ ما يكفي للجميع.","patterns":[118,6],"scene":"there-is-06"}
+      ]
     }
-  ]
-}
+]}
