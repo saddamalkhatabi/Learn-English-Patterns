@@ -49,6 +49,12 @@ html[data-pattern-image="focus"] .lesson-active-example{grid-template-columns:mi
 html[data-pattern-image="focus"] .lesson-active-example .lesson-scene{max-width:420px;margin:auto}
 
 .dialogue-panel{padding:clamp(12px,3vw,24px);min-width:0}
+.pattern-dialogues{margin-block:16px}
+.pattern-dialogues summary{font-weight:600;cursor:pointer}
+.pattern-dialogues [data-dialogue-player]:not(:empty){margin-block-start:12px}
+[data-dialogue-player] audio{width:100%}
+.coach-dialogue-wrap{grid-column:1/-1;min-width:0}
+.dialogue-series{margin-block:16px}
 .dialogue-active:not(:empty){display:grid;grid-template-columns:minmax(0,190px) minmax(0,1fr);align-items:center;gap:16px}
 .dialogue-active [lang="en"]{font-size:clamp(18px,3vw,27px)!important}
 .dialogue-photo:empty{display:none}

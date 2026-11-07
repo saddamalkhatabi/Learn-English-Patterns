@@ -51,19 +51,22 @@ test('conversation turns link to real patterns, scenes and measured cues within 
  }
 });
 
-test('the 100-situation roadmap covers the curriculum and revisits core patterns across domains', () => {
+test('level one has 200 conversations, with multiple contexts for every course pattern', () => {
  const published = new Map(dialogues.map(dialogue => [dialogue.id,dialogue]));
  const entries = new Map(plan.entries.map(entry => [entry.id,entry]));
  assert.equal(entries.size,plan.entries.length,'duplicate conversation IDs');
  assert.equal(published.size,dialogues.length,'duplicate published conversation IDs');
  assert.equal(published.size,entries.size,'every planned situation needs a transcript');
- assert(entries.size>=100);
+ const levelOne=plan.entries.filter(entry=>(entry.series??plan.defaultSeries)===1);
+ assert.equal(levelOne.length,200);
+ assert(levelOne.some(entry=>entry.category==='interview'));
  for(const dialogue of dialogues){
   const entry=entries.get(dialogue.id);
   assert(entry,dialogue.id);
   assert.equal(entry.category,dialogue.category);
  }
  const categoriesByPattern=new Map();
+ const dialoguesByPattern=new Map();
  for(const entry of entries.values()){
   const dialogue=published.get(entry.id);
   assert(dialogue,entry.id);
@@ -73,10 +76,17 @@ test('the 100-situation roadmap covers the curriculum and revisits core patterns
   for(const id of targets){
    if(!categoriesByPattern.has(id))categoriesByPattern.set(id,new Set());
    categoriesByPattern.get(id).add(entry.category);
+   if((entry.series??plan.defaultSeries)===1){
+    if(!dialoguesByPattern.has(id))dialoguesByPattern.set(id,new Set());
+    dialoguesByPattern.get(id).add(entry.id);
+   }
   }
  }
  const curriculum=[...foundation.patterns,...expansion.patterns].map(pattern=>pattern.id);
  assert.deepEqual(new Set(categoriesByPattern.keys()),new Set(curriculum));
+ for(const id of curriculum){
+  assert(dialoguesByPattern.get(id)?.size>=2,`Pattern ${id} needs two level-one conversations`);
+ }
  for(const id of plan.corePatterns){
   assert(categoriesByPattern.get(id)?.size>=2,`Core pattern ${id} needs two domains`);
  }

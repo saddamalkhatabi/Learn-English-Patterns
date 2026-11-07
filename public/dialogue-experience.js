@@ -3,7 +3,7 @@ const dialogueCategories={
  social:['التعارف والأسرة','Social and family'],food:['الطعام والطلبات','Food and ordering'],
  travel:['السفر والمواصلات','Travel and transport'],study:['التعلم والمكتبة','Study and library'],
  daily:['الحياة اليومية','Everyday situations'],shopping:['التسوق','Shopping'],
- health:['الصحة','Health'],work:['العمل','Work']
+ health:['الصحة','Health'],work:['العمل','Work'],interview:['مقابلات العمل','Job interviews']
 };
 const dialoguePurposes={
  ask:['السؤال والتحقّق','Ask and confirm'],
@@ -43,10 +43,20 @@ const dialogueAnchors={
   9140:/\bbecause\b(?! of)/i,9141:/\bbecause of\b/i,9148:/\bbut\b/i
 };
 let dialogueQueue=null;
+function pauseDialogueAudio(except){
+ document.querySelectorAll('[data-dialogue-player] audio').forEach(audio=>{
+  if(audio!==except)audio.pause();
+ });
+}
 function releaseDialoguePlayer(){
- $('#dialogue-player audio')?.pause();
+ pauseDialogueAudio();
  dialogueQueue=null;
 }
+const stopSpeechBeforeDialogues=stopSpeech;
+stopSpeech=function(){
+ pauseDialogueAudio();
+ stopSpeechBeforeDialogues();
+};
 function dialogueWords(line){
  const highlighted=new Set(line.focus??line.patterns.flatMap(id=>{
   const pattern=PILOT?.patterns.find(p=>p.id===id);
@@ -74,7 +84,7 @@ function dialoguePanel(dialogue, jump){
    <ol>${dialogue.lines.map((line,i)=>`<li data-dialogue-line="${i}">
     <strong>${line.voice==='male'?T('عمر','Omar'):T('سارة','Sara')}</strong>
     <div><p lang="en" dir="ltr">${dialogueWords(line)}</p>${EP.ar(line.ar)}</div>
-    ${dialogue.audio?`<button class="textlink" onclick="${jump}(${i})" aria-label="${T('استمع من الدور','Listen from turn')} ${i+1}">▷</button>`:''}
+    ${dialogue.audio?`<button class="textlink" onclick="${jump}(${i},this)" aria-label="${T('استمع من الدور','Listen from turn')} ${i+1}">▷</button>`:''}
    </li>`).join('')}</ol>
   </details></section>`;
 }
@@ -109,9 +119,9 @@ function jumpCoachDialogue(index){
  route.seek(turn.start_ms/1000);
  if(!route.running)route.play();
 }
-function openDialogue(id,queued=false){
+function openDialogue(id,queued=false,hostId='dialogue-player'){
  const dialogue=PILOT?.dialogues.find(d=>d.id===id);
- const host=$('#dialogue-player');
+ const host=document.getElementById(hostId);
  if(!dialogue||!host)return;
  if(!queued)dialogueQueue=null;
  if(referencePlayerOpen)closeReferencePlayer();
@@ -130,7 +140,10 @@ function openDialogue(id,queued=false){
   const paint=()=>paintDialogue(host,dialogue,audio.currentTime*1000);
   audio.addEventListener('timeupdate',paint);
   audio.addEventListener('seeked',paint);
-  audio.addEventListener('play',()=>stopSpeech());
+  audio.addEventListener('play',()=>{
+   pauseDialogueAudio(audio);
+   stopSpeechBeforeDialogues();
+  });
   audio.addEventListener('ended',()=>{if(queued&&dialogueQueue&&audio===host.querySelector('audio'))advanceDialogueQueue(1)});
   paint();
   audio.play().catch(()=>{});
@@ -159,20 +172,81 @@ function stopDialogueQueue(){
  dialogueQueue=null;$('#dialogue-player audio')?.pause();
  $('.dialogue-play-status').textContent=T('توقف التتابع.','Continuous play stopped.');
 }
-function jumpStandaloneDialogue(index){
- const host=$('#dialogue-player'),audio=host?.querySelector('audio');
+function jumpStandaloneDialogue(index,button){
+ const host=button.closest('[data-dialogue-player]'),audio=host?.querySelector('audio');
  const turn=PILOT?.dialogues.find(d=>d.id===host?.dataset.dialogue)?.audio?.turns[index];
  if(!audio||!turn)return;
  audio.currentTime=turn.start_ms/1000;
  audio.play().catch(()=>{});
 }
+function patternDialogueList(patternId,hostId){
+ const choices=route?.dialoguesForPattern(patternId)||[];
+ if(!choices.length)return '';
+ return `<details class="panel pattern-dialogues">
+  <summary>${T('تدرّب بالمحادثات على هذا النمط','Practise this pattern in conversations')} · ${choices.length}</summary>
+  <div class="buttonrow">${choices.map(dialogue=>
+   `<button class="secondary" onclick="openDialogue('${H(dialogue.id)}',false,'${hostId}')">
+    ${dialogue.audio?'▷ ':''}${H(T(dialogue.ar,dialogue.en))}
+   </button>`
+  ).join('')}</div>
+  <div id="${hostId}" data-dialogue-player></div>
+ </details>`;
+}
+const renderLessonBeforeDialogues=renderLesson;
+renderLesson=function(){
+ $('#lesson-dialogue-player audio')?.pause();
+ renderLessonBeforeDialogues();
+ $('.lesson-body .stage-label')?.insertAdjacentHTML('afterend',patternDialogueList(current?.id,'lesson-dialogue-player'));
+};
+const updateCoachBeforeDialogues=updateCoach;
+updateCoach=function(){
+ updateCoachBeforeDialogues();
+ const host=$('#coach-related-dialogues');
+ const patternId=route?.pattern?.id;
+ if(!host||host.dataset.patternId===String(patternId))return;
+ host.querySelector('audio')?.pause();
+ host.dataset.patternId=String(patternId);
+ host.innerHTML=patternDialogueList(patternId,'coach-dialogue-player');
+};
+const toggleCoachBeforeDialogues=toggleCoach;
+toggleCoach=function(){
+ pauseDialogueAudio();
+ toggleCoachBeforeDialogues();
+};
+const coachNextBeforeDialogues=coachNext;
+coachNext=function(){
+ pauseDialogueAudio();
+ coachNextBeforeDialogues();
+};
+const coachPreviousBeforeDialogues=coachPrevious;
+coachPrevious=function(){
+ pauseDialogueAudio();
+ coachPreviousBeforeDialogues();
+};
+const playCatalogBeforeDialogues=playCatalogSentence;
+playCatalogSentence=function(id){
+ pauseDialogueAudio();
+ playCatalogBeforeDialogues(id);
+};
+function dialogueSeriesLabel(series){
+ return series===1?T('المستوى الأول','Level 1'):T(`المستوى ${series}`,`Level ${series}`);
+}
 function dialoguesPage(){
+ const groups=new Map();
+ for(const entry of dialogueEntries()){
+  if(entry.status!=='planned')groups.set(entry.series,(groups.get(entry.series)||0)+1);
+ }
+ const seriesChoices=Object.fromEntries([...groups.keys()].map(series=>[series,[`المستوى ${series===1?'الأول':series}`,`Level ${series}`]]));
  return head(T('المحادثات','Conversations'),T('استمع إلى عنوان كل محادثة ثم إلى شخصين يستخدمان الأنماط في موقف واحد. يتغيّر المشهد مع الأدوار، ويمكنك فتح النص الكامل في أي وقت.','Hear each title, then listen to two people use patterns in context. The scene follows the turns, and the full transcript is always available.'))+
-  `<form class="panel dialogue-filters" onsubmit="event.preventDefault()" onreset="requestAnimationFrame(resetDialogueCatalog)">
+  `<div class="buttonrow dialogue-series">${[...groups].map(([series,count])=>
+   `<button class="secondary" onclick="selectDialogueSeries(${series})">${dialogueSeriesLabel(series)} · ${count}</button>`
+  ).join('')}</div>
+  <form class="panel dialogue-filters" onsubmit="event.preventDefault()" onreset="requestAnimationFrame(resetDialogueCatalog)">
    <label class="dialogue-search">${T('البحث','Search')}<input type="search" id="dialogue-query" oninput="resetDialogueFilters()" placeholder="${T('عنوان، موقف، أو نمط…','Title, situation, or pattern…')}"></label>
    ${dialogueSelect('category',T('الموقف','Situation'),T('كل المواقف','All situations'),dialogueCategories)}
    ${dialogueSelect('purpose',T('هدف المحادثة','Speaking goal'),T('كل الأهداف','All goals'),dialoguePurposes)}
-   ${dialogueSelect('level',T('المستوى المقترح','Suggested level'),T('كل المستويات','All levels'),{A1:['A1','A1'],A2:['A2','A2'],B1:['B1','B1'],B2:['B2','B2']})}
+   ${dialogueSelect('series',T('مستوى المحادثات','Conversation level'),T('كل المستويات','All conversation levels'),seriesChoices)}
+   ${dialogueSelect('level',T('صعوبة اللغة المقترحة','Suggested language difficulty'),T('كل درجات الصعوبة','All difficulties'),{A1:['A1','A1'],A2:['A2','A2'],B1:['B1','B1'],B2:['B2','B2']})}
    ${dialogueSelect('status',T('الجاهزية','Availability'),T('المحادثات المتاحة','Available conversations'),{
     audio:['مسجّلة','Recorded'],text:['نص فقط','Transcript only'],planned:['مواقف في خطة التوسّع','Planned situations']
    },'resetDialogueCatalog()')}
@@ -183,7 +257,7 @@ function dialoguesPage(){
    <button class="primary" id="dialogue-play-all" onclick="playAllDialogues()">▷ ${T('شغّل كل المحادثات','Play all conversations')}</button>
    <button class="secondary" id="dialogue-play-filtered" onclick="playAllDialogues(true)">▷ ${T('شغّل النتائج المسجّلة','Play recorded results')}</button>
   </div>
-  <div id="dialogue-player"></div>
+  <div id="dialogue-player" data-dialogue-player></div>
   <p id="dialogue-count" role="status"></p>
   <div class="dialogue-catalog" id="dialogue-catalog"></div>
   <div class="buttonrow" id="dialogue-pagination" hidden>
@@ -206,8 +280,12 @@ function dialogueEntries(){
   const dialogue=dialogues.get(entry.id);
   const patternIds=dialogue?dialogue.lines.flatMap(line=>line.patterns):entry.targets;
   const status=dialogue?(dialogue.audio?'audio':'text'):'planned';
-  return {...entry,dialogue,status,patternIds:[...new Set(patternIds)]};
+  return {...entry,series:entry.series??dialoguePlan?.defaultSeries??1,dialogue,status,patternIds:[...new Set(patternIds)]};
  });
+}
+function selectDialogueSeries(series){
+ $('#dialogue-series').value=String(series);
+ resetDialogueFilters();
 }
 function dialogueStatusMatches(entry,status){
  return status?entry.status===status:entry.status!=='planned';
@@ -239,13 +317,13 @@ function normalizeDialogueSearch(value){
 }
 function filteredDialogueEntries(){
  const status=$('#dialogue-status').value;
- const facets=['category','purpose','level'].map(key=>[key,$('#dialogue-'+key).value]);
+ const facets=['category','purpose','level','series'].map(key=>[key,$('#dialogue-'+key).value]);
  const patternId=Number($('#dialogue-pattern').value);
  const tokens=normalizeDialogueSearch($('#dialogue-query').value).trim().split(/\s+/).filter(Boolean);
  const patterns=new Map((PILOT?.patterns||[]).map(pattern=>[pattern.id,pattern]));
  return dialogueEntries().filter(entry=>{
   if(!dialogueStatusMatches(entry,status))return false;
-  if(facets.some(([key,value])=>value&&entry[key]!==value))return false;
+  if(facets.some(([key,value])=>value&&String(entry[key])!==value))return false;
   if(patternId&&!entry.patternIds.includes(patternId))return false;
   if(!tokens.length)return true;
   const forms=entry.patternIds.flatMap(id=>{
@@ -284,7 +362,7 @@ function paintDialogueCatalog(){
  host.innerHTML=entries.slice(offset,offset+dialoguesPerPage).map(entry=>{
   const {dialogue,category,level,purpose}=entry;
   const scene=scenes.get(dialogue?.lines[0].scene);
-  const meta=[T(...(dialogueCategories[category]||dialogueCategories.daily)),level,purpose&&T(...dialoguePurposes[purpose])].filter(Boolean).join(' · ');
+  const meta=[dialogueSeriesLabel(entry.series),T(...(dialogueCategories[category]||dialogueCategories.daily)),level,purpose&&T(...dialoguePurposes[purpose])].filter(Boolean).join(' · ');
   const label=dialogue?.audio?T('مسجّلة','Recorded'):dialogue?T('نص متاح','Transcript available'):T('ضمن الخطة','Planned');
   const action=dialogue?`<button class="secondary" onclick="openDialogue('${H(dialogue.id)}')">
     ${dialogue.audio?T('استمع','Listen'):T('اقرأ النص','Read transcript')} ↗</button>`:
@@ -292,7 +370,7 @@ function paintDialogueCatalog(){
   return `<article class="panel dialogue-cover">${scene?.image?pilotScene(scene):''}
    <div><small>${H(meta)}</small><span class="chip dialogue-status">${label}</span>
    <h3>${H(T(entry.ar,entry.en))}</h3>
-   ${entry.taskEn?`<p>${H(T(entry.taskAr,entry.taskEn))}</p>`:''}
+   ${entry.taskEn&&T(entry.taskAr,entry.taskEn)!==T(entry.ar,entry.en)?`<p>${H(T(entry.taskAr,entry.taskEn))}</p>`:''}
    ${action}</div></article>`;
  }).join('');
 }

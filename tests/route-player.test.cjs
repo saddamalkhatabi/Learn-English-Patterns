@@ -69,6 +69,34 @@ test('one opted-in conversation plays once at the boundary and resumes at the sa
  assert.equal(next.p.sentence.id,'enjoy-01');
 });
 
+test('a pattern plays multiple related recordings in order and resumes the current one',async()=>{
+ const recording=id=>({path:`assets/audio/dialogue-${id}.mp3`,sha256:'test-only',duration_ms:6000,turns:[{}]});
+ const data={...source,dialogues:[
+  {id:'tagged',after:4,lines:[{patterns:[3,3]}],audio:recording('tagged')},
+  {id:'primary',after:3,audio:recording('primary')},
+  {id:'unrecorded',after:3},
+  {id:'extra',after:3,audio:recording('extra')},
+ ]};
+ const {p,audio,storage}=make(data);
+ p.configure({patternIds:[3,111],readingSeconds:0,dialoguesPerPattern:3});
+ p.jumpTo('like-12');
+ await p.play();
+ audio.fire('ended');
+ assert.equal(p.activeDialogue.id,'primary');
+ audio.fire('ended');
+ assert.equal(p.activeDialogue.id,'extra');
+ p.seek(1.4);
+ p.pause();
+ const next=make(data,JSON.parse(storage.getItem('nasaq-route-v2')));
+ await next.p.play();
+ assert.equal(next.p.activeDialogue.id,'extra');
+ assert.equal(next.audio.currentTime,1.4);
+ next.audio.fire('ended');
+ assert.equal(next.p.activeDialogue.id,'tagged');
+ next.audio.fire('ended');
+ assert.equal(next.p.sentence.id,'enjoy-01');
+});
+
 test('finished listening can replay from its first selected example',async()=>{
  const {p,audio}=make();
  p.configure({patternIds:[3],readingSeconds:0});

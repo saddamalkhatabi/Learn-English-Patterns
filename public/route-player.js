@@ -4,6 +4,18 @@
 class NasaqRoutePlayer{
  constructor({data,audio,storage,onchange=()=>{},now=()=>Date.now(),setTimer=setTimeout,clearTimer=clearTimeout}){
   this.data=data;this.audio=audio;this.storage=storage;this.onchange=onchange;this.now=now;this.setTimer=setTimer.bind(root);this.clearTimer=clearTimer.bind(root);this.timer=null;this.running=false;this.error='';this.boundary=null;this.lastSave=0;this.generation=0;
+  this.dialoguesByPattern=new Map();
+  for(const dialogue of data.dialogues||[]){
+   const patterns=new Set([dialogue.after,...(dialogue.lines||[]).flatMap(line=>line.patterns||[])]);
+   for(const id of patterns){
+    const list=this.dialoguesByPattern.get(id)||[];
+    list.push(dialogue);
+    this.dialoguesByPattern.set(id,list);
+   }
+  }
+  for(const [id,list] of this.dialoguesByPattern){
+   list.sort((left,right)=>Number(right.after===id)-Number(left.after===id));
+  }
   let previous;try{previous=JSON.parse(storage.getItem('nasaq-route-v2'))}catch{}
   this.session={schema:2,ids:[],cursor:0,phase:'sentence',offset:0,voice:'male',voiceMode:'alternate',rate:1,mode:'listen',completed:[],autoNextPattern:true,includeDialogues:false,readingSeconds:null,...previous};
   this.session.ids=this.session.ids.filter(id=>data.sentences.some(s=>s.id===id));
@@ -37,9 +49,9 @@ class NasaqRoutePlayer{
    return Array.from({length:sample},(_,i)=>rows[Math.round(i*(rows.length-1)/(sample-1))].id);
   });
  }
- configure({patternIds=this.data.pattern_order,stage=0,cefr='',mode='listen',voiceMode='alternate',rate=1,autoNextPattern=true,routeId='',sample=0,includeDialogues=false,readingSeconds=null}={}){
+ configure({patternIds=this.data.pattern_order,stage=0,cefr='',mode='listen',voiceMode='alternate',rate=1,autoNextPattern=true,routeId='',sample=0,includeDialogues=false,dialoguesPerPattern=includeDialogues?1:0,readingSeconds=null}={}){
   this.pause();const ids=this.queue({patternIds,stage,cefr,sample});
-  this.session={schema:2,ids,cursor:0,phase:'sentence',offset:0,voice:voiceMode==='female'?'female':'male',voiceMode,mode,rate:+rate,completed:[],autoNextPattern,includeDialogues,readingSeconds,fullCourse:!sample&&!stage&&!cefr&&!routeId&&new Set(patternIds).size===this.data.pattern_order.length,curriculumRevision:this.data.revision,filters:{patternIds,stage:+stage,cefr,routeId,sample}};this.error='';this.save();this.emit();return ids.length;
+  this.session={schema:2,ids,cursor:0,phase:'sentence',offset:0,voice:voiceMode==='female'?'female':'male',voiceMode,mode,rate:+rate,completed:[],autoNextPattern,includeDialogues:dialoguesPerPattern!==0,dialoguesPerPattern,readingSeconds,fullCourse:!sample&&!stage&&!cefr&&!routeId&&new Set(patternIds).size===this.data.pattern_order.length,curriculumRevision:this.data.revision,filters:{patternIds,stage:+stage,cefr,routeId,sample}};this.error='';this.save();this.emit();return ids.length;
  }
  get comparisonRemaining(){return this.comparisonEndsAt?Math.max(0,this.comparisonEndsAt-this.now()):Math.max(0,this.session.comparisonRemainingMs??this.session.comparisonDurationMs??25000)}
  get comparisonDuration(){return this.session.comparisonDurationMs||25000}
@@ -49,6 +61,8 @@ class NasaqRoutePlayer{
  get sentence(){if(this.session.phase==='interlude'){const s=this.interludeRows[this.session.interludeCursor||0];return s?{...s,pattern_id:this.activeInterlude.after_pattern_id,group_id:this.data.patterns.find(p=>p.id===this.activeInterlude.after_pattern_id)?.group_id}:undefined}return this.data.sentences.find(s=>s.id===this.session.ids[this.session.cursor])}
  get pattern(){return this.data.patterns.find(p=>p.id===this.sentence?.pattern_id)}
  get activeDialogue(){return this.data.dialogues?.find(d=>d.id===this.session.dialogueId)}
+ get dialogueLimit(){return this.session.dialoguesPerPattern??(this.session.includeDialogues?1:0)}
+ dialoguesForPattern(id){return this.dialoguesByPattern.get(id)||[]}
  get hasAudio(){return ['sentence','interlude','dialogue'].includes(this.session.phase)}
  get recording(){return this.session.phase==='dialogue'?this.activeDialogue?.audio:this.sentence?.recordings[this.session.voice]}
  get progress(){if(this.session.phase==='finished')return 100;return this.session.ids.length?100*(this.session.cursor+(['comparison','between','exercise','interlude','dialogue'].includes(this.session.phase)?1:(this.recording?.duration_ms?Math.min(1,this.session.offset*1000/this.recording.duration_ms):0)))/this.session.ids.length:0}
@@ -97,18 +111,35 @@ class NasaqRoutePlayer{
   this.timer=null;this.comparisonEndsAt=null;this.session.comparisonRemainingMs=null;
   const pid=this.data.sentences.find(s=>s.id===this.session.ids[this.session.cursor])?.pattern_id;
   if(this.session.includeDialogues){
-   const dialogue=this.data.dialogues?.find(d=>d.after===pid&&d.audio&&!(this.session.completedDialogues||[]).includes(d.id));
-   if(dialogue){
-    this.session.dialogueId=dialogue.id;this.session.phase='dialogue';this.session.offset=0;
-    this.audio.removeAttribute('src');this.audio.load();this.save();this.emit();if(this.running)this.play();return;
+   const available=this.dialoguesForPattern(pid).filter(dialogue=>dialogue.audio);
+   const selected=this.dialogueLimit===-1?available:available.slice(0,this.dialogueLimit);
+   if(selected.length){
+    this.session.dialogueIds=selected.map(dialogue=>dialogue.id);
+    this.session.dialogueCursor=0;
+    this.startDialogue(selected[0].id);
+    return;
    }
    const sequence=!this.data.dialogues&&this.data.interlude_sequences?.find(s=>s.after_pattern_id===pid&&!(this.session.completedInterludes||[]).includes(s.id));
    if(sequence){this.session.interludeId=sequence.id;this.session.interludeCursor=0;this.session.phase='interlude';this.session.offset=0;this.session.voice=sequence.items[0].voice;this.audio.removeAttribute('src');this.audio.load();this.save();this.emit();if(this.running)this.play();return}
   }
   this.moveCursor();
  }
+ startDialogue(id){
+  this.generation++;
+  this.audio.pause();
+  this.session.dialogueId=id;this.session.phase='dialogue';this.session.offset=0;
+  this.audio.removeAttribute('src');this.audio.load();this.save();this.emit();
+  if(this.running)this.play();
+ }
  finishDialogue(){
   this.session.completedDialogues=[...new Set([...(this.session.completedDialogues||[]),this.session.dialogueId])];
+  const next=(this.session.dialogueCursor??0)+1;
+  if(this.session.dialogueIds?.[next]){
+   this.session.dialogueCursor=next;
+   this.startDialogue(this.session.dialogueIds[next]);
+   return;
+  }
+  this.session.dialogueIds=[];this.session.dialogueCursor=0;
   this.moveCursor();
  }
  finishInterlude(){const sequence=this.activeInterlude;if(!sequence)return;this.generation++;this.audio.pause();this.session.offset=0;if((this.session.interludeCursor||0)+1<sequence.items.length){this.session.interludeCursor++;this.session.voice=sequence.items[this.session.interludeCursor].voice;this.audio.removeAttribute('src');this.audio.load();this.save();this.emit();if(this.running)this.play();return}this.session.completedInterludes=[...new Set([...(this.session.completedInterludes||[]),sequence.id])];if(this.session.autoNextPattern===false){this.session.phase='comparison';this.running=false;this.save();this.emit();return}this.moveCursor()}
