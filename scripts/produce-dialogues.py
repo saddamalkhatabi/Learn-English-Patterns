@@ -41,6 +41,20 @@ def main():
             for voice, recording in row['recordings'].items():
                 catalog[(row['en'], voice)] = recording
     model = None
+    def get_model():
+        nonlocal model
+        if model is None:
+            sys.path.insert(0, str(TOOLS / 'upstream'))
+            import torch
+            from kokoro import KPipeline
+            from acoustic_pattern_fallback import ForcedAligner
+            import generate_audio
+            generate_audio.ROOT = ROOT
+            torch.set_num_threads(2)
+            model = (KPipeline(lang_code='a', repo_id='hexgrad/Kokoro-82M'),
+                     ForcedAligner(), generate_audio.write_clip)
+        return model
+
     result = {}
     pending_index = 0
     for dialogue in dialogues:
@@ -51,11 +65,12 @@ def main():
         path = prior.get('path', '')
         assert not path or re.fullmatch(rf'assets/audio/dialogue-{key}-[0-9a-f]{{12}}\.mp3', path)
         target = PUBLIC / path
-        reusable = (target.is_file() and prior.get('signature') == signature
-                    and len(prior.get('turns', [])) == len(signature)
+        old_signature = prior.get('signature', [])
+        reusable = (target.is_file() and old_signature == signature[:len(old_signature)]
+                    and len(prior.get('turns', [])) == len(old_signature)
                     and prior.get('sha256') == hashlib.sha256(target.read_bytes()).hexdigest())
         title = dialogue['en'].strip().rstrip('.!?') + '.'
-        if reusable and prior.get('title') == title and prior.get('intro'):
+        if reusable and old_signature == signature and prior.get('title') == title and prior.get('intro'):
             if args.output_dir is None:
                 result[key] = prior
             continue
@@ -74,25 +89,16 @@ def main():
                 recording = catalog.get((english, voice))
                 clip = PUBLIC / recording['path'] if recording else None
                 raw = None
-                if previous_pcm is not None and index > 0:
-                    old = prior['turns'][index - 1]
+                old = (prior.get('intro') if index == 0 and prior.get('title') == title
+                       else prior['turns'][index - 1] if 0 < index <= len(old_signature) else None)
+                if previous_pcm is not None and old:
                     start_ms, end_ms = old['start_ms'], old['end_ms']
                     raw = previous_pcm[start_ms * 48:end_ms * 48]
                     cues = [[w['start_ms'] - start_ms, w['end_ms'] - start_ms] for w in old['words']]
                 elif recording and validate(recording, clip, english, voice, probe=False):
                     cues = [[word['start_ms'], word['end_ms']] for word in recording['words']]
                 else:
-                    if model is None:
-                        sys.path.insert(0, str(TOOLS / 'upstream'))
-                        import torch
-                        from kokoro import KPipeline
-                        from acoustic_pattern_fallback import ForcedAligner
-                        import generate_audio
-                        generate_audio.ROOT = ROOT
-                        torch.set_num_threads(2)
-                        model = (KPipeline(lang_code='a', repo_id='hexgrad/Kokoro-82M'),
-                                 ForcedAligner(), generate_audio.write_clip)
-                    pipeline, aligner, write_clip = model
+                    pipeline, aligner, write_clip = get_model()
                     clip = temp / f'{index}.mp3'
                     write_clip(pipeline, VOICES[voice], english, clip)
                     cues = [[start, end] for _, start, end in aligner.align(clip, english)]
@@ -121,6 +127,35 @@ def main():
                            'title': title, 'intro': turns[0], 'signature': signature, 'turns': turns[1:]}
     (destination / output.name).write_text(json.dumps(result, indent=2, ensure_ascii=False) + '\n',
                                            encoding='utf-8', newline='\n')
+    cues = json.loads(subprocess.check_output(['node', str(ROOT / 'scripts/training-cues.cjs')]))
+    cue_output = PUBLIC / 'training-audio.json'
+    published_cues = json.loads(cue_output.read_text(encoding='utf-8'))
+    recorded_cues = {}
+    with tempfile.TemporaryDirectory(dir=ROOT) as directory:
+        for key, text in cues.items():
+            assert re.fullmatch(r'[a-z0-9-]+', key)
+            prior = published_cues.get(key, {})
+            target = PUBLIC / prior.get('path', '')
+            if prior.get('text') == text and target.is_file() and hashlib.sha256(target.read_bytes()).hexdigest() == prior.get('sha256'):
+                if args.output_dir is None:
+                    recorded_cues[key] = prior
+                continue
+            selected = pending_index % args.shard_count == args.shard_index
+            pending_index += 1
+            if not selected:
+                continue
+            pipeline, _, write_clip = get_model()
+            clip = Path(directory) / f'{key}.mp3'
+            write_clip(pipeline, VOICES['female'], text, clip)
+            data = clip.read_bytes()
+            digest = hashlib.sha256(data).hexdigest()
+            path = f'assets/audio/training-{key}-{digest[:12]}.mp3'
+            (destination / path).write_bytes(data)
+            recorded_cues[key] = {'path': path, 'sha256': digest,
+                                  'duration_ms': round(len(pcm(clip)) / 48), 'text': text}
+            print(f'{key}: recorded training cue', flush=True)
+    (destination / cue_output.name).write_text(json.dumps(recorded_cues, indent=2, ensure_ascii=False) + '\n',
+                                               encoding='utf-8', newline='\n')
 
 
 if __name__ == '__main__':

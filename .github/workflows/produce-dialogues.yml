@@ -1,13 +1,13 @@
 name: Record and align conversations
 on:
   push:
-    branches: [main]
-    paths: [public/dialogues.json, scripts/produce-dialogues.py, scripts/merge-dialogue-audio.cjs, .github/workflows/produce-dialogues.yml]
+    branches: [main, codex/conversation-practice]
+    paths: [public/dialogues.json, public/training-narration.js, public/curriculum.json, public/pilot.json, public/expansion-media.json, scripts/training-cues.cjs, scripts/produce-dialogues.py, scripts/merge-dialogue-audio.cjs, .github/workflows/produce-dialogues.yml]
   workflow_dispatch:
 permissions:
   contents: write
 concurrency:
-  group: dialogue-production
+  group: dialogue-production-${{ github.ref }}
   cancel-in-progress: false
 jobs:
   plan:
@@ -31,9 +31,15 @@ jobs:
             if(!r||r.title!==title||!r.intro||JSON.stringify(r.signature)!==JSON.stringify(d.lines.map(l=>[l.en,l.voice])))return true;
             return !fs.existsSync('public/'+r.path)||crypto.createHash('sha256').update(fs.readFileSync('public/'+r.path)).digest('hex')!==r.sha256;
           });
-          const count=Math.max(1,Math.min(4,Math.ceil(pending.length/25)));
+          const cues=require('./public/training-audio.json');
+          const pendingCues=Object.entries(require('./scripts/training-cues.cjs')).filter(([id,spoken])=>{
+            const r=cues[id];
+            return !r||r.text!==spoken||!fs.existsSync('public/'+r.path)||crypto.createHash('sha256').update(fs.readFileSync('public/'+r.path)).digest('hex')!==r.sha256;
+          });
+          const total=pending.length+pendingCues.length;
+          const count=Math.max(1,Math.min(8,Math.ceil(total/25)));
           const shards=Array.from({length:count},(_,i)=>i);
-          fs.appendFileSync(process.env.GITHUB_OUTPUT,`needed=${pending.length>0}\ncount=${count}\nshards=${JSON.stringify(shards)}\n`);
+          fs.appendFileSync(process.env.GITHUB_OUTPUT,`needed=${total>0}\ncount=${count}\nshards=${JSON.stringify(shards)}\n`);
           NODE
   record:
     needs: plan
@@ -74,7 +80,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with: {ref: main, fetch-depth: 0}
+        with: {ref: '${{ github.ref_name }}', fetch-depth: 0}
       - uses: actions/setup-node@v4
         with: {node-version: '22'}
       - uses: actions/download-artifact@v4
@@ -82,13 +88,15 @@ jobs:
           pattern: dialogue-audio-*
           path: dialogue-shards/
       - name: Publish measured recordings and refresh offline indexes
+        env:
+          TARGET_BRANCH: ${{ github.ref_name }}
         run: |
           node scripts/merge-dialogue-audio.cjs dialogue-shards
           npm run build
           DIALOGUE_AUDIO_REQUIRED=1 npm test
           git config user.name 'English Patterns media'
           git config user.email 'noreply@users.noreply.github.com'
-          git add public/dialogue-audio.json public/assets/audio public/app-version.js public/app-version.json public/offline-manifest.json
+          git add public/dialogue-audio.json public/training-audio.json public/assets/audio public/app-version.js public/app-version.json public/offline-manifest.json
           if git diff --cached --quiet; then exit 0; fi
           git commit -m 'Publish measured conversation audio and offline indexes'
-          git push origin HEAD:main
+          git push origin "HEAD:$TARGET_BRANCH"

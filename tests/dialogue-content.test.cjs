@@ -16,6 +16,8 @@ test('conversation turns link to real patterns, scenes and measured cues within 
  const approvedScenes = new Set(archive.map(scene => scene.id));
  const scenes = new Set([...foundation.sentences, ...expansion.sentences, ...corpus.sentences].filter(s => approvedScenes.has(s.id)).map(s => s.id));
  for(const dialogue of dialogues){
+  assert(dialogue.lines.length>=6,`Conversation needs six or more speaking turns: ${dialogue.id}`);
+  assert.equal(new Set(dialogue.lines.map(line=>line.en)).size,dialogue.lines.length,dialogue.id);
   assert(patterns.has(dialogue.after)||dialogue.after===null&&dialogue.lines.some(line=>line.referenceId),dialogue.id);
   const audio=media[dialogue.id];
   const signature=dialogue.lines.map(line=>[line.en,line.voice]);
@@ -50,6 +52,20 @@ test('conversation turns link to real patterns, scenes and measured cues within 
    assert(turn.words.every((word,j)=>word.start_ms >= (turn.words[j-1]?.end_ms ?? turn.start_ms)
     && word.start_ms<word.end_ms && word.end_ms<=turn.end_ms));
   }
+ }
+});
+
+test('both rule announcements are available for every taught pattern',()=>{
+ const expected=require('../scripts/training-cues.cjs');
+ const cues=require('../public/training-audio.json');
+ assert.equal(Object.keys(expected).length,(foundation.patterns.length+expansion.patterns.length)*2+1);
+ for(const [id,spoken] of Object.entries(expected)){
+  assert(!/[\u0600-\u06ff]/.test(spoken)&&spoken.split(/\s+/).length>=6,id);
+  const audio=cues[id];
+  if(process.env.DIALOGUE_AUDIO_REQUIRED==='1')assert(audio?.text===spoken,id);
+  if(audio?.text!==spoken)continue;
+  assert(audio.duration_ms>0,id);
+  assert.equal(crypto.createHash('sha256').update(fs.readFileSync('public/'+audio.path)).digest('hex'),audio.sha256,id);
  }
 });
 

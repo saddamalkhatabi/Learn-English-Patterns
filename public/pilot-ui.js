@@ -7,8 +7,9 @@ const dialogueReady=Promise.all(['dialogues.json','dialogue-audio.json'].map(pat
   const signature=dialogue.lines.map(line=>[line.en,line.voice]);
   return {...dialogue,audio:audio&&JSON.stringify(audio.signature)===JSON.stringify(signature)?audio:null};
  }));
-const pilotReady=Promise.all([fetch('pilot.json').then(r=>{if(!r.ok)throw Error('pilot');return r.json()}),expansionReady,dialogueReady]).then(([data,expansion,dialogues])=>{
- data.dialogues=dialogues;
+const trainingAudioReady=fetch('training-audio.json').then(r=>r.ok?r.json():{}).catch(()=>({}));
+const pilotReady=Promise.all([fetch('pilot.json').then(r=>{if(!r.ok)throw Error('pilot');return r.json()}),expansionReady,dialogueReady,trainingAudioReady]).then(([data,expansion,dialogues,trainingAudio])=>{
+ data.dialogues=dialogues;data.requireConversation=true;data.trainingAudio=trainingAudio;
  if(expansion?.schema===3){
   data.patterns.push(...expansion.patterns);
   data.sentences.push(...expansion.sentences);
@@ -19,7 +20,7 @@ const pilotReady=Promise.all([fetch('pilot.json').then(r=>{if(!r.ok)throw Error(
  for(const p of patterns)if(p.id===13)p.topic='الرغبات والخطط';
  for(const topic of new Set(patterns.map(p=>p.topic)))if(!units.some(u=>u.topic===topic))units.unshift({name:topic,desc:'تعرّف على البناء من خلال مواقف متنوعة، ثم كوّن أفكارك الخاصة.',topic,icon:'◎',color:'mint',time:'على إيقاعك'});
  const audio=document.createElement('audio');audio.id='route-audio';audio.preload='auto';document.body.appendChild(audio);
- route=new NasaqRoutePlayer({data:PILOT,audio,storage:localStorage,onchange:()=>{if(route)updateCoach()}});
+ route=new NasaqRoutePlayer({data:PILOT,audio,storage:localStorage,narrate:narrateTrainingCue,onchange:()=>{if(route)updateCoach()}});
  audio.addEventListener('playing',()=>{cancelAnimationFrame(coachFrame);const tick=()=>{if(!route.running||audio.paused)return;if(page==='coach')paintCoachWords(audio.currentTime*1000);coachFrame=requestAnimationFrame(tick)};tick()});
  if(['coach','catalog','home','path','quality','library'].includes(page))render();
  return data;

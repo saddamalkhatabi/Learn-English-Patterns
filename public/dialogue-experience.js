@@ -92,8 +92,8 @@ function dialoguePanel(dialogue, jump){
   ${referenceTurns.map(line=>`<div>${dialogueSourceNote(line)}<p lang="en" dir="ltr">${dialogueWords(line)}</p></div>`).join('')}
   </details>
   <div class="dialogue-active" aria-label="${T('المقطع الحالي','Current turn')}"></div>
-  <details class="dialogue-transcript" ${dialogue.audio?'':'open'}>
-   <summary>${T('عرض كل المحادثة','Show full conversation')}</summary>
+  <details class="dialogue-transcript" open>
+   <summary><span class="transcript-show">${T('عرض المحادثة كاملة','Show full conversation')}</span><span class="transcript-hide">${T('إخفاء نص المحادثة','Hide conversation transcript')}</span></summary>
    <ol>${dialogue.lines.map((line,i)=>`<li data-dialogue-line="${i}">
     <strong>${line.voice==='male'?T('عمر','Omar'):T('سارة','Sara')}</strong>
     <div><p lang="en" dir="ltr">${dialogueWords(line)}</p>${EP.ar(line.ar)}${dialogueSourceNote(line)}</div>
@@ -133,13 +133,15 @@ function jumpCoachDialogue(index){
  route.seek(turn.start_ms/1000);
  if(!route.running)route.play();
 }
-function openDialogue(id,queued=false,hostId='dialogue-player'){
+function openDialogue(id,queued=false,hostId='dialogue-player',preview=false){
  const dialogue=PILOT?.dialogues.find(d=>d.id===id);
  const host=document.getElementById(hostId);
  if(!dialogue||!host)return;
  if(!queued)dialogueQueue=null;
- if(referencePlayerOpen)closeReferencePlayer();
- stopSpeech();
+ if(!preview){
+  if(referencePlayerOpen)closeReferencePlayer();
+  stopSpeech();
+ }
  host.querySelector('audio')?.pause();
  host.innerHTML=(dialogue.audio?
   `<div class="dialogue-play-status" role="status">${queued?`${dialogueQueue.index+1} / ${dialogueQueue.ids.length} · ${dialogueQueue.label}`:''}</div>
@@ -158,11 +160,15 @@ function openDialogue(id,queued=false,hostId='dialogue-player'){
    pauseDialogueAudio(audio);
    stopSpeechBeforeDialogues();
   });
-  audio.addEventListener('ended',()=>{if(queued&&dialogueQueue&&audio===host.querySelector('audio'))advanceDialogueQueue(1)});
+  audio.addEventListener('ended',()=>{
+   if(audio!==host.querySelector('audio'))return;
+   if(hostId==='lesson-dialogue-player')finishLessonConversation(dialogue,audio);
+   if(queued&&dialogueQueue)advanceDialogueQueue(1);
+  });
   paint();
-  audio.play().catch(()=>{});
+  if(!preview)audio.play().catch(()=>{});
  }
- host.scrollIntoView({block:'start'});
+ if(!preview)host.scrollIntoView({block:'start'});
 }
 function playAllDialogues(filtered=false){
  const rows=filtered?filteredDialogueEntries().map(entry=>entry.dialogue):(PILOT?.dialogues||[]);
@@ -193,34 +199,48 @@ function jumpStandaloneDialogue(index,button){
  audio.currentTime=turn.start_ms/1000;
  audio.play().catch(()=>{});
 }
-function patternDialogueList(patternId,hostId){
+function lessonConversationComplete(patternId){return Boolean(state.lessonConversations?.[patternId])}
+function finishLessonConversation(dialogue,audio){
+ const status=$('#lesson-conversation-status');
+ if(!status||stage!==6)return;
+ if(!NasaqRoutePlayer.heardConversation(audio,dialogue.audio)){
+  status.textContent=T('بقي جزء من التسجيل لم تستمع إليه. شغّل المحادثة من البداية.','Part of the recording was skipped. Play the conversation from the beginning.');
+  return;
+ }
+ state.lessonConversations={...state.lessonConversations,[current.id]:dialogue.id};
+ persist();
+ status.textContent=T('✓ استمعت إلى محادثة كاملة. يمكنك إنهاء الدرس أو سماع محادثة أخرى.','✓ You listened to a full conversation. Finish the lesson or try another conversation.');
+ $('#lesson-step-feedback').textContent='';
+}
+function playLessonConversation(){
+ const audio=$('#lesson-dialogue-player audio');
+ if(!audio)return;
+ audio.currentTime=0;
+ audio.play().catch(()=>{const status=$('#lesson-conversation-status');if(status)status.textContent=T('تعذر تشغيل التسجيل. تحقق من الاتصال أو نزّل الصوت ثم أعد المحاولة.','Audio could not play. Check your connection or download the audio, then try again.')});
+}
+function lessonConversationPanel(patternId){
  const choices=route?.dialoguesForPattern(patternId)||[];
- if(!choices.length)return '';
- return `<details class="panel pattern-dialogues">
-  <summary>${T('تدرّب بالمحادثات على هذا النمط','Practise this pattern in conversations')} · ${choices.length}</summary>
-  <div class="buttonrow">${choices.map(dialogue=>
-   `<button class="secondary" onclick="openDialogue('${H(dialogue.id)}',false,'${hostId}')">
-    ${dialogue.audio?'▷ ':''}${H(T(dialogue.ar,dialogue.en))}
-   </button>`
-  ).join('')}</div>
-  <div id="${hostId}" data-dialogue-player></div>
- </details>`;
+ const ordered=[...choices].sort((a,b)=>Number(Boolean(b.audio))-Number(Boolean(a.audio)));
+ return `<section id="lesson-conversation">
+ <h2>${T('طبّق النمط في محادثة','Apply the pattern in conversation')}</h2>
+ <p>${T('اختر موقفًا واستمع إلى محادثة كاملة واحدة على الأقل. يمكنك متابعة النص أو إخفاؤه لتتدرّب بأذنك.','Choose a situation and listen to at least one full conversation. Follow the transcript or hide it to train your ear.')}</p>
+ <p id="lesson-conversation-status" role="status">${lessonConversationComplete(patternId)?T('✓ أكملت الاستماع المطلوب.','✓ Required listening complete.'):''}</p>
+ ${ordered.length?`<label class="field">${T('اختر محادثة','Choose a conversation')}<select id="lesson-dialogue-select" onchange="selectLessonConversation()">
+ ${ordered.map(d=>`<option value="${H(d.id)}">${H(T(d.ar,d.en))}${d.audio?'':T(' · النص فقط',' · Transcript only')}</option>`).join('')}
+ </select></label><div class="buttonrow"><button class="primary" id="lesson-dialogue-play" onclick="playLessonConversation()">▷ ${T('استمع من البداية','Listen from the beginning')}</button><button class="secondary" onclick="replayLessonStageCue()">♪ ${T('اسمع تقديم المرحلة','Hear the stage introduction')}</button></div>`:`<p>${T('لم تُحمّل المحادثات بعد. أعد فتح الدرس بعد الاتصال.','Conversations have not loaded yet. Reopen the lesson after connecting.')}</p>`}
+ <div id="lesson-dialogue-player" data-dialogue-player></div></section>`;
+}
+function selectLessonConversation(){
+ const id=$('#lesson-dialogue-select')?.value;
+ if(!id)return;
+ openDialogue(id,false,'lesson-dialogue-player',true);
+ $('#lesson-dialogue-play').disabled=!$('#lesson-dialogue-player audio');
 }
 const renderLessonBeforeDialogues=renderLesson;
 renderLesson=function(){
  $('#lesson-dialogue-player audio')?.pause();
  renderLessonBeforeDialogues();
- $('.lesson-body .stage-label')?.insertAdjacentHTML('afterend',patternDialogueList(current?.id,'lesson-dialogue-player'));
-};
-const updateCoachBeforeDialogues=updateCoach;
-updateCoach=function(){
- updateCoachBeforeDialogues();
- const host=$('#coach-related-dialogues');
- const patternId=route?.pattern?.id;
- if(!host||host.dataset.patternId===String(patternId))return;
- host.querySelector('audio')?.pause();
- host.dataset.patternId=String(patternId);
- host.innerHTML=patternDialogueList(patternId,'coach-dialogue-player');
+ if(stage===6)selectLessonConversation();
 };
 const toggleCoachBeforeDialogues=toggleCoach;
 toggleCoach=function(){
