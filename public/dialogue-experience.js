@@ -74,16 +74,29 @@ function openDialogueLesson(id){
  releaseDialoguePlayer();
  openLesson(id);
 }
+function dialogueScene(id){
+ if(id?.startsWith('ref-'))return REFERENCE_CORPUS?.sentences.find(row=>row.id===id);
+ return PILOT?.sentences.find(row=>row.id===id);
+}
+function dialogueSourceNote(line){
+ if(!line.referenceId)return '';
+ const number=Number(line.referenceId.slice(4));
+ return `<small class="dialogue-source">${T(`من مكتبة الألف جملة · ${number}`,`From the 1,000-sentence library · ${number}`)}</small>`;
+}
 function dialoguePanel(dialogue, jump){
+ const patterns=[...new Set(dialogue.lines.flatMap(line=>line.patterns))];
+ const referenceTurns=dialogue.lines.filter(line=>line.referenceId);
  return `<section class="dialogue-panel"><h2>${H(T(dialogue.ar,dialogue.en))}</h2>
-  <details class="dialogue-patterns"><summary>${T('الأنماط في هذه المحادثة','Patterns in this conversation')} · ${new Set(dialogue.lines.flatMap(line=>line.patterns)).size}</summary>
-  <div class="buttonrow">${dialoguePatterns(dialogue.lines.flatMap(line=>line.patterns))}</div></details>
+  <details class="dialogue-patterns"><summary>${T('الأنماط في هذه المحادثة','Patterns in this conversation')}</summary>
+  ${patterns.length?`<div class="buttonrow">${dialoguePatterns(patterns)}</div>`:''}
+  ${referenceTurns.map(line=>`<div>${dialogueSourceNote(line)}<p lang="en" dir="ltr">${dialogueWords(line)}</p></div>`).join('')}
+  </details>
   <div class="dialogue-active" aria-label="${T('المقطع الحالي','Current turn')}"></div>
   <details class="dialogue-transcript" ${dialogue.audio?'':'open'}>
    <summary>${T('عرض كل المحادثة','Show full conversation')}</summary>
    <ol>${dialogue.lines.map((line,i)=>`<li data-dialogue-line="${i}">
     <strong>${line.voice==='male'?T('عمر','Omar'):T('سارة','Sara')}</strong>
-    <div><p lang="en" dir="ltr">${dialogueWords(line)}</p>${EP.ar(line.ar)}</div>
+    <div><p lang="en" dir="ltr">${dialogueWords(line)}</p>${EP.ar(line.ar)}${dialogueSourceNote(line)}</div>
     ${dialogue.audio?`<button class="textlink" onclick="${jump}(${i},this)" aria-label="${T('استمع من الدور','Listen from turn')} ${i+1}">▷</button>`:''}
    </li>`).join('')}</ol>
   </details></section>`;
@@ -97,20 +110,21 @@ function paintDialogue(panel,dialogue,ms){
  const index=isTitle?-1:turns.findIndex((turn,i)=>i===turns.length-1||ms<turns[i+1].start_ms);
  const line=isTitle?{voice:'female',en:title,ar:dialogue.ar,patterns:[],scene:dialogue.lines[0].scene}:dialogue.lines[index];
  const turn=isTitle?intro:turns[index];
- if(active.dataset.turn!==String(index)){
-  active.dataset.turn=index;
-  const example=PILOT.sentences.find(s=>s.id===line.scene);
+ const example=dialogueScene(line.scene);
+ const turnKey=`${index}:${Boolean(example?.image)}`;
+ if(active.dataset.turn!==turnKey){
+  active.dataset.turn=turnKey;
   const speaker=line.voice==='male'?T('عمر','Omar'):T('سارة','Sara');
   active.innerHTML=`<div class="dialogue-photo">${example?.image?pilotScene(example):''}</div><div>
    <small>${isTitle?T('عنوان المحادثة','Conversation title'):`${speaker} · ${index+1} / ${turns.length}`}</small>
-   <p lang="en" dir="ltr">${dialogueWords(line)}</p>${EP.ar(line.ar)}
+   <p lang="en" dir="ltr">${dialogueWords(line)}</p>${EP.ar(line.ar)}${dialogueSourceNote(line)}
    <div class="dialogue-turn-patterns">${dialoguePatterns(line.patterns)}</div></div>`;
   panel.querySelectorAll('[data-dialogue-line]').forEach(row=>row.classList.toggle('active',+row.dataset.dialogueLine===index));
  }
  const cue=turn.words.findIndex(word=>word.start_ms<=ms&&ms<word.end_ms);
  panel.querySelectorAll('[data-dialogue-word]').forEach(word=>{
   const row=word.closest('[data-dialogue-line]');
-  word.classList.toggle('speaking',(!row||+row.dataset.dialogueLine===index)&&+word.dataset.dialogueWord===cue);
+  word.classList.toggle('speaking',(active.contains(word)||row&&+row.dataset.dialogueLine===index)&&+word.dataset.dialogueWord===cue);
  });
 }
 function jumpCoachDialogue(index){
@@ -229,14 +243,15 @@ playCatalogSentence=function(id){
  playCatalogBeforeDialogues(id);
 };
 function dialogueSeriesLabel(series){
- return series===1?T('المستوى الأول','Level 1'):T(`المستوى ${series}`,`Level ${series}`);
+ const ordinal={1:'الأول',2:'الثاني'};
+ return T(`المستوى ${ordinal[series]??series}`,`Level ${series}`);
 }
 function dialoguesPage(){
  const groups=new Map();
  for(const entry of dialogueEntries()){
   if(entry.status!=='planned')groups.set(entry.series,(groups.get(entry.series)||0)+1);
  }
- const seriesChoices=Object.fromEntries([...groups.keys()].map(series=>[series,[`المستوى ${series===1?'الأول':series}`,`Level ${series}`]]));
+ const seriesChoices=Object.fromEntries([...groups.keys()].map(series=>[series,[dialogueSeriesLabel(series),dialogueSeriesLabel(series)]]));
  return head(T('المحادثات','Conversations'),T('استمع إلى عنوان كل محادثة ثم إلى شخصين يستخدمان الأنماط في موقف واحد. يتغيّر المشهد مع الأدوار، ويمكنك فتح النص الكامل في أي وقت.','Hear each title, then listen to two people use patterns in context. The scene follows the turns, and the full transcript is always available.'))+
   `<div class="buttonrow dialogue-series">${[...groups].map(([series,count])=>
    `<button class="secondary" onclick="selectDialogueSeries(${series})">${dialogueSeriesLabel(series)} · ${count}</button>`
@@ -358,10 +373,9 @@ function paintDialogueCatalog(){
   host.innerHTML=`<p class="panel">${PILOT?T('لا توجد نتائج لهذه الفلاتر. جرّب مسحها أو تغيير البحث.','No matches. Reset the filters or try a different search.'):T('جارٍ تحميل المحادثات…','Loading conversations…')}</p>`;
   return;
  }
- const scenes=new Map((PILOT?.sentences||[]).map(row=>[row.id,row]));
  host.innerHTML=entries.slice(offset,offset+dialoguesPerPage).map(entry=>{
   const {dialogue,category,level,purpose}=entry;
-  const scene=scenes.get(dialogue?.lines[0].scene);
+  const scene=dialogueScene(dialogue?.lines[0].scene);
   const meta=[dialogueSeriesLabel(entry.series),T(...(dialogueCategories[category]||dialogueCategories.daily)),level,purpose&&T(...dialoguePurposes[purpose])].filter(Boolean).join(' · ');
   const label=dialogue?.audio?T('مسجّلة','Recorded'):dialogue?T('نص متاح','Transcript available'):T('ضمن الخطة','Planned');
   const action=dialogue?`<button class="secondary" onclick="openDialogue('${H(dialogue.id)}')">

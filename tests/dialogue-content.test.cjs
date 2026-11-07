@@ -7,14 +7,16 @@ const media = require('../public/dialogue-audio.json');
 const foundation = require('../public/pilot.json');
 const expansion = require('../public/expansion-media.json');
 const plan = require('../public/dialogue-plan.json');
+const corpus = require('../public/source-corpus.json');
+const references = new Map(corpus.sentences.map(row => [row.id, row]));
 
 test('conversation turns link to real patterns, scenes and measured cues within a single file', () => {
  const patterns = new Set([...foundation.patterns, ...expansion.patterns].map(p => p.id));
  const {scenes:archive} = require('../public/scene-archive.json');
  const approvedScenes = new Set(archive.map(scene => scene.id));
- const scenes = new Set([...foundation.sentences, ...expansion.sentences].filter(s => approvedScenes.has(s.id)).map(s => s.id));
+ const scenes = new Set([...foundation.sentences, ...expansion.sentences, ...corpus.sentences].filter(s => approvedScenes.has(s.id)).map(s => s.id));
  for(const dialogue of dialogues){
-  assert(patterns.has(dialogue.after));
+  assert(patterns.has(dialogue.after)||dialogue.after===null&&dialogue.lines.some(line=>line.referenceId),dialogue.id);
   const audio=media[dialogue.id];
   const signature=dialogue.lines.map(line=>[line.en,line.voice]);
   const matches=audio&&JSON.stringify(audio.signature)===JSON.stringify(signature);
@@ -36,7 +38,7 @@ test('conversation turns link to real patterns, scenes and measured cues within 
    assert(line.patterns.every(id=>patterns.has(id)),line.en);
    assert(scenes.has(line.scene),line.scene);
    if(line.focus){
-    assert.equal(Boolean(line.focus.length),Boolean(line.patterns.length),line.en);
+    assert.equal(Boolean(line.focus.length),Boolean(line.patterns.length||line.referenceId),line.en);
     assert(line.focus.every((index,j)=>Number.isInteger(index)&&index>(line.focus[j-1]??-1)
      &&index<line.en.split(/\s+/).length),line.en);
    }
@@ -72,7 +74,7 @@ test('level one has 200 conversations, with multiple contexts for every course p
   assert(dialogue,entry.id);
   const targets=dialogue.lines.flatMap(line=>line.patterns);
   if(entry.targets)assert.deepEqual(new Set(targets),new Set(entry.targets),entry.id);
-  assert(entry.taskAr&&entry.taskEn&&targets.length,entry.id);
+  assert(entry.taskAr&&entry.taskEn&&(targets.length||dialogue.lines.some(line=>line.referenceId)),entry.id);
   for(const id of targets){
    if(!categoriesByPattern.has(id))categoriesByPattern.set(id,new Set());
    categoriesByPattern.get(id).add(entry.category);
@@ -90,4 +92,25 @@ test('level one has 200 conversations, with multiple contexts for every course p
  for(const id of plan.corePatterns){
   assert(categoriesByPattern.get(id)?.size>=2,`Core pattern ${id} needs two domains`);
  }
+});
+
+test('level two has 200 conversations tied to exact library examples across all grammar categories', () => {
+ const levelTwo=new Set(plan.entries.filter(entry=>entry.series===2).map(entry=>entry.id));
+ assert.equal(levelTwo.size,200);
+ const used=new Set();
+ for(const dialogue of dialogues.filter(dialogue=>levelTwo.has(dialogue.id))){
+  const turns=dialogue.lines.filter(line=>line.referenceId);
+  assert(turns.length,dialogue.id);
+  for(const turn of turns){
+   const reference=references.get(turn.referenceId);
+   assert(reference,turn.referenceId);
+   assert.equal(turn.en,reference.en,dialogue.id);
+   assert.equal(turn.ar,reference.ar,dialogue.id);
+   assert(turn.focus.length,dialogue.id);
+   used.add(reference.id);
+  }
+ }
+ assert(used.size>=200);
+ const grammar=new Set([...used].flatMap(id=>references.get(id).grammar));
+ assert.deepEqual(grammar,new Set(corpus.taxonomy.grammar.map(item=>item.id)));
 });

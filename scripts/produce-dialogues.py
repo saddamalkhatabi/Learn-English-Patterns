@@ -1,4 +1,5 @@
 """Synthesize with Adam/Bella and publish one aligned MP3 per conversation."""
+import argparse
 import hashlib
 import json
 from pathlib import Path
@@ -20,9 +21,20 @@ def pcm(path):
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--shard-index', type=int, default=0)
+    parser.add_argument('--shard-count', type=int, default=1)
+    parser.add_argument('--output-dir', type=Path)
+    args = parser.parse_args()
+    if not 0 <= args.shard_index < args.shard_count:
+        parser.error('shard-index must be within shard-count')
+    if args.shard_count > 1 and args.output_dir is None:
+        parser.error('sharded runs require a separate output directory')
     output = PUBLIC / 'dialogue-audio.json'
     published = json.loads(output.read_text(encoding='utf-8'))
     dialogues = json.loads((PUBLIC / 'dialogues.json').read_text(encoding='utf-8'))['dialogues']
+    destination = args.output_dir or PUBLIC
+    (destination / 'assets/audio').mkdir(parents=True, exist_ok=True)
     catalog = {}
     for name in ('pilot', 'supplement', 'source-corpus', 'expansion-media'):
         for row in json.loads((PUBLIC / (name + '.json')).read_text(encoding='utf-8'))['sentences']:
@@ -30,6 +42,7 @@ def main():
                 catalog[(row['en'], voice)] = recording
     model = None
     result = {}
+    pending_index = 0
     for dialogue in dialogues:
         key = dialogue['id']
         assert re.fullmatch(r'[a-z0-9-]+', key) and key not in result
@@ -43,7 +56,12 @@ def main():
                     and prior.get('sha256') == hashlib.sha256(target.read_bytes()).hexdigest())
         title = dialogue['en'].strip().rstrip('.!?') + '.'
         if reusable and prior.get('title') == title and prior.get('intro'):
-            result[key] = prior
+            if args.output_dir is None:
+                result[key] = prior
+            continue
+        selected = pending_index % args.shard_count == args.shard_index
+        pending_index += 1
+        if not selected:
             continue
         previous_pcm = pcm(target) if reusable else None
         parts = []
@@ -98,10 +116,11 @@ def main():
             data = rendered.read_bytes()
             digest = hashlib.sha256(data).hexdigest()
             path = f'assets/audio/dialogue-{key}-{digest[:12]}.mp3'
-            (PUBLIC / path).write_bytes(data)
+            (destination / path).write_bytes(data)
             result[key] = {'path': path, 'sha256': digest, 'duration_ms': duration,
                            'title': title, 'intro': turns[0], 'signature': signature, 'turns': turns[1:]}
-    output.write_text(json.dumps(result, indent=2, ensure_ascii=False) + '\n', encoding='utf-8', newline='\n')
+    (destination / output.name).write_text(json.dumps(result, indent=2, ensure_ascii=False) + '\n',
+                                           encoding='utf-8', newline='\n')
 
 
 if __name__ == '__main__':

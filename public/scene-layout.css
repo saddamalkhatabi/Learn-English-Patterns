@@ -63,7 +63,9 @@ html[data-pattern-image="focus"] .lesson-active-example .lesson-scene{max-width:
 .dialogue-transcript{margin-top:14px}
 .dialogue-transcript li{padding:10px;border-inline-start:3px solid transparent}
 .dialogue-transcript li.active{border-color:var(--red);background:#fff2e8}
+[data-dialogue-word].pattern-token{color:var(--red);font-weight:700}
 [data-dialogue-word].speaking{background:#fee2a5;text-decoration:underline;text-underline-offset:3px}
+.dialogue-source{display:block;font-size:.82rem;color:var(--muted);margin-block:4px}
 #dialogue-player audio{width:100%;margin-block:10px}
 html[data-pattern-image="hidden"] .dialogue-photo{display:none}
 html[data-pattern-image="hidden"] .dialogue-active:not(:empty){grid-template-columns:1fr}

@@ -8,6 +8,7 @@ class NasaqRoutePlayer{
   for(const dialogue of data.dialogues||[]){
    const patterns=new Set([dialogue.after,...(dialogue.lines||[]).flatMap(line=>line.patterns||[])]);
    for(const id of patterns){
+    if(id==null)continue;
     const list=this.dialoguesByPattern.get(id)||[];
     list.push(dialogue);
     this.dialoguesByPattern.set(id,list);
