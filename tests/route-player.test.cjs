@@ -108,3 +108,54 @@ test('finished listening can replay from its first selected example',async()=>{
  assert.equal(p.session.phase,'sentence');
  assert.equal(p.sentence.id,'like-01');
 });
+
+test('narrated stages require hearing a complete conversation and preserve coverage on reload',async()=>{
+ const cueOrder=[];
+ const narrate=(phase,pattern)=>{cueOrder.push([phase,pattern.id]);return {done:Promise.resolve(true),stop(){}}};
+ const data={...source,requireConversation:true,dialogues:[{id:'cafe',after:3,audio:{
+  path:'assets/audio/dialogue-cafe.mp3',sha256:'test-only',duration_ms:6000,
+  turns:[{start_ms:500,end_ms:2500},{start_ms:2800,end_ms:6000}]
+ }}]};
+ const ranges=(...spans)=>({length:spans.length,start:i=>spans[i][0],end:i=>spans[i][1]});
+ const {p,audio,storage}=make(data,null,{narrate});
+ p.configure({patternIds:[3,111],readingSeconds:0,dialoguesPerPattern:0});
+ p.jumpTo('like-12');
+ await p.play();
+ assert.equal(p.session.phase,'sentence');
+ audio.fire('ended');
+ await new Promise(setImmediate);
+ assert.deepEqual(cueOrder,[['pattern-intro',3],['explanation-intro',3],['dialogue-intro',3]]);
+ assert.equal(p.session.phase,'dialogue');
+ assert.equal(p.finishDialogue(),false);
+ audio.played=ranges([5,6]);
+ audio.fire('ended');
+ assert.equal(p.session.phase,'dialogue');
+ assert.equal(p.session.offset,0);
+ await p.play();
+ audio.played=ranges([0,3]);
+ audio.currentTime=3;
+ p.pause();
+ const restored=make(data,JSON.parse(storage.getItem('nasaq-route-v2')),{narrate});
+ await restored.p.play();
+ assert.equal(restored.audio.currentTime,3);
+ restored.audio.played=ranges([3,6]);
+ restored.audio.fire('ended');
+ await new Promise(setImmediate);
+ assert.equal(restored.p.sentence.id,'enjoy-01');
+ assert.deepEqual(restored.p.session.completedDialogues,['cafe']);
+ assert.deepEqual(cueOrder.at(-1),['pattern-intro',111]);
+});
+
+test('a missing mandatory conversation holds the current pattern and permits retry',async()=>{
+ const {p,audio}=make({...source,requireConversation:true,dialogues:[]});
+ p.configure({patternIds:[3,111],readingSeconds:0});
+ p.jumpTo('like-12');
+ await p.play();
+ audio.fire('ended');
+ assert.equal(p.session.phase,'conversation-pending');
+ assert.equal(p.sentence.id,'like-12');
+ assert.equal(p.running,false);
+ await p.play();
+ assert.equal(p.session.phase,'conversation-pending');
+ assert.match(p.error,/لم يتوفر تسجيل/);
+});

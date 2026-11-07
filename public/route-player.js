@@ -2,15 +2,26 @@
 (function(root){
 'use strict';
 class NasaqRoutePlayer{
- static heardConversation(audio,recording){
+ static conversationCoverage(audio,previous=[]){
+  const ranges=[...previous];
+  for(let i=0;i<(audio.played?.length||0);i++)ranges.push([audio.played.start(i),audio.played.end(i)]);
+  const merged=[];
+  for(const [start,end] of ranges.sort((a,b)=>a[0]-b[0])){
+   const last=merged.at(-1);
+   if(last&&start<=last[1]+.05)last[1]=Math.max(last[1],end);
+   else merged.push([start,end]);
+  }
+  return merged;
+ }
+ static heardConversation(audio,recording,previous){
   const start=(recording?.turns?.[0]?.start_ms??0)/1000;
   const end=(recording?.turns?.at(-1)?.end_ms??recording?.duration_ms??0)/1000;
   if(end<=start)return false;
   let covered=start;
-  for(let i=0;i<(audio.played?.length||0);i++){
-   if(audio.played.end(i)<=covered)continue;
-   if(audio.played.start(i)>covered+.25)return false;
-   covered=audio.played.end(i);
+  for(const [a,b] of this.conversationCoverage(audio,previous)){
+   if(b<=covered)continue;
+   if(a>covered+.25)return false;
+   covered=b;
    if(covered>=end-.25)return true;
   }
   return false;
@@ -49,7 +60,7 @@ class NasaqRoutePlayer{
    if(this.requireConversation&&this.session.phase==='dialogue'){this.session.phase='conversation-pending';this.session.offset=0}
    else this.moveCursor();
   }
-  audio.addEventListener('timeupdate',()=>{if(!this.hasAudio)return;this.session.offset=Number.isFinite(audio.currentTime)?audio.currentTime:0;if(this.now()-this.lastSave>250){this.save();this.lastSave=this.now()}this.emit()});
+  audio.addEventListener('timeupdate',()=>{if(!this.hasAudio)return;this.session.offset=Number.isFinite(audio.currentTime)?audio.currentTime:0;if(this.now()-this.lastSave>250){this.rememberDialogueCoverage();this.save();this.lastSave=this.now()}this.emit()});
   audio.addEventListener('ended',()=>{
    if(!this.running)return;
    if(this.session.phase==='sentence')this.finishSentence();
@@ -86,13 +97,13 @@ class NasaqRoutePlayer{
  dialoguesForPattern(id){return this.dialoguesByPattern.get(id)||[]}
  get hasAudio(){return ['sentence','interlude','dialogue'].includes(this.session.phase)}
  get recording(){return this.session.phase==='dialogue'?this.activeDialogue?.audio:this.sentence?.recordings[this.session.voice]}
- get progress(){if(this.session.phase==='finished')return 100;return this.session.ids.length?100*(this.session.cursor+(['comparison','between','exercise','interlude','dialogue'].includes(this.session.phase)?1:(this.recording?.duration_ms?Math.min(1,this.session.offset*1000/this.recording.duration_ms):0)))/this.session.ids.length:0}
+ get progress(){if(this.session.phase==='finished')return 100;return this.session.ids.length?100*(this.session.cursor+(['comparison','between','exercise','interlude','dialogue','explanation-intro','dialogue-intro','conversation-pending'].includes(this.session.phase)?1:(this.recording?.duration_ms?Math.min(1,this.session.offset*1000/this.recording.duration_ms):0)))/this.session.ids.length:0}
  get wordIndex(){const ms=this.session.offset*1000;return this.recording?.words?.findIndex(w=>w.start_ms<=ms&&ms<w.end_ms)??-1}
  save(){try{this.storage.setItem('nasaq-route-v2',JSON.stringify(this.session))}catch{this.error='تعذر حفظ موضعك على هذا المتصفح.'}}
  emit(){this.onchange(this)}
  async play(){
   if(!this.sentence){this.error='اختر مسارًا يحتوي جملًا أولًا.';this.emit();return}
-  if(this.session.phase==='finished'){this.session.completed=[];this.session.completedDialogues=[];this.session.completedInterludes=[];this.jumpTo(this.session.ids[0])}
+  if(this.session.phase==='finished'){this.session.completed=[];this.session.completedDialogues=[];this.session.completedInterludes=[];delete this.session.introducedPattern;delete this.session.heardConversationPattern;this.jumpTo(this.session.ids[0])}
   this.error='';this.running=true;
   if(this.session.phase==='sentence'&&this.narrate&&this.session.introducedPattern!==this.pattern?.id){
    this.session.resumeSentenceOffset=this.session.offset;
@@ -130,7 +141,7 @@ class NasaqRoutePlayer{
   this.audio.playbackRate=this.session.rate;
   try{await this.audio.play();if(g!==this.generation||!this.running)return;this.emit()}catch(e){if(g!==this.generation)return;this.running=false;this.error='اضغط تشغيل للسماح بالصوت في متصفحك. سيبقى موضع الاستكمال محفوظًا.';this.emit()}
  }
- pause(){if(this.session?.phase==='comparison'&&this.comparisonEndsAt){this.session.comparisonRemainingMs=this.comparisonRemaining;this.comparisonEndsAt=null}this.generation++;this.running=false;this.cue?.stop();this.cue=null;if(this.audio){if(this.hasAudio&&this.audio.getAttribute('src')===this.recording?.path&&Number.isFinite(this.audio.currentTime))this.session.offset=this.audio.currentTime;this.audio.pause()}if(this.timer)this.clearTimer(this.timer);this.timer=null;if(this.session){this.save();this.emit()}}
+ pause(){if(this.session?.phase==='comparison'&&this.comparisonEndsAt){this.session.comparisonRemainingMs=this.comparisonRemaining;this.comparisonEndsAt=null}this.generation++;this.running=false;this.cue?.stop();this.cue=null;if(this.audio){if(this.hasAudio&&this.audio.getAttribute('src')===this.recording?.path&&Number.isFinite(this.audio.currentTime))this.session.offset=this.audio.currentTime;this.audio.pause();this.rememberDialogueCoverage()}if(this.timer)this.clearTimer(this.timer);this.timer=null;if(this.session){this.save();this.emit()}}
  finishSentence(){const sid=this.sentence.id;if(!this.session.completed.includes(sid))this.session.completed.push(sid);if(this.session.mode==='interactive'){this.audio.pause();this.session.phase='exercise';this.running=false;this.save();this.emit();return}this.advance()}
  advance(){
   const next=this.data.sentences.find(s=>s.id===this.session.ids[this.session.cursor+1]);
@@ -144,7 +155,12 @@ class NasaqRoutePlayer{
  startCue(phase){this.generation++;this.audio.pause();this.session.phase=phase;this.session.offset=0;this.save();this.emit();if(this.running)this.play()}
  startReading(){
   const seconds=this.session.readingSeconds??(Number(root.EP?.prefs?.readingSeconds)||25);
-  if(seconds===0){this.continueAfterComparison();return}
+  if(seconds===0){
+   if(!this.requireConversation&&!this.session.autoNextPattern&&this.session.cursor+1<this.session.ids.length){
+    this.session.phase='between';this.running=false;this.save();this.emit();return;
+   }
+   this.continueAfterComparison();return;
+  }
   this.session.phase='comparison';this.session.comparisonDurationMs=seconds*1000;
   this.session.comparisonRemainingMs=this.session.comparisonDurationMs;this.comparisonEndsAt=null;
   this.save();if(this.running)this.scheduleComparison();this.emit();
@@ -178,15 +194,26 @@ class NasaqRoutePlayer{
   this.generation++;
   this.audio.pause();
   this.session.dialogueId=id;this.session.phase='dialogue';this.session.offset=0;
+  delete this.session.dialogueCoverage;
   this.audio.removeAttribute('src');this.audio.load();this.save();this.emit();
   if(this.running)this.play();
  }
+ get savedDialogueCoverage(){
+  const stored=this.session.dialogueCoverage;
+  return stored?.sha256===this.activeDialogue?.audio?.sha256?stored?.ranges:undefined;
+ }
+ rememberDialogueCoverage(){
+  if(!this.requireConversation||this.session?.phase!=='dialogue'||!this.recording||this.audio.getAttribute('src')!==this.recording.path)return;
+  const ranges=NasaqRoutePlayer.conversationCoverage(this.audio,this.savedDialogueCoverage);
+  this.session.dialogueCoverage={sha256:this.recording.sha256,ranges};
+ }
  finishDialogue(ended=false){
-  const heard=ended&&NasaqRoutePlayer.heardConversation(this.audio,this.activeDialogue?.audio);
+  const heard=ended&&NasaqRoutePlayer.heardConversation(this.audio,this.activeDialogue?.audio,this.savedDialogueCoverage);
   if(this.requireConversation&&!this.heardPatternConversation&&!heard){
-   if(ended){this.running=false;this.session.offset=0;this.audio.currentTime=0;this.save()}
+   if(ended){this.running=false;this.session.offset=0;this.audio.currentTime=0;this.rememberDialogueCoverage();this.save()}
    this.error='استمع إلى محادثة واحدة كاملة قبل الانتقال إلى النمط التالي.';this.emit();return false;
   }
+  this.error='';
   if(heard||!this.requireConversation){
    this.session.completedDialogues=[...new Set([...(this.session.completedDialogues||[]),this.session.dialogueId])];
    this.session.heardConversationPattern=this.pattern?.id;
@@ -198,6 +225,7 @@ class NasaqRoutePlayer{
    return;
   }
   this.session.dialogueIds=[];this.session.dialogueCursor=0;
+  delete this.session.dialogueCoverage;
   if(this.requireConversation&&!this.session.autoNextPattern)this.running=false;
   this.moveCursor();
   return true;
