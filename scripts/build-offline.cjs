@@ -12,6 +12,10 @@ for(const [id,spoken] of Object.entries(require('./training-cues.cjs'))){
  const audio=cues[id];
  if(audio?.text===spoken)sets.course.add(audio.path);
 }
+for(const scene of require('../public/idea-scenes.json').scenes)sets.course.add(scene.path);
+for(const entry of Object.values(require('../public/conversation-scenes.json').scenes)){
+ for(const scene of [entry.cover,...Object.values(entry.turns)].filter(Boolean))sets.course.add(scene.path);
+}
 for(const set of [sets.course,sets.library])for(const p of set)sets.all.add(p);
 const plan=require('../production/plans/expansion-all-153.json');for(const file of plan.manifest_paths)add(JSON.parse(fs.readFileSync(file)).sentences,sets.all);
 const media=[...sets.all].sort().map(p=>({path:p,sha256:sha(p),bytes:fs.statSync(path.join(root,p)).size,groups:['course','library','all'].filter(g=>sets[g].has(p))}));

@@ -1,0 +1,41 @@
+const fs=require('node:fs'),assert=require('node:assert/strict'),crypto=require('node:crypto');
+const {asset,webpSize}=require('./media-validation.cjs');
+const author=require('../production/conversation-scenes.json');
+const ideas=new Map(require('../public/idea-scenes.json').scenes.map(s=>[s.id,s]));
+const dialogues=new Map(require('../public/dialogues.json').dialogues.map(d=>[d.id,d]));
+function resolve(input){
+ if(typeof input==='string'){
+  const scene=ideas.get(input);
+  assert(scene,`Unknown Idea Lab scene: ${input}`);
+  const {id,path,width,height,sha256,sentenceEn:en,sentenceAr:ar}=scene;
+  return {id,path,width,height,sha256,en,ar};
+ }
+ const {id,path,width,height,en,ar}=input;
+ assert(/^conv-[a-z0-9-]+$/.test(id)&&/^assets\/scenes\/conversations\/[a-z0-9-]+\.webp$/.test(path),path);
+ assert(Number.isInteger(width)&&width>0&&Number.isInteger(height)&&height>0&&en&&ar,id);
+ const bytes=fs.readFileSync(asset(process.cwd(),path));
+ assert.deepEqual(webpSize(bytes),[width,height],path);
+ return {id,path,width,height,en,ar,sha256:crypto.createHash('sha256').update(bytes).digest('hex')};
+}
+const scenes={};
+const registered=new Map();
+function register(input){
+ const scene=resolve(input);
+ if(registered.has(scene.id))assert.deepEqual(scene,registered.get(scene.id),scene.id);
+ registered.set(scene.id,scene);
+ return scene;
+}
+for(const [id,input] of Object.entries(author)){
+ const dialogue=dialogues.get(id);
+ assert(dialogue,id);
+ const turns={};
+ for(const [position,image] of Object.entries(input.turns||{})){
+  assert(/^[1-9][0-9]*$/.test(position)&&+position<=dialogue.lines.length,`${id} turn ${position}`);
+  turns[position]=register(image);
+ }
+ const cover=input.cover?register(input.cover):null;
+ assert(cover||Object.keys(turns).length,id);
+ scenes[id]={cover,turns};
+}
+fs.writeFileSync('public/conversation-scenes.json',JSON.stringify({schema:1,scenes},null,2)+'\n');
+console.log(`Indexed scene links for ${Object.keys(scenes).length} conversations`);

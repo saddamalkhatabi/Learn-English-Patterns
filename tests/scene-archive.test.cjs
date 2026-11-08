@@ -2,6 +2,36 @@ const test=require('node:test'),assert=require('node:assert/strict');
 const archive=require('../public/scene-archive.json');
 const rows=[...require('../public/pilot.json').sentences,...require('../public/source-corpus.json').sentences,...require('../public/expansion-media.json').sentences];
 const visible=new Set(['assistant-reviewed','visually_reviewed','imported-unreviewed']);
+test('Idea Lab offers 100 distinct bilingual scenes and conversation art resolves by cover or turn',()=>{
+ const fs=require('node:fs');
+ const {asset,sha,webpSize}=require('../scripts/media-validation.cjs');
+ const {scenes,topics}=require('../public/idea-scenes.json');
+ const offline=new Map(require('../public/offline-manifest.json').media.map(row=>[row.path,row]));
+ assert.equal(scenes.length,100);
+ assert.equal(new Set(scenes.map(s=>s.sha256)).size,100);
+ assert.equal(new Set(scenes.map(s=>s.taskEn)).size,100);
+ for(const topic of topics)assert.equal(scenes.filter(s=>s.topic===topic.id).length,10,topic.id);
+ const verify=image=>{
+  const file=asset(process.cwd(),image.path);
+  assert.equal(sha(file),image.sha256);
+  assert.deepEqual(webpSize(fs.readFileSync(file)),[image.width,image.height]);
+  assert(offline.get(image.path)?.groups.includes('course'),image.id);
+ };
+ for(const scene of scenes){
+  verify(scene);
+  assert(scene.sentenceEn&&scene.sentenceAr&&scene.taskAr&&scene.words.length>=4);
+  assert(scene.words.every(word=>word.en&&word.ar));
+ }
+ const dialogues=new Map(require('../public/dialogues.json').dialogues.map(d=>[d.id,d]));
+ for(const [id,entry] of Object.entries(require('../public/conversation-scenes.json').scenes)){
+  assert(dialogues.has(id),id);
+  if(entry.cover)verify(entry.cover);
+  for(const [turn,image] of Object.entries(entry.turns)){
+   assert(+turn>0&&+turn<=dialogues.get(id).lines.length,id);
+   verify(image);
+  }
+ }
+});
 test('scene archive covers every displayable binding with bilingual search topics and retained briefs',()=>{
  const topics=new Map(archive.topics.map(t=>[t.id,t]));
  const expected=rows.filter(s=>visible.has(s.image?.status)).map(s=>s.id).sort();

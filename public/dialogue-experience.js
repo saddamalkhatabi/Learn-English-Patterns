@@ -47,7 +47,7 @@ let dialogueResume={};
 try{dialogueResume=JSON.parse(localStorage.getItem('nasaq-dialogue-resume-v1'))||{}}catch{}
 let dialoguePriority=dialogueResume.priority==='image'?'image':'text';
 let dialogueSceneArchive={};
-fetch('conversation-scenes.json').then(r=>r.ok?r.json():{}).then(data=>{dialogueSceneArchive=data.scenes||{}}).catch(()=>{});
+const dialogueArchiveReady=fetch('conversation-scenes.json').then(r=>r.ok?r.json():{}).then(data=>{dialogueSceneArchive=data.scenes||{}}).catch(()=>{});
 function saveDialogueResume(){try{localStorage.setItem('nasaq-dialogue-resume-v1',JSON.stringify(dialogueResume))}catch{}}
 function setDialoguePriority(value){
  dialoguePriority=value==='image'?'image':'text';dialogueResume.priority=dialoguePriority;saveDialogueResume();
@@ -111,7 +111,7 @@ function dialogueImageButton(dialogue,index,thumb=false){
 function enlargeDialogueScene(button){
  const dialog=document.createElement('dialog');
  dialog.className='dialogue-image-dialog';
- dialog.innerHTML=`<div class="dialogue-image-heading"><h2>${T('مشهد المحادثة','Conversation scene')}</h2><form method="dialog"><button class="secondary" autofocus aria-label="${T('إغلاق الصورة','Close image')}">×</button></form></div><figure>${button.innerHTML}</figure>`;
+ dialog.innerHTML=`<div class="dialogue-image-heading"><h2>${T('عرض المشهد','Scene view')}</h2><form method="dialog"><button class="secondary" autofocus aria-label="${T('إغلاق الصورة','Close image')}">×</button></form></div><figure>${button.innerHTML}</figure>`;
  // Nest within the lesson so it stays available when that lesson is modal.
  (button.closest('#lesson')||document.body).append(dialog);
  dialog.addEventListener('close',()=>{dialog.remove();button.focus()},{once:true});
@@ -149,9 +149,9 @@ function paintDialogue(panel,dialogue,ms){
  const index=isTitle?-1:turns.findIndex((turn,i)=>i===turns.length-1||ms<turns[i+1].start_ms);
  const line=isTitle?{voice:'female',en:title,ar:dialogue.ar,patterns:[],scene:dialogue.lines[0].scene}:dialogue.lines[index];
  const turn=isTitle?intro:turns[index];
- const visual=dialogueImageButton(dialogue,index);
- const turnKey=`${dialogue.id}:${index}:${Boolean(visual)}`;
+ const turnKey=`${dialogue.id}:${index}`;
  if(active.dataset.turn!==turnKey){
+  const visual=dialogueImageButton(dialogue,index);
   active.dataset.turn=turnKey;
   const speaker=line.voice==='male'?T('عمر','Omar'):T('سارة','Sara');
   active.innerHTML=`<div class="dialogue-photo">${visual}</div><div class="dialogue-live-text">
@@ -196,7 +196,7 @@ function openDialogue(id,queued=false,hostId='dialogue-player',preview=false,res
  host.innerHTML=(dialogue.audio?
   `<div class="dialogue-play-status" role="status">${queued?`${index+1} / ${total} · ${dialogueQueue.label}`:''}</div>
   <div class="dialogue-transport"><button type="button" class="primary" data-dialogue-toggle onclick="toggleDialogueTransport(this)">▶ ${T('تشغيل','Play')}</button>
-  <audio controls preload="metadata" src="${H(dialogue.audio.path)}" aria-label="${T('مشغّل المحادثة','Conversation player')}"></audio></div>${queued?`<div class="buttonrow">
+  <audio controls preload="metadata" src="${H(dialogue.audio.path)}" aria-label="${T('مشغّل المحادثة','Conversation player')}"></audio></div>${queued?`<div class="buttonrow" data-dialogue-queue-controls>
   <button class="secondary" onclick="advanceDialogueQueue(-1)" ${index===0?'disabled':''}>${T('الحوار السابق','Previous conversation')}</button>
   <button class="secondary" onclick="advanceDialogueQueue(1)" ${index+1>=total?'disabled':''}>${T('الحوار التالي','Next conversation')}</button>
   <button class="secondary" onclick="stopDialogueQueue()">${T('أوقف التتابع','Stop continuous play')}</button></div>`:''}`:
@@ -212,6 +212,8 @@ function openDialogue(id,queued=false,hostId='dialogue-player',preview=false,res
    if(hostId==='lesson-dialogue-player')coverage=NasaqRoutePlayer.conversationCoverage(audio,coverage);
    dialogueResume[key]={id,sha256:dialogue.audio.sha256,offset:audio.ended?0:audio.currentTime,coverage:audio.ended?undefined:coverage,queue:queue?.ids};
    lastSave=Date.now();saveDialogueResume();
+   const resumeButton=document.querySelector(`[data-dialogue-resume="${key}"]`);
+   if(resumeButton)resumeButton.hidden=!dialogueResume[key].offset;
   };
   const paint=()=>paintDialogue(host,dialogue,audio.currentTime*1000);
   const button=host.querySelector('[data-dialogue-toggle]');
@@ -225,6 +227,7 @@ function openDialogue(id,queued=false,hostId='dialogue-player',preview=false,res
    paintButton();
   });
   audio.addEventListener('pause',()=>{paintButton();storePosition()});
+  audio.saveDialoguePosition=storePosition;
   audio.addEventListener('error',()=>{host.querySelector('.dialogue-play-status').textContent=T('تعذّر تحميل التسجيل. حاول مجددًا بعد الاتصال.','The recording could not load. Try again after connecting.')});
   audio.addEventListener('ended',()=>{
    if(audio!==host.querySelector('audio'))return;
@@ -265,7 +268,9 @@ function advanceDialogueQueue(delta){
  const hostId=dialogueQueue.hostId;
  if(dialogueQueue.index>=dialogueQueue.ids.length){
   dialogueQueue=null;
-  document.getElementById(hostId).querySelector('.dialogue-play-status').textContent=T('اكتمل تشغيل القائمة.','Playback complete.');
+  const host=document.getElementById(hostId);
+  host.querySelector('[data-dialogue-queue-controls]')?.remove();
+  host.querySelector('.dialogue-play-status').textContent=T('اكتمل تشغيل القائمة.','Playback complete.');
   return;
  }
  if(hostId==='lesson-dialogue-player')$('#lesson-dialogue-select').value=dialogueQueue.ids[dialogueQueue.index];
@@ -276,6 +281,7 @@ function stopDialogueQueue(){
  if(!host)return;
  host.querySelector('audio')?.pause();
  dialogueQueue=null;
+ host.querySelector('[data-dialogue-queue-controls]')?.remove();
  host.querySelector('.dialogue-play-status').textContent=T('توقف التتابع.','Continuous play stopped.');
 }
 function jumpStandaloneDialogue(index,button){
@@ -298,12 +304,6 @@ function finishLessonConversation(dialogue,audio,coverage){
  status.textContent=T('✓ استمعت إلى محادثة كاملة. يمكنك إنهاء الدرس أو سماع محادثة أخرى.','✓ You listened to a full conversation. Finish the lesson or try another conversation.');
  $('#lesson-step-feedback').textContent='';
 }
-function playLessonConversation(){
- const audio=$('#lesson-dialogue-player audio');
- if(!audio)return;
- audio.currentTime=0;
- audio.play().catch(()=>{const status=$('#lesson-conversation-status');if(status)status.textContent=T('تعذر تشغيل التسجيل. تحقق من الاتصال أو نزّل الصوت ثم أعد المحاولة.','Audio could not play. Check your connection or download the audio, then try again.')});
-}
 function playLessonDialogueQueue(resume=false){
  const select=$('#lesson-dialogue-select');
  const recorded=route.dialoguesForPattern(current.id).filter(d=>d.audio);
@@ -324,7 +324,7 @@ function lessonConversationPanel(patternId){
  ${ordered.length?`<label class="field">${T('اختر محادثة','Choose a conversation')}<select id="lesson-dialogue-select" onchange="selectLessonConversation()">
  ${ordered.map(d=>`<option value="${H(d.id)}">${H(T(d.ar,d.en))}${d.audio?'':T(' · النص فقط',' · Transcript only')}</option>`).join('')}
  </select></label><div class="buttonrow"><button class="primary" id="lesson-dialogue-play" onclick="playLessonDialogueQueue()">▶ ${T('شغّل كل محادثات النمط','Play all pattern conversations')}</button>
- ${dialogueResume[dialogueResumeKey('lesson-dialogue-player')]?`<button class="secondary" onclick="playLessonDialogueQueue(true)">▶ ${T('استكمل من آخر موضع','Resume where you left off')}</button>`:''}
+ <button class="secondary" data-dialogue-resume="lesson-${patternId}" onclick="playLessonDialogueQueue(true)" ${dialogueResume[`lesson-${patternId}`]?.offset?'':'hidden'}>▶ ${T('استكمل من آخر موضع','Resume where you left off')}</button>
  <button class="secondary" onclick="replayLessonStageCue()">♪ ${T('اسمع تقديم المرحلة','Hear the stage introduction')}</button></div>`:`<p>${T('لم تُحمّل المحادثات بعد. أعد فتح الدرس بعد الاتصال.','Conversations have not loaded yet. Reopen the lesson after connecting.')}</p>`}
  <div id="lesson-dialogue-player" data-dialogue-player></div></section>`;
 }
@@ -387,7 +387,7 @@ function dialoguesPage(){
    <button class="secondary" type="reset">${T('مسح الفلاتر','Reset filters')}</button>
   </form>
   <div class="buttonrow">
-   <button class="secondary" onclick="resumeCatalogDialogue()" ${dialogueResume.catalog?'':'hidden'}>▶ ${T('استكمل من آخر موضع','Resume where you left off')}</button>
+   <button class="secondary" data-dialogue-resume="catalog" onclick="resumeCatalogDialogue()" ${dialogueResume.catalog?.offset?'':'hidden'}>▶ ${T('استكمل من آخر موضع','Resume where you left off')}</button>
    <button class="primary" id="dialogue-play-all" onclick="playAllDialogues()">▷ ${T('شغّل كل المحادثات','Play all conversations')}</button>
    <button class="secondary" id="dialogue-play-filtered" onclick="playAllDialogues(true)">▷ ${T('شغّل النتائج المسجّلة','Play recorded results')}</button>
   </div>
@@ -494,13 +494,13 @@ function paintDialogueCatalog(){
  }
  host.innerHTML=entries.slice(offset,offset+dialoguesPerPage).map(entry=>{
   const {dialogue,category,level,purpose}=entry;
-  const scene=dialogueScene(dialogue?.lines[0].scene);
+  const visual=dialogue?dialogueImageButton(dialogue,-1):'';
   const meta=[dialogueSeriesLabel(entry.series),T(...(dialogueCategories[category]||dialogueCategories.daily)),level,purpose&&T(...dialoguePurposes[purpose])].filter(Boolean).join(' · ');
   const label=dialogue?.audio?T('مسجّلة','Recorded'):dialogue?T('نص متاح','Transcript available'):T('ضمن الخطة','Planned');
   const action=dialogue?`<button class="secondary" onclick="openDialogue('${H(dialogue.id)}')">
     ${dialogue.audio?T('استمع','Listen'):T('اقرأ النص','Read transcript')} ↗</button>`:
    `<details><summary>${T('الأنماط المستهدفة','Target patterns')}</summary><div class="buttonrow">${dialoguePatterns(entry.patternIds)}</div></details>`;
-  return `<article class="panel dialogue-cover">${scene?.image?pilotScene(scene):''}
+  return `<article class="panel dialogue-cover">${visual}
    <div><small>${H(meta)}</small><span class="chip dialogue-status">${label}</span>
    <h3>${H(T(entry.ar,entry.en))}</h3>
    ${entry.taskEn&&T(entry.taskAr,entry.taskEn)!==T(entry.ar,entry.en)?`<p>${H(T(entry.taskAr,entry.taskEn))}</p>`:''}
@@ -526,8 +526,11 @@ render=function(){
  if(page==='dialogues')resetDialogueCatalog();
  EP.decorate();
 };
-Promise.all([pilotReady,dialoguePlanReady]).then(([,plan])=>{
+Promise.all([pilotReady,dialoguePlanReady,dialogueArchiveReady]).then(([,plan])=>{
  dialoguePlan=plan;
  if(['dialogues','comparisons'].includes(page))render();
+});
+window.addEventListener('pagehide',()=>{
+ document.querySelectorAll('[data-dialogue-player] audio').forEach(audio=>{if(!audio.paused)audio.saveDialoguePosition?.()});
 });
 render();

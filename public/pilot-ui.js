@@ -8,7 +8,10 @@ const dialogueReady=Promise.all(['dialogues.json','dialogue-audio.json'].map(pat
   return {...dialogue,audio:audio&&JSON.stringify(audio.signature)===JSON.stringify(signature)?audio:null};
  }));
 const trainingAudioReady=fetch('training-audio.json').then(r=>r.ok?r.json():{}).catch(()=>({}));
-const pilotReady=Promise.all([fetch('pilot.json').then(r=>{if(!r.ok)throw Error('pilot');return r.json()}),expansionReady,dialogueReady,trainingAudioReady]).then(([data,expansion,dialogues,trainingAudio])=>{
+// Cached data can arrive before the later classic scripts have installed the coach and narration.
+const courseScriptsReady=document.readyState==='loading'?
+ new Promise(resolve=>document.addEventListener('DOMContentLoaded',resolve,{once:true})):Promise.resolve();
+const pilotReady=Promise.all([fetch('pilot.json').then(r=>{if(!r.ok)throw Error('pilot');return r.json()}),expansionReady,dialogueReady,trainingAudioReady,courseScriptsReady]).then(([data,expansion,dialogues,trainingAudio])=>{
  data.dialogues=dialogues;data.requireConversation=true;data.trainingAudio=trainingAudio;
  if(expansion?.schema===3){
   data.patterns.push(...expansion.patterns);
@@ -20,11 +23,11 @@ const pilotReady=Promise.all([fetch('pilot.json').then(r=>{if(!r.ok)throw Error(
  for(const p of patterns)if(p.id===13)p.topic='الرغبات والخطط';
  for(const topic of new Set(patterns.map(p=>p.topic)))if(!units.some(u=>u.topic===topic))units.unshift({name:topic,desc:'تعرّف على البناء من خلال مواقف متنوعة، ثم كوّن أفكارك الخاصة.',topic,icon:'◎',color:'mint',time:'على إيقاعك'});
  const audio=document.createElement('audio');audio.id='route-audio';audio.preload='auto';document.body.appendChild(audio);
- route=new NasaqRoutePlayer({data:PILOT,audio,storage:localStorage,narrate:narrateTrainingCue,onchange:()=>{if(route)updateCoach()}});
+ route=new NasaqRoutePlayer({data:PILOT,audio,storage:localStorage,narrate:narrateTrainingCue,readingDefault:()=>Number(EP.prefs.readingSeconds??25),onchange:()=>{if(route)updateCoach()}});
  audio.addEventListener('playing',()=>{cancelAnimationFrame(coachFrame);const tick=()=>{if(!route.running||audio.paused)return;if(page==='coach')paintCoachWords(audio.currentTime*1000);coachFrame=requestAnimationFrame(tick)};tick()});
  if(['coach','catalog','home','path','quality','library'].includes(page))render();
  return data;
-}).catch(()=>{if(typeof toast==='function')toast('تعذر تحميل تجربة الأنماط الغنية. أعد المحاولة بعد الاتصال.');return null});
+}).catch(error=>{console.error('Course initialization failed',error);if(typeof toast==='function')toast('تعذر تحميل تجربة الأنماط الغنية. أعد المحاولة بعد الاتصال.');return null});
 fetch('pilot-audit.json').then(r=>r.ok?r.json():null).then(a=>{pilotAudit=a;if(page==='quality')render()}).catch(()=>{});
 function pilotCounts(){const s=PILOT?.sentences||[];return {sentences:s.length,patterns:PILOT?.patterns.length||0,audio:s.flatMap(s=>Object.values(s.recordings)).filter(r=>r.sha256&&r.words.length).length,images:s.filter(s=>['visually_reviewed','assistant-reviewed','imported-unreviewed'].includes(s.image?.status)).length}}
 function pilotScene(s,cls=''){if(!s?.image)return '';const i=s.image,w=i.width,h=i.height,c=i.crop||{x:(i.cell%i.columns)*w/i.columns,y:Math.floor(i.cell/i.columns)*h/i.rows,width:w/i.columns,height:h/i.rows};if(!(c.width>0&&c.height>0&&c.x>=0&&c.y>=0&&c.x+c.width<=w&&c.y+c.height<=h))return '';const sx=w/c.width*100,sy=h/c.height*100,x=w===c.width?0:c.x/(w-c.width)*100,y=h===c.height?0:c.y/(h-c.height)*100;return `<div class="scene-frame ${cls}" role="img" aria-label="${esc(typeof EP!=='undefined'&&(EP.prefs.language==='en'||!EP.prefs.arabic)?s.en:(s.context||'')+' — '+s.ar)}"><div class="scene-photo" style="--scene-ratio:${c.width/c.height};background-image:url('${esc(i.atlas)}');background-size:${sx}% ${sy}%;background-position:${x}% ${y}%"></div></div>`}

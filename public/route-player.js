@@ -26,10 +26,11 @@ class NasaqRoutePlayer{
   }
   return false;
  }
- constructor({data,audio,storage,narrate,onchange=()=>{},now=()=>Date.now(),setTimer=setTimeout,clearTimer=clearTimeout}){
+ constructor({data,audio,storage,narrate,readingDefault=()=>25,onchange=()=>{},now=()=>Date.now(),setTimer=setTimeout,clearTimer=clearTimeout}){
   this.data=data;this.audio=audio;this.storage=storage;this.onchange=onchange;this.now=now;this.setTimer=setTimer.bind(root);this.clearTimer=clearTimer.bind(root);this.timer=null;this.running=false;this.error='';this.boundary=null;this.lastSave=0;this.generation=0;
   this.dialoguesByPattern=new Map();
   this.narrate=narrate;
+  this.readingDefault=readingDefault;
   this.requireConversation=Boolean(data.requireConversation);
   for(const dialogue of data.dialogues||[]){
    const patterns=new Set([dialogue.after,...(dialogue.lines||[]).flatMap(line=>line.patterns||[])]);
@@ -97,7 +98,13 @@ class NasaqRoutePlayer{
  dialoguesForPattern(id){return this.dialoguesByPattern.get(id)||[]}
  get hasAudio(){return ['sentence','interlude','dialogue'].includes(this.session.phase)}
  get recording(){return this.session.phase==='dialogue'?this.activeDialogue?.audio:this.sentence?.recordings[this.session.voice]}
- get progress(){if(this.session.phase==='finished')return 100;return this.session.ids.length?100*(this.session.cursor+(['comparison','between','exercise','interlude','dialogue','explanation-intro','dialogue-intro','conversation-pending'].includes(this.session.phase)?1:(this.recording?.duration_ms?Math.min(1,this.session.offset*1000/this.recording.duration_ms):0)))/this.session.ids.length:0}
+ get progress(){
+  const {phase,cursor,ids,readingBeforeExamples,offset}=this.session;
+  if(phase==='finished')return 100;
+  const boundary=!readingBeforeExamples&&['comparison','between','exercise','interlude','dialogue','explanation-intro','dialogue-intro','conversation-pending'].includes(phase);
+  const fraction=boundary?1:phase==='sentence'&&this.recording?.duration_ms?Math.min(1,offset*1000/this.recording.duration_ms):0;
+  return ids.length?100*(cursor+fraction)/ids.length:0;
+ }
  get wordIndex(){const ms=this.session.offset*1000;return this.recording?.words?.findIndex(w=>w.start_ms<=ms&&ms<w.end_ms)??-1}
  save(){try{this.storage.setItem('nasaq-route-v2',JSON.stringify(this.session))}catch{this.error='تعذر حفظ موضعك على هذا المتصفح.'}}
  emit(){this.onchange(this)}
@@ -119,7 +126,7 @@ class NasaqRoutePlayer{
    this.cue=null;
    if(phase==='pattern-intro'){
     this.session.introducedPattern=this.pattern?.id;
-    const seconds=this.session.readingSeconds??Number(root.EP?.prefs?.readingSeconds??25);
+    const seconds=this.session.readingSeconds??this.readingDefault();
     if(seconds>0){
      this.session.readingBeforeExamples=true;
      this.beginReading(seconds);
@@ -158,7 +165,7 @@ class NasaqRoutePlayer{
  }
  startCue(phase){this.generation++;this.audio.pause();this.session.phase=phase;this.session.offset=0;this.save();this.emit();if(this.running)this.play()}
  startReading(){
-  const seconds=this.session.readingSeconds??(Number(root.EP?.prefs?.readingSeconds)||25);
+  const seconds=this.session.readingSeconds??this.readingDefault();
   if(seconds===0){
    if(!this.requireConversation&&!this.session.autoNextPattern&&this.session.cursor+1<this.session.ids.length){
     this.session.phase='between';this.running=false;this.save();this.emit();return;

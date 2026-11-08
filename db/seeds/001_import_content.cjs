@@ -4,13 +4,13 @@ const crypto = require('node:crypto');
 const root = path.resolve(__dirname, '../..');
 const hash = bytes => crypto.createHash('sha256').update(bytes).digest('hex');
 const names = ['pilot', 'supplement', 'expansion-media', 'source-corpus', 'curriculum', 'pattern-catalog',
-  'dialogues', 'dialogue-audio', 'comparisons', 'scene-archive'];
+  'dialogues', 'dialogue-audio', 'comparisons', 'scene-archive', 'idea-scenes', 'conversation-scenes', 'training-audio'];
 const displayable = new Set(['visually_reviewed', 'assistant-reviewed', 'imported-unreviewed']);
 
 exports.seed = async db => {
   const files = Object.fromEntries(names.map(name => [name, fs.readFileSync(path.join(root, 'public', name+'.json'))]));
   const sources = Object.fromEntries(names.map(name => [name, hash(files[name])]));
-  const fingerprint = hash(JSON.stringify({ format: 4, sources }));
+  const fingerprint = hash(JSON.stringify({ format: 5, sources }));
   if ((await db('content_state').where('key', 'current_import').first())?.value === fingerprint) {
     console.log('Content already indexed: ' + fingerprint.slice(0, 12));
     return;
@@ -104,6 +104,22 @@ exports.seed = async db => {
       scene_topic:row.topics
     }))sceneTerms.push({scene_id,term_id});
   }
+  function registerPracticeScene(row,en,ar){
+    addMedia(row,'image');
+    if(scenes.has(row.id))return;
+    scenes.set(row.id,{id:row.id,media_path:row.path,x:0,y:0,width:row.width,height:row.height,review_status:'assistant-reviewed'});
+    sceneDescriptions.push({scene_id:row.id,description_en:en,description_ar:ar});
+  }
+  const ideas=data['idea-scenes'];
+  for(const row of ideas.scenes)registerPracticeScene(row,row.sentenceEn,row.sentenceAr);
+  const dialogueSceneUses=[];
+  for(const [dialogue_id,entry] of Object.entries(data['conversation-scenes'].scenes)){
+    for(const [position,scene] of [...(entry.cover?[[0,entry.cover]]:[]),...Object.entries(entry.turns)]){
+      registerPracticeScene(scene,scene.en,scene.ar);
+      dialogueSceneUses.push({dialogue_id,position:Number(position),scene_id:scene.id});
+    }
+  }
+  for(const asset of Object.values(data['training-audio']))addMedia(asset,'audio');
   const patternSentences=new Map();
   for(const pattern of patterns)pattern.sentence_ids.forEach((sentence_id,position)=>{
     patternSentences.set(pattern.id+'/'+sentence_id,{pattern_id:pattern.id,sentence_id,position});
@@ -134,7 +150,11 @@ exports.seed = async db => {
         kind:q.question?'advanced':'closed',body_json:JSON.stringify(q)}));
     }),
     terms:[...terms.values()],pattern_terms:patternTerms,sentence_terms:sentenceTerms,
-    scene_descriptions:sceneDescriptions,scene_terms:sceneTerms,coverage_gaps:gaps
+    scene_descriptions:sceneDescriptions,scene_terms:sceneTerms,coverage_gaps:gaps,
+    idea_topics:ideas.topics,
+    idea_scenes:ideas.scenes.map(s=>({scene_id:s.id,topic_id:s.topic,title_ar:s.ar,title_en:s.en,task_ar:s.taskAr,task_en:s.taskEn})),
+    idea_scene_words:ideas.scenes.flatMap(s=>s.words.map((w,position)=>({scene_id:s.id,position,ar:w.ar,en:w.en}))),
+    dialogue_scene_uses:dialogueSceneUses
   };
   await db.transaction(async trx=>{
     if((await trx('content_state').where('key','current_import').first())?.value===fingerprint)return;

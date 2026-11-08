@@ -1,11 +1,12 @@
 {
   "schema": 1,
-  "version": "29872d74c3c24aa2",
+  "version": "93ead9921e56d822",
   "shell": [
     "app.js",
     "collection-experience.js",
     "comparison-experience.js",
     "comparisons.json",
+    "conversation-scenes.json",
     "corpus-player.js",
     "corpus-ui.js",
     "corpus.css",
@@ -23,6 +24,8 @@
     "icon-192.png",
     "icon-512.png",
     "icon.svg",
+    "idea-lab.js",
+    "idea-scenes.json",
     "index.html",
     "learning.js",
     "manifest.json",
@@ -34,6 +37,7 @@
     "pilot.json",
     "portable-ui.js",
     "portable.css",
+    "practice-media.css",
     "preferences.js",
     "production-ui.js",
     "project.json",
@@ -64785,6 +64789,906 @@
       "path": "assets/scenes/have-atlas.webp",
       "sha256": "c0b2bb409779f0e6856c5f52ee0443745ad845270ba88c26c7696f0508e68fbb",
       "bytes": 231552,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/craft-01.webp",
+      "sha256": "07740c8fa02dddde5ba1c9c707630986febfe92fe0f27ff5650daa9ad15135a0",
+      "bytes": 36910,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/craft-02.webp",
+      "sha256": "ff0e64e5d4f45743530dd7c9e37a635a45d7440620b8c7d615037787b473751d",
+      "bytes": 28868,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/craft-03.webp",
+      "sha256": "9962f40385ffa50afccde014188448979d64ecf093e2da66dc433776a9a6736c",
+      "bytes": 23724,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/craft-04.webp",
+      "sha256": "b04c0b4389a0c5fac440ca509fab490e4965a535923e407591b20629304ec876",
+      "bytes": 35332,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/craft-05.webp",
+      "sha256": "9d24005e81174b3b27c29c13c11e9678629290995dd029396b14016dbccc534f",
+      "bytes": 37456,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/craft-06.webp",
+      "sha256": "f88555b41f53bfdc6641af590d3e58d333e607a3fc14cfc6c08ef5dac68379b6",
+      "bytes": 33524,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/craft-07.webp",
+      "sha256": "43efc1cb2efffad584cc82351f949a22cf49220e1bec03790ef5f09d124360f3",
+      "bytes": 34696,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/craft-08.webp",
+      "sha256": "6a25dedf3b5029156b35435b98043a32160aee3d8ea7048dfb353df931623501",
+      "bytes": 27166,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/craft-09.webp",
+      "sha256": "f736e212cca3e060d1ac6a073948cdca161c3c60a37eff1e041095fc44e4a972",
+      "bytes": 38100,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/craft-10.webp",
+      "sha256": "a4550c6ac058d16052a6cf63685a5bc7b078a3ce00175d21c0375074c96b0b69",
+      "bytes": 44862,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/events-01.webp",
+      "sha256": "17c6f826bb64f01a3a97a53edc41e961a608bbd874fab3061a5e26eb0811f41c",
+      "bytes": 38536,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/events-02.webp",
+      "sha256": "53053173b7f70fe7b74ec59295b84931bef9f00b9bbfd49fdf825618f57cfd4f",
+      "bytes": 39528,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/events-03.webp",
+      "sha256": "e5f282a71701766543e11c4d5e00220d3ba97acbe3688761ba4ba5c6d5313f8f",
+      "bytes": 35120,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/events-04.webp",
+      "sha256": "ee685f537a013808916a6822876a7c45b55f1f7e6797fcc6690832747b51a36b",
+      "bytes": 23798,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/events-05.webp",
+      "sha256": "f2e5b3a586d85cdeede8b779a4a059dc4b0c129239da59257408de57d36767d8",
+      "bytes": 39360,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/events-06.webp",
+      "sha256": "15e795fd3f207306bdc31d2bc9abee9da777fbdf4504745e5051118f5eaafdb2",
+      "bytes": 47032,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/events-07.webp",
+      "sha256": "1c5ba9659e6c73ae99dc4c757926917dc7fcfb2a0086ca124fef0986f36bc147",
+      "bytes": 41076,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/events-08.webp",
+      "sha256": "585a0d281840e20e0d9f5f91ba1ba9c28092852db789c3ba0a17ef4f4bb0d0a3",
+      "bytes": 39536,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/events-09.webp",
+      "sha256": "e1cff39fcba535952f360d586885dc3823d31c3f5b9968648e38954fc6a2cfa3",
+      "bytes": 39920,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/events-10.webp",
+      "sha256": "8cae0259c67060b4b562292dda3df32936a5abfc1674de652b2b3243a378bf7d",
+      "bytes": 34348,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/food-01.webp",
+      "sha256": "43da2ce032fcb90a1913a95ad3f11ff1bacc5a874cca9c7e783e376b0976625b",
+      "bytes": 37832,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/food-02.webp",
+      "sha256": "7fad7ffdfa55942045837479c3aabb185d4d4aaae89ffe19954280de89dfea37",
+      "bytes": 34744,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/food-03.webp",
+      "sha256": "8dc72156e89d57a812560fc7a540d759e32fa22e287a3c5dc1c91233ecb43213",
+      "bytes": 27696,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/food-04.webp",
+      "sha256": "572115eddd42354fcd902a637246b8af21c8b57fb0d6095001814bda85bb8845",
+      "bytes": 28242,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/food-05.webp",
+      "sha256": "c55fa5e79cf897bd24f1cf00adba1f8b2dee607ab0e450c54773e2f19539a3b3",
+      "bytes": 36304,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/food-06.webp",
+      "sha256": "41f21505c14d68bc82045b5f238b96350303be3913d38c84fac12e90a6e90380",
+      "bytes": 39442,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/food-07.webp",
+      "sha256": "e36bc636028d06695c56fa9714e712c1e83f72785dc339795dd09a24c5cee338",
+      "bytes": 31852,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/food-08.webp",
+      "sha256": "04e22921b372d709ad1358721a0789f7c07a08163ed2db2612b86825f00bf1ef",
+      "bytes": 40448,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/food-09.webp",
+      "sha256": "db09d33923828ba62efa11dc090a7ca666e80ae0537e9fbc4177e876f976e19b",
+      "bytes": 45584,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/food-10.webp",
+      "sha256": "be6a05a342de70f14953d26ef9df58bae16bda1e53505fb295ce5b2424d29dcd",
+      "bytes": 30550,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/health-01.webp",
+      "sha256": "1b4405f7d3cb6658362f759b027582e146fc027729fcab4cca545f84d417df88",
+      "bytes": 28496,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/health-02.webp",
+      "sha256": "09d83e7179a0624cf2b097ebcd9d0658e1a2a7d24f71817d0328720b9b6c7909",
+      "bytes": 25388,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/health-03.webp",
+      "sha256": "6153df98f7af59154925deddc5c45723c7c9c55ce9ea3e166d52ed67ef34c37a",
+      "bytes": 31706,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/health-04.webp",
+      "sha256": "c4ba8af48827d801d78da2e05691a61d3fc38823324cbc8fa43d2c1d38365d6d",
+      "bytes": 26292,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/health-05.webp",
+      "sha256": "56583e187f7c68d2ef2359f8698c1bcb504a3ffcead77c1838f68f7fd645f771",
+      "bytes": 32276,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/health-06.webp",
+      "sha256": "3edd25571b8de303a64c35154888fd26ed8875dc88ceaac76502397b5e82a3fc",
+      "bytes": 36592,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/health-07.webp",
+      "sha256": "3d8bbc6380aca304e8a099a366261801133124b07ad9e24a01695a9d429e23d7",
+      "bytes": 27740,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/health-08.webp",
+      "sha256": "28ee57ecc9bb165cdaed7c428954d287ae7db9116188627caf807ba6363de6b1",
+      "bytes": 31992,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/health-09.webp",
+      "sha256": "70dc7ea01522672efc56b319867d35467ef703bc6eea86c486f2de0493ffacf4",
+      "bytes": 21414,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/health-10.webp",
+      "sha256": "714b06f9ee1644d4a621e86836c242c259ee7e034b3abd4a9ac89a58d7053938",
+      "bytes": 23184,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/home-01.webp",
+      "sha256": "cee44541801cb2ad5b33652e5ac0d5ca3b0f4a3e6a97e305b957797d48bffa13",
+      "bytes": 36792,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/home-02.webp",
+      "sha256": "7a82165a5075d041592d679ac8f961b37e949b73497219c3d4a5a10cf2aa76a2",
+      "bytes": 35918,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/home-03.webp",
+      "sha256": "f42614d13c44923599ef91a526729918e4ceb0d7939de41c844d02317bbd4268",
+      "bytes": 37340,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/home-04.webp",
+      "sha256": "a206350dc8e461ab0da8188aad74d3ffff01bf8452ac6897889e26dfead5facc",
+      "bytes": 39476,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/home-05.webp",
+      "sha256": "3f649f0174ead0057902664db8368bc4e97502a6288f88a196190b1983345956",
+      "bytes": 28950,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/home-06.webp",
+      "sha256": "f1d579268f0b378206e81d7da39ec48163eab681ca1a3824d2e005b43452c386",
+      "bytes": 39918,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/home-07.webp",
+      "sha256": "ed150c5745521cf2c5d88e8eb231841b5f5b842b59928fd266c3841f7ec0c357",
+      "bytes": 33334,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/home-08.webp",
+      "sha256": "ed2f446e694808422faee16c5e00ab70292b7623344f8b169dfaf6dd9ef07e10",
+      "bytes": 41280,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/home-09.webp",
+      "sha256": "56e914847ca2a564b841c5860bb4c948b76cb9b2ebf807138b0cdb37f684bb86",
+      "bytes": 31920,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/home-10.webp",
+      "sha256": "78a3a35623eaa9d1f5c4e3bf0b824e22c6e690d490004b31cdc7b568b9cc1368",
+      "bytes": 23962,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/nature-01.webp",
+      "sha256": "447e3b07eeb1b654d40e3ba094eee3d89ad4f66a44b2fe7310509a0c689ec086",
+      "bytes": 50968,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/nature-02.webp",
+      "sha256": "5712284392c9c7766201d0cc22dfd6b1c86a56c9035047f9e455ba93f7a5c184",
+      "bytes": 31136,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/nature-03.webp",
+      "sha256": "7e91ab3ecd123b5869dd5942ff6c132495f01a05b928cde85a2c165d3a9d1959",
+      "bytes": 46422,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/nature-04.webp",
+      "sha256": "3d80002f6e470a91cd58ce4165e605680be428862f72d8a11ae9d9268ee17cd1",
+      "bytes": 36708,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/nature-05.webp",
+      "sha256": "5f1edd2723a35c1a364a5c2081898c9a45d173615e5d442f9a4249af62fb6833",
+      "bytes": 56292,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/nature-06.webp",
+      "sha256": "226ba4df4fa86bbcda0a9a722bb1cc870a881478bd1f6f9ad6c929f9d194cecf",
+      "bytes": 48146,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/nature-07.webp",
+      "sha256": "ae65ac6323143795ac45398e26b40b97a1a5364fd8992fd71b73312792e3d6d2",
+      "bytes": 33428,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/nature-08.webp",
+      "sha256": "e71e13d899c1b1bc6f8cbd66e446eb6768da00ce5f60d3f75f8c5cb5d685f2ef",
+      "bytes": 48782,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/nature-09.webp",
+      "sha256": "856f977c0becd883a7b97f6091b57bf123744a6285f191ecf78d714636ddcd61",
+      "bytes": 58770,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/nature-10.webp",
+      "sha256": "c380d014272d33ba8201933bb161e8e22b3cb8ff816a35479458918e0744ca92",
+      "bytes": 48734,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/neighborhood-01.webp",
+      "sha256": "05d0a080e804dabee223556c7599f22487441c15b07d6d288e001cd12ffee79c",
+      "bytes": 50238,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/neighborhood-02.webp",
+      "sha256": "2a5783992d3dc7dafd5c963c235b73e8111b8f0b9bdc82cae65aeb0417c73296",
+      "bytes": 42550,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/neighborhood-03.webp",
+      "sha256": "c245bbb2e51a2bae42d7f3b425e8a2f2b8eeeb805f93b378761401d06f4ca819",
+      "bytes": 56276,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/neighborhood-04.webp",
+      "sha256": "604f76f129f3efc57a09c822588f8ab29e4b5f3031abd3a329c78b29b36d44c5",
+      "bytes": 35326,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/neighborhood-05.webp",
+      "sha256": "0fb701ed6b4ddcdaacae97beebbde6fd4be1a4cb3c952b2223409e3e1521623e",
+      "bytes": 42676,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/neighborhood-06.webp",
+      "sha256": "9838a31bde076fcb2743c4f41cb766bfab0e6ce480859e961b9a768d265c11b0",
+      "bytes": 39544,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/neighborhood-07.webp",
+      "sha256": "1474c8a8344d169de807f66ddf57ef3bb34bd8511918607aec4a4aba4fd56a63",
+      "bytes": 44270,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/neighborhood-08.webp",
+      "sha256": "824b197ff6ba60d42d6da61119c720d3d79c3144ebbc9d52c9f082cc8ac7163b",
+      "bytes": 49440,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/neighborhood-09.webp",
+      "sha256": "1dd9f8be281c017c38d8b82ea41826615d5e6d6f8475d568a1239eca6fcf9194",
+      "bytes": 36416,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/neighborhood-10.webp",
+      "sha256": "935efe48bd9444a38f6a7087f5699074bc564623d29b0e22e294bffef18c27ae",
+      "bytes": 36548,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/study-01.webp",
+      "sha256": "aee4b958f45ef98ad2528137c538ec7fa4c4f0cfc26180e6052147e97ec4ff0d",
+      "bytes": 32668,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/study-02.webp",
+      "sha256": "53f49ceaf6dbe02bb3ba380464fca996c671b1287d2fb644020a3f66879b1a08",
+      "bytes": 35476,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/study-03.webp",
+      "sha256": "f1f1182b95d300c9d75e886bf4c2359623690a3511c05e0c44246fbc3e9f1de3",
+      "bytes": 17950,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/study-04.webp",
+      "sha256": "8f0cb5256c5e943e7ab7e603f24084c0269cdeae9786e95db7d5bf9f0a2606f0",
+      "bytes": 25882,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/study-05.webp",
+      "sha256": "379fef2cc7decd88e3a89a12a1383f58cfe47d0bf30abffb5d11a860bd27ee09",
+      "bytes": 23630,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/study-06.webp",
+      "sha256": "8ef6aa8d98cafa785a6c803291a322cdc76fafd13064744749f937bb44ee3a21",
+      "bytes": 30078,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/study-07.webp",
+      "sha256": "748a23b826ece46c433f2db2f7371f1f465bc5fb923cb2543c6980bf414ae98b",
+      "bytes": 27482,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/study-08.webp",
+      "sha256": "1b00de8a11bb70db6dcfb1b3ff59710a17bd70575832de0846f1bab7d51cdfb3",
+      "bytes": 29860,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/study-09.webp",
+      "sha256": "d301363072567f96f99ba5a549a53fe2f0c6d9df9853bc92a974774930bb8143",
+      "bytes": 30660,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/study-10.webp",
+      "sha256": "87ffda62b39483adaf72997396d55a8188dcf9dae399bf3afe6d638f05419b28",
+      "bytes": 27900,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/travel-01.webp",
+      "sha256": "ac78514fb9f89649a763039569aac49f72b8eb70769e7e40c91d3bf50da64cf3",
+      "bytes": 29292,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/travel-02.webp",
+      "sha256": "51176620abaf7f4ade5a4d6ab524a9403aa9d8c852b870140d9d67f27d77c735",
+      "bytes": 28408,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/travel-03.webp",
+      "sha256": "c566ff0fe4db43c77a7fecc95043246eaa67391e941d5e1665f9a53f3bd9ab1a",
+      "bytes": 37882,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/travel-04.webp",
+      "sha256": "3c493e366b2a7095545efe27f4fee4ff71ce54309c7e89df0a85c3403e3e0366",
+      "bytes": 31540,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/travel-05.webp",
+      "sha256": "4e3a39fa65229711f8c74e44b3ad3b1ce300546e4710e7c9e551c757827e8377",
+      "bytes": 35454,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/travel-06.webp",
+      "sha256": "2b7c4e04651dab6a40a3bc62ead358649534a8eac2ce11a4d4c4cde5c0c5dd3f",
+      "bytes": 42074,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/travel-07.webp",
+      "sha256": "d5274706fad3530e00d07a2bfc644d0c124b7ad2eb62b5e395123d0d70aa830d",
+      "bytes": 37136,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/travel-08.webp",
+      "sha256": "07f0c55a1f3c4d6fb64b4e20ad2458500fe7f14adb25883bf1dea06da509ab62",
+      "bytes": 38948,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/travel-09.webp",
+      "sha256": "f3b8a94709d4b44f26c76515ed24021428741e2edc2079a55d5ad5dd0dc7c573",
+      "bytes": 29528,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/travel-10.webp",
+      "sha256": "74017a51441976bd955d21fadc23f0b8f6cb35c71e5a50ddd8e792925dba4385",
+      "bytes": 25638,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/work-01.webp",
+      "sha256": "ecd203256b47df8964a2bb78c74d71b8e8495513ec7a4a1b41efce0ea86a5321",
+      "bytes": 28522,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/work-02.webp",
+      "sha256": "b06d84bbef3add8403a1bd2e0847ab49cd3a79cab779502e703252054d48b9d0",
+      "bytes": 33256,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/work-03.webp",
+      "sha256": "a39502a330d9a3b7966d38060beffeffa1bfd3c8e254503f0813636bf8f8b6e4",
+      "bytes": 26066,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/work-04.webp",
+      "sha256": "3e135068c035925ce5ec66064ae96b7bd1de5405de1d9b46641cc5cf8f1f595d",
+      "bytes": 21840,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/work-05.webp",
+      "sha256": "3f46060a2b3194bde5afe0b981619f5aa2337b13ad849c61a3758178a0c8a334",
+      "bytes": 28510,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/work-06.webp",
+      "sha256": "851c93e14733a19ddbc68859a1b46c8c0c15c0a4e4a5696d1aec02ee55267f27",
+      "bytes": 29856,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/work-07.webp",
+      "sha256": "7743883230341deccb71c2e3e8c503512b93beb0a9cff39ea3244050d1e90de5",
+      "bytes": 27914,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/work-08.webp",
+      "sha256": "d7c176c3d2bfcd318a7736bd83aedc0553a6754534df36db11f7919ddca77e33",
+      "bytes": 34814,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/work-09.webp",
+      "sha256": "fc649e5f3f105f816ebcc6731d219eac879bc26004d6bf1e6a60ea2369bf5f7e",
+      "bytes": 26402,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/idea-lab/work-10.webp",
+      "sha256": "c608a51d606ad24efa503b3ad1d26b79c2a5df491c05cdaa55cfe32bc37f01d4",
+      "bytes": 35812,
       "groups": [
         "course",
         "all"

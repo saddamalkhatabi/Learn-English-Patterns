@@ -1,8 +1,13 @@
 /* Interface language and Arabic learning content are independent preferences. */
-const EP={prefs:{language:'ar',arabic:true,readingSeconds:25},teaching:null,dictionary:new Map(),learningArabic:new Set()};
+const EP={prefs:{language:'ar',arabic:true,readingSeconds:0},teaching:null,dictionary:new Map(),learningArabic:new Set()};
 try{Object.assign(EP.prefs,JSON.parse(localStorage.getItem('patterns-preferences')||'{}'))}catch{}
 if(!['ar','en'].includes(EP.prefs.language))EP.prefs.language='ar';
 EP.t=(ar,en)=>EP.prefs.language==='en'?en:ar;
+function ruleReviewOptions(value){
+ return [0,5,10,15,25,30,40,45,60].map(seconds=>`<option value="${seconds}" ${seconds===Number(value)?'selected':''}>${seconds?
+  EP.t(`شرح صوتي + ${seconds} ثانية للمراجعة`,`Spoken explanation + ${seconds}s to review`):
+  EP.t('شرح صوتي ثم الأمثلة مباشرة','Spoken explanation, then examples')}</option>`).join('');
+}
 EP.escape=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 EP.ar=text=>text?`<p class="ar-content" lang="ar" dir="rtl">${EP.escape(text)}</p>`:'';
 EP.pair=(ar,en)=>`<div class="learning-copy"><p class="en-content" lang="en" dir="ltr">${EP.escape(en)}</p>${EP.ar(ar)}</div>`;

@@ -16,7 +16,7 @@ async function main() {
       await db.seed.run();
     } else if (command === 'summary') {
       const tables = ['patterns','sentences','scenes','recordings','dialogues','dialogue_turns','comparisons',
-        'exercises','learning_routes','coverage_gaps','editorial_notes','external_links'];
+        'exercises','learning_routes','idea_scenes','idea_scene_words','dialogue_scene_uses','coverage_gaps','editorial_notes','external_links'];
       const counts = await Promise.all(tables.map(table => db(table).count({count:'*'}).first()));
       console.log(JSON.stringify(Object.fromEntries(tables.map((name,i)=>[name,counts[i].count])), null, 2));
     } else {
@@ -26,6 +26,9 @@ async function main() {
       if (!scene) throw Error('No displayable scene for '+id);
       const media = await db('media_files').where('path',scene.media_path).first();
       const uses = await db('scene_usage').where('scene_id',scene.id).select('used_by','entity_id');
+      if(await db('idea_scenes').where('scene_id',scene.id).first())uses.push({used_by:'idea_lab',entity_id:scene.id});
+      const dialogueUses=await db('dialogue_scene_uses').where('scene_id',scene.id);
+      for(const use of dialogueUses)uses.push({used_by:use.position?'dialogue_turn_art':'dialogue_cover',entity_id:use.position?`${use.dialogue_id}/${use.position}`:use.dialogue_id});
       if (output) {
         const out = path.resolve(output);
         if (path.extname(out).toLowerCase()!=='.webp') throw Error('Output must end in .webp');
