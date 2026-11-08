@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "topics": [
     {
       "id": "home",
@@ -63,19 +63,65 @@
       "words": [
         {
           "en": "bread basket",
-          "ar": "سلة خبز"
+          "ar": "سلة خبز",
+          "kind": "object",
+          "x": 51,
+          "y": 71
         },
         {
           "en": "teapot",
-          "ar": "إبريق شاي"
+          "ar": "إبريق شاي",
+          "kind": "object",
+          "x": 65,
+          "y": 54
         },
         {
           "en": "pour",
-          "ar": "يصب"
+          "ar": "يصب",
+          "kind": "action",
+          "x": 64,
+          "y": 58
         },
         {
           "en": "full",
-          "ar": "ممتلئ"
+          "ar": "ممتلئ",
+          "kind": "description",
+          "x": 80,
+          "y": 79
+        },
+        {
+          "en": "tea glass",
+          "ar": "كأس شاي",
+          "kind": "object",
+          "x": 77,
+          "y": 76
+        },
+        {
+          "en": "olives",
+          "ar": "زيتون",
+          "kind": "object",
+          "x": 52,
+          "y": 86
+        },
+        {
+          "en": "tablecloth",
+          "ar": "مفرش طاولة",
+          "kind": "object",
+          "x": 32,
+          "y": 83
+        }
+      ],
+      "patterns": [
+        {
+          "id": 3,
+          "en": "I'd like to try the bread.",
+          "ar": "أود أن أجرّب الخبز."
+        },
+        {
+          "id": 117
+        },
+        {
+          "id": 9037
         }
       ],
       "taskEn": "Offer someone tea and ask what they would like with their bread.",
@@ -95,19 +141,65 @@
       "words": [
         {
           "en": "backpack",
-          "ar": "حقيبة ظهر"
+          "ar": "حقيبة ظهر",
+          "kind": "object",
+          "x": 51,
+          "y": 77
         },
         {
           "en": "notebook",
-          "ar": "دفتر"
+          "ar": "دفتر",
+          "kind": "object",
+          "x": 48,
+          "y": 61
         },
         {
           "en": "pack",
-          "ar": "يجهّز الحقيبة"
+          "ar": "يجهّز الحقيبة",
+          "kind": "action",
+          "x": 49,
+          "y": 62
         },
         {
           "en": "open",
-          "ar": "مفتوح"
+          "ar": "مفتوح",
+          "kind": "description",
+          "x": 82,
+          "y": 42
+        },
+        {
+          "en": "school uniform",
+          "ar": "زي مدرسي",
+          "kind": "object",
+          "x": 86,
+          "y": 52
+        },
+        {
+          "en": "doorway",
+          "ar": "مدخل",
+          "kind": "object",
+          "x": 77,
+          "y": 33
+        },
+        {
+          "en": "mat",
+          "ar": "حصيرة",
+          "kind": "object",
+          "x": 80,
+          "y": 88
+        }
+      ],
+      "patterns": [
+        {
+          "id": 13,
+          "en": "I need to put my notebook in my bag.",
+          "ar": "أحتاج إلى وضع دفتري في حقيبتي."
+        },
+        {
+          "id": 117
+        },
+        {
+          "id": 9037
         }
       ],
       "taskEn": "Ask what is missing from the bag and decide what to pack first.",
@@ -127,19 +219,62 @@
       "words": [
         {
           "en": "drawer",
-          "ar": "درج"
+          "ar": "درج",
+          "kind": "object",
+          "x": 57,
+          "y": 74
         },
         {
           "en": "envelope",
-          "ar": "ظرف"
+          "ar": "ظرف",
+          "kind": "object",
+          "x": 67,
+          "y": 76
         },
         {
           "en": "look through",
-          "ar": "يفتّش"
+          "ar": "يفتّش",
+          "kind": "action",
+          "x": 52,
+          "y": 65
         },
         {
           "en": "wooden",
-          "ar": "خشبي"
+          "ar": "خشبي",
+          "kind": "description",
+          "x": 78,
+          "y": 63
+        },
+        {
+          "en": "key ring",
+          "ar": "حلقة مفاتيح",
+          "kind": "object",
+          "x": 58,
+          "y": 64
+        },
+        {
+          "en": "picture frame",
+          "ar": "إطار صورة",
+          "kind": "object",
+          "x": 66,
+          "y": 30
+        },
+        {
+          "en": "plant pot",
+          "ar": "أصيص",
+          "kind": "object",
+          "x": 83,
+          "y": 32
+        }
+      ],
+      "patterns": [
+        {
+          "id": 117,
+          "en": "There is a spare key in the drawer.",
+          "ar": "يوجد مفتاح احتياطي في الدرج."
+        },
+        {
+          "id": 9037
         }
       ],
       "taskEn": "Describe the key you need so someone else can find it.",
@@ -159,19 +294,65 @@
       "words": [
         {
           "en": "laundry basket",
-          "ar": "سلّة غسيل"
+          "ar": "سلّة غسيل",
+          "kind": "object",
+          "x": 53,
+          "y": 57
         },
         {
           "en": "towel",
-          "ar": "منشفة"
+          "ar": "منشفة",
+          "kind": "object",
+          "x": 69,
+          "y": 73
         },
         {
           "en": "fold",
-          "ar": "يطوي"
+          "ar": "يطوي",
+          "kind": "action",
+          "x": 66,
+          "y": 46
         },
         {
           "en": "neat",
-          "ar": "مرتب"
+          "ar": "مرتب",
+          "kind": "description",
+          "x": 68,
+          "y": 77
+        },
+        {
+          "en": "shirt",
+          "ar": "قميص",
+          "kind": "object",
+          "x": 42,
+          "y": 43
+        },
+        {
+          "en": "sofa",
+          "ar": "أريكة",
+          "kind": "object",
+          "x": 56,
+          "y": 38
+        },
+        {
+          "en": "pile",
+          "ar": "كومة",
+          "kind": "object",
+          "x": 44,
+          "y": 83
+        }
+      ],
+      "patterns": [
+        {
+          "id": 6,
+          "en": "Let's fold the towels first.",
+          "ar": "لنطوِ المناشف أولًا."
+        },
+        {
+          "id": 117
+        },
+        {
+          "id": 9037
         }
       ],
       "taskEn": "Agree on who will fold the towels and who will put them away.",
@@ -191,19 +372,65 @@
       "words": [
         {
           "en": "refrigerator",
-          "ar": "ثلاجة"
+          "ar": "ثلاجة",
+          "kind": "object",
+          "x": 29,
+          "y": 42
         },
         {
           "en": "shelf",
-          "ar": "رف"
+          "ar": "رف",
+          "kind": "object",
+          "x": 33,
+          "y": 29
         },
         {
           "en": "put away",
-          "ar": "يضع في مكانه"
+          "ar": "يضع في مكانه",
+          "kind": "action",
+          "x": 41,
+          "y": 37
         },
         {
           "en": "fresh",
-          "ar": "طازج"
+          "ar": "طازج",
+          "kind": "description",
+          "x": 68,
+          "y": 59
+        },
+        {
+          "en": "milk bottle",
+          "ar": "زجاجة حليب",
+          "kind": "object",
+          "x": 58,
+          "y": 60
+        },
+        {
+          "en": "tomatoes",
+          "ar": "طماطم",
+          "kind": "object",
+          "x": 68,
+          "y": 69
+        },
+        {
+          "en": "shopping bag",
+          "ar": "كيس مشتريات",
+          "kind": "object",
+          "x": 34,
+          "y": 81
+        }
+      ],
+      "patterns": [
+        {
+          "id": 118,
+          "en": "There are some tomatoes in that container.",
+          "ar": "توجد بعض الطماطم في تلك العلبة."
+        },
+        {
+          "id": 117
+        },
+        {
+          "id": 9037
         }
       ],
       "taskEn": "Explain what belongs in the fridge and what can stay on the counter.",
@@ -223,19 +450,60 @@
       "words": [
         {
           "en": "chair leg",
-          "ar": "ساق كرسي"
+          "ar": "ساق كرسي",
+          "kind": "object",
+          "x": 64,
+          "y": 75
         },
         {
           "en": "toolbox",
-          "ar": "صندوق عدّة"
+          "ar": "صندوق عدّة",
+          "kind": "object",
+          "x": 25,
+          "y": 75
         },
         {
           "en": "tighten",
-          "ar": "يشد"
+          "ar": "يشد",
+          "kind": "action",
+          "x": 54,
+          "y": 66
         },
         {
           "en": "loose",
-          "ar": "مرتخٍ"
+          "ar": "مرتخٍ",
+          "kind": "description"
+        },
+        {
+          "en": "screwdriver",
+          "ar": "مفك",
+          "kind": "object",
+          "x": 56,
+          "y": 67
+        },
+        {
+          "en": "seat",
+          "ar": "مقعد الكرسي",
+          "kind": "object",
+          "x": 69,
+          "y": 55
+        },
+        {
+          "en": "rug",
+          "ar": "بساط",
+          "kind": "object",
+          "x": 32,
+          "y": 92
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9037,
+          "en": "Can you pass me the screwdriver?",
+          "ar": "هل يمكنك مناولتي المفك؟"
+        },
+        {
+          "id": 117
         }
       ],
       "taskEn": "Ask for the right tool and tell someone why the chair should stay empty.",
@@ -255,19 +523,63 @@
       "words": [
         {
           "en": "shopping list",
-          "ar": "قائمة مشتريات"
+          "ar": "قائمة مشتريات",
+          "kind": "object",
+          "x": 46,
+          "y": 79
         },
         {
           "en": "counter",
-          "ar": "سطح المطبخ"
+          "ar": "سطح المطبخ",
+          "kind": "object",
+          "x": 62,
+          "y": 84
         },
         {
           "en": "write down",
-          "ar": "يدوّن"
+          "ar": "يدوّن",
+          "kind": "action",
+          "x": 42,
+          "y": 71
         },
         {
           "en": "ripe",
-          "ar": "ناضج"
+          "ar": "ناضج",
+          "kind": "description"
+        },
+        {
+          "en": "tomatoes",
+          "ar": "طماطم",
+          "kind": "object",
+          "x": 78,
+          "y": 79
+        },
+        {
+          "en": "apples",
+          "ar": "تفاح",
+          "kind": "object",
+          "x": 17,
+          "y": 79
+        },
+        {
+          "en": "pen",
+          "ar": "قلم",
+          "kind": "object",
+          "x": 41,
+          "y": 65
+        }
+      ],
+      "patterns": [
+        {
+          "id": 13,
+          "en": "I need to add apples to the list.",
+          "ar": "أحتاج إلى إضافة التفاح إلى القائمة."
+        },
+        {
+          "id": 117
+        },
+        {
+          "id": 9037
         }
       ],
       "taskEn": "Work out what you already have and what still needs to go on the list.",
@@ -287,19 +599,62 @@
       "words": [
         {
           "en": "broom",
-          "ar": "مكنسة"
+          "ar": "مكنسة",
+          "kind": "object",
+          "x": 55,
+          "y": 79
         },
         {
           "en": "potted plant",
-          "ar": "نبات في أصيص"
+          "ar": "نبات في أصيص",
+          "kind": "object",
+          "x": 72,
+          "y": 70
         },
         {
           "en": "sweep",
-          "ar": "يكنس"
+          "ar": "يكنس",
+          "kind": "action",
+          "x": 51,
+          "y": 72
         },
         {
           "en": "sunny",
-          "ar": "مشمس"
+          "ar": "مشمس",
+          "kind": "description",
+          "x": 69,
+          "y": 25
+        },
+        {
+          "en": "dustpan",
+          "ar": "مجرود",
+          "kind": "object",
+          "x": 26,
+          "y": 78
+        },
+        {
+          "en": "railing",
+          "ar": "درابزين",
+          "kind": "object",
+          "x": 77,
+          "y": 44
+        },
+        {
+          "en": "leaves",
+          "ar": "أوراق شجر",
+          "kind": "object",
+          "x": 52,
+          "y": 91
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9037,
+          "en": "Can you move that pot for me?",
+          "ar": "هل يمكنك تحريك ذلك الأصيص لأجلي؟"
+        },
+        {
+          "id": 117
         }
       ],
       "taskEn": "Ask someone to move a pot so you can sweep underneath it.",
@@ -319,19 +674,63 @@
       "words": [
         {
           "en": "guest",
-          "ar": "ضيف"
+          "ar": "ضيف",
+          "kind": "object",
+          "x": 76,
+          "y": 35
         },
         {
           "en": "dates",
-          "ar": "تمر"
+          "ar": "تمر",
+          "kind": "object",
+          "x": 49,
+          "y": 79
         },
         {
           "en": "welcome",
-          "ar": "يرحّب"
+          "ar": "يرحّب",
+          "kind": "action",
+          "x": 46,
+          "y": 61
         },
         {
           "en": "ready",
-          "ar": "جاهز"
+          "ar": "جاهز",
+          "kind": "description"
+        },
+        {
+          "en": "handshake",
+          "ar": "مصافحة",
+          "kind": "object",
+          "x": 46,
+          "y": 60
+        },
+        {
+          "en": "tray",
+          "ar": "صينية",
+          "kind": "object",
+          "x": 57,
+          "y": 85
+        },
+        {
+          "en": "tea glass",
+          "ar": "كأس شاي",
+          "kind": "object",
+          "x": 58,
+          "y": 79
+        }
+      ],
+      "patterns": [
+        {
+          "id": 3,
+          "en": "I'd like to offer you some tea.",
+          "ar": "أود أن أقدّم لك بعض الشاي."
+        },
+        {
+          "id": 117
+        },
+        {
+          "id": 9037
         }
       ],
       "taskEn": "Welcome the guest, offer a seat, and ask about the journey.",
@@ -351,19 +750,63 @@
       "words": [
         {
           "en": "alarm clock",
-          "ar": "منبّه"
+          "ar": "منبّه",
+          "kind": "object",
+          "x": 75,
+          "y": 65
         },
         {
           "en": "bedside lamp",
-          "ar": "مصباح بجانب السرير"
+          "ar": "مصباح بجانب السرير",
+          "kind": "object",
+          "x": 89,
+          "y": 36
         },
         {
           "en": "set",
-          "ar": "يضبط"
+          "ar": "يضبط",
+          "kind": "action",
+          "x": 70,
+          "y": 55
         },
         {
           "en": "early",
-          "ar": "مبكر"
+          "ar": "مبكر",
+          "kind": "description"
+        },
+        {
+          "en": "stack of books",
+          "ar": "رصّة كتب",
+          "kind": "object",
+          "x": 87,
+          "y": 81
+        },
+        {
+          "en": "pillow",
+          "ar": "وسادة",
+          "kind": "object",
+          "x": 69,
+          "y": 83
+        },
+        {
+          "en": "nightstand",
+          "ar": "طاولة سرير",
+          "kind": "object",
+          "x": 81,
+          "y": 77
+        }
+      ],
+      "patterns": [
+        {
+          "id": 2,
+          "en": "I have to get up at six tomorrow.",
+          "ar": "عليّ أن أستيقظ في السادسة غدًا."
+        },
+        {
+          "id": 117
+        },
+        {
+          "id": 9037
         }
       ],
       "taskEn": "Explain why you need to get up early and what you will prepare tonight.",
@@ -383,19 +826,60 @@
       "words": [
         {
           "en": "flatbread",
-          "ar": "خبز مسطّح"
+          "ar": "خبز مسطّح",
+          "kind": "object",
+          "x": 43,
+          "y": 69
         },
         {
           "en": "tray",
-          "ar": "صينية"
+          "ar": "صينية",
+          "kind": "object",
+          "x": 35,
+          "y": 75
         },
         {
           "en": "arrange",
-          "ar": "يرتّب"
+          "ar": "يرتّب",
+          "kind": "action",
+          "x": 44,
+          "y": 62
         },
         {
           "en": "warm",
-          "ar": "دافئ"
+          "ar": "دافئ",
+          "kind": "description"
+        },
+        {
+          "en": "oven",
+          "ar": "فرن",
+          "kind": "object",
+          "x": 16,
+          "y": 42
+        },
+        {
+          "en": "apron",
+          "ar": "مئزر",
+          "kind": "object",
+          "x": 40,
+          "y": 47
+        },
+        {
+          "en": "bread stack",
+          "ar": "رصّة خبز",
+          "kind": "object",
+          "x": 73,
+          "y": 78
+        }
+      ],
+      "patterns": [
+        {
+          "id": 4,
+          "en": "Can I have two pieces of flatbread?",
+          "ar": "هل يمكنني أخذ قطعتين من الخبز؟"
+        },
+        {
+          "id": 3
         }
       ],
       "taskEn": "Ask which bread is freshest and whether you can buy two pieces.",
@@ -415,19 +899,60 @@
       "words": [
         {
           "en": "stall",
-          "ar": "بسطة"
+          "ar": "بسطة",
+          "kind": "object",
+          "x": 48,
+          "y": 72
         },
         {
           "en": "pear",
-          "ar": "كمثرى"
+          "ar": "كمثرى",
+          "kind": "object",
+          "x": 73,
+          "y": 78
         },
         {
           "en": "compare",
-          "ar": "يقارن"
+          "ar": "يقارن",
+          "kind": "action",
+          "x": 53,
+          "y": 45
         },
         {
           "en": "firm",
-          "ar": "متماسك"
+          "ar": "متماسك",
+          "kind": "description"
+        },
+        {
+          "en": "oranges",
+          "ar": "برتقال",
+          "kind": "object",
+          "x": 23,
+          "y": 76
+        },
+        {
+          "en": "fruit crate",
+          "ar": "صندوق فاكهة",
+          "kind": "object",
+          "x": 63,
+          "y": 89
+        },
+        {
+          "en": "pick up",
+          "ar": "يلتقط",
+          "kind": "action",
+          "x": 49,
+          "y": 50
+        }
+      ],
+      "patterns": [
+        {
+          "id": 3,
+          "en": "I'd like to buy some oranges.",
+          "ar": "أود شراء بعض البرتقال."
+        },
+        {
+          "id": 4
         }
       ],
       "taskEn": "Ask which fruit will stay fresh until the weekend.",
@@ -447,19 +972,63 @@
       "words": [
         {
           "en": "lentils",
-          "ar": "عدس"
+          "ar": "عدس",
+          "kind": "object",
+          "x": 54,
+          "y": 77
         },
         {
           "en": "ladle",
-          "ar": "مغرفة"
+          "ar": "مغرفة",
+          "kind": "object",
+          "x": 44,
+          "y": 60
         },
         {
           "en": "serve",
-          "ar": "يقدّم"
+          "ar": "يقدّم",
+          "kind": "action",
+          "x": 45,
+          "y": 58
         },
         {
           "en": "hot",
-          "ar": "ساخن"
+          "ar": "ساخن",
+          "kind": "description"
+        },
+        {
+          "en": "pot",
+          "ar": "قدر",
+          "kind": "object",
+          "x": 29,
+          "y": 76
+        },
+        {
+          "en": "bowl",
+          "ar": "وعاء",
+          "kind": "object",
+          "x": 70,
+          "y": 79
+        },
+        {
+          "en": "apron",
+          "ar": "مئزر",
+          "kind": "object",
+          "x": 57,
+          "y": 41
+        }
+      ],
+      "patterns": [
+        {
+          "id": 6,
+          "en": "Let's serve the soup in small bowls.",
+          "ar": "لنقدّم الشوربة في أوعية صغيرة."
+        },
+        {
+          "id": 3
+        },
+        {
+          "id": 4
         }
       ],
       "taskEn": "Offer a small bowl and explain what ingredients are in the soup.",
@@ -479,19 +1048,60 @@
       "words": [
         {
           "en": "counter",
-          "ar": "منضدة"
+          "ar": "منضدة",
+          "kind": "object",
+          "x": 52,
+          "y": 69
         },
         {
           "en": "teacup",
-          "ar": "كوب شاي"
+          "ar": "كوب شاي",
+          "kind": "object",
+          "x": 54,
+          "y": 62
         },
         {
           "en": "order",
-          "ar": "يطلب"
+          "ar": "يطلب",
+          "kind": "action",
+          "x": 51,
+          "y": 52
         },
         {
           "en": "unsweetened",
-          "ar": "دون تحلية"
+          "ar": "دون تحلية",
+          "kind": "description"
+        },
+        {
+          "en": "menu board",
+          "ar": "لوحة قائمة",
+          "kind": "object",
+          "x": 70,
+          "y": 24
+        },
+        {
+          "en": "barista",
+          "ar": "مقدّم مشروبات",
+          "kind": "object",
+          "x": 37,
+          "y": 32
+        },
+        {
+          "en": "customer",
+          "ar": "زبون",
+          "kind": "object",
+          "x": 75,
+          "y": 50
+        }
+      ],
+      "patterns": [
+        {
+          "id": 3,
+          "en": "I'd like to order tea without sugar.",
+          "ar": "أود أن أطلب شايًا دون سكر."
+        },
+        {
+          "id": 4
         }
       ],
       "taskEn": "Order tea the way you like it and ask when to pay.",
@@ -511,19 +1121,63 @@
       "words": [
         {
           "en": "cucumber",
-          "ar": "خيار"
+          "ar": "خيار",
+          "kind": "object",
+          "x": 54,
+          "y": 70
         },
         {
           "en": "lemon",
-          "ar": "ليمون"
+          "ar": "ليمون",
+          "kind": "object",
+          "x": 58,
+          "y": 64
         },
         {
           "en": "slice",
-          "ar": "يقطّع شرائح"
+          "ar": "يقطّع شرائح",
+          "kind": "action",
+          "x": 46,
+          "y": 66
         },
         {
           "en": "fresh",
-          "ar": "طازج"
+          "ar": "طازج",
+          "kind": "description"
+        },
+        {
+          "en": "cutting board",
+          "ar": "لوح تقطيع",
+          "kind": "object",
+          "x": 50,
+          "y": 75
+        },
+        {
+          "en": "tomatoes",
+          "ar": "طماطم",
+          "kind": "object",
+          "x": 61,
+          "y": 69
+        },
+        {
+          "en": "salad bowl",
+          "ar": "وعاء سلطة",
+          "kind": "object",
+          "x": 79,
+          "y": 77
+        }
+      ],
+      "patterns": [
+        {
+          "id": 6,
+          "en": "Let's add the lemon at the end.",
+          "ar": "لنضف الليمون في النهاية."
+        },
+        {
+          "id": 3
+        },
+        {
+          "id": 4
         }
       ],
       "taskEn": "Suggest two ingredients and decide whether to add the lemon now or later.",
@@ -543,19 +1197,65 @@
       "words": [
         {
           "en": "jar",
-          "ar": "مرطبان"
+          "ar": "مرطبان",
+          "kind": "object",
+          "x": 68,
+          "y": 72
         },
         {
           "en": "honey",
-          "ar": "عسل"
+          "ar": "عسل",
+          "kind": "object",
+          "x": 73,
+          "y": 65
         },
         {
           "en": "choose",
-          "ar": "يختار"
+          "ar": "يختار",
+          "kind": "action",
+          "x": 61,
+          "y": 49
         },
         {
           "en": "dark",
-          "ar": "داكن"
+          "ar": "داكن",
+          "kind": "description",
+          "x": 53,
+          "y": 59
+        },
+        {
+          "en": "lid",
+          "ar": "غطاء",
+          "kind": "object",
+          "x": 62,
+          "y": 51
+        },
+        {
+          "en": "stall",
+          "ar": "بسطة",
+          "kind": "object",
+          "x": 76,
+          "y": 79
+        },
+        {
+          "en": "sample",
+          "ar": "عيّنة",
+          "kind": "object",
+          "x": 49,
+          "y": 52
+        }
+      ],
+      "patterns": [
+        {
+          "id": 109,
+          "en": "I'd like the small jar of honey.",
+          "ar": "أود المرطبان الصغير من العسل."
+        },
+        {
+          "id": 3
+        },
+        {
+          "id": 4
         }
       ],
       "taskEn": "Ask how the two jars differ and explain which one you would buy.",
@@ -575,19 +1275,63 @@
       "words": [
         {
           "en": "dough",
-          "ar": "عجين"
+          "ar": "عجين",
+          "kind": "object",
+          "x": 56,
+          "y": 72
         },
         {
           "en": "flour",
-          "ar": "دقيق"
+          "ar": "دقيق",
+          "kind": "object",
+          "x": 35,
+          "y": 67
         },
         {
           "en": "knead",
-          "ar": "يعجن"
+          "ar": "يعجن",
+          "kind": "action",
+          "x": 54,
+          "y": 65
         },
         {
           "en": "sticky",
-          "ar": "لزج"
+          "ar": "لزج",
+          "kind": "description"
+        },
+        {
+          "en": "mixing bowl",
+          "ar": "وعاء خلط",
+          "kind": "object",
+          "x": 35,
+          "y": 73
+        },
+        {
+          "en": "apron",
+          "ar": "مئزر",
+          "kind": "object",
+          "x": 54,
+          "y": 48
+        },
+        {
+          "en": "work surface",
+          "ar": "سطح عمل",
+          "kind": "object",
+          "x": 65,
+          "y": 80
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9037,
+          "en": "Can you add a little more flour?",
+          "ar": "هل يمكنك إضافة قليل من الدقيق؟"
+        },
+        {
+          "id": 3
+        },
+        {
+          "id": 4
         }
       ],
       "taskEn": "Describe what to do if the dough sticks to your hands.",
@@ -607,19 +1351,60 @@
       "words": [
         {
           "en": "scale",
-          "ar": "ميزان"
+          "ar": "ميزان",
+          "kind": "object",
+          "x": 55,
+          "y": 65
         },
         {
           "en": "dates",
-          "ar": "تمر"
+          "ar": "تمر",
+          "kind": "object",
+          "x": 41,
+          "y": 76
         },
         {
           "en": "weigh",
-          "ar": "يزن"
+          "ar": "يزن",
+          "kind": "action",
+          "x": 52,
+          "y": 61
         },
         {
           "en": "soft",
-          "ar": "طري"
+          "ar": "طري",
+          "kind": "description"
+        },
+        {
+          "en": "paper bag",
+          "ar": "كيس ورقي",
+          "kind": "object",
+          "x": 63,
+          "y": 65
+        },
+        {
+          "en": "food stall",
+          "ar": "بسطة طعام",
+          "kind": "object",
+          "x": 24,
+          "y": 63
+        },
+        {
+          "en": "seller",
+          "ar": "بائع",
+          "kind": "object",
+          "x": 28,
+          "y": 33
+        }
+      ],
+      "patterns": [
+        {
+          "id": 4,
+          "en": "Can I buy half a kilo of dates?",
+          "ar": "هل يمكنني شراء نصف كيلو من التمر؟"
+        },
+        {
+          "id": 3
         }
       ],
       "taskEn": "Ask for half a kilo and check whether a smaller bag is available.",
@@ -639,19 +1424,63 @@
       "words": [
         {
           "en": "sandwich",
-          "ar": "شطيرة"
+          "ar": "شطيرة",
+          "kind": "object",
+          "x": 55,
+          "y": 69
         },
         {
           "en": "picnic basket",
-          "ar": "سلة نزهة"
+          "ar": "سلة نزهة",
+          "kind": "object",
+          "x": 63,
+          "y": 82
         },
         {
           "en": "pack",
-          "ar": "يعبّئ"
+          "ar": "يعبّئ",
+          "kind": "action",
+          "x": 51,
+          "y": 63
         },
         {
           "en": "enough",
-          "ar": "كافٍ"
+          "ar": "كافٍ",
+          "kind": "description"
+        },
+        {
+          "en": "fruit",
+          "ar": "فاكهة",
+          "kind": "object",
+          "x": 81,
+          "y": 76
+        },
+        {
+          "en": "lunch box",
+          "ar": "علبة غداء",
+          "kind": "object",
+          "x": 37,
+          "y": 74
+        },
+        {
+          "en": "picnic table",
+          "ar": "طاولة نزهة",
+          "kind": "object",
+          "x": 68,
+          "y": 89
+        }
+      ],
+      "patterns": [
+        {
+          "id": 13,
+          "en": "I need to pack enough food for four people.",
+          "ar": "أحتاج إلى تجهيز طعام يكفي أربعة أشخاص."
+        },
+        {
+          "id": 3
+        },
+        {
+          "id": 4
         }
       ],
       "taskEn": "Decide how much food four people will need and what to keep cool.",
@@ -671,19 +1500,65 @@
       "words": [
         {
           "en": "leftovers",
-          "ar": "بقايا الطعام"
+          "ar": "بقايا الطعام",
+          "kind": "object",
+          "x": 59,
+          "y": 73
         },
         {
           "en": "container",
-          "ar": "علبة"
+          "ar": "علبة",
+          "kind": "object",
+          "x": 67,
+          "y": 76
         },
         {
           "en": "box up",
-          "ar": "يعبّئ"
+          "ar": "يعبّئ",
+          "kind": "action",
+          "x": 52,
+          "y": 65
         },
         {
           "en": "separate",
-          "ar": "منفصل"
+          "ar": "منفصل",
+          "kind": "description",
+          "x": 82,
+          "y": 78
+        },
+        {
+          "en": "lid",
+          "ar": "غطاء",
+          "kind": "object",
+          "x": 86,
+          "y": 76
+        },
+        {
+          "en": "serving spoon",
+          "ar": "ملعقة تقديم",
+          "kind": "object",
+          "x": 47,
+          "y": 69
+        },
+        {
+          "en": "counter",
+          "ar": "منضدة",
+          "kind": "object",
+          "x": 53,
+          "y": 87
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9037,
+          "en": "Can you put the sauce in a separate box?",
+          "ar": "هل يمكنك وضع الصلصة في علبة منفصلة؟"
+        },
+        {
+          "id": 3
+        },
+        {
+          "id": 4
         }
       ],
       "taskEn": "Ask to keep the sauce separate and label which box is yours.",
@@ -703,19 +1578,60 @@
       "words": [
         {
           "en": "platform",
-          "ar": "رصيف"
+          "ar": "رصيف",
+          "kind": "object",
+          "x": 29,
+          "y": 79
         },
         {
           "en": "departure board",
-          "ar": "لوحة المغادرة"
+          "ar": "لوحة المغادرة",
+          "kind": "object",
+          "x": 40,
+          "y": 18
         },
         {
           "en": "ask for",
-          "ar": "يطلب"
+          "ar": "يطلب",
+          "kind": "action",
+          "x": 51,
+          "y": 46
         },
         {
           "en": "nearby",
-          "ar": "قريب"
+          "ar": "قريب",
+          "kind": "description"
+        },
+        {
+          "en": "rail worker",
+          "ar": "موظف سكة حديد",
+          "kind": "object",
+          "x": 61,
+          "y": 37
+        },
+        {
+          "en": "vest",
+          "ar": "سترة عاكسة",
+          "kind": "object",
+          "x": 62,
+          "y": 58
+        },
+        {
+          "en": "passenger",
+          "ar": "راكب",
+          "kind": "object",
+          "x": 23,
+          "y": 39
+        }
+      ],
+      "patterns": [
+        {
+          "id": 12,
+          "en": "Do you know where the train leaves from?",
+          "ar": "هل تعرف من أين ينطلق القطار؟"
+        },
+        {
+          "id": 4
         }
       ],
       "taskEn": "Ask where the train leaves from and when boarding starts.",
@@ -735,19 +1651,58 @@
       "words": [
         {
           "en": "suitcase",
-          "ar": "حقيبة سفر"
+          "ar": "حقيبة سفر",
+          "kind": "object",
+          "x": 53,
+          "y": 76
         },
         {
           "en": "check-in desk",
-          "ar": "مكتب تسجيل السفر"
+          "ar": "مكتب تسجيل السفر",
+          "kind": "object",
+          "x": 54,
+          "y": 69
         },
         {
           "en": "weigh",
-          "ar": "يزن"
+          "ar": "يزن",
+          "kind": "action",
+          "x": 55,
+          "y": 64
         },
         {
           "en": "heavy",
-          "ar": "ثقيل"
+          "ar": "ثقيل",
+          "kind": "description"
+        },
+        {
+          "en": "luggage handle",
+          "ar": "مقبض حقيبة",
+          "kind": "object",
+          "x": 47,
+          "y": 58
+        },
+        {
+          "en": "airport",
+          "ar": "مطار",
+          "kind": "object",
+          "x": 49,
+          "y": 18
+        },
+        {
+          "en": "boarding pass",
+          "ar": "بطاقة صعود",
+          "kind": "object"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 4,
+          "en": "Can I move a few things into my other bag?",
+          "ar": "هل يمكنني نقل بعض الأشياء إلى حقيبتي الأخرى؟"
+        },
+        {
+          "id": 12
         }
       ],
       "taskEn": "Decide what you can move to another bag if one suitcase is too heavy.",
@@ -767,19 +1722,60 @@
       "words": [
         {
           "en": "bus stop",
-          "ar": "موقف حافلة"
+          "ar": "موقف حافلة",
+          "kind": "object",
+          "x": 62,
+          "y": 22
         },
         {
           "en": "map",
-          "ar": "خريطة"
+          "ar": "خريطة",
+          "kind": "object",
+          "x": 50,
+          "y": 63
         },
         {
           "en": "check",
-          "ar": "يتحقق"
+          "ar": "يتحقق",
+          "kind": "action",
+          "x": 54,
+          "y": 62
         },
         {
           "en": "direct",
-          "ar": "مباشر"
+          "ar": "مباشر",
+          "kind": "description"
+        },
+        {
+          "en": "shelter",
+          "ar": "مظلة موقف",
+          "kind": "object",
+          "x": 63,
+          "y": 14
+        },
+        {
+          "en": "bus",
+          "ar": "حافلة",
+          "kind": "object",
+          "x": 78,
+          "y": 40
+        },
+        {
+          "en": "route map",
+          "ar": "خريطة المسار",
+          "kind": "object",
+          "x": 54,
+          "y": 63
+        }
+      ],
+      "patterns": [
+        {
+          "id": 12,
+          "en": "Do you know where I can catch the next bus?",
+          "ar": "هل تعرف أين أستقل الحافلة التالية؟"
+        },
+        {
+          "id": 4
         }
       ],
       "taskEn": "Compare two routes and choose the one with fewer changes.",
@@ -799,19 +1795,60 @@
       "words": [
         {
           "en": "room key",
-          "ar": "مفتاح الغرفة"
+          "ar": "مفتاح الغرفة",
+          "kind": "object",
+          "x": 50,
+          "y": 61
         },
         {
           "en": "reception",
-          "ar": "الاستقبال"
+          "ar": "الاستقبال",
+          "kind": "object",
+          "x": 60,
+          "y": 66
         },
         {
           "en": "return",
-          "ar": "يعيد"
+          "ar": "يعيد",
+          "kind": "action",
+          "x": 52,
+          "y": 60
         },
         {
           "en": "available",
-          "ar": "متاح"
+          "ar": "متاح",
+          "kind": "description"
+        },
+        {
+          "en": "receptionist",
+          "ar": "موظفة استقبال",
+          "kind": "object",
+          "x": 71,
+          "y": 34
+        },
+        {
+          "en": "guest",
+          "ar": "نزيل",
+          "kind": "object",
+          "x": 31,
+          "y": 42
+        },
+        {
+          "en": "counter",
+          "ar": "منضدة",
+          "kind": "object",
+          "x": 63,
+          "y": 69
+        }
+      ],
+      "patterns": [
+        {
+          "id": 4,
+          "en": "Can I leave my bag at reception?",
+          "ar": "هل يمكنني ترك حقيبتي في الاستقبال؟"
+        },
+        {
+          "id": 12
         }
       ],
       "taskEn": "Ask the receptionist to keep your bag until the afternoon.",
@@ -831,19 +1868,63 @@
       "words": [
         {
           "en": "arrivals",
-          "ar": "صالة الوصول"
+          "ar": "صالة الوصول",
+          "kind": "object",
+          "x": 50,
+          "y": 25
         },
         {
           "en": "exit",
-          "ar": "مخرج"
+          "ar": "مخرج",
+          "kind": "object",
+          "x": 44,
+          "y": 29
         },
         {
           "en": "pick up",
-          "ar": "يقلّ"
+          "ar": "يقلّ",
+          "kind": "action",
+          "x": 62,
+          "y": 52
         },
         {
           "en": "crowded",
-          "ar": "مزدحم"
+          "ar": "مزدحم",
+          "kind": "description"
+        },
+        {
+          "en": "taxi",
+          "ar": "سيارة أجرة",
+          "kind": "object",
+          "x": 78,
+          "y": 65
+        },
+        {
+          "en": "rolling suitcase",
+          "ar": "حقيبة بعجلات",
+          "kind": "object",
+          "x": 27,
+          "y": 75
+        },
+        {
+          "en": "glass doors",
+          "ar": "أبواب زجاجية",
+          "kind": "object",
+          "x": 42,
+          "y": 34
+        }
+      ],
+      "patterns": [
+        {
+          "id": 117,
+          "en": "There is a taxi by the exit.",
+          "ar": "توجد سيارة أجرة قرب المخرج."
+        },
+        {
+          "id": 12
+        },
+        {
+          "id": 4
         }
       ],
       "taskEn": "Describe where you are standing so the driver can find you.",
@@ -863,19 +1944,65 @@
       "words": [
         {
           "en": "shelter",
-          "ar": "مأوى"
+          "ar": "مأوى",
+          "kind": "object",
+          "x": 57,
+          "y": 19
         },
         {
           "en": "luggage",
-          "ar": "أمتعة"
+          "ar": "أمتعة",
+          "kind": "object",
+          "x": 57,
+          "y": 81
         },
         {
           "en": "wait",
-          "ar": "ينتظر"
+          "ar": "ينتظر",
+          "kind": "action",
+          "x": 55,
+          "y": 58
         },
         {
           "en": "wet",
-          "ar": "مبتل"
+          "ar": "مبتل",
+          "kind": "description",
+          "x": 26,
+          "y": 89
+        },
+        {
+          "en": "umbrella",
+          "ar": "مظلة مطر",
+          "kind": "object",
+          "x": 51,
+          "y": 33
+        },
+        {
+          "en": "rain",
+          "ar": "مطر",
+          "kind": "object",
+          "x": 20,
+          "y": 58
+        },
+        {
+          "en": "wheel",
+          "ar": "عجلة",
+          "kind": "object",
+          "x": 61,
+          "y": 91
+        }
+      ],
+      "patterns": [
+        {
+          "id": 6,
+          "en": "Let's wait under the shelter until the rain stops.",
+          "ar": "لننتظر تحت المظلة حتى يتوقف المطر."
+        },
+        {
+          "id": 12
+        },
+        {
+          "id": 4
         }
       ],
       "taskEn": "Suggest where to wait and how to keep the bags dry.",
@@ -895,19 +2022,60 @@
       "words": [
         {
           "en": "ferry",
-          "ar": "عبّارة"
+          "ar": "عبّارة",
+          "kind": "object",
+          "x": 67,
+          "y": 43
         },
         {
           "en": "harbor",
-          "ar": "ميناء"
+          "ar": "ميناء",
+          "kind": "object",
+          "x": 28,
+          "y": 73
         },
         {
           "en": "board",
-          "ar": "يصعد"
+          "ar": "يصعد",
+          "kind": "action",
+          "x": 71,
+          "y": 61
         },
         {
           "en": "windy",
-          "ar": "عاصف"
+          "ar": "عاصف",
+          "kind": "description"
+        },
+        {
+          "en": "life ring",
+          "ar": "طوق نجاة",
+          "kind": "object",
+          "x": 41,
+          "y": 71
+        },
+        {
+          "en": "gangway",
+          "ar": "ممر صعود",
+          "kind": "object",
+          "x": 77,
+          "y": 81
+        },
+        {
+          "en": "crew member",
+          "ar": "فرد من الطاقم",
+          "kind": "object",
+          "x": 41,
+          "y": 40
+        }
+      ],
+      "patterns": [
+        {
+          "id": 12,
+          "en": "Do you know where we should board the ferry?",
+          "ar": "هل تعرف من أين ينبغي أن نصعد إلى العبّارة؟"
+        },
+        {
+          "id": 4
         }
       ],
       "taskEn": "Ask when the ferry leaves and where to put a large bag.",
@@ -927,19 +2095,65 @@
       "words": [
         {
           "en": "footbridge",
-          "ar": "جسر مشاة"
+          "ar": "جسر مشاة",
+          "kind": "object",
+          "x": 49,
+          "y": 59
         },
         {
           "en": "tracks",
-          "ar": "سكك"
+          "ar": "سكك",
+          "kind": "object",
+          "x": 76,
+          "y": 86
         },
         {
           "en": "cross",
-          "ar": "يعبر"
+          "ar": "يعبر",
+          "kind": "action",
+          "x": 46,
+          "y": 53
         },
         {
           "en": "opposite",
-          "ar": "مقابل"
+          "ar": "مقابل",
+          "kind": "description",
+          "x": 73,
+          "y": 52
+        },
+        {
+          "en": "handrail",
+          "ar": "درابزين",
+          "kind": "object",
+          "x": 66,
+          "y": 62
+        },
+        {
+          "en": "steps",
+          "ar": "درج",
+          "kind": "object",
+          "x": 51,
+          "y": 78
+        },
+        {
+          "en": "bridge roof",
+          "ar": "سقف الجسر",
+          "kind": "object",
+          "x": 51,
+          "y": 19
+        }
+      ],
+      "patterns": [
+        {
+          "id": 2,
+          "en": "I have to cross the bridge to reach the other platform.",
+          "ar": "عليّ عبور الجسر للوصول إلى الرصيف الآخر."
+        },
+        {
+          "id": 12
+        },
+        {
+          "id": 4
         }
       ],
       "taskEn": "Give directions from the bridge to the opposite platform.",
@@ -959,19 +2173,63 @@
       "words": [
         {
           "en": "driver",
-          "ar": "سائق"
+          "ar": "سائق",
+          "kind": "object",
+          "x": 67,
+          "y": 45
         },
         {
           "en": "route",
-          "ar": "مسار"
+          "ar": "مسار",
+          "kind": "object",
+          "x": 57,
+          "y": 64
         },
         {
           "en": "point to",
-          "ar": "يشير إلى"
+          "ar": "يشير إلى",
+          "kind": "action",
+          "x": 55,
+          "y": 61
         },
         {
           "en": "last",
-          "ar": "أخير"
+          "ar": "أخير",
+          "kind": "description"
+        },
+        {
+          "en": "paper map",
+          "ar": "خريطة ورقية",
+          "kind": "object",
+          "x": 57,
+          "y": 65
+        },
+        {
+          "en": "bus window",
+          "ar": "نافذة حافلة",
+          "kind": "object",
+          "x": 73,
+          "y": 23
+        },
+        {
+          "en": "passenger",
+          "ar": "راكب",
+          "kind": "object",
+          "x": 34,
+          "y": 43
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9037,
+          "en": "Can you tell me when to get off?",
+          "ar": "هل يمكنك إخباري متى أنزل؟"
+        },
+        {
+          "id": 12
+        },
+        {
+          "id": 4
         }
       ],
       "taskEn": "Ask the driver to tell you when to get off for the library.",
@@ -991,19 +2249,63 @@
       "words": [
         {
           "en": "backpack",
-          "ar": "حقيبة ظهر"
+          "ar": "حقيبة ظهر",
+          "kind": "object",
+          "x": 54,
+          "y": 62
         },
         {
           "en": "tag",
-          "ar": "بطاقة"
+          "ar": "بطاقة",
+          "kind": "object",
+          "x": 53,
+          "y": 63
         },
         {
           "en": "collect",
-          "ar": "يستلم"
+          "ar": "يستلم",
+          "kind": "action",
+          "x": 55,
+          "y": 60
         },
         {
           "en": "missing",
-          "ar": "مفقود"
+          "ar": "مفقود",
+          "kind": "description"
+        },
+        {
+          "en": "service desk",
+          "ar": "مكتب خدمة",
+          "kind": "object",
+          "x": 62,
+          "y": 71
+        },
+        {
+          "en": "bag strap",
+          "ar": "حزام حقيبة",
+          "kind": "object",
+          "x": 48,
+          "y": 58
+        },
+        {
+          "en": "clerk",
+          "ar": "موظف",
+          "kind": "object",
+          "x": 70,
+          "y": 36
+        }
+      ],
+      "patterns": [
+        {
+          "id": 105,
+          "en": "I have a notebook in the front pocket.",
+          "ar": "لدي دفتر في الجيب الأمامي."
+        },
+        {
+          "id": 12
+        },
+        {
+          "id": 4
         }
       ],
       "taskEn": "Describe your bag and name one thing inside it to confirm it is yours.",
@@ -1023,19 +2325,60 @@
       "words": [
         {
           "en": "notes",
-          "ar": "ملاحظات"
+          "ar": "ملاحظات",
+          "kind": "object",
+          "x": 49,
+          "y": 75
         },
         {
           "en": "library table",
-          "ar": "طاولة مكتبة"
+          "ar": "طاولة مكتبة",
+          "kind": "object",
+          "x": 55,
+          "y": 81
         },
         {
           "en": "compare",
-          "ar": "يقارن"
+          "ar": "يقارن",
+          "kind": "action",
+          "x": 52,
+          "y": 67
         },
         {
           "en": "clear",
-          "ar": "واضح"
+          "ar": "واضح",
+          "kind": "description"
+        },
+        {
+          "en": "open book",
+          "ar": "كتاب مفتوح",
+          "kind": "object",
+          "x": 70,
+          "y": 74
+        },
+        {
+          "en": "laptop",
+          "ar": "حاسوب محمول",
+          "kind": "object",
+          "x": 23,
+          "y": 69
+        },
+        {
+          "en": "classmate",
+          "ar": "زميل دراسة",
+          "kind": "object",
+          "x": 75,
+          "y": 39
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9037,
+          "en": "Can you explain this point with an example?",
+          "ar": "هل يمكنك شرح هذه النقطة بمثال؟"
+        },
+        {
+          "id": 13
         }
       ],
       "taskEn": "Ask which point is unclear and explain it with an example.",
@@ -1055,19 +2398,65 @@
       "words": [
         {
           "en": "bookshelf",
-          "ar": "رف كتب"
+          "ar": "رف كتب",
+          "kind": "object",
+          "x": 76,
+          "y": 35
         },
         {
           "en": "cover",
-          "ar": "غلاف"
+          "ar": "غلاف",
+          "kind": "object",
+          "x": 67,
+          "y": 56
         },
         {
           "en": "look for",
-          "ar": "يبحث عن"
+          "ar": "يبحث عن",
+          "kind": "action",
+          "x": 62,
+          "y": 53
         },
         {
           "en": "high",
-          "ar": "مرتفع"
+          "ar": "مرتفع",
+          "kind": "description",
+          "x": 75,
+          "y": 24
+        },
+        {
+          "en": "librarian",
+          "ar": "أمين مكتبة",
+          "kind": "object",
+          "x": 60,
+          "y": 29
+        },
+        {
+          "en": "backpack",
+          "ar": "حقيبة ظهر",
+          "kind": "object",
+          "x": 34,
+          "y": 62
+        },
+        {
+          "en": "reader",
+          "ar": "قارئ",
+          "kind": "object",
+          "x": 43,
+          "y": 42
+        }
+      ],
+      "patterns": [
+        {
+          "id": 4,
+          "en": "Can I borrow this book today?",
+          "ar": "هل يمكنني استعارة هذا الكتاب اليوم؟"
+        },
+        {
+          "id": 9037
+        },
+        {
+          "id": 13
         }
       ],
       "taskEn": "Describe the book you want and ask if you can borrow it today.",
@@ -1087,19 +2476,63 @@
       "words": [
         {
           "en": "strip",
-          "ar": "شريط"
+          "ar": "شريط",
+          "kind": "object",
+          "x": 62,
+          "y": 35
         },
         {
           "en": "half",
-          "ar": "نصف"
+          "ar": "نصف",
+          "kind": "object",
+          "x": 70,
+          "y": 42
         },
         {
           "en": "divide",
-          "ar": "يقسّم"
+          "ar": "يقسّم",
+          "kind": "action",
+          "x": 62,
+          "y": 43
         },
         {
           "en": "equal",
-          "ar": "متساوٍ"
+          "ar": "متساوٍ",
+          "kind": "description"
+        },
+        {
+          "en": "whiteboard",
+          "ar": "سبورة بيضاء",
+          "kind": "object",
+          "x": 78,
+          "y": 36
+        },
+        {
+          "en": "colored paper",
+          "ar": "ورق ملون",
+          "kind": "object",
+          "x": 78,
+          "y": 34
+        },
+        {
+          "en": "teacher",
+          "ar": "معلّم",
+          "kind": "object",
+          "x": 50,
+          "y": 39
+        }
+      ],
+      "patterns": [
+        {
+          "id": 6,
+          "en": "Let's divide the strip into four equal parts.",
+          "ar": "لنقسّم الشريط إلى أربعة أجزاء متساوية."
+        },
+        {
+          "id": 9037
+        },
+        {
+          "id": 13
         }
       ],
       "taskEn": "Explain how to make four equal parts from one strip.",
@@ -1119,19 +2552,60 @@
       "words": [
         {
           "en": "slide",
-          "ar": "شريحة"
+          "ar": "شريحة",
+          "kind": "object",
+          "x": 77,
+          "y": 37
         },
         {
           "en": "notes",
-          "ar": "ملاحظات"
+          "ar": "ملاحظات",
+          "kind": "object",
+          "x": 61,
+          "y": 56
         },
         {
           "en": "rehearse",
-          "ar": "يتدرّب"
+          "ar": "يتدرّب",
+          "kind": "action",
+          "x": 56,
+          "y": 56
         },
         {
           "en": "ready",
-          "ar": "جاهز"
+          "ar": "جاهز",
+          "kind": "description"
+        },
+        {
+          "en": "projector screen",
+          "ar": "شاشة عرض",
+          "kind": "object",
+          "x": 82,
+          "y": 28
+        },
+        {
+          "en": "sheet",
+          "ar": "ورقة",
+          "kind": "object",
+          "x": 56,
+          "y": 61
+        },
+        {
+          "en": "presentation group",
+          "ar": "مجموعة عرض",
+          "kind": "object",
+          "x": 56,
+          "y": 36
+        }
+      ],
+      "patterns": [
+        {
+          "id": 13,
+          "en": "I need to practise the opening line.",
+          "ar": "أحتاج إلى التدرّب على جملة الافتتاح."
+        },
+        {
+          "id": 9037
         }
       ],
       "taskEn": "Assign the opening, an example, and a closing question to three speakers.",
@@ -1151,19 +2625,60 @@
       "words": [
         {
           "en": "headphones",
-          "ar": "سماعات رأس"
+          "ar": "سماعات رأس",
+          "kind": "object",
+          "x": 48,
+          "y": 33
         },
         {
           "en": "notebook",
-          "ar": "دفتر"
+          "ar": "دفتر",
+          "kind": "object",
+          "x": 69,
+          "y": 76
         },
         {
           "en": "repeat",
-          "ar": "يكرّر"
+          "ar": "يكرّر",
+          "kind": "action",
+          "x": 48,
+          "y": 53
         },
         {
           "en": "slow",
-          "ar": "بطيء"
+          "ar": "بطيء",
+          "kind": "description"
+        },
+        {
+          "en": "microphone",
+          "ar": "ميكروفون",
+          "kind": "object",
+          "x": 46,
+          "y": 54
+        },
+        {
+          "en": "laptop",
+          "ar": "حاسوب محمول",
+          "kind": "object",
+          "x": 79,
+          "y": 61
+        },
+        {
+          "en": "desk",
+          "ar": "مكتب",
+          "kind": "object",
+          "x": 60,
+          "y": 83
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9037,
+          "en": "Can you say the word more slowly?",
+          "ar": "هل يمكنك قول الكلمة ببطء أكبر؟"
+        },
+        {
+          "id": 13
         }
       ],
       "taskEn": "Ask to hear a difficult word again and say which sound is hard.",
@@ -1183,19 +2698,65 @@
       "words": [
         {
           "en": "sketchbook",
-          "ar": "دفتر رسم"
+          "ar": "دفتر رسم",
+          "kind": "object",
+          "x": 73,
+          "y": 75
         },
         {
           "en": "pen",
-          "ar": "قلم"
+          "ar": "قلم",
+          "kind": "object",
+          "x": 42,
+          "y": 62
         },
         {
           "en": "write",
-          "ar": "يكتب"
+          "ar": "يكتب",
+          "kind": "action",
+          "x": 45,
+          "y": 66
         },
         {
           "en": "blank",
-          "ar": "فارغ"
+          "ar": "فارغ",
+          "kind": "description",
+          "x": 67,
+          "y": 74
+        },
+        {
+          "en": "notebook",
+          "ar": "دفتر",
+          "kind": "object",
+          "x": 51,
+          "y": 76
+        },
+        {
+          "en": "window",
+          "ar": "نافذة",
+          "kind": "object",
+          "x": 84,
+          "y": 22
+        },
+        {
+          "en": "desk",
+          "ar": "مكتب",
+          "kind": "object",
+          "x": 54,
+          "y": 84
+        }
+      ],
+      "patterns": [
+        {
+          "id": 1,
+          "en": "I want to write a story about this place.",
+          "ar": "أريد أن أكتب قصة عن هذا المكان."
+        },
+        {
+          "id": 9037
+        },
+        {
+          "id": 13
         }
       ],
       "taskEn": "Invent a first line for the story and ask what should happen next.",
@@ -1215,19 +2776,62 @@
       "words": [
         {
           "en": "ruler",
-          "ar": "مسطرة"
+          "ar": "مسطرة",
+          "kind": "object",
+          "x": 54,
+          "y": 73
         },
         {
           "en": "edge",
-          "ar": "حافة"
+          "ar": "حافة",
+          "kind": "object",
+          "x": 65,
+          "y": 62
         },
         {
           "en": "measure",
-          "ar": "يقيس"
+          "ar": "يقيس",
+          "kind": "action",
+          "x": 54,
+          "y": 70
         },
         {
           "en": "straight",
-          "ar": "مستقيم"
+          "ar": "مستقيم",
+          "kind": "description",
+          "x": 56,
+          "y": 70
+        },
+        {
+          "en": "paper model",
+          "ar": "نموذج ورقي",
+          "kind": "object",
+          "x": 55,
+          "y": 56
+        },
+        {
+          "en": "cutting mat",
+          "ar": "بساط قص",
+          "kind": "object",
+          "x": 61,
+          "y": 80
+        },
+        {
+          "en": "cardboard",
+          "ar": "ورق مقوّى",
+          "kind": "object",
+          "x": 54,
+          "y": 56
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9037,
+          "en": "Can you measure the other side?",
+          "ar": "هل يمكنك قياس الجانب الآخر؟"
+        },
+        {
+          "id": 13
         }
       ],
       "taskEn": "Tell a partner where to measure and how to make both sides equal.",
@@ -1247,19 +2851,63 @@
       "words": [
         {
           "en": "globe",
-          "ar": "كرة أرضية"
+          "ar": "كرة أرضية",
+          "kind": "object",
+          "x": 43,
+          "y": 48
         },
         {
           "en": "compass",
-          "ar": "بوصلة"
+          "ar": "بوصلة",
+          "kind": "object",
+          "x": 54,
+          "y": 74
         },
         {
           "en": "point",
-          "ar": "يشير"
+          "ar": "يشير",
+          "kind": "action",
+          "x": 50,
+          "y": 49
         },
         {
           "en": "north",
-          "ar": "الشمال"
+          "ar": "الشمال",
+          "kind": "description"
+        },
+        {
+          "en": "stand",
+          "ar": "حامل",
+          "kind": "object",
+          "x": 44,
+          "y": 68
+        },
+        {
+          "en": "map",
+          "ar": "خريطة",
+          "kind": "object",
+          "x": 35,
+          "y": 43
+        },
+        {
+          "en": "instructor",
+          "ar": "مدرّس",
+          "kind": "object",
+          "x": 70,
+          "y": 36
+        }
+      ],
+      "patterns": [
+        {
+          "id": 12,
+          "en": "Do you know where we should go from here?",
+          "ar": "هل تعرف إلى أين نذهب من هنا؟"
+        },
+        {
+          "id": 9037
+        },
+        {
+          "id": 13
         }
       ],
       "taskEn": "Ask which direction to travel between two places and explain why.",
@@ -1279,19 +2927,63 @@
       "words": [
         {
           "en": "flashcard",
-          "ar": "بطاقة مراجعة"
+          "ar": "بطاقة مراجعة",
+          "kind": "object",
+          "x": 51,
+          "y": 68
         },
         {
           "en": "pile",
-          "ar": "كومة"
+          "ar": "كومة",
+          "kind": "object",
+          "x": 61,
+          "y": 77
         },
         {
           "en": "sort",
-          "ar": "يفرز"
+          "ar": "يفرز",
+          "kind": "action",
+          "x": 56,
+          "y": 64
         },
         {
           "en": "difficult",
-          "ar": "صعب"
+          "ar": "صعب",
+          "kind": "description"
+        },
+        {
+          "en": "color code",
+          "ar": "ترميز بالألوان",
+          "kind": "object",
+          "x": 61,
+          "y": 77
+        },
+        {
+          "en": "desk",
+          "ar": "مكتب",
+          "kind": "object",
+          "x": 55,
+          "y": 82
+        },
+        {
+          "en": "stack of cards",
+          "ar": "رصّة بطاقات",
+          "kind": "object",
+          "x": 30,
+          "y": 74
+        }
+      ],
+      "patterns": [
+        {
+          "id": 6,
+          "en": "Let's review the difficult cards again tomorrow.",
+          "ar": "لنراجع البطاقات الصعبة مجددًا غدًا."
+        },
+        {
+          "id": 9037
+        },
+        {
+          "id": 13
         }
       ],
       "taskEn": "Decide which cards to review today and how to test yourself tomorrow.",
@@ -1311,19 +3003,63 @@
       "words": [
         {
           "en": "photograph",
-          "ar": "صورة"
+          "ar": "صورة",
+          "kind": "object",
+          "x": 56,
+          "y": 61
         },
         {
           "en": "album",
-          "ar": "ألبوم"
+          "ar": "ألبوم",
+          "kind": "object",
+          "x": 60,
+          "y": 70
         },
         {
           "en": "notice",
-          "ar": "يلاحظ"
+          "ar": "يلاحظ",
+          "kind": "action",
+          "x": 55,
+          "y": 57
         },
         {
           "en": "old",
-          "ar": "قديم"
+          "ar": "قديم",
+          "kind": "description"
+        },
+        {
+          "en": "photo print",
+          "ar": "صورة مطبوعة",
+          "kind": "object",
+          "x": 54,
+          "y": 73
+        },
+        {
+          "en": "bookshelf",
+          "ar": "رف كتب",
+          "kind": "object",
+          "x": 77,
+          "y": 25
+        },
+        {
+          "en": "classmates",
+          "ar": "زملاء دراسة",
+          "kind": "object",
+          "x": 55,
+          "y": 32
+        }
+      ],
+      "patterns": [
+        {
+          "id": 8,
+          "en": "I used to walk past a building like that.",
+          "ar": "كنت أمرّ مشيًا بجوار مبنى يشبه ذلك."
+        },
+        {
+          "id": 9037
+        },
+        {
+          "id": 13
         }
       ],
       "taskEn": "Compare a place in the old photo with how it might look today.",
@@ -1343,19 +3079,63 @@
       "words": [
         {
           "en": "badge",
-          "ar": "بطاقة تعريف"
+          "ar": "بطاقة تعريف",
+          "kind": "object",
+          "x": 52,
+          "y": 63
         },
         {
           "en": "desk",
-          "ar": "مكتب"
+          "ar": "مكتب",
+          "kind": "object",
+          "x": 51,
+          "y": 74
         },
         {
           "en": "sign in",
-          "ar": "يسجّل الدخول"
+          "ar": "يسجّل الدخول",
+          "kind": "action",
+          "x": 54,
+          "y": 65
         },
         {
           "en": "temporary",
-          "ar": "مؤقت"
+          "ar": "مؤقت",
+          "kind": "description"
+        },
+        {
+          "en": "receptionist",
+          "ar": "موظفة استقبال",
+          "kind": "object",
+          "x": 35,
+          "y": 32
+        },
+        {
+          "en": "visitor",
+          "ar": "زائر",
+          "kind": "object",
+          "x": 63,
+          "y": 38
+        },
+        {
+          "en": "lanyard",
+          "ar": "حبل بطاقة",
+          "kind": "object",
+          "x": 51,
+          "y": 59
+        }
+      ],
+      "patterns": [
+        {
+          "id": 103,
+          "en": "I'm here to meet the manager.",
+          "ar": "أنا هنا لمقابلة المدير."
+        },
+        {
+          "id": 2
+        },
+        {
+          "id": 9037
         }
       ],
       "taskEn": "Introduce yourself, say who you are meeting, and ask where to wait.",
@@ -1375,19 +3155,60 @@
       "words": [
         {
           "en": "schedule",
-          "ar": "جدول"
+          "ar": "جدول",
+          "kind": "object",
+          "x": 54,
+          "y": 68
         },
         {
           "en": "shift",
-          "ar": "مناوبة"
+          "ar": "مناوبة",
+          "kind": "object",
+          "x": 46,
+          "y": 69
         },
         {
           "en": "swap",
-          "ar": "يبدّل"
+          "ar": "يبدّل",
+          "kind": "action",
+          "x": 56,
+          "y": 68
         },
         {
           "en": "free",
-          "ar": "متفرغ"
+          "ar": "متفرغ",
+          "kind": "description"
+        },
+        {
+          "en": "colored cards",
+          "ar": "بطاقات ملوّنة",
+          "kind": "object",
+          "x": 46,
+          "y": 79
+        },
+        {
+          "en": "table",
+          "ar": "طاولة",
+          "kind": "object",
+          "x": 57,
+          "y": 81
+        },
+        {
+          "en": "coworker",
+          "ar": "زميل عمل",
+          "kind": "object",
+          "x": 39,
+          "y": 36
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9037,
+          "en": "Can you cover the early shift?",
+          "ar": "هل يمكنك تغطية المناوبة المبكرة؟"
+        },
+        {
+          "id": 2
         }
       ],
       "taskEn": "Ask to swap a shift and suggest a time you can cover instead.",
@@ -1407,19 +3228,63 @@
       "words": [
         {
           "en": "applicant",
-          "ar": "متقدّم"
+          "ar": "متقدّم",
+          "kind": "object",
+          "x": 76,
+          "y": 45
         },
         {
           "en": "panel",
-          "ar": "لجنة"
+          "ar": "لجنة",
+          "kind": "object",
+          "x": 39,
+          "y": 31
         },
         {
           "en": "apply",
-          "ar": "يتقدّم"
+          "ar": "يتقدّم",
+          "kind": "action",
+          "x": 66,
+          "y": 44
         },
         {
           "en": "confident",
-          "ar": "واثق"
+          "ar": "واثق",
+          "kind": "description"
+        },
+        {
+          "en": "interviewer",
+          "ar": "مُقابل",
+          "kind": "object",
+          "x": 45,
+          "y": 32
+        },
+        {
+          "en": "folder",
+          "ar": "مجلد",
+          "kind": "object",
+          "x": 56,
+          "y": 70
+        },
+        {
+          "en": "conference table",
+          "ar": "طاولة اجتماعات",
+          "kind": "object",
+          "x": 54,
+          "y": 75
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9,
+          "en": "I managed to finish a difficult project on time.",
+          "ar": "تمكّنت من إنهاء مشروع صعب في موعده."
+        },
+        {
+          "id": 2
+        },
+        {
+          "id": 9037
         }
       ],
       "taskEn": "Explain one skill using a real example and ask about the first week.",
@@ -1439,19 +3304,65 @@
       "words": [
         {
           "en": "parcel",
-          "ar": "طرد"
+          "ar": "طرد",
+          "kind": "object",
+          "x": 54,
+          "y": 66
         },
         {
           "en": "tape measure",
-          "ar": "شريط قياس"
+          "ar": "شريط قياس",
+          "kind": "object",
+          "x": 58,
+          "y": 58
         },
         {
           "en": "measure",
-          "ar": "يقيس"
+          "ar": "يقيس",
+          "kind": "action",
+          "x": 53,
+          "y": 58
         },
         {
           "en": "wide",
-          "ar": "عريض"
+          "ar": "عريض",
+          "kind": "description",
+          "x": 51,
+          "y": 73
+        },
+        {
+          "en": "cardboard box",
+          "ar": "صندوق كرتوني",
+          "kind": "object",
+          "x": 53,
+          "y": 69
+        },
+        {
+          "en": "shipping label",
+          "ar": "ملصق شحن",
+          "kind": "object",
+          "x": 69,
+          "y": 69
+        },
+        {
+          "en": "safety vest",
+          "ar": "سترة سلامة",
+          "kind": "object",
+          "x": 36,
+          "y": 47
+        }
+      ],
+      "patterns": [
+        {
+          "id": 10,
+          "en": "It takes a minute to measure this box.",
+          "ar": "يستغرق قياس هذا الصندوق دقيقة."
+        },
+        {
+          "id": 2
+        },
+        {
+          "id": 9037
         }
       ],
       "taskEn": "Ask if the parcel fits the size limit and decide how to label it.",
@@ -1471,19 +3382,65 @@
       "words": [
         {
           "en": "printer",
-          "ar": "طابعة"
+          "ar": "طابعة",
+          "kind": "object",
+          "x": 70,
+          "y": 57
         },
         {
           "en": "paper tray",
-          "ar": "درج الورق"
+          "ar": "درج الورق",
+          "kind": "object",
+          "x": 69,
+          "y": 70
         },
         {
           "en": "inspect",
-          "ar": "يفحص"
+          "ar": "يفحص",
+          "kind": "action",
+          "x": 58,
+          "y": 54
         },
         {
           "en": "jammed",
-          "ar": "عالق"
+          "ar": "عالق",
+          "kind": "description",
+          "x": 68,
+          "y": 64
+        },
+        {
+          "en": "technician",
+          "ar": "فنّي",
+          "kind": "object",
+          "x": 36,
+          "y": 42
+        },
+        {
+          "en": "printer cover",
+          "ar": "غطاء الطابعة",
+          "kind": "object",
+          "x": 73,
+          "y": 40
+        },
+        {
+          "en": "control panel",
+          "ar": "لوحة التحكم",
+          "kind": "object",
+          "x": 77,
+          "y": 53
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9035,
+          "en": "I can check the paper tray first.",
+          "ar": "يمكنني فحص درج الورق أولًا."
+        },
+        {
+          "id": 2
+        },
+        {
+          "id": 9037
         }
       ],
       "taskEn": "Describe the fault and ask when you can try printing again.",
@@ -1503,19 +3460,63 @@
       "words": [
         {
           "en": "floor plan",
-          "ar": "مخطط طابق"
+          "ar": "مخطط طابق",
+          "kind": "object",
+          "x": 65,
+          "y": 40
         },
         {
           "en": "entrance",
-          "ar": "مدخل"
+          "ar": "مدخل",
+          "kind": "object",
+          "x": 65,
+          "y": 46
         },
         {
           "en": "show",
-          "ar": "يعرض"
+          "ar": "يعرض",
+          "kind": "action",
+          "x": 56,
+          "y": 48
         },
         {
           "en": "wide",
-          "ar": "واسع"
+          "ar": "واسع",
+          "kind": "description"
+        },
+        {
+          "en": "plan sheet",
+          "ar": "ورقة مخطط",
+          "kind": "object",
+          "x": 60,
+          "y": 42
+        },
+        {
+          "en": "table",
+          "ar": "طاولة",
+          "kind": "object",
+          "x": 51,
+          "y": 76
+        },
+        {
+          "en": "pen",
+          "ar": "قلم",
+          "kind": "object",
+          "x": 53,
+          "y": 50
+        }
+      ],
+      "patterns": [
+        {
+          "id": 117,
+          "en": "There is room for a table near the entrance.",
+          "ar": "توجد مساحة لطاولة قرب المدخل."
+        },
+        {
+          "id": 2
+        },
+        {
+          "id": 9037
         }
       ],
       "taskEn": "Explain where you would put a table without blocking the entrance.",
@@ -1535,19 +3536,60 @@
       "words": [
         {
           "en": "laptop",
-          "ar": "حاسوب محمول"
+          "ar": "حاسوب محمول",
+          "kind": "object",
+          "x": 54,
+          "y": 56
         },
         {
           "en": "microphone",
-          "ar": "ميكروفون"
+          "ar": "ميكروفون",
+          "kind": "object",
+          "x": 57,
+          "y": 73
         },
         {
           "en": "test",
-          "ar": "يختبر"
+          "ar": "يختبر",
+          "kind": "action",
+          "x": 57,
+          "y": 55
         },
         {
           "en": "muted",
-          "ar": "مكتوم"
+          "ar": "مكتوم",
+          "kind": "description"
+        },
+        {
+          "en": "video call",
+          "ar": "مكالمة مرئية",
+          "kind": "object",
+          "x": 52,
+          "y": 50
+        },
+        {
+          "en": "screen",
+          "ar": "شاشة",
+          "kind": "object",
+          "x": 53,
+          "y": 51
+        },
+        {
+          "en": "coworker",
+          "ar": "زميل عمل",
+          "kind": "object",
+          "x": 74,
+          "y": 43
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9037,
+          "en": "Can you hear me clearly?",
+          "ar": "هل يمكنك سماعي بوضوح؟"
+        },
+        {
+          "id": 2
         }
       ],
       "taskEn": "Ask whether people can hear you and explain how to find the document.",
@@ -1567,19 +3609,63 @@
       "words": [
         {
           "en": "stockroom",
-          "ar": "مخزن"
+          "ar": "مخزن",
+          "kind": "object",
+          "x": 52,
+          "y": 26
         },
         {
           "en": "shelf",
-          "ar": "رف"
+          "ar": "رف",
+          "kind": "object",
+          "x": 39,
+          "y": 43
         },
         {
           "en": "count",
-          "ar": "يعدّ"
+          "ar": "يعدّ",
+          "kind": "action",
+          "x": 58,
+          "y": 52
         },
         {
           "en": "empty",
-          "ar": "فارغ"
+          "ar": "فارغ",
+          "kind": "description"
+        },
+        {
+          "en": "carton",
+          "ar": "صندوق كرتون",
+          "kind": "object",
+          "x": 43,
+          "y": 49
+        },
+        {
+          "en": "clipboard",
+          "ar": "لوح كتابة",
+          "kind": "object",
+          "x": 62,
+          "y": 62
+        },
+        {
+          "en": "safety vest",
+          "ar": "سترة سلامة",
+          "kind": "object",
+          "x": 69,
+          "y": 50
+        }
+      ],
+      "patterns": [
+        {
+          "id": 118,
+          "en": "There are only three boxes left on this shelf.",
+          "ar": "لم يبقَ على هذا الرف سوى ثلاثة صناديق."
+        },
+        {
+          "id": 2
+        },
+        {
+          "id": 9037
         }
       ],
       "taskEn": "Report what is missing and decide what should be ordered first.",
@@ -1599,19 +3685,63 @@
       "words": [
         {
           "en": "supplies",
-          "ar": "مستلزمات"
+          "ar": "مستلزمات",
+          "kind": "object",
+          "x": 46,
+          "y": 59
         },
         {
           "en": "cabinet",
-          "ar": "خزانة"
+          "ar": "خزانة",
+          "kind": "object",
+          "x": 42,
+          "y": 52
         },
         {
           "en": "show around",
-          "ar": "يعرّف بالمكان"
+          "ar": "يعرّف بالمكان",
+          "kind": "action",
+          "x": 60,
+          "y": 55
         },
         {
           "en": "shared",
-          "ar": "مشترك"
+          "ar": "مشترك",
+          "kind": "description"
+        },
+        {
+          "en": "workstation",
+          "ar": "محطة عمل",
+          "kind": "object",
+          "x": 44,
+          "y": 62
+        },
+        {
+          "en": "storage rack",
+          "ar": "رف تخزين",
+          "kind": "object",
+          "x": 26,
+          "y": 36
+        },
+        {
+          "en": "colleague",
+          "ar": "زميل",
+          "kind": "object",
+          "x": 70,
+          "y": 40
+        }
+      ],
+      "patterns": [
+        {
+          "id": 12,
+          "en": "Do you know where the spare supplies are?",
+          "ar": "هل تعرف أين توجد المستلزمات الاحتياطية؟"
+        },
+        {
+          "id": 2
+        },
+        {
+          "id": 9037
         }
       ],
       "taskEn": "Give the new worker directions and tell them whom to ask for help.",
@@ -1631,19 +3761,63 @@
       "words": [
         {
           "en": "walkway",
-          "ar": "ممر"
+          "ar": "ممر",
+          "kind": "object",
+          "x": 52,
+          "y": 81
         },
         {
           "en": "furniture",
-          "ar": "أثاث"
+          "ar": "أثاث",
+          "kind": "object",
+          "x": 64,
+          "y": 63
         },
         {
           "en": "clear",
-          "ar": "يُخلي"
+          "ar": "يُخلي",
+          "kind": "action",
+          "x": 65,
+          "y": 59
         },
         {
           "en": "heavy",
-          "ar": "ثقيل"
+          "ar": "ثقيل",
+          "kind": "description"
+        },
+        {
+          "en": "chair",
+          "ar": "كرسي",
+          "kind": "object",
+          "x": 66,
+          "y": 72
+        },
+        {
+          "en": "floor",
+          "ar": "أرضية",
+          "kind": "object",
+          "x": 46,
+          "y": 89
+        },
+        {
+          "en": "team",
+          "ar": "فريق",
+          "kind": "object",
+          "x": 55,
+          "y": 43
+        }
+      ],
+      "patterns": [
+        {
+          "id": 6,
+          "en": "Let's clear the walkway before we move the chairs.",
+          "ar": "لنُخلِ الممر قبل نقل الكراسي."
+        },
+        {
+          "id": 2
+        },
+        {
+          "id": 9037
         }
       ],
       "taskEn": "Give two instructions to keep the path clear while moving a table.",
@@ -1663,19 +3837,60 @@
       "words": [
         {
           "en": "toolbox",
-          "ar": "صندوق عدّة"
+          "ar": "صندوق عدّة",
+          "kind": "object",
+          "x": 52,
+          "y": 74
         },
         {
           "en": "gate",
-          "ar": "بوابة"
+          "ar": "بوابة",
+          "kind": "object",
+          "x": 54,
+          "y": 36
         },
         {
           "en": "borrow",
-          "ar": "يستعير"
+          "ar": "يستعير",
+          "kind": "action",
+          "x": 55,
+          "y": 57
         },
         {
           "en": "spare",
-          "ar": "احتياطي"
+          "ar": "احتياطي",
+          "kind": "description"
+        },
+        {
+          "en": "tool handle",
+          "ar": "مقبض أداة",
+          "kind": "object",
+          "x": 51,
+          "y": 72
+        },
+        {
+          "en": "fence",
+          "ar": "سياج",
+          "kind": "object",
+          "x": 56,
+          "y": 26
+        },
+        {
+          "en": "neighbor",
+          "ar": "جار",
+          "kind": "object",
+          "x": 69,
+          "y": 41
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9037,
+          "en": "Can you lend me the toolbox again tomorrow?",
+          "ar": "هل يمكنك إعارتي صندوق العدّة مجددًا غدًا؟"
+        },
+        {
+          "id": 12
         }
       ],
       "taskEn": "Thank your neighbor and explain which tool helped you finish the job.",
@@ -1695,19 +3910,63 @@
       "words": [
         {
           "en": "book swap",
-          "ar": "تبادل كتب"
+          "ar": "تبادل كتب",
+          "kind": "object",
+          "x": 52,
+          "y": 61
         },
         {
           "en": "stack",
-          "ar": "رصّة"
+          "ar": "رصّة",
+          "kind": "object",
+          "x": 57,
+          "y": 77
         },
         {
           "en": "sort",
-          "ar": "يفرز"
+          "ar": "يفرز",
+          "kind": "action",
+          "x": 54,
+          "y": 66
         },
         {
           "en": "used",
-          "ar": "مستعمل"
+          "ar": "مستعمل",
+          "kind": "description"
+        },
+        {
+          "en": "book cover",
+          "ar": "غلاف كتاب",
+          "kind": "object",
+          "x": 58,
+          "y": 71
+        },
+        {
+          "en": "swap table",
+          "ar": "طاولة تبادل",
+          "kind": "object",
+          "x": 56,
+          "y": 81
+        },
+        {
+          "en": "visitor",
+          "ar": "زائر",
+          "kind": "object",
+          "x": 74,
+          "y": 39
+        }
+      ],
+      "patterns": [
+        {
+          "id": 4,
+          "en": "Can I take this book if I leave another one?",
+          "ar": "هل يمكنني أخذ هذا الكتاب إذا تركت آخر؟"
+        },
+        {
+          "id": 12
+        },
+        {
+          "id": 9037
         }
       ],
       "taskEn": "Ask how the swap works and recommend one book to a visitor.",
@@ -1727,19 +3986,63 @@
       "words": [
         {
           "en": "garden bed",
-          "ar": "حوض زراعة"
+          "ar": "حوض زراعة",
+          "kind": "object",
+          "x": 58,
+          "y": 78
         },
         {
           "en": "watering can",
-          "ar": "إبريق ري"
+          "ar": "إبريق ري",
+          "kind": "object",
+          "x": 56,
+          "y": 63
         },
         {
           "en": "plant",
-          "ar": "يزرع"
+          "ar": "يزرع",
+          "kind": "action",
+          "x": 43,
+          "y": 74
         },
         {
           "en": "shared",
-          "ar": "مشترك"
+          "ar": "مشترك",
+          "kind": "description"
+        },
+        {
+          "en": "seedling",
+          "ar": "شتلة",
+          "kind": "object",
+          "x": 63,
+          "y": 80
+        },
+        {
+          "en": "soil",
+          "ar": "تربة",
+          "kind": "object",
+          "x": 56,
+          "y": 86
+        },
+        {
+          "en": "volunteer",
+          "ar": "متطوع",
+          "kind": "object",
+          "x": 41,
+          "y": 44
+        }
+      ],
+      "patterns": [
+        {
+          "id": 6,
+          "en": "Let's water the plants near the path first.",
+          "ar": "لنسقِ النباتات القريبة من الممر أولًا."
+        },
+        {
+          "id": 12
+        },
+        {
+          "id": 9037
         }
       ],
       "taskEn": "Ask which plants need water and agree on who will come tomorrow.",
@@ -1759,19 +4062,60 @@
       "words": [
         {
           "en": "pharmacy",
-          "ar": "صيدلية"
+          "ar": "صيدلية",
+          "kind": "object",
+          "x": 77,
+          "y": 23
         },
         {
           "en": "corner",
-          "ar": "زاوية"
+          "ar": "زاوية",
+          "kind": "object",
+          "x": 63,
+          "y": 74
         },
         {
           "en": "turn",
-          "ar": "ينعطف"
+          "ar": "ينعطف",
+          "kind": "action",
+          "x": 61,
+          "y": 48
         },
         {
           "en": "close",
-          "ar": "قريب"
+          "ar": "قريب",
+          "kind": "description"
+        },
+        {
+          "en": "pharmacy sign",
+          "ar": "لافتة صيدلية",
+          "kind": "object",
+          "x": 77,
+          "y": 24
+        },
+        {
+          "en": "sidewalk",
+          "ar": "رصيف",
+          "kind": "object",
+          "x": 72,
+          "y": 87
+        },
+        {
+          "en": "point",
+          "ar": "يشير",
+          "kind": "action",
+          "x": 65,
+          "y": 42
+        }
+      ],
+      "patterns": [
+        {
+          "id": 12,
+          "en": "Do you know where the pharmacy is?",
+          "ar": "هل تعرف أين تقع الصيدلية؟"
+        },
+        {
+          "id": 9037
         }
       ],
       "taskEn": "Give two landmarks and explain how to know you have gone too far.",
@@ -1791,19 +4135,63 @@
       "words": [
         {
           "en": "doorway",
-          "ar": "مدخل"
+          "ar": "مدخل",
+          "kind": "object",
+          "x": 72,
+          "y": 46
         },
         {
           "en": "container",
-          "ar": "علبة"
+          "ar": "علبة",
+          "kind": "object",
+          "x": 64,
+          "y": 62
         },
         {
           "en": "bring",
-          "ar": "يحضر"
+          "ar": "يحضر",
+          "kind": "action",
+          "x": 60,
+          "y": 62
         },
         {
           "en": "new",
-          "ar": "جديد"
+          "ar": "جديد",
+          "kind": "description"
+        },
+        {
+          "en": "food container",
+          "ar": "علبة طعام",
+          "kind": "object",
+          "x": 63,
+          "y": 62
+        },
+        {
+          "en": "door",
+          "ar": "باب",
+          "kind": "object",
+          "x": 81,
+          "y": 39
+        },
+        {
+          "en": "visitor",
+          "ar": "زائر",
+          "kind": "object",
+          "x": 39,
+          "y": 49
+        }
+      ],
+      "patterns": [
+        {
+          "id": 5,
+          "en": "This is a dish we made for you.",
+          "ar": "هذا طبق أعددناه لك."
+        },
+        {
+          "id": 12
+        },
+        {
+          "id": 9037
         }
       ],
       "taskEn": "Introduce yourself and explain what is in the container.",
@@ -1823,19 +4211,63 @@
       "words": [
         {
           "en": "bicycle",
-          "ar": "دراجة"
+          "ar": "دراجة",
+          "kind": "object",
+          "x": 53,
+          "y": 73
         },
         {
           "en": "lock",
-          "ar": "قفل"
+          "ar": "قفل",
+          "kind": "object",
+          "x": 58,
+          "y": 64
         },
         {
           "en": "secure",
-          "ar": "يثبّت"
+          "ar": "يثبّت",
+          "kind": "action",
+          "x": 56,
+          "y": 62
         },
         {
           "en": "free",
-          "ar": "شاغر"
+          "ar": "شاغر",
+          "kind": "description"
+        },
+        {
+          "en": "helmet",
+          "ar": "خوذة",
+          "kind": "object",
+          "x": 40,
+          "y": 28
+        },
+        {
+          "en": "locker door",
+          "ar": "باب خزانة",
+          "kind": "object",
+          "x": 74,
+          "y": 47
+        },
+        {
+          "en": "handlebar",
+          "ar": "مقود دراجة",
+          "kind": "object",
+          "x": 51,
+          "y": 70
+        }
+      ],
+      "patterns": [
+        {
+          "id": 4,
+          "en": "Can I reserve a bike locker here?",
+          "ar": "هل يمكنني حجز خزانة دراجة هنا؟"
+        },
+        {
+          "id": 12
+        },
+        {
+          "id": 9037
         }
       ],
       "taskEn": "Ask how to reserve a space and what to do if the lock will not open.",
@@ -1855,19 +4287,63 @@
       "words": [
         {
           "en": "chair",
-          "ar": "كرسي"
+          "ar": "كرسي",
+          "kind": "object",
+          "x": 59,
+          "y": 71
         },
         {
           "en": "aisle",
-          "ar": "ممر"
+          "ar": "ممر",
+          "kind": "object",
+          "x": 44,
+          "y": 90
         },
         {
           "en": "arrange",
-          "ar": "يرتّب"
+          "ar": "يرتّب",
+          "kind": "action",
+          "x": 54,
+          "y": 64
         },
         {
           "en": "wide",
-          "ar": "واسع"
+          "ar": "واسع",
+          "kind": "description"
+        },
+        {
+          "en": "seat",
+          "ar": "مقعد",
+          "kind": "object",
+          "x": 67,
+          "y": 75
+        },
+        {
+          "en": "row",
+          "ar": "صف",
+          "kind": "object",
+          "x": 60,
+          "y": 76
+        },
+        {
+          "en": "projector screen",
+          "ar": "شاشة عرض",
+          "kind": "object",
+          "x": 76,
+          "y": 39
+        }
+      ],
+      "patterns": [
+        {
+          "id": 6,
+          "en": "Let's leave an aisle between the chairs.",
+          "ar": "لنترك ممرًا بين المقاعد."
+        },
+        {
+          "id": 12
+        },
+        {
+          "id": 9037
         }
       ],
       "taskEn": "Suggest a layout that leaves room for people to enter.",
@@ -1887,19 +4363,60 @@
       "words": [
         {
           "en": "playground",
-          "ar": "ساحة لعب"
+          "ar": "ساحة لعب",
+          "kind": "object",
+          "x": 74,
+          "y": 43
         },
         {
           "en": "fence",
-          "ar": "سياج"
+          "ar": "سياج",
+          "kind": "object",
+          "x": 72,
+          "y": 65
         },
         {
           "en": "look for",
-          "ar": "يبحث عن"
+          "ar": "يبحث عن",
+          "kind": "action",
+          "x": 50,
+          "y": 45
         },
         {
           "en": "near",
-          "ar": "قريب"
+          "ar": "قريب",
+          "kind": "description"
+        },
+        {
+          "en": "gate",
+          "ar": "بوابة",
+          "kind": "object",
+          "x": 67,
+          "y": 57
+        },
+        {
+          "en": "slide",
+          "ar": "زلّاقة",
+          "kind": "object",
+          "x": 82,
+          "y": 48
+        },
+        {
+          "en": "path",
+          "ar": "ممر",
+          "kind": "object",
+          "x": 56,
+          "y": 87
+        }
+      ],
+      "patterns": [
+        {
+          "id": 12,
+          "en": "Do you know where the playground gate is?",
+          "ar": "هل تعرف أين تقع بوابة ساحة اللعب؟"
+        },
+        {
+          "id": 9037
         }
       ],
       "taskEn": "Explain how to reach the gate without crossing in an unsafe spot.",
@@ -1919,19 +4436,60 @@
       "words": [
         {
           "en": "sleeve",
-          "ar": "كمّ"
+          "ar": "كمّ",
+          "kind": "object",
+          "x": 57,
+          "y": 55
         },
         {
           "en": "tape measure",
-          "ar": "شريط قياس"
+          "ar": "شريط قياس",
+          "kind": "object",
+          "x": 49,
+          "y": 69
         },
         {
           "en": "shorten",
-          "ar": "يقصّر"
+          "ar": "يقصّر",
+          "kind": "action",
+          "x": 52,
+          "y": 61
         },
         {
           "en": "long",
-          "ar": "طويل"
+          "ar": "طويل",
+          "kind": "description"
+        },
+        {
+          "en": "jacket",
+          "ar": "سترة",
+          "kind": "object",
+          "x": 62,
+          "y": 52
+        },
+        {
+          "en": "fitting",
+          "ar": "قياس الملابس",
+          "kind": "object",
+          "x": 51,
+          "y": 62
+        },
+        {
+          "en": "tailor",
+          "ar": "خيّاط",
+          "kind": "object",
+          "x": 34,
+          "y": 41
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9037,
+          "en": "Can you shorten this sleeve a little?",
+          "ar": "هل يمكنك تقصير هذا الكمّ قليلًا؟"
+        },
+        {
+          "id": 12
         }
       ],
       "taskEn": "Ask for a small adjustment and check when you can try it on again.",
@@ -1951,19 +4509,63 @@
       "words": [
         {
           "en": "parcel",
-          "ar": "طرد"
+          "ar": "طرد",
+          "kind": "object",
+          "x": 51,
+          "y": 65
         },
         {
           "en": "return label",
-          "ar": "ملصق إرجاع"
+          "ar": "ملصق إرجاع",
+          "kind": "object",
+          "x": 57,
+          "y": 61
         },
         {
           "en": "drop off",
-          "ar": "يسلّم"
+          "ar": "يسلّم",
+          "kind": "action",
+          "x": 50,
+          "y": 61
         },
         {
           "en": "sealed",
-          "ar": "مغلق بإحكام"
+          "ar": "مغلق بإحكام",
+          "kind": "description"
+        },
+        {
+          "en": "shop counter",
+          "ar": "منضدة متجر",
+          "kind": "object",
+          "x": 60,
+          "y": 79
+        },
+        {
+          "en": "cardboard box",
+          "ar": "صندوق كرتون",
+          "kind": "object",
+          "x": 53,
+          "y": 66
+        },
+        {
+          "en": "clerk",
+          "ar": "موظف",
+          "kind": "object",
+          "x": 72,
+          "y": 32
+        }
+      ],
+      "patterns": [
+        {
+          "id": 4,
+          "en": "Can I have a receipt for this return?",
+          "ar": "هل يمكنني الحصول على إيصال لهذا الإرجاع؟"
+        },
+        {
+          "id": 12
+        },
+        {
+          "id": 9037
         }
       ],
       "taskEn": "Ask for proof of return and check what number to keep.",
@@ -1983,19 +4585,62 @@
       "words": [
         {
           "en": "trail",
-          "ar": "مسار"
+          "ar": "مسار",
+          "kind": "object",
+          "x": 62,
+          "y": 64
         },
         {
           "en": "map",
-          "ar": "خريطة"
+          "ar": "خريطة",
+          "kind": "object",
+          "x": 54,
+          "y": 57
         },
         {
           "en": "check",
-          "ar": "يتحقق"
+          "ar": "يتحقق",
+          "kind": "action",
+          "x": 54,
+          "y": 54
         },
         {
           "en": "rocky",
-          "ar": "صخري"
+          "ar": "صخري",
+          "kind": "description",
+          "x": 73,
+          "y": 30
+        },
+        {
+          "en": "backpack",
+          "ar": "حقيبة ظهر",
+          "kind": "object",
+          "x": 26,
+          "y": 59
+        },
+        {
+          "en": "ridge",
+          "ar": "حافة جبلية",
+          "kind": "object",
+          "x": 53,
+          "y": 14
+        },
+        {
+          "en": "hiker",
+          "ar": "متنزّه",
+          "kind": "object",
+          "x": 37,
+          "y": 42
+        }
+      ],
+      "patterns": [
+        {
+          "id": 6,
+          "en": "Let's take the longer path if it's easier.",
+          "ar": "لنسلك الطريق الأطول إذا كان أسهل."
+        },
+        {
+          "id": 117
         }
       ],
       "taskEn": "Choose between a short steep path and a longer easy path.",
@@ -2015,19 +4660,62 @@
       "words": [
         {
           "en": "rainbow",
-          "ar": "قوس قزح"
+          "ar": "قوس قزح",
+          "kind": "object",
+          "x": 57,
+          "y": 27
         },
         {
           "en": "cloud",
-          "ar": "سحابة"
+          "ar": "سحابة",
+          "kind": "object",
+          "x": 66,
+          "y": 23
         },
         {
           "en": "clear up",
-          "ar": "ينقشع"
+          "ar": "ينقشع",
+          "kind": "action",
+          "x": 65,
+          "y": 26
         },
         {
           "en": "bright",
-          "ar": "ساطع"
+          "ar": "ساطع",
+          "kind": "description",
+          "x": 54,
+          "y": 26
+        },
+        {
+          "en": "porch",
+          "ar": "شرفة أمامية",
+          "kind": "object",
+          "x": 29,
+          "y": 43
+        },
+        {
+          "en": "railing",
+          "ar": "درابزين",
+          "kind": "object",
+          "x": 55,
+          "y": 79
+        },
+        {
+          "en": "hill",
+          "ar": "تل",
+          "kind": "object",
+          "x": 71,
+          "y": 67
+        }
+      ],
+      "patterns": [
+        {
+          "id": 117,
+          "en": "There is a rainbow above the hills.",
+          "ar": "يوجد قوس قزح فوق التلال."
+        },
+        {
+          "id": 6
         }
       ],
       "taskEn": "Describe what changed in the sky and decide whether to go outside.",
@@ -2047,19 +4735,63 @@
       "words": [
         {
           "en": "leaf",
-          "ar": "ورقة شجر"
+          "ar": "ورقة شجر",
+          "kind": "object",
+          "x": 59,
+          "y": 65
         },
         {
           "en": "branch",
-          "ar": "غصن"
+          "ar": "غصن",
+          "kind": "object",
+          "x": 62,
+          "y": 31
         },
         {
           "en": "identify",
-          "ar": "يتعرّف إلى"
+          "ar": "يتعرّف إلى",
+          "kind": "action",
+          "x": 57,
+          "y": 59
         },
         {
           "en": "smooth",
-          "ar": "أملس"
+          "ar": "أملس",
+          "kind": "description"
+        },
+        {
+          "en": "tree trunk",
+          "ar": "جذع شجرة",
+          "kind": "object",
+          "x": 58,
+          "y": 26
+        },
+        {
+          "en": "path",
+          "ar": "ممر",
+          "kind": "object",
+          "x": 76,
+          "y": 84
+        },
+        {
+          "en": "look closely",
+          "ar": "يتأمّل عن قرب",
+          "kind": "action",
+          "x": 53,
+          "y": 49
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9037,
+          "en": "Can you find a leaf with a smooth edge?",
+          "ar": "هل يمكنك العثور على ورقة حافتها ملساء؟"
+        },
+        {
+          "id": 117
+        },
+        {
+          "id": 6
         }
       ],
       "taskEn": "Find two differences between leaves and describe them without pointing.",
@@ -2079,19 +4811,63 @@
       "words": [
         {
           "en": "binoculars",
-          "ar": "منظار"
+          "ar": "منظار",
+          "kind": "object",
+          "x": 63,
+          "y": 45
         },
         {
           "en": "bird",
-          "ar": "طائر"
+          "ar": "طائر",
+          "kind": "object",
+          "x": 72,
+          "y": 35
         },
         {
           "en": "photograph",
-          "ar": "يصوّر"
+          "ar": "يصوّر",
+          "kind": "action",
+          "x": 66,
+          "y": 45
         },
         {
           "en": "quiet",
-          "ar": "هادئ"
+          "ar": "هادئ",
+          "kind": "description"
+        },
+        {
+          "en": "camera",
+          "ar": "كاميرا",
+          "kind": "object",
+          "x": 63,
+          "y": 46
+        },
+        {
+          "en": "hide",
+          "ar": "مخبأ مراقبة",
+          "kind": "object",
+          "x": 33,
+          "y": 53
+        },
+        {
+          "en": "pond",
+          "ar": "بركة",
+          "kind": "object",
+          "x": 74,
+          "y": 42
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9037,
+          "en": "Can you see the bird near the water?",
+          "ar": "هل يمكنك رؤية الطائر قرب الماء؟"
+        },
+        {
+          "id": 117
+        },
+        {
+          "id": 6
         }
       ],
       "taskEn": "Describe where the bird is and ask your partner to pass the camera quietly.",
@@ -2111,19 +4887,60 @@
       "words": [
         {
           "en": "soil",
-          "ar": "تربة"
+          "ar": "تربة",
+          "kind": "object",
+          "x": 52,
+          "y": 83
         },
         {
           "en": "herb",
-          "ar": "عشبة"
+          "ar": "عشبة",
+          "kind": "object",
+          "x": 56,
+          "y": 74
         },
         {
           "en": "plant",
-          "ar": "يزرع"
+          "ar": "يزرع",
+          "kind": "action",
+          "x": 57,
+          "y": 66
         },
         {
           "en": "damp",
-          "ar": "رطب"
+          "ar": "رطب",
+          "kind": "description"
+        },
+        {
+          "en": "raised bed",
+          "ar": "حوض زراعة مرتفع",
+          "kind": "object",
+          "x": 61,
+          "y": 82
+        },
+        {
+          "en": "seedling",
+          "ar": "شتلة",
+          "kind": "object",
+          "x": 52,
+          "y": 80
+        },
+        {
+          "en": "garden glove",
+          "ar": "قفاز بستنة",
+          "kind": "object",
+          "x": 56,
+          "y": 67
+        }
+      ],
+      "patterns": [
+        {
+          "id": 6,
+          "en": "Let's put these herbs where they get more sun.",
+          "ar": "لنضع هذه الأعشاب حيث تتعرّض للشمس أكثر."
+        },
+        {
+          "id": 117
         }
       ],
       "taskEn": "Explain why one plant should go in the sun and another in the shade.",
@@ -2143,19 +4960,65 @@
       "words": [
         {
           "en": "water bottle",
-          "ar": "زجاجة ماء"
+          "ar": "زجاجة ماء",
+          "kind": "object",
+          "x": 38,
+          "y": 72
         },
         {
           "en": "supplies",
-          "ar": "مستلزمات"
+          "ar": "مستلزمات",
+          "kind": "object",
+          "x": 53,
+          "y": 73
         },
         {
           "en": "pack",
-          "ar": "يجهّز"
+          "ar": "يجهّز",
+          "kind": "action",
+          "x": 59,
+          "y": 62
         },
         {
           "en": "dry",
-          "ar": "جاف"
+          "ar": "جاف",
+          "kind": "description",
+          "x": 66,
+          "y": 22
+        },
+        {
+          "en": "water flask",
+          "ar": "قارورة ماء",
+          "kind": "object",
+          "x": 59,
+          "y": 73
+        },
+        {
+          "en": "backpack",
+          "ar": "حقيبة ظهر",
+          "kind": "object",
+          "x": 29,
+          "y": 72
+        },
+        {
+          "en": "rocks",
+          "ar": "صخور",
+          "kind": "object",
+          "x": 71,
+          "y": 18
+        }
+      ],
+      "patterns": [
+        {
+          "id": 13,
+          "en": "I need to pack more water for the desert walk.",
+          "ar": "أحتاج إلى تجهيز ماء أكثر للمشي في الصحراء."
+        },
+        {
+          "id": 117
+        },
+        {
+          "id": 6
         }
       ],
       "taskEn": "Decide what to take and what to leave behind when space is limited.",
@@ -2175,19 +5038,62 @@
       "words": [
         {
           "en": "promenade",
-          "ar": "ممشى بحري"
+          "ar": "ممشى بحري",
+          "kind": "object",
+          "x": 53,
+          "y": 84
         },
         {
           "en": "wave",
-          "ar": "موجة"
+          "ar": "موجة",
+          "kind": "object",
+          "x": 34,
+          "y": 64
         },
         {
           "en": "blow",
-          "ar": "يهبّ"
+          "ar": "يهبّ",
+          "kind": "action",
+          "x": 51,
+          "y": 31
         },
         {
           "en": "windy",
-          "ar": "عاصف"
+          "ar": "عاصف",
+          "kind": "description",
+          "x": 54,
+          "y": 28
+        },
+        {
+          "en": "windsock",
+          "ar": "كيس قياس اتجاه الريح",
+          "kind": "object",
+          "x": 56,
+          "y": 22
+        },
+        {
+          "en": "railing",
+          "ar": "درابزين",
+          "kind": "object",
+          "x": 42,
+          "y": 58
+        },
+        {
+          "en": "shore",
+          "ar": "شاطئ",
+          "kind": "object",
+          "x": 25,
+          "y": 66
+        }
+      ],
+      "patterns": [
+        {
+          "id": 117,
+          "en": "There is a sheltered spot behind that wall.",
+          "ar": "يوجد مكان محمي من الريح خلف ذلك الحائط."
+        },
+        {
+          "id": 6
         }
       ],
       "taskEn": "Describe what tells you it is windy and suggest a sheltered place.",
@@ -2207,19 +5113,65 @@
       "words": [
         {
           "en": "fig",
-          "ar": "تين"
+          "ar": "تين",
+          "kind": "object",
+          "x": 54,
+          "y": 29
         },
         {
           "en": "basket",
-          "ar": "سلّة"
+          "ar": "سلّة",
+          "kind": "object",
+          "x": 71,
+          "y": 76
         },
         {
           "en": "pick",
-          "ar": "يقطف"
+          "ar": "يقطف",
+          "kind": "action",
+          "x": 51,
+          "y": 31
         },
         {
           "en": "ripe",
-          "ar": "ناضج"
+          "ar": "ناضج",
+          "kind": "description",
+          "x": 62,
+          "y": 72
+        },
+        {
+          "en": "fig tree",
+          "ar": "شجرة تين",
+          "kind": "object",
+          "x": 50,
+          "y": 22
+        },
+        {
+          "en": "branch",
+          "ar": "غصن",
+          "kind": "object",
+          "x": 47,
+          "y": 35
+        },
+        {
+          "en": "harvest",
+          "ar": "محصول",
+          "kind": "object",
+          "x": 70,
+          "y": 73
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9037,
+          "en": "Can you show me which figs are ready to pick?",
+          "ar": "هل يمكنك أن تريني أيّ ثمار التين جاهزة للقطف؟"
+        },
+        {
+          "id": 117
+        },
+        {
+          "id": 6
         }
       ],
       "taskEn": "Ask how to tell which figs are ready and where to put the ripe ones.",
@@ -2239,19 +5191,60 @@
       "words": [
         {
           "en": "stream",
-          "ar": "جدول ماء"
+          "ar": "جدول ماء",
+          "kind": "object",
+          "x": 45,
+          "y": 77
         },
         {
           "en": "litter",
-          "ar": "نفايات"
+          "ar": "نفايات",
+          "kind": "object",
+          "x": 56,
+          "y": 78
         },
         {
           "en": "pick up",
-          "ar": "يلتقط"
+          "ar": "يلتقط",
+          "kind": "action",
+          "x": 58,
+          "y": 75
         },
         {
           "en": "reusable",
-          "ar": "قابل لإعادة الاستخدام"
+          "ar": "قابل لإعادة الاستخدام",
+          "kind": "description"
+        },
+        {
+          "en": "gloves",
+          "ar": "قفازات",
+          "kind": "object",
+          "x": 57,
+          "y": 72
+        },
+        {
+          "en": "refuse sack",
+          "ar": "كيس نفايات",
+          "kind": "object",
+          "x": 61,
+          "y": 82
+        },
+        {
+          "en": "bank",
+          "ar": "ضفة",
+          "kind": "object",
+          "x": 48,
+          "y": 81
+        }
+      ],
+      "patterns": [
+        {
+          "id": 6,
+          "en": "Let's put the bottles in a separate bag.",
+          "ar": "لنضع الزجاجات في كيس منفصل."
+        },
+        {
+          "id": 117
         }
       ],
       "taskEn": "Agree on how to sort what you find and what you should leave alone.",
@@ -2271,19 +5264,65 @@
       "words": [
         {
           "en": "tent",
-          "ar": "خيمة"
+          "ar": "خيمة",
+          "kind": "object",
+          "x": 69,
+          "y": 42
         },
         {
           "en": "peg",
-          "ar": "وتد"
+          "ar": "وتد",
+          "kind": "object",
+          "x": 67,
+          "y": 86
         },
         {
           "en": "secure",
-          "ar": "يثبّت"
+          "ar": "يثبّت",
+          "kind": "action",
+          "x": 64,
+          "y": 75
         },
         {
           "en": "level",
-          "ar": "مستوٍ"
+          "ar": "مستوٍ",
+          "kind": "description",
+          "x": 47,
+          "y": 88
+        },
+        {
+          "en": "tent flap",
+          "ar": "ستار الخيمة",
+          "kind": "object",
+          "x": 69,
+          "y": 51
+        },
+        {
+          "en": "tent line",
+          "ar": "حبل الخيمة",
+          "kind": "object",
+          "x": 73,
+          "y": 77
+        },
+        {
+          "en": "camping gear",
+          "ar": "أدوات تخييم",
+          "kind": "object",
+          "x": 28,
+          "y": 78
+        }
+      ],
+      "patterns": [
+        {
+          "id": 13,
+          "en": "I need to secure this side of the tent.",
+          "ar": "أحتاج إلى تثبيت هذا الجانب من الخيمة."
+        },
+        {
+          "id": 117
+        },
+        {
+          "id": 6
         }
       ],
       "taskEn": "Explain why you chose this spot and how to keep the tent steady.",
@@ -2303,19 +5342,60 @@
       "words": [
         {
           "en": "reception",
-          "ar": "استقبال"
+          "ar": "استقبال",
+          "kind": "object",
+          "x": 57,
+          "y": 69
         },
         {
           "en": "appointment",
-          "ar": "موعد"
+          "ar": "موعد",
+          "kind": "object",
+          "x": 52,
+          "y": 61
         },
         {
           "en": "check in",
-          "ar": "يسجّل الحضور"
+          "ar": "يسجّل الحضور",
+          "kind": "action",
+          "x": 52,
+          "y": 59
         },
         {
           "en": "early",
-          "ar": "مبكر"
+          "ar": "مبكر",
+          "kind": "description"
+        },
+        {
+          "en": "patient",
+          "ar": "مراجع",
+          "kind": "object",
+          "x": 30,
+          "y": 43
+        },
+        {
+          "en": "desk",
+          "ar": "مكتب",
+          "kind": "object",
+          "x": 56,
+          "y": 73
+        },
+        {
+          "en": "receptionist",
+          "ar": "موظفة استقبال",
+          "kind": "object",
+          "x": 73,
+          "y": 42
+        }
+      ],
+      "patterns": [
+        {
+          "id": 4,
+          "en": "Can I check in for my appointment?",
+          "ar": "هل يمكنني تسجيل حضوري لموعدي؟"
+        },
+        {
+          "id": 9037
         }
       ],
       "taskEn": "Confirm your appointment time and ask where to wait.",
@@ -2335,19 +5415,60 @@
       "words": [
         {
           "en": "pharmacist",
-          "ar": "صيدلي"
+          "ar": "صيدلي",
+          "kind": "object",
+          "x": 36,
+          "y": 37
         },
         {
           "en": "label",
-          "ar": "ملصق"
+          "ar": "ملصق",
+          "kind": "object",
+          "x": 54,
+          "y": 62
         },
         {
           "en": "explain",
-          "ar": "يشرح"
+          "ar": "يشرح",
+          "kind": "action",
+          "x": 55,
+          "y": 61
         },
         {
           "en": "clear",
-          "ar": "واضح"
+          "ar": "واضح",
+          "kind": "description"
+        },
+        {
+          "en": "medicine box",
+          "ar": "علبة دواء",
+          "kind": "object",
+          "x": 55,
+          "y": 62
+        },
+        {
+          "en": "shelves",
+          "ar": "رفوف",
+          "kind": "object",
+          "x": 27,
+          "y": 24
+        },
+        {
+          "en": "point out",
+          "ar": "يوضح بالإشارة",
+          "kind": "action",
+          "x": 50,
+          "y": 59
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9037,
+          "en": "Can you repeat the instructions on the label?",
+          "ar": "هل يمكنك إعادة شرح التعليمات المكتوبة على الملصق؟"
+        },
+        {
+          "id": 4
         }
       ],
       "taskEn": "Practise asking the pharmacist to repeat the written instructions.",
@@ -2367,19 +5488,60 @@
       "words": [
         {
           "en": "bench",
-          "ar": "مقعد"
+          "ar": "مقعد",
+          "kind": "object",
+          "x": 49,
+          "y": 70
         },
         {
           "en": "stretch",
-          "ar": "تمرين إطالة"
+          "ar": "تمرين إطالة",
+          "kind": "object",
+          "x": 55,
+          "y": 67
         },
         {
           "en": "move",
-          "ar": "يتحرّك"
+          "ar": "يتحرّك",
+          "kind": "action",
+          "x": 57,
+          "y": 62
         },
         {
           "en": "gentle",
-          "ar": "خفيف"
+          "ar": "خفيف",
+          "kind": "description"
+        },
+        {
+          "en": "trainer",
+          "ar": "مدرّب",
+          "kind": "object",
+          "x": 74,
+          "y": 42
+        },
+        {
+          "en": "exercise mat",
+          "ar": "بساط تمرين",
+          "kind": "object",
+          "x": 39,
+          "y": 86
+        },
+        {
+          "en": "foot",
+          "ar": "قدم",
+          "kind": "object",
+          "x": 54,
+          "y": 82
+        }
+      ],
+      "patterns": [
+        {
+          "id": 4,
+          "en": "Can I do the stretch while sitting down?",
+          "ar": "هل يمكنني أداء تمرين الإطالة وأنا جالس؟"
+        },
+        {
+          "id": 9037
         }
       ],
       "taskEn": "Describe the position and ask how to make the movement easier.",
@@ -2399,19 +5561,63 @@
       "words": [
         {
           "en": "waiting room",
-          "ar": "غرفة انتظار"
+          "ar": "غرفة انتظار",
+          "kind": "object",
+          "x": 65,
+          "y": 35
         },
         {
           "en": "seat",
-          "ar": "مقعد"
+          "ar": "مقعد",
+          "kind": "object",
+          "x": 59,
+          "y": 77
         },
         {
           "en": "comfort",
-          "ar": "يطمئن"
+          "ar": "يطمئن",
+          "kind": "action",
+          "x": 53,
+          "y": 63
         },
         {
           "en": "calm",
-          "ar": "هادئ"
+          "ar": "هادئ",
+          "kind": "description"
+        },
+        {
+          "en": "child",
+          "ar": "طفل",
+          "kind": "object",
+          "x": 61,
+          "y": 60
+        },
+        {
+          "en": "waiting chair",
+          "ar": "كرسي انتظار",
+          "kind": "object",
+          "x": 70,
+          "y": 76
+        },
+        {
+          "en": "father",
+          "ar": "أب",
+          "kind": "object",
+          "x": 41,
+          "y": 41
+        }
+      ],
+      "patterns": [
+        {
+          "id": 6,
+          "en": "Let's read a story while we wait.",
+          "ar": "لنقرأ قصة بينما ننتظر."
+        },
+        {
+          "id": 4
+        },
+        {
+          "id": 9037
         }
       ],
       "taskEn": "Reassure the child and suggest something to do while waiting.",
@@ -2431,19 +5637,63 @@
       "words": [
         {
           "en": "first-aid kit",
-          "ar": "حقيبة إسعاف"
+          "ar": "حقيبة إسعاف",
+          "kind": "object",
+          "x": 63,
+          "y": 73
         },
         {
           "en": "bandage",
-          "ar": "ضمادة"
+          "ar": "ضمادة",
+          "kind": "object",
+          "x": 52,
+          "y": 67
         },
         {
           "en": "check",
-          "ar": "يفحص"
+          "ar": "يفحص",
+          "kind": "action",
+          "x": 54,
+          "y": 63
         },
         {
           "en": "missing",
-          "ar": "ناقص"
+          "ar": "ناقص",
+          "kind": "description"
+        },
+        {
+          "en": "medical pouch",
+          "ar": "حقيبة أدوات طبية",
+          "kind": "object",
+          "x": 68,
+          "y": 78
+        },
+        {
+          "en": "glove",
+          "ar": "قفاز",
+          "kind": "object",
+          "x": 47,
+          "y": 63
+        },
+        {
+          "en": "zipper",
+          "ar": "سحّاب",
+          "kind": "object",
+          "x": 59,
+          "y": 75
+        }
+      ],
+      "patterns": [
+        {
+          "id": 13,
+          "en": "I need to check whether we have enough bandages.",
+          "ar": "أحتاج إلى التحقق من وجود ضمادات كافية."
+        },
+        {
+          "id": 4
+        },
+        {
+          "id": 9037
         }
       ],
       "taskEn": "Identify what is missing and ask where to find a replacement.",
@@ -2463,19 +5713,63 @@
       "words": [
         {
           "en": "water bottle",
-          "ar": "زجاجة ماء"
+          "ar": "زجاجة ماء",
+          "kind": "object",
+          "x": 75,
+          "y": 63
         },
         {
           "en": "bench",
-          "ar": "مقعد"
+          "ar": "مقعد",
+          "kind": "object",
+          "x": 54,
+          "y": 71
         },
         {
           "en": "rest",
-          "ar": "يستريح"
+          "ar": "يستريح",
+          "kind": "action",
+          "x": 54,
+          "y": 60
         },
         {
           "en": "thirsty",
-          "ar": "عطشان"
+          "ar": "عطشان",
+          "kind": "description"
+        },
+        {
+          "en": "walking clothes",
+          "ar": "ملابس للمشي",
+          "kind": "object",
+          "x": 63,
+          "y": 57
+        },
+        {
+          "en": "water",
+          "ar": "ماء",
+          "kind": "object",
+          "x": 76,
+          "y": 64
+        },
+        {
+          "en": "take a break",
+          "ar": "يأخذ استراحة",
+          "kind": "action",
+          "x": 56,
+          "y": 64
+        }
+      ],
+      "patterns": [
+        {
+          "id": 6,
+          "en": "Let's rest here and drink some water.",
+          "ar": "لنسترح هنا ونشرب بعض الماء."
+        },
+        {
+          "id": 4
+        },
+        {
+          "id": 9037
         }
       ],
       "taskEn": "Suggest a place to rest and decide when to continue the walk.",
@@ -2495,19 +5789,60 @@
       "words": [
         {
           "en": "frame",
-          "ar": "إطار"
+          "ar": "إطار",
+          "kind": "object",
+          "x": 60,
+          "y": 49
         },
         {
           "en": "lens",
-          "ar": "عدسة"
+          "ar": "عدسة",
+          "kind": "object",
+          "x": 64,
+          "y": 48
         },
         {
           "en": "adjust",
-          "ar": "يضبط"
+          "ar": "يضبط",
+          "kind": "action",
+          "x": 55,
+          "y": 50
         },
         {
           "en": "comfortable",
-          "ar": "مريح"
+          "ar": "مريح",
+          "kind": "description"
+        },
+        {
+          "en": "glasses",
+          "ar": "نظارة",
+          "kind": "object",
+          "x": 61,
+          "y": 48
+        },
+        {
+          "en": "optician",
+          "ar": "أخصائي نظارات",
+          "kind": "object",
+          "x": 36,
+          "y": 42
+        },
+        {
+          "en": "frames display",
+          "ar": "رف عرض الإطارات",
+          "kind": "object",
+          "x": 75,
+          "y": 21
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9037,
+          "en": "Can you make the frame a little looser?",
+          "ar": "هل يمكنك إرخاء الإطار قليلًا؟"
+        },
+        {
+          "id": 4
         }
       ],
       "taskEn": "Explain where the frame feels tight and ask to try it again.",
@@ -2527,19 +5862,63 @@
       "words": [
         {
           "en": "snack",
-          "ar": "وجبة خفيفة"
+          "ar": "وجبة خفيفة",
+          "kind": "object",
+          "x": 53,
+          "y": 75
         },
         {
           "en": "bottle",
-          "ar": "زجاجة"
+          "ar": "زجاجة",
+          "kind": "object",
+          "x": 67,
+          "y": 66
         },
         {
           "en": "prepare",
-          "ar": "يجهّز"
+          "ar": "يجهّز",
+          "kind": "action",
+          "x": 57,
+          "y": 67
         },
         {
           "en": "light",
-          "ar": "خفيف"
+          "ar": "خفيف",
+          "kind": "description"
+        },
+        {
+          "en": "fruit",
+          "ar": "فاكهة",
+          "kind": "object",
+          "x": 32,
+          "y": 75
+        },
+        {
+          "en": "snack box",
+          "ar": "علبة وجبة خفيفة",
+          "kind": "object",
+          "x": 49,
+          "y": 78
+        },
+        {
+          "en": "cup",
+          "ar": "كوب",
+          "kind": "object",
+          "x": 62,
+          "y": 76
+        }
+      ],
+      "patterns": [
+        {
+          "id": 13,
+          "en": "I need to pack a light snack for the walk.",
+          "ar": "أحتاج إلى تجهيز وجبة خفيفة للمشي."
+        },
+        {
+          "id": 4
+        },
+        {
+          "id": 9037
         }
       ],
       "taskEn": "Suggest a portable snack and explain how you would pack it.",
@@ -2559,19 +5938,63 @@
       "words": [
         {
           "en": "sanitizer",
-          "ar": "معقّم"
+          "ar": "معقّم",
+          "kind": "object",
+          "x": 54,
+          "y": 54
         },
         {
           "en": "entrance",
-          "ar": "مدخل"
+          "ar": "مدخل",
+          "kind": "object",
+          "x": 43,
+          "y": 43
         },
         {
           "en": "look for",
-          "ar": "يبحث عن"
+          "ar": "يبحث عن",
+          "kind": "action",
+          "x": 57,
+          "y": 46
         },
         {
           "en": "accessible",
-          "ar": "سهل الوصول"
+          "ar": "سهل الوصول",
+          "kind": "description"
+        },
+        {
+          "en": "direction sign",
+          "ar": "لافتة اتجاهات",
+          "kind": "object",
+          "x": 77,
+          "y": 28
+        },
+        {
+          "en": "arrow",
+          "ar": "سهم",
+          "kind": "object",
+          "x": 73,
+          "y": 27
+        },
+        {
+          "en": "dispenser",
+          "ar": "موزّع معقّم",
+          "kind": "object",
+          "x": 57,
+          "y": 54
+        }
+      ],
+      "patterns": [
+        {
+          "id": 12,
+          "en": "Do you know where the lift is?",
+          "ar": "هل تعرف أين المصعد؟"
+        },
+        {
+          "id": 4
+        },
+        {
+          "id": 9037
         }
       ],
       "taskEn": "Ask how to reach a room and whether there is a lift nearby.",
@@ -2591,19 +6014,60 @@
       "words": [
         {
           "en": "appointment card",
-          "ar": "بطاقة موعد"
+          "ar": "بطاقة موعد",
+          "kind": "object",
+          "x": 55,
+          "y": 65
         },
         {
           "en": "desk",
-          "ar": "مكتب"
+          "ar": "مكتب",
+          "kind": "object",
+          "x": 60,
+          "y": 80
         },
         {
           "en": "confirm",
-          "ar": "يؤكّد"
+          "ar": "يؤكّد",
+          "kind": "action",
+          "x": 54,
+          "y": 62
         },
         {
           "en": "next",
-          "ar": "قادم"
+          "ar": "قادم",
+          "kind": "description"
+        },
+        {
+          "en": "nurse",
+          "ar": "ممرضة",
+          "kind": "object",
+          "x": 70,
+          "y": 43
+        },
+        {
+          "en": "appointment desk",
+          "ar": "مكتب المواعيد",
+          "kind": "object",
+          "x": 55,
+          "y": 78
+        },
+        {
+          "en": "visitor",
+          "ar": "مراجع",
+          "kind": "object",
+          "x": 32,
+          "y": 43
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9037,
+          "en": "Can you confirm the date on this card?",
+          "ar": "هل يمكنك تأكيد التاريخ على هذه البطاقة؟"
+        },
+        {
+          "id": 4
         }
       ],
       "taskEn": "Read back the date and ask what to bring to the visit.",
@@ -2623,19 +6087,65 @@
       "words": [
         {
           "en": "clay",
-          "ar": "طين"
+          "ar": "طين",
+          "kind": "object",
+          "x": 49,
+          "y": 71
         },
         {
           "en": "pottery wheel",
-          "ar": "عجلة فخّار"
+          "ar": "عجلة فخّار",
+          "kind": "object",
+          "x": 51,
+          "y": 79
         },
         {
           "en": "shape",
-          "ar": "يشكّل"
+          "ar": "يشكّل",
+          "kind": "action",
+          "x": 51,
+          "y": 67
         },
         {
           "en": "round",
-          "ar": "مستدير"
+          "ar": "مستدير",
+          "kind": "description",
+          "x": 49,
+          "y": 72
+        },
+        {
+          "en": "bowl",
+          "ar": "وعاء",
+          "kind": "object",
+          "x": 51,
+          "y": 72
+        },
+        {
+          "en": "shelf",
+          "ar": "رف",
+          "kind": "object",
+          "x": 76,
+          "y": 39
+        },
+        {
+          "en": "potter",
+          "ar": "خزّاف",
+          "kind": "object",
+          "x": 39,
+          "y": 42
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9035,
+          "en": "I can shape the clay while the wheel turns.",
+          "ar": "يمكنني تشكيل الطين بينما تدور العجلة."
+        },
+        {
+          "id": 10
+        },
+        {
+          "id": 9037
         }
       ],
       "taskEn": "Describe what happens first and how the shape changes as the wheel turns.",
@@ -2655,19 +6165,60 @@
       "words": [
         {
           "en": "zipper",
-          "ar": "سحّاب"
+          "ar": "سحّاب",
+          "kind": "object",
+          "x": 56,
+          "y": 68
         },
         {
           "en": "thread",
-          "ar": "خيط"
+          "ar": "خيط",
+          "kind": "object",
+          "x": 56,
+          "y": 65
         },
         {
           "en": "replace",
-          "ar": "يستبدل"
+          "ar": "يستبدل",
+          "kind": "action",
+          "x": 54,
+          "y": 62
         },
         {
           "en": "broken",
-          "ar": "تالف"
+          "ar": "تالف",
+          "kind": "description"
+        },
+        {
+          "en": "fabric",
+          "ar": "قماش",
+          "kind": "object",
+          "x": 56,
+          "y": 72
+        },
+        {
+          "en": "workbench",
+          "ar": "طاولة عمل",
+          "kind": "object",
+          "x": 66,
+          "y": 86
+        },
+        {
+          "en": "strap",
+          "ar": "حزام",
+          "kind": "object",
+          "x": 56,
+          "y": 73
+        }
+      ],
+      "patterns": [
+        {
+          "id": 10,
+          "en": "It takes about a day to replace a zipper.",
+          "ar": "يستغرق استبدال السحّاب نحو يوم."
+        },
+        {
+          "id": 9037
         }
       ],
       "taskEn": "Ask how long the repair will take and whether you need a new zipper.",
@@ -2687,19 +6238,60 @@
       "words": [
         {
           "en": "camera",
-          "ar": "كاميرا"
+          "ar": "كاميرا",
+          "kind": "object",
+          "x": 52,
+          "y": 58
         },
         {
           "en": "window",
-          "ar": "نافذة"
+          "ar": "نافذة",
+          "kind": "object",
+          "x": 30,
+          "y": 34
         },
         {
           "en": "focus",
-          "ar": "يضبط التركيز"
+          "ar": "يضبط التركيز",
+          "kind": "action",
+          "x": 53,
+          "y": 53
         },
         {
           "en": "sharp",
-          "ar": "واضح المعالم"
+          "ar": "واضح المعالم",
+          "kind": "description"
+        },
+        {
+          "en": "lens",
+          "ar": "عدسة",
+          "kind": "object",
+          "x": 50,
+          "y": 62
+        },
+        {
+          "en": "tripod",
+          "ar": "حامل ثلاثي",
+          "kind": "object",
+          "x": 53,
+          "y": 72
+        },
+        {
+          "en": "viewfinder",
+          "ar": "منظار الكاميرا",
+          "kind": "object",
+          "x": 51,
+          "y": 51
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9037,
+          "en": "Can you stand closer to the window?",
+          "ar": "هل يمكنك الوقوف أقرب إلى النافذة؟"
+        },
+        {
+          "id": 10
         }
       ],
       "taskEn": "Tell a partner where to stand and compare two photos.",
@@ -2719,19 +6311,65 @@
       "words": [
         {
           "en": "workbench",
-          "ar": "طاولة عمل"
+          "ar": "طاولة عمل",
+          "kind": "object",
+          "x": 53,
+          "y": 79
         },
         {
           "en": "wood",
-          "ar": "خشب"
+          "ar": "خشب",
+          "kind": "object",
+          "x": 56,
+          "y": 61
         },
         {
           "en": "measure",
-          "ar": "يقيس"
+          "ar": "يقيس",
+          "kind": "action",
+          "x": 49,
+          "y": 57
         },
         {
           "en": "thick",
-          "ar": "سميك"
+          "ar": "سميك",
+          "kind": "description",
+          "x": 61,
+          "y": 67
+        },
+        {
+          "en": "wooden board",
+          "ar": "لوح خشبي",
+          "kind": "object",
+          "x": 63,
+          "y": 66
+        },
+        {
+          "en": "edge",
+          "ar": "حافة",
+          "kind": "object",
+          "x": 60,
+          "y": 69
+        },
+        {
+          "en": "carpenter",
+          "ar": "نجّار",
+          "kind": "object",
+          "x": 41,
+          "y": 42
+        }
+      ],
+      "patterns": [
+        {
+          "id": 13,
+          "en": "I need to measure this board before I cut it.",
+          "ar": "أحتاج إلى قياس هذا اللوح قبل قطعه."
+        },
+        {
+          "id": 10
+        },
+        {
+          "id": 9037
         }
       ],
       "taskEn": "Choose a piece for a shelf and explain why the other is unsuitable.",
@@ -2751,19 +6389,60 @@
       "words": [
         {
           "en": "brake",
-          "ar": "مكبح"
+          "ar": "مكبح",
+          "kind": "object",
+          "x": 63,
+          "y": 58
         },
         {
           "en": "wheel",
-          "ar": "عجلة"
+          "ar": "عجلة",
+          "kind": "object",
+          "x": 68,
+          "y": 59
         },
         {
           "en": "spin",
-          "ar": "يدير"
+          "ar": "يدير",
+          "kind": "action",
+          "x": 65,
+          "y": 66
         },
         {
           "en": "loose",
-          "ar": "مرتخٍ"
+          "ar": "مرتخٍ",
+          "kind": "description"
+        },
+        {
+          "en": "tire",
+          "ar": "إطار دراجة",
+          "kind": "object",
+          "x": 69,
+          "y": 66
+        },
+        {
+          "en": "handlebar",
+          "ar": "مقود",
+          "kind": "object",
+          "x": 68,
+          "y": 37
+        },
+        {
+          "en": "bicycle frame",
+          "ar": "هيكل دراجة",
+          "kind": "object",
+          "x": 62,
+          "y": 66
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9037,
+          "en": "Can you check whether the front wheel spins freely?",
+          "ar": "هل يمكنك التحقق من أن العجلة الأمامية تدور بحرّية؟"
+        },
+        {
+          "id": 10
         }
       ],
       "taskEn": "Describe a noise you hear and ask someone to check before riding.",
@@ -2783,19 +6462,63 @@
       "words": [
         {
           "en": "album",
-          "ar": "ألبوم"
+          "ar": "ألبوم",
+          "kind": "object",
+          "x": 53,
+          "y": 73
         },
         {
           "en": "photo",
-          "ar": "صورة"
+          "ar": "صورة",
+          "kind": "object",
+          "x": 54,
+          "y": 67
         },
         {
           "en": "arrange",
-          "ar": "يرتّب"
+          "ar": "يرتّب",
+          "kind": "action",
+          "x": 53,
+          "y": 62
         },
         {
           "en": "memorable",
-          "ar": "جدير بالتذكّر"
+          "ar": "جدير بالتذكّر",
+          "kind": "description"
+        },
+        {
+          "en": "photo print",
+          "ar": "صورة مطبوعة",
+          "kind": "object",
+          "x": 67,
+          "y": 73
+        },
+        {
+          "en": "album page",
+          "ar": "صفحة ألبوم",
+          "kind": "object",
+          "x": 52,
+          "y": 78
+        },
+        {
+          "en": "stack of photos",
+          "ar": "رصّة صور",
+          "kind": "object",
+          "x": 72,
+          "y": 81
+        }
+      ],
+      "patterns": [
+        {
+          "id": 5,
+          "en": "This is a photo from our first trip together.",
+          "ar": "هذه صورة من أول رحلة لنا معًا."
+        },
+        {
+          "id": 10
+        },
+        {
+          "id": 9037
         }
       ],
       "taskEn": "Choose which photo belongs first and explain the story behind it.",
@@ -2815,19 +6538,63 @@
       "words": [
         {
           "en": "label printer",
-          "ar": "طابعة ملصقات"
+          "ar": "طابعة ملصقات",
+          "kind": "object",
+          "x": 54,
+          "y": 66
         },
         {
           "en": "button",
-          "ar": "زر"
+          "ar": "زر",
+          "kind": "object",
+          "x": 56,
+          "y": 62
         },
         {
           "en": "press",
-          "ar": "يضغط"
+          "ar": "يضغط",
+          "kind": "action",
+          "x": 56,
+          "y": 60
         },
         {
           "en": "straight",
-          "ar": "مستقيم"
+          "ar": "مستقيم",
+          "kind": "description"
+        },
+        {
+          "en": "label roll",
+          "ar": "لفافة ملصقات",
+          "kind": "object",
+          "x": 61,
+          "y": 71
+        },
+        {
+          "en": "printer slot",
+          "ar": "فتحة الطابعة",
+          "kind": "object",
+          "x": 55,
+          "y": 72
+        },
+        {
+          "en": "worktable",
+          "ar": "طاولة العمل",
+          "kind": "object",
+          "x": 62,
+          "y": 79
+        }
+      ],
+      "patterns": [
+        {
+          "id": 6,
+          "en": "Let's print one test label first.",
+          "ar": "لنطبع ملصقًا تجريبيًا أولًا."
+        },
+        {
+          "id": 10
+        },
+        {
+          "id": 9037
         }
       ],
       "taskEn": "Give instructions for printing one test label before a full batch.",
@@ -2847,19 +6614,60 @@
       "words": [
         {
           "en": "paper bridge",
-          "ar": "جسر ورقي"
+          "ar": "جسر ورقي",
+          "kind": "object",
+          "x": 54,
+          "y": 70
         },
         {
           "en": "fold",
-          "ar": "يطوي"
+          "ar": "يطوي",
+          "kind": "object",
+          "x": 49,
+          "y": 64
         },
         {
           "en": "support",
-          "ar": "يدعم"
+          "ar": "يدعم",
+          "kind": "action",
+          "x": 56,
+          "y": 70
         },
         {
           "en": "strong",
-          "ar": "قوي"
+          "ar": "قوي",
+          "kind": "description"
+        },
+        {
+          "en": "model",
+          "ar": "نموذج",
+          "kind": "object",
+          "x": 55,
+          "y": 69
+        },
+        {
+          "en": "paper strip",
+          "ar": "شريط ورقي",
+          "kind": "object",
+          "x": 55,
+          "y": 68
+        },
+        {
+          "en": "bridge support",
+          "ar": "دعامة جسر",
+          "kind": "object",
+          "x": 58,
+          "y": 76
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9037,
+          "en": "Can you add another support under the bridge?",
+          "ar": "هل يمكنك إضافة دعامة أخرى تحت الجسر؟"
+        },
+        {
+          "id": 10
         }
       ],
       "taskEn": "Suggest how to make the bridge stronger and describe how to test it.",
@@ -2879,19 +6687,65 @@
       "words": [
         {
           "en": "sole",
-          "ar": "نعل"
+          "ar": "نعل",
+          "kind": "object",
+          "x": 53,
+          "y": 75
         },
         {
           "en": "needle",
-          "ar": "إبرة"
+          "ar": "إبرة",
+          "kind": "object",
+          "x": 57,
+          "y": 62
         },
         {
           "en": "stitch",
-          "ar": "يخيط"
+          "ar": "يخيط",
+          "kind": "action",
+          "x": 55,
+          "y": 66
         },
         {
           "en": "worn",
-          "ar": "مهترئ"
+          "ar": "مهترئ",
+          "kind": "description",
+          "x": 56,
+          "y": 74
+        },
+        {
+          "en": "leather",
+          "ar": "جلد",
+          "kind": "object",
+          "x": 55,
+          "y": 74
+        },
+        {
+          "en": "thread",
+          "ar": "خيط",
+          "kind": "object",
+          "x": 58,
+          "y": 64
+        },
+        {
+          "en": "workbench",
+          "ar": "طاولة عمل",
+          "kind": "object",
+          "x": 63,
+          "y": 85
+        }
+      ],
+      "patterns": [
+        {
+          "id": 4,
+          "en": "Can I repair the sole instead of buying new shoes?",
+          "ar": "هل يمكنني إصلاح النعل بدلًا من شراء حذاء جديد؟"
+        },
+        {
+          "id": 10
+        },
+        {
+          "id": 9037
         }
       ],
       "taskEn": "Describe the damage and compare repairing the shoe with replacing it.",
@@ -2911,19 +6765,63 @@
       "words": [
         {
           "en": "notebook",
-          "ar": "دفتر"
+          "ar": "دفتر",
+          "kind": "object",
+          "x": 55,
+          "y": 70
         },
         {
           "en": "wrapping paper",
-          "ar": "ورق تغليف"
+          "ar": "ورق تغليف",
+          "kind": "object",
+          "x": 52,
+          "y": 73
         },
         {
           "en": "wrap",
-          "ar": "يغلّف"
+          "ar": "يغلّف",
+          "kind": "action",
+          "x": 55,
+          "y": 65
         },
         {
           "en": "handmade",
-          "ar": "مصنوع يدويًا"
+          "ar": "مصنوع يدويًا",
+          "kind": "description"
+        },
+        {
+          "en": "paper fold",
+          "ar": "طيّة ورق",
+          "kind": "object",
+          "x": 53,
+          "y": 71
+        },
+        {
+          "en": "book cover",
+          "ar": "غلاف دفتر",
+          "kind": "object",
+          "x": 54,
+          "y": 66
+        },
+        {
+          "en": "counter",
+          "ar": "منضدة",
+          "kind": "object",
+          "x": 58,
+          "y": 85
+        }
+      ],
+      "patterns": [
+        {
+          "id": 3,
+          "en": "I'd like this notebook wrapped as a gift.",
+          "ar": "أود تغليف هذا الدفتر كهدية."
+        },
+        {
+          "id": 10
+        },
+        {
+          "id": 9037
         }
       ],
       "taskEn": "Ask for gift wrapping and explain why you picked this notebook.",
@@ -2943,19 +6841,60 @@
       "words": [
         {
           "en": "hall",
-          "ar": "قاعة"
+          "ar": "قاعة",
+          "kind": "object",
+          "x": 53,
+          "y": 49
         },
         {
           "en": "speaker",
-          "ar": "مكبّر صوت"
+          "ar": "مكبّر صوت",
+          "kind": "object",
+          "x": 56,
+          "y": 65
         },
         {
           "en": "set up",
-          "ar": "يجهّز"
+          "ar": "يجهّز",
+          "kind": "action",
+          "x": 58,
+          "y": 69
         },
         {
           "en": "ready",
-          "ar": "جاهز"
+          "ar": "جاهز",
+          "kind": "description"
+        },
+        {
+          "en": "chair",
+          "ar": "كرسي",
+          "kind": "object",
+          "x": 30,
+          "y": 75
+        },
+        {
+          "en": "microphone stand",
+          "ar": "حامل ميكروفون",
+          "kind": "object",
+          "x": 52,
+          "y": 54
+        },
+        {
+          "en": "cable",
+          "ar": "سلك",
+          "kind": "object",
+          "x": 63,
+          "y": 76
+        }
+      ],
+      "patterns": [
+        {
+          "id": 6,
+          "en": "Let's test the sound before the doors open.",
+          "ar": "لنختبر الصوت قبل فتح الأبواب."
+        },
+        {
+          "id": 118
         }
       ],
       "taskEn": "Decide where to place the speakers and check who will test the sound.",
@@ -2975,19 +6914,63 @@
       "words": [
         {
           "en": "picnic",
-          "ar": "نزهة"
+          "ar": "نزهة",
+          "kind": "object",
+          "x": 52,
+          "y": 70
         },
         {
           "en": "shelter",
-          "ar": "مأوى"
+          "ar": "مأوى",
+          "kind": "object",
+          "x": 46,
+          "y": 20
         },
         {
           "en": "plan",
-          "ar": "يخطّط"
+          "ar": "يخطّط",
+          "kind": "action",
+          "x": 51,
+          "y": 63
         },
         {
           "en": "covered",
-          "ar": "مغطّى"
+          "ar": "مغطّى",
+          "kind": "description"
+        },
+        {
+          "en": "table",
+          "ar": "طاولة",
+          "kind": "object",
+          "x": 57,
+          "y": 77
+        },
+        {
+          "en": "paper plan",
+          "ar": "ورقة خطة",
+          "kind": "object",
+          "x": 54,
+          "y": 73
+        },
+        {
+          "en": "window",
+          "ar": "نافذة",
+          "kind": "object",
+          "x": 45,
+          "y": 27
+        }
+      ],
+      "patterns": [
+        {
+          "id": 117,
+          "en": "There is room inside if it rains.",
+          "ar": "توجد مساحة بالداخل إذا أمطرت."
+        },
+        {
+          "id": 6
+        },
+        {
+          "id": 118
         }
       ],
       "taskEn": "Suggest an indoor alternative and explain how to inform everyone.",
@@ -3007,19 +6990,65 @@
       "words": [
         {
           "en": "book fair",
-          "ar": "معرض كتب"
+          "ar": "معرض كتب",
+          "kind": "object",
+          "x": 55,
+          "y": 43
         },
         {
           "en": "display",
-          "ar": "منضدة عرض"
+          "ar": "منضدة عرض",
+          "kind": "object",
+          "x": 62,
+          "y": 76
         },
         {
           "en": "welcome",
-          "ar": "يرحّب"
+          "ar": "يرحّب",
+          "kind": "action",
+          "x": 55,
+          "y": 58
         },
         {
           "en": "busy",
-          "ar": "مزدحم"
+          "ar": "مزدحم",
+          "kind": "description",
+          "x": 64,
+          "y": 50
+        },
+        {
+          "en": "bookshelf",
+          "ar": "رف كتب",
+          "kind": "object",
+          "x": 29,
+          "y": 49
+        },
+        {
+          "en": "visitor",
+          "ar": "زائر",
+          "kind": "object",
+          "x": 72,
+          "y": 44
+        },
+        {
+          "en": "book display",
+          "ar": "عرض كتب",
+          "kind": "object",
+          "x": 61,
+          "y": 73
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9037,
+          "en": "Can you show me the books for young readers?",
+          "ar": "هل يمكنك أن تريني كتب القرّاء الصغار؟"
+        },
+        {
+          "id": 6
+        },
+        {
+          "id": 118
         }
       ],
       "taskEn": "Greet a visitor and direct them to books that match their interests.",
@@ -3039,19 +7068,60 @@
       "words": [
         {
           "en": "script",
-          "ar": "نص مسرحي"
+          "ar": "نص مسرحي",
+          "kind": "object",
+          "x": 45,
+          "y": 58
         },
         {
           "en": "stage",
-          "ar": "مسرح"
+          "ar": "مسرح",
+          "kind": "object",
+          "x": 52,
+          "y": 86
         },
         {
           "en": "rehearse",
-          "ar": "يتمرّن"
+          "ar": "يتمرّن",
+          "kind": "action",
+          "x": 57,
+          "y": 58
         },
         {
           "en": "clear",
-          "ar": "واضح"
+          "ar": "واضح",
+          "kind": "description"
+        },
+        {
+          "en": "curtain",
+          "ar": "ستار",
+          "kind": "object",
+          "x": 54,
+          "y": 25
+        },
+        {
+          "en": "actor",
+          "ar": "ممثل",
+          "kind": "object",
+          "x": 61,
+          "y": 45
+        },
+        {
+          "en": "gesture",
+          "ar": "إيماءة",
+          "kind": "object",
+          "x": 57,
+          "y": 47
+        }
+      ],
+      "patterns": [
+        {
+          "id": 6,
+          "en": "Let's speak more clearly in the opening scene.",
+          "ar": "لنتحدث بوضوح أكبر في المشهد الافتتاحي."
+        },
+        {
+          "id": 118
         }
       ],
       "taskEn": "Suggest one way to make the scene easier for the audience to follow.",
@@ -3071,19 +7141,65 @@
       "words": [
         {
           "en": "seat",
-          "ar": "مقعد"
+          "ar": "مقعد",
+          "kind": "object",
+          "x": 62,
+          "y": 71
         },
         {
           "en": "row",
-          "ar": "صف"
+          "ar": "صف",
+          "kind": "object",
+          "x": 63,
+          "y": 73
         },
         {
           "en": "choose",
-          "ar": "يختار"
+          "ar": "يختار",
+          "kind": "action",
+          "x": 59,
+          "y": 57
         },
         {
           "en": "front",
-          "ar": "أمامي"
+          "ar": "أمامي",
+          "kind": "description",
+          "x": 68,
+          "y": 80
+        },
+        {
+          "en": "cushion",
+          "ar": "وسادة",
+          "kind": "object",
+          "x": 81,
+          "y": 74
+        },
+        {
+          "en": "audience",
+          "ar": "جمهور",
+          "kind": "object",
+          "x": 53,
+          "y": 49
+        },
+        {
+          "en": "bench",
+          "ar": "مقعد طويل",
+          "kind": "object",
+          "x": 64,
+          "y": 68
+        }
+      ],
+      "patterns": [
+        {
+          "id": 117,
+          "en": "There is a free seat in the front row.",
+          "ar": "يوجد مقعد شاغر في الصف الأمامي."
+        },
+        {
+          "id": 6
+        },
+        {
+          "id": 118
         }
       ],
       "taskEn": "Offer a seat and explain which row is best for a child to see.",
@@ -3103,19 +7219,63 @@
       "words": [
         {
           "en": "camera",
-          "ar": "كاميرا"
+          "ar": "كاميرا",
+          "kind": "object",
+          "x": 37,
+          "y": 44
         },
         {
           "en": "rope",
-          "ar": "حبل"
+          "ar": "حبل",
+          "kind": "object",
+          "x": 68,
+          "y": 62
         },
         {
           "en": "photograph",
-          "ar": "يصوّر"
+          "ar": "يصوّر",
+          "kind": "action",
+          "x": 37,
+          "y": 49
         },
         {
           "en": "allowed",
-          "ar": "مسموح"
+          "ar": "مسموح",
+          "kind": "description"
+        },
+        {
+          "en": "camera strap",
+          "ar": "حزام كاميرا",
+          "kind": "object",
+          "x": 36,
+          "y": 55
+        },
+        {
+          "en": "crowd",
+          "ar": "حشد",
+          "kind": "object",
+          "x": 75,
+          "y": 53
+        },
+        {
+          "en": "barrier post",
+          "ar": "عمود حاجز",
+          "kind": "object",
+          "x": 64,
+          "y": 74
+        }
+      ],
+      "patterns": [
+        {
+          "id": 4,
+          "en": "Can I take a photo from here?",
+          "ar": "هل يمكنني التقاط صورة من هنا؟"
+        },
+        {
+          "id": 6
+        },
+        {
+          "id": 118
         }
       ],
       "taskEn": "Ask where you may stand and how to avoid blocking someone else's view.",
@@ -3135,19 +7295,60 @@
       "words": [
         {
           "en": "welcome bag",
-          "ar": "حقيبة ترحيب"
+          "ar": "حقيبة ترحيب",
+          "kind": "object",
+          "x": 54,
+          "y": 69
         },
         {
           "en": "leaflet",
-          "ar": "مطوية"
+          "ar": "مطوية",
+          "kind": "object",
+          "x": 51,
+          "y": 58
         },
         {
           "en": "pack",
-          "ar": "يعبّئ"
+          "ar": "يعبّئ",
+          "kind": "action",
+          "x": 52,
+          "y": 61
         },
         {
           "en": "complete",
-          "ar": "مكتمل"
+          "ar": "مكتمل",
+          "kind": "description"
+        },
+        {
+          "en": "paper bag",
+          "ar": "كيس ورقي",
+          "kind": "object",
+          "x": 57,
+          "y": 73
+        },
+        {
+          "en": "information card",
+          "ar": "بطاقة معلومات",
+          "kind": "object",
+          "x": 50,
+          "y": 65
+        },
+        {
+          "en": "packing table",
+          "ar": "طاولة تجهيز",
+          "kind": "object",
+          "x": 59,
+          "y": 82
+        }
+      ],
+      "patterns": [
+        {
+          "id": 118,
+          "en": "There are five welcome bags ready by the door.",
+          "ar": "توجد خمس حقائب ترحيب جاهزة قرب الباب."
+        },
+        {
+          "id": 6
         }
       ],
       "taskEn": "Check what goes in each bag and report how many are still needed.",
@@ -3167,19 +7368,60 @@
       "words": [
         {
           "en": "tray",
-          "ar": "صينية"
+          "ar": "صينية",
+          "kind": "object",
+          "x": 49,
+          "y": 75
         },
         {
           "en": "dates",
-          "ar": "تمر"
+          "ar": "تمر",
+          "kind": "object",
+          "x": 56,
+          "y": 76
         },
         {
           "en": "set out",
-          "ar": "يرتّب"
+          "ar": "يرتّب",
+          "kind": "action",
+          "x": 49,
+          "y": 69
         },
         {
           "en": "hot",
-          "ar": "ساخن"
+          "ar": "ساخن",
+          "kind": "description"
+        },
+        {
+          "en": "teapot",
+          "ar": "إبريق شاي",
+          "kind": "object",
+          "x": 59,
+          "y": 74
+        },
+        {
+          "en": "glass",
+          "ar": "كأس",
+          "kind": "object",
+          "x": 64,
+          "y": 77
+        },
+        {
+          "en": "table",
+          "ar": "طاولة",
+          "kind": "object",
+          "x": 53,
+          "y": 85
+        }
+      ],
+      "patterns": [
+        {
+          "id": 6,
+          "en": "Let's put the dates out before the guests arrive.",
+          "ar": "لنضع التمر قبل وصول الضيوف."
+        },
+        {
+          "id": 118
         }
       ],
       "taskEn": "Decide what to set out now and what to serve when the guests arrive.",
@@ -3199,19 +7441,65 @@
       "words": [
         {
           "en": "clock",
-          "ar": "ساعة"
+          "ar": "ساعة",
+          "kind": "object",
+          "x": 48,
+          "y": 26
         },
         {
           "en": "seat",
-          "ar": "مقعد"
+          "ar": "مقعد",
+          "kind": "object",
+          "x": 65,
+          "y": 62
         },
         {
           "en": "check",
-          "ar": "يتحقّق"
+          "ar": "يتحقّق",
+          "kind": "action",
+          "x": 58,
+          "y": 59
         },
         {
           "en": "early",
-          "ar": "مبكر"
+          "ar": "مبكر",
+          "kind": "description",
+          "x": 49,
+          "y": 26
+        },
+        {
+          "en": "wall clock",
+          "ar": "ساعة حائط",
+          "kind": "object",
+          "x": 48,
+          "y": 26
+        },
+        {
+          "en": "seating chart",
+          "ar": "مخطط المقاعد",
+          "kind": "object",
+          "x": 56,
+          "y": 57
+        },
+        {
+          "en": "foyer",
+          "ar": "بهو",
+          "kind": "object",
+          "x": 72,
+          "y": 39
+        }
+      ],
+      "patterns": [
+        {
+          "id": 12,
+          "en": "Do you know where we should wait for the lecture?",
+          "ar": "هل تعرف أين ننتظر قبل المحاضرة؟"
+        },
+        {
+          "id": 6
+        },
+        {
+          "id": 118
         }
       ],
       "taskEn": "Confirm when the talk starts and choose where to wait for your friend.",
@@ -3231,19 +7519,60 @@
       "words": [
         {
           "en": "cake",
-          "ar": "كعكة"
+          "ar": "كعكة",
+          "kind": "object",
+          "x": 48,
+          "y": 77
         },
         {
           "en": "card",
-          "ar": "بطاقة"
+          "ar": "بطاقة",
+          "kind": "object",
+          "x": 64,
+          "y": 70
         },
         {
           "en": "prepare",
-          "ar": "يجهّز"
+          "ar": "يجهّز",
+          "kind": "action",
+          "x": 52,
+          "y": 65
         },
         {
           "en": "surprised",
-          "ar": "متفاجئ"
+          "ar": "متفاجئ",
+          "kind": "description"
+        },
+        {
+          "en": "cake plate",
+          "ar": "طبق كعكة",
+          "kind": "object",
+          "x": 47,
+          "y": 81
+        },
+        {
+          "en": "decoration",
+          "ar": "زينة",
+          "kind": "object",
+          "x": 49,
+          "y": 71
+        },
+        {
+          "en": "envelope",
+          "ar": "ظرف",
+          "kind": "object",
+          "x": 71,
+          "y": 74
+        }
+      ],
+      "patterns": [
+        {
+          "id": 6,
+          "en": "Let's bring the cake out after everyone arrives.",
+          "ar": "لنُخرج الكعكة بعد وصول الجميع."
+        },
+        {
+          "id": 118
         }
       ],
       "taskEn": "Agree on when to bring out the cake and what to write in the card.",

@@ -2,11 +2,12 @@
 
 **English Patterns — تعلّم الإنجليزية بالأنماط.** تطبيق Node.js مستقل، مع الصور والتسجيلات والترجمات وتوقيت الكلمات داخل هذا المجلد.
 
-```text
-node server.js
+```sh
+npm ci
+npm start
 ```
 
-ثم افتح http://127.0.0.1:4180 . يمكنك أيضًا `npm start`. يحتاج التشغيل Node22 أو أحدث، ولا يحتاج تثبيت مكتبات npm أو Python أو تنزيل نماذج. في Windows يمكن تشغيل `Start-English-Patterns.cmd`.
+ثم افتح http://127.0.0.1:4180 . يحتاج التشغيل Node 22 أو أحدث. يشغّل `npm start` ترحيلات SQLite واستيراد المحتوى قبل بدء الخادم. للتشغيل الثابت دون تثبيت مكتبات npm استخدم `node server.js` أو `Start-English-Patterns.cmd` في Windows. [إعداد الاستضافة والتحقق من قاعدة البيانات](docs/CONTENT-DATABASE.md).
 
 ابدأ الاستكمال من **[HANDOFF.md](HANDOFF.md)**، ثم [قائمة النواقص](docs/COMPLETION-BACKLOG.md) و[حالة الفحص](docs/VERIFIED-STATUS.json).
 

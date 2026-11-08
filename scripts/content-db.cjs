@@ -1,22 +1,19 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const { execFileSync } = require('node:child_process');
-const knex = require('knex');
-const config = require('../knexfile.cjs');
+const { openContentDb, syncContent } = require('../db/content.cjs');
 const root = path.resolve(__dirname, '..');
 
 async function main() {
   const [command, id, output] = process.argv.slice(2);
   if (!['sync', 'summary', 'scene'].includes(command)) throw Error('Use sync, summary, or scene <id> [output.webp]');
-  fs.mkdirSync(path.dirname(config.connection.filename), {recursive:true});
-  const db = knex(config);
+  const db = openContentDb();
   try {
     if (command === 'sync') {
-      await db.migrate.latest();
-      await db.seed.run();
+      await syncContent(db);
     } else if (command === 'summary') {
       const tables = ['patterns','sentences','scenes','recordings','dialogues','dialogue_turns','comparisons',
-        'exercises','learning_routes','idea_scenes','idea_scene_words','dialogue_scene_uses','coverage_gaps','editorial_notes','external_links'];
+        'exercises','learning_routes','idea_scenes','idea_scene_words','idea_scene_patterns','dialogue_scene_uses','coverage_gaps','editorial_notes','external_links'];
       const counts = await Promise.all(tables.map(table => db(table).count({count:'*'}).first()));
       console.log(JSON.stringify(Object.fromEntries(tables.map((name,i)=>[name,counts[i].count])), null, 2));
     } else {

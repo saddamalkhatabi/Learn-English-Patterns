@@ -10,7 +10,7 @@ const displayable = new Set(['visually_reviewed', 'assistant-reviewed', 'importe
 exports.seed = async db => {
   const files = Object.fromEntries(names.map(name => [name, fs.readFileSync(path.join(root, 'public', name+'.json'))]));
   const sources = Object.fromEntries(names.map(name => [name, hash(files[name])]));
-  const fingerprint = hash(JSON.stringify({ format: 5, sources }));
+  const fingerprint = hash(JSON.stringify({ format: 6, sources }));
   if ((await db('content_state').where('key', 'current_import').first())?.value === fingerprint) {
     console.log('Content already indexed: ' + fingerprint.slice(0, 12));
     return;
@@ -152,8 +152,9 @@ exports.seed = async db => {
     terms:[...terms.values()],pattern_terms:patternTerms,sentence_terms:sentenceTerms,
     scene_descriptions:sceneDescriptions,scene_terms:sceneTerms,coverage_gaps:gaps,
     idea_topics:ideas.topics,
-    idea_scenes:ideas.scenes.map(s=>({scene_id:s.id,topic_id:s.topic,title_ar:s.ar,title_en:s.en,task_ar:s.taskAr,task_en:s.taskEn})),
-    idea_scene_words:ideas.scenes.flatMap(s=>s.words.map((w,position)=>({scene_id:s.id,position,ar:w.ar,en:w.en}))),
+    idea_scenes:ideas.scenes.map((s,position)=>({scene_id:s.id,position,topic_id:s.topic,title_ar:s.ar,title_en:s.en,task_ar:s.taskAr,task_en:s.taskEn})),
+    idea_scene_words:ideas.scenes.flatMap(s=>s.words.map((w,position)=>({scene_id:s.id,position,ar:w.ar,en:w.en,kind:w.kind,x:w.x??null,y:w.y??null}))),
+    idea_scene_patterns:ideas.scenes.flatMap(s=>s.patterns.map((p,position)=>({scene_id:s.id,pattern_id:p.id,position,example_en:p.en??null,example_ar:p.ar??null}))),
     dialogue_scene_uses:dialogueSceneUses
   };
   await db.transaction(async trx=>{

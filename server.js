@@ -1,10 +1,20 @@
 const http=require('node:http'),fs=require('node:fs'),path=require('node:path');
 const ROOT=path.resolve(__dirname,'public');
 const TYPES={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.svg':'image/svg+xml','.png':'image/png','.webp':'image/webp','.mp3':'audio/mpeg','.zip':'application/zip'};
-function createServer(){return http.createServer((req,res)=>{
+function createServer({ideaLibrary}={}){
+ const endpoints=new Map([['/api/health',JSON.stringify({
+  status:'ok',ideaBackend:ideaLibrary?'sqlite':'static',ideaScenes:ideaLibrary?.scenes.length??null
+ })]]);
+ if(ideaLibrary)endpoints.set('/api/idea-scenes',JSON.stringify(ideaLibrary));
+ return http.createServer((req,res)=>{
  if(!['GET','HEAD'].includes(req.method)){res.writeHead(405,{Allow:'GET, HEAD'}).end();return}
  let pathname;try{pathname=decodeURIComponent(new URL(req.url,'http://localhost').pathname)}catch{res.writeHead(400).end();return}
  if(pathname.includes('\\')||pathname.includes('\0')){res.writeHead(400).end();return}
+ if(endpoints.has(pathname)){
+  const body=endpoints.get(pathname);
+  res.writeHead(200,{'Content-Type':TYPES['.json'],'Content-Length':Buffer.byteLength(body),'Cache-Control':'no-store','X-Content-Type-Options':'nosniff'});
+  res.end(req.method==='HEAD'?undefined:body);return;
+ }
  const file=path.resolve(ROOT,'.'+pathname+(pathname.endsWith('/')?'index.html':''));
  if(file!==ROOT&&!file.startsWith(ROOT+path.sep)){res.writeHead(403).end();return}
  fs.stat(file,(error,stat)=>{
@@ -21,5 +31,25 @@ function createServer(){return http.createServer((req,res)=>{
   const stream=fs.createReadStream(file,{start,end});stream.on('error',()=>res.destroy());res.on('close',()=>stream.destroy());stream.pipe(res);
  });
 })}
-if(require.main===module){const port=Number(process.env.PORT)||4180;createServer().listen(port,'127.0.0.1',()=>console.log(`English Patterns: http://127.0.0.1:${port}`))}
+async function start(){
+ require('./runtime-env.cjs');
+ const client=process.env.EP_DB_CLIENT||(process.argv.includes('--sqlite')?'better-sqlite3':'static');
+ if(!['static','better-sqlite3'].includes(client))throw Error(`Unsupported EP_DB_CLIENT: ${client}`);
+ const useSqlite=client==='better-sqlite3';
+ let ideaLibrary;
+ if(useSqlite){
+  console.log(`[content-db] preparing client=${client} node=${process.version}`);
+  const {openContentDb,syncContent,readIdeaLibrary}=require('./db/content.cjs');
+  const db=openContentDb();
+  try{
+   await syncContent(db);
+   ideaLibrary=await readIdeaLibrary(db);
+  }finally{await db.destroy()}
+  console.log(`[content-db] ready client=${client} idea_scenes=${ideaLibrary.scenes.length}`);
+ }
+ const port=Number(process.env.PORT)||4180;
+ const host=process.env.HOST||(useSqlite&&process.env.PORT?'0.0.0.0':'127.0.0.1');
+ createServer({ideaLibrary}).listen(port,host,()=>console.log(`English Patterns: http://${host}:${port} (Idea Lab: ${ideaLibrary?'SQLite':'static'})`));
+}
+if(require.main===module)start().catch(error=>{console.error('English Patterns could not start:',error.message);process.exitCode=1});
 module.exports={createServer};

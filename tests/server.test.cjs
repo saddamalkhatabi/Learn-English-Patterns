@@ -9,3 +9,20 @@ test('local server delivers exact audio ranges for seeking and resume',async()=>
   assert.equal((await fetch(base+'/')).status,200);assert.equal((await fetch(base+'/%2e%2e%5cREADME.md')).status,400);
  }finally{await new Promise(resolve=>server.close(resolve))}
 });
+
+test('hosting health identifies the library source and exposes the SQLite snapshot as JSON',async()=>{
+ const ideaLibrary={schema:2,topics:[],scenes:[{id:'idea-example'}]};
+ for(const options of [{ideaLibrary},{}]){
+  const server=createServer(options);
+  await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
+  try{
+   const base=`http://127.0.0.1:${server.address().port}`;
+   const status=await fetch(base+'/api/health');
+   assert.equal(status.headers.get('cache-control'),'no-store');
+   assert.equal((await status.json()).ideaBackend,options.ideaLibrary?'sqlite':'static');
+   const library=await fetch(base+'/api/idea-scenes');
+   if(options.ideaLibrary)assert.deepEqual(await library.json(),ideaLibrary);
+   else assert.equal(library.status,404);
+  }finally{await new Promise(resolve=>server.close(resolve))}
+ }
+});

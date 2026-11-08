@@ -1,4 +1,5 @@
 const path = require('node:path');
+require('./runtime-env.cjs');
 module.exports = {
   client: 'better-sqlite3',
   connection: { filename: path.resolve(process.env.EP_DB_PATH || path.join(__dirname, 'data/content.sqlite')) },

@@ -5,7 +5,7 @@
   "type": "commonjs",
   "description": "Learn English through patterns, contextual scenes and synchronized dual voices",
   "scripts": {
-    "start": "node server.js",
+    "start": "node server.js --sqlite",
     "db:sync": "node scripts/content-db.cjs sync",
     "db:summary": "node scripts/content-db.cjs summary",
     "db:scene": "node scripts/content-db.cjs scene",

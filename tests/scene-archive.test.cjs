@@ -7,10 +7,11 @@ test('Idea Lab offers 100 distinct bilingual scenes and conversation art resolve
  const {asset,sha,webpSize}=require('../scripts/media-validation.cjs');
  const {scenes,topics}=require('../public/idea-scenes.json');
  const offline=new Map(require('../public/offline-manifest.json').media.map(row=>[row.path,row]));
- assert.equal(scenes.length,100);
- assert.equal(new Set(scenes.map(s=>s.sha256)).size,100);
- assert.equal(new Set(scenes.map(s=>s.taskEn)).size,100);
- for(const topic of topics)assert.equal(scenes.filter(s=>s.topic===topic.id).length,10,topic.id);
+ assert(scenes.length>=100);
+ assert.equal(new Set(scenes.map(s=>s.sha256)).size,scenes.length);
+ assert.equal(new Set(scenes.map(s=>s.taskEn)).size,scenes.length);
+ const patternIds=new Set([...require('../public/pilot.json').patterns,...require('../public/expansion-media.json').patterns].map(p=>p.id));
+ assert(scenes.reduce((n,scene)=>n+scene.words.filter(w=>w.x!==undefined).length,0)>=600);
  const verify=image=>{
   const file=asset(process.cwd(),image.path);
   assert.equal(sha(file),image.sha256);
@@ -20,7 +21,12 @@ test('Idea Lab offers 100 distinct bilingual scenes and conversation art resolve
  for(const scene of scenes){
   verify(scene);
   assert(scene.sentenceEn&&scene.sentenceAr&&scene.taskAr&&scene.words.length>=4);
-  assert(scene.words.every(word=>word.en&&word.ar));
+  assert(topics.some(topic=>topic.id===scene.topic),scene.id);
+  assert(scene.words.every(word=>word.en&&word.ar&&['object','action','description'].includes(word.kind)),scene.id);
+  for(const word of scene.words){
+   assert((word.x===undefined&&word.y===undefined)||[word.x,word.y].every(n=>Number.isFinite(n)&&n>=0&&n<=100),scene.id);
+  }
+  assert(scene.patterns.length>=2&&scene.patterns.every(pattern=>patternIds.has(pattern.id)),scene.id);
  }
  const dialogues=new Map(require('../public/dialogues.json').dialogues.map(d=>[d.id,d]));
  for(const [id,entry] of Object.entries(require('../public/conversation-scenes.json').scenes)){
