@@ -1,6 +1,7 @@
 /* A visual collection separate from the sentence and dialogue libraries. */
 let ideaLibrary=null,ideaPage=0,ideaTopic='',ideaQuery='',ideaAction='describe',ideaSceneId='';
-let ideaSceneFilter='',ideaWordFilter='',ideaWordMode='hidden',ideaFlash=null,ideaFlashIndex=0;
+let ideaSceneFilter='',ideaWordFilter='';
+let ideaPracticePattern=null,ideaPracticeScenes=null,ideaPracticePending=false,ideaPracticeContext='';
 const ideaWriting=new Map(),ideaGuided=new Map();
 let ideaArchive=[],ideaArchiveScope='scene',ideaArchiveView=null;
 try{
@@ -27,17 +28,65 @@ lab=function(){
    </select></label>
    <button class="secondary" onclick="suggestIdeaScene()">✦ ${T('اقترح مشهدًا','Suggest a scene')}</button>
   </div>
+  ${ideaPracticePattern?ideaPracticeBanner():''}
   <section id="idea-lab-active"></section>
+  <dialog id="idea-zoom" aria-labelledby="idea-zoom-title" onclose="restoreIdeaZoom()"><div class="idea-zoom-header"><h2 id="idea-zoom-title"></h2><form method="dialog"><button class="secondary" aria-label="${T('إغلاق عرض المشهد','Close scene view')}">×</button></form></div><div class="idea-zoom-content"></div></dialog>
   <p id="idea-lab-count" role="status"></p><div id="idea-lab-grid" class="scene-studio-grid idea-lab-grid"></div>
   <div class="buttonrow"><button class="secondary" id="idea-lab-prev" onclick="ideaPage--;paintIdeaLibrary()">${T('الصفحة السابقة','Previous page')}</button>
   <button class="secondary" id="idea-lab-next" onclick="ideaPage++;paintIdeaLibrary()">${T('الصفحة التالية','Next page')}</button></div>`;
 };
 function currentIdeaScene(){return ideaLibrary?.scenes.find(s=>s.id===ideaSceneId)}
+function ideaPracticeForm(){return PILOT?.patterns.find(row=>row.id===ideaPracticePattern)?.form}
+function openAdvancedIdea(id){
+ const pattern=PILOT?.patterns.find(row=>row.id===id);
+ if(!pattern)return;
+ const dialog=$('#lesson');
+ if(dialog?.open)closeLesson();else stopSpeech();
+ ideaPracticePattern=id;
+ ideaPracticeContext=route?.sentence?.pattern_id===id?route.sentence.en:'';
+ ideaPracticePending=true;
+ ideaPracticeScenes=null;
+ ideaQuery='';ideaTopic='';ideaSceneFilter='';ideaPage=0;
+ ideaAction='patterns';
+ navigate('lab');
+}
+function ideaPracticeBanner(){
+ return `<div class="panel idea-practice-banner"><b>${T('ممارسة متقدمة للنمط','Advanced pattern practice')}</b>
+  <strong class="pattern-form" lang="en" dir="ltr">${H(ideaPracticeForm()||'')}</strong>
+  <button class="textlink" onclick="clearAdvancedIdea()">${T('عرض كل المشاهد','Show all scenes')} ↗</button></div>`;
+}
+function clearAdvancedIdea(){
+ ideaPracticePattern=null;
+ ideaPracticeScenes=null;
+ ideaPracticePending=false;
+ ideaPage=0;
+ render();
+}
+function prepareAdvancedIdea(){
+ if(!ideaPracticePending||!ideaLibrary)return;
+ const pattern=PILOT.patterns.find(row=>row.id===ideaPracticePattern);
+ const normalize=value=>normalizeSceneQuery(value).split(/[^a-z0-9\u0600-\u06ff]+/).filter(word=>word.length>=4);
+ const stop=new Set(['about','some','with','from','would','when','what','that','this','there','their','have','which','using','thing']);
+ const tokens=new Set(normalize([ideaPracticeContext,pattern.title,pattern.topic,...(pattern.keywords||[])].filter(Boolean).join(' ')).filter(word=>!stop.has(word)));
+ const scores=ideaLibrary.scenes.map((scene,index)=>{
+  const match=scene.patterns?.find(link=>link.id===pattern.id);
+  const words=new Set(normalize([scene.en,scene.ar,scene.sentenceEn,scene.taskEn,...scene.words.flatMap(word=>[word.en,word.ar])].join(' ')));
+  const affinity=[...tokens].reduce((score,token)=>score+Number(words.has(token)),0);
+  const rank=(match?.en?200:match?100:0)+affinity;
+  return {scene,rank,tie:(index+pattern.id)%ideaLibrary.scenes.length};
+ }).sort((a,b)=>b.rank-a.rank||a.tie-b.tie);
+ ideaPracticeScenes=scores.slice(0,12).map(item=>item.scene.id);
+ ideaSceneId=ideaPracticeScenes[0]||ideaSceneId;
+ ideaArchiveView=null;
+ ideaPracticePending=false;
+}
 function findIdeaScenes(){
  const tokens=normalizeSceneQuery(ideaQuery).trim().split(/\s+/).filter(Boolean);
  const topics=new Map(ideaLibrary?.topics.map(t=>[t.id,t]));
  const saved=new Set(ideaArchive.map(entry=>entry.sceneId));
- return (ideaLibrary?.scenes||[]).filter(scene=>{
+ const scenes=ideaLibrary?.scenes||[];
+ const candidates=ideaPracticeScenes?ideaPracticeScenes.map(id=>scenes.find(scene=>scene.id===id)).filter(Boolean):scenes;
+ return candidates.filter(scene=>{
   if(ideaTopic&&ideaTopic!==scene.topic)return false;
   if(ideaSceneFilter==='saved'&&!saved.has(scene.id))return false;
   const topic=topics.get(scene.topic);
@@ -74,28 +123,17 @@ function chooseIdeaScene(id,scroll=true){
  if(ideaSceneId!==scene.id)ideaArchiveView=null;
  ideaSceneId=scene.id;
  clearIdeaFlash();
+ if($('#idea-zoom')?.open)$('#idea-zoom .idea-zoom-content').replaceChildren();
  try{localStorage.setItem('nasaq-idea-scene',scene.id)}catch{}
  host.innerHTML=`<article class="panel idea-lab-exercise">
-  <div class="idea-lab-image">
-   <div class="idea-picture-frame"><button class="dialogue-image-button" onclick="enlargeDialogueScene(this)" aria-label="${T('تكبير المشهد','Enlarge scene')}">${ideaPicture(scene)}</button><div id="idea-picture-labels"></div></div>
-   <div class="idea-label-controls" role="group" aria-label="${T('كلمات على الصورة','Words on the picture')}">
-    ${[['hidden','إخفاء الكلمات','Hide words'],['visible','أظهر الكلمات','Show words'],['flash','ومضات الحفظ','Recall flashes']].map(([id,ar,en])=>
-    `<button class="secondary" data-idea-word-mode="${id}" aria-pressed="${ideaWordMode===id}" onclick="setIdeaWordMode('${id}')">${T(ar,en)}</button>`).join('')}
-   </div>
-   <label class="idea-filter">${T('نوع المفردات','Vocabulary type')} <select id="idea-word-filter" onchange="setIdeaWordFilter(this.value)">
-    ${[['','الكل','All'],['object','الأشياء والأشخاص','Objects and people'],['action','الأفعال','Actions'],['description','الأوصاف','Descriptions'],['phrase','عبارات المشهد','Scene phrases']].map(([id,ar,en])=>
-     `<option value="${id}" ${ideaWordFilter===id?'selected':''}>${T(ar,en)}</option>`).join('')}</select></label>
-   <p class="idea-picture-hint">${T('في وضع الومضات تظهر كلمة ثم تختفي. انقر علامة لتسمع الكلمة.','In flash mode, a word appears and then hides. Select a marker to hear the word.')}</p>
-   <div class="buttonrow"><button class="secondary" onclick="stepIdeaScene(-1)">← ${T('المشهد السابق','Previous scene')}</button>
-   <button class="secondary" onclick="stepIdeaScene(1)">${T('المشهد التالي','Next scene')} →</button></div>
-  </div><div class="idea-lab-practice"><h2 tabindex="-1">${H(T(scene.ar,scene.en))}</h2>
+  <div class="idea-lab-image" id="idea-viewer-home">${ideaViewer(scene)}</div><div class="idea-lab-practice"><h2 tabindex="-1">${H(T(scene.ar,scene.en))}</h2>
    <div class="buttonrow idea-lab-modes">${[['describe','صِف ما ترى','Describe'],['recall','تذكّر المفردات','Recall words'],['write','اكتب فكرة','Write an idea'],['roleplay','ابتكر حوارًا','Role-play'],['patterns','أنماط تناسب الصورة','Related patterns']].map(([id,ar,en])=>
     `<button class="secondary" aria-pressed="${id===ideaAction}" data-idea-action="${id}" onclick="setIdeaAction('${id}')">${T(ar,en)}</button>`).join('')}</div>
    <div id="idea-lab-task"></div>
   </div></article>`;
  paintIdeaTask(scene);
- paintIdeaLabels(scene);
- if(scroll){host.querySelector('h2').focus({preventScroll:true});host.scrollIntoView({block:'start'})}
+ mountIdeaViewer(scene);
+ if(scroll&&!$('#idea-zoom')?.open){host.querySelector('h2').focus({preventScroll:true});host.scrollIntoView({block:'start'})}
 }
 function stepIdeaScene(delta){
  const matching=findIdeaScenes(),list=matching.length?matching:ideaLibrary.scenes;
@@ -107,13 +145,6 @@ function setIdeaAction(value){
  ideaAction=value;
  document.querySelectorAll('[data-idea-action]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.ideaAction===value)));
  paintIdeaTask(currentIdeaScene());
-}
-function clearIdeaFlash(){clearTimeout(ideaFlash);ideaFlash=null;ideaFlashIndex=0}
-function setIdeaWordMode(mode){
- ideaWordMode=mode;
- clearIdeaFlash();
- document.querySelectorAll('[data-idea-word-mode]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.ideaWordMode===mode)));
- paintIdeaLabels(currentIdeaScene());
 }
 function setIdeaWordFilter(value){
  ideaWordFilter=value;
@@ -129,59 +160,6 @@ function ideaPhraseExamples(scene){
  return [{en:scene.sentenceEn,ar:scene.sentenceAr},...(scene.patterns||[]).filter(pattern=>pattern.en)];
 }
 function hearIdeaPhrase(index){const scene=currentIdeaScene();if(scene)speak(ideaPhraseExamples(scene)[index].en)}
-function ideaWordLabel(word){
- return `<span lang="en" dir="ltr">${H(word.en)}</span><span class="ar-content" lang="ar" dir="rtl">${H(word.ar)}</span>`;
-}
-function showIdeaMarker(index){
- const layer=$('#idea-picture-labels');
- if(!layer)return;
- layer.querySelectorAll('.idea-map-point').forEach(point=>point.classList.toggle('selected',+point.dataset.word===index));
- hearIdeaLine(index);
-}
-function paintIdeaLabels(scene){
- const layer=$('#idea-picture-labels');
- if(!scene||!layer)return;
- const words=visibleIdeaWords(scene).filter(word=>Number.isFinite(word.x)&&Number.isFinite(word.y));
- if(ideaWordMode==='hidden'||!words.length){layer.innerHTML='';return}
- if(ideaWordMode==='visible'){
-  layer.innerHTML=words.map(word=>`<div class="idea-map-point" data-word="${word.index}" style="--x:${word.x}%;--y:${word.y}%">
-   <button type="button" class="idea-pin" onclick="showIdeaMarker(${word.index})" aria-label="${H(word.en+' · '+word.ar)}">${word.index+1}</button>
-   <span class="idea-map-label">${ideaWordLabel(word)}</span></div>`).join('');
-  positionIdeaLabels();
-  return;
- }
- const flash=()=>{
-  if(page!=='lab'||ideaWordMode!=='flash'||scene.id!==ideaSceneId||!layer.isConnected){layer.innerHTML='';return}
-  const word=words[ideaFlashIndex++%words.length];
-  layer.innerHTML=`<div class="idea-map-point selected" style="--x:${word.x}%;--y:${word.y}%">
-   <button type="button" class="idea-pin" onclick="hearIdeaLine(${word.index})" aria-label="${H(word.en+' · '+word.ar)}">●</button>
-   <span class="idea-map-label">${ideaWordLabel(word)}</span></div>`;
-  positionIdeaLabels();
-  ideaFlash=setTimeout(()=>{layer.innerHTML='';ideaFlash=setTimeout(flash,1500)},2300);
- };
- flash();
-}
-function positionIdeaLabels(){
- const layer=$('#idea-picture-labels');
- if(!layer||!layer.clientWidth)return;
- const width=layer.clientWidth,height=layer.clientHeight,placed=[];
- const overlap=(a,b)=>a.x<b.x+b.w+4&&a.x+a.w+4>b.x&&a.y<b.y+b.h+4&&a.y+a.h+4>b.y;
- const inside=(value,size,max)=>Math.min(Math.max(value,3),Math.max(3,max-size-3));
- for(const point of layer.children){
-  const label=point.querySelector('.idea-map-label');
-  const x=point.offsetLeft,y=point.offsetTop,w=label.offsetWidth,h=label.offsetHeight;
-  const candidates=[[x+14,y-h-6],[x-w-14,y-h-6],[x+14,y+9],[x-w-14,y+9],[x-w/2,y-h-16],[x-w/2,y+16]]
-   .map(([x,y])=>({x:inside(x,w,width),y:inside(y,h,height),w,h}));
-  const place=candidates.find(candidate=>!placed.some(other=>overlap(candidate,other)));
-  point.classList.toggle('label-crowded',!place);
-  const spot=place||candidates[0];
-  label.style.left=`${spot.x-x}px`;
-  label.style.top=`${spot.y-y}px`;
-  if(place)placed.push(place);
- }
-}
-window.addEventListener('resize',positionIdeaLabels);
-
 function paintIdeaTask(scene){
  if(!scene)return;
  const entries=ideaWordFilter==='phrase'?
@@ -200,7 +178,9 @@ function paintIdeaTask(scene){
  }
  if(ideaAction==='patterns'){host.innerHTML=renderIdeaPatterns(scene);return}
  if(ideaAction==='write'){
+  const form=ideaPracticeForm();
   host.innerHTML=`<p lang="en" dir="ltr">${H(scene.taskEn)}</p>${EP.ar(scene.taskAr)}
+   ${form?`<p>${T('استخدم هذا النمط في ردّك','Use this pattern in your reply')} <strong class="pattern-form" lang="en" dir="ltr">${H(form)}</strong></p>`:''}
    <label>${T('اكتب وصفك أو ردّك','Write your description or reply')}<textarea dir="ltr" lang="en" rows="4" oninput="ideaWriting.set(ideaSceneId,this.value)">${H(ideaWriting.get(scene.id)||'')}</textarea></label>
    <div class="buttonrow"><button class="secondary" onclick="hearIdeaWriting()">▶ ${T('استمع لما كتبت','Listen to your writing')}</button></div>
    ${disclose(T('جملة ومفردات تساعدك','Model sentence and words'),sentence+words)}`;
@@ -215,6 +195,7 @@ function highlightIdeaWord(index){
  if(!Number.isFinite(word?.x)){hearIdeaLine(index);return}
  if(ideaWordMode!=='visible')setIdeaWordMode('visible');
  showIdeaMarker(index);
+ hearIdeaLine(index);
 }
 function hearIdeaWriting(){
  const text=ideaWriting.get(ideaSceneId)?.trim();
@@ -223,6 +204,7 @@ function hearIdeaWriting(){
 }
 function renderIdeaPatterns(scene){
  const cards=(scene.patterns||[]).flatMap(suggestion=>{
+  if(suggestion.id===ideaPracticePattern)return [];
   const pattern=PILOT?.patterns.find(p=>p.id===suggestion.id);
   if(!pattern)return [];
   const sample=PILOT.sentences.find(row=>row.pattern_id===pattern.id);
@@ -233,7 +215,16 @@ function renderIdeaPatterns(scene){
    <div class="buttonrow"><button class="secondary" onclick="hearIdeaPattern(${pattern.id})">▶ ${T('اسمع المثال','Hear the example')}</button>
    <button class="textlink" onclick="openLesson(${pattern.id})">${T('افتح درس النمط','Open pattern lesson')} ↗</button></div></article>`];
  });
- return `<p>${T('جرّب أحد هذه التراكيب لوصف الصورة أو لبدء حوار عنها.','Use one of these structures to describe the picture or start a conversation.')}</p>
+ const active=PILOT?.patterns.find(pattern=>pattern.id===ideaPracticePattern);
+ const applied=scene.patterns?.find(link=>link.id===ideaPracticePattern&&link.en);
+ const exercise=active?`<section class="idea-pattern-card idea-pattern-challenge">
+  <h3>${T('طبّق النمط على هذا المشهد','Apply the pattern to this scene')}</h3>
+  <p><strong class="pattern-form" lang="en" dir="ltr">${H(active.form)}</strong></p>
+  ${applied?`<p lang="en" dir="ltr">${H(applied.en)}</p>${EP.ar(applied.ar)}`:`<p>${T('تطبيق مفتوح: صف تفصيلًا في الصورة أو ابتكر ردًا مستخدمًا التركيب أعلاه.','Open practice: describe a detail or invent a reply using the structure above.')}</p>`}
+  <div class="buttonrow"><button class="primary" onclick="setIdeaAction('write')">${T('اكتب تطبيقك','Write your example')}</button>
+  <button class="secondary" onclick="setIdeaAction('roleplay')">${T('تدرّب في حوار','Practise in dialogue')}</button></div>
+ </section>`:'';
+ return `${exercise}<p>${T('جرّب أحد هذه التراكيب لوصف الصورة أو لبدء حوار عنها.','Use one of these structures to describe the picture or start a conversation.')}</p>
   <div class="idea-patterns">${cards.join('')||T('جارٍ تحميل الأنماط…','Loading patterns…')}</div>`;
 }
 function hearIdeaPattern(id){
@@ -249,8 +240,9 @@ function hearIdeaLine(index){
 const renderBeforeIdeaLab=render;
 render=function(){
  clearIdeaFlash();
+ ideaFrameObserver?.disconnect();
  renderBeforeIdeaLab();
- if(page==='lab'){paintIdeaLibrary();chooseIdeaScene(ideaSceneId,false);EP.decorate()}
+ if(page==='lab'){prepareAdvancedIdea();paintIdeaLibrary();chooseIdeaScene(ideaSceneId,false);EP.decorate()}
 };
 if(page==='lab')render();
 ideaLibraryReady.then(data=>{ideaLibrary=data;if(page==='lab')render()});

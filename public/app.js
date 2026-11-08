@@ -5,6 +5,9 @@ const navs=[['home','⌂'],['coach','▷'],['catalog','▦'],['path','⌁'],['li
 function persist(){try{localStorage.setItem('nasaq-v1',JSON.stringify(state))}catch{toast('تعذر الحفظ على هذا المتصفح. صدّر تقدمك من الإعدادات.')}}
 function toast(t){$('#toast').textContent=t;$('#toast').style.display='block';clearTimeout(timer);timer=setTimeout(()=>$('#toast').style.display='none',4000)}
 function navigate(p){location.hash=p;if(page===p)render()}
+function ideaPracticeButton(id){
+ return `<button class="secondary idea-practice-link" onclick="openAdvancedIdea(${Number(id)})">✦ ${T('ممارسة متقدمة','Advanced practice')}</button>`;
+}
 window.addEventListener('hashchange',()=>{page=location.hash.slice(1)||'home';if(!labels[page])page='home';render();window.scrollTo(0,0)});
 function head(title,desc,kicker='LEARN WITH PURPOSE'){return `<div class="pagehead"><div><span class="eyebrow">${kicker}</span><h1>${title}</h1><p>${desc}</p></div><span class="date">خطوة اليوم تصنع فرق الغد ✧</span></div>`}
 function nav(){ $('#nav').innerHTML=navs.map(([k,i])=>`<a href="#${k}" class="${page===k?'active':''}"><span class="ico">${i}</span>${labels[k]}${k==='review'?`<span class="badge">${due().length}</span>`:''}</a>`).join('');$('#crumb').innerHTML=`مساحتك للتعلّم <span>/</span> ${labels[page]}`}

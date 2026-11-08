@@ -38,7 +38,7 @@
 .studio-original,.idea-model{border-inline-start:4px solid #267b67;background:#f0f7f3;padding:.7rem 1rem;margin-bottom:.85rem;border-radius:10px}
 .studio-original h2,.studio-original p,.idea-model p{margin:.25rem 0}
 .idea-lab-exercise{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(1rem,3vw,2rem);margin-block:1rem}
-.idea-lab-image img,.idea-lab-card img{display:block;width:100%;height:auto;aspect-ratio:5/3;object-fit:cover;border-radius:10px}
+.idea-picture-frame>img,.idea-lab-card img{display:block;width:100%;height:auto;border-radius:10px}
 .idea-lab-image .buttonrow{margin-top:.55rem}
 .idea-lab-practice h2{margin-top:0}
 .idea-lab-modes{margin-block:.65rem}
@@ -50,15 +50,22 @@
 .idea-lab-card b{display:block;padding:.45rem .25rem}
 .idea-lab-tools label{display:grid;gap:.3rem}
 .idea-picture-frame{position:relative;isolation:isolate}
-.idea-picture-frame>.dialogue-image-button{display:block}
 #idea-picture-labels{position:absolute;inset:0;pointer-events:none;direction:ltr}
 .idea-map-point{position:absolute;left:var(--x);top:var(--y);width:0;height:0}
-.idea-pin{position:absolute;transform:translate(-50%,-50%);pointer-events:auto;z-index:1;display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:#164a3b;color:#fff;border:2px solid white;box-shadow:0 1px 5px #142e27;font-size:.76rem;font-weight:700;padding:0}
-.idea-map-label{position:absolute;display:grid;gap:2px;max-width:150px;width:max-content;padding:.22rem .4rem;border-radius:6px;background:#fffdf1;color:#193d30;font-size:clamp(.67rem,1.4vw,.8rem);font-weight:700;line-height:1.25;box-shadow:0 1px 5px #142e275c;text-align:center;overflow-wrap:anywhere}
-.idea-map-point.label-crowded:not(.selected):not(:focus-within):not(:hover) .idea-map-label{visibility:hidden}
-.idea-map-point:is(.selected,:focus-within,:hover){z-index:3}
+.idea-pin{position:absolute;pointer-events:auto;z-index:1;display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:#164a3b;color:#fff;border:2px solid white;box-shadow:0 1px 5px #142e27;font-size:.73rem;font-weight:700;padding:0}
+.idea-map-label{position:absolute;display:grid;gap:2px;max-width:130px;width:max-content;padding:.21rem .37rem;border-radius:6px;background:#fffdf1;color:#193d30;font-size:clamp(.67rem,1.4vw,.8rem);font-weight:700;line-height:1.25;box-shadow:0 1px 5px #142e275c;text-align:center;overflow-wrap:anywhere;pointer-events:auto}
+.idea-map-leaders{position:absolute;inset:0;width:100%;height:100%;overflow:visible;stroke:#fff;stroke-width:1.5;fill:#216a55;filter:drop-shadow(0 1px 1px #193d30)}
 .idea-map-point.selected .idea-pin{background:#8e401f}
 .idea-map-point.selected .idea-map-label{outline:2px solid #a85627}
+.idea-picture-caption{min-height:2.4rem;display:flex;align-items:center;justify-content:center;gap:.55rem;padding:.2rem .4rem;color:#193d30;font-weight:700}
+.idea-caption-kind{padding:.18rem .45rem;border-radius:20px;background:#e5eee2;color:#375846;font-size:.75rem}
+.idea-viewer-options{display:flex;gap:.5rem;flex-wrap:wrap}
+#idea-zoom{width:min(96vw,1220px);max-width:none;max-height:96dvh;border:0;border-radius:14px;padding:clamp(.5rem,2vw,1rem);overflow:auto}
+#idea-zoom::backdrop{background:#102e25da}
+.idea-zoom-header{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-block-end:.45rem}
+.idea-zoom-header h2{margin:0;font-size:clamp(1rem,2vw,1.35rem)}
+.idea-zoom-content .idea-picture-frame{width:min(100%,max(460px,calc((100dvh - 12.5rem)*5/3)));margin-inline:auto}
+.idea-zoom-content .idea-viewer-tools{display:grid;justify-content:center}
 .idea-label-controls{display:flex;flex-wrap:wrap;gap:.4rem;margin-block:.7rem .5rem}
 .idea-label-controls button[aria-pressed=true]{background:#216a55;color:#fff}
 .idea-filter{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem}
@@ -67,6 +74,9 @@
 .idea-lab-practice textarea{display:block;width:100%;margin-block:.4rem .7rem}
 .idea-pattern-card,.idea-archive{padding:.7rem .85rem;background:#f2f7f2;border:1px solid #d8e5d9;border-radius:10px;margin-block:.6rem}
 .idea-pattern-card .chip{margin-inline:.4rem}
+.idea-practice-banner{display:flex;flex-wrap:wrap;align-items:center;gap:.75rem;margin-block:.75rem}
+.idea-pattern-challenge{border-inline-start:4px solid #267b67}
+#coach-idea-practice{margin-block:.45rem}
 .idea-chat{max-height:330px;overflow:auto;overscroll-behavior:contain;padding:.55rem;margin-block:.6rem;border:1px solid #cddfd3;border-radius:12px;background:#fff}
 .idea-chat .bubble{max-width:94%;overflow-wrap:anywhere}
 .idea-chat .bubble p{margin:.3rem 0 0}
@@ -78,6 +88,11 @@
 .idea-archive ul{list-style:none;padding:0;margin:.5rem 0}
 .idea-archive li{display:flex;align-items:center;gap:.45rem;flex-wrap:wrap;border-bottom:1px solid #d8e5d9;padding:.3rem 0}
 .idea-archive small{color:#456556}
+@media(max-width:540px){
+ .idea-pin{width:22px;height:22px;font-size:.66rem}
+ .idea-map-label{max-width:105px;font-size:.68rem}
+ .idea-zoom-content .idea-picture-frame{width:100%}
+}
 @media(max-width:750px){.idea-lab-exercise{grid-template-columns:minmax(0,1fr)}}
 @media(max-width:540px){
  .dialogue-panel{padding:8px}

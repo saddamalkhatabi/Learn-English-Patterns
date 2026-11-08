@@ -11,8 +11,10 @@ const ideaFollowups={
  events:'How would you adapt if more people arrived?'
 };
 function renderIdeaRoleplay(scene){
+ const form=ideaPracticeForm();
  return `<div class="idea-roleplay">
   <p lang="en" dir="ltr">${H(scene.taskEn)}</p>${EP.ar(scene.taskAr)}
+  ${form?`<p>${T('جرّب استخدام هذا النمط في أحد ردودك','Try using this pattern in one of your replies')} <strong class="pattern-form" lang="en" dir="ltr">${H(form)}</strong></p>`:''}
   <h3>${T('الحوار الموجّه','Guided conversation')}</h3>
   <p>${T('أجب بالإنجليزية. بعد كل رد يظهر سؤال متابعة يساعدك على تطوير الحوار.','Reply in English. A follow-up after each reply helps you develop the conversation.')}</p>
   <div id="idea-guided-chat"></div>
@@ -88,7 +90,7 @@ function sendIdeaGuided(){
 function showIdeaDialoguePrompt(){
  const scene=currentIdeaScene(),box=$('#idea-lab-task [data-scene-ai-prompt]');
  if(!scene||!box)return;
- const examples=(scene.patterns||[]).map(pattern=>pattern.en||PILOT?.patterns.find(p=>p.id===pattern.id)?.form).filter(Boolean);
+ const examples=[ideaPracticeForm(),...(scene.patterns||[]).map(pattern=>pattern.en||PILOT?.patterns.find(p=>p.id===pattern.id)?.form)].filter(Boolean);
  box.value=`Write a practical English role-play for an Arabic-speaking A2 learner.
 Scene: ${scene.sentenceEn}
 Task: ${scene.taskEn}

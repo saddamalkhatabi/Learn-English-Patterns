@@ -2,16 +2,24 @@ const test=require('node:test'),assert=require('node:assert/strict');
 const archive=require('../public/scene-archive.json');
 const rows=[...require('../public/pilot.json').sentences,...require('../public/source-corpus.json').sentences,...require('../public/expansion-media.json').sentences];
 const visible=new Set(['assistant-reviewed','visually_reviewed','imported-unreviewed']);
-test('Idea Lab offers 100 distinct bilingual scenes and conversation art resolves by cover or turn',()=>{
+test('Idea Lab offers 200 bilingual scenes with positioned vocabulary and advanced examples',()=>{
  const fs=require('node:fs');
  const {asset,sha,webpSize}=require('../scripts/media-validation.cjs');
  const {scenes,topics}=require('../public/idea-scenes.json');
  const offline=new Map(require('../public/offline-manifest.json').media.map(row=>[row.path,row]));
- assert(scenes.length>=100);
+ assert(scenes.length>=200);
  assert.equal(new Set(scenes.map(s=>s.sha256)).size,scenes.length);
  assert.equal(new Set(scenes.map(s=>s.taskEn)).size,scenes.length);
  const patternIds=new Set([...require('../public/pilot.json').patterns,...require('../public/expansion-media.json').patterns].map(p=>p.id));
- assert(scenes.reduce((n,scene)=>n+scene.words.filter(w=>w.x!==undefined).length,0)>=600);
+ assert(scenes.reduce((n,scene)=>n+scene.words.filter(w=>w.x!==undefined).length,0)>=970);
+ for(const topic of ['routine','market','journey','classroom','team','civic','field','care','workshop','gathering']){
+  const advanced=scenes.filter(scene=>scene.topic===topic);
+  assert(advanced.length>=10,topic);
+  for(const scene of advanced.slice(0,10)){
+   assert(scene.patterns[0]?.en&&scene.patterns[0]?.ar,scene.id);
+   assert(scene.words.filter(word=>word.x!==undefined).length>=2,scene.id);
+  }
+ }
  const verify=image=>{
   const file=asset(process.cwd(),image.path);
   assert.equal(sha(file),image.sha256);

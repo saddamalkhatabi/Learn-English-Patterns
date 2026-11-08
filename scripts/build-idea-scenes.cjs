@@ -13,7 +13,10 @@ for(const line of text('production/idea-lab-labels.txt')){
 const patternIds=new Set([...require('../public/pilot.json').patterns,...require('../public/expansion-media.json').patterns].map(p=>p.id));
 const relatedByTopic={
  home:[117,9037],food:[3,4],travel:[12,4],study:[9037,13],work:[2,9037],
- neighborhood:[12,9037],nature:[117,6],health:[4,9037],craft:[10,9037],events:[6,118]
+ neighborhood:[12,9037],nature:[117,6],health:[4,9037],craft:[10,9037],events:[6,118],
+ routine:[9029,9030],market:[9126,9069],journey:[12,9097],classroom:[9138,9154],
+ team:[9139,9144],civic:[9037,9133],field:[9104,9140],care:[9126,9163],
+ workshop:[9063,9145],gathering:[9105,9132]
 };
 function point(value){
  if(!value||value==='-')return {};
@@ -30,7 +33,7 @@ for(const line of text('production/idea-lab-scenes.tsv')){
   topic={id,ar,en};topics.push(topic);number=0;
   continue;
  }
- const [en,ar,sentenceEn,sentenceAr,vocabulary,taskEn,taskAr,...extra]=line.split('|');
+ const [en,ar,sentenceEn,sentenceAr,vocabulary,taskEn,taskAr,linkedExample,...extra]=line.split('|');
  assert(topic&&en&&ar&&sentenceEn&&sentenceAr&&vocabulary&&taskEn&&taskAr&&!extra.length,line);
  const id=`idea-${topic.id}-${String(++number).padStart(2,'0')}`;
  const path=`assets/scenes/idea-lab/${id.slice(5)}.webp`;
@@ -41,19 +44,19 @@ for(const line of text('production/idea-lab-scenes.tsv')){
  const words=vocabulary.split(',').map((pair,index)=>{
   const [en,ar]=pair.split('=');
   assert(en&&ar,pair);
-  return {en,ar,kind:['object','object','action','description'][index]||'object',...point(points[index])};
+  return {en,ar,kind:en==='north'?'object':['object','object','action','description'][index]||'object',...point(points[index])};
  });
  assert(words.length>=4,id);
  if(coordinates)assert.equal(points.length,words.length,id);
- for(const entry of extras?.split(';')||[]){
+ for(const entry of extras?extras.split(';'):[]){
   const [term,ar,location]=entry.split('~');
   assert(term&&ar&&location,entry);
   const action=term.startsWith('!');
   words.push({en:action?term.slice(1):term,ar,kind:action?'action':'object',...point(location)});
  }
  const patterns=[];
- if(suggestion){
-  const [pattern,en,ar]=suggestion.split('~');
+ if(suggestion||linkedExample){
+  const [pattern,en,ar]=(suggestion||linkedExample).split('~');
   assert(patternIds.has(+pattern)&&en&&ar,id);
   patterns.push({id:+pattern,en,ar});
  }

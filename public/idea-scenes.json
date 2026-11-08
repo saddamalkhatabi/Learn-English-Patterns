@@ -50,6 +50,56 @@
       "id": "events",
       "ar": "اللقاءات والفعاليات",
       "en": "Gatherings and events"
+    },
+    {
+      "id": "routine",
+      "ar": "الروتين وإدارة المنزل",
+      "en": "Household routines"
+    },
+    {
+      "id": "market",
+      "ar": "الطلبات والخدمات",
+      "en": "Orders and services"
+    },
+    {
+      "id": "journey",
+      "ar": "التنقل وحل مشكلات السفر",
+      "en": "Travel and problem solving"
+    },
+    {
+      "id": "classroom",
+      "ar": "التعلّم والنقاش",
+      "en": "Learning and discussion"
+    },
+    {
+      "id": "team",
+      "ar": "التخطيط والعمل مع الفريق",
+      "en": "Team planning and work"
+    },
+    {
+      "id": "civic",
+      "ar": "الجيرة والخدمات العامة",
+      "en": "Neighborhood and public services"
+    },
+    {
+      "id": "field",
+      "ar": "مواقف في الهواء الطلق",
+      "en": "Outdoor situations"
+    },
+    {
+      "id": "care",
+      "ar": "المواعيد والعادات الصحية",
+      "en": "Appointments and healthy habits"
+    },
+    {
+      "id": "workshop",
+      "ar": "الأدوات والتجربة والإصلاح",
+      "en": "Tools, testing and repairs"
+    },
+    {
+      "id": "gathering",
+      "ar": "الفعاليات والضيافة",
+      "en": "Events and hospitality"
     }
   ],
   "scenes": [
@@ -2873,7 +2923,7 @@
         {
           "en": "north",
           "ar": "الشمال",
-          "kind": "description"
+          "kind": "object"
         },
         {
           "en": "stand",
@@ -7581,6 +7631,5568 @@
       "width": 500,
       "height": 300,
       "sha256": "8cae0259c67060b4b562292dda3df32936a5abfc1674de652b2b3243a378bf7d"
+    },
+    {
+      "id": "idea-routine-01",
+      "topic": "routine",
+      "en": "By the door",
+      "ar": "عند الباب قبل الخروج",
+      "sentenceEn": "A jacket hangs by the front door beside a backpack.",
+      "sentenceAr": "تتدلّى سترة قرب الباب الأمامي بجانب حقيبة ظهر.",
+      "words": [
+        {
+          "en": "jacket",
+          "ar": "سترة",
+          "kind": "object",
+          "x": 72,
+          "y": 45
+        },
+        {
+          "en": "backpack",
+          "ar": "حقيبة ظهر",
+          "kind": "object",
+          "x": 89,
+          "y": 77
+        },
+        {
+          "en": "hang",
+          "ar": "يعلّق",
+          "kind": "action",
+          "x": 67,
+          "y": 15
+        },
+        {
+          "en": "ready",
+          "ar": "جاهز",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9029,
+          "en": "Before I leave, I check that my keys are in my bag.",
+          "ar": "قبل أن أغادر، أتأكد من أن مفاتيحي في حقيبتي."
+        },
+        {
+          "id": 9030
+        }
+      ],
+      "taskEn": "Describe what you check before leaving home.",
+      "taskAr": "صِف ما تتحقق منه قبل الخروج من المنزل.",
+      "path": "assets/scenes/idea-lab/routine-01.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "568e412ac0f316e50ddb50625117778d642a5fdb558ec1eab98bdddacc767206"
+    },
+    {
+      "id": "idea-routine-02",
+      "topic": "routine",
+      "en": "Water for the day",
+      "ar": "ماء ليوم كامل",
+      "sentenceEn": "A woman is filling her water bottle at the sink.",
+      "sentenceAr": "تملأ امرأة زجاجة الماء عند الحوض.",
+      "words": [
+        {
+          "en": "water bottle",
+          "ar": "زجاجة ماء",
+          "kind": "object",
+          "x": 43,
+          "y": 60
+        },
+        {
+          "en": "tap",
+          "ar": "صنبور",
+          "kind": "object",
+          "x": 29,
+          "y": 40
+        },
+        {
+          "en": "fill",
+          "ar": "يملأ",
+          "kind": "action",
+          "x": 42,
+          "y": 42
+        },
+        {
+          "en": "reusable",
+          "ar": "قابل لإعادة الاستخدام",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9024,
+          "en": "I always fill my water bottle before I go out.",
+          "ar": "أملأ زجاجة الماء دائمًا قبل أن أخرج."
+        },
+        {
+          "id": 9029
+        },
+        {
+          "id": 9030
+        }
+      ],
+      "taskEn": "Explain how you prepare for a long day away from home.",
+      "taskAr": "اشرح كيف تستعد ليوم طويل خارج المنزل.",
+      "path": "assets/scenes/idea-lab/routine-02.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "f4500f229dbf495308bf5199b0c0c624ce7addc450791e0008323fa7f8ed7be2"
+    },
+    {
+      "id": "idea-routine-03",
+      "topic": "routine",
+      "en": "Sorting laundry",
+      "ar": "فرز الملابس",
+      "sentenceEn": "A man is sorting the laundry beside the washing machine.",
+      "sentenceAr": "يفرز رجل الملابس بجوار الغسالة.",
+      "words": [
+        {
+          "en": "washing machine",
+          "ar": "غسالة",
+          "kind": "object",
+          "x": 19,
+          "y": 53
+        },
+        {
+          "en": "laundry basket",
+          "ar": "سلة غسيل",
+          "kind": "object",
+          "x": 56,
+          "y": 88
+        },
+        {
+          "en": "sort",
+          "ar": "يفرز",
+          "kind": "action",
+          "x": 68,
+          "y": 55
+        },
+        {
+          "en": "dark",
+          "ar": "داكن",
+          "kind": "description",
+          "x": 76,
+          "y": 75
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9030,
+          "en": "After I sort the clothes, I wash the light ones first.",
+          "ar": "بعد أن أفرز الملابس، أغسل الفاتحة أولًا."
+        },
+        {
+          "id": 9029
+        }
+      ],
+      "taskEn": "Explain why two items should be washed separately.",
+      "taskAr": "اشرح لماذا ينبغي غسل قطعتين كلٌّ على حدة.",
+      "path": "assets/scenes/idea-lab/routine-03.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "7f372c90d90300dd17a7ee0ac29afb7b665ee1fc1fec598ba479e1e642a63b5d"
+    },
+    {
+      "id": "idea-routine-04",
+      "topic": "routine",
+      "en": "More room in the pantry",
+      "ar": "مساحة أكبر في خزانة الطعام",
+      "sentenceEn": "Two people are moving jars to make room on a shelf.",
+      "sentenceAr": "يحرّك شخصان مرطبانات لإفساح مجال على الرف.",
+      "words": [
+        {
+          "en": "jar",
+          "ar": "مرطبان",
+          "kind": "object",
+          "x": 26,
+          "y": 38
+        },
+        {
+          "en": "shelf",
+          "ar": "رف",
+          "kind": "object",
+          "x": 50,
+          "y": 23
+        },
+        {
+          "en": "rearrange",
+          "ar": "يعيد الترتيب",
+          "kind": "action",
+          "x": 29,
+          "y": 34
+        },
+        {
+          "en": "crowded",
+          "ar": "مزدحم",
+          "kind": "description",
+          "x": 46,
+          "y": 21
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9151,
+          "en": "Put the small jars at the front instead of hiding them behind the boxes.",
+          "ar": "ضع المرطبانات الصغيرة في المقدمة بدل إخفائها خلف العلب."
+        },
+        {
+          "id": 9029
+        },
+        {
+          "id": 9030
+        }
+      ],
+      "taskEn": "Suggest a better place for something used every day.",
+      "taskAr": "اقترح مكانًا أفضل لشيء يُستخدم كل يوم.",
+      "path": "assets/scenes/idea-lab/routine-04.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "4c4d4c03c82018b17f67c5c52570718ffeef52f76d6176d2f4884de5a7c67050"
+    },
+    {
+      "id": "idea-routine-05",
+      "topic": "routine",
+      "en": "Checking the vacuum",
+      "ar": "فحص المكنسة الكهربائية",
+      "sentenceEn": "A man is inspecting the filter of a vacuum cleaner.",
+      "sentenceAr": "يفحص رجل مرشّح مكنسة كهربائية.",
+      "words": [
+        {
+          "en": "vacuum cleaner",
+          "ar": "مكنسة كهربائية",
+          "kind": "object",
+          "x": 23,
+          "y": 79
+        },
+        {
+          "en": "filter",
+          "ar": "مرشّح",
+          "kind": "object",
+          "x": 54,
+          "y": 59
+        },
+        {
+          "en": "inspect",
+          "ar": "يفحص",
+          "kind": "action",
+          "x": 45,
+          "y": 54
+        },
+        {
+          "en": "dusty",
+          "ar": "مغبرّ",
+          "kind": "description",
+          "x": 26,
+          "y": 80
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9123,
+          "en": "It seems like the filter needs cleaning.",
+          "ar": "يبدو أن المرشّح يحتاج إلى تنظيف."
+        },
+        {
+          "id": 9029
+        },
+        {
+          "id": 9030
+        }
+      ],
+      "taskEn": "Say what may be causing the vacuum to work poorly.",
+      "taskAr": "اذكر ما قد يضعف أداء المكنسة.",
+      "path": "assets/scenes/idea-lab/routine-05.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "51d8b175ea0061d938fd5b93f1c4a0bf1914a2146c04c33bd598eb10f0bceb95"
+    },
+    {
+      "id": "idea-routine-06",
+      "topic": "routine",
+      "en": "A dripping tap",
+      "ar": "صنبور يقطر",
+      "sentenceEn": "An adult is tightening a part of a dripping tap.",
+      "sentenceAr": "يشدّ شخص جزءًا من صنبور يقطر.",
+      "words": [
+        {
+          "en": "wrench",
+          "ar": "مفتاح ربط",
+          "kind": "object",
+          "x": 43,
+          "y": 39
+        },
+        {
+          "en": "towel",
+          "ar": "منشفة",
+          "kind": "object",
+          "x": 11,
+          "y": 40
+        },
+        {
+          "en": "tighten",
+          "ar": "يشدّ",
+          "kind": "action",
+          "x": 44,
+          "y": 42
+        },
+        {
+          "en": "wet",
+          "ar": "مبتل",
+          "kind": "description",
+          "x": 35,
+          "y": 65
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9104,
+          "en": "If the tap still drips, I'll call a plumber.",
+          "ar": "إذا ظل الصنبور يقطر فسأتصل بسبّاك."
+        },
+        {
+          "id": 9029
+        },
+        {
+          "id": 9030
+        }
+      ],
+      "taskEn": "Explain what you will do if the tap still leaks.",
+      "taskAr": "اشرح ماذا ستفعل إذا استمر تسرب الصنبور.",
+      "path": "assets/scenes/idea-lab/routine-06.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "159cf423fd62b9df053bb6f64961445d8e6581ebb783101b7e31df871369b6c7"
+    },
+    {
+      "id": "idea-routine-07",
+      "topic": "routine",
+      "en": "A plant away from the sun",
+      "ar": "نبتة بعيدًا عن الشمس",
+      "sentenceEn": "A person is moving a potted plant away from the window.",
+      "sentenceAr": "يُبعد شخص نبتة في أصيص عن النافذة.",
+      "words": [
+        {
+          "en": "plant pot",
+          "ar": "أصيص",
+          "kind": "object",
+          "x": 35,
+          "y": 81
+        },
+        {
+          "en": "window",
+          "ar": "نافذة",
+          "kind": "object",
+          "x": 22,
+          "y": 34
+        },
+        {
+          "en": "move",
+          "ar": "ينقل",
+          "kind": "action",
+          "x": 39,
+          "y": 74
+        },
+        {
+          "en": "bright",
+          "ar": "ساطع",
+          "kind": "description",
+          "x": 24,
+          "y": 29
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9144,
+          "en": "I'll move the plant so that it can get gentler light.",
+          "ar": "سأنقل النبتة لتصلها إضاءة أخفّ."
+        },
+        {
+          "id": 9029
+        },
+        {
+          "id": 9030
+        }
+      ],
+      "taskEn": "Say why you are moving the plant and where it should go.",
+      "taskAr": "اذكر لماذا تنقل النبتة وأين ينبغي وضعها.",
+      "path": "assets/scenes/idea-lab/routine-07.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "6e240bed96429c93bbc360fd3903cd8c42c42258cb2eb04b471b85e806eca197"
+    },
+    {
+      "id": "idea-routine-08",
+      "topic": "routine",
+      "en": "A tray for a guest",
+      "ar": "صينية للضيف",
+      "sentenceEn": "A family is setting bread and honey on a breakfast tray.",
+      "sentenceAr": "تضع عائلة الخبز والعسل على صينية الإفطار.",
+      "words": [
+        {
+          "en": "tray",
+          "ar": "صينية",
+          "kind": "object",
+          "x": 53,
+          "y": 82
+        },
+        {
+          "en": "honey",
+          "ar": "عسل",
+          "kind": "object",
+          "x": 62,
+          "y": 79
+        },
+        {
+          "en": "serve",
+          "ar": "يقدّم",
+          "kind": "action",
+          "x": 50,
+          "y": 74
+        },
+        {
+          "en": "warm",
+          "ar": "دافئ",
+          "kind": "description",
+          "x": 48,
+          "y": 78
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9051,
+          "en": "Would you like some honey with your bread?",
+          "ar": "هل ترغب في بعض العسل مع الخبز؟"
+        },
+        {
+          "id": 9029
+        },
+        {
+          "id": 9030
+        }
+      ],
+      "taskEn": "Offer two breakfast options and ask which the guest prefers.",
+      "taskAr": "اعرض خيارين للإفطار واسأل الضيف أيهما يفضّل.",
+      "path": "assets/scenes/idea-lab/routine-08.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "669932d134e51ec0cfeaf6ecdcd85005c5469f50e85fed19cd8e7c2b5c195a28"
+    },
+    {
+      "id": "idea-routine-09",
+      "topic": "routine",
+      "en": "Planning the week",
+      "ar": "التخطيط للأسبوع",
+      "sentenceEn": "Two adults are comparing a wall calendar with a checklist.",
+      "sentenceAr": "يقارن شخصان تقويم الحائط بقائمة مهام.",
+      "words": [
+        {
+          "en": "calendar",
+          "ar": "تقويم",
+          "kind": "object",
+          "x": 43,
+          "y": 43
+        },
+        {
+          "en": "checklist",
+          "ar": "قائمة تحقق",
+          "kind": "object",
+          "x": 77,
+          "y": 46
+        },
+        {
+          "en": "compare",
+          "ar": "يقارن",
+          "kind": "action",
+          "x": 48,
+          "y": 51
+        },
+        {
+          "en": "busy",
+          "ar": "مزدحم",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9095,
+          "en": "I'm planning to finish the errands before Thursday.",
+          "ar": "أخطط لإنهاء المشاوير قبل الخميس."
+        },
+        {
+          "id": 9029
+        },
+        {
+          "id": 9030
+        }
+      ],
+      "taskEn": "Describe one task that must happen before another.",
+      "taskAr": "صِف مهمة يجب أن تسبق مهمة أخرى.",
+      "path": "assets/scenes/idea-lab/routine-09.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "cfe4ff838280cf1dea4b5a7d4da35533f5bfe162804963966b837fe4d567b2f2"
+    },
+    {
+      "id": "idea-routine-10",
+      "topic": "routine",
+      "en": "Turning in for the night",
+      "ar": "الاستعداد للنوم",
+      "sentenceEn": "A man is reaching for the switch on a bedside lamp.",
+      "sentenceAr": "يمدّ رجل يده إلى مفتاح مصباح بجانب السرير.",
+      "words": [
+        {
+          "en": "lamp",
+          "ar": "مصباح",
+          "kind": "object",
+          "x": 13,
+          "y": 43
+        },
+        {
+          "en": "book",
+          "ar": "كتاب",
+          "kind": "object",
+          "x": 31,
+          "y": 88
+        },
+        {
+          "en": "switch off",
+          "ar": "يطفئ",
+          "kind": "action",
+          "x": 19,
+          "y": 66
+        },
+        {
+          "en": "quiet",
+          "ar": "هادئ",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9103,
+          "en": "I'm about to turn off the light and go to sleep.",
+          "ar": "أنا على وشك إطفاء الضوء والخلود إلى النوم."
+        },
+        {
+          "id": 9029
+        },
+        {
+          "id": 9030
+        }
+      ],
+      "taskEn": "Describe what you do just before going to bed.",
+      "taskAr": "صِف ما تفعله قبل النوم مباشرة.",
+      "path": "assets/scenes/idea-lab/routine-10.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "a479266b97609717084d93ce75ca9c30f21c142386ca54f6a02c1702179a98ab"
+    },
+    {
+      "id": "idea-market-01",
+      "topic": "market",
+      "en": "A receipt at the checkout",
+      "ar": "طلب إيصال عند الدفع",
+      "sentenceEn": "A customer is asking for a receipt at the checkout.",
+      "sentenceAr": "يطلب زبون إيصالًا عند صندوق الدفع.",
+      "words": [
+        {
+          "en": "receipt",
+          "ar": "إيصال",
+          "kind": "object",
+          "x": 59,
+          "y": 44
+        },
+        {
+          "en": "card terminal",
+          "ar": "جهاز الدفع بالبطاقة",
+          "kind": "object",
+          "x": 57,
+          "y": 77
+        },
+        {
+          "en": "pay",
+          "ar": "يدفع",
+          "kind": "action",
+          "x": 47,
+          "y": 52
+        },
+        {
+          "en": "printed",
+          "ar": "مطبوع",
+          "kind": "description",
+          "x": 59,
+          "y": 46
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9126,
+          "en": "Could you please print a receipt for me?",
+          "ar": "هل يمكنك طباعة إيصال لي من فضلك؟"
+        },
+        {
+          "id": 9069
+        }
+      ],
+      "taskEn": "Ask politely for a copy of the receipt.",
+      "taskAr": "اطلب نسخة من الإيصال بأدب.",
+      "path": "assets/scenes/idea-lab/market-01.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "0ce8ad49ad19667dd8670f8d5898f03c06d3efa77b72cbdf9a98df9dd77e6046"
+    },
+    {
+      "id": "idea-market-02",
+      "topic": "market",
+      "en": "A fragile mug",
+      "ar": "كوب قابل للكسر",
+      "sentenceEn": "A worker is wrapping a mug in paper before boxing it.",
+      "sentenceAr": "يلفّ عامل كوبًا بالورق قبل وضعه في العلبة.",
+      "words": [
+        {
+          "en": "mug",
+          "ar": "كوب",
+          "kind": "object",
+          "x": 41,
+          "y": 60
+        },
+        {
+          "en": "box",
+          "ar": "علبة",
+          "kind": "object",
+          "x": 79,
+          "y": 62
+        },
+        {
+          "en": "wrap",
+          "ar": "يغلّف",
+          "kind": "action",
+          "x": 43,
+          "y": 50
+        },
+        {
+          "en": "fragile",
+          "ar": "قابل للكسر",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9049,
+          "en": "Let me wrap the mug so it doesn't break.",
+          "ar": "دعني أغلّف الكوب حتى لا ينكسر."
+        },
+        {
+          "id": 9126
+        },
+        {
+          "id": 9069
+        }
+      ],
+      "taskEn": "Explain what would protect the mug on the way home.",
+      "taskAr": "اشرح ما الذي يحمي الكوب في طريق العودة.",
+      "path": "assets/scenes/idea-lab/market-02.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "fdd7d7fc4078a0ede9ef35ba76ea0d73009def0bda01c5eae5453e0b1cbd97bb"
+    },
+    {
+      "id": "idea-market-03",
+      "topic": "market",
+      "en": "Two umbrellas",
+      "ar": "اختيار مظلة",
+      "sentenceEn": "A shopper is comparing an open umbrella and a folded one.",
+      "sentenceAr": "يقارن متسوّق مظلة مفتوحة بأخرى مطوية.",
+      "words": [
+        {
+          "en": "umbrella",
+          "ar": "مظلة",
+          "kind": "object",
+          "x": 70,
+          "y": 22
+        },
+        {
+          "en": "handle",
+          "ar": "مقبض",
+          "kind": "object",
+          "x": 68,
+          "y": 57
+        },
+        {
+          "en": "compare",
+          "ar": "يقارن",
+          "kind": "action",
+          "x": 63,
+          "y": 56
+        },
+        {
+          "en": "folded",
+          "ar": "مطوي",
+          "kind": "description",
+          "x": 24,
+          "y": 43
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9070,
+          "en": "Which one is better in strong wind?",
+          "ar": "أيهما أفضل في الرياح القوية؟"
+        },
+        {
+          "id": 9126
+        },
+        {
+          "id": 9069
+        }
+      ],
+      "taskEn": "Compare the umbrellas for a windy day.",
+      "taskAr": "قارن المظلتين ليوم عاصف.",
+      "path": "assets/scenes/idea-lab/market-03.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "de66601f317e4f27ce53966cb2aa44562611fc2a17d329d55efc4c00c2241b5f"
+    },
+    {
+      "id": "idea-market-04",
+      "topic": "market",
+      "en": "A repair estimate",
+      "ar": "تقدير تكلفة الإصلاح",
+      "sentenceEn": "A mechanic is showing a bicycle owner a repair estimate.",
+      "sentenceAr": "يعرض فنّي تقدير تكلفة الإصلاح على صاحب الدراجة.",
+      "words": [
+        {
+          "en": "bicycle",
+          "ar": "دراجة",
+          "kind": "object",
+          "x": 78,
+          "y": 42
+        },
+        {
+          "en": "clipboard",
+          "ar": "لوح كتابة",
+          "kind": "object",
+          "x": 57,
+          "y": 72
+        },
+        {
+          "en": "estimate",
+          "ar": "يقدّر",
+          "kind": "action",
+          "x": 52,
+          "y": 62
+        },
+        {
+          "en": "damaged",
+          "ar": "متضرّر",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9163,
+          "en": "Could you tell me whether labor is included?",
+          "ar": "هل يمكنك إخباري إن كانت أجرة العمل مشمولة؟"
+        },
+        {
+          "id": 9126
+        },
+        {
+          "id": 9069
+        }
+      ],
+      "taskEn": "Ask what the estimate includes and when the repair will be ready.",
+      "taskAr": "اسأل عمّا يشمله التقدير ومتى يجهز الإصلاح.",
+      "path": "assets/scenes/idea-lab/market-04.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "c42c8c9e6259618d822ed2e69fb279361df052146a06942f6921de5506f1fdbd"
+    },
+    {
+      "id": "idea-market-05",
+      "topic": "market",
+      "en": "Exchanging a jacket",
+      "ar": "استبدال سترة",
+      "sentenceEn": "A customer is showing a jacket to a shop assistant.",
+      "sentenceAr": "يعرض زبون سترة على موظف المتجر.",
+      "words": [
+        {
+          "en": "jacket",
+          "ar": "سترة",
+          "kind": "object",
+          "x": 43,
+          "y": 62
+        },
+        {
+          "en": "receipt",
+          "ar": "إيصال",
+          "kind": "object",
+          "x": 66,
+          "y": 62
+        },
+        {
+          "en": "exchange",
+          "ar": "يستبدل",
+          "kind": "action",
+          "x": 49,
+          "y": 54
+        },
+        {
+          "en": "smaller",
+          "ar": "أصغر",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9128,
+          "en": "Do you mind if I try a smaller size?",
+          "ar": "هل تمانع أن أجرّب مقاسًا أصغر؟"
+        },
+        {
+          "id": 9126
+        },
+        {
+          "id": 9069
+        }
+      ],
+      "taskEn": "Ask for another size and explain what is wrong with this one.",
+      "taskAr": "اطلب مقاسًا آخر واشرح مشكلة هذا المقاس.",
+      "path": "assets/scenes/idea-lab/market-05.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "b4d3bd454932b91b09013ae5dbd2807b771198c22a3fd208de242b8e444e78f7"
+    },
+    {
+      "id": "idea-market-06",
+      "topic": "market",
+      "en": "Buying rice by weight",
+      "ar": "شراء الأرز بالوزن",
+      "sentenceEn": "A grocer is using a scale to weigh a bag of rice.",
+      "sentenceAr": "يستخدم بائع ميزانًا لوزن كيس أرز.",
+      "words": [
+        {
+          "en": "scale",
+          "ar": "ميزان",
+          "kind": "object",
+          "x": 50,
+          "y": 84
+        },
+        {
+          "en": "scoop",
+          "ar": "مكيال",
+          "kind": "object",
+          "x": 11,
+          "y": 77
+        },
+        {
+          "en": "weigh",
+          "ar": "يزن",
+          "kind": "action",
+          "x": 51,
+          "y": 67
+        },
+        {
+          "en": "full",
+          "ar": "ممتلئ",
+          "kind": "description",
+          "x": 46,
+          "y": 67
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9069,
+          "en": "How much does this bag of rice cost?",
+          "ar": "كم ثمن كيس الأرز هذا؟"
+        },
+        {
+          "id": 9126
+        }
+      ],
+      "taskEn": "Ask for enough rice for a family meal.",
+      "taskAr": "اطلب كمية أرز تكفي وجبة عائلية.",
+      "path": "assets/scenes/idea-lab/market-06.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "322ae9ebd03c65ea4691e863e6c61bcf68b62344c53ff2b587de600a361bd9b9"
+    },
+    {
+      "id": "idea-market-07",
+      "topic": "market",
+      "en": "Refilling a jar",
+      "ar": "إعادة ملء مرطبان",
+      "sentenceEn": "A shopper is placing a glass jar under a dispenser.",
+      "sentenceAr": "يضع متسوّق مرطبانًا زجاجيًا أسفل موزّع.",
+      "words": [
+        {
+          "en": "glass jar",
+          "ar": "مرطبان زجاجي",
+          "kind": "object",
+          "x": 49,
+          "y": 65
+        },
+        {
+          "en": "dispenser",
+          "ar": "موزّع",
+          "kind": "object",
+          "x": 93,
+          "y": 54
+        },
+        {
+          "en": "refill",
+          "ar": "يعيد الملء",
+          "kind": "action",
+          "x": 59,
+          "y": 62
+        },
+        {
+          "en": "empty",
+          "ar": "فارغ",
+          "kind": "description",
+          "x": 49,
+          "y": 68
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9039,
+          "en": "Is it okay if I refill my own jar?",
+          "ar": "هل يمكنني إعادة ملء مرطباني؟"
+        },
+        {
+          "id": 9126
+        },
+        {
+          "id": 9069
+        }
+      ],
+      "taskEn": "Ask whether you can use a container you brought.",
+      "taskAr": "اسأل إن كان بإمكانك استخدام وعاء أحضرته.",
+      "path": "assets/scenes/idea-lab/market-07.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "2a65f4936858c2d28eb669e4e23fd563fc72fb21f22d73d910c8bf83b482512c"
+    },
+    {
+      "id": "idea-market-08",
+      "topic": "market",
+      "en": "Moving a button",
+      "ar": "نقل زر في سترة",
+      "sentenceEn": "A tailor is checking the position of a button on a jacket.",
+      "sentenceAr": "يفحص خيّاط موضع زر في سترة.",
+      "words": [
+        {
+          "en": "button",
+          "ar": "زر",
+          "kind": "object",
+          "x": 66,
+          "y": 76
+        },
+        {
+          "en": "jacket",
+          "ar": "سترة",
+          "kind": "object",
+          "x": 64,
+          "y": 83
+        },
+        {
+          "en": "sew",
+          "ar": "يخيط",
+          "kind": "action",
+          "x": 65,
+          "y": 71
+        },
+        {
+          "en": "loose",
+          "ar": "مرتخٍ",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9138,
+          "en": "Could you clarify how far you want the button moved?",
+          "ar": "هل يمكنك توضيح المسافة التي تريد نقل الزر إليها؟"
+        },
+        {
+          "id": 9126
+        },
+        {
+          "id": 9069
+        }
+      ],
+      "taskEn": "Describe where the button should go and why.",
+      "taskAr": "صِف أين يجب وضع الزر ولماذا.",
+      "path": "assets/scenes/idea-lab/market-08.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "16706aa840b6496a9a2cbb4d209bc19f89519164fc2acbac92c75c12ac4b6a3e"
+    },
+    {
+      "id": "idea-market-09",
+      "topic": "market",
+      "en": "Collecting an order",
+      "ar": "استلام طلب من المتجر",
+      "sentenceEn": "A worker is preparing a boxed order at a pickup counter.",
+      "sentenceAr": "يجهّز عامل طلبًا في صندوق عند منضدة الاستلام.",
+      "words": [
+        {
+          "en": "parcel",
+          "ar": "طرد",
+          "kind": "object",
+          "x": 62,
+          "y": 70
+        },
+        {
+          "en": "counter",
+          "ar": "منضدة",
+          "kind": "object",
+          "x": 52,
+          "y": 87
+        },
+        {
+          "en": "collect",
+          "ar": "يستلم",
+          "kind": "action",
+          "x": 48,
+          "y": 62
+        },
+        {
+          "en": "sealed",
+          "ar": "مختوم",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9106,
+          "en": "As soon as the order is ready, I'll send you a message.",
+          "ar": "حالما يجهز الطلب، سأرسل لك رسالة."
+        },
+        {
+          "id": 9126
+        },
+        {
+          "id": 9069
+        }
+      ],
+      "taskEn": "Ask when you can pick up an order placed online.",
+      "taskAr": "اسأل متى يمكنك استلام طلب قدّمته عبر الإنترنت.",
+      "path": "assets/scenes/idea-lab/market-09.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "d7d3ae3c7be07283f3780b8566060c233d57187985bf29aaab04ab912d5df35d"
+    },
+    {
+      "id": "idea-market-10",
+      "topic": "market",
+      "en": "Choosing a melon",
+      "ar": "اختيار شمّامة",
+      "sentenceEn": "Two shoppers are looking at melons on a fruit stand.",
+      "sentenceAr": "ينظر متسوّقان إلى الشمّام عند بسطة فاكهة.",
+      "words": [
+        {
+          "en": "melon",
+          "ar": "شمّامة",
+          "kind": "object",
+          "x": 48,
+          "y": 52
+        },
+        {
+          "en": "fruit stand",
+          "ar": "بسطة فاكهة",
+          "kind": "object",
+          "x": 74,
+          "y": 86
+        },
+        {
+          "en": "choose",
+          "ar": "يختار",
+          "kind": "action",
+          "x": 45,
+          "y": 51
+        },
+        {
+          "en": "ripe",
+          "ar": "ناضج",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9063,
+          "en": "How do you tell whether a melon is ripe?",
+          "ar": "كيف تعرف إن كانت الشمّامة ناضجة؟"
+        },
+        {
+          "id": 9126
+        },
+        {
+          "id": 9069
+        }
+      ],
+      "taskEn": "Ask how to tell if a melon is ripe and choose one.",
+      "taskAr": "اسأل كيف تعرف أن الشمّامة ناضجة ثم اختر واحدة.",
+      "path": "assets/scenes/idea-lab/market-10.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "c1d5eeca90b28d6051d1bb697d56ff990e581b49f7e47f870527976c5f5e4e7d"
+    },
+    {
+      "id": "idea-journey-01",
+      "topic": "journey",
+      "en": "Tickets at the train door",
+      "ar": "التذاكر عند باب القطار",
+      "sentenceEn": "A conductor is checking a passenger's ticket by a train door.",
+      "sentenceAr": "يفحص موظف القطار تذكرة راكب قرب الباب.",
+      "words": [
+        {
+          "en": "ticket",
+          "ar": "تذكرة",
+          "kind": "object",
+          "x": 45,
+          "y": 52
+        },
+        {
+          "en": "train door",
+          "ar": "باب القطار",
+          "kind": "object",
+          "x": 48,
+          "y": 28
+        },
+        {
+          "en": "check",
+          "ar": "يفحص",
+          "kind": "action",
+          "x": 54,
+          "y": 47
+        },
+        {
+          "en": "valid",
+          "ar": "ساري",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9161,
+          "en": "I wonder if this ticket is valid on the next train.",
+          "ar": "أتساءل إن كانت هذه التذكرة صالحة للقطار التالي."
+        },
+        {
+          "id": 12
+        },
+        {
+          "id": 9097
+        }
+      ],
+      "taskEn": "Ask whether this ticket is valid for the train.",
+      "taskAr": "اسأل إن كانت هذه التذكرة صالحة لهذا القطار.",
+      "path": "assets/scenes/idea-lab/journey-01.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "2fc87d0874b6389a077627192bde48f6ab67cf1befc7e3500c308cc6e2f32543"
+    },
+    {
+      "id": "idea-journey-02",
+      "topic": "journey",
+      "en": "Loading a taxi",
+      "ar": "تحميل الأمتعة في سيارة الأجرة",
+      "sentenceEn": "Two people are putting a suitcase into a taxi trunk.",
+      "sentenceAr": "يضع شخصان حقيبة سفر في صندوق سيارة أجرة.",
+      "words": [
+        {
+          "en": "suitcase",
+          "ar": "حقيبة سفر",
+          "kind": "object",
+          "x": 50,
+          "y": 63
+        },
+        {
+          "en": "trunk",
+          "ar": "صندوق سيارة",
+          "kind": "object",
+          "x": 25,
+          "y": 34
+        },
+        {
+          "en": "load",
+          "ar": "يحمّل",
+          "kind": "action",
+          "x": 48,
+          "y": 54
+        },
+        {
+          "en": "heavy",
+          "ar": "ثقيل",
+          "kind": "description",
+          "x": 50,
+          "y": 66
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9127,
+          "en": "Would you mind helping me lift this suitcase?",
+          "ar": "هل تمانع في مساعدتي على رفع هذه الحقيبة؟"
+        },
+        {
+          "id": 12
+        },
+        {
+          "id": 9097
+        }
+      ],
+      "taskEn": "Explain how many bags you have and ask for help loading them.",
+      "taskAr": "اذكر عدد حقائبك واطلب مساعدة في تحميلها.",
+      "path": "assets/scenes/idea-lab/journey-02.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "74ac155459739025818b34412eb7ad196204eb028a8ff0dd630fa5d836e23c78"
+    },
+    {
+      "id": "idea-journey-03",
+      "topic": "journey",
+      "en": "A delayed flight",
+      "ar": "رحلة جوية متأخرة",
+      "sentenceEn": "A traveler is talking to an airport agent at the counter.",
+      "sentenceAr": "يتحدث مسافر إلى موظف مطار عند المنضدة.",
+      "words": [
+        {
+          "en": "counter",
+          "ar": "منضدة",
+          "kind": "object",
+          "x": 64,
+          "y": 71
+        },
+        {
+          "en": "suitcase",
+          "ar": "حقيبة سفر",
+          "kind": "object",
+          "x": 77,
+          "y": 78
+        },
+        {
+          "en": "ask",
+          "ar": "يسأل",
+          "kind": "action",
+          "x": 46,
+          "y": 56
+        },
+        {
+          "en": "delayed",
+          "ar": "متأخّر",
+          "kind": "description",
+          "x": 61,
+          "y": 13
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9099,
+          "en": "I expect to miss my connection if this flight is delayed again.",
+          "ar": "أتوقع أن تفوتني رحلتي التالية إذا تأخرت هذه الرحلة مرة أخرى."
+        },
+        {
+          "id": 12
+        },
+        {
+          "id": 9097
+        }
+      ],
+      "taskEn": "Ask what to do if the delay makes you miss a connection.",
+      "taskAr": "اسأل عمّا يمكنك فعله إذا فوّت التأخير رحلتك التالية.",
+      "path": "assets/scenes/idea-lab/journey-03.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "6c7185883c5ec8a45a2c4197bf68867bc6a02175c8e87e881faefb3402de7559"
+    },
+    {
+      "id": "idea-journey-04",
+      "topic": "journey",
+      "en": "Getting off at the right stop",
+      "ar": "النزول في المحطة الصحيحة",
+      "sentenceEn": "A woman is stepping out of a bus with a shopping bag.",
+      "sentenceAr": "تنزل امرأة من حافلة وهي تحمل كيس مشتريات.",
+      "words": [
+        {
+          "en": "bus",
+          "ar": "حافلة",
+          "kind": "object",
+          "x": 19,
+          "y": 52
+        },
+        {
+          "en": "shopping bag",
+          "ar": "كيس مشتريات",
+          "kind": "object",
+          "x": 52,
+          "y": 75
+        },
+        {
+          "en": "step off",
+          "ar": "ينزل",
+          "kind": "action",
+          "x": 43,
+          "y": 65
+        },
+        {
+          "en": "next",
+          "ar": "تالٍ",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9075,
+          "en": "I didn't get off at the right stop.",
+          "ar": "لم أنزل في الموقف الصحيح."
+        },
+        {
+          "id": 12
+        },
+        {
+          "id": 9097
+        }
+      ],
+      "taskEn": "Explain where you got off and whether it was the right stop.",
+      "taskAr": "اذكر أين نزلت وما إذا كان ذلك هو الموقف الصحيح.",
+      "path": "assets/scenes/idea-lab/journey-04.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "ba32aae95b435b6d79fa9a1decf9c32fae25166063be40ee0a537cfbd2ec95e0"
+    },
+    {
+      "id": "idea-journey-05",
+      "topic": "journey",
+      "en": "Storing luggage at the hotel",
+      "ar": "حفظ الأمتعة في الفندق",
+      "sentenceEn": "A guest is taking a suitcase to a luggage storage room.",
+      "sentenceAr": "يأخذ نزيل حقيبة سفر إلى غرفة حفظ الأمتعة.",
+      "words": [
+        {
+          "en": "suitcase",
+          "ar": "حقيبة سفر",
+          "kind": "object",
+          "x": 54,
+          "y": 89
+        },
+        {
+          "en": "luggage tag",
+          "ar": "بطاقة أمتعة",
+          "kind": "object",
+          "x": 63,
+          "y": 34
+        },
+        {
+          "en": "store",
+          "ar": "يحفظ",
+          "kind": "action",
+          "x": 51,
+          "y": 65
+        },
+        {
+          "en": "available",
+          "ar": "متاح",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9129,
+          "en": "May I leave this suitcase here until tonight?",
+          "ar": "هل يجوز أن أترك هذه الحقيبة هنا حتى الليلة؟"
+        },
+        {
+          "id": 12
+        },
+        {
+          "id": 9097
+        }
+      ],
+      "taskEn": "Ask for a safe place to leave a bag until the evening.",
+      "taskAr": "اطلب مكانًا آمنًا لترك حقيبة حتى المساء.",
+      "path": "assets/scenes/idea-lab/journey-05.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "f4e30bcb82c70bf417281d3a95c5193d5764f0d794f4f005dfae03d9b7d381a0"
+    },
+    {
+      "id": "idea-journey-06",
+      "topic": "journey",
+      "en": "Charging at the station",
+      "ar": "شحن الهاتف في المحطة",
+      "sentenceEn": "A traveler is plugging a phone into a station charger.",
+      "sentenceAr": "يوصّل مسافر هاتفه بشاحن في المحطة.",
+      "words": [
+        {
+          "en": "charger",
+          "ar": "شاحن",
+          "kind": "object",
+          "x": 22,
+          "y": 62
+        },
+        {
+          "en": "phone",
+          "ar": "هاتف",
+          "kind": "object",
+          "x": 66,
+          "y": 73
+        },
+        {
+          "en": "plug in",
+          "ar": "يوصّل",
+          "kind": "action",
+          "x": 27,
+          "y": 65
+        },
+        {
+          "en": "low",
+          "ar": "منخفض",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9140,
+          "en": "I need to charge my phone because the battery is low.",
+          "ar": "أحتاج إلى شحن هاتفي لأن البطارية منخفضة."
+        },
+        {
+          "id": 12
+        },
+        {
+          "id": 9097
+        }
+      ],
+      "taskEn": "Explain why you need a charger before you leave.",
+      "taskAr": "اشرح لماذا تحتاج إلى شاحن قبل المغادرة.",
+      "path": "assets/scenes/idea-lab/journey-06.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "23d1929f60038182798144e00250331b75d318e0ce04b531f1ae77a87103ff6c"
+    },
+    {
+      "id": "idea-journey-07",
+      "topic": "journey",
+      "en": "A walk beside the canal",
+      "ar": "المشي بمحاذاة القناة",
+      "sentenceEn": "Two travelers are looking at a map near a canal.",
+      "sentenceAr": "ينظر مسافران إلى خريطة قرب قناة مائية.",
+      "words": [
+        {
+          "en": "map",
+          "ar": "خريطة",
+          "kind": "object",
+          "x": 11,
+          "y": 44
+        },
+        {
+          "en": "footbridge",
+          "ar": "جسر مشاة",
+          "kind": "object",
+          "x": 88,
+          "y": 35
+        },
+        {
+          "en": "follow",
+          "ar": "يتبع",
+          "kind": "action",
+          "x": 20,
+          "y": 38
+        },
+        {
+          "en": "scenic",
+          "ar": "جميل المنظر",
+          "kind": "description",
+          "x": 89,
+          "y": 50
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9120,
+          "en": "I prefer walking by the canal to taking the busy road.",
+          "ar": "أفضّل المشي بمحاذاة القناة على سلوك الطريق المزدحم."
+        },
+        {
+          "id": 12
+        },
+        {
+          "id": 9097
+        }
+      ],
+      "taskEn": "Choose between the shorter route and the route by the water.",
+      "taskAr": "اختر بين الطريق الأقصر والطريق بمحاذاة الماء.",
+      "path": "assets/scenes/idea-lab/journey-07.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "b73cf2c4a40c415e9cb2417af8da98bbfe4997cf3e585c00679e40931ba03b58"
+    },
+    {
+      "id": "idea-journey-08",
+      "topic": "journey",
+      "en": "Looking for a passport",
+      "ar": "البحث عن جواز السفر",
+      "sentenceEn": "A man is looking through a backpack on a terminal bench.",
+      "sentenceAr": "يفتّش رجل حقيبة ظهر على مقعد في صالة السفر.",
+      "words": [
+        {
+          "en": "passport",
+          "ar": "جواز سفر",
+          "kind": "object",
+          "x": 20,
+          "y": 79
+        },
+        {
+          "en": "backpack",
+          "ar": "حقيبة ظهر",
+          "kind": "object",
+          "x": 60,
+          "y": 76
+        },
+        {
+          "en": "search",
+          "ar": "يفتّش",
+          "kind": "action",
+          "x": 43,
+          "y": 48
+        },
+        {
+          "en": "missing",
+          "ar": "مفقود",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9087,
+          "en": "While I was looking through my bag, I found the boarding pass.",
+          "ar": "بينما كنت أفتّش حقيبتي، وجدت بطاقة الصعود."
+        },
+        {
+          "id": 12
+        },
+        {
+          "id": 9097
+        }
+      ],
+      "taskEn": "Retell what you were doing when you noticed something was missing.",
+      "taskAr": "احكِ ماذا كنت تفعل حين لاحظت أن شيئًا مفقودًا.",
+      "path": "assets/scenes/idea-lab/journey-08.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "4011de6232e0dfdbd14e8bed9ad00f82f5e357f440b556d0a8e4da587475c61f"
+    },
+    {
+      "id": "idea-journey-09",
+      "topic": "journey",
+      "en": "Bags on the train rack",
+      "ar": "الحقائب على رف القطار",
+      "sentenceEn": "Passengers are lifting bags onto a luggage rack.",
+      "sentenceAr": "يرفع ركاب الحقائب إلى رف الأمتعة.",
+      "words": [
+        {
+          "en": "luggage rack",
+          "ar": "رف أمتعة",
+          "kind": "object",
+          "x": 65,
+          "y": 28
+        },
+        {
+          "en": "bag",
+          "ar": "حقيبة",
+          "kind": "object",
+          "x": 57,
+          "y": 18
+        },
+        {
+          "en": "lift",
+          "ar": "يرفع",
+          "kind": "action",
+          "x": 49,
+          "y": 29
+        },
+        {
+          "en": "overhead",
+          "ar": "علوي",
+          "kind": "description",
+          "x": 60,
+          "y": 26
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9066,
+          "en": "Is there enough room for one more bag?",
+          "ar": "هل توجد مساحة كافية لحقيبة أخرى؟"
+        },
+        {
+          "id": 12
+        },
+        {
+          "id": 9097
+        }
+      ],
+      "taskEn": "Ask someone to move a bag to make room.",
+      "taskAr": "اطلب من شخص تحريك حقيبة لإفساح مساحة.",
+      "path": "assets/scenes/idea-lab/journey-09.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "63ac4436356bcffb5362a2cd5fa8d0520ef8f58690ee8cbe94cd36f6c7987315"
+    },
+    {
+      "id": "idea-journey-10",
+      "topic": "journey",
+      "en": "A ticket machine",
+      "ar": "استخدام آلة التذاكر",
+      "sentenceEn": "An attendant is showing a traveler how to use a ticket machine.",
+      "sentenceAr": "يشرح موظف لمسافر كيفية استخدام آلة التذاكر.",
+      "words": [
+        {
+          "en": "ticket machine",
+          "ar": "آلة تذاكر",
+          "kind": "object",
+          "x": 66,
+          "y": 61
+        },
+        {
+          "en": "screen",
+          "ar": "شاشة",
+          "kind": "object",
+          "x": 68,
+          "y": 57
+        },
+        {
+          "en": "press",
+          "ar": "يضغط",
+          "kind": "action",
+          "x": 72,
+          "y": 57
+        },
+        {
+          "en": "touchscreen",
+          "ar": "لمسية",
+          "kind": "description",
+          "x": 65,
+          "y": 57
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9162,
+          "en": "I wonder how this machine prints two tickets at once.",
+          "ar": "أتساءل كيف تطبع هذه الآلة تذكرتين في وقت واحد."
+        },
+        {
+          "id": 12
+        },
+        {
+          "id": 9097
+        }
+      ],
+      "taskEn": "Ask how to buy two tickets for the same destination.",
+      "taskAr": "اسأل كيف تشتري تذكرتين للوجهة نفسها.",
+      "path": "assets/scenes/idea-lab/journey-10.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "f7bded69ef42b974270aa1a28829762f26c485f3aa19efae1f2bc8ee3e1ddd7e"
+    },
+    {
+      "id": "idea-classroom-01",
+      "topic": "classroom",
+      "en": "Finding the mistake",
+      "ar": "العثور على الخطأ",
+      "sentenceEn": "Two students are reviewing a workbook together.",
+      "sentenceAr": "يراجع طالبان دفتر التمارين معًا.",
+      "words": [
+        {
+          "en": "workbook",
+          "ar": "دفتر تمارين",
+          "kind": "object",
+          "x": 60,
+          "y": 80
+        },
+        {
+          "en": "red pen",
+          "ar": "قلم أحمر",
+          "kind": "object",
+          "x": 56,
+          "y": 68
+        },
+        {
+          "en": "correct",
+          "ar": "يصحّح",
+          "kind": "action",
+          "x": 58,
+          "y": 70
+        },
+        {
+          "en": "incorrect",
+          "ar": "غير صحيح",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9171,
+          "en": "I should have checked the answer before writing it down.",
+          "ar": "كان ينبغي أن أتحقق من الإجابة قبل تدوينها."
+        },
+        {
+          "id": 9138
+        },
+        {
+          "id": 9154
+        }
+      ],
+      "taskEn": "Explain how you found the mistake and would fix it.",
+      "taskAr": "اشرح كيف عثرت على الخطأ وكيف ستصحّحه.",
+      "path": "assets/scenes/idea-lab/classroom-01.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "c4f799a930ae8e79431ca1b58346e5799b1f98f492d95eccfd36a948d045c282"
+    },
+    {
+      "id": "idea-classroom-02",
+      "topic": "classroom",
+      "en": "Sorting paper for recycling",
+      "ar": "فرز الورق لإعادة التدوير",
+      "sentenceEn": "A teacher is showing students two bins for sorting paper.",
+      "sentenceAr": "يعرض معلّم للطلاب حاويتين لفرز الورق.",
+      "words": [
+        {
+          "en": "bin",
+          "ar": "حاوية",
+          "kind": "object",
+          "x": 40,
+          "y": 62
+        },
+        {
+          "en": "used paper",
+          "ar": "ورق مستعمل",
+          "kind": "object",
+          "x": 38,
+          "y": 40
+        },
+        {
+          "en": "recycle",
+          "ar": "يعيد التدوير",
+          "kind": "action",
+          "x": 39,
+          "y": 44
+        },
+        {
+          "en": "reusable",
+          "ar": "قابل لإعادة الاستخدام",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9155,
+          "en": "Put clean paper, such as old worksheets, in this bin.",
+          "ar": "ضع الورق النظيف مثل أوراق التمارين القديمة في هذه الحاوية."
+        },
+        {
+          "id": 9138
+        },
+        {
+          "id": 9154
+        }
+      ],
+      "taskEn": "Give an example of something that belongs in each bin.",
+      "taskAr": "أعطِ مثالًا لما يوضع في كل حاوية.",
+      "path": "assets/scenes/idea-lab/classroom-02.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "279f868baf1cb5cfc77d8b1139c314b865d04aaf42efd5f566f51dd9bf531a97"
+    },
+    {
+      "id": "idea-classroom-03",
+      "topic": "classroom",
+      "en": "Old map and new map",
+      "ar": "خريطة قديمة وأخرى جديدة",
+      "sentenceEn": "A student is comparing two maps on a library table.",
+      "sentenceAr": "تقارن طالبة خريطتين على طاولة في المكتبة.",
+      "words": [
+        {
+          "en": "map",
+          "ar": "خريطة",
+          "kind": "object",
+          "x": 29,
+          "y": 72
+        },
+        {
+          "en": "table",
+          "ar": "طاولة",
+          "kind": "object",
+          "x": 57,
+          "y": 90
+        },
+        {
+          "en": "compare",
+          "ar": "يقارن",
+          "kind": "action",
+          "x": 46,
+          "y": 67
+        },
+        {
+          "en": "old",
+          "ar": "قديم",
+          "kind": "description",
+          "x": 26,
+          "y": 72
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9150,
+          "en": "While the old map shows a field, the new one shows a road.",
+          "ar": "بينما تُظهر الخريطة القديمة حقلًا، تُظهر الجديدة طريقًا."
+        },
+        {
+          "id": 9138
+        },
+        {
+          "id": 9154
+        }
+      ],
+      "taskEn": "Point out one change between the two maps.",
+      "taskAr": "حدّد تغييرًا واحدًا بين الخريطتين.",
+      "path": "assets/scenes/idea-lab/classroom-03.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "b602d392ec88323f88dcc7b8dc0051d5363888c553f7e92b50e9efd69216d8f0"
+    },
+    {
+      "id": "idea-classroom-04",
+      "topic": "classroom",
+      "en": "Taking turns at the microphone",
+      "ar": "تبادل الأدوار أمام الميكروفون",
+      "sentenceEn": "Classmates are sharing a microphone for speaking practice.",
+      "sentenceAr": "يتشارك زملاء الدراسة ميكروفونًا للتدرّب على التحدّث.",
+      "words": [
+        {
+          "en": "microphone",
+          "ar": "ميكروفون",
+          "kind": "object",
+          "x": 48,
+          "y": 45
+        },
+        {
+          "en": "desk",
+          "ar": "مكتب",
+          "kind": "object",
+          "x": 57,
+          "y": 84
+        },
+        {
+          "en": "take turns",
+          "ar": "يتبادل الأدوار",
+          "kind": "action",
+          "x": 51,
+          "y": 46
+        },
+        {
+          "en": "clear",
+          "ar": "واضح",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9159,
+          "en": "What matters is that everyone gets a turn to speak.",
+          "ar": "المهم أن يحصل الجميع على دور للتحدث."
+        },
+        {
+          "id": 9138
+        },
+        {
+          "id": 9154
+        }
+      ],
+      "taskEn": "Set a fair rule for speaking and listening.",
+      "taskAr": "ضع قاعدة عادلة للتحدث والاستماع.",
+      "path": "assets/scenes/idea-lab/classroom-04.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "b371c1844fd6d60c01441afc2048d2e740088b9c193a5d2adc1dd19a5cc990b7"
+    },
+    {
+      "id": "idea-classroom-05",
+      "topic": "classroom",
+      "en": "Borrowing a calculator",
+      "ar": "استعارة آلة حاسبة",
+      "sentenceEn": "A student is reaching for a calculator beside the worksheet.",
+      "sentenceAr": "يمدّ طالب يده إلى آلة حاسبة قرب ورقة التمارين.",
+      "words": [
+        {
+          "en": "calculator",
+          "ar": "آلة حاسبة",
+          "kind": "object",
+          "x": 45,
+          "y": 61
+        },
+        {
+          "en": "worksheet",
+          "ar": "ورقة تمارين",
+          "kind": "object",
+          "x": 67,
+          "y": 91
+        },
+        {
+          "en": "borrow",
+          "ar": "يستعير",
+          "kind": "action",
+          "x": 40,
+          "y": 63
+        },
+        {
+          "en": "spare",
+          "ar": "احتياطي",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 4,
+          "en": "Can I borrow your calculator for a minute?",
+          "ar": "هل يمكنني استعارة آلتك الحاسبة لدقيقة؟"
+        },
+        {
+          "id": 9138
+        },
+        {
+          "id": 9154
+        }
+      ],
+      "taskEn": "Ask to borrow something for just a few minutes.",
+      "taskAr": "اطلب استعارة شيء لبضع دقائق فقط.",
+      "path": "assets/scenes/idea-lab/classroom-05.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "3b4612a19b8cc1a9519e6982a770e04e85067ff7c0eefc8b6bf2afbf2e5389ed"
+    },
+    {
+      "id": "idea-classroom-06",
+      "topic": "classroom",
+      "en": "Testing a magnet",
+      "ar": "تجربة المغناطيس",
+      "sentenceEn": "A teacher is holding a magnet near metal paper clips.",
+      "sentenceAr": "يمسك معلّم مغناطيسًا قرب مشابك ورق معدنية.",
+      "words": [
+        {
+          "en": "magnet",
+          "ar": "مغناطيس",
+          "kind": "object",
+          "x": 39,
+          "y": 43
+        },
+        {
+          "en": "paper clips",
+          "ar": "مشابك ورق",
+          "kind": "object",
+          "x": 47,
+          "y": 86
+        },
+        {
+          "en": "attract",
+          "ar": "يجذب",
+          "kind": "action",
+          "x": 41,
+          "y": 55
+        },
+        {
+          "en": "metallic",
+          "ar": "معدني",
+          "kind": "description",
+          "x": 46,
+          "y": 85
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9175,
+          "en": "The closer the magnet gets, the faster the clips move.",
+          "ar": "كلما اقترب المغناطيس، تحركت المشابك أسرع."
+        },
+        {
+          "id": 9138
+        },
+        {
+          "id": 9154
+        }
+      ],
+      "taskEn": "Predict what will happen when the magnet moves closer.",
+      "taskAr": "توقّع ما سيحدث عندما يقترب المغناطيس.",
+      "path": "assets/scenes/idea-lab/classroom-06.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "c5073f53175749c46c7a50d5f6a99ef1b599352ce460639ffceefde4f6d2775b"
+    },
+    {
+      "id": "idea-classroom-07",
+      "topic": "classroom",
+      "en": "Highlighting key details",
+      "ar": "تظليل التفاصيل الأساسية",
+      "sentenceEn": "Students are marking key points on a reading passage.",
+      "sentenceAr": "يحدّد الطلاب نقاطًا مهمة في نص قراءة.",
+      "words": [
+        {
+          "en": "highlighter",
+          "ar": "قلم تظليل",
+          "kind": "object",
+          "x": 21,
+          "y": 70
+        },
+        {
+          "en": "notes",
+          "ar": "ملاحظات",
+          "kind": "object",
+          "x": 68,
+          "y": 94
+        },
+        {
+          "en": "highlight",
+          "ar": "يظلّل",
+          "kind": "action",
+          "x": 48,
+          "y": 76
+        },
+        {
+          "en": "important",
+          "ar": "مهم",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9160,
+          "en": "The reason is that this sentence gives the main idea.",
+          "ar": "السبب أن هذه الجملة تقدّم الفكرة الرئيسية."
+        },
+        {
+          "id": 9138
+        },
+        {
+          "id": 9154
+        }
+      ],
+      "taskEn": "Explain why you marked one sentence but skipped another.",
+      "taskAr": "اشرح لماذا ظلّلت جملة وتجاوزت أخرى.",
+      "path": "assets/scenes/idea-lab/classroom-07.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "9b53b24cb19b4f7992c8e9fb35f131d83d203bbccad7d90ca58dc94eb1340131"
+    },
+    {
+      "id": "idea-classroom-08",
+      "topic": "classroom",
+      "en": "A timeline on the board",
+      "ar": "خط زمني على السبورة",
+      "sentenceEn": "A student is drawing a timeline on a whiteboard.",
+      "sentenceAr": "يرسم طالب خطًا زمنيًا على سبورة بيضاء.",
+      "words": [
+        {
+          "en": "whiteboard",
+          "ar": "سبورة بيضاء",
+          "kind": "object",
+          "x": 70,
+          "y": 37
+        },
+        {
+          "en": "marker",
+          "ar": "قلم سبورة",
+          "kind": "object",
+          "x": 50,
+          "y": 50
+        },
+        {
+          "en": "draw",
+          "ar": "يرسم",
+          "kind": "action",
+          "x": 48,
+          "y": 53
+        },
+        {
+          "en": "chronological",
+          "ar": "مرتّب زمنيًا",
+          "kind": "description",
+          "x": 69,
+          "y": 37
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9174,
+          "en": "By the time the lesson began, I had drawn the timeline.",
+          "ar": "عندما بدأ الدرس، كنت قد رسمت الخط الزمني."
+        },
+        {
+          "id": 9138
+        },
+        {
+          "id": 9154
+        }
+      ],
+      "taskEn": "Use the timeline to compare the order of two past events.",
+      "taskAr": "استخدم الخط الزمني لمقارنة ترتيب حدثين في الماضي.",
+      "path": "assets/scenes/idea-lab/classroom-08.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "f3348e6ff93f9a7eac9637d841460507b88b934095017c1e4c96fda85ede882b"
+    },
+    {
+      "id": "idea-classroom-09",
+      "topic": "classroom",
+      "en": "Recording a speaking exercise",
+      "ar": "تسجيل تمرين التحدث",
+      "sentenceEn": "A tutor is helping a student record a speaking exercise.",
+      "sentenceAr": "يساعد مدرّس طالبًا على تسجيل تمرين للتحدث.",
+      "words": [
+        {
+          "en": "phone",
+          "ar": "هاتف",
+          "kind": "object",
+          "x": 88,
+          "y": 58
+        },
+        {
+          "en": "notebook",
+          "ar": "دفتر",
+          "kind": "object",
+          "x": 59,
+          "y": 83
+        },
+        {
+          "en": "record",
+          "ar": "يسجّل",
+          "kind": "action",
+          "x": 84,
+          "y": 56
+        },
+        {
+          "en": "short",
+          "ar": "قصير",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9172,
+          "en": "I could have spoken more slowly in the first recording.",
+          "ar": "كان بإمكاني التحدث ببطء أكبر في التسجيل الأول."
+        },
+        {
+          "id": 9138
+        },
+        {
+          "id": 9154
+        }
+      ],
+      "taskEn": "Explain one change you would make before recording again.",
+      "taskAr": "اشرح تغييرًا ستجريه قبل التسجيل مجددًا.",
+      "path": "assets/scenes/idea-lab/classroom-09.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "d427d2427efe918f53bd261630918f3897fd14b2cedb6315213cdfb063cd98db"
+    },
+    {
+      "id": "idea-classroom-10",
+      "topic": "classroom",
+      "en": "Desks in a circle",
+      "ar": "مكاتب على شكل دائرة",
+      "sentenceEn": "Students are moving their desks into a circle.",
+      "sentenceAr": "ينقل الطلاب مكاتبهم لترتيبها على شكل دائرة.",
+      "words": [
+        {
+          "en": "desk",
+          "ar": "مكتب",
+          "kind": "object",
+          "x": 54,
+          "y": 66
+        },
+        {
+          "en": "chair",
+          "ar": "كرسي",
+          "kind": "object",
+          "x": 46,
+          "y": 80
+        },
+        {
+          "en": "move",
+          "ar": "يحرّك",
+          "kind": "action",
+          "x": 76,
+          "y": 60
+        },
+        {
+          "en": "circular",
+          "ar": "دائري",
+          "kind": "description",
+          "x": 56,
+          "y": 70
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9153,
+          "en": "A circle not only helps us hear but also lets us see each other.",
+          "ar": "لا تساعدنا الدائرة على السماع فحسب، بل تتيح لنا رؤية بعضنا أيضًا."
+        },
+        {
+          "id": 9138
+        },
+        {
+          "id": 9154
+        }
+      ],
+      "taskEn": "Explain how a different layout can help discussion.",
+      "taskAr": "اشرح كيف يساعد ترتيب مختلف على النقاش.",
+      "path": "assets/scenes/idea-lab/classroom-10.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "2ca85e31a703c6bcfe653b03e317673dce344933b40b4f03942a985457e81c76"
+    },
+    {
+      "id": "idea-team-01",
+      "topic": "team",
+      "en": "A deadline on the board",
+      "ar": "موعد نهائي على اللوحة",
+      "sentenceEn": "Two coworkers are comparing a calendar with a planning board.",
+      "sentenceAr": "يقارن زميلان تقويمًا بلوحة تخطيط.",
+      "words": [
+        {
+          "en": "calendar",
+          "ar": "تقويم",
+          "kind": "object",
+          "x": 34,
+          "y": 68
+        },
+        {
+          "en": "planning board",
+          "ar": "لوحة تخطيط",
+          "kind": "object",
+          "x": 70,
+          "y": 46
+        },
+        {
+          "en": "confirm",
+          "ar": "يؤكّد",
+          "kind": "action",
+          "x": 41,
+          "y": 60
+        },
+        {
+          "en": "urgent",
+          "ar": "عاجل",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9139,
+          "en": "Let me know if the deadline changes again.",
+          "ar": "أخبرني إذا تغيّر الموعد النهائي مرة أخرى."
+        },
+        {
+          "id": 9144
+        }
+      ],
+      "taskEn": "Tell a colleague what you will finish if the deadline changes.",
+      "taskAr": "أخبر زميلك بما ستنهيه إذا تغيّر الموعد النهائي.",
+      "path": "assets/scenes/idea-lab/team-01.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "f33c08eca9331793f1cff0509bfb7b4fea7b00a586864797e11449f8c14c4ffe"
+    },
+    {
+      "id": "idea-team-02",
+      "topic": "team",
+      "en": "Protective equipment",
+      "ar": "معدات الوقاية",
+      "sentenceEn": "A supervisor is pointing out gloves and safety glasses.",
+      "sentenceAr": "يشير مشرف إلى القفازات ونظارات الوقاية.",
+      "words": [
+        {
+          "en": "gloves",
+          "ar": "قفازات",
+          "kind": "object",
+          "x": 76,
+          "y": 50
+        },
+        {
+          "en": "safety glasses",
+          "ar": "نظارات واقية",
+          "kind": "object",
+          "x": 51,
+          "y": 28
+        },
+        {
+          "en": "wear",
+          "ar": "يرتدي",
+          "kind": "action",
+          "x": 76,
+          "y": 58
+        },
+        {
+          "en": "protective",
+          "ar": "واقٍ",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9157,
+          "en": "Wear your safety glasses even if the job only takes a minute.",
+          "ar": "ارتدِ نظارات الوقاية حتى لو استغرق العمل دقيقة فقط."
+        },
+        {
+          "id": 9139
+        },
+        {
+          "id": 9144
+        }
+      ],
+      "taskEn": "Explain a requirement that applies even if the task is short.",
+      "taskAr": "اشرح شرطًا ينطبق حتى لو كانت المهمة قصيرة.",
+      "path": "assets/scenes/idea-lab/team-02.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "48efb8adbe5b204a5a907ce69a0c8bc6adfb75a9f312aba594bc6d82c5f10fd7"
+    },
+    {
+      "id": "idea-team-03",
+      "topic": "team",
+      "en": "Before opening the kiosk",
+      "ar": "قبل فتح الكشك",
+      "sentenceEn": "A team is reviewing a checklist beside a closed kiosk.",
+      "sentenceAr": "يراجع فريق قائمة التحقق قرب كشك مغلق.",
+      "words": [
+        {
+          "en": "kiosk",
+          "ar": "كشك",
+          "kind": "object",
+          "x": 68,
+          "y": 36
+        },
+        {
+          "en": "checklist",
+          "ar": "قائمة تحقق",
+          "kind": "object",
+          "x": 48,
+          "y": 70
+        },
+        {
+          "en": "review",
+          "ar": "يراجع",
+          "kind": "action",
+          "x": 49,
+          "y": 65
+        },
+        {
+          "en": "closed",
+          "ar": "مغلق",
+          "kind": "description",
+          "x": 69,
+          "y": 33
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9156,
+          "en": "We can't open the kiosk unless the safety check is complete.",
+          "ar": "لا يمكننا فتح الكشك إلا إذا اكتمل فحص السلامة."
+        },
+        {
+          "id": 9139
+        },
+        {
+          "id": 9144
+        }
+      ],
+      "taskEn": "Say what must be checked before customers can enter.",
+      "taskAr": "اذكر ما يجب فحصه قبل السماح للعملاء بالدخول.",
+      "path": "assets/scenes/idea-lab/team-03.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "dbfe3fbd12fff4fc76fa8efcad3a46002a81e1fe154b16783d13b696cbd0073b"
+    },
+    {
+      "id": "idea-team-04",
+      "topic": "team",
+      "en": "Directions inside the building",
+      "ar": "الاتجاهات داخل المبنى",
+      "sentenceEn": "A colleague is pointing at a building plan to guide a visitor.",
+      "sentenceAr": "يشير موظف إلى مخطط مبنى لإرشاد زائر.",
+      "words": [
+        {
+          "en": "floor plan",
+          "ar": "مخطط طابق",
+          "kind": "object",
+          "x": 63,
+          "y": 64
+        },
+        {
+          "en": "visitor",
+          "ar": "زائر",
+          "kind": "object",
+          "x": 87,
+          "y": 52
+        },
+        {
+          "en": "guide",
+          "ar": "يرشد",
+          "kind": "action",
+          "x": 53,
+          "y": 65
+        },
+        {
+          "en": "accessible",
+          "ar": "سهل الوصول",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9166,
+          "en": "This is the place where visitors collect their badges.",
+          "ar": "هذا هو المكان الذي يستلم فيه الزوار بطاقاتهم."
+        },
+        {
+          "id": 9139
+        },
+        {
+          "id": 9144
+        }
+      ],
+      "taskEn": "Use the plan to explain where visitors should go.",
+      "taskAr": "استخدم المخطط لشرح المكان الذي ينبغي للزوار التوجّه إليه.",
+      "path": "assets/scenes/idea-lab/team-04.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "4e2ff0299b208af9bd5f4f289489a60e55c28765870353214fc52e1d381a928e"
+    },
+    {
+      "id": "idea-team-05",
+      "topic": "team",
+      "en": "Fixing an invoice",
+      "ar": "تصحيح فاتورة",
+      "sentenceEn": "An office worker is checking figures on an invoice.",
+      "sentenceAr": "يتحقق موظف من أرقام في فاتورة.",
+      "words": [
+        {
+          "en": "invoice",
+          "ar": "فاتورة",
+          "kind": "object",
+          "x": 56,
+          "y": 60
+        },
+        {
+          "en": "calculator",
+          "ar": "آلة حاسبة",
+          "kind": "object",
+          "x": 86,
+          "y": 45
+        },
+        {
+          "en": "correct",
+          "ar": "يصحّح",
+          "kind": "action",
+          "x": 63,
+          "y": 76
+        },
+        {
+          "en": "incorrect",
+          "ar": "غير صحيح",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9158,
+          "en": "What I mean is that the second amount needs to be corrected.",
+          "ar": "أقصد أن المبلغ الثاني يحتاج إلى تصحيح."
+        },
+        {
+          "id": 9139
+        },
+        {
+          "id": 9144
+        }
+      ],
+      "taskEn": "Explain which figure is wrong and what you meant to enter.",
+      "taskAr": "اشرح أي رقم خاطئ وما الرقم الذي قصدت إدخاله.",
+      "path": "assets/scenes/idea-lab/team-05.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "904dad07f42a379eb9234b5a07ce3a15adf9f5af0f4cfa870117f10983868cdf"
+    },
+    {
+      "id": "idea-team-06",
+      "topic": "team",
+      "en": "Changing the meeting room",
+      "ar": "تغيير قاعة الاجتماع",
+      "sentenceEn": "Coworkers are checking the equipment in a smaller meeting room.",
+      "sentenceAr": "يفحص زملاء معدات قاعة اجتماع أصغر.",
+      "words": [
+        {
+          "en": "projector",
+          "ar": "جهاز عرض",
+          "kind": "object",
+          "x": 77,
+          "y": 75
+        },
+        {
+          "en": "chair",
+          "ar": "كرسي",
+          "kind": "object",
+          "x": 67,
+          "y": 86
+        },
+        {
+          "en": "move",
+          "ar": "ينقل",
+          "kind": "action",
+          "x": 55,
+          "y": 63
+        },
+        {
+          "en": "available",
+          "ar": "متاح",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9146,
+          "en": "Although the room is smaller, everyone can still see the screen.",
+          "ar": "رغم أن القاعة أصغر، لا يزال الجميع يستطيعون رؤية الشاشة."
+        },
+        {
+          "id": 9139
+        },
+        {
+          "id": 9144
+        }
+      ],
+      "taskEn": "Explain why the new room is usable despite being smaller.",
+      "taskAr": "اشرح لماذا تصلح القاعة الجديدة رغم صغرها.",
+      "path": "assets/scenes/idea-lab/team-06.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "e468032d63568825572e5fa5548453181cd17809efc68a3454d3e6330b311ef1"
+    },
+    {
+      "id": "idea-team-07",
+      "topic": "team",
+      "en": "Testing a monitor cable",
+      "ar": "اختبار كابل الشاشة",
+      "sentenceEn": "A technician is connecting a cable to a monitor.",
+      "sentenceAr": "يوصّل فنّي كابلًا بشاشة.",
+      "words": [
+        {
+          "en": "cable",
+          "ar": "كابل",
+          "kind": "object",
+          "x": 51,
+          "y": 69
+        },
+        {
+          "en": "monitor",
+          "ar": "شاشة",
+          "kind": "object",
+          "x": 31,
+          "y": 30
+        },
+        {
+          "en": "connect",
+          "ar": "يوصّل",
+          "kind": "action",
+          "x": 42,
+          "y": 69
+        },
+        {
+          "en": "spare",
+          "ar": "احتياطي",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9173,
+          "en": "I had already changed the cable before the screen came back on.",
+          "ar": "كنت قد بدّلت الكابل قبل أن تعمل الشاشة مجددًا."
+        },
+        {
+          "id": 9139
+        },
+        {
+          "id": 9144
+        }
+      ],
+      "taskEn": "Compare what you tried before finding the problem.",
+      "taskAr": "قارن بين ما جرّبته قبل اكتشاف المشكلة.",
+      "path": "assets/scenes/idea-lab/team-07.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "5d2f1a6bd1a1215d97957a0ebe52064ab5ca22d71c5e6b502b30a7d1714899f4"
+    },
+    {
+      "id": "idea-team-08",
+      "topic": "team",
+      "en": "A shift handover",
+      "ar": "تسليم المناوبة",
+      "sentenceEn": "Two workers are exchanging a clipboard and keys.",
+      "sentenceAr": "يتبادل عاملان لوحًا للكتابة ومفاتيح.",
+      "words": [
+        {
+          "en": "clipboard",
+          "ar": "لوح كتابة",
+          "kind": "object",
+          "x": 71,
+          "y": 64
+        },
+        {
+          "en": "keys",
+          "ar": "مفاتيح",
+          "kind": "object",
+          "x": 52,
+          "y": 46
+        },
+        {
+          "en": "hand over",
+          "ar": "يسلّم",
+          "kind": "action",
+          "x": 50,
+          "y": 46
+        },
+        {
+          "en": "incomplete",
+          "ar": "غير مكتمل",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9148,
+          "en": "I checked the first delivery, but the second one is still waiting.",
+          "ar": "فحصت الشحنة الأولى، لكن الثانية ما زالت في الانتظار."
+        },
+        {
+          "id": 9139
+        },
+        {
+          "id": 9144
+        }
+      ],
+      "taskEn": "Tell the next worker what is done and what still needs attention.",
+      "taskAr": "أخبر العامل التالي بما تم وما لا يزال يحتاج إلى متابعة.",
+      "path": "assets/scenes/idea-lab/team-08.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "33fef6a4cca19909bf98b56be5088b0dd154b4cae027b44421094e0a5d8b0de7"
+    },
+    {
+      "id": "idea-team-09",
+      "topic": "team",
+      "en": "A display ready for opening",
+      "ar": "عرض جاهز للافتتاح",
+      "sentenceEn": "A supervisor is looking at an organized display with a coworker.",
+      "sentenceAr": "ينظر مشرف مع زميل إلى عرض مرتّب.",
+      "words": [
+        {
+          "en": "display",
+          "ar": "عرض",
+          "kind": "object",
+          "x": 67,
+          "y": 56
+        },
+        {
+          "en": "supplies",
+          "ar": "مستلزمات",
+          "kind": "object",
+          "x": 69,
+          "y": 54
+        },
+        {
+          "en": "organize",
+          "ar": "يرتّب",
+          "kind": "action",
+          "x": 57,
+          "y": 52
+        },
+        {
+          "en": "neat",
+          "ar": "منظّم",
+          "kind": "description",
+          "x": 71,
+          "y": 45
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9134,
+          "en": "I appreciate how neatly you arranged the display.",
+          "ar": "أقدّر مدى الترتيب الذي نظّمت به العرض."
+        },
+        {
+          "id": 9139
+        },
+        {
+          "id": 9144
+        }
+      ],
+      "taskEn": "Tell a coworker what you appreciate about the finished work.",
+      "taskAr": "أخبر زميلك بما تقدّره في العمل المكتمل.",
+      "path": "assets/scenes/idea-lab/team-09.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "7bf2e6ddb63b84d9b08f301cd83de99895fcad78c37143383c8fbb48256f3604"
+    },
+    {
+      "id": "idea-team-10",
+      "topic": "team",
+      "en": "A damaged parcel",
+      "ar": "طرد تالف",
+      "sentenceEn": "A worker is showing a colleague damage on a cardboard box.",
+      "sentenceAr": "يُري عامل زميله تلفًا في صندوق كرتوني.",
+      "words": [
+        {
+          "en": "parcel",
+          "ar": "طرد",
+          "kind": "object",
+          "x": 55,
+          "y": 72
+        },
+        {
+          "en": "packing tape",
+          "ar": "شريط تغليف",
+          "kind": "object",
+          "x": 39,
+          "y": 88
+        },
+        {
+          "en": "report",
+          "ar": "يبلّغ",
+          "kind": "action",
+          "x": 50,
+          "y": 54
+        },
+        {
+          "en": "damaged",
+          "ar": "تالف",
+          "kind": "description",
+          "x": 44,
+          "y": 60
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9142,
+          "en": "The box is damaged, so we need to repack it.",
+          "ar": "الصندوق تالف، لذا نحتاج إلى إعادة تغليفه."
+        },
+        {
+          "id": 9139
+        },
+        {
+          "id": 9144
+        }
+      ],
+      "taskEn": "Explain what should happen to the damaged box before shipping.",
+      "taskAr": "اشرح ما ينبغي فعله بالصندوق التالف قبل الشحن.",
+      "path": "assets/scenes/idea-lab/team-10.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "9b5da521a9424adb7d7ed9acac5bacb255311dfeefa4b32860b7f6ac564a0fc1"
+    },
+    {
+      "id": "idea-civic-01",
+      "topic": "civic",
+      "en": "A shelf through the doorway",
+      "ar": "إدخال رف عبر الباب",
+      "sentenceEn": "Two neighbors are lifting a bookshelf through a doorway.",
+      "sentenceAr": "يرفع جاران رف كتب عبر مدخل.",
+      "words": [
+        {
+          "en": "bookshelf",
+          "ar": "رف كتب",
+          "kind": "object",
+          "x": 55,
+          "y": 58
+        },
+        {
+          "en": "doorway",
+          "ar": "مدخل",
+          "kind": "object",
+          "x": 82,
+          "y": 30
+        },
+        {
+          "en": "lift",
+          "ar": "يرفع",
+          "kind": "action",
+          "x": 47,
+          "y": 82
+        },
+        {
+          "en": "awkward",
+          "ar": "صعب الحمل",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9037,
+          "en": "Can you hold your end a little higher?",
+          "ar": "هل يمكنك رفع طرفك قليلًا؟"
+        },
+        {
+          "id": 9133
+        }
+      ],
+      "taskEn": "Give a short instruction so both people can lift safely.",
+      "taskAr": "أعطِ تعليمات قصيرة ليحمل الشخصان الرف بأمان.",
+      "path": "assets/scenes/idea-lab/civic-01.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "7f430f59dfce699efd83d8075c1d6956c425c0870d96577a3fc36765202b3b35"
+    },
+    {
+      "id": "idea-civic-02",
+      "topic": "civic",
+      "en": "The umbrella stand",
+      "ar": "حامل المظلات",
+      "sentenceEn": "A visitor is putting a wet umbrella in a stand near the entrance.",
+      "sentenceAr": "يضع زائر مظلة مبللة في حامل قرب المدخل.",
+      "words": [
+        {
+          "en": "umbrella",
+          "ar": "مظلة",
+          "kind": "object",
+          "x": 36,
+          "y": 69
+        },
+        {
+          "en": "stand",
+          "ar": "حامل",
+          "kind": "object",
+          "x": 27,
+          "y": 86
+        },
+        {
+          "en": "leave",
+          "ar": "يترك",
+          "kind": "action",
+          "x": 39,
+          "y": 46
+        },
+        {
+          "en": "wet",
+          "ar": "مبلل",
+          "kind": "description",
+          "x": 36,
+          "y": 71
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9054,
+          "en": "Where is the umbrella stand?",
+          "ar": "أين حامل المظلات؟"
+        },
+        {
+          "id": 9037
+        },
+        {
+          "id": 9133
+        }
+      ],
+      "taskEn": "Ask where you can leave a wet umbrella without dripping on the floor.",
+      "taskAr": "اسأل أين تترك مظلة مبللة دون أن تقطر على الأرض.",
+      "path": "assets/scenes/idea-lab/civic-02.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "7ccc2c3e1b07070702a8883de21dc6092b41555b304caadfa3178d59965f3369"
+    },
+    {
+      "id": "idea-civic-03",
+      "topic": "civic",
+      "en": "An accessible entrance",
+      "ar": "مدخل سهل الوصول",
+      "sentenceEn": "A volunteer is showing an older visitor the ramp by the entrance.",
+      "sentenceAr": "يدلّ متطوع زائرًا مسنًا على المنحدر قرب المدخل.",
+      "words": [
+        {
+          "en": "ramp",
+          "ar": "منحدر",
+          "kind": "object",
+          "x": 68,
+          "y": 71
+        },
+        {
+          "en": "railing",
+          "ar": "درابزين",
+          "kind": "object",
+          "x": 69,
+          "y": 57
+        },
+        {
+          "en": "guide",
+          "ar": "يرشد",
+          "kind": "action",
+          "x": 69,
+          "y": 45
+        },
+        {
+          "en": "accessible",
+          "ar": "سهل الوصول",
+          "kind": "description",
+          "x": 70,
+          "y": 71
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9164,
+          "en": "The person who showed me the ramp works at the center.",
+          "ar": "الشخص الذي دلّني على المنحدر يعمل في المركز."
+        },
+        {
+          "id": 9037
+        },
+        {
+          "id": 9133
+        }
+      ],
+      "taskEn": "Explain how to reach the door using the ramp.",
+      "taskAr": "اشرح كيفية الوصول إلى الباب عبر المنحدر.",
+      "path": "assets/scenes/idea-lab/civic-03.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "aae1b5dd93bce99a7b2824705f6cea005d1652f4d652da24dbb3f47ab0034ac0"
+    },
+    {
+      "id": "idea-civic-04",
+      "topic": "civic",
+      "en": "A free neighborhood shelf",
+      "ar": "رف كتب مجاني في الحي",
+      "sentenceEn": "Neighbors are putting books on a public shelf.",
+      "sentenceAr": "يضع الجيران كتبًا على رف عام.",
+      "words": [
+        {
+          "en": "bookshelf",
+          "ar": "رف كتب",
+          "kind": "object",
+          "x": 44,
+          "y": 40
+        },
+        {
+          "en": "crate",
+          "ar": "صندوق خشبي",
+          "kind": "object",
+          "x": 42,
+          "y": 93
+        },
+        {
+          "en": "arrange",
+          "ar": "يرتّب",
+          "kind": "action",
+          "x": 49,
+          "y": 47
+        },
+        {
+          "en": "free",
+          "ar": "مجاني",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9114,
+          "en": "I'm interested in adding books for young readers.",
+          "ar": "أهتم بإضافة كتب للقرّاء الصغار."
+        },
+        {
+          "id": 9037
+        },
+        {
+          "id": 9133
+        }
+      ],
+      "taskEn": "Suggest a kind of book to add and give a reason.",
+      "taskAr": "اقترح نوعًا من الكتب لإضافته واذكر السبب.",
+      "path": "assets/scenes/idea-lab/civic-04.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "a7f09d840ba609b108d13902437d93304adc62bf93779fe7a48a3f9d98cc47ff"
+    },
+    {
+      "id": "idea-civic-05",
+      "topic": "civic",
+      "en": "Borrowing a bicycle pump",
+      "ar": "استعارة مضخة دراجة",
+      "sentenceEn": "A cyclist is asking a neighbor about a bicycle pump.",
+      "sentenceAr": "يسأل راكب دراجة جاره عن مضخة.",
+      "words": [
+        {
+          "en": "pump",
+          "ar": "مضخة",
+          "kind": "object",
+          "x": 76,
+          "y": 62
+        },
+        {
+          "en": "tire",
+          "ar": "إطار",
+          "kind": "object",
+          "x": 53,
+          "y": 86
+        },
+        {
+          "en": "inflate",
+          "ar": "ينفخ",
+          "kind": "action",
+          "x": 76,
+          "y": 67
+        },
+        {
+          "en": "flat",
+          "ar": "مفرّغ من الهواء",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9041,
+          "en": "I need a pump for this flat tire.",
+          "ar": "أحتاج إلى مضخة لهذا الإطار المفرّغ من الهواء."
+        },
+        {
+          "id": 9037
+        },
+        {
+          "id": 9133
+        }
+      ],
+      "taskEn": "Explain why you need the pump and when you can return it.",
+      "taskAr": "اشرح لماذا تحتاج إلى المضخة ومتى يمكنك إعادتها.",
+      "path": "assets/scenes/idea-lab/civic-05.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "54671c46a1a5fa54b8edf8a98e090869aa07cb310d97d422fb08a4975133be3e"
+    },
+    {
+      "id": "idea-civic-06",
+      "topic": "civic",
+      "en": "Checking the delivery address",
+      "ar": "التحقق من عنوان الشحنة",
+      "sentenceEn": "A postal worker is checking a parcel label with a resident.",
+      "sentenceAr": "يفحص موظف بريد ملصق طرد مع أحد السكان.",
+      "words": [
+        {
+          "en": "parcel",
+          "ar": "طرد",
+          "kind": "object",
+          "x": 54,
+          "y": 78
+        },
+        {
+          "en": "scanner",
+          "ar": "ماسح",
+          "kind": "object",
+          "x": 45,
+          "y": 53
+        },
+        {
+          "en": "check",
+          "ar": "يتحقق",
+          "kind": "action",
+          "x": 48,
+          "y": 55
+        },
+        {
+          "en": "correct",
+          "ar": "صحيح",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9165,
+          "en": "This is the parcel that has my old address on it.",
+          "ar": "هذا هو الطرد الذي يحمل عنواني القديم."
+        },
+        {
+          "id": 9037
+        },
+        {
+          "id": 9133
+        }
+      ],
+      "taskEn": "Say which parcel is yours and ask the worker to verify the address.",
+      "taskAr": "حدّد طردك واطلب من الموظف التأكد من العنوان.",
+      "path": "assets/scenes/idea-lab/civic-06.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "bf53764c1fd8f82c9f8623976415cc1b195f73673c78207b105e797740882d68"
+    },
+    {
+      "id": "idea-civic-07",
+      "topic": "civic",
+      "en": "Water at the information table",
+      "ar": "ماء عند طاولة المعلومات",
+      "sentenceEn": "A volunteer is handing out bottles of water at an information table.",
+      "sentenceAr": "يوزّع متطوع زجاجات ماء عند طاولة المعلومات.",
+      "words": [
+        {
+          "en": "water bottle",
+          "ar": "زجاجة ماء",
+          "kind": "object",
+          "x": 42,
+          "y": 86
+        },
+        {
+          "en": "table",
+          "ar": "طاولة",
+          "kind": "object",
+          "x": 58,
+          "y": 88
+        },
+        {
+          "en": "hand out",
+          "ar": "يوزّع",
+          "kind": "action",
+          "x": 53,
+          "y": 58
+        },
+        {
+          "en": "cold",
+          "ar": "بارد",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9135,
+          "en": "You're welcome. There are more bottles on the table.",
+          "ar": "على الرحب والسعة. توجد زجاجات أخرى على الطاولة."
+        },
+        {
+          "id": 9037
+        },
+        {
+          "id": 9133
+        }
+      ],
+      "taskEn": "Offer water and respond to someone who thanks you.",
+      "taskAr": "اعرض الماء وردّ على شخص يشكرك.",
+      "path": "assets/scenes/idea-lab/civic-07.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "599dd486d3e1a127a29b93db8377d64db579fe63977f3c1681e83613459a95d3"
+    },
+    {
+      "id": "idea-civic-08",
+      "topic": "civic",
+      "en": "A key at reception",
+      "ar": "مفتاح في الاستقبال",
+      "sentenceEn": "A resident is handing a found key to a receptionist.",
+      "sentenceAr": "يسلّم أحد السكان مفتاحًا وجده إلى موظف الاستقبال.",
+      "words": [
+        {
+          "en": "key",
+          "ar": "مفتاح",
+          "kind": "object",
+          "x": 56,
+          "y": 62
+        },
+        {
+          "en": "counter",
+          "ar": "منضدة",
+          "kind": "object",
+          "x": 66,
+          "y": 79
+        },
+        {
+          "en": "return",
+          "ar": "يعيد",
+          "kind": "action",
+          "x": 54,
+          "y": 60
+        },
+        {
+          "en": "misplaced",
+          "ar": "مفقود",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9078,
+          "en": "I saw this key near the front door.",
+          "ar": "رأيت هذا المفتاح قرب الباب الأمامي."
+        },
+        {
+          "id": 9037
+        },
+        {
+          "id": 9133
+        }
+      ],
+      "taskEn": "Describe where you found the key and who might own it.",
+      "taskAr": "صِف أين وجدت المفتاح ولمن قد يعود.",
+      "path": "assets/scenes/idea-lab/civic-08.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "22c5677ca71d681a58e5f53c9643c61302570e38589596d56cb60200255776b3"
+    },
+    {
+      "id": "idea-civic-09",
+      "topic": "civic",
+      "en": "A notice for the neighborhood",
+      "ar": "إعلان لأهل الحي",
+      "sentenceEn": "Two people are deciding what to put on a bulletin board.",
+      "sentenceAr": "يقرّر شخصان ما سيعلقانه على لوحة الإعلانات.",
+      "words": [
+        {
+          "en": "bulletin board",
+          "ar": "لوحة إعلانات",
+          "kind": "object",
+          "x": 53,
+          "y": 42
+        },
+        {
+          "en": "pin",
+          "ar": "دبوس",
+          "kind": "object",
+          "x": 51,
+          "y": 41
+        },
+        {
+          "en": "post",
+          "ar": "يعلّق",
+          "kind": "action",
+          "x": 50,
+          "y": 38
+        },
+        {
+          "en": "visible",
+          "ar": "مرئي",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9118,
+          "en": "In my opinion, the notice should include a date and a place.",
+          "ar": "في رأيي، ينبغي أن يتضمن الإعلان تاريخًا ومكانًا."
+        },
+        {
+          "id": 9037
+        },
+        {
+          "id": 9133
+        }
+      ],
+      "taskEn": "Explain what information a useful notice should include.",
+      "taskAr": "اشرح ما المعلومات التي ينبغي أن يتضمنها إعلان مفيد.",
+      "path": "assets/scenes/idea-lab/civic-09.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "af85f89556123db70bc9b90f359fd4537e93248cff7c52a5fdad8f4dd2dd716b"
+    },
+    {
+      "id": "idea-civic-10",
+      "topic": "civic",
+      "en": "The bus timetable by the library",
+      "ar": "جدول الحافلات قرب المكتبة",
+      "sentenceEn": "A volunteer is showing a visitor a bus timetable.",
+      "sentenceAr": "يُري متطوع زائرًا جدول الحافلات.",
+      "words": [
+        {
+          "en": "timetable",
+          "ar": "جدول مواعيد",
+          "kind": "object",
+          "x": 69,
+          "y": 47
+        },
+        {
+          "en": "bus stop",
+          "ar": "موقف حافلة",
+          "kind": "object",
+          "x": 69,
+          "y": 38
+        },
+        {
+          "en": "point to",
+          "ar": "يشير إلى",
+          "kind": "action",
+          "x": 72,
+          "y": 49
+        },
+        {
+          "en": "last",
+          "ar": "أخير",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9097,
+          "en": "The last bus leaves at half past eight.",
+          "ar": "تغادر الحافلة الأخيرة في الثامنة والنصف."
+        },
+        {
+          "id": 9037
+        },
+        {
+          "id": 9133
+        }
+      ],
+      "taskEn": "Ask when the last bus leaves and where to wait.",
+      "taskAr": "اسأل متى تغادر الحافلة الأخيرة وأين تنتظر.",
+      "path": "assets/scenes/idea-lab/civic-10.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "0a581c432828d899756257ddd921bc3e2db6a17bbeef0145c6287063ea961e48"
+    },
+    {
+      "id": "idea-field-01",
+      "topic": "field",
+      "en": "A closed path",
+      "ar": "ممر مغلق",
+      "sentenceEn": "Hikers are looking at a map beside a barrier on the path.",
+      "sentenceAr": "ينظر متنزهون إلى خريطة بجوار حاجز على الممر.",
+      "words": [
+        {
+          "en": "barrier",
+          "ar": "حاجز",
+          "kind": "object",
+          "x": 77,
+          "y": 51
+        },
+        {
+          "en": "map",
+          "ar": "خريطة",
+          "kind": "object",
+          "x": 44,
+          "y": 59
+        },
+        {
+          "en": "change",
+          "ar": "يغيّر",
+          "kind": "action",
+          "x": 44,
+          "y": 57
+        },
+        {
+          "en": "closed",
+          "ar": "مغلق",
+          "kind": "description",
+          "x": 80,
+          "y": 54
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9104,
+          "en": "If this path is closed, I'll take the route along the ridge.",
+          "ar": "إذا كان هذا الممر مغلقًا، فسأسلك الطريق بمحاذاة حافة الجبل."
+        },
+        {
+          "id": 9140
+        }
+      ],
+      "taskEn": "Suggest what you will do if the shorter path is closed.",
+      "taskAr": "اقترح ما ستفعله إذا كان الممر الأقصر مغلقًا.",
+      "path": "assets/scenes/idea-lab/field-01.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "65134da8dbcb777136dfcca9bb36ee7ffe710d9e5eca4a5467833eeb49d46d6b"
+    },
+    {
+      "id": "idea-field-02",
+      "topic": "field",
+      "en": "Tying a tomato plant",
+      "ar": "ربط نبتة الطماطم",
+      "sentenceEn": "A gardener is tying a tomato plant to a stake.",
+      "sentenceAr": "يربط بستاني نبتة طماطم بدعامة.",
+      "words": [
+        {
+          "en": "stake",
+          "ar": "دعامة",
+          "kind": "object",
+          "x": 44,
+          "y": 45
+        },
+        {
+          "en": "twine",
+          "ar": "خيط متين",
+          "kind": "object",
+          "x": 51,
+          "y": 42
+        },
+        {
+          "en": "tie",
+          "ar": "يربط",
+          "kind": "action",
+          "x": 48,
+          "y": 39
+        },
+        {
+          "en": "tall",
+          "ar": "طويل",
+          "kind": "description",
+          "x": 40,
+          "y": 38
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9144,
+          "en": "Tie the plant loosely so that the stem can grow.",
+          "ar": "اربط النبتة برفق حتى يتمكن الساق من النمو."
+        },
+        {
+          "id": 9104
+        },
+        {
+          "id": 9140
+        }
+      ],
+      "taskEn": "Explain why the plant needs support and how you would tie it.",
+      "taskAr": "اشرح لماذا تحتاج النبتة إلى دعامة وكيف ستربطها.",
+      "path": "assets/scenes/idea-lab/field-02.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "f6af5b0eb3c7f9d6f541c78d041e5909592b56b0eddd187c0478ef9c5222eb30"
+    },
+    {
+      "id": "idea-field-03",
+      "topic": "field",
+      "en": "Measuring a garden path",
+      "ar": "قياس عرض ممر الحديقة",
+      "sentenceEn": "Volunteers are measuring the width of a garden path.",
+      "sentenceAr": "يقيس متطوعون عرض ممر في حديقة.",
+      "words": [
+        {
+          "en": "tape measure",
+          "ar": "شريط قياس",
+          "kind": "object",
+          "x": 53,
+          "y": 84
+        },
+        {
+          "en": "path",
+          "ar": "ممر",
+          "kind": "object",
+          "x": 55,
+          "y": 49
+        },
+        {
+          "en": "measure",
+          "ar": "يقيس",
+          "kind": "action",
+          "x": 29,
+          "y": 82
+        },
+        {
+          "en": "narrow",
+          "ar": "ضيّق",
+          "kind": "description",
+          "x": 55,
+          "y": 45
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9175,
+          "en": "The wider the path is, the easier it is for people to pass.",
+          "ar": "كلما اتسع الممر، سَهُل على الناس المرور."
+        },
+        {
+          "id": 9104
+        },
+        {
+          "id": 9140
+        }
+      ],
+      "taskEn": "Compare the path now with the width it needs to be.",
+      "taskAr": "قارن عرض الممر الحالي بالعرض المطلوب.",
+      "path": "assets/scenes/idea-lab/field-03.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "e64e6f1e34ec10b37a8e80f923500f3b566b58c4c2f56f6e15d00d4dc324740d"
+    },
+    {
+      "id": "idea-field-04",
+      "topic": "field",
+      "en": "Filling a bird feeder",
+      "ar": "ملء معلف الطيور",
+      "sentenceEn": "A father and child are filling a feeder with seeds.",
+      "sentenceAr": "يملأ أب وطفله معلفًا بالبذور.",
+      "words": [
+        {
+          "en": "feeder",
+          "ar": "معلف",
+          "kind": "object",
+          "x": 49,
+          "y": 49
+        },
+        {
+          "en": "seeds",
+          "ar": "بذور",
+          "kind": "object",
+          "x": 34,
+          "y": 55
+        },
+        {
+          "en": "fill",
+          "ar": "يملأ",
+          "kind": "action",
+          "x": 36,
+          "y": 52
+        },
+        {
+          "en": "small",
+          "ar": "صغير",
+          "kind": "description",
+          "x": 49,
+          "y": 53
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9152,
+          "en": "In addition to filling the feeder, we should refill the water bowl.",
+          "ar": "إضافة إلى ملء المعلف، ينبغي إعادة ملء وعاء الماء."
+        },
+        {
+          "id": 9104
+        },
+        {
+          "id": 9140
+        }
+      ],
+      "taskEn": "Describe one task for the feeder and one for the water.",
+      "taskAr": "صِف مهمة للمعلف وأخرى للماء.",
+      "path": "assets/scenes/idea-lab/field-04.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "6d6fab9ddeca9c6bea04298b3902018a614936bab732260aaee13ce5416945ee"
+    },
+    {
+      "id": "idea-field-05",
+      "topic": "field",
+      "en": "A tarp over the picnic table",
+      "ar": "غطاء فوق طاولة النزهة",
+      "sentenceEn": "An adult is tying a tarp above a picnic table.",
+      "sentenceAr": "يثبّت شخص غطاءً فوق طاولة نزهة.",
+      "words": [
+        {
+          "en": "tarp",
+          "ar": "غطاء مشمّع",
+          "kind": "object",
+          "x": 38,
+          "y": 34
+        },
+        {
+          "en": "rope",
+          "ar": "حبل",
+          "kind": "object",
+          "x": 77,
+          "y": 57
+        },
+        {
+          "en": "tie down",
+          "ar": "يثبّت بالحبال",
+          "kind": "action",
+          "x": 90,
+          "y": 36
+        },
+        {
+          "en": "windy",
+          "ar": "عاصف",
+          "kind": "description",
+          "x": 32,
+          "y": 26
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9141,
+          "en": "We covered the table because of the strong wind.",
+          "ar": "غطّينا الطاولة بسبب الرياح القوية."
+        },
+        {
+          "id": 9104
+        },
+        {
+          "id": 9140
+        }
+      ],
+      "taskEn": "Explain what changed in the weather and how you adapted.",
+      "taskAr": "اشرح ما تغيّر في الطقس وكيف تكيّفت معه.",
+      "path": "assets/scenes/idea-lab/field-05.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "17eec16ef63b2d9418f7303bc8ac7f00c164e5b78664eb835d906b6e25829db3"
+    },
+    {
+      "id": "idea-field-06",
+      "topic": "field",
+      "en": "Checking the water supply",
+      "ar": "التحقق من كمية الماء",
+      "sentenceEn": "Two hikers are checking how much water is left in a flask.",
+      "sentenceAr": "يتحقق متنزهان من كمية الماء المتبقية في قارورة.",
+      "words": [
+        {
+          "en": "flask",
+          "ar": "قارورة",
+          "kind": "object",
+          "x": 38,
+          "y": 52
+        },
+        {
+          "en": "backpack",
+          "ar": "حقيبة ظهر",
+          "kind": "object",
+          "x": 18,
+          "y": 37
+        },
+        {
+          "en": "check",
+          "ar": "يتحقق",
+          "kind": "action",
+          "x": 53,
+          "y": 48
+        },
+        {
+          "en": "empty",
+          "ar": "فارغ",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9100,
+          "en": "I might turn back if we don't have enough water.",
+          "ar": "قد أعود إذا لم يكن معنا ماء كافٍ."
+        },
+        {
+          "id": 9104
+        },
+        {
+          "id": 9140
+        }
+      ],
+      "taskEn": "Decide whether you have enough water to keep walking.",
+      "taskAr": "قرّر ما إذا كان معك ماء يكفي لمواصلة المشي.",
+      "path": "assets/scenes/idea-lab/field-06.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "77b7e26985fc68361d280696273af0f4c7521cd51cbcac83c0db2797906d483a"
+    },
+    {
+      "id": "idea-field-07",
+      "topic": "field",
+      "en": "Looking at the tide",
+      "ar": "مشاهدة المدّ",
+      "sentenceEn": "A family is looking at waves from a coastal walkway.",
+      "sentenceAr": "تنظر عائلة إلى الأمواج من ممشى ساحلي.",
+      "words": [
+        {
+          "en": "waves",
+          "ar": "أمواج",
+          "kind": "object",
+          "x": 84,
+          "y": 49
+        },
+        {
+          "en": "railing",
+          "ar": "درابزين",
+          "kind": "object",
+          "x": 71,
+          "y": 74
+        },
+        {
+          "en": "watch",
+          "ar": "يراقب",
+          "kind": "action",
+          "x": 55,
+          "y": 45
+        },
+        {
+          "en": "high",
+          "ar": "عالٍ",
+          "kind": "description",
+          "x": 86,
+          "y": 49
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9111,
+          "en": "I'm surprised that the waves are so high today.",
+          "ar": "أستغرب أن الأمواج مرتفعة إلى هذا الحد اليوم."
+        },
+        {
+          "id": 9104
+        },
+        {
+          "id": 9140
+        }
+      ],
+      "taskEn": "Describe what you can see from a safe place by the water.",
+      "taskAr": "صِف ما تراه من مكان آمن قرب الماء.",
+      "path": "assets/scenes/idea-lab/field-07.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "a87134e6c9f71c19dfa8fbfc513c04e9a7d3f1830a42eed8f488bb1b30ed9500"
+    },
+    {
+      "id": "idea-field-08",
+      "topic": "field",
+      "en": "Planting a young tree",
+      "ar": "غرس شجرة صغيرة",
+      "sentenceEn": "A person is planting a young tree beside a shovel and a bucket.",
+      "sentenceAr": "يغرس شخص شجرة صغيرة وبجواره مجرفة ودلو.",
+      "words": [
+        {
+          "en": "shovel",
+          "ar": "مجرفة",
+          "kind": "object",
+          "x": 62,
+          "y": 68
+        },
+        {
+          "en": "sapling",
+          "ar": "غرسة",
+          "kind": "object",
+          "x": 39,
+          "y": 25
+        },
+        {
+          "en": "plant",
+          "ar": "يغرس",
+          "kind": "action",
+          "x": 62,
+          "y": 62
+        },
+        {
+          "en": "young",
+          "ar": "صغير",
+          "kind": "description",
+          "x": 40,
+          "y": 31
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9105,
+          "en": "When the tree is in place, I'll water the soil.",
+          "ar": "عندما تستقر الشجرة في مكانها، سأسقي التربة."
+        },
+        {
+          "id": 9104
+        },
+        {
+          "id": 9140
+        }
+      ],
+      "taskEn": "Explain what to do first and what to do when the tree is in place.",
+      "taskAr": "اشرح ما تفعله أولًا وما تفعله بعد وضع الشجرة في مكانها.",
+      "path": "assets/scenes/idea-lab/field-08.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "a186f597484b7c57bd297694eb640da6460e65822d03303b376487e1a13917ae"
+    },
+    {
+      "id": "idea-field-09",
+      "topic": "field",
+      "en": "Marking collection points",
+      "ar": "تحديد نقاط التجميع",
+      "sentenceEn": "A volunteer is marking locations on a trail map.",
+      "sentenceAr": "يحدّد متطوع مواقع على خريطة المسار.",
+      "words": [
+        {
+          "en": "trail map",
+          "ar": "خريطة مسار",
+          "kind": "object",
+          "x": 73,
+          "y": 51
+        },
+        {
+          "en": "clipboard",
+          "ar": "لوح كتابة",
+          "kind": "object",
+          "x": 64,
+          "y": 72
+        },
+        {
+          "en": "mark",
+          "ar": "يحدّد",
+          "kind": "action",
+          "x": 74,
+          "y": 51
+        },
+        {
+          "en": "nearby",
+          "ar": "قريب",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9154,
+          "en": "Choose a place people can find easily. For example, use the spot by the signpost.",
+          "ar": "اختر مكانًا يسهل العثور عليه. مثلًا، استخدم الموضع قرب عمود اللافتة."
+        },
+        {
+          "id": 9104
+        },
+        {
+          "id": 9140
+        }
+      ],
+      "taskEn": "Give an example of a good place for a collection point.",
+      "taskAr": "أعطِ مثالًا على مكان مناسب لنقطة تجميع.",
+      "path": "assets/scenes/idea-lab/field-09.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "d5bfca7bd904d0987825c553f41db417b81f49193c1d37550c38ce46e213de97"
+    },
+    {
+      "id": "idea-field-10",
+      "topic": "field",
+      "en": "Sorting the harvest",
+      "ar": "فرز المحصول",
+      "sentenceEn": "Farmers are sorting fruit into separate crates.",
+      "sentenceAr": "يفرز مزارعون الفاكهة في صناديق منفصلة.",
+      "words": [
+        {
+          "en": "fruit crate",
+          "ar": "صندوق فاكهة",
+          "kind": "object",
+          "x": 75,
+          "y": 86
+        },
+        {
+          "en": "apple",
+          "ar": "تفاحة",
+          "kind": "object",
+          "x": 82,
+          "y": 70
+        },
+        {
+          "en": "sort",
+          "ar": "يفرز",
+          "kind": "action",
+          "x": 79,
+          "y": 77
+        },
+        {
+          "en": "bruised",
+          "ar": "مصاب بكدمات",
+          "kind": "description",
+          "x": 24,
+          "y": 70
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9147,
+          "en": "Even though this apple is bruised, we can use the good part today.",
+          "ar": "رغم أن هذه التفاحة مصابة بكدمة، يمكننا استخدام الجزء السليم اليوم."
+        },
+        {
+          "id": 9104
+        },
+        {
+          "id": 9140
+        }
+      ],
+      "taskEn": "Explain which fruit you would use today and which you would store.",
+      "taskAr": "اشرح أي فاكهة ستستخدمها اليوم وأيها ستخزّنها.",
+      "path": "assets/scenes/idea-lab/field-10.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "0c5a5a2f00309964e8737090afdb75fa1d70f2bf3a423112134c49cace20e781"
+    },
+    {
+      "id": "idea-care-01",
+      "topic": "care",
+      "en": "Moving an appointment",
+      "ar": "تغيير موعد العيادة",
+      "sentenceEn": "A patient is discussing a clinic appointment with a clerk.",
+      "sentenceAr": "يناقش مراجع موعدًا في العيادة مع الموظف.",
+      "words": [
+        {
+          "en": "appointment card",
+          "ar": "بطاقة موعد",
+          "kind": "object",
+          "x": 52,
+          "y": 82
+        },
+        {
+          "en": "calendar",
+          "ar": "تقويم",
+          "kind": "object",
+          "x": 71,
+          "y": 73
+        },
+        {
+          "en": "reschedule",
+          "ar": "يغيّر الموعد",
+          "kind": "action",
+          "x": 49,
+          "y": 69
+        },
+        {
+          "en": "available",
+          "ar": "متاح",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9126,
+          "en": "Could you please move my appointment to Thursday morning?",
+          "ar": "هل يمكنك نقل موعدي إلى صباح الخميس من فضلك؟"
+        },
+        {
+          "id": 9163
+        }
+      ],
+      "taskEn": "Ask to move your appointment and propose a time.",
+      "taskAr": "اطلب تغيير موعدك واقترح وقتًا.",
+      "path": "assets/scenes/idea-lab/care-01.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "f910a1b1aa19897367e7b337ded2481235d5ad1f554ed4f41026cb308f4df358"
+    },
+    {
+      "id": "idea-care-02",
+      "topic": "care",
+      "en": "A reminder at home",
+      "ar": "تذكير في المنزل",
+      "sentenceEn": "A man is setting a reminder beside a glass of water and a medicine box.",
+      "sentenceAr": "يضبط رجل تذكيرًا بجوار كأس ماء وعلبة دواء.",
+      "words": [
+        {
+          "en": "medicine box",
+          "ar": "علبة دواء",
+          "kind": "object",
+          "x": 50,
+          "y": 88
+        },
+        {
+          "en": "glass",
+          "ar": "كأس",
+          "kind": "object",
+          "x": 23,
+          "y": 78
+        },
+        {
+          "en": "set a reminder",
+          "ar": "يضبط تذكيرًا",
+          "kind": "action",
+          "x": 56,
+          "y": 51
+        },
+        {
+          "en": "daily",
+          "ar": "يومي",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9082,
+          "en": "I forgot to set a reminder yesterday.",
+          "ar": "نسيت ضبط التذكير أمس."
+        },
+        {
+          "id": 9126
+        },
+        {
+          "id": 9163
+        }
+      ],
+      "taskEn": "Explain why a reminder helps you remember a regular task.",
+      "taskAr": "اشرح لماذا يساعدك التذكير على تذكّر مهمة منتظمة.",
+      "path": "assets/scenes/idea-lab/care-02.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "00946dc823a4abb239980ada93e317f4e829520f2bb9914cf61ee7c5785ba692"
+    },
+    {
+      "id": "idea-care-03",
+      "topic": "care",
+      "en": "Trying reading glasses",
+      "ar": "تجربة نظارات للقراءة",
+      "sentenceEn": "A customer is comparing two pairs of reading glasses.",
+      "sentenceAr": "يقارن زبون نظارتين للقراءة.",
+      "words": [
+        {
+          "en": "reading glasses",
+          "ar": "نظارة قراءة",
+          "kind": "object",
+          "x": 55,
+          "y": 50
+        },
+        {
+          "en": "mirror",
+          "ar": "مرآة",
+          "kind": "object",
+          "x": 13,
+          "y": 61
+        },
+        {
+          "en": "try on",
+          "ar": "يجرّب ارتداء",
+          "kind": "action",
+          "x": 49,
+          "y": 53
+        },
+        {
+          "en": "comfortable",
+          "ar": "مريح",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9070,
+          "en": "Which one feels more comfortable when you look down?",
+          "ar": "أيهما يبدو أكثر راحة عندما تنظر إلى الأسفل؟"
+        },
+        {
+          "id": 9126
+        },
+        {
+          "id": 9163
+        }
+      ],
+      "taskEn": "Compare how two frames feel and choose the better one.",
+      "taskAr": "قارن شعورك عند ارتداء إطارين واختر الأنسب.",
+      "path": "assets/scenes/idea-lab/care-03.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "a1485eada6360e3b9c8c6cb9e56b48b9fe6213d4f31b7e59fa982df52006bf5a"
+    },
+    {
+      "id": "idea-care-04",
+      "topic": "care",
+      "en": "A sore wrist",
+      "ar": "ألم في المعصم",
+      "sentenceEn": "A patient is showing a physiotherapist a sore wrist.",
+      "sentenceAr": "يُري مراجع أخصائي العلاج الطبيعي معصمه المؤلم.",
+      "words": [
+        {
+          "en": "wrist",
+          "ar": "معصم",
+          "kind": "object",
+          "x": 69,
+          "y": 65
+        },
+        {
+          "en": "wrist support",
+          "ar": "دعامة معصم",
+          "kind": "object",
+          "x": 65,
+          "y": 71
+        },
+        {
+          "en": "show",
+          "ar": "يُري",
+          "kind": "action",
+          "x": 71,
+          "y": 66
+        },
+        {
+          "en": "sore",
+          "ar": "مؤلم",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9086,
+          "en": "I was carrying a heavy bag when my wrist began to hurt.",
+          "ar": "كنت أحمل حقيبة ثقيلة عندما بدأ معصمي يؤلمني."
+        },
+        {
+          "id": 9126
+        },
+        {
+          "id": 9163
+        }
+      ],
+      "taskEn": "Describe what you were doing when your wrist began to hurt.",
+      "taskAr": "صِف ما كنت تفعله عندما بدأ ألم معصمك.",
+      "path": "assets/scenes/idea-lab/care-04.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "3090c484a113a60bf59070f65e8326e5a2d41b3d1e0d03ab255ba865517d5e8e"
+    },
+    {
+      "id": "idea-care-05",
+      "topic": "care",
+      "en": "A gentle shoulder stretch",
+      "ar": "تمرين إطالة للكتف",
+      "sentenceEn": "A trainer is showing a man how to stretch his shoulder.",
+      "sentenceAr": "يُري مدرّب رجلًا كيفية إطالة عضلات كتفه.",
+      "words": [
+        {
+          "en": "shoulder",
+          "ar": "كتف",
+          "kind": "object",
+          "x": 72,
+          "y": 47
+        },
+        {
+          "en": "towel",
+          "ar": "منشفة",
+          "kind": "object",
+          "x": 46,
+          "y": 43
+        },
+        {
+          "en": "stretch",
+          "ar": "يمدّد",
+          "kind": "action",
+          "x": 69,
+          "y": 51
+        },
+        {
+          "en": "gentle",
+          "ar": "خفيف",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9138,
+          "en": "Could you clarify where my elbow should be?",
+          "ar": "هل يمكنك توضيح موضع مرفقي؟"
+        },
+        {
+          "id": 9126
+        },
+        {
+          "id": 9163
+        }
+      ],
+      "taskEn": "Ask the trainer to show the movement more slowly.",
+      "taskAr": "اطلب من المدرّب عرض الحركة ببطء أكبر.",
+      "path": "assets/scenes/idea-lab/care-05.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "2f8df706b5c1dd59e8ef8f7674516c6222542bb935b381059dcf9ea2dc68951c"
+    },
+    {
+      "id": "idea-care-06",
+      "topic": "care",
+      "en": "Finding the lift",
+      "ar": "العثور على المصعد",
+      "sentenceEn": "A visitor is looking for the lift at a clinic.",
+      "sentenceAr": "يبحث زائر عن المصعد في عيادة.",
+      "words": [
+        {
+          "en": "lift",
+          "ar": "مصعد",
+          "kind": "object",
+          "x": 77,
+          "y": 45
+        },
+        {
+          "en": "sign",
+          "ar": "لافتة",
+          "kind": "object",
+          "x": 52,
+          "y": 44
+        },
+        {
+          "en": "look for",
+          "ar": "يبحث عن",
+          "kind": "action",
+          "x": 47,
+          "y": 40
+        },
+        {
+          "en": "nearby",
+          "ar": "قريب",
+          "kind": "description",
+          "x": 76,
+          "y": 47
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9125,
+          "en": "Excuse me, which lift goes to the second floor?",
+          "ar": "عذرًا، أي مصعد يصعد إلى الطابق الثاني؟"
+        },
+        {
+          "id": 9126
+        },
+        {
+          "id": 9163
+        }
+      ],
+      "taskEn": "Ask how to reach another floor without using the stairs.",
+      "taskAr": "اسأل كيف تصل إلى طابق آخر دون استخدام الدرج.",
+      "path": "assets/scenes/idea-lab/care-06.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "eee5c0b41541829333b18e7a6b63467d55fdb73cc80164411f93ce1c7e787afd"
+    },
+    {
+      "id": "idea-care-07",
+      "topic": "care",
+      "en": "Packing a cooler bag",
+      "ar": "تجهيز حقيبة مبردة",
+      "sentenceEn": "An adult is putting lunch and a bottle of water in an insulated bag.",
+      "sentenceAr": "يضع شخص الغداء وزجاجة ماء في حقيبة عازلة.",
+      "words": [
+        {
+          "en": "cooler bag",
+          "ar": "حقيبة مبردة",
+          "kind": "object",
+          "x": 49,
+          "y": 73
+        },
+        {
+          "en": "ice pack",
+          "ar": "كيس تبريد",
+          "kind": "object",
+          "x": 51,
+          "y": 67
+        },
+        {
+          "en": "pack",
+          "ar": "يعبّئ",
+          "kind": "action",
+          "x": 42,
+          "y": 56
+        },
+        {
+          "en": "insulated",
+          "ar": "عازل",
+          "kind": "description",
+          "x": 53,
+          "y": 72
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9145,
+          "en": "I packed an ice pack to keep the food cool.",
+          "ar": "وضعت كيس تبريد لإبقاء الطعام باردًا."
+        },
+        {
+          "id": 9126
+        },
+        {
+          "id": 9163
+        }
+      ],
+      "taskEn": "Explain how you keep food and water cool until lunch.",
+      "taskAr": "اشرح كيف تُبقي الطعام والماء باردين حتى وقت الغداء.",
+      "path": "assets/scenes/idea-lab/care-07.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "b503101eb2a25a3f79cc2172297d1468a8db1fed7dd2325a2d4a890c6459d191"
+    },
+    {
+      "id": "idea-care-08",
+      "topic": "care",
+      "en": "Checking the prescription",
+      "ar": "التحقق من الوصفة الطبية",
+      "sentenceEn": "A pharmacist is checking a prescription before handing over a box.",
+      "sentenceAr": "يفحص صيدلي وصفة قبل تسليم علبة.",
+      "words": [
+        {
+          "en": "prescription",
+          "ar": "وصفة طبية",
+          "kind": "object",
+          "x": 63,
+          "y": 73
+        },
+        {
+          "en": "medicine box",
+          "ar": "علبة دواء",
+          "kind": "object",
+          "x": 66,
+          "y": 81
+        },
+        {
+          "en": "check",
+          "ar": "يتحقق",
+          "kind": "action",
+          "x": 59,
+          "y": 68
+        },
+        {
+          "en": "printed",
+          "ar": "مطبوع",
+          "kind": "description",
+          "x": 60,
+          "y": 72
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9163,
+          "en": "Could you tell me whether the directions are printed on the box?",
+          "ar": "هل يمكنك إخباري إن كانت التعليمات مطبوعة على العلبة؟"
+        },
+        {
+          "id": 9126
+        }
+      ],
+      "taskEn": "Practise asking a pharmacist to explain the written directions.",
+      "taskAr": "تدرّب على طلب شرح التعليمات المكتوبة من الصيدلي.",
+      "path": "assets/scenes/idea-lab/care-08.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "3cfcaea61d4b25a40c94e35f9250497bf1b3abeb0722962cd34fafd846dffa6a"
+    },
+    {
+      "id": "idea-care-09",
+      "topic": "care",
+      "en": "Washing hands at the sink",
+      "ar": "غسل اليدين عند الحوض",
+      "sentenceEn": "A parent is showing a child how to wash their hands.",
+      "sentenceAr": "يُري أحد الوالدين طفلًا طريقة غسل يديه.",
+      "words": [
+        {
+          "en": "soap",
+          "ar": "صابون",
+          "kind": "object",
+          "x": 89,
+          "y": 87
+        },
+        {
+          "en": "sink",
+          "ar": "حوض",
+          "kind": "object",
+          "x": 72,
+          "y": 91
+        },
+        {
+          "en": "rinse",
+          "ar": "يشطف",
+          "kind": "action",
+          "x": 53,
+          "y": 74
+        },
+        {
+          "en": "clean",
+          "ar": "نظيف",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9030,
+          "en": "After I rinse my hands, I dry them with a clean towel.",
+          "ar": "بعد أن أشطف يديّ، أجفّفهما بمنشفة نظيفة."
+        },
+        {
+          "id": 9126
+        },
+        {
+          "id": 9163
+        }
+      ],
+      "taskEn": "Explain the steps in order to someone who is learning.",
+      "taskAr": "اشرح الخطوات بالترتيب لشخص يتعلّمها.",
+      "path": "assets/scenes/idea-lab/care-09.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "37f89e3e28fc36064a121ef62f0e10417e615dbe3d6e95d7423e5769b53ea539"
+    },
+    {
+      "id": "idea-care-10",
+      "topic": "care",
+      "en": "A rest in the shade",
+      "ar": "استراحة في الظل",
+      "sentenceEn": "Joggers are pausing by a bench in the shade.",
+      "sentenceAr": "يتوقف عدّاؤون قرب مقعد في الظل.",
+      "words": [
+        {
+          "en": "bench",
+          "ar": "مقعد",
+          "kind": "object",
+          "x": 57,
+          "y": 66
+        },
+        {
+          "en": "water bottle",
+          "ar": "زجاجة ماء",
+          "kind": "object",
+          "x": 31,
+          "y": 64
+        },
+        {
+          "en": "rest",
+          "ar": "يستريح",
+          "kind": "action",
+          "x": 37,
+          "y": 42
+        },
+        {
+          "en": "shaded",
+          "ar": "مظلّل",
+          "kind": "description",
+          "x": 55,
+          "y": 76
+        }
+      ],
+      "patterns": [
+        {
+          "id": 7,
+          "en": "I feel like resting here for a few minutes.",
+          "ar": "أرغب في الاستراحة هنا بضع دقائق."
+        },
+        {
+          "id": 9126
+        },
+        {
+          "id": 9163
+        }
+      ],
+      "taskEn": "Offer a rest and ask whether your partner wants to continue.",
+      "taskAr": "اقترح استراحة واسأل رفيقك إن كان يريد المتابعة.",
+      "path": "assets/scenes/idea-lab/care-10.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "be1ab8c5781b3ffd691f4aec36125f28ed5b9d6334c31a4fafdfbb4e0983b88c"
+    },
+    {
+      "id": "idea-workshop-01",
+      "topic": "workshop",
+      "en": "Marking before cutting",
+      "ar": "وضع علامة قبل القص",
+      "sentenceEn": "A carpenter is marking a board with a pencil.",
+      "sentenceAr": "يضع نجّار علامة على لوح بقلم رصاص.",
+      "words": [
+        {
+          "en": "board",
+          "ar": "لوح",
+          "kind": "object",
+          "x": 55,
+          "y": 87
+        },
+        {
+          "en": "clamp",
+          "ar": "مِشبك",
+          "kind": "object",
+          "x": 84,
+          "y": 78
+        },
+        {
+          "en": "mark",
+          "ar": "يضع علامة",
+          "kind": "action",
+          "x": 38,
+          "y": 80
+        },
+        {
+          "en": "straight",
+          "ar": "مستقيم",
+          "kind": "description",
+          "x": 64,
+          "y": 88
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9047,
+          "en": "You should check the mark before you cut the board.",
+          "ar": "ينبغي أن تتحقق من العلامة قبل قطع اللوح."
+        },
+        {
+          "id": 9063
+        },
+        {
+          "id": 9145
+        }
+      ],
+      "taskEn": "Give an instruction about what to check before cutting.",
+      "taskAr": "أعطِ تعليمات عمّا ينبغي التحقق منه قبل القص.",
+      "path": "assets/scenes/idea-lab/workshop-01.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "10828b4573548da78162d86a0a7305d418d6a8f0b301cac699886f06af8855bc"
+    },
+    {
+      "id": "idea-workshop-02",
+      "topic": "workshop",
+      "en": "Checking tire pressure",
+      "ar": "فحص ضغط الإطار",
+      "sentenceEn": "A mechanic is checking a bicycle tire with a gauge.",
+      "sentenceAr": "يفحص فنّي إطار دراجة بمقياس ضغط.",
+      "words": [
+        {
+          "en": "pressure gauge",
+          "ar": "مقياس ضغط",
+          "kind": "object",
+          "x": 51,
+          "y": 68
+        },
+        {
+          "en": "tire",
+          "ar": "إطار",
+          "kind": "object",
+          "x": 21,
+          "y": 55
+        },
+        {
+          "en": "inflate",
+          "ar": "ينفخ",
+          "kind": "action",
+          "x": 54,
+          "y": 73
+        },
+        {
+          "en": "firm",
+          "ar": "متماسك",
+          "kind": "description",
+          "x": 29,
+          "y": 47
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9063,
+          "en": "How do you check the pressure in a bicycle tire?",
+          "ar": "كيف تتحقق من ضغط إطار الدراجة؟"
+        },
+        {
+          "id": 9145
+        }
+      ],
+      "taskEn": "Describe what you will check if the tire feels soft again.",
+      "taskAr": "صِف ما ستفحصه إن أصبح الإطار لينًا مرة أخرى.",
+      "path": "assets/scenes/idea-lab/workshop-02.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "ad773513a04e625f12fa16c9c91d5d51cf42a1ea849d86f42c4aa7a1f4c3f2dc"
+    },
+    {
+      "id": "idea-workshop-03",
+      "topic": "workshop",
+      "en": "A cracked bowl",
+      "ar": "وعاء متشقّق",
+      "sentenceEn": "A potter is examining a crack in a clay bowl.",
+      "sentenceAr": "يفحص خزّاف شقًا في وعاء فخاري.",
+      "words": [
+        {
+          "en": "clay bowl",
+          "ar": "وعاء فخاري",
+          "kind": "object",
+          "x": 62,
+          "y": 65
+        },
+        {
+          "en": "crack",
+          "ar": "شق",
+          "kind": "object",
+          "x": 32,
+          "y": 59
+        },
+        {
+          "en": "examine",
+          "ar": "يفحص",
+          "kind": "action",
+          "x": 49,
+          "y": 55
+        },
+        {
+          "en": "cracked",
+          "ar": "متشقّق",
+          "kind": "description",
+          "x": 31,
+          "y": 59
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9036,
+          "en": "I can't serve soup in this cracked bowl.",
+          "ar": "لا أستطيع تقديم الحساء في هذا الوعاء المتشقّق."
+        },
+        {
+          "id": 9063
+        },
+        {
+          "id": 9145
+        }
+      ],
+      "taskEn": "Explain why the bowl cannot be used for serving.",
+      "taskAr": "اشرح لماذا لا يمكن استخدام الوعاء للتقديم.",
+      "path": "assets/scenes/idea-lab/workshop-03.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "f87b86fc7a4aec9c2c464576802fa7e4a4949c3c062c5e3916663d21578c7b8d"
+    },
+    {
+      "id": "idea-workshop-04",
+      "topic": "workshop",
+      "en": "Testing a paper bridge with coins",
+      "ar": "اختبار جسر ورقي بقطع نقدية",
+      "sentenceEn": "Two makers are placing coins on a paper bridge.",
+      "sentenceAr": "يضع شخصان قطعًا نقدية على جسر ورقي.",
+      "words": [
+        {
+          "en": "paper bridge",
+          "ar": "جسر ورقي",
+          "kind": "object",
+          "x": 42,
+          "y": 81
+        },
+        {
+          "en": "coin",
+          "ar": "قطعة نقدية",
+          "kind": "object",
+          "x": 38,
+          "y": 70
+        },
+        {
+          "en": "test",
+          "ar": "يختبر",
+          "kind": "action",
+          "x": 38,
+          "y": 61
+        },
+        {
+          "en": "strong",
+          "ar": "قوي",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9068,
+          "en": "How many coins can the bridge hold?",
+          "ar": "كم قطعة نقدية يستطيع الجسر حملها؟"
+        },
+        {
+          "id": 9063
+        },
+        {
+          "id": 9145
+        }
+      ],
+      "taskEn": "Predict how many coins the bridge will hold before it bends.",
+      "taskAr": "توقّع كم قطعة نقدية سيحملها الجسر قبل أن ينحني.",
+      "path": "assets/scenes/idea-lab/workshop-04.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "4da7418683f3e182aefd96ebca46ca584560544d4b1bce13537d50f103866ab4"
+    },
+    {
+      "id": "idea-workshop-05",
+      "topic": "workshop",
+      "en": "A repaired phone",
+      "ar": "هاتف بعد الإصلاح",
+      "sentenceEn": "A technician is plugging a charger into a repaired phone.",
+      "sentenceAr": "يوصّل فنّي شاحنًا بهاتف بعد إصلاحه.",
+      "words": [
+        {
+          "en": "charger",
+          "ar": "شاحن",
+          "kind": "object",
+          "x": 42,
+          "y": 76
+        },
+        {
+          "en": "phone",
+          "ar": "هاتف",
+          "kind": "object",
+          "x": 58,
+          "y": 63
+        },
+        {
+          "en": "plug in",
+          "ar": "يوصّل",
+          "kind": "action",
+          "x": 46,
+          "y": 74
+        },
+        {
+          "en": "repaired",
+          "ar": "مُصلح",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9089,
+          "en": "I'll check that the phone charges before I return it.",
+          "ar": "سأتحقق من أن الهاتف يشحن قبل إعادته."
+        },
+        {
+          "id": 9063
+        },
+        {
+          "id": 9145
+        }
+      ],
+      "taskEn": "Say what you will test before returning the phone.",
+      "taskAr": "اذكر ما ستختبره قبل تسليم الهاتف.",
+      "path": "assets/scenes/idea-lab/workshop-05.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "68c15c3165ebb0ecf40ffb8f79d08bf602d89eebb52bee4b440469b3501b6ff8"
+    },
+    {
+      "id": "idea-workshop-06",
+      "topic": "workshop",
+      "en": "Comparing shoe soles",
+      "ar": "مقارنة نعال الأحذية",
+      "sentenceEn": "A cobbler is comparing two shoe soles at the counter.",
+      "sentenceAr": "يقارن إسكافي نعلَي حذاء عند المنضدة.",
+      "words": [
+        {
+          "en": "sole",
+          "ar": "نعل",
+          "kind": "object",
+          "x": 60,
+          "y": 55
+        },
+        {
+          "en": "needle",
+          "ar": "إبرة",
+          "kind": "object"
+        },
+        {
+          "en": "compare",
+          "ar": "يقارن",
+          "kind": "action",
+          "x": 54,
+          "y": 57
+        },
+        {
+          "en": "durable",
+          "ar": "متين",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9169,
+          "en": "If I were walking a long distance, I would choose the thicker sole.",
+          "ar": "لو كنت سأمشي مسافة طويلة، لاخترت النعل الأكثر سماكة."
+        },
+        {
+          "id": 9063
+        },
+        {
+          "id": 9145
+        }
+      ],
+      "taskEn": "Explain which sole you would pick for walking and why.",
+      "taskAr": "اشرح أي نعل ستختار للمشي ولماذا.",
+      "path": "assets/scenes/idea-lab/workshop-06.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "b92e33cef0407d6ae8c292e79872cb5e8aa6805c6abc6a5d753b101f56acff13"
+    },
+    {
+      "id": "idea-workshop-07",
+      "topic": "workshop",
+      "en": "Pinning a hem",
+      "ar": "تثبيت حاشية الثوب",
+      "sentenceEn": "A tailor is pinning a hem on a garment laid flat on a table.",
+      "sentenceAr": "يثبّت خيّاط حاشية ثوب ممدود على طاولة.",
+      "words": [
+        {
+          "en": "hem",
+          "ar": "حاشية",
+          "kind": "object",
+          "x": 55,
+          "y": 79
+        },
+        {
+          "en": "pin",
+          "ar": "دبوس",
+          "kind": "object",
+          "x": 46,
+          "y": 78
+        },
+        {
+          "en": "pin in place",
+          "ar": "يثبّت بالدبابيس",
+          "kind": "action",
+          "x": 49,
+          "y": 78
+        },
+        {
+          "en": "even",
+          "ar": "متساوٍ",
+          "kind": "description",
+          "x": 57,
+          "y": 82
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9132,
+          "en": "How about pinning both sides before you sew?",
+          "ar": "ما رأيك بتثبيت الجانبين بالدبابيس قبل الخياطة؟"
+        },
+        {
+          "id": 9063
+        },
+        {
+          "id": 9145
+        }
+      ],
+      "taskEn": "Explain how to keep the hem even all the way across.",
+      "taskAr": "اشرح كيف تحافظ على تساوي الحاشية على امتدادها.",
+      "path": "assets/scenes/idea-lab/workshop-07.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "82e58cbf51d78e810866cc9617167a31a0c6663355443b29177bc4fdbb24cd3d"
+    },
+    {
+      "id": "idea-workshop-08",
+      "topic": "workshop",
+      "en": "Is the shelf level?",
+      "ar": "هل الرف مستوٍ؟",
+      "sentenceEn": "An adult is checking a wall shelf with a spirit level.",
+      "sentenceAr": "يفحص شخص رفًا جداريًا بميزان استواء.",
+      "words": [
+        {
+          "en": "spirit level",
+          "ar": "ميزان استواء",
+          "kind": "object",
+          "x": 46,
+          "y": 38
+        },
+        {
+          "en": "bracket",
+          "ar": "دعامة",
+          "kind": "object",
+          "x": 57,
+          "y": 64
+        },
+        {
+          "en": "check",
+          "ar": "يفحص",
+          "kind": "action",
+          "x": 62,
+          "y": 41
+        },
+        {
+          "en": "level",
+          "ar": "مستوٍ",
+          "kind": "description",
+          "x": 44,
+          "y": 57
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9170,
+          "en": "If the shelf had tilted, I would have moved the lower bracket up.",
+          "ar": "لو مال الرف، لرفعت الدعامة المنخفضة."
+        },
+        {
+          "id": 9063
+        },
+        {
+          "id": 9145
+        }
+      ],
+      "taskEn": "Explain what you would have changed if the shelf had tilted.",
+      "taskAr": "اشرح ما كنت ستغيّره لو مال الرف.",
+      "path": "assets/scenes/idea-lab/workshop-08.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "8f75d80f6877c732f62d1b0a114ab5830f8371fa296e10750297131e1b49234b"
+    },
+    {
+      "id": "idea-workshop-09",
+      "topic": "workshop",
+      "en": "A new suitcase handle",
+      "ar": "مقبض جديد لحقيبة السفر",
+      "sentenceEn": "A repair worker is showing a customer the new handle on a suitcase.",
+      "sentenceAr": "يُري عامل إصلاح زبونًا المقبض الجديد لحقيبة سفر.",
+      "words": [
+        {
+          "en": "handle",
+          "ar": "مقبض",
+          "kind": "object",
+          "x": 45,
+          "y": 55
+        },
+        {
+          "en": "suitcase",
+          "ar": "حقيبة سفر",
+          "kind": "object",
+          "x": 52,
+          "y": 78
+        },
+        {
+          "en": "replace",
+          "ar": "يستبدل",
+          "kind": "action",
+          "x": 48,
+          "y": 53
+        },
+        {
+          "en": "sturdy",
+          "ar": "متين",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9108,
+          "en": "I'm happy with how sturdy the new handle feels.",
+          "ar": "يسرّني أن المقبض الجديد يبدو متينًا."
+        },
+        {
+          "id": 9063
+        },
+        {
+          "id": 9145
+        }
+      ],
+      "taskEn": "Say what you are pleased with and how you will test it.",
+      "taskAr": "اذكر ما أعجبك وكيف ستختبره.",
+      "path": "assets/scenes/idea-lab/workshop-09.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "de97ced01eaece0ce6dc1be579544d51e781977ab37f014e526be0e35f5bf987"
+    },
+    {
+      "id": "idea-workshop-10",
+      "topic": "workshop",
+      "en": "Cleaning a camera lens",
+      "ar": "تنظيف عدسة كاميرا",
+      "sentenceEn": "A student is cleaning a camera lens with a cloth.",
+      "sentenceAr": "ينظف طالب عدسة كاميرا بقطعة قماش.",
+      "words": [
+        {
+          "en": "lens",
+          "ar": "عدسة",
+          "kind": "object",
+          "x": 65,
+          "y": 69
+        },
+        {
+          "en": "cloth",
+          "ar": "قطعة قماش",
+          "kind": "object",
+          "x": 51,
+          "y": 75
+        },
+        {
+          "en": "wipe",
+          "ar": "يمسح",
+          "kind": "action",
+          "x": 54,
+          "y": 64
+        },
+        {
+          "en": "clean",
+          "ar": "نظيف",
+          "kind": "description",
+          "x": 65,
+          "y": 70
+        }
+      ],
+      "patterns": [
+        {
+          "id": 11,
+          "en": "It's worth wiping the lens before you take the picture.",
+          "ar": "من المفيد مسح العدسة قبل التقاط الصورة."
+        },
+        {
+          "id": 9063
+        },
+        {
+          "id": 9145
+        }
+      ],
+      "taskEn": "Explain why this step is worth doing before taking a photo.",
+      "taskAr": "اشرح لماذا يستحق هذا الإجراء أن تقوم به قبل التصوير.",
+      "path": "assets/scenes/idea-lab/workshop-10.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "f8d654990246cd937da9a8638f3982c5ab57dd1672c24dcd651e1b5f6edd8524"
+    },
+    {
+      "id": "idea-gathering-01",
+      "topic": "gathering",
+      "en": "Counting empty seats",
+      "ar": "عدّ المقاعد الشاغرة",
+      "sentenceEn": "Organizers are counting seats in a hall before a talk.",
+      "sentenceAr": "يعدّ منظّمون المقاعد في قاعة قبل محاضرة.",
+      "words": [
+        {
+          "en": "seat",
+          "ar": "مقعد",
+          "kind": "object",
+          "x": 73,
+          "y": 69
+        },
+        {
+          "en": "clipboard",
+          "ar": "لوح كتابة",
+          "kind": "object",
+          "x": 34,
+          "y": 65
+        },
+        {
+          "en": "count",
+          "ar": "يعدّ",
+          "kind": "action",
+          "x": 52,
+          "y": 30
+        },
+        {
+          "en": "empty",
+          "ar": "شاغر",
+          "kind": "description",
+          "x": 72,
+          "y": 67
+        }
+      ],
+      "patterns": [
+        {
+          "id": 118,
+          "en": "There are five empty seats in the front row.",
+          "ar": "هناك خمسة مقاعد شاغرة في الصف الأمامي."
+        },
+        {
+          "id": 9105
+        },
+        {
+          "id": 9132
+        }
+      ],
+      "taskEn": "Report how many seats are available and where they are.",
+      "taskAr": "أبلغ عن عدد المقاعد المتاحة ومكانها.",
+      "path": "assets/scenes/idea-lab/gathering-01.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "a779690439a150a1c08f962a78f75fc89a2afba228d81daf6c2267b3b57478c0"
+    },
+    {
+      "id": "idea-gathering-02",
+      "topic": "gathering",
+      "en": "An extra chair at dinner",
+      "ar": "كرسي إضافي على العشاء",
+      "sentenceEn": "A host is adding an extra chair beside the dining table.",
+      "sentenceAr": "يضيف مضيف كرسيًا إلى جانب طاولة الطعام.",
+      "words": [
+        {
+          "en": "chair",
+          "ar": "كرسي",
+          "kind": "object",
+          "x": 39,
+          "y": 63
+        },
+        {
+          "en": "dining table",
+          "ar": "طاولة طعام",
+          "kind": "object",
+          "x": 66,
+          "y": 82
+        },
+        {
+          "en": "add",
+          "ar": "يضيف",
+          "kind": "action",
+          "x": 36,
+          "y": 61
+        },
+        {
+          "en": "extra",
+          "ar": "إضافي",
+          "kind": "description",
+          "x": 39,
+          "y": 67
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9052,
+          "en": "Would you like to sit here beside the window?",
+          "ar": "هل ترغب في الجلوس هنا قرب النافذة؟"
+        },
+        {
+          "id": 9105
+        },
+        {
+          "id": 9132
+        }
+      ],
+      "taskEn": "Welcome an unexpected guest and offer a seat.",
+      "taskAr": "رحّب بضيف غير متوقّع واعرض عليه مقعدًا.",
+      "path": "assets/scenes/idea-lab/gathering-02.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "22bab7bde8044ae0224f5c88c70f3df5f8c31f9f8f2073f62ac8dcb53bee38ac"
+    },
+    {
+      "id": "idea-gathering-03",
+      "topic": "gathering",
+      "en": "A side entrance for late guests",
+      "ar": "مدخل جانبي للقادمين متأخرين",
+      "sentenceEn": "A volunteer is pointing a guest toward a side entrance.",
+      "sentenceAr": "يشير متطوّع لضيف إلى مدخل جانبي.",
+      "words": [
+        {
+          "en": "side door",
+          "ar": "باب جانبي",
+          "kind": "object",
+          "x": 69,
+          "y": 48
+        },
+        {
+          "en": "sign",
+          "ar": "لافتة",
+          "kind": "object",
+          "x": 56,
+          "y": 35
+        },
+        {
+          "en": "point",
+          "ar": "يشير",
+          "kind": "action",
+          "x": 67,
+          "y": 55
+        },
+        {
+          "en": "late",
+          "ar": "متأخّر",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9136,
+          "en": "I'm sorry for arriving late. Is this the right entrance?",
+          "ar": "أعتذر عن التأخر. هل هذا هو المدخل الصحيح؟"
+        },
+        {
+          "id": 9105
+        },
+        {
+          "id": 9132
+        }
+      ],
+      "taskEn": "Apologize for arriving late and ask how to enter quietly.",
+      "taskAr": "اعتذر عن التأخر واسأل كيف تدخل بهدوء.",
+      "path": "assets/scenes/idea-lab/gathering-03.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "3abd3a81b075a40cc90bda2fa63f2bafa59513bf7160f43dd6be98031decb2a5"
+    },
+    {
+      "id": "idea-gathering-04",
+      "topic": "gathering",
+      "en": "Bringing the picnic inside",
+      "ar": "نقل النزهة إلى الداخل",
+      "sentenceEn": "A family is bringing food baskets indoors after rain.",
+      "sentenceAr": "تنقل عائلة سلال الطعام إلى الداخل بعد المطر.",
+      "words": [
+        {
+          "en": "basket",
+          "ar": "سلّة",
+          "kind": "object",
+          "x": 85,
+          "y": 51
+        },
+        {
+          "en": "window",
+          "ar": "نافذة",
+          "kind": "object",
+          "x": 14,
+          "y": 38
+        },
+        {
+          "en": "bring indoors",
+          "ar": "ينقل للداخل",
+          "kind": "action",
+          "x": 57,
+          "y": 63
+        },
+        {
+          "en": "wet",
+          "ar": "مبتل",
+          "kind": "description",
+          "x": 18,
+          "y": 48
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9143,
+          "en": "It started raining. That's why we brought the food inside.",
+          "ar": "بدأ المطر. لهذا أحضرنا الطعام إلى الداخل."
+        },
+        {
+          "id": 9105
+        },
+        {
+          "id": 9132
+        }
+      ],
+      "taskEn": "Explain how rain changed the plan and suggest what to do now.",
+      "taskAr": "اشرح كيف غيّر المطر الخطة واقترح ما تفعلونه الآن.",
+      "path": "assets/scenes/idea-lab/gathering-04.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "1da574bfe1e1d3974317a11cd7111bc885d1ebbc3f459856200782568b43c9d3"
+    },
+    {
+      "id": "idea-gathering-05",
+      "topic": "gathering",
+      "en": "Testing the microphone",
+      "ar": "تجربة الميكروفون",
+      "sentenceEn": "A speaker is testing a microphone beside a podium.",
+      "sentenceAr": "يختبر متحدث ميكروفونًا بجوار منصة.",
+      "words": [
+        {
+          "en": "microphone",
+          "ar": "ميكروفون",
+          "kind": "object",
+          "x": 34,
+          "y": 35
+        },
+        {
+          "en": "podium",
+          "ar": "منصّة",
+          "kind": "object",
+          "x": 38,
+          "y": 68
+        },
+        {
+          "en": "test",
+          "ar": "يختبر",
+          "kind": "action",
+          "x": 36,
+          "y": 38
+        },
+        {
+          "en": "audible",
+          "ar": "مسموع",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9067,
+          "en": "Are there any seats where the sound isn't clear?",
+          "ar": "هل توجد مقاعد لا يكون الصوت فيها واضحًا؟"
+        },
+        {
+          "id": 9105
+        },
+        {
+          "id": 9132
+        }
+      ],
+      "taskEn": "Ask whether people at the back can hear clearly.",
+      "taskAr": "اسأل إن كان من في الخلف يسمعون بوضوح.",
+      "path": "assets/scenes/idea-lab/gathering-05.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "726ba521ccdc785ae3a986be9f6e5d7eb0842bc0166ba65ec116f6c39feaf8b2"
+    },
+    {
+      "id": "idea-gathering-06",
+      "topic": "gathering",
+      "en": "Separate trays for guests",
+      "ar": "صوانٍ منفصلة للضيوف",
+      "sentenceEn": "Two hosts are setting out trays of tea and dates.",
+      "sentenceAr": "يجهّز مضيفان صواني الشاي والتمر.",
+      "words": [
+        {
+          "en": "tray",
+          "ar": "صينية",
+          "kind": "object",
+          "x": 46,
+          "y": 87
+        },
+        {
+          "en": "tea glass",
+          "ar": "كأس شاي",
+          "kind": "object",
+          "x": 47,
+          "y": 81
+        },
+        {
+          "en": "set out",
+          "ar": "يرتّب",
+          "kind": "action",
+          "x": 28,
+          "y": 84
+        },
+        {
+          "en": "separate",
+          "ar": "منفصل",
+          "kind": "description",
+          "x": 86,
+          "y": 86
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9151,
+          "en": "Let's put the dates on a separate tray instead of mixing them with the sweets.",
+          "ar": "لنضع التمر في صينية منفصلة بدل خلطه مع الحلويات."
+        },
+        {
+          "id": 9105
+        },
+        {
+          "id": 9132
+        }
+      ],
+      "taskEn": "Explain how you are arranging food for different preferences.",
+      "taskAr": "اشرح كيف ترتّب الطعام ليلائم تفضيلات مختلفة.",
+      "path": "assets/scenes/idea-lab/gathering-06.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "bd544cb735effbc02166ad2c20690c5f07099867885449003f08e6142393a7c2"
+    },
+    {
+      "id": "idea-gathering-07",
+      "topic": "gathering",
+      "en": "A sign by the coat rack",
+      "ar": "لافتة قرب حامل المعاطف",
+      "sentenceEn": "Staff are putting a welcome sign near a coat rack.",
+      "sentenceAr": "يضع موظفون لافتة ترحيب قرب حامل المعاطف.",
+      "words": [
+        {
+          "en": "welcome sign",
+          "ar": "لافتة ترحيب",
+          "kind": "object",
+          "x": 45,
+          "y": 49
+        },
+        {
+          "en": "coat rack",
+          "ar": "حامل معاطف",
+          "kind": "object",
+          "x": 80,
+          "y": 34
+        },
+        {
+          "en": "place",
+          "ar": "يضع",
+          "kind": "action",
+          "x": 40,
+          "y": 73
+        },
+        {
+          "en": "visible",
+          "ar": "مرئي",
+          "kind": "description",
+          "x": 45,
+          "y": 52
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9144,
+          "en": "Put the sign here so that guests can see it from the door.",
+          "ar": "ضع اللافتة هنا حتى يراها الضيوف من الباب."
+        },
+        {
+          "id": 9105
+        },
+        {
+          "id": 9132
+        }
+      ],
+      "taskEn": "Explain why the sign should be easy to see from the entrance.",
+      "taskAr": "اشرح لماذا ينبغي أن يسهل رؤية اللافتة من المدخل.",
+      "path": "assets/scenes/idea-lab/gathering-07.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "b7568aa576a706a91638a2fe130e7075344e12ce785cda0d35771dd88956eea4"
+    },
+    {
+      "id": "idea-gathering-08",
+      "topic": "gathering",
+      "en": "Borrowing a pen at sign-in",
+      "ar": "استعارة قلم عند التسجيل",
+      "sentenceEn": "A visitor is lending another guest a pen at a sign-in table.",
+      "sentenceAr": "يعير زائر ضيفًا آخر قلمًا عند طاولة التسجيل.",
+      "words": [
+        {
+          "en": "pen",
+          "ar": "قلم",
+          "kind": "object",
+          "x": 58,
+          "y": 58
+        },
+        {
+          "en": "name badge",
+          "ar": "بطاقة اسم",
+          "kind": "object",
+          "x": 42,
+          "y": 58
+        },
+        {
+          "en": "lend",
+          "ar": "يعير",
+          "kind": "action",
+          "x": 56,
+          "y": 57
+        },
+        {
+          "en": "spare",
+          "ar": "احتياطي",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9133,
+          "en": "Thank you for lending me your pen.",
+          "ar": "شكرًا لإعارتي قلمك."
+        },
+        {
+          "id": 9105
+        },
+        {
+          "id": 9132
+        }
+      ],
+      "taskEn": "Ask politely for a pen and thank the person who helps you.",
+      "taskAr": "اطلب قلمًا بأدب واشكر من يساعدك.",
+      "path": "assets/scenes/idea-lab/gathering-08.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "deaa0c35e722b5e454d343774562f51c847e609b5c6e7783763fd90f50ac8b4b"
+    },
+    {
+      "id": "idea-gathering-09",
+      "topic": "gathering",
+      "en": "Choosing a room layout",
+      "ar": "اختيار ترتيب القاعة",
+      "sentenceEn": "Organizers are comparing two layouts using miniature chairs.",
+      "sentenceAr": "يقارن منظّمون ترتيبين باستخدام كراسٍ مصغّرة.",
+      "words": [
+        {
+          "en": "floor plan",
+          "ar": "مخطط",
+          "kind": "object",
+          "x": 41,
+          "y": 89
+        },
+        {
+          "en": "model chair",
+          "ar": "كرسي مصغّر",
+          "kind": "object",
+          "x": 27,
+          "y": 79
+        },
+        {
+          "en": "compare",
+          "ar": "يقارن",
+          "kind": "action",
+          "x": 50,
+          "y": 65
+        },
+        {
+          "en": "flexible",
+          "ar": "مرن",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9122,
+          "en": "I don't agree with putting all the chairs in rows.",
+          "ar": "لا أتفق مع وضع جميع الكراسي في صفوف."
+        },
+        {
+          "id": 9105
+        },
+        {
+          "id": 9132
+        }
+      ],
+      "taskEn": "Disagree respectfully with one choice and offer another.",
+      "taskAr": "عبّر عن اختلافك بأدب واقترح ترتيبًا آخر.",
+      "path": "assets/scenes/idea-lab/gathering-09.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "c02826263f5542f9cc6903a58897c40a443fd66b3389fc9a1f41133be0bfe107"
+    },
+    {
+      "id": "idea-gathering-10",
+      "topic": "gathering",
+      "en": "Packing leftovers after an event",
+      "ar": "تعبئة الطعام المتبقي بعد فعالية",
+      "sentenceEn": "Attendees are stacking containers of leftover food on a table.",
+      "sentenceAr": "يرصّ الحاضرون علب الطعام المتبقي على طاولة.",
+      "words": [
+        {
+          "en": "container",
+          "ar": "علبة",
+          "kind": "object",
+          "x": 69,
+          "y": 73
+        },
+        {
+          "en": "leftovers",
+          "ar": "طعام متبقٍ",
+          "kind": "object",
+          "x": 75,
+          "y": 73
+        },
+        {
+          "en": "stack",
+          "ar": "يرصّ",
+          "kind": "action",
+          "x": 86,
+          "y": 77
+        },
+        {
+          "en": "full",
+          "ar": "ممتلئ",
+          "kind": "description"
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9106,
+          "en": "As soon as we've filled the containers, I'll put them in the fridge.",
+          "ar": "حالما ننتهي من ملء العلب، سأضعها في الثلاجة."
+        },
+        {
+          "id": 9105
+        },
+        {
+          "id": 9132
+        }
+      ],
+      "taskEn": "Explain what you will do after filling all the containers.",
+      "taskAr": "اشرح ما ستفعله بعد ملء جميع العلب.",
+      "path": "assets/scenes/idea-lab/gathering-10.webp",
+      "width": 500,
+      "height": 300,
+      "sha256": "9dc212bca53fdcc00445e42b86d8cae15081cb85d37990519e120b72f890db13"
     }
   ]
 }
