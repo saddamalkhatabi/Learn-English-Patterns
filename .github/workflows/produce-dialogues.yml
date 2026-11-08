@@ -2,7 +2,7 @@ name: Record and align conversations
 on:
   push:
     branches: [main, codex/conversation-practice]
-    paths: [public/dialogues.json, public/training-narration.js, public/curriculum.json, public/pilot.json, public/expansion-media.json, scripts/training-cues.cjs, scripts/produce-dialogues.py, scripts/merge-dialogue-audio.cjs, .github/workflows/produce-dialogues.yml]
+    paths: [public/dialogues.json, public/comparisons.json, public/training-narration.js, public/curriculum.json, public/pilot.json, public/expansion-media.json, scripts/training-cues.cjs, scripts/produce-dialogues.py, scripts/merge-dialogue-audio.cjs, .github/workflows/produce-dialogues.yml]
   workflow_dispatch:
 permissions:
   contents: write

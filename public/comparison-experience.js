@@ -37,7 +37,7 @@ function comparisonsPage(){
     <option value="8">8 s</option><option value="15" selected>15 s</option><option value="25">25 s</option><option value="45">45 s</option>
    </select></label>
    <label>${T('الصوت','Voice')} <select id="comparison-voice">
-    <option value="alternate">${T('تناوب الصوتين','Alternate voices')}</option><option value="male">Adam</option><option value="female">Bella</option>
+    <option value="alternate">${T('صوت مختلف لكل مقارنة','Alternate by comparison')}</option><option value="male">Adam</option><option value="female">Bella</option>
    </select></label>
    ${patternsImageControls()}
   </div>
@@ -152,16 +152,15 @@ function startComparisonGuide(mode,id){
  const sentences=new Map([...PILOT.sentences,...(REFERENCE_CORPUS?.sentences||[])].map(sentence=>[sentence.id,sentence]));
  const voiceMode=$('#comparison-voice').value;
  const delay=Number($('#comparison-delay').value)*1000;
- let spoken=0;
  const steps=items.flatMap((item,index)=>{
-  const opening={item,index,phase:'intro'};
+  const voice=voiceMode==='alternate'?(index%2?'female':'male'):voiceMode;
+  const opening={item,index,phase:mode==='read'?'intro':'narration',voice};
   const practice={item,index,phase:'practice'};
   if(mode==='read')return [opening,{item,index,phase:'examples'},practice];
   const available=item.samples.filter(sample=>sentences.has(sample.sentenceId));
   const examples=available.map((sample,example)=>{
    const {sentenceId,sceneId,form}=sample;
    const sentence=sentences.get(sentenceId);
-   const voice=voiceMode==='alternate'?(spoken++%2?'female':'male'):voiceMode;
    return {item,index,example,total:available.length,form,phase:'audio',sentence,scene:sentences.get(sceneId)||sentence,voice};
   });
   return [opening,...examples,practice];
@@ -188,8 +187,10 @@ function releaseComparisonGuide(){
 function pauseComparisonGuide(){
  const guide=comparisonGuide;
  if(!guide)return;
- if(guide.running&&!guide.audio)guide.left=Math.max(0,guide.deadline-Date.now());
+ const phase=guide.steps[guide.index]?.phase;
+ if(guide.running&&!guide.audio&&phase!=='narration')guide.left=Math.max(0,guide.deadline-Date.now());
  guide.running=false;
+ guide.narration?.stop();guide.narration=null;
  clearInterval(guide.timer);
  cancelAnimationFrame(guide.frame);
  guide.audio?.pause();
@@ -204,6 +205,14 @@ function resumeComparisonGuide(){
  if(audio){
   audio.play().catch(()=>{
    if(comparisonGuide===guide&&guide.audio===audio&&guide.running)comparisonAudioError(guide);
+  });
+ }else if(guide.steps[guide.index].phase==='narration'){
+  const step=guide.steps[guide.index];
+  const narration=synthesizeTrainingCue(spokenComparison(step.item),1,step.voice);
+  guide.narration=narration;
+  narration.done.then(completed=>{
+   if(comparisonGuide!==guide||guide.narration!==narration||!guide.running)return;
+   if(completed)advanceComparisonGuide(1);else comparisonAudioError(guide);
   });
  }else{
   guide.deadline=Date.now()+guide.left;
@@ -247,16 +256,17 @@ function updateComparisonGuide(){
  const {audio}=guide;
  const step=guide.steps[guide.index];
  if(audio){
-  const recording=step.sentence.recordings[step.voice];
   const ms=audio.currentTime*1000;
-  const cue=recording.words.findIndex(word=>word.start_ms<=ms&&ms<word.end_ms);
-  if(guide.cue!==cue){
+  const cue=step.phase==='audio'?step.sentence.recordings[step.voice].words.findIndex(word=>word.start_ms<=ms&&ms<word.end_ms):-1;
+  if(step.phase==='audio'&&guide.cue!==cue){
    guide.cue=cue;
    $('#comparison-sample').querySelectorAll('[data-comparison-word]').forEach((word,index)=>
     word.classList.toggle('speaking',index===cue)
    );
   }
   meter.value=ms;
+  $('#comparison-clock').textContent=step.voice==='male'?'Adam':'Bella';
+ }else if(step.phase==='narration'){
   $('#comparison-clock').textContent=step.voice==='male'?'Adam':'Bella';
  }else{
   const left=guide.running?Math.max(0,guide.deadline-Date.now()):guide.left;
@@ -285,15 +295,18 @@ function paintComparisonGuide(){
  const {item,index,phase}=step;
  const titles={
   intro:T('الفكرة الأساسية','Key distinction'),
+  narration:T('استمع إلى الشرح الكامل','Listen to the full explanation'),
   examples:T('جملة من كل نمط','One example per pattern'),
   audio:T(`المثال المسموع ${step.example+1} / ${step.total}`,`Recorded example ${step.example+1} / ${step.total}`),
   practice:T('توسّع وجرّب','Explore and practise'),
  };
- const recording=phase==='audio'?step.sentence.recordings[step.voice]:null;
- const content=recording?comparisonSample(step):
-  comparisonCards(item,phase!=='intro',phase==='practice')+(phase==='practice'?comparisonExercise(item):'');
+ const candidate=PILOT.trainingAudio?.[`comparison-${item.id}-${step.voice}`];
+ const recording=phase==='audio'?step.sentence.recordings[step.voice]:
+  phase==='narration'&&candidate?.text===spokenComparison(item)?candidate:null;
+ const content=phase==='audio'?comparisonSample(step):
+  comparisonCards(item,!['intro','narration'].includes(phase),phase==='practice')+(phase==='practice'?comparisonExercise(item):'');
  $('#comparison-guide').innerHTML=`<section class="panel comparison-card">
-  <p>${index+1} / ${guide.count} · ${titles[phase]}</p><h2>${H(T(item.ar,item.en))}</h2>
+  <p>${T('المقارنة','Comparison')} ${index+1} / ${guide.count} · ${titles[phase]}</p><h2>${H(T(item.ar,item.en))}</h2>
   <p>${H(T(item.noteAr,item.noteEn))}</p>${content}
   ${recording?`<audio id="comparison-audio" preload="auto" src="${H(recording.path)}"></audio>`:''}
   <progress id="comparison-meter" max="${recording?.duration_ms||guide.delay}" value="0"></progress> <span id="comparison-clock"></span>
@@ -317,7 +330,7 @@ function paintComparisonGuide(){
   };
   audio.onended=()=>{if(guide.running&&guide.audio===audio)advanceComparisonGuide(1)};
   audio.onerror=()=>{if(guide.audio===audio)comparisonAudioError(guide)};
-  window.EPOffline?.rememberSentences(step.scene===step.sentence?[step.sentence]:[step.sentence,step.scene]);
+  if(phase==='audio')window.EPOffline?.rememberSentences(step.scene===step.sentence?[step.sentence]:[step.sentence,step.scene]);
  }
  updateComparisonGuide();
 }

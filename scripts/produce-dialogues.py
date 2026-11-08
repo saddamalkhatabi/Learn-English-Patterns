@@ -146,7 +146,8 @@ def main():
                 continue
             pipeline, _, write_clip = get_model()
             clip = Path(directory) / f'{key}.mp3'
-            write_clip(pipeline, VOICES['female'], text, clip)
+            voice = 'male' if key.startswith('comparison-') and key.endswith('-male') else 'female'
+            write_clip(pipeline, VOICES[voice], text, clip)
             data = clip.read_bytes()
             digest = hashlib.sha256(data).hexdigest()
             path = f'assets/audio/training-{key}-{digest[:12]}.mp3'

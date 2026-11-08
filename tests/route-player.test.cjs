@@ -124,7 +124,7 @@ test('narrated stages require hearing a complete conversation and preserve cover
  assert.equal(p.session.phase,'sentence');
  audio.fire('ended');
  await new Promise(setImmediate);
- assert.deepEqual(cueOrder,[['pattern-intro',3],['explanation-intro',3],['dialogue-intro',3]]);
+ assert.deepEqual(cueOrder,[['pattern-intro',3],['dialogue-intro',3]]);
  assert.equal(p.session.phase,'dialogue');
  assert.equal(p.finishDialogue(),false);
  audio.played=ranges([5,6]);
@@ -144,6 +144,41 @@ test('narrated stages require hearing a complete conversation and preserve cover
  assert.equal(restored.p.sentence.id,'enjoy-01');
  assert.deepEqual(restored.p.session.completedDialogues,['cafe']);
  assert.deepEqual(cueOrder.at(-1),['pattern-intro',111]);
+});
+
+test('rule narration and review time are one opening stage, with no duplicate stop before conversation',async()=>{
+ const phases=[];
+ const {p,audio,timer}=make({...source,requireConversation:true,dialogues:[]},null,{
+  narrate:phase=>{phases.push(phase);return {done:Promise.resolve(true),stop(){}}}
+ });
+ p.configure({patternIds:[3,111],readingSeconds:5,autoNextPattern:false});
+ p.jumpTo('like-12');
+ await p.play();
+ assert.equal(p.session.phase,'comparison');
+ assert.equal(p.comparisonDuration,5000);
+ timer();
+ assert.equal(p.session.phase,'sentence');
+ audio.fire('ended');
+ assert.equal(p.session.phase,'conversation-pending');
+ assert.deepEqual(phases,['pattern-intro']);
+});
+
+test('conversation controls switch only within the pattern and restore each listening position',async()=>{
+ const data={...source,requireConversation:true,dialogues:['first','second'].map(id=>({
+  id,after:3,audio:{path:id+'.mp3',sha256:id,duration_ms:6000,turns:[{start_ms:0,end_ms:6000}]}
+ }))};
+ const {p,audio}=make(data);
+ p.configure({patternIds:[3,111],readingSeconds:0,dialoguesPerPattern:1});
+ p.jumpTo('like-12');
+ await p.play();
+ audio.fire('ended');
+ p.seek(2);
+ assert(p.chooseDialogue('second'));
+ assert.equal(p.activeDialogue.id,'second');
+ assert(p.chooseDialogue('first'));
+ assert.equal(audio.currentTime,2);
+ assert.equal(p.chooseDialogue('unrelated'),false);
+ assert.equal(p.finishDialogue(),false);
 });
 
 test('a missing mandatory conversation holds the current pattern and permits retry',async()=>{

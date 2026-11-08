@@ -118,8 +118,12 @@ class NasaqRoutePlayer{
    if(g!==this.generation||!this.running)return;
    this.cue=null;
    if(phase==='pattern-intro'){
-    this.session.introducedPattern=this.pattern?.id;this.session.phase='sentence';
-    this.session.offset=this.session.resumeSentenceOffset||0;delete this.session.resumeSentenceOffset;this.save();this.play();
+    this.session.introducedPattern=this.pattern?.id;
+    const seconds=this.session.readingSeconds??Number(root.EP?.prefs?.readingSeconds??25);
+    if(seconds>0){
+     this.session.readingBeforeExamples=true;
+     this.beginReading(seconds);
+    }else this.playFirstExample();
    }else if(phase==='explanation-intro')this.startReading();
    else this.startDialogue(this.session.dialogueIds[0]);
    return;
@@ -127,7 +131,7 @@ class NasaqRoutePlayer{
   if(this.session.phase==='conversation-pending'){this.continueAfterComparison();return}
   if(this.session.phase==='comparison'){
    if(this.comparisonRemaining>0)this.scheduleComparison();
-   else this.continueAfterComparison();
+   else this.finishReading();
    this.emit();return;
   }
   if(this.session.phase==='between'){this.continueAfterComparison();return}
@@ -147,7 +151,7 @@ class NasaqRoutePlayer{
   const next=this.data.sentences.find(s=>s.id===this.session.ids[this.session.cursor+1]);
   if(next?.pattern_id!==this.sentence?.pattern_id){
    this.audio.pause();this.session.offset=0;
-   if(this.narrate){this.startCue('explanation-intro');return}
+   if(this.narrate){this.continueAfterComparison();return}
    this.startReading();return;
   }
   this.moveCursor();
@@ -161,21 +165,37 @@ class NasaqRoutePlayer{
    }
    this.continueAfterComparison();return;
   }
+  this.beginReading(seconds);
+ }
+ beginReading(seconds){
   this.session.phase='comparison';this.session.comparisonDurationMs=seconds*1000;
   this.session.comparisonRemainingMs=this.session.comparisonDurationMs;this.comparisonEndsAt=null;
   this.save();if(this.running)this.scheduleComparison();this.emit();
  }
- scheduleComparison(){if(this.timer)this.clearTimer(this.timer);const remaining=this.comparisonRemaining;this.comparisonEndsAt=this.now()+remaining;this.timer=this.setTimer(()=>{this.timer=null;this.comparisonEndsAt=null;this.session.comparisonRemainingMs=0;if(this.running&&this.session.autoNextPattern)this.continueAfterComparison();else{this.running=false;this.save();this.emit()}},remaining)}
+ scheduleComparison(){if(this.timer)this.clearTimer(this.timer);const remaining=this.comparisonRemaining;this.comparisonEndsAt=this.now()+remaining;this.timer=this.setTimer(()=>{this.timer=null;this.comparisonEndsAt=null;this.session.comparisonRemainingMs=0;if(this.running&&(this.session.readingBeforeExamples||this.session.autoNextPattern))this.finishReading();else{this.running=false;this.save();this.emit()}},remaining)}
+ finishReading(){
+  if(this.session.readingBeforeExamples){this.playFirstExample();return}
+  this.continueAfterComparison();
+ }
+ playFirstExample(){
+  if(this.timer)this.clearTimer(this.timer);
+  this.timer=null;this.comparisonEndsAt=null;this.session.comparisonRemainingMs=null;
+  delete this.session.readingBeforeExamples;
+  this.session.phase='sentence';this.session.offset=this.session.resumeSentenceOffset||0;
+  delete this.session.resumeSentenceOffset;this.save();this.emit();if(this.running)this.play();
+ }
  continueAfterComparison(){
   if(this.timer)this.clearTimer(this.timer);
   this.timer=null;this.comparisonEndsAt=null;this.session.comparisonRemainingMs=null;
   const pid=this.data.sentences.find(s=>s.id===this.session.ids[this.session.cursor])?.pattern_id;
   if(this.session.includeDialogues){
    const available=this.dialoguesForPattern(pid).filter(dialogue=>dialogue.audio);
-   const selected=this.dialogueLimit===-1?available:available.slice(0,this.dialogueLimit);
+   const selected=this.requireConversation||this.dialogueLimit===-1?available:available.slice(0,this.dialogueLimit);
    if(selected.length){
     this.session.dialogueIds=selected.map(dialogue=>dialogue.id);
     this.session.dialogueCursor=0;
+    this.session.dialogueRemaining=this.dialogueLimit===-1?selected.length:Math.min(this.dialogueLimit,selected.length);
+    this.session.dialoguePositions={};
     if(this.narrate)this.startCue('dialogue-intro');
     else this.startDialogue(selected[0].id);
     return;
@@ -190,13 +210,29 @@ class NasaqRoutePlayer{
   if(this.requireConversation&&!this.session.autoNextPattern)this.running=false;
   this.moveCursor();
  }
- startDialogue(id){
+ startDialogue(id,resume=false){
   this.generation++;
   this.audio.pause();
-  this.session.dialogueId=id;this.session.phase='dialogue';this.session.offset=0;
-  delete this.session.dialogueCoverage;
+  this.session.dialogueId=id;this.session.phase='dialogue';
+  const saved=resume?this.session.dialoguePositions?.[id]:null;
+  const compatible=saved&&saved.sha256===this.activeDialogue?.audio?.sha256;
+  this.session.offset=compatible?saved.offset:0;
+  this.session.dialogueCoverage=compatible?saved.coverage:undefined;
   this.audio.removeAttribute('src');this.audio.load();this.save();this.emit();
   if(this.running)this.play();
+ }
+ chooseDialogue(id){
+  if(this.session.phase!=='dialogue'||id===this.session.dialogueId)return false;
+  const index=this.session.dialogueIds?.indexOf(id)??-1;
+  if(index<0||!this.data.dialogues?.some(d=>d.id===id&&d.audio))return false;
+  const running=this.running;
+  this.pause();
+  const positions=this.session.dialoguePositions??={};
+  positions[this.session.dialogueId]={sha256:this.recording?.sha256,offset:this.session.offset,coverage:this.session.dialogueCoverage};
+  this.session.dialogueCursor=index;
+  this.running=running;this.error='';
+  this.startDialogue(id,true);
+  return true;
  }
  get savedDialogueCoverage(){
   const stored=this.session.dialogueCoverage;
@@ -219,9 +255,12 @@ class NasaqRoutePlayer{
    this.session.heardConversationPattern=this.pattern?.id;
   }
   const next=(this.session.dialogueCursor??0)+1;
-  if(this.session.dialogueIds?.[next]){
-   this.session.dialogueCursor=next;
-   this.startDialogue(this.session.dialogueIds[next]);
+  const ids=this.session.dialogueIds||[];
+  if(this.requireConversation)this.session.dialogueRemaining=Math.max(0,(this.session.dialogueRemaining??1)-1);
+  const index=this.requireConversation?(next%ids.length):next;
+  if(ids[index]&&(!this.requireConversation||this.session.dialogueRemaining>0)){
+   this.session.dialogueCursor=index;
+   this.startDialogue(ids[index]);
    return;
   }
   this.session.dialogueIds=[];this.session.dialogueCursor=0;
@@ -234,7 +273,7 @@ class NasaqRoutePlayer{
  jumpInterlude(index){const sequence=this.activeInterlude;if(!sequence?.items[index])return false;this.pause();this.session.phase='interlude';this.session.interludeCursor=index;this.session.offset=0;this.session.voice=sequence.items[index].voice;this.audio.removeAttribute('src');this.audio.load();this.save();this.emit();this.play();return true}
  continueAfterExercise(){this.session.phase='sentence';this.running=true;this.advance()}
  moveCursor(){const keepPlaying=this.running;this.generation++;this.audio.pause();if(this.session.cursor+1>=this.session.ids.length){this.session.phase='finished';this.running=false;this.session.offset=0;this.save();this.emit();return}this.session.cursor++;this.session.phase='sentence';this.session.offset=0;this.session.voice=this.session.voiceMode==='alternate'?(this.session.cursor%2?'female':'male'):this.session.voiceMode;this.audio.removeAttribute('src');this.audio.load();this.save();this.emit();if(keepPlaying)this.play()}
- jumpTo(id){const idx=this.session.ids.indexOf(id);if(idx<0)return false;this.pause();this.session.cursor=idx;this.session.phase='sentence';this.session.offset=0;this.session.voice=this.session.voiceMode==='alternate'?(idx%2?'female':'male'):this.session.voiceMode;this.audio.removeAttribute('src');this.audio.load();this.save();this.emit();return true}
+ jumpTo(id){const idx=this.session.ids.indexOf(id);if(idx<0)return false;this.pause();if(this.session.readingBeforeExamples)delete this.session.introducedPattern;delete this.session.readingBeforeExamples;delete this.session.resumeSentenceOffset;this.session.cursor=idx;this.session.phase='sentence';this.session.offset=0;this.session.voice=this.session.voiceMode==='alternate'?(idx%2?'female':'male'):this.session.voiceMode;this.audio.removeAttribute('src');this.audio.load();this.save();this.emit();return true}
  otherVoice(){if(this.session.phase!=='sentence')return;const was=this.running;this.pause();this.session.voice=this.session.voice==='male'?'female':'male';this.session.offset=0;this.session.phase='sentence';this.audio.removeAttribute('src');this.audio.load();this.save();this.emit();if(was)this.play()}
  setRate(rate){this.session.rate=+rate;this.audio.playbackRate=+rate;this.save();this.emit()}
  seek(seconds){if(!this.hasAudio)return;const max=(this.recording?.duration_ms||0)/1000;this.session.offset=Math.max(0,Math.min(+seconds,max));if(this.audio.getAttribute('src')===this.recording?.path)this.audio.currentTime=this.session.offset;this.save();this.emit()}

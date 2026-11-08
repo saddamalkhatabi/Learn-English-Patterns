@@ -58,7 +58,7 @@ test('conversation turns link to real patterns, scenes and measured cues within 
 test('both rule announcements are available for every taught pattern',()=>{
  const expected=require('../scripts/training-cues.cjs');
  const cues=require('../public/training-audio.json');
- assert.equal(Object.keys(expected).length,(foundation.patterns.length+expansion.patterns.length)*2+1);
+ assert.equal(Object.keys(expected).length,(foundation.patterns.length+expansion.patterns.length)*2+1+require('../public/comparisons.json').length*2);
  for(const [id,spoken] of Object.entries(expected)){
   assert(!/[\u0600-\u06ff]/.test(spoken)&&spoken.split(/\s+/).length>=6,id);
   const audio=cues[id];

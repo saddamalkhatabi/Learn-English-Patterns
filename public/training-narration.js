@@ -18,6 +18,11 @@ function spokenTrainingCue(kind,pattern,meta){
  return kind==='pattern-intro'?`New pattern. The structure is: ${form}. ${rule}`:`Rule explanation. ${rule}`;
 }
 function trainingCueId(kind,pattern){return kind==='dialogue-intro'?kind:`${kind}-${pattern?.id}`}
+function spokenComparison(item){
+ const end=text=>/[.!?]$/.test(text)?text:text+'.';
+ const examples=(item.examples||[]).map(end);
+ return [`New comparison: ${end(item.en)}`,end(item.noteEn),...(examples.length?['Listen to the difference.',...examples]:[])].join(' ');
+}
 function narrateTrainingCue(kind,pattern,rate=1){
  const text=spokenTrainingCue(kind,pattern,pattern&&learningMeta(pattern.id));
  const recording=PILOT?.trainingAudio?.[trainingCueId(kind,pattern)];
@@ -36,7 +41,7 @@ function narrateTrainingCue(kind,pattern,rate=1){
  }
  return synthesizeTrainingCue(text,rate);
 }
-function synthesizeTrainingCue(text,rate){
+function synthesizeTrainingCue(text,rate,role='female'){
  const synth=window.speechSynthesis;
  if(!synth||!window.SpeechSynthesisUtterance||!text)return {done:Promise.resolve(false),stop(){}};
  let finish,timer,settled=false;
@@ -44,7 +49,8 @@ function synthesizeTrainingCue(text,rate){
  const voice=new SpeechSynthesisUtterance(text);
  voice.lang='en-US';voice.rate=rate;
  const available=synth.getVoices().filter(v=>/^en\b/i.test(v.lang));
- voice.voice=available.find(v=>v.name===state.voiceFirst)||available.find(v=>v.localService)||available[0]||null;
+ const preferred=role==='male'?state.voiceFirst:state.voiceSecond;
+ voice.voice=available.find(v=>v.name===preferred)||available.find(v=>v.localService)||available[0]||null;
  function end(result){if(settled)return;settled=true;clearTimeout(timer);finish(result)}
  voice.onend=()=>end(true);voice.onerror=()=>end(false);
  const stop=()=>{if(settled)return;end(false);synth.cancel()};
@@ -61,7 +67,7 @@ function playLessonStageCue(){
  lessonCue=narrateTrainingCue(kind,pattern,state.rate||1);
 }
 function replayLessonStageCue(){stopSpeech();playLessonStageCue()}
-if(typeof module!=='undefined')module.exports={spokenTrainingCue,trainingCueId};
+if(typeof module!=='undefined')module.exports={spokenTrainingCue,trainingCueId,spokenComparison};
 else{
  const stopSpeechBeforeTrainingCue=stopSpeech;
  stopSpeech=function(){lessonCue?.stop();lessonCue=null;stopSpeechBeforeTrainingCue()};
