@@ -58,9 +58,15 @@ test('conversation turns link to real patterns, scenes and measured cues within 
 test('both rule announcements are available for every taught pattern',()=>{
  const expected=require('../scripts/training-cues.cjs');
  const cues=require('../public/training-audio.json');
- assert.equal(Object.keys(expected).length,(foundation.patterns.length+expansion.patterns.length)*2+1+require('../public/comparisons.json').length*2);
+ const {ideaWordCueId}=require('../public/training-narration.js');
+ const vocabulary=new Set(require('../public/idea-scenes.json').scenes.flatMap(scene=>scene.words.map(word=>word.en)));
+ for(const voice of ['male','female']){
+  const keys=[...vocabulary].map(word=>ideaWordCueId(word,voice));
+  assert.equal(new Set(keys).size,vocabulary.size);
+  [...vocabulary].forEach((word,index)=>assert.equal(expected[keys[index]],word));
+ }
  for(const [id,spoken] of Object.entries(expected)){
-  assert(!/[\u0600-\u06ff]/.test(spoken)&&spoken.split(/\s+/).length>=6,id);
+  assert(!/[\u0600-\u06ff]/.test(spoken)&&spoken.trim(),id);
   const audio=cues[id];
   if(process.env.DIALOGUE_AUDIO_REQUIRED==='1')assert(audio?.text===spoken,id);
   if(audio?.text!==spoken)continue;

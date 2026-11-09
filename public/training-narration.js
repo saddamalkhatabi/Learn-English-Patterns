@@ -19,9 +19,15 @@ function spokenTrainingCue(kind,pattern,meta){
 }
 function trainingCueId(kind,pattern){return kind==='dialogue-intro'?kind:`${kind}-${pattern?.id}`}
 function spokenComparison(item){
- const end=text=>/[.!?]$/.test(text)?text:text+'.';
- const examples=(item.examples||[]).map(end);
- return [`New comparison: ${end(item.en)}`,end(item.noteEn),...(examples.length?['Listen to the difference.',...examples]:[])].join(' ');
+ const title=item.en.trim().replace(/[.!?]+$/,'');
+ return `Next comparison. ${title}.\n${spokenComparisonNote(item.noteEn)}`;
+}
+function spokenComparisonNote(note){
+ const text=note.trim().replace(/-ing\b/g,'I N G').replace(/\s*\/\s*/g,' or ');
+ return /[.!?]$/.test(text)?text:text+'.';
+}
+function ideaWordCueId(text,voice){
+ return `idea-word-${text.toLowerCase().trim().replace(/'/g,'-apostrophe-').replace(/\s+/g,'-')}-${voice}`;
 }
 function narrateTrainingCue(kind,pattern,rate=1){
  const text=spokenTrainingCue(kind,pattern,pattern&&learningMeta(pattern.id));
@@ -67,7 +73,7 @@ function playLessonStageCue(){
  lessonCue=narrateTrainingCue(kind,pattern,state.rate||1);
 }
 function replayLessonStageCue(){stopSpeech();playLessonStageCue()}
-if(typeof module!=='undefined')module.exports={spokenTrainingCue,trainingCueId,spokenComparison};
+if(typeof module!=='undefined')module.exports={spokenTrainingCue,trainingCueId,spokenComparison,spokenComparisonNote,ideaWordCueId};
 else{
  const stopSpeechBeforeTrainingCue=stopSpeech;
  stopSpeech=function(){lessonCue?.stop();lessonCue=null;stopSpeechBeforeTrainingCue()};

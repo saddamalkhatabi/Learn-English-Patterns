@@ -2,7 +2,7 @@ name: Record and align conversations
 on:
   push:
     branches: [main, codex/conversation-practice]
-    paths: [public/dialogues.json, public/comparisons.json, public/training-narration.js, public/curriculum.json, public/pilot.json, public/expansion-media.json, scripts/training-cues.cjs, scripts/produce-dialogues.py, scripts/merge-dialogue-audio.cjs, .github/workflows/produce-dialogues.yml]
+    paths: [public/dialogues.json, public/comparisons.json, public/idea-scenes.json, public/teaching-index.json, public/training-narration.js, public/curriculum.json, public/pilot.json, public/expansion-media.json, scripts/training-cues.cjs, scripts/produce-dialogues.py, scripts/merge-dialogue-audio.cjs, .github/workflows/produce-dialogues.yml]
   workflow_dispatch:
 permissions:
   contents: write
@@ -37,7 +37,7 @@ jobs:
             return !r||r.text!==spoken||!fs.existsSync('public/'+r.path)||crypto.createHash('sha256').update(fs.readFileSync('public/'+r.path)).digest('hex')!==r.sha256;
           });
           const total=pending.length+pendingCues.length;
-          const count=Math.max(1,Math.min(8,Math.ceil(total/25)));
+          const count=Math.max(1,Math.min(24,Math.ceil(total/35)));
           const shards=Array.from({length:count},(_,i)=>i);
           fs.appendFileSync(process.env.GITHUB_OUTPUT,`needed=${total>0}\ncount=${count}\nshards=${JSON.stringify(shards)}\n`);
           NODE
