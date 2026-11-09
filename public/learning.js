@@ -101,6 +101,7 @@ function nextStage(){
  if(stage===6){
   if(!lessonConversationComplete(current.id)){explainLessonStep(T('استمع إلى محادثة واحدة كاملة لتُنهي الدرس.','Listen to one full conversation to finish the lesson.'),'#lesson-dialogue-play');return}
   state.done[current.id]=state.done[current.id]||{due:Date.now()+864e5,interval:1,reviews:0};
+  recordDailyPractice('lesson',current.id);
   state.stage=0;persist();
   const order=PILOT?.pattern_order||patterns.map(p=>p.id),next=order[order.indexOf(current.id)+1];
   if(next&&state.lessonAutoNext!==false){openLesson(next);toast('اكتمل النمط، وانتقلنا إلى التالي.')}

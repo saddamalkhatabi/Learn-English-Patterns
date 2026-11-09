@@ -102,3 +102,18 @@
  .dialogue-live-text{padding:.45rem}
  .dialogue-thumb{width:48px}
 }
+.idea-audio-tools{display:flex;align-items:center;flex-wrap:wrap;gap:.45rem;margin-block:.55rem}
+.idea-audio-tools button,.idea-word-voices button{font-size:.84rem;padding:.38rem .65rem;min-height:2.5rem}
+.idea-audio-tools [aria-pressed="true"]{background:#1e594d;color:white}
+.idea-audio-tools [data-idea-audio-status]{flex-basis:100%;min-height:1.1em;color:#425b51}
+.idea-vocabulary h3{margin-block:.65rem .25rem}
+.idea-vocab li{display:grid;align-content:start;gap:.45rem;border:1px solid transparent;padding:.65rem .75rem}
+.idea-vocab li.active{background:#fff1eb;border-color:#b42335}
+.idea-vocab-meaning{display:flex;flex-wrap:wrap;align-items:baseline;gap:.35rem .6rem}
+.idea-vocab-meaning small{color:#4b6158}
+.idea-word-voices{display:flex;flex-wrap:wrap;gap:.35rem}
+.comparison-transition{padding:.8rem 1rem;margin:.8rem 0;border-inline-start:4px solid #ae533a;background:#fff3e9;border-radius:8px}
+.comparison-transition p{margin:.2rem 0 .35rem}
+.dialogue-story-entry{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem 1rem;margin-block:1rem}
+.dialogue-story-entry p{margin:.35rem 0 0}
+@media(max-width:520px){.idea-vocab{grid-template-columns:1fr}}

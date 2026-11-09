@@ -1,5 +1,7 @@
 let ideaWordMode='hidden',ideaLabelLanguage='en';
-let ideaFlashTimer,ideaRevealTimer,ideaFlashStep=0,ideaSelected=null;
+let ideaFlashTimer,ideaRevealTimer,ideaSelected=null,ideaSequence=null,ideaVoice=null,ideaFlashVoice=false;
+const ideaIntroducedScenes=new Set();
+let ideaAutoFlash=true;
 let ideaFrameObserver;
 try{
  const language=localStorage.getItem('nasaq-idea-label-language');
@@ -23,6 +25,7 @@ function ideaViewer(scene){
      ${[['','الكل','All'],['object','الأشياء والأشخاص','Objects and people'],['action','الأفعال','Actions'],['description','الأوصاف','Descriptions'],['phrase','عبارات المشهد','Scene phrases']].map(([id,ar,en])=>
       `<option value="${id}" ${ideaWordFilter===id?'selected':''}>${T(ar,en)}</option>`).join('')}</select></label>
    </div>
+   ${ideaAudioControls()}
    <p class="idea-picture-hint">${T('المس العلامة أو الكلمة لترى معناها لثوانٍ. في الومضات تظهر كلمة واحدة وتظهر ترجمتها أسفل الصورة.','Tap a marker or word to reveal its meaning briefly. Flash mode shows one word with its translation below.')}</p>
    <div class="buttonrow"><button class="secondary" onclick="stepIdeaScene(-1)">← ${T('المشهد السابق','Previous scene')}</button>
     <button class="secondary" onclick="stepIdeaScene(1)">${T('المشهد التالي','Next scene')} →</button>
@@ -30,26 +33,56 @@ function ideaViewer(scene){
   </div></div>`;
 }
 
+function ideaAudioControls(){
+ return `<div class="idea-audio-tools">
+  <button type="button" class="secondary" onclick="startIdeaSequence(ideaFlashVoice,true)">▷ ${T('انطق كل الكلمات','Play all words')}</button>
+  <button type="button" class="secondary" data-idea-sync aria-pressed="${ideaFlashVoice}" onclick="toggleIdeaFlashVoice()">${T('مزامنة الوميض مع النطق','Sync flashes with audio')}</button>
+  <button type="button" class="secondary" data-idea-stop onclick="setIdeaWordMode('hidden')" hidden>${T('إيقاف','Stop')}</button>
+  <small data-idea-audio-status role="status"></small></div>`;
+}
+
 function clearIdeaFlash(){
  clearTimeout(ideaFlashTimer);
  clearTimeout(ideaRevealTimer);
- ideaFlashStep=0;
+ ideaSequence=null;
+ ideaVoice?.stop();
+ ideaVoice=null;
  ideaSelected=null;
 }
 
-function setIdeaWordMode(mode){
- ideaWordMode=mode;
+function updateIdeaPlayback(status=''){
+ document.querySelectorAll('[data-idea-sync]').forEach(button=>button.setAttribute('aria-pressed',String(ideaFlashVoice)));
+ document.querySelectorAll('[data-idea-stop]').forEach(button=>{button.hidden=!ideaSequence&&!ideaVoice});
+ document.querySelectorAll('[data-idea-audio-status]').forEach(element=>{element.textContent=status});
+ document.querySelectorAll('[data-idea-vocab]').forEach(row=>row.classList.toggle('active',+row.dataset.ideaVocab===ideaSelected));
+}
+
+function setIdeaWordMode(mode,user=true){
+ if(mode==='hidden'&&user)ideaAutoFlash=false;
  clearIdeaFlash();
- document.querySelectorAll('[data-idea-word-mode]').forEach(button=>{
-  button.setAttribute('aria-pressed',String(button.dataset.ideaWordMode===mode));
- });
+ ideaWordMode=mode;
+ if(mode==='flash'){startIdeaSequence(true,ideaFlashVoice);return}
+ updateIdeaModeButtons();
  paintIdeaLabels(currentIdeaScene());
+ updateIdeaPlayback();
+}
+
+function updateIdeaModeButtons(){
+ document.querySelectorAll('[data-idea-word-mode]').forEach(button=>{
+  button.setAttribute('aria-pressed',String(button.dataset.ideaWordMode===ideaWordMode));
+ });
+}
+
+function toggleIdeaFlashVoice(){
+ ideaFlashVoice=!ideaFlashVoice;
+ if(ideaFlashVoice||ideaSequence?.flash)startIdeaSequence(true,ideaFlashVoice);
+ else updateIdeaPlayback();
 }
 
 function setIdeaLabelLanguage(language){
  ideaLabelLanguage=language;
  try{localStorage.setItem('nasaq-idea-label-language',language)}catch{}
- setIdeaWordMode(language==='alternate'?'flash':ideaWordMode==='hidden'?'visible':ideaWordMode);
+ setIdeaWordMode(language==='alternate'||ideaWordMode==='flash'?'flash':ideaWordMode);
 }
 
 function mountIdeaViewer(scene){
@@ -65,7 +98,7 @@ function mountIdeaViewer(scene){
   ideaFrameObserver=new ResizeObserver(positionIdeaLabels);
   ideaFrameObserver.observe(viewer.querySelector('.idea-picture-frame'));
  }
- paintIdeaLabels(scene);
+ if(!ideaSequence)paintIdeaLabels(scene);
 }
 
 function toggleIdeaZoom(){
@@ -73,7 +106,9 @@ function toggleIdeaZoom(){
  if(!dialog||!viewer||!scene)return;
  if(dialog.open){dialog.close();return}
  dialog.showModal();
- mountIdeaViewer(scene);
+ dialog.querySelector('.idea-zoom-content').append(viewer);
+ $('#idea-zoom-title').textContent=T(scene.ar,scene.en);
+ $('#idea-zoom-button').textContent=T('عودة للحجم العادي','Return to normal size');
  positionIdeaLabels();
 }
 
@@ -96,46 +131,53 @@ function ideaLabelText(word,language){
 function updateIdeaCaption(word,language){
  const caption=$('#idea-picture-caption');
  if(!caption)return;
- const kind=word&&{object:['اسم','Noun'],action:['فعل','Verb'],description:['صفة','Adjective']}[word.kind];
- caption.innerHTML=word?ideaLabelText(word,language)+(kind?`<span class="idea-caption-kind">${T(...kind)}</span>`:''):'';
+ caption.innerHTML=word?ideaLabelText(word,language)+`<span class="idea-caption-kind">${ideaWordKind(word)}</span>`:'';
 }
 
-function showIdeaMarker(index){
+function ideaWordKind(word){
+ const kind={object:['اسم','Noun'],action:['فعل','Verb'],description:['صفة','Adjective']}[word.kind]||['عبارة','Phrase'];
+ return T(...kind);
+}
+
+function showIdeaMarker(index,voice){
  const scene=currentIdeaScene(),word=scene?.words[index];
  if(!word)return;
- clearTimeout(ideaFlashTimer);
- clearTimeout(ideaRevealTimer);
+ if(voice)stopSpeech();
+ clearIdeaFlash();
+ if(ideaWordMode==='flash'){ideaWordMode='hidden';updateIdeaModeButtons()}
  ideaSelected=index;
  const language=ideaLabelLanguage==='ar'?'en':'ar';
  updateIdeaCaption(word,language==='en'?'both':'ar');
- if(ideaWordMode==='flash'){
-  paintIdeaPoints([{...word,index}],language);
- }else{
-  const layer=$('#idea-picture-labels');
-  layer?.querySelectorAll('.idea-map-point').forEach(point=>{
-   const selected=+point.dataset.word===index;
-   point.classList.toggle('selected',selected);
-   const w=scene.words[+point.dataset.word];
-   point.querySelector('.idea-map-label').innerHTML=ideaLabelText(w,selected?language:ideaLabelLanguage);
+ const anchored=Number.isFinite(word.x)&&Number.isFinite(word.y);
+ if(ideaWordMode==='visible')paintIdeaPoints(visibleIdeaWords(scene).filter(w=>Number.isFinite(w.x)&&Number.isFinite(w.y)),ideaLabelLanguage,language);
+ else paintIdeaPoints(anchored?[{...word,index}]:[],language);
+ if(voice){
+  const playback=pronounceIdeaWord(word,voice,name=>{
+   queueMicrotask(()=>{if(ideaVoice===playback)updateIdeaPlayback(`${word.en} · ${name}`)});
   });
-  positionIdeaLabels();
+  ideaVoice=playback;
+  playback.done.then(ok=>{
+   if(ideaVoice!==playback)return;
+   ideaVoice=null;
+   updateIdeaPlayback(ok?'':T('تعذّر النطق. جرّب مرة أخرى.','Playback failed. Try again.'));
+  });
  }
+ updateIdeaPlayback();
  ideaRevealTimer=setTimeout(()=>{
-  updateIdeaCaption(null);
-  if(ideaWordMode==='flash'){paintIdeaLabels(scene);return}
-  const label=$(`.idea-map-point[data-word="${index}"] .idea-map-label`);
-  if(label)label.innerHTML=ideaLabelText(word,ideaLabelLanguage);
-  positionIdeaLabels();
+  ideaSelected=null;
+  paintIdeaLabels(scene);
+  updateIdeaPlayback();
  },2400);
 }
 
-function paintIdeaPoints(words,language){
+function paintIdeaPoints(words,language,selectedLanguage=language){
  const layer=$('#idea-picture-labels');
+ if(!layer)return;
  layer.innerHTML='<svg class="idea-map-leaders" aria-hidden="true"></svg>'+words.map(word=>{
   const name=H(word.en+' · '+word.ar),selected=ideaSelected===word.index;
   return `<div class="idea-map-point ${selected?'selected':''}" data-word="${word.index}" style="--x:${word.x}%;--y:${word.y}%">
    <button type="button" class="idea-pin" onclick="showIdeaMarker(${word.index})" aria-label="${name}">${word.index+1}</button>
-   <button type="button" class="idea-map-label" onclick="showIdeaMarker(${word.index})">${ideaLabelText(word,language)}</button></div>`;
+   <button type="button" class="idea-map-label" onclick="showIdeaMarker(${word.index})">${ideaLabelText(word,selected?selectedLanguage:language)}</button></div>`;
  }).join('');
  positionIdeaLabels();
 }
@@ -143,29 +185,94 @@ function paintIdeaPoints(words,language){
 function paintIdeaLabels(scene){
  const layer=$('#idea-picture-labels');
  if(!scene||!layer)return;
- clearTimeout(ideaFlashTimer);
- clearTimeout(ideaRevealTimer);
  updateIdeaCaption(null);
  const words=visibleIdeaWords(scene).filter(word=>Number.isFinite(word.x)&&Number.isFinite(word.y));
- if(ideaWordMode==='hidden'||!words.length){layer.innerHTML='';return}
- if(ideaWordMode==='visible'){paintIdeaPoints(words,ideaLabelLanguage);return}
- const flash=()=>{
-  if(page!=='lab'||ideaWordMode!=='flash'||scene.id!==ideaSceneId||!layer.isConnected)return;
-  const alternating=ideaLabelLanguage==='alternate';
-  const step=ideaFlashStep++;
-  const word=words[(alternating?Math.floor(step/2):step)%words.length];
-  const language=alternating?(step%2?'ar':'en'):ideaLabelLanguage;
-  ideaSelected=word.index;
-  paintIdeaPoints([word],language);
-  updateIdeaCaption(word,language==='ar'?'both':'ar');
-  ideaFlashTimer=setTimeout(()=>{
-   layer.innerHTML='';
-   updateIdeaCaption(null);
-   ideaFlashTimer=setTimeout(flash,1400);
-  },2300);
- };
- flash();
+ if(ideaWordMode==='visible')paintIdeaPoints(words,ideaLabelLanguage==='alternate'?'en':ideaLabelLanguage);
+ else layer.innerHTML='';
 }
+
+function pronounceIdeaWord(word,voice,onVoice=()=>{}){
+ const recording=PILOT?.trainingAudio?.[ideaWordCueId(word.en,voice)];
+ let audio,fallback,stopped=false,finish;
+ const done=new Promise(resolve=>{finish=resolve});
+ const recover=()=>{
+  if(stopped||fallback)return;
+  audio?.pause();
+  onVoice(T('صوت الجهاز','Device voice'));
+  fallback=synthesizeTrainingCue(word.en,state.rate||1,voice);
+  fallback.done.then(finish);
+ };
+ if(recording?.text===word.en){
+  audio=new Audio(recording.path);
+  audio.playbackRate=state.rate||1;
+  audio.onplaying=()=>onVoice(voice==='male'?'Adam':'Bella');
+  audio.onended=()=>finish(true);
+  audio.onerror=recover;
+  audio.play().catch(recover);
+ }else recover();
+ return {done,stop(){stopped=true;audio?.pause();fallback?.stop();finish(false)}};
+}
+
+function startIdeaSequence(flash,sound){
+ const scene=currentIdeaScene();
+ if(!scene)return;
+ if(sound)stopSpeech();
+ clearIdeaFlash();
+ const words=visibleIdeaWords(scene);
+ if(!words.length){setIdeaWordMode('hidden',false);updateIdeaPlayback(T('لا توجد مفردات ضمن هذا الفلتر.','No vocabulary matches this filter.'));return}
+ const sequence={flash,sound};
+ ideaSequence=sequence;
+ if(flash)ideaWordMode='flash';
+ else if(ideaWordMode==='flash'){ideaWordMode='hidden';paintIdeaLabels(scene)}
+ updateIdeaModeButtons();
+ const play=async index=>{
+  if(ideaSequence!==sequence||scene.id!==ideaSceneId)return;
+  if(index===words.length){
+   if(sound)recordDailyPractice('words',scene.id);
+   if(flash)setIdeaWordMode('hidden',false);
+   else{clearIdeaFlash();paintIdeaLabels(scene);updateIdeaPlayback()}
+   return;
+  }
+  const word=words[index],voice=index%2?'female':'male';
+  const language=ideaLabelLanguage==='alternate'?'en':ideaLabelLanguage;
+  const anchored=Number.isFinite(word.x)&&Number.isFinite(word.y);
+  ideaSelected=word.index;
+  const paint=label=>{
+   if(flash)paintIdeaPoints(anchored?[word]:[],label);
+   updateIdeaCaption(word,label==='ar'?'both':'ar');
+  };
+  paint(language);
+  const progress=T(`الكلمة ${index+1} من ${words.length}`,`Word ${index+1} of ${words.length}`);
+  updateIdeaPlayback(progress+' · '+word.en);
+  const next=()=>{
+   if(flash)paintIdeaPoints([],language);
+   ideaFlashTimer=setTimeout(()=>play(index+1),350);
+  };
+  if(sound){
+   const playback=pronounceIdeaWord(word,voice,name=>{
+    if(ideaSequence===sequence)updateIdeaPlayback(`${progress} · ${word.en} · ${name}`);
+   });
+   ideaVoice=playback;
+   const ok=await playback.done;
+   if(ideaSequence!==sequence)return;
+   ideaVoice=null;
+   if(!ok){setIdeaWordMode('hidden',false);updateIdeaPlayback(T('تعذّر النطق. شغّل الكلمات مرة أخرى.','Playback failed. Start the word list again.'));return}
+  }
+  const wait=sound?650:1550;
+  ideaFlashTimer=setTimeout(()=>{
+   if(flash&&ideaLabelLanguage==='alternate'){
+    paint('ar');ideaFlashTimer=setTimeout(next,wait);
+   }else next();
+  },wait);
+ };
+ play(0);
+}
+
+const stopSpeechBeforeIdeaWords=stopSpeech;
+stopSpeech=function(){
+ if(ideaVoice||ideaSequence?.sound)setIdeaWordMode('hidden',false);
+ stopSpeechBeforeIdeaWords();
+};
 
 function positionIdeaLabels(){
  const layer=$('#idea-picture-labels');

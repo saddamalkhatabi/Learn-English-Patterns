@@ -121,8 +121,10 @@ function chooseIdeaScene(id,scroll=true){
  const host=$('#idea-lab-active');
  if(!scene||!host)return;
  if(ideaSceneId!==scene.id)ideaArchiveView=null;
+ const introduce=ideaAutoFlash&&!ideaIntroducedScenes.has(scene.id)&&ideaWordMode!=='visible';
  ideaSceneId=scene.id;
  clearIdeaFlash();
+ if(ideaWordMode==='flash')ideaWordMode='hidden';
  if($('#idea-zoom')?.open)$('#idea-zoom .idea-zoom-content').replaceChildren();
  try{localStorage.setItem('nasaq-idea-scene',scene.id)}catch{}
  host.innerHTML=`<article class="panel idea-lab-exercise">
@@ -133,6 +135,10 @@ function chooseIdeaScene(id,scroll=true){
   </div></article>`;
  paintIdeaTask(scene);
  mountIdeaViewer(scene);
+ if(introduce){
+  ideaIntroducedScenes.add(scene.id);
+  startIdeaSequence(true,false);
+ }
  if(scroll&&!$('#idea-zoom')?.open){host.querySelector('h2').focus({preventScroll:true});host.scrollIntoView({block:'start'})}
 }
 function stepIdeaScene(delta){
@@ -151,7 +157,7 @@ function setIdeaWordFilter(value){
  clearIdeaFlash();
  const scene=currentIdeaScene();
  if(['describe','recall','write'].includes(ideaAction))paintIdeaTask(scene);
- paintIdeaLabels(scene);
+ setIdeaWordMode(ideaWordMode,false);
 }
 function visibleIdeaWords(scene){
  return scene.words.map((word,index)=>({ ...word,index })).filter(word=>!ideaWordFilter||word.kind===ideaWordFilter);
@@ -164,8 +170,13 @@ function paintIdeaTask(scene){
  if(!scene)return;
  const entries=ideaWordFilter==='phrase'?
   ideaPhraseExamples(scene).map((phrase,index)=>`<li><button class="textlink" onclick="hearIdeaPhrase(${index})" lang="en" dir="ltr">▶ ${H(phrase.en)}</button>${EP.ar(phrase.ar)}</li>`):
-  visibleIdeaWords(scene).map(word=>`<li><button class="textlink" onclick="highlightIdeaWord(${word.index})" lang="en" dir="ltr">▶ ${H(word.en)}${Number.isFinite(word.x)?` <small class="idea-word-number">${word.index+1}</small>`:''}</button>${EP.ar(word.ar)}</li>`);
- const words=`<ul class="idea-vocab">${entries.join('')}</ul>`;
+  visibleIdeaWords(scene).map(word=>`<li data-idea-vocab="${word.index}">
+   <div><strong lang="en" dir="ltr">${H(word.en)}</strong>${Number.isFinite(word.x)?` <small class="idea-word-number">${word.index+1}</small>`:''}
+    <span class="idea-vocab-meaning">${EP.ar(word.ar)} <small>${ideaWordKind(word)}</small></span></div>
+   <div class="idea-word-voices">${[['male','Adam'],['female','Bella']].map(([voice,name])=>
+    `<button type="button" class="secondary" onclick="showIdeaMarker(${word.index},'${voice}')" aria-label="${H(word.en+' · '+name)}">▷ ${name}</button>`).join('')}</div></li>`);
+ const words=`<section class="idea-vocabulary"><h3>${T('مفردات المشهد','Scene vocabulary')}</h3>
+  ${ideaWordFilter!=='phrase'?ideaAudioControls():''}<ul class="idea-vocab">${entries.join('')}</ul></section>`;
  const sentence=`<div class="idea-model"><p lang="en" dir="ltr">${H(scene.sentenceEn)}</p>${EP.ar(scene.sentenceAr)}
   <button class="secondary" onclick="hearIdeaLine(-1)">▶ ${T('استمع إلى الجملة','Listen to the sentence')}</button></div>`;
  const disclose=(title,body)=>`<details><summary>${title}</summary>${body}</details>`;
@@ -189,13 +200,6 @@ function paintIdeaTask(scene){
  host.innerHTML=ideaAction==='recall'?
   `<p>${T('سمِّ شيئين، ثم صف فعلًا وصفة من الصورة قبل كشف المفردات.','Name two objects, then describe an action and an adjective before revealing the words.')}</p>${disclose(T('اكشف المفردات واسمعها','Reveal and hear the words'),words)}${disclose(T('اكشف جملة نموذجية','Reveal a model sentence'),sentence)}`:
   `<p>${T('صف شيئًا في المقدمة، وآخر في الخلف، واذكر ما يحدث الآن.','Describe something in the foreground and background, then say what is happening.')}</p>${sentence}${words}`;
-}
-function highlightIdeaWord(index){
- const word=currentIdeaScene()?.words[index];
- if(!Number.isFinite(word?.x)){hearIdeaLine(index);return}
- if(ideaWordMode!=='visible')setIdeaWordMode('visible');
- showIdeaMarker(index);
- hearIdeaLine(index);
 }
 function hearIdeaWriting(){
  const text=ideaWriting.get(ideaSceneId)?.trim();

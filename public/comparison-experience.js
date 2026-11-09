@@ -36,6 +36,9 @@ function comparisonsPage(){
    <label>${T('وقفة القراءة','Reading break')} <select id="comparison-delay">
     <option value="8">8 s</option><option value="15" selected>15 s</option><option value="25">25 s</option><option value="45">45 s</option>
    </select></label>
+   <label>${T('بين المقارنات','Between comparisons')} <select id="comparison-transition">
+    <option value="3">3 s</option><option value="6" selected>6 s</option><option value="10">10 s</option><option value="15">15 s</option>
+   </select></label>
    <label>${T('الصوت','Voice')} <select id="comparison-voice">
     <option value="alternate">${T('صوت مختلف لكل مقارنة','Alternate by comparison')}</option><option value="male">Adam</option><option value="female">Bella</option>
    </select></label>
@@ -152,23 +155,45 @@ function startComparisonGuide(mode,id){
  const sentences=new Map([...PILOT.sentences,...(REFERENCE_CORPUS?.sentences||[])].map(sentence=>[sentence.id,sentence]));
  const voiceMode=$('#comparison-voice').value;
  const delay=Number($('#comparison-delay').value)*1000;
+ const transition=Number($('#comparison-transition').value)*1000;
  const steps=items.flatMap((item,index)=>{
   const voice=voiceMode==='alternate'?(index%2?'female':'male'):voiceMode;
   const opening={item,index,phase:mode==='read'?'intro':'narration',voice};
   const practice={item,index,phase:'practice'};
-  if(mode==='read')return [opening,{item,index,phase:'examples'},practice];
+  const boundary=index+1<items.length?[{item,index,phase:'break',next:items[index+1],duration:transition}]:[];
+  if(mode==='read')return [opening,{item,index,phase:'examples'},practice,...boundary];
   const available=item.samples.filter(sample=>sentences.has(sample.sentenceId));
-  const examples=available.map((sample,example)=>{
+  const examples=available.flatMap((sample,example)=>{
    const {sentenceId,sceneId,form}=sample;
    const sentence=sentences.get(sentenceId);
-   return {item,index,example,total:available.length,form,phase:'audio',sentence,scene:sentences.get(sceneId)||sentence,voice};
+   const step={item,index,example,total:available.length,form,phase:'audio',sentence,scene:sentences.get(sceneId)||sentence,voice};
+   const note=comparisonExampleNote(sentence);
+   return note.en?[step,{...step,phase:'example-note',note}]:[step];
   });
-  return [opening,...examples,practice];
+  return [opening,...examples,practice,...boundary];
  });
- comparisonGuide={steps,index:0,count:items.length,delay,left:delay,running:false,timer:null,frame:null,audio:null};
+ comparisonGuide={steps,index:0,count:items.length,delay,left:delay,running:false,timer:null,frame:null,audio:null,completed:new Set()};
  paintComparisonGuide();
  $('#comparison-guide').scrollIntoView({block:'start'});
  resumeComparisonGuide();
+}
+function comparisonExampleNote(sentence){
+ const lesson=learningMeta(sentence.pattern_id);
+ const ref=EP.entry(sentence);
+ return {en:lesson?.explanation_en||ref?.rule_en,ar:lesson?.explanation_ar||ref?.rule_ar};
+}
+function comparisonNarration(step){
+ if(step.phase==='narration')return {id:`comparison-${step.item.id}-${step.voice}`,text:spokenComparison(step.item)};
+ if(step.phase==='example-note')return {id:`comparison-example-${step.sentence.id}-${step.voice}`,text:spokenComparisonNote(step.note.en)};
+ return null;
+}
+function completeComparisonStep(){
+ const guide=comparisonGuide;
+ guide.completed.add(guide.index);
+ const step=guide.steps[guide.index];
+ if(step.phase==='practice'&&guide.steps.every((entry,index)=>
+  entry.item!==step.item||entry.phase==='break'||guide.completed.has(index)))recordDailyPractice('comparison',step.item.id);
+ advanceComparisonGuide(1);
 }
 function disposeComparisonAudio(guide){
  if(!guide.audio)return;
@@ -187,8 +212,8 @@ function releaseComparisonGuide(){
 function pauseComparisonGuide(){
  const guide=comparisonGuide;
  if(!guide)return;
- const phase=guide.steps[guide.index]?.phase;
- if(guide.running&&!guide.audio&&phase!=='narration')guide.left=Math.max(0,guide.deadline-Date.now());
+ const step=guide.steps[guide.index];
+ if(guide.running&&!guide.audio&&!comparisonNarration(step))guide.left=Math.max(0,guide.deadline-Date.now());
  guide.running=false;
  guide.narration?.stop();guide.narration=null;
  clearInterval(guide.timer);
@@ -206,18 +231,18 @@ function resumeComparisonGuide(){
   audio.play().catch(()=>{
    if(comparisonGuide===guide&&guide.audio===audio&&guide.running)comparisonAudioError(guide);
   });
- }else if(guide.steps[guide.index].phase==='narration'){
+ }else if(comparisonNarration(guide.steps[guide.index])){
   const step=guide.steps[guide.index];
-  const narration=synthesizeTrainingCue(spokenComparison(step.item),1,step.voice);
+  const narration=synthesizeTrainingCue(comparisonNarration(step).text,1,step.voice);
   guide.narration=narration;
   narration.done.then(completed=>{
    if(comparisonGuide!==guide||guide.narration!==narration||!guide.running)return;
-   if(completed)advanceComparisonGuide(1);else comparisonAudioError(guide);
+   if(completed)completeComparisonStep();else comparisonAudioError(guide);
   });
  }else{
   guide.deadline=Date.now()+guide.left;
   guide.timer=setInterval(()=>{
-   if(Date.now()>=guide.deadline)advanceComparisonGuide(1);
+   if(Date.now()>=guide.deadline)completeComparisonStep();
    else updateComparisonGuide();
   },150);
  }
@@ -243,7 +268,7 @@ function advanceComparisonGuide(delta){
   $('#comparison-guide').innerHTML=`<p class="panel" role="status">${T('اكتملت المقارنات المختارة.','The selected comparisons are complete.')}</p>`;
   return;
  }
- guide.left=guide.delay;
+ guide.left=guide.steps[guide.index].duration||guide.delay;
  paintComparisonGuide();
  const panel=$('#comparison-guide');
  if(panel.getBoundingClientRect().top<0)panel.scrollIntoView({block:'start'});
@@ -266,12 +291,15 @@ function updateComparisonGuide(){
   }
   meter.value=ms;
   $('#comparison-clock').textContent=step.voice==='male'?'Adam':'Bella';
- }else if(step.phase==='narration'){
-  $('#comparison-clock').textContent=step.voice==='male'?'Adam':'Bella';
+ }else if(comparisonNarration(step)){
+  $('#comparison-clock').textContent=T('صوت الجهاز','Device voice');
  }else{
   const left=guide.running?Math.max(0,guide.deadline-Date.now()):guide.left;
-  meter.value=guide.delay-left;
-  $('#comparison-clock').textContent=T(`${Math.ceil(left/1000)} ثانية للقراءة`,`${Math.ceil(left/1000)} seconds to read`);
+  meter.value=meter.max-left;
+  const seconds=Math.ceil(left/1000);
+  $('#comparison-clock').textContent=step.phase==='break'?
+   T(`تبدأ المقارنة التالية بعد ${seconds} ث`,`Next comparison in ${seconds}s`):
+   T(`${seconds} ثانية للقراءة`,`${seconds} seconds to read`);
  }
  $('#comparison-play').textContent=guide.running?T('إيقاف مؤقت','Pause'):T('استئناف','Resume');
 }
@@ -298,18 +326,24 @@ function paintComparisonGuide(){
   narration:T('استمع إلى الشرح الكامل','Listen to the full explanation'),
   examples:T('جملة من كل نمط','One example per pattern'),
   audio:T(`المثال المسموع ${step.example+1} / ${step.total}`,`Recorded example ${step.example+1} / ${step.total}`),
+  'example-note':T(`لماذا استُخدم هذا النمط؟ · المثال ${step.example+1}`,`Why this pattern? · Example ${step.example+1}`),
   practice:T('توسّع وجرّب','Explore and practise'),
+  break:T('وقفة بين المقارنات','Pause between comparisons'),
  };
- const candidate=PILOT.trainingAudio?.[`comparison-${item.id}-${step.voice}`];
+ const narration=comparisonNarration(step);
+ const candidate=PILOT.trainingAudio?.[narration?.id];
  const recording=phase==='audio'?step.sentence.recordings[step.voice]:
-  phase==='narration'&&candidate?.text===spokenComparison(item)?candidate:null;
- const content=phase==='audio'?comparisonSample(step):
+  candidate?.text===narration?.text?candidate:null;
+ const content=phase==='break'?`<div class="comparison-transition"><p>${T('اكتملت هذه المقارنة. استعد للمقارنة التالية','This comparison is complete. Up next')}</p>
+  <strong>${H(T(step.next.ar,step.next.en))}</strong></div>`:
+  phase==='example-note'?comparisonSample(step)+`<div class="comparison-transition">${EP.pair(step.note.ar,step.note.en)}</div>`:
+  phase==='audio'?comparisonSample(step):
   comparisonCards(item,!['intro','narration'].includes(phase),phase==='practice')+(phase==='practice'?comparisonExercise(item):'');
  $('#comparison-guide').innerHTML=`<section class="panel comparison-card">
   <p>${T('المقارنة','Comparison')} ${index+1} / ${guide.count} · ${titles[phase]}</p><h2>${H(T(item.ar,item.en))}</h2>
-  <p>${H(T(item.noteAr,item.noteEn))}</p>${content}
+  ${['audio','example-note','break'].includes(phase)?'':`<p>${H(T(item.noteAr,item.noteEn))}</p>`}${content}
   ${recording?`<audio id="comparison-audio" preload="auto" src="${H(recording.path)}"></audio>`:''}
-  <progress id="comparison-meter" max="${recording?.duration_ms||guide.delay}" value="0"></progress> <span id="comparison-clock"></span>
+  <progress id="comparison-meter" aria-label="${titles[phase]}" max="${recording?.duration_ms||step.duration||guide.delay}" value="0"></progress> <span id="comparison-clock"></span>
   <p id="comparison-audio-error" role="status"></p>
   <div class="buttonrow"><button class="secondary" onclick="advanceComparisonGuide(-1)" ${guide.index===0?'disabled':''}>${T('السابق','Previous')}</button>
   <button class="secondary" id="comparison-play" onclick="comparisonGuide.running?pauseComparisonGuide():resumeComparisonGuide()"></button>
@@ -328,7 +362,7 @@ function paintComparisonGuide(){
    };
    paint();
   };
-  audio.onended=()=>{if(guide.running&&guide.audio===audio)advanceComparisonGuide(1)};
+  audio.onended=()=>{if(guide.running&&guide.audio===audio)completeComparisonStep()};
   audio.onerror=()=>{if(guide.audio===audio)comparisonAudioError(guide)};
   if(phase==='audio')window.EPOffline?.rememberSentences(step.scene===step.sentence?[step.sentence]:[step.sentence,step.scene]);
  }

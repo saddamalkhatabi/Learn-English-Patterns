@@ -209,7 +209,7 @@ function openDialogue(id,queued=false,hostId='dialogue-player',preview=false,res
   const storePosition=()=>{
    if(host.querySelector('audio')!==audio)return;
    const queue=dialogueQueue?.hostId===hostId?dialogueQueue:null;
-   if(hostId==='lesson-dialogue-player')coverage=NasaqRoutePlayer.conversationCoverage(audio,coverage);
+   coverage=NasaqRoutePlayer.conversationCoverage(audio,coverage);
    dialogueResume[key]={id,sha256:dialogue.audio.sha256,offset:audio.ended?0:audio.currentTime,coverage:audio.ended?undefined:coverage,queue:queue?.ids};
    lastSave=Date.now();saveDialogueResume();
    const resumeButton=document.querySelector(`[data-dialogue-resume="${key}"]`);
@@ -231,6 +231,7 @@ function openDialogue(id,queued=false,hostId='dialogue-player',preview=false,res
   audio.addEventListener('error',()=>{host.querySelector('.dialogue-play-status').textContent=T('تعذّر تحميل التسجيل. حاول مجددًا بعد الاتصال.','The recording could not load. Try again after connecting.')});
   audio.addEventListener('ended',()=>{
    if(audio!==host.querySelector('audio'))return;
+   if(NasaqRoutePlayer.heardConversation(audio,dialogue.audio,coverage))recordDailyPractice('dialogue',dialogue.id);
    if(hostId==='lesson-dialogue-player')finishLessonConversation(dialogue,audio,coverage);
    storePosition();paintButton();
    if(queued&&dialogueQueue?.hostId===hostId)advanceDialogueQueue(1);
@@ -371,6 +372,9 @@ function dialoguesPage(){
  }
  const seriesChoices=Object.fromEntries([...groups.keys()].map(series=>[series,[dialogueSeriesLabel(series),dialogueSeriesLabel(series)]]));
  return head(T('المحادثات','Conversations'),T('استمع إلى عنوان كل محادثة ثم إلى شخصين يستخدمان الأنماط في موقف واحد. يتغيّر المشهد مع الأدوار، ويمكنك فتح النص الكامل في أي وقت.','Hear each title, then listen to two people use patterns in context. The scene follows the turns, and the full transcript is always available.'))+
+  `<aside class="panel dialogue-story-entry"><div><b>${T('تدرّب مع قصة قصيرة','Practise with a short story')}</b>
+   <p>${T('استمع إلى «مقهى في مدينة جديدة» ثم أجب عن سؤال الفهم.','Listen to “A café in a new city,” then answer a comprehension question.')}</p></div>
+   <a class="secondary" href="#stories">${T('افتح القصة','Open story')} ↗</a></aside>`+
   `<div class="buttonrow dialogue-series">${[...groups].map(([series,count])=>
    `<button class="secondary" onclick="selectDialogueSeries(${series})">${dialogueSeriesLabel(series)} · ${count}</button>`
   ).join('')}</div>

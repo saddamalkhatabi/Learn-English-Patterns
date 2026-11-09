@@ -9,3 +9,27 @@
 .lesson-rule-reminder summary:focus-visible{outline-offset:.2rem}
 .lesson-rule-audio{margin-block:.6rem}
 #lesson-conversation .field{max-width:40rem;margin-block:.75rem}
+.home-hero-photo img{display:block;width:min(100%,420px);height:auto;border-radius:80px 80px 18px 18px;box-shadow:0 16px 42px #15382b35}
+.home-achievement{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;margin:1.35rem 0 2rem;align-items:start}
+.home-achievement h2{margin:.35rem 0}
+.home-achievement progress{display:block;width:100%;height:.7rem;accent-color:#1e6957}
+.home-achievement small{color:#425b51}
+.home-history{border-inline-start:1px solid #dfe6de;padding-inline-start:1.3rem}
+.home-stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.5rem}
+.home-stats>div{background:#ecf3ea;border-radius:10px;padding:.5rem .75rem}
+.home-stats strong{display:block;font-size:1.35rem;color:#195649}
+.home-week{list-style:none;padding:0;margin:.6rem 0;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:.2rem}
+.home-week li{text-align:center;min-width:0}
+.home-week li span{display:grid;place-items:center;background:#f0f2ed;border-radius:50%;width:1.6rem;height:1.6rem;margin:0 auto;color:#52665e}
+.home-week li.practised span{background:#1e6957;color:white}
+.home-week small{display:block;font-size:.69rem;overflow-wrap:anywhere}
+.home-services{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,235px),1fr));gap:1rem}
+.home-service{display:flex;flex-direction:column;color:inherit;text-decoration:none;overflow:hidden;background:#fff;border:1px solid #dfe6de;border-radius:14px;transition:border-color .15s,box-shadow .15s}
+.home-service:is(:hover,:focus-visible){border-color:#1e6957;box-shadow:0 6px 22px #163b341a}
+.home-service img{display:block;width:100%;height:auto;aspect-ratio:5/3;object-fit:cover}
+.home-service>div{display:flex;flex:1;flex-direction:column;padding:.85rem 1rem}
+.home-service h3,.home-service p{margin:0 0 .5rem}
+.home-service .textlink{margin-block-start:auto}
+.home-goal .primary,.dialogue-story-entry a.secondary{display:inline-block;text-decoration:none}
+html[data-pattern-image="hidden"] .home-service img{display:none}
+@media(max-width:760px){.home-achievement{grid-template-columns:1fr}.home-history{border-inline-start:0;border-block-start:1px solid #dfe6de;padding-inline-start:0;padding-block-start:1rem}}
