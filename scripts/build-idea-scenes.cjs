@@ -67,5 +67,16 @@ for(const line of text('production/idea-lab-scenes.tsv')){
   width:500,height:300,sha256:crypto.createHash('sha256').update(bytes).digest('hex')});
 }
 for(const [topic,rows] of annotationRows)assert(rows.length<=scenes.filter(s=>s.topic===topic).length,topic);
+const byId=new Map(scenes.map(scene=>[scene.id,scene]));
+for(const line of text('production/idea-pattern-practice.tsv')){
+ const [sceneId,rawId,en,ar,taskEn,taskAr,...extra]=line.split('|');
+ const scene=byId.get(sceneId),id=Number(rawId);
+ assert(scene&&patternIds.has(id)&&en&&ar&&taskEn&&taskAr&&!extra.length,line);
+ assert(!scene.patterns.some(pattern=>pattern.id===id&&pattern.en),line);
+ scene.patterns=scene.patterns.filter(pattern=>pattern.id!==id);
+ scene.patterns.push({id,en,ar,taskEn,taskAr});
+}
+const covered=new Set(scenes.flatMap(scene=>scene.patterns.filter(pattern=>pattern.en).map(pattern=>pattern.id)));
+assert.deepEqual(covered,patternIds,'Every lesson needs a contextual scene example');
 fs.writeFileSync('public/idea-scenes.json',JSON.stringify({schema:2,topics,scenes},null,2)+'\n');
 console.log(`Indexed ${scenes.length} independent Idea Lab scenes`);

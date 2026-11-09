@@ -1,11 +1,12 @@
-const {spokenTrainingCue,trainingCueId,spokenComparison,spokenComparisonNote,ideaWordCueId}=require('../public/training-narration.js');
+const {spokenTrainingCue,trainingCueId,spokenComparison,spokenComparisonNote,ideaWordCueId,ideaSceneCueId}=require('../public/training-narration.js');
 const metadata=new Map(require('../public/curriculum.json').patterns.map(p=>[p.id,p]));
 const course=['pilot','expansion-media'].map(name=>require('../public/'+name+'.json'));
 const patterns=course.flatMap(part=>part.patterns);
 const sentences=new Map(course.flatMap(part=>part.sentences).map(row=>[row.id,row]));
 const references=require('../public/teaching-index.json').sentences;
 const comparisons=require('../public/comparisons.json');
-const words=new Set(require('../public/idea-scenes.json').scenes.flatMap(scene=>scene.words.map(word=>word.en)));
+const {scenes}=require('../public/idea-scenes.json');
+const words=new Set(scenes.flatMap(scene=>scene.words.map(word=>word.en)));
 const voices=['male','female'];
 const notes=new Set(comparisons.flatMap(item=>item.samples.map(sample=>sample.sentenceId)));
 const expected=Object.fromEntries([
@@ -18,6 +19,11 @@ const expected=Object.fromEntries([
   return note?voices.map(voice=>[`comparison-example-${id}-${voice}`,spokenComparisonNote(note)]):[];
  }),
  ...[...words].flatMap(word=>voices.map(voice=>[ideaWordCueId(word,voice),word])),
+ ...scenes.flatMap(scene=>{
+  const examples=scene.patterns.filter(pattern=>pattern.en);
+  if(scene.topic==='morning')examples.push({id:'model',en:scene.sentenceEn});
+  return examples.flatMap(example=>voices.map(voice=>[ideaSceneCueId(scene.id,example.id,voice),example.en]));
+ }),
 ]);
 module.exports=expected;
 if(require.main===module)process.stdout.write(JSON.stringify(expected));

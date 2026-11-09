@@ -29,6 +29,9 @@ function spokenComparisonNote(note){
 function ideaWordCueId(text,voice){
  return `idea-word-${text.toLowerCase().trim().replace(/'/g,'-apostrophe-').replace(/\s+/g,'-')}-${voice}`;
 }
+function ideaSceneCueId(scene,pattern,voice){
+ return `idea-example-${scene}-${pattern}-${voice}`;
+}
 function narrateTrainingCue(kind,pattern,rate=1){
  const text=spokenTrainingCue(kind,pattern,pattern&&learningMeta(pattern.id));
  const recording=PILOT?.trainingAudio?.[trainingCueId(kind,pattern)];
@@ -73,7 +76,7 @@ function playLessonStageCue(){
  lessonCue=narrateTrainingCue(kind,pattern,state.rate||1);
 }
 function replayLessonStageCue(){stopSpeech();playLessonStageCue()}
-if(typeof module!=='undefined')module.exports={spokenTrainingCue,trainingCueId,spokenComparison,spokenComparisonNote,ideaWordCueId};
+if(typeof module!=='undefined')module.exports={spokenTrainingCue,trainingCueId,spokenComparison,spokenComparisonNote,ideaWordCueId,ideaSceneCueId};
 else{
  const stopSpeechBeforeTrainingCue=stopSpeech;
  stopSpeech=function(){lessonCue?.stop();lessonCue=null;stopSpeechBeforeTrainingCue()};

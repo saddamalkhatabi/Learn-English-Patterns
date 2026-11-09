@@ -28,8 +28,10 @@ async function readIdeaLibrary(db) {
     for (const { scene_id, en, ar, kind, x, y } of await trx('idea_scene_words').orderBy('position')) {
       scenes.get(scene_id).words.push({ en, ar, kind, ...(x===null?{}:{ x, y }) });
     }
-    for (const { scene_id, pattern_id, example_en, example_ar } of await trx('idea_scene_patterns').orderBy('position')) {
-      scenes.get(scene_id).patterns.push({ id: pattern_id, ...(example_en?{ en: example_en, ar: example_ar }:{}) });
+    for (const { scene_id, pattern_id, example_en, example_ar, task_en, task_ar } of await trx('idea_scene_patterns').orderBy('position')) {
+      scenes.get(scene_id).patterns.push({ id: pattern_id,
+        ...(example_en ? { en: example_en, ar: example_ar } : {}),
+        ...(task_en ? { taskEn: task_en, taskAr: task_ar } : {}) });
     }
     const topicOrder = [...new Set(records.map(row => row.topic))];
     return { schema: 2, topics: topicOrder.map(id => topics.get(id)), scenes: [...scenes.values()] };

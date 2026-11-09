@@ -154,7 +154,8 @@ exports.seed = async db => {
     idea_topics:ideas.topics,
     idea_scenes:ideas.scenes.map((s,position)=>({scene_id:s.id,position,topic_id:s.topic,title_ar:s.ar,title_en:s.en,task_ar:s.taskAr,task_en:s.taskEn})),
     idea_scene_words:ideas.scenes.flatMap(s=>s.words.map((w,position)=>({scene_id:s.id,position,ar:w.ar,en:w.en,kind:w.kind,x:w.x??null,y:w.y??null}))),
-    idea_scene_patterns:ideas.scenes.flatMap(s=>s.patterns.map((p,position)=>({scene_id:s.id,pattern_id:p.id,position,example_en:p.en??null,example_ar:p.ar??null}))),
+    idea_scene_patterns:ideas.scenes.flatMap(s=>s.patterns.map((p,position)=>({scene_id:s.id,pattern_id:p.id,position,
+      example_en:p.en??null,example_ar:p.ar??null,task_en:p.taskEn??null,task_ar:p.taskAr??null}))),
     dialogue_scene_uses:dialogueSceneUses
   };
   await db.transaction(async trx=>{
