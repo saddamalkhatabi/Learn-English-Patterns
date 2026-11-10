@@ -297,3 +297,18 @@ The common generation prompt requested an exact portrait 1024 × 1536 atlas with
 8. young man lending a pen to another visitor at sign-in table, name badges and register
 9. organizers comparing two room layouts with miniature chairs and paper plan
 10. attendees collecting leftover food containers after an event, stack of boxes and table
+
+## From waking up to school (morning)
+
+Six new scenes were generated with the built-in image tool as one square atlas, with two columns and three rows. The final files are `public/assets/scenes/idea-lab/morning-01.webp` through `morning-06.webp`. Like the other scenes, they use 500 × 300 WebP frames and positions measured against those frames.
+
+Prompt set for the atlas, left to right and top to bottom. Use separate candid photographs in a contemporary Arab setting, modest long-sleeved clothing, exact grid boundaries, and no captions, margins or logos. Keep essential objects within the middle of each cell.
+
+1. Man waking at dawn, reaching for an alarm clock beside a lamp, with blanket and curtains.
+2. Dressed man on the edge of a neat bed putting on slippers, with a rug and pillow.
+3. Boy brushing his teeth by a sink, with a faucet, toothpaste, cup and towel.
+4. Father and son at the school entrance, with a backpack, books and steps.
+5. Man turning off a bedside lamp at night, with a pillow, blanket, book and dark window.
+6. Two classmates introducing themselves in a school corridor, with backpacks, a doorway and a notebook.
+
+Additional bilingual scene exercises live in `production/idea-pattern-practice.tsv`. Each row links an existing scene ID to a lesson ID, a contextual example, and a speaking task in both languages. The builder validates coverage of all published patterns. The same content is used for the SQLite import and the offline collection.

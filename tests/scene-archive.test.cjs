@@ -2,7 +2,7 @@ const test=require('node:test'),assert=require('node:assert/strict');
 const archive=require('../public/scene-archive.json');
 const rows=[...require('../public/pilot.json').sentences,...require('../public/source-corpus.json').sentences,...require('../public/expansion-media.json').sentences];
 const visible=new Set(['assistant-reviewed','visually_reviewed','imported-unreviewed']);
-test('Idea Lab offers 200 bilingual scenes with positioned vocabulary and advanced examples',()=>{
+test('Scene practice covers every lesson with bilingual examples and positioned vocabulary',()=>{
  const fs=require('node:fs');
  const {asset,sha,webpSize}=require('../scripts/media-validation.cjs');
  const {scenes,topics}=require('../public/idea-scenes.json');
@@ -11,6 +11,10 @@ test('Idea Lab offers 200 bilingual scenes with positioned vocabulary and advanc
  assert.equal(new Set(scenes.map(s=>s.sha256)).size,scenes.length);
  assert.equal(new Set(scenes.map(s=>s.taskEn)).size,scenes.length);
  const patternIds=new Set([...require('../public/pilot.json').patterns,...require('../public/expansion-media.json').patterns].map(p=>p.id));
+ assert.deepEqual(new Set(scenes.flatMap(scene=>scene.patterns.filter(pattern=>pattern.en&&pattern.ar).map(pattern=>pattern.id))),patternIds);
+ const morning=scenes.filter(scene=>scene.topic==='morning');
+ assert.equal(morning.length,6);
+ assert(morning.every(scene=>scene.words.length>=8&&scene.words.filter(word=>Number.isFinite(word.x)).length>=7));
  assert(scenes.reduce((n,scene)=>n+scene.words.filter(w=>w.x!==undefined).length,0)>=970);
  for(const topic of ['routine','market','journey','classroom','team','civic','field','care','workshop','gathering']){
   const advanced=scenes.filter(scene=>scene.topic===topic);

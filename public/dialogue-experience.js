@@ -514,7 +514,6 @@ function paintDialogueCatalog(){
 labels.dialogues='المحادثات';
 labels.comparisons='المقارنات';
 if(['dialogues','comparisons'].includes(location.hash.slice(1)))page=location.hash.slice(1);
-epNavGroups[1][2].splice(2,0,['dialogues','▧','المحادثات','Conversations'],['comparisons','⇄','المقارنات','Comparisons']);
 const renderBeforeDialogues=render;
 render=function(){
  releaseDialoguePlayer();

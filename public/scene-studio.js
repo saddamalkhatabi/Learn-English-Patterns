@@ -19,16 +19,15 @@ const scenePrompts={
 };
 function sceneStudioPage(){
  const topics=sceneArchive?.topics||[];
- return head(T('تكلّم من الصورة','Speak from a scene'),T(
-  'ابحث عن مشهد بالعربية أو الإنجليزية. صِف ما ترى، ثم تخيّل الموقف واكتب حوارًا قصيرًا.',
-  'Find a scene in Arabic or English. Describe what you see, then imagine a situation and write a short conversation.'))+
+ return head(T('الجمل بالصور','Sentences in pictures'),T(
+  'تأمّل المشهد وحاول استرجاع الجملة المرتبطة به، ثم اكشفها واستمع إليها.',
+  'Look at a scene and try to recall its sentence, then reveal it and listen.'))+epSectionLinks(['references','lab'])+
   `<div class="toolbar"><input type="search" id="scene-studio-query" oninput="studioPage=0;paintSceneStudio()" placeholder="${T('مسبح، مكتبة، train…','Pool, library, قطار…')}" aria-label="${T('بحث المشاهد','Search scenes')}">
   <select id="scene-studio-topic" onchange="studioPage=0;paintSceneStudio()" aria-label="${T('موضوع المشهد','Scene topic')}"><option value="">${T('كل الموضوعات','All topics')}</option>${topics.map(t=>`<option value="${t.id}">${H(T(t.ar,t.en))}</option>`).join('')}</select>
   <button class="secondary" onclick="surpriseScene()">${T('اقترح مشهدًا','Suggest a scene')}</button></div>
   <section id="scene-studio-active"></section>
-  <details class="panel studio-collections"><summary>${T('المجموعات المستقلة: مختبر الأفكار ومشاهد المحادثات','Independent collections: Idea Lab and conversation scenes')}</summary>
-   <div class="buttonrow"><button class="secondary" onclick="navigate('lab')">${T('افتح مكتبة مختبر الأفكار','Open the Idea Lab library')} ↗</button>
-   <button class="secondary" onclick="navigate('dialogues')">${T('افتح المحادثات','Open conversations')} ↗</button></div>
+  <details class="panel studio-collections"><summary>${T('مشاهد المحادثات','Conversation scenes')}</summary>
+   ${epSectionLinks(['dialogues'])}
    <div class="scene-studio-grid">${Object.entries(dialogueSceneArchive).map(([id,entry])=>{
     const dialogue=PILOT?.dialogues.find(d=>d.id===id);
     const visual=entry.cover||Object.values(entry.turns)[0];
@@ -114,12 +113,14 @@ function openStudioScene(id){
  studioAudio?.pause();
  host.innerHTML=`<article class="panel studio-exercise">
   <div>${studioPicture(row,ar,en)}${item.description||EP.prefs.arabic?`<details><summary>${T('وصف المشهد في الأرشيف','Archived scene description')}</summary>${item.description?`<p lang="en" dir="ltr">${H(item.description)}</p>`:''}${EP.ar(item.descriptionAr)}</details>`:''}</div>
-  <div><section class="studio-original"><h2>${T('الجملة الأساسية للصورة','The scene’s original sentence')}</h2>
+  <div><h2>${T('هل تتذكّر الجملة؟','Can you recall the sentence?')}</h2>
+  <p>${T('حاول قول جملة تصف المشهد، ثم قارنها بالجملة الأصلية.','Try saying a sentence about the picture, then compare it with the original.')}</p>
+  <details class="studio-original"><summary>${T('اكشف الجملة الأصلية','Reveal the original sentence')}</summary>
     <p lang="en" dir="ltr">${EP.words(row,'data-studio-word')}</p>${EP.ar(row.ar)}
     <div class="buttonrow"><button class="primary" onclick="playStudioSentence('${H(row.id)}','male')">▶ ${T('استمع · Adam','Listen · Adam')}</button>
     <button class="secondary" onclick="playStudioSentence('${H(row.id)}','female')">▶ Bella</button></div>
-  </section>
-  <h2>${T('تأمّل، ثم تكلّم','Look, then speak')}</h2><ol lang="en" dir="ltr">
+  </details>
+  <details class="idea-disclosure"><summary>${T('تمرين وصف إضافي','Extra description exercise')}</summary><ol lang="en" dir="ltr">
   <li>What can you see? Name two details.</li><li>${H(observe)}</li><li>Imagine two people here. What could one ask, and how could the other reply?</li></ol>
   <label>${T('اكتب افتتاحية وردًا وسؤال متابعة','Write an opening, a reply, and a follow-up question')}
    <textarea dir="ltr" lang="en" rows="4" placeholder="A: …&#10;B: …&#10;A: …"></textarea></label>
@@ -127,7 +128,7 @@ function openStudioScene(id){
     <small>${T('أفكار متخيّلة يمكنك تعديلها وفق ما تراه في المشهد.','Imagined ideas you can adapt to what you see in the scene.')}</small>
     <p lang="en" dir="ltr">${H(model)}</p><p lang="en" dir="ltr"><b>A</b> ${H(question)}<br><b>B</b> ${H(answer)}</p>
   </details>
-  ${sceneAiTools('studio',id)}</div></article>`;
+  ${sceneAiTools('studio',id)}</details></div></article>`;
  window.EPOffline?.rememberSentences([row]);
  host.scrollIntoView({block:'start'});
 }
@@ -145,8 +146,7 @@ function playStudioSentence(id,voice){
  });
  studioAudio.play().catch(()=>toast(T('تعذّر تشغيل الصوت.','Audio could not play.')));
 }
-labels['scene-studio']='تكلّم من الصورة';
-epNavGroups[1][2].splice(2,0,['scene-studio','▦','تكلّم من الصورة','Speak from a scene']);
+labels['scene-studio']='الجمل بالصور';
 if(location.hash==='#scene-studio')page='scene-studio';
 const renderBeforeSceneStudio=render;
 render=function(){

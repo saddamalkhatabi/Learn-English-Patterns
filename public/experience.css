@@ -33,3 +33,6 @@
 .home-goal .primary,.dialogue-story-entry a.secondary{display:inline-block;text-decoration:none}
 html[data-pattern-image="hidden"] .home-service img{display:none}
 @media(max-width:760px){.home-achievement{grid-template-columns:1fr}.home-history{border-inline-start:0;border-block-start:1px solid #dfe6de;padding-inline-start:0;padding-block-start:1rem}}
+.ep-section-links{display:flex;flex-wrap:wrap;gap:.45rem;margin-block:.55rem 1rem}
+.ep-section-links a{display:inline-block;text-decoration:none;padding:.45rem .7rem}
+.header-tools .ep-settings{display:inline-grid;place-items:center}

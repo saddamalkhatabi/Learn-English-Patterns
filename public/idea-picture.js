@@ -1,4 +1,5 @@
 let ideaWordMode='hidden',ideaLabelLanguage='en';
+let ideaSoloVoice='male';
 let ideaFlashTimer,ideaRevealTimer,ideaSelected=null,ideaSequence=null,ideaVoice=null,ideaFlashVoice=false;
 const ideaIntroducedScenes=new Set();
 let ideaAutoFlash=true;
@@ -9,27 +10,33 @@ try{
 }catch{}
 
 function ideaViewer(scene){
+ const multiple=findIdeaScenes().length>1;
  return `<div id="idea-scene-viewer">
   <div class="idea-picture-frame">${ideaPicture(scene)}<div id="idea-picture-labels"></div></div>
   <div id="idea-picture-caption" class="idea-picture-caption"></div>
   <div class="idea-viewer-tools">
-   <div class="idea-label-controls" role="group" aria-label="${T('كلمات على الصورة','Words on the picture')}">
-    ${[['hidden','إخفاء الكلمات','Hide words'],['visible','أظهر الكلمات','Show words'],['flash','ومضات الحفظ','Recall flashes']].map(([id,ar,en])=>
-     `<button type="button" class="secondary" data-idea-word-mode="${id}" aria-pressed="${ideaWordMode===id}" onclick="setIdeaWordMode('${id}')">${T(ar,en)}</button>`).join('')}
+   <div class="idea-viewer-bar">
+    <button class="secondary" data-idea-scene-step ${multiple?'':'disabled'} onclick="stepIdeaScene(-1)" aria-label="${T('المشهد السابق','Previous scene')}">‹</button>
+    <button type="button" id="idea-zoom-button" class="secondary" onclick="toggleIdeaZoom()">⛶ ${T('تكبير','Enlarge')}</button>
+    <button class="secondary" data-idea-scene-step ${multiple?'':'disabled'} onclick="stepIdeaScene(1)" aria-label="${T('المشهد التالي','Next scene')}">›</button>
    </div>
+   <details class="idea-disclosure idea-picture-options"><summary>${T('خيارات الكلمات على الصورة','Picture word options')}</summary>
    <div class="idea-viewer-options">
+    <label class="idea-filter">${T('العرض','Display')} <select id="idea-word-mode" onchange="setIdeaWordMode(this.value)">
+     ${[['hidden','إخفاء الكلمات','Hide words'],['visible','إظهار الكلمات','Show words'],['flash','ومضات الحفظ','Recall flashes']].map(([id,ar,en])=>
+      `<option value="${id}" ${ideaWordMode===id?'selected':''}>${T(ar,en)}</option>`).join('')}</select></label>
     <label class="idea-filter">${T('لغة العلامات','Label language')} <select id="idea-label-language" onchange="setIdeaLabelLanguage(this.value)">
      ${[['en','الإنجليزية','English'],['ar','العربية','Arabic'],['both','العربية والإنجليزية','Arabic and English'],['alternate','تناوب اللغتين','Alternate languages']].map(([id,ar,en])=>
       `<option value="${id}" ${ideaLabelLanguage===id?'selected':''}>${T(ar,en)}</option>`).join('')}</select></label>
     <label class="idea-filter">${T('نوع المفردات','Vocabulary type')} <select id="idea-word-filter" onchange="setIdeaWordFilter(this.value)">
-     ${[['','الكل','All'],['object','الأشياء والأشخاص','Objects and people'],['action','الأفعال','Actions'],['description','الأوصاف','Descriptions'],['phrase','عبارات المشهد','Scene phrases']].map(([id,ar,en])=>
+     ${[['','الكل','All'],['object','الأشياء والأشخاص','Objects and people'],['action','الأفعال','Actions'],['description','الأوصاف','Descriptions']].map(([id,ar,en])=>
       `<option value="${id}" ${ideaWordFilter===id?'selected':''}>${T(ar,en)}</option>`).join('')}</select></label>
+    <label class="idea-filter">${T('صوت المفردة أو المثال','Word or example voice')} <select onchange="ideaSoloVoice=this.value">
+     <option value="male" ${ideaSoloVoice==='male'?'selected':''}>Adam</option><option value="female" ${ideaSoloVoice==='female'?'selected':''}>Bella</option>
+    </select></label>
    </div>
-   ${ideaAudioControls()}
-   <p class="idea-picture-hint">${T('المس العلامة أو الكلمة لترى معناها لثوانٍ. في الومضات تظهر كلمة واحدة وتظهر ترجمتها أسفل الصورة.','Tap a marker or word to reveal its meaning briefly. Flash mode shows one word with its translation below.')}</p>
-   <div class="buttonrow"><button class="secondary" onclick="stepIdeaScene(-1)">← ${T('المشهد السابق','Previous scene')}</button>
-    <button class="secondary" onclick="stepIdeaScene(1)">${T('المشهد التالي','Next scene')} →</button>
-    <button type="button" id="idea-zoom-button" class="primary" onclick="toggleIdeaZoom()">⛶ ${T('تكبير المشهد','Enlarge scene')}</button></div>
+   <p class="idea-picture-hint">${T('انقر علامةً لعرض معناها مؤقتًا. تظهر ترجمة الكلمات أسفل الصورة أثناء الوميض.','Tap a marker to reveal its meaning briefly. Flashes show the translation below the picture.')}</p>
+   <div class="idea-zoom-audio">${ideaAudioControls()}</div></details>
   </div></div>`;
 }
 
@@ -37,7 +44,7 @@ function ideaAudioControls(){
  return `<div class="idea-audio-tools">
   <button type="button" class="secondary" onclick="startIdeaSequence(ideaFlashVoice,true)">▷ ${T('انطق كل الكلمات','Play all words')}</button>
   <button type="button" class="secondary" data-idea-sync aria-pressed="${ideaFlashVoice}" onclick="toggleIdeaFlashVoice()">${T('مزامنة الوميض مع النطق','Sync flashes with audio')}</button>
-  <button type="button" class="secondary" data-idea-stop onclick="setIdeaWordMode('hidden')" hidden>${T('إيقاف','Stop')}</button>
+  <button type="button" class="secondary" data-idea-stop onclick="setIdeaWordMode('hidden',false)" hidden>${T('إيقاف','Stop')}</button>
   <small data-idea-audio-status role="status"></small></div>`;
 }
 
@@ -68,9 +75,8 @@ function setIdeaWordMode(mode,user=true){
 }
 
 function updateIdeaModeButtons(){
- document.querySelectorAll('[data-idea-word-mode]').forEach(button=>{
-  button.setAttribute('aria-pressed',String(button.dataset.ideaWordMode===ideaWordMode));
- });
+ const select=$('#idea-word-mode');
+ if(select)select.value=ideaWordMode;
 }
 
 function toggleIdeaFlashVoice(){
@@ -82,7 +88,7 @@ function toggleIdeaFlashVoice(){
 function setIdeaLabelLanguage(language){
  ideaLabelLanguage=language;
  try{localStorage.setItem('nasaq-idea-label-language',language)}catch{}
- setIdeaWordMode(language==='alternate'||ideaWordMode==='flash'?'flash':ideaWordMode);
+ setIdeaWordMode(language==='alternate'||ideaWordMode==='flash'?'flash':ideaWordMode,false);
 }
 
 function mountIdeaViewer(scene){
@@ -117,7 +123,7 @@ function restoreIdeaZoom(){
  if(!viewer||!home)return;
  home.append(viewer);
  const button=$('#idea-zoom-button');
- button.textContent=`⛶ ${T('تكبير المشهد','Enlarge scene')}`;
+ button.textContent=`⛶ ${T('تكبير','Enlarge')}`;
  positionIdeaLabels();
  button.focus({preventScroll:true});
 }
@@ -191,18 +197,21 @@ function paintIdeaLabels(scene){
  else layer.innerHTML='';
 }
 
-function pronounceIdeaWord(word,voice,onVoice=()=>{}){
- const recording=PILOT?.trainingAudio?.[ideaWordCueId(word.en,voice)];
+function pronounceIdeaWord(word,voice,onVoice){
+ return playIdeaAudio(word.en,ideaWordCueId(word.en,voice),voice,onVoice);
+}
+function playIdeaAudio(text,cueId,voice,onVoice=()=>{}){
+ const recording=PILOT?.trainingAudio?.[cueId];
  let audio,fallback,stopped=false,finish;
  const done=new Promise(resolve=>{finish=resolve});
  const recover=()=>{
   if(stopped||fallback)return;
   audio?.pause();
   onVoice(T('صوت الجهاز','Device voice'));
-  fallback=synthesizeTrainingCue(word.en,state.rate||1,voice);
+  fallback=synthesizeTrainingCue(text,state.rate||1,voice);
   fallback.done.then(finish);
  };
- if(recording?.text===word.en){
+ if(recording?.text===text){
   audio=new Audio(recording.path);
   audio.playbackRate=state.rate||1;
   audio.onplaying=()=>onVoice(voice==='male'?'Adam':'Bella');

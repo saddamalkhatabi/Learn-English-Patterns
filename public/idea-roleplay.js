@@ -11,9 +11,8 @@ const ideaFollowups={
  events:'How would you adapt if more people arrived?'
 };
 function renderIdeaRoleplay(scene){
- const form=ideaPracticeForm();
+ const form=PILOT?.patterns.find(p=>p.id===ideaTarget(scene)?.id)?.form;
  return `<div class="idea-roleplay">
-  <p lang="en" dir="ltr">${H(scene.taskEn)}</p>${EP.ar(scene.taskAr)}
   ${form?`<p>${T('جرّب استخدام هذا النمط في أحد ردودك','Try using this pattern in one of your replies')} <strong class="pattern-form" lang="en" dir="ltr">${H(form)}</strong></p>`:''}
   <h3>${T('الحوار الموجّه','Guided conversation')}</h3>
   <p>${T('أجب بالإنجليزية. بعد كل رد يظهر سؤال متابعة يساعدك على تطوير الحوار.','Reply in English. A follow-up after each reply helps you develop the conversation.')}</p>
@@ -31,13 +30,13 @@ function renderIdeaRoleplay(scene){
    </form>
   </details>
   <p id="idea-dialogue-status" role="status"></p>
-  <section class="idea-archive"><h3>${T('أرشيف حواراتي','My dialogue archive')}</h3>
+  <details class="idea-archive idea-disclosure"><summary>${T('حواراتي المحفوظة','Saved dialogues')}</summary>
    <p>${T('يُحفظ الأرشيف في هذا المتصفح.','Your archive is saved in this browser.')}</p>
    <label>${T('اعرض حوارات','Show dialogues for')} <select onchange="ideaArchiveScope=this.value;paintIdeaArchive()">
     <option value="scene" ${ideaArchiveScope==='scene'?'selected':''}>${T('هذا المشهد','This scene')}</option>
     <option value="all" ${ideaArchiveScope==='all'?'selected':''}>${T('كل المشاهد','All scenes')}</option></select></label>
    <div id="idea-archive-list"></div><div id="idea-archive-view"></div>
-  </section></div>`;
+  </details></div>`;
 }
 function ideaChatBubbles(turns,kind){
  const firstSpeaker=turns[0]?.speaker;
@@ -51,7 +50,7 @@ function ideaChatBubbles(turns,kind){
 function paintIdeaGuided(){
  const host=$('#idea-guided-chat');
  if(!host)return;
- const turns=ideaGuided.get(ideaSceneId);
+ const turns=ideaGuided.get(ideaPracticeKey(currentIdeaScene()));
  if(!turns){
   host.innerHTML=`<button class="primary" onclick="startIdeaGuided()">${T('ابدأ الحوار','Start dialogue')} →</button>`;
   return;
@@ -68,13 +67,14 @@ function paintIdeaGuided(){
 function startIdeaGuided(){
  const scene=currentIdeaScene();
  if(!scene)return;
- ideaGuided.set(scene.id,[{speaker:T('الشريك','Partner'),en:`Look at the scene. ${scene.taskEn}`,ar:scene.taskAr}]);
+ const [ar,en]=ideaPracticeTask(scene);
+ ideaGuided.set(ideaPracticeKey(scene),[{speaker:T('الشريك','Partner'),en,ar}]);
  paintIdeaGuided();
  $('#idea-guided-reply')?.focus();
 }
 function sendIdeaGuided(){
  const scene=currentIdeaScene();
- const turns=ideaGuided.get(ideaSceneId);
+ const turns=ideaGuided.get(ideaPracticeKey(currentIdeaScene()));
  const input=$('#idea-guided-reply'),en=input?.value.trim();
  if(!scene||!turns||!en||turns.length>=8)return;
  const next=[
@@ -93,7 +93,7 @@ function showIdeaDialoguePrompt(){
  const examples=[ideaPracticeForm(),...(scene.patterns||[]).map(pattern=>pattern.en||PILOT?.patterns.find(p=>p.id===pattern.id)?.form)].filter(Boolean);
  box.value=`Write a practical English role-play for an Arabic-speaking A2 learner.
 Scene: ${scene.sentenceEn}
-Task: ${scene.taskEn}
+Task: ${ideaPracticeTask(scene)[1]}
 Useful vocabulary: ${scene.words.map(word=>word.en).join(', ')}.
 Patterns to use where natural: ${examples.join(' / ')||'Can you …? / Let’s …'}
 Write 6 to 10 turns between two distinct named speakers. Include a follow-up question and one practical decision. Add a natural Arabic translation to each turn. Output only valid JSON using this exact structure:
@@ -136,7 +136,7 @@ function importIdeaDialogue(){
  if(archiveIdeaDialogue(draft,'import'))field.value='';
 }
 function saveIdeaGuided(){
- const turns=ideaGuided.get(ideaSceneId);
+ const turns=ideaGuided.get(ideaPracticeKey(currentIdeaScene()));
  if(turns?.length>=3)archiveIdeaDialogue({turns},'guided');
 }
 function paintIdeaArchive(){
@@ -172,6 +172,6 @@ function removeIdeaArchivedDialogue(){
  ideaDialogueStatus(T('حُذف الحوار من أرشيفك.','The dialogue was removed from your archive.'));
 }
 function hearIdeaDialogueTurn(kind,index){
- const turns=kind==='guided'?ideaGuided.get(ideaSceneId):ideaArchive.find(entry=>entry.id===ideaArchiveView)?.turns;
+ const turns=kind==='guided'?ideaGuided.get(ideaPracticeKey(currentIdeaScene())):ideaArchive.find(entry=>entry.id===ideaArchiveView)?.turns;
  if(turns?.[index])speak(turns[index].en,turns[index].speaker===turns[0].speaker?0:1);
 }

@@ -71,13 +71,7 @@ const homeServices=[
  ['references','market-01','مكتبة الألف جملة','1,000 sentences','ابحث عن جملة بالغرض أو الموضوع أو البناء.','Find sentences by purpose, topic or structure.'],
  ['dialogues','care-01','المحادثات','Conversations','استمع إلى حوارات بصوتين وتابع النص والمشهد.','Listen to two voices and follow the transcript and scene.'],
  ['comparisons','classroom-01','المقارنات','Comparisons','ميّز الصيغ المتشابهة بالأمثلة والشرح.','Tell similar structures apart with examples and explanations.'],
- ['lab','workshop-01','مختبر الأفكار','Idea Lab','سمِّ ما تراه، ثم ابتكر وصفًا أو حوارًا من الصورة.','Name what you see, then create a description or dialogue.'],
- ['scene-studio','civic-01','تكلّم من الصورة','Speak from a scene','استمع إلى الجملة الأساسية، ثم وسّعها بوصفك وأسئلتك.','Hear the model sentence, then expand it with your own description and questions.'],
- ['routes','work-01','تعلّم حسب غرضك','Learn by purpose','ابدأ من موقف تريد التعامل معه بالإنجليزية.','Start with a situation you want to handle in English.'],
- ['catalog','gathering-01','معرض المشاهد','Scene gallery','اكتشف الجمل من خلال صورها.','Discover sentences through their scenes.'],
- ['curriculum','craft-01','استكشف الأنماط','Explore patterns','تصفّح الصيغ والموضوعات للوصول إلى النمط الذي تريده.','Browse structures and topics to find the pattern you want.'],
- ['path','field-01','خطة التعلّم','Learning plan','انتقل بين وحدات التعلّم بالترتيب الذي يناسبك.','Work through the course units at your own pace.'],
- ['review','team-01','المراجعة','Review','استرجع الأنماط التي حان وقت مراجعتها.','Recall the patterns due for review.'],
+ ['lab','workshop-01','تحدّث من المشهد','Speak from scenes','سمِّ ما تراه، ثم ابتكر وصفًا أو حوارًا من الصورة.','Name what you see, then create a description or dialogue.'],
 ];
 
 home=function(){

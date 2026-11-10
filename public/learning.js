@@ -23,7 +23,7 @@ function renderLesson(){const p=current,rows=sentenceRows(),s=lessonScene(),meta
  else if(stage===4){const transfer=PILOT?.exercises?.find(e=>e.id===s?.exercise_ids[0]);content=`<h2>استخدم النمط في موقف جديد.</h2><p>اكتب جملة جديدة بالإنجليزية أولًا. يمكنك بعد ذلك تسجيل قراءتك والاستماع إليها. التسجيل اختياري، والجملة المكتوبة مطلوبة للمتابعة.</p><p>${esc(transfer?.prompt||PILOT?.patterns.find(x=>x.id===p.id)?.transfer?.prompt||'كوّن جملة عن حياتك بفعل أو موقف مختلف عن الأمثلة.')}</p><div class="prompt pattern-form">${esc(p.form)}</div><textarea id="production" lang="en" dir="ltr" aria-label="جملتك الجديدة" placeholder="Your own new idea…" oninput="saveLessonDraft(this.value)">${esc(lessonDrafts[p.id]||'')}</textarea><div id="exercise-feedback" class="feedback" role="status"></div><div class="buttonrow"><button class="secondary" id="record-btn" onclick="toggleRecord()">● سجّل صوتك</button><button class="secondary" onclick="const t=$('#production').value.trim();if(t)speak(t);else toast('اكتب جملتك أولًا.')">▷ اسمع جملتك</button></div><div id="record-playback"></div>${bilingual('يُفحص تركيب البداية مبدئيًا أثناء الكتابة. الجمل المفتوحة تحتاج مراجعة معنى؛ لا نمنح درجة طلاقة أو نطق من النص.','The opening structure is checked while you type. Open-ended meaning is self-assessed; no fluency or pronunciation score is inferred from text.')}`}
  else if(stage===5){content=examPanel(p.id)}
  else{content=lessonConversationPanel(p.id)}
- $('#lesson-content').innerHTML=`<div class="lesson-top"><b>${esc(p.ar)} · ${p.examples.length} جملة</b><button onclick="closeLesson()" aria-label="إغلاق الدرس">×</button></div><div class="lesson-body"><div class="steps">${names.map((n,i)=>`<span title="${n}" class="${i<=stage?'done':''}"></span>`).join('')}</div><div class="stage-label">${stage+1} / ${names.length} · ${names[stage]}</div>${content}</div><p id="lesson-step-feedback" class="lesson-step-feedback" role="status"></p><div class="lesson-bottom">${ideaPracticeButton(p.id)}<button class="secondary" onclick="previousStage()">${stage?'→ السابق':'إغلاق'}</button><label class="auto-next-label"><input type="checkbox" ${state.lessonAutoNext!==false?'checked':''} onchange="state.lessonAutoNext=this.checked;persist()"> النمط التالي تلقائيًا بعد إكمال الدرس</label><button class="primary" id="next-stage" onclick="nextStage()">${['انتقل إلى فهم البناء ←','انتقل إلى المقارنة ←','انتقل إلى ترتيب الكلمات ←','انتقل إلى تطبيق النمط ←','انتقل إلى الاختبار ←','انتقل إلى المحادثة ←','إنهاء الدرس ✓'][stage]}</button></div>`;
+ $('#lesson-content').innerHTML=`<div class="lesson-top"><b>${esc(p.ar)} · ${p.examples.length} جملة</b><button onclick="closeLesson()" aria-label="إغلاق الدرس">×</button></div><div class="lesson-body"><div class="steps">${names.map((n,i)=>`<span title="${n}" class="${i<=stage?'done':''}"></span>`).join('')}</div><div class="stage-label">${stage+1} / ${names.length} · ${names[stage]}</div>${content}</div><p id="lesson-step-feedback" class="lesson-step-feedback" role="status"></p><div class="lesson-bottom"><button class="secondary" onclick="previousStage()">${stage?'→ السابق':'إغلاق'}</button><button class="primary" id="next-stage" onclick="nextStage()">${['انتقل إلى فهم البناء ←','انتقل إلى المقارنة ←','انتقل إلى ترتيب الكلمات ←','انتقل إلى تطبيق النمط ←','انتقل إلى الاختبار ←','انتقل إلى المحادثة ←',T('أنهِ الدرس وطبّق في مشهد ←','Finish and practise in a scene →')][stage]}</button></div>`;
  if(stage===0&&s?.teaching_note)$('.translation').insertAdjacentHTML('afterend',bilingual(s.teaching_note.ar,s.teaching_note.en));if(stage===1)markPatternStructure();if(stage===3)updateWords();if(stage===4&&lessonDrafts[p.id])checkProduction();if(stage===5)showSavedExam();
 }
 function selectLessonExample(n){stopSpeech();auto=false;example=n;built=[];passed=false;renderLesson();revealLessonTarget(stage===0?'.lesson-active-example':'.wordbank')}
@@ -102,10 +102,12 @@ function nextStage(){
   if(!lessonConversationComplete(current.id)){explainLessonStep(T('استمع إلى محادثة واحدة كاملة لتُنهي الدرس.','Listen to one full conversation to finish the lesson.'),'#lesson-dialogue-play');return}
   state.done[current.id]=state.done[current.id]||{due:Date.now()+864e5,interval:1,reviews:0};
   recordDailyPractice('lesson',current.id);
-  state.stage=0;persist();
   const order=PILOT?.pattern_order||patterns.map(p=>p.id),next=order[order.indexOf(current.id)+1];
-  if(next&&state.lessonAutoNext!==false){openLesson(next);toast('اكتمل النمط، وانتقلنا إلى التالي.')}
-  else{closeLesson();toast('اكتمل تدريب النمط. موعد المراجعة الأولى غدًا.')}
+  state.stage=0;
+  state.last=next??current.id;
+  persist();
+  openAdvancedIdea(current.id,next??null);
+  toast(T('أكملت الدرس. جرّب النمط الآن في مشهد.','Lesson complete. Now try the pattern in a scene.'));
   return;
  }
  stopSpeech();auto=false;stage++;passed=false;renderLesson();revealLessonTarget(lessonStageTarget());playLessonStageCue();
