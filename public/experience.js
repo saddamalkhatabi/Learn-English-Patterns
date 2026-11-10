@@ -4,12 +4,12 @@ labels.curriculum='استكشف الأنماط';labels.library='تعلّم ال�
 const epNavGroups=[
  ['تعلّم','LEARN',[['home','⌂','البداية','Home'],['library','▤','دروس الأنماط','Pattern lessons'],['coach','▷','الاستماع والتدريب','Listen & practise']]],
  ['طبّق','PRACTISE',[['lab','✧','تحدّث من المشهد','Speak from scenes'],['dialogues','▧','المحادثات','Conversations'],['comparisons','⇄','المقارنات','Comparisons']]],
- ['ارجع وتابع','FIND & REVIEW',[['references','◈','الألف جملة','1,000 sentences'],['progress','◴','تقدّمي ومراجعتي','Progress & review']]]
+ ['ارجع وتابع','FIND & REVIEW',[['references','◈','الألف جملة','1,000 sentences'],['scene-studio','▦','مكتبة الصور','Photo library'],['progress','◴','تقدّمي ومراجعتي','Progress & review']]]
 ];
 const epSubpages={
  path:['library','خطة التعلّم','Learning plan'],curriculum:['library','فهرس الأنماط','Pattern index'],
  routes:['coach','المسارات حسب الغرض','Purpose routes'],
- 'scene-studio':['references','الجمل بالصور','Sentences in pictures'],catalog:['references','مشاهد الدروس','Lesson scenes'],
+ catalog:['scene-studio','مشاهد الدروس','Lesson scenes'],
  stories:['dialogues','قصة قصيرة','Short story'],review:['progress','المراجعة المستحقة','Due reviews'],
  settings:[null,'الإعدادات والتنزيل','Settings & offline']
 };

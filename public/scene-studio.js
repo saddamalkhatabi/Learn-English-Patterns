@@ -19,9 +19,9 @@ const scenePrompts={
 };
 function sceneStudioPage(){
  const topics=sceneArchive?.topics||[];
- return head(T('الجمل بالصور','Sentences in pictures'),T(
-  'تأمّل المشهد وحاول استرجاع الجملة المرتبطة به، ثم اكشفها واستمع إليها.',
-  'Look at a scene and try to recall its sentence, then reveal it and listen.'))+epSectionLinks(['references','lab'])+
+ return head(T('مكتبة الصور','Photo library'),T(
+  'ابحث عن صورة من الأرشيف، واستمع إلى جملتها، ثم استخدمها لبدء محادثة حرّة.',
+  'Find an archived photo, listen to its sentence, then use it to start an open conversation.'))+epSectionLinks(['references','lab'])+
   `<div class="toolbar"><input type="search" id="scene-studio-query" oninput="studioPage=0;paintSceneStudio()" placeholder="${T('مسبح، مكتبة، train…','Pool, library, قطار…')}" aria-label="${T('بحث المشاهد','Search scenes')}">
   <select id="scene-studio-topic" onchange="studioPage=0;paintSceneStudio()" aria-label="${T('موضوع المشهد','Scene topic')}"><option value="">${T('كل الموضوعات','All topics')}</option>${topics.map(t=>`<option value="${t.id}">${H(T(t.ar,t.en))}</option>`).join('')}</select>
   <button class="secondary" onclick="surpriseScene()">${T('اقترح مشهدًا','Suggest a scene')}</button></div>
@@ -68,12 +68,12 @@ function studioPicture(row,ar,en){
  return pilotScene({...row,en,ar,context:''});
 }
 function sceneAiTools(kind,id){
- return `<details class="scene-ai"><summary>${T('تدرّب مع مساعدك الذكي','Practise with your AI assistant')}</summary>
- <p>${T('أنشئ طلبًا يضم المشهد ومهمة التحدّث، ثم انسخه إلى مساعدك. إذا كان يدعم مشاركة الشاشة، اختر نافذة هذه الصفحة من داخله، واطلب منه أن يتدرّب معك على الصورة المعروضة.','Create a prompt with this scene and speaking task, then paste it into your assistant. If your assistant supports screen sharing, share this page from that app and practise with the scene on screen.')}</p>
- <div class="buttonrow"><button class="secondary" onclick="showSceneAiPrompt(this,'${kind}','${H(id)}')">✦ ${T('جهّز طلب التدريب','Create practice prompt')}</button>
+ return `<section class="scene-ai studio-ai" aria-labelledby="studio-ai-title"><h3 id="studio-ai-title">${T('تحاور مع مساعدك الذكي','Talk with your AI assistant')}</h3>
+ <p>${T('جهّز طلبًا لهذه الصورة والصقه في مساعدك. إذا كان يدعم مشاركة الشاشة، ابدأ المشاركة من تطبيقه واختر تبويب المكتبة لتتحدّثا عمّا يظهر في الصورة.','Create a prompt for this photo and paste it into your assistant. If it supports screen sharing, start sharing from the assistant and select this library tab to discuss the photo together.')}</p>
+ <div class="buttonrow"><button class="secondary" onclick="showSceneAiPrompt(this,'${kind}','${H(id)}')">${T('جهّز طلب المحادثة','Create conversation prompt')}</button>
  <button class="primary" data-copy-scene-ai onclick="copySceneAiPrompt(this)" hidden>${T('انسخ الطلب','Copy prompt')}</button></div>
- <textarea data-scene-ai-prompt aria-label="${T('نص طلب التدريب','Practice prompt')}" dir="ltr" lang="en" rows="7" readonly hidden></textarea>
- <p data-scene-ai-status role="status"></p></details>`;
+ <textarea data-scene-ai-prompt aria-label="${T('نص طلب المحادثة','Conversation prompt')}" dir="ltr" lang="en" rows="7" readonly hidden></textarea>
+ <p data-scene-ai-status role="status"></p></section>`;
 }
 function showSceneAiPrompt(button,kind,id){
  const idea=kind==='idea'?ideaLibrary?.scenes.find(s=>s.id===id):null;
@@ -113,14 +113,13 @@ function openStudioScene(id){
  studioAudio?.pause();
  host.innerHTML=`<article class="panel studio-exercise">
   <div>${studioPicture(row,ar,en)}${item.description||EP.prefs.arabic?`<details><summary>${T('وصف المشهد في الأرشيف','Archived scene description')}</summary>${item.description?`<p lang="en" dir="ltr">${H(item.description)}</p>`:''}${EP.ar(item.descriptionAr)}</details>`:''}</div>
-  <div><h2>${T('هل تتذكّر الجملة؟','Can you recall the sentence?')}</h2>
-  <p>${T('حاول قول جملة تصف المشهد، ثم قارنها بالجملة الأصلية.','Try saying a sentence about the picture, then compare it with the original.')}</p>
-  <details class="studio-original"><summary>${T('اكشف الجملة الأصلية','Reveal the original sentence')}</summary>
+  <div><section class="studio-original"><h2>${T('الجملة الأساسية للصورة','The photo’s original sentence')}</h2>
     <p lang="en" dir="ltr">${EP.words(row,'data-studio-word')}</p>${EP.ar(row.ar)}
     <div class="buttonrow"><button class="primary" onclick="playStudioSentence('${H(row.id)}','male')">▶ ${T('استمع · Adam','Listen · Adam')}</button>
     <button class="secondary" onclick="playStudioSentence('${H(row.id)}','female')">▶ Bella</button></div>
-  </details>
-  <details class="idea-disclosure"><summary>${T('تمرين وصف إضافي','Extra description exercise')}</summary><ol lang="en" dir="ltr">
+  </section>
+  ${sceneAiTools('studio',id)}
+  <h3>${T('تأمّل، ثم ابتكر حوارًا','Look, then create a dialogue')}</h3><ol lang="en" dir="ltr">
   <li>What can you see? Name two details.</li><li>${H(observe)}</li><li>Imagine two people here. What could one ask, and how could the other reply?</li></ol>
   <label>${T('اكتب افتتاحية وردًا وسؤال متابعة','Write an opening, a reply, and a follow-up question')}
    <textarea dir="ltr" lang="en" rows="4" placeholder="A: …&#10;B: …&#10;A: …"></textarea></label>
@@ -128,7 +127,7 @@ function openStudioScene(id){
     <small>${T('أفكار متخيّلة يمكنك تعديلها وفق ما تراه في المشهد.','Imagined ideas you can adapt to what you see in the scene.')}</small>
     <p lang="en" dir="ltr">${H(model)}</p><p lang="en" dir="ltr"><b>A</b> ${H(question)}<br><b>B</b> ${H(answer)}</p>
   </details>
-  ${sceneAiTools('studio',id)}</details></div></article>`;
+  </div></article>`;
  window.EPOffline?.rememberSentences([row]);
  host.scrollIntoView({block:'start'});
 }
@@ -146,7 +145,7 @@ function playStudioSentence(id,voice){
  });
  studioAudio.play().catch(()=>toast(T('تعذّر تشغيل الصوت.','Audio could not play.')));
 }
-labels['scene-studio']='الجمل بالصور';
+labels['scene-studio']='مكتبة الصور';
 if(location.hash==='#scene-studio')page='scene-studio';
 const renderBeforeSceneStudio=render;
 render=function(){

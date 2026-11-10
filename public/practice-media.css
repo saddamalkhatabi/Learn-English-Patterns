@@ -34,6 +34,9 @@
 .scene-ai,.studio-collections,.idea-legacy{margin-block:1rem}
 .scene-ai summary,.studio-collections summary,.idea-legacy summary,.idea-lab-exercise summary{font-weight:700;cursor:pointer}
 .scene-ai textarea{width:100%;margin-top:.6rem}
+.studio-ai{padding:.75rem 1rem;border:1px solid #d8e5d9;border-radius:10px}
+.studio-ai h3,.studio-ai p{margin:.25rem 0 .6rem}
+.studio-ai [role="status"]:empty{margin:0}
 .scene-ai [hidden],[data-dialogue-resume][hidden]{display:none!important}
 .studio-original,.idea-model{border-inline-start:4px solid #267b67;background:#f0f7f3;padding:.7rem 1rem;margin-bottom:.85rem;border-radius:10px}
 .studio-original h2,.studio-original p,.idea-model p{margin:.25rem 0}
