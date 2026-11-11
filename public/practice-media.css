@@ -154,9 +154,9 @@ html[dir="rtl"] .idea-viewer-bar [data-idea-scene-step]{transform:scaleX(-1)}
 .dialogue-panel[data-priority="map"] .dialogue-transcript ol{max-height:32vh}
 @media(max-width:650px){
  .dialogue-journey{grid-template-columns:repeat(2,minmax(0,1fr));gap:.5rem}
- .journey-center{grid-column:1/-1;grid-row:1;padding:.35rem .5rem}
+ .journey-center{grid-column:1/-1;grid-row:2;padding:.35rem .5rem}
  .journey-center p{font-size:.8rem}
- .journey-stage-0{grid-column:1;grid-row:2}.journey-stage-1{grid-column:2;grid-row:2}.journey-stage-2{grid-column:2;grid-row:3}.journey-stage-3{grid-column:1;grid-row:3}
+ .journey-stage-0{grid-column:1;grid-row:1}.journey-stage-1{grid-column:2;grid-row:1}.journey-stage-2{grid-column:2;grid-row:3}.journey-stage-3{grid-column:1;grid-row:3}
  .journey-stage>span{padding:.35rem .4rem}.journey-stage b{font-size:.78rem}.journey-stage small{display:none}
 }
 @media(prefers-reduced-motion:reduce){.journey-stage{transition:none}}
