@@ -16,6 +16,8 @@ test('reviewed conversation stages cover every turn and use their measured audio
  for(const [id,life] of Object.entries(lifecycles)){
   const dialogue=dialogues.get(id);let next=1;
   assert.equal(life.stages.length,4,id);
+  assert.equal(life.turnPurposes.length,dialogue.lines.length,id);
+  assert(life.turnPurposes.every(pair=>pair.length===2&&pair.every(text=>typeof text==='string'&&text.trim())),id);
   for(const stage of life.stages){
    assert.equal(stage.from,next,id);
    assert(stage.from<=stage.to&&stage.to<=dialogue.lines.length,id);

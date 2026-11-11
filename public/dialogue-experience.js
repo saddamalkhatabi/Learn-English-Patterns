@@ -45,23 +45,22 @@ const dialogueAnchors={
 let dialogueQueue=null;
 let dialogueResume={};
 try{dialogueResume=JSON.parse(localStorage.getItem('nasaq-dialogue-resume-v1'))||{}}catch{}
-let dialoguePriority=['image','text','map'].includes(dialogueResume.priority)?dialogueResume.priority:'map';
+let dialoguePriority=['image','text'].includes(dialogueResume.priority)?dialogueResume.priority:'image';
 let dialogueSceneArchive={},dialogueLifecycles={};
 const dialogueArchiveReady=fetch('conversation-scenes.json').then(r=>r.ok?r.json():{}).then(data=>{
  dialogueSceneArchive=data.scenes||{};dialogueLifecycles=data.lifecycles||{};
 }).catch(()=>{});
 function saveDialogueResume(){try{localStorage.setItem('nasaq-dialogue-resume-v1',JSON.stringify(dialogueResume))}catch{}}
 function setDialoguePriority(value){
- dialoguePriority=['image','map'].includes(value)?value:'text';dialogueResume.priority=dialoguePriority;saveDialogueResume();
+ dialoguePriority=value==='image'?'image':'text';dialogueResume.priority=dialoguePriority;saveDialogueResume();
  document.querySelectorAll('.dialogue-panel').forEach(panel=>{
-  panel.dataset.priority=dialoguePriority==='map'&&panel.dataset.lifecycle!=='true'?'text':dialoguePriority;
+  panel.dataset.priority=dialoguePriority;
   panel.querySelector('[data-dialogue-priority]').value=panel.dataset.priority;
  });
 }
 function dialoguePriorityControl(dialogue){
- const life=dialogueLifecycles[dialogue.id],priority=dialoguePriority==='map'&&!life?'text':dialoguePriority;
+ const priority=dialoguePriority;
  return `<label class="dialogue-priority">${T('أولوية المتابعة','Follow priority')} <select data-dialogue-priority onchange="setDialoguePriority(this.value)">
- ${life?`<option value="map" ${priority==='map'?'selected':''}>${T('دورة المحادثة','Conversation journey')}</option>`:''}
  <option value="text" ${priority==='text'?'selected':''}>${T('النص الكامل','Full transcript')}</option>
  <option value="image" ${priority==='image'?'selected':''}>${T('المشهد','Scene')}</option></select></label>`;
 }
@@ -112,12 +111,16 @@ function dialogueVisual(dialogue,index){
 }
 function dialogueImageButton(dialogue,index,thumb=false){
  const visual=dialogueVisual(dialogue,index);
- return visual?`<button type="button" class="dialogue-image-button ${thumb?'dialogue-thumb':''}" onclick="enlargeDialogueScene(this)" aria-label="${T('تكبير المشهد','Enlarge scene')}">${visual}</button>`:'';
+ return visual?`<button type="button" class="dialogue-image-button ${thumb?'dialogue-thumb':''}" data-dialogue-image="${H(dialogue.id)}" data-dialogue-turn="${index}" onclick="enlargeDialogueScene(this)" aria-label="${T('تكبير المشهد مع الشرح','Enlarge scene with explanation')}">${visual}</button>`:'';
 }
 function enlargeDialogueScene(button){
+ const dialogue=PILOT?.dialogues.find(item=>item.id===button.dataset.dialogueImage);
+ const index=Number(button.dataset.dialogueTurn);
+ const line=dialogue?.lines[index];
+ const explanation=dialogue?dialogueSceneExplanation(dialogue,index):'';
  const dialog=document.createElement('dialog');
  dialog.className='dialogue-image-dialog';
- dialog.innerHTML=`<div class="dialogue-image-heading"><h2>${T('عرض المشهد','Scene view')}</h2><form method="dialog"><button class="secondary" autofocus aria-label="${T('إغلاق الصورة','Close image')}">×</button></form></div><figure>${button.innerHTML}</figure>`;
+ dialog.innerHTML=`<div class="dialogue-image-heading"><h2>${T('عرض المشهد','Scene view')}</h2><form method="dialog"><button class="secondary" autofocus aria-label="${T('إغلاق الصورة','Close image')}">×</button></form></div><figure>${button.innerHTML}<figcaption>${explanation}</figcaption></figure>${line?`<div class="dialogue-live-text"><p lang="en" dir="ltr">${dialogueWords(line)}</p>${EP.ar(line.ar)}</div>`:''}`;
  // Nest within the lesson so it stays available when that lesson is modal.
  (button.closest('#lesson')||document.body).append(dialog);
  dialog.addEventListener('close',()=>{dialog.remove();button.focus()},{once:true});
@@ -132,9 +135,10 @@ function dialoguePanel(dialogue, jump){
  const patterns=[...new Set(dialogue.lines.flatMap(line=>line.patterns))];
  const referenceTurns=dialogue.lines.filter(line=>line.referenceId);
  const life=dialogueLifecycles[dialogue.id];
- const priority=dialoguePriority==='map'&&!life?'text':dialoguePriority;
+ const priority=dialoguePriority;
  return `<section class="dialogue-panel" data-lifecycle="${Boolean(life)}" data-priority="${priority}"><div class="dialogue-panel-title"><h2>${H(T(dialogue.ar,dialogue.en))}</h2>${dialoguePriorityControl(dialogue)}</div>
-  ${life?dialogueJourney(dialogue,jump):''}
+  <button type="button" class="secondary dialogue-overview-toggle" aria-expanded="false" onclick="toggleDialogueOverview(this)">${T('عرض كل المشاهد','Show all scenes')}</button>
+  <div class="dialogue-overview" hidden>${life?dialogueJourney(dialogue,jump):dialogueSceneGallery(dialogue,jump)}</div>
   <details class="dialogue-patterns"><summary>${T('الأنماط في هذه المحادثة','Patterns in this conversation')}</summary>
   ${patterns.length?`<div class="buttonrow">${dialoguePatterns(patterns)}</div>`:''}
   ${referenceTurns.map(line=>`<div>${dialogueSourceNote(line)}<p lang="en" dir="ltr">${dialogueWords(line)}</p></div>`).join('')}
@@ -145,7 +149,7 @@ function dialoguePanel(dialogue, jump){
    <ol>${dialogue.lines.map((line,i)=>`<li data-dialogue-line="${i}">
     ${dialogue.audio?`<button class="dialogue-turn-play" onclick="${jump}(${i},this)" aria-label="${T('استمع من الدور','Listen from turn')} ${i+1}">▶</button>`:''}
     <div><strong>${line.voice==='male'?T('عمر','Omar'):T('سارة','Sara')}</strong><p lang="en" dir="ltr">${dialogueWords(line)}</p>${EP.ar(line.ar)}${dialogueSourceNote(line)}</div>
-    ${dialogueImageButton(dialogue,i,true)}
+    <figure class="dialogue-turn-visual">${dialogueImageButton(dialogue,i,true)}<figcaption>${dialogueSceneExplanation(dialogue,i,true)}</figcaption></figure>
    </li>`).join('')}</ol>
   </details></section>`;
 }
@@ -164,7 +168,7 @@ function paintDialogue(panel,dialogue,ms){
   const visual=dialogueImageButton(dialogue,index);
   active.dataset.turn=turnKey;
   const speaker=line.voice==='male'?T('عمر','Omar'):T('سارة','Sara');
-  active.innerHTML=`<div class="dialogue-photo">${visual}</div><div class="dialogue-live-text">
+  active.innerHTML=`<div class="dialogue-photo">${visual}${visual?dialogueSceneExplanation(dialogue,index):''}</div><div class="dialogue-live-text">
    <small>${isTitle?T('عنوان المحادثة','Conversation title'):`${T('تتبّع النطق','Follow the spoken line')} · ${speaker} · ${index+1} / ${turns.length}`}</small>
    <p lang="en" dir="ltr">${dialogueWords(line)}</p>${EP.ar(line.ar)}${dialogueSourceNote(line)}
    <div class="dialogue-turn-patterns">${dialoguePatterns(line.patterns)}</div></div>`;

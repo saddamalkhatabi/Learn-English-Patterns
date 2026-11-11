@@ -1,3 +1,21 @@
+function toggleDialogueOverview(button){
+ const overview=button.closest('.dialogue-panel').querySelector('.dialogue-overview');
+ overview.hidden=!overview.hidden;
+ button.setAttribute('aria-expanded',String(!overview.hidden));
+ button.textContent=overview.hidden?T('عرض كل المشاهد','Show all scenes'):T('إخفاء كل المشاهد','Hide all scenes');
+}
+function dialogueSceneExplanation(dialogue,turn,compact=false){
+ const life=dialogueLifecycles[dialogue.id];
+ const stage=turn<0?null:life?.stages.find(item=>item.from<=turn+1&&turn+1<=item.to);
+ const image=dialogueSceneArchive[dialogue.id]?.turns?.[turn+1];
+ const note=life?.turnPurposes?.[turn];
+ const title=stage?T(stage.ar,stage.en):T('معنى المشهد','Scene meaning');
+ const purpose=stage?T(stage.purposeAr,stage.purposeEn):turn<0&&life?T(life.goalAr,life.goalEn):image?T(image.ar,image.en):T('مشهد توضيحي. اقرأ العبارة وترجمتها لفهم استخدامها في الحوار.','Illustrative scene. Read the line and its translation to understand its use in the conversation.');
+ return `<div class="dialogue-scene-explanation"><strong>${H(title)}</strong>${!compact||!note?`<p>${H(purpose)}</p>`:''}${note?`<p class="dialogue-line-purpose"><b>${T('غرض العبارة','Purpose of this line')}:</b> ${H(T(note[0],note[1]))}</p>`:''}</div>`;
+}
+function dialogueSceneGallery(dialogue,jump){
+ return `<div class="dialogue-scene-gallery">${dialogue.lines.map((line,index)=>`<figure>${dialogueImageButton(dialogue,index)}<figcaption><b>${T('الدور','Turn')} ${index+1}</b>${dialogueSceneExplanation(dialogue,index)}<p lang="en" dir="ltr">${dialogueWords(line)}</p>${EP.ar(line.ar)}${dialogue.audio?`<button class="secondary" onclick="${jump}(${index},this)">${T('استمع إلى العبارة','Listen to the line')} ▶</button>`:''}</figcaption></figure>`).join('')}</div>`;
+}
 function dialogueJourney(dialogue,jump){
  const life=dialogueLifecycles[dialogue.id];
  return `<section class="dialogue-journey" aria-label="${T('دورة المحادثة','Conversation journey')}">

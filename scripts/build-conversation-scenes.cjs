@@ -38,6 +38,7 @@ for(const [id,input] of Object.entries(author)){
  scenes[id]={cover,turns};
 }
 const lifecycles=require('../production/dialogue-lifecycles.json');
+const turnPurposes=require('../production/dialogue-turn-purposes.json');
 for(const [id,life] of Object.entries(lifecycles)){
  const dialogue=dialogues.get(id);
  assert(dialogue&&life.goalEn&&life.goalAr&&life.stages.length===4,id);
@@ -49,6 +50,9 @@ for(const [id,life] of Object.entries(lifecycles)){
   next=stage.to+1;
  }
  assert.equal(next,dialogue.lines.length+1,id);
+ assert.equal(turnPurposes[id]?.length,dialogue.lines.length,`${id} turn purposes`);
+ assert(turnPurposes[id].every(pair=>pair.length===2&&pair.every(text=>typeof text==='string'&&text.trim())),id);
+ life.turnPurposes=turnPurposes[id];
 }
 fs.writeFileSync('public/conversation-scenes.json',JSON.stringify({schema:1,scenes,lifecycles},null,2)+'\n');
 console.log(`Indexed scene links for ${Object.keys(scenes).length} conversations`);
