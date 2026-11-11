@@ -11,7 +11,8 @@ const trainingAudioReady=fetch('training-audio.json').then(r=>r.ok?r.json():{}).
 // Cached data can arrive before the later classic scripts have installed the coach and narration.
 const courseScriptsReady=document.readyState==='loading'?
  new Promise(resolve=>document.addEventListener('DOMContentLoaded',resolve,{once:true})):Promise.resolve();
-const pilotReady=Promise.all([fetch('pilot.json').then(r=>{if(!r.ok)throw Error('pilot');return r.json()}),expansionReady,dialogueReady,trainingAudioReady,courseScriptsReady]).then(([data,expansion,dialogues,trainingAudio])=>{
+const pilotReady=Promise.all([fetch('pilot.json').then(r=>{if(!r.ok)throw Error('pilot');return r.json()}),expansionReady,dialogueReady,trainingAudioReady,courseScriptsReady,
+ courseScriptsReady.then(()=>dialogueArchiveReady)]).then(([data,expansion,dialogues,trainingAudio])=>{
  data.dialogues=dialogues;data.requireConversation=true;data.trainingAudio=trainingAudio;
  if(expansion?.schema===3){
   data.patterns.push(...expansion.patterns);
