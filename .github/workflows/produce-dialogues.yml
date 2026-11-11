@@ -91,12 +91,13 @@ jobs:
         env:
           TARGET_BRANCH: ${{ github.ref_name }}
         run: |
+          npm ci --no-audit --no-fund
           node scripts/merge-dialogue-audio.cjs dialogue-shards
           npm run build
           DIALOGUE_AUDIO_REQUIRED=1 npm test
           git config user.name 'English Patterns media'
           git config user.email 'noreply@users.noreply.github.com'
-          git add public/dialogue-audio.json public/training-audio.json public/assets/audio public/app-version.js public/app-version.json public/offline-manifest.json
+          git add public/dialogue-audio.json public/training-audio.json public/assets/audio public/app-version.js public/app-version.json public/offline-manifest.json public/vocabulary-index.json public/scene-vocabulary.json
           if git diff --cached --quiet; then exit 0; fi
           git commit -m 'Publish measured conversation audio and offline indexes'
           git push origin "HEAD:$TARGET_BRANCH"

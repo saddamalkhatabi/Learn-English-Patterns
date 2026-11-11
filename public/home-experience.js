@@ -72,7 +72,8 @@ const homeServices=[
  ['dialogues','care-01','المحادثات','Conversations','استمع إلى حوارات بصوتين وتابع النص والمشهد.','Listen to two voices and follow the transcript and scene.'],
  ['comparisons','classroom-01','المقارنات','Comparisons','ميّز الصيغ المتشابهة بالأمثلة والشرح.','Tell similar structures apart with examples and explanations.'],
  ['lab','workshop-01','تحدّث من المشهد','Speak from scenes','سمِّ ما تراه، ثم ابتكر وصفًا أو حوارًا من الصورة.','Name what you see, then create a description or dialogue.'],
- ['scene-studio','civic-01','مكتبة الصور','Photo library','اختر صورة من الأرشيف، واستمع إلى جملتها أو استخدمها في محادثة حرّة.','Choose an archived photo, hear its sentence, or use it for open conversation.'],
+ ['scene-studio','civic-01','مكتبة الصور الذكية','Smart photo library','مارس النمط مع صور جمله الأصلية، وتعلّم مفرداتها أو ابتكر حوارًا منها.','Practise a pattern with its original scenes, explore vocabulary, or create a dialogue.'],
+ ['vocabulary','study-09','أطلس المفردات والعبارات','Words & phrases atlas','ابحث بالكلمة ونوعها، وتتبّع ظهورها في الصور والجمل والمحادثات.','Find a word by type and explore its scenes, sentences and conversations.'],
 ];
 
 home=function(){

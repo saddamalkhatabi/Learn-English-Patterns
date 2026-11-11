@@ -6,7 +6,8 @@ const sentences=new Map(course.flatMap(part=>part.sentences).map(row=>[row.id,ro
 const references=require('../public/teaching-index.json').sentences;
 const comparisons=require('../public/comparisons.json');
 const {scenes}=require('../public/idea-scenes.json');
-const words=new Set(scenes.flatMap(scene=>scene.words.map(word=>word.en)));
+const words=new Set([...scenes.flatMap(scene=>scene.words.map(word=>word.en)),
+ ...Object.values(require('../production/scene-word-maps.json')).flatMap(words=>words.map(word=>word.en))]);
 const voices=['male','female'];
 const notes=new Set(comparisons.flatMap(item=>item.samples.map(sample=>sample.sentenceId)));
 const expected=Object.fromEntries([

@@ -4,13 +4,13 @@ const crypto = require('node:crypto');
 const root = path.resolve(__dirname, '../..');
 const hash = bytes => crypto.createHash('sha256').update(bytes).digest('hex');
 const names = ['pilot', 'supplement', 'expansion-media', 'source-corpus', 'curriculum', 'pattern-catalog',
-  'dialogues', 'dialogue-audio', 'comparisons', 'scene-archive', 'idea-scenes', 'conversation-scenes', 'training-audio'];
+  'dialogues', 'dialogue-audio', 'comparisons', 'scene-archive', 'idea-scenes', 'conversation-scenes', 'training-audio','vocabulary-index'];
 const displayable = new Set(['visually_reviewed', 'assistant-reviewed', 'imported-unreviewed']);
 
 exports.seed = async db => {
   const files = Object.fromEntries(names.map(name => [name, fs.readFileSync(path.join(root, 'public', name+'.json'))]));
   const sources = Object.fromEntries(names.map(name => [name, hash(files[name])]));
-  const fingerprint = hash(JSON.stringify({ format: 6, sources }));
+  const fingerprint = hash(JSON.stringify({ format: 7, sources }));
   if ((await db('content_state').where('key', 'current_import').first())?.value === fingerprint) {
     console.log('Content already indexed: ' + fingerprint.slice(0, 12));
     return;
@@ -156,7 +156,15 @@ exports.seed = async db => {
     idea_scene_words:ideas.scenes.flatMap(s=>s.words.map((w,position)=>({scene_id:s.id,position,ar:w.ar,en:w.en,kind:w.kind,x:w.x??null,y:w.y??null}))),
     idea_scene_patterns:ideas.scenes.flatMap(s=>s.patterns.map((p,position)=>({scene_id:s.id,pattern_id:p.id,position,
       example_en:p.en??null,example_ar:p.ar??null,task_en:p.taskEn??null,task_ar:p.taskAr??null}))),
-    dialogue_scene_uses:dialogueSceneUses
+    dialogue_scene_uses:dialogueSceneUses,
+    vocabulary_entries:data['vocabulary-index'].entries.map(entry=>({id:entry.id,en:entry.en,lemma:entry.lemma,ar:entry.ar||null,pos:entry.pos})),
+    vocabulary_sources:data['vocabulary-index'].sources.map((source,id)=>({id,kind:source.type,entity_id:source.id,turn:source.turn??null,en:source.en,ar:source.ar||null})),
+    vocabulary_occurrences:data['vocabulary-index'].entries.flatMap(entry=>entry.sourceIds.map(source_id=>({entry_id:entry.id,source_id}))),
+    vocabulary_scene_links:data['vocabulary-index'].entries.flatMap(entry=>entry.sceneIds.map(scene_id=>({entry_id:entry.id,scene_id}))),
+    dialogue_stages:Object.entries(data['conversation-scenes'].lifecycles||{}).flatMap(([dialogue_id,life])=>life.stages.map((stage,position)=>({
+      dialogue_id,position,from_turn:stage.from,to_turn:stage.to,title_ar:stage.ar,title_en:stage.en,purpose_ar:stage.purposeAr,purpose_en:stage.purposeEn,
+      scene_id:data['conversation-scenes'].scenes[dialogue_id].turns[stage.from].id
+    })))
   };
   await db.transaction(async trx=>{
     if((await trx('content_state').where('key','current_import').first())?.value===fingerprint)return;

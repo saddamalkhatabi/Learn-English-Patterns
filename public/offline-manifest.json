@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "version": "fcdc7d110b094e30",
+  "version": "89e79710f7761927",
   "shell": [
     "app.js",
     "collection-experience.js",
@@ -14,6 +14,7 @@
     "data.js",
     "dialogue-audio.json",
     "dialogue-experience.js",
+    "dialogue-journey.js",
     "dialogue-plan.json",
     "dialogues.json",
     "enhancements.js",
@@ -51,6 +52,8 @@
     "scene-archive.json",
     "scene-layout.css",
     "scene-studio.js",
+    "scene-vocabulary.json",
+    "smart-library.js",
     "source-corpus-audit.json",
     "source-corpus.json",
     "source.json",
@@ -63,6 +66,9 @@
     "training-audio.json",
     "training-narration.js",
     "ui-translations.json",
+    "vocabulary-core.js",
+    "vocabulary-index.json",
+    "vocabulary-ui.js",
     "app-version.js",
     "app-version.json"
   ],
@@ -87140,6 +87146,438 @@
       "path": "assets/scenes/can-atlas.webp",
       "sha256": "eec802a0fa2338001737117ca2bc82d2ab47263b1eb7334d122938a5cd2f0f13",
       "bytes": 248994,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/conversations/life-cafe-order-1.webp",
+      "sha256": "e220a6781ff56898b3e1226452e8e75df1c85da0125926ccaf096890fdf6e7b0",
+      "bytes": 39344,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/conversations/life-cafe-order-2.webp",
+      "sha256": "303cdd562a13bbcb8ec97c8c2486572506d68ee5fb0c6ff678a2e1afae86ca6f",
+      "bytes": 40038,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/conversations/life-cafe-order-3.webp",
+      "sha256": "847a7b9d20b3781972225f7e3ef58992082489aadf144356fc09298fc946c4ce",
+      "bytes": 40454,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/conversations/life-cafe-order-4.webp",
+      "sha256": "195ce7234733deb662c2e1ad629974ad31e7bdd6f513b1ebdd90efbc7123558e",
+      "bytes": 38618,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/conversations/life-clinic-desk-1.webp",
+      "sha256": "4006af7a365be8c64283354f602933161efb75fbc4ab1a9fd6aa22803aca3af6",
+      "bytes": 27194,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/conversations/life-clinic-desk-2.webp",
+      "sha256": "ead27a523ed44aa93051e36d1dbf6881d58ac488bf3147f6bd06e76ab952b104",
+      "bytes": 25156,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/conversations/life-clinic-desk-3.webp",
+      "sha256": "64b8632061464f908edaf1c4d0358539b992643871190ddac3ce1b91bd6e7705",
+      "bytes": 25912,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/conversations/life-clinic-desk-4.webp",
+      "sha256": "4f832cb6223c51721257f7408d905229803ca57935f2ad4a1760f7f10451bc96",
+      "bytes": 23650,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/conversations/life-find-the-platform-1.webp",
+      "sha256": "503cf78e046ea535ab00a7d85de5307eedeb6a6399303f5229e2b788dd8fa186",
+      "bytes": 28334,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/conversations/life-find-the-platform-2.webp",
+      "sha256": "c04e51af150727457ebab84f3d9ef98d2c57fa55c12e460eb3d0ba5386bcbebd",
+      "bytes": 26224,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/conversations/life-find-the-platform-3.webp",
+      "sha256": "a6b2ac2f822081e09e5a05c0e714e9d2e7f8a7d2a924322145dc872ecd4db60b",
+      "bytes": 25228,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/conversations/life-find-the-platform-4.webp",
+      "sha256": "5416be9641a1cb3a83c7e3f808bf0e184eedf498d7a4ea527c5c1b7b9f10e271",
+      "bytes": 24648,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/conversations/life-forgot-receipt-1.webp",
+      "sha256": "2db60d3771bb0cd4c4ee9cae8524e523e9d89e6f383fde767987dfa6c57dd6c7",
+      "bytes": 28642,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/conversations/life-forgot-receipt-2.webp",
+      "sha256": "00b55e1f70931583d598d1c048221980cfdcc5512cc70ac61b9db12b89559b15",
+      "bytes": 25538,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/conversations/life-forgot-receipt-3.webp",
+      "sha256": "c65c0637d6a7de421c62367ab815e33f95af5cabccafd040fbc692d61d62ca34",
+      "bytes": 26574,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/conversations/life-forgot-receipt-4.webp",
+      "sha256": "e6da05b5c9fd0f03f123ffa15599c2e23a1802f93fc75dc284085160e44b3726",
+      "bytes": 25884,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/conversations/life-interview-strength-1.webp",
+      "sha256": "88bcad78a896763c8314a291f2fdc386da125f7e8ee661bc4531378034f24cea",
+      "bytes": 23262,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/conversations/life-interview-strength-2.webp",
+      "sha256": "a5ca8a57a4d40ec72de4ee1ebbbc93d2e03ae743ca56c279d32d59c5c76cad35",
+      "bytes": 20520,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/conversations/life-interview-strength-3.webp",
+      "sha256": "7dd4731ce0b34c40f6f63a25ca098daef5468de8c3031c1bff1a709e2cc7bfe8",
+      "bytes": 24714,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/conversations/life-interview-strength-4.webp",
+      "sha256": "1cafbc68589c144d72e4cb21e4707df74a82529663ce882775bd582dbeb2b48a",
+      "bytes": 22704,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/conversations/life-library-book-1.webp",
+      "sha256": "388132ab2859469abbb43c452ba3104de733ea2e27be925efa62c3ad86082582",
+      "bytes": 33002,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/conversations/life-library-book-2.webp",
+      "sha256": "05043772f8eca766ca1479614ae0f270c5acef27b4d98f1281c98eb015e5ef6f",
+      "bytes": 29274,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/conversations/life-library-book-3.webp",
+      "sha256": "f8056cc219d2e399c5e3797243f0423495ab4b0e4c4af8beb293ad8d8f4ef2c1",
+      "bytes": 29764,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/conversations/life-library-book-4.webp",
+      "sha256": "3c8b3ebb02cf532af5dbf53a9f887dd3007cf8f78c58999d48e6b2f81c5809e8",
+      "bytes": 25756,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/conversations/life-market-budget-1.webp",
+      "sha256": "f0ea6a7d53467d0f48de80fc3ecddf4bfdc2f404f8cf30e2494012cf6249d43d",
+      "bytes": 36560,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/conversations/life-market-budget-2.webp",
+      "sha256": "4aaac980d0fd3aa258a1e3e61e03e34df854acc3c2d9e2150ae4754a06f9d459",
+      "bytes": 36448,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/conversations/life-market-budget-3.webp",
+      "sha256": "889cff6c13ba038cc6dc4d4dc18c1ca4f2a981bb551b52db70ff48c24f1a772f",
+      "bytes": 34700,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/conversations/life-market-budget-4.webp",
+      "sha256": "858aa9b0912adff02db9290de56054c92bb8eccbfd8805d7d18bad8f1ffb837a",
+      "bytes": 35790,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/conversations/life-meal-plan-1.webp",
+      "sha256": "6affcb4b37ba3e5b810a5faa39670eabcf364ef1031317bcacf8cb6c0ccb7b8c",
+      "bytes": 36584,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/conversations/life-meal-plan-2.webp",
+      "sha256": "9121b0dc6d2a2a57569d5b513101575d9e37597ed891af084de8281aa2dedf60",
+      "bytes": 34860,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/conversations/life-meal-plan-3.webp",
+      "sha256": "e67918ccd0542e139c7d3137c3ec678a52b08964e92a72a4ca45d89f9d1bf16c",
+      "bytes": 35546,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/conversations/life-meal-plan-4.webp",
+      "sha256": "ae7fcef63fe7e0b31cc33d5c85534bedb0f03f4041a788bfae89a2cbac08b23f",
+      "bytes": 36494,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/conversations/life-missed-bus-1.webp",
+      "sha256": "a3ea856a38a80544224906d14b75ee2f02828b531855671c3dd65c2b58c0495f",
+      "bytes": 44590,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/conversations/life-missed-bus-2.webp",
+      "sha256": "36c99bf093e1d48a590728f5233e4b0055574e9939efb7334bac5a02f460f748",
+      "bytes": 42838,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/conversations/life-missed-bus-3.webp",
+      "sha256": "04fba80b08f6ec6491d0b493bd72e98704e4b1b8bcc3e69be53b3b4f3b2e1a4f",
+      "bytes": 45640,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/conversations/life-missed-bus-4.webp",
+      "sha256": "a39a6ebfee28a3023a6f6eeed1dd9d55981ff42734195a93698d1659dfbd2726",
+      "bytes": 53456,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/conversations/life-new-neighbor-1.webp",
+      "sha256": "71de1d0ba2c7207a689f7d7f4a67a7a98cb6185c44bde1f942cfeeceb7e07a41",
+      "bytes": 32504,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/conversations/life-new-neighbor-2.webp",
+      "sha256": "9337f4ed0604804e569049e3e10ad5e44b98995e018d82f2433052f4767dd875",
+      "bytes": 37594,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/conversations/life-new-neighbor-3.webp",
+      "sha256": "4a7958735a3955397a2d4151a03f7e982c244943bd3bc80fe8dd9837a4ea6053",
+      "bytes": 34886,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/conversations/life-new-neighbor-4.webp",
+      "sha256": "80040c84718accb3f0c99206503c2b08c99f6d53dde5059f07a577d3d76bce08",
+      "bytes": 36306,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/conversations/life-project-meeting-1.webp",
+      "sha256": "258105e8709173cd542343fea3a04352c374b4c6b1297c80f8152cf13a825f20",
+      "bytes": 24526,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/conversations/life-project-meeting-2.webp",
+      "sha256": "ecba2ff3227c54f21a4a974d5a3906864fee667f3d31ec3ea841113596c6bd01",
+      "bytes": 24400,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/conversations/life-project-meeting-3.webp",
+      "sha256": "32a50e5d2097e9f3d7bad0f9df71dc9da339388314e4923fb3028c1b0e5c1f6a",
+      "bytes": 25626,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/conversations/life-project-meeting-4.webp",
+      "sha256": "c3c522aad950715be58b71b17ed80a8695ab8dee8e46e9cfdb68f1ca8a3bf6f1",
+      "bytes": 24016,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/conversations/life-study-together-1.webp",
+      "sha256": "09516e1648bf880d5fe375c2a140b719651d7781b2c8b8e6daf8249cbfe7c33e",
+      "bytes": 32930,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/conversations/life-study-together-2.webp",
+      "sha256": "8c67b901e7dcbd806908979d33d59c2ef8ec600d813754a963a0f189c347509c",
+      "bytes": 35140,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/conversations/life-study-together-3.webp",
+      "sha256": "cf6246bd3cc42fc578bbba03ed9b676f46215a89b0040ea2e4cb15d7451bc1a0",
+      "bytes": 34096,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/scenes/conversations/life-study-together-4.webp",
+      "sha256": "a61a7aa661e61a3e0db8dd20f907da1786b5b96f90cc924f7ab0e083258d8c9b",
+      "bytes": 33560,
       "groups": [
         "course",
         "all"

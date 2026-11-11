@@ -4,7 +4,7 @@ labels.curriculum='استكشف الأنماط';labels.library='تعلّم ال�
 const epNavGroups=[
  ['تعلّم','LEARN',[['home','⌂','البداية','Home'],['library','▤','دروس الأنماط','Pattern lessons'],['coach','▷','الاستماع والتدريب','Listen & practise']]],
  ['طبّق','PRACTISE',[['lab','✧','تحدّث من المشهد','Speak from scenes'],['dialogues','▧','المحادثات','Conversations'],['comparisons','⇄','المقارنات','Comparisons']]],
- ['ارجع وتابع','FIND & REVIEW',[['references','◈','الألف جملة','1,000 sentences'],['scene-studio','▦','مكتبة الصور','Photo library'],['progress','◴','تقدّمي ومراجعتي','Progress & review']]]
+ ['ارجع وتابع','FIND & REVIEW',[['references','◈','الألف جملة','1,000 sentences'],['scene-studio','▦','مكتبة الصور الذكية','Smart photo library'],['vocabulary','Aa','أطلس المفردات','Vocabulary atlas'],['progress','◴','تقدّمي ومراجعتي','Progress & review']]]
 ];
 const epSubpages={
  path:['library','خطة التعلّم','Learning plan'],curriculum:['library','فهرس الأنماط','Pattern index'],

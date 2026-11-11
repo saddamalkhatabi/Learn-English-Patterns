@@ -10,15 +10,15 @@ try{
 }catch{}
 
 function ideaViewer(scene){
- const multiple=findIdeaScenes().length>1;
+ const multiple=page==='scene-studio'?studioMatches().length>1:findIdeaScenes().length>1;
  return `<div id="idea-scene-viewer">
-  <div class="idea-picture-frame">${ideaPicture(scene)}<div id="idea-picture-labels"></div></div>
+  <div class="idea-picture-frame" style="--smart-ratio:${scene.width/scene.height}">${ideaPicture(scene)}<div id="idea-picture-labels"></div></div>
   <div id="idea-picture-caption" class="idea-picture-caption"></div>
   <div class="idea-viewer-tools">
    <div class="idea-viewer-bar">
-    <button class="secondary" data-idea-scene-step ${multiple?'':'disabled'} onclick="stepIdeaScene(-1)" aria-label="${T('المشهد السابق','Previous scene')}">‹</button>
+    <button class="secondary" data-idea-scene-step ${multiple?'':'disabled'} onclick="page==='scene-studio'?stepStudioScene(-1):stepIdeaScene(-1)" aria-label="${T('المشهد السابق','Previous scene')}">‹</button>
     <button type="button" id="idea-zoom-button" class="secondary" onclick="toggleIdeaZoom()">⛶ ${T('تكبير','Enlarge')}</button>
-    <button class="secondary" data-idea-scene-step ${multiple?'':'disabled'} onclick="stepIdeaScene(1)" aria-label="${T('المشهد التالي','Next scene')}">›</button>
+    <button class="secondary" data-idea-scene-step ${multiple?'':'disabled'} onclick="page==='scene-studio'?stepStudioScene(1):stepIdeaScene(1)" aria-label="${T('المشهد التالي','Next scene')}">›</button>
    </div>
    <details class="idea-disclosure idea-picture-options"><summary>${T('خيارات الكلمات على الصورة','Picture word options')}</summary>
    <div class="idea-viewer-options">
@@ -137,12 +137,7 @@ function ideaLabelText(word,language){
 function updateIdeaCaption(word,language){
  const caption=$('#idea-picture-caption');
  if(!caption)return;
- caption.innerHTML=word?ideaLabelText(word,language)+`<span class="idea-caption-kind">${ideaWordKind(word)}</span>`:'';
-}
-
-function ideaWordKind(word){
- const kind={object:['اسم','Noun'],action:['فعل','Verb'],description:['صفة','Adjective']}[word.kind]||['عبارة','Phrase'];
- return T(...kind);
+ caption.innerHTML=word?ideaLabelText(word,language)+wordTypeBadge(word):'';
 }
 
 function showIdeaMarker(index,voice){
@@ -181,7 +176,8 @@ function paintIdeaPoints(words,language,selectedLanguage=language){
  if(!layer)return;
  layer.innerHTML='<svg class="idea-map-leaders" aria-hidden="true"></svg>'+words.map(word=>{
   const name=H(word.en+' · '+word.ar),selected=ideaSelected===word.index;
-  return `<div class="idea-map-point ${selected?'selected':''}" data-word="${word.index}" style="--x:${word.x}%;--y:${word.y}%">
+  const type=EPVocabulary.types[EPVocabulary.posFor(word)]||EPVocabulary.types.X;
+  return `<div class="idea-map-point word-type-${type.color} ${selected?'selected':''}" data-word="${word.index}" style="--x:${word.x}%;--y:${word.y}%">
    <button type="button" class="idea-pin" onclick="showIdeaMarker(${word.index})" aria-label="${name}">${word.index+1}</button>
    <button type="button" class="idea-map-label" onclick="showIdeaMarker(${word.index})">${ideaLabelText(word,selected?selectedLanguage:language)}</button></div>`;
  }).join('');
@@ -202,6 +198,8 @@ function pronounceIdeaWord(word,voice,onVoice){
 }
 function playIdeaAudio(text,cueId,voice,onVoice=()=>{}){
  const recording=PILOT?.trainingAudio?.[cueId];
+ const excerpt=vocabularyAudioFor(text,voice);
+ if(!recording&&excerpt){onVoice(voice==='male'?'Adam':'Bella');return playVocabularyClip(excerpt)}
  let audio,fallback,stopped=false,finish;
  const done=new Promise(resolve=>{finish=resolve});
  const recover=()=>{
@@ -235,7 +233,7 @@ function startIdeaSequence(flash,sound){
  else if(ideaWordMode==='flash'){ideaWordMode='hidden';paintIdeaLabels(scene)}
  updateIdeaModeButtons();
  const play=async index=>{
-  if(ideaSequence!==sequence||scene.id!==ideaSceneId)return;
+  if(ideaSequence!==sequence||scene.id!==currentIdeaScene()?.id)return;
   if(index===words.length){
    if(sound)recordDailyPractice('words',scene.id);
    if(flash)setIdeaWordMode('hidden',false);

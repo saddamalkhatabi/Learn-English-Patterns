@@ -10,16 +10,15 @@ const ideaFollowups={
  craft:'What should we check before we finish?',
  events:'How would you adapt if more people arrived?'
 };
-function renderIdeaRoleplay(scene){
- const form=PILOT?.patterns.find(p=>p.id===ideaTarget(scene)?.id)?.form;
+const ideaChatModes=new Map();
+function ideaRoleplayRoot(){return $('#studio-dialogue')||$('#idea-lab-task')}
+function renderIdeaRoleplay(scene,withAI=true){
  return `<div class="idea-roleplay">
-  ${form?`<p>${T('جرّب استخدام هذا النمط في أحد ردودك','Try using this pattern in one of your replies')} <strong class="pattern-form" lang="en" dir="ltr">${H(form)}</strong></p>`:''}
-  <h3>${T('الحوار الموجّه','Guided conversation')}</h3>
-  <p>${T('أجب بالإنجليزية. بعد كل رد يظهر سؤال متابعة يساعدك على تطوير الحوار.','Reply in English. A follow-up after each reply helps you develop the conversation.')}</p>
+  <p>${T('اكتب حوارًا بين شخصين، أو أجب عن أسئلة تساعدك على بنائه. يمكنك حفظه وسماع أدواره.','Write both sides of a conversation, or answer prompts that help you build one. Save it and listen to its turns.')}</p>
   <div id="idea-guided-chat"></div>
-  <details class="scene-ai">
+  ${withAI?`<details class="scene-ai">
    <summary>${T('ابتكر حوارًا مع مساعدك واستورده','Create and import a dialogue with your AI assistant')}</summary>
-   <p>${T('انسخ الطلب إلى مساعدك، ثم الصق رده هنا. يمكنك لصق JSON أو حوار مكتوب بأسماء المتحدثين.','Copy the prompt to your assistant, then paste its reply here. You can paste JSON or a dialogue with speaker names.')}</p>
+   <p>${T('يمكنك مشاركة شاشة الصورة من تطبيق مساعدك والتحاور معه، أو نسخ الطلب إليه ثم لصق حواره هنا لحفظه.','Share this scene from your assistant’s screen-sharing feature, or copy the prompt and paste its dialogue here to save it.')}</p>
    <div class="buttonrow"><button class="secondary" onclick="showIdeaDialoguePrompt()">✦ ${T('جهّز طلب الحوار','Prepare dialogue prompt')}</button>
     <button class="secondary" data-copy-scene-ai onclick="copySceneAiPrompt(this)" hidden>${T('انسخ الطلب','Copy prompt')}</button></div>
    <textarea readonly hidden data-scene-ai-prompt aria-label="${T('طلب الحوار','Dialogue prompt')}" rows="6" dir="ltr" lang="en"></textarea>
@@ -28,7 +27,7 @@ function renderIdeaRoleplay(scene){
     <label>${T('رد المساعد','Assistant reply')}<textarea id="idea-dialogue-input" maxlength="30000" rows="5" dir="auto" placeholder="A: …&#10;B: …"></textarea></label>
     <button class="primary" type="submit">${T('استورد الحوار واحفظه','Import and save dialogue')}</button>
    </form>
-  </details>
+  </details>`:''}
   <p id="idea-dialogue-status" role="status"></p>
   <details class="idea-archive idea-disclosure"><summary>${T('حواراتي المحفوظة','Saved dialogues')}</summary>
    <p>${T('يُحفظ الأرشيف في هذا المتصفح.','Your archive is saved in this browser.')}</p>
@@ -52,7 +51,19 @@ function paintIdeaGuided(){
  if(!host)return;
  const turns=ideaGuided.get(ideaPracticeKey(currentIdeaScene()));
  if(!turns){
-  host.innerHTML=`<button class="primary" onclick="startIdeaGuided()">${T('ابدأ الحوار','Start dialogue')} →</button>`;
+  host.innerHTML=`<div class="idea-dialogue-choices"><div><b>${T('حوار من كتابتك','Write your own dialogue')}</b><p>${T('اكتب كلام المتحدث الأول ثم ردّ المتحدث الثاني.','Write the first speaker’s line, then the second speaker’s reply.')}</p><button class="primary" onclick="startIdeaCompose()">${T('ابدأ كتابة الحوار','Start writing')}</button></div>
+   <div><b>${T('أسئلة تفتح الحديث','Prompts to get you talking')}</b><p>${T('تلقَّ سؤالًا وأجب عنه، ثم تابع الحوار خطوة بخطوة.','Answer a prompt, then develop the conversation one step at a time.')}</p><button class="secondary" onclick="startIdeaGuided()">${T('ابدأ بالأسئلة','Start with prompts')}</button></div></div>`;
+  return;
+ }
+ if(ideaChatModes.get(ideaPracticeKey(currentIdeaScene()))==='compose'){
+  host.innerHTML=ideaChatBubbles(turns,'guided')+`
+   <form class="idea-compose" onsubmit="event.preventDefault();sendIdeaComposed()">
+    <label>${T('المتحدث','Speaker')}<select id="idea-compose-speaker"><option value="A" ${turns.at(-1)?.speaker==='A'?'':'selected'}>A</option><option value="B" ${turns.at(-1)?.speaker==='A'?'selected':''}>B</option></select></label>
+    <label>${T('الجملة بالإنجليزية','English line')}<input id="idea-compose-en" lang="en" dir="ltr" required maxlength="650"></label>
+    <label>${T('الترجمة اختياريًا','Optional translation')}<input id="idea-compose-ar" lang="ar" dir="rtl" maxlength="650"></label>
+    <button class="primary" ${turns.length>=40?'disabled':''}>${T('أضف الدور','Add turn')}</button>
+   </form><div class="buttonrow"><button class="secondary" onclick="saveIdeaGuided()" ${turns.length<2||new Set(turns.map(turn=>turn.speaker)).size<2?'disabled':''}>${T('احفظ حواري','Save my dialogue')}</button>
+    <button class="textlink" onclick="startIdeaCompose()">${T('حوار جديد','New dialogue')}</button></div>`;
   return;
  }
  host.innerHTML=ideaChatBubbles(turns,'guided')+`
@@ -68,9 +79,20 @@ function startIdeaGuided(){
  const scene=currentIdeaScene();
  if(!scene)return;
  const [ar,en]=ideaPracticeTask(scene);
+ ideaChatModes.set(ideaPracticeKey(scene),'guided');
  ideaGuided.set(ideaPracticeKey(scene),[{speaker:T('الشريك','Partner'),en,ar}]);
  paintIdeaGuided();
  $('#idea-guided-reply')?.focus();
+}
+function startIdeaCompose(){
+ const key=ideaPracticeKey(currentIdeaScene());if(!key)return;
+ ideaChatModes.set(key,'compose');ideaGuided.set(key,[]);paintIdeaGuided();$('#idea-compose-en')?.focus();
+}
+function sendIdeaComposed(){
+ const turns=ideaGuided.get(ideaPracticeKey(currentIdeaScene())),en=$('#idea-compose-en')?.value.trim();
+ if(!turns||!en||turns.length>=40)return;
+ turns.push({speaker:$('#idea-compose-speaker').value,en,ar:$('#idea-compose-ar').value.trim()});
+ paintIdeaGuided();$('#idea-compose-en')?.focus();
 }
 function sendIdeaGuided(){
  const scene=currentIdeaScene();
@@ -78,7 +100,7 @@ function sendIdeaGuided(){
  const input=$('#idea-guided-reply'),en=input?.value.trim();
  if(!scene||!turns||!en||turns.length>=8)return;
  const next=[
-  `Choose one visible detail, such as “${scene.words[0].en}”. How would you use it in your next reply?`,
+  `Choose one visible detail, such as “${scene.words[0]?.en||'something in the scene'}”. How would you use it in your next reply?`,
   ideaFollowups[scene.topic]||'How would you answer if the situation changed?',
   'How would you close this conversation politely?'
  ][(turns.length-1)/2];
@@ -88,18 +110,18 @@ function sendIdeaGuided(){
  $('#idea-guided-reply')?.focus();
 }
 function showIdeaDialoguePrompt(){
- const scene=currentIdeaScene(),box=$('#idea-lab-task [data-scene-ai-prompt]');
+ const scene=currentIdeaScene(),box=ideaRoleplayRoot()?.querySelector('[data-scene-ai-prompt]');
  if(!scene||!box)return;
- const examples=[ideaPracticeForm(),...(scene.patterns||[]).map(pattern=>pattern.en||PILOT?.patterns.find(p=>p.id===pattern.id)?.form)].filter(Boolean);
+ const examples=(scene.patterns||[]).filter(pattern=>pattern.en).map(pattern=>pattern.en);
  box.value=`Write a practical English role-play for an Arabic-speaking A2 learner.
 Scene: ${scene.sentenceEn}
 Task: ${ideaPracticeTask(scene)[1]}
 Useful vocabulary: ${scene.words.map(word=>word.en).join(', ')}.
-Patterns to use where natural: ${examples.join(' / ')||'Can you …? / Let’s …'}
+Optional example lines: ${examples.join(' / ')||scene.sentenceEn}
 Write 6 to 10 turns between two distinct named speakers. Include a follow-up question and one practical decision. Add a natural Arabic translation to each turn. Output only valid JSON using this exact structure:
 {"title":"Short title","turns":[{"speaker":"A","en":"English turn","ar":"الترجمة العربية"},{"speaker":"B","en":"English reply","ar":"الترجمة العربية"}]}`;
  box.hidden=false;
- $('#idea-lab-task [data-copy-scene-ai]').hidden=false;
+ ideaRoleplayRoot().querySelector('[data-copy-scene-ai]').hidden=false;
  box.focus();
 }
 function ideaDialogueStatus(message){$('#idea-dialogue-status').textContent=message}
@@ -119,6 +141,7 @@ function archiveIdeaDialogue(draft,source){
  ideaArchiveView=entry.id;
  paintIdeaArchive();
  paintIdeaLibrary();
+ $('.idea-archive').open=true;
  ideaDialogueStatus(T('حُفظ الحوار وظهر في الأرشيف.','The dialogue is saved and open in the archive.'));
  const heading=$('#idea-archive-view h4');
  heading?.focus({preventScroll:true});
@@ -137,29 +160,38 @@ function importIdeaDialogue(){
 }
 function saveIdeaGuided(){
  const turns=ideaGuided.get(ideaPracticeKey(currentIdeaScene()));
- if(turns?.length>=3)archiveIdeaDialogue({turns},'guided');
+ if(turns?.length>=2&&new Set(turns.map(turn=>turn.speaker)).size>=2)
+  archiveIdeaDialogue({turns},ideaChatModes.get(ideaPracticeKey(currentIdeaScene()))==='compose'?'written':'guided');
 }
 function paintIdeaArchive(){
  const list=$('#idea-archive-list'),view=$('#idea-archive-view');
  if(!list||!view)return;
- const rows=ideaArchive.filter(entry=>ideaArchiveScope==='all'||entry.sceneId===ideaSceneId);
+ const currentId=currentIdeaScene()?.id;
+ const rows=ideaArchive.filter(entry=>ideaArchiveScope==='all'||entry.sceneId===currentId);
  list.innerHTML=rows.length?`<ul>${rows.map(entry=>`<li><button class="textlink" data-archive-id="${H(entry.id)}" onclick="openIdeaArchivedDialogue(this.dataset.archiveId)">${H(entry.title)} ↗</button>
- <small>${entry.source==='guided'?T('موجّه','Guided'):T('مستورَد','Imported')} · ${entry.turns.length} ${T('أدوار','turns')}</small></li>`).join('')}</ul>`:
+ <small>${entry.source==='written'?T('من كتابتي','Written'):entry.source==='guided'?T('موجّه','Guided'):T('مستورَد','Imported')} · ${entry.turns.length} ${T('أدوار','turns')}</small></li>`).join('')}</ul>`:
   `<p>${T('لا توجد حوارات محفوظة هنا بعد.','No dialogues saved here yet.')}</p>`;
  const entry=rows.find(row=>row.id===ideaArchiveView);
  view.innerHTML=entry?`<h4 dir="auto" tabindex="-1">${H(entry.title)}</h4>${ideaChatBubbles(entry.turns,'archive')}
   <div class="buttonrow"><button class="secondary" onclick="ideaArchiveView=null;paintIdeaArchive()">${T('أغلق النص','Close transcript')}</button>
-  ${entry.sceneId!==ideaSceneId?`<button class="secondary" onclick="openIdeaArchiveScene()">${T('افتح المشهد المرتبط','Open linked scene')}</button>`:''}
+  ${entry.sceneId!==currentId?`<button class="secondary" onclick="openIdeaArchiveScene()">${T('افتح المشهد المرتبط','Open linked scene')}</button>`:''}
   <button class="textlink" onclick="removeIdeaArchivedDialogue()">${T('احذف من أرشيفي','Remove from my archive')}</button></div>`:'';
 }
 function openIdeaArchivedDialogue(id){ideaArchiveView=id;paintIdeaArchive()}
-function openIdeaArchiveScene(){
+async function openIdeaArchiveScene(){
  const id=ideaArchiveView;
  const entry=ideaArchive.find(row=>row.id===id);
+ if(entry?.sceneId.startsWith('studio:')){
+  await openSmartSentence(entry.sceneId.slice(7));ideaArchiveView=id;paintIdeaArchive();
+  const details=$('.idea-archive');if(details)details.open=true;
+  return;
+ }
  if(!entry||!ideaLibrary?.scenes.some(scene=>scene.id===entry.sceneId))return;
  chooseIdeaScene(entry.sceneId);
+ setIdeaAction('roleplay');
  ideaArchiveView=id;
  paintIdeaArchive();
+ $('.idea-archive').open=true;
 }
 function removeIdeaArchivedDialogue(){
  const entries=ideaArchive.filter(entry=>entry.id!==ideaArchiveView);

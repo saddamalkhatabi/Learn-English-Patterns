@@ -50,6 +50,7 @@ jobs:
       - name: Import reviewed source files and rebuild preview/offline content
         if: inputs.apply_reviewed
         run: |
+          npm ci --no-audit --no-fund
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
           python scripts/import-reviewed-scenes.py "$SCENE_STAGE"
           npm run check

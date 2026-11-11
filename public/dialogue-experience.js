@@ -45,19 +45,25 @@ const dialogueAnchors={
 let dialogueQueue=null;
 let dialogueResume={};
 try{dialogueResume=JSON.parse(localStorage.getItem('nasaq-dialogue-resume-v1'))||{}}catch{}
-let dialoguePriority=dialogueResume.priority==='image'?'image':'text';
-let dialogueSceneArchive={};
-const dialogueArchiveReady=fetch('conversation-scenes.json').then(r=>r.ok?r.json():{}).then(data=>{dialogueSceneArchive=data.scenes||{}}).catch(()=>{});
+let dialoguePriority=['image','text','map'].includes(dialogueResume.priority)?dialogueResume.priority:'map';
+let dialogueSceneArchive={},dialogueLifecycles={};
+const dialogueArchiveReady=fetch('conversation-scenes.json').then(r=>r.ok?r.json():{}).then(data=>{
+ dialogueSceneArchive=data.scenes||{};dialogueLifecycles=data.lifecycles||{};
+}).catch(()=>{});
 function saveDialogueResume(){try{localStorage.setItem('nasaq-dialogue-resume-v1',JSON.stringify(dialogueResume))}catch{}}
 function setDialoguePriority(value){
- dialoguePriority=value==='image'?'image':'text';dialogueResume.priority=dialoguePriority;saveDialogueResume();
- document.querySelectorAll('.dialogue-panel').forEach(panel=>panel.dataset.priority=dialoguePriority);
- document.querySelectorAll('[data-dialogue-priority]').forEach(select=>select.value=dialoguePriority);
+ dialoguePriority=['image','map'].includes(value)?value:'text';dialogueResume.priority=dialoguePriority;saveDialogueResume();
+ document.querySelectorAll('.dialogue-panel').forEach(panel=>{
+  panel.dataset.priority=dialoguePriority==='map'&&panel.dataset.lifecycle!=='true'?'text':dialoguePriority;
+  panel.querySelector('[data-dialogue-priority]').value=panel.dataset.priority;
+ });
 }
-function dialoguePriorityControl(){
+function dialoguePriorityControl(dialogue){
+ const life=dialogueLifecycles[dialogue.id],priority=dialoguePriority==='map'&&!life?'text':dialoguePriority;
  return `<label class="dialogue-priority">${T('أولوية المتابعة','Follow priority')} <select data-dialogue-priority onchange="setDialoguePriority(this.value)">
- <option value="text" ${dialoguePriority==='text'?'selected':''}>${T('النص الكامل','Full transcript')}</option>
- <option value="image" ${dialoguePriority==='image'?'selected':''}>${T('المشهد','Scene')}</option></select></label>`;
+ ${life?`<option value="map" ${priority==='map'?'selected':''}>${T('دورة المحادثة','Conversation journey')}</option>`:''}
+ <option value="text" ${priority==='text'?'selected':''}>${T('النص الكامل','Full transcript')}</option>
+ <option value="image" ${priority==='image'?'selected':''}>${T('المشهد','Scene')}</option></select></label>`;
 }
 function dialogueResumeKey(hostId){return hostId==='lesson-dialogue-player'?`lesson-${current?.id}`:'catalog'}
 function pauseDialogueAudio(except){
@@ -125,7 +131,10 @@ function dialogueSourceNote(line){
 function dialoguePanel(dialogue, jump){
  const patterns=[...new Set(dialogue.lines.flatMap(line=>line.patterns))];
  const referenceTurns=dialogue.lines.filter(line=>line.referenceId);
- return `<section class="dialogue-panel" data-priority="${dialoguePriority}"><div class="dialogue-panel-title"><h2>${H(T(dialogue.ar,dialogue.en))}</h2>${dialoguePriorityControl()}</div>
+ const life=dialogueLifecycles[dialogue.id];
+ const priority=dialoguePriority==='map'&&!life?'text':dialoguePriority;
+ return `<section class="dialogue-panel" data-lifecycle="${Boolean(life)}" data-priority="${priority}"><div class="dialogue-panel-title"><h2>${H(T(dialogue.ar,dialogue.en))}</h2>${dialoguePriorityControl(dialogue)}</div>
+  ${life?dialogueJourney(dialogue,jump):''}
   <details class="dialogue-patterns"><summary>${T('الأنماط في هذه المحادثة','Patterns in this conversation')}</summary>
   ${patterns.length?`<div class="buttonrow">${dialoguePatterns(patterns)}</div>`:''}
   ${referenceTurns.map(line=>`<div>${dialogueSourceNote(line)}<p lang="en" dir="ltr">${dialogueWords(line)}</p></div>`).join('')}
@@ -147,6 +156,7 @@ function paintDialogue(panel,dialogue,ms){
  const { turns, intro, title }=dialogue.audio;
  const isTitle=Boolean(intro&&ms<turns[0].start_ms);
  const index=isTitle?-1:turns.findIndex((turn,i)=>i===turns.length-1||ms<turns[i+1].start_ms);
+ paintDialogueJourney(panel,dialogue,index);
  const line=isTitle?{voice:'female',en:title,ar:dialogue.ar,patterns:[],scene:dialogue.lines[0].scene}:dialogue.lines[index];
  const turn=isTitle?intro:turns[index];
  const turnKey=`${dialogue.id}:${index}`;
@@ -382,6 +392,7 @@ function dialoguesPage(){
    <label class="dialogue-search">${T('البحث','Search')}<input type="search" id="dialogue-query" oninput="resetDialogueFilters()" placeholder="${T('عنوان، موقف، أو نمط…','Title, situation, or pattern…')}"></label>
    ${dialogueSelect('category',T('الموقف','Situation'),T('كل المواقف','All situations'),dialogueCategories)}
    ${dialogueSelect('purpose',T('هدف المحادثة','Speaking goal'),T('كل الأهداف','All goals'),dialoguePurposes)}
+   ${dialogueSelect('visual',T('المشاهد','Visual journey'),T('كل المحادثات','All conversations'),{journey:['دورة مصوّرة · 12 محادثة','Illustrated journey · 12 conversations']})}
    ${dialogueSelect('series',T('مستوى المحادثات','Conversation level'),T('كل المستويات','All conversation levels'),seriesChoices)}
    ${dialogueSelect('level',T('صعوبة اللغة المقترحة','Suggested language difficulty'),T('كل درجات الصعوبة','All difficulties'),{A1:['A1','A1'],A2:['A2','A2'],B1:['B1','B1'],B2:['B2','B2']})}
    ${dialogueSelect('status',T('الجاهزية','Availability'),T('المحادثات المتاحة','Available conversations'),{
@@ -461,6 +472,7 @@ function filteredDialogueEntries(){
  const patterns=new Map((PILOT?.patterns||[]).map(pattern=>[pattern.id,pattern]));
  return dialogueEntries().filter(entry=>{
   if(!dialogueStatusMatches(entry,status))return false;
+  if($('#dialogue-visual')?.value==='journey'&&!dialogueLifecycles[entry.id])return false;
   if(facets.some(([key,value])=>value&&String(entry[key])!==value))return false;
   if(patternId&&!entry.patternIds.includes(patternId))return false;
   if(!tokens.length)return true;

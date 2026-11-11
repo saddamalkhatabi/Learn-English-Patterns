@@ -1,13 +1,749 @@
 {
-  "cafe-order": {"cover": "idea-food-04"},
-  "find-the-platform": {"cover": "idea-travel-01"},
-  "check-out-at-noon": {"cover": "idea-travel-04"},
-  "bag-at-station": {"cover": "idea-travel-10"},
-  "office-visitor-badge": {"cover": "idea-work-01"},
-  "returning-a-neighbors-tools": {"cover": "idea-neighborhood-01"},
-  "group-book-exchange": {"cover": "idea-neighborhood-02"},
-  "first-aid-supplies": {"cover": "idea-health-05"},
-  "tea-with-a-guest": {"cover": "idea-home-09"},
-  "early-alarm": {"cover": "idea-home-10"},
-  "l2-072": {"cover": "idea-nature-02"}
+  "cafe-order": {
+    "cover": {
+      "id": "conv-life-cafe-order-1",
+      "path": "assets/scenes/conversations/life-cafe-order-1.webp",
+      "width": 500,
+      "height": 300,
+      "en": "Sara greets Omar across the café counter with empty cups and a teapot nearby.",
+      "ar": "سارة ترحب بعمر عند منضدة المقهى وبجوارها أكواب وإبريق شاي."
+    },
+    "turns": {
+      "1": {
+        "id": "conv-life-cafe-order-1",
+        "path": "assets/scenes/conversations/life-cafe-order-1.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Sara greets Omar across the café counter with empty cups and a teapot nearby.",
+        "ar": "سارة ترحب بعمر عند منضدة المقهى وبجوارها أكواب وإبريق شاي."
+      },
+      "2": {
+        "id": "conv-life-cafe-order-2",
+        "path": "assets/scenes/conversations/life-cafe-order-2.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Omar politely indicates a cup and a teapot while Sara listens to his order.",
+        "ar": "عمر يطلب كوب شاي بأدب وسارة تستمع إليه."
+      },
+      "3": {
+        "id": "conv-life-cafe-order-3",
+        "path": "assets/scenes/conversations/life-cafe-order-3.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Sara holds a small milk jug; Omar politely declines it while pointing toward a clear glass of water.",
+        "ar": "سارة تعرض الحليب وعمر يرفضه بأدب ويطلب كوب ماء."
+      },
+      "4": {
+        "id": "conv-life-cafe-order-3",
+        "path": "assets/scenes/conversations/life-cafe-order-3.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Sara holds a small milk jug; Omar politely declines it while pointing toward a clear glass of water.",
+        "ar": "سارة تعرض الحليب وعمر يرفضه بأدب ويطلب كوب ماء."
+      },
+      "5": {
+        "id": "conv-life-cafe-order-4",
+        "path": "assets/scenes/conversations/life-cafe-order-4.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Sara gestures welcomingly toward window seating as Omar carries his tea and water to a table by the window.",
+        "ar": "سارة تشير إلى المقاعد وعمر يتجه بشايه ومائه إلى طاولة بجوار النافذة."
+      },
+      "6": {
+        "id": "conv-life-cafe-order-4",
+        "path": "assets/scenes/conversations/life-cafe-order-4.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Sara gestures welcomingly toward window seating as Omar carries his tea and water to a table by the window.",
+        "ar": "سارة تشير إلى المقاعد وعمر يتجه بشايه ومائه إلى طاولة بجوار النافذة."
+      }
+    }
+  },
+  "find-the-platform": {
+    "cover": {
+      "id": "conv-life-find-the-platform-1",
+      "path": "assets/scenes/conversations/life-find-the-platform-1.webp",
+      "width": 500,
+      "height": 300,
+      "en": "Sara asks Omar for help in a station concourse while holding her ticket and backpack.",
+      "ar": "سارة تسأل موظف المحطة وتحمل تذكرتها وحقيبة ظهرها."
+    },
+    "turns": {
+      "1": {
+        "id": "conv-life-find-the-platform-1",
+        "path": "assets/scenes/conversations/life-find-the-platform-1.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Sara asks Omar for help in a station concourse while holding her ticket and backpack.",
+        "ar": "سارة تسأل موظف المحطة وتحمل تذكرتها وحقيبة ظهرها."
+      },
+      "2": {
+        "id": "conv-life-find-the-platform-2",
+        "path": "assets/scenes/conversations/life-find-the-platform-2.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Omar points toward the platform passage with a train visible in the distance; Sara follows his pointing hand.",
+        "ar": "الموظف يشير إلى ممر الأرصفة وسارة تتبّع الاتجاه."
+      },
+      "3": {
+        "id": "conv-life-find-the-platform-3",
+        "path": "assets/scenes/conversations/life-find-the-platform-3.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Sara shows her ticket to Omar beside the barrier; he points toward the train and then his wristwatch.",
+        "ar": "سارة تعرض تذكرتها قرب البوابة والموظف يشير إلى القطار ثم إلى ساعته."
+      },
+      "4": {
+        "id": "conv-life-find-the-platform-3",
+        "path": "assets/scenes/conversations/life-find-the-platform-3.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Sara shows her ticket to Omar beside the barrier; he points toward the train and then his wristwatch.",
+        "ar": "سارة تعرض تذكرتها قرب البوابة والموظف يشير إلى القطار ثم إلى ساعته."
+      },
+      "5": {
+        "id": "conv-life-find-the-platform-4",
+        "path": "assets/scenes/conversations/life-find-the-platform-4.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Sara holds her ticket ready at the station barrier while Omar gives a final helpful gesture toward the platform.",
+        "ar": "سارة تمسك تذكرتها استعدادًا للبوابة والموظف يوضح اتجاه الرصيف."
+      },
+      "6": {
+        "id": "conv-life-find-the-platform-4",
+        "path": "assets/scenes/conversations/life-find-the-platform-4.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Sara holds her ticket ready at the station barrier while Omar gives a final helpful gesture toward the platform.",
+        "ar": "سارة تمسك تذكرتها استعدادًا للبوابة والموظف يوضح اتجاه الرصيف."
+      }
+    }
+  },
+  "check-out-at-noon": {
+    "cover": "idea-travel-04"
+  },
+  "bag-at-station": {
+    "cover": "idea-travel-10"
+  },
+  "office-visitor-badge": {
+    "cover": "idea-work-01"
+  },
+  "returning-a-neighbors-tools": {
+    "cover": "idea-neighborhood-01"
+  },
+  "group-book-exchange": {
+    "cover": "idea-neighborhood-02"
+  },
+  "first-aid-supplies": {
+    "cover": "idea-health-05"
+  },
+  "tea-with-a-guest": {
+    "cover": "idea-home-09"
+  },
+  "early-alarm": {
+    "cover": "idea-home-10"
+  },
+  "l2-072": {
+    "cover": "idea-nature-02"
+  },
+  "new-neighbor": {
+    "cover": {
+      "id": "conv-life-new-neighbor-1",
+      "path": "assets/scenes/conversations/life-new-neighbor-1.webp",
+      "width": 500,
+      "height": 300,
+      "en": "Omar smiles and greets Sara on the pavement, a notebook in his hand, neighborhood buildings behind them.",
+      "ar": "عمر يحيّي سارة على رصيف الحي ويحمل دفترًا."
+    },
+    "turns": {
+      "1": {
+        "id": "conv-life-new-neighbor-1",
+        "path": "assets/scenes/conversations/life-new-neighbor-1.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Omar smiles and greets Sara on the pavement, a notebook in his hand, neighborhood buildings behind them.",
+        "ar": "عمر يحيّي سارة على رصيف الحي ويحمل دفترًا."
+      },
+      "2": {
+        "id": "conv-life-new-neighbor-2",
+        "path": "assets/scenes/conversations/life-new-neighbor-2.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Sara gestures lightly toward her nearby front door while introducing herself to Omar.",
+        "ar": "سارة تعرّف بنفسها وتشير إلى باب بيتها القريب."
+      },
+      "3": {
+        "id": "conv-life-new-neighbor-3",
+        "path": "assets/scenes/conversations/life-new-neighbor-3.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Omar points across the street to a library entrance with books visible through its window; Sara follows his gesture.",
+        "ar": "عمر يشير إلى مكتبة في الجانب الآخر من الشارع وسارة تنظر إليها."
+      },
+      "4": {
+        "id": "conv-life-new-neighbor-4",
+        "path": "assets/scenes/conversations/life-new-neighbor-4.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Omar indicates the small bakery next to the library, bread visible inside; Sara thanks him and turns toward it.",
+        "ar": "عمر يدل سارة على مخبز بجوار المكتبة فتشكره وتستعد للذهاب إليه."
+      },
+      "5": {
+        "id": "conv-life-new-neighbor-4",
+        "path": "assets/scenes/conversations/life-new-neighbor-4.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Omar indicates the small bakery next to the library, bread visible inside; Sara thanks him and turns toward it.",
+        "ar": "عمر يدل سارة على مخبز بجوار المكتبة فتشكره وتستعد للذهاب إليه."
+      },
+      "6": {
+        "id": "conv-life-new-neighbor-4",
+        "path": "assets/scenes/conversations/life-new-neighbor-4.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Omar indicates the small bakery next to the library, bread visible inside; Sara thanks him and turns toward it.",
+        "ar": "عمر يدل سارة على مخبز بجوار المكتبة فتشكره وتستعد للذهاب إليه."
+      }
+    }
+  },
+  "study-together": {
+    "cover": {
+      "id": "conv-life-study-together-1",
+      "path": "assets/scenes/conversations/life-study-together-1.webp",
+      "width": 500,
+      "height": 300,
+      "en": "Omar indicates an English workbook while Sara suggests studying together at the library table.",
+      "ar": "عمر يشير إلى كتاب الإنجليزية وسارة تقترح المذاكرة معًا."
+    },
+    "turns": {
+      "1": {
+        "id": "conv-life-study-together-1",
+        "path": "assets/scenes/conversations/life-study-together-1.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Omar indicates an English workbook while Sara suggests studying together at the library table.",
+        "ar": "عمر يشير إلى كتاب الإنجليزية وسارة تقترح المذاكرة معًا."
+      },
+      "2": {
+        "id": "conv-life-study-together-1",
+        "path": "assets/scenes/conversations/life-study-together-1.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Omar indicates an English workbook while Sara suggests studying together at the library table.",
+        "ar": "عمر يشير إلى كتاب الإنجليزية وسارة تقترح المذاكرة معًا."
+      },
+      "3": {
+        "id": "conv-life-study-together-2",
+        "path": "assets/scenes/conversations/life-study-together-2.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Omar points to his wristwatch and a small calendar while Sara listens to the alternative study time.",
+        "ar": "عمر يوضح تعارض الموعد مشيرًا إلى ساعته وتقويم صغير."
+      },
+      "4": {
+        "id": "conv-life-study-together-3",
+        "path": "assets/scenes/conversations/life-study-together-3.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Sara lays two notebooks and pencils beside the workbook as Omar prepares his bag.",
+        "ar": "سارة تضع دفترين وأقلامًا بجوار الكتاب وعمر يجهز حقيبته."
+      },
+      "5": {
+        "id": "conv-life-study-together-4",
+        "path": "assets/scenes/conversations/life-study-together-4.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Both students look at workbook pages while Sara uses removable page tabs to mark difficult exercises.",
+        "ar": "الطالبان يراجعان الكتاب وسارة تضع علامات على التمارين الصعبة."
+      },
+      "6": {
+        "id": "conv-life-study-together-4",
+        "path": "assets/scenes/conversations/life-study-together-4.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Both students look at workbook pages while Sara uses removable page tabs to mark difficult exercises.",
+        "ar": "الطالبان يراجعان الكتاب وسارة تضع علامات على التمارين الصعبة."
+      }
+    }
+  },
+  "market-budget": {
+    "cover": {
+      "id": "conv-life-market-budget-1",
+      "path": "assets/scenes/conversations/life-market-budget-1.webp",
+      "width": 500,
+      "height": 300,
+      "en": "Sara asks Omar about tomatoes arranged on the stall; he gestures to the produce and an empty bag.",
+      "ar": "سارة تسأل عن سعر الطماطم والبائع يشير إلى الثمار وكيس فارغ."
+    },
+    "turns": {
+      "1": {
+        "id": "conv-life-market-budget-1",
+        "path": "assets/scenes/conversations/life-market-budget-1.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Sara asks Omar about tomatoes arranged on the stall; he gestures to the produce and an empty bag.",
+        "ar": "سارة تسأل عن سعر الطماطم والبائع يشير إلى الثمار وكيس فارغ."
+      },
+      "2": {
+        "id": "conv-life-market-budget-1",
+        "path": "assets/scenes/conversations/life-market-budget-1.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Sara asks Omar about tomatoes arranged on the stall; he gestures to the produce and an empty bag.",
+        "ar": "سارة تسأل عن سعر الطماطم والبائع يشير إلى الثمار وكيس فارغ."
+      },
+      "3": {
+        "id": "conv-life-market-budget-2",
+        "path": "assets/scenes/conversations/life-market-budget-2.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Sara holds her reusable bag while Omar weighs tomatoes on a scale.",
+        "ar": "سارة تمسك حقيبتها والبائع يزن الطماطم على الميزان."
+      },
+      "4": {
+        "id": "conv-life-market-budget-2",
+        "path": "assets/scenes/conversations/life-market-budget-2.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Sara holds her reusable bag while Omar weighs tomatoes on a scale.",
+        "ar": "سارة تمسك حقيبتها والبائع يزن الطماطم على الميزان."
+      },
+      "5": {
+        "id": "conv-life-market-budget-3",
+        "path": "assets/scenes/conversations/life-market-budget-3.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Sara indicates softer tomatoes in a separate small bag beside the main tomato bag.",
+        "ar": "سارة تشير إلى ثمار طرية وتطلب وضعها في كيس منفصل."
+      },
+      "6": {
+        "id": "conv-life-market-budget-4",
+        "path": "assets/scenes/conversations/life-market-budget-4.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Omar shows one ripe soft tomato and one firm tomato next to two separate bags as Sara listens.",
+        "ar": "البائع يوضح الفرق بين ثمرة طرية وأخرى متماسكة بجوار الكيسين."
+      }
+    }
+  },
+  "clinic-desk": {
+    "cover": {
+      "id": "conv-life-clinic-desk-1",
+      "path": "assets/scenes/conversations/life-clinic-desk-1.webp",
+      "width": 500,
+      "height": 300,
+      "en": "Omar looks tired as he speaks to Sara at clinic reception; she checks an appointment notebook.",
+      "ar": "عمر يبدو متعبًا وهو يتحدث إلى موظفة الاستقبال التي تراجع دفتر المواعيد."
+    },
+    "turns": {
+      "1": {
+        "id": "conv-life-clinic-desk-1",
+        "path": "assets/scenes/conversations/life-clinic-desk-1.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Omar looks tired as he speaks to Sara at clinic reception; she checks an appointment notebook.",
+        "ar": "عمر يبدو متعبًا وهو يتحدث إلى موظفة الاستقبال التي تراجع دفتر المواعيد."
+      },
+      "2": {
+        "id": "conv-life-clinic-desk-1",
+        "path": "assets/scenes/conversations/life-clinic-desk-1.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Omar looks tired as he speaks to Sara at clinic reception; she checks an appointment notebook.",
+        "ar": "عمر يبدو متعبًا وهو يتحدث إلى موظفة الاستقبال التي تراجع دفتر المواعيد."
+      },
+      "3": {
+        "id": "conv-life-clinic-desk-2",
+        "path": "assets/scenes/conversations/life-clinic-desk-2.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Sara points at an appointment card beside a small desk clock while Omar listens.",
+        "ar": "الموظفة تشير إلى بطاقة موعد قرب ساعة مكتب وعمر يستمع."
+      },
+      "4": {
+        "id": "conv-life-clinic-desk-2",
+        "path": "assets/scenes/conversations/life-clinic-desk-2.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Sara points at an appointment card beside a small desk clock while Omar listens.",
+        "ar": "الموظفة تشير إلى بطاقة موعد قرب ساعة مكتب وعمر يستمع."
+      },
+      "5": {
+        "id": "conv-life-clinic-desk-3",
+        "path": "assets/scenes/conversations/life-clinic-desk-3.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Omar holds a clipboard with a blank form and pen near the clinic waiting chairs.",
+        "ar": "عمر يحمل استمارة وقلمًا قرب مقاعد الانتظار."
+      },
+      "6": {
+        "id": "conv-life-clinic-desk-4",
+        "path": "assets/scenes/conversations/life-clinic-desk-4.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Omar hands a completed clipboard and an unmarked identity card to Sara at the same reception desk.",
+        "ar": "عمر يعيد الاستمارة وبطاقة هوية إلى موظفة الاستقبال."
+      }
+    }
+  },
+  "project-meeting": {
+    "cover": {
+      "id": "conv-life-project-meeting-1",
+      "path": "assets/scenes/conversations/life-project-meeting-1.webp",
+      "width": 500,
+      "height": 300,
+      "en": "Sara indicates a calendar at the meeting table while Omar considers the team's schedule.",
+      "ar": "سارة تشير إلى التقويم وعمر يتحقق من وقت الفريق."
+    },
+    "turns": {
+      "1": {
+        "id": "conv-life-project-meeting-1",
+        "path": "assets/scenes/conversations/life-project-meeting-1.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Sara indicates a calendar at the meeting table while Omar considers the team's schedule.",
+        "ar": "سارة تشير إلى التقويم وعمر يتحقق من وقت الفريق."
+      },
+      "2": {
+        "id": "conv-life-project-meeting-1",
+        "path": "assets/scenes/conversations/life-project-meeting-1.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Sara indicates a calendar at the meeting table while Omar considers the team's schedule.",
+        "ar": "سارة تشير إلى التقويم وعمر يتحقق من وقت الفريق."
+      },
+      "3": {
+        "id": "conv-life-project-meeting-2",
+        "path": "assets/scenes/conversations/life-project-meeting-2.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Omar holds his phone ready to send a message while Sara gestures toward their existing meeting room.",
+        "ar": "عمر يمسك هاتفه لإرسال إشعار وسارة تشير إلى غرفة الاجتماع."
+      },
+      "4": {
+        "id": "conv-life-project-meeting-2",
+        "path": "assets/scenes/conversations/life-project-meeting-2.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Omar holds his phone ready to send a message while Sara gestures toward their existing meeting room.",
+        "ar": "عمر يمسك هاتفه لإرسال إشعار وسارة تشير إلى غرفة الاجتماع."
+      },
+      "5": {
+        "id": "conv-life-project-meeting-3",
+        "path": "assets/scenes/conversations/life-project-meeting-3.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Sara points toward the calendar view on an open laptop, asking Omar to update it.",
+        "ar": "سارة تشير إلى تقويم على الحاسوب وتطلب تحديثه."
+      },
+      "6": {
+        "id": "conv-life-project-meeting-4",
+        "path": "assets/scenes/conversations/life-project-meeting-4.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Omar uses the laptop to update the meeting schedule while Sara watches, a paper calendar beside them.",
+        "ar": "عمر يحدّث موعد الاجتماع على الحاسوب وبجواره تقويم ورقي."
+      }
+    }
+  },
+  "library-book": {
+    "cover": {
+      "id": "conv-life-library-book-1",
+      "path": "assets/scenes/conversations/life-library-book-1.webp",
+      "width": 500,
+      "height": 300,
+      "en": "Sara points Omar toward two matching books on a library shelf.",
+      "ar": "أمينة المكتبة تدل عمر على نسختين من كتاب على الرف."
+    },
+    "turns": {
+      "1": {
+        "id": "conv-life-library-book-1",
+        "path": "assets/scenes/conversations/life-library-book-1.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Sara points Omar toward two matching books on a library shelf.",
+        "ar": "أمينة المكتبة تدل عمر على نسختين من كتاب على الرف."
+      },
+      "2": {
+        "id": "conv-life-library-book-1",
+        "path": "assets/scenes/conversations/life-library-book-1.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Sara points Omar toward two matching books on a library shelf.",
+        "ar": "أمينة المكتبة تدل عمر على نسختين من كتاب على الرف."
+      },
+      "3": {
+        "id": "conv-life-library-book-2",
+        "path": "assets/scenes/conversations/life-library-book-2.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Omar brings one book to the borrowing desk and shows his library card to Sara.",
+        "ar": "عمر يحمل كتابًا إلى مكتب الإعارة ويعرض بطاقة المكتبة."
+      },
+      "4": {
+        "id": "conv-life-library-book-2",
+        "path": "assets/scenes/conversations/life-library-book-2.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Omar brings one book to the borrowing desk and shows his library card to Sara.",
+        "ar": "عمر يحمل كتابًا إلى مكتب الإعارة ويعرض بطاقة المكتبة."
+      },
+      "5": {
+        "id": "conv-life-library-book-3",
+        "path": "assets/scenes/conversations/life-library-book-3.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Omar gestures toward a desk calendar while asking Sara about the borrowed book's return date.",
+        "ar": "عمر يسأل عن موعد الإرجاع مشيرًا إلى تقويم المكتب."
+      },
+      "6": {
+        "id": "conv-life-library-book-4",
+        "path": "assets/scenes/conversations/life-library-book-4.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Sara indicates a three-week span on a blank calendar and a laptop beside the book while Omar listens.",
+        "ar": "الأمينة تشير إلى مدة في التقويم ثم إلى الحاسوب لشرح التجديد."
+      }
+    }
+  },
+  "missed-bus": {
+    "cover": {
+      "id": "conv-life-missed-bus-1",
+      "path": "assets/scenes/conversations/life-missed-bus-1.webp",
+      "width": 500,
+      "height": 300,
+      "en": "Omar and Sara stand under a wet bus shelter as a bus disappears down the road.",
+      "ar": "عمر وسارة عند موقف مبتل وحافلة تبتعد في الطريق."
+    },
+    "turns": {
+      "1": {
+        "id": "conv-life-missed-bus-1",
+        "path": "assets/scenes/conversations/life-missed-bus-1.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Omar and Sara stand under a wet bus shelter as a bus disappears down the road.",
+        "ar": "عمر وسارة عند موقف مبتل وحافلة تبتعد في الطريق."
+      },
+      "2": {
+        "id": "conv-life-missed-bus-1",
+        "path": "assets/scenes/conversations/life-missed-bus-1.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Omar and Sara stand under a wet bus shelter as a bus disappears down the road.",
+        "ar": "عمر وسارة عند موقف مبتل وحافلة تبتعد في الطريق."
+      },
+      "3": {
+        "id": "conv-life-missed-bus-2",
+        "path": "assets/scenes/conversations/life-missed-bus-2.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Omar points toward a school in the distance while Sara gestures that they should walk.",
+        "ar": "عمر يشير إلى مدرسة بعيدة وسارة تقترح المشي."
+      },
+      "4": {
+        "id": "conv-life-missed-bus-2",
+        "path": "assets/scenes/conversations/life-missed-bus-2.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Omar points toward a school in the distance while Sara gestures that they should walk.",
+        "ar": "عمر يشير إلى مدرسة بعيدة وسارة تقترح المشي."
+      },
+      "5": {
+        "id": "conv-life-missed-bus-3",
+        "path": "assets/scenes/conversations/life-missed-bus-3.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Omar checks his wristwatch while Sara looks toward the street leading to the shops.",
+        "ar": "عمر ينظر إلى ساعته وسارة تتطلع إلى الطريق المؤدي للمتاجر."
+      },
+      "6": {
+        "id": "conv-life-missed-bus-4",
+        "path": "assets/scenes/conversations/life-missed-bus-4.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Sara indicates a safe paved shortcut through a small park as both start walking toward it.",
+        "ar": "سارة تشير إلى ممر مرصوف عبر الحديقة وينطلق الاثنان نحوه."
+      }
+    }
+  },
+  "meal-plan": {
+    "cover": {
+      "id": "conv-life-meal-plan-1",
+      "path": "assets/scenes/conversations/life-meal-plan-1.webp",
+      "width": 500,
+      "height": 300,
+      "en": "Omar offers a bowl of rice while Sara gestures toward a pot of soup on the counter.",
+      "ar": "عمر يعرض وعاء أرز وسارة تشير إلى قدر الحساء."
+    },
+    "turns": {
+      "1": {
+        "id": "conv-life-meal-plan-1",
+        "path": "assets/scenes/conversations/life-meal-plan-1.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Omar offers a bowl of rice while Sara gestures toward a pot of soup on the counter.",
+        "ar": "عمر يعرض وعاء أرز وسارة تشير إلى قدر الحساء."
+      },
+      "2": {
+        "id": "conv-life-meal-plan-1",
+        "path": "assets/scenes/conversations/life-meal-plan-1.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Omar offers a bowl of rice while Sara gestures toward a pot of soup on the counter.",
+        "ar": "عمر يعرض وعاء أرز وسارة تشير إلى قدر الحساء."
+      },
+      "3": {
+        "id": "conv-life-meal-plan-2",
+        "path": "assets/scenes/conversations/life-meal-plan-2.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Sara arranges four empty bowls as Omar checks the amount of soup in the pot.",
+        "ar": "سارة ترتب أربعة أوعية وعمر يتفقد كمية الحساء."
+      },
+      "4": {
+        "id": "conv-life-meal-plan-2",
+        "path": "assets/scenes/conversations/life-meal-plan-2.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Sara arranges four empty bowls as Omar checks the amount of soup in the pot.",
+        "ar": "سارة ترتب أربعة أوعية وعمر يتفقد كمية الحساء."
+      },
+      "5": {
+        "id": "conv-life-meal-plan-3",
+        "path": "assets/scenes/conversations/life-meal-plan-3.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Omar holds a small sauce dish apart from the main soup pot while asking Sara about spice.",
+        "ar": "عمر يمسك طبق صلصة صغيرًا بعيدًا عن القدر ويسأل عن الطعام الحار."
+      },
+      "6": {
+        "id": "conv-life-meal-plan-4",
+        "path": "assets/scenes/conversations/life-meal-plan-4.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Four bowls of soup are arranged on the table with sauce in a separate small dish; Sara and Omar finish setting the meal.",
+        "ar": "أربعة أوعية حساء على الطاولة والصلصة في طبق منفصل."
+      }
+    }
+  },
+  "forgot-receipt": {
+    "cover": {
+      "id": "conv-life-forgot-receipt-1",
+      "path": "assets/scenes/conversations/life-forgot-receipt-1.webp",
+      "width": 500,
+      "height": 300,
+      "en": "Omar places a bag on the returns counter and explains the issue to Sara.",
+      "ar": "عمر يضع حقيبة على مكتب الإرجاع ويشرح المشكلة."
+    },
+    "turns": {
+      "1": {
+        "id": "conv-life-forgot-receipt-1",
+        "path": "assets/scenes/conversations/life-forgot-receipt-1.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Omar places a bag on the returns counter and explains the issue to Sara.",
+        "ar": "عمر يضع حقيبة على مكتب الإرجاع ويشرح المشكلة."
+      },
+      "2": {
+        "id": "conv-life-forgot-receipt-1",
+        "path": "assets/scenes/conversations/life-forgot-receipt-1.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Omar places a bag on the returns counter and explains the issue to Sara.",
+        "ar": "عمر يضع حقيبة على مكتب الإرجاع ويشرح المشكلة."
+      },
+      "3": {
+        "id": "conv-life-forgot-receipt-2",
+        "path": "assets/scenes/conversations/life-forgot-receipt-2.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Omar shows a smartphone confirmation screen to Sara while she checks the shop computer.",
+        "ar": "عمر يعرض تأكيد الطلب على هاتفه وسارة تتحقق من الحاسوب."
+      },
+      "4": {
+        "id": "conv-life-forgot-receipt-2",
+        "path": "assets/scenes/conversations/life-forgot-receipt-2.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Omar shows a smartphone confirmation screen to Sara while she checks the shop computer.",
+        "ar": "عمر يعرض تأكيد الطلب على هاتفه وسارة تتحقق من الحاسوب."
+      },
+      "5": {
+        "id": "conv-life-forgot-receipt-3",
+        "path": "assets/scenes/conversations/life-forgot-receipt-3.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Omar opens an email view on his phone and points to it across the counter.",
+        "ar": "عمر يفتح رسالة على هاتفه ويشير إليها للموظفة."
+      },
+      "6": {
+        "id": "conv-life-forgot-receipt-4",
+        "path": "assets/scenes/conversations/life-forgot-receipt-4.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Sara points at a date area on the phone and then checks the matching purchase on her computer; the bag remains on the counter.",
+        "ar": "الموظفة تشير إلى موضع التاريخ ثم تبحث عن عملية الشراء على الحاسوب."
+      }
+    }
+  },
+  "interview-strength": {
+    "cover": {
+      "id": "conv-life-interview-strength-1",
+      "path": "assets/scenes/conversations/life-interview-strength-1.webp",
+      "width": 500,
+      "height": 300,
+      "en": "Omar asks a question at the interview table while Sara confidently explains a point with a simple hand gesture.",
+      "ar": "المحاوِر يسأل وسارة تشرح نقطة قوة بهدوء عند طاولة المقابلة."
+    },
+    "turns": {
+      "1": {
+        "id": "conv-life-interview-strength-1",
+        "path": "assets/scenes/conversations/life-interview-strength-1.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Omar asks a question at the interview table while Sara confidently explains a point with a simple hand gesture.",
+        "ar": "المحاوِر يسأل وسارة تشرح نقطة قوة بهدوء عند طاولة المقابلة."
+      },
+      "2": {
+        "id": "conv-life-interview-strength-1",
+        "path": "assets/scenes/conversations/life-interview-strength-1.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Omar asks a question at the interview table while Sara confidently explains a point with a simple hand gesture.",
+        "ar": "المحاوِر يسأل وسارة تشرح نقطة قوة بهدوء عند طاولة المقابلة."
+      },
+      "3": {
+        "id": "conv-life-interview-strength-2",
+        "path": "assets/scenes/conversations/life-interview-strength-2.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Illustration of Sara training exactly three modestly dressed adult coworkers around an office laptop with an unlabelled booking grid.",
+        "ar": "سارة تدرب ثلاثة زملاء على نظام حجز ظاهر كجدول على الحاسوب."
+      },
+      "4": {
+        "id": "conv-life-interview-strength-2",
+        "path": "assets/scenes/conversations/life-interview-strength-2.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Illustration of Sara training exactly three modestly dressed adult coworkers around an office laptop with an unlabelled booking grid.",
+        "ar": "سارة تدرب ثلاثة زملاء على نظام حجز ظاهر كجدول على الحاسوب."
+      },
+      "5": {
+        "id": "conv-life-interview-strength-3",
+        "path": "assets/scenes/conversations/life-interview-strength-3.webp",
+        "width": 500,
+        "height": 300,
+        "en": "Back at the interview table, Omar asks a follow-up while indicating his notepad; Sara listens.",
+        "ar": "العودة إلى المقابلة، المحاور يسأل سؤال متابعة وسارة تستمع."
+      },
+      "6": {
+        "id": "conv-life-interview-strength-4",
+        "path": "assets/scenes/conversations/life-interview-strength-4.webp",
+        "width": 500,
+        "height": 300,
+        "en": "One of Sara's coworkers independently edits a practice booking on a laptop while Sara observes from a step behind without intervening.",
+        "ar": "أحد الزملاء يعدل حجزًا تجريبيًا بنفسه وسارة تراقب من الخلف."
+      }
+    }
+  }
 }

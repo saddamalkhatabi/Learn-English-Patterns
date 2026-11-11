@@ -39,6 +39,7 @@ jobs:
           done
       - name: Rebuild all text, audio, image and offline indexes
         run: |
+          npm ci --no-audit --no-fund
           npm run build
           npm run check
           python tests/scene_zip_test.py
@@ -47,7 +48,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -A -- public/assets/scenes public/pilot.json public/source-corpus.json public/source-corpus-audit.json public/expansion-media.json public/scene-archive.json public/offline-manifest.json public/app-version.js public/app-version.json production/manifests production/qa/webp-grid-overrides.json production/qa/expansion-status.json docs/PRODUCTION-STATUS.json docs/VERIFIED-STATUS.json docs/SCENE-COVERAGE.json
+          git add -A -- public/assets/scenes public/pilot.json public/source-corpus.json public/source-corpus-audit.json public/expansion-media.json public/scene-archive.json public/scene-vocabulary.json public/vocabulary-index.json public/offline-manifest.json public/app-version.js public/app-version.json production/manifests production/qa/webp-grid-overrides.json production/qa/expansion-status.json docs/PRODUCTION-STATUS.json docs/VERIFIED-STATUS.json docs/SCENE-COVERAGE.json
           git diff --cached --check
           if ! git diff --cached --quiet; then
             git commit -m 'Connect uploaded WebP scene atlases'

@@ -1,6 +1,6 @@
 /* Archive labels are derived from the original brief, sentence and course tags. */
 let sceneArchive, studioPage=0, studioAudio=null;
-const archiveReady=fetch('scene-archive.json').then(r=>r.ok?r.json():null).catch(()=>null);
+const archiveReady=Promise.all([fetch('scene-archive.json').then(r=>r.ok?r.json():null).catch(()=>null),courseScriptsReady]).then(([data])=>data);
 const normalizeSceneQuery=value=>String(value).normalize('NFKD').toLowerCase()
  .replace(/[\u064b-\u065f\u0670\u0640]/g,'').replace(/[أإآ]/g,'ا');
 const scenePrompts={
@@ -19,13 +19,14 @@ const scenePrompts={
 };
 function sceneStudioPage(){
  const topics=sceneArchive?.topics||[];
- return head(T('مكتبة الصور','Photo library'),T(
+ return head(T('مكتبة الصور الذكية','Smart photo library'),T(
   'ابحث عن صورة من الأرشيف، واستمع إلى جملتها، ثم استخدمها لبدء محادثة حرّة.',
   'Find an archived photo, listen to its sentence, then use it to start an open conversation.'))+epSectionLinks(['references','lab'])+
   `<div class="toolbar"><input type="search" id="scene-studio-query" oninput="studioPage=0;paintSceneStudio()" placeholder="${T('مسبح، مكتبة، train…','Pool, library, قطار…')}" aria-label="${T('بحث المشاهد','Search scenes')}">
   <select id="scene-studio-topic" onchange="studioPage=0;paintSceneStudio()" aria-label="${T('موضوع المشهد','Scene topic')}"><option value="">${T('كل الموضوعات','All topics')}</option>${topics.map(t=>`<option value="${t.id}">${H(T(t.ar,t.en))}</option>`).join('')}</select>
-  <button class="secondary" onclick="surpriseScene()">${T('اقترح مشهدًا','Suggest a scene')}</button></div>
-  <section id="scene-studio-active"></section>
+  ${smartLibraryFilters()}<button class="secondary" onclick="surpriseScene()">${T('اقترح مشهدًا','Suggest a scene')}</button></div>
+  <section id="studio-pattern-context"></section><section id="scene-studio-active"></section>
+  <dialog id="idea-zoom" aria-labelledby="idea-zoom-title" onclose="restoreIdeaZoom()"><div class="idea-zoom-header"><h2 id="idea-zoom-title"></h2><form method="dialog"><button class="secondary" aria-label="${T('إغلاق عرض المشهد','Close scene view')}">×</button></form></div><div class="idea-zoom-content"></div></dialog>
   <details class="panel studio-collections"><summary>${T('مشاهد المحادثات','Conversation scenes')}</summary>
    ${epSectionLinks(['dialogues'])}
    <div class="scene-studio-grid">${Object.entries(dialogueSceneArchive).map(([id,entry])=>{
@@ -45,7 +46,7 @@ function studioMatches(){
  const sentences=new Map([...(PILOT?.sentences||[]),...(REFERENCE_CORPUS?.sentences||[])].map(s=>[s.id,s]));
  return (sceneArchive?.scenes||[]).flatMap(item=>{
   const row=sentences.get(item.id);
-  if(!row||topic&&!item.topics.includes(topic))return [];
+  if(!row||!matchesStudioContext(row)||topic&&!item.topics.includes(topic))return [];
   const labels=item.topics.flatMap(id=>[topics.get(id).ar,topics.get(id).en]);
   const text=normalizeSceneQuery([row.id,row.en,row.ar,item.description,item.descriptionAr,...item.keywords,...labels].join(' '));
   return tokens.every(word=>text.includes(word))?[{item,row}]:[];
@@ -63,6 +64,7 @@ function paintSceneStudio(){
   const {ar,en}=topics.get(item.topics[0]);
   return `<article class="panel">${studioPicture(row,ar,en)}<button class="textlink" onclick="openStudioScene('${H(item.id)}')">${H(T(ar,en))} ↗</button></article>`;
  }).join('');
+ prepareSmartSelection();
 }
 function studioPicture(row,ar,en){
  return pilotScene({...row,en,ar,context:''});
@@ -102,35 +104,7 @@ function surpriseScene(){
  const matches=studioMatches();
  if(matches.length)openStudioScene(matches[Math.floor(Math.random()*matches.length)].item.id);
 }
-function openStudioScene(id){
- const item=sceneArchive?.scenes.find(s=>s.id===id);
- const row=PILOT?.sentences.find(s=>s.id===id)||REFERENCE_CORPUS?.sentences.find(s=>s.id===id);
- if(!item||!row)return;
- const topic=$('#scene-studio-topic').value||item.topics[0];
- const {ar,en}=sceneArchive.topics.find(t=>t.id===topic);
- const [observe,model,question,answer]=scenePrompts[topic]||scenePrompts.everyday;
- const host=$('#scene-studio-active');
- studioAudio?.pause();
- host.innerHTML=`<article class="panel studio-exercise">
-  <div>${studioPicture(row,ar,en)}${item.description||EP.prefs.arabic?`<details><summary>${T('وصف المشهد في الأرشيف','Archived scene description')}</summary>${item.description?`<p lang="en" dir="ltr">${H(item.description)}</p>`:''}${EP.ar(item.descriptionAr)}</details>`:''}</div>
-  <div><section class="studio-original"><h2>${T('الجملة الأساسية للصورة','The photo’s original sentence')}</h2>
-    <p lang="en" dir="ltr">${EP.words(row,'data-studio-word')}</p>${EP.ar(row.ar)}
-    <div class="buttonrow"><button class="primary" onclick="playStudioSentence('${H(row.id)}','male')">▶ ${T('استمع · Adam','Listen · Adam')}</button>
-    <button class="secondary" onclick="playStudioSentence('${H(row.id)}','female')">▶ Bella</button></div>
-  </section>
-  ${sceneAiTools('studio',id)}
-  <h3>${T('تأمّل، ثم ابتكر حوارًا','Look, then create a dialogue')}</h3><ol lang="en" dir="ltr">
-  <li>What can you see? Name two details.</li><li>${H(observe)}</li><li>Imagine two people here. What could one ask, and how could the other reply?</li></ol>
-  <label>${T('اكتب افتتاحية وردًا وسؤال متابعة','Write an opening, a reply, and a follow-up question')}
-   <textarea dir="ltr" lang="en" rows="4" placeholder="A: …&#10;B: …&#10;A: …"></textarea></label>
-  <details><summary>${T('مثال للإجابة وفتح الحوار','Reveal a model answer and dialogue')}</summary>
-    <small>${T('أفكار متخيّلة يمكنك تعديلها وفق ما تراه في المشهد.','Imagined ideas you can adapt to what you see in the scene.')}</small>
-    <p lang="en" dir="ltr">${H(model)}</p><p lang="en" dir="ltr"><b>A</b> ${H(question)}<br><b>B</b> ${H(answer)}</p>
-  </details>
-  </div></article>`;
- window.EPOffline?.rememberSentences([row]);
- host.scrollIntoView({block:'start'});
-}
+function openStudioScene(id){return openSmartScene(id)}
 function playStudioSentence(id,voice){
  const row=PILOT?.sentences.find(s=>s.id===id)||REFERENCE_CORPUS?.sentences.find(s=>s.id===id);
  const recording=row?.recordings[voice];
@@ -145,7 +119,7 @@ function playStudioSentence(id,voice){
  });
  studioAudio.play().catch(()=>toast(T('تعذّر تشغيل الصوت.','Audio could not play.')));
 }
-labels['scene-studio']='مكتبة الصور';
+labels['scene-studio']='مكتبة الصور الذكية';
 if(location.hash==='#scene-studio')page='scene-studio';
 const renderBeforeSceneStudio=render;
 render=function(){

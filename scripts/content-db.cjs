@@ -13,7 +13,8 @@ async function main() {
       await syncContent(db);
     } else if (command === 'summary') {
       const tables = ['patterns','sentences','scenes','recordings','dialogues','dialogue_turns','comparisons',
-        'exercises','learning_routes','idea_scenes','idea_scene_words','idea_scene_patterns','dialogue_scene_uses','coverage_gaps','editorial_notes','external_links'];
+        'exercises','learning_routes','idea_scenes','idea_scene_words','idea_scene_patterns','dialogue_scene_uses','dialogue_stages',
+        'vocabulary_entries','vocabulary_sources','vocabulary_occurrences','vocabulary_scene_links','coverage_gaps','editorial_notes','external_links'];
       const counts = await Promise.all(tables.map(table => db(table).count({count:'*'}).first()));
       console.log(JSON.stringify(Object.fromEntries(tables.map((name,i)=>[name,counts[i].count])), null, 2));
     } else {
