@@ -11,7 +11,7 @@
     "db:scene": "node scripts/content-db.cjs scene",
     "test": "node --test tests/*.cjs",
     "check": "npm test && node scripts/verify-media.cjs && node scripts/production-status.cjs",
-    "build": "node scripts/sync-expansion-atlases.cjs && node scripts/sync-reference-images.cjs && node scripts/build-expansion-media.cjs && node scripts/build-scene-archive.cjs && node scripts/build-idea-scenes.cjs && node scripts/build-conversation-scenes.cjs && node scripts/build-teaching-index.cjs && node scripts/build-vocabulary.cjs && node scripts/build-offline.cjs"
+    "build": "node scripts/sync-expansion-atlases.cjs && node scripts/sync-reference-images.cjs && node scripts/build-expansion-media.cjs && node scripts/build-scene-archive.cjs && node scripts/build-idea-scenes.cjs && node scripts/build-conversation-scenes.cjs && node scripts/build-teaching-index.cjs && node scripts/build-dialogue-level-three.cjs && node scripts/build-vocabulary.cjs && node scripts/build-offline.cjs"
   },
   "engines": {
     "node": ">=22"

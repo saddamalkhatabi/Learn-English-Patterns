@@ -391,7 +391,7 @@ playCatalogSentence=function(id){
  playCatalogBeforeDialogues(id);
 };
 function dialogueSeriesLabel(series){
- const ordinal={1:'الأول',2:'الثاني'};
+ const ordinal={1:'الأول',2:'الثاني',3:'الثالث'};
  return T(`المستوى ${ordinal[series]??series}`,`Level ${series}`);
 }
 function dialoguesPage(){

@@ -40,7 +40,7 @@ test('conversation turns link to real patterns, scenes and measured cues within 
    assert(line.patterns.every(id=>patterns.has(id)),line.en);
    assert(scenes.has(line.scene),line.scene);
    if(line.focus){
-    assert.equal(Boolean(line.focus.length),Boolean(line.patterns.length||line.referenceId),line.en);
+    assert.equal(Boolean(line.focus.length),Boolean(line.patterns.length||line.referenceId||line.expression),line.en);
     assert(line.focus.every((index,j)=>Number.isInteger(index)&&index>(line.focus[j-1]??-1)
      &&index<line.en.split(/\s+/).length),line.en);
    }
@@ -135,4 +135,40 @@ test('level two has 200 conversations tied to exact library examples across all 
  assert(used.size>=200);
  const grammar=new Set([...used].flatMap(id=>references.get(id).grammar));
  assert.deepEqual(grammar,new Set(corpus.taxonomy.grammar.map(item=>item.id)));
+});
+
+test('level three adds 200 bilingual conversations and introduces unused reference examples', () => {
+ const levelThree = new Set(plan.entries.filter(entry => entry.series === 3).map(entry => entry.id));
+ assert.equal(levelThree.size, 200);
+ assert.equal(dialogues.length, 600);
+ const earlier = new Set(dialogues.filter(dialogue => !levelThree.has(dialogue.id))
+  .flatMap(dialogue => dialogue.lines.map(line => line.referenceId)));
+ const newReferences = new Set();
+ const categories = new Set();
+ for (const dialogue of dialogues.filter(dialogue => levelThree.has(dialogue.id))) {
+  categories.add(dialogue.category);
+  const quoted = dialogue.lines.filter(line => line.referenceId);
+  assert(new Set(quoted.map(line => line.referenceId)).size >= 2, dialogue.id);
+  assert(dialogue.lines.some(line => line.expression && line.patterns.length), dialogue.id);
+  for (const line of dialogue.lines) {
+   assert(/\p{Script=Arabic}/u.test(line.ar), dialogue.id);
+   if (line.expression) {
+    const words = line.en.split(/\s+/);
+    assert.equal(line.focus.map(index => words[index]).join(' ').replace(/[.?!,;:]+$/, ''), line.expression, dialogue.id);
+   }
+  }
+  for (const line of quoted) {
+   const reference = references.get(line.referenceId);
+   assert.equal(line.en, reference.en, dialogue.id);
+   assert.equal(line.ar, reference.ar, dialogue.id);
+   if (!earlier.has(reference.id)) newReferences.add(reference.id);
+  }
+ }
+ assert.equal(categories.size, 9);
+ assert(newReferences.size >= 370);
+ const vocabulary = require('../public/vocabulary-index.json');
+ for (const expression of ['in that case', 'take your time', 'make sure', 'could you clarify', 'what matters is']) {
+  const phrase = vocabulary.entries.find(entry => entry.pos === 'PHRASE' && entry.en.toLowerCase() === expression);
+  assert(phrase?.sourceIds.some(index => levelThree.has(vocabulary.sources[index].id)), expression);
+ }
 });
