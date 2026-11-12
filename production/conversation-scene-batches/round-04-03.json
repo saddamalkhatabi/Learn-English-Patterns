@@ -1,0 +1,784 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "47b749a7b8c198ada60a3d965897b3b4c6cbcaad353f7f7a3ea3455212727966"
+  },
+  "conversations": [
+    {
+      "id": "thank-you-for-help",
+      "goalAr": "اشكر الجار واذكر كيف ساعدتك مبادرته.",
+      "goalEn": "Thank a neighbor and say how the help made a difference.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Carrying boxes upstairs",
+          "ar": "حمل الصناديق إلى الطابق العلوي",
+          "purposeEn": "Thank a neighbor for helping you carry things upstairs.",
+          "purposeAr": "اشكر جارك على مساعدتك في حمل الأغراض إلى الطابق العلوي.",
+          "image": {
+            "id": "conv-life-thank-you-for-help-1",
+            "path": "assets/scenes/conversations/life-thank-you-for-help-1.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Carrying boxes upstairs",
+            "ar": "حمل الصناديق إلى الطابق العلوي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                394,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "cardboard box",
+              "ar": "صندوق كرتون",
+              "kind": "object",
+              "x": 28,
+              "y": 75
+            },
+            {
+              "en": "handrail",
+              "ar": "درابزين",
+              "kind": "object",
+              "x": 10,
+              "y": 39
+            },
+            {
+              "en": "carry upstairs",
+              "ar": "يحمل إلى الطابق العلوي",
+              "kind": "phrase",
+              "x": 66,
+              "y": 65
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Putting the box down",
+          "ar": "وضع الصندوق أرضًا",
+          "purposeEn": "Explain why your neighbor’s help made a difference.",
+          "purposeAr": "اشرح لماذا أحدثت مساعدة جارك فرقًا.",
+          "image": {
+            "id": "conv-life-thank-you-for-help-2",
+            "path": "assets/scenes/conversations/life-thank-you-for-help-2.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Putting the box down",
+            "ar": "وضع الصندوق أرضًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                3,
+                791,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "set down a box",
+              "ar": "يضع صندوقًا أرضًا",
+              "kind": "phrase",
+              "x": 53,
+              "y": 82
+            },
+            {
+              "en": "relieved",
+              "ar": "مرتاح",
+              "kind": "description",
+              "x": 35,
+              "y": 23
+            },
+            {
+              "en": "door handle",
+              "ar": "مقبض الباب",
+              "kind": "object",
+              "x": 68,
+              "y": 15
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Finding the problem",
+          "ar": "تحديد المشكلة",
+          "purposeEn": "Point out the loose wheel that needs attention.",
+          "purposeAr": "أشر إلى العجلة المرتخية التي تحتاج إلى إصلاح.",
+          "image": {
+            "id": "conv-life-thank-you-for-help-3",
+            "path": "assets/scenes/conversations/life-thank-you-for-help-3.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Finding the problem",
+            "ar": "تحديد المشكلة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                3,
+                1186,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "shopping cart",
+              "ar": "عربة تسوق",
+              "kind": "object",
+              "x": 52,
+              "y": 44
+            },
+            {
+              "en": "loose wheel",
+              "ar": "عجلة مرتخية",
+              "kind": "object",
+              "x": 57,
+              "y": 90
+            },
+            {
+              "en": "wrench",
+              "ar": "مفتاح ربط",
+              "kind": "object",
+              "x": 74,
+              "y": 54
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Checking the repair",
+          "ar": "فحص الإصلاح",
+          "purposeEn": "Offer to tighten the wheel and check that it rolls properly.",
+          "purposeAr": "اعرض إحكام تثبيت العجلة والتحقق من دورانها بصورة سليمة.",
+          "image": {
+            "id": "conv-life-thank-you-for-help-4",
+            "path": "assets/scenes/conversations/life-thank-you-for-help-4.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Checking the repair",
+            "ar": "فحص الإصلاح",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                3,
+                1583,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "tighten a wheel",
+              "ar": "يحكم تثبيت عجلة",
+              "kind": "phrase",
+              "x": 45,
+              "y": 87
+            },
+            {
+              "en": "grateful",
+              "ar": "ممتن",
+              "kind": "description",
+              "x": 81,
+              "y": 23
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "keeping-the-plan",
+      "goalAr": "وازن بين عائق محتمل وفائدة الاستمرار.",
+      "goalEn": "Weigh a possible obstacle against the benefit of continuing.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "A possible delay",
+          "ar": "تأخير محتمل",
+          "purposeEn": "Let your friend know that the bus might be late.",
+          "purposeAr": "أخبر صديقك بأن الحافلة قد تتأخر.",
+          "image": {
+            "id": "conv-life-keeping-the-plan-1",
+            "path": "assets/scenes/conversations/life-keeping-the-plan-1.webp",
+            "width": 391,
+            "height": 241,
+            "en": "A possible delay",
+            "ar": "تأخير محتمل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                252,
+                394,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bus shelter",
+              "ar": "مظلة موقف الحافلة",
+              "kind": "object",
+              "x": 13,
+              "y": 55
+            },
+            {
+              "en": "raindrops",
+              "ar": "قطرات مطر",
+              "kind": "object",
+              "x": 9,
+              "y": 24
+            },
+            {
+              "en": "bus",
+              "ar": "حافلة",
+              "kind": "object",
+              "x": 86,
+              "y": 34
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Considering the wet trail",
+          "ar": "النظر في حالة المسار المبتل",
+          "purposeEn": "Discuss whether you can keep the plan despite the rain.",
+          "purposeAr": "ناقشا إمكانية الالتزام بالخطة رغم المطر.",
+          "image": {
+            "id": "conv-life-keeping-the-plan-2",
+            "path": "assets/scenes/conversations/life-keeping-the-plan-2.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Considering the wet trail",
+            "ar": "النظر في حالة المسار المبتل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                252,
+                791,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "puddle",
+              "ar": "بركة ماء صغيرة",
+              "kind": "object",
+              "x": 54,
+              "y": 70
+            },
+            {
+              "en": "muddy",
+              "ar": "موحل",
+              "kind": "description",
+              "x": 63,
+              "y": 87
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Packing for the rain",
+          "ar": "التجهيز للمطر",
+          "purposeEn": "Decide what to carry in case your feet get wet.",
+          "purposeAr": "قرّر ما ستحمله تحسّبًا لابتلال قدميك.",
+          "image": {
+            "id": "conv-life-keeping-the-plan-3",
+            "path": "assets/scenes/conversations/life-keeping-the-plan-3.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Packing for the rain",
+            "ar": "التجهيز للمطر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                252,
+                1186,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "spare socks",
+              "ar": "جوارب احتياطية",
+              "kind": "object",
+              "x": 38,
+              "y": 64
+            },
+            {
+              "en": "raincoat",
+              "ar": "معطف مطر",
+              "kind": "object",
+              "x": 78,
+              "y": 83
+            },
+            {
+              "en": "daypack",
+              "ar": "حقيبة لرحلة قصيرة",
+              "kind": "object",
+              "x": 40,
+              "y": 88
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Choosing the shorter route",
+          "ar": "اختيار الطريق الأقصر",
+          "purposeEn": "Choose a shorter route that avoids the muddy section.",
+          "purposeAr": "اختر طريقًا أقصر يتجنب الجزء الموحل.",
+          "image": {
+            "id": "conv-life-keeping-the-plan-4",
+            "path": "assets/scenes/conversations/life-keeping-the-plan-4.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Choosing the shorter route",
+            "ar": "اختيار الطريق الأقصر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                252,
+                1583,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "fork in the path",
+              "ar": "تفرّع الممر",
+              "kind": "phrase",
+              "x": 79,
+              "y": 41
+            },
+            {
+              "en": "gravel path",
+              "ar": "ممر حصوي",
+              "kind": "object",
+              "x": 89,
+              "y": 80
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "office-signup",
+      "goalAr": "اطلب التسجيل وتحقّق من موعد إغلاقه.",
+      "goalEn": "Ask to sign up and check the registration deadline.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Asking at reception",
+          "ar": "السؤال لدى الاستقبال",
+          "purposeEn": "Ask how to sign up for the workshop.",
+          "purposeAr": "اسأل عن طريقة التسجيل في الورشة.",
+          "image": {
+            "id": "conv-life-office-signup-1",
+            "path": "assets/scenes/conversations/life-office-signup-1.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Asking at reception",
+            "ar": "السؤال لدى الاستقبال",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                499,
+                394,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "reception counter",
+              "ar": "منضدة الاستقبال",
+              "kind": "object",
+              "x": 66,
+              "y": 85
+            },
+            {
+              "en": "receptionist",
+              "ar": "موظفة الاستقبال",
+              "kind": "object",
+              "x": 86,
+              "y": 30
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Choosing how to register",
+          "ar": "اختيار طريقة التسجيل",
+          "purposeEn": "Ask whether you can register at the counter as well as online.",
+          "purposeAr": "اسأل إن كان التسجيل متاحًا عند المنضدة وعبر الإنترنت.",
+          "image": {
+            "id": "conv-life-office-signup-2",
+            "path": "assets/scenes/conversations/life-office-signup-2.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Choosing how to register",
+            "ar": "اختيار طريقة التسجيل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                499,
+                791,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "register at the counter",
+              "ar": "يسجّل لدى الاستقبال",
+              "kind": "phrase",
+              "x": 53,
+              "y": 65
+            },
+            {
+              "en": "laptop screen",
+              "ar": "شاشة حاسوب محمول",
+              "kind": "object",
+              "x": 78,
+              "y": 65
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Filling out the form",
+          "ar": "تعبئة الاستمارة",
+          "purposeEn": "Follow the instructions and find where to sign.",
+          "purposeAr": "اتبع التعليمات وحدّد مكان التوقيع.",
+          "image": {
+            "id": "conv-life-office-signup-3",
+            "path": "assets/scenes/conversations/life-office-signup-3.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Filling out the form",
+            "ar": "تعبئة الاستمارة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                499,
+                1186,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "fill out a form",
+              "ar": "يعبئ استمارة",
+              "kind": "phrase",
+              "x": 49,
+              "y": 82
+            },
+            {
+              "en": "clipboard",
+              "ar": "لوح كتابة بمشبك",
+              "kind": "object",
+              "x": 68,
+              "y": 89
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Submitting the form",
+          "ar": "تسليم الاستمارة",
+          "purposeEn": "Hand in the form and ask when registration closes.",
+          "purposeAr": "سلّم الاستمارة واسأل متى ينتهي التسجيل.",
+          "image": {
+            "id": "conv-life-office-signup-4",
+            "path": "assets/scenes/conversations/life-office-signup-4.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Submitting the form",
+            "ar": "تسليم الاستمارة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                499,
+                1583,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "hand in",
+              "ar": "يسلّم",
+              "kind": "phrase",
+              "x": 58,
+              "y": 70
+            },
+            {
+              "en": "clock",
+              "ar": "ساعة",
+              "kind": "object",
+              "x": 74,
+              "y": 13
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "community-room",
+      "goalAr": "تحقّق من توفر القاعة وكيفية الحجز.",
+      "goalEn": "Check room availability and find out how to book.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Asking about a community room",
+          "ar": "السؤال عن قاعة مجتمعية",
+          "purposeEn": "Find out whether the room is available for your event.",
+          "purposeAr": "استفسر هل القاعة متاحة لإقامة فعاليتك.",
+          "image": {
+            "id": "conv-life-community-room-1",
+            "path": "assets/scenes/conversations/life-community-room-1.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Asking about a community room",
+            "ar": "السؤال عن قاعة مجتمعية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                747,
+                394,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "desk",
+              "ar": "مكتب",
+              "kind": "object",
+              "x": 54,
+              "y": 87
+            },
+            {
+              "en": "calendar",
+              "ar": "تقويم",
+              "kind": "object",
+              "x": 89,
+              "y": 83
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Checking the schedule",
+          "ar": "مراجعة الجدول",
+          "purposeEn": "Confirm the reservation hours before discussing payment.",
+          "purposeAr": "أكّد ساعات الحجز قبل مناقشة الدفع.",
+          "image": {
+            "id": "conv-life-community-room-2",
+            "path": "assets/scenes/conversations/life-community-room-2.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Checking the schedule",
+            "ar": "مراجعة الجدول",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                747,
+                791,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "schedule",
+              "ar": "جدول مواعيد",
+              "kind": "object",
+              "x": 55,
+              "y": 66
+            },
+            {
+              "en": "point to a time slot",
+              "ar": "يشير إلى فترة زمنية",
+              "kind": "phrase",
+              "x": 42,
+              "y": 71
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Confirming the room layout",
+          "ar": "تأكيد ترتيب القاعة",
+          "purposeEn": "Complete the reservation and check how many chairs you need.",
+          "purposeAr": "أكمل الحجز وتحقّق من عدد الكراسي اللازمة.",
+          "image": {
+            "id": "conv-life-community-room-3",
+            "path": "assets/scenes/conversations/life-community-room-3.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Confirming the room layout",
+            "ar": "تأكيد ترتيب القاعة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                747,
+                1186,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "reservation form",
+              "ar": "استمارة حجز",
+              "kind": "object",
+              "x": 57,
+              "y": 86
+            },
+            {
+              "en": "stackable chairs",
+              "ar": "كراسٍ قابلة للتكديس",
+              "kind": "object",
+              "x": 45,
+              "y": 32
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Keeping the exit clear",
+          "ar": "إبقاء المخرج خاليًا",
+          "purposeEn": "Arrange the furniture so people can reach the exit easily.",
+          "purposeAr": "رتّب الأثاث بحيث يسهل على الناس الوصول إلى المخرج.",
+          "image": {
+            "id": "conv-life-community-room-4",
+            "path": "assets/scenes/conversations/life-community-room-4.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Keeping the exit clear",
+            "ar": "إبقاء المخرج خاليًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                747,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "stack of chairs",
+              "ar": "كومة كراسٍ",
+              "kind": "object",
+              "x": 13,
+              "y": 59
+            },
+            {
+              "en": "clear walkway",
+              "ar": "ممر خالٍ من العوائق",
+              "kind": "object",
+              "x": 75,
+              "y": 83
+            },
+            {
+              "en": "exit door",
+              "ar": "باب الخروج",
+              "kind": "object",
+              "x": 88,
+              "y": 38
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

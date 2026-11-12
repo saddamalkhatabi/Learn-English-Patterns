@@ -1,0 +1,798 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "f1f2ea05423625128eabb156971f8c4c7a250e63323485f5c4ea27c470b29ca9"
+  },
+  "conversations": [
+    {
+      "id": "family-memory",
+      "goalAr": "صف يومًا عائليًا وما أعددته فيه.",
+      "goalEn": "Describe a family occasion and what you made that day.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Looking through family photos",
+          "ar": "تصفّح الصور العائلية",
+          "purposeEn": "Recall a family celebration as you look through the photos.",
+          "purposeAr": "استرجعا ذكرى احتفال عائلي وأنتما تتصفحان الصور.",
+          "image": {
+            "id": "conv-life-family-memory-1",
+            "path": "assets/scenes/conversations/life-family-memory-1.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Looking through family photos",
+            "ar": "تصفّح الصور العائلية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                394,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "look through photos",
+              "ar": "يتصفح الصور",
+              "kind": "phrase",
+              "x": 55,
+              "y": 61
+            },
+            {
+              "en": "dates",
+              "ar": "تمر",
+              "kind": "object",
+              "x": 12,
+              "y": 93
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Surprising Grandma",
+          "ar": "مفاجأة الجدة",
+          "purposeEn": "Describe how the family welcomed Grandma at the celebration.",
+          "purposeAr": "صِف كيف استقبلت العائلة الجدة في الاحتفال.",
+          "image": {
+            "id": "conv-life-family-memory-2",
+            "path": "assets/scenes/conversations/life-family-memory-2.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Surprising Grandma",
+            "ar": "مفاجأة الجدة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                3,
+                789,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "clap",
+              "ar": "يصفّق",
+              "kind": "action",
+              "x": 37,
+              "y": 73
+            },
+            {
+              "en": "balloons",
+              "ar": "بالونات",
+              "kind": "object",
+              "x": 24,
+              "y": 11
+            },
+            {
+              "en": "camera",
+              "ar": "كاميرا",
+              "kind": "object",
+              "x": 84,
+              "y": 37
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Trying the cake",
+          "ar": "تذوّق الكعكة",
+          "purposeEn": "Talk about what Grandma liked and who made it.",
+          "purposeAr": "تحدّث عما أعجب الجدة ومن أعدّه.",
+          "image": {
+            "id": "conv-life-family-memory-3",
+            "path": "assets/scenes/conversations/life-family-memory-3.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Trying the cake",
+            "ar": "تذوّق الكعكة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                3,
+                1186,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "slice of cake",
+              "ar": "قطعة كعك",
+              "kind": "object",
+              "x": 34,
+              "y": 66
+            },
+            {
+              "en": "cake stand",
+              "ar": "حامل الكعكة",
+              "kind": "object",
+              "x": 67,
+              "y": 87
+            },
+            {
+              "en": "savor",
+              "ar": "يتلذذ",
+              "kind": "action",
+              "x": 31,
+              "y": 42
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Sharing the recipe",
+          "ar": "مشاركة الوصفة",
+          "purposeEn": "Ask for a copy of the recipe so you can make the cake.",
+          "purposeAr": "اطلب نسخة من الوصفة لتتمكن من إعداد الكعكة.",
+          "image": {
+            "id": "conv-life-family-memory-4",
+            "path": "assets/scenes/conversations/life-family-memory-4.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Sharing the recipe",
+            "ar": "مشاركة الوصفة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                3,
+                1583,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "recipe notebook",
+              "ar": "دفتر وصفات",
+              "kind": "object",
+              "x": 56,
+              "y": 63
+            },
+            {
+              "en": "smile",
+              "ar": "يبتسم",
+              "kind": "action",
+              "x": 27,
+              "y": 27
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finding-the-playground",
+      "goalAr": "ابحث عن مكان مناسب للعب واتّفق على الوصول إليه.",
+      "goalEn": "Find somewhere to play and agree how to get there.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Asking outside the library",
+          "ar": "السؤال خارج المكتبة",
+          "purposeEn": "Ask where the playground is from the library.",
+          "purposeAr": "اسأل عن مكان ساحة اللعب انطلاقًا من المكتبة.",
+          "image": {
+            "id": "conv-life-finding-the-playground-1",
+            "path": "assets/scenes/conversations/life-finding-the-playground-1.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Asking outside the library",
+            "ar": "السؤال خارج المكتبة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                250,
+                394,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bookshelf",
+              "ar": "رف كتب",
+              "kind": "object",
+              "x": 95,
+              "y": 45
+            },
+            {
+              "en": "ask for directions",
+              "ar": "يسأل عن الطريق",
+              "kind": "phrase",
+              "x": 45,
+              "y": 55
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Spotting the swings",
+          "ar": "رؤية الأراجيح",
+          "purposeEn": "Use the swings across the road as a landmark.",
+          "purposeAr": "استدلّ بالأراجيح على الجانب الآخر من الطريق.",
+          "image": {
+            "id": "conv-life-finding-the-playground-2",
+            "path": "assets/scenes/conversations/life-finding-the-playground-2.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Spotting the swings",
+            "ar": "رؤية الأراجيح",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                250,
+                789,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "swings",
+              "ar": "أراجيح",
+              "kind": "object",
+              "x": 62,
+              "y": 36
+            },
+            {
+              "en": "across the road",
+              "ar": "على الجانب الآخر من الطريق",
+              "kind": "phrase",
+              "x": 78,
+              "y": 58
+            },
+            {
+              "en": "slide",
+              "ar": "زلّاقة",
+              "kind": "object",
+              "x": 87,
+              "y": 39
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Crossing together",
+          "ar": "عبور الشارع معًا",
+          "purposeEn": "Explain where to cross on the way to the playground.",
+          "purposeAr": "وضّح مكان العبور في الطريق إلى ساحة اللعب.",
+          "image": {
+            "id": "conv-life-finding-the-playground-3",
+            "path": "assets/scenes/conversations/life-finding-the-playground-3.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Crossing together",
+            "ar": "عبور الشارع معًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                250,
+                1186,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "pedestrian crossing",
+              "ar": "ممر المشاة",
+              "kind": "object",
+              "x": 51,
+              "y": 93
+            },
+            {
+              "en": "soccer ball",
+              "ar": "كرة قدم",
+              "kind": "object",
+              "x": 62,
+              "y": 47
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Finding space to play",
+          "ar": "إيجاد مساحة للعب",
+          "purposeEn": "Distinguish the area for ball games from the walking path.",
+          "purposeAr": "ميّز بين مساحة اللعب بالكرة وممر المشي.",
+          "image": {
+            "id": "conv-life-finding-the-playground-4",
+            "path": "assets/scenes/conversations/life-finding-the-playground-4.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Finding space to play",
+            "ar": "إيجاد مساحة للعب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                250,
+                1583,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "grassy area",
+              "ar": "مساحة عشبية",
+              "kind": "object",
+              "x": 37,
+              "y": 93
+            },
+            {
+              "en": "play soccer",
+              "ar": "يلعب كرة القدم",
+              "kind": "phrase",
+              "x": 48,
+              "y": 70
+            },
+            {
+              "en": "walking path",
+              "ar": "ممر للمشي",
+              "kind": "object",
+              "x": 89,
+              "y": 67
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "friend-s-new-hobby",
+      "goalAr": "اسأل عن الهواية وشجّع صديقك على هدفه.",
+      "goalEn": "Ask about a hobby and encourage a friend’s goal.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Talking about a hobby",
+          "ar": "الحديث عن هواية",
+          "purposeEn": "Ask your friend about a hobby she recently took up.",
+          "purposeAr": "اسأل صديقتك عن هواية بدأت تمارسها مؤخرًا.",
+          "image": {
+            "id": "conv-life-friend-s-new-hobby-1",
+            "path": "assets/scenes/conversations/life-friend-s-new-hobby-1.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Talking about a hobby",
+            "ar": "الحديث عن هواية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                498,
+                394,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "camera lens",
+              "ar": "عدسة الكاميرا",
+              "kind": "object",
+              "x": 47,
+              "y": 76
+            },
+            {
+              "en": "park bench",
+              "ar": "مقعد الحديقة",
+              "kind": "object",
+              "x": 51,
+              "y": 45
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Taking photos in the park",
+          "ar": "التصوير في الحديقة",
+          "purposeEn": "Find out what your friend enjoys photographing.",
+          "purposeAr": "اعرف ما الذي تستمتع صديقتك بتصويره.",
+          "image": {
+            "id": "conv-life-friend-s-new-hobby-2",
+            "path": "assets/scenes/conversations/life-friend-s-new-hobby-2.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Taking photos in the park",
+            "ar": "التصوير في الحديقة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                498,
+                789,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "photograph flowers",
+              "ar": "يصوّر الأزهار",
+              "kind": "phrase",
+              "x": 31,
+              "y": 47
+            },
+            {
+              "en": "pink blossoms",
+              "ar": "أزهار وردية",
+              "kind": "object",
+              "x": 17,
+              "y": 68
+            },
+            {
+              "en": "preview",
+              "ar": "معاينة",
+              "kind": "object",
+              "x": 63,
+              "y": 77
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Choosing photos",
+          "ar": "اختيار الصور",
+          "purposeEn": "Pick a few printed photos to keep in the album.",
+          "purposeAr": "اختر بعض الصور المطبوعة لحفظها في الألبوم.",
+          "image": {
+            "id": "conv-life-friend-s-new-hobby-3",
+            "path": "assets/scenes/conversations/life-friend-s-new-hobby-3.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Choosing photos",
+            "ar": "اختيار الصور",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                498,
+                1186,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "sort photos",
+              "ar": "يفرز الصور",
+              "kind": "phrase",
+              "x": 28,
+              "y": 66
+            },
+            {
+              "en": "photo album",
+              "ar": "ألبوم صور",
+              "kind": "object",
+              "x": 88,
+              "y": 83
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Adding a note",
+          "ar": "إضافة ملاحظة",
+          "purposeEn": "Write a note to remember when and where a photo was taken.",
+          "purposeAr": "اكتب ملاحظة لتتذكر وقت التقاط الصورة ومكانه.",
+          "image": {
+            "id": "conv-life-friend-s-new-hobby-4",
+            "path": "assets/scenes/conversations/life-friend-s-new-hobby-4.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Adding a note",
+            "ar": "إضافة ملاحظة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                498,
+                1583,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "glue stick",
+              "ar": "قلم صمغ",
+              "kind": "object",
+              "x": 89,
+              "y": 88
+            },
+            {
+              "en": "write a note",
+              "ar": "يكتب ملاحظة",
+              "kind": "phrase",
+              "x": 62,
+              "y": 70
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared-celebration",
+      "goalAr": "اتّفق على بديل يناسب رغبات المشاركين.",
+      "goalEn": "Find an alternative that suits what people feel like doing.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Planning a birthday dinner",
+          "ar": "التخطيط لعشاء عيد ميلاد",
+          "purposeEn": "Suggest a place to celebrate a birthday together.",
+          "purposeAr": "اقترح مكانًا للاحتفال بعيد الميلاد معًا.",
+          "image": {
+            "id": "conv-life-shared-celebration-1",
+            "path": "assets/scenes/conversations/life-shared-celebration-1.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Planning a birthday dinner",
+            "ar": "التخطيط لعشاء عيد ميلاد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                746,
+                394,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "restaurant options",
+              "ar": "خيارات المطاعم",
+              "kind": "phrase",
+              "x": 55,
+              "y": 83
+            },
+            {
+              "en": "table mat",
+              "ar": "مفرش طاولة",
+              "kind": "object",
+              "x": 69,
+              "y": 93
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Choosing to eat at home",
+          "ar": "اختيار الأكل في المنزل",
+          "purposeEn": "Explain why eating at home could suit the group.",
+          "purposeAr": "وضّح لماذا قد يناسب تناول الطعام في المنزل المجموعة.",
+          "image": {
+            "id": "conv-life-shared-celebration-2",
+            "path": "assets/scenes/conversations/life-shared-celebration-2.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Choosing to eat at home",
+            "ar": "اختيار الأكل في المنزل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                746,
+                789,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "kitchen counter",
+              "ar": "سطح المطبخ",
+              "kind": "object",
+              "x": 56,
+              "y": 88
+            },
+            {
+              "en": "ingredients",
+              "ar": "مكوّنات",
+              "kind": "object",
+              "x": 62,
+              "y": 73
+            },
+            {
+              "en": "olive oil",
+              "ar": "زيت الزيتون",
+              "kind": "object",
+              "x": 74,
+              "y": 69
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Making two pizzas",
+          "ar": "إعداد نوعين من البيتزا",
+          "purposeEn": "Prepare two options for guests with different food preferences.",
+          "purposeAr": "حضّر خيارين للضيوف ذوي التفضيلات المختلفة.",
+          "image": {
+            "id": "conv-life-shared-celebration-3",
+            "path": "assets/scenes/conversations/life-shared-celebration-3.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Making two pizzas",
+            "ar": "إعداد نوعين من البيتزا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                746,
+                1186,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "vegetable pizza",
+              "ar": "بيتزا بالخضار",
+              "kind": "object",
+              "x": 24,
+              "y": 77
+            },
+            {
+              "en": "grated cheese",
+              "ar": "جبن مبشور",
+              "kind": "object",
+              "x": 72,
+              "y": 77
+            },
+            {
+              "en": "add toppings",
+              "ar": "يضيف مكوّنات التغطية",
+              "kind": "phrase",
+              "x": 65,
+              "y": 63
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Asking what guests can eat",
+          "ar": "سؤال الضيوف عمّا يناسبهم",
+          "purposeEn": "Message your guests to check their food preferences.",
+          "purposeAr": "راسل الضيوف لتعرف ما يناسبهم من الطعام.",
+          "image": {
+            "id": "conv-life-shared-celebration-4",
+            "path": "assets/scenes/conversations/life-shared-celebration-4.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Asking what guests can eat",
+            "ar": "سؤال الضيوف عمّا يناسبهم",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                746,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "send a message",
+              "ar": "يرسل رسالة",
+              "kind": "phrase",
+              "x": 52,
+              "y": 58
+            },
+            {
+              "en": "black olives",
+              "ar": "زيتون أسود",
+              "kind": "object",
+              "x": 58,
+              "y": 46
+            },
+            {
+              "en": "shredded cheese",
+              "ar": "جبن مبشور",
+              "kind": "object",
+              "x": 18,
+              "y": 66
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

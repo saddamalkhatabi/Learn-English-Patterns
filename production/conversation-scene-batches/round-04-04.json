@@ -1,0 +1,756 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "3a8f47a1d7e8ae2775f6234ac29bdeb9876ba6139cfcccc5f226be5c0d27e6e9"
+  },
+  "conversations": [
+    {
+      "id": "team-options",
+      "goalAr": "قارن حلّين واطلب تبرير كل اختيار.",
+      "goalEn": "Compare two solutions and ask people to justify their choice.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Proposing a digital form",
+          "ar": "اقتراح نموذج رقمي",
+          "purposeEn": "Suggest a simple digital form to collect responses.",
+          "purposeAr": "اقترح نموذجًا رقميًا بسيطًا لجمع الإجابات.",
+          "image": {
+            "id": "conv-life-team-options-1",
+            "path": "assets/scenes/conversations/life-team-options-1.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Proposing a digital form",
+            "ar": "اقتراح نموذج رقمي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                394,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "digital form",
+              "ar": "نموذج رقمي",
+              "kind": "object",
+              "x": 62,
+              "y": 59
+            },
+            {
+              "en": "point to the screen",
+              "ar": "يشير إلى الشاشة",
+              "kind": "phrase",
+              "x": 47,
+              "y": 70
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Considering access",
+          "ar": "مراعاة إمكانية الوصول",
+          "purposeEn": "Consider what visitors can use if they lack a device.",
+          "purposeAr": "فكّر في الخيار المتاح للزوّار إذا لم يكن لديهم جهاز.",
+          "image": {
+            "id": "conv-life-team-options-2",
+            "path": "assets/scenes/conversations/life-team-options-2.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Considering access",
+            "ar": "مراعاة إمكانية الوصول",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                3,
+                790,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "tablet",
+              "ar": "جهاز لوحي",
+              "kind": "object",
+              "x": 48,
+              "y": 72
+            },
+            {
+              "en": "open notebook",
+              "ar": "دفتر مفتوح",
+              "kind": "object",
+              "x": 32,
+              "y": 93
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Offering two formats",
+          "ar": "إتاحة طريقتين للتعبئة",
+          "purposeEn": "Put both options at reception so each visitor can choose.",
+          "purposeAr": "ضع الخيارين لدى الاستقبال ليختار كل زائر ما يناسبه.",
+          "image": {
+            "id": "conv-life-team-options-3",
+            "path": "assets/scenes/conversations/life-team-options-3.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Offering two formats",
+            "ar": "إتاحة طريقتين للتعبئة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                3,
+                1186,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "side by side",
+              "ar": "جنبًا إلى جنب",
+              "kind": "phrase",
+              "x": 50,
+              "y": 83
+            },
+            {
+              "en": "paper forms",
+              "ar": "نماذج ورقية",
+              "kind": "object",
+              "x": 67,
+              "y": 87
+            },
+            {
+              "en": "countertop",
+              "ar": "سطح المنضدة",
+              "kind": "object",
+              "x": 79,
+              "y": 92
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Entering the responses",
+          "ar": "إدخال الإجابات",
+          "purposeEn": "Transfer answers from paper into the same digital records.",
+          "purposeAr": "انقل الإجابات من الورق إلى السجلات الرقمية نفسها.",
+          "image": {
+            "id": "conv-life-team-options-4",
+            "path": "assets/scenes/conversations/life-team-options-4.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Entering the responses",
+            "ar": "إدخال الإجابات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                3,
+                1583,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "stack of papers",
+              "ar": "رزمة أوراق",
+              "kind": "object",
+              "x": 38,
+              "y": 89
+            },
+            {
+              "en": "enter data",
+              "ar": "يدخل البيانات",
+              "kind": "phrase",
+              "x": 71,
+              "y": 79
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "testing-assumptions",
+      "goalAr": "فرّق بين الانطباع الأول والسبب الذي كشفه الفحص.",
+      "goalEn": "Distinguish a first impression from the cause found by testing.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Checking the printer connection",
+          "ar": "فحص توصيل الطابعة",
+          "purposeEn": "Check the connection before deciding why the printer is slow.",
+          "purposeAr": "افحص التوصيل قبل تحديد سبب بطء الطابعة.",
+          "image": {
+            "id": "conv-life-testing-assumptions-1",
+            "path": "assets/scenes/conversations/life-testing-assumptions-1.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Checking the printer connection",
+            "ar": "فحص توصيل الطابعة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                250,
+                394,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "printer",
+              "ar": "طابعة",
+              "kind": "object",
+              "x": 32,
+              "y": 76
+            },
+            {
+              "en": "cable",
+              "ar": "سلك توصيل",
+              "kind": "object",
+              "x": 61,
+              "y": 88
+            },
+            {
+              "en": "concerned",
+              "ar": "قلق",
+              "kind": "description",
+              "x": 31,
+              "y": 26
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Printing a test page",
+          "ar": "طباعة صفحة اختبار",
+          "purposeEn": "Print a test page and check the settings one at a time.",
+          "purposeAr": "اطبع صفحة اختبار وافحص الإعدادات واحدًا تلو الآخر.",
+          "image": {
+            "id": "conv-life-testing-assumptions-2",
+            "path": "assets/scenes/conversations/life-testing-assumptions-2.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Printing a test page",
+            "ar": "طباعة صفحة اختبار",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                250,
+                790,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "test page",
+              "ar": "صفحة اختبار",
+              "kind": "object",
+              "x": 34,
+              "y": 62
+            },
+            {
+              "en": "settings screen",
+              "ar": "شاشة الإعدادات",
+              "kind": "object",
+              "x": 65,
+              "y": 67
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Comparing print quality",
+          "ar": "مقارنة جودة الطباعة",
+          "purposeEn": "Compare the draft with the higher-quality print before choosing.",
+          "purposeAr": "قارن المسودة بالنسخة الأعلى جودة قبل الاختيار.",
+          "image": {
+            "id": "conv-life-testing-assumptions-3",
+            "path": "assets/scenes/conversations/life-testing-assumptions-3.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Comparing print quality",
+            "ar": "مقارنة جودة الطباعة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                250,
+                1186,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "draft print",
+              "ar": "نسخة طباعة أولية",
+              "kind": "object",
+              "x": 23,
+              "y": 69
+            },
+            {
+              "en": "color print",
+              "ar": "نسخة مطبوعة بالألوان",
+              "kind": "object",
+              "x": 73,
+              "y": 65
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Setting aside the final copy",
+          "ar": "وضع النسخة النهائية جانبًا",
+          "purposeEn": "Keep the final print separate from the draft pages.",
+          "purposeAr": "أبقِ النسخة النهائية منفصلة عن صفحات المسودة.",
+          "image": {
+            "id": "conv-life-testing-assumptions-4",
+            "path": "assets/scenes/conversations/life-testing-assumptions-4.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Setting aside the final copy",
+            "ar": "وضع النسخة النهائية جانبًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                250,
+                1583,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "final copy",
+              "ar": "نسخة نهائية",
+              "kind": "object",
+              "x": 79,
+              "y": 85
+            },
+            {
+              "en": "pile of drafts",
+              "ar": "رزمة مسودّات",
+              "kind": "object",
+              "x": 22,
+              "y": 80
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "supporting-a-claim",
+      "goalAr": "ادعم اقتراحًا بأمثلة متنوعة.",
+      "goalEn": "Support a proposal with a range of examples.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Introducing a short checklist",
+          "ar": "تقديم قائمة تحقّق قصيرة",
+          "purposeEn": "Explain why a checklist might help new staff work faster.",
+          "purposeAr": "اشرح كيف قد تساعد قائمة التحقق الموظفين الجدد على العمل بسرعة أكبر.",
+          "image": {
+            "id": "conv-life-supporting-a-claim-1",
+            "path": "assets/scenes/conversations/life-supporting-a-claim-1.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Introducing a short checklist",
+            "ar": "تقديم قائمة تحقّق قصيرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                498,
+                394,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "checklist",
+              "ar": "قائمة تحقّق",
+              "kind": "object",
+              "x": 47,
+              "y": 62
+            },
+            {
+              "en": "checkbox",
+              "ar": "خانة اختيار",
+              "kind": "object",
+              "x": 41,
+              "y": 68
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Reviewing a booking example",
+          "ar": "مراجعة مثال على الحجز",
+          "purposeEn": "Use a booking example to explain what the staff should check.",
+          "purposeAr": "استخدم مثالًا على الحجز لتشرح ما على الموظفين مراجعته.",
+          "image": {
+            "id": "conv-life-supporting-a-claim-2",
+            "path": "assets/scenes/conversations/life-supporting-a-claim-2.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Reviewing a booking example",
+            "ar": "مراجعة مثال على الحجز",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                498,
+                790,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "receipt",
+              "ar": "إيصال",
+              "kind": "object",
+              "x": 69,
+              "y": 69
+            },
+            {
+              "en": "meeting room",
+              "ar": "غرفة اجتماعات",
+              "kind": "object",
+              "x": 43,
+              "y": 73
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Trying the checklist",
+          "ar": "تجربة قائمة التحقّق",
+          "purposeEn": "Have new staff try the checklist on a practice task.",
+          "purposeAr": "اطلب من الموظفين الجدد تجربة القائمة في مهمة تدريبية.",
+          "image": {
+            "id": "conv-life-supporting-a-claim-3",
+            "path": "assets/scenes/conversations/life-supporting-a-claim-3.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Trying the checklist",
+            "ar": "تجربة قائمة التحقّق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                498,
+                1186,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "tick a box",
+              "ar": "يضع علامة في خانة",
+              "kind": "phrase",
+              "x": 33,
+              "y": 82
+            },
+            {
+              "en": "observe",
+              "ar": "يراقب",
+              "kind": "action",
+              "x": 50,
+              "y": 36
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Comparing completion times",
+          "ar": "مقارنة أوقات الإنجاز",
+          "purposeEn": "Use timed trials to test whether the checklist saves time.",
+          "purposeAr": "قِس زمن التجارب لتتحقق مما إذا كانت القائمة توفّر الوقت.",
+          "image": {
+            "id": "conv-life-supporting-a-claim-4",
+            "path": "assets/scenes/conversations/life-supporting-a-claim-4.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Comparing completion times",
+            "ar": "مقارنة أوقات الإنجاز",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                498,
+                1583,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "stopwatch",
+              "ar": "ساعة إيقاف",
+              "kind": "object",
+              "x": 39,
+              "y": 52
+            },
+            {
+              "en": "record a time",
+              "ar": "يسجّل زمنًا",
+              "kind": "phrase",
+              "x": 65,
+              "y": 82
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "competing-priorities",
+      "goalAr": "وازن بين السرعة والدقة واتّفق على الأولوية.",
+      "goalEn": "Balance speed and accuracy and agree what comes first.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Discussing a product launch",
+          "ar": "مناقشة إطلاق صفحة منتج",
+          "purposeEn": "Weigh launching the product page against checking it first.",
+          "purposeAr": "وازن بين إطلاق صفحة المنتج ومراجعتها أولًا.",
+          "image": {
+            "id": "conv-life-competing-priorities-1",
+            "path": "assets/scenes/conversations/life-competing-priorities-1.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Discussing a product launch",
+            "ar": "مناقشة إطلاق صفحة منتج",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                746,
+                394,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "product page",
+              "ar": "صفحة منتج",
+              "kind": "object",
+              "x": 63,
+              "y": 65
+            },
+            {
+              "en": "discuss a launch",
+              "ar": "يناقش الإطلاق",
+              "kind": "phrase",
+              "x": 48,
+              "y": 61
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Identifying what needs checking",
+          "ar": "تحديد ما يحتاج إلى المراجعة",
+          "purposeEn": "Show your colleague which prices still need verification.",
+          "purposeAr": "أرِ زميلك الأسعار التي لا تزال بحاجة إلى التحقّق.",
+          "image": {
+            "id": "conv-life-competing-priorities-2",
+            "path": "assets/scenes/conversations/life-competing-priorities-2.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Identifying what needs checking",
+            "ar": "تحديد ما يحتاج إلى المراجعة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                746,
+                790,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "price list",
+              "ar": "قائمة أسعار",
+              "kind": "object",
+              "x": 48,
+              "y": 68
+            },
+            {
+              "en": "review",
+              "ar": "يراجع",
+              "kind": "action",
+              "x": 70,
+              "y": 40
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Cross-checking prices",
+          "ar": "مطابقة الأسعار",
+          "purposeEn": "Cross-check the figures before deciding whether to publish.",
+          "purposeAr": "طابق الأرقام قبل اتخاذ قرار النشر.",
+          "image": {
+            "id": "conv-life-competing-priorities-3",
+            "path": "assets/scenes/conversations/life-competing-priorities-3.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Cross-checking prices",
+            "ar": "مطابقة الأسعار",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                746,
+                1186,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "calculator",
+              "ar": "آلة حاسبة",
+              "kind": "object",
+              "x": 40,
+              "y": 84
+            },
+            {
+              "en": "compare figures",
+              "ar": "يقارن الأرقام",
+              "kind": "phrase",
+              "x": 68,
+              "y": 84
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Calling the purchasing team",
+          "ar": "الاتصال بفريق المشتريات",
+          "purposeEn": "Ask purchasing to confirm the numbers that are still in doubt.",
+          "purposeAr": "اطلب من المشتريات تأكيد الأرقام التي ما زال فيها شك.",
+          "image": {
+            "id": "conv-life-competing-priorities-4",
+            "path": "assets/scenes/conversations/life-competing-priorities-4.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Calling the purchasing team",
+            "ar": "الاتصال بفريق المشتريات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                746,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "desk phone",
+              "ar": "هاتف مكتبي",
+              "kind": "object",
+              "x": 19,
+              "y": 83
+            },
+            {
+              "en": "phone cord",
+              "ar": "سلك الهاتف",
+              "kind": "object",
+              "x": 38,
+              "y": 78
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

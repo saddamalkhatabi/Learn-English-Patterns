@@ -1,0 +1,819 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "d78d8441abb8128c390c8c42dbe35cd0eff9387522474d13fdd787fea6ff7ad4"
+  },
+  "conversations": [
+    {
+      "id": "visiting-grandmother",
+      "goalAr": "نسّق الزيارة حسب وقت الحافلة.",
+      "goalEn": "Plan a visit around the bus timetable.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Making plans for a visit",
+          "ar": "التخطيط لزيارة الجدة",
+          "purposeEn": "Decide together when to visit Grandma.",
+          "purposeAr": "اتفقا على موعد زيارة الجدة.",
+          "image": {
+            "id": "conv-life-visiting-grandmother-1",
+            "path": "assets/scenes/conversations/life-visiting-grandmother-1.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Making plans for a visit",
+            "ar": "التخطيط لزيارة الجدة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                393,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "family photo",
+              "ar": "صورة عائلية",
+              "kind": "object",
+              "x": 86,
+              "y": 79
+            },
+            {
+              "en": "plan a visit",
+              "ar": "يخطط لزيارة",
+              "kind": "phrase",
+              "x": 60,
+              "y": 64
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Packing lunch",
+          "ar": "تجهيز الغداء",
+          "purposeEn": "Work out what to bring and how to get there.",
+          "purposeAr": "حدّدا ماذا ستأخذان وكيف ستصلان.",
+          "image": {
+            "id": "conv-life-visiting-grandmother-2",
+            "path": "assets/scenes/conversations/life-visiting-grandmother-2.webp",
+            "width": 392,
+            "height": 243,
+            "en": "Packing lunch",
+            "ar": "تجهيز الغداء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                3,
+                791,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "lunch box",
+              "ar": "علبة غداء",
+              "kind": "object",
+              "x": 30,
+              "y": 74
+            },
+            {
+              "en": "cloth bag",
+              "ar": "حقيبة قماشية",
+              "kind": "object",
+              "x": 29,
+              "y": 88
+            },
+            {
+              "en": "check the phone",
+              "ar": "يتفقد الهاتف",
+              "kind": "phrase",
+              "x": 75,
+              "y": 61
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "At the bus stop",
+          "ar": "عند موقف الحافلة",
+          "purposeEn": "Let Grandma know when you are on your way.",
+          "purposeAr": "أخبر الجدة بأنك في الطريق.",
+          "image": {
+            "id": "conv-life-visiting-grandmother-3",
+            "path": "assets/scenes/conversations/life-visiting-grandmother-3.webp",
+            "width": 390,
+            "height": 243,
+            "en": "At the bus stop",
+            "ar": "عند موقف الحافلة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                3,
+                1187,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "board the bus",
+              "ar": "يصعد إلى الحافلة",
+              "kind": "phrase",
+              "x": 80,
+              "y": 73
+            },
+            {
+              "en": "make a call",
+              "ar": "يجري اتصالًا",
+              "kind": "phrase",
+              "x": 36,
+              "y": 38
+            },
+            {
+              "en": "backpack",
+              "ar": "حقيبة ظهر",
+              "kind": "object",
+              "x": 10,
+              "y": 67
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "At Grandma’s door",
+          "ar": "عند باب الجدة",
+          "purposeEn": "Give Grandma the photos you brought to show her.",
+          "purposeAr": "قدّم للجدة الصور التي أحضرتها لتريها إياها.",
+          "image": {
+            "id": "conv-life-visiting-grandmother-4",
+            "path": "assets/scenes/conversations/life-visiting-grandmother-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "At Grandma’s door",
+            "ar": "عند باب الجدة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                3,
+                1583,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "printed photos",
+              "ar": "صور مطبوعة",
+              "kind": "object",
+              "x": 43,
+              "y": 62
+            },
+            {
+              "en": "doorway",
+              "ar": "مدخل الباب",
+              "kind": "object",
+              "x": 57,
+              "y": 27
+            },
+            {
+              "en": "pleased",
+              "ar": "مسرور",
+              "kind": "description",
+              "x": 84,
+              "y": 31
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "changing-a-visit",
+      "goalAr": "اعتذر عن الموعد واقترح وقتًا يناسب الطرفين.",
+      "goalEn": "Apologise and offer a time that works for both people.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Checking the arrangements",
+          "ar": "مراجعة ترتيبات الزيارة",
+          "purposeEn": "Check whether the agreed visit time still works.",
+          "purposeAr": "تحقّق هل ما زال الموعد المتفق عليه مناسبًا.",
+          "image": {
+            "id": "conv-life-changing-a-visit-1",
+            "path": "assets/scenes/conversations/life-changing-a-visit-1.webp",
+            "width": 390,
+            "height": 240,
+            "en": "Checking the arrangements",
+            "ar": "مراجعة ترتيبات الزيارة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                252,
+                393,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "look at the phone",
+              "ar": "ينظر إلى الهاتف",
+              "kind": "phrase",
+              "x": 70,
+              "y": 76
+            },
+            {
+              "en": "cup",
+              "ar": "كوب",
+              "kind": "object",
+              "x": 36,
+              "y": 85
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Calling to reschedule",
+          "ar": "الاتصال لتغيير الموعد",
+          "purposeEn": "Apologize for changing plans and explain why.",
+          "purposeAr": "اعتذر عن تغيير الموعد واشرح السبب.",
+          "image": {
+            "id": "conv-life-changing-a-visit-2",
+            "path": "assets/scenes/conversations/life-changing-a-visit-2.webp",
+            "width": 392,
+            "height": 240,
+            "en": "Calling to reschedule",
+            "ar": "الاتصال لتغيير الموعد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                252,
+                791,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "phone call",
+              "ar": "مكالمة هاتفية",
+              "kind": "object",
+              "x": 35,
+              "y": 45
+            },
+            {
+              "en": "open palm",
+              "ar": "راحة يد مبسوطة",
+              "kind": "object",
+              "x": 84,
+              "y": 74
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Agreeing on a later time",
+          "ar": "الاتفاق على موعد لاحق",
+          "purposeEn": "Suggest another time and confirm it together.",
+          "purposeAr": "اقترح وقتًا آخر وأكّداه معًا.",
+          "image": {
+            "id": "conv-life-changing-a-visit-3",
+            "path": "assets/scenes/conversations/life-changing-a-visit-3.webp",
+            "width": 390,
+            "height": 240,
+            "en": "Agreeing on a later time",
+            "ar": "الاتفاق على موعد لاحق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                252,
+                1187,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "desk calendar",
+              "ar": "تقويم مكتبي",
+              "kind": "object",
+              "x": 82,
+              "y": 71
+            },
+            {
+              "en": "wall clock",
+              "ar": "ساعة حائط",
+              "kind": "object",
+              "x": 79,
+              "y": 25
+            },
+            {
+              "en": "point at",
+              "ar": "يشير إلى",
+              "kind": "phrase",
+              "x": 67,
+              "y": 68
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Waiting by the entrance",
+          "ar": "الانتظار عند المدخل",
+          "purposeEn": "Confirm where you will wait for the other person.",
+          "purposeAr": "حدّد مكان انتظار الطرف الآخر.",
+          "image": {
+            "id": "conv-life-changing-a-visit-4",
+            "path": "assets/scenes/conversations/life-changing-a-visit-4.webp",
+            "width": 390,
+            "height": 240,
+            "en": "Waiting by the entrance",
+            "ar": "الانتظار عند المدخل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                252,
+                1583,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bench",
+              "ar": "مقعد طويل",
+              "kind": "object",
+              "x": 14,
+              "y": 72
+            },
+            {
+              "en": "entrance",
+              "ar": "مدخل",
+              "kind": "object",
+              "x": 85,
+              "y": 51
+            },
+            {
+              "en": "shoulder bag",
+              "ar": "حقيبة كتف",
+              "kind": "object",
+              "x": 39,
+              "y": 70
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "joining-the-group",
+      "goalAr": "استأذن للانضمام وردّ على الدعوة.",
+      "goalEn": "Ask to join a group and respond to an invitation.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Asking to join",
+          "ar": "طلب الانضمام إلى المجموعة",
+          "purposeEn": "Ask the walking group if you can come along.",
+          "purposeAr": "اسأل مجموعة المشي إن كان بإمكانك الانضمام إليها.",
+          "image": {
+            "id": "conv-life-joining-the-group-1",
+            "path": "assets/scenes/conversations/life-joining-the-group-1.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Asking to join",
+            "ar": "طلب الانضمام إلى المجموعة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                498,
+                393,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "walking poles",
+              "ar": "عصي المشي",
+              "kind": "object",
+              "x": 70,
+              "y": 80
+            },
+            {
+              "en": "park table",
+              "ar": "طاولة في الحديقة",
+              "kind": "object",
+              "x": 74,
+              "y": 89
+            },
+            {
+              "en": "introduce yourself",
+              "ar": "يعرّف بنفسه",
+              "kind": "phrase",
+              "x": 32,
+              "y": 53
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Making room",
+          "ar": "إفساح مكان",
+          "purposeEn": "Offer the newcomer a seat and show the walking route.",
+          "purposeAr": "اعرض على الوافد مقعدًا وأره مسار المشي.",
+          "image": {
+            "id": "conv-life-joining-the-group-2",
+            "path": "assets/scenes/conversations/life-joining-the-group-2.webp",
+            "width": 392,
+            "height": 243,
+            "en": "Making room",
+            "ar": "إفساح مكان",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                498,
+                791,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "empty chair",
+              "ar": "مقعد شاغر",
+              "kind": "object",
+              "x": 75,
+              "y": 45
+            },
+            {
+              "en": "map",
+              "ar": "خريطة",
+              "kind": "object",
+              "x": 56,
+              "y": 74
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Choosing a meeting point",
+          "ar": "تحديد مكان اللقاء",
+          "purposeEn": "Use the gate as a landmark for the next meeting.",
+          "purposeAr": "استخدم البوابة علامةً لتحديد مكان اللقاء القادم.",
+          "image": {
+            "id": "conv-life-joining-the-group-3",
+            "path": "assets/scenes/conversations/life-joining-the-group-3.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Choosing a meeting point",
+            "ar": "تحديد مكان اللقاء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                498,
+                1187,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "park gate",
+              "ar": "بوابة الحديقة",
+              "kind": "object",
+              "x": 9,
+              "y": 22
+            },
+            {
+              "en": "path",
+              "ar": "ممر",
+              "kind": "object",
+              "x": 83,
+              "y": 77
+            },
+            {
+              "en": "point out",
+              "ar": "يدلّ على",
+              "kind": "phrase",
+              "x": 79,
+              "y": 33
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Ready for the walk",
+          "ar": "الاستعداد للمشي",
+          "purposeEn": "Say what you will bring to take notes on the walk.",
+          "purposeAr": "اذكر ما ستحضره لتدوين الملاحظات أثناء المشي.",
+          "image": {
+            "id": "conv-life-joining-the-group-4",
+            "path": "assets/scenes/conversations/life-joining-the-group-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Ready for the walk",
+            "ar": "الاستعداد للمشي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                498,
+                1583,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "notebook",
+              "ar": "دفتر ملاحظات",
+              "kind": "object",
+              "x": 31,
+              "y": 70
+            },
+            {
+              "en": "pen",
+              "ar": "قلم",
+              "kind": "object",
+              "x": 37,
+              "y": 72
+            },
+            {
+              "en": "welcoming",
+              "ar": "مرحّب",
+              "kind": "description",
+              "x": 86,
+              "y": 28
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a-friend-feels-tired",
+      "goalAr": "اسأل عن حال صديق وتحدّث معه عن الراحة.",
+      "goalEn": "Ask how a friend feels and talk about taking a break.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Noticing a tired friend",
+          "ar": "ملاحظة تعب صديقة",
+          "purposeEn": "Notice your friend’s condition and ask how she is doing.",
+          "purposeAr": "لاحظ حال صديقتك واسألها كيف تشعر.",
+          "image": {
+            "id": "conv-life-a-friend-feels-tired-1",
+            "path": "assets/scenes/conversations/life-a-friend-feels-tired-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Noticing a tired friend",
+            "ar": "ملاحظة تعب صديقة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                747,
+                393,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "tired",
+              "ar": "متعب",
+              "kind": "description",
+              "x": 32,
+              "y": 37
+            },
+            {
+              "en": "report",
+              "ar": "تقرير",
+              "kind": "object",
+              "x": 49,
+              "y": 91
+            },
+            {
+              "en": "laptop",
+              "ar": "حاسوب محمول",
+              "kind": "object",
+              "x": 7,
+              "y": 74
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Offering to help",
+          "ar": "عرض المساعدة",
+          "purposeEn": "Ask which tasks are urgent before offering help.",
+          "purposeAr": "اسأل عن المهام العاجلة قبل عرض المساعدة.",
+          "image": {
+            "id": "conv-life-a-friend-feels-tired-2",
+            "path": "assets/scenes/conversations/life-a-friend-feels-tired-2.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Offering to help",
+            "ar": "عرض المساعدة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                747,
+                791,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "rub your forehead",
+              "ar": "يفرك جبهته",
+              "kind": "phrase",
+              "x": 20,
+              "y": 34
+            },
+            {
+              "en": "mug",
+              "ar": "كوب بمقبض",
+              "kind": "object",
+              "x": 67,
+              "y": 85
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Taking a break",
+          "ar": "أخذ استراحة",
+          "purposeEn": "Agree who will take a break and who will go shopping.",
+          "purposeAr": "اتفقا على من ستستريح ومن ستذهب للتسوّق.",
+          "image": {
+            "id": "conv-life-a-friend-feels-tired-3",
+            "path": "assets/scenes/conversations/life-a-friend-feels-tired-3.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Taking a break",
+            "ar": "أخذ استراحة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                747,
+                1187,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "glass of water",
+              "ar": "كوب ماء",
+              "kind": "object",
+              "x": 25,
+              "y": 58
+            },
+            {
+              "en": "shopping bag",
+              "ar": "حقيبة تسوّق",
+              "kind": "object",
+              "x": 77,
+              "y": 72
+            },
+            {
+              "en": "drink water",
+              "ar": "يشرب الماء",
+              "kind": "phrase",
+              "x": 20,
+              "y": 55
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Bringing the groceries back",
+          "ar": "العودة بالمشتريات",
+          "purposeEn": "Check what your friend brought back while you finish the report.",
+          "purposeAr": "تفقّد ما أحضرته صديقتك بينما تنهي التقرير.",
+          "image": {
+            "id": "conv-life-a-friend-feels-tired-4",
+            "path": "assets/scenes/conversations/life-a-friend-feels-tired-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Bringing the groceries back",
+            "ar": "العودة بالمشتريات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                747,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "loaf of bread",
+              "ar": "رغيف خبز",
+              "kind": "object",
+              "x": 42,
+              "y": 43
+            },
+            {
+              "en": "paper bag",
+              "ar": "كيس ورقي",
+              "kind": "object",
+              "x": 41,
+              "y": 70
+            },
+            {
+              "en": "take notes",
+              "ar": "يدوّن ملاحظات",
+              "kind": "phrase",
+              "x": 66,
+              "y": 87
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

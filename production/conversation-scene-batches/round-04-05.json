@@ -1,0 +1,777 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "bf456634ed0a3ba0fb340337b22663e82f0d3bf2964076dc67c30cfbefe70549"
+  },
+  "conversations": [
+    {
+      "id": "before-the-departure",
+      "goalAr": "أعد ترتيب الأحداث التي سبقت المغادرة.",
+      "goalEn": "Reconstruct the events leading up to a departure.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Recalling the near miss",
+          "ar": "تذكّر اللحظات قبل فوات القطار",
+          "purposeEn": "Ask someone to tell you what happened before the train left.",
+          "purposeAr": "اطلب من شخص أن يخبرك بما حدث قبل مغادرة القطار.",
+          "image": {
+            "id": "conv-life-before-the-departure-1",
+            "path": "assets/scenes/conversations/life-before-the-departure-1.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Recalling the near miss",
+            "ar": "تذكّر اللحظات قبل فوات القطار",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                394,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "train station",
+              "ar": "محطة قطار",
+              "kind": "object",
+              "x": 50,
+              "y": 16
+            },
+            {
+              "en": "listen attentively",
+              "ar": "يصغي باهتمام",
+              "kind": "phrase",
+              "x": 75,
+              "y": 33
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Searching jacket pockets",
+          "ar": "تفتيش جيوب السترة",
+          "purposeEn": "Explain what you had already done when you noticed the ticket was missing.",
+          "purposeAr": "اشرح ما كنت قد أنجزته حين لاحظت أن التذكرة مفقودة.",
+          "image": {
+            "id": "conv-life-before-the-departure-2",
+            "path": "assets/scenes/conversations/life-before-the-departure-2.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Searching jacket pockets",
+            "ar": "تفتيش جيوب السترة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                3,
+                789,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "travel bag",
+              "ar": "حقيبة سفر",
+              "kind": "object",
+              "x": 16,
+              "y": 88
+            },
+            {
+              "en": "jacket pocket",
+              "ar": "جيب السترة",
+              "kind": "object",
+              "x": 44,
+              "y": 69
+            },
+            {
+              "en": "search",
+              "ar": "يفتّش",
+              "kind": "action",
+              "x": 64,
+              "y": 66
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Hurrying to the platform",
+          "ar": "الإسراع إلى الرصيف",
+          "purposeEn": "Describe what had already started by the time you reached the platform.",
+          "purposeAr": "صِف ما كان قد بدأ بحلول وصولك إلى الرصيف.",
+          "image": {
+            "id": "conv-life-before-the-departure-3",
+            "path": "assets/scenes/conversations/life-before-the-departure-3.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Hurrying to the platform",
+            "ar": "الإسراع إلى الرصيف",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                3,
+                1187,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "train ticket",
+              "ar": "تذكرة قطار",
+              "kind": "object",
+              "x": 60,
+              "y": 48
+            },
+            {
+              "en": "hurry",
+              "ar": "يسرع",
+              "kind": "action",
+              "x": 47,
+              "y": 86
+            },
+            {
+              "en": "platform",
+              "ar": "رصيف المحطة",
+              "kind": "object",
+              "x": 20,
+              "y": 82
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Showing the ticket just in time",
+          "ar": "إبراز التذكرة في اللحظة الأخيرة",
+          "purposeEn": "Explain how you boarded just before the doors closed.",
+          "purposeAr": "اشرح كيف صعدت قبل إغلاق الأبواب مباشرةً.",
+          "image": {
+            "id": "conv-life-before-the-departure-4",
+            "path": "assets/scenes/conversations/life-before-the-departure-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Showing the ticket just in time",
+            "ar": "إبراز التذكرة في اللحظة الأخيرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                3,
+                1583,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "conductor",
+              "ar": "مراقب تذاكر القطار",
+              "kind": "object",
+              "x": 86,
+              "y": 32
+            },
+            {
+              "en": "show your ticket",
+              "ar": "يبرز تذكرته",
+              "kind": "phrase",
+              "x": 57,
+              "y": 72
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "if-we-had-called",
+      "goalAr": "راجع سبب تعطل خطة سابقة وما كان يمكن تغييره.",
+      "goalEn": "Review a failed plan and what could have been done differently.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Finding the hall locked",
+          "ar": "العثور على القاعة مغلقة",
+          "purposeEn": "Explain what a phone call could have told you before you arrived.",
+          "purposeAr": "اشرح ما كان يمكن لاتصال هاتفي أن يخبرك به قبل الوصول.",
+          "image": {
+            "id": "conv-life-if-we-had-called-1",
+            "path": "assets/scenes/conversations/life-if-we-had-called-1.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Finding the hall locked",
+            "ar": "العثور على القاعة مغلقة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                251,
+                394,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "padlock",
+              "ar": "قفل",
+              "kind": "object",
+              "x": 69,
+              "y": 70
+            },
+            {
+              "en": "locked door",
+              "ar": "باب مغلق بقفل",
+              "kind": "object",
+              "x": 76,
+              "y": 50
+            },
+            {
+              "en": "chain",
+              "ar": "سلسلة",
+              "kind": "object",
+              "x": 69,
+              "y": 61
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Considering the library instead",
+          "ar": "التفكير في المكتبة كمكان بديل",
+          "purposeEn": "Suggest where you could have met and why it would have worked.",
+          "purposeAr": "اقترح أين كان بإمكانكم اللقاء ولماذا كان ذلك مناسبًا.",
+          "image": {
+            "id": "conv-life-if-we-had-called-2",
+            "path": "assets/scenes/conversations/life-if-we-had-called-2.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Considering the library instead",
+            "ar": "التفكير في المكتبة كمكان بديل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                251,
+                789,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "library",
+              "ar": "مكتبة",
+              "kind": "object",
+              "x": 76,
+              "y": 36
+            },
+            {
+              "en": "gesture toward",
+              "ar": "يشير باتجاه",
+              "kind": "phrase",
+              "x": 57,
+              "y": 48
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Calling ahead",
+          "ar": "الاتصال مسبقًا",
+          "purposeEn": "Plan to call ahead and check seating for the group.",
+          "purposeAr": "خطّط للاتصال مسبقًا والتحقق من وجود مقاعد تكفي المجموعة.",
+          "image": {
+            "id": "conv-life-if-we-had-called-3",
+            "path": "assets/scenes/conversations/life-if-we-had-called-3.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Calling ahead",
+            "ar": "الاتصال مسبقًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                251,
+                1187,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "call ahead",
+              "ar": "يتصل مسبقًا",
+              "kind": "phrase",
+              "x": 24,
+              "y": 40
+            },
+            {
+              "en": "check availability",
+              "ar": "يتحقق من التوفّر",
+              "kind": "phrase",
+              "x": 80,
+              "y": 78
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Looking at the group room",
+          "ar": "معاينة غرفة المجموعة",
+          "purposeEn": "Ask whether the upstairs room can be reserved for your group.",
+          "purposeAr": "اسأل عن إمكانية حجز الغرفة في الطابق العلوي لمجموعتك.",
+          "image": {
+            "id": "conv-life-if-we-had-called-4",
+            "path": "assets/scenes/conversations/life-if-we-had-called-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Looking at the group room",
+            "ar": "معاينة غرفة المجموعة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                251,
+                1583,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "group study room",
+              "ar": "غرفة دراسة جماعية",
+              "kind": "object",
+              "x": 89,
+              "y": 51
+            },
+            {
+              "en": "glass door",
+              "ar": "باب زجاجي",
+              "kind": "object",
+              "x": 69,
+              "y": 35
+            },
+            {
+              "en": "librarian",
+              "ar": "أمينة المكتبة",
+              "kind": "object",
+              "x": 54,
+              "y": 46
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imagining-a-solution",
+      "goalAr": "اقترح حلًا افتراضيًا ثم حوّله إلى خطوة عملية.",
+      "goalEn": "Suggest a hypothetical solution and turn it into a practical next step.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Finding the study room full",
+          "ar": "العثور على غرفة الدراسة ممتلئة",
+          "purposeEn": "Describe why the usual room will not work for your study group.",
+          "purposeAr": "صِف لماذا لا تناسب الغرفة المعتادة مجموعة الدراسة هذه المرة.",
+          "image": {
+            "id": "conv-life-imagining-a-solution-1",
+            "path": "assets/scenes/conversations/life-imagining-a-solution-1.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Finding the study room full",
+            "ar": "العثور على غرفة الدراسة ممتلئة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                499,
+                394,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "occupied",
+              "ar": "مشغول",
+              "kind": "description",
+              "x": 65,
+              "y": 58
+            },
+            {
+              "en": "open doorway",
+              "ar": "مدخل مفتوح",
+              "kind": "object",
+              "x": 91,
+              "y": 42
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Asking the librarian for ideas",
+          "ar": "طلب أفكار من أمينة المكتبة",
+          "purposeEn": "Suggest asking for another room or using two nearby tables.",
+          "purposeAr": "اقترح السؤال عن غرفة أخرى أو استخدام طاولتين متقاربتين.",
+          "image": {
+            "id": "conv-life-imagining-a-solution-2",
+            "path": "assets/scenes/conversations/life-imagining-a-solution-2.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Asking the librarian for ideas",
+            "ar": "طلب أفكار من أمينة المكتبة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                499,
+                789,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "library desk",
+              "ar": "مكتب المكتبة",
+              "kind": "object",
+              "x": 80,
+              "y": 94
+            },
+            {
+              "en": "nearby tables",
+              "ar": "طاولات متقاربة",
+              "kind": "object",
+              "x": 63,
+              "y": 51
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Checking available seating",
+          "ar": "التحقق من المقاعد المتاحة",
+          "purposeEn": "Divide up the work of asking about rooms and finding chairs.",
+          "purposeAr": "وزّعا مهمة السؤال عن الغرف والبحث عن المقاعد.",
+          "image": {
+            "id": "conv-life-imagining-a-solution-3",
+            "path": "assets/scenes/conversations/life-imagining-a-solution-3.webp",
+            "width": 392,
+            "height": 241,
+            "en": "Checking available seating",
+            "ar": "التحقق من المقاعد المتاحة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                499,
+                1187,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "available chair",
+              "ar": "كرسي متاح",
+              "kind": "object",
+              "x": 40,
+              "y": 93
+            },
+            {
+              "en": "round table",
+              "ar": "طاولة مستديرة",
+              "kind": "object",
+              "x": 78,
+              "y": 91
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Holding two smaller sessions",
+          "ar": "عقد جلستين أصغر",
+          "purposeEn": "Explain how splitting up the group makes the space work.",
+          "purposeAr": "اشرح كيف يتيح تقسيم المجموعة الاستفادة من المساحة.",
+          "image": {
+            "id": "conv-life-imagining-a-solution-4",
+            "path": "assets/scenes/conversations/life-imagining-a-solution-4.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Holding two smaller sessions",
+            "ar": "عقد جلستين أصغر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                499,
+                1583,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "study in pairs",
+              "ar": "يدرس في أزواج",
+              "kind": "phrase",
+              "x": 37,
+              "y": 55
+            },
+            {
+              "en": "separate tables",
+              "ar": "طاولات منفصلة",
+              "kind": "object",
+              "x": 58,
+              "y": 65
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "improving-with-practice",
+      "goalAr": "اشرح علاقة التكرار بتحسّن الأداء واتفق على خطة.",
+      "goalEn": "Explain how repetition improves performance and agree on a plan.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Trying to remember a phrase",
+          "ar": "محاولة تذكّر عبارة",
+          "purposeEn": "Ask how long your partner spends reviewing new phrases.",
+          "purposeAr": "اسأل شريكك عن الوقت الذي يقضيه في مراجعة العبارات الجديدة.",
+          "image": {
+            "id": "conv-life-improving-with-practice-1",
+            "path": "assets/scenes/conversations/life-improving-with-practice-1.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Trying to remember a phrase",
+            "ar": "محاولة تذكّر عبارة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                746,
+                394,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "flashcard",
+              "ar": "بطاقة مراجعة",
+              "kind": "object",
+              "x": 66,
+              "y": 54
+            },
+            {
+              "en": "puzzled",
+              "ar": "محتار",
+              "kind": "description",
+              "x": 46,
+              "y": 26
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Practising over lunch",
+          "ar": "التدرّب أثناء الغداء",
+          "purposeEn": "Agree on a time to use the new phrases in conversation.",
+          "purposeAr": "اتفقا على وقت لاستخدام العبارات الجديدة في محادثة.",
+          "image": {
+            "id": "conv-life-improving-with-practice-2",
+            "path": "assets/scenes/conversations/life-improving-with-practice-2.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Practising over lunch",
+            "ar": "التدرّب أثناء الغداء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                746,
+                789,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "over lunch",
+              "ar": "أثناء الغداء",
+              "kind": "phrase",
+              "x": 24,
+              "y": 89
+            },
+            {
+              "en": "salad",
+              "ar": "سلطة",
+              "kind": "object",
+              "x": 22,
+              "y": 88
+            },
+            {
+              "en": "review cards",
+              "ar": "بطاقات مراجعة",
+              "kind": "object",
+              "x": 57,
+              "y": 92
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Planning a phone role-play",
+          "ar": "التخطيط لتمثيل مكالمة",
+          "purposeEn": "Choose a new situation in which you can reuse the same phrases.",
+          "purposeAr": "اختارا موقفًا جديدًا تعيدان فيه استخدام العبارات نفسها.",
+          "image": {
+            "id": "conv-life-improving-with-practice-3",
+            "path": "assets/scenes/conversations/life-improving-with-practice-3.webp",
+            "width": 392,
+            "height": 243,
+            "en": "Planning a phone role-play",
+            "ar": "التخطيط لتمثيل مكالمة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                746,
+                1187,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "role-play a phone call",
+              "ar": "يمثّل مكالمة هاتفية",
+              "kind": "phrase",
+              "x": 82,
+              "y": 25
+            },
+            {
+              "en": "spiral notebook",
+              "ar": "دفتر حلزوني",
+              "kind": "object",
+              "x": 26,
+              "y": 88
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Practising in person and by phone",
+          "ar": "التدرّب وجهًا لوجه وعبر الهاتف",
+          "purposeEn": "Practise asking for the same information in two different ways.",
+          "purposeAr": "تدرّبا على طلب المعلومات نفسها بطريقتين مختلفتين.",
+          "image": {
+            "id": "conv-life-improving-with-practice-4",
+            "path": "assets/scenes/conversations/life-improving-with-practice-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Practising in person and by phone",
+            "ar": "التدرّب وجهًا لوجه وعبر الهاتف",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                746,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "face to face",
+              "ar": "وجهًا لوجه",
+              "kind": "phrase",
+              "x": 49,
+              "y": 49
+            },
+            {
+              "en": "by phone",
+              "ar": "عبر الهاتف",
+              "kind": "phrase",
+              "x": 72,
+              "y": 36
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
