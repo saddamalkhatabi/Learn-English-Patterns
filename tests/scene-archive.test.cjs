@@ -32,13 +32,14 @@ test('Scene practice covers every lesson with bilingual examples and positioned 
  };
  for(const scene of scenes){
   verify(scene);
-  assert(scene.sentenceEn&&scene.sentenceAr&&scene.taskAr&&scene.words.length>=4);
+  const conversation=scene.topic==='conversation';
+  assert(scene.sentenceEn&&scene.sentenceAr&&scene.taskAr&&scene.words.length>=(conversation?2:4));
   assert(topics.some(topic=>topic.id===scene.topic),scene.id);
-  assert(scene.words.every(word=>word.en&&word.ar&&['object','action','description'].includes(word.kind)),scene.id);
+  assert(scene.words.every(word=>word.en&&word.ar&&['object','action','description','phrase'].includes(word.kind)),scene.id);
   for(const word of scene.words){
    assert((word.x===undefined&&word.y===undefined)||[word.x,word.y].every(n=>Number.isFinite(n)&&n>=0&&n<=100),scene.id);
   }
-  assert(scene.patterns.length>=2&&scene.patterns.every(pattern=>patternIds.has(pattern.id)),scene.id);
+  assert((conversation||scene.patterns.length>=2)&&scene.patterns.every(pattern=>patternIds.has(pattern.id)),scene.id);
  }
  const dialogues=new Map(require('../public/dialogues.json').dialogues.map(d=>[d.id,d]));
  for(const [id,entry] of Object.entries(require('../public/conversation-scenes.json').scenes)){

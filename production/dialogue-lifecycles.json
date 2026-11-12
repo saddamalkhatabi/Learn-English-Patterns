@@ -130,5 +130,945 @@
    {"from":5,"to":5,"ar":"اسأل عن التحقق","en":"Ask for verification","purposeAr":"انتقل من وصف العمل إلى كيفية قياس نتيجته.","purposeEn":"Ask how the candidate checked that the training worked.","imageEn":"Back at the interview table, Omar asks a follow-up while indicating his notepad; Sara listens.","imageAr":"العودة إلى المقابلة، المحاور يسأل سؤال متابعة وسارة تستمع."},
    {"from":6,"to":6,"ar":"أثبت الاستقلالية","en":"Show independent performance","purposeAr":"اذكر مهمة نفّذها المتدرّبون دون مساعدتك.","purposeEn":"Describe a task the learners completed without help.","imageEn":"One of Sara's coworkers independently edits a practice booking on a laptop while Sara observes from a step behind without intervening.","imageAr":"أحد الزملاء يعدل حجزًا تجريبيًا بنفسه وسارة تراقب من الخلف."}
   ]
+ },
+ "a-new-routine": {
+  "goalAr": "صف عادة سابقة وبيّن ما تغيّر في روتينك.",
+  "goalEn": "Describe a former habit and explain what changed.",
+  "setting": "1: Omar rides a city bus on his old commute, seated by a bus window with briefcase. 2: Sara asks Omar how he now commutes, at an office entrance near a glass door. 3: Omar walks on a tree-lined sidewalk with a wristwatch and briefcase, pleased. 4: Both colleagues agree to meet and walk together at a clearly visible park gate in the morning.",
+  "stages": [
+   {
+    "from": 1,
+    "ar": "العادة القديمة",
+    "en": "The old habit",
+    "purposeAr": "صف عادة التنقل السابقة باستخدام used to.",
+    "purposeEn": "Describe a former commute using “used to”.",
+    "to": 1,
+    "imageEn": "The old habit · briefcase, bus window",
+    "imageAr": "العادة القديمة · حقيبة عمل، نافذة الحافلة"
+   },
+   {
+    "from": 2,
+    "ar": "السؤال عن الحاضر",
+    "en": "Asking about now",
+    "purposeAr": "اسأل عن وسيلة التنقل الآن.",
+    "purposeEn": "Ask how the other person gets to work now.",
+    "to": 2,
+    "imageEn": "Asking about now · glass door",
+    "imageAr": "السؤال عن الحاضر · باب زجاجي"
+   },
+   {
+    "from": 3,
+    "ar": "المشي إلى العمل",
+    "en": "Walking to work",
+    "purposeAr": "اذكر عادتك الحالية والمدة وما نجحت في فعله هذا الأسبوع.",
+    "purposeEn": "Describe your present routine, the travel time and what you managed this week.",
+    "to": 4,
+    "imageEn": "Walking to work · wristwatch",
+    "imageAr": "المشي إلى العمل · ساعة يد"
+   },
+   {
+    "from": 5,
+    "ar": "اتفاق على اللقاء",
+    "en": "Planning to meet",
+    "purposeAr": "اقترح المشي معًا وحدّد مكان اللقاء ووقته.",
+    "purposeEn": "Suggest walking together and agree on a meeting place and time.",
+    "to": 6,
+    "imageEn": "Planning to meet · park gate",
+    "imageAr": "اتفاق على اللقاء · بوابة الحديقة"
+   }
+  ]
+ },
+ "family-weekend": {
+  "goalAr": "اختر نشاطًا عائليًا يناسب عطلة نهاية الأسبوع.",
+  "goalEn": "Agree on a family activity for the weekend.",
+  "setting": "1: Two adult siblings in a living room discuss visiting their grandparents, with a framed family photograph on a sideboard. 2: The brother looks warmly at the family photo, remembering earlier visits. 3: The pair pack apples and oranges in a wicker basket to take with them; wall clock visible. 4: They arrive with the fruit at their grandparents' home, the smiling grandfather opens the door while the grandmother sets a lunch table farther inside.",
+  "stages": [
+   {
+    "from": 1,
+    "ar": "اقتراح الزيارة",
+    "en": "Suggesting a visit",
+    "purposeAr": "ادعُ أحد أفراد الأسرة لزيارة الجدّين في العطلة.",
+    "purposeEn": "Invite a family member to visit the grandparents at the weekend.",
+    "to": 1,
+    "imageEn": "Suggesting a visit · living room, family photo",
+    "imageAr": "اقتراح الزيارة · غرفة المعيشة، صورة عائلية"
+   },
+   {
+    "from": 2,
+    "ar": "تذكّر الزيارات",
+    "en": "Remembering visits",
+    "purposeAr": "صف عادة سابقة وعبّر عن رغبتك في تجديد الزيارة.",
+    "purposeEn": "Recall a past habit and express a wish to visit again.",
+    "to": 2,
+    "imageEn": "Remembering visits · picture frame",
+    "imageAr": "تذكّر الزيارات · إطار صورة"
+   },
+   {
+    "from": 3,
+    "ar": "الاستعداد مبكرًا",
+    "en": "Preparing early",
+    "purposeAr": "اقترح أخذ الفاكهة ووضّح فائدة الخروج مبكرًا.",
+    "purposeEn": "Suggest bringing fruit and explain why leaving early is worthwhile.",
+    "to": 4,
+    "imageEn": "Preparing early · fruit basket, orange",
+    "imageAr": "الاستعداد مبكرًا · سلّة فاكهة، برتقالة"
+   },
+   {
+    "from": 5,
+    "ar": "ما الذي نحمله؟",
+    "en": "What to bring",
+    "purposeAr": "ناقش خيار الغداء ثم اختر الفاكهة لأن الغداء معدّ هناك.",
+    "purposeEn": "Discuss bringing lunch and choose fruit because lunch is already planned.",
+    "to": 6,
+    "imageEn": "What to bring · grandfather",
+    "imageAr": "ما الذي نحمله؟ · جدّ"
+   }
+  ]
+ },
+ "museum-entrance": {
+  "goalAr": "اسأل عن المدخل وتحقّق من مكان شراء التذاكر.",
+  "goalEn": "Ask for the entrance and find out where to buy tickets.",
+  "setting": "1: A male visitor holds a folded map and asks a modestly dressed female museum attendant about the entrance at a garden path. 2: The attendant points past a flowerbed to the museum's glass double doors; show doors and pointing hand. 3: They stand inside beside a staffed ticket counter with tickets, asking where to buy one. 4: The attendant shows the visitor two admission slips side by side, with a framed exhibition picture visible behind.",
+  "stages": [
+   {
+    "from": 1,
+    "ar": "السؤال عن المدخل",
+    "en": "Asking for the entrance",
+    "purposeAr": "استأذن واطلب الاتجاه إلى مدخل المتحف.",
+    "purposeEn": "Get the attendant’s attention and ask where the entrance is.",
+    "to": 1,
+    "imageEn": "Asking for the entrance · folded map, visitor",
+    "imageAr": "السؤال عن المدخل · خريطة مطوية، زائر"
+   },
+   {
+    "from": 2,
+    "ar": "وصف الاتجاه",
+    "en": "Giving directions",
+    "purposeAr": "أشر إلى المدخل بعد الحديقة.",
+    "purposeEn": "Point out the entrance just past the garden.",
+    "to": 2,
+    "imageEn": "Giving directions · flower bed, glass doors",
+    "imageAr": "وصف الاتجاه · حوض زهور، أبواب زجاجية"
+   },
+   {
+    "from": 3,
+    "ar": "مكان شراء التذكرة",
+    "en": "Finding the ticket desk",
+    "purposeAr": "تحقّق من إمكانية الشراء عند الدخول.",
+    "purposeEn": "Check whether tickets are sold just inside.",
+    "to": 4,
+    "imageEn": "Finding the ticket desk · ticket counter, desk bell",
+    "imageAr": "مكان شراء التذكرة · شبّاك التذاكر، جرس المنضدة"
+   },
+   {
+    "from": 5,
+    "ar": "اختيار التذكرة",
+    "en": "Choosing the ticket",
+    "purposeAr": "اسأل عن المعرض الخاص وقارن بين التذكرة المنفصلة والمشتركة.",
+    "purposeEn": "Ask about the special exhibition and compare separate and combined tickets.",
+    "to": 6,
+    "imageEn": "Choosing the ticket · admission tickets, framed painting",
+    "imageAr": "اختيار التذكرة · تذاكر دخول، لوحة مؤطّرة"
+   }
+  ]
+ },
+ "shared-table": {
+  "goalAr": "استأذن للجلوس وشحن الهاتف على طاولة مشتركة.",
+  "goalEn": "Ask to sit and charge a phone at a shared table.",
+  "setting": "1: A male student with a backpack asks a female student in a modest hijab for the only vacant chair at a public study table. 2: She gestures politely toward the empty chair beside her stack of books. 3: The visitor holds a phone charger and she points to the wall outlet below the table; both charger and outlet easy to identify. 4: The cable runs neatly behind a backpack at the table leg, with the walkway clear and both students relaxed.",
+  "stages": [
+   {
+    "from": 1,
+    "ar": "استئذان للجلوس",
+    "en": "Asking to sit",
+    "purposeAr": "اطلب الإذن بمشاركة الطاولة بأدب.",
+    "purposeEn": "Politely ask to share the table.",
+    "to": 1,
+    "imageEn": "Asking to sit · backpack, study table",
+    "imageAr": "استئذان للجلوس · حقيبة ظهر، طاولة مذاكرة"
+   },
+   {
+    "from": 2,
+    "ar": "الإشارة إلى المقعد",
+    "en": "Pointing out the seat",
+    "purposeAr": "اقبل الطلب وحدد المقعد الشاغر.",
+    "purposeEn": "Accept the request and point out the free seat.",
+    "to": 2,
+    "imageEn": "Pointing out the seat · empty chair, stack of books",
+    "imageAr": "الإشارة إلى المقعد · كرسي فارغ، كومة كتب"
+   },
+   {
+    "from": 3,
+    "ar": "البحث عن المقبس",
+    "en": "Finding an outlet",
+    "purposeAr": "استأذن في شحن الهاتف وحدّد موقع المقبس تحت الطاولة.",
+    "purposeEn": "Ask to charge a phone and locate the outlet under the table.",
+    "to": 4,
+    "imageEn": "Finding an outlet · charger, wall outlet",
+    "imageAr": "البحث عن المقبس · شاحن، مقبس كهربائي"
+   },
+   {
+    "from": 5,
+    "ar": "إبقاء الممر خاليًا",
+    "en": "Keeping the way clear",
+    "purposeAr": "وضّح أين تضع السلك حتى لا يتعثر به أحد.",
+    "purposeEn": "Explain where to put the cable so nobody trips.",
+    "to": 6,
+    "imageEn": "Keeping the way clear · laptop",
+    "imageAr": "إبقاء الممر خاليًا · حاسوب محمول"
+   }
+  ]
+ },
+ "lesson-time": {
+  "goalAr": "أكّد وقت الدرس ورقم القاعة.",
+  "goalEn": "Confirm a lesson time and room number.",
+  "setting": "1: A male student asks a woman in hijab when English class meets in a school corridor. 2: She shows the timetable on a clipboard beside a wall clock set to nine. 3: She holds a smartphone, preparing to send the room details, as the student gestures toward his own phone. 4: Both face the classroom door across the corridor from the main office, with spatial relation clearly visible.",
+  "stages": [
+   {
+    "from": 1,
+    "ar": "موعد الدرس",
+    "en": "Asking about the lesson",
+    "purposeAr": "اسأل عن موعد درس الإنجليزية القادم.",
+    "purposeEn": "Ask when the next English lesson is.",
+    "to": 1,
+    "imageEn": "Asking about the lesson · school corridor, folder",
+    "imageAr": "موعد الدرس · ممر المدرسة، ملف"
+   },
+   {
+    "from": 2,
+    "ar": "تأكيد الساعة",
+    "en": "Confirming the time",
+    "purposeAr": "اذكر وقت البدء المحدد.",
+    "purposeEn": "State the exact starting time.",
+    "to": 2,
+    "imageEn": "Confirming the time · wall clock, timetable",
+    "imageAr": "تأكيد الساعة · ساعة حائط، جدول المواعيد"
+   },
+   {
+    "from": 3,
+    "ar": "طلب رقم الغرفة",
+    "en": "Getting the room number",
+    "purposeAr": "اسأل عن رقم الغرفة واتفق على إرساله في رسالة.",
+    "purposeEn": "Ask for the room number and arrange to send it in a message.",
+    "to": 4,
+    "imageEn": "Getting the room number · smartphone",
+    "imageAr": "طلب رقم الغرفة · هاتف ذكي"
+   },
+   {
+    "from": 5,
+    "ar": "تحديد موقع الغرفة",
+    "en": "Locating the room",
+    "purposeAr": "اطلب تضمين الرقم وصف مكان الغرفة مقابل المكتب الرئيسي.",
+    "purposeEn": "Ask for the number in the message and locate the room opposite the office.",
+    "to": 6,
+    "imageEn": "Locating the room · classroom door",
+    "imageAr": "تحديد موقع الغرفة · باب الفصل"
+   }
+  ]
+ },
+ "missing-coat": {
+  "goalAr": "حدّد أين تركت معطفك واتّصل بالمفقودات.",
+  "goalEn": "Work out where you left your coat and contact lost property.",
+  "setting": "1: At a city bus stop, Omar in a long-sleeved sweater looks puzzled and searches for his missing brown coat, Sara gestures toward the bus. 2: Inside the bus, show the brown coat resting on an empty seat immediately behind the driver's seat. 3: Omar calls the lost property office while looking at the bus identification plate; Sara points at the bus. 4: A clerk at a lost property desk holds up the recovered brown coat near organized shelves.",
+  "stages": [
+   {
+    "from": 1,
+    "ar": "ملاحظة غياب المعطف",
+    "en": "Noticing the missing coat",
+    "purposeAr": "اسأل هل تُرك المعطف في الحافلة.",
+    "purposeEn": "Ask whether the coat was left on the bus.",
+    "to": 1,
+    "imageEn": "Noticing the missing coat",
+    "imageAr": "ملاحظة غياب المعطف"
+   },
+   {
+    "from": 2,
+    "ar": "تذكّر ما حدث",
+    "en": "Remembering what happened",
+    "purposeAr": "وضّح أنك نزلت دون أن تأخذ المعطف.",
+    "purposeEn": "Explain that you got off without taking the coat.",
+    "to": 2,
+    "imageEn": "Remembering what happened · coat",
+    "imageAr": "تذكّر ما حدث · معطف"
+   },
+   {
+    "from": 3,
+    "ar": "التواصل مع المفقودات",
+    "en": "Contacting lost property",
+    "purposeAr": "اسأل عن المكتب واعرض الاتصال به وذكر رقم الحافلة.",
+    "purposeEn": "Find the office and offer to call with the bus number.",
+    "to": 4,
+    "imageEn": "Contacting lost property · bus number plate",
+    "imageAr": "التواصل مع المفقودات · لوحة رقم الحافلة"
+   },
+   {
+    "from": 5,
+    "ar": "وصف مكان المعطف",
+    "en": "Describing the coat’s location",
+    "purposeAr": "حدّد المقعد خلف السائق ورتّب الاستلام.",
+    "purposeEn": "Identify the seat behind the driver and arrange collection.",
+    "to": 6,
+    "imageEn": "Describing the coat’s location · lost property clerk",
+    "imageAr": "وصف مكان المعطف · موظف المفقودات"
+   }
+  ]
+ },
+ "bicycle-saturday": {
+  "goalAr": "اتّفق على موعد الإصلاح وما سيحضره كل شخص.",
+  "goalEn": "Agree on a repair time and what each person will bring.",
+  "setting": "1: Two adult friends discuss a bicycle in a courtyard, one points to the deflated rear tire. 2: The owner holds the removed bicycle wheel while a friend offers help. 3: At a small bicycle workshop, an adult holds a fresh tire beside the wheel. 4: One friend uses a phone to photograph the tire sidewall, with the wheel and sidewall lettering distinct.",
+  "stages": [
+   {
+    "from": 1,
+    "ar": "مشكلة الإطار",
+    "en": "The tire problem",
+    "purposeAr": "اسأل عن خطط نهاية الأسبوع ثم وضّح الإصلاح المطلوب.",
+    "purposeEn": "Ask about weekend plans and explain the repair needed.",
+    "to": 2,
+    "imageEn": "The tire problem · flat tire, bicycle",
+    "imageAr": "مشكلة الإطار · إطار مفرغ من الهواء، درّاجة"
+   },
+   {
+    "from": 3,
+    "ar": "إحضار العجلة",
+    "en": "Bringing the wheel",
+    "purposeAr": "اطلب إحضار العجلة وحدّد اليوم.",
+    "purposeEn": "Ask someone to bring the wheel and agree on a day.",
+    "to": 3,
+    "imageEn": "Bringing the wheel · wheel",
+    "imageAr": "إحضار العجلة · عجلة"
+   },
+   {
+    "from": 4,
+    "ar": "شراء إطار بديل",
+    "en": "Getting a replacement tire",
+    "purposeAr": "اربط شراء الإطار بفتح المتجر.",
+    "purposeEn": "Make getting the tire conditional on the shop being open.",
+    "to": 4,
+    "imageEn": "Getting a replacement tire · new tire, workshop",
+    "imageAr": "شراء إطار بديل · إطار جديد، ورشة"
+   },
+   {
+    "from": 5,
+    "ar": "التحقق من المقاس",
+    "en": "Checking the size",
+    "purposeAr": "تحقّق من المقاس واطلب صورة الرقم على جانب الإطار.",
+    "purposeEn": "Check the size and request a photo of the tire marking.",
+    "to": 6,
+    "imageEn": "Checking the size · sidewall",
+    "imageAr": "التحقق من المقاس · جانب الإطار"
+   }
+  ]
+ },
+ "quiet-room": {
+  "goalAr": "اطلب خفض الصوت وتدرّب على الاعتذار وقبوله.",
+  "goalEn": "Ask for less noise and practise giving and accepting an apology.",
+  "setting": "1: A modestly dressed woman with hijab politely asks her adult brother to lower the music from a small speaker at home. 2: He looks apologetic and reaches toward the volume control. 3: She sits at a laptop with a notebook for an online lesson while he puts on headphones at the other desk. 4: He prepares two mugs of tea for a break after her lesson, she closes the notebook.",
+  "stages": [
+   {
+    "from": 1,
+    "ar": "طلب خفض الصوت",
+    "en": "Asking for less noise",
+    "purposeAr": "اطلب خفض الموسيقى بصيغة مهذبة.",
+    "purposeEn": "Politely ask for the music to be turned down.",
+    "to": 1,
+    "imageEn": "Asking for less noise · speaker",
+    "imageAr": "طلب خفض الصوت · مكبّر صوت"
+   },
+   {
+    "from": 2,
+    "ar": "الاعتذار",
+    "en": "Apologizing",
+    "purposeAr": "اقبل الطلب واعتذر عن ارتفاع الصوت.",
+    "purposeEn": "Accept the request and apologize for the volume.",
+    "to": 2,
+    "imageEn": "Apologizing · volume control",
+    "imageAr": "الاعتذار · زر التحكم بالصوت"
+   },
+   {
+    "from": 3,
+    "ar": "الدرس والسماعات",
+    "en": "The lesson and headphones",
+    "purposeAr": "اشرح قرب بدء الدرس واقترح استعمال السماعات.",
+    "purposeEn": "Explain that the lesson starts soon and offer to use headphones.",
+    "to": 4,
+    "imageEn": "The lesson and headphones · headphones",
+    "imageAr": "الدرس والسماعات · سمّاعات رأس"
+   },
+   {
+    "from": 5,
+    "ar": "استراحة بعد الدرس",
+    "en": "Taking a break afterward",
+    "purposeAr": "اتفق على إشعار انتهاء الدرس واعرض إعداد الشاي.",
+    "purposeEn": "Agree to signal when the lesson ends and offer to make tea.",
+    "to": 6,
+    "imageEn": "Taking a break afterward · mugs",
+    "imageAr": "استراحة بعد الدرس · أكواب"
+   }
+  ]
+ },
+ "help-with-boxes": {
+  "goalAr": "اطلب المساعدة ووزّع الصناديق حسب حجمها.",
+  "goalEn": "Ask for help and divide the boxes by size.",
+  "setting": "1: An adult man carries a cardboard box toward an apartment door held open by a modestly dressed woman in hijab. 2: Three different-sized cardboard boxes on the floor just inside the doorway, with the man lifting the smallest. 3: They point to the largest heavy box resting on the floor and set it aside. 4: The smaller boxes are stacked against the wall with the open doorway and passage visibly clear.",
+  "stages": [
+   {
+    "from": 1,
+    "ar": "فتح الباب",
+    "en": "Holding the door",
+    "purposeAr": "اطلب إمساك الباب أثناء حمل الصندوق.",
+    "purposeEn": "Ask someone to hold the door while you carry a box.",
+    "to": 1,
+    "imageEn": "Holding the door",
+    "imageAr": "فتح الباب"
+   },
+   {
+    "from": 2,
+    "ar": "البدء بالصناديق الصغيرة",
+    "en": "Starting with small boxes",
+    "purposeAr": "اسأل عن العدد وابدأ بالأخف.",
+    "purposeEn": "Ask how many boxes there are and start with the lighter ones.",
+    "to": 3,
+    "imageEn": "Starting with small boxes · small box",
+    "imageAr": "البدء بالصناديق الصغيرة · صندوق صغير"
+   },
+   {
+    "from": 4,
+    "ar": "تأجيل الصندوق الثقيل",
+    "en": "Leaving the heavy box for later",
+    "purposeAr": "اقترح الانتظار حتى يتفرغ الشخصان لحمله.",
+    "purposeEn": "Suggest waiting until both people are free to carry it.",
+    "to": 4,
+    "imageEn": "Leaving the heavy box for later · heavy box",
+    "imageAr": "تأجيل الصندوق الثقيل · صندوق ثقيل"
+   },
+   {
+    "from": 5,
+    "ar": "ترتيب الصناديق",
+    "en": "Stacking the boxes",
+    "purposeAr": "حدّد مكان وضع الصناديق الصغيرة بعيدًا عن فتحة الباب.",
+    "purposeEn": "Decide where to stack the small boxes so the door can still open.",
+    "to": 6,
+    "imageEn": "Stacking the boxes · clear passage",
+    "imageAr": "ترتيب الصناديق · ممر خالٍ"
+   }
+  ]
+ },
+ "rainy-picnic": {
+  "goalAr": "اتّفق على بديل للنزهة في حال هطول المطر.",
+  "goalEn": "Agree on a backup if it rains.",
+  "setting": "1: Two adults at a park plan a picnic with a basket on an outdoor table, clouds gathering overhead. 2: One looks worried at gray clouds while holding a closed umbrella. 3: They check a covered park shelter with tables beneath its roof as rain falls beyond. 4: In a bright home dining room they set their picnic food on a table next to the same basket.",
+  "stages": [
+   {
+    "from": 1,
+    "ar": "اقتراح النزهة",
+    "en": "Planning a picnic",
+    "purposeAr": "اسأل عن الخطة للغد.",
+    "purposeEn": "Ask about tomorrow’s plans.",
+    "to": 1,
+    "imageEn": "Planning a picnic · picnic basket, thermos",
+    "imageAr": "اقتراح النزهة · سلّة نزهة، قارورة حرارية"
+   },
+   {
+    "from": 2,
+    "ar": "ملاحظة الطقس",
+    "en": "Considering the weather",
+    "purposeAr": "عبّر عن احتمال الذهاب واذكر أثر المطر على الخطة.",
+    "purposeEn": "Express uncertainty and explain how rain could change the plan.",
+    "to": 3,
+    "imageEn": "Considering the weather · umbrella",
+    "imageAr": "ملاحظة الطقس · مظلّة مطر"
+   },
+   {
+    "from": 4,
+    "ar": "مكان مغطّى",
+    "en": "A covered alternative",
+    "purposeAr": "اعرض المساعدة وتحقق من إمكانية استخدام الطاولات المغطاة.",
+    "purposeEn": "Offer help and check whether the covered tables are available.",
+    "to": 5,
+    "imageEn": "A covered alternative · rain",
+    "imageAr": "مكان مغطّى · مطر"
+   },
+   {
+    "from": 6,
+    "ar": "الغداء في المنزل",
+    "en": "Eating at home",
+    "purposeAr": "اقترح بديلًا إذا كانت الطاولات مشغولة.",
+    "purposeEn": "Suggest eating at home if the tables are taken.",
+    "to": 6,
+    "imageEn": "Eating at home · dining table",
+    "imageAr": "الغداء في المنزل · طاولة طعام"
+   }
+  ]
+ },
+ "first-day-office": {
+  "goalAr": "وضّح الفرق بين المهمة المطلوبة اليوم وما يمكن تأجيله.",
+  "goalEn": "Clarify what must be done today and what can wait.",
+  "setting": "1: New employee Omar asks a female supervisor in hijab to clarify a checklist at an office desk. 2: She points at a printed list beside a pen, and he starts checking entries. 3: She gestures toward her desk phone, indicating she'll handle phone numbers, as he holds the list. 4: He sends the checked list from a laptop, with the list and supervisor visible beside him.",
+  "stages": [
+   {
+    "from": 1,
+    "ar": "طلب التوضيح",
+    "en": "Requesting clarification",
+    "purposeAr": "اطلب من المشرف توضيح المهمة الأولى.",
+    "purposeEn": "Ask the supervisor to clarify the first task.",
+    "to": 1,
+    "imageEn": "Requesting clarification · checklist",
+    "imageAr": "طلب التوضيح · قائمة تحقق"
+   },
+   {
+    "from": 2,
+    "ar": "مراجعة الأسماء",
+    "en": "Checking the names",
+    "purposeAr": "حدّد المطلوب اليوم واستوضح أمر أرقام الهواتف.",
+    "purposeEn": "State what must be checked today and ask about the phone numbers.",
+    "to": 3,
+    "imageEn": "Checking the names · pen",
+    "imageAr": "مراجعة الأسماء · قلم"
+   },
+   {
+    "from": 4,
+    "ar": "توزيع المسؤوليات",
+    "en": "Dividing responsibilities",
+    "purposeAr": "وضّح مَن سيراجع الأرقام ومتى.",
+    "purposeEn": "Clarify who will check the numbers and when.",
+    "to": 4,
+    "imageEn": "Dividing responsibilities · desk phone, hand gesture",
+    "imageAr": "توزيع المسؤوليات · هاتف مكتبي، إشارة باليد"
+   },
+   {
+    "from": 5,
+    "ar": "إرسال القائمة",
+    "en": "Sending the list",
+    "purposeAr": "أكّد أن القائمة يمكن إرسالها الآن وحدّد مَن تُرسل له نسخة.",
+    "purposeEn": "Confirm the list can be sent now and say who should receive a copy.",
+    "to": 6,
+    "imageEn": "Sending the list · laptop",
+    "imageAr": "إرسال القائمة · حاسوب محمول"
+   }
+  ]
+ },
+ "shoe-size": {
+  "goalAr": "اطلب تجربة مقاس آخر قبل الشراء.",
+  "goalEn": "Ask to try another size before buying.",
+  "setting": "1: Adult customer tries on a snug sneaker in a shoe store, asks male shopkeeper for a larger size. 2: Shopkeeper brings a larger shoebox to a bench beside a standing mirror. 3: Customer sitting on the bench ties the larger sneaker and smiles in relief. 4: Shopkeeper offers a pair of thick folded socks beside the selected sneakers.",
+  "stages": [
+   {
+    "from": 1,
+    "ar": "طلب مقاس أكبر",
+    "en": "Asking for a larger size",
+    "purposeAr": "تحقّق من توفر مقاس أكبر للحذاء نفسه.",
+    "purposeEn": "Check whether the same shoe comes in a larger size.",
+    "to": 1,
+    "imageEn": "Asking for a larger size · shoe",
+    "imageAr": "طلب مقاس أكبر · حذاء"
+   },
+   {
+    "from": 2,
+    "ar": "مكان تجربة الحذاء",
+    "en": "Finding a place to try it on",
+    "purposeAr": "أحضر المقاس التالي وأشر إلى المقعد بجوار المرآة.",
+    "purposeEn": "Bring the next size and show the bench by the mirror.",
+    "to": 4,
+    "imageEn": "Finding a place to try it on · shoebox, standing mirror",
+    "imageAr": "مكان تجربة الحذاء · صندوق أحذية، مرآة قائمة"
+   },
+   {
+    "from": 5,
+    "ar": "اختيار الحذاء",
+    "en": "Choosing the shoes",
+    "purposeAr": "عبّر عن أن المقاس الجديد أنسب واطلب شراءه.",
+    "purposeEn": "Say the new size fits better and ask for that pair.",
+    "to": 5,
+    "imageEn": "Choosing the shoes",
+    "imageAr": "اختيار الحذاء"
+   },
+   {
+    "from": 6,
+    "ar": "التجربة مع الجوارب",
+    "en": "Trying thicker socks",
+    "purposeAr": "اعرض تجربة الحذاء مع جوارب أثخن قبل القرار.",
+    "purposeEn": "Offer thicker socks so the customer can try the fit before deciding.",
+    "to": 6,
+    "imageEn": "Trying thicker socks · thick socks, pair of shoes",
+    "imageAr": "التجربة مع الجوارب · جوارب سميكة، زوج أحذية"
+   }
+  ]
+ },
+ "fruit-for-guests": {
+  "goalAr": "احسب ما يكفي من الفاكهة وراجع السعر.",
+  "goalEn": "Work out how much fruit you need and check the price.",
+  "setting": "1: Two adults in modest dress count six places at a home table, with a small bowl of oranges. 2: At a produce shop, vendor points to oranges beside a weighing scale. 3: Shopper compares a ripe orange to a firmer one by gently holding each, apples visible. 4: At home, the pair arrange ripe oranges and apples together on a serving plate for guests.",
+  "stages": [
+   {
+    "from": 1,
+    "ar": "عدد الضيوف",
+    "en": "Counting the guests",
+    "purposeAr": "اسأل عن عدد الضيوف وحدّد إن كانت الفاكهة تكفي.",
+    "purposeEn": "Ask how many guests are coming and decide whether more fruit is needed.",
+    "to": 2,
+    "imageEn": "Counting the guests · place setting, bowl of oranges",
+    "imageAr": "عدد الضيوف · ترتيب أدوات المائدة، وعاء برتقال"
+   },
+   {
+    "from": 3,
+    "ar": "الشراء بالوزن",
+    "en": "Buying by weight",
+    "purposeAr": "اسأل عن السعر وحدّد الوزن المطلوب.",
+    "purposeEn": "Ask the price and decide how much to buy.",
+    "to": 4,
+    "imageEn": "Buying by weight · weighing scale, produce stall",
+    "imageAr": "الشراء بالوزن · ميزان، بسطة خضار وفاكهة"
+   },
+   {
+    "from": 5,
+    "ar": "مقارنة الثمار",
+    "en": "Comparing the fruit",
+    "purposeAr": "اعرض خيار الثمار الناضجة أو الأكثر تماسكًا.",
+    "purposeEn": "Offer a choice between ripe and firmer fruit.",
+    "to": 5,
+    "imageEn": "Comparing the fruit · ripe orange",
+    "imageAr": "مقارنة الثمار · برتقالة ناضجة"
+   },
+   {
+    "from": 6,
+    "ar": "التقديم هذا المساء",
+    "en": "Serving this evening",
+    "purposeAr": "اختر الناضج واذكر سبب الاختيار.",
+    "purposeEn": "Choose the ripe fruit and give a reason.",
+    "to": 6,
+    "imageEn": "Serving this evening · serving plate",
+    "imageAr": "التقديم هذا المساء · طبق تقديم"
+   }
+  ]
+ },
+ "card-payment": {
+  "goalAr": "اسأل عن الدفع بالبطاقة واطلب إيصالًا.",
+  "goalEn": "Ask to pay by card and request a receipt.",
+  "setting": "1: Customer asks a cashier at a store counter whether a card is accepted, holding his card. 2: Close medium photo of the shopper tapping the card to the reader, with both faces still visible. 3: Cashier retrieves a paper receipt from a small printer, buyer holds a shopping bag. 4: Cashier puts the receipt into the visible outside pocket of the reusable bag.",
+  "stages": [
+   {
+    "from": 1,
+    "ar": "طريقة الدفع",
+    "en": "Choosing how to pay",
+    "purposeAr": "اسأل هل يمكن الدفع بالبطاقة.",
+    "purposeEn": "Ask whether you can pay by card.",
+    "to": 1,
+    "imageEn": "Choosing how to pay · payment card, cashier",
+    "imageAr": "طريقة الدفع · بطاقة دفع، أمينة الصندوق"
+   },
+   {
+    "from": 2,
+    "ar": "تمرير البطاقة",
+    "en": "Tapping the card",
+    "purposeAr": "وجّه الزبون إلى موضع تمرير البطاقة.",
+    "purposeEn": "Show the customer where to tap the card.",
+    "to": 2,
+    "imageEn": "Tapping the card · card reader",
+    "imageAr": "تمرير البطاقة · قارئ البطاقة"
+   },
+   {
+    "from": 3,
+    "ar": "طباعة الإيصال",
+    "en": "Printing the receipt",
+    "purposeAr": "اطلب الإيصال واعرض طباعته.",
+    "purposeEn": "Request a receipt and offer to print it.",
+    "to": 4,
+    "imageEn": "Printing the receipt · paper receipt, receipt printer",
+    "imageAr": "طباعة الإيصال · إيصال ورقي، طابعة إيصالات"
+   },
+   {
+    "from": 5,
+    "ar": "وضع الإيصال في الحقيبة",
+    "en": "Putting away the receipt",
+    "purposeAr": "اطلب وضع الإيصال في الحقيبة وحدّد الجيب المناسب.",
+    "purposeEn": "Ask to put the receipt in the bag and identify the pocket.",
+    "to": 6,
+    "imageEn": "Putting away the receipt · side pocket",
+    "imageAr": "وضع الإيصال في الحقيبة · جيب جانبي"
+   }
+  ]
+ },
+ "bread-before-closing": {
+  "goalAr": "تأكد من توافر الخبز وموعد الإغلاق.",
+  "goalEn": "Check whether bread is available and when the shop closes.",
+  "setting": "1: Customer asks baker about fresh bread at a counter with one remaining loaf on a tray. 2: Baker picks up the loaf with paper for wrapping it, customer nods. 3: Baker puts the wrapped loaf behind the counter, with a wall clock showing six. 4: Another adult man collects the reserved paper-wrapped loaf at the counter.",
+  "stages": [
+   {
+    "from": 1,
+    "ar": "السؤال عن الخبز",
+    "en": "Asking about bread",
+    "purposeAr": "تحقّق مما إذا بقي خبز طازج.",
+    "purposeEn": "Ask whether any fresh bread is left.",
+    "to": 1,
+    "imageEn": "Asking about bread · loaf, bakery counter",
+    "imageAr": "السؤال عن الخبز · رغيف، منضدة المخبز"
+   },
+   {
+    "from": 2,
+    "ar": "حجز الرغيف",
+    "en": "Reserving the loaf",
+    "purposeAr": "اعرض الاحتفاظ بالرغيف الأخير للزبون.",
+    "purposeEn": "Offer to set aside the last loaf.",
+    "to": 2,
+    "imageEn": "Reserving the loaf · wrapping paper",
+    "imageAr": "حجز الرغيف · ورق تغليف"
+   },
+   {
+    "from": 3,
+    "ar": "موعد الإغلاق",
+    "en": "Checking closing time",
+    "purposeAr": "اسأل عن وقت الإغلاق واذكر أين سيبقى الرغيف.",
+    "purposeEn": "Ask when the shop closes and where the loaf will be kept.",
+    "to": 4,
+    "imageEn": "Checking closing time",
+    "imageAr": "موعد الإغلاق"
+   },
+   {
+    "from": 5,
+    "ar": "استلام الرغيف",
+    "en": "Arranging collection",
+    "purposeAr": "اسأل هل يستطيع شخص آخر الاستلام وبيّن الاسم المطلوب.",
+    "purposeEn": "Arrange for someone else to pick it up and say which name to give.",
+    "to": 6,
+    "imageEn": "Arranging collection · wrapped loaf",
+    "imageAr": "استلام الرغيف · رغيف مغلّف"
+   }
+  ]
+ },
+ "wrong-size-online": {
+  "goalAr": "اشرح مشكلة المقاس واطلب استبداله.",
+  "goalEn": "Explain the size mix-up and request an exchange.",
+  "setting": "1: An adult customer at home holds a too-small jacket from a delivery box with a disappointed face. 2: Customer holds a phone and shows the jacket's tiny size tag while contacting support. 3: Support representative in modest hijab at a workstation points at an exchange form beside the phone. 4: At a parcel counter, an employee scans the barcode on a taped return box while the customer watches.",
+  "stages": [
+   {
+    "from": 1,
+    "ar": "استلام مقاس خاطئ",
+    "en": "Receiving the wrong size",
+    "purposeAr": "اشرح مشكلة المقاس عند وصول الطلب.",
+    "purposeEn": "Explain the size problem after delivery.",
+    "to": 1,
+    "imageEn": "Receiving the wrong size · jacket, delivery box",
+    "imageAr": "استلام مقاس خاطئ · سترة، صندوق توصيل"
+   },
+   {
+    "from": 2,
+    "ar": "التحقق من الطلب",
+    "en": "Checking the order",
+    "purposeAr": "اذكر المقاس الذي طلبته واطلب التحقق من رقم الطلب.",
+    "purposeEn": "State the size you ordered and ask support to check the order number.",
+    "to": 3,
+    "imageEn": "Checking the order · size tag, phone call",
+    "imageAr": "التحقق من الطلب · بطاقة المقاس، مكالمة هاتفية"
+   },
+   {
+    "from": 4,
+    "ar": "ترتيب الاستبدال",
+    "en": "Arranging an exchange",
+    "purposeAr": "أكّد الخطأ ووضّح كيف يحصل الزبون على ملصق الإرجاع.",
+    "purposeEn": "Confirm the error and explain how to get a return label.",
+    "to": 4,
+    "imageEn": "Arranging an exchange · headset, exchange form",
+    "imageAr": "ترتيب الاستبدال · سمّاعة بميكروفون، استمارة استبدال"
+   },
+   {
+    "from": 5,
+    "ar": "مسح ملصق الإرجاع",
+    "en": "Scanning the return",
+    "purposeAr": "وضّح متى يُشحن المقاس البديل بعد تسليم المرتجع.",
+    "purposeEn": "Explain when the replacement ships after the return is scanned.",
+    "to": 6,
+    "imageEn": "Scanning the return · barcode scanner, return parcel",
+    "imageAr": "مسح ملصق الإرجاع · قارئ الرمز الشريطي، طرد مرتجع"
+   }
+  ]
+ },
+ "charger-included": {
+  "goalAr": "قارن جهازين حسب الملحقات والسعر.",
+  "goalEn": "Compare two devices by accessories and price.",
+  "setting": "1: At an electronics store, customer asks about a charging port on a small handheld device while male clerk indicates it. 2: Clerk holds one charging cable near two different-size devices sitting side by side. 3: They compare the smaller device with the larger one at the counter, small tags without readable text. 4: Clerk shows a separate wall charger next to the small device and its supplied cable.",
+  "stages": [
+   {
+    "from": 1,
+    "ar": "وظيفة المنفذ",
+    "en": "Finding the charging port",
+    "purposeAr": "اسأل عن وظيفة المنفذ وحدّد موضع الشحن.",
+    "purposeEn": "Ask what the port is for and identify where to charge the device.",
+    "to": 1,
+    "imageEn": "Finding the charging port · charging port",
+    "imageAr": "وظيفة المنفذ · منفذ الشحن"
+   },
+   {
+    "from": 2,
+    "ar": "كابل مشترك",
+    "en": "A shared cable",
+    "purposeAr": "وضّح أن الجهازين يستخدمان نوع الكابل نفسه.",
+    "purposeEn": "Explain that both devices use the same type of cable.",
+    "to": 2,
+    "imageEn": "A shared cable · cable",
+    "imageAr": "كابل مشترك · كابل"
+   },
+   {
+    "from": 3,
+    "ar": "مقارنة السعر والحجم",
+    "en": "Comparing prices and sizes",
+    "purposeAr": "اسأل أي الجهازين أرخص وقارن السعرين.",
+    "purposeEn": "Ask which device is cheaper and compare their prices.",
+    "to": 4,
+    "imageEn": "Comparing prices and sizes",
+    "imageAr": "مقارنة السعر والحجم"
+   },
+   {
+    "from": 5,
+    "ar": "الكابل والشاحن",
+    "en": "Cable versus charger",
+    "purposeAr": "تحقّق مما يأتي مع الجهاز واعرض شاحنًا مناسبًا.",
+    "purposeEn": "Check what comes with the device and offer a compatible charger.",
+    "to": 6,
+    "imageEn": "Cable versus charger · wall charger, coiled cable",
+    "imageAr": "الكابل والشاحن · شاحن جداري، كابل ملفوف"
+   }
+  ]
+ },
+ "parcel-pickup": {
+  "goalAr": "اطلب طردًا وحدّد اسم المستلم.",
+  "goalEn": "Ask for a parcel and identify the recipient.",
+  "setting": "1: An adult man asks a female clerk in hijab for a parcel at a pickup counter. 2: He shows a pickup code on his smartphone while clerk locates a box on a shelf. 3: He hands her an identification card with no readable personal data. 4: He checks the shipping label on the box next to a pen and a signature pad.",
+  "stages": [
+   {
+    "from": 1,
+    "ar": "طلب استلام الطرد",
+    "en": "Requesting a parcel",
+    "purposeAr": "اطلب استلام الطرد واسأل عن اسم المستلِم.",
+    "purposeEn": "Request collection and ask who the parcel is for.",
+    "to": 2,
+    "imageEn": "Requesting a parcel · pickup counter, clerk",
+    "imageAr": "طلب استلام الطرد · منضدة الاستلام، موظفة"
+   },
+   {
+    "from": 3,
+    "ar": "رمز الاستلام",
+    "en": "Showing the pickup code",
+    "purposeAr": "اذكر الاسم واعرض رمز الاستلام.",
+    "purposeEn": "Give the name and show the pickup code.",
+    "to": 3,
+    "imageEn": "Showing the pickup code · pickup code",
+    "imageAr": "رمز الاستلام · رمز الاستلام"
+   },
+   {
+    "from": 4,
+    "ar": "التحقق من الهوية",
+    "en": "Checking identification",
+    "purposeAr": "اطلب إثبات الهوية وقدّمه بأدب.",
+    "purposeEn": "Politely request and present identification.",
+    "to": 5,
+    "imageEn": "Checking identification · ID card",
+    "imageAr": "التحقق من الهوية · بطاقة هوية"
+   },
+   {
+    "from": 6,
+    "ar": "فحص الملصق",
+    "en": "Checking the label",
+    "purposeAr": "افحص ملصق الطرد قبل التوقيع.",
+    "purposeEn": "Check the parcel label before signing.",
+    "to": 6,
+    "imageEn": "Checking the label · shipping label, signature pad",
+    "imageAr": "فحص الملصق · ملصق الشحن، لوحة توقيع"
+   }
+  ]
+ },
+ "printer-quote": {
+  "goalAr": "اطلب تسعيرة لمجموعة أوراق وتحقّق من الشروط.",
+  "goalEn": "Request a price for a print run and check the requirements.",
+  "setting": "1: Customer asks print-shop clerk for a quote near a printer and a stack of grayscale sheets. 2: Customer holds a small USB drive as he asks whether it is needed. 3: Clerk gestures to an open email compose window on a laptop, with printer beside it. 4: Clerk holds up a printed sheet showing grayscale illustrations on both sides, customer confirms the double-sided option.",
+  "stages": [
+   {
+    "from": 1,
+    "ar": "تسعير الطباعة",
+    "en": "Getting a price",
+    "purposeAr": "اسأل عن سعر الصفحة وعدد الصفحات.",
+    "purposeEn": "Ask about the price per page and the number of pages.",
+    "to": 2,
+    "imageEn": "Getting a price · printer, stack of pages",
+    "imageAr": "تسعير الطباعة · طابعة، رزمة صفحات"
+   },
+   {
+    "from": 3,
+    "ar": "السؤال عن ذاكرة USB",
+    "en": "Asking about a USB drive",
+    "purposeAr": "تحقّق من الحاجة إلى إحضار ذاكرة محمولة.",
+    "purposeEn": "Ask whether you need to bring a USB drive.",
+    "to": 3,
+    "imageEn": "Asking about a USB drive · USB drive",
+    "imageAr": "السؤال عن ذاكرة USB · ذاكرة USB"
+   },
+   {
+    "from": 4,
+    "ar": "إرسال الملف",
+    "en": "Sending the file",
+    "purposeAr": "اشرح إمكانية إرسال الملف بالبريد وحدّد السعر الإجمالي.",
+    "purposeEn": "Explain that the file can be emailed and give the total price.",
+    "to": 4,
+    "imageEn": "Sending the file · email",
+    "imageAr": "إرسال الملف · بريد إلكتروني"
+   },
+   {
+    "from": 5,
+    "ar": "الطباعة على الوجهين",
+    "en": "Printing both sides",
+    "purposeAr": "تحقّق من خيار الطباعة على الوجهين واذكر طريقة طلبه.",
+    "purposeEn": "Confirm the double-sided option and how to request it.",
+    "to": 6,
+    "imageEn": "Printing both sides · printed sheet",
+    "imageAr": "الطباعة على الوجهين · ورقة مطبوعة"
+   }
+  ]
+ },
+ "faulty-kettle": {
+  "goalAr": "اذكر ما جرّبته بالفعل واتّفق على خطوة الفحص.",
+  "goalEn": "Explain what you already tried and agree on an inspection.",
+  "setting": "1: At a service counter, a customer shows an intact electric kettle and explains it stopped working. 2: The female clerk in hijab listens with a concerned expression and writes a service note, kettle beside her. 3: The customer offers a slip with his contact details while gesturing to call before repairs. 4: The technician inspects the kettle switch externally at a workbench, with the clerk nearby holding the cost estimate.",
+  "stages": [
+   {
+    "from": 1,
+    "ar": "وصف العطل",
+    "en": "Describing the fault",
+    "purposeAr": "اذكر ما جرّبته عندما توقفت الغلاية عن العمل.",
+    "purposeEn": "Describe what you tried when the kettle stopped working.",
+    "to": 2,
+    "imageEn": "Describing the fault · electric kettle",
+    "imageAr": "وصف العطل · غلاية كهربائية"
+   },
+   {
+    "from": 3,
+    "ar": "طلب الفحص",
+    "en": "Arranging an inspection",
+    "purposeAr": "اعتذر عن المشكلة ورتّب وقت فحصها.",
+    "purposeEn": "Apologize for the inconvenience and arrange an inspection.",
+    "to": 3,
+    "imageEn": "Arranging an inspection",
+    "imageAr": "طلب الفحص"
+   },
+   {
+    "from": 4,
+    "ar": "الاتصال قبل الإصلاح",
+    "en": "Calling before repair",
+    "purposeAr": "اترك وسيلة اتصال واطلب إبلاغك قبل الاستبدال.",
+    "purposeEn": "Leave contact details and ask to be called before any replacement.",
+    "to": 4,
+    "imageEn": "Calling before repair · contact details",
+    "imageAr": "الاتصال قبل الإصلاح · بيانات الاتصال"
+   },
+   {
+    "from": 5,
+    "ar": "تكلفة القطعة",
+    "en": "Confirming the cost",
+    "purposeAr": "اذكر احتمال عطل المفتاح واتفق على معرفة التكلفة أولًا.",
+    "purposeEn": "Discuss a possible switch fault and agree to confirm the cost first.",
+    "to": 6,
+    "imageEn": "Confirming the cost · technician, switch, estimate",
+    "imageAr": "تكلفة القطعة · فنّي، مفتاح تشغيل، تقدير التكلفة"
+   }
+  ]
  }
 }

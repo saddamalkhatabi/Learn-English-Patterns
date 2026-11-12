@@ -131,7 +131,7 @@ function setIdeaWordFilter(value){
 function visibleIdeaWords(scene){
  return scene.words.map((word,index)=>({ ...word,index })).filter(word=>{
   if(!ideaWordFilter)return true;
-  const wanted={object:['NOUN','PROPN'],action:['VERB','AUX'],description:['ADJ','ADV']}[ideaWordFilter]||[];
+  const wanted={object:['NOUN','PROPN'],action:['VERB','AUX'],description:['ADJ','ADV'],phrase:['PHRASE','ADP']}[ideaWordFilter]||[];
   return wanted.includes(EPVocabulary.posFor(word));
  });
 }

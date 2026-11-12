@@ -23,7 +23,7 @@ function vocabularyPage(){
    <label>${T('النوع','Type')}<select onchange="vocabularyType=this.value;resetVocabulary()"><option value="">${T('الكل','All')}</option>
     ${Object.entries(EPVocabulary.types).map(([id,type])=>`<option value="${id}" ${vocabularyType===id?'selected':''}>${type.code} · ${T(type.ar,type.en)}</option>`).join('')}</select></label>
    <label>${T('موضع الاستخدام','Used in')}<select onchange="vocabularyCollection=this.value;resetVocabulary()">
-    ${[['','كل المحتوى','All content'],['sentence','الجمل والدروس','Sentences and lessons'],['dialogue','المحادثات','Conversations'],['idea','المشاهد الحرّة','Open scenes']].map(([id,ar,en])=>`<option value="${id}" ${vocabularyCollection===id?'selected':''}>${T(ar,en)}</option>`).join('')}</select></label>
+    ${[['','كل المحتوى','All content'],['sentence','الجمل والدروس','Sentences and lessons'],['dialogue','المحادثات','Conversations'],['idea','مفردات المشاهد','Scene vocabulary']].map(([id,ar,en])=>`<option value="${id}" ${vocabularyCollection===id?'selected':''}>${T(ar,en)}</option>`).join('')}</select></label>
    <label>${T('النمط','Pattern')}<select onchange="vocabularyPattern=this.value;resetVocabulary()"><option value="">${T('كل الأنماط','All patterns')}</option>
     ${(PILOT?.patterns||[]).map(p=>`<option value="${p.id}" ${vocabularyPattern==p.id?'selected':''}>${H(p.form)}</option>`).join('')}</select></label>
    <label>${T('الصوت','Voice')}<select onchange="vocabularyVoice=this.value"><option value="male" ${vocabularyVoice==='male'?'selected':''}>Adam</option><option value="female" ${vocabularyVoice==='female'?'selected':''}>Bella</option></select></label>
@@ -83,7 +83,7 @@ function vocabularySceneLinks(entry){
   const source=vocabularyData.sources[index];
   for(const id of source.sceneIds)if(!uses.has(id))uses.set(id,{source,index});
  }
- const cards=[...uses].map(([,use])=>{
+ const cards=[...uses].map(([id,use])=>{
   const source=use.source;let photo='';
   if(source.type==='dialogue'){
    const dialogue=PILOT?.dialogues.find(d=>d.id===source.id);
@@ -92,7 +92,8 @@ function vocabularySceneLinks(entry){
    const scene=ideaLibrary?.scenes.find(scene=>scene.id===source.id);
    if(scene)photo=ideaPicture(scene);
   }else photo=pilotScene(dialogueScene(source.id));
-  return photo?`<button class="vocabulary-scene-card" onclick="openVocabularyUse(${use.index})">${photo}<small>${H(source.title||source.en)}</small></button>`:'';
+  const open=dialogueSceneLocations.has(id)?`openSmartSentence('${H(id)}')`:`openVocabularyUse(${use.index})`;
+  return photo?`<button class="vocabulary-scene-card" onclick="${open}">${photo}<small>${H(source.title||source.en)}</small></button>`:'';
  }).filter(Boolean);
  return cards.length?`<details class="vocabulary-scenes"><summary>${T('الصور المرتبطة','Linked scenes')} · ${cards.length}</summary><div class="vocabulary-scene-links">${cards.join('')}</div></details>`:'';
 }
@@ -117,7 +118,9 @@ async function openVocabularyUse(index){
    if(audio&&turn){audio.currentTime=turn.start_ms/1000;playDialogueMedia(audio)}
   }));
  }else if(source.type.startsWith('idea')){
-  await ideaLibraryReady;navigate('lab');
+  await Promise.all([ideaLibraryReady,dialogueArchiveReady]);
+  if(dialogueSceneLocations.has(source.id)){await openSmartSentence(source.id);return}
+  navigate('lab');
   requestAnimationFrame(()=>chooseIdeaScene(source.id));
  }else{
   await Promise.all([pilotReady,archiveReady]);openSmartSentence(source.id);

@@ -1,6 +1,6 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs');
 const vocabulary=require('../public/vocabulary-index.json');
-const {includesTerm,tokens}=require('../public/vocabulary-core.js');
+const {includesTerm,normalize,tokens}=require('../public/vocabulary-core.js');
 const {scenes,lifecycles}=require('../public/conversation-scenes.json');
 const dialogues=new Map(require('../public/dialogues.json').dialogues.map(d=>[d.id,d]));
 const audio=require('../public/dialogue-audio.json');
@@ -11,20 +11,27 @@ test('the shipped browser scripts parse together as classic scripts',()=>{
  assert.doesNotThrow(()=>new vm.Script(files.map(file=>fs.readFileSync('public/'+file,'utf8')).join('\n;\n')));
 });
 test('reviewed conversation stages cover every turn and use their measured audio offsets',()=>{
- assert.equal(Object.keys(lifecycles).length,12);
+ assert.equal(Object.keys(lifecycles).length,32);
+ const annotations=new Map(require('../public/idea-scenes.json').scenes.map(scene=>[scene.id,scene]));
  const images=new Set();
  for(const [id,life] of Object.entries(lifecycles)){
   const dialogue=dialogues.get(id);let next=1;
   assert.equal(life.stages.length,4,id);
-  assert.equal(life.turnPurposes.length,dialogue.lines.length,id);
-  assert(life.turnPurposes.every(pair=>pair.length===2&&pair.every(text=>typeof text==='string'&&text.trim())),id);
+  if(life.turnPurposes){
+   assert.equal(life.turnPurposes.length,dialogue.lines.length,id);
+   assert(life.turnPurposes.every(pair=>pair.length===2&&pair.every(text=>typeof text==='string'&&text.trim())),id);
+  }
   for(const stage of life.stages){
    assert.equal(stage.from,next,id);
    assert(stage.from<=stage.to&&stage.to<=dialogue.lines.length,id);
    const image=scenes[id].turns[stage.from];
-   assert(image&&image.width===500&&image.height===300,id);
+   assert(image&&image.width>image.height,id);
    assert(image.path.startsWith('assets/scenes/conversations/life-'),id);
    assert(!images.has(image.path),id);images.add(image.path);
+   const annotation=annotations.get(image.id);
+   assert.equal(annotation.sha256,image.sha256,id);
+   assert(annotation.words.length>=2&&annotation.words.every(word=>Number.isFinite(word.x)&&Number.isFinite(word.y)),id);
+   assert(annotation.words.every(word=>vocabulary.entries.some(entry=>normalize(entry.en)===normalize(word.en)&&entry.sceneIds.includes(image.id))),id);
    for(let turn=stage.from;turn<=stage.to;turn++){
     assert.equal(scenes[id].turns[turn].id,image.id,id);
     const cue=audio[id].turns[turn-1];
@@ -34,7 +41,7 @@ test('reviewed conversation stages cover every turn and use their measured audio
   }
   assert.equal(next,dialogue.lines.length+1,id);
  }
- assert.equal(images.size,48);
+ assert.equal(images.size,128);
 });
 test('vocabulary keeps contextual roles, full words with accents, and valid content links',()=>{
  assert(vocabulary.entries.length>3000);

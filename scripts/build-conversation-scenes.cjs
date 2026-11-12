@@ -10,9 +10,16 @@ function resolve(input){
   const {id,path,width,height,sha256,sentenceEn:en,sentenceAr:ar}=scene;
   return {id,path,width,height,sha256,en,ar};
  }
- const {id,path,width,height,en,ar}=input;
+ const {id,path,width,height,en,ar,sourceCrop}=input;
  assert(/^conv-[a-z0-9-]+$/.test(id)&&/^assets\/scenes\/conversations\/[a-z0-9-]+\.webp$/.test(path),path);
  assert(Number.isInteger(width)&&width>0&&Number.isInteger(height)&&height>0&&en&&ar,id);
+ if(sourceCrop){
+  const [canvasWidth,canvasHeight]=sourceCrop.canvas;
+  const [x,y,right,bottom]=sourceCrop.box;
+  assert([canvasWidth,canvasHeight,x,y,right,bottom].every(Number.isInteger),id);
+  assert(x>=0&&y>=0&&right<=canvasWidth&&bottom<=canvasHeight,id);
+  assert.deepEqual([right-x,bottom-y],[width,height],id);
+ }
  const bytes=fs.readFileSync(asset(process.cwd(),path));
  assert.deepEqual(webpSize(bytes),[width,height],path);
  return {id,path,width,height,en,ar,sha256:crypto.createHash('sha256').update(bytes).digest('hex')};
@@ -50,9 +57,12 @@ for(const [id,life] of Object.entries(lifecycles)){
   next=stage.to+1;
  }
  assert.equal(next,dialogue.lines.length+1,id);
- assert.equal(turnPurposes[id]?.length,dialogue.lines.length,`${id} turn purposes`);
- assert(turnPurposes[id].every(pair=>pair.length===2&&pair.every(text=>typeof text==='string'&&text.trim())),id);
- life.turnPurposes=turnPurposes[id];
+ const notes=turnPurposes[id];
+ if(notes){
+  assert.equal(notes.length,dialogue.lines.length,`${id} turn purposes`);
+  assert(notes.every(pair=>pair.length===2&&pair.every(text=>typeof text==='string'&&text.trim())),id);
+  life.turnPurposes=notes;
+ }
 }
 fs.writeFileSync('public/conversation-scenes.json',JSON.stringify({schema:1,scenes,lifecycles},null,2)+'\n');
 console.log(`Indexed scene links for ${Object.keys(scenes).length} conversations`);

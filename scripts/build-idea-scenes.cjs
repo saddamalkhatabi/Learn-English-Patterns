@@ -78,5 +78,49 @@ for(const line of text('production/idea-pattern-practice.tsv')){
 }
 const covered=new Set(scenes.flatMap(scene=>scene.patterns.filter(pattern=>pattern.en).map(pattern=>pattern.id)));
 assert.deepEqual(covered,patternIds,'Every lesson needs a contextual scene example');
+
+const dialogueTopics={id:'conversation',ar:'مشاهد المحادثات',en:'Conversation scenes'};
+const dialogueStages=require('../production/dialogue-lifecycles.json');
+const dialogueImages=require('../production/conversation-scenes.json');
+const dialogues=new Map(require('../public/dialogues.json').dialogues.map(dialogue=>[dialogue.id,dialogue]));
+const sceneLabels=new Map();
+for(const line of text('production/conversation-scene-labels.tsv')){
+ if(line.startsWith('#'))continue;
+ const [id,en,ar,kind,coords]=line.split('|');
+ assert(id&&en&&ar&&['object','action','description','phrase'].includes(kind),line);
+ const location=point(coords);
+ assert(Number.isFinite(location.x),line);
+ if(!sceneLabels.has(id))sceneLabels.set(id,[]);
+ sceneLabels.get(id).push({en,ar,kind,...location});
+}
+topics.push(dialogueTopics);
+for(const [id,life] of Object.entries(dialogueStages)){
+ const dialogue=dialogues.get(id);
+ for(const stage of life.stages){
+  const image=dialogueImages[id].turns[stage.from];
+  const line=dialogue.lines[stage.from-1];
+  const bytes=fs.readFileSync(asset(process.cwd(),image.path));
+  assert.deepEqual(webpSize(bytes),[image.width,image.height],image.path);
+  const patterns=new Map();
+  for(const turn of dialogue.lines.slice(stage.from-1,stage.to)){
+   for(const patternId of turn.patterns){
+    if(patternIds.has(patternId)&&!patterns.has(patternId)){
+     patterns.set(patternId,{id:patternId,en:turn.en,ar:turn.ar});
+    }
+   }
+  }
+  const words=sceneLabels.get(image.id)||[];
+  sceneLabels.delete(image.id);
+  scenes.push({
+   id:image.id,topic:dialogueTopics.id,
+   en:`${dialogue.en} · ${stage.en}`,ar:`${dialogue.ar} · ${stage.ar}`,
+   sentenceEn:line.en,sentenceAr:line.ar,words,patterns:[...patterns.values()],
+   taskEn:stage.purposeEn,taskAr:stage.purposeAr,
+   path:image.path,width:image.width,height:image.height,
+   sha256:crypto.createHash('sha256').update(bytes).digest('hex')
+  });
+ }
+}
+assert.equal(sceneLabels.size,0,'Picture labels must reference archived conversation scenes');
 fs.writeFileSync('public/idea-scenes.json',JSON.stringify({schema:2,topics,scenes},null,2)+'\n');
-console.log(`Indexed ${scenes.length} independent Idea Lab scenes`);
+console.log(`Indexed ${scenes.length} scenes for visual practice`);

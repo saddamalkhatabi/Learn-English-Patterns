@@ -23,18 +23,10 @@ function sceneStudioPage(){
   'ابحث عن صورة من الأرشيف، واستمع إلى جملتها، ثم استخدمها لبدء محادثة حرّة.',
   'Find an archived photo, listen to its sentence, then use it to start an open conversation.'))+epSectionLinks(['references','lab'])+
   `<div class="toolbar"><input type="search" id="scene-studio-query" oninput="studioPage=0;paintSceneStudio()" placeholder="${T('مسبح، مكتبة، train…','Pool, library, قطار…')}" aria-label="${T('بحث المشاهد','Search scenes')}">
-  <select id="scene-studio-topic" onchange="studioPage=0;paintSceneStudio()" aria-label="${T('موضوع المشهد','Scene topic')}"><option value="">${T('كل الموضوعات','All topics')}</option>${topics.map(t=>`<option value="${t.id}">${H(T(t.ar,t.en))}</option>`).join('')}</select>
+  <select id="scene-studio-topic" onchange="studioPage=0;paintSceneStudio()" aria-label="${T('موضوع المشهد','Scene topic')}"><option value="">${T('كل الموضوعات','All topics')}</option><option value="conversation">${T('مشاهد المحادثات','Conversation scenes')}</option>${topics.map(t=>`<option value="${t.id}">${H(T(t.ar,t.en))}</option>`).join('')}</select>
   ${smartLibraryFilters()}<button class="secondary" onclick="surpriseScene()">${T('اقترح مشهدًا','Suggest a scene')}</button></div>
   <section id="studio-pattern-context"></section><section id="scene-studio-active"></section>
   <dialog id="idea-zoom" aria-labelledby="idea-zoom-title" onclose="restoreIdeaZoom()"><div class="idea-zoom-header"><h2 id="idea-zoom-title"></h2><form method="dialog"><button class="secondary" aria-label="${T('إغلاق عرض المشهد','Close scene view')}">×</button></form></div><div class="idea-zoom-content"></div></dialog>
-  <details class="panel studio-collections"><summary>${T('مشاهد المحادثات','Conversation scenes')}</summary>
-   ${epSectionLinks(['dialogues'])}
-   <div class="scene-studio-grid">${Object.entries(dialogueSceneArchive).map(([id,entry])=>{
-    const dialogue=PILOT?.dialogues.find(d=>d.id===id);
-    const visual=entry.cover||Object.values(entry.turns)[0];
-    return dialogue&&visual?`<article class="panel"><button class="dialogue-image-button" onclick="enlargeDialogueScene(this)" aria-label="${T('تكبير المشهد','Enlarge scene')}"><img class="dialogue-dedicated-photo" src="${H(visual.path)}" alt="${H(T(visual.ar,visual.en))}" loading="lazy"></button><b>${H(T(dialogue.ar,dialogue.en))}</b></article>`:'';
-   }).join('')}</div>
-  </details>
   <p id="scene-studio-count" role="status"></p>
   <div id="scene-studio-results" class="scene-studio-grid"></div><div class="buttonrow">
    <button class="secondary" id="scene-studio-prev" onclick="studioPage--;paintSceneStudio()">${T('السابق','Previous')}</button>
@@ -44,13 +36,24 @@ function studioMatches(){
  const tokens=normalizeSceneQuery($('#scene-studio-query')?.value||'').trim().split(/\s+/).filter(Boolean);
  const topic=$('#scene-studio-topic')?.value, topics=new Map(sceneArchive?.topics.map(t=>[t.id,t])||[]);
  const sentences=new Map([...(PILOT?.sentences||[]),...(REFERENCE_CORPUS?.sentences||[])].map(s=>[s.id,s]));
- return (sceneArchive?.scenes||[]).flatMap(item=>{
+ const originals=(sceneArchive?.scenes||[]).flatMap(item=>{
   const row=sentences.get(item.id);
   if(!row||!matchesStudioContext(row)||topic&&!item.topics.includes(topic))return [];
   const labels=item.topics.flatMap(id=>[topics.get(id).ar,topics.get(id).en]);
   const text=normalizeSceneQuery([row.id,row.en,row.ar,item.description,item.descriptionAr,...item.keywords,...labels].join(' '));
   return tokens.every(word=>text.includes(word))?[{item,row}]:[];
  });
+ const conversations=(!topic||topic==='conversation')?(ideaLibrary?.scenes||[]).flatMap(scene=>{
+  const location=dialogueSceneLocations.get(scene.id);
+  if(!location)return [];
+  const dialogue=PILOT?.dialogues.find(dialogue=>dialogue.id===location.id);
+  const row={id:scene.id,pattern_ids:scene.patterns.map(pattern=>pattern.id)};
+  if(!matchesStudioContext(row))return [];
+  const text=normalizeSceneQuery([scene.en,scene.ar,scene.sentenceEn,scene.sentenceAr,dialogue?.en,dialogue?.ar,
+   ...scene.words.flatMap(word=>[word.en,word.ar])].join(' '));
+  return tokens.every(word=>text.includes(word))?[{item:scene,row,scene}]:[];
+ }):[];
+ return studioPattern?[...originals,...conversations]:[...conversations,...originals];
 }
 function paintSceneStudio(){
  if(!$('#scene-studio-results'))return;
@@ -60,7 +63,8 @@ function paintSceneStudio(){
  $('#scene-studio-prev').disabled=studioPage===0;
  $('#scene-studio-next').disabled=studioPage+1>=total;
  const topics=new Map(sceneArchive?.topics.map(t=>[t.id,t])||[]);
- $('#scene-studio-results').innerHTML=matches.slice(studioPage*24,studioPage*24+24).map(({item,row})=>{
+ $('#scene-studio-results').innerHTML=matches.slice(studioPage*24,studioPage*24+24).map(({item,row,scene})=>{
+  if(scene)return `<article class="panel">${ideaPicture(scene)}<button class="textlink" onclick="openStudioScene('${H(scene.id)}')">${H(T(scene.ar,scene.en))} ↗</button></article>`;
   const {ar,en}=topics.get(item.topics[0]);
   return `<article class="panel">${studioPicture(row,ar,en)}<button class="textlink" onclick="openStudioScene('${H(item.id)}')">${H(T(ar,en))} ↗</button></article>`;
  }).join('');
@@ -131,3 +135,23 @@ render=function(){
 archiveReady.then(data=>{sceneArchive=data;if(page==='scene-studio')render()});
 pilotReady.then(()=>{if(page==='scene-studio')paintSceneStudio()});
 Promise.all([dialogueArchiveReady,pilotReady]).then(()=>{if(page==='scene-studio'&&!$('#scene-studio-active')?.children.length)render()});
+function playStudioDialogueTurn(id){
+ const location=dialogueSceneLocations.get(id);
+ const dialogue=PILOT?.dialogues.find(row=>row.id===location?.id);
+ const turn=dialogue?.audio?.turns[location.turn];
+ if(!turn)return;
+ stopSpeech();studioAudio?.pause();
+ const audio=new Audio(dialogue.audio.path);
+ studioAudio=audio;
+ audio.currentTime=turn.start_ms/1000;
+ const words=$('#scene-studio-active').querySelectorAll('[data-dialogue-word]');
+ const paint=()=>{
+  const ms=audio.currentTime*1000;
+  if(ms>=turn.end_ms)audio.pause();
+  const index=audio.paused?-1:turn.words.findIndex(word=>word.start_ms<=ms&&ms<word.end_ms);
+  words.forEach((word,i)=>word.classList.toggle('speaking',index===i));
+ };
+ audio.addEventListener('timeupdate',paint);
+ audio.addEventListener('pause',paint);
+ audio.play().catch(()=>toast(T('تعذّر تشغيل الصوت.','Audio could not play.')));
+}

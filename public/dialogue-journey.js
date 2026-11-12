@@ -26,7 +26,7 @@ function dialogueJourney(dialogue,jump){
    return `<button type="button" class="journey-stage journey-stage-${index}" data-journey-stage="${index}"
     onclick="${jump}(${stage.from-1},this)" ${dialogue.audio?'':'disabled'}
     aria-label="${H(T(stage.ar,stage.en))} · ${T('استمع من الدور','Listen from turn')} ${stage.from}">
-     <img src="${H(image.path)}" width="500" height="300" alt="${H(T(image.ar,image.en))}" loading="lazy">
+     <img src="${H(image.path)}" width="${image.width}" height="${image.height}" alt="${H(T(image.ar,image.en))}" loading="lazy">
      <span><b>${index+1} · ${H(T(stage.ar,stage.en))}</b><small>${H(T(stage.purposeAr,stage.purposeEn))}</small></span>
     </button>`;
   }).join('')}

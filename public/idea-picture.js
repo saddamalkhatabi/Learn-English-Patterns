@@ -29,7 +29,7 @@ function ideaViewer(scene){
      ${[['en','الإنجليزية','English'],['ar','العربية','Arabic'],['both','العربية والإنجليزية','Arabic and English'],['alternate','تناوب اللغتين','Alternate languages']].map(([id,ar,en])=>
       `<option value="${id}" ${ideaLabelLanguage===id?'selected':''}>${T(ar,en)}</option>`).join('')}</select></label>
     <label class="idea-filter">${T('نوع المفردات','Vocabulary type')} <select id="idea-word-filter" onchange="setIdeaWordFilter(this.value)">
-     ${[['','الكل','All'],['object','الأشياء والأشخاص','Objects and people'],['action','الأفعال','Actions'],['description','الأوصاف','Descriptions']].map(([id,ar,en])=>
+    ${[['','الكل','All'],['object','الأشياء والأشخاص','Objects and people'],['action','الأفعال','Actions'],['description','الأوصاف','Descriptions'],['phrase','العبارات','Phrases']].map(([id,ar,en])=>
       `<option value="${id}" ${ideaWordFilter===id?'selected':''}>${T(ar,en)}</option>`).join('')}</select></label>
     <label class="idea-filter">${T('صوت المفردة أو المثال','Word or example voice')} <select onchange="ideaSoloVoice=this.value">
      <option value="male" ${ideaSoloVoice==='male'?'selected':''}>Adam</option><option value="female" ${ideaSoloVoice==='female'?'selected':''}>Bella</option>

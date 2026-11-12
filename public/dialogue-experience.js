@@ -47,8 +47,15 @@ let dialogueResume={};
 try{dialogueResume=JSON.parse(localStorage.getItem('nasaq-dialogue-resume-v1'))||{}}catch{}
 let dialoguePriority=['image','text'].includes(dialogueResume.priority)?dialogueResume.priority:'image';
 let dialogueSceneArchive={},dialogueLifecycles={};
+const dialogueSceneLocations=new Map();
 const dialogueArchiveReady=fetch('conversation-scenes.json').then(r=>r.ok?r.json():{}).then(data=>{
  dialogueSceneArchive=data.scenes||{};dialogueLifecycles=data.lifecycles||{};
+ for(const [id,entry] of Object.entries(dialogueSceneArchive)){
+  for(const [position,image] of Object.entries(entry.turns)){
+   if(!dialogueSceneLocations.has(image.id))dialogueSceneLocations.set(image.id,{id,turn:Number(position)-1});
+  }
+  if(entry.cover&&!dialogueSceneLocations.has(entry.cover.id))dialogueSceneLocations.set(entry.cover.id,{id,turn:0});
+ }
 }).catch(()=>{});
 function saveDialogueResume(){try{localStorage.setItem('nasaq-dialogue-resume-v1',JSON.stringify(dialogueResume))}catch{}}
 function setDialoguePriority(value){
@@ -104,7 +111,7 @@ function dialogueVisual(dialogue,index){
  const line=dialogue.lines[Math.max(index,0)];
  const entry=dialogueSceneArchive[dialogue.id];
  const image=entry?.turns?.[index+1]||entry?.cover;
- if(image)return `<img class="dialogue-dedicated-photo" src="${H(image.path)}" alt="${H(T(image.ar,image.en))}" loading="lazy">`;
+ if(image)return `<img class="dialogue-dedicated-photo" src="${H(image.path)}" width="${image.width}" height="${image.height}" alt="${H(T(image.ar,image.en))}" loading="lazy">`;
  const example=dialogueScene(line.scene);
  if(!example?.image)return '';
  return `${pilotScene(example)}<small class="dialogue-illustrative">${T('مشهد توضيحي','Illustrative scene')}</small>`;
@@ -118,9 +125,12 @@ function enlargeDialogueScene(button){
  const index=Number(button.dataset.dialogueTurn);
  const line=dialogue?.lines[index];
  const explanation=dialogue?dialogueSceneExplanation(dialogue,index):'';
+ const entry=dialogueSceneArchive[dialogue?.id];
+ const photo=entry?.turns[index+1]||entry?.cover;
+ const libraryButton=photo?`<button class="secondary" onclick="openDialoguePhotoInLibrary(this,'${H(photo.id)}')">${T('افتح الصورة ومفرداتها','Open photo and vocabulary')} ↗</button>`:'';
  const dialog=document.createElement('dialog');
  dialog.className='dialogue-image-dialog';
- dialog.innerHTML=`<div class="dialogue-image-heading"><h2>${T('عرض المشهد','Scene view')}</h2><form method="dialog"><button class="secondary" autofocus aria-label="${T('إغلاق الصورة','Close image')}">×</button></form></div><figure>${button.innerHTML}<figcaption>${explanation}</figcaption></figure>${line?`<div class="dialogue-live-text"><p lang="en" dir="ltr">${dialogueWords(line)}</p>${EP.ar(line.ar)}</div>`:''}`;
+ dialog.innerHTML=`<div class="dialogue-image-heading"><h2>${T('عرض المشهد','Scene view')}</h2><form method="dialog"><button class="secondary" autofocus aria-label="${T('إغلاق الصورة','Close image')}">×</button></form></div><figure>${button.innerHTML}<figcaption>${explanation}</figcaption></figure>${line?`<div class="dialogue-live-text"><p lang="en" dir="ltr">${dialogueWords(line)}</p>${EP.ar(line.ar)}</div>`:''}${libraryButton}`;
  // Nest within the lesson so it stays available when that lesson is modal.
  (button.closest('#lesson')||document.body).append(dialog);
  dialog.addEventListener('close',()=>{dialog.remove();button.focus()},{once:true});
@@ -130,6 +140,11 @@ function dialogueSourceNote(line){
  if(!line.referenceId)return '';
  const number=Number(line.referenceId.slice(4));
  return `<small class="dialogue-source">${T(`من مكتبة الألف جملة · ${number}`,`From the 1,000-sentence library · ${number}`)}</small>`;
+}
+function openDialoguePhotoInLibrary(button,id){
+ button.closest('.dialogue-image-dialog').close();
+ if($('#lesson')?.open)closeLesson();
+ return openSmartSentence(id);
 }
 function dialoguePanel(dialogue, jump){
  const patterns=[...new Set(dialogue.lines.flatMap(line=>line.patterns))];
@@ -396,7 +411,7 @@ function dialoguesPage(){
    <label class="dialogue-search">${T('البحث','Search')}<input type="search" id="dialogue-query" oninput="resetDialogueFilters()" placeholder="${T('عنوان، موقف، أو نمط…','Title, situation, or pattern…')}"></label>
    ${dialogueSelect('category',T('الموقف','Situation'),T('كل المواقف','All situations'),dialogueCategories)}
    ${dialogueSelect('purpose',T('هدف المحادثة','Speaking goal'),T('كل الأهداف','All goals'),dialoguePurposes)}
-   ${dialogueSelect('visual',T('المشاهد','Visual journey'),T('كل المحادثات','All conversations'),{journey:['دورة مصوّرة · 12 محادثة','Illustrated journey · 12 conversations']})}
+   ${dialogueSelect('visual',T('المشاهد','Visual journey'),T('كل المحادثات','All conversations'),{journey:[`دورة مصوّرة · ${Object.keys(dialogueLifecycles).length} محادثة`,`Illustrated journey · ${Object.keys(dialogueLifecycles).length} conversations`]})}
    ${dialogueSelect('series',T('مستوى المحادثات','Conversation level'),T('كل المستويات','All conversation levels'),seriesChoices)}
    ${dialogueSelect('level',T('صعوبة اللغة المقترحة','Suggested language difficulty'),T('كل درجات الصعوبة','All difficulties'),{A1:['A1','A1'],A2:['A2','A2'],B1:['B1','B1'],B2:['B2','B2']})}
    ${dialogueSelect('status',T('الجاهزية','Availability'),T('المحادثات المتاحة','Available conversations'),{
