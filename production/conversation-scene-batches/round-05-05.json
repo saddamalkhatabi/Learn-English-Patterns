@@ -1,0 +1,742 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "a71b68253fe68e1aaa5357e773bd0cc4dcc67d978076cd237d20d97382be4d92"
+  },
+  "conversations": [
+    {
+      "id": "choosing-a-course",
+      "goalAr": "اختيار دورة مسائية",
+      "goalEn": "Choosing an evening course",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Comparing evening classes",
+          "ar": "مقارنة الدروس المسائية",
+          "purposeEn": "Practise comparing evening classes.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: مقارنة الدروس المسائية.",
+          "image": {
+            "id": "conv-life-choosing-a-course-1",
+            "path": "assets/scenes/conversations/life-choosing-a-course-1.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Comparing evening classes",
+            "ar": "مقارنة الدروس المسائية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                393,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "course display",
+              "ar": "لوحة الدورات",
+              "kind": "object",
+              "x": 88,
+              "y": 54
+            },
+            {
+              "en": "prospective student",
+              "ar": "طالب محتمل",
+              "kind": "object",
+              "x": 31,
+              "y": 27
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Checking the class timetable",
+          "ar": "التحقق من جدول الدروس",
+          "purposeEn": "Practise checking the class timetable.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: التحقق من جدول الدروس.",
+          "image": {
+            "id": "conv-life-choosing-a-course-2",
+            "path": "assets/scenes/conversations/life-choosing-a-course-2.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Checking the class timetable",
+            "ar": "التحقق من جدول الدروس",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                3,
+                789,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "timetable",
+              "ar": "جدول دروس",
+              "kind": "object",
+              "x": 62,
+              "y": 79
+            },
+            {
+              "en": "classroom window",
+              "ar": "نافذة الصف",
+              "kind": "object",
+              "x": 75,
+              "y": 31
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Speaking in a smaller class",
+          "ar": "المشاركة في صف أصغر",
+          "purposeEn": "Practise speaking in a smaller class.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: المشاركة في صف أصغر.",
+          "image": {
+            "id": "conv-life-choosing-a-course-3",
+            "path": "assets/scenes/conversations/life-choosing-a-course-3.webp",
+            "width": 392,
+            "height": 243,
+            "en": "Speaking in a smaller class",
+            "ar": "المشاركة في صف أصغر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                3,
+                1187,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "sit in a circle",
+              "ar": "يجلس على هيئة دائرة",
+              "kind": "phrase",
+              "x": 50,
+              "y": 63
+            },
+            {
+              "en": "whiteboard",
+              "ar": "سبورة بيضاء",
+              "kind": "object",
+              "x": 65,
+              "y": 21
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Calling about a trial lesson",
+          "ar": "الاتصال للاستفسار عن درس تجريبي",
+          "purposeEn": "Practise calling about a trial lesson.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: الاتصال للاستفسار عن درس تجريبي.",
+          "image": {
+            "id": "conv-life-choosing-a-course-4",
+            "path": "assets/scenes/conversations/life-choosing-a-course-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Calling about a trial lesson",
+            "ar": "الاتصال للاستفسار عن درس تجريبي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                3,
+                1583,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "trial lesson",
+              "ar": "درس تجريبي",
+              "kind": "phrase",
+              "x": 46,
+              "y": 69
+            },
+            {
+              "en": "take down details",
+              "ar": "يدوّن التفاصيل",
+              "kind": "phrase",
+              "x": 48,
+              "y": 88
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bakery-two-loaves",
+      "goalAr": "اختيار رغيفين من المخبز",
+      "goalEn": "Buying two loaves",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Looking for wholemeal bread",
+          "ar": "البحث عن خبز القمح الكامل",
+          "purposeEn": "Practise looking for wholemeal bread.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: البحث عن خبز القمح الكامل.",
+          "image": {
+            "id": "conv-life-bakery-two-loaves-1",
+            "path": "assets/scenes/conversations/life-bakery-two-loaves-1.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Looking for wholemeal bread",
+            "ar": "البحث عن خبز القمح الكامل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                252,
+                393,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "wholemeal loaf",
+              "ar": "رغيف من القمح الكامل",
+              "kind": "object",
+              "x": 71,
+              "y": 54
+            },
+            {
+              "en": "bakery display",
+              "ar": "واجهة عرض المخبز",
+              "kind": "object",
+              "x": 65,
+              "y": 35
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Asking the price of two loaves",
+          "ar": "السؤال عن سعر رغيفين",
+          "purposeEn": "Practise asking the price of two loaves.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: السؤال عن سعر رغيفين.",
+          "image": {
+            "id": "conv-life-bakery-two-loaves-2",
+            "path": "assets/scenes/conversations/life-bakery-two-loaves-2.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Asking the price of two loaves",
+            "ar": "السؤال عن سعر رغيفين",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                252,
+                789,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "two loaves",
+              "ar": "رغيفان",
+              "kind": "object",
+              "x": 66,
+              "y": 86
+            },
+            {
+              "en": "baker",
+              "ar": "خبّاز",
+              "kind": "object",
+              "x": 75,
+              "y": 27
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Slicing one loaf",
+          "ar": "تقطيع رغيف واحد",
+          "purposeEn": "Practise slicing one loaf.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: تقطيع رغيف واحد.",
+          "image": {
+            "id": "conv-life-bakery-two-loaves-3",
+            "path": "assets/scenes/conversations/life-bakery-two-loaves-3.webp",
+            "width": 392,
+            "height": 241,
+            "en": "Slicing one loaf",
+            "ar": "تقطيع رغيف واحد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                252,
+                1187,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bread knife",
+              "ar": "سكين خبز",
+              "kind": "object",
+              "x": 50,
+              "y": 72
+            },
+            {
+              "en": "cutting board",
+              "ar": "لوح تقطيع",
+              "kind": "object",
+              "x": 48,
+              "y": 93
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Packing the loaves separately",
+          "ar": "تعبئة الرغيفين كلٌّ في كيس",
+          "purposeEn": "Practise packing the loaves separately.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: تعبئة الرغيفين كلٌّ في كيس.",
+          "image": {
+            "id": "conv-life-bakery-two-loaves-4",
+            "path": "assets/scenes/conversations/life-bakery-two-loaves-4.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Packing the loaves separately",
+            "ar": "تعبئة الرغيفين كلٌّ في كيس",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                252,
+                1583,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "paper bags",
+              "ar": "أكياس ورقية",
+              "kind": "object",
+              "x": 57,
+              "y": 80
+            },
+            {
+              "en": "sliced bread",
+              "ar": "خبز مقطّع",
+              "kind": "object",
+              "x": 43,
+              "y": 59
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "group-bus-booking",
+      "goalAr": "حجز مقاعد للمجموعة",
+      "goalEn": "Booking seats for a group",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Asking about six seats",
+          "ar": "السؤال عن ستة مقاعد",
+          "purposeEn": "Practise asking about six seats.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: السؤال عن ستة مقاعد.",
+          "image": {
+            "id": "conv-life-group-bus-booking-1",
+            "path": "assets/scenes/conversations/life-group-bus-booking-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Asking about six seats",
+            "ar": "السؤال عن ستة مقاعد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                499,
+                393,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "coach",
+              "ar": "حافلة سفر",
+              "kind": "object",
+              "x": 60,
+              "y": 37
+            },
+            {
+              "en": "ticket counter",
+              "ar": "شباك التذاكر",
+              "kind": "object",
+              "x": 51,
+              "y": 86
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Finding seats across the aisle",
+          "ar": "العثور على مقاعد على جانبي الممر",
+          "purposeEn": "Practise finding seats across the aisle.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: العثور على مقاعد على جانبي الممر.",
+          "image": {
+            "id": "conv-life-group-bus-booking-2",
+            "path": "assets/scenes/conversations/life-group-bus-booking-2.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Finding seats across the aisle",
+            "ar": "العثور على مقاعد على جانبي الممر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                499,
+                789,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "aisle",
+              "ar": "ممر بين المقاعد",
+              "kind": "object",
+              "x": 49,
+              "y": 90
+            },
+            {
+              "en": "across the aisle",
+              "ar": "على الجانب الآخر من الممر",
+              "kind": "phrase",
+              "x": 70,
+              "y": 66
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Speaking to the driver",
+          "ar": "التحدّث إلى السائق",
+          "purposeEn": "Practise speaking to the driver.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: التحدّث إلى السائق.",
+          "image": {
+            "id": "conv-life-group-bus-booking-3",
+            "path": "assets/scenes/conversations/life-group-bus-booking-3.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Speaking to the driver",
+            "ar": "التحدّث إلى السائق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                499,
+                1187,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bus driver",
+              "ar": "سائق الحافلة",
+              "kind": "object",
+              "x": 64,
+              "y": 33
+            },
+            {
+              "en": "steering wheel",
+              "ar": "مقود",
+              "kind": "object",
+              "x": 82,
+              "y": 55
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Checking the front rows",
+          "ar": "التحقّق من الصفوف الأمامية",
+          "purposeEn": "Practise checking the front rows.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: التحقّق من الصفوف الأمامية.",
+          "image": {
+            "id": "conv-life-group-bus-booking-4",
+            "path": "assets/scenes/conversations/life-group-bus-booking-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Checking the front rows",
+            "ar": "التحقّق من الصفوف الأمامية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                499,
+                1583,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "seat map",
+              "ar": "مخطط المقاعد",
+              "kind": "object",
+              "x": 56,
+              "y": 68
+            },
+            {
+              "en": "front row",
+              "ar": "الصف الأمامي",
+              "kind": "object",
+              "x": 58,
+              "y": 47
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "old-school-reunion",
+      "goalAr": "لقاء زملاء المدرسة",
+      "goalEn": "A school reunion",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Greeting a former classmate",
+          "ar": "تحية زميل دراسة سابق",
+          "purposeEn": "Practise greeting a former classmate.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: تحية زميل دراسة سابق.",
+          "image": {
+            "id": "conv-life-old-school-reunion-1",
+            "path": "assets/scenes/conversations/life-old-school-reunion-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Greeting a former classmate",
+            "ar": "تحية زميل دراسة سابق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                747,
+                393,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "school reunion",
+              "ar": "لقاء زملاء المدرسة",
+              "kind": "phrase",
+              "x": 55,
+              "y": 43
+            },
+            {
+              "en": "former classmate",
+              "ar": "زميل دراسة سابق",
+              "kind": "object",
+              "x": 73,
+              "y": 26
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Remembering the room next door",
+          "ar": "تذكّر غرفة الصف المجاورة",
+          "purposeEn": "Practise remembering the room next door.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: تذكّر غرفة الصف المجاورة.",
+          "image": {
+            "id": "conv-life-old-school-reunion-2",
+            "path": "assets/scenes/conversations/life-old-school-reunion-2.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Remembering the room next door",
+            "ar": "تذكّر غرفة الصف المجاورة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                747,
+                789,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "next door",
+              "ar": "في الغرفة المجاورة",
+              "kind": "phrase",
+              "x": 61,
+              "y": 39
+            },
+            {
+              "en": "school desks",
+              "ar": "طاولات الدراسة",
+              "kind": "object",
+              "x": 36,
+              "y": 77
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Looking at old sketches",
+          "ar": "تصفّح الرسومات القديمة",
+          "purposeEn": "Practise looking at old sketches.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: تصفّح الرسومات القديمة.",
+          "image": {
+            "id": "conv-life-old-school-reunion-3",
+            "path": "assets/scenes/conversations/life-old-school-reunion-3.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Looking at old sketches",
+            "ar": "تصفّح الرسومات القديمة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                747,
+                1187,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "sketchbook",
+              "ar": "دفتر رسم",
+              "kind": "object",
+              "x": 55,
+              "y": 69
+            },
+            {
+              "en": "pencil sketch",
+              "ar": "رسم بقلم الرصاص",
+              "kind": "object",
+              "x": 72,
+              "y": 67
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Asking about a new drawing",
+          "ar": "السؤال عن رسم جديد",
+          "purposeEn": "Practise asking about a new drawing.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: السؤال عن رسم جديد.",
+          "image": {
+            "id": "conv-life-old-school-reunion-4",
+            "path": "assets/scenes/conversations/life-old-school-reunion-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Asking about a new drawing",
+            "ar": "السؤال عن رسم جديد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                747,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "sketch",
+              "ar": "يرسم رسمًا أوليًا",
+              "kind": "action",
+              "x": 58,
+              "y": 88
+            },
+            {
+              "en": "pencil case",
+              "ar": "مقلمة",
+              "kind": "object",
+              "x": 52,
+              "y": 96
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

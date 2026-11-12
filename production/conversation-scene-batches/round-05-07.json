@@ -1,0 +1,742 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "9a0524935616dab85be3fdca00fa07a40a5901640335ec83f60805972601d944"
+  },
+  "conversations": [
+    {
+      "id": "borrowed-bike-return",
+      "goalAr": "إعادة دراجة مستعارة",
+      "goalEn": "Returning a borrowed bike",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Arranging the bicycle return",
+          "ar": "الاتفاق على إعادة الدراجة",
+          "purposeEn": "Practise arranging the bicycle return.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: الاتفاق على إعادة الدراجة.",
+          "image": {
+            "id": "conv-life-borrowed-bike-return-1",
+            "path": "assets/scenes/conversations/life-borrowed-bike-return-1.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Arranging the bicycle return",
+            "ar": "الاتفاق على إعادة الدراجة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                393,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bicycle frame",
+              "ar": "هيكل الدراجة",
+              "kind": "object",
+              "x": 73,
+              "y": 82
+            },
+            {
+              "en": "borrow a bike",
+              "ar": "يستعير دراجة",
+              "kind": "phrase",
+              "x": 46,
+              "y": 53
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Leaving the bike by the door",
+          "ar": "ترك الدراجة بجوار الباب",
+          "purposeEn": "Practise leaving the bike by the door.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: ترك الدراجة بجوار الباب.",
+          "image": {
+            "id": "conv-life-borrowed-bike-return-2",
+            "path": "assets/scenes/conversations/life-borrowed-bike-return-2.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Leaving the bike by the door",
+            "ar": "ترك الدراجة بجوار الباب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                3,
+                791,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "cable lock",
+              "ar": "قفل بسلك",
+              "kind": "object",
+              "x": 39,
+              "y": 69
+            },
+            {
+              "en": "front door",
+              "ar": "الباب الأمامي",
+              "kind": "object",
+              "x": 84,
+              "y": 31
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Locking the bicycle and texting",
+          "ar": "قفل الدراجة وإرسال رسالة",
+          "purposeEn": "Practise locking the bicycle and texting.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: قفل الدراجة وإرسال رسالة.",
+          "image": {
+            "id": "conv-life-borrowed-bike-return-3",
+            "path": "assets/scenes/conversations/life-borrowed-bike-return-3.webp",
+            "width": 388,
+            "height": 243,
+            "en": "Locking the bicycle and texting",
+            "ar": "قفل الدراجة وإرسال رسالة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                3,
+                1185,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "secure a bicycle",
+              "ar": "يثبّت الدراجة بقفل",
+              "kind": "phrase",
+              "x": 80,
+              "y": 89
+            },
+            {
+              "en": "text someone",
+              "ar": "يرسل رسالة لشخص",
+              "kind": "phrase",
+              "x": 54,
+              "y": 67
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Handing over the lock key",
+          "ar": "تسليم مفتاح القفل",
+          "purposeEn": "Practise handing over the lock key.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: تسليم مفتاح القفل.",
+          "image": {
+            "id": "conv-life-borrowed-bike-return-4",
+            "path": "assets/scenes/conversations/life-borrowed-bike-return-4.webp",
+            "width": 392,
+            "height": 243,
+            "en": "Handing over the lock key",
+            "ar": "تسليم مفتاح القفل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1191,
+                3,
+                1583,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "lock key",
+              "ar": "مفتاح القفل",
+              "kind": "object",
+              "x": 54,
+              "y": 50
+            },
+            {
+              "en": "hand over",
+              "ar": "يناول",
+              "kind": "phrase",
+              "x": 60,
+              "y": 56
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "saturday-train-plans",
+      "goalAr": "خطة قطار السبت",
+      "goalEn": "Saturday train plans",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Considering a drive to the coast",
+          "ar": "التفكير في الذهاب إلى الساحل بالسيارة",
+          "purposeEn": "Practise considering a drive to the coast.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: التفكير في الذهاب إلى الساحل بالسيارة.",
+          "image": {
+            "id": "conv-life-saturday-train-plans-1",
+            "path": "assets/scenes/conversations/life-saturday-train-plans-1.webp",
+            "width": 390,
+            "height": 240,
+            "en": "Considering a drive to the coast",
+            "ar": "التفكير في الذهاب إلى الساحل بالسيارة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                252,
+                393,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "road map",
+              "ar": "خريطة طرق",
+              "kind": "object",
+              "x": 53,
+              "y": 83
+            },
+            {
+              "en": "car keys",
+              "ar": "مفاتيح السيارة",
+              "kind": "object",
+              "x": 79,
+              "y": 92
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Booking train seats together",
+          "ar": "حجز مقاعد القطار معًا",
+          "purposeEn": "Practise booking train seats together.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: حجز مقاعد القطار معًا.",
+          "image": {
+            "id": "conv-life-saturday-train-plans-2",
+            "path": "assets/scenes/conversations/life-saturday-train-plans-2.webp",
+            "width": 391,
+            "height": 240,
+            "en": "Booking train seats together",
+            "ar": "حجز مقاعد القطار معًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                252,
+                791,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ticket machine",
+              "ar": "آلة تذاكر",
+              "kind": "object",
+              "x": 21,
+              "y": 58
+            },
+            {
+              "en": "book together",
+              "ar": "يحجز مع شخص آخر",
+              "kind": "phrase",
+              "x": 34,
+              "y": 72
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Planning the evening return",
+          "ar": "التخطيط للعودة مساءً",
+          "purposeEn": "Practise planning the evening return.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: التخطيط للعودة مساءً.",
+          "image": {
+            "id": "conv-life-saturday-train-plans-3",
+            "path": "assets/scenes/conversations/life-saturday-train-plans-3.webp",
+            "width": 388,
+            "height": 240,
+            "en": "Planning the evening return",
+            "ar": "التخطيط للعودة مساءً",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                252,
+                1185,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "return timetable",
+              "ar": "جدول رحلات العودة",
+              "kind": "object",
+              "x": 35,
+              "y": 86
+            },
+            {
+              "en": "bus connection",
+              "ar": "وصلة بالحافلة",
+              "kind": "phrase",
+              "x": 83,
+              "y": 27
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Checking the last bus",
+          "ar": "التحقق من موعد الحافلة الأخيرة",
+          "purposeEn": "Practise checking the last bus.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: التحقق من موعد الحافلة الأخيرة.",
+          "image": {
+            "id": "conv-life-saturday-train-plans-4",
+            "path": "assets/scenes/conversations/life-saturday-train-plans-4.webp",
+            "width": 392,
+            "height": 240,
+            "en": "Checking the last bus",
+            "ar": "التحقق من موعد الحافلة الأخيرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1191,
+                252,
+                1583,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "check departure times",
+              "ar": "يتحقق من مواعيد المغادرة",
+              "kind": "phrase",
+              "x": 53,
+              "y": 75
+            },
+            {
+              "en": "station waiting area",
+              "ar": "منطقة انتظار المحطة",
+              "kind": "object",
+              "x": 86,
+              "y": 26
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "airport-pickup-time",
+      "goalAr": "موعد استقبال في المطار",
+      "goalEn": "An airport pickup time",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Waiting for airport pickup",
+          "ar": "الانتظار للاستقبال في المطار",
+          "purposeEn": "Practise waiting for airport pickup.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: الانتظار للاستقبال في المطار.",
+          "image": {
+            "id": "conv-life-airport-pickup-time-1",
+            "path": "assets/scenes/conversations/life-airport-pickup-time-1.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Waiting for airport pickup",
+            "ar": "الانتظار للاستقبال في المطار",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                498,
+                393,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "arrivals hall",
+              "ar": "صالة الوصول",
+              "kind": "object",
+              "x": 74,
+              "y": 39
+            },
+            {
+              "en": "carry-on bag",
+              "ar": "حقيبة مقصورة",
+              "kind": "object",
+              "x": 45,
+              "y": 89
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Checking whether the flight has landed",
+          "ar": "التحقق من هبوط الطائرة",
+          "purposeEn": "Practise checking whether the flight has landed.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: التحقق من هبوط الطائرة.",
+          "image": {
+            "id": "conv-life-airport-pickup-time-2",
+            "path": "assets/scenes/conversations/life-airport-pickup-time-2.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Checking whether the flight has landed",
+            "ar": "التحقق من هبوط الطائرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                498,
+                791,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "flight information board",
+              "ar": "لوحة معلومات الرحلات",
+              "kind": "object",
+              "x": 75,
+              "y": 19
+            },
+            {
+              "en": "look up",
+              "ar": "ينظر إلى أعلى",
+              "kind": "phrase",
+              "x": 59,
+              "y": 45
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Checking traffic near arrivals",
+          "ar": "التحقق من حركة السير قرب صالة الوصول",
+          "purposeEn": "Practise checking traffic near arrivals.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: التحقق من حركة السير قرب صالة الوصول.",
+          "image": {
+            "id": "conv-life-airport-pickup-time-3",
+            "path": "assets/scenes/conversations/life-airport-pickup-time-3.webp",
+            "width": 388,
+            "height": 243,
+            "en": "Checking traffic near arrivals",
+            "ar": "التحقق من حركة السير قرب صالة الوصول",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                498,
+                1185,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "traffic cones",
+              "ar": "أقماع مرورية",
+              "kind": "object",
+              "x": 72,
+              "y": 45
+            },
+            {
+              "en": "roadworks",
+              "ar": "أعمال على الطريق",
+              "kind": "object",
+              "x": 86,
+              "y": 40
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Choosing an easier pickup spot",
+          "ar": "اختيار مكان أسهل للاستقبال",
+          "purposeEn": "Practise choosing an easier pickup spot.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: اختيار مكان أسهل للاستقبال.",
+          "image": {
+            "id": "conv-life-airport-pickup-time-4",
+            "path": "assets/scenes/conversations/life-airport-pickup-time-4.webp",
+            "width": 392,
+            "height": 243,
+            "en": "Choosing an easier pickup spot",
+            "ar": "اختيار مكان أسهل للاستقبال",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1191,
+                498,
+                1583,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "map pin",
+              "ar": "دبوس تحديد الموقع",
+              "kind": "object",
+              "x": 78,
+              "y": 62
+            },
+            {
+              "en": "pickup point",
+              "ar": "نقطة الالتقاء للركوب",
+              "kind": "phrase",
+              "x": 78,
+              "y": 72
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "weather-for-the-fair",
+      "goalAr": "الطقس يوم المعرض",
+      "goalEn": "Weather for the fair",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Deciding what to bring to the fair",
+          "ar": "تحديد ما ينبغي إحضاره إلى المعرض",
+          "purposeEn": "Practise deciding what to bring to the fair.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: تحديد ما ينبغي إحضاره إلى المعرض.",
+          "image": {
+            "id": "conv-life-weather-for-the-fair-1",
+            "path": "assets/scenes/conversations/life-weather-for-the-fair-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Deciding what to bring to the fair",
+            "ar": "تحديد ما ينبغي إحضاره إلى المعرض",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                747,
+                393,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "folded umbrella",
+              "ar": "مظلّة مطوية",
+              "kind": "object",
+              "x": 52,
+              "y": 85
+            },
+            {
+              "en": "umbrella handle",
+              "ar": "مقبض المظلّة",
+              "kind": "object",
+              "x": 25,
+              "y": 86
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Trying on a rain jacket",
+          "ar": "تجربة معطف المطر",
+          "purposeEn": "Practise trying on a rain jacket.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: تجربة معطف المطر.",
+          "image": {
+            "id": "conv-life-weather-for-the-fair-2",
+            "path": "assets/scenes/conversations/life-weather-for-the-fair-2.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Trying on a rain jacket",
+            "ar": "تجربة معطف المطر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                747,
+                791,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "hood",
+              "ar": "قلنسوة",
+              "kind": "object",
+              "x": 23,
+              "y": 19
+            },
+            {
+              "en": "overcast",
+              "ar": "غائم",
+              "kind": "description",
+              "x": 56,
+              "y": 23
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Waiting at the covered entrance",
+          "ar": "الانتظار عند المدخل المسقوف",
+          "purposeEn": "Practise waiting at the covered entrance.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: الانتظار عند المدخل المسقوف.",
+          "image": {
+            "id": "conv-life-weather-for-the-fair-3",
+            "path": "assets/scenes/conversations/life-weather-for-the-fair-3.webp",
+            "width": 388,
+            "height": 242,
+            "en": "Waiting at the covered entrance",
+            "ar": "الانتظار عند المدخل المسقوف",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                747,
+                1185,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "covered entrance",
+              "ar": "مدخل مسقوف",
+              "kind": "object",
+              "x": 52,
+              "y": 18
+            },
+            {
+              "en": "waterproof bag",
+              "ar": "حقيبة مقاومة للماء",
+              "kind": "object",
+              "x": 28,
+              "y": 83
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Keeping the signs dry",
+          "ar": "حماية اللافتات من البلل",
+          "purposeEn": "Practise keeping the signs dry.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: حماية اللافتات من البلل.",
+          "image": {
+            "id": "conv-life-weather-for-the-fair-4",
+            "path": "assets/scenes/conversations/life-weather-for-the-fair-4.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Keeping the signs dry",
+            "ar": "حماية اللافتات من البلل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1191,
+                747,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "paper signs",
+              "ar": "لافتات ورقية",
+              "kind": "object",
+              "x": 49,
+              "y": 65
+            },
+            {
+              "en": "keep dry",
+              "ar": "يبقي جافًا",
+              "kind": "phrase",
+              "x": 55,
+              "y": 80
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

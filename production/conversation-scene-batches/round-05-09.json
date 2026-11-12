@@ -1,0 +1,742 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "6ca2f27f879d8286f7d24dccb1aa3085301d6d76c36a13ff70d2c18bdbbfa963"
+  },
+  "conversations": [
+    {
+      "id": "interview-work-schedule",
+      "goalAr": "مواعيد العمل في المقابلة",
+      "goalEn": "Discussing work hours in an interview",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Asking about the start date",
+          "ar": "السؤال عن تاريخ بدء العمل",
+          "purposeEn": "Practise asking about the start date.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: السؤال عن تاريخ بدء العمل.",
+          "image": {
+            "id": "conv-life-interview-work-schedule-1",
+            "path": "assets/scenes/conversations/life-interview-work-schedule-1.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Asking about the start date",
+            "ar": "السؤال عن تاريخ بدء العمل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                394,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "start date",
+              "ar": "تاريخ البدء",
+              "kind": "phrase",
+              "x": 68,
+              "y": 77
+            },
+            {
+              "en": "desk calendar",
+              "ar": "تقويم مكتبي",
+              "kind": "object",
+              "x": 67,
+              "y": 71
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Discussing available weekend shifts",
+          "ar": "مناقشة مناوبات نهاية الأسبوع المتاحة",
+          "purposeEn": "Practise discussing available weekend shifts.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: مناقشة مناوبات نهاية الأسبوع المتاحة.",
+          "image": {
+            "id": "conv-life-interview-work-schedule-2",
+            "path": "assets/scenes/conversations/life-interview-work-schedule-2.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Discussing available weekend shifts",
+            "ar": "مناقشة مناوبات نهاية الأسبوع المتاحة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                3,
+                790,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "weekend shift",
+              "ar": "مناوبة نهاية الأسبوع",
+              "kind": "phrase",
+              "x": 59,
+              "y": 84
+            },
+            {
+              "en": "shift chart",
+              "ar": "جدول المناوبات",
+              "kind": "object",
+              "x": 62,
+              "y": 91
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Comparing early and late shifts",
+          "ar": "مقارنة المناوبة المبكّرة والمتأخّرة",
+          "purposeEn": "Practise comparing early and late shifts.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: مقارنة المناوبة المبكّرة والمتأخّرة.",
+          "image": {
+            "id": "conv-life-interview-work-schedule-3",
+            "path": "assets/scenes/conversations/life-interview-work-schedule-3.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Comparing early and late shifts",
+            "ar": "مقارنة المناوبة المبكّرة والمتأخّرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                3,
+                1187,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "planning board",
+              "ar": "لوحة التخطيط",
+              "kind": "object",
+              "x": 60,
+              "y": 27
+            },
+            {
+              "en": "early shift",
+              "ar": "مناوبة مبكّرة",
+              "kind": "phrase",
+              "x": 55,
+              "y": 36
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Getting approval for a swap",
+          "ar": "الحصول على الموافقة لتبديل المناوبة",
+          "purposeEn": "Practise getting approval for a swap.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: الحصول على الموافقة لتبديل المناوبة.",
+          "image": {
+            "id": "conv-life-interview-work-schedule-4",
+            "path": "assets/scenes/conversations/life-interview-work-schedule-4.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Getting approval for a swap",
+            "ar": "الحصول على الموافقة لتبديل المناوبة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                3,
+                1583,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "supervisor",
+              "ar": "مشرفة",
+              "kind": "object",
+              "x": 49,
+              "y": 33
+            },
+            {
+              "en": "cover a shift",
+              "ar": "يغطي مناوبة",
+              "kind": "phrase",
+              "x": 58,
+              "y": 71
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "interview-learning-gap",
+      "goalAr": "مهارة قيد التعلّم",
+      "goalEn": "A skill you are still learning",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Talking about scheduling software",
+          "ar": "الحديث عن برنامج جدولة المواعيد",
+          "purposeEn": "Practise talking about scheduling software.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: الحديث عن برنامج جدولة المواعيد.",
+          "image": {
+            "id": "conv-life-interview-learning-gap-1",
+            "path": "assets/scenes/conversations/life-interview-learning-gap-1.webp",
+            "width": 391,
+            "height": 229,
+            "en": "Talking about scheduling software",
+            "ar": "الحديث عن برنامج جدولة المواعيد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                250,
+                394,
+                479
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "scheduling software",
+              "ar": "برنامج جدولة",
+              "kind": "object",
+              "x": 79,
+              "y": 75
+            },
+            {
+              "en": "appointment calendar",
+              "ar": "تقويم المواعيد",
+              "kind": "object",
+              "x": 76,
+              "y": 70
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Practising with a planner",
+          "ar": "التدرّب باستخدام دفتر التخطيط",
+          "purposeEn": "Practise practising with a planner.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: التدرّب باستخدام دفتر التخطيط.",
+          "image": {
+            "id": "conv-life-interview-learning-gap-2",
+            "path": "assets/scenes/conversations/life-interview-learning-gap-2.webp",
+            "width": 390,
+            "height": 229,
+            "en": "Practising with a planner",
+            "ar": "التدرّب باستخدام دفتر التخطيط",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                250,
+                790,
+                479
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "paper planner",
+              "ar": "دفتر تخطيط ورقي",
+              "kind": "object",
+              "x": 29,
+              "y": 91
+            },
+            {
+              "en": "practise at home",
+              "ar": "يتدرّب في المنزل",
+              "kind": "phrase",
+              "x": 56,
+              "y": 70
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Making a test schedule",
+          "ar": "إنشاء جدول تجريبي",
+          "purposeEn": "Practise making a test schedule.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: إنشاء جدول تجريبي.",
+          "image": {
+            "id": "conv-life-interview-learning-gap-3",
+            "path": "assets/scenes/conversations/life-interview-learning-gap-3.webp",
+            "width": 391,
+            "height": 229,
+            "en": "Making a test schedule",
+            "ar": "إنشاء جدول تجريبي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                250,
+                1187,
+                479
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "test schedule",
+              "ar": "جدول تجريبي",
+              "kind": "object",
+              "x": 60,
+              "y": 46
+            },
+            {
+              "en": "sample appointment",
+              "ar": "موعد تجريبي",
+              "kind": "object",
+              "x": 88,
+              "y": 58
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Testing a booking reminder",
+          "ar": "تجربة تذكير بموعد الحجز",
+          "purposeEn": "Practise testing a booking reminder.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: تجربة تذكير بموعد الحجز.",
+          "image": {
+            "id": "conv-life-interview-learning-gap-4",
+            "path": "assets/scenes/conversations/life-interview-learning-gap-4.webp",
+            "width": 390,
+            "height": 229,
+            "en": "Testing a booking reminder",
+            "ar": "تجربة تذكير بموعد الحجز",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                250,
+                1583,
+                479
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "notification bell",
+              "ar": "رمز جرس التنبيه",
+              "kind": "object",
+              "x": 87,
+              "y": 69
+            },
+            {
+              "en": "test a reminder",
+              "ar": "يختبر تذكيرًا",
+              "kind": "phrase",
+              "x": 68,
+              "y": 62
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "interview-team-story",
+      "goalAr": "قصة تعاون في المقابلة",
+      "goalEn": "A teamwork story in an interview",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Recalling a team disagreement",
+          "ar": "تذكّر خلاف داخل الفريق",
+          "purposeEn": "Practise recalling a team disagreement.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: تذكّر خلاف داخل الفريق.",
+          "image": {
+            "id": "conv-life-interview-team-story-1",
+            "path": "assets/scenes/conversations/life-interview-team-story-1.webp",
+            "width": 391,
+            "height": 250,
+            "en": "Recalling a team disagreement",
+            "ar": "تذكّر خلاف داخل الفريق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                485,
+                394,
+                735
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "recall an example",
+              "ar": "يسترجع مثالًا",
+              "kind": "phrase",
+              "x": 36,
+              "y": 65
+            },
+            {
+              "en": "interview notes",
+              "ar": "ملاحظات المقابلة",
+              "kind": "object",
+              "x": 62,
+              "y": 92
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Requesting the same day off",
+          "ar": "طلب اليوم نفسه إجازةً",
+          "purposeEn": "Practise requesting the same day off.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: طلب اليوم نفسه إجازةً.",
+          "image": {
+            "id": "conv-life-interview-team-story-2",
+            "path": "assets/scenes/conversations/life-interview-team-story-2.webp",
+            "width": 390,
+            "height": 250,
+            "en": "Requesting the same day off",
+            "ar": "طلب اليوم نفسه إجازةً",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                485,
+                790,
+                735
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask for a day off",
+              "ar": "يطلب يوم إجازة",
+              "kind": "phrase",
+              "x": 41,
+              "y": 54
+            },
+            {
+              "en": "sticky note",
+              "ar": "ورقة لاصقة",
+              "kind": "object",
+              "x": 59,
+              "y": 38
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Agreeing to swap shifts",
+          "ar": "الاتفاق على تبديل المناوبات",
+          "purposeEn": "Practise agreeing to swap shifts.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: الاتفاق على تبديل المناوبات.",
+          "image": {
+            "id": "conv-life-interview-team-story-3",
+            "path": "assets/scenes/conversations/life-interview-team-story-3.webp",
+            "width": 391,
+            "height": 250,
+            "en": "Agreeing to swap shifts",
+            "ar": "الاتفاق على تبديل المناوبات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                485,
+                1187,
+                735
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "swap shifts",
+              "ar": "يبدّل المناوبات",
+              "kind": "phrase",
+              "x": 48,
+              "y": 40
+            },
+            {
+              "en": "thumbs up",
+              "ar": "إشارة الموافقة بالإبهام",
+              "kind": "phrase",
+              "x": 69,
+              "y": 60
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Posting the final schedule",
+          "ar": "تعليق جدول المناوبات النهائي",
+          "purposeEn": "Practise posting the final schedule.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: تعليق جدول المناوبات النهائي.",
+          "image": {
+            "id": "conv-life-interview-team-story-4",
+            "path": "assets/scenes/conversations/life-interview-team-story-4.webp",
+            "width": 390,
+            "height": 250,
+            "en": "Posting the final schedule",
+            "ar": "تعليق جدول المناوبات النهائي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                485,
+                1583,
+                735
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "noticeboard",
+              "ar": "لوحة إعلانات",
+              "kind": "object",
+              "x": 46,
+              "y": 34
+            },
+            {
+              "en": "pin up a notice",
+              "ar": "يثبّت إعلانًا على لوحة",
+              "kind": "phrase",
+              "x": 33,
+              "y": 22
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "interview-feedback",
+      "goalAr": "التعلّم من ملاحظة في العمل",
+      "goalEn": "Learning from feedback at work",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Talking about a mistake",
+          "ar": "الحديث عن خطأ سابق",
+          "purposeEn": "Practise talking about a mistake.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: الحديث عن خطأ سابق.",
+          "image": {
+            "id": "conv-life-interview-feedback-1",
+            "path": "assets/scenes/conversations/life-interview-feedback-1.webp",
+            "width": 391,
+            "height": 248,
+            "en": "Talking about a mistake",
+            "ar": "الحديث عن خطأ سابق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                741,
+                394,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "draft report",
+              "ar": "مسودة تقرير",
+              "kind": "object",
+              "x": 57,
+              "y": 74
+            },
+            {
+              "en": "admit a mistake",
+              "ar": "يعترف بخطأ",
+              "kind": "phrase",
+              "x": 30,
+              "y": 72
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Spotting a mismatch",
+          "ar": "ملاحظة عدم تطابق الأرقام",
+          "purposeEn": "Practise spotting a mismatch.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: ملاحظة عدم تطابق الأرقام.",
+          "image": {
+            "id": "conv-life-interview-feedback-2",
+            "path": "assets/scenes/conversations/life-interview-feedback-2.webp",
+            "width": 390,
+            "height": 248,
+            "en": "Spotting a mismatch",
+            "ar": "ملاحظة عدم تطابق الأرقام",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                741,
+                790,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "calculator",
+              "ar": "آلة حاسبة",
+              "kind": "object",
+              "x": 70,
+              "y": 91
+            },
+            {
+              "en": "concerned",
+              "ar": "قلق",
+              "kind": "description",
+              "x": 49,
+              "y": 25
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Asking for a second check",
+          "ar": "طلب مراجعة ثانية",
+          "purposeEn": "Practise asking for a second check.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: طلب مراجعة ثانية.",
+          "image": {
+            "id": "conv-life-interview-feedback-3",
+            "path": "assets/scenes/conversations/life-interview-feedback-3.webp",
+            "width": 391,
+            "height": 248,
+            "en": "Asking for a second check",
+            "ar": "طلب مراجعة ثانية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                741,
+                1187,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "double-check",
+              "ar": "يتحقق مرة أخرى",
+              "kind": "action",
+              "x": 66,
+              "y": 73
+            },
+            {
+              "en": "review a draft",
+              "ar": "يراجع مسودة",
+              "kind": "phrase",
+              "x": 59,
+              "y": 84
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Comparing totals with the records",
+          "ar": "مقارنة المجاميع بالسجلات",
+          "purposeEn": "Practise comparing totals with the records.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: مقارنة المجاميع بالسجلات.",
+          "image": {
+            "id": "conv-life-interview-feedback-4",
+            "path": "assets/scenes/conversations/life-interview-feedback-4.webp",
+            "width": 390,
+            "height": 248,
+            "en": "Comparing totals with the records",
+            "ar": "مقارنة المجاميع بالسجلات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                741,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ledger",
+              "ar": "دفتر حسابات",
+              "kind": "object",
+              "x": 77,
+              "y": 87
+            },
+            {
+              "en": "compare totals",
+              "ar": "يقارن المجاميع",
+              "kind": "phrase",
+              "x": 71,
+              "y": 73
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

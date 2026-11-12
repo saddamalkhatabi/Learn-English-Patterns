@@ -1,0 +1,742 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "2c304743f1499ebb7679855221ff86865d9ab8490849e5682774a7a2294131fb"
+  },
+  "conversations": [
+    {
+      "id": "museum-audio-guide",
+      "goalAr": "استعارة دليل صوتي",
+      "goalEn": "Borrowing an audio guide",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Asking about the audio guide",
+          "ar": "السؤال عن الدليل الصوتي",
+          "purposeEn": "Practise asking about the audio guide.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: السؤال عن الدليل الصوتي.",
+          "image": {
+            "id": "conv-life-museum-audio-guide-1",
+            "path": "assets/scenes/conversations/life-museum-audio-guide-1.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Asking about the audio guide",
+            "ar": "السؤال عن الدليل الصوتي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                394,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "audio guide",
+              "ar": "دليل صوتي",
+              "kind": "object",
+              "x": 64,
+              "y": 84
+            },
+            {
+              "en": "admission ticket",
+              "ar": "تذكرة دخول",
+              "kind": "object",
+              "x": 83,
+              "y": 87
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Listening to a sample",
+          "ar": "الاستماع إلى عيّنة",
+          "purposeEn": "Practise listening to a sample.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: الاستماع إلى عيّنة.",
+          "image": {
+            "id": "conv-life-museum-audio-guide-2",
+            "path": "assets/scenes/conversations/life-museum-audio-guide-2.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Listening to a sample",
+            "ar": "الاستماع إلى عيّنة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                3,
+                789,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "over-ear headphones",
+              "ar": "سمّاعات تغطّي الأذنين",
+              "kind": "object",
+              "x": 25,
+              "y": 34
+            },
+            {
+              "en": "listen to a sample",
+              "ar": "يستمع إلى عيّنة",
+              "kind": "phrase",
+              "x": 23,
+              "y": 55
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Finding where to return it",
+          "ar": "تحديد مكان إعادة الدليل",
+          "purposeEn": "Practise finding where to return it.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: تحديد مكان إعادة الدليل.",
+          "image": {
+            "id": "conv-life-museum-audio-guide-3",
+            "path": "assets/scenes/conversations/life-museum-audio-guide-3.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Finding where to return it",
+            "ar": "تحديد مكان إعادة الدليل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                3,
+                1186,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "return tray",
+              "ar": "صينية إرجاع الأجهزة",
+              "kind": "object",
+              "x": 70,
+              "y": 82
+            },
+            {
+              "en": "borrow a device",
+              "ar": "يستعير جهازًا",
+              "kind": "phrase",
+              "x": 53,
+              "y": 62
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Playing an exhibit recording",
+          "ar": "تشغيل تسجيل عن المعروض",
+          "purposeEn": "Practise playing an exhibit recording.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: تشغيل تسجيل عن المعروض.",
+          "image": {
+            "id": "conv-life-museum-audio-guide-4",
+            "path": "assets/scenes/conversations/life-museum-audio-guide-4.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Playing an exhibit recording",
+            "ar": "تشغيل تسجيل عن المعروض",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                3,
+                1583,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ceramic vase",
+              "ar": "مزهرية خزفية",
+              "kind": "object",
+              "x": 14,
+              "y": 42
+            },
+            {
+              "en": "press play",
+              "ar": "يضغط زر التشغيل",
+              "kind": "phrase",
+              "x": 57,
+              "y": 65
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym-water-break",
+      "goalAr": "استراحة ماء في النادي",
+      "goalEn": "A water break at the gym",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Asking to pause for a minute",
+          "ar": "طلب التوقف لدقيقة",
+          "purposeEn": "Practise asking to pause for a minute.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: طلب التوقف لدقيقة.",
+          "image": {
+            "id": "conv-life-gym-water-break-1",
+            "path": "assets/scenes/conversations/life-gym-water-break-1.webp",
+            "width": 391,
+            "height": 244,
+            "en": "Asking to pause for a minute",
+            "ar": "طلب التوقف لدقيقة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                250,
+                394,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "take a break",
+              "ar": "يأخذ استراحة",
+              "kind": "phrase",
+              "x": 43,
+              "y": 40
+            },
+            {
+              "en": "folded towel",
+              "ar": "منشفة مطوية",
+              "kind": "object",
+              "x": 51,
+              "y": 76
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Getting water by the door",
+          "ar": "شرب الماء قرب الباب",
+          "purposeEn": "Practise getting water by the door.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: شرب الماء قرب الباب.",
+          "image": {
+            "id": "conv-life-gym-water-break-2",
+            "path": "assets/scenes/conversations/life-gym-water-break-2.webp",
+            "width": 389,
+            "height": 244,
+            "en": "Getting water by the door",
+            "ar": "شرب الماء قرب الباب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                250,
+                789,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "water fountain",
+              "ar": "نافورة مياه للشرب",
+              "kind": "object",
+              "x": 38,
+              "y": 75
+            },
+            {
+              "en": "refillable bottle",
+              "ar": "زجاجة قابلة لإعادة التعبئة",
+              "kind": "object",
+              "x": 13,
+              "y": 61
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Demonstrating an easy stretch",
+          "ar": "عرض تمرين إطالة بسيط",
+          "purposeEn": "Practise demonstrating an easy stretch.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: عرض تمرين إطالة بسيط.",
+          "image": {
+            "id": "conv-life-gym-water-break-3",
+            "path": "assets/scenes/conversations/life-gym-water-break-3.webp",
+            "width": 391,
+            "height": 244,
+            "en": "Demonstrating an easy stretch",
+            "ar": "عرض تمرين إطالة بسيط",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                250,
+                1186,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "shoulder stretch",
+              "ar": "تمرين إطالة الكتف",
+              "kind": "phrase",
+              "x": 66,
+              "y": 40
+            },
+            {
+              "en": "trainer",
+              "ar": "مدرّب",
+              "kind": "object",
+              "x": 66,
+              "y": 18
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Stretching while seated",
+          "ar": "الإطالة أثناء الجلوس",
+          "purposeEn": "Practise stretching while seated.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: الإطالة أثناء الجلوس.",
+          "image": {
+            "id": "conv-life-gym-water-break-4",
+            "path": "assets/scenes/conversations/life-gym-water-break-4.webp",
+            "width": 391,
+            "height": 244,
+            "en": "Stretching while seated",
+            "ar": "الإطالة أثناء الجلوس",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                250,
+                1583,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "gym bench",
+              "ar": "مقعد في الصالة الرياضية",
+              "kind": "object",
+              "x": 25,
+              "y": 93
+            },
+            {
+              "en": "stretch while seated",
+              "ar": "يؤدي تمرين إطالة وهو جالس",
+              "kind": "phrase",
+              "x": 65,
+              "y": 50
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "laptop-at-reception",
+      "goalAr": "تسليم الحاسوب للصيانة",
+      "goalEn": "Leaving a laptop for repair",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Bringing in a laptop that will not charge",
+          "ar": "إحضار حاسوب محمول لا يشحن",
+          "purposeEn": "Practise bringing in a laptop that will not charge.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: إحضار حاسوب محمول لا يشحن.",
+          "image": {
+            "id": "conv-life-laptop-at-reception-1",
+            "path": "assets/scenes/conversations/life-laptop-at-reception-1.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Bringing in a laptop that will not charge",
+            "ar": "إحضار حاسوب محمول لا يشحن",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                500,
+                394,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "unplugged charger",
+              "ar": "شاحن مفصول",
+              "kind": "object",
+              "x": 77,
+              "y": 86
+            },
+            {
+              "en": "laptop",
+              "ar": "حاسوب محمول",
+              "kind": "object",
+              "x": 40,
+              "y": 78
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Testing the charger",
+          "ar": "اختبار الشاحن",
+          "purposeEn": "Practise testing the charger.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: اختبار الشاحن.",
+          "image": {
+            "id": "conv-life-laptop-at-reception-2",
+            "path": "assets/scenes/conversations/life-laptop-at-reception-2.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Testing the charger",
+            "ar": "اختبار الشاحن",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                500,
+                789,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "power adapter",
+              "ar": "محوّل طاقة",
+              "kind": "object",
+              "x": 56,
+              "y": 80
+            },
+            {
+              "en": "multimeter",
+              "ar": "جهاز قياس كهربائي متعدّد",
+              "kind": "object",
+              "x": 87,
+              "y": 78
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Finding another adapter",
+          "ar": "البحث عن محوّل بديل",
+          "purposeEn": "Practise finding another adapter.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: البحث عن محوّل بديل.",
+          "image": {
+            "id": "conv-life-laptop-at-reception-3",
+            "path": "assets/scenes/conversations/life-laptop-at-reception-3.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Finding another adapter",
+            "ar": "البحث عن محوّل بديل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                500,
+                1186,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "spare adapter",
+              "ar": "محوّل احتياطي",
+              "kind": "object",
+              "x": 65,
+              "y": 48
+            },
+            {
+              "en": "storage bins",
+              "ar": "صناديق تخزين",
+              "kind": "object",
+              "x": 89,
+              "y": 68
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Checking whether the laptop charges",
+          "ar": "التحقق من شحن الحاسوب",
+          "purposeEn": "Practise checking whether the laptop charges.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: التحقق من شحن الحاسوب.",
+          "image": {
+            "id": "conv-life-laptop-at-reception-4",
+            "path": "assets/scenes/conversations/life-laptop-at-reception-4.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Checking whether the laptop charges",
+            "ar": "التحقق من شحن الحاسوب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                500,
+                1583,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "power cable",
+              "ar": "سلك طاقة",
+              "kind": "object",
+              "x": 50,
+              "y": 87
+            },
+            {
+              "en": "working screen",
+              "ar": "شاشة تعمل",
+              "kind": "object",
+              "x": 77,
+              "y": 65
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "appointment-reminder",
+      "goalAr": "تأكيد موعد الزيارة",
+      "goalEn": "Confirming an appointment",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Asking when the appointment is",
+          "ar": "السؤال عن موعد زيارة الممرّضة",
+          "purposeEn": "Practise asking when the appointment is.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: السؤال عن موعد زيارة الممرّضة.",
+          "image": {
+            "id": "conv-life-appointment-reminder-1",
+            "path": "assets/scenes/conversations/life-appointment-reminder-1.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Asking when the appointment is",
+            "ar": "السؤال عن موعد زيارة الممرّضة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                747,
+                394,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "patient",
+              "ar": "مريض",
+              "kind": "object",
+              "x": 25,
+              "y": 33
+            },
+            {
+              "en": "clinic reception",
+              "ar": "استقبال العيادة",
+              "kind": "object",
+              "x": 67,
+              "y": 84
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Checking the time and identification",
+          "ar": "التحقق من الموعد والهوية",
+          "purposeEn": "Practise checking the time and identification.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: التحقق من الموعد والهوية.",
+          "image": {
+            "id": "conv-life-appointment-reminder-2",
+            "path": "assets/scenes/conversations/life-appointment-reminder-2.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Checking the time and identification",
+            "ar": "التحقق من الموعد والهوية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                747,
+                789,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ID card",
+              "ar": "بطاقة هوية",
+              "kind": "object",
+              "x": 44,
+              "y": 77
+            },
+            {
+              "en": "appointment date",
+              "ar": "تاريخ الموعد",
+              "kind": "phrase",
+              "x": 77,
+              "y": 65
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Showing a digital confirmation",
+          "ar": "عرض التأكيد الرقمي",
+          "purposeEn": "Practise showing a digital confirmation.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: عرض التأكيد الرقمي.",
+          "image": {
+            "id": "conv-life-appointment-reminder-3",
+            "path": "assets/scenes/conversations/life-appointment-reminder-3.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Showing a digital confirmation",
+            "ar": "عرض التأكيد الرقمي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                747,
+                1186,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "confirmation screen",
+              "ar": "شاشة تأكيد",
+              "kind": "object",
+              "x": 49,
+              "y": 57
+            },
+            {
+              "en": "check mark",
+              "ar": "علامة صح",
+              "kind": "object",
+              "x": 49,
+              "y": 54
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Getting directions after check-in",
+          "ar": "معرفة الاتجاه بعد تسجيل الوصول",
+          "purposeEn": "Practise getting directions after check-in.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: معرفة الاتجاه بعد تسجيل الوصول.",
+          "image": {
+            "id": "conv-life-appointment-reminder-4",
+            "path": "assets/scenes/conversations/life-appointment-reminder-4.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Getting directions after check-in",
+            "ar": "معرفة الاتجاه بعد تسجيل الوصول",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                747,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "clinic corridor",
+              "ar": "ممر العيادة",
+              "kind": "object",
+              "x": 88,
+              "y": 25
+            },
+            {
+              "en": "check in",
+              "ar": "يسجّل وصوله",
+              "kind": "phrase",
+              "x": 49,
+              "y": 63
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

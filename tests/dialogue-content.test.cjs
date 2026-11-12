@@ -66,6 +66,7 @@ test('both rule announcements are available for every taught pattern',()=>{
   [...vocabulary].forEach((word,index)=>assert.equal(expected[keys[index]],word));
  }
  for(const [id,spoken] of Object.entries(expected)){
+  assert.match(id,/^[a-z0-9-]+$/);
   assert(!/[\u0600-\u06ff]/.test(spoken)&&spoken.trim(),id);
   const audio=cues[id];
   if(process.env.DIALOGUE_AUDIO_REQUIRED==='1')assert(audio?.text===spoken,id);

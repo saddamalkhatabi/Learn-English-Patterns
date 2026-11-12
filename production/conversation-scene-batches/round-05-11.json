@@ -1,0 +1,742 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "b96151918a6a0bbcacb07b3f5143519568786ec15662ba5b1dcf5a22f053b8d2"
+  },
+  "conversations": [
+    {
+      "id": "replacement-key-cut",
+      "goalAr": "قصّ مفتاح احتياطي",
+      "goalEn": "Getting a spare key cut",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Requesting a spare key",
+          "ar": "طلب مفتاح احتياطي",
+          "purposeEn": "Practise requesting a spare key.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: طلب مفتاح احتياطي.",
+          "image": {
+            "id": "conv-life-replacement-key-cut-1",
+            "path": "assets/scenes/conversations/life-replacement-key-cut-1.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Requesting a spare key",
+            "ar": "طلب مفتاح احتياطي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                393,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "locksmith",
+              "ar": "صانع مفاتيح",
+              "kind": "object",
+              "x": 83,
+              "y": 30
+            },
+            {
+              "en": "spare key",
+              "ar": "مفتاح احتياطي",
+              "kind": "object",
+              "x": 77,
+              "y": 88
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Making a copy of the original",
+          "ar": "نسخ المفتاح الأصلي",
+          "purposeEn": "Practise making a copy of the original.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: نسخ المفتاح الأصلي.",
+          "image": {
+            "id": "conv-life-replacement-key-cut-2",
+            "path": "assets/scenes/conversations/life-replacement-key-cut-2.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Making a copy of the original",
+            "ar": "نسخ المفتاح الأصلي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                3,
+                789,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "original key",
+              "ar": "المفتاح الأصلي",
+              "kind": "object",
+              "x": 32,
+              "y": 30
+            },
+            {
+              "en": "key-cutting machine",
+              "ar": "آلة نسخ المفاتيح",
+              "kind": "object",
+              "x": 72,
+              "y": 73
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Keeping the keys separate",
+          "ar": "تمييز المفتاحين عن بعضهما",
+          "purposeEn": "Practise keeping the keys separate.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: تمييز المفتاحين عن بعضهما.",
+          "image": {
+            "id": "conv-life-replacement-key-cut-3",
+            "path": "assets/scenes/conversations/life-replacement-key-cut-3.webp",
+            "width": 392,
+            "height": 243,
+            "en": "Keeping the keys separate",
+            "ar": "تمييز المفتاحين عن بعضهما",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                3,
+                1187,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "colored key rings",
+              "ar": "حلقات مفاتيح ملوّنة",
+              "kind": "object",
+              "x": 52,
+              "y": 81
+            },
+            {
+              "en": "tell apart",
+              "ar": "يميّز بين شيئين",
+              "kind": "phrase",
+              "x": 47,
+              "y": 72
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Testing whether the copy turns",
+          "ar": "اختبار دوران المفتاح المنسوخ",
+          "purposeEn": "Practise testing whether the copy turns.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: اختبار دوران المفتاح المنسوخ.",
+          "image": {
+            "id": "conv-life-replacement-key-cut-4",
+            "path": "assets/scenes/conversations/life-replacement-key-cut-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Testing whether the copy turns",
+            "ar": "اختبار دوران المفتاح المنسوخ",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                3,
+                1583,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "turn the key",
+              "ar": "يدير المفتاح",
+              "kind": "phrase",
+              "x": 46,
+              "y": 85
+            },
+            {
+              "en": "door lock",
+              "ar": "قفل الباب",
+              "kind": "object",
+              "x": 48,
+              "y": 76
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "charging-before-the-trip",
+      "goalAr": "شحن الهاتف قبل الرحلة",
+      "goalEn": "Charging a phone before the trip",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Noticing the low battery",
+          "ar": "ملاحظة انخفاض شحن البطارية",
+          "purposeEn": "Practise noticing the low battery.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: ملاحظة انخفاض شحن البطارية.",
+          "image": {
+            "id": "conv-life-charging-before-the-trip-1",
+            "path": "assets/scenes/conversations/life-charging-before-the-trip-1.webp",
+            "width": 390,
+            "height": 240,
+            "en": "Noticing the low battery",
+            "ar": "ملاحظة انخفاض شحن البطارية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                252,
+                393,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "low battery",
+              "ar": "بطارية ضعيفة الشحن",
+              "kind": "phrase",
+              "x": 63,
+              "y": 65
+            },
+            {
+              "en": "luggage handle",
+              "ar": "مقبض الأمتعة",
+              "kind": "object",
+              "x": 85,
+              "y": 44
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Finding a socket by the stairs",
+          "ar": "العثور على مقبس بجوار الدرج",
+          "purposeEn": "Practise finding a socket by the stairs.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: العثور على مقبس بجوار الدرج.",
+          "image": {
+            "id": "conv-life-charging-before-the-trip-2",
+            "path": "assets/scenes/conversations/life-charging-before-the-trip-2.webp",
+            "width": 390,
+            "height": 240,
+            "en": "Finding a socket by the stairs",
+            "ar": "العثور على مقبس بجوار الدرج",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                252,
+                789,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "wall socket",
+              "ar": "مقبس كهربائي جداري",
+              "kind": "object",
+              "x": 87,
+              "y": 63
+            },
+            {
+              "en": "stairs",
+              "ar": "درج",
+              "kind": "object",
+              "x": 63,
+              "y": 36
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Plugging in the charger",
+          "ar": "توصيل الشاحن",
+          "purposeEn": "Practise plugging in the charger.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: توصيل الشاحن.",
+          "image": {
+            "id": "conv-life-charging-before-the-trip-3",
+            "path": "assets/scenes/conversations/life-charging-before-the-trip-3.webp",
+            "width": 392,
+            "height": 240,
+            "en": "Plugging in the charger",
+            "ar": "توصيل الشاحن",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                252,
+                1187,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "plug in",
+              "ar": "يوصّل بالكهرباء",
+              "kind": "phrase",
+              "x": 77,
+              "y": 59
+            },
+            {
+              "en": "charging cable",
+              "ar": "سلك شحن",
+              "kind": "object",
+              "x": 77,
+              "y": 79
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Setting a reminder before leaving",
+          "ar": "ضبط تذكير قبل المغادرة",
+          "purposeEn": "Practise setting a reminder before leaving.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: ضبط تذكير قبل المغادرة.",
+          "image": {
+            "id": "conv-life-charging-before-the-trip-4",
+            "path": "assets/scenes/conversations/life-charging-before-the-trip-4.webp",
+            "width": 390,
+            "height": 240,
+            "en": "Setting a reminder before leaving",
+            "ar": "ضبط تذكير قبل المغادرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                252,
+                1583,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "set a reminder",
+              "ar": "يضبط تذكيرًا",
+              "kind": "phrase",
+              "x": 45,
+              "y": 62
+            },
+            {
+              "en": "charging",
+              "ar": "قيد الشحن",
+              "kind": "description",
+              "x": 55,
+              "y": 75
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "short-walk-instead",
+      "goalAr": "جولة مشي قصيرة",
+      "goalEn": "A short walk instead",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Discussing an indoor workout",
+          "ar": "مناقشة التمرين في مكان مغلق",
+          "purposeEn": "Practise discussing an indoor workout.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: مناقشة التمرين في مكان مغلق.",
+          "image": {
+            "id": "conv-life-short-walk-instead-1",
+            "path": "assets/scenes/conversations/life-short-walk-instead-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Discussing an indoor workout",
+            "ar": "مناقشة التمرين في مكان مغلق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                498,
+                393,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "sports centre",
+              "ar": "مركز رياضي",
+              "kind": "object",
+              "x": 55,
+              "y": 24
+            },
+            {
+              "en": "sportswear",
+              "ar": "ملابس رياضية",
+              "kind": "object",
+              "x": 20,
+              "y": 71
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Choosing the riverside path",
+          "ar": "اختيار ممر ضفة النهر",
+          "purposeEn": "Practise choosing the riverside path.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: اختيار ممر ضفة النهر.",
+          "image": {
+            "id": "conv-life-short-walk-instead-2",
+            "path": "assets/scenes/conversations/life-short-walk-instead-2.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Choosing the riverside path",
+            "ar": "اختيار ممر ضفة النهر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                498,
+                789,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "riverside path",
+              "ar": "ممر على ضفة النهر",
+              "kind": "object",
+              "x": 46,
+              "y": 76
+            },
+            {
+              "en": "fresh air",
+              "ar": "هواء نقي",
+              "kind": "phrase",
+              "x": 33,
+              "y": 32
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Walking past the benches",
+          "ar": "المشي بمحاذاة المقاعد",
+          "purposeEn": "Practise walking past the benches.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: المشي بمحاذاة المقاعد.",
+          "image": {
+            "id": "conv-life-short-walk-instead-3",
+            "path": "assets/scenes/conversations/life-short-walk-instead-3.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Walking past the benches",
+            "ar": "المشي بمحاذاة المقاعد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                498,
+                1187,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "wooden bench",
+              "ar": "مقعد خشبي",
+              "kind": "object",
+              "x": 14,
+              "y": 74
+            },
+            {
+              "en": "walk side by side",
+              "ar": "يمشيان جنبًا إلى جنب",
+              "kind": "phrase",
+              "x": 57,
+              "y": 63
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Stopping for a short rest",
+          "ar": "التوقف لاستراحة قصيرة",
+          "purposeEn": "Practise stopping for a short rest.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: التوقف لاستراحة قصيرة.",
+          "image": {
+            "id": "conv-life-short-walk-instead-4",
+            "path": "assets/scenes/conversations/life-short-walk-instead-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Stopping for a short rest",
+            "ar": "التوقف لاستراحة قصيرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                498,
+                1583,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "take a rest",
+              "ar": "يأخذ استراحة",
+              "kind": "phrase",
+              "x": 53,
+              "y": 76
+            },
+            {
+              "en": "water bottle",
+              "ar": "زجاجة ماء",
+              "kind": "object",
+              "x": 83,
+              "y": 69
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "repair-or-replace-bag",
+      "goalAr": "إصلاح الحقيبة أو استبدالها",
+      "goalEn": "Repairing or replacing a bag",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Showing the broken zipper",
+          "ar": "إظهار السحّاب التالف",
+          "purposeEn": "Practise showing the broken zipper.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: إظهار السحّاب التالف.",
+          "image": {
+            "id": "conv-life-repair-or-replace-bag-1",
+            "path": "assets/scenes/conversations/life-repair-or-replace-bag-1.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Showing the broken zipper",
+            "ar": "إظهار السحّاب التالف",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                746,
+                393,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "broken zipper",
+              "ar": "سحّاب تالف",
+              "kind": "object",
+              "x": 45,
+              "y": 74
+            },
+            {
+              "en": "backpack strap",
+              "ar": "حزام حقيبة الظهر",
+              "kind": "object",
+              "x": 51,
+              "y": 54
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Checking the rest of the bag",
+          "ar": "فحص بقية الحقيبة",
+          "purposeEn": "Practise checking the rest of the bag.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: فحص بقية الحقيبة.",
+          "image": {
+            "id": "conv-life-repair-or-replace-bag-2",
+            "path": "assets/scenes/conversations/life-repair-or-replace-bag-2.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Checking the rest of the bag",
+            "ar": "فحص بقية الحقيبة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                746,
+                789,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "stitching",
+              "ar": "درزات الخياطة",
+              "kind": "object",
+              "x": 41,
+              "y": 63
+            },
+            {
+              "en": "inspect",
+              "ar": "يفحص",
+              "kind": "action",
+              "x": 58,
+              "y": 38
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Comparing a replacement zipper",
+          "ar": "مقارنة سحّاب بديل",
+          "purposeEn": "Practise comparing a replacement zipper.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: مقارنة سحّاب بديل.",
+          "image": {
+            "id": "conv-life-repair-or-replace-bag-3",
+            "path": "assets/scenes/conversations/life-repair-or-replace-bag-3.webp",
+            "width": 392,
+            "height": 243,
+            "en": "Comparing a replacement zipper",
+            "ar": "مقارنة سحّاب بديل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                746,
+                1187,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "replacement zipper",
+              "ar": "سحّاب بديل",
+              "kind": "object",
+              "x": 75,
+              "y": 66
+            },
+            {
+              "en": "repair shop",
+              "ar": "محل إصلاح",
+              "kind": "object",
+              "x": 51,
+              "y": 26
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Checking how long the repair will take",
+          "ar": "الاستفسار عن مدة الإصلاح",
+          "purposeEn": "Practise checking how long the repair will take.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: الاستفسار عن مدة الإصلاح.",
+          "image": {
+            "id": "conv-life-repair-or-replace-bag-4",
+            "path": "assets/scenes/conversations/life-repair-or-replace-bag-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Checking how long the repair will take",
+            "ar": "الاستفسار عن مدة الإصلاح",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                746,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "repair tag",
+              "ar": "بطاقة إصلاح",
+              "kind": "object",
+              "x": 43,
+              "y": 62
+            },
+            {
+              "en": "spare bag",
+              "ar": "حقيبة بديلة",
+              "kind": "object",
+              "x": 84,
+              "y": 70
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

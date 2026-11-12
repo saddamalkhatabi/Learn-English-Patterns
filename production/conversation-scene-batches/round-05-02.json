@@ -1,0 +1,742 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "b86011d44f2373d5e7fb601bbdde06155a910730270d535dd38b7648f86f0b68"
+  },
+  "conversations": [
+    {
+      "id": "evening-reading-habit",
+      "goalAr": "عادة القراءة قبل النوم",
+      "goalEn": "Reading before bed",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Putting the phone away",
+          "ar": "ترك الهاتف جانبًا",
+          "purposeEn": "Practise putting the phone away.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: ترك الهاتف جانبًا.",
+          "image": {
+            "id": "conv-life-evening-reading-habit-1",
+            "path": "assets/scenes/conversations/life-evening-reading-habit-1.webp",
+            "width": 390,
+            "height": 251,
+            "en": "Putting the phone away",
+            "ar": "ترك الهاتف جانبًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                393,
+                254
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "kitchen counter",
+              "ar": "سطح المطبخ",
+              "kind": "object",
+              "x": 20,
+              "y": 90
+            },
+            {
+              "en": "put down the phone",
+              "ar": "يضع الهاتف جانبًا",
+              "kind": "phrase",
+              "x": 30,
+              "y": 91
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Reading before bed",
+          "ar": "القراءة قبل النوم",
+          "purposeEn": "Practise reading before bed.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: القراءة قبل النوم.",
+          "image": {
+            "id": "conv-life-evening-reading-habit-2",
+            "path": "assets/scenes/conversations/life-evening-reading-habit-2.webp",
+            "width": 390,
+            "height": 251,
+            "en": "Reading before bed",
+            "ar": "القراءة قبل النوم",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                3,
+                789,
+                254
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "yawn",
+              "ar": "يتثاءب",
+              "kind": "action",
+              "x": 39,
+              "y": 41
+            },
+            {
+              "en": "bedside lamp",
+              "ar": "مصباح بجانب السرير",
+              "kind": "object",
+              "x": 86,
+              "y": 29
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Picking a short chapter",
+          "ar": "اختيار فصل قصير",
+          "purposeEn": "Practise picking a short chapter.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: اختيار فصل قصير.",
+          "image": {
+            "id": "conv-life-evening-reading-habit-3",
+            "path": "assets/scenes/conversations/life-evening-reading-habit-3.webp",
+            "width": 391,
+            "height": 251,
+            "en": "Picking a short chapter",
+            "ar": "اختيار فصل قصير",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                3,
+                1186,
+                254
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "open book",
+              "ar": "كتاب مفتوح",
+              "kind": "object",
+              "x": 55,
+              "y": 78
+            },
+            {
+              "en": "page",
+              "ar": "صفحة",
+              "kind": "object",
+              "x": 62,
+              "y": 80
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Leaving the book by the lamp",
+          "ar": "ترك الكتاب بجوار المصباح",
+          "purposeEn": "Practise leaving the book by the lamp.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: ترك الكتاب بجوار المصباح.",
+          "image": {
+            "id": "conv-life-evening-reading-habit-4",
+            "path": "assets/scenes/conversations/life-evening-reading-habit-4.webp",
+            "width": 391,
+            "height": 251,
+            "en": "Leaving the book by the lamp",
+            "ar": "ترك الكتاب بجوار المصباح",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                3,
+                1583,
+                254
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "next to the lamp",
+              "ar": "بجوار المصباح",
+              "kind": "phrase",
+              "x": 83,
+              "y": 82
+            },
+            {
+              "en": "pillow",
+              "ar": "وسادة",
+              "kind": "object",
+              "x": 56,
+              "y": 49
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lunch-on-a-budget",
+      "goalAr": "غداء يناسب الميزانية",
+      "goalEn": "Lunch on a budget",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Looking for a low-cost lunch",
+          "ar": "البحث عن غداء بسعر مناسب",
+          "purposeEn": "Practise looking for a low-cost lunch.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: البحث عن غداء بسعر مناسب.",
+          "image": {
+            "id": "conv-life-lunch-on-a-budget-1",
+            "path": "assets/scenes/conversations/life-lunch-on-a-budget-1.webp",
+            "width": 390,
+            "height": 234,
+            "en": "Looking for a low-cost lunch",
+            "ar": "البحث عن غداء بسعر مناسب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                260,
+                393,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "lunchbox",
+              "ar": "علبة غداء",
+              "kind": "object",
+              "x": 72,
+              "y": 83
+            },
+            {
+              "en": "office building",
+              "ar": "مبنى مكاتب",
+              "kind": "object",
+              "x": 85,
+              "y": 30
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Checking the price of soup",
+          "ar": "التحقق من سعر الحساء",
+          "purposeEn": "Practise checking the price of soup.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: التحقق من سعر الحساء.",
+          "image": {
+            "id": "conv-life-lunch-on-a-budget-2",
+            "path": "assets/scenes/conversations/life-lunch-on-a-budget-2.webp",
+            "width": 390,
+            "height": 234,
+            "en": "Checking the price of soup",
+            "ar": "التحقق من سعر الحساء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                260,
+                789,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "menu",
+              "ar": "قائمة طعام",
+              "kind": "object",
+              "x": 55,
+              "y": 75
+            },
+            {
+              "en": "bowl of soup",
+              "ar": "وعاء حساء",
+              "kind": "object",
+              "x": 15,
+              "y": 82
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Arriving before the lunch rush",
+          "ar": "الوصول قبل زحام الغداء",
+          "purposeEn": "Practise arriving before the lunch rush.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: الوصول قبل زحام الغداء.",
+          "image": {
+            "id": "conv-life-lunch-on-a-budget-3",
+            "path": "assets/scenes/conversations/life-lunch-on-a-budget-3.webp",
+            "width": 391,
+            "height": 234,
+            "en": "Arriving before the lunch rush",
+            "ar": "الوصول قبل زحام الغداء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                260,
+                1186,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "empty table",
+              "ar": "طاولة خالية",
+              "kind": "object",
+              "x": 56,
+              "y": 91
+            },
+            {
+              "en": "display case",
+              "ar": "خزانة عرض",
+              "kind": "object",
+              "x": 91,
+              "y": 74
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Sharing a sandwich",
+          "ar": "اقتسام شطيرة",
+          "purposeEn": "Practise sharing a sandwich.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: اقتسام شطيرة.",
+          "image": {
+            "id": "conv-life-lunch-on-a-budget-4",
+            "path": "assets/scenes/conversations/life-lunch-on-a-budget-4.webp",
+            "width": 391,
+            "height": 234,
+            "en": "Sharing a sandwich",
+            "ar": "اقتسام شطيرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                260,
+                1583,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "split a sandwich",
+              "ar": "يقسم شطيرة",
+              "kind": "phrase",
+              "x": 51,
+              "y": 68
+            },
+            {
+              "en": "glass of water",
+              "ar": "كوب ماء",
+              "kind": "object",
+              "x": 22,
+              "y": 86
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "library-after-class",
+      "goalAr": "المكتبة بعد الدرس",
+      "goalEn": "The library after class",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Heading to the library after class",
+          "ar": "التوجه إلى المكتبة بعد الدرس",
+          "purposeEn": "Practise heading to the library after class.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: التوجه إلى المكتبة بعد الدرس.",
+          "image": {
+            "id": "conv-life-library-after-class-1",
+            "path": "assets/scenes/conversations/life-library-after-class-1.webp",
+            "width": 390,
+            "height": 236,
+            "en": "Heading to the library after class",
+            "ar": "التوجه إلى المكتبة بعد الدرس",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                500,
+                393,
+                736
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "courtyard",
+              "ar": "باحة",
+              "kind": "object",
+              "x": 78,
+              "y": 83
+            },
+            {
+              "en": "carry a notebook",
+              "ar": "يحمل دفترًا",
+              "kind": "phrase",
+              "x": 25,
+              "y": 78
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Studying until the meeting",
+          "ar": "الدراسة حتى موعد اللقاء",
+          "purposeEn": "Practise studying until the meeting.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: الدراسة حتى موعد اللقاء.",
+          "image": {
+            "id": "conv-life-library-after-class-2",
+            "path": "assets/scenes/conversations/life-library-after-class-2.webp",
+            "width": 390,
+            "height": 236,
+            "en": "Studying until the meeting",
+            "ar": "الدراسة حتى موعد اللقاء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                500,
+                789,
+                736
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "wristwatch",
+              "ar": "ساعة يد",
+              "kind": "object",
+              "x": 63,
+              "y": 67
+            },
+            {
+              "en": "study alone",
+              "ar": "يدرس بمفرده",
+              "kind": "phrase",
+              "x": 51,
+              "y": 57
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Bringing the class notes",
+          "ar": "إحضار ملاحظات الدرس",
+          "purposeEn": "Practise bringing the class notes.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: إحضار ملاحظات الدرس.",
+          "image": {
+            "id": "conv-life-library-after-class-3",
+            "path": "assets/scenes/conversations/life-library-after-class-3.webp",
+            "width": 391,
+            "height": 236,
+            "en": "Bringing the class notes",
+            "ar": "إحضار ملاحظات الدرس",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                500,
+                1186,
+                736
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "hand over a notebook",
+              "ar": "يناول دفترًا",
+              "kind": "phrase",
+              "x": 62,
+              "y": 63
+            },
+            {
+              "en": "library table",
+              "ar": "طاولة المكتبة",
+              "kind": "object",
+              "x": 76,
+              "y": 89
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Going over the example",
+          "ar": "مراجعة المثال",
+          "purposeEn": "Practise going over the example.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: مراجعة المثال.",
+          "image": {
+            "id": "conv-life-library-after-class-4",
+            "path": "assets/scenes/conversations/life-library-after-class-4.webp",
+            "width": 391,
+            "height": 236,
+            "en": "Going over the example",
+            "ar": "مراجعة المثال",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                500,
+                1583,
+                736
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "go over an example",
+              "ar": "يراجع مثالًا",
+              "kind": "phrase",
+              "x": 46,
+              "y": 78
+            },
+            {
+              "en": "point to a line",
+              "ar": "يشير إلى سطر",
+              "kind": "phrase",
+              "x": 62,
+              "y": 71
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cycling-club-weekends",
+      "goalAr": "جولة الدراجة الأسبوعية",
+      "goalEn": "A weekend cycling group",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Riding along the river",
+          "ar": "ركوب الدراجات بمحاذاة النهر",
+          "purposeEn": "Practise riding along the river.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: ركوب الدراجات بمحاذاة النهر.",
+          "image": {
+            "id": "conv-life-cycling-club-weekends-1",
+            "path": "assets/scenes/conversations/life-cycling-club-weekends-1.webp",
+            "width": 390,
+            "height": 247,
+            "en": "Riding along the river",
+            "ar": "ركوب الدراجات بمحاذاة النهر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                742,
+                393,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "cycle path",
+              "ar": "مسار دراجات",
+              "kind": "object",
+              "x": 83,
+              "y": 82
+            },
+            {
+              "en": "riverside",
+              "ar": "ضفة النهر",
+              "kind": "object",
+              "x": 9,
+              "y": 41
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Meeting by the park gate",
+          "ar": "اللقاء عند بوابة الحديقة",
+          "purposeEn": "Practise meeting by the park gate.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: اللقاء عند بوابة الحديقة.",
+          "image": {
+            "id": "conv-life-cycling-club-weekends-2",
+            "path": "assets/scenes/conversations/life-cycling-club-weekends-2.webp",
+            "width": 390,
+            "height": 247,
+            "en": "Meeting by the park gate",
+            "ar": "اللقاء عند بوابة الحديقة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                742,
+                789,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "park gate",
+              "ar": "بوابة الحديقة",
+              "kind": "object",
+              "x": 52,
+              "y": 21
+            },
+            {
+              "en": "handlebars",
+              "ar": "مقود الدراجة",
+              "kind": "object",
+              "x": 84,
+              "y": 65
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Getting ready for the ride",
+          "ar": "التجهيز لجولة الدراجات",
+          "purposeEn": "Practise getting ready for the ride.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: التجهيز لجولة الدراجات.",
+          "image": {
+            "id": "conv-life-cycling-club-weekends-3",
+            "path": "assets/scenes/conversations/life-cycling-club-weekends-3.webp",
+            "width": 391,
+            "height": 247,
+            "en": "Getting ready for the ride",
+            "ar": "التجهيز لجولة الدراجات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                742,
+                1186,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "helmet",
+              "ar": "خوذة",
+              "kind": "object",
+              "x": 49,
+              "y": 15
+            },
+            {
+              "en": "bottle cage",
+              "ar": "حامل زجاجة الدراجة",
+              "kind": "object",
+              "x": 67,
+              "y": 87
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Finding the meeting point on the map",
+          "ar": "تحديد مكان اللقاء على الخريطة",
+          "purposeEn": "Practise finding the meeting point on the map.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: تحديد مكان اللقاء على الخريطة.",
+          "image": {
+            "id": "conv-life-cycling-club-weekends-4",
+            "path": "assets/scenes/conversations/life-cycling-club-weekends-4.webp",
+            "width": 391,
+            "height": 247,
+            "en": "Finding the meeting point on the map",
+            "ar": "تحديد مكان اللقاء على الخريطة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                742,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "folded map",
+              "ar": "خريطة مطوية",
+              "kind": "object",
+              "x": 54,
+              "y": 81
+            },
+            {
+              "en": "cycling gloves",
+              "ar": "قفازات ركوب الدراجات",
+              "kind": "object",
+              "x": 73,
+              "y": 84
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -27,7 +27,9 @@ function spokenComparisonNote(note){
  return /[.!?]$/.test(text)?text:text+'.';
 }
 function ideaWordCueId(text,voice){
- return `idea-word-${text.toLowerCase().trim().replace(/'/g,'-apostrophe-').replace(/\s+/g,'-')}-${voice}`;
+ const word=text.normalize('NFC').toLowerCase().trim().replace(/'/g,'-apostrophe-').replace(/\s+/g,'-')
+  .replace(/[^a-z0-9-]/gu,character=>`-u${character.codePointAt(0).toString(16)}-`);
+ return `idea-word-${word}-${voice}`;
 }
 function ideaSceneCueId(scene,pattern,voice){
  return `idea-example-${scene}-${pattern}-${voice}`;

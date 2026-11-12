@@ -1,0 +1,742 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "6777002a0470e1dd60631e76b72280266e6a1ea0cb086ab61e193f414967feff"
+  },
+  "conversations": [
+    {
+      "id": "tea-at-reception",
+      "goalAr": "ضيافة عند الاستقبال",
+      "goalEn": "Tea at reception",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Offering tea in reception",
+          "ar": "عرض الشاي في الاستقبال",
+          "purposeEn": "Practise offering tea in reception.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: عرض الشاي في الاستقبال.",
+          "image": {
+            "id": "conv-life-tea-at-reception-1",
+            "path": "assets/scenes/conversations/life-tea-at-reception-1.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Offering tea in reception",
+            "ar": "عرض الشاي في الاستقبال",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                393,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "teapot",
+              "ar": "إبريق شاي",
+              "kind": "object",
+              "x": 46,
+              "y": 59
+            },
+            {
+              "en": "offer tea",
+              "ar": "يعرض الشاي",
+              "kind": "phrase",
+              "x": 36,
+              "y": 69
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Serving hot tea without sugar",
+          "ar": "تقديم الشاي الساخن دون سكر",
+          "purposeEn": "Practise serving hot tea without sugar.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: تقديم الشاي الساخن دون سكر.",
+          "image": {
+            "id": "conv-life-tea-at-reception-2",
+            "path": "assets/scenes/conversations/life-tea-at-reception-2.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Serving hot tea without sugar",
+            "ar": "تقديم الشاي الساخن دون سكر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                3,
+                789,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "sugar bowl",
+              "ar": "وعاء السكر",
+              "kind": "object",
+              "x": 47,
+              "y": 84
+            },
+            {
+              "en": "steam",
+              "ar": "بخار",
+              "kind": "object",
+              "x": 36,
+              "y": 69
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Drinking tea before a meeting",
+          "ar": "شرب الشاي قبل الاجتماع",
+          "purposeEn": "Practise drinking tea before a meeting.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: شرب الشاي قبل الاجتماع.",
+          "image": {
+            "id": "conv-life-tea-at-reception-3",
+            "path": "assets/scenes/conversations/life-tea-at-reception-3.webp",
+            "width": 392,
+            "height": 243,
+            "en": "Drinking tea before a meeting",
+            "ar": "شرب الشاي قبل الاجتماع",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                3,
+                1187,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "sip tea",
+              "ar": "يرتشف الشاي",
+              "kind": "phrase",
+              "x": 73,
+              "y": 48
+            },
+            {
+              "en": "tea glass",
+              "ar": "كأس شاي",
+              "kind": "object",
+              "x": 75,
+              "y": 44
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Letting the team know",
+          "ar": "إبلاغ فريق الاجتماع بوصول الضيف",
+          "purposeEn": "Practise letting the team know.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: إبلاغ فريق الاجتماع بوصول الضيف.",
+          "image": {
+            "id": "conv-life-tea-at-reception-4",
+            "path": "assets/scenes/conversations/life-tea-at-reception-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Letting the team know",
+            "ar": "إبلاغ فريق الاجتماع بوصول الضيف",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                3,
+                1583,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "call the team",
+              "ar": "يتصل بالفريق",
+              "kind": "phrase",
+              "x": 75,
+              "y": 35
+            },
+            {
+              "en": "wait in reception",
+              "ar": "ينتظر في الاستقبال",
+              "kind": "phrase",
+              "x": 25,
+              "y": 68
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finding-the-host",
+      "goalAr": "التعرّف إلى صاحب اللقاء",
+      "goalEn": "Finding the host",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Asking who is hosting",
+          "ar": "السؤال عن مضيف الفعالية",
+          "purposeEn": "Practise asking who is hosting.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: السؤال عن مضيف الفعالية.",
+          "image": {
+            "id": "conv-life-finding-the-host-1",
+            "path": "assets/scenes/conversations/life-finding-the-host-1.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Asking who is hosting",
+            "ar": "السؤال عن مضيف الفعالية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                252,
+                393,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "lanyard",
+              "ar": "شريط تعليق البطاقة",
+              "kind": "object",
+              "x": 56,
+              "y": 82
+            },
+            {
+              "en": "event volunteer",
+              "ar": "متطوعة في فعالية",
+              "kind": "object",
+              "x": 76,
+              "y": 26
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Identifying the host",
+          "ar": "التعرّف على المضيف",
+          "purposeEn": "Practise identifying the host.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: التعرّف على المضيف.",
+          "image": {
+            "id": "conv-life-finding-the-host-2",
+            "path": "assets/scenes/conversations/life-finding-the-host-2.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Identifying the host",
+            "ar": "التعرّف على المضيف",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                252,
+                789,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "guest badge",
+              "ar": "بطاقة ضيف",
+              "kind": "object",
+              "x": 28,
+              "y": 63
+            },
+            {
+              "en": "by the door",
+              "ar": "بجوار الباب",
+              "kind": "phrase",
+              "x": 83,
+              "y": 36
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Looking for a friend’s badge",
+          "ar": "البحث عن بطاقة الصديقة",
+          "purposeEn": "Practise looking for a friend’s badge.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: البحث عن بطاقة الصديقة.",
+          "image": {
+            "id": "conv-life-finding-the-host-3",
+            "path": "assets/scenes/conversations/life-finding-the-host-3.webp",
+            "width": 392,
+            "height": 241,
+            "en": "Looking for a friend’s badge",
+            "ar": "البحث عن بطاقة الصديقة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                252,
+                1187,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "sign-in sheet",
+              "ar": "ورقة تسجيل الحضور",
+              "kind": "object",
+              "x": 77,
+              "y": 90
+            },
+            {
+              "en": "look through badges",
+              "ar": "يتصفّح بطاقات الضيوف",
+              "kind": "phrase",
+              "x": 70,
+              "y": 79
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Meeting by the sign-in table",
+          "ar": "اللقاء عند طاولة التسجيل",
+          "purposeEn": "Practise meeting by the sign-in table.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: اللقاء عند طاولة التسجيل.",
+          "image": {
+            "id": "conv-life-finding-the-host-4",
+            "path": "assets/scenes/conversations/life-finding-the-host-4.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Meeting by the sign-in table",
+            "ar": "اللقاء عند طاولة التسجيل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                252,
+                1583,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "shake hands",
+              "ar": "يتصافح",
+              "kind": "phrase",
+              "x": 54,
+              "y": 65
+            },
+            {
+              "en": "flower vase",
+              "ar": "مزهرية",
+              "kind": "object",
+              "x": 94,
+              "y": 85
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "coffee-machine-queue",
+      "goalAr": "الدور عند آلة القهوة",
+      "goalEn": "At the office coffee machine",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Checking the quiet coffee machine",
+          "ar": "فحص آلة القهوة الصامتة",
+          "purposeEn": "Practise checking the quiet coffee machine.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: فحص آلة القهوة الصامتة.",
+          "image": {
+            "id": "conv-life-coffee-machine-queue-1",
+            "path": "assets/scenes/conversations/life-coffee-machine-queue-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Checking the quiet coffee machine",
+            "ar": "فحص آلة القهوة الصامتة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                499,
+                393,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "coffee maker",
+              "ar": "آلة قهوة",
+              "kind": "object",
+              "x": 82,
+              "y": 71
+            },
+            {
+              "en": "puzzled",
+              "ar": "محتار",
+              "kind": "description",
+              "x": 48,
+              "y": 30
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Opening the water tank",
+          "ar": "فتح خزان الماء",
+          "purposeEn": "Practise opening the water tank.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: فتح خزان الماء.",
+          "image": {
+            "id": "conv-life-coffee-machine-queue-2",
+            "path": "assets/scenes/conversations/life-coffee-machine-queue-2.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Opening the water tank",
+            "ar": "فتح خزان الماء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                499,
+                789,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "lift the handle",
+              "ar": "يرفع المقبض",
+              "kind": "phrase",
+              "x": 73,
+              "y": 28
+            },
+            {
+              "en": "empty tank",
+              "ar": "خزان فارغ",
+              "kind": "object",
+              "x": 78,
+              "y": 55
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Refilling the reservoir",
+          "ar": "إعادة تعبئة الخزان",
+          "purposeEn": "Practise refilling the reservoir.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: إعادة تعبئة الخزان.",
+          "image": {
+            "id": "conv-life-coffee-machine-queue-3",
+            "path": "assets/scenes/conversations/life-coffee-machine-queue-3.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Refilling the reservoir",
+            "ar": "إعادة تعبئة الخزان",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                499,
+                1187,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "water jug",
+              "ar": "إبريق ماء",
+              "kind": "object",
+              "x": 63,
+              "y": 45
+            },
+            {
+              "en": "pour water",
+              "ar": "يصبّ الماء",
+              "kind": "phrase",
+              "x": 73,
+              "y": 49
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Putting out clean cups",
+          "ar": "إخراج أكواب نظيفة",
+          "purposeEn": "Practise putting out clean cups.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: إخراج أكواب نظيفة.",
+          "image": {
+            "id": "conv-life-coffee-machine-queue-4",
+            "path": "assets/scenes/conversations/life-coffee-machine-queue-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Putting out clean cups",
+            "ar": "إخراج أكواب نظيفة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                499,
+                1583,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "clean cups",
+              "ar": "أكواب نظيفة",
+              "kind": "object",
+              "x": 38,
+              "y": 21
+            },
+            {
+              "en": "cupboard shelf",
+              "ar": "رفّ الخزانة",
+              "kind": "object",
+              "x": 34,
+              "y": 33
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "new-flat-tour",
+      "goalAr": "جولة في شقة جديدة",
+      "goalEn": "A tour of a new flat",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Touring the new flat",
+          "ar": "جولة في الشقة الجديدة",
+          "purposeEn": "Practise touring the new flat.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: جولة في الشقة الجديدة.",
+          "image": {
+            "id": "conv-life-new-flat-tour-1",
+            "path": "assets/scenes/conversations/life-new-flat-tour-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Touring the new flat",
+            "ar": "جولة في الشقة الجديدة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                747,
+                393,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "living room",
+              "ar": "غرفة معيشة",
+              "kind": "object",
+              "x": 81,
+              "y": 68
+            },
+            {
+              "en": "doorway",
+              "ar": "مدخل الباب",
+              "kind": "object",
+              "x": 44,
+              "y": 39
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Seeing the balcony",
+          "ar": "رؤية الشرفة",
+          "purposeEn": "Practise seeing the balcony.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: رؤية الشرفة.",
+          "image": {
+            "id": "conv-life-new-flat-tour-2",
+            "path": "assets/scenes/conversations/life-new-flat-tour-2.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Seeing the balcony",
+            "ar": "رؤية الشرفة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                747,
+                789,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "balcony railing",
+              "ar": "درابزين الشرفة",
+              "kind": "object",
+              "x": 52,
+              "y": 68
+            },
+            {
+              "en": "set of keys",
+              "ar": "مجموعة مفاتيح",
+              "kind": "object",
+              "x": 59,
+              "y": 74
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Identifying the main door key",
+          "ar": "تمييز مفتاح الباب الرئيسي",
+          "purposeEn": "Practise identifying the main door key.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: تمييز مفتاح الباب الرئيسي.",
+          "image": {
+            "id": "conv-life-new-flat-tour-3",
+            "path": "assets/scenes/conversations/life-new-flat-tour-3.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Identifying the main door key",
+            "ar": "تمييز مفتاح الباب الرئيسي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                747,
+                1187,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "round-headed key",
+              "ar": "مفتاح ذو رأس دائري",
+              "kind": "object",
+              "x": 47,
+              "y": 50
+            },
+            {
+              "en": "keyhole",
+              "ar": "ثقب المفتاح",
+              "kind": "object",
+              "x": 76,
+              "y": 60
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Keeping the keys together",
+          "ar": "جمع المفاتيح في حلقة واحدة",
+          "purposeEn": "Practise keeping the keys together.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: جمع المفاتيح في حلقة واحدة.",
+          "image": {
+            "id": "conv-life-new-flat-tour-4",
+            "path": "assets/scenes/conversations/life-new-flat-tour-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Keeping the keys together",
+            "ar": "جمع المفاتيح في حلقة واحدة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                747,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "key ring",
+              "ar": "حلقة مفاتيح",
+              "kind": "object",
+              "x": 49,
+              "y": 36
+            },
+            {
+              "en": "storage door",
+              "ar": "باب المخزن",
+              "kind": "object",
+              "x": 80,
+              "y": 28
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

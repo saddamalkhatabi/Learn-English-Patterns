@@ -1,0 +1,742 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "cf8579336ca53c0178698ea98bf625fc546947534d346e703620394762000d54"
+  },
+  "conversations": [
+    {
+      "id": "interview-training-question",
+      "goalAr": "سؤال عن التدريب الوظيفي",
+      "goalEn": "Asking about training in an interview",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Asking about training",
+          "ar": "السؤال عن التدريب",
+          "purposeEn": "Practise asking about training.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: السؤال عن التدريب.",
+          "image": {
+            "id": "conv-life-interview-training-question-1",
+            "path": "assets/scenes/conversations/life-interview-training-question-1.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Asking about training",
+            "ar": "السؤال عن التدريب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                392,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "notepad",
+              "ar": "دفتر صغير",
+              "kind": "object",
+              "x": 56,
+              "y": 92
+            },
+            {
+              "en": "take notes",
+              "ar": "يدوّن ملاحظات",
+              "kind": "phrase",
+              "x": 68,
+              "y": 87
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Observing the first morning at reception",
+          "ar": "الملاحظة في صباح اليوم الأول لدى الاستقبال",
+          "purposeEn": "Practise observing the first morning at reception.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: الملاحظة في صباح اليوم الأول لدى الاستقبال.",
+          "image": {
+            "id": "conv-life-interview-training-question-2",
+            "path": "assets/scenes/conversations/life-interview-training-question-2.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Observing the first morning at reception",
+            "ar": "الملاحظة في صباح اليوم الأول لدى الاستقبال",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                398,
+                3,
+                789,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "greet a visitor",
+              "ar": "يحيّي زائرًا",
+              "kind": "phrase",
+              "x": 70,
+              "y": 59
+            },
+            {
+              "en": "observe a colleague",
+              "ar": "يراقب زميلًا",
+              "kind": "phrase",
+              "x": 21,
+              "y": 28
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Working alongside a colleague",
+          "ar": "العمل إلى جانب زميلة",
+          "purposeEn": "Practise working alongside a colleague.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: العمل إلى جانب زميلة.",
+          "image": {
+            "id": "conv-life-interview-training-question-3",
+            "path": "assets/scenes/conversations/life-interview-training-question-3.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Working alongside a colleague",
+            "ar": "العمل إلى جانب زميلة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                3,
+                1186,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "show how it works",
+              "ar": "يبيّن كيفية العمل",
+              "kind": "phrase",
+              "x": 76,
+              "y": 69
+            },
+            {
+              "en": "computer monitor",
+              "ar": "شاشة حاسوب",
+              "kind": "object",
+              "x": 82,
+              "y": 83
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Practising calls with supervision",
+          "ar": "التدرّب على المكالمات بإشراف",
+          "purposeEn": "Practise practising calls with supervision.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: التدرّب على المكالمات بإشراف.",
+          "image": {
+            "id": "conv-life-interview-training-question-4",
+            "path": "assets/scenes/conversations/life-interview-training-question-4.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Practising calls with supervision",
+            "ar": "التدرّب على المكالمات بإشراف",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                3,
+                1583,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "answer the phone",
+              "ar": "يردّ على الهاتف",
+              "kind": "phrase",
+              "x": 31,
+              "y": 42
+            },
+            {
+              "en": "supervise",
+              "ar": "يشرف",
+              "kind": "action",
+              "x": 78,
+              "y": 27
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "interview-portfolio-link",
+      "goalAr": "إرسال معرض الأعمال بعد المقابلة",
+      "goalEn": "Sending a portfolio after an interview",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Thanking the interviewer",
+          "ar": "شكر مسؤول المقابلة",
+          "purposeEn": "Practise thanking the interviewer.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: شكر مسؤول المقابلة.",
+          "image": {
+            "id": "conv-life-interview-portfolio-link-1",
+            "path": "assets/scenes/conversations/life-interview-portfolio-link-1.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Thanking the interviewer",
+            "ar": "شكر مسؤول المقابلة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                250,
+                392,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "thank someone",
+              "ar": "يشكر شخصًا",
+              "kind": "phrase",
+              "x": 62,
+              "y": 56
+            },
+            {
+              "en": "closed folder",
+              "ar": "ملف مغلق",
+              "kind": "object",
+              "x": 61,
+              "y": 90
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Preparing to send a portfolio link",
+          "ar": "الاستعداد لإرسال رابط نماذج العمل",
+          "purposeEn": "Practise preparing to send a portfolio link.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: الاستعداد لإرسال رابط نماذج العمل.",
+          "image": {
+            "id": "conv-life-interview-portfolio-link-2",
+            "path": "assets/scenes/conversations/life-interview-portfolio-link-2.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Preparing to send a portfolio link",
+            "ar": "الاستعداد لإرسال رابط نماذج العمل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                398,
+                250,
+                789,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "send a link",
+              "ar": "يرسل رابطًا",
+              "kind": "phrase",
+              "x": 55,
+              "y": 84
+            },
+            {
+              "en": "keyboard",
+              "ar": "لوحة مفاتيح",
+              "kind": "object",
+              "x": 46,
+              "y": 95
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Selecting samples and writing a note",
+          "ar": "اختيار نماذج وكتابة ملاحظة",
+          "purposeEn": "Practise selecting samples and writing a note.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: اختيار نماذج وكتابة ملاحظة.",
+          "image": {
+            "id": "conv-life-interview-portfolio-link-3",
+            "path": "assets/scenes/conversations/life-interview-portfolio-link-3.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Selecting samples and writing a note",
+            "ar": "اختيار نماذج وكتابة ملاحظة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                250,
+                1186,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "work samples",
+              "ar": "نماذج عمل",
+              "kind": "object",
+              "x": 50,
+              "y": 90
+            },
+            {
+              "en": "short note",
+              "ar": "ملاحظة موجزة",
+              "kind": "object",
+              "x": 89,
+              "y": 85
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Showing how you worked with a team",
+          "ar": "توضيح طريقة العمل مع الفريق",
+          "purposeEn": "Practise showing how you worked with a team.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: توضيح طريقة العمل مع الفريق.",
+          "image": {
+            "id": "conv-life-interview-portfolio-link-4",
+            "path": "assets/scenes/conversations/life-interview-portfolio-link-4.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Showing how you worked with a team",
+            "ar": "توضيح طريقة العمل مع الفريق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                250,
+                1583,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "team project",
+              "ar": "مشروع جماعي",
+              "kind": "object",
+              "x": 73,
+              "y": 77
+            },
+            {
+              "en": "open portfolio",
+              "ar": "ملف أعمال مفتوح",
+              "kind": "object",
+              "x": 55,
+              "y": 86
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "interview-handling-pressure",
+      "goalAr": "التعامل مع ضغط العمل",
+      "goalEn": "Handling pressure at work",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Discussing several orders at once",
+          "ar": "مناقشة عدة طلبات في آن واحد",
+          "purposeEn": "Practise discussing several orders at once.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: مناقشة عدة طلبات في آن واحد.",
+          "image": {
+            "id": "conv-life-interview-handling-pressure-1",
+            "path": "assets/scenes/conversations/life-interview-handling-pressure-1.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Discussing several orders at once",
+            "ar": "مناقشة عدة طلبات في آن واحد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                498,
+                392,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "order slips",
+              "ar": "قسائم الطلبات",
+              "kind": "object",
+              "x": 60,
+              "y": 88
+            },
+            {
+              "en": "under pressure",
+              "ar": "تحت الضغط",
+              "kind": "phrase",
+              "x": 53,
+              "y": 34
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Sorting orders by deadline",
+          "ar": "فرز الطلبات بحسب الموعد النهائي",
+          "purposeEn": "Practise sorting orders by deadline.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: فرز الطلبات بحسب الموعد النهائي.",
+          "image": {
+            "id": "conv-life-interview-handling-pressure-2",
+            "path": "assets/scenes/conversations/life-interview-handling-pressure-2.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Sorting orders by deadline",
+            "ar": "فرز الطلبات بحسب الموعد النهائي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                398,
+                498,
+                789,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "sort orders",
+              "ar": "يفرز الطلبات",
+              "kind": "phrase",
+              "x": 52,
+              "y": 74
+            },
+            {
+              "en": "deadline",
+              "ar": "موعد نهائي",
+              "kind": "phrase",
+              "x": 58,
+              "y": 82
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Asking the supervisor for help",
+          "ar": "طلب مساعدة المشرف",
+          "purposeEn": "Practise asking the supervisor for help.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: طلب مساعدة المشرف.",
+          "image": {
+            "id": "conv-life-interview-handling-pressure-3",
+            "path": "assets/scenes/conversations/life-interview-handling-pressure-3.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Asking the supervisor for help",
+            "ar": "طلب مساعدة المشرف",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                498,
+                1186,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "prioritize",
+              "ar": "يرتّب حسب الأولوية",
+              "kind": "action",
+              "x": 55,
+              "y": 71
+            },
+            {
+              "en": "shipping boxes",
+              "ar": "صناديق شحن",
+              "kind": "object",
+              "x": 30,
+              "y": 80
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Keeping a waiting customer informed",
+          "ar": "إطلاع العميل المنتظر على المستجدّات",
+          "purposeEn": "Practise keeping a waiting customer informed.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: إطلاع العميل المنتظر على المستجدّات.",
+          "image": {
+            "id": "conv-life-interview-handling-pressure-4",
+            "path": "assets/scenes/conversations/life-interview-handling-pressure-4.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Keeping a waiting customer informed",
+            "ar": "إطلاع العميل المنتظر على المستجدّات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                498,
+                1583,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "give an estimate",
+              "ar": "يعطي تقديرًا",
+              "kind": "phrase",
+              "x": 62,
+              "y": 68
+            },
+            {
+              "en": "check the time",
+              "ar": "يتحقق من الوقت",
+              "kind": "phrase",
+              "x": 73,
+              "y": 68
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "interview-customer-complaint",
+      "goalAr": "حل شكوى عميل",
+      "goalEn": "Resolving a customer complaint",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Describing a customer complaint",
+          "ar": "وصف شكوى عميل",
+          "purposeEn": "Practise describing a customer complaint.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: وصف شكوى عميل.",
+          "image": {
+            "id": "conv-life-interview-customer-complaint-1",
+            "path": "assets/scenes/conversations/life-interview-customer-complaint-1.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Describing a customer complaint",
+            "ar": "وصف شكوى عميل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                747,
+                392,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "knitted sweater",
+              "ar": "كنزة محبوكة",
+              "kind": "object",
+              "x": 63,
+              "y": 84
+            },
+            {
+              "en": "customer complaint",
+              "ar": "شكوى عميل",
+              "kind": "phrase",
+              "x": 62,
+              "y": 45
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Apologizing for the wrong size",
+          "ar": "الاعتذار عن المقاس الخطأ",
+          "purposeEn": "Practise apologizing for the wrong size.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: الاعتذار عن المقاس الخطأ.",
+          "image": {
+            "id": "conv-life-interview-customer-complaint-2",
+            "path": "assets/scenes/conversations/life-interview-customer-complaint-2.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Apologizing for the wrong size",
+            "ar": "الاعتذار عن المقاس الخطأ",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                398,
+                747,
+                789,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "wrong size",
+              "ar": "مقاس غير صحيح",
+              "kind": "phrase",
+              "x": 43,
+              "y": 62
+            },
+            {
+              "en": "listen carefully",
+              "ar": "يصغي بانتباه",
+              "kind": "phrase",
+              "x": 70,
+              "y": 31
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Arranging an exchange",
+          "ar": "ترتيب استبدال القطعة",
+          "purposeEn": "Practise arranging an exchange.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: ترتيب استبدال القطعة.",
+          "image": {
+            "id": "conv-life-interview-customer-complaint-3",
+            "path": "assets/scenes/conversations/life-interview-customer-complaint-3.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Arranging an exchange",
+            "ar": "ترتيب استبدال القطعة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                747,
+                1186,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "exchange an item",
+              "ar": "يستبدل قطعة",
+              "kind": "phrase",
+              "x": 59,
+              "y": 62
+            },
+            {
+              "en": "in stock",
+              "ar": "متوفّر في المخزون",
+              "kind": "phrase",
+              "x": 56,
+              "y": 25
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Checking the item tag and label",
+          "ar": "مطابقة بطاقة المقاس مع ملصق العبوة",
+          "purposeEn": "Practise checking the item tag and label.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: مطابقة بطاقة المقاس مع ملصق العبوة.",
+          "image": {
+            "id": "conv-life-interview-customer-complaint-4",
+            "path": "assets/scenes/conversations/life-interview-customer-complaint-4.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Checking the item tag and label",
+            "ar": "مطابقة بطاقة المقاس مع ملصق العبوة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                747,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "size tag",
+              "ar": "بطاقة المقاس",
+              "kind": "object",
+              "x": 50,
+              "y": 59
+            },
+            {
+              "en": "packaging label",
+              "ar": "ملصق العبوة",
+              "kind": "object",
+              "x": 73,
+              "y": 69
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

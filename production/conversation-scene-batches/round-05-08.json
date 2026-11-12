@@ -1,0 +1,742 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "98a7762ddb98a53ab91194b870c6cd2517433fb2518593f70d29854389ee05b8"
+  },
+  "conversations": [
+    {
+      "id": "deliver-before-closing",
+      "goalAr": "التوصيل قبل الإغلاق",
+      "goalEn": "Delivery before closing",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Preparing to close the shop",
+          "ar": "الاستعداد لإغلاق المحل",
+          "purposeEn": "Practise preparing to close the shop.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: الاستعداد لإغلاق المحل.",
+          "image": {
+            "id": "conv-life-deliver-before-closing-1",
+            "path": "assets/scenes/conversations/life-deliver-before-closing-1.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Preparing to close the shop",
+            "ar": "الاستعداد لإغلاق المحل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                394,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "parcel",
+              "ar": "طرد",
+              "kind": "object",
+              "x": 48,
+              "y": 88
+            },
+            {
+              "en": "shipping label",
+              "ar": "ملصق الشحن",
+              "kind": "object",
+              "x": 47,
+              "y": 80
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Waiting for the driver’s call",
+          "ar": "انتظار اتصال السائق",
+          "purposeEn": "Practise waiting for the driver’s call.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: انتظار اتصال السائق.",
+          "image": {
+            "id": "conv-life-deliver-before-closing-2",
+            "path": "assets/scenes/conversations/life-deliver-before-closing-2.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Waiting for the driver’s call",
+            "ar": "انتظار اتصال السائق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                3,
+                791,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "corded phone",
+              "ar": "هاتف بسلك",
+              "kind": "object",
+              "x": 58,
+              "y": 46
+            },
+            {
+              "en": "take a call",
+              "ar": "يتلقّى اتصالًا",
+              "kind": "phrase",
+              "x": 53,
+              "y": 38
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Leaving the parcel at reception",
+          "ar": "ترك الطرد لدى الاستقبال",
+          "purposeEn": "Practise leaving the parcel at reception.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: ترك الطرد لدى الاستقبال.",
+          "image": {
+            "id": "conv-life-deliver-before-closing-3",
+            "path": "assets/scenes/conversations/life-deliver-before-closing-3.webp",
+            "width": 392,
+            "height": 241,
+            "en": "Leaving the parcel at reception",
+            "ar": "ترك الطرد لدى الاستقبال",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                3,
+                1189,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "courier",
+              "ar": "مندوب توصيل",
+              "kind": "object",
+              "x": 21,
+              "y": 26
+            },
+            {
+              "en": "hand over a parcel",
+              "ar": "يسلّم طردًا",
+              "kind": "phrase",
+              "x": 58,
+              "y": 74
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Matching a parcel to an order",
+          "ar": "مطابقة الطرد مع الطلب",
+          "purposeEn": "Practise matching a parcel to an order.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: مطابقة الطرد مع الطلب.",
+          "image": {
+            "id": "conv-life-deliver-before-closing-4",
+            "path": "assets/scenes/conversations/life-deliver-before-closing-4.webp",
+            "width": 388,
+            "height": 241,
+            "en": "Matching a parcel to an order",
+            "ar": "مطابقة الطرد مع الطلب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1195,
+                3,
+                1583,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "order slip",
+              "ar": "قسيمة الطلب",
+              "kind": "object",
+              "x": 63,
+              "y": 61
+            },
+            {
+              "en": "match to",
+              "ar": "يطابق مع",
+              "kind": "phrase",
+              "x": 53,
+              "y": 72
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "first-interview-introduction",
+      "goalAr": "التعريف بالنفس في المقابلة",
+      "goalEn": "Introducing yourself in an interview",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Introducing yourself at an interview",
+          "ar": "التعريف بالنفس في مقابلة",
+          "purposeEn": "Practise introducing yourself at an interview.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: التعريف بالنفس في مقابلة.",
+          "image": {
+            "id": "conv-life-first-interview-introduction-1",
+            "path": "assets/scenes/conversations/life-first-interview-introduction-1.webp",
+            "width": 391,
+            "height": 244,
+            "en": "Introducing yourself at an interview",
+            "ar": "التعريف بالنفس في مقابلة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                250,
+                394,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "job applicant",
+              "ar": "متقدّم لوظيفة",
+              "kind": "object",
+              "x": 34,
+              "y": 28
+            },
+            {
+              "en": "shake hands",
+              "ar": "يتصافح",
+              "kind": "phrase",
+              "x": 54,
+              "y": 85
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Explaining previous work",
+          "ar": "شرح الخبرة في العمل السابق",
+          "purposeEn": "Practise explaining previous work.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: شرح الخبرة في العمل السابق.",
+          "image": {
+            "id": "conv-life-first-interview-introduction-2",
+            "path": "assets/scenes/conversations/life-first-interview-introduction-2.webp",
+            "width": 391,
+            "height": 244,
+            "en": "Explaining previous work",
+            "ar": "شرح الخبرة في العمل السابق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                250,
+                791,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "shop counter",
+              "ar": "منضدة المحل",
+              "kind": "object",
+              "x": 62,
+              "y": 81
+            },
+            {
+              "en": "work experience",
+              "ar": "خبرة عملية",
+              "kind": "phrase",
+              "x": 54,
+              "y": 66
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Describing a busy day in the shop",
+          "ar": "وصف يوم مزدحم في المتجر",
+          "purposeEn": "Practise describing a busy day in the shop.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: وصف يوم مزدحم في المتجر.",
+          "image": {
+            "id": "conv-life-first-interview-introduction-3",
+            "path": "assets/scenes/conversations/life-first-interview-introduction-3.webp",
+            "width": 392,
+            "height": 244,
+            "en": "Describing a busy day in the shop",
+            "ar": "وصف يوم مزدحم في المتجر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                250,
+                1189,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "queue",
+              "ar": "طابور",
+              "kind": "object",
+              "x": 76,
+              "y": 51
+            },
+            {
+              "en": "cash register",
+              "ar": "آلة تسجيل المدفوعات",
+              "kind": "object",
+              "x": 32,
+              "y": 51
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Asking where you will start",
+          "ar": "السؤال عن مكان بدء العمل",
+          "purposeEn": "Practise asking where you will start.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: السؤال عن مكان بدء العمل.",
+          "image": {
+            "id": "conv-life-first-interview-introduction-4",
+            "path": "assets/scenes/conversations/life-first-interview-introduction-4.webp",
+            "width": 388,
+            "height": 244,
+            "en": "Asking where you will start",
+            "ar": "السؤال عن مكان بدء العمل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1195,
+                250,
+                1583,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "shop floor",
+              "ar": "مساحة البيع في المتجر",
+              "kind": "object",
+              "x": 73,
+              "y": 75
+            },
+            {
+              "en": "point to a photo",
+              "ar": "يشير إلى صورة",
+              "kind": "phrase",
+              "x": 43,
+              "y": 69
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "why-this-job",
+      "goalAr": "سبب التقدّم للوظيفة",
+      "goalEn": "Why you want this job",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Explaining why you want the job",
+          "ar": "شرح سبب الرغبة في الوظيفة",
+          "purposeEn": "Practise explaining why you want the job.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: شرح سبب الرغبة في الوظيفة.",
+          "image": {
+            "id": "conv-life-why-this-job-1",
+            "path": "assets/scenes/conversations/life-why-this-job-1.webp",
+            "width": 391,
+            "height": 239,
+            "en": "Explaining why you want the job",
+            "ar": "شرح سبب الرغبة في الوظيفة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                500,
+                394,
+                739
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "open-handed gesture",
+              "ar": "إيماءة بيد مبسوطة",
+              "kind": "object",
+              "x": 30,
+              "y": 73
+            },
+            {
+              "en": "interview",
+              "ar": "مقابلة عمل",
+              "kind": "object",
+              "x": 61,
+              "y": 40
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Discussing phone support",
+          "ar": "مناقشة خدمة العملاء عبر الهاتف",
+          "purposeEn": "Practise discussing phone support.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: مناقشة خدمة العملاء عبر الهاتف.",
+          "image": {
+            "id": "conv-life-why-this-job-2",
+            "path": "assets/scenes/conversations/life-why-this-job-2.webp",
+            "width": 391,
+            "height": 239,
+            "en": "Discussing phone support",
+            "ar": "مناقشة خدمة العملاء عبر الهاتف",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                500,
+                791,
+                739
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "desk phone",
+              "ar": "هاتف مكتبي",
+              "kind": "object",
+              "x": 58,
+              "y": 86
+            },
+            {
+              "en": "interviewer",
+              "ar": "مسؤولة المقابلة",
+              "kind": "object",
+              "x": 86,
+              "y": 24
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Handling an unclear request",
+          "ar": "التعامل مع طلب غير واضح",
+          "purposeEn": "Practise handling an unclear request.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: التعامل مع طلب غير واضح.",
+          "image": {
+            "id": "conv-life-why-this-job-3",
+            "path": "assets/scenes/conversations/life-why-this-job-3.webp",
+            "width": 392,
+            "height": 239,
+            "en": "Handling an unclear request",
+            "ar": "التعامل مع طلب غير واضح",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                500,
+                1189,
+                739
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "product shelf",
+              "ar": "رفّ منتجات",
+              "kind": "object",
+              "x": 86,
+              "y": 56
+            },
+            {
+              "en": "listen to a caller",
+              "ar": "يصغي إلى متّصل",
+              "kind": "phrase",
+              "x": 32,
+              "y": 39
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Offering two suitable options",
+          "ar": "عرض خيارين مناسبين",
+          "purposeEn": "Practise offering two suitable options.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: عرض خيارين مناسبين.",
+          "image": {
+            "id": "conv-life-why-this-job-4",
+            "path": "assets/scenes/conversations/life-why-this-job-4.webp",
+            "width": 388,
+            "height": 239,
+            "en": "Offering two suitable options",
+            "ar": "عرض خيارين مناسبين",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1195,
+                500,
+                1583,
+                739
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "boxed product",
+              "ar": "منتج في علبة",
+              "kind": "object",
+              "x": 64,
+              "y": 70
+            },
+            {
+              "en": "offer two options",
+              "ar": "يعرض خيارين",
+              "kind": "phrase",
+              "x": 55,
+              "y": 74
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "interview-work-sample",
+      "goalAr": "عرض عيّنة عمل في المقابلة",
+      "goalEn": "Showing a work sample",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Asking to show a work sample",
+          "ar": "طلب عرض نموذج من العمل",
+          "purposeEn": "Practise asking to show a work sample.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: طلب عرض نموذج من العمل.",
+          "image": {
+            "id": "conv-life-interview-work-sample-1",
+            "path": "assets/scenes/conversations/life-interview-work-sample-1.webp",
+            "width": 391,
+            "height": 244,
+            "en": "Asking to show a work sample",
+            "ar": "طلب عرض نموذج من العمل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                745,
+                394,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "portfolio folder",
+              "ar": "ملف نماذج العمل",
+              "kind": "object",
+              "x": 52,
+              "y": 92
+            },
+            {
+              "en": "present a sample",
+              "ar": "يقدّم نموذجًا",
+              "kind": "phrase",
+              "x": 36,
+              "y": 80
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Showing the returns checklist",
+          "ar": "عرض قائمة التحقّق الخاصة بالمرتجعات",
+          "purposeEn": "Practise showing the returns checklist.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: عرض قائمة التحقّق الخاصة بالمرتجعات.",
+          "image": {
+            "id": "conv-life-interview-work-sample-2",
+            "path": "assets/scenes/conversations/life-interview-work-sample-2.webp",
+            "width": 391,
+            "height": 244,
+            "en": "Showing the returns checklist",
+            "ar": "عرض قائمة التحقّق الخاصة بالمرتجعات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                745,
+                791,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "returns checklist",
+              "ar": "قائمة تحقّق للمرتجعات",
+              "kind": "object",
+              "x": 61,
+              "y": 70
+            },
+            {
+              "en": "tick box",
+              "ar": "خانة اختيار",
+              "kind": "object",
+              "x": 51,
+              "y": 67
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Explaining the summary and details",
+          "ar": "شرح الملخّص والتفاصيل",
+          "purposeEn": "Practise explaining the summary and details.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: شرح الملخّص والتفاصيل.",
+          "image": {
+            "id": "conv-life-interview-work-sample-3",
+            "path": "assets/scenes/conversations/life-interview-work-sample-3.webp",
+            "width": 392,
+            "height": 244,
+            "en": "Explaining the summary and details",
+            "ar": "شرح الملخّص والتفاصيل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                745,
+                1189,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "summary page",
+              "ar": "صفحة ملخّص",
+              "kind": "object",
+              "x": 35,
+              "y": 73
+            },
+            {
+              "en": "detail page",
+              "ar": "صفحة التفاصيل",
+              "kind": "object",
+              "x": 63,
+              "y": 75
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Explaining the figure behind a chart",
+          "ar": "شرح الرقم وراء الرسم البياني",
+          "purposeEn": "Practise explaining the figure behind a chart.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: شرح الرقم وراء الرسم البياني.",
+          "image": {
+            "id": "conv-life-interview-work-sample-4",
+            "path": "assets/scenes/conversations/life-interview-work-sample-4.webp",
+            "width": 388,
+            "height": 244,
+            "en": "Explaining the figure behind a chart",
+            "ar": "شرح الرقم وراء الرسم البياني",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1195,
+                745,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bar chart",
+              "ar": "رسم بياني بالأعمدة",
+              "kind": "object",
+              "x": 54,
+              "y": 65
+            },
+            {
+              "en": "pie chart",
+              "ar": "رسم بياني دائري",
+              "kind": "object",
+              "x": 51,
+              "y": 83
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

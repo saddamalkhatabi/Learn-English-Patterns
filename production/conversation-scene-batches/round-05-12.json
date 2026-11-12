@@ -1,0 +1,742 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "540a98e1ba1ed19ef2a1ab5900bf4be490797e784a99bb201c4ee2a805ac33ca"
+  },
+  "conversations": [
+    {
+      "id": "document-before-lockup",
+      "goalAr": "إيداع مستند قبل الإغلاق",
+      "goalEn": "Submitting a document before closing",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Arriving before the office closes",
+          "ar": "الوصول قبل إغلاق المكتب",
+          "purposeEn": "Practise arriving before the office closes.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: الوصول قبل إغلاق المكتب.",
+          "image": {
+            "id": "conv-life-document-before-lockup-1",
+            "path": "assets/scenes/conversations/life-document-before-lockup-1.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Arriving before the office closes",
+            "ar": "الوصول قبل إغلاق المكتب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                393,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "document folder",
+              "ar": "ملف مستندات",
+              "kind": "object",
+              "x": 36,
+              "y": 65
+            },
+            {
+              "en": "public office",
+              "ar": "مكتب حكومي",
+              "kind": "object",
+              "x": 65,
+              "y": 27
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Asking for the submission desk",
+          "ar": "السؤال عن مكتب تسليم الطلبات",
+          "purposeEn": "Practise asking for the submission desk.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: السؤال عن مكتب تسليم الطلبات.",
+          "image": {
+            "id": "conv-life-document-before-lockup-2",
+            "path": "assets/scenes/conversations/life-document-before-lockup-2.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Asking for the submission desk",
+            "ar": "السؤال عن مكتب تسليم الطلبات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                3,
+                791,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "office corridor",
+              "ar": "ممرّ المكتب",
+              "kind": "object",
+              "x": 74,
+              "y": 39
+            },
+            {
+              "en": "point the way",
+              "ar": "يدلّ على الطريق",
+              "kind": "phrase",
+              "x": 84,
+              "y": 42
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Finding the first door on the left",
+          "ar": "العثور على أول باب على اليسار",
+          "purposeEn": "Practise finding the first door on the left.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: العثور على أول باب على اليسار.",
+          "image": {
+            "id": "conv-life-document-before-lockup-3",
+            "path": "assets/scenes/conversations/life-document-before-lockup-3.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Finding the first door on the left",
+            "ar": "العثور على أول باب على اليسار",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                3,
+                1186,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "first door on the left",
+              "ar": "أول باب على اليسار",
+              "kind": "phrase",
+              "x": 22,
+              "y": 34
+            },
+            {
+              "en": "extra copy",
+              "ar": "نسخة إضافية",
+              "kind": "object",
+              "x": 43,
+              "y": 65
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Getting a stamped copy",
+          "ar": "الحصول على نسخة مختومة",
+          "purposeEn": "Practise getting a stamped copy.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: الحصول على نسخة مختومة.",
+          "image": {
+            "id": "conv-life-document-before-lockup-4",
+            "path": "assets/scenes/conversations/life-document-before-lockup-4.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Getting a stamped copy",
+            "ar": "الحصول على نسخة مختومة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                3,
+                1583,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "rubber stamp",
+              "ar": "ختم مطاطي",
+              "kind": "object",
+              "x": 58,
+              "y": 78
+            },
+            {
+              "en": "stamp a copy",
+              "ar": "يختم نسخة",
+              "kind": "phrase",
+              "x": 57,
+              "y": 83
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quieter-carriage",
+      "goalAr": "عربة قطار أهدأ",
+      "goalEn": "A quieter train carriage",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Asking for a window seat",
+          "ar": "طلب الجلوس بجوار النافذة",
+          "purposeEn": "Practise asking for a window seat.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: طلب الجلوس بجوار النافذة.",
+          "image": {
+            "id": "conv-life-quieter-carriage-1",
+            "path": "assets/scenes/conversations/life-quieter-carriage-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Asking for a window seat",
+            "ar": "طلب الجلوس بجوار النافذة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                250,
+                393,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "window seat",
+              "ar": "مقعد بجوار النافذة",
+              "kind": "object",
+              "x": 82,
+              "y": 69
+            },
+            {
+              "en": "train carriage",
+              "ar": "عربة قطار",
+              "kind": "object",
+              "x": 61,
+              "y": 20
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Moving a bag off the aisle seat",
+          "ar": "إزالة الحقيبة عن مقعد الممر",
+          "purposeEn": "Practise moving a bag off the aisle seat.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: إزالة الحقيبة عن مقعد الممر.",
+          "image": {
+            "id": "conv-life-quieter-carriage-2",
+            "path": "assets/scenes/conversations/life-quieter-carriage-2.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Moving a bag off the aisle seat",
+            "ar": "إزالة الحقيبة عن مقعد الممر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                250,
+                791,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "aisle seat",
+              "ar": "مقعد على الممر",
+              "kind": "object",
+              "x": 56,
+              "y": 61
+            },
+            {
+              "en": "lift a bag",
+              "ar": "يرفع حقيبة",
+              "kind": "phrase",
+              "x": 62,
+              "y": 58
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Putting the bag in the luggage rack",
+          "ar": "وضع الحقيبة على رف الأمتعة",
+          "purposeEn": "Practise putting the bag in the luggage rack.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: وضع الحقيبة على رف الأمتعة.",
+          "image": {
+            "id": "conv-life-quieter-carriage-3",
+            "path": "assets/scenes/conversations/life-quieter-carriage-3.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Putting the bag in the luggage rack",
+            "ar": "وضع الحقيبة على رف الأمتعة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                250,
+                1186,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "overhead rack",
+              "ar": "رفّ أمتعة علوي",
+              "kind": "object",
+              "x": 84,
+              "y": 39
+            },
+            {
+              "en": "above your head",
+              "ar": "فوق الرأس",
+              "kind": "phrase",
+              "x": 75,
+              "y": 30
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Leaving a seat free for the next stop",
+          "ar": "إبقاء مقعد خاليًا حتى المحطة التالية",
+          "purposeEn": "Practise leaving a seat free for the next stop.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: إبقاء مقعد خاليًا حتى المحطة التالية.",
+          "image": {
+            "id": "conv-life-quieter-carriage-4",
+            "path": "assets/scenes/conversations/life-quieter-carriage-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Leaving a seat free for the next stop",
+            "ar": "إبقاء مقعد خاليًا حتى المحطة التالية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                250,
+                1583,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "next stop",
+              "ar": "المحطة التالية",
+              "kind": "phrase",
+              "x": 86,
+              "y": 49
+            },
+            {
+              "en": "station platform",
+              "ar": "رصيف المحطة",
+              "kind": "object",
+              "x": 86,
+              "y": 57
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "accepting-a-visit",
+      "goalAr": "قبول دعوة إلى زيارة",
+      "goalEn": "Accepting an invitation to visit",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Inviting someone to a family visit",
+          "ar": "دعوة شخص لزيارة العائلة",
+          "purposeEn": "Practise inviting someone to a family visit.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: دعوة شخص لزيارة العائلة.",
+          "image": {
+            "id": "conv-life-accepting-a-visit-1",
+            "path": "assets/scenes/conversations/life-accepting-a-visit-1.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Inviting someone to a family visit",
+            "ar": "دعوة شخص لزيارة العائلة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                499,
+                393,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "invite someone over",
+              "ar": "يدعو شخصًا إلى منزله",
+              "kind": "phrase",
+              "x": 27,
+              "y": 42
+            },
+            {
+              "en": "coffee table",
+              "ar": "طاولة قهوة",
+              "kind": "object",
+              "x": 84,
+              "y": 83
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Arranging tea earlier in the day",
+          "ar": "الاتفاق على شرب الشاي في وقت أبكر",
+          "purposeEn": "Practise arranging tea earlier in the day.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: الاتفاق على شرب الشاي في وقت أبكر.",
+          "image": {
+            "id": "conv-life-accepting-a-visit-2",
+            "path": "assets/scenes/conversations/life-accepting-a-visit-2.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Arranging tea earlier in the day",
+            "ar": "الاتفاق على شرب الشاي في وقت أبكر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                499,
+                791,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "pour tea",
+              "ar": "يصبّ الشاي",
+              "kind": "phrase",
+              "x": 70,
+              "y": 76
+            },
+            {
+              "en": "tea tray",
+              "ar": "صينية شاي",
+              "kind": "object",
+              "x": 72,
+              "y": 88
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Bringing fruit to the visit",
+          "ar": "إحضار الفاكهة للزيارة",
+          "purposeEn": "Practise bringing fruit to the visit.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: إحضار الفاكهة للزيارة.",
+          "image": {
+            "id": "conv-life-accepting-a-visit-3",
+            "path": "assets/scenes/conversations/life-accepting-a-visit-3.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Bringing fruit to the visit",
+            "ar": "إحضار الفاكهة للزيارة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                499,
+                1186,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "fruit bowl",
+              "ar": "وعاء فاكهة",
+              "kind": "object",
+              "x": 39,
+              "y": 73
+            },
+            {
+              "en": "bunch of grapes",
+              "ar": "عنقود عنب",
+              "kind": "object",
+              "x": 40,
+              "y": 67
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Calling before putting the kettle on",
+          "ar": "الاتصال قبل وضع الإبريق على النار",
+          "purposeEn": "Practise calling before putting the kettle on.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: الاتصال قبل وضع الإبريق على النار.",
+          "image": {
+            "id": "conv-life-accepting-a-visit-4",
+            "path": "assets/scenes/conversations/life-accepting-a-visit-4.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Calling before putting the kettle on",
+            "ar": "الاتصال قبل وضع الإبريق على النار",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                499,
+                1583,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "kettle",
+              "ar": "إبريق غلي الماء",
+              "kind": "object",
+              "x": 79,
+              "y": 67
+            },
+            {
+              "en": "gas stove",
+              "ar": "موقد غاز",
+              "kind": "object",
+              "x": 79,
+              "y": 90
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "study-progress-news",
+      "goalAr": "الحديث عن تقدّم الدراسة",
+      "goalEn": "Sharing news about your progress",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Sharing a speaking score",
+          "ar": "مشاركة نتيجة المحادثة الشفهية",
+          "purposeEn": "Practise sharing a speaking score.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: مشاركة نتيجة المحادثة الشفهية.",
+          "image": {
+            "id": "conv-life-study-progress-news-1",
+            "path": "assets/scenes/conversations/life-study-progress-news-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Sharing a speaking score",
+            "ar": "مشاركة نتيجة المحادثة الشفهية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                747,
+                393,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "pleased with the result",
+              "ar": "مسرور بالنتيجة",
+              "kind": "phrase",
+              "x": 53,
+              "y": 31
+            },
+            {
+              "en": "assessment sheet",
+              "ar": "ورقة تقييم",
+              "kind": "object",
+              "x": 49,
+              "y": 74
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Praising progress without notes",
+          "ar": "الإشادة بالتقدّم دون الرجوع للملاحظات",
+          "purposeEn": "Practise praising progress without notes.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: الإشادة بالتقدّم دون الرجوع للملاحظات.",
+          "image": {
+            "id": "conv-life-study-progress-news-2",
+            "path": "assets/scenes/conversations/life-study-progress-news-2.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Praising progress without notes",
+            "ar": "الإشادة بالتقدّم دون الرجوع للملاحظات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                747,
+                791,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "congratulate",
+              "ar": "يهنّئ",
+              "kind": "action",
+              "x": 30,
+              "y": 39
+            },
+            {
+              "en": "close a notebook",
+              "ar": "يغلق دفترًا",
+              "kind": "phrase",
+              "x": 69,
+              "y": 87
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Timing the next practice set",
+          "ar": "توقيت مجموعة التدريب التالية",
+          "purposeEn": "Practise timing the next practice set.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: توقيت مجموعة التدريب التالية.",
+          "image": {
+            "id": "conv-life-study-progress-news-3",
+            "path": "assets/scenes/conversations/life-study-progress-news-3.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Timing the next practice set",
+            "ar": "توقيت مجموعة التدريب التالية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                747,
+                1186,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "prompt card",
+              "ar": "بطاقة سؤال",
+              "kind": "object",
+              "x": 53,
+              "y": 68
+            },
+            {
+              "en": "digital timer",
+              "ar": "مؤقّت رقمي",
+              "kind": "object",
+              "x": 85,
+              "y": 86
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Checking answers at the end",
+          "ar": "مراجعة الإجابات في النهاية",
+          "purposeEn": "Practise checking answers at the end.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: مراجعة الإجابات في النهاية.",
+          "image": {
+            "id": "conv-life-study-progress-news-4",
+            "path": "assets/scenes/conversations/life-study-progress-news-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Checking answers at the end",
+            "ar": "مراجعة الإجابات في النهاية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                747,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "check your answers",
+              "ar": "يراجع إجاباته",
+              "kind": "phrase",
+              "x": 56,
+              "y": 87
+            },
+            {
+              "en": "practice notes",
+              "ar": "ملاحظات التدريب",
+              "kind": "object",
+              "x": 64,
+              "y": 93
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

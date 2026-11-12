@@ -1,0 +1,742 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "e07805773196f41e3155fa6746470b8426ddb09b69e611200d995af6534789db"
+  },
+  "conversations": [
+    {
+      "id": "food-plan-alternatives",
+      "goalAr": "اتّفق على قائمة تلائم التفضيلات وما هو متوفر.",
+      "goalEn": "Agree on a menu that fits preferences and available ingredients.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Offering soup and sides",
+          "ar": "تقديم الحساء والأطباق الجانبية",
+          "purposeEn": "Practise offering soup and sides.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: تقديم الحساء والأطباق الجانبية.",
+          "image": {
+            "id": "conv-life-food-plan-alternatives-1",
+            "path": "assets/scenes/conversations/life-food-plan-alternatives-1.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Offering soup and sides",
+            "ar": "تقديم الحساء والأطباق الجانبية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                393,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "soup",
+              "ar": "حساء",
+              "kind": "object",
+              "x": 25,
+              "y": 81
+            },
+            {
+              "en": "flatbread",
+              "ar": "خبز مسطّح",
+              "kind": "object",
+              "x": 76,
+              "y": 76
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Choosing rice and salad",
+          "ar": "اختيار الأرز والسلطة",
+          "purposeEn": "Practise choosing rice and salad.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: اختيار الأرز والسلطة.",
+          "image": {
+            "id": "conv-life-food-plan-alternatives-2",
+            "path": "assets/scenes/conversations/life-food-plan-alternatives-2.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Choosing rice and salad",
+            "ar": "اختيار الأرز والسلطة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                3,
+                789,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "rice",
+              "ar": "أرز",
+              "kind": "object",
+              "x": 34,
+              "y": 84
+            },
+            {
+              "en": "salad bowl",
+              "ar": "وعاء سلطة",
+              "kind": "object",
+              "x": 56,
+              "y": 76
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Buying cucumbers",
+          "ar": "شراء الخيار",
+          "purposeEn": "Practise buying cucumbers.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: شراء الخيار.",
+          "image": {
+            "id": "conv-life-food-plan-alternatives-3",
+            "path": "assets/scenes/conversations/life-food-plan-alternatives-3.webp",
+            "width": 392,
+            "height": 241,
+            "en": "Buying cucumbers",
+            "ar": "شراء الخيار",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                3,
+                1187,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "cucumber",
+              "ar": "خيارة",
+              "kind": "object",
+              "x": 53,
+              "y": 57
+            },
+            {
+              "en": "produce stall",
+              "ar": "بسطة خضار",
+              "kind": "object",
+              "x": 20,
+              "y": 69
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Counting the plates",
+          "ar": "عدّ الصحون",
+          "purposeEn": "Practise counting the plates.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: عدّ الصحون.",
+          "image": {
+            "id": "conv-life-food-plan-alternatives-4",
+            "path": "assets/scenes/conversations/life-food-plan-alternatives-4.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Counting the plates",
+            "ar": "عدّ الصحون",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                3,
+                1583,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "stack of plates",
+              "ar": "رزمة صحون",
+              "kind": "object",
+              "x": 27,
+              "y": 53
+            },
+            {
+              "en": "kitchen cupboard",
+              "ar": "خزانة المطبخ",
+              "kind": "object",
+              "x": 11,
+              "y": 32
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "early-flight-routine",
+      "goalAr": "الاستعداد لرحلة صباحية",
+      "goalEn": "Getting ready for an early flight",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Setting a backup alarm",
+          "ar": "ضبط منبّه احتياطي",
+          "purposeEn": "Practise setting a backup alarm.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: ضبط منبّه احتياطي.",
+          "image": {
+            "id": "conv-life-early-flight-routine-1",
+            "path": "assets/scenes/conversations/life-early-flight-routine-1.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Setting a backup alarm",
+            "ar": "ضبط منبّه احتياطي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                250,
+                393,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "alarm clock",
+              "ar": "ساعة منبّه",
+              "kind": "object",
+              "x": 50,
+              "y": 80
+            },
+            {
+              "en": "bedside table",
+              "ar": "طاولة بجانب السرير",
+              "kind": "object",
+              "x": 31,
+              "y": 93
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Knocking before leaving",
+          "ar": "طرق الباب قبل المغادرة",
+          "purposeEn": "Practise knocking before leaving.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: طرق الباب قبل المغادرة.",
+          "image": {
+            "id": "conv-life-early-flight-routine-2",
+            "path": "assets/scenes/conversations/life-early-flight-routine-2.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Knocking before leaving",
+            "ar": "طرق الباب قبل المغادرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                250,
+                789,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "knock on the door",
+              "ar": "يطرق الباب",
+              "kind": "phrase",
+              "x": 47,
+              "y": 38
+            },
+            {
+              "en": "passport",
+              "ar": "جواز سفر",
+              "kind": "object",
+              "x": 40,
+              "y": 77
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Getting travel documents ready",
+          "ar": "تجهيز وثائق السفر",
+          "purposeEn": "Practise getting travel documents ready.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: تجهيز وثائق السفر.",
+          "image": {
+            "id": "conv-life-early-flight-routine-3",
+            "path": "assets/scenes/conversations/life-early-flight-routine-3.webp",
+            "width": 392,
+            "height": 243,
+            "en": "Getting travel documents ready",
+            "ar": "تجهيز وثائق السفر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                250,
+                1187,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "boarding pass",
+              "ar": "بطاقة صعود الطائرة",
+              "kind": "object",
+              "x": 40,
+              "y": 70
+            },
+            {
+              "en": "suitcase",
+              "ar": "حقيبة سفر",
+              "kind": "object",
+              "x": 81,
+              "y": 72
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Opening a saved boarding pass",
+          "ar": "فتح بطاقة الصعود المحفوظة",
+          "purposeEn": "Practise opening a saved boarding pass.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: فتح بطاقة الصعود المحفوظة.",
+          "image": {
+            "id": "conv-life-early-flight-routine-4",
+            "path": "assets/scenes/conversations/life-early-flight-routine-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Opening a saved boarding pass",
+            "ar": "فتح بطاقة الصعود المحفوظة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                250,
+                1583,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "airport lounge",
+              "ar": "صالة المطار",
+              "kind": "object",
+              "x": 41,
+              "y": 34
+            },
+            {
+              "en": "show the pass",
+              "ar": "يعرض بطاقة الصعود",
+              "kind": "phrase",
+              "x": 75,
+              "y": 55
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "morning-at-the-hotel",
+      "goalAr": "الفطور في الفندق",
+      "goalEn": "Breakfast at the hotel",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Asking about breakfast",
+          "ar": "السؤال عن الإفطار",
+          "purposeEn": "Practise asking about breakfast.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: السؤال عن الإفطار.",
+          "image": {
+            "id": "conv-life-morning-at-the-hotel-1",
+            "path": "assets/scenes/conversations/life-morning-at-the-hotel-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Asking about breakfast",
+            "ar": "السؤال عن الإفطار",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                499,
+                393,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "reception bell",
+              "ar": "جرس الاستقبال",
+              "kind": "object",
+              "x": 83,
+              "y": 72
+            },
+            {
+              "en": "hotel guest",
+              "ar": "نزيل الفندق",
+              "kind": "object",
+              "x": 29,
+              "y": 31
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Locating the dining room",
+          "ar": "تحديد مكان قاعة الطعام",
+          "purposeEn": "Practise locating the dining room.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: تحديد مكان قاعة الطعام.",
+          "image": {
+            "id": "conv-life-morning-at-the-hotel-2",
+            "path": "assets/scenes/conversations/life-morning-at-the-hotel-2.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Locating the dining room",
+            "ar": "تحديد مكان قاعة الطعام",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                499,
+                789,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "upstairs",
+              "ar": "في الطابق العلوي",
+              "kind": "phrase",
+              "x": 78,
+              "y": 18
+            },
+            {
+              "en": "handrail",
+              "ar": "درابزين",
+              "kind": "object",
+              "x": 46,
+              "y": 68
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Packing breakfast to go",
+          "ar": "تجهيز إفطار سفري",
+          "purposeEn": "Practise packing breakfast to go.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: تجهيز إفطار سفري.",
+          "image": {
+            "id": "conv-life-morning-at-the-hotel-3",
+            "path": "assets/scenes/conversations/life-morning-at-the-hotel-3.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Packing breakfast to go",
+            "ar": "تجهيز إفطار سفري",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                499,
+                1187,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "takeaway box",
+              "ar": "علبة طعام سفري",
+              "kind": "object",
+              "x": 69,
+              "y": 85
+            },
+            {
+              "en": "banana",
+              "ar": "موزة",
+              "kind": "object",
+              "x": 63,
+              "y": 75
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Picking up breakfast at dawn",
+          "ar": "استلام الإفطار عند الفجر",
+          "purposeEn": "Practise picking up breakfast at dawn.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: استلام الإفطار عند الفجر.",
+          "image": {
+            "id": "conv-life-morning-at-the-hotel-4",
+            "path": "assets/scenes/conversations/life-morning-at-the-hotel-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Picking up breakfast at dawn",
+            "ar": "استلام الإفطار عند الفجر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                499,
+                1583,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "pick up breakfast",
+              "ar": "يستلم الإفطار",
+              "kind": "phrase",
+              "x": 50,
+              "y": 60
+            },
+            {
+              "en": "dawn",
+              "ar": "فجر",
+              "kind": "object",
+              "x": 57,
+              "y": 17
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sleepover-toothbrush",
+      "goalAr": "فرشاة أسنان عند المبيت",
+      "goalEn": "A toothbrush for a sleepover",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Noticing the missing toothbrush",
+          "ar": "ملاحظة نسيان فرشاة الأسنان",
+          "purposeEn": "Practise noticing the missing toothbrush.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: ملاحظة نسيان فرشاة الأسنان.",
+          "image": {
+            "id": "conv-life-sleepover-toothbrush-1",
+            "path": "assets/scenes/conversations/life-sleepover-toothbrush-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Noticing the missing toothbrush",
+            "ar": "ملاحظة نسيان فرشاة الأسنان",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                747,
+                393,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "toiletry bag",
+              "ar": "حقيبة أدوات النظافة",
+              "kind": "object",
+              "x": 65,
+              "y": 88
+            },
+            {
+              "en": "worried",
+              "ar": "قلق",
+              "kind": "description",
+              "x": 52,
+              "y": 31
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Finding a spare toothbrush",
+          "ar": "العثور على فرشاة أسنان احتياطية",
+          "purposeEn": "Practise finding a spare toothbrush.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: العثور على فرشاة أسنان احتياطية.",
+          "image": {
+            "id": "conv-life-sleepover-toothbrush-2",
+            "path": "assets/scenes/conversations/life-sleepover-toothbrush-2.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Finding a spare toothbrush",
+            "ar": "العثور على فرشاة أسنان احتياطية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                747,
+                789,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "sealed toothbrush",
+              "ar": "فرشاة أسنان مغلّفة",
+              "kind": "object",
+              "x": 84,
+              "y": 41
+            },
+            {
+              "en": "folded towels",
+              "ar": "مناشف مطوية",
+              "kind": "object",
+              "x": 84,
+              "y": 8
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Remembering to pack it",
+          "ar": "تذكّر وضع الفرشاة في الحقيبة",
+          "purposeEn": "Practise remembering to pack it.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: تذكّر وضع الفرشاة في الحقيبة.",
+          "image": {
+            "id": "conv-life-sleepover-toothbrush-3",
+            "path": "assets/scenes/conversations/life-sleepover-toothbrush-3.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Remembering to pack it",
+            "ar": "تذكّر وضع الفرشاة في الحقيبة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                747,
+                1187,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "travel bag",
+              "ar": "حقيبة سفر",
+              "kind": "object",
+              "x": 83,
+              "y": 62
+            },
+            {
+              "en": "bathroom sink",
+              "ar": "مغسلة الحمّام",
+              "kind": "object",
+              "x": 78,
+              "y": 91
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Leaving the toothbrush to dry",
+          "ar": "ترك الفرشاة لتجفّ",
+          "purposeEn": "Practise leaving the toothbrush to dry.",
+          "purposeAr": "تدرّب على هذا الموقف في الحوار: ترك الفرشاة لتجفّ.",
+          "image": {
+            "id": "conv-life-sleepover-toothbrush-4",
+            "path": "assets/scenes/conversations/life-sleepover-toothbrush-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Leaving the toothbrush to dry",
+            "ar": "ترك الفرشاة لتجفّ",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                747,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "glass shelf",
+              "ar": "رفّ زجاجي",
+              "kind": "object",
+              "x": 77,
+              "y": 60
+            },
+            {
+              "en": "soap dispenser",
+              "ar": "موزّع الصابون",
+              "kind": "object",
+              "x": 79,
+              "y": 46
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
