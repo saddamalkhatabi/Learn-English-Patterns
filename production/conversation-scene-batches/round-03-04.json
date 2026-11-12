@@ -1,0 +1,559 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "d347db2c289bec1237f820dc71de98bcfd2285a80447349409b3f56c78e071cb"
+  },
+  "conversations": [
+    {
+      "id": "bag-at-station",
+      "goalAr": "صف حقيبتك لتمييزها عن حقيبة مشابهة.",
+      "goalEn": "Describe your bag so it can be told apart from a similar one.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Lost-property counter",
+          "ar": "مكتب المفقودات",
+          "purposeEn": "Ask which bag belongs to the traveler.",
+          "purposeAr": "اسأل أي حقيبة تخص المسافر.",
+          "image": {
+            "id": "conv-life-bag-at-station-1",
+            "path": "assets/scenes/conversations/life-bag-at-station-1.webp",
+            "width": 397,
+            "height": 248,
+            "en": "Lost-property counter",
+            "ar": "مكتب المفقودات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                0,
+                397,
+                248
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "luggage shelf",
+              "ar": "رف الأمتعة",
+              "kind": "object",
+              "x": 78,
+              "y": 29
+            },
+            {
+              "en": "lost property",
+              "ar": "مفقودات",
+              "kind": "object",
+              "x": 65,
+              "y": 62
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "The blue bag",
+          "ar": "الحقيبة الزرقاء",
+          "purposeEn": "Describe the color and strap so the clerk can identify it.",
+          "purposeAr": "صف اللون والحزام كي يحددها الموظف.",
+          "image": {
+            "id": "conv-life-bag-at-station-2",
+            "path": "assets/scenes/conversations/life-bag-at-station-2.webp",
+            "width": 395,
+            "height": 248,
+            "en": "The blue bag",
+            "ar": "الحقيبة الزرقاء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                397,
+                0,
+                792,
+                248
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "blue bag",
+              "ar": "حقيبة زرقاء",
+              "kind": "object",
+              "x": 53,
+              "y": 66
+            },
+            {
+              "en": "gray strap",
+              "ar": "حزام رمادي",
+              "kind": "object",
+              "x": 54,
+              "y": 73
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 4,
+          "en": "Checking the tag",
+          "ar": "فحص البطاقة",
+          "purposeEn": "Ask the clerk to check the tag inside the bag.",
+          "purposeAr": "اطلب من الموظف فحص بطاقة الاسم داخل الحقيبة.",
+          "image": {
+            "id": "conv-life-bag-at-station-3",
+            "path": "assets/scenes/conversations/life-bag-at-station-3.webp",
+            "width": 397,
+            "height": 248,
+            "en": "Checking the tag",
+            "ar": "فحص البطاقة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                792,
+                0,
+                1189,
+                248
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "name tag",
+              "ar": "بطاقة الاسم",
+              "kind": "object",
+              "x": 62,
+              "y": 68
+            },
+            {
+              "en": "inside the bag",
+              "ar": "داخل الحقيبة",
+              "kind": "phrase",
+              "x": 60,
+              "y": 79
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "en": "Checking the contents",
+          "ar": "التحقق من المحتويات",
+          "purposeEn": "Confirm ownership and check whether the notebook is still inside.",
+          "purposeAr": "أكّد الملكية وتحقق من بقاء الدفتر داخلها.",
+          "image": {
+            "id": "conv-life-bag-at-station-4",
+            "path": "assets/scenes/conversations/life-bag-at-station-4.webp",
+            "width": 397,
+            "height": 248,
+            "en": "Checking the contents",
+            "ar": "التحقق من المحتويات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1189,
+                0,
+                1586,
+                248
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "notebook",
+              "ar": "دفتر",
+              "kind": "object",
+              "x": 50,
+              "y": 66
+            },
+            {
+              "en": "relieved",
+              "ar": "مرتاحة",
+              "kind": "description",
+              "x": 63,
+              "y": 31
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "delay-announcement",
+      "goalAr": "اطلب توضيح الإعلان وتحقق من صلاحية التذكرة.",
+      "goalEn": "Clarify the announcement and check whether the ticket is still valid.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Asking about the announcement",
+          "ar": "السؤال عن الإعلان",
+          "purposeEn": "Ask the station staff to clarify what was announced.",
+          "purposeAr": "اطلب من موظف المحطة توضيح ما أُعلن.",
+          "image": {
+            "id": "conv-life-delay-announcement-1",
+            "path": "assets/scenes/conversations/life-delay-announcement-1.webp",
+            "width": 397,
+            "height": 246,
+            "en": "Asking about the announcement",
+            "ar": "السؤال عن الإعلان",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                248,
+                397,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "loudspeaker",
+              "ar": "مكبّر صوت",
+              "kind": "object",
+              "x": 44,
+              "y": 12
+            },
+            {
+              "en": "listen",
+              "ar": "يستمع",
+              "kind": "action",
+              "x": 40,
+              "y": 58
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 2,
+          "en": "Explaining the delay",
+          "ar": "تفسير التأخير",
+          "purposeEn": "Identify the reason the train is delayed.",
+          "purposeAr": "حدّد سبب تأخر القطار.",
+          "image": {
+            "id": "conv-life-delay-announcement-2",
+            "path": "assets/scenes/conversations/life-delay-announcement-2.webp",
+            "width": 395,
+            "height": 246,
+            "en": "Explaining the delay",
+            "ar": "تفسير التأخير",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                397,
+                248,
+                792,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "delayed train",
+              "ar": "قطار متأخر",
+              "kind": "object",
+              "x": 51,
+              "y": 35
+            },
+            {
+              "en": "station staff",
+              "ar": "موظف المحطة",
+              "kind": "object",
+              "x": 77,
+              "y": 39
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "en": "Checking ticket validity",
+          "ar": "التحقق من صلاحية التذكرة",
+          "purposeEn": "Check whether the current ticket is valid on the next train.",
+          "purposeAr": "تحقق هل تصلح التذكرة الحالية للقطار التالي.",
+          "image": {
+            "id": "conv-life-delay-announcement-3",
+            "path": "assets/scenes/conversations/life-delay-announcement-3.webp",
+            "width": 397,
+            "height": 246,
+            "en": "Checking ticket validity",
+            "ar": "التحقق من صلاحية التذكرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                792,
+                248,
+                1189,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ticket",
+              "ar": "تذكرة",
+              "kind": "object",
+              "x": 52,
+              "y": 72
+            },
+            {
+              "en": "confirm",
+              "ar": "يؤكد",
+              "kind": "action",
+              "x": 61,
+              "y": 55
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "en": "Using the footbridge",
+          "ar": "عبور جسر المشاة",
+          "purposeEn": "Explain how to reach the next platform.",
+          "purposeAr": "اشرح كيف تصل إلى الرصيف التالي.",
+          "image": {
+            "id": "conv-life-delay-announcement-4",
+            "path": "assets/scenes/conversations/life-delay-announcement-4.webp",
+            "width": 397,
+            "height": 246,
+            "en": "Using the footbridge",
+            "ar": "عبور جسر المشاة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1189,
+                248,
+                1586,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "footbridge",
+              "ar": "جسر مشاة",
+              "kind": "object",
+              "x": 69,
+              "y": 24
+            },
+            {
+              "en": "steps",
+              "ar": "درجات",
+              "kind": "object",
+              "x": 86,
+              "y": 57
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "before-school",
+      "goalAr": "رتّب أعمال الصباح قبل الخروج.",
+      "goalEn": "Put morning activities in order before leaving.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 2,
+          "en": "Brushing teeth",
+          "ar": "تنظيف الأسنان",
+          "purposeEn": "Describe the first thing you do in the morning.",
+          "purposeAr": "صف أول عمل تفعله في الصباح.",
+          "image": {
+            "id": "conv-life-before-school-1",
+            "path": "assets/scenes/conversations/life-before-school-1.webp",
+            "width": 397,
+            "height": 250,
+            "en": "Brushing teeth",
+            "ar": "تنظيف الأسنان",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                742,
+                397,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "toothbrush",
+              "ar": "فرشاة أسنان",
+              "kind": "object",
+              "x": 40,
+              "y": 38
+            },
+            {
+              "en": "washbasin",
+              "ar": "مغسلة",
+              "kind": "object",
+              "x": 76,
+              "y": 87
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "en": "Breakfast before school",
+          "ar": "الفطور قبل المدرسة",
+          "purposeEn": "Say where you eat before leaving for school.",
+          "purposeAr": "اذكر أين تتناول الفطور قبل ذهابك إلى المدرسة.",
+          "image": {
+            "id": "conv-life-before-school-2",
+            "path": "assets/scenes/conversations/life-before-school-2.webp",
+            "width": 395,
+            "height": 250,
+            "en": "Breakfast before school",
+            "ar": "الفطور قبل المدرسة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                397,
+                742,
+                792,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bowl",
+              "ar": "وعاء",
+              "kind": "object",
+              "x": 48,
+              "y": 75
+            },
+            {
+              "en": "glass of milk",
+              "ar": "كأس حليب",
+              "kind": "object",
+              "x": 24,
+              "y": 73
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 5,
+          "en": "Checking the school bag",
+          "ar": "تفقد الحقيبة المدرسية",
+          "purposeEn": "Explain how you check what you need before leaving.",
+          "purposeAr": "اشرح كيف تتحقق مما تحتاجه قبل المغادرة.",
+          "image": {
+            "id": "conv-life-before-school-3",
+            "path": "assets/scenes/conversations/life-before-school-3.webp",
+            "width": 397,
+            "height": 250,
+            "en": "Checking the school bag",
+            "ar": "تفقد الحقيبة المدرسية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                792,
+                742,
+                1189,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "school bag",
+              "ar": "حقيبة مدرسية",
+              "kind": "object",
+              "x": 61,
+              "y": 82
+            },
+            {
+              "en": "exercise books",
+              "ar": "دفاتر تمارين",
+              "kind": "object",
+              "x": 49,
+              "y": 64
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "A note by the door",
+          "ar": "ملاحظة قرب الباب",
+          "purposeEn": "Explain how a reminder helps you remember the next day.",
+          "purposeAr": "اشرح كيف تذكّرك الملاحظة بالأمر في اليوم التالي.",
+          "image": {
+            "id": "conv-life-before-school-4",
+            "path": "assets/scenes/conversations/life-before-school-4.webp",
+            "width": 397,
+            "height": 250,
+            "en": "A note by the door",
+            "ar": "ملاحظة قرب الباب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1189,
+                742,
+                1586,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "sticky note",
+              "ar": "ورقة لاصقة",
+              "kind": "object",
+              "x": 84,
+              "y": 32
+            },
+            {
+              "en": "by the door",
+              "ar": "بجوار الباب",
+              "kind": "phrase",
+              "x": 76,
+              "y": 50
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

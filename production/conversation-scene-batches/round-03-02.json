@@ -1,0 +1,559 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "34cb9e712a88bcc987b941763ea6cdb3316aea3863ea8b79f3a1ffdfe0cb5574"
+  },
+  "conversations": [
+    {
+      "id": "seat-on-train",
+      "goalAr": "تأكد من وجود مقعد واستأذن للجلوس.",
+      "goalEn": "Check for an available seat and ask to sit there.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 2,
+          "en": "Seats by the window",
+          "ar": "مقاعد بجوار النافذة",
+          "purposeEn": "Ask about free seats and point out what is available.",
+          "purposeAr": "اسأل عن المقاعد الشاغرة وأشر إلى المتاح.",
+          "image": {
+            "id": "conv-life-seat-on-train-1",
+            "path": "assets/scenes/conversations/life-seat-on-train-1.webp",
+            "width": 395,
+            "height": 250,
+            "en": "Seats by the window",
+            "ar": "مقاعد بجوار النافذة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                247,
+                395,
+                497
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "free seat",
+              "ar": "مقعد شاغر",
+              "kind": "object",
+              "x": 74,
+              "y": 71
+            },
+            {
+              "en": "window",
+              "ar": "نافذة",
+              "kind": "object",
+              "x": 87,
+              "y": 40
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 3,
+          "en": "The luggage rack",
+          "ar": "رف الأمتعة",
+          "purposeEn": "Ask permission to put a bag on the rack.",
+          "purposeAr": "استأذن في وضع الحقيبة على الرف.",
+          "image": {
+            "id": "conv-life-seat-on-train-2",
+            "path": "assets/scenes/conversations/life-seat-on-train-2.webp",
+            "width": 399,
+            "height": 250,
+            "en": "The luggage rack",
+            "ar": "رف الأمتعة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                395,
+                247,
+                794,
+                497
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "overhead rack",
+              "ar": "رف علوي",
+              "kind": "object",
+              "x": 85,
+              "y": 29
+            },
+            {
+              "en": "lift a bag",
+              "ar": "يرفع حقيبة",
+              "kind": "phrase",
+              "x": 68,
+              "y": 22
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 4,
+          "en": "Aisle or window",
+          "ar": "الممر أم النافذة",
+          "purposeEn": "Negotiate who takes the window seat.",
+          "purposeAr": "اتفق مع رفيقك على من يجلس قرب النافذة.",
+          "image": {
+            "id": "conv-life-seat-on-train-3",
+            "path": "assets/scenes/conversations/life-seat-on-train-3.webp",
+            "width": 395,
+            "height": 250,
+            "en": "Aisle or window",
+            "ar": "الممر أم النافذة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                794,
+                247,
+                1189,
+                497
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "aisle seat",
+              "ar": "مقعد بجوار الممر",
+              "kind": "object",
+              "x": 44,
+              "y": 66
+            },
+            {
+              "en": "gesture",
+              "ar": "يشير بيده",
+              "kind": "action",
+              "x": 38,
+              "y": 73
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "en": "Looking outside",
+          "ar": "النظر إلى الخارج",
+          "purposeEn": "Accept the aisle seat and explain why the view matters to your companion.",
+          "purposeAr": "اقبل مقعد الممر وبيّن سبب تفضيل رفيقك للنافذة.",
+          "image": {
+            "id": "conv-life-seat-on-train-4",
+            "path": "assets/scenes/conversations/life-seat-on-train-4.webp",
+            "width": 396,
+            "height": 250,
+            "en": "Looking outside",
+            "ar": "النظر إلى الخارج",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1190,
+                247,
+                1586,
+                497
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "look out the window",
+              "ar": "ينظر من النافذة",
+              "kind": "phrase",
+              "x": 42,
+              "y": 49
+            },
+            {
+              "en": "relaxed",
+              "ar": "مسترخية",
+              "kind": "description",
+              "x": 83,
+              "y": 37
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hotel-checkin",
+      "goalAr": "عرّف بنفسك وأظهر الحجز واسأل عن المصعد.",
+      "goalEn": "Introduce yourself, show your booking, and locate the lift.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Giving your name",
+          "ar": "ذكر الاسم",
+          "purposeEn": "Introduce yourself and say that you have a reservation.",
+          "purposeAr": "عرّف بنفسك واذكر أن لديك حجزًا.",
+          "image": {
+            "id": "conv-life-hotel-checkin-1",
+            "path": "assets/scenes/conversations/life-hotel-checkin-1.webp",
+            "width": 395,
+            "height": 246,
+            "en": "Giving your name",
+            "ar": "ذكر الاسم",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                497,
+                395,
+                743
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "reception desk",
+              "ar": "مكتب الاستقبال",
+              "kind": "object",
+              "x": 63,
+              "y": 86
+            },
+            {
+              "en": "desk bell",
+              "ar": "جرس المنضدة",
+              "kind": "object",
+              "x": 96,
+              "y": 70
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 2,
+          "en": "Showing the reservation",
+          "ar": "إبراز الحجز",
+          "purposeEn": "Ask for and present the identification document politely.",
+          "purposeAr": "اطلب وثيقة الهوية وقدّمها بأدب.",
+          "image": {
+            "id": "conv-life-hotel-checkin-2",
+            "path": "assets/scenes/conversations/life-hotel-checkin-2.webp",
+            "width": 399,
+            "height": 246,
+            "en": "Showing the reservation",
+            "ar": "إبراز الحجز",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                395,
+                497,
+                794,
+                743
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "passport",
+              "ar": "جواز سفر",
+              "kind": "object",
+              "x": 46,
+              "y": 53
+            },
+            {
+              "en": "booking confirmation",
+              "ar": "تأكيد الحجز",
+              "kind": "object",
+              "x": 65,
+              "y": 62
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "en": "Finding the elevator",
+          "ar": "العثور على المصعد",
+          "purposeEn": "Ask for the elevator and describe where the room is.",
+          "purposeAr": "اسأل عن المصعد وصف موضع الغرفة.",
+          "image": {
+            "id": "conv-life-hotel-checkin-3",
+            "path": "assets/scenes/conversations/life-hotel-checkin-3.webp",
+            "width": 395,
+            "height": 246,
+            "en": "Finding the elevator",
+            "ar": "العثور على المصعد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                794,
+                497,
+                1189,
+                743
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "elevator",
+              "ar": "مصعد",
+              "kind": "object",
+              "x": 80,
+              "y": 49
+            },
+            {
+              "en": "point toward",
+              "ar": "يشير نحو",
+              "kind": "phrase",
+              "x": 63,
+              "y": 45
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "en": "Leaving the luggage",
+          "ar": "ترك الأمتعة",
+          "purposeEn": "Ask whether reception can store your bags after checkout.",
+          "purposeAr": "اسأل هل يمكن ترك الحقائب لدى الاستقبال بعد المغادرة.",
+          "image": {
+            "id": "conv-life-hotel-checkin-4",
+            "path": "assets/scenes/conversations/life-hotel-checkin-4.webp",
+            "width": 396,
+            "height": 246,
+            "en": "Leaving the luggage",
+            "ar": "ترك الأمتعة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1190,
+                497,
+                1586,
+                743
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "luggage trolley",
+              "ar": "عربة أمتعة",
+              "kind": "object",
+              "x": 55,
+              "y": 65
+            },
+            {
+              "en": "storage shelves",
+              "ar": "رفوف تخزين",
+              "kind": "object",
+              "x": 86,
+              "y": 52
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bus-or-walk",
+      "goalAr": "اختر الطريق وفق الوقت والتكلفة.",
+      "goalEn": "Choose a route based on time and cost.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 2,
+          "en": "Checking the fare",
+          "ar": "التحقق من الأجرة",
+          "purposeEn": "Ask for the fare and the time needed by bus.",
+          "purposeAr": "اسأل عن الأجرة والمدة بالحافلة.",
+          "image": {
+            "id": "conv-life-bus-or-walk-1",
+            "path": "assets/scenes/conversations/life-bus-or-walk-1.webp",
+            "width": 395,
+            "height": 249,
+            "en": "Checking the fare",
+            "ar": "التحقق من الأجرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                743,
+                395,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "fare reader",
+              "ar": "قارئ الأجرة",
+              "kind": "object",
+              "x": 83,
+              "y": 73
+            },
+            {
+              "en": "bus door",
+              "ar": "باب الحافلة",
+              "kind": "object",
+              "x": 55,
+              "y": 42
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 3,
+          "en": "Choosing to walk",
+          "ar": "اختيار المشي",
+          "purposeEn": "Express a preference and check how much time you have.",
+          "purposeAr": "عبّر عن تفضيلك وتحقق من الوقت المتاح.",
+          "image": {
+            "id": "conv-life-bus-or-walk-2",
+            "path": "assets/scenes/conversations/life-bus-or-walk-2.webp",
+            "width": 399,
+            "height": 249,
+            "en": "Choosing to walk",
+            "ar": "اختيار المشي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                395,
+                743,
+                794,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "wristwatch",
+              "ar": "ساعة يد",
+              "kind": "object",
+              "x": 45,
+              "y": 76
+            },
+            {
+              "en": "riverside",
+              "ar": "ضفة النهر",
+              "kind": "object",
+              "x": 84,
+              "y": 60
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 4,
+          "en": "The riverside route",
+          "ar": "الممر بمحاذاة النهر",
+          "purposeEn": "Suggest a route and ask about a bridge near the market.",
+          "purposeAr": "اقترح طريقًا واسأل عن جسر قرب السوق.",
+          "image": {
+            "id": "conv-life-bus-or-walk-3",
+            "path": "assets/scenes/conversations/life-bus-or-walk-3.webp",
+            "width": 395,
+            "height": 249,
+            "en": "The riverside route",
+            "ar": "الممر بمحاذاة النهر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                794,
+                743,
+                1189,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "footpath",
+              "ar": "ممر مشاة",
+              "kind": "object",
+              "x": 32,
+              "y": 85
+            },
+            {
+              "en": "bridge",
+              "ar": "جسر",
+              "kind": "object",
+              "x": 73,
+              "y": 28
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "en": "Crossing to the market",
+          "ar": "العبور إلى السوق",
+          "purposeEn": "Explain which bridge to cross and where to turn.",
+          "purposeAr": "بيّن أي جسر نعبر وأين ننعطف.",
+          "image": {
+            "id": "conv-life-bus-or-walk-4",
+            "path": "assets/scenes/conversations/life-bus-or-walk-4.webp",
+            "width": 396,
+            "height": 249,
+            "en": "Crossing to the market",
+            "ar": "العبور إلى السوق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1190,
+                743,
+                1586,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "market stalls",
+              "ar": "بسطات السوق",
+              "kind": "object",
+              "x": 82,
+              "y": 53
+            },
+            {
+              "en": "across the river",
+              "ar": "على الضفة المقابلة",
+              "kind": "phrase",
+              "x": 67,
+              "y": 55
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,742 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "426ebf91f14d65afebea4da064c122573ce440f6d4d2c8648bc5ed023663c0ce"
+  },
+  "conversations": [
+    {
+      "id": "l2-005",
+      "goalAr": "النافذة قبل المغادرة",
+      "goalEn": "Checking the window before leaving",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Ready for the station",
+          "ar": "الاستعداد للذهاب إلى المحطة",
+          "purposeEn": "Ask whether you can leave for the station now.",
+          "purposeAr": "اسأل هل يمكنك الانطلاق إلى المحطة الآن.",
+          "image": {
+            "id": "conv-life-l2-005-1",
+            "path": "assets/scenes/conversations/life-l2-005-1.webp",
+            "width": 397,
+            "height": 248,
+            "en": "Ready for the station",
+            "ar": "الاستعداد للذهاب إلى المحطة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                0,
+                397,
+                248
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "suitcase handle",
+              "ar": "مقبض حقيبة سفر",
+              "kind": "object",
+              "x": 54,
+              "y": 77
+            },
+            {
+              "en": "doorway",
+              "ar": "مدخل الباب",
+              "kind": "object",
+              "x": 5,
+              "y": 42
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Waiting by the lift",
+          "ar": "الانتظار بجانب المصعد",
+          "purposeEn": "Say what you forgot and agree on where to wait.",
+          "purposeAr": "اذكر ما نسيته واتفق على مكان الانتظار.",
+          "image": {
+            "id": "conv-life-l2-005-2",
+            "path": "assets/scenes/conversations/life-l2-005-2.webp",
+            "width": 397,
+            "height": 248,
+            "en": "Waiting by the lift",
+            "ar": "الانتظار بجانب المصعد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                397,
+                0,
+                794,
+                248
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "lift",
+              "ar": "مصعد",
+              "kind": "object",
+              "x": 62,
+              "y": 39
+            },
+            {
+              "en": "lift button",
+              "ar": "زر المصعد",
+              "kind": "object",
+              "x": 40,
+              "y": 35
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Closing the window",
+          "ar": "إغلاق النافذة",
+          "purposeEn": "Ask for help with the handle and explain how to move it.",
+          "purposeAr": "اطلب المساعدة مع المقبض واشرح طريقة تحريكه.",
+          "image": {
+            "id": "conv-life-l2-005-3",
+            "path": "assets/scenes/conversations/life-l2-005-3.webp",
+            "width": 396,
+            "height": 248,
+            "en": "Closing the window",
+            "ar": "إغلاق النافذة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                794,
+                0,
+                1190,
+                248
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "window handle",
+              "ar": "مقبض النافذة",
+              "kind": "object",
+              "x": 61,
+              "y": 31
+            },
+            {
+              "en": "give a hand",
+              "ar": "يساعد",
+              "kind": "phrase",
+              "x": 44,
+              "y": 65
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Ready to leave",
+          "ar": "جاهزان للمغادرة",
+          "purposeEn": "Confirm the window is closed and you can leave.",
+          "purposeAr": "أكّد إغلاق النافذة وإمكانية المغادرة.",
+          "image": {
+            "id": "conv-life-l2-005-4",
+            "path": "assets/scenes/conversations/life-l2-005-4.webp",
+            "width": 396,
+            "height": 248,
+            "en": "Ready to leave",
+            "ar": "جاهزان للمغادرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1190,
+                0,
+                1586,
+                248
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "raindrops",
+              "ar": "قطرات مطر",
+              "kind": "object",
+              "x": 57,
+              "y": 39
+            },
+            {
+              "en": "relieved",
+              "ar": "مرتاح",
+              "kind": "description",
+              "x": 30,
+              "y": 32
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-006",
+      "goalAr": "مظلّة أخذتها بالخطأ",
+      "goalEn": "An umbrella mix-up",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Missing an umbrella",
+          "ar": "فقدان مظلة",
+          "purposeEn": "Explain what you could not find after the meeting.",
+          "purposeAr": "اشرح ما لم تجده بعد الاجتماع.",
+          "image": {
+            "id": "conv-life-l2-006-1",
+            "path": "assets/scenes/conversations/life-l2-006-1.webp",
+            "width": 397,
+            "height": 248,
+            "en": "Missing an umbrella",
+            "ar": "فقدان مظلة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                248,
+                397,
+                496
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "handbag",
+              "ar": "حقيبة يد",
+              "kind": "object",
+              "x": 47,
+              "y": 85
+            },
+            {
+              "en": "worried",
+              "ar": "قلقة",
+              "kind": "description",
+              "x": 42,
+              "y": 29
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Taken by mistake",
+          "ar": "أُخذت بالخطأ",
+          "purposeEn": "Say what happened by mistake and arrange to leave the umbrella at reception.",
+          "purposeAr": "اذكر ما حدث بالخطأ ورتّب ترك المظلة لدى الاستقبال.",
+          "image": {
+            "id": "conv-life-l2-006-2",
+            "path": "assets/scenes/conversations/life-l2-006-2.webp",
+            "width": 397,
+            "height": 248,
+            "en": "Taken by mistake",
+            "ar": "أُخذت بالخطأ",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                397,
+                248,
+                794,
+                496
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "umbrella",
+              "ar": "مظلّة مطر",
+              "kind": "object",
+              "x": 47,
+              "y": 71
+            },
+            {
+              "en": "curved handle",
+              "ar": "مقبض منحني",
+              "kind": "object",
+              "x": 32,
+              "y": 21
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Adding a name tag",
+          "ar": "إضافة بطاقة اسم",
+          "purposeEn": "Attach a note so the right person can pick it up.",
+          "purposeAr": "ألصق ملاحظة ليتمكن صاحبها من استلامها.",
+          "image": {
+            "id": "conv-life-l2-006-3",
+            "path": "assets/scenes/conversations/life-l2-006-3.webp",
+            "width": 396,
+            "height": 248,
+            "en": "Adding a name tag",
+            "ar": "إضافة بطاقة اسم",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                794,
+                248,
+                1190,
+                496
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "name tag",
+              "ar": "بطاقة اسم",
+              "kind": "object",
+              "x": 38,
+              "y": 84
+            },
+            {
+              "en": "attach a note",
+              "ar": "يثبّت ملاحظة",
+              "kind": "phrase",
+              "x": 42,
+              "y": 79
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "A torn strap",
+          "ar": "حزام ممزّق",
+          "purposeEn": "Describe a distinctive detail that identifies your umbrella.",
+          "purposeAr": "صف تفصيلًا مميزًا يحدد مظلتك.",
+          "image": {
+            "id": "conv-life-l2-006-4",
+            "path": "assets/scenes/conversations/life-l2-006-4.webp",
+            "width": 396,
+            "height": 248,
+            "en": "A torn strap",
+            "ar": "حزام ممزّق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1190,
+                248,
+                1586,
+                496
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "torn strap",
+              "ar": "حزام ممزّق",
+              "kind": "object",
+              "x": 48,
+              "y": 45
+            },
+            {
+              "en": "easy to spot",
+              "ar": "يسهل تمييزه",
+              "kind": "phrase",
+              "x": 51,
+              "y": 48
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-007",
+      "goalAr": "مشي قبل العشاء",
+      "goalEn": "A walk before dinner",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Time before dinner",
+          "ar": "الوقت المتبقي قبل العشاء",
+          "purposeEn": "Say how much time you have before dinner.",
+          "purposeAr": "اذكر كم من الوقت لديك قبل العشاء.",
+          "image": {
+            "id": "conv-life-l2-007-1",
+            "path": "assets/scenes/conversations/life-l2-007-1.webp",
+            "width": 397,
+            "height": 247,
+            "en": "Time before dinner",
+            "ar": "الوقت المتبقي قبل العشاء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                496,
+                397,
+                743
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "wristwatch",
+              "ar": "ساعة يد",
+              "kind": "object",
+              "x": 43,
+              "y": 73
+            },
+            {
+              "en": "glass of water",
+              "ar": "كأس ماء",
+              "kind": "object",
+              "x": 18,
+              "y": 93
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Going for a walk",
+          "ar": "الخروج للمشي",
+          "purposeEn": "Suggest a short walk and accept the idea.",
+          "purposeAr": "اقترح جولة مشي قصيرة ووافق على الفكرة.",
+          "image": {
+            "id": "conv-life-l2-007-2",
+            "path": "assets/scenes/conversations/life-l2-007-2.webp",
+            "width": 397,
+            "height": 247,
+            "en": "Going for a walk",
+            "ar": "الخروج للمشي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                397,
+                496,
+                794,
+                743
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "walk side by side",
+              "ar": "يمشيان جنبًا إلى جنب",
+              "kind": "phrase",
+              "x": 49,
+              "y": 75
+            },
+            {
+              "en": "sidewalk",
+              "ar": "رصيف",
+              "kind": "object",
+              "x": 87,
+              "y": 88
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Choosing the park path",
+          "ar": "اختيار ممرّ الحديقة",
+          "purposeEn": "Compare the two paths and explain your preference.",
+          "purposeAr": "قارن الممرين واشرح تفضيلك.",
+          "image": {
+            "id": "conv-life-l2-007-3",
+            "path": "assets/scenes/conversations/life-l2-007-3.webp",
+            "width": 396,
+            "height": 247,
+            "en": "Choosing the park path",
+            "ar": "اختيار ممرّ الحديقة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                794,
+                496,
+                1190,
+                743
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "park path",
+              "ar": "ممر حديقة",
+              "kind": "object",
+              "x": 90,
+              "y": 75
+            },
+            {
+              "en": "shops",
+              "ar": "متاجر",
+              "kind": "object",
+              "x": 14,
+              "y": 40
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Turning back at the bridge",
+          "ar": "العودة عند الجسر",
+          "purposeEn": "Choose a point to turn back so you are home for dinner.",
+          "purposeAr": "حدد نقطة للعودة كي تلحق بالعشاء.",
+          "image": {
+            "id": "conv-life-l2-007-4",
+            "path": "assets/scenes/conversations/life-l2-007-4.webp",
+            "width": 396,
+            "height": 247,
+            "en": "Turning back at the bridge",
+            "ar": "العودة عند الجسر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1190,
+                496,
+                1586,
+                743
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "stone bridge",
+              "ar": "جسر حجري",
+              "kind": "object",
+              "x": 61,
+              "y": 39
+            },
+            {
+              "en": "turn back",
+              "ar": "يعود أدراجه",
+              "kind": "phrase",
+              "x": 48,
+              "y": 74
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-008",
+      "goalAr": "ساعة إلى المحطة",
+      "goalEn": "Allowing an hour for the station",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Leaving in time",
+          "ar": "الانطلاق في الوقت المناسب",
+          "purposeEn": "Ask if a departure time leaves enough time for the train.",
+          "purposeAr": "اسأل إن كان موعد الانطلاق يترك وقتًا كافيًا للحاق بالقطار.",
+          "image": {
+            "id": "conv-life-l2-008-1",
+            "path": "assets/scenes/conversations/life-l2-008-1.webp",
+            "width": 397,
+            "height": 249,
+            "en": "Leaving in time",
+            "ar": "الانطلاق في الوقت المناسب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                743,
+                397,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "laptop",
+              "ar": "حاسوب محمول",
+              "kind": "object",
+              "x": 13,
+              "y": 91
+            },
+            {
+              "en": "ask about time",
+              "ar": "يسأل عن الوقت",
+              "kind": "phrase",
+              "x": 22,
+              "y": 70
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Allowing an hour",
+          "ar": "تخصيص ساعة",
+          "purposeEn": "Say how long the journey takes and allow extra time.",
+          "purposeAr": "اذكر مدة الرحلة واترك وقتًا إضافيًا.",
+          "image": {
+            "id": "conv-life-l2-008-2",
+            "path": "assets/scenes/conversations/life-l2-008-2.webp",
+            "width": 397,
+            "height": 249,
+            "en": "Allowing an hour",
+            "ar": "تخصيص ساعة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                397,
+                743,
+                794,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "wall clock",
+              "ar": "ساعة حائط",
+              "kind": "object",
+              "x": 64,
+              "y": 25
+            },
+            {
+              "en": "allow extra time",
+              "ar": "يخصص وقتًا إضافيًا",
+              "kind": "phrase",
+              "x": 63,
+              "y": 43
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Bus or taxi",
+          "ar": "حافلة أم سيارة أجرة",
+          "purposeEn": "Choose a main option and keep an alternative ready.",
+          "purposeAr": "اختر وسيلة أساسية وجهّز بديلًا.",
+          "image": {
+            "id": "conv-life-l2-008-3",
+            "path": "assets/scenes/conversations/life-l2-008-3.webp",
+            "width": 396,
+            "height": 249,
+            "en": "Bus or taxi",
+            "ar": "حافلة أم سيارة أجرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                794,
+                743,
+                1190,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bus icon",
+              "ar": "رمز حافلة",
+              "kind": "object",
+              "x": 86,
+              "y": 63
+            },
+            {
+              "en": "taxi icon",
+              "ar": "رمز سيارة أجرة",
+              "kind": "object",
+              "x": 85,
+              "y": 84
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Checking the bus times",
+          "ar": "مراجعة مواعيد الحافلة",
+          "purposeEn": "Offer to check the timetable and send the best option.",
+          "purposeAr": "اعرض مراجعة الجدول وإرسال الخيار الأفضل.",
+          "image": {
+            "id": "conv-life-l2-008-4",
+            "path": "assets/scenes/conversations/life-l2-008-4.webp",
+            "width": 396,
+            "height": 249,
+            "en": "Checking the bus times",
+            "ar": "مراجعة مواعيد الحافلة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1190,
+                743,
+                1586,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "check a timetable",
+              "ar": "يتحقق من جدول المواعيد",
+              "kind": "phrase",
+              "x": 53,
+              "y": 81
+            },
+            {
+              "en": "smartphone",
+              "ar": "هاتف ذكي",
+              "kind": "object",
+              "x": 48,
+              "y": 78
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

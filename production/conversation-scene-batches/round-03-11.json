@@ -1,0 +1,742 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "0890bfcc8a43fc63a1094f382416b9c7a0f5019016e7fde59b1b6919a11eaa50"
+  },
+  "conversations": [
+    {
+      "id": "welcoming-intern",
+      "goalAr": "عرّف المتدرّب بزميل واشرح دوره.",
+      "goalEn": "Introduce an intern to a colleague and explain the colleague’s role.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Introducing the intern",
+          "ar": "التعريف بالمتدرّبة",
+          "purposeEn": "Introduce a new intern to the team.",
+          "purposeAr": "عرّف الفريق بالمتدرّبة الجديدة.",
+          "image": {
+            "id": "conv-life-welcoming-intern-1",
+            "path": "assets/scenes/conversations/life-welcoming-intern-1.webp",
+            "width": 396,
+            "height": 249,
+            "en": "Introducing the intern",
+            "ar": "التعريف بالمتدرّبة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                0,
+                396,
+                249
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "intern",
+              "ar": "متدرّبة",
+              "kind": "object",
+              "x": 58,
+              "y": 34
+            },
+            {
+              "en": "introduce",
+              "ar": "يعرّف بـ",
+              "kind": "action",
+              "x": 48,
+              "y": 68
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Who plans the shifts?",
+          "ar": "من ينظّم المناوبات؟",
+          "purposeEn": "Ask who is in charge and locate that person by the window.",
+          "purposeAr": "اسأل من المسؤول وحدّد مكانه بجوار النافذة.",
+          "image": {
+            "id": "conv-life-welcoming-intern-2",
+            "path": "assets/scenes/conversations/life-welcoming-intern-2.webp",
+            "width": 397,
+            "height": 249,
+            "en": "Who plans the shifts?",
+            "ar": "من ينظّم المناوبات؟",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                396,
+                0,
+                793,
+                249
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "by the window",
+              "ar": "بجوار النافذة",
+              "kind": "phrase",
+              "x": 80,
+              "y": 39
+            },
+            {
+              "en": "office workstation",
+              "ar": "محطة عمل مكتبية",
+              "kind": "object",
+              "x": 88,
+              "y": 60
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Showing the shared folders",
+          "ar": "عرض المجلدات المشتركة",
+          "purposeEn": "Offer to introduce yourself and ask for help with shared folders.",
+          "purposeAr": "اعرض تقديم نفسك واطلب مساعدة في معرفة المجلدات المشتركة.",
+          "image": {
+            "id": "conv-life-welcoming-intern-3",
+            "path": "assets/scenes/conversations/life-welcoming-intern-3.webp",
+            "width": 396,
+            "height": 249,
+            "en": "Showing the shared folders",
+            "ar": "عرض المجلدات المشتركة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                793,
+                0,
+                1189,
+                249
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "shared folders",
+              "ar": "مجلدات مشتركة",
+              "kind": "object",
+              "x": 78,
+              "y": 80
+            },
+            {
+              "en": "laptop screen",
+              "ar": "شاشة حاسوب محمول",
+              "kind": "object",
+              "x": 81,
+              "y": 70
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Clarifying editing access",
+          "ar": "توضيح صلاحيات التعديل",
+          "purposeEn": "Explain which shared folders the intern can edit.",
+          "purposeAr": "وضّح أي المجلدات يمكن للمتدرّبة تعديلها.",
+          "image": {
+            "id": "conv-life-welcoming-intern-4",
+            "path": "assets/scenes/conversations/life-welcoming-intern-4.webp",
+            "width": 397,
+            "height": 249,
+            "en": "Clarifying editing access",
+            "ar": "توضيح صلاحيات التعديل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1189,
+                0,
+                1586,
+                249
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "explain",
+              "ar": "يشرح",
+              "kind": "action",
+              "x": 66,
+              "y": 61
+            },
+            {
+              "en": "one finger",
+              "ar": "إصبع واحد",
+              "kind": "object",
+              "x": 70,
+              "y": 57
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "new-procedure",
+      "goalAr": "اشرح الإجراء والغرض من كل خطوة مهمة.",
+      "goalEn": "Explain a procedure and why its main steps matter.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Saving an order as PDF",
+          "ar": "حفظ الطلب بصيغة PDF",
+          "purposeEn": "State the required file format before sending an order.",
+          "purposeAr": "اذكر صيغة الملف المطلوبة قبل إرسال الطلب.",
+          "image": {
+            "id": "conv-life-new-procedure-1",
+            "path": "assets/scenes/conversations/life-new-procedure-1.webp",
+            "width": 396,
+            "height": 247,
+            "en": "Saving an order as PDF",
+            "ar": "حفظ الطلب بصيغة PDF",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                249,
+                396,
+                496
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "PDF icon",
+              "ar": "أيقونة PDF",
+              "kind": "object",
+              "x": 65,
+              "y": 52
+            },
+            {
+              "en": "order form",
+              "ar": "نموذج طلب",
+              "kind": "object",
+              "x": 42,
+              "y": 52
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "The shared folder",
+          "ar": "المجلّد المشترك",
+          "purposeEn": "Ask where to save the file so the team can find it.",
+          "purposeAr": "اسأل أين تحفظ الملف كي يجده الفريق.",
+          "image": {
+            "id": "conv-life-new-procedure-2",
+            "path": "assets/scenes/conversations/life-new-procedure-2.webp",
+            "width": 397,
+            "height": 247,
+            "en": "The shared folder",
+            "ar": "المجلّد المشترك",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                396,
+                249,
+                793,
+                496
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "shared folder",
+              "ar": "مجلّد مشترك",
+              "kind": "object",
+              "x": 61,
+              "y": 55
+            },
+            {
+              "en": "computer monitor",
+              "ar": "شاشة حاسوب",
+              "kind": "object",
+              "x": 58,
+              "y": 48
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Adding the date",
+          "ar": "إضافة التاريخ",
+          "purposeEn": "Confirm that the file name should include a date.",
+          "purposeAr": "أكّد ضرورة تضمين التاريخ في اسم الملف.",
+          "image": {
+            "id": "conv-life-new-procedure-3",
+            "path": "assets/scenes/conversations/life-new-procedure-3.webp",
+            "width": 396,
+            "height": 247,
+            "en": "Adding the date",
+            "ar": "إضافة التاريخ",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                793,
+                249,
+                1189,
+                496
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "file name",
+              "ar": "اسم الملف",
+              "kind": "object",
+              "x": 55,
+              "y": 60
+            },
+            {
+              "en": "date",
+              "ar": "تاريخ",
+              "kind": "object",
+              "x": 62,
+              "y": 61
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Renaming this week’s files",
+          "ar": "إعادة تسمية ملفات الأسبوع",
+          "purposeEn": "Say which files you will rename first.",
+          "purposeAr": "اذكر أي ملفات ستبدأ بإعادة تسميتها.",
+          "image": {
+            "id": "conv-life-new-procedure-4",
+            "path": "assets/scenes/conversations/life-new-procedure-4.webp",
+            "width": 397,
+            "height": 247,
+            "en": "Renaming this week’s files",
+            "ar": "إعادة تسمية ملفات الأسبوع",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1189,
+                249,
+                1586,
+                496
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "rename",
+              "ar": "يعيد التسمية",
+              "kind": "action",
+              "x": 53,
+              "y": 69
+            },
+            {
+              "en": "file list",
+              "ar": "قائمة ملفات",
+              "kind": "object",
+              "x": 68,
+              "y": 53
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "meeting-followup",
+      "goalAr": "قسّم مهام المتابعة واتفق على توقيت الإبلاغ.",
+      "goalEn": "Divide follow-up tasks and agree when to send an update.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Sending the meeting notes",
+          "ar": "إرسال محضر الاجتماع",
+          "purposeEn": "Ask whether everyone will receive the notes.",
+          "purposeAr": "اسأل هل سيستلم الجميع محضر الاجتماع.",
+          "image": {
+            "id": "conv-life-meeting-followup-1",
+            "path": "assets/scenes/conversations/life-meeting-followup-1.webp",
+            "width": 396,
+            "height": 246,
+            "en": "Sending the meeting notes",
+            "ar": "إرسال محضر الاجتماع",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                496,
+                396,
+                742
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "meeting notes",
+              "ar": "محضر الاجتماع",
+              "kind": "object",
+              "x": 45,
+              "y": 93
+            },
+            {
+              "en": "laptop",
+              "ar": "حاسوب محمول",
+              "kind": "object",
+              "x": 77,
+              "y": 83
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Checking the dates first",
+          "ar": "التحقق من المواعيد أولًا",
+          "purposeEn": "Agree to check dates before sending a message.",
+          "purposeAr": "اتفق على مراجعة المواعيد قبل إرسال رسالة.",
+          "image": {
+            "id": "conv-life-meeting-followup-2",
+            "path": "assets/scenes/conversations/life-meeting-followup-2.webp",
+            "width": 397,
+            "height": 246,
+            "en": "Checking the dates first",
+            "ar": "التحقق من المواعيد أولًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                396,
+                496,
+                793,
+                742
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "smartphone",
+              "ar": "هاتف ذكي",
+              "kind": "object",
+              "x": 78,
+              "y": 77
+            },
+            {
+              "en": "notebook",
+              "ar": "دفتر",
+              "kind": "object",
+              "x": 48,
+              "y": 92
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "A changed draft date",
+          "ar": "تغيير موعد المسوّدة",
+          "purposeEn": "Distinguish the unchanged final deadline from the earlier draft date.",
+          "purposeAr": "ميّز الموعد النهائي الثابت عن موعد المسوّدة الذي تقدّم.",
+          "image": {
+            "id": "conv-life-meeting-followup-3",
+            "path": "assets/scenes/conversations/life-meeting-followup-3.webp",
+            "width": 396,
+            "height": 246,
+            "en": "A changed draft date",
+            "ar": "تغيير موعد المسوّدة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                793,
+                496,
+                1189,
+                742
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "schedule",
+              "ar": "جدول مواعيد",
+              "kind": "object",
+              "x": 51,
+              "y": 69
+            },
+            {
+              "en": "changed deadline",
+              "ar": "موعد تسليم معدّل",
+              "kind": "phrase",
+              "x": 48,
+              "y": 67
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Telling the team",
+          "ar": "إبلاغ الفريق",
+          "purposeEn": "Ask for the new draft date so you can update the team.",
+          "purposeAr": "اطلب موعد المسوّدة الجديد لإبلاغ الفريق.",
+          "image": {
+            "id": "conv-life-meeting-followup-4",
+            "path": "assets/scenes/conversations/life-meeting-followup-4.webp",
+            "width": 397,
+            "height": 246,
+            "en": "Telling the team",
+            "ar": "إبلاغ الفريق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1189,
+                496,
+                1586,
+                742
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "calendar icon",
+              "ar": "أيقونة تقويم",
+              "kind": "object",
+              "x": 73,
+              "y": 68
+            },
+            {
+              "en": "type",
+              "ar": "يكتب على لوحة المفاتيح",
+              "kind": "action",
+              "x": 54,
+              "y": 91
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "safety-check",
+      "goalAr": "ميّز الفحص الإلزامي عن النصيحة ووضّح الاستثناء.",
+      "goalEn": "Separate a required check from advice and state the exception.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Checking the machine guard",
+          "ar": "فحص واقي الآلة",
+          "purposeEn": "Confirm what needs checking before switching the equipment on.",
+          "purposeAr": "أكّد ما يجب فحصه قبل تشغيل المعدّة.",
+          "image": {
+            "id": "conv-life-safety-check-1",
+            "path": "assets/scenes/conversations/life-safety-check-1.webp",
+            "width": 396,
+            "height": 250,
+            "en": "Checking the machine guard",
+            "ar": "فحص واقي الآلة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                742,
+                396,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "machine guard",
+              "ar": "واقٍ للآلة",
+              "kind": "object",
+              "x": 63,
+              "y": 45
+            },
+            {
+              "en": "stop button",
+              "ar": "زر إيقاف",
+              "kind": "object",
+              "x": 60,
+              "y": 85
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Keeping the checklist visible",
+          "ar": "إبقاء قائمة التحقق ظاهرة",
+          "purposeEn": "Ask whether you need a fresh checklist every day.",
+          "purposeAr": "اسأل هل تحتاج نسخة جديدة من القائمة كل يوم.",
+          "image": {
+            "id": "conv-life-safety-check-2",
+            "path": "assets/scenes/conversations/life-safety-check-2.webp",
+            "width": 397,
+            "height": 250,
+            "en": "Keeping the checklist visible",
+            "ar": "إبقاء قائمة التحقق ظاهرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                396,
+                742,
+                793,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "checklist",
+              "ar": "قائمة تحقق",
+              "kind": "object",
+              "x": 52,
+              "y": 73
+            },
+            {
+              "en": "clipboard",
+              "ar": "لوح تثبيت الأوراق",
+              "kind": "object",
+              "x": 54,
+              "y": 66
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "When to stop",
+          "ar": "متى يجب التوقف",
+          "purposeEn": "Say when you will not switch the machine on.",
+          "purposeAr": "اذكر متى تمتنع عن تشغيل الآلة.",
+          "image": {
+            "id": "conv-life-safety-check-3",
+            "path": "assets/scenes/conversations/life-safety-check-3.webp",
+            "width": 396,
+            "height": 250,
+            "en": "When to stop",
+            "ar": "متى يجب التوقف",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                793,
+                742,
+                1189,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "protective glasses",
+              "ar": "نظارات واقية",
+              "kind": "object",
+              "x": 88,
+              "y": 17
+            },
+            {
+              "en": "confirm",
+              "ar": "يؤكد",
+              "kind": "action",
+              "x": 69,
+              "y": 73
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Reporting damage",
+          "ar": "الإبلاغ عن التلف",
+          "purposeEn": "Report damage to the guard before operating the equipment.",
+          "purposeAr": "بلّغ عن تلف الواقي قبل تشغيل المعدّة.",
+          "image": {
+            "id": "conv-life-safety-check-4",
+            "path": "assets/scenes/conversations/life-safety-check-4.webp",
+            "width": 397,
+            "height": 250,
+            "en": "Reporting damage",
+            "ar": "الإبلاغ عن التلف",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1189,
+                742,
+                1586,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "damaged guard",
+              "ar": "واقٍ تالف",
+              "kind": "object",
+              "x": 46,
+              "y": 66
+            },
+            {
+              "en": "point out damage",
+              "ar": "يشير إلى التلف",
+              "kind": "phrase",
+              "x": 62,
+              "y": 66
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

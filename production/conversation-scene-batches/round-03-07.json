@@ -1,0 +1,742 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "2b8cf5cdb013a1740b632220c421686bc5f1a016ce17cf2d425935f16adcdfdc"
+  },
+  "conversations": [
+    {
+      "id": "first-aid-supplies",
+      "goalAr": "اسأل عن مكان الحقيبة واطلب إحضارها.",
+      "goalEn": "Locate the first-aid kit and ask someone to bring it.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "The red bag",
+          "ar": "الحقيبة الحمراء",
+          "purposeEn": "Ask what is inside a small bag.",
+          "purposeAr": "اسأل عمّا يوجد داخل الحقيبة الصغيرة.",
+          "image": {
+            "id": "conv-life-first-aid-supplies-1",
+            "path": "assets/scenes/conversations/life-first-aid-supplies-1.webp",
+            "width": 397,
+            "height": 272,
+            "en": "The red bag",
+            "ar": "الحقيبة الحمراء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                0,
+                397,
+                272
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "red pouch",
+              "ar": "جراب أحمر",
+              "kind": "object",
+              "x": 60,
+              "y": 81
+            },
+            {
+              "en": "point at",
+              "ar": "يشير إلى",
+              "kind": "phrase",
+              "x": 40,
+              "y": 70
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Basic supplies",
+          "ar": "مستلزمات أساسية",
+          "purposeEn": "Describe the supplies and ask where the first-aid kit is.",
+          "purposeAr": "صف المستلزمات واسأل أين حقيبة الإسعافات.",
+          "image": {
+            "id": "conv-life-first-aid-supplies-2",
+            "path": "assets/scenes/conversations/life-first-aid-supplies-2.webp",
+            "width": 395,
+            "height": 272,
+            "en": "Basic supplies",
+            "ar": "مستلزمات أساسية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                397,
+                0,
+                792,
+                272
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bandage roll",
+              "ar": "لفافة ضماد",
+              "kind": "object",
+              "x": 44,
+              "y": 87
+            },
+            {
+              "en": "inside the pouch",
+              "ar": "داخل الجراب",
+              "kind": "phrase",
+              "x": 38,
+              "y": 90
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "The cupboard by the door",
+          "ar": "الخزانة قرب الباب",
+          "purposeEn": "Locate the kit using the cupboard and door as landmarks.",
+          "purposeAr": "حدّد مكان العلبة بالاستدلال بالخزانة والباب.",
+          "image": {
+            "id": "conv-life-first-aid-supplies-3",
+            "path": "assets/scenes/conversations/life-first-aid-supplies-3.webp",
+            "width": 398,
+            "height": 272,
+            "en": "The cupboard by the door",
+            "ar": "الخزانة قرب الباب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                792,
+                0,
+                1190,
+                272
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "cupboard",
+              "ar": "خزانة",
+              "kind": "object",
+              "x": 70,
+              "y": 46
+            },
+            {
+              "en": "by the door",
+              "ar": "بجوار الباب",
+              "kind": "phrase",
+              "x": 85,
+              "y": 45
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Counting bandages",
+          "ar": "عدّ الضمادات",
+          "purposeEn": "Bring the kit to the desk and count what remains.",
+          "purposeAr": "أحضر العلبة إلى المكتب وعدّ ما تبقى.",
+          "image": {
+            "id": "conv-life-first-aid-supplies-4",
+            "path": "assets/scenes/conversations/life-first-aid-supplies-4.webp",
+            "width": 396,
+            "height": 272,
+            "en": "Counting bandages",
+            "ar": "عدّ الضمادات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1190,
+                0,
+                1586,
+                272
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "first-aid kit",
+              "ar": "علبة إسعافات أولية",
+              "kind": "object",
+              "x": 43,
+              "y": 73
+            },
+            {
+              "en": "bandage",
+              "ar": "ضمادة",
+              "kind": "object",
+              "x": 42,
+              "y": 49
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "class-introduction",
+      "goalAr": "قدّم نفسك واسأل عن اسم زميل.",
+      "goalEn": "Introduce yourself and ask a classmate’s name.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Meeting a classmate",
+          "ar": "لقاء زميل في الفصل",
+          "purposeEn": "Introduce yourself and ask for a name.",
+          "purposeAr": "عرّف بنفسك واسأل عن الاسم.",
+          "image": {
+            "id": "conv-life-class-introduction-1",
+            "path": "assets/scenes/conversations/life-class-introduction-1.webp",
+            "width": 397,
+            "height": 231,
+            "en": "Meeting a classmate",
+            "ar": "لقاء زميل في الفصل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                272,
+                397,
+                503
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "classmate",
+              "ar": "زميل دراسة",
+              "kind": "object",
+              "x": 32,
+              "y": 33
+            },
+            {
+              "en": "greet",
+              "ar": "يحيّي",
+              "kind": "action",
+              "x": 52,
+              "y": 84
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Introducing yourself",
+          "ar": "التعريف بالنفس",
+          "purposeEn": "Give your name and say you are new.",
+          "purposeAr": "اذكر اسمك وقل إنك جديد.",
+          "image": {
+            "id": "conv-life-class-introduction-2",
+            "path": "assets/scenes/conversations/life-class-introduction-2.webp",
+            "width": 395,
+            "height": 231,
+            "en": "Introducing yourself",
+            "ar": "التعريف بالنفس",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                397,
+                272,
+                792,
+                503
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "new student",
+              "ar": "طالب جديد",
+              "kind": "object",
+              "x": 61,
+              "y": 36
+            },
+            {
+              "en": "friendly",
+              "ar": "ودودة",
+              "kind": "description",
+              "x": 60,
+              "y": 35
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Recognizing the teacher",
+          "ar": "التعرّف إلى المعلمة",
+          "purposeEn": "Identify the teacher by the board and ask about seating.",
+          "purposeAr": "عرّف بالمعلمة قرب السبورة واسأل عن الجلوس.",
+          "image": {
+            "id": "conv-life-class-introduction-3",
+            "path": "assets/scenes/conversations/life-class-introduction-3.webp",
+            "width": 398,
+            "height": 231,
+            "en": "Recognizing the teacher",
+            "ar": "التعرّف إلى المعلمة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                792,
+                272,
+                1190,
+                503
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "whiteboard",
+              "ar": "سبورة بيضاء",
+              "kind": "object",
+              "x": 72,
+              "y": 22
+            },
+            {
+              "en": "teacher",
+              "ar": "معلّمة",
+              "kind": "object",
+              "x": 82,
+              "y": 44
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Near the front",
+          "ar": "قرب مقدمة الفصل",
+          "purposeEn": "Choose seats where you can hear clearly.",
+          "purposeAr": "اختر مقاعد تسمع منها بوضوح.",
+          "image": {
+            "id": "conv-life-class-introduction-4",
+            "path": "assets/scenes/conversations/life-class-introduction-4.webp",
+            "width": 396,
+            "height": 231,
+            "en": "Near the front",
+            "ar": "قرب مقدمة الفصل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1190,
+                272,
+                1586,
+                503
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "empty desk",
+              "ar": "طاولة شاغرة",
+              "kind": "object",
+              "x": 77,
+              "y": 89
+            },
+            {
+              "en": "front of the classroom",
+              "ar": "مقدّمة الفصل",
+              "kind": "phrase",
+              "x": 80,
+              "y": 63
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "repeat-instructions",
+      "goalAr": "اطلب إعادة خطوة ثم اشكر من شرحها.",
+      "goalEn": "Ask to hear a step again and thank the person who explains it.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Asking for repetition",
+          "ar": "طلب الإعادة",
+          "purposeEn": "Ask politely to hear the last instruction again.",
+          "purposeAr": "اطلب بأدب سماع آخر تعليمات مجددًا.",
+          "image": {
+            "id": "conv-life-repeat-instructions-1",
+            "path": "assets/scenes/conversations/life-repeat-instructions-1.webp",
+            "width": 397,
+            "height": 236,
+            "en": "Asking for repetition",
+            "ar": "طلب الإعادة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                503,
+                397,
+                739
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "raise a hand",
+              "ar": "يرفع يده",
+              "kind": "phrase",
+              "x": 24,
+              "y": 53
+            },
+            {
+              "en": "worksheet",
+              "ar": "ورقة عمل",
+              "kind": "object",
+              "x": 47,
+              "y": 93
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Two examples",
+          "ar": "مثالان",
+          "purposeEn": "Confirm how many examples to write and what to check.",
+          "purposeAr": "تحقّق من عدد الأمثلة وما ينبغي مراجعته.",
+          "image": {
+            "id": "conv-life-repeat-instructions-2",
+            "path": "assets/scenes/conversations/life-repeat-instructions-2.webp",
+            "width": 395,
+            "height": 236,
+            "en": "Two examples",
+            "ar": "مثالان",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                397,
+                503,
+                792,
+                739
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "two fingers",
+              "ar": "إصبعان",
+              "kind": "object",
+              "x": 57,
+              "y": 51
+            },
+            {
+              "en": "sheet of paper",
+              "ar": "ورقة",
+              "kind": "object",
+              "x": 86,
+              "y": 87
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Checking word order",
+          "ar": "مراجعة ترتيب الكلمات",
+          "purposeEn": "Show where the verb goes after the subject.",
+          "purposeAr": "بيّن موضع الفعل بعد الفاعل.",
+          "image": {
+            "id": "conv-life-repeat-instructions-3",
+            "path": "assets/scenes/conversations/life-repeat-instructions-3.webp",
+            "width": 398,
+            "height": 236,
+            "en": "Checking word order",
+            "ar": "مراجعة ترتيب الكلمات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                792,
+                503,
+                1190,
+                739
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "pen",
+              "ar": "قلم",
+              "kind": "object",
+              "x": 25,
+              "y": 76
+            },
+            {
+              "en": "check together",
+              "ar": "يراجعان معًا",
+              "kind": "phrase",
+              "x": 63,
+              "y": 84
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Reading aloud",
+          "ar": "القراءة بصوت مرتفع",
+          "purposeEn": "Read the finished sentence to check how it sounds.",
+          "purposeAr": "اقرأ الجملة المكتملة للتحقق من وقعها.",
+          "image": {
+            "id": "conv-life-repeat-instructions-4",
+            "path": "assets/scenes/conversations/life-repeat-instructions-4.webp",
+            "width": 396,
+            "height": 236,
+            "en": "Reading aloud",
+            "ar": "القراءة بصوت مرتفع",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1190,
+                503,
+                1586,
+                739
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "read aloud",
+              "ar": "يقرأ بصوت مرتفع",
+              "kind": "phrase",
+              "x": 39,
+              "y": 53
+            },
+            {
+              "en": "finished sentence",
+              "ar": "جملة مكتملة",
+              "kind": "object",
+              "x": 41,
+              "y": 80
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quiet-study-place",
+      "goalAr": "ابحث عن مكان هادئ للدراسة.",
+      "goalEn": "Find a quiet place to study.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Looking for somewhere quiet",
+          "ar": "البحث عن مكان هادئ",
+          "purposeEn": "Ask where you can study near campus.",
+          "purposeAr": "اسأل أين يمكنك الدراسة قرب الحرم.",
+          "image": {
+            "id": "conv-life-quiet-study-place-1",
+            "path": "assets/scenes/conversations/life-quiet-study-place-1.webp",
+            "width": 397,
+            "height": 253,
+            "en": "Looking for somewhere quiet",
+            "ar": "البحث عن مكان هادئ",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                739,
+                397,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "campus",
+              "ar": "حرم جامعي",
+              "kind": "object",
+              "x": 55,
+              "y": 41
+            },
+            {
+              "en": "quiet",
+              "ar": "هادئ",
+              "kind": "description",
+              "x": 50,
+              "y": 76
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "The small library",
+          "ar": "المكتبة الصغيرة",
+          "purposeEn": "Locate the library relative to the main building.",
+          "purposeAr": "حدّد موضع المكتبة بالنسبة إلى المبنى الرئيسي.",
+          "image": {
+            "id": "conv-life-quiet-study-place-2",
+            "path": "assets/scenes/conversations/life-quiet-study-place-2.webp",
+            "width": 395,
+            "height": 253,
+            "en": "The small library",
+            "ar": "المكتبة الصغيرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                397,
+                739,
+                792,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "library building",
+              "ar": "مبنى المكتبة",
+              "kind": "object",
+              "x": 75,
+              "y": 42
+            },
+            {
+              "en": "point toward",
+              "ar": "يشير نحو",
+              "kind": "phrase",
+              "x": 53,
+              "y": 43
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "The second floor",
+          "ar": "الطابق الثاني",
+          "purposeEn": "Compare the two floors and ask about booking a desk.",
+          "purposeAr": "قارن الطابقين واسأل عن حجز طاولة.",
+          "image": {
+            "id": "conv-life-quiet-study-place-3",
+            "path": "assets/scenes/conversations/life-quiet-study-place-3.webp",
+            "width": 398,
+            "height": 253,
+            "en": "The second floor",
+            "ar": "الطابق الثاني",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                792,
+                739,
+                1190,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "second floor",
+              "ar": "طابق ثانٍ",
+              "kind": "object",
+              "x": 86,
+              "y": 15
+            },
+            {
+              "en": "staircase",
+              "ar": "درج",
+              "kind": "object",
+              "x": 88,
+              "y": 38
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "An open desk or a room",
+          "ar": "طاولة مفتوحة أم غرفة",
+          "purposeEn": "Clarify when a reservation is needed.",
+          "purposeAr": "وضّح متى يلزم الحجز.",
+          "image": {
+            "id": "conv-life-quiet-study-place-4",
+            "path": "assets/scenes/conversations/life-quiet-study-place-4.webp",
+            "width": 396,
+            "height": 253,
+            "en": "An open desk or a room",
+            "ar": "طاولة مفتوحة أم غرفة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1190,
+                739,
+                1586,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "private room",
+              "ar": "غرفة خاصة",
+              "kind": "object",
+              "x": 70,
+              "y": 62
+            },
+            {
+              "en": "glass partition",
+              "ar": "حاجز زجاجي",
+              "kind": "object",
+              "x": 49,
+              "y": 40
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

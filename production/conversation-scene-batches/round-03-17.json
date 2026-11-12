@@ -1,0 +1,742 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "fad225c09ef2071be9045b90468b374df639d76a2cd6a06bd28ac9be2cf75413"
+  },
+  "conversations": [
+    {
+      "id": "l3-001",
+      "goalAr": "العثور على صرّاف قرب الفندق",
+      "goalEn": "Finding cash near the hotel",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Looking for an ATM",
+          "ar": "البحث عن صرّاف آلي",
+          "purposeEn": "Ask where to get cash near the hotel.",
+          "purposeAr": "اسأل أين تحصل على نقود قرب الفندق.",
+          "image": {
+            "id": "conv-life-l3-001-1",
+            "path": "assets/scenes/conversations/life-l3-001-1.webp",
+            "width": 396,
+            "height": 248,
+            "en": "Looking for an ATM",
+            "ar": "البحث عن صرّاف آلي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                0,
+                396,
+                248
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "street map",
+              "ar": "خريطة الشوارع",
+              "kind": "object",
+              "x": 72,
+              "y": 83
+            },
+            {
+              "en": "hotel entrance",
+              "ar": "مدخل الفندق",
+              "kind": "object",
+              "x": 60,
+              "y": 43
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "In front of the hotel",
+          "ar": "أمام الفندق",
+          "purposeEn": "Locate the bank and ask whether you need to cross the main road.",
+          "purposeAr": "حدّد موضع البنك واسأل هل يلزم عبور الشارع الرئيسي.",
+          "image": {
+            "id": "conv-life-l3-001-2",
+            "path": "assets/scenes/conversations/life-l3-001-2.webp",
+            "width": 397,
+            "height": 248,
+            "en": "In front of the hotel",
+            "ar": "أمام الفندق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                396,
+                0,
+                793,
+                248
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bank",
+              "ar": "بنك",
+              "kind": "object",
+              "x": 83,
+              "y": 38
+            },
+            {
+              "en": "point across",
+              "ar": "يشير نحو الجهة المقابلة",
+              "kind": "phrase",
+              "x": 62,
+              "y": 45
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Checking card acceptance",
+          "ar": "التحقق من قبول البطاقة",
+          "purposeEn": "Confirm the route and ask whether international cards work.",
+          "purposeAr": "أكّد الطريق واسأل هل تُقبل البطاقات الدولية.",
+          "image": {
+            "id": "conv-life-l3-001-3",
+            "path": "assets/scenes/conversations/life-l3-001-3.webp",
+            "width": 395,
+            "height": 248,
+            "en": "Checking card acceptance",
+            "ar": "التحقق من قبول البطاقة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                793,
+                0,
+                1188,
+                248
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ATM",
+              "ar": "صرّاف آلي",
+              "kind": "object",
+              "x": 79,
+              "y": 57
+            },
+            {
+              "en": "card slot",
+              "ar": "فتحة البطاقة",
+              "kind": "object",
+              "x": 83,
+              "y": 77
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "A spare card just in case",
+          "ar": "بطاقة احتياطية تحسّبًا",
+          "purposeEn": "Suggest carrying a second card in case one fails.",
+          "purposeAr": "اقترح حمل بطاقة ثانية تحسّبًا لعدم عمل الأولى.",
+          "image": {
+            "id": "conv-life-l3-001-4",
+            "path": "assets/scenes/conversations/life-l3-001-4.webp",
+            "width": 398,
+            "height": 248,
+            "en": "A spare card just in case",
+            "ar": "بطاقة احتياطية تحسّبًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1188,
+                0,
+                1586,
+                248
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bank cards",
+              "ar": "بطاقتان مصرفيتان",
+              "kind": "object",
+              "x": 60,
+              "y": 64
+            },
+            {
+              "en": "spare card",
+              "ar": "بطاقة احتياطية",
+              "kind": "object",
+              "x": 62,
+              "y": 69
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-002",
+      "goalAr": "تسجيل الوصول لرحلة الفجر",
+      "goalEn": "Checking in for a dawn flight",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Asking about check-in",
+          "ar": "السؤال عن تسجيل الوصول",
+          "purposeEn": "Ask when to check in for an early flight.",
+          "purposeAr": "اسأل عن موعد تسجيل الوصول لرحلة مبكرة.",
+          "image": {
+            "id": "conv-life-l3-002-1",
+            "path": "assets/scenes/conversations/life-l3-002-1.webp",
+            "width": 396,
+            "height": 247,
+            "en": "Asking about check-in",
+            "ar": "السؤال عن تسجيل الوصول",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                248,
+                396,
+                495
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "terminal",
+              "ar": "مبنى المطار",
+              "kind": "object",
+              "x": 57,
+              "y": 45
+            },
+            {
+              "en": "departure screen",
+              "ar": "شاشة المغادرة",
+              "kind": "object",
+              "x": 8,
+              "y": 20
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Booking the taxi",
+          "ar": "حجز سيارة الأجرة",
+          "purposeEn": "Work back from departure time and choose a pickup time.",
+          "purposeAr": "احسب وقت الانطلاق بناءً على الإقلاع واختر موعد التوصيلة.",
+          "image": {
+            "id": "conv-life-l3-002-2",
+            "path": "assets/scenes/conversations/life-l3-002-2.webp",
+            "width": 397,
+            "height": 247,
+            "en": "Booking the taxi",
+            "ar": "حجز سيارة الأجرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                396,
+                248,
+                793,
+                495
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "smartphone",
+              "ar": "هاتف ذكي",
+              "kind": "object",
+              "x": 82,
+              "y": 76
+            },
+            {
+              "en": "book a ride",
+              "ar": "يحجز توصيلة",
+              "kind": "phrase",
+              "x": 75,
+              "y": 66
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Passport and boarding pass",
+          "ar": "الجواز وبطاقة الصعود",
+          "purposeEn": "Check which documents you need to take.",
+          "purposeAr": "تحقق من وثائق السفر التي تحتاج إلى أخذها.",
+          "image": {
+            "id": "conv-life-l3-002-3",
+            "path": "assets/scenes/conversations/life-l3-002-3.webp",
+            "width": 395,
+            "height": 247,
+            "en": "Passport and boarding pass",
+            "ar": "الجواز وبطاقة الصعود",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                793,
+                248,
+                1188,
+                495
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "passport",
+              "ar": "جواز سفر",
+              "kind": "object",
+              "x": 82,
+              "y": 71
+            },
+            {
+              "en": "inside the bag",
+              "ar": "داخل الحقيبة",
+              "kind": "phrase",
+              "x": 70,
+              "y": 88
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "A charged phone",
+          "ar": "هاتف مشحون",
+          "purposeEn": "Confirm a digital boarding pass is enough and remember to charge the phone.",
+          "purposeAr": "أكّد أن البطاقة الرقمية تكفي وتذكّر شحن الهاتف.",
+          "image": {
+            "id": "conv-life-l3-002-4",
+            "path": "assets/scenes/conversations/life-l3-002-4.webp",
+            "width": 398,
+            "height": 247,
+            "en": "A charged phone",
+            "ar": "هاتف مشحون",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1188,
+                248,
+                1586,
+                495
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "digital boarding pass",
+              "ar": "بطاقة صعود رقمية",
+              "kind": "object",
+              "x": 49,
+              "y": 65
+            },
+            {
+              "en": "power bank",
+              "ar": "بطارية متنقلة",
+              "kind": "object",
+              "x": 77,
+              "y": 79
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-003",
+      "goalAr": "العودة إلى الفندق تحت المطر",
+      "goalEn": "Returning to the hotel in the rain",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "When the rain started",
+          "ar": "متى بدأ المطر",
+          "purposeEn": "Ask when it began to rain.",
+          "purposeAr": "اسأل متى بدأ المطر.",
+          "image": {
+            "id": "conv-life-l3-003-1",
+            "path": "assets/scenes/conversations/life-l3-003-1.webp",
+            "width": 396,
+            "height": 248,
+            "en": "When the rain started",
+            "ar": "متى بدأ المطر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                495,
+                396,
+                743
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "heavy rain",
+              "ar": "مطر غزير",
+              "kind": "object",
+              "x": 73,
+              "y": 29
+            },
+            {
+              "en": "soaked",
+              "ar": "مبتلّة تمامًا",
+              "kind": "description",
+              "x": 30,
+              "y": 58
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Sharing a spare umbrella",
+          "ar": "مشاركة مظلّة احتياطية",
+          "purposeEn": "Say where you were and explain how the spare umbrella helped.",
+          "purposeAr": "اذكر أين كنت واشرح كيف أفادت المظلّة الاحتياطية.",
+          "image": {
+            "id": "conv-life-l3-003-2",
+            "path": "assets/scenes/conversations/life-l3-003-2.webp",
+            "width": 397,
+            "height": 248,
+            "en": "Sharing a spare umbrella",
+            "ar": "مشاركة مظلّة احتياطية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                396,
+                495,
+                793,
+                743
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "umbrella",
+              "ar": "مظلّة مطر",
+              "kind": "object",
+              "x": 46,
+              "y": 17
+            },
+            {
+              "en": "under the umbrella",
+              "ar": "تحت المظلّة",
+              "kind": "phrase",
+              "x": 54,
+              "y": 44
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "A slippery path",
+          "ar": "ممرّ زلق",
+          "purposeEn": "Recommend preparing next time and describe the slippery path.",
+          "purposeAr": "اقترح الاستعداد في المرة المقبلة وصف الممر الزلق.",
+          "image": {
+            "id": "conv-life-l3-003-3",
+            "path": "assets/scenes/conversations/life-l3-003-3.webp",
+            "width": 395,
+            "height": 248,
+            "en": "A slippery path",
+            "ar": "ممرّ زلق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                793,
+                495,
+                1188,
+                743
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "slippery",
+              "ar": "زلق",
+              "kind": "description",
+              "x": 55,
+              "y": 82
+            },
+            {
+              "en": "puddle",
+              "ar": "بركة ماء صغيرة",
+              "kind": "object",
+              "x": 58,
+              "y": 71
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Back to the hotel",
+          "ar": "العودة إلى الفندق",
+          "purposeEn": "Suggest going back to shelter from the rain.",
+          "purposeAr": "اقترح العودة إلى مكان يحميكم من المطر.",
+          "image": {
+            "id": "conv-life-l3-003-4",
+            "path": "assets/scenes/conversations/life-l3-003-4.webp",
+            "width": 398,
+            "height": 248,
+            "en": "Back to the hotel",
+            "ar": "العودة إلى الفندق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1188,
+                495,
+                1586,
+                743
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "hotel entrance",
+              "ar": "مدخل الفندق",
+              "kind": "object",
+              "x": 76,
+              "y": 32
+            },
+            {
+              "en": "raincoat",
+              "ar": "معطف مطر",
+              "kind": "object",
+              "x": 12,
+              "y": 39
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-004",
+      "goalAr": "الوصول إلى دار الضيافة سيرًا",
+      "goalEn": "Walking to the guesthouse",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "How far on foot?",
+          "ar": "كم يبعد مشيًا؟",
+          "purposeEn": "Ask how far the destination is.",
+          "purposeAr": "اسأل عن بُعد الوجهة.",
+          "image": {
+            "id": "conv-life-l3-004-1",
+            "path": "assets/scenes/conversations/life-l3-004-1.webp",
+            "width": 396,
+            "height": 249,
+            "en": "How far on foot?",
+            "ar": "كم يبعد مشيًا؟",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                743,
+                396,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "walking path",
+              "ar": "ممرّ مشاة",
+              "kind": "object",
+              "x": 52,
+              "y": 57
+            },
+            {
+              "en": "backpack",
+              "ar": "حقيبة ظهر",
+              "kind": "object",
+              "x": 31,
+              "y": 87
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Using the footbridge",
+          "ar": "سلوك جسر المشاة",
+          "purposeEn": "Estimate the walking time and ask about the length of the bridge.",
+          "purposeAr": "قدّر زمن المشي واسأل عن طول الجسر.",
+          "image": {
+            "id": "conv-life-l3-004-2",
+            "path": "assets/scenes/conversations/life-l3-004-2.webp",
+            "width": 397,
+            "height": 249,
+            "en": "Using the footbridge",
+            "ar": "سلوك جسر المشاة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                396,
+                743,
+                793,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "footbridge",
+              "ar": "جسر مشاة",
+              "kind": "object",
+              "x": 78,
+              "y": 81
+            },
+            {
+              "en": "over the river",
+              "ar": "فوق النهر",
+              "kind": "phrase",
+              "x": 51,
+              "y": 86
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "The ramp at the far end",
+          "ar": "المنحدر في الطرف الآخر",
+          "purposeEn": "Describe the ramp and mention that the suitcase is heavy.",
+          "purposeAr": "صف المنحدر واذكر أن حقيبة السفر ثقيلة.",
+          "image": {
+            "id": "conv-life-l3-004-3",
+            "path": "assets/scenes/conversations/life-l3-004-3.webp",
+            "width": 395,
+            "height": 249,
+            "en": "The ramp at the far end",
+            "ar": "المنحدر في الطرف الآخر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                793,
+                743,
+                1188,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ramp",
+              "ar": "منحدر",
+              "kind": "object",
+              "x": 50,
+              "y": 74
+            },
+            {
+              "en": "suitcase",
+              "ar": "حقيبة سفر",
+              "kind": "object",
+              "x": 67,
+              "y": 91
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Taking a break on the bench",
+          "ar": "أخذ استراحة على المقعد",
+          "purposeEn": "Offer to take a break after crossing.",
+          "purposeAr": "اعرض أخذ استراحة بعد العبور.",
+          "image": {
+            "id": "conv-life-l3-004-4",
+            "path": "assets/scenes/conversations/life-l3-004-4.webp",
+            "width": 398,
+            "height": 249,
+            "en": "Taking a break on the bench",
+            "ar": "أخذ استراحة على المقعد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1188,
+                743,
+                1586,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bench",
+              "ar": "مقعد طويل",
+              "kind": "object",
+              "x": 46,
+              "y": 80
+            },
+            {
+              "en": "take a break",
+              "ar": "يأخذ استراحة",
+              "kind": "phrase",
+              "x": 36,
+              "y": 64
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

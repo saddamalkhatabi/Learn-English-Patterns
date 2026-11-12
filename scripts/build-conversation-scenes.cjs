@@ -1,6 +1,6 @@
 const fs=require('node:fs'),assert=require('node:assert/strict'),crypto=require('node:crypto');
 const {asset,webpSize}=require('./media-validation.cjs');
-const author=require('../production/conversation-scenes.json');
+const {images:author,lifecycles}=require('./conversation-scene-sources.cjs');
 const ideas=new Map(require('../public/idea-scenes.json').scenes.map(s=>[s.id,s]));
 const dialogues=new Map(require('../public/dialogues.json').dialogues.map(d=>[d.id,d]));
 function resolve(input){
@@ -44,7 +44,6 @@ for(const [id,input] of Object.entries(author)){
  assert(cover||Object.keys(turns).length,id);
  scenes[id]={cover,turns};
 }
-const lifecycles=require('../production/dialogue-lifecycles.json');
 const turnPurposes=require('../production/dialogue-turn-purposes.json');
 for(const [id,life] of Object.entries(lifecycles)){
  const dialogue=dialogues.get(id);

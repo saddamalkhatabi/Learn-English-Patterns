@@ -1,0 +1,742 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "13f0033e3629b36a1d7d1ecbd709e5c6ecd2068077b8980a30a9a68faed49ab4"
+  },
+  "conversations": [
+    {
+      "id": "l3-009",
+      "goalAr": "اختيار ما نزوره عند البحيرة",
+      "goalEn": "Deciding what to see at the lake",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Choosing the first stop",
+          "ar": "اختيار نقطة البداية",
+          "purposeEn": "Ask where someone would like to go first.",
+          "purposeAr": "اسأل من أين يود الشخص بدء الجولة.",
+          "image": {
+            "id": "conv-life-l3-009-1",
+            "path": "assets/scenes/conversations/life-l3-009-1.webp",
+            "width": 397,
+            "height": 249,
+            "en": "Choosing the first stop",
+            "ar": "اختيار نقطة البداية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                0,
+                397,
+                249
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "path",
+              "ar": "ممر",
+              "kind": "object",
+              "x": 47,
+              "y": 83
+            },
+            {
+              "en": "lakeside railing",
+              "ar": "حاجز قرب البحيرة",
+              "kind": "object",
+              "x": 67,
+              "y": 45
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Walking by the lake",
+          "ar": "المشي بجوار البحيرة",
+          "purposeEn": "Suggest a quiet path and notice the boats.",
+          "purposeAr": "اقترح ممرًا هادئًا ولاحظ القوارب.",
+          "image": {
+            "id": "conv-life-l3-009-2",
+            "path": "assets/scenes/conversations/life-l3-009-2.webp",
+            "width": 397,
+            "height": 249,
+            "en": "Walking by the lake",
+            "ar": "المشي بجوار البحيرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                397,
+                0,
+                794,
+                249
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "boats",
+              "ar": "قوارب",
+              "kind": "object",
+              "x": 21,
+              "y": 50
+            },
+            {
+              "en": "by the lake",
+              "ar": "بجوار البحيرة",
+              "kind": "phrase",
+              "x": 36,
+              "y": 73
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Renting a boat",
+          "ar": "استئجار قارب",
+          "purposeEn": "Discuss whether the weather and price suit a boat rental.",
+          "purposeAr": "ناقش هل يناسب الطقس والسعر استئجار قارب.",
+          "image": {
+            "id": "conv-life-l3-009-3",
+            "path": "assets/scenes/conversations/life-l3-009-3.webp",
+            "width": 396,
+            "height": 249,
+            "en": "Renting a boat",
+            "ar": "استئجار قارب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                794,
+                0,
+                1190,
+                249
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "rental boat",
+              "ar": "قارب للإيجار",
+              "kind": "object",
+              "x": 50,
+              "y": 62
+            },
+            {
+              "en": "consider",
+              "ar": "يفكّر في",
+              "kind": "action",
+              "x": 35,
+              "y": 42
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Asking at the kiosk",
+          "ar": "السؤال في الكشك",
+          "purposeEn": "Ask for information before deciding to rent.",
+          "purposeAr": "اطلب معلومات قبل أن تقرر الاستئجار.",
+          "image": {
+            "id": "conv-life-l3-009-4",
+            "path": "assets/scenes/conversations/life-l3-009-4.webp",
+            "width": 396,
+            "height": 249,
+            "en": "Asking at the kiosk",
+            "ar": "السؤال في الكشك",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1190,
+                0,
+                1586,
+                249
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "kiosk",
+              "ar": "كشك",
+              "kind": "object",
+              "x": 76,
+              "y": 70
+            },
+            {
+              "en": "life jacket",
+              "ar": "سترة نجاة",
+              "kind": "object",
+              "x": 74,
+              "y": 37
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-010",
+      "goalAr": "اختيار طريق آمن للعودة",
+      "goalEn": "Finding a safe way home",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "The last bus has gone",
+          "ar": "غادرت آخر حافلة",
+          "purposeEn": "Ask how you will get home after the last bus.",
+          "purposeAr": "اسأل كيف ستعود إلى المنزل بعد مغادرة آخر حافلة.",
+          "image": {
+            "id": "conv-life-l3-010-1",
+            "path": "assets/scenes/conversations/life-l3-010-1.webp",
+            "width": 397,
+            "height": 247,
+            "en": "The last bus has gone",
+            "ar": "غادرت آخر حافلة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                249,
+                397,
+                496
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bus stop at night",
+              "ar": "موقف حافلة ليلًا",
+              "kind": "phrase",
+              "x": 58,
+              "y": 31
+            },
+            {
+              "en": "worried",
+              "ar": "قلقة",
+              "kind": "description",
+              "x": 33,
+              "y": 28
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "A well-lit place to wait",
+          "ar": "مكان مضاء جيدًا للانتظار",
+          "purposeEn": "Suggest a taxi and explain where you prefer to wait.",
+          "purposeAr": "اقترح سيارة أجرة واذكر أين تفضّل الانتظار.",
+          "image": {
+            "id": "conv-life-l3-010-2",
+            "path": "assets/scenes/conversations/life-l3-010-2.webp",
+            "width": 397,
+            "height": 247,
+            "en": "A well-lit place to wait",
+            "ar": "مكان مضاء جيدًا للانتظار",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                397,
+                249,
+                794,
+                496
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "well lit",
+              "ar": "مضاء جيدًا",
+              "kind": "description",
+              "x": 75,
+              "y": 19
+            },
+            {
+              "en": "waiting bench",
+              "ar": "مقعد انتظار",
+              "kind": "object",
+              "x": 77,
+              "y": 66
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Sending the driver’s name",
+          "ar": "إرسال اسم السائق",
+          "purposeEn": "Ask for the driver's name before the taxi arrives.",
+          "purposeAr": "اطلب اسم السائق قبل وصول سيارة الأجرة.",
+          "image": {
+            "id": "conv-life-l3-010-3",
+            "path": "assets/scenes/conversations/life-l3-010-3.webp",
+            "width": 396,
+            "height": 247,
+            "en": "Sending the driver’s name",
+            "ar": "إرسال اسم السائق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                794,
+                249,
+                1190,
+                496
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "send a message",
+              "ar": "يرسل رسالة",
+              "kind": "phrase",
+              "x": 76,
+              "y": 77
+            },
+            {
+              "en": "phone",
+              "ar": "هاتف",
+              "kind": "object",
+              "x": 76,
+              "y": 71
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Sharing the pickup point",
+          "ar": "مشاركة نقطة الالتقاء",
+          "purposeEn": "Confirm which pickup point you will share.",
+          "purposeAr": "أكّد نقطة الالتقاء التي ستشاركها.",
+          "image": {
+            "id": "conv-life-l3-010-4",
+            "path": "assets/scenes/conversations/life-l3-010-4.webp",
+            "width": 396,
+            "height": 247,
+            "en": "Sharing the pickup point",
+            "ar": "مشاركة نقطة الالتقاء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1190,
+                249,
+                1586,
+                496
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "share a location",
+              "ar": "يشارك موقعًا",
+              "kind": "phrase",
+              "x": 63,
+              "y": 69
+            },
+            {
+              "en": "relieved",
+              "ar": "مرتاحة",
+              "kind": "description",
+              "x": 73,
+              "y": 37
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-011",
+      "goalAr": "استقبال جار جديد على الشاي",
+      "goalEn": "Welcoming a new neighbor for tea",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "A surprise visit",
+          "ar": "لقاء غير متوقّع",
+          "purposeEn": "Express surprise at seeing someone at your door.",
+          "purposeAr": "عبّر عن مفاجأتك برؤية شخص عند بابك.",
+          "image": {
+            "id": "conv-life-l3-011-1",
+            "path": "assets/scenes/conversations/life-l3-011-1.webp",
+            "width": 397,
+            "height": 248,
+            "en": "A surprise visit",
+            "ar": "لقاء غير متوقّع",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                496,
+                397,
+                744
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "surprised",
+              "ar": "متفاجئة",
+              "kind": "description",
+              "x": 30,
+              "y": 42
+            },
+            {
+              "en": "doorframe",
+              "ar": "إطار الباب",
+              "kind": "object",
+              "x": 58,
+              "y": 57
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Introducing a new neighbor",
+          "ar": "التعريف بجارة جديدة",
+          "purposeEn": "Introduce yourself and welcome the new neighbor in.",
+          "purposeAr": "عرّف بنفسك ورحّب بدخول الجارة الجديدة.",
+          "image": {
+            "id": "conv-life-l3-011-2",
+            "path": "assets/scenes/conversations/life-l3-011-2.webp",
+            "width": 397,
+            "height": 248,
+            "en": "Introducing a new neighbor",
+            "ar": "التعريف بجارة جديدة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                397,
+                496,
+                794,
+                744
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "neighbor",
+              "ar": "جار",
+              "kind": "object",
+              "x": 51,
+              "y": 30
+            },
+            {
+              "en": "kettle",
+              "ar": "غلاية",
+              "kind": "object",
+              "x": 86,
+              "y": 38
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Offering a cup of tea",
+          "ar": "عرض كوب شاي",
+          "purposeEn": "Offer tea and ask about the courtyard.",
+          "purposeAr": "اعرض الشاي واسأل عن الفناء.",
+          "image": {
+            "id": "conv-life-l3-011-3",
+            "path": "assets/scenes/conversations/life-l3-011-3.webp",
+            "width": 396,
+            "height": 248,
+            "en": "Offering a cup of tea",
+            "ar": "عرض كوب شاي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                794,
+                496,
+                1190,
+                744
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "pour tea",
+              "ar": "يصبّ الشاي",
+              "kind": "phrase",
+              "x": 35,
+              "y": 69
+            },
+            {
+              "en": "tea glasses",
+              "ar": "كؤوس شاي",
+              "kind": "object",
+              "x": 64,
+              "y": 86
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Tea in the courtyard",
+          "ar": "الشاي في الفناء",
+          "purposeEn": "Confirm the courtyard is open and offer to sit outside.",
+          "purposeAr": "أكّد أن الفناء متاح واعرض الجلوس في الخارج.",
+          "image": {
+            "id": "conv-life-l3-011-4",
+            "path": "assets/scenes/conversations/life-l3-011-4.webp",
+            "width": 396,
+            "height": 248,
+            "en": "Tea in the courtyard",
+            "ar": "الشاي في الفناء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1190,
+                496,
+                1586,
+                744
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "courtyard",
+              "ar": "فناء",
+              "kind": "object",
+              "x": 82,
+              "y": 47
+            },
+            {
+              "en": "outdoor table",
+              "ar": "طاولة خارجية",
+              "kind": "object",
+              "x": 82,
+              "y": 74
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-012",
+      "goalAr": "تسليم صديق مفتاحًا احتياطيًا",
+      "goalEn": "Giving a friend a spare key",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Handing over the keys",
+          "ar": "تسليم المفاتيح",
+          "purposeEn": "Give someone their keys.",
+          "purposeAr": "ناول الشخص مفاتيحه.",
+          "image": {
+            "id": "conv-life-l3-012-1",
+            "path": "assets/scenes/conversations/life-l3-012-1.webp",
+            "width": 397,
+            "height": 248,
+            "en": "Handing over the keys",
+            "ar": "تسليم المفاتيح",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                744,
+                397,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "key ring",
+              "ar": "حلقة مفاتيح",
+              "kind": "object",
+              "x": 50,
+              "y": 68
+            },
+            {
+              "en": "hand over",
+              "ar": "يناول",
+              "kind": "action",
+              "x": 57,
+              "y": 71
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Keeping a spare",
+          "ar": "الاحتفاظ بمفتاح احتياطي",
+          "purposeEn": "Ask to leave a spare and suggest storing it in an envelope.",
+          "purposeAr": "اطلب ترك مفتاح احتياطي واقترح وضعه في ظرف.",
+          "image": {
+            "id": "conv-life-l3-012-2",
+            "path": "assets/scenes/conversations/life-l3-012-2.webp",
+            "width": 397,
+            "height": 248,
+            "en": "Keeping a spare",
+            "ar": "الاحتفاظ بمفتاح احتياطي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                397,
+                744,
+                794,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "envelope",
+              "ar": "ظرف",
+              "kind": "object",
+              "x": 71,
+              "y": 70
+            },
+            {
+              "en": "spare key",
+              "ar": "مفتاح احتياطي",
+              "kind": "object",
+              "x": 68,
+              "y": 59
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Remembering to lock up",
+          "ar": "تذكّر قفل الباب",
+          "purposeEn": "Remind a friend to lock the door and check whether they can look after the plants.",
+          "purposeAr": "ذكّر صديقًا بقفل الباب واسأل إن كان يستطيع العناية بالنباتات.",
+          "image": {
+            "id": "conv-life-l3-012-3",
+            "path": "assets/scenes/conversations/life-l3-012-3.webp",
+            "width": 396,
+            "height": 248,
+            "en": "Remembering to lock up",
+            "ar": "تذكّر قفل الباب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                794,
+                744,
+                1190,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "door handle",
+              "ar": "مقبض الباب",
+              "kind": "object",
+              "x": 60,
+              "y": 79
+            },
+            {
+              "en": "lock the door",
+              "ar": "يقفل الباب",
+              "kind": "phrase",
+              "x": 60,
+              "y": 70
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Checking the soil",
+          "ar": "تفقد التربة",
+          "purposeEn": "Explain when the plants need watering.",
+          "purposeAr": "اشرح متى تحتاج النباتات إلى السقي.",
+          "image": {
+            "id": "conv-life-l3-012-4",
+            "path": "assets/scenes/conversations/life-l3-012-4.webp",
+            "width": 396,
+            "height": 248,
+            "en": "Checking the soil",
+            "ar": "تفقد التربة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1190,
+                744,
+                1586,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "potted plant",
+              "ar": "نبات في أصيص",
+              "kind": "object",
+              "x": 56,
+              "y": 55
+            },
+            {
+              "en": "soil",
+              "ar": "تربة",
+              "kind": "object",
+              "x": 53,
+              "y": 78
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

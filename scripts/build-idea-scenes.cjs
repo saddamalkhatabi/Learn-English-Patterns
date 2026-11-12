@@ -80,10 +80,9 @@ const covered=new Set(scenes.flatMap(scene=>scene.patterns.filter(pattern=>patte
 assert.deepEqual(covered,patternIds,'Every lesson needs a contextual scene example');
 
 const dialogueTopics={id:'conversation',ar:'مشاهد المحادثات',en:'Conversation scenes'};
-const dialogueStages=require('../production/dialogue-lifecycles.json');
-const dialogueImages=require('../production/conversation-scenes.json');
+const {lifecycles:dialogueStages,images:dialogueImages,words:batchWords}=require('./conversation-scene-sources.cjs');
 const dialogues=new Map(require('../public/dialogues.json').dialogues.map(dialogue=>[dialogue.id,dialogue]));
-const sceneLabels=new Map();
+const sceneLabels=new Map(batchWords);
 for(const line of text('production/conversation-scene-labels.tsv')){
  if(line.startsWith('#'))continue;
  const [id,en,ar,kind,coords]=line.split('|');

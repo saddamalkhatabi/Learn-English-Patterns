@@ -1,0 +1,742 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "e2610e84db97aa3c741661d83c2792f86941fd540b8c47d9626036e36244bac4"
+  },
+  "conversations": [
+    {
+      "id": "group-presentation",
+      "goalAr": "وزّع أجزاء العرض حسب قدرات كل طالب.",
+      "goalEn": "Divide presentation tasks by each student’s strengths.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Preparing the slides",
+          "ar": "إعداد الشرائح",
+          "purposeEn": "Offer to make the slides and explain a time constraint.",
+          "purposeAr": "اعرض إعداد الشرائح واشرح ضيق الوقت.",
+          "image": {
+            "id": "conv-life-group-presentation-1",
+            "path": "assets/scenes/conversations/life-group-presentation-1.webp",
+            "width": 397,
+            "height": 249,
+            "en": "Preparing the slides",
+            "ar": "إعداد الشرائح",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                0,
+                397,
+                249
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "slide",
+              "ar": "شريحة عرض",
+              "kind": "object",
+              "x": 64,
+              "y": 68
+            },
+            {
+              "en": "clock",
+              "ar": "ساعة",
+              "kind": "object",
+              "x": 91,
+              "y": 85
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Dividing the sections",
+          "ar": "تقسيم الأجزاء",
+          "purposeEn": "Divide the introduction and conclusion among the group.",
+          "purposeAr": "وزّع المقدمة والخاتمة بين أعضاء المجموعة.",
+          "image": {
+            "id": "conv-life-group-presentation-2",
+            "path": "assets/scenes/conversations/life-group-presentation-2.webp",
+            "width": 396,
+            "height": 249,
+            "en": "Dividing the sections",
+            "ar": "تقسيم الأجزاء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                397,
+                0,
+                793,
+                249
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "written notes",
+              "ar": "ملاحظات مكتوبة",
+              "kind": "object",
+              "x": 55,
+              "y": 89
+            },
+            {
+              "en": "pen",
+              "ar": "قلم",
+              "kind": "object",
+              "x": 33,
+              "y": 68
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Rehearsing together",
+          "ar": "التدرّب معًا",
+          "purposeEn": "Agree when to rehearse and choose someone to track the time.",
+          "purposeAr": "اتفقوا على موعد التمرين واختاروا من يراقب الوقت.",
+          "image": {
+            "id": "conv-life-group-presentation-3",
+            "path": "assets/scenes/conversations/life-group-presentation-3.webp",
+            "width": 397,
+            "height": 249,
+            "en": "Rehearsing together",
+            "ar": "التدرّب معًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                793,
+                0,
+                1190,
+                249
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "rehearse",
+              "ar": "يتدرّب",
+              "kind": "action",
+              "x": 43,
+              "y": 63
+            },
+            {
+              "en": "notebook",
+              "ar": "دفتر",
+              "kind": "object",
+              "x": 46,
+              "y": 89
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Setting the timer",
+          "ar": "ضبط المؤقّت",
+          "purposeEn": "Use a timer to find the part that needs shortening.",
+          "purposeAr": "استخدم المؤقّت لتحديد الجزء الذي يحتاج إلى اختصار.",
+          "image": {
+            "id": "conv-life-group-presentation-4",
+            "path": "assets/scenes/conversations/life-group-presentation-4.webp",
+            "width": 396,
+            "height": 249,
+            "en": "Setting the timer",
+            "ar": "ضبط المؤقّت",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1190,
+                0,
+                1586,
+                249
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "timer",
+              "ar": "مؤقّت",
+              "kind": "object",
+              "x": 42,
+              "y": 60
+            },
+            {
+              "en": "shorten",
+              "ar": "يختصر",
+              "kind": "action",
+              "x": 58,
+              "y": 73
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "teacher-office-hours",
+      "goalAr": "اقترح موعدًا بديلًا للمقابلة.",
+      "goalEn": "Arrange a new time to meet the teacher.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Asking to come by",
+          "ar": "طلب المرور على المعلّمة",
+          "purposeEn": "Ask whether you can come by to discuss an essay.",
+          "purposeAr": "اسأل هل يمكنك المرور لمناقشة مقال.",
+          "image": {
+            "id": "conv-life-teacher-office-hours-1",
+            "path": "assets/scenes/conversations/life-teacher-office-hours-1.webp",
+            "width": 397,
+            "height": 246,
+            "en": "Asking to come by",
+            "ar": "طلب المرور على المعلّمة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                249,
+                397,
+                495
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "office door",
+              "ar": "باب المكتب",
+              "kind": "object",
+              "x": 59,
+              "y": 53
+            },
+            {
+              "en": "student",
+              "ar": "طالبة",
+              "kind": "object",
+              "x": 28,
+              "y": 32
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Checking the office hours",
+          "ar": "التحقق من ساعات الاستقبال",
+          "purposeEn": "Ask which time slot is available on Tuesday.",
+          "purposeAr": "اسأل عن الموعد المتاح يوم الثلاثاء.",
+          "image": {
+            "id": "conv-life-teacher-office-hours-2",
+            "path": "assets/scenes/conversations/life-teacher-office-hours-2.webp",
+            "width": 396,
+            "height": 246,
+            "en": "Checking the office hours",
+            "ar": "التحقق من ساعات الاستقبال",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                397,
+                249,
+                793,
+                495
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "desk calendar",
+              "ar": "تقويم مكتبي",
+              "kind": "object",
+              "x": 79,
+              "y": 78
+            },
+            {
+              "en": "office hours",
+              "ar": "ساعات الاستقبال",
+              "kind": "phrase",
+              "x": 75,
+              "y": 68
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Proposing another slot",
+          "ar": "اقتراح موعد آخر",
+          "purposeEn": "Decline a time you cannot attend and propose noon.",
+          "purposeAr": "اعتذر عن موعد لا يناسبك واقترح الظهر.",
+          "image": {
+            "id": "conv-life-teacher-office-hours-3",
+            "path": "assets/scenes/conversations/life-teacher-office-hours-3.webp",
+            "width": 397,
+            "height": 246,
+            "en": "Proposing another slot",
+            "ar": "اقتراح موعد آخر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                793,
+                249,
+                1190,
+                495
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "suggest",
+              "ar": "يقترح",
+              "kind": "action",
+              "x": 39,
+              "y": 62
+            },
+            {
+              "en": "open notebook",
+              "ar": "دفتر مفتوح",
+              "kind": "object",
+              "x": 44,
+              "y": 94
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Bringing the draft",
+          "ar": "إحضار المسوّدة",
+          "purposeEn": "Confirm the appointment and agree to review the draft.",
+          "purposeAr": "أكّد الموعد واتفق على مراجعة المسوّدة.",
+          "image": {
+            "id": "conv-life-teacher-office-hours-4",
+            "path": "assets/scenes/conversations/life-teacher-office-hours-4.webp",
+            "width": 396,
+            "height": 246,
+            "en": "Bringing the draft",
+            "ar": "إحضار المسوّدة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1190,
+                249,
+                1586,
+                495
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "draft",
+              "ar": "مسوّدة",
+              "kind": "object",
+              "x": 57,
+              "y": 85
+            },
+            {
+              "en": "go through",
+              "ar": "يراجع بالتفصيل",
+              "kind": "phrase",
+              "x": 45,
+              "y": 76
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "report-deadline",
+      "goalAr": "ميّز ما يجب تسليمه الآن وما يمكن تأجيله.",
+      "goalEn": "Separate what is due now from what can wait.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Asking when it is due",
+          "ar": "السؤال عن موعد التسليم",
+          "purposeEn": "Ask for the report deadline.",
+          "purposeAr": "اسأل عن الموعد النهائي للتقرير.",
+          "image": {
+            "id": "conv-life-report-deadline-1",
+            "path": "assets/scenes/conversations/life-report-deadline-1.webp",
+            "width": 397,
+            "height": 249,
+            "en": "Asking when it is due",
+            "ar": "السؤال عن موعد التسليم",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                495,
+                397,
+                744
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "laptop",
+              "ar": "حاسوب محمول",
+              "kind": "object",
+              "x": 19,
+              "y": 88
+            },
+            {
+              "en": "water bottle",
+              "ar": "زجاجة ماء",
+              "kind": "object",
+              "x": 68,
+              "y": 79
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Draft and final deadlines",
+          "ar": "موعد المسوّدة والنسخة النهائية",
+          "purposeEn": "Distinguish the two deadlines and request the checklist.",
+          "purposeAr": "فرّق بين الموعدين واطلب قائمة التحقق.",
+          "image": {
+            "id": "conv-life-report-deadline-2",
+            "path": "assets/scenes/conversations/life-report-deadline-2.webp",
+            "width": 396,
+            "height": 249,
+            "en": "Draft and final deadlines",
+            "ar": "موعد المسوّدة والنسخة النهائية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                397,
+                495,
+                793,
+                744
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "calendar",
+              "ar": "تقويم",
+              "kind": "object",
+              "x": 73,
+              "y": 70
+            },
+            {
+              "en": "sticky note",
+              "ar": "ورقة لاصقة",
+              "kind": "object",
+              "x": 68,
+              "y": 53
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "What can wait",
+          "ar": "ما يمكن تأجيله",
+          "purposeEn": "Clarify which part is unnecessary in the draft.",
+          "purposeAr": "وضّح الجزء الذي لا يلزم إدراجه في المسوّدة.",
+          "image": {
+            "id": "conv-life-report-deadline-3",
+            "path": "assets/scenes/conversations/life-report-deadline-3.webp",
+            "width": 397,
+            "height": 249,
+            "en": "What can wait",
+            "ar": "ما يمكن تأجيله",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                793,
+                495,
+                1190,
+                744
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "email",
+              "ar": "بريد إلكتروني",
+              "kind": "object",
+              "x": 45,
+              "y": 63
+            },
+            {
+              "en": "send",
+              "ar": "يرسل",
+              "kind": "action",
+              "x": 51,
+              "y": 62
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Adding a summary",
+          "ar": "إضافة ملخّص",
+          "purposeEn": "Ask for a short summary the team can review first.",
+          "purposeAr": "اطلب ملخصًا قصيرًا يستطيع الفريق مراجعته أولًا.",
+          "image": {
+            "id": "conv-life-report-deadline-4",
+            "path": "assets/scenes/conversations/life-report-deadline-4.webp",
+            "width": 396,
+            "height": 249,
+            "en": "Adding a summary",
+            "ar": "إضافة ملخّص",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1190,
+                495,
+                1586,
+                744
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "report",
+              "ar": "تقرير",
+              "kind": "object",
+              "x": 68,
+              "y": 57
+            },
+            {
+              "en": "chart",
+              "ar": "رسم بياني",
+              "kind": "object",
+              "x": 70,
+              "y": 46
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "book-recommendation",
+      "goalAr": "رشّح كتابًا يناسب اهتمام الزميل.",
+      "goalEn": "Recommend a book based on a classmate’s interests.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "A book about hiking",
+          "ar": "كتاب عن التنزّه سيرًا",
+          "purposeEn": "Ask for a beginner-friendly book about hiking.",
+          "purposeAr": "اطلب كتابًا للمبتدئين عن التنزه سيرًا.",
+          "image": {
+            "id": "conv-life-book-recommendation-1",
+            "path": "assets/scenes/conversations/life-book-recommendation-1.webp",
+            "width": 397,
+            "height": 248,
+            "en": "A book about hiking",
+            "ar": "كتاب عن التنزّه سيرًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                744,
+                397,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "hiking boots",
+              "ar": "أحذية للمشي",
+              "kind": "object",
+              "x": 65,
+              "y": 85
+            },
+            {
+              "en": "backpack",
+              "ar": "حقيبة ظهر",
+              "kind": "object",
+              "x": 16,
+              "y": 78
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Looking at easy routes",
+          "ar": "تصفّح المسارات السهلة",
+          "purposeEn": "Recommend a book with easy routes and ask about what to bring.",
+          "purposeAr": "أوصِ بكتاب يضم مسارات سهلة واسأل عما ينبغي إحضاره.",
+          "image": {
+            "id": "conv-life-book-recommendation-2",
+            "path": "assets/scenes/conversations/life-book-recommendation-2.webp",
+            "width": 396,
+            "height": 248,
+            "en": "Looking at easy routes",
+            "ar": "تصفّح المسارات السهلة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                397,
+                744,
+                793,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "guidebook",
+              "ar": "دليل",
+              "kind": "object",
+              "x": 70,
+              "y": 65
+            },
+            {
+              "en": "hiking trail",
+              "ar": "مسار مشي",
+              "kind": "object",
+              "x": 68,
+              "y": 62
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "A torch and a map",
+          "ar": "مصباح يدوي وخريطة",
+          "purposeEn": "Name useful things to pack before a first trip.",
+          "purposeAr": "اذكر ما يفيد حمله في الرحلة الأولى.",
+          "image": {
+            "id": "conv-life-book-recommendation-3",
+            "path": "assets/scenes/conversations/life-book-recommendation-3.webp",
+            "width": 397,
+            "height": 248,
+            "en": "A torch and a map",
+            "ar": "مصباح يدوي وخريطة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                793,
+                744,
+                1190,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "torch",
+              "ar": "مصباح يدوي",
+              "kind": "object",
+              "x": 63,
+              "y": 52
+            },
+            {
+              "en": "map",
+              "ar": "خريطة",
+              "kind": "object",
+              "x": 61,
+              "y": 78
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Sending the title",
+          "ar": "إرسال عنوان الكتاب",
+          "purposeEn": "Offer to send the title so the reader can find it.",
+          "purposeAr": "اعرض إرسال العنوان كي يستطيع القارئ العثور عليه.",
+          "image": {
+            "id": "conv-life-book-recommendation-4",
+            "path": "assets/scenes/conversations/life-book-recommendation-4.webp",
+            "width": 396,
+            "height": 248,
+            "en": "Sending the title",
+            "ar": "إرسال عنوان الكتاب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1190,
+                744,
+                1586,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "smartphone",
+              "ar": "هاتف ذكي",
+              "kind": "object",
+              "x": 70,
+              "y": 75
+            },
+            {
+              "en": "send a title",
+              "ar": "يرسل عنوانًا",
+              "kind": "phrase",
+              "x": 68,
+              "y": 84
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

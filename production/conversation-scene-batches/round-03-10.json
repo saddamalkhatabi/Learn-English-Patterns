@@ -1,0 +1,742 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "81fbd0000e707e5c72ca530bcd17a9c5536d2d8e2dec4b64506cdd5d04ef756b"
+  },
+  "conversations": [
+    {
+      "id": "last-shift",
+      "goalAr": "حدّد أين كنت وماذا حدث أثناء عملك.",
+      "goalEn": "Say where you were and what happened during your shift.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Delivery at reception",
+          "ar": "التوصيل عند الاستقبال",
+          "purposeEn": "Ask whether a colleague was at reception when the delivery arrived.",
+          "purposeAr": "اسأل هل كان زميلك في الاستقبال عند وصول الشحنة.",
+          "image": {
+            "id": "conv-life-last-shift-1",
+            "path": "assets/scenes/conversations/life-last-shift-1.webp",
+            "width": 396,
+            "height": 248,
+            "en": "Delivery at reception",
+            "ar": "التوصيل عند الاستقبال",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                0,
+                396,
+                248
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "delivery trolley",
+              "ar": "عربة توصيل",
+              "kind": "object",
+              "x": 64,
+              "y": 55
+            },
+            {
+              "en": "cardboard boxes",
+              "ar": "صناديق كرتون",
+              "kind": "object",
+              "x": 68,
+              "y": 55
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Checking the order list",
+          "ar": "فحص قائمة الطلب",
+          "purposeEn": "Explain where you were and ask who signed for the delivery.",
+          "purposeAr": "اشرح أين كنت واسأل من وقّع على الاستلام.",
+          "image": {
+            "id": "conv-life-last-shift-2",
+            "path": "assets/scenes/conversations/life-last-shift-2.webp",
+            "width": 397,
+            "height": 248,
+            "en": "Checking the order list",
+            "ar": "فحص قائمة الطلب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                396,
+                0,
+                793,
+                248
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "order list",
+              "ar": "قائمة الطلب",
+              "kind": "object",
+              "x": 68,
+              "y": 81
+            },
+            {
+              "en": "back office",
+              "ar": "مكتب خلفي",
+              "kind": "object",
+              "x": 65,
+              "y": 27
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Signing for the delivery",
+          "ar": "التوقيع على الاستلام",
+          "purposeEn": "Describe who signed and check whether everything arrived.",
+          "purposeAr": "اذكر من وقّع وتحقق هل وصل كل شيء.",
+          "image": {
+            "id": "conv-life-last-shift-3",
+            "path": "assets/scenes/conversations/life-last-shift-3.webp",
+            "width": 396,
+            "height": 248,
+            "en": "Signing for the delivery",
+            "ar": "التوقيع على الاستلام",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                793,
+                0,
+                1189,
+                248
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "clipboard",
+              "ar": "لوح تثبيت الأوراق",
+              "kind": "object",
+              "x": 47,
+              "y": 72
+            },
+            {
+              "en": "sign for",
+              "ar": "يوقّع لاستلام",
+              "kind": "phrase",
+              "x": 46,
+              "y": 60
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Reporting a missing box",
+          "ar": "الإبلاغ عن صندوق مفقود",
+          "purposeEn": "Say what was missing and contact the supplier.",
+          "purposeAr": "اذكر ما كان مفقودًا وتواصل مع المورّد.",
+          "image": {
+            "id": "conv-life-last-shift-4",
+            "path": "assets/scenes/conversations/life-last-shift-4.webp",
+            "width": 397,
+            "height": 248,
+            "en": "Reporting a missing box",
+            "ar": "الإبلاغ عن صندوق مفقود",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1189,
+                0,
+                1586,
+                248
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "phone call",
+              "ar": "مكالمة هاتفية",
+              "kind": "object",
+              "x": 48,
+              "y": 35
+            },
+            {
+              "en": "stacked boxes",
+              "ar": "صناديق مرصوصة",
+              "kind": "object",
+              "x": 88,
+              "y": 60
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "missed-message",
+      "goalAr": "اشرح سبب فوات الرسالة واعتذر.",
+      "goalEn": "Explain why you missed a message and apologise.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Asking about a message",
+          "ar": "السؤال عن رسالة",
+          "purposeEn": "Check whether a colleague got a meeting message.",
+          "purposeAr": "تحقق هل تلقى زميلك رسالة الاجتماع.",
+          "image": {
+            "id": "conv-life-missed-message-1",
+            "path": "assets/scenes/conversations/life-missed-message-1.webp",
+            "width": 396,
+            "height": 248,
+            "en": "Asking about a message",
+            "ar": "السؤال عن رسالة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                248,
+                396,
+                496
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "message thread",
+              "ar": "سلسلة رسائل",
+              "kind": "object",
+              "x": 61,
+              "y": 62
+            },
+            {
+              "en": "smartphone",
+              "ar": "هاتف ذكي",
+              "kind": "object",
+              "x": 62,
+              "y": 58
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Why the update was missed",
+          "ar": "سبب فوات التحديث",
+          "purposeEn": "Explain where your phone was and confirm the new meeting time.",
+          "purposeAr": "اشرح أين كان هاتفك وأكّد موعد الاجتماع الجديد.",
+          "image": {
+            "id": "conv-life-missed-message-2",
+            "path": "assets/scenes/conversations/life-missed-message-2.webp",
+            "width": 397,
+            "height": 248,
+            "en": "Why the update was missed",
+            "ar": "سبب فوات التحديث",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                396,
+                248,
+                793,
+                496
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "in the drawer",
+              "ar": "في الدرج",
+              "kind": "phrase",
+              "x": 24,
+              "y": 83
+            },
+            {
+              "en": "customer",
+              "ar": "زبونة",
+              "kind": "object",
+              "x": 13,
+              "y": 26
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Apologizing and rescheduling",
+          "ar": "الاعتذار وتعديل الموعد",
+          "purposeEn": "Apologize for missing the update and accept the reassurance.",
+          "purposeAr": "اعتذر عن فوات التحديث وتقبّل التطمين.",
+          "image": {
+            "id": "conv-life-missed-message-3",
+            "path": "assets/scenes/conversations/life-missed-message-3.webp",
+            "width": 396,
+            "height": 248,
+            "en": "Apologizing and rescheduling",
+            "ar": "الاعتذار وتعديل الموعد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                793,
+                248,
+                1189,
+                496
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "apologetic",
+              "ar": "معتذرة",
+              "kind": "description",
+              "x": 33,
+              "y": 27
+            },
+            {
+              "en": "desk calendar",
+              "ar": "تقويم مكتبي",
+              "kind": "object",
+              "x": 87,
+              "y": 82
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Reading before replying",
+          "ar": "القراءة قبل الرد",
+          "purposeEn": "Say you will read the notes before replying to the group.",
+          "purposeAr": "قل إنك ستقرأ الملاحظات قبل الرد على المجموعة.",
+          "image": {
+            "id": "conv-life-missed-message-4",
+            "path": "assets/scenes/conversations/life-missed-message-4.webp",
+            "width": 397,
+            "height": 248,
+            "en": "Reading before replying",
+            "ar": "القراءة قبل الرد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1189,
+                248,
+                1586,
+                496
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "read a message",
+              "ar": "يقرأ رسالة",
+              "kind": "phrase",
+              "x": 45,
+              "y": 62
+            },
+            {
+              "en": "notebook",
+              "ar": "دفتر",
+              "kind": "object",
+              "x": 44,
+              "y": 93
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "old-and-new-job",
+      "goalAr": "صف عادة من الوظيفة السابقة وبداية الوظيفة الجديدة.",
+      "goalEn": "Describe an old work habit and how your new job began.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 2,
+          "en": "Remembering the old job",
+          "ar": "تذكّر الوظيفة السابقة",
+          "purposeEn": "Describe your old job and ask how the new one was found.",
+          "purposeAr": "صف وظيفتك السابقة واسأل كيف وُجدت الجديدة.",
+          "image": {
+            "id": "conv-life-old-and-new-job-1",
+            "path": "assets/scenes/conversations/life-old-and-new-job-1.webp",
+            "width": 396,
+            "height": 248,
+            "en": "Remembering the old job",
+            "ar": "تذكّر الوظيفة السابقة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                496,
+                396,
+                744
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "small shop",
+              "ar": "متجر صغير",
+              "kind": "object",
+              "x": 57,
+              "y": 32
+            },
+            {
+              "en": "cash register",
+              "ar": "صندوق محاسبة",
+              "kind": "object",
+              "x": 63,
+              "y": 51
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "en": "At the careers fair",
+          "ar": "في معرض التوظيف",
+          "purposeEn": "Explain where you met the new manager.",
+          "purposeAr": "اشرح أين قابلت المدير الجديد.",
+          "image": {
+            "id": "conv-life-old-and-new-job-2",
+            "path": "assets/scenes/conversations/life-old-and-new-job-2.webp",
+            "width": 397,
+            "height": 248,
+            "en": "At the careers fair",
+            "ar": "في معرض التوظيف",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                396,
+                496,
+                793,
+                744
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "careers fair",
+              "ar": "معرض توظيف",
+              "kind": "object",
+              "x": 57,
+              "y": 26
+            },
+            {
+              "en": "hotel brochure",
+              "ar": "كتيّب فندق",
+              "kind": "object",
+              "x": 68,
+              "y": 78
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "en": "Starting the following month",
+          "ar": "البدء في الشهر التالي",
+          "purposeEn": "Say when you started and ask about the biggest change.",
+          "purposeAr": "اذكر متى بدأت واسأل عن أكبر تغيير.",
+          "image": {
+            "id": "conv-life-old-and-new-job-3",
+            "path": "assets/scenes/conversations/life-old-and-new-job-3.webp",
+            "width": 396,
+            "height": 248,
+            "en": "Starting the following month",
+            "ar": "البدء في الشهر التالي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                793,
+                496,
+                1189,
+                744
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "calendar",
+              "ar": "تقويم",
+              "kind": "object",
+              "x": 76,
+              "y": 75
+            },
+            {
+              "en": "the following month",
+              "ar": "الشهر التالي",
+              "kind": "phrase",
+              "x": 74,
+              "y": 71
+            }
+          ]
+        },
+        {
+          "from": 7,
+          "to": 7,
+          "en": "Working face to face",
+          "ar": "التعامل وجهًا لوجه",
+          "purposeEn": "Explain what you had to get used to in the new role.",
+          "purposeAr": "اشرح ما كان عليك الاعتياد عليه في الدور الجديد.",
+          "image": {
+            "id": "conv-life-old-and-new-job-4",
+            "path": "assets/scenes/conversations/life-old-and-new-job-4.webp",
+            "width": 397,
+            "height": 248,
+            "en": "Working face to face",
+            "ar": "التعامل وجهًا لوجه",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1189,
+                496,
+                1586,
+                744
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "receptionist",
+              "ar": "موظفة استقبال",
+              "kind": "object",
+              "x": 23,
+              "y": 34
+            },
+            {
+              "en": "face to face",
+              "ar": "وجهًا لوجه",
+              "kind": "phrase",
+              "x": 65,
+              "y": 46
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "equipment-repair",
+      "goalAr": "اشرح القرار الذي ساعد في إكمال الإصلاح.",
+      "goalEn": "Explain the decision that helped complete the repair.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "A jammed printer",
+          "ar": "طابعة يعلق فيها الورق",
+          "purposeEn": "Ask what kept causing the paper jam.",
+          "purposeAr": "اسأل عما كان يسبب انحشار الورق.",
+          "image": {
+            "id": "conv-life-equipment-repair-1",
+            "path": "assets/scenes/conversations/life-equipment-repair-1.webp",
+            "width": 396,
+            "height": 248,
+            "en": "A jammed printer",
+            "ar": "طابعة يعلق فيها الورق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                744,
+                396,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "printer",
+              "ar": "طابعة",
+              "kind": "object",
+              "x": 70,
+              "y": 61
+            },
+            {
+              "en": "paper tray",
+              "ar": "درج الورق",
+              "kind": "object",
+              "x": 76,
+              "y": 42
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Looking at the back",
+          "ar": "التفقد من الخلف",
+          "purposeEn": "Explain why you checked another part of the printer.",
+          "purposeAr": "اشرح لماذا تفقدت جزءًا آخر من الطابعة.",
+          "image": {
+            "id": "conv-life-equipment-repair-2",
+            "path": "assets/scenes/conversations/life-equipment-repair-2.webp",
+            "width": 397,
+            "height": 248,
+            "en": "Looking at the back",
+            "ar": "التفقد من الخلف",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                396,
+                744,
+                793,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "printer rollers",
+              "ar": "بكرات الطابعة",
+              "kind": "object",
+              "x": 80,
+              "y": 59
+            },
+            {
+              "en": "open cover",
+              "ar": "غطاء مفتوح",
+              "kind": "object",
+              "x": 79,
+              "y": 40
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Removing torn paper",
+          "ar": "إزالة ورقة ممزقة",
+          "purposeEn": "Describe what was stuck and report the test result.",
+          "purposeAr": "صف ما علق داخل الطابعة واذكر نتيجة الاختبار.",
+          "image": {
+            "id": "conv-life-equipment-repair-3",
+            "path": "assets/scenes/conversations/life-equipment-repair-3.webp",
+            "width": 396,
+            "height": 248,
+            "en": "Removing torn paper",
+            "ar": "إزالة ورقة ممزقة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                793,
+                744,
+                1189,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "torn paper",
+              "ar": "ورقة ممزقة",
+              "kind": "object",
+              "x": 43,
+              "y": 66
+            },
+            {
+              "en": "test page",
+              "ar": "صفحة اختبار",
+              "kind": "object",
+              "x": 73,
+              "y": 72
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Trying a small batch",
+          "ar": "تجربة دفعة صغيرة",
+          "purposeEn": "Suggest testing a few pages before printing the full job.",
+          "purposeAr": "اقترح اختبار بضع صفحات قبل طباعة الطلب كاملًا.",
+          "image": {
+            "id": "conv-life-equipment-repair-4",
+            "path": "assets/scenes/conversations/life-equipment-repair-4.webp",
+            "width": 397,
+            "height": 248,
+            "en": "Trying a small batch",
+            "ar": "تجربة دفعة صغيرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1189,
+                744,
+                1586,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "control panel",
+              "ar": "لوحة تحكم",
+              "kind": "object",
+              "x": 66,
+              "y": 50
+            },
+            {
+              "en": "stack of paper",
+              "ar": "رزمة ورق",
+              "kind": "object",
+              "x": 52,
+              "y": 88
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

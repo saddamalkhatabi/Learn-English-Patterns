@@ -1,0 +1,742 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "574f091f4127df8f654b89cdc6df74e5ff9e7d9d9cde7182b5e6e5c44467bfb2"
+  },
+  "conversations": [
+    {
+      "id": "practice-club",
+      "goalAr": "ادع زميلًا للتدريب واتّفق على أول نشاط.",
+      "goalEn": "Invite a classmate to practise and agree on the first activity.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Inviting a new member",
+          "ar": "دعوة عضو جديد",
+          "purposeEn": "Invite someone to join an English practice group.",
+          "purposeAr": "ادعُ شخصًا للانضمام إلى مجموعة ممارسة الإنجليزية.",
+          "image": {
+            "id": "conv-life-practice-club-1",
+            "path": "assets/scenes/conversations/life-practice-club-1.webp",
+            "width": 397,
+            "height": 248,
+            "en": "Inviting a new member",
+            "ar": "دعوة عضو جديد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                0,
+                397,
+                248
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "club sign",
+              "ar": "لافتة النادي",
+              "kind": "object",
+              "x": 42,
+              "y": 41
+            },
+            {
+              "en": "invite",
+              "ar": "يدعو",
+              "kind": "action",
+              "x": 46,
+              "y": 78
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Describing a club meeting",
+          "ar": "وصف لقاء النادي",
+          "purposeEn": "Explain what you usually bring and what you plan to practise.",
+          "purposeAr": "اشرح ما تحضره عادةً وما تنوي التدرب عليه.",
+          "image": {
+            "id": "conv-life-practice-club-2",
+            "path": "assets/scenes/conversations/life-practice-club-2.webp",
+            "width": 397,
+            "height": 248,
+            "en": "Describing a club meeting",
+            "ar": "وصف لقاء النادي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                397,
+                0,
+                794,
+                248
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "role-play drawing",
+              "ar": "رسم لتبادل الأدوار",
+              "kind": "object",
+              "x": 77,
+              "y": 70
+            },
+            {
+              "en": "enthusiastic",
+              "ar": "متحمسة",
+              "kind": "description",
+              "x": 26,
+              "y": 38
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Customer and server",
+          "ar": "الزبون ومقدّم الطعام",
+          "purposeEn": "Suggest taking turns as the customer and the server.",
+          "purposeAr": "اقترح تبادل دوري الزبون ومقدّم الطعام.",
+          "image": {
+            "id": "conv-life-practice-club-3",
+            "path": "assets/scenes/conversations/life-practice-club-3.webp",
+            "width": 396,
+            "height": 248,
+            "en": "Customer and server",
+            "ar": "الزبون ومقدّم الطعام",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                794,
+                0,
+                1190,
+                248
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "menu",
+              "ar": "قائمة طعام",
+              "kind": "object",
+              "x": 76,
+              "y": 65
+            },
+            {
+              "en": "take turns",
+              "ar": "يتبادل الأدوار",
+              "kind": "phrase",
+              "x": 48,
+              "y": 67
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Two practice orders",
+          "ar": "طلبان للتدريب",
+          "purposeEn": "Prepare two orders so learners can swap roles.",
+          "purposeAr": "جهّز طلبين حتى يتمكن المتعلمون من تبادل الأدوار.",
+          "image": {
+            "id": "conv-life-practice-club-4",
+            "path": "assets/scenes/conversations/life-practice-club-4.webp",
+            "width": 396,
+            "height": 248,
+            "en": "Two practice orders",
+            "ar": "طلبان للتدريب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1190,
+                0,
+                1586,
+                248
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "order sheet",
+              "ar": "ورقة الطلبات",
+              "kind": "object",
+              "x": 76,
+              "y": 66
+            },
+            {
+              "en": "write",
+              "ar": "يكتب",
+              "kind": "action",
+              "x": 43,
+              "y": 87
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "online-lesson-audio",
+      "goalAr": "اشرح مشكلة الصوت واطلب إعادة الجملة.",
+      "goalEn": "Explain the audio problem and ask to hear the sentence again.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Sound cutting out",
+          "ar": "تقطّع الصوت",
+          "purposeEn": "Say you cannot hear and ask for repetition.",
+          "purposeAr": "قل إن الصوت غير واضح واطلب الإعادة.",
+          "image": {
+            "id": "conv-life-online-lesson-audio-1",
+            "path": "assets/scenes/conversations/life-online-lesson-audio-1.webp",
+            "width": 397,
+            "height": 248,
+            "en": "Sound cutting out",
+            "ar": "تقطّع الصوت",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                248,
+                397,
+                496
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "headphones",
+              "ar": "سمّاعات رأس",
+              "kind": "object",
+              "x": 30,
+              "y": 34
+            },
+            {
+              "en": "confused",
+              "ar": "حائرة",
+              "kind": "description",
+              "x": 48,
+              "y": 31
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Testing the microphone",
+          "ar": "اختبار الميكروفون",
+          "purposeEn": "Check the microphone and confirm what you missed.",
+          "purposeAr": "تحقق من الميكروفون وأكّد الجزء الذي فاتك.",
+          "image": {
+            "id": "conv-life-online-lesson-audio-2",
+            "path": "assets/scenes/conversations/life-online-lesson-audio-2.webp",
+            "width": 397,
+            "height": 248,
+            "en": "Testing the microphone",
+            "ar": "اختبار الميكروفون",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                397,
+                248,
+                794,
+                496
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "microphone",
+              "ar": "ميكروفون",
+              "kind": "object",
+              "x": 42,
+              "y": 58
+            },
+            {
+              "en": "video call",
+              "ar": "مكالمة فيديو",
+              "kind": "object",
+              "x": 33,
+              "y": 52
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Using the chat",
+          "ar": "استخدام الدردشة",
+          "purposeEn": "Offer to repeat the line and write it in the chat.",
+          "purposeAr": "اعرض إعادة العبارة وكتابتها في الدردشة.",
+          "image": {
+            "id": "conv-life-online-lesson-audio-3",
+            "path": "assets/scenes/conversations/life-online-lesson-audio-3.webp",
+            "width": 396,
+            "height": 248,
+            "en": "Using the chat",
+            "ar": "استخدام الدردشة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                794,
+                248,
+                1190,
+                496
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "chat window",
+              "ar": "نافذة الدردشة",
+              "kind": "object",
+              "x": 44,
+              "y": 53
+            },
+            {
+              "en": "on the screen",
+              "ar": "على الشاشة",
+              "kind": "phrase",
+              "x": 45,
+              "y": 69
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Sharing the slides",
+          "ar": "مشاركة الشرائح",
+          "purposeEn": "Offer to send the slides for review after the lesson.",
+          "purposeAr": "اعرض إرسال الشرائح للمراجعة بعد الدرس.",
+          "image": {
+            "id": "conv-life-online-lesson-audio-4",
+            "path": "assets/scenes/conversations/life-online-lesson-audio-4.webp",
+            "width": 396,
+            "height": 248,
+            "en": "Sharing the slides",
+            "ar": "مشاركة الشرائح",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1190,
+                248,
+                1586,
+                496
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "download icon",
+              "ar": "رمز تنزيل",
+              "kind": "object",
+              "x": 54,
+              "y": 65
+            },
+            {
+              "en": "slides",
+              "ar": "شرائح عرض",
+              "kind": "object",
+              "x": 48,
+              "y": 48
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exam-mistake",
+      "goalAr": "راجع سوء الفهم وحدّد ما كان ينبغي فعله.",
+      "goalEn": "Review the misunderstanding and identify what you should have done.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Looking at the marked answer",
+          "ar": "النظر إلى الإجابة المصحّحة",
+          "purposeEn": "Ask why a point was lost.",
+          "purposeAr": "اسأل عن سبب فقدان الدرجة.",
+          "image": {
+            "id": "conv-life-exam-mistake-1",
+            "path": "assets/scenes/conversations/life-exam-mistake-1.webp",
+            "width": 397,
+            "height": 247,
+            "en": "Looking at the marked answer",
+            "ar": "النظر إلى الإجابة المصحّحة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                496,
+                397,
+                743
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "marked paper",
+              "ar": "ورقة مصحّحة",
+              "kind": "object",
+              "x": 55,
+              "y": 90
+            },
+            {
+              "en": "point to an answer",
+              "ar": "يشير إلى إجابة",
+              "kind": "phrase",
+              "x": 39,
+              "y": 78
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Example or reason",
+          "ar": "مثال أم سبب",
+          "purposeEn": "Explain how an example differs from a reason.",
+          "purposeAr": "اشرح كيف يختلف المثال عن السبب.",
+          "image": {
+            "id": "conv-life-exam-mistake-2",
+            "path": "assets/scenes/conversations/life-exam-mistake-2.webp",
+            "width": 397,
+            "height": 247,
+            "en": "Example or reason",
+            "ar": "مثال أم سبب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                397,
+                496,
+                794,
+                743
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "puzzled",
+              "ar": "حائرة",
+              "kind": "description",
+              "x": 68,
+              "y": 25
+            },
+            {
+              "en": "answer sheet",
+              "ar": "ورقة إجابة",
+              "kind": "object",
+              "x": 74,
+              "y": 94
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Adding a reason",
+          "ar": "إضافة سبب",
+          "purposeEn": "Recognize what you should have written and propose an improvement.",
+          "purposeAr": "حدّد ما كان ينبغي كتابته واقترح تحسينًا.",
+          "image": {
+            "id": "conv-life-exam-mistake-3",
+            "path": "assets/scenes/conversations/life-exam-mistake-3.webp",
+            "width": 396,
+            "height": 247,
+            "en": "Adding a reason",
+            "ar": "إضافة سبب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                794,
+                496,
+                1190,
+                743
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "realize",
+              "ar": "يدرك",
+              "kind": "action",
+              "x": 30,
+              "y": 37
+            },
+            {
+              "en": "open notebook",
+              "ar": "دفتر مفتوح",
+              "kind": "object",
+              "x": 44,
+              "y": 94
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Rewriting the answer",
+          "ar": "إعادة صياغة الإجابة",
+          "purposeEn": "Explain how the example supports the answer.",
+          "purposeAr": "اشرح كيف يدعم المثال الإجابة.",
+          "image": {
+            "id": "conv-life-exam-mistake-4",
+            "path": "assets/scenes/conversations/life-exam-mistake-4.webp",
+            "width": 396,
+            "height": 247,
+            "en": "Rewriting the answer",
+            "ar": "إعادة صياغة الإجابة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1190,
+                496,
+                1586,
+                743
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "rewrite",
+              "ar": "يعيد الكتابة",
+              "kind": "action",
+              "x": 28,
+              "y": 86
+            },
+            {
+              "en": "pen",
+              "ar": "قلم",
+              "kind": "object",
+              "x": 27,
+              "y": 79
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "study-methods",
+      "goalAr": "قارن طريقتين وقدّم مثالًا عمليًا على اختيارك.",
+      "goalEn": "Compare two methods and give an example of your choice.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Remembering a phrase",
+          "ar": "تذكّر عبارة",
+          "purposeEn": "Ask how another learner remembers phrases.",
+          "purposeAr": "اسأل متعلمًا آخر كيف يتذكر العبارات.",
+          "image": {
+            "id": "conv-life-study-methods-1",
+            "path": "assets/scenes/conversations/life-study-methods-1.webp",
+            "width": 397,
+            "height": 249,
+            "en": "Remembering a phrase",
+            "ar": "تذكّر عبارة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                743,
+                397,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "stack of books",
+              "ar": "رزمة كتب",
+              "kind": "object",
+              "x": 53,
+              "y": 89
+            },
+            {
+              "en": "pencil holder",
+              "ar": "حامل أقلام",
+              "kind": "object",
+              "x": 67,
+              "y": 80
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Saying it aloud",
+          "ar": "قولها بصوت مرتفع",
+          "purposeEn": "Compare saying a phrase aloud with copying it.",
+          "purposeAr": "قارن بين قول العبارة بصوت مرتفع ونسخها.",
+          "image": {
+            "id": "conv-life-study-methods-2",
+            "path": "assets/scenes/conversations/life-study-methods-2.webp",
+            "width": 397,
+            "height": 249,
+            "en": "Saying it aloud",
+            "ar": "قولها بصوت مرتفع",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                397,
+                743,
+                794,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "picture card",
+              "ar": "بطاقة مصوّرة",
+              "kind": "object",
+              "x": 69,
+              "y": 77
+            },
+            {
+              "en": "say aloud",
+              "ar": "يقول بصوت مرتفع",
+              "kind": "phrase",
+              "x": 48,
+              "y": 50
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Checking against the original",
+          "ar": "المقارنة بالنص الأصلي",
+          "purposeEn": "Look at a picture, say a sentence, and check the wording.",
+          "purposeAr": "انظر إلى صورة وقل جملة ثم قارنها بالنص الأصلي.",
+          "image": {
+            "id": "conv-life-study-methods-3",
+            "path": "assets/scenes/conversations/life-study-methods-3.webp",
+            "width": 396,
+            "height": 249,
+            "en": "Checking against the original",
+            "ar": "المقارنة بالنص الأصلي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                794,
+                743,
+                1190,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "flashcard",
+              "ar": "بطاقة مراجعة",
+              "kind": "object",
+              "x": 73,
+              "y": 60
+            },
+            {
+              "en": "hold up",
+              "ar": "يرفع للعرض",
+              "kind": "phrase",
+              "x": 60,
+              "y": 77
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Reviewing the next day",
+          "ar": "المراجعة في اليوم التالي",
+          "purposeEn": "Note difficult phrases and recall them the next day.",
+          "purposeAr": "دوّن العبارات الصعبة وحاول تذكّرها في اليوم التالي.",
+          "image": {
+            "id": "conv-life-study-methods-4",
+            "path": "assets/scenes/conversations/life-study-methods-4.webp",
+            "width": 396,
+            "height": 249,
+            "en": "Reviewing the next day",
+            "ar": "المراجعة في اليوم التالي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1190,
+                743,
+                1586,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "word list",
+              "ar": "قائمة كلمات",
+              "kind": "object",
+              "x": 54,
+              "y": 77
+            },
+            {
+              "en": "next day",
+              "ar": "اليوم التالي",
+              "kind": "phrase",
+              "x": 86,
+              "y": 57
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

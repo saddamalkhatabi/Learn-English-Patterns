@@ -1,0 +1,742 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "a03b96d246591b4c247faa25257aa180a168525c35efe5375b2470169980b83a"
+  },
+  "conversations": [
+    {
+      "id": "l3-005",
+      "goalAr": "اللحاق بالحافلة التالية معًا",
+      "goalEn": "Catching the next bus together",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Asking for the next bus",
+          "ar": "السؤال عن الحافلة التالية",
+          "purposeEn": "Ask when the next bus to a specific stop leaves.",
+          "purposeAr": "اسأل متى تنطلق الحافلة التالية إلى موقف معين.",
+          "image": {
+            "id": "conv-life-l3-005-1",
+            "path": "assets/scenes/conversations/life-l3-005-1.webp",
+            "width": 397,
+            "height": 247,
+            "en": "Asking for the next bus",
+            "ar": "السؤال عن الحافلة التالية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                0,
+                397,
+                247
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bus",
+              "ar": "حافلة",
+              "kind": "object",
+              "x": 67,
+              "y": 41
+            },
+            {
+              "en": "bus shelter",
+              "ar": "مظلّة موقف",
+              "kind": "object",
+              "x": 25,
+              "y": 14
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Agreeing on a seat",
+          "ar": "الاتفاق على حجز مقعد",
+          "purposeEn": "Check the time and ask a friend to save a seat.",
+          "purposeAr": "تحقق من الوقت واطلب من صديق أن يحجز لك مقعدًا.",
+          "image": {
+            "id": "conv-life-l3-005-2",
+            "path": "assets/scenes/conversations/life-l3-005-2.webp",
+            "width": 395,
+            "height": 247,
+            "en": "Agreeing on a seat",
+            "ar": "الاتفاق على حجز مقعد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                397,
+                0,
+                792,
+                247
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "wristwatch",
+              "ar": "ساعة يد",
+              "kind": "object",
+              "x": 70,
+              "y": 80
+            },
+            {
+              "en": "across the road",
+              "ar": "على الجانب الآخر من الطريق",
+              "kind": "phrase",
+              "x": 75,
+              "y": 60
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Crossing by the pharmacy",
+          "ar": "العبور قرب الصيدلية",
+          "purposeEn": "Give a safe landmark for crossing the street.",
+          "purposeAr": "اذكر معلمًا يرشد إلى مكان عبور الشارع.",
+          "image": {
+            "id": "conv-life-l3-005-3",
+            "path": "assets/scenes/conversations/life-l3-005-3.webp",
+            "width": 398,
+            "height": 247,
+            "en": "Crossing by the pharmacy",
+            "ar": "العبور قرب الصيدلية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                792,
+                0,
+                1190,
+                247
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "pharmacy",
+              "ar": "صيدلية",
+              "kind": "object",
+              "x": 74,
+              "y": 21
+            },
+            {
+              "en": "pedestrian crossing",
+              "ar": "معبر مشاة",
+              "kind": "object",
+              "x": 68,
+              "y": 79
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "See you at the stop",
+          "ar": "نلتقي عند الموقف",
+          "purposeEn": "Acknowledge the instructions and say you will meet there.",
+          "purposeAr": "أكّد فهم الإرشادات واذكر أنكما ستلتقيان هناك.",
+          "image": {
+            "id": "conv-life-l3-005-4",
+            "path": "assets/scenes/conversations/life-l3-005-4.webp",
+            "width": 396,
+            "height": 247,
+            "en": "See you at the stop",
+            "ar": "نلتقي عند الموقف",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1190,
+                0,
+                1586,
+                247
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "wave goodbye",
+              "ar": "يلوّح مودّعًا",
+              "kind": "phrase",
+              "x": 51,
+              "y": 53
+            },
+            {
+              "en": "waiting passengers",
+              "ar": "ركّاب ينتظرون",
+              "kind": "object",
+              "x": 90,
+              "y": 53
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-006",
+      "goalAr": "التخطيط لعطلة صيفية قصيرة",
+      "goalEn": "Planning a short summer break",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Talking about next summer",
+          "ar": "الحديث عن الصيف القادم",
+          "purposeEn": "Ask if someone has chosen a summer destination.",
+          "purposeAr": "اسأل هل اختار شخص وجهة للصيف.",
+          "image": {
+            "id": "conv-life-l3-006-1",
+            "path": "assets/scenes/conversations/life-l3-006-1.webp",
+            "width": 397,
+            "height": 248,
+            "en": "Talking about next summer",
+            "ar": "الحديث عن الصيف القادم",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                247,
+                397,
+                495
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "outdoor café",
+              "ar": "مقهى خارجي",
+              "kind": "object",
+              "x": 60,
+              "y": 82
+            },
+            {
+              "en": "ask about plans",
+              "ar": "يسأل عن الخطط",
+              "kind": "phrase",
+              "x": 43,
+              "y": 58
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Lake or coast",
+          "ar": "البحيرة أم الساحل",
+          "purposeEn": "Compare two destinations when you have not decided yet.",
+          "purposeAr": "قارن وجهتين عندما لا تكون قد حسمت اختيارك.",
+          "image": {
+            "id": "conv-life-l3-006-2",
+            "path": "assets/scenes/conversations/life-l3-006-2.webp",
+            "width": 395,
+            "height": 248,
+            "en": "Lake or coast",
+            "ar": "البحيرة أم الساحل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                397,
+                247,
+                792,
+                495
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "lake photo",
+              "ar": "صورة بحيرة",
+              "kind": "object",
+              "x": 58,
+              "y": 74
+            },
+            {
+              "en": "coast photo",
+              "ar": "صورة ساحل",
+              "kind": "object",
+              "x": 80,
+              "y": 76
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "A two-night trip by train",
+          "ar": "رحلة بالقطار لليلتين",
+          "purposeEn": "Choose somewhere accessible by train and agree on the length of the stay.",
+          "purposeAr": "اختر مكانًا يمكن بلوغه بالقطار واتفق على مدة الإقامة.",
+          "image": {
+            "id": "conv-life-l3-006-3",
+            "path": "assets/scenes/conversations/life-l3-006-3.webp",
+            "width": 398,
+            "height": 248,
+            "en": "A two-night trip by train",
+            "ar": "رحلة بالقطار لليلتين",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                792,
+                247,
+                1190,
+                495
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "model train",
+              "ar": "قطار مصغّر",
+              "kind": "object",
+              "x": 38,
+              "y": 88
+            },
+            {
+              "en": "two nights",
+              "ar": "ليلتان",
+              "kind": "phrase",
+              "x": 59,
+              "y": 46
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Checking fares first",
+          "ar": "التحقق من الأجرة أولًا",
+          "purposeEn": "Check fares before making up your mind.",
+          "purposeAr": "تحقق من الأجرة قبل حسم القرار.",
+          "image": {
+            "id": "conv-life-l3-006-4",
+            "path": "assets/scenes/conversations/life-l3-006-4.webp",
+            "width": 396,
+            "height": 248,
+            "en": "Checking fares first",
+            "ar": "التحقق من الأجرة أولًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1190,
+                247,
+                1586,
+                495
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "check fares",
+              "ar": "يتحقق من الأجرة",
+              "kind": "phrase",
+              "x": 68,
+              "y": 71
+            },
+            {
+              "en": "smartphone",
+              "ar": "هاتف ذكي",
+              "kind": "object",
+              "x": 68,
+              "y": 74
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-007",
+      "goalAr": "التحقق من أجرة سيارة مشتركة",
+      "goalEn": "Checking the shared taxi fare",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Asking the taxi fare",
+          "ar": "السؤال عن أجرة سيارة الأجرة",
+          "purposeEn": "Ask how much the trip costs.",
+          "purposeAr": "اسأل عن تكلفة الرحلة.",
+          "image": {
+            "id": "conv-life-l3-007-1",
+            "path": "assets/scenes/conversations/life-l3-007-1.webp",
+            "width": 397,
+            "height": 249,
+            "en": "Asking the taxi fare",
+            "ar": "السؤال عن أجرة سيارة الأجرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                495,
+                397,
+                744
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "taxi",
+              "ar": "سيارة أجرة",
+              "kind": "object",
+              "x": 40,
+              "y": 49
+            },
+            {
+              "en": "driver",
+              "ar": "سائق",
+              "kind": "object",
+              "x": 34,
+              "y": 41
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Splitting the fare",
+          "ar": "تقسيم الأجرة",
+          "purposeEn": "State the total and discuss splitting it three ways.",
+          "purposeAr": "اذكر المبلغ الإجمالي وناقش تقسيمه على ثلاثة.",
+          "image": {
+            "id": "conv-life-l3-007-2",
+            "path": "assets/scenes/conversations/life-l3-007-2.webp",
+            "width": 395,
+            "height": 249,
+            "en": "Splitting the fare",
+            "ar": "تقسيم الأجرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                397,
+                495,
+                792,
+                744
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "cash",
+              "ar": "نقود نقدية",
+              "kind": "object",
+              "x": 58,
+              "y": 75
+            },
+            {
+              "en": "split three ways",
+              "ar": "يقسّم على ثلاثة",
+              "kind": "phrase",
+              "x": 37,
+              "y": 57
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Paying after arrival",
+          "ar": "الدفع بعد الوصول",
+          "purposeEn": "Ask permission to pay your share later and agree on the number of passengers.",
+          "purposeAr": "استأذن في دفع حصتك لاحقًا واتفق على عدد الركّاب.",
+          "image": {
+            "id": "conv-life-l3-007-3",
+            "path": "assets/scenes/conversations/life-l3-007-3.webp",
+            "width": 398,
+            "height": 249,
+            "en": "Paying after arrival",
+            "ar": "الدفع بعد الوصول",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                792,
+                495,
+                1190,
+                744
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "agree",
+              "ar": "يوافق",
+              "kind": "action",
+              "x": 65,
+              "y": 74
+            },
+            {
+              "en": "passengers",
+              "ar": "ركّاب",
+              "kind": "object",
+              "x": 31,
+              "y": 44
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Meeting at the entrance",
+          "ar": "اللقاء عند المدخل",
+          "purposeEn": "Confirm the meeting point before departure.",
+          "purposeAr": "أكّد نقطة الالتقاء قبل المغادرة.",
+          "image": {
+            "id": "conv-life-l3-007-4",
+            "path": "assets/scenes/conversations/life-l3-007-4.webp",
+            "width": 396,
+            "height": 249,
+            "en": "Meeting at the entrance",
+            "ar": "اللقاء عند المدخل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1190,
+                495,
+                1586,
+                744
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "front entrance",
+              "ar": "مدخل رئيسي",
+              "kind": "object",
+              "x": 84,
+              "y": 42
+            },
+            {
+              "en": "point toward",
+              "ar": "يشير نحو",
+              "kind": "phrase",
+              "x": 67,
+              "y": 34
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-008",
+      "goalAr": "السؤال عن دورة مياه يسهل الوصول إليها",
+      "goalEn": "Asking for an accessible restroom",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Asking for help in the terminal",
+          "ar": "طلب المساعدة في المحطة",
+          "purposeEn": "Get an attendant's attention politely.",
+          "purposeAr": "لفت انتباه موظف المحطة بأدب.",
+          "image": {
+            "id": "conv-life-l3-008-1",
+            "path": "assets/scenes/conversations/life-l3-008-1.webp",
+            "width": 397,
+            "height": 248,
+            "en": "Asking for help in the terminal",
+            "ar": "طلب المساعدة في المحطة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                744,
+                397,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "wheelchair",
+              "ar": "كرسي متحرّك",
+              "kind": "object",
+              "x": 13,
+              "y": 86
+            },
+            {
+              "en": "terminal hall",
+              "ar": "ردهة المحطة",
+              "kind": "object",
+              "x": 54,
+              "y": 38
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Finding the restroom",
+          "ar": "العثور على دورة المياه",
+          "purposeEn": "Ask where the restroom is.",
+          "purposeAr": "اسأل عن مكان دورة المياه.",
+          "image": {
+            "id": "conv-life-l3-008-2",
+            "path": "assets/scenes/conversations/life-l3-008-2.webp",
+            "width": 395,
+            "height": 248,
+            "en": "Finding the restroom",
+            "ar": "العثور على دورة المياه",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                397,
+                744,
+                792,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "attendant",
+              "ar": "موظفة محطة",
+              "kind": "object",
+              "x": 70,
+              "y": 40
+            },
+            {
+              "en": "offer help",
+              "ar": "يعرض المساعدة",
+              "kind": "phrase",
+              "x": 51,
+              "y": 74
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Beside the lifts",
+          "ar": "بجوار المصاعد",
+          "purposeEn": "Locate the accessible restroom and check whether stairs are necessary.",
+          "purposeAr": "حدّد موضع دورة المياه الميسّرة وتحقق هل يلزم استخدام الدرج.",
+          "image": {
+            "id": "conv-life-l3-008-3",
+            "path": "assets/scenes/conversations/life-l3-008-3.webp",
+            "width": 398,
+            "height": 248,
+            "en": "Beside the lifts",
+            "ar": "بجوار المصاعد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                792,
+                744,
+                1190,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "elevator",
+              "ar": "مصعد",
+              "kind": "object",
+              "x": 53,
+              "y": 44
+            },
+            {
+              "en": "accessibility sign",
+              "ar": "علامة إتاحة الوصول",
+              "kind": "object",
+              "x": 51,
+              "y": 13
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Turning at the information desk",
+          "ar": "الانعطاف عند مكتب الاستعلامات",
+          "purposeEn": "Give directions using the information desk as a landmark.",
+          "purposeAr": "أعط اتجاهات باستخدام مكتب الاستعلامات معلمًا.",
+          "image": {
+            "id": "conv-life-l3-008-4",
+            "path": "assets/scenes/conversations/life-l3-008-4.webp",
+            "width": 396,
+            "height": 248,
+            "en": "Turning at the information desk",
+            "ar": "الانعطاف عند مكتب الاستعلامات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1190,
+                744,
+                1586,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "information desk",
+              "ar": "مكتب استعلامات",
+              "kind": "object",
+              "x": 86,
+              "y": 62
+            },
+            {
+              "en": "go straight ahead",
+              "ar": "تابع السير إلى الأمام",
+              "kind": "phrase",
+              "x": 65,
+              "y": 38
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,742 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "b6b5149cf3167882352dbb8d34e9488bf9813eaf118ac8d2a86c7e9e7b32da53"
+  },
+  "conversations": [
+    {
+      "id": "l2-009",
+      "goalAr": "الوقت المناسب للمغادرة",
+      "goalEn": "Checking when you can leave",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Staying until the end",
+          "ar": "البقاء حتى النهاية",
+          "purposeEn": "Ask whether staying until the end is required.",
+          "purposeAr": "اسأل إن كان البقاء إلى النهاية مطلوبًا.",
+          "image": {
+            "id": "conv-life-l2-009-1",
+            "path": "assets/scenes/conversations/life-l2-009-1.webp",
+            "width": 397,
+            "height": 248,
+            "en": "Staying until the end",
+            "ar": "البقاء حتى النهاية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                0,
+                397,
+                248
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "audience",
+              "ar": "حضور",
+              "kind": "object",
+              "x": 64,
+              "y": 52
+            },
+            {
+              "en": "session",
+              "ar": "جلسة",
+              "kind": "object",
+              "x": 63,
+              "y": 35
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Permission to leave",
+          "ar": "الإذن بالمغادرة",
+          "purposeEn": "Explain that the person may leave when their ride arrives.",
+          "purposeAr": "وضح أن بإمكان الشخص المغادرة عند وصول من يقلّه.",
+          "image": {
+            "id": "conv-life-l2-009-2",
+            "path": "assets/scenes/conversations/life-l2-009-2.webp",
+            "width": 397,
+            "height": 248,
+            "en": "Permission to leave",
+            "ar": "الإذن بالمغادرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                397,
+                0,
+                794,
+                248
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "gesture",
+              "ar": "يشير بيده",
+              "kind": "action",
+              "x": 40,
+              "y": 61
+            },
+            {
+              "en": "attendee",
+              "ar": "حاضرة",
+              "kind": "object",
+              "x": 33,
+              "y": 32
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Waiting inside",
+          "ar": "الانتظار في الداخل",
+          "purposeEn": "Suggest a place near the entrance and confirm where you will wait.",
+          "purposeAr": "اقترح مكانًا قرب المدخل وأكّد أين ستنتظر.",
+          "image": {
+            "id": "conv-life-l2-009-3",
+            "path": "assets/scenes/conversations/life-l2-009-3.webp",
+            "width": 396,
+            "height": 248,
+            "en": "Waiting inside",
+            "ar": "الانتظار في الداخل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                794,
+                0,
+                1190,
+                248
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "glass entrance",
+              "ar": "مدخل زجاجي",
+              "kind": "object",
+              "x": 58,
+              "y": 38
+            },
+            {
+              "en": "inside",
+              "ar": "في الداخل",
+              "kind": "phrase",
+              "x": 48,
+              "y": 79
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "The side door",
+          "ar": "الباب الجانبي",
+          "purposeEn": "Say you will notify someone if the pickup point changes.",
+          "purposeAr": "قل إنك ستخبر الشخص إذا تغيّرت نقطة الالتقاء.",
+          "image": {
+            "id": "conv-life-l2-009-4",
+            "path": "assets/scenes/conversations/life-l2-009-4.webp",
+            "width": 396,
+            "height": 248,
+            "en": "The side door",
+            "ar": "الباب الجانبي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1190,
+                0,
+                1586,
+                248
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "side door",
+              "ar": "باب جانبي",
+              "kind": "object",
+              "x": 89,
+              "y": 37
+            },
+            {
+              "en": "walkie-talkie",
+              "ar": "جهاز اتصال لاسلكي",
+              "kind": "object",
+              "x": 47,
+              "y": 62
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-010",
+      "goalAr": "إعادة كتاب معار",
+      "goalEn": "Returning a borrowed library book",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Returning a borrowed book",
+          "ar": "إرجاع كتاب مستعار",
+          "purposeEn": "Say where you borrowed the book.",
+          "purposeAr": "اذكر من أين استعرت الكتاب.",
+          "image": {
+            "id": "conv-life-l2-010-1",
+            "path": "assets/scenes/conversations/life-l2-010-1.webp",
+            "width": 397,
+            "height": 248,
+            "en": "Returning a borrowed book",
+            "ar": "إرجاع كتاب مستعار",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                248,
+                397,
+                496
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "borrowed book",
+              "ar": "كتاب مستعار",
+              "kind": "object",
+              "x": 55,
+              "y": 77
+            },
+            {
+              "en": "bookshelves",
+              "ar": "رفوف كتب",
+              "kind": "object",
+              "x": 60,
+              "y": 23
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Renewing instead",
+          "ar": "التجديد بدل الإرجاع",
+          "purposeEn": "Show the return slot and offer to renew the loan.",
+          "purposeAr": "بيّن فتحة الإرجاع واعرض تجديد الإعارة.",
+          "image": {
+            "id": "conv-life-l2-010-2",
+            "path": "assets/scenes/conversations/life-l2-010-2.webp",
+            "width": 397,
+            "height": 248,
+            "en": "Renewing instead",
+            "ar": "التجديد بدل الإرجاع",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                397,
+                248,
+                794,
+                496
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "return slot",
+              "ar": "فتحة إرجاع",
+              "kind": "object",
+              "x": 86,
+              "y": 69
+            },
+            {
+              "en": "by the door",
+              "ar": "بجوار الباب",
+              "kind": "phrase",
+              "x": 70,
+              "y": 57
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Checking the new due date",
+          "ar": "التحقق من موعد الإرجاع الجديد",
+          "purposeEn": "Explain how long renewal lasts and ask to check the date.",
+          "purposeAr": "اشرح مدة التجديد واطلب التحقق من الموعد.",
+          "image": {
+            "id": "conv-life-l2-010-3",
+            "path": "assets/scenes/conversations/life-l2-010-3.webp",
+            "width": 396,
+            "height": 248,
+            "en": "Checking the new due date",
+            "ar": "التحقق من موعد الإرجاع الجديد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                794,
+                248,
+                1190,
+                496
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "library account",
+              "ar": "حساب المكتبة",
+              "kind": "object",
+              "x": 74,
+              "y": 57
+            },
+            {
+              "en": "computer monitor",
+              "ar": "شاشة حاسوب",
+              "kind": "object",
+              "x": 75,
+              "y": 65
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Writing it on a slip",
+          "ar": "كتابة الموعد على ورقة",
+          "purposeEn": "Confirm that the due date can also be written down.",
+          "purposeAr": "أكّد إمكانية كتابة موعد الإرجاع أيضًا.",
+          "image": {
+            "id": "conv-life-l2-010-4",
+            "path": "assets/scenes/conversations/life-l2-010-4.webp",
+            "width": 396,
+            "height": 248,
+            "en": "Writing it on a slip",
+            "ar": "كتابة الموعد على ورقة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1190,
+                248,
+                1586,
+                496
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "slip of paper",
+              "ar": "قصاصة ورق",
+              "kind": "object",
+              "x": 56,
+              "y": 83
+            },
+            {
+              "en": "write down",
+              "ar": "يدوّن",
+              "kind": "phrase",
+              "x": 54,
+              "y": 73
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-011",
+      "goalAr": "ترتيب لقاء آخر",
+      "goalEn": "Looking forward to another visit",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "A pleasant visit",
+          "ar": "زيارة لطيفة",
+          "purposeEn": "Say you enjoyed the visit and suggest meeting again.",
+          "purposeAr": "اذكر أنك استمتعت بالزيارة واقترح لقاء آخر.",
+          "image": {
+            "id": "conv-life-l2-011-1",
+            "path": "assets/scenes/conversations/life-l2-011-1.webp",
+            "width": 397,
+            "height": 248,
+            "en": "A pleasant visit",
+            "ar": "زيارة لطيفة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                496,
+                397,
+                744
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "tea tray",
+              "ar": "صينية شاي",
+              "kind": "object",
+              "x": 65,
+              "y": 91
+            },
+            {
+              "en": "pleased",
+              "ar": "مسرورة",
+              "kind": "description",
+              "x": 27,
+              "y": 25
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Sending possible dates",
+          "ar": "إرسال مواعيد محتملة",
+          "purposeEn": "Say you look forward to meeting and offer two dates.",
+          "purposeAr": "عبّر عن تطلّعك للقاء واعرض موعدين.",
+          "image": {
+            "id": "conv-life-l2-011-2",
+            "path": "assets/scenes/conversations/life-l2-011-2.webp",
+            "width": 397,
+            "height": 248,
+            "en": "Sending possible dates",
+            "ar": "إرسال مواعيد محتملة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                397,
+                496,
+                794,
+                744
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "two dates",
+              "ar": "موعدان",
+              "kind": "object",
+              "x": 68,
+              "y": 58
+            },
+            {
+              "en": "phone",
+              "ar": "هاتف",
+              "kind": "object",
+              "x": 51,
+              "y": 72
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Choosing a weekday",
+          "ar": "اختيار يوم عمل",
+          "purposeEn": "Explain why a weekday is easier and suggest lunch.",
+          "purposeAr": "اشرح لماذا يناسبك يوم عمل واقترح الغداء.",
+          "image": {
+            "id": "conv-life-l2-011-3",
+            "path": "assets/scenes/conversations/life-l2-011-3.webp",
+            "width": 396,
+            "height": 248,
+            "en": "Choosing a weekday",
+            "ar": "اختيار يوم عمل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                794,
+                496,
+                1190,
+                744
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "calendar",
+              "ar": "تقويم",
+              "kind": "object",
+              "x": 66,
+              "y": 79
+            },
+            {
+              "en": "weekday",
+              "ar": "يوم عمل",
+              "kind": "object",
+              "x": 62,
+              "y": 77
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Visiting the market later",
+          "ar": "زيارة السوق بعد اللقاء",
+          "purposeEn": "Accept the idea and offer to show someone the market.",
+          "purposeAr": "اقبل الفكرة واعرض اصطحاب رفيقك إلى السوق.",
+          "image": {
+            "id": "conv-life-l2-011-4",
+            "path": "assets/scenes/conversations/life-l2-011-4.webp",
+            "width": 396,
+            "height": 248,
+            "en": "Visiting the market later",
+            "ar": "زيارة السوق بعد اللقاء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1190,
+                496,
+                1586,
+                744
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "market lane",
+              "ar": "ممرّ السوق",
+              "kind": "object",
+              "x": 74,
+              "y": 59
+            },
+            {
+              "en": "show someone around",
+              "ar": "يصحب شخصًا في جولة",
+              "kind": "phrase",
+              "x": 82,
+              "y": 41
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-012",
+      "goalAr": "من يتحدث الفرنسية؟",
+      "goalEn": "Finding a French speaker",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Help with a call in French",
+          "ar": "مساعدة في مكالمة بالفرنسية",
+          "purposeEn": "Ask whether a family member can help with a hotel call.",
+          "purposeAr": "اسأل إن كان أحد أفراد الأسرة يمكنه المساعدة في مكالمة الفندق.",
+          "image": {
+            "id": "conv-life-l2-012-1",
+            "path": "assets/scenes/conversations/life-l2-012-1.webp",
+            "width": 397,
+            "height": 248,
+            "en": "Help with a call in French",
+            "ar": "مساعدة في مكالمة بالفرنسية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                744,
+                397,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "hotel picture",
+              "ar": "صورة فندق",
+              "kind": "object",
+              "x": 65,
+              "y": 81
+            },
+            {
+              "en": "suitcase",
+              "ar": "حقيبة سفر",
+              "kind": "object",
+              "x": 18,
+              "y": 89
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Two possible helpers",
+          "ar": "شخصان يمكنهما المساعدة",
+          "purposeEn": "Explain who speaks French and ask if one is available.",
+          "purposeAr": "اذكر من يتحدث الفرنسية واسأل إن كان أحدهما متاحًا.",
+          "image": {
+            "id": "conv-life-l2-012-2",
+            "path": "assets/scenes/conversations/life-l2-012-2.webp",
+            "width": 397,
+            "height": 248,
+            "en": "Two possible helpers",
+            "ar": "شخصان يمكنهما المساعدة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                397,
+                744,
+                794,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "family photos",
+              "ar": "صور عائلية",
+              "kind": "object",
+              "x": 80,
+              "y": 29
+            },
+            {
+              "en": "two fingers",
+              "ar": "إصبعان",
+              "kind": "object",
+              "x": 66,
+              "y": 58
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "A short practice call",
+          "ar": "مكالمة تدريبية قصيرة",
+          "purposeEn": "Explain when the helper is available and what you will practise.",
+          "purposeAr": "اذكر متى يتفرغ المساعد وما ستتدرّب عليه.",
+          "image": {
+            "id": "conv-life-l2-012-3",
+            "path": "assets/scenes/conversations/life-l2-012-3.webp",
+            "width": 396,
+            "height": 248,
+            "en": "A short practice call",
+            "ar": "مكالمة تدريبية قصيرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                794,
+                744,
+                1190,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "make a call",
+              "ar": "يجري مكالمة",
+              "kind": "phrase",
+              "x": 23,
+              "y": 43
+            },
+            {
+              "en": "tickets",
+              "ar": "تذاكر",
+              "kind": "object",
+              "x": 46,
+              "y": 91
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Sending the situation first",
+          "ar": "إرسال وصف الموقف أولًا",
+          "purposeEn": "Offer to send a brief scenario before the call.",
+          "purposeAr": "اعرض إرسال وصف موجز للموقف قبل المكالمة.",
+          "image": {
+            "id": "conv-life-l2-012-4",
+            "path": "assets/scenes/conversations/life-l2-012-4.webp",
+            "width": 396,
+            "height": 248,
+            "en": "Sending the situation first",
+            "ar": "إرسال وصف الموقف أولًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1190,
+                744,
+                1586,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "send a message",
+              "ar": "يرسل رسالة",
+              "kind": "phrase",
+              "x": 73,
+              "y": 74
+            },
+            {
+              "en": "reply",
+              "ar": "يردّ",
+              "kind": "action",
+              "x": 73,
+              "y": 83
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

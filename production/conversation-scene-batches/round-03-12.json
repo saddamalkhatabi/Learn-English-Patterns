@@ -1,0 +1,742 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "2aeccfa9deeb84d28f325d6342c5c7bea22887b399843015ba955ee4e3971f10"
+  },
+  "conversations": [
+    {
+      "id": "workshop-choices",
+      "goalAr": "ناقش اختلاف الرأي واتّفق على معيار الاختيار.",
+      "goalEn": "Discuss a disagreement and agree on a selection criterion.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Suggesting an afternoon workshop",
+          "ar": "اقتراح ورشة بعد الظهر",
+          "purposeEn": "Give an opinion about which workshop time to choose.",
+          "purposeAr": "أبدِ رأيك في اختيار وقت الورشة.",
+          "image": {
+            "id": "conv-life-workshop-choices-1",
+            "path": "assets/scenes/conversations/life-workshop-choices-1.webp",
+            "width": 396,
+            "height": 248,
+            "en": "Suggesting an afternoon workshop",
+            "ar": "اقتراح ورشة بعد الظهر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                0,
+                396,
+                248
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "desk calendar",
+              "ar": "تقويم مكتبي",
+              "kind": "object",
+              "x": 79,
+              "y": 63
+            },
+            {
+              "en": "suggest",
+              "ar": "يقترح",
+              "kind": "action",
+              "x": 49,
+              "y": 59
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Disagreeing respectfully",
+          "ar": "الاختلاف بأدب",
+          "purposeEn": "Explain why the afternoon will not suit everyone.",
+          "purposeAr": "اشرح لماذا لا يناسب وقت بعد الظهر الجميع.",
+          "image": {
+            "id": "conv-life-workshop-choices-2",
+            "path": "assets/scenes/conversations/life-workshop-choices-2.webp",
+            "width": 397,
+            "height": 248,
+            "en": "Disagreeing respectfully",
+            "ar": "الاختلاف بأدب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                396,
+                0,
+                793,
+                248
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "concerned",
+              "ar": "قلقة",
+              "kind": "description",
+              "x": 40,
+              "y": 25
+            },
+            {
+              "en": "schedule conflict",
+              "ar": "تعارض في المواعيد",
+              "kind": "phrase",
+              "x": 58,
+              "y": 87
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "A morning alternative",
+          "ar": "بديل في الصباح",
+          "purposeEn": "Agree on a morning session and ask about extra places.",
+          "purposeAr": "اتفق على جلسة صباحية واسأل عن أماكن إضافية.",
+          "image": {
+            "id": "conv-life-workshop-choices-3",
+            "path": "assets/scenes/conversations/life-workshop-choices-3.webp",
+            "width": 397,
+            "height": 248,
+            "en": "A morning alternative",
+            "ar": "بديل في الصباح",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                793,
+                0,
+                1190,
+                248
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "take notes",
+              "ar": "يدوّن ملاحظات",
+              "kind": "phrase",
+              "x": 44,
+              "y": 88
+            },
+            {
+              "en": "agree",
+              "ar": "يوافق",
+              "kind": "action",
+              "x": 61,
+              "y": 59
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Confirming places first",
+          "ar": "تأكيد الأماكن أولًا",
+          "purposeEn": "Confirm your places before asking about extra seats.",
+          "purposeAr": "أكّد أماكنكم قبل السؤال عن مقاعد إضافية.",
+          "image": {
+            "id": "conv-life-workshop-choices-4",
+            "path": "assets/scenes/conversations/life-workshop-choices-4.webp",
+            "width": 396,
+            "height": 248,
+            "en": "Confirming places first",
+            "ar": "تأكيد الأماكن أولًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1190,
+                0,
+                1586,
+                248
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "smartphone",
+              "ar": "هاتف ذكي",
+              "kind": "object",
+              "x": 65,
+              "y": 83
+            },
+            {
+              "en": "confirm a place",
+              "ar": "يؤكّد حجز مكان",
+              "kind": "phrase",
+              "x": 51,
+              "y": 65
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "new-deadline",
+      "goalAr": "اقترح موعدًا واقعيًا وحدّد ما قد يغيّره.",
+      "goalEn": "Suggest a realistic deadline and say what could change it.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Requesting the report",
+          "ar": "طلب التقرير",
+          "purposeEn": "Ask whether the report can be sent by Thursday.",
+          "purposeAr": "اسأل هل يمكن إرسال التقرير بحلول الخميس.",
+          "image": {
+            "id": "conv-life-new-deadline-1",
+            "path": "assets/scenes/conversations/life-new-deadline-1.webp",
+            "width": 396,
+            "height": 247,
+            "en": "Requesting the report",
+            "ar": "طلب التقرير",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                248,
+                396,
+                495
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "laptop",
+              "ar": "حاسوب محمول",
+              "kind": "object",
+              "x": 77,
+              "y": 84
+            },
+            {
+              "en": "request",
+              "ar": "يطلب",
+              "kind": "action",
+              "x": 37,
+              "y": 65
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Negotiating more time",
+          "ar": "التفاوض على وقت إضافي",
+          "purposeEn": "Explain the need for another day and agree on a summary time.",
+          "purposeAr": "اشرح الحاجة إلى يوم إضافي واتفق على موعد الملخّص.",
+          "image": {
+            "id": "conv-life-new-deadline-2",
+            "path": "assets/scenes/conversations/life-new-deadline-2.webp",
+            "width": 397,
+            "height": 247,
+            "en": "Negotiating more time",
+            "ar": "التفاوض على وقت إضافي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                396,
+                248,
+                793,
+                495
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "open notebook",
+              "ar": "دفتر مفتوح",
+              "kind": "object",
+              "x": 55,
+              "y": 87
+            },
+            {
+              "en": "negotiate",
+              "ar": "يفاوض",
+              "kind": "action",
+              "x": 67,
+              "y": 69
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Planning for late figures",
+          "ar": "التخطيط لاحتمال تأخر الأرقام",
+          "purposeEn": "Explain what you can send early and ask about a fallback.",
+          "purposeAr": "وضح ما يمكنك إرساله مبكرًا واسأل عن البديل.",
+          "image": {
+            "id": "conv-life-new-deadline-3",
+            "path": "assets/scenes/conversations/life-new-deadline-3.webp",
+            "width": 397,
+            "height": 247,
+            "en": "Planning for late figures",
+            "ar": "التخطيط لاحتمال تأخر الأرقام",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                793,
+                248,
+                1190,
+                495
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "written plan",
+              "ar": "خطة مكتوبة",
+              "kind": "object",
+              "x": 56,
+              "y": 90
+            },
+            {
+              "en": "think ahead",
+              "ar": "يفكّر مسبقًا",
+              "kind": "phrase",
+              "x": 56,
+              "y": 64
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Draft before the figures",
+          "ar": "المسوّدة قبل الأرقام",
+          "purposeEn": "Agree to share a draft first and add the figures later.",
+          "purposeAr": "اتفق على مشاركة المسوّدة أولًا وإضافة الأرقام لاحقًا.",
+          "image": {
+            "id": "conv-life-new-deadline-4",
+            "path": "assets/scenes/conversations/life-new-deadline-4.webp",
+            "width": 396,
+            "height": 247,
+            "en": "Draft before the figures",
+            "ar": "المسوّدة قبل الأرقام",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1190,
+                248,
+                1586,
+                495
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bar chart",
+              "ar": "رسم بالأعمدة",
+              "kind": "object",
+              "x": 69,
+              "y": 73
+            },
+            {
+              "en": "draft report",
+              "ar": "مسوّدة تقرير",
+              "kind": "object",
+              "x": 29,
+              "y": 89
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "launch-feedback",
+      "goalAr": "اذكر ما نجح وما خالف توقعاتك وقدّم شكرًا محددًا.",
+      "goalEn": "Describe what went well, what surprised you, and what you appreciated.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Asking about the first week",
+          "ar": "السؤال عن الأسبوع الأول",
+          "purposeEn": "Ask for feedback about a new service.",
+          "purposeAr": "اطلب رأيًا في الخدمة الجديدة.",
+          "image": {
+            "id": "conv-life-launch-feedback-1",
+            "path": "assets/scenes/conversations/life-launch-feedback-1.webp",
+            "width": 396,
+            "height": 247,
+            "en": "Asking about the first week",
+            "ar": "السؤال عن الأسبوع الأول",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                495,
+                396,
+                742
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "waiting area",
+              "ar": "منطقة انتظار",
+              "kind": "object",
+              "x": 68,
+              "y": 51
+            },
+            {
+              "en": "feedback",
+              "ar": "ملاحظات",
+              "kind": "object",
+              "x": 43,
+              "y": 62
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Success and crowding",
+          "ar": "الإقبال والازدحام",
+          "purposeEn": "Describe what went well and what caused a problem.",
+          "purposeAr": "صف ما نجح وما تسبب في مشكلة.",
+          "image": {
+            "id": "conv-life-launch-feedback-2",
+            "path": "assets/scenes/conversations/life-launch-feedback-2.webp",
+            "width": 397,
+            "height": 247,
+            "en": "Success and crowding",
+            "ar": "الإقبال والازدحام",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                396,
+                495,
+                793,
+                742
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "crowded",
+              "ar": "مزدحم",
+              "kind": "description",
+              "x": 19,
+              "y": 33
+            },
+            {
+              "en": "compare outcomes",
+              "ar": "يقارن النتائج",
+              "kind": "phrase",
+              "x": 49,
+              "y": 72
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Leaving a slot available",
+          "ar": "إبقاء موعد متاح",
+          "purposeEn": "Consider offering more appointments and keeping one for urgent requests.",
+          "purposeAr": "ناقش زيادة المواعيد وترك موعد للحالات العاجلة.",
+          "image": {
+            "id": "conv-life-launch-feedback-3",
+            "path": "assets/scenes/conversations/life-launch-feedback-3.webp",
+            "width": 397,
+            "height": 247,
+            "en": "Leaving a slot available",
+            "ar": "إبقاء موعد متاح",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                793,
+                495,
+                1190,
+                742
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "appointment calendar",
+              "ar": "تقويم مواعيد",
+              "kind": "object",
+              "x": 72,
+              "y": 79
+            },
+            {
+              "en": "available slot",
+              "ar": "موعد متاح",
+              "kind": "object",
+              "x": 77,
+              "y": 70
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Reviewing before deciding",
+          "ar": "المراجعة قبل القرار",
+          "purposeEn": "Agree to check how often the reserved slot is used.",
+          "purposeAr": "اتفق على التحقق من مدى استخدام الموعد المحجوز.",
+          "image": {
+            "id": "conv-life-launch-feedback-4",
+            "path": "assets/scenes/conversations/life-launch-feedback-4.webp",
+            "width": 396,
+            "height": 247,
+            "en": "Reviewing before deciding",
+            "ar": "المراجعة قبل القرار",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1190,
+                495,
+                1586,
+                742
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "notepad",
+              "ar": "دفتر ملاحظات",
+              "kind": "object",
+              "x": 69,
+              "y": 86
+            },
+            {
+              "en": "record feedback",
+              "ar": "يسجّل الملاحظات",
+              "kind": "phrase",
+              "x": 53,
+              "y": 90
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tea-with-a-guest",
+      "goalAr": "اعرض مشروبًا وردّ على الشكر.",
+      "goalEn": "Offer a drink and reply to thanks.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Tea or coffee",
+          "ar": "شاي أم قهوة",
+          "purposeEn": "Offer a choice of drinks to a guest.",
+          "purposeAr": "اعرض على الضيف الاختيار بين مشروبين.",
+          "image": {
+            "id": "conv-life-tea-with-a-guest-1",
+            "path": "assets/scenes/conversations/life-tea-with-a-guest-1.webp",
+            "width": 396,
+            "height": 250,
+            "en": "Tea or coffee",
+            "ar": "شاي أم قهوة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                742,
+                396,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "teapot",
+              "ar": "إبريق شاي",
+              "kind": "object",
+              "x": 34,
+              "y": 83
+            },
+            {
+              "en": "coffee press",
+              "ar": "إبريق ضغط للقهوة",
+              "kind": "object",
+              "x": 53,
+              "y": 78
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Pouring tea",
+          "ar": "صبّ الشاي",
+          "purposeEn": "State a preference and say the drink is hot.",
+          "purposeAr": "اذكر تفضيلك ونبّه إلى أن الشراب ساخن.",
+          "image": {
+            "id": "conv-life-tea-with-a-guest-2",
+            "path": "assets/scenes/conversations/life-tea-with-a-guest-2.webp",
+            "width": 397,
+            "height": 250,
+            "en": "Pouring tea",
+            "ar": "صبّ الشاي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                396,
+                742,
+                793,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "pour",
+              "ar": "يصبّ",
+              "kind": "action",
+              "x": 54,
+              "y": 68
+            },
+            {
+              "en": "tea glass",
+              "ar": "كأس شاي",
+              "kind": "object",
+              "x": 64,
+              "y": 87
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Offering a biscuit",
+          "ar": "تقديم قطعة بسكويت",
+          "purposeEn": "Thank the host and offer a biscuit with the tea.",
+          "purposeAr": "اشكر المضيف وقدّم البسكويت مع الشاي.",
+          "image": {
+            "id": "conv-life-tea-with-a-guest-3",
+            "path": "assets/scenes/conversations/life-tea-with-a-guest-3.webp",
+            "width": 397,
+            "height": 250,
+            "en": "Offering a biscuit",
+            "ar": "تقديم قطعة بسكويت",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                793,
+                742,
+                1190,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "sip",
+              "ar": "يرتشف",
+              "kind": "action",
+              "x": 30,
+              "y": 46
+            },
+            {
+              "en": "biscuit plate",
+              "ar": "طبق بسكويت",
+              "kind": "object",
+              "x": 67,
+              "y": 83
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Just one biscuit",
+          "ar": "قطعة بسكويت واحدة",
+          "purposeEn": "Accept the offer and say how much you want.",
+          "purposeAr": "اقبل العرض واذكر الكمية التي تريدها.",
+          "image": {
+            "id": "conv-life-tea-with-a-guest-4",
+            "path": "assets/scenes/conversations/life-tea-with-a-guest-4.webp",
+            "width": 396,
+            "height": 250,
+            "en": "Just one biscuit",
+            "ar": "قطعة بسكويت واحدة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1190,
+                742,
+                1586,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "biscuit",
+              "ar": "قطعة بسكويت",
+              "kind": "object",
+              "x": 37,
+              "y": 68
+            },
+            {
+              "en": "glass of tea",
+              "ar": "كأس شاي",
+              "kind": "object",
+              "x": 32,
+              "y": 89
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

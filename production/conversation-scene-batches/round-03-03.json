@@ -1,0 +1,376 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "bf34fe6a012adf5de171545b6442f5ae1f4f7ab5b700281b25a11dfbc3994cf9"
+  },
+  "conversations": [
+    {
+      "id": "calling-a-driver",
+      "goalAr": "اتّفق مع السائق على المكان والوقت.",
+      "goalEn": "Agree on a pickup point and time with the driver.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 2,
+          "en": "At the pickup point",
+          "ar": "عند نقطة الالتقاء",
+          "purposeEn": "Ask where the driver will pick you up.",
+          "purposeAr": "اسأل أين سيقلّك السائق.",
+          "image": {
+            "id": "conv-life-calling-a-driver-1",
+            "path": "assets/scenes/conversations/life-calling-a-driver-1.webp",
+            "width": 396,
+            "height": 249,
+            "en": "At the pickup point",
+            "ar": "عند نقطة الالتقاء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                495,
+                396,
+                744
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "pickup point",
+              "ar": "نقطة الالتقاء",
+              "kind": "object",
+              "x": 25,
+              "y": 34
+            },
+            {
+              "en": "phone call",
+              "ar": "مكالمة هاتفية",
+              "kind": "object",
+              "x": 49,
+              "y": 39
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 3,
+          "en": "Explaining the schedule",
+          "ar": "توضيح الموعد",
+          "purposeEn": "Explain when you need to leave to meet your brother.",
+          "purposeAr": "اشرح متى تحتاج إلى الانطلاق للقاء أخيك.",
+          "image": {
+            "id": "conv-life-calling-a-driver-2",
+            "path": "assets/scenes/conversations/life-calling-a-driver-2.webp",
+            "width": 395,
+            "height": 249,
+            "en": "Explaining the schedule",
+            "ar": "توضيح الموعد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                397,
+                495,
+                792,
+                744
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "driver",
+              "ar": "سائق",
+              "kind": "object",
+              "x": 35,
+              "y": 36
+            },
+            {
+              "en": "headset",
+              "ar": "سمّاعة",
+              "kind": "object",
+              "x": 25,
+              "y": 39
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 4,
+          "en": "Waiting by the sign",
+          "ar": "الانتظار بجوار العلامة",
+          "purposeEn": "Agree when to call and where to wait.",
+          "purposeAr": "اتفق على موعد الاتصال ومكان الانتظار.",
+          "image": {
+            "id": "conv-life-calling-a-driver-3",
+            "path": "assets/scenes/conversations/life-calling-a-driver-3.webp",
+            "width": 396,
+            "height": 249,
+            "en": "Waiting by the sign",
+            "ar": "الانتظار بجوار العلامة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                793,
+                495,
+                1189,
+                744
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "wristwatch",
+              "ar": "ساعة يد",
+              "kind": "object",
+              "x": 64,
+              "y": 58
+            },
+            {
+              "en": "suitcase",
+              "ar": "حقيبة سفر",
+              "kind": "object",
+              "x": 55,
+              "y": 91
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "en": "An alternative meeting point",
+          "ar": "نقطة لقاء بديلة",
+          "purposeEn": "Suggest an alternative if the entrance is crowded.",
+          "purposeAr": "اقترح مكانًا بديلًا إذا كان المدخل مزدحمًا.",
+          "image": {
+            "id": "conv-life-calling-a-driver-4",
+            "path": "assets/scenes/conversations/life-calling-a-driver-4.webp",
+            "width": 396,
+            "height": 249,
+            "en": "An alternative meeting point",
+            "ar": "نقطة لقاء بديلة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1190,
+                495,
+                1586,
+                744
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "coffee stand",
+              "ar": "كشك قهوة",
+              "kind": "object",
+              "x": 80,
+              "y": 36
+            },
+            {
+              "en": "near the entrance",
+              "ar": "قرب المدخل",
+              "kind": "phrase",
+              "x": 49,
+              "y": 81
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "map-without-signal",
+      "goalAr": "حدّد ما يمكن فعله إذا انقطع الاتصال.",
+      "goalEn": "Work out what you can do if the signal drops.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "No phone signal",
+          "ar": "لا توجد إشارة",
+          "purposeEn": "Explain why the map cannot load.",
+          "purposeAr": "اشرح لماذا يتعذّر تحميل الخريطة.",
+          "image": {
+            "id": "conv-life-map-without-signal-1",
+            "path": "assets/scenes/conversations/life-map-without-signal-1.webp",
+            "width": 396,
+            "height": 248,
+            "en": "No phone signal",
+            "ar": "لا توجد إشارة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                744,
+                396,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "no signal",
+              "ar": "لا توجد إشارة",
+              "kind": "phrase",
+              "x": 54,
+              "y": 77
+            },
+            {
+              "en": "puzzled",
+              "ar": "حائرة",
+              "kind": "description",
+              "x": 36,
+              "y": 30
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 2,
+          "en": "Turn left at the junction",
+          "ar": "الانعطاف يسارًا عند التقاطع",
+          "purposeEn": "Give a simple direction using a street landmark.",
+          "purposeAr": "أعط اتجاهًا بسيطًا بالاستعانة بمعلم في الطريق.",
+          "image": {
+            "id": "conv-life-map-without-signal-2",
+            "path": "assets/scenes/conversations/life-map-without-signal-2.webp",
+            "width": 395,
+            "height": 248,
+            "en": "Turn left at the junction",
+            "ar": "الانعطاف يسارًا عند التقاطع",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                397,
+                744,
+                792,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "left arrow",
+              "ar": "سهم يسار",
+              "kind": "object",
+              "x": 16,
+              "y": 18
+            },
+            {
+              "en": "crossing",
+              "ar": "تقاطع",
+              "kind": "object",
+              "x": 22,
+              "y": 68
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "en": "Writing down the route",
+          "ar": "تدوين الطريق",
+          "purposeEn": "Write down the route and name the library as a landmark.",
+          "purposeAr": "دوّن الطريق واذكر المكتبة بوصفها علامة في الطريق.",
+          "image": {
+            "id": "conv-life-map-without-signal-3",
+            "path": "assets/scenes/conversations/life-map-without-signal-3.webp",
+            "width": 396,
+            "height": 248,
+            "en": "Writing down the route",
+            "ar": "تدوين الطريق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                793,
+                744,
+                1189,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "notebook",
+              "ar": "دفتر",
+              "kind": "object",
+              "x": 53,
+              "y": 75
+            },
+            {
+              "en": "library",
+              "ar": "مكتبة",
+              "kind": "object",
+              "x": 80,
+              "y": 31
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "en": "Looking for the school",
+          "ar": "البحث عن المدرسة",
+          "purposeEn": "Confirm the next turn and the landmark on the next block.",
+          "purposeAr": "أكّد موضع الانعطاف التالي والمعلم في الشارع التالي.",
+          "image": {
+            "id": "conv-life-map-without-signal-4",
+            "path": "assets/scenes/conversations/life-map-without-signal-4.webp",
+            "width": 396,
+            "height": 248,
+            "en": "Looking for the school",
+            "ar": "البحث عن المدرسة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1190,
+                744,
+                1586,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "school entrance",
+              "ar": "مدخل المدرسة",
+              "kind": "object",
+              "x": 84,
+              "y": 63
+            },
+            {
+              "en": "point ahead",
+              "ar": "يشير إلى الأمام",
+              "kind": "phrase",
+              "x": 57,
+              "y": 55
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,742 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1619,
+    "height": 971,
+    "sha256": "0e6f663124b8c414c80b8c9f577168875dfe9a9440069de7f2bfff8055e09692"
+  },
+  "conversations": [
+    {
+      "id": "direct-airport-train",
+      "goalAr": "اعرف إن كان عليك تبديل القطار ومتى يغادر.",
+      "goalEn": "Find out whether you must change trains and when it leaves.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "A direct service",
+          "ar": "رحلة مباشرة",
+          "purposeEn": "Ask whether the station has a direct train to the airport.",
+          "purposeAr": "اسأل هل توجد رحلة قطار مباشرة إلى المطار.",
+          "image": {
+            "id": "conv-life-direct-airport-train-1",
+            "path": "assets/scenes/conversations/life-direct-airport-train-1.webp",
+            "width": 404,
+            "height": 244,
+            "en": "A direct service",
+            "ar": "رحلة مباشرة",
+            "sourceCrop": {
+              "canvas": [
+                1619,
+                971
+              ],
+              "box": [
+                0,
+                0,
+                404,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "airplane pictogram",
+              "ar": "رمز طائرة",
+              "kind": "object",
+              "x": 51,
+              "y": 15
+            },
+            {
+              "en": "station attendant",
+              "ar": "موظف المحطة",
+              "kind": "object",
+              "x": 79,
+              "y": 37
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 2,
+          "en": "Departure time",
+          "ar": "وقت الانطلاق",
+          "purposeEn": "Give the departure time clearly.",
+          "purposeAr": "اذكر وقت الانطلاق بوضوح.",
+          "image": {
+            "id": "conv-life-direct-airport-train-2",
+            "path": "assets/scenes/conversations/life-direct-airport-train-2.webp",
+            "width": 405,
+            "height": 244,
+            "en": "Departure time",
+            "ar": "وقت الانطلاق",
+            "sourceCrop": {
+              "canvas": [
+                1619,
+                971
+              ],
+              "box": [
+                404,
+                0,
+                809,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "wall clock",
+              "ar": "ساعة حائط",
+              "kind": "object",
+              "x": 69,
+              "y": 33
+            },
+            {
+              "en": "at seven",
+              "ar": "في السابعة",
+              "kind": "phrase",
+              "x": 67,
+              "y": 45
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "en": "Changing platforms",
+          "ar": "تغيير الرصيف",
+          "purposeEn": "Explain where to board and confirm the traveler can stay on the train.",
+          "purposeAr": "وضح مكان الصعود وأكد أن المسافر لا يحتاج إلى تبديل القطار.",
+          "image": {
+            "id": "conv-life-direct-airport-train-3",
+            "path": "assets/scenes/conversations/life-direct-airport-train-3.webp",
+            "width": 406,
+            "height": 244,
+            "en": "Changing platforms",
+            "ar": "تغيير الرصيف",
+            "sourceCrop": {
+              "canvas": [
+                1619,
+                971
+              ],
+              "box": [
+                809,
+                0,
+                1215,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "platform",
+              "ar": "رصيف",
+              "kind": "object",
+              "x": 69,
+              "y": 80
+            },
+            {
+              "en": "train",
+              "ar": "قطار",
+              "kind": "object",
+              "x": 89,
+              "y": 51
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "en": "By the stairs",
+          "ar": "بجوار الدرج",
+          "purposeEn": "Locate the departure display using the stairs as a landmark.",
+          "purposeAr": "حدّد مكان شاشة المغادرة بالاستدلال بالدرج.",
+          "image": {
+            "id": "conv-life-direct-airport-train-4",
+            "path": "assets/scenes/conversations/life-direct-airport-train-4.webp",
+            "width": 404,
+            "height": 244,
+            "en": "By the stairs",
+            "ar": "بجوار الدرج",
+            "sourceCrop": {
+              "canvas": [
+                1619,
+                971
+              ],
+              "box": [
+                1215,
+                0,
+                1619,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "departure display",
+              "ar": "شاشة المغادرة",
+              "kind": "object",
+              "x": 73,
+              "y": 19
+            },
+            {
+              "en": "stairs",
+              "ar": "درج",
+              "kind": "object",
+              "x": 87,
+              "y": 66
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wrong-gate",
+      "goalAr": "اكتشف سبب الالتباس واعرف البوابة الجديدة.",
+      "goalEn": "Work out what went wrong and find the new gate.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 2,
+          "en": "Finding the display",
+          "ar": "العثور على شاشة المغادرة",
+          "purposeEn": "Ask where to check current flight information.",
+          "purposeAr": "اسأل أين تتحقق من معلومات الرحلة الحالية.",
+          "image": {
+            "id": "conv-life-wrong-gate-1",
+            "path": "assets/scenes/conversations/life-wrong-gate-1.webp",
+            "width": 404,
+            "height": 242,
+            "en": "Finding the display",
+            "ar": "العثور على شاشة المغادرة",
+            "sourceCrop": {
+              "canvas": [
+                1619,
+                971
+              ],
+              "box": [
+                0,
+                244,
+                404,
+                486
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "escalator",
+              "ar": "درج متحرّك",
+              "kind": "object",
+              "x": 56,
+              "y": 43
+            },
+            {
+              "en": "flight display",
+              "ar": "شاشة الرحلات",
+              "kind": "object",
+              "x": 87,
+              "y": 20
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 3,
+          "en": "Reading the update",
+          "ar": "قراءة التحديث",
+          "purposeEn": "Explain that your phone still shows the old gate.",
+          "purposeAr": "وضح أن هاتفك ما زال يعرض البوابة القديمة.",
+          "image": {
+            "id": "conv-life-wrong-gate-2",
+            "path": "assets/scenes/conversations/life-wrong-gate-2.webp",
+            "width": 405,
+            "height": 242,
+            "en": "Reading the update",
+            "ar": "قراءة التحديث",
+            "sourceCrop": {
+              "canvas": [
+                1619,
+                971
+              ],
+              "box": [
+                404,
+                244,
+                809,
+                486
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "smartphone",
+              "ar": "هاتف ذكي",
+              "kind": "object",
+              "x": 44,
+              "y": 71
+            },
+            {
+              "en": "concerned",
+              "ar": "قلقة",
+              "kind": "description",
+              "x": 29,
+              "y": 35
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 4,
+          "en": "Walking to the new gate",
+          "ar": "التوجه إلى البوابة الجديدة",
+          "purposeEn": "Give directions along the airport concourse.",
+          "purposeAr": "أعطِ الاتجاه عبر ممر المطار.",
+          "image": {
+            "id": "conv-life-wrong-gate-3",
+            "path": "assets/scenes/conversations/life-wrong-gate-3.webp",
+            "width": 406,
+            "height": 242,
+            "en": "Walking to the new gate",
+            "ar": "التوجه إلى البوابة الجديدة",
+            "sourceCrop": {
+              "canvas": [
+                1619,
+                971
+              ],
+              "box": [
+                809,
+                244,
+                1215,
+                486
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "concourse",
+              "ar": "ممر المطار",
+              "kind": "object",
+              "x": 87,
+              "y": 69
+            },
+            {
+              "en": "backpack",
+              "ar": "حقيبة ظهر",
+              "kind": "object",
+              "x": 33,
+              "y": 58
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "en": "Boarding pass ready",
+          "ar": "تجهيز بطاقة الصعود",
+          "purposeEn": "Check whether boarding has started and get the pass ready.",
+          "purposeAr": "تحقق هل بدأ الصعود وجهّز البطاقة.",
+          "image": {
+            "id": "conv-life-wrong-gate-4",
+            "path": "assets/scenes/conversations/life-wrong-gate-4.webp",
+            "width": 404,
+            "height": 242,
+            "en": "Boarding pass ready",
+            "ar": "تجهيز بطاقة الصعود",
+            "sourceCrop": {
+              "canvas": [
+                1619,
+                971
+              ],
+              "box": [
+                1215,
+                244,
+                1619,
+                486
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "boarding pass",
+              "ar": "بطاقة صعود",
+              "kind": "object",
+              "x": 45,
+              "y": 63
+            },
+            {
+              "en": "waiting area",
+              "ar": "منطقة الانتظار",
+              "kind": "object",
+              "x": 80,
+              "y": 60
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "two-tickets",
+      "goalAr": "اطلب تذكرتين وأكّد موعد انطلاق العبّارة.",
+      "goalEn": "Buy two tickets and confirm the ferry departure time.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 2,
+          "en": "At the ferry counter",
+          "ar": "عند شباك العبّارة",
+          "purposeEn": "Request two tickets and specify the day.",
+          "purposeAr": "اطلب تذكرتين وحدد اليوم.",
+          "image": {
+            "id": "conv-life-two-tickets-1",
+            "path": "assets/scenes/conversations/life-two-tickets-1.webp",
+            "width": 404,
+            "height": 243,
+            "en": "At the ferry counter",
+            "ar": "عند شباك العبّارة",
+            "sourceCrop": {
+              "canvas": [
+                1619,
+                971
+              ],
+              "box": [
+                0,
+                486,
+                404,
+                729
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ticket window",
+              "ar": "شباك التذاكر",
+              "kind": "object",
+              "x": 76,
+              "y": 66
+            },
+            {
+              "en": "ferry sign",
+              "ar": "علامة العبّارة",
+              "kind": "object",
+              "x": 44,
+              "y": 26
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 3,
+          "en": "Two adjoining seats",
+          "ar": "مقعدان متجاوران",
+          "purposeEn": "Ask for seats together and check the price.",
+          "purposeAr": "اطلب مقعدين متجاورين وتحقق من السعر.",
+          "image": {
+            "id": "conv-life-two-tickets-2",
+            "path": "assets/scenes/conversations/life-two-tickets-2.webp",
+            "width": 405,
+            "height": 243,
+            "en": "Two adjoining seats",
+            "ar": "مقعدان متجاوران",
+            "sourceCrop": {
+              "canvas": [
+                1619,
+                971
+              ],
+              "box": [
+                404,
+                486,
+                809,
+                729
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "seating plan",
+              "ar": "مخطط المقاعد",
+              "kind": "object",
+              "x": 42,
+              "y": 45
+            },
+            {
+              "en": "next to each other",
+              "ar": "أحدهما بجوار الآخر",
+              "kind": "phrase",
+              "x": 51,
+              "y": 50
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 4,
+          "en": "Collecting two tickets",
+          "ar": "استلام التذكرتين",
+          "purposeEn": "Confirm the price and the window seats as the tickets are handed over.",
+          "purposeAr": "أكد السعر والمقاعد قرب النافذة عند استلام التذاكر.",
+          "image": {
+            "id": "conv-life-two-tickets-3",
+            "path": "assets/scenes/conversations/life-two-tickets-3.webp",
+            "width": 406,
+            "height": 243,
+            "en": "Collecting two tickets",
+            "ar": "استلام التذكرتين",
+            "sourceCrop": {
+              "canvas": [
+                1619,
+                971
+              ],
+              "box": [
+                809,
+                486,
+                1215,
+                729
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ferry tickets",
+              "ar": "تذكرتا العبّارة",
+              "kind": "object",
+              "x": 53,
+              "y": 56
+            },
+            {
+              "en": "hand over",
+              "ar": "يسلّم",
+              "kind": "action",
+              "x": 48,
+              "y": 70
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "en": "Departure at noon",
+          "ar": "المغادرة ظهرًا",
+          "purposeEn": "Ask when the ferry leaves and confirm the time.",
+          "purposeAr": "اسأل متى تنطلق العبّارة وأكّد الوقت.",
+          "image": {
+            "id": "conv-life-two-tickets-4",
+            "path": "assets/scenes/conversations/life-two-tickets-4.webp",
+            "width": 404,
+            "height": 243,
+            "en": "Departure at noon",
+            "ar": "المغادرة ظهرًا",
+            "sourceCrop": {
+              "canvas": [
+                1619,
+                971
+              ],
+              "box": [
+                1215,
+                486,
+                1619,
+                729
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ferry",
+              "ar": "عبّارة",
+              "kind": "object",
+              "x": 77,
+              "y": 46
+            },
+            {
+              "en": "terminal window",
+              "ar": "نافذة المحطة",
+              "kind": "object",
+              "x": 87,
+              "y": 23
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "early-alarm",
+      "goalAr": "قارن وقت الاستيقاظ بوقت النهوض.",
+      "goalEn": "Distinguish waking up from getting out of bed.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Comparing alarm times",
+          "ar": "مقارنة مواعيد المنبّه",
+          "purposeEn": "Ask when someone wakes up and when their alarm rings.",
+          "purposeAr": "اسأل متى يستيقظ الشخص ومتى يرن منبّهه.",
+          "image": {
+            "id": "conv-life-early-alarm-1",
+            "path": "assets/scenes/conversations/life-early-alarm-1.webp",
+            "width": 404,
+            "height": 242,
+            "en": "Comparing alarm times",
+            "ar": "مقارنة مواعيد المنبّه",
+            "sourceCrop": {
+              "canvas": [
+                1619,
+                971
+              ],
+              "box": [
+                0,
+                729,
+                404,
+                971
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "alarm clock",
+              "ar": "منبّه",
+              "kind": "object",
+              "x": 40,
+              "y": 64
+            },
+            {
+              "en": "compare",
+              "ar": "يقارن",
+              "kind": "action",
+              "x": 65,
+              "y": 61
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Getting up",
+          "ar": "النهوض من السرير",
+          "purposeEn": "Compare getting up at once with staying in bed a little longer.",
+          "purposeAr": "قارن النهوض فورًا بالبقاء في السرير مدة أطول.",
+          "image": {
+            "id": "conv-life-early-alarm-2",
+            "path": "assets/scenes/conversations/life-early-alarm-2.webp",
+            "width": 405,
+            "height": 242,
+            "en": "Getting up",
+            "ar": "النهوض من السرير",
+            "sourceCrop": {
+              "canvas": [
+                1619,
+                971
+              ],
+              "box": [
+                404,
+                729,
+                809,
+                971
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bed",
+              "ar": "سرير",
+              "kind": "object",
+              "x": 32,
+              "y": 79
+            },
+            {
+              "en": "sleepy",
+              "ar": "ناعسة",
+              "kind": "description",
+              "x": 30,
+              "y": 23
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 4,
+          "en": "Catching the bus",
+          "ar": "اللحاق بالحافلة",
+          "purposeEn": "Explain why the commute makes it hard to stay in bed.",
+          "purposeAr": "اشرح لماذا يصعّب موعد الحافلة البقاء في السرير.",
+          "image": {
+            "id": "conv-life-early-alarm-3",
+            "path": "assets/scenes/conversations/life-early-alarm-3.webp",
+            "width": 406,
+            "height": 242,
+            "en": "Catching the bus",
+            "ar": "اللحاق بالحافلة",
+            "sourceCrop": {
+              "canvas": [
+                1619,
+                971
+              ],
+              "box": [
+                809,
+                729,
+                1215,
+                971
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bus shelter",
+              "ar": "مظلّة الموقف",
+              "kind": "object",
+              "x": 15,
+              "y": 32
+            },
+            {
+              "en": "work bag",
+              "ar": "حقيبة عمل",
+              "kind": "object",
+              "x": 34,
+              "y": 77
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "en": "Preparing the night before",
+          "ar": "الاستعداد في الليلة السابقة",
+          "purposeEn": "Suggest preparing a bag the night before to save time.",
+          "purposeAr": "اقترح تجهيز الحقيبة في الليلة السابقة لتوفير الوقت.",
+          "image": {
+            "id": "conv-life-early-alarm-4",
+            "path": "assets/scenes/conversations/life-early-alarm-4.webp",
+            "width": 404,
+            "height": 242,
+            "en": "Preparing the night before",
+            "ar": "الاستعداد في الليلة السابقة",
+            "sourceCrop": {
+              "canvas": [
+                1619,
+                971
+              ],
+              "box": [
+                1215,
+                729,
+                1619,
+                971
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "pack a bag",
+              "ar": "يجهّز حقيبة",
+              "kind": "phrase",
+              "x": 40,
+              "y": 61
+            },
+            {
+              "en": "bedside lamp",
+              "ar": "مصباح بجوار السرير",
+              "kind": "object",
+              "x": 89,
+              "y": 23
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

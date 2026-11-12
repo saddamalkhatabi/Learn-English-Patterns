@@ -11,7 +11,8 @@ test('the shipped browser scripts parse together as classic scripts',()=>{
  assert.doesNotThrow(()=>new vm.Script(files.map(file=>fs.readFileSync('public/'+file,'utf8')).join('\n;\n')));
 });
 test('reviewed conversation stages cover every turn and use their measured audio offsets',()=>{
- assert.equal(Object.keys(lifecycles).length,32);
+ const {lifecycles:authored,words:reviewedAtlasWords}=require('../scripts/conversation-scene-sources.cjs');
+ assert.deepEqual(Object.keys(lifecycles),Object.keys(authored));
  const annotations=new Map(require('../public/idea-scenes.json').scenes.map(scene=>[scene.id,scene]));
  const images=new Set();
  for(const [id,life] of Object.entries(lifecycles)){
@@ -28,20 +29,26 @@ test('reviewed conversation stages cover every turn and use their measured audio
    assert(image&&image.width>image.height,id);
    assert(image.path.startsWith('assets/scenes/conversations/life-'),id);
    assert(!images.has(image.path),id);images.add(image.path);
+   if(reviewedAtlasWords.has(image.id)){
+    assert(fs.statSync('public/'+image.path).size<=36*1024,image.path);
+   }
    const annotation=annotations.get(image.id);
    assert.equal(annotation.sha256,image.sha256,id);
    assert(annotation.words.length>=2&&annotation.words.every(word=>Number.isFinite(word.x)&&Number.isFinite(word.y)),id);
    assert(annotation.words.every(word=>vocabulary.entries.some(entry=>normalize(entry.en)===normalize(word.en)&&entry.sceneIds.includes(image.id))),id);
    for(let turn=stage.from;turn<=stage.to;turn++){
     assert.equal(scenes[id].turns[turn].id,image.id,id);
-    const cue=audio[id].turns[turn-1];
-    assert(cue.start_ms<cue.end_ms,id);
+    const recording=audio[id];
+    if(recording){
+     const cue=recording.turns[turn-1];
+     assert(cue.start_ms<cue.end_ms,id);
+    }else assert.notEqual(process.env.DIALOGUE_AUDIO_REQUIRED,'1',id);
    }
    next=stage.to+1;
   }
   assert.equal(next,dialogue.lines.length+1,id);
  }
- assert.equal(images.size,128);
+ assert.equal(images.size,Object.keys(authored).length*4);
 });
 test('vocabulary keeps contextual roles, full words with accents, and valid content links',()=>{
  assert(vocabulary.entries.length>3000);

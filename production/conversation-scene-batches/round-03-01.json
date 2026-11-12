@@ -1,0 +1,756 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "0e08b10fcbc92fc47d060ee1fdd52b3084d0f8d28f468b41c0e6d25413fcb067"
+  },
+  "conversations": [
+    {
+      "id": "phone-help",
+      "goalAr": "اطلب المساعدة بعد نسيان شاحن الهاتف.",
+      "goalEn": "Ask for help after forgetting a phone charger.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Flat phone battery",
+          "ar": "بطارية الهاتف فارغة",
+          "purposeEn": "Explain why your phone stopped working.",
+          "purposeAr": "اذكر سبب توقف هاتفك.",
+          "image": {
+            "id": "conv-life-phone-help-1",
+            "path": "assets/scenes/conversations/life-phone-help-1.webp",
+            "width": 396,
+            "height": 247,
+            "en": "Flat phone battery",
+            "ar": "بطارية الهاتف فارغة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                0,
+                396,
+                247
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "smartphone",
+              "ar": "هاتف ذكي",
+              "kind": "object",
+              "x": 75,
+              "y": 65
+            },
+            {
+              "en": "worried",
+              "ar": "قلق",
+              "kind": "description",
+              "x": 42,
+              "y": 27
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Borrowing a charger",
+          "ar": "استعارة شاحن",
+          "purposeEn": "Offer a charger and let your companion borrow a phone.",
+          "purposeAr": "اعرض الشاحن واسمح لرفيقك باستعارة هاتف.",
+          "image": {
+            "id": "conv-life-phone-help-2",
+            "path": "assets/scenes/conversations/life-phone-help-2.webp",
+            "width": 397,
+            "height": 247,
+            "en": "Borrowing a charger",
+            "ar": "استعارة شاحن",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                396,
+                0,
+                793,
+                247
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "charging cable",
+              "ar": "سلك الشحن",
+              "kind": "object",
+              "x": 53,
+              "y": 76
+            },
+            {
+              "en": "offer",
+              "ar": "يعرض",
+              "kind": "action",
+              "x": 46,
+              "y": 64
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 4,
+          "en": "The socket",
+          "ar": "منفذ الشحن",
+          "purposeEn": "Show where to connect the cable.",
+          "purposeAr": "وضّح موضع توصيل السلك.",
+          "image": {
+            "id": "conv-life-phone-help-3",
+            "path": "assets/scenes/conversations/life-phone-help-3.webp",
+            "width": 396,
+            "height": 247,
+            "en": "The socket",
+            "ar": "منفذ الشحن",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                793,
+                0,
+                1189,
+                247
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "USB port",
+              "ar": "منفذ USB",
+              "kind": "object",
+              "x": 71,
+              "y": 73
+            },
+            {
+              "en": "point to",
+              "ar": "يشير إلى",
+              "kind": "phrase",
+              "x": 62,
+              "y": 72
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "en": "Checking the car battery",
+          "ar": "فحص بطارية السيارة",
+          "purposeEn": "Check the indicator before deciding what to do next.",
+          "purposeAr": "تحقق من المؤشر قبل تحديد الخطوة التالية.",
+          "image": {
+            "id": "conv-life-phone-help-4",
+            "path": "assets/scenes/conversations/life-phone-help-4.webp",
+            "width": 397,
+            "height": 247,
+            "en": "Checking the car battery",
+            "ar": "فحص بطارية السيارة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1189,
+                0,
+                1586,
+                247
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "indicator lights",
+              "ar": "أضواء المؤشر",
+              "kind": "object",
+              "x": 60,
+              "y": 77
+            },
+            {
+              "en": "car hood",
+              "ar": "غطاء محرّك السيارة",
+              "kind": "object",
+              "x": 81,
+              "y": 12
+            },
+            {
+              "en": "concentrating",
+              "ar": "مركّز",
+              "kind": "description",
+              "x": 55,
+              "y": 33
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gift-budget",
+      "goalAr": "وازن بين هديتين حسب السعر وما يفضّله المستلم.",
+      "goalEn": "Weigh two gifts by price and the recipient’s tastes.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "A gift on a budget",
+          "ar": "هدية ضمن الميزانية",
+          "purposeEn": "Name the recipient and say how much you can spend.",
+          "purposeAr": "اذكر لمن الهدية وكم تستطيع إنفاقه.",
+          "image": {
+            "id": "conv-life-gift-budget-1",
+            "path": "assets/scenes/conversations/life-gift-budget-1.webp",
+            "width": 396,
+            "height": 249,
+            "en": "A gift on a budget",
+            "ar": "هدية ضمن الميزانية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                247,
+                396,
+                496
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "wallet",
+              "ar": "محفظة",
+              "kind": "object",
+              "x": 57,
+              "y": 92
+            },
+            {
+              "en": "bookshop clerk",
+              "ar": "موظفة متجر الكتب",
+              "kind": "object",
+              "x": 81,
+              "y": 39
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 2,
+          "en": "A notebook or a book",
+          "ar": "دفتر أم كتاب",
+          "purposeEn": "Offer two choices and ask which would be more useful.",
+          "purposeAr": "اعرض خيارين واسأل أيهما أنفع.",
+          "image": {
+            "id": "conv-life-gift-budget-2",
+            "path": "assets/scenes/conversations/life-gift-budget-2.webp",
+            "width": 397,
+            "height": 249,
+            "en": "A notebook or a book",
+            "ar": "دفتر أم كتاب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                396,
+                247,
+                793,
+                496
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "notebook",
+              "ar": "دفتر",
+              "kind": "object",
+              "x": 45,
+              "y": 68
+            },
+            {
+              "en": "paperback",
+              "ar": "كتاب بغلاف ورقي",
+              "kind": "object",
+              "x": 73,
+              "y": 71
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "en": "Comparing the choices",
+          "ar": "مقارنة الخيارين",
+          "purposeEn": "Explain your preference and suggest a book at a suitable price.",
+          "purposeAr": "بيّن تفضيلك واقترح كتابًا بسعر مناسب.",
+          "image": {
+            "id": "conv-life-gift-budget-3",
+            "path": "assets/scenes/conversations/life-gift-budget-3.webp",
+            "width": 396,
+            "height": 249,
+            "en": "Comparing the choices",
+            "ar": "مقارنة الخيارين",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                793,
+                247,
+                1189,
+                496
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "compare",
+              "ar": "يقارن",
+              "kind": "action",
+              "x": 63,
+              "y": 43
+            },
+            {
+              "en": "short novel",
+              "ar": "رواية قصيرة",
+              "kind": "object",
+              "x": 69,
+              "y": 62
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "en": "Wrapping the gift",
+          "ar": "تغليف الهدية",
+          "purposeEn": "Ask for gift wrapping and a receipt without the price.",
+          "purposeAr": "اطلب تغليف الهدية وإيصالًا من دون السعر.",
+          "image": {
+            "id": "conv-life-gift-budget-4",
+            "path": "assets/scenes/conversations/life-gift-budget-4.webp",
+            "width": 397,
+            "height": 249,
+            "en": "Wrapping the gift",
+            "ar": "تغليف الهدية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1189,
+                247,
+                1586,
+                496
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "wrapping paper",
+              "ar": "ورق تغليف",
+              "kind": "object",
+              "x": 50,
+              "y": 83
+            },
+            {
+              "en": "scissors",
+              "ar": "مقص",
+              "kind": "object",
+              "x": 86,
+              "y": 90
+            },
+            {
+              "en": "wrap",
+              "ar": "يغلّف",
+              "kind": "action",
+              "x": 61,
+              "y": 74
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tailor-pickup",
+      "goalAr": "حدّد موعد الاستلام وطريقة التأكيد.",
+      "goalEn": "Agree on a pickup time and how to confirm it.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "At the tailor’s",
+          "ar": "عند الخيّاط",
+          "purposeEn": "Ask when the trousers will be ready to collect.",
+          "purposeAr": "اسأل متى تصبح السراويل جاهزة للاستلام.",
+          "image": {
+            "id": "conv-life-tailor-pickup-1",
+            "path": "assets/scenes/conversations/life-tailor-pickup-1.webp",
+            "width": 396,
+            "height": 247,
+            "en": "At the tailor’s",
+            "ar": "عند الخيّاط",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                496,
+                396,
+                743
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "trousers",
+              "ar": "سروال",
+              "kind": "object",
+              "x": 82,
+              "y": 59
+            },
+            {
+              "en": "tailor",
+              "ar": "خيّاط",
+              "kind": "object",
+              "x": 55,
+              "y": 42
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 2,
+          "en": "Measuring the hem",
+          "ar": "قياس الحاشية",
+          "purposeEn": "Explain the alteration and give a time for completion.",
+          "purposeAr": "اشرح التعديل وحدد وقت الانتهاء.",
+          "image": {
+            "id": "conv-life-tailor-pickup-2",
+            "path": "assets/scenes/conversations/life-tailor-pickup-2.webp",
+            "width": 397,
+            "height": 247,
+            "en": "Measuring the hem",
+            "ar": "قياس الحاشية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                396,
+                496,
+                793,
+                743
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "hem",
+              "ar": "حاشية السروال",
+              "kind": "object",
+              "x": 75,
+              "y": 83
+            },
+            {
+              "en": "measuring tape",
+              "ar": "شريط قياس",
+              "kind": "object",
+              "x": 67,
+              "y": 88
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "en": "Pickup by message",
+          "ar": "تنسيق الاستلام برسالة",
+          "purposeEn": "Arrange to send a message when the item is ready.",
+          "purposeAr": "اتفق على إرسال رسالة عند جاهزية القطعة.",
+          "image": {
+            "id": "conv-life-tailor-pickup-3",
+            "path": "assets/scenes/conversations/life-tailor-pickup-3.webp",
+            "width": 396,
+            "height": 247,
+            "en": "Pickup by message",
+            "ar": "تنسيق الاستلام برسالة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                793,
+                496,
+                1189,
+                743
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "phone",
+              "ar": "هاتف",
+              "kind": "object",
+              "x": 73,
+              "y": 68
+            },
+            {
+              "en": "sewing machine",
+              "ar": "آلة خياطة",
+              "kind": "object",
+              "x": 28,
+              "y": 45
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "en": "The fitting room",
+          "ar": "غرفة القياس",
+          "purposeEn": "Ask to try on the garment before leaving.",
+          "purposeAr": "اطلب تجربة القطعة قبل المغادرة.",
+          "image": {
+            "id": "conv-life-tailor-pickup-4",
+            "path": "assets/scenes/conversations/life-tailor-pickup-4.webp",
+            "width": 397,
+            "height": 247,
+            "en": "The fitting room",
+            "ar": "غرفة القياس",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1189,
+                496,
+                1586,
+                743
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "fitting room",
+              "ar": "غرفة قياس",
+              "kind": "object",
+              "x": 86,
+              "y": 48
+            },
+            {
+              "en": "folded trousers",
+              "ar": "سروال مطوي",
+              "kind": "object",
+              "x": 34,
+              "y": 82
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bus-stop-directions",
+      "goalAr": "اطلب اتجاهًا وحدّد علامة قريبة من الموقف.",
+      "goalEn": "Ask for directions and identify a landmark near the stop.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 2,
+          "en": "Across from the school",
+          "ar": "في الجهة المقابلة للمدرسة",
+          "purposeEn": "Ask for the stop and use the school as a landmark.",
+          "purposeAr": "اسأل عن الموقف واستدل بمبنى المدرسة.",
+          "image": {
+            "id": "conv-life-bus-stop-directions-1",
+            "path": "assets/scenes/conversations/life-bus-stop-directions-1.webp",
+            "width": 396,
+            "height": 249,
+            "en": "Across from the school",
+            "ar": "في الجهة المقابلة للمدرسة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                743,
+                396,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "school gate",
+              "ar": "بوابة المدرسة",
+              "kind": "object",
+              "x": 81,
+              "y": 42
+            },
+            {
+              "en": "across the road",
+              "ar": "على الجانب الآخر من الطريق",
+              "kind": "phrase",
+              "x": 77,
+              "y": 72
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 3,
+          "en": "At the crossing",
+          "ar": "عند معبر المشاة",
+          "purposeEn": "Check where it is safe to cross.",
+          "purposeAr": "تحقق من مكان العبور المناسب.",
+          "image": {
+            "id": "conv-life-bus-stop-directions-2",
+            "path": "assets/scenes/conversations/life-bus-stop-directions-2.webp",
+            "width": 397,
+            "height": 249,
+            "en": "At the crossing",
+            "ar": "عند معبر المشاة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                396,
+                743,
+                793,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "pedestrian crossing",
+              "ar": "معبر مشاة",
+              "kind": "object",
+              "x": 67,
+              "y": 81
+            },
+            {
+              "en": "traffic light",
+              "ar": "إشارة مرور",
+              "kind": "object",
+              "x": 84,
+              "y": 17
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 4,
+          "en": "Past the gate",
+          "ar": "بعد البوابة",
+          "purposeEn": "Explain where the stop is in relation to the school gate.",
+          "purposeAr": "صف موضع الموقف بالنسبة إلى بوابة المدرسة.",
+          "image": {
+            "id": "conv-life-bus-stop-directions-3",
+            "path": "assets/scenes/conversations/life-bus-stop-directions-3.webp",
+            "width": 396,
+            "height": 249,
+            "en": "Past the gate",
+            "ar": "بعد البوابة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                793,
+                743,
+                1189,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bus shelter",
+              "ar": "مظلّة الموقف",
+              "kind": "object",
+              "x": 75,
+              "y": 56
+            },
+            {
+              "en": "pointing",
+              "ar": "يشير",
+              "kind": "action",
+              "x": 48,
+              "y": 48
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "en": "The right side of the road",
+          "ar": "الجانب المناسب من الطريق",
+          "purposeEn": "Confirm which side serves buses going downtown.",
+          "purposeAr": "تحقق من جانب الطريق الذي تمر منه حافلات وسط المدينة.",
+          "image": {
+            "id": "conv-life-bus-stop-directions-4",
+            "path": "assets/scenes/conversations/life-bus-stop-directions-4.webp",
+            "width": 397,
+            "height": 249,
+            "en": "The right side of the road",
+            "ar": "الجانب المناسب من الطريق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1189,
+                743,
+                1586,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bus stop sign",
+              "ar": "علامة موقف الحافلة",
+              "kind": "object",
+              "x": 62,
+              "y": 18
+            },
+            {
+              "en": "city bus",
+              "ar": "حافلة المدينة",
+              "kind": "object",
+              "x": 85,
+              "y": 48
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

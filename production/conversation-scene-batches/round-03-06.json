@@ -1,0 +1,742 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "e7b283c901423311f39da7b1332862573f56da33b02624b446bc6bcadea424c7"
+  },
+  "conversations": [
+    {
+      "id": "find-the-key",
+      "goalAr": "استعن بوصف المكان لتجد المفتاح.",
+      "goalEn": "Use location clues to find the key.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "A missing key",
+          "ar": "مفتاح مفقود",
+          "purposeEn": "Ask where the front-door key is.",
+          "purposeAr": "اسأل عن مكان مفتاح باب المدخل.",
+          "image": {
+            "id": "conv-life-find-the-key-1",
+            "path": "assets/scenes/conversations/life-find-the-key-1.webp",
+            "width": 397,
+            "height": 248,
+            "en": "A missing key",
+            "ar": "مفتاح مفقود",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                0,
+                397,
+                248
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "handbag",
+              "ar": "حقيبة يد",
+              "kind": "object",
+              "x": 60,
+              "y": 84
+            },
+            {
+              "en": "worried",
+              "ar": "قلقة",
+              "kind": "description",
+              "x": 26,
+              "y": 27
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Checking the notebook",
+          "ar": "التفقد قرب الدفتر",
+          "purposeEn": "Say where you last saw the key and check under the notebook.",
+          "purposeAr": "اذكر أين رأيت المفتاح آخر مرة وتحقق تحت الدفتر.",
+          "image": {
+            "id": "conv-life-find-the-key-2",
+            "path": "assets/scenes/conversations/life-find-the-key-2.webp",
+            "width": 396,
+            "height": 248,
+            "en": "Checking the notebook",
+            "ar": "التفقد قرب الدفتر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                397,
+                0,
+                793,
+                248
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "notebook",
+              "ar": "دفتر",
+              "kind": "object",
+              "x": 75,
+              "y": 77
+            },
+            {
+              "en": "beside the notebook",
+              "ar": "بجوار الدفتر",
+              "kind": "phrase",
+              "x": 63,
+              "y": 91
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "On the hook",
+          "ar": "على الخطّاف",
+          "purposeEn": "Identify the key and explain where you hung it.",
+          "purposeAr": "أشر إلى المفتاح واشرح أين علّقته.",
+          "image": {
+            "id": "conv-life-find-the-key-3",
+            "path": "assets/scenes/conversations/life-find-the-key-3.webp",
+            "width": 397,
+            "height": 248,
+            "en": "On the hook",
+            "ar": "على الخطّاف",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                793,
+                0,
+                1190,
+                248
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "key",
+              "ar": "مفتاح",
+              "kind": "object",
+              "x": 81,
+              "y": 33
+            },
+            {
+              "en": "wall hook",
+              "ar": "خطّاف حائط",
+              "kind": "object",
+              "x": 81,
+              "y": 22
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "A regular place for keys",
+          "ar": "مكان ثابت للمفاتيح",
+          "purposeEn": "Suggest a place to keep the key next time.",
+          "purposeAr": "اقترح مكانًا لحفظ المفتاح في المرة المقبلة.",
+          "image": {
+            "id": "conv-life-find-the-key-4",
+            "path": "assets/scenes/conversations/life-find-the-key-4.webp",
+            "width": 396,
+            "height": 248,
+            "en": "A regular place for keys",
+            "ar": "مكان ثابت للمفاتيح",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1190,
+                0,
+                1586,
+                248
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "small bowl",
+              "ar": "وعاء صغير",
+              "kind": "object",
+              "x": 78,
+              "y": 81
+            },
+            {
+              "en": "by the door",
+              "ar": "بجوار الباب",
+              "kind": "phrase",
+              "x": 68,
+              "y": 49
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lend-a-pen",
+      "goalAr": "اطلب قلمًا واشكر من أعاره لك.",
+      "goalEn": "Borrow a pen and thank the person who lent it.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Asking for a pen",
+          "ar": "طلب قلم",
+          "purposeEn": "Ask whether someone has a pen you can use.",
+          "purposeAr": "اسأل هل لدى أحد قلم يمكنك استخدامه.",
+          "image": {
+            "id": "conv-life-lend-a-pen-1",
+            "path": "assets/scenes/conversations/life-lend-a-pen-1.webp",
+            "width": 397,
+            "height": 248,
+            "en": "Asking for a pen",
+            "ar": "طلب قلم",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                248,
+                397,
+                496
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "form",
+              "ar": "استمارة",
+              "kind": "object",
+              "x": 47,
+              "y": 92
+            },
+            {
+              "en": "ask",
+              "ar": "يسأل",
+              "kind": "action",
+              "x": 35,
+              "y": 67
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "A spare pen",
+          "ar": "قلم احتياطي",
+          "purposeEn": "Offer the spare pen and ask permission to use it.",
+          "purposeAr": "اعرض القلم الاحتياطي واستأذن في استخدامه.",
+          "image": {
+            "id": "conv-life-lend-a-pen-2",
+            "path": "assets/scenes/conversations/life-lend-a-pen-2.webp",
+            "width": 396,
+            "height": 248,
+            "en": "A spare pen",
+            "ar": "قلم احتياطي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                397,
+                248,
+                793,
+                496
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "blue pen",
+              "ar": "قلم أزرق",
+              "kind": "object",
+              "x": 54,
+              "y": 39
+            },
+            {
+              "en": "spare",
+              "ar": "احتياطي",
+              "kind": "description",
+              "x": 54,
+              "y": 49
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Handing it over",
+          "ar": "مناولة القلم",
+          "purposeEn": "Hand over the pen and say when you will return it.",
+          "purposeAr": "ناول القلم واذكر متى ستعيده.",
+          "image": {
+            "id": "conv-life-lend-a-pen-3",
+            "path": "assets/scenes/conversations/life-lend-a-pen-3.webp",
+            "width": 397,
+            "height": 248,
+            "en": "Handing it over",
+            "ar": "مناولة القلم",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                793,
+                248,
+                1190,
+                496
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "hand over",
+              "ar": "يناول",
+              "kind": "action",
+              "x": 58,
+              "y": 61
+            },
+            {
+              "en": "clipboard",
+              "ar": "لوح تثبيت الأوراق",
+              "kind": "object",
+              "x": 55,
+              "y": 91
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Filling in the form",
+          "ar": "تعبئة الاستمارة",
+          "purposeEn": "Reassure the borrower that there is enough time.",
+          "purposeAr": "طمئن المستعير إلى أن لديه وقتًا كافيًا.",
+          "image": {
+            "id": "conv-life-lend-a-pen-4",
+            "path": "assets/scenes/conversations/life-lend-a-pen-4.webp",
+            "width": 396,
+            "height": 248,
+            "en": "Filling in the form",
+            "ar": "تعبئة الاستمارة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1190,
+                248,
+                1586,
+                496
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "fill in a form",
+              "ar": "يملأ استمارة",
+              "kind": "phrase",
+              "x": 31,
+              "y": 85
+            },
+            {
+              "en": "mug",
+              "ar": "كوب",
+              "kind": "object",
+              "x": 68,
+              "y": 82
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "window-or-fan",
+      "goalAr": "اقترح طريقة تجعل الغرفة مريحة للجميع.",
+      "goalEn": "Find a way to make the room comfortable for everyone.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Opening the window",
+          "ar": "فتح النافذة",
+          "purposeEn": "Ask permission to open the window because the room is warm.",
+          "purposeAr": "استأذن في فتح النافذة لأن الغرفة دافئة.",
+          "image": {
+            "id": "conv-life-window-or-fan-1",
+            "path": "assets/scenes/conversations/life-window-or-fan-1.webp",
+            "width": 397,
+            "height": 248,
+            "en": "Opening the window",
+            "ar": "فتح النافذة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                496,
+                397,
+                744
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "open window",
+              "ar": "نافذة مفتوحة",
+              "kind": "object",
+              "x": 54,
+              "y": 41
+            },
+            {
+              "en": "street",
+              "ar": "شارع",
+              "kind": "object",
+              "x": 66,
+              "y": 59
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "The fan instead",
+          "ar": "المروحة بدلًا من ذلك",
+          "purposeEn": "Suggest the fan instead and explain the noise outside.",
+          "purposeAr": "اقترح المروحة بدلًا من النافذة واشرح ضجيج الخارج.",
+          "image": {
+            "id": "conv-life-window-or-fan-2",
+            "path": "assets/scenes/conversations/life-window-or-fan-2.webp",
+            "width": 396,
+            "height": 248,
+            "en": "The fan instead",
+            "ar": "المروحة بدلًا من ذلك",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                397,
+                496,
+                793,
+                744
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "standing fan",
+              "ar": "مروحة قائمة",
+              "kind": "object",
+              "x": 88,
+              "y": 39
+            },
+            {
+              "en": "traffic",
+              "ar": "حركة المرور",
+              "kind": "object",
+              "x": 31,
+              "y": 48
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "A low setting",
+          "ar": "سرعة منخفضة",
+          "purposeEn": "Choose a setting and check where the air is blowing.",
+          "purposeAr": "اختر درجة تشغيل وتحقق من اتجاه الهواء.",
+          "image": {
+            "id": "conv-life-window-or-fan-3",
+            "path": "assets/scenes/conversations/life-window-or-fan-3.webp",
+            "width": 397,
+            "height": 248,
+            "en": "A low setting",
+            "ar": "سرعة منخفضة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                793,
+                496,
+                1190,
+                744
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "fan control",
+              "ar": "زر المروحة",
+              "kind": "object",
+              "x": 50,
+              "y": 77
+            },
+            {
+              "en": "turn on",
+              "ar": "يشغّل",
+              "kind": "action",
+              "x": 57,
+              "y": 72
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Moving the papers",
+          "ar": "إبعاد الأوراق",
+          "purposeEn": "Ask someone to move papers away from the airflow.",
+          "purposeAr": "اطلب من أحد إبعاد الأوراق عن تيار الهواء.",
+          "image": {
+            "id": "conv-life-window-or-fan-4",
+            "path": "assets/scenes/conversations/life-window-or-fan-4.webp",
+            "width": 396,
+            "height": 248,
+            "en": "Moving the papers",
+            "ar": "إبعاد الأوراق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1190,
+                496,
+                1586,
+                744
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "stack of papers",
+              "ar": "رزمة أوراق",
+              "kind": "object",
+              "x": 57,
+              "y": 86
+            },
+            {
+              "en": "away from the fan",
+              "ar": "بعيدًا عن المروحة",
+              "kind": "phrase",
+              "x": 53,
+              "y": 73
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dinner-ingredients",
+      "goalAr": "راجع المكونات واتفق على ما يجب شراؤه.",
+      "goalEn": "Check the ingredients and agree what to buy.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "How many people?",
+          "ar": "كم شخصًا؟",
+          "purposeEn": "Check how many people will be eating.",
+          "purposeAr": "تحقق من عدد من سيتناولون الطعام.",
+          "image": {
+            "id": "conv-life-dinner-ingredients-1",
+            "path": "assets/scenes/conversations/life-dinner-ingredients-1.webp",
+            "width": 397,
+            "height": 248,
+            "en": "How many people?",
+            "ar": "كم شخصًا؟",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                744,
+                397,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "cooking pot",
+              "ar": "قدر طبخ",
+              "kind": "object",
+              "x": 24,
+              "y": 92
+            },
+            {
+              "en": "apron",
+              "ar": "مئزر",
+              "kind": "object",
+              "x": 78,
+              "y": 77
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Potatoes in the cupboard",
+          "ar": "البطاطا في الخزانة",
+          "purposeEn": "Count what you have and say how many more you need.",
+          "purposeAr": "عدّ ما لديك واذكر كم تحتاج زيادة.",
+          "image": {
+            "id": "conv-life-dinner-ingredients-2",
+            "path": "assets/scenes/conversations/life-dinner-ingredients-2.webp",
+            "width": 396,
+            "height": 248,
+            "en": "Potatoes in the cupboard",
+            "ar": "البطاطا في الخزانة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                397,
+                744,
+                793,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "potatoes",
+              "ar": "بطاطا",
+              "kind": "object",
+              "x": 60,
+              "y": 37
+            },
+            {
+              "en": "cupboard",
+              "ar": "خزانة",
+              "kind": "object",
+              "x": 61,
+              "y": 16
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Getting a small bag",
+          "ar": "شراء كيس صغير",
+          "purposeEn": "Suggest how much to buy and check whether there is enough oil.",
+          "purposeAr": "اقترح كمية الشراء وتحقق من كفاية الزيت.",
+          "image": {
+            "id": "conv-life-dinner-ingredients-3",
+            "path": "assets/scenes/conversations/life-dinner-ingredients-3.webp",
+            "width": 397,
+            "height": 248,
+            "en": "Getting a small bag",
+            "ar": "شراء كيس صغير",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                793,
+                744,
+                1190,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bag of potatoes",
+              "ar": "كيس بطاطا",
+              "kind": "object",
+              "x": 36,
+              "y": 75
+            },
+            {
+              "en": "cooking oil",
+              "ar": "زيت طبخ",
+              "kind": "object",
+              "x": 85,
+              "y": 77
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Running out of salt",
+          "ar": "قرب نفاد الملح",
+          "purposeEn": "Say what is nearly finished and add it to the shopping list.",
+          "purposeAr": "اذكر ما أوشك على النفاد وأضفه إلى قائمة التسوق.",
+          "image": {
+            "id": "conv-life-dinner-ingredients-4",
+            "path": "assets/scenes/conversations/life-dinner-ingredients-4.webp",
+            "width": 396,
+            "height": 248,
+            "en": "Running out of salt",
+            "ar": "قرب نفاد الملح",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1190,
+                744,
+                1586,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "salt shaker",
+              "ar": "مملحة",
+              "kind": "object",
+              "x": 64,
+              "y": 62
+            },
+            {
+              "en": "nearly out of",
+              "ar": "أوشك أن ينفد",
+              "kind": "phrase",
+              "x": 66,
+              "y": 67
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

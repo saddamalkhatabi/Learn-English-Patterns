@@ -1,0 +1,742 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "3df8d8340c54f26c495220f1b7a2f4f919fd04bd60da912c75ec4d23df442854"
+  },
+  "conversations": [
+    {
+      "id": "after-work",
+      "goalAr": "صف ما تفعله عادة بعد العمل.",
+      "goalEn": "Describe what you do after work.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Leaving work",
+          "ar": "مغادرة العمل",
+          "purposeEn": "Ask what your companion does after work.",
+          "purposeAr": "اسأل رفيقك عما يفعله بعد العمل.",
+          "image": {
+            "id": "conv-life-after-work-1",
+            "path": "assets/scenes/conversations/life-after-work-1.webp",
+            "width": 397,
+            "height": 248,
+            "en": "Leaving work",
+            "ar": "مغادرة العمل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                0,
+                397,
+                248
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "office desk",
+              "ar": "مكتب",
+              "kind": "object",
+              "x": 18,
+              "y": 88
+            },
+            {
+              "en": "shoulder bag",
+              "ar": "حقيبة كتف",
+              "kind": "object",
+              "x": 83,
+              "y": 91
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Changing clothes",
+          "ar": "تبديل الملابس",
+          "purposeEn": "Describe going home and changing before going out again.",
+          "purposeAr": "صف العودة إلى المنزل وتبديل الملابس قبل الخروج مجددًا.",
+          "image": {
+            "id": "conv-life-after-work-2",
+            "path": "assets/scenes/conversations/life-after-work-2.webp",
+            "width": 396,
+            "height": 248,
+            "en": "Changing clothes",
+            "ar": "تبديل الملابس",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                397,
+                0,
+                793,
+                248
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "top",
+              "ar": "قطعة ملابس علوية",
+              "kind": "object",
+              "x": 51,
+              "y": 79
+            },
+            {
+              "en": "change clothes",
+              "ar": "يبدّل ملابسه",
+              "kind": "phrase",
+              "x": 46,
+              "y": 60
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Walking to the library",
+          "ar": "المشي إلى المكتبة",
+          "purposeEn": "Mention a routine and ask to join your companion.",
+          "purposeAr": "اذكر عادةً واسأل إن كان بإمكانك مرافقة رفيقك.",
+          "image": {
+            "id": "conv-life-after-work-3",
+            "path": "assets/scenes/conversations/life-after-work-3.webp",
+            "width": 396,
+            "height": 248,
+            "en": "Walking to the library",
+            "ar": "المشي إلى المكتبة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                793,
+                0,
+                1189,
+                248
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "library entrance",
+              "ar": "مدخل المكتبة",
+              "kind": "object",
+              "x": 90,
+              "y": 40
+            },
+            {
+              "en": "walk together",
+              "ar": "يمشيان معًا",
+              "kind": "phrase",
+              "x": 48,
+              "y": 75
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Meeting outside",
+          "ar": "اللقاء في الخارج",
+          "purposeEn": "Confirm the meeting place and time.",
+          "purposeAr": "أكّد مكان اللقاء ووقته.",
+          "image": {
+            "id": "conv-life-after-work-4",
+            "path": "assets/scenes/conversations/life-after-work-4.webp",
+            "width": 397,
+            "height": 248,
+            "en": "Meeting outside",
+            "ar": "اللقاء في الخارج",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1189,
+                0,
+                1586,
+                248
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "wristwatch",
+              "ar": "ساعة يد",
+              "kind": "object",
+              "x": 75,
+              "y": 75
+            },
+            {
+              "en": "outside the library",
+              "ar": "أمام المكتبة",
+              "kind": "phrase",
+              "x": 56,
+              "y": 61
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "weekend-sport",
+      "goalAr": "اسأل عن وقت الرياضة وتكرارها.",
+      "goalEn": "Ask when and how often someone exercises.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Weekend running",
+          "ar": "الجري في عطلة الأسبوع",
+          "purposeEn": "Ask when your friend goes running.",
+          "purposeAr": "اسأل صديقك متى يذهب للجري.",
+          "image": {
+            "id": "conv-life-weekend-sport-1",
+            "path": "assets/scenes/conversations/life-weekend-sport-1.webp",
+            "width": 397,
+            "height": 247,
+            "en": "Weekend running",
+            "ar": "الجري في عطلة الأسبوع",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                248,
+                397,
+                495
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "sports jacket",
+              "ar": "سترة رياضية",
+              "kind": "object",
+              "x": 80,
+              "y": 81
+            },
+            {
+              "en": "park path",
+              "ar": "ممرّ الحديقة",
+              "kind": "object",
+              "x": 53,
+              "y": 90
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Running early",
+          "ar": "الجري مبكرًا",
+          "purposeEn": "Describe exercising before breakfast.",
+          "purposeAr": "صف ممارسة الرياضة قبل الفطور.",
+          "image": {
+            "id": "conv-life-weekend-sport-2",
+            "path": "assets/scenes/conversations/life-weekend-sport-2.webp",
+            "width": 396,
+            "height": 247,
+            "en": "Running early",
+            "ar": "الجري مبكرًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                397,
+                248,
+                793,
+                495
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "jog",
+              "ar": "يهرول",
+              "kind": "action",
+              "x": 42,
+              "y": 68
+            },
+            {
+              "en": "early morning",
+              "ar": "الصباح الباكر",
+              "kind": "phrase",
+              "x": 15,
+              "y": 46
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Choosing a cooler time",
+          "ar": "اختيار وقت ألطف",
+          "purposeEn": "Explain why noon is unsuitable and suggest another time.",
+          "purposeAr": "اشرح لماذا لا يناسب الظهر واقترح وقتًا آخر.",
+          "image": {
+            "id": "conv-life-weekend-sport-3",
+            "path": "assets/scenes/conversations/life-weekend-sport-3.webp",
+            "width": 396,
+            "height": 247,
+            "en": "Choosing a cooler time",
+            "ar": "اختيار وقت ألطف",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                793,
+                248,
+                1189,
+                495
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "sunny",
+              "ar": "مشمس",
+              "kind": "description",
+              "x": 95,
+              "y": 8
+            },
+            {
+              "en": "thoughtful",
+              "ar": "متأملة",
+              "kind": "description",
+              "x": 86,
+              "y": 48
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Water for both",
+          "ar": "الماء لكليهما",
+          "purposeEn": "Accept the time and offer to bring water.",
+          "purposeAr": "وافق على الوقت واعرض إحضار الماء.",
+          "image": {
+            "id": "conv-life-weekend-sport-4",
+            "path": "assets/scenes/conversations/life-weekend-sport-4.webp",
+            "width": 397,
+            "height": 247,
+            "en": "Water for both",
+            "ar": "الماء لكليهما",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1189,
+                248,
+                1586,
+                495
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "water bottles",
+              "ar": "زجاجتا ماء",
+              "kind": "object",
+              "x": 37,
+              "y": 72
+            },
+            {
+              "en": "offer",
+              "ar": "يعرض",
+              "kind": "action",
+              "x": 57,
+              "y": 85
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "night-routine",
+      "goalAr": "حدّد مواعيد روتين المساء.",
+      "goalEn": "Talk through the timing of an evening routine.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Before bed",
+          "ar": "قبل النوم",
+          "purposeEn": "Ask about the usual evening routine.",
+          "purposeAr": "اسأل عن روتين المساء المعتاد.",
+          "image": {
+            "id": "conv-life-night-routine-1",
+            "path": "assets/scenes/conversations/life-night-routine-1.webp",
+            "width": 397,
+            "height": 248,
+            "en": "Before bed",
+            "ar": "قبل النوم",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                495,
+                397,
+                743
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bedside lamp",
+              "ar": "مصباح بجوار السرير",
+              "kind": "object",
+              "x": 62,
+              "y": 28
+            },
+            {
+              "en": "blanket",
+              "ar": "غطاء",
+              "kind": "object",
+              "x": 41,
+              "y": 90
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Setting the alarm",
+          "ar": "ضبط المنبّه",
+          "purposeEn": "Say what you do first and what you read afterward.",
+          "purposeAr": "اذكر ما تفعله أولًا وما تقرؤه بعد ذلك.",
+          "image": {
+            "id": "conv-life-night-routine-2",
+            "path": "assets/scenes/conversations/life-night-routine-2.webp",
+            "width": 396,
+            "height": 248,
+            "en": "Setting the alarm",
+            "ar": "ضبط المنبّه",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                397,
+                495,
+                793,
+                743
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "alarm app",
+              "ar": "تطبيق المنبّه",
+              "kind": "object",
+              "x": 16,
+              "y": 81
+            },
+            {
+              "en": "open book",
+              "ar": "كتاب مفتوح",
+              "kind": "object",
+              "x": 77,
+              "y": 77
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Turning in at nine",
+          "ar": "الذهاب إلى النوم في التاسعة",
+          "purposeEn": "Explain when you go to bed and ask about putting the phone away.",
+          "purposeAr": "اشرح متى تذهب إلى النوم واسأل عن إبعاد الهاتف.",
+          "image": {
+            "id": "conv-life-night-routine-3",
+            "path": "assets/scenes/conversations/life-night-routine-3.webp",
+            "width": 396,
+            "height": 248,
+            "en": "Turning in at nine",
+            "ar": "الذهاب إلى النوم في التاسعة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                793,
+                495,
+                1189,
+                743
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "alarm clock",
+              "ar": "ساعة منبّه",
+              "kind": "object",
+              "x": 22,
+              "y": 74
+            },
+            {
+              "en": "switch off",
+              "ar": "يطفئ",
+              "kind": "action",
+              "x": 27,
+              "y": 50
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Reading instead",
+          "ar": "القراءة بدل تصفح الهاتف",
+          "purposeEn": "Describe reading a little instead of checking messages.",
+          "purposeAr": "صف قراءة القليل بدلًا من تفقد الرسائل.",
+          "image": {
+            "id": "conv-life-night-routine-4",
+            "path": "assets/scenes/conversations/life-night-routine-4.webp",
+            "width": 397,
+            "height": 248,
+            "en": "Reading instead",
+            "ar": "القراءة بدل تصفح الهاتف",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1189,
+                495,
+                1586,
+                743
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "read",
+              "ar": "يقرأ",
+              "kind": "action",
+              "x": 69,
+              "y": 62
+            },
+            {
+              "en": "phone on the table",
+              "ar": "هاتف على الطاولة",
+              "kind": "phrase",
+              "x": 21,
+              "y": 84
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "breakfast-choices",
+      "goalAr": "اذكر ما تحب وما لا تحب ثم اختر وجبة.",
+      "goalEn": "Say what you like and dislike, then choose a meal.",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Eggs or oatmeal",
+          "ar": "البيض أم الشوفان",
+          "purposeEn": "Offer a choice of two breakfast dishes.",
+          "purposeAr": "اعرض خيارين للفطور.",
+          "image": {
+            "id": "conv-life-breakfast-choices-1",
+            "path": "assets/scenes/conversations/life-breakfast-choices-1.webp",
+            "width": 397,
+            "height": 249,
+            "en": "Eggs or oatmeal",
+            "ar": "البيض أم الشوفان",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                743,
+                397,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "fried eggs",
+              "ar": "بيض مقلي",
+              "kind": "object",
+              "x": 28,
+              "y": 75
+            },
+            {
+              "en": "oatmeal",
+              "ar": "شوفان",
+              "kind": "object",
+              "x": 61,
+              "y": 74
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Stating a preference",
+          "ar": "ذكر التفضيل",
+          "purposeEn": "Say what you like and ask about fruit.",
+          "purposeAr": "اذكر ما تحب واسأل عن الفاكهة.",
+          "image": {
+            "id": "conv-life-breakfast-choices-2",
+            "path": "assets/scenes/conversations/life-breakfast-choices-2.webp",
+            "width": 396,
+            "height": 249,
+            "en": "Stating a preference",
+            "ar": "ذكر التفضيل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                397,
+                743,
+                793,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "fruit bowl",
+              "ar": "وعاء فاكهة",
+              "kind": "object",
+              "x": 89,
+              "y": 87
+            },
+            {
+              "en": "thumbs up",
+              "ar": "إشارة إعجاب",
+              "kind": "phrase",
+              "x": 35,
+              "y": 62
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Fruit and yoghurt",
+          "ar": "فاكهة وزبادي",
+          "purposeEn": "Accept the fruit and offer yoghurt too.",
+          "purposeAr": "وافق على الفاكهة واعرض الزبادي أيضًا.",
+          "image": {
+            "id": "conv-life-breakfast-choices-3",
+            "path": "assets/scenes/conversations/life-breakfast-choices-3.webp",
+            "width": 396,
+            "height": 249,
+            "en": "Fruit and yoghurt",
+            "ar": "فاكهة وزبادي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                793,
+                743,
+                1189,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "apple",
+              "ar": "تفاحة",
+              "kind": "object",
+              "x": 41,
+              "y": 46
+            },
+            {
+              "en": "yoghurt",
+              "ar": "زبادي",
+              "kind": "object",
+              "x": 69,
+              "y": 70
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "A little yoghurt",
+          "ar": "قليل من الزبادي",
+          "purposeEn": "Say how much yoghurt you would like.",
+          "purposeAr": "اذكر كمية الزبادي التي ترغب فيها.",
+          "image": {
+            "id": "conv-life-breakfast-choices-4",
+            "path": "assets/scenes/conversations/life-breakfast-choices-4.webp",
+            "width": 397,
+            "height": 249,
+            "en": "A little yoghurt",
+            "ar": "قليل من الزبادي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1189,
+                743,
+                1586,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "spoon",
+              "ar": "ملعقة",
+              "kind": "object",
+              "x": 48,
+              "y": 42
+            },
+            {
+              "en": "plain yoghurt",
+              "ar": "زبادي سادة",
+              "kind": "object",
+              "x": 56,
+              "y": 68
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

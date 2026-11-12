@@ -1,0 +1,742 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "0236238bd4525c54ce758bb7df0b2b77e03e913886ec30c286be98dbd4363a7a"
+  },
+  "conversations": [
+    {
+      "id": "l2-001",
+      "goalAr": "التعبير بلغة جديدة",
+      "goalEn": "Finding the right words",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "After a language class",
+          "ar": "بعد حصة اللغة",
+          "purposeEn": "Ask how the first conversation class went.",
+          "purposeAr": "اسأل كيف جرت حصة المحادثة الأولى.",
+          "image": {
+            "id": "conv-life-l2-001-1",
+            "path": "assets/scenes/conversations/life-l2-001-1.webp",
+            "width": 397,
+            "height": 247,
+            "en": "After a language class",
+            "ar": "بعد حصة اللغة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                0,
+                397,
+                247
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "notebook",
+              "ar": "دفتر",
+              "kind": "object",
+              "x": 45,
+              "y": 90
+            },
+            {
+              "en": "cup and saucer",
+              "ar": "فنجان وصحن",
+              "kind": "object",
+              "x": 12,
+              "y": 87
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Trying a voice note",
+          "ar": "محاولة تسجيل رسالة صوتية",
+          "purposeEn": "Explain a speaking difficulty and start with a short voice note.",
+          "purposeAr": "اشرح صعوبة التعبير وابدأ برسالة صوتية قصيرة.",
+          "image": {
+            "id": "conv-life-l2-001-2",
+            "path": "assets/scenes/conversations/life-l2-001-2.webp",
+            "width": 395,
+            "height": 247,
+            "en": "Trying a voice note",
+            "ar": "محاولة تسجيل رسالة صوتية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                397,
+                0,
+                792,
+                247
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "voice note",
+              "ar": "رسالة صوتية",
+              "kind": "object",
+              "x": 64,
+              "y": 64
+            },
+            {
+              "en": "hesitant",
+              "ar": "متردّدة",
+              "kind": "description",
+              "x": 58,
+              "y": 33
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Describing a missing word",
+          "ar": "وصف شيء عند نسيان اسمه",
+          "purposeEn": "Describe the object when you cannot remember its name.",
+          "purposeAr": "صف الشيء حين لا تتذكر اسمه.",
+          "image": {
+            "id": "conv-life-l2-001-3",
+            "path": "assets/scenes/conversations/life-l2-001-3.webp",
+            "width": 397,
+            "height": 247,
+            "en": "Describing a missing word",
+            "ar": "وصف شيء عند نسيان اسمه",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                792,
+                0,
+                1189,
+                247
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "market stall",
+              "ar": "بسطة سوق",
+              "kind": "object",
+              "x": 14,
+              "y": 53
+            },
+            {
+              "en": "shoulder strap",
+              "ar": "حزام كتف",
+              "kind": "object",
+              "x": 76,
+              "y": 62
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "A reusable cloth bag",
+          "ar": "حقيبة قماشية قابلة لإعادة الاستخدام",
+          "purposeEn": "Say what the bag is made of and how you use it again.",
+          "purposeAr": "اذكر ممّ صُنعت الحقيبة وكيف تستخدمها مجددًا.",
+          "image": {
+            "id": "conv-life-l2-001-4",
+            "path": "assets/scenes/conversations/life-l2-001-4.webp",
+            "width": 397,
+            "height": 247,
+            "en": "A reusable cloth bag",
+            "ar": "حقيبة قماشية قابلة لإعادة الاستخدام",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1189,
+                0,
+                1586,
+                247
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "cloth bag",
+              "ar": "حقيبة قماشية",
+              "kind": "object",
+              "x": 69,
+              "y": 71
+            },
+            {
+              "en": "reusable",
+              "ar": "قابل لإعادة الاستخدام",
+              "kind": "description",
+              "x": 73,
+              "y": 86
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-002",
+      "goalAr": "ما الذي سأقوله أولًا؟",
+      "goalEn": "Choosing your opening words",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Too much noise",
+          "ar": "ضوضاء مزعجة",
+          "purposeEn": "Describe a noise you can no longer tolerate.",
+          "purposeAr": "صف ضوضاء لم تعد تستطيع تحمّلها.",
+          "image": {
+            "id": "conv-life-l2-002-1",
+            "path": "assets/scenes/conversations/life-l2-002-1.webp",
+            "width": 397,
+            "height": 248,
+            "en": "Too much noise",
+            "ar": "ضوضاء مزعجة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                247,
+                397,
+                495
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "cover your ears",
+              "ar": "يغطّي أذنيه",
+              "kind": "phrase",
+              "x": 36,
+              "y": 43
+            },
+            {
+              "en": "annoyed",
+              "ar": "منزعجة",
+              "kind": "description",
+              "x": 37,
+              "y": 34
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Starting politely",
+          "ar": "افتتاح الكلام بأدب",
+          "purposeEn": "Ask whether it is a good time and explain what you hear.",
+          "purposeAr": "اسأل هل الوقت مناسب ثم وضّح ما تسمعه.",
+          "image": {
+            "id": "conv-life-l2-002-2",
+            "path": "assets/scenes/conversations/life-l2-002-2.webp",
+            "width": 395,
+            "height": 248,
+            "en": "Starting politely",
+            "ar": "افتتاح الكلام بأدب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                397,
+                247,
+                792,
+                495
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "explain",
+              "ar": "يوضّح",
+              "kind": "action",
+              "x": 67,
+              "y": 57
+            },
+            {
+              "en": "sofa",
+              "ar": "أريكة",
+              "kind": "object",
+              "x": 47,
+              "y": 60
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "When it happened",
+          "ar": "متى حدث ذلك",
+          "purposeEn": "Say when the noise occurred and how long it lasted.",
+          "purposeAr": "اذكر متى حدثت الضوضاء وكم استمرت.",
+          "image": {
+            "id": "conv-life-l2-002-3",
+            "path": "assets/scenes/conversations/life-l2-002-3.webp",
+            "width": 397,
+            "height": 248,
+            "en": "When it happened",
+            "ar": "متى حدث ذلك",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                792,
+                247,
+                1189,
+                495
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "wristwatch",
+              "ar": "ساعة يد",
+              "kind": "object",
+              "x": 89,
+              "y": 67
+            },
+            {
+              "en": "duration",
+              "ar": "مدة",
+              "kind": "object",
+              "x": 78,
+              "y": 66
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Writing the times down",
+          "ar": "تدوين الأوقات",
+          "purposeEn": "Record the times before making the call.",
+          "purposeAr": "دوّن الأوقات قبل إجراء المكالمة.",
+          "image": {
+            "id": "conv-life-l2-002-4",
+            "path": "assets/scenes/conversations/life-l2-002-4.webp",
+            "width": 397,
+            "height": 248,
+            "en": "Writing the times down",
+            "ar": "تدوين الأوقات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1189,
+                247,
+                1586,
+                495
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "write down",
+              "ar": "يدوّن",
+              "kind": "phrase",
+              "x": 53,
+              "y": 80
+            },
+            {
+              "en": "phone on the table",
+              "ar": "هاتف على الطاولة",
+              "kind": "phrase",
+              "x": 80,
+              "y": 89
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-003",
+      "goalAr": "الاعتذار عن الكتاب المفقود",
+      "goalEn": "Apologising for a lost book",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Checking for a lost book",
+          "ar": "السؤال عن كتاب مفقود",
+          "purposeEn": "Ask whether someone found the book you lent.",
+          "purposeAr": "اسأل هل عثر الشخص على الكتاب الذي أعرته.",
+          "image": {
+            "id": "conv-life-l2-003-1",
+            "path": "assets/scenes/conversations/life-l2-003-1.webp",
+            "width": 397,
+            "height": 249,
+            "en": "Checking for a lost book",
+            "ar": "السؤال عن كتاب مفقود",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                495,
+                397,
+                744
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "library entrance",
+              "ar": "مدخل المكتبة",
+              "kind": "object",
+              "x": 64,
+              "y": 50
+            },
+            {
+              "en": "questioning look",
+              "ar": "نظرة استفهام",
+              "kind": "phrase",
+              "x": 35,
+              "y": 33
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Apologising and offering help",
+          "ar": "الاعتذار وعرض المساعدة",
+          "purposeEn": "Apologise and ask where the book was last seen.",
+          "purposeAr": "اعتذر واسأل أين شوهد الكتاب آخر مرة.",
+          "image": {
+            "id": "conv-life-l2-003-2",
+            "path": "assets/scenes/conversations/life-l2-003-2.webp",
+            "width": 395,
+            "height": 249,
+            "en": "Apologising and offering help",
+            "ar": "الاعتذار وعرض المساعدة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                397,
+                495,
+                792,
+                744
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "apologetic",
+              "ar": "معتذرة",
+              "kind": "description",
+              "x": 65,
+              "y": 27
+            },
+            {
+              "en": "look together",
+              "ar": "يبحثان معًا",
+              "kind": "phrase",
+              "x": 62,
+              "y": 73
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "A bench near the door",
+          "ar": "مقعد قرب الباب",
+          "purposeEn": "Describe the last place you remember having the book.",
+          "purposeAr": "صف آخر مكان تتذكر أن الكتاب كان معك فيه.",
+          "image": {
+            "id": "conv-life-l2-003-3",
+            "path": "assets/scenes/conversations/life-l2-003-3.webp",
+            "width": 397,
+            "height": 249,
+            "en": "A bench near the door",
+            "ar": "مقعد قرب الباب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                792,
+                495,
+                1189,
+                744
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bench",
+              "ar": "مقعد طويل",
+              "kind": "object",
+              "x": 80,
+              "y": 66
+            },
+            {
+              "en": "near the door",
+              "ar": "قرب الباب",
+              "kind": "phrase",
+              "x": 66,
+              "y": 57
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "The blue cover",
+          "ar": "الغلاف الأزرق",
+          "purposeEn": "Describe the cover so the library staff can identify the book.",
+          "purposeAr": "صف الغلاف كي يتعرّف موظف المكتبة إلى الكتاب.",
+          "image": {
+            "id": "conv-life-l2-003-4",
+            "path": "assets/scenes/conversations/life-l2-003-4.webp",
+            "width": 397,
+            "height": 249,
+            "en": "The blue cover",
+            "ar": "الغلاف الأزرق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1189,
+                495,
+                1586,
+                744
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "blue cover",
+              "ar": "غلاف أزرق",
+              "kind": "object",
+              "x": 47,
+              "y": 53
+            },
+            {
+              "en": "bookshelf",
+              "ar": "رف كتب",
+              "kind": "object",
+              "x": 76,
+              "y": 24
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-004",
+      "goalAr": "أول سكن مستقل",
+      "goalEn": "Living on your own",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Cooking for yourself",
+          "ar": "الطهي لنفسك",
+          "purposeEn": "Ask when someone started cooking for themselves.",
+          "purposeAr": "اسأل متى بدأ الشخص يطهو لنفسه.",
+          "image": {
+            "id": "conv-life-l2-004-1",
+            "path": "assets/scenes/conversations/life-l2-004-1.webp",
+            "width": 397,
+            "height": 248,
+            "en": "Cooking for yourself",
+            "ar": "الطهي لنفسك",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                0,
+                744,
+                397,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "fresh vegetables",
+              "ar": "خضار طازجة",
+              "kind": "object",
+              "x": 48,
+              "y": 87
+            },
+            {
+              "en": "mixing bowl",
+              "ar": "وعاء خلط",
+              "kind": "object",
+              "x": 31,
+              "y": 89
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Living alone",
+          "ar": "السكن بمفردك",
+          "purposeEn": "Explain when you began living alone and mention your first dish.",
+          "purposeAr": "اشرح متى بدأت السكن بمفردك واذكر أول طبق.",
+          "image": {
+            "id": "conv-life-l2-004-2",
+            "path": "assets/scenes/conversations/life-l2-004-2.webp",
+            "width": 395,
+            "height": 248,
+            "en": "Living alone",
+            "ar": "السكن بمفردك",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                397,
+                744,
+                792,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "house keys",
+              "ar": "مفاتيح المنزل",
+              "kind": "object",
+              "x": 57,
+              "y": 91
+            },
+            {
+              "en": "moving box",
+              "ar": "صندوق نقل",
+              "kind": "object",
+              "x": 73,
+              "y": 72
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "An easy lentil soup",
+          "ar": "حساء عدس سهل",
+          "purposeEn": "Give a reason for choosing an inexpensive, easy dish.",
+          "purposeAr": "اذكر سبب اختيار طبق سهل وقليل التكلفة.",
+          "image": {
+            "id": "conv-life-l2-004-3",
+            "path": "assets/scenes/conversations/life-l2-004-3.webp",
+            "width": 397,
+            "height": 248,
+            "en": "An easy lentil soup",
+            "ar": "حساء عدس سهل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                792,
+                744,
+                1189,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ladle",
+              "ar": "مغرفة",
+              "kind": "object",
+              "x": 30,
+              "y": 61
+            },
+            {
+              "en": "lentils",
+              "ar": "عدس",
+              "kind": "object",
+              "x": 77,
+              "y": 87
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Freezing half",
+          "ar": "تجميد نصف الكمية",
+          "purposeEn": "Explain how you save half for another day.",
+          "purposeAr": "اشرح كيف تحفظ النصف ليوم آخر.",
+          "image": {
+            "id": "conv-life-l2-004-4",
+            "path": "assets/scenes/conversations/life-l2-004-4.webp",
+            "width": 397,
+            "height": 248,
+            "en": "Freezing half",
+            "ar": "تجميد نصف الكمية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1189,
+                744,
+                1586,
+                992
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "freezer",
+              "ar": "مجمّد",
+              "kind": "object",
+              "x": 29,
+              "y": 46
+            },
+            {
+              "en": "food container",
+              "ar": "علبة طعام",
+              "kind": "object",
+              "x": 35,
+              "y": 72
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
