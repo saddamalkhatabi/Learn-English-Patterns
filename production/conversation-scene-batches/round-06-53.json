@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "6b268810c340b5fb1d3b0917bdd6ee0f80c5f86f93d2568d1ae4121a7ea6f4db"
+  },
+  "conversations": [
+    {
+      "id": "l2-169",
+      "goalAr": "إبلاغ موعد اجتماع",
+      "goalEn": "Passing on a question about a meeting",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Check why someone called during lunch",
+          "ar": "تحقّق من سبب اتصال الشخص وقت الغداء",
+          "purposeEn": "Check why someone called during lunch.",
+          "purposeAr": "تحقّق من سبب اتصال الشخص وقت الغداء.",
+          "image": {
+            "id": "conv-life-l2-169-1",
+            "path": "assets/scenes/conversations/life-l2-169-1.webp",
+            "width": 389,
+            "height": 256,
+            "en": "Check why someone called during lunch",
+            "ar": "تحقّق من سبب اتصال الشخص وقت الغداء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                392,
+                259
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "missed call symbol",
+              "ar": "رمز مكالمة فائتة",
+              "kind": "object",
+              "x": 42,
+              "y": 64
+            },
+            {
+              "en": "lunch plate",
+              "ar": "طبق الغداء",
+              "kind": "object",
+              "x": 57,
+              "y": 88
+            },
+            {
+              "en": "check a missed call",
+              "ar": "يتفقّد مكالمة فائتة",
+              "kind": "phrase",
+              "x": 43,
+              "y": 67
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Share the start time and meeting link",
+          "ar": "أرسل وقت البداية ورابط الاجتماع",
+          "purposeEn": "Share the start time and meeting link.",
+          "purposeAr": "أرسل وقت البداية ورابط الاجتماع.",
+          "image": {
+            "id": "conv-life-l2-169-2",
+            "path": "assets/scenes/conversations/life-l2-169-2.webp",
+            "width": 393,
+            "height": 256,
+            "en": "Share the start time and meeting link",
+            "ar": "أرسل وقت البداية ورابط الاجتماع",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                398,
+                3,
+                791,
+                259
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "wall clock",
+              "ar": "ساعة حائط",
+              "kind": "object",
+              "x": 61,
+              "y": 23
+            },
+            {
+              "en": "link icon",
+              "ar": "رمز رابط",
+              "kind": "object",
+              "x": 53,
+              "y": 71
+            },
+            {
+              "en": "send the meeting link",
+              "ar": "يرسل رابط الاجتماع",
+              "kind": "phrase",
+              "x": 48,
+              "y": 54
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Point out the second item on the agenda",
+          "ar": "أشِر إلى البند الثاني في جدول الأعمال",
+          "purposeEn": "Point out the second item on the agenda.",
+          "purposeAr": "أشِر إلى البند الثاني في جدول الأعمال.",
+          "image": {
+            "id": "conv-life-l2-169-3",
+            "path": "assets/scenes/conversations/life-l2-169-3.webp",
+            "width": 391,
+            "height": 256,
+            "en": "Point out the second item on the agenda",
+            "ar": "أشِر إلى البند الثاني في جدول الأعمال",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                3,
+                1188,
+                259
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "meeting agenda",
+              "ar": "جدول أعمال الاجتماع",
+              "kind": "object",
+              "x": 70,
+              "y": 70
+            },
+            {
+              "en": "second item",
+              "ar": "البند الثاني",
+              "kind": "object",
+              "x": 62,
+              "y": 74
+            },
+            {
+              "en": "look at the second item",
+              "ar": "انظر إلى البند الثاني",
+              "kind": "phrase",
+              "x": 55,
+              "y": 75
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Tell them they can reply beforehand",
+          "ar": "أخبرهم بأن بإمكانهم الرد مسبقًا",
+          "purposeEn": "Tell them they can reply beforehand.",
+          "purposeAr": "أخبرهم بأن بإمكانهم الرد مسبقًا.",
+          "image": {
+            "id": "conv-life-l2-169-4",
+            "path": "assets/scenes/conversations/life-l2-169-4.webp",
+            "width": 389,
+            "height": 256,
+            "en": "Tell them they can reply beforehand",
+            "ar": "أخبرهم بأن بإمكانهم الرد مسبقًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1194,
+                3,
+                1583,
+                259
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "laptop",
+              "ar": "حاسوب محمول",
+              "kind": "object",
+              "x": 70,
+              "y": 78
+            },
+            {
+              "en": "keyboard",
+              "ar": "لوحة مفاتيح",
+              "kind": "object",
+              "x": 59,
+              "y": 93
+            },
+            {
+              "en": "reply before the meeting",
+              "ar": "يردّ قبل الاجتماع",
+              "kind": "phrase",
+              "x": 53,
+              "y": 87
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-170",
+      "goalAr": "أفضل موسم للزيارة",
+      "goalEn": "Choosing the best time to visit",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Compare two seasons for the visit",
+          "ar": "قارن بين موسمين للزيارة",
+          "purposeEn": "Compare two seasons for the visit.",
+          "purposeAr": "قارن بين موسمين للزيارة.",
+          "image": {
+            "id": "conv-life-l2-170-1",
+            "path": "assets/scenes/conversations/life-l2-170-1.webp",
+            "width": 389,
+            "height": 232,
+            "en": "Compare two seasons for the visit",
+            "ar": "قارن بين موسمين للزيارة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                265,
+                392,
+                497
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "spring blossoms",
+              "ar": "أزهار الربيع",
+              "kind": "object",
+              "x": 33,
+              "y": 70
+            },
+            {
+              "en": "summer photograph",
+              "ar": "صورة في الصيف",
+              "kind": "object",
+              "x": 72,
+              "y": 70
+            },
+            {
+              "en": "choose the best time to visit",
+              "ar": "يختار أفضل وقت للزيارة",
+              "kind": "phrase",
+              "x": 52,
+              "y": 61
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Keep the dates you picked",
+          "ar": "أبقِ على التواريخ التي اخترتها",
+          "purposeEn": "Keep the dates you picked.",
+          "purposeAr": "أبقِ على التواريخ التي اخترتها.",
+          "image": {
+            "id": "conv-life-l2-170-2",
+            "path": "assets/scenes/conversations/life-l2-170-2.webp",
+            "width": 393,
+            "height": 232,
+            "en": "Keep the dates you picked",
+            "ar": "أبقِ على التواريخ التي اخترتها",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                398,
+                265,
+                791,
+                497
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "desk calendar",
+              "ar": "تقويم مكتبي",
+              "kind": "object",
+              "x": 60,
+              "y": 71
+            },
+            {
+              "en": "circled dates",
+              "ar": "تواريخ محدّدة بدوائر",
+              "kind": "object",
+              "x": 54,
+              "y": 62
+            },
+            {
+              "en": "keep the dates we picked",
+              "ar": "يُبقي على التواريخ التي اخترناها",
+              "kind": "phrase",
+              "x": 41,
+              "y": 72
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Choose what to visit first",
+          "ar": "اختر ما ستزوره أولًا",
+          "purposeEn": "Choose what to visit first.",
+          "purposeAr": "اختر ما ستزوره أولًا.",
+          "image": {
+            "id": "conv-life-l2-170-3",
+            "path": "assets/scenes/conversations/life-l2-170-3.webp",
+            "width": 391,
+            "height": 232,
+            "en": "Choose what to visit first",
+            "ar": "اختر ما ستزوره أولًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                265,
+                1188,
+                497
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "market symbol",
+              "ar": "رمز سوق",
+              "kind": "object",
+              "x": 36,
+              "y": 85
+            },
+            {
+              "en": "museum symbol",
+              "ar": "رمز متحف",
+              "kind": "object",
+              "x": 75,
+              "y": 84
+            },
+            {
+              "en": "visit the market first",
+              "ar": "يزور السوق أولًا",
+              "kind": "phrase",
+              "x": 55,
+              "y": 77
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Book the museum for another day",
+          "ar": "احجز زيارة المتحف ليوم آخر",
+          "purposeEn": "Book the museum for another day.",
+          "purposeAr": "احجز زيارة المتحف ليوم آخر.",
+          "image": {
+            "id": "conv-life-l2-170-4",
+            "path": "assets/scenes/conversations/life-l2-170-4.webp",
+            "width": 389,
+            "height": 232,
+            "en": "Book the museum for another day",
+            "ar": "احجز زيارة المتحف ليوم آخر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1194,
+                265,
+                1583,
+                497
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "phone screen",
+              "ar": "شاشة الهاتف",
+              "kind": "object",
+              "x": 63,
+              "y": 70
+            },
+            {
+              "en": "confirmation checkmark",
+              "ar": "علامة تأكيد",
+              "kind": "object",
+              "x": 61,
+              "y": 81
+            },
+            {
+              "en": "book a museum visit",
+              "ar": "يحجز زيارة إلى المتحف",
+              "kind": "phrase",
+              "x": 57,
+              "y": 73
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-171",
+      "goalAr": "تغيّر عادة الأكل خارج البيت",
+      "goalEn": "Talking about a habit that changed",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Explain why you bring lunch to work",
+          "ar": "اشرح سبب إحضار الغداء إلى العمل",
+          "purposeEn": "Explain why you bring lunch to work.",
+          "purposeAr": "اشرح سبب إحضار الغداء إلى العمل.",
+          "image": {
+            "id": "conv-life-l2-171-1",
+            "path": "assets/scenes/conversations/life-l2-171-1.webp",
+            "width": 389,
+            "height": 235,
+            "en": "Explain why you bring lunch to work",
+            "ar": "اشرح سبب إحضار الغداء إلى العمل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                503,
+                392,
+                738
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "lunchbox",
+              "ar": "علبة غداء",
+              "kind": "object",
+              "x": 64,
+              "y": 63
+            },
+            {
+              "en": "lunchbox clip",
+              "ar": "مشبك علبة الغداء",
+              "kind": "object",
+              "x": 61,
+              "y": 61
+            },
+            {
+              "en": "bring lunch to work",
+              "ar": "يحضر الغداء إلى العمل",
+              "kind": "phrase",
+              "x": 54,
+              "y": 67
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Exchange affordable lunch ideas",
+          "ar": "تبادل أفكارًا لغداء قليل التكلفة",
+          "purposeEn": "Exchange affordable lunch ideas.",
+          "purposeAr": "تبادل أفكارًا لغداء قليل التكلفة.",
+          "image": {
+            "id": "conv-life-l2-171-2",
+            "path": "assets/scenes/conversations/life-l2-171-2.webp",
+            "width": 393,
+            "height": 235,
+            "en": "Exchange affordable lunch ideas",
+            "ar": "تبادل أفكارًا لغداء قليل التكلفة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                398,
+                503,
+                791,
+                738
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "recipe photo",
+              "ar": "صورة وصفة",
+              "kind": "object",
+              "x": 39,
+              "y": 64
+            },
+            {
+              "en": "recipe card",
+              "ar": "بطاقة وصفة",
+              "kind": "object",
+              "x": 67,
+              "y": 67
+            },
+            {
+              "en": "swap simple lunch recipes",
+              "ar": "يتبادل وصفات غداء بسيطة",
+              "kind": "phrase",
+              "x": 55,
+              "y": 66
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Show how you pack the rice salad",
+          "ar": "بيّن كيف تعبّئ سلطة الأرز",
+          "purposeEn": "Show how you pack the rice salad.",
+          "purposeAr": "بيّن كيف تعبّئ سلطة الأرز.",
+          "image": {
+            "id": "conv-life-l2-171-3",
+            "path": "assets/scenes/conversations/life-l2-171-3.webp",
+            "width": 391,
+            "height": 235,
+            "en": "Show how you pack the rice salad",
+            "ar": "بيّن كيف تعبّئ سلطة الأرز",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                503,
+                1188,
+                738
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "rice salad",
+              "ar": "سلطة أرز",
+              "kind": "object",
+              "x": 55,
+              "y": 74
+            },
+            {
+              "en": "lunchbox lid",
+              "ar": "غطاء علبة الغداء",
+              "kind": "object",
+              "x": 50,
+              "y": 57
+            },
+            {
+              "en": "pack a rice salad",
+              "ar": "يعبّئ سلطة أرز",
+              "kind": "phrase",
+              "x": 57,
+              "y": 80
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Add the dressing just before eating",
+          "ar": "أضف التتبيلة قبل الأكل مباشرة",
+          "purposeEn": "Add the dressing just before eating.",
+          "purposeAr": "أضف التتبيلة قبل الأكل مباشرة.",
+          "image": {
+            "id": "conv-life-l2-171-4",
+            "path": "assets/scenes/conversations/life-l2-171-4.webp",
+            "width": 389,
+            "height": 235,
+            "en": "Add the dressing just before eating",
+            "ar": "أضف التتبيلة قبل الأكل مباشرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1194,
+                503,
+                1583,
+                738
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "dressing jar",
+              "ar": "مرطبان تتبيلة",
+              "kind": "object",
+              "x": 47,
+              "y": 51
+            },
+            {
+              "en": "salad dressing",
+              "ar": "تتبيلة السلطة",
+              "kind": "object",
+              "x": 60,
+              "y": 77
+            },
+            {
+              "en": "add the dressing just before eating",
+              "ar": "يضيف التتبيلة قبل الأكل مباشرة",
+              "kind": "phrase",
+              "x": 53,
+              "y": 65
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-172",
+      "goalAr": "البحث عن مكان يصلح للحديث",
+      "goalEn": "Moving a conversation somewhere quieter",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Describe why the café did not work",
+          "ar": "اشرح لماذا لم يكن المقهى مناسبًا",
+          "purposeEn": "Describe why the café did not work.",
+          "purposeAr": "اشرح لماذا لم يكن المقهى مناسبًا.",
+          "image": {
+            "id": "conv-life-l2-172-1",
+            "path": "assets/scenes/conversations/life-l2-172-1.webp",
+            "width": 389,
+            "height": 245,
+            "en": "Describe why the café did not work",
+            "ar": "اشرح لماذا لم يكن المقهى مناسبًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                744,
+                392,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "coffee cup",
+              "ar": "فنجان قهوة",
+              "kind": "object",
+              "x": 48,
+              "y": 85
+            },
+            {
+              "en": "crowded café",
+              "ar": "مقهى مزدحم",
+              "kind": "object",
+              "x": 57,
+              "y": 29
+            },
+            {
+              "en": "it was too noisy to talk",
+              "ar": "كان الضجيج شديدًا فلم نستطع التحدّث",
+              "kind": "phrase",
+              "x": 35,
+              "y": 57
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Look for a quieter meeting room",
+          "ar": "ابحث عن غرفة اجتماع أهدأ",
+          "purposeEn": "Look for a quieter meeting room.",
+          "purposeAr": "ابحث عن غرفة اجتماع أهدأ.",
+          "image": {
+            "id": "conv-life-l2-172-2",
+            "path": "assets/scenes/conversations/life-l2-172-2.webp",
+            "width": 393,
+            "height": 245,
+            "en": "Look for a quieter meeting room",
+            "ar": "ابحث عن غرفة اجتماع أهدأ",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                398,
+                744,
+                791,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "meeting table",
+              "ar": "طاولة اجتماع",
+              "kind": "object",
+              "x": 65,
+              "y": 71
+            },
+            {
+              "en": "bookshelves",
+              "ar": "رفوف كتب",
+              "kind": "object",
+              "x": 49,
+              "y": 37
+            },
+            {
+              "en": "try the library meeting room",
+              "ar": "يجرّب غرفة الاجتماع في المكتبة",
+              "kind": "phrase",
+              "x": 55,
+              "y": 62
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Check for the same booking time next week",
+          "ar": "تحقّق من توفّر وقت الحجز نفسه الأسبوع المقبل",
+          "purposeEn": "Check for the same booking time next week.",
+          "purposeAr": "تحقّق من توفّر وقت الحجز نفسه الأسبوع المقبل.",
+          "image": {
+            "id": "conv-life-l2-172-3",
+            "path": "assets/scenes/conversations/life-l2-172-3.webp",
+            "width": 391,
+            "height": 245,
+            "en": "Check for the same booking time next week",
+            "ar": "تحقّق من توفّر وقت الحجز نفسه الأسبوع المقبل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                744,
+                1188,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "booking planner",
+              "ar": "مخطّط حجوزات",
+              "kind": "object",
+              "x": 51,
+              "y": 80
+            },
+            {
+              "en": "available time slot",
+              "ar": "موعد متاح",
+              "kind": "object",
+              "x": 46,
+              "y": 80
+            },
+            {
+              "en": "book it for the same time next week",
+              "ar": "يحجزه في الوقت نفسه الأسبوع المقبل",
+              "kind": "phrase",
+              "x": 43,
+              "y": 80
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Choose an earlier slot if needed",
+          "ar": "اختر موعدًا أبكر عند الحاجة",
+          "purposeEn": "Choose an earlier slot if needed.",
+          "purposeAr": "اختر موعدًا أبكر عند الحاجة.",
+          "image": {
+            "id": "conv-life-l2-172-4",
+            "path": "assets/scenes/conversations/life-l2-172-4.webp",
+            "width": 389,
+            "height": 245,
+            "en": "Choose an earlier slot if needed",
+            "ar": "اختر موعدًا أبكر عند الحاجة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1194,
+                744,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "highlighted time slot",
+              "ar": "موعد مميّز باللون",
+              "kind": "object",
+              "x": 47,
+              "y": 76
+            },
+            {
+              "en": "ring binding",
+              "ar": "تجليد حلقي",
+              "kind": "object",
+              "x": 57,
+              "y": 82
+            },
+            {
+              "en": "meet earlier if it is taken",
+              "ar": "يلتقيان في وقت أبكر إذا كان الموعد محجوزًا",
+              "kind": "phrase",
+              "x": 43,
+              "y": 74
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
