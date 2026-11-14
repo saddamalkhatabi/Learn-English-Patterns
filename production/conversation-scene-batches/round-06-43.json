@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "041b962b0a1b5c331f8d257360fdb6562478d9082040f49628019abea7c15e85"
+  },
+  "conversations": [
+    {
+      "id": "l2-129",
+      "goalAr": "بدء الاجتماع بخبر جيد",
+      "goalEn": "Opening a meeting on a positive note",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Start with the good news",
+          "ar": "ابدأ بالخبر السار",
+          "purposeEn": "Start with the good news.",
+          "purposeAr": "ابدأ بالخبر السار.",
+          "image": {
+            "id": "conv-life-l2-129-1",
+            "path": "assets/scenes/conversations/life-l2-129-1.webp",
+            "width": 392,
+            "height": 256,
+            "en": "Start with the good news",
+            "ar": "ابدأ بالخبر السار",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                395,
+                259
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "laptop",
+              "ar": "حاسوب محمول",
+              "kind": "object",
+              "x": 44,
+              "y": 87
+            },
+            {
+              "en": "raised finger",
+              "ar": "إصبع مرفوع",
+              "kind": "object",
+              "x": 41,
+              "y": 53
+            },
+            {
+              "en": "start with the good news",
+              "ar": "يبدأ بالخبر السار",
+              "kind": "phrase",
+              "x": 45,
+              "y": 50
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Explain what has been approved",
+          "ar": "اشرح ما تمّت الموافقة عليه",
+          "purposeEn": "Explain what has been approved.",
+          "purposeAr": "اشرح ما تمّت الموافقة عليه.",
+          "image": {
+            "id": "conv-life-l2-129-2",
+            "path": "assets/scenes/conversations/life-l2-129-2.webp",
+            "width": 390,
+            "height": 256,
+            "en": "Explain what has been approved",
+            "ar": "اشرح ما تمّت الموافقة عليه",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                401,
+                3,
+                791,
+                259
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "blue folder",
+              "ar": "ملف أزرق",
+              "kind": "object",
+              "x": 28,
+              "y": 76
+            },
+            {
+              "en": "yellow folder",
+              "ar": "ملف أصفر",
+              "kind": "object",
+              "x": 48,
+              "y": 74
+            },
+            {
+              "en": "announce a timetable update",
+              "ar": "يعلن تحديث الجدول",
+              "kind": "phrase",
+              "x": 47,
+              "y": 58
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Confirm when the timetable takes effect",
+          "ar": "أكّد متى يبدأ العمل بالجدول",
+          "purposeEn": "Confirm when the timetable takes effect.",
+          "purposeAr": "أكّد متى يبدأ العمل بالجدول.",
+          "image": {
+            "id": "conv-life-l2-129-3",
+            "path": "assets/scenes/conversations/life-l2-129-3.webp",
+            "width": 390,
+            "height": 256,
+            "en": "Confirm when the timetable takes effect",
+            "ar": "أكّد متى يبدأ العمل بالجدول",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                3,
+                1187,
+                259
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "approval checkmark",
+              "ar": "علامة موافقة",
+              "kind": "object",
+              "x": 61,
+              "y": 74
+            },
+            {
+              "en": "timetable grid",
+              "ar": "شبكة الجدول",
+              "kind": "object",
+              "x": 52,
+              "y": 57
+            },
+            {
+              "en": "put the timetable into effect",
+              "ar": "يبدأ العمل بالجدول",
+              "kind": "phrase",
+              "x": 43,
+              "y": 64
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Draft a note about changed shifts",
+          "ar": "اكتب مسوّدة عن نوبات العمل التي تغيّرت",
+          "purposeEn": "Draft a note about changed shifts.",
+          "purposeAr": "اكتب مسوّدة عن نوبات العمل التي تغيّرت.",
+          "image": {
+            "id": "conv-life-l2-129-4",
+            "path": "assets/scenes/conversations/life-l2-129-4.webp",
+            "width": 390,
+            "height": 256,
+            "en": "Draft a note about changed shifts",
+            "ar": "اكتب مسوّدة عن نوبات العمل التي تغيّرت",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                3,
+                1583,
+                259
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "blue pen",
+              "ar": "قلم أزرق",
+              "kind": "object",
+              "x": 42,
+              "y": 81
+            },
+            {
+              "en": "highlighted rows",
+              "ar": "صفوف مميّزة باللون",
+              "kind": "object",
+              "x": 45,
+              "y": 90
+            },
+            {
+              "en": "highlight the shifts that changed",
+              "ar": "يميّز نوبات العمل التي تغيّرت",
+              "kind": "phrase",
+              "x": 38,
+              "y": 86
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-130",
+      "goalAr": "تباين الرأي على خطة",
+      "goalEn": "Disagreeing respectfully on a plan",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Propose sharing the new form with everyone",
+          "ar": "اقترح مشاركة الاستمارة الجديدة مع الجميع",
+          "purposeEn": "Propose sharing the new form with everyone.",
+          "purposeAr": "اقترح مشاركة الاستمارة الجديدة مع الجميع.",
+          "image": {
+            "id": "conv-life-l2-130-1",
+            "path": "assets/scenes/conversations/life-l2-130-1.webp",
+            "width": 392,
+            "height": 226,
+            "en": "Propose sharing the new form with everyone",
+            "ar": "اقترح مشاركة الاستمارة الجديدة مع الجميع",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                265,
+                395,
+                491
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "stack of forms",
+              "ar": "رزمة استمارات",
+              "kind": "object",
+              "x": 53,
+              "y": 70
+            },
+            {
+              "en": "printed sheet",
+              "ar": "ورقة مطبوعة",
+              "kind": "object",
+              "x": 56,
+              "y": 67
+            },
+            {
+              "en": "send the form to everyone",
+              "ar": "يرسل الاستمارة إلى الجميع",
+              "kind": "phrase",
+              "x": 50,
+              "y": 79
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Offer a one-team trial instead",
+          "ar": "اقترح تجربتها مع فريق واحد",
+          "purposeEn": "Offer a one-team trial instead.",
+          "purposeAr": "اقترح تجربتها مع فريق واحد.",
+          "image": {
+            "id": "conv-life-l2-130-2",
+            "path": "assets/scenes/conversations/life-l2-130-2.webp",
+            "width": 390,
+            "height": 226,
+            "en": "Offer a one-team trial instead",
+            "ar": "اقترح تجربتها مع فريق واحد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                401,
+                265,
+                791,
+                491
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "check boxes",
+              "ar": "خانات اختيار",
+              "kind": "object",
+              "x": 58,
+              "y": 81
+            },
+            {
+              "en": "new form",
+              "ar": "استمارة جديدة",
+              "kind": "object",
+              "x": 61,
+              "y": 69
+            },
+            {
+              "en": "test it with one team first",
+              "ar": "يجرّبها مع فريق واحد أولًا",
+              "kind": "phrase",
+              "x": 52,
+              "y": 71
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Estimate the extra work involved",
+          "ar": "قدّر العمل الإضافي المطلوب",
+          "purposeEn": "Estimate the extra work involved.",
+          "purposeAr": "قدّر العمل الإضافي المطلوب.",
+          "image": {
+            "id": "conv-life-l2-130-3",
+            "path": "assets/scenes/conversations/life-l2-130-3.webp",
+            "width": 390,
+            "height": 226,
+            "en": "Estimate the extra work involved",
+            "ar": "قدّر العمل الإضافي المطلوب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                265,
+                1187,
+                491
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "trial form",
+              "ar": "استمارة تجريبية",
+              "kind": "object",
+              "x": 51,
+              "y": 64
+            },
+            {
+              "en": "written responses",
+              "ar": "إجابات مكتوبة",
+              "kind": "object",
+              "x": 30,
+              "y": 90
+            },
+            {
+              "en": "see how much extra work it creates",
+              "ar": "يتحقّق من مقدار العمل الإضافي",
+              "kind": "phrase",
+              "x": 55,
+              "y": 59
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Choose a quiet day for the trial",
+          "ar": "اختر يومًا هادئًا للتجربة",
+          "purposeEn": "Choose a quiet day for the trial.",
+          "purposeAr": "اختر يومًا هادئًا للتجربة.",
+          "image": {
+            "id": "conv-life-l2-130-4",
+            "path": "assets/scenes/conversations/life-l2-130-4.webp",
+            "width": 390,
+            "height": 226,
+            "en": "Choose a quiet day for the trial",
+            "ar": "اختر يومًا هادئًا للتجربة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                265,
+                1583,
+                491
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "desk calendar",
+              "ar": "تقويم مكتبي",
+              "kind": "object",
+              "x": 54,
+              "y": 71
+            },
+            {
+              "en": "green date marker",
+              "ar": "علامة تاريخ خضراء",
+              "kind": "object",
+              "x": 62,
+              "y": 78
+            },
+            {
+              "en": "choose a quiet day to test it",
+              "ar": "يختار يومًا هادئًا لتجربتها",
+              "kind": "phrase",
+              "x": 70,
+              "y": 72
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-131",
+      "goalAr": "من دفع الفاتورة؟",
+      "goalEn": "Clearing up who paid",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Clarify who paid the bill",
+          "ar": "وضّح من دفع الحساب",
+          "purposeEn": "Clarify who paid the bill.",
+          "purposeAr": "وضّح من دفع الحساب.",
+          "image": {
+            "id": "conv-life-l2-131-1",
+            "path": "assets/scenes/conversations/life-l2-131-1.webp",
+            "width": 392,
+            "height": 232,
+            "en": "Clarify who paid the bill",
+            "ar": "وضّح من دفع الحساب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                497,
+                395,
+                729
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "restaurant bill",
+              "ar": "فاتورة المطعم",
+              "kind": "object",
+              "x": 34,
+              "y": 68
+            },
+            {
+              "en": "bank card",
+              "ar": "بطاقة مصرفية",
+              "kind": "object",
+              "x": 55,
+              "y": 59
+            },
+            {
+              "en": "pay the whole bill",
+              "ar": "يدفع الحساب كاملًا",
+              "kind": "phrase",
+              "x": 37,
+              "y": 67
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Agree to repay your share",
+          "ar": "اتّفق على ردّ حصّتك",
+          "purposeEn": "Agree to repay your share.",
+          "purposeAr": "اتّفق على ردّ حصّتك.",
+          "image": {
+            "id": "conv-life-l2-131-2",
+            "path": "assets/scenes/conversations/life-l2-131-2.webp",
+            "width": 390,
+            "height": 232,
+            "en": "Agree to repay your share",
+            "ar": "اتّفق على ردّ حصّتك",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                401,
+                497,
+                791,
+                729
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "payment app",
+              "ar": "تطبيق دفع",
+              "kind": "object",
+              "x": 64,
+              "y": 61
+            },
+            {
+              "en": "card icon",
+              "ar": "رمز بطاقة",
+              "kind": "object",
+              "x": 64,
+              "y": 73
+            },
+            {
+              "en": "send you my share",
+              "ar": "أرسل إليك حصّتي",
+              "kind": "phrase",
+              "x": 69,
+              "y": 74
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Exclude an item you did not order",
+          "ar": "استبعد ما لم تطلبه من الحساب",
+          "purposeEn": "Exclude an item you did not order.",
+          "purposeAr": "استبعد ما لم تطلبه من الحساب.",
+          "image": {
+            "id": "conv-life-l2-131-3",
+            "path": "assets/scenes/conversations/life-l2-131-3.webp",
+            "width": 390,
+            "height": 232,
+            "en": "Exclude an item you did not order",
+            "ar": "استبعد ما لم تطلبه من الحساب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                497,
+                1187,
+                729
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "glass of tea",
+              "ar": "كأس شاي",
+              "kind": "object",
+              "x": 18,
+              "y": 77
+            },
+            {
+              "en": "highlighted charge",
+              "ar": "بند مميّز في الفاتورة",
+              "kind": "object",
+              "x": 54,
+              "y": 84
+            },
+            {
+              "en": "leave out the tea",
+              "ar": "يستثني الشاي من الحساب",
+              "kind": "phrase",
+              "x": 52,
+              "y": 74
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Share the marked receipt",
+          "ar": "أرسل الإيصال المعلّم",
+          "purposeEn": "Share the marked receipt.",
+          "purposeAr": "أرسل الإيصال المعلّم.",
+          "image": {
+            "id": "conv-life-l2-131-4",
+            "path": "assets/scenes/conversations/life-l2-131-4.webp",
+            "width": 390,
+            "height": 232,
+            "en": "Share the marked receipt",
+            "ar": "أرسل الإيصال المعلّم",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                497,
+                1583,
+                729
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "receipt photo",
+              "ar": "صورة الإيصال",
+              "kind": "object",
+              "x": 48,
+              "y": 54
+            },
+            {
+              "en": "marked amount",
+              "ar": "مبلغ محدّد",
+              "kind": "object",
+              "x": 51,
+              "y": 57
+            },
+            {
+              "en": "send a photo of the receipt",
+              "ar": "يرسل صورة الإيصال",
+              "kind": "phrase",
+              "x": 61,
+              "y": 65
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-132",
+      "goalAr": "تأكّد من الإغلاق",
+      "goalEn": "Checking before leaving the kitchen",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Finish washing up before leaving",
+          "ar": "أكمل غسل الأواني قبل المغادرة",
+          "purposeEn": "Finish washing up before leaving.",
+          "purposeAr": "أكمل غسل الأواني قبل المغادرة.",
+          "image": {
+            "id": "conv-life-l2-132-1",
+            "path": "assets/scenes/conversations/life-l2-132-1.webp",
+            "width": 392,
+            "height": 254,
+            "en": "Finish washing up before leaving",
+            "ar": "أكمل غسل الأواني قبل المغادرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                735,
+                395,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "frying pan",
+              "ar": "مقلاة",
+              "kind": "object",
+              "x": 49,
+              "y": 79
+            },
+            {
+              "en": "sponge",
+              "ar": "إسفنجة",
+              "kind": "object",
+              "x": 44,
+              "y": 90
+            },
+            {
+              "en": "wash the last pan",
+              "ar": "يغسل المقلاة الأخيرة",
+              "kind": "phrase",
+              "x": 42,
+              "y": 87
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Check that the gas is off",
+          "ar": "تحقّق من إغلاق الغاز",
+          "purposeEn": "Check that the gas is off.",
+          "purposeAr": "تحقّق من إغلاق الغاز.",
+          "image": {
+            "id": "conv-life-l2-132-2",
+            "path": "assets/scenes/conversations/life-l2-132-2.webp",
+            "width": 390,
+            "height": 254,
+            "en": "Check that the gas is off",
+            "ar": "تحقّق من إغلاق الغاز",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                401,
+                735,
+                791,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "gas hob",
+              "ar": "سطح موقد غاز",
+              "kind": "object",
+              "x": 52,
+              "y": 62
+            },
+            {
+              "en": "burner knob",
+              "ar": "مفتاح شعلة",
+              "kind": "object",
+              "x": 59,
+              "y": 84
+            },
+            {
+              "en": "make sure the gas is off",
+              "ar": "يتأكّد من إغلاق الغاز",
+              "kind": "phrase",
+              "x": 53,
+              "y": 83
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Close the window once the steam clears",
+          "ar": "أغلق النافذة بعد زوال البخار",
+          "purposeEn": "Close the window once the steam clears.",
+          "purposeAr": "أغلق النافذة بعد زوال البخار.",
+          "image": {
+            "id": "conv-life-l2-132-3",
+            "path": "assets/scenes/conversations/life-l2-132-3.webp",
+            "width": 390,
+            "height": 254,
+            "en": "Close the window once the steam clears",
+            "ar": "أغلق النافذة بعد زوال البخار",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                735,
+                1187,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "window frame",
+              "ar": "إطار النافذة",
+              "kind": "object",
+              "x": 73,
+              "y": 47
+            },
+            {
+              "en": "window latch",
+              "ar": "مزلاج النافذة",
+              "kind": "object",
+              "x": 77,
+              "y": 35
+            },
+            {
+              "en": "close the kitchen window",
+              "ar": "يغلق نافذة المطبخ",
+              "kind": "phrase",
+              "x": 78,
+              "y": 51
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Check the back door before leaving",
+          "ar": "تحقّق من قفل الباب الخلفي قبل المغادرة",
+          "purposeEn": "Check the back door before leaving.",
+          "purposeAr": "تحقّق من قفل الباب الخلفي قبل المغادرة.",
+          "image": {
+            "id": "conv-life-l2-132-4",
+            "path": "assets/scenes/conversations/life-l2-132-4.webp",
+            "width": 390,
+            "height": 254,
+            "en": "Check the back door before leaving",
+            "ar": "تحقّق من قفل الباب الخلفي قبل المغادرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                735,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "door handle",
+              "ar": "مقبض الباب",
+              "kind": "object",
+              "x": 55,
+              "y": 71
+            },
+            {
+              "en": "keyhole",
+              "ar": "ثقب المفتاح",
+              "kind": "object",
+              "x": 55,
+              "y": 83
+            },
+            {
+              "en": "check that the back door is locked",
+              "ar": "يتحقّق من قفل الباب الخلفي",
+              "kind": "phrase",
+              "x": 47,
+              "y": 84
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

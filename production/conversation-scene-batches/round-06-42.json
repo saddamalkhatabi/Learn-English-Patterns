@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "28bcb9cb574953d57092efd9436e85b7244e6cc7cbc090fafb98cd9ef974143e"
+  },
+  "conversations": [
+    {
+      "id": "l2-125",
+      "goalAr": "هل أفعل ذلك بالطريقة الصحيحة؟",
+      "goalEn": "Checking your technique",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Fold along the dotted line",
+          "ar": "اطوِ الورقة على الخط المنقّط",
+          "purposeEn": "Fold along the dotted line.",
+          "purposeAr": "اطوِ الورقة على الخط المنقّط.",
+          "image": {
+            "id": "conv-life-l2-125-1",
+            "path": "assets/scenes/conversations/life-l2-125-1.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Fold along the dotted line",
+            "ar": "اطوِ الورقة على الخط المنقّط",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                394,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "dotted line",
+              "ar": "خطّ منقّط",
+              "kind": "object",
+              "x": 48,
+              "y": 58
+            },
+            {
+              "en": "scissors",
+              "ar": "مقص",
+              "kind": "object",
+              "x": 77,
+              "y": 89
+            },
+            {
+              "en": "fold along the dotted line",
+              "ar": "يطوي الورقة على الخطّ المنقّط",
+              "kind": "phrase",
+              "x": 45,
+              "y": 58
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Line up the two corners",
+          "ar": "حاذِ زاويتَي الورقة",
+          "purposeEn": "Line up the two corners.",
+          "purposeAr": "حاذِ زاويتَي الورقة.",
+          "image": {
+            "id": "conv-life-l2-125-2",
+            "path": "assets/scenes/conversations/life-l2-125-2.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Line up the two corners",
+            "ar": "حاذِ زاويتَي الورقة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                3,
+                789,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "paper corner",
+              "ar": "زاوية الورقة",
+              "kind": "object",
+              "x": 52,
+              "y": 80
+            },
+            {
+              "en": "paper edge",
+              "ar": "حافّة الورقة",
+              "kind": "object",
+              "x": 53,
+              "y": 87
+            },
+            {
+              "en": "line up the corners",
+              "ar": "يحاذي الزوايا",
+              "kind": "phrase",
+              "x": 48,
+              "y": 77
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Press from the middle out",
+          "ar": "اضغط من الوسط نحو الخارج",
+          "purposeEn": "Press from the middle out.",
+          "purposeAr": "اضغط من الوسط نحو الخارج.",
+          "image": {
+            "id": "conv-life-l2-125-3",
+            "path": "assets/scenes/conversations/life-l2-125-3.webp",
+            "width": 392,
+            "height": 241,
+            "en": "Press from the middle out",
+            "ar": "اضغط من الوسط نحو الخارج",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                3,
+                1187,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "crease",
+              "ar": "ثنية",
+              "kind": "object",
+              "x": 43,
+              "y": 88
+            },
+            {
+              "en": "glue stick",
+              "ar": "قلم صمغ",
+              "kind": "object",
+              "x": 92,
+              "y": 87
+            },
+            {
+              "en": "press down the fold",
+              "ar": "يضغط على موضع الثني",
+              "kind": "phrase",
+              "x": 47,
+              "y": 83
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Repeat on a second sheet",
+          "ar": "كرّر على ورقة ثانية",
+          "purposeEn": "Repeat on a second sheet.",
+          "purposeAr": "كرّر على ورقة ثانية.",
+          "image": {
+            "id": "conv-life-l2-125-4",
+            "path": "assets/scenes/conversations/life-l2-125-4.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Repeat on a second sheet",
+            "ar": "كرّر على ورقة ثانية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                3,
+                1583,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "folded sheet",
+              "ar": "ورقة مطويّة",
+              "kind": "object",
+              "x": 67,
+              "y": 86
+            },
+            {
+              "en": "sheet of paper",
+              "ar": "ورقة",
+              "kind": "object",
+              "x": 36,
+              "y": 86
+            },
+            {
+              "en": "use the same method",
+              "ar": "يستخدم الطريقة نفسها",
+              "kind": "phrase",
+              "x": 43,
+              "y": 81
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-126",
+      "goalAr": "روتين يوم السبت",
+      "goalEn": "Talking about your Saturday morning",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Compare weekday and weekend wake-up times",
+          "ar": "قارن مواعيد الاستيقاظ في أيام العمل والعطلة",
+          "purposeEn": "Compare weekday and weekend wake-up times.",
+          "purposeAr": "قارن مواعيد الاستيقاظ في أيام العمل والعطلة.",
+          "image": {
+            "id": "conv-life-l2-126-1",
+            "path": "assets/scenes/conversations/life-l2-126-1.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Compare weekday and weekend wake-up times",
+            "ar": "قارن مواعيد الاستيقاظ في أيام العمل والعطلة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                250,
+                394,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "clock face",
+              "ar": "وجه الساعة",
+              "kind": "object",
+              "x": 34,
+              "y": 72
+            },
+            {
+              "en": "hour hand",
+              "ar": "عقرب الساعات",
+              "kind": "object",
+              "x": 69,
+              "y": 71
+            },
+            {
+              "en": "get up at around eight",
+              "ar": "يستيقظ قرابة الثامنة",
+              "kind": "phrase",
+              "x": 57,
+              "y": 64
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Agree on a time for breakfast",
+          "ar": "اتّفق على موعد الإفطار",
+          "purposeEn": "Agree on a time for breakfast.",
+          "purposeAr": "اتّفق على موعد الإفطار.",
+          "image": {
+            "id": "conv-life-l2-126-2",
+            "path": "assets/scenes/conversations/life-l2-126-2.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Agree on a time for breakfast",
+            "ar": "اتّفق على موعد الإفطار",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                250,
+                789,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "wall clock",
+              "ar": "ساعة حائط",
+              "kind": "object",
+              "x": 59,
+              "y": 34
+            },
+            {
+              "en": "breakfast plate",
+              "ar": "طبق إفطار",
+              "kind": "object",
+              "x": 76,
+              "y": 86
+            },
+            {
+              "en": "have breakfast at nine",
+              "ar": "يتناول الإفطار في التاسعة",
+              "kind": "phrase",
+              "x": 71,
+              "y": 76
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Visit the market before it is busy",
+          "ar": "اذهب إلى السوق قبل الازدحام",
+          "purposeEn": "Visit the market before it is busy.",
+          "purposeAr": "اذهب إلى السوق قبل الازدحام.",
+          "image": {
+            "id": "conv-life-l2-126-3",
+            "path": "assets/scenes/conversations/life-l2-126-3.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Visit the market before it is busy",
+            "ar": "اذهب إلى السوق قبل الازدحام",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                250,
+                1187,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "basket of tomatoes",
+              "ar": "سلّة طماطم",
+              "kind": "object",
+              "x": 33,
+              "y": 69
+            },
+            {
+              "en": "green apples",
+              "ar": "تفّاح أخضر",
+              "kind": "object",
+              "x": 74,
+              "y": 68
+            },
+            {
+              "en": "stop at the market",
+              "ar": "يمرّ بالسوق",
+              "kind": "phrase",
+              "x": 46,
+              "y": 47
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Bring a reusable bag",
+          "ar": "أحضر كيسًا قابلًا لإعادة الاستخدام",
+          "purposeEn": "Bring a reusable bag.",
+          "purposeAr": "أحضر كيسًا قابلًا لإعادة الاستخدام.",
+          "image": {
+            "id": "conv-life-l2-126-4",
+            "path": "assets/scenes/conversations/life-l2-126-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Bring a reusable bag",
+            "ar": "أحضر كيسًا قابلًا لإعادة الاستخدام",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                250,
+                1583,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "cloth shopping bag",
+              "ar": "كيس تسوّق قماشي",
+              "kind": "object",
+              "x": 52,
+              "y": 80
+            },
+            {
+              "en": "leafy greens",
+              "ar": "خضراوات ورقيّة",
+              "kind": "object",
+              "x": 68,
+              "y": 44
+            },
+            {
+              "en": "take your own shopping bag",
+              "ar": "خذ كيس التسوّق الخاص بك",
+              "kind": "phrase",
+              "x": 48,
+              "y": 54
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-127",
+      "goalAr": "مقارنة جهازين قبل الشراء",
+      "goalEn": "Choosing between two devices",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Compare the two tablets",
+          "ar": "قارن الجهازين اللوحيين",
+          "purposeEn": "Compare the two tablets.",
+          "purposeAr": "قارن الجهازين اللوحيين.",
+          "image": {
+            "id": "conv-life-l2-127-1",
+            "path": "assets/scenes/conversations/life-l2-127-1.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Compare the two tablets",
+            "ar": "قارن الجهازين اللوحيين",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                498,
+                394,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "small tablet",
+              "ar": "جهاز لوحي صغير",
+              "kind": "object",
+              "x": 27,
+              "y": 69
+            },
+            {
+              "en": "large tablet",
+              "ar": "جهاز لوحي كبير",
+              "kind": "object",
+              "x": 49,
+              "y": 62
+            },
+            {
+              "en": "compare sizes",
+              "ar": "يقارن الأحجام",
+              "kind": "phrase",
+              "x": 44,
+              "y": 70
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Consider how often you will carry it",
+          "ar": "فكّر في عدد مرّات حمل الجهاز",
+          "purposeEn": "Consider how often you will carry it.",
+          "purposeAr": "فكّر في عدد مرّات حمل الجهاز.",
+          "image": {
+            "id": "conv-life-l2-127-2",
+            "path": "assets/scenes/conversations/life-l2-127-2.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Consider how often you will carry it",
+            "ar": "فكّر في عدد مرّات حمل الجهاز",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                498,
+                789,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "tablet",
+              "ar": "جهاز لوحي",
+              "kind": "object",
+              "x": 42,
+              "y": 54
+            },
+            {
+              "en": "carrying sleeve",
+              "ar": "جراب للحمل",
+              "kind": "object",
+              "x": 57,
+              "y": 73
+            },
+            {
+              "en": "choose the lighter one",
+              "ar": "يختار الأخفّ",
+              "kind": "phrase",
+              "x": 52,
+              "y": 68
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Ask how long the battery lasts",
+          "ar": "اسأل كم تدوم البطارية",
+          "purposeEn": "Ask how long the battery lasts.",
+          "purposeAr": "اسأل كم تدوم البطارية.",
+          "image": {
+            "id": "conv-life-l2-127-3",
+            "path": "assets/scenes/conversations/life-l2-127-3.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Ask how long the battery lasts",
+            "ar": "اسأل كم تدوم البطارية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                498,
+                1187,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "battery icon",
+              "ar": "رمز البطارية",
+              "kind": "object",
+              "x": 37,
+              "y": 75
+            },
+            {
+              "en": "large screen",
+              "ar": "شاشة كبيرة",
+              "kind": "object",
+              "x": 63,
+              "y": 75
+            },
+            {
+              "en": "last all day without charging",
+              "ar": "يدوم طوال اليوم دون شحن",
+              "kind": "phrase",
+              "x": 76,
+              "y": 73
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Choose a device for work away from a socket",
+          "ar": "اختر جهازًا للعمل بعيدًا عن المقبس",
+          "purposeEn": "Choose a device for work away from a socket.",
+          "purposeAr": "اختر جهازًا للعمل بعيدًا عن المقبس.",
+          "image": {
+            "id": "conv-life-l2-127-4",
+            "path": "assets/scenes/conversations/life-l2-127-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Choose a device for work away from a socket",
+            "ar": "اختر جهازًا للعمل بعيدًا عن المقبس",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                498,
+                1583,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "large tablet",
+              "ar": "جهاز لوحي كبير",
+              "kind": "object",
+              "x": 43,
+              "y": 69
+            },
+            {
+              "en": "power adapter",
+              "ar": "محوّل طاقة",
+              "kind": "object",
+              "x": 72,
+              "y": 85
+            },
+            {
+              "en": "work without a power socket",
+              "ar": "يعمل دون مقبس كهرباء",
+              "kind": "phrase",
+              "x": 82,
+              "y": 88
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-128",
+      "goalAr": "مغادرة لقاء بأدب",
+      "goalEn": "Suggesting it's time to leave",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Check how long remains before the bus",
+          "ar": "تحقّق من الوقت المتبقّي قبل الحافلة",
+          "purposeEn": "Check how long remains before the bus.",
+          "purposeAr": "تحقّق من الوقت المتبقّي قبل الحافلة.",
+          "image": {
+            "id": "conv-life-l2-128-1",
+            "path": "assets/scenes/conversations/life-l2-128-1.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Check how long remains before the bus",
+            "ar": "تحقّق من الوقت المتبقّي قبل الحافلة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                746,
+                394,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "analog clock",
+              "ar": "ساعة بعقارب",
+              "kind": "object",
+              "x": 74,
+              "y": 62
+            },
+            {
+              "en": "water jug",
+              "ar": "إبريق ماء",
+              "kind": "object",
+              "x": 49,
+              "y": 89
+            },
+            {
+              "en": "check how much time is left",
+              "ar": "يتحقّق من الوقت المتبقّي",
+              "kind": "phrase",
+              "x": 70,
+              "y": 80
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Thank the host before leaving",
+          "ar": "اشكر المضيف قبل المغادرة",
+          "purposeEn": "Thank the host before leaving.",
+          "purposeAr": "اشكر المضيف قبل المغادرة.",
+          "image": {
+            "id": "conv-life-l2-128-2",
+            "path": "assets/scenes/conversations/life-l2-128-2.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Thank the host before leaving",
+            "ar": "اشكر المضيف قبل المغادرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                746,
+                789,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "front doorway",
+              "ar": "مدخل البيت",
+              "kind": "object",
+              "x": 40,
+              "y": 53
+            },
+            {
+              "en": "backpack",
+              "ar": "حقيبة ظهر",
+              "kind": "object",
+              "x": 22,
+              "y": 67
+            },
+            {
+              "en": "thank your host",
+              "ar": "يشكر مضيفه",
+              "kind": "phrase",
+              "x": 46,
+              "y": 84
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Offer to clear the table",
+          "ar": "اعرض المساعدة في رفع الأطباق",
+          "purposeEn": "Offer to clear the table.",
+          "purposeAr": "اعرض المساعدة في رفع الأطباق.",
+          "image": {
+            "id": "conv-life-l2-128-3",
+            "path": "assets/scenes/conversations/life-l2-128-3.webp",
+            "width": 392,
+            "height": 243,
+            "en": "Offer to clear the table",
+            "ar": "اعرض المساعدة في رفع الأطباق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                746,
+                1187,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "stack of plates",
+              "ar": "رزمة أطباق",
+              "kind": "object",
+              "x": 61,
+              "y": 73
+            },
+            {
+              "en": "kitchen sink",
+              "ar": "حوض المطبخ",
+              "kind": "object",
+              "x": 82,
+              "y": 76
+            },
+            {
+              "en": "clear the table",
+              "ar": "يرفع الأطباق عن المائدة",
+              "kind": "phrase",
+              "x": 61,
+              "y": 77
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Agree where to meet before heading out",
+          "ar": "اتّفق على مكان الالتقاء قبل الخروج",
+          "purposeEn": "Agree where to meet before heading out.",
+          "purposeAr": "اتّفق على مكان الالتقاء قبل الخروج.",
+          "image": {
+            "id": "conv-life-l2-128-4",
+            "path": "assets/scenes/conversations/life-l2-128-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Agree where to meet before heading out",
+            "ar": "اتّفق على مكان الالتقاء قبل الخروج",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                746,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "travel bag",
+              "ar": "حقيبة سفر",
+              "kind": "object",
+              "x": 79,
+              "y": 85
+            },
+            {
+              "en": "coat",
+              "ar": "معطف",
+              "kind": "object",
+              "x": 32,
+              "y": 63
+            },
+            {
+              "en": "meet by the front door",
+              "ar": "يلتقي عند الباب الأمامي",
+              "kind": "phrase",
+              "x": 51,
+              "y": 55
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

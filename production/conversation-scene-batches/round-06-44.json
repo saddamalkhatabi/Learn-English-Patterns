@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "ea933626e484cb0db11ad706332f0e5bca818fd001887af901d99569ba0e3b3d"
+  },
+  "conversations": [
+    {
+      "id": "l2-133",
+      "goalAr": "أول يوم في بوسطن",
+      "goalEn": "Getting oriented in a new city",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Start with a map in a new city",
+          "ar": "ابدأ بالخريطة في مدينة جديدة",
+          "purposeEn": "Start with a map in a new city.",
+          "purposeAr": "ابدأ بالخريطة في مدينة جديدة.",
+          "image": {
+            "id": "conv-life-l2-133-1",
+            "path": "assets/scenes/conversations/life-l2-133-1.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Start with a map in a new city",
+            "ar": "ابدأ بالخريطة في مدينة جديدة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                392,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "city map",
+              "ar": "خريطة المدينة",
+              "kind": "object",
+              "x": 56,
+              "y": 55
+            },
+            {
+              "en": "rolling suitcase",
+              "ar": "حقيبة سفر بعجلات",
+              "kind": "object",
+              "x": 23,
+              "y": 90
+            },
+            {
+              "en": "get your bearings",
+              "ar": "يتعرّف إلى المكان من حوله",
+              "kind": "phrase",
+              "x": 45,
+              "y": 56
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Mark the hotel and bus stop",
+          "ar": "حدّد الفندق وموقف الحافلة",
+          "purposeEn": "Mark the hotel and bus stop.",
+          "purposeAr": "حدّد الفندق وموقف الحافلة.",
+          "image": {
+            "id": "conv-life-l2-133-2",
+            "path": "assets/scenes/conversations/life-l2-133-2.webp",
+            "width": 388,
+            "height": 241,
+            "en": "Mark the hotel and bus stop",
+            "ar": "حدّد الفندق وموقف الحافلة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                401,
+                3,
+                789,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "hotel symbol",
+              "ar": "رمز فندق",
+              "kind": "object",
+              "x": 29,
+              "y": 32
+            },
+            {
+              "en": "bus stop symbol",
+              "ar": "رمز موقف حافلة",
+              "kind": "object",
+              "x": 62,
+              "y": 64
+            },
+            {
+              "en": "mark the nearest bus stop",
+              "ar": "يحدّد أقرب موقف حافلة",
+              "kind": "phrase",
+              "x": 64,
+              "y": 49
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Explain where the stop is relative to the hotel",
+          "ar": "اشرح أين يقع الموقف بالنسبة للفندق",
+          "purposeEn": "Explain where the stop is relative to the hotel.",
+          "purposeAr": "اشرح أين يقع الموقف بالنسبة للفندق.",
+          "image": {
+            "id": "conv-life-l2-133-3",
+            "path": "assets/scenes/conversations/life-l2-133-3.webp",
+            "width": 388,
+            "height": 241,
+            "en": "Explain where the stop is relative to the hotel",
+            "ar": "اشرح أين يقع الموقف بالنسبة للفندق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                3,
+                1185,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "hotel marker",
+              "ar": "علامة الفندق",
+              "kind": "object",
+              "x": 46,
+              "y": 61
+            },
+            {
+              "en": "bus stop marker",
+              "ar": "علامة موقف الحافلة",
+              "kind": "object",
+              "x": 61,
+              "y": 81
+            },
+            {
+              "en": "across from the hotel",
+              "ar": "في الجهة المقابلة للفندق",
+              "kind": "phrase",
+              "x": 56,
+              "y": 79
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Keep a photo of the map for later",
+          "ar": "احتفظ بصورة للخريطة لاستخدامها لاحقًا",
+          "purposeEn": "Keep a photo of the map for later.",
+          "purposeAr": "احتفظ بصورة للخريطة لاستخدامها لاحقًا.",
+          "image": {
+            "id": "conv-life-l2-133-4",
+            "path": "assets/scenes/conversations/life-l2-133-4.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Keep a photo of the map for later",
+            "ar": "احتفظ بصورة للخريطة لاستخدامها لاحقًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1194,
+                3,
+                1583,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "phone camera",
+              "ar": "كاميرا الهاتف",
+              "kind": "object",
+              "x": 48,
+              "y": 53
+            },
+            {
+              "en": "shutter button",
+              "ar": "زرّ التقاط الصورة",
+              "kind": "object",
+              "x": 67,
+              "y": 46
+            },
+            {
+              "en": "save a photo of the map",
+              "ar": "يحفظ صورة للخريطة",
+              "kind": "phrase",
+              "x": 51,
+              "y": 68
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-134",
+      "goalAr": "الإعجاب بطبق منزلي",
+      "goalEn": "Complimenting a homemade dish",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "React to a new rice recipe",
+          "ar": "عبّر عن رأيك في وصفة الأرز الجديدة",
+          "purposeEn": "React to a new rice recipe.",
+          "purposeAr": "عبّر عن رأيك في وصفة الأرز الجديدة.",
+          "image": {
+            "id": "conv-life-l2-134-1",
+            "path": "assets/scenes/conversations/life-l2-134-1.webp",
+            "width": 389,
+            "height": 241,
+            "en": "React to a new rice recipe",
+            "ar": "عبّر عن رأيك في وصفة الأرز الجديدة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                251,
+                392,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bowl of rice",
+              "ar": "وعاء أرز",
+              "kind": "object",
+              "x": 49,
+              "y": 76
+            },
+            {
+              "en": "ceramic serving bowl",
+              "ar": "وعاء تقديم خزفي",
+              "kind": "object",
+              "x": 45,
+              "y": 87
+            },
+            {
+              "en": "try a new recipe",
+              "ar": "يجرّب وصفة جديدة",
+              "kind": "phrase",
+              "x": 49,
+              "y": 67
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Name the added ingredients",
+          "ar": "اذكر المكوّنات المضافة",
+          "purposeEn": "Name the added ingredients.",
+          "purposeAr": "اذكر المكوّنات المضافة.",
+          "image": {
+            "id": "conv-life-l2-134-2",
+            "path": "assets/scenes/conversations/life-l2-134-2.webp",
+            "width": 388,
+            "height": 241,
+            "en": "Name the added ingredients",
+            "ar": "اذكر المكوّنات المضافة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                401,
+                251,
+                789,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "lemon",
+              "ar": "ليمونة",
+              "kind": "object",
+              "x": 26,
+              "y": 51
+            },
+            {
+              "en": "fresh herbs",
+              "ar": "أعشاب طازجة",
+              "kind": "object",
+              "x": 71,
+              "y": 60
+            },
+            {
+              "en": "add lemon and fresh herbs",
+              "ar": "يضيف الليمون والأعشاب الطازجة",
+              "kind": "phrase",
+              "x": 69,
+              "y": 66
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Explain when to add the lemon",
+          "ar": "اشرح متى تضيف الليمون",
+          "purposeEn": "Explain when to add the lemon.",
+          "purposeAr": "اشرح متى تضيف الليمون.",
+          "image": {
+            "id": "conv-life-l2-134-3",
+            "path": "assets/scenes/conversations/life-l2-134-3.webp",
+            "width": 388,
+            "height": 241,
+            "en": "Explain when to add the lemon",
+            "ar": "اشرح متى تضيف الليمون",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                251,
+                1185,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "lemon half",
+              "ar": "نصف ليمونة",
+              "kind": "object",
+              "x": 42,
+              "y": 48
+            },
+            {
+              "en": "lemon juice",
+              "ar": "عصير ليمون",
+              "kind": "object",
+              "x": 48,
+              "y": 70
+            },
+            {
+              "en": "squeeze the lemon over the rice",
+              "ar": "يعصر الليمون فوق الأرز",
+              "kind": "phrase",
+              "x": 44,
+              "y": 54
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Write down which herbs you used",
+          "ar": "دوّن أسماء الأعشاب التي استخدمتها",
+          "purposeEn": "Write down which herbs you used.",
+          "purposeAr": "دوّن أسماء الأعشاب التي استخدمتها.",
+          "image": {
+            "id": "conv-life-l2-134-4",
+            "path": "assets/scenes/conversations/life-l2-134-4.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Write down which herbs you used",
+            "ar": "دوّن أسماء الأعشاب التي استخدمتها",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1194,
+                251,
+                1583,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "recipe notebook",
+              "ar": "دفتر وصفات",
+              "kind": "object",
+              "x": 54,
+              "y": 89
+            },
+            {
+              "en": "herb sprigs",
+              "ar": "أغصان أعشاب",
+              "kind": "object",
+              "x": 87,
+              "y": 83
+            },
+            {
+              "en": "write down the ingredients",
+              "ar": "يدوّن المكوّنات",
+              "kind": "phrase",
+              "x": 48,
+              "y": 74
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-135",
+      "goalAr": "مهلة أخيرة للتسليم",
+      "goalEn": "Asking for a final extension",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Ask for a few more days",
+          "ar": "اطلب بضعة أيام إضافية",
+          "purposeEn": "Ask for a few more days.",
+          "purposeAr": "اطلب بضعة أيام إضافية.",
+          "image": {
+            "id": "conv-life-l2-135-1",
+            "path": "assets/scenes/conversations/life-l2-135-1.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Ask for a few more days",
+            "ar": "اطلب بضعة أيام إضافية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                499,
+                392,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "desk calendar",
+              "ar": "تقويم مكتبي",
+              "kind": "object",
+              "x": 58,
+              "y": 49
+            },
+            {
+              "en": "unfinished draft",
+              "ar": "مسوّدة غير مكتملة",
+              "kind": "object",
+              "x": 53,
+              "y": 83
+            },
+            {
+              "en": "ask for three more days",
+              "ar": "يطلب ثلاثة أيام إضافية",
+              "kind": "phrase",
+              "x": 40,
+              "y": 68
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Separate the finished and unfinished sections",
+          "ar": "افصل الأقسام الجاهزة عن غير المكتملة",
+          "purposeEn": "Separate the finished and unfinished sections.",
+          "purposeAr": "افصل الأقسام الجاهزة عن غير المكتملة.",
+          "image": {
+            "id": "conv-life-l2-135-2",
+            "path": "assets/scenes/conversations/life-l2-135-2.webp",
+            "width": 388,
+            "height": 241,
+            "en": "Separate the finished and unfinished sections",
+            "ar": "افصل الأقسام الجاهزة عن غير المكتملة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                401,
+                499,
+                789,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "completed section",
+              "ar": "قسم مكتمل",
+              "kind": "object",
+              "x": 27,
+              "y": 54
+            },
+            {
+              "en": "hourglass symbol",
+              "ar": "رمز ساعة رمليّة",
+              "kind": "object",
+              "x": 59,
+              "y": 56
+            },
+            {
+              "en": "mark the section that needs checking",
+              "ar": "يميّز القسم الذي يحتاج مراجعة",
+              "kind": "phrase",
+              "x": 37,
+              "y": 59
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Explain when the missing information will arrive",
+          "ar": "اشرح متى ستصل المعلومات الناقصة",
+          "purposeEn": "Explain when the missing information will arrive.",
+          "purposeAr": "اشرح متى ستصل المعلومات الناقصة.",
+          "image": {
+            "id": "conv-life-l2-135-3",
+            "path": "assets/scenes/conversations/life-l2-135-3.webp",
+            "width": 388,
+            "height": 241,
+            "en": "Explain when the missing information will arrive",
+            "ar": "اشرح متى ستصل المعلومات الناقصة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                499,
+                1185,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "sticky note",
+              "ar": "ورقة لاصقة",
+              "kind": "object",
+              "x": 65,
+              "y": 52
+            },
+            {
+              "en": "document clip",
+              "ar": "مشبك مستندات",
+              "kind": "object",
+              "x": 56,
+              "y": 37
+            },
+            {
+              "en": "add a note about the missing information",
+              "ar": "يضيف ملاحظة عن المعلومات الناقصة",
+              "kind": "phrase",
+              "x": 69,
+              "y": 59
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Set a reminder and offer to update the team",
+          "ar": "اضبط تذكيرًا واعرض إبلاغ الفريق",
+          "purposeEn": "Set a reminder and offer to update the team.",
+          "purposeAr": "اضبط تذكيرًا واعرض إبلاغ الفريق.",
+          "image": {
+            "id": "conv-life-l2-135-4",
+            "path": "assets/scenes/conversations/life-l2-135-4.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Set a reminder and offer to update the team",
+            "ar": "اضبط تذكيرًا واعرض إبلاغ الفريق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1194,
+                499,
+                1583,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "reminder tab",
+              "ar": "علامة تذكير",
+              "kind": "object",
+              "x": 61,
+              "y": 58
+            },
+            {
+              "en": "calendar grid",
+              "ar": "شبكة التقويم",
+              "kind": "object",
+              "x": 58,
+              "y": 35
+            },
+            {
+              "en": "let me know if it slips",
+              "ar": "أخبرني إن تأخّر الموعد",
+              "kind": "phrase",
+              "x": 48,
+              "y": 60
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-136",
+      "goalAr": "سؤال عن وسيلة العودة",
+      "goalEn": "Reporting an offer of a taxi",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Report an offer to get a taxi",
+          "ar": "انقل عرض الحصول على سيارة أجرة",
+          "purposeEn": "Report an offer to get a taxi.",
+          "purposeAr": "انقل عرض الحصول على سيارة أجرة.",
+          "image": {
+            "id": "conv-life-l2-136-1",
+            "path": "assets/scenes/conversations/life-l2-136-1.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Report an offer to get a taxi",
+            "ar": "انقل عرض الحصول على سيارة أجرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                747,
+                392,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "taxi",
+              "ar": "سيّارة أجرة",
+              "kind": "object",
+              "x": 79,
+              "y": 61
+            },
+            {
+              "en": "roadside",
+              "ar": "جانب الطريق",
+              "kind": "object",
+              "x": 58,
+              "y": 56
+            },
+            {
+              "en": "ask if someone needs a taxi",
+              "ar": "يسأل إن كان شخص يحتاج سيارة أجرة",
+              "kind": "phrase",
+              "x": 51,
+              "y": 48
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Compare a taxi with waiting for the bus",
+          "ar": "قارن بين سيارة الأجرة وانتظار الحافلة",
+          "purposeEn": "Compare a taxi with waiting for the bus.",
+          "purposeAr": "قارن بين سيارة الأجرة وانتظار الحافلة.",
+          "image": {
+            "id": "conv-life-l2-136-2",
+            "path": "assets/scenes/conversations/life-l2-136-2.webp",
+            "width": 388,
+            "height": 242,
+            "en": "Compare a taxi with waiting for the bus",
+            "ar": "قارن بين سيارة الأجرة وانتظار الحافلة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                401,
+                747,
+                789,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "taxi symbol",
+              "ar": "رمز سيارة أجرة",
+              "kind": "object",
+              "x": 50,
+              "y": 34
+            },
+            {
+              "en": "bus symbol",
+              "ar": "رمز حافلة",
+              "kind": "object",
+              "x": 48,
+              "y": 65
+            },
+            {
+              "en": "wait for the bus instead",
+              "ar": "ينتظر الحافلة بدلًا من ذلك",
+              "kind": "phrase",
+              "x": 57,
+              "y": 63
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Board the bus in time for the connection",
+          "ar": "اصعد الحافلة في وقت يكفي للحاق بوسيلة النقل التالية",
+          "purposeEn": "Board the bus in time for the connection.",
+          "purposeAr": "اصعد الحافلة في وقت يكفي للحاق بوسيلة النقل التالية.",
+          "image": {
+            "id": "conv-life-l2-136-3",
+            "path": "assets/scenes/conversations/life-l2-136-3.webp",
+            "width": 388,
+            "height": 242,
+            "en": "Board the bus in time for the connection",
+            "ar": "اصعد الحافلة في وقت يكفي للحاق بوسيلة النقل التالية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                747,
+                1185,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bus door",
+              "ar": "باب الحافلة",
+              "kind": "object",
+              "x": 53,
+              "y": 47
+            },
+            {
+              "en": "handrail",
+              "ar": "درابزين",
+              "kind": "object",
+              "x": 47,
+              "y": 61
+            },
+            {
+              "en": "get on the bus",
+              "ar": "يصعد الحافلة",
+              "kind": "phrase",
+              "x": 54,
+              "y": 70
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Check live arrival times next time",
+          "ar": "تحقّق من أوقات الوصول المباشرة في المرة القادمة",
+          "purposeEn": "Check live arrival times next time.",
+          "purposeAr": "تحقّق من أوقات الوصول المباشرة في المرة القادمة.",
+          "image": {
+            "id": "conv-life-l2-136-4",
+            "path": "assets/scenes/conversations/life-l2-136-4.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Check live arrival times next time",
+            "ar": "تحقّق من أوقات الوصول المباشرة في المرة القادمة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1194,
+                747,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bus tracking app",
+              "ar": "تطبيق تتبّع الحافلات",
+              "kind": "object",
+              "x": 53,
+              "y": 58
+            },
+            {
+              "en": "status indicator",
+              "ar": "مؤشّر الحالة",
+              "kind": "object",
+              "x": 58,
+              "y": 72
+            },
+            {
+              "en": "check live bus times",
+              "ar": "يتحقّق من مواعيد الحافلات المباشرة",
+              "kind": "phrase",
+              "x": 57,
+              "y": 64
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
