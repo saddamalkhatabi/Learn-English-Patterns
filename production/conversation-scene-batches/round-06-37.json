@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "9ca847e7f916e2a1f97f677bc4cfafb75e600be4f8be0f7258cddb74155db6ea"
+  },
+  "conversations": [
+    {
+      "id": "l2-105",
+      "goalAr": "مسطرة للتمرين",
+      "goalEn": "Borrowing a ruler in class",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Borrowing a ruler from the tray",
+          "ar": "استعارة مسطرة من صينية الأدوات",
+          "purposeEn": "Ask to borrow a ruler and clarify where it should go afterwards.",
+          "purposeAr": "اطلب استعارة مسطرة واستوضح مكان إعادتها بعد الاستخدام.",
+          "image": {
+            "id": "conv-life-l2-105-1",
+            "path": "assets/scenes/conversations/life-l2-105-1.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Borrowing a ruler from the tray",
+            "ar": "استعارة مسطرة من صينية الأدوات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                394,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ruler",
+              "ar": "مسطرة",
+              "kind": "object",
+              "x": 67,
+              "y": 60
+            },
+            {
+              "en": "stationery tray",
+              "ar": "صينية أدوات مكتبية",
+              "kind": "object",
+              "x": 77,
+              "y": 84
+            },
+            {
+              "en": "borrow a ruler",
+              "ar": "يستعير مسطرة",
+              "kind": "phrase",
+              "x": 53,
+              "y": 63
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Starting to draw a straight line",
+          "ar": "البدء برسم خطّ مستقيم",
+          "purposeEn": "State what you need the ruler for and which edge you will use.",
+          "purposeAr": "اذكر لماذا تحتاج إلى المسطرة وأيّ حافّة ستستخدم.",
+          "image": {
+            "id": "conv-life-l2-105-2",
+            "path": "assets/scenes/conversations/life-l2-105-2.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Starting to draw a straight line",
+            "ar": "البدء برسم خطّ مستقيم",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                3,
+                789,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "pencil",
+              "ar": "قلم رصاص",
+              "kind": "object",
+              "x": 43,
+              "y": 38
+            },
+            {
+              "en": "ruler edge",
+              "ar": "حافّة المسطرة",
+              "kind": "object",
+              "x": 57,
+              "y": 71
+            },
+            {
+              "en": "draw a straight line",
+              "ar": "يرسم خطًا مستقيمًا",
+              "kind": "phrase",
+              "x": 45,
+              "y": 63
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Using the full length of the ruler",
+          "ar": "استخدام طول المسطرة الكامل",
+          "purposeEn": "Explain how the long edge lets you draw the line in one pass.",
+          "purposeAr": "اشرح كيف تتيح لك الحافّة الطويلة رسم الخطّ دفعة واحدة.",
+          "image": {
+            "id": "conv-life-l2-105-3",
+            "path": "assets/scenes/conversations/life-l2-105-3.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Using the full length of the ruler",
+            "ar": "استخدام طول المسطرة الكامل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                3,
+                1186,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "long ruler",
+              "ar": "مسطرة طويلة",
+              "kind": "object",
+              "x": 52,
+              "y": 80
+            },
+            {
+              "en": "paper edge",
+              "ar": "حافّة الورقة",
+              "kind": "object",
+              "x": 13,
+              "y": 82
+            },
+            {
+              "en": "draw from edge to edge",
+              "ar": "يرسم من حافّة إلى أخرى",
+              "kind": "phrase",
+              "x": 48,
+              "y": 79
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Handing the ruler back",
+          "ar": "إعادة المسطرة إلى صاحبتها",
+          "purposeEn": "Return the ruler directly when the other person still needs it.",
+          "purposeAr": "أعِد المسطرة إلى الشخص مباشرةً إذا كان لا يزال يحتاج إليها.",
+          "image": {
+            "id": "conv-life-l2-105-4",
+            "path": "assets/scenes/conversations/life-l2-105-4.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Handing the ruler back",
+            "ar": "إعادة المسطرة إلى صاحبتها",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                3,
+                1583,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ruler",
+              "ar": "مسطرة",
+              "kind": "object",
+              "x": 65,
+              "y": 57
+            },
+            {
+              "en": "stationery tray",
+              "ar": "صينية أدوات مكتبية",
+              "kind": "object",
+              "x": 75,
+              "y": 86
+            },
+            {
+              "en": "pass the ruler back",
+              "ar": "يناول المسطرة لصاحبتها",
+              "kind": "phrase",
+              "x": 55,
+              "y": 62
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-106",
+      "goalAr": "موعد اصطحاب إلى المطار",
+      "goalEn": "Agreeing on a pickup time",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Arranging an airport pickup time",
+          "ar": "ترتيب موعد الاستقبال في المطار",
+          "purposeEn": "Ask when to arrive for the pickup and allow for luggage collection.",
+          "purposeAr": "اسأل عن موعد الوصول للاستقبال واترك وقتًا لاستلام الأمتعة.",
+          "image": {
+            "id": "conv-life-l2-106-1",
+            "path": "assets/scenes/conversations/life-l2-106-1.webp",
+            "width": 391,
+            "height": 240,
+            "en": "Arranging an airport pickup time",
+            "ar": "ترتيب موعد الاستقبال في المطار",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                252,
+                394,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "mobile phone",
+              "ar": "هاتف محمول",
+              "kind": "object",
+              "x": 23,
+              "y": 39
+            },
+            {
+              "en": "baggage symbol",
+              "ar": "رمز الأمتعة",
+              "kind": "object",
+              "x": 65,
+              "y": 76
+            },
+            {
+              "en": "arrange an airport pickup",
+              "ar": "يرتّب موعد الاستقبال في المطار",
+              "kind": "phrase",
+              "x": 39,
+              "y": 70
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Collecting the bag after landing",
+          "ar": "استلام الحقيبة بعد الهبوط",
+          "purposeEn": "Agree on a pickup time and a more convenient meeting point.",
+          "purposeAr": "اتّفقا على موعد الاستقبال ومكان التقاء أنسب.",
+          "image": {
+            "id": "conv-life-l2-106-2",
+            "path": "assets/scenes/conversations/life-l2-106-2.webp",
+            "width": 389,
+            "height": 240,
+            "en": "Collecting the bag after landing",
+            "ar": "استلام الحقيبة بعد الهبوط",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                252,
+                789,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "rolling suitcase",
+              "ar": "حقيبة سفر بعجلات",
+              "kind": "object",
+              "x": 41,
+              "y": 84
+            },
+            {
+              "en": "baggage carousel",
+              "ar": "سير الأمتعة الدوّار",
+              "kind": "object",
+              "x": 21,
+              "y": 64
+            },
+            {
+              "en": "collect your bag after landing",
+              "ar": "استلم حقيبتك بعد الهبوط",
+              "kind": "phrase",
+              "x": 43,
+              "y": 66
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Calling from the short-stay car park",
+          "ar": "الاتصال من موقف السيارات قصير المدة",
+          "purposeEn": "Say when you will call so the driver can come over.",
+          "purposeAr": "اذكر متى ستتّصل لكي يتوجّه السائق إليك.",
+          "image": {
+            "id": "conv-life-l2-106-3",
+            "path": "assets/scenes/conversations/life-l2-106-3.webp",
+            "width": 391,
+            "height": 240,
+            "en": "Calling from the short-stay car park",
+            "ar": "الاتصال من موقف السيارات قصير المدة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                252,
+                1186,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "short-stay parking sign",
+              "ar": "لافتة موقف قصير المدة",
+              "kind": "object",
+              "x": 77,
+              "y": 49
+            },
+            {
+              "en": "mobile phone",
+              "ar": "هاتف محمول",
+              "kind": "object",
+              "x": 25,
+              "y": 40
+            },
+            {
+              "en": "call after collecting your bag",
+              "ar": "اتّصل بعد استلام حقيبتك",
+              "kind": "phrase",
+              "x": 32,
+              "y": 48
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Sharing the exit location",
+          "ar": "مشاركة موقع المخرج",
+          "purposeEn": "Share the exit location so the driver knows where to find you.",
+          "purposeAr": "شارك موقع المخرج حتى يعرف السائق أين يجدك.",
+          "image": {
+            "id": "conv-life-l2-106-4",
+            "path": "assets/scenes/conversations/life-l2-106-4.webp",
+            "width": 391,
+            "height": 240,
+            "en": "Sharing the exit location",
+            "ar": "مشاركة موقع المخرج",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                252,
+                1583,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "exit arrow",
+              "ar": "سهم المخرج",
+              "kind": "object",
+              "x": 71,
+              "y": 15
+            },
+            {
+              "en": "phone camera",
+              "ar": "كاميرا الهاتف",
+              "kind": "object",
+              "x": 40,
+              "y": 54
+            },
+            {
+              "en": "send a photo of the exit sign",
+              "ar": "يرسل صورة للافتة المخرج",
+              "kind": "phrase",
+              "x": 42,
+              "y": 65
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-107",
+      "goalAr": "سؤال عن كلفة الإصلاح",
+      "goalEn": "Asking for an approximate repair price",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Checking a broken zip",
+          "ar": "فحص سحّاب تالف",
+          "purposeEn": "Ask for a price to replace the damaged part.",
+          "purposeAr": "اسأل عن تكلفة استبدال القطعة التالفة.",
+          "image": {
+            "id": "conv-life-l2-107-1",
+            "path": "assets/scenes/conversations/life-l2-107-1.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Checking a broken zip",
+            "ar": "فحص سحّاب تالف",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                498,
+                394,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "broken zip",
+              "ar": "سحّاب تالف",
+              "kind": "object",
+              "x": 53,
+              "y": 61
+            },
+            {
+              "en": "replacement zip",
+              "ar": "سحّاب بديل",
+              "kind": "object",
+              "x": 63,
+              "y": 94
+            },
+            {
+              "en": "replace the broken zip",
+              "ar": "يستبدل السحّاب التالف",
+              "kind": "phrase",
+              "x": 55,
+              "y": 57
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Estimating the cost of the repair",
+          "ar": "تقدير تكلفة الإصلاح",
+          "purposeEn": "Request a price confirmation and ask what the amount covers.",
+          "purposeAr": "اطلب تأكيد السعر واسأل عمّا يشمله.",
+          "image": {
+            "id": "conv-life-l2-107-2",
+            "path": "assets/scenes/conversations/life-l2-107-2.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Estimating the cost of the repair",
+            "ar": "تقدير تكلفة الإصلاح",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                498,
+                789,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "calculator",
+              "ar": "آلة حاسبة",
+              "kind": "object",
+              "x": 66,
+              "y": 80
+            },
+            {
+              "en": "repair estimate",
+              "ar": "تقدير تكلفة الإصلاح",
+              "kind": "object",
+              "x": 43,
+              "y": 84
+            },
+            {
+              "en": "confirm the price before starting",
+              "ar": "يؤكّد السعر قبل البدء",
+              "kind": "phrase",
+              "x": 63,
+              "y": 74
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Checking that parts and labour are included",
+          "ar": "التحقّق من شمول القطع وأجرة الإصلاح",
+          "purposeEn": "Explain when extra work could change the estimate.",
+          "purposeAr": "اشرح متى قد يؤدّي عمل إضافي إلى تغيير التقدير.",
+          "image": {
+            "id": "conv-life-l2-107-3",
+            "path": "assets/scenes/conversations/life-l2-107-3.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Checking that parts and labour are included",
+            "ar": "التحقّق من شمول القطع وأجرة الإصلاح",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                498,
+                1186,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "replacement part",
+              "ar": "قطعة بديلة",
+              "kind": "object",
+              "x": 56,
+              "y": 49
+            },
+            {
+              "en": "pliers",
+              "ar": "كمّاشة",
+              "kind": "object",
+              "x": 34,
+              "y": 88
+            },
+            {
+              "en": "ask whether the price includes labour",
+              "ar": "يسأل إن كان السعر يشمل أجرة الإصلاح",
+              "kind": "phrase",
+              "x": 56,
+              "y": 58
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Calling before the price changes",
+          "ar": "الاتصال قبل تغيير السعر",
+          "purposeEn": "Ask the repairer to call before proceeding at a higher price.",
+          "purposeAr": "اطلب من عامل التصليح الاتصال بك قبل المتابعة بسعر أعلى.",
+          "image": {
+            "id": "conv-life-l2-107-4",
+            "path": "assets/scenes/conversations/life-l2-107-4.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Calling before the price changes",
+            "ar": "الاتصال قبل تغيير السعر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                498,
+                1583,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "mobile phone",
+              "ar": "هاتف محمول",
+              "kind": "object",
+              "x": 90,
+              "y": 31
+            },
+            {
+              "en": "price estimate",
+              "ar": "عرض سعر تقديري",
+              "kind": "object",
+              "x": 53,
+              "y": 87
+            },
+            {
+              "en": "call before charging more",
+              "ar": "يتّصل قبل طلب مبلغ إضافي",
+              "kind": "phrase",
+              "x": 88,
+              "y": 40
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-108",
+      "goalAr": "تسخين غداء في المكتب",
+      "goalEn": "Heating lunch in the office",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Finding the microwave beside the sink",
+          "ar": "العثور على الميكروويف بجانب المغسلة",
+          "purposeEn": "Ask how long the food should go in the microwave.",
+          "purposeAr": "اسأل عن المدّة اللازمة لتسخين الطعام في الميكروويف.",
+          "image": {
+            "id": "conv-life-l2-108-1",
+            "path": "assets/scenes/conversations/life-l2-108-1.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Finding the microwave beside the sink",
+            "ar": "العثور على الميكروويف بجانب المغسلة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                746,
+                394,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "microwave",
+              "ar": "ميكروويف",
+              "kind": "object",
+              "x": 73,
+              "y": 66
+            },
+            {
+              "en": "kitchen sink",
+              "ar": "حوض المطبخ",
+              "kind": "object",
+              "x": 36,
+              "y": 88
+            },
+            {
+              "en": "heat food in the microwave",
+              "ar": "يسخّن الطعام في الميكروويف",
+              "kind": "phrase",
+              "x": 48,
+              "y": 65
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Stirring and checking the temperature",
+          "ar": "تحريك الطعام والتحقّق من حرارته",
+          "purposeEn": "Explain when to stir the food and check its temperature.",
+          "purposeAr": "اشرح متى ينبغي تحريك الطعام والتحقّق من حرارته.",
+          "image": {
+            "id": "conv-life-l2-108-2",
+            "path": "assets/scenes/conversations/life-l2-108-2.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Stirring and checking the temperature",
+            "ar": "تحريك الطعام والتحقّق من حرارته",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                746,
+                789,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "spoon",
+              "ar": "ملعقة",
+              "kind": "object",
+              "x": 65,
+              "y": 52
+            },
+            {
+              "en": "glass bowl",
+              "ar": "وعاء زجاجي",
+              "kind": "object",
+              "x": 70,
+              "y": 77
+            },
+            {
+              "en": "check the temperature",
+              "ar": "يتحقّق من درجة الحرارة",
+              "kind": "phrase",
+              "x": 68,
+              "y": 48
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Keeping the lid loose while heating",
+          "ar": "ترك الغطاء غير محكم أثناء التسخين",
+          "purposeEn": "Describe how to position the lid during heating.",
+          "purposeAr": "صف كيف ينبغي وضع الغطاء أثناء التسخين.",
+          "image": {
+            "id": "conv-life-l2-108-3",
+            "path": "assets/scenes/conversations/life-l2-108-3.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Keeping the lid loose while heating",
+            "ar": "ترك الغطاء غير محكم أثناء التسخين",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                746,
+                1186,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "glass lid",
+              "ar": "غطاء زجاجي",
+              "kind": "object",
+              "x": 64,
+              "y": 50
+            },
+            {
+              "en": "food bowl",
+              "ar": "وعاء طعام",
+              "kind": "object",
+              "x": 68,
+              "y": 83
+            },
+            {
+              "en": "leave the lid on loosely",
+              "ar": "يترك الغطاء دون إحكام",
+              "kind": "phrase",
+              "x": 58,
+              "y": 49
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Choosing the glass bowl",
+          "ar": "اختيار الوعاء الزجاجي",
+          "purposeEn": "Select a microwave-safe container and explain your choice.",
+          "purposeAr": "اختر وعاءً مناسبًا للميكروويف واشرح سبب اختيارك.",
+          "image": {
+            "id": "conv-life-l2-108-4",
+            "path": "assets/scenes/conversations/life-l2-108-4.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Choosing the glass bowl",
+            "ar": "اختيار الوعاء الزجاجي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                746,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "glass bowl",
+              "ar": "وعاء زجاجي",
+              "kind": "object",
+              "x": 57,
+              "y": 84
+            },
+            {
+              "en": "plastic container",
+              "ar": "علبة بلاستيكية",
+              "kind": "object",
+              "x": 84,
+              "y": 85
+            },
+            {
+              "en": "use a microwave-safe bowl",
+              "ar": "يستخدم وعاءً آمنًا للميكروويف",
+              "kind": "phrase",
+              "x": 54,
+              "y": 78
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

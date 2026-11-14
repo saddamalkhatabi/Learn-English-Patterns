@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "07ef8a768c42aea4cf91fb4023341875bf8a56940e6c8df47c6343c4d4056484"
+  },
+  "conversations": [
+    {
+      "id": "desk-near-the-window",
+      "goalAr": "اختيار مكان المكتب",
+      "goalEn": "Putting a desk near the window",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Comparing places for the desk",
+          "ar": "مقارنة مكانين للمكتب",
+          "purposeEn": "Practise comparing places for the desk.",
+          "purposeAr": "تدرّب على مقارنة مكانين للمكتب.",
+          "image": {
+            "id": "conv-life-desk-near-the-window-1",
+            "path": "assets/scenes/conversations/life-desk-near-the-window-1.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Comparing places for the desk",
+            "ar": "مقارنة مكانين للمكتب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                394,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "desk",
+              "ar": "مكتب",
+              "kind": "object",
+              "x": 52,
+              "y": 77
+            },
+            {
+              "en": "window",
+              "ar": "نافذة",
+              "kind": "object",
+              "x": 27,
+              "y": 29
+            },
+            {
+              "en": "work by the window",
+              "ar": "يعمل قرب النافذة",
+              "kind": "phrase",
+              "x": 55,
+              "y": 65
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Measuring the desk",
+          "ar": "قياس عرض المكتب",
+          "purposeEn": "Practise measuring the desk.",
+          "purposeAr": "تدرّب على قياس عرض المكتب.",
+          "image": {
+            "id": "conv-life-desk-near-the-window-2",
+            "path": "assets/scenes/conversations/life-desk-near-the-window-2.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Measuring the desk",
+            "ar": "قياس عرض المكتب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                3,
+                789,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "tape measure",
+              "ar": "شريط قياس",
+              "kind": "object",
+              "x": 54,
+              "y": 83
+            },
+            {
+              "en": "desktop",
+              "ar": "سطح المكتب",
+              "kind": "object",
+              "x": 49,
+              "y": 91
+            },
+            {
+              "en": "measure the width",
+              "ar": "يقيس العرض",
+              "kind": "phrase",
+              "x": 66,
+              "y": 77
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Checking that the window opens",
+          "ar": "التحقّق من إمكانية فتح النافذة",
+          "purposeEn": "Practise checking that the window opens.",
+          "purposeAr": "تدرّب على التحقّق من إمكانية فتح النافذة.",
+          "image": {
+            "id": "conv-life-desk-near-the-window-3",
+            "path": "assets/scenes/conversations/life-desk-near-the-window-3.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Checking that the window opens",
+            "ar": "التحقّق من إمكانية فتح النافذة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                3,
+                1185,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "window frame",
+              "ar": "إطار النافذة",
+              "kind": "object",
+              "x": 65,
+              "y": 60
+            },
+            {
+              "en": "desk",
+              "ar": "مكتب",
+              "kind": "object",
+              "x": 68,
+              "y": 89
+            },
+            {
+              "en": "open the window",
+              "ar": "يفتح النافذة",
+              "kind": "phrase",
+              "x": 67,
+              "y": 64
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Checking whether the cord reaches",
+          "ar": "التحقّق من وصول السلك إلى المقبس",
+          "purposeEn": "Practise checking whether the cord reaches.",
+          "purposeAr": "تدرّب على التحقّق من وصول السلك إلى المقبس.",
+          "image": {
+            "id": "conv-life-desk-near-the-window-4",
+            "path": "assets/scenes/conversations/life-desk-near-the-window-4.webp",
+            "width": 392,
+            "height": 241,
+            "en": "Checking whether the cord reaches",
+            "ar": "التحقّق من وصول السلك إلى المقبس",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1191,
+                3,
+                1583,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "desk lamp",
+              "ar": "مصباح مكتبي",
+              "kind": "object",
+              "x": 35,
+              "y": 42
+            },
+            {
+              "en": "wall socket",
+              "ar": "مقبس حائط",
+              "kind": "object",
+              "x": 69,
+              "y": 78
+            },
+            {
+              "en": "plug in the lamp",
+              "ar": "يوصل المصباح بالكهرباء",
+              "kind": "phrase",
+              "x": 71,
+              "y": 82
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a-note-for-the-neighbour",
+      "goalAr": "رسالة قصيرة إلى الجار",
+      "goalEn": "A note for a neighbour",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Baking muffins for a neighbour",
+          "ar": "خبز المافن لأحد الجيران",
+          "purposeEn": "Practise baking muffins for a neighbour.",
+          "purposeAr": "تدرّب على خبز المافن لأحد الجيران.",
+          "image": {
+            "id": "conv-life-a-note-for-the-neighbour-1",
+            "path": "assets/scenes/conversations/life-a-note-for-the-neighbour-1.webp",
+            "width": 391,
+            "height": 244,
+            "en": "Baking muffins for a neighbour",
+            "ar": "خبز المافن لأحد الجيران",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                250,
+                394,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "muffins",
+              "ar": "قطع مافن",
+              "kind": "object",
+              "x": 48,
+              "y": 82
+            },
+            {
+              "en": "oven mitt",
+              "ar": "قفاز فرن",
+              "kind": "object",
+              "x": 25,
+              "y": 87
+            },
+            {
+              "en": "take the muffins out of the oven",
+              "ar": "يُخرج المافن من الفرن",
+              "kind": "phrase",
+              "x": 56,
+              "y": 85
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Writing a welcome note",
+          "ar": "كتابة رسالة ترحيب",
+          "purposeEn": "Practise writing a welcome note.",
+          "purposeAr": "تدرّب على كتابة رسالة ترحيب.",
+          "image": {
+            "id": "conv-life-a-note-for-the-neighbour-2",
+            "path": "assets/scenes/conversations/life-a-note-for-the-neighbour-2.webp",
+            "width": 389,
+            "height": 244,
+            "en": "Writing a welcome note",
+            "ar": "كتابة رسالة ترحيب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                250,
+                789,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "note card",
+              "ar": "بطاقة رسالة",
+              "kind": "object",
+              "x": 59,
+              "y": 87
+            },
+            {
+              "en": "pen",
+              "ar": "قلم",
+              "kind": "object",
+              "x": 54,
+              "y": 72
+            },
+            {
+              "en": "write a welcome note",
+              "ar": "يكتب رسالة ترحيب",
+              "kind": "phrase",
+              "x": 57,
+              "y": 83
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Adding the flat number to the note",
+          "ar": "إضافة رقم الشقة إلى الرسالة",
+          "purposeEn": "Practise adding the flat number to the note.",
+          "purposeAr": "تدرّب على إضافة رقم الشقة إلى الرسالة.",
+          "image": {
+            "id": "conv-life-a-note-for-the-neighbour-3",
+            "path": "assets/scenes/conversations/life-a-note-for-the-neighbour-3.webp",
+            "width": 390,
+            "height": 244,
+            "en": "Adding the flat number to the note",
+            "ar": "إضافة رقم الشقة إلى الرسالة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                250,
+                1185,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "door symbol",
+              "ar": "رمز الباب",
+              "kind": "object",
+              "x": 70,
+              "y": 70
+            },
+            {
+              "en": "blank line",
+              "ar": "سطر فارغ",
+              "kind": "object",
+              "x": 70,
+              "y": 92
+            },
+            {
+              "en": "write your flat number",
+              "ar": "اكتب رقم شقتك",
+              "kind": "phrase",
+              "x": 59,
+              "y": 86
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Leaving the muffins at the door",
+          "ar": "ترك المافن عند الباب",
+          "purposeEn": "Practise leaving the muffins at the door.",
+          "purposeAr": "تدرّب على ترك المافن عند الباب.",
+          "image": {
+            "id": "conv-life-a-note-for-the-neighbour-4",
+            "path": "assets/scenes/conversations/life-a-note-for-the-neighbour-4.webp",
+            "width": 392,
+            "height": 244,
+            "en": "Leaving the muffins at the door",
+            "ar": "ترك المافن عند الباب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1191,
+                250,
+                1583,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "wicker basket",
+              "ar": "سلّة خوص",
+              "kind": "object",
+              "x": 53,
+              "y": 80
+            },
+            {
+              "en": "note card",
+              "ar": "بطاقة رسالة",
+              "kind": "object",
+              "x": 53,
+              "y": 56
+            },
+            {
+              "en": "leave a gift at the door",
+              "ar": "يترك هدية عند الباب",
+              "kind": "phrase",
+              "x": 64,
+              "y": 71
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plant-watering-while-away",
+      "goalAr": "سقي النباتات أثناء السفر",
+      "goalEn": "Watering plants while someone is away",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Asking a friend to water the plants",
+          "ar": "طلب ريّ النباتات من صديقة",
+          "purposeEn": "Practise asking a friend to water the plants.",
+          "purposeAr": "تدرّب على طلب ريّ النباتات من صديقة.",
+          "image": {
+            "id": "conv-life-plant-watering-while-away-1",
+            "path": "assets/scenes/conversations/life-plant-watering-while-away-1.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Asking a friend to water the plants",
+            "ar": "طلب ريّ النباتات من صديقة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                500,
+                394,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "watering can",
+              "ar": "إبريق ريّ",
+              "kind": "object",
+              "x": 50,
+              "y": 66
+            },
+            {
+              "en": "balcony railing",
+              "ar": "سياج الشرفة",
+              "kind": "object",
+              "x": 43,
+              "y": 45
+            },
+            {
+              "en": "hand over the watering can",
+              "ar": "يناول إبريق الريّ",
+              "kind": "phrase",
+              "x": 52,
+              "y": 68
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Showing which pots need water",
+          "ar": "تحديد الأصص التي تحتاج إلى الماء",
+          "purposeEn": "Practise showing which pots need water.",
+          "purposeAr": "تدرّب على تحديد الأصص التي تحتاج إلى الماء.",
+          "image": {
+            "id": "conv-life-plant-watering-while-away-2",
+            "path": "assets/scenes/conversations/life-plant-watering-while-away-2.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Showing which pots need water",
+            "ar": "تحديد الأصص التي تحتاج إلى الماء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                500,
+                789,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "plant pot",
+              "ar": "أصيص نبات",
+              "kind": "object",
+              "x": 63,
+              "y": 80
+            },
+            {
+              "en": "flowering plant",
+              "ar": "نبات مزهر",
+              "kind": "object",
+              "x": 30,
+              "y": 63
+            },
+            {
+              "en": "point out the pots",
+              "ar": "يشير إلى الأصص المعنيّة",
+              "kind": "phrase",
+              "x": 44,
+              "y": 48
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Watering a plant and preparing a message",
+          "ar": "ريّ نبات والاستعداد لإرسال رسالة",
+          "purposeEn": "Practise watering a plant and preparing a message.",
+          "purposeAr": "تدرّب على ريّ نبات والاستعداد لإرسال رسالة.",
+          "image": {
+            "id": "conv-life-plant-watering-while-away-3",
+            "path": "assets/scenes/conversations/life-plant-watering-while-away-3.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Watering a plant and preparing a message",
+            "ar": "ريّ نبات والاستعداد لإرسال رسالة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                500,
+                1185,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "watering can",
+              "ar": "إبريق ريّ",
+              "kind": "object",
+              "x": 45,
+              "y": 52
+            },
+            {
+              "en": "smartphone",
+              "ar": "هاتف ذكي",
+              "kind": "object",
+              "x": 72,
+              "y": 49
+            },
+            {
+              "en": "water a potted plant",
+              "ar": "يروي نباتًا في أصيص",
+              "kind": "phrase",
+              "x": 36,
+              "y": 68
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Checking the soil before watering",
+          "ar": "فحص التربة قبل الريّ",
+          "purposeEn": "Practise checking the soil before watering.",
+          "purposeAr": "تدرّب على فحص التربة قبل الريّ.",
+          "image": {
+            "id": "conv-life-plant-watering-while-away-4",
+            "path": "assets/scenes/conversations/life-plant-watering-while-away-4.webp",
+            "width": 392,
+            "height": 241,
+            "en": "Checking the soil before watering",
+            "ar": "فحص التربة قبل الريّ",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1191,
+                500,
+                1583,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "soil",
+              "ar": "تربة",
+              "kind": "object",
+              "x": 37,
+              "y": 78
+            },
+            {
+              "en": "leaves",
+              "ar": "أوراق نبات",
+              "kind": "object",
+              "x": 24,
+              "y": 48
+            },
+            {
+              "en": "check whether the soil is damp",
+              "ar": "يتحقّق من رطوبة التربة",
+              "kind": "phrase",
+              "x": 43,
+              "y": 74
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "photo-permission-at-a-fair",
+      "goalAr": "الاستئذان للتصوير في معرض",
+      "goalEn": "Asking to take a photo at a fair",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Asking to photograph the display",
+          "ar": "طلب الإذن بتصوير المعروضات",
+          "purposeEn": "Practise asking to photograph the display.",
+          "purposeAr": "تدرّب على طلب الإذن بتصوير المعروضات.",
+          "image": {
+            "id": "conv-life-photo-permission-at-a-fair-1",
+            "path": "assets/scenes/conversations/life-photo-permission-at-a-fair-1.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Asking to photograph the display",
+            "ar": "طلب الإذن بتصوير المعروضات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                747,
+                394,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "camera",
+              "ar": "كاميرا",
+              "kind": "object",
+              "x": 38,
+              "y": 82
+            },
+            {
+              "en": "reflective vest",
+              "ar": "سترة عاكسة",
+              "kind": "object",
+              "x": 82,
+              "y": 56
+            },
+            {
+              "en": "ask for permission",
+              "ar": "يطلب الإذن",
+              "kind": "phrase",
+              "x": 43,
+              "y": 52
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Disabling the flash",
+          "ar": "إيقاف الفلاش",
+          "purposeEn": "Practise disabling the flash.",
+          "purposeAr": "تدرّب على إيقاف الفلاش.",
+          "image": {
+            "id": "conv-life-photo-permission-at-a-fair-2",
+            "path": "assets/scenes/conversations/life-photo-permission-at-a-fair-2.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Disabling the flash",
+            "ar": "إيقاف الفلاش",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                747,
+                789,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "camera screen",
+              "ar": "شاشة الكاميرا",
+              "kind": "object",
+              "x": 43,
+              "y": 45
+            },
+            {
+              "en": "flash symbol",
+              "ar": "رمز الفلاش",
+              "kind": "object",
+              "x": 57,
+              "y": 51
+            },
+            {
+              "en": "turn the flash off",
+              "ar": "يُوقف الفلاش",
+              "kind": "phrase",
+              "x": 74,
+              "y": 36
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Photographing from behind the rope",
+          "ar": "التصوير من خلف الحبل",
+          "purposeEn": "Practise photographing from behind the rope.",
+          "purposeAr": "تدرّب على التصوير من خلف الحبل.",
+          "image": {
+            "id": "conv-life-photo-permission-at-a-fair-3",
+            "path": "assets/scenes/conversations/life-photo-permission-at-a-fair-3.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Photographing from behind the rope",
+            "ar": "التصوير من خلف الحبل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                747,
+                1185,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "rope barrier",
+              "ar": "حاجز حبلي",
+              "kind": "object",
+              "x": 57,
+              "y": 77
+            },
+            {
+              "en": "camera",
+              "ar": "كاميرا",
+              "kind": "object",
+              "x": 22,
+              "y": 36
+            },
+            {
+              "en": "stay behind the rope",
+              "ar": "يبقى خلف الحبل",
+              "kind": "phrase",
+              "x": 43,
+              "y": 64
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Watching the craft demonstration",
+          "ar": "متابعة عرض الحرفة",
+          "purposeEn": "Practise watching the craft demonstration.",
+          "purposeAr": "تدرّب على متابعة عرض الحرفة.",
+          "image": {
+            "id": "conv-life-photo-permission-at-a-fair-4",
+            "path": "assets/scenes/conversations/life-photo-permission-at-a-fair-4.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Watching the craft demonstration",
+            "ar": "متابعة عرض الحرفة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1191,
+                747,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "weaver",
+              "ar": "ناسجة",
+              "kind": "object",
+              "x": 69,
+              "y": 44
+            },
+            {
+              "en": "woven mat",
+              "ar": "حصير منسوج",
+              "kind": "object",
+              "x": 60,
+              "y": 63
+            },
+            {
+              "en": "watch a craft demonstration",
+              "ar": "يشاهد عرضًا لحرفة يدوية",
+              "kind": "phrase",
+              "x": 71,
+              "y": 63
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

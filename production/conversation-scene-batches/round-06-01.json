@@ -1,0 +1,861 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "cf494777d5fa2161fdef8fb5c11b91f791c27f7b0d5f73e0026428b259da5d38"
+  },
+  "conversations": [
+    {
+      "id": "practice-test-concern",
+      "goalAr": "القلق بعد اختبار تجريبي",
+      "goalEn": "A concern after a practice test",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Preparing for the listening test",
+          "ar": "الاستعداد لاختبار الاستماع",
+          "purposeEn": "Explain which part of the exam worries you.",
+          "purposeAr": "وضّح أي جزء من الاختبار يقلقك.",
+          "image": {
+            "id": "conv-life-practice-test-concern-1",
+            "path": "assets/scenes/conversations/life-practice-test-concern-1.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Preparing for the listening test",
+            "ar": "الاستعداد لاختبار الاستماع",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                393,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "headphones",
+              "ar": "سمّاعات رأس",
+              "kind": "object",
+              "x": 30,
+              "y": 19
+            },
+            {
+              "en": "practice paper",
+              "ar": "ورقة تدريب",
+              "kind": "object",
+              "x": 39,
+              "y": 92
+            },
+            {
+              "en": "feel worried",
+              "ar": "يشعر بالقلق",
+              "kind": "phrase",
+              "x": 39,
+              "y": 24
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Spotting unanswered items",
+          "ar": "تحديد الأسئلة التي بقيت بلا إجابة",
+          "purposeEn": "Say what you missed during the announcement.",
+          "purposeAr": "اذكر ما فاتك أثناء الإعلان.",
+          "image": {
+            "id": "conv-life-practice-test-concern-2",
+            "path": "assets/scenes/conversations/life-practice-test-concern-2.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Spotting unanswered items",
+            "ar": "تحديد الأسئلة التي بقيت بلا إجابة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                3,
+                789,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "answer sheet",
+              "ar": "ورقة الإجابة",
+              "kind": "object",
+              "x": 43,
+              "y": 94
+            },
+            {
+              "en": "blank answers",
+              "ar": "إجابات فارغة",
+              "kind": "description",
+              "x": 45,
+              "y": 92
+            },
+            {
+              "en": "point to a question",
+              "ar": "يشير إلى سؤال",
+              "kind": "phrase",
+              "x": 31,
+              "y": 73
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Writing down times",
+          "ar": "تدوين الأوقات",
+          "purposeEn": "Suggest taking notes on a first listen.",
+          "purposeAr": "اقترح تدوين الملاحظات عند الاستماع أول مرة.",
+          "image": {
+            "id": "conv-life-practice-test-concern-3",
+            "path": "assets/scenes/conversations/life-practice-test-concern-3.webp",
+            "width": 305,
+            "height": 243,
+            "en": "Writing down times",
+            "ar": "تدوين الأوقات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                3,
+                1100,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "spiral notebook",
+              "ar": "دفتر حلزوني",
+              "kind": "object",
+              "x": 43,
+              "y": 88
+            },
+            {
+              "en": "folder",
+              "ar": "ملف أوراق",
+              "kind": "object",
+              "x": 88,
+              "y": 93
+            },
+            {
+              "en": "write down the times",
+              "ar": "يدوّن الأوقات",
+              "kind": "phrase",
+              "x": 37,
+              "y": 75
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Checking notes on a second listen",
+          "ar": "مراجعة الملاحظات عند الاستماع مرة ثانية",
+          "purposeEn": "Explain how to verify the times you heard.",
+          "purposeAr": "اشرح كيف تتحقق من الأوقات التي سمعتها.",
+          "image": {
+            "id": "conv-life-practice-test-concern-4",
+            "path": "assets/scenes/conversations/life-practice-test-concern-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Checking notes on a second listen",
+            "ar": "مراجعة الملاحظات عند الاستماع مرة ثانية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                3,
+                1583,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "headphones",
+              "ar": "سمّاعات رأس",
+              "kind": "object",
+              "x": 29,
+              "y": 17
+            },
+            {
+              "en": "notes",
+              "ar": "ملاحظات",
+              "kind": "object",
+              "x": 59,
+              "y": 89
+            },
+            {
+              "en": "check your notes",
+              "ar": "راجع ملاحظاتك",
+              "kind": "phrase",
+              "x": 62,
+              "y": 86
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "returning-a-neighbors-tools",
+      "goalAr": "إعادة أدوات الجار",
+      "goalEn": "Returning a neighbour's tools",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Returning the toolbox",
+          "ar": "إعادة صندوق العِدّة",
+          "purposeEn": "Return a borrowed item and thank your neighbour.",
+          "purposeAr": "أعِد ما استعرته واشكر جارك.",
+          "image": {
+            "id": "conv-life-returning-a-neighbors-tools-1",
+            "path": "assets/scenes/conversations/life-returning-a-neighbors-tools-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Returning the toolbox",
+            "ar": "إعادة صندوق العِدّة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                252,
+                393,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "toolbox",
+              "ar": "صندوق عِدّة",
+              "kind": "object",
+              "x": 51,
+              "y": 72
+            },
+            {
+              "en": "front door",
+              "ar": "الباب الأمامي",
+              "kind": "object",
+              "x": 33,
+              "y": 47
+            },
+            {
+              "en": "hand back the toolbox",
+              "ar": "يعيد صندوق العِدّة",
+              "kind": "phrase",
+              "x": 70,
+              "y": 81
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Checking the shelf bracket",
+          "ar": "التحقق من حامل الرف",
+          "purposeEn": "Ask whether the bracket fitted properly.",
+          "purposeAr": "اسأل إن كان حامل الرف قد رُكّب بشكل مناسب.",
+          "image": {
+            "id": "conv-life-returning-a-neighbors-tools-2",
+            "path": "assets/scenes/conversations/life-returning-a-neighbors-tools-2.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Checking the shelf bracket",
+            "ar": "التحقق من حامل الرف",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                252,
+                789,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "shelf bracket",
+              "ar": "حامل رفّ معدني",
+              "kind": "object",
+              "x": 60,
+              "y": 27
+            },
+            {
+              "en": "wooden shelf",
+              "ar": "رفّ خشبي",
+              "kind": "object",
+              "x": 76,
+              "y": 9
+            },
+            {
+              "en": "point to the bracket",
+              "ar": "يشير إلى حامل الرفّ",
+              "kind": "phrase",
+              "x": 50,
+              "y": 38
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Offering the spare screws",
+          "ar": "عرض المسامير الاحتياطية",
+          "purposeEn": "Offer the spare parts for future use.",
+          "purposeAr": "اعرض قطع التثبيت الاحتياطية لاستخدامها لاحقًا.",
+          "image": {
+            "id": "conv-life-returning-a-neighbors-tools-3",
+            "path": "assets/scenes/conversations/life-returning-a-neighbors-tools-3.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Offering the spare screws",
+            "ar": "عرض المسامير الاحتياطية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                252,
+                1186,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "spare screws",
+              "ar": "مسامير لولبية احتياطية",
+              "kind": "object",
+              "x": 59,
+              "y": 69
+            },
+            {
+              "en": "clear container",
+              "ar": "علبة شفافة",
+              "kind": "object",
+              "x": 49,
+              "y": 64
+            },
+            {
+              "en": "hand over the spare screws",
+              "ar": "يناول المسامير الاحتياطية",
+              "kind": "phrase",
+              "x": 47,
+              "y": 68
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Storing the screws safely",
+          "ar": "حفظ المسامير في مكانها",
+          "purposeEn": "Explain how to keep small parts from getting lost.",
+          "purposeAr": "اشرح كيف تحفظ القطع الصغيرة من الضياع.",
+          "image": {
+            "id": "conv-life-returning-a-neighbors-tools-4",
+            "path": "assets/scenes/conversations/life-returning-a-neighbors-tools-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Storing the screws safely",
+            "ar": "حفظ المسامير في مكانها",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                252,
+                1583,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "screwdriver",
+              "ar": "مفكّ براغٍ",
+              "kind": "object",
+              "x": 68,
+              "y": 83
+            },
+            {
+              "en": "tape measure",
+              "ar": "شريط قياس",
+              "kind": "object",
+              "x": 28,
+              "y": 75
+            },
+            {
+              "en": "compartment",
+              "ar": "حجرة في الصندوق",
+              "kind": "object",
+              "x": 45,
+              "y": 67
+            },
+            {
+              "en": "put the screws away",
+              "ar": "يضع المسامير في مكانها",
+              "kind": "phrase",
+              "x": 51,
+              "y": 54
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "club-location-decision",
+      "goalAr": "اختيار مكان لقاء النادي",
+      "goalEn": "Choosing a venue for the club",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Suggesting the library",
+          "ar": "اقتراح المكتبة",
+          "purposeEn": "Give your opinion about where the club should meet.",
+          "purposeAr": "أبدِ رأيك في المكان المناسب لاجتماع النادي.",
+          "image": {
+            "id": "conv-life-club-location-decision-1",
+            "path": "assets/scenes/conversations/life-club-location-decision-1.webp",
+            "width": 390,
+            "height": 239,
+            "en": "Suggesting the library",
+            "ar": "اقتراح المكتبة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                500,
+                393,
+                739
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bookshelf",
+              "ar": "رفّ كتب",
+              "kind": "object",
+              "x": 55,
+              "y": 20
+            },
+            {
+              "en": "library books",
+              "ar": "كتب المكتبة",
+              "kind": "object",
+              "x": 17,
+              "y": 29
+            },
+            {
+              "en": "suggest a meeting place",
+              "ar": "يقترح مكانًا للاجتماع",
+              "kind": "phrase",
+              "x": 46,
+              "y": 73
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Looking for another venue",
+          "ar": "البحث عن مكان بديل",
+          "purposeEn": "Explain that the study rooms are closed and offer to check another venue.",
+          "purposeAr": "وضّح أن غرف الدراسة مغلقة واعرض التحقق من مكان آخر.",
+          "image": {
+            "id": "conv-life-club-location-decision-2",
+            "path": "assets/scenes/conversations/life-club-location-decision-2.webp",
+            "width": 389,
+            "height": 239,
+            "en": "Looking for another venue",
+            "ar": "البحث عن مكان بديل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                500,
+                789,
+                739
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "study room",
+              "ar": "غرفة دراسة",
+              "kind": "object",
+              "x": 64,
+              "y": 36
+            },
+            {
+              "en": "closed door",
+              "ar": "باب مغلق",
+              "kind": "description",
+              "x": 78,
+              "y": 54
+            },
+            {
+              "en": "check your phone",
+              "ar": "يتفقد هاتفه",
+              "kind": "phrase",
+              "x": 56,
+              "y": 62
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Arranging chairs in the hall",
+          "ar": "ترتيب الكراسي في القاعة",
+          "purposeEn": "Discuss arranging the chairs so everyone can participate.",
+          "purposeAr": "ناقش ترتيب الكراسي بما يتيح للجميع المشاركة.",
+          "image": {
+            "id": "conv-life-club-location-decision-3",
+            "path": "assets/scenes/conversations/life-club-location-decision-3.webp",
+            "width": 391,
+            "height": 239,
+            "en": "Arranging chairs in the hall",
+            "ar": "ترتيب الكراسي في القاعة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                500,
+                1186,
+                739
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "community hall",
+              "ar": "قاعة مجتمعية",
+              "kind": "object",
+              "x": 74,
+              "y": 33
+            },
+            {
+              "en": "stacking chair",
+              "ar": "كرسي قابل للتكديس",
+              "kind": "object",
+              "x": 36,
+              "y": 75
+            },
+            {
+              "en": "move the chairs",
+              "ar": "ينقل الكراسي",
+              "kind": "phrase",
+              "x": 73,
+              "y": 72
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Meeting in a circle",
+          "ar": "الاجتماع في حلقة",
+          "purposeEn": "Explain why the seating arrangement helps the discussion.",
+          "purposeAr": "اشرح كيف يساعد ترتيب المقاعد على النقاش.",
+          "image": {
+            "id": "conv-life-club-location-decision-4",
+            "path": "assets/scenes/conversations/life-club-location-decision-4.webp",
+            "width": 390,
+            "height": 239,
+            "en": "Meeting in a circle",
+            "ar": "الاجتماع في حلقة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                500,
+                1583,
+                739
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "club members",
+              "ar": "أعضاء النادي",
+              "kind": "object",
+              "x": 36,
+              "y": 50
+            },
+            {
+              "en": "circle of chairs",
+              "ar": "حلقة من الكراسي",
+              "kind": "description",
+              "x": 54,
+              "y": 76
+            },
+            {
+              "en": "sit in a circle",
+              "ar": "يجلسون في حلقة",
+              "kind": "phrase",
+              "x": 67,
+              "y": 68
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a-noisy-vent",
+      "goalAr": "صوت عند فتحة التهوية",
+      "goalEn": "A noisy air vent",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Locating the noisy air vent",
+          "ar": "تحديد مصدر الضجيج عند فتحة التهوية",
+          "purposeEn": "Explain where the noise seems to come from.",
+          "purposeAr": "اشرح من أين يبدو أن الضجيج يصدر.",
+          "image": {
+            "id": "conv-life-a-noisy-vent-1",
+            "path": "assets/scenes/conversations/life-a-noisy-vent-1.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Locating the noisy air vent",
+            "ar": "تحديد مصدر الضجيج عند فتحة التهوية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                746,
+                393,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "air vent",
+              "ar": "فتحة تهوية",
+              "kind": "object",
+              "x": 70,
+              "y": 12
+            },
+            {
+              "en": "meeting room door",
+              "ar": "باب غرفة الاجتماعات",
+              "kind": "object",
+              "x": 71,
+              "y": 72
+            },
+            {
+              "en": "point above the door",
+              "ar": "يشير إلى أعلى الباب",
+              "kind": "phrase",
+              "x": 64,
+              "y": 40
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Noticing the loose vent cover",
+          "ar": "ملاحظة غطاء فتحة التهوية المرتخي",
+          "purposeEn": "Describe the loose cover and suggest calling maintenance.",
+          "purposeAr": "صف الغطاء المرتخي واقترح الاتصال بالصيانة.",
+          "image": {
+            "id": "conv-life-a-noisy-vent-2",
+            "path": "assets/scenes/conversations/life-a-noisy-vent-2.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Noticing the loose vent cover",
+            "ar": "ملاحظة غطاء فتحة التهوية المرتخي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                746,
+                789,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "vent cover",
+              "ar": "غطاء فتحة التهوية",
+              "kind": "object",
+              "x": 54,
+              "y": 30
+            },
+            {
+              "en": "loose corner",
+              "ar": "زاوية غير مثبتة",
+              "kind": "description",
+              "x": 80,
+              "y": 13
+            },
+            {
+              "en": "check the vent cover",
+              "ar": "يفحص غطاء فتحة التهوية",
+              "kind": "phrase",
+              "x": 65,
+              "y": 49
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Reporting the problem",
+          "ar": "الإبلاغ عن المشكلة",
+          "purposeEn": "Report the problem and request a room with a screen.",
+          "purposeAr": "أبلغ عن المشكلة واطلب غرفة فيها شاشة.",
+          "image": {
+            "id": "conv-life-a-noisy-vent-3",
+            "path": "assets/scenes/conversations/life-a-noisy-vent-3.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Reporting the problem",
+            "ar": "الإبلاغ عن المشكلة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                746,
+                1186,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "presentation screen",
+              "ar": "شاشة عرض",
+              "kind": "object",
+              "x": 61,
+              "y": 25
+            },
+            {
+              "en": "laptop",
+              "ar": "حاسوب محمول",
+              "kind": "object",
+              "x": 54,
+              "y": 85
+            },
+            {
+              "en": "call maintenance",
+              "ar": "يتصل بقسم الصيانة",
+              "kind": "phrase",
+              "x": 15,
+              "y": 46
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Checking the replacement meeting room",
+          "ar": "التحقق من غرفة الاجتماعات البديلة",
+          "purposeEn": "Confirm the room is ready before telling the group where to go.",
+          "purposeAr": "تأكد من جاهزية الغرفة قبل إبلاغ المجموعة بمكان الاجتماع.",
+          "image": {
+            "id": "conv-life-a-noisy-vent-4",
+            "path": "assets/scenes/conversations/life-a-noisy-vent-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Checking the replacement meeting room",
+            "ar": "التحقق من غرفة الاجتماعات البديلة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                746,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "presentation screen",
+              "ar": "شاشة عرض",
+              "kind": "object",
+              "x": 74,
+              "y": 36
+            },
+            {
+              "en": "conference table",
+              "ar": "طاولة اجتماعات",
+              "kind": "object",
+              "x": 73,
+              "y": 90
+            },
+            {
+              "en": "check the replacement room",
+              "ar": "يتحقق من الغرفة البديلة",
+              "kind": "phrase",
+              "x": 35,
+              "y": 44
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

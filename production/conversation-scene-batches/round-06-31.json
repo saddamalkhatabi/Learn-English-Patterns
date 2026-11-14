@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "fe2401af3ff78b6cc04d4e85224e3bec0f25f800e0c3839f7cfa06d64e4afc89"
+  },
+  "conversations": [
+    {
+      "id": "l2-081",
+      "goalAr": "تعلم تشغيل جهاز",
+      "goalEn": "Working out a machine's controls",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Examining the label printer",
+          "ar": "تفحّص طابعة الملصقات",
+          "purposeEn": "Practise examining the label printer.",
+          "purposeAr": "تدرّب على تفحّص طابعة الملصقات.",
+          "image": {
+            "id": "conv-life-l2-081-1",
+            "path": "assets/scenes/conversations/life-l2-081-1.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Examining the label printer",
+            "ar": "تفحّص طابعة الملصقات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                393,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "label printer",
+              "ar": "طابعة ملصقات",
+              "kind": "object",
+              "x": 41,
+              "y": 66
+            },
+            {
+              "en": "label roll",
+              "ar": "لفافة ملصقات",
+              "kind": "object",
+              "x": 69,
+              "y": 89
+            },
+            {
+              "en": "figure out how the printer works",
+              "ar": "يفهم طريقة عمل الطابعة",
+              "kind": "phrase",
+              "x": 38,
+              "y": 59
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Choosing the label size",
+          "ar": "اختيار حجم الملصق",
+          "purposeEn": "Practise choosing the label size.",
+          "purposeAr": "تدرّب على اختيار حجم الملصق.",
+          "image": {
+            "id": "conv-life-l2-081-2",
+            "path": "assets/scenes/conversations/life-l2-081-2.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Choosing the label size",
+            "ar": "اختيار حجم الملصق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                3,
+                790,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "large label",
+              "ar": "ملصق كبير",
+              "kind": "object",
+              "x": 28,
+              "y": 55
+            },
+            {
+              "en": "small label",
+              "ar": "ملصق صغير",
+              "kind": "object",
+              "x": 42,
+              "y": 58
+            },
+            {
+              "en": "load a roll of labels",
+              "ar": "يضع لفافة ملصقات في الطابعة",
+              "kind": "phrase",
+              "x": 62,
+              "y": 72
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Checking the single-label preview",
+          "ar": "مراجعة معاينة ملصق واحد",
+          "purposeEn": "Practise checking the single-label preview.",
+          "purposeAr": "تدرّب على مراجعة معاينة ملصق واحد.",
+          "image": {
+            "id": "conv-life-l2-081-3",
+            "path": "assets/scenes/conversations/life-l2-081-3.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Checking the single-label preview",
+            "ar": "مراجعة معاينة ملصق واحد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                3,
+                1186,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "print preview",
+              "ar": "معاينة الطباعة",
+              "kind": "object",
+              "x": 61,
+              "y": 44
+            },
+            {
+              "en": "printer",
+              "ar": "طابعة",
+              "kind": "object",
+              "x": 30,
+              "y": 86
+            },
+            {
+              "en": "check the print preview",
+              "ar": "يراجع معاينة الطباعة",
+              "kind": "phrase",
+              "x": 50,
+              "y": 62
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Printing and peeling one label",
+          "ar": "طباعة ملصق واحد ونزعه",
+          "purposeEn": "Practise printing and peeling one label.",
+          "purposeAr": "تدرّب على طباعة ملصق واحد ونزعه.",
+          "image": {
+            "id": "conv-life-l2-081-4",
+            "path": "assets/scenes/conversations/life-l2-081-4.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Printing and peeling one label",
+            "ar": "طباعة ملصق واحد ونزعه",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                3,
+                1583,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "barcode",
+              "ar": "رمز شريطي",
+              "kind": "object",
+              "x": 42,
+              "y": 70
+            },
+            {
+              "en": "label backing",
+              "ar": "ورق خلفي للملصق",
+              "kind": "object",
+              "x": 57,
+              "y": 85
+            },
+            {
+              "en": "peel off a label",
+              "ar": "ينزع ملصقًا من ورقه الخلفي",
+              "kind": "phrase",
+              "x": 48,
+              "y": 75
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-082",
+      "goalAr": "حكاية عن سؤال سفر",
+      "goalEn": "Reporting a question about travel",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Asking for advice before a trip",
+          "ar": "طلب النصيحة قبل الرحلة",
+          "purposeEn": "Practise asking for advice before a trip.",
+          "purposeAr": "تدرّب على طلب النصيحة قبل الرحلة.",
+          "image": {
+            "id": "conv-life-l2-082-1",
+            "path": "assets/scenes/conversations/life-l2-082-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Asking for advice before a trip",
+            "ar": "طلب النصيحة قبل الرحلة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                250,
+                393,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "coastline photograph",
+              "ar": "صورة للساحل",
+              "kind": "object",
+              "x": 44,
+              "y": 83
+            },
+            {
+              "en": "travel map",
+              "ar": "خريطة سفر",
+              "kind": "object",
+              "x": 81,
+              "y": 90
+            },
+            {
+              "en": "ask for travel advice",
+              "ar": "يطلب نصيحة بشأن السفر",
+              "kind": "phrase",
+              "x": 41,
+              "y": 52
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Finding the roads on the map",
+          "ar": "تحديد الطريقين على الخريطة",
+          "purposeEn": "Practise finding the roads on the map.",
+          "purposeAr": "تدرّب على تحديد الطريقين على الخريطة.",
+          "image": {
+            "id": "conv-life-l2-082-2",
+            "path": "assets/scenes/conversations/life-l2-082-2.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Finding the roads on the map",
+            "ar": "تحديد الطريقين على الخريطة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                250,
+                790,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "coast road",
+              "ar": "الطريق الساحلي",
+              "kind": "object",
+              "x": 39,
+              "y": 76
+            },
+            {
+              "en": "inland route",
+              "ar": "مسار عبر المناطق الداخلية",
+              "kind": "object",
+              "x": 59,
+              "y": 77
+            },
+            {
+              "en": "compare two routes",
+              "ar": "يقارن بين مسارين",
+              "kind": "phrase",
+              "x": 56,
+              "y": 66
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Planning different routes each way",
+          "ar": "التخطيط لمسارين مختلفين للذهاب والعودة",
+          "purposeEn": "Practise planning different routes each way.",
+          "purposeAr": "تدرّب على التخطيط لمسارين مختلفين للذهاب والعودة.",
+          "image": {
+            "id": "conv-life-l2-082-3",
+            "path": "assets/scenes/conversations/life-l2-082-3.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Planning different routes each way",
+            "ar": "التخطيط لمسارين مختلفين للذهاب والعودة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                250,
+                1186,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "route line",
+              "ar": "خطّ المسار",
+              "kind": "object",
+              "x": 54,
+              "y": 81
+            },
+            {
+              "en": "coastal route",
+              "ar": "مسار ساحلي",
+              "kind": "object",
+              "x": 35,
+              "y": 67
+            },
+            {
+              "en": "take the coast road on the way there",
+              "ar": "يسلك الطريق الساحلي في الذهاب",
+              "kind": "phrase",
+              "x": 30,
+              "y": 70
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Choosing a seaside lunch stop",
+          "ar": "اختيار مكان للغداء على الساحل",
+          "purposeEn": "Practise choosing a seaside lunch stop.",
+          "purposeAr": "تدرّب على اختيار مكان للغداء على الساحل.",
+          "image": {
+            "id": "conv-life-l2-082-4",
+            "path": "assets/scenes/conversations/life-l2-082-4.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Choosing a seaside lunch stop",
+            "ar": "اختيار مكان للغداء على الساحل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                250,
+                1583,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "seaside café",
+              "ar": "مقهى على البحر",
+              "kind": "object",
+              "x": 57,
+              "y": 68
+            },
+            {
+              "en": "outdoor seating",
+              "ar": "أماكن جلوس خارجية",
+              "kind": "object",
+              "x": 63,
+              "y": 81
+            },
+            {
+              "en": "stop for lunch along the coast",
+              "ar": "يتوقّف لتناول الغداء على الساحل",
+              "kind": "phrase",
+              "x": 42,
+              "y": 67
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-083",
+      "goalAr": "فهم جملة في كتاب",
+      "goalEn": "Understanding a sentence in a book",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Identifying an unfamiliar part of a sentence",
+          "ar": "تحديد الجزء غير المألوف من الجملة",
+          "purposeEn": "Practise identifying an unfamiliar part of a sentence.",
+          "purposeAr": "تدرّب على تحديد الجزء غير المألوف من الجملة.",
+          "image": {
+            "id": "conv-life-l2-083-1",
+            "path": "assets/scenes/conversations/life-l2-083-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Identifying an unfamiliar part of a sentence",
+            "ar": "تحديد الجزء غير المألوف من الجملة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                498,
+                393,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "underlined phrase",
+              "ar": "عبارة تحتها خطّ",
+              "kind": "object",
+              "x": 41,
+              "y": 91
+            },
+            {
+              "en": "open workbook",
+              "ar": "كراسة تمارين مفتوحة",
+              "kind": "object",
+              "x": 61,
+              "y": 86
+            },
+            {
+              "en": "ask what the sentence means",
+              "ar": "يسأل عن معنى الجملة",
+              "kind": "phrase",
+              "x": 47,
+              "y": 74
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Focusing on the word after the verb",
+          "ar": "التركيز على الكلمة بعد الفعل",
+          "purposeEn": "Practise focusing on the word after the verb.",
+          "purposeAr": "تدرّب على التركيز على الكلمة بعد الفعل.",
+          "image": {
+            "id": "conv-life-l2-083-2",
+            "path": "assets/scenes/conversations/life-l2-083-2.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Focusing on the word after the verb",
+            "ar": "التركيز على الكلمة بعد الفعل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                498,
+                790,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "workbook page",
+              "ar": "صفحة في كراسة التمارين",
+              "kind": "object",
+              "x": 54,
+              "y": 87
+            },
+            {
+              "en": "spiral binding",
+              "ar": "تجليد حلزوني",
+              "kind": "object",
+              "x": 61,
+              "y": 91
+            },
+            {
+              "en": "point to an unfamiliar word",
+              "ar": "يشير إلى كلمة غير مألوفة",
+              "kind": "phrase",
+              "x": 55,
+              "y": 77
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Looking up a word in a dictionary",
+          "ar": "البحث عن كلمة في المعجم",
+          "purposeEn": "Practise looking up a word in a dictionary.",
+          "purposeAr": "تدرّب على البحث عن كلمة في المعجم.",
+          "image": {
+            "id": "conv-life-l2-083-3",
+            "path": "assets/scenes/conversations/life-l2-083-3.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Looking up a word in a dictionary",
+            "ar": "البحث عن كلمة في المعجم",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                498,
+                1186,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "dictionary",
+              "ar": "معجم",
+              "kind": "object",
+              "x": 56,
+              "y": 84
+            },
+            {
+              "en": "dictionary entry",
+              "ar": "مدخل معجمي",
+              "kind": "object",
+              "x": 68,
+              "y": 80
+            },
+            {
+              "en": "look up a word in a dictionary",
+              "ar": "يبحث عن كلمة في المعجم",
+              "kind": "phrase",
+              "x": 66,
+              "y": 75
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Rereading with the intended meaning",
+          "ar": "إعادة القراءة بعد فهم المعنى المقصود",
+          "purposeEn": "Practise rereading with the intended meaning.",
+          "purposeAr": "تدرّب على إعادة القراءة بعد فهم المعنى المقصود.",
+          "image": {
+            "id": "conv-life-l2-083-4",
+            "path": "assets/scenes/conversations/life-l2-083-4.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Rereading with the intended meaning",
+            "ar": "إعادة القراءة بعد فهم المعنى المقصود",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                498,
+                1583,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "original sentence",
+              "ar": "الجملة الأصلية",
+              "kind": "object",
+              "x": 30,
+              "y": 90
+            },
+            {
+              "en": "open dictionary",
+              "ar": "معجم مفتوح",
+              "kind": "object",
+              "x": 82,
+              "y": 88
+            },
+            {
+              "en": "read the sentence again",
+              "ar": "يقرأ الجملة مرة أخرى",
+              "kind": "phrase",
+              "x": 39,
+              "y": 73
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-084",
+      "goalAr": "محاضرة تمنيت حضورها",
+      "goalEn": "Looking back on a missed lecture",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Talking about a missed lecture",
+          "ar": "الحديث عن محاضرة فاتت",
+          "purposeEn": "Practise talking about a missed lecture.",
+          "purposeAr": "تدرّب على الحديث عن محاضرة فاتت.",
+          "image": {
+            "id": "conv-life-l2-084-1",
+            "path": "assets/scenes/conversations/life-l2-084-1.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Talking about a missed lecture",
+            "ar": "الحديث عن محاضرة فاتت",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                746,
+                393,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "empty seat",
+              "ar": "مقعد شاغر",
+              "kind": "object",
+              "x": 55,
+              "y": 76
+            },
+            {
+              "en": "lecture hall",
+              "ar": "قاعة محاضرات",
+              "kind": "object",
+              "x": 58,
+              "y": 34
+            },
+            {
+              "en": "miss a lecture",
+              "ar": "تفوتُه محاضرة",
+              "kind": "phrase",
+              "x": 41,
+              "y": 67
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Going through the lecture notes",
+          "ar": "مراجعة ملاحظات المحاضرة",
+          "purposeEn": "Practise going through the lecture notes.",
+          "purposeAr": "تدرّب على مراجعة ملاحظات المحاضرة.",
+          "image": {
+            "id": "conv-life-l2-084-2",
+            "path": "assets/scenes/conversations/life-l2-084-2.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Going through the lecture notes",
+            "ar": "مراجعة ملاحظات المحاضرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                746,
+                790,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ring binder",
+              "ar": "ملف حلقي",
+              "kind": "object",
+              "x": 52,
+              "y": 83
+            },
+            {
+              "en": "lecture notes",
+              "ar": "ملاحظات المحاضرة",
+              "kind": "object",
+              "x": 69,
+              "y": 82
+            },
+            {
+              "en": "go through the notes",
+              "ar": "يراجع الملاحظات",
+              "kind": "phrase",
+              "x": 74,
+              "y": 65
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Reading the axes on the graph",
+          "ar": "قراءة محوري الرسم البياني",
+          "purposeEn": "Practise reading the axes on the graph.",
+          "purposeAr": "تدرّب على قراءة محوري الرسم البياني.",
+          "image": {
+            "id": "conv-life-l2-084-3",
+            "path": "assets/scenes/conversations/life-l2-084-3.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Reading the axes on the graph",
+            "ar": "قراءة محوري الرسم البياني",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                746,
+                1186,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "vertical axis",
+              "ar": "المحور الرأسي",
+              "kind": "object",
+              "x": 46,
+              "y": 56
+            },
+            {
+              "en": "horizontal axis",
+              "ar": "المحور الأفقي",
+              "kind": "object",
+              "x": 57,
+              "y": 82
+            },
+            {
+              "en": "read the axes on a graph",
+              "ar": "يقرأ محوري الرسم البياني",
+              "kind": "phrase",
+              "x": 31,
+              "y": 50
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Tracing the descending line",
+          "ar": "تتبّع الخطّ الهابط",
+          "purposeEn": "Practise tracing the descending line.",
+          "purposeAr": "تدرّب على تتبّع الخطّ الهابط.",
+          "image": {
+            "id": "conv-life-l2-084-4",
+            "path": "assets/scenes/conversations/life-l2-084-4.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Tracing the descending line",
+            "ar": "تتبّع الخطّ الهابط",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                746,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "descending line",
+              "ar": "خطّ هابط",
+              "kind": "object",
+              "x": 62,
+              "y": 78
+            },
+            {
+              "en": "pencil",
+              "ar": "قلم رصاص",
+              "kind": "object",
+              "x": 69,
+              "y": 65
+            },
+            {
+              "en": "see where the line goes down",
+              "ar": "يرى أين يهبط الخطّ",
+              "kind": "phrase",
+              "x": 67,
+              "y": 78
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

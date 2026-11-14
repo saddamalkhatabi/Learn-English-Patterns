@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "2d0119597fef95035e382f3518a44b480f69bf56a5bd1216ee63306d12bfbe6a"
+  },
+  "conversations": [
+    {
+      "id": "l2-029",
+      "goalAr": "تجربة سفر لم تحدث بعد",
+      "goalEn": "Talking about a place you've never visited",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Asking about a first trip",
+          "ar": "السؤال عن رحلة أولى",
+          "purposeEn": "Practise asking about a first trip.",
+          "purposeAr": "تدرّب على السؤال عن رحلة أولى.",
+          "image": {
+            "id": "conv-life-l2-029-1",
+            "path": "assets/scenes/conversations/life-l2-029-1.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Asking about a first trip",
+            "ar": "السؤال عن رحلة أولى",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                392,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "photo album",
+              "ar": "ألبوم صور",
+              "kind": "object",
+              "x": 55,
+              "y": 76
+            },
+            {
+              "en": "teapot",
+              "ar": "إبريق شاي",
+              "kind": "object",
+              "x": 93,
+              "y": 85
+            },
+            {
+              "en": "ask about a trip",
+              "ar": "يسأل عن رحلة",
+              "kind": "phrase",
+              "x": 40,
+              "y": 57
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Correcting a mistaken assumption",
+          "ar": "تصحيح افتراض خاطئ",
+          "purposeEn": "Practise correcting a mistaken assumption.",
+          "purposeAr": "تدرّب على تصحيح افتراض خاطئ.",
+          "image": {
+            "id": "conv-life-l2-029-2",
+            "path": "assets/scenes/conversations/life-l2-029-2.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Correcting a mistaken assumption",
+            "ar": "تصحيح افتراض خاطئ",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                3,
+                789,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "coastal town",
+              "ar": "بلدة ساحلية",
+              "kind": "object",
+              "x": 78,
+              "y": 70
+            },
+            {
+              "en": "photograph",
+              "ar": "صورة فوتوغرافية",
+              "kind": "object",
+              "x": 71,
+              "y": 91
+            },
+            {
+              "en": "mix someone up with someone else",
+              "ar": "يخلط بين شخص وآخر",
+              "kind": "phrase",
+              "x": 64,
+              "y": 57
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Showing where you went instead",
+          "ar": "توضيح المكان الذي ذهبت إليه",
+          "purposeEn": "Practise showing where you went instead.",
+          "purposeAr": "تدرّب على توضيح المكان الذي ذهبت إليه.",
+          "image": {
+            "id": "conv-life-l2-029-3",
+            "path": "assets/scenes/conversations/life-l2-029-3.webp",
+            "width": 388,
+            "height": 241,
+            "en": "Showing where you went instead",
+            "ar": "توضيح المكان الذي ذهبت إليه",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                3,
+                1185,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "tourist map",
+              "ar": "خريطة سياحية",
+              "kind": "object",
+              "x": 59,
+              "y": 54
+            },
+            {
+              "en": "bus stop symbol",
+              "ar": "رمز موقف الحافلة",
+              "kind": "object",
+              "x": 88,
+              "y": 65
+            },
+            {
+              "en": "point out a place on the map",
+              "ar": "يشير إلى مكان على الخريطة",
+              "kind": "phrase",
+              "x": 54,
+              "y": 75
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Getting around by bus and on foot",
+          "ar": "التنقّل بالحافلة ومشيًا",
+          "purposeEn": "Practise getting around by bus and on foot.",
+          "purposeAr": "تدرّب على التنقّل بالحافلة ومشيًا.",
+          "image": {
+            "id": "conv-life-l2-029-4",
+            "path": "assets/scenes/conversations/life-l2-029-4.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Getting around by bus and on foot",
+            "ar": "التنقّل بالحافلة ومشيًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                3,
+                1583,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "local bus",
+              "ar": "حافلة محلية",
+              "kind": "object",
+              "x": 89,
+              "y": 40
+            },
+            {
+              "en": "seawall",
+              "ar": "جدار بحري",
+              "kind": "object",
+              "x": 29,
+              "y": 75
+            },
+            {
+              "en": "walk back by the sea",
+              "ar": "يعود مشيًا بمحاذاة البحر",
+              "kind": "phrase",
+              "x": 56,
+              "y": 73
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-030",
+      "goalAr": "وقت القراءة اليومي",
+      "goalEn": "Making time for reading",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Talking about a weekly reading habit",
+          "ar": "الحديث عن عادة القراءة الأسبوعية",
+          "purposeEn": "Practise talking about a weekly reading habit.",
+          "purposeAr": "تدرّب على الحديث عن عادة القراءة الأسبوعية.",
+          "image": {
+            "id": "conv-life-l2-030-1",
+            "path": "assets/scenes/conversations/life-l2-030-1.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Talking about a weekly reading habit",
+            "ar": "الحديث عن عادة القراءة الأسبوعية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                250,
+                392,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "stack of books",
+              "ar": "كومة كتب",
+              "kind": "object",
+              "x": 42,
+              "y": 83
+            },
+            {
+              "en": "open book",
+              "ar": "كتاب مفتوح",
+              "kind": "object",
+              "x": 76,
+              "y": 70
+            },
+            {
+              "en": "spend time reading",
+              "ar": "يقضي وقتًا في القراءة",
+              "kind": "phrase",
+              "x": 72,
+              "y": 66
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Choosing a short quiet reading session",
+          "ar": "اختيار جلسة قراءة قصيرة وهادئة",
+          "purposeEn": "Practise choosing a short quiet reading session.",
+          "purposeAr": "تدرّب على اختيار جلسة قراءة قصيرة وهادئة.",
+          "image": {
+            "id": "conv-life-l2-030-2",
+            "path": "assets/scenes/conversations/life-l2-030-2.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Choosing a short quiet reading session",
+            "ar": "اختيار جلسة قراءة قصيرة وهادئة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                250,
+                789,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "sand timer",
+              "ar": "مؤقّت رملي",
+              "kind": "object",
+              "x": 55,
+              "y": 81
+            },
+            {
+              "en": "open book",
+              "ar": "كتاب مفتوح",
+              "kind": "object",
+              "x": 81,
+              "y": 85
+            },
+            {
+              "en": "set aside time to read",
+              "ar": "يخصّص وقتًا للقراءة",
+              "kind": "phrase",
+              "x": 49,
+              "y": 69
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Leaving the phone in the kitchen",
+          "ar": "ترك الهاتف في المطبخ",
+          "purposeEn": "Practise leaving the phone in the kitchen.",
+          "purposeAr": "تدرّب على ترك الهاتف في المطبخ.",
+          "image": {
+            "id": "conv-life-l2-030-3",
+            "path": "assets/scenes/conversations/life-l2-030-3.webp",
+            "width": 388,
+            "height": 242,
+            "en": "Leaving the phone in the kitchen",
+            "ar": "ترك الهاتف في المطبخ",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                250,
+                1185,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "smartphone",
+              "ar": "هاتف ذكي",
+              "kind": "object",
+              "x": 57,
+              "y": 93
+            },
+            {
+              "en": "kitchen counter",
+              "ar": "سطح العمل في المطبخ",
+              "kind": "object",
+              "x": 28,
+              "y": 78
+            },
+            {
+              "en": "leave your phone face down",
+              "ar": "اترك هاتفك وشاشته إلى الأسفل",
+              "kind": "phrase",
+              "x": 53,
+              "y": 85
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Tracking reading for a week",
+          "ar": "متابعة القراءة لمدة أسبوع",
+          "purposeEn": "Practise tracking reading for a week.",
+          "purposeAr": "تدرّب على متابعة القراءة لمدة أسبوع.",
+          "image": {
+            "id": "conv-life-l2-030-4",
+            "path": "assets/scenes/conversations/life-l2-030-4.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Tracking reading for a week",
+            "ar": "متابعة القراءة لمدة أسبوع",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                250,
+                1583,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bookmark",
+              "ar": "علامة كتاب",
+              "kind": "object",
+              "x": 40,
+              "y": 74
+            },
+            {
+              "en": "weekly planner",
+              "ar": "مخطّط أسبوعي",
+              "kind": "object",
+              "x": 78,
+              "y": 68
+            },
+            {
+              "en": "mark your place in a book",
+              "ar": "يضع علامة عند موضع القراءة",
+              "kind": "phrase",
+              "x": 44,
+              "y": 68
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-031",
+      "goalAr": "تصحيح معلومة في اجتماع",
+      "goalEn": "Correcting yourself in a meeting",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Checking the workshop date",
+          "ar": "التحقّق من تاريخ ورشة العمل",
+          "purposeEn": "Practise checking the workshop date.",
+          "purposeAr": "تدرّب على التحقّق من تاريخ ورشة العمل.",
+          "image": {
+            "id": "conv-life-l2-031-1",
+            "path": "assets/scenes/conversations/life-l2-031-1.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Checking the workshop date",
+            "ar": "التحقّق من تاريخ ورشة العمل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                498,
+                392,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "laptop",
+              "ar": "حاسوب محمول",
+              "kind": "object",
+              "x": 49,
+              "y": 75
+            },
+            {
+              "en": "desk calendar",
+              "ar": "تقويم مكتبي",
+              "kind": "object",
+              "x": 82,
+              "y": 77
+            },
+            {
+              "en": "check the date on the calendar",
+              "ar": "يتحقّق من التاريخ في التقويم",
+              "kind": "phrase",
+              "x": 80,
+              "y": 62
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Correcting the calendar invitation",
+          "ar": "تصحيح الدعوة في التقويم",
+          "purposeEn": "Practise correcting the calendar invitation.",
+          "purposeAr": "تدرّب على تصحيح الدعوة في التقويم.",
+          "image": {
+            "id": "conv-life-l2-031-2",
+            "path": "assets/scenes/conversations/life-l2-031-2.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Correcting the calendar invitation",
+            "ar": "تصحيح الدعوة في التقويم",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                498,
+                789,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "weekly planner",
+              "ar": "مخطّط أسبوعي",
+              "kind": "object",
+              "x": 45,
+              "y": 58
+            },
+            {
+              "en": "sticky note",
+              "ar": "ورقة لاصقة",
+              "kind": "object",
+              "x": 37,
+              "y": 50
+            },
+            {
+              "en": "move the reminder to another day",
+              "ar": "ينقل التذكير إلى يوم آخر",
+              "kind": "phrase",
+              "x": 49,
+              "y": 54
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Explaining what changed in the agenda",
+          "ar": "شرح ما تغيّر في جدول الأعمال",
+          "purposeEn": "Practise explaining what changed in the agenda.",
+          "purposeAr": "تدرّب على شرح ما تغيّر في جدول الأعمال.",
+          "image": {
+            "id": "conv-life-l2-031-3",
+            "path": "assets/scenes/conversations/life-l2-031-3.webp",
+            "width": 388,
+            "height": 243,
+            "en": "Explaining what changed in the agenda",
+            "ar": "شرح ما تغيّر في جدول الأعمال",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                498,
+                1185,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "old agenda",
+              "ar": "جدول الأعمال السابق",
+              "kind": "object",
+              "x": 41,
+              "y": 53
+            },
+            {
+              "en": "updated agenda",
+              "ar": "جدول الأعمال المحدّث",
+              "kind": "object",
+              "x": 69,
+              "y": 55
+            },
+            {
+              "en": "add a note to the agenda",
+              "ar": "يضيف ملاحظة إلى جدول الأعمال",
+              "kind": "phrase",
+              "x": 48,
+              "y": 74
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Giving someone the updated agenda",
+          "ar": "تسليم جدول الأعمال المحدّث لشخص",
+          "purposeEn": "Practise giving someone the updated agenda.",
+          "purposeAr": "تدرّب على تسليم جدول الأعمال المحدّث لشخص.",
+          "image": {
+            "id": "conv-life-l2-031-4",
+            "path": "assets/scenes/conversations/life-l2-031-4.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Giving someone the updated agenda",
+            "ar": "تسليم جدول الأعمال المحدّث لشخص",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                498,
+                1583,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "workshop agenda",
+              "ar": "جدول أعمال الورشة",
+              "kind": "object",
+              "x": 54,
+              "y": 64
+            },
+            {
+              "en": "notebook",
+              "ar": "دفتر",
+              "kind": "object",
+              "x": 81,
+              "y": 56
+            },
+            {
+              "en": "share the updated agenda",
+              "ar": "يشارك جدول الأعمال المحدّث",
+              "kind": "phrase",
+              "x": 52,
+              "y": 72
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-032",
+      "goalAr": "قرار يحتاج إلى تشاور",
+      "goalEn": "A decision that needs a conversation",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Discussing the schedule before deciding",
+          "ar": "مناقشة الجدول قبل اتخاذ القرار",
+          "purposeEn": "Practise discussing the schedule before deciding.",
+          "purposeAr": "تدرّب على مناقشة الجدول قبل اتخاذ القرار.",
+          "image": {
+            "id": "conv-life-l2-032-1",
+            "path": "assets/scenes/conversations/life-l2-032-1.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Discussing the schedule before deciding",
+            "ar": "مناقشة الجدول قبل اتخاذ القرار",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                747,
+                392,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "desk phone",
+              "ar": "هاتف مكتبي",
+              "kind": "object",
+              "x": 19,
+              "y": 83
+            },
+            {
+              "en": "shift planner",
+              "ar": "مخطّط نوبات العمل",
+              "kind": "object",
+              "x": 59,
+              "y": 86
+            },
+            {
+              "en": "discuss the schedule",
+              "ar": "يناقش الجدول",
+              "kind": "phrase",
+              "x": 38,
+              "y": 57
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Keeping both options open",
+          "ar": "إبقاء الخيارين متاحين",
+          "purposeEn": "Practise keeping both options open.",
+          "purposeAr": "تدرّب على إبقاء الخيارين متاحين.",
+          "image": {
+            "id": "conv-life-l2-032-2",
+            "path": "assets/scenes/conversations/life-l2-032-2.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Keeping both options open",
+            "ar": "إبقاء الخيارين متاحين",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                747,
+                789,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "blue card",
+              "ar": "بطاقة زرقاء",
+              "kind": "object",
+              "x": 36,
+              "y": 86
+            },
+            {
+              "en": "green card",
+              "ar": "بطاقة خضراء",
+              "kind": "object",
+              "x": 61,
+              "y": 86
+            },
+            {
+              "en": "keep both options open",
+              "ar": "يُبقي الخيارين متاحين",
+              "kind": "phrase",
+              "x": 54,
+              "y": 82
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Calling a colleague at lunch",
+          "ar": "الاتصال بزميل وقت الغداء",
+          "purposeEn": "Practise calling a colleague at lunch.",
+          "purposeAr": "تدرّب على الاتصال بزميل وقت الغداء.",
+          "image": {
+            "id": "conv-life-l2-032-3",
+            "path": "assets/scenes/conversations/life-l2-032-3.webp",
+            "width": 388,
+            "height": 242,
+            "en": "Calling a colleague at lunch",
+            "ar": "الاتصال بزميل وقت الغداء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                747,
+                1185,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "shift planner",
+              "ar": "مخطّط نوبات العمل",
+              "kind": "object",
+              "x": 60,
+              "y": 86
+            },
+            {
+              "en": "lunch plate",
+              "ar": "طبق الغداء",
+              "kind": "object",
+              "x": 33,
+              "y": 88
+            },
+            {
+              "en": "call a colleague at lunch",
+              "ar": "يتّصل بزميل وقت الغداء",
+              "kind": "phrase",
+              "x": 31,
+              "y": 38
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Checking the deadline for an answer",
+          "ar": "مراجعة آخر موعد للحصول على إجابة",
+          "purposeEn": "Practise checking the deadline for an answer.",
+          "purposeAr": "تدرّب على مراجعة آخر موعد للحصول على إجابة.",
+          "image": {
+            "id": "conv-life-l2-032-4",
+            "path": "assets/scenes/conversations/life-l2-032-4.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Checking the deadline for an answer",
+            "ar": "مراجعة آخر موعد للحصول على إجابة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                747,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "wall clock",
+              "ar": "ساعة حائط",
+              "kind": "object",
+              "x": 51,
+              "y": 25
+            },
+            {
+              "en": "smartphone",
+              "ar": "هاتف ذكي",
+              "kind": "object",
+              "x": 69,
+              "y": 70
+            },
+            {
+              "en": "confirm the answer before four",
+              "ar": "يؤكّد الإجابة قبل الرابعة",
+              "kind": "phrase",
+              "x": 45,
+              "y": 46
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

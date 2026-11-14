@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "afc5f6c80bb442947365c35c6f65d808888a1f9d521123b43468c9aa16776efc"
+  },
+  "conversations": [
+    {
+      "id": "l2-097",
+      "goalAr": "وقت كتابة رسالة طويلة",
+      "goalEn": "Talking about how long writing took",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Writing a letter from scratch",
+          "ar": "كتابة خطاب من البداية",
+          "purposeEn": "Explain how long the letter took to write.",
+          "purposeAr": "وضّح كم استغرقت كتابة الخطاب.",
+          "image": {
+            "id": "conv-life-l2-097-1",
+            "path": "assets/scenes/conversations/life-l2-097-1.webp",
+            "width": 387,
+            "height": 246,
+            "en": "Writing a letter from scratch",
+            "ar": "كتابة خطاب من البداية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                390,
+                249
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "letter",
+              "ar": "خطاب",
+              "kind": "object",
+              "x": 41,
+              "y": 86
+            },
+            {
+              "en": "pen",
+              "ar": "قلم",
+              "kind": "object",
+              "x": 33,
+              "y": 72
+            },
+            {
+              "en": "write a letter from scratch",
+              "ar": "يكتب خطابًا من البداية",
+              "kind": "phrase",
+              "x": 39,
+              "y": 79
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Finding a saved example to reuse",
+          "ar": "العثور على نموذج محفوظ لإعادة استخدامه",
+          "purposeEn": "Suggest reusing an example and ask which part is useful.",
+          "purposeAr": "اقترح استخدام نموذج سابق واسأل عن الجزء المفيد منه.",
+          "image": {
+            "id": "conv-life-l2-097-2",
+            "path": "assets/scenes/conversations/life-l2-097-2.webp",
+            "width": 393,
+            "height": 246,
+            "en": "Finding a saved example to reuse",
+            "ar": "العثور على نموذج محفوظ لإعادة استخدامه",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                396,
+                3,
+                789,
+                249
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "sample letter",
+              "ar": "خطاب نموذجي",
+              "kind": "object",
+              "x": 30,
+              "y": 67
+            },
+            {
+              "en": "desk clock",
+              "ar": "ساعة مكتبية",
+              "kind": "object",
+              "x": 59,
+              "y": 82
+            },
+            {
+              "en": "start from a saved example",
+              "ar": "يبدأ من نموذج محفوظ",
+              "kind": "phrase",
+              "x": 36,
+              "y": 61
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Comparing headings and details",
+          "ar": "مقارنة العناوين والتفاصيل",
+          "purposeEn": "Distinguish the headings to keep from the figures to replace.",
+          "purposeAr": "ميّز بين العناوين التي ستحتفظ بها والأرقام التي ستستبدلها.",
+          "image": {
+            "id": "conv-life-l2-097-3",
+            "path": "assets/scenes/conversations/life-l2-097-3.webp",
+            "width": 398,
+            "height": 246,
+            "en": "Comparing headings and details",
+            "ar": "مقارنة العناوين والتفاصيل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                3,
+                1193,
+                249
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "document heading",
+              "ar": "عنوان في المستند",
+              "kind": "object",
+              "x": 54,
+              "y": 55
+            },
+            {
+              "en": "side-by-side documents",
+              "ar": "مستندان متجاوران",
+              "kind": "object",
+              "x": 31,
+              "y": 58
+            },
+            {
+              "en": "keep the headings",
+              "ar": "يحتفظ بالعناوين",
+              "kind": "phrase",
+              "x": 59,
+              "y": 66
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Setting up a blank copy",
+          "ar": "إعداد نسخة فارغة",
+          "purposeEn": "Explain how a blank copy prevents sending old figures.",
+          "purposeAr": "اشرح كيف تمنع النسخة الفارغة إرسال الأرقام القديمة.",
+          "image": {
+            "id": "conv-life-l2-097-4",
+            "path": "assets/scenes/conversations/life-l2-097-4.webp",
+            "width": 384,
+            "height": 246,
+            "en": "Setting up a blank copy",
+            "ar": "إعداد نسخة فارغة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1199,
+                3,
+                1583,
+                249
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "blank fields",
+              "ar": "خانات فارغة",
+              "kind": "object",
+              "x": 55,
+              "y": 58
+            },
+            {
+              "en": "keyboard",
+              "ar": "لوحة مفاتيح",
+              "kind": "object",
+              "x": 31,
+              "y": 80
+            },
+            {
+              "en": "set up a blank copy",
+              "ar": "يُعِدّ نسخة فارغة",
+              "kind": "phrase",
+              "x": 42,
+              "y": 82
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-098",
+      "goalAr": "تغيير موضوع الحديث",
+      "goalEn": "Politely changing the subject",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Finishing the timetable discussion",
+          "ar": "اختتام النقاش حول الجدول",
+          "purposeEn": "Signal that the timetable has already been discussed.",
+          "purposeAr": "أشر إلى أن النقاش حول الجدول انتهى.",
+          "image": {
+            "id": "conv-life-l2-098-1",
+            "path": "assets/scenes/conversations/life-l2-098-1.webp",
+            "width": 387,
+            "height": 244,
+            "en": "Finishing the timetable discussion",
+            "ar": "اختتام النقاش حول الجدول",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                255,
+                390,
+                499
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "timetable",
+              "ar": "جدول المواعيد",
+              "kind": "object",
+              "x": 55,
+              "y": 72
+            },
+            {
+              "en": "calendar icon",
+              "ar": "رمز التقويم",
+              "kind": "object",
+              "x": 40,
+              "y": 60
+            },
+            {
+              "en": "go over the timetable",
+              "ar": "يراجع الجدول",
+              "kind": "phrase",
+              "x": 34,
+              "y": 67
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Asking to change the subject",
+          "ar": "طلب تغيير موضوع الحديث",
+          "purposeEn": "Ask permission to change the subject, then propose a new topic.",
+          "purposeAr": "استأذن في تغيير الموضوع ثم اقترح موضوعًا جديدًا.",
+          "image": {
+            "id": "conv-life-l2-098-2",
+            "path": "assets/scenes/conversations/life-l2-098-2.webp",
+            "width": 393,
+            "height": 244,
+            "en": "Asking to change the subject",
+            "ar": "طلب تغيير موضوع الحديث",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                396,
+                255,
+                789,
+                499
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "timetable sheet",
+              "ar": "ورقة جدول المواعيد",
+              "kind": "object",
+              "x": 62,
+              "y": 89
+            },
+            {
+              "en": "closed notebook",
+              "ar": "دفتر مغلق",
+              "kind": "object",
+              "x": 30,
+              "y": 86
+            },
+            {
+              "en": "change the subject",
+              "ar": "يغيّر موضوع الحديث",
+              "kind": "phrase",
+              "x": 35,
+              "y": 58
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Reviewing which course activity helped",
+          "ar": "مراجعة النشاط الذي أفاد في الدورة",
+          "purposeEn": "Ask which course activity gave the most speaking practice.",
+          "purposeAr": "اسأل أيّ نشاط أتاح أكثر فرص التحدّث.",
+          "image": {
+            "id": "conv-life-l2-098-3",
+            "path": "assets/scenes/conversations/life-l2-098-3.webp",
+            "width": 398,
+            "height": 244,
+            "en": "Reviewing which course activity helped",
+            "ar": "مراجعة النشاط الذي أفاد في الدورة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                255,
+                1193,
+                499
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "activity card",
+              "ar": "بطاقة نشاط",
+              "kind": "object",
+              "x": 30,
+              "y": 87
+            },
+            {
+              "en": "teamwork picture",
+              "ar": "صورة للعمل الجماعي",
+              "kind": "object",
+              "x": 58,
+              "y": 83
+            },
+            {
+              "en": "talk about how the course went",
+              "ar": "يتحدّث عن سير الدورة",
+              "kind": "phrase",
+              "x": 37,
+              "y": 68
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Solving a problem together",
+          "ar": "حلّ مسألة بالتعاون",
+          "purposeEn": "Describe how solving a shared problem helped the learners speak.",
+          "purposeAr": "صف كيف ساعد حلّ مسألة مشتركة المتعلّمين على التحدّث.",
+          "image": {
+            "id": "conv-life-l2-098-4",
+            "path": "assets/scenes/conversations/life-l2-098-4.webp",
+            "width": 384,
+            "height": 244,
+            "en": "Solving a problem together",
+            "ar": "حلّ مسألة بالتعاون",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1199,
+                255,
+                1583,
+                499
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "wooden puzzle piece",
+              "ar": "قطعة أحجية خشبية",
+              "kind": "object",
+              "x": 48,
+              "y": 76
+            },
+            {
+              "en": "puzzle board",
+              "ar": "لوحة أحجية",
+              "kind": "object",
+              "x": 58,
+              "y": 88
+            },
+            {
+              "en": "solve a problem together",
+              "ar": "يحلّ مسألة بالتعاون مع الآخرين",
+              "kind": "phrase",
+              "x": 60,
+              "y": 74
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-099",
+      "goalAr": "الوقت المناسب لإرسال الطلب",
+      "goalEn": "Checking how soon a task is due",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Asking someone to upload a form",
+          "ar": "طلب رفع استمارة",
+          "purposeEn": "Make a polite request to upload a form when convenient.",
+          "purposeAr": "اطلب بلطف رفع الاستمارة عندما يتّسع الوقت.",
+          "image": {
+            "id": "conv-life-l2-099-1",
+            "path": "assets/scenes/conversations/life-l2-099-1.webp",
+            "width": 387,
+            "height": 228,
+            "en": "Asking someone to upload a form",
+            "ar": "طلب رفع استمارة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                505,
+                390,
+                733
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "application form",
+              "ar": "استمارة طلب",
+              "kind": "object",
+              "x": 46,
+              "y": 64
+            },
+            {
+              "en": "form field",
+              "ar": "خانة في الاستمارة",
+              "kind": "object",
+              "x": 47,
+              "y": 58
+            },
+            {
+              "en": "upload the form when you have a moment",
+              "ar": "ارفع الاستمارة حين يتّسع وقتك",
+              "kind": "phrase",
+              "x": 38,
+              "y": 72
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Deciding between one page and the whole file",
+          "ar": "الاختيار بين صفحة واحدة والملف الكامل",
+          "purposeEn": "Clarify the deadline and ask which part of the file is needed.",
+          "purposeAr": "استوضح الموعد النهائي واسأل أيّ جزء من الملف مطلوب.",
+          "image": {
+            "id": "conv-life-l2-099-2",
+            "path": "assets/scenes/conversations/life-l2-099-2.webp",
+            "width": 393,
+            "height": 228,
+            "en": "Deciding between one page and the whole file",
+            "ar": "الاختيار بين صفحة واحدة والملف الكامل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                396,
+                505,
+                789,
+                733
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "single page",
+              "ar": "صفحة واحدة",
+              "kind": "object",
+              "x": 31,
+              "y": 61
+            },
+            {
+              "en": "file folder",
+              "ar": "مجلّد ملفات",
+              "kind": "object",
+              "x": 65,
+              "y": 70
+            },
+            {
+              "en": "send the updated page first",
+              "ar": "أرسل الصفحة المحدّثة أولًا",
+              "kind": "phrase",
+              "x": 40,
+              "y": 65
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Uploading the updated page for review",
+          "ar": "رفع الصفحة المحدّثة للمراجعة",
+          "purposeEn": "Explain why the updated page should be checked first.",
+          "purposeAr": "اشرح لماذا ينبغي مراجعة الصفحة المحدّثة أولًا.",
+          "image": {
+            "id": "conv-life-l2-099-3",
+            "path": "assets/scenes/conversations/life-l2-099-3.webp",
+            "width": 398,
+            "height": 228,
+            "en": "Uploading the updated page for review",
+            "ar": "رفع الصفحة المحدّثة للمراجعة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                505,
+                1193,
+                733
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "upload icon",
+              "ar": "رمز الرفع",
+              "kind": "object",
+              "x": 74,
+              "y": 52
+            },
+            {
+              "en": "form preview",
+              "ar": "معاينة الاستمارة",
+              "kind": "object",
+              "x": 53,
+              "y": 50
+            },
+            {
+              "en": "upload an updated page",
+              "ar": "يرفع صفحة محدّثة",
+              "kind": "phrase",
+              "x": 65,
+              "y": 80
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Preparing the full file after confirmation",
+          "ar": "تجهيز الملف الكامل بعد التأكيد",
+          "purposeEn": "Say what you will send once the change has been confirmed.",
+          "purposeAr": "اذكر ما سترسله بعد تأكيد التعديل.",
+          "image": {
+            "id": "conv-life-l2-099-4",
+            "path": "assets/scenes/conversations/life-l2-099-4.webp",
+            "width": 384,
+            "height": 228,
+            "en": "Preparing the full file after confirmation",
+            "ar": "تجهيز الملف الكامل بعد التأكيد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1199,
+                505,
+                1583,
+                733
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "confirmation checkmark",
+              "ar": "علامة تأكيد",
+              "kind": "object",
+              "x": 59,
+              "y": 53
+            },
+            {
+              "en": "document folder",
+              "ar": "ملف مستندات",
+              "kind": "object",
+              "x": 26,
+              "y": 61
+            },
+            {
+              "en": "send the whole file after confirmation",
+              "ar": "يرسل الملف كاملًا بعد التأكيد",
+              "kind": "phrase",
+              "x": 77,
+              "y": 59
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-100",
+      "goalAr": "استعارة ملاحظات الدرس",
+      "goalEn": "Borrowing a classmate's notes",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Asking to borrow lecture notes",
+          "ar": "طلب استعارة ملاحظات المحاضرة",
+          "purposeEn": "Explain why you need to borrow someone’s lecture notes.",
+          "purposeAr": "اشرح سبب حاجتك إلى استعارة ملاحظات المحاضرة.",
+          "image": {
+            "id": "conv-life-l2-100-1",
+            "path": "assets/scenes/conversations/life-l2-100-1.webp",
+            "width": 387,
+            "height": 250,
+            "en": "Asking to borrow lecture notes",
+            "ar": "طلب استعارة ملاحظات المحاضرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                739,
+                390,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "lecture notes",
+              "ar": "ملاحظات المحاضرة",
+              "kind": "object",
+              "x": 76,
+              "y": 66
+            },
+            {
+              "en": "open notebook",
+              "ar": "دفتر مفتوح",
+              "kind": "object",
+              "x": 40,
+              "y": 90
+            },
+            {
+              "en": "borrow someone’s notes",
+              "ar": "يستعير ملاحظات شخص",
+              "kind": "phrase",
+              "x": 41,
+              "y": 55
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Scanning a page of notes",
+          "ar": "مسح صفحة من الملاحظات ضوئيًا",
+          "purposeEn": "Offer to send a scan and check what the other person needs included.",
+          "purposeAr": "اعرض إرسال نسخة ممسوحة واسأل ما الذي ينبغي أن تتضمّنه.",
+          "image": {
+            "id": "conv-life-l2-100-2",
+            "path": "assets/scenes/conversations/life-l2-100-2.webp",
+            "width": 393,
+            "height": 250,
+            "en": "Scanning a page of notes",
+            "ar": "مسح صفحة من الملاحظات ضوئيًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                396,
+                739,
+                789,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "phone camera",
+              "ar": "كاميرا الهاتف",
+              "kind": "object",
+              "x": 41,
+              "y": 59
+            },
+            {
+              "en": "example diagram",
+              "ar": "رسم توضيحي لمثال",
+              "kind": "object",
+              "x": 64,
+              "y": 59
+            },
+            {
+              "en": "scan a page with your phone",
+              "ar": "يمسح صفحة ضوئيًا بهاتفه",
+              "kind": "phrase",
+              "x": 44,
+              "y": 67
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Highlighting the example at the bottom",
+          "ar": "تمييز المثال في أسفل الصفحة",
+          "purposeEn": "Tell the learner how to spot the example quickly.",
+          "purposeAr": "أخبر المتعلّم كيف يعثر على المثال بسرعة.",
+          "image": {
+            "id": "conv-life-l2-100-3",
+            "path": "assets/scenes/conversations/life-l2-100-3.webp",
+            "width": 398,
+            "height": 250,
+            "en": "Highlighting the example at the bottom",
+            "ar": "تمييز المثال في أسفل الصفحة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                739,
+                1193,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "yellow highlighter",
+              "ar": "قلم تمييز أصفر",
+              "kind": "object",
+              "x": 37,
+              "y": 80
+            },
+            {
+              "en": "worked example",
+              "ar": "مثال محلول",
+              "kind": "object",
+              "x": 57,
+              "y": 88
+            },
+            {
+              "en": "mark the example at the bottom",
+              "ar": "يميّز المثال في أسفل الصفحة",
+              "kind": "phrase",
+              "x": 43,
+              "y": 88
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Trying the example independently",
+          "ar": "محاولة حلّ المثال دون مساعدة",
+          "purposeEn": "Say which part you will try on your own and when you will ask for help.",
+          "purposeAr": "اذكر ما ستجرّبه بنفسك ومتى ستطلب المساعدة.",
+          "image": {
+            "id": "conv-life-l2-100-4",
+            "path": "assets/scenes/conversations/life-l2-100-4.webp",
+            "width": 384,
+            "height": 250,
+            "en": "Trying the example independently",
+            "ar": "محاولة حلّ المثال دون مساعدة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1199,
+                739,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "pencil",
+              "ar": "قلم رصاص",
+              "kind": "object",
+              "x": 48,
+              "y": 79
+            },
+            {
+              "en": "exercise page",
+              "ar": "صفحة تمارين",
+              "kind": "object",
+              "x": 60,
+              "y": 90
+            },
+            {
+              "en": "work through the example on your own",
+              "ar": "حلّ المثال خطوة بخطوة بنفسك",
+              "kind": "phrase",
+              "x": 46,
+              "y": 83
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

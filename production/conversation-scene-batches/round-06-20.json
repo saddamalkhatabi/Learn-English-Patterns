@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "9dbd59c4e583367362dadee079e971ed40613ed8eedf6972ce22ad30e2239649"
+  },
+  "conversations": [
+    {
+      "id": "l2-037",
+      "goalAr": "الاستعداد للعودة إلى العمل",
+      "goalEn": "Getting ready to resume work",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Returning to the desk after a break",
+          "ar": "العودة إلى المكتب بعد الاستراحة",
+          "purposeEn": "Practise returning to the desk after a break.",
+          "purposeAr": "تدرّب على العودة إلى المكتب بعد الاستراحة.",
+          "image": {
+            "id": "conv-life-l2-037-1",
+            "path": "assets/scenes/conversations/life-l2-037-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Returning to the desk after a break",
+            "ar": "العودة إلى المكتب بعد الاستراحة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                393,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "coffee mug",
+              "ar": "كوب قهوة",
+              "kind": "object",
+              "x": 27,
+              "y": 84
+            },
+            {
+              "en": "closed folder",
+              "ar": "ملف مغلق",
+              "kind": "object",
+              "x": 63,
+              "y": 89
+            },
+            {
+              "en": "get back to work",
+              "ar": "يعود إلى العمل",
+              "kind": "phrase",
+              "x": 52,
+              "y": 63
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Reviewing two requests together",
+          "ar": "مراجعة طلبين معًا",
+          "purposeEn": "Practise reviewing two requests together.",
+          "purposeAr": "تدرّب على مراجعة طلبين معًا.",
+          "image": {
+            "id": "conv-life-l2-037-2",
+            "path": "assets/scenes/conversations/life-l2-037-2.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Reviewing two requests together",
+            "ar": "مراجعة طلبين معًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                3,
+                789,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "blue folder",
+              "ar": "ملف أزرق",
+              "kind": "object",
+              "x": 35,
+              "y": 85
+            },
+            {
+              "en": "red folder",
+              "ar": "ملف أحمر",
+              "kind": "object",
+              "x": 78,
+              "y": 87
+            },
+            {
+              "en": "go through the requests together",
+              "ar": "يراجع الطلبات مع زميل",
+              "kind": "phrase",
+              "x": 53,
+              "y": 77
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Identifying the request due today",
+          "ar": "تحديد الطلب الذي يلزم الرد عليه اليوم",
+          "purposeEn": "Practise identifying the request due today.",
+          "purposeAr": "تدرّب على تحديد الطلب الذي يلزم الرد عليه اليوم.",
+          "image": {
+            "id": "conv-life-l2-037-3",
+            "path": "assets/scenes/conversations/life-l2-037-3.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Identifying the request due today",
+            "ar": "تحديد الطلب الذي يلزم الرد عليه اليوم",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                3,
+                1186,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "priority tab",
+              "ar": "علامة الأولوية",
+              "kind": "object",
+              "x": 73,
+              "y": 82
+            },
+            {
+              "en": "booking request",
+              "ar": "طلب حجز",
+              "kind": "object",
+              "x": 65,
+              "y": 90
+            },
+            {
+              "en": "deal with the urgent request first",
+              "ar": "يعالج الطلب العاجل أولًا",
+              "kind": "phrase",
+              "x": 69,
+              "y": 77
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Finding available booking dates",
+          "ar": "العثور على المواعيد المتاحة للحجز",
+          "purposeEn": "Practise finding available booking dates.",
+          "purposeAr": "تدرّب على العثور على المواعيد المتاحة للحجز.",
+          "image": {
+            "id": "conv-life-l2-037-4",
+            "path": "assets/scenes/conversations/life-l2-037-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Finding available booking dates",
+            "ar": "العثور على المواعيد المتاحة للحجز",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                3,
+                1583,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "booking calendar",
+              "ar": "تقويم الحجوزات",
+              "kind": "object",
+              "x": 58,
+              "y": 46
+            },
+            {
+              "en": "available date",
+              "ar": "موعد متاح",
+              "kind": "object",
+              "x": 50,
+              "y": 55
+            },
+            {
+              "en": "check the available dates",
+              "ar": "يتحقّق من المواعيد المتاحة",
+              "kind": "phrase",
+              "x": 46,
+              "y": 59
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-038",
+      "goalAr": "تمييز ثمرة غير مألوفة",
+      "goalEn": "Identifying an unfamiliar fruit",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Asking about an unfamiliar fruit",
+          "ar": "السؤال عن ثمرة غير مألوفة",
+          "purposeEn": "Practise asking about an unfamiliar fruit.",
+          "purposeAr": "تدرّب على السؤال عن ثمرة غير مألوفة.",
+          "image": {
+            "id": "conv-life-l2-038-1",
+            "path": "assets/scenes/conversations/life-l2-038-1.webp",
+            "width": 390,
+            "height": 240,
+            "en": "Asking about an unfamiliar fruit",
+            "ar": "السؤال عن ثمرة غير مألوفة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                252,
+                393,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "lemons",
+              "ar": "حبّات ليمون",
+              "kind": "object",
+              "x": 53,
+              "y": 89
+            },
+            {
+              "en": "orange-coloured fruit",
+              "ar": "ثمرة برتقالية اللون",
+              "kind": "object",
+              "x": 80,
+              "y": 78
+            },
+            {
+              "en": "what fruit is this",
+              "ar": "ما هذه الثمرة؟",
+              "kind": "phrase",
+              "x": 64,
+              "y": 67
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Looking more closely at the fruit",
+          "ar": "إلقاء نظرة عن قرب على الثمرة",
+          "purposeEn": "Practise looking more closely at the fruit.",
+          "purposeAr": "تدرّب على إلقاء نظرة عن قرب على الثمرة.",
+          "image": {
+            "id": "conv-life-l2-038-2",
+            "path": "assets/scenes/conversations/life-l2-038-2.webp",
+            "width": 389,
+            "height": 240,
+            "en": "Looking more closely at the fruit",
+            "ar": "إلقاء نظرة عن قرب على الثمرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                252,
+                789,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "fruit",
+              "ar": "ثمرة",
+              "kind": "object",
+              "x": 64,
+              "y": 48
+            },
+            {
+              "en": "fruit stall",
+              "ar": "بسطة فواكه",
+              "kind": "object",
+              "x": 83,
+              "y": 90
+            },
+            {
+              "en": "take a closer look",
+              "ar": "يلقي نظرة عن قرب",
+              "kind": "phrase",
+              "x": 66,
+              "y": 53
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Asking which fruit is ready to eat",
+          "ar": "السؤال عن الثمرة الجاهزة للأكل",
+          "purposeEn": "Practise asking which fruit is ready to eat.",
+          "purposeAr": "تدرّب على السؤال عن الثمرة الجاهزة للأكل.",
+          "image": {
+            "id": "conv-life-l2-038-3",
+            "path": "assets/scenes/conversations/life-l2-038-3.webp",
+            "width": 391,
+            "height": 240,
+            "en": "Asking which fruit is ready to eat",
+            "ar": "السؤال عن الثمرة الجاهزة للأكل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                252,
+                1186,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "orange",
+              "ar": "برتقالة",
+              "kind": "object",
+              "x": 65,
+              "y": 50
+            },
+            {
+              "en": "green fruit",
+              "ar": "ثمرة خضراء",
+              "kind": "object",
+              "x": 79,
+              "y": 47
+            },
+            {
+              "en": "compare two pieces of fruit",
+              "ar": "يقارن ثمرتين",
+              "kind": "phrase",
+              "x": 74,
+              "y": 57
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Buying fruit to eat now and later",
+          "ar": "شراء فاكهة للأكل الآن ولاحقًا",
+          "purposeEn": "Practise buying fruit to eat now and later.",
+          "purposeAr": "تدرّب على شراء فاكهة للأكل الآن ولاحقًا.",
+          "image": {
+            "id": "conv-life-l2-038-4",
+            "path": "assets/scenes/conversations/life-l2-038-4.webp",
+            "width": 390,
+            "height": 240,
+            "en": "Buying fruit to eat now and later",
+            "ar": "شراء فاكهة للأكل الآن ولاحقًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                252,
+                1583,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "paper shopping bag",
+              "ar": "كيس تسوّق ورقي",
+              "kind": "object",
+              "x": 50,
+              "y": 84
+            },
+            {
+              "en": "bag handle",
+              "ar": "مقبض الكيس",
+              "kind": "object",
+              "x": 49,
+              "y": 64
+            },
+            {
+              "en": "put the fruit in the bag",
+              "ar": "يضع الفاكهة في الكيس",
+              "kind": "phrase",
+              "x": 44,
+              "y": 66
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-039",
+      "goalAr": "اتصال عند الوصول",
+      "goalEn": "A call as soon as you get home",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Saying goodbye at the bus stop",
+          "ar": "توديع صديق عند موقف الحافلة",
+          "purposeEn": "Practise saying goodbye at the bus stop.",
+          "purposeAr": "تدرّب على توديع صديق عند موقف الحافلة.",
+          "image": {
+            "id": "conv-life-l2-039-1",
+            "path": "assets/scenes/conversations/life-l2-039-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Saying goodbye at the bus stop",
+            "ar": "توديع صديق عند موقف الحافلة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                498,
+                393,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "city bus",
+              "ar": "حافلة المدينة",
+              "kind": "object",
+              "x": 81,
+              "y": 37
+            },
+            {
+              "en": "backpack",
+              "ar": "حقيبة ظهر",
+              "kind": "object",
+              "x": 23,
+              "y": 72
+            },
+            {
+              "en": "wave goodbye",
+              "ar": "يلوّح مودّعًا",
+              "kind": "phrase",
+              "x": 40,
+              "y": 41
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Asking for a call on arrival",
+          "ar": "طلب الاتصال عند الوصول",
+          "purposeEn": "Practise asking for a call on arrival.",
+          "purposeAr": "تدرّب على طلب الاتصال عند الوصول.",
+          "image": {
+            "id": "conv-life-l2-039-2",
+            "path": "assets/scenes/conversations/life-l2-039-2.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Asking for a call on arrival",
+            "ar": "طلب الاتصال عند الوصول",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                498,
+                789,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "mobile phone",
+              "ar": "هاتف محمول",
+              "kind": "object",
+              "x": 77,
+              "y": 68
+            },
+            {
+              "en": "bus door",
+              "ar": "باب الحافلة",
+              "kind": "object",
+              "x": 66,
+              "y": 26
+            },
+            {
+              "en": "call me when you get home",
+              "ar": "اتّصل بي عندما تصل إلى البيت",
+              "kind": "phrase",
+              "x": 66,
+              "y": 66
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Going straight home",
+          "ar": "الذهاب إلى البيت مباشرة",
+          "purposeEn": "Practise going straight home.",
+          "purposeAr": "تدرّب على الذهاب إلى البيت مباشرة.",
+          "image": {
+            "id": "conv-life-l2-039-3",
+            "path": "assets/scenes/conversations/life-l2-039-3.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Going straight home",
+            "ar": "الذهاب إلى البيت مباشرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                498,
+                1186,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "front door",
+              "ar": "الباب الأمامي",
+              "kind": "object",
+              "x": 74,
+              "y": 44
+            },
+            {
+              "en": "front steps",
+              "ar": "درجات المدخل",
+              "kind": "object",
+              "x": 73,
+              "y": 82
+            },
+            {
+              "en": "go straight home",
+              "ar": "يذهب إلى البيت مباشرة",
+              "kind": "phrase",
+              "x": 53,
+              "y": 72
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Keeping the phone nearby",
+          "ar": "إبقاء الهاتف في متناول اليد",
+          "purposeEn": "Practise keeping the phone nearby.",
+          "purposeAr": "تدرّب على إبقاء الهاتف في متناول اليد.",
+          "image": {
+            "id": "conv-life-l2-039-4",
+            "path": "assets/scenes/conversations/life-l2-039-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Keeping the phone nearby",
+            "ar": "إبقاء الهاتف في متناول اليد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                498,
+                1583,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "incoming call icon",
+              "ar": "رمز مكالمة واردة",
+              "kind": "object",
+              "x": 54,
+              "y": 58
+            },
+            {
+              "en": "side table",
+              "ar": "طاولة جانبية",
+              "kind": "object",
+              "x": 30,
+              "y": 70
+            },
+            {
+              "en": "keep your phone nearby",
+              "ar": "أبقِ هاتفك في متناول يدك",
+              "kind": "phrase",
+              "x": 57,
+              "y": 67
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-040",
+      "goalAr": "قراءة أم تلفاز؟",
+      "goalEn": "Choosing a quiet evening activity",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Choosing between reading and watching television",
+          "ar": "الاختيار بين القراءة ومشاهدة التلفاز",
+          "purposeEn": "Practise choosing between reading and watching television.",
+          "purposeAr": "تدرّب على الاختيار بين القراءة ومشاهدة التلفاز.",
+          "image": {
+            "id": "conv-life-l2-040-1",
+            "path": "assets/scenes/conversations/life-l2-040-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Choosing between reading and watching television",
+            "ar": "الاختيار بين القراءة ومشاهدة التلفاز",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                747,
+                393,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "television",
+              "ar": "تلفاز",
+              "kind": "object",
+              "x": 22,
+              "y": 37
+            },
+            {
+              "en": "open book",
+              "ar": "كتاب مفتوح",
+              "kind": "object",
+              "x": 78,
+              "y": 73
+            },
+            {
+              "en": "prefer reading to watching TV",
+              "ar": "يفضّل القراءة على مشاهدة التلفاز",
+              "kind": "phrase",
+              "x": 78,
+              "y": 69
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Switching off the television and recommending a book",
+          "ar": "إطفاء التلفاز وترشيح كتاب",
+          "purposeEn": "Practise switching off the television and recommending a book.",
+          "purposeAr": "تدرّب على إطفاء التلفاز وترشيح كتاب.",
+          "image": {
+            "id": "conv-life-l2-040-2",
+            "path": "assets/scenes/conversations/life-l2-040-2.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Switching off the television and recommending a book",
+            "ar": "إطفاء التلفاز وترشيح كتاب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                747,
+                789,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "remote control",
+              "ar": "جهاز تحكّم عن بُعد",
+              "kind": "object",
+              "x": 49,
+              "y": 66
+            },
+            {
+              "en": "top shelf",
+              "ar": "الرفّ العلوي",
+              "kind": "object",
+              "x": 86,
+              "y": 28
+            },
+            {
+              "en": "recommend a book",
+              "ar": "يرشّح كتابًا",
+              "kind": "phrase",
+              "x": 62,
+              "y": 35
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Picking a collection of short stories",
+          "ar": "اختيار مجموعة قصص قصيرة",
+          "purposeEn": "Practise picking a collection of short stories.",
+          "purposeAr": "تدرّب على اختيار مجموعة قصص قصيرة.",
+          "image": {
+            "id": "conv-life-l2-040-3",
+            "path": "assets/scenes/conversations/life-l2-040-3.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Picking a collection of short stories",
+            "ar": "اختيار مجموعة قصص قصيرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                747,
+                1186,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "book cover",
+              "ar": "غلاف كتاب",
+              "kind": "object",
+              "x": 73,
+              "y": 35
+            },
+            {
+              "en": "bookshelf",
+              "ar": "رف كتب",
+              "kind": "object",
+              "x": 85,
+              "y": 18
+            },
+            {
+              "en": "take a book off the shelf",
+              "ar": "يأخذ كتابًا من الرف",
+              "kind": "phrase",
+              "x": 68,
+              "y": 42
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Starting a story set by the sea",
+          "ar": "البدء بقصة تدور أحداثها قرب البحر",
+          "purposeEn": "Practise starting a story set by the sea.",
+          "purposeAr": "تدرّب على البدء بقصة تدور أحداثها قرب البحر.",
+          "image": {
+            "id": "conv-life-l2-040-4",
+            "path": "assets/scenes/conversations/life-l2-040-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Starting a story set by the sea",
+            "ar": "البدء بقصة تدور أحداثها قرب البحر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                747,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "lighthouse illustration",
+              "ar": "رسم منارة",
+              "kind": "object",
+              "x": 55,
+              "y": 65
+            },
+            {
+              "en": "bookmark",
+              "ar": "علامة كتاب",
+              "kind": "object",
+              "x": 34,
+              "y": 90
+            },
+            {
+              "en": "start with the first story",
+              "ar": "يبدأ بالقصة الأولى",
+              "kind": "phrase",
+              "x": 58,
+              "y": 61
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

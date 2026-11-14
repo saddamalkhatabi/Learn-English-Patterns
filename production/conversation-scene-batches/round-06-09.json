@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "5b651ee4930f1d2239f110afbdbf36bf0b0357e1d928c2f10d0b6ad2adb372f5"
+  },
+  "conversations": [
+    {
+      "id": "exchange-train-ticket",
+      "goalAr": "تبديل تذكرة القطار",
+      "goalEn": "Exchanging a train ticket",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Asking for an earlier train",
+          "ar": "طلب السفر بقطار أبكر",
+          "purposeEn": "Practise asking for an earlier train.",
+          "purposeAr": "تدرّب على طلب السفر بقطار أبكر.",
+          "image": {
+            "id": "conv-life-exchange-train-ticket-1",
+            "path": "assets/scenes/conversations/life-exchange-train-ticket-1.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Asking for an earlier train",
+            "ar": "طلب السفر بقطار أبكر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                394,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "train ticket",
+              "ar": "تذكرة قطار",
+              "kind": "object",
+              "x": 66,
+              "y": 69
+            },
+            {
+              "en": "ticket window",
+              "ar": "شبّاك التذاكر",
+              "kind": "object",
+              "x": 72,
+              "y": 36
+            },
+            {
+              "en": "ask to change a ticket",
+              "ar": "يطلب تغيير تذكرة",
+              "kind": "phrase",
+              "x": 58,
+              "y": 73
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Checking available departures",
+          "ar": "التحقّق من الرحلات المتاحة",
+          "purposeEn": "Practise checking available departures.",
+          "purposeAr": "تدرّب على التحقّق من الرحلات المتاحة.",
+          "image": {
+            "id": "conv-life-exchange-train-ticket-2",
+            "path": "assets/scenes/conversations/life-exchange-train-ticket-2.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Checking available departures",
+            "ar": "التحقّق من الرحلات المتاحة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                3,
+                789,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "train timetable",
+              "ar": "جدول القطارات",
+              "kind": "object",
+              "x": 62,
+              "y": 58
+            },
+            {
+              "en": "keyboard",
+              "ar": "لوحة مفاتيح",
+              "kind": "object",
+              "x": 60,
+              "y": 90
+            },
+            {
+              "en": "check the train times",
+              "ar": "يتحقق من مواعيد القطارات",
+              "kind": "phrase",
+              "x": 64,
+              "y": 36
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Confirming the new departure time",
+          "ar": "تأكيد موعد المغادرة الجديد",
+          "purposeEn": "Practise confirming the new departure time.",
+          "purposeAr": "تدرّب على تأكيد موعد المغادرة الجديد.",
+          "image": {
+            "id": "conv-life-exchange-train-ticket-3",
+            "path": "assets/scenes/conversations/life-exchange-train-ticket-3.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Confirming the new departure time",
+            "ar": "تأكيد موعد المغادرة الجديد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                3,
+                1186,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "station clock",
+              "ar": "ساعة المحطة",
+              "kind": "object",
+              "x": 85,
+              "y": 25
+            },
+            {
+              "en": "card terminal",
+              "ar": "جهاز دفع بالبطاقة",
+              "kind": "object",
+              "x": 77,
+              "y": 83
+            },
+            {
+              "en": "take the four o'clock train",
+              "ar": "يستقل قطار الرابعة",
+              "kind": "phrase",
+              "x": 74,
+              "y": 50
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Receiving the replacement ticket",
+          "ar": "استلام التذكرة البديلة",
+          "purposeEn": "Practise receiving the replacement ticket.",
+          "purposeAr": "تدرّب على استلام التذكرة البديلة.",
+          "image": {
+            "id": "conv-life-exchange-train-ticket-4",
+            "path": "assets/scenes/conversations/life-exchange-train-ticket-4.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Receiving the replacement ticket",
+            "ar": "استلام التذكرة البديلة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                3,
+                1583,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "replacement ticket",
+              "ar": "تذكرة بديلة",
+              "kind": "object",
+              "x": 53,
+              "y": 56
+            },
+            {
+              "en": "seat symbol",
+              "ar": "رمز المقعد",
+              "kind": "object",
+              "x": 59,
+              "y": 55
+            },
+            {
+              "en": "hand over the new ticket",
+              "ar": "يسلّم التذكرة الجديدة",
+              "kind": "phrase",
+              "x": 32,
+              "y": 64
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "airport-meeting-sign",
+      "goalAr": "لافتة استقبال في المطار",
+      "goalEn": "A sign for an airport pickup",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Planning how to meet a guest",
+          "ar": "التخطيط لاستقبال ضيف",
+          "purposeEn": "Practise planning how to meet a guest.",
+          "purposeAr": "تدرّب على التخطيط لاستقبال ضيف.",
+          "image": {
+            "id": "conv-life-airport-meeting-sign-1",
+            "path": "assets/scenes/conversations/life-airport-meeting-sign-1.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Planning how to meet a guest",
+            "ar": "التخطيط لاستقبال ضيف",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                251,
+                394,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "carry-on suitcase",
+              "ar": "حقيبة سفر صغيرة",
+              "kind": "object",
+              "x": 21,
+              "y": 87
+            },
+            {
+              "en": "signboard",
+              "ar": "لوحة",
+              "kind": "object",
+              "x": 51,
+              "y": 76
+            },
+            {
+              "en": "meet someone at the airport",
+              "ar": "يستقبل شخصًا في المطار",
+              "kind": "phrase",
+              "x": 38,
+              "y": 61
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Preparing a greeting sign",
+          "ar": "تجهيز لافتة للاستقبال",
+          "purposeEn": "Practise preparing a greeting sign.",
+          "purposeAr": "تدرّب على تجهيز لافتة للاستقبال.",
+          "image": {
+            "id": "conv-life-airport-meeting-sign-2",
+            "path": "assets/scenes/conversations/life-airport-meeting-sign-2.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Preparing a greeting sign",
+            "ar": "تجهيز لافتة للاستقبال",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                251,
+                789,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "printer",
+              "ar": "طابعة",
+              "kind": "object",
+              "x": 19,
+              "y": 55
+            },
+            {
+              "en": "sheet of paper",
+              "ar": "ورقة",
+              "kind": "object",
+              "x": 36,
+              "y": 74
+            },
+            {
+              "en": "print a sign",
+              "ar": "يطبع لافتة",
+              "kind": "phrase",
+              "x": 42,
+              "y": 73
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Waiting at the arrivals doors",
+          "ar": "الانتظار عند بوابات الوصول",
+          "purposeEn": "Practise waiting at the arrivals doors.",
+          "purposeAr": "تدرّب على الانتظار عند بوابات الوصول.",
+          "image": {
+            "id": "conv-life-airport-meeting-sign-3",
+            "path": "assets/scenes/conversations/life-airport-meeting-sign-3.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Waiting at the arrivals doors",
+            "ar": "الانتظار عند بوابات الوصول",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                251,
+                1186,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "greeting sign",
+              "ar": "لافتة استقبال",
+              "kind": "object",
+              "x": 38,
+              "y": 59
+            },
+            {
+              "en": "glass doors",
+              "ar": "أبواب زجاجية",
+              "kind": "object",
+              "x": 77,
+              "y": 33
+            },
+            {
+              "en": "hold up a sign",
+              "ar": "يرفع لافتة",
+              "kind": "phrase",
+              "x": 36,
+              "y": 65
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Sending your location from the desk",
+          "ar": "إرسال موقعك من عند مكتب الاستعلامات",
+          "purposeEn": "Practise sending your location from the desk.",
+          "purposeAr": "تدرّب على إرسال موقعك من عند مكتب الاستعلامات.",
+          "image": {
+            "id": "conv-life-airport-meeting-sign-4",
+            "path": "assets/scenes/conversations/life-airport-meeting-sign-4.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Sending your location from the desk",
+            "ar": "إرسال موقعك من عند مكتب الاستعلامات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                251,
+                1583,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "information desk",
+              "ar": "مكتب الاستعلامات",
+              "kind": "object",
+              "x": 73,
+              "y": 78
+            },
+            {
+              "en": "smartphone",
+              "ar": "هاتف ذكي",
+              "kind": "object",
+              "x": 47,
+              "y": 47
+            },
+            {
+              "en": "text your location",
+              "ar": "أرسل موقعك برسالة",
+              "kind": "phrase",
+              "x": 46,
+              "y": 53
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "walk-around-the-block",
+      "goalAr": "المشي حول الحي",
+      "goalEn": "A walk around the block",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Starting a neighbourhood walk",
+          "ar": "بدء جولة مشيًا في الحي",
+          "purposeEn": "Practise starting a neighbourhood walk.",
+          "purposeAr": "تدرّب على بدء جولة مشيًا في الحي.",
+          "image": {
+            "id": "conv-life-walk-around-the-block-1",
+            "path": "assets/scenes/conversations/life-walk-around-the-block-1.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Starting a neighbourhood walk",
+            "ar": "بدء جولة مشيًا في الحي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                498,
+                394,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "front door",
+              "ar": "الباب الأمامي",
+              "kind": "object",
+              "x": 20,
+              "y": 45
+            },
+            {
+              "en": "walking shoes",
+              "ar": "حذاء للمشي",
+              "kind": "object",
+              "x": 43,
+              "y": 88
+            },
+            {
+              "en": "walk around the block",
+              "ar": "يمشي حول مربع سكني",
+              "kind": "phrase",
+              "x": 45,
+              "y": 63
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Meeting a friend at the corner",
+          "ar": "لقاء صديق عند ناصية الشارع",
+          "purposeEn": "Practise meeting a friend at the corner.",
+          "purposeAr": "تدرّب على لقاء صديق عند ناصية الشارع.",
+          "image": {
+            "id": "conv-life-walk-around-the-block-2",
+            "path": "assets/scenes/conversations/life-walk-around-the-block-2.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Meeting a friend at the corner",
+            "ar": "لقاء صديق عند ناصية الشارع",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                498,
+                789,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "sidewalk",
+              "ar": "رصيف",
+              "kind": "object",
+              "x": 65,
+              "y": 87
+            },
+            {
+              "en": "tree shade",
+              "ar": "ظل الشجرة",
+              "kind": "object",
+              "x": 58,
+              "y": 14
+            },
+            {
+              "en": "wave to a friend",
+              "ar": "يلوّح لصديق",
+              "kind": "phrase",
+              "x": 50,
+              "y": 36
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Walking past the park",
+          "ar": "المشي بمحاذاة الحديقة",
+          "purposeEn": "Practise walking past the park.",
+          "purposeAr": "تدرّب على المشي بمحاذاة الحديقة.",
+          "image": {
+            "id": "conv-life-walk-around-the-block-3",
+            "path": "assets/scenes/conversations/life-walk-around-the-block-3.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Walking past the park",
+            "ar": "المشي بمحاذاة الحديقة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                498,
+                1186,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "park fence",
+              "ar": "سياج الحديقة",
+              "kind": "object",
+              "x": 27,
+              "y": 49
+            },
+            {
+              "en": "pavement",
+              "ar": "رصيف",
+              "kind": "object",
+              "x": 74,
+              "y": 77
+            },
+            {
+              "en": "walk past the park",
+              "ar": "يمرّ بجانب الحديقة مشيًا",
+              "kind": "phrase",
+              "x": 49,
+              "y": 65
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Crossing at the traffic lights",
+          "ar": "عبور الطريق عند الإشارة",
+          "purposeEn": "Practise crossing at the traffic lights.",
+          "purposeAr": "تدرّب على عبور الطريق عند الإشارة.",
+          "image": {
+            "id": "conv-life-walk-around-the-block-4",
+            "path": "assets/scenes/conversations/life-walk-around-the-block-4.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Crossing at the traffic lights",
+            "ar": "عبور الطريق عند الإشارة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                498,
+                1583,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "pedestrian signal",
+              "ar": "إشارة عبور المشاة",
+              "kind": "object",
+              "x": 81,
+              "y": 15
+            },
+            {
+              "en": "crosswalk",
+              "ar": "ممر المشاة",
+              "kind": "object",
+              "x": 59,
+              "y": 92
+            },
+            {
+              "en": "cross at the lights",
+              "ar": "يعبر الطريق عند الإشارة",
+              "kind": "phrase",
+              "x": 43,
+              "y": 73
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quiet-hours-at-home",
+      "goalAr": "تنظيم أوقات الهدوء في المنزل",
+      "goalEn": "Agreeing on quiet hours at home",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Hearing the television upstairs",
+          "ar": "سماع التلفاز من الطابق العلوي",
+          "purposeEn": "Practise hearing the television upstairs.",
+          "purposeAr": "تدرّب على سماع التلفاز من الطابق العلوي.",
+          "image": {
+            "id": "conv-life-quiet-hours-at-home-1",
+            "path": "assets/scenes/conversations/life-quiet-hours-at-home-1.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Hearing the television upstairs",
+            "ar": "سماع التلفاز من الطابق العلوي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                746,
+                394,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "television",
+              "ar": "تلفاز",
+              "kind": "object",
+              "x": 59,
+              "y": 46
+            },
+            {
+              "en": "stair railing",
+              "ar": "درابزين الدرج",
+              "kind": "object",
+              "x": 49,
+              "y": 84
+            },
+            {
+              "en": "hear the TV upstairs",
+              "ar": "يسمع صوت التلفاز في الطابق العلوي",
+              "kind": "phrase",
+              "x": 55,
+              "y": 58
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Leaving headphones by the remote",
+          "ar": "وضع السماعات بجانب جهاز التحكّم",
+          "purposeEn": "Practise leaving headphones by the remote.",
+          "purposeAr": "تدرّب على وضع السماعات بجانب جهاز التحكّم.",
+          "image": {
+            "id": "conv-life-quiet-hours-at-home-2",
+            "path": "assets/scenes/conversations/life-quiet-hours-at-home-2.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Leaving headphones by the remote",
+            "ar": "وضع السماعات بجانب جهاز التحكّم",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                746,
+                789,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "headphones",
+              "ar": "سمّاعات رأس",
+              "kind": "object",
+              "x": 50,
+              "y": 83
+            },
+            {
+              "en": "remote control",
+              "ar": "جهاز تحكّم عن بُعد",
+              "kind": "object",
+              "x": 76,
+              "y": 88
+            },
+            {
+              "en": "keep headphones nearby",
+              "ar": "يبقي سمّاعات الرأس في متناول اليد",
+              "kind": "phrase",
+              "x": 44,
+              "y": 73
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Turning down the television",
+          "ar": "خفض صوت التلفاز",
+          "purposeEn": "Practise turning down the television.",
+          "purposeAr": "تدرّب على خفض صوت التلفاز.",
+          "image": {
+            "id": "conv-life-quiet-hours-at-home-3",
+            "path": "assets/scenes/conversations/life-quiet-hours-at-home-3.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Turning down the television",
+            "ar": "خفض صوت التلفاز",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                746,
+                1186,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "wall clock",
+              "ar": "ساعة حائط",
+              "kind": "object",
+              "x": 74,
+              "y": 22
+            },
+            {
+              "en": "volume indicator",
+              "ar": "مؤشر مستوى الصوت",
+              "kind": "object",
+              "x": 66,
+              "y": 65
+            },
+            {
+              "en": "turn the volume down",
+              "ar": "يخفض مستوى الصوت",
+              "kind": "phrase",
+              "x": 39,
+              "y": 67
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Listening through headphones",
+          "ar": "الاستماع عبر سمّاعات الرأس",
+          "purposeEn": "Practise listening through headphones.",
+          "purposeAr": "تدرّب على الاستماع عبر سمّاعات الرأس.",
+          "image": {
+            "id": "conv-life-quiet-hours-at-home-4",
+            "path": "assets/scenes/conversations/life-quiet-hours-at-home-4.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Listening through headphones",
+            "ar": "الاستماع عبر سمّاعات الرأس",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                746,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "headphones",
+              "ar": "سمّاعات رأس",
+              "kind": "object",
+              "x": 20,
+              "y": 25
+            },
+            {
+              "en": "sofa",
+              "ar": "أريكة",
+              "kind": "object",
+              "x": 39,
+              "y": 57
+            },
+            {
+              "en": "listen through headphones",
+              "ar": "يستمع عبر سمّاعات الرأس",
+              "kind": "phrase",
+              "x": 24,
+              "y": 44
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "7ac71900f368bf405998f947e54efea1900f00d4bbde1586707218ae1defbcac"
+  },
+  "conversations": [
+    {
+      "id": "l2-041",
+      "goalAr": "ترحيب عند الوصول",
+      "goalEn": "Welcoming a visitor",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Arriving just before closing",
+          "ar": "الوصول قبيل الإغلاق",
+          "purposeEn": "Practise arriving just before closing.",
+          "purposeAr": "تدرّب على الوصول قبيل الإغلاق.",
+          "image": {
+            "id": "conv-life-l2-041-1",
+            "path": "assets/scenes/conversations/life-l2-041-1.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Arriving just before closing",
+            "ar": "الوصول قبيل الإغلاق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                392,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "door handle",
+              "ar": "مقبض الباب",
+              "kind": "object",
+              "x": 49,
+              "y": 52
+            },
+            {
+              "en": "coat",
+              "ar": "معطف",
+              "kind": "object",
+              "x": 20,
+              "y": 62
+            },
+            {
+              "en": "hold the door open",
+              "ar": "يمسك الباب مفتوحًا",
+              "kind": "phrase",
+              "x": 51,
+              "y": 61
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Hanging up a coat",
+          "ar": "تعليق المعطف",
+          "purposeEn": "Practise hanging up a coat.",
+          "purposeAr": "تدرّب على تعليق المعطف.",
+          "image": {
+            "id": "conv-life-l2-041-2",
+            "path": "assets/scenes/conversations/life-l2-041-2.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Hanging up a coat",
+            "ar": "تعليق المعطف",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                3,
+                789,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "coat hook",
+              "ar": "خطّاف المعاطف",
+              "kind": "object",
+              "x": 76,
+              "y": 18
+            },
+            {
+              "en": "coat",
+              "ar": "معطف",
+              "kind": "object",
+              "x": 73,
+              "y": 43
+            },
+            {
+              "en": "hang up your coat",
+              "ar": "علّق معطفك",
+              "kind": "phrase",
+              "x": 70,
+              "y": 23
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Leaving the bag on the bench",
+          "ar": "ترك الحقيبة على المقعد",
+          "purposeEn": "Practise leaving the bag on the bench.",
+          "purposeAr": "تدرّب على ترك الحقيبة على المقعد.",
+          "image": {
+            "id": "conv-life-l2-041-3",
+            "path": "assets/scenes/conversations/life-l2-041-3.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Leaving the bag on the bench",
+            "ar": "ترك الحقيبة على المقعد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                3,
+                1186,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "entry bench",
+              "ar": "مقعد المدخل",
+              "kind": "object",
+              "x": 85,
+              "y": 88
+            },
+            {
+              "en": "handbag",
+              "ar": "حقيبة يد",
+              "kind": "object",
+              "x": 50,
+              "y": 88
+            },
+            {
+              "en": "take out the dates",
+              "ar": "يُخرج التمر",
+              "kind": "phrase",
+              "x": 59,
+              "y": 72
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Serving dates with tea",
+          "ar": "تقديم التمر مع الشاي",
+          "purposeEn": "Practise serving dates with tea.",
+          "purposeAr": "تدرّب على تقديم التمر مع الشاي.",
+          "image": {
+            "id": "conv-life-l2-041-4",
+            "path": "assets/scenes/conversations/life-l2-041-4.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Serving dates with tea",
+            "ar": "تقديم التمر مع الشاي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                3,
+                1583,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bowl of dates",
+              "ar": "وعاء تمر",
+              "kind": "object",
+              "x": 43,
+              "y": 71
+            },
+            {
+              "en": "teapot",
+              "ar": "إبريق شاي",
+              "kind": "object",
+              "x": 57,
+              "y": 59
+            },
+            {
+              "en": "serve dates with tea",
+              "ar": "يقدّم التمر مع الشاي",
+              "kind": "phrase",
+              "x": 56,
+              "y": 68
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-042",
+      "goalAr": "المهمّة العاجلة أولًا",
+      "goalEn": "Handling the important task first",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Calling a client about an address",
+          "ar": "الاتصال بالعميل بشأن العنوان",
+          "purposeEn": "Practise calling a client about an address.",
+          "purposeAr": "تدرّب على الاتصال بالعميل بشأن العنوان.",
+          "image": {
+            "id": "conv-life-l2-042-1",
+            "path": "assets/scenes/conversations/life-l2-042-1.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Calling a client about an address",
+            "ar": "الاتصال بالعميل بشأن العنوان",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                251,
+                392,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "parcel",
+              "ar": "طرد",
+              "kind": "object",
+              "x": 52,
+              "y": 78
+            },
+            {
+              "en": "delivery sheet",
+              "ar": "ورقة التوصيل",
+              "kind": "object",
+              "x": 74,
+              "y": 89
+            },
+            {
+              "en": "call to confirm the address",
+              "ar": "يتّصل لتأكيد العنوان",
+              "kind": "phrase",
+              "x": 21,
+              "y": 43
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Showing the changed delivery point",
+          "ar": "توضيح نقطة التسليم الجديدة",
+          "purposeEn": "Practise showing the changed delivery point.",
+          "purposeAr": "تدرّب على توضيح نقطة التسليم الجديدة.",
+          "image": {
+            "id": "conv-life-l2-042-2",
+            "path": "assets/scenes/conversations/life-l2-042-2.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Showing the changed delivery point",
+            "ar": "توضيح نقطة التسليم الجديدة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                251,
+                789,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "building plan",
+              "ar": "مخطّط المبنى",
+              "kind": "object",
+              "x": 55,
+              "y": 77
+            },
+            {
+              "en": "route arrow",
+              "ar": "سهم المسار",
+              "kind": "object",
+              "x": 77,
+              "y": 75
+            },
+            {
+              "en": "deliver to the back door",
+              "ar": "يوصّل الشحنة إلى الباب الخلفي",
+              "kind": "phrase",
+              "x": 53,
+              "y": 79
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Arriving with the boxes",
+          "ar": "الوصول بالصناديق",
+          "purposeEn": "Practise arriving with the boxes.",
+          "purposeAr": "تدرّب على الوصول بالصناديق.",
+          "image": {
+            "id": "conv-life-l2-042-3",
+            "path": "assets/scenes/conversations/life-l2-042-3.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Arriving with the boxes",
+            "ar": "الوصول بالصناديق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                251,
+                1186,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "cardboard boxes",
+              "ar": "صناديق كرتونية",
+              "kind": "object",
+              "x": 20,
+              "y": 87
+            },
+            {
+              "en": "metal gate",
+              "ar": "بوابة معدنية",
+              "kind": "object",
+              "x": 80,
+              "y": 55
+            },
+            {
+              "en": "call before unloading",
+              "ar": "يتّصل قبل تفريغ الحمولة",
+              "kind": "phrase",
+              "x": 61,
+              "y": 48
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Getting someone to open the gate",
+          "ar": "طلب فتح البوابة",
+          "purposeEn": "Practise getting someone to open the gate.",
+          "purposeAr": "تدرّب على طلب فتح البوابة.",
+          "image": {
+            "id": "conv-life-l2-042-4",
+            "path": "assets/scenes/conversations/life-l2-042-4.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Getting someone to open the gate",
+            "ar": "طلب فتح البوابة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                251,
+                1583,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "delivery trolley",
+              "ar": "عربة توصيل",
+              "kind": "object",
+              "x": 43,
+              "y": 91
+            },
+            {
+              "en": "gate latch",
+              "ar": "مزلاج البوابة",
+              "kind": "object",
+              "x": 85,
+              "y": 55
+            },
+            {
+              "en": "open the gate for the driver",
+              "ar": "يفتح البوابة للسائق",
+              "kind": "phrase",
+              "x": 77,
+              "y": 53
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-043",
+      "goalAr": "كيف ظهرت الفكرة؟",
+      "goalEn": "Giving credit for an idea",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Showing the map in a welcome pack",
+          "ar": "عرض الخريطة ضمن حزمة الترحيب",
+          "purposeEn": "Practise showing the map in a welcome pack.",
+          "purposeAr": "تدرّب على عرض الخريطة ضمن حزمة الترحيب.",
+          "image": {
+            "id": "conv-life-l2-043-1",
+            "path": "assets/scenes/conversations/life-l2-043-1.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Showing the map in a welcome pack",
+            "ar": "عرض الخريطة ضمن حزمة الترحيب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                498,
+                392,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "building map",
+              "ar": "خريطة المبنى",
+              "kind": "object",
+              "x": 39,
+              "y": 68
+            },
+            {
+              "en": "cardboard box",
+              "ar": "صندوق كرتوني",
+              "kind": "object",
+              "x": 88,
+              "y": 70
+            },
+            {
+              "en": "add a map to the welcome pack",
+              "ar": "يضيف خريطة إلى حزمة الترحيب",
+              "kind": "phrase",
+              "x": 58,
+              "y": 57
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Explaining who came up with the idea",
+          "ar": "توضيح صاحب الفكرة",
+          "purposeEn": "Practise explaining who came up with the idea.",
+          "purposeAr": "تدرّب على توضيح صاحب الفكرة.",
+          "image": {
+            "id": "conv-life-l2-043-2",
+            "path": "assets/scenes/conversations/life-l2-043-2.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Explaining who came up with the idea",
+            "ar": "توضيح صاحب الفكرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                498,
+                789,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "map draft",
+              "ar": "مسودة خريطة",
+              "kind": "object",
+              "x": 46,
+              "y": 80
+            },
+            {
+              "en": "welcome bag",
+              "ar": "حقيبة ترحيب",
+              "kind": "object",
+              "x": 81,
+              "y": 75
+            },
+            {
+              "en": "come up with an idea",
+              "ar": "يبتكر فكرة",
+              "kind": "phrase",
+              "x": 26,
+              "y": 52
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Comparing the original and revised maps",
+          "ar": "مقارنة الخريطتين الأصلية والمعدّلة",
+          "purposeEn": "Practise comparing the original and revised maps.",
+          "purposeAr": "تدرّب على مقارنة الخريطتين الأصلية والمعدّلة.",
+          "image": {
+            "id": "conv-life-l2-043-3",
+            "path": "assets/scenes/conversations/life-l2-043-3.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Comparing the original and revised maps",
+            "ar": "مقارنة الخريطتين الأصلية والمعدّلة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                498,
+                1186,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "original map",
+              "ar": "الخريطة الأصلية",
+              "kind": "object",
+              "x": 24,
+              "y": 82
+            },
+            {
+              "en": "revised map",
+              "ar": "الخريطة المعدّلة",
+              "kind": "object",
+              "x": 76,
+              "y": 82
+            },
+            {
+              "en": "show what changed",
+              "ar": "يوضّح ما تغيّر",
+              "kind": "phrase",
+              "x": 66,
+              "y": 71
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Presenting part of the idea to the team",
+          "ar": "عرض جزء من الفكرة على الفريق",
+          "purposeEn": "Practise presenting part of the idea to the team.",
+          "purposeAr": "تدرّب على عرض جزء من الفكرة على الفريق.",
+          "image": {
+            "id": "conv-life-l2-043-4",
+            "path": "assets/scenes/conversations/life-l2-043-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Presenting part of the idea to the team",
+            "ar": "عرض جزء من الفكرة على الفريق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                498,
+                1583,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "route map",
+              "ar": "خريطة المسار",
+              "kind": "object",
+              "x": 75,
+              "y": 60
+            },
+            {
+              "en": "open folder",
+              "ar": "ملف مفتوح",
+              "kind": "object",
+              "x": 61,
+              "y": 90
+            },
+            {
+              "en": "present the idea to the team",
+              "ar": "يعرض الفكرة على الفريق",
+              "kind": "phrase",
+              "x": 57,
+              "y": 68
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-044",
+      "goalAr": "رحلة عمل قصيرة",
+      "goalEn": "A short business trip",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Talking about a business trip",
+          "ar": "الحديث عن رحلة عمل",
+          "purposeEn": "Practise talking about a business trip.",
+          "purposeAr": "تدرّب على الحديث عن رحلة عمل.",
+          "image": {
+            "id": "conv-life-l2-044-1",
+            "path": "assets/scenes/conversations/life-l2-044-1.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Talking about a business trip",
+            "ar": "الحديث عن رحلة عمل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                747,
+                392,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "rolling suitcase",
+              "ar": "حقيبة سفر بعجلات",
+              "kind": "object",
+              "x": 19,
+              "y": 84
+            },
+            {
+              "en": "travel itinerary",
+              "ar": "برنامج الرحلة",
+              "kind": "object",
+              "x": 73,
+              "y": 74
+            },
+            {
+              "en": "go on a business trip",
+              "ar": "يسافر في رحلة عمل",
+              "kind": "phrase",
+              "x": 41,
+              "y": 55
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Finding time after the meetings",
+          "ar": "البحث عن وقت بعد الاجتماعات",
+          "purposeEn": "Practise finding time after the meetings.",
+          "purposeAr": "تدرّب على البحث عن وقت بعد الاجتماعات.",
+          "image": {
+            "id": "conv-life-l2-044-2",
+            "path": "assets/scenes/conversations/life-l2-044-2.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Finding time after the meetings",
+            "ar": "البحث عن وقت بعد الاجتماعات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                747,
+                789,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "open notebook",
+              "ar": "دفتر مفتوح",
+              "kind": "object",
+              "x": 45,
+              "y": 80
+            },
+            {
+              "en": "document folder",
+              "ar": "ملف مستندات",
+              "kind": "object",
+              "x": 34,
+              "y": 91
+            },
+            {
+              "en": "attend a business meeting",
+              "ar": "يحضر اجتماع عمل",
+              "kind": "phrase",
+              "x": 44,
+              "y": 63
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Walking around the old market",
+          "ar": "التجوّل في السوق القديم",
+          "purposeEn": "Practise walking around the old market.",
+          "purposeAr": "تدرّب على التجوّل في السوق القديم.",
+          "image": {
+            "id": "conv-life-l2-044-3",
+            "path": "assets/scenes/conversations/life-l2-044-3.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Walking around the old market",
+            "ar": "التجوّل في السوق القديم",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                747,
+                1186,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "fruit stall",
+              "ar": "بسطة فواكه",
+              "kind": "object",
+              "x": 27,
+              "y": 73
+            },
+            {
+              "en": "pomegranate",
+              "ar": "رمّانة",
+              "kind": "object",
+              "x": 51,
+              "y": 62
+            },
+            {
+              "en": "explore the old market",
+              "ar": "يتجوّل في السوق القديم",
+              "kind": "phrase",
+              "x": 59,
+              "y": 65
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Staying within walking distance",
+          "ar": "الإقامة على مسافة يمكن قطعها مشيًا",
+          "purposeEn": "Practise staying within walking distance.",
+          "purposeAr": "تدرّب على الإقامة على مسافة يمكن قطعها مشيًا.",
+          "image": {
+            "id": "conv-life-l2-044-4",
+            "path": "assets/scenes/conversations/life-l2-044-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Staying within walking distance",
+            "ar": "الإقامة على مسافة يمكن قطعها مشيًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                747,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "outdoor café",
+              "ar": "مقهى في الهواء الطلق",
+              "kind": "object",
+              "x": 27,
+              "y": 64
+            },
+            {
+              "en": "pedestrian street",
+              "ar": "شارع للمشاة",
+              "kind": "object",
+              "x": 76,
+              "y": 81
+            },
+            {
+              "en": "walk to the meeting",
+              "ar": "يذهب إلى الاجتماع مشيًا",
+              "kind": "phrase",
+              "x": 65,
+              "y": 62
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

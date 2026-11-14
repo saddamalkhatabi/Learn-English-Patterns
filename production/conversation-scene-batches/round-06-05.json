@@ -1,0 +1,861 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "947d98240994ee9b7364763d16ba2f06ed09ccc8874c696370ae3a854d7d531a"
+  },
+  "conversations": [
+    {
+      "id": "requesting-a-menu-change",
+      "goalAr": "طلب تعديل على الوجبة",
+      "goalEn": "Asking for a change to a meal",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Ordering rice without onions",
+          "ar": "طلب أرز دون بصل",
+          "purposeEn": "Ask to leave onions out of the rice bowl.",
+          "purposeAr": "اطلب عدم إضافة البصل إلى طبق الأرز.",
+          "image": {
+            "id": "conv-life-requesting-a-menu-change-1",
+            "path": "assets/scenes/conversations/life-requesting-a-menu-change-1.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Ordering rice without onions",
+            "ar": "طلب أرز دون بصل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                394,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "rice bowl",
+              "ar": "وعاء أرز",
+              "kind": "object",
+              "x": 36,
+              "y": 85
+            },
+            {
+              "en": "onion rings",
+              "ar": "حلقات بصل",
+              "kind": "object",
+              "x": 80,
+              "y": 88
+            },
+            {
+              "en": "leave it out",
+              "ar": "لا تضفه",
+              "kind": "phrase",
+              "x": 69,
+              "y": 57
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Offering cucumber instead",
+          "ar": "تقديم الخيار بدلًا منه",
+          "purposeEn": "Accept extra cucumber as a replacement.",
+          "purposeAr": "وافق على إضافة الخيار بدلًا من البصل.",
+          "image": {
+            "id": "conv-life-requesting-a-menu-change-2",
+            "path": "assets/scenes/conversations/life-requesting-a-menu-change-2.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Offering cucumber instead",
+            "ar": "تقديم الخيار بدلًا منه",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                3,
+                789,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "cucumber slices",
+              "ar": "شرائح خيار",
+              "kind": "object",
+              "x": 46,
+              "y": 87
+            },
+            {
+              "en": "onion dish",
+              "ar": "طبق بصل",
+              "kind": "object",
+              "x": 82,
+              "y": 93
+            },
+            {
+              "en": "offer an alternative",
+              "ar": "يقدّم بديلًا",
+              "kind": "phrase",
+              "x": 42,
+              "y": 77
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Writing down the request",
+          "ar": "تدوين الطلب",
+          "purposeEn": "Ask the server to pass your request to the kitchen.",
+          "purposeAr": "اطلب من النادل إيصال طلبك إلى المطبخ.",
+          "image": {
+            "id": "conv-life-requesting-a-menu-change-3",
+            "path": "assets/scenes/conversations/life-requesting-a-menu-change-3.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Writing down the request",
+            "ar": "تدوين الطلب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                3,
+                1186,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "menu",
+              "ar": "قائمة الطعام",
+              "kind": "object",
+              "x": 46,
+              "y": 84
+            },
+            {
+              "en": "pencil",
+              "ar": "قلم رصاص",
+              "kind": "object",
+              "x": 72,
+              "y": 56
+            },
+            {
+              "en": "write down the request",
+              "ar": "يدوّن الطلب",
+              "kind": "phrase",
+              "x": 76,
+              "y": 69
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Discussing the bill",
+          "ar": "مناقشة الفاتورة",
+          "purposeEn": "Ask whether the change costs extra.",
+          "purposeAr": "اسأل إن كان التغيير يتطلب مبلغًا إضافيًا.",
+          "image": {
+            "id": "conv-life-requesting-a-menu-change-4",
+            "path": "assets/scenes/conversations/life-requesting-a-menu-change-4.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Discussing the bill",
+            "ar": "مناقشة الفاتورة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                3,
+                1583,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "clipboard",
+              "ar": "لوح تثبيت الأوراق",
+              "kind": "object",
+              "x": 77,
+              "y": 66
+            },
+            {
+              "en": "cucumber bowl",
+              "ar": "وعاء خيار",
+              "kind": "object",
+              "x": 59,
+              "y": 88
+            },
+            {
+              "en": "show the bill",
+              "ar": "يعرض الفاتورة",
+              "kind": "phrase",
+              "x": 76,
+              "y": 74
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared-grocery-list",
+      "goalAr": "قائمة مشتريات مشتركة",
+      "goalEn": "A shared grocery list",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Planning the shopping",
+          "ar": "التخطيط للتسوق",
+          "purposeEn": "Ask what groceries are needed.",
+          "purposeAr": "اسأل عن مواد البقالة المطلوبة.",
+          "image": {
+            "id": "conv-life-shared-grocery-list-1",
+            "path": "assets/scenes/conversations/life-shared-grocery-list-1.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Planning the shopping",
+            "ar": "التخطيط للتسوق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                250,
+                394,
+                491
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "notebook",
+              "ar": "دفتر",
+              "kind": "object",
+              "x": 43,
+              "y": 92
+            },
+            {
+              "en": "shopping bag",
+              "ar": "حقيبة تسوق",
+              "kind": "object",
+              "x": 84,
+              "y": 79
+            },
+            {
+              "en": "make a shopping plan",
+              "ar": "يخطط للتسوق",
+              "kind": "phrase",
+              "x": 28,
+              "y": 64
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Looking in the cupboard",
+          "ar": "النظر في الخزانة",
+          "purposeEn": "Explain that there is already rice at home.",
+          "purposeAr": "وضّح أن الأرز موجود في المنزل.",
+          "image": {
+            "id": "conv-life-shared-grocery-list-2",
+            "path": "assets/scenes/conversations/life-shared-grocery-list-2.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Looking in the cupboard",
+            "ar": "النظر في الخزانة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                250,
+                789,
+                491
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bag of rice",
+              "ar": "كيس أرز",
+              "kind": "object",
+              "x": 75,
+              "y": 36
+            },
+            {
+              "en": "tomatoes",
+              "ar": "طماطم",
+              "kind": "object",
+              "x": 78,
+              "y": 86
+            },
+            {
+              "en": "check the cupboard",
+              "ar": "يتفقد الخزانة",
+              "kind": "phrase",
+              "x": 61,
+              "y": 53
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Choosing four tomatoes and a lemon",
+          "ar": "اختيار أربع حبات طماطم وليمونة",
+          "purposeEn": "Say how many tomatoes to buy and add a lemon.",
+          "purposeAr": "اذكر عدد حبات الطماطم المطلوبة وأضف ليمونة.",
+          "image": {
+            "id": "conv-life-shared-grocery-list-3",
+            "path": "assets/scenes/conversations/life-shared-grocery-list-3.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Choosing four tomatoes and a lemon",
+            "ar": "اختيار أربع حبات طماطم وليمونة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                250,
+                1186,
+                491
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "four tomatoes",
+              "ar": "أربع حبات طماطم",
+              "kind": "object",
+              "x": 23,
+              "y": 39
+            },
+            {
+              "en": "lemon",
+              "ar": "ليمونة",
+              "kind": "object",
+              "x": 51,
+              "y": 34
+            },
+            {
+              "en": "make a shopping list",
+              "ar": "يُعدّ قائمة تسوق",
+              "kind": "phrase",
+              "x": 74,
+              "y": 56
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Checking how much rice is left",
+          "ar": "التحقق من كمية الأرز المتبقية",
+          "purposeEn": "Ask someone to check the rice before shopping.",
+          "purposeAr": "اطلب من شخص التحقق من الأرز قبل التسوق.",
+          "image": {
+            "id": "conv-life-shared-grocery-list-4",
+            "path": "assets/scenes/conversations/life-shared-grocery-list-4.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Checking how much rice is left",
+            "ar": "التحقق من كمية الأرز المتبقية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                250,
+                1583,
+                491
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "rice bag",
+              "ar": "كيس أرز",
+              "kind": "object",
+              "x": 52,
+              "y": 43
+            },
+            {
+              "en": "storage jar",
+              "ar": "مرطبان تخزين",
+              "kind": "object",
+              "x": 28,
+              "y": 46
+            },
+            {
+              "en": "check how much is left",
+              "ar": "يتحقق من الكمية المتبقية",
+              "kind": "phrase",
+              "x": 58,
+              "y": 67
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "group-book-exchange",
+      "goalAr": "تبادل الكتب في الحي",
+      "goalEn": "A neighbourhood book swap",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Bringing books to share",
+          "ar": "إحضار كتب للمشاركة",
+          "purposeEn": "Explain where to leave books for others.",
+          "purposeAr": "اشرح أين توضع الكتب لإتاحتها للآخرين.",
+          "image": {
+            "id": "conv-life-group-book-exchange-1",
+            "path": "assets/scenes/conversations/life-group-book-exchange-1.webp",
+            "width": 391,
+            "height": 245,
+            "en": "Bringing books to share",
+            "ar": "إحضار كتب للمشاركة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                497,
+                394,
+                742
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "hardback book",
+              "ar": "كتاب بغلاف صلب",
+              "kind": "object",
+              "x": 45,
+              "y": 74
+            },
+            {
+              "en": "stack of books",
+              "ar": "كومة كتب",
+              "kind": "object",
+              "x": 78,
+              "y": 84
+            },
+            {
+              "en": "give away a book",
+              "ar": "يقدّم كتابًا مجانًا",
+              "kind": "phrase",
+              "x": 36,
+              "y": 61
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Sorting books and magazines",
+          "ar": "فرز الكتب والمجلات",
+          "purposeEn": "Explain how the category cards help people find things.",
+          "purposeAr": "اشرح كيف تساعد بطاقات التصنيف الناس على إيجاد ما يريدون.",
+          "image": {
+            "id": "conv-life-group-book-exchange-2",
+            "path": "assets/scenes/conversations/life-group-book-exchange-2.webp",
+            "width": 275,
+            "height": 245,
+            "en": "Sorting books and magazines",
+            "ar": "فرز الكتب والمجلات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                497,
+                675,
+                742
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "books",
+              "ar": "كتب",
+              "kind": "object",
+              "x": 27,
+              "y": 38
+            },
+            {
+              "en": "magazines",
+              "ar": "مجلات",
+              "kind": "object",
+              "x": 75,
+              "y": 50
+            },
+            {
+              "en": "sort into groups",
+              "ar": "يرتب في مجموعات",
+              "kind": "phrase",
+              "x": 61,
+              "y": 79
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Adding a magazine to the stack",
+          "ar": "إضافة مجلة إلى الكومة",
+          "purposeEn": "Say where to put a magazine you have brought.",
+          "purposeAr": "اذكر أين تضع المجلة التي أحضرتها.",
+          "image": {
+            "id": "conv-life-group-book-exchange-3",
+            "path": "assets/scenes/conversations/life-group-book-exchange-3.webp",
+            "width": 295,
+            "height": 245,
+            "en": "Adding a magazine to the stack",
+            "ar": "إضافة مجلة إلى الكومة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                497,
+                1090,
+                742
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "magazine",
+              "ar": "مجلة",
+              "kind": "object",
+              "x": 72,
+              "y": 57
+            },
+            {
+              "en": "book category card",
+              "ar": "بطاقة فئة الكتب",
+              "kind": "object",
+              "x": 23,
+              "y": 85
+            },
+            {
+              "en": "put it on the stack",
+              "ar": "يضعه فوق الكومة",
+              "kind": "phrase",
+              "x": 94,
+              "y": 30
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Choosing a book to take",
+          "ar": "اختيار كتاب لأخذه",
+          "purposeEn": "Ask whether you may take a book after donating a magazine.",
+          "purposeAr": "اسأل إن كان يمكنك أخذ كتاب بعد التبرع بمجلة.",
+          "image": {
+            "id": "conv-life-group-book-exchange-4",
+            "path": "assets/scenes/conversations/life-group-book-exchange-4.webp",
+            "width": 288,
+            "height": 245,
+            "en": "Choosing a book to take",
+            "ar": "اختيار كتاب لأخذه",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                497,
+                1480,
+                742
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "blue book",
+              "ar": "كتاب أزرق",
+              "kind": "object",
+              "x": 54,
+              "y": 62
+            },
+            {
+              "en": "category card",
+              "ar": "بطاقة تصنيف",
+              "kind": "object",
+              "x": 34,
+              "y": 87
+            },
+            {
+              "en": "pick out a book",
+              "ar": "يختار كتابًا",
+              "kind": "phrase",
+              "x": 41,
+              "y": 49
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "guest-vegetarian-dinner",
+      "goalAr": "عشاء نباتي للضيف",
+      "goalEn": "Planning a vegetarian dinner",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Inviting a guest to dinner",
+          "ar": "دعوة ضيفة إلى العشاء",
+          "purposeEn": "Invite your guest to stay for dinner.",
+          "purposeAr": "ادعُ ضيفتك للبقاء لتناول العشاء.",
+          "image": {
+            "id": "conv-life-guest-vegetarian-dinner-1",
+            "path": "assets/scenes/conversations/life-guest-vegetarian-dinner-1.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Inviting a guest to dinner",
+            "ar": "دعوة ضيفة إلى العشاء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                748,
+                394,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "rice",
+              "ar": "أرز",
+              "kind": "object",
+              "x": 57,
+              "y": 90
+            },
+            {
+              "en": "salad bowl",
+              "ar": "وعاء سلطة",
+              "kind": "object",
+              "x": 61,
+              "y": 70
+            },
+            {
+              "en": "invite someone to dinner",
+              "ar": "يدعو شخصًا إلى العشاء",
+              "kind": "phrase",
+              "x": 21,
+              "y": 60
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Choosing beans and vegetables",
+          "ar": "اختيار الفاصوليا والخضروات",
+          "purposeEn": "Explain which ingredients suit a vegetarian dinner.",
+          "purposeAr": "وضّح المكونات المناسبة لعشاء نباتي.",
+          "image": {
+            "id": "conv-life-guest-vegetarian-dinner-2",
+            "path": "assets/scenes/conversations/life-guest-vegetarian-dinner-2.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Choosing beans and vegetables",
+            "ar": "اختيار الفاصوليا والخضروات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                748,
+                789,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "beans",
+              "ar": "فاصوليا",
+              "kind": "object",
+              "x": 22,
+              "y": 81
+            },
+            {
+              "en": "red pepper",
+              "ar": "فلفل أحمر",
+              "kind": "object",
+              "x": 50,
+              "y": 78
+            },
+            {
+              "en": "carrots",
+              "ar": "جزر",
+              "kind": "object",
+              "x": 77,
+              "y": 82
+            },
+            {
+              "en": "choose vegetables",
+              "ar": "يختار الخضروات",
+              "kind": "phrase",
+              "x": 63,
+              "y": 58
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Mixing the bean salad",
+          "ar": "خلط سلطة الفاصوليا",
+          "purposeEn": "Suggest serving bean salad with rice and separate dressing.",
+          "purposeAr": "اقترح تقديم سلطة الفاصوليا مع الأرز وإبقاء الصلصة منفصلة.",
+          "image": {
+            "id": "conv-life-guest-vegetarian-dinner-3",
+            "path": "assets/scenes/conversations/life-guest-vegetarian-dinner-3.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Mixing the bean salad",
+            "ar": "خلط سلطة الفاصوليا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                748,
+                1186,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bean salad",
+              "ar": "سلطة فاصوليا",
+              "kind": "object",
+              "x": 38,
+              "y": 66
+            },
+            {
+              "en": "dressing",
+              "ar": "صلصة السلطة",
+              "kind": "object",
+              "x": 64,
+              "y": 90
+            },
+            {
+              "en": "mix the salad",
+              "ar": "يخلط السلطة",
+              "kind": "phrase",
+              "x": 30,
+              "y": 43
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Setting out the dressing",
+          "ar": "وضع الصلصة للتقديم",
+          "purposeEn": "Explain that everyone can add their own dressing.",
+          "purposeAr": "وضّح أن كل شخص يستطيع إضافة الصلصة بنفسه.",
+          "image": {
+            "id": "conv-life-guest-vegetarian-dinner-4",
+            "path": "assets/scenes/conversations/life-guest-vegetarian-dinner-4.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Setting out the dressing",
+            "ar": "وضع الصلصة للتقديم",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                748,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "small glass jar",
+              "ar": "مرطبان زجاجي صغير",
+              "kind": "object",
+              "x": 57,
+              "y": 78
+            },
+            {
+              "en": "bean salad",
+              "ar": "سلطة فاصوليا",
+              "kind": "object",
+              "x": 26,
+              "y": 86
+            },
+            {
+              "en": "keep the dressing separate",
+              "ar": "يُبقي الصلصة منفصلة",
+              "kind": "phrase",
+              "x": 51,
+              "y": 63
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

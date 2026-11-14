@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "0e28097e71437f6162e75d8f33c43656eab7e33f1d367196c8d5cb068d1a0261"
+  },
+  "conversations": [
+    {
+      "id": "birthday-surprise-timing",
+      "goalAr": "توقيت مفاجأة عيد الميلاد",
+      "goalEn": "Timing a birthday surprise",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Bringing the cake before the guests arrive",
+          "ar": "إحضار الكعكة قبل وصول الضيوف",
+          "purposeEn": "Practise bringing the cake before the guests arrive.",
+          "purposeAr": "تدرّب على إحضار الكعكة قبل وصول الضيوف.",
+          "image": {
+            "id": "conv-life-birthday-surprise-timing-1",
+            "path": "assets/scenes/conversations/life-birthday-surprise-timing-1.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Bringing the cake before the guests arrive",
+            "ar": "إحضار الكعكة قبل وصول الضيوف",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                393,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "cake cover",
+              "ar": "غطاء الكعكة",
+              "kind": "object",
+              "x": 45,
+              "y": 55
+            },
+            {
+              "en": "cake stand",
+              "ar": "حامل الكعكة",
+              "kind": "object",
+              "x": 45,
+              "y": 76
+            },
+            {
+              "en": "bring the cake into the kitchen",
+              "ar": "يحمل الكعكة إلى المطبخ",
+              "kind": "phrase",
+              "x": 34,
+              "y": 78
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Taking Grandma into the garden",
+          "ar": "اصطحاب الجدّة إلى الحديقة",
+          "purposeEn": "Practise taking Grandma into the garden.",
+          "purposeAr": "تدرّب على اصطحاب الجدّة إلى الحديقة.",
+          "image": {
+            "id": "conv-life-birthday-surprise-timing-2",
+            "path": "assets/scenes/conversations/life-birthday-surprise-timing-2.webp",
+            "width": 392,
+            "height": 243,
+            "en": "Taking Grandma into the garden",
+            "ar": "اصطحاب الجدّة إلى الحديقة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                3,
+                791,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "walking stick",
+              "ar": "عصا مشي",
+              "kind": "object",
+              "x": 71,
+              "y": 64
+            },
+            {
+              "en": "garden flowers",
+              "ar": "زهور الحديقة",
+              "kind": "object",
+              "x": 19,
+              "y": 24
+            },
+            {
+              "en": "walk in the garden",
+              "ar": "يتمشّى في الحديقة",
+              "kind": "phrase",
+              "x": 49,
+              "y": 63
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Getting the candles ready",
+          "ar": "تجهيز الشموع",
+          "purposeEn": "Practise getting the candles ready.",
+          "purposeAr": "تدرّب على تجهيز الشموع.",
+          "image": {
+            "id": "conv-life-birthday-surprise-timing-3",
+            "path": "assets/scenes/conversations/life-birthday-surprise-timing-3.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Getting the candles ready",
+            "ar": "تجهيز الشموع",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                3,
+                1186,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "birthday candles",
+              "ar": "شموع عيد الميلاد",
+              "kind": "object",
+              "x": 49,
+              "y": 45
+            },
+            {
+              "en": "smartphone",
+              "ar": "هاتف ذكي",
+              "kind": "object",
+              "x": 89,
+              "y": 89
+            },
+            {
+              "en": "put candles on the cake",
+              "ar": "يضع الشموع على الكعكة",
+              "kind": "phrase",
+              "x": 42,
+              "y": 41
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Bringing out the surprise",
+          "ar": "إخراج الكعكة للمفاجأة",
+          "purposeEn": "Practise bringing out the surprise.",
+          "purposeAr": "تدرّب على إخراج الكعكة للمفاجأة.",
+          "image": {
+            "id": "conv-life-birthday-surprise-timing-4",
+            "path": "assets/scenes/conversations/life-birthday-surprise-timing-4.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Bringing out the surprise",
+            "ar": "إخراج الكعكة للمفاجأة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                3,
+                1583,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "birthday cake",
+              "ar": "كعكة عيد ميلاد",
+              "kind": "object",
+              "x": 35,
+              "y": 47
+            },
+            {
+              "en": "dark doorway",
+              "ar": "مدخل معتم",
+              "kind": "object",
+              "x": 46,
+              "y": 22
+            },
+            {
+              "en": "bring out the cake",
+              "ar": "يُخرج الكعكة",
+              "kind": "phrase",
+              "x": 32,
+              "y": 62
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "refund-or-exchange",
+      "goalAr": "الاسترداد أو الاستبدال",
+      "goalEn": "A refund or an exchange",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Explaining that a shirt is too small",
+          "ar": "توضيح أن القميص ضيّق",
+          "purposeEn": "Practise explaining that a shirt is too small.",
+          "purposeAr": "تدرّب على توضيح أن القميص ضيّق.",
+          "image": {
+            "id": "conv-life-refund-or-exchange-1",
+            "path": "assets/scenes/conversations/life-refund-or-exchange-1.webp",
+            "width": 390,
+            "height": 239,
+            "en": "Explaining that a shirt is too small",
+            "ar": "توضيح أن القميص ضيّق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                252,
+                393,
+                491
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "shirt",
+              "ar": "قميص",
+              "kind": "object",
+              "x": 44,
+              "y": 69
+            },
+            {
+              "en": "clothes rack",
+              "ar": "علاقة عرض الملابس",
+              "kind": "object",
+              "x": 53,
+              "y": 27
+            },
+            {
+              "en": "return a shirt",
+              "ar": "يعيد قميصًا إلى المتجر",
+              "kind": "phrase",
+              "x": 38,
+              "y": 53
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Comparing with the next size up",
+          "ar": "المقارنة بالمقاس الأكبر التالي",
+          "purposeEn": "Practise comparing with the next size up.",
+          "purposeAr": "تدرّب على المقارنة بالمقاس الأكبر التالي.",
+          "image": {
+            "id": "conv-life-refund-or-exchange-2",
+            "path": "assets/scenes/conversations/life-refund-or-exchange-2.webp",
+            "width": 392,
+            "height": 239,
+            "en": "Comparing with the next size up",
+            "ar": "المقارنة بالمقاس الأكبر التالي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                252,
+                791,
+                491
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "long-sleeved shirt",
+              "ar": "قميص بأكمام طويلة",
+              "kind": "object",
+              "x": 54,
+              "y": 55
+            },
+            {
+              "en": "clothes hanger",
+              "ar": "علّاقة ملابس",
+              "kind": "object",
+              "x": 53,
+              "y": 21
+            },
+            {
+              "en": "ask for a larger size",
+              "ar": "يطلب مقاسًا أكبر",
+              "kind": "phrase",
+              "x": 66,
+              "y": 76
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Checking the fit before deciding",
+          "ar": "التحقّق من ملاءمة المقاس قبل القرار",
+          "purposeEn": "Practise checking the fit before deciding.",
+          "purposeAr": "تدرّب على التحقّق من ملاءمة المقاس قبل القرار.",
+          "image": {
+            "id": "conv-life-refund-or-exchange-3",
+            "path": "assets/scenes/conversations/life-refund-or-exchange-3.webp",
+            "width": 389,
+            "height": 239,
+            "en": "Checking the fit before deciding",
+            "ar": "التحقّق من ملاءمة المقاس قبل القرار",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                252,
+                1186,
+                491
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "fitting-room mirror",
+              "ar": "مرآة غرفة القياس",
+              "kind": "object",
+              "x": 82,
+              "y": 49
+            },
+            {
+              "en": "shirt collar",
+              "ar": "ياقة القميص",
+              "kind": "object",
+              "x": 50,
+              "y": 59
+            },
+            {
+              "en": "check the fit",
+              "ar": "يتحقّق من ملاءمة المقاس",
+              "kind": "phrase",
+              "x": 52,
+              "y": 68
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Showing the receipt and tag",
+          "ar": "إبراز إيصال الشراء والبطاقة",
+          "purposeEn": "Practise showing the receipt and tag.",
+          "purposeAr": "تدرّب على إبراز إيصال الشراء والبطاقة.",
+          "image": {
+            "id": "conv-life-refund-or-exchange-4",
+            "path": "assets/scenes/conversations/life-refund-or-exchange-4.webp",
+            "width": 391,
+            "height": 239,
+            "en": "Showing the receipt and tag",
+            "ar": "إبراز إيصال الشراء والبطاقة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                252,
+                1583,
+                491
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "receipt",
+              "ar": "إيصال شراء",
+              "kind": "object",
+              "x": 39,
+              "y": 61
+            },
+            {
+              "en": "price tag",
+              "ar": "بطاقة السعر",
+              "kind": "object",
+              "x": 60,
+              "y": 65
+            },
+            {
+              "en": "show the receipt",
+              "ar": "يبرز إيصال الشراء",
+              "kind": "phrase",
+              "x": 35,
+              "y": 45
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "collecting-a-repaired-phone",
+      "goalAr": "استلام الهاتف بعد إصلاحه",
+      "goalEn": "Collecting a repaired phone",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Presenting the repair ticket",
+          "ar": "إبراز قسيمة الإصلاح",
+          "purposeEn": "Practise presenting the repair ticket.",
+          "purposeAr": "تدرّب على إبراز قسيمة الإصلاح.",
+          "image": {
+            "id": "conv-life-collecting-a-repaired-phone-1",
+            "path": "assets/scenes/conversations/life-collecting-a-repaired-phone-1.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Presenting the repair ticket",
+            "ar": "إبراز قسيمة الإصلاح",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                497,
+                393,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "repair ticket",
+              "ar": "قسيمة الإصلاح",
+              "kind": "object",
+              "x": 58,
+              "y": 61
+            },
+            {
+              "en": "smartphone",
+              "ar": "هاتف ذكي",
+              "kind": "object",
+              "x": 66,
+              "y": 92
+            },
+            {
+              "en": "hand over the repair ticket",
+              "ar": "يسلّم قسيمة الإصلاح",
+              "kind": "phrase",
+              "x": 50,
+              "y": 69
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Checking the replaced charging port",
+          "ar": "تفقّد منفذ الشحن المستبدل",
+          "purposeEn": "Practise checking the replaced charging port.",
+          "purposeAr": "تدرّب على تفقّد منفذ الشحن المستبدل.",
+          "image": {
+            "id": "conv-life-collecting-a-repaired-phone-2",
+            "path": "assets/scenes/conversations/life-collecting-a-repaired-phone-2.webp",
+            "width": 392,
+            "height": 243,
+            "en": "Checking the replaced charging port",
+            "ar": "تفقّد منفذ الشحن المستبدل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                497,
+                791,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "charging port",
+              "ar": "منفذ الشحن",
+              "kind": "object",
+              "x": 74,
+              "y": 78
+            },
+            {
+              "en": "phone case",
+              "ar": "هيكل الهاتف",
+              "kind": "object",
+              "x": 73,
+              "y": 68
+            },
+            {
+              "en": "point to the charging port",
+              "ar": "يشير إلى منفذ الشحن",
+              "kind": "phrase",
+              "x": 63,
+              "y": 74
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Plugging in the phone to test it",
+          "ar": "توصيل الهاتف لاختباره",
+          "purposeEn": "Practise plugging in the phone to test it.",
+          "purposeAr": "تدرّب على توصيل الهاتف لاختباره.",
+          "image": {
+            "id": "conv-life-collecting-a-repaired-phone-3",
+            "path": "assets/scenes/conversations/life-collecting-a-repaired-phone-3.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Plugging in the phone to test it",
+            "ar": "توصيل الهاتف لاختباره",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                497,
+                1186,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "charging cable",
+              "ar": "كابل شحن",
+              "kind": "object",
+              "x": 64,
+              "y": 90
+            },
+            {
+              "en": "phone screen",
+              "ar": "شاشة الهاتف",
+              "kind": "object",
+              "x": 72,
+              "y": 69
+            },
+            {
+              "en": "plug the cable in",
+              "ar": "يوصل الكابل",
+              "kind": "phrase",
+              "x": 65,
+              "y": 83
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Looking for the charging symbol",
+          "ar": "التحقّق من ظهور رمز الشحن",
+          "purposeEn": "Practise looking for the charging symbol.",
+          "purposeAr": "تدرّب على التحقّق من ظهور رمز الشحن.",
+          "image": {
+            "id": "conv-life-collecting-a-repaired-phone-4",
+            "path": "assets/scenes/conversations/life-collecting-a-repaired-phone-4.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Looking for the charging symbol",
+            "ar": "التحقّق من ظهور رمز الشحن",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                497,
+                1583,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "battery icon",
+              "ar": "رمز البطارية",
+              "kind": "object",
+              "x": 56,
+              "y": 38
+            },
+            {
+              "en": "cable connector",
+              "ar": "موصّل الكابل",
+              "kind": "object",
+              "x": 48,
+              "y": 88
+            },
+            {
+              "en": "check that the phone is charging",
+              "ar": "يتحقق من أن الهاتف يُشحن",
+              "kind": "phrase",
+              "x": 56,
+              "y": 42
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "office-visitor-badge",
+      "goalAr": "بطاقة زائر في المكتب",
+      "goalEn": "Getting a visitor badge",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Requesting a visitor badge at reception",
+          "ar": "طلب بطاقة زائر عند الاستقبال",
+          "purposeEn": "Practise requesting a visitor badge at reception.",
+          "purposeAr": "تدرّب على طلب بطاقة زائر عند الاستقبال.",
+          "image": {
+            "id": "conv-life-office-visitor-badge-1",
+            "path": "assets/scenes/conversations/life-office-visitor-badge-1.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Requesting a visitor badge at reception",
+            "ar": "طلب بطاقة زائر عند الاستقبال",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                746,
+                393,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "reception counter",
+              "ar": "مكتب الاستقبال",
+              "kind": "object",
+              "x": 64,
+              "y": 87
+            },
+            {
+              "en": "computer monitor",
+              "ar": "شاشة حاسوب",
+              "kind": "object",
+              "x": 61,
+              "y": 71
+            },
+            {
+              "en": "ask for a visitor badge",
+              "ar": "يطلب بطاقة زائر",
+              "kind": "phrase",
+              "x": 44,
+              "y": 55
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Preparing the badge for a visitor",
+          "ar": "تجهيز بطاقة الزائر",
+          "purposeEn": "Practise preparing the badge for a visitor.",
+          "purposeAr": "تدرّب على تجهيز بطاقة الزائر.",
+          "image": {
+            "id": "conv-life-office-visitor-badge-2",
+            "path": "assets/scenes/conversations/life-office-visitor-badge-2.webp",
+            "width": 392,
+            "height": 243,
+            "en": "Preparing the badge for a visitor",
+            "ar": "تجهيز بطاقة الزائر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                746,
+                791,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "visitor badge",
+              "ar": "بطاقة زائر",
+              "kind": "object",
+              "x": 58,
+              "y": 82
+            },
+            {
+              "en": "badge clip",
+              "ar": "مشبك البطاقة",
+              "kind": "object",
+              "x": 65,
+              "y": 69
+            },
+            {
+              "en": "clip the badge onto a lanyard",
+              "ar": "يثبّت البطاقة بشريط التعليق",
+              "kind": "phrase",
+              "x": 60,
+              "y": 73
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Waiting by the window with the badge on",
+          "ar": "الانتظار عند النافذة مع ارتداء البطاقة",
+          "purposeEn": "Practise waiting by the window with the badge on.",
+          "purposeAr": "تدرّب على الانتظار عند النافذة مع ارتداء البطاقة.",
+          "image": {
+            "id": "conv-life-office-visitor-badge-3",
+            "path": "assets/scenes/conversations/life-office-visitor-badge-3.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Waiting by the window with the badge on",
+            "ar": "الانتظار عند النافذة مع ارتداء البطاقة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                746,
+                1186,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "name badge",
+              "ar": "بطاقة تعريف",
+              "kind": "object",
+              "x": 52,
+              "y": 75
+            },
+            {
+              "en": "office window",
+              "ar": "نافذة المكتب",
+              "kind": "object",
+              "x": 65,
+              "y": 45
+            },
+            {
+              "en": "wear your visitor badge",
+              "ar": "ارتدِ بطاقة الزائر",
+              "kind": "phrase",
+              "x": 51,
+              "y": 62
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Returning the badge on the way out",
+          "ar": "إعادة البطاقة عند المغادرة",
+          "purposeEn": "Practise returning the badge on the way out.",
+          "purposeAr": "تدرّب على إعادة البطاقة عند المغادرة.",
+          "image": {
+            "id": "conv-life-office-visitor-badge-4",
+            "path": "assets/scenes/conversations/life-office-visitor-badge-4.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Returning the badge on the way out",
+            "ar": "إعادة البطاقة عند المغادرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                746,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "visitor badge",
+              "ar": "بطاقة زائر",
+              "kind": "object",
+              "x": 54,
+              "y": 71
+            },
+            {
+              "en": "lanyard",
+              "ar": "شريط تعليق البطاقة",
+              "kind": "object",
+              "x": 55,
+              "y": 57
+            },
+            {
+              "en": "return your badge",
+              "ar": "أعِد بطاقتك",
+              "kind": "phrase",
+              "x": 56,
+              "y": 58
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

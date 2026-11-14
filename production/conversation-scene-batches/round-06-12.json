@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "01587c20eb9f0f83ff029a039fc90335ab53adf5f57f2ceb2c68ae6d6552ab34"
+  },
+  "conversations": [
+    {
+      "id": "read-back-an-address",
+      "goalAr": "إعادة قراءة العنوان للتأكيد",
+      "goalEn": "Reading an address back",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Checking the delivery address",
+          "ar": "التحقّق من عنوان التوصيل",
+          "purposeEn": "Ask the clerk to repeat the address to check it.",
+          "purposeAr": "اطلب من الموظف إعادة قراءة العنوان للتحقق منه.",
+          "image": {
+            "id": "conv-life-read-back-an-address-1",
+            "path": "assets/scenes/conversations/life-read-back-an-address-1.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Checking the delivery address",
+            "ar": "التحقّق من عنوان التوصيل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                393,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "address label",
+              "ar": "ملصق العنوان",
+              "kind": "object",
+              "x": 69,
+              "y": 75
+            },
+            {
+              "en": "parcel",
+              "ar": "طرد",
+              "kind": "object",
+              "x": 83,
+              "y": 60
+            },
+            {
+              "en": "read the address back",
+              "ar": "يعيد قراءة العنوان للتأكيد",
+              "kind": "phrase",
+              "x": 59,
+              "y": 68
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Showing where the entrance is",
+          "ar": "توضيح مكان المدخل",
+          "purposeEn": "Explain that the entrance is behind the building.",
+          "purposeAr": "وضّح أن المدخل يقع خلف المبنى.",
+          "image": {
+            "id": "conv-life-read-back-an-address-2",
+            "path": "assets/scenes/conversations/life-read-back-an-address-2.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Showing where the entrance is",
+            "ar": "توضيح مكان المدخل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                3,
+                789,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "street map",
+              "ar": "خريطة الشوارع",
+              "kind": "object",
+              "x": 43,
+              "y": 56
+            },
+            {
+              "en": "model building",
+              "ar": "مجسّم مبنى",
+              "kind": "object",
+              "x": 53,
+              "y": 81
+            },
+            {
+              "en": "point out the back entrance",
+              "ar": "يشير إلى مكان المدخل الخلفي",
+              "kind": "phrase",
+              "x": 59,
+              "y": 86
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Adding directions for the driver",
+          "ar": "إضافة الإرشادات للسائق",
+          "purposeEn": "Ask the clerk to add your directions and phone number.",
+          "purposeAr": "اطلب من الموظف إضافة إرشاداتك ورقم هاتفك.",
+          "image": {
+            "id": "conv-life-read-back-an-address-3",
+            "path": "assets/scenes/conversations/life-read-back-an-address-3.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Adding directions for the driver",
+            "ar": "إضافة الإرشادات للسائق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                3,
+                1186,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "clipboard",
+              "ar": "لوح تثبيت الأوراق",
+              "kind": "object",
+              "x": 57,
+              "y": 89
+            },
+            {
+              "en": "map pin",
+              "ar": "علامة موقع على الخريطة",
+              "kind": "object",
+              "x": 75,
+              "y": 57
+            },
+            {
+              "en": "leave a note for the driver",
+              "ar": "يترك ملاحظة للسائق",
+              "kind": "phrase",
+              "x": 44,
+              "y": 79
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Calling from the rear entrance",
+          "ar": "الاتصال من المدخل الخلفي",
+          "purposeEn": "Explain what the driver should do if the entrance is hard to find.",
+          "purposeAr": "اشرح ماذا ينبغي للسائق أن يفعل إن تعذّر عليه العثور على المدخل.",
+          "image": {
+            "id": "conv-life-read-back-an-address-4",
+            "path": "assets/scenes/conversations/life-read-back-an-address-4.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Calling from the rear entrance",
+            "ar": "الاتصال من المدخل الخلفي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                3,
+                1583,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "delivery van",
+              "ar": "شاحنة توصيل",
+              "kind": "object",
+              "x": 87,
+              "y": 52
+            },
+            {
+              "en": "clipboard",
+              "ar": "لوح تثبيت الأوراق",
+              "kind": "object",
+              "x": 55,
+              "y": 81
+            },
+            {
+              "en": "call for directions",
+              "ar": "يتّصل ليسأل عن الطريق",
+              "kind": "phrase",
+              "x": 65,
+              "y": 29
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "handoff-before-leaving",
+      "goalAr": "تسليم المهام قبل المغادرة",
+      "goalEn": "Handing over before leaving",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Handing over two requests",
+          "ar": "تسليم طلبين للمتابعة",
+          "purposeEn": "Ask a colleague to take over before you leave.",
+          "purposeAr": "اطلب من زميل متابعة الطلبين قبل مغادرتك.",
+          "image": {
+            "id": "conv-life-handoff-before-leaving-1",
+            "path": "assets/scenes/conversations/life-handoff-before-leaving-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Handing over two requests",
+            "ar": "تسليم طلبين للمتابعة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                250,
+                393,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ring binder",
+              "ar": "ملف حلقي",
+              "kind": "object",
+              "x": 52,
+              "y": 63
+            },
+            {
+              "en": "green binder",
+              "ar": "ملف أخضر",
+              "kind": "object",
+              "x": 54,
+              "y": 76
+            },
+            {
+              "en": "hand over the paperwork",
+              "ar": "يسلّم الأوراق إلى زميل",
+              "kind": "phrase",
+              "x": 47,
+              "y": 75
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Identifying what still needs approval",
+          "ar": "تحديد ما لا يزال ينتظر الموافقة",
+          "purposeEn": "Say which request is complete and which reply needs approval.",
+          "purposeAr": "اذكر أي طلب اكتمل وأي رد ينتظر الموافقة.",
+          "image": {
+            "id": "conv-life-handoff-before-leaving-2",
+            "path": "assets/scenes/conversations/life-handoff-before-leaving-2.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Identifying what still needs approval",
+            "ar": "تحديد ما لا يزال ينتظر الموافقة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                250,
+                789,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "red tab",
+              "ar": "علامة تبويب حمراء",
+              "kind": "object",
+              "x": 60,
+              "y": 45
+            },
+            {
+              "en": "approval form",
+              "ar": "استمارة موافقة",
+              "kind": "object",
+              "x": 62,
+              "y": 91
+            },
+            {
+              "en": "flag an urgent request",
+              "ar": "يضع علامة على طلب عاجل",
+              "kind": "phrase",
+              "x": 50,
+              "y": 56
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Sending the approved reply",
+          "ar": "إرسال الرد بعد الموافقة",
+          "purposeEn": "Offer to send the reply when it is approved.",
+          "purposeAr": "اعرض إرسال الرد عند الموافقة عليه.",
+          "image": {
+            "id": "conv-life-handoff-before-leaving-3",
+            "path": "assets/scenes/conversations/life-handoff-before-leaving-3.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Sending the approved reply",
+            "ar": "إرسال الرد بعد الموافقة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                250,
+                1186,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "checkmark",
+              "ar": "علامة صح",
+              "kind": "object",
+              "x": 54,
+              "y": 35
+            },
+            {
+              "en": "outgoing tray",
+              "ar": "صينية الصادر",
+              "kind": "object",
+              "x": 82,
+              "y": 85
+            },
+            {
+              "en": "send the approved reply",
+              "ar": "يرسل الرد بعد الموافقة",
+              "kind": "phrase",
+              "x": 74,
+              "y": 73
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Keeping the unfinished reply in drafts",
+          "ar": "حفظ الرد غير المكتمل في المسودات",
+          "purposeEn": "Explain what to do if the reply is still awaiting approval.",
+          "purposeAr": "اشرح ماذا تفعل إذا ظلّ الرد ينتظر الموافقة.",
+          "image": {
+            "id": "conv-life-handoff-before-leaving-4",
+            "path": "assets/scenes/conversations/life-handoff-before-leaving-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Keeping the unfinished reply in drafts",
+            "ar": "حفظ الرد غير المكتمل في المسودات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                250,
+                1583,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "draft folder",
+              "ar": "ملف المسودّات",
+              "kind": "object",
+              "x": 53,
+              "y": 80
+            },
+            {
+              "en": "document",
+              "ar": "مستند",
+              "kind": "object",
+              "x": 53,
+              "y": 51
+            },
+            {
+              "en": "keep it in drafts",
+              "ar": "يحفظه في المسودّات",
+              "kind": "phrase",
+              "x": 45,
+              "y": 66
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "asking-for-a-short-extension",
+      "goalAr": "طلب مهلة قصيرة",
+      "goalEn": "Asking for a short extension",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Asking for another day",
+          "ar": "طلب يوم إضافي",
+          "purposeEn": "Ask for more time to check the final figures.",
+          "purposeAr": "اطلب وقتًا إضافيًا لمراجعة الأرقام النهائية.",
+          "image": {
+            "id": "conv-life-asking-for-a-short-extension-1",
+            "path": "assets/scenes/conversations/life-asking-for-a-short-extension-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Asking for another day",
+            "ar": "طلب يوم إضافي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                498,
+                393,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "calculator",
+              "ar": "آلة حاسبة",
+              "kind": "object",
+              "x": 37,
+              "y": 89
+            },
+            {
+              "en": "spreadsheet printout",
+              "ar": "نسخة مطبوعة من جدول بيانات",
+              "kind": "object",
+              "x": 65,
+              "y": 88
+            },
+            {
+              "en": "check the figures",
+              "ar": "يراجع الأرقام",
+              "kind": "phrase",
+              "x": 59,
+              "y": 81
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Reviewing the summary",
+          "ar": "مراجعة الملخّص",
+          "purposeEn": "Agree which part can be shared today.",
+          "purposeAr": "اتّفق على الجزء الذي يمكن مشاركته اليوم.",
+          "image": {
+            "id": "conv-life-asking-for-a-short-extension-2",
+            "path": "assets/scenes/conversations/life-asking-for-a-short-extension-2.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Reviewing the summary",
+            "ar": "مراجعة الملخّص",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                498,
+                789,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "summary sheet",
+              "ar": "ورقة الملخّص",
+              "kind": "object",
+              "x": 63,
+              "y": 74
+            },
+            {
+              "en": "pie chart",
+              "ar": "مخطط دائري",
+              "kind": "object",
+              "x": 73,
+              "y": 85
+            },
+            {
+              "en": "review the summary",
+              "ar": "يراجع الملخّص",
+              "kind": "phrase",
+              "x": 60,
+              "y": 73
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Marking the figures to check",
+          "ar": "تمييز الأرقام التي تحتاج إلى مراجعة",
+          "purposeEn": "Show how to identify figures that still need checking.",
+          "purposeAr": "بيّن كيف تحدد الأرقام التي لا تزال تحتاج إلى المراجعة.",
+          "image": {
+            "id": "conv-life-asking-for-a-short-extension-3",
+            "path": "assets/scenes/conversations/life-asking-for-a-short-extension-3.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Marking the figures to check",
+            "ar": "تمييز الأرقام التي تحتاج إلى مراجعة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                498,
+                1186,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "yellow highlighter",
+              "ar": "قلم تمييز أصفر",
+              "kind": "object",
+              "x": 58,
+              "y": 43
+            },
+            {
+              "en": "highlighted row",
+              "ar": "صف مظلّل باللون",
+              "kind": "object",
+              "x": 28,
+              "y": 77
+            },
+            {
+              "en": "highlight the figures to check",
+              "ar": "يميّز الأرقام التي تحتاج إلى مراجعة",
+              "kind": "phrase",
+              "x": 47,
+              "y": 59
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Sharing the draft first",
+          "ar": "تسليم المسودة أولًا",
+          "purposeEn": "Agree to share the draft now and the verified figures later.",
+          "purposeAr": "اتّفق على إرسال المسودة الآن والأرقام بعد التحقق منها.",
+          "image": {
+            "id": "conv-life-asking-for-a-short-extension-4",
+            "path": "assets/scenes/conversations/life-asking-for-a-short-extension-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Sharing the draft first",
+            "ar": "تسليم المسودة أولًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                498,
+                1583,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "draft",
+              "ar": "مسودّة",
+              "kind": "object",
+              "x": 37,
+              "y": 64
+            },
+            {
+              "en": "folder",
+              "ar": "ملف أوراق",
+              "kind": "object",
+              "x": 78,
+              "y": 66
+            },
+            {
+              "en": "hand over the draft",
+              "ar": "يسلّم المسودّة",
+              "kind": "phrase",
+              "x": 38,
+              "y": 58
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "running-a-remote-meeting",
+      "goalAr": "إدارة اجتماع عن بُعد",
+      "goalEn": "Running a remote meeting",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Reporting a problem with screen sharing",
+          "ar": "الإبلاغ عن مشكلة في مشاركة الشاشة",
+          "purposeEn": "Tell the others when you cannot see the shared document.",
+          "purposeAr": "أخبر الآخرين عندما لا يظهر لك المستند الذي يشاركونه.",
+          "image": {
+            "id": "conv-life-running-a-remote-meeting-1",
+            "path": "assets/scenes/conversations/life-running-a-remote-meeting-1.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Reporting a problem with screen sharing",
+            "ar": "الإبلاغ عن مشكلة في مشاركة الشاشة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                746,
+                393,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "shared document",
+              "ar": "مستند مشترك",
+              "kind": "object",
+              "x": 72,
+              "y": 52
+            },
+            {
+              "en": "notebook",
+              "ar": "دفتر",
+              "kind": "object",
+              "x": 47,
+              "y": 93
+            },
+            {
+              "en": "share a document on screen",
+              "ar": "يشارك مستندًا على الشاشة",
+              "kind": "phrase",
+              "x": 57,
+              "y": 62
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Opening the link on a phone",
+          "ar": "فتح الرابط على الهاتف",
+          "purposeEn": "Use the link to follow the meeting on your phone.",
+          "purposeAr": "استخدم الرابط لمتابعة الاجتماع على هاتفك.",
+          "image": {
+            "id": "conv-life-running-a-remote-meeting-2",
+            "path": "assets/scenes/conversations/life-running-a-remote-meeting-2.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Opening the link on a phone",
+            "ar": "فتح الرابط على الهاتف",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                746,
+                789,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "link icon",
+              "ar": "رمز رابط",
+              "kind": "object",
+              "x": 69,
+              "y": 49
+            },
+            {
+              "en": "touchscreen",
+              "ar": "شاشة لمس",
+              "kind": "object",
+              "x": 69,
+              "y": 78
+            },
+            {
+              "en": "open the link",
+              "ar": "يفتح الرابط",
+              "kind": "phrase",
+              "x": 64,
+              "y": 63
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Finding the chart at the bottom",
+          "ar": "العثور على المخطّط في أسفل الصفحة",
+          "purposeEn": "Ask the others to look at the chart on the current page.",
+          "purposeAr": "اطلب من الآخرين النظر إلى المخطط في الصفحة الحالية.",
+          "image": {
+            "id": "conv-life-running-a-remote-meeting-3",
+            "path": "assets/scenes/conversations/life-running-a-remote-meeting-3.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Finding the chart at the bottom",
+            "ar": "العثور على المخطّط في أسفل الصفحة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                746,
+                1186,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bar chart",
+              "ar": "مخطّط بالأعمدة",
+              "kind": "object",
+              "x": 60,
+              "y": 75
+            },
+            {
+              "en": "participant icon",
+              "ar": "رمز المشارك",
+              "kind": "object",
+              "x": 73,
+              "y": 28
+            },
+            {
+              "en": "find the chart at the bottom",
+              "ar": "يعثر على المخطّط في أسفل الصفحة",
+              "kind": "phrase",
+              "x": 71,
+              "y": 81
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Enlarging the chart",
+          "ar": "تكبير المخطّط",
+          "purposeEn": "Ask the presenter to make the chart larger.",
+          "purposeAr": "اطلب من مقدّم العرض تكبير المخطّط.",
+          "image": {
+            "id": "conv-life-running-a-remote-meeting-4",
+            "path": "assets/scenes/conversations/life-running-a-remote-meeting-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Enlarging the chart",
+            "ar": "تكبير المخطّط",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                746,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "chart bar",
+              "ar": "عمود في المخطّط",
+              "kind": "object",
+              "x": 79,
+              "y": 65
+            },
+            {
+              "en": "touchscreen",
+              "ar": "شاشة لمس",
+              "kind": "object",
+              "x": 55,
+              "y": 40
+            },
+            {
+              "en": "zoom in on the chart",
+              "ar": "يكبّر المخطّط",
+              "kind": "phrase",
+              "x": 46,
+              "y": 63
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "37dcec8ab1e7a6ea0ac58e952f0e51b02a5f1a656a568e7fdaa5cc800a0c2347"
+  },
+  "conversations": [
+    {
+      "id": "introducing-a-new-teammate",
+      "goalAr": "تقديم زميل جديد للفريق",
+      "goalEn": "Introducing a new teammate",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Welcoming a new teammate",
+          "ar": "الترحيب بزميل جديد",
+          "purposeEn": "Practise welcoming a new teammate.",
+          "purposeAr": "تدرّب على الترحيب بزميل جديد.",
+          "image": {
+            "id": "conv-life-introducing-a-new-teammate-1",
+            "path": "assets/scenes/conversations/life-introducing-a-new-teammate-1.webp",
+            "width": 392,
+            "height": 243,
+            "en": "Welcoming a new teammate",
+            "ar": "الترحيب بزميل جديد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                395,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "headset",
+              "ar": "سمّاعة بميكروفون",
+              "kind": "object",
+              "x": 19,
+              "y": 81
+            },
+            {
+              "en": "support desk",
+              "ar": "مكتب الدعم",
+              "kind": "object",
+              "x": 65,
+              "y": 65
+            },
+            {
+              "en": "welcome a new teammate",
+              "ar": "يرحّب بزميل جديد",
+              "kind": "phrase",
+              "x": 38,
+              "y": 74
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Introducing a colleague on the afternoon shift",
+          "ar": "التعريف بزميلة فترة بعد الظهر",
+          "purposeEn": "Practise introducing a colleague on the afternoon shift.",
+          "purposeAr": "تدرّب على التعريف بزميلة فترة بعد الظهر.",
+          "image": {
+            "id": "conv-life-introducing-a-new-teammate-2",
+            "path": "assets/scenes/conversations/life-introducing-a-new-teammate-2.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Introducing a colleague on the afternoon shift",
+            "ar": "التعريف بزميلة فترة بعد الظهر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                401,
+                3,
+                791,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "staff badge",
+              "ar": "بطاقة موظّف",
+              "kind": "object",
+              "x": 81,
+              "y": 65
+            },
+            {
+              "en": "shoulder bag",
+              "ar": "حقيبة كتف",
+              "kind": "object",
+              "x": 91,
+              "y": 71
+            },
+            {
+              "en": "introduce a colleague",
+              "ar": "يعرّف بزميل",
+              "kind": "phrase",
+              "x": 53,
+              "y": 47
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Observing a call at the support desk",
+          "ar": "متابعة مكالمة في مكتب الدعم",
+          "purposeEn": "Practise observing a call at the support desk.",
+          "purposeAr": "تدرّب على متابعة مكالمة في مكتب الدعم.",
+          "image": {
+            "id": "conv-life-introducing-a-new-teammate-3",
+            "path": "assets/scenes/conversations/life-introducing-a-new-teammate-3.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Observing a call at the support desk",
+            "ar": "متابعة مكالمة في مكتب الدعم",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                3,
+                1188,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "headset microphone",
+              "ar": "ميكروفون السمّاعة",
+              "kind": "object",
+              "x": 70,
+              "y": 37
+            },
+            {
+              "en": "computer monitor",
+              "ar": "شاشة حاسوب",
+              "kind": "object",
+              "x": 89,
+              "y": 57
+            },
+            {
+              "en": "handle a support call",
+              "ar": "يتولّى مكالمة دعم",
+              "kind": "phrase",
+              "x": 68,
+              "y": 57
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Taking notes during the call",
+          "ar": "تدوين ملاحظات أثناء المكالمة",
+          "purposeEn": "Practise taking notes during the call.",
+          "purposeAr": "تدرّب على تدوين ملاحظات أثناء المكالمة.",
+          "image": {
+            "id": "conv-life-introducing-a-new-teammate-4",
+            "path": "assets/scenes/conversations/life-introducing-a-new-teammate-4.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Taking notes during the call",
+            "ar": "تدوين ملاحظات أثناء المكالمة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1194,
+                3,
+                1583,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "spiral notebook",
+              "ar": "دفتر حلزوني",
+              "kind": "object",
+              "x": 33,
+              "y": 89
+            },
+            {
+              "en": "pen",
+              "ar": "قلم",
+              "kind": "object",
+              "x": 29,
+              "y": 77
+            },
+            {
+              "en": "take notes during a call",
+              "ar": "يدوّن ملاحظات أثناء المكالمة",
+              "kind": "phrase",
+              "x": 29,
+              "y": 86
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "interview-arrival-delay",
+      "goalAr": "التأخر عن موعد المقابلة",
+      "goalEn": "Running late for an interview",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Calling about a bus delay",
+          "ar": "الاتصال للإبلاغ عن تأخر الحافلة",
+          "purposeEn": "Practise calling about a bus delay.",
+          "purposeAr": "تدرّب على الاتصال للإبلاغ عن تأخر الحافلة.",
+          "image": {
+            "id": "conv-life-interview-arrival-delay-1",
+            "path": "assets/scenes/conversations/life-interview-arrival-delay-1.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Calling about a bus delay",
+            "ar": "الاتصال للإبلاغ عن تأخر الحافلة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                252,
+                395,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "mobile phone",
+              "ar": "هاتف محمول",
+              "kind": "object",
+              "x": 40,
+              "y": 33
+            },
+            {
+              "en": "bus stop sign",
+              "ar": "لافتة موقف الحافلة",
+              "kind": "object",
+              "x": 72,
+              "y": 40
+            },
+            {
+              "en": "call to report a delay",
+              "ar": "يتصل للإبلاغ عن تأخّر",
+              "kind": "phrase",
+              "x": 39,
+              "y": 40
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Estimating how late you will be",
+          "ar": "تقدير مدة التأخّر",
+          "purposeEn": "Practise estimating how late you will be.",
+          "purposeAr": "تدرّب على تقدير مدة التأخّر.",
+          "image": {
+            "id": "conv-life-interview-arrival-delay-2",
+            "path": "assets/scenes/conversations/life-interview-arrival-delay-2.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Estimating how late you will be",
+            "ar": "تقدير مدة التأخّر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                401,
+                252,
+                791,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "wristwatch",
+              "ar": "ساعة يد",
+              "kind": "object",
+              "x": 45,
+              "y": 66
+            },
+            {
+              "en": "approaching bus",
+              "ar": "حافلة تقترب",
+              "kind": "object",
+              "x": 78,
+              "y": 43
+            },
+            {
+              "en": "check the time",
+              "ar": "يتفقّد الوقت",
+              "kind": "phrase",
+              "x": 40,
+              "y": 69
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Using the main entrance",
+          "ar": "الدخول من المدخل الرئيسي",
+          "purposeEn": "Practise using the main entrance.",
+          "purposeAr": "تدرّب على الدخول من المدخل الرئيسي.",
+          "image": {
+            "id": "conv-life-interview-arrival-delay-3",
+            "path": "assets/scenes/conversations/life-interview-arrival-delay-3.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Using the main entrance",
+            "ar": "الدخول من المدخل الرئيسي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                252,
+                1188,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "door handle",
+              "ar": "مقبض الباب",
+              "kind": "object",
+              "x": 56,
+              "y": 66
+            },
+            {
+              "en": "reception desk",
+              "ar": "مكتب الاستقبال",
+              "kind": "object",
+              "x": 91,
+              "y": 46
+            },
+            {
+              "en": "use the main entrance",
+              "ar": "يستخدم المدخل الرئيسي",
+              "kind": "phrase",
+              "x": 54,
+              "y": 71
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Giving your name at reception",
+          "ar": "ذكر الاسم عند الاستقبال",
+          "purposeEn": "Practise giving your name at reception.",
+          "purposeAr": "تدرّب على ذكر الاسم عند الاستقبال.",
+          "image": {
+            "id": "conv-life-interview-arrival-delay-4",
+            "path": "assets/scenes/conversations/life-interview-arrival-delay-4.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Giving your name at reception",
+            "ar": "ذكر الاسم عند الاستقبال",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1194,
+                252,
+                1583,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "appointment sheet",
+              "ar": "ورقة المواعيد",
+              "kind": "object",
+              "x": 67,
+              "y": 81
+            },
+            {
+              "en": "receptionist",
+              "ar": "موظّف الاستقبال",
+              "kind": "object",
+              "x": 79,
+              "y": 45
+            },
+            {
+              "en": "give your name at reception",
+              "ar": "يذكر اسمه عند الاستقبال",
+              "kind": "phrase",
+              "x": 57,
+              "y": 61
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "interview-asking-about-duties",
+      "goalAr": "الاستفسار عن مسؤوليات الوظيفة",
+      "goalEn": "Asking about the duties of a role",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Asking how to handle booking changes",
+          "ar": "السؤال عن طريقة تعديل الحجوزات",
+          "purposeEn": "Practise asking how to handle booking changes.",
+          "purposeAr": "تدرّب على السؤال عن طريقة تعديل الحجوزات.",
+          "image": {
+            "id": "conv-life-interview-asking-about-duties-1",
+            "path": "assets/scenes/conversations/life-interview-asking-about-duties-1.webp",
+            "width": 392,
+            "height": 239,
+            "en": "Asking how to handle booking changes",
+            "ar": "السؤال عن طريقة تعديل الحجوزات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                500,
+                395,
+                739
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "booking planner",
+              "ar": "دفتر تنظيم الحجوزات",
+              "kind": "object",
+              "x": 46,
+              "y": 82
+            },
+            {
+              "en": "headset",
+              "ar": "سمّاعة بميكروفون",
+              "kind": "object",
+              "x": 13,
+              "y": 90
+            },
+            {
+              "en": "ask about booking duties",
+              "ar": "يسأل عن مهام الحجوزات",
+              "kind": "phrase",
+              "x": 46,
+              "y": 74
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Checking availability and contacting the customer",
+          "ar": "التحقّق من التوفّر والاتصال بالعميل",
+          "purposeEn": "Practise checking availability and contacting the customer.",
+          "purposeAr": "تدرّب على التحقّق من التوفّر والاتصال بالعميل.",
+          "image": {
+            "id": "conv-life-interview-asking-about-duties-2",
+            "path": "assets/scenes/conversations/life-interview-asking-about-duties-2.webp",
+            "width": 390,
+            "height": 239,
+            "en": "Checking availability and contacting the customer",
+            "ar": "التحقّق من التوفّر والاتصال بالعميل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                401,
+                500,
+                791,
+                739
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "calendar",
+              "ar": "تقويم",
+              "kind": "object",
+              "x": 54,
+              "y": 84
+            },
+            {
+              "en": "desk phone",
+              "ar": "هاتف مكتبي",
+              "kind": "object",
+              "x": 83,
+              "y": 71
+            },
+            {
+              "en": "check what is available",
+              "ar": "يتحقق ممّا هو متاح",
+              "kind": "phrase",
+              "x": 52,
+              "y": 83
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Distinguishing date changes from price changes",
+          "ar": "التمييز بين تعديل التاريخ وتعديل السعر",
+          "purposeEn": "Practise distinguishing date changes from price changes.",
+          "purposeAr": "تدرّب على التمييز بين تعديل التاريخ وتعديل السعر.",
+          "image": {
+            "id": "conv-life-interview-asking-about-duties-3",
+            "path": "assets/scenes/conversations/life-interview-asking-about-duties-3.webp",
+            "width": 391,
+            "height": 239,
+            "en": "Distinguishing date changes from price changes",
+            "ar": "التمييز بين تعديل التاريخ وتعديل السعر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                500,
+                1188,
+                739
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "calendar symbol",
+              "ar": "رمز التقويم",
+              "kind": "object",
+              "x": 24,
+              "y": 75
+            },
+            {
+              "en": "coin symbol",
+              "ar": "رمز النقود",
+              "kind": "object",
+              "x": 47,
+              "y": 78
+            },
+            {
+              "en": "compare a date change with a price change",
+              "ar": "يقارن بين تعديل التاريخ وتعديل السعر",
+              "kind": "phrase",
+              "x": 37,
+              "y": 57
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Checking the price before confirmation",
+          "ar": "التحقّق من السعر قبل التأكيد",
+          "purposeEn": "Practise checking the price before confirmation.",
+          "purposeAr": "تدرّب على التحقّق من السعر قبل التأكيد.",
+          "image": {
+            "id": "conv-life-interview-asking-about-duties-4",
+            "path": "assets/scenes/conversations/life-interview-asking-about-duties-4.webp",
+            "width": 389,
+            "height": 239,
+            "en": "Checking the price before confirmation",
+            "ar": "التحقّق من السعر قبل التأكيد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1194,
+                500,
+                1583,
+                739
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "calculator",
+              "ar": "آلة حاسبة",
+              "kind": "object",
+              "x": 77,
+              "y": 87
+            },
+            {
+              "en": "booking sheet",
+              "ar": "ورقة حجز",
+              "kind": "object",
+              "x": 44,
+              "y": 89
+            },
+            {
+              "en": "check the price",
+              "ar": "يتحقق من السعر",
+              "kind": "phrase",
+              "x": 77,
+              "y": 78
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "interview-first-week-plan",
+      "goalAr": "خطة الأسبوع الأول في الوظيفة",
+      "goalEn": "A plan for your first week",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Discussing a first-week plan",
+          "ar": "مناقشة خطة الأسبوع الأول",
+          "purposeEn": "Practise discussing a first-week plan.",
+          "purposeAr": "تدرّب على مناقشة خطة الأسبوع الأول.",
+          "image": {
+            "id": "conv-life-interview-first-week-plan-1",
+            "path": "assets/scenes/conversations/life-interview-first-week-plan-1.webp",
+            "width": 392,
+            "height": 244,
+            "en": "Discussing a first-week plan",
+            "ar": "مناقشة خطة الأسبوع الأول",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                745,
+                395,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "weekly planner",
+              "ar": "مخطّط أسبوعي",
+              "kind": "object",
+              "x": 51,
+              "y": 82
+            },
+            {
+              "en": "office partition",
+              "ar": "حاجز مكتبي",
+              "kind": "object",
+              "x": 76,
+              "y": 35
+            },
+            {
+              "en": "plan your first week",
+              "ar": "يخطّط لأسبوعه الأول",
+              "kind": "phrase",
+              "x": 32,
+              "y": 65
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Learning by observing a colleague",
+          "ar": "التعلّم بمراقبة زميل",
+          "purposeEn": "Practise learning by observing a colleague.",
+          "purposeAr": "تدرّب على التعلّم بمراقبة زميل.",
+          "image": {
+            "id": "conv-life-interview-first-week-plan-2",
+            "path": "assets/scenes/conversations/life-interview-first-week-plan-2.webp",
+            "width": 390,
+            "height": 244,
+            "en": "Learning by observing a colleague",
+            "ar": "التعلّم بمراقبة زميل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                401,
+                745,
+                791,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "computer monitor",
+              "ar": "شاشة حاسوب",
+              "kind": "object",
+              "x": 12,
+              "y": 62
+            },
+            {
+              "en": "headset",
+              "ar": "سمّاعة بميكروفون",
+              "kind": "object",
+              "x": 32,
+              "y": 88
+            },
+            {
+              "en": "watch a colleague work",
+              "ar": "يراقب زميلًا أثناء العمل",
+              "kind": "phrase",
+              "x": 48,
+              "y": 45
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Handling a simple request with help",
+          "ar": "معالجة طلب بسيط بمساعدة زميل",
+          "purposeEn": "Practise handling a simple request with help.",
+          "purposeAr": "تدرّب على معالجة طلب بسيط بمساعدة زميل.",
+          "image": {
+            "id": "conv-life-interview-first-week-plan-3",
+            "path": "assets/scenes/conversations/life-interview-first-week-plan-3.webp",
+            "width": 391,
+            "height": 244,
+            "en": "Handling a simple request with help",
+            "ar": "معالجة طلب بسيط بمساعدة زميل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                745,
+                1188,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "keyboard",
+              "ar": "لوحة مفاتيح",
+              "kind": "object",
+              "x": 52,
+              "y": 91
+            },
+            {
+              "en": "desk phone",
+              "ar": "هاتف مكتبي",
+              "kind": "object",
+              "x": 79,
+              "y": 79
+            },
+            {
+              "en": "handle a request with help",
+              "ar": "يعالج طلبًا بمساعدة زميل",
+              "kind": "phrase",
+              "x": 68,
+              "y": 59
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Answering questions without notes",
+          "ar": "الإجابة عن الأسئلة دون ملاحظات",
+          "purposeEn": "Practise answering questions without notes.",
+          "purposeAr": "تدرّب على الإجابة عن الأسئلة دون ملاحظات.",
+          "image": {
+            "id": "conv-life-interview-first-week-plan-4",
+            "path": "assets/scenes/conversations/life-interview-first-week-plan-4.webp",
+            "width": 389,
+            "height": 244,
+            "en": "Answering questions without notes",
+            "ar": "الإجابة عن الأسئلة دون ملاحظات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1194,
+                745,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "headset",
+              "ar": "سمّاعة بميكروفون",
+              "kind": "object",
+              "x": 55,
+              "y": 33
+            },
+            {
+              "en": "closed notebook",
+              "ar": "دفتر مغلق",
+              "kind": "object",
+              "x": 82,
+              "y": 87
+            },
+            {
+              "en": "answer a call without notes",
+              "ar": "يردّ على مكالمة دون الرجوع إلى ملاحظاته",
+              "kind": "phrase",
+              "x": 54,
+              "y": 50
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

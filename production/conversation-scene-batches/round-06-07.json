@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "6d5414e628e3eada9e84ebf91c381795ec738edf382fa4a27fd9c60b684bfce4"
+  },
+  "conversations": [
+    {
+      "id": "help-reading-a-form",
+      "goalAr": "طلب مساعدة في قراءة استمارة",
+      "goalEn": "Getting help with a form",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Asking for help with a form",
+          "ar": "طلب المساعدة في قراءة استمارة",
+          "purposeEn": "Ask someone to explain what the form asks you to fill in.",
+          "purposeAr": "اطلب من شخص شرح البيانات المطلوبة في الاستمارة.",
+          "image": {
+            "id": "conv-life-help-reading-a-form-1",
+            "path": "assets/scenes/conversations/life-help-reading-a-form-1.webp",
+            "width": 392,
+            "height": 243,
+            "en": "Asking for help with a form",
+            "ar": "طلب المساعدة في قراءة استمارة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                395,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "application form",
+              "ar": "استمارة طلب",
+              "kind": "object",
+              "x": 66,
+              "y": 80
+            },
+            {
+              "en": "pen",
+              "ar": "قلم",
+              "kind": "object",
+              "x": 90,
+              "y": 89
+            },
+            {
+              "en": "ask for help with a form",
+              "ar": "يطلب مساعدة في فهم استمارة",
+              "kind": "phrase",
+              "x": 38,
+              "y": 75
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Finding the daytime contact field",
+          "ar": "تحديد خانة رقم الاتصال نهارًا",
+          "purposeEn": "Check which telephone number should go in the first field.",
+          "purposeAr": "تحقّق من رقم الهاتف الذي يجب إدخاله في الخانة الأولى.",
+          "image": {
+            "id": "conv-life-help-reading-a-form-2",
+            "path": "assets/scenes/conversations/life-help-reading-a-form-2.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Finding the daytime contact field",
+            "ar": "تحديد خانة رقم الاتصال نهارًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                401,
+                3,
+                790,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "mobile phone",
+              "ar": "هاتف محمول",
+              "kind": "object",
+              "x": 43,
+              "y": 76
+            },
+            {
+              "en": "contact field",
+              "ar": "خانة بيانات الاتصال",
+              "kind": "object",
+              "x": 75,
+              "y": 75
+            },
+            {
+              "en": "enter your phone number",
+              "ar": "أدخل رقم هاتفك",
+              "kind": "phrase",
+              "x": 66,
+              "y": 68
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Asking about an emergency number",
+          "ar": "السؤال عن رقم الطوارئ",
+          "purposeEn": "Ask whether a different number can be used in an emergency.",
+          "purposeAr": "اسأل إن كان يمكن إدخال رقم مختلف للاتصال في الطوارئ.",
+          "image": {
+            "id": "conv-life-help-reading-a-form-3",
+            "path": "assets/scenes/conversations/life-help-reading-a-form-3.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Asking about an emergency number",
+            "ar": "السؤال عن رقم الطوارئ",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                3,
+                1186,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "emergency symbol",
+              "ar": "رمز الطوارئ",
+              "kind": "object",
+              "x": 56,
+              "y": 88
+            },
+            {
+              "en": "second field",
+              "ar": "الخانة الثانية",
+              "kind": "object",
+              "x": 75,
+              "y": 88
+            },
+            {
+              "en": "list an emergency number",
+              "ar": "يدوّن رقمًا للاتصال في الطوارئ",
+              "kind": "phrase",
+              "x": 46,
+              "y": 90
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Recording whose number it is",
+          "ar": "تسجيل اسم صاحب الرقم",
+          "purposeEn": "Put the emergency contact's name and number in the form.",
+          "purposeAr": "اكتب اسم شخص الاتصال في الطوارئ ورقمه في الاستمارة.",
+          "image": {
+            "id": "conv-life-help-reading-a-form-4",
+            "path": "assets/scenes/conversations/life-help-reading-a-form-4.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Recording whose number it is",
+            "ar": "تسجيل اسم صاحب الرقم",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                3,
+                1583,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "name field",
+              "ar": "خانة الاسم",
+              "kind": "object",
+              "x": 55,
+              "y": 82
+            },
+            {
+              "en": "phone number field",
+              "ar": "خانة رقم الهاتف",
+              "kind": "object",
+              "x": 74,
+              "y": 92
+            },
+            {
+              "en": "fill in the form",
+              "ar": "يملأ الاستمارة",
+              "kind": "phrase",
+              "x": 40,
+              "y": 83
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pickup-for-a-friend",
+      "goalAr": "استقبال صديق بعد الموعد",
+      "goalEn": "Picking up a friend after an appointment",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Arranging a lift after an appointment",
+          "ar": "ترتيب توصيلة بعد الموعد",
+          "purposeEn": "Ask a friend to pick you up after your appointment.",
+          "purposeAr": "اطلب من صديق أن يأتي ليقلّك بعد موعدك.",
+          "image": {
+            "id": "conv-life-pickup-for-a-friend-1",
+            "path": "assets/scenes/conversations/life-pickup-for-a-friend-1.webp",
+            "width": 254,
+            "height": 240,
+            "en": "Arranging a lift after an appointment",
+            "ar": "ترتيب توصيلة بعد الموعد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                253,
+                257,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "appointment card",
+              "ar": "بطاقة موعد",
+              "kind": "object",
+              "x": 54,
+              "y": 88
+            },
+            {
+              "en": "car keys",
+              "ar": "مفاتيح السيارة",
+              "kind": "object",
+              "x": 93,
+              "y": 93
+            },
+            {
+              "en": "ask for a lift",
+              "ar": "يطلب توصيلة",
+              "kind": "phrase",
+              "x": 38,
+              "y": 37
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Sending a message after the appointment",
+          "ar": "إرسال رسالة بعد الموعد",
+          "purposeEn": "Let your friend know as soon as the appointment is over.",
+          "purposeAr": "أخبر صديقك فور انتهاء الموعد.",
+          "image": {
+            "id": "conv-life-pickup-for-a-friend-2",
+            "path": "assets/scenes/conversations/life-pickup-for-a-friend-2.webp",
+            "width": 221,
+            "height": 218,
+            "en": "Sending a message after the appointment",
+            "ar": "إرسال رسالة بعد الموعد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                401,
+                273,
+                622,
+                491
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "smartphone",
+              "ar": "هاتف ذكي",
+              "kind": "object",
+              "x": 92,
+              "y": 62
+            },
+            {
+              "en": "shirt sleeve",
+              "ar": "كمّ القميص",
+              "kind": "object",
+              "x": 35,
+              "y": 85
+            },
+            {
+              "en": "send a text",
+              "ar": "يرسل رسالة نصية",
+              "kind": "phrase",
+              "x": 86,
+              "y": 80
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Checking which entrance to use",
+          "ar": "تحديد المدخل الذي ينبغي استخدامه",
+          "purposeEn": "Explain how to find the other entrance and the blue sign.",
+          "purposeAr": "اشرح كيفية الوصول إلى المدخل الآخر والعثور على اللافتة الزرقاء.",
+          "image": {
+            "id": "conv-life-pickup-for-a-friend-3",
+            "path": "assets/scenes/conversations/life-pickup-for-a-friend-3.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Checking which entrance to use",
+            "ar": "تحديد المدخل الذي ينبغي استخدامه",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                252,
+                1186,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "direction sign",
+              "ar": "لافتة إرشادية",
+              "kind": "object",
+              "x": 90,
+              "y": 36
+            },
+            {
+              "en": "glass entrance",
+              "ar": "مدخل زجاجي",
+              "kind": "object",
+              "x": 75,
+              "y": 54
+            },
+            {
+              "en": "point to the entrance",
+              "ar": "يشير إلى المدخل",
+              "kind": "phrase",
+              "x": 63,
+              "y": 36
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Meeting by the blue sign",
+          "ar": "اللقاء بجانب اللافتة الزرقاء",
+          "purposeEn": "Agree to text when you reach the agreed landmark.",
+          "purposeAr": "اتّفقا على إرسال رسالة عند الوصول إلى المكان المحدد.",
+          "image": {
+            "id": "conv-life-pickup-for-a-friend-4",
+            "path": "assets/scenes/conversations/life-pickup-for-a-friend-4.webp",
+            "width": 346,
+            "height": 242,
+            "en": "Meeting by the blue sign",
+            "ar": "اللقاء بجانب اللافتة الزرقاء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                252,
+                1538,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "blue sign",
+              "ar": "لافتة زرقاء",
+              "kind": "object",
+              "x": 62,
+              "y": 59
+            },
+            {
+              "en": "car",
+              "ar": "سيارة",
+              "kind": "object",
+              "x": 90,
+              "y": 77
+            },
+            {
+              "en": "text from the pickup point",
+              "ar": "يرسل رسالة من نقطة الالتقاء",
+              "kind": "phrase",
+              "x": 47,
+              "y": 68
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "temporary-library-card",
+      "goalAr": "بطاقة مكتبة مؤقتة",
+      "goalEn": "Getting a temporary library card",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Asking about borrowing for a week",
+          "ar": "السؤال عن استعارة كتب لأسبوع",
+          "purposeEn": "Ask whether you can borrow books for a short period.",
+          "purposeAr": "اسأل إن كان يمكنك استعارة كتب لمدة قصيرة.",
+          "image": {
+            "id": "conv-life-temporary-library-card-1",
+            "path": "assets/scenes/conversations/life-temporary-library-card-1.webp",
+            "width": 392,
+            "height": 240,
+            "en": "Asking about borrowing for a week",
+            "ar": "السؤال عن استعارة كتب لأسبوع",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                500,
+                395,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "hardback books",
+              "ar": "كتب بأغلفة مقوّاة",
+              "kind": "object",
+              "x": 25,
+              "y": 68
+            },
+            {
+              "en": "bookshelf",
+              "ar": "رف كتب",
+              "kind": "object",
+              "x": 56,
+              "y": 26
+            },
+            {
+              "en": "borrow two books",
+              "ar": "يستعير كتابين",
+              "kind": "phrase",
+              "x": 54,
+              "y": 60
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Applying for a temporary card",
+          "ar": "التقدّم للحصول على بطاقة مؤقتة",
+          "purposeEn": "Ask if you can apply for a temporary library card today.",
+          "purposeAr": "اسأل إن كان يمكنك طلب بطاقة مكتبة مؤقتة اليوم.",
+          "image": {
+            "id": "conv-life-temporary-library-card-2",
+            "path": "assets/scenes/conversations/life-temporary-library-card-2.webp",
+            "width": 389,
+            "height": 240,
+            "en": "Applying for a temporary card",
+            "ar": "التقدّم للحصول على بطاقة مؤقتة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                401,
+                500,
+                790,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "library card",
+              "ar": "بطاقة المكتبة",
+              "kind": "object",
+              "x": 43,
+              "y": 44
+            },
+            {
+              "en": "application form",
+              "ar": "استمارة طلب",
+              "kind": "object",
+              "x": 58,
+              "y": 85
+            },
+            {
+              "en": "apply for a temporary card",
+              "ar": "يتقدّم بطلب بطاقة مؤقتة",
+              "kind": "phrase",
+              "x": 65,
+              "y": 77
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Filling in the form and activating the card",
+          "ar": "ملء الاستمارة وتفعيل البطاقة",
+          "purposeEn": "Complete the form so the librarian can activate your card.",
+          "purposeAr": "املأ الاستمارة حتى يتمكّن أمين المكتبة من تفعيل بطاقتك.",
+          "image": {
+            "id": "conv-life-temporary-library-card-3",
+            "path": "assets/scenes/conversations/life-temporary-library-card-3.webp",
+            "width": 390,
+            "height": 240,
+            "en": "Filling in the form and activating the card",
+            "ar": "ملء الاستمارة وتفعيل البطاقة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                500,
+                1186,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "card scanner",
+              "ar": "قارئ البطاقات",
+              "kind": "object",
+              "x": 69,
+              "y": 73
+            },
+            {
+              "en": "application form",
+              "ar": "استمارة طلب",
+              "kind": "object",
+              "x": 46,
+              "y": 87
+            },
+            {
+              "en": "activate the library card",
+              "ar": "يفعّل بطاقة المكتبة",
+              "kind": "phrase",
+              "x": 60,
+              "y": 68
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Checking the due date online",
+          "ar": "التحقّق من موعد الإرجاع عبر الإنترنت",
+          "purposeEn": "Ask how to check when borrowed books are due back.",
+          "purposeAr": "اسأل عن طريقة التحقّق من موعد إعادة الكتب المستعارة.",
+          "image": {
+            "id": "conv-life-temporary-library-card-4",
+            "path": "assets/scenes/conversations/life-temporary-library-card-4.webp",
+            "width": 391,
+            "height": 240,
+            "en": "Checking the due date online",
+            "ar": "التحقّق من موعد الإرجاع عبر الإنترنت",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                500,
+                1583,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "calendar icon",
+              "ar": "رمز التقويم",
+              "kind": "object",
+              "x": 54,
+              "y": 41
+            },
+            {
+              "en": "borrowed books",
+              "ar": "كتب مستعارة",
+              "kind": "object",
+              "x": 45,
+              "y": 84
+            },
+            {
+              "en": "check the due date",
+              "ar": "يتحقّق من موعد الإرجاع",
+              "kind": "phrase",
+              "x": 64,
+              "y": 45
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "charging-at-the-library",
+      "goalAr": "مقعد قرب مقبس المكتبة",
+      "goalEn": "A seat near a library socket",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Finding a seat near a socket",
+          "ar": "العثور على مقعد قرب مقبس",
+          "purposeEn": "Ask whether there is a free seat near a power socket.",
+          "purposeAr": "اسأل عن وجود مقعد شاغر بالقرب من مقبس كهربائي.",
+          "image": {
+            "id": "conv-life-charging-at-the-library-1",
+            "path": "assets/scenes/conversations/life-charging-at-the-library-1.webp",
+            "width": 392,
+            "height": 243,
+            "en": "Finding a seat near a socket",
+            "ar": "العثور على مقعد قرب مقبس",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                746,
+                395,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "laptop",
+              "ar": "حاسوب محمول",
+              "kind": "object",
+              "x": 27,
+              "y": 77
+            },
+            {
+              "en": "empty chair",
+              "ar": "كرسي شاغر",
+              "kind": "object",
+              "x": 84,
+              "y": 78
+            },
+            {
+              "en": "look for a free seat",
+              "ar": "يبحث عن مقعد شاغر",
+              "kind": "phrase",
+              "x": 72,
+              "y": 47
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Asking to plug in a laptop",
+          "ar": "الاستئذان لتوصيل الحاسوب بالكهرباء",
+          "purposeEn": "Ask if you can use the socket and listen to the safety request.",
+          "purposeAr": "استأذن في استخدام المقبس واستمع إلى التنبيه بشأن السلك.",
+          "image": {
+            "id": "conv-life-charging-at-the-library-2",
+            "path": "assets/scenes/conversations/life-charging-at-the-library-2.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Asking to plug in a laptop",
+            "ar": "الاستئذان لتوصيل الحاسوب بالكهرباء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                401,
+                746,
+                790,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "wall socket",
+              "ar": "مقبس حائط",
+              "kind": "object",
+              "x": 40,
+              "y": 57
+            },
+            {
+              "en": "power plug",
+              "ar": "قابس كهربائي",
+              "kind": "object",
+              "x": 29,
+              "y": 66
+            },
+            {
+              "en": "plug in the laptop",
+              "ar": "يوصل الحاسوب بالكهرباء",
+              "kind": "phrase",
+              "x": 33,
+              "y": 65
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Routing the cable under the table",
+          "ar": "تمرير السلك تحت الطاولة",
+          "purposeEn": "Explain how you will keep the cable out of the aisle.",
+          "purposeAr": "اشرح كيف ستُبقي السلك بعيدًا عن الممر.",
+          "image": {
+            "id": "conv-life-charging-at-the-library-3",
+            "path": "assets/scenes/conversations/life-charging-at-the-library-3.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Routing the cable under the table",
+            "ar": "تمرير السلك تحت الطاولة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                746,
+                1186,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "power cable",
+              "ar": "سلك كهربائي",
+              "kind": "object",
+              "x": 72,
+              "y": 81
+            },
+            {
+              "en": "desk edge",
+              "ar": "حافة المكتب",
+              "kind": "object",
+              "x": 88,
+              "y": 66
+            },
+            {
+              "en": "run the cable under the table",
+              "ar": "يمرّر السلك تحت الطاولة",
+              "kind": "phrase",
+              "x": 57,
+              "y": 79
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Freeing the socket for the next person",
+          "ar": "إخلاء المقبس للشخص التالي",
+          "purposeEn": "Tell the next person when the socket is free.",
+          "purposeAr": "أخبر الشخص التالي عندما يصبح المقبس متاحًا.",
+          "image": {
+            "id": "conv-life-charging-at-the-library-4",
+            "path": "assets/scenes/conversations/life-charging-at-the-library-4.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Freeing the socket for the next person",
+            "ar": "إخلاء المقبس للشخص التالي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                746,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "laptop charger",
+              "ar": "شاحن حاسوب محمول",
+              "kind": "object",
+              "x": 79,
+              "y": 70
+            },
+            {
+              "en": "wall socket",
+              "ar": "مقبس حائط",
+              "kind": "object",
+              "x": 43,
+              "y": 89
+            },
+            {
+              "en": "close the laptop",
+              "ar": "يغلق الحاسوب المحمول",
+              "kind": "phrase",
+              "x": 29,
+              "y": 57
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

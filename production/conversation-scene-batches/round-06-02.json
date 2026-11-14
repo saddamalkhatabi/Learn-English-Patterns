@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "7d1d626a809885f1a61d8874c1bb2af35ecac45d211e001b121b3d0dff2b58af"
+  },
+  "conversations": [
+    {
+      "id": "cancelled-outdoor-class",
+      "goalAr": "إلغاء درس في الهواء الطلق",
+      "goalEn": "A cancelled outdoor class",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Gathering in the sports hall",
+          "ar": "التجمّع في الصالة الرياضية",
+          "purposeEn": "Ask why today's class is meeting indoors.",
+          "purposeAr": "اسأل عن سبب عقد حصة اليوم داخل الصالة.",
+          "image": {
+            "id": "conv-life-cancelled-outdoor-class-1",
+            "path": "assets/scenes/conversations/life-cancelled-outdoor-class-1.webp",
+            "width": 392,
+            "height": 243,
+            "en": "Gathering in the sports hall",
+            "ar": "التجمّع في الصالة الرياضية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                395,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "exercise mat",
+              "ar": "بساط تمارين",
+              "kind": "object",
+              "x": 36,
+              "y": 63
+            },
+            {
+              "en": "basketball hoop",
+              "ar": "سلّة كرة السلة",
+              "kind": "object",
+              "x": 68,
+              "y": 12
+            },
+            {
+              "en": "meet indoors",
+              "ar": "يجتمع في مكان مغلق",
+              "kind": "phrase",
+              "x": 60,
+              "y": 46
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Seeing why the field is closed",
+          "ar": "معرفة سبب إغلاق الملعب",
+          "purposeEn": "Link the rain and the puddle to the closure.",
+          "purposeAr": "اربط بين المطر وتجمّع الماء وإغلاق الملعب.",
+          "image": {
+            "id": "conv-life-cancelled-outdoor-class-2",
+            "path": "assets/scenes/conversations/life-cancelled-outdoor-class-2.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Seeing why the field is closed",
+            "ar": "معرفة سبب إغلاق الملعب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                401,
+                3,
+                791,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "puddle",
+              "ar": "بركة ماء",
+              "kind": "object",
+              "x": 70,
+              "y": 88
+            },
+            {
+              "en": "metal gate",
+              "ar": "بوابة معدنية",
+              "kind": "object",
+              "x": 90,
+              "y": 45
+            },
+            {
+              "en": "close the field",
+              "ar": "يغلق الملعب",
+              "kind": "phrase",
+              "x": 70,
+              "y": 28
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Setting up for indoor practice",
+          "ar": "تجهيز الصالة للتدريب",
+          "purposeEn": "Suggest an activity that fits a smaller indoor space.",
+          "purposeAr": "اقترح نشاطًا يناسب المساحة الداخلية الأصغر.",
+          "image": {
+            "id": "conv-life-cancelled-outdoor-class-3",
+            "path": "assets/scenes/conversations/life-cancelled-outdoor-class-3.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Setting up for indoor practice",
+            "ar": "تجهيز الصالة للتدريب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                3,
+                1186,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "training cone",
+              "ar": "مخروط تدريب",
+              "kind": "object",
+              "x": 26,
+              "y": 87
+            },
+            {
+              "en": "exercise mat",
+              "ar": "بساط تمارين",
+              "kind": "object",
+              "x": 82,
+              "y": 78
+            },
+            {
+              "en": "unroll a mat",
+              "ar": "يفرد بساطًا",
+              "kind": "phrase",
+              "x": 88,
+              "y": 76
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Warming up in pairs",
+          "ar": "الإحماء في أزواج",
+          "purposeEn": "Suggest working in pairs to warm up.",
+          "purposeAr": "اقترح أن يؤدي كل اثنين تمارين الإحماء معًا.",
+          "image": {
+            "id": "conv-life-cancelled-outdoor-class-4",
+            "path": "assets/scenes/conversations/life-cancelled-outdoor-class-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Warming up in pairs",
+            "ar": "الإحماء في أزواج",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                3,
+                1583,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "exercise partner",
+              "ar": "شريك التمرين",
+              "kind": "object",
+              "x": 53,
+              "y": 62
+            },
+            {
+              "en": "stretch",
+              "ar": "يتمدّد",
+              "kind": "action",
+              "x": 83,
+              "y": 53
+            },
+            {
+              "en": "warm up in pairs",
+              "ar": "يؤدي تمارين الإحماء في أزواج",
+              "kind": "phrase",
+              "x": 20,
+              "y": 56
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "small-shop-big-order",
+      "goalAr": "طلب كبير من متجر صغير",
+      "goalEn": "A large order at a small shop",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Discussing a large stationery order",
+          "ar": "مناقشة طلب كبير من القرطاسية",
+          "purposeEn": "Explain why this shop can prepare the order in time.",
+          "purposeAr": "وضّح كيف يستطيع هذا المحل تجهيز الطلب في الوقت المطلوب.",
+          "image": {
+            "id": "conv-life-small-shop-big-order-1",
+            "path": "assets/scenes/conversations/life-small-shop-big-order-1.webp",
+            "width": 392,
+            "height": 240,
+            "en": "Discussing a large stationery order",
+            "ar": "مناقشة طلب كبير من القرطاسية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                252,
+                395,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "highlighters",
+              "ar": "أقلام تمييز",
+              "kind": "object",
+              "x": 75,
+              "y": 64
+            },
+            {
+              "en": "notebooks",
+              "ar": "دفاتر",
+              "kind": "object",
+              "x": 43,
+              "y": 65
+            },
+            {
+              "en": "place a large order",
+              "ar": "يقدّم طلب شراء كبيرًا",
+              "kind": "phrase",
+              "x": 58,
+              "y": 72
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Comparing two estimates",
+          "ar": "مقارنة عرضَي سعر",
+          "purposeEn": "Compare the price and time offered by two shops.",
+          "purposeAr": "قارن السعر والمهلة اللذين يعرضهما المحلان.",
+          "image": {
+            "id": "conv-life-small-shop-big-order-2",
+            "path": "assets/scenes/conversations/life-small-shop-big-order-2.webp",
+            "width": 390,
+            "height": 240,
+            "en": "Comparing two estimates",
+            "ar": "مقارنة عرضَي سعر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                401,
+                252,
+                791,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "clipboard",
+              "ar": "لوح تثبيت الأوراق",
+              "kind": "object",
+              "x": 52,
+              "y": 85
+            },
+            {
+              "en": "price estimate",
+              "ar": "عرض سعر تقديري",
+              "kind": "object",
+              "x": 31,
+              "y": 62
+            },
+            {
+              "en": "compare quotes",
+              "ar": "يقارن عروض الأسعار",
+              "kind": "phrase",
+              "x": 50,
+              "y": 58
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Splitting a delivery between two offices",
+          "ar": "تقسيم الشحنة بين مكتبين",
+          "purposeEn": "Ask whether the delivery can go to two addresses.",
+          "purposeAr": "اسأل إن كان يمكن توزيع الشحنة على عنوانين.",
+          "image": {
+            "id": "conv-life-small-shop-big-order-3",
+            "path": "assets/scenes/conversations/life-small-shop-big-order-3.webp",
+            "width": 389,
+            "height": 240,
+            "en": "Splitting a delivery between two offices",
+            "ar": "تقسيم الشحنة بين مكتبين",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                252,
+                1186,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "cardboard box",
+              "ar": "صندوق كرتوني",
+              "kind": "object",
+              "x": 66,
+              "y": 76
+            },
+            {
+              "en": "delivery label",
+              "ar": "ملصق توصيل",
+              "kind": "object",
+              "x": 83,
+              "y": 73
+            },
+            {
+              "en": "split the delivery",
+              "ar": "يقسّم الشحنة",
+              "kind": "phrase",
+              "x": 54,
+              "y": 71
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Checking the full cost",
+          "ar": "التحقق من التكلفة الإجمالية",
+          "purposeEn": "Ask for the total price including delivery.",
+          "purposeAr": "اسأل عن السعر الإجمالي مع التوصيل.",
+          "image": {
+            "id": "conv-life-small-shop-big-order-4",
+            "path": "assets/scenes/conversations/life-small-shop-big-order-4.webp",
+            "width": 390,
+            "height": 240,
+            "en": "Checking the full cost",
+            "ar": "التحقق من التكلفة الإجمالية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                252,
+                1583,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "calculator",
+              "ar": "آلة حاسبة",
+              "kind": "object",
+              "x": 62,
+              "y": 56
+            },
+            {
+              "en": "parcel",
+              "ar": "طرد",
+              "kind": "object",
+              "x": 78,
+              "y": 89
+            },
+            {
+              "en": "check the total cost",
+              "ar": "يتحقق من التكلفة الإجمالية",
+              "kind": "phrase",
+              "x": 54,
+              "y": 61
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "welcome-pack-ideas",
+      "goalAr": "اقتراح محتويات حقيبة الترحيب",
+      "goalEn": "Planning a welcome pack",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Deciding what goes in a welcome pack",
+          "ar": "تحديد محتويات حقيبة الترحيب",
+          "purposeEn": "Ask what new staff need on their first day.",
+          "purposeAr": "اسأل عمّا يحتاجه الموظفون الجدد في يومهم الأول.",
+          "image": {
+            "id": "conv-life-welcome-pack-ideas-1",
+            "path": "assets/scenes/conversations/life-welcome-pack-ideas-1.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Deciding what goes in a welcome pack",
+            "ar": "تحديد محتويات حقيبة الترحيب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                498,
+                395,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "welcome folder",
+              "ar": "ملف الترحيب",
+              "kind": "object",
+              "x": 51,
+              "y": 67
+            },
+            {
+              "en": "lanyard",
+              "ar": "شريط تعليق البطاقة",
+              "kind": "object",
+              "x": 85,
+              "y": 79
+            },
+            {
+              "en": "put together a welcome pack",
+              "ar": "يُعدّ حزمة ترحيب",
+              "kind": "phrase",
+              "x": 52,
+              "y": 76
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Choosing useful maps and contacts",
+          "ar": "اختيار خريطة وجهات اتصال مفيدة",
+          "purposeEn": "Suggest including a building map and contact details.",
+          "purposeAr": "اقترح إرفاق خريطة المبنى ومعلومات الاتصال.",
+          "image": {
+            "id": "conv-life-welcome-pack-ideas-2",
+            "path": "assets/scenes/conversations/life-welcome-pack-ideas-2.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Choosing useful maps and contacts",
+            "ar": "اختيار خريطة وجهات اتصال مفيدة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                401,
+                498,
+                791,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "floor plan",
+              "ar": "مخطط الطابق",
+              "kind": "object",
+              "x": 38,
+              "y": 64
+            },
+            {
+              "en": "contact sheet",
+              "ar": "ورقة معلومات الاتصال",
+              "kind": "object",
+              "x": 83,
+              "y": 62
+            },
+            {
+              "en": "include a building map",
+              "ar": "يرفق خريطة للمبنى",
+              "kind": "phrase",
+              "x": 22,
+              "y": 49
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Showing the staff entrance on the map",
+          "ar": "توضيح مدخل الموظفين على الخريطة",
+          "purposeEn": "Ask for a map that shows which entrance to use.",
+          "purposeAr": "اطلب خريطة توضّح أي مدخل ينبغي استخدامه.",
+          "image": {
+            "id": "conv-life-welcome-pack-ideas-3",
+            "path": "assets/scenes/conversations/life-welcome-pack-ideas-3.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Showing the staff entrance on the map",
+            "ar": "توضيح مدخل الموظفين على الخريطة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                498,
+                1186,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "building map",
+              "ar": "خريطة المبنى",
+              "kind": "object",
+              "x": 58,
+              "y": 66
+            },
+            {
+              "en": "arrow",
+              "ar": "سهم",
+              "kind": "object",
+              "x": 63,
+              "y": 61
+            },
+            {
+              "en": "mark the entrance",
+              "ar": "يحدّد المدخل",
+              "kind": "phrase",
+              "x": 72,
+              "y": 65
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Collecting a staff pass at reception",
+          "ar": "استلام بطاقة الموظف من الاستقبال",
+          "purposeEn": "Explain where new staff can collect their passes.",
+          "purposeAr": "اشرح أين يستلم الموظفون الجدد بطاقاتهم.",
+          "image": {
+            "id": "conv-life-welcome-pack-ideas-4",
+            "path": "assets/scenes/conversations/life-welcome-pack-ideas-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Collecting a staff pass at reception",
+            "ar": "استلام بطاقة الموظف من الاستقبال",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                498,
+                1583,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "access pass",
+              "ar": "بطاقة دخول",
+              "kind": "object",
+              "x": 63,
+              "y": 84
+            },
+            {
+              "en": "reception counter",
+              "ar": "مكتب الاستقبال",
+              "kind": "object",
+              "x": 88,
+              "y": 88
+            },
+            {
+              "en": "collect your pass",
+              "ar": "استلم بطاقة دخولك",
+              "kind": "phrase",
+              "x": 34,
+              "y": 67
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "outdoor-event-backup",
+      "goalAr": "خطة بديلة لفعالية خارجية",
+      "goalEn": "A backup for an outdoor event",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Checking the outdoor setup",
+          "ar": "تفقد التجهيزات في الساحة الخارجية",
+          "purposeEn": "Discuss whether the tables can stay outdoors.",
+          "purposeAr": "ناقش ما إذا كان يمكن إبقاء الطاولات في الخارج.",
+          "image": {
+            "id": "conv-life-outdoor-event-backup-1",
+            "path": "assets/scenes/conversations/life-outdoor-event-backup-1.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Checking the outdoor setup",
+            "ar": "تفقد التجهيزات في الساحة الخارجية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                747,
+                395,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "folded umbrella",
+              "ar": "مظلّة مطويّة",
+              "kind": "object",
+              "x": 15,
+              "y": 39
+            },
+            {
+              "en": "picnic table",
+              "ar": "طاولة نزهة",
+              "kind": "object",
+              "x": 57,
+              "y": 70
+            },
+            {
+              "en": "keep the tables outside",
+              "ar": "يبقي الطاولات في الخارج",
+              "kind": "phrase",
+              "x": 56,
+              "y": 74
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Making a shaded area",
+          "ar": "تجهيز مكان مظلّل",
+          "purposeEn": "Offer guests a choice between sun and shade.",
+          "purposeAr": "اقترح إتاحة الاختيار للضيوف بين الشمس والظلّ.",
+          "image": {
+            "id": "conv-life-outdoor-event-backup-2",
+            "path": "assets/scenes/conversations/life-outdoor-event-backup-2.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Making a shaded area",
+            "ar": "تجهيز مكان مظلّل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                401,
+                747,
+                791,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "patio umbrella",
+              "ar": "مظلّة الساحة",
+              "kind": "object",
+              "x": 38,
+              "y": 24
+            },
+            {
+              "en": "umbrella pole",
+              "ar": "عمود المظلّة",
+              "kind": "object",
+              "x": 41,
+              "y": 64
+            },
+            {
+              "en": "open the umbrella",
+              "ar": "يفتح المظلّة",
+              "kind": "phrase",
+              "x": 73,
+              "y": 38
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Moving chairs under cover",
+          "ar": "نقل الكراسي إلى مكان مسقوف",
+          "purposeEn": "Plan a comfortable place to sit if the weather changes.",
+          "purposeAr": "خطط لمكان مريح للجلوس إذا تغيّر الطقس.",
+          "image": {
+            "id": "conv-life-outdoor-event-backup-3",
+            "path": "assets/scenes/conversations/life-outdoor-event-backup-3.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Moving chairs under cover",
+            "ar": "نقل الكراسي إلى مكان مسقوف",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                747,
+                1186,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "chair back",
+              "ar": "مسند الكرسي",
+              "kind": "object",
+              "x": 51,
+              "y": 77
+            },
+            {
+              "en": "covered area",
+              "ar": "مساحة مسقوفة",
+              "kind": "object",
+              "x": 76,
+              "y": 23
+            },
+            {
+              "en": "move chairs under cover",
+              "ar": "ينقل الكراسي إلى مكان مسقوف",
+              "kind": "phrase",
+              "x": 70,
+              "y": 75
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Leaving a clear aisle",
+          "ar": "ترك ممرّ خالٍ",
+          "purposeEn": "Explain why guests need a wide route through the chairs.",
+          "purposeAr": "اشرح لماذا يحتاج الضيوف إلى ممر واسع بين الكراسي.",
+          "image": {
+            "id": "conv-life-outdoor-event-backup-4",
+            "path": "assets/scenes/conversations/life-outdoor-event-backup-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Leaving a clear aisle",
+            "ar": "ترك ممرّ خالٍ",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                747,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "row of chairs",
+              "ar": "صفّ من الكراسي",
+              "kind": "object",
+              "x": 79,
+              "y": 57
+            },
+            {
+              "en": "wide aisle",
+              "ar": "ممرّ واسع",
+              "kind": "description",
+              "x": 66,
+              "y": 79
+            },
+            {
+              "en": "keep the aisle clear",
+              "ar": "يُبقي الممرّ خاليًا",
+              "kind": "phrase",
+              "x": 52,
+              "y": 70
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

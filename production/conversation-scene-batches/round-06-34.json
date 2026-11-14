@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "f8773215a21fad10ec8af52c966721c8abe81cfc6ea785ba34719c7bb6bfe6ce"
+  },
+  "conversations": [
+    {
+      "id": "l2-093",
+      "goalAr": "ضيف أصرّ على دفع الحساب",
+      "goalEn": "Someone insists on paying",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Paying for dinner",
+          "ar": "دفع حساب العشاء",
+          "purposeEn": "Explain who paid and whether splitting the bill was an option.",
+          "purposeAr": "اشرح من دفع الحساب وما إذا كان تقاسمه واردًا.",
+          "image": {
+            "id": "conv-life-l2-093-1",
+            "path": "assets/scenes/conversations/life-l2-093-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Paying for dinner",
+            "ar": "دفع حساب العشاء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                393,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bank card",
+              "ar": "بطاقة مصرفية",
+              "kind": "object",
+              "x": 62,
+              "y": 73
+            },
+            {
+              "en": "bill folder",
+              "ar": "حافظة الفاتورة",
+              "kind": "object",
+              "x": 65,
+              "y": 89
+            },
+            {
+              "en": "insist on paying for dinner",
+              "ar": "يصرّ على دفع حساب العشاء",
+              "kind": "phrase",
+              "x": 59,
+              "y": 73
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Planning to return the favour",
+          "ar": "التخطيط لردّ الجميل",
+          "purposeEn": "Suggest inviting the person who paid and explain why.",
+          "purposeAr": "اقترح دعوة الشخص الذي دفع واشرح السبب.",
+          "image": {
+            "id": "conv-life-l2-093-2",
+            "path": "assets/scenes/conversations/life-l2-093-2.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Planning to return the favour",
+            "ar": "التخطيط لردّ الجميل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                3,
+                789,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "street map",
+              "ar": "خريطة الشوارع",
+              "kind": "object",
+              "x": 52,
+              "y": 86
+            },
+            {
+              "en": "lunch invitation",
+              "ar": "دعوة إلى الغداء",
+              "kind": "object",
+              "x": 81,
+              "y": 80
+            },
+            {
+              "en": "return the favour",
+              "ar": "يردّ الجميل",
+              "kind": "phrase",
+              "x": 41,
+              "y": 75
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Choosing a café across from work",
+          "ar": "اختيار مقهى مقابل مكان العمل",
+          "purposeEn": "Choose a place he can reach on foot from his office.",
+          "purposeAr": "اختر مكانًا يمكنه الوصول إليه مشيًا من مكتبه.",
+          "image": {
+            "id": "conv-life-l2-093-3",
+            "path": "assets/scenes/conversations/life-l2-093-3.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Choosing a café across from work",
+            "ar": "اختيار مقهى مقابل مكان العمل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                3,
+                1186,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "office entrance",
+              "ar": "مدخل المكتب",
+              "kind": "object",
+              "x": 41,
+              "y": 48
+            },
+            {
+              "en": "café terrace",
+              "ar": "جلسة المقهى الخارجية",
+              "kind": "object",
+              "x": 80,
+              "y": 56
+            },
+            {
+              "en": "pick a place within walking distance",
+              "ar": "يختار مكانًا يمكن الوصول إليه مشيًا",
+              "kind": "phrase",
+              "x": 61,
+              "y": 57
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Inviting a friend for lunch",
+          "ar": "دعوة صديق لتناول الغداء",
+          "purposeEn": "Make the invitation clear by saying who will pay this time.",
+          "purposeAr": "وضّح في الدعوة من سيتولّى الدفع هذه المرّة.",
+          "image": {
+            "id": "conv-life-l2-093-4",
+            "path": "assets/scenes/conversations/life-l2-093-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Inviting a friend for lunch",
+            "ar": "دعوة صديق لتناول الغداء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                3,
+                1583,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "invitation card",
+              "ar": "بطاقة دعوة",
+              "kind": "object",
+              "x": 60,
+              "y": 70
+            },
+            {
+              "en": "shoulder strap",
+              "ar": "حزام كتف",
+              "kind": "object",
+              "x": 87,
+              "y": 67
+            },
+            {
+              "en": "lunch is our treat",
+              "ar": "الغداء على حسابنا",
+              "kind": "phrase",
+              "x": 62,
+              "y": 74
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-094",
+      "goalAr": "مهمة إضافية قبل الإغلاق",
+      "goalEn": "A final task before closing",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Finishing the label printing",
+          "ar": "الانتهاء من طباعة الملصقات",
+          "purposeEn": "Say what you have finished and ask whether you can shut down the computer.",
+          "purposeAr": "اذكر ما أنهيته واسأل إن كان بإمكانك إطفاء الحاسوب.",
+          "image": {
+            "id": "conv-life-l2-094-1",
+            "path": "assets/scenes/conversations/life-l2-094-1.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Finishing the label printing",
+            "ar": "الانتهاء من طباعة الملصقات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                252,
+                393,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "roll of labels",
+              "ar": "لفافة ملصقات",
+              "kind": "object",
+              "x": 61,
+              "y": 82
+            },
+            {
+              "en": "label printer",
+              "ar": "طابعة ملصقات",
+              "kind": "object",
+              "x": 88,
+              "y": 81
+            },
+            {
+              "en": "finish printing the labels",
+              "ar": "ينهي طباعة الملصقات",
+              "kind": "phrase",
+              "x": 42,
+              "y": 77
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Checking the returns tally",
+          "ar": "مراجعة كشف عدّ المرتجعات",
+          "purposeEn": "Ask what work remains before closing.",
+          "purposeAr": "اسأل عمّا بقي من العمل قبل الإغلاق.",
+          "image": {
+            "id": "conv-life-l2-094-2",
+            "path": "assets/scenes/conversations/life-l2-094-2.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Checking the returns tally",
+            "ar": "مراجعة كشف عدّ المرتجعات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                252,
+                789,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "tally sheet",
+              "ar": "كشف العدّ",
+              "kind": "object",
+              "x": 53,
+              "y": 52
+            },
+            {
+              "en": "returned parcel",
+              "ar": "طرد مُعاد",
+              "kind": "object",
+              "x": 70,
+              "y": 86
+            },
+            {
+              "en": "count the returns",
+              "ar": "يعدّ المرتجعات",
+              "kind": "phrase",
+              "x": 39,
+              "y": 53
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Putting returns on the shelf",
+          "ar": "وضع المرتجعات على الرفّ",
+          "purposeEn": "Give two instructions in order: count the returns and put them away.",
+          "purposeAr": "أعطِ تعليمات بالترتيب، عدّ المرتجعات ثم ضعها في مكانها.",
+          "image": {
+            "id": "conv-life-l2-094-3",
+            "path": "assets/scenes/conversations/life-l2-094-3.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Putting returns on the shelf",
+            "ar": "وضع المرتجعات على الرفّ",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                252,
+                1186,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "cardboard box",
+              "ar": "صندوق كرتوني",
+              "kind": "object",
+              "x": 24,
+              "y": 22
+            },
+            {
+              "en": "office door",
+              "ar": "باب المكتب",
+              "kind": "object",
+              "x": 84,
+              "y": 54
+            },
+            {
+              "en": "put the returns on the shelf",
+              "ar": "يضع المرتجعات على الرفّ",
+              "kind": "phrase",
+              "x": 28,
+              "y": 24
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Recording a difference for the morning team",
+          "ar": "تدوين الفرق لفريق الصباح",
+          "purposeEn": "Explain what the next shift should check if the totals differ.",
+          "purposeAr": "اشرح ما ينبغي للفريق التالي مراجعته إذا اختلف العددان.",
+          "image": {
+            "id": "conv-life-l2-094-4",
+            "path": "assets/scenes/conversations/life-l2-094-4.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Recording a difference for the morning team",
+            "ar": "تدوين الفرق لفريق الصباح",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                252,
+                1583,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "clipboard",
+              "ar": "لوح تثبيت الأوراق",
+              "kind": "object",
+              "x": 55,
+              "y": 73
+            },
+            {
+              "en": "pen",
+              "ar": "قلم",
+              "kind": "object",
+              "x": 28,
+              "y": 72
+            },
+            {
+              "en": "write down the difference",
+              "ar": "يدوّن الفرق",
+              "kind": "phrase",
+              "x": 50,
+              "y": 88
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-095",
+      "goalAr": "إبلاغ سؤال عن المعلّم",
+      "goalEn": "Relaying a question about your teacher",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Asking about a French teacher",
+          "ar": "السؤال عن معلّمة الفرنسية",
+          "purposeEn": "Report the question someone asked about the teacher.",
+          "purposeAr": "انقل السؤال الذي طرحه شخص عن المعلّمة.",
+          "image": {
+            "id": "conv-life-l2-095-1",
+            "path": "assets/scenes/conversations/life-l2-095-1.webp",
+            "width": 390,
+            "height": 240,
+            "en": "Asking about a French teacher",
+            "ar": "السؤال عن معلّمة الفرنسية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                500,
+                393,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "French flag",
+              "ar": "علم فرنسا",
+              "kind": "object",
+              "x": 68,
+              "y": 65
+            },
+            {
+              "en": "textbooks",
+              "ar": "كتب دراسية",
+              "kind": "object",
+              "x": 35,
+              "y": 88
+            },
+            {
+              "en": "ask who the teacher is",
+              "ar": "يسأل من هي المعلّمة",
+              "kind": "phrase",
+              "x": 30,
+              "y": 60
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Looking at the beginner class schedule",
+          "ar": "الاطّلاع على جدول دروس المبتدئين",
+          "purposeEn": "Say when the beginner class meets and who can join.",
+          "purposeAr": "اذكر متى يُعقد درس المبتدئين ومن يمكنه الانضمام.",
+          "image": {
+            "id": "conv-life-l2-095-2",
+            "path": "assets/scenes/conversations/life-l2-095-2.webp",
+            "width": 389,
+            "height": 240,
+            "en": "Looking at the beginner class schedule",
+            "ar": "الاطّلاع على جدول دروس المبتدئين",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                500,
+                789,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "desk calendar",
+              "ar": "تقويم مكتبي",
+              "kind": "object",
+              "x": 68,
+              "y": 69
+            },
+            {
+              "en": "calendar square",
+              "ar": "مربّع في التقويم",
+              "kind": "object",
+              "x": 70,
+              "y": 78
+            },
+            {
+              "en": "check when the class meets",
+              "ar": "يتحقّق من موعد الدرس",
+              "kind": "phrase",
+              "x": 77,
+              "y": 70
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Checking registration and a trial session",
+          "ar": "الاستفسار عن التسجيل وجلسة تجريبية",
+          "purposeEn": "Ask how to register and whether a trial is possible before paying.",
+          "purposeAr": "اسأل عن طريقة التسجيل وإمكان حضور جلسة تجريبية قبل الدفع.",
+          "image": {
+            "id": "conv-life-l2-095-3",
+            "path": "assets/scenes/conversations/life-l2-095-3.webp",
+            "width": 389,
+            "height": 240,
+            "en": "Checking registration and a trial session",
+            "ar": "الاستفسار عن التسجيل وجلسة تجريبية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                500,
+                1186,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "registration form",
+              "ar": "استمارة تسجيل",
+              "kind": "object",
+              "x": 37,
+              "y": 66
+            },
+            {
+              "en": "trial-session card",
+              "ar": "بطاقة جلسة تجريبية",
+              "kind": "object",
+              "x": 69,
+              "y": 66
+            },
+            {
+              "en": "ask for a trial session",
+              "ar": "يطلب جلسة تجريبية",
+              "kind": "phrase",
+              "x": 64,
+              "y": 68
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Sharing the registration link",
+          "ar": "مشاركة رابط التسجيل",
+          "purposeEn": "Offer two next steps: send the link and explain what to bring.",
+          "purposeAr": "اعرض إرسال الرابط واذكر ما ينبغي إحضاره.",
+          "image": {
+            "id": "conv-life-l2-095-4",
+            "path": "assets/scenes/conversations/life-l2-095-4.webp",
+            "width": 390,
+            "height": 240,
+            "en": "Sharing the registration link",
+            "ar": "مشاركة رابط التسجيل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                500,
+                1583,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "link icon",
+              "ar": "رمز رابط",
+              "kind": "object",
+              "x": 38,
+              "y": 58
+            },
+            {
+              "en": "notebook",
+              "ar": "دفتر",
+              "kind": "object",
+              "x": 50,
+              "y": 92
+            },
+            {
+              "en": "send the registration link",
+              "ar": "يرسل رابط التسجيل",
+              "kind": "phrase",
+              "x": 33,
+              "y": 63
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-096",
+      "goalAr": "أرهقه السفر",
+      "goalEn": "Too tired to talk after travelling",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Noticing that the traveller is exhausted",
+          "ar": "ملاحظة إرهاق المسافر",
+          "purposeEn": "Explain why the traveller could not talk about the trip.",
+          "purposeAr": "اشرح لماذا لم يتمكّن المسافر من الحديث عن رحلته.",
+          "image": {
+            "id": "conv-life-l2-096-1",
+            "path": "assets/scenes/conversations/life-l2-096-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Noticing that the traveller is exhausted",
+            "ar": "ملاحظة إرهاق المسافر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                747,
+                393,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "rolling suitcase",
+              "ar": "حقيبة سفر بعجلات",
+              "kind": "object",
+              "x": 14,
+              "y": 88
+            },
+            {
+              "en": "sofa",
+              "ar": "أريكة",
+              "kind": "object",
+              "x": 52,
+              "y": 47
+            },
+            {
+              "en": "be too tired to talk",
+              "ar": "يكون متعبًا لدرجة لا يستطيع معها الكلام",
+              "kind": "phrase",
+              "x": 24,
+              "y": 40
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Leaving water nearby while he rests",
+          "ar": "ترك الماء قربه أثناء استراحته",
+          "purposeEn": "Suggest postponing the conversation and leaving a drink nearby.",
+          "purposeAr": "اقترح تأجيل الحديث وترك مشروب في مكان قريب.",
+          "image": {
+            "id": "conv-life-l2-096-2",
+            "path": "assets/scenes/conversations/life-l2-096-2.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Leaving water nearby while he rests",
+            "ar": "ترك الماء قربه أثناء استراحته",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                747,
+                789,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "glass of water",
+              "ar": "كوب ماء",
+              "kind": "object",
+              "x": 63,
+              "y": 60
+            },
+            {
+              "en": "side table",
+              "ar": "طاولة جانبية",
+              "kind": "object",
+              "x": 63,
+              "y": 71
+            },
+            {
+              "en": "leave a glass of water nearby",
+              "ar": "يترك كوب ماء في مكان قريب",
+              "kind": "phrase",
+              "x": 64,
+              "y": 66
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Preparing breakfast for later",
+          "ar": "تجهيز الإفطار لوقت لاحق",
+          "purposeEn": "Suggest keeping breakfast flexible so the guest can sleep longer.",
+          "purposeAr": "اقترح إبقاء موعد الإفطار مرنًا حتى ينام الضيف مدة أطول.",
+          "image": {
+            "id": "conv-life-l2-096-3",
+            "path": "assets/scenes/conversations/life-l2-096-3.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Preparing breakfast for later",
+            "ar": "تجهيز الإفطار لوقت لاحق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                747,
+                1186,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bread basket",
+              "ar": "سلّة خبز",
+              "kind": "object",
+              "x": 38,
+              "y": 81
+            },
+            {
+              "en": "food cover",
+              "ar": "غطاء طعام",
+              "kind": "object",
+              "x": 52,
+              "y": 67
+            },
+            {
+              "en": "leave breakfast ready",
+              "ar": "يترك الإفطار جاهزًا",
+              "kind": "phrase",
+              "x": 51,
+              "y": 48
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Leaving a note with breakfast",
+          "ar": "ترك ملاحظة قرب الإفطار",
+          "purposeEn": "Say what information to leave in the note for the guest.",
+          "purposeAr": "اذكر ما ينبغي إيضاحه في الملاحظة التي ستتركها للضيف.",
+          "image": {
+            "id": "conv-life-l2-096-4",
+            "path": "assets/scenes/conversations/life-l2-096-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Leaving a note with breakfast",
+            "ar": "ترك ملاحظة قرب الإفطار",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                747,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "folded note",
+              "ar": "ورقة ملاحظات مطويّة",
+              "kind": "object",
+              "x": 53,
+              "y": 79
+            },
+            {
+              "en": "juice jug",
+              "ar": "إبريق عصير",
+              "kind": "object",
+              "x": 74,
+              "y": 25
+            },
+            {
+              "en": "leave a note for the morning",
+              "ar": "يترك ملاحظة للصباح",
+              "kind": "phrase",
+              "x": 67,
+              "y": 59
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

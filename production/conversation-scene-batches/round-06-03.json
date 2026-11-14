@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "a11a47e0373b43077b1eceb828fe8f40e94157d0257d0a39164aa7beabe5d248"
+  },
+  "conversations": [
+    {
+      "id": "finding-a-bike-locker",
+      "goalAr": "البحث عن خزانة للدراجة",
+      "goalEn": "Finding a bike locker",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Asking about bike lockers at the station",
+          "ar": "السؤال عن خزائن الدراجات في المحطة",
+          "purposeEn": "Ask whether the station offers somewhere to store a bike.",
+          "purposeAr": "اسأل عمّا إذا كانت المحطة توفر مكانًا لحفظ الدراجة.",
+          "image": {
+            "id": "conv-life-finding-a-bike-locker-1",
+            "path": "assets/scenes/conversations/life-finding-a-bike-locker-1.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Asking about bike lockers at the station",
+            "ar": "السؤال عن خزائن الدراجات في المحطة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                394,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "railway station",
+              "ar": "محطة قطار",
+              "kind": "object",
+              "x": 70,
+              "y": 26
+            },
+            {
+              "en": "handlebars",
+              "ar": "مقود الدراجة",
+              "kind": "object",
+              "x": 28,
+              "y": 79
+            },
+            {
+              "en": "look for a bike locker",
+              "ar": "يبحث عن خزانة للدراجة",
+              "kind": "phrase",
+              "x": 41,
+              "y": 35
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Finding the lockers by the side entrance",
+          "ar": "العثور على الخزائن قرب المدخل الجانبي",
+          "purposeEn": "Say where the lockers are and ask how to reserve one.",
+          "purposeAr": "اذكر مكان الخزائن واسأل عن طريقة حجز إحداها.",
+          "image": {
+            "id": "conv-life-finding-a-bike-locker-2",
+            "path": "assets/scenes/conversations/life-finding-a-bike-locker-2.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Finding the lockers by the side entrance",
+            "ar": "العثور على الخزائن قرب المدخل الجانبي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                3,
+                789,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bike locker",
+              "ar": "خزانة دراجة",
+              "kind": "object",
+              "x": 72,
+              "y": 63
+            },
+            {
+              "en": "side entrance",
+              "ar": "مدخل جانبي",
+              "kind": "object",
+              "x": 49,
+              "y": 20
+            },
+            {
+              "en": "point out the lockers",
+              "ar": "يشير إلى مكان الخزائن",
+              "kind": "phrase",
+              "x": 54,
+              "y": 47
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Scanning the booking code",
+          "ar": "مسح رمز الحجز",
+          "purposeEn": "Explain how to open the booking page and find a free locker.",
+          "purposeAr": "اشرح كيفية فتح صفحة الحجز والعثور على خزانة شاغرة.",
+          "image": {
+            "id": "conv-life-finding-a-bike-locker-3",
+            "path": "assets/scenes/conversations/life-finding-a-bike-locker-3.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Scanning the booking code",
+            "ar": "مسح رمز الحجز",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                3,
+                1186,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "QR code",
+              "ar": "رمز الاستجابة السريعة",
+              "kind": "object",
+              "x": 77,
+              "y": 61
+            },
+            {
+              "en": "smartphone",
+              "ar": "هاتف ذكي",
+              "kind": "object",
+              "x": 58,
+              "y": 64
+            },
+            {
+              "en": "scan the code",
+              "ar": "يمسح الرمز",
+              "kind": "phrase",
+              "x": 63,
+              "y": 72
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Opening a reserved bike locker",
+          "ar": "فتح خزانة الدراجات المحجوزة",
+          "purposeEn": "Explain what you receive after choosing a locker.",
+          "purposeAr": "اشرح ماذا تستلم بعد اختيار الخزانة.",
+          "image": {
+            "id": "conv-life-finding-a-bike-locker-4",
+            "path": "assets/scenes/conversations/life-finding-a-bike-locker-4.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Opening a reserved bike locker",
+            "ar": "فتح خزانة الدراجات المحجوزة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                3,
+                1583,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "keypad",
+              "ar": "لوحة أزرار",
+              "kind": "object",
+              "x": 88,
+              "y": 58
+            },
+            {
+              "en": "bicycle",
+              "ar": "دراجة هوائية",
+              "kind": "object",
+              "x": 78,
+              "y": 68
+            },
+            {
+              "en": "open a bike locker",
+              "ar": "يفتح خزانة دراجة",
+              "kind": "phrase",
+              "x": 55,
+              "y": 58
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "returning-the-library-book",
+      "goalAr": "إعادة كتاب إلى المكتبة",
+      "goalEn": "Returning a library book",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Finding where to return a book",
+          "ar": "العثور على مكان إعادة كتاب",
+          "purposeEn": "Ask where to take a book you borrowed.",
+          "purposeAr": "اسأل إلى أين تأخذ كتابًا استعرته.",
+          "image": {
+            "id": "conv-life-returning-the-library-book-1",
+            "path": "assets/scenes/conversations/life-returning-the-library-book-1.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Finding where to return a book",
+            "ar": "العثور على مكان إعادة كتاب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                250,
+                394,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "hardback",
+              "ar": "كتاب بغلاف مقوّى",
+              "kind": "object",
+              "x": 30,
+              "y": 72
+            },
+            {
+              "en": "library entrance",
+              "ar": "مدخل المكتبة",
+              "kind": "object",
+              "x": 83,
+              "y": 48
+            },
+            {
+              "en": "ask where to return a book",
+              "ar": "يسأل أين يعيد الكتاب",
+              "kind": "phrase",
+              "x": 78,
+              "y": 31
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Handing a book to the librarian",
+          "ar": "تسليم الكتاب لأمين المكتبة",
+          "purposeEn": "Follow the directions and return the book at the front desk.",
+          "purposeAr": "اتبع الإرشادات وأعِد الكتاب إلى مكتب الاستقبال.",
+          "image": {
+            "id": "conv-life-returning-the-library-book-2",
+            "path": "assets/scenes/conversations/life-returning-the-library-book-2.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Handing a book to the librarian",
+            "ar": "تسليم الكتاب لأمين المكتبة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                250,
+                789,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "librarian",
+              "ar": "أمين مكتبة",
+              "kind": "object",
+              "x": 76,
+              "y": 35
+            },
+            {
+              "en": "front desk",
+              "ar": "مكتب الاستقبال",
+              "kind": "object",
+              "x": 78,
+              "y": 82
+            },
+            {
+              "en": "hand the book back",
+              "ar": "يعيد الكتاب",
+              "kind": "phrase",
+              "x": 54,
+              "y": 57
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Scanning the returned book",
+          "ar": "مسح رمز الكتاب المُعاد",
+          "purposeEn": "Ask how to check whether the return was recorded.",
+          "purposeAr": "اسأل كيف تتحقق من تسجيل إعادة الكتاب.",
+          "image": {
+            "id": "conv-life-returning-the-library-book-3",
+            "path": "assets/scenes/conversations/life-returning-the-library-book-3.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Scanning the returned book",
+            "ar": "مسح رمز الكتاب المُعاد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                250,
+                1186,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "barcode scanner",
+              "ar": "قارئ الرموز الشريطية",
+              "kind": "object",
+              "x": 53,
+              "y": 54
+            },
+            {
+              "en": "library card",
+              "ar": "بطاقة المكتبة",
+              "kind": "object",
+              "x": 75,
+              "y": 92
+            },
+            {
+              "en": "scan the returned book",
+              "ar": "يمسح رمز الكتاب المُعاد",
+              "kind": "phrase",
+              "x": 53,
+              "y": 71
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Checking a library account",
+          "ar": "التحقق من حساب المكتبة",
+          "purposeEn": "Explain where to see whether the loan is still listed.",
+          "purposeAr": "اشرح أين يمكن التحقق مما إذا كان الكتاب ما زال في قائمة الإعارات.",
+          "image": {
+            "id": "conv-life-returning-the-library-book-4",
+            "path": "assets/scenes/conversations/life-returning-the-library-book-4.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Checking a library account",
+            "ar": "التحقق من حساب المكتبة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                250,
+                1583,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "confirmation tick",
+              "ar": "علامة تأكيد",
+              "kind": "object",
+              "x": 52,
+              "y": 62
+            },
+            {
+              "en": "returned book",
+              "ar": "كتاب مُعاد",
+              "kind": "object",
+              "x": 79,
+              "y": 68
+            },
+            {
+              "en": "check your library account",
+              "ar": "تحقّق من حسابك في المكتبة",
+              "kind": "phrase",
+              "x": 49,
+              "y": 78
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "first-club-session-memory",
+      "goalAr": "ذكرى اللقاء الأول للنادي",
+      "goalEn": "Remembering the first club session",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Remembering the start of the reading club",
+          "ar": "تذكّر بداية نادي القراءة",
+          "purposeEn": "Ask whether someone remembers the club's first day.",
+          "purposeAr": "اسأل شخصًا عمّا إذا كان يتذكر اليوم الأول للنادي.",
+          "image": {
+            "id": "conv-life-first-club-session-memory-1",
+            "path": "assets/scenes/conversations/life-first-club-session-memory-1.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Remembering the start of the reading club",
+            "ar": "تذكّر بداية نادي القراءة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                498,
+                394,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "hardback",
+              "ar": "كتاب بغلاف مقوّى",
+              "kind": "object",
+              "x": 61,
+              "y": 89
+            },
+            {
+              "en": "meeting table",
+              "ar": "طاولة اجتماع",
+              "kind": "object",
+              "x": 56,
+              "y": 78
+            },
+            {
+              "en": "remember the first meeting",
+              "ar": "يتذكّر الاجتماع الأول",
+              "kind": "phrase",
+              "x": 39,
+              "y": 59
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Putting out chairs before the session",
+          "ar": "ترتيب الكراسي قبل الجلسة",
+          "purposeEn": "Describe what had happened before the others arrived.",
+          "purposeAr": "صف ما تمّ قبل وصول الآخرين.",
+          "image": {
+            "id": "conv-life-first-club-session-memory-2",
+            "path": "assets/scenes/conversations/life-first-club-session-memory-2.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Putting out chairs before the session",
+            "ar": "ترتيب الكراسي قبل الجلسة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                498,
+                789,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "stacking chair",
+              "ar": "كرسي قابل للتكديس",
+              "kind": "object",
+              "x": 61,
+              "y": 85
+            },
+            {
+              "en": "bookshelf",
+              "ar": "رفّ كتب",
+              "kind": "object",
+              "x": 82,
+              "y": 25
+            },
+            {
+              "en": "put out the chairs",
+              "ar": "يرتّب الكراسي",
+              "kind": "phrase",
+              "x": 45,
+              "y": 70
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Discussing the first book",
+          "ar": "مناقشة أول كتاب",
+          "purposeEn": "Explain why the group started early and what it discussed.",
+          "purposeAr": "اشرح لماذا بدأت المجموعة مبكرًا وما الذي ناقشته.",
+          "image": {
+            "id": "conv-life-first-club-session-memory-3",
+            "path": "assets/scenes/conversations/life-first-club-session-memory-3.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Discussing the first book",
+            "ar": "مناقشة أول كتاب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                498,
+                1186,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "book cover",
+              "ar": "غلاف كتاب",
+              "kind": "object",
+              "x": 42,
+              "y": 37
+            },
+            {
+              "en": "reading group",
+              "ar": "مجموعة قراءة",
+              "kind": "object",
+              "x": 72,
+              "y": 58
+            },
+            {
+              "en": "discuss a book",
+              "ar": "يناقش كتابًا",
+              "kind": "phrase",
+              "x": 37,
+              "y": 52
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Lending a copy to a member",
+          "ar": "إعارة نسخة لأحد الأعضاء",
+          "purposeEn": "Explain how borrowing the book helped you join the discussion.",
+          "purposeAr": "اشرح كيف ساعدك استعارة الكتاب على المشاركة في النقاش.",
+          "image": {
+            "id": "conv-life-first-club-session-memory-4",
+            "path": "assets/scenes/conversations/life-first-club-session-memory-4.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Lending a copy to a member",
+            "ar": "إعارة نسخة لأحد الأعضاء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                498,
+                1583,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "copy of a book",
+              "ar": "نسخة من كتاب",
+              "kind": "object",
+              "x": 50,
+              "y": 66
+            },
+            {
+              "en": "club member",
+              "ar": "عضو في النادي",
+              "kind": "object",
+              "x": 78,
+              "y": 44
+            },
+            {
+              "en": "lend someone a copy",
+              "ar": "يعير شخصًا نسخة",
+              "kind": "phrase",
+              "x": 54,
+              "y": 70
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "missed-exhibition-opening",
+      "goalAr": "فوات افتتاح المعرض",
+      "goalEn": "Missing an exhibition opening",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Regretting missing the opening",
+          "ar": "الأسف على فوات الافتتاح",
+          "purposeEn": "Say that you wish you had seen the opening.",
+          "purposeAr": "عبّر عن تمنيك لو أنك حضرت الافتتاح.",
+          "image": {
+            "id": "conv-life-missed-exhibition-opening-1",
+            "path": "assets/scenes/conversations/life-missed-exhibition-opening-1.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Regretting missing the opening",
+            "ar": "الأسف على فوات الافتتاح",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                747,
+                394,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "framed painting",
+              "ar": "لوحة مؤطّرة",
+              "kind": "object",
+              "x": 56,
+              "y": 46
+            },
+            {
+              "en": "display board",
+              "ar": "لوحة عرض",
+              "kind": "object",
+              "x": 57,
+              "y": 71
+            },
+            {
+              "en": "miss the opening",
+              "ar": "يفوته الافتتاح",
+              "kind": "phrase",
+              "x": 81,
+              "y": 41
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Waiting for a late bus",
+          "ar": "انتظار حافلة متأخرة",
+          "purposeEn": "Explain what delayed your arrival.",
+          "purposeAr": "اشرح ما الذي أخّر وصولك.",
+          "image": {
+            "id": "conv-life-missed-exhibition-opening-2",
+            "path": "assets/scenes/conversations/life-missed-exhibition-opening-2.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Waiting for a late bus",
+            "ar": "انتظار حافلة متأخرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                747,
+                789,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "city bus",
+              "ar": "حافلة المدينة",
+              "kind": "object",
+              "x": 79,
+              "y": 43
+            },
+            {
+              "en": "bus shelter",
+              "ar": "مظلّة موقف الحافلات",
+              "kind": "object",
+              "x": 27,
+              "y": 24
+            },
+            {
+              "en": "check the time",
+              "ar": "يتفقّد الوقت",
+              "kind": "phrase",
+              "x": 46,
+              "y": 70
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Checking tickets at the gallery",
+          "ar": "الاستفسار عن التذاكر في المعرض",
+          "purposeEn": "Plan another visit and ask about buying tickets at the door.",
+          "purposeAr": "خطّط لزيارة أخرى واسأل عن شراء التذاكر عند المدخل.",
+          "image": {
+            "id": "conv-life-missed-exhibition-opening-3",
+            "path": "assets/scenes/conversations/life-missed-exhibition-opening-3.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Checking tickets at the gallery",
+            "ar": "الاستفسار عن التذاكر في المعرض",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                747,
+                1186,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ticket window",
+              "ar": "شبّاك التذاكر",
+              "kind": "object",
+              "x": 88,
+              "y": 36
+            },
+            {
+              "en": "art gallery",
+              "ar": "معرض فنّي",
+              "kind": "object",
+              "x": 62,
+              "y": 32
+            },
+            {
+              "en": "ask about tickets",
+              "ar": "يستفسر عن التذاكر",
+              "kind": "phrase",
+              "x": 56,
+              "y": 55
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Booking tickets online",
+          "ar": "حجز التذاكر عبر الإنترنت",
+          "purposeEn": "Offer to book online to save time.",
+          "purposeAr": "اعرض الحجز عبر الإنترنت لتوفير الوقت.",
+          "image": {
+            "id": "conv-life-missed-exhibition-opening-4",
+            "path": "assets/scenes/conversations/life-missed-exhibition-opening-4.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Booking tickets online",
+            "ar": "حجز التذاكر عبر الإنترنت",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                747,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ticket icon",
+              "ar": "رمز التذكرة",
+              "kind": "object",
+              "x": 68,
+              "y": 64
+            },
+            {
+              "en": "queue",
+              "ar": "طابور",
+              "kind": "object",
+              "x": 84,
+              "y": 40
+            },
+            {
+              "en": "book tickets online",
+              "ar": "يحجز التذاكر عبر الإنترنت",
+              "kind": "phrase",
+              "x": 66,
+              "y": 81
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

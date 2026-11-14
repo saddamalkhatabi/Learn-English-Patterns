@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "8b8e96f87c303bb76ca88c8328c47af36208269cb1b087b21fec6b6ac46bb498"
+  },
+  "conversations": [
+    {
+      "id": "listening-speed-progress",
+      "goalAr": "أثر التدريب المتدرّج",
+      "goalEn": "Progress with gradual listening practice",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Struggling to follow fast speech",
+          "ar": "صعوبة متابعة الكلام السريع",
+          "purposeEn": "Say what makes the recording hard to follow.",
+          "purposeAr": "اذكر ما يجعل متابعة التسجيل صعبة.",
+          "image": {
+            "id": "conv-life-listening-speed-progress-1",
+            "path": "assets/scenes/conversations/life-listening-speed-progress-1.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Struggling to follow fast speech",
+            "ar": "صعوبة متابعة الكلام السريع",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                394,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "headphones",
+              "ar": "سمّاعات رأس",
+              "kind": "object",
+              "x": 23,
+              "y": 24
+            },
+            {
+              "en": "laptop",
+              "ar": "حاسوب محمول",
+              "kind": "object",
+              "x": 58,
+              "y": 71
+            },
+            {
+              "en": "struggle to follow",
+              "ar": "يجد صعوبة في المتابعة",
+              "kind": "phrase",
+              "x": 34,
+              "y": 43
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Replaying a short section",
+          "ar": "إعادة تشغيل مقطع قصير",
+          "purposeEn": "Suggest starting with a short clip at a comfortable speed.",
+          "purposeAr": "اقترح البدء بمقطع قصير بسرعة مريحة.",
+          "image": {
+            "id": "conv-life-listening-speed-progress-2",
+            "path": "assets/scenes/conversations/life-listening-speed-progress-2.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Replaying a short section",
+            "ar": "إعادة تشغيل مقطع قصير",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                3,
+                791,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "replay button",
+              "ar": "زرّ إعادة التشغيل",
+              "kind": "object",
+              "x": 65,
+              "y": 84
+            },
+            {
+              "en": "audio waveform",
+              "ar": "شكل الموجة الصوتية",
+              "kind": "object",
+              "x": 71,
+              "y": 65
+            },
+            {
+              "en": "replay a short clip",
+              "ar": "يعيد تشغيل مقطع قصير",
+              "kind": "phrase",
+              "x": 60,
+              "y": 87
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Trying the same clip again",
+          "ar": "تجربة المقطع نفسه مجددًا",
+          "purposeEn": "Discuss returning to normal speed and listening for a missed word.",
+          "purposeAr": "ناقش الرجوع للسرعة العادية والاستماع للكلمة التي فاتتك.",
+          "image": {
+            "id": "conv-life-listening-speed-progress-3",
+            "path": "assets/scenes/conversations/life-listening-speed-progress-3.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Trying the same clip again",
+            "ar": "تجربة المقطع نفسه مجددًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                3,
+                1186,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "play button",
+              "ar": "زرّ التشغيل",
+              "kind": "object",
+              "x": 60,
+              "y": 81
+            },
+            {
+              "en": "playback bar",
+              "ar": "شريط التشغيل",
+              "kind": "object",
+              "x": 76,
+              "y": 82
+            },
+            {
+              "en": "play the clip again",
+              "ar": "يعيد تشغيل المقطع",
+              "kind": "phrase",
+              "x": 70,
+              "y": 87
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Reading just the marked line",
+          "ar": "قراءة السطر المحدّد فقط",
+          "purposeEn": "Read the difficult line before listening again.",
+          "purposeAr": "اقرأ السطر الصعب قبل الاستماع مجددًا.",
+          "image": {
+            "id": "conv-life-listening-speed-progress-4",
+            "path": "assets/scenes/conversations/life-listening-speed-progress-4.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Reading just the marked line",
+            "ar": "قراءة السطر المحدّد فقط",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                3,
+                1583,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "practice sheet",
+              "ar": "ورقة تدريب",
+              "kind": "object",
+              "x": 61,
+              "y": 59
+            },
+            {
+              "en": "highlighted line",
+              "ar": "سطر مميّز باللون",
+              "kind": "description",
+              "x": 65,
+              "y": 80
+            },
+            {
+              "en": "read the marked line",
+              "ar": "يقرأ السطر المحدّد",
+              "kind": "phrase",
+              "x": 74,
+              "y": 78
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "leave-a-voicemail",
+      "goalAr": "ترك رسالة صوتية",
+      "goalEn": "Leaving a voicemail",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Leaving a callback request",
+          "ar": "ترك طلب للاتصال مجددًا",
+          "purposeEn": "Introduce yourself and ask the listener to call back.",
+          "purposeAr": "عرّف بنفسك واطلب من المستمع أن يعاود الاتصال.",
+          "image": {
+            "id": "conv-life-leave-a-voicemail-1",
+            "path": "assets/scenes/conversations/life-leave-a-voicemail-1.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Leaving a callback request",
+            "ar": "ترك طلب للاتصال مجددًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                250,
+                394,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "toolbox",
+              "ar": "صندوق عِدّة",
+              "kind": "object",
+              "x": 86,
+              "y": 82
+            },
+            {
+              "en": "desk lamp",
+              "ar": "مصباح مكتبي",
+              "kind": "object",
+              "x": 90,
+              "y": 46
+            },
+            {
+              "en": "leave a voicemail",
+              "ar": "يترك رسالة صوتية",
+              "kind": "phrase",
+              "x": 60,
+              "y": 47
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Calling back to confirm a visit",
+          "ar": "معاودة الاتصال لتأكيد الزيارة",
+          "purposeEn": "Respond to the message and ask about the visit.",
+          "purposeAr": "رُدّ على الرسالة واستفسر عن الزيارة.",
+          "image": {
+            "id": "conv-life-leave-a-voicemail-2",
+            "path": "assets/scenes/conversations/life-leave-a-voicemail-2.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Calling back to confirm a visit",
+            "ar": "معاودة الاتصال لتأكيد الزيارة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                250,
+                791,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "appointment calendar",
+              "ar": "تقويم المواعيد",
+              "kind": "object",
+              "x": 70,
+              "y": 80
+            },
+            {
+              "en": "mobile phone",
+              "ar": "هاتف محمول",
+              "kind": "object",
+              "x": 39,
+              "y": 37
+            },
+            {
+              "en": "confirm an appointment",
+              "ar": "يؤكّد موعدًا",
+              "kind": "phrase",
+              "x": 62,
+              "y": 84
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Agreeing on two in the afternoon",
+          "ar": "الاتفاق على الثانية بعد الظهر",
+          "purposeEn": "Confirm an afternoon time and discuss what to do if the call does not connect.",
+          "purposeAr": "أكّد موعدًا بعد الظهر وناقش ما العمل إذا تعذّر الاتصال.",
+          "image": {
+            "id": "conv-life-leave-a-voicemail-3",
+            "path": "assets/scenes/conversations/life-leave-a-voicemail-3.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Agreeing on two in the afternoon",
+            "ar": "الاتفاق على الثانية بعد الظهر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                250,
+                1186,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "analog clock",
+              "ar": "ساعة بعقارب",
+              "kind": "object",
+              "x": 77,
+              "y": 56
+            },
+            {
+              "en": "clock hands",
+              "ar": "عقربا الساعة",
+              "kind": "object",
+              "x": 77,
+              "y": 43
+            },
+            {
+              "en": "agree on a time",
+              "ar": "يتفق على موعد",
+              "kind": "phrase",
+              "x": 67,
+              "y": 63
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Leaving contact information",
+          "ar": "ترك معلومات الاتصال",
+          "purposeEn": "Tell the caller what to leave after the tone.",
+          "purposeAr": "أخبر المتصل بما ينبغي أن يتركه بعد سماع النغمة.",
+          "image": {
+            "id": "conv-life-leave-a-voicemail-4",
+            "path": "assets/scenes/conversations/life-leave-a-voicemail-4.webp",
+            "width": 231,
+            "height": 205,
+            "en": "Leaving contact information",
+            "ar": "ترك معلومات الاتصال",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                287,
+                1424,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "smartphone",
+              "ar": "هاتف ذكي",
+              "kind": "object",
+              "x": 87,
+              "y": 32
+            },
+            {
+              "en": "headscarf",
+              "ar": "غطاء رأس",
+              "kind": "object",
+              "x": 44,
+              "y": 17
+            },
+            {
+              "en": "record a voice message",
+              "ar": "يسجّل رسالة صوتية",
+              "kind": "phrase",
+              "x": 75,
+              "y": 38
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "confirming-a-food-order",
+      "goalAr": "مراجعة طلب الطعام",
+      "goalEn": "Checking a food order",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Checking the number of dishes",
+          "ar": "التحقق من عدد الأطباق",
+          "purposeEn": "Confirm the quantities of soup and salad.",
+          "purposeAr": "أكّد عدد أطباق الحساء والسلطة.",
+          "image": {
+            "id": "conv-life-confirming-a-food-order-1",
+            "path": "assets/scenes/conversations/life-confirming-a-food-order-1.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Checking the number of dishes",
+            "ar": "التحقق من عدد الأطباق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                498,
+                394,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bowl of soup",
+              "ar": "وعاء حساء",
+              "kind": "object",
+              "x": 21,
+              "y": 85
+            },
+            {
+              "en": "salad bowl",
+              "ar": "وعاء سلطة",
+              "kind": "object",
+              "x": 56,
+              "y": 86
+            },
+            {
+              "en": "check the food order",
+              "ar": "يراجع طلب الطعام",
+              "kind": "phrase",
+              "x": 29,
+              "y": 63
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Requesting dressing on the side",
+          "ar": "طلب تتبيلة السلطة جانبًا",
+          "purposeEn": "Request separate dressing and respond to an offer of bread.",
+          "purposeAr": "اطلب التتبيلة منفصلة وردّ على عرض الخبز.",
+          "image": {
+            "id": "conv-life-confirming-a-food-order-2",
+            "path": "assets/scenes/conversations/life-confirming-a-food-order-2.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Requesting dressing on the side",
+            "ar": "طلب تتبيلة السلطة جانبًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                498,
+                791,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "salad dressing",
+              "ar": "تتبيلة السلطة",
+              "kind": "object",
+              "x": 48,
+              "y": 90
+            },
+            {
+              "en": "bread basket",
+              "ar": "سلّة خبز",
+              "kind": "object",
+              "x": 75,
+              "y": 78
+            },
+            {
+              "en": "ask for dressing on the side",
+              "ar": "يطلب التتبيلة منفصلة",
+              "kind": "phrase",
+              "x": 42,
+              "y": 80
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Reading the order back",
+          "ar": "إعادة قراءة الطلب للتأكيد",
+          "purposeEn": "Offer to repeat the order before sending it to the kitchen.",
+          "purposeAr": "اعرض إعادة قراءة الطلب قبل إرساله إلى المطبخ.",
+          "image": {
+            "id": "conv-life-confirming-a-food-order-3",
+            "path": "assets/scenes/conversations/life-confirming-a-food-order-3.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Reading the order back",
+            "ar": "إعادة قراءة الطلب للتأكيد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                498,
+                1186,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "order pad",
+              "ar": "دفتر الطلبات",
+              "kind": "object",
+              "x": 38,
+              "y": 49
+            },
+            {
+              "en": "apron",
+              "ar": "مريلة",
+              "kind": "object",
+              "x": 22,
+              "y": 46
+            },
+            {
+              "en": "read the order back",
+              "ar": "يعيد قراءة الطلب للتأكيد",
+              "kind": "phrase",
+              "x": 34,
+              "y": 41
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Serving the dressing separately",
+          "ar": "تقديم التتبيلة منفصلة",
+          "purposeEn": "Confirm that the dressing will be served in its own cup.",
+          "purposeAr": "أكّد أن التتبيلة ستُقدّم في وعاء مستقل.",
+          "image": {
+            "id": "conv-life-confirming-a-food-order-4",
+            "path": "assets/scenes/conversations/life-confirming-a-food-order-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Serving the dressing separately",
+            "ar": "تقديم التتبيلة منفصلة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                498,
+                1583,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "dressing cup",
+              "ar": "كوب التتبيلة",
+              "kind": "object",
+              "x": 51,
+              "y": 85
+            },
+            {
+              "en": "small pitcher",
+              "ar": "إبريق صغير",
+              "kind": "object",
+              "x": 38,
+              "y": 64
+            },
+            {
+              "en": "serve the dressing separately",
+              "ar": "يقدّم التتبيلة منفصلة",
+              "kind": "phrase",
+              "x": 50,
+              "y": 75
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "keeping-leftovers",
+      "goalAr": "ترتيب بقايا العشاء",
+      "goalEn": "Packing away dinner leftovers",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Choosing containers for leftovers",
+          "ar": "اختيار علب لبقايا الطعام",
+          "purposeEn": "Ask how many containers are needed.",
+          "purposeAr": "اسأل عن عدد العلب اللازمة.",
+          "image": {
+            "id": "conv-life-keeping-leftovers-1",
+            "path": "assets/scenes/conversations/life-keeping-leftovers-1.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Choosing containers for leftovers",
+            "ar": "اختيار علب لبقايا الطعام",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                746,
+                394,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "food container",
+              "ar": "علبة حفظ الطعام",
+              "kind": "object",
+              "x": 61,
+              "y": 83
+            },
+            {
+              "en": "leftovers",
+              "ar": "بقايا الطعام",
+              "kind": "object",
+              "x": 23,
+              "y": 88
+            },
+            {
+              "en": "pack up the leftovers",
+              "ar": "يعبّئ بقايا الطعام",
+              "kind": "phrase",
+              "x": 50,
+              "y": 72
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Putting soup in a larger container",
+          "ar": "وضع الحساء في علبة أكبر",
+          "purposeEn": "Suggest using the larger container for the soup.",
+          "purposeAr": "اقترح استخدام العلبة الأكبر للحساء.",
+          "image": {
+            "id": "conv-life-keeping-leftovers-2",
+            "path": "assets/scenes/conversations/life-keeping-leftovers-2.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Putting soup in a larger container",
+            "ar": "وضع الحساء في علبة أكبر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                746,
+                791,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ladle",
+              "ar": "مغرفة",
+              "kind": "object",
+              "x": 39,
+              "y": 68
+            },
+            {
+              "en": "cooked vegetables",
+              "ar": "خضراوات مطهوّة",
+              "kind": "object",
+              "x": 14,
+              "y": 90
+            },
+            {
+              "en": "put the soup in the larger container",
+              "ar": "يضع الحساء في العلبة الأكبر",
+              "kind": "phrase",
+              "x": 44,
+              "y": 80
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Labelling the lids",
+          "ar": "وضع ملصقات على الأغطية",
+          "purposeEn": "Ask someone to put today's date on the lids.",
+          "purposeAr": "اطلب من شخص كتابة تاريخ اليوم على الأغطية.",
+          "image": {
+            "id": "conv-life-keeping-leftovers-3",
+            "path": "assets/scenes/conversations/life-keeping-leftovers-3.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Labelling the lids",
+            "ar": "وضع ملصقات على الأغطية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                746,
+                1186,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "marker",
+              "ar": "قلم تحديد",
+              "kind": "object",
+              "x": 36,
+              "y": 65
+            },
+            {
+              "en": "container lid",
+              "ar": "غطاء العلبة",
+              "kind": "object",
+              "x": 82,
+              "y": 68
+            },
+            {
+              "en": "label the lids",
+              "ar": "يضع ملصقات على الأغطية",
+              "kind": "phrase",
+              "x": 47,
+              "y": 67
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Moving the older container to the front",
+          "ar": "وضع العلبة الأقدم في المقدمة",
+          "purposeEn": "Explain how to make sure the older leftovers get used first.",
+          "purposeAr": "اشرح كيف تضمن استخدام البقايا الأقدم أولًا.",
+          "image": {
+            "id": "conv-life-keeping-leftovers-4",
+            "path": "assets/scenes/conversations/life-keeping-leftovers-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Moving the older container to the front",
+            "ar": "وضع العلبة الأقدم في المقدمة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                746,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "fridge shelf",
+              "ar": "رفّ الثلاجة",
+              "kind": "object",
+              "x": 23,
+              "y": 85
+            },
+            {
+              "en": "food container",
+              "ar": "علبة حفظ الطعام",
+              "kind": "object",
+              "x": 70,
+              "y": 52
+            },
+            {
+              "en": "put the older container at the front",
+              "ar": "يضع العلبة الأقدم في المقدمة",
+              "kind": "phrase",
+              "x": 54,
+              "y": 65
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "b9b5d893201c09fff74d0a1217d49f2b7067f58056dd935e462588db174be0a7"
+  },
+  "conversations": [
+    {
+      "id": "l2-109",
+      "goalAr": "أول لقاء بعد سنوات",
+      "goalEn": "Meeting again after years apart",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Meeting again after graduation",
+          "ar": "لقاء مجدّد بعد التخرّج",
+          "purposeEn": "Ask how long it has been since you last met.",
+          "purposeAr": "اسأل عن المدّة التي مضت منذ آخر لقاء.",
+          "image": {
+            "id": "conv-life-l2-109-1",
+            "path": "assets/scenes/conversations/life-l2-109-1.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Meeting again after graduation",
+            "ar": "لقاء مجدّد بعد التخرّج",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                392,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "graduation photo",
+              "ar": "صورة التخرّج",
+              "kind": "object",
+              "x": 71,
+              "y": 70
+            },
+            {
+              "en": "graduation cap",
+              "ar": "قبّعة التخرّج",
+              "kind": "object",
+              "x": 71,
+              "y": 65
+            },
+            {
+              "en": "meet again after years apart",
+              "ar": "يلتقي مجدّدًا بعد سنوات من الفراق",
+              "kind": "phrase",
+              "x": 45,
+              "y": 62
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Sitting down to catch up",
+          "ar": "الجلوس لتبادل الأخبار",
+          "purposeEn": "Recall where you last met and suggest talking about what has happened since.",
+          "purposeAr": "تذكّر أين التقيتما آخر مرة واقترح تبادل الأخبار منذ ذلك الحين.",
+          "image": {
+            "id": "conv-life-l2-109-2",
+            "path": "assets/scenes/conversations/life-l2-109-2.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Sitting down to catch up",
+            "ar": "الجلوس لتبادل الأخبار",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                398,
+                3,
+                790,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "photo album",
+              "ar": "ألبوم صور",
+              "kind": "object",
+              "x": 53,
+              "y": 74
+            },
+            {
+              "en": "graduation picture",
+              "ar": "صورة تخرّج",
+              "kind": "object",
+              "x": 74,
+              "y": 78
+            },
+            {
+              "en": "sit down and catch up",
+              "ar": "يجلس ليتبادل الأخبار",
+              "kind": "phrase",
+              "x": 40,
+              "y": 67
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Talking about changes since the last meeting",
+          "ar": "الحديث عمّا تغيّر منذ اللقاء الأخير",
+          "purposeEn": "Describe a change in where you live or how you work.",
+          "purposeAr": "صِف تغييرًا في مكان سكنك أو طريقة عملك.",
+          "image": {
+            "id": "conv-life-l2-109-3",
+            "path": "assets/scenes/conversations/life-l2-109-3.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Talking about changes since the last meeting",
+            "ar": "الحديث عمّا تغيّر منذ اللقاء الأخير",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                3,
+                1186,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "home office",
+              "ar": "مكتب منزلي",
+              "kind": "object",
+              "x": 59,
+              "y": 54
+            },
+            {
+              "en": "smartphone",
+              "ar": "هاتف ذكي",
+              "kind": "object",
+              "x": 62,
+              "y": 42
+            },
+            {
+              "en": "work from home twice a week",
+              "ar": "يعمل من المنزل يومين في الأسبوع",
+              "kind": "phrase",
+              "x": 33,
+              "y": 70
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Asking whether a friend still cycles",
+          "ar": "السؤال عمّا إذا كان الصديق لا يزال يركب الدراجة",
+          "purposeEn": "Ask whether an old friend still makes time for a hobby.",
+          "purposeAr": "اسأل صديقًا قديمًا هل ما يزال يخصّص وقتًا لهوايته.",
+          "image": {
+            "id": "conv-life-l2-109-4",
+            "path": "assets/scenes/conversations/life-l2-109-4.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Asking whether a friend still cycles",
+            "ar": "السؤال عمّا إذا كان الصديق لا يزال يركب الدراجة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                3,
+                1583,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "cycling helmet",
+              "ar": "خوذة دراجة",
+              "kind": "object",
+              "x": 30,
+              "y": 86
+            },
+            {
+              "en": "bicycle saddle",
+              "ar": "مقعد الدراجة",
+              "kind": "object",
+              "x": 60,
+              "y": 73
+            },
+            {
+              "en": "make time for cycling",
+              "ar": "يخصّص وقتًا لركوب الدراجة",
+              "kind": "phrase",
+              "x": 35,
+              "y": 61
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-110",
+      "goalAr": "موعد تقديم العشاء",
+      "goalEn": "Asking when dinner is served",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Leaving bags in the hall",
+          "ar": "ترك الحقائب في الردهة",
+          "purposeEn": "Welcome a guest and show them where to leave a bag.",
+          "purposeAr": "رحّب بالضيف وأرِه أين يترك الحقيبة.",
+          "image": {
+            "id": "conv-life-l2-110-1",
+            "path": "assets/scenes/conversations/life-l2-110-1.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Leaving bags in the hall",
+            "ar": "ترك الحقائب في الردهة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                251,
+                392,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "handbag",
+              "ar": "حقيبة يد",
+              "kind": "object",
+              "x": 47,
+              "y": 70
+            },
+            {
+              "en": "hallway bench",
+              "ar": "مقعد الردهة",
+              "kind": "object",
+              "x": 30,
+              "y": 87
+            },
+            {
+              "en": "leave your bag in the hall",
+              "ar": "اترك حقيبتك في الردهة",
+              "kind": "phrase",
+              "x": 42,
+              "y": 63
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Confirming the dinner time",
+          "ar": "تأكيد موعد تقديم العشاء",
+          "purposeEn": "Say when dinner will be served and why you chose that time.",
+          "purposeAr": "اذكر متى يُقدّم العشاء ولماذا اخترتم ذلك الموعد.",
+          "image": {
+            "id": "conv-life-l2-110-2",
+            "path": "assets/scenes/conversations/life-l2-110-2.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Confirming the dinner time",
+            "ar": "تأكيد موعد تقديم العشاء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                398,
+                251,
+                790,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "wall clock",
+              "ar": "ساعة حائط",
+              "kind": "object",
+              "x": 72,
+              "y": 31
+            },
+            {
+              "en": "dining chair",
+              "ar": "كرسي مائدة",
+              "kind": "object",
+              "x": 82,
+              "y": 88
+            },
+            {
+              "en": "serve dinner at seven",
+              "ar": "يقدّم العشاء في السابعة",
+              "kind": "phrase",
+              "x": 58,
+              "y": 52
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Keeping the salad chilled and setting out plates",
+          "ar": "إبقاء السلطة مبردة ووضع الأطباق",
+          "purposeEn": "Ask what to refrigerate and what to set out now.",
+          "purposeAr": "اسأل عمّا ينبغي إبقاؤه في الثلاجة وما يمكن وضعه على المائدة الآن.",
+          "image": {
+            "id": "conv-life-l2-110-3",
+            "path": "assets/scenes/conversations/life-l2-110-3.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Keeping the salad chilled and setting out plates",
+            "ar": "إبقاء السلطة مبردة ووضع الأطباق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                251,
+                1186,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "salad bowl",
+              "ar": "وعاء سلطة",
+              "kind": "object",
+              "x": 19,
+              "y": 57
+            },
+            {
+              "en": "stack of plates",
+              "ar": "رزمة أطباق",
+              "kind": "object",
+              "x": 84,
+              "y": 76
+            },
+            {
+              "en": "keep the salad in the fridge",
+              "ar": "يبقي السلطة في الثلاجة",
+              "kind": "phrase",
+              "x": 24,
+              "y": 62
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Putting out a place setting in case someone joins",
+          "ar": "إعداد مكان إضافي لضيف محتمل",
+          "purposeEn": "Explain why you are setting out one more plate.",
+          "purposeAr": "اشرح لماذا تضع طبقًا إضافيًا.",
+          "image": {
+            "id": "conv-life-l2-110-4",
+            "path": "assets/scenes/conversations/life-l2-110-4.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Putting out a place setting in case someone joins",
+            "ar": "إعداد مكان إضافي لضيف محتمل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                251,
+                1583,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "extra plate",
+              "ar": "طبق إضافي",
+              "kind": "object",
+              "x": 57,
+              "y": 87
+            },
+            {
+              "en": "drinking glass",
+              "ar": "كأس شرب",
+              "kind": "object",
+              "x": 65,
+              "y": 79
+            },
+            {
+              "en": "put out an extra plate",
+              "ar": "يضع طبقًا إضافيًا",
+              "kind": "phrase",
+              "x": 49,
+              "y": 83
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-111",
+      "goalAr": "حديث جانبي في العمل",
+      "goalEn": "Asking to speak in private",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Starting a conversation about the schedule",
+          "ar": "بدء الحديث عن الجدول",
+          "purposeEn": "Ask if this is a good place to discuss the schedule.",
+          "purposeAr": "اسأل إن كان هذا المكان مناسبًا لمناقشة الجدول.",
+          "image": {
+            "id": "conv-life-l2-111-1",
+            "path": "assets/scenes/conversations/life-l2-111-1.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Starting a conversation about the schedule",
+            "ar": "بدء الحديث عن الجدول",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                499,
+                392,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "planning board",
+              "ar": "لوحة تخطيط",
+              "kind": "object",
+              "x": 63,
+              "y": 39
+            },
+            {
+              "en": "notebook",
+              "ar": "دفتر",
+              "kind": "object",
+              "x": 68,
+              "y": 76
+            },
+            {
+              "en": "discuss the schedule",
+              "ar": "يناقش الجدول",
+              "kind": "phrase",
+              "x": 40,
+              "y": 56
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Finding somewhere to talk in private",
+          "ar": "العثور على مكان للحديث على انفراد",
+          "purposeEn": "Ask to speak privately and offer an available room.",
+          "purposeAr": "اطلب الحديث على انفراد واقترح غرفة متاحة.",
+          "image": {
+            "id": "conv-life-l2-111-2",
+            "path": "assets/scenes/conversations/life-l2-111-2.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Finding somewhere to talk in private",
+            "ar": "العثور على مكان للحديث على انفراد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                398,
+                499,
+                790,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "empty meeting room",
+              "ar": "غرفة اجتماعات شاغرة",
+              "kind": "object",
+              "x": 66,
+              "y": 55
+            },
+            {
+              "en": "meeting table",
+              "ar": "طاولة اجتماعات",
+              "kind": "object",
+              "x": 64,
+              "y": 66
+            },
+            {
+              "en": "speak in private",
+              "ar": "يتحدّث على انفراد",
+              "kind": "phrase",
+              "x": 48,
+              "y": 54
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Closing the door before the conversation",
+          "ar": "إغلاق الباب قبل الحديث",
+          "purposeEn": "Agree how long you can use the room and close the door.",
+          "purposeAr": "اتّفقا على مدّة استخدام الغرفة وأغلق الباب.",
+          "image": {
+            "id": "conv-life-l2-111-3",
+            "path": "assets/scenes/conversations/life-l2-111-3.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Closing the door before the conversation",
+            "ar": "إغلاق الباب قبل الحديث",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                499,
+                1186,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "door handle",
+              "ar": "مقبض الباب",
+              "kind": "object",
+              "x": 59,
+              "y": 79
+            },
+            {
+              "en": "wall clock",
+              "ar": "ساعة حائط",
+              "kind": "object",
+              "x": 73,
+              "y": 17
+            },
+            {
+              "en": "close the door for privacy",
+              "ar": "يغلق الباب للخصوصية",
+              "kind": "phrase",
+              "x": 56,
+              "y": 83
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Reviewing the schedule before sharing it",
+          "ar": "مراجعة الجدول قبل مشاركته",
+          "purposeEn": "Raise the change you want to discuss before telling the team.",
+          "purposeAr": "اطرح التعديل الذي تودّ مناقشته قبل إبلاغ الفريق.",
+          "image": {
+            "id": "conv-life-l2-111-4",
+            "path": "assets/scenes/conversations/life-l2-111-4.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Reviewing the schedule before sharing it",
+            "ar": "مراجعة الجدول قبل مشاركته",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                499,
+                1583,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "printed schedule",
+              "ar": "جدول مطبوع",
+              "kind": "object",
+              "x": 55,
+              "y": 83
+            },
+            {
+              "en": "pen",
+              "ar": "قلم",
+              "kind": "object",
+              "x": 67,
+              "y": 71
+            },
+            {
+              "en": "review the schedule before sharing it",
+              "ar": "يراجع الجدول قبل مشاركته",
+              "kind": "phrase",
+              "x": 47,
+              "y": 78
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-112",
+      "goalAr": "طريقتان لتدفئة الغرفة",
+      "goalEn": "Choosing a way to keep warm",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Noticing a cold draft",
+          "ar": "ملاحظة تيّار هواء بارد",
+          "purposeEn": "Explain what is making the area around the desk cold.",
+          "purposeAr": "اشرح سبب برودة المكان حول المكتب.",
+          "image": {
+            "id": "conv-life-l2-112-1",
+            "path": "assets/scenes/conversations/life-l2-112-1.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Noticing a cold draft",
+            "ar": "ملاحظة تيّار هواء بارد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                747,
+                392,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "open window",
+              "ar": "نافذة مفتوحة",
+              "kind": "object",
+              "x": 61,
+              "y": 36
+            },
+            {
+              "en": "radiator",
+              "ar": "مدفأة",
+              "kind": "object",
+              "x": 84,
+              "y": 82
+            },
+            {
+              "en": "feel a draft from the window",
+              "ar": "يشعر بتيّار هواء من النافذة",
+              "kind": "phrase",
+              "x": 76,
+              "y": 61
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Closing the window politely",
+          "ar": "إغلاق النافذة بعد طلب مهذّب",
+          "purposeEn": "Ask someone to close the window and agree to the request.",
+          "purposeAr": "اطلب من شخص إغلاق النافذة وردّ بالموافقة على الطلب.",
+          "image": {
+            "id": "conv-life-l2-112-2",
+            "path": "assets/scenes/conversations/life-l2-112-2.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Closing the window politely",
+            "ar": "إغلاق النافذة بعد طلب مهذّب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                398,
+                747,
+                790,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "window handle",
+              "ar": "مقبض النافذة",
+              "kind": "object",
+              "x": 57,
+              "y": 37
+            },
+            {
+              "en": "curtain",
+              "ar": "ستارة",
+              "kind": "object",
+              "x": 78,
+              "y": 49
+            },
+            {
+              "en": "would you mind closing the window",
+              "ar": "هل تمانع في إغلاق النافذة؟",
+              "kind": "phrase",
+              "x": 57,
+              "y": 34
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Checking whether the desk is more comfortable",
+          "ar": "التحقّق من تحسّن الجلوس عند المكتب",
+          "purposeEn": "Ask if the room feels better and offer to move the chair.",
+          "purposeAr": "اسأل هل أصبح الجوّ أفضل واعرض نقل الكرسي.",
+          "image": {
+            "id": "conv-life-l2-112-3",
+            "path": "assets/scenes/conversations/life-l2-112-3.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Checking whether the desk is more comfortable",
+            "ar": "التحقّق من تحسّن الجلوس عند المكتب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                747,
+                1186,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "desk chair",
+              "ar": "كرسي مكتب",
+              "kind": "object",
+              "x": 43,
+              "y": 70
+            },
+            {
+              "en": "stack of books",
+              "ar": "رزمة كتب",
+              "kind": "object",
+              "x": 87,
+              "y": 86
+            },
+            {
+              "en": "move your chair",
+              "ar": "انقل كرسيّك",
+              "kind": "phrase",
+              "x": 40,
+              "y": 68
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Waiting until the room warms up",
+          "ar": "الانتظار حتى تدفأ الغرفة",
+          "purposeEn": "Say when you could open the window again.",
+          "purposeAr": "اذكر متى يمكن إعادة فتح النافذة.",
+          "image": {
+            "id": "conv-life-l2-112-4",
+            "path": "assets/scenes/conversations/life-l2-112-4.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Waiting until the room warms up",
+            "ar": "الانتظار حتى تدفأ الغرفة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                747,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "closed window",
+              "ar": "نافذة مغلقة",
+              "kind": "object",
+              "x": 55,
+              "y": 28
+            },
+            {
+              "en": "stack of papers",
+              "ar": "رزمة أوراق",
+              "kind": "object",
+              "x": 60,
+              "y": 91
+            },
+            {
+              "en": "wait for the room to warm up",
+              "ar": "ينتظر حتى تدفأ الغرفة",
+              "kind": "phrase",
+              "x": 54,
+              "y": 70
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

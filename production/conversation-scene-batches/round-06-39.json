@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "6528618bb1f1243eb1dad4b86a7edc5de3ad5c1d8431bd3d4b6ce7be44ce8663"
+  },
+  "conversations": [
+    {
+      "id": "l2-113",
+      "goalAr": "هل استلمت الرسالة؟",
+      "goalEn": "Checking if a message was meant for you",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Following up on a note",
+          "ar": "متابعة ما ورد في ملاحظة",
+          "purposeEn": "Ask what the other person wanted to tell you.",
+          "purposeAr": "اسأل عمّا أراد الشخص الآخر إخبارك به.",
+          "image": {
+            "id": "conv-life-l2-113-1",
+            "path": "assets/scenes/conversations/life-l2-113-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Following up on a note",
+            "ar": "متابعة ما ورد في ملاحظة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                393,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "handwritten note",
+              "ar": "ملاحظة مكتوبة بخط اليد",
+              "kind": "object",
+              "x": 50,
+              "y": 69
+            },
+            {
+              "en": "laptop",
+              "ar": "حاسوب محمول",
+              "kind": "object",
+              "x": 69,
+              "y": 89
+            },
+            {
+              "en": "ask someone to come by",
+              "ar": "يطلب من شخص المرور عليه",
+              "kind": "phrase",
+              "x": 48,
+              "y": 71
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Showing the new meeting room",
+          "ar": "الإشارة إلى غرفة الاجتماع الجديدة",
+          "purposeEn": "Say where you moved the meeting and check who needs to know.",
+          "purposeAr": "اذكر إلى أين نقلت الاجتماع وتحقّق ممّن ينبغي إبلاغه.",
+          "image": {
+            "id": "conv-life-l2-113-2",
+            "path": "assets/scenes/conversations/life-l2-113-2.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Showing the new meeting room",
+            "ar": "الإشارة إلى غرفة الاجتماع الجديدة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                3,
+                789,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "meeting room sign",
+              "ar": "لافتة غرفة الاجتماعات",
+              "kind": "object",
+              "x": 90,
+              "y": 30
+            },
+            {
+              "en": "meeting table",
+              "ar": "طاولة اجتماعات",
+              "kind": "object",
+              "x": 69,
+              "y": 71
+            },
+            {
+              "en": "move the meeting to a smaller room",
+              "ar": "ينقل الاجتماع إلى غرفة أصغر",
+              "kind": "phrase",
+              "x": 52,
+              "y": 53
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Checking who has not read the update",
+          "ar": "تحديد من لم يقرأ التحديث",
+          "purposeEn": "Explain that two invitees have yet to see the update.",
+          "purposeAr": "وضّح أن شخصين من المدعوّين لم يطّلعا على التحديث بعد.",
+          "image": {
+            "id": "conv-life-l2-113-3",
+            "path": "assets/scenes/conversations/life-l2-113-3.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Checking who has not read the update",
+            "ar": "تحديد من لم يقرأ التحديث",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                3,
+                1187,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "unread message icon",
+              "ar": "رمز رسالة غير مقروءة",
+              "kind": "object",
+              "x": 42,
+              "y": 67
+            },
+            {
+              "en": "meeting update",
+              "ar": "تحديث بشأن الاجتماع",
+              "kind": "object",
+              "x": 78,
+              "y": 75
+            },
+            {
+              "en": "check who has read the update",
+              "ar": "يتحقّق ممّن قرأ التحديث",
+              "kind": "phrase",
+              "x": 55,
+              "y": 63
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Sending the room number separately",
+          "ar": "إرسال رقم الغرفة في رسالة منفصلة",
+          "purposeEn": "Offer to tell the remaining invitees the new room number directly.",
+          "purposeAr": "اعرض إبلاغ بقية المدعوّين برقم الغرفة الجديدة مباشرةً.",
+          "image": {
+            "id": "conv-life-l2-113-4",
+            "path": "assets/scenes/conversations/life-l2-113-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Sending the room number separately",
+            "ar": "إرسال رقم الغرفة في رسالة منفصلة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                3,
+                1583,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "room icon",
+              "ar": "رمز غرفة",
+              "kind": "object",
+              "x": 69,
+              "y": 39
+            },
+            {
+              "en": "send button",
+              "ar": "زرّ الإرسال",
+              "kind": "object",
+              "x": 70,
+              "y": 67
+            },
+            {
+              "en": "send a separate message",
+              "ar": "يرسل رسالة منفصلة",
+              "kind": "phrase",
+              "x": 67,
+              "y": 74
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-114",
+      "goalAr": "طريقة الدفع عند المحاسبة",
+      "goalEn": "Choosing how to pay",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Asking how a customer wants to pay",
+          "ar": "السؤال عن طريقة الدفع",
+          "purposeEn": "State the total and ask how the customer would like to pay.",
+          "purposeAr": "اذكر الإجمالي واسأل الزبون كيف يفضّل الدفع.",
+          "image": {
+            "id": "conv-life-l2-114-1",
+            "path": "assets/scenes/conversations/life-l2-114-1.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Asking how a customer wants to pay",
+            "ar": "السؤال عن طريقة الدفع",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                251,
+                393,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "card terminal",
+              "ar": "جهاز دفع بالبطاقة",
+              "kind": "object",
+              "x": 53,
+              "y": 81
+            },
+            {
+              "en": "cash register screen",
+              "ar": "شاشة صندوق المحاسبة",
+              "kind": "object",
+              "x": 13,
+              "y": 68
+            },
+            {
+              "en": "how would you like to pay",
+              "ar": "كيف تودّ الدفع؟",
+              "kind": "phrase",
+              "x": 40,
+              "y": 63
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Paying by card and asking for a receipt",
+          "ar": "الدفع بالبطاقة وطلب إيصال",
+          "purposeEn": "Choose a payment method and ask for a receipt.",
+          "purposeAr": "اختر طريقة الدفع واطلب إيصالًا.",
+          "image": {
+            "id": "conv-life-l2-114-2",
+            "path": "assets/scenes/conversations/life-l2-114-2.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Paying by card and asking for a receipt",
+            "ar": "الدفع بالبطاقة وطلب إيصال",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                251,
+                789,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bank card",
+              "ar": "بطاقة مصرفية",
+              "kind": "object",
+              "x": 51,
+              "y": 72
+            },
+            {
+              "en": "contactless symbol",
+              "ar": "رمز الدفع اللاتلامسي",
+              "kind": "object",
+              "x": 42,
+              "y": 73
+            },
+            {
+              "en": "pay by card",
+              "ar": "يدفع بالبطاقة",
+              "kind": "phrase",
+              "x": 55,
+              "y": 68
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Printing a receipt for expenses",
+          "ar": "طباعة إيصال لتوثيق المصروفات",
+          "purposeEn": "Choose a printed receipt and explain what you need it for.",
+          "purposeAr": "اختر إيصالًا مطبوعًا واشرح لماذا تحتاج إليه.",
+          "image": {
+            "id": "conv-life-l2-114-3",
+            "path": "assets/scenes/conversations/life-l2-114-3.webp",
+            "width": 392,
+            "height": 243,
+            "en": "Printing a receipt for expenses",
+            "ar": "طباعة إيصال لتوثيق المصروفات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                251,
+                1187,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "printed receipt",
+              "ar": "إيصال مطبوع",
+              "kind": "object",
+              "x": 60,
+              "y": 68
+            },
+            {
+              "en": "receipt printer",
+              "ar": "طابعة إيصالات",
+              "kind": "object",
+              "x": 63,
+              "y": 90
+            },
+            {
+              "en": "ask for a printed receipt",
+              "ar": "يطلب إيصالًا مطبوعًا",
+              "kind": "phrase",
+              "x": 58,
+              "y": 58
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Handing over the receipt after payment",
+          "ar": "تسليم الإيصال بعد الدفع",
+          "purposeEn": "Confirm that the payment went through and hand over the receipt.",
+          "purposeAr": "أكّد نجاح الدفع وناول الزبون الإيصال.",
+          "image": {
+            "id": "conv-life-l2-114-4",
+            "path": "assets/scenes/conversations/life-l2-114-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Handing over the receipt after payment",
+            "ar": "تسليم الإيصال بعد الدفع",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                251,
+                1583,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "approval checkmark",
+              "ar": "علامة الموافقة",
+              "kind": "object",
+              "x": 24,
+              "y": 83
+            },
+            {
+              "en": "receipt",
+              "ar": "إيصال",
+              "kind": "object",
+              "x": 55,
+              "y": 68
+            },
+            {
+              "en": "your card payment went through",
+              "ar": "تمّ الدفع ببطاقتك بنجاح",
+              "kind": "phrase",
+              "x": 54,
+              "y": 67
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-115",
+      "goalAr": "العثور على صرّاف آلي",
+      "goalEn": "Finding a cash machine",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Asking where to find a cash machine",
+          "ar": "السؤال عن مكان صرّاف آلي",
+          "purposeEn": "Ask for directions to the nearest cash machine.",
+          "purposeAr": "اسأل عن الطريق إلى أقرب صرّاف آلي.",
+          "image": {
+            "id": "conv-life-l2-115-1",
+            "path": "assets/scenes/conversations/life-l2-115-1.webp",
+            "width": 390,
+            "height": 240,
+            "en": "Asking where to find a cash machine",
+            "ar": "السؤال عن مكان صرّاف آلي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                500,
+                393,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "railway station entrance",
+              "ar": "مدخل محطة القطار",
+              "kind": "object",
+              "x": 47,
+              "y": 27
+            },
+            {
+              "en": "bank card",
+              "ar": "بطاقة مصرفية",
+              "kind": "object",
+              "x": 42,
+              "y": 65
+            },
+            {
+              "en": "ask where the nearest ATM is",
+              "ar": "يسأل عن أقرب صرّاف آلي",
+              "kind": "phrase",
+              "x": 81,
+              "y": 58
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Checking whether the machine accepts your card",
+          "ar": "التحقّق من قبول البطاقة",
+          "purposeEn": "Ask if the machine accepts a card issued abroad.",
+          "purposeAr": "اسأل إن كان الصرّاف يقبل بطاقة صادرة من الخارج.",
+          "image": {
+            "id": "conv-life-l2-115-2",
+            "path": "assets/scenes/conversations/life-l2-115-2.webp",
+            "width": 390,
+            "height": 240,
+            "en": "Checking whether the machine accepts your card",
+            "ar": "التحقّق من قبول البطاقة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                500,
+                789,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "cash machine",
+              "ar": "صرّاف آلي",
+              "kind": "object",
+              "x": 81,
+              "y": 58
+            },
+            {
+              "en": "foreign bank card",
+              "ar": "بطاقة مصرفية صادرة من الخارج",
+              "kind": "object",
+              "x": 73,
+              "y": 84
+            },
+            {
+              "en": "accept cards from abroad",
+              "ar": "يقبل بطاقات صادرة من الخارج",
+              "kind": "phrase",
+              "x": 73,
+              "y": 81
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Reviewing the fee before confirming",
+          "ar": "مراجعة الرسوم قبل التأكيد",
+          "purposeEn": "Explain what to check before confirming the withdrawal.",
+          "purposeAr": "اشرح ما ينبغي مراجعته قبل تأكيد السحب.",
+          "image": {
+            "id": "conv-life-l2-115-3",
+            "path": "assets/scenes/conversations/life-l2-115-3.webp",
+            "width": 392,
+            "height": 240,
+            "en": "Reviewing the fee before confirming",
+            "ar": "مراجعة الرسوم قبل التأكيد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                500,
+                1187,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "fee symbol",
+              "ar": "رمز الرسوم",
+              "kind": "object",
+              "x": 48,
+              "y": 38
+            },
+            {
+              "en": "confirm button",
+              "ar": "زرّ التأكيد",
+              "kind": "object",
+              "x": 58,
+              "y": 64
+            },
+            {
+              "en": "check the fee before withdrawing cash",
+              "ar": "يتحقّق من الرسوم قبل سحب النقود",
+              "kind": "phrase",
+              "x": 60,
+              "y": 65
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Finding another machine by the lift",
+          "ar": "العثور على صرّاف آخر بجانب المصعد",
+          "purposeEn": "Offer a second location if the first machine charges too much.",
+          "purposeAr": "اقترح مكانًا آخر إذا كانت رسوم الصرّاف الأول مرتفعة.",
+          "image": {
+            "id": "conv-life-l2-115-4",
+            "path": "assets/scenes/conversations/life-l2-115-4.webp",
+            "width": 390,
+            "height": 240,
+            "en": "Finding another machine by the lift",
+            "ar": "العثور على صرّاف آخر بجانب المصعد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                500,
+                1583,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ATM",
+              "ar": "صرّاف آلي",
+              "kind": "object",
+              "x": 47,
+              "y": 58
+            },
+            {
+              "en": "elevator door",
+              "ar": "باب المصعد",
+              "kind": "object",
+              "x": 82,
+              "y": 61
+            },
+            {
+              "en": "use the machine next to the elevator",
+              "ar": "يستخدم الصرّاف المجاور للمصعد",
+              "kind": "phrase",
+              "x": 47,
+              "y": 74
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-116",
+      "goalAr": "مشروب مع الوجبة",
+      "goalEn": "Ordering a drink with a meal",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Offering a drink with the meal",
+          "ar": "عرض مشروب مع الوجبة",
+          "purposeEn": "Ask what the customer would like to drink with the meal.",
+          "purposeAr": "اسأل الزبونة عمّا تودّ شربه مع الوجبة.",
+          "image": {
+            "id": "conv-life-l2-116-1",
+            "path": "assets/scenes/conversations/life-l2-116-1.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Offering a drink with the meal",
+            "ar": "عرض مشروب مع الوجبة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                746,
+                393,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "picture menu",
+              "ar": "قائمة طعام مصوّرة",
+              "kind": "object",
+              "x": 64,
+              "y": 70
+            },
+            {
+              "en": "soup picture",
+              "ar": "صورة حساء",
+              "kind": "object",
+              "x": 48,
+              "y": 63
+            },
+            {
+              "en": "order a drink with your meal",
+              "ar": "يطلب مشروبًا مع وجبته",
+              "kind": "phrase",
+              "x": 44,
+              "y": 64
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Requesting water without ice",
+          "ar": "طلب ماء بلا ثلج",
+          "purposeEn": "Choose a drink and explain how you want it served.",
+          "purposeAr": "اختر مشروبًا واذكر كيف تريده.",
+          "image": {
+            "id": "conv-life-l2-116-2",
+            "path": "assets/scenes/conversations/life-l2-116-2.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Requesting water without ice",
+            "ar": "طلب ماء بلا ثلج",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                746,
+                789,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "water picture",
+              "ar": "صورة كوب ماء",
+              "kind": "object",
+              "x": 70,
+              "y": 57
+            },
+            {
+              "en": "ice cube picture",
+              "ar": "صورة مكعّبات ثلج",
+              "kind": "object",
+              "x": 71,
+              "y": 82
+            },
+            {
+              "en": "ask for water without ice",
+              "ar": "يطلب ماء بلا ثلج",
+              "kind": "phrase",
+              "x": 65,
+              "y": 57
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Bringing water before the food",
+          "ar": "إحضار الماء قبل الطعام",
+          "purposeEn": "Ask for the water now and say that your friend will order later.",
+          "purposeAr": "اطلب الماء الآن واذكر أن صديقتك ستطلب لاحقًا.",
+          "image": {
+            "id": "conv-life-l2-116-3",
+            "path": "assets/scenes/conversations/life-l2-116-3.webp",
+            "width": 392,
+            "height": 243,
+            "en": "Bringing water before the food",
+            "ar": "إحضار الماء قبل الطعام",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                746,
+                1187,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "glass of water",
+              "ar": "كوب ماء",
+              "kind": "object",
+              "x": 64,
+              "y": 84
+            },
+            {
+              "en": "empty chair",
+              "ar": "كرسي شاغر",
+              "kind": "object",
+              "x": 51,
+              "y": 72
+            },
+            {
+              "en": "bring the water now",
+              "ar": "أحضر الماء الآن",
+              "kind": "phrase",
+              "x": 69,
+              "y": 79
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Leaving the drinks menu on the table",
+          "ar": "ترك قائمة المشروبات على الطاولة",
+          "purposeEn": "Offer to leave the menu ready for the friend who is arriving.",
+          "purposeAr": "اعرض ترك القائمة أمام الصديقة التي ستصل لاحقًا.",
+          "image": {
+            "id": "conv-life-l2-116-4",
+            "path": "assets/scenes/conversations/life-l2-116-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Leaving the drinks menu on the table",
+            "ar": "ترك قائمة المشروبات على الطاولة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                746,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "drinks menu",
+              "ar": "قائمة المشروبات",
+              "kind": "object",
+              "x": 78,
+              "y": 84
+            },
+            {
+              "en": "water glass",
+              "ar": "كوب ماء",
+              "kind": "object",
+              "x": 53,
+              "y": 91
+            },
+            {
+              "en": "leave the drinks menu on the table",
+              "ar": "يترك قائمة المشروبات على الطاولة",
+              "kind": "phrase",
+              "x": 77,
+              "y": 57
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

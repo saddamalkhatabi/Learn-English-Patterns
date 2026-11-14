@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "c8859adebfe9f24e205461f3bb342cce1e2f1eba796202adbb31afb58c60c27c"
+  },
+  "conversations": [
+    {
+      "id": "dessert-to-take-home",
+      "goalAr": "حلوى لأخذها إلى البيت",
+      "goalEn": "Dessert to take home",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Ordering cake to take home",
+          "ar": "طلب كعك لأخذه إلى المنزل",
+          "purposeEn": "Ask for two slices of cake to take home.",
+          "purposeAr": "اطلب قطعتين من الكعك لأخذهما إلى المنزل.",
+          "image": {
+            "id": "conv-life-dessert-to-take-home-1",
+            "path": "assets/scenes/conversations/life-dessert-to-take-home-1.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Ordering cake to take home",
+            "ar": "طلب كعك لأخذه إلى المنزل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                394,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "lemon cake",
+              "ar": "كعك بالليمون",
+              "kind": "object",
+              "x": 63,
+              "y": 80
+            },
+            {
+              "en": "chocolate cake",
+              "ar": "كعك بالشوكولاتة",
+              "kind": "object",
+              "x": 87,
+              "y": 82
+            },
+            {
+              "en": "choose two slices",
+              "ar": "يختار قطعتين",
+              "kind": "phrase",
+              "x": 50,
+              "y": 75
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Choosing one of each",
+          "ar": "اختيار قطعة من كل نوع",
+          "purposeEn": "Choose one lemon slice and one chocolate slice.",
+          "purposeAr": "اختر قطعة بالليمون وقطعة بالشوكولاتة.",
+          "image": {
+            "id": "conv-life-dessert-to-take-home-2",
+            "path": "assets/scenes/conversations/life-dessert-to-take-home-2.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Choosing one of each",
+            "ar": "اختيار قطعة من كل نوع",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                3,
+                789,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "lemon cake slice",
+              "ar": "قطعة كعك بالليمون",
+              "kind": "object",
+              "x": 26,
+              "y": 57
+            },
+            {
+              "en": "chocolate cake slice",
+              "ar": "قطعة كعك بالشوكولاتة",
+              "kind": "object",
+              "x": 77,
+              "y": 59
+            },
+            {
+              "en": "one of each",
+              "ar": "واحدة من كل نوع",
+              "kind": "phrase",
+              "x": 50,
+              "y": 71
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Packing the slices separately",
+          "ar": "تعبئة القطعتين منفصلتين",
+          "purposeEn": "Ask the total price and discuss separate boxes.",
+          "purposeAr": "اسأل عن السعر الإجمالي وناقش وضع كل قطعة في علبة.",
+          "image": {
+            "id": "conv-life-dessert-to-take-home-3",
+            "path": "assets/scenes/conversations/life-dessert-to-take-home-3.webp",
+            "width": 393,
+            "height": 241,
+            "en": "Packing the slices separately",
+            "ar": "تعبئة القطعتين منفصلتين",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                3,
+                1188,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "payment terminal",
+              "ar": "جهاز دفع",
+              "kind": "object",
+              "x": 35,
+              "y": 80
+            },
+            {
+              "en": "takeaway box",
+              "ar": "علبة طعام للسفري",
+              "kind": "object",
+              "x": 60,
+              "y": 83
+            },
+            {
+              "en": "pack them separately",
+              "ar": "يعبئهما منفصلتين",
+              "kind": "phrase",
+              "x": 82,
+              "y": 73
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Marking the box with nuts",
+          "ar": "وضع علامة على علبة تحتوي على مكسرات",
+          "purposeEn": "Ask for the box containing nuts to be marked.",
+          "purposeAr": "اطلب وضع علامة على العلبة التي تحتوي على مكسرات.",
+          "image": {
+            "id": "conv-life-dessert-to-take-home-4",
+            "path": "assets/scenes/conversations/life-dessert-to-take-home-4.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Marking the box with nuts",
+            "ar": "وضع علامة على علبة تحتوي على مكسرات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1194,
+                3,
+                1583,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "nut sticker",
+              "ar": "ملصق مكسرات",
+              "kind": "object",
+              "x": 59,
+              "y": 61
+            },
+            {
+              "en": "closed box",
+              "ar": "علبة مغلقة",
+              "kind": "object",
+              "x": 20,
+              "y": 79
+            },
+            {
+              "en": "mark the box",
+              "ar": "يضع علامة على العلبة",
+              "kind": "phrase",
+              "x": 54,
+              "y": 44
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "washing-up-together",
+      "goalAr": "تقسيم مهام المطبخ",
+      "goalEn": "Sharing the kitchen clean-up",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Clearing dishes from the table",
+          "ar": "رفع الأطباق عن الطاولة",
+          "purposeEn": "Offer to help with washing and drying.",
+          "purposeAr": "اعرض المساعدة في غسل الأطباق وتجفيفها.",
+          "image": {
+            "id": "conv-life-washing-up-together-1",
+            "path": "assets/scenes/conversations/life-washing-up-together-1.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Clearing dishes from the table",
+            "ar": "رفع الأطباق عن الطاولة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                250,
+                394,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "dirty dishes",
+              "ar": "أطباق متسخة",
+              "kind": "object",
+              "x": 24,
+              "y": 73
+            },
+            {
+              "en": "tea towel",
+              "ar": "منشفة أطباق",
+              "kind": "object",
+              "x": 84,
+              "y": 67
+            },
+            {
+              "en": "clear the table",
+              "ar": "يرفع الأطباق عن الطاولة",
+              "kind": "phrase",
+              "x": 19,
+              "y": 79
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Washing and drying cups",
+          "ar": "غسل الأكواب وتجفيفها",
+          "purposeEn": "Explain how two people can share the washing up.",
+          "purposeAr": "اشرح كيف يتعاون شخصان في غسل الأطباق وتجفيفها.",
+          "image": {
+            "id": "conv-life-washing-up-together-2",
+            "path": "assets/scenes/conversations/life-washing-up-together-2.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Washing and drying cups",
+            "ar": "غسل الأكواب وتجفيفها",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                250,
+                789,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "tap",
+              "ar": "صنبور",
+              "kind": "object",
+              "x": 50,
+              "y": 68
+            },
+            {
+              "en": "sponge",
+              "ar": "إسفنجة",
+              "kind": "object",
+              "x": 33,
+              "y": 86
+            },
+            {
+              "en": "dry a cup",
+              "ar": "يجفف كوبًا",
+              "kind": "phrase",
+              "x": 75,
+              "y": 65
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Putting cups away",
+          "ar": "إعادة الأكواب إلى مكانها",
+          "purposeEn": "Ask someone to put the dry cups away first.",
+          "purposeAr": "اطلب من شخص إعادة الأكواب الجافة إلى مكانها أولًا.",
+          "image": {
+            "id": "conv-life-washing-up-together-3",
+            "path": "assets/scenes/conversations/life-washing-up-together-3.webp",
+            "width": 393,
+            "height": 242,
+            "en": "Putting cups away",
+            "ar": "إعادة الأكواب إلى مكانها",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                250,
+                1188,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "cup",
+              "ar": "كوب",
+              "kind": "object",
+              "x": 65,
+              "y": 19
+            },
+            {
+              "en": "stack of plates",
+              "ar": "كومة أطباق",
+              "kind": "object",
+              "x": 87,
+              "y": 52
+            },
+            {
+              "en": "put the cups away",
+              "ar": "يعيد الأكواب إلى مكانها",
+              "kind": "phrase",
+              "x": 84,
+              "y": 28
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Leaving the large bowl until last",
+          "ar": "ترك الوعاء الكبير إلى النهاية",
+          "purposeEn": "Ask for the large bowl to be left beside the sink.",
+          "purposeAr": "اطلب ترك الوعاء الكبير بجوار الحوض.",
+          "image": {
+            "id": "conv-life-washing-up-together-4",
+            "path": "assets/scenes/conversations/life-washing-up-together-4.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Leaving the large bowl until last",
+            "ar": "ترك الوعاء الكبير إلى النهاية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1194,
+                250,
+                1583,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "large bowl",
+              "ar": "وعاء كبير",
+              "kind": "object",
+              "x": 58,
+              "y": 82
+            },
+            {
+              "en": "cups on a shelf",
+              "ar": "أكواب على رف",
+              "kind": "object",
+              "x": 34,
+              "y": 17
+            },
+            {
+              "en": "leave the bowl out",
+              "ar": "يترك الوعاء خارج الخزانة",
+              "kind": "phrase",
+              "x": 45,
+              "y": 73
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reschedule-a-clinic-visit",
+      "goalAr": "تغيير موعد زيارة العيادة",
+      "goalEn": "Rescheduling a clinic visit",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Calling about an appointment",
+          "ar": "الاتصال بشأن موعد",
+          "purposeEn": "Ask to change an existing clinic appointment.",
+          "purposeAr": "اطلب تغيير موعد سابق في العيادة.",
+          "image": {
+            "id": "conv-life-reschedule-a-clinic-visit-1",
+            "path": "assets/scenes/conversations/life-reschedule-a-clinic-visit-1.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Calling about an appointment",
+            "ar": "الاتصال بشأن موعد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                498,
+                394,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "phone",
+              "ar": "هاتف",
+              "kind": "object",
+              "x": 20,
+              "y": 54
+            },
+            {
+              "en": "appointment card",
+              "ar": "بطاقة موعد",
+              "kind": "object",
+              "x": 78,
+              "y": 86
+            },
+            {
+              "en": "make a phone call",
+              "ar": "يجري مكالمة هاتفية",
+              "kind": "phrase",
+              "x": 28,
+              "y": 60
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Finding a morning appointment",
+          "ar": "إيجاد موعد صباحي",
+          "purposeEn": "Ask for a morning slot and confirm nine o'clock.",
+          "purposeAr": "اطلب موعدًا صباحيًا وأكّد الساعة التاسعة.",
+          "image": {
+            "id": "conv-life-reschedule-a-clinic-visit-2",
+            "path": "assets/scenes/conversations/life-reschedule-a-clinic-visit-2.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Finding a morning appointment",
+            "ar": "إيجاد موعد صباحي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                498,
+                789,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "clock",
+              "ar": "ساعة",
+              "kind": "object",
+              "x": 88,
+              "y": 25
+            },
+            {
+              "en": "desk calendar",
+              "ar": "تقويم مكتبي",
+              "kind": "object",
+              "x": 77,
+              "y": 78
+            },
+            {
+              "en": "point to an available slot",
+              "ar": "يشير إلى موعد متاح",
+              "kind": "phrase",
+              "x": 53,
+              "y": 75
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Receiving a new confirmation",
+          "ar": "استلام تأكيد جديد",
+          "purposeEn": "Explain that a new confirmation will arrive on the phone.",
+          "purposeAr": "وضّح أن تأكيدًا جديدًا سيصل إلى الهاتف.",
+          "image": {
+            "id": "conv-life-reschedule-a-clinic-visit-3",
+            "path": "assets/scenes/conversations/life-reschedule-a-clinic-visit-3.webp",
+            "width": 393,
+            "height": 243,
+            "en": "Receiving a new confirmation",
+            "ar": "استلام تأكيد جديد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                498,
+                1188,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "calendar icon",
+              "ar": "أيقونة تقويم",
+              "kind": "object",
+              "x": 72,
+              "y": 50
+            },
+            {
+              "en": "check mark",
+              "ar": "علامة صح",
+              "kind": "object",
+              "x": 72,
+              "y": 68
+            },
+            {
+              "en": "check the confirmation",
+              "ar": "يتحقق من التأكيد",
+              "kind": "phrase",
+              "x": 61,
+              "y": 70
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Keeping the updated details",
+          "ar": "الاحتفاظ بالتفاصيل المحدّثة",
+          "purposeEn": "Ask whether to keep the new confirmation.",
+          "purposeAr": "اسأل إن كان ينبغي الاحتفاظ بالتأكيد الجديد.",
+          "image": {
+            "id": "conv-life-reschedule-a-clinic-visit-4",
+            "path": "assets/scenes/conversations/life-reschedule-a-clinic-visit-4.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Keeping the updated details",
+            "ar": "الاحتفاظ بالتفاصيل المحدّثة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1194,
+                498,
+                1583,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "smartphone",
+              "ar": "هاتف ذكي",
+              "kind": "object",
+              "x": 59,
+              "y": 63
+            },
+            {
+              "en": "old appointment card",
+              "ar": "بطاقة الموعد القديم",
+              "kind": "object",
+              "x": 83,
+              "y": 89
+            },
+            {
+              "en": "check your phone",
+              "ar": "يتفقد هاتفه",
+              "kind": "phrase",
+              "x": 51,
+              "y": 73
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finding-the-clinic-desk",
+      "goalAr": "العثور على مكتب الاستقبال في العيادة",
+      "goalEn": "Finding the clinic reception desk",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Asking where reception is",
+          "ar": "السؤال عن مكان الاستقبال",
+          "purposeEn": "Ask for directions to the reception desk.",
+          "purposeAr": "اسأل عن الطريق إلى مكتب الاستقبال.",
+          "image": {
+            "id": "conv-life-finding-the-clinic-desk-1",
+            "path": "assets/scenes/conversations/life-finding-the-clinic-desk-1.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Asking where reception is",
+            "ar": "السؤال عن مكان الاستقبال",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                747,
+                394,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "glass doors",
+              "ar": "أبواب زجاجية",
+              "kind": "object",
+              "x": 63,
+              "y": 48
+            },
+            {
+              "en": "reception counter",
+              "ar": "مكتب الاستقبال",
+              "kind": "object",
+              "x": 90,
+              "y": 63
+            },
+            {
+              "en": "point the way",
+              "ar": "يشير إلى الطريق",
+              "kind": "phrase",
+              "x": 60,
+              "y": 38
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Showing appointment details",
+          "ar": "عرض تفاصيل الموعد",
+          "purposeEn": "Explain that your appointment details are on your phone.",
+          "purposeAr": "وضّح أن تفاصيل موعدك موجودة على هاتفك.",
+          "image": {
+            "id": "conv-life-finding-the-clinic-desk-2",
+            "path": "assets/scenes/conversations/life-finding-the-clinic-desk-2.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Showing appointment details",
+            "ar": "عرض تفاصيل الموعد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                747,
+                789,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "phone calendar",
+              "ar": "تقويم الهاتف",
+              "kind": "object",
+              "x": 47,
+              "y": 55
+            },
+            {
+              "en": "computer monitor",
+              "ar": "شاشة حاسوب",
+              "kind": "object",
+              "x": 92,
+              "y": 63
+            },
+            {
+              "en": "show your appointment details",
+              "ar": "يعرض تفاصيل موعده",
+              "kind": "phrase",
+              "x": 43,
+              "y": 66
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Filling in the form while waiting",
+          "ar": "تعبئة الاستمارة أثناء الانتظار",
+          "purposeEn": "Explain when and where to complete the form.",
+          "purposeAr": "اشرح متى وأين تُعبّأ الاستمارة.",
+          "image": {
+            "id": "conv-life-finding-the-clinic-desk-3",
+            "path": "assets/scenes/conversations/life-finding-the-clinic-desk-3.webp",
+            "width": 393,
+            "height": 242,
+            "en": "Filling in the form while waiting",
+            "ar": "تعبئة الاستمارة أثناء الانتظار",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                747,
+                1188,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "clipboard",
+              "ar": "لوح تثبيت الأوراق",
+              "kind": "object",
+              "x": 68,
+              "y": 67
+            },
+            {
+              "en": "waiting chairs",
+              "ar": "كراسي انتظار",
+              "kind": "object",
+              "x": 71,
+              "y": 23
+            },
+            {
+              "en": "fill in a form",
+              "ar": "يعبّئ استمارة",
+              "kind": "phrase",
+              "x": 58,
+              "y": 78
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Returning the form to reception",
+          "ar": "إعادة الاستمارة إلى الاستقبال",
+          "purposeEn": "Tell the visitor to take the form back to the desk.",
+          "purposeAr": "اطلب من الزائر إعادة الاستمارة إلى المكتب.",
+          "image": {
+            "id": "conv-life-finding-the-clinic-desk-4",
+            "path": "assets/scenes/conversations/life-finding-the-clinic-desk-4.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Returning the form to reception",
+            "ar": "إعادة الاستمارة إلى الاستقبال",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1194,
+                747,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "form",
+              "ar": "استمارة",
+              "kind": "object",
+              "x": 56,
+              "y": 60
+            },
+            {
+              "en": "staff badge",
+              "ar": "بطاقة موظف",
+              "kind": "object",
+              "x": 78,
+              "y": 62
+            },
+            {
+              "en": "hand back the form",
+              "ar": "يعيد الاستمارة",
+              "kind": "phrase",
+              "x": 48,
+              "y": 72
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

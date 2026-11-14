@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "343a7464dbac1a3f78f990f883d69630abf050b630cc51ddbb5698dcac980548"
+  },
+  "conversations": [
+    {
+      "id": "l2-117",
+      "goalAr": "تأجيل ما تبقى من العمل",
+      "goalEn": "Putting the rest of a task off",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Checking what remains in the report",
+          "ar": "مراجعة ما تبقّى في التقرير",
+          "purposeEn": "Say what you have already checked and explain why the final page will take longer.",
+          "purposeAr": "اذكر ما راجعته بالفعل واشرح لماذا تتطلّب الصفحة الأخيرة وقتًا أطول.",
+          "image": {
+            "id": "conv-life-l2-117-1",
+            "path": "assets/scenes/conversations/life-l2-117-1.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Checking what remains in the report",
+            "ar": "مراجعة ما تبقّى في التقرير",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                393,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "report page",
+              "ar": "صفحة تقرير",
+              "kind": "object",
+              "x": 53,
+              "y": 86
+            },
+            {
+              "en": "bar chart",
+              "ar": "مخطّط بالأعمدة",
+              "kind": "object",
+              "x": 48,
+              "y": 92
+            },
+            {
+              "en": "check the last page",
+              "ar": "يراجع الصفحة الأخيرة",
+              "kind": "phrase",
+              "x": 38,
+              "y": 78
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Agreeing to finish the report tomorrow",
+          "ar": "الاتّفاق على إكمال التقرير غدًا",
+          "purposeEn": "Suggest finishing tomorrow and agree on a time that fits the deadline.",
+          "purposeAr": "اقترح إكمال التقرير غدًا واتّفق على وقت يناسب الموعد النهائي.",
+          "image": {
+            "id": "conv-life-l2-117-2",
+            "path": "assets/scenes/conversations/life-l2-117-2.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Agreeing to finish the report tomorrow",
+            "ar": "الاتّفاق على إكمال التقرير غدًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                3,
+                789,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "wall calendar",
+              "ar": "تقويم حائط",
+              "kind": "object",
+              "x": 53,
+              "y": 52
+            },
+            {
+              "en": "sticky tab",
+              "ar": "علامة لاصقة",
+              "kind": "object",
+              "x": 61,
+              "y": 46
+            },
+            {
+              "en": "put it off until tomorrow",
+              "ar": "يؤجّل إنجازه إلى الغد",
+              "kind": "phrase",
+              "x": 64,
+              "y": 46
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Saving a copy in the shared folder",
+          "ar": "حفظ نسخة في المجلّد المشترك",
+          "purposeEn": "Explain where to save the copy and what to include in its name.",
+          "purposeAr": "اشرح أين تحفظ النسخة وما ينبغي إدراجه في اسمها.",
+          "image": {
+            "id": "conv-life-l2-117-3",
+            "path": "assets/scenes/conversations/life-l2-117-3.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Saving a copy in the shared folder",
+            "ar": "حفظ نسخة في المجلّد المشترك",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                3,
+                1186,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "shared folder",
+              "ar": "مجلّد مشترك",
+              "kind": "object",
+              "x": 43,
+              "y": 48
+            },
+            {
+              "en": "copy icon",
+              "ar": "رمز النسخ",
+              "kind": "object",
+              "x": 67,
+              "y": 53
+            },
+            {
+              "en": "save a copy in the shared folder",
+              "ar": "يحفظ نسخة في المجلّد المشترك",
+              "kind": "phrase",
+              "x": 49,
+              "y": 83
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Marking sections that still need figures",
+          "ar": "تحديد الأقسام التي لا تزال تحتاج إلى أرقام",
+          "purposeEn": "Note which sections still need figures so the team can resume easily.",
+          "purposeAr": "دوّن الأقسام التي لا تزال تحتاج إلى أرقام حتى يستأنف الفريق العمل بسهولة.",
+          "image": {
+            "id": "conv-life-l2-117-4",
+            "path": "assets/scenes/conversations/life-l2-117-4.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Marking sections that still need figures",
+            "ar": "تحديد الأقسام التي لا تزال تحتاج إلى أرقام",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                3,
+                1583,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "checklist",
+              "ar": "قائمة تحقّق",
+              "kind": "object",
+              "x": 52,
+              "y": 68
+            },
+            {
+              "en": "red cross",
+              "ar": "علامة إكس حمراء",
+              "kind": "object",
+              "x": 42,
+              "y": 88
+            },
+            {
+              "en": "mark the missing figures",
+              "ar": "يحدّد الأرقام الناقصة",
+              "kind": "phrase",
+              "x": 64,
+              "y": 67
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-118",
+      "goalAr": "هل يمكن الدخول إلى الغرفة؟",
+      "goalEn": "Checking whether entry is allowed",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Waiting outside the staff room",
+          "ar": "الانتظار خارج غرفة مخصّصة للموظفين",
+          "purposeEn": "Ask whether you may enter to collect something.",
+          "purposeAr": "اسأل عمّا إذا كان مسموحًا لك بالدخول لاستلام غرض.",
+          "image": {
+            "id": "conv-life-l2-118-1",
+            "path": "assets/scenes/conversations/life-l2-118-1.webp",
+            "width": 224,
+            "height": 215,
+            "en": "Waiting outside the staff room",
+            "ar": "الانتظار خارج غرفة مخصّصة للموظفين",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                254,
+                227,
+                469
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "wooden door",
+              "ar": "باب خشبي",
+              "kind": "object",
+              "x": 71,
+              "y": 53
+            },
+            {
+              "en": "visitor",
+              "ar": "زائر",
+              "kind": "object",
+              "x": 25,
+              "y": 67
+            },
+            {
+              "en": "ask permission to enter",
+              "ar": "يطلب الإذن بالدخول",
+              "kind": "phrase",
+              "x": 53,
+              "y": 61
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Entering with a staff member",
+          "ar": "الدخول برفقة موظّفة",
+          "purposeEn": "Explain that the visitor needs a staff member to go in with them.",
+          "purposeAr": "وضّح أن الزائر يحتاج إلى مرافقة موظّف للدخول.",
+          "image": {
+            "id": "conv-life-l2-118-2",
+            "path": "assets/scenes/conversations/life-l2-118-2.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Entering with a staff member",
+            "ar": "الدخول برفقة موظّفة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                252,
+                789,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "staff badge",
+              "ar": "بطاقة موظّفة",
+              "kind": "object",
+              "x": 46,
+              "y": 73
+            },
+            {
+              "en": "door handle",
+              "ar": "مقبض الباب",
+              "kind": "object",
+              "x": 16,
+              "y": 80
+            },
+            {
+              "en": "go in with a staff member",
+              "ar": "يدخل برفقة موظّف",
+              "kind": "phrase",
+              "x": 64,
+              "y": 79
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Following the marked walkway",
+          "ar": "اتباع المسار المحدّد",
+          "purposeEn": "Tell the visitor how to reach the box while staying on the marked path.",
+          "purposeAr": "أرشد الزائر إلى الصندوق مع الالتزام بالمسار المحدّد.",
+          "image": {
+            "id": "conv-life-l2-118-3",
+            "path": "assets/scenes/conversations/life-l2-118-3.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Following the marked walkway",
+            "ar": "اتباع المسار المحدّد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                252,
+                1186,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "floor arrow",
+              "ar": "سهم على الأرض",
+              "kind": "object",
+              "x": 69,
+              "y": 90
+            },
+            {
+              "en": "storage shelves",
+              "ar": "رفوف تخزين",
+              "kind": "object",
+              "x": 80,
+              "y": 56
+            },
+            {
+              "en": "keep to the marked path",
+              "ar": "التزم بالمسار المحدّد",
+              "kind": "phrase",
+              "x": 56,
+              "y": 81
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Checking the label before collecting the box",
+          "ar": "التحقّق من الملصق قبل أخذ الصندوق",
+          "purposeEn": "Say what you will verify before carrying the box out.",
+          "purposeAr": "اذكر ما ستتحقّق منه قبل إخراج الصندوق.",
+          "image": {
+            "id": "conv-life-l2-118-4",
+            "path": "assets/scenes/conversations/life-l2-118-4.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Checking the label before collecting the box",
+            "ar": "التحقّق من الملصق قبل أخذ الصندوق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                252,
+                1583,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "box label",
+              "ar": "ملصق الصندوق",
+              "kind": "object",
+              "x": 69,
+              "y": 57
+            },
+            {
+              "en": "cardboard box",
+              "ar": "صندوق كرتوني",
+              "kind": "object",
+              "x": 74,
+              "y": 81
+            },
+            {
+              "en": "check the label before lifting the box",
+              "ar": "يتحقّق من الملصق قبل رفع الصندوق",
+              "kind": "phrase",
+              "x": 53,
+              "y": 74
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-119",
+      "goalAr": "الأحد بدلًا من السبت",
+      "goalEn": "Suggesting a different day",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Suggesting a different day",
+          "ar": "اقتراح يوم آخر",
+          "purposeEn": "Explain why Saturday is difficult and suggest Sunday instead.",
+          "purposeAr": "اشرح لماذا يصعب عليك الحضور السبت واقترح الأحد.",
+          "image": {
+            "id": "conv-life-l2-119-1",
+            "path": "assets/scenes/conversations/life-l2-119-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Suggesting a different day",
+            "ar": "اقتراح يوم آخر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                500,
+                393,
+                742
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "weekend calendar",
+              "ar": "تقويم عطلة نهاية الأسبوع",
+              "kind": "object",
+              "x": 57,
+              "y": 64
+            },
+            {
+              "en": "calendar cell",
+              "ar": "خانة في التقويم",
+              "kind": "object",
+              "x": 64,
+              "y": 57
+            },
+            {
+              "en": "suggest a different day",
+              "ar": "يقترح يومًا آخر",
+              "kind": "phrase",
+              "x": 64,
+              "y": 61
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Agreeing on a meeting time",
+          "ar": "الاتّفاق على موعد اللقاء",
+          "purposeEn": "Accept the new day and confirm the time and place.",
+          "purposeAr": "وافق على اليوم الجديد وأكّد الساعة والمكان.",
+          "image": {
+            "id": "conv-life-l2-119-2",
+            "path": "assets/scenes/conversations/life-l2-119-2.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Agreeing on a meeting time",
+            "ar": "الاتّفاق على موعد اللقاء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                500,
+                789,
+                742
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "wall clock",
+              "ar": "ساعة حائط",
+              "kind": "object",
+              "x": 50,
+              "y": 30
+            },
+            {
+              "en": "coffee cup",
+              "ar": "فنجان قهوة",
+              "kind": "object",
+              "x": 36,
+              "y": 92
+            },
+            {
+              "en": "meet at the same place at eleven",
+              "ar": "يلتقي في المكان نفسه عند الحادية عشرة",
+              "kind": "phrase",
+              "x": 50,
+              "y": 74
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Choosing a backup meeting spot",
+          "ar": "اختيار مكان بديل للقاء",
+          "purposeEn": "Suggest where to wait if the café is too crowded.",
+          "purposeAr": "اقترح مكانًا للانتظار إذا كان المقهى مزدحمًا.",
+          "image": {
+            "id": "conv-life-l2-119-3",
+            "path": "assets/scenes/conversations/life-l2-119-3.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Choosing a backup meeting spot",
+            "ar": "اختيار مكان بديل للقاء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                500,
+                1186,
+                742
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "library entrance",
+              "ar": "مدخل المكتبة",
+              "kind": "object",
+              "x": 86,
+              "y": 46
+            },
+            {
+              "en": "café sign",
+              "ar": "لافتة مقهى",
+              "kind": "object",
+              "x": 16,
+              "y": 24
+            },
+            {
+              "en": "wait by the library",
+              "ar": "ينتظر قرب المكتبة",
+              "kind": "phrase",
+              "x": 43,
+              "y": 49
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Texting on arrival",
+          "ar": "إرسال رسالة عند الوصول",
+          "purposeEn": "Promise to send a message so both people go to the same place.",
+          "purposeAr": "عِد بإرسال رسالة حتى يتوجّه الطرفان إلى المكان نفسه.",
+          "image": {
+            "id": "conv-life-l2-119-4",
+            "path": "assets/scenes/conversations/life-l2-119-4.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Texting on arrival",
+            "ar": "إرسال رسالة عند الوصول",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                500,
+                1583,
+                742
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "mobile phone",
+              "ar": "هاتف محمول",
+              "kind": "object",
+              "x": 49,
+              "y": 75
+            },
+            {
+              "en": "library sign",
+              "ar": "لافتة المكتبة",
+              "kind": "object",
+              "x": 79,
+              "y": 26
+            },
+            {
+              "en": "text me when you arrive",
+              "ar": "راسلني عندما تصل",
+              "kind": "phrase",
+              "x": 52,
+              "y": 78
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-120",
+      "goalAr": "صعوبة السؤال التجريبي",
+      "goalEn": "Asking for a concrete example",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Asking for an interview example",
+          "ar": "طلب مثال مناسب للمقابلة",
+          "purposeEn": "Ask what kind of problem makes a good interview example.",
+          "purposeAr": "اسأل عن نوع المشكلات التي تصلح مثالًا في المقابلة.",
+          "image": {
+            "id": "conv-life-l2-120-1",
+            "path": "assets/scenes/conversations/life-l2-120-1.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Asking for an interview example",
+            "ar": "طلب مثال مناسب للمقابلة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                748,
+                393,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "interview notebook",
+              "ar": "دفتر المقابلة",
+              "kind": "object",
+              "x": 51,
+              "y": 91
+            },
+            {
+              "en": "pen",
+              "ar": "قلم",
+              "kind": "object",
+              "x": 57,
+              "y": 88
+            },
+            {
+              "en": "describe a problem you solved",
+              "ar": "صِف مشكلة حللتها",
+              "kind": "phrase",
+              "x": 41,
+              "y": 55
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Explaining a missed delivery",
+          "ar": "شرح عدم وصول الشحنة",
+          "purposeEn": "Describe what went wrong and why the plan had to change.",
+          "purposeAr": "صِف المشكلة وبيّن لماذا تعيّن تغيير الخطة.",
+          "image": {
+            "id": "conv-life-l2-120-2",
+            "path": "assets/scenes/conversations/life-l2-120-2.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Explaining a missed delivery",
+            "ar": "شرح عدم وصول الشحنة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                748,
+                789,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "empty trolley",
+              "ar": "عربة فارغة",
+              "kind": "object",
+              "x": 81,
+              "y": 61
+            },
+            {
+              "en": "event checklist",
+              "ar": "قائمة تحقّق للفعالية",
+              "kind": "object",
+              "x": 50,
+              "y": 63
+            },
+            {
+              "en": "the delivery didn’t arrive",
+              "ar": "لم تصل الشحنة",
+              "kind": "phrase",
+              "x": 45,
+              "y": 76
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Finding replacement supplies nearby",
+          "ar": "العثور على مستلزمات بديلة في مكان قريب",
+          "purposeEn": "Explain how asking nearby shops helped you find enough supplies.",
+          "purposeAr": "اشرح كيف ساعدك الاستفسار من المحلّات القريبة في إيجاد مستلزمات كافية.",
+          "image": {
+            "id": "conv-life-l2-120-3",
+            "path": "assets/scenes/conversations/life-l2-120-3.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Finding replacement supplies nearby",
+            "ar": "العثور على مستلزمات بديلة في مكان قريب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                748,
+                1186,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "packaged supplies",
+              "ar": "مستلزمات مغلّفة",
+              "kind": "object",
+              "x": 66,
+              "y": 75
+            },
+            {
+              "en": "shop assistant",
+              "ar": "موظّف المتجر",
+              "kind": "object",
+              "x": 84,
+              "y": 56
+            },
+            {
+              "en": "check with nearby shops",
+              "ar": "يستفسر من المحلّات القريبة",
+              "kind": "phrase",
+              "x": 37,
+              "y": 58
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Describing the result of the solution",
+          "ar": "وصف نتيجة الحلّ",
+          "purposeEn": "Give the outcome and say when the supplies were ready.",
+          "purposeAr": "اذكر النتيجة ومتى أصبحت المستلزمات جاهزة.",
+          "image": {
+            "id": "conv-life-l2-120-4",
+            "path": "assets/scenes/conversations/life-l2-120-4.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Describing the result of the solution",
+            "ar": "وصف نتيجة الحلّ",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                748,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "loaded trolley",
+              "ar": "عربة محمّلة",
+              "kind": "object",
+              "x": 37,
+              "y": 75
+            },
+            {
+              "en": "water bottles",
+              "ar": "زجاجات ماء",
+              "kind": "object",
+              "x": 24,
+              "y": 69
+            },
+            {
+              "en": "get everything ready by noon",
+              "ar": "يجهّز كل شيء بحلول الظهر",
+              "kind": "phrase",
+              "x": 54,
+              "y": 74
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

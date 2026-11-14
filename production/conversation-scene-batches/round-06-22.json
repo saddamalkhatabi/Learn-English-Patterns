@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "4a78ab23cef2733714c2befa27a8f397591fb70a14c9e629225836c4a58763c8"
+  },
+  "conversations": [
+    {
+      "id": "l2-045",
+      "goalAr": "هل نستقل سيارة أجرة؟",
+      "goalEn": "Choosing how to get there",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Considering a rental car",
+          "ar": "التفكير في استئجار سيارة",
+          "purposeEn": "Practise considering a rental car.",
+          "purposeAr": "تدرّب على التفكير في استئجار سيارة.",
+          "image": {
+            "id": "conv-life-l2-045-1",
+            "path": "assets/scenes/conversations/life-l2-045-1.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Considering a rental car",
+            "ar": "التفكير في استئجار سيارة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                394,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "travel brochure",
+              "ar": "كتيّب سفر",
+              "kind": "object",
+              "x": 31,
+              "y": 77
+            },
+            {
+              "en": "car pictogram",
+              "ar": "رمز سيارة",
+              "kind": "object",
+              "x": 44,
+              "y": 86
+            },
+            {
+              "en": "rent a car",
+              "ar": "يستأجر سيارة",
+              "kind": "phrase",
+              "x": 36,
+              "y": 62
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Suggesting a shared taxi",
+          "ar": "اقتراح تقاسم سيارة أجرة",
+          "purposeEn": "Practise suggesting a shared taxi.",
+          "purposeAr": "تدرّب على اقتراح تقاسم سيارة أجرة.",
+          "image": {
+            "id": "conv-life-l2-045-2",
+            "path": "assets/scenes/conversations/life-l2-045-2.webp",
+            "width": 388,
+            "height": 243,
+            "en": "Suggesting a shared taxi",
+            "ar": "اقتراح تقاسم سيارة أجرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                3,
+                788,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "taxi",
+              "ar": "سيارة أجرة",
+              "kind": "object",
+              "x": 76,
+              "y": 49
+            },
+            {
+              "en": "carry-on suitcase",
+              "ar": "حقيبة سفر صغيرة",
+              "kind": "object",
+              "x": 48,
+              "y": 91
+            },
+            {
+              "en": "share a taxi from the station",
+              "ar": "يتقاسم أجرة سيارة من المحطة",
+              "kind": "phrase",
+              "x": 60,
+              "y": 35
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Meeting under the station clock",
+          "ar": "اللقاء تحت ساعة المحطة",
+          "purposeEn": "Practise meeting under the station clock.",
+          "purposeAr": "تدرّب على اللقاء تحت ساعة المحطة.",
+          "image": {
+            "id": "conv-life-l2-045-3",
+            "path": "assets/scenes/conversations/life-l2-045-3.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Meeting under the station clock",
+            "ar": "اللقاء تحت ساعة المحطة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                794,
+                3,
+                1185,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "station clock",
+              "ar": "ساعة المحطة",
+              "kind": "object",
+              "x": 52,
+              "y": 20
+            },
+            {
+              "en": "train platform",
+              "ar": "رصيف القطار",
+              "kind": "object",
+              "x": 12,
+              "y": 60
+            },
+            {
+              "en": "meet under the clock",
+              "ar": "يلتقي تحت الساعة",
+              "kind": "phrase",
+              "x": 49,
+              "y": 84
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Sending a message from the station",
+          "ar": "إرسال رسالة من المحطة",
+          "purposeEn": "Practise sending a message from the station.",
+          "purposeAr": "تدرّب على إرسال رسالة من المحطة.",
+          "image": {
+            "id": "conv-life-l2-045-4",
+            "path": "assets/scenes/conversations/life-l2-045-4.webp",
+            "width": 392,
+            "height": 243,
+            "en": "Sending a message from the station",
+            "ar": "إرسال رسالة من المحطة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1191,
+                3,
+                1583,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "mobile phone",
+              "ar": "هاتف محمول",
+              "kind": "object",
+              "x": 49,
+              "y": 56
+            },
+            {
+              "en": "suitcase",
+              "ar": "حقيبة سفر",
+              "kind": "object",
+              "x": 81,
+              "y": 94
+            },
+            {
+              "en": "send a message before booking",
+              "ar": "يرسل رسالة قبل الحجز",
+              "kind": "phrase",
+              "x": 48,
+              "y": 65
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-046",
+      "goalAr": "مشتريات بأولويات",
+      "goalEn": "Shopping with priorities",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Checking the shopping budget",
+          "ar": "مراجعة ميزانية التسوّق",
+          "purposeEn": "Practise checking the shopping budget.",
+          "purposeAr": "تدرّب على مراجعة ميزانية التسوّق.",
+          "image": {
+            "id": "conv-life-l2-046-1",
+            "path": "assets/scenes/conversations/life-l2-046-1.webp",
+            "width": 391,
+            "height": 240,
+            "en": "Checking the shopping budget",
+            "ar": "مراجعة ميزانية التسوّق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                252,
+                394,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "shopping list",
+              "ar": "قائمة تسوّق",
+              "kind": "object",
+              "x": 50,
+              "y": 70
+            },
+            {
+              "en": "loose change",
+              "ar": "نقود معدنية",
+              "kind": "object",
+              "x": 51,
+              "y": 94
+            },
+            {
+              "en": "check what you can afford",
+              "ar": "تحقّق مما يمكنك شراؤه",
+              "kind": "phrase",
+              "x": 52,
+              "y": 70
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Buying the basics first",
+          "ar": "شراء الأساسيات أولًا",
+          "purposeEn": "Practise buying the basics first.",
+          "purposeAr": "تدرّب على شراء الأساسيات أولًا.",
+          "image": {
+            "id": "conv-life-l2-046-2",
+            "path": "assets/scenes/conversations/life-l2-046-2.webp",
+            "width": 388,
+            "height": 240,
+            "en": "Buying the basics first",
+            "ar": "شراء الأساسيات أولًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                252,
+                788,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "grocery basket",
+              "ar": "سلّة مشتريات",
+              "kind": "object",
+              "x": 54,
+              "y": 82
+            },
+            {
+              "en": "bag of rice",
+              "ar": "كيس أرز",
+              "kind": "object",
+              "x": 61,
+              "y": 70
+            },
+            {
+              "en": "buy the basics first",
+              "ar": "يشتري الأساسيات أولًا",
+              "kind": "phrase",
+              "x": 55,
+              "y": 84
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Choosing seasonal fruit",
+          "ar": "اختيار فاكهة الموسم",
+          "purposeEn": "Practise choosing seasonal fruit.",
+          "purposeAr": "تدرّب على اختيار فاكهة الموسم.",
+          "image": {
+            "id": "conv-life-l2-046-3",
+            "path": "assets/scenes/conversations/life-l2-046-3.webp",
+            "width": 391,
+            "height": 240,
+            "en": "Choosing seasonal fruit",
+            "ar": "اختيار فاكهة الموسم",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                794,
+                252,
+                1185,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "crate of oranges",
+              "ar": "صندوق برتقال",
+              "kind": "object",
+              "x": 35,
+              "y": 87
+            },
+            {
+              "en": "wallet",
+              "ar": "محفظة",
+              "kind": "object",
+              "x": 80,
+              "y": 62
+            },
+            {
+              "en": "stay within the budget",
+              "ar": "يلتزم بالميزانية",
+              "kind": "phrase",
+              "x": 63,
+              "y": 63
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Picking oranges for breakfast",
+          "ar": "اختيار البرتقال للإفطار",
+          "purposeEn": "Practise picking oranges for breakfast.",
+          "purposeAr": "تدرّب على اختيار البرتقال للإفطار.",
+          "image": {
+            "id": "conv-life-l2-046-4",
+            "path": "assets/scenes/conversations/life-l2-046-4.webp",
+            "width": 392,
+            "height": 240,
+            "en": "Picking oranges for breakfast",
+            "ar": "اختيار البرتقال للإفطار",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1191,
+                252,
+                1583,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "reusable produce bag",
+              "ar": "كيس فواكه قابل لإعادة الاستخدام",
+              "kind": "object",
+              "x": 53,
+              "y": 82
+            },
+            {
+              "en": "orange",
+              "ar": "برتقالة",
+              "kind": "object",
+              "x": 59,
+              "y": 67
+            },
+            {
+              "en": "pick out some oranges",
+              "ar": "ينتقي بعض البرتقال",
+              "kind": "phrase",
+              "x": 58,
+              "y": 68
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-047",
+      "goalAr": "عودة إلى متجر مغلق",
+      "goalEn": "Returning to a closed shop",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Arriving after the repair shop closed",
+          "ar": "الوصول بعد إغلاق محل التصليح",
+          "purposeEn": "Practise arriving after the repair shop closed.",
+          "purposeAr": "تدرّب على الوصول بعد إغلاق محل التصليح.",
+          "image": {
+            "id": "conv-life-l2-047-1",
+            "path": "assets/scenes/conversations/life-l2-047-1.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Arriving after the repair shop closed",
+            "ar": "الوصول بعد إغلاق محل التصليح",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                498,
+                394,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "metal shutter",
+              "ar": "باب معدني دوّار",
+              "kind": "object",
+              "x": 76,
+              "y": 45
+            },
+            {
+              "en": "portable radio",
+              "ar": "مذياع محمول",
+              "kind": "object",
+              "x": 35,
+              "y": 67
+            },
+            {
+              "en": "find the shop closed",
+              "ar": "يجد المحل مغلقًا",
+              "kind": "phrase",
+              "x": 45,
+              "y": 39
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Checking the opening hours",
+          "ar": "التحقّق من ساعات العمل",
+          "purposeEn": "Practise checking the opening hours.",
+          "purposeAr": "تدرّب على التحقّق من ساعات العمل.",
+          "image": {
+            "id": "conv-life-l2-047-2",
+            "path": "assets/scenes/conversations/life-l2-047-2.webp",
+            "width": 388,
+            "height": 243,
+            "en": "Checking the opening hours",
+            "ar": "التحقّق من ساعات العمل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                498,
+                788,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "opening-hours sign",
+              "ar": "لافتة ساعات العمل",
+              "kind": "object",
+              "x": 54,
+              "y": 36
+            },
+            {
+              "en": "clock symbol",
+              "ar": "رمز ساعة",
+              "kind": "object",
+              "x": 43,
+              "y": 56
+            },
+            {
+              "en": "check when the shop opens",
+              "ar": "يتحقّق من موعد فتح المحل",
+              "kind": "phrase",
+              "x": 35,
+              "y": 54
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Calling about availability",
+          "ar": "الاتصال للسؤال عن توفر القطعة",
+          "purposeEn": "Practise calling about availability.",
+          "purposeAr": "تدرّب على الاتصال للسؤال عن توفر القطعة.",
+          "image": {
+            "id": "conv-life-l2-047-3",
+            "path": "assets/scenes/conversations/life-l2-047-3.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Calling about availability",
+            "ar": "الاتصال للسؤال عن توفر القطعة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                794,
+                498,
+                1185,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "repair slip",
+              "ar": "قسيمة تصليح",
+              "kind": "object",
+              "x": 56,
+              "y": 72
+            },
+            {
+              "en": "shop display",
+              "ar": "واجهة عرض المحل",
+              "kind": "object",
+              "x": 81,
+              "y": 47
+            },
+            {
+              "en": "ask if it is still in stock",
+              "ar": "يسأل إن كانت القطعة ما تزال متوفّرة",
+              "kind": "phrase",
+              "x": 32,
+              "y": 35
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Finding another branch",
+          "ar": "العثور على فرع آخر",
+          "purposeEn": "Practise finding another branch.",
+          "purposeAr": "تدرّب على العثور على فرع آخر.",
+          "image": {
+            "id": "conv-life-l2-047-4",
+            "path": "assets/scenes/conversations/life-l2-047-4.webp",
+            "width": 392,
+            "height": 243,
+            "en": "Finding another branch",
+            "ar": "العثور على فرع آخر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1191,
+                498,
+                1583,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "phone map",
+              "ar": "خريطة على الهاتف",
+              "kind": "object",
+              "x": 52,
+              "y": 54
+            },
+            {
+              "en": "map marker",
+              "ar": "علامة موقع على الخريطة",
+              "kind": "object",
+              "x": 52,
+              "y": 43
+            },
+            {
+              "en": "try another branch",
+              "ar": "يجرّب فرعًا آخر",
+              "kind": "phrase",
+              "x": 49,
+              "y": 61
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-048",
+      "goalAr": "غياب نصف الصف",
+      "goalEn": "Adjusting an activity for a smaller class",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Noticing the empty seats",
+          "ar": "ملاحظة المقاعد الشاغرة",
+          "purposeEn": "Practise noticing the empty seats.",
+          "purposeAr": "تدرّب على ملاحظة المقاعد الشاغرة.",
+          "image": {
+            "id": "conv-life-l2-048-1",
+            "path": "assets/scenes/conversations/life-l2-048-1.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Noticing the empty seats",
+            "ar": "ملاحظة المقاعد الشاغرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                747,
+                394,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "attendance clipboard",
+              "ar": "لوح كشف الحضور",
+              "kind": "object",
+              "x": 23,
+              "y": 66
+            },
+            {
+              "en": "empty classroom chair",
+              "ar": "كرسي صف شاغر",
+              "kind": "object",
+              "x": 66,
+              "y": 63
+            },
+            {
+              "en": "check who is absent",
+              "ar": "يتحقّق ممّن تغيب",
+              "kind": "phrase",
+              "x": 43,
+              "y": 48
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Giving each group a question",
+          "ar": "توزيع سؤال على كل مجموعة",
+          "purposeEn": "Practise giving each group a question.",
+          "purposeAr": "تدرّب على توزيع سؤال على كل مجموعة.",
+          "image": {
+            "id": "conv-life-l2-048-2",
+            "path": "assets/scenes/conversations/life-l2-048-2.webp",
+            "width": 388,
+            "height": 242,
+            "en": "Giving each group a question",
+            "ar": "توزيع سؤال على كل مجموعة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                747,
+                788,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "worksheet",
+              "ar": "ورقة عمل",
+              "kind": "object",
+              "x": 37,
+              "y": 66
+            },
+            {
+              "en": "group worksheet",
+              "ar": "ورقة عمل المجموعة",
+              "kind": "object",
+              "x": 62,
+              "y": 67
+            },
+            {
+              "en": "split into two groups",
+              "ar": "ينقسم إلى مجموعتين",
+              "kind": "phrase",
+              "x": 47,
+              "y": 53
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Giving groups time to agree",
+          "ar": "إعطاء المجموعات وقتًا للاتفاق",
+          "purposeEn": "Practise giving groups time to agree.",
+          "purposeAr": "تدرّب على إعطاء المجموعات وقتًا للاتفاق.",
+          "image": {
+            "id": "conv-life-l2-048-3",
+            "path": "assets/scenes/conversations/life-l2-048-3.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Giving groups time to agree",
+            "ar": "إعطاء المجموعات وقتًا للاتفاق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                794,
+                747,
+                1185,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "visual timer",
+              "ar": "مؤقّت مرئي",
+              "kind": "object",
+              "x": 68,
+              "y": 75
+            },
+            {
+              "en": "answer sheet",
+              "ar": "ورقة إجابة",
+              "kind": "object",
+              "x": 45,
+              "y": 82
+            },
+            {
+              "en": "agree on one answer",
+              "ar": "يتّفق على إجابة واحدة",
+              "kind": "phrase",
+              "x": 45,
+              "y": 70
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Reporting back to the class",
+          "ar": "عرض إجابة المجموعة أمام الصف",
+          "purposeEn": "Practise reporting back to the class.",
+          "purposeAr": "تدرّب على عرض إجابة المجموعة أمام الصف.",
+          "image": {
+            "id": "conv-life-l2-048-4",
+            "path": "assets/scenes/conversations/life-l2-048-4.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Reporting back to the class",
+            "ar": "عرض إجابة المجموعة أمام الصف",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1191,
+                747,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "group spokesperson",
+              "ar": "متحدّثة باسم المجموعة",
+              "kind": "object",
+              "x": 59,
+              "y": 49
+            },
+            {
+              "en": "group notes",
+              "ar": "ملاحظات المجموعة",
+              "kind": "object",
+              "x": 58,
+              "y": 54
+            },
+            {
+              "en": "report back to the class",
+              "ar": "يعرض ما توصّلت إليه مجموعته أمام الصف",
+              "kind": "phrase",
+              "x": 58,
+              "y": 40
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

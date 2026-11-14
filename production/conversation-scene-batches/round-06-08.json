@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "b2ff1580f280f9847a0b1613cd5a10b982829c92b5d263839a1dfa73f06d835c"
+  },
+  "conversations": [
+    {
+      "id": "first-group-meeting",
+      "goalAr": "أول اجتماع للمجموعة الدراسية",
+      "goalEn": "A first study group meeting",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Choosing a meeting place",
+          "ar": "اختيار مكان للاجتماع",
+          "purposeEn": "Practise choosing a meeting place.",
+          "purposeAr": "تدرّب على اختيار مكان للاجتماع.",
+          "image": {
+            "id": "conv-life-first-group-meeting-1",
+            "path": "assets/scenes/conversations/life-first-group-meeting-1.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Choosing a meeting place",
+            "ar": "اختيار مكان للاجتماع",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                392,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "classroom door",
+              "ar": "باب الفصل",
+              "kind": "object",
+              "x": 39,
+              "y": 43
+            },
+            {
+              "en": "hallway table",
+              "ar": "طاولة في الممر",
+              "kind": "object",
+              "x": 84,
+              "y": 63
+            },
+            {
+              "en": "choose a place to meet",
+              "ar": "يختار مكانًا للاجتماع",
+              "kind": "phrase",
+              "x": 32,
+              "y": 59
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Comparing slides and notes",
+          "ar": "مقارنة الشرائح بالملاحظات",
+          "purposeEn": "Practise comparing slides and notes.",
+          "purposeAr": "تدرّب على مقارنة الشرائح بالملاحظات.",
+          "image": {
+            "id": "conv-life-first-group-meeting-2",
+            "path": "assets/scenes/conversations/life-first-group-meeting-2.webp",
+            "width": 393,
+            "height": 241,
+            "en": "Comparing slides and notes",
+            "ar": "مقارنة الشرائح بالملاحظات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                398,
+                3,
+                791,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "presentation slide",
+              "ar": "شريحة عرض",
+              "kind": "object",
+              "x": 60,
+              "y": 63
+            },
+            {
+              "en": "open notebook",
+              "ar": "دفتر مفتوح",
+              "kind": "object",
+              "x": 81,
+              "y": 95
+            },
+            {
+              "en": "review the draft slides",
+              "ar": "يراجع مسودة الشرائح",
+              "kind": "phrase",
+              "x": 71,
+              "y": 62
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Listing questions to ask",
+          "ar": "إعداد قائمة بالأسئلة",
+          "purposeEn": "Practise listing questions to ask.",
+          "purposeAr": "تدرّب على إعداد قائمة بالأسئلة.",
+          "image": {
+            "id": "conv-life-first-group-meeting-3",
+            "path": "assets/scenes/conversations/life-first-group-meeting-3.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Listing questions to ask",
+            "ar": "إعداد قائمة بالأسئلة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                3,
+                1188,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "checklist",
+              "ar": "قائمة تحقّق",
+              "kind": "object",
+              "x": 45,
+              "y": 60
+            },
+            {
+              "en": "pencil",
+              "ar": "قلم رصاص",
+              "kind": "object",
+              "x": 72,
+              "y": 63
+            },
+            {
+              "en": "write down your questions",
+              "ar": "دوّن أسئلتك",
+              "kind": "phrase",
+              "x": 77,
+              "y": 82
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Asking the teacher about unclear points",
+          "ar": "سؤال المعلّمة عمّا لم يتضح",
+          "purposeEn": "Practise asking the teacher about unclear points.",
+          "purposeAr": "تدرّب على سؤال المعلّمة عمّا لم يتضح.",
+          "image": {
+            "id": "conv-life-first-group-meeting-4",
+            "path": "assets/scenes/conversations/life-first-group-meeting-4.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Asking the teacher about unclear points",
+            "ar": "سؤال المعلّمة عمّا لم يتضح",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1194,
+                3,
+                1583,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "question list",
+              "ar": "قائمة أسئلة",
+              "kind": "object",
+              "x": 51,
+              "y": 69
+            },
+            {
+              "en": "teacher",
+              "ar": "معلّمة",
+              "kind": "object",
+              "x": 87,
+              "y": 35
+            },
+            {
+              "en": "ask the teacher",
+              "ar": "يسأل المعلّمة",
+              "kind": "phrase",
+              "x": 44,
+              "y": 78
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "explaining-a-map",
+      "goalAr": "شرح الطريق على الخريطة",
+      "goalEn": "Explaining a route on a map",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Asking for directions near the museum",
+          "ar": "السؤال عن الاتجاهات قرب المتحف",
+          "purposeEn": "Practise asking for directions near the museum.",
+          "purposeAr": "تدرّب على السؤال عن الاتجاهات قرب المتحف.",
+          "image": {
+            "id": "conv-life-explaining-a-map-1",
+            "path": "assets/scenes/conversations/life-explaining-a-map-1.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Asking for directions near the museum",
+            "ar": "السؤال عن الاتجاهات قرب المتحف",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                250,
+                392,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "museum entrance",
+              "ar": "مدخل المتحف",
+              "kind": "object",
+              "x": 52,
+              "y": 30
+            },
+            {
+              "en": "street map",
+              "ar": "خريطة الشوارع",
+              "kind": "object",
+              "x": 45,
+              "y": 89
+            },
+            {
+              "en": "ask for directions",
+              "ar": "يسأل عن الطريق",
+              "kind": "phrase",
+              "x": 44,
+              "y": 68
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Finding the stop on the map",
+          "ar": "تحديد الموقف على الخريطة",
+          "purposeEn": "Practise finding the stop on the map.",
+          "purposeAr": "تدرّب على تحديد الموقف على الخريطة.",
+          "image": {
+            "id": "conv-life-explaining-a-map-2",
+            "path": "assets/scenes/conversations/life-explaining-a-map-2.webp",
+            "width": 393,
+            "height": 242,
+            "en": "Finding the stop on the map",
+            "ar": "تحديد الموقف على الخريطة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                398,
+                250,
+                791,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "museum symbol",
+              "ar": "رمز المتحف",
+              "kind": "object",
+              "x": 33,
+              "y": 32
+            },
+            {
+              "en": "bus stop symbol",
+              "ar": "رمز موقف الحافلة",
+              "kind": "object",
+              "x": 74,
+              "y": 61
+            },
+            {
+              "en": "point to the route",
+              "ar": "يشير إلى مسار الطريق",
+              "kind": "phrase",
+              "x": 50,
+              "y": 59
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Turning left at the bakery",
+          "ar": "الانعطاف يسارًا عند المخبز",
+          "purposeEn": "Practise turning left at the bakery.",
+          "purposeAr": "تدرّب على الانعطاف يسارًا عند المخبز.",
+          "image": {
+            "id": "conv-life-explaining-a-map-3",
+            "path": "assets/scenes/conversations/life-explaining-a-map-3.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Turning left at the bakery",
+            "ar": "الانعطاف يسارًا عند المخبز",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                250,
+                1188,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bakery window",
+              "ar": "واجهة المخبز",
+              "kind": "object",
+              "x": 16,
+              "y": 57
+            },
+            {
+              "en": "loaves of bread",
+              "ar": "أرغفة خبز",
+              "kind": "object",
+              "x": 19,
+              "y": 45
+            },
+            {
+              "en": "turn left at the bakery",
+              "ar": "ينعطف يسارًا عند المخبز",
+              "kind": "phrase",
+              "x": 39,
+              "y": 39
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Finding the stop past the green gate",
+          "ar": "العثور على الموقف بعد البوابة الخضراء",
+          "purposeEn": "Practise finding the stop past the green gate.",
+          "purposeAr": "تدرّب على العثور على الموقف بعد البوابة الخضراء.",
+          "image": {
+            "id": "conv-life-explaining-a-map-4",
+            "path": "assets/scenes/conversations/life-explaining-a-map-4.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Finding the stop past the green gate",
+            "ar": "العثور على الموقف بعد البوابة الخضراء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1194,
+                250,
+                1583,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "green gate",
+              "ar": "بوابة خضراء",
+              "kind": "object",
+              "x": 15,
+              "y": 42
+            },
+            {
+              "en": "bus shelter",
+              "ar": "مظلّة موقف الحافلة",
+              "kind": "object",
+              "x": 72,
+              "y": 24
+            },
+            {
+              "en": "wait for the bus",
+              "ar": "ينتظر الحافلة",
+              "kind": "phrase",
+              "x": 86,
+              "y": 46
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "one-bag-overnight",
+      "goalAr": "حقيبة لرحلة ليلة واحدة",
+      "goalEn": "Packing for one night",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Choosing a small travel bag",
+          "ar": "اختيار حقيبة سفر صغيرة",
+          "purposeEn": "Practise choosing a small travel bag.",
+          "purposeAr": "تدرّب على اختيار حقيبة سفر صغيرة.",
+          "image": {
+            "id": "conv-life-one-bag-overnight-1",
+            "path": "assets/scenes/conversations/life-one-bag-overnight-1.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Choosing a small travel bag",
+            "ar": "اختيار حقيبة سفر صغيرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                498,
+                392,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "overnight bag",
+              "ar": "حقيبة للمبيت ليلة واحدة",
+              "kind": "object",
+              "x": 70,
+              "y": 82
+            },
+            {
+              "en": "carry handle",
+              "ar": "مقبض حمل",
+              "kind": "object",
+              "x": 75,
+              "y": 63
+            },
+            {
+              "en": "pack for an overnight trip",
+              "ar": "يجهّز حقيبة لرحلة تستغرق ليلة",
+              "kind": "phrase",
+              "x": 52,
+              "y": 70
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Finding a separate pocket for shoes",
+          "ar": "العثور على جيب منفصل للحذاء",
+          "purposeEn": "Practise finding a separate pocket for shoes.",
+          "purposeAr": "تدرّب على العثور على جيب منفصل للحذاء.",
+          "image": {
+            "id": "conv-life-one-bag-overnight-2",
+            "path": "assets/scenes/conversations/life-one-bag-overnight-2.webp",
+            "width": 393,
+            "height": 243,
+            "en": "Finding a separate pocket for shoes",
+            "ar": "العثور على جيب منفصل للحذاء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                398,
+                498,
+                791,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "side pocket",
+              "ar": "جيب جانبي",
+              "kind": "object",
+              "x": 44,
+              "y": 69
+            },
+            {
+              "en": "walking shoes",
+              "ar": "حذاء للمشي",
+              "kind": "object",
+              "x": 78,
+              "y": 75
+            },
+            {
+              "en": "make room for your shoes",
+              "ar": "اترك مكانًا لحذائك",
+              "kind": "phrase",
+              "x": 60,
+              "y": 49
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Packing shoes in the side pocket",
+          "ar": "وضع الحذاء في الجيب الجانبي",
+          "purposeEn": "Practise packing shoes in the side pocket.",
+          "purposeAr": "تدرّب على وضع الحذاء في الجيب الجانبي.",
+          "image": {
+            "id": "conv-life-one-bag-overnight-3",
+            "path": "assets/scenes/conversations/life-one-bag-overnight-3.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Packing shoes in the side pocket",
+            "ar": "وضع الحذاء في الجيب الجانبي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                498,
+                1188,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "main compartment",
+              "ar": "الحجرة الرئيسية",
+              "kind": "object",
+              "x": 29,
+              "y": 51
+            },
+            {
+              "en": "folded clothes",
+              "ar": "ملابس مطويّة",
+              "kind": "object",
+              "x": 29,
+              "y": 32
+            },
+            {
+              "en": "put the shoes in the side pocket",
+              "ar": "يضع الحذاء في الجيب الجانبي",
+              "kind": "phrase",
+              "x": 70,
+              "y": 72
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Wrapping shoes in a bag",
+          "ar": "تغليف الحذاء بكيس",
+          "purposeEn": "Practise wrapping shoes in a bag.",
+          "purposeAr": "تدرّب على تغليف الحذاء بكيس.",
+          "image": {
+            "id": "conv-life-one-bag-overnight-4",
+            "path": "assets/scenes/conversations/life-one-bag-overnight-4.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Wrapping shoes in a bag",
+            "ar": "تغليف الحذاء بكيس",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1194,
+                498,
+                1583,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "plastic bag",
+              "ar": "كيس بلاستيكي",
+              "kind": "object",
+              "x": 62,
+              "y": 64
+            },
+            {
+              "en": "shoes",
+              "ar": "حذاء",
+              "kind": "object",
+              "x": 59,
+              "y": 76
+            },
+            {
+              "en": "wrap the shoes in a bag",
+              "ar": "يضع الحذاء داخل كيس",
+              "kind": "phrase",
+              "x": 54,
+              "y": 39
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "check-out-at-noon",
+      "goalAr": "تسجيل المغادرة عند الظهر",
+      "goalEn": "Checking out at noon",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Asking about checkout time",
+          "ar": "السؤال عن موعد تسجيل المغادرة",
+          "purposeEn": "Practise asking about checkout time.",
+          "purposeAr": "تدرّب على السؤال عن موعد تسجيل المغادرة.",
+          "image": {
+            "id": "conv-life-check-out-at-noon-1",
+            "path": "assets/scenes/conversations/life-check-out-at-noon-1.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Asking about checkout time",
+            "ar": "السؤال عن موعد تسجيل المغادرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                747,
+                392,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "wall clock",
+              "ar": "ساعة حائط",
+              "kind": "object",
+              "x": 50,
+              "y": 23
+            },
+            {
+              "en": "key card",
+              "ar": "بطاقة مفتاح الغرفة",
+              "kind": "object",
+              "x": 49,
+              "y": 74
+            },
+            {
+              "en": "check out at noon",
+              "ar": "يسجّل المغادرة عند الظهر",
+              "kind": "phrase",
+              "x": 39,
+              "y": 64
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Leaving a suitcase at reception",
+          "ar": "ترك حقيبة السفر عند الاستقبال",
+          "purposeEn": "Practise leaving a suitcase at reception.",
+          "purposeAr": "تدرّب على ترك حقيبة السفر عند الاستقبال.",
+          "image": {
+            "id": "conv-life-check-out-at-noon-2",
+            "path": "assets/scenes/conversations/life-check-out-at-noon-2.webp",
+            "width": 393,
+            "height": 242,
+            "en": "Leaving a suitcase at reception",
+            "ar": "ترك حقيبة السفر عند الاستقبال",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                398,
+                747,
+                791,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "suitcase handle",
+              "ar": "مقبض حقيبة السفر",
+              "kind": "object",
+              "x": 67,
+              "y": 55
+            },
+            {
+              "en": "reception counter",
+              "ar": "مكتب الاستقبال",
+              "kind": "object",
+              "x": 72,
+              "y": 91
+            },
+            {
+              "en": "leave your luggage at reception",
+              "ar": "اترك أمتعتك عند الاستقبال",
+              "kind": "phrase",
+              "x": 54,
+              "y": 50
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Getting a luggage claim tag",
+          "ar": "الحصول على بطاقة لاستلام الأمتعة",
+          "purposeEn": "Practise getting a luggage claim tag.",
+          "purposeAr": "تدرّب على الحصول على بطاقة لاستلام الأمتعة.",
+          "image": {
+            "id": "conv-life-check-out-at-noon-3",
+            "path": "assets/scenes/conversations/life-check-out-at-noon-3.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Getting a luggage claim tag",
+            "ar": "الحصول على بطاقة لاستلام الأمتعة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                747,
+                1188,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "luggage tag",
+              "ar": "بطاقة أمتعة",
+              "kind": "object",
+              "x": 47,
+              "y": 72
+            },
+            {
+              "en": "claim stub",
+              "ar": "قسيمة استلام",
+              "kind": "object",
+              "x": 69,
+              "y": 58
+            },
+            {
+              "en": "attach a luggage tag",
+              "ar": "يثبّت بطاقة الأمتعة",
+              "kind": "phrase",
+              "x": 43,
+              "y": 46
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Collecting the suitcase",
+          "ar": "استلام حقيبة السفر",
+          "purposeEn": "Practise collecting the suitcase.",
+          "purposeAr": "تدرّب على استلام حقيبة السفر.",
+          "image": {
+            "id": "conv-life-check-out-at-noon-4",
+            "path": "assets/scenes/conversations/life-check-out-at-noon-4.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Collecting the suitcase",
+            "ar": "استلام حقيبة السفر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1194,
+                747,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "claim tag",
+              "ar": "بطاقة الاستلام",
+              "kind": "object",
+              "x": 45,
+              "y": 54
+            },
+            {
+              "en": "suitcase",
+              "ar": "حقيبة سفر",
+              "kind": "object",
+              "x": 54,
+              "y": 87
+            },
+            {
+              "en": "show your claim tag",
+              "ar": "أبرز بطاقة الاستلام",
+              "kind": "phrase",
+              "x": 51,
+              "y": 62
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

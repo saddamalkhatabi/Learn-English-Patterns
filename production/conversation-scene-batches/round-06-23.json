@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "236955826fb434a28d737c28e16392cb03fbf558aad13c664ba00c9a12e0cc89"
+  },
+  "conversations": [
+    {
+      "id": "l2-049",
+      "goalAr": "السؤال متاح دائمًا",
+      "goalEn": "Encouraging someone to ask",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Asking a colleague for help",
+          "ar": "طلب المساعدة من زميلة",
+          "purposeEn": "Practise asking a colleague for help.",
+          "purposeAr": "تدرّب على طلب المساعدة من زميلة.",
+          "image": {
+            "id": "conv-life-l2-049-1",
+            "path": "assets/scenes/conversations/life-l2-049-1.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Asking a colleague for help",
+            "ar": "طلب المساعدة من زميلة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                393,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "pen holder",
+              "ar": "حامل أقلام",
+              "kind": "object",
+              "x": 49,
+              "y": 88
+            },
+            {
+              "en": "laptop",
+              "ar": "حاسوب محمول",
+              "kind": "object",
+              "x": 88,
+              "y": 78
+            },
+            {
+              "en": "ask a colleague for help",
+              "ar": "يطلب مساعدة زميلة",
+              "kind": "phrase",
+              "x": 39,
+              "y": 64
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Finding spare stationery",
+          "ar": "العثور على الأدوات المكتبية الاحتياطية",
+          "purposeEn": "Practise finding spare stationery.",
+          "purposeAr": "تدرّب على العثور على الأدوات المكتبية الاحتياطية.",
+          "image": {
+            "id": "conv-life-l2-049-2",
+            "path": "assets/scenes/conversations/life-l2-049-2.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Finding spare stationery",
+            "ar": "العثور على الأدوات المكتبية الاحتياطية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                3,
+                790,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "stationery drawer",
+              "ar": "درج الأدوات المكتبية",
+              "kind": "object",
+              "x": 68,
+              "y": 73
+            },
+            {
+              "en": "stack of paper",
+              "ar": "رزمة ورق",
+              "kind": "object",
+              "x": 57,
+              "y": 73
+            },
+            {
+              "en": "find spare stationery",
+              "ar": "يعثر على أدوات مكتبية احتياطية",
+              "kind": "phrase",
+              "x": 57,
+              "y": 65
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Looking for a larger envelope",
+          "ar": "البحث عن ظرف أكبر",
+          "purposeEn": "Practise looking for a larger envelope.",
+          "purposeAr": "تدرّب على البحث عن ظرف أكبر.",
+          "image": {
+            "id": "conv-life-l2-049-3",
+            "path": "assets/scenes/conversations/life-l2-049-3.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Looking for a larger envelope",
+            "ar": "البحث عن ظرف أكبر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                3,
+                1186,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "envelope",
+              "ar": "ظرف",
+              "kind": "object",
+              "x": 61,
+              "y": 81
+            },
+            {
+              "en": "forms",
+              "ar": "استمارات",
+              "kind": "object",
+              "x": 29,
+              "y": 69
+            },
+            {
+              "en": "look for a larger envelope",
+              "ar": "يبحث عن ظرف أكبر",
+              "kind": "phrase",
+              "x": 77,
+              "y": 45
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Putting the forms in without folding them",
+          "ar": "وضع الاستمارات في الظرف دون طيّها",
+          "purposeEn": "Practise putting the forms in without folding them.",
+          "purposeAr": "تدرّب على وضع الاستمارات في الظرف دون طيّها.",
+          "image": {
+            "id": "conv-life-l2-049-4",
+            "path": "assets/scenes/conversations/life-l2-049-4.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Putting the forms in without folding them",
+            "ar": "وضع الاستمارات في الظرف دون طيّها",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1194,
+                3,
+                1583,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "document envelope",
+              "ar": "ظرف مستندات",
+              "kind": "object",
+              "x": 69,
+              "y": 77
+            },
+            {
+              "en": "unfolded forms",
+              "ar": "استمارات غير مطويّة",
+              "kind": "object",
+              "x": 70,
+              "y": 56
+            },
+            {
+              "en": "slide the forms into the envelope",
+              "ar": "يدخل الاستمارات في الظرف",
+              "kind": "phrase",
+              "x": 60,
+              "y": 55
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-050",
+      "goalAr": "هدية نفتحها معًا",
+      "goalEn": "Opening a gift together",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Asking to open a gift",
+          "ar": "طلب الإذن بفتح هدية",
+          "purposeEn": "Practise asking to open a gift.",
+          "purposeAr": "تدرّب على طلب الإذن بفتح هدية.",
+          "image": {
+            "id": "conv-life-l2-050-1",
+            "path": "assets/scenes/conversations/life-l2-050-1.webp",
+            "width": 390,
+            "height": 240,
+            "en": "Asking to open a gift",
+            "ar": "طلب الإذن بفتح هدية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                252,
+                393,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "wrapped gift",
+              "ar": "هدية مغلّفة",
+              "kind": "object",
+              "x": 54,
+              "y": 66
+            },
+            {
+              "en": "ribbon bow",
+              "ar": "عقدة شريط",
+              "kind": "object",
+              "x": 58,
+              "y": 58
+            },
+            {
+              "en": "open your gift",
+              "ar": "افتح هديتك",
+              "kind": "phrase",
+              "x": 44,
+              "y": 76
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Loosening the ribbon carefully",
+          "ar": "إرخاء الشريط برفق",
+          "purposeEn": "Practise loosening the ribbon carefully.",
+          "purposeAr": "تدرّب على إرخاء الشريط برفق.",
+          "image": {
+            "id": "conv-life-l2-050-2",
+            "path": "assets/scenes/conversations/life-l2-050-2.webp",
+            "width": 390,
+            "height": 240,
+            "en": "Loosening the ribbon carefully",
+            "ar": "إرخاء الشريط برفق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                252,
+                790,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ribbon",
+              "ar": "شريط",
+              "kind": "object",
+              "x": 52,
+              "y": 63
+            },
+            {
+              "en": "wrapping paper",
+              "ar": "ورق تغليف",
+              "kind": "object",
+              "x": 65,
+              "y": 83
+            },
+            {
+              "en": "pull the ribbon loose",
+              "ar": "يفكّ الشريط بالسحب",
+              "kind": "phrase",
+              "x": 49,
+              "y": 58
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Finding a handmade sketchbook",
+          "ar": "العثور على دفتر رسم مصنوع يدويًا",
+          "purposeEn": "Practise finding a handmade sketchbook.",
+          "purposeAr": "تدرّب على العثور على دفتر رسم مصنوع يدويًا.",
+          "image": {
+            "id": "conv-life-l2-050-3",
+            "path": "assets/scenes/conversations/life-l2-050-3.webp",
+            "width": 389,
+            "height": 240,
+            "en": "Finding a handmade sketchbook",
+            "ar": "العثور على دفتر رسم مصنوع يدويًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                252,
+                1186,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "sketchbook",
+              "ar": "دفتر رسم",
+              "kind": "object",
+              "x": 55,
+              "y": 66
+            },
+            {
+              "en": "stitched binding",
+              "ar": "تجليد مخيط",
+              "kind": "object",
+              "x": 34,
+              "y": 69
+            },
+            {
+              "en": "unwrap the gift carefully",
+              "ar": "يفتح غلاف الهدية برفق",
+              "kind": "phrase",
+              "x": 55,
+              "y": 68
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Looking at the blank pages",
+          "ar": "تفحّص الصفحات الفارغة",
+          "purposeEn": "Practise looking at the blank pages.",
+          "purposeAr": "تدرّب على تفحّص الصفحات الفارغة.",
+          "image": {
+            "id": "conv-life-l2-050-4",
+            "path": "assets/scenes/conversations/life-l2-050-4.webp",
+            "width": 389,
+            "height": 240,
+            "en": "Looking at the blank pages",
+            "ar": "تفحّص الصفحات الفارغة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1194,
+                252,
+                1583,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "blank page",
+              "ar": "صفحة فارغة",
+              "kind": "object",
+              "x": 67,
+              "y": 73
+            },
+            {
+              "en": "pencil",
+              "ar": "قلم رصاص",
+              "kind": "object",
+              "x": 35,
+              "y": 79
+            },
+            {
+              "en": "leave room for sketches",
+              "ar": "يترك مساحة للرسوم الأولية",
+              "kind": "phrase",
+              "x": 46,
+              "y": 66
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-051",
+      "goalAr": "مدة دراسة الفرنسية",
+      "goalEn": "How long have you studied French?",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Talking about experience studying French",
+          "ar": "الحديث عن تجربة تعلّم الفرنسية",
+          "purposeEn": "Practise talking about experience studying French.",
+          "purposeAr": "تدرّب على الحديث عن تجربة تعلّم الفرنسية.",
+          "image": {
+            "id": "conv-life-l2-051-1",
+            "path": "assets/scenes/conversations/life-l2-051-1.webp",
+            "width": 390,
+            "height": 240,
+            "en": "Talking about experience studying French",
+            "ar": "الحديث عن تجربة تعلّم الفرنسية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                499,
+                393,
+                739
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "language textbooks",
+              "ar": "كتب لتعلّم اللغة",
+              "kind": "object",
+              "x": 44,
+              "y": 79
+            },
+            {
+              "en": "French flag",
+              "ar": "علم فرنسا",
+              "kind": "object",
+              "x": 50,
+              "y": 49
+            },
+            {
+              "en": "study French",
+              "ar": "يدرس الفرنسية",
+              "kind": "phrase",
+              "x": 41,
+              "y": 62
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Joining a conversation circle",
+          "ar": "الانضمام إلى حلقة محادثة",
+          "purposeEn": "Practise joining a conversation circle.",
+          "purposeAr": "تدرّب على الانضمام إلى حلقة محادثة.",
+          "image": {
+            "id": "conv-life-l2-051-2",
+            "path": "assets/scenes/conversations/life-l2-051-2.webp",
+            "width": 390,
+            "height": 240,
+            "en": "Joining a conversation circle",
+            "ar": "الانضمام إلى حلقة محادثة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                499,
+                790,
+                739
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "group facilitator",
+              "ar": "ميسّرة المجموعة",
+              "kind": "object",
+              "x": 57,
+              "y": 55
+            },
+            {
+              "en": "seating circle",
+              "ar": "حلقة جلوس",
+              "kind": "object",
+              "x": 72,
+              "y": 83
+            },
+            {
+              "en": "join a conversation group",
+              "ar": "ينضم إلى مجموعة محادثة",
+              "kind": "phrase",
+              "x": 54,
+              "y": 56
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Listening for the main idea",
+          "ar": "الاستماع لالتقاط الفكرة الرئيسية",
+          "purposeEn": "Practise listening for the main idea.",
+          "purposeAr": "تدرّب على الاستماع لالتقاط الفكرة الرئيسية.",
+          "image": {
+            "id": "conv-life-l2-051-3",
+            "path": "assets/scenes/conversations/life-l2-051-3.webp",
+            "width": 389,
+            "height": 240,
+            "en": "Listening for the main idea",
+            "ar": "الاستماع لالتقاط الفكرة الرئيسية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                499,
+                1186,
+                739
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "notebook",
+              "ar": "دفتر",
+              "kind": "object",
+              "x": 42,
+              "y": 86
+            },
+            {
+              "en": "pen",
+              "ar": "قلم",
+              "kind": "object",
+              "x": 36,
+              "y": 79
+            },
+            {
+              "en": "listen for the main idea",
+              "ar": "يستمع لالتقاط الفكرة الرئيسية",
+              "kind": "phrase",
+              "x": 47,
+              "y": 62
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Asking about a new word",
+          "ar": "السؤال عن كلمة جديدة",
+          "purposeEn": "Practise asking about a new word.",
+          "purposeAr": "تدرّب على السؤال عن كلمة جديدة.",
+          "image": {
+            "id": "conv-life-l2-051-4",
+            "path": "assets/scenes/conversations/life-l2-051-4.webp",
+            "width": 389,
+            "height": 240,
+            "en": "Asking about a new word",
+            "ar": "السؤال عن كلمة جديدة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1194,
+                499,
+                1583,
+                739
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "picture flashcard",
+              "ar": "بطاقة تعليمية مصوّرة",
+              "kind": "object",
+              "x": 52,
+              "y": 51
+            },
+            {
+              "en": "spiral notebook",
+              "ar": "دفتر حلزوني",
+              "kind": "object",
+              "x": 50,
+              "y": 82
+            },
+            {
+              "en": "ask what a word means",
+              "ar": "يسأل عن معنى كلمة",
+              "kind": "phrase",
+              "x": 43,
+              "y": 59
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-052",
+      "goalAr": "قلق قبل النوم",
+      "goalEn": "Finding a way to wind down",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Being unable to fall asleep",
+          "ar": "صعوبة الخلود إلى النوم",
+          "purposeEn": "Practise being unable to fall asleep.",
+          "purposeAr": "تدرّب على صعوبة الخلود إلى النوم.",
+          "image": {
+            "id": "conv-life-l2-052-1",
+            "path": "assets/scenes/conversations/life-l2-052-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Being unable to fall asleep",
+            "ar": "صعوبة الخلود إلى النوم",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                747,
+                393,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "armchair",
+              "ar": "كرسي بذراعين",
+              "kind": "object",
+              "x": 32,
+              "y": 63
+            },
+            {
+              "en": "wall clock",
+              "ar": "ساعة حائط",
+              "kind": "object",
+              "x": 79,
+              "y": 24
+            },
+            {
+              "en": "have trouble falling asleep",
+              "ar": "يجد صعوبة في الخلود إلى النوم",
+              "kind": "phrase",
+              "x": 40,
+              "y": 44
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Comparing two meeting times",
+          "ar": "مقارنة موعدين للاجتماع",
+          "purposeEn": "Practise comparing two meeting times.",
+          "purposeAr": "تدرّب على مقارنة موعدين للاجتماع.",
+          "image": {
+            "id": "conv-life-l2-052-2",
+            "path": "assets/scenes/conversations/life-l2-052-2.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Comparing two meeting times",
+            "ar": "مقارنة موعدين للاجتماع",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                747,
+                790,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "meeting calendar",
+              "ar": "تقويم الاجتماعات",
+              "kind": "object",
+              "x": 48,
+              "y": 70
+            },
+            {
+              "en": "analog clock",
+              "ar": "ساعة بعقارب",
+              "kind": "object",
+              "x": 82,
+              "y": 88
+            },
+            {
+              "en": "move the meeting to a later time",
+              "ar": "يؤجّل الاجتماع إلى وقت لاحق",
+              "kind": "phrase",
+              "x": 36,
+              "y": 81
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Telling everyone the new time",
+          "ar": "إبلاغ الجميع بالموعد الجديد",
+          "purposeEn": "Practise telling everyone the new time.",
+          "purposeAr": "تدرّب على إبلاغ الجميع بالموعد الجديد.",
+          "image": {
+            "id": "conv-life-l2-052-3",
+            "path": "assets/scenes/conversations/life-l2-052-3.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Telling everyone the new time",
+            "ar": "إبلاغ الجميع بالموعد الجديد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                747,
+                1186,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "wall clock",
+              "ar": "ساعة حائط",
+              "kind": "object",
+              "x": 64,
+              "y": 24
+            },
+            {
+              "en": "smartphone",
+              "ar": "هاتف ذكي",
+              "kind": "object",
+              "x": 48,
+              "y": 65
+            },
+            {
+              "en": "let everyone know the new time",
+              "ar": "يُبلغ الجميع بالموعد الجديد",
+              "kind": "phrase",
+              "x": 45,
+              "y": 74
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Switching off the phone to rest",
+          "ar": "إطفاء الهاتف للراحة",
+          "purposeEn": "Practise switching off the phone to rest.",
+          "purposeAr": "تدرّب على إطفاء الهاتف للراحة.",
+          "image": {
+            "id": "conv-life-l2-052-4",
+            "path": "assets/scenes/conversations/life-l2-052-4.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Switching off the phone to rest",
+            "ar": "إطفاء الهاتف للراحة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1194,
+                747,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "smartphone",
+              "ar": "هاتف ذكي",
+              "kind": "object",
+              "x": 82,
+              "y": 89
+            },
+            {
+              "en": "table lamp",
+              "ar": "مصباح طاولة",
+              "kind": "object",
+              "x": 91,
+              "y": 44
+            },
+            {
+              "en": "switch off your phone",
+              "ar": "أطفئ هاتفك",
+              "kind": "phrase",
+              "x": 82,
+              "y": 82
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

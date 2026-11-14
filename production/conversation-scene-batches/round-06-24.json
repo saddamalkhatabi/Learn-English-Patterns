@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "0d6a7c5a0c60e0ab9dd4827f619cc2d5b7337f81255129a72adabe1942402f6a"
+  },
+  "conversations": [
+    {
+      "id": "l2-053",
+      "goalAr": "السكن قرب العمل",
+      "goalEn": "Looking for a flat near work",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Looking at an apartment to rent",
+          "ar": "معاينة شقّة للإيجار",
+          "purposeEn": "Practise looking at an apartment to rent.",
+          "purposeAr": "تدرّب على معاينة شقّة للإيجار.",
+          "image": {
+            "id": "conv-life-l2-053-1",
+            "path": "assets/scenes/conversations/life-l2-053-1.webp",
+            "width": 390,
+            "height": 250,
+            "en": "Looking at an apartment to rent",
+            "ar": "معاينة شقّة للإيجار",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                393,
+                253
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "rental listing",
+              "ar": "إعلان إيجار",
+              "kind": "object",
+              "x": 53,
+              "y": 62
+            },
+            {
+              "en": "clipboard clip",
+              "ar": "مشبك تثبيت الأوراق",
+              "kind": "object",
+              "x": 61,
+              "y": 39
+            },
+            {
+              "en": "look for an apartment to rent",
+              "ar": "يبحث عن شقّة للإيجار",
+              "kind": "phrase",
+              "x": 64,
+              "y": 61
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Finding an apartment near the station",
+          "ar": "تحديد موقع شقّة قرب المحطة",
+          "purposeEn": "Practise finding an apartment near the station.",
+          "purposeAr": "تدرّب على تحديد موقع شقّة قرب المحطة.",
+          "image": {
+            "id": "conv-life-l2-053-2",
+            "path": "assets/scenes/conversations/life-l2-053-2.webp",
+            "width": 390,
+            "height": 250,
+            "en": "Finding an apartment near the station",
+            "ar": "تحديد موقع شقّة قرب المحطة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                3,
+                789,
+                253
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "railway station symbol",
+              "ar": "رمز محطة قطار",
+              "kind": "object",
+              "x": 53,
+              "y": 51
+            },
+            {
+              "en": "walking route",
+              "ar": "مسار للمشاة",
+              "kind": "object",
+              "x": 56,
+              "y": 71
+            },
+            {
+              "en": "look for a quiet street near the station",
+              "ar": "يبحث عن شارع هادئ قرب المحطة",
+              "kind": "phrase",
+              "x": 59,
+              "y": 65
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Checking how noisy the street is",
+          "ar": "التحقّق من مستوى الضوضاء في الشارع",
+          "purposeEn": "Practise checking how noisy the street is.",
+          "purposeAr": "تدرّب على التحقّق من مستوى الضوضاء في الشارع.",
+          "image": {
+            "id": "conv-life-l2-053-3",
+            "path": "assets/scenes/conversations/life-l2-053-3.webp",
+            "width": 391,
+            "height": 250,
+            "en": "Checking how noisy the street is",
+            "ar": "التحقّق من مستوى الضوضاء في الشارع",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                3,
+                1186,
+                253
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "apartment entrance",
+              "ar": "مدخل العمارة",
+              "kind": "object",
+              "x": 81,
+              "y": 39
+            },
+            {
+              "en": "passing car",
+              "ar": "سيارة مارّة",
+              "kind": "object",
+              "x": 89,
+              "y": 78
+            },
+            {
+              "en": "check how noisy the street is",
+              "ar": "يتحقّق من مستوى الضوضاء في الشارع",
+              "kind": "phrase",
+              "x": 57,
+              "y": 52
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Checking how much light comes in",
+          "ar": "التحقّق من كمية الضوء الداخل",
+          "purposeEn": "Practise checking how much light comes in.",
+          "purposeAr": "تدرّب على التحقّق من كمية الضوء الداخل.",
+          "image": {
+            "id": "conv-life-l2-053-4",
+            "path": "assets/scenes/conversations/life-l2-053-4.webp",
+            "width": 391,
+            "height": 250,
+            "en": "Checking how much light comes in",
+            "ar": "التحقّق من كمية الضوء الداخل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                3,
+                1583,
+                253
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "apartment window",
+              "ar": "نافذة الشقّة",
+              "kind": "object",
+              "x": 82,
+              "y": 48
+            },
+            {
+              "en": "sunlight",
+              "ar": "ضوء الشمس",
+              "kind": "object",
+              "x": 83,
+              "y": 85
+            },
+            {
+              "en": "check the light before sunset",
+              "ar": "يتحقّق من الإضاءة قبل الغروب",
+              "kind": "phrase",
+              "x": 62,
+              "y": 49
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-054",
+      "goalAr": "المبيت عند صديق",
+      "goalEn": "Making room for a guest",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Offering the couch to a guest",
+          "ar": "عرض الأريكة على الضيف",
+          "purposeEn": "Practise offering the couch to a guest.",
+          "purposeAr": "تدرّب على عرض الأريكة على الضيف.",
+          "image": {
+            "id": "conv-life-l2-054-1",
+            "path": "assets/scenes/conversations/life-l2-054-1.webp",
+            "width": 390,
+            "height": 235,
+            "en": "Offering the couch to a guest",
+            "ar": "عرض الأريكة على الضيف",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                259,
+                393,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "couch",
+              "ar": "أريكة",
+              "kind": "object",
+              "x": 48,
+              "y": 58
+            },
+            {
+              "en": "travel bag",
+              "ar": "حقيبة سفر",
+              "kind": "object",
+              "x": 50,
+              "y": 89
+            },
+            {
+              "en": "sleep on the couch",
+              "ar": "ينام على الأريكة",
+              "kind": "phrase",
+              "x": 67,
+              "y": 54
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Bringing a blanket and clearing the table",
+          "ar": "إحضار بطانية وإخلاء الطاولة",
+          "purposeEn": "Practise bringing a blanket and clearing the table.",
+          "purposeAr": "تدرّب على إحضار بطانية وإخلاء الطاولة.",
+          "image": {
+            "id": "conv-life-l2-054-2",
+            "path": "assets/scenes/conversations/life-l2-054-2.webp",
+            "width": 390,
+            "height": 235,
+            "en": "Bringing a blanket and clearing the table",
+            "ar": "إحضار بطانية وإخلاء الطاولة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                259,
+                789,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "folded blanket",
+              "ar": "بطانية مطويّة",
+              "kind": "object",
+              "x": 62,
+              "y": 82
+            },
+            {
+              "en": "side table",
+              "ar": "طاولة جانبية",
+              "kind": "object",
+              "x": 84,
+              "y": 90
+            },
+            {
+              "en": "bring a blanket",
+              "ar": "يحضر بطانية",
+              "kind": "phrase",
+              "x": 64,
+              "y": 77
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Moving the lamp to reach the socket",
+          "ar": "إزاحة المصباح للوصول إلى المقبس",
+          "purposeEn": "Practise moving the lamp to reach the socket.",
+          "purposeAr": "تدرّب على إزاحة المصباح للوصول إلى المقبس.",
+          "image": {
+            "id": "conv-life-l2-054-3",
+            "path": "assets/scenes/conversations/life-l2-054-3.webp",
+            "width": 391,
+            "height": 235,
+            "en": "Moving the lamp to reach the socket",
+            "ar": "إزاحة المصباح للوصول إلى المقبس",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                259,
+                1186,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "table lamp",
+              "ar": "مصباح طاولة",
+              "kind": "object",
+              "x": 66,
+              "y": 40
+            },
+            {
+              "en": "wall socket",
+              "ar": "مقبس حائط",
+              "kind": "object",
+              "x": 53,
+              "y": 73
+            },
+            {
+              "en": "move the lamp aside",
+              "ar": "يزيح المصباح جانبًا",
+              "kind": "phrase",
+              "x": 67,
+              "y": 78
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Making sure the charging cable reaches",
+          "ar": "التأكّد من أن كابل الشحن يصل",
+          "purposeEn": "Practise making sure the charging cable reaches.",
+          "purposeAr": "تدرّب على التأكّد من أن كابل الشحن يصل.",
+          "image": {
+            "id": "conv-life-l2-054-4",
+            "path": "assets/scenes/conversations/life-l2-054-4.webp",
+            "width": 391,
+            "height": 235,
+            "en": "Making sure the charging cable reaches",
+            "ar": "التأكّد من أن كابل الشحن يصل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                259,
+                1583,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "charging cable",
+              "ar": "كابل شحن",
+              "kind": "object",
+              "x": 49,
+              "y": 72
+            },
+            {
+              "en": "plug",
+              "ar": "قابس",
+              "kind": "object",
+              "x": 49,
+              "y": 34
+            },
+            {
+              "en": "plug in your phone",
+              "ar": "يوصل هاتفه بالشاحن",
+              "kind": "phrase",
+              "x": 69,
+              "y": 82
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-055",
+      "goalAr": "شكر على مساعدة طويلة",
+      "goalEn": "Thanking someone for their help",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Sharing notes on the new booking system",
+          "ar": "مشاركة ملاحظات عن نظام الحجز الجديد",
+          "purposeEn": "Practise sharing notes on the new booking system.",
+          "purposeAr": "تدرّب على مشاركة ملاحظات عن نظام الحجز الجديد.",
+          "image": {
+            "id": "conv-life-l2-055-1",
+            "path": "assets/scenes/conversations/life-l2-055-1.webp",
+            "width": 390,
+            "height": 231,
+            "en": "Sharing notes on the new booking system",
+            "ar": "مشاركة ملاحظات عن نظام الحجز الجديد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                500,
+                393,
+                731
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "instruction sheet",
+              "ar": "ورقة تعليمات",
+              "kind": "object",
+              "x": 60,
+              "y": 61
+            },
+            {
+              "en": "booking calendar",
+              "ar": "تقويم الحجز",
+              "kind": "object",
+              "x": 71,
+              "y": 30
+            },
+            {
+              "en": "leave some notes for a colleague",
+              "ar": "يترك ملاحظات لزميله",
+              "kind": "phrase",
+              "x": 48,
+              "y": 70
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Trying the system independently",
+          "ar": "تجربة النظام دون مساعدة",
+          "purposeEn": "Practise trying the system independently.",
+          "purposeAr": "تدرّب على تجربة النظام دون مساعدة.",
+          "image": {
+            "id": "conv-life-l2-055-2",
+            "path": "assets/scenes/conversations/life-l2-055-2.webp",
+            "width": 390,
+            "height": 231,
+            "en": "Trying the system independently",
+            "ar": "تجربة النظام دون مساعدة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                500,
+                789,
+                731
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "booking form",
+              "ar": "نموذج حجز",
+              "kind": "object",
+              "x": 59,
+              "y": 55
+            },
+            {
+              "en": "spiral notebook",
+              "ar": "دفتر حلزوني",
+              "kind": "object",
+              "x": 89,
+              "y": 91
+            },
+            {
+              "en": "try it on your own first",
+              "ar": "جرّبه بنفسك أولًا",
+              "kind": "phrase",
+              "x": 51,
+              "y": 81
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Using a screenshot to show an error",
+          "ar": "استخدام لقطة شاشة لعرض خطأ",
+          "purposeEn": "Practise using a screenshot to show an error.",
+          "purposeAr": "تدرّب على استخدام لقطة شاشة لعرض خطأ.",
+          "image": {
+            "id": "conv-life-l2-055-3",
+            "path": "assets/scenes/conversations/life-l2-055-3.webp",
+            "width": 391,
+            "height": 231,
+            "en": "Using a screenshot to show an error",
+            "ar": "استخدام لقطة شاشة لعرض خطأ",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                500,
+                1186,
+                731
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "error symbol",
+              "ar": "رمز خطأ",
+              "kind": "object",
+              "x": 40,
+              "y": 62
+            },
+            {
+              "en": "smartphone screen",
+              "ar": "شاشة هاتف ذكي",
+              "kind": "object",
+              "x": 65,
+              "y": 61
+            },
+            {
+              "en": "show what is happening",
+              "ar": "يوضّح ما يحدث",
+              "kind": "phrase",
+              "x": 69,
+              "y": 67
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Sending a screenshot if the error recurs",
+          "ar": "إرسال لقطة شاشة إذا تكرّر الخطأ",
+          "purposeEn": "Practise sending a screenshot if the error recurs.",
+          "purposeAr": "تدرّب على إرسال لقطة شاشة إذا تكرّر الخطأ.",
+          "image": {
+            "id": "conv-life-l2-055-4",
+            "path": "assets/scenes/conversations/life-l2-055-4.webp",
+            "width": 391,
+            "height": 231,
+            "en": "Sending a screenshot if the error recurs",
+            "ar": "إرسال لقطة شاشة إذا تكرّر الخطأ",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                500,
+                1583,
+                731
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "error message",
+              "ar": "رسالة خطأ",
+              "kind": "object",
+              "x": 63,
+              "y": 58
+            },
+            {
+              "en": "laptop keyboard",
+              "ar": "لوحة مفاتيح الحاسوب",
+              "kind": "object",
+              "x": 58,
+              "y": 91
+            },
+            {
+              "en": "send a screenshot",
+              "ar": "يرسل لقطة شاشة",
+              "kind": "phrase",
+              "x": 55,
+              "y": 85
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-056",
+      "goalAr": "الجسر القديم",
+      "goalEn": "Remembering an old bridge",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Comparing paths by the stream",
+          "ar": "مقارنة مسارين قرب الجدول",
+          "purposeEn": "Practise comparing paths by the stream.",
+          "purposeAr": "تدرّب على مقارنة مسارين قرب الجدول.",
+          "image": {
+            "id": "conv-life-l2-056-1",
+            "path": "assets/scenes/conversations/life-l2-056-1.webp",
+            "width": 390,
+            "height": 252,
+            "en": "Comparing paths by the stream",
+            "ar": "مقارنة مسارين قرب الجدول",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                737,
+                393,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "wide path",
+              "ar": "مسار واسع",
+              "kind": "object",
+              "x": 13,
+              "y": 26
+            },
+            {
+              "en": "narrow path",
+              "ar": "مسار ضيّق",
+              "kind": "object",
+              "x": 82,
+              "y": 69
+            },
+            {
+              "en": "compare the two paths",
+              "ar": "يقارن المسارين",
+              "kind": "phrase",
+              "x": 60,
+              "y": 54
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Finding where the bridge used to be",
+          "ar": "العثور على مكان الجسر القديم",
+          "purposeEn": "Practise finding where the bridge used to be.",
+          "purposeAr": "تدرّب على العثور على مكان الجسر القديم.",
+          "image": {
+            "id": "conv-life-l2-056-2",
+            "path": "assets/scenes/conversations/life-l2-056-2.webp",
+            "width": 390,
+            "height": 252,
+            "en": "Finding where the bridge used to be",
+            "ar": "العثور على مكان الجسر القديم",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                737,
+                789,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "stone bridge support",
+              "ar": "دعامة جسر حجرية",
+              "kind": "object",
+              "x": 90,
+              "y": 30
+            },
+            {
+              "en": "stream",
+              "ar": "جدول ماء",
+              "kind": "object",
+              "x": 65,
+              "y": 63
+            },
+            {
+              "en": "there used to be a bridge here",
+              "ar": "كان هناك جسر في هذا المكان",
+              "kind": "phrase",
+              "x": 56,
+              "y": 51
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Finding a picture in a family album",
+          "ar": "العثور على صورة في ألبوم العائلة",
+          "purposeEn": "Practise finding a picture in a family album.",
+          "purposeAr": "تدرّب على العثور على صورة في ألبوم العائلة.",
+          "image": {
+            "id": "conv-life-l2-056-3",
+            "path": "assets/scenes/conversations/life-l2-056-3.webp",
+            "width": 391,
+            "height": 252,
+            "en": "Finding a picture in a family album",
+            "ar": "العثور على صورة في ألبوم العائلة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                737,
+                1186,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "black-and-white photograph",
+              "ar": "صورة بالأبيض والأسود",
+              "kind": "object",
+              "x": 43,
+              "y": 75
+            },
+            {
+              "en": "family portrait",
+              "ar": "صورة عائلية",
+              "kind": "object",
+              "x": 79,
+              "y": 78
+            },
+            {
+              "en": "look through the family album",
+              "ar": "يتصفّح ألبوم العائلة",
+              "kind": "phrase",
+              "x": 50,
+              "y": 71
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Looking for a date on the back",
+          "ar": "البحث عن التاريخ على ظهر الصورة",
+          "purposeEn": "Practise looking for a date on the back.",
+          "purposeAr": "تدرّب على البحث عن التاريخ على ظهر الصورة.",
+          "image": {
+            "id": "conv-life-l2-056-4",
+            "path": "assets/scenes/conversations/life-l2-056-4.webp",
+            "width": 391,
+            "height": 252,
+            "en": "Looking for a date on the back",
+            "ar": "البحث عن التاريخ على ظهر الصورة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                737,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "back of the photo",
+              "ar": "ظهر الصورة",
+              "kind": "object",
+              "x": 46,
+              "y": 58
+            },
+            {
+              "en": "photo album",
+              "ar": "ألبوم صور",
+              "kind": "object",
+              "x": 56,
+              "y": 92
+            },
+            {
+              "en": "turn the photo over",
+              "ar": "يقلب الصورة",
+              "kind": "phrase",
+              "x": 48,
+              "y": 59
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

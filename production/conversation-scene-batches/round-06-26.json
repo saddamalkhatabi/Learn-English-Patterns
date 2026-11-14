@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "5ebd3c7e93212f347bc74edc7a7841e8b68460351852c26cc3d5e342b8e28f30"
+  },
+  "conversations": [
+    {
+      "id": "l2-061",
+      "goalAr": "اختيار مدينة للزيارة",
+      "goalEn": "Comparing two cities",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Talking about two recent city trips",
+          "ar": "الحديث عن رحلتين حديثتين",
+          "purposeEn": "Practise talking about two recent city trips.",
+          "purposeAr": "تدرّب على الحديث عن رحلتين حديثتين.",
+          "image": {
+            "id": "conv-life-l2-061-1",
+            "path": "assets/scenes/conversations/life-l2-061-1.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Talking about two recent city trips",
+            "ar": "الحديث عن رحلتين حديثتين",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                394,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "travel album",
+              "ar": "ألبوم سفر",
+              "kind": "object",
+              "x": 53,
+              "y": 74
+            },
+            {
+              "en": "city skyline",
+              "ar": "أفق المدينة",
+              "kind": "object",
+              "x": 41,
+              "y": 75
+            },
+            {
+              "en": "ask about a recent trip",
+              "ar": "يسأل عن رحلة حديثة",
+              "kind": "phrase",
+              "x": 36,
+              "y": 61
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Comparing two city neighbourhoods",
+          "ar": "مقارنة حيّين في مدينتين",
+          "purposeEn": "Practise comparing two city neighbourhoods.",
+          "purposeAr": "تدرّب على مقارنة حيّين في مدينتين.",
+          "image": {
+            "id": "conv-life-l2-061-2",
+            "path": "assets/scenes/conversations/life-l2-061-2.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Comparing two city neighbourhoods",
+            "ar": "مقارنة حيّين في مدينتين",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                3,
+                791,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "neighbourhood photograph",
+              "ar": "صورة حي سكني",
+              "kind": "object",
+              "x": 40,
+              "y": 54
+            },
+            {
+              "en": "tree-lined street",
+              "ar": "شارع تصطفّ فيه الأشجار",
+              "kind": "object",
+              "x": 69,
+              "y": 67
+            },
+            {
+              "en": "compare two cities",
+              "ar": "يقارن بين مدينتين",
+              "kind": "phrase",
+              "x": 56,
+              "y": 65
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Tracing the walk to shops and the library",
+          "ar": "تتبّع طريق المشي إلى المتاجر والمكتبة",
+          "purposeEn": "Practise tracing the walk to shops and the library.",
+          "purposeAr": "تدرّب على تتبّع طريق المشي إلى المتاجر والمكتبة.",
+          "image": {
+            "id": "conv-life-l2-061-3",
+            "path": "assets/scenes/conversations/life-l2-061-3.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Tracing the walk to shops and the library",
+            "ar": "تتبّع طريق المشي إلى المتاجر والمكتبة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                3,
+                1186,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "shop symbol",
+              "ar": "رمز متجر",
+              "kind": "object",
+              "x": 34,
+              "y": 82
+            },
+            {
+              "en": "library symbol",
+              "ar": "رمز المكتبة",
+              "kind": "object",
+              "x": 72,
+              "y": 67
+            },
+            {
+              "en": "trace the walking route",
+              "ar": "يتتبّع مسار المشي",
+              "kind": "phrase",
+              "x": 54,
+              "y": 88
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Getting around without a car",
+          "ar": "التنقّل دون سيارة",
+          "purposeEn": "Practise getting around without a car.",
+          "purposeAr": "تدرّب على التنقّل دون سيارة.",
+          "image": {
+            "id": "conv-life-l2-061-4",
+            "path": "assets/scenes/conversations/life-l2-061-4.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Getting around without a car",
+            "ar": "التنقّل دون سيارة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                3,
+                1583,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "library entrance",
+              "ar": "مدخل المكتبة",
+              "kind": "object",
+              "x": 73,
+              "y": 36
+            },
+            {
+              "en": "sidewalk",
+              "ar": "رصيف",
+              "kind": "object",
+              "x": 89,
+              "y": 80
+            },
+            {
+              "en": "walk to the shops",
+              "ar": "يذهب إلى المتاجر مشيًا",
+              "kind": "phrase",
+              "x": 40,
+              "y": 67
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-062",
+      "goalAr": "مساعدة في حمل الحقائب",
+      "goalEn": "Offering help with luggage",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Trying to lift both bags",
+          "ar": "محاولة رفع الحقيبتين معًا",
+          "purposeEn": "Practise trying to lift both bags.",
+          "purposeAr": "تدرّب على محاولة رفع الحقيبتين معًا.",
+          "image": {
+            "id": "conv-life-l2-062-1",
+            "path": "assets/scenes/conversations/life-l2-062-1.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Trying to lift both bags",
+            "ar": "محاولة رفع الحقيبتين معًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                251,
+                394,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "rolling suitcase",
+              "ar": "حقيبة بعجلات",
+              "kind": "object",
+              "x": 31,
+              "y": 78
+            },
+            {
+              "en": "travel bag",
+              "ar": "حقيبة سفر",
+              "kind": "object",
+              "x": 61,
+              "y": 91
+            },
+            {
+              "en": "lift both bags at once",
+              "ar": "يرفع الحقيبتين دفعة واحدة",
+              "kind": "phrase",
+              "x": 42,
+              "y": 72
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Offering to take the larger suitcase",
+          "ar": "عرض حمل الحقيبة الأكبر",
+          "purposeEn": "Practise offering to take the larger suitcase.",
+          "purposeAr": "تدرّب على عرض حمل الحقيبة الأكبر.",
+          "image": {
+            "id": "conv-life-l2-062-2",
+            "path": "assets/scenes/conversations/life-l2-062-2.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Offering to take the larger suitcase",
+            "ar": "عرض حمل الحقيبة الأكبر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                251,
+                791,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "large suitcase",
+              "ar": "حقيبة سفر كبيرة",
+              "kind": "object",
+              "x": 66,
+              "y": 78
+            },
+            {
+              "en": "carry handle",
+              "ar": "مقبض حمل",
+              "kind": "object",
+              "x": 61,
+              "y": 53
+            },
+            {
+              "en": "take the larger one",
+              "ar": "خذ الحقيبة الأكبر",
+              "kind": "phrase",
+              "x": 67,
+              "y": 57
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Protecting a fragile glass",
+          "ar": "حماية كأس قابل للكسر",
+          "purposeEn": "Practise protecting a fragile glass.",
+          "purposeAr": "تدرّب على حماية كأس قابل للكسر.",
+          "image": {
+            "id": "conv-life-l2-062-3",
+            "path": "assets/scenes/conversations/life-l2-062-3.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Protecting a fragile glass",
+            "ar": "حماية كأس قابل للكسر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                251,
+                1186,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "glass tumbler",
+              "ar": "كأس زجاجي",
+              "kind": "object",
+              "x": 58,
+              "y": 77
+            },
+            {
+              "en": "folded towel",
+              "ar": "منشفة مطويّة",
+              "kind": "object",
+              "x": 52,
+              "y": 79
+            },
+            {
+              "en": "wrap the glass in a towel",
+              "ar": "يلفّ الكأس بمنشفة",
+              "kind": "phrase",
+              "x": 52,
+              "y": 68
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Carrying the suitcase upright upstairs",
+          "ar": "حمل الحقيبة عموديًا إلى الطابق العلوي",
+          "purposeEn": "Practise carrying the suitcase upright upstairs.",
+          "purposeAr": "تدرّب على حمل الحقيبة عموديًا إلى الطابق العلوي.",
+          "image": {
+            "id": "conv-life-l2-062-4",
+            "path": "assets/scenes/conversations/life-l2-062-4.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Carrying the suitcase upright upstairs",
+            "ar": "حمل الحقيبة عموديًا إلى الطابق العلوي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                251,
+                1583,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "upright suitcase",
+              "ar": "حقيبة في وضع عمودي",
+              "kind": "object",
+              "x": 63,
+              "y": 44
+            },
+            {
+              "en": "staircase",
+              "ar": "درج",
+              "kind": "object",
+              "x": 82,
+              "y": 69
+            },
+            {
+              "en": "keep the suitcase upright",
+              "ar": "يُبقي الحقيبة في وضع عمودي",
+              "kind": "phrase",
+              "x": 67,
+              "y": 54
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-063",
+      "goalAr": "من صاحب هذا المكتب؟",
+      "goalEn": "Checking whose office it is",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Locating the parcel beside the cabinet",
+          "ar": "تحديد مكان الطرد قرب الخزانة",
+          "purposeEn": "Practise locating the parcel beside the cabinet.",
+          "purposeAr": "تدرّب على تحديد مكان الطرد قرب الخزانة.",
+          "image": {
+            "id": "conv-life-l2-063-1",
+            "path": "assets/scenes/conversations/life-l2-063-1.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Locating the parcel beside the cabinet",
+            "ar": "تحديد مكان الطرد قرب الخزانة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                498,
+                394,
+                739
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "cardboard parcel",
+              "ar": "طرد كرتوني",
+              "kind": "object",
+              "x": 86,
+              "y": 35
+            },
+            {
+              "en": "blue filing cabinet",
+              "ar": "خزانة ملفات زرقاء",
+              "kind": "object",
+              "x": 81,
+              "y": 64
+            },
+            {
+              "en": "leave a parcel by the cabinet",
+              "ar": "يترك طردًا بجانب الخزانة",
+              "kind": "phrase",
+              "x": 65,
+              "y": 40
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Checking the office door plate",
+          "ar": "التحقّق من لوحة تعريف المكتب",
+          "purposeEn": "Practise checking the office door plate.",
+          "purposeAr": "تدرّب على التحقّق من لوحة تعريف المكتب.",
+          "image": {
+            "id": "conv-life-l2-063-2",
+            "path": "assets/scenes/conversations/life-l2-063-2.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Checking the office door plate",
+            "ar": "التحقّق من لوحة تعريف المكتب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                498,
+                791,
+                739
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "door plate",
+              "ar": "لوحة تعريف على الباب",
+              "kind": "object",
+              "x": 70,
+              "y": 26
+            },
+            {
+              "en": "office list",
+              "ar": "قائمة المكاتب",
+              "kind": "object",
+              "x": 66,
+              "y": 70
+            },
+            {
+              "en": "check the plate on the door",
+              "ar": "يتحقّق من لوحة تعريف الباب",
+              "kind": "phrase",
+              "x": 52,
+              "y": 34
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Asking for directions at reception",
+          "ar": "الاستفسار عن المكتب عند الاستقبال",
+          "purposeEn": "Practise asking for directions at reception.",
+          "purposeAr": "تدرّب على الاستفسار عن المكتب عند الاستقبال.",
+          "image": {
+            "id": "conv-life-l2-063-3",
+            "path": "assets/scenes/conversations/life-l2-063-3.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Asking for directions at reception",
+            "ar": "الاستفسار عن المكتب عند الاستقبال",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                498,
+                1186,
+                739
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "reception counter",
+              "ar": "منضدة الاستقبال",
+              "kind": "object",
+              "x": 67,
+              "y": 83
+            },
+            {
+              "en": "receptionist",
+              "ar": "موظّفة استقبال",
+              "kind": "object",
+              "x": 75,
+              "y": 48
+            },
+            {
+              "en": "ask at reception",
+              "ar": "يستفسر عند الاستقبال",
+              "kind": "phrase",
+              "x": 92,
+              "y": 45
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Matching the office to the list",
+          "ar": "مطابقة المكتب مع القائمة",
+          "purposeEn": "Practise matching the office to the list.",
+          "purposeAr": "تدرّب على مطابقة المكتب مع القائمة.",
+          "image": {
+            "id": "conv-life-l2-063-4",
+            "path": "assets/scenes/conversations/life-l2-063-4.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Matching the office to the list",
+            "ar": "مطابقة المكتب مع القائمة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                498,
+                1583,
+                739
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "office list",
+              "ar": "قائمة المكاتب",
+              "kind": "object",
+              "x": 46,
+              "y": 61
+            },
+            {
+              "en": "office door",
+              "ar": "باب مكتب",
+              "kind": "object",
+              "x": 90,
+              "y": 27
+            },
+            {
+              "en": "check the office against the list",
+              "ar": "يطابق المكتب مع القائمة",
+              "kind": "phrase",
+              "x": 51,
+              "y": 59
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-064",
+      "goalAr": "كاميرا جديدة",
+      "goalEn": "Trying out a new camera",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Showing a newly bought camera",
+          "ar": "عرض كاميرا جديدة",
+          "purposeEn": "Practise showing a newly bought camera.",
+          "purposeAr": "تدرّب على عرض كاميرا جديدة.",
+          "image": {
+            "id": "conv-life-l2-064-1",
+            "path": "assets/scenes/conversations/life-l2-064-1.webp",
+            "width": 391,
+            "height": 244,
+            "en": "Showing a newly bought camera",
+            "ar": "عرض كاميرا جديدة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                745,
+                394,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "compact camera",
+              "ar": "كاميرا مدمجة",
+              "kind": "object",
+              "x": 49,
+              "y": 59
+            },
+            {
+              "en": "camera strap",
+              "ar": "حزام الكاميرا",
+              "kind": "object",
+              "x": 46,
+              "y": 85
+            },
+            {
+              "en": "try out a new camera",
+              "ar": "يجرّب كاميرا جديدة",
+              "kind": "phrase",
+              "x": 41,
+              "y": 56
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Stepping back to fit the subject in the frame",
+          "ar": "التراجع لإظهار الشخص كاملًا في الإطار",
+          "purposeEn": "Practise stepping back to fit the subject in the frame.",
+          "purposeAr": "تدرّب على التراجع لإظهار الشخص كاملًا في الإطار.",
+          "image": {
+            "id": "conv-life-l2-064-2",
+            "path": "assets/scenes/conversations/life-l2-064-2.webp",
+            "width": 391,
+            "height": 244,
+            "en": "Stepping back to fit the subject in the frame",
+            "ar": "التراجع لإظهار الشخص كاملًا في الإطار",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                745,
+                791,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "large window",
+              "ar": "نافذة كبيرة",
+              "kind": "object",
+              "x": 56,
+              "y": 34
+            },
+            {
+              "en": "camera",
+              "ar": "كاميرا",
+              "kind": "object",
+              "x": 79,
+              "y": 28
+            },
+            {
+              "en": "step back to get the whole picture",
+              "ar": "يتراجع لالتقاط المشهد كاملًا",
+              "kind": "phrase",
+              "x": 76,
+              "y": 41
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Focusing on a face",
+          "ar": "ضبط التركيز على الوجه",
+          "purposeEn": "Practise focusing on a face.",
+          "purposeAr": "تدرّب على ضبط التركيز على الوجه.",
+          "image": {
+            "id": "conv-life-l2-064-3",
+            "path": "assets/scenes/conversations/life-l2-064-3.webp",
+            "width": 389,
+            "height": 244,
+            "en": "Focusing on a face",
+            "ar": "ضبط التركيز على الوجه",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                745,
+                1186,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "focus box",
+              "ar": "مربّع التركيز",
+              "kind": "object",
+              "x": 45,
+              "y": 40
+            },
+            {
+              "en": "camera display",
+              "ar": "شاشة الكاميرا",
+              "kind": "object",
+              "x": 48,
+              "y": 59
+            },
+            {
+              "en": "tap the screen to focus",
+              "ar": "يلمس الشاشة لضبط التركيز",
+              "kind": "phrase",
+              "x": 53,
+              "y": 61
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Following a moving subject with the camera",
+          "ar": "متابعة شخص متحرّك بالكاميرا",
+          "purposeEn": "Practise following a moving subject with the camera.",
+          "purposeAr": "تدرّب على متابعة شخص متحرّك بالكاميرا.",
+          "image": {
+            "id": "conv-life-l2-064-4",
+            "path": "assets/scenes/conversations/life-l2-064-4.webp",
+            "width": 391,
+            "height": 244,
+            "en": "Following a moving subject with the camera",
+            "ar": "متابعة شخص متحرّك بالكاميرا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                745,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "camera display",
+              "ar": "شاشة الكاميرا",
+              "kind": "object",
+              "x": 49,
+              "y": 49
+            },
+            {
+              "en": "moving subject",
+              "ar": "شخص متحرّك",
+              "kind": "object",
+              "x": 87,
+              "y": 59
+            },
+            {
+              "en": "pan the camera",
+              "ar": "يحرّك الكاميرا أفقيًا",
+              "kind": "phrase",
+              "x": 68,
+              "y": 64
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

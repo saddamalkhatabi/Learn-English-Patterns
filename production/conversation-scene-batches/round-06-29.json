@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "6de4cb54c6c0d9bd0d45673619eb605cf2803170e5dd118be19dc4e55783d58d"
+  },
+  "conversations": [
+    {
+      "id": "l2-073",
+      "goalAr": "مدة الزيارة",
+      "goalEn": "Talking about the length of a stay",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Planning a short city stay",
+          "ar": "التخطيط لإقامة قصيرة في المدينة",
+          "purposeEn": "Practise planning a short city stay.",
+          "purposeAr": "تدرّب على التخطيط لإقامة قصيرة في المدينة.",
+          "image": {
+            "id": "conv-life-l2-073-1",
+            "path": "assets/scenes/conversations/life-l2-073-1.webp",
+            "width": 389,
+            "height": 249,
+            "en": "Planning a short city stay",
+            "ar": "التخطيط لإقامة قصيرة في المدينة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                392,
+                252
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "suitcase",
+              "ar": "حقيبة سفر",
+              "kind": "object",
+              "x": 14,
+              "y": 75
+            },
+            {
+              "en": "itinerary cards",
+              "ar": "بطاقات برنامج الرحلة",
+              "kind": "object",
+              "x": 67,
+              "y": 90
+            },
+            {
+              "en": "plan a three-day stay",
+              "ar": "يخطّط لإقامة ثلاثة أيام",
+              "kind": "phrase",
+              "x": 42,
+              "y": 66
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Choosing between the river and museum",
+          "ar": "الاختيار بين النهر والمتحف",
+          "purposeEn": "Practise choosing between the river and museum.",
+          "purposeAr": "تدرّب على الاختيار بين النهر والمتحف.",
+          "image": {
+            "id": "conv-life-l2-073-2",
+            "path": "assets/scenes/conversations/life-l2-073-2.webp",
+            "width": 391,
+            "height": 249,
+            "en": "Choosing between the river and museum",
+            "ar": "الاختيار بين النهر والمتحف",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                398,
+                3,
+                789,
+                252
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "river",
+              "ar": "نهر",
+              "kind": "object",
+              "x": 62,
+              "y": 69
+            },
+            {
+              "en": "museum symbol",
+              "ar": "رمز المتحف",
+              "kind": "object",
+              "x": 67,
+              "y": 27
+            },
+            {
+              "en": "plan a walk by the river",
+              "ar": "يخطّط للمشي بمحاذاة النهر",
+              "kind": "phrase",
+              "x": 47,
+              "y": 55
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Taking the riverside walk first",
+          "ar": "البدء بالمشي بمحاذاة النهر",
+          "purposeEn": "Practise taking the riverside walk first.",
+          "purposeAr": "تدرّب على البدء بالمشي بمحاذاة النهر.",
+          "image": {
+            "id": "conv-life-l2-073-3",
+            "path": "assets/scenes/conversations/life-l2-073-3.webp",
+            "width": 393,
+            "height": 249,
+            "en": "Taking the riverside walk first",
+            "ar": "البدء بالمشي بمحاذاة النهر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                3,
+                1188,
+                252
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "riverside railing",
+              "ar": "سياج ضفة النهر",
+              "kind": "object",
+              "x": 58,
+              "y": 49
+            },
+            {
+              "en": "park bench",
+              "ar": "مقعد حديقة",
+              "kind": "object",
+              "x": 15,
+              "y": 85
+            },
+            {
+              "en": "walk along the river",
+              "ar": "يمشي بمحاذاة النهر",
+              "kind": "phrase",
+              "x": 60,
+              "y": 69
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Checking the museum entry time",
+          "ar": "التحقّق من موعد آخر دخول إلى المتحف",
+          "purposeEn": "Practise checking the museum entry time.",
+          "purposeAr": "تدرّب على التحقّق من موعد آخر دخول إلى المتحف.",
+          "image": {
+            "id": "conv-life-l2-073-4",
+            "path": "assets/scenes/conversations/life-l2-073-4.webp",
+            "width": 389,
+            "height": 249,
+            "en": "Checking the museum entry time",
+            "ar": "التحقّق من موعد آخر دخول إلى المتحف",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1194,
+                3,
+                1583,
+                252
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "museum sign",
+              "ar": "لافتة المتحف",
+              "kind": "object",
+              "x": 59,
+              "y": 37
+            },
+            {
+              "en": "clock pictogram",
+              "ar": "رمز ساعة",
+              "kind": "object",
+              "x": 79,
+              "y": 29
+            },
+            {
+              "en": "check the last entry time",
+              "ar": "يتحقّق من موعد آخر دخول",
+              "kind": "phrase",
+              "x": 43,
+              "y": 48
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-074",
+      "goalAr": "قراءة تكشف تفاصيل جديدة",
+      "goalEn": "Noticing more on each reading",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Reading a familiar book again",
+          "ar": "إعادة قراءة كتاب مألوف",
+          "purposeEn": "Practise reading a familiar book again.",
+          "purposeAr": "تدرّب على إعادة قراءة كتاب مألوف.",
+          "image": {
+            "id": "conv-life-l2-074-1",
+            "path": "assets/scenes/conversations/life-l2-074-1.webp",
+            "width": 389,
+            "height": 234,
+            "en": "Reading a familiar book again",
+            "ar": "إعادة قراءة كتاب مألوف",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                258,
+                392,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "hardback",
+              "ar": "كتاب بغلاف مقوّى",
+              "kind": "object",
+              "x": 43,
+              "y": 79
+            },
+            {
+              "en": "page tabs",
+              "ar": "علامات تبويب الصفحات",
+              "kind": "object",
+              "x": 42,
+              "y": 59
+            },
+            {
+              "en": "reread a book",
+              "ar": "يعيد قراءة كتاب",
+              "kind": "phrase",
+              "x": 43,
+              "y": 72
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Noting what stands out in a short story",
+          "ar": "تدوين ما يلفت الانتباه في قصة قصيرة",
+          "purposeEn": "Practise noting what stands out in a short story.",
+          "purposeAr": "تدرّب على تدوين ما يلفت الانتباه في قصة قصيرة.",
+          "image": {
+            "id": "conv-life-l2-074-2",
+            "path": "assets/scenes/conversations/life-l2-074-2.webp",
+            "width": 391,
+            "height": 234,
+            "en": "Noting what stands out in a short story",
+            "ar": "تدوين ما يلفت الانتباه في قصة قصيرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                398,
+                258,
+                789,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "spiral notebook",
+              "ar": "دفتر حلزوني",
+              "kind": "object",
+              "x": 47,
+              "y": 88
+            },
+            {
+              "en": "open book",
+              "ar": "كتاب مفتوح",
+              "kind": "object",
+              "x": 76,
+              "y": 79
+            },
+            {
+              "en": "make a note of what you notice",
+              "ar": "دوّن ما يلفت انتباهك",
+              "kind": "phrase",
+              "x": 29,
+              "y": 84
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Looking for clues about feelings",
+          "ar": "البحث عن دلائل على مشاعر الشخصيات",
+          "purposeEn": "Practise looking for clues about feelings.",
+          "purposeAr": "تدرّب على البحث عن دلائل على مشاعر الشخصيات.",
+          "image": {
+            "id": "conv-life-l2-074-3",
+            "path": "assets/scenes/conversations/life-l2-074-3.webp",
+            "width": 393,
+            "height": 234,
+            "en": "Looking for clues about feelings",
+            "ar": "البحث عن دلائل على مشاعر الشخصيات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                258,
+                1188,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "sad face",
+              "ar": "وجه حزين",
+              "kind": "object",
+              "x": 33,
+              "y": 36
+            },
+            {
+              "en": "smiling face",
+              "ar": "وجه مبتسم",
+              "kind": "object",
+              "x": 39,
+              "y": 69
+            },
+            {
+              "en": "look for clues about how they feel",
+              "ar": "يبحث عن دلائل على مشاعرهم",
+              "kind": "phrase",
+              "x": 47,
+              "y": 77
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Comparing notes with another reader",
+          "ar": "مقارنة الملاحظات مع قارئة أخرى",
+          "purposeEn": "Practise comparing notes with another reader.",
+          "purposeAr": "تدرّب على مقارنة الملاحظات مع قارئة أخرى.",
+          "image": {
+            "id": "conv-life-l2-074-4",
+            "path": "assets/scenes/conversations/life-l2-074-4.webp",
+            "width": 389,
+            "height": 234,
+            "en": "Comparing notes with another reader",
+            "ar": "مقارنة الملاحظات مع قارئة أخرى",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1194,
+                258,
+                1583,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "handwritten notes",
+              "ar": "ملاحظات بخط اليد",
+              "kind": "object",
+              "x": 36,
+              "y": 89
+            },
+            {
+              "en": "open notebook",
+              "ar": "دفتر مفتوح",
+              "kind": "object",
+              "x": 68,
+              "y": 88
+            },
+            {
+              "en": "compare your notes with someone",
+              "ar": "قارن ملاحظاتك بملاحظات شخص آخر",
+              "kind": "phrase",
+              "x": 55,
+              "y": 79
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-075",
+      "goalAr": "الانتهاء قبل الموعد",
+      "goalEn": "Finishing a task earlier than expected",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Presenting a finished report early",
+          "ar": "عرض التقرير المكتمل قبل الموعد",
+          "purposeEn": "Practise presenting a finished report early.",
+          "purposeAr": "تدرّب على عرض التقرير المكتمل قبل الموعد.",
+          "image": {
+            "id": "conv-life-l2-075-1",
+            "path": "assets/scenes/conversations/life-l2-075-1.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Presenting a finished report early",
+            "ar": "عرض التقرير المكتمل قبل الموعد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                498,
+                392,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "report folder",
+              "ar": "ملف التقرير",
+              "kind": "object",
+              "x": 51,
+              "y": 70
+            },
+            {
+              "en": "desk clock",
+              "ar": "ساعة مكتبية",
+              "kind": "object",
+              "x": 76,
+              "y": 67
+            },
+            {
+              "en": "finish the report ahead of schedule",
+              "ar": "ينهي التقرير قبل الموعد",
+              "kind": "phrase",
+              "x": 40,
+              "y": 66
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Organising questions and answers in columns",
+          "ar": "تنظيم الأسئلة والأجوبة في عمودين",
+          "purposeEn": "Practise organising questions and answers in columns.",
+          "purposeAr": "تدرّب على تنظيم الأسئلة والأجوبة في عمودين.",
+          "image": {
+            "id": "conv-life-l2-075-2",
+            "path": "assets/scenes/conversations/life-l2-075-2.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Organising questions and answers in columns",
+            "ar": "تنظيم الأسئلة والأجوبة في عمودين",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                398,
+                498,
+                789,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "question column",
+              "ar": "عمود الأسئلة",
+              "kind": "object",
+              "x": 48,
+              "y": 52
+            },
+            {
+              "en": "answer column",
+              "ar": "عمود الإجابات",
+              "kind": "object",
+              "x": 67,
+              "y": 54
+            },
+            {
+              "en": "put the answers beside the questions",
+              "ar": "يضع الإجابات بجانب الأسئلة",
+              "kind": "phrase",
+              "x": 55,
+              "y": 66
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Flagging the unanswered rows",
+          "ar": "تمييز الصفوف التي بقيت بلا إجابة",
+          "purposeEn": "Practise flagging the unanswered rows.",
+          "purposeAr": "تدرّب على تمييز الصفوف التي بقيت بلا إجابة.",
+          "image": {
+            "id": "conv-life-l2-075-3",
+            "path": "assets/scenes/conversations/life-l2-075-3.webp",
+            "width": 393,
+            "height": 243,
+            "en": "Flagging the unanswered rows",
+            "ar": "تمييز الصفوف التي بقيت بلا إجابة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                498,
+                1188,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "yellow highlighter",
+              "ar": "قلم تمييز أصفر",
+              "kind": "object",
+              "x": 83,
+              "y": 25
+            },
+            {
+              "en": "highlighted row",
+              "ar": "صف مميّز بلون",
+              "kind": "object",
+              "x": 61,
+              "y": 65
+            },
+            {
+              "en": "mark the unanswered rows",
+              "ar": "يميّز الصفوف التي بقيت بلا إجابة",
+              "kind": "phrase",
+              "x": 70,
+              "y": 45
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Asking the team to check the marked rows",
+          "ar": "طلب مراجعة الصفوف المعلّمة من الفريق",
+          "purposeEn": "Practise asking the team to check the marked rows.",
+          "purposeAr": "تدرّب على طلب مراجعة الصفوف المعلّمة من الفريق.",
+          "image": {
+            "id": "conv-life-l2-075-4",
+            "path": "assets/scenes/conversations/life-l2-075-4.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Asking the team to check the marked rows",
+            "ar": "طلب مراجعة الصفوف المعلّمة من الفريق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1194,
+                498,
+                1583,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "marked worksheet",
+              "ar": "ورقة عمل عليها علامات",
+              "kind": "object",
+              "x": 54,
+              "y": 86
+            },
+            {
+              "en": "index finger",
+              "ar": "سبّابة",
+              "kind": "object",
+              "x": 35,
+              "y": 76
+            },
+            {
+              "en": "ask the team to check your work",
+              "ar": "يطلب من الفريق مراجعة عمله",
+              "kind": "phrase",
+              "x": 46,
+              "y": 79
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-076",
+      "goalAr": "أين المفاتيح المفقودة؟",
+      "goalEn": "Finding lost keys in an unexpected place",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Searching the entry shelf for keys",
+          "ar": "البحث عن المفاتيح عند المدخل",
+          "purposeEn": "Practise searching the entry shelf for keys.",
+          "purposeAr": "تدرّب على البحث عن المفاتيح عند المدخل.",
+          "image": {
+            "id": "conv-life-l2-076-1",
+            "path": "assets/scenes/conversations/life-l2-076-1.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Searching the entry shelf for keys",
+            "ar": "البحث عن المفاتيح عند المدخل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                747,
+                392,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "entry table",
+              "ar": "طاولة المدخل",
+              "kind": "object",
+              "x": 27,
+              "y": 91
+            },
+            {
+              "en": "wicker basket",
+              "ar": "سلّة خوص",
+              "kind": "object",
+              "x": 26,
+              "y": 84
+            },
+            {
+              "en": "look for your keys",
+              "ar": "ابحث عن مفاتيحك",
+              "kind": "phrase",
+              "x": 32,
+              "y": 76
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Checking a jacket pocket",
+          "ar": "تفقد جيب المعطف",
+          "purposeEn": "Practise checking a jacket pocket.",
+          "purposeAr": "تدرّب على تفقد جيب المعطف.",
+          "image": {
+            "id": "conv-life-l2-076-2",
+            "path": "assets/scenes/conversations/life-l2-076-2.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Checking a jacket pocket",
+            "ar": "تفقد جيب المعطف",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                398,
+                747,
+                789,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "hanging jacket",
+              "ar": "معطف معلّق",
+              "kind": "object",
+              "x": 69,
+              "y": 57
+            },
+            {
+              "en": "jacket pocket",
+              "ar": "جيب المعطف",
+              "kind": "object",
+              "x": 76,
+              "y": 68
+            },
+            {
+              "en": "check the jacket pocket",
+              "ar": "يتفقّد جيب المعطف",
+              "kind": "phrase",
+              "x": 75,
+              "y": 66
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Finding the keys in the pocket",
+          "ar": "العثور على المفاتيح في الجيب",
+          "purposeEn": "Practise finding the keys in the pocket.",
+          "purposeAr": "تدرّب على العثور على المفاتيح في الجيب.",
+          "image": {
+            "id": "conv-life-l2-076-3",
+            "path": "assets/scenes/conversations/life-l2-076-3.webp",
+            "width": 393,
+            "height": 242,
+            "en": "Finding the keys in the pocket",
+            "ar": "العثور على المفاتيح في الجيب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                747,
+                1188,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "keys",
+              "ar": "مفاتيح",
+              "kind": "object",
+              "x": 46,
+              "y": 60
+            },
+            {
+              "en": "key ring",
+              "ar": "حلقة مفاتيح",
+              "kind": "object",
+              "x": 44,
+              "y": 49
+            },
+            {
+              "en": "pull the keys out of your pocket",
+              "ar": "يُخرج المفاتيح من جيبه",
+              "kind": "phrase",
+              "x": 48,
+              "y": 67
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Keeping the keys in a regular place",
+          "ar": "حفظ المفاتيح في مكان ثابت",
+          "purposeEn": "Practise keeping the keys in a regular place.",
+          "purposeAr": "تدرّب على حفظ المفاتيح في مكان ثابت.",
+          "image": {
+            "id": "conv-life-l2-076-4",
+            "path": "assets/scenes/conversations/life-l2-076-4.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Keeping the keys in a regular place",
+            "ar": "حفظ المفاتيح في مكان ثابت",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1194,
+                747,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ceramic bowl",
+              "ar": "وعاء خزفي",
+              "kind": "object",
+              "x": 26,
+              "y": 84
+            },
+            {
+              "en": "coat hooks",
+              "ar": "علاقات المعاطف",
+              "kind": "object",
+              "x": 30,
+              "y": 11
+            },
+            {
+              "en": "put the keys in the bowl",
+              "ar": "يضع المفاتيح في الوعاء",
+              "kind": "phrase",
+              "x": 29,
+              "y": 73
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

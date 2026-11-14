@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "e9e9af62a79feb1df399c310ac24e390d8dac03a7b07ed07e42481d7c45c0d7e"
+  },
+  "conversations": [
+    {
+      "id": "l2-025",
+      "goalAr": "من سافر إلى بوسطن؟",
+      "goalEn": "Checking who went on the trip",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Asking who travelled",
+          "ar": "السؤال عمّن سافر",
+          "purposeEn": "Practise asking who travelled.",
+          "purposeAr": "تدرّب على السؤال عمّن سافر.",
+          "image": {
+            "id": "conv-life-l2-025-1",
+            "path": "assets/scenes/conversations/life-l2-025-1.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Asking who travelled",
+            "ar": "السؤال عمّن سافر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                393,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ticket counter",
+              "ar": "شبّاك التذاكر",
+              "kind": "object",
+              "x": 61,
+              "y": 83
+            },
+            {
+              "en": "ticket clerk",
+              "ar": "موظفة التذاكر",
+              "kind": "object",
+              "x": 89,
+              "y": 53
+            },
+            {
+              "en": "ask about the travellers",
+              "ar": "يستفسر عن المسافرين",
+              "kind": "phrase",
+              "x": 44,
+              "y": 65
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Checking the booking confirmation",
+          "ar": "التحقّق من تأكيد الحجز",
+          "purposeEn": "Practise checking the booking confirmation.",
+          "purposeAr": "تدرّب على التحقّق من تأكيد الحجز.",
+          "image": {
+            "id": "conv-life-l2-025-2",
+            "path": "assets/scenes/conversations/life-l2-025-2.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Checking the booking confirmation",
+            "ar": "التحقّق من تأكيد الحجز",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                3,
+                789,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "email icon",
+              "ar": "رمز بريد إلكتروني",
+              "kind": "object",
+              "x": 49,
+              "y": 70
+            },
+            {
+              "en": "train icon",
+              "ar": "رمز القطار",
+              "kind": "object",
+              "x": 47,
+              "y": 85
+            },
+            {
+              "en": "check the booking confirmation",
+              "ar": "يتحقّق من تأكيد الحجز",
+              "kind": "phrase",
+              "x": 42,
+              "y": 71
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Checking whether the booking name can change",
+          "ar": "التحقّق من إمكانية تغيير اسم الحجز",
+          "purposeEn": "Practise checking whether the booking name can change.",
+          "purposeAr": "تدرّب على التحقّق من إمكانية تغيير اسم الحجز.",
+          "image": {
+            "id": "conv-life-l2-025-3",
+            "path": "assets/scenes/conversations/life-l2-025-3.webp",
+            "width": 392,
+            "height": 241,
+            "en": "Checking whether the booking name can change",
+            "ar": "التحقّق من إمكانية تغيير اسم الحجز",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                3,
+                1187,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "name field",
+              "ar": "خانة الاسم",
+              "kind": "object",
+              "x": 53,
+              "y": 75
+            },
+            {
+              "en": "booking conditions",
+              "ar": "شروط الحجز",
+              "kind": "object",
+              "x": 84,
+              "y": 79
+            },
+            {
+              "en": "ask about a name change",
+              "ar": "يستفسر عن تغيير الاسم",
+              "kind": "phrase",
+              "x": 57,
+              "y": 67
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Calling before offering the spare seat",
+          "ar": "الاتصال قبل عرض المقعد الشاغر",
+          "purposeEn": "Practise calling before offering the spare seat.",
+          "purposeAr": "تدرّب على الاتصال قبل عرض المقعد الشاغر.",
+          "image": {
+            "id": "conv-life-l2-025-4",
+            "path": "assets/scenes/conversations/life-l2-025-4.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Calling before offering the spare seat",
+            "ar": "الاتصال قبل عرض المقعد الشاغر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                3,
+                1583,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "train ticket",
+              "ar": "تذكرة قطار",
+              "kind": "object",
+              "x": 65,
+              "y": 73
+            },
+            {
+              "en": "train carriage",
+              "ar": "عربة قطار",
+              "kind": "object",
+              "x": 64,
+              "y": 39
+            },
+            {
+              "en": "call to check the reservation",
+              "ar": "يتصل للتحقّق من الحجز",
+              "kind": "phrase",
+              "x": 24,
+              "y": 39
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-026",
+      "goalAr": "نتيجة أفضل مما توقعت",
+      "goalEn": "A result you are pleased with",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Reacting to the final layout",
+          "ar": "إبداء الرأي في التصميم النهائي",
+          "purposeEn": "Practise reacting to the final layout.",
+          "purposeAr": "تدرّب على إبداء الرأي في التصميم النهائي.",
+          "image": {
+            "id": "conv-life-l2-026-1",
+            "path": "assets/scenes/conversations/life-l2-026-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Reacting to the final layout",
+            "ar": "إبداء الرأي في التصميم النهائي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                250,
+                393,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "layout diagram",
+              "ar": "مخطّط التصميم",
+              "kind": "object",
+              "x": 54,
+              "y": 69
+            },
+            {
+              "en": "thumbs-up gesture",
+              "ar": "إشارة الاستحسان بالإبهام",
+              "kind": "object",
+              "x": 77,
+              "y": 54
+            },
+            {
+              "en": "be happy with the result",
+              "ar": "يسعده ما انتهى إليه العمل",
+              "kind": "phrase",
+              "x": 27,
+              "y": 64
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Reviewing the figures behind the result",
+          "ar": "مراجعة الأرقام التي استندت إليها النتيجة",
+          "purposeEn": "Practise reviewing the figures behind the result.",
+          "purposeAr": "تدرّب على مراجعة الأرقام التي استندت إليها النتيجة.",
+          "image": {
+            "id": "conv-life-l2-026-2",
+            "path": "assets/scenes/conversations/life-l2-026-2.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Reviewing the figures behind the result",
+            "ar": "مراجعة الأرقام التي استندت إليها النتيجة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                250,
+                789,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "table of figures",
+              "ar": "جدول أرقام",
+              "kind": "object",
+              "x": 71,
+              "y": 70
+            },
+            {
+              "en": "laptop screen",
+              "ar": "شاشة الحاسوب المحمول",
+              "kind": "object",
+              "x": 14,
+              "y": 75
+            },
+            {
+              "en": "show the figures you used",
+              "ar": "اعرض الأرقام التي استخدمتها",
+              "kind": "phrase",
+              "x": 55,
+              "y": 69
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Attaching the table and marking omitted entries",
+          "ar": "إرفاق الجدول وتمييز البنود المستبعدة",
+          "purposeEn": "Practise attaching the table and marking omitted entries.",
+          "purposeAr": "تدرّب على إرفاق الجدول وتمييز البنود المستبعدة.",
+          "image": {
+            "id": "conv-life-l2-026-3",
+            "path": "assets/scenes/conversations/life-l2-026-3.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Attaching the table and marking omitted entries",
+            "ar": "إرفاق الجدول وتمييز البنود المستبعدة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                250,
+                1187,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "paper clip",
+              "ar": "مشبك ورق",
+              "kind": "object",
+              "x": 46,
+              "y": 79
+            },
+            {
+              "en": "yellow highlighter",
+              "ar": "قلم تمييز أصفر",
+              "kind": "object",
+              "x": 65,
+              "y": 75
+            },
+            {
+              "en": "mark the entries you left out",
+              "ar": "ميّز البنود التي استبعدتها",
+              "kind": "phrase",
+              "x": 65,
+              "y": 88
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Proofreading the note before sending",
+          "ar": "مراجعة الملاحظة قبل إرسالها",
+          "purposeEn": "Practise proofreading the note before sending.",
+          "purposeAr": "تدرّب على مراجعة الملاحظة قبل إرسالها.",
+          "image": {
+            "id": "conv-life-l2-026-4",
+            "path": "assets/scenes/conversations/life-l2-026-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Proofreading the note before sending",
+            "ar": "مراجعة الملاحظة قبل إرسالها",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                250,
+                1583,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "printed note",
+              "ar": "ملاحظة مطبوعة",
+              "kind": "object",
+              "x": 34,
+              "y": 72
+            },
+            {
+              "en": "laptop keyboard",
+              "ar": "لوحة مفاتيح الحاسوب المحمول",
+              "kind": "object",
+              "x": 83,
+              "y": 86
+            },
+            {
+              "en": "read the note before sending it",
+              "ar": "يقرأ الملاحظة قبل إرسالها",
+              "kind": "phrase",
+              "x": 30,
+              "y": 70
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-027",
+      "goalAr": "كوب ماء في الانتظار",
+      "goalEn": "A glass of water while waiting",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Offering water to a visitor",
+          "ar": "عرض الماء على زائرة",
+          "purposeEn": "Practise offering water to a visitor.",
+          "purposeAr": "تدرّب على عرض الماء على زائرة.",
+          "image": {
+            "id": "conv-life-l2-027-1",
+            "path": "assets/scenes/conversations/life-l2-027-1.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Offering water to a visitor",
+            "ar": "عرض الماء على زائرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                498,
+                393,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "water jug",
+              "ar": "إبريق ماء",
+              "kind": "object",
+              "x": 88,
+              "y": 55
+            },
+            {
+              "en": "drinking glass",
+              "ar": "كوب شرب",
+              "kind": "object",
+              "x": 86,
+              "y": 65
+            },
+            {
+              "en": "offer someone a drink",
+              "ar": "يقدّم لشخصٍ شيئًا ليشربه",
+              "kind": "phrase",
+              "x": 70,
+              "y": 46
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Pouring a glass of water",
+          "ar": "صبّ كوب من الماء",
+          "purposeEn": "Practise pouring a glass of water.",
+          "purposeAr": "تدرّب على صبّ كوب من الماء.",
+          "image": {
+            "id": "conv-life-l2-027-2",
+            "path": "assets/scenes/conversations/life-l2-027-2.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Pouring a glass of water",
+            "ar": "صبّ كوب من الماء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                498,
+                789,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "glass pitcher",
+              "ar": "إبريق زجاجي",
+              "kind": "object",
+              "x": 40,
+              "y": 53
+            },
+            {
+              "en": "glass of water",
+              "ar": "كوب ماء",
+              "kind": "object",
+              "x": 57,
+              "y": 79
+            },
+            {
+              "en": "pour a glass of water",
+              "ar": "يصبّ كوبًا من الماء",
+              "kind": "phrase",
+              "x": 53,
+              "y": 62
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Taking the glass into the meeting room",
+          "ar": "أخذ الكوب إلى غرفة الاجتماعات",
+          "purposeEn": "Practise taking the glass into the meeting room.",
+          "purposeAr": "تدرّب على أخذ الكوب إلى غرفة الاجتماعات.",
+          "image": {
+            "id": "conv-life-l2-027-3",
+            "path": "assets/scenes/conversations/life-l2-027-3.webp",
+            "width": 392,
+            "height": 243,
+            "en": "Taking the glass into the meeting room",
+            "ar": "أخذ الكوب إلى غرفة الاجتماعات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                498,
+                1187,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "drinking glass",
+              "ar": "كوب شرب",
+              "kind": "object",
+              "x": 48,
+              "y": 55
+            },
+            {
+              "en": "meeting room",
+              "ar": "غرفة اجتماعات",
+              "kind": "object",
+              "x": 72,
+              "y": 69
+            },
+            {
+              "en": "take the glass with you",
+              "ar": "خذ الكوب معك",
+              "kind": "phrase",
+              "x": 47,
+              "y": 58
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Leaving the glass on the tray",
+          "ar": "ترك الكوب على الصينية",
+          "purposeEn": "Practise leaving the glass on the tray.",
+          "purposeAr": "تدرّب على ترك الكوب على الصينية.",
+          "image": {
+            "id": "conv-life-l2-027-4",
+            "path": "assets/scenes/conversations/life-l2-027-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Leaving the glass on the tray",
+            "ar": "ترك الكوب على الصينية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                498,
+                1583,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "serving tray",
+              "ar": "صينية تقديم",
+              "kind": "object",
+              "x": 78,
+              "y": 83
+            },
+            {
+              "en": "empty glass",
+              "ar": "كوب فارغ",
+              "kind": "object",
+              "x": 61,
+              "y": 75
+            },
+            {
+              "en": "leave the glass on the tray",
+              "ar": "اترك الكوب على الصينية",
+              "kind": "phrase",
+              "x": 60,
+              "y": 77
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-028",
+      "goalAr": "ترقّب المطر غدًا",
+      "goalEn": "Wondering about tomorrow's weather",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Considering rain before an outdoor meal",
+          "ar": "أخذ احتمال المطر في الحسبان قبل وجبة خارجية",
+          "purposeEn": "Practise considering rain before an outdoor meal.",
+          "purposeAr": "تدرّب على أخذ احتمال المطر في الحسبان قبل وجبة خارجية.",
+          "image": {
+            "id": "conv-life-l2-028-1",
+            "path": "assets/scenes/conversations/life-l2-028-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Considering rain before an outdoor meal",
+            "ar": "أخذ احتمال المطر في الحسبان قبل وجبة خارجية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                747,
+                393,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "cloudy sky",
+              "ar": "سماء ملبّدة بالغيوم",
+              "kind": "object",
+              "x": 56,
+              "y": 23
+            },
+            {
+              "en": "outdoor table",
+              "ar": "طاولة خارجية",
+              "kind": "object",
+              "x": 40,
+              "y": 83
+            },
+            {
+              "en": "plan an outdoor meal",
+              "ar": "يخطّط لوجبة في الهواء الطلق",
+              "kind": "phrase",
+              "x": 36,
+              "y": 68
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Preparing an indoor backup table",
+          "ar": "تجهيز طاولة بديلة في الداخل",
+          "purposeEn": "Practise preparing an indoor backup table.",
+          "purposeAr": "تدرّب على تجهيز طاولة بديلة في الداخل.",
+          "image": {
+            "id": "conv-life-l2-028-2",
+            "path": "assets/scenes/conversations/life-l2-028-2.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Preparing an indoor backup table",
+            "ar": "تجهيز طاولة بديلة في الداخل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                747,
+                789,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "rain on the window",
+              "ar": "مطر على النافذة",
+              "kind": "object",
+              "x": 56,
+              "y": 26
+            },
+            {
+              "en": "tablecloth",
+              "ar": "مفرش طاولة",
+              "kind": "object",
+              "x": 52,
+              "y": 75
+            },
+            {
+              "en": "set a table indoors",
+              "ar": "يجهّز طاولة في الداخل",
+              "kind": "phrase",
+              "x": 60,
+              "y": 73
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Notifying everyone of a possible move",
+          "ar": "إبلاغ الجميع باحتمال الانتقال إلى الداخل",
+          "purposeEn": "Practise notifying everyone of a possible move.",
+          "purposeAr": "تدرّب على إبلاغ الجميع باحتمال الانتقال إلى الداخل.",
+          "image": {
+            "id": "conv-life-l2-028-3",
+            "path": "assets/scenes/conversations/life-l2-028-3.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Notifying everyone of a possible move",
+            "ar": "إبلاغ الجميع باحتمال الانتقال إلى الداخل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                747,
+                1187,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "smartphone",
+              "ar": "هاتف ذكي",
+              "kind": "object",
+              "x": 56,
+              "y": 75
+            },
+            {
+              "en": "wall clock",
+              "ar": "ساعة حائط",
+              "kind": "object",
+              "x": 76,
+              "y": 27
+            },
+            {
+              "en": "send a group update",
+              "ar": "يرسل تحديثًا للمجموعة",
+              "kind": "phrase",
+              "x": 52,
+              "y": 78
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Showing guests the side entrance",
+          "ar": "إرشاد الضيوف إلى المدخل الجانبي",
+          "purposeEn": "Practise showing guests the side entrance.",
+          "purposeAr": "تدرّب على إرشاد الضيوف إلى المدخل الجانبي.",
+          "image": {
+            "id": "conv-life-l2-028-4",
+            "path": "assets/scenes/conversations/life-l2-028-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Showing guests the side entrance",
+            "ar": "إرشاد الضيوف إلى المدخل الجانبي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                747,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "direction arrow",
+              "ar": "سهم إرشادي",
+              "kind": "object",
+              "x": 37,
+              "y": 37
+            },
+            {
+              "en": "side entrance",
+              "ar": "مدخل جانبي",
+              "kind": "object",
+              "x": 56,
+              "y": 36
+            },
+            {
+              "en": "point out the side entrance",
+              "ar": "يشير إلى المدخل الجانبي",
+              "kind": "phrase",
+              "x": 34,
+              "y": 55
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

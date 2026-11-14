@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "ab5667db6e98a019212cf3bcd6782665450a68e40ac74d14d6e2dfc5b28cf693"
+  },
+  "conversations": [
+    {
+      "id": "l2-085",
+      "goalAr": "الأمر يستغرق وقتًا أطول",
+      "goalEn": "Allowing more time for a repair",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Checking how long the repair may take",
+          "ar": "تقدير المدة اللازمة للإصلاح",
+          "purposeEn": "Practise checking how long the repair may take.",
+          "purposeAr": "تدرّب على تقدير المدة اللازمة للإصلاح.",
+          "image": {
+            "id": "conv-life-l2-085-1",
+            "path": "assets/scenes/conversations/life-l2-085-1.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Checking how long the repair may take",
+            "ar": "تقدير المدة اللازمة للإصلاح",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                393,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "open printer",
+              "ar": "طابعة مفتوحة",
+              "kind": "object",
+              "x": 85,
+              "y": 60
+            },
+            {
+              "en": "flashlight",
+              "ar": "مصباح يدوي",
+              "kind": "object",
+              "x": 72,
+              "y": 56
+            },
+            {
+              "en": "inspect the printer",
+              "ar": "يفحص الطابعة",
+              "kind": "phrase",
+              "x": 71,
+              "y": 53
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Taking the spare printer to reception",
+          "ar": "نقل الطابعة الاحتياطية إلى الاستقبال",
+          "purposeEn": "Practise taking the spare printer to reception.",
+          "purposeAr": "تدرّب على نقل الطابعة الاحتياطية إلى الاستقبال.",
+          "image": {
+            "id": "conv-life-l2-085-2",
+            "path": "assets/scenes/conversations/life-l2-085-2.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Taking the spare printer to reception",
+            "ar": "نقل الطابعة الاحتياطية إلى الاستقبال",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                3,
+                791,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "spare printer",
+              "ar": "طابعة احتياطية",
+              "kind": "object",
+              "x": 45,
+              "y": 61
+            },
+            {
+              "en": "reception counter",
+              "ar": "منضدة الاستقبال",
+              "kind": "object",
+              "x": 74,
+              "y": 70
+            },
+            {
+              "en": "move the printer to the front desk",
+              "ar": "ينقل الطابعة إلى مكتب الاستقبال",
+              "kind": "phrase",
+              "x": 38,
+              "y": 75
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Connecting the printer and testing it",
+          "ar": "توصيل الطابعة واختبارها",
+          "purposeEn": "Practise connecting the printer and testing it.",
+          "purposeAr": "تدرّب على توصيل الطابعة واختبارها.",
+          "image": {
+            "id": "conv-life-l2-085-3",
+            "path": "assets/scenes/conversations/life-l2-085-3.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Connecting the printer and testing it",
+            "ar": "توصيل الطابعة واختبارها",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                3,
+                1186,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "power cable",
+              "ar": "كابل طاقة",
+              "kind": "object",
+              "x": 47,
+              "y": 78
+            },
+            {
+              "en": "test page",
+              "ar": "صفحة اختبار",
+              "kind": "object",
+              "x": 74,
+              "y": 91
+            },
+            {
+              "en": "print a test page",
+              "ar": "يطبع صفحة اختبار",
+              "kind": "phrase",
+              "x": 44,
+              "y": 78
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Showing where to collect printouts",
+          "ar": "توضيح مكان استلام المطبوعات",
+          "purposeEn": "Practise showing where to collect printouts.",
+          "purposeAr": "تدرّب على توضيح مكان استلام المطبوعات.",
+          "image": {
+            "id": "conv-life-l2-085-4",
+            "path": "assets/scenes/conversations/life-l2-085-4.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Showing where to collect printouts",
+            "ar": "توضيح مكان استلام المطبوعات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                3,
+                1583,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "collection sign",
+              "ar": "لافتة استلام",
+              "kind": "object",
+              "x": 50,
+              "y": 70
+            },
+            {
+              "en": "output tray",
+              "ar": "درج إخراج الورق",
+              "kind": "object",
+              "x": 80,
+              "y": 86
+            },
+            {
+              "en": "put up a sign",
+              "ar": "يضع لافتة",
+              "kind": "phrase",
+              "x": 51,
+              "y": 59
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-086",
+      "goalAr": "هذا ما كنت أبحث عنه",
+      "goalEn": "Finding exactly the right item",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Comparing bags with the same strap",
+          "ar": "مقارنة حقيبتين بحزام من النوع نفسه",
+          "purposeEn": "Practise comparing bags with the same strap.",
+          "purposeAr": "تدرّب على مقارنة حقيبتين بحزام من النوع نفسه.",
+          "image": {
+            "id": "conv-life-l2-086-1",
+            "path": "assets/scenes/conversations/life-l2-086-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Comparing bags with the same strap",
+            "ar": "مقارنة حقيبتين بحزام من النوع نفسه",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                250,
+                393,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "shoulder strap",
+              "ar": "حزام كتف",
+              "kind": "object",
+              "x": 46,
+              "y": 71
+            },
+            {
+              "en": "shoulder bag",
+              "ar": "حقيبة كتف",
+              "kind": "object",
+              "x": 78,
+              "y": 78
+            },
+            {
+              "en": "look for a smaller bag",
+              "ar": "يبحث عن حقيبة أصغر",
+              "kind": "phrase",
+              "x": 67,
+              "y": 54
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Checking that the laptop fits",
+          "ar": "التحقّق من أن الحقيبة تتّسع للحاسوب",
+          "purposeEn": "Practise checking that the laptop fits.",
+          "purposeAr": "تدرّب على التحقّق من أن الحقيبة تتّسع للحاسوب.",
+          "image": {
+            "id": "conv-life-l2-086-2",
+            "path": "assets/scenes/conversations/life-l2-086-2.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Checking that the laptop fits",
+            "ar": "التحقّق من أن الحقيبة تتّسع للحاسوب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                250,
+                791,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "laptop",
+              "ar": "حاسوب محمول",
+              "kind": "object",
+              "x": 52,
+              "y": 61
+            },
+            {
+              "en": "padded compartment",
+              "ar": "حجرة مبطّنة",
+              "kind": "object",
+              "x": 62,
+              "y": 78
+            },
+            {
+              "en": "check whether the laptop fits",
+              "ar": "يتحقّق من أن الحقيبة تتّسع للحاسوب",
+              "kind": "phrase",
+              "x": 56,
+              "y": 74
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Using a separate pocket for the charger",
+          "ar": "استخدام جيب منفصل للشاحن",
+          "purposeEn": "Practise using a separate pocket for the charger.",
+          "purposeAr": "تدرّب على استخدام جيب منفصل للشاحن.",
+          "image": {
+            "id": "conv-life-l2-086-3",
+            "path": "assets/scenes/conversations/life-l2-086-3.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Using a separate pocket for the charger",
+            "ar": "استخدام جيب منفصل للشاحن",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                250,
+                1186,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "power adapter",
+              "ar": "محوّل طاقة",
+              "kind": "object",
+              "x": 57,
+              "y": 65
+            },
+            {
+              "en": "front pocket",
+              "ar": "جيب أمامي",
+              "kind": "object",
+              "x": 59,
+              "y": 82
+            },
+            {
+              "en": "put the charger in the front pocket",
+              "ar": "يضع الشاحن في الجيب الأمامي",
+              "kind": "phrase",
+              "x": 50,
+              "y": 68
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Keeping the receipt after buying the bag",
+          "ar": "الاحتفاظ بالإيصال بعد شراء الحقيبة",
+          "purposeEn": "Practise keeping the receipt after buying the bag.",
+          "purposeAr": "تدرّب على الاحتفاظ بالإيصال بعد شراء الحقيبة.",
+          "image": {
+            "id": "conv-life-l2-086-4",
+            "path": "assets/scenes/conversations/life-l2-086-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Keeping the receipt after buying the bag",
+            "ar": "الاحتفاظ بالإيصال بعد شراء الحقيبة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                250,
+                1583,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "receipt",
+              "ar": "إيصال شراء",
+              "kind": "object",
+              "x": 53,
+              "y": 62
+            },
+            {
+              "en": "laptop bag",
+              "ar": "حقيبة حاسوب محمول",
+              "kind": "object",
+              "x": 78,
+              "y": 80
+            },
+            {
+              "en": "keep the receipt",
+              "ar": "يحتفظ بالإيصال",
+              "kind": "phrase",
+              "x": 50,
+              "y": 65
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-087",
+      "goalAr": "الاستعداد للرحلة",
+      "goalEn": "Getting ready for a trip",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Packing for a trip",
+          "ar": "تجهيز الحقيبة للسفر",
+          "purposeEn": "Practise packing for a trip.",
+          "purposeAr": "تدرّب على تجهيز الحقيبة للسفر.",
+          "image": {
+            "id": "conv-life-l2-087-1",
+            "path": "assets/scenes/conversations/life-l2-087-1.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Packing for a trip",
+            "ar": "تجهيز الحقيبة للسفر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                499,
+                393,
+                742
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "open suitcase",
+              "ar": "حقيبة سفر مفتوحة",
+              "kind": "object",
+              "x": 60,
+              "y": 83
+            },
+            {
+              "en": "folded clothes",
+              "ar": "ملابس مطويّة",
+              "kind": "object",
+              "x": 45,
+              "y": 82
+            },
+            {
+              "en": "get ready for a trip",
+              "ar": "يستعدّ للسفر",
+              "kind": "phrase",
+              "x": 41,
+              "y": 74
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Making arrangements before leaving",
+          "ar": "ترتيب الأمور قبل المغادرة",
+          "purposeEn": "Practise making arrangements before leaving.",
+          "purposeAr": "تدرّب على ترتيب الأمور قبل المغادرة.",
+          "image": {
+            "id": "conv-life-l2-087-2",
+            "path": "assets/scenes/conversations/life-l2-087-2.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Making arrangements before leaving",
+            "ar": "ترتيب الأمور قبل المغادرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                499,
+                791,
+                742
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "house keys",
+              "ar": "مفاتيح المنزل",
+              "kind": "object",
+              "x": 50,
+              "y": 54
+            },
+            {
+              "en": "flight symbol",
+              "ar": "رمز رحلة جوية",
+              "kind": "object",
+              "x": 25,
+              "y": 54
+            },
+            {
+              "en": "ask a friend to help while you are away",
+              "ar": "يطلب مساعدة صديق أثناء غيابه",
+              "kind": "phrase",
+              "x": 48,
+              "y": 57
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Checking the mail",
+          "ar": "تفقّد البريد",
+          "purposeEn": "Practise checking the mail.",
+          "purposeAr": "تدرّب على تفقّد البريد.",
+          "image": {
+            "id": "conv-life-l2-087-3",
+            "path": "assets/scenes/conversations/life-l2-087-3.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Checking the mail",
+            "ar": "تفقّد البريد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                499,
+                1186,
+                742
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "mailbox",
+              "ar": "صندوق بريد",
+              "kind": "object",
+              "x": 24,
+              "y": 52
+            },
+            {
+              "en": "envelopes",
+              "ar": "أظرف",
+              "kind": "object",
+              "x": 46,
+              "y": 56
+            },
+            {
+              "en": "check the mail while I am away",
+              "ar": "تفقّد البريد أثناء غيابي",
+              "kind": "phrase",
+              "x": 45,
+              "y": 62
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Photographing a sealed envelope",
+          "ar": "تصوير ظرف مغلق",
+          "purposeEn": "Practise photographing a sealed envelope.",
+          "purposeAr": "تدرّب على تصوير ظرف مغلق.",
+          "image": {
+            "id": "conv-life-l2-087-4",
+            "path": "assets/scenes/conversations/life-l2-087-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Photographing a sealed envelope",
+            "ar": "تصوير ظرف مغلق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                499,
+                1583,
+                742
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "sealed envelope",
+              "ar": "ظرف مغلق",
+              "kind": "object",
+              "x": 37,
+              "y": 43
+            },
+            {
+              "en": "phone camera",
+              "ar": "كاميرا الهاتف",
+              "kind": "object",
+              "x": 59,
+              "y": 51
+            },
+            {
+              "en": "take a photo of the envelope",
+              "ar": "يلتقط صورة للظرف",
+              "kind": "phrase",
+              "x": 53,
+              "y": 44
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-088",
+      "goalAr": "أول أسبوع في الحي",
+      "goalEn": "Getting used to a new neighbourhood",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Unpacking in the new flat",
+          "ar": "تفريغ الصناديق في الشقّة الجديدة",
+          "purposeEn": "Practise unpacking in the new flat.",
+          "purposeAr": "تدرّب على تفريغ الصناديق في الشقّة الجديدة.",
+          "image": {
+            "id": "conv-life-l2-088-1",
+            "path": "assets/scenes/conversations/life-l2-088-1.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Unpacking in the new flat",
+            "ar": "تفريغ الصناديق في الشقّة الجديدة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                748,
+                393,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "moving box",
+              "ar": "صندوق نقل الأغراض",
+              "kind": "object",
+              "x": 47,
+              "y": 85
+            },
+            {
+              "en": "packing material",
+              "ar": "مواد تغليف",
+              "kind": "object",
+              "x": 38,
+              "y": 82
+            },
+            {
+              "en": "settle into a new flat",
+              "ar": "يتأقلم مع السكن في شقّة جديدة",
+              "kind": "phrase",
+              "x": 28,
+              "y": 66
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Locating the nearest shops",
+          "ar": "تحديد مواقع أقرب المحلّات",
+          "purposeEn": "Practise locating the nearest shops.",
+          "purposeAr": "تدرّب على تحديد مواقع أقرب المحلّات.",
+          "image": {
+            "id": "conv-life-l2-088-2",
+            "path": "assets/scenes/conversations/life-l2-088-2.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Locating the nearest shops",
+            "ar": "تحديد مواقع أقرب المحلّات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                748,
+                791,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "neighbourhood map",
+              "ar": "خريطة الحي",
+              "kind": "object",
+              "x": 57,
+              "y": 73
+            },
+            {
+              "en": "shop symbol",
+              "ar": "رمز متجر",
+              "kind": "object",
+              "x": 55,
+              "y": 75
+            },
+            {
+              "en": "find the nearest shops",
+              "ar": "يعثر على أقرب المحلّات",
+              "kind": "phrase",
+              "x": 49,
+              "y": 65
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Pointing out the bakery behind the market",
+          "ar": "الإشارة إلى المخبز خلف السوق",
+          "purposeEn": "Practise pointing out the bakery behind the market.",
+          "purposeAr": "تدرّب على الإشارة إلى المخبز خلف السوق.",
+          "image": {
+            "id": "conv-life-l2-088-3",
+            "path": "assets/scenes/conversations/life-l2-088-3.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Pointing out the bakery behind the market",
+            "ar": "الإشارة إلى المخبز خلف السوق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                748,
+                1186,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bakery window",
+              "ar": "واجهة المخبز",
+              "kind": "object",
+              "x": 84,
+              "y": 43
+            },
+            {
+              "en": "produce stall",
+              "ar": "بسطة خضار وفاكهة",
+              "kind": "object",
+              "x": 61,
+              "y": 85
+            },
+            {
+              "en": "show someone where the bakery is",
+              "ar": "يدلّ شخصًا على مكان المخبز",
+              "kind": "phrase",
+              "x": 65,
+              "y": 38
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Buying fresh bread for breakfast",
+          "ar": "شراء خبز طازج للإفطار",
+          "purposeEn": "Practise buying fresh bread for breakfast.",
+          "purposeAr": "تدرّب على شراء خبز طازج للإفطار.",
+          "image": {
+            "id": "conv-life-l2-088-4",
+            "path": "assets/scenes/conversations/life-l2-088-4.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Buying fresh bread for breakfast",
+            "ar": "شراء خبز طازج للإفطار",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                748,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "loaves of bread",
+              "ar": "أرغفة خبز",
+              "kind": "object",
+              "x": 60,
+              "y": 68
+            },
+            {
+              "en": "paper bag",
+              "ar": "كيس ورقي",
+              "kind": "object",
+              "x": 60,
+              "y": 76
+            },
+            {
+              "en": "pick up fresh bread",
+              "ar": "يشتري خبزًا طازجًا",
+              "kind": "phrase",
+              "x": 64,
+              "y": 65
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

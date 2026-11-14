@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "5437193cd8bc09004bdcb489719f768a5356ce12b275a55134b52a05ce1e4a17"
+  },
+  "conversations": [
+    {
+      "id": "l2-101",
+      "goalAr": "الاتجاهات إلى محطة القطار",
+      "goalEn": "Asking the way to the station",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Asking for directions to the station",
+          "ar": "السؤال عن الطريق إلى محطة القطار",
+          "purposeEn": "Ask a passer-by how to reach the train station.",
+          "purposeAr": "اسأل أحد المارّة عن الطريق إلى محطة القطار.",
+          "image": {
+            "id": "conv-life-l2-101-1",
+            "path": "assets/scenes/conversations/life-l2-101-1.webp",
+            "width": 391,
+            "height": 240,
+            "en": "Asking for directions to the station",
+            "ar": "السؤال عن الطريق إلى محطة القطار",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                394,
+                243
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "library sign",
+              "ar": "لافتة المكتبة",
+              "kind": "object",
+              "x": 74,
+              "y": 25
+            },
+            {
+              "en": "backpack",
+              "ar": "حقيبة ظهر",
+              "kind": "object",
+              "x": 13,
+              "y": 78
+            },
+            {
+              "en": "ask how to get to the station",
+              "ar": "يسأل كيف يصل إلى المحطة",
+              "kind": "phrase",
+              "x": 45,
+              "y": 72
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Finding the first left after the library",
+          "ar": "تحديد أول منعطف يسارًا بعد المكتبة",
+          "purposeEn": "Give a turning instruction using the library as a landmark.",
+          "purposeAr": "وضّح أين ينعطف السائل باستخدام المكتبة علامةً للاستدلال.",
+          "image": {
+            "id": "conv-life-l2-101-2",
+            "path": "assets/scenes/conversations/life-l2-101-2.webp",
+            "width": 389,
+            "height": 240,
+            "en": "Finding the first left after the library",
+            "ar": "تحديد أول منعطف يسارًا بعد المكتبة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                3,
+                789,
+                243
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "left arrow",
+              "ar": "سهم إلى اليسار",
+              "kind": "object",
+              "x": 44,
+              "y": 56
+            },
+            {
+              "en": "library symbol",
+              "ar": "رمز المكتبة",
+              "kind": "object",
+              "x": 36,
+              "y": 85
+            },
+            {
+              "en": "take the first left after the library",
+              "ar": "انعطف يسارًا عند أول منعطف بعد المكتبة",
+              "kind": "phrase",
+              "x": 54,
+              "y": 60
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Crossing at the lights",
+          "ar": "عبور الطريق عند الإشارة",
+          "purposeEn": "Explain how long the walk takes and where to cross.",
+          "purposeAr": "اشرح كم يستغرق المشي وأين يعبر الطريق.",
+          "image": {
+            "id": "conv-life-l2-101-3",
+            "path": "assets/scenes/conversations/life-l2-101-3.webp",
+            "width": 389,
+            "height": 240,
+            "en": "Crossing at the lights",
+            "ar": "عبور الطريق عند الإشارة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                3,
+                1186,
+                243
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "pedestrian signal",
+              "ar": "إشارة عبور المشاة",
+              "kind": "object",
+              "x": 34,
+              "y": 14
+            },
+            {
+              "en": "zebra crossing",
+              "ar": "ممر مشاة مخطّط",
+              "kind": "object",
+              "x": 54,
+              "y": 91
+            },
+            {
+              "en": "cross at the lights",
+              "ar": "يعبر الطريق عند الإشارة",
+              "kind": "phrase",
+              "x": 52,
+              "y": 81
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Finding the ticket office from the entrance",
+          "ar": "تحديد مكان شبّاك التذاكر من المدخل",
+          "purposeEn": "Guide a traveller from the main entrance to the ticket office.",
+          "purposeAr": "أرشد المسافر من المدخل الرئيسي إلى مكتب التذاكر.",
+          "image": {
+            "id": "conv-life-l2-101-4",
+            "path": "assets/scenes/conversations/life-l2-101-4.webp",
+            "width": 390,
+            "height": 240,
+            "en": "Finding the ticket office from the entrance",
+            "ar": "تحديد مكان شبّاك التذاكر من المدخل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                3,
+                1583,
+                243
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ticket office",
+              "ar": "مكتب التذاكر",
+              "kind": "object",
+              "x": 83,
+              "y": 46
+            },
+            {
+              "en": "ticket symbol",
+              "ar": "رمز تذكرة",
+              "kind": "object",
+              "x": 83,
+              "y": 21
+            },
+            {
+              "en": "go straight ahead to the ticket office",
+              "ar": "تابع السير أمامك إلى مكتب التذاكر",
+              "kind": "phrase",
+              "x": 60,
+              "y": 43
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-102",
+      "goalAr": "معنى اختصار على ملصق",
+      "goalEn": "Asking what an abbreviation means",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Checking the letters on a label",
+          "ar": "تفقد الحروف على الملصق",
+          "purposeEn": "Ask what unfamiliar letters on a label stand for.",
+          "purposeAr": "اسأل عمّا تعنيه حروف غير مألوفة على ملصق.",
+          "image": {
+            "id": "conv-life-l2-102-1",
+            "path": "assets/scenes/conversations/life-l2-102-1.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Checking the letters on a label",
+            "ar": "تفقد الحروف على الملصق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                250,
+                394,
+                491
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "parcel label",
+              "ar": "ملصق طرد",
+              "kind": "object",
+              "x": 51,
+              "y": 78
+            },
+            {
+              "en": "barcode",
+              "ar": "رمز شريطي",
+              "kind": "object",
+              "x": 46,
+              "y": 88
+            },
+            {
+              "en": "ask what an abbreviation stands for",
+              "ar": "يسأل عمّا يعنيه اختصار",
+              "kind": "phrase",
+              "x": 52,
+              "y": 72
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Reading the key at the bottom of the page",
+          "ar": "قراءة مفتاح الرموز في أسفل الصفحة",
+          "purposeEn": "Use a document key to find the intended meaning of an abbreviation.",
+          "purposeAr": "استخدم مفتاح الرموز لمعرفة المعنى المقصود من الاختصار.",
+          "image": {
+            "id": "conv-life-l2-102-2",
+            "path": "assets/scenes/conversations/life-l2-102-2.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Reading the key at the bottom of the page",
+            "ar": "قراءة مفتاح الرموز في أسفل الصفحة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                250,
+                789,
+                491
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "symbol key",
+              "ar": "مفتاح الرموز",
+              "kind": "object",
+              "x": 43,
+              "y": 87
+            },
+            {
+              "en": "handling symbol",
+              "ar": "رمز التعامل مع الشحنة",
+              "kind": "object",
+              "x": 56,
+              "y": 85
+            },
+            {
+              "en": "check the key at the bottom",
+              "ar": "يتحقّق من مفتاح الرموز في الأسفل",
+              "kind": "phrase",
+              "x": 36,
+              "y": 81
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Comparing delivery dates with the invoice",
+          "ar": "مقارنة تواريخ التسليم بالفاتورة",
+          "purposeEn": "Explain why the delivery date can differ from the invoice date.",
+          "purposeAr": "اشرح لماذا قد يختلف تاريخ التسليم عن تاريخ الفاتورة.",
+          "image": {
+            "id": "conv-life-l2-102-3",
+            "path": "assets/scenes/conversations/life-l2-102-3.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Comparing delivery dates with the invoice",
+            "ar": "مقارنة تواريخ التسليم بالفاتورة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                250,
+                1186,
+                491
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "delivery calendar",
+              "ar": "تقويم التسليم",
+              "kind": "object",
+              "x": 47,
+              "y": 71
+            },
+            {
+              "en": "invoice",
+              "ar": "فاتورة",
+              "kind": "object",
+              "x": 76,
+              "y": 77
+            },
+            {
+              "en": "compare the date with the invoice",
+              "ar": "يقارن التاريخ بما في الفاتورة",
+              "kind": "phrase",
+              "x": 34,
+              "y": 76
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Writing the full meaning on the shared copy",
+          "ar": "كتابة المعنى الكامل على النسخة المشتركة",
+          "purposeEn": "Clarify the meaning on the shared copy for the next reader.",
+          "purposeAr": "وضّح المعنى على النسخة المشتركة للقارئ التالي.",
+          "image": {
+            "id": "conv-life-l2-102-4",
+            "path": "assets/scenes/conversations/life-l2-102-4.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Writing the full meaning on the shared copy",
+            "ar": "كتابة المعنى الكامل على النسخة المشتركة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                250,
+                1583,
+                491
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "reference sheet",
+              "ar": "ورقة مرجعية",
+              "kind": "object",
+              "x": 56,
+              "y": 78
+            },
+            {
+              "en": "pen",
+              "ar": "قلم",
+              "kind": "object",
+              "x": 28,
+              "y": 76
+            },
+            {
+              "en": "write out the full meaning",
+              "ar": "يكتب المعنى كاملًا",
+              "kind": "phrase",
+              "x": 30,
+              "y": 88
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-103",
+      "goalAr": "اختيار مكان لعشاء خاص",
+      "goalEn": "Choosing a restaurant for dinner",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Discussing vegetarian choices on the menu",
+          "ar": "مناقشة الخيارات النباتية في القائمة",
+          "purposeEn": "Describe the restaurant’s atmosphere and available menu choices.",
+          "purposeAr": "صف أجواء المطعم والخيارات المتاحة في القائمة.",
+          "image": {
+            "id": "conv-life-l2-103-1",
+            "path": "assets/scenes/conversations/life-l2-103-1.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Discussing vegetarian choices on the menu",
+            "ar": "مناقشة الخيارات النباتية في القائمة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                497,
+                394,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "picture menu",
+              "ar": "قائمة طعام مصوّرة",
+              "kind": "object",
+              "x": 51,
+              "y": 74
+            },
+            {
+              "en": "vegetarian dish",
+              "ar": "طبق نباتي",
+              "kind": "object",
+              "x": 69,
+              "y": 72
+            },
+            {
+              "en": "look for vegetarian options",
+              "ar": "يبحث عن خيارات نباتية",
+              "kind": "phrase",
+              "x": 39,
+              "y": 70
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Calling to ask about a reservation",
+          "ar": "الاتصال للاستفسار عن الحجز",
+          "purposeEn": "Ask about the closing time and availability at the preferred time.",
+          "purposeAr": "اسأل عن وقت الإغلاق وما إذا كان الحجز متاحًا في الوقت المفضّل.",
+          "image": {
+            "id": "conv-life-l2-103-2",
+            "path": "assets/scenes/conversations/life-l2-103-2.webp",
+            "width": 389,
+            "height": 142,
+            "en": "Calling to ask about a reservation",
+            "ar": "الاتصال للاستفسار عن الحجز",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                600,
+                789,
+                742
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "telephone handset",
+              "ar": "سمّاعة الهاتف",
+              "kind": "object",
+              "x": 31,
+              "y": 30
+            },
+            {
+              "en": "reservation notebook",
+              "ar": "دفتر الحجوزات",
+              "kind": "object",
+              "x": 81,
+              "y": 68
+            },
+            {
+              "en": "ask if a table is available",
+              "ar": "يسأل إن كانت هناك طاولة شاغرة",
+              "kind": "phrase",
+              "x": 34,
+              "y": 31
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Choosing a quiet table away from the kitchen",
+          "ar": "اختيار طاولة هادئة بعيدًا عن المطبخ",
+          "purposeEn": "State what kind of seating your group of four needs.",
+          "purposeAr": "وضّح أين تفضّلون الجلوس كمجموعة من أربعة أشخاص.",
+          "image": {
+            "id": "conv-life-l2-103-3",
+            "path": "assets/scenes/conversations/life-l2-103-3.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Choosing a quiet table away from the kitchen",
+            "ar": "اختيار طاولة هادئة بعيدًا عن المطبخ",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                497,
+                1186,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "seating plan",
+              "ar": "مخطّط الجلوس",
+              "kind": "object",
+              "x": 52,
+              "y": 58
+            },
+            {
+              "en": "kitchen symbol",
+              "ar": "رمز المطبخ",
+              "kind": "object",
+              "x": 41,
+              "y": 80
+            },
+            {
+              "en": "request a quiet table",
+              "ar": "يطلب طاولة في مكان هادئ",
+              "kind": "phrase",
+              "x": 56,
+              "y": 39
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Confirming a table for four",
+          "ar": "تأكيد حجز طاولة لأربعة",
+          "purposeEn": "Confirm the reservation and explain where the table is.",
+          "purposeAr": "أكّد الحجز ووضّح مكان الطاولة.",
+          "image": {
+            "id": "conv-life-l2-103-4",
+            "path": "assets/scenes/conversations/life-l2-103-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Confirming a table for four",
+            "ar": "تأكيد حجز طاولة لأربعة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                497,
+                1583,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "place setting",
+              "ar": "أدوات المائدة لكل شخص",
+              "kind": "object",
+              "x": 73,
+              "y": 75
+            },
+            {
+              "en": "dining table",
+              "ar": "طاولة طعام",
+              "kind": "object",
+              "x": 52,
+              "y": 82
+            },
+            {
+              "en": "book a table for four",
+              "ar": "يحجز طاولة لأربعة أشخاص",
+              "kind": "phrase",
+              "x": 47,
+              "y": 58
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-104",
+      "goalAr": "موعد القبض",
+      "goalEn": "Checking the first payday",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Seeing where to check staff information",
+          "ar": "معرفة أين يجد الموظف معلوماته",
+          "purposeEn": "Use the account setup conversation to ask about payday.",
+          "purposeAr": "استغلّ الحديث عن إعداد حساب الموظف للسؤال عن موعد صرف الراتب.",
+          "image": {
+            "id": "conv-life-l2-104-1",
+            "path": "assets/scenes/conversations/life-l2-104-1.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Seeing where to check staff information",
+            "ar": "معرفة أين يجد الموظف معلوماته",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                747,
+                394,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "staff account",
+              "ar": "حساب الموظف",
+              "kind": "object",
+              "x": 51,
+              "y": 67
+            },
+            {
+              "en": "bank icon",
+              "ar": "رمز المصرف",
+              "kind": "object",
+              "x": 64,
+              "y": 62
+            },
+            {
+              "en": "check your staff account",
+              "ar": "تحقّق من حساب الموظف الخاص بك",
+              "kind": "phrase",
+              "x": 65,
+              "y": 77
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Checking the usual payday",
+          "ar": "التحقّق من موعد صرف الراتب المعتاد",
+          "purposeEn": "Explain the usual payday and what can make it change.",
+          "purposeAr": "اشرح موعد الصرف المعتاد وما الذي قد يغيّره.",
+          "image": {
+            "id": "conv-life-l2-104-2",
+            "path": "assets/scenes/conversations/life-l2-104-2.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Checking the usual payday",
+            "ar": "التحقّق من موعد صرف الراتب المعتاد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                747,
+                789,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "staff calendar",
+              "ar": "تقويم الموظفين",
+              "kind": "object",
+              "x": 53,
+              "y": 70
+            },
+            {
+              "en": "calendar cell",
+              "ar": "خانة في التقويم",
+              "kind": "object",
+              "x": 65,
+              "y": 78
+            },
+            {
+              "en": "check when you get paid",
+              "ar": "يتحقّق من موعد صرف راتبه",
+              "kind": "phrase",
+              "x": 69,
+              "y": 84
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Moving payday to the previous working day",
+          "ar": "تقديم صرف الراتب إلى يوم العمل السابق",
+          "purposeEn": "Explain what happens when payday falls on a public holiday.",
+          "purposeAr": "اشرح ما يحدث عندما يوافق موعد الصرف عطلة رسمية.",
+          "image": {
+            "id": "conv-life-l2-104-3",
+            "path": "assets/scenes/conversations/life-l2-104-3.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Moving payday to the previous working day",
+            "ar": "تقديم صرف الراتب إلى يوم العمل السابق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                747,
+                1186,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "date marker",
+              "ar": "علامة التاريخ",
+              "kind": "object",
+              "x": 47,
+              "y": 76
+            },
+            {
+              "en": "calendar grid",
+              "ar": "شبكة التقويم",
+              "kind": "object",
+              "x": 66,
+              "y": 83
+            },
+            {
+              "en": "move it to the previous working day",
+              "ar": "ينقله إلى يوم العمل السابق",
+              "kind": "phrase",
+              "x": 48,
+              "y": 73
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Setting up a recurring payment",
+          "ar": "إعداد دفعة متكرّرة",
+          "purposeEn": "Check the revised date before arranging a recurring payment.",
+          "purposeAr": "تحقّق من الموعد المعدّل قبل إعداد دفعة متكرّرة.",
+          "image": {
+            "id": "conv-life-l2-104-4",
+            "path": "assets/scenes/conversations/life-l2-104-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Setting up a recurring payment",
+            "ar": "إعداد دفعة متكرّرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                747,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "recurring-payment symbol",
+              "ar": "رمز الدفع المتكرّر",
+              "kind": "object",
+              "x": 69,
+              "y": 65
+            },
+            {
+              "en": "toggle switch",
+              "ar": "مفتاح تبديل",
+              "kind": "object",
+              "x": 73,
+              "y": 81
+            },
+            {
+              "en": "set up a monthly payment",
+              "ar": "يضبط دفعة شهرية",
+              "kind": "phrase",
+              "x": 75,
+              "y": 83
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
