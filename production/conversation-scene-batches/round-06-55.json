@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "4a2b9e8f01607dd4da4059d1463a8faa83b2119fd8be5ccc08fecd974d8675a6"
+  },
+  "conversations": [
+    {
+      "id": "l2-177",
+      "goalAr": "تصحيح رقم في الفاتورة",
+      "goalEn": "Pointing out an error on a receipt",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Point out the error on the receipt",
+          "ar": "الإشارة إلى الخطأ في الإيصال",
+          "purposeEn": "Point out the error on the receipt.",
+          "purposeAr": "الإشارة إلى الخطأ في الإيصال.",
+          "image": {
+            "id": "conv-life-l2-177-1",
+            "path": "assets/scenes/conversations/life-l2-177-1.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Point out the error on the receipt",
+            "ar": "الإشارة إلى الخطأ في الإيصال",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                393,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "receipt",
+              "ar": "إيصال",
+              "kind": "object",
+              "x": 49,
+              "y": 77
+            },
+            {
+              "en": "table lamp",
+              "ar": "مصباح طاولة",
+              "kind": "object",
+              "x": 54,
+              "y": 51
+            },
+            {
+              "en": "point out a mistake",
+              "ar": "يشير إلى خطأ",
+              "kind": "phrase",
+              "x": 39,
+              "y": 62
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Check the items against the bill",
+          "ar": "مطابقة السلع مع الفاتورة",
+          "purposeEn": "Check the items against the bill.",
+          "purposeAr": "مطابقة السلع مع الفاتورة.",
+          "image": {
+            "id": "conv-life-l2-177-2",
+            "path": "assets/scenes/conversations/life-l2-177-2.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Check the items against the bill",
+            "ar": "مطابقة السلع مع الفاتورة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                3,
+                789,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "itemised bill",
+              "ar": "فاتورة مفصّلة",
+              "kind": "object",
+              "x": 77,
+              "y": 72
+            },
+            {
+              "en": "lamp base",
+              "ar": "قاعدة مصباح",
+              "kind": "object",
+              "x": 45,
+              "y": 67
+            },
+            {
+              "en": "check the items against the receipt",
+              "ar": "يطابق السلع مع الإيصال",
+              "kind": "phrase",
+              "x": 72,
+              "y": 70
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Remove the duplicate item",
+          "ar": "حذف السلعة المكرّرة",
+          "purposeEn": "Remove the duplicate item.",
+          "purposeAr": "حذف السلعة المكرّرة.",
+          "image": {
+            "id": "conv-life-l2-177-3",
+            "path": "assets/scenes/conversations/life-l2-177-3.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Remove the duplicate item",
+            "ar": "حذف السلعة المكرّرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                3,
+                1186,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "barcode scanner",
+              "ar": "قارئ رموز شريطية",
+              "kind": "object",
+              "x": 31,
+              "y": 73
+            },
+            {
+              "en": "delete icon",
+              "ar": "رمز الحذف",
+              "kind": "object",
+              "x": 76,
+              "y": 51
+            },
+            {
+              "en": "remove the duplicate item",
+              "ar": "يحذف السلعة المكرّرة",
+              "kind": "phrase",
+              "x": 73,
+              "y": 58
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Ask to see the corrected total",
+          "ar": "طلب الاطّلاع على الإجمالي المصحّح",
+          "purposeEn": "Ask to see the corrected total.",
+          "purposeAr": "طلب الاطّلاع على الإجمالي المصحّح.",
+          "image": {
+            "id": "conv-life-l2-177-4",
+            "path": "assets/scenes/conversations/life-l2-177-4.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Ask to see the corrected total",
+            "ar": "طلب الاطّلاع على الإجمالي المصحّح",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                3,
+                1583,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "corrected receipt",
+              "ar": "إيصال مصحّح",
+              "kind": "object",
+              "x": 52,
+              "y": 83
+            },
+            {
+              "en": "lampshade",
+              "ar": "غطاء مصباح",
+              "kind": "object",
+              "x": 67,
+              "y": 59
+            },
+            {
+              "en": "show me the corrected total",
+              "ar": "أرني المجموع المصحّح",
+              "kind": "phrase",
+              "x": 52,
+              "y": 81
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-178",
+      "goalAr": "التدرّب خارج الصف",
+      "goalEn": "Finding more chances to speak",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Ask how to hear everyday speech",
+          "ar": "السؤال عن فرص سماع الكلام اليومي",
+          "purposeEn": "Ask how to hear everyday speech.",
+          "purposeAr": "السؤال عن فرص سماع الكلام اليومي.",
+          "image": {
+            "id": "conv-life-l2-178-1",
+            "path": "assets/scenes/conversations/life-l2-178-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Ask how to hear everyday speech",
+            "ar": "السؤال عن فرص سماع الكلام اليومي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                250,
+                393,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "stack of books",
+              "ar": "رزمة كتب",
+              "kind": "object",
+              "x": 28,
+              "y": 91
+            },
+            {
+              "en": "open notebook",
+              "ar": "دفتر مفتوح",
+              "kind": "object",
+              "x": 64,
+              "y": 84
+            },
+            {
+              "en": "listen to natural speech",
+              "ar": "يستمع إلى كلام طبيعي",
+              "kind": "phrase",
+              "x": 35,
+              "y": 66
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Look up a regular conversation group",
+          "ar": "البحث عن مجموعة محادثة منتظمة",
+          "purposeEn": "Look up a regular conversation group.",
+          "purposeAr": "البحث عن مجموعة محادثة منتظمة.",
+          "image": {
+            "id": "conv-life-l2-178-2",
+            "path": "assets/scenes/conversations/life-l2-178-2.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Look up a regular conversation group",
+            "ar": "البحث عن مجموعة محادثة منتظمة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                250,
+                789,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "meeting schedule",
+              "ar": "جدول لقاءات",
+              "kind": "object",
+              "x": 47,
+              "y": 57
+            },
+            {
+              "en": "noticeboard",
+              "ar": "لوحة إعلانات",
+              "kind": "object",
+              "x": 40,
+              "y": 50
+            },
+            {
+              "en": "find a local conversation group",
+              "ar": "يجد مجموعة محادثة محلية",
+              "kind": "phrase",
+              "x": 53,
+              "y": 60
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Practise speaking in pairs",
+          "ar": "التدرّب على المحادثة في ثنائيات",
+          "purposeEn": "Practise speaking in pairs.",
+          "purposeAr": "التدرّب على المحادثة في ثنائيات.",
+          "image": {
+            "id": "conv-life-l2-178-3",
+            "path": "assets/scenes/conversations/life-l2-178-3.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Practise speaking in pairs",
+            "ar": "التدرّب على المحادثة في ثنائيات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                250,
+                1186,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "spiral notebook",
+              "ar": "دفتر حلزوني",
+              "kind": "object",
+              "x": 71,
+              "y": 88
+            },
+            {
+              "en": "conversation partner",
+              "ar": "شريك المحادثة",
+              "kind": "object",
+              "x": 61,
+              "y": 55
+            },
+            {
+              "en": "work in pairs",
+              "ar": "يعمل في ثنائيات",
+              "kind": "phrase",
+              "x": 37,
+              "y": 77
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Ask to join a trial session",
+          "ar": "طلب حضور جلسة تجريبية",
+          "purposeEn": "Ask to join a trial session.",
+          "purposeAr": "طلب حضور جلسة تجريبية.",
+          "image": {
+            "id": "conv-life-l2-178-4",
+            "path": "assets/scenes/conversations/life-l2-178-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Ask to join a trial session",
+            "ar": "طلب حضور جلسة تجريبية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                250,
+                1583,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "group facilitator",
+              "ar": "ميسّرة المجموعة",
+              "kind": "object",
+              "x": 84,
+              "y": 53
+            },
+            {
+              "en": "laptop",
+              "ar": "حاسوب محمول",
+              "kind": "object",
+              "x": 87,
+              "y": 77
+            },
+            {
+              "en": "join a session before signing up",
+              "ar": "يحضر جلسة قبل التسجيل",
+              "kind": "phrase",
+              "x": 62,
+              "y": 56
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-179",
+      "goalAr": "تقديم النفس بصيغة رسمية",
+      "goalEn": "Making a formal introduction",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Greet the interview panel",
+          "ar": "تحية لجنة المقابلة",
+          "purposeEn": "Greet the interview panel.",
+          "purposeAr": "تحية لجنة المقابلة.",
+          "image": {
+            "id": "conv-life-l2-179-1",
+            "path": "assets/scenes/conversations/life-l2-179-1.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Greet the interview panel",
+            "ar": "تحية لجنة المقابلة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                498,
+                393,
+                739
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "portfolio",
+              "ar": "ملف أعمال",
+              "kind": "object",
+              "x": 69,
+              "y": 62
+            },
+            {
+              "en": "interview panel member",
+              "ar": "عضو لجنة المقابلة",
+              "kind": "object",
+              "x": 20,
+              "y": 42
+            },
+            {
+              "en": "greet the interview panel",
+              "ar": "يحيّي لجنة المقابلة",
+              "kind": "phrase",
+              "x": 49,
+              "y": 71
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Give your name and role",
+          "ar": "ذكر الاسم والوظيفة المطلوبة",
+          "purposeEn": "Give your name and role.",
+          "purposeAr": "ذكر الاسم والوظيفة المطلوبة.",
+          "image": {
+            "id": "conv-life-l2-179-2",
+            "path": "assets/scenes/conversations/life-l2-179-2.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Give your name and role",
+            "ar": "ذكر الاسم والوظيفة المطلوبة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                498,
+                789,
+                739
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "document folder",
+              "ar": "ملف مستندات",
+              "kind": "object",
+              "x": 57,
+              "y": 81
+            },
+            {
+              "en": "applicant",
+              "ar": "متقدّمة للوظيفة",
+              "kind": "object",
+              "x": 43,
+              "y": 49
+            },
+            {
+              "en": "allow me to introduce myself",
+              "ar": "اسمحوا لي أن أعرّف بنفسي",
+              "kind": "phrase",
+              "x": 49,
+              "y": 55
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Describe your current work",
+          "ar": "وصف العمل الحالي",
+          "purposeEn": "Describe your current work.",
+          "purposeAr": "وصف العمل الحالي.",
+          "image": {
+            "id": "conv-life-l2-179-3",
+            "path": "assets/scenes/conversations/life-l2-179-3.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Describe your current work",
+            "ar": "وصف العمل الحالي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                498,
+                1186,
+                739
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "desk phone",
+              "ar": "هاتف مكتبي",
+              "kind": "object",
+              "x": 83,
+              "y": 68
+            },
+            {
+              "en": "booking sheet",
+              "ar": "ورقة حجز",
+              "kind": "object",
+              "x": 60,
+              "y": 82
+            },
+            {
+              "en": "help customers change their bookings",
+              "ar": "يساعد العملاء على تعديل حجوزاتهم",
+              "kind": "phrase",
+              "x": 56,
+              "y": 65
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Give an example of answering calls",
+          "ar": "ذكر مثال على الردّ على المكالمات",
+          "purposeEn": "Give an example of answering calls.",
+          "purposeAr": "ذكر مثال على الردّ على المكالمات.",
+          "image": {
+            "id": "conv-life-l2-179-4",
+            "path": "assets/scenes/conversations/life-l2-179-4.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Give an example of answering calls",
+            "ar": "ذكر مثال على الردّ على المكالمات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                498,
+                1583,
+                739
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "headset",
+              "ar": "سمّاعة بميكروفون",
+              "kind": "object",
+              "x": 40,
+              "y": 30
+            },
+            {
+              "en": "keyboard",
+              "ar": "لوحة مفاتيح",
+              "kind": "object",
+              "x": 79,
+              "y": 86
+            },
+            {
+              "en": "answer questions by phone",
+              "ar": "يجيب عن الأسئلة هاتفيًا",
+              "kind": "phrase",
+              "x": 43,
+              "y": 48
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-180",
+      "goalAr": "اختيار ملابس للمناسبة",
+      "goalEn": "Inviting someone to choose an outfit",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Choose an outfit you can wear again",
+          "ar": "اختيار ملابس يمكن ارتداؤها مجدّدًا",
+          "purposeEn": "Choose an outfit you can wear again.",
+          "purposeAr": "اختيار ملابس يمكن ارتداؤها مجدّدًا.",
+          "image": {
+            "id": "conv-life-l2-180-1",
+            "path": "assets/scenes/conversations/life-l2-180-1.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Choose an outfit you can wear again",
+            "ar": "اختيار ملابس يمكن ارتداؤها مجدّدًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                746,
+                393,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "long dress",
+              "ar": "فستان طويل",
+              "kind": "object",
+              "x": 27,
+              "y": 65
+            },
+            {
+              "en": "clothes hanger",
+              "ar": "علّاقة ملابس",
+              "kind": "object",
+              "x": 66,
+              "y": 25
+            },
+            {
+              "en": "choose something you can wear to work",
+              "ar": "يختار لباسًا يمكنه ارتداؤه للعمل",
+              "kind": "phrase",
+              "x": 55,
+              "y": 49
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Match the plain jacket with trousers",
+          "ar": "تنسيق السترة السادة مع السروال",
+          "purposeEn": "Match the plain jacket with trousers.",
+          "purposeAr": "تنسيق السترة السادة مع السروال.",
+          "image": {
+            "id": "conv-life-l2-180-2",
+            "path": "assets/scenes/conversations/life-l2-180-2.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Match the plain jacket with trousers",
+            "ar": "تنسيق السترة السادة مع السروال",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                746,
+                789,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "plain jacket",
+              "ar": "سترة سادة",
+              "kind": "object",
+              "x": 29,
+              "y": 63
+            },
+            {
+              "en": "pair of trousers",
+              "ar": "سروال",
+              "kind": "object",
+              "x": 68,
+              "y": 75
+            },
+            {
+              "en": "go with both pairs of trousers",
+              "ar": "يناسب السروالين",
+              "kind": "phrase",
+              "x": 53,
+              "y": 65
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Check whether the fabric is light",
+          "ar": "التحقّق من خفّة القماش",
+          "purposeEn": "Check whether the fabric is light.",
+          "purposeAr": "التحقّق من خفّة القماش.",
+          "image": {
+            "id": "conv-life-l2-180-3",
+            "path": "assets/scenes/conversations/life-l2-180-3.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Check whether the fabric is light",
+            "ar": "التحقّق من خفّة القماش",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                746,
+                1186,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "lightweight fabric",
+              "ar": "قماش خفيف",
+              "kind": "object",
+              "x": 73,
+              "y": 62
+            },
+            {
+              "en": "seam",
+              "ar": "درزة",
+              "kind": "object",
+              "x": 59,
+              "y": 52
+            },
+            {
+              "en": "feel how light the fabric is",
+              "ar": "يتلمّس مدى خفّة القماش",
+              "kind": "phrase",
+              "x": 56,
+              "y": 56
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Show how to add a warm layer",
+          "ar": "توضيح كيفيّة إضافة طبقة دافئة",
+          "purposeEn": "Show how to add a warm layer.",
+          "purposeAr": "توضيح كيفيّة إضافة طبقة دافئة.",
+          "image": {
+            "id": "conv-life-l2-180-4",
+            "path": "assets/scenes/conversations/life-l2-180-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Show how to add a warm layer",
+            "ar": "توضيح كيفيّة إضافة طبقة دافئة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                746,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "jacket lapel",
+              "ar": "ياقة سترة مطويّة",
+              "kind": "object",
+              "x": 44,
+              "y": 73
+            },
+            {
+              "en": "inner layer",
+              "ar": "طبقة داخلية",
+              "kind": "object",
+              "x": 42,
+              "y": 52
+            },
+            {
+              "en": "wear a warm layer underneath",
+              "ar": "يرتدي طبقة دافئة تحت السترة",
+              "kind": "phrase",
+              "x": 45,
+              "y": 68
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

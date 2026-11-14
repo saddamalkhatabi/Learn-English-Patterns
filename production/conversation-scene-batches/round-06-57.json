@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "dc6b606cfbe9fb89cbab080908d58b9cd40d3b279c07b2a6a566991a881084c7"
+  },
+  "conversations": [
+    {
+      "id": "l2-185",
+      "goalAr": "احتمال تأخر شخص عن اللقاء",
+      "goalEn": "Planning for a late arrival",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Start while someone may still be on the way",
+          "ar": "البدء مع احتمال أن يكون أحدهم في الطريق",
+          "purposeEn": "Start while someone may still be on the way.",
+          "purposeAr": "البدء مع احتمال أن يكون أحدهم في الطريق.",
+          "image": {
+            "id": "conv-life-l2-185-1",
+            "path": "assets/scenes/conversations/life-l2-185-1.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Start while someone may still be on the way",
+            "ar": "البدء مع احتمال أن يكون أحدهم في الطريق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                393,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "empty armchair",
+              "ar": "كرسي بذراعين شاغر",
+              "kind": "object",
+              "x": 72,
+              "y": 65
+            },
+            {
+              "en": "stack of books",
+              "ar": "رزمة كتب",
+              "kind": "object",
+              "x": 34,
+              "y": 87
+            },
+            {
+              "en": "start with a short recap",
+              "ar": "يبدأ بملخّص قصير",
+              "kind": "phrase",
+              "x": 51,
+              "y": 53
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Review the main points first",
+          "ar": "مراجعة النقاط الرئيسية أولًا",
+          "purposeEn": "Review the main points first.",
+          "purposeAr": "مراجعة النقاط الرئيسية أولًا.",
+          "image": {
+            "id": "conv-life-l2-185-2",
+            "path": "assets/scenes/conversations/life-l2-185-2.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Review the main points first",
+            "ar": "مراجعة النقاط الرئيسية أولًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                3,
+                789,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "open book",
+              "ar": "كتاب مفتوح",
+              "kind": "object",
+              "x": 36,
+              "y": 73
+            },
+            {
+              "en": "recap sheet",
+              "ar": "ورقة ملخّص",
+              "kind": "object",
+              "x": 76,
+              "y": 73
+            },
+            {
+              "en": "agree on the key points",
+              "ar": "يتّفق على النقاط الرئيسية",
+              "kind": "phrase",
+              "x": 68,
+              "y": 63
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Send the recap to the late member",
+          "ar": "إرسال الملخّص إلى العضو المتأخّر",
+          "purposeEn": "Send the recap to the late member.",
+          "purposeAr": "إرسال الملخّص إلى العضو المتأخّر.",
+          "image": {
+            "id": "conv-life-l2-185-3",
+            "path": "assets/scenes/conversations/life-l2-185-3.webp",
+            "width": 392,
+            "height": 241,
+            "en": "Send the recap to the late member",
+            "ar": "إرسال الملخّص إلى العضو المتأخّر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                3,
+                1187,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "spiral notebook",
+              "ar": "دفتر حلزوني",
+              "kind": "object",
+              "x": 80,
+              "y": 80
+            },
+            {
+              "en": "keyboard",
+              "ar": "لوحة مفاتيح",
+              "kind": "object",
+              "x": 43,
+              "y": 76
+            },
+            {
+              "en": "send the three key points",
+              "ar": "يرسل النقاط الرئيسية الثلاث",
+              "kind": "phrase",
+              "x": 43,
+              "y": 69
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Help the member join the current discussion",
+          "ar": "مساعدة العضو على الانضمام إلى النقاش الجاري",
+          "purposeEn": "Help the member join the current discussion.",
+          "purposeAr": "مساعدة العضو على الانضمام إلى النقاش الجاري.",
+          "image": {
+            "id": "conv-life-l2-185-4",
+            "path": "assets/scenes/conversations/life-l2-185-4.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Help the member join the current discussion",
+            "ar": "مساعدة العضو على الانضمام إلى النقاش الجاري",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1194,
+                3,
+                1583,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "discussion page",
+              "ar": "صفحة النقاش",
+              "kind": "object",
+              "x": 63,
+              "y": 77
+            },
+            {
+              "en": "group member",
+              "ar": "عضوة في المجموعة",
+              "kind": "object",
+              "x": 55,
+              "y": 48
+            },
+            {
+              "en": "go straight to the question",
+              "ar": "ينتقل مباشرة إلى السؤال",
+              "kind": "phrase",
+              "x": 55,
+              "y": 65
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-186",
+      "goalAr": "متبرّع يفضّل عدم ذكر اسمه",
+      "goalEn": "Respecting a donor's privacy",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Decide what to show on the board",
+          "ar": "تحديد ما يُعرض على اللوحة",
+          "purposeEn": "Decide what to show on the board.",
+          "purposeAr": "تحديد ما يُعرض على اللوحة.",
+          "image": {
+            "id": "conv-life-l2-186-1",
+            "path": "assets/scenes/conversations/life-l2-186-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Decide what to show on the board",
+            "ar": "تحديد ما يُعرض على اللوحة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                251,
+                393,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "digital camera",
+              "ar": "كاميرا رقمية",
+              "kind": "object",
+              "x": 47,
+              "y": 66
+            },
+            {
+              "en": "photo preview",
+              "ar": "معاينة صورة",
+              "kind": "object",
+              "x": 46,
+              "y": 71
+            },
+            {
+              "en": "choose a photo for the board",
+              "ar": "يختار صورة للوحة",
+              "kind": "phrase",
+              "x": 48,
+              "y": 69
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Respect the donor’s wish for privacy",
+          "ar": "احترام رغبة المتبرّع في الخصوصية",
+          "purposeEn": "Respect the donor’s wish for privacy.",
+          "purposeAr": "احترام رغبة المتبرّع في الخصوصية.",
+          "image": {
+            "id": "conv-life-l2-186-2",
+            "path": "assets/scenes/conversations/life-l2-186-2.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Respect the donor’s wish for privacy",
+            "ar": "احترام رغبة المتبرّع في الخصوصية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                251,
+                789,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "unmarked envelope",
+              "ar": "ظرف بلا اسم",
+              "kind": "object",
+              "x": 48,
+              "y": 51
+            },
+            {
+              "en": "donation box",
+              "ar": "صندوق تبرّعات",
+              "kind": "object",
+              "x": 55,
+              "y": 78
+            },
+            {
+              "en": "remain anonymous",
+              "ar": "يظلّ مجهول الهوية",
+              "kind": "phrase",
+              "x": 53,
+              "y": 64
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Thank the donor without naming them",
+          "ar": "شكر المتبرّع دون ذكر اسمه",
+          "purposeEn": "Thank the donor without naming them.",
+          "purposeAr": "شكر المتبرّع دون ذكر اسمه.",
+          "image": {
+            "id": "conv-life-l2-186-3",
+            "path": "assets/scenes/conversations/life-l2-186-3.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Thank the donor without naming them",
+            "ar": "شكر المتبرّع دون ذكر اسمه",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                251,
+                1187,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "book pictogram",
+              "ar": "رمز كتاب",
+              "kind": "object",
+              "x": 49,
+              "y": 43
+            },
+            {
+              "en": "display easel",
+              "ar": "حامل لوحة عرض",
+              "kind": "object",
+              "x": 47,
+              "y": 77
+            },
+            {
+              "en": "leave the donor’s name off",
+              "ar": "لا يذكر اسم المتبرّع",
+              "kind": "phrase",
+              "x": 54,
+              "y": 63
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Leave personal details out of the photo",
+          "ar": "استبعاد التفاصيل الشخصية من الصورة",
+          "purposeEn": "Leave personal details out of the photo.",
+          "purposeAr": "استبعاد التفاصيل الشخصية من الصورة.",
+          "image": {
+            "id": "conv-life-l2-186-4",
+            "path": "assets/scenes/conversations/life-l2-186-4.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Leave personal details out of the photo",
+            "ar": "استبعاد التفاصيل الشخصية من الصورة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1194,
+                251,
+                1583,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "crop frame",
+              "ar": "إطار القصّ",
+              "kind": "object",
+              "x": 61,
+              "y": 45
+            },
+            {
+              "en": "book spines",
+              "ar": "كعوب الكتب",
+              "kind": "object",
+              "x": 65,
+              "y": 48
+            },
+            {
+              "en": "crop the photo to show only the books",
+              "ar": "يقصّ الصورة لإظهار الكتب فقط",
+              "kind": "phrase",
+              "x": 63,
+              "y": 81
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-187",
+      "goalAr": "خطوة واحدة لتشغيل الجهاز",
+      "goalEn": "Explaining a simple control",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Find the printer button",
+          "ar": "العثور على زرّ الطباعة",
+          "purposeEn": "Find the printer button.",
+          "purposeAr": "العثور على زرّ الطباعة.",
+          "image": {
+            "id": "conv-life-l2-187-1",
+            "path": "assets/scenes/conversations/life-l2-187-1.webp",
+            "width": 390,
+            "height": 239,
+            "en": "Find the printer button",
+            "ar": "العثور على زرّ الطباعة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                499,
+                393,
+                738
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "green print button",
+              "ar": "زرّ الطباعة الأخضر",
+              "kind": "object",
+              "x": 62,
+              "y": 46
+            },
+            {
+              "en": "printer tray",
+              "ar": "درج الطابعة",
+              "kind": "object",
+              "x": 79,
+              "y": 80
+            },
+            {
+              "en": "press the green button",
+              "ar": "يضغط الزرّ الأخضر",
+              "kind": "phrase",
+              "x": 53,
+              "y": 50
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Preview a single label",
+          "ar": "معاينة ملصق واحد",
+          "purposeEn": "Preview a single label.",
+          "purposeAr": "معاينة ملصق واحد.",
+          "image": {
+            "id": "conv-life-l2-187-2",
+            "path": "assets/scenes/conversations/life-l2-187-2.webp",
+            "width": 389,
+            "height": 239,
+            "en": "Preview a single label",
+            "ar": "معاينة ملصق واحد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                499,
+                789,
+                738
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "label preview",
+              "ar": "معاينة الملصق",
+              "kind": "object",
+              "x": 46,
+              "y": 45
+            },
+            {
+              "en": "laptop",
+              "ar": "حاسوب محمول",
+              "kind": "object",
+              "x": 48,
+              "y": 82
+            },
+            {
+              "en": "check the preview before printing",
+              "ar": "يتحقّق من المعاينة قبل الطباعة",
+              "kind": "phrase",
+              "x": 48,
+              "y": 60
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Adjust the size so the line fits",
+          "ar": "تعديل الحجم حتى يتّسع السطر",
+          "purposeEn": "Adjust the size so the line fits.",
+          "purposeAr": "تعديل الحجم حتى يتّسع السطر.",
+          "image": {
+            "id": "conv-life-l2-187-3",
+            "path": "assets/scenes/conversations/life-l2-187-3.webp",
+            "width": 392,
+            "height": 239,
+            "en": "Adjust the size so the line fits",
+            "ar": "تعديل الحجم حتى يتّسع السطر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                499,
+                1187,
+                738
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "size slider",
+              "ar": "شريط ضبط الحجم",
+              "kind": "object",
+              "x": 46,
+              "y": 62
+            },
+            {
+              "en": "label border",
+              "ar": "حدود الملصق",
+              "kind": "object",
+              "x": 40,
+              "y": 36
+            },
+            {
+              "en": "make the text fit inside the label",
+              "ar": "يضبط النصّ ليتّسع داخل الملصق",
+              "kind": "phrase",
+              "x": 53,
+              "y": 64
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Print the adjusted label",
+          "ar": "طباعة الملصق بعد التعديل",
+          "purposeEn": "Print the adjusted label.",
+          "purposeAr": "طباعة الملصق بعد التعديل.",
+          "image": {
+            "id": "conv-life-l2-187-4",
+            "path": "assets/scenes/conversations/life-l2-187-4.webp",
+            "width": 389,
+            "height": 239,
+            "en": "Print the adjusted label",
+            "ar": "طباعة الملصق بعد التعديل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1194,
+                499,
+                1583,
+                738
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "printed label",
+              "ar": "ملصق مطبوع",
+              "kind": "object",
+              "x": 62,
+              "y": 71
+            },
+            {
+              "en": "output tray",
+              "ar": "درج الإخراج",
+              "kind": "object",
+              "x": 86,
+              "y": 61
+            },
+            {
+              "en": "print a single test label",
+              "ar": "يطبع ملصق اختبار واحدًا",
+              "kind": "phrase",
+              "x": 60,
+              "y": 76
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-188",
+      "goalAr": "اختيار مكان للغداء بصيغة منقولة",
+      "goalEn": "Reporting a lunch suggestion",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Choose a place for lunch",
+          "ar": "اختيار مكان للغداء",
+          "purposeEn": "Choose a place for lunch.",
+          "purposeAr": "اختيار مكان للغداء.",
+          "image": {
+            "id": "conv-life-l2-188-1",
+            "path": "assets/scenes/conversations/life-l2-188-1.webp",
+            "width": 390,
+            "height": 245,
+            "en": "Choose a place for lunch",
+            "ar": "اختيار مكان للغداء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                744,
+                393,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "park map",
+              "ar": "خريطة الحديقة",
+              "kind": "object",
+              "x": 45,
+              "y": 68
+            },
+            {
+              "en": "café symbol",
+              "ar": "رمز مقهى",
+              "kind": "object",
+              "x": 70,
+              "y": 56
+            },
+            {
+              "en": "ask where they want to go for lunch",
+              "ar": "يسأل أين يريدان تناول الغداء",
+              "kind": "phrase",
+              "x": 41,
+              "y": 74
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Look for an outdoor table near the park",
+          "ar": "البحث عن طاولة خارجية قرب الحديقة",
+          "purposeEn": "Look for an outdoor table near the park.",
+          "purposeAr": "البحث عن طاولة خارجية قرب الحديقة.",
+          "image": {
+            "id": "conv-life-l2-188-2",
+            "path": "assets/scenes/conversations/life-l2-188-2.webp",
+            "width": 389,
+            "height": 245,
+            "en": "Look for an outdoor table near the park",
+            "ar": "البحث عن طاولة خارجية قرب الحديقة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                744,
+                789,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "outdoor table",
+              "ar": "طاولة خارجية",
+              "kind": "object",
+              "x": 68,
+              "y": 73
+            },
+            {
+              "en": "patio umbrella",
+              "ar": "مظلّة ساحة",
+              "kind": "object",
+              "x": 82,
+              "y": 24
+            },
+            {
+              "en": "eat outside by the park",
+              "ar": "يتناول الطعام في الهواء الطلق قرب الحديقة",
+              "kind": "phrase",
+              "x": 50,
+              "y": 58
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Call to book a table for six",
+          "ar": "الاتصال لحجز طاولة لستة أشخاص",
+          "purposeEn": "Call to book a table for six.",
+          "purposeAr": "الاتصال لحجز طاولة لستة أشخاص.",
+          "image": {
+            "id": "conv-life-l2-188-3",
+            "path": "assets/scenes/conversations/life-l2-188-3.webp",
+            "width": 392,
+            "height": 245,
+            "en": "Call to book a table for six",
+            "ar": "الاتصال لحجز طاولة لستة أشخاص",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                744,
+                1187,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "mobile phone",
+              "ar": "هاتف محمول",
+              "kind": "object",
+              "x": 22,
+              "y": 30
+            },
+            {
+              "en": "raised fingers",
+              "ar": "أصابع مرفوعة",
+              "kind": "object",
+              "x": 58,
+              "y": 58
+            },
+            {
+              "en": "book a table for six",
+              "ar": "يحجز طاولة لستة أشخاص",
+              "kind": "phrase",
+              "x": 29,
+              "y": 47
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Ask for a table indoors if it rains",
+          "ar": "طلب طاولة في الداخل إن هطل المطر",
+          "purposeEn": "Ask for a table indoors if it rains.",
+          "purposeAr": "طلب طاولة في الداخل إن هطل المطر.",
+          "image": {
+            "id": "conv-life-l2-188-4",
+            "path": "assets/scenes/conversations/life-l2-188-4.webp",
+            "width": 389,
+            "height": 245,
+            "en": "Ask for a table indoors if it rains",
+            "ar": "طلب طاولة في الداخل إن هطل المطر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1194,
+                744,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "indoor table",
+              "ar": "طاولة داخلية",
+              "kind": "object",
+              "x": 47,
+              "y": 78
+            },
+            {
+              "en": "rain on the window",
+              "ar": "مطر على النافذة",
+              "kind": "object",
+              "x": 62,
+              "y": 28
+            },
+            {
+              "en": "ask for a table inside if it rains",
+              "ar": "يطلب طاولة في الداخل إن هطل المطر",
+              "kind": "phrase",
+              "x": 80,
+              "y": 52
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

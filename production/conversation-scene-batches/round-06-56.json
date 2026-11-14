@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "8d986cb6780d51a1d61c5b94d4410e9856aebb0f004f3dd5ed4a66c51cdad7ad"
+  },
+  "conversations": [
+    {
+      "id": "l2-181",
+      "goalAr": "أين قضت العطلة؟",
+      "goalEn": "Reporting a question about the weekend",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Find out where the market was",
+          "ar": "معرفة مكان السوق",
+          "purposeEn": "Find out where the market was.",
+          "purposeAr": "معرفة مكان السوق.",
+          "image": {
+            "id": "conv-life-l2-181-1",
+            "path": "assets/scenes/conversations/life-l2-181-1.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Find out where the market was",
+            "ar": "معرفة مكان السوق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                393,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "market photograph",
+              "ar": "صورة السوق",
+              "kind": "object",
+              "x": 43,
+              "y": 83
+            },
+            {
+              "en": "town map",
+              "ar": "خريطة البلدة",
+              "kind": "object",
+              "x": 81,
+              "y": 83
+            },
+            {
+              "en": "ask where she spent the weekend",
+              "ar": "يسأل أين قضت عطلة نهاية الأسبوع",
+              "kind": "phrase",
+              "x": 66,
+              "y": 62
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Ask which stalls are open",
+          "ar": "السؤال عن البسطات المفتوحة",
+          "purposeEn": "Ask which stalls are open.",
+          "purposeAr": "السؤال عن البسطات المفتوحة.",
+          "image": {
+            "id": "conv-life-l2-181-2",
+            "path": "assets/scenes/conversations/life-l2-181-2.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Ask which stalls are open",
+            "ar": "السؤال عن البسطات المفتوحة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                3,
+                789,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "food stall",
+              "ar": "بسطة طعام",
+              "kind": "object",
+              "x": 45,
+              "y": 85
+            },
+            {
+              "en": "market umbrella",
+              "ar": "مظلّة بسطة",
+              "kind": "object",
+              "x": 74,
+              "y": 79
+            },
+            {
+              "en": "ask whether the stalls are open",
+              "ar": "يسأل إن كانت البسطات مفتوحة",
+              "kind": "phrase",
+              "x": 39,
+              "y": 75
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Ask about opening hours",
+          "ar": "السؤال عن ساعات العمل",
+          "purposeEn": "Ask about opening hours.",
+          "purposeAr": "السؤال عن ساعات العمل.",
+          "image": {
+            "id": "conv-life-l2-181-3",
+            "path": "assets/scenes/conversations/life-l2-181-3.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Ask about opening hours",
+            "ar": "السؤال عن ساعات العمل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                3,
+                1186,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "market clock",
+              "ar": "ساعة السوق",
+              "kind": "object",
+              "x": 76,
+              "y": 26
+            },
+            {
+              "en": "market entrance",
+              "ar": "مدخل السوق",
+              "kind": "object",
+              "x": 20,
+              "y": 67
+            },
+            {
+              "en": "check what time the market opens",
+              "ar": "يتحقّق من موعد فتح السوق",
+              "kind": "phrase",
+              "x": 68,
+              "y": 52
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Plan to arrive by bus before it gets busy",
+          "ar": "التخطيط للوصول بالحافلة قبل الازدحام",
+          "purposeEn": "Plan to arrive by bus before it gets busy.",
+          "purposeAr": "التخطيط للوصول بالحافلة قبل الازدحام.",
+          "image": {
+            "id": "conv-life-l2-181-4",
+            "path": "assets/scenes/conversations/life-l2-181-4.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Plan to arrive by bus before it gets busy",
+            "ar": "التخطيط للوصول بالحافلة قبل الازدحام",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                3,
+                1583,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bus shelter",
+              "ar": "مظلّة موقف الحافلة",
+              "kind": "object",
+              "x": 78,
+              "y": 43
+            },
+            {
+              "en": "bus stop sign",
+              "ar": "لافتة موقف الحافلة",
+              "kind": "object",
+              "x": 77,
+              "y": 22
+            },
+            {
+              "en": "go before it gets crowded",
+              "ar": "يذهب قبل الازدحام",
+              "kind": "phrase",
+              "x": 55,
+              "y": 60
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-182",
+      "goalAr": "طلب المساعدة عند الوصول",
+      "goalEn": "Explaining why someone came",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Ask for help in person",
+          "ar": "طلب المساعدة حضوريًا",
+          "purposeEn": "Ask for help in person.",
+          "purposeAr": "طلب المساعدة حضوريًا.",
+          "image": {
+            "id": "conv-life-l2-182-1",
+            "path": "assets/scenes/conversations/life-l2-182-1.webp",
+            "width": 390,
+            "height": 229,
+            "en": "Ask for help in person",
+            "ar": "طلب المساعدة حضوريًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                251,
+                393,
+                480
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "workshop volunteer",
+              "ar": "متطوّعة في الورشة",
+              "kind": "object",
+              "x": 72,
+              "y": 62
+            },
+            {
+              "en": "service counter",
+              "ar": "منضدة الخدمة",
+              "kind": "object",
+              "x": 69,
+              "y": 91
+            },
+            {
+              "en": "come in to ask for help",
+              "ar": "يحضر لطلب المساعدة",
+              "kind": "phrase",
+              "x": 53,
+              "y": 75
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Distinguish the booking form from the price list",
+          "ar": "تمييز استمارة الحجز عن قائمة الأسعار",
+          "purposeEn": "Distinguish the booking form from the price list.",
+          "purposeAr": "تمييز استمارة الحجز عن قائمة الأسعار.",
+          "image": {
+            "id": "conv-life-l2-182-2",
+            "path": "assets/scenes/conversations/life-l2-182-2.webp",
+            "width": 389,
+            "height": 229,
+            "en": "Distinguish the booking form from the price list",
+            "ar": "تمييز استمارة الحجز عن قائمة الأسعار",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                251,
+                789,
+                480
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "price list",
+              "ar": "قائمة الأسعار",
+              "kind": "object",
+              "x": 37,
+              "y": 72
+            },
+            {
+              "en": "booking form",
+              "ar": "استمارة حجز",
+              "kind": "object",
+              "x": 72,
+              "y": 74
+            },
+            {
+              "en": "ask for a copy of the booking form",
+              "ar": "يطلب نسخة من استمارة الحجز",
+              "kind": "phrase",
+              "x": 53,
+              "y": 78
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Check how many forms are left",
+          "ar": "التحقّق من عدد الاستمارات المتبقيّة",
+          "purposeEn": "Check how many forms are left.",
+          "purposeAr": "التحقّق من عدد الاستمارات المتبقيّة.",
+          "image": {
+            "id": "conv-life-l2-182-3",
+            "path": "assets/scenes/conversations/life-l2-182-3.webp",
+            "width": 390,
+            "height": 229,
+            "en": "Check how many forms are left",
+            "ar": "التحقّق من عدد الاستمارات المتبقيّة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                251,
+                1186,
+                480
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "document tray",
+              "ar": "صينية مستندات",
+              "kind": "object",
+              "x": 45,
+              "y": 67
+            },
+            {
+              "en": "last copy",
+              "ar": "النسخة الأخيرة",
+              "kind": "object",
+              "x": 47,
+              "y": 55
+            },
+            {
+              "en": "check if there are any forms left",
+              "ar": "يتحقّق ممّا إذا بقيت استمارات",
+              "kind": "phrase",
+              "x": 61,
+              "y": 61
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Make a copy and prepare more for tomorrow",
+          "ar": "نسخ الاستمارة وتجهيز مزيد للغد",
+          "purposeEn": "Make a copy and prepare more for tomorrow.",
+          "purposeAr": "نسخ الاستمارة وتجهيز مزيد للغد.",
+          "image": {
+            "id": "conv-life-l2-182-4",
+            "path": "assets/scenes/conversations/life-l2-182-4.webp",
+            "width": 390,
+            "height": 229,
+            "en": "Make a copy and prepare more for tomorrow",
+            "ar": "نسخ الاستمارة وتجهيز مزيد للغد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                251,
+                1583,
+                480
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "photocopier",
+              "ar": "آلة تصوير مستندات",
+              "kind": "object",
+              "x": 80,
+              "y": 69
+            },
+            {
+              "en": "copy paper",
+              "ar": "ورق نسخ",
+              "kind": "object",
+              "x": 62,
+              "y": 61
+            },
+            {
+              "en": "make a copy of the form",
+              "ar": "ينسخ الاستمارة",
+              "kind": "phrase",
+              "x": 62,
+              "y": 63
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-183",
+      "goalAr": "الطريق في ساعة الذروة",
+      "goalEn": "Planning around morning traffic",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Consider traffic before driving",
+          "ar": "أخذ الازدحام في الحسبان قبل القيادة",
+          "purposeEn": "Consider traffic before driving.",
+          "purposeAr": "أخذ الازدحام في الحسبان قبل القيادة.",
+          "image": {
+            "id": "conv-life-l2-183-1",
+            "path": "assets/scenes/conversations/life-l2-183-1.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Consider traffic before driving",
+            "ar": "أخذ الازدحام في الحسبان قبل القيادة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                486,
+                393,
+                727
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "traffic jam",
+              "ar": "ازدحام مروري",
+              "kind": "object",
+              "x": 73,
+              "y": 60
+            },
+            {
+              "en": "roadside railing",
+              "ar": "حاجز بجانب الطريق",
+              "kind": "object",
+              "x": 67,
+              "y": 79
+            },
+            {
+              "en": "avoid the morning traffic",
+              "ar": "يتجنّب ازدحام الصباح",
+              "kind": "phrase",
+              "x": 48,
+              "y": 53
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Choose the train instead",
+          "ar": "اختيار القطار",
+          "purposeEn": "Choose the train instead.",
+          "purposeAr": "اختيار القطار.",
+          "image": {
+            "id": "conv-life-l2-183-2",
+            "path": "assets/scenes/conversations/life-l2-183-2.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Choose the train instead",
+            "ar": "اختيار القطار",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                486,
+                789,
+                727
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "train ticket",
+              "ar": "تذكرة قطار",
+              "kind": "object",
+              "x": 61,
+              "y": 83
+            },
+            {
+              "en": "ticket counter",
+              "ar": "شبّاك التذاكر",
+              "kind": "object",
+              "x": 80,
+              "y": 57
+            },
+            {
+              "en": "take the train instead",
+              "ar": "يستقلّ القطار بدل السيارة",
+              "kind": "phrase",
+              "x": 57,
+              "y": 79
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Find the right exit",
+          "ar": "العثور على المخرج المناسب",
+          "purposeEn": "Find the right exit.",
+          "purposeAr": "العثور على المخرج المناسب.",
+          "image": {
+            "id": "conv-life-l2-183-3",
+            "path": "assets/scenes/conversations/life-l2-183-3.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Find the right exit",
+            "ar": "العثور على المخرج المناسب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                486,
+                1186,
+                727
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "exit sign",
+              "ar": "لافتة مخرج",
+              "kind": "object",
+              "x": 73,
+              "y": 15
+            },
+            {
+              "en": "direction arrow",
+              "ar": "سهم إرشادي",
+              "kind": "object",
+              "x": 85,
+              "y": 14
+            },
+            {
+              "en": "use the west exit",
+              "ar": "يستخدم المخرج الغربي",
+              "kind": "phrase",
+              "x": 59,
+              "y": 47
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Choose the best carriage for the exit",
+          "ar": "اختيار عربة القطار الأنسب للمخرج",
+          "purposeEn": "Choose the best carriage for the exit.",
+          "purposeAr": "اختيار عربة القطار الأنسب للمخرج.",
+          "image": {
+            "id": "conv-life-l2-183-4",
+            "path": "assets/scenes/conversations/life-l2-183-4.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Choose the best carriage for the exit",
+            "ar": "اختيار عربة القطار الأنسب للمخرج",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                486,
+                1583,
+                727
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "highlighted carriage",
+              "ar": "عربة قطار مميّزة باللون",
+              "kind": "object",
+              "x": 77,
+              "y": 55
+            },
+            {
+              "en": "train diagram",
+              "ar": "مخطّط قطار",
+              "kind": "object",
+              "x": 72,
+              "y": 54
+            },
+            {
+              "en": "find the carriage closest to the exit",
+              "ar": "يحدّد أقرب عربة إلى المخرج",
+              "kind": "phrase",
+              "x": 69,
+              "y": 63
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-184",
+      "goalAr": "بداية صداقة أثناء السفر",
+      "goalEn": "Telling how you became friends",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Remember how the friendship started",
+          "ar": "تذكّر كيف بدأت الصداقة",
+          "purposeEn": "Remember how the friendship started.",
+          "purposeAr": "تذكّر كيف بدأت الصداقة.",
+          "image": {
+            "id": "conv-life-l2-184-1",
+            "path": "assets/scenes/conversations/life-l2-184-1.webp",
+            "width": 390,
+            "height": 255,
+            "en": "Remember how the friendship started",
+            "ar": "تذكّر كيف بدأت الصداقة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                734,
+                393,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "framed photograph",
+              "ar": "صورة مؤطّرة",
+              "kind": "object",
+              "x": 70,
+              "y": 68
+            },
+            {
+              "en": "laptop in the photo",
+              "ar": "حاسوب محمول في الصورة",
+              "kind": "object",
+              "x": 66,
+              "y": 76
+            },
+            {
+              "en": "become friends while working together",
+              "ar": "يصبحان صديقين أثناء العمل معًا",
+              "kind": "phrase",
+              "x": 59,
+              "y": 59
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Keep in touch from different places",
+          "ar": "البقاء على تواصل من مكانين مختلفين",
+          "purposeEn": "Keep in touch from different places.",
+          "purposeAr": "البقاء على تواصل من مكانين مختلفين.",
+          "image": {
+            "id": "conv-life-l2-184-2",
+            "path": "assets/scenes/conversations/life-l2-184-2.webp",
+            "width": 389,
+            "height": 255,
+            "en": "Keep in touch from different places",
+            "ar": "البقاء على تواصل من مكانين مختلفين",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                734,
+                789,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "video call",
+              "ar": "مكالمة مرئية",
+              "kind": "object",
+              "x": 69,
+              "y": 60
+            },
+            {
+              "en": "laptop keyboard",
+              "ar": "لوحة مفاتيح الحاسوب",
+              "kind": "object",
+              "x": 65,
+              "y": 85
+            },
+            {
+              "en": "keep in touch by video call",
+              "ar": "يبقى على تواصل بالمكالمات المرئية",
+              "kind": "phrase",
+              "x": 46,
+              "y": 53
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Agree on a regular day to call",
+          "ar": "الاتّفاق على يوم ثابت للاتصال",
+          "purposeEn": "Agree on a regular day to call.",
+          "purposeAr": "الاتّفاق على يوم ثابت للاتصال.",
+          "image": {
+            "id": "conv-life-l2-184-3",
+            "path": "assets/scenes/conversations/life-l2-184-3.webp",
+            "width": 390,
+            "height": 255,
+            "en": "Agree on a regular day to call",
+            "ar": "الاتّفاق على يوم ثابت للاتصال",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                734,
+                1186,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "phone reminder",
+              "ar": "تذكير بمكالمة",
+              "kind": "object",
+              "x": 61,
+              "y": 60
+            },
+            {
+              "en": "red pen",
+              "ar": "قلم أحمر",
+              "kind": "object",
+              "x": 66,
+              "y": 63
+            },
+            {
+              "en": "put the call on the calendar",
+              "ar": "يضيف المكالمة إلى التقويم",
+              "kind": "phrase",
+              "x": 60,
+              "y": 69
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Meet for a walk when you are in town",
+          "ar": "اللقاء للمشي عند وجودكما في المدينة",
+          "purposeEn": "Meet for a walk when you are in town.",
+          "purposeAr": "اللقاء للمشي عند وجودكما في المدينة.",
+          "image": {
+            "id": "conv-life-l2-184-4",
+            "path": "assets/scenes/conversations/life-l2-184-4.webp",
+            "width": 390,
+            "height": 255,
+            "en": "Meet for a walk when you are in town",
+            "ar": "اللقاء للمشي عند وجودكما في المدينة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                734,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "park path",
+              "ar": "ممشى الحديقة",
+              "kind": "object",
+              "x": 36,
+              "y": 88
+            },
+            {
+              "en": "park bench",
+              "ar": "مقعد حديقة",
+              "kind": "object",
+              "x": 88,
+              "y": 68
+            },
+            {
+              "en": "go for a walk together",
+              "ar": "يخرجان للمشي معًا",
+              "kind": "phrase",
+              "x": 47,
+              "y": 67
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
