@@ -1,0 +1,432 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1448,
+    "height": 1086,
+    "sha256": "b20823f6042bc3d81ad2c4717ac331156a1b3a0b7728a57d4cc26edcfd93b2a0"
+  },
+  "conversations": [
+    {
+      "id": "l2-154",
+      "goalAr": "زميل في المدرسة نفسها",
+      "goalEn": "Finding a connection at school",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Ask whether your friend knows anyone in the reading club",
+          "ar": "اسأل إن كان صديقك يعرف أحدًا في نادي القراءة",
+          "purposeEn": "Ask whether your friend knows anyone in the reading club.",
+          "purposeAr": "اسأل إن كان صديقك يعرف أحدًا في نادي القراءة.",
+          "image": {
+            "id": "conv-life-l2-154-1",
+            "path": "assets/scenes/conversations/life-l2-154-1.webp",
+            "width": 355,
+            "height": 266,
+            "en": "Ask whether your friend knows anyone in the reading club",
+            "ar": "اسأل إن كان صديقك يعرف أحدًا في نادي القراءة",
+            "sourceCrop": {
+              "canvas": [
+                1448,
+                1086
+              ],
+              "box": [
+                3,
+                3,
+                358,
+                269
+              ]
+            }
+          },
+          "words": [
+            {
+              "kind": "object",
+              "x": 51,
+              "y": 82,
+              "en": "open book",
+              "ar": "كتاب مفتوح"
+            },
+            {
+              "kind": "object",
+              "x": 22,
+              "y": 40,
+              "en": "bookshelf",
+              "ar": "رفّ كتب"
+            },
+            {
+              "kind": "phrase",
+              "x": 42,
+              "y": 68,
+              "en": "ask who goes to the reading club",
+              "ar": "يسأل من يحضر نادي القراءة"
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Find out which room the club uses",
+          "ar": "اعرف أيّ غرفة يستخدمها النادي",
+          "purposeEn": "Find out which room the club uses.",
+          "purposeAr": "اعرف أيّ غرفة يستخدمها النادي.",
+          "image": {
+            "id": "conv-life-l2-154-2",
+            "path": "assets/scenes/conversations/life-l2-154-2.webp",
+            "width": 358,
+            "height": 266,
+            "en": "Find out which room the club uses",
+            "ar": "اعرف أيّ غرفة يستخدمها النادي",
+            "sourceCrop": {
+              "canvas": [
+                1448,
+                1086
+              ],
+              "box": [
+                364,
+                3,
+                722,
+                269
+              ]
+            }
+          },
+          "words": [
+            {
+              "kind": "object",
+              "x": 74,
+              "y": 55,
+              "en": "doorway",
+              "ar": "مدخل الغرفة"
+            },
+            {
+              "kind": "object",
+              "x": 46,
+              "y": 42,
+              "en": "library shelves",
+              "ar": "رفوف المكتبة"
+            },
+            {
+              "kind": "phrase",
+              "x": 55,
+              "y": 53,
+              "en": "ask which room the club uses",
+              "ar": "يسأل عن الغرفة التي يستخدمها النادي"
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Compare possible days to visit",
+          "ar": "قارن الأيام المتاحة للزيارة",
+          "purposeEn": "Compare possible days to visit.",
+          "purposeAr": "قارن الأيام المتاحة للزيارة.",
+          "image": {
+            "id": "conv-life-l2-154-3",
+            "path": "assets/scenes/conversations/life-l2-154-3.webp",
+            "width": 356,
+            "height": 266,
+            "en": "Compare possible days to visit",
+            "ar": "قارن الأيام المتاحة للزيارة",
+            "sourceCrop": {
+              "canvas": [
+                1448,
+                1086
+              ],
+              "box": [
+                728,
+                3,
+                1084,
+                269
+              ]
+            }
+          },
+          "words": [
+            {
+              "kind": "object",
+              "x": 62,
+              "y": 73,
+              "en": "desk calendar",
+              "ar": "تقويم مكتبي"
+            },
+            {
+              "kind": "object",
+              "x": 58,
+              "y": 76,
+              "en": "date square",
+              "ar": "خانة تاريخ"
+            },
+            {
+              "kind": "phrase",
+              "x": 54,
+              "y": 69,
+              "en": "choose a day to visit after class",
+              "ar": "يختار يومًا للزيارة بعد الدرس"
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Send the room details after confirming the day",
+          "ar": "أرسل تفاصيل الغرفة بعد تأكيد اليوم",
+          "purposeEn": "Send the room details after confirming the day.",
+          "purposeAr": "أرسل تفاصيل الغرفة بعد تأكيد اليوم.",
+          "image": {
+            "id": "conv-life-l2-154-4",
+            "path": "assets/scenes/conversations/life-l2-154-4.webp",
+            "width": 355,
+            "height": 266,
+            "en": "Send the room details after confirming the day",
+            "ar": "أرسل تفاصيل الغرفة بعد تأكيد اليوم",
+            "sourceCrop": {
+              "canvas": [
+                1448,
+                1086
+              ],
+              "box": [
+                1090,
+                3,
+                1445,
+                269
+              ]
+            }
+          },
+          "words": [
+            {
+              "kind": "object",
+              "x": 30,
+              "y": 61,
+              "en": "smartphone",
+              "ar": "هاتف ذكي"
+            },
+            {
+              "kind": "object",
+              "x": 51,
+              "y": 89,
+              "en": "open book",
+              "ar": "كتاب مفتوح"
+            },
+            {
+              "kind": "phrase",
+              "x": 34,
+              "y": 73,
+              "en": "send the room number",
+              "ar": "يرسل رقم الغرفة"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-156",
+      "goalAr": "إنجاز المهمة قبل الحرّ",
+      "goalEn": "Finishing an outdoor task before the heat",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Suggest moving the plants before it gets hot",
+          "ar": "اقترح نقل النباتات قبل اشتداد الحرّ",
+          "purposeEn": "Suggest moving the plants before it gets hot.",
+          "purposeAr": "اقترح نقل النباتات قبل اشتداد الحرّ.",
+          "image": {
+            "id": "conv-life-l2-156-1",
+            "path": "assets/scenes/conversations/life-l2-156-1.webp",
+            "width": 355,
+            "height": 264,
+            "en": "Suggest moving the plants before it gets hot",
+            "ar": "اقترح نقل النباتات قبل اشتداد الحرّ",
+            "sourceCrop": {
+              "canvas": [
+                1448,
+                1086
+              ],
+              "box": [
+                3,
+                275,
+                358,
+                539
+              ]
+            }
+          },
+          "words": [
+            {
+              "kind": "object",
+              "x": 56,
+              "y": 84,
+              "en": "potted flowers",
+              "ar": "زهور في أصص"
+            },
+            {
+              "kind": "object",
+              "x": 15,
+              "y": 17,
+              "en": "sunny courtyard",
+              "ar": "فناء مشمس"
+            },
+            {
+              "kind": "phrase",
+              "x": 41,
+              "y": 74,
+              "en": "move the plants before it gets hot",
+              "ar": "ينقل النباتات قبل اشتداد الحرّ"
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Start with a smaller pot",
+          "ar": "ابدأ بأصيص أصغر",
+          "purposeEn": "Start with a smaller pot.",
+          "purposeAr": "ابدأ بأصيص أصغر.",
+          "image": {
+            "id": "conv-life-l2-156-2",
+            "path": "assets/scenes/conversations/life-l2-156-2.webp",
+            "width": 358,
+            "height": 264,
+            "en": "Start with a smaller pot",
+            "ar": "ابدأ بأصيص أصغر",
+            "sourceCrop": {
+              "canvas": [
+                1448,
+                1086
+              ],
+              "box": [
+                364,
+                275,
+                722,
+                539
+              ]
+            }
+          },
+          "words": [
+            {
+              "kind": "object",
+              "x": 48,
+              "y": 77,
+              "en": "small flowerpot",
+              "ar": "أصيص زهور صغير"
+            },
+            {
+              "kind": "object",
+              "x": 48,
+              "y": 57,
+              "en": "flower cluster",
+              "ar": "عنقود أزهار"
+            },
+            {
+              "kind": "phrase",
+              "x": 42,
+              "y": 74,
+              "en": "lift the smaller pots first",
+              "ar": "يرفع الأصص الأصغر أولًا"
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Leave the pots in the shade until watering",
+          "ar": "اترك الأصص في الظلّ حتى يحين وقت الريّ",
+          "purposeEn": "Leave the pots in the shade until watering.",
+          "purposeAr": "اترك الأصص في الظلّ حتى يحين وقت الريّ.",
+          "image": {
+            "id": "conv-life-l2-156-3",
+            "path": "assets/scenes/conversations/life-l2-156-3.webp",
+            "width": 356,
+            "height": 264,
+            "en": "Leave the pots in the shade until watering",
+            "ar": "اترك الأصص في الظلّ حتى يحين وقت الريّ",
+            "sourceCrop": {
+              "canvas": [
+                1448,
+                1086
+              ],
+              "box": [
+                728,
+                275,
+                1084,
+                539
+              ]
+            }
+          },
+          "words": [
+            {
+              "kind": "object",
+              "x": 85,
+              "y": 70,
+              "en": "watering can",
+              "ar": "إبريق ريّ"
+            },
+            {
+              "kind": "object",
+              "x": 82,
+              "y": 34,
+              "en": "shaded wall",
+              "ar": "جدار في الظلّ"
+            },
+            {
+              "kind": "phrase",
+              "x": 60,
+              "y": 72,
+              "en": "put the pot in the shade",
+              "ar": "يضع الأصيص في الظلّ"
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Carry a heavy pot with someone’s help",
+          "ar": "احمل أصيصًا ثقيلًا بمساعدة شخص",
+          "purposeEn": "Carry a heavy pot with someone’s help.",
+          "purposeAr": "احمل أصيصًا ثقيلًا بمساعدة شخص.",
+          "image": {
+            "id": "conv-life-l2-156-4",
+            "path": "assets/scenes/conversations/life-l2-156-4.webp",
+            "width": 355,
+            "height": 264,
+            "en": "Carry a heavy pot with someone’s help",
+            "ar": "احمل أصيصًا ثقيلًا بمساعدة شخص",
+            "sourceCrop": {
+              "canvas": [
+                1448,
+                1086
+              ],
+              "box": [
+                1090,
+                275,
+                1445,
+                539
+              ]
+            }
+          },
+          "words": [
+            {
+              "kind": "object",
+              "x": 54,
+              "y": 75,
+              "en": "heavy flowerpot",
+              "ar": "أصيص زهور ثقيل"
+            },
+            {
+              "kind": "object",
+              "x": 51,
+              "y": 49,
+              "en": "pink flowers",
+              "ar": "زهور وردية"
+            },
+            {
+              "kind": "phrase",
+              "x": 60,
+              "y": 83,
+              "en": "lift the heavy pot together",
+              "ar": "يرفعان الأصيص الثقيل معًا"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

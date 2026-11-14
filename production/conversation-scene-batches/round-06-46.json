@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "885f3c76eea85c88ae368f1bc93242b69bc4710b93dfd02d3b60464f11709c22"
+  },
+  "conversations": [
+    {
+      "id": "l2-141",
+      "goalAr": "ضوء إضافي للمذاكرة",
+      "goalEn": "Making a room bright enough to study",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Ask for more light at the desk",
+          "ar": "اطلب مزيدًا من الضوء عند المكتب",
+          "purposeEn": "Ask for more light at the desk.",
+          "purposeAr": "اطلب مزيدًا من الضوء عند المكتب.",
+          "image": {
+            "id": "conv-life-l2-141-1",
+            "path": "assets/scenes/conversations/life-l2-141-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Ask for more light at the desk",
+            "ar": "اطلب مزيدًا من الضوء عند المكتب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                393,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "desk lamp",
+              "ar": "مصباح مكتبي",
+              "kind": "object",
+              "x": 34,
+              "y": 36
+            },
+            {
+              "en": "open book",
+              "ar": "كتاب مفتوح",
+              "kind": "object",
+              "x": 48,
+              "y": 87
+            },
+            {
+              "en": "move the lamp closer",
+              "ar": "يقرّب المصباح",
+              "kind": "phrase",
+              "x": 29,
+              "y": 34
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Make the small print easier to see",
+          "ar": "اجعل الخط الصغير أوضح",
+          "purposeEn": "Make the small print easier to see.",
+          "purposeAr": "اجعل الخط الصغير أوضح.",
+          "image": {
+            "id": "conv-life-l2-141-2",
+            "path": "assets/scenes/conversations/life-l2-141-2.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Make the small print easier to see",
+            "ar": "اجعل الخط الصغير أوضح",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                3,
+                791,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "lamp shade",
+              "ar": "غطاء المصباح",
+              "kind": "object",
+              "x": 44,
+              "y": 50
+            },
+            {
+              "en": "small print",
+              "ar": "خط صغير",
+              "kind": "object",
+              "x": 52,
+              "y": 88
+            },
+            {
+              "en": "shine the light on the page",
+              "ar": "يوجّه الضوء إلى الصفحة",
+              "kind": "phrase",
+              "x": 48,
+              "y": 71
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Notice glare on the screen",
+          "ar": "لاحظ انعكاس الضوء على الشاشة",
+          "purposeEn": "Notice glare on the screen.",
+          "purposeAr": "لاحظ انعكاس الضوء على الشاشة.",
+          "image": {
+            "id": "conv-life-l2-141-3",
+            "path": "assets/scenes/conversations/life-l2-141-3.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Notice glare on the screen",
+            "ar": "لاحظ انعكاس الضوء على الشاشة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                3,
+                1187,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "screen glare",
+              "ar": "وهج على الشاشة",
+              "kind": "object",
+              "x": 76,
+              "y": 58
+            },
+            {
+              "en": "laptop keyboard",
+              "ar": "لوحة مفاتيح الحاسوب",
+              "kind": "object",
+              "x": 68,
+              "y": 91
+            },
+            {
+              "en": "shine directly on the screen",
+              "ar": "يسطع مباشرة على الشاشة",
+              "kind": "phrase",
+              "x": 80,
+              "y": 57
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Turn the lamp towards the wall",
+          "ar": "وجّه المصباح نحو الحائط",
+          "purposeEn": "Turn the lamp towards the wall.",
+          "purposeAr": "وجّه المصباح نحو الحائط.",
+          "image": {
+            "id": "conv-life-l2-141-4",
+            "path": "assets/scenes/conversations/life-l2-141-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Turn the lamp towards the wall",
+            "ar": "وجّه المصباح نحو الحائط",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                3,
+                1583,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "lamp head",
+              "ar": "رأس المصباح",
+              "kind": "object",
+              "x": 42,
+              "y": 24
+            },
+            {
+              "en": "reflected light",
+              "ar": "ضوء منعكس",
+              "kind": "object",
+              "x": 73,
+              "y": 38
+            },
+            {
+              "en": "turn the lamp towards the wall",
+              "ar": "يوجّه المصباح نحو الحائط",
+              "kind": "phrase",
+              "x": 43,
+              "y": 42
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-142",
+      "goalAr": "ملابس تحتاج إلى الغسيل",
+      "goalEn": "Sorting items for washing",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Check whether the scarf needs washing",
+          "ar": "تحقّق ممّا إذا كان الوشاح يحتاج إلى الغسل",
+          "purposeEn": "Check whether the scarf needs washing.",
+          "purposeAr": "تحقّق ممّا إذا كان الوشاح يحتاج إلى الغسل.",
+          "image": {
+            "id": "conv-life-l2-142-1",
+            "path": "assets/scenes/conversations/life-l2-142-1.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Check whether the scarf needs washing",
+            "ar": "تحقّق ممّا إذا كان الوشاح يحتاج إلى الغسل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                251,
+                393,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "scarf",
+              "ar": "وشاح",
+              "kind": "object",
+              "x": 46,
+              "y": 69
+            },
+            {
+              "en": "open drawer",
+              "ar": "درج مفتوح",
+              "kind": "object",
+              "x": 18,
+              "y": 84
+            },
+            {
+              "en": "put the scarf in the wash",
+              "ar": "يضع الوشاح مع الغسيل",
+              "kind": "phrase",
+              "x": 42,
+              "y": 57
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Read the care symbols",
+          "ar": "اقرأ رموز العناية بالملابس",
+          "purposeEn": "Read the care symbols.",
+          "purposeAr": "اقرأ رموز العناية بالملابس.",
+          "image": {
+            "id": "conv-life-l2-142-2",
+            "path": "assets/scenes/conversations/life-l2-142-2.webp",
+            "width": 392,
+            "height": 241,
+            "en": "Read the care symbols",
+            "ar": "اقرأ رموز العناية بالملابس",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                251,
+                791,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "care label",
+              "ar": "بطاقة تعليمات العناية",
+              "kind": "object",
+              "x": 53,
+              "y": 50
+            },
+            {
+              "en": "cold wash symbol",
+              "ar": "رمز الغسل البارد",
+              "kind": "object",
+              "x": 39,
+              "y": 41
+            },
+            {
+              "en": "check the care label",
+              "ar": "يتحقّق من بطاقة تعليمات العناية",
+              "kind": "phrase",
+              "x": 54,
+              "y": 60
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Use cold water for the scarves",
+          "ar": "استخدم الماء البارد لغسل الأوشحة",
+          "purposeEn": "Use cold water for the scarves.",
+          "purposeAr": "استخدم الماء البارد لغسل الأوشحة.",
+          "image": {
+            "id": "conv-life-l2-142-3",
+            "path": "assets/scenes/conversations/life-l2-142-3.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Use cold water for the scarves",
+            "ar": "استخدم الماء البارد لغسل الأوشحة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                251,
+                1187,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "snowflake icon",
+              "ar": "رمز ندفة ثلج",
+              "kind": "object",
+              "x": 62,
+              "y": 31
+            },
+            {
+              "en": "laundry basket",
+              "ar": "سلّة الغسيل",
+              "kind": "object",
+              "x": 53,
+              "y": 88
+            },
+            {
+              "en": "wash it in cold water",
+              "ar": "يغسله بالماء البارد",
+              "kind": "phrase",
+              "x": 45,
+              "y": 66
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Hang the scarf up to dry",
+          "ar": "علّق الوشاح ليجفّ",
+          "purposeEn": "Hang the scarf up to dry.",
+          "purposeAr": "علّق الوشاح ليجفّ.",
+          "image": {
+            "id": "conv-life-l2-142-4",
+            "path": "assets/scenes/conversations/life-l2-142-4.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Hang the scarf up to dry",
+            "ar": "علّق الوشاح ليجفّ",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                251,
+                1583,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "drying rack",
+              "ar": "منشر غسيل",
+              "kind": "object",
+              "x": 57,
+              "y": 63
+            },
+            {
+              "en": "floral scarf",
+              "ar": "وشاح مزهّر",
+              "kind": "object",
+              "x": 57,
+              "y": 79
+            },
+            {
+              "en": "hang it up to dry",
+              "ar": "يعلّقه ليجفّ",
+              "kind": "phrase",
+              "x": 49,
+              "y": 53
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-143",
+      "goalAr": "اختيار مكان للتخييم",
+      "goalEn": "Choosing a place to camp",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Choose a flat spot beside the path",
+          "ar": "اختر مكانًا مستويًا بجانب المسار",
+          "purposeEn": "Choose a flat spot beside the path.",
+          "purposeAr": "اختر مكانًا مستويًا بجانب المسار.",
+          "image": {
+            "id": "conv-life-l2-143-1",
+            "path": "assets/scenes/conversations/life-l2-143-1.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Choose a flat spot beside the path",
+            "ar": "اختر مكانًا مستويًا بجانب المسار",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                498,
+                393,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "flat ground",
+              "ar": "أرض مستوية",
+              "kind": "object",
+              "x": 59,
+              "y": 78
+            },
+            {
+              "en": "tent bag",
+              "ar": "حقيبة خيمة",
+              "kind": "object",
+              "x": 26,
+              "y": 86
+            },
+            {
+              "en": "look for a place to set up camp",
+              "ar": "يبحث عن مكان لنصب الخيمة",
+              "kind": "phrase",
+              "x": 58,
+              "y": 54
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Check if a permit is required",
+          "ar": "تحقّق إن كان يلزم تصريح",
+          "purposeEn": "Check if a permit is required.",
+          "purposeAr": "تحقّق إن كان يلزم تصريح.",
+          "image": {
+            "id": "conv-life-l2-143-2",
+            "path": "assets/scenes/conversations/life-l2-143-2.webp",
+            "width": 392,
+            "height": 243,
+            "en": "Check if a permit is required",
+            "ar": "تحقّق إن كان يلزم تصريح",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                498,
+                791,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "permit sign",
+              "ar": "لافتة التصريح",
+              "kind": "object",
+              "x": 67,
+              "y": 60
+            },
+            {
+              "en": "tent pictogram",
+              "ar": "رمز خيمة",
+              "kind": "object",
+              "x": 64,
+              "y": 42
+            },
+            {
+              "en": "check whether camping is allowed",
+              "ar": "يتحقّق ممّا إذا كان التخييم مسموحًا",
+              "kind": "phrase",
+              "x": 55,
+              "y": 46
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Ask which sites are open",
+          "ar": "اسأل عن أماكن التخييم المتاحة",
+          "purposeEn": "Ask which sites are open.",
+          "purposeAr": "اسأل عن أماكن التخييم المتاحة.",
+          "image": {
+            "id": "conv-life-l2-143-3",
+            "path": "assets/scenes/conversations/life-l2-143-3.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Ask which sites are open",
+            "ar": "اسأل عن أماكن التخييم المتاحة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                498,
+                1187,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "campground map",
+              "ar": "خريطة موقع التخييم",
+              "kind": "object",
+              "x": 49,
+              "y": 68
+            },
+            {
+              "en": "park attendant",
+              "ar": "موظّف المنتزه",
+              "kind": "object",
+              "x": 84,
+              "y": 57
+            },
+            {
+              "en": "ask which areas are open",
+              "ar": "يسأل عن الأماكن المتاحة",
+              "kind": "phrase",
+              "x": 65,
+              "y": 57
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Look for a site closer to the road",
+          "ar": "ابحث عن مكان أقرب إلى الطريق",
+          "purposeEn": "Look for a site closer to the road.",
+          "purposeAr": "ابحث عن مكان أقرب إلى الطريق.",
+          "image": {
+            "id": "conv-life-l2-143-4",
+            "path": "assets/scenes/conversations/life-l2-143-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Look for a site closer to the road",
+            "ar": "ابحث عن مكان أقرب إلى الطريق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                498,
+                1583,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "road symbol",
+              "ar": "رمز طريق",
+              "kind": "object",
+              "x": 44,
+              "y": 72
+            },
+            {
+              "en": "campsite marker",
+              "ar": "علامة مكان تخييم",
+              "kind": "object",
+              "x": 72,
+              "y": 58
+            },
+            {
+              "en": "find a spot closer to the road",
+              "ar": "يجد مكانًا أقرب إلى الطريق",
+              "kind": "phrase",
+              "x": 61,
+              "y": 65
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-144",
+      "goalAr": "صعوبة مواكبة الصف",
+      "goalEn": "Helping someone keep up in class",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Notice that a student is struggling to keep up",
+          "ar": "لاحظ أن الطالب يجد صعوبة في متابعة الدرس",
+          "purposeEn": "Notice that a student is struggling to keep up.",
+          "purposeAr": "لاحظ أن الطالب يجد صعوبة في متابعة الدرس.",
+          "image": {
+            "id": "conv-life-l2-144-1",
+            "path": "assets/scenes/conversations/life-l2-144-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Notice that a student is struggling to keep up",
+            "ar": "لاحظ أن الطالب يجد صعوبة في متابعة الدرس",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                747,
+                393,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "exercise book",
+              "ar": "كراسة تمارين",
+              "kind": "object",
+              "x": 54,
+              "y": 91
+            },
+            {
+              "en": "pen",
+              "ar": "قلم",
+              "kind": "object",
+              "x": 41,
+              "y": 82
+            },
+            {
+              "en": "struggle to keep up with the class",
+              "ar": "يجد صعوبة في مجاراة الصف",
+              "kind": "phrase",
+              "x": 46,
+              "y": 46
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Share the questions in advance",
+          "ar": "شارك الأسئلة مسبقًا",
+          "purposeEn": "Share the questions in advance.",
+          "purposeAr": "شارك الأسئلة مسبقًا.",
+          "image": {
+            "id": "conv-life-l2-144-2",
+            "path": "assets/scenes/conversations/life-l2-144-2.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Share the questions in advance",
+            "ar": "شارك الأسئلة مسبقًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                747,
+                791,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "question sheet",
+              "ar": "ورقة أسئلة",
+              "kind": "object",
+              "x": 56,
+              "y": 77
+            },
+            {
+              "en": "question mark",
+              "ar": "علامة استفهام",
+              "kind": "object",
+              "x": 56,
+              "y": 70
+            },
+            {
+              "en": "give him the questions in advance",
+              "ar": "يعطيه الأسئلة مسبقًا",
+              "kind": "phrase",
+              "x": 50,
+              "y": 58
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Show an example of notes with key words",
+          "ar": "اعرض نموذج ملاحظات فيه كلمات رئيسية",
+          "purposeEn": "Show an example of notes with key words.",
+          "purposeAr": "اعرض نموذج ملاحظات فيه كلمات رئيسية.",
+          "image": {
+            "id": "conv-life-l2-144-3",
+            "path": "assets/scenes/conversations/life-l2-144-3.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Show an example of notes with key words",
+            "ar": "اعرض نموذج ملاحظات فيه كلمات رئيسية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                747,
+                1187,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "highlighted line",
+              "ar": "سطر مظلّل",
+              "kind": "object",
+              "x": 67,
+              "y": 70
+            },
+            {
+              "en": "bullet point",
+              "ar": "نقطة تعداد",
+              "kind": "object",
+              "x": 56,
+              "y": 77
+            },
+            {
+              "en": "write down only the key words",
+              "ar": "يدوّن الكلمات الرئيسية فقط",
+              "kind": "phrase",
+              "x": 52,
+              "y": 70
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Give the learner a blank copy",
+          "ar": "ناول المتعلّم نسخة فارغة",
+          "purposeEn": "Give the learner a blank copy.",
+          "purposeAr": "ناول المتعلّم نسخة فارغة.",
+          "image": {
+            "id": "conv-life-l2-144-4",
+            "path": "assets/scenes/conversations/life-l2-144-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Give the learner a blank copy",
+            "ar": "ناول المتعلّم نسخة فارغة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                747,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "blank worksheet",
+              "ar": "ورقة عمل فارغة",
+              "kind": "object",
+              "x": 58,
+              "y": 78
+            },
+            {
+              "en": "lined paper",
+              "ar": "ورق مسطّر",
+              "kind": "object",
+              "x": 54,
+              "y": 90
+            },
+            {
+              "en": "try it on a blank copy",
+              "ar": "يجرّبه على نسخة فارغة",
+              "kind": "phrase",
+              "x": 58,
+              "y": 70
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

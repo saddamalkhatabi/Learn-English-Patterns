@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "6cecc6dc7eca38f34895c696e65ca9f3a37159e0840b26eb07cc4654fef0948d"
+  },
+  "conversations": [
+    {
+      "id": "l2-145",
+      "goalAr": "هدية في الوقت المناسب",
+      "goalEn": "Giving someone just what they need",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Offer a replacement charger",
+          "ar": "قدّم شاحنًا بديلًا",
+          "purposeEn": "Offer a replacement charger.",
+          "purposeAr": "قدّم شاحنًا بديلًا.",
+          "image": {
+            "id": "conv-life-l2-145-1",
+            "path": "assets/scenes/conversations/life-l2-145-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Offer a replacement charger",
+            "ar": "قدّم شاحنًا بديلًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                393,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "gift box",
+              "ar": "علبة هدية",
+              "kind": "object",
+              "x": 52,
+              "y": 81
+            },
+            {
+              "en": "ribbon",
+              "ar": "شريط زينة",
+              "kind": "object",
+              "x": 52,
+              "y": 79
+            },
+            {
+              "en": "this is just what I needed",
+              "ar": "هذا بالضبط ما كنت أحتاج إليه",
+              "kind": "phrase",
+              "x": 49,
+              "y": 87
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Check what comes with the charger",
+          "ar": "تحقّق ممّا يأتي مع الشاحن",
+          "purposeEn": "Check what comes with the charger.",
+          "purposeAr": "تحقّق ممّا يأتي مع الشاحن.",
+          "image": {
+            "id": "conv-life-l2-145-2",
+            "path": "assets/scenes/conversations/life-l2-145-2.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Check what comes with the charger",
+            "ar": "تحقّق ممّا يأتي مع الشاحن",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                3,
+                791,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "power adapter",
+              "ar": "محوّل طاقة",
+              "kind": "object",
+              "x": 27,
+              "y": 66
+            },
+            {
+              "en": "charging cable",
+              "ar": "كابل شحن",
+              "kind": "object",
+              "x": 70,
+              "y": 74
+            },
+            {
+              "en": "try the new charger",
+              "ar": "يجرّب الشاحن الجديد",
+              "kind": "phrase",
+              "x": 57,
+              "y": 77
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Plug the cable into the phone",
+          "ar": "صِل الكابل بالهاتف",
+          "purposeEn": "Plug the cable into the phone.",
+          "purposeAr": "صِل الكابل بالهاتف.",
+          "image": {
+            "id": "conv-life-l2-145-3",
+            "path": "assets/scenes/conversations/life-l2-145-3.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Plug the cable into the phone",
+            "ar": "صِل الكابل بالهاتف",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                3,
+                1186,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "charging port",
+              "ar": "منفذ شحن",
+              "kind": "object",
+              "x": 53,
+              "y": 55
+            },
+            {
+              "en": "cable connector",
+              "ar": "موصّل الكابل",
+              "kind": "object",
+              "x": 58,
+              "y": 70
+            },
+            {
+              "en": "plug in the cable",
+              "ar": "يوصل الكابل",
+              "kind": "phrase",
+              "x": 61,
+              "y": 70
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Confirm the phone is charging",
+          "ar": "تأكّد من بدء شحن الهاتف",
+          "purposeEn": "Confirm the phone is charging.",
+          "purposeAr": "تأكّد من بدء شحن الهاتف.",
+          "image": {
+            "id": "conv-life-l2-145-4",
+            "path": "assets/scenes/conversations/life-l2-145-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Confirm the phone is charging",
+            "ar": "تأكّد من بدء شحن الهاتف",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                3,
+                1583,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "battery icon",
+              "ar": "رمز البطارية",
+              "kind": "object",
+              "x": 73,
+              "y": 55
+            },
+            {
+              "en": "lightning symbol",
+              "ar": "رمز البرق",
+              "kind": "object",
+              "x": 74,
+              "y": 34
+            },
+            {
+              "en": "look for the charging symbol",
+              "ar": "ابحث عن رمز الشحن",
+              "kind": "phrase",
+              "x": 63,
+              "y": 61
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-146",
+      "goalAr": "كتب كثيرة حول موضوع واحد",
+      "goalEn": "Finding material for a project",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Ask where the local history books are",
+          "ar": "اسأل أين توجد كتب التاريخ المحلي",
+          "purposeEn": "Ask where the local history books are.",
+          "purposeAr": "اسأل أين توجد كتب التاريخ المحلي.",
+          "image": {
+            "id": "conv-life-l2-146-1",
+            "path": "assets/scenes/conversations/life-l2-146-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Ask where the local history books are",
+            "ar": "اسأل أين توجد كتب التاريخ المحلي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                252,
+                393,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bookshelf",
+              "ar": "رفّ كتب",
+              "kind": "object",
+              "x": 47,
+              "y": 45
+            },
+            {
+              "en": "name badge",
+              "ar": "بطاقة تعريف",
+              "kind": "object",
+              "x": 84,
+              "y": 55
+            },
+            {
+              "en": "ask for a book on local history",
+              "ar": "يطلب كتابًا عن التاريخ المحلي",
+              "kind": "phrase",
+              "x": 50,
+              "y": 60
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Choose a book with pictures and short chapters",
+          "ar": "اختر كتابًا فيه صور وفصول قصيرة",
+          "purposeEn": "Choose a book with pictures and short chapters.",
+          "purposeAr": "اختر كتابًا فيه صور وفصول قصيرة.",
+          "image": {
+            "id": "conv-life-l2-146-2",
+            "path": "assets/scenes/conversations/life-l2-146-2.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Choose a book with pictures and short chapters",
+            "ar": "اختر كتابًا فيه صور وفصول قصيرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                252,
+                791,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "illustrated cover",
+              "ar": "غلاف مصوّر",
+              "kind": "object",
+              "x": 32,
+              "y": 70
+            },
+            {
+              "en": "history book",
+              "ar": "كتاب تاريخ",
+              "kind": "object",
+              "x": 71,
+              "y": 70
+            },
+            {
+              "en": "recommend an illustrated book",
+              "ar": "يرشّح كتابًا مصوّرًا",
+              "kind": "phrase",
+              "x": 83,
+              "y": 71
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Find the map using the index",
+          "ar": "اعثر على الخريطة باستخدام الفهرس",
+          "purposeEn": "Find the map using the index.",
+          "purposeAr": "اعثر على الخريطة باستخدام الفهرس.",
+          "image": {
+            "id": "conv-life-l2-146-3",
+            "path": "assets/scenes/conversations/life-l2-146-3.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Find the map using the index",
+            "ar": "اعثر على الخريطة باستخدام الفهرس",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                252,
+                1186,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "index page",
+              "ar": "صفحة الفهرس",
+              "kind": "object",
+              "x": 29,
+              "y": 70
+            },
+            {
+              "en": "foldout map",
+              "ar": "خريطة قابلة للطيّ",
+              "kind": "object",
+              "x": 72,
+              "y": 71
+            },
+            {
+              "en": "look it up in the index",
+              "ar": "يبحث عنه في الفهرس",
+              "kind": "phrase",
+              "x": 47,
+              "y": 59
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Make a copy of the map",
+          "ar": "اصنع نسخة من الخريطة",
+          "purposeEn": "Make a copy of the map.",
+          "purposeAr": "اصنع نسخة من الخريطة.",
+          "image": {
+            "id": "conv-life-l2-146-4",
+            "path": "assets/scenes/conversations/life-l2-146-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Make a copy of the map",
+            "ar": "اصنع نسخة من الخريطة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                252,
+                1583,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "flatbed scanner",
+              "ar": "ماسح ضوئي مسطّح",
+              "kind": "object",
+              "x": 52,
+              "y": 68
+            },
+            {
+              "en": "map",
+              "ar": "خريطة",
+              "kind": "object",
+              "x": 55,
+              "y": 75
+            },
+            {
+              "en": "scan the map for your notes",
+              "ar": "امسح الخريطة ضوئيًا لملاحظاتك",
+              "kind": "phrase",
+              "x": 54,
+              "y": 61
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-147",
+      "goalAr": "البدء بأول فصل",
+      "goalEn": "Deciding where to start reading",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Decide where to begin reading",
+          "ar": "حدّد من أين تبدأ القراءة",
+          "purposeEn": "Decide where to begin reading.",
+          "purposeAr": "حدّد من أين تبدأ القراءة.",
+          "image": {
+            "id": "conv-life-l2-147-1",
+            "path": "assets/scenes/conversations/life-l2-147-1.webp",
+            "width": 390,
+            "height": 240,
+            "en": "Decide where to begin reading",
+            "ar": "حدّد من أين تبدأ القراءة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                500,
+                393,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "introduction page",
+              "ar": "صفحة المقدّمة",
+              "kind": "object",
+              "x": 27,
+              "y": 69
+            },
+            {
+              "en": "chapter opening",
+              "ar": "بداية الفصل",
+              "kind": "object",
+              "x": 69,
+              "y": 67
+            },
+            {
+              "en": "begin with the first chapter",
+              "ar": "يبدأ بالفصل الأول",
+              "kind": "phrase",
+              "x": 37,
+              "y": 65
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Mark where to stop for the meeting",
+          "ar": "حدّد موضع التوقّف قبل اللقاء",
+          "purposeEn": "Mark where to stop for the meeting.",
+          "purposeAr": "حدّد موضع التوقّف قبل اللقاء.",
+          "image": {
+            "id": "conv-life-l2-147-2",
+            "path": "assets/scenes/conversations/life-l2-147-2.webp",
+            "width": 391,
+            "height": 240,
+            "en": "Mark where to stop for the meeting",
+            "ar": "حدّد موضع التوقّف قبل اللقاء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                500,
+                791,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bookmark",
+              "ar": "علامة كتاب",
+              "kind": "object",
+              "x": 67,
+              "y": 57
+            },
+            {
+              "en": "open book",
+              "ar": "كتاب مفتوح",
+              "kind": "object",
+              "x": 70,
+              "y": 81
+            },
+            {
+              "en": "stop at the end of the chapter",
+              "ar": "يتوقّف عند نهاية الفصل",
+              "kind": "phrase",
+              "x": 61,
+              "y": 45
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Discuss what the main character did",
+          "ar": "ناقش ما فعله بطل القصة",
+          "purposeEn": "Discuss what the main character did.",
+          "purposeAr": "ناقش ما فعله بطل القصة.",
+          "image": {
+            "id": "conv-life-l2-147-3",
+            "path": "assets/scenes/conversations/life-l2-147-3.webp",
+            "width": 389,
+            "height": 240,
+            "en": "Discuss what the main character did",
+            "ar": "ناقش ما فعله بطل القصة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                500,
+                1186,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "illustration",
+              "ar": "رسم توضيحي",
+              "kind": "object",
+              "x": 75,
+              "y": 69
+            },
+            {
+              "en": "main character",
+              "ar": "الشخصية الرئيسية",
+              "kind": "object",
+              "x": 46,
+              "y": 66
+            },
+            {
+              "en": "discuss why the character left home",
+              "ar": "يناقش سبب مغادرة الشخصية للمنزل",
+              "kind": "phrase",
+              "x": 54,
+              "y": 65
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Mark the paragraph for later",
+          "ar": "علّم الفقرة للرجوع إليها",
+          "purposeEn": "Mark the paragraph for later.",
+          "purposeAr": "علّم الفقرة للرجوع إليها.",
+          "image": {
+            "id": "conv-life-l2-147-4",
+            "path": "assets/scenes/conversations/life-l2-147-4.webp",
+            "width": 390,
+            "height": 240,
+            "en": "Mark the paragraph for later",
+            "ar": "علّم الفقرة للرجوع إليها",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                500,
+                1583,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "page tabs",
+              "ar": "علامات تبويب",
+              "kind": "object",
+              "x": 85,
+              "y": 72
+            },
+            {
+              "en": "paragraph",
+              "ar": "فقرة",
+              "kind": "object",
+              "x": 62,
+              "y": 81
+            },
+            {
+              "en": "mark the paragraph",
+              "ar": "يعلّم الفقرة",
+              "kind": "phrase",
+              "x": 62,
+              "y": 66
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-148",
+      "goalAr": "الشك في عرض مشبوه",
+      "goalEn": "Questioning an offer that sounds suspicious",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Recognise a suspicious payment request",
+          "ar": "انتبه إلى طلب دفع يثير الشكّ",
+          "purposeEn": "Recognise a suspicious payment request.",
+          "purposeAr": "انتبه إلى طلب دفع يثير الشكّ.",
+          "image": {
+            "id": "conv-life-l2-148-1",
+            "path": "assets/scenes/conversations/life-l2-148-1.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Recognise a suspicious payment request",
+            "ar": "انتبه إلى طلب دفع يثير الشكّ",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                746,
+                393,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "online listing",
+              "ar": "إعلان على الإنترنت",
+              "kind": "object",
+              "x": 47,
+              "y": 66
+            },
+            {
+              "en": "payment symbol",
+              "ar": "رمز دفع",
+              "kind": "object",
+              "x": 46,
+              "y": 82
+            },
+            {
+              "en": "this sounds fishy",
+              "ar": "الأمر يبعث على الريبة",
+              "kind": "phrase",
+              "x": 39,
+              "y": 54
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Inspect the item before paying",
+          "ar": "عاين السلعة قبل الدفع",
+          "purposeEn": "Inspect the item before paying.",
+          "purposeAr": "عاين السلعة قبل الدفع.",
+          "image": {
+            "id": "conv-life-l2-148-2",
+            "path": "assets/scenes/conversations/life-l2-148-2.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Inspect the item before paying",
+            "ar": "عاين السلعة قبل الدفع",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                746,
+                791,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "portable radio",
+              "ar": "مذياع محمول",
+              "kind": "object",
+              "x": 61,
+              "y": 65
+            },
+            {
+              "en": "carry handle",
+              "ar": "مقبض حمل",
+              "kind": "object",
+              "x": 63,
+              "y": 43
+            },
+            {
+              "en": "ask to see the item first",
+              "ar": "يطلب رؤية السلعة أولًا",
+              "kind": "phrase",
+              "x": 49,
+              "y": 67
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Compare the model plate with the listing",
+          "ar": "قارن لوحة الطراز بالإعلان",
+          "purposeEn": "Compare the model plate with the listing.",
+          "purposeAr": "قارن لوحة الطراز بالإعلان.",
+          "image": {
+            "id": "conv-life-l2-148-3",
+            "path": "assets/scenes/conversations/life-l2-148-3.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Compare the model plate with the listing",
+            "ar": "قارن لوحة الطراز بالإعلان",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                746,
+                1186,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "model plate",
+              "ar": "لوحة الطراز",
+              "kind": "object",
+              "x": 69,
+              "y": 56
+            },
+            {
+              "en": "listing photo",
+              "ar": "صورة الإعلان",
+              "kind": "object",
+              "x": 36,
+              "y": 72
+            },
+            {
+              "en": "check that the model number matches",
+              "ar": "يتحقّق من تطابق رقم الطراز",
+              "kind": "phrase",
+              "x": 65,
+              "y": 66
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Walk away if you feel pressured",
+          "ar": "انسحب إذا شعرت بالضغط",
+          "purposeEn": "Walk away if you feel pressured.",
+          "purposeAr": "انسحب إذا شعرت بالضغط.",
+          "image": {
+            "id": "conv-life-l2-148-4",
+            "path": "assets/scenes/conversations/life-l2-148-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Walk away if you feel pressured",
+            "ar": "انسحب إذا شعرت بالضغط",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                746,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "closed wallet",
+              "ar": "محفظة مغلقة",
+              "kind": "object",
+              "x": 67,
+              "y": 72
+            },
+            {
+              "en": "market stall",
+              "ar": "بسطة في السوق",
+              "kind": "object",
+              "x": 32,
+              "y": 72
+            },
+            {
+              "en": "walk away without paying",
+              "ar": "ينصرف دون دفع",
+              "kind": "phrase",
+              "x": 68,
+              "y": 54
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

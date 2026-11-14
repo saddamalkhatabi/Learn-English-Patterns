@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "b6b041aa43b6a392cd1df5dbebad62561572c103f2fa614b930fd261a492d599"
+  },
+  "conversations": [
+    {
+      "id": "l2-149",
+      "goalAr": "الانتظار حتى يأتي المسؤول",
+      "goalEn": "Deciding whether to wait",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Wait until the key arrives",
+          "ar": "انتظر حتى يصل المفتاح",
+          "purposeEn": "Wait until the key arrives.",
+          "purposeAr": "انتظر حتى يصل المفتاح.",
+          "image": {
+            "id": "conv-life-l2-149-1",
+            "path": "assets/scenes/conversations/life-l2-149-1.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Wait until the key arrives",
+            "ar": "انتظر حتى يصل المفتاح",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                393,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "key hook",
+              "ar": "علاقة مفاتيح",
+              "kind": "object",
+              "x": 88,
+              "y": 30
+            },
+            {
+              "en": "padlock",
+              "ar": "قفل معلّق",
+              "kind": "object",
+              "x": 74,
+              "y": 85
+            },
+            {
+              "en": "wait for him to come back",
+              "ar": "ينتظر عودته",
+              "kind": "phrase",
+              "x": 57,
+              "y": 50
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Lay out the papers while waiting",
+          "ar": "رتّب الأوراق أثناء الانتظار",
+          "purposeEn": "Lay out the papers while waiting.",
+          "purposeAr": "رتّب الأوراق أثناء الانتظار.",
+          "image": {
+            "id": "conv-life-l2-149-2",
+            "path": "assets/scenes/conversations/life-l2-149-2.webp",
+            "width": 392,
+            "height": 243,
+            "en": "Lay out the papers while waiting",
+            "ar": "رتّب الأوراق أثناء الانتظار",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                3,
+                791,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "stack of papers",
+              "ar": "رزمة أوراق",
+              "kind": "object",
+              "x": 52,
+              "y": 88
+            },
+            {
+              "en": "waiting area table",
+              "ar": "طاولة منطقة الانتظار",
+              "kind": "object",
+              "x": 50,
+              "y": 93
+            },
+            {
+              "en": "lay out the papers",
+              "ar": "يرتّب الأوراق على الطاولة",
+              "kind": "phrase",
+              "x": 46,
+              "y": 85
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Give people blank forms to start with",
+          "ar": "أتح استمارات فارغة للحاضرين ليبدؤوا بها",
+          "purposeEn": "Give people blank forms to start with.",
+          "purposeAr": "أتح استمارات فارغة للحاضرين ليبدؤوا بها.",
+          "image": {
+            "id": "conv-life-l2-149-3",
+            "path": "assets/scenes/conversations/life-l2-149-3.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Give people blank forms to start with",
+            "ar": "أتح استمارات فارغة للحاضرين ليبدؤوا بها",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                3,
+                1187,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "blank form",
+              "ar": "استمارة فارغة",
+              "kind": "object",
+              "x": 49,
+              "y": 88
+            },
+            {
+              "en": "row of pens",
+              "ar": "صفّ أقلام",
+              "kind": "object",
+              "x": 78,
+              "y": 90
+            },
+            {
+              "en": "fill in a form while waiting",
+              "ar": "يملأ استمارة أثناء الانتظار",
+              "kind": "phrase",
+              "x": 66,
+              "y": 79
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Leave the forms with reception",
+          "ar": "اترك الاستمارات عند الاستقبال",
+          "purposeEn": "Leave the forms with reception.",
+          "purposeAr": "اترك الاستمارات عند الاستقبال.",
+          "image": {
+            "id": "conv-life-l2-149-4",
+            "path": "assets/scenes/conversations/life-l2-149-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Leave the forms with reception",
+            "ar": "اترك الاستمارات عند الاستقبال",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                3,
+                1583,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "stack of forms",
+              "ar": "رزمة استمارات",
+              "kind": "object",
+              "x": 60,
+              "y": 67
+            },
+            {
+              "en": "reception counter",
+              "ar": "منضدة الاستقبال",
+              "kind": "object",
+              "x": 79,
+              "y": 89
+            },
+            {
+              "en": "leave the forms at reception",
+              "ar": "يترك الاستمارات عند الاستقبال",
+              "kind": "phrase",
+              "x": 57,
+              "y": 70
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-150",
+      "goalAr": "الاستئذان لفتح النافذة",
+      "goalEn": "Checking if the window can be opened",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Ask to open the window in a stuffy room",
+          "ar": "اطلب فتح النافذة في غرفة قليلة التهوية",
+          "purposeEn": "Ask to open the window in a stuffy room.",
+          "purposeAr": "اطلب فتح النافذة في غرفة قليلة التهوية.",
+          "image": {
+            "id": "conv-life-l2-150-1",
+            "path": "assets/scenes/conversations/life-l2-150-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Ask to open the window in a stuffy room",
+            "ar": "اطلب فتح النافذة في غرفة قليلة التهوية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                252,
+                393,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "closed window",
+              "ar": "نافذة مغلقة",
+              "kind": "object",
+              "x": 57,
+              "y": 40
+            },
+            {
+              "en": "window blind",
+              "ar": "ستارة نافذة",
+              "kind": "object",
+              "x": 63,
+              "y": 33
+            },
+            {
+              "en": "do you mind if I open the window",
+              "ar": "هل تمانع إن فتحت النافذة؟",
+              "kind": "phrase",
+              "x": 44,
+              "y": 54
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Open the window a little",
+          "ar": "افتح النافذة قليلًا",
+          "purposeEn": "Open the window a little.",
+          "purposeAr": "افتح النافذة قليلًا.",
+          "image": {
+            "id": "conv-life-l2-150-2",
+            "path": "assets/scenes/conversations/life-l2-150-2.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Open the window a little",
+            "ar": "افتح النافذة قليلًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                252,
+                791,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "window handle",
+              "ar": "مقبض النافذة",
+              "kind": "object",
+              "x": 47,
+              "y": 48
+            },
+            {
+              "en": "window opening",
+              "ar": "فتحة النافذة",
+              "kind": "object",
+              "x": 54,
+              "y": 37
+            },
+            {
+              "en": "open it just a little",
+              "ar": "افتحها قليلًا فقط",
+              "kind": "phrase",
+              "x": 47,
+              "y": 49
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Check whether there is enough air",
+          "ar": "تحقّق من كفاية التهوية",
+          "purposeEn": "Check whether there is enough air.",
+          "purposeAr": "تحقّق من كفاية التهوية.",
+          "image": {
+            "id": "conv-life-l2-150-3",
+            "path": "assets/scenes/conversations/life-l2-150-3.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Check whether there is enough air",
+            "ar": "تحقّق من كفاية التهوية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                252,
+                1187,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "loose sheet",
+              "ar": "ورقة سائبة",
+              "kind": "object",
+              "x": 52,
+              "y": 89
+            },
+            {
+              "en": "open window",
+              "ar": "نافذة مفتوحة",
+              "kind": "object",
+              "x": 55,
+              "y": 31
+            },
+            {
+              "en": "keep the papers from blowing away",
+              "ar": "يمنع تطاير الأوراق",
+              "kind": "phrase",
+              "x": 50,
+              "y": 83
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Put the papers safely into a folder",
+          "ar": "ضع الأوراق في ملفّ لحفظها",
+          "purposeEn": "Put the papers safely into a folder.",
+          "purposeAr": "ضع الأوراق في ملفّ لحفظها.",
+          "image": {
+            "id": "conv-life-l2-150-4",
+            "path": "assets/scenes/conversations/life-l2-150-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Put the papers safely into a folder",
+            "ar": "ضع الأوراق في ملفّ لحفظها",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                252,
+                1583,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "blue folder",
+              "ar": "ملفّ أزرق",
+              "kind": "object",
+              "x": 54,
+              "y": 80
+            },
+            {
+              "en": "loose papers",
+              "ar": "أوراق سائبة",
+              "kind": "object",
+              "x": 44,
+              "y": 76
+            },
+            {
+              "en": "put the papers in a folder",
+              "ar": "يضع الأوراق في ملفّ",
+              "kind": "phrase",
+              "x": 38,
+              "y": 70
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-151",
+      "goalAr": "دور عند استخدام الطابعة",
+      "goalEn": "Offering to show someone how",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Ask which paper the printer needs",
+          "ar": "اسأل عن الورق الذي تحتاجه الطابعة",
+          "purposeEn": "Ask which paper the printer needs.",
+          "purposeAr": "اسأل عن الورق الذي تحتاجه الطابعة.",
+          "image": {
+            "id": "conv-life-l2-151-1",
+            "path": "assets/scenes/conversations/life-l2-151-1.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Ask which paper the printer needs",
+            "ar": "اسأل عن الورق الذي تحتاجه الطابعة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                500,
+                393,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "desktop printer",
+              "ar": "طابعة مكتبية",
+              "kind": "object",
+              "x": 50,
+              "y": 56
+            },
+            {
+              "en": "output tray",
+              "ar": "درج إخراج الورق",
+              "kind": "object",
+              "x": 49,
+              "y": 79
+            },
+            {
+              "en": "ask how to use the printer",
+              "ar": "يسأل عن طريقة استخدام الطابعة",
+              "kind": "phrase",
+              "x": 39,
+              "y": 71
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Compare the two paper sizes",
+          "ar": "قارن مقاسَي الورق",
+          "purposeEn": "Compare the two paper sizes.",
+          "purposeAr": "قارن مقاسَي الورق.",
+          "image": {
+            "id": "conv-life-l2-151-2",
+            "path": "assets/scenes/conversations/life-l2-151-2.webp",
+            "width": 392,
+            "height": 241,
+            "en": "Compare the two paper sizes",
+            "ar": "قارن مقاسَي الورق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                500,
+                791,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "large sheet",
+              "ar": "ورقة كبيرة",
+              "kind": "object",
+              "x": 40,
+              "y": 67
+            },
+            {
+              "en": "small sheet",
+              "ar": "ورقة صغيرة",
+              "kind": "object",
+              "x": 67,
+              "y": 75
+            },
+            {
+              "en": "choose the right paper size",
+              "ar": "يختار مقاس الورق المناسب",
+              "kind": "phrase",
+              "x": 54,
+              "y": 65
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Measure from the edge and leave a margin",
+          "ar": "ابدأ القياس من الحافّة واترك هامشًا",
+          "purposeEn": "Measure from the edge and leave a margin.",
+          "purposeAr": "ابدأ القياس من الحافّة واترك هامشًا.",
+          "image": {
+            "id": "conv-life-l2-151-3",
+            "path": "assets/scenes/conversations/life-l2-151-3.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Measure from the edge and leave a margin",
+            "ar": "ابدأ القياس من الحافّة واترك هامشًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                500,
+                1187,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ruler",
+              "ar": "مسطرة",
+              "kind": "object",
+              "x": 54,
+              "y": 80
+            },
+            {
+              "en": "paper edge",
+              "ar": "حافّة الورقة",
+              "kind": "object",
+              "x": 58,
+              "y": 87
+            },
+            {
+              "en": "leave extra room for the fold",
+              "ar": "يترك مساحة إضافية للثني",
+              "kind": "phrase",
+              "x": 55,
+              "y": 79
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Mark the line and have it checked",
+          "ar": "حدّد الخط واطلب مراجعته",
+          "purposeEn": "Mark the line and have it checked.",
+          "purposeAr": "حدّد الخط واطلب مراجعته.",
+          "image": {
+            "id": "conv-life-l2-151-4",
+            "path": "assets/scenes/conversations/life-l2-151-4.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Mark the line and have it checked",
+            "ar": "حدّد الخط واطلب مراجعته",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                500,
+                1583,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "pencil",
+              "ar": "قلم رصاص",
+              "kind": "object",
+              "x": 64,
+              "y": 72
+            },
+            {
+              "en": "dotted line",
+              "ar": "خط منقّط",
+              "kind": "object",
+              "x": 59,
+              "y": 87
+            },
+            {
+              "en": "mark the line in pencil",
+              "ar": "يحدّد الخط بقلم رصاص",
+              "kind": "phrase",
+              "x": 63,
+              "y": 80
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-152",
+      "goalAr": "موعد أبكر لتجنّب الزحام",
+      "goalEn": "Leaving earlier to avoid the rush",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Agree to leave before noon",
+          "ar": "اتّفق على المغادرة قبل الظهر",
+          "purposeEn": "Agree to leave before noon.",
+          "purposeAr": "اتّفق على المغادرة قبل الظهر.",
+          "image": {
+            "id": "conv-life-l2-152-1",
+            "path": "assets/scenes/conversations/life-l2-152-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Agree to leave before noon",
+            "ar": "اتّفق على المغادرة قبل الظهر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                747,
+                393,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "wall clock",
+              "ar": "ساعة حائط",
+              "kind": "object",
+              "x": 50,
+              "y": 22
+            },
+            {
+              "en": "thumbs-up gesture",
+              "ar": "إشارة الموافقة بالإبهام",
+              "kind": "object",
+              "x": 67,
+              "y": 65
+            },
+            {
+              "en": "leave before noon",
+              "ar": "يغادر قبل الظهر",
+              "kind": "phrase",
+              "x": 41,
+              "y": 55
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Pack lunch to take along",
+          "ar": "جهّز غداءً لتأخذه معك",
+          "purposeEn": "Pack lunch to take along.",
+          "purposeAr": "جهّز غداءً لتأخذه معك.",
+          "image": {
+            "id": "conv-life-l2-152-2",
+            "path": "assets/scenes/conversations/life-l2-152-2.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Pack lunch to take along",
+            "ar": "جهّز غداءً لتأخذه معك",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                747,
+                791,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "insulated lunch bag",
+              "ar": "حقيبة غداء عازلة",
+              "kind": "object",
+              "x": 40,
+              "y": 72
+            },
+            {
+              "en": "water bottle",
+              "ar": "قارورة ماء",
+              "kind": "object",
+              "x": 70,
+              "y": 87
+            },
+            {
+              "en": "pack lunch for the trip",
+              "ar": "يجهّز غداءً للرحلة",
+              "kind": "phrase",
+              "x": 33,
+              "y": 72
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Identify a second place to park",
+          "ar": "حدّد مكانًا بديلًا لركن السيارة",
+          "purposeEn": "Identify a second place to park.",
+          "purposeAr": "حدّد مكانًا بديلًا لركن السيارة.",
+          "image": {
+            "id": "conv-life-l2-152-3",
+            "path": "assets/scenes/conversations/life-l2-152-3.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Identify a second place to park",
+            "ar": "حدّد مكانًا بديلًا لركن السيارة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                747,
+                1187,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "parking symbol",
+              "ar": "رمز موقف سيارات",
+              "kind": "object",
+              "x": 24,
+              "y": 77
+            },
+            {
+              "en": "station map",
+              "ar": "خريطة المحطة",
+              "kind": "object",
+              "x": 57,
+              "y": 68
+            },
+            {
+              "en": "look for a second car park",
+              "ar": "يبحث عن موقف سيارات بديل",
+              "kind": "phrase",
+              "x": 32,
+              "y": 64
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Save both parking locations",
+          "ar": "احفظ موقعَي الموقفين",
+          "purposeEn": "Save both parking locations.",
+          "purposeAr": "احفظ موقعَي الموقفين.",
+          "image": {
+            "id": "conv-life-l2-152-4",
+            "path": "assets/scenes/conversations/life-l2-152-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Save both parking locations",
+            "ar": "احفظ موقعَي الموقفين",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                747,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "smartphone",
+              "ar": "هاتف ذكي",
+              "kind": "object",
+              "x": 76,
+              "y": 78
+            },
+            {
+              "en": "phone camera",
+              "ar": "كاميرا الهاتف",
+              "kind": "object",
+              "x": 79,
+              "y": 72
+            },
+            {
+              "en": "save both locations",
+              "ar": "يحفظ الموقعين",
+              "kind": "phrase",
+              "x": 65,
+              "y": 80
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

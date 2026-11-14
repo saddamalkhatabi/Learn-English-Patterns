@@ -1,0 +1,432 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "3fbcb5eed451b6a79e1af79bd8920bf4e1c305106a4705fa7601b4dda9fbb67e"
+  },
+  "conversations": [
+    {
+      "id": "l2-153",
+      "goalAr": "الإبلاغ عن باب تالف",
+      "goalEn": "Reporting a broken door",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Explain why the meeting moved",
+          "ar": "اشرح سبب نقل الاجتماع",
+          "purposeEn": "Explain why the meeting moved.",
+          "purposeAr": "اشرح سبب نقل الاجتماع.",
+          "image": {
+            "id": "conv-life-l2-153-1",
+            "path": "assets/scenes/conversations/life-l2-153-1.webp",
+            "width": 392,
+            "height": 243,
+            "en": "Explain why the meeting moved",
+            "ar": "اشرح سبب نقل الاجتماع",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                395,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "kind": "object",
+              "x": 83,
+              "y": 76,
+              "en": "loose door handle",
+              "ar": "مقبض باب مرتخٍ"
+            },
+            {
+              "kind": "object",
+              "x": 83,
+              "y": 49,
+              "en": "wooden door",
+              "ar": "باب خشبي"
+            },
+            {
+              "kind": "phrase",
+              "x": 69,
+              "y": 75,
+              "en": "move the meeting to another room",
+              "ar": "ينقل الاجتماع إلى غرفة أخرى"
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Notify people who have not arrived",
+          "ar": "أبلغ من لم يصلوا بعد",
+          "purposeEn": "Notify people who have not arrived.",
+          "purposeAr": "أبلغ من لم يصلوا بعد.",
+          "image": {
+            "id": "conv-life-l2-153-2",
+            "path": "assets/scenes/conversations/life-l2-153-2.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Notify people who have not arrived",
+            "ar": "أبلغ من لم يصلوا بعد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                401,
+                3,
+                791,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "kind": "object",
+              "x": 51,
+              "y": 35,
+              "en": "mobile phone",
+              "ar": "هاتف محمول"
+            },
+            {
+              "kind": "object",
+              "x": 53,
+              "y": 87,
+              "en": "staff badge",
+              "ar": "بطاقة موظّف"
+            },
+            {
+              "kind": "phrase",
+              "x": 49,
+              "y": 45,
+              "en": "let people know about the change",
+              "ar": "يُبلغ الناس بالتغيير"
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Prepare a notice for the old door",
+          "ar": "جهّز إعلانًا للباب السابق",
+          "purposeEn": "Prepare a notice for the old door.",
+          "purposeAr": "جهّز إعلانًا للباب السابق.",
+          "image": {
+            "id": "conv-life-l2-153-3",
+            "path": "assets/scenes/conversations/life-l2-153-3.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Prepare a notice for the old door",
+            "ar": "جهّز إعلانًا للباب السابق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                3,
+                1187,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "kind": "object",
+              "x": 54,
+              "y": 69,
+              "en": "direction notice",
+              "ar": "إعلان إرشادي"
+            },
+            {
+              "kind": "object",
+              "x": 50,
+              "y": 67,
+              "en": "direction arrow",
+              "ar": "سهم إرشادي"
+            },
+            {
+              "kind": "phrase",
+              "x": 27,
+              "y": 64,
+              "en": "put a notice on the door",
+              "ar": "يضع إعلانًا على الباب"
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Point people to the new entrance",
+          "ar": "وجّه الناس إلى المدخل الجديد",
+          "purposeEn": "Point people to the new entrance.",
+          "purposeAr": "وجّه الناس إلى المدخل الجديد.",
+          "image": {
+            "id": "conv-life-l2-153-4",
+            "path": "assets/scenes/conversations/life-l2-153-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Point people to the new entrance",
+            "ar": "وجّه الناس إلى المدخل الجديد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                3,
+                1583,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "kind": "object",
+              "x": 79,
+              "y": 40,
+              "en": "arrow sign",
+              "ar": "لافتة سهم"
+            },
+            {
+              "kind": "object",
+              "x": 67,
+              "y": 24,
+              "en": "masking tape",
+              "ar": "شريط لاصق ورقي"
+            },
+            {
+              "kind": "phrase",
+              "x": 79,
+              "y": 53,
+              "en": "use the other entrance",
+              "ar": "استخدم المدخل الآخر"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-155",
+      "goalAr": "تجربة كتابة رسالة بالفرنسية",
+      "goalEn": "Writing a first letter in French",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Show a first draft in French",
+          "ar": "اعرض المسوّدة الأولى بالفرنسية",
+          "purposeEn": "Show a first draft in French.",
+          "purposeAr": "اعرض المسوّدة الأولى بالفرنسية.",
+          "image": {
+            "id": "conv-life-l2-155-1",
+            "path": "assets/scenes/conversations/life-l2-155-1.webp",
+            "width": 392,
+            "height": 243,
+            "en": "Show a first draft in French",
+            "ar": "اعرض المسوّدة الأولى بالفرنسية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                498,
+                395,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "kind": "object",
+              "x": 43,
+              "y": 72,
+              "en": "letter draft",
+              "ar": "مسوّدة خطاب"
+            },
+            {
+              "kind": "object",
+              "x": 11,
+              "y": 76,
+              "en": "French flag",
+              "ar": "علم فرنسا"
+            },
+            {
+              "kind": "phrase",
+              "x": 38,
+              "y": 58,
+              "en": "write a letter in French",
+              "ar": "يكتب خطابًا بالفرنسية"
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Check the greeting first",
+          "ar": "راجع التحية أولًا",
+          "purposeEn": "Check the greeting first.",
+          "purposeAr": "راجع التحية أولًا.",
+          "image": {
+            "id": "conv-life-l2-155-2",
+            "path": "assets/scenes/conversations/life-l2-155-2.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Check the greeting first",
+            "ar": "راجع التحية أولًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                401,
+                498,
+                791,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "kind": "object",
+              "x": 47,
+              "y": 75,
+              "en": "opening line",
+              "ar": "السطر الافتتاحي"
+            },
+            {
+              "kind": "object",
+              "x": 55,
+              "y": 72,
+              "en": "pen tip",
+              "ar": "رأس القلم"
+            },
+            {
+              "kind": "phrase",
+              "x": 53,
+              "y": 69,
+              "en": "use a formal greeting",
+              "ar": "يستخدم تحية رسمية"
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Explain why you are writing in one sentence",
+          "ar": "اذكر في جملة واحدة سبب الكتابة",
+          "purposeEn": "Explain why you are writing in one sentence.",
+          "purposeAr": "اذكر في جملة واحدة سبب الكتابة.",
+          "image": {
+            "id": "conv-life-l2-155-3",
+            "path": "assets/scenes/conversations/life-l2-155-3.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Explain why you are writing in one sentence",
+            "ar": "اذكر في جملة واحدة سبب الكتابة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                498,
+                1187,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "kind": "object",
+              "x": 52,
+              "y": 93,
+              "en": "letter paper",
+              "ar": "ورق مراسلات"
+            },
+            {
+              "kind": "object",
+              "x": 26,
+              "y": 73,
+              "en": "pen",
+              "ar": "قلم"
+            },
+            {
+              "kind": "phrase",
+              "x": 26,
+              "y": 87,
+              "en": "explain why you are writing",
+              "ar": "يوضّح سبب كتابة الخطاب"
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Read the opening lines aloud",
+          "ar": "اقرأ السطرين الافتتاحيين بصوت مسموع",
+          "purposeEn": "Read the opening lines aloud.",
+          "purposeAr": "اقرأ السطرين الافتتاحيين بصوت مسموع.",
+          "image": {
+            "id": "conv-life-l2-155-4",
+            "path": "assets/scenes/conversations/life-l2-155-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Read the opening lines aloud",
+            "ar": "اقرأ السطرين الافتتاحيين بصوت مسموع",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                498,
+                1583,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "kind": "object",
+              "x": 43,
+              "y": 66,
+              "en": "letter",
+              "ar": "خطاب"
+            },
+            {
+              "kind": "object",
+              "x": 55,
+              "y": 76,
+              "en": "sheet of paper",
+              "ar": "ورقة"
+            },
+            {
+              "kind": "phrase",
+              "x": 41,
+              "y": 44,
+              "en": "read the first two lines back",
+              "ar": "يعيد قراءة السطرين الأولين"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
