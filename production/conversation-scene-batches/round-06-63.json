@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "acc12006d3ee4d2dc2e0ee7fe5b9fe6bb81120186f3630aeb44c82ff9102ec72"
+  },
+  "conversations": [
+    {
+      "id": "l3-021",
+      "goalAr": "طلب طبق قليل التوابل",
+      "goalEn": "Ordering a mild dish",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Ask which dishes are mild",
+          "ar": "اسأل عن الأطباق قليلة التوابل",
+          "purposeEn": "Ask which dishes are mild.",
+          "purposeAr": "اسأل عن الأطباق قليلة التوابل.",
+          "image": {
+            "id": "conv-life-l3-021-1",
+            "path": "assets/scenes/conversations/life-l3-021-1.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Ask which dishes are mild",
+            "ar": "اسأل عن الأطباق قليلة التوابل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                393,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "picture menu",
+              "ar": "قائمة طعام مصوّرة",
+              "kind": "object",
+              "x": 50,
+              "y": 74
+            },
+            {
+              "en": "order pad",
+              "ar": "دفتر الطلبات",
+              "kind": "object",
+              "x": 80,
+              "y": 59
+            },
+            {
+              "en": "ask which dishes are mild",
+              "ar": "يسأل عن الأطباق قليلة التوابل",
+              "kind": "phrase",
+              "x": 50,
+              "y": 71
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Choose grilled chicken and rice",
+          "ar": "اختر الدجاج المشوي والأرز",
+          "purposeEn": "Choose grilled chicken and rice.",
+          "purposeAr": "اختر الدجاج المشوي والأرز.",
+          "image": {
+            "id": "conv-life-l3-021-2",
+            "path": "assets/scenes/conversations/life-l3-021-2.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Choose grilled chicken and rice",
+            "ar": "اختر الدجاج المشوي والأرز",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                3,
+                790,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "grilled chicken",
+              "ar": "دجاج مشوي",
+              "kind": "object",
+              "x": 71,
+              "y": 77
+            },
+            {
+              "en": "rice",
+              "ar": "أرز",
+              "kind": "object",
+              "x": 63,
+              "y": 59
+            },
+            {
+              "en": "order the chicken and rice",
+              "ar": "يطلب الدجاج والأرز",
+              "kind": "phrase",
+              "x": 63,
+              "y": 69
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Request the sauce separately",
+          "ar": "اطلب تقديم الصلصة منفصلة",
+          "purposeEn": "Request the sauce separately.",
+          "purposeAr": "اطلب تقديم الصلصة منفصلة.",
+          "image": {
+            "id": "conv-life-l3-021-3",
+            "path": "assets/scenes/conversations/life-l3-021-3.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Request the sauce separately",
+            "ar": "اطلب تقديم الصلصة منفصلة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                3,
+                1186,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "sauce cup",
+              "ar": "كوب صلصة",
+              "kind": "object",
+              "x": 58,
+              "y": 88
+            },
+            {
+              "en": "main dish",
+              "ar": "طبق رئيسي",
+              "kind": "object",
+              "x": 79,
+              "y": 88
+            },
+            {
+              "en": "leave the sauce on the side",
+              "ar": "يقدّم الصلصة على حدة",
+              "kind": "phrase",
+              "x": 57,
+              "y": 82
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Tell the server how the food tastes",
+          "ar": "أخبر النادل برأيك في مذاق الطعام",
+          "purposeEn": "Tell the server how the food tastes.",
+          "purposeAr": "أخبر النادل برأيك في مذاق الطعام.",
+          "image": {
+            "id": "conv-life-l3-021-4",
+            "path": "assets/scenes/conversations/life-l3-021-4.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Tell the server how the food tastes",
+            "ar": "أخبر النادل برأيك في مذاق الطعام",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                3,
+                1583,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "fork",
+              "ar": "شوكة",
+              "kind": "object",
+              "x": 56,
+              "y": 37
+            },
+            {
+              "en": "plate of food",
+              "ar": "طبق طعام",
+              "kind": "object",
+              "x": 56,
+              "y": 88
+            },
+            {
+              "en": "it's quite delicious",
+              "ar": "إنه لذيذ جدًا",
+              "kind": "phrase",
+              "x": 47,
+              "y": 44
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-022",
+      "goalAr": "الفرق بين المربّى ومربّى البرتقال",
+      "goalEn": "Comparing jam and marmalade",
+      "stages": [
+        {
+          "from": 1,
+          "to": 2,
+          "en": "Ask how jam and marmalade differ",
+          "ar": "اسأل عن الفرق بين المربّى ومربّى الحمضيات",
+          "purposeEn": "Ask how jam and marmalade differ.",
+          "purposeAr": "اسأل عن الفرق بين المربّى ومربّى الحمضيات.",
+          "image": {
+            "id": "conv-life-l3-022-1",
+            "path": "assets/scenes/conversations/life-l3-022-1.webp",
+            "width": 390,
+            "height": 244,
+            "en": "Ask how jam and marmalade differ",
+            "ar": "اسأل عن الفرق بين المربّى ومربّى الحمضيات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                250,
+                393,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "jam jar",
+              "ar": "مرطبان مربّى",
+              "kind": "object",
+              "x": 38,
+              "y": 79
+            },
+            {
+              "en": "marmalade jar",
+              "ar": "مرطبان مربّى حمضيات",
+              "kind": "object",
+              "x": 63,
+              "y": 78
+            },
+            {
+              "en": "tell jam from marmalade",
+              "ar": "يميّز بين المربّى ومربّى الحمضيات",
+              "kind": "phrase",
+              "x": 52,
+              "y": 67
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "en": "Explain what gives marmalade its taste",
+          "ar": "اشرح ما الذي يعطي مربّى الحمضيات مذاقه",
+          "purposeEn": "Explain what gives marmalade its taste.",
+          "purposeAr": "اشرح ما الذي يعطي مربّى الحمضيات مذاقه.",
+          "image": {
+            "id": "conv-life-l3-022-2",
+            "path": "assets/scenes/conversations/life-l3-022-2.webp",
+            "width": 390,
+            "height": 244,
+            "en": "Explain what gives marmalade its taste",
+            "ar": "اشرح ما الذي يعطي مربّى الحمضيات مذاقه",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                250,
+                790,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "orange peel",
+              "ar": "قشر البرتقال",
+              "kind": "object",
+              "x": 25,
+              "y": 64
+            },
+            {
+              "en": "spoonful of marmalade",
+              "ar": "ملعقة من مربّى الحمضيات",
+              "kind": "object",
+              "x": 68,
+              "y": 24
+            },
+            {
+              "en": "include pieces of peel",
+              "ar": "يحتوي على قطع من القشر",
+              "kind": "phrase",
+              "x": 61,
+              "y": 50
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "en": "Try some marmalade on toast",
+          "ar": "جرّب مربّى الحمضيات على الخبز المحمّص",
+          "purposeEn": "Try some marmalade on toast.",
+          "purposeAr": "جرّب مربّى الحمضيات على الخبز المحمّص.",
+          "image": {
+            "id": "conv-life-l3-022-3",
+            "path": "assets/scenes/conversations/life-l3-022-3.webp",
+            "width": 389,
+            "height": 244,
+            "en": "Try some marmalade on toast",
+            "ar": "جرّب مربّى الحمضيات على الخبز المحمّص",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                250,
+                1186,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "slice of toast",
+              "ar": "شريحة خبز محمّص",
+              "kind": "object",
+              "x": 49,
+              "y": 83
+            },
+            {
+              "en": "spreading knife",
+              "ar": "سكّين دهن",
+              "kind": "object",
+              "x": 41,
+              "y": 76
+            },
+            {
+              "en": "spread marmalade on toast",
+              "ar": "يدهن خبزًا محمّصًا بمربّى الحمضيات",
+              "kind": "phrase",
+              "x": 49,
+              "y": 80
+            }
+          ]
+        },
+        {
+          "from": 7,
+          "to": 7,
+          "en": "Choose water when little milk is left",
+          "ar": "اختر الماء عندما لا يتبقّى إلا قليل من الحليب",
+          "purposeEn": "Choose water when little milk is left.",
+          "purposeAr": "اختر الماء عندما لا يتبقّى إلا قليل من الحليب.",
+          "image": {
+            "id": "conv-life-l3-022-4",
+            "path": "assets/scenes/conversations/life-l3-022-4.webp",
+            "width": 390,
+            "height": 244,
+            "en": "Choose water when little milk is left",
+            "ar": "اختر الماء عندما لا يتبقّى إلا قليل من الحليب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                250,
+                1583,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "nearly empty glass",
+              "ar": "كوب شبه فارغ",
+              "kind": "object",
+              "x": 32,
+              "y": 66
+            },
+            {
+              "en": "water jug",
+              "ar": "إبريق ماء",
+              "kind": "object",
+              "x": 70,
+              "y": 48
+            },
+            {
+              "en": "there is almost no milk left",
+              "ar": "لم يتبقَّ حليب تقريبًا",
+              "kind": "phrase",
+              "x": 34,
+              "y": 79
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-023",
+      "goalAr": "إعداد وجبة مما في الثلاجة",
+      "goalEn": "Using what is in the fridge",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Check what is available in the refrigerator",
+          "ar": "تحقّق ممّا هو موجود في الثلاجة",
+          "purposeEn": "Check what is available in the refrigerator.",
+          "purposeAr": "تحقّق ممّا هو موجود في الثلاجة.",
+          "image": {
+            "id": "conv-life-l3-023-1",
+            "path": "assets/scenes/conversations/life-l3-023-1.webp",
+            "width": 390,
+            "height": 240,
+            "en": "Check what is available in the refrigerator",
+            "ar": "تحقّق ممّا هو موجود في الثلاجة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                500,
+                393,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "leftover rice",
+              "ar": "أرز متبقٍّ",
+              "kind": "object",
+              "x": 23,
+              "y": 19
+            },
+            {
+              "en": "cooked vegetables",
+              "ar": "خضراوات مطبوخة",
+              "kind": "object",
+              "x": 37,
+              "y": 83
+            },
+            {
+              "en": "see what is in the fridge",
+              "ar": "يتفقّد ما في الثلاجة",
+              "kind": "phrase",
+              "x": 37,
+              "y": 79
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Plan a meal with what you have",
+          "ar": "خطّط لوجبة بما لديك",
+          "purposeEn": "Plan a meal with what you have.",
+          "purposeAr": "خطّط لوجبة بما لديك.",
+          "image": {
+            "id": "conv-life-l3-023-2",
+            "path": "assets/scenes/conversations/life-l3-023-2.webp",
+            "width": 390,
+            "height": 240,
+            "en": "Plan a meal with what you have",
+            "ar": "خطّط لوجبة بما لديك",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                500,
+                790,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "food container",
+              "ar": "علبة حفظ طعام",
+              "kind": "object",
+              "x": 36,
+              "y": 87
+            },
+            {
+              "en": "vegetable mix",
+              "ar": "خليط خضراوات",
+              "kind": "object",
+              "x": 67,
+              "y": 87
+            },
+            {
+              "en": "make a meal with what we have",
+              "ar": "يحضّر وجبة مما لدينا",
+              "kind": "phrase",
+              "x": 52,
+              "y": 85
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Warm the rice while someone sets the table",
+          "ar": "سخّن الأرز بينما يجهّز شخص آخر المائدة",
+          "purposeEn": "Warm the rice while someone sets the table.",
+          "purposeAr": "سخّن الأرز بينما يجهّز شخص آخر المائدة.",
+          "image": {
+            "id": "conv-life-l3-023-3",
+            "path": "assets/scenes/conversations/life-l3-023-3.webp",
+            "width": 389,
+            "height": 240,
+            "en": "Warm the rice while someone sets the table",
+            "ar": "سخّن الأرز بينما يجهّز شخص آخر المائدة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                500,
+                1186,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "saucepan",
+              "ar": "قدر",
+              "kind": "object",
+              "x": 48,
+              "y": 86
+            },
+            {
+              "en": "wooden spoon",
+              "ar": "ملعقة خشبية",
+              "kind": "object",
+              "x": 39,
+              "y": 67
+            },
+            {
+              "en": "warm up the rice",
+              "ar": "يسخّن الأرز",
+              "kind": "phrase",
+              "x": 44,
+              "y": 74
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Divide the washing and table setting",
+          "ar": "قسّم عمل غسل الأطباق وتجهيز المائدة",
+          "purposeEn": "Divide the washing and table setting.",
+          "purposeAr": "قسّم عمل غسل الأطباق وتجهيز المائدة.",
+          "image": {
+            "id": "conv-life-l3-023-4",
+            "path": "assets/scenes/conversations/life-l3-023-4.webp",
+            "width": 390,
+            "height": 240,
+            "en": "Divide the washing and table setting",
+            "ar": "قسّم عمل غسل الأطباق وتجهيز المائدة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                500,
+                1583,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "plate",
+              "ar": "طبق",
+              "kind": "object",
+              "x": 15,
+              "y": 86
+            },
+            {
+              "en": "placemat",
+              "ar": "مفرش فردي",
+              "kind": "object",
+              "x": 79,
+              "y": 67
+            },
+            {
+              "en": "wash the plates while I set the table",
+              "ar": "اغسل الأطباق بينما أجهّز المائدة",
+              "kind": "phrase",
+              "x": 23,
+              "y": 73
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-024",
+      "goalAr": "تناوب إعداد العشاء",
+      "goalEn": "Taking turns cooking",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Say whose turn it is to make dinner",
+          "ar": "اذكر من عليه إعداد العشاء",
+          "purposeEn": "Say whose turn it is to make dinner.",
+          "purposeAr": "اذكر من عليه إعداد العشاء.",
+          "image": {
+            "id": "conv-life-l3-024-1",
+            "path": "assets/scenes/conversations/life-l3-024-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Say whose turn it is to make dinner",
+            "ar": "اذكر من عليه إعداد العشاء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                747,
+                393,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "cooking pot",
+              "ar": "قدر طبخ",
+              "kind": "object",
+              "x": 22,
+              "y": 82
+            },
+            {
+              "en": "carrots",
+              "ar": "جزر",
+              "kind": "object",
+              "x": 54,
+              "y": 87
+            },
+            {
+              "en": "it's my turn to cook",
+              "ar": "حان دوري للطبخ",
+              "kind": "phrase",
+              "x": 28,
+              "y": 55
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Share out the vegetable preparation",
+          "ar": "قسّم خطوات تجهيز الخضراوات",
+          "purposeEn": "Share out the vegetable preparation.",
+          "purposeAr": "قسّم خطوات تجهيز الخضراوات.",
+          "image": {
+            "id": "conv-life-l3-024-2",
+            "path": "assets/scenes/conversations/life-l3-024-2.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Share out the vegetable preparation",
+            "ar": "قسّم خطوات تجهيز الخضراوات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                747,
+                790,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "carrots",
+              "ar": "جزر",
+              "kind": "object",
+              "x": 37,
+              "y": 86
+            },
+            {
+              "en": "chopped onions",
+              "ar": "بصل مفروم",
+              "kind": "object",
+              "x": 74,
+              "y": 81
+            },
+            {
+              "en": "chop the onions while I wash the carrots",
+              "ar": "قطّع البصل بينما أغسل الجزر",
+              "kind": "phrase",
+              "x": 67,
+              "y": 68
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Choose the smaller kitchen knife",
+          "ar": "اختر سكّين المطبخ الأصغر",
+          "purposeEn": "Choose the smaller kitchen knife.",
+          "purposeAr": "اختر سكّين المطبخ الأصغر.",
+          "image": {
+            "id": "conv-life-l3-024-3",
+            "path": "assets/scenes/conversations/life-l3-024-3.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Choose the smaller kitchen knife",
+            "ar": "اختر سكّين المطبخ الأصغر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                747,
+                1186,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "knife handle",
+              "ar": "مقبض السكّين",
+              "kind": "object",
+              "x": 46,
+              "y": 51
+            },
+            {
+              "en": "utensil holder",
+              "ar": "حامل أدوات المطبخ",
+              "kind": "object",
+              "x": 33,
+              "y": 78
+            },
+            {
+              "en": "use the small knife",
+              "ar": "استخدم السكّين الصغيرة",
+              "kind": "phrase",
+              "x": 47,
+              "y": 48
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Get the cutting board ready",
+          "ar": "جهّز لوح التقطيع",
+          "purposeEn": "Get the cutting board ready.",
+          "purposeAr": "جهّز لوح التقطيع.",
+          "image": {
+            "id": "conv-life-l3-024-4",
+            "path": "assets/scenes/conversations/life-l3-024-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Get the cutting board ready",
+            "ar": "جهّز لوح التقطيع",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                747,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "cutting board",
+              "ar": "لوح تقطيع",
+              "kind": "object",
+              "x": 45,
+              "y": 78
+            },
+            {
+              "en": "diced vegetables",
+              "ar": "خضراوات مقطّعة إلى مكعّبات",
+              "kind": "object",
+              "x": 80,
+              "y": 87
+            },
+            {
+              "en": "get the cutting board",
+              "ar": "يحضر لوح التقطيع",
+              "kind": "phrase",
+              "x": 45,
+              "y": 72
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

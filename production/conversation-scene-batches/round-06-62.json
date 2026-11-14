@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "2660cfe825535905c1f94078fa3349c832780f845a91133445dbef0f307fcf15"
+  },
+  "conversations": [
+    {
+      "id": "l3-017",
+      "goalAr": "الاطمئنان على العائلة عن بُعد",
+      "goalEn": "Checking on family from afar",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Ask about the weather and warm clothing",
+          "ar": "اسأل عن الطقس والملابس الدافئة",
+          "purposeEn": "Ask about the weather and warm clothing.",
+          "purposeAr": "اسأل عن الطقس والملابس الدافئة.",
+          "image": {
+            "id": "conv-life-l3-017-1",
+            "path": "assets/scenes/conversations/life-l3-017-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Ask about the weather and warm clothing",
+            "ar": "اسأل عن الطقس والملابس الدافئة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                393,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "folded sweater",
+              "ar": "كنزة مطويّة",
+              "kind": "object",
+              "x": 53,
+              "y": 75
+            },
+            {
+              "en": "knitted hat",
+              "ar": "قبّعة محبوكة",
+              "kind": "object",
+              "x": 84,
+              "y": 86
+            },
+            {
+              "en": "ask how cold it is",
+              "ar": "يسأل عن مدى برودة الطقس",
+              "kind": "phrase",
+              "x": 29,
+              "y": 38
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Suggest taking another layer",
+          "ar": "اقترح أخذ طبقة ملابس إضافية",
+          "purposeEn": "Suggest taking another layer.",
+          "purposeAr": "اقترح أخذ طبقة ملابس إضافية.",
+          "image": {
+            "id": "conv-life-l3-017-2",
+            "path": "assets/scenes/conversations/life-l3-017-2.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Suggest taking another layer",
+            "ar": "اقترح أخذ طبقة ملابس إضافية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                3,
+                790,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "sweater",
+              "ar": "كنزة",
+              "kind": "object",
+              "x": 46,
+              "y": 61
+            },
+            {
+              "en": "scarf",
+              "ar": "وشاح",
+              "kind": "object",
+              "x": 77,
+              "y": 60
+            },
+            {
+              "en": "take a sweater when you go out",
+              "ar": "يأخذ كنزة عند الخروج",
+              "kind": "phrase",
+              "x": 47,
+              "y": 44
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Confirm the plan to drive before dark",
+          "ar": "أكّد خطّة القيادة قبل حلول الظلام",
+          "purposeEn": "Confirm the plan to drive before dark.",
+          "purposeAr": "أكّد خطّة القيادة قبل حلول الظلام.",
+          "image": {
+            "id": "conv-life-l3-017-3",
+            "path": "assets/scenes/conversations/life-l3-017-3.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Confirm the plan to drive before dark",
+            "ar": "أكّد خطّة القيادة قبل حلول الظلام",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                3,
+                1187,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "steering wheel",
+              "ar": "مقود السيارة",
+              "kind": "object",
+              "x": 68,
+              "y": 71
+            },
+            {
+              "en": "windscreen",
+              "ar": "زجاج السيارة الأمامي",
+              "kind": "object",
+              "x": 47,
+              "y": 20
+            },
+            {
+              "en": "drive there before dark",
+              "ar": "يذهب بالسيارة قبل حلول الظلام",
+              "kind": "phrase",
+              "x": 64,
+              "y": 55
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Check in after arriving",
+          "ar": "اتّصل للاطمئنان بعد الوصول",
+          "purposeEn": "Check in after arriving.",
+          "purposeAr": "اتّصل للاطمئنان بعد الوصول.",
+          "image": {
+            "id": "conv-life-l3-017-4",
+            "path": "assets/scenes/conversations/life-l3-017-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Check in after arriving",
+            "ar": "اتّصل للاطمئنان بعد الوصول",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                3,
+                1583,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "mobile phone",
+              "ar": "هاتف محمول",
+              "kind": "object",
+              "x": 34,
+              "y": 63
+            },
+            {
+              "en": "porch light",
+              "ar": "مصباح المدخل",
+              "kind": "object",
+              "x": 79,
+              "y": 21
+            },
+            {
+              "en": "call if something happens",
+              "ar": "يتّصل إذا حدث شيء",
+              "kind": "phrase",
+              "x": 33,
+              "y": 62
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-018",
+      "goalAr": "دعوة الأسرة كلها",
+      "goalEn": "Inviting the whole family",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Offer a small piece of cake",
+          "ar": "اعرض قطعة صغيرة من الكعكة",
+          "purposeEn": "Offer a small piece of cake.",
+          "purposeAr": "اعرض قطعة صغيرة من الكعكة.",
+          "image": {
+            "id": "conv-life-l3-018-1",
+            "path": "assets/scenes/conversations/life-l3-018-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Offer a small piece of cake",
+            "ar": "اعرض قطعة صغيرة من الكعكة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                251,
+                393,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "cake slice",
+              "ar": "قطعة كعكة",
+              "kind": "object",
+              "x": 44,
+              "y": 83
+            },
+            {
+              "en": "cake stand",
+              "ar": "حامل الكعكة",
+              "kind": "object",
+              "x": 75,
+              "y": 74
+            },
+            {
+              "en": "have a small piece of cake",
+              "ar": "يتناول قطعة صغيرة من الكعكة",
+              "kind": "phrase",
+              "x": 25,
+              "y": 69
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Invite someone to lunch",
+          "ar": "ادعُ شخصًا إلى الغداء",
+          "purposeEn": "Invite someone to lunch.",
+          "purposeAr": "ادعُ شخصًا إلى الغداء.",
+          "image": {
+            "id": "conv-life-l3-018-2",
+            "path": "assets/scenes/conversations/life-l3-018-2.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Invite someone to lunch",
+            "ar": "ادعُ شخصًا إلى الغداء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                251,
+                790,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "invitation card",
+              "ar": "بطاقة دعوة",
+              "kind": "object",
+              "x": 55,
+              "y": 49
+            },
+            {
+              "en": "place setting",
+              "ar": "ترتيب أدوات المائدة لشخص واحد",
+              "kind": "object",
+              "x": 24,
+              "y": 84
+            },
+            {
+              "en": "join us for lunch",
+              "ar": "انضمّ إلينا على الغداء",
+              "kind": "phrase",
+              "x": 52,
+              "y": 52
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Welcome the children too",
+          "ar": "رحّب بحضور الأطفال أيضًا",
+          "purposeEn": "Welcome the children too.",
+          "purposeAr": "رحّب بحضور الأطفال أيضًا.",
+          "image": {
+            "id": "conv-life-l3-018-3",
+            "path": "assets/scenes/conversations/life-l3-018-3.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Welcome the children too",
+            "ar": "رحّب بحضور الأطفال أيضًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                251,
+                1187,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "doorway",
+              "ar": "مدخل",
+              "kind": "object",
+              "x": 45,
+              "y": 63
+            },
+            {
+              "en": "guest",
+              "ar": "ضيف",
+              "kind": "object",
+              "x": 59,
+              "y": 80
+            },
+            {
+              "en": "bring your children with you",
+              "ar": "أحضر أطفالك معك",
+              "kind": "phrase",
+              "x": 39,
+              "y": 51
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Bring a dish to share",
+          "ar": "أحضر طبقًا للمشاركة",
+          "purposeEn": "Bring a dish to share.",
+          "purposeAr": "أحضر طبقًا للمشاركة.",
+          "image": {
+            "id": "conv-life-l3-018-4",
+            "path": "assets/scenes/conversations/life-l3-018-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Bring a dish to share",
+            "ar": "أحضر طبقًا للمشاركة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                251,
+                1583,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "fruit salad",
+              "ar": "سلطة فواكه",
+              "kind": "object",
+              "x": 60,
+              "y": 81
+            },
+            {
+              "en": "serving lid",
+              "ar": "غطاء التقديم",
+              "kind": "object",
+              "x": 63,
+              "y": 57
+            },
+            {
+              "en": "bring a dish to share",
+              "ar": "يحضر طبقًا للمشاركة",
+              "kind": "phrase",
+              "x": 58,
+              "y": 58
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-019",
+      "goalAr": "وضع حدّ لمكالمات العمل",
+      "goalEn": "Setting a boundary on work calls",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Explain why not to call during work",
+          "ar": "اشرح لماذا لا يناسبك الاتصال أثناء العمل",
+          "purposeEn": "Explain why not to call during work.",
+          "purposeAr": "اشرح لماذا لا يناسبك الاتصال أثناء العمل.",
+          "image": {
+            "id": "conv-life-l3-019-1",
+            "path": "assets/scenes/conversations/life-l3-019-1.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Explain why not to call during work",
+            "ar": "اشرح لماذا لا يناسبك الاتصال أثناء العمل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                499,
+                393,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "smartphone",
+              "ar": "هاتف ذكي",
+              "kind": "object",
+              "x": 73,
+              "y": 87
+            },
+            {
+              "en": "laptop",
+              "ar": "حاسوب محمول",
+              "kind": "object",
+              "x": 14,
+              "y": 77
+            },
+            {
+              "en": "don't call me at the office",
+              "ar": "لا تتّصل بي وأنا في المكتب",
+              "kind": "phrase",
+              "x": 69,
+              "y": 83
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Agree on a time after work",
+          "ar": "اتّفق على موعد بعد العمل",
+          "purposeEn": "Agree on a time after work.",
+          "purposeAr": "اتّفق على موعد بعد العمل.",
+          "image": {
+            "id": "conv-life-l3-019-2",
+            "path": "assets/scenes/conversations/life-l3-019-2.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Agree on a time after work",
+            "ar": "اتّفق على موعد بعد العمل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                499,
+                790,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "desk clock",
+              "ar": "ساعة مكتبية",
+              "kind": "object",
+              "x": 75,
+              "y": 43
+            },
+            {
+              "en": "pen holder",
+              "ar": "حامل أقلام",
+              "kind": "object",
+              "x": 92,
+              "y": 73
+            },
+            {
+              "en": "finish work at five",
+              "ar": "ينهي العمل في الخامسة",
+              "kind": "phrase",
+              "x": 59,
+              "y": 43
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Confirm that you will call tomorrow",
+          "ar": "أكّد أنك ستتّصل غدًا",
+          "purposeEn": "Confirm that you will call tomorrow.",
+          "purposeAr": "أكّد أنك ستتّصل غدًا.",
+          "image": {
+            "id": "conv-life-l3-019-3",
+            "path": "assets/scenes/conversations/life-l3-019-3.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Confirm that you will call tomorrow",
+            "ar": "أكّد أنك ستتّصل غدًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                499,
+                1187,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "mobile phone",
+              "ar": "هاتف محمول",
+              "kind": "object",
+              "x": 55,
+              "y": 47
+            },
+            {
+              "en": "notepad",
+              "ar": "دفتر ملاحظات",
+              "kind": "object",
+              "x": 49,
+              "y": 91
+            },
+            {
+              "en": "give someone a call tomorrow",
+              "ar": "يتّصل بشخص غدًا",
+              "kind": "phrase",
+              "x": 52,
+              "y": 47
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Ask for a text before the call",
+          "ar": "اطلب رسالة قبل الاتصال",
+          "purposeEn": "Ask for a text before the call.",
+          "purposeAr": "اطلب رسالة قبل الاتصال.",
+          "image": {
+            "id": "conv-life-l3-019-4",
+            "path": "assets/scenes/conversations/life-l3-019-4.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Ask for a text before the call",
+            "ar": "اطلب رسالة قبل الاتصال",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                499,
+                1583,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "smartphone",
+              "ar": "هاتف ذكي",
+              "kind": "object",
+              "x": 59,
+              "y": 73
+            },
+            {
+              "en": "bus seat",
+              "ar": "مقعد الحافلة",
+              "kind": "object",
+              "x": 86,
+              "y": 64
+            },
+            {
+              "en": "send me a text first",
+              "ar": "أرسل لي رسالة أولًا",
+              "kind": "phrase",
+              "x": 58,
+              "y": 76
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-020",
+      "goalAr": "مناقشة فيلم دون كشف الأحداث",
+      "goalEn": "Discussing a film without spoilers",
+      "stages": [
+        {
+          "from": 1,
+          "to": 2,
+          "en": "Ask what kind of movie someone likes",
+          "ar": "اسأل عن نوع الأفلام المفضّل",
+          "purposeEn": "Ask what kind of movie someone likes.",
+          "purposeAr": "اسأل عن نوع الأفلام المفضّل.",
+          "image": {
+            "id": "conv-life-l3-020-1",
+            "path": "assets/scenes/conversations/life-l3-020-1.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Ask what kind of movie someone likes",
+            "ar": "اسأل عن نوع الأفلام المفضّل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                746,
+                393,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "remote control",
+              "ar": "جهاز تحكّم عن بُعد",
+              "kind": "object",
+              "x": 58,
+              "y": 87
+            },
+            {
+              "en": "television",
+              "ar": "تلفاز",
+              "kind": "object",
+              "x": 68,
+              "y": 48
+            },
+            {
+              "en": "recommend a documentary",
+              "ar": "يرشّح فيلمًا وثائقيًا",
+              "kind": "phrase",
+              "x": 34,
+              "y": 65
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 5,
+          "en": "Discuss watching with subtitles",
+          "ar": "ناقش المشاهدة مع ترجمة مكتوبة",
+          "purposeEn": "Discuss watching with subtitles.",
+          "purposeAr": "ناقش المشاهدة مع ترجمة مكتوبة.",
+          "image": {
+            "id": "conv-life-l3-020-2",
+            "path": "assets/scenes/conversations/life-l3-020-2.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Discuss watching with subtitles",
+            "ar": "ناقش المشاهدة مع ترجمة مكتوبة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                746,
+                790,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "subtitles button",
+              "ar": "زرّ الترجمة المكتوبة",
+              "kind": "object",
+              "x": 56,
+              "y": 57
+            },
+            {
+              "en": "settings icon",
+              "ar": "رمز الإعدادات",
+              "kind": "object",
+              "x": 76,
+              "y": 58
+            },
+            {
+              "en": "turn on the subtitles",
+              "ar": "يشغّل الترجمة المكتوبة",
+              "kind": "phrase",
+              "x": 40,
+              "y": 79
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 8,
+          "en": "Describe what the documentary is about",
+          "ar": "صِف موضوع الفيلم الوثائقي",
+          "purposeEn": "Describe what the documentary is about.",
+          "purposeAr": "صِف موضوع الفيلم الوثائقي.",
+          "image": {
+            "id": "conv-life-l3-020-3",
+            "path": "assets/scenes/conversations/life-l3-020-3.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Describe what the documentary is about",
+            "ar": "صِف موضوع الفيلم الوثائقي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                746,
+                1187,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "stone bridge",
+              "ar": "جسر حجري",
+              "kind": "object",
+              "x": 57,
+              "y": 49
+            },
+            {
+              "en": "volunteers",
+              "ar": "متطوّعون",
+              "kind": "object",
+              "x": 54,
+              "y": 35
+            },
+            {
+              "en": "restore an old bridge",
+              "ar": "يرمّم جسرًا قديمًا",
+              "kind": "phrase",
+              "x": 56,
+              "y": 49
+            }
+          ]
+        },
+        {
+          "from": 9,
+          "to": 9,
+          "en": "Tell a friend which film you recommend",
+          "ar": "اذكر لصديق الفيلم الذي ترشّحه",
+          "purposeEn": "Tell a friend which film you recommend.",
+          "purposeAr": "اذكر لصديق الفيلم الذي ترشّحه.",
+          "image": {
+            "id": "conv-life-l3-020-4",
+            "path": "assets/scenes/conversations/life-l3-020-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Tell a friend which film you recommend",
+            "ar": "اذكر لصديق الفيلم الذي ترشّحه",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                746,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bridge scene",
+              "ar": "مشهد جسر",
+              "kind": "object",
+              "x": 61,
+              "y": 44
+            },
+            {
+              "en": "thumbs-up gesture",
+              "ar": "إشارة الاستحسان بالإبهام",
+              "kind": "object",
+              "x": 36,
+              "y": 55
+            },
+            {
+              "en": "one of my favorite movies",
+              "ar": "أحد أفلامي المفضّلة",
+              "kind": "phrase",
+              "x": 36,
+              "y": 54
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

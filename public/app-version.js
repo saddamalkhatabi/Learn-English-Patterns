@@ -1,1 +1,1 @@
-self.EP_BUILD={"version":"d82143dcb5892617","label":"2026.11 · Learn, notice, create"};
+self.EP_BUILD={"version":"d6cbb033bf48a181","label":"2026.11 · Learn, notice, create"};

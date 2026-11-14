@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "0394dd45fc23fea1a44194567acc6cc636e27de68f67d6eebb802ef78e23260a"
+  },
+  "conversations": [
+    {
+      "id": "l3-025",
+      "goalAr": "اختيار وجبة للضيوف",
+      "goalEn": "Choosing a meal with guests",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Compare two choices for a meal",
+          "ar": "قارن بين خيارين للوجبة",
+          "purposeEn": "Compare two choices for a meal.",
+          "purposeAr": "قارن بين خيارين للوجبة.",
+          "image": {
+            "id": "conv-life-l3-025-1",
+            "path": "assets/scenes/conversations/life-l3-025-1.webp",
+            "width": 392,
+            "height": 241,
+            "en": "Compare two choices for a meal",
+            "ar": "قارن بين خيارين للوجبة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                395,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "dried beans",
+              "ar": "فاصولياء مجفّفة",
+              "kind": "object",
+              "x": 16,
+              "y": 77
+            },
+            {
+              "en": "fish tacos",
+              "ar": "تاكو بالسمك",
+              "kind": "object",
+              "x": 49,
+              "y": 73
+            },
+            {
+              "en": "choose what to serve",
+              "ar": "يختار ما سيقدّمه",
+              "kind": "phrase",
+              "x": 49,
+              "y": 65
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Explain which dish you prefer",
+          "ar": "اشرح أيّ طبق تفضّل",
+          "purposeEn": "Explain which dish you prefer.",
+          "purposeAr": "اشرح أيّ طبق تفضّل.",
+          "image": {
+            "id": "conv-life-l3-025-2",
+            "path": "assets/scenes/conversations/life-l3-025-2.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Explain which dish you prefer",
+            "ar": "اشرح أيّ طبق تفضّل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                401,
+                3,
+                791,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bean stew",
+              "ar": "يخنة فاصولياء",
+              "kind": "object",
+              "x": 81,
+              "y": 75
+            },
+            {
+              "en": "recipe picture",
+              "ar": "صورة لوصفة",
+              "kind": "object",
+              "x": 43,
+              "y": 78
+            },
+            {
+              "en": "prefer meat to fish",
+              "ar": "يفضّل اللحم على السمك",
+              "kind": "phrase",
+              "x": 65,
+              "y": 63
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Serve the toppings separately",
+          "ar": "قدّم الإضافات على حدة",
+          "purposeEn": "Serve the toppings separately.",
+          "purposeAr": "قدّم الإضافات على حدة.",
+          "image": {
+            "id": "conv-life-l3-025-3",
+            "path": "assets/scenes/conversations/life-l3-025-3.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Serve the toppings separately",
+            "ar": "قدّم الإضافات على حدة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                3,
+                1187,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ladle",
+              "ar": "مغرفة",
+              "kind": "object",
+              "x": 58,
+              "y": 62
+            },
+            {
+              "en": "topping bowls",
+              "ar": "أوعية الإضافات",
+              "kind": "object",
+              "x": 59,
+              "y": 91
+            },
+            {
+              "en": "serve the toppings separately",
+              "ar": "يقدّم الإضافات منفصلة",
+              "kind": "phrase",
+              "x": 69,
+              "y": 73
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Check if anyone wants a meat-free dish",
+          "ar": "اسأل إن كان أحد يريد طبقًا بلا لحم",
+          "purposeEn": "Check if anyone wants a meat-free dish.",
+          "purposeAr": "اسأل إن كان أحد يريد طبقًا بلا لحم.",
+          "image": {
+            "id": "conv-life-l3-025-4",
+            "path": "assets/scenes/conversations/life-l3-025-4.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Check if anyone wants a meat-free dish",
+            "ar": "اسأل إن كان أحد يريد طبقًا بلا لحم",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                3,
+                1583,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "vegetable stew",
+              "ar": "يخنة خضراوات",
+              "kind": "object",
+              "x": 55,
+              "y": 85
+            },
+            {
+              "en": "serving bowl",
+              "ar": "وعاء تقديم",
+              "kind": "object",
+              "x": 52,
+              "y": 60
+            },
+            {
+              "en": "ask for a meat-free option",
+              "ar": "يطلب خيارًا خاليًا من اللحم",
+              "kind": "phrase",
+              "x": 37,
+              "y": 64
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-026",
+      "goalAr": "تذوّق كعكة منزلية",
+      "goalEn": "Trying the homemade cake",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Compliment the chocolate cake",
+          "ar": "أثنِ على كعكة الشوكولاتة",
+          "purposeEn": "Compliment the chocolate cake.",
+          "purposeAr": "أثنِ على كعكة الشوكولاتة.",
+          "image": {
+            "id": "conv-life-l3-026-1",
+            "path": "assets/scenes/conversations/life-l3-026-1.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Compliment the chocolate cake",
+            "ar": "أثنِ على كعكة الشوكولاتة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                250,
+                395,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "chocolate cake",
+              "ar": "كعكة شوكولاتة",
+              "kind": "object",
+              "x": 57,
+              "y": 75
+            },
+            {
+              "en": "cake server",
+              "ar": "ملعقة تقديم الكعك",
+              "kind": "object",
+              "x": 26,
+              "y": 92
+            },
+            {
+              "en": "compliment someone on the cake",
+              "ar": "يثني على كعكة أعدّها شخص",
+              "kind": "phrase",
+              "x": 36,
+              "y": 71
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Ask for just a small slice",
+          "ar": "اطلب قطعة صغيرة فقط",
+          "purposeEn": "Ask for just a small slice.",
+          "purposeAr": "اطلب قطعة صغيرة فقط.",
+          "image": {
+            "id": "conv-life-l3-026-2",
+            "path": "assets/scenes/conversations/life-l3-026-2.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Ask for just a small slice",
+            "ar": "اطلب قطعة صغيرة فقط",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                401,
+                250,
+                791,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "small slice",
+              "ar": "قطعة صغيرة",
+              "kind": "object",
+              "x": 18,
+              "y": 89
+            },
+            {
+              "en": "cake knife",
+              "ar": "سكّين كعك",
+              "kind": "object",
+              "x": 40,
+              "y": 66
+            },
+            {
+              "en": "cut a small slice",
+              "ar": "يقطع قطعة صغيرة",
+              "kind": "phrase",
+              "x": 38,
+              "y": 70
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Offer strawberries with the cake",
+          "ar": "اعرض الفراولة مع الكعكة",
+          "purposeEn": "Offer strawberries with the cake.",
+          "purposeAr": "اعرض الفراولة مع الكعكة.",
+          "image": {
+            "id": "conv-life-l3-026-3",
+            "path": "assets/scenes/conversations/life-l3-026-3.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Offer strawberries with the cake",
+            "ar": "اعرض الفراولة مع الكعكة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                250,
+                1187,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bowl of strawberries",
+              "ar": "وعاء فراولة",
+              "kind": "object",
+              "x": 72,
+              "y": 55
+            },
+            {
+              "en": "cake slice",
+              "ar": "قطعة كعك",
+              "kind": "object",
+              "x": 52,
+              "y": 85
+            },
+            {
+              "en": "offer some fruit with the cake",
+              "ar": "يعرض بعض الفاكهة مع الكعكة",
+              "kind": "phrase",
+              "x": 70,
+              "y": 63
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Invite your guest to help themselves",
+          "ar": "ادعُ الضيف ليأخذ ما يريد",
+          "purposeEn": "Invite your guest to help themselves.",
+          "purposeAr": "ادعُ الضيف ليأخذ ما يريد.",
+          "image": {
+            "id": "conv-life-l3-026-4",
+            "path": "assets/scenes/conversations/life-l3-026-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Invite your guest to help themselves",
+            "ar": "ادعُ الضيف ليأخذ ما يريد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                250,
+                1583,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "strawberry",
+              "ar": "حبّة فراولة",
+              "kind": "object",
+              "x": 49,
+              "y": 53
+            },
+            {
+              "en": "fruit bowl",
+              "ar": "وعاء فواكه",
+              "kind": "object",
+              "x": 54,
+              "y": 65
+            },
+            {
+              "en": "help yourself to some strawberries",
+              "ar": "تفضّل وخذ بعض الفراولة",
+              "kind": "phrase",
+              "x": 47,
+              "y": 43
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-027",
+      "goalAr": "التعامل مع انسكاب الحليب",
+      "goalEn": "Cleaning up after spilled milk",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Explain that you spilled the milk by accident",
+          "ar": "اشرح أنك سكبت الحليب دون قصد",
+          "purposeEn": "Explain that you spilled the milk by accident.",
+          "purposeAr": "اشرح أنك سكبت الحليب دون قصد.",
+          "image": {
+            "id": "conv-life-l3-027-1",
+            "path": "assets/scenes/conversations/life-l3-027-1.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Explain that you spilled the milk by accident",
+            "ar": "اشرح أنك سكبت الحليب دون قصد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                498,
+                395,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "overturned jug",
+              "ar": "إبريق مقلوب",
+              "kind": "object",
+              "x": 71,
+              "y": 74
+            },
+            {
+              "en": "spilled milk",
+              "ar": "حليب مسكوب",
+              "kind": "object",
+              "x": 48,
+              "y": 90
+            },
+            {
+              "en": "accidentally spill the milk",
+              "ar": "يسكب الحليب دون قصد",
+              "kind": "phrase",
+              "x": 32,
+              "y": 72
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Ask for a cloth to wipe up the spill",
+          "ar": "اطلب قطعة قماش لمسح الحليب",
+          "purposeEn": "Ask for a cloth to wipe up the spill.",
+          "purposeAr": "اطلب قطعة قماش لمسح الحليب.",
+          "image": {
+            "id": "conv-life-l3-027-2",
+            "path": "assets/scenes/conversations/life-l3-027-2.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Ask for a cloth to wipe up the spill",
+            "ar": "اطلب قطعة قماش لمسح الحليب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                401,
+                498,
+                791,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "cleaning cloth",
+              "ar": "قطعة قماش للتنظيف",
+              "kind": "object",
+              "x": 51,
+              "y": 61
+            },
+            {
+              "en": "glass jug",
+              "ar": "إبريق زجاجي",
+              "kind": "object",
+              "x": 84,
+              "y": 84
+            },
+            {
+              "en": "pass me a cloth",
+              "ar": "ناولني قطعة قماش",
+              "kind": "phrase",
+              "x": 51,
+              "y": 62
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Move a chair away from the spill",
+          "ar": "أبعد الكرسي عن مكان الانسكاب",
+          "purposeEn": "Move a chair away from the spill.",
+          "purposeAr": "أبعد الكرسي عن مكان الانسكاب.",
+          "image": {
+            "id": "conv-life-l3-027-3",
+            "path": "assets/scenes/conversations/life-l3-027-3.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Move a chair away from the spill",
+            "ar": "أبعد الكرسي عن مكان الانسكاب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                498,
+                1187,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "chair",
+              "ar": "كرسي",
+              "kind": "object",
+              "x": 79,
+              "y": 75
+            },
+            {
+              "en": "puddle on the floor",
+              "ar": "بقعة سائل على الأرض",
+              "kind": "object",
+              "x": 50,
+              "y": 89
+            },
+            {
+              "en": "move the chair out of the way",
+              "ar": "يُبعد الكرسي عن الطريق",
+              "kind": "phrase",
+              "x": 78,
+              "y": 67
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Wipe the floor while the other person helps",
+          "ar": "امسح الأرضية بينما يساعدك الشخص الآخر",
+          "purposeEn": "Wipe the floor while the other person helps.",
+          "purposeAr": "امسح الأرضية بينما يساعدك الشخص الآخر.",
+          "image": {
+            "id": "conv-life-l3-027-4",
+            "path": "assets/scenes/conversations/life-l3-027-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Wipe the floor while the other person helps",
+            "ar": "امسح الأرضية بينما يساعدك الشخص الآخر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                498,
+                1583,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "cleaning cloth",
+              "ar": "قطعة قماش للتنظيف",
+              "kind": "object",
+              "x": 53,
+              "y": 93
+            },
+            {
+              "en": "tiled floor",
+              "ar": "أرضية من البلاط",
+              "kind": "object",
+              "x": 49,
+              "y": 83
+            },
+            {
+              "en": "wipe the floor",
+              "ar": "يمسح الأرضية",
+              "kind": "phrase",
+              "x": 51,
+              "y": 86
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-028",
+      "goalAr": "السؤال عن موعد جاهزية العشاء",
+      "goalEn": "Asking when dinner will be ready",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Ask how much longer dinner will take",
+          "ar": "اسأل كم يلزم من الوقت حتى يجهز العشاء",
+          "purposeEn": "Ask how much longer dinner will take.",
+          "purposeAr": "اسأل كم يلزم من الوقت حتى يجهز العشاء.",
+          "image": {
+            "id": "conv-life-l3-028-1",
+            "path": "assets/scenes/conversations/life-l3-028-1.webp",
+            "width": 392,
+            "height": 243,
+            "en": "Ask how much longer dinner will take",
+            "ar": "اسأل كم يلزم من الوقت حتى يجهز العشاء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                746,
+                395,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "kitchen clock",
+              "ar": "ساعة المطبخ",
+              "kind": "object",
+              "x": 54,
+              "y": 15
+            },
+            {
+              "en": "covered pot",
+              "ar": "قدر مغطّى",
+              "kind": "object",
+              "x": 58,
+              "y": 78
+            },
+            {
+              "en": "how much longer will it take",
+              "ar": "كم سيستغرق من الوقت بعد؟",
+              "kind": "phrase",
+              "x": 45,
+              "y": 37
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Let the rice rest",
+          "ar": "اترك الأرز يرتاح قليلًا",
+          "purposeEn": "Let the rice rest.",
+          "purposeAr": "اترك الأرز يرتاح قليلًا.",
+          "image": {
+            "id": "conv-life-l3-028-2",
+            "path": "assets/scenes/conversations/life-l3-028-2.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Let the rice rest",
+            "ar": "اترك الأرز يرتاح قليلًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                401,
+                746,
+                791,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "cooked rice",
+              "ar": "أرز مطبوخ",
+              "kind": "object",
+              "x": 50,
+              "y": 83
+            },
+            {
+              "en": "pot lid",
+              "ar": "غطاء القدر",
+              "kind": "object",
+              "x": 31,
+              "y": 58
+            },
+            {
+              "en": "let the rice rest",
+              "ar": "يترك الأرز يرتاح قليلًا",
+              "kind": "phrase",
+              "x": 51,
+              "y": 69
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Set out the plates while waiting",
+          "ar": "ضع الأطباق على المائدة أثناء الانتظار",
+          "purposeEn": "Set out the plates while waiting.",
+          "purposeAr": "ضع الأطباق على المائدة أثناء الانتظار.",
+          "image": {
+            "id": "conv-life-l3-028-3",
+            "path": "assets/scenes/conversations/life-l3-028-3.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Set out the plates while waiting",
+            "ar": "ضع الأطباق على المائدة أثناء الانتظار",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                746,
+                1187,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "dinner plate",
+              "ar": "طبق عشاء",
+              "kind": "object",
+              "x": 43,
+              "y": 85
+            },
+            {
+              "en": "stack of plates",
+              "ar": "رزمة أطباق",
+              "kind": "object",
+              "x": 26,
+              "y": 89
+            },
+            {
+              "en": "set out the plates",
+              "ar": "يضع الأطباق على المائدة",
+              "kind": "phrase",
+              "x": 46,
+              "y": 87
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Bring the salad to the table",
+          "ar": "أحضر السلطة إلى المائدة",
+          "purposeEn": "Bring the salad to the table.",
+          "purposeAr": "أحضر السلطة إلى المائدة.",
+          "image": {
+            "id": "conv-life-l3-028-4",
+            "path": "assets/scenes/conversations/life-l3-028-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Bring the salad to the table",
+            "ar": "أحضر السلطة إلى المائدة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                746,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "salad bowl",
+              "ar": "وعاء سلطة",
+              "kind": "object",
+              "x": 77,
+              "y": 67
+            },
+            {
+              "en": "dinner plate",
+              "ar": "طبق عشاء",
+              "kind": "object",
+              "x": 43,
+              "y": 86
+            },
+            {
+              "en": "put the salad on the table",
+              "ar": "يضع السلطة على المائدة",
+              "kind": "phrase",
+              "x": 76,
+              "y": 71
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
