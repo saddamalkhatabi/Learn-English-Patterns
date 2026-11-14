@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "14b9b204771201eaa1493543f503e816fe9072cdc7e6c09ab2dd165d26e452fc"
+  },
+  "conversations": [
+    {
+      "id": "l2-189",
+      "goalAr": "تأكيد موعد زيارة بوسطن",
+      "goalEn": "Asking for notice before a visit",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Ask to be told when the visitor is coming",
+          "ar": "اطلب معرفة موعد قدوم الزائر",
+          "purposeEn": "Ask to be told when the visitor is coming.",
+          "purposeAr": "اطلب معرفة موعد قدوم الزائر.",
+          "image": {
+            "id": "conv-life-l2-189-1",
+            "path": "assets/scenes/conversations/life-l2-189-1.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Ask to be told when the visitor is coming",
+            "ar": "اطلب معرفة موعد قدوم الزائر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                394,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "trip calendar",
+              "ar": "تقويم الرحلة",
+              "kind": "object",
+              "x": 62,
+              "y": 79
+            },
+            {
+              "en": "train photograph",
+              "ar": "صورة قطار",
+              "kind": "object",
+              "x": 49,
+              "y": 79
+            },
+            {
+              "en": "let us know when you will be coming",
+              "ar": "أخبرنا متى ستأتي",
+              "kind": "phrase",
+              "x": 48,
+              "y": 81
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Send the dates after booking",
+          "ar": "أرسل التواريخ بعد الحجز",
+          "purposeEn": "Send the dates after booking.",
+          "purposeAr": "أرسل التواريخ بعد الحجز.",
+          "image": {
+            "id": "conv-life-l2-189-2",
+            "path": "assets/scenes/conversations/life-l2-189-2.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Send the dates after booking",
+            "ar": "أرسل التواريخ بعد الحجز",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                3,
+                791,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "train ticket",
+              "ar": "تذكرة قطار",
+              "kind": "object",
+              "x": 38,
+              "y": 73
+            },
+            {
+              "en": "booking confirmation",
+              "ar": "تأكيد الحجز",
+              "kind": "object",
+              "x": 72,
+              "y": 73
+            },
+            {
+              "en": "send the dates once the tickets are booked",
+              "ar": "يرسل التواريخ بعد حجز التذاكر",
+              "kind": "phrase",
+              "x": 44,
+              "y": 74
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Share the arrival time and train number",
+          "ar": "أرسل وقت الوصول ورقم القطار",
+          "purposeEn": "Share the arrival time and train number.",
+          "purposeAr": "أرسل وقت الوصول ورقم القطار.",
+          "image": {
+            "id": "conv-life-l2-189-3",
+            "path": "assets/scenes/conversations/life-l2-189-3.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Share the arrival time and train number",
+            "ar": "أرسل وقت الوصول ورقم القطار",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                3,
+                1186,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "station clock",
+              "ar": "ساعة المحطة",
+              "kind": "object",
+              "x": 81,
+              "y": 23
+            },
+            {
+              "en": "train pictogram",
+              "ar": "رمز قطار",
+              "kind": "object",
+              "x": 46,
+              "y": 25
+            },
+            {
+              "en": "check the train for delays",
+              "ar": "يتحقّق من تأخّر القطار",
+              "kind": "phrase",
+              "x": 69,
+              "y": 47
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Prepare food in case the train arrives late",
+          "ar": "جهّز طعامًا لاحتمال تأخّر القطار",
+          "purposeEn": "Prepare food in case the train arrives late.",
+          "purposeAr": "جهّز طعامًا لاحتمال تأخّر القطار.",
+          "image": {
+            "id": "conv-life-l2-189-4",
+            "path": "assets/scenes/conversations/life-l2-189-4.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Prepare food in case the train arrives late",
+            "ar": "جهّز طعامًا لاحتمال تأخّر القطار",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                3,
+                1583,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "sandwich box",
+              "ar": "علبة شطائر",
+              "kind": "object",
+              "x": 58,
+              "y": 66
+            },
+            {
+              "en": "thermos flask",
+              "ar": "قارورة حافظة للحرارة",
+              "kind": "object",
+              "x": 88,
+              "y": 79
+            },
+            {
+              "en": "bring something to eat",
+              "ar": "يحضر شيئًا للأكل",
+              "kind": "phrase",
+              "x": 45,
+              "y": 60
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-190",
+      "goalAr": "طلب قصير بذيل سؤال",
+      "goalEn": "Making a short request with a tag",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Notice what the wind is doing",
+          "ar": "لاحظ أثر الرياح",
+          "purposeEn": "Notice what the wind is doing.",
+          "purposeAr": "لاحظ أثر الرياح.",
+          "image": {
+            "id": "conv-life-l2-190-1",
+            "path": "assets/scenes/conversations/life-l2-190-1.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Notice what the wind is doing",
+            "ar": "لاحظ أثر الرياح",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                250,
+                394,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "open window",
+              "ar": "نافذة مفتوحة",
+              "kind": "object",
+              "x": 70,
+              "y": 34
+            },
+            {
+              "en": "loose papers",
+              "ar": "أوراق سائبة",
+              "kind": "object",
+              "x": 42,
+              "y": 66
+            },
+            {
+              "en": "blow the papers off the desk",
+              "ar": "يطيّر الأوراق عن المكتب",
+              "kind": "phrase",
+              "x": 56,
+              "y": 64
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Close the window and protect the papers",
+          "ar": "أغلق النافذة واحمِ الأوراق",
+          "purposeEn": "Close the window and protect the papers.",
+          "purposeAr": "أغلق النافذة واحمِ الأوراق.",
+          "image": {
+            "id": "conv-life-l2-190-2",
+            "path": "assets/scenes/conversations/life-l2-190-2.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Close the window and protect the papers",
+            "ar": "أغلق النافذة واحمِ الأوراق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                250,
+                791,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "window handle",
+              "ar": "مقبض النافذة",
+              "kind": "object",
+              "x": 59,
+              "y": 24
+            },
+            {
+              "en": "stack of papers",
+              "ar": "رزمة أوراق",
+              "kind": "object",
+              "x": 57,
+              "y": 92
+            },
+            {
+              "en": "close the window",
+              "ar": "يغلق النافذة",
+              "kind": "phrase",
+              "x": 55,
+              "y": 38
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Set the sheet aside for signing",
+          "ar": "ضع الورقة جانبًا لتوقيعها",
+          "purposeEn": "Set the sheet aside for signing.",
+          "purposeAr": "ضع الورقة جانبًا لتوقيعها.",
+          "image": {
+            "id": "conv-life-l2-190-3",
+            "path": "assets/scenes/conversations/life-l2-190-3.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Set the sheet aside for signing",
+            "ar": "ضع الورقة جانبًا لتوقيعها",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                250,
+                1186,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "top sheet",
+              "ar": "الورقة العلوية",
+              "kind": "object",
+              "x": 47,
+              "y": 87
+            },
+            {
+              "en": "pen",
+              "ar": "قلم",
+              "kind": "object",
+              "x": 66,
+              "y": 85
+            },
+            {
+              "en": "leave the top sheet out",
+              "ar": "يترك الورقة العلوية خارج الملفّ",
+              "kind": "phrase",
+              "x": 53,
+              "y": 82
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Put the signed papers in the folder",
+          "ar": "ضع الأوراق الموقّعة في الملفّ",
+          "purposeEn": "Put the signed papers in the folder.",
+          "purposeAr": "ضع الأوراق الموقّعة في الملفّ.",
+          "image": {
+            "id": "conv-life-l2-190-4",
+            "path": "assets/scenes/conversations/life-l2-190-4.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Put the signed papers in the folder",
+            "ar": "ضع الأوراق الموقّعة في الملفّ",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                250,
+                1583,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "document folder",
+              "ar": "ملفّ مستندات",
+              "kind": "object",
+              "x": 72,
+              "y": 78
+            },
+            {
+              "en": "signature",
+              "ar": "توقيع",
+              "kind": "object",
+              "x": 47,
+              "y": 68
+            },
+            {
+              "en": "file the papers together",
+              "ar": "يحفظ الأوراق معًا في الملفّ",
+              "kind": "phrase",
+              "x": 56,
+              "y": 71
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-191",
+      "goalAr": "تشجيع طالب جديد على السؤال",
+      "goalEn": "Encouraging a new learner to ask",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Encourage someone to ask questions",
+          "ar": "شجّع أحدًا على طرح الأسئلة",
+          "purposeEn": "Encourage someone to ask questions.",
+          "purposeAr": "شجّع أحدًا على طرح الأسئلة.",
+          "image": {
+            "id": "conv-life-l2-191-1",
+            "path": "assets/scenes/conversations/life-l2-191-1.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Encourage someone to ask questions",
+            "ar": "شجّع أحدًا على طرح الأسئلة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                499,
+                394,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "raised hand",
+              "ar": "يد مرفوعة",
+              "kind": "object",
+              "x": 37,
+              "y": 17
+            },
+            {
+              "en": "open book",
+              "ar": "كتاب مفتوح",
+              "kind": "object",
+              "x": 58,
+              "y": 89
+            },
+            {
+              "en": "do not be afraid to ask questions",
+              "ar": "لا تخف من طرح الأسئلة",
+              "kind": "phrase",
+              "x": 37,
+              "y": 25
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Review the first instruction with a learner",
+          "ar": "راجع التعليمة الأولى مع المتعلّم",
+          "purposeEn": "Review the first instruction with a learner.",
+          "purposeAr": "راجع التعليمة الأولى مع المتعلّم.",
+          "image": {
+            "id": "conv-life-l2-191-2",
+            "path": "assets/scenes/conversations/life-l2-191-2.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Review the first instruction with a learner",
+            "ar": "راجع التعليمة الأولى مع المتعلّم",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                499,
+                791,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "instruction sheet",
+              "ar": "ورقة تعليمات",
+              "kind": "object",
+              "x": 76,
+              "y": 72
+            },
+            {
+              "en": "question mark",
+              "ar": "علامة استفهام",
+              "kind": "object",
+              "x": 79,
+              "y": 61
+            },
+            {
+              "en": "go over the first instruction again",
+              "ar": "يراجع التعليمة الأولى مرّة أخرى",
+              "kind": "phrase",
+              "x": 68,
+              "y": 61
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Ask what the learner notices in the picture",
+          "ar": "اسأل المتعلّم عمّا يلاحظه في الصورة",
+          "purposeEn": "Ask what the learner notices in the picture.",
+          "purposeAr": "اسأل المتعلّم عمّا يلاحظه في الصورة.",
+          "image": {
+            "id": "conv-life-l2-191-3",
+            "path": "assets/scenes/conversations/life-l2-191-3.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Ask what the learner notices in the picture",
+            "ar": "اسأل المتعلّم عمّا يلاحظه في الصورة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                499,
+                1186,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "printed photograph",
+              "ar": "صورة مطبوعة",
+              "kind": "object",
+              "x": 56,
+              "y": 65
+            },
+            {
+              "en": "shop counter in the photo",
+              "ar": "منضدة متجر في الصورة",
+              "kind": "object",
+              "x": 68,
+              "y": 69
+            },
+            {
+              "en": "describe what the people are doing",
+              "ar": "يصِف ما يفعله الأشخاص",
+              "kind": "phrase",
+              "x": 64,
+              "y": 65
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Imagine the customer’s next question",
+          "ar": "تخيّل سؤال الزبون التالي",
+          "purposeEn": "Imagine the customer’s next question.",
+          "purposeAr": "تخيّل سؤال الزبون التالي.",
+          "image": {
+            "id": "conv-life-l2-191-4",
+            "path": "assets/scenes/conversations/life-l2-191-4.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Imagine the customer’s next question",
+            "ar": "تخيّل سؤال الزبون التالي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                499,
+                1583,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "cash register",
+              "ar": "صندوق محاسبة",
+              "kind": "object",
+              "x": 68,
+              "y": 73
+            },
+            {
+              "en": "shop assistant",
+              "ar": "موظّف المتجر",
+              "kind": "object",
+              "x": 85,
+              "y": 58
+            },
+            {
+              "en": "imagine what the customer might ask",
+              "ar": "يتخيّل ما قد يسأل عنه الزبون",
+              "kind": "phrase",
+              "x": 48,
+              "y": 55
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-192",
+      "goalAr": "مساعدة في رعاية القطة",
+      "goalEn": "Reporting an offer to look after a cat",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Explain who looked after the cat",
+          "ar": "اشرح من اعتنى بالقطّة",
+          "purposeEn": "Explain who looked after the cat.",
+          "purposeAr": "اشرح من اعتنى بالقطّة.",
+          "image": {
+            "id": "conv-life-l2-192-1",
+            "path": "assets/scenes/conversations/life-l2-192-1.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Explain who looked after the cat",
+            "ar": "اشرح من اعتنى بالقطّة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                747,
+                394,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "cat",
+              "ar": "قطّة",
+              "kind": "object",
+              "x": 31,
+              "y": 77
+            },
+            {
+              "en": "pet bowl",
+              "ar": "وعاء حيوان أليف",
+              "kind": "object",
+              "x": 52,
+              "y": 89
+            },
+            {
+              "en": "look after the cat while I am away",
+              "ar": "يعتني بالقطّة أثناء غيابي",
+              "kind": "phrase",
+              "x": 39,
+              "y": 78
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Thank the person who offered to help",
+          "ar": "اشكر من عرض المساعدة",
+          "purposeEn": "Thank the person who offered to help.",
+          "purposeAr": "اشكر من عرض المساعدة.",
+          "image": {
+            "id": "conv-life-l2-192-2",
+            "path": "assets/scenes/conversations/life-l2-192-2.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Thank the person who offered to help",
+            "ar": "اشكر من عرض المساعدة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                747,
+                791,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "thank-you card",
+              "ar": "بطاقة شكر",
+              "kind": "object",
+              "x": 53,
+              "y": 54
+            },
+            {
+              "en": "paw print icon",
+              "ar": "رمز أثر كفّ",
+              "kind": "object",
+              "x": 59,
+              "y": 53
+            },
+            {
+              "en": "thank someone for feeding your cat",
+              "ar": "يشكر شخصًا على إطعام قطّته",
+              "kind": "phrase",
+              "x": 48,
+              "y": 64
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Show how much food to give",
+          "ar": "وضّح مقدار الطعام المطلوب",
+          "purposeEn": "Show how much food to give.",
+          "purposeAr": "وضّح مقدار الطعام المطلوب.",
+          "image": {
+            "id": "conv-life-l2-192-3",
+            "path": "assets/scenes/conversations/life-l2-192-3.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Show how much food to give",
+            "ar": "وضّح مقدار الطعام المطلوب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                747,
+                1186,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "food scoop",
+              "ar": "مكيال طعام",
+              "kind": "object",
+              "x": 56,
+              "y": 68
+            },
+            {
+              "en": "dry cat food",
+              "ar": "طعام قطط جاف",
+              "kind": "object",
+              "x": 71,
+              "y": 87
+            },
+            {
+              "en": "measure out the cat food",
+              "ar": "يقيس حصة طعام القطّة",
+              "kind": "phrase",
+              "x": 58,
+              "y": 70
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Leave clear instructions and a contact",
+          "ar": "اترك تعليمات واضحة ووسيلة للاتصال",
+          "purposeEn": "Leave clear instructions and a contact.",
+          "purposeAr": "اترك تعليمات واضحة ووسيلة للاتصال.",
+          "image": {
+            "id": "conv-life-l2-192-4",
+            "path": "assets/scenes/conversations/life-l2-192-4.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Leave clear instructions and a contact",
+            "ar": "اترك تعليمات واضحة ووسيلة للاتصال",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                747,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "feeding instructions",
+              "ar": "تعليمات الإطعام",
+              "kind": "object",
+              "x": 34,
+              "y": 71
+            },
+            {
+              "en": "food container",
+              "ar": "علبة الطعام",
+              "kind": "object",
+              "x": 66,
+              "y": 31
+            },
+            {
+              "en": "leave contact details with the instructions",
+              "ar": "يترك بيانات الاتصال مع التعليمات",
+              "kind": "phrase",
+              "x": 71,
+              "y": 72
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
