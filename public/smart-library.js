@@ -74,7 +74,8 @@ async function openSmartScene(id){
   sentenceEn:row.en,sentenceAr:row.ar,words:data.words,reviewed:data.reviewed,
   taskEn:'Imagine two people in this scene. Write an opening, a reply, and a follow-up question.',
   taskAr:'تخيّل شخصين في هذا المشهد واكتب افتتاحية وردًّا وسؤال متابعة.',
-  width:crop?.width||500,height:crop?.height||300,patterns:[]};
+  width:crop?.width||500,height:crop?.height||300,
+  patterns:smartSentencePatterns(row).map(id=>({id,en:row.en,ar:row.ar}))};
  const same=studioPattern?PILOT.sentences.filter(sentence=>sentence.pattern_id===studioPattern):[];
  const location=dialogueSceneLocations.get(id);
  const dialogue=practice?PILOT?.dialogues.find(item=>item.id===location.id):null;
@@ -93,7 +94,7 @@ async function openSmartScene(id){
   ${same.length?`<details class="idea-disclosure"><summary>${T('جمل وصور النمط نفسه','More scenes using this pattern')} · ${same.length}</summary>
    ${same.map(sentence=>`<button class="textlink studio-related-line" onclick="openStudioScene('${sentence.id}')">${EP.words(sentence)}</button>`).join('')}</details>`:''}
   <details class="studio-dialogue-area idea-disclosure" open><summary>${T('ابتكر محادثة من الصورة','Create a conversation from this scene')}</summary>
-   ${sceneAiTools(practice?'idea':'studio',id)}<div id="studio-dialogue">${renderIdeaRoleplay(studioWordScene,false)}</div>
+   <div id="studio-dialogue">${renderIdeaRoleplay(studioWordScene)}</div>
   </details>
   ${studioPattern?`<div class="buttonrow"><button class="secondary" onclick="recordDailyPractice('pattern-scene','${studioPattern}:${id}');this.textContent=T('✓ سُجّلت الممارسة','✓ Practice logged');this.disabled=true">${T('مارست النمط بصوتي','I practised the pattern aloud')}</button>
    ${studioNextLesson?`<button class="primary" onclick="openLesson(${studioNextLesson})">${T('الدرس التالي','Next lesson')} ↗</button>`:''}</div>`:''}</div></article>`;

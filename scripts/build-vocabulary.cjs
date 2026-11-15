@@ -2,6 +2,7 @@ const fs=require('node:fs'),assert=require('node:assert/strict');
 const crypto=require('node:crypto');
 const nlp=require('wink-nlp')(require('wink-eng-lite-web-model'));
 const {normalize,tokens,posFor,includesTerm}=require('../public/vocabulary-core.js');
+const sceneGuide=require('../public/scene-guide.js');
 const read=name=>require('../public/'+name+'.json');
 const ideas=read('idea-scenes'),dialogues=read('dialogues').dialogues,art=read('conversation-scenes').scenes;
 const imageWords=require('../production/scene-word-maps.json');
@@ -134,8 +135,27 @@ for(const scene of ideas.scenes){
  }
  for(const pattern of scene.patterns.filter(pattern=>pattern.en))addSource({type:'idea-example',id:scene.id,pattern:pattern.id,en:pattern.en,ar:pattern.ar,patternIds:[pattern.id],sceneIds:[scene.id]});
 }
-const phrases=fs.readFileSync('production/vocabulary-phrases.tsv','utf8').trim().split(/\r?\n/).map(line=>line.split('|'));
-for(const [phrase,ar] of phrases){
+const guidePatternForms=new Map(['pilot','expansion-media'].flatMap(name=>read(name).patterns.map(pattern=>[pattern.id,pattern.form])));
+const guideFor=scene=>sceneGuide.make(scene,id=>guidePatternForms.get(id));
+const guideScenes=new Map();
+for(const scene of ideas.scenes){
+ if(!guideScenes.has(scene.topic))guideScenes.set(scene.topic,scene);
+}
+const extraGuideScenes=[
+ ideas.scenes.find(scene=>scene.id==='conv-life-l3-200-1'),
+ ideas.scenes.find(scene=>guideFor(scene).questions[1].phrase==='how can you tell')
+].filter(Boolean);
+for(const scene of new Set([...guideScenes.values(),...extraGuideScenes])){
+ guideFor(scene).questions.forEach((question,step)=>addSource({
+  type:'idea-guide',id:scene.id,step,title:scene.ar,en:question.en,ar:question.ar,
+  patternIds:question.model?.id?[question.model.id]:[],sceneIds:[scene.id]
+ }));
+}
+const phrases=new Map(fs.readFileSync('production/vocabulary-phrases.tsv','utf8').trim().split(/\r?\n/).map(line=>{
+ const [phrase,ar]=line.split('|');return [normalize(phrase),[phrase,ar]];
+}));
+for(const [phrase,ar] of Object.entries(sceneGuide.phrases))if(!phrases.has(phrase))phrases.set(phrase,[phrase,ar]);
+for(const [phrase,ar] of phrases.values()){
  const first=normalize(tokens(phrase)[0]);
  sources.forEach((source,index)=>{
   if(sourceTokens[index].has(first)&&includesTerm(source.en,phrase))

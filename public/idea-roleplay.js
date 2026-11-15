@@ -18,7 +18,7 @@ function renderIdeaRoleplay(scene,withAI=true){
   <div id="idea-guided-chat"></div>
   ${withAI?`<details class="scene-ai">
    <summary>${T('ابتكر حوارًا مع مساعدك واستورده','Create and import a dialogue with your AI assistant')}</summary>
-   <p>${T('يمكنك مشاركة شاشة الصورة من تطبيق مساعدك والتحاور معه، أو نسخ الطلب إليه ثم لصق حواره هنا لحفظه.','Share this scene from your assistant’s screen-sharing feature, or copy the prompt and paste its dialogue here to save it.')}</p>
+   <p>${T('انسخ طلب كتابة الحوار إلى مساعدك، ثم الصق الحوار هنا لحفظه في أرشيفك.','Copy the dialogue-writing prompt to your assistant, then paste its dialogue here to save it.')}</p>
    <div class="buttonrow"><button class="secondary" onclick="showIdeaDialoguePrompt()">✦ ${T('جهّز طلب الحوار','Prepare dialogue prompt')}</button>
     <button class="secondary" data-copy-scene-ai onclick="copySceneAiPrompt(this)" hidden>${T('انسخ الطلب','Copy prompt')}</button></div>
    <textarea readonly hidden data-scene-ai-prompt aria-label="${T('طلب الحوار','Dialogue prompt')}" rows="6" dir="ltr" lang="en"></textarea>

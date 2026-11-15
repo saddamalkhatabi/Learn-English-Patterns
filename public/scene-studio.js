@@ -86,36 +86,10 @@ function paintSceneStudio(){
 function studioPicture(row,ar,en){
  return pilotScene({...row,en,ar,context:''});
 }
-function sceneAiTools(kind,id){
- return `<section class="scene-ai studio-ai" aria-labelledby="studio-ai-title"><h3 id="studio-ai-title">${T('تحاور مع مساعدك الذكي','Talk with your AI assistant')}</h3>
- <p>${T('جهّز طلبًا لهذه الصورة والصقه في مساعدك. إذا كان يدعم مشاركة الشاشة، ابدأ المشاركة من تطبيقه واختر تبويب المكتبة لتتحدّثا عمّا يظهر في الصورة.','Create a prompt for this photo and paste it into your assistant. If it supports screen sharing, start sharing from the assistant and select this library tab to discuss the photo together.')}</p>
- <div class="buttonrow"><button class="secondary" onclick="showSceneAiPrompt(this,'${kind}','${H(id)}')">${T('جهّز طلب المحادثة','Create conversation prompt')}</button>
- <button class="primary" data-copy-scene-ai onclick="copySceneAiPrompt(this)" hidden>${T('انسخ الطلب','Copy prompt')}</button></div>
- <textarea data-scene-ai-prompt aria-label="${T('نص طلب المحادثة','Conversation prompt')}" dir="ltr" lang="en" rows="7" readonly hidden></textarea>
- <p data-scene-ai-status role="status"></p></section>`;
-}
-function showSceneAiPrompt(button,kind,id){
- const idea=kind==='idea'?ideaLibrary?.scenes.find(s=>s.id===id):null;
- const entry=kind==='studio'?sceneArchive?.scenes.find(s=>s.id===id):null;
- const row=kind==='studio'?dialogueScene(id):null;
- if(!idea&&!row)return;
- const description=idea?.sentenceEn||entry?.description||row.en;
- const target=idea?.taskEn||'Start with two visible details, then imagine a short exchange that could happen here.';
- const terms=idea?.words.map(word=>word.en).join(', ')||entry?.keywords.filter(word=>!/[^\x00-\x7F]/.test(word)).slice(0,8).join(', ')||'objects and actions visible in the scene';
- const panel=button.closest('.scene-ai'),box=panel.querySelector('[data-scene-ai-prompt]');
- box.value=`Be my English conversation partner. I speak Arabic; begin at A2 and adjust after my first answer.
-Scene: ${description}
-Model line: ${idea?.sentenceEn||row.en}
-Speaking task: ${target}
-Useful vocabulary: ${terms}.
-If I am sharing my screen and you can see it, use details you can actually identify. Otherwise use the description and ask me for one extra detail. Separate observation from imagination.
-Ask one short question in English at a time and wait for me. Start by naming objects, then ask me to describe an action and compare two details. Next take a role in a practical dialogue; add one change that makes me adapt. Give a short Arabic hint only when I get stuck or ask. End with two useful corrections and three expressions to reuse.`;
- box.hidden=false;panel.querySelector('[data-copy-scene-ai]').hidden=false;box.focus();
-}
 async function copySceneAiPrompt(button){
  const panel=button.closest('.scene-ai'),box=panel.querySelector('[data-scene-ai-prompt]'),status=panel.querySelector('[data-scene-ai-status]');
  try{await navigator.clipboard.writeText(box.value);status.textContent=T('نُسخ الطلب. الصقه في مساعدك المفضل.','Prompt copied. Paste it into your preferred assistant.')}
- catch{box.select();status.textContent=T('حُدّد النص. انسخه يدويًا.','Text selected. Copy it manually.')}
+ catch{box.hidden=false;box.focus();box.select();status.textContent=T('حُدّد النص. انسخه يدويًا.','Text selected. Copy it manually.')}
 }
 function surpriseScene(){
  const matches=studioMatches();

@@ -11,7 +11,7 @@ try{
 
 function ideaViewer(scene){
  const multiple=page==='scene-studio'?studioMatches().length>1:findIdeaScenes().length>1;
- return `<div id="idea-scene-viewer">
+ return `<div id="idea-scene-viewer"><div class="idea-viewer-visual">
   <div class="idea-picture-frame" style="--smart-ratio:${scene.width/scene.height}">${ideaPicture(scene)}<div id="idea-picture-labels"></div></div>
   <div id="idea-picture-caption" class="idea-picture-caption" aria-live="polite" aria-atomic="true"></div>
   <div class="idea-viewer-tools">
@@ -35,11 +35,10 @@ function ideaViewer(scene){
      <option value="male" ${ideaSoloVoice==='male'?'selected':''}>Adam</option><option value="female" ${ideaSoloVoice==='female'?'selected':''}>Bella</option>
     </select></label>
    </div>
-   <p class="idea-picture-hint">${page==='scene-studio'?
-    T('انقر كلمة أو علامة. تظهر الكلمة بالإنجليزية على الصورة وترجمتها أسفلها، وتبقى ظاهرة أثناء النطق.','Tap a word or marker. The English appears on the picture and the translation below, including during pronunciation.'):
-    T('انقر علامةً لعرض معناها مؤقتًا. تظهر ترجمة الكلمات أسفل الصورة أثناء الوميض.','Tap a marker to reveal its meaning briefly. Flashes show the translation below the picture.')}</p>
+   <p class="idea-picture-hint">${T('انقر الكلمة لتبديل لغتها لحظات، أو النقطة لإبراز موضعها. أثناء النطق تظهر الإنجليزية على الصورة والترجمة أسفلها.','Tap a word to switch its language briefly, or a dot to highlight its location. During audio, English appears on the photo and the translation below.')}</p>
    <div class="idea-zoom-audio">${ideaAudioControls()}</div></details>
-  </div></div>`;
+   ${sceneAssistantButton()}
+  </div></div>${sceneAssistantPanel(scene)}</div>`;
 }
 
 function ideaAudioControls(){
@@ -139,26 +138,18 @@ function ideaLabelText(word,language){
 function updateIdeaCaption(word,language){
  const caption=$('#idea-picture-caption');
  if(!caption)return;
- caption.innerHTML=word?ideaLabelText(word,language)+(page==='scene-studio'?'':wordTypeBadge(word)):'';
+ caption.innerHTML=word?ideaLabelText(word,language):'';
 }
 
-function showIdeaMarker(index,voice,fromList=false){
+function showIdeaMarker(index,{voice,fromList=false,clickedLanguage}={}){
  const scene=currentIdeaScene(),word=scene?.words[index];
  if(!word)return;
  if(voice)stopSpeech();
  clearIdeaFlash();
  if(ideaWordMode==='flash'){ideaWordMode='hidden';updateIdeaModeButtons()}
  ideaSelected=index;
- if(page==='scene-studio'){
-  paintStudioWord(scene,{...word,index});
-  if(fromList)revealStudioPicture();
- }
- else{
-  const language=ideaLabelLanguage==='ar'?'en':'ar';
-  updateIdeaCaption(word,language==='en'?'both':'ar');
-  if(ideaWordMode==='visible')paintIdeaPoints(visibleIdeaWords(scene).filter(hasIdeaPoint),ideaLabelLanguage,language);
-  else paintIdeaPoints(hasIdeaPoint(word)?[{...word,index}]:[],language);
- }
+ paintStudyWord(scene,{...word,index},!voice&&clickedLanguage==='en'&&word.ar?'ar':'en');
+ if(fromList)revealIdeaPicture();
  const restore=()=>{
   ideaRevealTimer=setTimeout(()=>{
    ideaSelected=null;
@@ -183,17 +174,17 @@ function showIdeaMarker(index,voice,fromList=false){
 
 function hasIdeaPoint(word){return Number.isFinite(word.x)&&Number.isFinite(word.y)}
 
-function revealStudioPicture(){
+function revealIdeaPicture(){
  const picture=$('#idea-scene-viewer .idea-picture-frame'),caption=$('#idea-picture-caption');
  if(!picture||!caption)return;
  if(picture.getBoundingClientRect().top<0||caption.getBoundingClientRect().bottom>window.innerHeight)
   picture.scrollIntoView({block:'start'});
 }
 
-function paintStudioWord(scene,word,isolated=false){
+function paintStudyWord(scene,word,language,isolated=false){
  const points=isolated?(hasIdeaPoint(word)?[word]:[]):visibleIdeaWords(scene).filter(hasIdeaPoint);
- paintIdeaPoints(points,ideaWordMode==='visible'?ideaLabelLanguage:null,'en',word);
- updateIdeaCaption(word,'ar');
+ paintIdeaPoints(points,ideaWordMode==='visible'?ideaLabelLanguage:null,language,word);
+ updateIdeaCaption(word,language==='ar'?'en':'ar');
 }
 
 function paintIdeaPoints(words,language,selectedLanguage=language,featuredWord=null){
@@ -205,9 +196,9 @@ function paintIdeaPoints(words,language,selectedLanguage=language,featuredWord=n
   const labelLanguage=selected?selectedLanguage:language;
   const type=EPVocabulary.types[EPVocabulary.posFor(word)]||EPVocabulary.types.X;
   return `<div class="idea-map-point word-type-${type.color} ${selected?'selected':''}" data-word="${word.index}" style="--x:${word.x}%;--y:${word.y}%">
-   <button type="button" class="idea-pin" onclick="showIdeaMarker(${word.index})" aria-label="${name}">${word.index+1}</button>
-   ${labelLanguage?`<button type="button" class="idea-map-label" onclick="showIdeaMarker(${word.index})">${ideaLabelText(word,labelLanguage)}</button>`:''}</div>`;
- }).join('')+(featuredWord?`<span class="idea-map-featured" hidden lang="en" dir="ltr">${H(featuredWord.en)}</span>`:'');
+   <button type="button" class="idea-pin" onclick="showIdeaMarker(${word.index})" aria-label="${name}"></button>
+   ${labelLanguage?`<button type="button" class="idea-map-label" onclick="showIdeaMarker(${word.index},{clickedLanguage:event.target.closest('span[lang]')?.lang||this.querySelector('[lang]')?.lang})">${ideaLabelText(word,labelLanguage)}</button>`:''}</div>`;
+ }).join('')+(featuredWord?`<span class="idea-map-featured" hidden>${ideaLabelText(featuredWord,selectedLanguage)}</span>`:'');
  positionIdeaLabels();
  if(focusedIndex!=null){
   const point=layer.querySelector(`[data-word="${focusedIndex}"]`);
@@ -223,7 +214,7 @@ function paintIdeaLabels(scene){
  updateIdeaCaption(null);
  const words=visibleIdeaWords(scene).filter(hasIdeaPoint);
  if(ideaWordMode==='visible')paintIdeaPoints(words,ideaLabelLanguage==='alternate'?'en':ideaLabelLanguage);
- else if(page==='scene-studio'&&ideaWordMode==='hidden')paintIdeaPoints(words,null);
+ else if(ideaWordMode==='hidden')paintIdeaPoints(words,null);
  else layer.innerHTML='';
 }
 
@@ -262,7 +253,6 @@ function startIdeaSequence(flash,sound,fromControl=false){
  const words=visibleIdeaWords(scene);
  if(!words.length){setIdeaWordMode('hidden',false);updateIdeaPlayback(T('لا توجد مفردات ضمن هذا الفلتر.','No vocabulary matches this filter.'));return}
  const sequence={flash,sound};
- const studioAudioWords=sound&&page==='scene-studio';
  ideaSequence=sequence;
  if(flash)ideaWordMode='flash';
  else if(ideaWordMode==='flash'){ideaWordMode='hidden';paintIdeaLabels(scene)}
@@ -279,16 +269,16 @@ function startIdeaSequence(flash,sound,fromControl=false){
   const language=ideaLabelLanguage==='alternate'?'en':ideaLabelLanguage;
   ideaSelected=word.index;
   const paint=label=>{
-   if(studioAudioWords){paintStudioWord(scene,word,flash);return}
+   if(sound){paintStudyWord(scene,word,'en',flash);return}
    if(flash)paintIdeaPoints(hasIdeaPoint(word)?[word]:[],label);
    updateIdeaCaption(word,label==='ar'?'both':'ar');
   };
   paint(language);
-  if(studioAudioWords&&fromControl&&index===0)revealStudioPicture();
+  if(sound&&fromControl&&index===0)revealIdeaPicture();
   const progress=T(`الكلمة ${index+1} من ${words.length}`,`Word ${index+1} of ${words.length}`);
   updateIdeaPlayback(progress+' · '+word.en);
   const next=()=>{
-   if(studioAudioWords){ideaSelected=null;paintIdeaLabels(scene);updateIdeaPlayback()}
+   if(sound){ideaSelected=null;paintIdeaLabels(scene);updateIdeaPlayback()}
    else if(flash)paintIdeaPoints([],language);
    ideaFlashTimer=setTimeout(()=>play(index+1),350);
   };
@@ -304,7 +294,7 @@ function startIdeaSequence(flash,sound,fromControl=false){
   }
   const wait=sound?650:1550;
   ideaFlashTimer=setTimeout(()=>{
-   if(flash&&!studioAudioWords&&ideaLabelLanguage==='alternate'){
+   if(flash&&!sound&&ideaLabelLanguage==='alternate'){
     paint('ar');ideaFlashTimer=setTimeout(next,wait);
    }else next();
   },wait);

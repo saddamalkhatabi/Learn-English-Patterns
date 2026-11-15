@@ -104,7 +104,7 @@ function openVocabularyTerm(id,preferredScene=vocabularyPreferredScene){
    <h3>${T('شاهدها في سياق','See it in context')}</h3>
    ${[...byExample.values()].slice(0,8).map(({source,index})=>{
     return `<div class="vocabulary-use"><p lang="en" dir="ltr">${vocabularyMarked(source.en,entry.en)}</p>${EP.ar(source.ar)}
-     <button class="textlink" onclick="openVocabularyUse(${index})">${source.type==='dialogue'?T('افتح المحادثة عند هذا الدور','Open this conversation turn'):source.type.startsWith('idea')?T('افتح المشهد','Open scene'):T('افتح الجملة وصورتها','Open sentence and scene')} ↗</button></div>`;
+     <button class="textlink" onclick="openVocabularyUse(${index})">${source.type==='dialogue'?T('افتح المحادثة عند هذا الدور','Open this conversation turn'):source.type==='idea-guide'?T('افتح تدريب المشهد','Open scene practice'):source.type.startsWith('idea')?T('افتح المشهد','Open scene'):T('افتح الجملة وصورتها','Open sentence and scene')} ↗</button></div>`;
    }).join('')}
    <details><summary>${T('كل مواضع الاستخدام','All uses')} · ${uses.length}</summary>${uses.map(({source,index})=>
     `<button class="textlink vocabulary-source-link" onclick="openVocabularyUse(${index})">${H(source.en)}${source.type==='idea-word'?` <span class="ar-content" lang="ar" dir="rtl">${H(source.ar)}</span>`:''}</button>`
@@ -126,7 +126,7 @@ function vocabularySceneLinks(entry){
    const scene=ideaLibrary?.scenes.find(scene=>scene.id===source.id);
    if(scene)photo=ideaPicture(scene);
   }else photo=pilotScene(dialogueScene(source.id));
-  const open=dialogueSceneLocations.has(id)?`openSmartSentence('${H(id)}')`:`openVocabularyUse(${use.index})`;
+  const open=source.type!=='idea-guide'&&dialogueSceneLocations.has(id)?`openSmartSentence('${H(id)}')`:`openVocabularyUse(${use.index})`;
   return photo?`<button class="vocabulary-scene-card" onclick="${open}">${photo}<small>${H(source.title||source.en)}</small></button>`:'';
  }).filter(Boolean);
  return cards.length?`<details class="vocabulary-scenes"><summary>${T('الصور المرتبطة','Linked scenes')} · ${cards.length}</summary><div class="vocabulary-scene-links">${cards.join('')}</div></details>`:'';
@@ -151,6 +151,8 @@ async function openVocabularyUse(index){
    const audio=$('#dialogue-player audio'),turn=PILOT.dialogues.find(d=>d.id===source.id)?.audio?.turns[source.turn];
    if(audio&&turn){audio.currentTime=turn.start_ms/1000;playDialogueMedia(audio)}
   }));
+ }else if(source.type==='idea-guide'){
+  await openSceneAssistantGuide(source.id,source.step);
  }else if(source.type.startsWith('idea')){
   await Promise.all([ideaLibraryReady,dialogueArchiveReady]);
   if(dialogueSceneLocations.has(source.id)){await openSmartSentence(source.id);return}

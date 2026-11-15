@@ -145,12 +145,13 @@ function ideaVocabulary(scene,open){
  const words=visibleIdeaWords(scene);
  const entries=words.map(word=>{
   const term=scene.topic==='conversation'?vocabularyEntryFor(word):null;
-  const title=page==='scene-studio'?`<button type="button" class="idea-show-word" lang="en" dir="ltr" onclick="showIdeaMarker(${word.index},null,true)">${H(word.en)}</button>`:
-   `<strong lang="en" dir="ltr">${H(word.en)}</strong>`;
   return `<li data-idea-vocab="${word.index}">
-  <div>${title}${Number.isFinite(word.x)?` <small class="idea-word-number">${word.index+1}</small>`:''}
-  <span class="idea-vocab-meaning">${EP.ar(word.ar)} ${wordTypeBadge(word)}</span></div>
-  <button type="button" class="secondary idea-single-word" onclick="showIdeaMarker(${word.index},ideaSoloVoice,true)"
+  <div><button type="button" class="idea-show-word" lang="en" dir="ltr" onclick="showIdeaMarker(${word.index},{clickedLanguage:'en',fromList:true})">${H(word.en)}</button>
+  ${hasIdeaPoint(word)?` <button type="button" class="idea-word-dot" onclick="showIdeaMarker(${word.index},{fromList:true})"
+   aria-label="${H(T('أبرز في الصورة','Highlight in the picture')+' · '+word.en)}"></button>`:''}
+  <span class="idea-vocab-meaning">${word.ar?`<button type="button" class="idea-show-word ar-content" lang="ar" dir="rtl"
+   onclick="showIdeaMarker(${word.index},{clickedLanguage:'ar',fromList:true})">${H(word.ar)}</button>`:''} ${wordTypeBadge(word)}</span></div>
+  <button type="button" class="secondary idea-single-word" onclick="showIdeaMarker(${word.index},{voice:ideaSoloVoice,fromList:true})"
    aria-label="${H(T('انطق','Hear')+' '+word.en)}">▶</button>
   ${term?`<button type="button" class="textlink" onclick="openVocabularyFromScene('${term.id}','${H(scene.id.replace(/^studio:/,''))}')">${T('الأطلس','Atlas')} ↗</button>`:''}</li>`;
  });
@@ -220,4 +221,9 @@ render=function(){
 };
 if(page==='lab')render();
 ideaLibraryReady.then(data=>{ideaLibrary=data;if(page==='lab')render()});
-pilotReady.then(()=>{if(page==='lab')paintIdeaTask(currentIdeaScene())});
+pilotReady.then(()=>{
+ if(page!=='lab')return;
+ const scene=currentIdeaScene();
+ paintIdeaTask(scene);
+ if($('#scene-assistant')?.hidden===false)refreshSceneAssistant(scene);
+});

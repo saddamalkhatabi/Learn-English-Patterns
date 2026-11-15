@@ -87,6 +87,29 @@ test('essential verbs, contractions and phrase units have Arabic meanings and re
   assert.deepEqual(phrase.audio.female,{path:recording.path,start_ms:turn.words[first].start_ms,end_ms:turn.words[first+2].end_ms,text:'back in stock'});
  }
 });
+test('screen-sharing practice uses image annotations and authored patterns and indexes its reusable expressions',()=>{
+ const guide=require('../public/scene-guide.js');
+ const byId=new Map(require('../public/idea-scenes.json').scenes.map(scene=>[scene.id,scene]));
+ const forms=new Map(['pilot','expansion-media'].flatMap(name=>require('../public/'+name+'.json').patterns.map(pattern=>[pattern.id,pattern.form])));
+ const make=scene=>guide.make(scene,id=>forms.get(id));
+ const scene=byId.get('conv-life-l3-200-1'),practice=make(scene);
+ assert.equal(practice.pattern.id,9163);
+ assert.match(practice.questions[0].en,/empty shelf/);
+ assert.match(practice.questions[1].en,/blue shirt/);
+ assert(practice.questions.every(question=>question.en&&question.ar));
+ const withoutAnchors=make({...scene,words:[{en:'object',ar:'شيء',kind:'object'}],patterns:[]});
+ assert.doesNotMatch(withoutAnchors.questions[0].en,/“object”/);
+ assert.match(withoutAnchors.pattern.form,/Could you/);
+ for(const expression of Object.keys(guide.phrases)){
+  const term=vocabulary.entries.find(entry=>normalize(entry.en)===expression&&entry.pos==='PHRASE');
+  assert(term?.ar,expression);
+  assert(term.sourceIds.some(id=>{
+   const source=vocabulary.sources[id],linked=byId.get(source.id);
+   return source.type==='idea-guide'&&linked&&source.sceneIds.includes(linked.id)&&
+    make(linked).questions[source.step].en===source.en&&includesTerm(source.en,expression);
+  }),expression);
+ }
+});
 test('vocabulary keeps contextual roles, full words with accents, and valid content links',()=>{
  assert(vocabulary.entries.length>3000);
  assert.equal(new Set(vocabulary.entries.map(e=>e.id)).size,vocabulary.entries.length);
