@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "65baf0b0edc95870b17e3405fcef57ac6c906d288bfcd3b4b4364d359d4336de"
+  },
+  "conversations": [
+    {
+      "id": "l3-165",
+      "goalAr": "السؤال عما هو معروف حتى الآن",
+      "goalEn": "Asking what is known so far",
+      "stages": [
+        {
+          "from": 1,
+          "to": 2,
+          "en": "Ask if the cause is known",
+          "ar": "اسأل هل السبب معروف",
+          "purposeEn": "Ask if the cause is known.",
+          "purposeAr": "اسأل هل السبب معروف.",
+          "image": {
+            "id": "conv-life-l3-165-1",
+            "path": "assets/scenes/conversations/life-l3-165-1.webp",
+            "width": 390,
+            "height": 248,
+            "en": "Ask if the cause is known",
+            "ar": "اسأل هل السبب معروف",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                393,
+                251
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask if the cause is known",
+              "ar": "اسأل هل السبب معروف",
+              "kind": "phrase",
+              "x": 53,
+              "y": 66
+            },
+            {
+              "en": "hourglass",
+              "ar": "ساعة رملية",
+              "kind": "object",
+              "x": 54,
+              "y": 75
+            },
+            {
+              "en": "worried",
+              "ar": "قلق",
+              "kind": "description",
+              "x": 33,
+              "y": 26
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "en": "Ask when you will hear more",
+          "ar": "اسأل متى ستعرف المزيد",
+          "purposeEn": "Ask when you will hear more.",
+          "purposeAr": "اسأل متى ستعرف المزيد.",
+          "image": {
+            "id": "conv-life-l3-165-2",
+            "path": "assets/scenes/conversations/life-l3-165-2.webp",
+            "width": 390,
+            "height": 248,
+            "en": "Ask when you will hear more",
+            "ar": "اسأل متى ستعرف المزيد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                3,
+                789,
+                251
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask when you will hear more",
+              "ar": "اسأل متى ستعرف المزيد",
+              "kind": "phrase",
+              "x": 48,
+              "y": 67
+            },
+            {
+              "en": "closed binder",
+              "ar": "ملف مغلق",
+              "kind": "object",
+              "x": 60,
+              "y": 89
+            },
+            {
+              "en": "thoughtful",
+              "ar": "متأمّل",
+              "kind": "description",
+              "x": 70,
+              "y": 32
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "en": "Plan what to ask at the next visit",
+          "ar": "خطّط لما ستسأل عنه في الزيارة التالية",
+          "purposeEn": "Plan what to ask at the next visit.",
+          "purposeAr": "خطّط لما ستسأل عنه في الزيارة التالية.",
+          "image": {
+            "id": "conv-life-l3-165-3",
+            "path": "assets/scenes/conversations/life-l3-165-3.webp",
+            "width": 391,
+            "height": 248,
+            "en": "Plan what to ask at the next visit",
+            "ar": "خطّط لما ستسأل عنه في الزيارة التالية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                3,
+                1186,
+                251
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "plan what to ask at the next visit",
+              "ar": "خطّط لما ستسأل عنه في الزيارة التالية",
+              "kind": "phrase",
+              "x": 59,
+              "y": 77
+            },
+            {
+              "en": "circled date",
+              "ar": "تاريخ محدّد بدائرة",
+              "kind": "object",
+              "x": 68,
+              "y": 71
+            },
+            {
+              "en": "calendar page",
+              "ar": "صفحة تقويم",
+              "kind": "object",
+              "x": 75,
+              "y": 80
+            }
+          ]
+        },
+        {
+          "from": 7,
+          "to": 7,
+          "en": "Use a list to remember your questions",
+          "ar": "استعن بقائمة لتذكّر أسئلتك",
+          "purposeEn": "Use a list to remember your questions.",
+          "purposeAr": "استعن بقائمة لتذكّر أسئلتك.",
+          "image": {
+            "id": "conv-life-l3-165-4",
+            "path": "assets/scenes/conversations/life-l3-165-4.webp",
+            "width": 391,
+            "height": 248,
+            "en": "Use a list to remember your questions",
+            "ar": "استعن بقائمة لتذكّر أسئلتك",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                3,
+                1583,
+                251
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "use a list to remember your questions",
+              "ar": "استعن بقائمة لتذكّر أسئلتك",
+              "kind": "phrase",
+              "x": 57,
+              "y": 62
+            },
+            {
+              "en": "checklist",
+              "ar": "قائمة تحقق",
+              "kind": "object",
+              "x": 54,
+              "y": 74
+            },
+            {
+              "en": "clipboard clip",
+              "ar": "مشبك اللوح",
+              "kind": "object",
+              "x": 53,
+              "y": 44
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-166",
+      "goalAr": "التعبير عن القلق قبل تلقي لقاح",
+      "goalEn": "Speaking up before a vaccination",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Explain why you feel nervous",
+          "ar": "اشرح لماذا تشعر بالتوتر",
+          "purposeEn": "Explain why you feel nervous.",
+          "purposeAr": "اشرح لماذا تشعر بالتوتر.",
+          "image": {
+            "id": "conv-life-l3-166-1",
+            "path": "assets/scenes/conversations/life-l3-166-1.webp",
+            "width": 390,
+            "height": 233,
+            "en": "Explain why you feel nervous",
+            "ar": "اشرح لماذا تشعر بالتوتر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                257,
+                393,
+                490
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "explain why you feel nervous",
+              "ar": "اشرح لماذا تشعر بالتوتر",
+              "kind": "phrase",
+              "x": 42,
+              "y": 56
+            },
+            {
+              "en": "appointment card",
+              "ar": "بطاقة موعد",
+              "kind": "object",
+              "x": 49,
+              "y": 78
+            },
+            {
+              "en": "nervous",
+              "ar": "متوتر",
+              "kind": "description",
+              "x": 39,
+              "y": 28
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Ask the nurse what to expect",
+          "ar": "اسأل الممرضة عمّا تتوقّعه",
+          "purposeEn": "Ask the nurse what to expect.",
+          "purposeAr": "اسأل الممرضة عمّا تتوقّعه.",
+          "image": {
+            "id": "conv-life-l3-166-2",
+            "path": "assets/scenes/conversations/life-l3-166-2.webp",
+            "width": 390,
+            "height": 233,
+            "en": "Ask the nurse what to expect",
+            "ar": "اسأل الممرضة عمّا تتوقّعه",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                257,
+                789,
+                490
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask the nurse what to expect",
+              "ar": "اسأل الممرضة عمّا تتوقّعه",
+              "kind": "phrase",
+              "x": 48,
+              "y": 54
+            },
+            {
+              "en": "injection pictogram",
+              "ar": "رمز حقنة",
+              "kind": "object",
+              "x": 44,
+              "y": 50
+            },
+            {
+              "en": "bandage picture",
+              "ar": "صورة ضمادة",
+              "kind": "object",
+              "x": 45,
+              "y": 70
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Ask for time to talk it through",
+          "ar": "اطلب وقتًا لمناقشة الأمر",
+          "purposeEn": "Ask for time to talk it through.",
+          "purposeAr": "اطلب وقتًا لمناقشة الأمر.",
+          "image": {
+            "id": "conv-life-l3-166-3",
+            "path": "assets/scenes/conversations/life-l3-166-3.webp",
+            "width": 391,
+            "height": 233,
+            "en": "Ask for time to talk it through",
+            "ar": "اطلب وقتًا لمناقشة الأمر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                257,
+                1186,
+                490
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask for time to talk it through",
+              "ar": "اطلب وقتًا لمناقشة الأمر",
+              "kind": "phrase",
+              "x": 52,
+              "y": 65
+            },
+            {
+              "en": "wristwatch",
+              "ar": "ساعة يد",
+              "kind": "object",
+              "x": 55,
+              "y": 68
+            },
+            {
+              "en": "open palm",
+              "ar": "كف مفتوحة",
+              "kind": "action",
+              "x": 30,
+              "y": 71
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Explain how you feel when you go in",
+          "ar": "اشرح كيف تشعر عند الدخول",
+          "purposeEn": "Explain how you feel when you go in.",
+          "purposeAr": "اشرح كيف تشعر عند الدخول.",
+          "image": {
+            "id": "conv-life-l3-166-4",
+            "path": "assets/scenes/conversations/life-l3-166-4.webp",
+            "width": 391,
+            "height": 233,
+            "en": "Explain how you feel when you go in",
+            "ar": "اشرح كيف تشعر عند الدخول",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                257,
+                1583,
+                490
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "explain how you feel when you go in",
+              "ar": "اشرح كيف تشعر عند الدخول",
+              "kind": "phrase",
+              "x": 42,
+              "y": 61
+            },
+            {
+              "en": "clinic doorway",
+              "ar": "مدخل العيادة",
+              "kind": "object",
+              "x": 66,
+              "y": 47
+            },
+            {
+              "en": "clinic badge",
+              "ar": "بطاقة تعريف العيادة",
+              "kind": "object",
+              "x": 88,
+              "y": 87
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-167",
+      "goalAr": "التحقق من وصول شخص إلى المنزل بأمان",
+      "goalEn": "Checking that someone got home safely",
+      "stages": [
+        {
+          "from": 1,
+          "to": 2,
+          "en": "Say that you are waiting for the bus",
+          "ar": "قل إنك تنتظر الحافلة",
+          "purposeEn": "Say that you are waiting for the bus.",
+          "purposeAr": "قل إنك تنتظر الحافلة.",
+          "image": {
+            "id": "conv-life-l3-167-1",
+            "path": "assets/scenes/conversations/life-l3-167-1.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Say that you are waiting for the bus",
+            "ar": "قل إنك تنتظر الحافلة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                496,
+                393,
+                739
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "say that you are waiting for the bus",
+              "ar": "قل إنك تنتظر الحافلة",
+              "kind": "phrase",
+              "x": 33,
+              "y": 34
+            },
+            {
+              "en": "bus stop sign",
+              "ar": "لافتة موقف حافلات",
+              "kind": "object",
+              "x": 74,
+              "y": 25
+            },
+            {
+              "en": "mobile phone",
+              "ar": "هاتف محمول",
+              "kind": "object",
+              "x": 28,
+              "y": 35
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "en": "Offer to pick someone up if needed",
+          "ar": "اعرض توصيل شخص إذا لزم الأمر",
+          "purposeEn": "Offer to pick someone up if needed.",
+          "purposeAr": "اعرض توصيل شخص إذا لزم الأمر.",
+          "image": {
+            "id": "conv-life-l3-167-2",
+            "path": "assets/scenes/conversations/life-l3-167-2.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Offer to pick someone up if needed",
+            "ar": "اعرض توصيل شخص إذا لزم الأمر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                496,
+                789,
+                739
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "offer to pick someone up if needed",
+              "ar": "اعرض توصيل شخص إذا لزم الأمر",
+              "kind": "phrase",
+              "x": 49,
+              "y": 72
+            },
+            {
+              "en": "car keys",
+              "ar": "مفاتيح السيارة",
+              "kind": "object",
+              "x": 68,
+              "y": 87
+            },
+            {
+              "en": "key tray",
+              "ar": "صينية مفاتيح",
+              "kind": "object",
+              "x": 69,
+              "y": 91
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "en": "Keep your phone nearby",
+          "ar": "أبقِ هاتفك في متناول اليد",
+          "purposeEn": "Keep your phone nearby.",
+          "purposeAr": "أبقِ هاتفك في متناول اليد.",
+          "image": {
+            "id": "conv-life-l3-167-3",
+            "path": "assets/scenes/conversations/life-l3-167-3.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Keep your phone nearby",
+            "ar": "أبقِ هاتفك في متناول اليد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                496,
+                1186,
+                739
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "keep your phone nearby",
+              "ar": "أبقِ هاتفك في متناول اليد",
+              "kind": "phrase",
+              "x": 66,
+              "y": 77
+            },
+            {
+              "en": "smartphone",
+              "ar": "هاتف ذكي",
+              "kind": "object",
+              "x": 66,
+              "y": 89
+            },
+            {
+              "en": "table lamp",
+              "ar": "مصباح طاولة",
+              "kind": "object",
+              "x": 87,
+              "y": 37
+            }
+          ]
+        },
+        {
+          "from": 7,
+          "to": 7,
+          "en": "Check in when you reach home",
+          "ar": "أرسل خبر وصولك إلى المنزل",
+          "purposeEn": "Check in when you reach home.",
+          "purposeAr": "أرسل خبر وصولك إلى المنزل.",
+          "image": {
+            "id": "conv-life-l3-167-4",
+            "path": "assets/scenes/conversations/life-l3-167-4.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Check in when you reach home",
+            "ar": "أرسل خبر وصولك إلى المنزل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                496,
+                1583,
+                739
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "check in when you reach home",
+              "ar": "أرسل خبر وصولك إلى المنزل",
+              "kind": "phrase",
+              "x": 55,
+              "y": 62
+            },
+            {
+              "en": "front door",
+              "ar": "الباب الأمامي",
+              "kind": "object",
+              "x": 64,
+              "y": 50
+            },
+            {
+              "en": "phone",
+              "ar": "هاتف",
+              "kind": "object",
+              "x": 56,
+              "y": 61
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-168",
+      "goalAr": "إرشاد زائر إلى مكان الانتظار",
+      "goalEn": "Helping a visitor find the waiting area",
+      "stages": [
+        {
+          "from": 1,
+          "to": 2,
+          "en": "Show the address on the appointment letter",
+          "ar": "اعرض العنوان على خطاب الموعد",
+          "purposeEn": "Show the address on the appointment letter.",
+          "purposeAr": "اعرض العنوان على خطاب الموعد.",
+          "image": {
+            "id": "conv-life-l3-168-1",
+            "path": "assets/scenes/conversations/life-l3-168-1.webp",
+            "width": 390,
+            "height": 244,
+            "en": "Show the address on the appointment letter",
+            "ar": "اعرض العنوان على خطاب الموعد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                745,
+                393,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "show the address on the appointment letter",
+              "ar": "اعرض العنوان على خطاب الموعد",
+              "kind": "phrase",
+              "x": 49,
+              "y": 69
+            },
+            {
+              "en": "appointment letter",
+              "ar": "خطاب الموعد",
+              "kind": "object",
+              "x": 55,
+              "y": 66
+            },
+            {
+              "en": "calendar symbol",
+              "ar": "رمز تقويم",
+              "kind": "object",
+              "x": 56,
+              "y": 68
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "en": "Find the waiting area through those doors",
+          "ar": "اعثر على منطقة الانتظار خلف تلك الأبواب",
+          "purposeEn": "Find the waiting area through those doors.",
+          "purposeAr": "اعثر على منطقة الانتظار خلف تلك الأبواب.",
+          "image": {
+            "id": "conv-life-l3-168-2",
+            "path": "assets/scenes/conversations/life-l3-168-2.webp",
+            "width": 390,
+            "height": 244,
+            "en": "Find the waiting area through those doors",
+            "ar": "اعثر على منطقة الانتظار خلف تلك الأبواب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                745,
+                789,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "find the waiting area through those doors",
+              "ar": "اعثر على منطقة الانتظار خلف تلك الأبواب",
+              "kind": "phrase",
+              "x": 55,
+              "y": 48
+            },
+            {
+              "en": "waiting area sign",
+              "ar": "لافتة منطقة الانتظار",
+              "kind": "object",
+              "x": 41,
+              "y": 25
+            },
+            {
+              "en": "double doors",
+              "ar": "باب مزدوج",
+              "kind": "object",
+              "x": 77,
+              "y": 44
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "en": "Ask whether you should check in first",
+          "ar": "اسأل إن كان عليك تسجيل الحضور أولًا",
+          "purposeEn": "Ask whether you should check in first.",
+          "purposeAr": "اسأل إن كان عليك تسجيل الحضور أولًا.",
+          "image": {
+            "id": "conv-life-l3-168-3",
+            "path": "assets/scenes/conversations/life-l3-168-3.webp",
+            "width": 391,
+            "height": 244,
+            "en": "Ask whether you should check in first",
+            "ar": "اسأل إن كان عليك تسجيل الحضور أولًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                745,
+                1186,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask whether you should check in first",
+              "ar": "اسأل إن كان عليك تسجيل الحضور أولًا",
+              "kind": "phrase",
+              "x": 38,
+              "y": 66
+            },
+            {
+              "en": "reception counter",
+              "ar": "منضدة الاستقبال",
+              "kind": "object",
+              "x": 54,
+              "y": 88
+            },
+            {
+              "en": "computer monitor",
+              "ar": "شاشة حاسوب",
+              "kind": "object",
+              "x": 75,
+              "y": 61
+            }
+          ]
+        },
+        {
+          "from": 7,
+          "to": 7,
+          "en": "Give your name and then take a seat",
+          "ar": "اذكر اسمك ثم اجلس",
+          "purposeEn": "Give your name and then take a seat.",
+          "purposeAr": "اذكر اسمك ثم اجلس.",
+          "image": {
+            "id": "conv-life-l3-168-4",
+            "path": "assets/scenes/conversations/life-l3-168-4.webp",
+            "width": 391,
+            "height": 244,
+            "en": "Give your name and then take a seat",
+            "ar": "اذكر اسمك ثم اجلس",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                745,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "give your name and then take a seat",
+              "ar": "اذكر اسمك ثم اجلس",
+              "kind": "phrase",
+              "x": 44,
+              "y": 63
+            },
+            {
+              "en": "waiting-room seat",
+              "ar": "مقعد غرفة الانتظار",
+              "kind": "object",
+              "x": 20,
+              "y": 69
+            },
+            {
+              "en": "handbag",
+              "ar": "حقيبة يد",
+              "kind": "object",
+              "x": 55,
+              "y": 83
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

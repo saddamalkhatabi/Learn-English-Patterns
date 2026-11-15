@@ -99769,6 +99769,2534 @@
       "width": 390,
       "height": 242,
       "sha256": "9d76d56a5e7aeed617a461fa3a92abab56611f9543511feb23aee412be1d81cc"
+    },
+    {
+      "id": "conv-life-l3-157-1",
+      "topic": "conversation",
+      "en": "Explaining what happened after a breakdown · Describe when the machine stopped",
+      "ar": "شرح ما حدث بعد تعطل معدّة · صِف متى توقفت الآلة",
+      "sentenceEn": "Tell me what you know about the incident.",
+      "sentenceAr": "أخبرني بما تعرفه عن الحادثة.",
+      "words": [
+        {
+          "en": "describe when the machine stopped",
+          "ar": "صِف متى توقفت الآلة",
+          "kind": "phrase",
+          "x": 64,
+          "y": 52
+        },
+        {
+          "en": "stop symbol",
+          "ar": "رمز توقّف",
+          "kind": "object",
+          "x": 77,
+          "y": 38
+        },
+        {
+          "en": "conveyor belt",
+          "ar": "سير ناقل",
+          "kind": "object",
+          "x": 71,
+          "y": 84
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Describe when the machine stopped.",
+      "taskAr": "صِف متى توقفت الآلة.",
+      "path": "assets/scenes/conversations/life-l3-157-1.webp",
+      "width": 390,
+      "height": 242,
+      "sha256": "638825f4927cac42dc857435db605a3357a2ca8fbb1d3b5ba66bdb22041a4085"
+    },
+    {
+      "id": "conv-life-l3-157-2",
+      "topic": "conversation",
+      "en": "Explaining what happened after a breakdown · Ask who was in the room",
+      "ar": "شرح ما حدث بعد تعطل معدّة · اسأل من كان في الغرفة",
+      "sentenceEn": "The machine stopped just as we started the morning run.",
+      "sentenceAr": "توقفت الآلة عند بدء تشغيل الصباح مباشرةً.",
+      "words": [
+        {
+          "en": "ask who was in the room",
+          "ar": "اسأل من كان في الغرفة",
+          "kind": "phrase",
+          "x": 40,
+          "y": 61
+        },
+        {
+          "en": "clipboard",
+          "ar": "لوح تثبيت الأوراق",
+          "kind": "object",
+          "x": 45,
+          "y": 78
+        },
+        {
+          "en": "work uniform",
+          "ar": "زي عمل",
+          "kind": "object",
+          "x": 70,
+          "y": 44
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Ask who was in the room.",
+      "taskAr": "اسأل من كان في الغرفة.",
+      "path": "assets/scenes/conversations/life-l3-157-2.webp",
+      "width": 392,
+      "height": 242,
+      "sha256": "d594d40d3396203f1f24a3629375a7f71cf9ca879cb0d7231fe3db9ee96fd952"
+    },
+    {
+      "id": "conv-life-l3-157-3",
+      "topic": "conversation",
+      "en": "Explaining what happened after a breakdown · Record what happened before suggesting a cause",
+      "ar": "شرح ما حدث بعد تعطل معدّة · سجّل ما حدث قبل اقتراح السبب",
+      "sentenceEn": "Two people were there, but neither saw what caused it.",
+      "sentenceAr": "كان هناك شخصان، لكن أيًا منهما لم ير سبب ما حدث.",
+      "words": [
+        {
+          "en": "record what happened before suggesting a cause",
+          "ar": "سجّل ما حدث قبل اقتراح السبب",
+          "kind": "phrase",
+          "x": 55,
+          "y": 77
+        },
+        {
+          "en": "incident form",
+          "ar": "نموذج حادثة",
+          "kind": "object",
+          "x": 50,
+          "y": 78
+        },
+        {
+          "en": "wall clock",
+          "ar": "ساعة حائط",
+          "kind": "object",
+          "x": 77,
+          "y": 25
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9148,
+          "en": "Two people were there, but neither saw what caused it.",
+          "ar": "كان هناك شخصان، لكن أيًا منهما لم ير سبب ما حدث."
+        }
+      ],
+      "taskEn": "Record what happened before suggesting a cause.",
+      "taskAr": "سجّل ما حدث قبل اقتراح السبب.",
+      "path": "assets/scenes/conversations/life-l3-157-3.webp",
+      "width": 389,
+      "height": 242,
+      "sha256": "4a3151de121726a07ec60c2c37ac0b8f2aa31ef0e66ca67b9c3cbba8b0fdddee"
+    },
+    {
+      "id": "conv-life-l3-157-4",
+      "topic": "conversation",
+      "en": "Explaining what happened after a breakdown · Ask the witnesses what they heard",
+      "ar": "شرح ما حدث بعد تعطل معدّة · اسأل الشهود ماذا سمعوا",
+      "sentenceEn": "I'll note the time and ask them to describe what they heard.",
+      "sentenceAr": "سأدوّن الوقت وأطلب منهما وصف ما سمعاه.",
+      "words": [
+        {
+          "en": "ask the witnesses what they heard",
+          "ar": "اسأل الشهود ماذا سمعوا",
+          "kind": "phrase",
+          "x": 53,
+          "y": 74
+        },
+        {
+          "en": "clipboard",
+          "ar": "لوح تثبيت الأوراق",
+          "kind": "object",
+          "x": 51,
+          "y": 89
+        },
+        {
+          "en": "cup your hand around your ear",
+          "ar": "يضع كفّه حول أذنه",
+          "kind": "action",
+          "x": 72,
+          "y": 32
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Ask the witnesses what they heard.",
+      "taskAr": "اسأل الشهود ماذا سمعوا.",
+      "path": "assets/scenes/conversations/life-l3-157-4.webp",
+      "width": 391,
+      "height": 242,
+      "sha256": "924bf568ae36e44c8b895686c90df70c2b36945e52b37b6dce27976f326b3f0f"
+    },
+    {
+      "id": "conv-life-l3-158-1",
+      "topic": "conversation",
+      "en": "Choosing an alternative when a room is full · Check whether the training room is available",
+      "ar": "اختيار بديل عند امتلاء القاعة · تحقّق من توفر قاعة التدريب",
+      "sentenceEn": "The training room is full. Can we move the next session online?",
+      "sentenceAr": "قاعة التدريب ممتلئة. هل يمكننا نقل الجلسة التالية إلى الإنترنت؟",
+      "words": [
+        {
+          "en": "check whether the training room is available",
+          "ar": "تحقّق من توفر قاعة التدريب",
+          "kind": "phrase",
+          "x": 43,
+          "y": 69
+        },
+        {
+          "en": "projection screen",
+          "ar": "شاشة عرض",
+          "kind": "object",
+          "x": 54,
+          "y": 29
+        },
+        {
+          "en": "classroom chairs",
+          "ar": "كراسي الصف",
+          "kind": "object",
+          "x": 56,
+          "y": 61
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Check whether the training room is available.",
+      "taskAr": "تحقّق من توفر قاعة التدريب.",
+      "path": "assets/scenes/conversations/life-l3-158-1.webp",
+      "width": 390,
+      "height": 242,
+      "sha256": "9f3361a87f837f219b1446f47548992f8e3aff59c32dcb267b8f5f28f3ad907c"
+    },
+    {
+      "id": "conv-life-l3-158-2",
+      "topic": "conversation",
+      "en": "Choosing an alternative when a room is full · Record a short demonstration",
+      "ar": "اختيار بديل عند امتلاء القاعة · سجّل عرضًا توضيحيًا قصيرًا",
+      "sentenceEn": "Even if we can't use another room, we can record a short demonstration.",
+      "sentenceAr": "حتى إذا لم نتمكن من استخدام قاعة أخرى، يمكننا تسجيل شرح قصير.",
+      "words": [
+        {
+          "en": "record a short demonstration",
+          "ar": "سجّل عرضًا توضيحيًا قصيرًا",
+          "kind": "phrase",
+          "x": 53,
+          "y": 51
+        },
+        {
+          "en": "video camera",
+          "ar": "كاميرا فيديو",
+          "kind": "object",
+          "x": 55,
+          "y": 44
+        },
+        {
+          "en": "tripod",
+          "ar": "حامل ثلاثي",
+          "kind": "object",
+          "x": 56,
+          "y": 80
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9157,
+          "en": "Even if we can't use another room, we can record a short demonstration.",
+          "ar": "حتى إذا لم نتمكن من استخدام قاعة أخرى، يمكننا تسجيل شرح قصير."
+        }
+      ],
+      "taskEn": "Record a short demonstration.",
+      "taskAr": "سجّل عرضًا توضيحيًا قصيرًا.",
+      "path": "assets/scenes/conversations/life-l3-158-2.webp",
+      "width": 392,
+      "height": 242,
+      "sha256": "cbfc573eec39425ef54aa72a638995c101eb4b74fdf291643ec9ceb779164062"
+    },
+    {
+      "id": "conv-life-l3-158-3",
+      "topic": "conversation",
+      "en": "Choosing an alternative when a room is full · Ask someone to record the demonstration",
+      "ar": "اختيار بديل عند امتلاء القاعة · اطلب من شخص تسجيل العرض التوضيحي",
+      "sentenceEn": "Who could record the demonstration this afternoon?",
+      "sentenceAr": "من يستطيع تسجيل الشرح بعد الظهر؟",
+      "words": [
+        {
+          "en": "ask someone to record the demonstration",
+          "ar": "اطلب من شخص تسجيل العرض التوضيحي",
+          "kind": "phrase",
+          "x": 52,
+          "y": 60
+        },
+        {
+          "en": "camcorder",
+          "ar": "كاميرا فيديو محمولة",
+          "kind": "object",
+          "x": 73,
+          "y": 65
+        },
+        {
+          "en": "microphone",
+          "ar": "ميكروفون",
+          "kind": "object",
+          "x": 70,
+          "y": 55
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Ask someone to record the demonstration.",
+      "taskAr": "اطلب من شخص تسجيل العرض التوضيحي.",
+      "path": "assets/scenes/conversations/life-l3-158-3.webp",
+      "width": 389,
+      "height": 242,
+      "sha256": "80b1c23e5bf8d501395c1d9b942c55b180439a6352a27364f53d1d4db96d3ac7"
+    },
+    {
+      "id": "conv-life-l3-158-4",
+      "topic": "conversation",
+      "en": "Choosing an alternative when a room is full · Hand over the materials",
+      "ar": "اختيار بديل عند امتلاء القاعة · سلّم المواد",
+      "sentenceEn": "I'll ask him and make sure he has the materials.",
+      "sentenceAr": "سأسأله وأتأكد من أن المواد لديه.",
+      "words": [
+        {
+          "en": "hand over the materials",
+          "ar": "سلّم المواد",
+          "kind": "phrase",
+          "x": 48,
+          "y": 67
+        },
+        {
+          "en": "blue clipboard",
+          "ar": "لوح أوراق أزرق",
+          "kind": "object",
+          "x": 49,
+          "y": 63
+        },
+        {
+          "en": "anatomy model",
+          "ar": "مجسّم تشريحي",
+          "kind": "object",
+          "x": 73,
+          "y": 69
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Hand over the materials.",
+      "taskAr": "سلّم المواد.",
+      "path": "assets/scenes/conversations/life-l3-158-4.webp",
+      "width": 391,
+      "height": 242,
+      "sha256": "a21d5188aeec3334c2ef8217e07ce5d317019da9fac306379a0fa93a7d515909"
+    },
+    {
+      "id": "conv-life-l3-159-1",
+      "topic": "conversation",
+      "en": "Requesting details from someone who was absent · Ask what you missed on the call",
+      "ar": "طلب تفاصيل من شخص كان غائبًا · اسأل عمّا فاتك أثناء المكالمة",
+      "sentenceEn": "Were you busy?",
+      "sentenceAr": "هل كنت مشغولًا؟",
+      "words": [
+        {
+          "en": "ask what you missed on the call",
+          "ar": "اسأل عمّا فاتك أثناء المكالمة",
+          "kind": "phrase",
+          "x": 54,
+          "y": 67
+        },
+        {
+          "en": "headset",
+          "ar": "سمّاعة رأس",
+          "kind": "object",
+          "x": 28,
+          "y": 78
+        },
+        {
+          "en": "laptop",
+          "ar": "حاسوب محمول",
+          "kind": "object",
+          "x": 91,
+          "y": 78
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Ask what you missed on the call.",
+      "taskAr": "اسأل عمّا فاتك أثناء المكالمة.",
+      "path": "assets/scenes/conversations/life-l3-159-1.webp",
+      "width": 390,
+      "height": 241,
+      "sha256": "eb4e6a85c784a23d9e5f1f19c4cffe5d605d89a63e7a3458036d251425b97e18"
+    },
+    {
+      "id": "conv-life-l3-159-2",
+      "topic": "conversation",
+      "en": "Requesting details from someone who was absent · Check who goes first",
+      "ar": "طلب تفاصيل من شخص كان غائبًا · تحقّق ممّن يبدأ أولًا",
+      "sentenceEn": "I was on another call. What did I miss?",
+      "sentenceAr": "كنت في مكالمة أخرى. ماذا فاتني؟",
+      "words": [
+        {
+          "en": "check who goes first",
+          "ar": "تحقّق ممّن يبدأ أولًا",
+          "kind": "phrase",
+          "x": 48,
+          "y": 70
+        },
+        {
+          "en": "review order",
+          "ar": "ترتيب المراجعة",
+          "kind": "object",
+          "x": 54,
+          "y": 69
+        },
+        {
+          "en": "arrows",
+          "ar": "أسهم",
+          "kind": "object",
+          "x": 63,
+          "y": 63
+        }
+      ],
+      "patterns": [
+        {
+          "id": 13,
+          "en": "The manager changed the review order. I need to check who goes first.",
+          "ar": "غيّر المدير ترتيب المراجعة. أحتاج إلى التحقق ممن يبدأ."
+        }
+      ],
+      "taskEn": "Check who goes first.",
+      "taskAr": "تحقّق ممّن يبدأ أولًا.",
+      "path": "assets/scenes/conversations/life-l3-159-2.webp",
+      "width": 392,
+      "height": 241,
+      "sha256": "fb577407fd67a9c1da2d4e2d982825aba2492036a842044ae776ed38e627c04c"
+    },
+    {
+      "id": "conv-life-l3-159-3",
+      "topic": "conversation",
+      "en": "Requesting details from someone who was absent · Ask a colleague to share the notes",
+      "ar": "طلب تفاصيل من شخص كان غائبًا · اطلب من زميل مشاركة الملاحظات",
+      "sentenceEn": "Let's ask Tom if he knows what to do.",
+      "sentenceAr": "لنسأل توم إن كان يعرف ما ينبغي فعله.",
+      "words": [
+        {
+          "en": "ask a colleague to share the notes",
+          "ar": "اطلب من زميل مشاركة الملاحظات",
+          "kind": "phrase",
+          "x": 57,
+          "y": 66
+        },
+        {
+          "en": "meeting notes",
+          "ar": "ملاحظات الاجتماع",
+          "kind": "object",
+          "x": 75,
+          "y": 70
+        },
+        {
+          "en": "group symbol",
+          "ar": "رمز مجموعة",
+          "kind": "object",
+          "x": 71,
+          "y": 52
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Ask a colleague to share the notes.",
+      "taskAr": "اطلب من زميل مشاركة الملاحظات.",
+      "path": "assets/scenes/conversations/life-l3-159-3.webp",
+      "width": 389,
+      "height": 241,
+      "sha256": "cacef958dd99595a5ec3d64bcf3e37a227165ae330841cfb09d037f7fb463245"
+    },
+    {
+      "id": "conv-life-l3-159-4",
+      "topic": "conversation",
+      "en": "Requesting details from someone who was absent · Send the order when you have it",
+      "ar": "طلب تفاصيل من شخص كان غائبًا · أرسل الترتيب عندما يصلك",
+      "sentenceEn": "I'll contact him and send you the order once I have it.",
+      "sentenceAr": "سأتواصل معه وأرسل لك الترتيب حالما أحصل عليه.",
+      "words": [
+        {
+          "en": "send the order when you have it",
+          "ar": "أرسل الترتيب عندما يصلك",
+          "kind": "phrase",
+          "x": 55,
+          "y": 60
+        },
+        {
+          "en": "smartphone",
+          "ar": "هاتف ذكي",
+          "kind": "object",
+          "x": 61,
+          "y": 59
+        },
+        {
+          "en": "papers on the desk",
+          "ar": "أوراق على المكتب",
+          "kind": "object",
+          "x": 49,
+          "y": 96
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Send the order when you have it.",
+      "taskAr": "أرسل الترتيب عندما يصلك.",
+      "path": "assets/scenes/conversations/life-l3-159-4.webp",
+      "width": 391,
+      "height": 241,
+      "sha256": "2e77843ab59bde3dbb5d7b887b10c4da9c0d1dbeaad6719951be983649041d84"
+    },
+    {
+      "id": "conv-life-l3-160-1",
+      "topic": "conversation",
+      "en": "Giving an honest answer about a deadline · Say which parts you can finish by Friday",
+      "ar": "إعطاء جواب صريح عن موعد التسليم · اذكر الأجزاء التي يمكنك إنهاؤها بحلول الجمعة",
+      "sentenceEn": "Will you definitely be able to finish by Friday?",
+      "sentenceAr": "هل ستتمكن من الإنهاء بحلول الجمعة بالتأكيد؟",
+      "words": [
+        {
+          "en": "say which parts you can finish by Friday",
+          "ar": "اذكر الأجزاء التي يمكنك إنهاؤها بحلول الجمعة",
+          "kind": "phrase",
+          "x": 45,
+          "y": 68
+        },
+        {
+          "en": "marked date",
+          "ar": "تاريخ محدّد بعلامة",
+          "kind": "object",
+          "x": 51,
+          "y": 67
+        },
+        {
+          "en": "open planner",
+          "ar": "مفكرة مواعيد مفتوحة",
+          "kind": "object",
+          "x": 54,
+          "y": 52
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Say which parts you can finish by Friday.",
+      "taskAr": "اذكر الأجزاء التي يمكنك إنهاؤها بحلول الجمعة.",
+      "path": "assets/scenes/conversations/life-l3-160-1.webp",
+      "width": 390,
+      "height": 243,
+      "sha256": "ba068159494355a41accb0b8f29729331caedec279d52d50b7a80d49e8a6cc51"
+    },
+    {
+      "id": "conv-life-l3-160-2",
+      "topic": "conversation",
+      "en": "Giving an honest answer about a deadline · Explain what depends on the missing file",
+      "ar": "إعطاء جواب صريح عن موعد التسليم · اشرح ما يعتمد على الملف الناقص",
+      "sentenceEn": "I don't want to make any promises I can't keep.",
+      "sentenceAr": "لا أريد أن أقطع وعودًا لا أستطيع الوفاء بها.",
+      "words": [
+        {
+          "en": "explain what depends on the missing file",
+          "ar": "اشرح ما يعتمد على الملف الناقص",
+          "kind": "phrase",
+          "x": 52,
+          "y": 68
+        },
+        {
+          "en": "summary page",
+          "ar": "صفحة الملخّص",
+          "kind": "object",
+          "x": 27,
+          "y": 69
+        },
+        {
+          "en": "empty box",
+          "ar": "خانة فارغة",
+          "kind": "object",
+          "x": 64,
+          "y": 80
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9159,
+          "en": "What matters is which parts you can deliver by then.",
+          "ar": "المهم أي أجزاء يمكنك تسليمها بحلول ذلك الوقت."
+        }
+      ],
+      "taskEn": "Explain what depends on the missing file.",
+      "taskAr": "اشرح ما يعتمد على الملف الناقص.",
+      "path": "assets/scenes/conversations/life-l3-160-2.webp",
+      "width": 392,
+      "height": 243,
+      "sha256": "a033f3be99a31a58cb71dade786a07acf6d235f0db4fb7e2e2cd4b484eb471c5"
+    },
+    {
+      "id": "conv-life-l3-160-3",
+      "topic": "conversation",
+      "en": "Giving an honest answer about a deadline · Point out a missing file",
+      "ar": "إعطاء جواب صريح عن موعد التسليم · أشِر إلى ملف ناقص",
+      "sentenceEn": "I can finish the summary. The numbers depend on a file from Tom.",
+      "sentenceAr": "يمكنني إنهاء الملخص. تعتمد الأرقام على ملف من توم.",
+      "words": [
+        {
+          "en": "point out a missing file",
+          "ar": "أشِر إلى ملف ناقص",
+          "kind": "phrase",
+          "x": 70,
+          "y": 65
+        },
+        {
+          "en": "missing file icon",
+          "ar": "أيقونة ملف ناقص",
+          "kind": "object",
+          "x": 81,
+          "y": 62
+        },
+        {
+          "en": "concerned",
+          "ar": "قلق",
+          "kind": "description",
+          "x": 31,
+          "y": 28
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Point out a missing file.",
+      "taskAr": "أشِر إلى ملف ناقص.",
+      "path": "assets/scenes/conversations/life-l3-160-3.webp",
+      "width": 389,
+      "height": 243,
+      "sha256": "adbfaccfebe0d2d75acca6ab67a8fb55336a1c15fa81e183a97229ced6ff6e43"
+    },
+    {
+      "id": "conv-life-l3-160-4",
+      "topic": "conversation",
+      "en": "Giving an honest answer about a deadline · Ask someone to send the file today",
+      "ar": "إعطاء جواب صريح عن موعد التسليم · اطلب من شخص إرسال الملف اليوم",
+      "sentenceEn": "Then let's ask him to send the file today, even if he can't attend.",
+      "sentenceAr": "لنطلب منه إرسال الملف اليوم إذن، حتى لو لم يستطع الحضور.",
+      "words": [
+        {
+          "en": "ask someone to send the file today",
+          "ar": "اطلب من شخص إرسال الملف اليوم",
+          "kind": "phrase",
+          "x": 53,
+          "y": 63
+        },
+        {
+          "en": "upload icon",
+          "ar": "أيقونة رفع ملف",
+          "kind": "object",
+          "x": 51,
+          "y": 62
+        },
+        {
+          "en": "printed chart",
+          "ar": "مخطط مطبوع",
+          "kind": "object",
+          "x": 57,
+          "y": 95
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Ask someone to send the file today.",
+      "taskAr": "اطلب من شخص إرسال الملف اليوم.",
+      "path": "assets/scenes/conversations/life-l3-160-4.webp",
+      "width": 391,
+      "height": 243,
+      "sha256": "ede6eb3117c484b8045b8a1a8c3ddc9ccf8f3deed9abf80258dcda21be5d70d1"
+    },
+    {
+      "id": "conv-life-l3-161-1",
+      "topic": "conversation",
+      "en": "Explaining when a symptom began · Say when you first noticed a problem",
+      "ar": "توضيح متى بدأ عارض صحي · قل متى لاحظت المشكلة أول مرة",
+      "sentenceEn": "When did you first notice the problem?",
+      "sentenceAr": "متى لاحظت المشكلة أول مرة؟",
+      "words": [
+        {
+          "en": "say when you first noticed a problem",
+          "ar": "قل متى لاحظت المشكلة أول مرة",
+          "kind": "phrase",
+          "x": 41,
+          "y": 58
+        },
+        {
+          "en": "blood pressure cuff",
+          "ar": "رباط قياس ضغط الدم",
+          "kind": "object",
+          "x": 48,
+          "y": 93
+        },
+        {
+          "en": "concerned",
+          "ar": "قلق",
+          "kind": "description",
+          "x": 35,
+          "y": 32
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Say when you first noticed a problem.",
+      "taskAr": "قل متى لاحظت المشكلة أول مرة.",
+      "path": "assets/scenes/conversations/life-l3-161-1.webp",
+      "width": 391,
+      "height": 242,
+      "sha256": "6634a69783a7e0f9b89464cad00d902e1477829afa20806ab6cf7c6c805b388c"
+    },
+    {
+      "id": "conv-life-l3-161-2",
+      "topic": "conversation",
+      "en": "Explaining when a symptom began · Feel dizzy when you get out of bed",
+      "ar": "توضيح متى بدأ عارض صحي · يشعر بالدوار عند النهوض من السرير",
+      "sentenceEn": "What made you think that? Can you describe how you felt?",
+      "sentenceAr": "ما الذي جعلك تظن ذلك؟ هل يمكنك وصف شعورك؟",
+      "words": [
+        {
+          "en": "feel dizzy when you get out of bed",
+          "ar": "يشعر بالدوار عند النهوض من السرير",
+          "kind": "phrase",
+          "x": 49,
+          "y": 49
+        },
+        {
+          "en": "bedside lamp",
+          "ar": "مصباح بجانب السرير",
+          "kind": "object",
+          "x": 22,
+          "y": 44
+        },
+        {
+          "en": "pillow",
+          "ar": "وسادة",
+          "kind": "object",
+          "x": 83,
+          "y": 41
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9037,
+          "en": "What made you think that? Can you describe how you felt?",
+          "ar": "ما الذي جعلك تظن ذلك؟ هل يمكنك وصف شعورك؟"
+        }
+      ],
+      "taskEn": "Feel dizzy when you get out of bed.",
+      "taskAr": "يشعر بالدوار عند النهوض من السرير.",
+      "path": "assets/scenes/conversations/life-l3-161-2.webp",
+      "width": 390,
+      "height": 242,
+      "sha256": "73eb590d381d70c1397e12189bf220e0c76e57234e0c47fdedffe4785f62597a"
+    },
+    {
+      "id": "conv-life-l3-161-3",
+      "topic": "conversation",
+      "en": "Explaining when a symptom began · Check whether it happened on other days",
+      "ar": "توضيح متى بدأ عارض صحي · تحقّق هل حدث ذلك في أيام أخرى",
+      "sentenceEn": "Has it happened on other days as well?",
+      "sentenceAr": "هل حدث في أيام أخرى أيضًا؟",
+      "words": [
+        {
+          "en": "check whether it happened on other days",
+          "ar": "تحقّق هل حدث ذلك في أيام أخرى",
+          "kind": "phrase",
+          "x": 57,
+          "y": 72
+        },
+        {
+          "en": "marked dates",
+          "ar": "تواريخ محدّدة",
+          "kind": "object",
+          "x": 58,
+          "y": 63
+        },
+        {
+          "en": "desk calendar",
+          "ar": "تقويم مكتبي",
+          "kind": "object",
+          "x": 59,
+          "y": 69
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Check whether it happened on other days.",
+      "taskAr": "تحقّق هل حدث ذلك في أيام أخرى.",
+      "path": "assets/scenes/conversations/life-l3-161-3.webp",
+      "width": 390,
+      "height": 242,
+      "sha256": "55a6b7ecc6dddc4162edcc4088acac3494b6ef7f617f662c32977b4864ae1a37"
+    },
+    {
+      "id": "conv-life-l3-161-4",
+      "topic": "conversation",
+      "en": "Explaining when a symptom began · Write down the dates you remember",
+      "ar": "توضيح متى بدأ عارض صحي · دوّن التواريخ التي تتذكّرها",
+      "sentenceEn": "I mean, apart from today. We can write down the dates if you remember them.",
+      "sentenceAr": "أقصد غير اليوم. يمكننا تدوين التواريخ إذا تذكّرتها.",
+      "words": [
+        {
+          "en": "write down the dates you remember",
+          "ar": "دوّن التواريخ التي تتذكّرها",
+          "kind": "phrase",
+          "x": 60,
+          "y": 79
+        },
+        {
+          "en": "symptom log",
+          "ar": "سجلّ الأعراض",
+          "kind": "object",
+          "x": 72,
+          "y": 87
+        },
+        {
+          "en": "pen",
+          "ar": "قلم",
+          "kind": "object",
+          "x": 65,
+          "y": 75
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Write down the dates you remember.",
+      "taskAr": "دوّن التواريخ التي تتذكّرها.",
+      "path": "assets/scenes/conversations/life-l3-161-4.webp",
+      "width": 391,
+      "height": 242,
+      "sha256": "3d5be9b1b9e93d904885242fd6653045f5454c350bacaa652fc1b5ac0a21eb49"
+    },
+    {
+      "id": "conv-life-l3-162-1",
+      "topic": "conversation",
+      "en": "Asking about a family member's appointment · Ask about the next clinic visit",
+      "ar": "السؤال عن موعد أحد أفراد العائلة · اسأل عن زيارة العيادة التالية",
+      "sentenceEn": "How is Tom now?",
+      "sentenceAr": "كيف حال توم الآن؟",
+      "words": [
+        {
+          "en": "ask about the next clinic visit",
+          "ar": "اسأل عن زيارة العيادة التالية",
+          "kind": "phrase",
+          "x": 39,
+          "y": 65
+        },
+        {
+          "en": "appointment card",
+          "ar": "بطاقة موعد",
+          "kind": "object",
+          "x": 48,
+          "y": 69
+        },
+        {
+          "en": "clinic symbol",
+          "ar": "رمز العيادة",
+          "kind": "object",
+          "x": 44,
+          "y": 72
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Ask about the next clinic visit.",
+      "taskAr": "اسأل عن زيارة العيادة التالية.",
+      "path": "assets/scenes/conversations/life-l3-162-1.webp",
+      "width": 391,
+      "height": 241,
+      "sha256": "55a5785242988a9fc98e30b71458592f529d48968faeac47ccd31f7b68a44549"
+    },
+    {
+      "id": "conv-life-l3-162-2",
+      "topic": "conversation",
+      "en": "Asking about a family member's appointment · Find the follow-up clinic",
+      "ar": "السؤال عن موعد أحد أفراد العائلة · اعثر على عيادة المتابعة",
+      "sentenceEn": "Do you know where the follow-up clinic is?",
+      "sentenceAr": "هل تعرف أين تقع عيادة المتابعة؟",
+      "words": [
+        {
+          "en": "find the follow-up clinic",
+          "ar": "اعثر على عيادة المتابعة",
+          "kind": "phrase",
+          "x": 44,
+          "y": 47
+        },
+        {
+          "en": "directional sign",
+          "ar": "لافتة اتجاهات",
+          "kind": "object",
+          "x": 47,
+          "y": 39
+        },
+        {
+          "en": "elevator",
+          "ar": "مصعد",
+          "kind": "object",
+          "x": 79,
+          "y": 29
+        }
+      ],
+      "patterns": [
+        {
+          "id": 12,
+          "en": "Do you know where the follow-up clinic is?",
+          "ar": "هل تعرف أين تقع عيادة المتابعة؟"
+        }
+      ],
+      "taskEn": "Find the follow-up clinic.",
+      "taskAr": "اعثر على عيادة المتابعة.",
+      "path": "assets/scenes/conversations/life-l3-162-2.webp",
+      "width": 390,
+      "height": 241,
+      "sha256": "6d51f539fbd9fdea748e7ca2516082c8344c8783a92fbd0ee97a53603a51d32c"
+    },
+    {
+      "id": "conv-life-l3-162-3",
+      "topic": "conversation",
+      "en": "Asking about a family member's appointment · Offer a lift to the clinic",
+      "ar": "السؤال عن موعد أحد أفراد العائلة · اعرض توصيل شخص إلى العيادة",
+      "sentenceEn": "I can take him there if he needs a lift.",
+      "sentenceAr": "يمكنني إيصاله إذا احتاج إلى توصيلة.",
+      "words": [
+        {
+          "en": "offer a lift to the clinic",
+          "ar": "اعرض توصيل شخص إلى العيادة",
+          "kind": "phrase",
+          "x": 53,
+          "y": 64
+        },
+        {
+          "en": "car keys",
+          "ar": "مفاتيح السيارة",
+          "kind": "object",
+          "x": 51,
+          "y": 62
+        },
+        {
+          "en": "car window",
+          "ar": "نافذة السيارة",
+          "kind": "object",
+          "x": 54,
+          "y": 52
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Offer a lift to the clinic.",
+      "taskAr": "اعرض توصيل شخص إلى العيادة.",
+      "path": "assets/scenes/conversations/life-l3-162-3.webp",
+      "width": 390,
+      "height": 241,
+      "sha256": "f94ff97d127961ad974b0a20c00dcb465be33403078248e5647573a1aedfb2de"
+    },
+    {
+      "id": "conv-life-l3-162-4",
+      "topic": "conversation",
+      "en": "Asking about a family member's appointment · Ask if someone wants company",
+      "ar": "السؤال عن موعد أحد أفراد العائلة · اسأل إن كان شخص يريد من يرافقه",
+      "sentenceEn": "Still, I'll ask whether he would like some company.",
+      "sentenceAr": "ومع ذلك سأسأله إن كان يرغب في مرافقة أحد.",
+      "words": [
+        {
+          "en": "ask if someone wants company",
+          "ar": "اسأل إن كان شخص يريد من يرافقه",
+          "kind": "phrase",
+          "x": 65,
+          "y": 64
+        },
+        {
+          "en": "smartphone",
+          "ar": "هاتف ذكي",
+          "kind": "object",
+          "x": 74,
+          "y": 73
+        },
+        {
+          "en": "reassured",
+          "ar": "مطمئن",
+          "kind": "description",
+          "x": 72,
+          "y": 34
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Ask if someone wants company.",
+      "taskAr": "اسأل إن كان شخص يريد من يرافقه.",
+      "path": "assets/scenes/conversations/life-l3-162-4.webp",
+      "width": 391,
+      "height": 241,
+      "sha256": "5e0889d7da74333a7b832ea4a95fcbe075eb47715a7943a6f4e1b1c339febf2e"
+    },
+    {
+      "id": "conv-life-l3-163-1",
+      "topic": "conversation",
+      "en": "Describing an old injury · Describe an old football injury",
+      "ar": "وصف إصابة قديمة · صِف إصابة قديمة في كرة القدم",
+      "sentenceEn": "What's the worst injury you've ever had?",
+      "sentenceAr": "ما أسوأ إصابة تعرضت لها في حياتك؟",
+      "words": [
+        {
+          "en": "describe an old football injury",
+          "ar": "صِف إصابة قديمة في كرة القدم",
+          "kind": "phrase",
+          "x": 45,
+          "y": 70
+        },
+        {
+          "en": "football",
+          "ar": "كرة قدم",
+          "kind": "object",
+          "x": 17,
+          "y": 67
+        },
+        {
+          "en": "ankle",
+          "ar": "كاحل",
+          "kind": "object",
+          "x": 59,
+          "y": 86
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Describe an old football injury.",
+      "taskAr": "صِف إصابة قديمة في كرة القدم.",
+      "path": "assets/scenes/conversations/life-l3-163-1.webp",
+      "width": 391,
+      "height": 241,
+      "sha256": "100af1965ff28136834a5701aadab9f7384d8b19438fa6f2e38782b92e1fe496"
+    },
+    {
+      "id": "conv-life-l3-163-2",
+      "topic": "conversation",
+      "en": "Describing an old injury · Explain when the ankle still bothers you",
+      "ar": "وصف إصابة قديمة · اشرح متى لا يزال كاحلك يؤلمك",
+      "sentenceEn": "I hurt my ankle playing football a few years ago.",
+      "sentenceAr": "أصبت كاحلي أثناء لعب كرة القدم قبل بضع سنوات.",
+      "words": [
+        {
+          "en": "explain when the ankle still bothers you",
+          "ar": "اشرح متى لا يزال كاحلك يؤلمك",
+          "kind": "phrase",
+          "x": 53,
+          "y": 70
+        },
+        {
+          "en": "walking shoe",
+          "ar": "حذاء مشي",
+          "kind": "object",
+          "x": 55,
+          "y": 91
+        },
+        {
+          "en": "paved path",
+          "ar": "ممر مرصوف",
+          "kind": "object",
+          "x": 65,
+          "y": 85
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9138,
+          "en": "Could you clarify whether it still bothers you when you walk?",
+          "ar": "هل يمكنك توضيح ما إذا كان ما زال يزعجك أثناء المشي؟"
+        }
+      ],
+      "taskEn": "Explain when the ankle still bothers you.",
+      "taskAr": "اشرح متى لا يزال كاحلك يؤلمك.",
+      "path": "assets/scenes/conversations/life-l3-163-2.webp",
+      "width": 390,
+      "height": 241,
+      "sha256": "d88750e6d056f502ad5e4a838fa1caf983774672eeeeb6a5aa97474e133f6bcd"
+    },
+    {
+      "id": "conv-life-l3-163-3",
+      "topic": "conversation",
+      "en": "Describing an old injury · Mention it at the next appointment",
+      "ar": "وصف إصابة قديمة · اذكر ذلك في موعدك القادم",
+      "sentenceEn": "Only after a long walk. I'll mention it at my next appointment.",
+      "sentenceAr": "فقط بعد المشي مسافة طويلة. سأذكر ذلك في موعدي القادم.",
+      "words": [
+        {
+          "en": "mention it at the next appointment",
+          "ar": "اذكر ذلك في موعدك القادم",
+          "kind": "phrase",
+          "x": 56,
+          "y": 74
+        },
+        {
+          "en": "desk calendar",
+          "ar": "تقويم مكتبي",
+          "kind": "object",
+          "x": 31,
+          "y": 43
+        },
+        {
+          "en": "appointment slip",
+          "ar": "ورقة موعد",
+          "kind": "object",
+          "x": 67,
+          "y": 67
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Mention it at the next appointment.",
+      "taskAr": "اذكر ذلك في موعدك القادم.",
+      "path": "assets/scenes/conversations/life-l3-163-3.webp",
+      "width": 390,
+      "height": 241,
+      "sha256": "c57a33de88cf428a8d418487f7b56c11efc745169ccca26b1f1b1aea70fc5538"
+    },
+    {
+      "id": "conv-life-l3-163-4",
+      "topic": "conversation",
+      "en": "Describing an old injury · Call someone from the hospital",
+      "ar": "وصف إصابة قديمة · اتصل بشخص من المستشفى",
+      "sentenceEn": "I called Tom from the hospital.",
+      "sentenceAr": "اتصلت بتوم من المستشفى.",
+      "words": [
+        {
+          "en": "call someone from the hospital",
+          "ar": "اتصل بشخص من المستشفى",
+          "kind": "phrase",
+          "x": 38,
+          "y": 29
+        },
+        {
+          "en": "waiting-room chair",
+          "ar": "كرسي غرفة الانتظار",
+          "kind": "object",
+          "x": 34,
+          "y": 72
+        },
+        {
+          "en": "ankle brace",
+          "ar": "دعامة للكاحل",
+          "kind": "object",
+          "x": 59,
+          "y": 89
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Call someone from the hospital.",
+      "taskAr": "اتصل بشخص من المستشفى.",
+      "path": "assets/scenes/conversations/life-l3-163-4.webp",
+      "width": 391,
+      "height": 241,
+      "sha256": "6eb7977823b2f436f24fda367b68e0ff5cb114661bfd902ab0f6bdeb7f735b55"
+    },
+    {
+      "id": "conv-life-l3-164-1",
+      "topic": "conversation",
+      "en": "Sharing what you know after an incident · Record when you made the call",
+      "ar": "نقل ما تعرفه بعد حادث · دوّن وقت إجراء المكالمة",
+      "sentenceEn": "How long did it take for the ambulance to arrive?",
+      "sentenceAr": "كم استغرق وصول سيارة الإسعاف؟",
+      "words": [
+        {
+          "en": "record when you made the call",
+          "ar": "دوّن وقت إجراء المكالمة",
+          "kind": "phrase",
+          "x": 52,
+          "y": 64
+        },
+        {
+          "en": "call screen",
+          "ar": "شاشة المكالمة",
+          "kind": "object",
+          "x": 55,
+          "y": 60
+        },
+        {
+          "en": "phone button",
+          "ar": "زر اتصال",
+          "kind": "object",
+          "x": 56,
+          "y": 79
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Record when you made the call.",
+      "taskAr": "دوّن وقت إجراء المكالمة.",
+      "path": "assets/scenes/conversations/life-l3-164-1.webp",
+      "width": 391,
+      "height": 244,
+      "sha256": "70a1d5ccbddd17486fe6ca489b9f93a7f99b103959d09c43993b68ed0986b025"
+    },
+    {
+      "id": "conv-life-l3-164-2",
+      "topic": "conversation",
+      "en": "Sharing what you know after an incident · Stay with someone while waiting for help",
+      "ar": "نقل ما تعرفه بعد حادث · ابقَ مع شخص أثناء انتظار المساعدة",
+      "sentenceEn": "About twelve minutes. I wrote down when I made the call.",
+      "sentenceAr": "نحو اثنتي عشرة دقيقة. دوّنت وقت الاتصال.",
+      "words": [
+        {
+          "en": "stay with someone while waiting for help",
+          "ar": "ابقَ مع شخص أثناء انتظار المساعدة",
+          "kind": "phrase",
+          "x": 58,
+          "y": 55
+        },
+        {
+          "en": "hand on shoulder",
+          "ar": "يد على الكتف",
+          "kind": "object",
+          "x": 55,
+          "y": 48
+        },
+        {
+          "en": "wooden bench",
+          "ar": "مقعد خشبي",
+          "kind": "object",
+          "x": 48,
+          "y": 77
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9163,
+          "en": "Could you tell me whether anyone stayed with the person while you waited?",
+          "ar": "هل يمكنك إخباري ما إذا بقي أحد مع الشخص أثناء انتظاركم؟"
+        }
+      ],
+      "taskEn": "Stay with someone while waiting for help.",
+      "taskAr": "ابقَ مع شخص أثناء انتظار المساعدة.",
+      "path": "assets/scenes/conversations/life-l3-164-2.webp",
+      "width": 390,
+      "height": 244,
+      "sha256": "c37f956ed5738e7be62e14c0e682b6f08045b31aa3a6f1c9bdc61fe12dbf6342"
+    },
+    {
+      "id": "conv-life-l3-164-3",
+      "topic": "conversation",
+      "en": "Sharing what you know after an incident · Go outside to meet the ambulance crew",
+      "ar": "نقل ما تعرفه بعد حادث · اخرج للقاء طاقم الإسعاف",
+      "sentenceEn": "Yes. A neighbor stayed there while I went outside to meet the crew.",
+      "sentenceAr": "نعم. بقي أحد الجيران هناك بينما خرجت لاستقبال الطاقم.",
+      "words": [
+        {
+          "en": "go outside to meet the ambulance crew",
+          "ar": "اخرج للقاء طاقم الإسعاف",
+          "kind": "phrase",
+          "x": 51,
+          "y": 59
+        },
+        {
+          "en": "ambulance",
+          "ar": "سيارة إسعاف",
+          "kind": "object",
+          "x": 66,
+          "y": 48
+        },
+        {
+          "en": "stretcher",
+          "ar": "نقّالة",
+          "kind": "object",
+          "x": 87,
+          "y": 67
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Go outside to meet the ambulance crew.",
+      "taskAr": "اخرج للقاء طاقم الإسعاف.",
+      "path": "assets/scenes/conversations/life-l3-164-3.webp",
+      "width": 390,
+      "height": 244,
+      "sha256": "5bf420147f374e2403721ad321f2743d9efb1037efe0cea13a40b87eb2bd1b11"
+    },
+    {
+      "id": "conv-life-l3-164-4",
+      "topic": "conversation",
+      "en": "Sharing what you know after an incident · Pass the details to the coordinator",
+      "ar": "نقل ما تعرفه بعد حادث · سلّم التفاصيل إلى المنسّق",
+      "sentenceEn": "Fortunately, Tom survived.",
+      "sentenceAr": "لحسن الحظ، نجا توم.",
+      "words": [
+        {
+          "en": "pass the details to the coordinator",
+          "ar": "سلّم التفاصيل إلى المنسّق",
+          "kind": "phrase",
+          "x": 62,
+          "y": 77
+        },
+        {
+          "en": "written record",
+          "ar": "سجلّ مكتوب",
+          "kind": "object",
+          "x": 61,
+          "y": 83
+        },
+        {
+          "en": "relieved",
+          "ar": "مرتاح",
+          "kind": "description",
+          "x": 40,
+          "y": 36
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Pass the details to the coordinator.",
+      "taskAr": "سلّم التفاصيل إلى المنسّق.",
+      "path": "assets/scenes/conversations/life-l3-164-4.webp",
+      "width": 391,
+      "height": 244,
+      "sha256": "a80268ee72bfd8c016f44ab4c42ff00d11742448207967dec84f6f2f24aa5411"
+    },
+    {
+      "id": "conv-life-l3-165-1",
+      "topic": "conversation",
+      "en": "Asking what is known so far · Ask if the cause is known",
+      "ar": "السؤال عما هو معروف حتى الآن · اسأل هل السبب معروف",
+      "sentenceEn": "Have they found out what caused the illness?",
+      "sentenceAr": "هل عرفوا ما الذي تسبب في المرض؟",
+      "words": [
+        {
+          "en": "ask if the cause is known",
+          "ar": "اسأل هل السبب معروف",
+          "kind": "phrase",
+          "x": 53,
+          "y": 66
+        },
+        {
+          "en": "hourglass",
+          "ar": "ساعة رملية",
+          "kind": "object",
+          "x": 54,
+          "y": 75
+        },
+        {
+          "en": "worried",
+          "ar": "قلق",
+          "kind": "description",
+          "x": 33,
+          "y": 26
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Ask if the cause is known.",
+      "taskAr": "اسأل هل السبب معروف.",
+      "path": "assets/scenes/conversations/life-l3-165-1.webp",
+      "width": 390,
+      "height": 248,
+      "sha256": "4cba6d8f59609a258b878168b3a78775cc5ab0a42010935507095c2e3bd69024"
+    },
+    {
+      "id": "conv-life-l3-165-2",
+      "topic": "conversation",
+      "en": "Asking what is known so far · Ask when you will hear more",
+      "ar": "السؤال عما هو معروف حتى الآن · اسأل متى ستعرف المزيد",
+      "sentenceEn": "What matters is knowing when we'll hear more.",
+      "sentenceAr": "المهم أن نعرف متى سنعرف المزيد.",
+      "words": [
+        {
+          "en": "ask when you will hear more",
+          "ar": "اسأل متى ستعرف المزيد",
+          "kind": "phrase",
+          "x": 48,
+          "y": 67
+        },
+        {
+          "en": "closed binder",
+          "ar": "ملف مغلق",
+          "kind": "object",
+          "x": 60,
+          "y": 89
+        },
+        {
+          "en": "thoughtful",
+          "ar": "متأمّل",
+          "kind": "description",
+          "x": 70,
+          "y": 32
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9159,
+          "en": "What matters is knowing when we'll hear more.",
+          "ar": "المهم أن نعرف متى سنعرف المزيد."
+        }
+      ],
+      "taskEn": "Ask when you will hear more.",
+      "taskAr": "اسأل متى ستعرف المزيد.",
+      "path": "assets/scenes/conversations/life-l3-165-2.webp",
+      "width": 390,
+      "height": 248,
+      "sha256": "2dced2c80b187ff97ffaf4c7ca3cdde51f722ccc950505108d2de52bdb212bcd"
+    },
+    {
+      "id": "conv-life-l3-165-3",
+      "topic": "conversation",
+      "en": "Asking what is known so far · Plan what to ask at the next visit",
+      "ar": "السؤال عما هو معروف حتى الآن · خطّط لما ستسأل عنه في الزيارة التالية",
+      "sentenceEn": "I can help you write down the questions you want to ask.",
+      "sentenceAr": "يمكنني مساعدتك في تدوين الأسئلة التي تود طرحها.",
+      "words": [
+        {
+          "en": "plan what to ask at the next visit",
+          "ar": "خطّط لما ستسأل عنه في الزيارة التالية",
+          "kind": "phrase",
+          "x": 59,
+          "y": 77
+        },
+        {
+          "en": "circled date",
+          "ar": "تاريخ محدّد بدائرة",
+          "kind": "object",
+          "x": 68,
+          "y": 71
+        },
+        {
+          "en": "calendar page",
+          "ar": "صفحة تقويم",
+          "kind": "object",
+          "x": 75,
+          "y": 80
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Plan what to ask at the next visit.",
+      "taskAr": "خطّط لما ستسأل عنه في الزيارة التالية.",
+      "path": "assets/scenes/conversations/life-l3-165-3.webp",
+      "width": 391,
+      "height": 248,
+      "sha256": "fc27f2b0d0b5b1849354357259f7317bed576d23e0ca108a170207e60628f724"
+    },
+    {
+      "id": "conv-life-l3-165-4",
+      "topic": "conversation",
+      "en": "Asking what is known so far · Use a list to remember your questions",
+      "ar": "السؤال عما هو معروف حتى الآن · استعن بقائمة لتذكّر أسئلتك",
+      "sentenceEn": "I'm okay. Having a list will help me remember what to ask.",
+      "sentenceAr": "أنا بخير. ستساعدني القائمة في تذكّر ما أريد السؤال عنه.",
+      "words": [
+        {
+          "en": "use a list to remember your questions",
+          "ar": "استعن بقائمة لتذكّر أسئلتك",
+          "kind": "phrase",
+          "x": 57,
+          "y": 62
+        },
+        {
+          "en": "checklist",
+          "ar": "قائمة تحقق",
+          "kind": "object",
+          "x": 54,
+          "y": 74
+        },
+        {
+          "en": "clipboard clip",
+          "ar": "مشبك اللوح",
+          "kind": "object",
+          "x": 53,
+          "y": 44
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Use a list to remember your questions.",
+      "taskAr": "استعن بقائمة لتذكّر أسئلتك.",
+      "path": "assets/scenes/conversations/life-l3-165-4.webp",
+      "width": 391,
+      "height": 248,
+      "sha256": "fac75137be00314e91047916274623dabc34e7359e23485e670381aa620eb6e3"
+    },
+    {
+      "id": "conv-life-l3-166-1",
+      "topic": "conversation",
+      "en": "Speaking up before a vaccination · Explain why you feel nervous",
+      "ar": "التعبير عن القلق قبل تلقي لقاح · اشرح لماذا تشعر بالتوتر",
+      "sentenceEn": "Tom hates shots.",
+      "sentenceAr": "يكره توم الحقن.",
+      "words": [
+        {
+          "en": "explain why you feel nervous",
+          "ar": "اشرح لماذا تشعر بالتوتر",
+          "kind": "phrase",
+          "x": 42,
+          "y": 56
+        },
+        {
+          "en": "appointment card",
+          "ar": "بطاقة موعد",
+          "kind": "object",
+          "x": 49,
+          "y": 78
+        },
+        {
+          "en": "nervous",
+          "ar": "متوتر",
+          "kind": "description",
+          "x": 39,
+          "y": 28
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Explain why you feel nervous.",
+      "taskAr": "اشرح لماذا تشعر بالتوتر.",
+      "path": "assets/scenes/conversations/life-l3-166-1.webp",
+      "width": 390,
+      "height": 233,
+      "sha256": "a8bed68a1feeaecbf59f3d6d9b2ec457c9ba81370845783af4b84743e461f8f7"
+    },
+    {
+      "id": "conv-life-l3-166-2",
+      "topic": "conversation",
+      "en": "Speaking up before a vaccination · Ask the nurse what to expect",
+      "ar": "التعبير عن القلق قبل تلقي لقاح · اسأل الممرضة عمّا تتوقّعه",
+      "sentenceEn": "Can you tell me what usually happens before the appointment?",
+      "sentenceAr": "هل يمكنك إخباري بما يحدث عادة قبل الموعد؟",
+      "words": [
+        {
+          "en": "ask the nurse what to expect",
+          "ar": "اسأل الممرضة عمّا تتوقّعه",
+          "kind": "phrase",
+          "x": 48,
+          "y": 54
+        },
+        {
+          "en": "injection pictogram",
+          "ar": "رمز حقنة",
+          "kind": "object",
+          "x": 44,
+          "y": 50
+        },
+        {
+          "en": "bandage picture",
+          "ar": "صورة ضمادة",
+          "kind": "object",
+          "x": 45,
+          "y": 70
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9037,
+          "en": "Can you tell me what usually happens before the appointment?",
+          "ar": "هل يمكنك إخباري بما يحدث عادة قبل الموعد؟"
+        }
+      ],
+      "taskEn": "Ask the nurse what to expect.",
+      "taskAr": "اسأل الممرضة عمّا تتوقّعه.",
+      "path": "assets/scenes/conversations/life-l3-166-2.webp",
+      "width": 390,
+      "height": 233,
+      "sha256": "5ea59666a02c717210ee5920e3df11ba5e56fa9746ea4e8bd0eea7806e26761e"
+    },
+    {
+      "id": "conv-life-l3-166-3",
+      "topic": "conversation",
+      "en": "Speaking up before a vaccination · Ask for time to talk it through",
+      "ar": "التعبير عن القلق قبل تلقي لقاح · اطلب وقتًا لمناقشة الأمر",
+      "sentenceEn": "What do I have to be afraid of?",
+      "sentenceAr": "ما الذي عليّ أن أخاف منه؟",
+      "words": [
+        {
+          "en": "ask for time to talk it through",
+          "ar": "اطلب وقتًا لمناقشة الأمر",
+          "kind": "phrase",
+          "x": 52,
+          "y": 65
+        },
+        {
+          "en": "wristwatch",
+          "ar": "ساعة يد",
+          "kind": "object",
+          "x": 55,
+          "y": 68
+        },
+        {
+          "en": "open palm",
+          "ar": "كف مفتوحة",
+          "kind": "action",
+          "x": 30,
+          "y": 71
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Ask for time to talk it through.",
+      "taskAr": "اطلب وقتًا لمناقشة الأمر.",
+      "path": "assets/scenes/conversations/life-l3-166-3.webp",
+      "width": 391,
+      "height": 233,
+      "sha256": "7b6f867a5c087df50d5ad3d7896b8dda3eaec4824a1e446d08c073e4c5d7031b"
+    },
+    {
+      "id": "conv-life-l3-166-4",
+      "topic": "conversation",
+      "en": "Speaking up before a vaccination · Explain how you feel when you go in",
+      "ar": "التعبير عن القلق قبل تلقي لقاح · اشرح كيف تشعر عند الدخول",
+      "sentenceEn": "Thanks. I'll tell the nurse how I feel as soon as I go in.",
+      "sentenceAr": "شكرًا. سأخبر الممرضة بشعوري بمجرد دخولي.",
+      "words": [
+        {
+          "en": "explain how you feel when you go in",
+          "ar": "اشرح كيف تشعر عند الدخول",
+          "kind": "phrase",
+          "x": 42,
+          "y": 61
+        },
+        {
+          "en": "clinic doorway",
+          "ar": "مدخل العيادة",
+          "kind": "object",
+          "x": 66,
+          "y": 47
+        },
+        {
+          "en": "clinic badge",
+          "ar": "بطاقة تعريف العيادة",
+          "kind": "object",
+          "x": 88,
+          "y": 87
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Explain how you feel when you go in.",
+      "taskAr": "اشرح كيف تشعر عند الدخول.",
+      "path": "assets/scenes/conversations/life-l3-166-4.webp",
+      "width": 391,
+      "height": 233,
+      "sha256": "1b3499a8bd07b4155f13daa1b0fa82deff47d2b3ee26cd5f82d17bf4a7c335cd"
+    },
+    {
+      "id": "conv-life-l3-167-1",
+      "topic": "conversation",
+      "en": "Checking that someone got home safely · Say that you are waiting for the bus",
+      "ar": "التحقق من وصول شخص إلى المنزل بأمان · قل إنك تنتظر الحافلة",
+      "sentenceEn": "Can you let me know when you reach home?",
+      "sentenceAr": "هل يمكنك إخباري عندما تصل إلى المنزل؟",
+      "words": [
+        {
+          "en": "say that you are waiting for the bus",
+          "ar": "قل إنك تنتظر الحافلة",
+          "kind": "phrase",
+          "x": 33,
+          "y": 34
+        },
+        {
+          "en": "bus stop sign",
+          "ar": "لافتة موقف حافلات",
+          "kind": "object",
+          "x": 74,
+          "y": 25
+        },
+        {
+          "en": "mobile phone",
+          "ar": "هاتف محمول",
+          "kind": "object",
+          "x": 28,
+          "y": 35
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9037,
+          "en": "Can you let me know when you reach home?",
+          "ar": "هل يمكنك إخباري عندما تصل إلى المنزل؟"
+        }
+      ],
+      "taskEn": "Say that you are waiting for the bus.",
+      "taskAr": "قل إنك تنتظر الحافلة.",
+      "path": "assets/scenes/conversations/life-l3-167-1.webp",
+      "width": 390,
+      "height": 243,
+      "sha256": "6193ecc925585058868a2ecb96251e7cd983efa9b768a892315f10f5f7b873af"
+    },
+    {
+      "id": "conv-life-l3-167-2",
+      "topic": "conversation",
+      "en": "Checking that someone got home safely · Offer to pick someone up if needed",
+      "ar": "التحقق من وصول شخص إلى المنزل بأمان · اعرض توصيل شخص إذا لزم الأمر",
+      "sentenceEn": "If the bus doesn't come, call me. I'll come and get you.",
+      "sentenceAr": "إذا لم تأتِ الحافلة، اتصل بي. سأحضر لآخذك.",
+      "words": [
+        {
+          "en": "offer to pick someone up if needed",
+          "ar": "اعرض توصيل شخص إذا لزم الأمر",
+          "kind": "phrase",
+          "x": 49,
+          "y": 72
+        },
+        {
+          "en": "car keys",
+          "ar": "مفاتيح السيارة",
+          "kind": "object",
+          "x": 68,
+          "y": 87
+        },
+        {
+          "en": "key tray",
+          "ar": "صينية مفاتيح",
+          "kind": "object",
+          "x": 69,
+          "y": 91
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Offer to pick someone up if needed.",
+      "taskAr": "اعرض توصيل شخص إذا لزم الأمر.",
+      "path": "assets/scenes/conversations/life-l3-167-2.webp",
+      "width": 390,
+      "height": 243,
+      "sha256": "815dfcf8ceca893caed164359e8a4cc2c3485faee5ee08e47008508467907dc2"
+    },
+    {
+      "id": "conv-life-l3-167-3",
+      "topic": "conversation",
+      "en": "Checking that someone got home safely · Keep your phone nearby",
+      "ar": "التحقق من وصول شخص إلى المنزل بأمان · أبقِ هاتفك في متناول اليد",
+      "sentenceEn": "I'm fine too. I'll keep my phone nearby until you get in.",
+      "sentenceAr": "وأنا بخير كذلك. سأبقي هاتفي بجانبي حتى تصل.",
+      "words": [
+        {
+          "en": "keep your phone nearby",
+          "ar": "أبقِ هاتفك في متناول اليد",
+          "kind": "phrase",
+          "x": 66,
+          "y": 77
+        },
+        {
+          "en": "smartphone",
+          "ar": "هاتف ذكي",
+          "kind": "object",
+          "x": 66,
+          "y": 89
+        },
+        {
+          "en": "table lamp",
+          "ar": "مصباح طاولة",
+          "kind": "object",
+          "x": 87,
+          "y": 37
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Keep your phone nearby.",
+      "taskAr": "أبقِ هاتفك في متناول اليد.",
+      "path": "assets/scenes/conversations/life-l3-167-3.webp",
+      "width": 391,
+      "height": 243,
+      "sha256": "cc093248d0ae4ef548cd2ef1802788ffa5bbc43d55c6c99b56e89c9ed722f072"
+    },
+    {
+      "id": "conv-life-l3-167-4",
+      "topic": "conversation",
+      "en": "Checking that someone got home safely · Check in when you reach home",
+      "ar": "التحقق من وصول شخص إلى المنزل بأمان · أرسل خبر وصولك إلى المنزل",
+      "sentenceEn": "I just got through the door. Thanks for checking on me.",
+      "sentenceAr": "دخلت المنزل للتو. شكرًا لاطمئنانك عليّ.",
+      "words": [
+        {
+          "en": "check in when you reach home",
+          "ar": "أرسل خبر وصولك إلى المنزل",
+          "kind": "phrase",
+          "x": 55,
+          "y": 62
+        },
+        {
+          "en": "front door",
+          "ar": "الباب الأمامي",
+          "kind": "object",
+          "x": 64,
+          "y": 50
+        },
+        {
+          "en": "phone",
+          "ar": "هاتف",
+          "kind": "object",
+          "x": 56,
+          "y": 61
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Check in when you reach home.",
+      "taskAr": "أرسل خبر وصولك إلى المنزل.",
+      "path": "assets/scenes/conversations/life-l3-167-4.webp",
+      "width": 391,
+      "height": 243,
+      "sha256": "b2947c3a3c348d2d1b949c60a181c7d12d3969f282fc15b04b2f2845f8029ccb"
+    },
+    {
+      "id": "conv-life-l3-168-1",
+      "topic": "conversation",
+      "en": "Helping a visitor find the waiting area · Show the address on the appointment letter",
+      "ar": "إرشاد زائر إلى مكان الانتظار · اعرض العنوان على خطاب الموعد",
+      "sentenceEn": "Can someone help me?",
+      "sentenceAr": "هل يمكن لأحد مساعدتي؟",
+      "words": [
+        {
+          "en": "show the address on the appointment letter",
+          "ar": "اعرض العنوان على خطاب الموعد",
+          "kind": "phrase",
+          "x": 49,
+          "y": 69
+        },
+        {
+          "en": "appointment letter",
+          "ar": "خطاب الموعد",
+          "kind": "object",
+          "x": 55,
+          "y": 66
+        },
+        {
+          "en": "calendar symbol",
+          "ar": "رمز تقويم",
+          "kind": "object",
+          "x": 56,
+          "y": 68
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9049,
+          "en": "Let me see the address on your appointment letter.",
+          "ar": "دعني أرى العنوان على خطاب موعدك."
+        }
+      ],
+      "taskEn": "Show the address on the appointment letter.",
+      "taskAr": "اعرض العنوان على خطاب الموعد.",
+      "path": "assets/scenes/conversations/life-l3-168-1.webp",
+      "width": 390,
+      "height": 244,
+      "sha256": "6021c7e212f5f72989db678d67d9198f15128739e8ae9e45091f5aa6cdbb9dd2"
+    },
+    {
+      "id": "conv-life-l3-168-2",
+      "topic": "conversation",
+      "en": "Helping a visitor find the waiting area · Find the waiting area through those doors",
+      "ar": "إرشاد زائر إلى مكان الانتظار · اعثر على منطقة الانتظار خلف تلك الأبواب",
+      "sentenceEn": "Here it is. I can't find room seven.",
+      "sentenceAr": "ها هو. لا أستطيع العثور على الغرفة السابعة.",
+      "words": [
+        {
+          "en": "find the waiting area through those doors",
+          "ar": "اعثر على منطقة الانتظار خلف تلك الأبواب",
+          "kind": "phrase",
+          "x": 55,
+          "y": 48
+        },
+        {
+          "en": "waiting area sign",
+          "ar": "لافتة منطقة الانتظار",
+          "kind": "object",
+          "x": 41,
+          "y": 25
+        },
+        {
+          "en": "double doors",
+          "ar": "باب مزدوج",
+          "kind": "object",
+          "x": 77,
+          "y": 44
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Find the waiting area through those doors.",
+      "taskAr": "اعثر على منطقة الانتظار خلف تلك الأبواب.",
+      "path": "assets/scenes/conversations/life-l3-168-2.webp",
+      "width": 390,
+      "height": 244,
+      "sha256": "25fc0b6ba1da1a5271f21f27d0ee8918b71e179f6d5e9e5b5d3b2281ef6fcb1c"
+    },
+    {
+      "id": "conv-life-l3-168-3",
+      "topic": "conversation",
+      "en": "Helping a visitor find the waiting area · Ask whether you should check in first",
+      "ar": "إرشاد زائر إلى مكان الانتظار · اسأل إن كان عليك تسجيل الحضور أولًا",
+      "sentenceEn": "Should I check in first or just sit down?",
+      "sentenceAr": "هل أسجّل وصولي أولًا أم أجلس مباشرة؟",
+      "words": [
+        {
+          "en": "ask whether you should check in first",
+          "ar": "اسأل إن كان عليك تسجيل الحضور أولًا",
+          "kind": "phrase",
+          "x": 38,
+          "y": 66
+        },
+        {
+          "en": "reception counter",
+          "ar": "منضدة الاستقبال",
+          "kind": "object",
+          "x": 54,
+          "y": 88
+        },
+        {
+          "en": "computer monitor",
+          "ar": "شاشة حاسوب",
+          "kind": "object",
+          "x": 75,
+          "y": 61
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Ask whether you should check in first.",
+      "taskAr": "اسأل إن كان عليك تسجيل الحضور أولًا.",
+      "path": "assets/scenes/conversations/life-l3-168-3.webp",
+      "width": 391,
+      "height": 244,
+      "sha256": "0f479336042afea7fab45809849586b0a49b6980a9d6c976a1bf2f1baad337a6"
+    },
+    {
+      "id": "conv-life-l3-168-4",
+      "topic": "conversation",
+      "en": "Helping a visitor find the waiting area · Give your name and then take a seat",
+      "ar": "إرشاد زائر إلى مكان الانتظار · اذكر اسمك ثم اجلس",
+      "sentenceEn": "The receptionist will ask for your name and appointment time, then you can take a seat.",
+      "sentenceAr": "سيسألك موظف الاستقبال عن اسمك ووقت الموعد، ثم يمكنك الجلوس.",
+      "words": [
+        {
+          "en": "give your name and then take a seat",
+          "ar": "اذكر اسمك ثم اجلس",
+          "kind": "phrase",
+          "x": 44,
+          "y": 63
+        },
+        {
+          "en": "waiting-room seat",
+          "ar": "مقعد غرفة الانتظار",
+          "kind": "object",
+          "x": 20,
+          "y": 69
+        },
+        {
+          "en": "handbag",
+          "ar": "حقيبة يد",
+          "kind": "object",
+          "x": 55,
+          "y": 83
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Give your name and then take a seat.",
+      "taskAr": "اذكر اسمك ثم اجلس.",
+      "path": "assets/scenes/conversations/life-l3-168-4.webp",
+      "width": 391,
+      "height": 244,
+      "sha256": "10b2058b5aa8bcf1e2689f3765a18353d6db4aa68799de63485d6f8ac9342460"
+    },
+    {
+      "id": "conv-life-l3-169-1",
+      "topic": "conversation",
+      "en": "Explaining why you left early · Ask how your colleague is doing",
+      "ar": "شرح سبب المغادرة مبكرًا · اسأل عن حال زميلك",
+      "sentenceEn": "How is Tom now?",
+      "sentenceAr": "كيف حال توم الآن؟",
+      "words": [
+        {
+          "en": "ask how your colleague is doing",
+          "ar": "اسأل عن حال زميلك",
+          "kind": "phrase",
+          "x": 50,
+          "y": 62
+        },
+        {
+          "en": "concerned",
+          "ar": "قلق",
+          "kind": "description",
+          "x": 34,
+          "y": 30
+        },
+        {
+          "en": "office chair",
+          "ar": "كرسي مكتب",
+          "kind": "object",
+          "x": 52,
+          "y": 50
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Ask how your colleague is doing.",
+      "taskAr": "اسأل عن حال زميلك.",
+      "path": "assets/scenes/conversations/life-l3-169-1.webp",
+      "width": 390,
+      "height": 241,
+      "sha256": "fbddd9cd27bc6a6afce5c506f178d04b027bade911ccd95340d46920fe62fe29"
+    },
+    {
+      "id": "conv-life-l3-169-2",
+      "topic": "conversation",
+      "en": "Explaining why you left early · Explain that your colleague went home early",
+      "ar": "شرح سبب المغادرة مبكرًا · اشرح أن زميلك عاد إلى المنزل باكرًا",
+      "sentenceEn": "Tom had to go home early today.",
+      "sentenceAr": "اضطر توم للعودة إلى المنزل مبكرًا اليوم.",
+      "words": [
+        {
+          "en": "explain that your colleague went home early",
+          "ar": "اشرح أن زميلك عاد إلى المنزل باكرًا",
+          "kind": "phrase",
+          "x": 44,
+          "y": 64
+        },
+        {
+          "en": "empty office chair",
+          "ar": "كرسي مكتب فارغ",
+          "kind": "object",
+          "x": 25,
+          "y": 68
+        },
+        {
+          "en": "pencil holder",
+          "ar": "حامل أقلام رصاص",
+          "kind": "object",
+          "x": 24,
+          "y": 92
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Explain that your colleague went home early.",
+      "taskAr": "اشرح أن زميلك عاد إلى المنزل باكرًا.",
+      "path": "assets/scenes/conversations/life-l3-169-2.webp",
+      "width": 391,
+      "height": 241,
+      "sha256": "e3a60a002a58cebf6238ea06a54423fd6e5ed173543e80d16be3b8cf9fc011c3"
+    },
+    {
+      "id": "conv-life-l3-169-3",
+      "topic": "conversation",
+      "en": "Explaining why you left early · Say someone left with a headache",
+      "ar": "شرح سبب المغادرة مبكرًا · قل إن شخصًا غادر بسبب صداع",
+      "sentenceEn": "He said he had a headache and wanted to rest at home.",
+      "sentenceAr": "قال إنه كان يعاني صداعًا وأراد أن يستريح في البيت.",
+      "words": [
+        {
+          "en": "say someone left with a headache",
+          "ar": "قل إن شخصًا غادر بسبب صداع",
+          "kind": "phrase",
+          "x": 34,
+          "y": 50
+        },
+        {
+          "en": "tissue box",
+          "ar": "علبة مناديل",
+          "kind": "object",
+          "x": 40,
+          "y": 87
+        },
+        {
+          "en": "mug",
+          "ar": "كوب",
+          "kind": "object",
+          "x": 53,
+          "y": 88
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9089,
+          "en": "I'll send him a short message to ask how he's doing.",
+          "ar": "سأرسل له رسالة قصيرة لأطمئن عليه."
+        }
+      ],
+      "taskEn": "Say someone left with a headache.",
+      "taskAr": "قل إن شخصًا غادر بسبب صداع.",
+      "path": "assets/scenes/conversations/life-l3-169-3.webp",
+      "width": 390,
+      "height": 241,
+      "sha256": "98ef4ac813c0ecea3296c04352842dea25851aaa992c4ceb198b609687da1485"
+    },
+    {
+      "id": "conv-life-l3-169-4",
+      "topic": "conversation",
+      "en": "Explaining why you left early · Send a message to ask how someone is",
+      "ar": "شرح سبب المغادرة مبكرًا · أرسل رسالة تسأل فيها عن حال شخص",
+      "sentenceEn": "Good idea. Let me know if he needs anything from us.",
+      "sentenceAr": "فكرة جيدة. أخبرني إن احتاج منا إلى شيء.",
+      "words": [
+        {
+          "en": "send a message to ask how someone is",
+          "ar": "أرسل رسالة تسأل فيها عن حال شخص",
+          "kind": "phrase",
+          "x": 48,
+          "y": 61
+        },
+        {
+          "en": "smartphone",
+          "ar": "هاتف ذكي",
+          "kind": "object",
+          "x": 46,
+          "y": 65
+        },
+        {
+          "en": "closed notebook",
+          "ar": "دفتر مغلق",
+          "kind": "object",
+          "x": 37,
+          "y": 93
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Send a message to ask how someone is.",
+      "taskAr": "أرسل رسالة تسأل فيها عن حال شخص.",
+      "path": "assets/scenes/conversations/life-l3-169-4.webp",
+      "width": 391,
+      "height": 241,
+      "sha256": "56043e058e2adee907fe3d8892269efd8b774122878b5f823160b59e682b1957"
+    },
+    {
+      "id": "conv-life-l3-170-1",
+      "topic": "conversation",
+      "en": "Making a note before talking to a clinician · Make a list before the appointment",
+      "ar": "تدوين ملاحظات قبل الحديث مع الطبيب · أعدّ قائمة قبل الموعد",
+      "sentenceEn": "I'd like to make a list before I speak to the clinician.",
+      "sentenceAr": "أود إعداد قائمة قبل الحديث مع الطبيب.",
+      "words": [
+        {
+          "en": "make a list before the appointment",
+          "ar": "أعدّ قائمة قبل الموعد",
+          "kind": "phrase",
+          "x": 44,
+          "y": 74
+        },
+        {
+          "en": "lined notebook",
+          "ar": "دفتر مسطّر",
+          "kind": "object",
+          "x": 46,
+          "y": 74
+        },
+        {
+          "en": "index finger",
+          "ar": "سبّابة",
+          "kind": "object",
+          "x": 26,
+          "y": 75
+        }
+      ],
+      "patterns": [
+        {
+          "id": 3,
+          "en": "I'd like to make a list before I speak to the clinician.",
+          "ar": "أود إعداد قائمة قبل الحديث مع الطبيب."
+        }
+      ],
+      "taskEn": "Make a list before the appointment.",
+      "taskAr": "أعدّ قائمة قبل الموعد.",
+      "path": "assets/scenes/conversations/life-l3-170-1.webp",
+      "width": 390,
+      "height": 242,
+      "sha256": "d60846f11251fb882c26f1c2968f3055b86aff1b5f7ffb942c46830ce1b0917c"
+    },
+    {
+      "id": "conv-life-l3-170-2",
+      "topic": "conversation",
+      "en": "Making a note before talking to a clinician · Give an approximate date",
+      "ar": "تدوين ملاحظات قبل الحديث مع الطبيب · اذكر تاريخًا تقريبيًا",
+      "sentenceEn": "I don't remember the exact date it started. Will an estimate do?",
+      "sentenceAr": "لا أتذكر تاريخ بدايته بدقة. هل يكفي تاريخ تقريبي؟",
+      "words": [
+        {
+          "en": "give an approximate date",
+          "ar": "اذكر تاريخًا تقريبيًا",
+          "kind": "phrase",
+          "x": 54,
+          "y": 66
+        },
+        {
+          "en": "circled dates",
+          "ar": "تواريخ محدّدة بدوائر",
+          "kind": "object",
+          "x": 56,
+          "y": 64
+        },
+        {
+          "en": "desk calendar",
+          "ar": "تقويم مكتبي",
+          "kind": "object",
+          "x": 50,
+          "y": 76
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Give an approximate date.",
+      "taskAr": "اذكر تاريخًا تقريبيًا.",
+      "path": "assets/scenes/conversations/life-l3-170-2.webp",
+      "width": 391,
+      "height": 242,
+      "sha256": "f39434f3204a788ad00a8ccb9a4733a5dedee2b48850a0053a1215b6d0d1964e"
+    },
+    {
+      "id": "conv-life-l3-170-3",
+      "topic": "conversation",
+      "en": "Making a note before talking to a clinician · Write it down so you remember",
+      "ar": "تدوين ملاحظات قبل الحديث مع الطبيب · دوّن ذلك كي تتذكّره",
+      "sentenceEn": "You have a good memory.",
+      "sentenceAr": "لديك ذاكرة جيدة.",
+      "words": [
+        {
+          "en": "write it down so you remember",
+          "ar": "دوّن ذلك كي تتذكّره",
+          "kind": "phrase",
+          "x": 30,
+          "y": 84
+        },
+        {
+          "en": "spiral notebook",
+          "ar": "دفتر حلزوني",
+          "kind": "object",
+          "x": 42,
+          "y": 92
+        },
+        {
+          "en": "pen",
+          "ar": "قلم",
+          "kind": "object",
+          "x": 24,
+          "y": 72
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Write it down so you remember.",
+      "taskAr": "دوّن ذلك كي تتذكّره.",
+      "path": "assets/scenes/conversations/life-l3-170-3.webp",
+      "width": 390,
+      "height": 242,
+      "sha256": "83028d28bf0459f3195f3f448843e63b81a28e7ffd37c7b8d6d30d19625abd55"
+    },
+    {
+      "id": "conv-life-l3-170-4",
+      "topic": "conversation",
+      "en": "Making a note before talking to a clinician · Go over the list with the clinician",
+      "ar": "تدوين ملاحظات قبل الحديث مع الطبيب · راجع القائمة مع الطبيب",
+      "sentenceEn": "I'll thank the clinician after we go over the list.",
+      "sentenceAr": "سأشكر الطبيب بعد مراجعة القائمة.",
+      "words": [
+        {
+          "en": "go over the list with the clinician",
+          "ar": "راجع القائمة مع الطبيب",
+          "kind": "phrase",
+          "x": 53,
+          "y": 75
+        },
+        {
+          "en": "open notebook",
+          "ar": "دفتر مفتوح",
+          "kind": "object",
+          "x": 53,
+          "y": 80
+        },
+        {
+          "en": "medical examination bed",
+          "ar": "سرير فحص طبي",
+          "kind": "object",
+          "x": 74,
+          "y": 77
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Go over the list with the clinician.",
+      "taskAr": "راجع القائمة مع الطبيب.",
+      "path": "assets/scenes/conversations/life-l3-170-4.webp",
+      "width": 391,
+      "height": 242,
+      "sha256": "5d69a89dd24c46a6ea2fe8ac8466ef74a16559b8a0efcc8a4a7ca87f07e00e4e"
+    },
+    {
+      "id": "conv-life-l3-171-1",
+      "topic": "conversation",
+      "en": "Keeping in touch during a power cut · Talk about what you use electricity for",
+      "ar": "البقاء على اتصال أثناء انقطاع الكهرباء · تحدّث عمّا تستخدم الكهرباء لأجله",
+      "sentenceEn": "I can't imagine living without electricity.",
+      "sentenceAr": "لا أستطيع تخيل العيش دون كهرباء.",
+      "words": [
+        {
+          "en": "talk about what you use electricity for",
+          "ar": "تحدّث عمّا تستخدم الكهرباء لأجله",
+          "kind": "phrase",
+          "x": 54,
+          "y": 63
+        },
+        {
+          "en": "unlit lamp",
+          "ar": "مصباح مطفأ",
+          "kind": "object",
+          "x": 46,
+          "y": 65
+        },
+        {
+          "en": "power outlet",
+          "ar": "مقبس كهرباء",
+          "kind": "object",
+          "x": 69,
+          "y": 71
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Talk about what you use electricity for.",
+      "taskAr": "تحدّث عمّا تستخدم الكهرباء لأجله.",
+      "path": "assets/scenes/conversations/life-l3-171-1.webp",
+      "width": 390,
+      "height": 241,
+      "sha256": "63ec180935bfd756c86a7d451c61249401ce7e50bf6de8c8fc70885f74eaaddf"
+    },
+    {
+      "id": "conv-life-l3-171-2",
+      "topic": "conversation",
+      "en": "Keeping in touch during a power cut · Take the torch out of the drawer",
+      "ar": "البقاء على اتصال أثناء انقطاع الكهرباء · أخرج المصباح اليدوي من الدرج",
+      "sentenceEn": "Is there a charged torch in the drawer?",
+      "sentenceAr": "هل يوجد مصباح يدوي مشحون في الدرج؟",
+      "words": [
+        {
+          "en": "take the torch out of the drawer",
+          "ar": "أخرج المصباح اليدوي من الدرج",
+          "kind": "phrase",
+          "x": 41,
+          "y": 58
+        },
+        {
+          "en": "flashlight",
+          "ar": "مصباح يدوي",
+          "kind": "object",
+          "x": 36,
+          "y": 50
+        },
+        {
+          "en": "open drawer",
+          "ar": "درج مفتوح",
+          "kind": "object",
+          "x": 27,
+          "y": 86
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9066,
+          "en": "Is there a charged torch in the drawer?",
+          "ar": "هل يوجد مصباح يدوي مشحون في الدرج؟"
+        }
+      ],
+      "taskEn": "Take the torch out of the drawer.",
+      "taskAr": "أخرج المصباح اليدوي من الدرج.",
+      "path": "assets/scenes/conversations/life-l3-171-2.webp",
+      "width": 391,
+      "height": 241,
+      "sha256": "9063172d8c74c7dc2ce207a74143276dc0946cd8ae68732e903c1adbc687ee98"
+    },
+    {
+      "id": "conv-life-l3-171-3",
+      "topic": "conversation",
+      "en": "Keeping in touch during a power cut · Save the phone battery for messages",
+      "ar": "البقاء على اتصال أثناء انقطاع الكهرباء · وفّر بطارية الهاتف للرسائل",
+      "sentenceEn": "Yes, but the battery is getting low. I'll use it only for messages.",
+      "sentenceAr": "نعم، لكن بطاريته بدأت تنفد. سأستخدمه للرسائل فقط.",
+      "words": [
+        {
+          "en": "save the phone battery for messages",
+          "ar": "وفّر بطارية الهاتف للرسائل",
+          "kind": "phrase",
+          "x": 53,
+          "y": 62
+        },
+        {
+          "en": "low-battery icon",
+          "ar": "أيقونة بطارية منخفضة",
+          "kind": "object",
+          "x": 47,
+          "y": 60
+        },
+        {
+          "en": "phone screen",
+          "ar": "شاشة هاتف",
+          "kind": "object",
+          "x": 46,
+          "y": 61
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Save the phone battery for messages.",
+      "taskAr": "وفّر بطارية الهاتف للرسائل.",
+      "path": "assets/scenes/conversations/life-l3-171-3.webp",
+      "width": 390,
+      "height": 241,
+      "sha256": "fd57a3bc472bc046b92b99c0269503736a8360849c137566a2acf53190504e9f"
+    },
+    {
+      "id": "conv-life-l3-171-4",
+      "topic": "conversation",
+      "en": "Keeping in touch during a power cut · Leave the torch on the shelf by the door",
+      "ar": "البقاء على اتصال أثناء انقطاع الكهرباء · اترك المصباح على الرف قرب الباب",
+      "sentenceEn": "I'll walk back now. Please leave the torch by the door.",
+      "sentenceAr": "سأعود سيرًا الآن. اترك المصباح عند الباب من فضلك.",
+      "words": [
+        {
+          "en": "leave the torch on the shelf by the door",
+          "ar": "اترك المصباح على الرف قرب الباب",
+          "kind": "phrase",
+          "x": 66,
+          "y": 62
+        },
+        {
+          "en": "flashlight",
+          "ar": "مصباح يدوي",
+          "kind": "object",
+          "x": 78,
+          "y": 62
+        },
+        {
+          "en": "wooden shelf",
+          "ar": "رف خشبي",
+          "kind": "object",
+          "x": 74,
+          "y": 72
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Leave the torch on the shelf by the door.",
+      "taskAr": "اترك المصباح على الرف قرب الباب.",
+      "path": "assets/scenes/conversations/life-l3-171-4.webp",
+      "width": 391,
+      "height": 241,
+      "sha256": "2f97117f7f72c57f2fc9517a8bf2fc24bd0e5823401f54f83fa6912c41be1526"
+    },
+    {
+      "id": "conv-life-l3-172-1",
+      "topic": "conversation",
+      "en": "Deciding where to store the boxes · Decide which boxes to keep",
+      "ar": "اختيار مكان لتخزين الصناديق · قرّر أي الصناديق ستحتفظ بها",
+      "sentenceEn": "Tom filled the room with cardboard boxes.",
+      "sentenceAr": "ملأ توم الغرفة بصناديق من الورق المقوى.",
+      "words": [
+        {
+          "en": "decide which boxes to keep",
+          "ar": "قرّر أي الصناديق ستحتفظ بها",
+          "kind": "phrase",
+          "x": 45,
+          "y": 54
+        },
+        {
+          "en": "stacked boxes",
+          "ar": "صناديق مكدّسة",
+          "kind": "object",
+          "x": 58,
+          "y": 61
+        },
+        {
+          "en": "packing tape",
+          "ar": "شريط تغليف",
+          "kind": "object",
+          "x": 50,
+          "y": 83
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Decide which boxes to keep.",
+      "taskAr": "قرّر أي الصناديق ستحتفظ بها.",
+      "path": "assets/scenes/conversations/life-l3-172-1.webp",
+      "width": 390,
+      "height": 244,
+      "sha256": "0362149768ffd069110d7c98b9b1ba96d4ba5874d9b4b6126edc689a23f36715"
+    },
+    {
+      "id": "conv-life-l3-172-2",
+      "topic": "conversation",
+      "en": "Deciding where to store the boxes · Put the books on the shelf",
+      "ar": "اختيار مكان لتخزين الصناديق · ضع الكتب على الرف",
+      "sentenceEn": "There are two with books and one with kitchen things.",
+      "sentenceAr": "يوجد صندوقان فيهما كتب وصندوق فيه أغراض للمطبخ.",
+      "words": [
+        {
+          "en": "put the books on the shelf",
+          "ar": "ضع الكتب على الرف",
+          "kind": "phrase",
+          "x": 52,
+          "y": 68
+        },
+        {
+          "en": "stack of books",
+          "ar": "كومة كتب",
+          "kind": "object",
+          "x": 26,
+          "y": 76
+        },
+        {
+          "en": "bookshelf",
+          "ar": "رف كتب",
+          "kind": "object",
+          "x": 55,
+          "y": 39
+        }
+      ],
+      "patterns": [
+        {
+          "id": 118,
+          "en": "There are two with books and one with kitchen things.",
+          "ar": "يوجد صندوقان فيهما كتب وصندوق فيه أغراض للمطبخ."
+        }
+      ],
+      "taskEn": "Put the books on the shelf.",
+      "taskAr": "ضع الكتب على الرف.",
+      "path": "assets/scenes/conversations/life-l3-172-2.webp",
+      "width": 391,
+      "height": 244,
+      "sha256": "c380e7f1e72ebbde4a7ef2227a2f1ce6e9fc0a370b00a5885e0d4d24c90df4cf"
+    },
+    {
+      "id": "conv-life-l3-172-3",
+      "topic": "conversation",
+      "en": "Deciding where to store the boxes · Flatten the empty boxes",
+      "ar": "اختيار مكان لتخزين الصناديق · افرد الصناديق الفارغة",
+      "sentenceEn": "And the kitchen things?",
+      "sentenceAr": "وماذا عن أغراض المطبخ؟",
+      "words": [
+        {
+          "en": "flatten the empty boxes",
+          "ar": "افرد الصناديق الفارغة",
+          "kind": "phrase",
+          "x": 48,
+          "y": 72
+        },
+        {
+          "en": "flattened cardboard",
+          "ar": "كرتون مفرود",
+          "kind": "object",
+          "x": 43,
+          "y": 84
+        },
+        {
+          "en": "kitchen utensils",
+          "ar": "أدوات مطبخ",
+          "kind": "object",
+          "x": 84,
+          "y": 55
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Flatten the empty boxes.",
+      "taskAr": "افرد الصناديق الفارغة.",
+      "path": "assets/scenes/conversations/life-l3-172-3.webp",
+      "width": 390,
+      "height": 244,
+      "sha256": "f130f7bde764c8266e9b6968f8a314c5a496441b92bfb06d043590473915afad"
+    },
+    {
+      "id": "conv-life-l3-172-4",
+      "topic": "conversation",
+      "en": "Deciding where to store the boxes · Clear space to store the kitchen things",
+      "ar": "اختيار مكان لتخزين الصناديق · أخلِ مساحة لتخزين أدوات المطبخ",
+      "sentenceEn": "Let's clear some space there first, then put them away.",
+      "sentenceAr": "لنخلِ بعض المساحة هناك أولًا، ثم نضعها في مكانها.",
+      "words": [
+        {
+          "en": "clear space to store the kitchen things",
+          "ar": "أخلِ مساحة لتخزين أدوات المطبخ",
+          "kind": "phrase",
+          "x": 54,
+          "y": 63
+        },
+        {
+          "en": "cooking pot",
+          "ar": "قدر طبخ",
+          "kind": "object",
+          "x": 35,
+          "y": 71
+        },
+        {
+          "en": "metal shelving",
+          "ar": "رفوف معدنية",
+          "kind": "object",
+          "x": 78,
+          "y": 65
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Clear space to store the kitchen things.",
+      "taskAr": "أخلِ مساحة لتخزين أدوات المطبخ.",
+      "path": "assets/scenes/conversations/life-l3-172-4.webp",
+      "width": 391,
+      "height": 244,
+      "sha256": "d1b6976644ba106833c906664e37093d09b07fe0e1a27aafd2287519b350ae7b"
     }
   ]
 }

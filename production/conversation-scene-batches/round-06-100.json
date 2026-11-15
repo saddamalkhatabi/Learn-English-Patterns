@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "9b371fa9a640d2c58494a9434e986768d80cfd470c68f88eb37ca795e3fd3271"
+  },
+  "conversations": [
+    {
+      "id": "l3-169",
+      "goalAr": "شرح سبب المغادرة مبكرًا",
+      "goalEn": "Explaining why you left early",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Ask how your colleague is doing",
+          "ar": "اسأل عن حال زميلك",
+          "purposeEn": "Ask how your colleague is doing.",
+          "purposeAr": "اسأل عن حال زميلك.",
+          "image": {
+            "id": "conv-life-l3-169-1",
+            "path": "assets/scenes/conversations/life-l3-169-1.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Ask how your colleague is doing",
+            "ar": "اسأل عن حال زميلك",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                393,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask how your colleague is doing",
+              "ar": "اسأل عن حال زميلك",
+              "kind": "phrase",
+              "x": 50,
+              "y": 62
+            },
+            {
+              "en": "concerned",
+              "ar": "قلق",
+              "kind": "description",
+              "x": 34,
+              "y": 30
+            },
+            {
+              "en": "office chair",
+              "ar": "كرسي مكتب",
+              "kind": "object",
+              "x": 52,
+              "y": 50
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Explain that your colleague went home early",
+          "ar": "اشرح أن زميلك عاد إلى المنزل باكرًا",
+          "purposeEn": "Explain that your colleague went home early.",
+          "purposeAr": "اشرح أن زميلك عاد إلى المنزل باكرًا.",
+          "image": {
+            "id": "conv-life-l3-169-2",
+            "path": "assets/scenes/conversations/life-l3-169-2.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Explain that your colleague went home early",
+            "ar": "اشرح أن زميلك عاد إلى المنزل باكرًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                3,
+                790,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "explain that your colleague went home early",
+              "ar": "اشرح أن زميلك عاد إلى المنزل باكرًا",
+              "kind": "phrase",
+              "x": 44,
+              "y": 64
+            },
+            {
+              "en": "empty office chair",
+              "ar": "كرسي مكتب فارغ",
+              "kind": "object",
+              "x": 25,
+              "y": 68
+            },
+            {
+              "en": "pencil holder",
+              "ar": "حامل أقلام رصاص",
+              "kind": "object",
+              "x": 24,
+              "y": 92
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Say someone left with a headache",
+          "ar": "قل إن شخصًا غادر بسبب صداع",
+          "purposeEn": "Say someone left with a headache.",
+          "purposeAr": "قل إن شخصًا غادر بسبب صداع.",
+          "image": {
+            "id": "conv-life-l3-169-3",
+            "path": "assets/scenes/conversations/life-l3-169-3.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Say someone left with a headache",
+            "ar": "قل إن شخصًا غادر بسبب صداع",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                3,
+                1186,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "say someone left with a headache",
+              "ar": "قل إن شخصًا غادر بسبب صداع",
+              "kind": "phrase",
+              "x": 34,
+              "y": 50
+            },
+            {
+              "en": "tissue box",
+              "ar": "علبة مناديل",
+              "kind": "object",
+              "x": 40,
+              "y": 87
+            },
+            {
+              "en": "mug",
+              "ar": "كوب",
+              "kind": "object",
+              "x": 53,
+              "y": 88
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Send a message to ask how someone is",
+          "ar": "أرسل رسالة تسأل فيها عن حال شخص",
+          "purposeEn": "Send a message to ask how someone is.",
+          "purposeAr": "أرسل رسالة تسأل فيها عن حال شخص.",
+          "image": {
+            "id": "conv-life-l3-169-4",
+            "path": "assets/scenes/conversations/life-l3-169-4.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Send a message to ask how someone is",
+            "ar": "أرسل رسالة تسأل فيها عن حال شخص",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                3,
+                1583,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "send a message to ask how someone is",
+              "ar": "أرسل رسالة تسأل فيها عن حال شخص",
+              "kind": "phrase",
+              "x": 48,
+              "y": 61
+            },
+            {
+              "en": "smartphone",
+              "ar": "هاتف ذكي",
+              "kind": "object",
+              "x": 46,
+              "y": 65
+            },
+            {
+              "en": "closed notebook",
+              "ar": "دفتر مغلق",
+              "kind": "object",
+              "x": 37,
+              "y": 93
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-170",
+      "goalAr": "تدوين ملاحظات قبل الحديث مع الطبيب",
+      "goalEn": "Making a note before talking to a clinician",
+      "stages": [
+        {
+          "from": 1,
+          "to": 2,
+          "en": "Make a list before the appointment",
+          "ar": "أعدّ قائمة قبل الموعد",
+          "purposeEn": "Make a list before the appointment.",
+          "purposeAr": "أعدّ قائمة قبل الموعد.",
+          "image": {
+            "id": "conv-life-l3-170-1",
+            "path": "assets/scenes/conversations/life-l3-170-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Make a list before the appointment",
+            "ar": "أعدّ قائمة قبل الموعد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                250,
+                393,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "make a list before the appointment",
+              "ar": "أعدّ قائمة قبل الموعد",
+              "kind": "phrase",
+              "x": 44,
+              "y": 74
+            },
+            {
+              "en": "lined notebook",
+              "ar": "دفتر مسطّر",
+              "kind": "object",
+              "x": 46,
+              "y": 74
+            },
+            {
+              "en": "index finger",
+              "ar": "سبّابة",
+              "kind": "object",
+              "x": 26,
+              "y": 75
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "en": "Give an approximate date",
+          "ar": "اذكر تاريخًا تقريبيًا",
+          "purposeEn": "Give an approximate date.",
+          "purposeAr": "اذكر تاريخًا تقريبيًا.",
+          "image": {
+            "id": "conv-life-l3-170-2",
+            "path": "assets/scenes/conversations/life-l3-170-2.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Give an approximate date",
+            "ar": "اذكر تاريخًا تقريبيًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                250,
+                790,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "give an approximate date",
+              "ar": "اذكر تاريخًا تقريبيًا",
+              "kind": "phrase",
+              "x": 54,
+              "y": 66
+            },
+            {
+              "en": "circled dates",
+              "ar": "تواريخ محدّدة بدوائر",
+              "kind": "object",
+              "x": 56,
+              "y": 64
+            },
+            {
+              "en": "desk calendar",
+              "ar": "تقويم مكتبي",
+              "kind": "object",
+              "x": 50,
+              "y": 76
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 7,
+          "en": "Write it down so you remember",
+          "ar": "دوّن ذلك كي تتذكّره",
+          "purposeEn": "Write it down so you remember.",
+          "purposeAr": "دوّن ذلك كي تتذكّره.",
+          "image": {
+            "id": "conv-life-l3-170-3",
+            "path": "assets/scenes/conversations/life-l3-170-3.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Write it down so you remember",
+            "ar": "دوّن ذلك كي تتذكّره",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                250,
+                1186,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "write it down so you remember",
+              "ar": "دوّن ذلك كي تتذكّره",
+              "kind": "phrase",
+              "x": 30,
+              "y": 84
+            },
+            {
+              "en": "spiral notebook",
+              "ar": "دفتر حلزوني",
+              "kind": "object",
+              "x": 42,
+              "y": 92
+            },
+            {
+              "en": "pen",
+              "ar": "قلم",
+              "kind": "object",
+              "x": 24,
+              "y": 72
+            }
+          ]
+        },
+        {
+          "from": 8,
+          "to": 8,
+          "en": "Go over the list with the clinician",
+          "ar": "راجع القائمة مع الطبيب",
+          "purposeEn": "Go over the list with the clinician.",
+          "purposeAr": "راجع القائمة مع الطبيب.",
+          "image": {
+            "id": "conv-life-l3-170-4",
+            "path": "assets/scenes/conversations/life-l3-170-4.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Go over the list with the clinician",
+            "ar": "راجع القائمة مع الطبيب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                250,
+                1583,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "go over the list with the clinician",
+              "ar": "راجع القائمة مع الطبيب",
+              "kind": "phrase",
+              "x": 53,
+              "y": 75
+            },
+            {
+              "en": "open notebook",
+              "ar": "دفتر مفتوح",
+              "kind": "object",
+              "x": 53,
+              "y": 80
+            },
+            {
+              "en": "medical examination bed",
+              "ar": "سرير فحص طبي",
+              "kind": "object",
+              "x": 74,
+              "y": 77
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-171",
+      "goalAr": "البقاء على اتصال أثناء انقطاع الكهرباء",
+      "goalEn": "Keeping in touch during a power cut",
+      "stages": [
+        {
+          "from": 1,
+          "to": 2,
+          "en": "Talk about what you use electricity for",
+          "ar": "تحدّث عمّا تستخدم الكهرباء لأجله",
+          "purposeEn": "Talk about what you use electricity for.",
+          "purposeAr": "تحدّث عمّا تستخدم الكهرباء لأجله.",
+          "image": {
+            "id": "conv-life-l3-171-1",
+            "path": "assets/scenes/conversations/life-l3-171-1.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Talk about what you use electricity for",
+            "ar": "تحدّث عمّا تستخدم الكهرباء لأجله",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                498,
+                393,
+                739
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "talk about what you use electricity for",
+              "ar": "تحدّث عمّا تستخدم الكهرباء لأجله",
+              "kind": "phrase",
+              "x": 54,
+              "y": 63
+            },
+            {
+              "en": "unlit lamp",
+              "ar": "مصباح مطفأ",
+              "kind": "object",
+              "x": 46,
+              "y": 65
+            },
+            {
+              "en": "power outlet",
+              "ar": "مقبس كهرباء",
+              "kind": "object",
+              "x": 69,
+              "y": 71
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "en": "Take the torch out of the drawer",
+          "ar": "أخرج المصباح اليدوي من الدرج",
+          "purposeEn": "Take the torch out of the drawer.",
+          "purposeAr": "أخرج المصباح اليدوي من الدرج.",
+          "image": {
+            "id": "conv-life-l3-171-2",
+            "path": "assets/scenes/conversations/life-l3-171-2.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Take the torch out of the drawer",
+            "ar": "أخرج المصباح اليدوي من الدرج",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                498,
+                790,
+                739
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "take the torch out of the drawer",
+              "ar": "أخرج المصباح اليدوي من الدرج",
+              "kind": "phrase",
+              "x": 41,
+              "y": 58
+            },
+            {
+              "en": "flashlight",
+              "ar": "مصباح يدوي",
+              "kind": "object",
+              "x": 36,
+              "y": 50
+            },
+            {
+              "en": "open drawer",
+              "ar": "درج مفتوح",
+              "kind": "object",
+              "x": 27,
+              "y": 86
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "en": "Save the phone battery for messages",
+          "ar": "وفّر بطارية الهاتف للرسائل",
+          "purposeEn": "Save the phone battery for messages.",
+          "purposeAr": "وفّر بطارية الهاتف للرسائل.",
+          "image": {
+            "id": "conv-life-l3-171-3",
+            "path": "assets/scenes/conversations/life-l3-171-3.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Save the phone battery for messages",
+            "ar": "وفّر بطارية الهاتف للرسائل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                498,
+                1186,
+                739
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "save the phone battery for messages",
+              "ar": "وفّر بطارية الهاتف للرسائل",
+              "kind": "phrase",
+              "x": 53,
+              "y": 62
+            },
+            {
+              "en": "low-battery icon",
+              "ar": "أيقونة بطارية منخفضة",
+              "kind": "object",
+              "x": 47,
+              "y": 60
+            },
+            {
+              "en": "phone screen",
+              "ar": "شاشة هاتف",
+              "kind": "object",
+              "x": 46,
+              "y": 61
+            }
+          ]
+        },
+        {
+          "from": 7,
+          "to": 7,
+          "en": "Leave the torch on the shelf by the door",
+          "ar": "اترك المصباح على الرف قرب الباب",
+          "purposeEn": "Leave the torch on the shelf by the door.",
+          "purposeAr": "اترك المصباح على الرف قرب الباب.",
+          "image": {
+            "id": "conv-life-l3-171-4",
+            "path": "assets/scenes/conversations/life-l3-171-4.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Leave the torch on the shelf by the door",
+            "ar": "اترك المصباح على الرف قرب الباب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                498,
+                1583,
+                739
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "leave the torch on the shelf by the door",
+              "ar": "اترك المصباح على الرف قرب الباب",
+              "kind": "phrase",
+              "x": 66,
+              "y": 62
+            },
+            {
+              "en": "flashlight",
+              "ar": "مصباح يدوي",
+              "kind": "object",
+              "x": 78,
+              "y": 62
+            },
+            {
+              "en": "wooden shelf",
+              "ar": "رف خشبي",
+              "kind": "object",
+              "x": 74,
+              "y": 72
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-172",
+      "goalAr": "اختيار مكان لتخزين الصناديق",
+      "goalEn": "Deciding where to store the boxes",
+      "stages": [
+        {
+          "from": 1,
+          "to": 2,
+          "en": "Decide which boxes to keep",
+          "ar": "قرّر أي الصناديق ستحتفظ بها",
+          "purposeEn": "Decide which boxes to keep.",
+          "purposeAr": "قرّر أي الصناديق ستحتفظ بها.",
+          "image": {
+            "id": "conv-life-l3-172-1",
+            "path": "assets/scenes/conversations/life-l3-172-1.webp",
+            "width": 390,
+            "height": 244,
+            "en": "Decide which boxes to keep",
+            "ar": "قرّر أي الصناديق ستحتفظ بها",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                745,
+                393,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "decide which boxes to keep",
+              "ar": "قرّر أي الصناديق ستحتفظ بها",
+              "kind": "phrase",
+              "x": 45,
+              "y": 54
+            },
+            {
+              "en": "stacked boxes",
+              "ar": "صناديق مكدّسة",
+              "kind": "object",
+              "x": 58,
+              "y": 61
+            },
+            {
+              "en": "packing tape",
+              "ar": "شريط تغليف",
+              "kind": "object",
+              "x": 50,
+              "y": 83
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "en": "Put the books on the shelf",
+          "ar": "ضع الكتب على الرف",
+          "purposeEn": "Put the books on the shelf.",
+          "purposeAr": "ضع الكتب على الرف.",
+          "image": {
+            "id": "conv-life-l3-172-2",
+            "path": "assets/scenes/conversations/life-l3-172-2.webp",
+            "width": 391,
+            "height": 244,
+            "en": "Put the books on the shelf",
+            "ar": "ضع الكتب على الرف",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                745,
+                790,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "put the books on the shelf",
+              "ar": "ضع الكتب على الرف",
+              "kind": "phrase",
+              "x": 52,
+              "y": 68
+            },
+            {
+              "en": "stack of books",
+              "ar": "كومة كتب",
+              "kind": "object",
+              "x": 26,
+              "y": 76
+            },
+            {
+              "en": "bookshelf",
+              "ar": "رف كتب",
+              "kind": "object",
+              "x": 55,
+              "y": 39
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "en": "Flatten the empty boxes",
+          "ar": "افرد الصناديق الفارغة",
+          "purposeEn": "Flatten the empty boxes.",
+          "purposeAr": "افرد الصناديق الفارغة.",
+          "image": {
+            "id": "conv-life-l3-172-3",
+            "path": "assets/scenes/conversations/life-l3-172-3.webp",
+            "width": 390,
+            "height": 244,
+            "en": "Flatten the empty boxes",
+            "ar": "افرد الصناديق الفارغة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                745,
+                1186,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "flatten the empty boxes",
+              "ar": "افرد الصناديق الفارغة",
+              "kind": "phrase",
+              "x": 48,
+              "y": 72
+            },
+            {
+              "en": "flattened cardboard",
+              "ar": "كرتون مفرود",
+              "kind": "object",
+              "x": 43,
+              "y": 84
+            },
+            {
+              "en": "kitchen utensils",
+              "ar": "أدوات مطبخ",
+              "kind": "object",
+              "x": 84,
+              "y": 55
+            }
+          ]
+        },
+        {
+          "from": 7,
+          "to": 7,
+          "en": "Clear space to store the kitchen things",
+          "ar": "أخلِ مساحة لتخزين أدوات المطبخ",
+          "purposeEn": "Clear space to store the kitchen things.",
+          "purposeAr": "أخلِ مساحة لتخزين أدوات المطبخ.",
+          "image": {
+            "id": "conv-life-l3-172-4",
+            "path": "assets/scenes/conversations/life-l3-172-4.webp",
+            "width": 391,
+            "height": 244,
+            "en": "Clear space to store the kitchen things",
+            "ar": "أخلِ مساحة لتخزين أدوات المطبخ",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                745,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "clear space to store the kitchen things",
+              "ar": "أخلِ مساحة لتخزين أدوات المطبخ",
+              "kind": "phrase",
+              "x": 54,
+              "y": 63
+            },
+            {
+              "en": "cooking pot",
+              "ar": "قدر طبخ",
+              "kind": "object",
+              "x": 35,
+              "y": 71
+            },
+            {
+              "en": "metal shelving",
+              "ar": "رفوف معدنية",
+              "kind": "object",
+              "x": 78,
+              "y": 65
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

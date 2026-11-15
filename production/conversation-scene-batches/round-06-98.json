@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "a450fd055b681fb2c58dd386a7323f92e26a4d482e6ffc09da1e31f7cceb3113"
+  },
+  "conversations": [
+    {
+      "id": "l3-161",
+      "goalAr": "توضيح متى بدأ عارض صحي",
+      "goalEn": "Explaining when a symptom began",
+      "stages": [
+        {
+          "from": 1,
+          "to": 2,
+          "en": "Say when you first noticed a problem",
+          "ar": "قل متى لاحظت المشكلة أول مرة",
+          "purposeEn": "Say when you first noticed a problem.",
+          "purposeAr": "قل متى لاحظت المشكلة أول مرة.",
+          "image": {
+            "id": "conv-life-l3-161-1",
+            "path": "assets/scenes/conversations/life-l3-161-1.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Say when you first noticed a problem",
+            "ar": "قل متى لاحظت المشكلة أول مرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                394,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "say when you first noticed a problem",
+              "ar": "قل متى لاحظت المشكلة أول مرة",
+              "kind": "phrase",
+              "x": 41,
+              "y": 58
+            },
+            {
+              "en": "blood pressure cuff",
+              "ar": "رباط قياس ضغط الدم",
+              "kind": "object",
+              "x": 48,
+              "y": 93
+            },
+            {
+              "en": "concerned",
+              "ar": "قلق",
+              "kind": "description",
+              "x": 35,
+              "y": 32
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "en": "Feel dizzy when you get out of bed",
+          "ar": "يشعر بالدوار عند النهوض من السرير",
+          "purposeEn": "Feel dizzy when you get out of bed.",
+          "purposeAr": "يشعر بالدوار عند النهوض من السرير.",
+          "image": {
+            "id": "conv-life-l3-161-2",
+            "path": "assets/scenes/conversations/life-l3-161-2.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Feel dizzy when you get out of bed",
+            "ar": "يشعر بالدوار عند النهوض من السرير",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                3,
+                790,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "feel dizzy when you get out of bed",
+              "ar": "يشعر بالدوار عند النهوض من السرير",
+              "kind": "phrase",
+              "x": 49,
+              "y": 49
+            },
+            {
+              "en": "bedside lamp",
+              "ar": "مصباح بجانب السرير",
+              "kind": "object",
+              "x": 22,
+              "y": 44
+            },
+            {
+              "en": "pillow",
+              "ar": "وسادة",
+              "kind": "object",
+              "x": 83,
+              "y": 41
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "en": "Check whether it happened on other days",
+          "ar": "تحقّق هل حدث ذلك في أيام أخرى",
+          "purposeEn": "Check whether it happened on other days.",
+          "purposeAr": "تحقّق هل حدث ذلك في أيام أخرى.",
+          "image": {
+            "id": "conv-life-l3-161-3",
+            "path": "assets/scenes/conversations/life-l3-161-3.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Check whether it happened on other days",
+            "ar": "تحقّق هل حدث ذلك في أيام أخرى",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                3,
+                1186,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "check whether it happened on other days",
+              "ar": "تحقّق هل حدث ذلك في أيام أخرى",
+              "kind": "phrase",
+              "x": 57,
+              "y": 72
+            },
+            {
+              "en": "marked dates",
+              "ar": "تواريخ محدّدة",
+              "kind": "object",
+              "x": 58,
+              "y": 63
+            },
+            {
+              "en": "desk calendar",
+              "ar": "تقويم مكتبي",
+              "kind": "object",
+              "x": 59,
+              "y": 69
+            }
+          ]
+        },
+        {
+          "from": 7,
+          "to": 7,
+          "en": "Write down the dates you remember",
+          "ar": "دوّن التواريخ التي تتذكّرها",
+          "purposeEn": "Write down the dates you remember.",
+          "purposeAr": "دوّن التواريخ التي تتذكّرها.",
+          "image": {
+            "id": "conv-life-l3-161-4",
+            "path": "assets/scenes/conversations/life-l3-161-4.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Write down the dates you remember",
+            "ar": "دوّن التواريخ التي تتذكّرها",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                3,
+                1583,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "write down the dates you remember",
+              "ar": "دوّن التواريخ التي تتذكّرها",
+              "kind": "phrase",
+              "x": 60,
+              "y": 79
+            },
+            {
+              "en": "symptom log",
+              "ar": "سجلّ الأعراض",
+              "kind": "object",
+              "x": 72,
+              "y": 87
+            },
+            {
+              "en": "pen",
+              "ar": "قلم",
+              "kind": "object",
+              "x": 65,
+              "y": 75
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-162",
+      "goalAr": "السؤال عن موعد أحد أفراد العائلة",
+      "goalEn": "Asking about a family member's appointment",
+      "stages": [
+        {
+          "from": 1,
+          "to": 2,
+          "en": "Ask about the next clinic visit",
+          "ar": "اسأل عن زيارة العيادة التالية",
+          "purposeEn": "Ask about the next clinic visit.",
+          "purposeAr": "اسأل عن زيارة العيادة التالية.",
+          "image": {
+            "id": "conv-life-l3-162-1",
+            "path": "assets/scenes/conversations/life-l3-162-1.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Ask about the next clinic visit",
+            "ar": "اسأل عن زيارة العيادة التالية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                251,
+                394,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask about the next clinic visit",
+              "ar": "اسأل عن زيارة العيادة التالية",
+              "kind": "phrase",
+              "x": 39,
+              "y": 65
+            },
+            {
+              "en": "appointment card",
+              "ar": "بطاقة موعد",
+              "kind": "object",
+              "x": 48,
+              "y": 69
+            },
+            {
+              "en": "clinic symbol",
+              "ar": "رمز العيادة",
+              "kind": "object",
+              "x": 44,
+              "y": 72
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "en": "Find the follow-up clinic",
+          "ar": "اعثر على عيادة المتابعة",
+          "purposeEn": "Find the follow-up clinic.",
+          "purposeAr": "اعثر على عيادة المتابعة.",
+          "image": {
+            "id": "conv-life-l3-162-2",
+            "path": "assets/scenes/conversations/life-l3-162-2.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Find the follow-up clinic",
+            "ar": "اعثر على عيادة المتابعة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                251,
+                790,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "find the follow-up clinic",
+              "ar": "اعثر على عيادة المتابعة",
+              "kind": "phrase",
+              "x": 44,
+              "y": 47
+            },
+            {
+              "en": "directional sign",
+              "ar": "لافتة اتجاهات",
+              "kind": "object",
+              "x": 47,
+              "y": 39
+            },
+            {
+              "en": "elevator",
+              "ar": "مصعد",
+              "kind": "object",
+              "x": 79,
+              "y": 29
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "en": "Offer a lift to the clinic",
+          "ar": "اعرض توصيل شخص إلى العيادة",
+          "purposeEn": "Offer a lift to the clinic.",
+          "purposeAr": "اعرض توصيل شخص إلى العيادة.",
+          "image": {
+            "id": "conv-life-l3-162-3",
+            "path": "assets/scenes/conversations/life-l3-162-3.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Offer a lift to the clinic",
+            "ar": "اعرض توصيل شخص إلى العيادة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                251,
+                1186,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "offer a lift to the clinic",
+              "ar": "اعرض توصيل شخص إلى العيادة",
+              "kind": "phrase",
+              "x": 53,
+              "y": 64
+            },
+            {
+              "en": "car keys",
+              "ar": "مفاتيح السيارة",
+              "kind": "object",
+              "x": 51,
+              "y": 62
+            },
+            {
+              "en": "car window",
+              "ar": "نافذة السيارة",
+              "kind": "object",
+              "x": 54,
+              "y": 52
+            }
+          ]
+        },
+        {
+          "from": 7,
+          "to": 7,
+          "en": "Ask if someone wants company",
+          "ar": "اسأل إن كان شخص يريد من يرافقه",
+          "purposeEn": "Ask if someone wants company.",
+          "purposeAr": "اسأل إن كان شخص يريد من يرافقه.",
+          "image": {
+            "id": "conv-life-l3-162-4",
+            "path": "assets/scenes/conversations/life-l3-162-4.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Ask if someone wants company",
+            "ar": "اسأل إن كان شخص يريد من يرافقه",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                251,
+                1583,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask if someone wants company",
+              "ar": "اسأل إن كان شخص يريد من يرافقه",
+              "kind": "phrase",
+              "x": 65,
+              "y": 64
+            },
+            {
+              "en": "smartphone",
+              "ar": "هاتف ذكي",
+              "kind": "object",
+              "x": 74,
+              "y": 73
+            },
+            {
+              "en": "reassured",
+              "ar": "مطمئن",
+              "kind": "description",
+              "x": 72,
+              "y": 34
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-163",
+      "goalAr": "وصف إصابة قديمة",
+      "goalEn": "Describing an old injury",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Describe an old football injury",
+          "ar": "صِف إصابة قديمة في كرة القدم",
+          "purposeEn": "Describe an old football injury.",
+          "purposeAr": "صِف إصابة قديمة في كرة القدم.",
+          "image": {
+            "id": "conv-life-l3-163-1",
+            "path": "assets/scenes/conversations/life-l3-163-1.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Describe an old football injury",
+            "ar": "صِف إصابة قديمة في كرة القدم",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                498,
+                394,
+                739
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "describe an old football injury",
+              "ar": "صِف إصابة قديمة في كرة القدم",
+              "kind": "phrase",
+              "x": 45,
+              "y": 70
+            },
+            {
+              "en": "football",
+              "ar": "كرة قدم",
+              "kind": "object",
+              "x": 17,
+              "y": 67
+            },
+            {
+              "en": "ankle",
+              "ar": "كاحل",
+              "kind": "object",
+              "x": 59,
+              "y": 86
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Explain when the ankle still bothers you",
+          "ar": "اشرح متى لا يزال كاحلك يؤلمك",
+          "purposeEn": "Explain when the ankle still bothers you.",
+          "purposeAr": "اشرح متى لا يزال كاحلك يؤلمك.",
+          "image": {
+            "id": "conv-life-l3-163-2",
+            "path": "assets/scenes/conversations/life-l3-163-2.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Explain when the ankle still bothers you",
+            "ar": "اشرح متى لا يزال كاحلك يؤلمك",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                498,
+                790,
+                739
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "explain when the ankle still bothers you",
+              "ar": "اشرح متى لا يزال كاحلك يؤلمك",
+              "kind": "phrase",
+              "x": 53,
+              "y": 70
+            },
+            {
+              "en": "walking shoe",
+              "ar": "حذاء مشي",
+              "kind": "object",
+              "x": 55,
+              "y": 91
+            },
+            {
+              "en": "paved path",
+              "ar": "ممر مرصوف",
+              "kind": "object",
+              "x": 65,
+              "y": 85
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Mention it at the next appointment",
+          "ar": "اذكر ذلك في موعدك القادم",
+          "purposeEn": "Mention it at the next appointment.",
+          "purposeAr": "اذكر ذلك في موعدك القادم.",
+          "image": {
+            "id": "conv-life-l3-163-3",
+            "path": "assets/scenes/conversations/life-l3-163-3.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Mention it at the next appointment",
+            "ar": "اذكر ذلك في موعدك القادم",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                498,
+                1186,
+                739
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "mention it at the next appointment",
+              "ar": "اذكر ذلك في موعدك القادم",
+              "kind": "phrase",
+              "x": 56,
+              "y": 74
+            },
+            {
+              "en": "desk calendar",
+              "ar": "تقويم مكتبي",
+              "kind": "object",
+              "x": 31,
+              "y": 43
+            },
+            {
+              "en": "appointment slip",
+              "ar": "ورقة موعد",
+              "kind": "object",
+              "x": 67,
+              "y": 67
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Call someone from the hospital",
+          "ar": "اتصل بشخص من المستشفى",
+          "purposeEn": "Call someone from the hospital.",
+          "purposeAr": "اتصل بشخص من المستشفى.",
+          "image": {
+            "id": "conv-life-l3-163-4",
+            "path": "assets/scenes/conversations/life-l3-163-4.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Call someone from the hospital",
+            "ar": "اتصل بشخص من المستشفى",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                498,
+                1583,
+                739
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "call someone from the hospital",
+              "ar": "اتصل بشخص من المستشفى",
+              "kind": "phrase",
+              "x": 38,
+              "y": 29
+            },
+            {
+              "en": "waiting-room chair",
+              "ar": "كرسي غرفة الانتظار",
+              "kind": "object",
+              "x": 34,
+              "y": 72
+            },
+            {
+              "en": "ankle brace",
+              "ar": "دعامة للكاحل",
+              "kind": "object",
+              "x": 59,
+              "y": 89
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-164",
+      "goalAr": "نقل ما تعرفه بعد حادث",
+      "goalEn": "Sharing what you know after an incident",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Record when you made the call",
+          "ar": "دوّن وقت إجراء المكالمة",
+          "purposeEn": "Record when you made the call.",
+          "purposeAr": "دوّن وقت إجراء المكالمة.",
+          "image": {
+            "id": "conv-life-l3-164-1",
+            "path": "assets/scenes/conversations/life-l3-164-1.webp",
+            "width": 391,
+            "height": 244,
+            "en": "Record when you made the call",
+            "ar": "دوّن وقت إجراء المكالمة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                745,
+                394,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "record when you made the call",
+              "ar": "دوّن وقت إجراء المكالمة",
+              "kind": "phrase",
+              "x": 52,
+              "y": 64
+            },
+            {
+              "en": "call screen",
+              "ar": "شاشة المكالمة",
+              "kind": "object",
+              "x": 55,
+              "y": 60
+            },
+            {
+              "en": "phone button",
+              "ar": "زر اتصال",
+              "kind": "object",
+              "x": 56,
+              "y": 79
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Stay with someone while waiting for help",
+          "ar": "ابقَ مع شخص أثناء انتظار المساعدة",
+          "purposeEn": "Stay with someone while waiting for help.",
+          "purposeAr": "ابقَ مع شخص أثناء انتظار المساعدة.",
+          "image": {
+            "id": "conv-life-l3-164-2",
+            "path": "assets/scenes/conversations/life-l3-164-2.webp",
+            "width": 390,
+            "height": 244,
+            "en": "Stay with someone while waiting for help",
+            "ar": "ابقَ مع شخص أثناء انتظار المساعدة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                745,
+                790,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "stay with someone while waiting for help",
+              "ar": "ابقَ مع شخص أثناء انتظار المساعدة",
+              "kind": "phrase",
+              "x": 58,
+              "y": 55
+            },
+            {
+              "en": "hand on shoulder",
+              "ar": "يد على الكتف",
+              "kind": "object",
+              "x": 55,
+              "y": 48
+            },
+            {
+              "en": "wooden bench",
+              "ar": "مقعد خشبي",
+              "kind": "object",
+              "x": 48,
+              "y": 77
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Go outside to meet the ambulance crew",
+          "ar": "اخرج للقاء طاقم الإسعاف",
+          "purposeEn": "Go outside to meet the ambulance crew.",
+          "purposeAr": "اخرج للقاء طاقم الإسعاف.",
+          "image": {
+            "id": "conv-life-l3-164-3",
+            "path": "assets/scenes/conversations/life-l3-164-3.webp",
+            "width": 390,
+            "height": 244,
+            "en": "Go outside to meet the ambulance crew",
+            "ar": "اخرج للقاء طاقم الإسعاف",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                745,
+                1186,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "go outside to meet the ambulance crew",
+              "ar": "اخرج للقاء طاقم الإسعاف",
+              "kind": "phrase",
+              "x": 51,
+              "y": 59
+            },
+            {
+              "en": "ambulance",
+              "ar": "سيارة إسعاف",
+              "kind": "object",
+              "x": 66,
+              "y": 48
+            },
+            {
+              "en": "stretcher",
+              "ar": "نقّالة",
+              "kind": "object",
+              "x": 87,
+              "y": 67
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Pass the details to the coordinator",
+          "ar": "سلّم التفاصيل إلى المنسّق",
+          "purposeEn": "Pass the details to the coordinator.",
+          "purposeAr": "سلّم التفاصيل إلى المنسّق.",
+          "image": {
+            "id": "conv-life-l3-164-4",
+            "path": "assets/scenes/conversations/life-l3-164-4.webp",
+            "width": 391,
+            "height": 244,
+            "en": "Pass the details to the coordinator",
+            "ar": "سلّم التفاصيل إلى المنسّق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                745,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "pass the details to the coordinator",
+              "ar": "سلّم التفاصيل إلى المنسّق",
+              "kind": "phrase",
+              "x": 62,
+              "y": 77
+            },
+            {
+              "en": "written record",
+              "ar": "سجلّ مكتوب",
+              "kind": "object",
+              "x": 61,
+              "y": 83
+            },
+            {
+              "en": "relieved",
+              "ar": "مرتاح",
+              "kind": "description",
+              "x": 40,
+              "y": 36
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

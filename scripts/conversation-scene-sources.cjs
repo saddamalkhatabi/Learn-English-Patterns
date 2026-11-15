@@ -8,7 +8,8 @@ const words = new Map();
 const directory = path.join(__dirname, '../production/conversation-scene-batches');
 
 if (fs.existsSync(directory)) {
-  for (const name of fs.readdirSync(directory).filter(name => name.endsWith('.json')).sort()) {
+  const compareNames = new Intl.Collator('en', { numeric: true }).compare;
+  for (const name of fs.readdirSync(directory).filter(name => name.endsWith('.json')).sort(compareNames)) {
     const batch = JSON.parse(fs.readFileSync(path.join(directory, name), 'utf8'));
     assert(batch.schema === 1 && batch.conversations.length, name);
     for (const { id, goalAr, goalEn, stages } of batch.conversations) {
