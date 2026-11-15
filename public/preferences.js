@@ -1,5 +1,5 @@
 /* Interface language and Arabic learning content are independent preferences. */
-const EP={prefs:{language:'ar',arabic:true,readingSeconds:0},teaching:null,dictionary:new Map(),learningArabic:new Set()};
+const EP={prefs:{language:'ar',arabic:true,readingSeconds:0,instantVocabulary:true},teaching:null,dictionary:new Map(),learningArabic:new Set()};
 try{Object.assign(EP.prefs,JSON.parse(localStorage.getItem('patterns-preferences')||'{}'))}catch{}
 if(!['ar','en'].includes(EP.prefs.language))EP.prefs.language='ar';
 EP.t=(ar,en)=>EP.prefs.language==='en'?en:ar;
@@ -12,7 +12,7 @@ EP.escape=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;
 EP.ar=text=>text?`<p class="ar-content" lang="ar" dir="rtl">${EP.escape(text)}</p>`:'';
 EP.pair=(ar,en)=>`<div class="learning-copy"><p class="en-content" lang="en" dir="ltr">${EP.escape(en)}</p>${EP.ar(ar)}</div>`;
 EP.set=function(key,value){if(key==='language'&&!['ar','en'].includes(value))return;EP.prefs[key]=value;try{localStorage.setItem('patterns-preferences',JSON.stringify(EP.prefs))}catch{}EP.apply();if(typeof render==='function'){if(typeof coachPaintKey!=='undefined')coachPaintKey='';if(typeof referencePaint!=='undefined')referencePaint='';render();if(typeof referencePlayerOpen!=='undefined'&&referencePlayerOpen)paintReferencePlayer();if(document.querySelector('#lesson')?.open&&typeof renderLesson==='function')renderLesson()}};
-EP.apply=function(){const html=document.documentElement;html.lang=EP.prefs.language;html.dir=EP.prefs.language==='ar'?'rtl':'ltr';html.dataset.arabic=EP.prefs.arabic?'show':'hide';html.dataset.uiLanguage=EP.prefs.language};EP.apply();
+EP.apply=function(){const html=document.documentElement;html.lang=EP.prefs.language;html.dir=EP.prefs.language==='ar'?'rtl':'ltr';html.dataset.arabic=EP.prefs.arabic?'show':'hide';html.dataset.uiLanguage=EP.prefs.language;html.dataset.instantVocabulary=EP.prefs.instantVocabulary?'on':'off'};EP.apply();
 EP.entry=s=>EP.teaching?.sentences?.[s?.id]||window.EPTeaching?.describe(s||{en:''});
 EP.words=function(s,attribute=''){const entry=EP.entry(s),set=new Set(entry?.highlight||[]);return s.en.split(/\s+/).map((w,i)=>`<span ${attribute?`${attribute}="${i}"`:''} class="${set.has(i)?'pattern-token':''}">${EP.escape(w)}</span>`).join(' ')};
 EP.rule=function(s,{compact=false}={}){const e=EP.entry(s);if(!e)return '';return `<section class="rule-card ${compact?'compact-rule':''}" aria-label="${EP.t('قاعدة النمط','Pattern rule')}"><div class="rule-kicker">${EP.t('لاحظ البناء الثابت','NOTICE THE STRUCTURE')}</div><strong class="pattern-form" lang="en" dir="ltr">${EP.escape(e.form)}</strong>${EP.pair(e.rule_ar,e.rule_en)}${e.purpose_en?`<div class="purpose-note"><span>${EP.t('الغرض','Purpose')}</span> ${EP.escape(EP.t(e.purpose_ar,e.purpose_en))}</div>`:''}${!compact&&e.note_en?`<div class="essential-note"><b>${EP.t('فرق مهم','Remember')}</b>${EP.pair(e.note_ar,e.note_en)}</div>`:''}</section>`};

@@ -27,6 +27,12 @@ function sceneAssistantIndex(scene){
  return sceneAssistantSteps.get(scene.id.replace(/^studio:/,''))||0;
 }
 
+function sceneAssistantQuestionMarkup(question){
+ const expression=question.phrase.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+ const highlights=new Set(EPTeaching.indices(question.en,new RegExp('\\b'+expression+'\\b','i')));
+ return question.en.split(/\s+/).map((word,index)=>highlights.has(index)?`<span class="pattern-token">${H(word)}</span>`:H(word)).join(' ');
+}
+
 function sceneAssistantStep(scene){
  const {questions}=sceneAssistantGuide(scene),index=sceneAssistantIndex(scene),question=questions[index];
  const labels=[
@@ -41,7 +47,7 @@ function sceneAssistantStep(scene){
   </div>
   ${question.model?`<p class="pattern-form" lang="en" dir="ltr">${H(question.model.form)}</p>`:''}
   <details class="idea-disclosure" open><summary>${T('السؤال الذي أقوله للمساعد','Question to ask your assistant')}</summary>
-   <p class="scene-assistant-question" lang="en" dir="ltr">${H(question.en)}</p>
+   <p class="scene-assistant-question" lang="en" dir="ltr">${sceneAssistantQuestionMarkup(question)}</p>
    <div class="buttonrow scene-assistant-guide-actions">
     <button type="button" class="secondary" onclick="speakSceneAssistantQuestion()">▶ ${T('استمع إلى السؤال','Hear the question')}</button>
     <button type="button" class="secondary" onclick="copySceneAssistantText(this,'question')">${T('انسخ السؤال','Copy question')}</button>
@@ -50,7 +56,7 @@ function sceneAssistantStep(scene){
   </details>
   <details class="idea-disclosure"><summary>${T('الترجمة والتلميح','Translation and hint')}</summary>
    ${EP.ar(question.ar)}
-   ${question.model?`<p lang="en" dir="ltr">${H(question.model.en)}</p>${EP.ar(question.model.ar)}
+   ${question.model?`<p lang="en" dir="ltr">${comparisonModel(question.model.en,question.model)}</p>${EP.ar(question.model.ar)}
    <p>${T('طبّق التركيب في هذا الموقف','Use the pattern for this scene')}</p>
    ${EP.pair(scene.taskAr,scene.taskEn)}`:''}
    ${index<questions.length-1&&question.terms.length?`<ul class="scene-assistant-terms">${question.terms.map(word=>{

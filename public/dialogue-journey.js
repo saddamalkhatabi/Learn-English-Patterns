@@ -20,7 +20,9 @@ function dialogueJourney(dialogue,jump){
  const life=dialogueLifecycles[dialogue.id];
  return `<section class="dialogue-journey" aria-label="${T('دورة المحادثة','Conversation journey')}">
   <div class="journey-center"><span>${T('من الفكرة إلى الاستجابة','From an idea to a response')}</span>
-   <h3>${H(T(dialogue.ar,dialogue.en))}</h3><p>${H(T(life.goalAr,life.goalEn))}</p></div>
+   <h3 lang="ar" dir="rtl">${H(dialogue.ar)}</h3><p class="journey-title-en" lang="en" dir="ltr">${H(dialogue.en)}</p>
+   ${normalizeSceneQuery(T(life.goalAr,life.goalEn)).trim().replace(/[.!؟]$/,'')!==normalizeSceneQuery(T(dialogue.ar,dialogue.en)).trim().replace(/[.!؟]$/,'')?
+    `<p>${H(T(life.goalAr,life.goalEn))}</p>`:''}</div>
   ${life.stages.map((stage,index)=>{
    const image=dialogueSceneArchive[dialogue.id].turns[stage.from];
    return `<button type="button" class="journey-stage journey-stage-${index}" data-journey-stage="${index}"

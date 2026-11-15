@@ -1,0 +1,17 @@
+.instant-vocabulary{
+ position:fixed;inset:auto;z-index:1000;box-sizing:border-box;margin:0;
+ width:min(23rem,calc(100vw - 16px));max-height:calc(100dvh - 16px);overflow:auto;
+ padding:.85rem 1rem;border:1px solid #bcd4c8;border-radius:12px;background:#fff;color:#193d30;
+ box-shadow:0 10px 30px #163c3540;text-align:start;
+}
+.instant-vocabulary-heading{display:flex;gap:.55rem;align-items:center;flex-wrap:wrap;padding-inline-end:2.15rem;overflow-wrap:anywhere}
+.instant-vocabulary-heading>b{font-size:1.1rem}
+.instant-vocabulary-close{position:absolute;inset-block-start:.55rem;inset-inline-end:.6rem;line-height:1;min-width:2rem;min-height:2rem;padding:.25rem}
+.instant-vocabulary p{margin:.35rem 0 .65rem}
+.instant-vocabulary ul{display:grid;gap:.35rem;padding-inline-start:1rem;margin:.25rem 0 .6rem}
+.instant-vocabulary li{padding-inline-start:.1rem}
+.instant-vocabulary li span{display:block}
+.instant-vocabulary a{color:#1a5b4b;text-decoration:underline}
+::highlight(instant-vocabulary-selection){background:#ffe4a1;color:#422a0b}
+html[data-instant-vocabulary="on"]{touch-action:manipulation}
+.journey-center .journey-title-en{font-weight:700}

@@ -110,6 +110,24 @@ test('screen-sharing practice uses image annotations and authored patterns and i
   }),expression);
  }
 });
+test('instant vocabulary resolves contextual phrases, senses and translations in either direction',()=>{
+ const glossary=require('../public/instant-vocabulary-core.js');
+ const indexed=glossary.index(vocabulary);
+ const phrase='Could you tell me whether it will be back in stock next week?';
+ assert.equal(glossary.select(indexed,phrase,phrase.indexOf('stock')+1).text,'back in stock');
+ assert.equal(glossary.select(indexed,'This is an unusually peaceful afternoon.',8),null);
+ const sentence='I’ll book a table for us.';
+ const match=glossary.select(indexed,sentence,sentence.indexOf('book')+1);
+ assert.match(match.text,/book(?: a table)?/);
+ assert.notEqual(glossary.best(indexed,match,sentence).entry.pos,'NOUN');
+ const ar='رف فارغ';
+ assert.equal(normalize(glossary.best(indexed,glossary.select(indexed,ar,1),ar).entry.en),'empty shelf');
+ const dictionary=require('../public/instant-dictionary.json');
+ assert(Object.keys(dictionary).length>80000);
+ assert.match(glossary.dictionaryResult(dictionary,{lang:'en',text:'Reliable'}).ar,/موثوق/);
+ const name=glossary.best(indexed,glossary.select(indexed,'name',1),'name').entry;
+ assert(glossary.related(indexed,name).some(entry=>/my name is/i.test(entry.en)));
+});
 test('vocabulary keeps contextual roles, full words with accents, and valid content links',()=>{
  assert(vocabulary.entries.length>3000);
  assert.equal(new Set(vocabulary.entries.map(e=>e.id)).size,vocabulary.entries.length);

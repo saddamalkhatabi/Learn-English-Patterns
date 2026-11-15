@@ -158,8 +158,10 @@ for(const [phrase,ar] of Object.entries(sceneGuide.phrases))if(!phrases.has(phra
 for(const [phrase,ar] of phrases.values()){
  const first=normalize(tokens(phrase)[0]);
  sources.forEach((source,index)=>{
-  if(sourceTokens[index].has(first)&&includesTerm(source.en,phrase))
-   add(phrase,'PHRASE',normalize(phrase),index,phraseRecordings(phrase,index)).ar=ar;
+  if(sourceTokens[index].has(first)&&includesTerm(source.en,phrase)){
+   const entry=add(phrase,'PHRASE',normalize(phrase),index,phraseRecordings(phrase,index));
+   entry.ar=ar;entry.common=true;
+  }
  });
 }
 for(const entry of entries.values()){
