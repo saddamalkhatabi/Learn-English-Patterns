@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "7dd6dec7acdc8c5176bfdbd38d5b5ea466ffffc66166d2a56a3a30d42169d319"
+  },
+  "conversations": [
+    {
+      "id": "l3-033",
+      "goalAr": "العثور على حقيبة مناسبة للعمل",
+      "goalEn": "Finding the right bag for work",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Ask to see a bag with a side pocket",
+          "ar": "اطلب رؤية حقيبة بجيب جانبي",
+          "purposeEn": "Ask to see a bag with a side pocket.",
+          "purposeAr": "اطلب رؤية حقيبة بجيب جانبي.",
+          "image": {
+            "id": "conv-life-l3-033-1",
+            "path": "assets/scenes/conversations/life-l3-033-1.webp",
+            "width": 388,
+            "height": 259,
+            "en": "Ask to see a bag with a side pocket",
+            "ar": "اطلب رؤية حقيبة بجيب جانبي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                391,
+                262
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "grey laptop bag",
+              "ar": "حقيبة حاسوب رمادية",
+              "kind": "object",
+              "x": 66,
+              "y": 58
+            },
+            {
+              "en": "side pocket",
+              "ar": "جيب جانبي",
+              "kind": "object",
+              "x": 83,
+              "y": 72
+            },
+            {
+              "en": "look for a bag with a side pocket",
+              "ar": "يبحث عن حقيبة بجيب جانبي",
+              "kind": "phrase",
+              "x": 49,
+              "y": 74
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Ask the clerk to hand you the bag",
+          "ar": "اطلب من البائع أن يناولك الحقيبة",
+          "purposeEn": "Ask the clerk to hand you the bag.",
+          "purposeAr": "اطلب من البائع أن يناولك الحقيبة.",
+          "image": {
+            "id": "conv-life-l3-033-2",
+            "path": "assets/scenes/conversations/life-l3-033-2.webp",
+            "width": 390,
+            "height": 259,
+            "en": "Ask the clerk to hand you the bag",
+            "ar": "اطلب من البائع أن يناولك الحقيبة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                401,
+                3,
+                791,
+                262
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "carry handle",
+              "ar": "مقبض حمل",
+              "kind": "object",
+              "x": 51,
+              "y": 51
+            },
+            {
+              "en": "laptop bag",
+              "ar": "حقيبة حاسوب",
+              "kind": "object",
+              "x": 51,
+              "y": 69
+            },
+            {
+              "en": "hand me that bag",
+              "ar": "ناولني تلك الحقيبة",
+              "kind": "phrase",
+              "x": 57,
+              "y": 76
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Test whether the laptop fits",
+          "ar": "جرّب وضع الحاسوب في الحقيبة",
+          "purposeEn": "Test whether the laptop fits.",
+          "purposeAr": "جرّب وضع الحاسوب في الحقيبة.",
+          "image": {
+            "id": "conv-life-l3-033-3",
+            "path": "assets/scenes/conversations/life-l3-033-3.webp",
+            "width": 387,
+            "height": 259,
+            "en": "Test whether the laptop fits",
+            "ar": "جرّب وضع الحاسوب في الحقيبة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                798,
+                3,
+                1185,
+                262
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "laptop",
+              "ar": "حاسوب محمول",
+              "kind": "object",
+              "x": 51,
+              "y": 59
+            },
+            {
+              "en": "padded pocket",
+              "ar": "جيب مبطّن",
+              "kind": "object",
+              "x": 52,
+              "y": 84
+            },
+            {
+              "en": "slide the laptop into the pocket",
+              "ar": "يُدخل الحاسوب في الجيب",
+              "kind": "phrase",
+              "x": 46,
+              "y": 65
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Test the zip before buying",
+          "ar": "جرّب السحّاب قبل الشراء",
+          "purposeEn": "Test the zip before buying.",
+          "purposeAr": "جرّب السحّاب قبل الشراء.",
+          "image": {
+            "id": "conv-life-l3-033-4",
+            "path": "assets/scenes/conversations/life-l3-033-4.webp",
+            "width": 387,
+            "height": 259,
+            "en": "Test the zip before buying",
+            "ar": "جرّب السحّاب قبل الشراء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1196,
+                3,
+                1583,
+                262
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "zip pull",
+              "ar": "لسان السحّاب",
+              "kind": "object",
+              "x": 44,
+              "y": 58
+            },
+            {
+              "en": "side pocket",
+              "ar": "جيب جانبي",
+              "kind": "object",
+              "x": 74,
+              "y": 73
+            },
+            {
+              "en": "test the zip before buying it",
+              "ar": "يجرّب السحّاب قبل الشراء",
+              "kind": "phrase",
+              "x": 39,
+              "y": 60
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-034",
+      "goalAr": "توضيح سبب ارتفاع تكلفة الشراء",
+      "goalEn": "Explaining why a purchase was costly",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Ask how much the purchase cost altogether",
+          "ar": "اسأل كم بلغت تكلفة الشراء إجمالًا",
+          "purposeEn": "Ask how much the purchase cost altogether.",
+          "purposeAr": "اسأل كم بلغت تكلفة الشراء إجمالًا.",
+          "image": {
+            "id": "conv-life-l3-034-1",
+            "path": "assets/scenes/conversations/life-l3-034-1.webp",
+            "width": 388,
+            "height": 224,
+            "en": "Ask how much the purchase cost altogether",
+            "ar": "اسأل كم بلغت تكلفة الشراء إجمالًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                271,
+                391,
+                495
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "parcel",
+              "ar": "طرد",
+              "kind": "object",
+              "x": 49,
+              "y": 86
+            },
+            {
+              "en": "computer monitor",
+              "ar": "شاشة حاسوب",
+              "kind": "object",
+              "x": 88,
+              "y": 67
+            },
+            {
+              "en": "ask what delivery added to the cost",
+              "ar": "يسأل كم أضاف التوصيل إلى التكلفة",
+              "kind": "phrase",
+              "x": 70,
+              "y": 64
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Notice the delivery charge at checkout",
+          "ar": "انتبه إلى رسم التوصيل عند الدفع",
+          "purposeEn": "Notice the delivery charge at checkout.",
+          "purposeAr": "انتبه إلى رسم التوصيل عند الدفع.",
+          "image": {
+            "id": "conv-life-l3-034-2",
+            "path": "assets/scenes/conversations/life-l3-034-2.webp",
+            "width": 390,
+            "height": 224,
+            "en": "Notice the delivery charge at checkout",
+            "ar": "انتبه إلى رسم التوصيل عند الدفع",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                401,
+                271,
+                791,
+                495
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "delivery truck icon",
+              "ar": "رمز شاحنة توصيل",
+              "kind": "object",
+              "x": 49,
+              "y": 57
+            },
+            {
+              "en": "shopping cart icon",
+              "ar": "رمز عربة التسوّق",
+              "kind": "object",
+              "x": 71,
+              "y": 60
+            },
+            {
+              "en": "check the delivery charge",
+              "ar": "يتحقّق من رسم التوصيل",
+              "kind": "phrase",
+              "x": 61,
+              "y": 76
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Compare the total prices",
+          "ar": "قارن السعرين الإجماليين",
+          "purposeEn": "Compare the total prices.",
+          "purposeAr": "قارن السعرين الإجماليين.",
+          "image": {
+            "id": "conv-life-l3-034-3",
+            "path": "assets/scenes/conversations/life-l3-034-3.webp",
+            "width": 387,
+            "height": 224,
+            "en": "Compare the total prices",
+            "ar": "قارن السعرين الإجماليين",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                798,
+                271,
+                1185,
+                495
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "order summary",
+              "ar": "ملخّص طلب",
+              "kind": "object",
+              "x": 34,
+              "y": 71
+            },
+            {
+              "en": "total field",
+              "ar": "خانة الإجمالي",
+              "kind": "object",
+              "x": 69,
+              "y": 88
+            },
+            {
+              "en": "compare the totals",
+              "ar": "يقارن الإجماليين",
+              "kind": "phrase",
+              "x": 54,
+              "y": 87
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Consider collecting the parcel yourself",
+          "ar": "فكّر في استلام الطرد بنفسك",
+          "purposeEn": "Consider collecting the parcel yourself.",
+          "purposeAr": "فكّر في استلام الطرد بنفسك.",
+          "image": {
+            "id": "conv-life-l3-034-4",
+            "path": "assets/scenes/conversations/life-l3-034-4.webp",
+            "width": 387,
+            "height": 224,
+            "en": "Consider collecting the parcel yourself",
+            "ar": "فكّر في استلام الطرد بنفسك",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1196,
+                271,
+                1583,
+                495
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "cardboard box",
+              "ar": "صندوق كرتوني",
+              "kind": "object",
+              "x": 53,
+              "y": 76
+            },
+            {
+              "en": "collection counter",
+              "ar": "منضدة الاستلام",
+              "kind": "object",
+              "x": 51,
+              "y": 95
+            },
+            {
+              "en": "collect it yourself",
+              "ar": "تستلمه بنفسك",
+              "kind": "phrase",
+              "x": 55,
+              "y": 85
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-035",
+      "goalAr": "السؤال عن استبدال مشتريات",
+      "goalEn": "Asking about an exchange",
+      "stages": [
+        {
+          "from": 1,
+          "to": 2,
+          "en": "Ask about exchanging or returning a shirt",
+          "ar": "اسأل عن استبدال القميص أو إرجاعه",
+          "purposeEn": "Ask about exchanging or returning a shirt.",
+          "purposeAr": "اسأل عن استبدال القميص أو إرجاعه.",
+          "image": {
+            "id": "conv-life-l3-035-1",
+            "path": "assets/scenes/conversations/life-l3-035-1.webp",
+            "width": 388,
+            "height": 229,
+            "en": "Ask about exchanging or returning a shirt",
+            "ar": "اسأل عن استبدال القميص أو إرجاعه",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                502,
+                391,
+                731
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "long-sleeved shirt",
+              "ar": "قميص طويل الأكمام",
+              "kind": "object",
+              "x": 43,
+              "y": 75
+            },
+            {
+              "en": "exchange symbol",
+              "ar": "رمز الاستبدال",
+              "kind": "object",
+              "x": 80,
+              "y": 64
+            },
+            {
+              "en": "ask what your options are",
+              "ar": "يسأل عن الخيارات المتاحة له",
+              "kind": "phrase",
+              "x": 70,
+              "y": 65
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "en": "Check whether the larger size is in stock",
+          "ar": "تحقّق من توفّر المقاس الأكبر",
+          "purposeEn": "Check whether the larger size is in stock.",
+          "purposeAr": "تحقّق من توفّر المقاس الأكبر.",
+          "image": {
+            "id": "conv-life-l3-035-2",
+            "path": "assets/scenes/conversations/life-l3-035-2.webp",
+            "width": 390,
+            "height": 229,
+            "en": "Check whether the larger size is in stock",
+            "ar": "تحقّق من توفّر المقاس الأكبر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                401,
+                502,
+                791,
+                731
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "shirt on a hanger",
+              "ar": "قميص على علّاقة",
+              "kind": "object",
+              "x": 51,
+              "y": 60
+            },
+            {
+              "en": "clothes rack",
+              "ar": "علاقة عرض الملابس",
+              "kind": "object",
+              "x": 51,
+              "y": 19
+            },
+            {
+              "en": "check if a larger size is in stock",
+              "ar": "يتحقّق من توفّر مقاس أكبر",
+              "kind": "phrase",
+              "x": 59,
+              "y": 62
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 7,
+          "en": "Ask to set the larger item aside",
+          "ar": "اطلب وضع المقاس الأكبر جانبًا",
+          "purposeEn": "Ask to set the larger item aside.",
+          "purposeAr": "اطلب وضع المقاس الأكبر جانبًا.",
+          "image": {
+            "id": "conv-life-l3-035-3",
+            "path": "assets/scenes/conversations/life-l3-035-3.webp",
+            "width": 387,
+            "height": 229,
+            "en": "Ask to set the larger item aside",
+            "ar": "اطلب وضع المقاس الأكبر جانبًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                798,
+                502,
+                1185,
+                731
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "folded shirt",
+              "ar": "قميص مطويّ",
+              "kind": "object",
+              "x": 76,
+              "y": 83
+            },
+            {
+              "en": "clipboard",
+              "ar": "لوح تثبيت أوراق",
+              "kind": "object",
+              "x": 51,
+              "y": 87
+            },
+            {
+              "en": "set the larger size aside",
+              "ar": "يضع المقاس الأكبر جانبًا",
+              "kind": "phrase",
+              "x": 65,
+              "y": 74
+            }
+          ]
+        },
+        {
+          "from": 8,
+          "to": 8,
+          "en": "Agree how long the shop will hold it",
+          "ar": "اتّفق على مدة احتفاظ المحل به",
+          "purposeEn": "Agree how long the shop will hold it.",
+          "purposeAr": "اتّفق على مدة احتفاظ المحل به.",
+          "image": {
+            "id": "conv-life-l3-035-4",
+            "path": "assets/scenes/conversations/life-l3-035-4.webp",
+            "width": 387,
+            "height": 229,
+            "en": "Agree how long the shop will hold it",
+            "ar": "اتّفق على مدة احتفاظ المحل به",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1196,
+                502,
+                1583,
+                731
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "holding shelf",
+              "ar": "رفّ حجز السلع",
+              "kind": "object",
+              "x": 66,
+              "y": 27
+            },
+            {
+              "en": "reserved item",
+              "ar": "سلعة محجوزة",
+              "kind": "object",
+              "x": 68,
+              "y": 25
+            },
+            {
+              "en": "hold it until closing time",
+              "ar": "يحتفظ به حتى الإغلاق",
+              "kind": "phrase",
+              "x": 62,
+              "y": 38
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-036",
+      "goalAr": "اختيار كتاب هدية",
+      "goalEn": "Choosing a book as a gift",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Describe the kinds of books the reader likes",
+          "ar": "صِف أنواع الكتب التي يفضّلها القارئ",
+          "purposeEn": "Describe the kinds of books the reader likes.",
+          "purposeAr": "صِف أنواع الكتب التي يفضّلها القارئ.",
+          "image": {
+            "id": "conv-life-l3-036-1",
+            "path": "assets/scenes/conversations/life-l3-036-1.webp",
+            "width": 388,
+            "height": 248,
+            "en": "Describe the kinds of books the reader likes",
+            "ar": "صِف أنواع الكتب التي يفضّلها القارئ",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                741,
+                391,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "travel book",
+              "ar": "كتاب رحلات",
+              "kind": "object",
+              "x": 38,
+              "y": 73
+            },
+            {
+              "en": "biography",
+              "ar": "سيرة ذاتية",
+              "kind": "object",
+              "x": 75,
+              "y": 75
+            },
+            {
+              "en": "read mostly travel writing",
+              "ar": "يقرأ في الغالب أدب الرحلات",
+              "kind": "phrase",
+              "x": 54,
+              "y": 68
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Compare photographs inside both books",
+          "ar": "قارن الصور في الكتابين",
+          "purposeEn": "Compare photographs inside both books.",
+          "purposeAr": "قارن الصور في الكتابين.",
+          "image": {
+            "id": "conv-life-l3-036-2",
+            "path": "assets/scenes/conversations/life-l3-036-2.webp",
+            "width": 390,
+            "height": 248,
+            "en": "Compare photographs inside both books",
+            "ar": "قارن الصور في الكتابين",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                401,
+                741,
+                791,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "landscape photograph",
+              "ar": "صورة منظر طبيعي",
+              "kind": "object",
+              "x": 37,
+              "y": 70
+            },
+            {
+              "en": "portrait photograph",
+              "ar": "صورة شخصية",
+              "kind": "object",
+              "x": 82,
+              "y": 80
+            },
+            {
+              "en": "look for books with photographs",
+              "ar": "يبحث عن كتب فيها صور",
+              "kind": "phrase",
+              "x": 56,
+              "y": 76
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Choose the book with shorter chapters",
+          "ar": "اختر الكتاب ذي الفصول الأقصر",
+          "purposeEn": "Choose the book with shorter chapters.",
+          "purposeAr": "اختر الكتاب ذي الفصول الأقصر.",
+          "image": {
+            "id": "conv-life-l3-036-3",
+            "path": "assets/scenes/conversations/life-l3-036-3.webp",
+            "width": 387,
+            "height": 248,
+            "en": "Choose the book with shorter chapters",
+            "ar": "اختر الكتاب ذي الفصول الأقصر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                798,
+                741,
+                1185,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "page tabs",
+              "ar": "علامات صفحات",
+              "kind": "object",
+              "x": 46,
+              "y": 76
+            },
+            {
+              "en": "chapter page",
+              "ar": "صفحة من فصل",
+              "kind": "object",
+              "x": 63,
+              "y": 82
+            },
+            {
+              "en": "choose the one with short chapters",
+              "ar": "يختار الكتاب ذي الفصول القصيرة",
+              "kind": "phrase",
+              "x": 55,
+              "y": 67
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Explain why short chapters suit the commute",
+          "ar": "اشرح لماذا تناسب الفصول القصيرة التنقّل اليومي",
+          "purposeEn": "Explain why short chapters suit the commute.",
+          "purposeAr": "اشرح لماذا تناسب الفصول القصيرة التنقّل اليومي.",
+          "image": {
+            "id": "conv-life-l3-036-4",
+            "path": "assets/scenes/conversations/life-l3-036-4.webp",
+            "width": 387,
+            "height": 248,
+            "en": "Explain why short chapters suit the commute",
+            "ar": "اشرح لماذا تناسب الفصول القصيرة التنقّل اليومي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1196,
+                741,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "open book",
+              "ar": "كتاب مفتوح",
+              "kind": "object",
+              "x": 57,
+              "y": 74
+            },
+            {
+              "en": "bus seat",
+              "ar": "مقعد حافلة",
+              "kind": "object",
+              "x": 86,
+              "y": 71
+            },
+            {
+              "en": "read on the commute",
+              "ar": "يقرأ أثناء التنقّل",
+              "kind": "phrase",
+              "x": 57,
+              "y": 55
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

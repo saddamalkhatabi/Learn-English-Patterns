@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "df43e19193eb41b07300cb2164f27a9dda506f8a10201948a63303881e8b3f88"
+  },
+  "conversations": [
+    {
+      "id": "l3-029",
+      "goalAr": "سؤال ضيف عن الغداء",
+      "goalEn": "Checking on a guest after lunch",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "React to the meal and thank the host",
+          "ar": "عبّر عن رأيك في الوجبة واشكر المضيفة",
+          "purposeEn": "React to the meal and thank the host.",
+          "purposeAr": "عبّر عن رأيك في الوجبة واشكر المضيفة.",
+          "image": {
+            "id": "conv-life-l3-029-1",
+            "path": "assets/scenes/conversations/life-l3-029-1.webp",
+            "width": 390,
+            "height": 241,
+            "en": "React to the meal and thank the host",
+            "ar": "عبّر عن رأيك في الوجبة واشكر المضيفة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                393,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "soup bowl",
+              "ar": "وعاء حساء",
+              "kind": "object",
+              "x": 39,
+              "y": 87
+            },
+            {
+              "en": "drinking glass",
+              "ar": "كأس شرب",
+              "kind": "object",
+              "x": 60,
+              "y": 86
+            },
+            {
+              "en": "enjoy the meal",
+              "ar": "يستمتع بالوجبة",
+              "kind": "phrase",
+              "x": 38,
+              "y": 66
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Ask for the recipe",
+          "ar": "اطلب الوصفة",
+          "purposeEn": "Ask for the recipe.",
+          "purposeAr": "اطلب الوصفة.",
+          "image": {
+            "id": "conv-life-l3-029-2",
+            "path": "assets/scenes/conversations/life-l3-029-2.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Ask for the recipe",
+            "ar": "اطلب الوصفة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                3,
+                790,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "recipe notebook",
+              "ar": "دفتر وصفات",
+              "kind": "object",
+              "x": 55,
+              "y": 61
+            },
+            {
+              "en": "soup plate",
+              "ar": "طبق حساء",
+              "kind": "object",
+              "x": 58,
+              "y": 91
+            },
+            {
+              "en": "ask for the soup recipe",
+              "ar": "يطلب وصفة الحساء",
+              "kind": "phrase",
+              "x": 53,
+              "y": 66
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Identify the herbs",
+          "ar": "حدّد الأعشاب المستخدمة",
+          "purposeEn": "Identify the herbs.",
+          "purposeAr": "حدّد الأعشاب المستخدمة.",
+          "image": {
+            "id": "conv-life-l3-029-3",
+            "path": "assets/scenes/conversations/life-l3-029-3.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Identify the herbs",
+            "ar": "حدّد الأعشاب المستخدمة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                3,
+                1186,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "parsley",
+              "ar": "بقدونس",
+              "kind": "object",
+              "x": 51,
+              "y": 47
+            },
+            {
+              "en": "mint",
+              "ar": "نعناع",
+              "kind": "object",
+              "x": 79,
+              "y": 49
+            },
+            {
+              "en": "tell which herbs were used",
+              "ar": "يميّز الأعشاب المستخدمة",
+              "kind": "phrase",
+              "x": 56,
+              "y": 61
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Record the amounts used",
+          "ar": "دوّن الكميات المستخدمة",
+          "purposeEn": "Record the amounts used.",
+          "purposeAr": "دوّن الكميات المستخدمة.",
+          "image": {
+            "id": "conv-life-l3-029-4",
+            "path": "assets/scenes/conversations/life-l3-029-4.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Record the amounts used",
+            "ar": "دوّن الكميات المستخدمة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                3,
+                1583,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "open notebook",
+              "ar": "دفتر مفتوح",
+              "kind": "object",
+              "x": 43,
+              "y": 85
+            },
+            {
+              "en": "herb sprigs",
+              "ar": "أغصان أعشاب",
+              "kind": "object",
+              "x": 84,
+              "y": 88
+            },
+            {
+              "en": "write down the amounts",
+              "ar": "يدوّن الكميات",
+              "kind": "phrase",
+              "x": 35,
+              "y": 76
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-030",
+      "goalAr": "تذكّر شراء الحليب من المتجر",
+      "goalEn": "Remembering milk at the shop",
+      "stages": [
+        {
+          "from": 1,
+          "to": 2,
+          "en": "Check what is needed for breakfast",
+          "ar": "تحقّق ممّا يلزم للإفطار",
+          "purposeEn": "Check what is needed for breakfast.",
+          "purposeAr": "تحقّق ممّا يلزم للإفطار.",
+          "image": {
+            "id": "conv-life-l3-030-1",
+            "path": "assets/scenes/conversations/life-l3-030-1.webp",
+            "width": 390,
+            "height": 244,
+            "en": "Check what is needed for breakfast",
+            "ar": "تحقّق ممّا يلزم للإفطار",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                250,
+                393,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "milk carton",
+              "ar": "عبوة حليب",
+              "kind": "object",
+              "x": 25,
+              "y": 50
+            },
+            {
+              "en": "fridge shelf",
+              "ar": "رف الثلاجة",
+              "kind": "object",
+              "x": 9,
+              "y": 28
+            },
+            {
+              "en": "remember to buy milk",
+              "ar": "يتذكّر شراء الحليب",
+              "kind": "phrase",
+              "x": 24,
+              "y": 61
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "en": "Choose between two carton sizes",
+          "ar": "اختر بين حجمين لعبوة الحليب",
+          "purposeEn": "Choose between two carton sizes.",
+          "purposeAr": "اختر بين حجمين لعبوة الحليب.",
+          "image": {
+            "id": "conv-life-l3-030-2",
+            "path": "assets/scenes/conversations/life-l3-030-2.webp",
+            "width": 390,
+            "height": 244,
+            "en": "Choose between two carton sizes",
+            "ar": "اختر بين حجمين لعبوة الحليب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                250,
+                790,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "large carton",
+              "ar": "عبوة كبيرة",
+              "kind": "object",
+              "x": 39,
+              "y": 67
+            },
+            {
+              "en": "small carton",
+              "ar": "عبوة صغيرة",
+              "kind": "object",
+              "x": 65,
+              "y": 77
+            },
+            {
+              "en": "choose the smaller carton",
+              "ar": "يختار العبوة الأصغر",
+              "kind": "phrase",
+              "x": 57,
+              "y": 75
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "en": "Get the milk and oats",
+          "ar": "اشترِ الحليب والشوفان",
+          "purposeEn": "Get the milk and oats.",
+          "purposeAr": "اشترِ الحليب والشوفان.",
+          "image": {
+            "id": "conv-life-l3-030-3",
+            "path": "assets/scenes/conversations/life-l3-030-3.webp",
+            "width": 389,
+            "height": 244,
+            "en": "Get the milk and oats",
+            "ar": "اشترِ الحليب والشوفان",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                250,
+                1186,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "grocery basket",
+              "ar": "سلّة مشتريات",
+              "kind": "object",
+              "x": 49,
+              "y": 83
+            },
+            {
+              "en": "jar of oats",
+              "ar": "مرطبان شوفان",
+              "kind": "object",
+              "x": 67,
+              "y": 74
+            },
+            {
+              "en": "put the oats in the basket",
+              "ar": "يضع الشوفان في السلّة",
+              "kind": "phrase",
+              "x": 49,
+              "y": 73
+            }
+          ]
+        },
+        {
+          "from": 7,
+          "to": 7,
+          "en": "Pack utensils suitable for soup",
+          "ar": "جهّز أدوات مناسبة لتناول الحساء",
+          "purposeEn": "Pack utensils suitable for soup.",
+          "purposeAr": "جهّز أدوات مناسبة لتناول الحساء.",
+          "image": {
+            "id": "conv-life-l3-030-4",
+            "path": "assets/scenes/conversations/life-l3-030-4.webp",
+            "width": 390,
+            "height": 244,
+            "en": "Pack utensils suitable for soup",
+            "ar": "جهّز أدوات مناسبة لتناول الحساء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                250,
+                1583,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "soup spoons",
+              "ar": "ملاعق حساء",
+              "kind": "object",
+              "x": 38,
+              "y": 60
+            },
+            {
+              "en": "soup flask",
+              "ar": "قارورة حافظِة للحساء",
+              "kind": "object",
+              "x": 63,
+              "y": 74
+            },
+            {
+              "en": "pack two spoons",
+              "ar": "يضع ملعقتين في الحقيبة",
+              "kind": "phrase",
+              "x": 41,
+              "y": 66
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-031",
+      "goalAr": "مقارنة كرسيين للمنزل",
+      "goalEn": "Comparing two chairs for home",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Compare foldability and support",
+          "ar": "قارن سهولة الطيّ ودعم الظهر",
+          "purposeEn": "Compare foldability and support.",
+          "purposeAr": "قارن سهولة الطيّ ودعم الظهر.",
+          "image": {
+            "id": "conv-life-l3-031-1",
+            "path": "assets/scenes/conversations/life-l3-031-1.webp",
+            "width": 390,
+            "height": 240,
+            "en": "Compare foldability and support",
+            "ar": "قارن سهولة الطيّ ودعم الظهر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                500,
+                393,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "folding chair",
+              "ar": "كرسي قابل للطيّ",
+              "kind": "object",
+              "x": 31,
+              "y": 75
+            },
+            {
+              "en": "office chair",
+              "ar": "كرسي مكتبي",
+              "kind": "object",
+              "x": 66,
+              "y": 62
+            },
+            {
+              "en": "choose between two chairs",
+              "ar": "يختار بين كرسيين",
+              "kind": "phrase",
+              "x": 48,
+              "y": 65
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Test the comfort of the chair",
+          "ar": "جرّب مدى راحة الكرسي",
+          "purposeEn": "Test the comfort of the chair.",
+          "purposeAr": "جرّب مدى راحة الكرسي.",
+          "image": {
+            "id": "conv-life-l3-031-2",
+            "path": "assets/scenes/conversations/life-l3-031-2.webp",
+            "width": 390,
+            "height": 240,
+            "en": "Test the comfort of the chair",
+            "ar": "جرّب مدى راحة الكرسي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                500,
+                790,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "padded backrest",
+              "ar": "مسند ظهر مبطّن",
+              "kind": "object",
+              "x": 21,
+              "y": 47
+            },
+            {
+              "en": "armrest",
+              "ar": "مسند ذراع",
+              "kind": "object",
+              "x": 65,
+              "y": 80
+            },
+            {
+              "en": "try sitting in the chair",
+              "ar": "يجرّب الجلوس على الكرسي",
+              "kind": "phrase",
+              "x": 37,
+              "y": 59
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Point out the back support",
+          "ar": "أشِر إلى الجزء الداعم للظهر",
+          "purposeEn": "Point out the back support.",
+          "purposeAr": "أشِر إلى الجزء الداعم للظهر.",
+          "image": {
+            "id": "conv-life-l3-031-3",
+            "path": "assets/scenes/conversations/life-l3-031-3.webp",
+            "width": 389,
+            "height": 240,
+            "en": "Point out the back support",
+            "ar": "أشِر إلى الجزء الداعم للظهر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                500,
+                1186,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "lumbar cushion",
+              "ar": "وسادة دعم أسفل الظهر",
+              "kind": "object",
+              "x": 55,
+              "y": 67
+            },
+            {
+              "en": "armrest",
+              "ar": "مسند ذراع",
+              "kind": "object",
+              "x": 88,
+              "y": 78
+            },
+            {
+              "en": "give more back support",
+              "ar": "يوفّر دعمًا أكبر للظهر",
+              "kind": "phrase",
+              "x": 68,
+              "y": 55
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Decide whether the chair suits the study",
+          "ar": "قرّر إن كان الكرسي مناسبًا لغرفة الدراسة",
+          "purposeEn": "Decide whether the chair suits the study.",
+          "purposeAr": "قرّر إن كان الكرسي مناسبًا لغرفة الدراسة.",
+          "image": {
+            "id": "conv-life-l3-031-4",
+            "path": "assets/scenes/conversations/life-l3-031-4.webp",
+            "width": 390,
+            "height": 240,
+            "en": "Decide whether the chair suits the study",
+            "ar": "قرّر إن كان الكرسي مناسبًا لغرفة الدراسة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                500,
+                1583,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "desk chair",
+              "ar": "كرسي مكتب",
+              "kind": "object",
+              "x": 34,
+              "y": 67
+            },
+            {
+              "en": "desk lamp",
+              "ar": "مصباح مكتبي",
+              "kind": "object",
+              "x": 86,
+              "y": 75
+            },
+            {
+              "en": "keep the chair in the study",
+              "ar": "يُبقي الكرسي في غرفة الدراسة",
+              "kind": "phrase",
+              "x": 60,
+              "y": 77
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-032",
+      "goalAr": "شراء حذاء ضمن الميزانية",
+      "goalEn": "Buying shoes within a budget",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Ask how much the shoes cost",
+          "ar": "اسأل كم سعر الحذاء",
+          "purposeEn": "Ask how much the shoes cost.",
+          "purposeAr": "اسأل كم سعر الحذاء.",
+          "image": {
+            "id": "conv-life-l3-032-1",
+            "path": "assets/scenes/conversations/life-l3-032-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Ask how much the shoes cost",
+            "ar": "اسأل كم سعر الحذاء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                747,
+                393,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "black trainer",
+              "ar": "حذاء رياضي أسود",
+              "kind": "object",
+              "x": 46,
+              "y": 63
+            },
+            {
+              "en": "beige trainer",
+              "ar": "حذاء رياضي بيج",
+              "kind": "object",
+              "x": 71,
+              "y": 68
+            },
+            {
+              "en": "ask how much the shoes cost",
+              "ar": "يسأل كم سعر الحذاء",
+              "kind": "phrase",
+              "x": 44,
+              "y": 68
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Ask about the pair on sale",
+          "ar": "اسأل عن الحذاء المعروض بتخفيض",
+          "purposeEn": "Ask about the pair on sale.",
+          "purposeAr": "اسأل عن الحذاء المعروض بتخفيض.",
+          "image": {
+            "id": "conv-life-l3-032-2",
+            "path": "assets/scenes/conversations/life-l3-032-2.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Ask about the pair on sale",
+            "ar": "اسأل عن الحذاء المعروض بتخفيض",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                747,
+                790,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "sale sign",
+              "ar": "لافتة تخفيض",
+              "kind": "object",
+              "x": 52,
+              "y": 57
+            },
+            {
+              "en": "pair of shoes",
+              "ar": "زوج أحذية",
+              "kind": "object",
+              "x": 75,
+              "y": 82
+            },
+            {
+              "en": "look at the pair on sale",
+              "ar": "ينظر إلى الحذاء المعروض بتخفيض",
+              "kind": "phrase",
+              "x": 55,
+              "y": 63
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Check whether your size is available",
+          "ar": "تحقّق من توفّر مقاسك",
+          "purposeEn": "Check whether your size is available.",
+          "purposeAr": "تحقّق من توفّر مقاسك.",
+          "image": {
+            "id": "conv-life-l3-032-3",
+            "path": "assets/scenes/conversations/life-l3-032-3.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Check whether your size is available",
+            "ar": "تحقّق من توفّر مقاسك",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                747,
+                1186,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "trainer",
+              "ar": "حذاء رياضي",
+              "kind": "object",
+              "x": 36,
+              "y": 77
+            },
+            {
+              "en": "sock",
+              "ar": "جورب",
+              "kind": "object",
+              "x": 54,
+              "y": 88
+            },
+            {
+              "en": "try the shoes on",
+              "ar": "يجرّب الحذاء",
+              "kind": "phrase",
+              "x": 43,
+              "y": 78
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Confirm the return period",
+          "ar": "أكّد مهلة إرجاع الحذاء",
+          "purposeEn": "Confirm the return period.",
+          "purposeAr": "أكّد مهلة إرجاع الحذاء.",
+          "image": {
+            "id": "conv-life-l3-032-4",
+            "path": "assets/scenes/conversations/life-l3-032-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Confirm the return period",
+            "ar": "أكّد مهلة إرجاع الحذاء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                747,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "shoe box",
+              "ar": "علبة أحذية",
+              "kind": "object",
+              "x": 57,
+              "y": 69
+            },
+            {
+              "en": "receipt",
+              "ar": "إيصال",
+              "kind": "object",
+              "x": 71,
+              "y": 77
+            },
+            {
+              "en": "ask about the return period",
+              "ar": "يسأل عن مهلة الإرجاع",
+              "kind": "phrase",
+              "x": 71,
+              "y": 72
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

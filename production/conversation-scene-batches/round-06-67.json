@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "5d1d18e54cfc585ea242be3879ca20933a73cde9a509b61667b9ee4d295a3e00"
+  },
+  "conversations": [
+    {
+      "id": "l3-037",
+      "goalAr": "قرار شراء درّاجة مستعملة",
+      "goalEn": "Deciding whether to buy a secondhand bike",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Ask what to check on a secondhand bike",
+          "ar": "اسأل عمّا ينبغي فحصه في دراجة مستعملة",
+          "purposeEn": "Ask what to check on a secondhand bike.",
+          "purposeAr": "اسأل عمّا ينبغي فحصه في دراجة مستعملة.",
+          "image": {
+            "id": "conv-life-l3-037-1",
+            "path": "assets/scenes/conversations/life-l3-037-1.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Ask what to check on a secondhand bike",
+            "ar": "اسأل عمّا ينبغي فحصه في دراجة مستعملة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                393,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bicycle frame",
+              "ar": "إطار الدراجة",
+              "kind": "object",
+              "x": 55,
+              "y": 71
+            },
+            {
+              "en": "rear wheel",
+              "ar": "عجلة خلفية",
+              "kind": "object",
+              "x": 25,
+              "y": 76
+            },
+            {
+              "en": "look at a secondhand bicycle",
+              "ar": "يعاين دراجة مستعملة",
+              "kind": "phrase",
+              "x": 47,
+              "y": 57
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Check whether the frame fits",
+          "ar": "تحقّق من ملاءمة حجم الإطار",
+          "purposeEn": "Check whether the frame fits.",
+          "purposeAr": "تحقّق من ملاءمة حجم الإطار.",
+          "image": {
+            "id": "conv-life-l3-037-2",
+            "path": "assets/scenes/conversations/life-l3-037-2.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Check whether the frame fits",
+            "ar": "تحقّق من ملاءمة حجم الإطار",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                3,
+                789,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bicycle frame",
+              "ar": "إطار الدراجة",
+              "kind": "object",
+              "x": 46,
+              "y": 68
+            },
+            {
+              "en": "handlebars",
+              "ar": "مقود الدراجة",
+              "kind": "object",
+              "x": 46,
+              "y": 42
+            },
+            {
+              "en": "check whether the frame fits you",
+              "ar": "يتحقّق من ملاءمة حجم الإطار له",
+              "kind": "phrase",
+              "x": 36,
+              "y": 70
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Test the brakes separately",
+          "ar": "اختبر الفرامل كلًا على حدة",
+          "purposeEn": "Test the brakes separately.",
+          "purposeAr": "اختبر الفرامل كلًا على حدة.",
+          "image": {
+            "id": "conv-life-l3-037-3",
+            "path": "assets/scenes/conversations/life-l3-037-3.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Test the brakes separately",
+            "ar": "اختبر الفرامل كلًا على حدة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                3,
+                1186,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "brake lever",
+              "ar": "ذراع الفرامل",
+              "kind": "object",
+              "x": 30,
+              "y": 76
+            },
+            {
+              "en": "handlebar grip",
+              "ar": "قبضة المقود",
+              "kind": "object",
+              "x": 67,
+              "y": 83
+            },
+            {
+              "en": "squeeze the brake gently",
+              "ar": "يضغط ذراع الفرامل برفق",
+              "kind": "phrase",
+              "x": 32,
+              "y": 73
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Ask for a short test ride",
+          "ar": "اطلب جولة قصيرة لتجربة الدراجة",
+          "purposeEn": "Ask for a short test ride.",
+          "purposeAr": "اطلب جولة قصيرة لتجربة الدراجة.",
+          "image": {
+            "id": "conv-life-l3-037-4",
+            "path": "assets/scenes/conversations/life-l3-037-4.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Ask for a short test ride",
+            "ar": "اطلب جولة قصيرة لتجربة الدراجة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                3,
+                1583,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "cycling helmet",
+              "ar": "خوذة دراجة",
+              "kind": "object",
+              "x": 40,
+              "y": 58
+            },
+            {
+              "en": "handlebars",
+              "ar": "مقود الدراجة",
+              "kind": "object",
+              "x": 66,
+              "y": 82
+            },
+            {
+              "en": "ask for a short test ride",
+              "ar": "يطلب جولة قصيرة لتجربة الدراجة",
+              "kind": "phrase",
+              "x": 48,
+              "y": 64
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-038",
+      "goalAr": "معرفة ما يشمله السعر",
+      "goalEn": "Finding out what is included in the price",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Compare two printers",
+          "ar": "قارن بين طابعتين",
+          "purposeEn": "Compare two printers.",
+          "purposeAr": "قارن بين طابعتين.",
+          "image": {
+            "id": "conv-life-l3-038-1",
+            "path": "assets/scenes/conversations/life-l3-038-1.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Compare two printers",
+            "ar": "قارن بين طابعتين",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                250,
+                393,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "white printer",
+              "ar": "طابعة بيضاء",
+              "kind": "object",
+              "x": 36,
+              "y": 73
+            },
+            {
+              "en": "black printer",
+              "ar": "طابعة سوداء",
+              "kind": "object",
+              "x": 77,
+              "y": 75
+            },
+            {
+              "en": "compare the printers",
+              "ar": "يقارن بين الطابعتين",
+              "kind": "phrase",
+              "x": 55,
+              "y": 73
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Check whether ink is included",
+          "ar": "تحقّق مما إذا كان الحبر مشمولًا",
+          "purposeEn": "Check whether ink is included.",
+          "purposeAr": "تحقّق مما إذا كان الحبر مشمولًا.",
+          "image": {
+            "id": "conv-life-l3-038-2",
+            "path": "assets/scenes/conversations/life-l3-038-2.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Check whether ink is included",
+            "ar": "تحقّق مما إذا كان الحبر مشمولًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                250,
+                789,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "cartridge bay",
+              "ar": "حجرة خراطيش الحبر",
+              "kind": "object",
+              "x": 79,
+              "y": 73
+            },
+            {
+              "en": "power cord",
+              "ar": "سلك كهرباء",
+              "kind": "object",
+              "x": 36,
+              "y": 88
+            },
+            {
+              "en": "check what comes in the box",
+              "ar": "يتحقّق مما يأتي في العلبة",
+              "kind": "phrase",
+              "x": 61,
+              "y": 76
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Identify the replacement cartridge",
+          "ar": "حدّد خرطوشة الحبر البديلة",
+          "purposeEn": "Identify the replacement cartridge.",
+          "purposeAr": "حدّد خرطوشة الحبر البديلة.",
+          "image": {
+            "id": "conv-life-l3-038-3",
+            "path": "assets/scenes/conversations/life-l3-038-3.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Identify the replacement cartridge",
+            "ar": "حدّد خرطوشة الحبر البديلة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                250,
+                1186,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ink cartridge",
+              "ar": "خرطوشة حبر",
+              "kind": "object",
+              "x": 54,
+              "y": 60
+            },
+            {
+              "en": "colour indicator",
+              "ar": "مؤشر لون",
+              "kind": "object",
+              "x": 56,
+              "y": 52
+            },
+            {
+              "en": "find the right ink cartridge",
+              "ar": "يعثر على خرطوشة الحبر المناسبة",
+              "kind": "phrase",
+              "x": 52,
+              "y": 62
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Find out what the shop has in stock",
+          "ar": "اعرف ما يتوفّر لدى المتجر",
+          "purposeEn": "Find out what the shop has in stock.",
+          "purposeAr": "اعرف ما يتوفّر لدى المتجر.",
+          "image": {
+            "id": "conv-life-l3-038-4",
+            "path": "assets/scenes/conversations/life-l3-038-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Find out what the shop has in stock",
+            "ar": "اعرف ما يتوفّر لدى المتجر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                250,
+                1583,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "boxed cartridge",
+              "ar": "خرطوشة في علبتها",
+              "kind": "object",
+              "x": 73,
+              "y": 40
+            },
+            {
+              "en": "stock shelf",
+              "ar": "رفّ البضاعة",
+              "kind": "object",
+              "x": 80,
+              "y": 75
+            },
+            {
+              "en": "check what the shop keeps in stock",
+              "ar": "يتحقّق مما يوفّره المتجر",
+              "kind": "phrase",
+              "x": 70,
+              "y": 48
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-039",
+      "goalAr": "استلام طلب لم يجهز بعد",
+      "goalEn": "Picking up an order that is not ready",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Ask about collecting the photo prints",
+          "ar": "اسأل عن استلام الصور المطبوعة",
+          "purposeEn": "Ask about collecting the photo prints.",
+          "purposeAr": "اسأل عن استلام الصور المطبوعة.",
+          "image": {
+            "id": "conv-life-l3-039-1",
+            "path": "assets/scenes/conversations/life-l3-039-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Ask about collecting the photo prints",
+            "ar": "اسأل عن استلام الصور المطبوعة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                499,
+                393,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "collection slip",
+              "ar": "قسيمة استلام",
+              "kind": "object",
+              "x": 50,
+              "y": 58
+            },
+            {
+              "en": "shop counter",
+              "ar": "منضدة المحل",
+              "kind": "object",
+              "x": 56,
+              "y": 75
+            },
+            {
+              "en": "collect my photo prints",
+              "ar": "يستلم صوره المطبوعة",
+              "kind": "phrase",
+              "x": 49,
+              "y": 62
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Check how long printing will take",
+          "ar": "تحقّق من مدة الطباعة",
+          "purposeEn": "Check how long printing will take.",
+          "purposeAr": "تحقّق من مدة الطباعة.",
+          "image": {
+            "id": "conv-life-l3-039-2",
+            "path": "assets/scenes/conversations/life-l3-039-2.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Check how long printing will take",
+            "ar": "تحقّق من مدة الطباعة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                499,
+                789,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "photo printer",
+              "ar": "طابعة صور",
+              "kind": "object",
+              "x": 57,
+              "y": 51
+            },
+            {
+              "en": "landscape print",
+              "ar": "صورة طبيعة مطبوعة",
+              "kind": "object",
+              "x": 53,
+              "y": 74
+            },
+            {
+              "en": "finish printing the photos",
+              "ar": "ينتهي من طباعة الصور",
+              "kind": "phrase",
+              "x": 51,
+              "y": 73
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Decide where to wait",
+          "ar": "حدّد أين تنتظر",
+          "purposeEn": "Decide where to wait.",
+          "purposeAr": "حدّد أين تنتظر.",
+          "image": {
+            "id": "conv-life-l3-039-3",
+            "path": "assets/scenes/conversations/life-l3-039-3.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Decide where to wait",
+            "ar": "حدّد أين تنتظر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                499,
+                1186,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bench",
+              "ar": "مقعد طويل",
+              "kind": "object",
+              "x": 16,
+              "y": 71
+            },
+            {
+              "en": "shop doorway",
+              "ar": "مدخل المحل",
+              "kind": "object",
+              "x": 58,
+              "y": 44
+            },
+            {
+              "en": "wait on the bench by the door",
+              "ar": "ينتظر على المقعد قرب الباب",
+              "kind": "phrase",
+              "x": 32,
+              "y": 66
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Collect the photos in one envelope",
+          "ar": "استلم الصور في ظرف واحد",
+          "purposeEn": "Collect the photos in one envelope.",
+          "purposeAr": "استلم الصور في ظرف واحد.",
+          "image": {
+            "id": "conv-life-l3-039-4",
+            "path": "assets/scenes/conversations/life-l3-039-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Collect the photos in one envelope",
+            "ar": "استلم الصور في ظرف واحد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                499,
+                1583,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "photo prints",
+              "ar": "صور مطبوعة",
+              "kind": "object",
+              "x": 59,
+              "y": 67
+            },
+            {
+              "en": "envelope",
+              "ar": "ظرف",
+              "kind": "object",
+              "x": 69,
+              "y": 82
+            },
+            {
+              "en": "put everything in one envelope",
+              "ar": "يضع كل شيء في ظرف واحد",
+              "kind": "phrase",
+              "x": 62,
+              "y": 76
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-040",
+      "goalAr": "تحديد موعد مغادرة السوق",
+      "goalEn": "Deciding when to leave the market",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Confirm what is left to buy",
+          "ar": "أكّد ما تبقّى شراؤه",
+          "purposeEn": "Confirm what is left to buy.",
+          "purposeAr": "أكّد ما تبقّى شراؤه.",
+          "image": {
+            "id": "conv-life-l3-040-1",
+            "path": "assets/scenes/conversations/life-l3-040-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Confirm what is left to buy",
+            "ar": "أكّد ما تبقّى شراؤه",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                747,
+                393,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "shopping list",
+              "ar": "قائمة مشتريات",
+              "kind": "object",
+              "x": 67,
+              "y": 69
+            },
+            {
+              "en": "grocery bag",
+              "ar": "حقيبة بقالة",
+              "kind": "object",
+              "x": 32,
+              "y": 84
+            },
+            {
+              "en": "pick up the vegetables",
+              "ar": "يشتري الخضراوات",
+              "kind": "phrase",
+              "x": 64,
+              "y": 72
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Check the list one last time",
+          "ar": "راجع القائمة مرة أخيرة",
+          "purposeEn": "Check the list one last time.",
+          "purposeAr": "راجع القائمة مرة أخيرة.",
+          "image": {
+            "id": "conv-life-l3-040-2",
+            "path": "assets/scenes/conversations/life-l3-040-2.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Check the list one last time",
+            "ar": "راجع القائمة مرة أخيرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                747,
+                789,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "tomato pictogram",
+              "ar": "رمز ثمرة طماطم",
+              "kind": "object",
+              "x": 35,
+              "y": 64
+            },
+            {
+              "en": "unchecked box",
+              "ar": "خانة لم توضع عليها علامة",
+              "kind": "object",
+              "x": 61,
+              "y": 59
+            },
+            {
+              "en": "check the shopping list one last time",
+              "ar": "يراجع قائمة المشتريات مرة أخيرة",
+              "kind": "phrase",
+              "x": 63,
+              "y": 66
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Buy tomatoes at the stall",
+          "ar": "اشترِ الطماطم من البسطة",
+          "purposeEn": "Buy tomatoes at the stall.",
+          "purposeAr": "اشترِ الطماطم من البسطة.",
+          "image": {
+            "id": "conv-life-l3-040-3",
+            "path": "assets/scenes/conversations/life-l3-040-3.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Buy tomatoes at the stall",
+            "ar": "اشترِ الطماطم من البسطة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                747,
+                1186,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "pile of tomatoes",
+              "ar": "كومة طماطم",
+              "kind": "object",
+              "x": 57,
+              "y": 82
+            },
+            {
+              "en": "weighing scale",
+              "ar": "ميزان",
+              "kind": "object",
+              "x": 83,
+              "y": 78
+            },
+            {
+              "en": "buy tomatoes at the stall",
+              "ar": "يشتري الطماطم من البسطة",
+              "kind": "phrase",
+              "x": 72,
+              "y": 60
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Take the shopping to the car",
+          "ar": "خذ المشتريات إلى السيارة",
+          "purposeEn": "Take the shopping to the car.",
+          "purposeAr": "خذ المشتريات إلى السيارة.",
+          "image": {
+            "id": "conv-life-l3-040-4",
+            "path": "assets/scenes/conversations/life-l3-040-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Take the shopping to the car",
+            "ar": "خذ المشتريات إلى السيارة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                747,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "grocery bags",
+              "ar": "أكياس مشتريات",
+              "kind": "object",
+              "x": 49,
+              "y": 79
+            },
+            {
+              "en": "parked car",
+              "ar": "سيارة متوقّفة",
+              "kind": "object",
+              "x": 80,
+              "y": 66
+            },
+            {
+              "en": "take the bags to the car",
+              "ar": "يأخذ الأكياس إلى السيارة",
+              "kind": "phrase",
+              "x": 47,
+              "y": 73
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
