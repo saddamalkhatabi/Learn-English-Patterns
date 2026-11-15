@@ -1,0 +1,868 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "ab69f1d77635b39245bf4e2d7810a7826e6fecf54e4905aee69ce2653ebd23fa"
+  },
+  "conversations": [
+    {
+      "id": "l3-057",
+      "goalAr": "متابعة ردّ تأخر وصوله",
+      "goalEn": "Checking a delayed reply",
+      "stages": [
+        {
+          "from": 1,
+          "to": 2,
+          "en": "Explain why the call ended",
+          "ar": "اشرح لماذا انقطعت المكالمة",
+          "purposeEn": "Respond to someone who was expecting a call.",
+          "purposeAr": "ردّ على شخص كان ينتظر اتصالًا.",
+          "image": {
+            "id": "conv-life-l3-057-1",
+            "path": "assets/scenes/conversations/life-l3-057-1.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Explain why the call ended",
+            "ar": "اشرح لماذا انقطعت المكالمة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                393,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "end call icon",
+              "ar": "أيقونة إنهاء المكالمة",
+              "kind": "object",
+              "x": 63,
+              "y": 74
+            },
+            {
+              "en": "mobile phone",
+              "ar": "هاتف محمول",
+              "kind": "object",
+              "x": 37,
+              "y": 75
+            },
+            {
+              "en": "disappointed",
+              "ar": "خائب الأمل",
+              "kind": "description",
+              "x": 33,
+              "y": 30
+            },
+            {
+              "en": "the call cut out",
+              "ar": "انقطعت المكالمة",
+              "kind": "phrase",
+              "x": 64,
+              "y": 58
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "en": "Remember the message you meant to send",
+          "ar": "تذكّر الرسالة التي كنت تنوي إرسالها",
+          "purposeEn": "Acknowledge that you forgot to send a message.",
+          "purposeAr": "أقرّ بأنك نسيت إرسال الرسالة.",
+          "image": {
+            "id": "conv-life-l3-057-2",
+            "path": "assets/scenes/conversations/life-l3-057-2.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Remember the message you meant to send",
+            "ar": "تذكّر الرسالة التي كنت تنوي إرسالها",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                3,
+                789,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "smartphone",
+              "ar": "هاتف ذكي",
+              "kind": "object",
+              "x": 46,
+              "y": 74
+            },
+            {
+              "en": "open notebook",
+              "ar": "دفتر مفتوح",
+              "kind": "object",
+              "x": 56,
+              "y": 92
+            },
+            {
+              "en": "touch your temple",
+              "ar": "يلمس صدغه",
+              "kind": "action",
+              "x": 61,
+              "y": 26
+            },
+            {
+              "en": "I forgot to send the message",
+              "ar": "نسيت إرسال الرسالة",
+              "kind": "phrase",
+              "x": 47,
+              "y": 75
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 7,
+          "en": "Send the updated time",
+          "ar": "أرسل الموعد المحدّث",
+          "purposeEn": "Use your phone to send the new time now.",
+          "purposeAr": "استخدم الهاتف لإرسال الموعد الجديد الآن.",
+          "image": {
+            "id": "conv-life-l3-057-3",
+            "path": "assets/scenes/conversations/life-l3-057-3.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Send the updated time",
+            "ar": "أرسل الموعد المحدّث",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                3,
+                1186,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "table clock",
+              "ar": "ساعة طاولة",
+              "kind": "object",
+              "x": 30,
+              "y": 84
+            },
+            {
+              "en": "open planner",
+              "ar": "مفكّرة مواعيد مفتوحة",
+              "kind": "object",
+              "x": 66,
+              "y": 88
+            },
+            {
+              "en": "send the updated time",
+              "ar": "يرسل الموعد المحدّث",
+              "kind": "phrase",
+              "x": 75,
+              "y": 74
+            }
+          ]
+        },
+        {
+          "from": 8,
+          "to": 8,
+          "en": "Confirm that the message went through",
+          "ar": "أكّد وصول الرسالة",
+          "purposeEn": "Promise to let the other person know when you get confirmation.",
+          "purposeAr": "عِد الطرف الآخر بإخباره عند وصول التأكيد.",
+          "image": {
+            "id": "conv-life-l3-057-4",
+            "path": "assets/scenes/conversations/life-l3-057-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Confirm that the message went through",
+            "ar": "أكّد وصول الرسالة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                3,
+                1583,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "confirmation check mark",
+              "ar": "علامة تأكيد",
+              "kind": "object",
+              "x": 53,
+              "y": 88
+            },
+            {
+              "en": "relieved",
+              "ar": "مرتاح",
+              "kind": "description",
+              "x": 80,
+              "y": 43
+            },
+            {
+              "en": "get confirmation",
+              "ar": "يتلقّى تأكيدًا",
+              "kind": "phrase",
+              "x": 52,
+              "y": 88
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-058",
+      "goalAr": "التحقق من إمكانية توزيع مهمة",
+      "goalEn": "Checking whether a task can be shared",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Offer to share the work",
+          "ar": "اعرض تقاسم العمل",
+          "purposeEn": "Find out which part of the job is taking the most time.",
+          "purposeAr": "استفسر عن الجزء الذي يستغرق أطول وقت.",
+          "image": {
+            "id": "conv-life-l3-058-1",
+            "path": "assets/scenes/conversations/life-l3-058-1.webp",
+            "width": 390,
+            "height": 240,
+            "en": "Offer to share the work",
+            "ar": "اعرض تقاسم العمل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                252,
+                393,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "pile of reports",
+              "ar": "كومة تقارير",
+              "kind": "object",
+              "x": 40,
+              "y": 76
+            },
+            {
+              "en": "page tabs",
+              "ar": "ألسنة تحديد الصفحات",
+              "kind": "object",
+              "x": 49,
+              "y": 75
+            },
+            {
+              "en": "share the workload",
+              "ar": "يتقاسم عبء العمل",
+              "kind": "phrase",
+              "x": 80,
+              "y": 62
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Check the last two pages",
+          "ar": "راجع آخر صفحتين",
+          "purposeEn": "Ask a colleague to go over the totals on the last two pages.",
+          "purposeAr": "اطلب من زميل مراجعة المجاميع في آخر صفحتين.",
+          "image": {
+            "id": "conv-life-l3-058-2",
+            "path": "assets/scenes/conversations/life-l3-058-2.webp",
+            "width": 389,
+            "height": 240,
+            "en": "Check the last two pages",
+            "ar": "راجع آخر صفحتين",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                252,
+                789,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "calculator",
+              "ar": "آلة حاسبة",
+              "kind": "object",
+              "x": 15,
+              "y": 89
+            },
+            {
+              "en": "printed table",
+              "ar": "جدول مطبوع",
+              "kind": "object",
+              "x": 55,
+              "y": 89
+            },
+            {
+              "en": "go over the last two pages",
+              "ar": "يراجع آخر صفحتين",
+              "kind": "phrase",
+              "x": 55,
+              "y": 86
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Compare the source figures",
+          "ar": "قارن الأرقام بالأرقام الأصلية",
+          "purposeEn": "Use the source figures to check the printed data.",
+          "purposeAr": "استخدم الأرقام الأصلية للتحقق من البيانات المطبوعة.",
+          "image": {
+            "id": "conv-life-l3-058-3",
+            "path": "assets/scenes/conversations/life-l3-058-3.webp",
+            "width": 391,
+            "height": 240,
+            "en": "Compare the source figures",
+            "ar": "قارن الأرقام بالأرقام الأصلية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                252,
+                1186,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bar chart",
+              "ar": "مخطّط أعمدة",
+              "kind": "object",
+              "x": 42,
+              "y": 55
+            },
+            {
+              "en": "printed figures",
+              "ar": "أرقام مطبوعة",
+              "kind": "object",
+              "x": 81,
+              "y": 90
+            },
+            {
+              "en": "compare the figures side by side",
+              "ar": "يقارن الأرقام جنبًا إلى جنب",
+              "kind": "phrase",
+              "x": 56,
+              "y": 72
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Share your notes as well",
+          "ar": "شارك ملاحظاتك أيضًا",
+          "purposeEn": "Provide notes to save time for both people.",
+          "purposeAr": "شارك الملاحظات لتوفير الوقت لكما.",
+          "image": {
+            "id": "conv-life-l3-058-4",
+            "path": "assets/scenes/conversations/life-l3-058-4.webp",
+            "width": 390,
+            "height": 240,
+            "en": "Share your notes as well",
+            "ar": "شارك ملاحظاتك أيضًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                252,
+                1583,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "spiral notebook",
+              "ar": "دفتر حلزوني",
+              "kind": "object",
+              "x": 57,
+              "y": 62
+            },
+            {
+              "en": "calculator",
+              "ar": "آلة حاسبة",
+              "kind": "object",
+              "x": 31,
+              "y": 92
+            },
+            {
+              "en": "share your notes",
+              "ar": "يشارك ملاحظاته",
+              "kind": "phrase",
+              "x": 52,
+              "y": 66
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-059",
+      "goalAr": "التخطيط لرحلة عمل دون استعجال",
+      "goalEn": "Planning a work trip without rushing",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Check the schedule for the work trip",
+          "ar": "راجع الجدول استعدادًا لرحلة العمل",
+          "purposeEn": "Plan around the time the clients will arrive.",
+          "purposeAr": "خطّط الرحلة حسب موعد وصول العملاء.",
+          "image": {
+            "id": "conv-life-l3-059-1",
+            "path": "assets/scenes/conversations/life-l3-059-1.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Check the schedule for the work trip",
+            "ar": "راجع الجدول استعدادًا لرحلة العمل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                498,
+                393,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "wheeled suitcase",
+              "ar": "حقيبة بعجلات",
+              "kind": "object",
+              "x": 12,
+              "y": 87
+            },
+            {
+              "en": "train timetable",
+              "ar": "جدول القطارات",
+              "kind": "object",
+              "x": 70,
+              "y": 74
+            },
+            {
+              "en": "plan a business trip",
+              "ar": "يخطّط لرحلة عمل",
+              "kind": "phrase",
+              "x": 44,
+              "y": 56
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Allow time to check the equipment",
+          "ar": "اترك وقتًا لفحص المعدات",
+          "purposeEn": "Explain why arriving earlier gives you more time.",
+          "purposeAr": "اشرح لماذا يمنحك الوصول المبكر وقتًا أطول.",
+          "image": {
+            "id": "conv-life-l3-059-2",
+            "path": "assets/scenes/conversations/life-l3-059-2.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Allow time to check the equipment",
+            "ar": "اترك وقتًا لفحص المعدات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                498,
+                789,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "analog clock",
+              "ar": "ساعة بعقارب",
+              "kind": "object",
+              "x": 80,
+              "y": 48
+            },
+            {
+              "en": "equipment case",
+              "ar": "حقيبة معدات",
+              "kind": "object",
+              "x": 18,
+              "y": 83
+            },
+            {
+              "en": "allow time to check the equipment",
+              "ar": "يترك وقتًا لفحص المعدات",
+              "kind": "phrase",
+              "x": 52,
+              "y": 84
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Compare the early and evening trains",
+          "ar": "قارن القطار المبكر بالقطار المسائي",
+          "purposeEn": "Compare departure options before booking.",
+          "purposeAr": "قارن مواعيد المغادرة قبل الحجز.",
+          "image": {
+            "id": "conv-life-l3-059-3",
+            "path": "assets/scenes/conversations/life-l3-059-3.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Compare the early and evening trains",
+            "ar": "قارن القطار المبكر بالقطار المسائي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                498,
+                1186,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "sun symbol",
+              "ar": "رمز الشمس",
+              "kind": "object",
+              "x": 57,
+              "y": 49
+            },
+            {
+              "en": "moon symbol",
+              "ar": "رمز القمر",
+              "kind": "object",
+              "x": 60,
+              "y": 75
+            },
+            {
+              "en": "compare train times",
+              "ar": "يقارن مواعيد القطارات",
+              "kind": "phrase",
+              "x": 46,
+              "y": 65
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Book the train that leaves enough time",
+          "ar": "احجز القطار الذي يترك وقتًا كافيًا",
+          "purposeEn": "Confirm a booking that gives you time to set up.",
+          "purposeAr": "أكّد حجزًا يترك وقتًا للتجهيز.",
+          "image": {
+            "id": "conv-life-l3-059-4",
+            "path": "assets/scenes/conversations/life-l3-059-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Book the train that leaves enough time",
+            "ar": "احجز القطار الذي يترك وقتًا كافيًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                498,
+                1583,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "rail ticket",
+              "ar": "تذكرة قطار",
+              "kind": "object",
+              "x": 47,
+              "y": 86
+            },
+            {
+              "en": "booking confirmation",
+              "ar": "تأكيد الحجز",
+              "kind": "object",
+              "x": 47,
+              "y": 49
+            },
+            {
+              "en": "book a train ticket",
+              "ar": "يحجز تذكرة قطار",
+              "kind": "phrase",
+              "x": 45,
+              "y": 59
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-060",
+      "goalAr": "تحديد ما ينبغي مناقشته في اجتماع",
+      "goalEn": "Deciding what to discuss in a meeting",
+      "stages": [
+        {
+          "from": 1,
+          "to": 2,
+          "en": "Bring up the deadline at the meeting",
+          "ar": "اطرح الموعد النهائي في الاجتماع",
+          "purposeEn": "State the reason you came to the meeting.",
+          "purposeAr": "اذكر سبب حضورك الاجتماع.",
+          "image": {
+            "id": "conv-life-l3-060-1",
+            "path": "assets/scenes/conversations/life-l3-060-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Bring up the deadline at the meeting",
+            "ar": "اطرح الموعد النهائي في الاجتماع",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                747,
+                393,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "desk calendar",
+              "ar": "تقويم مكتبي",
+              "kind": "object",
+              "x": 36,
+              "y": 80
+            },
+            {
+              "en": "meeting agenda",
+              "ar": "جدول أعمال الاجتماع",
+              "kind": "object",
+              "x": 62,
+              "y": 85
+            },
+            {
+              "en": "bring up the deadline",
+              "ar": "يطرح موضوع الموعد النهائي",
+              "kind": "phrase",
+              "x": 68,
+              "y": 65
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "en": "Point out the missing final check",
+          "ar": "أشِر إلى المراجعة النهائية المعلّقة",
+          "purposeEn": "Clarify which step still needs someone to take responsibility.",
+          "purposeAr": "وضّح الخطوة التي لا يزال أحد يحتاج إلى تولّيها.",
+          "image": {
+            "id": "conv-life-l3-060-2",
+            "path": "assets/scenes/conversations/life-l3-060-2.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Point out the missing final check",
+            "ar": "أشِر إلى المراجعة النهائية المعلّقة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                747,
+                789,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "unchecked box",
+              "ar": "خانة اختيار فارغة",
+              "kind": "object",
+              "x": 46,
+              "y": 91
+            },
+            {
+              "en": "checklist",
+              "ar": "قائمة تحقّق",
+              "kind": "object",
+              "x": 57,
+              "y": 81
+            },
+            {
+              "en": "take responsibility for the final check",
+              "ar": "يتولّى مسؤولية المراجعة النهائية",
+              "kind": "phrase",
+              "x": 52,
+              "y": 82
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "en": "Agree who should sign off",
+          "ar": "اتفقا على من سيعتمد العمل",
+          "purposeEn": "Choose who will give the final approval.",
+          "purposeAr": "اختارا من سيعطي الاعتماد النهائي.",
+          "image": {
+            "id": "conv-life-l3-060-3",
+            "path": "assets/scenes/conversations/life-l3-060-3.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Agree who should sign off",
+            "ar": "اتفقا على من سيعتمد العمل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                747,
+                1186,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "signature line",
+              "ar": "سطر التوقيع",
+              "kind": "object",
+              "x": 57,
+              "y": 91
+            },
+            {
+              "en": "table clock",
+              "ar": "ساعة طاولة",
+              "kind": "object",
+              "x": 85,
+              "y": 84
+            },
+            {
+              "en": "sign off on the final version",
+              "ar": "يعتمد النسخة النهائية",
+              "kind": "phrase",
+              "x": 57,
+              "y": 89
+            }
+          ]
+        },
+        {
+          "from": 7,
+          "to": 7,
+          "en": "Put the item at the top of the agenda",
+          "ar": "ضع البند في أول جدول الأعمال",
+          "purposeEn": "Give the final check priority in the meeting.",
+          "purposeAr": "أعطِ المراجعة النهائية الأولوية في الاجتماع.",
+          "image": {
+            "id": "conv-life-l3-060-4",
+            "path": "assets/scenes/conversations/life-l3-060-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Put the item at the top of the agenda",
+            "ar": "ضع البند في أول جدول الأعمال",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                747,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "top agenda item",
+              "ar": "أول بند في جدول الأعمال",
+              "kind": "object",
+              "x": 52,
+              "y": 79
+            },
+            {
+              "en": "pen",
+              "ar": "قلم",
+              "kind": "object",
+              "x": 37,
+              "y": 67
+            },
+            {
+              "en": "put it at the top of the agenda",
+              "ar": "يضعه في أول جدول الأعمال",
+              "kind": "phrase",
+              "x": 53,
+              "y": 80
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,861 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "3d3af6da75550fc464c52458d02f2ae3bdd5b43b6aa4def2b77cbd857cd1dc91"
+  },
+  "conversations": [
+    {
+      "id": "l3-049",
+      "goalAr": "السؤال عن برنامج مدرسي",
+      "goalEn": "Asking about a school program",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Ask what it is like to study here",
+          "ar": "اسأل عن الدراسة في هذه المدرسة",
+          "purposeEn": "Introduce yourself and ask a student about the school.",
+          "purposeAr": "عرّف بنفسك واسأل طالبًا عن المدرسة.",
+          "image": {
+            "id": "conv-life-l3-049-1",
+            "path": "assets/scenes/conversations/life-l3-049-1.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Ask what it is like to study here",
+            "ar": "اسأل عن الدراسة في هذه المدرسة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                394,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "backpack",
+              "ar": "حقيبة ظهر",
+              "kind": "object",
+              "x": 32,
+              "y": 51
+            },
+            {
+              "en": "folder",
+              "ar": "ملف أوراق",
+              "kind": "object",
+              "x": 81,
+              "y": 73
+            },
+            {
+              "en": "school corridor",
+              "ar": "ممرّ المدرسة",
+              "kind": "object",
+              "x": 53,
+              "y": 30
+            },
+            {
+              "en": "talk to a student",
+              "ar": "يتحدّث مع طالب",
+              "kind": "phrase",
+              "x": 48,
+              "y": 71
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Visit the language department",
+          "ar": "زُر قسم اللغات",
+          "purposeEn": "Offer to show the visitor where the language department is.",
+          "purposeAr": "اعرض أن تدلّ الزائر على مكان قسم اللغات.",
+          "image": {
+            "id": "conv-life-l3-049-2",
+            "path": "assets/scenes/conversations/life-l3-049-2.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Visit the language department",
+            "ar": "زُر قسم اللغات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                3,
+                789,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "door sign",
+              "ar": "لافتة الباب",
+              "kind": "object",
+              "x": 83,
+              "y": 27
+            },
+            {
+              "en": "classroom door",
+              "ar": "باب صف",
+              "kind": "object",
+              "x": 49,
+              "y": 58
+            },
+            {
+              "en": "show someone the language department",
+              "ar": "يدلّ شخصًا على قسم اللغات",
+              "kind": "phrase",
+              "x": 57,
+              "y": 55
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Ask about evening classes",
+          "ar": "استفسر عن الدروس المسائية",
+          "purposeEn": "Use the schedule to ask about available class times.",
+          "purposeAr": "استعن بالجدول للاستفسار عن أوقات الدروس المتاحة.",
+          "image": {
+            "id": "conv-life-l3-049-3",
+            "path": "assets/scenes/conversations/life-l3-049-3.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Ask about evening classes",
+            "ar": "استفسر عن الدروس المسائية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                3,
+                1186,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "class timetable",
+              "ar": "جدول الحصص",
+              "kind": "object",
+              "x": 51,
+              "y": 69
+            },
+            {
+              "en": "crescent moon symbol",
+              "ar": "رمز الهلال",
+              "kind": "object",
+              "x": 55,
+              "y": 58
+            },
+            {
+              "en": "ask about evening classes",
+              "ar": "يستفسر عن الدروس المسائية",
+              "kind": "phrase",
+              "x": 48,
+              "y": 62
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Get an explanation of the timetable",
+          "ar": "اطلب شرح جدول الحصص",
+          "purposeEn": "Introduce the visitor to someone who can explain the schedule.",
+          "purposeAr": "عرّف الزائر بمن يستطيع شرح الجدول له.",
+          "image": {
+            "id": "conv-life-l3-049-4",
+            "path": "assets/scenes/conversations/life-l3-049-4.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Get an explanation of the timetable",
+            "ar": "اطلب شرح جدول الحصص",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                3,
+                1583,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "wall timetable",
+              "ar": "جدول معلّق على الحائط",
+              "kind": "object",
+              "x": 75,
+              "y": 29
+            },
+            {
+              "en": "office assistant",
+              "ar": "مساعدة إدارية",
+              "kind": "object",
+              "x": 87,
+              "y": 35
+            },
+            {
+              "en": "explain the timetable",
+              "ar": "يشرح الجدول",
+              "kind": "phrase",
+              "x": 70,
+              "y": 39
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-050",
+      "goalAr": "طلب ملاحظات بعد الاختبار",
+      "goalEn": "Asking for feedback after a test",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Reassure the student about her test",
+          "ar": "طمئن الطالبة بشأن اختبارها",
+          "purposeEn": "Discuss what worries the student about her results.",
+          "purposeAr": "ناقش ما يقلق الطالبة بشأن نتيجتها.",
+          "image": {
+            "id": "conv-life-l3-050-1",
+            "path": "assets/scenes/conversations/life-l3-050-1.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Reassure the student about her test",
+            "ar": "طمئن الطالبة بشأن اختبارها",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                251,
+                394,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "graded paper",
+              "ar": "ورقة مصحّحة",
+              "kind": "object",
+              "x": 59,
+              "y": 88
+            },
+            {
+              "en": "worried",
+              "ar": "قلقة",
+              "kind": "description",
+              "x": 80,
+              "y": 33
+            },
+            {
+              "en": "reassure a worried student",
+              "ar": "يطمئن طالبة قلقة",
+              "kind": "phrase",
+              "x": 68,
+              "y": 44
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Show an answer you were unsure about",
+          "ar": "اعرض إجابة لم تكن متأكدًا منها",
+          "purposeEn": "Look at one answer to identify a writing mistake.",
+          "purposeAr": "راجع إجابة واحدة لتحديد خطأ في الكتابة.",
+          "image": {
+            "id": "conv-life-l3-050-2",
+            "path": "assets/scenes/conversations/life-l3-050-2.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Show an answer you were unsure about",
+            "ar": "اعرض إجابة لم تكن متأكدًا منها",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                251,
+                789,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "circled answer",
+              "ar": "إجابة محاطة بدائرة",
+              "kind": "object",
+              "x": 75,
+              "y": 66
+            },
+            {
+              "en": "red pen",
+              "ar": "قلم أحمر",
+              "kind": "object",
+              "x": 67,
+              "y": 68
+            },
+            {
+              "en": "show an answer you were unsure about",
+              "ar": "يعرض إجابة لم يكن متأكدًا منها",
+              "kind": "phrase",
+              "x": 61,
+              "y": 70
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Find a detail to support the answer",
+          "ar": "اعثر على تفصيل يدعم الإجابة",
+          "purposeEn": "Point to an example in the text that could support the answer.",
+          "purposeAr": "أشِر إلى مثال في النص يدعم الإجابة.",
+          "image": {
+            "id": "conv-life-l3-050-3",
+            "path": "assets/scenes/conversations/life-l3-050-3.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Find a detail to support the answer",
+            "ar": "اعثر على تفصيل يدعم الإجابة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                251,
+                1186,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "open textbook",
+              "ar": "كتاب دراسي مفتوح",
+              "kind": "object",
+              "x": 55,
+              "y": 90
+            },
+            {
+              "en": "answer sheet",
+              "ar": "ورقة إجابة",
+              "kind": "object",
+              "x": 86,
+              "y": 88
+            },
+            {
+              "en": "support your point with a detail",
+              "ar": "ادعم فكرتك بتفصيل",
+              "kind": "phrase",
+              "x": 45,
+              "y": 84
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Go back to class",
+          "ar": "عُد إلى الصف",
+          "purposeEn": "Finish the review and return to class.",
+          "purposeAr": "أنه المراجعة وعُد إلى الصف.",
+          "image": {
+            "id": "conv-life-l3-050-4",
+            "path": "assets/scenes/conversations/life-l3-050-4.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Go back to class",
+            "ar": "عُد إلى الصف",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                251,
+                1583,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "workbook",
+              "ar": "كتاب تمارين",
+              "kind": "object",
+              "x": 87,
+              "y": 57
+            },
+            {
+              "en": "doorway",
+              "ar": "مدخل الصف",
+              "kind": "object",
+              "x": 62,
+              "y": 58
+            },
+            {
+              "en": "go back to class",
+              "ar": "يعود إلى الصف",
+              "kind": "phrase",
+              "x": 81,
+              "y": 58
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-051",
+      "goalAr": "تحديد موعد تسليم واقعي",
+      "goalEn": "Setting a realistic delivery date",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Estimate the time needed for the draft",
+          "ar": "قدّر الوقت اللازم للمسوّدة",
+          "purposeEn": "Ask how long the draft and checks will take.",
+          "purposeAr": "اسأل كم سيستغرق إعداد المسوّدة ومراجعتها.",
+          "image": {
+            "id": "conv-life-l3-051-1",
+            "path": "assets/scenes/conversations/life-l3-051-1.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Estimate the time needed for the draft",
+            "ar": "قدّر الوقت اللازم للمسوّدة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                498,
+                394,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "desk calendar",
+              "ar": "تقويم مكتبي",
+              "kind": "object",
+              "x": 42,
+              "y": 67
+            },
+            {
+              "en": "draft report",
+              "ar": "مسوّدة تقرير",
+              "kind": "object",
+              "x": 75,
+              "y": 73
+            },
+            {
+              "en": "estimate how long it will take",
+              "ar": "يقدّر الوقت الذي سيستغرقه العمل",
+              "kind": "phrase",
+              "x": 40,
+              "y": 53
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Identify the figures to check",
+          "ar": "حدّد الأرقام التي تحتاج إلى مراجعة",
+          "purposeEn": "Clarify which part of the report still needs checking.",
+          "purposeAr": "وضّح أي جزء من التقرير لا يزال بحاجة إلى مراجعة.",
+          "image": {
+            "id": "conv-life-l3-051-2",
+            "path": "assets/scenes/conversations/life-l3-051-2.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Identify the figures to check",
+            "ar": "حدّد الأرقام التي تحتاج إلى مراجعة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                498,
+                789,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "printed table",
+              "ar": "جدول مطبوع",
+              "kind": "object",
+              "x": 35,
+              "y": 86
+            },
+            {
+              "en": "clipboard",
+              "ar": "لوح تثبيت الأوراق",
+              "kind": "object",
+              "x": 77,
+              "y": 86
+            },
+            {
+              "en": "check the figures in the table",
+              "ar": "يراجع الأرقام في الجدول",
+              "kind": "phrase",
+              "x": 31,
+              "y": 80
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Notice that a source file is missing",
+          "ar": "انتبه إلى غياب ملف المصدر",
+          "purposeEn": "Explain why checking the figures may be delayed.",
+          "purposeAr": "اشرح سبب احتمال تأخّر مراجعة الأرقام.",
+          "image": {
+            "id": "conv-life-l3-051-3",
+            "path": "assets/scenes/conversations/life-l3-051-3.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Notice that a source file is missing",
+            "ar": "انتبه إلى غياب ملف المصدر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                498,
+                1186,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "folder icon",
+              "ar": "أيقونة مجلّد",
+              "kind": "object",
+              "x": 69,
+              "y": 58
+            },
+            {
+              "en": "concerned",
+              "ar": "قلق",
+              "kind": "description",
+              "x": 70,
+              "y": 22
+            },
+            {
+              "en": "the source file is missing",
+              "ar": "ملف المصدر غير موجود",
+              "kind": "phrase",
+              "x": 69,
+              "y": 59
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Agree on a date for the final version",
+          "ar": "اتفق على موعد النسخة النهائية",
+          "purposeEn": "Agree to send the draft first and set a date for the final version.",
+          "purposeAr": "اتفق على إرسال المسوّدة أولًا وتحديد موعد النسخة النهائية.",
+          "image": {
+            "id": "conv-life-l3-051-4",
+            "path": "assets/scenes/conversations/life-l3-051-4.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Agree on a date for the final version",
+            "ar": "اتفق على موعد النسخة النهائية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                498,
+                1583,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "laptop",
+              "ar": "حاسوب محمول",
+              "kind": "object",
+              "x": 86,
+              "y": 77
+            },
+            {
+              "en": "calendar grid",
+              "ar": "شبكة التقويم",
+              "kind": "object",
+              "x": 38,
+              "y": 77
+            },
+            {
+              "en": "set a date for the final version",
+              "ar": "يحدّد موعدًا للنسخة النهائية",
+              "kind": "phrase",
+              "x": 40,
+              "y": 80
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-052",
+      "goalAr": "شرح عجز في الميزانية",
+      "goalEn": "Explaining a budget shortfall",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Ask what caused the budget deficit",
+          "ar": "اسأل عن سبب العجز في الميزانية",
+          "purposeEn": "Identify which costs and sales affected the budget.",
+          "purposeAr": "حدّد التكاليف والمبيعات التي أثّرت في الميزانية.",
+          "image": {
+            "id": "conv-life-l3-052-1",
+            "path": "assets/scenes/conversations/life-l3-052-1.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Ask what caused the budget deficit",
+            "ar": "اسأل عن سبب العجز في الميزانية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                747,
+                394,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "budget sheet",
+              "ar": "ورقة الميزانية",
+              "kind": "object",
+              "x": 47,
+              "y": 82
+            },
+            {
+              "en": "calculator",
+              "ar": "آلة حاسبة",
+              "kind": "object",
+              "x": 12,
+              "y": 87
+            },
+            {
+              "en": "look for the cause of a deficit",
+              "ar": "يبحث عن سبب العجز",
+              "kind": "phrase",
+              "x": 46,
+              "y": 65
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Compare room rental and ticket sales",
+          "ar": "قارن تكلفة استئجار القاعة بمبيعات التذاكر",
+          "purposeEn": "Review the costs that could make a difference next time.",
+          "purposeAr": "راجع التكاليف التي يمكن تخفيضها في المرة المقبلة.",
+          "image": {
+            "id": "conv-life-l3-052-2",
+            "path": "assets/scenes/conversations/life-l3-052-2.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Compare room rental and ticket sales",
+            "ar": "قارن تكلفة استئجار القاعة بمبيعات التذاكر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                747,
+                789,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "photo of a hall",
+              "ar": "صورة قاعة",
+              "kind": "object",
+              "x": 29,
+              "y": 56
+            },
+            {
+              "en": "stack of tickets",
+              "ar": "رزمة تذاكر",
+              "kind": "object",
+              "x": 44,
+              "y": 89
+            },
+            {
+              "en": "compare rental costs and ticket sales",
+              "ar": "يقارن تكاليف الإيجار بمبيعات التذاكر",
+              "kind": "phrase",
+              "x": 47,
+              "y": 63
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Consider renting a smaller room",
+          "ar": "فكّر في استئجار قاعة أصغر",
+          "purposeEn": "Suggest a smaller venue and advance ticket sales.",
+          "purposeAr": "اقترح قاعة أصغر وبيع التذاكر مسبقًا.",
+          "image": {
+            "id": "conv-life-l3-052-3",
+            "path": "assets/scenes/conversations/life-l3-052-3.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Consider renting a smaller room",
+            "ar": "فكّر في استئجار قاعة أصغر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                747,
+                1186,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "photo of a meeting room",
+              "ar": "صورة غرفة اجتماعات",
+              "kind": "object",
+              "x": 36,
+              "y": 68
+            },
+            {
+              "en": "paper ticket",
+              "ar": "تذكرة ورقية",
+              "kind": "object",
+              "x": 76,
+              "y": 48
+            },
+            {
+              "en": "rent a smaller room",
+              "ar": "يستأجر قاعة أصغر",
+              "kind": "phrase",
+              "x": 39,
+              "y": 72
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Estimate the possible savings",
+          "ar": "قدّر الوفر المحتمل",
+          "purposeEn": "Write down estimates before making a proposal.",
+          "purposeAr": "دوّن التقديرات قبل تقديم المقترح.",
+          "image": {
+            "id": "conv-life-l3-052-4",
+            "path": "assets/scenes/conversations/life-l3-052-4.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Estimate the possible savings",
+            "ar": "قدّر الوفر المحتمل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                747,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "calculator",
+              "ar": "آلة حاسبة",
+              "kind": "object",
+              "x": 67,
+              "y": 79
+            },
+            {
+              "en": "open notebook",
+              "ar": "دفتر مفتوح",
+              "kind": "object",
+              "x": 30,
+              "y": 90
+            },
+            {
+              "en": "estimate the savings",
+              "ar": "يقدّر الوفر",
+              "kind": "phrase",
+              "x": 27,
+              "y": 79
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

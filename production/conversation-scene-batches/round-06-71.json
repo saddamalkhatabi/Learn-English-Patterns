@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "88930501b1816225db2bd4f530a8d702ed5303f13cb43afdc48849ed16de0abd"
+  },
+  "conversations": [
+    {
+      "id": "l3-053",
+      "goalAr": "شرح إجراء جديد لزميل",
+      "goalEn": "Showing a colleague the new process",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Ask how the order form works",
+          "ar": "اسأل كيف يعمل نموذج الطلب",
+          "purposeEn": "Explain the first steps for filling out the order form.",
+          "purposeAr": "اشرح أولى خطوات تعبئة نموذج الطلب.",
+          "image": {
+            "id": "conv-life-l3-053-1",
+            "path": "assets/scenes/conversations/life-l3-053-1.webp",
+            "width": 389,
+            "height": 240,
+            "en": "Ask how the order form works",
+            "ar": "اسأل كيف يعمل نموذج الطلب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                392,
+                243
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "online order form",
+              "ar": "نموذج طلب إلكتروني",
+              "kind": "object",
+              "x": 66,
+              "y": 67
+            },
+            {
+              "en": "printed invoice",
+              "ar": "فاتورة مطبوعة",
+              "kind": "object",
+              "x": 32,
+              "y": 92
+            },
+            {
+              "en": "fill out the order form",
+              "ar": "يعبّئ نموذج الطلب",
+              "kind": "phrase",
+              "x": 59,
+              "y": 64
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Walk through the first order together",
+          "ar": "اشرح خطوات الطلب الأول عمليًا",
+          "purposeEn": "Show a colleague how to begin the first order.",
+          "purposeAr": "أرِ زميلًا كيف يبدأ إدخال الطلب الأول.",
+          "image": {
+            "id": "conv-life-l3-053-2",
+            "path": "assets/scenes/conversations/life-l3-053-2.webp",
+            "width": 391,
+            "height": 240,
+            "en": "Walk through the first order together",
+            "ar": "اشرح خطوات الطلب الأول عمليًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                398,
+                3,
+                789,
+                243
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "form field",
+              "ar": "خانة في النموذج",
+              "kind": "object",
+              "x": 59,
+              "y": 74
+            },
+            {
+              "en": "printed invoice",
+              "ar": "فاتورة مطبوعة",
+              "kind": "object",
+              "x": 29,
+              "y": 92
+            },
+            {
+              "en": "walk someone through a form",
+              "ar": "يشرح لشخص كيفية تعبئة نموذج خطوة بخطوة",
+              "kind": "phrase",
+              "x": 70,
+              "y": 74
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Ask what happens if the number is wrong",
+          "ar": "اسأل عما يحدث إذا كان الرقم خاطئًا",
+          "purposeEn": "Raise a question about entering the wrong number.",
+          "purposeAr": "اطرح سؤالًا عن إدخال رقم خاطئ.",
+          "image": {
+            "id": "conv-life-l3-053-3",
+            "path": "assets/scenes/conversations/life-l3-053-3.webp",
+            "width": 390,
+            "height": 240,
+            "en": "Ask what happens if the number is wrong",
+            "ar": "اسأل عما يحدث إذا كان الرقم خاطئًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                3,
+                1185,
+                243
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "order slip",
+              "ar": "قسيمة طلب",
+              "kind": "object",
+              "x": 34,
+              "y": 75
+            },
+            {
+              "en": "highlighted field",
+              "ar": "خانة محدّدة بلون",
+              "kind": "object",
+              "x": 73,
+              "y": 76
+            },
+            {
+              "en": "enter the wrong number",
+              "ar": "يدخل رقمًا خاطئًا",
+              "kind": "phrase",
+              "x": 74,
+              "y": 78
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Notice the warning before sending",
+          "ar": "انتبه إلى التحذير قبل الإرسال",
+          "purposeEn": "Explain when the warning appears.",
+          "purposeAr": "اشرح متى يظهر التحذير.",
+          "image": {
+            "id": "conv-life-l3-053-4",
+            "path": "assets/scenes/conversations/life-l3-053-4.webp",
+            "width": 392,
+            "height": 240,
+            "en": "Notice the warning before sending",
+            "ar": "انتبه إلى التحذير قبل الإرسال",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1191,
+                3,
+                1583,
+                243
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "warning triangle",
+              "ar": "مثلث تحذير",
+              "kind": "object",
+              "x": 61,
+              "y": 73
+            },
+            {
+              "en": "laptop screen",
+              "ar": "شاشة حاسوب محمول",
+              "kind": "object",
+              "x": 59,
+              "y": 60
+            },
+            {
+              "en": "get a warning before you send it",
+              "ar": "يظهر لك تحذير قبل الإرسال",
+              "kind": "phrase",
+              "x": 62,
+              "y": 70
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-054",
+      "goalAr": "التحقق من وظيفة زر",
+      "goalEn": "Checking what a button does",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Ask what each button does",
+          "ar": "اسأل عن وظيفة كل زر",
+          "purposeEn": "Distinguish the button that saves from the one that sends.",
+          "purposeAr": "ميّز بين زر الحفظ وزر الإرسال.",
+          "image": {
+            "id": "conv-life-l3-054-1",
+            "path": "assets/scenes/conversations/life-l3-054-1.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Ask what each button does",
+            "ar": "اسأل عن وظيفة كل زر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                249,
+                392,
+                491
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "save button",
+              "ar": "زر الحفظ",
+              "kind": "object",
+              "x": 53,
+              "y": 84
+            },
+            {
+              "en": "send button",
+              "ar": "زر الإرسال",
+              "kind": "object",
+              "x": 66,
+              "y": 83
+            },
+            {
+              "en": "save the draft",
+              "ar": "يحفظ المسوّدة",
+              "kind": "phrase",
+              "x": 52,
+              "y": 84
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Discuss changes after sending",
+          "ar": "ناقش التعديل بعد الإرسال",
+          "purposeEn": "Ask whether you can change the form after you send it.",
+          "purposeAr": "اسأل إن كان بإمكانك تعديل النموذج بعد إرساله.",
+          "image": {
+            "id": "conv-life-l3-054-2",
+            "path": "assets/scenes/conversations/life-l3-054-2.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Discuss changes after sending",
+            "ar": "ناقش التعديل بعد الإرسال",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                398,
+                249,
+                789,
+                491
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "tablet",
+              "ar": "جهاز لوحي",
+              "kind": "object",
+              "x": 54,
+              "y": 94
+            },
+            {
+              "en": "send icon",
+              "ar": "أيقونة الإرسال",
+              "kind": "object",
+              "x": 66,
+              "y": 78
+            },
+            {
+              "en": "make changes after sending",
+              "ar": "يجري تعديلات بعد الإرسال",
+              "kind": "phrase",
+              "x": 65,
+              "y": 78
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Check if the order has been approved",
+          "ar": "تحقّق مما إذا كان الطلب قد اعتُمد",
+          "purposeEn": "Recognize the sign of approval before making further changes.",
+          "purposeAr": "تعرّف على علامة الاعتماد قبل إجراء تعديلات أخرى.",
+          "image": {
+            "id": "conv-life-l3-054-3",
+            "path": "assets/scenes/conversations/life-l3-054-3.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Check if the order has been approved",
+            "ar": "تحقّق مما إذا كان الطلب قد اعتُمد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                249,
+                1185,
+                491
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "green check mark",
+              "ar": "علامة صح خضراء",
+              "kind": "object",
+              "x": 57,
+              "y": 67
+            },
+            {
+              "en": "form lines",
+              "ar": "سطور النموذج",
+              "kind": "object",
+              "x": 57,
+              "y": 90
+            },
+            {
+              "en": "check whether it has been approved",
+              "ar": "يتحقّق مما إذا كان قد اعتُمد",
+              "kind": "phrase",
+              "x": 57,
+              "y": 68
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Try a sample order first",
+          "ar": "جرّب طلبًا تجريبيًا أولًا",
+          "purposeEn": "Test the form before using a real order.",
+          "purposeAr": "اختبر النموذج قبل استعماله لطلب فعلي.",
+          "image": {
+            "id": "conv-life-l3-054-4",
+            "path": "assets/scenes/conversations/life-l3-054-4.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Try a sample order first",
+            "ar": "جرّب طلبًا تجريبيًا أولًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1191,
+                249,
+                1583,
+                491
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "product photo",
+              "ar": "صورة منتج",
+              "kind": "object",
+              "x": 16,
+              "y": 82
+            },
+            {
+              "en": "open notebook",
+              "ar": "دفتر مفتوح",
+              "kind": "object",
+              "x": 43,
+              "y": 89
+            },
+            {
+              "en": "test with a sample order",
+              "ar": "يختبر باستخدام طلب تجريبي",
+              "kind": "phrase",
+              "x": 78,
+              "y": 71
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-055",
+      "goalAr": "تحمّل مسؤولية خطأ في العمل",
+      "goalEn": "Taking responsibility for a mistake",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Acknowledge that a mistake was made",
+          "ar": "أقرّ بوقوع خطأ",
+          "purposeEn": "Identify the report that was sent by mistake.",
+          "purposeAr": "حدّد التقرير الذي أُرسل بالخطأ.",
+          "image": {
+            "id": "conv-life-l3-055-1",
+            "path": "assets/scenes/conversations/life-l3-055-1.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Acknowledge that a mistake was made",
+            "ar": "أقرّ بوقوع خطأ",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                497,
+                392,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "printed report",
+              "ar": "تقرير مطبوع",
+              "kind": "object",
+              "x": 39,
+              "y": 59
+            },
+            {
+              "en": "bar chart",
+              "ar": "مخطّط أعمدة",
+              "kind": "object",
+              "x": 39,
+              "y": 73
+            },
+            {
+              "en": "send the wrong report",
+              "ar": "يرسل التقرير الخطأ",
+              "kind": "phrase",
+              "x": 39,
+              "y": 58
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Compare the dates of two versions",
+          "ar": "قارن تاريخَي النسختين",
+          "purposeEn": "Check which version is older before sending it.",
+          "purposeAr": "تحقّق من النسخة الأقدم قبل الإرسال.",
+          "image": {
+            "id": "conv-life-l3-055-2",
+            "path": "assets/scenes/conversations/life-l3-055-2.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Compare the dates of two versions",
+            "ar": "قارن تاريخَي النسختين",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                398,
+                497,
+                789,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "date icon",
+              "ar": "رمز التاريخ",
+              "kind": "object",
+              "x": 35,
+              "y": 51
+            },
+            {
+              "en": "desk calendar",
+              "ar": "تقويم مكتبي",
+              "kind": "object",
+              "x": 86,
+              "y": 86
+            },
+            {
+              "en": "compare the two versions",
+              "ar": "يقارن النسختين",
+              "kind": "phrase",
+              "x": 52,
+              "y": 64
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Attach the correct file",
+          "ar": "أرفق الملف الصحيح",
+          "purposeEn": "Replace the old attachment with the correct version.",
+          "purposeAr": "استبدل المرفق القديم بالنسخة الصحيحة.",
+          "image": {
+            "id": "conv-life-l3-055-3",
+            "path": "assets/scenes/conversations/life-l3-055-3.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Attach the correct file",
+            "ar": "أرفق الملف الصحيح",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                497,
+                1185,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "paper clip icon",
+              "ar": "أيقونة مشبك ورق",
+              "kind": "object",
+              "x": 50,
+              "y": 56
+            },
+            {
+              "en": "updated report",
+              "ar": "تقرير محدّث",
+              "kind": "object",
+              "x": 87,
+              "y": 82
+            },
+            {
+              "en": "attach the correct file",
+              "ar": "يرفق الملف الصحيح",
+              "kind": "phrase",
+              "x": 49,
+              "y": 63
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Acknowledge the apology before the meeting",
+          "ar": "تقبّل الاعتذار قبل الاجتماع",
+          "purposeEn": "Reassure your colleague that there is still time.",
+          "purposeAr": "طمئن زميلك إلى أنه لا يزال هناك وقت.",
+          "image": {
+            "id": "conv-life-l3-055-4",
+            "path": "assets/scenes/conversations/life-l3-055-4.webp",
+            "width": 392,
+            "height": 243,
+            "en": "Acknowledge the apology before the meeting",
+            "ar": "تقبّل الاعتذار قبل الاجتماع",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1191,
+                497,
+                1583,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "wristwatch",
+              "ar": "ساعة يد",
+              "kind": "object",
+              "x": 83,
+              "y": 66
+            },
+            {
+              "en": "meeting folder",
+              "ar": "ملف الاجتماع",
+              "kind": "object",
+              "x": 53,
+              "y": 92
+            },
+            {
+              "en": "there is still time before the meeting",
+              "ar": "لا يزال لدينا وقت قبل الاجتماع",
+              "kind": "phrase",
+              "x": 77,
+              "y": 61
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-056",
+      "goalAr": "الاستعداد لتدريب موظفين جدد",
+      "goalEn": "Preparing to train new staff",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Pair a new worker with a mentor",
+          "ar": "اجمع الموظف الجديد مع مرشد",
+          "purposeEn": "Introduce the new staff member to someone who can show the job.",
+          "purposeAr": "عرّف الموظف الجديد بمن يستطيع أن يريه طريقة العمل.",
+          "image": {
+            "id": "conv-life-l3-056-1",
+            "path": "assets/scenes/conversations/life-l3-056-1.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Pair a new worker with a mentor",
+            "ar": "اجمع الموظف الجديد مع مرشد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                746,
+                392,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "computer monitor",
+              "ar": "شاشة حاسوب",
+              "kind": "object",
+              "x": 58,
+              "y": 88
+            },
+            {
+              "en": "mentor",
+              "ar": "مرشدة",
+              "kind": "object",
+              "x": 83,
+              "y": 53
+            },
+            {
+              "en": "pair a new worker with a mentor",
+              "ar": "يجمع موظفًا جديدًا مع مرشد",
+              "kind": "phrase",
+              "x": 28,
+              "y": 60
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Demonstrate a practice task",
+          "ar": "اعرض تمرينًا عمليًا",
+          "purposeEn": "Show the staff member what to do step by step.",
+          "purposeAr": "اعرض للموظف المطلوب خطوة بخطوة.",
+          "image": {
+            "id": "conv-life-l3-056-2",
+            "path": "assets/scenes/conversations/life-l3-056-2.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Demonstrate a practice task",
+            "ar": "اعرض تمرينًا عمليًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                398,
+                746,
+                789,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "checklist",
+              "ar": "قائمة تحقّق",
+              "kind": "object",
+              "x": 84,
+              "y": 70
+            },
+            {
+              "en": "blue binder",
+              "ar": "ملف أزرق",
+              "kind": "object",
+              "x": 49,
+              "y": 94
+            },
+            {
+              "en": "demonstrate a practice task",
+              "ar": "يعرض طريقة تنفيذ تمرين عملي",
+              "kind": "phrase",
+              "x": 69,
+              "y": 70
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Let the new worker try the task",
+          "ar": "دع الموظف الجديد يجرّب المهمة",
+          "purposeEn": "Watch the first attempt to see where help is needed.",
+          "purposeAr": "راقب المحاولة الأولى لتحديد موضع الحاجة إلى المساعدة.",
+          "image": {
+            "id": "conv-life-l3-056-3",
+            "path": "assets/scenes/conversations/life-l3-056-3.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Let the new worker try the task",
+            "ar": "دع الموظف الجديد يجرّب المهمة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                746,
+                1185,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "practice worksheet",
+              "ar": "ورقة تمارين",
+              "kind": "object",
+              "x": 55,
+              "y": 92
+            },
+            {
+              "en": "pen",
+              "ar": "قلم",
+              "kind": "object",
+              "x": 28,
+              "y": 80
+            },
+            {
+              "en": "try the task yourself",
+              "ar": "جرّب المهمة بنفسك",
+              "kind": "phrase",
+              "x": 38,
+              "y": 85
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Prepare the folders and check the instructions",
+          "ar": "جهّز الملفات وراجع التعليمات",
+          "purposeEn": "Divide the preparation work between colleagues.",
+          "purposeAr": "وزّع مهام التحضير بين الزملاء.",
+          "image": {
+            "id": "conv-life-l3-056-4",
+            "path": "assets/scenes/conversations/life-l3-056-4.webp",
+            "width": 392,
+            "height": 243,
+            "en": "Prepare the folders and check the instructions",
+            "ar": "جهّز الملفات وراجع التعليمات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1191,
+                746,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "stack of binders",
+              "ar": "رزمة ملفات",
+              "kind": "object",
+              "x": 34,
+              "y": 73
+            },
+            {
+              "en": "instruction sheet",
+              "ar": "ورقة تعليمات",
+              "kind": "object",
+              "x": 82,
+              "y": 72
+            },
+            {
+              "en": "review the instructions",
+              "ar": "يراجع التعليمات",
+              "kind": "phrase",
+              "x": 81,
+              "y": 67
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

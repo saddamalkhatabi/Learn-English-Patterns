@@ -1,0 +1,868 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "faa52c3512942a7d0aa24748069ae81eb9405ffa6f70e2e47db6f89b66e8404d"
+  },
+  "conversations": [
+    {
+      "id": "l3-045",
+      "goalAr": "تسليم كتاب مستعار من المكتبة",
+      "goalEn": "Sharing a book from the library",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Return the borrowed book",
+          "ar": "أعد الكتاب المستعار",
+          "purposeEn": "Hand the book back to the librarian.",
+          "purposeAr": "أعِد الكتاب إلى أمين المكتبة.",
+          "image": {
+            "id": "conv-life-l3-045-1",
+            "path": "assets/scenes/conversations/life-l3-045-1.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Return the borrowed book",
+            "ar": "أعد الكتاب المستعار",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                394,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "hardcover book",
+              "ar": "كتاب بغلاف صلب",
+              "kind": "object",
+              "x": 58,
+              "y": 70
+            },
+            {
+              "en": "librarian",
+              "ar": "أمين المكتبة",
+              "kind": "object",
+              "x": 76,
+              "y": 37
+            },
+            {
+              "en": "return a borrowed book",
+              "ar": "يعيد كتابًا مستعارًا",
+              "kind": "phrase",
+              "x": 49,
+              "y": 74
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Ask to borrow the next book",
+          "ar": "اطلب استعارة الكتاب التالي",
+          "purposeEn": "Ask if you can borrow another book.",
+          "purposeAr": "اسأل إن كان بإمكانك استعارة كتاب آخر.",
+          "image": {
+            "id": "conv-life-l3-045-2",
+            "path": "assets/scenes/conversations/life-l3-045-2.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Ask to borrow the next book",
+            "ar": "اطلب استعارة الكتاب التالي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                3,
+                789,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "blue book",
+              "ar": "كتاب أزرق",
+              "kind": "object",
+              "x": 43,
+              "y": 48
+            },
+            {
+              "en": "closed book",
+              "ar": "كتاب مغلق",
+              "kind": "object",
+              "x": 56,
+              "y": 88
+            },
+            {
+              "en": "borrow the next book",
+              "ar": "يستعير الكتاب التالي",
+              "kind": "phrase",
+              "x": 40,
+              "y": 68
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Ask where the short novels are",
+          "ar": "اسأل عن مكان الروايات القصيرة",
+          "purposeEn": "Ask where to find the short novels.",
+          "purposeAr": "اسأل أين تجد الروايات القصيرة.",
+          "image": {
+            "id": "conv-life-l3-045-3",
+            "path": "assets/scenes/conversations/life-l3-045-3.webp",
+            "width": 392,
+            "height": 241,
+            "en": "Ask where the short novels are",
+            "ar": "اسأل عن مكان الروايات القصيرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                3,
+                1187,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bookcase",
+              "ar": "خزانة كتب",
+              "kind": "object",
+              "x": 87,
+              "y": 56
+            },
+            {
+              "en": "book spine",
+              "ar": "كعب الكتاب",
+              "kind": "object",
+              "x": 83,
+              "y": 78
+            },
+            {
+              "en": "ask where to find a book",
+              "ar": "يسأل أين يجد كتابًا",
+              "kind": "phrase",
+              "x": 85,
+              "y": 35
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Find the books on the lower shelf",
+          "ar": "اعثر على الكتب في الرف السفلي",
+          "purposeEn": "Explain where the novels are in relation to the dictionaries.",
+          "purposeAr": "بيّن مكان الروايات بالنسبة إلى المعاجم.",
+          "image": {
+            "id": "conv-life-l3-045-4",
+            "path": "assets/scenes/conversations/life-l3-045-4.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Find the books on the lower shelf",
+            "ar": "اعثر على الكتب في الرف السفلي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                3,
+                1583,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "lower shelf",
+              "ar": "رف سفلي",
+              "kind": "object",
+              "x": 87,
+              "y": 83
+            },
+            {
+              "en": "dictionaries",
+              "ar": "معاجم",
+              "kind": "object",
+              "x": 91,
+              "y": 39
+            },
+            {
+              "en": "on the lower shelf",
+              "ar": "على الرف السفلي",
+              "kind": "phrase",
+              "x": 78,
+              "y": 79
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-046",
+      "goalAr": "بدء تعلّم لغة ثانية في سن الرشد",
+      "goalEn": "Starting a second language as an adult",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Ask whether learning French is hard",
+          "ar": "اسأل هل تعلّم الفرنسية صعب",
+          "purposeEn": "Start a conversation about learning French.",
+          "purposeAr": "ابدأ حديثًا عن تعلّم الفرنسية.",
+          "image": {
+            "id": "conv-life-l3-046-1",
+            "path": "assets/scenes/conversations/life-l3-046-1.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Ask whether learning French is hard",
+            "ar": "اسأل هل تعلّم الفرنسية صعب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                250,
+                394,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "picture card",
+              "ar": "بطاقة مصوّرة",
+              "kind": "object",
+              "x": 32,
+              "y": 65
+            },
+            {
+              "en": "croissant picture",
+              "ar": "صورة كرواسون",
+              "kind": "object",
+              "x": 50,
+              "y": 61
+            },
+            {
+              "en": "ask about learning French",
+              "ar": "يسأل عن تعلّم الفرنسية",
+              "kind": "phrase",
+              "x": 20,
+              "y": 64
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Discuss how to practise",
+          "ar": "ناقش طريقة التدرّب",
+          "purposeEn": "Suggest regular practice in short sessions.",
+          "purposeAr": "اقترح التدرّب بانتظام على فترات قصيرة.",
+          "image": {
+            "id": "conv-life-l3-046-2",
+            "path": "assets/scenes/conversations/life-l3-046-2.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Discuss how to practise",
+            "ar": "ناقش طريقة التدرّب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                250,
+                789,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "flashcards",
+              "ar": "بطاقات تعليمية",
+              "kind": "object",
+              "x": 17,
+              "y": 90
+            },
+            {
+              "en": "spiral notebook",
+              "ar": "دفتر حلزوني",
+              "kind": "object",
+              "x": 74,
+              "y": 88
+            },
+            {
+              "en": "practise in short sessions",
+              "ar": "يتدرّب على فترات قصيرة",
+              "kind": "phrase",
+              "x": 53,
+              "y": 77
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Ask when the practice started",
+          "ar": "اسأل متى بدأ التدرّب",
+          "purposeEn": "Say how long ago you started studying.",
+          "purposeAr": "اذكر منذ متى بدأت الدراسة.",
+          "image": {
+            "id": "conv-life-l3-046-3",
+            "path": "assets/scenes/conversations/life-l3-046-3.webp",
+            "width": 392,
+            "height": 243,
+            "en": "Ask when the practice started",
+            "ar": "اسأل متى بدأ التدرّب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                250,
+                1187,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "desk calendar",
+              "ar": "تقويم مكتبي",
+              "kind": "object",
+              "x": 85,
+              "y": 77
+            },
+            {
+              "en": "open notebook",
+              "ar": "دفتر مفتوح",
+              "kind": "object",
+              "x": 60,
+              "y": 91
+            },
+            {
+              "en": "how long ago did you start?",
+              "ar": "منذ متى بدأت؟",
+              "kind": "phrase",
+              "x": 73,
+              "y": 57
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Describe a conversation at lunch",
+          "ar": "صِف محادثة وقت الغداء",
+          "purposeEn": "Give an example of practising a language every day.",
+          "purposeAr": "اذكر مثالًا على ممارسة اللغة يوميًا.",
+          "image": {
+            "id": "conv-life-l3-046-4",
+            "path": "assets/scenes/conversations/life-l3-046-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Describe a conversation at lunch",
+            "ar": "صِف محادثة وقت الغداء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                250,
+                1583,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "lunchbox",
+              "ar": "علبة غداء",
+              "kind": "object",
+              "x": 36,
+              "y": 79
+            },
+            {
+              "en": "water bottle",
+              "ar": "زجاجة ماء",
+              "kind": "object",
+              "x": 10,
+              "y": 75
+            },
+            {
+              "en": "have a conversation over lunch",
+              "ar": "يتحدّث أثناء الغداء",
+              "kind": "phrase",
+              "x": 47,
+              "y": 54
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-047",
+      "goalAr": "إعادة محاولة تمرين",
+      "goalEn": "Practising an exercise again",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Ask for help with the worksheet",
+          "ar": "اطلب المساعدة في حلّ ورقة العمل",
+          "purposeEn": "Ask someone how to do the exercise.",
+          "purposeAr": "اسأل شخصًا كيف يحلّ التمرين.",
+          "image": {
+            "id": "conv-life-l3-047-1",
+            "path": "assets/scenes/conversations/life-l3-047-1.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Ask for help with the worksheet",
+            "ar": "اطلب المساعدة في حلّ ورقة العمل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                499,
+                394,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "worksheet",
+              "ar": "ورقة عمل",
+              "kind": "object",
+              "x": 56,
+              "y": 83
+            },
+            {
+              "en": "paper strips",
+              "ar": "قصاصات ورقية",
+              "kind": "object",
+              "x": 14,
+              "y": 92
+            },
+            {
+              "en": "ask for help with an exercise",
+              "ar": "يطلب المساعدة في حلّ تمرين",
+              "kind": "phrase",
+              "x": 64,
+              "y": 60
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Match each heading to a paragraph",
+          "ar": "طابق كل عنوان بالفقرة المناسبة",
+          "purposeEn": "Show where a heading goes on the worksheet.",
+          "purposeAr": "بيّن أين يوضع العنوان في ورقة العمل.",
+          "image": {
+            "id": "conv-life-l3-047-2",
+            "path": "assets/scenes/conversations/life-l3-047-2.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Match each heading to a paragraph",
+            "ar": "طابق كل عنوان بالفقرة المناسبة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                499,
+                789,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "heading strip",
+              "ar": "قصاصة تحمل عنوانًا",
+              "kind": "object",
+              "x": 40,
+              "y": 69
+            },
+            {
+              "en": "paragraph",
+              "ar": "فقرة",
+              "kind": "object",
+              "x": 54,
+              "y": 88
+            },
+            {
+              "en": "match a heading to a paragraph",
+              "ar": "يطابق عنوانًا بفقرة",
+              "kind": "phrase",
+              "x": 35,
+              "y": 66
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Read the first line for a clue",
+          "ar": "اقرأ السطر الأول بحثًا عن دليل",
+          "purposeEn": "Use the first sentence to tell which heading fits.",
+          "purposeAr": "استعن بالجملة الأولى لمعرفة العنوان المناسب.",
+          "image": {
+            "id": "conv-life-l3-047-3",
+            "path": "assets/scenes/conversations/life-l3-047-3.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Read the first line for a clue",
+            "ar": "اقرأ السطر الأول بحثًا عن دليل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                499,
+                1187,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "first line",
+              "ar": "السطر الأول",
+              "kind": "object",
+              "x": 56,
+              "y": 80
+            },
+            {
+              "en": "spare paper strip",
+              "ar": "قصاصة ورقية إضافية",
+              "kind": "object",
+              "x": 12,
+              "y": 91
+            },
+            {
+              "en": "read the first sentence",
+              "ar": "يقرأ الجملة الأولى",
+              "kind": "phrase",
+              "x": 63,
+              "y": 76
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Try the last heading again",
+          "ar": "أعد محاولة مطابقة العنوان الأخير",
+          "purposeEn": "Use what you learned to finish the exercise.",
+          "purposeAr": "استخدم ما فهمته لإنهاء التمرين.",
+          "image": {
+            "id": "conv-life-l3-047-4",
+            "path": "assets/scenes/conversations/life-l3-047-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Try the last heading again",
+            "ar": "أعد محاولة مطابقة العنوان الأخير",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                499,
+                1583,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "final heading",
+              "ar": "العنوان الأخير",
+              "kind": "object",
+              "x": 68,
+              "y": 78
+            },
+            {
+              "en": "pencil",
+              "ar": "قلم رصاص",
+              "kind": "object",
+              "x": 10,
+              "y": 88
+            },
+            {
+              "en": "smiling",
+              "ar": "مبتسم",
+              "kind": "description",
+              "x": 34,
+              "y": 24
+            },
+            {
+              "en": "try the exercise again",
+              "ar": "يعيد محاولة حلّ التمرين",
+              "kind": "phrase",
+              "x": 65,
+              "y": 69
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-048",
+      "goalAr": "الاتفاق على خطة مراجعة",
+      "goalEn": "Agreeing on a revision plan",
+      "stages": [
+        {
+          "from": 1,
+          "to": 2,
+          "en": "Explain that time is running out",
+          "ar": "اشرح أن الوقت يوشك أن ينفد",
+          "purposeEn": "Say why you may need help finishing your homework.",
+          "purposeAr": "قل لماذا قد تحتاج مساعدة لإكمال واجبك.",
+          "image": {
+            "id": "conv-life-l3-048-1",
+            "path": "assets/scenes/conversations/life-l3-048-1.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Explain that time is running out",
+            "ar": "اشرح أن الوقت يوشك أن ينفد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                747,
+                394,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "wristwatch",
+              "ar": "ساعة يد",
+              "kind": "object",
+              "x": 50,
+              "y": 62
+            },
+            {
+              "en": "homework sheet",
+              "ar": "ورقة الواجب",
+              "kind": "object",
+              "x": 26,
+              "y": 68
+            },
+            {
+              "en": "worried",
+              "ar": "قلق",
+              "kind": "description",
+              "x": 29,
+              "y": 24
+            },
+            {
+              "en": "run out of time",
+              "ar": "ينفد وقته",
+              "kind": "phrase",
+              "x": 45,
+              "y": 64
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "en": "Show the unfinished question",
+          "ar": "أشِر إلى السؤال الذي لم تُجِب عنه",
+          "purposeEn": "Identify the part you still need to finish.",
+          "purposeAr": "حدّد الجزء الذي لا يزال عليك إكماله.",
+          "image": {
+            "id": "conv-life-l3-048-2",
+            "path": "assets/scenes/conversations/life-l3-048-2.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Show the unfinished question",
+            "ar": "أشِر إلى السؤال الذي لم تُجِب عنه",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                747,
+                789,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "blank answer space",
+              "ar": "خانة إجابة فارغة",
+              "kind": "object",
+              "x": 48,
+              "y": 83
+            },
+            {
+              "en": "pen",
+              "ar": "قلم",
+              "kind": "object",
+              "x": 21,
+              "y": 93
+            },
+            {
+              "en": "point to the last question",
+              "ar": "يشير إلى السؤال الأخير",
+              "kind": "phrase",
+              "x": 42,
+              "y": 77
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "en": "Look at a short example together",
+          "ar": "اطّلعا على مثال قصير معًا",
+          "purposeEn": "Break the homework into smaller steps.",
+          "purposeAr": "قسّم الواجب إلى خطوات أصغر.",
+          "image": {
+            "id": "conv-life-l3-048-3",
+            "path": "assets/scenes/conversations/life-l3-048-3.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Look at a short example together",
+            "ar": "اطّلعا على مثال قصير معًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                747,
+                1187,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "example book",
+              "ar": "كتاب أمثلة",
+              "kind": "object",
+              "x": 77,
+              "y": 78
+            },
+            {
+              "en": "homework sheet",
+              "ar": "ورقة الواجب",
+              "kind": "object",
+              "x": 42,
+              "y": 88
+            },
+            {
+              "en": "look at an example together",
+              "ar": "يطلعان على مثال معًا",
+              "kind": "phrase",
+              "x": 69,
+              "y": 72
+            }
+          ]
+        },
+        {
+          "from": 7,
+          "to": 7,
+          "en": "Start writing in the workbook",
+          "ar": "ابدأ الكتابة في كتاب التمارين",
+          "purposeEn": "Start with a short example you can follow.",
+          "purposeAr": "ابدأ بمثال قصير يمكنك اتّباعه.",
+          "image": {
+            "id": "conv-life-l3-048-4",
+            "path": "assets/scenes/conversations/life-l3-048-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Start writing in the workbook",
+            "ar": "ابدأ الكتابة في كتاب التمارين",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                747,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "open workbook",
+              "ar": "كتاب تمارين مفتوح",
+              "kind": "object",
+              "x": 76,
+              "y": 82
+            },
+            {
+              "en": "stack of books",
+              "ar": "كومة كتب",
+              "kind": "object",
+              "x": 7,
+              "y": 84
+            },
+            {
+              "en": "start with a short example",
+              "ar": "يبدأ بمثال قصير",
+              "kind": "phrase",
+              "x": 33,
+              "y": 85
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
