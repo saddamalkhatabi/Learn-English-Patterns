@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "4d9cc8e47574fcc7708dfe2645444c39d2327d1020805e06e33d09db787c627e"
+  },
+  "conversations": [
+    {
+      "id": "l3-137",
+      "goalAr": "فحص طرد عند المنضدة",
+      "goalEn": "Checking a package at the counter",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Inspect the parcel before you accept it",
+          "ar": "افحص الطرد قبل استلامه",
+          "purposeEn": "Inspect the parcel before you accept it.",
+          "purposeAr": "افحص الطرد قبل استلامه.",
+          "image": {
+            "id": "conv-life-l3-137-1",
+            "path": "assets/scenes/conversations/life-l3-137-1.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Inspect the parcel before you accept it",
+            "ar": "افحص الطرد قبل استلامه",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                393,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "inspect the parcel before you accept it",
+              "ar": "افحص الطرد قبل استلامه",
+              "kind": "phrase",
+              "x": 49,
+              "y": 63
+            },
+            {
+              "en": "crushed corner",
+              "ar": "زاوية مهشّمة",
+              "kind": "object",
+              "x": 58,
+              "y": 72
+            },
+            {
+              "en": "shipping label",
+              "ar": "ملصق الشحن",
+              "kind": "object",
+              "x": 44,
+              "y": 51
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Note the damage on the slip",
+          "ar": "سجّل الضرر على القسيمة",
+          "purposeEn": "Note the damage on the slip.",
+          "purposeAr": "سجّل الضرر على القسيمة.",
+          "image": {
+            "id": "conv-life-l3-137-2",
+            "path": "assets/scenes/conversations/life-l3-137-2.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Note the damage on the slip",
+            "ar": "سجّل الضرر على القسيمة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                3,
+                790,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "note the damage on the slip",
+              "ar": "سجّل الضرر على القسيمة",
+              "kind": "phrase",
+              "x": 59,
+              "y": 68
+            },
+            {
+              "en": "collection slip",
+              "ar": "قسيمة الاستلام",
+              "kind": "object",
+              "x": 56,
+              "y": 72
+            },
+            {
+              "en": "check mark",
+              "ar": "علامة صح",
+              "kind": "object",
+              "x": 66,
+              "y": 68
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Open the box on the table",
+          "ar": "افتح الصندوق على الطاولة",
+          "purposeEn": "Open the box on the table.",
+          "purposeAr": "افتح الصندوق على الطاولة.",
+          "image": {
+            "id": "conv-life-l3-137-3",
+            "path": "assets/scenes/conversations/life-l3-137-3.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Open the box on the table",
+            "ar": "افتح الصندوق على الطاولة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                3,
+                1187,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "open the box on the table",
+              "ar": "افتح الصندوق على الطاولة",
+              "kind": "phrase",
+              "x": 48,
+              "y": 66
+            },
+            {
+              "en": "bubble wrap",
+              "ar": "غلاف فقاعي",
+              "kind": "object",
+              "x": 59,
+              "y": 77
+            },
+            {
+              "en": "box flap",
+              "ar": "لسان الصندوق",
+              "kind": "object",
+              "x": 43,
+              "y": 58
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Check the part number on the inner box",
+          "ar": "تحقّق من رقم القطعة على العلبة الداخلية",
+          "purposeEn": "Check the part number on the inner box.",
+          "purposeAr": "تحقّق من رقم القطعة على العلبة الداخلية.",
+          "image": {
+            "id": "conv-life-l3-137-4",
+            "path": "assets/scenes/conversations/life-l3-137-4.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Check the part number on the inner box",
+            "ar": "تحقّق من رقم القطعة على العلبة الداخلية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                3,
+                1583,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "check the part number on the inner box",
+              "ar": "تحقّق من رقم القطعة على العلبة الداخلية",
+              "kind": "phrase",
+              "x": 55,
+              "y": 49
+            },
+            {
+              "en": "inner box",
+              "ar": "صندوق داخلي",
+              "kind": "object",
+              "x": 49,
+              "y": 47
+            },
+            {
+              "en": "barcode",
+              "ar": "رمز شريطي",
+              "kind": "object",
+              "x": 56,
+              "y": 51
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-138",
+      "goalAr": "طلب استلام مشتريات بالنيابة",
+      "goalEn": "Asking someone to pick up a purchase",
+      "stages": [
+        {
+          "from": 1,
+          "to": 2,
+          "en": "See that the order is ready",
+          "ar": "تأكّد من أن الطلب جاهز",
+          "purposeEn": "See that the order is ready.",
+          "purposeAr": "تأكّد من أن الطلب جاهز.",
+          "image": {
+            "id": "conv-life-l3-138-1",
+            "path": "assets/scenes/conversations/life-l3-138-1.webp",
+            "width": 390,
+            "height": 243,
+            "en": "See that the order is ready",
+            "ar": "تأكّد من أن الطلب جاهز",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                250,
+                393,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "see that the order is ready",
+              "ar": "تأكّد من أن الطلب جاهز",
+              "kind": "phrase",
+              "x": 69,
+              "y": 50
+            },
+            {
+              "en": "order confirmation icon",
+              "ar": "أيقونة تأكيد الطلب",
+              "kind": "object",
+              "x": 70,
+              "y": 55
+            },
+            {
+              "en": "laptop",
+              "ar": "حاسوب محمول",
+              "kind": "object",
+              "x": 90,
+              "y": 74
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "en": "Ask whether you need an ID",
+          "ar": "اسأل هل تحتاج إلى بطاقة هوية",
+          "purposeEn": "Ask whether you need an ID.",
+          "purposeAr": "اسأل هل تحتاج إلى بطاقة هوية.",
+          "image": {
+            "id": "conv-life-l3-138-2",
+            "path": "assets/scenes/conversations/life-l3-138-2.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Ask whether you need an ID",
+            "ar": "اسأل هل تحتاج إلى بطاقة هوية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                250,
+                790,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask whether you need an ID",
+              "ar": "اسأل هل تحتاج إلى بطاقة هوية",
+              "kind": "phrase",
+              "x": 51,
+              "y": 56
+            },
+            {
+              "en": "ID card",
+              "ar": "بطاقة هوية",
+              "kind": "object",
+              "x": 57,
+              "y": 57
+            },
+            {
+              "en": "parcel pickup sign",
+              "ar": "لافتة استلام الطرود",
+              "kind": "object",
+              "x": 83,
+              "y": 32
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "en": "Send the order number",
+          "ar": "أرسل رقم الطلب",
+          "purposeEn": "Send the order number.",
+          "purposeAr": "أرسل رقم الطلب.",
+          "image": {
+            "id": "conv-life-l3-138-3",
+            "path": "assets/scenes/conversations/life-l3-138-3.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Send the order number",
+            "ar": "أرسل رقم الطلب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                250,
+                1187,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "send the order number",
+              "ar": "أرسل رقم الطلب",
+              "kind": "phrase",
+              "x": 55,
+              "y": 57
+            },
+            {
+              "en": "smartphone",
+              "ar": "هاتف ذكي",
+              "kind": "object",
+              "x": 54,
+              "y": 52
+            },
+            {
+              "en": "receipt",
+              "ar": "إيصال",
+              "kind": "object",
+              "x": 53,
+              "y": 88
+            }
+          ]
+        },
+        {
+          "from": 7,
+          "to": 7,
+          "en": "Wait by the shop for the details",
+          "ar": "انتظر قرب المتجر حتى تصلك التفاصيل",
+          "purposeEn": "Wait by the shop for the details.",
+          "purposeAr": "انتظر قرب المتجر حتى تصلك التفاصيل.",
+          "image": {
+            "id": "conv-life-l3-138-4",
+            "path": "assets/scenes/conversations/life-l3-138-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Wait by the shop for the details",
+            "ar": "انتظر قرب المتجر حتى تصلك التفاصيل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                250,
+                1583,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "wait by the shop for the details",
+              "ar": "انتظر قرب المتجر حتى تصلك التفاصيل",
+              "kind": "phrase",
+              "x": 47,
+              "y": 61
+            },
+            {
+              "en": "phone",
+              "ar": "هاتف",
+              "kind": "object",
+              "x": 49,
+              "y": 59
+            },
+            {
+              "en": "shop door handle",
+              "ar": "مقبض باب المتجر",
+              "kind": "object",
+              "x": 17,
+              "y": 63
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-139",
+      "goalAr": "توضيح عدم الحاجة إلى استرداد المبلغ",
+      "goalEn": "Explaining why you do not need a refund",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Discuss the late delivery",
+          "ar": "ناقش تأخّر التسليم",
+          "purposeEn": "Discuss the late delivery.",
+          "purposeAr": "ناقش تأخّر التسليم.",
+          "image": {
+            "id": "conv-life-l3-139-1",
+            "path": "assets/scenes/conversations/life-l3-139-1.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Discuss the late delivery",
+            "ar": "ناقش تأخّر التسليم",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                499,
+                393,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "discuss the late delivery",
+              "ar": "ناقش تأخّر التسليم",
+              "kind": "phrase",
+              "x": 42,
+              "y": 66
+            },
+            {
+              "en": "delivery receipt",
+              "ar": "إيصال التسليم",
+              "kind": "object",
+              "x": 62,
+              "y": 91
+            },
+            {
+              "en": "attentive",
+              "ar": "منتبه",
+              "kind": "description",
+              "x": 79,
+              "y": 36
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Ask for the replacement before Friday",
+          "ar": "اطلب وصول البديل قبل الجمعة",
+          "purposeEn": "Ask for the replacement before Friday.",
+          "purposeAr": "اطلب وصول البديل قبل الجمعة.",
+          "image": {
+            "id": "conv-life-l3-139-2",
+            "path": "assets/scenes/conversations/life-l3-139-2.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Ask for the replacement before Friday",
+            "ar": "اطلب وصول البديل قبل الجمعة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                499,
+                790,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask for the replacement before Friday",
+              "ar": "اطلب وصول البديل قبل الجمعة",
+              "kind": "phrase",
+              "x": 66,
+              "y": 63
+            },
+            {
+              "en": "circled date",
+              "ar": "تاريخ محدّد بدائرة",
+              "kind": "object",
+              "x": 65,
+              "y": 60
+            },
+            {
+              "en": "desk calendar",
+              "ar": "تقويم مكتبي",
+              "kind": "object",
+              "x": 64,
+              "y": 44
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Check when the replacement can ship",
+          "ar": "تحقّق من موعد شحن البديل",
+          "purposeEn": "Check when the replacement can ship.",
+          "purposeAr": "تحقّق من موعد شحن البديل.",
+          "image": {
+            "id": "conv-life-l3-139-3",
+            "path": "assets/scenes/conversations/life-l3-139-3.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Check when the replacement can ship",
+            "ar": "تحقّق من موعد شحن البديل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                499,
+                1187,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "check when the replacement can ship",
+              "ar": "تحقّق من موعد شحن البديل",
+              "kind": "phrase",
+              "x": 63,
+              "y": 61
+            },
+            {
+              "en": "shipping timeline",
+              "ar": "خط زمني للشحن",
+              "kind": "object",
+              "x": 60,
+              "y": 68
+            },
+            {
+              "en": "delivery truck symbol",
+              "ar": "رمز شاحنة توصيل",
+              "kind": "object",
+              "x": 50,
+              "y": 66
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Send the updated date in writing",
+          "ar": "أرسل الموعد المحدّث كتابةً",
+          "purposeEn": "Send the updated date in writing.",
+          "purposeAr": "أرسل الموعد المحدّث كتابةً.",
+          "image": {
+            "id": "conv-life-l3-139-4",
+            "path": "assets/scenes/conversations/life-l3-139-4.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Send the updated date in writing",
+            "ar": "أرسل الموعد المحدّث كتابةً",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                499,
+                1583,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "send the updated date in writing",
+              "ar": "أرسل الموعد المحدّث كتابةً",
+              "kind": "phrase",
+              "x": 69,
+              "y": 70
+            },
+            {
+              "en": "confirmation tick",
+              "ar": "علامة تأكيد",
+              "kind": "object",
+              "x": 77,
+              "y": 78
+            },
+            {
+              "en": "document icon",
+              "ar": "أيقونة مستند",
+              "kind": "object",
+              "x": 77,
+              "y": 61
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-140",
+      "goalAr": "الحديث عن شراء عدلت عنه",
+      "goalEn": "Discussing a purchase you decided against",
+      "stages": [
+        {
+          "from": 1,
+          "to": 2,
+          "en": "Decide whether to keep the old truck",
+          "ar": "قرّر هل ستحتفظ بالشاحنة القديمة",
+          "purposeEn": "Decide whether to keep the old truck.",
+          "purposeAr": "قرّر هل ستحتفظ بالشاحنة القديمة.",
+          "image": {
+            "id": "conv-life-l3-140-1",
+            "path": "assets/scenes/conversations/life-l3-140-1.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Decide whether to keep the old truck",
+            "ar": "قرّر هل ستحتفظ بالشاحنة القديمة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                746,
+                393,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "decide whether to keep the old truck",
+              "ar": "قرّر هل ستحتفظ بالشاحنة القديمة",
+              "kind": "phrase",
+              "x": 45,
+              "y": 60
+            },
+            {
+              "en": "old pickup truck",
+              "ar": "شاحنة خفيفة قديمة",
+              "kind": "object",
+              "x": 46,
+              "y": 65
+            },
+            {
+              "en": "newer truck",
+              "ar": "شاحنة أحدث",
+              "kind": "object",
+              "x": 77,
+              "y": 38
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "en": "Ask if a small repair will help",
+          "ar": "اسأل هل يكفي إصلاح بسيط",
+          "purposeEn": "Ask if a small repair will help.",
+          "purposeAr": "اسأل هل يكفي إصلاح بسيط.",
+          "image": {
+            "id": "conv-life-l3-140-2",
+            "path": "assets/scenes/conversations/life-l3-140-2.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Ask if a small repair will help",
+            "ar": "اسأل هل يكفي إصلاح بسيط",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                746,
+                790,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask if a small repair will help",
+              "ar": "اسأل هل يكفي إصلاح بسيط",
+              "kind": "phrase",
+              "x": 47,
+              "y": 74
+            },
+            {
+              "en": "open hood",
+              "ar": "غطاء محرّك مفتوح",
+              "kind": "object",
+              "x": 33,
+              "y": 17
+            },
+            {
+              "en": "engine bay",
+              "ar": "حيّز المحرّك",
+              "kind": "object",
+              "x": 40,
+              "y": 88
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "en": "Ask whether you can trust the estimate",
+          "ar": "اسأل إن كان يمكن الاعتماد على التقدير",
+          "purposeEn": "Ask whether you can trust the estimate.",
+          "purposeAr": "اسأل إن كان يمكن الاعتماد على التقدير.",
+          "image": {
+            "id": "conv-life-l3-140-3",
+            "path": "assets/scenes/conversations/life-l3-140-3.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Ask whether you can trust the estimate",
+            "ar": "اسأل إن كان يمكن الاعتماد على التقدير",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                746,
+                1187,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask whether you can trust the estimate",
+              "ar": "اسأل إن كان يمكن الاعتماد على التقدير",
+              "kind": "phrase",
+              "x": 54,
+              "y": 67
+            },
+            {
+              "en": "written estimate",
+              "ar": "تقدير مكتوب",
+              "kind": "object",
+              "x": 62,
+              "y": 72
+            },
+            {
+              "en": "tool drawers",
+              "ar": "أدراج أدوات",
+              "kind": "object",
+              "x": 44,
+              "y": 39
+            }
+          ]
+        },
+        {
+          "from": 7,
+          "to": 7,
+          "en": "Get a second estimate",
+          "ar": "احصل على تقدير ثانٍ",
+          "purposeEn": "Get a second estimate.",
+          "purposeAr": "احصل على تقدير ثانٍ.",
+          "image": {
+            "id": "conv-life-l3-140-4",
+            "path": "assets/scenes/conversations/life-l3-140-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Get a second estimate",
+            "ar": "احصل على تقدير ثانٍ",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                746,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "get a second estimate",
+              "ar": "احصل على تقدير ثانٍ",
+              "kind": "phrase",
+              "x": 53,
+              "y": 70
+            },
+            {
+              "en": "repair estimate",
+              "ar": "تقدير تكلفة إصلاح",
+              "kind": "object",
+              "x": 31,
+              "y": 55
+            },
+            {
+              "en": "comparison quote",
+              "ar": "عرض سعر للمقارنة",
+              "kind": "object",
+              "x": 76,
+              "y": 56
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "7fabf4000f8d0ad9c771d80cb3417c6e1a757416e3e046ad3204195a1298f34d"
+  },
+  "conversations": [
+    {
+      "id": "l3-129",
+      "goalAr": "تحديد متى ينتهي تدريب الطهي",
+      "goalEn": "Deciding when to finish a cooking class",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Cut another piece before cleaning up",
+          "ar": "اقطع قطعة أخرى قبل التنظيف",
+          "purposeEn": "Cut another piece before cleaning up.",
+          "purposeAr": "اقطع قطعة أخرى قبل التنظيف.",
+          "image": {
+            "id": "conv-life-l3-129-1",
+            "path": "assets/scenes/conversations/life-l3-129-1.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Cut another piece before cleaning up",
+            "ar": "اقطع قطعة أخرى قبل التنظيف",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                393,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "cut another piece before cleaning up",
+              "ar": "اقطع قطعة أخرى قبل التنظيف",
+              "kind": "phrase",
+              "x": 43,
+              "y": 79
+            },
+            {
+              "en": "sliced bread roll",
+              "ar": "رغيف صغير مقطّع",
+              "kind": "object",
+              "x": 49,
+              "y": 87
+            },
+            {
+              "en": "cutting board",
+              "ar": "لوح تقطيع",
+              "kind": "object",
+              "x": 57,
+              "y": 94
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Choose a knife that is easy to hold",
+          "ar": "اختر سكينًا يسهل إمساكها",
+          "purposeEn": "Choose a knife that is easy to hold.",
+          "purposeAr": "اختر سكينًا يسهل إمساكها.",
+          "image": {
+            "id": "conv-life-l3-129-2",
+            "path": "assets/scenes/conversations/life-l3-129-2.webp",
+            "width": 392,
+            "height": 243,
+            "en": "Choose a knife that is easy to hold",
+            "ar": "اختر سكينًا يسهل إمساكها",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                3,
+                791,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "choose a knife that is easy to hold",
+              "ar": "اختر سكينًا يسهل إمساكها",
+              "kind": "phrase",
+              "x": 48,
+              "y": 61
+            },
+            {
+              "en": "small kitchen knife",
+              "ar": "سكين مطبخ صغيرة",
+              "kind": "object",
+              "x": 47,
+              "y": 66
+            },
+            {
+              "en": "large kitchen knife",
+              "ar": "سكين مطبخ كبيرة",
+              "kind": "object",
+              "x": 50,
+              "y": 86
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Put the knife back in the tray",
+          "ar": "أعد السكين إلى الصينية",
+          "purposeEn": "Put the knife back in the tray.",
+          "purposeAr": "أعد السكين إلى الصينية.",
+          "image": {
+            "id": "conv-life-l3-129-3",
+            "path": "assets/scenes/conversations/life-l3-129-3.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Put the knife back in the tray",
+            "ar": "أعد السكين إلى الصينية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                3,
+                1187,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "put the knife back in the tray",
+              "ar": "أعد السكين إلى الصينية",
+              "kind": "phrase",
+              "x": 41,
+              "y": 72
+            },
+            {
+              "en": "cutlery tray",
+              "ar": "صينية أدوات المائدة",
+              "kind": "object",
+              "x": 60,
+              "y": 83
+            },
+            {
+              "en": "spatula",
+              "ar": "ملعقة مسطّحة",
+              "kind": "object",
+              "x": 76,
+              "y": 82
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Put away the bowl when you are done",
+          "ar": "ضع الوعاء في مكانه عند الانتهاء",
+          "purposeEn": "Put away the bowl when you are done.",
+          "purposeAr": "ضع الوعاء في مكانه عند الانتهاء.",
+          "image": {
+            "id": "conv-life-l3-129-4",
+            "path": "assets/scenes/conversations/life-l3-129-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Put away the bowl when you are done",
+            "ar": "ضع الوعاء في مكانه عند الانتهاء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                3,
+                1583,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "put away the bowl when you are done",
+              "ar": "ضع الوعاء في مكانه عند الانتهاء",
+              "kind": "phrase",
+              "x": 78,
+              "y": 37
+            },
+            {
+              "en": "mixing bowl",
+              "ar": "وعاء خلط",
+              "kind": "object",
+              "x": 86,
+              "y": 28
+            },
+            {
+              "en": "kitchen cabinet",
+              "ar": "خزانة مطبخ",
+              "kind": "object",
+              "x": 92,
+              "y": 41
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-130",
+      "goalAr": "السؤال بأدب عن سبب عدم إعجاب الضيف بطبق",
+      "goalEn": "Asking why a guest did not enjoy a dish",
+      "stages": [
+        {
+          "from": 1,
+          "to": 2,
+          "en": "Ask for feedback on the recipe",
+          "ar": "اطلب ملاحظات بشأن الوصفة",
+          "purposeEn": "Ask for feedback on the recipe.",
+          "purposeAr": "اطلب ملاحظات بشأن الوصفة.",
+          "image": {
+            "id": "conv-life-l3-130-1",
+            "path": "assets/scenes/conversations/life-l3-130-1.webp",
+            "width": 390,
+            "height": 240,
+            "en": "Ask for feedback on the recipe",
+            "ar": "اطلب ملاحظات بشأن الوصفة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                252,
+                393,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask for feedback on the recipe",
+              "ar": "اطلب ملاحظات بشأن الوصفة",
+              "kind": "phrase",
+              "x": 37,
+              "y": 61
+            },
+            {
+              "en": "recipe notebook",
+              "ar": "دفتر وصفات",
+              "kind": "object",
+              "x": 67,
+              "y": 84
+            },
+            {
+              "en": "cooked dish",
+              "ar": "طبق مطبوخ",
+              "kind": "object",
+              "x": 32,
+              "y": 87
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "en": "Say what you did not like about the dish",
+          "ar": "اذكر ما لم يعجبك في الطبق",
+          "purposeEn": "Say what you did not like about the dish.",
+          "purposeAr": "اذكر ما لم يعجبك في الطبق.",
+          "image": {
+            "id": "conv-life-l3-130-2",
+            "path": "assets/scenes/conversations/life-l3-130-2.webp",
+            "width": 392,
+            "height": 240,
+            "en": "Say what you did not like about the dish",
+            "ar": "اذكر ما لم يعجبك في الطبق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                252,
+                791,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "say what you did not like about the dish",
+              "ar": "اذكر ما لم يعجبك في الطبق",
+              "kind": "phrase",
+              "x": 41,
+              "y": 80
+            },
+            {
+              "en": "chilli peppers",
+              "ar": "فلفل حار",
+              "kind": "object",
+              "x": 43,
+              "y": 91
+            },
+            {
+              "en": "clay dish",
+              "ar": "طبق فخّاري",
+              "kind": "object",
+              "x": 73,
+              "y": 86
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "en": "Explain that the dish was hotter than expected",
+          "ar": "اشرح أن الطبق كان أحرّ مما توقعت",
+          "purposeEn": "Explain that the dish was hotter than expected.",
+          "purposeAr": "اشرح أن الطبق كان أحرّ مما توقعت.",
+          "image": {
+            "id": "conv-life-l3-130-3",
+            "path": "assets/scenes/conversations/life-l3-130-3.webp",
+            "width": 390,
+            "height": 240,
+            "en": "Explain that the dish was hotter than expected",
+            "ar": "اشرح أن الطبق كان أحرّ مما توقعت",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                252,
+                1187,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "explain that the dish was hotter than expected",
+              "ar": "اشرح أن الطبق كان أحرّ مما توقعت",
+              "kind": "phrase",
+              "x": 36,
+              "y": 59
+            },
+            {
+              "en": "tasting spoon",
+              "ar": "ملعقة تذوّق",
+              "kind": "object",
+              "x": 37,
+              "y": 61
+            },
+            {
+              "en": "plate of peppers",
+              "ar": "طبق فلفل",
+              "kind": "object",
+              "x": 39,
+              "y": 90
+            }
+          ]
+        },
+        {
+          "from": 7,
+          "to": 7,
+          "en": "Serve the chilli separately",
+          "ar": "قدّم الفلفل الحار منفصلًا",
+          "purposeEn": "Serve the chilli separately.",
+          "purposeAr": "قدّم الفلفل الحار منفصلًا.",
+          "image": {
+            "id": "conv-life-l3-130-4",
+            "path": "assets/scenes/conversations/life-l3-130-4.webp",
+            "width": 390,
+            "height": 240,
+            "en": "Serve the chilli separately",
+            "ar": "قدّم الفلفل الحار منفصلًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                252,
+                1583,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "serve the chilli separately",
+              "ar": "قدّم الفلفل الحار منفصلًا",
+              "kind": "phrase",
+              "x": 70,
+              "y": 77
+            },
+            {
+              "en": "small bowl",
+              "ar": "وعاء صغير",
+              "kind": "object",
+              "x": 77,
+              "y": 89
+            },
+            {
+              "en": "main dish",
+              "ar": "الطبق الرئيسي",
+              "kind": "object",
+              "x": 34,
+              "y": 87
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-131",
+      "goalAr": "المقارنة بين الإصلاح والاستبدال",
+      "goalEn": "Comparing a repair with replacement",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Explain that the battery will not hold a charge",
+          "ar": "اشرح أن البطارية لا تحتفظ بالشحن",
+          "purposeEn": "Explain that the battery will not hold a charge.",
+          "purposeAr": "اشرح أن البطارية لا تحتفظ بالشحن.",
+          "image": {
+            "id": "conv-life-l3-131-1",
+            "path": "assets/scenes/conversations/life-l3-131-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Explain that the battery will not hold a charge",
+            "ar": "اشرح أن البطارية لا تحتفظ بالشحن",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                498,
+                393,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "explain that the battery will not hold a charge",
+              "ar": "اشرح أن البطارية لا تحتفظ بالشحن",
+              "kind": "phrase",
+              "x": 53,
+              "y": 57
+            },
+            {
+              "en": "low-battery icon",
+              "ar": "أيقونة بطارية منخفضة",
+              "kind": "object",
+              "x": 51,
+              "y": 53
+            },
+            {
+              "en": "keyboard",
+              "ar": "لوحة مفاتيح",
+              "kind": "object",
+              "x": 54,
+              "y": 81
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Consider replacing the battery",
+          "ar": "فكّر في استبدال البطارية",
+          "purposeEn": "Consider replacing the battery.",
+          "purposeAr": "فكّر في استبدال البطارية.",
+          "image": {
+            "id": "conv-life-l3-131-2",
+            "path": "assets/scenes/conversations/life-l3-131-2.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Consider replacing the battery",
+            "ar": "فكّر في استبدال البطارية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                498,
+                791,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "consider replacing the battery",
+              "ar": "فكّر في استبدال البطارية",
+              "kind": "phrase",
+              "x": 59,
+              "y": 72
+            },
+            {
+              "en": "replacement battery",
+              "ar": "بطارية بديلة",
+              "kind": "object",
+              "x": 54,
+              "y": 82
+            },
+            {
+              "en": "charged battery icon",
+              "ar": "أيقونة بطارية مشحونة",
+              "kind": "object",
+              "x": 86,
+              "y": 54
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Compare the quote with the cost of a new laptop",
+          "ar": "قارن عرض السعر بتكلفة حاسوب جديد",
+          "purposeEn": "Compare the quote with the cost of a new laptop.",
+          "purposeAr": "قارن عرض السعر بتكلفة حاسوب جديد.",
+          "image": {
+            "id": "conv-life-l3-131-3",
+            "path": "assets/scenes/conversations/life-l3-131-3.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Compare the quote with the cost of a new laptop",
+            "ar": "قارن عرض السعر بتكلفة حاسوب جديد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                498,
+                1187,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "compare the quote with the cost of a new laptop",
+              "ar": "قارن عرض السعر بتكلفة حاسوب جديد",
+              "kind": "phrase",
+              "x": 53,
+              "y": 66
+            },
+            {
+              "en": "repair quote",
+              "ar": "عرض سعر للإصلاح",
+              "kind": "object",
+              "x": 37,
+              "y": 65
+            },
+            {
+              "en": "price tag",
+              "ar": "بطاقة سعر",
+              "kind": "object",
+              "x": 77,
+              "y": 60
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Ask for the estimated cost and waiting time",
+          "ar": "اطلب التكلفة المقدّرة ومدة الانتظار",
+          "purposeEn": "Ask for the estimated cost and waiting time.",
+          "purposeAr": "اطلب التكلفة المقدّرة ومدة الانتظار.",
+          "image": {
+            "id": "conv-life-l3-131-4",
+            "path": "assets/scenes/conversations/life-l3-131-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Ask for the estimated cost and waiting time",
+            "ar": "اطلب التكلفة المقدّرة ومدة الانتظار",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                498,
+                1583,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask for the estimated cost and waiting time",
+              "ar": "اطلب التكلفة المقدّرة ومدة الانتظار",
+              "kind": "phrase",
+              "x": 55,
+              "y": 78
+            },
+            {
+              "en": "notepad",
+              "ar": "دفتر ملاحظات",
+              "kind": "object",
+              "x": 57,
+              "y": 82
+            },
+            {
+              "en": "desk calendar",
+              "ar": "تقويم مكتبي",
+              "kind": "object",
+              "x": 86,
+              "y": 65
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-132",
+      "goalAr": "تحديد المبلغ الذي تستطيع مجموعة إنفاقه",
+      "goalEn": "Working out how much a group can spend",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Set aside some money for the bus fare",
+          "ar": "خصّص بعض المال لأجرة الحافلة",
+          "purposeEn": "Set aside some money for the bus fare.",
+          "purposeAr": "خصّص بعض المال لأجرة الحافلة.",
+          "image": {
+            "id": "conv-life-l3-132-1",
+            "path": "assets/scenes/conversations/life-l3-132-1.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Set aside some money for the bus fare",
+            "ar": "خصّص بعض المال لأجرة الحافلة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                746,
+                393,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "set aside some money for the bus fare",
+              "ar": "خصّص بعض المال لأجرة الحافلة",
+              "kind": "phrase",
+              "x": 44,
+              "y": 70
+            },
+            {
+              "en": "banknotes",
+              "ar": "أوراق نقدية",
+              "kind": "object",
+              "x": 34,
+              "y": 67
+            },
+            {
+              "en": "bus ticket",
+              "ar": "تذكرة حافلة",
+              "kind": "object",
+              "x": 76,
+              "y": 76
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Work out how much you can spend",
+          "ar": "احسب المبلغ الذي يمكنك إنفاقه",
+          "purposeEn": "Work out how much you can spend.",
+          "purposeAr": "احسب المبلغ الذي يمكنك إنفاقه.",
+          "image": {
+            "id": "conv-life-l3-132-2",
+            "path": "assets/scenes/conversations/life-l3-132-2.webp",
+            "width": 392,
+            "height": 243,
+            "en": "Work out how much you can spend",
+            "ar": "احسب المبلغ الذي يمكنك إنفاقه",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                746,
+                791,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "work out how much you can spend",
+              "ar": "احسب المبلغ الذي يمكنك إنفاقه",
+              "kind": "phrase",
+              "x": 38,
+              "y": 78
+            },
+            {
+              "en": "utensil holder",
+              "ar": "حامل أدوات مطبخ",
+              "kind": "object",
+              "x": 63,
+              "y": 84
+            },
+            {
+              "en": "whisk",
+              "ar": "مخفقة",
+              "kind": "object",
+              "x": 87,
+              "y": 35
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Compare two practical gifts",
+          "ar": "قارن هديتين عمليتين",
+          "purposeEn": "Compare two practical gifts.",
+          "purposeAr": "قارن هديتين عمليتين.",
+          "image": {
+            "id": "conv-life-l3-132-3",
+            "path": "assets/scenes/conversations/life-l3-132-3.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Compare two practical gifts",
+            "ar": "قارن هديتين عمليتين",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                746,
+                1187,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "compare two practical gifts",
+              "ar": "قارن هديتين عمليتين",
+              "kind": "phrase",
+              "x": 51,
+              "y": 61
+            },
+            {
+              "en": "whisk",
+              "ar": "مخفقة",
+              "kind": "object",
+              "x": 39,
+              "y": 61
+            },
+            {
+              "en": "slotted spatula",
+              "ar": "ملعقة مسطّحة مثقّبة",
+              "kind": "object",
+              "x": 62,
+              "y": 51
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Choose whichever gift you prefer",
+          "ar": "اختر الهدية التي تفضّلها",
+          "purposeEn": "Choose whichever gift you prefer.",
+          "purposeAr": "اختر الهدية التي تفضّلها.",
+          "image": {
+            "id": "conv-life-l3-132-4",
+            "path": "assets/scenes/conversations/life-l3-132-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Choose whichever gift you prefer",
+            "ar": "اختر الهدية التي تفضّلها",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                746,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "choose whichever gift you prefer",
+              "ar": "اختر الهدية التي تفضّلها",
+              "kind": "phrase",
+              "x": 47,
+              "y": 66
+            },
+            {
+              "en": "gift bag",
+              "ar": "كيس هدايا",
+              "kind": "object",
+              "x": 84,
+              "y": 79
+            },
+            {
+              "en": "whisk",
+              "ar": "مخفقة",
+              "kind": "object",
+              "x": 43,
+              "y": 64
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

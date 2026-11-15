@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "46e7a91641c5d85878ee03a42640ea6ab92033dbaf66c3d2932e24baed59cf32"
+  },
+  "conversations": [
+    {
+      "id": "l3-125",
+      "goalAr": "ترتيب المطبخ قبل إعداد الطعام",
+      "goalEn": "Keeping the kitchen tidy",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Clear the counter while I wash the vegetables",
+          "ar": "أخلِ المنضدة ريثما أغسل الخضار",
+          "purposeEn": "Clear the counter while I wash the vegetables.",
+          "purposeAr": "أخلِ المنضدة ريثما أغسل الخضار.",
+          "image": {
+            "id": "conv-life-l3-125-1",
+            "path": "assets/scenes/conversations/life-l3-125-1.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Clear the counter while I wash the vegetables",
+            "ar": "أخلِ المنضدة ريثما أغسل الخضار",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                394,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "clear the counter while I wash the vegetables",
+              "ar": "أخلِ المنضدة ريثما أغسل الخضار",
+              "kind": "phrase",
+              "x": 45,
+              "y": 72
+            },
+            {
+              "en": "colander",
+              "ar": "مصفاة",
+              "kind": "object",
+              "x": 48,
+              "y": 88
+            },
+            {
+              "en": "kitchen tap",
+              "ar": "صنبور المطبخ",
+              "kind": "object",
+              "x": 12,
+              "y": 48
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Put the glasses on the top shelf",
+          "ar": "ضع الأكواب على الرف العلوي",
+          "purposeEn": "Put the glasses on the top shelf.",
+          "purposeAr": "ضع الأكواب على الرف العلوي.",
+          "image": {
+            "id": "conv-life-l3-125-2",
+            "path": "assets/scenes/conversations/life-l3-125-2.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Put the glasses on the top shelf",
+            "ar": "ضع الأكواب على الرف العلوي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                3,
+                791,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "put the glasses on the top shelf",
+              "ar": "ضع الأكواب على الرف العلوي",
+              "kind": "phrase",
+              "x": 54,
+              "y": 21
+            },
+            {
+              "en": "drinking glass",
+              "ar": "كأس شرب",
+              "kind": "object",
+              "x": 58,
+              "y": 20
+            },
+            {
+              "en": "top shelf",
+              "ar": "رف علوي",
+              "kind": "object",
+              "x": 59,
+              "y": 32
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Use lemon juice in the salad",
+          "ar": "استخدم عصير الليمون في السلطة",
+          "purposeEn": "Use lemon juice in the salad.",
+          "purposeAr": "استخدم عصير الليمون في السلطة.",
+          "image": {
+            "id": "conv-life-l3-125-3",
+            "path": "assets/scenes/conversations/life-l3-125-3.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Use lemon juice in the salad",
+            "ar": "استخدم عصير الليمون في السلطة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                3,
+                1187,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "use lemon juice in the salad",
+              "ar": "استخدم عصير الليمون في السلطة",
+              "kind": "phrase",
+              "x": 46,
+              "y": 53
+            },
+            {
+              "en": "lemon juice",
+              "ar": "عصير ليمون",
+              "kind": "object",
+              "x": 47,
+              "y": 46
+            },
+            {
+              "en": "salad bowl",
+              "ar": "وعاء سلطة",
+              "kind": "object",
+              "x": 81,
+              "y": 87
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Keep your hands clean",
+          "ar": "حافظ على نظافة يديك",
+          "purposeEn": "Keep your hands clean.",
+          "purposeAr": "حافظ على نظافة يديك.",
+          "image": {
+            "id": "conv-life-l3-125-4",
+            "path": "assets/scenes/conversations/life-l3-125-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Keep your hands clean",
+            "ar": "حافظ على نظافة يديك",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                3,
+                1583,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "keep your hands clean",
+              "ar": "حافظ على نظافة يديك",
+              "kind": "phrase",
+              "x": 42,
+              "y": 80
+            },
+            {
+              "en": "soap dispenser",
+              "ar": "موزّع صابون",
+              "kind": "object",
+              "x": 6,
+              "y": 85
+            },
+            {
+              "en": "sink",
+              "ar": "حوض",
+              "kind": "object",
+              "x": 40,
+              "y": 94
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-126",
+      "goalAr": "اختيار وجبة خفيفة بعد المدرسة",
+      "goalEn": "Choosing a snack after school",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Choose between yoghurt and a sandwich",
+          "ar": "اختر بين الزبادي والشطيرة",
+          "purposeEn": "Choose between yoghurt and a sandwich.",
+          "purposeAr": "اختر بين الزبادي والشطيرة.",
+          "image": {
+            "id": "conv-life-l3-126-1",
+            "path": "assets/scenes/conversations/life-l3-126-1.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Choose between yoghurt and a sandwich",
+            "ar": "اختر بين الزبادي والشطيرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                251,
+                394,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "choose between yoghurt and a sandwich",
+              "ar": "اختر بين الزبادي والشطيرة",
+              "kind": "phrase",
+              "x": 41,
+              "y": 74
+            },
+            {
+              "en": "sandwich",
+              "ar": "شطيرة",
+              "kind": "object",
+              "x": 46,
+              "y": 89
+            },
+            {
+              "en": "yoghurt bowl",
+              "ar": "وعاء زبادي",
+              "kind": "object",
+              "x": 73,
+              "y": 88
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Offer someone some juice",
+          "ar": "اعرض على شخص بعض العصير",
+          "purposeEn": "Offer someone some juice.",
+          "purposeAr": "اعرض على شخص بعض العصير.",
+          "image": {
+            "id": "conv-life-l3-126-2",
+            "path": "assets/scenes/conversations/life-l3-126-2.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Offer someone some juice",
+            "ar": "اعرض على شخص بعض العصير",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                251,
+                791,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "offer someone some juice",
+              "ar": "اعرض على شخص بعض العصير",
+              "kind": "phrase",
+              "x": 40,
+              "y": 54
+            },
+            {
+              "en": "blue cap",
+              "ar": "غطاء أزرق",
+              "kind": "object",
+              "x": 41,
+              "y": 48
+            },
+            {
+              "en": "juice bottle",
+              "ar": "عبوة عصير",
+              "kind": "object",
+              "x": 40,
+              "y": 59
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Pour some into a clean cup",
+          "ar": "صُبّ بعضًا منه في كأس نظيفة",
+          "purposeEn": "Pour some into a clean cup.",
+          "purposeAr": "صُبّ بعضًا منه في كأس نظيفة.",
+          "image": {
+            "id": "conv-life-l3-126-3",
+            "path": "assets/scenes/conversations/life-l3-126-3.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Pour some into a clean cup",
+            "ar": "صُبّ بعضًا منه في كأس نظيفة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                251,
+                1187,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "pour some into a clean cup",
+              "ar": "صُبّ بعضًا منه في كأس نظيفة",
+              "kind": "phrase",
+              "x": 47,
+              "y": 73
+            },
+            {
+              "en": "glass tumbler",
+              "ar": "كأس زجاجية",
+              "kind": "object",
+              "x": 48,
+              "y": 82
+            },
+            {
+              "en": "pour juice",
+              "ar": "يصبّ العصير",
+              "kind": "action",
+              "x": 44,
+              "y": 67
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Share a drink over lunch",
+          "ar": "يتشارك مشروبًا أثناء الغداء",
+          "purposeEn": "Share a drink over lunch.",
+          "purposeAr": "يتشارك مشروبًا أثناء الغداء.",
+          "image": {
+            "id": "conv-life-l3-126-4",
+            "path": "assets/scenes/conversations/life-l3-126-4.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Share a drink over lunch",
+            "ar": "يتشارك مشروبًا أثناء الغداء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                251,
+                1583,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "share a drink over lunch",
+              "ar": "يتشارك مشروبًا أثناء الغداء",
+              "kind": "phrase",
+              "x": 58,
+              "y": 61
+            },
+            {
+              "en": "glass of juice",
+              "ar": "كأس عصير",
+              "kind": "object",
+              "x": 32,
+              "y": 81
+            },
+            {
+              "en": "plate of sandwiches",
+              "ar": "طبق شطائر",
+              "kind": "object",
+              "x": 44,
+              "y": 93
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-127",
+      "goalAr": "تحضير طعام لزيارة شخص آخر",
+      "goalEn": "Preparing food for someone else's visit",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Decide what to serve a guest",
+          "ar": "حدّد ماذا تقدّم للضيف",
+          "purposeEn": "Decide what to serve a guest.",
+          "purposeAr": "حدّد ماذا تقدّم للضيف.",
+          "image": {
+            "id": "conv-life-l3-127-1",
+            "path": "assets/scenes/conversations/life-l3-127-1.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Decide what to serve a guest",
+            "ar": "حدّد ماذا تقدّم للضيف",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                498,
+                394,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "decide what to serve a guest",
+              "ar": "حدّد ماذا تقدّم للضيف",
+              "kind": "phrase",
+              "x": 44,
+              "y": 63
+            },
+            {
+              "en": "coffee pot",
+              "ar": "دلّة قهوة",
+              "kind": "object",
+              "x": 49,
+              "y": 66
+            },
+            {
+              "en": "small coffee cup",
+              "ar": "فنجان قهوة صغير",
+              "kind": "object",
+              "x": 31,
+              "y": 89
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Offer tea as well as coffee",
+          "ar": "قدّم الشاي إلى جانب القهوة",
+          "purposeEn": "Offer tea as well as coffee.",
+          "purposeAr": "قدّم الشاي إلى جانب القهوة.",
+          "image": {
+            "id": "conv-life-l3-127-2",
+            "path": "assets/scenes/conversations/life-l3-127-2.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Offer tea as well as coffee",
+            "ar": "قدّم الشاي إلى جانب القهوة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                498,
+                791,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "offer tea as well as coffee",
+              "ar": "قدّم الشاي إلى جانب القهوة",
+              "kind": "phrase",
+              "x": 41,
+              "y": 72
+            },
+            {
+              "en": "glass teapot",
+              "ar": "إبريق شاي زجاجي",
+              "kind": "object",
+              "x": 41,
+              "y": 79
+            },
+            {
+              "en": "coffee pot",
+              "ar": "دلّة قهوة",
+              "kind": "object",
+              "x": 63,
+              "y": 72
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Put some fruit on the table",
+          "ar": "ضع بعض الفاكهة على الطاولة",
+          "purposeEn": "Put some fruit on the table.",
+          "purposeAr": "ضع بعض الفاكهة على الطاولة.",
+          "image": {
+            "id": "conv-life-l3-127-3",
+            "path": "assets/scenes/conversations/life-l3-127-3.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Put some fruit on the table",
+            "ar": "ضع بعض الفاكهة على الطاولة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                498,
+                1187,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "put some fruit on the table",
+              "ar": "ضع بعض الفاكهة على الطاولة",
+              "kind": "phrase",
+              "x": 49,
+              "y": 79
+            },
+            {
+              "en": "fruit bowl",
+              "ar": "وعاء فواكه",
+              "kind": "object",
+              "x": 49,
+              "y": 84
+            },
+            {
+              "en": "bunch of grapes",
+              "ar": "عنقود عنب",
+              "kind": "object",
+              "x": 51,
+              "y": 67
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Check when the guest might arrive",
+          "ar": "تحقّق من موعد وصول الضيف المحتمل",
+          "purposeEn": "Check when the guest might arrive.",
+          "purposeAr": "تحقّق من موعد وصول الضيف المحتمل.",
+          "image": {
+            "id": "conv-life-l3-127-4",
+            "path": "assets/scenes/conversations/life-l3-127-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Check when the guest might arrive",
+            "ar": "تحقّق من موعد وصول الضيف المحتمل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                498,
+                1583,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "check when the guest might arrive",
+              "ar": "تحقّق من موعد وصول الضيف المحتمل",
+              "kind": "phrase",
+              "x": 64,
+              "y": 74
+            },
+            {
+              "en": "desk calendar",
+              "ar": "تقويم مكتبي",
+              "kind": "object",
+              "x": 55,
+              "y": 72
+            },
+            {
+              "en": "glass teapot",
+              "ar": "إبريق شاي زجاجي",
+              "kind": "object",
+              "x": 25,
+              "y": 84
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-128",
+      "goalAr": "طلب شرح طريقة وصفة",
+      "goalEn": "Asking someone to show you a recipe",
+      "stages": [
+        {
+          "from": 1,
+          "to": 2,
+          "en": "Shape the dough into a ball",
+          "ar": "شكّل العجين على هيئة كرة",
+          "purposeEn": "Shape the dough into a ball.",
+          "purposeAr": "شكّل العجين على هيئة كرة.",
+          "image": {
+            "id": "conv-life-l3-128-1",
+            "path": "assets/scenes/conversations/life-l3-128-1.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Shape the dough into a ball",
+            "ar": "شكّل العجين على هيئة كرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                747,
+                394,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "shape the dough into a ball",
+              "ar": "شكّل العجين على هيئة كرة",
+              "kind": "phrase",
+              "x": 47,
+              "y": 67
+            },
+            {
+              "en": "ball of dough",
+              "ar": "كرة عجين",
+              "kind": "object",
+              "x": 44,
+              "y": 70
+            },
+            {
+              "en": "bowl of flour",
+              "ar": "وعاء دقيق",
+              "kind": "object",
+              "x": 13,
+              "y": 91
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "en": "Flatten the dough with your palm",
+          "ar": "افرد العجين براحة يدك",
+          "purposeEn": "Flatten the dough with your palm.",
+          "purposeAr": "افرد العجين براحة يدك.",
+          "image": {
+            "id": "conv-life-l3-128-2",
+            "path": "assets/scenes/conversations/life-l3-128-2.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Flatten the dough with your palm",
+            "ar": "افرد العجين براحة يدك",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                747,
+                791,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "flatten the dough with your palm",
+              "ar": "افرد العجين براحة يدك",
+              "kind": "phrase",
+              "x": 43,
+              "y": 84
+            },
+            {
+              "en": "flat dough",
+              "ar": "عجين مفرود",
+              "kind": "object",
+              "x": 46,
+              "y": 92
+            },
+            {
+              "en": "rolling pin",
+              "ar": "شوبك",
+              "kind": "object",
+              "x": 96,
+              "y": 92
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 7,
+          "en": "Fold both sides toward the middle",
+          "ar": "اطوِ الجانبين نحو الوسط",
+          "purposeEn": "Fold both sides toward the middle.",
+          "purposeAr": "اطوِ الجانبين نحو الوسط.",
+          "image": {
+            "id": "conv-life-l3-128-3",
+            "path": "assets/scenes/conversations/life-l3-128-3.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Fold both sides toward the middle",
+            "ar": "اطوِ الجانبين نحو الوسط",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                747,
+                1187,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "fold both sides toward the middle",
+              "ar": "اطوِ الجانبين نحو الوسط",
+              "kind": "phrase",
+              "x": 42,
+              "y": 83
+            },
+            {
+              "en": "folded dough",
+              "ar": "عجين مطوي",
+              "kind": "object",
+              "x": 41,
+              "y": 88
+            },
+            {
+              "en": "floured board",
+              "ar": "لوح مرشوش بالدقيق",
+              "kind": "object",
+              "x": 70,
+              "y": 88
+            }
+          ]
+        },
+        {
+          "from": 8,
+          "to": 8,
+          "en": "Try folding it a different way",
+          "ar": "جرّب طيّه بطريقة أخرى",
+          "purposeEn": "Try folding it a different way.",
+          "purposeAr": "جرّب طيّه بطريقة أخرى.",
+          "image": {
+            "id": "conv-life-l3-128-4",
+            "path": "assets/scenes/conversations/life-l3-128-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Try folding it a different way",
+            "ar": "جرّب طيّه بطريقة أخرى",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                747,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "try folding it a different way",
+              "ar": "جرّب طيّه بطريقة أخرى",
+              "kind": "phrase",
+              "x": 37,
+              "y": 78
+            },
+            {
+              "en": "first dough piece",
+              "ar": "قطعة العجين الأولى",
+              "kind": "object",
+              "x": 39,
+              "y": 88
+            },
+            {
+              "en": "second dough piece",
+              "ar": "قطعة العجين الثانية",
+              "kind": "object",
+              "x": 61,
+              "y": 87
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

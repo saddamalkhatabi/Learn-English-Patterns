@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "6a39326fc5d73705b7715794131fb5dee9f60c9eafa9883e1a6d44a511704ae5"
+  },
+  "conversations": [
+    {
+      "id": "l3-133",
+      "goalAr": "اختيار هدية عملية بدل هدية غالية",
+      "goalEn": "Choosing a practical gift instead of an expensive one",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Consider buying a new bicycle",
+          "ar": "فكّر في شراء دراجة جديدة",
+          "purposeEn": "Consider buying a new bicycle.",
+          "purposeAr": "فكّر في شراء دراجة جديدة.",
+          "image": {
+            "id": "conv-life-l3-133-1",
+            "path": "assets/scenes/conversations/life-l3-133-1.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Consider buying a new bicycle",
+            "ar": "فكّر في شراء دراجة جديدة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                393,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "consider buying a new bicycle",
+              "ar": "فكّر في شراء دراجة جديدة",
+              "kind": "phrase",
+              "x": 67,
+              "y": 54
+            },
+            {
+              "en": "new bicycle",
+              "ar": "دراجة جديدة",
+              "kind": "object",
+              "x": 82,
+              "y": 56
+            },
+            {
+              "en": "shop window",
+              "ar": "واجهة عرض المتجر",
+              "kind": "object",
+              "x": 72,
+              "y": 76
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Repair the old bike instead",
+          "ar": "أصلح الدراجة القديمة بدلًا من ذلك",
+          "purposeEn": "Repair the old bike instead.",
+          "purposeAr": "أصلح الدراجة القديمة بدلًا من ذلك.",
+          "image": {
+            "id": "conv-life-l3-133-2",
+            "path": "assets/scenes/conversations/life-l3-133-2.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Repair the old bike instead",
+            "ar": "أصلح الدراجة القديمة بدلًا من ذلك",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                3,
+                789,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "repair the old bike instead",
+              "ar": "أصلح الدراجة القديمة بدلًا من ذلك",
+              "kind": "phrase",
+              "x": 47,
+              "y": 75
+            },
+            {
+              "en": "bike chain",
+              "ar": "سلسلة دراجة",
+              "kind": "object",
+              "x": 49,
+              "y": 78
+            },
+            {
+              "en": "rear wheel",
+              "ar": "عجلة خلفية",
+              "kind": "object",
+              "x": 40,
+              "y": 50
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Check what parts the bike needs",
+          "ar": "تحقّق من القطع التي تحتاجها الدراجة",
+          "purposeEn": "Check what parts the bike needs.",
+          "purposeAr": "تحقّق من القطع التي تحتاجها الدراجة.",
+          "image": {
+            "id": "conv-life-l3-133-3",
+            "path": "assets/scenes/conversations/life-l3-133-3.webp",
+            "width": 392,
+            "height": 243,
+            "en": "Check what parts the bike needs",
+            "ar": "تحقّق من القطع التي تحتاجها الدراجة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                3,
+                1187,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "check what parts the bike needs",
+              "ar": "تحقّق من القطع التي تحتاجها الدراجة",
+              "kind": "phrase",
+              "x": 59,
+              "y": 61
+            },
+            {
+              "en": "spare chain",
+              "ar": "سلسلة احتياطية",
+              "kind": "object",
+              "x": 39,
+              "y": 66
+            },
+            {
+              "en": "bike light",
+              "ar": "مصباح دراجة",
+              "kind": "object",
+              "x": 88,
+              "y": 63
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Ask before buying any parts",
+          "ar": "اسأل قبل شراء أي قطع",
+          "purposeEn": "Ask before buying any parts.",
+          "purposeAr": "اسأل قبل شراء أي قطع.",
+          "image": {
+            "id": "conv-life-l3-133-4",
+            "path": "assets/scenes/conversations/life-l3-133-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Ask before buying any parts",
+            "ar": "اسأل قبل شراء أي قطع",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                3,
+                1583,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask before buying any parts",
+              "ar": "اسأل قبل شراء أي قطع",
+              "kind": "phrase",
+              "x": 49,
+              "y": 70
+            },
+            {
+              "en": "bicycle chain",
+              "ar": "سلسلة دراجة",
+              "kind": "object",
+              "x": 31,
+              "y": 72
+            },
+            {
+              "en": "thoughtful",
+              "ar": "متأمّل",
+              "kind": "description",
+              "x": 79,
+              "y": 44
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-134",
+      "goalAr": "السؤال عن تكلفة مشروع صغير",
+      "goalEn": "Asking how much a small project needs",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Estimate how much money you need",
+          "ar": "قدّر المبلغ الذي تحتاج إليه",
+          "purposeEn": "Estimate how much money you need.",
+          "purposeAr": "قدّر المبلغ الذي تحتاج إليه.",
+          "image": {
+            "id": "conv-life-l3-134-1",
+            "path": "assets/scenes/conversations/life-l3-134-1.webp",
+            "width": 390,
+            "height": 240,
+            "en": "Estimate how much money you need",
+            "ar": "قدّر المبلغ الذي تحتاج إليه",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                252,
+                393,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "estimate how much money you need",
+              "ar": "قدّر المبلغ الذي تحتاج إليه",
+              "kind": "phrase",
+              "x": 50,
+              "y": 64
+            },
+            {
+              "en": "calculator",
+              "ar": "آلة حاسبة",
+              "kind": "object",
+              "x": 84,
+              "y": 58
+            },
+            {
+              "en": "tape measure",
+              "ar": "شريط قياس",
+              "kind": "object",
+              "x": 56,
+              "y": 86
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Check whether you have enough wood",
+          "ar": "تحقّق مما إذا كان لديك خشب كافٍ",
+          "purposeEn": "Check whether you have enough wood.",
+          "purposeAr": "تحقّق مما إذا كان لديك خشب كافٍ.",
+          "image": {
+            "id": "conv-life-l3-134-2",
+            "path": "assets/scenes/conversations/life-l3-134-2.webp",
+            "width": 390,
+            "height": 240,
+            "en": "Check whether you have enough wood",
+            "ar": "تحقّق مما إذا كان لديك خشب كافٍ",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                252,
+                789,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "check whether you have enough wood",
+              "ar": "تحقّق مما إذا كان لديك خشب كافٍ",
+              "kind": "phrase",
+              "x": 51,
+              "y": 70
+            },
+            {
+              "en": "measuring tape",
+              "ar": "شريط قياس",
+              "kind": "object",
+              "x": 51,
+              "y": 71
+            },
+            {
+              "en": "short wooden board",
+              "ar": "لوح خشبي قصير",
+              "kind": "object",
+              "x": 42,
+              "y": 92
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Find one more piece for the long shelf",
+          "ar": "اعثر على قطعة أخرى للرف الطويل",
+          "purposeEn": "Find one more piece for the long shelf.",
+          "purposeAr": "اعثر على قطعة أخرى للرف الطويل.",
+          "image": {
+            "id": "conv-life-l3-134-3",
+            "path": "assets/scenes/conversations/life-l3-134-3.webp",
+            "width": 392,
+            "height": 240,
+            "en": "Find one more piece for the long shelf",
+            "ar": "اعثر على قطعة أخرى للرف الطويل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                252,
+                1187,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "find one more piece for the long shelf",
+              "ar": "اعثر على قطعة أخرى للرف الطويل",
+              "kind": "phrase",
+              "x": 54,
+              "y": 71
+            },
+            {
+              "en": "long wooden board",
+              "ar": "لوح خشبي طويل",
+              "kind": "object",
+              "x": 63,
+              "y": 85
+            },
+            {
+              "en": "shelf bracket",
+              "ar": "دعامة رف",
+              "kind": "object",
+              "x": 63,
+              "y": 35
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Take a sample to match the screw size",
+          "ar": "خذ عيّنة لمطابقة مقاس البرغي",
+          "purposeEn": "Take a sample to match the screw size.",
+          "purposeAr": "خذ عيّنة لمطابقة مقاس البرغي.",
+          "image": {
+            "id": "conv-life-l3-134-4",
+            "path": "assets/scenes/conversations/life-l3-134-4.webp",
+            "width": 390,
+            "height": 240,
+            "en": "Take a sample to match the screw size",
+            "ar": "خذ عيّنة لمطابقة مقاس البرغي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                252,
+                1583,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "take a sample to match the screw size",
+              "ar": "خذ عيّنة لمطابقة مقاس البرغي",
+              "kind": "phrase",
+              "x": 60,
+              "y": 32
+            },
+            {
+              "en": "screw",
+              "ar": "برغي",
+              "kind": "object",
+              "x": 63,
+              "y": 31
+            },
+            {
+              "en": "hardware organizer",
+              "ar": "صندوق تنظيم القطع المعدنية",
+              "kind": "object",
+              "x": 59,
+              "y": 88
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-135",
+      "goalAr": "التحقق من توفر المطلوب في المتجر",
+      "goalEn": "Checking whether a shop has what you need",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Check whether the shop is still open",
+          "ar": "تحقّق مما إذا كان المتجر لا يزال مفتوحًا",
+          "purposeEn": "Check whether the shop is still open.",
+          "purposeAr": "تحقّق مما إذا كان المتجر لا يزال مفتوحًا.",
+          "image": {
+            "id": "conv-life-l3-135-1",
+            "path": "assets/scenes/conversations/life-l3-135-1.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Check whether the shop is still open",
+            "ar": "تحقّق مما إذا كان المتجر لا يزال مفتوحًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                498,
+                393,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "check whether the shop is still open",
+              "ar": "تحقّق مما إذا كان المتجر لا يزال مفتوحًا",
+              "kind": "phrase",
+              "x": 58,
+              "y": 47
+            },
+            {
+              "en": "phone screen",
+              "ar": "شاشة هاتف",
+              "kind": "object",
+              "x": 49,
+              "y": 55
+            },
+            {
+              "en": "wall clock",
+              "ar": "ساعة حائط",
+              "kind": "object",
+              "x": 77,
+              "y": 19
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Offer to lend someone a sweater",
+          "ar": "اعرض إعارة شخص سترة صوفية",
+          "purposeEn": "Offer to lend someone a sweater.",
+          "purposeAr": "اعرض إعارة شخص سترة صوفية.",
+          "image": {
+            "id": "conv-life-l3-135-2",
+            "path": "assets/scenes/conversations/life-l3-135-2.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Offer to lend someone a sweater",
+            "ar": "اعرض إعارة شخص سترة صوفية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                498,
+                789,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "offer to lend someone a sweater",
+              "ar": "اعرض إعارة شخص سترة صوفية",
+              "kind": "phrase",
+              "x": 54,
+              "y": 57
+            },
+            {
+              "en": "folded sweater",
+              "ar": "سترة صوفية مطويّة",
+              "kind": "object",
+              "x": 55,
+              "y": 57
+            },
+            {
+              "en": "thick collar",
+              "ar": "ياقة سميكة",
+              "kind": "object",
+              "x": 48,
+              "y": 43
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Try on the sweater",
+          "ar": "جرّب ارتداء السترة",
+          "purposeEn": "Try on the sweater.",
+          "purposeAr": "جرّب ارتداء السترة.",
+          "image": {
+            "id": "conv-life-l3-135-3",
+            "path": "assets/scenes/conversations/life-l3-135-3.webp",
+            "width": 392,
+            "height": 243,
+            "en": "Try on the sweater",
+            "ar": "جرّب ارتداء السترة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                498,
+                1187,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "try on the sweater",
+              "ar": "جرّب ارتداء السترة",
+              "kind": "phrase",
+              "x": 45,
+              "y": 64
+            },
+            {
+              "en": "knitted sweater",
+              "ar": "سترة محبوكة",
+              "kind": "object",
+              "x": 40,
+              "y": 64
+            },
+            {
+              "en": "long sleeve",
+              "ar": "كمّ طويل",
+              "kind": "object",
+              "x": 58,
+              "y": 70
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Pack a sweater for a cold trip",
+          "ar": "احزم سترة لرحلة في جو بارد",
+          "purposeEn": "Pack a sweater for a cold trip.",
+          "purposeAr": "احزم سترة لرحلة في جو بارد.",
+          "image": {
+            "id": "conv-life-l3-135-4",
+            "path": "assets/scenes/conversations/life-l3-135-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Pack a sweater for a cold trip",
+            "ar": "احزم سترة لرحلة في جو بارد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                498,
+                1583,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "pack a sweater for a cold trip",
+              "ar": "احزم سترة لرحلة في جو بارد",
+              "kind": "phrase",
+              "x": 61,
+              "y": 76
+            },
+            {
+              "en": "travel bag",
+              "ar": "حقيبة سفر",
+              "kind": "object",
+              "x": 72,
+              "y": 88
+            },
+            {
+              "en": "open trunk",
+              "ar": "صندوق سيارة مفتوح",
+              "kind": "object",
+              "x": 89,
+              "y": 37
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-136",
+      "goalAr": "محاولة إصلاح لعبة قبل استبدالها",
+      "goalEn": "Trying to fix a toy before replacing it",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "See why the wheel came off",
+          "ar": "اعرف لماذا انفصلت العجلة",
+          "purposeEn": "See why the wheel came off.",
+          "purposeAr": "اعرف لماذا انفصلت العجلة.",
+          "image": {
+            "id": "conv-life-l3-136-1",
+            "path": "assets/scenes/conversations/life-l3-136-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "See why the wheel came off",
+            "ar": "اعرف لماذا انفصلت العجلة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                747,
+                393,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "see why the wheel came off",
+              "ar": "اعرف لماذا انفصلت العجلة",
+              "kind": "phrase",
+              "x": 51,
+              "y": 68
+            },
+            {
+              "en": "detached wheel",
+              "ar": "عجلة منفصلة",
+              "kind": "object",
+              "x": 51,
+              "y": 72
+            },
+            {
+              "en": "wooden toy car",
+              "ar": "سيارة لعبة خشبية",
+              "kind": "object",
+              "x": 27,
+              "y": 73
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Check if the pin still fits the hole",
+          "ar": "تحقّق مما إذا كان المسمار لا يزال يدخل في الثقب",
+          "purposeEn": "Check if the pin still fits the hole.",
+          "purposeAr": "تحقّق مما إذا كان المسمار لا يزال يدخل في الثقب.",
+          "image": {
+            "id": "conv-life-l3-136-2",
+            "path": "assets/scenes/conversations/life-l3-136-2.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Check if the pin still fits the hole",
+            "ar": "تحقّق مما إذا كان المسمار لا يزال يدخل في الثقب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                747,
+                789,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "check if the pin still fits the hole",
+              "ar": "تحقّق مما إذا كان المسمار لا يزال يدخل في الثقب",
+              "kind": "phrase",
+              "x": 53,
+              "y": 72
+            },
+            {
+              "en": "axle pin",
+              "ar": "مسمار محور العجلة",
+              "kind": "object",
+              "x": 41,
+              "y": 57
+            },
+            {
+              "en": "axle hole",
+              "ar": "ثقب محور العجلة",
+              "kind": "object",
+              "x": 65,
+              "y": 78
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Look for a spare washer",
+          "ar": "ابحث عن حلقة تثبيت احتياطية",
+          "purposeEn": "Look for a spare washer.",
+          "purposeAr": "ابحث عن حلقة تثبيت احتياطية.",
+          "image": {
+            "id": "conv-life-l3-136-3",
+            "path": "assets/scenes/conversations/life-l3-136-3.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Look for a spare washer",
+            "ar": "ابحث عن حلقة تثبيت احتياطية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                747,
+                1187,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "look for a spare washer",
+              "ar": "ابحث عن حلقة تثبيت احتياطية",
+              "kind": "phrase",
+              "x": 61,
+              "y": 52
+            },
+            {
+              "en": "spare washer",
+              "ar": "حلقة تثبيت احتياطية",
+              "kind": "object",
+              "x": 63,
+              "y": 49
+            },
+            {
+              "en": "parts box",
+              "ar": "صندوق قطع",
+              "kind": "object",
+              "x": 29,
+              "y": 87
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Make sure the wheel turns properly",
+          "ar": "تأكّد من أن العجلة تدور جيدًا",
+          "purposeEn": "Make sure the wheel turns properly.",
+          "purposeAr": "تأكّد من أن العجلة تدور جيدًا.",
+          "image": {
+            "id": "conv-life-l3-136-4",
+            "path": "assets/scenes/conversations/life-l3-136-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Make sure the wheel turns properly",
+            "ar": "تأكّد من أن العجلة تدور جيدًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                747,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "make sure the wheel turns properly",
+              "ar": "تأكّد من أن العجلة تدور جيدًا",
+              "kind": "phrase",
+              "x": 45,
+              "y": 76
+            },
+            {
+              "en": "attached wheel",
+              "ar": "عجلة مثبّتة",
+              "kind": "object",
+              "x": 35,
+              "y": 77
+            },
+            {
+              "en": "toy bin",
+              "ar": "صندوق ألعاب",
+              "kind": "object",
+              "x": 86,
+              "y": 83
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
