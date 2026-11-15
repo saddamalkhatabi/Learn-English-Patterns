@@ -13,7 +13,7 @@ function ideaViewer(scene){
  const multiple=page==='scene-studio'?studioMatches().length>1:findIdeaScenes().length>1;
  return `<div id="idea-scene-viewer">
   <div class="idea-picture-frame" style="--smart-ratio:${scene.width/scene.height}">${ideaPicture(scene)}<div id="idea-picture-labels"></div></div>
-  <div id="idea-picture-caption" class="idea-picture-caption"></div>
+  <div id="idea-picture-caption" class="idea-picture-caption" aria-live="polite" aria-atomic="true"></div>
   <div class="idea-viewer-tools">
    <div class="idea-viewer-bar">
     <button class="secondary" data-idea-scene-step ${multiple?'':'disabled'} onclick="page==='scene-studio'?stepStudioScene(-1):stepIdeaScene(-1)" aria-label="${T('المشهد السابق','Previous scene')}">‹</button>
@@ -35,14 +35,16 @@ function ideaViewer(scene){
      <option value="male" ${ideaSoloVoice==='male'?'selected':''}>Adam</option><option value="female" ${ideaSoloVoice==='female'?'selected':''}>Bella</option>
     </select></label>
    </div>
-   <p class="idea-picture-hint">${T('انقر علامةً لعرض معناها مؤقتًا. تظهر ترجمة الكلمات أسفل الصورة أثناء الوميض.','Tap a marker to reveal its meaning briefly. Flashes show the translation below the picture.')}</p>
+   <p class="idea-picture-hint">${page==='scene-studio'?
+    T('انقر كلمة أو علامة. تظهر الكلمة بالإنجليزية على الصورة وترجمتها أسفلها، وتبقى ظاهرة أثناء النطق.','Tap a word or marker. The English appears on the picture and the translation below, including during pronunciation.'):
+    T('انقر علامةً لعرض معناها مؤقتًا. تظهر ترجمة الكلمات أسفل الصورة أثناء الوميض.','Tap a marker to reveal its meaning briefly. Flashes show the translation below the picture.')}</p>
    <div class="idea-zoom-audio">${ideaAudioControls()}</div></details>
   </div></div>`;
 }
 
 function ideaAudioControls(){
  return `<div class="idea-audio-tools">
-  <button type="button" class="secondary" onclick="startIdeaSequence(ideaFlashVoice,true)">▷ ${T('انطق كل الكلمات','Play all words')}</button>
+  <button type="button" class="secondary" onclick="startIdeaSequence(ideaFlashVoice,true,true)">▷ ${T('انطق كل الكلمات','Play all words')}</button>
   <button type="button" class="secondary" data-idea-sync aria-pressed="${ideaFlashVoice}" onclick="toggleIdeaFlashVoice()">${T('مزامنة الوميض مع النطق','Sync flashes with audio')}</button>
   <button type="button" class="secondary" data-idea-stop onclick="setIdeaWordMode('hidden',false)" hidden>${T('إيقاف','Stop')}</button>
   <small data-idea-audio-status role="status"></small></div>`;
@@ -137,21 +139,33 @@ function ideaLabelText(word,language){
 function updateIdeaCaption(word,language){
  const caption=$('#idea-picture-caption');
  if(!caption)return;
- caption.innerHTML=word?ideaLabelText(word,language)+wordTypeBadge(word):'';
+ caption.innerHTML=word?ideaLabelText(word,language)+(page==='scene-studio'?'':wordTypeBadge(word)):'';
 }
 
-function showIdeaMarker(index,voice){
+function showIdeaMarker(index,voice,fromList=false){
  const scene=currentIdeaScene(),word=scene?.words[index];
  if(!word)return;
  if(voice)stopSpeech();
  clearIdeaFlash();
  if(ideaWordMode==='flash'){ideaWordMode='hidden';updateIdeaModeButtons()}
  ideaSelected=index;
- const language=ideaLabelLanguage==='ar'?'en':'ar';
- updateIdeaCaption(word,language==='en'?'both':'ar');
- const anchored=Number.isFinite(word.x)&&Number.isFinite(word.y);
- if(ideaWordMode==='visible')paintIdeaPoints(visibleIdeaWords(scene).filter(w=>Number.isFinite(w.x)&&Number.isFinite(w.y)),ideaLabelLanguage,language);
- else paintIdeaPoints(anchored?[{...word,index}]:[],language);
+ if(page==='scene-studio'){
+  paintStudioWord(scene,{...word,index});
+  if(fromList)revealStudioPicture();
+ }
+ else{
+  const language=ideaLabelLanguage==='ar'?'en':'ar';
+  updateIdeaCaption(word,language==='en'?'both':'ar');
+  if(ideaWordMode==='visible')paintIdeaPoints(visibleIdeaWords(scene).filter(hasIdeaPoint),ideaLabelLanguage,language);
+  else paintIdeaPoints(hasIdeaPoint(word)?[{...word,index}]:[],language);
+ }
+ const restore=()=>{
+  ideaRevealTimer=setTimeout(()=>{
+   ideaSelected=null;
+   paintIdeaLabels(scene);
+   updateIdeaPlayback();
+  },2400);
+ };
  if(voice){
   const playback=pronounceIdeaWord(word,voice,name=>{
    queueMicrotask(()=>{if(ideaVoice===playback)updateIdeaPlayback(`${word.en} · ${name}`)});
@@ -161,35 +175,55 @@ function showIdeaMarker(index,voice){
    if(ideaVoice!==playback)return;
    ideaVoice=null;
    updateIdeaPlayback(ok?'':T('تعذّر النطق. جرّب مرة أخرى.','Playback failed. Try again.'));
+   restore();
   });
- }
+ }else restore();
  updateIdeaPlayback();
- ideaRevealTimer=setTimeout(()=>{
-  ideaSelected=null;
-  paintIdeaLabels(scene);
-  updateIdeaPlayback();
- },2400);
 }
 
-function paintIdeaPoints(words,language,selectedLanguage=language){
+function hasIdeaPoint(word){return Number.isFinite(word.x)&&Number.isFinite(word.y)}
+
+function revealStudioPicture(){
+ const picture=$('#idea-scene-viewer .idea-picture-frame'),caption=$('#idea-picture-caption');
+ if(!picture||!caption)return;
+ if(picture.getBoundingClientRect().top<0||caption.getBoundingClientRect().bottom>window.innerHeight)
+  picture.scrollIntoView({block:'start'});
+}
+
+function paintStudioWord(scene,word,isolated=false){
+ const points=isolated?(hasIdeaPoint(word)?[word]:[]):visibleIdeaWords(scene).filter(hasIdeaPoint);
+ paintIdeaPoints(points,ideaWordMode==='visible'?ideaLabelLanguage:null,'en',word);
+ updateIdeaCaption(word,'ar');
+}
+
+function paintIdeaPoints(words,language,selectedLanguage=language,featuredWord=null){
  const layer=$('#idea-picture-labels');
  if(!layer)return;
+ const focused=document.activeElement,focusedIndex=layer.contains(focused)?focused.closest('[data-word]')?.dataset.word:null;
  layer.innerHTML='<svg class="idea-map-leaders" aria-hidden="true"></svg>'+words.map(word=>{
   const name=H(word.en+' · '+word.ar),selected=ideaSelected===word.index;
+  const labelLanguage=selected?selectedLanguage:language;
   const type=EPVocabulary.types[EPVocabulary.posFor(word)]||EPVocabulary.types.X;
   return `<div class="idea-map-point word-type-${type.color} ${selected?'selected':''}" data-word="${word.index}" style="--x:${word.x}%;--y:${word.y}%">
    <button type="button" class="idea-pin" onclick="showIdeaMarker(${word.index})" aria-label="${name}">${word.index+1}</button>
-   <button type="button" class="idea-map-label" onclick="showIdeaMarker(${word.index})">${ideaLabelText(word,selected?selectedLanguage:language)}</button></div>`;
- }).join('');
+   ${labelLanguage?`<button type="button" class="idea-map-label" onclick="showIdeaMarker(${word.index})">${ideaLabelText(word,labelLanguage)}</button>`:''}</div>`;
+ }).join('')+(featuredWord?`<span class="idea-map-featured" hidden lang="en" dir="ltr">${H(featuredWord.en)}</span>`:'');
  positionIdeaLabels();
+ if(focusedIndex!=null){
+  const point=layer.querySelector(`[data-word="${focusedIndex}"]`);
+  const label=point?.querySelector('.idea-map-label');
+  const target=focused.classList.contains('idea-map-label')&&label?.style.visibility==='visible'?label:point?.querySelector('.idea-pin');
+  target?.focus({preventScroll:true});
+ }
 }
 
 function paintIdeaLabels(scene){
  const layer=$('#idea-picture-labels');
  if(!scene||!layer)return;
  updateIdeaCaption(null);
- const words=visibleIdeaWords(scene).filter(word=>Number.isFinite(word.x)&&Number.isFinite(word.y));
+ const words=visibleIdeaWords(scene).filter(hasIdeaPoint);
  if(ideaWordMode==='visible')paintIdeaPoints(words,ideaLabelLanguage==='alternate'?'en':ideaLabelLanguage);
+ else if(page==='scene-studio'&&ideaWordMode==='hidden')paintIdeaPoints(words,null);
  else layer.innerHTML='';
 }
 
@@ -220,7 +254,7 @@ function playIdeaAudio(text,cueId,voice,onVoice=()=>{}){
  return {done,stop(){stopped=true;audio?.pause();fallback?.stop();finish(false)}};
 }
 
-function startIdeaSequence(flash,sound){
+function startIdeaSequence(flash,sound,fromControl=false){
  const scene=currentIdeaScene();
  if(!scene)return;
  if(sound)stopSpeech();
@@ -228,6 +262,7 @@ function startIdeaSequence(flash,sound){
  const words=visibleIdeaWords(scene);
  if(!words.length){setIdeaWordMode('hidden',false);updateIdeaPlayback(T('لا توجد مفردات ضمن هذا الفلتر.','No vocabulary matches this filter.'));return}
  const sequence={flash,sound};
+ const studioAudioWords=sound&&page==='scene-studio';
  ideaSequence=sequence;
  if(flash)ideaWordMode='flash';
  else if(ideaWordMode==='flash'){ideaWordMode='hidden';paintIdeaLabels(scene)}
@@ -242,17 +277,19 @@ function startIdeaSequence(flash,sound){
   }
   const word=words[index],voice=index%2?'female':'male';
   const language=ideaLabelLanguage==='alternate'?'en':ideaLabelLanguage;
-  const anchored=Number.isFinite(word.x)&&Number.isFinite(word.y);
   ideaSelected=word.index;
   const paint=label=>{
-   if(flash)paintIdeaPoints(anchored?[word]:[],label);
+   if(studioAudioWords){paintStudioWord(scene,word,flash);return}
+   if(flash)paintIdeaPoints(hasIdeaPoint(word)?[word]:[],label);
    updateIdeaCaption(word,label==='ar'?'both':'ar');
   };
   paint(language);
+  if(studioAudioWords&&fromControl&&index===0)revealStudioPicture();
   const progress=T(`الكلمة ${index+1} من ${words.length}`,`Word ${index+1} of ${words.length}`);
   updateIdeaPlayback(progress+' · '+word.en);
   const next=()=>{
-   if(flash)paintIdeaPoints([],language);
+   if(studioAudioWords){ideaSelected=null;paintIdeaLabels(scene);updateIdeaPlayback()}
+   else if(flash)paintIdeaPoints([],language);
    ideaFlashTimer=setTimeout(()=>play(index+1),350);
   };
   if(sound){
@@ -267,7 +304,7 @@ function startIdeaSequence(flash,sound){
   }
   const wait=sound?650:1550;
   ideaFlashTimer=setTimeout(()=>{
-   if(flash&&ideaLabelLanguage==='alternate'){
+   if(flash&&!studioAudioWords&&ideaLabelLanguage==='alternate'){
     paint('ar');ideaFlashTimer=setTimeout(next,wait);
    }else next();
   },wait);
@@ -285,12 +322,15 @@ function positionIdeaLabels(){
  const layer=$('#idea-picture-labels');
  if(!layer?.clientWidth)return;
  const points=[...layer.querySelectorAll('.idea-map-point')];
+ const featured=layer.querySelector('.idea-map-featured');
+ if(featured)featured.hidden=false;
  if(!points.length)return;
  const width=layer.clientWidth,height=layer.clientHeight;
  const occupied=[],locations=new Map(),leaders=[];
  const overlap=(a,b)=>a.x<b.x+b.w+3&&a.x+a.w+3>b.x&&a.y<b.y+b.h+3&&a.y+a.h+3>b.y;
  const box=(x,y,w,h)=>({x:Math.min(Math.max(x,2),Math.max(2,width-w-2)),y:Math.min(Math.max(y,2),Math.max(2,height-h-2)),w,h});
  const free=candidates=>candidates.find(candidate=>!occupied.some(other=>overlap(candidate,other)));
+ points.sort((a,b)=>Number(b.classList.contains('selected'))-Number(a.classList.contains('selected')));
  for(const point of points){
   const pin=point.querySelector('.idea-pin'),w=pin.offsetWidth,h=pin.offsetHeight;
   const x=point.offsetLeft,y=point.offsetTop,step=w+5;
@@ -306,9 +346,9 @@ function positionIdeaLabels(){
   const cx=place.x+w/2,cy=place.y+h/2;
   if(Math.hypot(cx-x,cy-y)>3)leaders.push(`<line x1="${x}" y1="${y}" x2="${cx}" y2="${cy}"/><circle cx="${x}" cy="${y}" r="2.5"/>`);
  }
- points.sort((a,b)=>Number(b.classList.contains('selected'))-Number(a.classList.contains('selected')));
  for(const point of points){
   const label=point.querySelector('.idea-map-label'),pin=locations.get(point);
+  if(!label)continue;
   const w=label.offsetWidth,h=label.offsetHeight;
   const candidates=pin?[box(pin.x+pin.w+6,pin.y+(pin.h-h)/2,w,h),box(pin.x-w-6,pin.y+(pin.h-h)/2,w,h),
    box(pin.x+(pin.w-w)/2,pin.y-h-6,w,h),box(pin.x+(pin.w-w)/2,pin.y+pin.h+6,w,h),
@@ -319,6 +359,7 @@ function positionIdeaLabels(){
   label.style.left=`${place.x-point.offsetLeft}px`;
   label.style.top=`${place.y-point.offsetTop}px`;
   occupied.push(place);
+  if(featured&&point.classList.contains('selected'))featured.hidden=true;
  }
  layer.querySelector('svg').innerHTML=leaders.join('');
 }

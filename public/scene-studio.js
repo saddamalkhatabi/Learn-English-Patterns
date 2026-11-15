@@ -1,5 +1,5 @@
 /* Archive labels are derived from the original brief, sentence and course tags. */
-let sceneArchive, studioPage=0, studioAudio=null;
+let sceneArchive, studioPage=0, studioAudio=null, studioMode='photos';
 const archiveReady=Promise.all([fetch('scene-archive.json').then(r=>r.ok?r.json():null).catch(()=>null),courseScriptsReady]).then(([data])=>data);
 const normalizeSceneQuery=value=>String(value).normalize('NFKD').toLowerCase()
  .replace(/[\u064b-\u065f\u0670\u0640]/g,'').replace(/[أإآ]/g,'ا');
@@ -20,8 +20,12 @@ const scenePrompts={
 function sceneStudioPage(){
  const topics=sceneArchive?.topics||[];
  return head(T('مكتبة الصور الذكية','Smart photo library'),T(
-  'ابحث عن صورة من الأرشيف، واستمع إلى جملتها، ثم استخدمها لبدء محادثة حرّة.',
-  'Find an archived photo, listen to its sentence, then use it to start an open conversation.'))+epSectionLinks(['references','lab'])+
+  'تعلّم من صورة واحدة، أو تأمّل تسلسل محادثة وابتكر حوارك.',
+  'Learn from a single photo or explore a conversation sequence and write your own dialogue.'))+
+  `<nav class="studio-tabs" aria-label="${T('أقسام مكتبة الصور','Photo library sections')}">
+   <button type="button" class="secondary" data-studio-mode="photos" aria-pressed="${studioMode==='photos'}" onclick="setStudioMode(this.dataset.studioMode)">${T('تصفّح الصور','Browse photos')}</button>
+   <button type="button" class="secondary" data-studio-mode="journeys" aria-pressed="${studioMode==='journeys'}" onclick="setStudioMode(this.dataset.studioMode)">${T('مشاهد المحادثات','Conversation scenes')}</button>
+  </nav>`+(studioMode==='journeys'?studioJourneysPage():epSectionLinks(['references','lab'])+
   `<div class="toolbar"><input type="search" id="scene-studio-query" oninput="studioPage=0;paintSceneStudio()" placeholder="${T('مسبح، مكتبة، train…','Pool, library, قطار…')}" aria-label="${T('بحث المشاهد','Search scenes')}">
   <select id="scene-studio-topic" onchange="studioPage=0;paintSceneStudio()" aria-label="${T('موضوع المشهد','Scene topic')}"><option value="">${T('كل الموضوعات','All topics')}</option><option value="conversation">${T('مشاهد المحادثات','Conversation scenes')}</option>${topics.map(t=>`<option value="${t.id}">${H(T(t.ar,t.en))}</option>`).join('')}</select>
   ${smartLibraryFilters()}<button class="secondary" onclick="surpriseScene()">${T('اقترح مشهدًا','Suggest a scene')}</button></div>
@@ -30,12 +34,20 @@ function sceneStudioPage(){
   <p id="scene-studio-count" role="status"></p>
   <div id="scene-studio-results" class="scene-studio-grid"></div><div class="buttonrow">
    <button class="secondary" id="scene-studio-prev" onclick="studioPage--;paintSceneStudio()">${T('السابق','Previous')}</button>
-   <button class="secondary" id="scene-studio-next" onclick="studioPage++;paintSceneStudio()">${T('التالي','Next')}</button></div>`;
+   <button class="secondary" id="scene-studio-next" onclick="studioPage++;paintSceneStudio()">${T('التالي','Next')}</button></div>`);
+}
+function setStudioMode(mode){
+ if(mode===studioMode)return;
+ studioMode=mode;studioOpenEpoch++;
+ clearIdeaFlash();
+ render();
+ $(`[data-studio-mode="${mode}"]`)?.focus();
 }
 function studioMatches(){
  const tokens=normalizeSceneQuery($('#scene-studio-query')?.value||'').trim().split(/\s+/).filter(Boolean);
  const topic=$('#scene-studio-topic')?.value, topics=new Map(sceneArchive?.topics.map(t=>[t.id,t])||[]);
  const sentences=new Map([...(PILOT?.sentences||[]),...(REFERENCE_CORPUS?.sentences||[])].map(s=>[s.id,s]));
+ const dialogues=new Map((PILOT?.dialogues||[]).map(dialogue=>[dialogue.id,dialogue]));
  const originals=(sceneArchive?.scenes||[]).flatMap(item=>{
   const row=sentences.get(item.id);
   if(!row||!matchesStudioContext(row)||topic&&!item.topics.includes(topic))return [];
@@ -46,7 +58,7 @@ function studioMatches(){
  const conversations=(!topic||topic==='conversation')?(ideaLibrary?.scenes||[]).flatMap(scene=>{
   const location=dialogueSceneLocations.get(scene.id);
   if(!location)return [];
-  const dialogue=PILOT?.dialogues.find(dialogue=>dialogue.id===location.id);
+  const dialogue=dialogues.get(location.id);
   const row={id:scene.id,pattern_ids:scene.patterns.map(pattern=>pattern.id)};
   if(!matchesStudioContext(row))return [];
   const text=normalizeSceneQuery([scene.en,scene.ar,scene.sentenceEn,scene.sentenceAr,dialogue?.en,dialogue?.ar,
@@ -56,6 +68,7 @@ function studioMatches(){
  return studioPattern?[...originals,...conversations]:[...conversations,...originals];
 }
 function paintSceneStudio(){
+ if(studioMode==='journeys'){paintStudioJourneys();return}
  if(!$('#scene-studio-results'))return;
  const matches=studioMatches(), total=Math.max(1,Math.ceil(matches.length/24));
  studioPage=Math.max(0,Math.min(studioPage,total-1));
@@ -125,6 +138,8 @@ function playStudioSentence(id,voice){
 }
 labels['scene-studio']='مكتبة الصور الذكية';
 if(location.hash==='#scene-studio')page='scene-studio';
+const stopSpeechBeforeStudio=stopSpeech;
+stopSpeech=function(){studioAudio?.pause();stopSpeechBeforeStudio()};
 const renderBeforeSceneStudio=render;
 render=function(){
  studioAudio?.pause();
@@ -134,22 +149,31 @@ render=function(){
 };
 archiveReady.then(data=>{sceneArchive=data;if(page==='scene-studio')render()});
 pilotReady.then(()=>{if(page==='scene-studio')paintSceneStudio()});
-Promise.all([dialogueArchiveReady,pilotReady]).then(()=>{if(page==='scene-studio'&&!$('#scene-studio-active')?.children.length)render()});
+Promise.all([dialogueArchiveReady,pilotReady,dialoguePlanReady]).then(()=>{if(page==='scene-studio')paintSceneStudio()});
 function playStudioDialogueTurn(id){
  const location=dialogueSceneLocations.get(id);
  const dialogue=PILOT?.dialogues.find(row=>row.id===location?.id);
- const turn=dialogue?.audio?.turns[location.turn];
- if(!turn)return;
- stopSpeech();studioAudio?.pause();
+ if(dialogue)playStudioDialogueRange(dialogue,location.turn,location.turn,$('#scene-studio-active'));
+}
+function playStudioDialogueRange(dialogue,from,to,host,byTurn=false){
+ const turns=dialogue?.audio?.turns;
+ if(!turns?.[from]||!turns[to]||!host)return;
+ stopSpeech();
  const audio=new Audio(dialogue.audio.path);
  studioAudio=audio;
- audio.currentTime=turn.start_ms/1000;
- const words=$('#scene-studio-active').querySelectorAll('[data-dialogue-word]');
+ audio.playbackRate=state.rate||1;
+ audio.currentTime=turns[from].start_ms/1000;
+ const spans=Array.from({length:to-from+1},(_,index)=>{
+  const line=byTurn?host.querySelector(`[data-studio-dialogue-turn="${from+index}"]`):host;
+  return [...(line?.querySelectorAll('[data-dialogue-word]')||[])];
+ });
  const paint=()=>{
   const ms=audio.currentTime*1000;
-  if(ms>=turn.end_ms)audio.pause();
-  const index=audio.paused?-1:turn.words.findIndex(word=>word.start_ms<=ms&&ms<word.end_ms);
-  words.forEach((word,i)=>word.classList.toggle('speaking',index===i));
+  if(!audio.paused&&ms>=turns[to].end_ms)audio.pause();
+  spans.forEach((words,offset)=>{
+   const index=audio.paused?-1:turns[from+offset].words.findIndex(word=>word.start_ms<=ms&&ms<word.end_ms);
+   words.forEach((word,i)=>word.classList.toggle('speaking',index===i));
+  });
  };
  audio.addEventListener('timeupdate',paint);
  audio.addEventListener('pause',paint);

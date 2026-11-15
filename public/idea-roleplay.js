@@ -99,13 +99,14 @@ function sendIdeaGuided(){
  const turns=ideaGuided.get(ideaPracticeKey(currentIdeaScene()));
  const input=$('#idea-guided-reply'),en=input?.value.trim();
  if(!scene||!turns||!en||turns.length>=8)return;
- const next=[
+ const followup=scene.practiceFollowups?.[(turns.length-1)/2];
+ const next=followup?.[1]||[
   `Choose one visible detail, such as “${scene.words[0]?.en||'something in the scene'}”. How would you use it in your next reply?`,
   ideaFollowups[scene.topic]||'How would you answer if the situation changed?',
   'How would you close this conversation politely?'
  ][(turns.length-1)/2];
  turns.push({speaker:T('أنت','You'),en,ar:'',user:true});
- if(next)turns.push({speaker:T('الشريك','Partner'),en:next,ar:''});
+ if(next)turns.push({speaker:T('الشريك','Partner'),en:next,ar:followup?.[0]||''});
  paintIdeaGuided();
  $('#idea-guided-reply')?.focus();
 }
@@ -181,6 +182,12 @@ function openIdeaArchivedDialogue(id){ideaArchiveView=id;paintIdeaArchive()}
 async function openIdeaArchiveScene(){
  const id=ideaArchiveView;
  const entry=ideaArchive.find(row=>row.id===id);
+ if(entry?.sceneId.startsWith('journey:')){
+  await openStudioJourney(entry.sceneId.slice(8));
+  ideaArchiveView=id;paintIdeaArchive();
+  const details=$('.idea-archive');if(details)details.open=true;
+  return;
+ }
  if(entry?.sceneId.startsWith('studio:')){
   await openSmartSentence(entry.sceneId.slice(7));ideaArchiveView=id;paintIdeaArchive();
   const details=$('.idea-archive');if(details)details.open=true;

@@ -74,6 +74,7 @@ html[data-pattern-image="hidden"] .dialogue-thumb,html[data-pattern-image="hidde
 .idea-map-leaders{position:absolute;inset:0;width:100%;height:100%;overflow:visible;stroke:#fff;stroke-width:1.5;fill:#216a55;filter:drop-shadow(0 1px 1px #193d30)}
 .idea-map-point.selected .idea-pin{background:#8e401f}
 .idea-map-point.selected .idea-map-label{outline:2px solid #a85627}
+.idea-map-featured{position:absolute;z-index:2;inset:auto 10% 8%;width:fit-content;max-width:80%;margin-inline:auto;padding:.3rem .55rem;border:2px solid #a85627;border-radius:6px;background:#fffdf1;color:#193d30;font-size:.85rem;font-weight:700;text-align:center;overflow-wrap:anywhere}
 .idea-picture-caption{min-height:2.4rem;display:flex;align-items:center;justify-content:center;gap:.55rem;padding:.2rem .4rem;color:#193d30;font-weight:700}
 .idea-caption-kind{padding:.18rem .45rem;border-radius:20px;background:#e5eee2;color:#375846;font-size:.75rem}
 .idea-viewer-options{display:flex;gap:.5rem;flex-wrap:wrap}
@@ -149,6 +150,7 @@ html[dir="rtl"] .idea-viewer-bar [data-idea-scene-step]{transform:scaleX(-1)}
 .idea-target-line{display:grid;gap:.15rem;padding:.5rem .65rem;background:#fff4ef;border-radius:8px}
 .idea-vocab li:has(.idea-single-word){display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center}
 .idea-vocab .idea-single-word{min-width:2.5rem;min-height:2.5rem;padding:.35rem}
+.idea-vocab .idea-show-word{padding:0 .15rem;color:#1a5b4b;background:transparent;font-weight:700;text-decoration:underline;text-underline-offset:.15em;text-align:left;overflow-wrap:anywhere}
 .dialogue-journey{display:grid;grid-template-columns:minmax(0,1fr) minmax(135px,.7fr) minmax(0,1fr);grid-template-rows:auto auto;gap:.65rem;align-items:center;margin-block:.8rem;background:radial-gradient(ellipse,#dfece3 0,transparent 65%);border-radius:15px}
 .journey-center{grid-column:2;grid-row:1/3;text-align:center;padding:.55rem}
 .journey-center>span{font-size:.72rem;letter-spacing:.02em;color:#526c60}
@@ -202,6 +204,30 @@ html body .idea-picture-frame>.scene-frame>.scene-photo{width:100%!important;max
 .vocabulary-selected mark{background:#ffe5d8;color:#993c21;border-radius:3px;padding:.1rem}
 .vocabulary-filters label{display:grid;gap:.25rem;flex:1;min-width:min(100%,150px)}
 .studio-dialogue-area>.studio-ai{margin-top:.6rem}
+.studio-tabs{display:flex;flex-wrap:wrap;gap:.5rem;margin-block:0 1rem}
+.studio-tabs [aria-pressed="true"]{background:#173c36;color:#fff;border-color:#173c36}
+.studio-journey-filters label{display:grid;gap:.25rem;min-width:0}
+.studio-journey-card .textlink{display:block;text-align:start;margin-block:.3rem}
+.studio-journey-workspace h2{scroll-margin-top:5rem}
+.studio-journey-frames{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.8rem;list-style:none;margin:1rem 0;padding:0}
+.studio-journey-frames>li{min-width:0;border:1px solid #d8e5d9;border-radius:12px;overflow:hidden;background:#f6faf6}
+.studio-journey-frames figure{margin:0}
+.studio-journey-frames img{display:block;width:100%;height:auto;aspect-ratio:5/3;object-fit:contain;background:#e7efe9}
+.studio-journey-frames figcaption{padding:.65rem}
+.studio-journey-frames details{margin-top:.45rem}
+.studio-journey-labels,.studio-journey-terms{list-style:none;margin:.5rem 0;padding:0}
+.studio-journey-labels>li,.studio-journey-terms>li{padding:.45rem 0;border-block-end:1px solid #d8e5d9;overflow-wrap:anywhere}
+.studio-journey-labels label{display:flex;align-items:flex-start;gap:.45rem;cursor:pointer}
+.studio-journey-labels input{flex:none;margin: .3rem 0 0}
+.studio-journey-labels .ar-content,.idea-vocab .textlink{display:block}
+.idea-vocab .textlink{grid-column:1/-1;justify-self:start}
+.studio-journey-practice,.studio-journey-transcript{padding:.85rem 1rem;margin-block:1rem;background:#f0f7f3;border-radius:12px}
+#studio-journey-chosen:empty{display:none}
+.studio-journey-transcript h4,.studio-journey-transcript p,.studio-journey-terms p{margin:.25rem 0}
+.studio-journey-transcript [data-studio-dialogue-turn]{margin-block:.6rem}
+.studio-journey-terms{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,12rem),1fr));gap:.2rem .65rem}
+@media(max-width:950px){.studio-journey-frames{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.studio-journey-frames{grid-template-columns:1fr}}
 .vocabulary-scene-links{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:.6rem;margin-block:.6rem}
 .vocabulary-scene-card{padding:.4rem;border:1px solid #d8e5d9;background:white;border-radius:10px;text-align:start}
 .vocabulary-scene-card img{width:100%;height:auto;display:block;border-radius:8px}

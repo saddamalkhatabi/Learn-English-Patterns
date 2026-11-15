@@ -1,9 +1,12 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs');
 const vocabulary=require('../public/vocabulary-index.json');
-const {includesTerm,normalize,tokens}=require('../public/vocabulary-core.js');
+const {includesTerm,normalize,posFor,tokens}=require('../public/vocabulary-core.js');
 const {scenes,lifecycles}=require('../public/conversation-scenes.json');
 const dialogues=new Map(require('../public/dialogues.json').dialogues.map(d=>[d.id,d]));
 const audio=require('../public/dialogue-audio.json');
+const trainingAudio=require('../public/training-audio.json');
+const {ideaWordCueId}=require('../public/training-narration.js');
+const offline=new Set(require('../public/offline-manifest.json').media.map(entry=>entry.path));
 test('the shipped browser scripts parse together as classic scripts',()=>{
  const vm=require('node:vm'),html=fs.readFileSync('public/index.html','utf8');
  const files=[...html.matchAll(/<script src="([^"]+)"/g)].map(match=>match[1]);
@@ -14,7 +17,9 @@ test('reviewed conversation stages cover every turn and use their measured audio
  const {lifecycles:authored,words:reviewedAtlasWords}=require('../scripts/conversation-scene-sources.cjs');
  assert.deepEqual(Object.keys(lifecycles),Object.keys(authored));
  const annotations=new Map(require('../public/idea-scenes.json').scenes.map(scene=>[scene.id,scene]));
+ const entryByKey=new Map(vocabulary.entries.map(entry=>[normalize(entry.en)+'|'+entry.pos,entry]));
  const images=new Set();
+ assert.equal(Object.keys(lifecycles).length,dialogues.size);
  for(const [id,life] of Object.entries(lifecycles)){
   const dialogue=dialogues.get(id);let next=1;
   assert.equal(life.stages.length,4,id);
@@ -35,7 +40,21 @@ test('reviewed conversation stages cover every turn and use their measured audio
    const annotation=annotations.get(image.id);
    assert.equal(annotation.sha256,image.sha256,id);
    assert(annotation.words.length>=2&&annotation.words.every(word=>Number.isFinite(word.x)&&Number.isFinite(word.y)),id);
-   assert(annotation.words.every(word=>vocabulary.entries.some(entry=>normalize(entry.en)===normalize(word.en)&&entry.sceneIds.includes(image.id))),id);
+   for(const word of annotation.words){
+    const pos=posFor(word),entry=entryByKey.get(normalize(word.en)+'|'+pos);
+    assert(entry?.ar&&entry.sceneIds.includes(image.id),word.en);
+    const use=entry.sourceIds.map(index=>vocabulary.sources[index]).find(source=>
+     source.type==='idea-word'&&source.id===image.id&&source.en===word.en&&source.ar===word.ar&&source.pos===pos);
+    assert(use,word.en);
+    assert.deepEqual(use.patternIds,annotation.patterns.map(pattern=>pattern.id),image.id);
+    for(const voice of ['male','female']){
+     const clip=trainingAudio[ideaWordCueId(word.en,voice)];
+     if(clip){
+      assert.equal(clip.text,word.en);
+      assert(offline.has(clip.path),clip.path);
+     }else assert.notEqual(process.env.DIALOGUE_AUDIO_REQUIRED,'1',word.en+' · '+voice);
+    }
+   }
    for(let turn=stage.from;turn<=stage.to;turn++){
     assert.equal(scenes[id].turns[turn].id,image.id,id);
     const recording=audio[id];
@@ -49,6 +68,24 @@ test('reviewed conversation stages cover every turn and use their measured audio
   assert.equal(next,dialogue.lines.length+1,id);
  }
  assert.equal(images.size,Object.keys(authored).length*4);
+});
+test('essential verbs, contractions and phrase units have Arabic meanings and real conversation uses',()=>{
+ for(const [en,pos] of [['understand','VERB'],["I'll",'CONTR'],["I'd",'CONTR'],['could you tell me whether','PHRASE'],
+  ['back in stock','PHRASE'],['sold out','PHRASE'],['on the way','PHRASE'],['pick up','PHRASE'],['as long as','PHRASE']]){
+  const entry=vocabulary.entries.find(entry=>normalize(entry.en)===normalize(en)&&entry.pos===pos);
+  assert(entry?.ar,en);
+  assert(entry.sourceIds.some(index=>{
+   const source=vocabulary.sources[index];
+   return source.type==='dialogue'&&includesTerm(source.en,en)&&source.sceneIds.length>0;
+  }),en);
+ }
+ const phrase=vocabulary.entries.find(entry=>normalize(entry.en)==='back in stock'&&entry.pos==='PHRASE');
+ const recording=audio['l3-200'];
+ if(recording){
+  const turn=recording.turns[1];
+  const first=tokens(dialogues.get('l3-200').lines[1].en).map(normalize).indexOf('back');
+  assert.deepEqual(phrase.audio.female,{path:recording.path,start_ms:turn.words[first].start_ms,end_ms:turn.words[first+2].end_ms,text:'back in stock'});
+ }
 });
 test('vocabulary keeps contextual roles, full words with accents, and valid content links',()=>{
  assert(vocabulary.entries.length>3000);

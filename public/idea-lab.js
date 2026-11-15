@@ -143,11 +143,17 @@ function ideaModel(en,ar,id){
 }
 function ideaVocabulary(scene,open){
  const words=visibleIdeaWords(scene);
- const entries=words.map(word=>`<li data-idea-vocab="${word.index}">
-  <div><strong lang="en" dir="ltr">${H(word.en)}</strong>${Number.isFinite(word.x)?` <small class="idea-word-number">${word.index+1}</small>`:''}
+ const entries=words.map(word=>{
+  const term=scene.topic==='conversation'?vocabularyEntryFor(word):null;
+  const title=page==='scene-studio'?`<button type="button" class="idea-show-word" lang="en" dir="ltr" onclick="showIdeaMarker(${word.index},null,true)">${H(word.en)}</button>`:
+   `<strong lang="en" dir="ltr">${H(word.en)}</strong>`;
+  return `<li data-idea-vocab="${word.index}">
+  <div>${title}${Number.isFinite(word.x)?` <small class="idea-word-number">${word.index+1}</small>`:''}
   <span class="idea-vocab-meaning">${EP.ar(word.ar)} ${wordTypeBadge(word)}</span></div>
-  <button type="button" class="secondary idea-single-word" onclick="showIdeaMarker(${word.index},ideaSoloVoice)"
-   aria-label="${H(T('انطق','Hear')+' '+word.en)}">▶</button></li>`);
+  <button type="button" class="secondary idea-single-word" onclick="showIdeaMarker(${word.index},ideaSoloVoice,true)"
+   aria-label="${H(T('انطق','Hear')+' '+word.en)}">▶</button>
+  ${term?`<button type="button" class="textlink" onclick="openVocabularyFromScene('${term.id}','${H(scene.id.replace(/^studio:/,''))}')">${T('الأطلس','Atlas')} ↗</button>`:''}</li>`;
+ });
  return `<details class="idea-vocabulary idea-disclosure" ${open?'open':''}><summary>${scene.sentenceId&&!scene.reviewed?T('مفردات الجملة','Sentence vocabulary'):T('مفردات الصورة','Picture vocabulary')} · ${words.length}</summary>
   ${ideaAudioControls()}
   ${entries.length?`<ul class="idea-vocab">${entries.join('')}</ul>`:`<p>${T('لا مفردات ضمن هذا النوع.','No vocabulary of this type.')}</p>`}</details>`;

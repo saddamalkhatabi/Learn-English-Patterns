@@ -44,17 +44,17 @@ function prepareSmartSelection(){
 async function openAdvancedIdea(id,next=null){
  const pattern=PILOT?.patterns.find(p=>p.id===id);if(!pattern)return;
  if($('#lesson')?.open)closeLesson();else stopSpeech();
- studioPattern=id;studioPurpose='';studioPage=0;studioActiveId=null;studioPendingId=null;studioNextLesson=next;
+ studioMode='photos';studioPattern=id;studioPurpose='';studioPage=0;studioActiveId=null;studioPendingId=null;studioNextLesson=next;
  await showSmartLibrary();window.scrollTo(0,0);
 }
 async function showSmartLibrary(){
- await Promise.all([pilotReady,archiveReady,ideaLibraryReady,typeof referenceDataReady!=='undefined'?referenceDataReady:Promise.resolve()]);
+ await Promise.all([pilotReady,archiveReady,ideaLibraryReady,dialogueArchiveReady,typeof referenceDataReady!=='undefined'?referenceDataReady:Promise.resolve()]);
  if(page==='scene-studio'){render();return}
  const changed=new Promise(resolve=>window.addEventListener('hashchange',resolve,{once:true}));
  navigate('scene-studio');await changed;
 }
 async function openSmartSentence(id){
- studioPattern=null;studioPurpose='';studioActiveId=null;studioPendingId=id;studioNextLesson=null;
+ studioMode='photos';studioPattern=null;studioPurpose='';studioActiveId=null;studioPendingId=id;studioNextLesson=null;
  await showSmartLibrary();
  await openSmartScene(id);
 }
@@ -67,7 +67,7 @@ async function openSmartScene(id){
  const host=$('#scene-studio-active');if(!host)return;
  host.textContent=T('جارٍ تجهيز مفردات الصورة…','Preparing scene vocabulary…');
  await Promise.all([loadStudioVocabulary(),loadVocabulary()]);
- if(page!=='scene-studio'||epoch!==studioOpenEpoch)return;
+ if(page!=='scene-studio'||studioMode!=='photos'||epoch!==studioOpenEpoch)return;
  const data=studioVocabulary?.[id]||{words:[]},crop=item?row?.image?.crop:null;
  studioActiveId=id;
  studioWordScene=practice?{...practice,id:'studio:'+id}:{id:'studio:'+id,sentenceId:id,en:item?.description||row.en,ar:item?.descriptionAr||row.ar,
@@ -84,6 +84,7 @@ async function openSmartScene(id){
   <div><section class="studio-original"><h2 tabindex="-1">${T('الجملة الأساسية للصورة','The photo’s original sentence')}</h2>
    ${practice?`<p lang="en" dir="ltr">${line?dialogueWords(line):H(practice.sentenceEn)}</p>${EP.ar(line?.ar||practice.sentenceAr)}
    ${dialogue?.audio?`<button class="primary" onclick="playStudioDialogueTurn('${H(id)}')">▶ ${T('استمع إلى دور المحادثة','Hear this conversation turn')}</button>`:''}
+   ${dialogueLifecycles[dialogue?.id]?`<button class="secondary" onclick="openStudioJourney('${H(dialogue.id)}')">${T('شاهد تسلسل المحادثة','View the conversation sequence')} ↗</button>`:''}
    <p>${H(T(practice.taskAr,practice.taskEn))}</p>`:
    `<p lang="en" dir="ltr">${EP.words(row,'data-studio-word')}</p>${EP.ar(row.ar)}
    <div class="buttonrow"><button class="primary" onclick="playStudioSentence('${H(id)}','male')">▶ Adam</button><button class="secondary" onclick="playStudioSentence('${H(id)}','female')">▶ Bella</button></div>`}

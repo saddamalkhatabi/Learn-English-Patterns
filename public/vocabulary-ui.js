@@ -1,15 +1,41 @@
 let vocabularyData=null,vocabularyLoad=null,vocabularyPageNumber=0,vocabularyTerm=null,vocabularyAudio=null;
 let vocabularyQuery='',vocabularyType='',vocabularyCollection='',vocabularyPattern='',vocabularyVoice='male';
+let vocabularyEntriesByKey=new Map(),vocabularySearch=new Map(),vocabularyPreferredScene='';
 function loadVocabulary(){
  if(!vocabularyLoad)vocabularyLoad=fetch('vocabulary-index.json').then(response=>{
   if(!response.ok)throw Error('vocabulary');
   return response.json();
- }).then(data=>{vocabularyData=data;return data}).catch(()=>{
+ }).then(data=>{
+  vocabularyData=data;
+  vocabularyEntriesByKey=new Map(data.entries.map(entry=>[vocabularyKey(entry.en,entry.pos),entry]));
+  vocabularySearch=new Map(data.entries.map(entry=>{
+   const translations=new Set([entry.ar]);
+   for(const index of entry.sourceIds){
+    const source=data.sources[index];
+    if(source.type==='idea-word'&&EPVocabulary.normalize(source.en)===EPVocabulary.normalize(entry.en)&&
+     (!source.pos||source.pos===entry.pos))translations.add(source.ar);
+   }
+   return [entry.id,normalizeSceneQuery(EPVocabulary.normalize([entry.en,entry.lemma,entry.expansion,...translations].join(' ')))];
+  }));
+  return data;
+ }).catch(()=>{
   vocabularyLoad=null;
   toast(T('تعذّر تحميل أطلس المفردات.','Could not load the vocabulary atlas.'));
   return null;
  });
  return vocabularyLoad;
+}
+function vocabularyKey(en,pos){return EPVocabulary.normalize(en)+'|'+pos}
+function vocabularyEntryFor(word){return vocabularyEntriesByKey.get(vocabularyKey(word.en,EPVocabulary.posFor(word)))}
+function openVocabularyFromScene(id,sceneId=''){
+ vocabularyPreferredScene=sceneId;
+ vocabularyTerm=id;
+ const entry=vocabularyData?.entries.find(entry=>entry.id===id);
+ if(entry){
+  vocabularyQuery=entry.en;vocabularyPageNumber=0;
+  vocabularyType='';vocabularyCollection='';vocabularyPattern='';
+ }
+ navigate('vocabulary');
 }
 function wordTypeBadge(word){
  const type=EPVocabulary.types[EPVocabulary.posFor(word)]||EPVocabulary.types.X;
@@ -39,41 +65,49 @@ function paintVocabulary(){
  const host=$('#vocabulary-results');
  if(!host)return;
  if(!vocabularyData){$('#vocabulary-count').textContent=T('جارٍ تحميل الأطلس…','Loading the atlas…');return}
- const query=EPVocabulary.normalize(vocabularyQuery),size=36;
+ const query=normalizeSceneQuery(EPVocabulary.normalize(vocabularyQuery)),size=36;
  const entries=vocabularyData.entries.filter(entry=>
   (!vocabularyType||entry.pos===vocabularyType)&&
   (!vocabularyPattern||entry.patternIds.includes(Number(vocabularyPattern)))&&
-  (!query||EPVocabulary.normalize([entry.en,entry.lemma,entry.ar,entry.expansion].join(' ')).includes(query))&&
-  (!vocabularyCollection||entry.sourceIds.some(id=>vocabularyData.sources[id].type.startsWith(vocabularyCollection)))
+  (!query||vocabularySearch.get(entry.id).includes(query))&&
+  (!vocabularyCollection||entry.sourceIds.some(id=>{
+   const source=vocabularyData.sources[id];
+   return source.type.startsWith(vocabularyCollection)&&(!vocabularyPattern||source.patternIds.includes(Number(vocabularyPattern)));
+  }))
  ).sort((a,b)=>b.sourceIds.length-a.sourceIds.length||a.en.localeCompare(b.en));
  const pages=Math.max(1,Math.ceil(entries.length/size));
  vocabularyPageNumber=Math.max(0,Math.min(vocabularyPageNumber,pages-1));
  $('#vocabulary-count').textContent=T(`${entries.length} مدخلًا · صفحة ${vocabularyPageNumber+1} من ${pages}`,`${entries.length} entries · page ${vocabularyPageNumber+1} of ${pages}`);
  $('#vocabulary-prev').disabled=vocabularyPageNumber===0;$('#vocabulary-next').disabled=vocabularyPageNumber+1>=pages;
  host.innerHTML=entries.slice(vocabularyPageNumber*size,(vocabularyPageNumber+1)*size).map(entry=>
-  `<article class="panel vocabulary-card">${wordTypeBadge(entry)}<button class="textlink" lang="en" dir="ltr" onclick="openVocabularyTerm('${entry.id}')">${H(entry.en)}</button>
+  `<article class="panel vocabulary-card">${wordTypeBadge(entry)}<button class="textlink" lang="en" dir="ltr" onclick="openVocabularyTerm('${entry.id}','')">${H(entry.en)}</button>
    ${EP.ar(entry.ar)}<small>${entry.sourceIds.length} ${T('مواضع استخدام','uses')} · ${entry.sceneIds.length} ${T('صور','scenes')}</small>
    <button class="secondary" onclick="playVocabularyEntry('${entry.id}')" aria-label="${T('انطق','Hear')} ${H(entry.en)}">▶</button></article>`
  ).join('');
 }
-function openVocabularyTerm(id){
- vocabularyTerm=id;
+function openVocabularyTerm(id,preferredScene=vocabularyPreferredScene){
+ vocabularyTerm=id;vocabularyPreferredScene=preferredScene;
  const entry=vocabularyData?.entries.find(entry=>entry.id===id),host=$('#vocabulary-detail');
  if(!entry||!host)return;
- const uses=entry.sourceIds.map(index=>vocabularyData.sources[index]);
- const unique=uses.filter((source,index)=>uses.findIndex(other=>other.en===source.en)===index);
+ const uses=entry.sourceIds.map(index=>({index,source:vocabularyData.sources[index]}));
+ if(preferredScene)uses.sort((a,b)=>Number(b.source.id===preferredScene&&b.source.type==='idea-word')-
+  Number(a.source.id===preferredScene&&a.source.type==='idea-word'));
+ const byExample=new Map();
+ for(const use of uses){
+  const {source}=use,key=source.en+'|'+source.ar;
+  if(!byExample.has(key))byExample.set(key,use);
+ }
  host.innerHTML=`<article class="panel vocabulary-selected"><div class="buttonrow"><h2 lang="en" dir="ltr">${H(entry.en)}</h2>${wordTypeBadge(entry)}
    <button class="secondary" onclick="playVocabularyEntry('${entry.id}')">▶ ${T('استمع','Listen')}</button></div>
    ${EP.ar(entry.ar)}${entry.expansion?`<p lang="en" dir="ltr">${H(entry.expansion)}</p>`:''}
    ${vocabularySceneLinks(entry)}
    <h3>${T('شاهدها في سياق','See it in context')}</h3>
-   ${unique.slice(0,8).map(source=>{
-    const index=vocabularyData.sources.indexOf(source);
+   ${[...byExample.values()].slice(0,8).map(({source,index})=>{
     return `<div class="vocabulary-use"><p lang="en" dir="ltr">${vocabularyMarked(source.en,entry.en)}</p>${EP.ar(source.ar)}
      <button class="textlink" onclick="openVocabularyUse(${index})">${source.type==='dialogue'?T('افتح المحادثة عند هذا الدور','Open this conversation turn'):source.type.startsWith('idea')?T('افتح المشهد','Open scene'):T('افتح الجملة وصورتها','Open sentence and scene')} ↗</button></div>`;
    }).join('')}
-   <details><summary>${T('كل مواضع الاستخدام','All uses')} · ${uses.length}</summary>${uses.map(source=>
-    `<button class="textlink vocabulary-source-link" onclick="openVocabularyUse(${vocabularyData.sources.indexOf(source)})">${H(source.en)}</button>`
+   <details><summary>${T('كل مواضع الاستخدام','All uses')} · ${uses.length}</summary>${uses.map(({source,index})=>
+    `<button class="textlink vocabulary-source-link" onclick="openVocabularyUse(${index})">${H(source.en)}${source.type==='idea-word'?` <span class="ar-content" lang="ar" dir="rtl">${H(source.ar)}</span>`:''}</button>`
    ).join('')}</details></article>`;
  host.scrollIntoView({block:'start'});
 }
@@ -150,7 +184,7 @@ function playVocabularyEntry(id){
  const entry=vocabularyData?.entries.find(entry=>entry.id===id),clip=entry?.audio[vocabularyVoice];
  if(!entry)return;
  stopSpeech();vocabularyAudio?.stop();
- if(!clip){speak(entry.en);return}
+ if(!clip){speak(entry.en,vocabularyVoice==='male'?0:1);return}
  vocabularyAudio=playVocabularyClip(clip);
 }
 labels.vocabulary='أطلس المفردات والعبارات';

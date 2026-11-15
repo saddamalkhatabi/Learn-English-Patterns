@@ -24,7 +24,7 @@ const contractions={
  "shouldn't":'should not',"haven't":'have not',"hasn't":'has not',"hadn't":'had not',"let's":'let us',
  "it'll":'it will',"how's":'how is',"everybody's":'everybody is',"everyone's":'everyone is',"everything's":'everything is'
 };
-const sources=[],entries=new Map(),sourceTokens=[],sceneWords={},sentenceRows=new Map();
+const sources=[],entries=new Map(),sourceTokens=[],sourceAudio=new Map(),sceneWords={},sentenceRows=new Map();
 const audio=read('training-audio');
 const catalog=read('pattern-catalog').patterns;
 function add(en,pos,lemma,sourceId,voiceAudio){
@@ -41,6 +41,7 @@ function add(en,pos,lemma,sourceId,voiceAudio){
 }
 function addSource(source,recordings={}){
  const sourceId=sources.length;sources.push(source);
+ if(Object.keys(recordings).length)sourceAudio.set(sourceId,recordings);
  const raw=tokens(source.en),expanded=source.en.replace(/[a-zA-Z]+['’][a-zA-Z]+/g,word=>contractions[normalize(word)]||word);
  const parsed=new Map();
  nlp.readDoc(expanded).tokens().each(token=>{
@@ -52,6 +53,12 @@ function addSource(source,recordings={}){
  const words=raw.map((word,index)=>{
   const normal=normalize(word),contract=contractions[normal];
   const tagged=contract?{pos:'CONTR',lemma:normal}:parsed.get(normal)?.shift()||{pos:'X',lemma:normal};
+  if(source.pos&&raw.length===1)tagged.pos=source.pos;
+  else if(/^(?:every|some|any|no)(?:thing|one|body)$/.test(normal))tagged.pos='PRON';
+  else if(tagged.pos==='VERB'&&normal==='right'&&/^(?:right[.!?,]|.*\b(?:all|you're|you are|that's|were|was|is|the) right\b)/i.test(source.en))
+   tagged.pos=/^right[.!?,]|\ball right\b/i.test(source.en)?'INTJ':/\bthe right\b/i.test(source.en)?'NOUN':'ADJ';
+  else if(tagged.pos==='VERB'&&['breakfast','lunch','dinner'].includes(normal)&&/\b(?:have|has|had|eat|eats|ate|skip|skips|skipped|after|before|for)\s+(?:a\s+)?(?:breakfast|lunch|dinner)\b/i.test(source.en))
+   tagged.pos='NOUN';
   if(tagged.pos==='X'){
    const fallback={in:'ADP',cannot:'AUX',ill:'ADJ',no:'DET',i:'PRON',wash:'VERB',sun:'NOUN'};
    tagged.pos=fallback[normal]||(normal.endsWith("'s")?(/^[A-Z]/.test(word)?'PROPN':'NOUN'):'X');
@@ -63,11 +70,33 @@ function addSource(source,recordings={}){
     recording[voice]={path:clip.path,start_ms:cue.start_ms,end_ms:cue.end_ms,text:word};
   }
   const entry=add(word,tagged.pos,tagged.lemma,sourceId,recording);
-  if(contract)entry.expansion=contract;
+  if(contract){
+   const alternate=normal.endsWith("'d")?contract.replace(/ would$/,' had'):
+    normal.endsWith("'s")?contract.replace(/ is$/,' has'):contract;
+   entry.expansion=alternate===contract?contract:contract+' / '+alternate;
+  }
   return {en:word,ar:entry.ar,pos:tagged.pos,termId:entry.id};
  });
  sourceTokens.push(new Set(raw.map(normalize)));
  return words;
+}
+function phraseRecordings(phrase,sourceId){
+ const recordings=sourceAudio.get(sourceId);
+ if(!recordings)return;
+ const words=sources[sourceId].en.split(/\s+/).map(word=>tokens(word).map(normalize));
+ const terms=tokens(phrase).map(normalize);
+ const from=words.findIndex((_,index)=>terms.every((term,offset)=>{
+  const word=words[index+offset];
+  return word?.length===1&&word[0]===term;
+ }));
+ if(from<0)return;
+ const to=from+terms.length-1;
+ return Object.fromEntries(Object.entries(recordings).flatMap(([voice,clip])=>{
+  if(clip.words?.length!==words.length)return [];
+  const start=clip.words[from].start_ms,end=clip.words[to].end_ms;
+  return Number.isFinite(start)&&Number.isFinite(end)&&end>start?
+   [[voice,{path:clip.path,start_ms:start,end_ms:end,text:phrase}]]:[];
+ }));
 }
 for(const name of ['pilot','expansion-media','source-corpus','supplement'])for(const row of read(name).sentences){
  const patterns=row.pattern_id?[row.pattern_id]:(row.pattern_ids||[]).map(id=>catalog.find(pattern=>pattern.id===id)?.planned_pattern_id||id);
@@ -93,13 +122,15 @@ for(const dialogue of dialogues){
  });
 }
 for(const scene of ideas.scenes){
- addSource({type:'idea',id:scene.id,en:scene.sentenceEn,ar:scene.sentenceAr,patternIds:[],sceneIds:[scene.id]});
+ const patternIds=scene.patterns.map(pattern=>pattern.id);
+ addSource({type:'idea',id:scene.id,en:scene.sentenceEn,ar:scene.sentenceAr,patternIds,sceneIds:[scene.id]});
  for(const word of scene.words){
-  addSource({type:'idea-word',id:scene.id,en:word.en,ar:word.ar,patternIds:[],sceneIds:[scene.id]});
   // Image briefs explicitly identify the grammatical role of these labels.
+  const pos=posFor(word);
+  addSource({type:'idea-word',id:scene.id,en:word.en,ar:word.ar,pos,patternIds,sceneIds:[scene.id]});
   const sourceId=sources.length-1;
-  const entry=add(word.en,posFor(word),normalize(word.en),sourceId);
-  entry.ar=word.ar;
+  const entry=add(word.en,pos,normalize(word.en),sourceId);
+  if(!entry.ar)entry.ar=word.ar;
  }
  for(const pattern of scene.patterns.filter(pattern=>pattern.en))addSource({type:'idea-example',id:scene.id,pattern:pattern.id,en:pattern.en,ar:pattern.ar,patternIds:[pattern.id],sceneIds:[scene.id]});
 }
@@ -107,7 +138,8 @@ const phrases=fs.readFileSync('production/vocabulary-phrases.tsv','utf8').trim()
 for(const [phrase,ar] of phrases){
  const first=normalize(tokens(phrase)[0]);
  sources.forEach((source,index)=>{
-  if(sourceTokens[index].has(first)&&includesTerm(source.en,phrase))add(phrase,'PHRASE',normalize(phrase),index).ar=ar;
+  if(sourceTokens[index].has(first)&&includesTerm(source.en,phrase))
+   add(phrase,'PHRASE',normalize(phrase),index,phraseRecordings(phrase,index)).ar=ar;
  });
 }
 for(const entry of entries.values()){

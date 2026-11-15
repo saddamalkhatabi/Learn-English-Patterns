@@ -153,6 +153,7 @@ function dialoguePanel(dialogue, jump){
  const priority=dialoguePriority;
  return `<section class="dialogue-panel" data-lifecycle="${Boolean(life)}" data-priority="${priority}"><div class="dialogue-panel-title"><h2>${H(T(dialogue.ar,dialogue.en))}</h2>${dialoguePriorityControl(dialogue)}</div>
   <button type="button" class="secondary dialogue-overview-toggle" aria-expanded="false" onclick="toggleDialogueOverview(this)">${T('عرض كل المشاهد','Show all scenes')}</button>
+  ${life?`<button type="button" class="secondary" onclick="openStudioJourney('${H(dialogue.id)}')">${T('تدرّب بتسلسل الصور','Practise with the photo sequence')} ↗</button>`:''}
   <div class="dialogue-overview" hidden>${life?dialogueJourney(dialogue,jump):dialogueSceneGallery(dialogue,jump)}</div>
   <details class="dialogue-patterns"><summary>${T('الأنماط في هذه المحادثة','Patterns in this conversation')}</summary>
   ${patterns.length?`<div class="buttonrow">${dialoguePatterns(patterns)}</div>`:''}
