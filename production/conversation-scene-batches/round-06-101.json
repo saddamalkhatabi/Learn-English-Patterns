@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "c6f1508e7b7b61547ce2e3c98d6321ba161152bac06e1222c30a2d2f9c05c5c7"
+  },
+  "conversations": [
+    {
+      "id": "l3-173",
+      "goalAr": "الاستئذان قبل نقل أغراض شخص آخر",
+      "goalEn": "Asking before moving someone else's belongings",
+      "stages": [
+        {
+          "from": 1,
+          "to": 2,
+          "en": "Ask before moving someone else's bag",
+          "ar": "استأذن قبل نقل حقيبة شخص آخر",
+          "purposeEn": "Ask before moving someone else's bag.",
+          "purposeAr": "استأذن قبل نقل حقيبة شخص آخر.",
+          "image": {
+            "id": "conv-life-l3-173-1",
+            "path": "assets/scenes/conversations/life-l3-173-1.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Ask before moving someone else's bag",
+            "ar": "استأذن قبل نقل حقيبة شخص آخر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                395,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask before moving someone else's bag",
+              "ar": "استأذن قبل نقل حقيبة شخص آخر",
+              "kind": "phrase",
+              "x": 40,
+              "y": 66
+            },
+            {
+              "en": "backpack",
+              "ar": "حقيبة ظهر",
+              "kind": "object",
+              "x": 50,
+              "y": 67
+            },
+            {
+              "en": "chair seat",
+              "ar": "مقعد الكرسي",
+              "kind": "object",
+              "x": 47,
+              "y": 86
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "en": "Use the other chair for now",
+          "ar": "استخدم الكرسي الآخر مؤقتًا",
+          "purposeEn": "Use the other chair for now.",
+          "purposeAr": "استخدم الكرسي الآخر مؤقتًا.",
+          "image": {
+            "id": "conv-life-l3-173-2",
+            "path": "assets/scenes/conversations/life-l3-173-2.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Use the other chair for now",
+            "ar": "استخدم الكرسي الآخر مؤقتًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                401,
+                3,
+                791,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "use the other chair for now",
+              "ar": "استخدم الكرسي الآخر مؤقتًا",
+              "kind": "phrase",
+              "x": 42,
+              "y": 66
+            },
+            {
+              "en": "empty chair",
+              "ar": "كرسي فارغ",
+              "kind": "object",
+              "x": 57,
+              "y": 71
+            },
+            {
+              "en": "backpack",
+              "ar": "حقيبة ظهر",
+              "kind": "object",
+              "x": 10,
+              "y": 81
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "en": "Offer someone a book to borrow",
+          "ar": "اعرض إعارة شخص كتابًا",
+          "purposeEn": "Offer someone a book to borrow.",
+          "purposeAr": "اعرض إعارة شخص كتابًا.",
+          "image": {
+            "id": "conv-life-l3-173-3",
+            "path": "assets/scenes/conversations/life-l3-173-3.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Offer someone a book to borrow",
+            "ar": "اعرض إعارة شخص كتابًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                3,
+                1187,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "offer someone a book to borrow",
+              "ar": "اعرض إعارة شخص كتابًا",
+              "kind": "phrase",
+              "x": 53,
+              "y": 60
+            },
+            {
+              "en": "hardcover book",
+              "ar": "كتاب بغلاف صلب",
+              "kind": "object",
+              "x": 50,
+              "y": 59
+            },
+            {
+              "en": "stack of books",
+              "ar": "كومة كتب",
+              "kind": "object",
+              "x": 30,
+              "y": 83
+            }
+          ]
+        },
+        {
+          "from": 7,
+          "to": 7,
+          "en": "Leave the bag where it is",
+          "ar": "اترك الحقيبة في مكانها",
+          "purposeEn": "Leave the bag where it is.",
+          "purposeAr": "اترك الحقيبة في مكانها.",
+          "image": {
+            "id": "conv-life-l3-173-4",
+            "path": "assets/scenes/conversations/life-l3-173-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Leave the bag where it is",
+            "ar": "اترك الحقيبة في مكانها",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                3,
+                1583,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "leave the bag where it is",
+              "ar": "اترك الحقيبة في مكانها",
+              "kind": "phrase",
+              "x": 53,
+              "y": 63
+            },
+            {
+              "en": "backpack",
+              "ar": "حقيبة ظهر",
+              "kind": "object",
+              "x": 51,
+              "y": 66
+            },
+            {
+              "en": "open book",
+              "ar": "كتاب مفتوح",
+              "kind": "object",
+              "x": 83,
+              "y": 61
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-174",
+      "goalAr": "الاتفاق على وقت إيقاظ شخص",
+      "goalEn": "Deciding when to wake someone up",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Say you are still getting ready",
+          "ar": "قل إنك لا تزال تستعدّ",
+          "purposeEn": "Say you are still getting ready.",
+          "purposeAr": "قل إنك لا تزال تستعدّ.",
+          "image": {
+            "id": "conv-life-l3-174-1",
+            "path": "assets/scenes/conversations/life-l3-174-1.webp",
+            "width": 392,
+            "height": 243,
+            "en": "Say you are still getting ready",
+            "ar": "قل إنك لا تزال تستعدّ",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                251,
+                395,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "say you are still getting ready",
+              "ar": "قل إنك لا تزال تستعدّ",
+              "kind": "phrase",
+              "x": 47,
+              "y": 65
+            },
+            {
+              "en": "bedside clock",
+              "ar": "ساعة بجانب السرير",
+              "kind": "object",
+              "x": 49,
+              "y": 74
+            },
+            {
+              "en": "mobile phone",
+              "ar": "هاتف محمول",
+              "kind": "object",
+              "x": 45,
+              "y": 66
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Get dressed and grab your bag",
+          "ar": "ارتدِ ملابسك وخذ حقيبتك",
+          "purposeEn": "Get dressed and grab your bag.",
+          "purposeAr": "ارتدِ ملابسك وخذ حقيبتك.",
+          "image": {
+            "id": "conv-life-l3-174-2",
+            "path": "assets/scenes/conversations/life-l3-174-2.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Get dressed and grab your bag",
+            "ar": "ارتدِ ملابسك وخذ حقيبتك",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                401,
+                251,
+                791,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "get dressed and grab your bag",
+              "ar": "ارتدِ ملابسك وخذ حقيبتك",
+              "kind": "phrase",
+              "x": 59,
+              "y": 66
+            },
+            {
+              "en": "coat",
+              "ar": "معطف",
+              "kind": "object",
+              "x": 22,
+              "y": 54
+            },
+            {
+              "en": "travel bag",
+              "ar": "حقيبة سفر",
+              "kind": "object",
+              "x": 65,
+              "y": 84
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Ask to sleep a bit in the car",
+          "ar": "اطلب أن تنام قليلًا في السيارة",
+          "purposeEn": "Ask to sleep a bit in the car.",
+          "purposeAr": "اطلب أن تنام قليلًا في السيارة.",
+          "image": {
+            "id": "conv-life-l3-174-3",
+            "path": "assets/scenes/conversations/life-l3-174-3.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Ask to sleep a bit in the car",
+            "ar": "اطلب أن تنام قليلًا في السيارة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                251,
+                1187,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask to sleep a bit in the car",
+              "ar": "اطلب أن تنام قليلًا في السيارة",
+              "kind": "phrase",
+              "x": 44,
+              "y": 53
+            },
+            {
+              "en": "seat belt",
+              "ar": "حزام أمان",
+              "kind": "object",
+              "x": 28,
+              "y": 59
+            },
+            {
+              "en": "steering wheel",
+              "ar": "مقود",
+              "kind": "object",
+              "x": 84,
+              "y": 63
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Bring your bag down when you are ready",
+          "ar": "أنزل حقيبتك عندما تصبح جاهزًا",
+          "purposeEn": "Bring your bag down when you are ready.",
+          "purposeAr": "أنزل حقيبتك عندما تصبح جاهزًا.",
+          "image": {
+            "id": "conv-life-l3-174-4",
+            "path": "assets/scenes/conversations/life-l3-174-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Bring your bag down when you are ready",
+            "ar": "أنزل حقيبتك عندما تصبح جاهزًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                251,
+                1583,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bring your bag down when you are ready",
+              "ar": "أنزل حقيبتك عندما تصبح جاهزًا",
+              "kind": "phrase",
+              "x": 58,
+              "y": 63
+            },
+            {
+              "en": "black travel bag",
+              "ar": "حقيبة سفر سوداء",
+              "kind": "object",
+              "x": 43,
+              "y": 70
+            },
+            {
+              "en": "stone steps",
+              "ar": "درجات حجرية",
+              "kind": "object",
+              "x": 67,
+              "y": 85
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-175",
+      "goalAr": "تنظيف غرفة قبل وصول الضيوف",
+      "goalEn": "Cleaning a room before guests arrive",
+      "stages": [
+        {
+          "from": 1,
+          "to": 2,
+          "en": "Open the window before cleaning",
+          "ar": "افتح النافذة قبل التنظيف",
+          "purposeEn": "Open the window before cleaning.",
+          "purposeAr": "افتح النافذة قبل التنظيف.",
+          "image": {
+            "id": "conv-life-l3-175-1",
+            "path": "assets/scenes/conversations/life-l3-175-1.webp",
+            "width": 392,
+            "height": 241,
+            "en": "Open the window before cleaning",
+            "ar": "افتح النافذة قبل التنظيف",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                500,
+                395,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "open the window before cleaning",
+              "ar": "افتح النافذة قبل التنظيف",
+              "kind": "phrase",
+              "x": 47,
+              "y": 62
+            },
+            {
+              "en": "open window",
+              "ar": "نافذة مفتوحة",
+              "kind": "object",
+              "x": 21,
+              "y": 48
+            },
+            {
+              "en": "dusty shelf",
+              "ar": "رف مغبرّ",
+              "kind": "object",
+              "x": 60,
+              "y": 67
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "en": "Move the chairs away from the wall",
+          "ar": "أبعد الكراسي عن الحائط",
+          "purposeEn": "Move the chairs away from the wall.",
+          "purposeAr": "أبعد الكراسي عن الحائط.",
+          "image": {
+            "id": "conv-life-l3-175-2",
+            "path": "assets/scenes/conversations/life-l3-175-2.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Move the chairs away from the wall",
+            "ar": "أبعد الكراسي عن الحائط",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                401,
+                500,
+                791,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "move the chairs away from the wall",
+              "ar": "أبعد الكراسي عن الحائط",
+              "kind": "phrase",
+              "x": 49,
+              "y": 55
+            },
+            {
+              "en": "cleaning cloth",
+              "ar": "قطعة قماش للتنظيف",
+              "kind": "object",
+              "x": 40,
+              "y": 40
+            },
+            {
+              "en": "wooden chair",
+              "ar": "كرسي خشبي",
+              "kind": "object",
+              "x": 66,
+              "y": 74
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "en": "Put the papers in the blue folder",
+          "ar": "ضع الأوراق في الملف الأزرق",
+          "purposeEn": "Put the papers in the blue folder.",
+          "purposeAr": "ضع الأوراق في الملف الأزرق.",
+          "image": {
+            "id": "conv-life-l3-175-3",
+            "path": "assets/scenes/conversations/life-l3-175-3.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Put the papers in the blue folder",
+            "ar": "ضع الأوراق في الملف الأزرق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                500,
+                1187,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "put the papers in the blue folder",
+              "ar": "ضع الأوراق في الملف الأزرق",
+              "kind": "phrase",
+              "x": 49,
+              "y": 71
+            },
+            {
+              "en": "loose papers",
+              "ar": "أوراق منفصلة",
+              "kind": "object",
+              "x": 38,
+              "y": 59
+            },
+            {
+              "en": "blue folder",
+              "ar": "ملف أزرق",
+              "kind": "object",
+              "x": 64,
+              "y": 68
+            }
+          ]
+        },
+        {
+          "from": 7,
+          "to": 7,
+          "en": "Tidy up the room",
+          "ar": "رتّب الغرفة",
+          "purposeEn": "Tidy up the room.",
+          "purposeAr": "رتّب الغرفة.",
+          "image": {
+            "id": "conv-life-l3-175-4",
+            "path": "assets/scenes/conversations/life-l3-175-4.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Tidy up the room",
+            "ar": "رتّب الغرفة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                500,
+                1583,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "tidy up the room",
+              "ar": "رتّب الغرفة",
+              "kind": "phrase",
+              "x": 52,
+              "y": 63
+            },
+            {
+              "en": "yellow cloth",
+              "ar": "قطعة قماش صفراء",
+              "kind": "object",
+              "x": 36,
+              "y": 80
+            },
+            {
+              "en": "clean shelves",
+              "ar": "رفوف نظيفة",
+              "kind": "object",
+              "x": 61,
+              "y": 39
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-176",
+      "goalAr": "تأمّل صورة قديمة",
+      "goalEn": "Looking at an old photograph",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Look at the picture on the wall",
+          "ar": "انظر إلى الصورة على الحائط",
+          "purposeEn": "Look at the picture on the wall.",
+          "purposeAr": "انظر إلى الصورة على الحائط.",
+          "image": {
+            "id": "conv-life-l3-176-1",
+            "path": "assets/scenes/conversations/life-l3-176-1.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Look at the picture on the wall",
+            "ar": "انظر إلى الصورة على الحائط",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                747,
+                395,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "look at the picture on the wall",
+              "ar": "انظر إلى الصورة على الحائط",
+              "kind": "phrase",
+              "x": 48,
+              "y": 46
+            },
+            {
+              "en": "framed photograph",
+              "ar": "صورة مؤطّرة",
+              "kind": "object",
+              "x": 53,
+              "y": 45
+            },
+            {
+              "en": "lantern",
+              "ar": "فانوس",
+              "kind": "object",
+              "x": 47,
+              "y": 89
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Identify the person by the gate",
+          "ar": "حدّد الشخص الواقف بجوار البوابة",
+          "purposeEn": "Identify the person by the gate.",
+          "purposeAr": "حدّد الشخص الواقف بجوار البوابة.",
+          "image": {
+            "id": "conv-life-l3-176-2",
+            "path": "assets/scenes/conversations/life-l3-176-2.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Identify the person by the gate",
+            "ar": "حدّد الشخص الواقف بجوار البوابة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                401,
+                747,
+                791,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "identify the person by the gate",
+              "ar": "حدّد الشخص الواقف بجوار البوابة",
+              "kind": "phrase",
+              "x": 52,
+              "y": 48
+            },
+            {
+              "en": "man in the photograph",
+              "ar": "رجل في الصورة",
+              "kind": "object",
+              "x": 50,
+              "y": 52
+            },
+            {
+              "en": "garden gate",
+              "ar": "بوابة الحديقة",
+              "kind": "object",
+              "x": 66,
+              "y": 47
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Ask who is holding the red ball",
+          "ar": "اسأل من يحمل الكرة الحمراء",
+          "purposeEn": "Ask who is holding the red ball.",
+          "purposeAr": "اسأل من يحمل الكرة الحمراء.",
+          "image": {
+            "id": "conv-life-l3-176-3",
+            "path": "assets/scenes/conversations/life-l3-176-3.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Ask who is holding the red ball",
+            "ar": "اسأل من يحمل الكرة الحمراء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                747,
+                1187,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask who is holding the red ball",
+              "ar": "اسأل من يحمل الكرة الحمراء",
+              "kind": "phrase",
+              "x": 59,
+              "y": 57
+            },
+            {
+              "en": "red ball",
+              "ar": "كرة حمراء",
+              "kind": "object",
+              "x": 59,
+              "y": 54
+            },
+            {
+              "en": "child in the photo",
+              "ar": "طفل في الصورة",
+              "kind": "object",
+              "x": 53,
+              "y": 65
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Compare people's ages",
+          "ar": "قارن أعمار الأشخاص",
+          "purposeEn": "Compare people's ages.",
+          "purposeAr": "قارن أعمار الأشخاص.",
+          "image": {
+            "id": "conv-life-l3-176-4",
+            "path": "assets/scenes/conversations/life-l3-176-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Compare people's ages",
+            "ar": "قارن أعمار الأشخاص",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                747,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "compare people's ages",
+              "ar": "قارن أعمار الأشخاص",
+              "kind": "phrase",
+              "x": 54,
+              "y": 57
+            },
+            {
+              "en": "family photograph",
+              "ar": "صورة عائلية",
+              "kind": "object",
+              "x": 50,
+              "y": 68
+            },
+            {
+              "en": "gold frame",
+              "ar": "إطار ذهبي",
+              "kind": "object",
+              "x": 48,
+              "y": 82
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

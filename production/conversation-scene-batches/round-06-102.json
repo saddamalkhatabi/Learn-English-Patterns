@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "e7dfb42afd62fb9e1405369ae500368f1b471e21caa00567f2793a814812b551"
+  },
+  "conversations": [
+    {
+      "id": "l3-177",
+      "goalAr": "طلب المساعدة حين يتعذر الوصول إلى شيء",
+      "goalEn": "Asking for help when you cannot reach something",
+      "stages": [
+        {
+          "from": 1,
+          "to": 2,
+          "en": "Ask how to get the towel down",
+          "ar": "اسأل كيف تستعيد المنشفة",
+          "purposeEn": "Ask how to get the towel down.",
+          "purposeAr": "اسأل كيف تستعيد المنشفة.",
+          "image": {
+            "id": "conv-life-l3-177-1",
+            "path": "assets/scenes/conversations/life-l3-177-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Ask how to get the towel down",
+            "ar": "اسأل كيف تستعيد المنشفة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                393,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask how to get the towel down",
+              "ar": "اسأل كيف تستعيد المنشفة",
+              "kind": "phrase",
+              "x": 50,
+              "y": 37
+            },
+            {
+              "en": "blue towel",
+              "ar": "منشفة زرقاء",
+              "kind": "object",
+              "x": 78,
+              "y": 19
+            },
+            {
+              "en": "roof gutter",
+              "ar": "مزراب السقف",
+              "kind": "object",
+              "x": 78,
+              "y": 33
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "en": "Ask the building manager for help",
+          "ar": "اطلب المساعدة من مدير المبنى",
+          "purposeEn": "Ask the building manager for help.",
+          "purposeAr": "اطلب المساعدة من مدير المبنى.",
+          "image": {
+            "id": "conv-life-l3-177-2",
+            "path": "assets/scenes/conversations/life-l3-177-2.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Ask the building manager for help",
+            "ar": "اطلب المساعدة من مدير المبنى",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                3,
+                791,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask the building manager for help",
+              "ar": "اطلب المساعدة من مدير المبنى",
+              "kind": "phrase",
+              "x": 57,
+              "y": 60
+            },
+            {
+              "en": "office pictogram",
+              "ar": "رمز مكتب",
+              "kind": "object",
+              "x": 83,
+              "y": 39
+            },
+            {
+              "en": "door handle",
+              "ar": "مقبض الباب",
+              "kind": "object",
+              "x": 87,
+              "y": 86
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "en": "Leave a message if the office is closed",
+          "ar": "اترك رسالة إن كان المكتب مغلقًا",
+          "purposeEn": "Leave a message if the office is closed.",
+          "purposeAr": "اترك رسالة إن كان المكتب مغلقًا.",
+          "image": {
+            "id": "conv-life-l3-177-3",
+            "path": "assets/scenes/conversations/life-l3-177-3.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Leave a message if the office is closed",
+            "ar": "اترك رسالة إن كان المكتب مغلقًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                3,
+                1186,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "leave a message if the office is closed",
+              "ar": "اترك رسالة إن كان المكتب مغلقًا",
+              "kind": "phrase",
+              "x": 46,
+              "y": 72
+            },
+            {
+              "en": "smartphone",
+              "ar": "هاتف ذكي",
+              "kind": "object",
+              "x": 30,
+              "y": 76
+            },
+            {
+              "en": "closed office door",
+              "ar": "باب مكتب مغلق",
+              "kind": "object",
+              "x": 81,
+              "y": 55
+            }
+          ]
+        },
+        {
+          "from": 7,
+          "to": 7,
+          "en": "Explain how the wind carried the towel away",
+          "ar": "اشرح كيف حملت الريح المنشفة بعيدًا",
+          "purposeEn": "Explain how the wind carried the towel away.",
+          "purposeAr": "اشرح كيف حملت الريح المنشفة بعيدًا.",
+          "image": {
+            "id": "conv-life-l3-177-4",
+            "path": "assets/scenes/conversations/life-l3-177-4.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Explain how the wind carried the towel away",
+            "ar": "اشرح كيف حملت الريح المنشفة بعيدًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                3,
+                1583,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "explain how the wind carried the towel away",
+              "ar": "اشرح كيف حملت الريح المنشفة بعيدًا",
+              "kind": "phrase",
+              "x": 66,
+              "y": 49
+            },
+            {
+              "en": "clothesline",
+              "ar": "حبل غسيل",
+              "kind": "object",
+              "x": 71,
+              "y": 26
+            },
+            {
+              "en": "mobile phone",
+              "ar": "هاتف محمول",
+              "kind": "object",
+              "x": 20,
+              "y": 48
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-178",
+      "goalAr": "وضع خطة واقعية لوقت استخدام الشاشة",
+      "goalEn": "Making a realistic plan for screen time",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Ask how often someone watches TV",
+          "ar": "اسأل كم مرة يشاهد شخص التلفاز",
+          "purposeEn": "Ask how often someone watches TV.",
+          "purposeAr": "اسأل كم مرة يشاهد شخص التلفاز.",
+          "image": {
+            "id": "conv-life-l3-178-1",
+            "path": "assets/scenes/conversations/life-l3-178-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Ask how often someone watches TV",
+            "ar": "اسأل كم مرة يشاهد شخص التلفاز",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                251,
+                393,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask how often someone watches TV",
+              "ar": "اسأل كم مرة يشاهد شخص التلفاز",
+              "kind": "phrase",
+              "x": 46,
+              "y": 61
+            },
+            {
+              "en": "television screen",
+              "ar": "شاشة تلفاز",
+              "kind": "object",
+              "x": 51,
+              "y": 45
+            },
+            {
+              "en": "remote control",
+              "ar": "جهاز تحكّم عن بُعد",
+              "kind": "object",
+              "x": 59,
+              "y": 82
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Talk about using your phone before bed",
+          "ar": "تحدّث عن استخدام الهاتف قبل النوم",
+          "purposeEn": "Talk about using your phone before bed.",
+          "purposeAr": "تحدّث عن استخدام الهاتف قبل النوم.",
+          "image": {
+            "id": "conv-life-l3-178-2",
+            "path": "assets/scenes/conversations/life-l3-178-2.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Talk about using your phone before bed",
+            "ar": "تحدّث عن استخدام الهاتف قبل النوم",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                251,
+                791,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "talk about using your phone before bed",
+              "ar": "تحدّث عن استخدام الهاتف قبل النوم",
+              "kind": "phrase",
+              "x": 47,
+              "y": 62
+            },
+            {
+              "en": "smartphone",
+              "ar": "هاتف ذكي",
+              "kind": "object",
+              "x": 49,
+              "y": 59
+            },
+            {
+              "en": "wooden desk",
+              "ar": "مكتب خشبي",
+              "kind": "object",
+              "x": 36,
+              "y": 89
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Leave the phone on the desk",
+          "ar": "اترك الهاتف على المكتب",
+          "purposeEn": "Leave the phone on the desk.",
+          "purposeAr": "اترك الهاتف على المكتب.",
+          "image": {
+            "id": "conv-life-l3-178-3",
+            "path": "assets/scenes/conversations/life-l3-178-3.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Leave the phone on the desk",
+            "ar": "اترك الهاتف على المكتب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                251,
+                1186,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "leave the phone on the desk",
+              "ar": "اترك الهاتف على المكتب",
+              "kind": "phrase",
+              "x": 45,
+              "y": 83
+            },
+            {
+              "en": "phone face down",
+              "ar": "هاتف مقلوب على وجهه",
+              "kind": "object",
+              "x": 48,
+              "y": 93
+            },
+            {
+              "en": "pencil holder",
+              "ar": "حامل أقلام رصاص",
+              "kind": "object",
+              "x": 65,
+              "y": 84
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Keep a book by the bed",
+          "ar": "ضع كتابًا بجوار السرير",
+          "purposeEn": "Keep a book by the bed.",
+          "purposeAr": "ضع كتابًا بجوار السرير.",
+          "image": {
+            "id": "conv-life-l3-178-4",
+            "path": "assets/scenes/conversations/life-l3-178-4.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Keep a book by the bed",
+            "ar": "ضع كتابًا بجوار السرير",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                251,
+                1583,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "keep a book by the bed",
+              "ar": "ضع كتابًا بجوار السرير",
+              "kind": "phrase",
+              "x": 42,
+              "y": 77
+            },
+            {
+              "en": "hardcover book",
+              "ar": "كتاب بغلاف صلب",
+              "kind": "object",
+              "x": 39,
+              "y": 83
+            },
+            {
+              "en": "bedside lamp",
+              "ar": "مصباح بجانب السرير",
+              "kind": "object",
+              "x": 31,
+              "y": 65
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-179",
+      "goalAr": "اختيار ما نفعله في وقت فراغ",
+      "goalEn": "Deciding how to spend a free afternoon",
+      "stages": [
+        {
+          "from": 1,
+          "to": 2,
+          "en": "Suggest going for a walk before dinner",
+          "ar": "اقترح المشي قبل العشاء",
+          "purposeEn": "Suggest going for a walk before dinner.",
+          "purposeAr": "اقترح المشي قبل العشاء.",
+          "image": {
+            "id": "conv-life-l3-179-1",
+            "path": "assets/scenes/conversations/life-l3-179-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Suggest going for a walk before dinner",
+            "ar": "اقترح المشي قبل العشاء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                499,
+                393,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "suggest going for a walk before dinner",
+              "ar": "اقترح المشي قبل العشاء",
+              "kind": "phrase",
+              "x": 39,
+              "y": 57
+            },
+            {
+              "en": "wristwatch",
+              "ar": "ساعة يد",
+              "kind": "object",
+              "x": 38,
+              "y": 53
+            },
+            {
+              "en": "living-room window",
+              "ar": "نافذة غرفة الجلوس",
+              "kind": "object",
+              "x": 49,
+              "y": 19
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "en": "Plan a walk close to home",
+          "ar": "خطّط للمشي قرب المنزل",
+          "purposeEn": "Plan a walk close to home.",
+          "purposeAr": "خطّط للمشي قرب المنزل.",
+          "image": {
+            "id": "conv-life-l3-179-2",
+            "path": "assets/scenes/conversations/life-l3-179-2.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Plan a walk close to home",
+            "ar": "خطّط للمشي قرب المنزل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                499,
+                791,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "plan a walk close to home",
+              "ar": "خطّط للمشي قرب المنزل",
+              "kind": "phrase",
+              "x": 55,
+              "y": 66
+            },
+            {
+              "en": "neighborhood map",
+              "ar": "خريطة الحي",
+              "kind": "object",
+              "x": 49,
+              "y": 75
+            },
+            {
+              "en": "tea thermos",
+              "ar": "حافظة شاي",
+              "kind": "object",
+              "x": 89,
+              "y": 72
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "en": "See whether the park gate is still open",
+          "ar": "تحقّق مما إذا كانت بوابة الحديقة مفتوحة",
+          "purposeEn": "See whether the park gate is still open.",
+          "purposeAr": "تحقّق مما إذا كانت بوابة الحديقة مفتوحة.",
+          "image": {
+            "id": "conv-life-l3-179-3",
+            "path": "assets/scenes/conversations/life-l3-179-3.webp",
+            "width": 389,
+            "height": 242,
+            "en": "See whether the park gate is still open",
+            "ar": "تحقّق مما إذا كانت بوابة الحديقة مفتوحة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                499,
+                1186,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "see whether the park gate is still open",
+              "ar": "تحقّق مما إذا كانت بوابة الحديقة مفتوحة",
+              "kind": "phrase",
+              "x": 56,
+              "y": 52
+            },
+            {
+              "en": "iron gate",
+              "ar": "بوابة حديدية",
+              "kind": "object",
+              "x": 87,
+              "y": 52
+            },
+            {
+              "en": "paved park path",
+              "ar": "ممر مرصوف في الحديقة",
+              "kind": "object",
+              "x": 65,
+              "y": 78
+            }
+          ]
+        },
+        {
+          "from": 7,
+          "to": 7,
+          "en": "Meet outside in a few minutes",
+          "ar": "التقيا في الخارج بعد بضع دقائق",
+          "purposeEn": "Meet outside in a few minutes.",
+          "purposeAr": "التقيا في الخارج بعد بضع دقائق.",
+          "image": {
+            "id": "conv-life-l3-179-4",
+            "path": "assets/scenes/conversations/life-l3-179-4.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Meet outside in a few minutes",
+            "ar": "التقيا في الخارج بعد بضع دقائق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                499,
+                1583,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "meet outside in a few minutes",
+              "ar": "التقيا في الخارج بعد بضع دقائق",
+              "kind": "phrase",
+              "x": 50,
+              "y": 60
+            },
+            {
+              "en": "takeaway cup",
+              "ar": "كوب للطلبات الخارجية",
+              "kind": "object",
+              "x": 42,
+              "y": 74
+            },
+            {
+              "en": "park bench",
+              "ar": "مقعد حديقة",
+              "kind": "object",
+              "x": 57,
+              "y": 53
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-180",
+      "goalAr": "الحديث عما وجدته على الشاطئ",
+      "goalEn": "Sharing what you found on the beach",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Guess what washed up on the beach",
+          "ar": "خمّن ما جرفته الأمواج إلى الشاطئ",
+          "purposeEn": "Guess what washed up on the beach.",
+          "purposeAr": "خمّن ما جرفته الأمواج إلى الشاطئ.",
+          "image": {
+            "id": "conv-life-l3-180-1",
+            "path": "assets/scenes/conversations/life-l3-180-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Guess what washed up on the beach",
+            "ar": "خمّن ما جرفته الأمواج إلى الشاطئ",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                747,
+                393,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "guess what washed up on the beach",
+              "ar": "خمّن ما جرفته الأمواج إلى الشاطئ",
+              "kind": "phrase",
+              "x": 50,
+              "y": 57
+            },
+            {
+              "en": "driftwood",
+              "ar": "خشب جرفته الأمواج",
+              "kind": "object",
+              "x": 59,
+              "y": 53
+            },
+            {
+              "en": "pebbles",
+              "ar": "حصى",
+              "kind": "object",
+              "x": 65,
+              "y": 83
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Look at the marks someone carved",
+          "ar": "انظر إلى النقوش التي حفرها شخص",
+          "purposeEn": "Look at the marks someone carved.",
+          "purposeAr": "انظر إلى النقوش التي حفرها شخص.",
+          "image": {
+            "id": "conv-life-l3-180-2",
+            "path": "assets/scenes/conversations/life-l3-180-2.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Look at the marks someone carved",
+            "ar": "انظر إلى النقوش التي حفرها شخص",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                747,
+                791,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "look at the marks someone carved",
+              "ar": "انظر إلى النقوش التي حفرها شخص",
+              "kind": "phrase",
+              "x": 53,
+              "y": 55
+            },
+            {
+              "en": "carved marks",
+              "ar": "نقوش محفورة",
+              "kind": "object",
+              "x": 53,
+              "y": 52
+            },
+            {
+              "en": "small wooden fragment",
+              "ar": "قطعة خشب صغيرة",
+              "kind": "object",
+              "x": 57,
+              "y": 64
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Take a photo before leaving it there",
+          "ar": "التقط صورة قبل أن تتركها هناك",
+          "purposeEn": "Take a photo before leaving it there.",
+          "purposeAr": "التقط صورة قبل أن تتركها هناك.",
+          "image": {
+            "id": "conv-life-l3-180-3",
+            "path": "assets/scenes/conversations/life-l3-180-3.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Take a photo before leaving it there",
+            "ar": "التقط صورة قبل أن تتركها هناك",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                747,
+                1186,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "take a photo before leaving it there",
+              "ar": "التقط صورة قبل أن تتركها هناك",
+              "kind": "phrase",
+              "x": 50,
+              "y": 59
+            },
+            {
+              "en": "wooden fragment",
+              "ar": "قطعة خشب",
+              "kind": "object",
+              "x": 59,
+              "y": 70
+            },
+            {
+              "en": "camera screen",
+              "ar": "شاشة الكاميرا",
+              "kind": "object",
+              "x": 46,
+              "y": 58
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Leave the find where it was",
+          "ar": "اترك ما وجدته في مكانه",
+          "purposeEn": "Leave the find where it was.",
+          "purposeAr": "اترك ما وجدته في مكانه.",
+          "image": {
+            "id": "conv-life-l3-180-4",
+            "path": "assets/scenes/conversations/life-l3-180-4.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Leave the find where it was",
+            "ar": "اترك ما وجدته في مكانه",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                747,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "leave the find where it was",
+              "ar": "اترك ما وجدته في مكانه",
+              "kind": "phrase",
+              "x": 48,
+              "y": 66
+            },
+            {
+              "en": "driftwood among pebbles",
+              "ar": "خشب جرفته الأمواج بين الحصى",
+              "kind": "object",
+              "x": 55,
+              "y": 83
+            },
+            {
+              "en": "pleasantly surprised",
+              "ar": "متفاجئ بسرور",
+              "kind": "description",
+              "x": 25,
+              "y": 38
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
