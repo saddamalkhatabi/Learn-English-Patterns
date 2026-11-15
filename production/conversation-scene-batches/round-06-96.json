@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "75892a9a00aaf64bf6dd8736d73166fa6f88d64fcf6a26195eb088ccbac781e4"
+  },
+  "conversations": [
+    {
+      "id": "l3-153",
+      "goalAr": "نقل طلب دون تغيير معناه",
+      "goalEn": "Passing on a request without changing it",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Ask someone to bring a signed form",
+          "ar": "اطلب من شخص إحضار استمارة موقّعة",
+          "purposeEn": "Ask someone to bring a signed form.",
+          "purposeAr": "اطلب من شخص إحضار استمارة موقّعة.",
+          "image": {
+            "id": "conv-life-l3-153-1",
+            "path": "assets/scenes/conversations/life-l3-153-1.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Ask someone to bring a signed form",
+            "ar": "اطلب من شخص إحضار استمارة موقّعة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                394,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask someone to bring a signed form",
+              "ar": "اطلب من شخص إحضار استمارة موقّعة",
+              "kind": "phrase",
+              "x": 61,
+              "y": 65
+            },
+            {
+              "en": "signed form",
+              "ar": "استمارة موقّعة",
+              "kind": "object",
+              "x": 64,
+              "y": 67
+            },
+            {
+              "en": "pen holder",
+              "ar": "حامل أقلام",
+              "kind": "object",
+              "x": 7,
+              "y": 92
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Clarify what needs to be signed",
+          "ar": "وضّح ما يحتاج إلى توقيع",
+          "purposeEn": "Clarify what needs to be signed.",
+          "purposeAr": "وضّح ما يحتاج إلى توقيع.",
+          "image": {
+            "id": "conv-life-l3-153-2",
+            "path": "assets/scenes/conversations/life-l3-153-2.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Clarify what needs to be signed",
+            "ar": "وضّح ما يحتاج إلى توقيع",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                3,
+                790,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "clarify what needs to be signed",
+              "ar": "وضّح ما يحتاج إلى توقيع",
+              "kind": "phrase",
+              "x": 43,
+              "y": 83
+            },
+            {
+              "en": "signature",
+              "ar": "توقيع",
+              "kind": "object",
+              "x": 51,
+              "y": 95
+            },
+            {
+              "en": "pen",
+              "ar": "قلم",
+              "kind": "object",
+              "x": 38,
+              "y": 83
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Ask for the original rather than the copy",
+          "ar": "اطلب النسخة الأصلية",
+          "purposeEn": "Ask for the original rather than the copy.",
+          "purposeAr": "اطلب النسخة الأصلية.",
+          "image": {
+            "id": "conv-life-l3-153-3",
+            "path": "assets/scenes/conversations/life-l3-153-3.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Ask for the original rather than the copy",
+            "ar": "اطلب النسخة الأصلية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                3,
+                1187,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask for the original rather than the copy",
+              "ar": "اطلب النسخة الأصلية",
+              "kind": "phrase",
+              "x": 44,
+              "y": 79
+            },
+            {
+              "en": "original document",
+              "ar": "مستند أصلي",
+              "kind": "object",
+              "x": 24,
+              "y": 83
+            },
+            {
+              "en": "photocopy",
+              "ar": "نسخة مصوّرة",
+              "kind": "object",
+              "x": 49,
+              "y": 81
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Send a short reminder the next morning",
+          "ar": "أرسل تذكيرًا قصيرًا في صباح اليوم التالي",
+          "purposeEn": "Send a short reminder the next morning.",
+          "purposeAr": "أرسل تذكيرًا قصيرًا في صباح اليوم التالي.",
+          "image": {
+            "id": "conv-life-l3-153-4",
+            "path": "assets/scenes/conversations/life-l3-153-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Send a short reminder the next morning",
+            "ar": "أرسل تذكيرًا قصيرًا في صباح اليوم التالي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                3,
+                1583,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "send a short reminder the next morning",
+              "ar": "أرسل تذكيرًا قصيرًا في صباح اليوم التالي",
+              "kind": "phrase",
+              "x": 54,
+              "y": 66
+            },
+            {
+              "en": "phone calendar",
+              "ar": "تقويم الهاتف",
+              "kind": "object",
+              "x": 58,
+              "y": 59
+            },
+            {
+              "en": "reminder bell",
+              "ar": "جرس تذكير",
+              "kind": "object",
+              "x": 59,
+              "y": 80
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-154",
+      "goalAr": "شرح سبب غياب مرفق",
+      "goalEn": "Explaining a missing attachment",
+      "stages": [
+        {
+          "from": 1,
+          "to": 2,
+          "en": "Check if the team received the minutes",
+          "ar": "تحقّق هل تلقّى الفريق محضر الاجتماع",
+          "purposeEn": "Check if the team received the minutes.",
+          "purposeAr": "تحقّق هل تلقّى الفريق محضر الاجتماع.",
+          "image": {
+            "id": "conv-life-l3-154-1",
+            "path": "assets/scenes/conversations/life-l3-154-1.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Check if the team received the minutes",
+            "ar": "تحقّق هل تلقّى الفريق محضر الاجتماع",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                252,
+                394,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "check if the team received the minutes",
+              "ar": "تحقّق هل تلقّى الفريق محضر الاجتماع",
+              "kind": "phrase",
+              "x": 56,
+              "y": 69
+            },
+            {
+              "en": "laptop lid",
+              "ar": "غطاء الحاسوب المحمول",
+              "kind": "object",
+              "x": 59,
+              "y": 74
+            },
+            {
+              "en": "notebook",
+              "ar": "دفتر",
+              "kind": "object",
+              "x": 84,
+              "y": 89
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "en": "Notice the missing attachment",
+          "ar": "انتبه إلى المرفق الناقص",
+          "purposeEn": "Notice the missing attachment.",
+          "purposeAr": "انتبه إلى المرفق الناقص.",
+          "image": {
+            "id": "conv-life-l3-154-2",
+            "path": "assets/scenes/conversations/life-l3-154-2.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Notice the missing attachment",
+            "ar": "انتبه إلى المرفق الناقص",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                252,
+                790,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "notice the missing attachment",
+              "ar": "انتبه إلى المرفق الناقص",
+              "kind": "phrase",
+              "x": 56,
+              "y": 68
+            },
+            {
+              "en": "email icon",
+              "ar": "أيقونة بريد إلكتروني",
+              "kind": "object",
+              "x": 50,
+              "y": 55
+            },
+            {
+              "en": "surprised",
+              "ar": "متفاجئ",
+              "kind": "description",
+              "x": 31,
+              "y": 32
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "en": "Send a follow-up with the file",
+          "ar": "أرسل رسالة متابعة تتضمّن الملف",
+          "purposeEn": "Send a follow-up with the file.",
+          "purposeAr": "أرسل رسالة متابعة تتضمّن الملف.",
+          "image": {
+            "id": "conv-life-l3-154-3",
+            "path": "assets/scenes/conversations/life-l3-154-3.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Send a follow-up with the file",
+            "ar": "أرسل رسالة متابعة تتضمّن الملف",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                252,
+                1187,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "send a follow-up with the file",
+              "ar": "أرسل رسالة متابعة تتضمّن الملف",
+              "kind": "phrase",
+              "x": 51,
+              "y": 72
+            },
+            {
+              "en": "attachment icon",
+              "ar": "أيقونة مرفق",
+              "kind": "object",
+              "x": 49,
+              "y": 73
+            },
+            {
+              "en": "send button",
+              "ar": "زر الإرسال",
+              "kind": "object",
+              "x": 70,
+              "y": 84
+            }
+          ]
+        },
+        {
+          "from": 7,
+          "to": 7,
+          "en": "Put the date in the subject line",
+          "ar": "ضع التاريخ في خانة الموضوع",
+          "purposeEn": "Put the date in the subject line.",
+          "purposeAr": "ضع التاريخ في خانة الموضوع.",
+          "image": {
+            "id": "conv-life-l3-154-4",
+            "path": "assets/scenes/conversations/life-l3-154-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Put the date in the subject line",
+            "ar": "ضع التاريخ في خانة الموضوع",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                252,
+                1583,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "put the date in the subject line",
+              "ar": "ضع التاريخ في خانة الموضوع",
+              "kind": "phrase",
+              "x": 63,
+              "y": 59
+            },
+            {
+              "en": "subject field",
+              "ar": "خانة الموضوع",
+              "kind": "object",
+              "x": 57,
+              "y": 52
+            },
+            {
+              "en": "paper clip icon",
+              "ar": "أيقونة مشبك ورق",
+              "kind": "object",
+              "x": 40,
+              "y": 78
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-155",
+      "goalAr": "تحديد من سيدوّن محضر الاجتماع",
+      "goalEn": "Confirming who will take the meeting notes",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Decide whether to wait for someone",
+          "ar": "قرّر هل تنتظر شخصًا",
+          "purposeEn": "Decide whether to wait for someone.",
+          "purposeAr": "قرّر هل تنتظر شخصًا.",
+          "image": {
+            "id": "conv-life-l3-155-1",
+            "path": "assets/scenes/conversations/life-l3-155-1.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Decide whether to wait for someone",
+            "ar": "قرّر هل تنتظر شخصًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                500,
+                394,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "decide whether to wait for someone",
+              "ar": "قرّر هل تنتظر شخصًا",
+              "kind": "phrase",
+              "x": 47,
+              "y": 61
+            },
+            {
+              "en": "empty chair",
+              "ar": "كرسي فارغ",
+              "kind": "object",
+              "x": 53,
+              "y": 72
+            },
+            {
+              "en": "meeting-room clock",
+              "ar": "ساعة قاعة الاجتماع",
+              "kind": "object",
+              "x": 57,
+              "y": 17
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Ask which parts to write down",
+          "ar": "اسأل عن الأجزاء المطلوب تدوينها",
+          "purposeEn": "Ask which parts to write down.",
+          "purposeAr": "اسأل عن الأجزاء المطلوب تدوينها.",
+          "image": {
+            "id": "conv-life-l3-155-2",
+            "path": "assets/scenes/conversations/life-l3-155-2.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Ask which parts to write down",
+            "ar": "اسأل عن الأجزاء المطلوب تدوينها",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                500,
+                790,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask which parts to write down",
+              "ar": "اسأل عن الأجزاء المطلوب تدوينها",
+              "kind": "phrase",
+              "x": 50,
+              "y": 79
+            },
+            {
+              "en": "open notebook",
+              "ar": "دفتر مفتوح",
+              "kind": "object",
+              "x": 50,
+              "y": 91
+            },
+            {
+              "en": "thoughtful",
+              "ar": "متأمّل",
+              "kind": "description",
+              "x": 73,
+              "y": 36
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Take notes on the decisions",
+          "ar": "دوّن القرارات",
+          "purposeEn": "Take notes on the decisions.",
+          "purposeAr": "دوّن القرارات.",
+          "image": {
+            "id": "conv-life-l3-155-3",
+            "path": "assets/scenes/conversations/life-l3-155-3.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Take notes on the decisions",
+            "ar": "دوّن القرارات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                500,
+                1187,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "take notes on the decisions",
+              "ar": "دوّن القرارات",
+              "kind": "phrase",
+              "x": 43,
+              "y": 75
+            },
+            {
+              "en": "meeting checklist",
+              "ar": "قائمة تحقق للاجتماع",
+              "kind": "object",
+              "x": 45,
+              "y": 84
+            },
+            {
+              "en": "pen",
+              "ar": "قلم",
+              "kind": "object",
+              "x": 24,
+              "y": 77
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Check the next meeting date",
+          "ar": "تحقّق من موعد الاجتماع التالي",
+          "purposeEn": "Check the next meeting date.",
+          "purposeAr": "تحقّق من موعد الاجتماع التالي.",
+          "image": {
+            "id": "conv-life-l3-155-4",
+            "path": "assets/scenes/conversations/life-l3-155-4.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Check the next meeting date",
+            "ar": "تحقّق من موعد الاجتماع التالي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                500,
+                1583,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "check the next meeting date",
+              "ar": "تحقّق من موعد الاجتماع التالي",
+              "kind": "phrase",
+              "x": 70,
+              "y": 49
+            },
+            {
+              "en": "marked square",
+              "ar": "خانة محدّدة",
+              "kind": "object",
+              "x": 76,
+              "y": 48
+            },
+            {
+              "en": "closed folder",
+              "ar": "ملف مغلق",
+              "kind": "object",
+              "x": 33,
+              "y": 81
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-156",
+      "goalAr": "الرد عندما يبدو زميل منزعجًا",
+      "goalEn": "Responding when a colleague sounds upset",
+      "stages": [
+        {
+          "from": 1,
+          "to": 2,
+          "en": "Find out why the caller is upset",
+          "ar": "اعرف لماذا المتّصل منزعج",
+          "purposeEn": "Find out why the caller is upset.",
+          "purposeAr": "اعرف لماذا المتّصل منزعج.",
+          "image": {
+            "id": "conv-life-l3-156-1",
+            "path": "assets/scenes/conversations/life-l3-156-1.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Find out why the caller is upset",
+            "ar": "اعرف لماذا المتّصل منزعج",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                747,
+                394,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "find out why the caller is upset",
+              "ar": "اعرف لماذا المتّصل منزعج",
+              "kind": "phrase",
+              "x": 32,
+              "y": 42
+            },
+            {
+              "en": "mobile phone",
+              "ar": "هاتف محمول",
+              "kind": "object",
+              "x": 25,
+              "y": 36
+            },
+            {
+              "en": "concerned",
+              "ar": "قلق",
+              "kind": "description",
+              "x": 35,
+              "y": 25
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "en": "Explain what is still pending",
+          "ar": "اشرح ما لا يزال معلّقًا",
+          "purposeEn": "Explain what is still pending.",
+          "purposeAr": "اشرح ما لا يزال معلّقًا.",
+          "image": {
+            "id": "conv-life-l3-156-2",
+            "path": "assets/scenes/conversations/life-l3-156-2.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Explain what is still pending",
+            "ar": "اشرح ما لا يزال معلّقًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                747,
+                790,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "explain what is still pending",
+              "ar": "اشرح ما لا يزال معلّقًا",
+              "kind": "phrase",
+              "x": 45,
+              "y": 63
+            },
+            {
+              "en": "checklist",
+              "ar": "قائمة تحقق",
+              "kind": "object",
+              "x": 48,
+              "y": 74
+            },
+            {
+              "en": "empty checkbox",
+              "ar": "خانة اختيار فارغة",
+              "kind": "object",
+              "x": 42,
+              "y": 86
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "en": "Offer to call back now",
+          "ar": "اعرض إعادة الاتصال الآن",
+          "purposeEn": "Offer to call back now.",
+          "purposeAr": "اعرض إعادة الاتصال الآن.",
+          "image": {
+            "id": "conv-life-l3-156-3",
+            "path": "assets/scenes/conversations/life-l3-156-3.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Offer to call back now",
+            "ar": "اعرض إعادة الاتصال الآن",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                747,
+                1187,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "offer to call back now",
+              "ar": "اعرض إعادة الاتصال الآن",
+              "kind": "phrase",
+              "x": 48,
+              "y": 65
+            },
+            {
+              "en": "smartphone",
+              "ar": "هاتف ذكي",
+              "kind": "object",
+              "x": 41,
+              "y": 76
+            },
+            {
+              "en": "gesture with an open hand",
+              "ar": "يشير بكف مفتوحة",
+              "kind": "action",
+              "x": 27,
+              "y": 64
+            }
+          ]
+        },
+        {
+          "from": 7,
+          "to": 7,
+          "en": "Apologize before explaining the delay",
+          "ar": "اعتذر قبل شرح التأخير",
+          "purposeEn": "Apologize before explaining the delay.",
+          "purposeAr": "اعتذر قبل شرح التأخير.",
+          "image": {
+            "id": "conv-life-l3-156-4",
+            "path": "assets/scenes/conversations/life-l3-156-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Apologize before explaining the delay",
+            "ar": "اعتذر قبل شرح التأخير",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                747,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "apologize before explaining the delay",
+              "ar": "اعتذر قبل شرح التأخير",
+              "kind": "phrase",
+              "x": 39,
+              "y": 59
+            },
+            {
+              "en": "phone",
+              "ar": "هاتف",
+              "kind": "object",
+              "x": 39,
+              "y": 41
+            },
+            {
+              "en": "spiral notepad",
+              "ar": "دفتر ملاحظات حلزوني",
+              "kind": "object",
+              "x": 37,
+              "y": 94
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

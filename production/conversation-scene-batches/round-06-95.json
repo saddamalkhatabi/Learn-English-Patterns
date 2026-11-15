@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "f0a66c22ece0b45847cc028ea8531c7dedc3636e0aa73150c08ea79398b7fd1e"
+  },
+  "conversations": [
+    {
+      "id": "l3-149",
+      "goalAr": "شرح سبب غرابة إجابة",
+      "goalEn": "Explaining why an answer sounded wrong",
+      "stages": [
+        {
+          "from": 1,
+          "to": 2,
+          "en": "Check the word order",
+          "ar": "تحقّق من ترتيب الكلمات",
+          "purposeEn": "Check the word order.",
+          "purposeAr": "تحقّق من ترتيب الكلمات.",
+          "image": {
+            "id": "conv-life-l3-149-1",
+            "path": "assets/scenes/conversations/life-l3-149-1.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Check the word order",
+            "ar": "تحقّق من ترتيب الكلمات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                394,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "check the word order",
+              "ar": "تحقّق من ترتيب الكلمات",
+              "kind": "phrase",
+              "x": 46,
+              "y": 66
+            },
+            {
+              "en": "word strips",
+              "ar": "قصاصات كلمات",
+              "kind": "object",
+              "x": 54,
+              "y": 90
+            },
+            {
+              "en": "closed textbook",
+              "ar": "كتاب دراسي مغلق",
+              "kind": "object",
+              "x": 14,
+              "y": 90
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "en": "Keep the subject before the verb",
+          "ar": "أبقِ الفاعل قبل الفعل",
+          "purposeEn": "Keep the subject before the verb.",
+          "purposeAr": "أبقِ الفاعل قبل الفعل.",
+          "image": {
+            "id": "conv-life-l3-149-2",
+            "path": "assets/scenes/conversations/life-l3-149-2.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Keep the subject before the verb",
+            "ar": "أبقِ الفاعل قبل الفعل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                3,
+                789,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "keep the subject before the verb",
+              "ar": "أبقِ الفاعل قبل الفعل",
+              "kind": "phrase",
+              "x": 50,
+              "y": 76
+            },
+            {
+              "en": "bank pictogram",
+              "ar": "رمز مصرف",
+              "kind": "object",
+              "x": 70,
+              "y": 60
+            },
+            {
+              "en": "sentence strip",
+              "ar": "قصاصة جملة",
+              "kind": "object",
+              "x": 42,
+              "y": 88
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "en": "Try a second example",
+          "ar": "جرّب مثالًا ثانيًا",
+          "purposeEn": "Try a second example.",
+          "purposeAr": "جرّب مثالًا ثانيًا.",
+          "image": {
+            "id": "conv-life-l3-149-3",
+            "path": "assets/scenes/conversations/life-l3-149-3.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Try a second example",
+            "ar": "جرّب مثالًا ثانيًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                3,
+                1186,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "try a second example",
+              "ar": "جرّب مثالًا ثانيًا",
+              "kind": "phrase",
+              "x": 57,
+              "y": 77
+            },
+            {
+              "en": "paper strips",
+              "ar": "قصاصات ورقية",
+              "kind": "object",
+              "x": 55,
+              "y": 91
+            },
+            {
+              "en": "picture stand",
+              "ar": "حامل صورة",
+              "kind": "object",
+              "x": 43,
+              "y": 60
+            }
+          ]
+        },
+        {
+          "from": 7,
+          "to": 7,
+          "en": "Choose an example from the article",
+          "ar": "اختر مثالًا من المقال",
+          "purposeEn": "Choose an example from the article.",
+          "purposeAr": "اختر مثالًا من المقال.",
+          "image": {
+            "id": "conv-life-l3-149-4",
+            "path": "assets/scenes/conversations/life-l3-149-4.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Choose an example from the article",
+            "ar": "اختر مثالًا من المقال",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                3,
+                1583,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "choose an example from the article",
+              "ar": "اختر مثالًا من المقال",
+              "kind": "phrase",
+              "x": 71,
+              "y": 70
+            },
+            {
+              "en": "printed article",
+              "ar": "مقال مطبوع",
+              "kind": "object",
+              "x": 62,
+              "y": 72
+            },
+            {
+              "en": "building photograph",
+              "ar": "صورة مبنى",
+              "kind": "object",
+              "x": 62,
+              "y": 57
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-150",
+      "goalAr": "إنهاء المذاكرة قبل الإرهاق",
+      "goalEn": "Finishing a study session before getting tired",
+      "stages": [
+        {
+          "from": 1,
+          "to": 2,
+          "en": "Explain why it is hard to concentrate",
+          "ar": "اشرح لماذا يصعب التركيز",
+          "purposeEn": "Explain why it is hard to concentrate.",
+          "purposeAr": "اشرح لماذا يصعب التركيز.",
+          "image": {
+            "id": "conv-life-l3-150-1",
+            "path": "assets/scenes/conversations/life-l3-150-1.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Explain why it is hard to concentrate",
+            "ar": "اشرح لماذا يصعب التركيز",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                250,
+                394,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "explain why it is hard to concentrate",
+              "ar": "اشرح لماذا يصعب التركيز",
+              "kind": "phrase",
+              "x": 38,
+              "y": 59
+            },
+            {
+              "en": "thick open book",
+              "ar": "كتاب سميك مفتوح",
+              "kind": "object",
+              "x": 50,
+              "y": 84
+            },
+            {
+              "en": "sleepy",
+              "ar": "نعسان",
+              "kind": "description",
+              "x": 36,
+              "y": 27
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "en": "Finish one more question",
+          "ar": "أكمل سؤالًا آخر",
+          "purposeEn": "Finish one more question.",
+          "purposeAr": "أكمل سؤالًا آخر.",
+          "image": {
+            "id": "conv-life-l3-150-2",
+            "path": "assets/scenes/conversations/life-l3-150-2.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Finish one more question",
+            "ar": "أكمل سؤالًا آخر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                250,
+                789,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "finish one more question",
+              "ar": "أكمل سؤالًا آخر",
+              "kind": "phrase",
+              "x": 54,
+              "y": 77
+            },
+            {
+              "en": "worksheet",
+              "ar": "ورقة عمل",
+              "kind": "object",
+              "x": 45,
+              "y": 86
+            },
+            {
+              "en": "blue pen",
+              "ar": "قلم أزرق",
+              "kind": "object",
+              "x": 20,
+              "y": 77
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "en": "Take a break before continuing",
+          "ar": "خذ استراحة قبل المتابعة",
+          "purposeEn": "Take a break before continuing.",
+          "purposeAr": "خذ استراحة قبل المتابعة.",
+          "image": {
+            "id": "conv-life-l3-150-3",
+            "path": "assets/scenes/conversations/life-l3-150-3.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Take a break before continuing",
+            "ar": "خذ استراحة قبل المتابعة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                250,
+                1186,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "take a break before continuing",
+              "ar": "خذ استراحة قبل المتابعة",
+              "kind": "phrase",
+              "x": 40,
+              "y": 52
+            },
+            {
+              "en": "stretch your arms",
+              "ar": "يمدّ ذراعيه",
+              "kind": "action",
+              "x": 39,
+              "y": 39
+            },
+            {
+              "en": "thermos",
+              "ar": "حافظة حرارية",
+              "kind": "object",
+              "x": 79,
+              "y": 77
+            }
+          ]
+        },
+        {
+          "from": 7,
+          "to": 7,
+          "en": "Save a copy of the notes",
+          "ar": "احفظ نسخة من الملاحظات",
+          "purposeEn": "Save a copy of the notes.",
+          "purposeAr": "احفظ نسخة من الملاحظات.",
+          "image": {
+            "id": "conv-life-l3-150-4",
+            "path": "assets/scenes/conversations/life-l3-150-4.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Save a copy of the notes",
+            "ar": "احفظ نسخة من الملاحظات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                250,
+                1583,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "save a copy of the notes",
+              "ar": "احفظ نسخة من الملاحظات",
+              "kind": "phrase",
+              "x": 60,
+              "y": 73
+            },
+            {
+              "en": "folder icon",
+              "ar": "أيقونة مجلّد",
+              "kind": "object",
+              "x": 61,
+              "y": 65
+            },
+            {
+              "en": "laptop keyboard",
+              "ar": "لوحة مفاتيح الحاسوب",
+              "kind": "object",
+              "x": 41,
+              "y": 84
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-151",
+      "goalAr": "طلب بدء العمل في وقت متأخر",
+      "goalEn": "Asking for a later start at work",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Ask if you can start the shift later",
+          "ar": "اسأل إن كان بإمكانك بدء المناوبة لاحقًا",
+          "purposeEn": "Ask if you can start the shift later.",
+          "purposeAr": "اسأل إن كان بإمكانك بدء المناوبة لاحقًا.",
+          "image": {
+            "id": "conv-life-l3-151-1",
+            "path": "assets/scenes/conversations/life-l3-151-1.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Ask if you can start the shift later",
+            "ar": "اسأل إن كان بإمكانك بدء المناوبة لاحقًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                499,
+                394,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask if you can start the shift later",
+              "ar": "اسأل إن كان بإمكانك بدء المناوبة لاحقًا",
+              "kind": "phrase",
+              "x": 47,
+              "y": 62
+            },
+            {
+              "en": "shift schedule",
+              "ar": "جدول المناوبات",
+              "kind": "object",
+              "x": 54,
+              "y": 60
+            },
+            {
+              "en": "service bell",
+              "ar": "جرس الخدمة",
+              "kind": "object",
+              "x": 85,
+              "y": 84
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Check when your colleague arrives",
+          "ar": "تحقّق من وقت وصول زميلك",
+          "purposeEn": "Check when your colleague arrives.",
+          "purposeAr": "تحقّق من وقت وصول زميلك.",
+          "image": {
+            "id": "conv-life-l3-151-2",
+            "path": "assets/scenes/conversations/life-l3-151-2.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Check when your colleague arrives",
+            "ar": "تحقّق من وقت وصول زميلك",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                499,
+                789,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "check when your colleague arrives",
+              "ar": "تحقّق من وقت وصول زميلك",
+              "kind": "phrase",
+              "x": 51,
+              "y": 40
+            },
+            {
+              "en": "wall clock",
+              "ar": "ساعة حائط",
+              "kind": "object",
+              "x": 57,
+              "y": 16
+            },
+            {
+              "en": "timetable",
+              "ar": "جدول مواعيد",
+              "kind": "object",
+              "x": 61,
+              "y": 59
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Ask someone to cover the desk",
+          "ar": "اطلب من شخص أن يتولّى الاستقبال مؤقتًا",
+          "purposeEn": "Ask someone to cover the desk.",
+          "purposeAr": "اطلب من شخص أن يتولّى الاستقبال مؤقتًا.",
+          "image": {
+            "id": "conv-life-l3-151-3",
+            "path": "assets/scenes/conversations/life-l3-151-3.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Ask someone to cover the desk",
+            "ar": "اطلب من شخص أن يتولّى الاستقبال مؤقتًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                499,
+                1186,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask someone to cover the desk",
+              "ar": "اطلب من شخص أن يتولّى الاستقبال مؤقتًا",
+              "kind": "phrase",
+              "x": 49,
+              "y": 69
+            },
+            {
+              "en": "reception desk sign",
+              "ar": "لافتة مكتب الاستقبال",
+              "kind": "object",
+              "x": 54,
+              "y": 79
+            },
+            {
+              "en": "service bell",
+              "ar": "جرس الخدمة",
+              "kind": "object",
+              "x": 24,
+              "y": 88
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Send a message to confirm the change",
+          "ar": "أرسل رسالة لتأكيد التغيير",
+          "purposeEn": "Send a message to confirm the change.",
+          "purposeAr": "أرسل رسالة لتأكيد التغيير.",
+          "image": {
+            "id": "conv-life-l3-151-4",
+            "path": "assets/scenes/conversations/life-l3-151-4.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Send a message to confirm the change",
+            "ar": "أرسل رسالة لتأكيد التغيير",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                499,
+                1583,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "send a message to confirm the change",
+              "ar": "أرسل رسالة لتأكيد التغيير",
+              "kind": "phrase",
+              "x": 53,
+              "y": 68
+            },
+            {
+              "en": "smartphone",
+              "ar": "هاتف ذكي",
+              "kind": "object",
+              "x": 56,
+              "y": 68
+            },
+            {
+              "en": "staff badge",
+              "ar": "بطاقة موظف",
+              "kind": "object",
+              "x": 66,
+              "y": 80
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-152",
+      "goalAr": "شرح تعديل في الخطة",
+      "goalEn": "Explaining an adjustment to a plan",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Propose moving the training session",
+          "ar": "اقترح تغيير موعد جلسة التدريب",
+          "purposeEn": "Propose moving the training session.",
+          "purposeAr": "اقترح تغيير موعد جلسة التدريب.",
+          "image": {
+            "id": "conv-life-l3-152-1",
+            "path": "assets/scenes/conversations/life-l3-152-1.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Propose moving the training session",
+            "ar": "اقترح تغيير موعد جلسة التدريب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                746,
+                394,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "propose moving the training session",
+              "ar": "اقترح تغيير موعد جلسة التدريب",
+              "kind": "phrase",
+              "x": 49,
+              "y": 72
+            },
+            {
+              "en": "desk calendar",
+              "ar": "تقويم مكتبي",
+              "kind": "object",
+              "x": 56,
+              "y": 69
+            },
+            {
+              "en": "marked date",
+              "ar": "تاريخ محدّد بعلامة",
+              "kind": "object",
+              "x": 55,
+              "y": 72
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Find out why the room was already booked",
+          "ar": "اعرف لماذا حُجزت القاعة مسبقًا",
+          "purposeEn": "Find out why the room was already booked.",
+          "purposeAr": "اعرف لماذا حُجزت القاعة مسبقًا.",
+          "image": {
+            "id": "conv-life-l3-152-2",
+            "path": "assets/scenes/conversations/life-l3-152-2.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Find out why the room was already booked",
+            "ar": "اعرف لماذا حُجزت القاعة مسبقًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                746,
+                789,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "find out why the room was already booked",
+              "ar": "اعرف لماذا حُجزت القاعة مسبقًا",
+              "kind": "phrase",
+              "x": 52,
+              "y": 61
+            },
+            {
+              "en": "occupied time slot",
+              "ar": "موعد محجوز",
+              "kind": "object",
+              "x": 52,
+              "y": 49
+            },
+            {
+              "en": "room schedule",
+              "ar": "جدول القاعة",
+              "kind": "object",
+              "x": 46,
+              "y": 50
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Discuss a new date for the session",
+          "ar": "ناقش موعدًا جديدًا للجلسة",
+          "purposeEn": "Discuss a new date for the session.",
+          "purposeAr": "ناقش موعدًا جديدًا للجلسة.",
+          "image": {
+            "id": "conv-life-l3-152-3",
+            "path": "assets/scenes/conversations/life-l3-152-3.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Discuss a new date for the session",
+            "ar": "ناقش موعدًا جديدًا للجلسة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                746,
+                1186,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "discuss a new date for the session",
+              "ar": "ناقش موعدًا جديدًا للجلسة",
+              "kind": "phrase",
+              "x": 44,
+              "y": 59
+            },
+            {
+              "en": "training binders",
+              "ar": "ملفات التدريب",
+              "kind": "object",
+              "x": 25,
+              "y": 79
+            },
+            {
+              "en": "notepad",
+              "ar": "دفتر ملاحظات",
+              "kind": "object",
+              "x": 89,
+              "y": 88
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Check room availability before sending an update",
+          "ar": "تحقّق من توفر القاعة قبل إرسال تحديث",
+          "purposeEn": "Check room availability before sending an update.",
+          "purposeAr": "تحقّق من توفر القاعة قبل إرسال تحديث.",
+          "image": {
+            "id": "conv-life-l3-152-4",
+            "path": "assets/scenes/conversations/life-l3-152-4.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Check room availability before sending an update",
+            "ar": "تحقّق من توفر القاعة قبل إرسال تحديث",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                746,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "check room availability before sending an update",
+              "ar": "تحقّق من توفر القاعة قبل إرسال تحديث",
+              "kind": "phrase",
+              "x": 65,
+              "y": 77
+            },
+            {
+              "en": "tablet screen",
+              "ar": "شاشة جهاز لوحي",
+              "kind": "object",
+              "x": 69,
+              "y": 81
+            },
+            {
+              "en": "open time slot",
+              "ar": "موعد متاح",
+              "kind": "object",
+              "x": 77,
+              "y": 74
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
