@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "e7445f396be31f7ca1a90f9b08d999a201f34429a43839e5b9ea404adbfc9d07"
+  },
+  "conversations": [
+    {
+      "id": "l3-073",
+      "goalAr": "اختيار مكان للأغراض اليومية",
+      "goalEn": "Finding a place for everyday items",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Find a place for the charger",
+          "ar": "اعثر على مكان للشاحن",
+          "purposeEn": "Find a place for the charger.",
+          "purposeAr": "اعثر على مكان للشاحن.",
+          "image": {
+            "id": "conv-life-l3-073-1",
+            "path": "assets/scenes/conversations/life-l3-073-1.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Find a place for the charger",
+            "ar": "اعثر على مكان للشاحن",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                394,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "find a place for the charger",
+              "ar": "اعثر على مكان للشاحن",
+              "kind": "phrase",
+              "x": 39,
+              "y": 74
+            },
+            {
+              "en": "charger cable",
+              "ar": "كابل الشاحن",
+              "kind": "object",
+              "x": 40,
+              "y": 82
+            },
+            {
+              "en": "wicker basket",
+              "ar": "سلّة خوص",
+              "kind": "object",
+              "x": 75,
+              "y": 59
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Put the charger inside the basket",
+          "ar": "ضع الشاحن داخل السلة",
+          "purposeEn": "Put the charger inside the basket.",
+          "purposeAr": "ضع الشاحن داخل السلة.",
+          "image": {
+            "id": "conv-life-l3-073-2",
+            "path": "assets/scenes/conversations/life-l3-073-2.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Put the charger inside the basket",
+            "ar": "ضع الشاحن داخل السلة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                3,
+                789,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "put the charger inside the basket",
+              "ar": "ضع الشاحن داخل السلة",
+              "kind": "phrase",
+              "x": 72,
+              "y": 62
+            },
+            {
+              "en": "charger plug",
+              "ar": "قابس الشاحن",
+              "kind": "object",
+              "x": 74,
+              "y": 59
+            },
+            {
+              "en": "wicker basket",
+              "ar": "سلّة خوص",
+              "kind": "object",
+              "x": 71,
+              "y": 78
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Keep your glasses by the lamp",
+          "ar": "احتفظ بنظارتك بجانب المصباح",
+          "purposeEn": "Keep your glasses by the lamp.",
+          "purposeAr": "احتفظ بنظارتك بجانب المصباح.",
+          "image": {
+            "id": "conv-life-l3-073-3",
+            "path": "assets/scenes/conversations/life-l3-073-3.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Keep your glasses by the lamp",
+            "ar": "احتفظ بنظارتك بجانب المصباح",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                3,
+                1186,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "keep your glasses by the lamp",
+              "ar": "احتفظ بنظارتك بجانب المصباح",
+              "kind": "phrase",
+              "x": 61,
+              "y": 68
+            },
+            {
+              "en": "glasses",
+              "ar": "نظارة",
+              "kind": "object",
+              "x": 60,
+              "y": 63
+            },
+            {
+              "en": "table lamp",
+              "ar": "مصباح طاولة",
+              "kind": "object",
+              "x": 90,
+              "y": 51
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Store the glasses in their case",
+          "ar": "ضع النظارة في علبتها",
+          "purposeEn": "Store the glasses in their case.",
+          "purposeAr": "ضع النظارة في علبتها.",
+          "image": {
+            "id": "conv-life-l3-073-4",
+            "path": "assets/scenes/conversations/life-l3-073-4.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Store the glasses in their case",
+            "ar": "ضع النظارة في علبتها",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                3,
+                1583,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "store the glasses in their case",
+              "ar": "ضع النظارة في علبتها",
+              "kind": "phrase",
+              "x": 67,
+              "y": 75
+            },
+            {
+              "en": "glasses case",
+              "ar": "علبة نظارة",
+              "kind": "object",
+              "x": 71,
+              "y": 82
+            },
+            {
+              "en": "lampshade",
+              "ar": "غطاء المصباح",
+              "kind": "object",
+              "x": 94,
+              "y": 39
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-074",
+      "goalAr": "تأجيل بقية العمل إلى الغد",
+      "goalEn": "Saving the rest of the work for tomorrow",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Leave the rest for tomorrow",
+          "ar": "اترك الباقي للغد",
+          "purposeEn": "Leave the rest for tomorrow.",
+          "purposeAr": "اترك الباقي للغد.",
+          "image": {
+            "id": "conv-life-l3-074-1",
+            "path": "assets/scenes/conversations/life-l3-074-1.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Leave the rest for tomorrow",
+            "ar": "اترك الباقي للغد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                251,
+                394,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "leave the rest for tomorrow",
+              "ar": "اترك الباقي للغد",
+              "kind": "phrase",
+              "x": 27,
+              "y": 34
+            },
+            {
+              "en": "sleepy",
+              "ar": "نعسان",
+              "kind": "description",
+              "x": 25,
+              "y": 29
+            },
+            {
+              "en": "alarm clock",
+              "ar": "ساعة منبّه",
+              "kind": "object",
+              "x": 85,
+              "y": 61
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Save the file before closing the laptop",
+          "ar": "احفظ الملف قبل إغلاق الحاسوب",
+          "purposeEn": "Save the file before closing the laptop.",
+          "purposeAr": "احفظ الملف قبل إغلاق الحاسوب.",
+          "image": {
+            "id": "conv-life-l3-074-2",
+            "path": "assets/scenes/conversations/life-l3-074-2.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Save the file before closing the laptop",
+            "ar": "احفظ الملف قبل إغلاق الحاسوب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                251,
+                789,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "save the file before closing the laptop",
+              "ar": "احفظ الملف قبل إغلاق الحاسوب",
+              "kind": "phrase",
+              "x": 63,
+              "y": 70
+            },
+            {
+              "en": "save icon",
+              "ar": "أيقونة الحفظ",
+              "kind": "object",
+              "x": 66,
+              "y": 71
+            },
+            {
+              "en": "laptop keyboard",
+              "ar": "لوحة مفاتيح الحاسوب",
+              "kind": "object",
+              "x": 66,
+              "y": 91
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Turn off the hallway light",
+          "ar": "أطفئ ضوء الممر",
+          "purposeEn": "Turn off the hallway light.",
+          "purposeAr": "أطفئ ضوء الممر.",
+          "image": {
+            "id": "conv-life-l3-074-3",
+            "path": "assets/scenes/conversations/life-l3-074-3.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Turn off the hallway light",
+            "ar": "أطفئ ضوء الممر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                251,
+                1186,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "turn off the hallway light",
+              "ar": "أطفئ ضوء الممر",
+              "kind": "phrase",
+              "x": 91,
+              "y": 49
+            },
+            {
+              "en": "light switch",
+              "ar": "مفتاح الضوء",
+              "kind": "object",
+              "x": 95,
+              "y": 45
+            },
+            {
+              "en": "hallway",
+              "ar": "ممر",
+              "kind": "object",
+              "x": 32,
+              "y": 32
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Leave a note by the door",
+          "ar": "اترك ملاحظة قرب الباب",
+          "purposeEn": "Leave a note by the door.",
+          "purposeAr": "اترك ملاحظة قرب الباب.",
+          "image": {
+            "id": "conv-life-l3-074-4",
+            "path": "assets/scenes/conversations/life-l3-074-4.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Leave a note by the door",
+            "ar": "اترك ملاحظة قرب الباب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                251,
+                1583,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "leave a note by the door",
+              "ar": "اترك ملاحظة قرب الباب",
+              "kind": "phrase",
+              "x": 84,
+              "y": 49
+            },
+            {
+              "en": "reminder note",
+              "ar": "ورقة تذكير",
+              "kind": "object",
+              "x": 88,
+              "y": 51
+            },
+            {
+              "en": "door handle",
+              "ar": "مقبض الباب",
+              "kind": "object",
+              "x": 66,
+              "y": 54
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-075",
+      "goalAr": "الاتفاق على وقت إيقاف اللعبة",
+      "goalEn": "Agreeing when to stop a game",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Be disappointed about losing",
+          "ar": "يشعر بخيبة أمل بسبب الخسارة",
+          "purposeEn": "Be disappointed about losing.",
+          "purposeAr": "يشعر بخيبة أمل بسبب الخسارة.",
+          "image": {
+            "id": "conv-life-l3-075-1",
+            "path": "assets/scenes/conversations/life-l3-075-1.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Be disappointed about losing",
+            "ar": "يشعر بخيبة أمل بسبب الخسارة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                499,
+                394,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "be disappointed about losing",
+              "ar": "يشعر بخيبة أمل بسبب الخسارة",
+              "kind": "phrase",
+              "x": 73,
+              "y": 38
+            },
+            {
+              "en": "disappointed",
+              "ar": "خائب الأمل",
+              "kind": "description",
+              "x": 73,
+              "y": 25
+            },
+            {
+              "en": "chessboard",
+              "ar": "رقعة شطرنج",
+              "kind": "object",
+              "x": 52,
+              "y": 86
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Finish the round and take a break",
+          "ar": "أكملا الجولة وخذا استراحة",
+          "purposeEn": "Finish the round and take a break.",
+          "purposeAr": "أكملا الجولة وخذا استراحة.",
+          "image": {
+            "id": "conv-life-l3-075-2",
+            "path": "assets/scenes/conversations/life-l3-075-2.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Finish the round and take a break",
+            "ar": "أكملا الجولة وخذا استراحة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                499,
+                789,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "finish the round and take a break",
+              "ar": "أكملا الجولة وخذا استراحة",
+              "kind": "phrase",
+              "x": 31,
+              "y": 48
+            },
+            {
+              "en": "chess pieces",
+              "ar": "قطع الشطرنج",
+              "kind": "object",
+              "x": 49,
+              "y": 90
+            },
+            {
+              "en": "signal a break",
+              "ar": "يشير إلى التوقّف للاستراحة",
+              "kind": "action",
+              "x": 31,
+              "y": 46
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Continue the game after supper",
+          "ar": "واصلا اللعب بعد العشاء",
+          "purposeEn": "Continue the game after supper.",
+          "purposeAr": "واصلا اللعب بعد العشاء.",
+          "image": {
+            "id": "conv-life-l3-075-3",
+            "path": "assets/scenes/conversations/life-l3-075-3.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Continue the game after supper",
+            "ar": "واصلا اللعب بعد العشاء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                499,
+                1186,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "continue the game after supper",
+              "ar": "واصلا اللعب بعد العشاء",
+              "kind": "phrase",
+              "x": 54,
+              "y": 76
+            },
+            {
+              "en": "dinner plate",
+              "ar": "طبق عشاء",
+              "kind": "object",
+              "x": 65,
+              "y": 87
+            },
+            {
+              "en": "glass of water",
+              "ar": "كأس ماء",
+              "kind": "object",
+              "x": 85,
+              "y": 76
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Leave the pieces where they are",
+          "ar": "اترك القطع في أماكنها",
+          "purposeEn": "Leave the pieces where they are.",
+          "purposeAr": "اترك القطع في أماكنها.",
+          "image": {
+            "id": "conv-life-l3-075-4",
+            "path": "assets/scenes/conversations/life-l3-075-4.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Leave the pieces where they are",
+            "ar": "اترك القطع في أماكنها",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                499,
+                1583,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "leave the pieces where they are",
+              "ar": "اترك القطع في أماكنها",
+              "kind": "phrase",
+              "x": 43,
+              "y": 81
+            },
+            {
+              "en": "chessboard",
+              "ar": "رقعة شطرنج",
+              "kind": "object",
+              "x": 49,
+              "y": 89
+            },
+            {
+              "en": "chair back",
+              "ar": "ظهر كرسي",
+              "kind": "object",
+              "x": 28,
+              "y": 79
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-076",
+      "goalAr": "اختيار مكان أهدأ للحديث",
+      "goalEn": "Choosing a quieter place to talk",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Struggle to hear each other",
+          "ar": "يجدان صعوبة في سماع بعضهما",
+          "purposeEn": "Struggle to hear each other.",
+          "purposeAr": "يجدان صعوبة في سماع بعضهما.",
+          "image": {
+            "id": "conv-life-l3-076-1",
+            "path": "assets/scenes/conversations/life-l3-076-1.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Struggle to hear each other",
+            "ar": "يجدان صعوبة في سماع بعضهما",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                746,
+                394,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "struggle to hear each other",
+              "ar": "يجدان صعوبة في سماع بعضهما",
+              "kind": "phrase",
+              "x": 52,
+              "y": 54
+            },
+            {
+              "en": "cup a hand around your ear",
+              "ar": "يضع كفّه حول أذنه",
+              "kind": "action",
+              "x": 47,
+              "y": 43
+            },
+            {
+              "en": "cup and saucer",
+              "ar": "فنجان وصحن",
+              "kind": "object",
+              "x": 37,
+              "y": 86
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Move to the table by the window",
+          "ar": "انتقل إلى الطاولة قرب النافذة",
+          "purposeEn": "Move to the table by the window.",
+          "purposeAr": "انتقل إلى الطاولة قرب النافذة.",
+          "image": {
+            "id": "conv-life-l3-076-2",
+            "path": "assets/scenes/conversations/life-l3-076-2.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Move to the table by the window",
+            "ar": "انتقل إلى الطاولة قرب النافذة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                746,
+                789,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "move to the table by the window",
+              "ar": "انتقل إلى الطاولة قرب النافذة",
+              "kind": "phrase",
+              "x": 50,
+              "y": 77
+            },
+            {
+              "en": "large window",
+              "ar": "نافذة كبيرة",
+              "kind": "object",
+              "x": 61,
+              "y": 39
+            },
+            {
+              "en": "round table",
+              "ar": "طاولة مستديرة",
+              "kind": "object",
+              "x": 58,
+              "y": 85
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Suggest sitting outside",
+          "ar": "اقترح الجلوس في الخارج",
+          "purposeEn": "Suggest sitting outside.",
+          "purposeAr": "اقترح الجلوس في الخارج.",
+          "image": {
+            "id": "conv-life-l3-076-3",
+            "path": "assets/scenes/conversations/life-l3-076-3.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Suggest sitting outside",
+            "ar": "اقترح الجلوس في الخارج",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                746,
+                1186,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "suggest sitting outside",
+              "ar": "اقترح الجلوس في الخارج",
+              "kind": "phrase",
+              "x": 52,
+              "y": 57
+            },
+            {
+              "en": "garden bench",
+              "ar": "مقعد حديقة",
+              "kind": "object",
+              "x": 64,
+              "y": 42
+            },
+            {
+              "en": "garden path",
+              "ar": "ممر الحديقة",
+              "kind": "object",
+              "x": 68,
+              "y": 68
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Take your drinks to the bench",
+          "ar": "خذ مشروباتك إلى المقعد",
+          "purposeEn": "Take your drinks to the bench.",
+          "purposeAr": "خذ مشروباتك إلى المقعد.",
+          "image": {
+            "id": "conv-life-l3-076-4",
+            "path": "assets/scenes/conversations/life-l3-076-4.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Take your drinks to the bench",
+            "ar": "خذ مشروباتك إلى المقعد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                746,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "take your drinks to the bench",
+              "ar": "خذ مشروباتك إلى المقعد",
+              "kind": "phrase",
+              "x": 54,
+              "y": 66
+            },
+            {
+              "en": "white cup",
+              "ar": "فنجان أبيض",
+              "kind": "object",
+              "x": 36,
+              "y": 55
+            },
+            {
+              "en": "wooden bench",
+              "ar": "مقعد خشبي",
+              "kind": "object",
+              "x": 88,
+              "y": 73
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

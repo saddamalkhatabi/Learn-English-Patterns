@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "3638f25ffc5e0d6bdb456651ef9de392fa4c014e2cd1308ac50da0319554f91e"
+  },
+  "conversations": [
+    {
+      "id": "l3-065",
+      "goalAr": "إبلاغ موظفة الاستقبال بالشعور بالتوعك",
+      "goalEn": "Telling the receptionist you feel unwell",
+      "stages": [
+        {
+          "from": 1,
+          "to": 2,
+          "en": "Offer someone a seat",
+          "ar": "اعرض على شخص أن يجلس",
+          "purposeEn": "Offer someone a seat.",
+          "purposeAr": "اعرض على شخص أن يجلس.",
+          "image": {
+            "id": "conv-life-l3-065-1",
+            "path": "assets/scenes/conversations/life-l3-065-1.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Offer someone a seat",
+            "ar": "اعرض على شخص أن يجلس",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                393,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "offer someone a seat",
+              "ar": "اعرض على شخص أن يجلس",
+              "kind": "phrase",
+              "x": 85,
+              "y": 63
+            },
+            {
+              "en": "chair",
+              "ar": "كرسي",
+              "kind": "object",
+              "x": 84,
+              "y": 83
+            },
+            {
+              "en": "reception counter",
+              "ar": "منضدة الاستقبال",
+              "kind": "object",
+              "x": 54,
+              "y": 73
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "en": "Call the nurse",
+          "ar": "اتصل بالممرضة",
+          "purposeEn": "Call the nurse.",
+          "purposeAr": "اتصل بالممرضة.",
+          "image": {
+            "id": "conv-life-l3-065-2",
+            "path": "assets/scenes/conversations/life-l3-065-2.webp",
+            "width": 392,
+            "height": 243,
+            "en": "Call the nurse",
+            "ar": "اتصل بالممرضة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                3,
+                791,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "call the nurse",
+              "ar": "اتصل بالممرضة",
+              "kind": "phrase",
+              "x": 83,
+              "y": 33
+            },
+            {
+              "en": "telephone handset",
+              "ar": "سماعة الهاتف",
+              "kind": "object",
+              "x": 82,
+              "y": 34
+            },
+            {
+              "en": "dizzy",
+              "ar": "يشعر بالدوار",
+              "kind": "description",
+              "x": 24,
+              "y": 37
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "en": "Look for someone outside",
+          "ar": "ابحث عن شخص في الخارج",
+          "purposeEn": "Look for someone outside.",
+          "purposeAr": "ابحث عن شخص في الخارج.",
+          "image": {
+            "id": "conv-life-l3-065-3",
+            "path": "assets/scenes/conversations/life-l3-065-3.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Look for someone outside",
+            "ar": "ابحث عن شخص في الخارج",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                3,
+                1187,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "look for someone outside",
+              "ar": "ابحث عن شخص في الخارج",
+              "kind": "phrase",
+              "x": 41,
+              "y": 47
+            },
+            {
+              "en": "glass entrance",
+              "ar": "مدخل زجاجي",
+              "kind": "object",
+              "x": 81,
+              "y": 40
+            },
+            {
+              "en": "visitor outside",
+              "ar": "زائر في الخارج",
+              "kind": "object",
+              "x": 91,
+              "y": 42
+            }
+          ]
+        },
+        {
+          "from": 7,
+          "to": 7,
+          "en": "Tell the nurse what happened",
+          "ar": "أخبر الممرضة بما حدث",
+          "purposeEn": "Tell the nurse what happened.",
+          "purposeAr": "أخبر الممرضة بما حدث.",
+          "image": {
+            "id": "conv-life-l3-065-4",
+            "path": "assets/scenes/conversations/life-l3-065-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Tell the nurse what happened",
+            "ar": "أخبر الممرضة بما حدث",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                3,
+                1583,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "tell the nurse what happened",
+              "ar": "أخبر الممرضة بما حدث",
+              "kind": "phrase",
+              "x": 54,
+              "y": 35
+            },
+            {
+              "en": "stethoscope",
+              "ar": "سمّاعة طبيب",
+              "kind": "object",
+              "x": 86,
+              "y": 66
+            },
+            {
+              "en": "medical cross symbol",
+              "ar": "رمز صليب طبي",
+              "kind": "object",
+              "x": 52,
+              "y": 14
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-066",
+      "goalAr": "إعطاء تحديث عن صحة شخص",
+      "goalEn": "Giving an update about someone's health",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Ask about the next appointment",
+          "ar": "اسأل عن الموعد القادم",
+          "purposeEn": "Ask about the next appointment.",
+          "purposeAr": "اسأل عن الموعد القادم.",
+          "image": {
+            "id": "conv-life-l3-066-1",
+            "path": "assets/scenes/conversations/life-l3-066-1.webp",
+            "width": 390,
+            "height": 240,
+            "en": "Ask about the next appointment",
+            "ar": "اسأل عن الموعد القادم",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                252,
+                393,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask about the next appointment",
+              "ar": "اسأل عن الموعد القادم",
+              "kind": "phrase",
+              "x": 57,
+              "y": 76
+            },
+            {
+              "en": "desk calendar",
+              "ar": "تقويم مكتبي",
+              "kind": "object",
+              "x": 60,
+              "y": 82
+            },
+            {
+              "en": "concerned expression",
+              "ar": "ملامح القلق",
+              "kind": "object",
+              "x": 85,
+              "y": 33
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Wait for the clinic to call back",
+          "ar": "انتظر اتصال العيادة من جديد",
+          "purposeEn": "Wait for the clinic to call back.",
+          "purposeAr": "انتظر اتصال العيادة من جديد.",
+          "image": {
+            "id": "conv-life-l3-066-2",
+            "path": "assets/scenes/conversations/life-l3-066-2.webp",
+            "width": 392,
+            "height": 240,
+            "en": "Wait for the clinic to call back",
+            "ar": "انتظر اتصال العيادة من جديد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                252,
+                791,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "wait for the clinic to call back",
+              "ar": "انتظر اتصال العيادة من جديد",
+              "kind": "phrase",
+              "x": 45,
+              "y": 57
+            },
+            {
+              "en": "call history",
+              "ar": "سجلّ المكالمات",
+              "kind": "object",
+              "x": 46,
+              "y": 59
+            },
+            {
+              "en": "pointing finger",
+              "ar": "سبّابة تشير",
+              "kind": "object",
+              "x": 66,
+              "y": 58
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Offer someone a ride",
+          "ar": "اعرض على شخص أن توصله",
+          "purposeEn": "Offer someone a ride.",
+          "purposeAr": "اعرض على شخص أن توصله.",
+          "image": {
+            "id": "conv-life-l3-066-3",
+            "path": "assets/scenes/conversations/life-l3-066-3.webp",
+            "width": 390,
+            "height": 240,
+            "en": "Offer someone a ride",
+            "ar": "اعرض على شخص أن توصله",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                252,
+                1187,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "offer someone a ride",
+              "ar": "اعرض على شخص أن توصله",
+              "kind": "phrase",
+              "x": 50,
+              "y": 88
+            },
+            {
+              "en": "car keys",
+              "ar": "مفاتيح السيارة",
+              "kind": "object",
+              "x": 52,
+              "y": 90
+            },
+            {
+              "en": "sofa cushion",
+              "ar": "وسادة أريكة",
+              "kind": "object",
+              "x": 26,
+              "y": 52
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Send a short message",
+          "ar": "أرسل رسالة قصيرة",
+          "purposeEn": "Send a short message.",
+          "purposeAr": "أرسل رسالة قصيرة.",
+          "image": {
+            "id": "conv-life-l3-066-4",
+            "path": "assets/scenes/conversations/life-l3-066-4.webp",
+            "width": 390,
+            "height": 240,
+            "en": "Send a short message",
+            "ar": "أرسل رسالة قصيرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                252,
+                1583,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "send a short message",
+              "ar": "أرسل رسالة قصيرة",
+              "kind": "phrase",
+              "x": 33,
+              "y": 58
+            },
+            {
+              "en": "mobile phone",
+              "ar": "هاتف محمول",
+              "kind": "object",
+              "x": 34,
+              "y": 58
+            },
+            {
+              "en": "cup and saucer",
+              "ar": "فنجان وصحن",
+              "kind": "object",
+              "x": 84,
+              "y": 85
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-067",
+      "goalAr": "التحقق من سلامة الحاضرين",
+      "goalEn": "Checking whether anyone was hurt",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Find out what fell",
+          "ar": "اعرف ما الذي سقط",
+          "purposeEn": "Find out what fell.",
+          "purposeAr": "اعرف ما الذي سقط.",
+          "image": {
+            "id": "conv-life-l3-067-1",
+            "path": "assets/scenes/conversations/life-l3-067-1.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Find out what fell",
+            "ar": "اعرف ما الذي سقط",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                498,
+                393,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "find out what fell",
+              "ar": "اعرف ما الذي سقط",
+              "kind": "phrase",
+              "x": 38,
+              "y": 47
+            },
+            {
+              "en": "display stand",
+              "ar": "حامل عرض",
+              "kind": "object",
+              "x": 22,
+              "y": 44
+            },
+            {
+              "en": "cardboard boxes",
+              "ar": "صناديق كرتونية",
+              "kind": "object",
+              "x": 44,
+              "y": 77
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Be relieved nobody was hurt",
+          "ar": "اشعر بالارتياح لأن أحدًا لم يُصب",
+          "purposeEn": "Be relieved nobody was hurt.",
+          "purposeAr": "اشعر بالارتياح لأن أحدًا لم يُصب.",
+          "image": {
+            "id": "conv-life-l3-067-2",
+            "path": "assets/scenes/conversations/life-l3-067-2.webp",
+            "width": 392,
+            "height": 243,
+            "en": "Be relieved nobody was hurt",
+            "ar": "اشعر بالارتياح لأن أحدًا لم يُصب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                498,
+                791,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "be relieved nobody was hurt",
+              "ar": "اشعر بالارتياح لأن أحدًا لم يُصب",
+              "kind": "phrase",
+              "x": 74,
+              "y": 31
+            },
+            {
+              "en": "broken glass",
+              "ar": "زجاج مكسور",
+              "kind": "object",
+              "x": 54,
+              "y": 89
+            },
+            {
+              "en": "relieved",
+              "ar": "مرتاح",
+              "kind": "description",
+              "x": 73,
+              "y": 29
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Keep the area clear",
+          "ar": "أبقِ المكان خاليًا",
+          "purposeEn": "Keep the area clear.",
+          "purposeAr": "أبقِ المكان خاليًا.",
+          "image": {
+            "id": "conv-life-l3-067-3",
+            "path": "assets/scenes/conversations/life-l3-067-3.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Keep the area clear",
+            "ar": "أبقِ المكان خاليًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                498,
+                1187,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "keep the area clear",
+              "ar": "أبقِ المكان خاليًا",
+              "kind": "phrase",
+              "x": 38,
+              "y": 62
+            },
+            {
+              "en": "safety cone",
+              "ar": "مخروط أمان",
+              "kind": "object",
+              "x": 37,
+              "y": 85
+            },
+            {
+              "en": "barrier tape",
+              "ar": "شريط حاجز",
+              "kind": "object",
+              "x": 65,
+              "y": 56
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Report what happened to the manager",
+          "ar": "أبلغ المدير بما حدث",
+          "purposeEn": "Report what happened to the manager.",
+          "purposeAr": "أبلغ المدير بما حدث.",
+          "image": {
+            "id": "conv-life-l3-067-4",
+            "path": "assets/scenes/conversations/life-l3-067-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Report what happened to the manager",
+            "ar": "أبلغ المدير بما حدث",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                498,
+                1583,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "report what happened to the manager",
+              "ar": "أبلغ المدير بما حدث",
+              "kind": "phrase",
+              "x": 68,
+              "y": 63
+            },
+            {
+              "en": "clipboard",
+              "ar": "لوح تثبيت الأوراق",
+              "kind": "object",
+              "x": 72,
+              "y": 68
+            },
+            {
+              "en": "store manager",
+              "ar": "مدير المتجر",
+              "kind": "object",
+              "x": 76,
+              "y": 27
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-068",
+      "goalAr": "الحفاظ على الهدوء أثناء انتظار المساعدة",
+      "goalEn": "Staying calm while waiting for help",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Stay calm while you call",
+          "ar": "حافظ على هدوئك أثناء الاتصال",
+          "purposeEn": "Stay calm while you call.",
+          "purposeAr": "حافظ على هدوئك أثناء الاتصال.",
+          "image": {
+            "id": "conv-life-l3-068-1",
+            "path": "assets/scenes/conversations/life-l3-068-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Stay calm while you call",
+            "ar": "حافظ على هدوئك أثناء الاتصال",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                747,
+                393,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "stay calm while you call",
+              "ar": "حافظ على هدوئك أثناء الاتصال",
+              "kind": "phrase",
+              "x": 55,
+              "y": 63
+            },
+            {
+              "en": "mobile phone",
+              "ar": "هاتف محمول",
+              "kind": "object",
+              "x": 30,
+              "y": 35
+            },
+            {
+              "en": "hallway",
+              "ar": "ممر",
+              "kind": "object",
+              "x": 46,
+              "y": 38
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Stay with someone while they wait",
+          "ar": "ابقَ مع شخص أثناء انتظاره",
+          "purposeEn": "Stay with someone while they wait.",
+          "purposeAr": "ابقَ مع شخص أثناء انتظاره.",
+          "image": {
+            "id": "conv-life-l3-068-2",
+            "path": "assets/scenes/conversations/life-l3-068-2.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Stay with someone while they wait",
+            "ar": "ابقَ مع شخص أثناء انتظاره",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                747,
+                791,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "stay with someone while they wait",
+              "ar": "ابقَ مع شخص أثناء انتظاره",
+              "kind": "phrase",
+              "x": 61,
+              "y": 57
+            },
+            {
+              "en": "bench",
+              "ar": "مقعد طويل",
+              "kind": "object",
+              "x": 89,
+              "y": 78
+            },
+            {
+              "en": "touch someone's shoulder",
+              "ar": "يلمس كتف شخص",
+              "kind": "action",
+              "x": 55,
+              "y": 62
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Listen for footsteps",
+          "ar": "أصغِ إلى وقع الخطوات",
+          "purposeEn": "Listen for footsteps.",
+          "purposeAr": "أصغِ إلى وقع الخطوات.",
+          "image": {
+            "id": "conv-life-l3-068-3",
+            "path": "assets/scenes/conversations/life-l3-068-3.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Listen for footsteps",
+            "ar": "أصغِ إلى وقع الخطوات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                747,
+                1187,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "listen for footsteps",
+              "ar": "أصغِ إلى وقع الخطوات",
+              "kind": "phrase",
+              "x": 51,
+              "y": 54
+            },
+            {
+              "en": "door handle",
+              "ar": "مقبض الباب",
+              "kind": "object",
+              "x": 66,
+              "y": 54
+            },
+            {
+              "en": "peephole",
+              "ar": "عين الباب",
+              "kind": "object",
+              "x": 78,
+              "y": 19
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Wait by the closed door",
+          "ar": "انتظر بجوار الباب المغلق",
+          "purposeEn": "Wait by the closed door.",
+          "purposeAr": "انتظر بجوار الباب المغلق.",
+          "image": {
+            "id": "conv-life-l3-068-4",
+            "path": "assets/scenes/conversations/life-l3-068-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Wait by the closed door",
+            "ar": "انتظر بجوار الباب المغلق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                747,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "wait by the closed door",
+              "ar": "انتظر بجوار الباب المغلق",
+              "kind": "phrase",
+              "x": 72,
+              "y": 73
+            },
+            {
+              "en": "wall clock",
+              "ar": "ساعة حائط",
+              "kind": "object",
+              "x": 61,
+              "y": 15
+            },
+            {
+              "en": "mobile phone",
+              "ar": "هاتف محمول",
+              "kind": "object",
+              "x": 40,
+              "y": 82
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

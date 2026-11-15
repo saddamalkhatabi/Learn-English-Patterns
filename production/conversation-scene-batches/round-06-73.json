@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "32e3f9074c465a82e45f6964e732d2f3239caa9ed82c91198e0be6c30ff3b354"
+  },
+  "conversations": [
+    {
+      "id": "l3-061",
+      "goalAr": "ذكر الحساسية قبل الموعد",
+      "goalEn": "Explaining an allergy before an appointment",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Ask about allergies",
+          "ar": "اسأل عن الحساسية",
+          "purposeEn": "Ask about allergies.",
+          "purposeAr": "اسأل عن الحساسية.",
+          "image": {
+            "id": "conv-life-l3-061-1",
+            "path": "assets/scenes/conversations/life-l3-061-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Ask about allergies",
+            "ar": "اسأل عن الحساسية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                393,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask about allergies",
+              "ar": "اسأل عن الحساسية",
+              "kind": "phrase",
+              "x": 34,
+              "y": 56
+            },
+            {
+              "en": "clipboard",
+              "ar": "لوح تثبيت الأوراق",
+              "kind": "object",
+              "x": 44,
+              "y": 73
+            },
+            {
+              "en": "no-smoking sign",
+              "ar": "لافتة ممنوع التدخين",
+              "kind": "object",
+              "x": 57,
+              "y": 19
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Mention an allergy to cigarette smoke",
+          "ar": "اذكر الحساسية من دخان السجائر",
+          "purposeEn": "Mention an allergy to cigarette smoke.",
+          "purposeAr": "اذكر الحساسية من دخان السجائر.",
+          "image": {
+            "id": "conv-life-l3-061-2",
+            "path": "assets/scenes/conversations/life-l3-061-2.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Mention an allergy to cigarette smoke",
+            "ar": "اذكر الحساسية من دخان السجائر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                3,
+                789,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "mention an allergy to cigarette smoke",
+              "ar": "اذكر الحساسية من دخان السجائر",
+              "kind": "phrase",
+              "x": 45,
+              "y": 33
+            },
+            {
+              "en": "no-smoking sign",
+              "ar": "لافتة ممنوع التدخين",
+              "kind": "object",
+              "x": 58,
+              "y": 18
+            },
+            {
+              "en": "registration form",
+              "ar": "استمارة تسجيل",
+              "kind": "object",
+              "x": 56,
+              "y": 88
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Note a reaction to a medicine",
+          "ar": "دوّن رد الفعل تجاه الدواء",
+          "purposeEn": "Note a reaction to a medicine.",
+          "purposeAr": "دوّن رد الفعل تجاه الدواء.",
+          "image": {
+            "id": "conv-life-l3-061-3",
+            "path": "assets/scenes/conversations/life-l3-061-3.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Note a reaction to a medicine",
+            "ar": "دوّن رد الفعل تجاه الدواء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                3,
+                1186,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "note a reaction to a medicine",
+              "ar": "دوّن رد الفعل تجاه الدواء",
+              "kind": "phrase",
+              "x": 59,
+              "y": 72
+            },
+            {
+              "en": "checklist",
+              "ar": "قائمة تحقق",
+              "kind": "object",
+              "x": 50,
+              "y": 85
+            },
+            {
+              "en": "medicine symbol",
+              "ar": "رمز دواء",
+              "kind": "object",
+              "x": 73,
+              "y": 85
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Show a photo of the package",
+          "ar": "اعرض صورة العبوة",
+          "purposeEn": "Show a photo of the package.",
+          "purposeAr": "اعرض صورة العبوة.",
+          "image": {
+            "id": "conv-life-l3-061-4",
+            "path": "assets/scenes/conversations/life-l3-061-4.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Show a photo of the package",
+            "ar": "اعرض صورة العبوة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                3,
+                1583,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "show a photo of the package",
+              "ar": "اعرض صورة العبوة",
+              "kind": "phrase",
+              "x": 59,
+              "y": 53
+            },
+            {
+              "en": "medicine carton",
+              "ar": "عبوة دواء كرتونية",
+              "kind": "object",
+              "x": 59,
+              "y": 58
+            },
+            {
+              "en": "phone screen",
+              "ar": "شاشة هاتف",
+              "kind": "object",
+              "x": 59,
+              "y": 43
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-062",
+      "goalAr": "وصف صداع يتكرر",
+      "goalEn": "Describing a recurring headache",
+      "stages": [
+        {
+          "from": 1,
+          "to": 2,
+          "en": "Describe a headache",
+          "ar": "صِف الصداع",
+          "purposeEn": "Describe a headache.",
+          "purposeAr": "صِف الصداع.",
+          "image": {
+            "id": "conv-life-l3-062-1",
+            "path": "assets/scenes/conversations/life-l3-062-1.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Describe a headache",
+            "ar": "صِف الصداع",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                251,
+                393,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "describe a headache",
+              "ar": "صِف الصداع",
+              "kind": "phrase",
+              "x": 20,
+              "y": 34
+            },
+            {
+              "en": "temple",
+              "ar": "صُدغ",
+              "kind": "object",
+              "x": 19,
+              "y": 30
+            },
+            {
+              "en": "notepad",
+              "ar": "دفتر ملاحظات",
+              "kind": "object",
+              "x": 52,
+              "y": 93
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "en": "Check the appointment number",
+          "ar": "تحقّق من رقم الموعد",
+          "purposeEn": "Check the appointment number.",
+          "purposeAr": "تحقّق من رقم الموعد.",
+          "image": {
+            "id": "conv-life-l3-062-2",
+            "path": "assets/scenes/conversations/life-l3-062-2.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Check the appointment number",
+            "ar": "تحقّق من رقم الموعد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                251,
+                789,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "check the appointment number",
+              "ar": "تحقّق من رقم الموعد",
+              "kind": "phrase",
+              "x": 68,
+              "y": 49
+            },
+            {
+              "en": "appointment card",
+              "ar": "بطاقة موعد",
+              "kind": "object",
+              "x": 72,
+              "y": 61
+            },
+            {
+              "en": "gesture with an open hand",
+              "ar": "يشير بكف مفتوحة",
+              "kind": "action",
+              "x": 45,
+              "y": 67
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "en": "Ask when it last happened",
+          "ar": "اسأل متى حدث ذلك آخر مرة",
+          "purposeEn": "Ask when it last happened.",
+          "purposeAr": "اسأل متى حدث ذلك آخر مرة.",
+          "image": {
+            "id": "conv-life-l3-062-3",
+            "path": "assets/scenes/conversations/life-l3-062-3.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Ask when it last happened",
+            "ar": "اسأل متى حدث ذلك آخر مرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                251,
+                1186,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask when it last happened",
+              "ar": "اسأل متى حدث ذلك آخر مرة",
+              "kind": "phrase",
+              "x": 27,
+              "y": 35
+            },
+            {
+              "en": "desk calendar",
+              "ar": "تقويم مكتبي",
+              "kind": "object",
+              "x": 84,
+              "y": 83
+            },
+            {
+              "en": "stethoscope",
+              "ar": "سمّاعة طبيب",
+              "kind": "object",
+              "x": 82,
+              "y": 44
+            }
+          ]
+        },
+        {
+          "from": 7,
+          "to": 7,
+          "en": "Show the date on your phone",
+          "ar": "أرِه التاريخ على هاتفك",
+          "purposeEn": "Show the date on your phone.",
+          "purposeAr": "أرِه التاريخ على هاتفك.",
+          "image": {
+            "id": "conv-life-l3-062-4",
+            "path": "assets/scenes/conversations/life-l3-062-4.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Show the date on your phone",
+            "ar": "أرِه التاريخ على هاتفك",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                251,
+                1583,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "show the date on your phone",
+              "ar": "أرِه التاريخ على هاتفك",
+              "kind": "phrase",
+              "x": 46,
+              "y": 57
+            },
+            {
+              "en": "phone calendar",
+              "ar": "تقويم الهاتف",
+              "kind": "object",
+              "x": 46,
+              "y": 56
+            },
+            {
+              "en": "clipboard",
+              "ar": "لوح تثبيت الأوراق",
+              "kind": "object",
+              "x": 78,
+              "y": 91
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-063",
+      "goalAr": "الإجابة عن أسئلة حول الألم",
+      "goalEn": "Answering questions about pain",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Describe pain when you stand",
+          "ar": "صِف الألم عند الوقوف",
+          "purposeEn": "Describe pain when you stand.",
+          "purposeAr": "صِف الألم عند الوقوف.",
+          "image": {
+            "id": "conv-life-l3-063-1",
+            "path": "assets/scenes/conversations/life-l3-063-1.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Describe pain when you stand",
+            "ar": "صِف الألم عند الوقوف",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                498,
+                393,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "describe pain when you stand",
+              "ar": "صِف الألم عند الوقوف",
+              "kind": "phrase",
+              "x": 40,
+              "y": 76
+            },
+            {
+              "en": "ankle",
+              "ar": "كاحل",
+              "kind": "object",
+              "x": 42,
+              "y": 89
+            },
+            {
+              "en": "waiting-room chair",
+              "ar": "كرسي غرفة الانتظار",
+              "kind": "object",
+              "x": 11,
+              "y": 67
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Hold on to the rail",
+          "ar": "تمسّك بالدرابزين",
+          "purposeEn": "Hold on to the rail.",
+          "purposeAr": "تمسّك بالدرابزين.",
+          "image": {
+            "id": "conv-life-l3-063-2",
+            "path": "assets/scenes/conversations/life-l3-063-2.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Hold on to the rail",
+            "ar": "تمسّك بالدرابزين",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                498,
+                789,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "hold on to the rail",
+              "ar": "تمسّك بالدرابزين",
+              "kind": "phrase",
+              "x": 25,
+              "y": 57
+            },
+            {
+              "en": "handrail",
+              "ar": "درابزين",
+              "kind": "object",
+              "x": 18,
+              "y": 62
+            },
+            {
+              "en": "identification badge",
+              "ar": "بطاقة تعريف",
+              "kind": "object",
+              "x": 82,
+              "y": 33
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Bring someone a chair",
+          "ar": "أحضر لشخص كرسيًا",
+          "purposeEn": "Bring someone a chair.",
+          "purposeAr": "أحضر لشخص كرسيًا.",
+          "image": {
+            "id": "conv-life-l3-063-3",
+            "path": "assets/scenes/conversations/life-l3-063-3.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Bring someone a chair",
+            "ar": "أحضر لشخص كرسيًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                498,
+                1186,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bring someone a chair",
+              "ar": "أحضر لشخص كرسيًا",
+              "kind": "phrase",
+              "x": 43,
+              "y": 55
+            },
+            {
+              "en": "chair cushion",
+              "ar": "وسادة المقعد",
+              "kind": "object",
+              "x": 49,
+              "y": 79
+            },
+            {
+              "en": "armrest",
+              "ar": "مسند ذراع",
+              "kind": "object",
+              "x": 37,
+              "y": 74
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Explain when the pain began",
+          "ar": "اشرح متى بدأ الألم",
+          "purposeEn": "Explain when the pain began.",
+          "purposeAr": "اشرح متى بدأ الألم.",
+          "image": {
+            "id": "conv-life-l3-063-4",
+            "path": "assets/scenes/conversations/life-l3-063-4.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Explain when the pain began",
+            "ar": "اشرح متى بدأ الألم",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                498,
+                1583,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "explain when the pain began",
+              "ar": "اشرح متى بدأ الألم",
+              "kind": "phrase",
+              "x": 63,
+              "y": 33
+            },
+            {
+              "en": "bus",
+              "ar": "حافلة",
+              "kind": "object",
+              "x": 87,
+              "y": 28
+            },
+            {
+              "en": "clinic window",
+              "ar": "نافذة العيادة",
+              "kind": "object",
+              "x": 87,
+              "y": 55
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-064",
+      "goalAr": "السؤال عما لاحظه الطبيب",
+      "goalEn": "Asking what the clinician found",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Ask what the clinician found",
+          "ar": "اسأل عمّا وجده الطبيب",
+          "purposeEn": "Ask what the clinician found.",
+          "purposeAr": "اسأل عمّا وجده الطبيب.",
+          "image": {
+            "id": "conv-life-l3-064-1",
+            "path": "assets/scenes/conversations/life-l3-064-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Ask what the clinician found",
+            "ar": "اسأل عمّا وجده الطبيب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                747,
+                393,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask what the clinician found",
+              "ar": "اسأل عمّا وجده الطبيب",
+              "kind": "phrase",
+              "x": 40,
+              "y": 48
+            },
+            {
+              "en": "small bandage",
+              "ar": "ضمادة صغيرة",
+              "kind": "object",
+              "x": 36,
+              "y": 43
+            },
+            {
+              "en": "medical glove",
+              "ar": "قفاز طبي",
+              "kind": "object",
+              "x": 46,
+              "y": 61
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Reassure the patient",
+          "ar": "طمئن المريض",
+          "purposeEn": "Reassure the patient.",
+          "purposeAr": "طمئن المريض.",
+          "image": {
+            "id": "conv-life-l3-064-2",
+            "path": "assets/scenes/conversations/life-l3-064-2.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Reassure the patient",
+            "ar": "طمئن المريض",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                747,
+                789,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "reassure the patient",
+              "ar": "طمئن المريض",
+              "kind": "phrase",
+              "x": 55,
+              "y": 44
+            },
+            {
+              "en": "chin",
+              "ar": "ذقن",
+              "kind": "object",
+              "x": 30,
+              "y": 43
+            },
+            {
+              "en": "smiling",
+              "ar": "مبتسم",
+              "kind": "description",
+              "x": 81,
+              "y": 20
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Explain how the cut happened",
+          "ar": "اشرح كيف حدث الجرح",
+          "purposeEn": "Explain how the cut happened.",
+          "purposeAr": "اشرح كيف حدث الجرح.",
+          "image": {
+            "id": "conv-life-l3-064-3",
+            "path": "assets/scenes/conversations/life-l3-064-3.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Explain how the cut happened",
+            "ar": "اشرح كيف حدث الجرح",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                747,
+                1186,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "explain how the cut happened",
+              "ar": "اشرح كيف حدث الجرح",
+              "kind": "phrase",
+              "x": 26,
+              "y": 51
+            },
+            {
+              "en": "shaving razor",
+              "ar": "شفرة حلاقة",
+              "kind": "object",
+              "x": 15,
+              "y": 53
+            },
+            {
+              "en": "toiletry bag",
+              "ar": "حقيبة أدوات العناية الشخصية",
+              "kind": "object",
+              "x": 31,
+              "y": 85
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Add a detail to the notes",
+          "ar": "أضف تفصيلًا إلى الملاحظات",
+          "purposeEn": "Add a detail to the notes.",
+          "purposeAr": "أضف تفصيلًا إلى الملاحظات.",
+          "image": {
+            "id": "conv-life-l3-064-4",
+            "path": "assets/scenes/conversations/life-l3-064-4.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Add a detail to the notes",
+            "ar": "أضف تفصيلًا إلى الملاحظات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                747,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "add a detail to the notes",
+              "ar": "أضف تفصيلًا إلى الملاحظات",
+              "kind": "phrase",
+              "x": 66,
+              "y": 85
+            },
+            {
+              "en": "clipboard",
+              "ar": "لوح تثبيت الأوراق",
+              "kind": "object",
+              "x": 79,
+              "y": 93
+            },
+            {
+              "en": "pen",
+              "ar": "قلم",
+              "kind": "object",
+              "x": 67,
+              "y": 79
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
