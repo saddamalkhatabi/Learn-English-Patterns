@@ -92185,6 +92185,2534 @@
       "width": 392,
       "height": 242,
       "sha256": "d786d59a24b5a4b98a36ed5e240c6d6b258c6c0b11c832367e1f1cd96ff48ea9"
+    },
+    {
+      "id": "conv-life-l3-109-1",
+      "topic": "conversation",
+      "en": "Thanking someone for a thoughtful gift · Give someone a handmade gift",
+      "ar": "شكر شخص على هدية ذات معنى · قدّم لشخص هدية مصنوعة يدويًا",
+      "sentenceEn": "This is something Tom made for you.",
+      "sentenceAr": "هذا شيء صنعه توم لك.",
+      "words": [
+        {
+          "en": "give someone a handmade gift",
+          "ar": "قدّم لشخص هدية مصنوعة يدويًا",
+          "kind": "phrase",
+          "x": 48,
+          "y": 67
+        },
+        {
+          "en": "wrapped gift",
+          "ar": "هدية مغلّفة",
+          "kind": "object",
+          "x": 55,
+          "y": 70
+        },
+        {
+          "en": "ribbon bow",
+          "ar": "عقدة شريط",
+          "kind": "object",
+          "x": 54,
+          "y": 53
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Give someone a handmade gift.",
+      "taskAr": "قدّم لشخص هدية مصنوعة يدويًا.",
+      "path": "assets/scenes/conversations/life-l3-109-1.webp",
+      "width": 390,
+      "height": 242,
+      "sha256": "c84d2aff47e0ac152dbc463065e85f8fd6af106412a7688777713b61c2b31e7f"
+    },
+    {
+      "id": "conv-life-l3-109-2",
+      "topic": "conversation",
+      "en": "Thanking someone for a thoughtful gift · Notice the pattern around the edge",
+      "ar": "شكر شخص على هدية ذات معنى · لاحظ النقش حول الحافة",
+      "sentenceEn": "That's kind of him. Did he make the frame too?",
+      "sentenceAr": "هذا لطف منه. هل صنع الإطار أيضًا؟",
+      "words": [
+        {
+          "en": "notice the pattern around the edge",
+          "ar": "لاحظ النقش حول الحافة",
+          "kind": "phrase",
+          "x": 52,
+          "y": 42
+        },
+        {
+          "en": "carved pattern",
+          "ar": "نقش محفور",
+          "kind": "object",
+          "x": 67,
+          "y": 42
+        },
+        {
+          "en": "frame edge",
+          "ar": "حافة الإطار",
+          "kind": "object",
+          "x": 79,
+          "y": 48
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Notice the pattern around the edge.",
+      "taskAr": "لاحظ النقش حول الحافة.",
+      "path": "assets/scenes/conversations/life-l3-109-2.webp",
+      "width": 391,
+      "height": 242,
+      "sha256": "c3c9495cca01a20ab3e8833277837e4dd4c9f2c0e33e16481da1dd1b5f7a5a2e"
+    },
+    {
+      "id": "conv-life-l3-109-3",
+      "topic": "conversation",
+      "en": "Thanking someone for a thoughtful gift · Find the maker in the workshop",
+      "ar": "شكر شخص على هدية ذات معنى · اعثر على الصانع في الورشة",
+      "sentenceEn": "I'd like to thank him in person. Do you know where he'll be this afternoon?",
+      "sentenceAr": "أود أن أشكره شخصيًا. هل تعرف أين سيكون بعد الظهر؟",
+      "words": [
+        {
+          "en": "find the maker in the workshop",
+          "ar": "اعثر على الصانع في الورشة",
+          "kind": "phrase",
+          "x": 68,
+          "y": 60
+        },
+        {
+          "en": "workshop doorway",
+          "ar": "مدخل الورشة",
+          "kind": "object",
+          "x": 67,
+          "y": 47
+        },
+        {
+          "en": "workbench",
+          "ar": "منضدة عمل",
+          "kind": "object",
+          "x": 91,
+          "y": 79
+        }
+      ],
+      "patterns": [
+        {
+          "id": 12,
+          "en": "I'd like to thank him in person. Do you know where he'll be this afternoon?",
+          "ar": "أود أن أشكره شخصيًا. هل تعرف أين سيكون بعد الظهر؟"
+        }
+      ],
+      "taskEn": "Find the maker in the workshop.",
+      "taskAr": "اعثر على الصانع في الورشة.",
+      "path": "assets/scenes/conversations/life-l3-109-3.webp",
+      "width": 390,
+      "height": 242,
+      "sha256": "4ff595a3b48435af27847eb53529491858cc571e51beaf83857a337ba2bd6d70"
+    },
+    {
+      "id": "conv-life-l3-109-4",
+      "topic": "conversation",
+      "en": "Thanking someone for a thoughtful gift · Thank someone in person",
+      "ar": "شكر شخص على هدية ذات معنى · اشكر شخصًا وجهًا لوجه",
+      "sentenceEn": "I'm grateful to you.",
+      "sentenceAr": "أنا ممتن لك.",
+      "words": [
+        {
+          "en": "thank someone in person",
+          "ar": "اشكر شخصًا وجهًا لوجه",
+          "kind": "phrase",
+          "x": 35,
+          "y": 48
+        },
+        {
+          "en": "wooden frame",
+          "ar": "إطار خشبي",
+          "kind": "object",
+          "x": 68,
+          "y": 89
+        },
+        {
+          "en": "hand plane",
+          "ar": "فأرة نجارة",
+          "kind": "object",
+          "x": 20,
+          "y": 85
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Thank someone in person.",
+      "taskAr": "اشكر شخصًا وجهًا لوجه.",
+      "path": "assets/scenes/conversations/life-l3-109-4.webp",
+      "width": 391,
+      "height": 242,
+      "sha256": "245fd3cbf9f07bda6f6e78099c0b125445cda197adfbbc9cd6c28022aeee601c"
+    },
+    {
+      "id": "conv-life-l3-110-1",
+      "topic": "conversation",
+      "en": "Making peace over a shared space · Bring up the boxes in the shared hallway",
+      "ar": "الاتفاق على استخدام مساحة مشتركة · اطرح موضوع الصناديق في الممر المشترك",
+      "sentenceEn": "I'd like to talk about the boxes in the shared hallway.",
+      "sentenceAr": "أود التحدث عن الصناديق في الممر المشترك.",
+      "words": [
+        {
+          "en": "bring up the boxes in the shared hallway",
+          "ar": "اطرح موضوع الصناديق في الممر المشترك",
+          "kind": "phrase",
+          "x": 47,
+          "y": 60
+        },
+        {
+          "en": "cardboard boxes",
+          "ar": "صناديق كرتونية",
+          "kind": "object",
+          "x": 46,
+          "y": 68
+        },
+        {
+          "en": "rolled rug",
+          "ar": "سجادة ملفوفة",
+          "kind": "object",
+          "x": 65,
+          "y": 57
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Bring up the boxes in the shared hallway.",
+      "taskAr": "اطرح موضوع الصناديق في الممر المشترك.",
+      "path": "assets/scenes/conversations/life-l3-110-1.webp",
+      "width": 390,
+      "height": 242,
+      "sha256": "78edae715466afe82c67561f89bd63f8b7e9d1671a1fa242cf33398166c93334"
+    },
+    {
+      "id": "conv-life-l3-110-2",
+      "topic": "conversation",
+      "en": "Making peace over a shared space · Keep the hallway safe to walk through",
+      "ar": "الاتفاق على استخدام مساحة مشتركة · اترك الممر آمنًا للعبور",
+      "sentenceEn": "The last thing I want to do is cause you any problems.",
+      "sentenceAr": "آخر ما أريده هو أن أسبب لك أي مشكلات.",
+      "words": [
+        {
+          "en": "keep the hallway safe to walk through",
+          "ar": "اترك الممر آمنًا للعبور",
+          "kind": "phrase",
+          "x": 50,
+          "y": 53
+        },
+        {
+          "en": "stack of boxes",
+          "ar": "رزمة صناديق",
+          "kind": "object",
+          "x": 56,
+          "y": 64
+        },
+        {
+          "en": "narrow passage",
+          "ar": "ممر ضيّق",
+          "kind": "object",
+          "x": 44,
+          "y": 73
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9159,
+          "en": "I understand. What matters is that everyone can get through safely.",
+          "ar": "أتفهم ذلك. المهم أن يستطيع الجميع المرور بأمان."
+        }
+      ],
+      "taskEn": "Keep the hallway safe to walk through.",
+      "taskAr": "اترك الممر آمنًا للعبور.",
+      "path": "assets/scenes/conversations/life-l3-110-2.webp",
+      "width": 391,
+      "height": 242,
+      "sha256": "cbfb8520da9d339725d564aecadbba796eaffac923fd8d9969c355044fca68c8"
+    },
+    {
+      "id": "conv-life-l3-110-3",
+      "topic": "conversation",
+      "en": "Making peace over a shared space · Move the boxes into your flat",
+      "ar": "الاتفاق على استخدام مساحة مشتركة · انقل الصناديق إلى شقتك",
+      "sentenceEn": "I'll move them into my flat this evening.",
+      "sentenceAr": "سأنقلها إلى شقتي هذا المساء.",
+      "words": [
+        {
+          "en": "move the boxes into your flat",
+          "ar": "انقل الصناديق إلى شقتك",
+          "kind": "phrase",
+          "x": 55,
+          "y": 73
+        },
+        {
+          "en": "large box",
+          "ar": "صندوق كبير",
+          "kind": "object",
+          "x": 48,
+          "y": 67
+        },
+        {
+          "en": "open doorway",
+          "ar": "مدخل مفتوح",
+          "kind": "object",
+          "x": 79,
+          "y": 59
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Move the boxes into your flat.",
+      "taskAr": "انقل الصناديق إلى شقتك.",
+      "path": "assets/scenes/conversations/life-l3-110-3.webp",
+      "width": 390,
+      "height": 242,
+      "sha256": "d2130c4c5427d4c46c85b7000ebe056a8750c9e268bf0f9834394575434a7a7f"
+    },
+    {
+      "id": "conv-life-l3-110-4",
+      "topic": "conversation",
+      "en": "Making peace over a shared space · Help someone lift a heavy box",
+      "ar": "الاتفاق على استخدام مساحة مشتركة · ساعد شخصًا على رفع صندوق ثقيل",
+      "sentenceEn": "Let's try to treat each other with respect.",
+      "sentenceAr": "لنحاول معاملة بعضنا باحترام.",
+      "words": [
+        {
+          "en": "help someone lift a heavy box",
+          "ar": "ساعد شخصًا على رفع صندوق ثقيل",
+          "kind": "phrase",
+          "x": 56,
+          "y": 77
+        },
+        {
+          "en": "heavy box",
+          "ar": "صندوق ثقيل",
+          "kind": "object",
+          "x": 51,
+          "y": 75
+        },
+        {
+          "en": "smiling",
+          "ar": "مبتسم",
+          "kind": "description",
+          "x": 70,
+          "y": 28
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Help someone lift a heavy box.",
+      "taskAr": "ساعد شخصًا على رفع صندوق ثقيل.",
+      "path": "assets/scenes/conversations/life-l3-110-4.webp",
+      "width": 391,
+      "height": 242,
+      "sha256": "8d1cf41d73248e4870dfeceee5b294390eb3909390712cc09fb2f450c7607f05"
+    },
+    {
+      "id": "conv-life-l3-111-1",
+      "topic": "conversation",
+      "en": "Choosing a time to meet at the station · Agree on a meeting time",
+      "ar": "اختيار موعد للقاء في المحطة · اتفق على وقت اللقاء",
+      "sentenceEn": "What time are you meeting Tom?",
+      "sentenceAr": "في أي وقت ستقابل توم؟",
+      "words": [
+        {
+          "en": "agree on a meeting time",
+          "ar": "اتفق على وقت اللقاء",
+          "kind": "phrase",
+          "x": 69,
+          "y": 42
+        },
+        {
+          "en": "wall clock",
+          "ar": "ساعة حائط",
+          "kind": "object",
+          "x": 80,
+          "y": 34
+        },
+        {
+          "en": "smartphone",
+          "ar": "هاتف ذكي",
+          "kind": "object",
+          "x": 64,
+          "y": 75
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Agree on a meeting time.",
+      "taskAr": "اتفق على وقت اللقاء.",
+      "path": "assets/scenes/conversations/life-l3-111-1.webp",
+      "width": 390,
+      "height": 241,
+      "sha256": "32c7eb3cf864c00cfb1b4b238a5caecd45426f2e9d13eb4ee683938a24e4e889"
+    },
+    {
+      "id": "conv-life-l3-111-2",
+      "topic": "conversation",
+      "en": "Choosing a time to meet at the station · Meet by the ticket machines",
+      "ar": "اختيار موعد للقاء في المحطة · التقِ قرب آلات التذاكر",
+      "sentenceEn": "At two thirty. He asked me to meet him by the ticket machines.",
+      "sentenceAr": "في الثانية والنصف. طلب مني أن أقابله بجوار أجهزة التذاكر.",
+      "words": [
+        {
+          "en": "meet by the ticket machines",
+          "ar": "التقِ قرب آلات التذاكر",
+          "kind": "phrase",
+          "x": 57,
+          "y": 55
+        },
+        {
+          "en": "ticket machine",
+          "ar": "آلة تذاكر",
+          "kind": "object",
+          "x": 40,
+          "y": 48
+        },
+        {
+          "en": "train symbol",
+          "ar": "رمز قطار",
+          "kind": "object",
+          "x": 66,
+          "y": 21
+        }
+      ],
+      "patterns": [
+        {
+          "id": 4,
+          "en": "Can I meet you there too, or would that be too early?",
+          "ar": "هل يمكنني مقابلتك هناك أيضًا، أم سيكون ذلك مبكرًا جدًا؟"
+        }
+      ],
+      "taskEn": "Meet by the ticket machines.",
+      "taskAr": "التقِ قرب آلات التذاكر.",
+      "path": "assets/scenes/conversations/life-l3-111-2.webp",
+      "width": 391,
+      "height": 241,
+      "sha256": "fa6d42bdb8a53c706d7d6dd92747435cdfb348e848826c84e697d0d71696a130"
+    },
+    {
+      "id": "conv-life-l3-111-3",
+      "topic": "conversation",
+      "en": "Choosing a time to meet at the station · Head toward the station entrance",
+      "ar": "اختيار موعد للقاء في المحطة · توجّه إلى مدخل المحطة",
+      "sentenceEn": "That works. The station is usually quiet around then.",
+      "sentenceAr": "هذا مناسب. تكون المحطة هادئة عادةً في ذلك الوقت.",
+      "words": [
+        {
+          "en": "head toward the station entrance",
+          "ar": "توجّه إلى مدخل المحطة",
+          "kind": "phrase",
+          "x": 67,
+          "y": 41
+        },
+        {
+          "en": "station entrance",
+          "ar": "مدخل المحطة",
+          "kind": "object",
+          "x": 78,
+          "y": 53
+        },
+        {
+          "en": "backpack",
+          "ar": "حقيبة ظهر",
+          "kind": "object",
+          "x": 12,
+          "y": 66
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Head toward the station entrance.",
+      "taskAr": "توجّه إلى مدخل المحطة.",
+      "path": "assets/scenes/conversations/life-l3-111-3.webp",
+      "width": 390,
+      "height": 241,
+      "sha256": "21257b844e17da6c71318e7b3f6db82753c9cd97cc0451ee254150f0e6fffb9a"
+    },
+    {
+      "id": "conv-life-l3-111-4",
+      "topic": "conversation",
+      "en": "Choosing a time to meet at the station · Text me when you are near the entrance",
+      "ar": "اختيار موعد للقاء في المحطة · راسلني عندما تقترب من المدخل",
+      "sentenceEn": "Okay. Text me when you're near the entrance.",
+      "sentenceAr": "حسنًا. أرسل لي رسالة عندما تقترب من المدخل.",
+      "words": [
+        {
+          "en": "text me when you are near the entrance",
+          "ar": "راسلني عندما تقترب من المدخل",
+          "kind": "phrase",
+          "x": 50,
+          "y": 76
+        },
+        {
+          "en": "mobile phone",
+          "ar": "هاتف محمول",
+          "kind": "object",
+          "x": 56,
+          "y": 72
+        },
+        {
+          "en": "station sign",
+          "ar": "لافتة المحطة",
+          "kind": "object",
+          "x": 74,
+          "y": 15
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Text me when you are near the entrance.",
+      "taskAr": "راسلني عندما تقترب من المدخل.",
+      "path": "assets/scenes/conversations/life-l3-111-4.webp",
+      "width": 391,
+      "height": 241,
+      "sha256": "c003dfb00f721cbaff513a87d3bb149034a0c997cfeedf76e0aaed893677e0c2"
+    },
+    {
+      "id": "conv-life-l3-112-1",
+      "topic": "conversation",
+      "en": "Explaining why you arrived late · Ask if you are late",
+      "ar": "شرح سبب الوصول متأخرًا · اسأل إن كنت قد تأخرت",
+      "sentenceEn": "Am I late?",
+      "sentenceAr": "هل تأخرت؟",
+      "words": [
+        {
+          "en": "ask if you are late",
+          "ar": "اسأل إن كنت قد تأخرت",
+          "kind": "phrase",
+          "x": 46,
+          "y": 57
+        },
+        {
+          "en": "station clock",
+          "ar": "ساعة المحطة",
+          "kind": "object",
+          "x": 58,
+          "y": 18
+        },
+        {
+          "en": "backpack strap",
+          "ar": "حزام حقيبة ظهر",
+          "kind": "object",
+          "x": 15,
+          "y": 63
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Ask if you are late.",
+      "taskAr": "اسأل إن كنت قد تأخرت.",
+      "path": "assets/scenes/conversations/life-l3-112-1.webp",
+      "width": 390,
+      "height": 243,
+      "sha256": "f372f91a466a8776b6dff3f2b4809951d9e6eccdf688942a9c54aa87c9a9a63c"
+    },
+    {
+      "id": "conv-life-l3-112-2",
+      "topic": "conversation",
+      "en": "Explaining why you arrived late · Explain why you took a longer route",
+      "ar": "شرح سبب الوصول متأخرًا · اشرح لماذا سلكت طريقًا أطول",
+      "sentenceEn": "I had a feeling you would be late.",
+      "sentenceAr": "كان لدي شعور بأنك ستتأخر.",
+      "words": [
+        {
+          "en": "explain why you took a longer route",
+          "ar": "اشرح لماذا سلكت طريقًا أطول",
+          "kind": "phrase",
+          "x": 60,
+          "y": 77
+        },
+        {
+          "en": "road map",
+          "ar": "خريطة طرق",
+          "kind": "object",
+          "x": 43,
+          "y": 78
+        },
+        {
+          "en": "road closure symbol",
+          "ar": "رمز إغلاق الطريق",
+          "kind": "object",
+          "x": 63,
+          "y": 69
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Explain why you took a longer route.",
+      "taskAr": "اشرح لماذا سلكت طريقًا أطول.",
+      "path": "assets/scenes/conversations/life-l3-112-2.webp",
+      "width": 391,
+      "height": 243,
+      "sha256": "d17b5fa6085400b6b632351234d6d4d9693a251702ad71d2889ffc607f121d69"
+    },
+    {
+      "id": "conv-life-l3-112-3",
+      "topic": "conversation",
+      "en": "Explaining why you arrived late · Check whether the same tickets are valid",
+      "ar": "شرح سبب الوصول متأخرًا · تحقّق من صلاحية التذاكر نفسها",
+      "sentenceEn": "That's all right. I think we can still make the next train.",
+      "sentenceAr": "لا بأس. أعتقد أننا ما زلنا نستطيع اللحاق بالقطار التالي.",
+      "words": [
+        {
+          "en": "check whether the same tickets are valid",
+          "ar": "تحقّق من صلاحية التذاكر نفسها",
+          "kind": "phrase",
+          "x": 55,
+          "y": 66
+        },
+        {
+          "en": "train ticket",
+          "ar": "تذكرة قطار",
+          "kind": "object",
+          "x": 43,
+          "y": 72
+        },
+        {
+          "en": "departure board",
+          "ar": "لوحة المغادرة",
+          "kind": "object",
+          "x": 56,
+          "y": 20
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9117,
+          "en": "That's all right. I think we can still make the next train.",
+          "ar": "لا بأس. أعتقد أننا ما زلنا نستطيع اللحاق بالقطار التالي."
+        }
+      ],
+      "taskEn": "Check whether the same tickets are valid.",
+      "taskAr": "تحقّق من صلاحية التذاكر نفسها.",
+      "path": "assets/scenes/conversations/life-l3-112-3.webp",
+      "width": 390,
+      "height": 243,
+      "sha256": "57d7f0e70c0ecb17c56e13d034240abc69b744ec8339f9c3e5c3c92f4686856e"
+    },
+    {
+      "id": "conv-life-l3-112-4",
+      "topic": "conversation",
+      "en": "Explaining why you arrived late · Go straight to the platform",
+      "ar": "شرح سبب الوصول متأخرًا · اذهب مباشرةً إلى الرصيف",
+      "sentenceEn": "Good. Let's go straight to the platform.",
+      "sentenceAr": "جيد. لنتجه مباشرة إلى الرصيف.",
+      "words": [
+        {
+          "en": "go straight to the platform",
+          "ar": "اذهب مباشرةً إلى الرصيف",
+          "kind": "phrase",
+          "x": 61,
+          "y": 56
+        },
+        {
+          "en": "train carriage",
+          "ar": "عربة قطار",
+          "kind": "object",
+          "x": 82,
+          "y": 56
+        },
+        {
+          "en": "ticket",
+          "ar": "تذكرة",
+          "kind": "object",
+          "x": 42,
+          "y": 70
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Go straight to the platform.",
+      "taskAr": "اذهب مباشرةً إلى الرصيف.",
+      "path": "assets/scenes/conversations/life-l3-112-4.webp",
+      "width": 391,
+      "height": 243,
+      "sha256": "44ae91d0549f6e7d172ef155bab96f9f2513f14715b04ca07846395721d177a7"
+    },
+    {
+      "id": "conv-life-l3-113-1",
+      "topic": "conversation",
+      "en": "Working out where the car is parked · Try to remember where you parked",
+      "ar": "تحديد مكان السيارة المركونة · حاول تذكّر أين أوقفت سيارتك",
+      "sentenceEn": "Are you telling me you don't remember where you parked your car?",
+      "sentenceAr": "هل تقول لي إنك لا تتذكر أين أوقفت سيارتك؟",
+      "words": [
+        {
+          "en": "try to remember where you parked",
+          "ar": "حاول تذكّر أين أوقفت سيارتك",
+          "kind": "phrase",
+          "x": 49,
+          "y": 65
+        },
+        {
+          "en": "staircase",
+          "ar": "درج",
+          "kind": "object",
+          "x": 82,
+          "y": 55
+        },
+        {
+          "en": "confused",
+          "ar": "مرتبك",
+          "kind": "description",
+          "x": 27,
+          "y": 23
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Try to remember where you parked.",
+      "taskAr": "حاول تذكّر أين أوقفت سيارتك.",
+      "path": "assets/scenes/conversations/life-l3-113-1.webp",
+      "width": 390,
+      "height": 241,
+      "sha256": "d5dfca5b36412e32800ff9c832a8b12a83a2c6d2a693512683d571958be5500c"
+    },
+    {
+      "id": "conv-life-l3-113-2",
+      "topic": "conversation",
+      "en": "Working out where the car is parked · Look for a blue car",
+      "ar": "تحديد مكان السيارة المركونة · ابحث عن سيارة زرقاء",
+      "sentenceEn": "I know it's on the second floor, but I forgot the row.",
+      "sentenceAr": "أعلم أنها في الطابق الثاني، لكنني نسيت الصف.",
+      "words": [
+        {
+          "en": "look for a blue car",
+          "ar": "ابحث عن سيارة زرقاء",
+          "kind": "phrase",
+          "x": 39,
+          "y": 57
+        },
+        {
+          "en": "blue car",
+          "ar": "سيارة زرقاء",
+          "kind": "object",
+          "x": 71,
+          "y": 51
+        },
+        {
+          "en": "parking bay",
+          "ar": "موقف سيارة",
+          "kind": "object",
+          "x": 65,
+          "y": 80
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Look for a blue car.",
+      "taskAr": "ابحث عن سيارة زرقاء.",
+      "path": "assets/scenes/conversations/life-l3-113-2.webp",
+      "width": 391,
+      "height": 241,
+      "sha256": "96b7c938d34ab05f9abfb7fc119fa845a6bb022a7eb81e3616b3a1435ec079a3"
+    },
+    {
+      "id": "conv-life-l3-113-3",
+      "topic": "conversation",
+      "en": "Working out where the car is parked · Check a photo of the parking ticket",
+      "ar": "تحديد مكان السيارة المركونة · راجع صورة تذكرة الوقوف",
+      "sentenceEn": "Blue. Let's look near the entrance we used earlier.",
+      "sentenceAr": "زرقاء. لنبحث قرب المدخل الذي استخدمناه في وقت سابق.",
+      "words": [
+        {
+          "en": "check a photo of the parking ticket",
+          "ar": "راجع صورة تذكرة الوقوف",
+          "kind": "phrase",
+          "x": 56,
+          "y": 66
+        },
+        {
+          "en": "parking symbol",
+          "ar": "رمز موقف سيارات",
+          "kind": "object",
+          "x": 55,
+          "y": 64
+        },
+        {
+          "en": "phone screen",
+          "ar": "شاشة هاتف",
+          "kind": "object",
+          "x": 55,
+          "y": 53
+        }
+      ],
+      "patterns": [
+        {
+          "id": 6,
+          "en": "Blue. Let's look near the entrance we used earlier.",
+          "ar": "زرقاء. لنبحث قرب المدخل الذي استخدمناه في وقت سابق."
+        }
+      ],
+      "taskEn": "Check a photo of the parking ticket.",
+      "taskAr": "راجع صورة تذكرة الوقوف.",
+      "path": "assets/scenes/conversations/life-l3-113-3.webp",
+      "width": 391,
+      "height": 241,
+      "sha256": "fdad2006750a25f6e53ae2e21239e4b6b3aff3a883c33c654b00eb60b70c841b"
+    },
+    {
+      "id": "conv-life-l3-113-4",
+      "topic": "conversation",
+      "en": "Working out where the car is parked · Match the row symbol",
+      "ar": "تحديد مكان السيارة المركونة · طابق رمز الصف",
+      "sentenceEn": "Good. The row number might be on it.",
+      "sentenceAr": "جيد. ربما كان رقم الصف مكتوبًا عليها.",
+      "words": [
+        {
+          "en": "match the row symbol",
+          "ar": "طابق رمز الصف",
+          "kind": "phrase",
+          "x": 53,
+          "y": 56
+        },
+        {
+          "en": "parking marker",
+          "ar": "علامة موقف السيارات",
+          "kind": "object",
+          "x": 79,
+          "y": 43
+        },
+        {
+          "en": "raised thumb",
+          "ar": "إبهام مرفوع",
+          "kind": "object",
+          "x": 57,
+          "y": 86
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Match the row symbol.",
+      "taskAr": "طابق رمز الصف.",
+      "path": "assets/scenes/conversations/life-l3-113-4.webp",
+      "width": 390,
+      "height": 241,
+      "sha256": "953c7d53cd49a983f24a9d50511ade552662558a85dfa0f82e2c54bd2661f455"
+    },
+    {
+      "id": "conv-life-l3-114-1",
+      "topic": "conversation",
+      "en": "Asking whether a friend needs a lift · Offer to pick someone up",
+      "ar": "السؤال إن كان الصديق يحتاج إلى توصيلة · اعرض أن تقلّ شخصًا بالسيارة",
+      "sentenceEn": "Would you like me to drive over and collect you?",
+      "sentenceAr": "هل تريد مني الحضور بالسيارة لأقلّك؟",
+      "words": [
+        {
+          "en": "offer to pick someone up",
+          "ar": "اعرض أن تقلّ شخصًا بالسيارة",
+          "kind": "phrase",
+          "x": 49,
+          "y": 49
+        },
+        {
+          "en": "wheeled suitcase",
+          "ar": "حقيبة بعجلات",
+          "kind": "object",
+          "x": 28,
+          "y": 92
+        },
+        {
+          "en": "hotel lobby",
+          "ar": "بهو الفندق",
+          "kind": "object",
+          "x": 50,
+          "y": 56
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Offer to pick someone up.",
+      "taskAr": "اعرض أن تقلّ شخصًا بالسيارة.",
+      "path": "assets/scenes/conversations/life-l3-114-1.webp",
+      "width": 390,
+      "height": 241,
+      "sha256": "30128ee5fefd40e5bd9cdad0ebfb80604699911f929f0439df240632ef9468e6"
+    },
+    {
+      "id": "conv-life-l3-114-2",
+      "topic": "conversation",
+      "en": "Asking whether a friend needs a lift · Take the hotel shuttle instead",
+      "ar": "السؤال إن كان الصديق يحتاج إلى توصيلة · استقلّ حافلة الفندق بدلًا من ذلك",
+      "sentenceEn": "Don't bother to pick me up at the hotel.",
+      "sentenceAr": "لا تتكلف عناء اصطحابي من الفندق.",
+      "words": [
+        {
+          "en": "take the hotel shuttle instead",
+          "ar": "استقلّ حافلة الفندق بدلًا من ذلك",
+          "kind": "phrase",
+          "x": 55,
+          "y": 44
+        },
+        {
+          "en": "shuttle sign",
+          "ar": "لافتة حافلة الفندق",
+          "kind": "object",
+          "x": 82,
+          "y": 23
+        },
+        {
+          "en": "planter",
+          "ar": "حوض نبات",
+          "kind": "object",
+          "x": 67,
+          "y": 63
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9094,
+          "en": "Are you going to take the shuttle to the station instead?",
+          "ar": "هل ستستقل الحافلة المكوكية إلى المحطة بدلًا من ذلك؟"
+        }
+      ],
+      "taskEn": "Take the hotel shuttle instead.",
+      "taskAr": "استقلّ حافلة الفندق بدلًا من ذلك.",
+      "path": "assets/scenes/conversations/life-l3-114-2.webp",
+      "width": 391,
+      "height": 241,
+      "sha256": "008e7dcf38669a33b5f63f209164eb460e8d7121d4cf3f4e6590f6308a5f90fd"
+    },
+    {
+      "id": "conv-life-l3-114-3",
+      "topic": "conversation",
+      "en": "Asking whether a friend needs a lift · Get on the shuttle with your suitcase",
+      "ar": "السؤال إن كان الصديق يحتاج إلى توصيلة · اصعد إلى الحافلة مع حقيبتك",
+      "sentenceEn": "Yes, it stops outside the hotel every half hour.",
+      "sentenceAr": "نعم، تتوقف خارج الفندق كل نصف ساعة.",
+      "words": [
+        {
+          "en": "get on the shuttle with your suitcase",
+          "ar": "اصعد إلى الحافلة مع حقيبتك",
+          "kind": "phrase",
+          "x": 60,
+          "y": 65
+        },
+        {
+          "en": "suitcase",
+          "ar": "حقيبة سفر",
+          "kind": "object",
+          "x": 43,
+          "y": 89
+        },
+        {
+          "en": "shuttle step",
+          "ar": "درجة الحافلة",
+          "kind": "object",
+          "x": 78,
+          "y": 78
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Get on the shuttle with your suitcase.",
+      "taskAr": "اصعد إلى الحافلة مع حقيبتك.",
+      "path": "assets/scenes/conversations/life-l3-114-3.webp",
+      "width": 391,
+      "height": 241,
+      "sha256": "f9ee6673336b15f06e646028c164caa3a9f32e33602ac92d09fbe4ed506d93c6"
+    },
+    {
+      "id": "conv-life-l3-114-4",
+      "topic": "conversation",
+      "en": "Asking whether a friend needs a lift · Say goodbye from the shuttle",
+      "ar": "السؤال إن كان الصديق يحتاج إلى توصيلة · ودّع من نافذة الحافلة",
+      "sentenceEn": "Enjoy your vacation.",
+      "sentenceAr": "استمتع بإجازتك.",
+      "words": [
+        {
+          "en": "say goodbye from the shuttle",
+          "ar": "ودّع من نافذة الحافلة",
+          "kind": "phrase",
+          "x": 42,
+          "y": 40
+        },
+        {
+          "en": "shuttle window",
+          "ar": "نافذة الحافلة",
+          "kind": "object",
+          "x": 29,
+          "y": 46
+        },
+        {
+          "en": "wave goodbye",
+          "ar": "يلوّح مودعًا",
+          "kind": "action",
+          "x": 65,
+          "y": 43
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Say goodbye from the shuttle.",
+      "taskAr": "ودّع من نافذة الحافلة.",
+      "path": "assets/scenes/conversations/life-l3-114-4.webp",
+      "width": 390,
+      "height": 241,
+      "sha256": "b162ff787afa9a61b21f3d033850596aaed14ace7b9dae3a5fc875850ba3fabe"
+    },
+    {
+      "id": "conv-life-l3-115-1",
+      "topic": "conversation",
+      "en": "Checking what is open on arrival · Check whether the visitor centre is open",
+      "ar": "التحقّق مما هو مفتوح عند الوصول · تحقّق مما إذا كان مركز الزوّار مفتوحًا",
+      "sentenceEn": "The sign says the visitor centre opens at ten. Is the door unlocked?",
+      "sentenceAr": "تقول اللافتة إن مركز الزوار يفتح في العاشرة. هل الباب مفتوح؟",
+      "words": [
+        {
+          "en": "check whether the visitor centre is open",
+          "ar": "تحقّق مما إذا كان مركز الزوّار مفتوحًا",
+          "kind": "phrase",
+          "x": 69,
+          "y": 51
+        },
+        {
+          "en": "open glass door",
+          "ar": "باب زجاجي مفتوح",
+          "kind": "object",
+          "x": 31,
+          "y": 27
+        },
+        {
+          "en": "opening-hours symbol",
+          "ar": "رمز ساعات العمل",
+          "kind": "object",
+          "x": 87,
+          "y": 40
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Check whether the visitor centre is open.",
+      "taskAr": "تحقّق مما إذا كان مركز الزوّار مفتوحًا.",
+      "path": "assets/scenes/conversations/life-l3-115-1.webp",
+      "width": 390,
+      "height": 243,
+      "sha256": "de0dc9039979428517e2d2f39bb010ce2e3abd37cfe0cb1ab09f4cf9000405dc"
+    },
+    {
+      "id": "conv-life-l3-115-2",
+      "topic": "conversation",
+      "en": "Checking what is open on arrival · Ask for a map before the tour",
+      "ar": "التحقّق مما هو مفتوح عند الوصول · اطلب خريطة قبل الجولة",
+      "sentenceEn": "It's already open.",
+      "sentenceAr": "إنه مفتوح بالفعل.",
+      "words": [
+        {
+          "en": "ask for a map before the tour",
+          "ar": "اطلب خريطة قبل الجولة",
+          "kind": "phrase",
+          "x": 56,
+          "y": 65
+        },
+        {
+          "en": "visitor map",
+          "ar": "خريطة الزوّار",
+          "kind": "object",
+          "x": 53,
+          "y": 66
+        },
+        {
+          "en": "computer monitor",
+          "ar": "شاشة حاسوب",
+          "kind": "object",
+          "x": 74,
+          "y": 57
+        }
+      ],
+      "patterns": [
+        {
+          "id": 4,
+          "en": "Can I get a map there before the tour starts?",
+          "ar": "هل يمكنني الحصول على خريطة من هناك قبل بدء الجولة؟"
+        }
+      ],
+      "taskEn": "Ask for a map before the tour.",
+      "taskAr": "اطلب خريطة قبل الجولة.",
+      "path": "assets/scenes/conversations/life-l3-115-2.webp",
+      "width": 391,
+      "height": 243,
+      "sha256": "9735b73770860f5c53ad75357add78f19302e9f9ccf692e119dbe3fe767bf763"
+    },
+    {
+      "id": "conv-life-l3-115-3",
+      "topic": "conversation",
+      "en": "Checking what is open on arrival · Find the accessible route",
+      "ar": "التحقّق مما هو مفتوح عند الوصول · اعثر على المسار الميسّر",
+      "sentenceEn": "Yes. Ask for the map with the accessible routes marked.",
+      "sentenceAr": "نعم. اطلب الخريطة التي توضح المسارات الميسّرة.",
+      "words": [
+        {
+          "en": "find the accessible route",
+          "ar": "اعثر على المسار الميسّر",
+          "kind": "phrase",
+          "x": 57,
+          "y": 57
+        },
+        {
+          "en": "wheelchair symbol",
+          "ar": "رمز كرسي متحرك",
+          "kind": "object",
+          "x": 72,
+          "y": 49
+        },
+        {
+          "en": "dotted route",
+          "ar": "مسار منقّط",
+          "kind": "object",
+          "x": 53,
+          "y": 62
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Find the accessible route.",
+      "taskAr": "اعثر على المسار الميسّر.",
+      "path": "assets/scenes/conversations/life-l3-115-3.webp",
+      "width": 391,
+      "height": 243,
+      "sha256": "cd5ed9d3fb78972e3779c7c7cc55af5bb3fecfc534ea236459a5431942c716b5"
+    },
+    {
+      "id": "conv-life-l3-115-4",
+      "topic": "conversation",
+      "en": "Checking what is open on arrival · Follow the path beside the old wall",
+      "ar": "التحقّق مما هو مفتوح عند الوصول · اتّبع الممر بجوار الجدار القديم",
+      "sentenceEn": "We'll start in the courtyard and follow the path beside the old wall.",
+      "sentenceAr": "سنبدأ من الفناء ونسلك الممر المحاذي للجدار القديم.",
+      "words": [
+        {
+          "en": "follow the path beside the old wall",
+          "ar": "اتّبع الممر بجوار الجدار القديم",
+          "kind": "phrase",
+          "x": 35,
+          "y": 78
+        },
+        {
+          "en": "old stone wall",
+          "ar": "جدار حجري قديم",
+          "kind": "object",
+          "x": 16,
+          "y": 51
+        },
+        {
+          "en": "paved path",
+          "ar": "ممر مرصوف",
+          "kind": "object",
+          "x": 54,
+          "y": 85
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Follow the path beside the old wall.",
+      "taskAr": "اتّبع الممر بجوار الجدار القديم.",
+      "path": "assets/scenes/conversations/life-l3-115-4.webp",
+      "width": 390,
+      "height": 243,
+      "sha256": "1d6cde89d64e90def084184911fa6b368d24e4f7515c57630a56d895c781c945"
+    },
+    {
+      "id": "conv-life-l3-116-1",
+      "topic": "conversation",
+      "en": "Looking for shelter on a hot day · Explain that the weather is too hot",
+      "ar": "البحث عن مكان مظلّل في يوم حار · اشرح أن الجو شديد الحرارة",
+      "sentenceEn": "According to the thermometer, it's 30 degrees outside.",
+      "sentenceAr": "وفقًا لمقياس الحرارة، تبلغ الحرارة في الخارج ثلاثين درجة.",
+      "words": [
+        {
+          "en": "explain that the weather is too hot",
+          "ar": "اشرح أن الجو شديد الحرارة",
+          "kind": "phrase",
+          "x": 40,
+          "y": 39
+        },
+        {
+          "en": "thermometer sign",
+          "ar": "لافتة مقياس الحرارة",
+          "kind": "object",
+          "x": 87,
+          "y": 35
+        },
+        {
+          "en": "folding fan",
+          "ar": "مروحة يدوية قابلة للطي",
+          "kind": "object",
+          "x": 63,
+          "y": 63
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Explain that the weather is too hot.",
+      "taskAr": "اشرح أن الجو شديد الحرارة.",
+      "path": "assets/scenes/conversations/life-l3-116-1.webp",
+      "width": 390,
+      "height": 243,
+      "sha256": "00b9e35f44a820f25e8f66dc8088e82c1f36473df44a87ffb621ecd98cfd0d4d"
+    },
+    {
+      "id": "conv-life-l3-116-2",
+      "topic": "conversation",
+      "en": "Looking for shelter on a hot day · Sit on a bench in the shade",
+      "ar": "البحث عن مكان مظلّل في يوم حار · اجلس على مقعد في الظل",
+      "sentenceEn": "I can't stand this hot weather.",
+      "sentenceAr": "لا أطيق هذا الطقس الحار.",
+      "words": [
+        {
+          "en": "sit on a bench in the shade",
+          "ar": "اجلس على مقعد في الظل",
+          "kind": "phrase",
+          "x": 47,
+          "y": 74
+        },
+        {
+          "en": "shaded bench",
+          "ar": "مقعد في الظل",
+          "kind": "object",
+          "x": 80,
+          "y": 71
+        },
+        {
+          "en": "hot and tired",
+          "ar": "يشعر بالحرّ والتعب",
+          "kind": "description",
+          "x": 26,
+          "y": 36
+        }
+      ],
+      "patterns": [
+        {
+          "id": 117,
+          "en": "There is a shaded bench beside the entrance.",
+          "ar": "يوجد مقعد مظلّل بجوار المدخل."
+        }
+      ],
+      "taskEn": "Sit on a bench in the shade.",
+      "taskAr": "اجلس على مقعد في الظل.",
+      "path": "assets/scenes/conversations/life-l3-116-2.webp",
+      "width": 391,
+      "height": 243,
+      "sha256": "564cb8743d78b1570bab208b64aa062da2c6920803a7476452f6f32d177009b2"
+    },
+    {
+      "id": "conv-life-l3-116-3",
+      "topic": "conversation",
+      "en": "Looking for shelter on a hot day · Buy tickets at the window",
+      "ar": "البحث عن مكان مظلّل في يوم حار · اشترِ التذاكر من الشباك",
+      "sentenceEn": "Good. I'll sit there while you buy the tickets.",
+      "sentenceAr": "جيد. سأجلس هناك بينما تشتري التذاكر.",
+      "words": [
+        {
+          "en": "buy tickets at the window",
+          "ar": "اشترِ التذاكر من الشباك",
+          "kind": "phrase",
+          "x": 67,
+          "y": 58
+        },
+        {
+          "en": "ticket symbol",
+          "ar": "رمز تذكرة",
+          "kind": "object",
+          "x": 68,
+          "y": 29
+        },
+        {
+          "en": "ticket window",
+          "ar": "شباك التذاكر",
+          "kind": "object",
+          "x": 79,
+          "y": 54
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Buy tickets at the window.",
+      "taskAr": "اشترِ التذاكر من الشباك.",
+      "path": "assets/scenes/conversations/life-l3-116-3.webp",
+      "width": 391,
+      "height": 243,
+      "sha256": "836fef5f3b8e307ceee70a678d18ecded36cd23bf381870316b2d5b5329f4324"
+    },
+    {
+      "id": "conv-life-l3-116-4",
+      "topic": "conversation",
+      "en": "Looking for shelter on a hot day · Offer someone a bottle of water",
+      "ar": "البحث عن مكان مظلّل في يوم حار · قدّم لشخص زجاجة ماء",
+      "sentenceEn": "Yes, please. That would help.",
+      "sentenceAr": "نعم من فضلك. سيكون ذلك مفيدًا.",
+      "words": [
+        {
+          "en": "offer someone a bottle of water",
+          "ar": "قدّم لشخص زجاجة ماء",
+          "kind": "phrase",
+          "x": 56,
+          "y": 62
+        },
+        {
+          "en": "water bottle",
+          "ar": "زجاجة ماء",
+          "kind": "object",
+          "x": 55,
+          "y": 56
+        },
+        {
+          "en": "grateful",
+          "ar": "ممتنّ",
+          "kind": "description",
+          "x": 84,
+          "y": 37
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Offer someone a bottle of water.",
+      "taskAr": "قدّم لشخص زجاجة ماء.",
+      "path": "assets/scenes/conversations/life-l3-116-4.webp",
+      "width": 390,
+      "height": 243,
+      "sha256": "ac2284c11d1b50380674cb89f2ec9b810775dde1bab8bd18a5b97dd1966eeeaa"
+    },
+    {
+      "id": "conv-life-l3-117-1",
+      "topic": "conversation",
+      "en": "Turning back before a storm · Notice the clouds getting darker",
+      "ar": "العودة قبل بدء عاصفة · لاحظ أن الغيوم تزداد قتامةً",
+      "sentenceEn": "The clouds are getting darker. Should we still go up?",
+      "sentenceAr": "تزداد الغيوم قتامة. هل نصعد مع ذلك؟",
+      "words": [
+        {
+          "en": "notice the clouds getting darker",
+          "ar": "لاحظ أن الغيوم تزداد قتامةً",
+          "kind": "phrase",
+          "x": 42,
+          "y": 36
+        },
+        {
+          "en": "storm clouds",
+          "ar": "غيوم عاصفة",
+          "kind": "object",
+          "x": 65,
+          "y": 20
+        },
+        {
+          "en": "trail sign",
+          "ar": "لافتة المسار",
+          "kind": "object",
+          "x": 67,
+          "y": 51
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Notice the clouds getting darker.",
+      "taskAr": "لاحظ أن الغيوم تزداد قتامةً.",
+      "path": "assets/scenes/conversations/life-l3-117-1.webp",
+      "width": 390,
+      "height": 242,
+      "sha256": "04d9adb159dc6178e70b7b42dec3f12f0e35eb084ee1dd30a29d56b0cffd7bcb"
+    },
+    {
+      "id": "conv-life-l3-117-2",
+      "topic": "conversation",
+      "en": "Turning back before a storm · Take the lower path back to the car",
+      "ar": "العودة قبل بدء عاصفة · اسلك المسار السفلي عائدًا إلى السيارة",
+      "sentenceEn": "It's dangerous to climb a mountain during a storm.",
+      "sentenceAr": "من الخطير تسلق جبل أثناء عاصفة.",
+      "words": [
+        {
+          "en": "take the lower path back to the car",
+          "ar": "اسلك المسار السفلي عائدًا إلى السيارة",
+          "kind": "phrase",
+          "x": 57,
+          "y": 66
+        },
+        {
+          "en": "rocky path",
+          "ar": "ممر صخري",
+          "kind": "object",
+          "x": 70,
+          "y": 80
+        },
+        {
+          "en": "parked car",
+          "ar": "سيارة متوقفة",
+          "kind": "object",
+          "x": 86,
+          "y": 45
+        }
+      ],
+      "patterns": [
+        {
+          "id": 6,
+          "en": "Then let's take the lower path back to the car.",
+          "ar": "إذن لنسلك الممر السفلي إلى السيارة."
+        }
+      ],
+      "taskEn": "Take the lower path back to the car.",
+      "taskAr": "اسلك المسار السفلي عائدًا إلى السيارة.",
+      "path": "assets/scenes/conversations/life-l3-117-2.webp",
+      "width": 392,
+      "height": 242,
+      "sha256": "01b1c3d8e26729ccf8cf254511c37c22510ba085cde724a9a5987ae7db2fd7ae"
+    },
+    {
+      "id": "conv-life-l3-117-3",
+      "topic": "conversation",
+      "en": "Turning back before a storm · Talk about losing your way on a muddy path",
+      "ar": "العودة قبل بدء عاصفة · تحدّث عن ضياع الطريق في مسار موحل",
+      "sentenceEn": "Good. We can come back when the forecast is better.",
+      "sentenceAr": "جيد. يمكننا العودة حين تتحسن توقعات الطقس.",
+      "words": [
+        {
+          "en": "talk about losing your way on a muddy path",
+          "ar": "تحدّث عن ضياع الطريق في مسار موحل",
+          "kind": "phrase",
+          "x": 42,
+          "y": 69
+        },
+        {
+          "en": "muddy hiking boot",
+          "ar": "حذاء مشي موحل",
+          "kind": "object",
+          "x": 66,
+          "y": 85
+        },
+        {
+          "en": "hiking backpack",
+          "ar": "حقيبة ظهر للمشي",
+          "kind": "object",
+          "x": 52,
+          "y": 53
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Talk about losing your way on a muddy path.",
+      "taskAr": "تحدّث عن ضياع الطريق في مسار موحل.",
+      "path": "assets/scenes/conversations/life-l3-117-3.webp",
+      "width": 389,
+      "height": 242,
+      "sha256": "5a2575f1f913c541a27a711109637ee41dae62bcb8f2c1d1c73f71974bfaf5ea"
+    },
+    {
+      "id": "conv-life-l3-117-4",
+      "topic": "conversation",
+      "en": "Turning back before a storm · Get back to the car in the rain",
+      "ar": "العودة قبل بدء عاصفة · عُد إلى السيارة تحت المطر",
+      "sentenceEn": "To make matters worse, it began to rain.",
+      "sentenceAr": "ولزيادة الأمور سوءًا، بدأ المطر يهطل.",
+      "words": [
+        {
+          "en": "get back to the car in the rain",
+          "ar": "عُد إلى السيارة تحت المطر",
+          "kind": "phrase",
+          "x": 62,
+          "y": 68
+        },
+        {
+          "en": "hooded rain jacket",
+          "ar": "سترة مطر بقلنسوة",
+          "kind": "object",
+          "x": 24,
+          "y": 38
+        },
+        {
+          "en": "car mirror",
+          "ar": "مرآة السيارة",
+          "kind": "object",
+          "x": 89,
+          "y": 52
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Get back to the car in the rain.",
+      "taskAr": "عُد إلى السيارة تحت المطر.",
+      "path": "assets/scenes/conversations/life-l3-117-4.webp",
+      "width": 391,
+      "height": 242,
+      "sha256": "345811e4e4112bd62730ef1f4360a3dd6f03a8d54eb4a200ca12ae4aee73b606"
+    },
+    {
+      "id": "conv-life-l3-118-1",
+      "topic": "conversation",
+      "en": "Asking how far a farm is · Ask how far away the farm is",
+      "ar": "السؤال عن بُعد مزرعة · اسأل كم تبعد المزرعة",
+      "sentenceEn": "How far away is your farm?",
+      "sentenceAr": "كم تبعد مزرعتك؟",
+      "words": [
+        {
+          "en": "ask how far away the farm is",
+          "ar": "اسأل كم تبعد المزرعة",
+          "kind": "phrase",
+          "x": 45,
+          "y": 60
+        },
+        {
+          "en": "road map",
+          "ar": "خريطة طرق",
+          "kind": "object",
+          "x": 49,
+          "y": 66
+        },
+        {
+          "en": "bus stop sign",
+          "ar": "لافتة موقف حافلات",
+          "kind": "object",
+          "x": 13,
+          "y": 16
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Ask how far away the farm is.",
+      "taskAr": "اسأل كم تبعد المزرعة.",
+      "path": "assets/scenes/conversations/life-l3-118-1.webp",
+      "width": 390,
+      "height": 241,
+      "sha256": "a6ee5a285ee90764dd1e7be0a9ef3caf0225be82f7bc1bf19121b708523f9be8"
+    },
+    {
+      "id": "conv-life-l3-118-2",
+      "topic": "conversation",
+      "en": "Asking how far a farm is · Arrange a ride in a white van",
+      "ar": "السؤال عن بُعد مزرعة · رتّب توصيلة في شاحنة صغيرة بيضاء",
+      "sentenceEn": "It's about twelve kilometres from the bus stop.",
+      "sentenceAr": "تبعد نحو اثني عشر كيلومترًا عن موقف الحافلة.",
+      "words": [
+        {
+          "en": "arrange a ride in a white van",
+          "ar": "رتّب توصيلة في شاحنة صغيرة بيضاء",
+          "kind": "phrase",
+          "x": 52,
+          "y": 56
+        },
+        {
+          "en": "photo of a van",
+          "ar": "صورة شاحنة صغيرة",
+          "kind": "object",
+          "x": 50,
+          "y": 53
+        },
+        {
+          "en": "phone screen",
+          "ar": "شاشة هاتف",
+          "kind": "object",
+          "x": 49,
+          "y": 57
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9063,
+          "en": "How do you usually get there when you have bags to carry?",
+          "ar": "كيف تصل إليها عادة حين تحمل حقائب؟"
+        }
+      ],
+      "taskEn": "Arrange a ride in a white van.",
+      "taskAr": "رتّب توصيلة في شاحنة صغيرة بيضاء.",
+      "path": "assets/scenes/conversations/life-l3-118-2.webp",
+      "width": 392,
+      "height": 241,
+      "sha256": "6181b7c40158fabce8ca2f8d06bf894df1e500e55d803fac175dfdd66d640895"
+    },
+    {
+      "id": "conv-life-l3-118-3",
+      "topic": "conversation",
+      "en": "Asking how far a farm is · Walk to the shop with your bags",
+      "ar": "السؤال عن بُعد مزرعة · امشِ إلى المتجر ومعك حقائبك",
+      "sentenceEn": "My brother usually picks me up. He drives a white van.",
+      "sentenceAr": "يقلّني أخي عادة. يقود شاحنة صغيرة بيضاء.",
+      "words": [
+        {
+          "en": "walk to the shop with your bags",
+          "ar": "امشِ إلى المتجر ومعك حقائبك",
+          "kind": "phrase",
+          "x": 54,
+          "y": 66
+        },
+        {
+          "en": "travel bag",
+          "ar": "حقيبة سفر",
+          "kind": "object",
+          "x": 38,
+          "y": 84
+        },
+        {
+          "en": "striped awning",
+          "ar": "مظلّة مخطّطة",
+          "kind": "object",
+          "x": 87,
+          "y": 20
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Walk to the shop with your bags.",
+      "taskAr": "امشِ إلى المتجر ومعك حقائبك.",
+      "path": "assets/scenes/conversations/life-l3-118-3.webp",
+      "width": 389,
+      "height": 241,
+      "sha256": "bd6296d2675da62149ab4e95d6ba15ed1665558d5f26432798b17d1fac80930a"
+    },
+    {
+      "id": "conv-life-l3-118-4",
+      "topic": "conversation",
+      "en": "Asking how far a farm is · Meet the driver by the shop",
+      "ar": "السؤال عن بُعد مزرعة · قابل السائق عند المتجر",
+      "sentenceEn": "To the little shop by the bus stop. He'll meet us there.",
+      "sentenceAr": "إلى المتجر الصغير بجوار الموقف. سيقابلنا هناك.",
+      "words": [
+        {
+          "en": "meet the driver by the shop",
+          "ar": "قابل السائق عند المتجر",
+          "kind": "phrase",
+          "x": 54,
+          "y": 55
+        },
+        {
+          "en": "white van",
+          "ar": "شاحنة صغيرة بيضاء",
+          "kind": "object",
+          "x": 79,
+          "y": 70
+        },
+        {
+          "en": "open van window",
+          "ar": "نافذة الشاحنة المفتوحة",
+          "kind": "object",
+          "x": 63,
+          "y": 45
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Meet the driver by the shop.",
+      "taskAr": "قابل السائق عند المتجر.",
+      "path": "assets/scenes/conversations/life-l3-118-4.webp",
+      "width": 391,
+      "height": 241,
+      "sha256": "c58e32b155d203d057f01d4a0a0d3d7464986177085ed16b788e1a5dbfa757d0"
+    },
+    {
+      "id": "conv-life-l3-119-1",
+      "topic": "conversation",
+      "en": "Explaining why you missed a tour · Realize you missed the guide",
+      "ar": "شرح سبب فوات جولة · أدرك أنك فاتك المرشد",
+      "sentenceEn": "Did you get to the museum before the guide left?",
+      "sentenceAr": "هل وصلتم إلى المتحف قبل مغادرة المرشد؟",
+      "words": [
+        {
+          "en": "realize you missed the guide",
+          "ar": "أدرك أنك فاتك المرشد",
+          "kind": "phrase",
+          "x": 43,
+          "y": 65
+        },
+        {
+          "en": "wristwatch",
+          "ar": "ساعة يد",
+          "kind": "object",
+          "x": 44,
+          "y": 62
+        },
+        {
+          "en": "tour sign",
+          "ar": "لافتة الجولة",
+          "kind": "object",
+          "x": 90,
+          "y": 59
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Realize you missed the guide.",
+      "taskAr": "أدرك أنك فاتك المرشد.",
+      "path": "assets/scenes/conversations/life-l3-119-1.webp",
+      "width": 390,
+      "height": 243,
+      "sha256": "d21c2e806055f3516df297588ac3c0b4dc62bb08b8ae727057f0ad8635705cd7"
+    },
+    {
+      "id": "conv-life-l3-119-2",
+      "topic": "conversation",
+      "en": "Explaining why you missed a tour · Check how long the journey takes",
+      "ar": "شرح سبب فوات جولة · تحقّق من مدة الرحلة",
+      "sentenceEn": "If we had called ahead, they might have held our places.",
+      "sentenceAr": "لو اتصلنا مسبقًا، لربما احتفظوا بأماكننا.",
+      "words": [
+        {
+          "en": "check how long the journey takes",
+          "ar": "تحقّق من مدة الرحلة",
+          "kind": "phrase",
+          "x": 61,
+          "y": 67
+        },
+        {
+          "en": "city map",
+          "ar": "خريطة مدينة",
+          "kind": "object",
+          "x": 27,
+          "y": 76
+        },
+        {
+          "en": "open planner",
+          "ar": "مفكرة مواعيد مفتوحة",
+          "kind": "object",
+          "x": 74,
+          "y": 72
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Check how long the journey takes.",
+      "taskAr": "تحقّق من مدة الرحلة.",
+      "path": "assets/scenes/conversations/life-l3-119-2.webp",
+      "width": 392,
+      "height": 243,
+      "sha256": "3e09f516b16be7f6d56bd8a704351ec4aa6505f09277280f9ce77f3c9200a971"
+    },
+    {
+      "id": "conv-life-l3-119-3",
+      "topic": "conversation",
+      "en": "Explaining why you missed a tour · See the exhibits on your own",
+      "ar": "شرح سبب فوات جولة · شاهد المعروضات بنفسك",
+      "sentenceEn": "Were you able to see the exhibits without the guide?",
+      "sentenceAr": "هل تمكنتم من مشاهدة المعروضات دون المرشد؟",
+      "words": [
+        {
+          "en": "see the exhibits on your own",
+          "ar": "شاهد المعروضات بنفسك",
+          "kind": "phrase",
+          "x": 45,
+          "y": 57
+        },
+        {
+          "en": "pottery jar",
+          "ar": "جرّة فخارية",
+          "kind": "object",
+          "x": 12,
+          "y": 39
+        },
+        {
+          "en": "glass display case",
+          "ar": "خزانة عرض زجاجية",
+          "kind": "object",
+          "x": 26,
+          "y": 55
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9,
+          "en": "I managed to see most of them before closing.",
+          "ar": "تمكّنت من مشاهدة معظمها قبل الإغلاق."
+        }
+      ],
+      "taskEn": "See the exhibits on your own.",
+      "taskAr": "شاهد المعروضات بنفسك.",
+      "path": "assets/scenes/conversations/life-l3-119-3.webp",
+      "width": 389,
+      "height": 243,
+      "sha256": "10636fea437f22f3cbc20ca34e892f96882ff1a7106656a46d901149c0a726ac"
+    },
+    {
+      "id": "conv-life-l3-119-4",
+      "topic": "conversation",
+      "en": "Explaining why you missed a tour · Be tired by the end of the day",
+      "ar": "شرح سبب فوات جولة · يشعر بالتعب في نهاية اليوم",
+      "sentenceEn": "Needless to say, we were very tired by the end of the day.",
+      "sentenceAr": "لا داعي للقول إننا كنا متعبين جدًا في نهاية اليوم.",
+      "words": [
+        {
+          "en": "be tired by the end of the day",
+          "ar": "يشعر بالتعب في نهاية اليوم",
+          "kind": "phrase",
+          "x": 48,
+          "y": 51
+        },
+        {
+          "en": "wooden bench",
+          "ar": "مقعد خشبي",
+          "kind": "object",
+          "x": 12,
+          "y": 75
+        },
+        {
+          "en": "tired",
+          "ar": "متعب",
+          "kind": "description",
+          "x": 48,
+          "y": 33
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Be tired by the end of the day.",
+      "taskAr": "يشعر بالتعب في نهاية اليوم.",
+      "path": "assets/scenes/conversations/life-l3-119-4.webp",
+      "width": 391,
+      "height": 243,
+      "sha256": "f9cad2297b1916e41beda5014e816c63acae0eb81468761ab49559040cf33718"
+    },
+    {
+      "id": "conv-life-l3-120-1",
+      "topic": "conversation",
+      "en": "Asking about a weekend trip abroad · Say what you know about Australia",
+      "ar": "السؤال عن رحلة خارج البلاد · قل ما تعرفه عن أستراليا",
+      "sentenceEn": "What do you know about Australia?",
+      "sentenceAr": "ماذا تعرف عن أستراليا؟",
+      "words": [
+        {
+          "en": "say what you know about Australia",
+          "ar": "قل ما تعرفه عن أستراليا",
+          "kind": "phrase",
+          "x": 44,
+          "y": 68
+        },
+        {
+          "en": "map of Australia",
+          "ar": "خريطة أستراليا",
+          "kind": "object",
+          "x": 59,
+          "y": 68
+        },
+        {
+          "en": "open atlas",
+          "ar": "أطلس مفتوح",
+          "kind": "object",
+          "x": 48,
+          "y": 76
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Say what you know about Australia.",
+      "taskAr": "قل ما تعرفه عن أستراليا.",
+      "path": "assets/scenes/conversations/life-l3-120-1.webp",
+      "width": 390,
+      "height": 242,
+      "sha256": "bbe141335f18be4f690091f4be4edd0bd779c5e53fc68ba656fd92ed1ccbebed"
+    },
+    {
+      "id": "conv-life-l3-120-2",
+      "topic": "conversation",
+      "en": "Asking about a weekend trip abroad · Compare cities for a short course",
+      "ar": "السؤال عن رحلة خارج البلاد · قارن المدن لاختيار دورة قصيرة",
+      "sentenceEn": "A little. I have a cousin there, but I've never visited.",
+      "sentenceAr": "القليل. لدي قريب هناك لكنني لم أزره من قبل.",
+      "words": [
+        {
+          "en": "compare cities for a short course",
+          "ar": "قارن المدن لاختيار دورة قصيرة",
+          "kind": "phrase",
+          "x": 57,
+          "y": 62
+        },
+        {
+          "en": "campus photo",
+          "ar": "صورة حرم جامعي",
+          "kind": "object",
+          "x": 34,
+          "y": 72
+        },
+        {
+          "en": "city skyline",
+          "ar": "أفق المدينة",
+          "kind": "object",
+          "x": 74,
+          "y": 75
+        }
+      ],
+      "patterns": [
+        {
+          "id": 3,
+          "en": "I'd like to go for a short course next year. Which city would you suggest?",
+          "ar": "أود الذهاب لدورة قصيرة العام المقبل. أي مدينة تقترح؟"
+        }
+      ],
+      "taskEn": "Compare cities for a short course.",
+      "taskAr": "قارن المدن لاختيار دورة قصيرة.",
+      "path": "assets/scenes/conversations/life-l3-120-2.webp",
+      "width": 392,
+      "height": 242,
+      "sha256": "d840a1c20d63678fc674c588fca5f069f41f81a56e9677e78a4a31d7bcf5961f"
+    },
+    {
+      "id": "conv-life-l3-120-3",
+      "topic": "conversation",
+      "en": "Asking about a weekend trip abroad · Compare the dates and travel costs",
+      "ar": "السؤال عن رحلة خارج البلاد · قارن المواعيد وتكاليف السفر",
+      "sentenceEn": "Start by comparing the course dates and the cost of getting there.",
+      "sentenceAr": "ابدأ بمقارنة مواعيد الدورات وتكلفة السفر.",
+      "words": [
+        {
+          "en": "compare the dates and travel costs",
+          "ar": "قارن المواعيد وتكاليف السفر",
+          "kind": "phrase",
+          "x": 49,
+          "y": 71
+        },
+        {
+          "en": "desk calendar",
+          "ar": "تقويم مكتبي",
+          "kind": "object",
+          "x": 50,
+          "y": 76
+        },
+        {
+          "en": "calculator",
+          "ar": "آلة حاسبة",
+          "kind": "object",
+          "x": 77,
+          "y": 74
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Compare the dates and travel costs.",
+      "taskAr": "قارن المواعيد وتكاليف السفر.",
+      "path": "assets/scenes/conversations/life-l3-120-3.webp",
+      "width": 389,
+      "height": 242,
+      "sha256": "fe1b1de948793231c28328a888b24d8fc30017a535717aeccf867131ddbd7aa8"
+    },
+    {
+      "id": "conv-life-l3-120-4",
+      "topic": "conversation",
+      "en": "Asking about a weekend trip abroad · Point out another place to visit",
+      "ar": "السؤال عن رحلة خارج البلاد · أشِر إلى مكان آخر للزيارة",
+      "sentenceEn": "Sooner or later, I'll probably visit Boston.",
+      "sentenceAr": "سأزور بوسطن على الأرجح عاجلًا أم آجلًا.",
+      "words": [
+        {
+          "en": "point out another place to visit",
+          "ar": "أشِر إلى مكان آخر للزيارة",
+          "kind": "phrase",
+          "x": 54,
+          "y": 73
+        },
+        {
+          "en": "paper map",
+          "ar": "خريطة ورقية",
+          "kind": "object",
+          "x": 62,
+          "y": 76
+        },
+        {
+          "en": "location pin",
+          "ar": "علامة تحديد الموقع",
+          "kind": "object",
+          "x": 69,
+          "y": 86
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Point out another place to visit.",
+      "taskAr": "أشِر إلى مكان آخر للزيارة.",
+      "path": "assets/scenes/conversations/life-l3-120-4.webp",
+      "width": 391,
+      "height": 242,
+      "sha256": "bfc636d64a14e23eefb779be1d2aa0a4f9dd0cf195d4d087a820d893caee04c3"
+    },
+    {
+      "id": "conv-life-l3-121-1",
+      "topic": "conversation",
+      "en": "Offering a drink without caffeine · Offer mint tea instead of coffee",
+      "ar": "عرض مشروب بلا كافيين · قدّم شاي النعناع بدلًا من القهوة",
+      "sentenceEn": "I seldom drink coffee.",
+      "sentenceAr": "نادرًا ما أشرب القهوة.",
+      "words": [
+        {
+          "en": "offer mint tea instead of coffee",
+          "ar": "قدّم شاي النعناع بدلًا من القهوة",
+          "kind": "phrase",
+          "x": 32,
+          "y": 64
+        },
+        {
+          "en": "coffee cup",
+          "ar": "فنجان قهوة",
+          "kind": "object",
+          "x": 41,
+          "y": 86
+        },
+        {
+          "en": "bowl of mint",
+          "ar": "وعاء نعناع",
+          "kind": "object",
+          "x": 78,
+          "y": 87
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Offer mint tea instead of coffee.",
+      "taskAr": "قدّم شاي النعناع بدلًا من القهوة.",
+      "path": "assets/scenes/conversations/life-l3-121-1.webp",
+      "width": 391,
+      "height": 243,
+      "sha256": "8fabdf5e8d802e9a5d7b976b53d96c2ce45c07bb02609c6d04194d06bb163774"
+    },
+    {
+      "id": "conv-life-l3-121-2",
+      "topic": "conversation",
+      "en": "Offering a drink without caffeine · Ask whether the drink has caffeine",
+      "ar": "عرض مشروب بلا كافيين · اسأل هل يحتوي المشروب على الكافيين",
+      "sentenceEn": "Would you like mint tea instead?",
+      "sentenceAr": "هل ترغب في شاي بالنعناع بدلًا منه؟",
+      "words": [
+        {
+          "en": "ask whether the drink has caffeine",
+          "ar": "اسأل هل يحتوي المشروب على الكافيين",
+          "kind": "phrase",
+          "x": 43,
+          "y": 77
+        },
+        {
+          "en": "clear teapot",
+          "ar": "إبريق شاي شفاف",
+          "kind": "object",
+          "x": 61,
+          "y": 83
+        },
+        {
+          "en": "mint leaves",
+          "ar": "أوراق نعناع",
+          "kind": "object",
+          "x": 77,
+          "y": 86
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9051,
+          "en": "Would you like mint tea instead?",
+          "ar": "هل ترغب في شاي بالنعناع بدلًا منه؟"
+        }
+      ],
+      "taskEn": "Ask whether the drink has caffeine.",
+      "taskAr": "اسأل هل يحتوي المشروب على الكافيين.",
+      "path": "assets/scenes/conversations/life-l3-121-2.webp",
+      "width": 390,
+      "height": 243,
+      "sha256": "31156c2fc108166f9ad3fc68dc6c37a339eac7f87c63cae85de0dbaf7e4237fd"
+    },
+    {
+      "id": "conv-life-l3-121-3",
+      "topic": "conversation",
+      "en": "Offering a drink without caffeine · Make mint tea with hot water",
+      "ar": "عرض مشروب بلا كافيين · حضّر شاي النعناع بالماء الساخن",
+      "sentenceEn": "It's just mint and hot water. Would you like something to eat too?",
+      "sentenceAr": "إنه نعناع وماء ساخن فقط. هل ترغب في شيء تأكله أيضًا؟",
+      "words": [
+        {
+          "en": "make mint tea with hot water",
+          "ar": "حضّر شاي النعناع بالماء الساخن",
+          "kind": "phrase",
+          "x": 38,
+          "y": 67
+        },
+        {
+          "en": "metal kettle",
+          "ar": "غلاية معدنية",
+          "kind": "object",
+          "x": 26,
+          "y": 56
+        },
+        {
+          "en": "mint tea",
+          "ar": "شاي نعناع",
+          "kind": "object",
+          "x": 45,
+          "y": 87
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Make mint tea with hot water.",
+      "taskAr": "حضّر شاي النعناع بالماء الساخن.",
+      "path": "assets/scenes/conversations/life-l3-121-3.webp",
+      "width": 391,
+      "height": 243,
+      "sha256": "b4ec1a9b01b29c7fb08350d63ff28724deb3add17d527f94cefa465aea1fbf86"
+    },
+    {
+      "id": "conv-life-l3-121-4",
+      "topic": "conversation",
+      "en": "Offering a drink without caffeine · Help yourself to some dates",
+      "ar": "عرض مشروب بلا كافيين · تفضّل بتناول بعض التمر",
+      "sentenceEn": "No problem. There are dates in the bowl if you change your mind.",
+      "sentenceAr": "لا مشكلة. يوجد تمر في الوعاء إذا غيّرت رأيك.",
+      "words": [
+        {
+          "en": "help yourself to some dates",
+          "ar": "تفضّل بتناول بعض التمر",
+          "kind": "phrase",
+          "x": 62,
+          "y": 84
+        },
+        {
+          "en": "bowl of dates",
+          "ar": "وعاء تمر",
+          "kind": "object",
+          "x": 63,
+          "y": 88
+        },
+        {
+          "en": "apple",
+          "ar": "تفّاحة",
+          "kind": "object",
+          "x": 48,
+          "y": 58
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Help yourself to some dates.",
+      "taskAr": "تفضّل بتناول بعض التمر.",
+      "path": "assets/scenes/conversations/life-l3-121-4.webp",
+      "width": 390,
+      "height": 243,
+      "sha256": "e3857c4650f7df8259a4a793e2f9f8e0d571fc5357701f096cc3142e61d2042b"
+    },
+    {
+      "id": "conv-life-l3-122-1",
+      "topic": "conversation",
+      "en": "Offering a meal to a guest · Say why you missed lunch",
+      "ar": "تقديم وجبة لضيف · اذكر لماذا فاتتك وجبة الغداء",
+      "sentenceEn": "You must be hungry.",
+      "sentenceAr": "لا بد أنك جائع.",
+      "words": [
+        {
+          "en": "say why you missed lunch",
+          "ar": "اذكر لماذا فاتتك وجبة الغداء",
+          "kind": "phrase",
+          "x": 29,
+          "y": 55
+        },
+        {
+          "en": "wall clock",
+          "ar": "ساعة حائط",
+          "kind": "object",
+          "x": 56,
+          "y": 21
+        },
+        {
+          "en": "shoulder bag",
+          "ar": "حقيبة كتف",
+          "kind": "object",
+          "x": 9,
+          "y": 85
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Say why you missed lunch.",
+      "taskAr": "اذكر لماذا فاتتك وجبة الغداء.",
+      "path": "assets/scenes/conversations/life-l3-122-1.webp",
+      "width": 391,
+      "height": 240,
+      "sha256": "963629a4f260bc40e04980afc96b49b7d22e49bc34a1ef1dfff09856b2589426"
+    },
+    {
+      "id": "conv-life-l3-122-2",
+      "topic": "conversation",
+      "en": "Offering a meal to a guest · Offer soup while heating the bread",
+      "ar": "تقديم وجبة لضيف · قدّم الحساء ريثما تسخّن الخبز",
+      "sentenceEn": "A little. I missed lunch because the bus was late.",
+      "sentenceAr": "قليلًا. فاتني الغداء لأن الحافلة تأخرت.",
+      "words": [
+        {
+          "en": "offer soup while heating the bread",
+          "ar": "قدّم الحساء ريثما تسخّن الخبز",
+          "kind": "phrase",
+          "x": 66,
+          "y": 54
+        },
+        {
+          "en": "ladle",
+          "ar": "مغرفة",
+          "kind": "object",
+          "x": 65,
+          "y": 53
+        },
+        {
+          "en": "flatbread",
+          "ar": "خبز مسطّح",
+          "kind": "object",
+          "x": 21,
+          "y": 86
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9051,
+          "en": "Would you like some soup while I heat the bread?",
+          "ar": "هل ترغب في بعض الحساء بينما أسخّن الخبز؟"
+        }
+      ],
+      "taskEn": "Offer soup while heating the bread.",
+      "taskAr": "قدّم الحساء ريثما تسخّن الخبز.",
+      "path": "assets/scenes/conversations/life-l3-122-2.webp",
+      "width": 390,
+      "height": 240,
+      "sha256": "58fb2dfb706e1077cc5b2ac85562420052d497aed46bf542795206c9755a2a9b"
+    },
+    {
+      "id": "conv-life-l3-122-3",
+      "topic": "conversation",
+      "en": "Offering a meal to a guest · Serve a small bowl of soup",
+      "ar": "تقديم وجبة لضيف · قدّم وعاء حساء صغيرًا",
+      "sentenceEn": "Yes, please. Even a small bowl would be enough.",
+      "sentenceAr": "نعم من فضلك. يكفيني حتى وعاء صغير.",
+      "words": [
+        {
+          "en": "serve a small bowl of soup",
+          "ar": "قدّم وعاء حساء صغيرًا",
+          "kind": "phrase",
+          "x": 60,
+          "y": 76
+        },
+        {
+          "en": "soup bowl",
+          "ar": "وعاء حساء",
+          "kind": "object",
+          "x": 53,
+          "y": 83
+        },
+        {
+          "en": "serving tray",
+          "ar": "صينية تقديم",
+          "kind": "object",
+          "x": 68,
+          "y": 94
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Serve a small bowl of soup.",
+      "taskAr": "قدّم وعاء حساء صغيرًا.",
+      "path": "assets/scenes/conversations/life-l3-122-3.webp",
+      "width": 391,
+      "height": 240,
+      "sha256": "0c80a43739b12e70e1fd3345d6e813d80b661f2b6324787f24b5f6ec8cf468c9"
+    },
+    {
+      "id": "conv-life-l3-122-4",
+      "topic": "conversation",
+      "en": "Offering a meal to a guest · Thank someone for bringing food",
+      "ar": "تقديم وجبة لضيف · اشكر شخصًا على إحضار الطعام",
+      "sentenceEn": "Thank you. That's very kind of you.",
+      "sentenceAr": "شكرًا. هذا لطف كبير منك.",
+      "words": [
+        {
+          "en": "thank someone for bringing food",
+          "ar": "اشكر شخصًا على إحضار الطعام",
+          "kind": "phrase",
+          "x": 42,
+          "y": 64
+        },
+        {
+          "en": "bowl of soup",
+          "ar": "وعاء حساء",
+          "kind": "object",
+          "x": 51,
+          "y": 73
+        },
+        {
+          "en": "plate of bread",
+          "ar": "طبق خبز",
+          "kind": "object",
+          "x": 66,
+          "y": 74
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Thank someone for bringing food.",
+      "taskAr": "اشكر شخصًا على إحضار الطعام.",
+      "path": "assets/scenes/conversations/life-l3-122-4.webp",
+      "width": 390,
+      "height": 240,
+      "sha256": "f19d1b076f90923a05b8b6cf23b1fc09d77e45b1d2830746e6c2e9da75bab272"
+    },
+    {
+      "id": "conv-life-l3-123-1",
+      "topic": "conversation",
+      "en": "Checking food for a guest · Ask about ingredients to avoid",
+      "ar": "التحقّق مما يناسب الضيف من الطعام · اسأل عن المكوّنات الواجب تجنّبها",
+      "sentenceEn": "We have two desserts. Do you need to avoid any ingredients?",
+      "sentenceAr": "لدينا نوعان من الحلوى. هل تحتاج إلى تجنّب أي مكونات؟",
+      "words": [
+        {
+          "en": "ask about ingredients to avoid",
+          "ar": "اسأل عن المكوّنات الواجب تجنّبها",
+          "kind": "phrase",
+          "x": 39,
+          "y": 59
+        },
+        {
+          "en": "fresh fruit",
+          "ar": "فاكهة طازجة",
+          "kind": "object",
+          "x": 32,
+          "y": 84
+        },
+        {
+          "en": "ice cream tub",
+          "ar": "علبة مثلّجات",
+          "kind": "object",
+          "x": 75,
+          "y": 83
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9064,
+          "en": "We have two desserts. Do you need to avoid any ingredients?",
+          "ar": "لدينا نوعان من الحلوى. هل تحتاج إلى تجنّب أي مكونات؟"
+        }
+      ],
+      "taskEn": "Ask about ingredients to avoid.",
+      "taskAr": "اسأل عن المكوّنات الواجب تجنّبها.",
+      "path": "assets/scenes/conversations/life-l3-123-1.webp",
+      "width": 391,
+      "height": 242,
+      "sha256": "7ac5c41ead34fd839c7f6f49d882278ba9455360765e3e3725c37a75274cb22e"
+    },
+    {
+      "id": "conv-life-l3-123-2",
+      "topic": "conversation",
+      "en": "Checking food for a guest · Check the package for peanuts",
+      "ar": "التحقّق مما يناسب الضيف من الطعام · تحقّق من خلوّ العبوة من الفول السوداني",
+      "sentenceEn": "I can't eat peanuts. Could you check the package?",
+      "sentenceAr": "لا أستطيع أكل الفول السوداني. هل يمكنك التحقق من العبوة؟",
+      "words": [
+        {
+          "en": "check the package for peanuts",
+          "ar": "تحقّق من خلوّ العبوة من الفول السوداني",
+          "kind": "phrase",
+          "x": 69,
+          "y": 67
+        },
+        {
+          "en": "peanut warning symbol",
+          "ar": "رمز تحذير من الفول السوداني",
+          "kind": "object",
+          "x": 78,
+          "y": 76
+        },
+        {
+          "en": "package",
+          "ar": "عبوة",
+          "kind": "object",
+          "x": 26,
+          "y": 65
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Check the package for peanuts.",
+      "taskAr": "تحقّق من خلوّ العبوة من الفول السوداني.",
+      "path": "assets/scenes/conversations/life-l3-123-2.webp",
+      "width": 390,
+      "height": 242,
+      "sha256": "0b931efc1b5a86cf1ef9c7300632422756f520c4526195b8bfdc312fa14eecfc"
+    },
+    {
+      "id": "conv-life-l3-123-3",
+      "topic": "conversation",
+      "en": "Checking food for a guest · Serve the fruit first",
+      "ar": "التحقّق مما يناسب الضيف من الطعام · قدّم الفاكهة أولًا",
+      "sentenceEn": "In general, kids like ice cream.",
+      "sentenceAr": "عمومًا، يحب الأطفال المثلجات.",
+      "words": [
+        {
+          "en": "serve the fruit first",
+          "ar": "قدّم الفاكهة أولًا",
+          "kind": "phrase",
+          "x": 43,
+          "y": 65
+        },
+        {
+          "en": "fruit salad",
+          "ar": "سلطة فواكه",
+          "kind": "object",
+          "x": 32,
+          "y": 85
+        },
+        {
+          "en": "serving spoon",
+          "ar": "ملعقة تقديم",
+          "kind": "object",
+          "x": 48,
+          "y": 62
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Serve the fruit first.",
+      "taskAr": "قدّم الفاكهة أولًا.",
+      "path": "assets/scenes/conversations/life-l3-123-3.webp",
+      "width": 391,
+      "height": 242,
+      "sha256": "bb388e642fd8396cee2e5a3b6a584461ede31e80d86f672a7cacda25b5a52c13"
+    },
+    {
+      "id": "conv-life-l3-123-4",
+      "topic": "conversation",
+      "en": "Checking food for a guest · Say how good the dessert is",
+      "ar": "التحقّق مما يناسب الضيف من الطعام · عبّر عن مدى لذة التحلية",
+      "sentenceEn": "This is so good.",
+      "sentenceAr": "هذا جيد جدًا.",
+      "words": [
+        {
+          "en": "say how good the dessert is",
+          "ar": "عبّر عن مدى لذة التحلية",
+          "kind": "phrase",
+          "x": 29,
+          "y": 53
+        },
+        {
+          "en": "fruit bowl",
+          "ar": "وعاء فواكه",
+          "kind": "object",
+          "x": 33,
+          "y": 84
+        },
+        {
+          "en": "fork",
+          "ar": "شوكة",
+          "kind": "object",
+          "x": 29,
+          "y": 51
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Say how good the dessert is.",
+      "taskAr": "عبّر عن مدى لذة التحلية.",
+      "path": "assets/scenes/conversations/life-l3-123-4.webp",
+      "width": 390,
+      "height": 242,
+      "sha256": "41d89a6277714b0ed90ada9ad97f438c0e86e7d1fbae4284f73c44712c205381"
+    },
+    {
+      "id": "conv-life-l3-124-1",
+      "topic": "conversation",
+      "en": "Finding something to eat before a trip · Find a sandwich shop near the station",
+      "ar": "إيجاد طعام قبل الانطلاق · اعثر على متجر شطائر قرب المحطة",
+      "sentenceEn": "I don't have anything to eat.",
+      "sentenceAr": "ليس لدي شيء آكله.",
+      "words": [
+        {
+          "en": "find a sandwich shop near the station",
+          "ar": "اعثر على متجر شطائر قرب المحطة",
+          "kind": "phrase",
+          "x": 65,
+          "y": 51
+        },
+        {
+          "en": "sandwich sign",
+          "ar": "لافتة شطائر",
+          "kind": "object",
+          "x": 74,
+          "y": 14
+        },
+        {
+          "en": "closed shutter",
+          "ar": "باب معدني مغلق",
+          "kind": "object",
+          "x": 75,
+          "y": 70
+        }
+      ],
+      "patterns": [
+        {
+          "id": 117,
+          "en": "There is a sandwich shop next to the station.",
+          "ar": "يوجد محل ساندويتشات بجوار المحطة."
+        }
+      ],
+      "taskEn": "Find a sandwich shop near the station.",
+      "taskAr": "اعثر على متجر شطائر قرب المحطة.",
+      "path": "assets/scenes/conversations/life-l3-124-1.webp",
+      "width": 391,
+      "height": 243,
+      "sha256": "1ffb0e590fd3715414d30791a80d6b91270a9db5e4be5037b6e25d1bec7d5d6e"
+    },
+    {
+      "id": "conv-life-l3-124-2",
+      "topic": "conversation",
+      "en": "Finding something to eat before a trip · See whether the corner shop is open",
+      "ar": "إيجاد طعام قبل الانطلاق · تحقّق إن كان متجر الزاوية مفتوحًا",
+      "sentenceEn": "It doesn't open for another hour. Is anything open now?",
+      "sentenceAr": "لن يفتح إلا بعد ساعة. هل يوجد مكان مفتوح الآن؟",
+      "words": [
+        {
+          "en": "see whether the corner shop is open",
+          "ar": "تحقّق إن كان متجر الزاوية مفتوحًا",
+          "kind": "phrase",
+          "x": 53,
+          "y": 47
+        },
+        {
+          "en": "corner shop",
+          "ar": "متجر الزاوية",
+          "kind": "object",
+          "x": 78,
+          "y": 57
+        },
+        {
+          "en": "striped awning",
+          "ar": "مظلّة مخطّطة",
+          "kind": "object",
+          "x": 70,
+          "y": 13
+        }
+      ],
+      "patterns": [],
+      "taskEn": "See whether the corner shop is open.",
+      "taskAr": "تحقّق إن كان متجر الزاوية مفتوحًا.",
+      "path": "assets/scenes/conversations/life-l3-124-2.webp",
+      "width": 390,
+      "height": 243,
+      "sha256": "e1a27f1407c1d92e3c2779bed436b8fec10dcb7438d970bc448836e8668d8e97"
+    },
+    {
+      "id": "conv-life-l3-124-3",
+      "topic": "conversation",
+      "en": "Finding something to eat before a trip · Notice that the shelves are almost empty",
+      "ar": "إيجاد طعام قبل الانطلاق · لاحظ أن الرفوف شبه فارغة",
+      "sentenceEn": "I checked yesterday. The shelves were almost empty.",
+      "sentenceAr": "تفقدته أمس. كانت الرفوف شبه فارغة.",
+      "words": [
+        {
+          "en": "notice that the shelves are almost empty",
+          "ar": "لاحظ أن الرفوف شبه فارغة",
+          "kind": "phrase",
+          "x": 61,
+          "y": 53
+        },
+        {
+          "en": "empty shelves",
+          "ar": "رفوف فارغة",
+          "kind": "object",
+          "x": 80,
+          "y": 66
+        },
+        {
+          "en": "bottles of water",
+          "ar": "زجاجات ماء",
+          "kind": "object",
+          "x": 92,
+          "y": 88
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Notice that the shelves are almost empty.",
+      "taskAr": "لاحظ أن الرفوف شبه فارغة.",
+      "path": "assets/scenes/conversations/life-l3-124-3.webp",
+      "width": 391,
+      "height": 243,
+      "sha256": "38272d6319262853620713d661876fb69e7cc19af9475771c008d538918c2989"
+    },
+    {
+      "id": "conv-life-l3-124-4",
+      "topic": "conversation",
+      "en": "Finding something to eat before a trip · Buy a sandwich on the train",
+      "ar": "إيجاد طعام قبل الانطلاق · اشترِ شطيرة على القطار",
+      "sentenceEn": "Then let's buy something on the train.",
+      "sentenceAr": "إذن لنشترِ شيئًا في القطار.",
+      "words": [
+        {
+          "en": "buy a sandwich on the train",
+          "ar": "اشترِ شطيرة على القطار",
+          "kind": "phrase",
+          "x": 51,
+          "y": 68
+        },
+        {
+          "en": "wrapped sandwich",
+          "ar": "شطيرة مغلّفة",
+          "kind": "object",
+          "x": 52,
+          "y": 71
+        },
+        {
+          "en": "food trolley",
+          "ar": "عربة طعام",
+          "kind": "object",
+          "x": 76,
+          "y": 93
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Buy a sandwich on the train.",
+      "taskAr": "اشترِ شطيرة على القطار.",
+      "path": "assets/scenes/conversations/life-l3-124-4.webp",
+      "width": 390,
+      "height": 243,
+      "sha256": "5049f1d5fc33bbc3680bd265028216f6e2ebc1ff42fdf9eee690db70d16269fc"
     }
   ]
 }

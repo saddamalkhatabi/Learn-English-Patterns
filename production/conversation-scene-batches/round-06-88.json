@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "2ae92a1470504ba09b56a1263c87edbd621eb5d80f594a0a8087c8a75bcd1c10"
+  },
+  "conversations": [
+    {
+      "id": "l3-121",
+      "goalAr": "عرض مشروب بلا كافيين",
+      "goalEn": "Offering a drink without caffeine",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Offer mint tea instead of coffee",
+          "ar": "قدّم شاي النعناع بدلًا من القهوة",
+          "purposeEn": "Offer mint tea instead of coffee.",
+          "purposeAr": "قدّم شاي النعناع بدلًا من القهوة.",
+          "image": {
+            "id": "conv-life-l3-121-1",
+            "path": "assets/scenes/conversations/life-l3-121-1.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Offer mint tea instead of coffee",
+            "ar": "قدّم شاي النعناع بدلًا من القهوة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                394,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "offer mint tea instead of coffee",
+              "ar": "قدّم شاي النعناع بدلًا من القهوة",
+              "kind": "phrase",
+              "x": 32,
+              "y": 64
+            },
+            {
+              "en": "coffee cup",
+              "ar": "فنجان قهوة",
+              "kind": "object",
+              "x": 41,
+              "y": 86
+            },
+            {
+              "en": "bowl of mint",
+              "ar": "وعاء نعناع",
+              "kind": "object",
+              "x": 78,
+              "y": 87
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Ask whether the drink has caffeine",
+          "ar": "اسأل هل يحتوي المشروب على الكافيين",
+          "purposeEn": "Ask whether the drink has caffeine.",
+          "purposeAr": "اسأل هل يحتوي المشروب على الكافيين.",
+          "image": {
+            "id": "conv-life-l3-121-2",
+            "path": "assets/scenes/conversations/life-l3-121-2.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Ask whether the drink has caffeine",
+            "ar": "اسأل هل يحتوي المشروب على الكافيين",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                3,
+                790,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask whether the drink has caffeine",
+              "ar": "اسأل هل يحتوي المشروب على الكافيين",
+              "kind": "phrase",
+              "x": 43,
+              "y": 77
+            },
+            {
+              "en": "clear teapot",
+              "ar": "إبريق شاي شفاف",
+              "kind": "object",
+              "x": 61,
+              "y": 83
+            },
+            {
+              "en": "mint leaves",
+              "ar": "أوراق نعناع",
+              "kind": "object",
+              "x": 77,
+              "y": 86
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Make mint tea with hot water",
+          "ar": "حضّر شاي النعناع بالماء الساخن",
+          "purposeEn": "Make mint tea with hot water.",
+          "purposeAr": "حضّر شاي النعناع بالماء الساخن.",
+          "image": {
+            "id": "conv-life-l3-121-3",
+            "path": "assets/scenes/conversations/life-l3-121-3.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Make mint tea with hot water",
+            "ar": "حضّر شاي النعناع بالماء الساخن",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                3,
+                1187,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "make mint tea with hot water",
+              "ar": "حضّر شاي النعناع بالماء الساخن",
+              "kind": "phrase",
+              "x": 38,
+              "y": 67
+            },
+            {
+              "en": "metal kettle",
+              "ar": "غلاية معدنية",
+              "kind": "object",
+              "x": 26,
+              "y": 56
+            },
+            {
+              "en": "mint tea",
+              "ar": "شاي نعناع",
+              "kind": "object",
+              "x": 45,
+              "y": 87
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Help yourself to some dates",
+          "ar": "تفضّل بتناول بعض التمر",
+          "purposeEn": "Help yourself to some dates.",
+          "purposeAr": "تفضّل بتناول بعض التمر.",
+          "image": {
+            "id": "conv-life-l3-121-4",
+            "path": "assets/scenes/conversations/life-l3-121-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Help yourself to some dates",
+            "ar": "تفضّل بتناول بعض التمر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                3,
+                1583,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "help yourself to some dates",
+              "ar": "تفضّل بتناول بعض التمر",
+              "kind": "phrase",
+              "x": 62,
+              "y": 84
+            },
+            {
+              "en": "bowl of dates",
+              "ar": "وعاء تمر",
+              "kind": "object",
+              "x": 63,
+              "y": 88
+            },
+            {
+              "en": "apple",
+              "ar": "تفّاحة",
+              "kind": "object",
+              "x": 48,
+              "y": 58
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-122",
+      "goalAr": "تقديم وجبة لضيف",
+      "goalEn": "Offering a meal to a guest",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Say why you missed lunch",
+          "ar": "اذكر لماذا فاتتك وجبة الغداء",
+          "purposeEn": "Say why you missed lunch.",
+          "purposeAr": "اذكر لماذا فاتتك وجبة الغداء.",
+          "image": {
+            "id": "conv-life-l3-122-1",
+            "path": "assets/scenes/conversations/life-l3-122-1.webp",
+            "width": 391,
+            "height": 240,
+            "en": "Say why you missed lunch",
+            "ar": "اذكر لماذا فاتتك وجبة الغداء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                252,
+                394,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "say why you missed lunch",
+              "ar": "اذكر لماذا فاتتك وجبة الغداء",
+              "kind": "phrase",
+              "x": 29,
+              "y": 55
+            },
+            {
+              "en": "wall clock",
+              "ar": "ساعة حائط",
+              "kind": "object",
+              "x": 56,
+              "y": 21
+            },
+            {
+              "en": "shoulder bag",
+              "ar": "حقيبة كتف",
+              "kind": "object",
+              "x": 9,
+              "y": 85
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Offer soup while heating the bread",
+          "ar": "قدّم الحساء ريثما تسخّن الخبز",
+          "purposeEn": "Offer soup while heating the bread.",
+          "purposeAr": "قدّم الحساء ريثما تسخّن الخبز.",
+          "image": {
+            "id": "conv-life-l3-122-2",
+            "path": "assets/scenes/conversations/life-l3-122-2.webp",
+            "width": 390,
+            "height": 240,
+            "en": "Offer soup while heating the bread",
+            "ar": "قدّم الحساء ريثما تسخّن الخبز",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                252,
+                790,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "offer soup while heating the bread",
+              "ar": "قدّم الحساء ريثما تسخّن الخبز",
+              "kind": "phrase",
+              "x": 66,
+              "y": 54
+            },
+            {
+              "en": "ladle",
+              "ar": "مغرفة",
+              "kind": "object",
+              "x": 65,
+              "y": 53
+            },
+            {
+              "en": "flatbread",
+              "ar": "خبز مسطّح",
+              "kind": "object",
+              "x": 21,
+              "y": 86
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Serve a small bowl of soup",
+          "ar": "قدّم وعاء حساء صغيرًا",
+          "purposeEn": "Serve a small bowl of soup.",
+          "purposeAr": "قدّم وعاء حساء صغيرًا.",
+          "image": {
+            "id": "conv-life-l3-122-3",
+            "path": "assets/scenes/conversations/life-l3-122-3.webp",
+            "width": 391,
+            "height": 240,
+            "en": "Serve a small bowl of soup",
+            "ar": "قدّم وعاء حساء صغيرًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                252,
+                1187,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "serve a small bowl of soup",
+              "ar": "قدّم وعاء حساء صغيرًا",
+              "kind": "phrase",
+              "x": 60,
+              "y": 76
+            },
+            {
+              "en": "soup bowl",
+              "ar": "وعاء حساء",
+              "kind": "object",
+              "x": 53,
+              "y": 83
+            },
+            {
+              "en": "serving tray",
+              "ar": "صينية تقديم",
+              "kind": "object",
+              "x": 68,
+              "y": 94
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Thank someone for bringing food",
+          "ar": "اشكر شخصًا على إحضار الطعام",
+          "purposeEn": "Thank someone for bringing food.",
+          "purposeAr": "اشكر شخصًا على إحضار الطعام.",
+          "image": {
+            "id": "conv-life-l3-122-4",
+            "path": "assets/scenes/conversations/life-l3-122-4.webp",
+            "width": 390,
+            "height": 240,
+            "en": "Thank someone for bringing food",
+            "ar": "اشكر شخصًا على إحضار الطعام",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                252,
+                1583,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "thank someone for bringing food",
+              "ar": "اشكر شخصًا على إحضار الطعام",
+              "kind": "phrase",
+              "x": 42,
+              "y": 64
+            },
+            {
+              "en": "bowl of soup",
+              "ar": "وعاء حساء",
+              "kind": "object",
+              "x": 51,
+              "y": 73
+            },
+            {
+              "en": "plate of bread",
+              "ar": "طبق خبز",
+              "kind": "object",
+              "x": 66,
+              "y": 74
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-123",
+      "goalAr": "التحقّق مما يناسب الضيف من الطعام",
+      "goalEn": "Checking food for a guest",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Ask about ingredients to avoid",
+          "ar": "اسأل عن المكوّنات الواجب تجنّبها",
+          "purposeEn": "Ask about ingredients to avoid.",
+          "purposeAr": "اسأل عن المكوّنات الواجب تجنّبها.",
+          "image": {
+            "id": "conv-life-l3-123-1",
+            "path": "assets/scenes/conversations/life-l3-123-1.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Ask about ingredients to avoid",
+            "ar": "اسأل عن المكوّنات الواجب تجنّبها",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                498,
+                394,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask about ingredients to avoid",
+              "ar": "اسأل عن المكوّنات الواجب تجنّبها",
+              "kind": "phrase",
+              "x": 39,
+              "y": 59
+            },
+            {
+              "en": "fresh fruit",
+              "ar": "فاكهة طازجة",
+              "kind": "object",
+              "x": 32,
+              "y": 84
+            },
+            {
+              "en": "ice cream tub",
+              "ar": "علبة مثلّجات",
+              "kind": "object",
+              "x": 75,
+              "y": 83
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Check the package for peanuts",
+          "ar": "تحقّق من خلوّ العبوة من الفول السوداني",
+          "purposeEn": "Check the package for peanuts.",
+          "purposeAr": "تحقّق من خلوّ العبوة من الفول السوداني.",
+          "image": {
+            "id": "conv-life-l3-123-2",
+            "path": "assets/scenes/conversations/life-l3-123-2.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Check the package for peanuts",
+            "ar": "تحقّق من خلوّ العبوة من الفول السوداني",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                498,
+                790,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "check the package for peanuts",
+              "ar": "تحقّق من خلوّ العبوة من الفول السوداني",
+              "kind": "phrase",
+              "x": 69,
+              "y": 67
+            },
+            {
+              "en": "peanut warning symbol",
+              "ar": "رمز تحذير من الفول السوداني",
+              "kind": "object",
+              "x": 78,
+              "y": 76
+            },
+            {
+              "en": "package",
+              "ar": "عبوة",
+              "kind": "object",
+              "x": 26,
+              "y": 65
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Serve the fruit first",
+          "ar": "قدّم الفاكهة أولًا",
+          "purposeEn": "Serve the fruit first.",
+          "purposeAr": "قدّم الفاكهة أولًا.",
+          "image": {
+            "id": "conv-life-l3-123-3",
+            "path": "assets/scenes/conversations/life-l3-123-3.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Serve the fruit first",
+            "ar": "قدّم الفاكهة أولًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                498,
+                1187,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "serve the fruit first",
+              "ar": "قدّم الفاكهة أولًا",
+              "kind": "phrase",
+              "x": 43,
+              "y": 65
+            },
+            {
+              "en": "fruit salad",
+              "ar": "سلطة فواكه",
+              "kind": "object",
+              "x": 32,
+              "y": 85
+            },
+            {
+              "en": "serving spoon",
+              "ar": "ملعقة تقديم",
+              "kind": "object",
+              "x": 48,
+              "y": 62
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Say how good the dessert is",
+          "ar": "عبّر عن مدى لذة التحلية",
+          "purposeEn": "Say how good the dessert is.",
+          "purposeAr": "عبّر عن مدى لذة التحلية.",
+          "image": {
+            "id": "conv-life-l3-123-4",
+            "path": "assets/scenes/conversations/life-l3-123-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Say how good the dessert is",
+            "ar": "عبّر عن مدى لذة التحلية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                498,
+                1583,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "say how good the dessert is",
+              "ar": "عبّر عن مدى لذة التحلية",
+              "kind": "phrase",
+              "x": 29,
+              "y": 53
+            },
+            {
+              "en": "fruit bowl",
+              "ar": "وعاء فواكه",
+              "kind": "object",
+              "x": 33,
+              "y": 84
+            },
+            {
+              "en": "fork",
+              "ar": "شوكة",
+              "kind": "object",
+              "x": 29,
+              "y": 51
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-124",
+      "goalAr": "إيجاد طعام قبل الانطلاق",
+      "goalEn": "Finding something to eat before a trip",
+      "stages": [
+        {
+          "from": 1,
+          "to": 2,
+          "en": "Find a sandwich shop near the station",
+          "ar": "اعثر على متجر شطائر قرب المحطة",
+          "purposeEn": "Find a sandwich shop near the station.",
+          "purposeAr": "اعثر على متجر شطائر قرب المحطة.",
+          "image": {
+            "id": "conv-life-l3-124-1",
+            "path": "assets/scenes/conversations/life-l3-124-1.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Find a sandwich shop near the station",
+            "ar": "اعثر على متجر شطائر قرب المحطة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                746,
+                394,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "find a sandwich shop near the station",
+              "ar": "اعثر على متجر شطائر قرب المحطة",
+              "kind": "phrase",
+              "x": 65,
+              "y": 51
+            },
+            {
+              "en": "sandwich sign",
+              "ar": "لافتة شطائر",
+              "kind": "object",
+              "x": 74,
+              "y": 14
+            },
+            {
+              "en": "closed shutter",
+              "ar": "باب معدني مغلق",
+              "kind": "object",
+              "x": 75,
+              "y": 70
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "en": "See whether the corner shop is open",
+          "ar": "تحقّق إن كان متجر الزاوية مفتوحًا",
+          "purposeEn": "See whether the corner shop is open.",
+          "purposeAr": "تحقّق إن كان متجر الزاوية مفتوحًا.",
+          "image": {
+            "id": "conv-life-l3-124-2",
+            "path": "assets/scenes/conversations/life-l3-124-2.webp",
+            "width": 390,
+            "height": 243,
+            "en": "See whether the corner shop is open",
+            "ar": "تحقّق إن كان متجر الزاوية مفتوحًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                746,
+                790,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "see whether the corner shop is open",
+              "ar": "تحقّق إن كان متجر الزاوية مفتوحًا",
+              "kind": "phrase",
+              "x": 53,
+              "y": 47
+            },
+            {
+              "en": "corner shop",
+              "ar": "متجر الزاوية",
+              "kind": "object",
+              "x": 78,
+              "y": 57
+            },
+            {
+              "en": "striped awning",
+              "ar": "مظلّة مخطّطة",
+              "kind": "object",
+              "x": 70,
+              "y": 13
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "en": "Notice that the shelves are almost empty",
+          "ar": "لاحظ أن الرفوف شبه فارغة",
+          "purposeEn": "Notice that the shelves are almost empty.",
+          "purposeAr": "لاحظ أن الرفوف شبه فارغة.",
+          "image": {
+            "id": "conv-life-l3-124-3",
+            "path": "assets/scenes/conversations/life-l3-124-3.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Notice that the shelves are almost empty",
+            "ar": "لاحظ أن الرفوف شبه فارغة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                746,
+                1187,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "notice that the shelves are almost empty",
+              "ar": "لاحظ أن الرفوف شبه فارغة",
+              "kind": "phrase",
+              "x": 61,
+              "y": 53
+            },
+            {
+              "en": "empty shelves",
+              "ar": "رفوف فارغة",
+              "kind": "object",
+              "x": 80,
+              "y": 66
+            },
+            {
+              "en": "bottles of water",
+              "ar": "زجاجات ماء",
+              "kind": "object",
+              "x": 92,
+              "y": 88
+            }
+          ]
+        },
+        {
+          "from": 7,
+          "to": 7,
+          "en": "Buy a sandwich on the train",
+          "ar": "اشترِ شطيرة على القطار",
+          "purposeEn": "Buy a sandwich on the train.",
+          "purposeAr": "اشترِ شطيرة على القطار.",
+          "image": {
+            "id": "conv-life-l3-124-4",
+            "path": "assets/scenes/conversations/life-l3-124-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Buy a sandwich on the train",
+            "ar": "اشترِ شطيرة على القطار",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                746,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "buy a sandwich on the train",
+              "ar": "اشترِ شطيرة على القطار",
+              "kind": "phrase",
+              "x": 51,
+              "y": 68
+            },
+            {
+              "en": "wrapped sandwich",
+              "ar": "شطيرة مغلّفة",
+              "kind": "object",
+              "x": 52,
+              "y": 71
+            },
+            {
+              "en": "food trolley",
+              "ar": "عربة طعام",
+              "kind": "object",
+              "x": 76,
+              "y": 93
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

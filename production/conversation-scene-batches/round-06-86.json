@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "efeacb96d87b8cf3f5e9b8e83f14cfe3cf97ee5475d7527906cc299ba77e9331"
+  },
+  "conversations": [
+    {
+      "id": "l3-113",
+      "goalAr": "تحديد مكان السيارة المركونة",
+      "goalEn": "Working out where the car is parked",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Try to remember where you parked",
+          "ar": "حاول تذكّر أين أوقفت سيارتك",
+          "purposeEn": "Try to remember where you parked.",
+          "purposeAr": "حاول تذكّر أين أوقفت سيارتك.",
+          "image": {
+            "id": "conv-life-l3-113-1",
+            "path": "assets/scenes/conversations/life-l3-113-1.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Try to remember where you parked",
+            "ar": "حاول تذكّر أين أوقفت سيارتك",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                393,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "try to remember where you parked",
+              "ar": "حاول تذكّر أين أوقفت سيارتك",
+              "kind": "phrase",
+              "x": 49,
+              "y": 65
+            },
+            {
+              "en": "staircase",
+              "ar": "درج",
+              "kind": "object",
+              "x": 82,
+              "y": 55
+            },
+            {
+              "en": "confused",
+              "ar": "مرتبك",
+              "kind": "description",
+              "x": 27,
+              "y": 23
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Look for a blue car",
+          "ar": "ابحث عن سيارة زرقاء",
+          "purposeEn": "Look for a blue car.",
+          "purposeAr": "ابحث عن سيارة زرقاء.",
+          "image": {
+            "id": "conv-life-l3-113-2",
+            "path": "assets/scenes/conversations/life-l3-113-2.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Look for a blue car",
+            "ar": "ابحث عن سيارة زرقاء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                3,
+                790,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "look for a blue car",
+              "ar": "ابحث عن سيارة زرقاء",
+              "kind": "phrase",
+              "x": 39,
+              "y": 57
+            },
+            {
+              "en": "blue car",
+              "ar": "سيارة زرقاء",
+              "kind": "object",
+              "x": 71,
+              "y": 51
+            },
+            {
+              "en": "parking bay",
+              "ar": "موقف سيارة",
+              "kind": "object",
+              "x": 65,
+              "y": 80
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Check a photo of the parking ticket",
+          "ar": "راجع صورة تذكرة الوقوف",
+          "purposeEn": "Check a photo of the parking ticket.",
+          "purposeAr": "راجع صورة تذكرة الوقوف.",
+          "image": {
+            "id": "conv-life-l3-113-3",
+            "path": "assets/scenes/conversations/life-l3-113-3.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Check a photo of the parking ticket",
+            "ar": "راجع صورة تذكرة الوقوف",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                3,
+                1187,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "check a photo of the parking ticket",
+              "ar": "راجع صورة تذكرة الوقوف",
+              "kind": "phrase",
+              "x": 56,
+              "y": 66
+            },
+            {
+              "en": "parking symbol",
+              "ar": "رمز موقف سيارات",
+              "kind": "object",
+              "x": 55,
+              "y": 64
+            },
+            {
+              "en": "phone screen",
+              "ar": "شاشة هاتف",
+              "kind": "object",
+              "x": 55,
+              "y": 53
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Match the row symbol",
+          "ar": "طابق رمز الصف",
+          "purposeEn": "Match the row symbol.",
+          "purposeAr": "طابق رمز الصف.",
+          "image": {
+            "id": "conv-life-l3-113-4",
+            "path": "assets/scenes/conversations/life-l3-113-4.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Match the row symbol",
+            "ar": "طابق رمز الصف",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                3,
+                1583,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "match the row symbol",
+              "ar": "طابق رمز الصف",
+              "kind": "phrase",
+              "x": 53,
+              "y": 56
+            },
+            {
+              "en": "parking marker",
+              "ar": "علامة موقف السيارات",
+              "kind": "object",
+              "x": 79,
+              "y": 43
+            },
+            {
+              "en": "raised thumb",
+              "ar": "إبهام مرفوع",
+              "kind": "object",
+              "x": 57,
+              "y": 86
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-114",
+      "goalAr": "السؤال إن كان الصديق يحتاج إلى توصيلة",
+      "goalEn": "Asking whether a friend needs a lift",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Offer to pick someone up",
+          "ar": "اعرض أن تقلّ شخصًا بالسيارة",
+          "purposeEn": "Offer to pick someone up.",
+          "purposeAr": "اعرض أن تقلّ شخصًا بالسيارة.",
+          "image": {
+            "id": "conv-life-l3-114-1",
+            "path": "assets/scenes/conversations/life-l3-114-1.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Offer to pick someone up",
+            "ar": "اعرض أن تقلّ شخصًا بالسيارة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                250,
+                393,
+                491
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "offer to pick someone up",
+              "ar": "اعرض أن تقلّ شخصًا بالسيارة",
+              "kind": "phrase",
+              "x": 49,
+              "y": 49
+            },
+            {
+              "en": "wheeled suitcase",
+              "ar": "حقيبة بعجلات",
+              "kind": "object",
+              "x": 28,
+              "y": 92
+            },
+            {
+              "en": "hotel lobby",
+              "ar": "بهو الفندق",
+              "kind": "object",
+              "x": 50,
+              "y": 56
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Take the hotel shuttle instead",
+          "ar": "استقلّ حافلة الفندق بدلًا من ذلك",
+          "purposeEn": "Take the hotel shuttle instead.",
+          "purposeAr": "استقلّ حافلة الفندق بدلًا من ذلك.",
+          "image": {
+            "id": "conv-life-l3-114-2",
+            "path": "assets/scenes/conversations/life-l3-114-2.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Take the hotel shuttle instead",
+            "ar": "استقلّ حافلة الفندق بدلًا من ذلك",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                250,
+                790,
+                491
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "take the hotel shuttle instead",
+              "ar": "استقلّ حافلة الفندق بدلًا من ذلك",
+              "kind": "phrase",
+              "x": 55,
+              "y": 44
+            },
+            {
+              "en": "shuttle sign",
+              "ar": "لافتة حافلة الفندق",
+              "kind": "object",
+              "x": 82,
+              "y": 23
+            },
+            {
+              "en": "planter",
+              "ar": "حوض نبات",
+              "kind": "object",
+              "x": 67,
+              "y": 63
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Get on the shuttle with your suitcase",
+          "ar": "اصعد إلى الحافلة مع حقيبتك",
+          "purposeEn": "Get on the shuttle with your suitcase.",
+          "purposeAr": "اصعد إلى الحافلة مع حقيبتك.",
+          "image": {
+            "id": "conv-life-l3-114-3",
+            "path": "assets/scenes/conversations/life-l3-114-3.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Get on the shuttle with your suitcase",
+            "ar": "اصعد إلى الحافلة مع حقيبتك",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                250,
+                1187,
+                491
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "get on the shuttle with your suitcase",
+              "ar": "اصعد إلى الحافلة مع حقيبتك",
+              "kind": "phrase",
+              "x": 60,
+              "y": 65
+            },
+            {
+              "en": "suitcase",
+              "ar": "حقيبة سفر",
+              "kind": "object",
+              "x": 43,
+              "y": 89
+            },
+            {
+              "en": "shuttle step",
+              "ar": "درجة الحافلة",
+              "kind": "object",
+              "x": 78,
+              "y": 78
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Say goodbye from the shuttle",
+          "ar": "ودّع من نافذة الحافلة",
+          "purposeEn": "Say goodbye from the shuttle.",
+          "purposeAr": "ودّع من نافذة الحافلة.",
+          "image": {
+            "id": "conv-life-l3-114-4",
+            "path": "assets/scenes/conversations/life-l3-114-4.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Say goodbye from the shuttle",
+            "ar": "ودّع من نافذة الحافلة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                250,
+                1583,
+                491
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "say goodbye from the shuttle",
+              "ar": "ودّع من نافذة الحافلة",
+              "kind": "phrase",
+              "x": 42,
+              "y": 40
+            },
+            {
+              "en": "shuttle window",
+              "ar": "نافذة الحافلة",
+              "kind": "object",
+              "x": 29,
+              "y": 46
+            },
+            {
+              "en": "wave goodbye",
+              "ar": "يلوّح مودعًا",
+              "kind": "action",
+              "x": 65,
+              "y": 43
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-115",
+      "goalAr": "التحقّق مما هو مفتوح عند الوصول",
+      "goalEn": "Checking what is open on arrival",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Check whether the visitor centre is open",
+          "ar": "تحقّق مما إذا كان مركز الزوّار مفتوحًا",
+          "purposeEn": "Check whether the visitor centre is open.",
+          "purposeAr": "تحقّق مما إذا كان مركز الزوّار مفتوحًا.",
+          "image": {
+            "id": "conv-life-l3-115-1",
+            "path": "assets/scenes/conversations/life-l3-115-1.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Check whether the visitor centre is open",
+            "ar": "تحقّق مما إذا كان مركز الزوّار مفتوحًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                497,
+                393,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "check whether the visitor centre is open",
+              "ar": "تحقّق مما إذا كان مركز الزوّار مفتوحًا",
+              "kind": "phrase",
+              "x": 69,
+              "y": 51
+            },
+            {
+              "en": "open glass door",
+              "ar": "باب زجاجي مفتوح",
+              "kind": "object",
+              "x": 31,
+              "y": 27
+            },
+            {
+              "en": "opening-hours symbol",
+              "ar": "رمز ساعات العمل",
+              "kind": "object",
+              "x": 87,
+              "y": 40
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Ask for a map before the tour",
+          "ar": "اطلب خريطة قبل الجولة",
+          "purposeEn": "Ask for a map before the tour.",
+          "purposeAr": "اطلب خريطة قبل الجولة.",
+          "image": {
+            "id": "conv-life-l3-115-2",
+            "path": "assets/scenes/conversations/life-l3-115-2.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Ask for a map before the tour",
+            "ar": "اطلب خريطة قبل الجولة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                497,
+                790,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask for a map before the tour",
+              "ar": "اطلب خريطة قبل الجولة",
+              "kind": "phrase",
+              "x": 56,
+              "y": 65
+            },
+            {
+              "en": "visitor map",
+              "ar": "خريطة الزوّار",
+              "kind": "object",
+              "x": 53,
+              "y": 66
+            },
+            {
+              "en": "computer monitor",
+              "ar": "شاشة حاسوب",
+              "kind": "object",
+              "x": 74,
+              "y": 57
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Find the accessible route",
+          "ar": "اعثر على المسار الميسّر",
+          "purposeEn": "Find the accessible route.",
+          "purposeAr": "اعثر على المسار الميسّر.",
+          "image": {
+            "id": "conv-life-l3-115-3",
+            "path": "assets/scenes/conversations/life-l3-115-3.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Find the accessible route",
+            "ar": "اعثر على المسار الميسّر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                497,
+                1187,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "find the accessible route",
+              "ar": "اعثر على المسار الميسّر",
+              "kind": "phrase",
+              "x": 57,
+              "y": 57
+            },
+            {
+              "en": "wheelchair symbol",
+              "ar": "رمز كرسي متحرك",
+              "kind": "object",
+              "x": 72,
+              "y": 49
+            },
+            {
+              "en": "dotted route",
+              "ar": "مسار منقّط",
+              "kind": "object",
+              "x": 53,
+              "y": 62
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Follow the path beside the old wall",
+          "ar": "اتّبع الممر بجوار الجدار القديم",
+          "purposeEn": "Follow the path beside the old wall.",
+          "purposeAr": "اتّبع الممر بجوار الجدار القديم.",
+          "image": {
+            "id": "conv-life-l3-115-4",
+            "path": "assets/scenes/conversations/life-l3-115-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Follow the path beside the old wall",
+            "ar": "اتّبع الممر بجوار الجدار القديم",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                497,
+                1583,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "follow the path beside the old wall",
+              "ar": "اتّبع الممر بجوار الجدار القديم",
+              "kind": "phrase",
+              "x": 35,
+              "y": 78
+            },
+            {
+              "en": "old stone wall",
+              "ar": "جدار حجري قديم",
+              "kind": "object",
+              "x": 16,
+              "y": 51
+            },
+            {
+              "en": "paved path",
+              "ar": "ممر مرصوف",
+              "kind": "object",
+              "x": 54,
+              "y": 85
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-116",
+      "goalAr": "البحث عن مكان مظلّل في يوم حار",
+      "goalEn": "Looking for shelter on a hot day",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Explain that the weather is too hot",
+          "ar": "اشرح أن الجو شديد الحرارة",
+          "purposeEn": "Explain that the weather is too hot.",
+          "purposeAr": "اشرح أن الجو شديد الحرارة.",
+          "image": {
+            "id": "conv-life-l3-116-1",
+            "path": "assets/scenes/conversations/life-l3-116-1.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Explain that the weather is too hot",
+            "ar": "اشرح أن الجو شديد الحرارة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                746,
+                393,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "explain that the weather is too hot",
+              "ar": "اشرح أن الجو شديد الحرارة",
+              "kind": "phrase",
+              "x": 40,
+              "y": 39
+            },
+            {
+              "en": "thermometer sign",
+              "ar": "لافتة مقياس الحرارة",
+              "kind": "object",
+              "x": 87,
+              "y": 35
+            },
+            {
+              "en": "folding fan",
+              "ar": "مروحة يدوية قابلة للطي",
+              "kind": "object",
+              "x": 63,
+              "y": 63
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Sit on a bench in the shade",
+          "ar": "اجلس على مقعد في الظل",
+          "purposeEn": "Sit on a bench in the shade.",
+          "purposeAr": "اجلس على مقعد في الظل.",
+          "image": {
+            "id": "conv-life-l3-116-2",
+            "path": "assets/scenes/conversations/life-l3-116-2.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Sit on a bench in the shade",
+            "ar": "اجلس على مقعد في الظل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                746,
+                790,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "sit on a bench in the shade",
+              "ar": "اجلس على مقعد في الظل",
+              "kind": "phrase",
+              "x": 47,
+              "y": 74
+            },
+            {
+              "en": "shaded bench",
+              "ar": "مقعد في الظل",
+              "kind": "object",
+              "x": 80,
+              "y": 71
+            },
+            {
+              "en": "hot and tired",
+              "ar": "يشعر بالحرّ والتعب",
+              "kind": "description",
+              "x": 26,
+              "y": 36
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Buy tickets at the window",
+          "ar": "اشترِ التذاكر من الشباك",
+          "purposeEn": "Buy tickets at the window.",
+          "purposeAr": "اشترِ التذاكر من الشباك.",
+          "image": {
+            "id": "conv-life-l3-116-3",
+            "path": "assets/scenes/conversations/life-l3-116-3.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Buy tickets at the window",
+            "ar": "اشترِ التذاكر من الشباك",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                746,
+                1187,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "buy tickets at the window",
+              "ar": "اشترِ التذاكر من الشباك",
+              "kind": "phrase",
+              "x": 67,
+              "y": 58
+            },
+            {
+              "en": "ticket symbol",
+              "ar": "رمز تذكرة",
+              "kind": "object",
+              "x": 68,
+              "y": 29
+            },
+            {
+              "en": "ticket window",
+              "ar": "شباك التذاكر",
+              "kind": "object",
+              "x": 79,
+              "y": 54
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Offer someone a bottle of water",
+          "ar": "قدّم لشخص زجاجة ماء",
+          "purposeEn": "Offer someone a bottle of water.",
+          "purposeAr": "قدّم لشخص زجاجة ماء.",
+          "image": {
+            "id": "conv-life-l3-116-4",
+            "path": "assets/scenes/conversations/life-l3-116-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Offer someone a bottle of water",
+            "ar": "قدّم لشخص زجاجة ماء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                746,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "offer someone a bottle of water",
+              "ar": "قدّم لشخص زجاجة ماء",
+              "kind": "phrase",
+              "x": 56,
+              "y": 62
+            },
+            {
+              "en": "water bottle",
+              "ar": "زجاجة ماء",
+              "kind": "object",
+              "x": 55,
+              "y": 56
+            },
+            {
+              "en": "grateful",
+              "ar": "ممتنّ",
+              "kind": "description",
+              "x": 84,
+              "y": 37
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

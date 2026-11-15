@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "e76082149648669f9237c797dcc4e197189561fc03e2f595dd1dd463d9cc97a5"
+  },
+  "conversations": [
+    {
+      "id": "l3-109",
+      "goalAr": "شكر شخص على هدية ذات معنى",
+      "goalEn": "Thanking someone for a thoughtful gift",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Give someone a handmade gift",
+          "ar": "قدّم لشخص هدية مصنوعة يدويًا",
+          "purposeEn": "Give someone a handmade gift.",
+          "purposeAr": "قدّم لشخص هدية مصنوعة يدويًا.",
+          "image": {
+            "id": "conv-life-l3-109-1",
+            "path": "assets/scenes/conversations/life-l3-109-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Give someone a handmade gift",
+            "ar": "قدّم لشخص هدية مصنوعة يدويًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                393,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "give someone a handmade gift",
+              "ar": "قدّم لشخص هدية مصنوعة يدويًا",
+              "kind": "phrase",
+              "x": 48,
+              "y": 67
+            },
+            {
+              "en": "wrapped gift",
+              "ar": "هدية مغلّفة",
+              "kind": "object",
+              "x": 55,
+              "y": 70
+            },
+            {
+              "en": "ribbon bow",
+              "ar": "عقدة شريط",
+              "kind": "object",
+              "x": 54,
+              "y": 53
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Notice the pattern around the edge",
+          "ar": "لاحظ النقش حول الحافة",
+          "purposeEn": "Notice the pattern around the edge.",
+          "purposeAr": "لاحظ النقش حول الحافة.",
+          "image": {
+            "id": "conv-life-l3-109-2",
+            "path": "assets/scenes/conversations/life-l3-109-2.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Notice the pattern around the edge",
+            "ar": "لاحظ النقش حول الحافة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                3,
+                790,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "notice the pattern around the edge",
+              "ar": "لاحظ النقش حول الحافة",
+              "kind": "phrase",
+              "x": 52,
+              "y": 42
+            },
+            {
+              "en": "carved pattern",
+              "ar": "نقش محفور",
+              "kind": "object",
+              "x": 67,
+              "y": 42
+            },
+            {
+              "en": "frame edge",
+              "ar": "حافة الإطار",
+              "kind": "object",
+              "x": 79,
+              "y": 48
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Find the maker in the workshop",
+          "ar": "اعثر على الصانع في الورشة",
+          "purposeEn": "Find the maker in the workshop.",
+          "purposeAr": "اعثر على الصانع في الورشة.",
+          "image": {
+            "id": "conv-life-l3-109-3",
+            "path": "assets/scenes/conversations/life-l3-109-3.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Find the maker in the workshop",
+            "ar": "اعثر على الصانع في الورشة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                3,
+                1186,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "find the maker in the workshop",
+              "ar": "اعثر على الصانع في الورشة",
+              "kind": "phrase",
+              "x": 68,
+              "y": 60
+            },
+            {
+              "en": "workshop doorway",
+              "ar": "مدخل الورشة",
+              "kind": "object",
+              "x": 67,
+              "y": 47
+            },
+            {
+              "en": "workbench",
+              "ar": "منضدة عمل",
+              "kind": "object",
+              "x": 91,
+              "y": 79
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Thank someone in person",
+          "ar": "اشكر شخصًا وجهًا لوجه",
+          "purposeEn": "Thank someone in person.",
+          "purposeAr": "اشكر شخصًا وجهًا لوجه.",
+          "image": {
+            "id": "conv-life-l3-109-4",
+            "path": "assets/scenes/conversations/life-l3-109-4.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Thank someone in person",
+            "ar": "اشكر شخصًا وجهًا لوجه",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                3,
+                1583,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "thank someone in person",
+              "ar": "اشكر شخصًا وجهًا لوجه",
+              "kind": "phrase",
+              "x": 35,
+              "y": 48
+            },
+            {
+              "en": "wooden frame",
+              "ar": "إطار خشبي",
+              "kind": "object",
+              "x": 68,
+              "y": 89
+            },
+            {
+              "en": "hand plane",
+              "ar": "فأرة نجارة",
+              "kind": "object",
+              "x": 20,
+              "y": 85
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-110",
+      "goalAr": "الاتفاق على استخدام مساحة مشتركة",
+      "goalEn": "Making peace over a shared space",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Bring up the boxes in the shared hallway",
+          "ar": "اطرح موضوع الصناديق في الممر المشترك",
+          "purposeEn": "Bring up the boxes in the shared hallway.",
+          "purposeAr": "اطرح موضوع الصناديق في الممر المشترك.",
+          "image": {
+            "id": "conv-life-l3-110-1",
+            "path": "assets/scenes/conversations/life-l3-110-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Bring up the boxes in the shared hallway",
+            "ar": "اطرح موضوع الصناديق في الممر المشترك",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                251,
+                393,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bring up the boxes in the shared hallway",
+              "ar": "اطرح موضوع الصناديق في الممر المشترك",
+              "kind": "phrase",
+              "x": 47,
+              "y": 60
+            },
+            {
+              "en": "cardboard boxes",
+              "ar": "صناديق كرتونية",
+              "kind": "object",
+              "x": 46,
+              "y": 68
+            },
+            {
+              "en": "rolled rug",
+              "ar": "سجادة ملفوفة",
+              "kind": "object",
+              "x": 65,
+              "y": 57
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Keep the hallway safe to walk through",
+          "ar": "اترك الممر آمنًا للعبور",
+          "purposeEn": "Keep the hallway safe to walk through.",
+          "purposeAr": "اترك الممر آمنًا للعبور.",
+          "image": {
+            "id": "conv-life-l3-110-2",
+            "path": "assets/scenes/conversations/life-l3-110-2.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Keep the hallway safe to walk through",
+            "ar": "اترك الممر آمنًا للعبور",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                251,
+                790,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "keep the hallway safe to walk through",
+              "ar": "اترك الممر آمنًا للعبور",
+              "kind": "phrase",
+              "x": 50,
+              "y": 53
+            },
+            {
+              "en": "stack of boxes",
+              "ar": "رزمة صناديق",
+              "kind": "object",
+              "x": 56,
+              "y": 64
+            },
+            {
+              "en": "narrow passage",
+              "ar": "ممر ضيّق",
+              "kind": "object",
+              "x": 44,
+              "y": 73
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Move the boxes into your flat",
+          "ar": "انقل الصناديق إلى شقتك",
+          "purposeEn": "Move the boxes into your flat.",
+          "purposeAr": "انقل الصناديق إلى شقتك.",
+          "image": {
+            "id": "conv-life-l3-110-3",
+            "path": "assets/scenes/conversations/life-l3-110-3.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Move the boxes into your flat",
+            "ar": "انقل الصناديق إلى شقتك",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                251,
+                1186,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "move the boxes into your flat",
+              "ar": "انقل الصناديق إلى شقتك",
+              "kind": "phrase",
+              "x": 55,
+              "y": 73
+            },
+            {
+              "en": "large box",
+              "ar": "صندوق كبير",
+              "kind": "object",
+              "x": 48,
+              "y": 67
+            },
+            {
+              "en": "open doorway",
+              "ar": "مدخل مفتوح",
+              "kind": "object",
+              "x": 79,
+              "y": 59
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Help someone lift a heavy box",
+          "ar": "ساعد شخصًا على رفع صندوق ثقيل",
+          "purposeEn": "Help someone lift a heavy box.",
+          "purposeAr": "ساعد شخصًا على رفع صندوق ثقيل.",
+          "image": {
+            "id": "conv-life-l3-110-4",
+            "path": "assets/scenes/conversations/life-l3-110-4.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Help someone lift a heavy box",
+            "ar": "ساعد شخصًا على رفع صندوق ثقيل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                251,
+                1583,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "help someone lift a heavy box",
+              "ar": "ساعد شخصًا على رفع صندوق ثقيل",
+              "kind": "phrase",
+              "x": 56,
+              "y": 77
+            },
+            {
+              "en": "heavy box",
+              "ar": "صندوق ثقيل",
+              "kind": "object",
+              "x": 51,
+              "y": 75
+            },
+            {
+              "en": "smiling",
+              "ar": "مبتسم",
+              "kind": "description",
+              "x": 70,
+              "y": 28
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-111",
+      "goalAr": "اختيار موعد للقاء في المحطة",
+      "goalEn": "Choosing a time to meet at the station",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Agree on a meeting time",
+          "ar": "اتفق على وقت اللقاء",
+          "purposeEn": "Agree on a meeting time.",
+          "purposeAr": "اتفق على وقت اللقاء.",
+          "image": {
+            "id": "conv-life-l3-111-1",
+            "path": "assets/scenes/conversations/life-l3-111-1.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Agree on a meeting time",
+            "ar": "اتفق على وقت اللقاء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                499,
+                393,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "agree on a meeting time",
+              "ar": "اتفق على وقت اللقاء",
+              "kind": "phrase",
+              "x": 69,
+              "y": 42
+            },
+            {
+              "en": "wall clock",
+              "ar": "ساعة حائط",
+              "kind": "object",
+              "x": 80,
+              "y": 34
+            },
+            {
+              "en": "smartphone",
+              "ar": "هاتف ذكي",
+              "kind": "object",
+              "x": 64,
+              "y": 75
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Meet by the ticket machines",
+          "ar": "التقِ قرب آلات التذاكر",
+          "purposeEn": "Meet by the ticket machines.",
+          "purposeAr": "التقِ قرب آلات التذاكر.",
+          "image": {
+            "id": "conv-life-l3-111-2",
+            "path": "assets/scenes/conversations/life-l3-111-2.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Meet by the ticket machines",
+            "ar": "التقِ قرب آلات التذاكر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                499,
+                790,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "meet by the ticket machines",
+              "ar": "التقِ قرب آلات التذاكر",
+              "kind": "phrase",
+              "x": 57,
+              "y": 55
+            },
+            {
+              "en": "ticket machine",
+              "ar": "آلة تذاكر",
+              "kind": "object",
+              "x": 40,
+              "y": 48
+            },
+            {
+              "en": "train symbol",
+              "ar": "رمز قطار",
+              "kind": "object",
+              "x": 66,
+              "y": 21
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Head toward the station entrance",
+          "ar": "توجّه إلى مدخل المحطة",
+          "purposeEn": "Head toward the station entrance.",
+          "purposeAr": "توجّه إلى مدخل المحطة.",
+          "image": {
+            "id": "conv-life-l3-111-3",
+            "path": "assets/scenes/conversations/life-l3-111-3.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Head toward the station entrance",
+            "ar": "توجّه إلى مدخل المحطة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                499,
+                1186,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "head toward the station entrance",
+              "ar": "توجّه إلى مدخل المحطة",
+              "kind": "phrase",
+              "x": 67,
+              "y": 41
+            },
+            {
+              "en": "station entrance",
+              "ar": "مدخل المحطة",
+              "kind": "object",
+              "x": 78,
+              "y": 53
+            },
+            {
+              "en": "backpack",
+              "ar": "حقيبة ظهر",
+              "kind": "object",
+              "x": 12,
+              "y": 66
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Text me when you are near the entrance",
+          "ar": "راسلني عندما تقترب من المدخل",
+          "purposeEn": "Text me when you are near the entrance.",
+          "purposeAr": "راسلني عندما تقترب من المدخل.",
+          "image": {
+            "id": "conv-life-l3-111-4",
+            "path": "assets/scenes/conversations/life-l3-111-4.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Text me when you are near the entrance",
+            "ar": "راسلني عندما تقترب من المدخل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                499,
+                1583,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "text me when you are near the entrance",
+              "ar": "راسلني عندما تقترب من المدخل",
+              "kind": "phrase",
+              "x": 50,
+              "y": 76
+            },
+            {
+              "en": "mobile phone",
+              "ar": "هاتف محمول",
+              "kind": "object",
+              "x": 56,
+              "y": 72
+            },
+            {
+              "en": "station sign",
+              "ar": "لافتة المحطة",
+              "kind": "object",
+              "x": 74,
+              "y": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-112",
+      "goalAr": "شرح سبب الوصول متأخرًا",
+      "goalEn": "Explaining why you arrived late",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Ask if you are late",
+          "ar": "اسأل إن كنت قد تأخرت",
+          "purposeEn": "Ask if you are late.",
+          "purposeAr": "اسأل إن كنت قد تأخرت.",
+          "image": {
+            "id": "conv-life-l3-112-1",
+            "path": "assets/scenes/conversations/life-l3-112-1.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Ask if you are late",
+            "ar": "اسأل إن كنت قد تأخرت",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                746,
+                393,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask if you are late",
+              "ar": "اسأل إن كنت قد تأخرت",
+              "kind": "phrase",
+              "x": 46,
+              "y": 57
+            },
+            {
+              "en": "station clock",
+              "ar": "ساعة المحطة",
+              "kind": "object",
+              "x": 58,
+              "y": 18
+            },
+            {
+              "en": "backpack strap",
+              "ar": "حزام حقيبة ظهر",
+              "kind": "object",
+              "x": 15,
+              "y": 63
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Explain why you took a longer route",
+          "ar": "اشرح لماذا سلكت طريقًا أطول",
+          "purposeEn": "Explain why you took a longer route.",
+          "purposeAr": "اشرح لماذا سلكت طريقًا أطول.",
+          "image": {
+            "id": "conv-life-l3-112-2",
+            "path": "assets/scenes/conversations/life-l3-112-2.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Explain why you took a longer route",
+            "ar": "اشرح لماذا سلكت طريقًا أطول",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                746,
+                790,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "explain why you took a longer route",
+              "ar": "اشرح لماذا سلكت طريقًا أطول",
+              "kind": "phrase",
+              "x": 60,
+              "y": 77
+            },
+            {
+              "en": "road map",
+              "ar": "خريطة طرق",
+              "kind": "object",
+              "x": 43,
+              "y": 78
+            },
+            {
+              "en": "road closure symbol",
+              "ar": "رمز إغلاق الطريق",
+              "kind": "object",
+              "x": 63,
+              "y": 69
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Check whether the same tickets are valid",
+          "ar": "تحقّق من صلاحية التذاكر نفسها",
+          "purposeEn": "Check whether the same tickets are valid.",
+          "purposeAr": "تحقّق من صلاحية التذاكر نفسها.",
+          "image": {
+            "id": "conv-life-l3-112-3",
+            "path": "assets/scenes/conversations/life-l3-112-3.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Check whether the same tickets are valid",
+            "ar": "تحقّق من صلاحية التذاكر نفسها",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                796,
+                746,
+                1186,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "check whether the same tickets are valid",
+              "ar": "تحقّق من صلاحية التذاكر نفسها",
+              "kind": "phrase",
+              "x": 55,
+              "y": 66
+            },
+            {
+              "en": "train ticket",
+              "ar": "تذكرة قطار",
+              "kind": "object",
+              "x": 43,
+              "y": 72
+            },
+            {
+              "en": "departure board",
+              "ar": "لوحة المغادرة",
+              "kind": "object",
+              "x": 56,
+              "y": 20
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Go straight to the platform",
+          "ar": "اذهب مباشرةً إلى الرصيف",
+          "purposeEn": "Go straight to the platform.",
+          "purposeAr": "اذهب مباشرةً إلى الرصيف.",
+          "image": {
+            "id": "conv-life-l3-112-4",
+            "path": "assets/scenes/conversations/life-l3-112-4.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Go straight to the platform",
+            "ar": "اذهب مباشرةً إلى الرصيف",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                746,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "go straight to the platform",
+              "ar": "اذهب مباشرةً إلى الرصيف",
+              "kind": "phrase",
+              "x": 61,
+              "y": 56
+            },
+            {
+              "en": "train carriage",
+              "ar": "عربة قطار",
+              "kind": "object",
+              "x": 82,
+              "y": 56
+            },
+            {
+              "en": "ticket",
+              "ar": "تذكرة",
+              "kind": "object",
+              "x": 42,
+              "y": 70
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
