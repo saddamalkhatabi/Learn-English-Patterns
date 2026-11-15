@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "4907b59aa290b52f7143c9955b5ecbcc563e3bacb1b46ee85aaea39897b906f5"
+  },
+  "conversations": [
+    {
+      "id": "l3-097",
+      "goalAr": "الاتفاق على خطة في حال هطول المطر",
+      "goalEn": "Agreeing on a plan if it rains",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Check whether rain is likely",
+          "ar": "تحقّق من احتمال هطول المطر",
+          "purposeEn": "Check whether rain is likely.",
+          "purposeAr": "تحقّق من احتمال هطول المطر.",
+          "image": {
+            "id": "conv-life-l3-097-1",
+            "path": "assets/scenes/conversations/life-l3-097-1.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Check whether rain is likely",
+            "ar": "تحقّق من احتمال هطول المطر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                393,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "check whether rain is likely",
+              "ar": "تحقّق من احتمال هطول المطر",
+              "kind": "phrase",
+              "x": 44,
+              "y": 43
+            },
+            {
+              "en": "rain icon",
+              "ar": "رمز المطر",
+              "kind": "object",
+              "x": 49,
+              "y": 44
+            },
+            {
+              "en": "seating plan",
+              "ar": "مخطط أماكن الجلوس",
+              "kind": "object",
+              "x": 53,
+              "y": 79
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Move the meeting indoors",
+          "ar": "انقل الاجتماع إلى الداخل",
+          "purposeEn": "Move the meeting indoors.",
+          "purposeAr": "انقل الاجتماع إلى الداخل.",
+          "image": {
+            "id": "conv-life-l3-097-2",
+            "path": "assets/scenes/conversations/life-l3-097-2.webp",
+            "width": 392,
+            "height": 241,
+            "en": "Move the meeting indoors",
+            "ar": "انقل الاجتماع إلى الداخل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                3,
+                791,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "move the meeting indoors",
+              "ar": "انقل الاجتماع إلى الداخل",
+              "kind": "phrase",
+              "x": 64,
+              "y": 42
+            },
+            {
+              "en": "indoor table",
+              "ar": "طاولة داخلية",
+              "kind": "object",
+              "x": 86,
+              "y": 64
+            },
+            {
+              "en": "outdoor patio",
+              "ar": "فناء خارجي",
+              "kind": "object",
+              "x": 11,
+              "y": 64
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Decide on the new location before noon",
+          "ar": "حدّد المكان الجديد قبل الظهر",
+          "purposeEn": "Decide on the new location before noon.",
+          "purposeAr": "حدّد المكان الجديد قبل الظهر.",
+          "image": {
+            "id": "conv-life-l3-097-3",
+            "path": "assets/scenes/conversations/life-l3-097-3.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Decide on the new location before noon",
+            "ar": "حدّد المكان الجديد قبل الظهر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                3,
+                1188,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "decide on the new location before noon",
+              "ar": "حدّد المكان الجديد قبل الظهر",
+              "kind": "phrase",
+              "x": 44,
+              "y": 76
+            },
+            {
+              "en": "desk clock",
+              "ar": "ساعة مكتبية",
+              "kind": "object",
+              "x": 16,
+              "y": 77
+            },
+            {
+              "en": "map pin",
+              "ar": "علامة موقع على الخريطة",
+              "kind": "object",
+              "x": 70,
+              "y": 74
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Send an update after checking the forecast",
+          "ar": "أرسل تحديثًا بعد مراجعة التوقعات",
+          "purposeEn": "Send an update after checking the forecast.",
+          "purposeAr": "أرسل تحديثًا بعد مراجعة التوقعات.",
+          "image": {
+            "id": "conv-life-l3-097-4",
+            "path": "assets/scenes/conversations/life-l3-097-4.webp",
+            "width": 389,
+            "height": 241,
+            "en": "Send an update after checking the forecast",
+            "ar": "أرسل تحديثًا بعد مراجعة التوقعات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1194,
+                3,
+                1583,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "send an update after checking the forecast",
+              "ar": "أرسل تحديثًا بعد مراجعة التوقعات",
+              "kind": "phrase",
+              "x": 56,
+              "y": 65
+            },
+            {
+              "en": "weather update",
+              "ar": "تحديث الطقس",
+              "kind": "object",
+              "x": 57,
+              "y": 58
+            },
+            {
+              "en": "table clock",
+              "ar": "ساعة طاولة",
+              "kind": "object",
+              "x": 87,
+              "y": 80
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-098",
+      "goalAr": "عرض مشروب على صديق ينتظر",
+      "goalEn": "Offering a friend a drink while they wait",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Offer to buy someone a drink",
+          "ar": "اعرض أن تشتري لشخص مشروبًا",
+          "purposeEn": "Offer to buy someone a drink.",
+          "purposeAr": "اعرض أن تشتري لشخص مشروبًا.",
+          "image": {
+            "id": "conv-life-l3-098-1",
+            "path": "assets/scenes/conversations/life-l3-098-1.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Offer to buy someone a drink",
+            "ar": "اعرض أن تشتري لشخص مشروبًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                250,
+                393,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "offer to buy someone a drink",
+              "ar": "اعرض أن تشتري لشخص مشروبًا",
+              "kind": "phrase",
+              "x": 38,
+              "y": 63
+            },
+            {
+              "en": "backpack",
+              "ar": "حقيبة ظهر",
+              "kind": "object",
+              "x": 55,
+              "y": 83
+            },
+            {
+              "en": "bus terminal",
+              "ar": "محطة حافلات",
+              "kind": "object",
+              "x": 56,
+              "y": 25
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Choose between still and sparkling water",
+          "ar": "اختر بين الماء العادي والغازي",
+          "purposeEn": "Choose between still and sparkling water.",
+          "purposeAr": "اختر بين الماء العادي والغازي.",
+          "image": {
+            "id": "conv-life-l3-098-2",
+            "path": "assets/scenes/conversations/life-l3-098-2.webp",
+            "width": 392,
+            "height": 243,
+            "en": "Choose between still and sparkling water",
+            "ar": "اختر بين الماء العادي والغازي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                250,
+                791,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "choose between still and sparkling water",
+              "ar": "اختر بين الماء العادي والغازي",
+              "kind": "phrase",
+              "x": 47,
+              "y": 65
+            },
+            {
+              "en": "still water",
+              "ar": "ماء غير غازي",
+              "kind": "object",
+              "x": 41,
+              "y": 72
+            },
+            {
+              "en": "sparkling water",
+              "ar": "ماء غازي",
+              "kind": "object",
+              "x": 65,
+              "y": 72
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Wait here with the bags",
+          "ar": "انتظر هنا مع الحقائب",
+          "purposeEn": "Wait here with the bags.",
+          "purposeAr": "انتظر هنا مع الحقائب.",
+          "image": {
+            "id": "conv-life-l3-098-3",
+            "path": "assets/scenes/conversations/life-l3-098-3.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Wait here with the bags",
+            "ar": "انتظر هنا مع الحقائب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                250,
+                1188,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "wait here with the bags",
+              "ar": "انتظر هنا مع الحقائب",
+              "kind": "phrase",
+              "x": 48,
+              "y": 80
+            },
+            {
+              "en": "travel bag",
+              "ar": "حقيبة سفر",
+              "kind": "object",
+              "x": 65,
+              "y": 82
+            },
+            {
+              "en": "station bench",
+              "ar": "مقعد المحطة",
+              "kind": "object",
+              "x": 91,
+              "y": 80
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Bring the drink back to the bench",
+          "ar": "أحضر المشروب إلى المقعد",
+          "purposeEn": "Bring the drink back to the bench.",
+          "purposeAr": "أحضر المشروب إلى المقعد.",
+          "image": {
+            "id": "conv-life-l3-098-4",
+            "path": "assets/scenes/conversations/life-l3-098-4.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Bring the drink back to the bench",
+            "ar": "أحضر المشروب إلى المقعد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1194,
+                250,
+                1583,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bring the drink back to the bench",
+              "ar": "أحضر المشروب إلى المقعد",
+              "kind": "phrase",
+              "x": 65,
+              "y": 66
+            },
+            {
+              "en": "water bottle",
+              "ar": "زجاجة ماء",
+              "kind": "object",
+              "x": 64,
+              "y": 66
+            },
+            {
+              "en": "station clock",
+              "ar": "ساعة المحطة",
+              "kind": "object",
+              "x": 57,
+              "y": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-099",
+      "goalAr": "طلب الاتجاهات في مكان غير مألوف",
+      "goalEn": "Asking for directions in an unfamiliar place",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Ask where you are",
+          "ar": "اسأل عن اسم المكان الذي أنت فيه",
+          "purposeEn": "Ask where you are.",
+          "purposeAr": "اسأل عن اسم المكان الذي أنت فيه.",
+          "image": {
+            "id": "conv-life-l3-099-1",
+            "path": "assets/scenes/conversations/life-l3-099-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Ask where you are",
+            "ar": "اسأل عن اسم المكان الذي أنت فيه",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                499,
+                393,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask where you are",
+              "ar": "اسأل عن اسم المكان الذي أنت فيه",
+              "kind": "phrase",
+              "x": 46,
+              "y": 57
+            },
+            {
+              "en": "street map",
+              "ar": "خريطة شوارع",
+              "kind": "object",
+              "x": 43,
+              "y": 74
+            },
+            {
+              "en": "public square",
+              "ar": "ساحة عامة",
+              "kind": "object",
+              "x": 61,
+              "y": 34
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Ask for the nearest bus stop",
+          "ar": "اسأل عن أقرب موقف للحافلات",
+          "purposeEn": "Ask for the nearest bus stop.",
+          "purposeAr": "اسأل عن أقرب موقف للحافلات.",
+          "image": {
+            "id": "conv-life-l3-099-2",
+            "path": "assets/scenes/conversations/life-l3-099-2.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Ask for the nearest bus stop",
+            "ar": "اسأل عن أقرب موقف للحافلات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                499,
+                791,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask for the nearest bus stop",
+              "ar": "اسأل عن أقرب موقف للحافلات",
+              "kind": "phrase",
+              "x": 71,
+              "y": 31
+            },
+            {
+              "en": "bus stop sign",
+              "ar": "لافتة موقف الحافلات",
+              "kind": "object",
+              "x": 87,
+              "y": 51
+            },
+            {
+              "en": "market sign",
+              "ar": "لافتة السوق",
+              "kind": "object",
+              "x": 86,
+              "y": 22
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Go past the flower stall",
+          "ar": "تجاوز بسطة الزهور",
+          "purposeEn": "Go past the flower stall.",
+          "purposeAr": "تجاوز بسطة الزهور.",
+          "image": {
+            "id": "conv-life-l3-099-3",
+            "path": "assets/scenes/conversations/life-l3-099-3.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Go past the flower stall",
+            "ar": "تجاوز بسطة الزهور",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                499,
+                1188,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "go past the flower stall",
+              "ar": "تجاوز بسطة الزهور",
+              "kind": "phrase",
+              "x": 67,
+              "y": 59
+            },
+            {
+              "en": "flower stall",
+              "ar": "بسطة زهور",
+              "kind": "object",
+              "x": 83,
+              "y": 47
+            },
+            {
+              "en": "metal bucket",
+              "ar": "دلو معدني",
+              "kind": "object",
+              "x": 86,
+              "y": 87
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Find a café next to the stop",
+          "ar": "اعثر على مقهى بجوار الموقف",
+          "purposeEn": "Find a café next to the stop.",
+          "purposeAr": "اعثر على مقهى بجوار الموقف.",
+          "image": {
+            "id": "conv-life-l3-099-4",
+            "path": "assets/scenes/conversations/life-l3-099-4.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Find a café next to the stop",
+            "ar": "اعثر على مقهى بجوار الموقف",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1194,
+                499,
+                1583,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "find a café next to the stop",
+              "ar": "اعثر على مقهى بجوار الموقف",
+              "kind": "phrase",
+              "x": 71,
+              "y": 35
+            },
+            {
+              "en": "café sign",
+              "ar": "لافتة مقهى",
+              "kind": "object",
+              "x": 87,
+              "y": 17
+            },
+            {
+              "en": "bus shelter",
+              "ar": "مظلّة موقف الحافلات",
+              "kind": "object",
+              "x": 6,
+              "y": 24
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-100",
+      "goalAr": "وضع خطة مشتركة لممارسة التحدث",
+      "goalEn": "Building a plan to practise speaking together",
+      "stages": [
+        {
+          "from": 1,
+          "to": 2,
+          "en": "Choose a situation to practise",
+          "ar": "اختر موقفًا للتدرّب عليه",
+          "purposeEn": "Choose a situation to practise.",
+          "purposeAr": "اختر موقفًا للتدرّب عليه.",
+          "image": {
+            "id": "conv-life-l3-100-1",
+            "path": "assets/scenes/conversations/life-l3-100-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Choose a situation to practise",
+            "ar": "اختر موقفًا للتدرّب عليه",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                747,
+                393,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "choose a situation to practise",
+              "ar": "اختر موقفًا للتدرّب عليه",
+              "kind": "phrase",
+              "x": 47,
+              "y": 63
+            },
+            {
+              "en": "customer role card",
+              "ar": "بطاقة دور الزبون",
+              "kind": "object",
+              "x": 38,
+              "y": 65
+            },
+            {
+              "en": "cashier role card",
+              "ar": "بطاقة دور أمين الصندوق",
+              "kind": "object",
+              "x": 75,
+              "y": 62
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "en": "Explain what went wrong",
+          "ar": "اشرح ما حدث من خطأ",
+          "purposeEn": "Explain what went wrong.",
+          "purposeAr": "اشرح ما حدث من خطأ.",
+          "image": {
+            "id": "conv-life-l3-100-2",
+            "path": "assets/scenes/conversations/life-l3-100-2.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Explain what went wrong",
+            "ar": "اشرح ما حدث من خطأ",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                747,
+                791,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "explain what went wrong",
+              "ar": "اشرح ما حدث من خطأ",
+              "kind": "phrase",
+              "x": 43,
+              "y": 67
+            },
+            {
+              "en": "dented container",
+              "ar": "علبة منبعجة",
+              "kind": "object",
+              "x": 44,
+              "y": 73
+            },
+            {
+              "en": "paper shopping bag",
+              "ar": "كيس تسوّق ورقي",
+              "kind": "object",
+              "x": 12,
+              "y": 82
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 7,
+          "en": "Ask what your options are",
+          "ar": "اسأل عن الخيارات المتاحة",
+          "purposeEn": "Ask what your options are.",
+          "purposeAr": "اسأل عن الخيارات المتاحة.",
+          "image": {
+            "id": "conv-life-l3-100-3",
+            "path": "assets/scenes/conversations/life-l3-100-3.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Ask what your options are",
+            "ar": "اسأل عن الخيارات المتاحة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                747,
+                1188,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask what your options are",
+              "ar": "اسأل عن الخيارات المتاحة",
+              "kind": "phrase",
+              "x": 53,
+              "y": 70
+            },
+            {
+              "en": "blue lid",
+              "ar": "غطاء أزرق",
+              "kind": "object",
+              "x": 49,
+              "y": 83
+            },
+            {
+              "en": "green lid",
+              "ar": "غطاء أخضر",
+              "kind": "object",
+              "x": 73,
+              "y": 82
+            }
+          ]
+        },
+        {
+          "from": 8,
+          "to": 8,
+          "en": "Try the conversation again more slowly",
+          "ar": "أعد المحادثة ببطء أكثر",
+          "purposeEn": "Try the conversation again more slowly.",
+          "purposeAr": "أعد المحادثة ببطء أكثر.",
+          "image": {
+            "id": "conv-life-l3-100-4",
+            "path": "assets/scenes/conversations/life-l3-100-4.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Try the conversation again more slowly",
+            "ar": "أعد المحادثة ببطء أكثر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1194,
+                747,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "try the conversation again more slowly",
+              "ar": "أعد المحادثة ببطء أكثر",
+              "kind": "phrase",
+              "x": 35,
+              "y": 66
+            },
+            {
+              "en": "replacement container",
+              "ar": "علبة بديلة",
+              "kind": "object",
+              "x": 46,
+              "y": 88
+            },
+            {
+              "en": "green lid",
+              "ar": "غطاء أخضر",
+              "kind": "object",
+              "x": 85,
+              "y": 85
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

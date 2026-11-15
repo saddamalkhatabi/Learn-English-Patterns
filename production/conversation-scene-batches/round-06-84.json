@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "f7c4ea924cf9dddcf3f246bf34fb15bdd6cfb4f5e17c4b93c6e4361c75970976"
+  },
+  "conversations": [
+    {
+      "id": "l3-105",
+      "goalAr": "التحقّق من رواية قبل نقلها",
+      "goalEn": "Checking a story before retelling it",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Check a story you heard",
+          "ar": "تحقّق من قصة سمعتها",
+          "purposeEn": "Check a story you heard.",
+          "purposeAr": "تحقّق من قصة سمعتها.",
+          "image": {
+            "id": "conv-life-l3-105-1",
+            "path": "assets/scenes/conversations/life-l3-105-1.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Check a story you heard",
+            "ar": "تحقّق من قصة سمعتها",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                392,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "check a story you heard",
+              "ar": "تحقّق من قصة سمعتها",
+              "kind": "phrase",
+              "x": 40,
+              "y": 58
+            },
+            {
+              "en": "lost notebook",
+              "ar": "دفتر مفقود",
+              "kind": "object",
+              "x": 43,
+              "y": 53
+            },
+            {
+              "en": "station bench",
+              "ar": "مقعد المحطة",
+              "kind": "object",
+              "x": 21,
+              "y": 75
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Ask if the person is sure",
+          "ar": "اسأل الشخص إن كان متأكّدًا",
+          "purposeEn": "Ask if the person is sure.",
+          "purposeAr": "اسأل الشخص إن كان متأكّدًا.",
+          "image": {
+            "id": "conv-life-l3-105-2",
+            "path": "assets/scenes/conversations/life-l3-105-2.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Ask if the person is sure",
+            "ar": "اسأل الشخص إن كان متأكّدًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                398,
+                3,
+                789,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask if the person is sure",
+              "ar": "اسأل الشخص إن كان متأكّدًا",
+              "kind": "phrase",
+              "x": 49,
+              "y": 66
+            },
+            {
+              "en": "doubtful",
+              "ar": "متشكّك",
+              "kind": "description",
+              "x": 74,
+              "y": 38
+            },
+            {
+              "en": "bus",
+              "ar": "حافلة",
+              "kind": "object",
+              "x": 54,
+              "y": 32
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Ask the owner before retelling it",
+          "ar": "اسأل صاحب الدفتر قبل إعادة رواية القصة",
+          "purposeEn": "Ask the owner before retelling it.",
+          "purposeAr": "اسأل صاحب الدفتر قبل إعادة رواية القصة.",
+          "image": {
+            "id": "conv-life-l3-105-3",
+            "path": "assets/scenes/conversations/life-l3-105-3.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Ask the owner before retelling it",
+            "ar": "اسأل صاحب الدفتر قبل إعادة رواية القصة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                3,
+                1185,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask the owner before retelling it",
+              "ar": "اسأل صاحب الدفتر قبل إعادة رواية القصة",
+              "kind": "phrase",
+              "x": 57,
+              "y": 68
+            },
+            {
+              "en": "notebook cover",
+              "ar": "غلاف الدفتر",
+              "kind": "object",
+              "x": 53,
+              "y": 62
+            },
+            {
+              "en": "hand something back",
+              "ar": "يعيد شيئًا إلى صاحبه",
+              "kind": "action",
+              "x": 58,
+              "y": 72
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Make sure you have the right story",
+          "ar": "تأكّد من صحة القصة",
+          "purposeEn": "Make sure you have the right story.",
+          "purposeAr": "تأكّد من صحة القصة.",
+          "image": {
+            "id": "conv-life-l3-105-4",
+            "path": "assets/scenes/conversations/life-l3-105-4.webp",
+            "width": 392,
+            "height": 243,
+            "en": "Make sure you have the right story",
+            "ar": "تأكّد من صحة القصة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1191,
+                3,
+                1583,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "make sure you have the right story",
+              "ar": "تأكّد من صحة القصة",
+              "kind": "phrase",
+              "x": 76,
+              "y": 54
+            },
+            {
+              "en": "recovered notebook",
+              "ar": "دفتر تم العثور عليه",
+              "kind": "object",
+              "x": 80,
+              "y": 68
+            },
+            {
+              "en": "relieved",
+              "ar": "مرتاح",
+              "kind": "description",
+              "x": 77,
+              "y": 31
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-106",
+      "goalAr": "الحديث عن مزحة لم تُفهم",
+      "goalEn": "Telling a joke that fell flat",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Explain that it was a joke",
+          "ar": "وضّح أنها كانت مزحة",
+          "purposeEn": "Explain that it was a joke.",
+          "purposeAr": "وضّح أنها كانت مزحة.",
+          "image": {
+            "id": "conv-life-l3-106-1",
+            "path": "assets/scenes/conversations/life-l3-106-1.webp",
+            "width": 389,
+            "height": 240,
+            "en": "Explain that it was a joke",
+            "ar": "وضّح أنها كانت مزحة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                252,
+                392,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "explain that it was a joke",
+              "ar": "وضّح أنها كانت مزحة",
+              "kind": "phrase",
+              "x": 39,
+              "y": 44
+            },
+            {
+              "en": "picnic basket",
+              "ar": "سلّة نزهة",
+              "kind": "object",
+              "x": 59,
+              "y": 78
+            },
+            {
+              "en": "thermos",
+              "ar": "حافظة حرارية",
+              "kind": "object",
+              "x": 35,
+              "y": 78
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Discuss what happens if it rains",
+          "ar": "ناقش ما ستفعلونه إن أمطرت",
+          "purposeEn": "Discuss what happens if it rains.",
+          "purposeAr": "ناقش ما ستفعلونه إن أمطرت.",
+          "image": {
+            "id": "conv-life-l3-106-2",
+            "path": "assets/scenes/conversations/life-l3-106-2.webp",
+            "width": 391,
+            "height": 240,
+            "en": "Discuss what happens if it rains",
+            "ar": "ناقش ما ستفعلونه إن أمطرت",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                398,
+                252,
+                789,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "discuss what happens if it rains",
+              "ar": "ناقش ما ستفعلونه إن أمطرت",
+              "kind": "phrase",
+              "x": 46,
+              "y": 33
+            },
+            {
+              "en": "dark clouds",
+              "ar": "غيوم داكنة",
+              "kind": "object",
+              "x": 58,
+              "y": 17
+            },
+            {
+              "en": "wicker basket",
+              "ar": "سلّة خوص",
+              "kind": "object",
+              "x": 59,
+              "y": 88
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Agree on a backup place",
+          "ar": "اتفقا على مكان بديل",
+          "purposeEn": "Agree on a backup place.",
+          "purposeAr": "اتفقا على مكان بديل.",
+          "image": {
+            "id": "conv-life-l3-106-3",
+            "path": "assets/scenes/conversations/life-l3-106-3.webp",
+            "width": 390,
+            "height": 240,
+            "en": "Agree on a backup place",
+            "ar": "اتفقا على مكان بديل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                252,
+                1185,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "agree on a backup place",
+              "ar": "اتفقا على مكان بديل",
+              "kind": "phrase",
+              "x": 68,
+              "y": 40
+            },
+            {
+              "en": "picnic shelter",
+              "ar": "مظلّة نزهة",
+              "kind": "object",
+              "x": 83,
+              "y": 27
+            },
+            {
+              "en": "thermos",
+              "ar": "حافظة حرارية",
+              "kind": "object",
+              "x": 33,
+              "y": 84
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Check if you can reserve a covered table",
+          "ar": "تحقّق من إمكانية حجز طاولة تحت المظلّة",
+          "purposeEn": "Check if you can reserve a covered table.",
+          "purposeAr": "تحقّق من إمكانية حجز طاولة تحت المظلّة.",
+          "image": {
+            "id": "conv-life-l3-106-4",
+            "path": "assets/scenes/conversations/life-l3-106-4.webp",
+            "width": 392,
+            "height": 240,
+            "en": "Check if you can reserve a covered table",
+            "ar": "تحقّق من إمكانية حجز طاولة تحت المظلّة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1191,
+                252,
+                1583,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "check if you can reserve a covered table",
+              "ar": "تحقّق من إمكانية حجز طاولة تحت المظلّة",
+              "kind": "phrase",
+              "x": 42,
+              "y": 57
+            },
+            {
+              "en": "picnic table",
+              "ar": "طاولة نزهة",
+              "kind": "object",
+              "x": 84,
+              "y": 73
+            },
+            {
+              "en": "shelter roof",
+              "ar": "سقف المظلّة",
+              "kind": "object",
+              "x": 56,
+              "y": 14
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-107",
+      "goalAr": "عرض قضاء بعض الوقت مع جار",
+      "goalEn": "Offering company to a neighbor",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Say how it feels to be alone",
+          "ar": "صِف شعورك عندما تكون وحدك",
+          "purposeEn": "Say how it feels to be alone.",
+          "purposeAr": "صِف شعورك عندما تكون وحدك.",
+          "image": {
+            "id": "conv-life-l3-107-1",
+            "path": "assets/scenes/conversations/life-l3-107-1.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Say how it feels to be alone",
+            "ar": "صِف شعورك عندما تكون وحدك",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                498,
+                392,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "say how it feels to be alone",
+              "ar": "صِف شعورك عندما تكون وحدك",
+              "kind": "phrase",
+              "x": 34,
+              "y": 41
+            },
+            {
+              "en": "window",
+              "ar": "نافذة",
+              "kind": "object",
+              "x": 49,
+              "y": 33
+            },
+            {
+              "en": "lantern",
+              "ar": "فانوس",
+              "kind": "object",
+              "x": 74,
+              "y": 66
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Invite someone to sit in the courtyard",
+          "ar": "ادعُ شخصًا للجلوس في الفناء",
+          "purposeEn": "Invite someone to sit in the courtyard.",
+          "purposeAr": "ادعُ شخصًا للجلوس في الفناء.",
+          "image": {
+            "id": "conv-life-l3-107-2",
+            "path": "assets/scenes/conversations/life-l3-107-2.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Invite someone to sit in the courtyard",
+            "ar": "ادعُ شخصًا للجلوس في الفناء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                398,
+                498,
+                789,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "invite someone to sit in the courtyard",
+              "ar": "ادعُ شخصًا للجلوس في الفناء",
+              "kind": "phrase",
+              "x": 53,
+              "y": 53
+            },
+            {
+              "en": "courtyard table",
+              "ar": "طاولة الفناء",
+              "kind": "object",
+              "x": 74,
+              "y": 71
+            },
+            {
+              "en": "lantern",
+              "ar": "فانوس",
+              "kind": "object",
+              "x": 45,
+              "y": 68
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Bring a pot of tea to share",
+          "ar": "أحضر إبريق شاي للمشاركة",
+          "purposeEn": "Bring a pot of tea to share.",
+          "purposeAr": "أحضر إبريق شاي للمشاركة.",
+          "image": {
+            "id": "conv-life-l3-107-3",
+            "path": "assets/scenes/conversations/life-l3-107-3.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Bring a pot of tea to share",
+            "ar": "أحضر إبريق شاي للمشاركة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                498,
+                1185,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "bring a pot of tea to share",
+              "ar": "أحضر إبريق شاي للمشاركة",
+              "kind": "phrase",
+              "x": 54,
+              "y": 60
+            },
+            {
+              "en": "metal teapot",
+              "ar": "إبريق شاي معدني",
+              "kind": "object",
+              "x": 32,
+              "y": 57
+            },
+            {
+              "en": "tray of cups",
+              "ar": "صينية فناجين",
+              "kind": "object",
+              "x": 62,
+              "y": 58
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Thank someone for inviting you",
+          "ar": "اشكر شخصًا على دعوتك",
+          "purposeEn": "Thank someone for inviting you.",
+          "purposeAr": "اشكر شخصًا على دعوتك.",
+          "image": {
+            "id": "conv-life-l3-107-4",
+            "path": "assets/scenes/conversations/life-l3-107-4.webp",
+            "width": 392,
+            "height": 243,
+            "en": "Thank someone for inviting you",
+            "ar": "اشكر شخصًا على دعوتك",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1191,
+                498,
+                1583,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "thank someone for inviting you",
+              "ar": "اشكر شخصًا على دعوتك",
+              "kind": "phrase",
+              "x": 60,
+              "y": 64
+            },
+            {
+              "en": "teapot",
+              "ar": "إبريق شاي",
+              "kind": "object",
+              "x": 52,
+              "y": 79
+            },
+            {
+              "en": "plate of dates",
+              "ar": "طبق تمر",
+              "kind": "object",
+              "x": 67,
+              "y": 90
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-108",
+      "goalAr": "شرح كيف وصلتك الأخبار",
+      "goalEn": "Explaining how you heard the news",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Say how you heard the news",
+          "ar": "قل كيف سمعت الخبر",
+          "purposeEn": "Say how you heard the news.",
+          "purposeAr": "قل كيف سمعت الخبر.",
+          "image": {
+            "id": "conv-life-l3-108-1",
+            "path": "assets/scenes/conversations/life-l3-108-1.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Say how you heard the news",
+            "ar": "قل كيف سمعت الخبر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                747,
+                392,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "say how you heard the news",
+              "ar": "قل كيف سمعت الخبر",
+              "kind": "phrase",
+              "x": 35,
+              "y": 45
+            },
+            {
+              "en": "worried",
+              "ar": "قلق",
+              "kind": "description",
+              "x": 26,
+              "y": 27
+            },
+            {
+              "en": "closed folder",
+              "ar": "ملف مغلق",
+              "kind": "object",
+              "x": 53,
+              "y": 85
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Ask what happened after the meeting",
+          "ar": "اسأل ماذا حدث بعد الاجتماع",
+          "purposeEn": "Ask what happened after the meeting.",
+          "purposeAr": "اسأل ماذا حدث بعد الاجتماع.",
+          "image": {
+            "id": "conv-life-l3-108-2",
+            "path": "assets/scenes/conversations/life-l3-108-2.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Ask what happened after the meeting",
+            "ar": "اسأل ماذا حدث بعد الاجتماع",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                398,
+                747,
+                789,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask what happened after the meeting",
+              "ar": "اسأل ماذا حدث بعد الاجتماع",
+              "kind": "phrase",
+              "x": 40,
+              "y": 79
+            },
+            {
+              "en": "open folder",
+              "ar": "ملف مفتوح",
+              "kind": "object",
+              "x": 61,
+              "y": 89
+            },
+            {
+              "en": "pie chart",
+              "ar": "مخطط دائري",
+              "kind": "object",
+              "x": 35,
+              "y": 88
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Get another chance to explain",
+          "ar": "يحصل على فرصة أخرى للشرح",
+          "purposeEn": "Get another chance to explain.",
+          "purposeAr": "يحصل على فرصة أخرى للشرح.",
+          "image": {
+            "id": "conv-life-l3-108-3",
+            "path": "assets/scenes/conversations/life-l3-108-3.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Get another chance to explain",
+            "ar": "يحصل على فرصة أخرى للشرح",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                747,
+                1185,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "get another chance to explain",
+              "ar": "يحصل على فرصة أخرى للشرح",
+              "kind": "phrase",
+              "x": 67,
+              "y": 61
+            },
+            {
+              "en": "spiral notepad",
+              "ar": "دفتر ملاحظات حلزوني",
+              "kind": "object",
+              "x": 75,
+              "y": 66
+            },
+            {
+              "en": "open report",
+              "ar": "تقرير مفتوح",
+              "kind": "object",
+              "x": 48,
+              "y": 90
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Reassure someone that everything is okay",
+          "ar": "طمئن شخصًا إلى أن كل شيء بخير",
+          "purposeEn": "Reassure someone that everything is okay.",
+          "purposeAr": "طمئن شخصًا إلى أن كل شيء بخير.",
+          "image": {
+            "id": "conv-life-l3-108-4",
+            "path": "assets/scenes/conversations/life-l3-108-4.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Reassure someone that everything is okay",
+            "ar": "طمئن شخصًا إلى أن كل شيء بخير",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1191,
+                747,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "reassure someone that everything is okay",
+              "ar": "طمئن شخصًا إلى أن كل شيء بخير",
+              "kind": "phrase",
+              "x": 29,
+              "y": 58
+            },
+            {
+              "en": "give a thumbs-up",
+              "ar": "يرفع إبهامه إشارةً إلى الرضا",
+              "kind": "action",
+              "x": 31,
+              "y": 55
+            },
+            {
+              "en": "relieved",
+              "ar": "مرتاح",
+              "kind": "description",
+              "x": 75,
+              "y": 29
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

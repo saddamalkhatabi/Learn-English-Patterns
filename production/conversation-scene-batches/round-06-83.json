@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "0a778df7c6fcc5642bf7f41b881ab2400d0cc5e11b8073f4c80e674d2e3b40e0"
+  },
+  "conversations": [
+    {
+      "id": "l3-101",
+      "goalAr": "جعل الزيارة الأولى مريحة",
+      "goalEn": "Making a first visit feel relaxed",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Ask how much longer someone can stay",
+          "ar": "اسأل كم بقي من وقت الزيارة",
+          "purposeEn": "Ask how much longer someone can stay.",
+          "purposeAr": "اسأل كم بقي من وقت الزيارة.",
+          "image": {
+            "id": "conv-life-l3-101-1",
+            "path": "assets/scenes/conversations/life-l3-101-1.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Ask how much longer someone can stay",
+            "ar": "اسأل كم بقي من وقت الزيارة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                393,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask how much longer someone can stay",
+              "ar": "اسأل كم بقي من وقت الزيارة",
+              "kind": "phrase",
+              "x": 44,
+              "y": 49
+            },
+            {
+              "en": "wall clock",
+              "ar": "ساعة حائط",
+              "kind": "object",
+              "x": 64,
+              "y": 23
+            },
+            {
+              "en": "tote bag",
+              "ar": "حقيبة قماشية",
+              "kind": "object",
+              "x": 16,
+              "y": 78
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Leave the bag where you can see it",
+          "ar": "اترك الحقيبة حيث يمكنك رؤيتها",
+          "purposeEn": "Leave the bag where you can see it.",
+          "purposeAr": "اترك الحقيبة حيث يمكنك رؤيتها.",
+          "image": {
+            "id": "conv-life-l3-101-2",
+            "path": "assets/scenes/conversations/life-l3-101-2.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Leave the bag where you can see it",
+            "ar": "اترك الحقيبة حيث يمكنك رؤيتها",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                3,
+                789,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "leave the bag where you can see it",
+              "ar": "اترك الحقيبة حيث يمكنك رؤيتها",
+              "kind": "phrase",
+              "x": 47,
+              "y": 73
+            },
+            {
+              "en": "tote bag",
+              "ar": "حقيبة قماشية",
+              "kind": "object",
+              "x": 51,
+              "y": 73
+            },
+            {
+              "en": "entryway bench",
+              "ar": "مقعد المدخل",
+              "kind": "object",
+              "x": 50,
+              "y": 92
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Decide where to start the tour",
+          "ar": "حدّد من أين تبدأ الجولة",
+          "purposeEn": "Decide where to start the tour.",
+          "purposeAr": "حدّد من أين تبدأ الجولة.",
+          "image": {
+            "id": "conv-life-l3-101-3",
+            "path": "assets/scenes/conversations/life-l3-101-3.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Decide where to start the tour",
+            "ar": "حدّد من أين تبدأ الجولة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                3,
+                1186,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "decide where to start the tour",
+              "ar": "حدّد من أين تبدأ الجولة",
+              "kind": "phrase",
+              "x": 69,
+              "y": 36
+            },
+            {
+              "en": "glass door",
+              "ar": "باب زجاجي",
+              "kind": "object",
+              "x": 61,
+              "y": 43
+            },
+            {
+              "en": "garden",
+              "ar": "حديقة",
+              "kind": "object",
+              "x": 88,
+              "y": 62
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Start the tour in the garden",
+          "ar": "ابدأ الجولة في الحديقة",
+          "purposeEn": "Start the tour in the garden.",
+          "purposeAr": "ابدأ الجولة في الحديقة.",
+          "image": {
+            "id": "conv-life-l3-101-4",
+            "path": "assets/scenes/conversations/life-l3-101-4.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Start the tour in the garden",
+            "ar": "ابدأ الجولة في الحديقة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                3,
+                1583,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "start the tour in the garden",
+              "ar": "ابدأ الجولة في الحديقة",
+              "kind": "phrase",
+              "x": 53,
+              "y": 61
+            },
+            {
+              "en": "garden path",
+              "ar": "ممر الحديقة",
+              "kind": "object",
+              "x": 50,
+              "y": 83
+            },
+            {
+              "en": "pink flowers",
+              "ar": "زهور وردية",
+              "kind": "object",
+              "x": 9,
+              "y": 29
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-102",
+      "goalAr": "التعريف بصديق في فعالية",
+      "goalEn": "Introducing a friend at an event",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Say where you were born",
+          "ar": "اذكر أين وُلدت",
+          "purposeEn": "Say where you were born.",
+          "purposeAr": "اذكر أين وُلدت.",
+          "image": {
+            "id": "conv-life-l3-102-1",
+            "path": "assets/scenes/conversations/life-l3-102-1.webp",
+            "width": 390,
+            "height": 228,
+            "en": "Say where you were born",
+            "ar": "اذكر أين وُلدت",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                250,
+                393,
+                478
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "say where you were born",
+              "ar": "اذكر أين وُلدت",
+              "kind": "phrase",
+              "x": 45,
+              "y": 58
+            },
+            {
+              "en": "world map",
+              "ar": "خريطة العالم",
+              "kind": "object",
+              "x": 55,
+              "y": 49
+            },
+            {
+              "en": "location pin",
+              "ar": "دبّوس تحديد الموقع",
+              "kind": "object",
+              "x": 52,
+              "y": 40
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Spot someone you already know",
+          "ar": "لمح شخصًا تعرفه من قبل",
+          "purposeEn": "Spot someone you already know.",
+          "purposeAr": "لمح شخصًا تعرفه من قبل.",
+          "image": {
+            "id": "conv-life-l3-102-2",
+            "path": "assets/scenes/conversations/life-l3-102-2.webp",
+            "width": 390,
+            "height": 228,
+            "en": "Spot someone you already know",
+            "ar": "لمح شخصًا تعرفه من قبل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                250,
+                789,
+                478
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "spot someone you already know",
+              "ar": "لمح شخصًا تعرفه من قبل",
+              "kind": "phrase",
+              "x": 73,
+              "y": 43
+            },
+            {
+              "en": "wave across the room",
+              "ar": "يلوّح من الجانب الآخر للقاعة",
+              "kind": "action",
+              "x": 79,
+              "y": 28
+            },
+            {
+              "en": "round table",
+              "ar": "طاولة مستديرة",
+              "kind": "object",
+              "x": 72,
+              "y": 81
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Introduce a friend to the group",
+          "ar": "عرّف المجموعة بصديق",
+          "purposeEn": "Introduce a friend to the group.",
+          "purposeAr": "عرّف المجموعة بصديق.",
+          "image": {
+            "id": "conv-life-l3-102-3",
+            "path": "assets/scenes/conversations/life-l3-102-3.webp",
+            "width": 391,
+            "height": 228,
+            "en": "Introduce a friend to the group",
+            "ar": "عرّف المجموعة بصديق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                250,
+                1186,
+                478
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "introduce a friend to the group",
+              "ar": "عرّف المجموعة بصديق",
+              "kind": "phrase",
+              "x": 61,
+              "y": 63
+            },
+            {
+              "en": "shake hands",
+              "ar": "يصافح",
+              "kind": "action",
+              "x": 69,
+              "y": 71
+            },
+            {
+              "en": "flower vase",
+              "ar": "مزهرية",
+              "kind": "object",
+              "x": 56,
+              "y": 83
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Feel more at ease in the group",
+          "ar": "يشعر براحة أكبر وسط المجموعة",
+          "purposeEn": "Feel more at ease in the group.",
+          "purposeAr": "يشعر براحة أكبر وسط المجموعة.",
+          "image": {
+            "id": "conv-life-l3-102-4",
+            "path": "assets/scenes/conversations/life-l3-102-4.webp",
+            "width": 391,
+            "height": 228,
+            "en": "Feel more at ease in the group",
+            "ar": "يشعر براحة أكبر وسط المجموعة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                250,
+                1583,
+                478
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "feel more at ease in the group",
+              "ar": "يشعر براحة أكبر وسط المجموعة",
+              "kind": "phrase",
+              "x": 54,
+              "y": 57
+            },
+            {
+              "en": "glass of juice",
+              "ar": "كأس عصير",
+              "kind": "object",
+              "x": 69,
+              "y": 86
+            },
+            {
+              "en": "at ease",
+              "ar": "مرتاح",
+              "kind": "description",
+              "x": 54,
+              "y": 36
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-103",
+      "goalAr": "الرد على خبر سار",
+      "goalEn": "Replying to good news",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Tell someone you got a place on the course",
+          "ar": "أخبر شخصًا بقبولك في الدورة",
+          "purposeEn": "Tell someone you got a place on the course.",
+          "purposeAr": "أخبر شخصًا بقبولك في الدورة.",
+          "image": {
+            "id": "conv-life-l3-103-1",
+            "path": "assets/scenes/conversations/life-l3-103-1.webp",
+            "width": 390,
+            "height": 239,
+            "en": "Tell someone you got a place on the course",
+            "ar": "أخبر شخصًا بقبولك في الدورة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                484,
+                393,
+                723
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "tell someone you got a place on the course",
+              "ar": "أخبر شخصًا بقبولك في الدورة",
+              "kind": "phrase",
+              "x": 43,
+              "y": 57
+            },
+            {
+              "en": "acceptance envelope",
+              "ar": "ظرف خطاب القبول",
+              "kind": "object",
+              "x": 41,
+              "y": 58
+            },
+            {
+              "en": "excited",
+              "ar": "متحمّس",
+              "kind": "description",
+              "x": 28,
+              "y": 23
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Congratulate someone on their good news",
+          "ar": "هنّئ شخصًا على خبره السار",
+          "purposeEn": "Congratulate someone on their good news.",
+          "purposeAr": "هنّئ شخصًا على خبره السار.",
+          "image": {
+            "id": "conv-life-l3-103-2",
+            "path": "assets/scenes/conversations/life-l3-103-2.webp",
+            "width": 390,
+            "height": 239,
+            "en": "Congratulate someone on their good news",
+            "ar": "هنّئ شخصًا على خبره السار",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                484,
+                789,
+                723
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "congratulate someone on their good news",
+              "ar": "هنّئ شخصًا على خبره السار",
+              "kind": "phrase",
+              "x": 56,
+              "y": 49
+            },
+            {
+              "en": "touch someone's shoulder",
+              "ar": "يلمس كتف شخص",
+              "kind": "action",
+              "x": 51,
+              "y": 42
+            },
+            {
+              "en": "cheerful",
+              "ar": "مبتهج",
+              "kind": "description",
+              "x": 70,
+              "y": 27
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Check when the first class begins",
+          "ar": "تحقّق من موعد بدء الدرس الأول",
+          "purposeEn": "Check when the first class begins.",
+          "purposeAr": "تحقّق من موعد بدء الدرس الأول.",
+          "image": {
+            "id": "conv-life-l3-103-3",
+            "path": "assets/scenes/conversations/life-l3-103-3.webp",
+            "width": 391,
+            "height": 239,
+            "en": "Check when the first class begins",
+            "ar": "تحقّق من موعد بدء الدرس الأول",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                484,
+                1186,
+                723
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "check when the first class begins",
+              "ar": "تحقّق من موعد بدء الدرس الأول",
+              "kind": "phrase",
+              "x": 51,
+              "y": 74
+            },
+            {
+              "en": "circled date",
+              "ar": "تاريخ محدّد بدائرة",
+              "kind": "object",
+              "x": 55,
+              "y": 76
+            },
+            {
+              "en": "pencil holder",
+              "ar": "حامل أقلام رصاص",
+              "kind": "object",
+              "x": 88,
+              "y": 76
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Tell the rest of the group yourself",
+          "ar": "أخبر باقي المجموعة بنفسك",
+          "purposeEn": "Tell the rest of the group yourself.",
+          "purposeAr": "أخبر باقي المجموعة بنفسك.",
+          "image": {
+            "id": "conv-life-l3-103-4",
+            "path": "assets/scenes/conversations/life-l3-103-4.webp",
+            "width": 391,
+            "height": 239,
+            "en": "Tell the rest of the group yourself",
+            "ar": "أخبر باقي المجموعة بنفسك",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                484,
+                1583,
+                723
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "tell the rest of the group yourself",
+              "ar": "أخبر باقي المجموعة بنفسك",
+              "kind": "phrase",
+              "x": 42,
+              "y": 58
+            },
+            {
+              "en": "bunch of grapes",
+              "ar": "عنقود عنب",
+              "kind": "object",
+              "x": 58,
+              "y": 78
+            },
+            {
+              "en": "string lights",
+              "ar": "سلسلة أضواء",
+              "kind": "object",
+              "x": 60,
+              "y": 23
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-104",
+      "goalAr": "الاطمئنان على صديق بعد يوم شاق",
+      "goalEn": "Checking in after a long day",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Ask if someone had a rough day",
+          "ar": "اسأل شخصًا إن كان يومه شاقًا",
+          "purposeEn": "Ask if someone had a rough day.",
+          "purposeAr": "اسأل شخصًا إن كان يومه شاقًا.",
+          "image": {
+            "id": "conv-life-l3-104-1",
+            "path": "assets/scenes/conversations/life-l3-104-1.webp",
+            "width": 390,
+            "height": 260,
+            "en": "Ask if someone had a rough day",
+            "ar": "اسأل شخصًا إن كان يومه شاقًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                729,
+                393,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask if someone had a rough day",
+              "ar": "اسأل شخصًا إن كان يومه شاقًا",
+              "kind": "phrase",
+              "x": 54,
+              "y": 27
+            },
+            {
+              "en": "exhausted",
+              "ar": "مرهق",
+              "kind": "description",
+              "x": 60,
+              "y": 25
+            },
+            {
+              "en": "folders",
+              "ar": "ملفات",
+              "kind": "object",
+              "x": 50,
+              "y": 63
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Take a few minutes to yourself",
+          "ar": "خذ بضع دقائق لنفسك",
+          "purposeEn": "Take a few minutes to yourself.",
+          "purposeAr": "خذ بضع دقائق لنفسك.",
+          "image": {
+            "id": "conv-life-l3-104-2",
+            "path": "assets/scenes/conversations/life-l3-104-2.webp",
+            "width": 390,
+            "height": 260,
+            "en": "Take a few minutes to yourself",
+            "ar": "خذ بضع دقائق لنفسك",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                729,
+                789,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "take a few minutes to yourself",
+              "ar": "خذ بضع دقائق لنفسك",
+              "kind": "phrase",
+              "x": 48,
+              "y": 72
+            },
+            {
+              "en": "mug",
+              "ar": "كوب",
+              "kind": "object",
+              "x": 48,
+              "y": 78
+            },
+            {
+              "en": "wooden bench",
+              "ar": "مقعد خشبي",
+              "kind": "object",
+              "x": 66,
+              "y": 62
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Say you should go home soon",
+          "ar": "قل إن عليك العودة إلى البيت قريبًا",
+          "purposeEn": "Say you should go home soon.",
+          "purposeAr": "قل إن عليك العودة إلى البيت قريبًا.",
+          "image": {
+            "id": "conv-life-l3-104-3",
+            "path": "assets/scenes/conversations/life-l3-104-3.webp",
+            "width": 391,
+            "height": 260,
+            "en": "Say you should go home soon",
+            "ar": "قل إن عليك العودة إلى البيت قريبًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                795,
+                729,
+                1186,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "say you should go home soon",
+              "ar": "قل إن عليك العودة إلى البيت قريبًا",
+              "kind": "phrase",
+              "x": 67,
+              "y": 42
+            },
+            {
+              "en": "wristwatch",
+              "ar": "ساعة يد",
+              "kind": "object",
+              "x": 71,
+              "y": 41
+            },
+            {
+              "en": "shoulder bag",
+              "ar": "حقيبة كتف",
+              "kind": "object",
+              "x": 83,
+              "y": 75
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Agree to catch up tomorrow",
+          "ar": "اتفقا على التحدّث غدًا",
+          "purposeEn": "Agree to catch up tomorrow.",
+          "purposeAr": "اتفقا على التحدّث غدًا.",
+          "image": {
+            "id": "conv-life-l3-104-4",
+            "path": "assets/scenes/conversations/life-l3-104-4.webp",
+            "width": 391,
+            "height": 260,
+            "en": "Agree to catch up tomorrow",
+            "ar": "اتفقا على التحدّث غدًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1192,
+                729,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "agree to catch up tomorrow",
+              "ar": "اتفقا على التحدّث غدًا",
+              "kind": "phrase",
+              "x": 51,
+              "y": 60
+            },
+            {
+              "en": "desk calendar",
+              "ar": "تقويم مكتبي",
+              "kind": "object",
+              "x": 65,
+              "y": 70
+            },
+            {
+              "en": "mug",
+              "ar": "كوب",
+              "kind": "object",
+              "x": 38,
+              "y": 83
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
