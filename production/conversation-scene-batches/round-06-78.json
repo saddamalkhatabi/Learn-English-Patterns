@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "b6e705717c6363a8c5eabf31bde9606b7ee763d6a45a16e403a680b47c656f46"
+  },
+  "conversations": [
+    {
+      "id": "l3-081",
+      "goalAr": "شرح سبب اختيار المهنة",
+      "goalEn": "Explaining why you chose a profession",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Ask why someone chose medicine",
+          "ar": "اسأل لماذا اختار شخصٌ الطب",
+          "purposeEn": "Ask why someone chose medicine.",
+          "purposeAr": "اسأل لماذا اختار شخصٌ الطب.",
+          "image": {
+            "id": "conv-life-l3-081-1",
+            "path": "assets/scenes/conversations/life-l3-081-1.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Ask why someone chose medicine",
+            "ar": "اسأل لماذا اختار شخصٌ الطب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                393,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask why someone chose medicine",
+              "ar": "اسأل لماذا اختار شخصٌ الطب",
+              "kind": "phrase",
+              "x": 36,
+              "y": 62
+            },
+            {
+              "en": "stethoscope",
+              "ar": "سمّاعة طبيب",
+              "kind": "object",
+              "x": 29,
+              "y": 53
+            },
+            {
+              "en": "skeleton model",
+              "ar": "مجسّم هيكل عظمي",
+              "kind": "object",
+              "x": 9,
+              "y": 23
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Come from a family of doctors",
+          "ar": "ينحدر من عائلة من الأطباء",
+          "purposeEn": "Come from a family of doctors.",
+          "purposeAr": "ينحدر من عائلة من الأطباء.",
+          "image": {
+            "id": "conv-life-l3-081-2",
+            "path": "assets/scenes/conversations/life-l3-081-2.webp",
+            "width": 392,
+            "height": 241,
+            "en": "Come from a family of doctors",
+            "ar": "ينحدر من عائلة من الأطباء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                3,
+                791,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "come from a family of doctors",
+              "ar": "ينحدر من عائلة من الأطباء",
+              "kind": "phrase",
+              "x": 40,
+              "y": 67
+            },
+            {
+              "en": "family photograph",
+              "ar": "صورة عائلية",
+              "kind": "object",
+              "x": 54,
+              "y": 64
+            },
+            {
+              "en": "wooden frame",
+              "ar": "إطار خشبي",
+              "kind": "object",
+              "x": 73,
+              "y": 86
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Explain a difficult idea simply",
+          "ar": "اشرح فكرة صعبة بأسلوب بسيط",
+          "purposeEn": "Explain a difficult idea simply.",
+          "purposeAr": "اشرح فكرة صعبة بأسلوب بسيط.",
+          "image": {
+            "id": "conv-life-l3-081-3",
+            "path": "assets/scenes/conversations/life-l3-081-3.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Explain a difficult idea simply",
+            "ar": "اشرح فكرة صعبة بأسلوب بسيط",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                3,
+                1187,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "explain a difficult idea simply",
+              "ar": "اشرح فكرة صعبة بأسلوب بسيط",
+              "kind": "phrase",
+              "x": 39,
+              "y": 42
+            },
+            {
+              "en": "anatomy chart",
+              "ar": "لوحة تشريح",
+              "kind": "object",
+              "x": 60,
+              "y": 61
+            },
+            {
+              "en": "white coat",
+              "ar": "معطف أبيض",
+              "kind": "object",
+              "x": 25,
+              "y": 56
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Explain how to book an appointment",
+          "ar": "اشرح كيفية حجز موعد",
+          "purposeEn": "Explain how to book an appointment.",
+          "purposeAr": "اشرح كيفية حجز موعد.",
+          "image": {
+            "id": "conv-life-l3-081-4",
+            "path": "assets/scenes/conversations/life-l3-081-4.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Explain how to book an appointment",
+            "ar": "اشرح كيفية حجز موعد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                3,
+                1583,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "explain how to book an appointment",
+              "ar": "اشرح كيفية حجز موعد",
+              "kind": "phrase",
+              "x": 49,
+              "y": 65
+            },
+            {
+              "en": "desk calendar",
+              "ar": "تقويم مكتبي",
+              "kind": "object",
+              "x": 44,
+              "y": 78
+            },
+            {
+              "en": "appointment cards",
+              "ar": "بطاقات مواعيد",
+              "kind": "object",
+              "x": 62,
+              "y": 63
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-082",
+      "goalAr": "وصف ما تعلمته من تحدٍّ",
+      "goalEn": "Describing what you learned from a challenge",
+      "stages": [
+        {
+          "from": 1,
+          "to": 2,
+          "en": "Describe the hardest part of training",
+          "ar": "صِف أصعب جزء في التدريب",
+          "purposeEn": "Describe the hardest part of training.",
+          "purposeAr": "صِف أصعب جزء في التدريب.",
+          "image": {
+            "id": "conv-life-l3-082-1",
+            "path": "assets/scenes/conversations/life-l3-082-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Describe the hardest part of training",
+            "ar": "صِف أصعب جزء في التدريب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                250,
+                393,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "describe the hardest part of training",
+              "ar": "صِف أصعب جزء في التدريب",
+              "kind": "phrase",
+              "x": 33,
+              "y": 53
+            },
+            {
+              "en": "stack of papers",
+              "ar": "رزمة أوراق",
+              "kind": "object",
+              "x": 51,
+              "y": 83
+            },
+            {
+              "en": "page tabs",
+              "ar": "ألسنة تحديد الصفحات",
+              "kind": "object",
+              "x": 57,
+              "y": 80
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "en": "Try one task at a time",
+          "ar": "جرّب مهمة واحدة في كل مرة",
+          "purposeEn": "Try one task at a time.",
+          "purposeAr": "جرّب مهمة واحدة في كل مرة.",
+          "image": {
+            "id": "conv-life-l3-082-2",
+            "path": "assets/scenes/conversations/life-l3-082-2.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Try one task at a time",
+            "ar": "جرّب مهمة واحدة في كل مرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                250,
+                791,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "try one task at a time",
+              "ar": "جرّب مهمة واحدة في كل مرة",
+              "kind": "phrase",
+              "x": 49,
+              "y": 74
+            },
+            {
+              "en": "practice worksheet",
+              "ar": "ورقة تدريب",
+              "kind": "object",
+              "x": 53,
+              "y": 74
+            },
+            {
+              "en": "blue pen",
+              "ar": "قلم أزرق",
+              "kind": "object",
+              "x": 50,
+              "y": 80
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "en": "Spot the confusing step",
+          "ar": "حدّد الخطوة المربكة",
+          "purposeEn": "Spot the confusing step.",
+          "purposeAr": "حدّد الخطوة المربكة.",
+          "image": {
+            "id": "conv-life-l3-082-3",
+            "path": "assets/scenes/conversations/life-l3-082-3.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Spot the confusing step",
+            "ar": "حدّد الخطوة المربكة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                250,
+                1187,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "spot the confusing step",
+              "ar": "حدّد الخطوة المربكة",
+              "kind": "phrase",
+              "x": 51,
+              "y": 83
+            },
+            {
+              "en": "task diagram",
+              "ar": "مخطط المهمة",
+              "kind": "object",
+              "x": 56,
+              "y": 91
+            },
+            {
+              "en": "puzzled",
+              "ar": "محتار",
+              "kind": "description",
+              "x": 75,
+              "y": 28
+            }
+          ]
+        },
+        {
+          "from": 7,
+          "to": 7,
+          "en": "Rewrite the instructions",
+          "ar": "أعِد كتابة التعليمات",
+          "purposeEn": "Rewrite the instructions.",
+          "purposeAr": "أعِد كتابة التعليمات.",
+          "image": {
+            "id": "conv-life-l3-082-4",
+            "path": "assets/scenes/conversations/life-l3-082-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Rewrite the instructions",
+            "ar": "أعِد كتابة التعليمات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                250,
+                1583,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "rewrite the instructions",
+              "ar": "أعِد كتابة التعليمات",
+              "kind": "phrase",
+              "x": 50,
+              "y": 66
+            },
+            {
+              "en": "original instructions",
+              "ar": "التعليمات الأصلية",
+              "kind": "object",
+              "x": 36,
+              "y": 70
+            },
+            {
+              "en": "simplified instructions",
+              "ar": "تعليمات مبسّطة",
+              "kind": "object",
+              "x": 61,
+              "y": 71
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-083",
+      "goalAr": "وصف نتيجة في مقابلة عمل",
+      "goalEn": "Describing a result in an interview",
+      "stages": [
+        {
+          "from": 1,
+          "to": 2,
+          "en": "Describe your first achievement",
+          "ar": "صِف أول إنجاز لك",
+          "purposeEn": "Describe your first achievement.",
+          "purposeAr": "صِف أول إنجاز لك.",
+          "image": {
+            "id": "conv-life-l3-083-1",
+            "path": "assets/scenes/conversations/life-l3-083-1.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Describe your first achievement",
+            "ar": "صِف أول إنجاز لك",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                498,
+                393,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "describe your first achievement",
+              "ar": "صِف أول إنجاز لك",
+              "kind": "phrase",
+              "x": 57,
+              "y": 65
+            },
+            {
+              "en": "résumé",
+              "ar": "سيرة ذاتية",
+              "kind": "object",
+              "x": 41,
+              "y": 74
+            },
+            {
+              "en": "notebook",
+              "ar": "دفتر",
+              "kind": "object",
+              "x": 70,
+              "y": 91
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "en": "Track the email response time",
+          "ar": "تتبّع زمن الرد على الرسائل",
+          "purposeEn": "Track the email response time.",
+          "purposeAr": "تتبّع زمن الرد على الرسائل.",
+          "image": {
+            "id": "conv-life-l3-083-2",
+            "path": "assets/scenes/conversations/life-l3-083-2.webp",
+            "width": 392,
+            "height": 243,
+            "en": "Track the email response time",
+            "ar": "تتبّع زمن الرد على الرسائل",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                498,
+                791,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "track the email response time",
+              "ar": "تتبّع زمن الرد على الرسائل",
+              "kind": "phrase",
+              "x": 56,
+              "y": 59
+            },
+            {
+              "en": "desk timer",
+              "ar": "مؤقّت مكتبي",
+              "kind": "object",
+              "x": 27,
+              "y": 65
+            },
+            {
+              "en": "inbox icon",
+              "ar": "أيقونة صندوق الوارد",
+              "kind": "object",
+              "x": 58,
+              "y": 64
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "en": "Show that response times fell",
+          "ar": "بيّن أن زمن الرد انخفض",
+          "purposeEn": "Show that response times fell.",
+          "purposeAr": "بيّن أن زمن الرد انخفض.",
+          "image": {
+            "id": "conv-life-l3-083-3",
+            "path": "assets/scenes/conversations/life-l3-083-3.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Show that response times fell",
+            "ar": "بيّن أن زمن الرد انخفض",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                498,
+                1187,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "show that response times fell",
+              "ar": "بيّن أن زمن الرد انخفض",
+              "kind": "phrase",
+              "x": 59,
+              "y": 67
+            },
+            {
+              "en": "bar chart",
+              "ar": "مخطّط أعمدة",
+              "kind": "object",
+              "x": 61,
+              "y": 54
+            },
+            {
+              "en": "shorter bar",
+              "ar": "عمود أقصر",
+              "kind": "object",
+              "x": 63,
+              "y": 72
+            }
+          ]
+        },
+        {
+          "from": 7,
+          "to": 7,
+          "en": "Be pleased with the result",
+          "ar": "يسعد بالنتيجة",
+          "purposeEn": "Be pleased with the result.",
+          "purposeAr": "يسعد بالنتيجة.",
+          "image": {
+            "id": "conv-life-l3-083-4",
+            "path": "assets/scenes/conversations/life-l3-083-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Be pleased with the result",
+            "ar": "يسعد بالنتيجة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                498,
+                1583,
+                741
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "be pleased with the result",
+              "ar": "يسعد بالنتيجة",
+              "kind": "phrase",
+              "x": 28,
+              "y": 67
+            },
+            {
+              "en": "results chart",
+              "ar": "مخطّط النتائج",
+              "kind": "object",
+              "x": 49,
+              "y": 71
+            },
+            {
+              "en": "give a thumbs-up",
+              "ar": "يرفع إبهامه إشارةً إلى الرضا",
+              "kind": "action",
+              "x": 27,
+              "y": 65
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-084",
+      "goalAr": "الحديث عن أهداف الوظيفة القادمة",
+      "goalEn": "Talking about goals for the next role",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Talk about your future goals",
+          "ar": "تحدّث عن أهدافك المستقبلية",
+          "purposeEn": "Talk about your future goals.",
+          "purposeAr": "تحدّث عن أهدافك المستقبلية.",
+          "image": {
+            "id": "conv-life-l3-084-1",
+            "path": "assets/scenes/conversations/life-l3-084-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Talk about your future goals",
+            "ar": "تحدّث عن أهدافك المستقبلية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                747,
+                393,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "talk about your future goals",
+              "ar": "تحدّث عن أهدافك المستقبلية",
+              "kind": "phrase",
+              "x": 45,
+              "y": 63
+            },
+            {
+              "en": "résumé",
+              "ar": "سيرة ذاتية",
+              "kind": "object",
+              "x": 53,
+              "y": 85
+            },
+            {
+              "en": "blue folder",
+              "ar": "ملف أزرق",
+              "kind": "object",
+              "x": 85,
+              "y": 90
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Lead a short training session",
+          "ar": "يقدّم جلسة تدريب قصيرة",
+          "purposeEn": "Lead a short training session.",
+          "purposeAr": "يقدّم جلسة تدريب قصيرة.",
+          "image": {
+            "id": "conv-life-l3-084-2",
+            "path": "assets/scenes/conversations/life-l3-084-2.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Lead a short training session",
+            "ar": "يقدّم جلسة تدريب قصيرة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                747,
+                791,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "lead a short training session",
+              "ar": "يقدّم جلسة تدريب قصيرة",
+              "kind": "phrase",
+              "x": 45,
+              "y": 68
+            },
+            {
+              "en": "lesson plan",
+              "ar": "خطة درس",
+              "kind": "object",
+              "x": 53,
+              "y": 47
+            },
+            {
+              "en": "activity cards",
+              "ar": "بطاقات نشاط",
+              "kind": "object",
+              "x": 48,
+              "y": 84
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Get feedback after the session",
+          "ar": "احصل على ملاحظات بعد الجلسة",
+          "purposeEn": "Get feedback after the session.",
+          "purposeAr": "احصل على ملاحظات بعد الجلسة.",
+          "image": {
+            "id": "conv-life-l3-084-3",
+            "path": "assets/scenes/conversations/life-l3-084-3.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Get feedback after the session",
+            "ar": "احصل على ملاحظات بعد الجلسة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                747,
+                1187,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "get feedback after the session",
+              "ar": "احصل على ملاحظات بعد الجلسة",
+              "kind": "phrase",
+              "x": 41,
+              "y": 59
+            },
+            {
+              "en": "feedback checklist",
+              "ar": "قائمة ملاحظات",
+              "kind": "object",
+              "x": 55,
+              "y": 50
+            },
+            {
+              "en": "empty checkbox",
+              "ar": "خانة اختيار فارغة",
+              "kind": "object",
+              "x": 55,
+              "y": 69
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Ask how the team develops skills",
+          "ar": "اسأل كيف يطوّر الفريق المهارات",
+          "purposeEn": "Ask how the team develops skills.",
+          "purposeAr": "اسأل كيف يطوّر الفريق المهارات.",
+          "image": {
+            "id": "conv-life-l3-084-4",
+            "path": "assets/scenes/conversations/life-l3-084-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Ask how the team develops skills",
+            "ar": "اسأل كيف يطوّر الفريق المهارات",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                747,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask how the team develops skills",
+              "ar": "اسأل كيف يطوّر الفريق المهارات",
+              "kind": "phrase",
+              "x": 46,
+              "y": 65
+            },
+            {
+              "en": "training brochure",
+              "ar": "كتيّب تدريب",
+              "kind": "object",
+              "x": 48,
+              "y": 64
+            },
+            {
+              "en": "award symbol",
+              "ar": "رمز جائزة",
+              "kind": "object",
+              "x": 59,
+              "y": 40
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

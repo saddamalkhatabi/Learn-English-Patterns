@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "02d044900d316244cf1f07d4e0a21e48b2f5d33d56b3ba157e5c64aa0c773081"
+  },
+  "conversations": [
+    {
+      "id": "l3-077",
+      "goalAr": "تفقد حاسوب لا يعمل",
+      "goalEn": "Checking a computer that will not start",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Explain what is wrong with the laptop",
+          "ar": "اشرح مشكلة الحاسوب المحمول",
+          "purposeEn": "Explain what is wrong with the laptop.",
+          "purposeAr": "اشرح مشكلة الحاسوب المحمول.",
+          "image": {
+            "id": "conv-life-l3-077-1",
+            "path": "assets/scenes/conversations/life-l3-077-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Explain what is wrong with the laptop",
+            "ar": "اشرح مشكلة الحاسوب المحمول",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                393,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "explain what is wrong with the laptop",
+              "ar": "اشرح مشكلة الحاسوب المحمول",
+              "kind": "phrase",
+              "x": 51,
+              "y": 58
+            },
+            {
+              "en": "laptop",
+              "ar": "حاسوب محمول",
+              "kind": "object",
+              "x": 55,
+              "y": 59
+            },
+            {
+              "en": "concerned",
+              "ar": "قلق",
+              "kind": "description",
+              "x": 72,
+              "y": 28
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Notice that the screen stays dark",
+          "ar": "لاحظ أن الشاشة تبقى معتمة",
+          "purposeEn": "Notice that the screen stays dark.",
+          "purposeAr": "لاحظ أن الشاشة تبقى معتمة.",
+          "image": {
+            "id": "conv-life-l3-077-2",
+            "path": "assets/scenes/conversations/life-l3-077-2.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Notice that the screen stays dark",
+            "ar": "لاحظ أن الشاشة تبقى معتمة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                3,
+                791,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "notice that the screen stays dark",
+              "ar": "لاحظ أن الشاشة تبقى معتمة",
+              "kind": "phrase",
+              "x": 69,
+              "y": 86
+            },
+            {
+              "en": "dark screen",
+              "ar": "شاشة معتمة",
+              "kind": "object",
+              "x": 62,
+              "y": 62
+            },
+            {
+              "en": "power light",
+              "ar": "ضوء التشغيل",
+              "kind": "object",
+              "x": 76,
+              "y": 90
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Check that the charger is connected",
+          "ar": "تحقّق من توصيل الشاحن",
+          "purposeEn": "Check that the charger is connected.",
+          "purposeAr": "تحقّق من توصيل الشاحن.",
+          "image": {
+            "id": "conv-life-l3-077-3",
+            "path": "assets/scenes/conversations/life-l3-077-3.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Check that the charger is connected",
+            "ar": "تحقّق من توصيل الشاحن",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                3,
+                1187,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "check that the charger is connected",
+              "ar": "تحقّق من توصيل الشاحن",
+              "kind": "phrase",
+              "x": 47,
+              "y": 81
+            },
+            {
+              "en": "power connector",
+              "ar": "موصل الطاقة",
+              "kind": "object",
+              "x": 51,
+              "y": 80
+            },
+            {
+              "en": "charger brick",
+              "ar": "محوّل الشاحن",
+              "kind": "object",
+              "x": 83,
+              "y": 65
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Make a note of what you tried",
+          "ar": "دوّن ما جرّبته",
+          "purposeEn": "Make a note of what you tried.",
+          "purposeAr": "دوّن ما جرّبته.",
+          "image": {
+            "id": "conv-life-l3-077-4",
+            "path": "assets/scenes/conversations/life-l3-077-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Make a note of what you tried",
+            "ar": "دوّن ما جرّبته",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                3,
+                1583,
+                245
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "make a note of what you tried",
+              "ar": "دوّن ما جرّبته",
+              "kind": "phrase",
+              "x": 32,
+              "y": 80
+            },
+            {
+              "en": "troubleshooting checklist",
+              "ar": "قائمة خطوات فحص العطل",
+              "kind": "object",
+              "x": 42,
+              "y": 91
+            },
+            {
+              "en": "pen",
+              "ar": "قلم",
+              "kind": "object",
+              "x": 26,
+              "y": 63
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-078",
+      "goalAr": "تحديد مصدر الضوضاء",
+      "goalEn": "Working out where the noise came from",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Try to tell where the noise came from",
+          "ar": "حاول تحديد مصدر الضوضاء",
+          "purposeEn": "Try to tell where the noise came from.",
+          "purposeAr": "حاول تحديد مصدر الضوضاء.",
+          "image": {
+            "id": "conv-life-l3-078-1",
+            "path": "assets/scenes/conversations/life-l3-078-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Try to tell where the noise came from",
+            "ar": "حاول تحديد مصدر الضوضاء",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                251,
+                393,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "try to tell where the noise came from",
+              "ar": "حاول تحديد مصدر الضوضاء",
+              "kind": "phrase",
+              "x": 46,
+              "y": 37
+            },
+            {
+              "en": "window",
+              "ar": "نافذة",
+              "kind": "object",
+              "x": 15,
+              "y": 37
+            },
+            {
+              "en": "cup your hand around your ear",
+              "ar": "يضع كفه حول أذنه",
+              "kind": "action",
+              "x": 47,
+              "y": 37
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Point out what fell in the hallway",
+          "ar": "أشِر إلى الشيء الذي سقط في الممر",
+          "purposeEn": "Point out what fell in the hallway.",
+          "purposeAr": "أشِر إلى الشيء الذي سقط في الممر.",
+          "image": {
+            "id": "conv-life-l3-078-2",
+            "path": "assets/scenes/conversations/life-l3-078-2.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Point out what fell in the hallway",
+            "ar": "أشِر إلى الشيء الذي سقط في الممر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                251,
+                791,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "point out what fell in the hallway",
+              "ar": "أشِر إلى الشيء الذي سقط في الممر",
+              "kind": "phrase",
+              "x": 37,
+              "y": 66
+            },
+            {
+              "en": "umbrella stand",
+              "ar": "حامل مظلات",
+              "kind": "object",
+              "x": 61,
+              "y": 76
+            },
+            {
+              "en": "folded umbrellas",
+              "ar": "مظلات مطوية",
+              "kind": "object",
+              "x": 46,
+              "y": 88
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Listen at the open door",
+          "ar": "أصغِ عند الباب المفتوح",
+          "purposeEn": "Listen at the open door.",
+          "purposeAr": "أصغِ عند الباب المفتوح.",
+          "image": {
+            "id": "conv-life-l3-078-3",
+            "path": "assets/scenes/conversations/life-l3-078-3.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Listen at the open door",
+            "ar": "أصغِ عند الباب المفتوح",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                251,
+                1187,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "listen at the open door",
+              "ar": "أصغِ عند الباب المفتوح",
+              "kind": "phrase",
+              "x": 48,
+              "y": 42
+            },
+            {
+              "en": "door handle",
+              "ar": "مقبض الباب",
+              "kind": "object",
+              "x": 18,
+              "y": 67
+            },
+            {
+              "en": "tilt your head to listen",
+              "ar": "يميل رأسه ليصغي",
+              "kind": "action",
+              "x": 47,
+              "y": 43
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Hear a dog barking next door",
+          "ar": "يسمع نباح كلب في الشقة المجاورة",
+          "purposeEn": "Hear a dog barking next door.",
+          "purposeAr": "يسمع نباح كلب في الشقة المجاورة.",
+          "image": {
+            "id": "conv-life-l3-078-4",
+            "path": "assets/scenes/conversations/life-l3-078-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Hear a dog barking next door",
+            "ar": "يسمع نباح كلب في الشقة المجاورة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                251,
+                1583,
+                493
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "hear a dog barking next door",
+              "ar": "يسمع نباح كلب في الشقة المجاورة",
+              "kind": "phrase",
+              "x": 72,
+              "y": 47
+            },
+            {
+              "en": "dog",
+              "ar": "كلب",
+              "kind": "object",
+              "x": 69,
+              "y": 57
+            },
+            {
+              "en": "door latch",
+              "ar": "مزلاج الباب",
+              "kind": "object",
+              "x": 52,
+              "y": 27
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-079",
+      "goalAr": "تأجيل مهمة إلى وقت لاحق",
+      "goalEn": "Putting off an errand until later",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Plan to collect a parcel",
+          "ar": "خطّط لاستلام طرد",
+          "purposeEn": "Plan to collect a parcel.",
+          "purposeAr": "خطّط لاستلام طرد.",
+          "image": {
+            "id": "conv-life-l3-079-1",
+            "path": "assets/scenes/conversations/life-l3-079-1.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Plan to collect a parcel",
+            "ar": "خطّط لاستلام طرد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                499,
+                393,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "plan to collect a parcel",
+              "ar": "خطّط لاستلام طرد",
+              "kind": "phrase",
+              "x": 39,
+              "y": 56
+            },
+            {
+              "en": "planner",
+              "ar": "مفكّرة مواعيد",
+              "kind": "object",
+              "x": 48,
+              "y": 75
+            },
+            {
+              "en": "marked date",
+              "ar": "تاريخ محدّد بعلامة",
+              "kind": "object",
+              "x": 63,
+              "y": 71
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Share the pickup code",
+          "ar": "شارك رمز الاستلام",
+          "purposeEn": "Share the pickup code.",
+          "purposeAr": "شارك رمز الاستلام.",
+          "image": {
+            "id": "conv-life-l3-079-2",
+            "path": "assets/scenes/conversations/life-l3-079-2.webp",
+            "width": 392,
+            "height": 241,
+            "en": "Share the pickup code",
+            "ar": "شارك رمز الاستلام",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                499,
+                791,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "share the pickup code",
+              "ar": "شارك رمز الاستلام",
+              "kind": "phrase",
+              "x": 48,
+              "y": 58
+            },
+            {
+              "en": "pickup slip",
+              "ar": "قسيمة الاستلام",
+              "kind": "object",
+              "x": 63,
+              "y": 75
+            },
+            {
+              "en": "parcel icon",
+              "ar": "رمز طرد",
+              "kind": "object",
+              "x": 42,
+              "y": 53
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Explain why you cannot leave yet",
+          "ar": "اشرح لماذا لا يمكنك المغادرة الآن",
+          "purposeEn": "Explain why you cannot leave yet.",
+          "purposeAr": "اشرح لماذا لا يمكنك المغادرة الآن.",
+          "image": {
+            "id": "conv-life-l3-079-3",
+            "path": "assets/scenes/conversations/life-l3-079-3.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Explain why you cannot leave yet",
+            "ar": "اشرح لماذا لا يمكنك المغادرة الآن",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                499,
+                1187,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "explain why you cannot leave yet",
+              "ar": "اشرح لماذا لا يمكنك المغادرة الآن",
+              "kind": "phrase",
+              "x": 43,
+              "y": 78
+            },
+            {
+              "en": "laptop lid",
+              "ar": "غطاء الحاسوب المحمول",
+              "kind": "object",
+              "x": 59,
+              "y": 69
+            },
+            {
+              "en": "pink mug",
+              "ar": "كوب وردي",
+              "kind": "object",
+              "x": 78,
+              "y": 82
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Check how much time is left",
+          "ar": "تحقّق من الوقت المتبقي",
+          "purposeEn": "Check how much time is left.",
+          "purposeAr": "تحقّق من الوقت المتبقي.",
+          "image": {
+            "id": "conv-life-l3-079-4",
+            "path": "assets/scenes/conversations/life-l3-079-4.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Check how much time is left",
+            "ar": "تحقّق من الوقت المتبقي",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                499,
+                1583,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "check how much time is left",
+              "ar": "تحقّق من الوقت المتبقي",
+              "kind": "phrase",
+              "x": 47,
+              "y": 31
+            },
+            {
+              "en": "wall clock",
+              "ar": "ساعة حائط",
+              "kind": "object",
+              "x": 57,
+              "y": 16
+            },
+            {
+              "en": "barcode",
+              "ar": "رمز شريطي",
+              "kind": "object",
+              "x": 41,
+              "y": 77
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-080",
+      "goalAr": "الإبلاغ عن مشكلة في باب المدخل",
+      "goalEn": "Reporting a problem with the front door",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Show why the latch will not close",
+          "ar": "بيّن لماذا لا ينغلق المزلاج",
+          "purposeEn": "Show why the latch will not close.",
+          "purposeAr": "بيّن لماذا لا ينغلق المزلاج.",
+          "image": {
+            "id": "conv-life-l3-080-1",
+            "path": "assets/scenes/conversations/life-l3-080-1.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Show why the latch will not close",
+            "ar": "بيّن لماذا لا ينغلق المزلاج",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                746,
+                393,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "show why the latch will not close",
+              "ar": "بيّن لماذا لا ينغلق المزلاج",
+              "kind": "phrase",
+              "x": 51,
+              "y": 65
+            },
+            {
+              "en": "door latch",
+              "ar": "مزلاج الباب",
+              "kind": "object",
+              "x": 50,
+              "y": 58
+            },
+            {
+              "en": "strike plate",
+              "ar": "صفيحة تثبيت المزلاج",
+              "kind": "object",
+              "x": 67,
+              "y": 61
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Note that it began after the rain",
+          "ar": "دوّن أن المشكلة بدأت بعد المطر",
+          "purposeEn": "Note that it began after the rain.",
+          "purposeAr": "دوّن أن المشكلة بدأت بعد المطر.",
+          "image": {
+            "id": "conv-life-l3-080-2",
+            "path": "assets/scenes/conversations/life-l3-080-2.webp",
+            "width": 392,
+            "height": 243,
+            "en": "Note that it began after the rain",
+            "ar": "دوّن أن المشكلة بدأت بعد المطر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                746,
+                791,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "note that it began after the rain",
+              "ar": "دوّن أن المشكلة بدأت بعد المطر",
+              "kind": "phrase",
+              "x": 64,
+              "y": 76
+            },
+            {
+              "en": "raindrops on glass",
+              "ar": "قطرات مطر على الزجاج",
+              "kind": "object",
+              "x": 35,
+              "y": 52
+            },
+            {
+              "en": "clipboard",
+              "ar": "لوح تثبيت الأوراق",
+              "kind": "object",
+              "x": 63,
+              "y": 80
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Try to shut the door",
+          "ar": "حاول إغلاق الباب",
+          "purposeEn": "Try to shut the door.",
+          "purposeAr": "حاول إغلاق الباب.",
+          "image": {
+            "id": "conv-life-l3-080-3",
+            "path": "assets/scenes/conversations/life-l3-080-3.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Try to shut the door",
+            "ar": "حاول إغلاق الباب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                746,
+                1187,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "try to shut the door",
+              "ar": "حاول إغلاق الباب",
+              "kind": "phrase",
+              "x": 27,
+              "y": 83
+            },
+            {
+              "en": "door handle",
+              "ar": "مقبض الباب",
+              "kind": "object",
+              "x": 24,
+              "y": 79
+            },
+            {
+              "en": "strained expression",
+              "ar": "ملامح تدلّ على بذل جهد",
+              "kind": "description",
+              "x": 49,
+              "y": 37
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Use the other entrance",
+          "ar": "استخدم المدخل الآخر",
+          "purposeEn": "Use the other entrance.",
+          "purposeAr": "استخدم المدخل الآخر.",
+          "image": {
+            "id": "conv-life-l3-080-4",
+            "path": "assets/scenes/conversations/life-l3-080-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Use the other entrance",
+            "ar": "استخدم المدخل الآخر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                746,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "use the other entrance",
+              "ar": "استخدم المدخل الآخر",
+              "kind": "phrase",
+              "x": 66,
+              "y": 49
+            },
+            {
+              "en": "alternate entrance",
+              "ar": "مدخل بديل",
+              "kind": "object",
+              "x": 75,
+              "y": 37
+            },
+            {
+              "en": "doormat",
+              "ar": "بساط الباب",
+              "kind": "object",
+              "x": 75,
+              "y": 85
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

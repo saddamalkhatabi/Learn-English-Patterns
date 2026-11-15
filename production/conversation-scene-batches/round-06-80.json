@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "525379dd350a5334394aaab5bcd4796a42d0ad6edc68f6f309ae1ded8687fdb2"
+  },
+  "conversations": [
+    {
+      "id": "l3-089",
+      "goalAr": "التعامل بأدب مع طلب معلومة خاصة",
+      "goalEn": "Handling a confidential request politely",
+      "stages": [
+        {
+          "from": 1,
+          "to": 2,
+          "en": "Ask about pay discreetly",
+          "ar": "اسأل عن الأجر بتكتّم",
+          "purposeEn": "Ask about pay discreetly.",
+          "purposeAr": "اسأل عن الأجر بتكتّم.",
+          "image": {
+            "id": "conv-life-l3-089-1",
+            "path": "assets/scenes/conversations/life-l3-089-1.webp",
+            "width": 389,
+            "height": 243,
+            "en": "Ask about pay discreetly",
+            "ar": "اسأل عن الأجر بتكتّم",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                392,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask about pay discreetly",
+              "ar": "اسأل عن الأجر بتكتّم",
+              "kind": "phrase",
+              "x": 36,
+              "y": 62
+            },
+            {
+              "en": "closed folder",
+              "ar": "ملف مغلق",
+              "kind": "object",
+              "x": 58,
+              "y": 83
+            },
+            {
+              "en": "laptop",
+              "ar": "حاسوب محمول",
+              "kind": "object",
+              "x": 93,
+              "y": 75
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "en": "Ask for the advertised pay range",
+          "ar": "اطلب نطاق الأجر المعلن",
+          "purposeEn": "Ask for the advertised pay range.",
+          "purposeAr": "اطلب نطاق الأجر المعلن.",
+          "image": {
+            "id": "conv-life-l3-089-2",
+            "path": "assets/scenes/conversations/life-l3-089-2.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Ask for the advertised pay range",
+            "ar": "اطلب نطاق الأجر المعلن",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                398,
+                3,
+                788,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask for the advertised pay range",
+              "ar": "اطلب نطاق الأجر المعلن",
+              "kind": "phrase",
+              "x": 81,
+              "y": 53
+            },
+            {
+              "en": "pay range chart",
+              "ar": "مخطط نطاق الأجر",
+              "kind": "object",
+              "x": 82,
+              "y": 58
+            },
+            {
+              "en": "personnel folder",
+              "ar": "ملف الموظفين",
+              "kind": "object",
+              "x": 37,
+              "y": 85
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 7,
+          "en": "Decline to share private details",
+          "ar": "اعتذر عن مشاركة التفاصيل الخاصة",
+          "purposeEn": "Decline to share private details.",
+          "purposeAr": "اعتذر عن مشاركة التفاصيل الخاصة.",
+          "image": {
+            "id": "conv-life-l3-089-3",
+            "path": "assets/scenes/conversations/life-l3-089-3.webp",
+            "width": 392,
+            "height": 243,
+            "en": "Decline to share private details",
+            "ar": "اعتذر عن مشاركة التفاصيل الخاصة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                794,
+                3,
+                1186,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "decline to share private details",
+              "ar": "اعتذر عن مشاركة التفاصيل الخاصة",
+              "kind": "phrase",
+              "x": 34,
+              "y": 62
+            },
+            {
+              "en": "raise an open palm",
+              "ar": "يرفع كفًا مفتوحة",
+              "kind": "action",
+              "x": 32,
+              "y": 54
+            },
+            {
+              "en": "closed folder",
+              "ar": "ملف مغلق",
+              "kind": "object",
+              "x": 48,
+              "y": 86
+            }
+          ]
+        },
+        {
+          "from": 8,
+          "to": 8,
+          "en": "Contact the recruitment team",
+          "ar": "تواصل مع فريق التوظيف",
+          "purposeEn": "Contact the recruitment team.",
+          "purposeAr": "تواصل مع فريق التوظيف.",
+          "image": {
+            "id": "conv-life-l3-089-4",
+            "path": "assets/scenes/conversations/life-l3-089-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Contact the recruitment team",
+            "ar": "تواصل مع فريق التوظيف",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                3,
+                1583,
+                246
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "contact the recruitment team",
+              "ar": "تواصل مع فريق التوظيف",
+              "kind": "phrase",
+              "x": 70,
+              "y": 72
+            },
+            {
+              "en": "contact card",
+              "ar": "بطاقة اتصال",
+              "kind": "object",
+              "x": 47,
+              "y": 53
+            },
+            {
+              "en": "job description sheet",
+              "ar": "ورقة وصف الوظيفة",
+              "kind": "object",
+              "x": 64,
+              "y": 81
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-090",
+      "goalAr": "معرفة من استلم الإشعار",
+      "goalEn": "Finding out who received a notice",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Check who got the room-change notice",
+          "ar": "تحقّق ممن تلقّى إشعار تغيير القاعة",
+          "purposeEn": "Check who got the room-change notice.",
+          "purposeAr": "تحقّق ممن تلقّى إشعار تغيير القاعة.",
+          "image": {
+            "id": "conv-life-l3-090-1",
+            "path": "assets/scenes/conversations/life-l3-090-1.webp",
+            "width": 389,
+            "height": 242,
+            "en": "Check who got the room-change notice",
+            "ar": "تحقّق ممن تلقّى إشعار تغيير القاعة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                252,
+                392,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "check who got the room-change notice",
+              "ar": "تحقّق ممن تلقّى إشعار تغيير القاعة",
+              "kind": "phrase",
+              "x": 49,
+              "y": 57
+            },
+            {
+              "en": "notification icon",
+              "ar": "أيقونة الإشعار",
+              "kind": "object",
+              "x": 47,
+              "y": 52
+            },
+            {
+              "en": "door notice",
+              "ar": "إشعار على الباب",
+              "kind": "object",
+              "x": 78,
+              "y": 38
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Ask to forward the notice",
+          "ar": "اطلب إعادة إرسال الإشعار",
+          "purposeEn": "Ask to forward the notice.",
+          "purposeAr": "اطلب إعادة إرسال الإشعار.",
+          "image": {
+            "id": "conv-life-l3-090-2",
+            "path": "assets/scenes/conversations/life-l3-090-2.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Ask to forward the notice",
+            "ar": "اطلب إعادة إرسال الإشعار",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                398,
+                252,
+                788,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask to forward the notice",
+              "ar": "اطلب إعادة إرسال الإشعار",
+              "kind": "phrase",
+              "x": 40,
+              "y": 64
+            },
+            {
+              "en": "phone notification",
+              "ar": "إشعار على الهاتف",
+              "kind": "object",
+              "x": 42,
+              "y": 89
+            },
+            {
+              "en": "laptop",
+              "ar": "حاسوب محمول",
+              "kind": "object",
+              "x": 79,
+              "y": 76
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Notice the missing recipients",
+          "ar": "انتبه إلى المستلمين الذين لم يصلهم الإشعار",
+          "purposeEn": "Notice the missing recipients.",
+          "purposeAr": "انتبه إلى المستلمين الذين لم يصلهم الإشعار.",
+          "image": {
+            "id": "conv-life-l3-090-3",
+            "path": "assets/scenes/conversations/life-l3-090-3.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Notice the missing recipients",
+            "ar": "انتبه إلى المستلمين الذين لم يصلهم الإشعار",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                794,
+                252,
+                1186,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "notice the missing recipients",
+              "ar": "انتبه إلى المستلمين الذين لم يصلهم الإشعار",
+              "kind": "phrase",
+              "x": 41,
+              "y": 69
+            },
+            {
+              "en": "recipient icons",
+              "ar": "أيقونات المستلمين",
+              "kind": "object",
+              "x": 57,
+              "y": 80
+            },
+            {
+              "en": "surprised",
+              "ar": "متفاجئ",
+              "kind": "description",
+              "x": 72,
+              "y": 33
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Use the shared mailing list",
+          "ar": "استخدم قائمة البريد المشتركة",
+          "purposeEn": "Use the shared mailing list.",
+          "purposeAr": "استخدم قائمة البريد المشتركة.",
+          "image": {
+            "id": "conv-life-l3-090-4",
+            "path": "assets/scenes/conversations/life-l3-090-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Use the shared mailing list",
+            "ar": "استخدم قائمة البريد المشتركة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                252,
+                1583,
+                494
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "use the shared mailing list",
+              "ar": "استخدم قائمة البريد المشتركة",
+              "kind": "phrase",
+              "x": 58,
+              "y": 67
+            },
+            {
+              "en": "group icon",
+              "ar": "أيقونة المجموعة",
+              "kind": "object",
+              "x": 56,
+              "y": 66
+            },
+            {
+              "en": "confirmation check mark",
+              "ar": "علامة تأكيد",
+              "kind": "object",
+              "x": 56,
+              "y": 80
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-091",
+      "goalAr": "التحقّق من إغلاق المدرسة",
+      "goalEn": "Checking whether school is closed",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Check whether the school is open",
+          "ar": "تحقّق مما إذا كانت المدرسة مفتوحة",
+          "purposeEn": "Check whether the school is open.",
+          "purposeAr": "تحقّق مما إذا كانت المدرسة مفتوحة.",
+          "image": {
+            "id": "conv-life-l3-091-1",
+            "path": "assets/scenes/conversations/life-l3-091-1.webp",
+            "width": 389,
+            "height": 239,
+            "en": "Check whether the school is open",
+            "ar": "تحقّق مما إذا كانت المدرسة مفتوحة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                500,
+                392,
+                739
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "check whether the school is open",
+              "ar": "تحقّق مما إذا كانت المدرسة مفتوحة",
+              "kind": "phrase",
+              "x": 49,
+              "y": 62
+            },
+            {
+              "en": "bucket",
+              "ar": "دلو",
+              "kind": "object",
+              "x": 55,
+              "y": 79
+            },
+            {
+              "en": "wet floor sign",
+              "ar": "لافتة أرضية مبلّلة",
+              "kind": "object",
+              "x": 69,
+              "y": 73
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Find the online lesson",
+          "ar": "اعثر على الدرس عبر الإنترنت",
+          "purposeEn": "Find the online lesson.",
+          "purposeAr": "اعثر على الدرس عبر الإنترنت.",
+          "image": {
+            "id": "conv-life-l3-091-2",
+            "path": "assets/scenes/conversations/life-l3-091-2.webp",
+            "width": 390,
+            "height": 239,
+            "en": "Find the online lesson",
+            "ar": "اعثر على الدرس عبر الإنترنت",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                398,
+                500,
+                788,
+                739
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "find the online lesson",
+              "ar": "اعثر على الدرس عبر الإنترنت",
+              "kind": "phrase",
+              "x": 52,
+              "y": 59
+            },
+            {
+              "en": "lesson video",
+              "ar": "فيديو الدرس",
+              "kind": "object",
+              "x": 56,
+              "y": 52
+            },
+            {
+              "en": "open notebook",
+              "ar": "دفتر مفتوح",
+              "kind": "object",
+              "x": 75,
+              "y": 94
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Put the exercise in your bag",
+          "ar": "ضع التمرين في حقيبتك",
+          "purposeEn": "Put the exercise in your bag.",
+          "purposeAr": "ضع التمرين في حقيبتك.",
+          "image": {
+            "id": "conv-life-l3-091-3",
+            "path": "assets/scenes/conversations/life-l3-091-3.webp",
+            "width": 392,
+            "height": 239,
+            "en": "Put the exercise in your bag",
+            "ar": "ضع التمرين في حقيبتك",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                794,
+                500,
+                1186,
+                739
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "put the exercise in your bag",
+              "ar": "ضع التمرين في حقيبتك",
+              "kind": "phrase",
+              "x": 53,
+              "y": 80
+            },
+            {
+              "en": "exercise sheet",
+              "ar": "ورقة تمرين",
+              "kind": "object",
+              "x": 20,
+              "y": 86
+            },
+            {
+              "en": "backpack",
+              "ar": "حقيبة ظهر",
+              "kind": "object",
+              "x": 77,
+              "y": 83
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "See you tomorrow at school",
+          "ar": "أراك غدًا في المدرسة",
+          "purposeEn": "See you tomorrow at school.",
+          "purposeAr": "أراك غدًا في المدرسة.",
+          "image": {
+            "id": "conv-life-l3-091-4",
+            "path": "assets/scenes/conversations/life-l3-091-4.webp",
+            "width": 390,
+            "height": 239,
+            "en": "See you tomorrow at school",
+            "ar": "أراك غدًا في المدرسة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                500,
+                1583,
+                739
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "see you tomorrow at school",
+              "ar": "أراك غدًا في المدرسة",
+              "kind": "phrase",
+              "x": 40,
+              "y": 58
+            },
+            {
+              "en": "school entrance",
+              "ar": "مدخل المدرسة",
+              "kind": "object",
+              "x": 56,
+              "y": 42
+            },
+            {
+              "en": "wave to someone",
+              "ar": "يلوّح لشخص",
+              "kind": "action",
+              "x": 67,
+              "y": 53
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-092",
+      "goalAr": "استكشاف تغيّر الحي عبر الزمن",
+      "goalEn": "Exploring how a neighborhood changed",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Ask what used to be here",
+          "ar": "اسأل عمّا كان موجودًا هنا",
+          "purposeEn": "Ask what used to be here.",
+          "purposeAr": "اسأل عمّا كان موجودًا هنا.",
+          "image": {
+            "id": "conv-life-l3-092-1",
+            "path": "assets/scenes/conversations/life-l3-092-1.webp",
+            "width": 389,
+            "height": 244,
+            "en": "Ask what used to be here",
+            "ar": "اسأل عمّا كان موجودًا هنا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                745,
+                392,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask what used to be here",
+              "ar": "اسأل عمّا كان موجودًا هنا",
+              "kind": "phrase",
+              "x": 60,
+              "y": 54
+            },
+            {
+              "en": "modern library",
+              "ar": "مكتبة حديثة",
+              "kind": "object",
+              "x": 58,
+              "y": 45
+            },
+            {
+              "en": "glass facade",
+              "ar": "واجهة زجاجية",
+              "kind": "object",
+              "x": 75,
+              "y": 58
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Compare the old and new buildings",
+          "ar": "قارن المبنى القديم بالجديد",
+          "purposeEn": "Compare the old and new buildings.",
+          "purposeAr": "قارن المبنى القديم بالجديد.",
+          "image": {
+            "id": "conv-life-l3-092-2",
+            "path": "assets/scenes/conversations/life-l3-092-2.webp",
+            "width": 390,
+            "height": 244,
+            "en": "Compare the old and new buildings",
+            "ar": "قارن المبنى القديم بالجديد",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                398,
+                745,
+                788,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "compare the old and new buildings",
+              "ar": "قارن المبنى القديم بالجديد",
+              "kind": "phrase",
+              "x": 37,
+              "y": 67
+            },
+            {
+              "en": "archival photograph",
+              "ar": "صورة أرشيفية",
+              "kind": "object",
+              "x": 39,
+              "y": 69
+            },
+            {
+              "en": "modern building photo",
+              "ar": "صورة المبنى الحديث",
+              "kind": "object",
+              "x": 78,
+              "y": 67
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Find the wall they kept",
+          "ar": "اعثر على الجدار الذي أبقوه",
+          "purposeEn": "Find the wall they kept.",
+          "purposeAr": "اعثر على الجدار الذي أبقوه.",
+          "image": {
+            "id": "conv-life-l3-092-3",
+            "path": "assets/scenes/conversations/life-l3-092-3.webp",
+            "width": 392,
+            "height": 244,
+            "en": "Find the wall they kept",
+            "ar": "اعثر على الجدار الذي أبقوه",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                794,
+                745,
+                1186,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "find the wall they kept",
+              "ar": "اعثر على الجدار الذي أبقوه",
+              "kind": "phrase",
+              "x": 30,
+              "y": 36
+            },
+            {
+              "en": "old stone wall",
+              "ar": "جدار حجري قديم",
+              "kind": "object",
+              "x": 19,
+              "y": 59
+            },
+            {
+              "en": "bookshelves",
+              "ar": "رفوف كتب",
+              "kind": "object",
+              "x": 49,
+              "y": 29
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Come and see for yourself",
+          "ar": "تعال وانظر بنفسك",
+          "purposeEn": "Come and see for yourself.",
+          "purposeAr": "تعال وانظر بنفسك.",
+          "image": {
+            "id": "conv-life-l3-092-4",
+            "path": "assets/scenes/conversations/life-l3-092-4.webp",
+            "width": 390,
+            "height": 244,
+            "en": "Come and see for yourself",
+            "ar": "تعال وانظر بنفسك",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                745,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "come and see for yourself",
+              "ar": "تعال وانظر بنفسك",
+              "kind": "phrase",
+              "x": 35,
+              "y": 53
+            },
+            {
+              "en": "stone block",
+              "ar": "كتلة حجرية",
+              "kind": "object",
+              "x": 23,
+              "y": 52
+            },
+            {
+              "en": "curious",
+              "ar": "فضولي",
+              "kind": "description",
+              "x": 61,
+              "y": 43
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
