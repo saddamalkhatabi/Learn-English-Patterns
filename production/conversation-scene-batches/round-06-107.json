@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "d1480672161701cc34dedf432e22321cc2608892398886a8e424bbe45526727c"
+  },
+  "conversations": [
+    {
+      "id": "l3-197",
+      "goalAr": "طلب إعادة عبارة مفيدة",
+      "goalEn": "Asking someone to repeat a useful phrase",
+      "stages": [
+        {
+          "from": 1,
+          "to": 2,
+          "en": "Ask the speaker to repeat the last part",
+          "ar": "اطلب من المتحدث إعادة الجزء الأخير",
+          "purposeEn": "Ask the speaker to repeat the last part.",
+          "purposeAr": "اطلب من المتحدث إعادة الجزء الأخير.",
+          "image": {
+            "id": "conv-life-l3-197-1",
+            "path": "assets/scenes/conversations/life-l3-197-1.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Ask the speaker to repeat the last part",
+            "ar": "اطلب من المتحدث إعادة الجزء الأخير",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                393,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask the speaker to repeat the last part",
+              "ar": "اطلب من المتحدث إعادة الجزء الأخير",
+              "kind": "phrase",
+              "x": 41,
+              "y": 60
+            },
+            {
+              "en": "smartphone",
+              "ar": "هاتف ذكي",
+              "kind": "object",
+              "x": 24,
+              "y": 89
+            },
+            {
+              "en": "arrival card",
+              "ar": "بطاقة الوصول",
+              "kind": "object",
+              "x": 45,
+              "y": 91
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "en": "Replace one ending with another",
+          "ar": "استبدل نهاية العبارة بأخرى",
+          "purposeEn": "Replace one ending with another.",
+          "purposeAr": "استبدل نهاية العبارة بأخرى.",
+          "image": {
+            "id": "conv-life-l3-197-2",
+            "path": "assets/scenes/conversations/life-l3-197-2.webp",
+            "width": 392,
+            "height": 241,
+            "en": "Replace one ending with another",
+            "ar": "استبدل نهاية العبارة بأخرى",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                3,
+                791,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "replace one ending with another",
+              "ar": "استبدل نهاية العبارة بأخرى",
+              "kind": "phrase",
+              "x": 49,
+              "y": 58
+            },
+            {
+              "en": "arrival pictogram",
+              "ar": "رمز الوصول",
+              "kind": "object",
+              "x": 43,
+              "y": 89
+            },
+            {
+              "en": "work pictogram",
+              "ar": "رمز العمل",
+              "kind": "object",
+              "x": 70,
+              "y": 89
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 7,
+          "en": "Say what needs to happen first",
+          "ar": "اذكر ما يجب أن يحدث أولًا",
+          "purposeEn": "Say what needs to happen first.",
+          "purposeAr": "اذكر ما يجب أن يحدث أولًا.",
+          "image": {
+            "id": "conv-life-l3-197-3",
+            "path": "assets/scenes/conversations/life-l3-197-3.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Say what needs to happen first",
+            "ar": "اذكر ما يجب أن يحدث أولًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                3,
+                1187,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "say what needs to happen first",
+              "ar": "اذكر ما يجب أن يحدث أولًا",
+              "kind": "phrase",
+              "x": 47,
+              "y": 62
+            },
+            {
+              "en": "arrival card",
+              "ar": "بطاقة الوصول",
+              "kind": "object",
+              "x": 35,
+              "y": 69
+            },
+            {
+              "en": "finish-work card",
+              "ar": "بطاقة الانتهاء من العمل",
+              "kind": "object",
+              "x": 68,
+              "y": 70
+            }
+          ]
+        },
+        {
+          "from": 8,
+          "to": 8,
+          "en": "Say the new example and check it",
+          "ar": "قل المثال الجديد وتحقّق من صحته",
+          "purposeEn": "Say the new example and check it.",
+          "purposeAr": "قل المثال الجديد وتحقّق من صحته.",
+          "image": {
+            "id": "conv-life-l3-197-4",
+            "path": "assets/scenes/conversations/life-l3-197-4.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Say the new example and check it",
+            "ar": "قل المثال الجديد وتحقّق من صحته",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                3,
+                1583,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "say the new example and check it",
+              "ar": "قل المثال الجديد وتحقّق من صحته",
+              "kind": "phrase",
+              "x": 60,
+              "y": 68
+            },
+            {
+              "en": "sequence card",
+              "ar": "بطاقة ترتيب",
+              "kind": "object",
+              "x": 78,
+              "y": 88
+            },
+            {
+              "en": "give a thumbs-up",
+              "ar": "يرفع إبهامه إشارةً إلى الرضا",
+              "kind": "action",
+              "x": 85,
+              "y": 62
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-198",
+      "goalAr": "السؤال إن كان الضيف يحتاج شيئًا آخر",
+      "goalEn": "Asking whether a guest needs anything else",
+      "stages": [
+        {
+          "from": 1,
+          "to": 2,
+          "en": "Offer something before clearing the table",
+          "ar": "اعرض شيئًا قبل رفع الأطباق",
+          "purposeEn": "Offer something before clearing the table.",
+          "purposeAr": "اعرض شيئًا قبل رفع الأطباق.",
+          "image": {
+            "id": "conv-life-l3-198-1",
+            "path": "assets/scenes/conversations/life-l3-198-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Offer something before clearing the table",
+            "ar": "اعرض شيئًا قبل رفع الأطباق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                250,
+                393,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "offer something before clearing the table",
+              "ar": "اعرض شيئًا قبل رفع الأطباق",
+              "kind": "phrase",
+              "x": 48,
+              "y": 68
+            },
+            {
+              "en": "glass of water",
+              "ar": "كأس ماء",
+              "kind": "object",
+              "x": 52,
+              "y": 79
+            },
+            {
+              "en": "soup bowl",
+              "ar": "وعاء حساء",
+              "kind": "object",
+              "x": 72,
+              "y": 81
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "en": "Ask whether the portion was enough",
+          "ar": "اسأل هل كانت الحصّة كافية",
+          "purposeEn": "Ask whether the portion was enough.",
+          "purposeAr": "اسأل هل كانت الحصّة كافية.",
+          "image": {
+            "id": "conv-life-l3-198-2",
+            "path": "assets/scenes/conversations/life-l3-198-2.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Ask whether the portion was enough",
+            "ar": "اسأل هل كانت الحصّة كافية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                250,
+                791,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask whether the portion was enough",
+              "ar": "اسأل هل كانت الحصّة كافية",
+              "kind": "phrase",
+              "x": 53,
+              "y": 67
+            },
+            {
+              "en": "soup bowl",
+              "ar": "وعاء حساء",
+              "kind": "object",
+              "x": 64,
+              "y": 83
+            },
+            {
+              "en": "water glass",
+              "ar": "كأس ماء",
+              "kind": "object",
+              "x": 53,
+              "y": 62
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 7,
+          "en": "Offer to write down the recipe",
+          "ar": "اعرض تدوين الوصفة",
+          "purposeEn": "Offer to write down the recipe.",
+          "purposeAr": "اعرض تدوين الوصفة.",
+          "image": {
+            "id": "conv-life-l3-198-3",
+            "path": "assets/scenes/conversations/life-l3-198-3.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Offer to write down the recipe",
+            "ar": "اعرض تدوين الوصفة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                250,
+                1187,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "offer to write down the recipe",
+              "ar": "اعرض تدوين الوصفة",
+              "kind": "phrase",
+              "x": 45,
+              "y": 64
+            },
+            {
+              "en": "recipe card",
+              "ar": "بطاقة وصفة",
+              "kind": "object",
+              "x": 44,
+              "y": 61
+            },
+            {
+              "en": "tomato illustration",
+              "ar": "رسم طماطم",
+              "kind": "object",
+              "x": 37,
+              "y": 61
+            }
+          ]
+        },
+        {
+          "from": 8,
+          "to": 8,
+          "en": "Send the recipe so it is easy to find later",
+          "ar": "أرسل الوصفة لتسهيل العثور عليها لاحقًا",
+          "purposeEn": "Send the recipe so it is easy to find later.",
+          "purposeAr": "أرسل الوصفة لتسهيل العثور عليها لاحقًا.",
+          "image": {
+            "id": "conv-life-l3-198-4",
+            "path": "assets/scenes/conversations/life-l3-198-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Send the recipe so it is easy to find later",
+            "ar": "أرسل الوصفة لتسهيل العثور عليها لاحقًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                250,
+                1583,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "send the recipe so it is easy to find later",
+              "ar": "أرسل الوصفة لتسهيل العثور عليها لاحقًا",
+              "kind": "phrase",
+              "x": 53,
+              "y": 68
+            },
+            {
+              "en": "recipe on a phone",
+              "ar": "وصفة على الهاتف",
+              "kind": "object",
+              "x": 50,
+              "y": 68
+            },
+            {
+              "en": "cooking pot icon",
+              "ar": "رمز قدر طبخ",
+              "kind": "object",
+              "x": 49,
+              "y": 80
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-199",
+      "goalAr": "منح شخص وقتًا لاتخاذ قرار",
+      "goalEn": "Giving someone space to decide",
+      "stages": [
+        {
+          "from": 1,
+          "to": 2,
+          "en": "Say that you still have doubts",
+          "ar": "قل إن لديك شكوكًا",
+          "purposeEn": "Say that you still have doubts.",
+          "purposeAr": "قل إن لديك شكوكًا.",
+          "image": {
+            "id": "conv-life-l3-199-1",
+            "path": "assets/scenes/conversations/life-l3-199-1.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Say that you still have doubts",
+            "ar": "قل إن لديك شكوكًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                498,
+                393,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "say that you still have doubts",
+              "ar": "قل إن لديك شكوكًا",
+              "kind": "phrase",
+              "x": 44,
+              "y": 58
+            },
+            {
+              "en": "venue photos",
+              "ar": "صور أماكن الفعالية",
+              "kind": "object",
+              "x": 55,
+              "y": 67
+            },
+            {
+              "en": "doubtful",
+              "ar": "متشكّك",
+              "kind": "description",
+              "x": 16,
+              "y": 26
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "en": "Explain why the room may be too small",
+          "ar": "اشرح لماذا قد تكون القاعة صغيرة جدًا",
+          "purposeEn": "Explain why the room may be too small.",
+          "purposeAr": "اشرح لماذا قد تكون القاعة صغيرة جدًا.",
+          "image": {
+            "id": "conv-life-l3-199-2",
+            "path": "assets/scenes/conversations/life-l3-199-2.webp",
+            "width": 392,
+            "height": 242,
+            "en": "Explain why the room may be too small",
+            "ar": "اشرح لماذا قد تكون القاعة صغيرة جدًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                498,
+                791,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "explain why the room may be too small",
+              "ar": "اشرح لماذا قد تكون القاعة صغيرة جدًا",
+              "kind": "phrase",
+              "x": 52,
+              "y": 70
+            },
+            {
+              "en": "room layout",
+              "ar": "مخطّط القاعة",
+              "kind": "object",
+              "x": 40,
+              "y": 72
+            },
+            {
+              "en": "group size chart",
+              "ar": "مخطّط عدد الأشخاص",
+              "kind": "object",
+              "x": 79,
+              "y": 68
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "en": "Look at a larger room before deciding",
+          "ar": "عاين قاعة أكبر قبل اتخاذ القرار",
+          "purposeEn": "Look at a larger room before deciding.",
+          "purposeAr": "عاين قاعة أكبر قبل اتخاذ القرار.",
+          "image": {
+            "id": "conv-life-l3-199-3",
+            "path": "assets/scenes/conversations/life-l3-199-3.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Look at a larger room before deciding",
+            "ar": "عاين قاعة أكبر قبل اتخاذ القرار",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                498,
+                1187,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "look at a larger room before deciding",
+              "ar": "عاين قاعة أكبر قبل اتخاذ القرار",
+              "kind": "phrase",
+              "x": 56,
+              "y": 58
+            },
+            {
+              "en": "banquet tables",
+              "ar": "طاولات ولائم",
+              "kind": "object",
+              "x": 58,
+              "y": 56
+            },
+            {
+              "en": "chandelier",
+              "ar": "ثريّا",
+              "kind": "object",
+              "x": 60,
+              "y": 16
+            }
+          ]
+        },
+        {
+          "from": 7,
+          "to": 7,
+          "en": "Call to ask about the price",
+          "ar": "اتصل للاستفسار عن السعر",
+          "purposeEn": "Call to ask about the price.",
+          "purposeAr": "اتصل للاستفسار عن السعر.",
+          "image": {
+            "id": "conv-life-l3-199-4",
+            "path": "assets/scenes/conversations/life-l3-199-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Call to ask about the price",
+            "ar": "اتصل للاستفسار عن السعر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                498,
+                1583,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "call to ask about the price",
+              "ar": "اتصل للاستفسار عن السعر",
+              "kind": "phrase",
+              "x": 40,
+              "y": 50
+            },
+            {
+              "en": "price quote sheet",
+              "ar": "ورقة عرض سعر",
+              "kind": "object",
+              "x": 79,
+              "y": 77
+            },
+            {
+              "en": "mobile phone",
+              "ar": "هاتف محمول",
+              "kind": "object",
+              "x": 31,
+              "y": 32
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-200",
+      "goalAr": "التدرّب على محادثة بنهاية مختلفة",
+      "goalEn": "Practising a conversation with a new ending",
+      "stages": [
+        {
+          "from": 1,
+          "to": 2,
+          "en": "Ask when the size will be back in stock",
+          "ar": "اسأل متى سيتوفّر المقاس مجددًا",
+          "purposeEn": "Ask when the size will be back in stock.",
+          "purposeAr": "اسأل متى سيتوفّر المقاس مجددًا.",
+          "image": {
+            "id": "conv-life-l3-200-1",
+            "path": "assets/scenes/conversations/life-l3-200-1.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Ask when the size will be back in stock",
+            "ar": "اسأل متى سيتوفّر المقاس مجددًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                746,
+                393,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask when the size will be back in stock",
+              "ar": "اسأل متى سيتوفّر المقاس مجددًا",
+              "kind": "phrase",
+              "x": 60,
+              "y": 56
+            },
+            {
+              "en": "empty shelf",
+              "ar": "رف فارغ",
+              "kind": "object",
+              "x": 71,
+              "y": 50
+            },
+            {
+              "en": "blue shirt",
+              "ar": "قميص أزرق",
+              "kind": "object",
+              "x": 45,
+              "y": 78
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "en": "Offer to check another branch",
+          "ar": "اعرض التحقّق من فرع آخر",
+          "purposeEn": "Offer to check another branch.",
+          "purposeAr": "اعرض التحقّق من فرع آخر.",
+          "image": {
+            "id": "conv-life-l3-200-2",
+            "path": "assets/scenes/conversations/life-l3-200-2.webp",
+            "width": 392,
+            "height": 243,
+            "en": "Offer to check another branch",
+            "ar": "اعرض التحقّق من فرع آخر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                399,
+                746,
+                791,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "offer to check another branch",
+              "ar": "اعرض التحقّق من فرع آخر",
+              "kind": "phrase",
+              "x": 58,
+              "y": 55
+            },
+            {
+              "en": "branch map",
+              "ar": "خريطة الفروع",
+              "kind": "object",
+              "x": 48,
+              "y": 45
+            },
+            {
+              "en": "availability indicator",
+              "ar": "علامة التوفّر",
+              "kind": "object",
+              "x": 53,
+              "y": 83
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 7,
+          "en": "Reserve the item for collection today",
+          "ar": "احجز القطعة لاستلامها اليوم",
+          "purposeEn": "Reserve the item for collection today.",
+          "purposeAr": "احجز القطعة لاستلامها اليوم.",
+          "image": {
+            "id": "conv-life-l3-200-3",
+            "path": "assets/scenes/conversations/life-l3-200-3.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Reserve the item for collection today",
+            "ar": "احجز القطعة لاستلامها اليوم",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                746,
+                1187,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "reserve the item for collection today",
+              "ar": "احجز القطعة لاستلامها اليوم",
+              "kind": "phrase",
+              "x": 46,
+              "y": 73
+            },
+            {
+              "en": "reservation form",
+              "ar": "استمارة حجز",
+              "kind": "object",
+              "x": 36,
+              "y": 87
+            },
+            {
+              "en": "folded shirt",
+              "ar": "قميص مطوي",
+              "kind": "object",
+              "x": 73,
+              "y": 84
+            }
+          ]
+        },
+        {
+          "from": 8,
+          "to": 8,
+          "en": "Swap roles and try again",
+          "ar": "تبادلوا الأدوار وحاولوا مجددًا",
+          "purposeEn": "Swap roles and try again.",
+          "purposeAr": "تبادلوا الأدوار وحاولوا مجددًا.",
+          "image": {
+            "id": "conv-life-l3-200-4",
+            "path": "assets/scenes/conversations/life-l3-200-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Swap roles and try again",
+            "ar": "تبادلوا الأدوار وحاولوا مجددًا",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                746,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "swap roles and try again",
+              "ar": "تبادلوا الأدوار وحاولوا مجددًا",
+              "kind": "phrase",
+              "x": 53,
+              "y": 61
+            },
+            {
+              "en": "clerk role card",
+              "ar": "بطاقة دور البائع",
+              "kind": "object",
+              "x": 24,
+              "y": 76
+            },
+            {
+              "en": "customer role card",
+              "ar": "بطاقة دور الزبون",
+              "kind": "object",
+              "x": 84,
+              "y": 75
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

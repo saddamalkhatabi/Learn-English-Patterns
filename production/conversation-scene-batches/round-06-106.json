@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "atlas": {
+    "width": 1586,
+    "height": 992,
+    "sha256": "28989e18e1ec72fec638e48f4a7b21e329881a8b95f190119921da118b6463ec"
+  },
+  "conversations": [
+    {
+      "id": "l3-193",
+      "goalAr": "إرشاد شخص إلى مكان وضع طرد",
+      "goalEn": "Telling someone what to do with a delivery",
+      "stages": [
+        {
+          "from": 1,
+          "to": 2,
+          "en": "Open the door for a delivery",
+          "ar": "افتح الباب لاستلام الشحنة",
+          "purposeEn": "Open the door for a delivery.",
+          "purposeAr": "افتح الباب لاستلام الشحنة.",
+          "image": {
+            "id": "conv-life-l3-193-1",
+            "path": "assets/scenes/conversations/life-l3-193-1.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Open the door for a delivery",
+            "ar": "افتح الباب لاستلام الشحنة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                3,
+                394,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "open the door for a delivery",
+              "ar": "افتح الباب لاستلام الشحنة",
+              "kind": "phrase",
+              "x": 34,
+              "y": 61
+            },
+            {
+              "en": "mobile phone",
+              "ar": "هاتف محمول",
+              "kind": "object",
+              "x": 27,
+              "y": 25
+            },
+            {
+              "en": "parcel",
+              "ar": "طرد",
+              "kind": "object",
+              "x": 76,
+              "y": 78
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "en": "Explain that the shelf by the door is full",
+          "ar": "اشرح أن الرف قرب الباب ممتلئ",
+          "purposeEn": "Explain that the shelf by the door is full.",
+          "purposeAr": "اشرح أن الرف قرب الباب ممتلئ.",
+          "image": {
+            "id": "conv-life-l3-193-2",
+            "path": "assets/scenes/conversations/life-l3-193-2.webp",
+            "width": 391,
+            "height": 241,
+            "en": "Explain that the shelf by the door is full",
+            "ar": "اشرح أن الرف قرب الباب ممتلئ",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                3,
+                791,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "explain that the shelf by the door is full",
+              "ar": "اشرح أن الرف قرب الباب ممتلئ",
+              "kind": "phrase",
+              "x": 49,
+              "y": 64
+            },
+            {
+              "en": "full shelf",
+              "ar": "رف ممتلئ",
+              "kind": "object",
+              "x": 55,
+              "y": 60
+            },
+            {
+              "en": "wicker basket",
+              "ar": "سلّة خوص",
+              "kind": "object",
+              "x": 71,
+              "y": 62
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "en": "Put the parcel on the shelf under the window",
+          "ar": "ضع الطرد على الرف تحت النافذة",
+          "purposeEn": "Put the parcel on the shelf under the window.",
+          "purposeAr": "ضع الطرد على الرف تحت النافذة.",
+          "image": {
+            "id": "conv-life-l3-193-3",
+            "path": "assets/scenes/conversations/life-l3-193-3.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Put the parcel on the shelf under the window",
+            "ar": "ضع الطرد على الرف تحت النافذة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                3,
+                1187,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "put the parcel on the shelf under the window",
+              "ar": "ضع الطرد على الرف تحت النافذة",
+              "kind": "phrase",
+              "x": 59,
+              "y": 71
+            },
+            {
+              "en": "shelf under the window",
+              "ar": "رف تحت النافذة",
+              "kind": "object",
+              "x": 55,
+              "y": 83
+            },
+            {
+              "en": "shipping label",
+              "ar": "ملصق الشحن",
+              "kind": "object",
+              "x": 79,
+              "y": 71
+            }
+          ]
+        },
+        {
+          "from": 7,
+          "to": 7,
+          "en": "Leave the parcel at reception",
+          "ar": "اترك الطرد في الاستقبال",
+          "purposeEn": "Leave the parcel at reception.",
+          "purposeAr": "اترك الطرد في الاستقبال.",
+          "image": {
+            "id": "conv-life-l3-193-4",
+            "path": "assets/scenes/conversations/life-l3-193-4.webp",
+            "width": 390,
+            "height": 241,
+            "en": "Leave the parcel at reception",
+            "ar": "اترك الطرد في الاستقبال",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                3,
+                1583,
+                244
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "leave the parcel at reception",
+              "ar": "اترك الطرد في الاستقبال",
+              "kind": "phrase",
+              "x": 61,
+              "y": 61
+            },
+            {
+              "en": "parcel",
+              "ar": "طرد",
+              "kind": "object",
+              "x": 60,
+              "y": 61
+            },
+            {
+              "en": "reception counter",
+              "ar": "منضدة الاستقبال",
+              "kind": "object",
+              "x": 79,
+              "y": 81
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-194",
+      "goalAr": "توضيح مكان انتظار الزوار",
+      "goalEn": "Clarifying where visitors should wait",
+      "stages": [
+        {
+          "from": 1,
+          "to": 2,
+          "en": "Tell the group where to wait",
+          "ar": "أخبر المجموعة أين تنتظر",
+          "purposeEn": "Tell the group where to wait.",
+          "purposeAr": "أخبر المجموعة أين تنتظر.",
+          "image": {
+            "id": "conv-life-l3-194-1",
+            "path": "assets/scenes/conversations/life-l3-194-1.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Tell the group where to wait",
+            "ar": "أخبر المجموعة أين تنتظر",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                250,
+                394,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "tell the group where to wait",
+              "ar": "أخبر المجموعة أين تنتظر",
+              "kind": "phrase",
+              "x": 42,
+              "y": 59
+            },
+            {
+              "en": "row of seats",
+              "ar": "صف مقاعد",
+              "kind": "object",
+              "x": 58,
+              "y": 61
+            },
+            {
+              "en": "shelter canopy",
+              "ar": "سقف المظلّة",
+              "kind": "object",
+              "x": 56,
+              "y": 19
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "en": "Ask who went to the shuttle stop",
+          "ar": "اسأل من ذهب إلى موقف الحافلة",
+          "purposeEn": "Ask who went to the shuttle stop.",
+          "purposeAr": "اسأل من ذهب إلى موقف الحافلة.",
+          "image": {
+            "id": "conv-life-l3-194-2",
+            "path": "assets/scenes/conversations/life-l3-194-2.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Ask who went to the shuttle stop",
+            "ar": "اسأل من ذهب إلى موقف الحافلة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                250,
+                791,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask who went to the shuttle stop",
+              "ar": "اسأل من ذهب إلى موقف الحافلة",
+              "kind": "phrase",
+              "x": 44,
+              "y": 49
+            },
+            {
+              "en": "shuttle stop sign",
+              "ar": "لافتة موقف حافلة",
+              "kind": "object",
+              "x": 35,
+              "y": 23
+            },
+            {
+              "en": "waiting group",
+              "ar": "مجموعة تنتظر",
+              "kind": "object",
+              "x": 81,
+              "y": 56
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "en": "Check if someone is on the way",
+          "ar": "تحقّق مما إذا كان الشخص في الطريق",
+          "purposeEn": "Check if someone is on the way.",
+          "purposeAr": "تحقّق مما إذا كان الشخص في الطريق.",
+          "image": {
+            "id": "conv-life-l3-194-3",
+            "path": "assets/scenes/conversations/life-l3-194-3.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Check if someone is on the way",
+            "ar": "تحقّق مما إذا كان الشخص في الطريق",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                250,
+                1187,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "check if someone is on the way",
+              "ar": "تحقّق مما إذا كان الشخص في الطريق",
+              "kind": "phrase",
+              "x": 47,
+              "y": 44
+            },
+            {
+              "en": "mobile phone",
+              "ar": "هاتف محمول",
+              "kind": "object",
+              "x": 49,
+              "y": 44
+            },
+            {
+              "en": "bench seat",
+              "ar": "مقعد طويل",
+              "kind": "object",
+              "x": 66,
+              "y": 77
+            }
+          ]
+        },
+        {
+          "from": 7,
+          "to": 7,
+          "en": "Wait by the main doors",
+          "ar": "انتظر عند الأبواب الرئيسية",
+          "purposeEn": "Wait by the main doors.",
+          "purposeAr": "انتظر عند الأبواب الرئيسية.",
+          "image": {
+            "id": "conv-life-l3-194-4",
+            "path": "assets/scenes/conversations/life-l3-194-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Wait by the main doors",
+            "ar": "انتظر عند الأبواب الرئيسية",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                250,
+                1583,
+                492
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "wait by the main doors",
+              "ar": "انتظر عند الأبواب الرئيسية",
+              "kind": "phrase",
+              "x": 55,
+              "y": 43
+            },
+            {
+              "en": "main doors",
+              "ar": "الأبواب الرئيسية",
+              "kind": "object",
+              "x": 68,
+              "y": 46
+            },
+            {
+              "en": "wave to someone",
+              "ar": "يلوّح لشخص",
+              "kind": "action",
+              "x": 52,
+              "y": 21
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-195",
+      "goalAr": "طلب المساعدة دون تسليم المهمة كاملة",
+      "goalEn": "Asking for help without handing over the task",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Ask someone to show you the first step",
+          "ar": "اطلب من شخص أن يريك الخطوة الأولى",
+          "purposeEn": "Ask someone to show you the first step.",
+          "purposeAr": "اطلب من شخص أن يريك الخطوة الأولى.",
+          "image": {
+            "id": "conv-life-l3-195-1",
+            "path": "assets/scenes/conversations/life-l3-195-1.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Ask someone to show you the first step",
+            "ar": "اطلب من شخص أن يريك الخطوة الأولى",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                498,
+                394,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask someone to show you the first step",
+              "ar": "اطلب من شخص أن يريك الخطوة الأولى",
+              "kind": "phrase",
+              "x": 47,
+              "y": 65
+            },
+            {
+              "en": "spreadsheet",
+              "ar": "جدول بيانات",
+              "kind": "object",
+              "x": 56,
+              "y": 63
+            },
+            {
+              "en": "puzzled",
+              "ar": "محتار",
+              "kind": "description",
+              "x": 22,
+              "y": 32
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Select the two columns",
+          "ar": "حدّد العمودين",
+          "purposeEn": "Select the two columns.",
+          "purposeAr": "حدّد العمودين.",
+          "image": {
+            "id": "conv-life-l3-195-2",
+            "path": "assets/scenes/conversations/life-l3-195-2.webp",
+            "width": 391,
+            "height": 242,
+            "en": "Select the two columns",
+            "ar": "حدّد العمودين",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                498,
+                791,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "select the two columns",
+              "ar": "حدّد العمودين",
+              "kind": "phrase",
+              "x": 52,
+              "y": 65
+            },
+            {
+              "en": "highlighted columns",
+              "ar": "أعمدة مظلّلة",
+              "kind": "object",
+              "x": 61,
+              "y": 63
+            },
+            {
+              "en": "laptop keyboard",
+              "ar": "لوحة مفاتيح الحاسوب",
+              "kind": "object",
+              "x": 47,
+              "y": 89
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Choose an appropriate chart type",
+          "ar": "اختر نوع المخطّط المناسب",
+          "purposeEn": "Choose an appropriate chart type.",
+          "purposeAr": "اختر نوع المخطّط المناسب.",
+          "image": {
+            "id": "conv-life-l3-195-3",
+            "path": "assets/scenes/conversations/life-l3-195-3.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Choose an appropriate chart type",
+            "ar": "اختر نوع المخطّط المناسب",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                498,
+                1187,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "choose an appropriate chart type",
+              "ar": "اختر نوع المخطّط المناسب",
+              "kind": "phrase",
+              "x": 59,
+              "y": 61
+            },
+            {
+              "en": "chart menu",
+              "ar": "قائمة المخطّطات",
+              "kind": "object",
+              "x": 63,
+              "y": 58
+            },
+            {
+              "en": "line chart icon",
+              "ar": "أيقونة مخطّط خطّي",
+              "kind": "object",
+              "x": 70,
+              "y": 52
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Use a bar chart to compare totals",
+          "ar": "استخدم مخطّط أعمدة لمقارنة المجاميع",
+          "purposeEn": "Use a bar chart to compare totals.",
+          "purposeAr": "استخدم مخطّط أعمدة لمقارنة المجاميع.",
+          "image": {
+            "id": "conv-life-l3-195-4",
+            "path": "assets/scenes/conversations/life-l3-195-4.webp",
+            "width": 390,
+            "height": 242,
+            "en": "Use a bar chart to compare totals",
+            "ar": "استخدم مخطّط أعمدة لمقارنة المجاميع",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                498,
+                1583,
+                740
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "use a bar chart to compare totals",
+              "ar": "استخدم مخطّط أعمدة لمقارنة المجاميع",
+              "kind": "phrase",
+              "x": 53,
+              "y": 72
+            },
+            {
+              "en": "bar chart",
+              "ar": "مخطّط أعمدة",
+              "kind": "object",
+              "x": 52,
+              "y": 65
+            },
+            {
+              "en": "blue bars",
+              "ar": "أعمدة زرقاء",
+              "kind": "object",
+              "x": 55,
+              "y": 74
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-196",
+      "goalAr": "مناقشة صوت جهاز مزعج دون تخمين السبب",
+      "goalEn": "Discussing a noisy appliance without guessing",
+      "stages": [
+        {
+          "from": 1,
+          "to": 1,
+          "en": "Ask whether someone heard the fan noise",
+          "ar": "اسأل إن كان شخص قد سمع ضجيج المروحة",
+          "purposeEn": "Ask whether someone heard the fan noise.",
+          "purposeAr": "اسأل إن كان شخص قد سمع ضجيج المروحة.",
+          "image": {
+            "id": "conv-life-l3-196-1",
+            "path": "assets/scenes/conversations/life-l3-196-1.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Ask whether someone heard the fan noise",
+            "ar": "اسأل إن كان شخص قد سمع ضجيج المروحة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                3,
+                746,
+                394,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "ask whether someone heard the fan noise",
+              "ar": "اسأل إن كان شخص قد سمع ضجيج المروحة",
+              "kind": "phrase",
+              "x": 40,
+              "y": 49
+            },
+            {
+              "en": "standing fan",
+              "ar": "مروحة قائمة",
+              "kind": "object",
+              "x": 58,
+              "y": 47
+            },
+            {
+              "en": "cup your hand around your ear",
+              "ar": "يضع كفّه حول أذنه",
+              "kind": "action",
+              "x": 36,
+              "y": 37
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "en": "Turn the fan off",
+          "ar": "أطفئ المروحة",
+          "purposeEn": "Turn the fan off.",
+          "purposeAr": "أطفئ المروحة.",
+          "image": {
+            "id": "conv-life-l3-196-2",
+            "path": "assets/scenes/conversations/life-l3-196-2.webp",
+            "width": 391,
+            "height": 243,
+            "en": "Turn the fan off",
+            "ar": "أطفئ المروحة",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                400,
+                746,
+                791,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "turn the fan off",
+              "ar": "أطفئ المروحة",
+              "kind": "phrase",
+              "x": 55,
+              "y": 76
+            },
+            {
+              "en": "speed control knob",
+              "ar": "مقبض ضبط السرعة",
+              "kind": "object",
+              "x": 51,
+              "y": 77
+            },
+            {
+              "en": "fan grille",
+              "ar": "شبك المروحة",
+              "kind": "object",
+              "x": 57,
+              "y": 35
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "en": "Tell maintenance what you heard",
+          "ar": "أخبر الصيانة بما سمعته",
+          "purposeEn": "Tell maintenance what you heard.",
+          "purposeAr": "أخبر الصيانة بما سمعته.",
+          "image": {
+            "id": "conv-life-l3-196-3",
+            "path": "assets/scenes/conversations/life-l3-196-3.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Tell maintenance what you heard",
+            "ar": "أخبر الصيانة بما سمعته",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                797,
+                746,
+                1187,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "tell maintenance what you heard",
+              "ar": "أخبر الصيانة بما سمعته",
+              "kind": "phrase",
+              "x": 44,
+              "y": 59
+            },
+            {
+              "en": "hard hat",
+              "ar": "خوذة واقية",
+              "kind": "object",
+              "x": 83,
+              "y": 14
+            },
+            {
+              "en": "clipboard",
+              "ar": "لوح تثبيت الأوراق",
+              "kind": "object",
+              "x": 76,
+              "y": 85
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": 6,
+          "en": "Write when the noise began",
+          "ar": "دوّن متى بدأ الضجيج",
+          "purposeEn": "Write when the noise began.",
+          "purposeAr": "دوّن متى بدأ الضجيج.",
+          "image": {
+            "id": "conv-life-l3-196-4",
+            "path": "assets/scenes/conversations/life-l3-196-4.webp",
+            "width": 390,
+            "height": 243,
+            "en": "Write when the noise began",
+            "ar": "دوّن متى بدأ الضجيج",
+            "sourceCrop": {
+              "canvas": [
+                1586,
+                992
+              ],
+              "box": [
+                1193,
+                746,
+                1583,
+                989
+              ]
+            }
+          },
+          "words": [
+            {
+              "en": "write when the noise began",
+              "ar": "دوّن متى بدأ الضجيج",
+              "kind": "phrase",
+              "x": 49,
+              "y": 76
+            },
+            {
+              "en": "maintenance report",
+              "ar": "تقرير صيانة",
+              "kind": "object",
+              "x": 53,
+              "y": 83
+            },
+            {
+              "en": "clock symbol",
+              "ar": "رمز ساعة",
+              "kind": "object",
+              "x": 48,
+              "y": 83
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -104825,6 +104825,1902 @@
       "width": 391,
       "height": 243,
       "sha256": "3277c66019fb3234dbff16c99004c6bab46ed2c43def6188d069af74500be820"
+    },
+    {
+      "id": "conv-life-l3-189-1",
+      "topic": "conversation",
+      "en": "Discussing where to set up a community class · Suggest the hall behind the library",
+      "ar": "مناقشة مكان إقامة دورة مجتمعية · اقترح القاعة خلف المكتبة",
+      "sentenceEn": "We need a place for the evening class. Could we use the hall behind the library?",
+      "sentenceAr": "نحتاج مكانًا للدورة المسائية. هل يمكننا استخدام القاعة خلف المكتبة؟",
+      "words": [
+        {
+          "en": "suggest the hall behind the library",
+          "ar": "اقترح القاعة خلف المكتبة",
+          "kind": "phrase",
+          "x": 65,
+          "y": 64
+        },
+        {
+          "en": "site map",
+          "ar": "خريطة الموقع",
+          "kind": "object",
+          "x": 54,
+          "y": 76
+        },
+        {
+          "en": "hall symbol",
+          "ar": "رمز قاعة",
+          "kind": "object",
+          "x": 70,
+          "y": 85
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Suggest the hall behind the library.",
+      "taskAr": "اقترح القاعة خلف المكتبة.",
+      "path": "assets/scenes/conversations/life-l3-189-1.webp",
+      "width": 392,
+      "height": 243,
+      "sha256": "120619fce63b2746f6429f62b1f62728832b1372b90786aae769f22e99ffa7bf"
+    },
+    {
+      "id": "conv-life-l3-189-2",
+      "topic": "conversation",
+      "en": "Discussing where to set up a community class · Check whether the hall would work",
+      "ar": "مناقشة مكان إقامة دورة مجتمعية · تحقّق مما إذا كانت القاعة مناسبة",
+      "sentenceEn": "Tom wishes he had a larger office.",
+      "sentenceAr": "يتمنى توم لو كان لديه مكتب أكبر.",
+      "words": [
+        {
+          "en": "check whether the hall would work",
+          "ar": "تحقّق مما إذا كانت القاعة مناسبة",
+          "kind": "phrase",
+          "x": 49,
+          "y": 59
+        },
+        {
+          "en": "projection screen",
+          "ar": "شاشة عرض",
+          "kind": "object",
+          "x": 59,
+          "y": 46
+        },
+        {
+          "en": "rows of chairs",
+          "ar": "صفوف كراسٍ",
+          "kind": "object",
+          "x": 66,
+          "y": 73
+        }
+      ],
+      "patterns": [
+        {
+          "id": 118,
+          "en": "There are two smaller rooms in the same building. Would either work?",
+          "ar": "توجد قاعتان أصغر في المبنى نفسه. هل تصلح إحداهما؟"
+        }
+      ],
+      "taskEn": "Check whether the hall would work.",
+      "taskAr": "تحقّق مما إذا كانت القاعة مناسبة.",
+      "path": "assets/scenes/conversations/life-l3-189-2.webp",
+      "width": 390,
+      "height": 243,
+      "sha256": "a3b426147eedc0c4d5be05bce4a94cdee6d1c248c1260635bc2a06b70713f9c2"
+    },
+    {
+      "id": "conv-life-l3-189-3",
+      "topic": "conversation",
+      "en": "Discussing where to set up a community class · Compare the two smaller rooms",
+      "ar": "مناقشة مكان إقامة دورة مجتمعية · قارن القاعتين الأصغر",
+      "sentenceEn": "Possibly. Let's see how many people have signed up.",
+      "sentenceAr": "ربما. لنتحقق من عدد المسجّلين.",
+      "words": [
+        {
+          "en": "compare the two smaller rooms",
+          "ar": "قارن القاعتين الأصغر",
+          "kind": "phrase",
+          "x": 55,
+          "y": 75
+        },
+        {
+          "en": "classroom layout",
+          "ar": "مخطّط ترتيب الصف",
+          "kind": "object",
+          "x": 39,
+          "y": 62
+        },
+        {
+          "en": "meeting-room layout",
+          "ar": "مخطّط قاعة الاجتماعات",
+          "kind": "object",
+          "x": 75,
+          "y": 71
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Compare the two smaller rooms.",
+      "taskAr": "قارن القاعتين الأصغر.",
+      "path": "assets/scenes/conversations/life-l3-189-3.webp",
+      "width": 390,
+      "height": 243,
+      "sha256": "d060c594d3b1f153b73d438514eb57727e50a653c38e94d325931308ce488fee"
+    },
+    {
+      "id": "conv-life-l3-189-4",
+      "topic": "conversation",
+      "en": "Discussing where to set up a community class · Check the list and measure the room",
+      "ar": "مناقشة مكان إقامة دورة مجتمعية · راجع القائمة وقِس القاعة",
+      "sentenceEn": "Of course. I'll check the list and measure the room before we book it.",
+      "sentenceAr": "بالطبع. سأراجع القائمة وأقيس القاعة قبل حجزها.",
+      "words": [
+        {
+          "en": "check the list and measure the room",
+          "ar": "راجع القائمة وقِس القاعة",
+          "kind": "phrase",
+          "x": 63,
+          "y": 60
+        },
+        {
+          "en": "sign-up list",
+          "ar": "قائمة تسجيل",
+          "kind": "object",
+          "x": 37,
+          "y": 78
+        },
+        {
+          "en": "measuring tape",
+          "ar": "شريط قياس",
+          "kind": "object",
+          "x": 59,
+          "y": 50
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Check the list and measure the room.",
+      "taskAr": "راجع القائمة وقِس القاعة.",
+      "path": "assets/scenes/conversations/life-l3-189-4.webp",
+      "width": 390,
+      "height": 243,
+      "sha256": "443fb3dcda226a494c6edd3df6d9d89dc1dc15fc8d165e5292d965d7b3120de4"
+    },
+    {
+      "id": "conv-life-l3-190-1",
+      "topic": "conversation",
+      "en": "Summing up after a difficult conversation · Agree on who will do each task",
+      "ar": "تلخيص ما اتُفق عليه بعد حوار صعب · اتفقا على من سيتولّى كل مهمة",
+      "sentenceEn": "Before we leave, can we agree on what each of us will do?",
+      "sentenceAr": "قبل أن نغادر، هل يمكننا الاتفاق على ما سيفعله كل منا؟",
+      "words": [
+        {
+          "en": "agree on who will do each task",
+          "ar": "اتفقا على من سيتولّى كل مهمة",
+          "kind": "phrase",
+          "x": 42,
+          "y": 65
+        },
+        {
+          "en": "task checklist",
+          "ar": "قائمة مهام",
+          "kind": "object",
+          "x": 55,
+          "y": 72
+        },
+        {
+          "en": "clipboard clip",
+          "ar": "مشبك اللوح",
+          "kind": "object",
+          "x": 53,
+          "y": 38
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Agree on who will do each task.",
+      "taskAr": "اتفقا على من سيتولّى كل مهمة.",
+      "path": "assets/scenes/conversations/life-l3-190-1.webp",
+      "width": 392,
+      "height": 240,
+      "sha256": "2f19a696fa885ef74c5dbefd7fc7a710dbc548eeaa729d21f6d1a44163693de8"
+    },
+    {
+      "id": "conv-life-l3-190-2",
+      "topic": "conversation",
+      "en": "Summing up after a difficult conversation · Divide the next steps between you",
+      "ar": "تلخيص ما اتُفق عليه بعد حوار صعب · تقاسما الخطوات التالية",
+      "sentenceEn": "What I mean is I want to check that we're both clear about the next step.",
+      "sentenceAr": "أقصد أنني أريد التحقق من أن الخطوة التالية واضحة لكلينا.",
+      "words": [
+        {
+          "en": "divide the next steps between you",
+          "ar": "تقاسما الخطوات التالية",
+          "kind": "phrase",
+          "x": 49,
+          "y": 64
+        },
+        {
+          "en": "phone icon",
+          "ar": "أيقونة هاتف",
+          "kind": "object",
+          "x": 34,
+          "y": 63
+        },
+        {
+          "en": "camera icon",
+          "ar": "أيقونة كاميرا",
+          "kind": "object",
+          "x": 70,
+          "y": 69
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9158,
+          "en": "What I mean is I want to check that we're both clear about the next step.",
+          "ar": "أقصد أنني أريد التحقق من أن الخطوة التالية واضحة لكلينا."
+        }
+      ],
+      "taskEn": "Divide the next steps between you.",
+      "taskAr": "تقاسما الخطوات التالية.",
+      "path": "assets/scenes/conversations/life-l3-190-2.webp",
+      "width": 390,
+      "height": 240,
+      "sha256": "e962a7de16720df20b5ba4aeffd32f819cd83a973eb22d20c0e5e46563b922ef"
+    },
+    {
+      "id": "conv-life-l3-190-3",
+      "topic": "conversation",
+      "en": "Summing up after a difficult conversation · Put the disagreement aside",
+      "ar": "تلخيص ما اتُفق عليه بعد حوار صعب · اترك الخلاف جانبًا",
+      "sentenceEn": "That sounds fair. Do you want to keep talking about yesterday as well?",
+      "sentenceAr": "هذا منصف. هل ترغب أيضًا في مواصلة الحديث عما حدث أمس؟",
+      "words": [
+        {
+          "en": "put the disagreement aside",
+          "ar": "اترك الخلاف جانبًا",
+          "kind": "phrase",
+          "x": 48,
+          "y": 61
+        },
+        {
+          "en": "hand on chest",
+          "ar": "يد على الصدر",
+          "kind": "object",
+          "x": 24,
+          "y": 60
+        },
+        {
+          "en": "calm",
+          "ar": "هادئ",
+          "kind": "description",
+          "x": 73,
+          "y": 37
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Put the disagreement aside.",
+      "taskAr": "اترك الخلاف جانبًا.",
+      "path": "assets/scenes/conversations/life-l3-190-3.webp",
+      "width": 390,
+      "height": 240,
+      "sha256": "c7ae5ae8afc99d27bd1fe2206bfedc0e9ac63d823c072411aecd2ea5e27000f5"
+    },
+    {
+      "id": "conv-life-l3-190-4",
+      "topic": "conversation",
+      "en": "Summing up after a difficult conversation · Focus on getting the problem fixed",
+      "ar": "تلخيص ما اتُفق عليه بعد حوار صعب · ركّز على حلّ المشكلة",
+      "sentenceEn": "All right. Let's focus on getting the problem fixed.",
+      "sentenceAr": "حسنًا. لنركّز على حل المشكلة.",
+      "words": [
+        {
+          "en": "focus on getting the problem fixed",
+          "ar": "ركّز على حلّ المشكلة",
+          "kind": "phrase",
+          "x": 57,
+          "y": 65
+        },
+        {
+          "en": "room photo",
+          "ar": "صورة قاعة",
+          "kind": "object",
+          "x": 57,
+          "y": 62
+        },
+        {
+          "en": "completed tasks",
+          "ar": "مهام مكتملة",
+          "kind": "object",
+          "x": 91,
+          "y": 53
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Focus on getting the problem fixed.",
+      "taskAr": "ركّز على حلّ المشكلة.",
+      "path": "assets/scenes/conversations/life-l3-190-4.webp",
+      "width": 390,
+      "height": 240,
+      "sha256": "eace75b6fdee7e41c6475673c2c78416aa459aa221bedaf11538ff12d6683df2"
+    },
+    {
+      "id": "conv-life-l3-191-1",
+      "topic": "conversation",
+      "en": "Comparing two ways to spend the evening · Talk about what you watch at home",
+      "ar": "مقارنة طريقتين لقضاء المساء · تحدّث عمّا تشاهده في المنزل",
+      "sentenceEn": "Do you like to watch movies?",
+      "sentenceAr": "هل تحب مشاهدة الأفلام؟",
+      "words": [
+        {
+          "en": "talk about what you watch at home",
+          "ar": "تحدّث عمّا تشاهده في المنزل",
+          "kind": "phrase",
+          "x": 39,
+          "y": 59
+        },
+        {
+          "en": "television screen",
+          "ar": "شاشة تلفاز",
+          "kind": "object",
+          "x": 61,
+          "y": 34
+        },
+        {
+          "en": "remote control",
+          "ar": "جهاز تحكّم عن بُعد",
+          "kind": "object",
+          "x": 56,
+          "y": 91
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Talk about what you watch at home.",
+      "taskAr": "تحدّث عمّا تشاهده في المنزل.",
+      "path": "assets/scenes/conversations/life-l3-191-1.webp",
+      "width": 392,
+      "height": 243,
+      "sha256": "d7b2f22d6e52674269b4e8252981d114e1b52d8bda08887799fc2d5012c3c9c6"
+    },
+    {
+      "id": "conv-life-l3-191-2",
+      "topic": "conversation",
+      "en": "Comparing two ways to spend the evening · Suggest going to the cinema together",
+      "ar": "مقارنة طريقتين لقضاء المساء · اقترح الذهاب إلى السينما معًا",
+      "sentenceEn": "Yes. I usually watch one at home on Fridays.",
+      "sentenceAr": "نعم. أشاهد فيلمًا في البيت أيام الجمعة عادةً.",
+      "words": [
+        {
+          "en": "suggest going to the cinema together",
+          "ar": "اقترح الذهاب إلى السينما معًا",
+          "kind": "phrase",
+          "x": 60,
+          "y": 55
+        },
+        {
+          "en": "film reel sign",
+          "ar": "لافتة على شكل بكرة فيلم",
+          "kind": "object",
+          "x": 60,
+          "y": 15
+        },
+        {
+          "en": "cinema entrance",
+          "ar": "مدخل السينما",
+          "kind": "object",
+          "x": 49,
+          "y": 63
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9023,
+          "en": "Yes. I usually watch one at home on Fridays.",
+          "ar": "نعم. أشاهد فيلمًا في البيت أيام الجمعة عادةً."
+        }
+      ],
+      "taskEn": "Suggest going to the cinema together.",
+      "taskAr": "اقترح الذهاب إلى السينما معًا.",
+      "path": "assets/scenes/conversations/life-l3-191-2.webp",
+      "width": 390,
+      "height": 243,
+      "sha256": "644f612148d2ab4bd39dfbf708ee2a931598e66b660d3619d56cb0bf9aceeb39"
+    },
+    {
+      "id": "conv-life-l3-191-3",
+      "topic": "conversation",
+      "en": "Comparing two ways to spend the evening · Find a show that starts early",
+      "ar": "مقارنة طريقتين لقضاء المساء · اعثر على عرض يبدأ مبكرًا",
+      "sentenceEn": "Would you like to go together this time?",
+      "sentenceAr": "هل تود الذهاب معي هذه المرة؟",
+      "words": [
+        {
+          "en": "find a show that starts early",
+          "ar": "اعثر على عرض يبدأ مبكرًا",
+          "kind": "phrase",
+          "x": 58,
+          "y": 49
+        },
+        {
+          "en": "showtime display",
+          "ar": "لوحة مواعيد العروض",
+          "kind": "object",
+          "x": 69,
+          "y": 37
+        },
+        {
+          "en": "film icon",
+          "ar": "أيقونة فيلم",
+          "kind": "object",
+          "x": 54,
+          "y": 59
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Find a show that starts early.",
+      "taskAr": "اعثر على عرض يبدأ مبكرًا.",
+      "path": "assets/scenes/conversations/life-l3-191-3.webp",
+      "width": 390,
+      "height": 243,
+      "sha256": "89e64f93d0ac02c456a806aeb72b884cdb2c9e0d9efa9cc4af4990edbc4908a2"
+    },
+    {
+      "id": "conv-life-l3-191-4",
+      "topic": "conversation",
+      "en": "Comparing two ways to spend the evening · Check whether there are still seats",
+      "ar": "مقارنة طريقتين لقضاء المساء · تحقّق مما إذا بقيت مقاعد متاحة",
+      "sentenceEn": "There's a comedy at six thirty. I'll check whether there are still seats.",
+      "sentenceAr": "هناك فيلم كوميدي في السادسة والنصف. سأتحقق مما إذا بقيت مقاعد.",
+      "words": [
+        {
+          "en": "check whether there are still seats",
+          "ar": "تحقّق مما إذا بقيت مقاعد متاحة",
+          "kind": "phrase",
+          "x": 61,
+          "y": 66
+        },
+        {
+          "en": "seating chart",
+          "ar": "مخطّط المقاعد",
+          "kind": "object",
+          "x": 55,
+          "y": 60
+        },
+        {
+          "en": "available seats",
+          "ar": "مقاعد متاحة",
+          "kind": "object",
+          "x": 63,
+          "y": 62
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Check whether there are still seats.",
+      "taskAr": "تحقّق مما إذا بقيت مقاعد متاحة.",
+      "path": "assets/scenes/conversations/life-l3-191-4.webp",
+      "width": 390,
+      "height": 243,
+      "sha256": "93b50e2c05efb344f3d9caefe11e6f2338e3b24794cf3a68b1eadc37dc641cc1"
+    },
+    {
+      "id": "conv-life-l3-192-1",
+      "topic": "conversation",
+      "en": "Checking whether a space can be used for practice · Ask if it is okay to practise here",
+      "ar": "الاستئذان لاستخدام مكان في التدريب · اسأل إن كان مسموحًا بالتدرّب هنا",
+      "sentenceEn": "Is it okay to sing here?",
+      "sentenceAr": "هل يُسمح بالغناء هنا؟",
+      "words": [
+        {
+          "en": "ask if it is okay to practise here",
+          "ar": "اسأل إن كان مسموحًا بالتدرّب هنا",
+          "kind": "phrase",
+          "x": 45,
+          "y": 64
+        },
+        {
+          "en": "music stand",
+          "ar": "حامل نوتة",
+          "kind": "object",
+          "x": 43,
+          "y": 59
+        },
+        {
+          "en": "electronic keyboard",
+          "ar": "آلة مفاتيح موسيقية",
+          "kind": "object",
+          "x": 56,
+          "y": 62
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Ask if it is okay to practise here.",
+      "taskAr": "اسأل إن كان مسموحًا بالتدرّب هنا.",
+      "path": "assets/scenes/conversations/life-l3-192-1.webp",
+      "width": 392,
+      "height": 242,
+      "sha256": "54ff8a3925832f2f36db91bb1bb758de2f84b1b37bcfa61a504ba3a5abbe20a7"
+    },
+    {
+      "id": "conv-life-l3-192-2",
+      "topic": "conversation",
+      "en": "Checking whether a space can be used for practice · Invite a friend to listen",
+      "ar": "الاستئذان لاستخدام مكان في التدريب · ادعُ صديقًا للاستماع",
+      "sentenceEn": "Yes, when the room is free. Is this for a performance?",
+      "sentenceAr": "نعم، حين تكون القاعة فارغة. هل هذا من أجل عرض؟",
+      "words": [
+        {
+          "en": "invite a friend to listen",
+          "ar": "ادعُ صديقًا للاستماع",
+          "kind": "phrase",
+          "x": 52,
+          "y": 61
+        },
+        {
+          "en": "sheet music",
+          "ar": "نوتة موسيقية",
+          "kind": "object",
+          "x": 53,
+          "y": 78
+        },
+        {
+          "en": "attentive",
+          "ar": "منتبه",
+          "kind": "description",
+          "x": 81,
+          "y": 31
+        }
+      ],
+      "patterns": [
+        {
+          "id": 4,
+          "en": "It's just practice. Can I bring a friend to listen?",
+          "ar": "إنه تدريب فقط. هل يمكنني إحضار صديق ليستمع؟"
+        }
+      ],
+      "taskEn": "Invite a friend to listen.",
+      "taskAr": "ادعُ صديقًا للاستماع.",
+      "path": "assets/scenes/conversations/life-l3-192-2.webp",
+      "width": 390,
+      "height": 242,
+      "sha256": "f768e7e35a319045d0764d37a3351a11c87eea8cce41f7d6b0eeea5bde445807"
+    },
+    {
+      "id": "conv-life-l3-192-3",
+      "topic": "conversation",
+      "en": "Checking whether a space can be used for practice · Agree what time to stop",
+      "ar": "الاستئذان لاستخدام مكان في التدريب · اتفق على وقت التوقّف",
+      "sentenceEn": "Of course. Will you need the room for more than half an hour?",
+      "sentenceAr": "بالطبع. هل ستحتاج إلى القاعة لأكثر من نصف ساعة؟",
+      "words": [
+        {
+          "en": "agree what time to stop",
+          "ar": "اتفق على وقت التوقّف",
+          "kind": "phrase",
+          "x": 54,
+          "y": 46
+        },
+        {
+          "en": "wall clock",
+          "ar": "ساعة حائط",
+          "kind": "object",
+          "x": 51,
+          "y": 24
+        },
+        {
+          "en": "give a thumbs-up",
+          "ar": "يرفع إبهامه إشارةً إلى الرضا",
+          "kind": "action",
+          "x": 64,
+          "y": 64
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Agree what time to stop.",
+      "taskAr": "اتفق على وقت التوقّف.",
+      "path": "assets/scenes/conversations/life-l3-192-3.webp",
+      "width": 390,
+      "height": 242,
+      "sha256": "b079184a8cf3f75925af083681f22aaf2f1e311921298870711d805e3170ad61"
+    },
+    {
+      "id": "conv-life-l3-192-4",
+      "topic": "conversation",
+      "en": "Checking whether a space can be used for practice · Practise until the agreed time",
+      "ar": "الاستئذان لاستخدام مكان في التدريب · تدرّب حتى الوقت المتفق عليه",
+      "sentenceEn": "Let's see what happens this time.",
+      "sentenceAr": "لنرَ ما سيحدث هذه المرة.",
+      "words": [
+        {
+          "en": "practise until the agreed time",
+          "ar": "تدرّب حتى الوقت المتفق عليه",
+          "kind": "phrase",
+          "x": 48,
+          "y": 60
+        },
+        {
+          "en": "music stand",
+          "ar": "حامل نوتة",
+          "kind": "object",
+          "x": 58,
+          "y": 59
+        },
+        {
+          "en": "practice timer",
+          "ar": "مؤقّت للتدريب",
+          "kind": "object",
+          "x": 79,
+          "y": 80
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Practise until the agreed time.",
+      "taskAr": "تدرّب حتى الوقت المتفق عليه.",
+      "path": "assets/scenes/conversations/life-l3-192-4.webp",
+      "width": 390,
+      "height": 242,
+      "sha256": "553db6bbab373e55abc63e4a44cb75c0897ad128550590050b60757ebf9d047a"
+    },
+    {
+      "id": "conv-life-l3-193-1",
+      "topic": "conversation",
+      "en": "Telling someone what to do with a delivery · Open the door for a delivery",
+      "ar": "إرشاد شخص إلى مكان وضع طرد · افتح الباب لاستلام الشحنة",
+      "sentenceEn": "A delivery driver just called. Can you open the front door?",
+      "sentenceAr": "اتصل سائق توصيل للتو. هل يمكنك فتح باب المدخل؟",
+      "words": [
+        {
+          "en": "open the door for a delivery",
+          "ar": "افتح الباب لاستلام الشحنة",
+          "kind": "phrase",
+          "x": 34,
+          "y": 61
+        },
+        {
+          "en": "mobile phone",
+          "ar": "هاتف محمول",
+          "kind": "object",
+          "x": 27,
+          "y": 25
+        },
+        {
+          "en": "parcel",
+          "ar": "طرد",
+          "kind": "object",
+          "x": 76,
+          "y": 78
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9037,
+          "en": "A delivery driver just called. Can you open the front door?",
+          "ar": "اتصل سائق توصيل للتو. هل يمكنك فتح باب المدخل؟"
+        }
+      ],
+      "taskEn": "Open the door for a delivery.",
+      "taskAr": "افتح الباب لاستلام الشحنة.",
+      "path": "assets/scenes/conversations/life-l3-193-1.webp",
+      "width": 391,
+      "height": 241,
+      "sha256": "8900d74779099a4b2f97e960b3b15bcac2a1d1e81c84036972d154ba855fe3a6"
+    },
+    {
+      "id": "conv-life-l3-193-2",
+      "topic": "conversation",
+      "en": "Telling someone what to do with a delivery · Explain that the shelf by the door is full",
+      "ar": "إرشاد شخص إلى مكان وضع طرد · اشرح أن الرف قرب الباب ممتلئ",
+      "sentenceEn": "Put it on the shelf.",
+      "sentenceAr": "ضعه على الرف.",
+      "words": [
+        {
+          "en": "explain that the shelf by the door is full",
+          "ar": "اشرح أن الرف قرب الباب ممتلئ",
+          "kind": "phrase",
+          "x": 49,
+          "y": 64
+        },
+        {
+          "en": "full shelf",
+          "ar": "رف ممتلئ",
+          "kind": "object",
+          "x": 55,
+          "y": 60
+        },
+        {
+          "en": "wicker basket",
+          "ar": "سلّة خوص",
+          "kind": "object",
+          "x": 71,
+          "y": 62
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Explain that the shelf by the door is full.",
+      "taskAr": "اشرح أن الرف قرب الباب ممتلئ.",
+      "path": "assets/scenes/conversations/life-l3-193-2.webp",
+      "width": 391,
+      "height": 241,
+      "sha256": "a60f4c12af91d01248209d58a703c68dc7077bc7b31fefec0b1617c2d22ecee6"
+    },
+    {
+      "id": "conv-life-l3-193-3",
+      "topic": "conversation",
+      "en": "Telling someone what to do with a delivery · Put the parcel on the shelf under the window",
+      "ar": "إرشاد شخص إلى مكان وضع طرد · ضع الطرد على الرف تحت النافذة",
+      "sentenceEn": "The one under the window. Make sure the label is facing up.",
+      "sentenceAr": "الرف تحت النافذة. تأكد أن الملصق متجه إلى أعلى.",
+      "words": [
+        {
+          "en": "put the parcel on the shelf under the window",
+          "ar": "ضع الطرد على الرف تحت النافذة",
+          "kind": "phrase",
+          "x": 59,
+          "y": 71
+        },
+        {
+          "en": "shelf under the window",
+          "ar": "رف تحت النافذة",
+          "kind": "object",
+          "x": 55,
+          "y": 83
+        },
+        {
+          "en": "shipping label",
+          "ar": "ملصق الشحن",
+          "kind": "object",
+          "x": 79,
+          "y": 71
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Put the parcel on the shelf under the window.",
+      "taskAr": "ضع الطرد على الرف تحت النافذة.",
+      "path": "assets/scenes/conversations/life-l3-193-3.webp",
+      "width": 390,
+      "height": 241,
+      "sha256": "97ce80c0c1d18af49aff53809f7f64ea4e51444715b54089d8c9f7adeb24a943"
+    },
+    {
+      "id": "conv-life-l3-193-4",
+      "topic": "conversation",
+      "en": "Telling someone what to do with a delivery · Leave the parcel at reception",
+      "ar": "إرشاد شخص إلى مكان وضع طرد · اترك الطرد في الاستقبال",
+      "sentenceEn": "That's all right. I'll ask the driver to leave it at reception.",
+      "sentenceAr": "لا بأس. سأطلب من السائق تركه في الاستقبال.",
+      "words": [
+        {
+          "en": "leave the parcel at reception",
+          "ar": "اترك الطرد في الاستقبال",
+          "kind": "phrase",
+          "x": 61,
+          "y": 61
+        },
+        {
+          "en": "parcel",
+          "ar": "طرد",
+          "kind": "object",
+          "x": 60,
+          "y": 61
+        },
+        {
+          "en": "reception counter",
+          "ar": "منضدة الاستقبال",
+          "kind": "object",
+          "x": 79,
+          "y": 81
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Leave the parcel at reception.",
+      "taskAr": "اترك الطرد في الاستقبال.",
+      "path": "assets/scenes/conversations/life-l3-193-4.webp",
+      "width": 390,
+      "height": 241,
+      "sha256": "94f329b98eb24e9e1925397e5087406c010fdf61d2f27bc6b9b0f59fe6e13489"
+    },
+    {
+      "id": "conv-life-l3-194-1",
+      "topic": "conversation",
+      "en": "Clarifying where visitors should wait · Tell the group where to wait",
+      "ar": "توضيح مكان انتظار الزوار · أخبر المجموعة أين تنتظر",
+      "sentenceEn": "The group has arrived. Where do you want them to wait?",
+      "sentenceAr": "وصلت المجموعة. أين تريدهم أن ينتظروا؟",
+      "words": [
+        {
+          "en": "tell the group where to wait",
+          "ar": "أخبر المجموعة أين تنتظر",
+          "kind": "phrase",
+          "x": 42,
+          "y": 59
+        },
+        {
+          "en": "row of seats",
+          "ar": "صف مقاعد",
+          "kind": "object",
+          "x": 58,
+          "y": 61
+        },
+        {
+          "en": "shelter canopy",
+          "ar": "سقف المظلّة",
+          "kind": "object",
+          "x": 56,
+          "y": 19
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Tell the group where to wait.",
+      "taskAr": "أخبر المجموعة أين تنتظر.",
+      "path": "assets/scenes/conversations/life-l3-194-1.webp",
+      "width": 391,
+      "height": 242,
+      "sha256": "1f2ecbeb7feeb006d659bed6894fe396381c1cc44bd128ba341376cd6770ba03"
+    },
+    {
+      "id": "conv-life-l3-194-2",
+      "topic": "conversation",
+      "en": "Clarifying where visitors should wait · Ask who went to the shuttle stop",
+      "ar": "توضيح مكان انتظار الزوار · اسأل من ذهب إلى موقف الحافلة",
+      "sentenceEn": "Do you know where the rest of the group is?",
+      "sentenceAr": "هل تعرف أين بقية المجموعة؟",
+      "words": [
+        {
+          "en": "ask who went to the shuttle stop",
+          "ar": "اسأل من ذهب إلى موقف الحافلة",
+          "kind": "phrase",
+          "x": 44,
+          "y": 49
+        },
+        {
+          "en": "shuttle stop sign",
+          "ar": "لافتة موقف حافلة",
+          "kind": "object",
+          "x": 35,
+          "y": 23
+        },
+        {
+          "en": "waiting group",
+          "ar": "مجموعة تنتظر",
+          "kind": "object",
+          "x": 81,
+          "y": 56
+        }
+      ],
+      "patterns": [
+        {
+          "id": 12,
+          "en": "Do you know where the rest of the group is?",
+          "ar": "هل تعرف أين بقية المجموعة؟"
+        }
+      ],
+      "taskEn": "Ask who went to the shuttle stop.",
+      "taskAr": "اسأل من ذهب إلى موقف الحافلة.",
+      "path": "assets/scenes/conversations/life-l3-194-2.webp",
+      "width": 391,
+      "height": 242,
+      "sha256": "1f1ccd87d0efac932dc3ddc66c622969e8cc246bb9a8bb76b53d5c346c02f9d2"
+    },
+    {
+      "id": "conv-life-l3-194-3",
+      "topic": "conversation",
+      "en": "Clarifying where visitors should wait · Check if someone is on the way",
+      "ar": "توضيح مكان انتظار الزوار · تحقّق مما إذا كان الشخص في الطريق",
+      "sentenceEn": "Has he left the shuttle stop yet?",
+      "sentenceAr": "هل غادر الموقف بالفعل؟",
+      "words": [
+        {
+          "en": "check if someone is on the way",
+          "ar": "تحقّق مما إذا كان الشخص في الطريق",
+          "kind": "phrase",
+          "x": 47,
+          "y": 44
+        },
+        {
+          "en": "mobile phone",
+          "ar": "هاتف محمول",
+          "kind": "object",
+          "x": 49,
+          "y": 44
+        },
+        {
+          "en": "bench seat",
+          "ar": "مقعد طويل",
+          "kind": "object",
+          "x": 66,
+          "y": 77
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Check if someone is on the way.",
+      "taskAr": "تحقّق مما إذا كان الشخص في الطريق.",
+      "path": "assets/scenes/conversations/life-l3-194-3.webp",
+      "width": 390,
+      "height": 242,
+      "sha256": "994814df86af7503642b744e48e5aa92775f7a1ff9e83c64e48e95e39b3d5349"
+    },
+    {
+      "id": "conv-life-l3-194-4",
+      "topic": "conversation",
+      "en": "Clarifying where visitors should wait · Wait by the main doors",
+      "ar": "توضيح مكان انتظار الزوار · انتظر عند الأبواب الرئيسية",
+      "sentenceEn": "I'll wait by the main doors so he can find us easily.",
+      "sentenceAr": "سأنتظر قرب الأبواب الرئيسية كي يعثر علينا بسهولة.",
+      "words": [
+        {
+          "en": "wait by the main doors",
+          "ar": "انتظر عند الأبواب الرئيسية",
+          "kind": "phrase",
+          "x": 55,
+          "y": 43
+        },
+        {
+          "en": "main doors",
+          "ar": "الأبواب الرئيسية",
+          "kind": "object",
+          "x": 68,
+          "y": 46
+        },
+        {
+          "en": "wave to someone",
+          "ar": "يلوّح لشخص",
+          "kind": "action",
+          "x": 52,
+          "y": 21
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Wait by the main doors.",
+      "taskAr": "انتظر عند الأبواب الرئيسية.",
+      "path": "assets/scenes/conversations/life-l3-194-4.webp",
+      "width": 390,
+      "height": 242,
+      "sha256": "4891e69e2846aafba64860a73559168aaa3cf9dce04010179b1a1883635e8351"
+    },
+    {
+      "id": "conv-life-l3-195-1",
+      "topic": "conversation",
+      "en": "Asking for help without handing over the task · Ask someone to show you the first step",
+      "ar": "طلب المساعدة دون تسليم المهمة كاملة · اطلب من شخص أن يريك الخطوة الأولى",
+      "sentenceEn": "I can't make this chart work. Could you show me the first step?",
+      "sentenceAr": "لا أستطيع إعداد هذا الرسم. هل يمكنك أن تريني الخطوة الأولى؟",
+      "words": [
+        {
+          "en": "ask someone to show you the first step",
+          "ar": "اطلب من شخص أن يريك الخطوة الأولى",
+          "kind": "phrase",
+          "x": 47,
+          "y": 65
+        },
+        {
+          "en": "spreadsheet",
+          "ar": "جدول بيانات",
+          "kind": "object",
+          "x": 56,
+          "y": 63
+        },
+        {
+          "en": "puzzled",
+          "ar": "محتار",
+          "kind": "description",
+          "x": 22,
+          "y": 32
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Ask someone to show you the first step.",
+      "taskAr": "اطلب من شخص أن يريك الخطوة الأولى.",
+      "path": "assets/scenes/conversations/life-l3-195-1.webp",
+      "width": 391,
+      "height": 242,
+      "sha256": "38ec2f6553d6a466283fc898052db9eedcb7f9cf5fb88b749e2b26ed078f85e1"
+    },
+    {
+      "id": "conv-life-l3-195-2",
+      "topic": "conversation",
+      "en": "Asking for help without handing over the task · Select the two columns",
+      "ar": "طلب المساعدة دون تسليم المهمة كاملة · حدّد العمودين",
+      "sentenceEn": "I could do this myself.",
+      "sentenceAr": "يمكنني فعل هذا بنفسي.",
+      "words": [
+        {
+          "en": "select the two columns",
+          "ar": "حدّد العمودين",
+          "kind": "phrase",
+          "x": 52,
+          "y": 65
+        },
+        {
+          "en": "highlighted columns",
+          "ar": "أعمدة مظلّلة",
+          "kind": "object",
+          "x": 61,
+          "y": 63
+        },
+        {
+          "en": "laptop keyboard",
+          "ar": "لوحة مفاتيح الحاسوب",
+          "kind": "object",
+          "x": 47,
+          "y": 89
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9158,
+          "en": "What I mean is I want to learn to do it myself.",
+          "ar": "أقصد أنني أريد تعلّم القيام به بنفسي."
+        }
+      ],
+      "taskEn": "Select the two columns.",
+      "taskAr": "حدّد العمودين.",
+      "path": "assets/scenes/conversations/life-l3-195-2.webp",
+      "width": 391,
+      "height": 242,
+      "sha256": "f40a00dd98fc4566b649263ce9b14353f1ad7f491b4ec1ed6540a2fe13bdcab7"
+    },
+    {
+      "id": "conv-life-l3-195-3",
+      "topic": "conversation",
+      "en": "Asking for help without handing over the task · Choose an appropriate chart type",
+      "ar": "طلب المساعدة دون تسليم المهمة كاملة · اختر نوع المخطّط المناسب",
+      "sentenceEn": "Fair enough. Select the two columns and then choose the chart type.",
+      "sentenceAr": "معك حق. حدّد العمودين ثم اختر نوع الرسم.",
+      "words": [
+        {
+          "en": "choose an appropriate chart type",
+          "ar": "اختر نوع المخطّط المناسب",
+          "kind": "phrase",
+          "x": 59,
+          "y": 61
+        },
+        {
+          "en": "chart menu",
+          "ar": "قائمة المخطّطات",
+          "kind": "object",
+          "x": 63,
+          "y": 58
+        },
+        {
+          "en": "line chart icon",
+          "ar": "أيقونة مخطّط خطّي",
+          "kind": "object",
+          "x": 70,
+          "y": 52
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Choose an appropriate chart type.",
+      "taskAr": "اختر نوع المخطّط المناسب.",
+      "path": "assets/scenes/conversations/life-l3-195-3.webp",
+      "width": 390,
+      "height": 242,
+      "sha256": "98dc6c3978ac9972e4461a085cebb6d9e9ba7d0cf125019d9271b651d58d2371"
+    },
+    {
+      "id": "conv-life-l3-195-4",
+      "topic": "conversation",
+      "en": "Asking for help without handing over the task · Use a bar chart to compare totals",
+      "ar": "طلب المساعدة دون تسليم المهمة كاملة · استخدم مخطّط أعمدة لمقارنة المجاميع",
+      "sentenceEn": "Yes. Choose a bar chart if you want to compare the totals by week.",
+      "sentenceAr": "نعم. اختر رسمًا بالأعمدة إذا أردت مقارنة المجاميع حسب الأسبوع.",
+      "words": [
+        {
+          "en": "use a bar chart to compare totals",
+          "ar": "استخدم مخطّط أعمدة لمقارنة المجاميع",
+          "kind": "phrase",
+          "x": 53,
+          "y": 72
+        },
+        {
+          "en": "bar chart",
+          "ar": "مخطّط أعمدة",
+          "kind": "object",
+          "x": 52,
+          "y": 65
+        },
+        {
+          "en": "blue bars",
+          "ar": "أعمدة زرقاء",
+          "kind": "object",
+          "x": 55,
+          "y": 74
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Use a bar chart to compare totals.",
+      "taskAr": "استخدم مخطّط أعمدة لمقارنة المجاميع.",
+      "path": "assets/scenes/conversations/life-l3-195-4.webp",
+      "width": 390,
+      "height": 242,
+      "sha256": "5063d3ef1df8f53d17936fefa5d186479de3c4a4bc2e96948c037f4298457d65"
+    },
+    {
+      "id": "conv-life-l3-196-1",
+      "topic": "conversation",
+      "en": "Discussing a noisy appliance without guessing · Ask whether someone heard the fan noise",
+      "ar": "مناقشة صوت جهاز مزعج دون تخمين السبب · اسأل إن كان شخص قد سمع ضجيج المروحة",
+      "sentenceEn": "The fan sounds louder than it did yesterday. Did you hear it?",
+      "sentenceAr": "صوت المروحة أعلى مما كان عليه أمس. هل سمعته؟",
+      "words": [
+        {
+          "en": "ask whether someone heard the fan noise",
+          "ar": "اسأل إن كان شخص قد سمع ضجيج المروحة",
+          "kind": "phrase",
+          "x": 40,
+          "y": 49
+        },
+        {
+          "en": "standing fan",
+          "ar": "مروحة قائمة",
+          "kind": "object",
+          "x": 58,
+          "y": 47
+        },
+        {
+          "en": "cup your hand around your ear",
+          "ar": "يضع كفّه حول أذنه",
+          "kind": "action",
+          "x": 36,
+          "y": 37
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Ask whether someone heard the fan noise.",
+      "taskAr": "اسأل إن كان شخص قد سمع ضجيج المروحة.",
+      "path": "assets/scenes/conversations/life-l3-196-1.webp",
+      "width": 391,
+      "height": 243,
+      "sha256": "f71f875aed223c21a533a4ee931192086f33adb472bb9d383c4efd9001f2d1f0"
+    },
+    {
+      "id": "conv-life-l3-196-2",
+      "topic": "conversation",
+      "en": "Discussing a noisy appliance without guessing · Turn the fan off",
+      "ar": "مناقشة صوت جهاز مزعج دون تخمين السبب · أطفئ المروحة",
+      "sentenceEn": "It's probably hard.",
+      "sentenceAr": "ربما يكون صعبًا.",
+      "words": [
+        {
+          "en": "turn the fan off",
+          "ar": "أطفئ المروحة",
+          "kind": "phrase",
+          "x": 55,
+          "y": 76
+        },
+        {
+          "en": "speed control knob",
+          "ar": "مقبض ضبط السرعة",
+          "kind": "object",
+          "x": 51,
+          "y": 77
+        },
+        {
+          "en": "fan grille",
+          "ar": "شبك المروحة",
+          "kind": "object",
+          "x": 57,
+          "y": 35
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9089,
+          "en": "It only happens on the highest setting. I'll turn it off and tell maintenance.",
+          "ar": "يحدث فقط على أعلى سرعة. سأطفئها وأخبر فريق الصيانة."
+        }
+      ],
+      "taskEn": "Turn the fan off.",
+      "taskAr": "أطفئ المروحة.",
+      "path": "assets/scenes/conversations/life-l3-196-2.webp",
+      "width": 391,
+      "height": 243,
+      "sha256": "63e74a0a4db1cd557fd432d83d6ade6cf422931f0cbff6ba1b01ce1052a0e3e6"
+    },
+    {
+      "id": "conv-life-l3-196-3",
+      "topic": "conversation",
+      "en": "Discussing a noisy appliance without guessing · Tell maintenance what you heard",
+      "ar": "مناقشة صوت جهاز مزعج دون تخمين السبب · أخبر الصيانة بما سمعته",
+      "sentenceEn": "Good. We can tell them what we heard without guessing at the cause.",
+      "sentenceAr": "جيد. يمكننا إخبارهم بما سمعناه دون تخمين السبب.",
+      "words": [
+        {
+          "en": "tell maintenance what you heard",
+          "ar": "أخبر الصيانة بما سمعته",
+          "kind": "phrase",
+          "x": 44,
+          "y": 59
+        },
+        {
+          "en": "hard hat",
+          "ar": "خوذة واقية",
+          "kind": "object",
+          "x": 83,
+          "y": 14
+        },
+        {
+          "en": "clipboard",
+          "ar": "لوح تثبيت الأوراق",
+          "kind": "object",
+          "x": 76,
+          "y": 85
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Tell maintenance what you heard.",
+      "taskAr": "أخبر الصيانة بما سمعته.",
+      "path": "assets/scenes/conversations/life-l3-196-3.webp",
+      "width": 390,
+      "height": 243,
+      "sha256": "dcd2db9c4a7056b68679485a9f77317f2f6fae3ca8fd527f3015c111d29e6345"
+    },
+    {
+      "id": "conv-life-l3-196-4",
+      "topic": "conversation",
+      "en": "Discussing a noisy appliance without guessing · Write when the noise began",
+      "ar": "مناقشة صوت جهاز مزعج دون تخمين السبب · دوّن متى بدأ الضجيج",
+      "sentenceEn": "When did you first notice the noise? I'll write it in the report.",
+      "sentenceAr": "متى لاحظت الصوت أول مرة؟ سأكتب ذلك في البلاغ.",
+      "words": [
+        {
+          "en": "write when the noise began",
+          "ar": "دوّن متى بدأ الضجيج",
+          "kind": "phrase",
+          "x": 49,
+          "y": 76
+        },
+        {
+          "en": "maintenance report",
+          "ar": "تقرير صيانة",
+          "kind": "object",
+          "x": 53,
+          "y": 83
+        },
+        {
+          "en": "clock symbol",
+          "ar": "رمز ساعة",
+          "kind": "object",
+          "x": 48,
+          "y": 83
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Write when the noise began.",
+      "taskAr": "دوّن متى بدأ الضجيج.",
+      "path": "assets/scenes/conversations/life-l3-196-4.webp",
+      "width": 390,
+      "height": 243,
+      "sha256": "a251b412979b707429c325e4de89400ab1f7d712777f284fe08e0073d972e43f"
+    },
+    {
+      "id": "conv-life-l3-197-1",
+      "topic": "conversation",
+      "en": "Asking someone to repeat a useful phrase · Ask the speaker to repeat the last part",
+      "ar": "طلب إعادة عبارة مفيدة · اطلب من المتحدث إعادة الجزء الأخير",
+      "sentenceEn": "Could you please say the last part again?",
+      "sentenceAr": "هل يمكنك إعادة الجزء الأخير من فضلك؟",
+      "words": [
+        {
+          "en": "ask the speaker to repeat the last part",
+          "ar": "اطلب من المتحدث إعادة الجزء الأخير",
+          "kind": "phrase",
+          "x": 41,
+          "y": 60
+        },
+        {
+          "en": "smartphone",
+          "ar": "هاتف ذكي",
+          "kind": "object",
+          "x": 24,
+          "y": 89
+        },
+        {
+          "en": "arrival card",
+          "ar": "بطاقة الوصول",
+          "kind": "object",
+          "x": 45,
+          "y": 91
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9126,
+          "en": "Could you please say the last part again?",
+          "ar": "هل يمكنك إعادة الجزء الأخير من فضلك؟"
+        }
+      ],
+      "taskEn": "Ask the speaker to repeat the last part.",
+      "taskAr": "اطلب من المتحدث إعادة الجزء الأخير.",
+      "path": "assets/scenes/conversations/life-l3-197-1.webp",
+      "width": 390,
+      "height": 241,
+      "sha256": "4cdadc7e6be9ff696d792eca52833d96f608f68f4fb1b27907163adf200bb1e0"
+    },
+    {
+      "id": "conv-life-l3-197-2",
+      "topic": "conversation",
+      "en": "Asking someone to repeat a useful phrase · Replace one ending with another",
+      "ar": "طلب إعادة عبارة مفيدة · استبدل نهاية العبارة بأخرى",
+      "sentenceEn": "So I can use it if I'm going to meet someone later?",
+      "sentenceAr": "إذن يمكنني استخدامها إن كنت سأقابل شخصًا لاحقًا؟",
+      "words": [
+        {
+          "en": "replace one ending with another",
+          "ar": "استبدل نهاية العبارة بأخرى",
+          "kind": "phrase",
+          "x": 49,
+          "y": 58
+        },
+        {
+          "en": "arrival pictogram",
+          "ar": "رمز الوصول",
+          "kind": "object",
+          "x": 43,
+          "y": 89
+        },
+        {
+          "en": "work pictogram",
+          "ar": "رمز العمل",
+          "kind": "object",
+          "x": 70,
+          "y": 89
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Replace one ending with another.",
+      "taskAr": "استبدل نهاية العبارة بأخرى.",
+      "path": "assets/scenes/conversations/life-l3-197-2.webp",
+      "width": 392,
+      "height": 241,
+      "sha256": "255892cd58d10abda6efb18b0f6840855fdebe2969100c08ce6181fad611720e"
+    },
+    {
+      "id": "conv-life-l3-197-3",
+      "topic": "conversation",
+      "en": "Asking someone to repeat a useful phrase · Say what needs to happen first",
+      "ar": "طلب إعادة عبارة مفيدة · اذكر ما يجب أن يحدث أولًا",
+      "sentenceEn": "Tell me how to do it.",
+      "sentenceAr": "أخبرني كيف أفعل ذلك.",
+      "words": [
+        {
+          "en": "say what needs to happen first",
+          "ar": "اذكر ما يجب أن يحدث أولًا",
+          "kind": "phrase",
+          "x": 47,
+          "y": 62
+        },
+        {
+          "en": "arrival card",
+          "ar": "بطاقة الوصول",
+          "kind": "object",
+          "x": 35,
+          "y": 69
+        },
+        {
+          "en": "finish-work card",
+          "ar": "بطاقة الانتهاء من العمل",
+          "kind": "object",
+          "x": 68,
+          "y": 70
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Say what needs to happen first.",
+      "taskAr": "اذكر ما يجب أن يحدث أولًا.",
+      "path": "assets/scenes/conversations/life-l3-197-3.webp",
+      "width": 390,
+      "height": 241,
+      "sha256": "8af8e4226f766c7822b38c70891a01b9efc03179165903f1d5feb69f93dda1ef"
+    },
+    {
+      "id": "conv-life-l3-197-4",
+      "topic": "conversation",
+      "en": "Asking someone to repeat a useful phrase · Say the new example and check it",
+      "ar": "طلب إعادة عبارة مفيدة · قل المثال الجديد وتحقّق من صحته",
+      "sentenceEn": "I hope that helped.",
+      "sentenceAr": "آمل أن يكون ذلك قد أفاد.",
+      "words": [
+        {
+          "en": "say the new example and check it",
+          "ar": "قل المثال الجديد وتحقّق من صحته",
+          "kind": "phrase",
+          "x": 60,
+          "y": 68
+        },
+        {
+          "en": "sequence card",
+          "ar": "بطاقة ترتيب",
+          "kind": "object",
+          "x": 78,
+          "y": 88
+        },
+        {
+          "en": "give a thumbs-up",
+          "ar": "يرفع إبهامه إشارةً إلى الرضا",
+          "kind": "action",
+          "x": 85,
+          "y": 62
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Say the new example and check it.",
+      "taskAr": "قل المثال الجديد وتحقّق من صحته.",
+      "path": "assets/scenes/conversations/life-l3-197-4.webp",
+      "width": 390,
+      "height": 241,
+      "sha256": "d8dbc8cd725e180ddea7e032c45c8ee1e1075e27882f9e34b1d1c2e5e8eefb31"
+    },
+    {
+      "id": "conv-life-l3-198-1",
+      "topic": "conversation",
+      "en": "Asking whether a guest needs anything else · Offer something before clearing the table",
+      "ar": "السؤال إن كان الضيف يحتاج شيئًا آخر · اعرض شيئًا قبل رفع الأطباق",
+      "sentenceEn": "Can I get you anything before I clear the table?",
+      "sentenceAr": "هل يمكنني إحضار شيء لك قبل أن أرفع الأطباق؟",
+      "words": [
+        {
+          "en": "offer something before clearing the table",
+          "ar": "اعرض شيئًا قبل رفع الأطباق",
+          "kind": "phrase",
+          "x": 48,
+          "y": 68
+        },
+        {
+          "en": "glass of water",
+          "ar": "كأس ماء",
+          "kind": "object",
+          "x": 52,
+          "y": 79
+        },
+        {
+          "en": "soup bowl",
+          "ar": "وعاء حساء",
+          "kind": "object",
+          "x": 72,
+          "y": 81
+        }
+      ],
+      "patterns": [
+        {
+          "id": 4,
+          "en": "Can I get you anything before I clear the table?",
+          "ar": "هل يمكنني إحضار شيء لك قبل أن أرفع الأطباق؟"
+        }
+      ],
+      "taskEn": "Offer something before clearing the table.",
+      "taskAr": "اعرض شيئًا قبل رفع الأطباق.",
+      "path": "assets/scenes/conversations/life-l3-198-1.webp",
+      "width": 390,
+      "height": 242,
+      "sha256": "03279b84e549f8d743080b54f5435a2473c56df8c5a6ae90ef03e0abbf17dd58"
+    },
+    {
+      "id": "conv-life-l3-198-2",
+      "topic": "conversation",
+      "en": "Asking whether a guest needs anything else · Ask whether the portion was enough",
+      "ar": "السؤال إن كان الضيف يحتاج شيئًا آخر · اسأل هل كانت الحصّة كافية",
+      "sentenceEn": "Here you are. Did the portion suit you?",
+      "sentenceAr": "تفضّل. هل كانت الكمية مناسبة لك؟",
+      "words": [
+        {
+          "en": "ask whether the portion was enough",
+          "ar": "اسأل هل كانت الحصّة كافية",
+          "kind": "phrase",
+          "x": 53,
+          "y": 67
+        },
+        {
+          "en": "soup bowl",
+          "ar": "وعاء حساء",
+          "kind": "object",
+          "x": 64,
+          "y": 83
+        },
+        {
+          "en": "water glass",
+          "ar": "كأس ماء",
+          "kind": "object",
+          "x": 53,
+          "y": 62
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Ask whether the portion was enough.",
+      "taskAr": "اسأل هل كانت الحصّة كافية.",
+      "path": "assets/scenes/conversations/life-l3-198-2.webp",
+      "width": 392,
+      "height": 242,
+      "sha256": "33578caf8a9fb453d1c7e7e708357a5944aad687466ec7c2bb8a4fde9ca7ecb4"
+    },
+    {
+      "id": "conv-life-l3-198-3",
+      "topic": "conversation",
+      "en": "Asking whether a guest needs anything else · Offer to write down the recipe",
+      "ar": "السؤال إن كان الضيف يحتاج شيئًا آخر · اعرض تدوين الوصفة",
+      "sentenceEn": "I'm glad you liked the soup. Would you like me to write down the recipe?",
+      "sentenceAr": "يسعدني أن الحساء أعجبك. هل تريدني أن أكتب لك الوصفة؟",
+      "words": [
+        {
+          "en": "offer to write down the recipe",
+          "ar": "اعرض تدوين الوصفة",
+          "kind": "phrase",
+          "x": 45,
+          "y": 64
+        },
+        {
+          "en": "recipe card",
+          "ar": "بطاقة وصفة",
+          "kind": "object",
+          "x": 44,
+          "y": 61
+        },
+        {
+          "en": "tomato illustration",
+          "ar": "رسم طماطم",
+          "kind": "object",
+          "x": 37,
+          "y": 61
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Offer to write down the recipe.",
+      "taskAr": "اعرض تدوين الوصفة.",
+      "path": "assets/scenes/conversations/life-l3-198-3.webp",
+      "width": 390,
+      "height": 242,
+      "sha256": "eafd57ff42096bac0343a2a3d6356bc64e8278eaa66e20d2dfcef6d3b6797454"
+    },
+    {
+      "id": "conv-life-l3-198-4",
+      "topic": "conversation",
+      "en": "Asking whether a guest needs anything else · Send the recipe so it is easy to find later",
+      "ar": "السؤال إن كان الضيف يحتاج شيئًا آخر · أرسل الوصفة لتسهيل العثور عليها لاحقًا",
+      "sentenceEn": "What more can I ask?",
+      "sentenceAr": "ما الذي يمكنني طلبه أكثر من ذلك؟",
+      "words": [
+        {
+          "en": "send the recipe so it is easy to find later",
+          "ar": "أرسل الوصفة لتسهيل العثور عليها لاحقًا",
+          "kind": "phrase",
+          "x": 53,
+          "y": 68
+        },
+        {
+          "en": "recipe on a phone",
+          "ar": "وصفة على الهاتف",
+          "kind": "object",
+          "x": 50,
+          "y": 68
+        },
+        {
+          "en": "cooking pot icon",
+          "ar": "رمز قدر طبخ",
+          "kind": "object",
+          "x": 49,
+          "y": 80
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Send the recipe so it is easy to find later.",
+      "taskAr": "أرسل الوصفة لتسهيل العثور عليها لاحقًا.",
+      "path": "assets/scenes/conversations/life-l3-198-4.webp",
+      "width": 390,
+      "height": 242,
+      "sha256": "47c2485227278494b4b9ecb04a959ab4c28d0357533b9f558d8ed1043b660319"
+    },
+    {
+      "id": "conv-life-l3-199-1",
+      "topic": "conversation",
+      "en": "Giving someone space to decide · Say that you still have doubts",
+      "ar": "منح شخص وقتًا لاتخاذ قرار · قل إن لديك شكوكًا",
+      "sentenceEn": "Everyone seems to want the same venue, but I still have doubts.",
+      "sentenceAr": "يبدو أن الجميع يريد المكان نفسه لكن لا تزال لديّ تحفظات.",
+      "words": [
+        {
+          "en": "say that you still have doubts",
+          "ar": "قل إن لديك شكوكًا",
+          "kind": "phrase",
+          "x": 44,
+          "y": 58
+        },
+        {
+          "en": "venue photos",
+          "ar": "صور أماكن الفعالية",
+          "kind": "object",
+          "x": 55,
+          "y": 67
+        },
+        {
+          "en": "doubtful",
+          "ar": "متشكّك",
+          "kind": "description",
+          "x": 16,
+          "y": 26
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Say that you still have doubts.",
+      "taskAr": "قل إن لديك شكوكًا.",
+      "path": "assets/scenes/conversations/life-l3-199-1.webp",
+      "width": 390,
+      "height": 242,
+      "sha256": "36cbaf44131fd410812425b3248f5ae5a6052362a8cfaee9afb1389b28111982"
+    },
+    {
+      "id": "conv-life-l3-199-2",
+      "topic": "conversation",
+      "en": "Giving someone space to decide · Explain why the room may be too small",
+      "ar": "منح شخص وقتًا لاتخاذ قرار · اشرح لماذا قد تكون القاعة صغيرة جدًا",
+      "sentenceEn": "It does matter. What matters is whether we can explain our concerns openly.",
+      "sentenceAr": "بل يهم. المهم أن نتمكن من التعبير عن تحفظاتنا بصراحة.",
+      "words": [
+        {
+          "en": "explain why the room may be too small",
+          "ar": "اشرح لماذا قد تكون القاعة صغيرة جدًا",
+          "kind": "phrase",
+          "x": 52,
+          "y": 70
+        },
+        {
+          "en": "room layout",
+          "ar": "مخطّط القاعة",
+          "kind": "object",
+          "x": 40,
+          "y": 72
+        },
+        {
+          "en": "group size chart",
+          "ar": "مخطّط عدد الأشخاص",
+          "kind": "object",
+          "x": 79,
+          "y": 68
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9159,
+          "en": "It does matter. What matters is whether we can explain our concerns openly.",
+          "ar": "بل يهم. المهم أن نتمكن من التعبير عن تحفظاتنا بصراحة."
+        }
+      ],
+      "taskEn": "Explain why the room may be too small.",
+      "taskAr": "اشرح لماذا قد تكون القاعة صغيرة جدًا.",
+      "path": "assets/scenes/conversations/life-l3-199-2.webp",
+      "width": 392,
+      "height": 242,
+      "sha256": "a13f8b323c7eb43ad8384e5464c81fa0f982fba0bf17f7bc5c78fb05229b7512"
+    },
+    {
+      "id": "conv-life-l3-199-3",
+      "topic": "conversation",
+      "en": "Giving someone space to decide · Look at a larger room before deciding",
+      "ar": "منح شخص وقتًا لاتخاذ قرار · عاين قاعة أكبر قبل اتخاذ القرار",
+      "sentenceEn": "That's a fair point. Shall we look at a larger room before we decide?",
+      "sentenceAr": "هذه ملاحظة وجيهة. هل نرى قاعة أكبر قبل أن نقرر؟",
+      "words": [
+        {
+          "en": "look at a larger room before deciding",
+          "ar": "عاين قاعة أكبر قبل اتخاذ القرار",
+          "kind": "phrase",
+          "x": 56,
+          "y": 58
+        },
+        {
+          "en": "banquet tables",
+          "ar": "طاولات ولائم",
+          "kind": "object",
+          "x": 58,
+          "y": 56
+        },
+        {
+          "en": "chandelier",
+          "ar": "ثريّا",
+          "kind": "object",
+          "x": 60,
+          "y": 16
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Look at a larger room before deciding.",
+      "taskAr": "عاين قاعة أكبر قبل اتخاذ القرار.",
+      "path": "assets/scenes/conversations/life-l3-199-3.webp",
+      "width": 390,
+      "height": 242,
+      "sha256": "7e9c6b43d38b39050a64955091bf526fbed2b7f1b2ec75cc174f8317edd736c8"
+    },
+    {
+      "id": "conv-life-l3-199-4",
+      "topic": "conversation",
+      "en": "Giving someone space to decide · Call to ask about the price",
+      "ar": "منح شخص وقتًا لاتخاذ قرار · اتصل للاستفسار عن السعر",
+      "sentenceEn": "We may still need to check the price. Let's call and ask.",
+      "sentenceAr": "ربما ما زلنا بحاجة إلى التحقق من السعر. لنتصل ونسأل.",
+      "words": [
+        {
+          "en": "call to ask about the price",
+          "ar": "اتصل للاستفسار عن السعر",
+          "kind": "phrase",
+          "x": 40,
+          "y": 50
+        },
+        {
+          "en": "price quote sheet",
+          "ar": "ورقة عرض سعر",
+          "kind": "object",
+          "x": 79,
+          "y": 77
+        },
+        {
+          "en": "mobile phone",
+          "ar": "هاتف محمول",
+          "kind": "object",
+          "x": 31,
+          "y": 32
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Call to ask about the price.",
+      "taskAr": "اتصل للاستفسار عن السعر.",
+      "path": "assets/scenes/conversations/life-l3-199-4.webp",
+      "width": 390,
+      "height": 242,
+      "sha256": "23c47318c7e9dbd0878e825b0938cd7ef1a5b1c5ebfc67418e597ce12b669c22"
+    },
+    {
+      "id": "conv-life-l3-200-1",
+      "topic": "conversation",
+      "en": "Practising a conversation with a new ending · Ask when the size will be back in stock",
+      "ar": "التدرّب على محادثة بنهاية مختلفة · اسأل متى سيتوفّر المقاس مجددًا",
+      "sentenceEn": "This time, imagine the shop has sold out of the size you asked for.",
+      "sentenceAr": "تخيّل هذه المرة أن المقاس الذي طلبته قد نفد من المتجر.",
+      "words": [
+        {
+          "en": "ask when the size will be back in stock",
+          "ar": "اسأل متى سيتوفّر المقاس مجددًا",
+          "kind": "phrase",
+          "x": 60,
+          "y": 56
+        },
+        {
+          "en": "empty shelf",
+          "ar": "رف فارغ",
+          "kind": "object",
+          "x": 71,
+          "y": 50
+        },
+        {
+          "en": "blue shirt",
+          "ar": "قميص أزرق",
+          "kind": "object",
+          "x": 45,
+          "y": 78
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9163,
+          "en": "Could you tell me whether it will be back in stock next week?",
+          "ar": "هل يمكنك إخباري ما إذا كان سيتوفر مجددًا الأسبوع المقبل؟"
+        }
+      ],
+      "taskEn": "Ask when the size will be back in stock.",
+      "taskAr": "اسأل متى سيتوفّر المقاس مجددًا.",
+      "path": "assets/scenes/conversations/life-l3-200-1.webp",
+      "width": 390,
+      "height": 243,
+      "sha256": "a91c826be5e21bc291aa020dba4f8ab382cfc355b4637ebcaa709e5be9584e9f"
+    },
+    {
+      "id": "conv-life-l3-200-2",
+      "topic": "conversation",
+      "en": "Practising a conversation with a new ending · Offer to check another branch",
+      "ar": "التدرّب على محادثة بنهاية مختلفة · اعرض التحقّق من فرع آخر",
+      "sentenceEn": "It might. If you need it sooner, I can check another branch.",
+      "sentenceAr": "ربما. إذا احتجته في وقت أقرب، يمكنني التحقق من فرع آخر.",
+      "words": [
+        {
+          "en": "offer to check another branch",
+          "ar": "اعرض التحقّق من فرع آخر",
+          "kind": "phrase",
+          "x": 58,
+          "y": 55
+        },
+        {
+          "en": "branch map",
+          "ar": "خريطة الفروع",
+          "kind": "object",
+          "x": 48,
+          "y": 45
+        },
+        {
+          "en": "availability indicator",
+          "ar": "علامة التوفّر",
+          "kind": "object",
+          "x": 53,
+          "y": 83
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Offer to check another branch.",
+      "taskAr": "اعرض التحقّق من فرع آخر.",
+      "path": "assets/scenes/conversations/life-l3-200-2.webp",
+      "width": 392,
+      "height": 243,
+      "sha256": "7c9c06f3690714fd5208dc288fd5cd6c6379ea5bfe946b7813a5fdee2d0fc679"
+    },
+    {
+      "id": "conv-life-l3-200-3",
+      "topic": "conversation",
+      "en": "Practising a conversation with a new ending · Reserve the item for collection today",
+      "ar": "التدرّب على محادثة بنهاية مختلفة · احجز القطعة لاستلامها اليوم",
+      "sentenceEn": "You can reserve one at another branch, or I can contact you when we get more.",
+      "sentenceAr": "يمكنك حجز واحدة في فرع آخر أو يمكنني التواصل معك عند وصول دفعة جديدة.",
+      "words": [
+        {
+          "en": "reserve the item for collection today",
+          "ar": "احجز القطعة لاستلامها اليوم",
+          "kind": "phrase",
+          "x": 46,
+          "y": 73
+        },
+        {
+          "en": "reservation form",
+          "ar": "استمارة حجز",
+          "kind": "object",
+          "x": 36,
+          "y": 87
+        },
+        {
+          "en": "folded shirt",
+          "ar": "قميص مطوي",
+          "kind": "object",
+          "x": 73,
+          "y": 84
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Reserve the item for collection today.",
+      "taskAr": "احجز القطعة لاستلامها اليوم.",
+      "path": "assets/scenes/conversations/life-l3-200-3.webp",
+      "width": 390,
+      "height": 243,
+      "sha256": "90f59c489ad52bfcdd5dc72dae0ca1dd9ca0c58c46f698090b9595fe738a214c"
+    },
+    {
+      "id": "conv-life-l3-200-4",
+      "topic": "conversation",
+      "en": "Practising a conversation with a new ending · Swap roles and try again",
+      "ar": "التدرّب على محادثة بنهاية مختلفة · تبادلوا الأدوار وحاولوا مجددًا",
+      "sentenceEn": "All right, let's try it again.",
+      "sentenceAr": "حسنًا، لنحاول مرة أخرى.",
+      "words": [
+        {
+          "en": "swap roles and try again",
+          "ar": "تبادلوا الأدوار وحاولوا مجددًا",
+          "kind": "phrase",
+          "x": 53,
+          "y": 61
+        },
+        {
+          "en": "clerk role card",
+          "ar": "بطاقة دور البائع",
+          "kind": "object",
+          "x": 24,
+          "y": 76
+        },
+        {
+          "en": "customer role card",
+          "ar": "بطاقة دور الزبون",
+          "kind": "object",
+          "x": 84,
+          "y": 75
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Swap roles and try again.",
+      "taskAr": "تبادلوا الأدوار وحاولوا مجددًا.",
+      "path": "assets/scenes/conversations/life-l3-200-4.webp",
+      "width": 390,
+      "height": 243,
+      "sha256": "4fa9e8f3d3cd6f3b75b06aa5dab63a9264b1fa0749e23a99f2c8de4654f59554"
     }
   ]
 }
