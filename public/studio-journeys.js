@@ -7,8 +7,7 @@ function studioJourneysPage(){
   <label>${T('ابحث عن محادثة أو مفردة من صورها','Find a conversation or a word from its photos')}
    <input type="search" id="studio-journey-query" value="${H(studioJourneyQuery)}" oninput="filterStudioJourneys(this.value,studioJourneyLevel)"></label>
   <label>${T('مستوى المحادثة','Conversation level')}<select id="studio-journey-level" onchange="filterStudioJourneys(studioJourneyQuery,this.value)">
-   <option value="">${T('كل المستويات','All levels')}</option>
-   ${[1,2,3].map(level=>`<option value="${level}" ${studioJourneyLevel===String(level)?'selected':''}>${dialogueSeriesLabel(level)}</option>`).join('')}
+   ${learningLevelOptions(studioJourneyLevel)}
   </select></label></div>
   <section id="studio-journey-active"></section>
   <p id="studio-journey-count" role="status"></p>
@@ -20,10 +19,10 @@ function studioJourneyRows(){
  const dialogues=PILOT?.dialogues;
  if(!dialogues||!ideaLibrary)return [];
  if(studioJourneyIndex?.dialogues===dialogues&&studioJourneyIndex.library===ideaLibrary&&
-  studioJourneyIndex.lifecycles===dialogueLifecycles&&studioJourneyIndex.plan===dialoguePlan)
+  studioJourneyIndex.lifecycles===dialogueLifecycles&&studioJourneyIndex.sequence===learningLevels)
   return studioJourneyIndex.rows;
  const library=new Map(ideaLibrary.scenes.map(scene=>[scene.id,scene]));
- const levels=new Map((dialoguePlan?.entries||[]).map(entry=>[entry.id,entry.series]));
+ const order=new Map(learningLevels.dialogueOrder.map((id,index)=>[id,index]));
  const rows=dialogues.flatMap(dialogue=>{
   const life=dialogueLifecycles[dialogue.id],entry=dialogueSceneArchive[dialogue.id];
   if(!life||!entry)return [];
@@ -31,12 +30,17 @@ function studioJourneyRows(){
   if(stages.some(stage=>!stage.scene))return [];
   const search=normalizeSceneQuery([dialogue.id,dialogue.en,dialogue.ar,life.goalEn,life.goalAr,
    ...stages.flatMap(({scene,en,ar})=>[en,ar,...scene.words.flatMap(word=>[word.en,word.ar])])].join(' '));
-  return [{dialogue,life,stages,search,level:levels.get(dialogue.id)??dialoguePlan?.defaultSeries??1}];
- });
- studioJourneyIndex={dialogues,library:ideaLibrary,lifecycles:dialogueLifecycles,plan:dialoguePlan,rows};
+  return [{dialogue,life,stages,search,level:learningLevels.dialogues[dialogue.id]}];
+ }).sort((a,b)=>(order.get(a.dialogue.id)??Infinity)-(order.get(b.dialogue.id)??Infinity));
+ studioJourneyIndex={dialogues,library:ideaLibrary,lifecycles:dialogueLifecycles,sequence:learningLevels,rows};
  return rows;
 }
 function filterStudioJourneys(query,level){
+ if(level!==studioJourneyLevel){
+  studioJourneyId='';
+  stopSpeech();
+  $('#studio-journey-active').replaceChildren();
+ }
  studioJourneyQuery=query;studioJourneyLevel=level;studioJourneyPage=0;
  paintStudioJourneys();
 }
@@ -56,16 +60,9 @@ function paintStudioJourneys(){
  host.innerHTML=matches.slice(studioJourneyPage*size,(studioJourneyPage+1)*size).map(({dialogue,stages,level})=>
   `<article class="panel studio-journey-card">${studioJourneyPhoto(stages[0].scene,1)}
    <button type="button" class="textlink" onclick="selectStudioJourney('${H(dialogue.id)}')">${H(T(dialogue.ar,dialogue.en))} ↗</button>
-   <small>${dialogueSeriesLabel(level)} · ${T(`${stages.length} لقطات`,`${stages.length} photos`)}</small></article>`).join('');
+   <small>${learningLevelLabel(level)} · ${T(`${stages.length} لقطات`,`${stages.length} photos`)}</small></article>`).join('');
  const selected=index.find(row=>row.dialogue.id===studioJourneyId);
  if(selected&&!$('#studio-journey-active').firstElementChild)paintStudioJourney(selected);
-}
-async function openStudioJourney(id){
- if($('#lesson')?.open)closeLesson();
- studioMode='journeys';studioJourneyId=id;studioOpenEpoch++;
- clearIdeaFlash();
- await showSmartLibrary();
- if(page==='scene-studio'&&studioMode==='journeys'&&studioJourneyId===id)focusStudioJourney();
 }
 function selectStudioJourney(id){
  const selected=studioJourneyRows().find(row=>row.dialogue.id===id);
@@ -165,7 +162,7 @@ function studioJourneyFrame({scene,from,to,ar,en,purposeAr,purposeEn},index,sele
      <label><input type="checkbox" ${selection.has(index+':'+wordIndex)?'checked':''} onchange="setStudioJourneyDetail(${index},${wordIndex},this.checked)">
       <span><b lang="en" dir="ltr">${H(word.en)}</b> ${wordTypeBadge(word)}<span class="ar-content" lang="ar" dir="rtl">${H(word.ar)}</span></span></label>
      <span data-studio-label-term="${index}:${wordIndex}"></span></li>`).join('')}</ul>
-    <button type="button" class="textlink" onclick="openSmartSentence('${H(scene.id)}')">${T('افتح الصورة واستمع إلى مفرداتها','Open the photo and hear its vocabulary')} ↗</button>
+    <button type="button" class="textlink" onclick="openLinkedLearning('photo','${H(scene.id)}')">${T('افتح الصورة واستمع إلى مفرداتها','Open the photo and hear its vocabulary')} ↗</button>
    </details>
   </figcaption></figure></li>`;
 }
@@ -208,9 +205,6 @@ function hearStudioJourney(from,to){
  const dialogue=PILOT?.dialogues.find(row=>row.id===studioJourneyId);
  playStudioDialogueRange(dialogue,from,to,$('#studio-journey-original'),true);
 }
-async function openStudioJourneyOriginal(id){
- const changed=new Promise(resolve=>window.addEventListener('hashchange',resolve,{once:true}));
- navigate('dialogues');
- await changed;
- if(page==='dialogues')openDialogue(id);
+function openStudioJourneyOriginal(id){
+ return openLinkedLearning('dialogue',id);
 }

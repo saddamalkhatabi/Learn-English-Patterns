@@ -1,6 +1,6 @@
 /* A visual collection separate from the sentence and dialogue libraries. */
 let ideaLibrary=null,ideaPage=0,ideaTopic='',ideaQuery='',ideaAction='observe',ideaSceneId='';
-let ideaSceneFilter='',ideaWordFilter='';
+let ideaSceneFilter='',ideaWordFilter='',ideaLearningLevel='';
 const ideaActions=[
  ['observe','لاحظ وتذكّر','Notice & recall'],
  ['apply','عبّر بطريقتك','Say it your way'],
@@ -12,6 +12,15 @@ try{
  const entries=JSON.parse(localStorage.getItem('nasaq-idea-dialogues-v1'));
  if(Array.isArray(entries))ideaArchive=entries.filter(entry=>entry?.id&&entry.sceneId&&Array.isArray(entry.turns));
 }catch{}
+window.addEventListener('storage',event=>{
+ if(event.key!=='nasaq-idea-dialogues-v1')return;
+ try{
+  const entries=JSON.parse(event.newValue||'[]');
+  if(!Array.isArray(entries))return;
+  ideaArchive=entries.filter(entry=>entry?.id&&entry.sceneId&&Array.isArray(entry.turns));
+  paintIdeaArchive();
+ }catch{}
+});
 try{ideaSceneId=localStorage.getItem('nasaq-idea-scene')||''}catch{}
 const ideaLibraryReady=fetch('api/idea-scenes',{signal:AbortSignal.timeout?.(3500)})
  .then(async response=>{
@@ -31,6 +40,7 @@ lab=function(){
    <label>${T('ابحث عن شيء أو فعل أو موقف','Find an object, action or situation')} <input type="search" value="${H(ideaQuery)}" oninput="ideaQuery=this.value;ideaPage=0;paintIdeaLibrary()" placeholder="${T('مثال: حقيبة، يزرع، quiet','Example: backpack, plant, هادئ')}"></label>
    <label>${T('الموضوع','Topic')} <select onchange="ideaTopic=this.value;ideaPage=0;paintIdeaLibrary()">
     <option value="">${T('كل الموضوعات','All topics')}</option>${(ideaLibrary?.topics||[]).map(t=>`<option value="${t.id}" ${ideaTopic===t.id?'selected':''}>${H(T(t.ar,t.en))}</option>`).join('')}</select></label>
+   <label>${T('مستوى التعلّم','Learning level')} <select onchange="setIdeaLearningLevel(this.value)">${learningLevelOptions(ideaLearningLevel)}</select></label>
    <label>${T('المجموعة','Collection')} <select onchange="ideaSceneFilter=this.value;ideaPage=0;paintIdeaLibrary()">
     <option value="">${T('كل المشاهد','All scenes')}</option><option value="saved" ${ideaSceneFilter==='saved'?'selected':''}>${T('مشاهد لها حوارات محفوظة','Scenes with saved dialogues')}</option>
    </select></label>
@@ -40,20 +50,35 @@ lab=function(){
   <button class="secondary" id="idea-lab-next" onclick="ideaPage++;paintIdeaLibrary()">${T('الصفحة التالية','Next page')}</button></div></details>`;
 };
 function currentIdeaScene(){return page==='scene-studio'?studioWordScene:ideaLibrary?.scenes.find(s=>s.id===ideaSceneId)}
+function setIdeaLearningLevel(level){
+ ideaLearningLevel=level;
+ ideaPage=0;
+ const matches=findIdeaScenes();
+ if(!matches.some(scene=>scene.id===ideaSceneId)){
+  stopSpeech();
+  clearIdeaFlash();
+  if(matches.length)chooseIdeaScene(matches[0].id,false);
+  else{
+   ideaSceneId='';
+   $('#idea-lab-active').textContent=T('لا توجد مشاهد بهذا الاختيار.','No scenes match this selection.');
+  }
+ }
+ paintIdeaLibrary();
+}
 function findIdeaScenes(){
  const tokens=normalizeSceneQuery(ideaQuery).trim().split(/\s+/).filter(Boolean);
  const topics=new Map(ideaLibrary?.topics.map(t=>[t.id,t]));
  const saved=new Set(ideaArchive.map(entry=>entry.sceneId));
  const scenes=ideaLibrary?.scenes||[];
- const candidates=scenes;
- return candidates.filter(scene=>{
+ return orderLearningScenes(scenes.filter(scene=>{
+  if(ideaLearningLevel&&sceneLearningLevel(scene)!==ideaLearningLevel)return false;
   if(ideaTopic&&ideaTopic!==scene.topic)return false;
   if(ideaSceneFilter==='saved'&&!saved.has(scene.id))return false;
   const topic=topics.get(scene.topic);
   const searchable=normalizeSceneQuery([scene.ar,scene.en,scene.sentenceEn,scene.sentenceAr,scene.taskEn,scene.taskAr,
    topic?.ar,topic?.en,...scene.words.flatMap(w=>[w.en,w.ar]),...(scene.patterns||[]).flatMap(p=>[p.en,p.ar])].join(' '));
   return tokens.every(token=>searchable.includes(token));
- });
+ }));
 }
 function ideaPicture(scene){
  if(scene.sentenceId)return studioPicture(dialogueScene(scene.sentenceId),scene.sentenceAr,scene.sentenceEn);
@@ -70,10 +95,10 @@ function paintIdeaLibrary(){
   T('جارٍ تحميل مكتبة المشاهد…','Loading the scene collection…');
  $('#idea-lab-prev').disabled=ideaPage===0;$('#idea-lab-next').disabled=ideaPage+1>=pages;
  grid.innerHTML=matches.slice(ideaPage*size,ideaPage*size+size).map(s=>`<article class="panel">
- <button class="idea-lab-card" onclick="chooseIdeaScene('${s.id}')">${ideaPicture(s)}<b>${H(T(s.ar,s.en))} ↗</b></button></article>`).join('');
+ <button class="idea-lab-card" onclick="chooseIdeaScene('${s.id}')">${ideaPicture(s)}<b>${H(T(s.ar,s.en))} ↗</b><small>${learningLevelLabel(sceneLearningLevel(s))}</small></button></article>`).join('');
 }
 function chooseIdeaScene(id,scroll=true){
- const scene=ideaLibrary?.scenes.find(s=>s.id===id)||ideaLibrary?.scenes[0];
+ const scene=ideaLibrary?.scenes.find(s=>s.id===id)||findIdeaScenes()[0];
  const host=$('#idea-lab-active');
  if(!host)return;
  if(!scene){
@@ -91,15 +116,16 @@ function chooseIdeaScene(id,scroll=true){
  clearIdeaFlash();
  if(ideaWordMode==='flash')ideaWordMode='hidden';
  if($('#idea-zoom')?.open)$('#idea-zoom .idea-zoom-content').replaceChildren();
- try{localStorage.setItem('nasaq-idea-scene',scene.id)}catch{}
+ if(!document.body.dataset.linkedLearning)try{localStorage.setItem('nasaq-idea-scene',scene.id)}catch{}
  host.innerHTML=`<article class="panel idea-lab-exercise">
-  <div class="idea-lab-image" id="idea-viewer-home">${ideaViewer(scene)}</div><div class="idea-lab-practice"><h2 tabindex="-1">${H(T(scene.ar,scene.en))}</h2>
+  <div class="idea-lab-image" id="idea-viewer-home">${ideaViewer(scene)}</div><div class="idea-lab-practice"><h2 tabindex="-1">${H(T(scene.ar,scene.en))}</h2><p class="lesson-hint">${learningLevelLabel(sceneLearningLevel(scene))}</p>
    <div class="idea-lab-modes" role="group" aria-label="${T('خطوات الممارسة','Practice steps')}">${ideaActions.map(([id,ar,en],index)=>
     `<button class="secondary" aria-pressed="${id===ideaAction}" data-idea-action="${id}" onclick="setIdeaAction('${id}')"><span>${index+1}</span> ${T(ar,en)}</button>`).join('')}</div>
    <div id="idea-lab-task"></div>
   </div></article>`;
  paintIdeaTask(scene);
  mountIdeaViewer(scene);
+ if(sceneAssistantIsOpen(scene))refreshSceneAssistant(scene,true);
  if(introduce){
   ideaIntroducedScenes.add(scene.id);
   startIdeaSequence(true,false);
@@ -182,7 +208,7 @@ function paintIdeaTask(scene,keepVocabulary=false){
   return;
  }
  host.innerHTML=`${heading('ماذا ترى؟','What can you see?')}
-  <p>${T('سمِّ شيئين تراهما، ثم صف فعلًا يجري في المشهد. اكشف الكلمات لتراجع ما تذكّرته.','Name two things you see, then describe one action. Reveal the words to check what you remembered.')}</p>
+  <p>${sceneLearningLevel(scene)==='A1'?T('اختر شيئًا واحدًا، واسمع اسمه ثم كرّره. استمع إلى سؤال وردّ قصير في مساعد المشهد.','Choose one thing, hear its name, and repeat it. Listen to a short question and reply in the scene coach.'):T('سمِّ شيئين تراهما، ثم صف فعلًا يجري في المشهد. اكشف الكلمات لتراجع ما تذكّرته.','Name two things you see, then describe one action. Reveal the words to check what you remembered.')}</p>
   ${ideaVocabulary(scene,keepVocabulary||host.querySelector('.idea-vocabulary')?.open)}
   <details class="idea-disclosure"><summary>${T('اكشف جملة تصف المشهد','Reveal a sentence about the scene')}</summary>${ideaModel(scene.sentenceEn,scene.sentenceAr,'model')}</details>`;
 }
@@ -220,7 +246,7 @@ render=function(){
  if(page==='lab'){paintIdeaLibrary();chooseIdeaScene(ideaSceneId,false);EP.decorate()}
 };
 if(page==='lab')render();
-ideaLibraryReady.then(data=>{ideaLibrary=data;if(page==='lab')render()});
+Promise.all([ideaLibraryReady,learningLevelsReady]).then(([data])=>{ideaLibrary=data;if(page==='lab')render()});
 pilotReady.then(()=>{
  if(page!=='lab')return;
  const scene=currentIdeaScene();

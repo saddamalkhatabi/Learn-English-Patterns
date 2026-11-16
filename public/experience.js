@@ -22,10 +22,41 @@ function epSectionLinks(keys){
  ).join('')}</nav>`;
 }
 nav=function(){const label=epLabel(page),active=epSubpages[page]?.[0]||page;$('#nav').innerHTML=epNavGroups.map(g=>`<div class="nav-group">${T(g[0],g[1])}</div>${g[2].map(([key,icon,ar,en])=>`<a href="#${key}" ${page===key?'aria-current="page"':''} class="${active===key?'active':''}"><span class="ico">${icon}</span><span>${T(ar,en)}</span>${key==='progress'&&due().length?`<span class="badge">${due().length}</span>`:''}</a>`).join('')}`).join('');$('#crumb').innerHTML=`${T('مساحتك للتعلّم','Your learning space')} <span>/</span> ${T(...label)}`;document.querySelector('.navlabel').textContent=T('مساحتك للتعلّم','Your learning space');document.querySelector('.profile').innerHTML=`<span class="avatar">EP</span><div><b>${T('أهلًا بك','Welcome back')}</b><small>${T('على إيقاعك','At your own pace')}</small></div><button onclick="navigate('settings')" aria-label="${T('الإعدادات','Settings')}">⚙</button>`;document.querySelector('.brand').innerHTML=`<img src="icon.svg" width="48" height="48" alt=""><span class="brand-name">English Patterns<small>${T('افهم. اربط. عبّر.','NOTICE. CONNECT. CREATE.')}</small></span>`;const header=document.querySelector('.header-tools');header.innerHTML=`<button class="language-switch" onclick="EP.set('language','${EP.prefs.language==='ar'?'en':'ar'}')" aria-label="${T('تغيير لغة الواجهة','Change interface language')}">${EP.prefs.language==='ar'?'English':'العربية'}</button><button class="iconbtn ep-settings" onclick="navigate('settings')" aria-label="${T('الإعدادات','Settings')}">⚙</button>`;document.querySelector('footer').innerHTML=`<b>English Patterns</b><span>${T('من بناء واضح إلى فكرة تخصك.','From a clear structure to your own idea.')}</span><button onclick="navigate('archive')">${T('ملفاتي ونسخ التقدم','My files & backups')} ↗</button><button onclick="navigate('quality')">${T('حالة المحتوى','Content status')} ↗</button>`};
-const brand=document.querySelector('.brand');const navHeading=document.createElement('div');navHeading.className='nav-heading';brand.before(navHeading);navHeading.append(brand);navHeading.insertAdjacentHTML('beforeend',`<button onclick="document.querySelector('#sidebar').dataset.expanded=document.querySelector('#sidebar').dataset.expanded!=='true'" aria-label="Navigation menu">☰</button>`);
+const brand=document.querySelector('.brand'),sidebar=$('#sidebar');
+const navHeading=document.createElement('div');
+navHeading.className='nav-heading';
+brand.before(navHeading);
+navHeading.append(brand);
+const mobileNavButton=document.createElement('button');
+mobileNavButton.type='button';
+mobileNavButton.textContent='☰';
+mobileNavButton.setAttribute('aria-controls','nav');
+mobileNavButton.setAttribute('aria-expanded','false');
+mobileNavButton.setAttribute('aria-label',T('قائمة التبويبات','Navigation menu'));
+navHeading.append(mobileNavButton);
+function setMobileNav(open){
+ sidebar.dataset.expanded=String(open);
+ mobileNavButton.setAttribute('aria-expanded',String(open));
+}
+function focusMobileTab(){
+ requestAnimationFrame(()=>{
+  const target=$('#app h1')||$('#app');
+  target.setAttribute('tabindex','-1');
+  target.focus({preventScroll:true});
+  $('#app').scrollIntoView({block:'start'});
+ });
+}
+mobileNavButton.addEventListener('click',()=>setMobileNav(sidebar.dataset.expanded!=='true'));
+sidebar.addEventListener('click',event=>{
+ const link=event.target.closest('a[href^="#"]');
+ if(!link||!matchMedia('(max-width: 760px)').matches||event.button||event.ctrlKey||event.metaKey||event.shiftKey||event.altKey)return;
+ setMobileNav(false);
+ if(link.hash===location.hash)focusMobileTab();
+ else window.addEventListener('hashchange',focusMobileTab,{once:true});
+});
 head=function(title,desc,kicker='ENGLISH PATTERNS'){return `<div class="pagehead"><div><span class="eyebrow">${H(kicker)}</span><h1>${title}</h1><p>${desc}</p></div></div>`};
 bilingual=function(ar,en){return EP.pair(ar,en)};
-let epPatternView='cards',epPatternQuery='',epPatternStatus='',epPatternGroup='';
+let epPatternView='cards',epPatternQuery='',epPatternStatus='',epPatternGroup='',epPatternLevel='';
 let epCustom=[];try{epCustom=JSON.parse(localStorage.getItem('patterns-custom-v1')||'[]')}catch{}
 function epSaveCustom(event){event.preventDefault();const form=document.querySelector('#personal-pattern-form'),values=new FormData(form),row={id:'personal-'+Date.now(),form:values.get('form').trim(),explanation_en:values.get('explanation_en').trim(),explanation_ar:values.get('explanation_ar').trim(),en:values.get('en').trim(),ar:values.get('ar').trim()};if(!row.form||!row.en||!row.explanation_en)return;epCustom.push(row);localStorage.setItem('patterns-custom-v1',JSON.stringify(epCustom));render();toast(T('حُفظ النمط الشخصي على هذا الجهاز.','Your personal pattern was saved on this device.'))}
 curriculumPage=function(){if(!COURSE_CATALOG)return head(T('استكشف الأنماط','Explore patterns'),T('جارٍ تحميل الأنماط…','Loading patterns…'));return `${head(T('نمط لكل فكرة جديدة.','A pattern for your next idea.'),T('استكشف جميع الأنماط، وميّز الدروس المتاحة عن المواد التي يجري استكمال صورها وتدريباتها.','Explore every pattern and distinguish ready lessons from material whose images and exercises are still being prepared.'),'THE PATTERN COLLECTION')}<div class="toolbar"><input class="search" id="ep-pattern-query" value="${H(epPatternQuery)}" placeholder="${T('ابحث عن نمط أو معنى…','Search for a pattern or meaning…')}" oninput="epPatternQuery=this.value;filterCurriculum()"><select aria-label="${T('حالة النمط','Pattern status')}" onchange="epPatternStatus=this.value;filterCurriculum()"><option value="">${T('كل الحالات','All statuses')}</option><option value="ready" ${epPatternStatus==='ready'?'selected':''}>${T('دروس جاهزة','Ready lessons')}</option><option value="pending" ${epPatternStatus==='pending'?'selected':''}>${T('قيد الاستكمال','In production')}</option></select><select aria-label="${T('مجموعة الأنماط','Pattern group')}" onchange="epPatternGroup=this.value;filterCurriculum()"><option value="">${T('كل المجموعات','All groups')}</option>${COURSE_CATALOG.groups.map(g=>`<option value="${g.id}" ${epPatternGroup===g.id?'selected':''}>${T(g.title,'Group '+g.id.replace(/\D/g,''))}</option>`).join('')}</select><select aria-label="${T('طريقة عرض الأنماط','Pattern layout')}" onchange="epPatternView=this.value;filterCurriculum()"><option value="cards" ${epPatternView==='cards'?'selected':''}>${T('بطاقات','Cards')}</option><option value="rows" ${epPatternView==='rows'?'selected':''}>${T('صفوف','Rows')}</option></select></div><p id="curriculum-count"></p><div id="curriculum-list" class="ep-pattern-list"></div><details class="panel" style="margin-top:24px"><summary>${T('＋ أضف نمطًا إلى مجموعتك الشخصية','＋ Add a pattern to your personal collection')}</summary><p>${T('تُحفظ الأنماط الشخصية محليًا وتدخل نسخة تصدير تقدمك. لا تضاف إلى الدروس المنشورة أو الأصوات المسجلة تلقائيًا.','Personal patterns stay on this device and are included in your progress export. They are separate from published lessons and produced recordings.')}</p><form id="personal-pattern-form" class="personal-form" onsubmit="epSaveCustom(event)"><label>${T('صيغة النمط','Pattern form')}<input name="form" dir="ltr" required placeholder="I would rather + base verb"></label><label>${T('القاعدة بالإنجليزية','Rule in English')}<input name="explanation_en" dir="ltr" required></label><label>${T('مثال بالإنجليزية','English example')}<input name="en" dir="ltr" required></label><label>${T('الترجمة العربية الاختيارية','Optional Arabic translation')}<input name="ar" dir="rtl"></label><label class="wide">${T('شرح عربي اختياري','Optional Arabic explanation')}<textarea name="explanation_ar" dir="rtl"></textarea></label><button class="primary" type="submit">${T('احفظ نمطي','Save my pattern')}</button></form></details>${epCustom.length?`<div class="ep-section-title"><h2>${T('أنماطي الشخصية','My personal patterns')} (${epCustom.length})</h2></div><div class="ep-pattern-list">${epCustom.map(p=>`<article class="ep-pattern-item"><b class="pattern-form" dir="ltr">${H(p.form)}</b>${EP.pair(p.explanation_ar,p.explanation_en)}<p lang="en" dir="ltr">${H(p.en)}</p>${EP.ar(p.ar)}</article>`).join('')}</div>`:''}`};

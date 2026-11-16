@@ -12,7 +12,7 @@ const trainingAudioReady=fetch('training-audio.json').then(r=>r.ok?r.json():{}).
 const courseScriptsReady=document.readyState==='loading'?
  new Promise(resolve=>document.addEventListener('DOMContentLoaded',resolve,{once:true})):Promise.resolve();
 const pilotReady=Promise.all([fetch('pilot.json').then(r=>{if(!r.ok)throw Error('pilot');return r.json()}),expansionReady,dialogueReady,trainingAudioReady,courseScriptsReady,
- courseScriptsReady.then(()=>dialogueArchiveReady)]).then(([data,expansion,dialogues,trainingAudio])=>{
+ courseScriptsReady.then(()=>Promise.all([dialogueArchiveReady,learningLevelsReady]))]).then(([data,expansion,dialogues,trainingAudio])=>{
  data.dialogues=dialogues;data.requireConversation=true;data.trainingAudio=trainingAudio;
  if(expansion?.schema===3){
   data.patterns.push(...expansion.patterns);
@@ -20,11 +20,17 @@ const pilotReady=Promise.all([fetch('pilot.json').then(r=>{if(!r.ok)throw Error(
   data.pattern_order.push(...expansion.patterns.map(p=>p.id));
   data.revision+='-expansion';
  }
+ data.pattern_order=orderLearningPatterns(data.pattern_order);
+ data.learningLevels=learningLevels.patterns;
+ data.sentenceLearningLevels=learningLevels.sentences;
+ const dialogueOrder=new Map(learningLevels.dialogueOrder.map((id,index)=>[id,index]));
+ data.dialogues=dialogues.map(dialogue=>({...dialogue,learningLevel:learningLevels.dialogues[dialogue.id]}))
+  .sort((a,b)=>(dialogueOrder.get(a.id)??Infinity)-(dialogueOrder.get(b.id)??Infinity));
  PILOT=data;for(const p of PILOT.patterns){let existing=patterns.find(x=>x.id===p.id);const rows=PILOT.sentences.filter(s=>s.pattern_id===p.id),examples=rows.map(s=>[s.en,s.ar]);const value={...(existing||{}),id:p.id,source:p.source||existing?.source||[],form:p.form,ar:p.title,meaning:p.explanation_ar||existing?.meaning||p.comparison.ar,topic:p.topic||existing?.topic||'أنماط مترابطة',level:rows[0]?.difficulty.cefr||'A1',examples,comparisonQuiz:p.comparisonQuiz,wrong:p.wrong||existing?.wrong||'',compare:p.comparison.ar,words:examples[0][0].split(' ')};if(existing)Object.assign(existing,value);else patterns.push(value)}
  for(const p of patterns)if(p.id===13)p.topic='الرغبات والخطط';
  for(const topic of new Set(patterns.map(p=>p.topic)))if(!units.some(u=>u.topic===topic))units.unshift({name:topic,desc:'تعرّف على البناء من خلال مواقف متنوعة، ثم كوّن أفكارك الخاصة.',topic,icon:'◎',color:'mint',time:'على إيقاعك'});
  const audio=document.createElement('audio');audio.id='route-audio';audio.preload='auto';document.body.appendChild(audio);
- route=new NasaqRoutePlayer({data:PILOT,audio,storage:localStorage,narrate:narrateTrainingCue,readingDefault:()=>Number(EP.prefs.readingSeconds??25),onchange:()=>{if(route)updateCoach()}});
+ route=new NasaqRoutePlayer({data:PILOT,audio,storage:document.body.dataset.linkedLearning?null:localStorage,narrate:narrateTrainingCue,readingDefault:()=>Number(EP.prefs.readingSeconds??25),onchange:()=>{if(route)updateCoach()}});
  audio.addEventListener('playing',()=>{cancelAnimationFrame(coachFrame);const tick=()=>{if(!route.running||audio.paused)return;if(page==='coach')paintCoachWords(audio.currentTime*1000);coachFrame=requestAnimationFrame(tick)};tick()});
  if(['coach','catalog','home','path','quality','library'].includes(page))render();
  return data;

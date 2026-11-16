@@ -1,0 +1,48 @@
+.linked-learning {
+  padding: 0;
+  width: min(1100px, calc(100vw - 32px));
+  height: min(900px, calc(100dvh - 32px));
+  max-width: none;
+  max-height: none;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--paper, #fff);
+}
+.linked-learning[open] {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+}
+.linked-learning::backdrop { background: #142b25ab; }
+.linked-learning-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 18px;
+  border-bottom: 1px solid var(--line);
+}
+.linked-learning-header h2 { font-size: 1rem; margin: 0; }
+.linked-learning iframe { width: 100%; height: 100%; border: 0; }
+body[data-linked-learning] #sidebar,
+body[data-linked-learning] main > header,
+body[data-linked-learning] main > footer { display: none; }
+body[data-linked-learning] main { margin: 0; padding: 16px; }
+body[data-linked-learning="photo"] #app > :not(#scene-studio-active, #idea-zoom),
+body[data-linked-learning="scene"] #app > :not(#idea-lab-active, #idea-zoom),
+body[data-linked-learning="journey"] #app > :not(#studio-journey-active),
+body[data-linked-learning="dialogue"] #app > :not(#dialogue-player),
+body[data-linked-learning="atlas"] #app > :not(#vocabulary-detail),
+body[data-linked-learning="pattern-photos"] #app > :is(.pagehead,.studio-tabs,.ep-section-links),
+body[data-linked-learning="listen"] #app > :is(.pagehead,.route-config,.ep-section-links) { display: none; }
+body[data-linked-learning] .linked-learning { width: 100%; height: 100dvh; border-radius: 0; }
+.dialogue-starter { margin-bottom: 16px; }
+.dialogue-starter h3 { margin-top: 0; }
+.dialogue-starter li p { margin: 4px 0; }
+.dialogue-starter [lang="en"] { text-align: start; font-size: 1rem; }
+.dialogue-series button[aria-pressed="true"] { background: var(--ink, #173c36); color: white; }
+@media (max-width: 760px) {
+  .linked-learning { width: calc(100vw - 12px); height: calc(100dvh - 12px); border-radius: 10px; }
+  .linked-learning-header { padding: 8px 10px; }
+  body[data-linked-learning] main { padding: 10px; }
+}

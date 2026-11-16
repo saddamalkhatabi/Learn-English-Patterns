@@ -5,6 +5,7 @@ const {normalize,tokens,posFor,includesTerm}=require('../public/vocabulary-core.
 const sceneGuide=require('../public/scene-guide.js');
 const read=name=>require('../public/'+name+'.json');
 const ideas=read('idea-scenes'),dialogues=read('dialogues').dialogues,art=read('conversation-scenes').scenes;
+const learningLevels=read('learning-levels');
 const imageWords=require('../production/scene-word-maps.json');
 const glossary=new Map(fs.readFileSync('production/vocabulary-glosses.tsv','utf8').trim().split(/\r?\n/).map(line=>{
  const [word,ar]=line.split('|');assert(word&&ar,line);return [normalize(word),ar];
@@ -41,6 +42,9 @@ function add(en,pos,lemma,sourceId,voiceAudio){
  return entry;
 }
 function addSource(source,recordings={}){
+ const registry=source.type==='dialogue'?learningLevels.dialogues:source.type==='sentence'?learningLevels.sentences:learningLevels.scenes;
+ source.level=registry[source.id];
+ assert(source.level,`Missing learning level for ${source.type} ${source.id}`);
  const sourceId=sources.length;sources.push(source);
  if(Object.keys(recordings).length)sourceAudio.set(sourceId,recordings);
  const raw=tokens(source.en),expanded=source.en.replace(/[a-zA-Z]+['’][a-zA-Z]+/g,word=>contractions[normalize(word)]||word);
@@ -136,20 +140,24 @@ for(const scene of ideas.scenes){
  for(const pattern of scene.patterns.filter(pattern=>pattern.en))addSource({type:'idea-example',id:scene.id,pattern:pattern.id,en:pattern.en,ar:pattern.ar,patternIds:[pattern.id],sceneIds:[scene.id]});
 }
 const guidePatternForms=new Map(['pilot','expansion-media'].flatMap(name=>read(name).patterns.map(pattern=>[pattern.id,pattern.form])));
-const guideFor=scene=>sceneGuide.make(scene,id=>guidePatternForms.get(id));
+const guideFor=scene=>sceneGuide.make(scene,id=>guidePatternForms.get(id),learningLevels.scenes[scene.id]);
 const guideScenes=new Map();
-for(const scene of ideas.scenes){
- if(!guideScenes.has(scene.topic))guideScenes.set(scene.topic,scene);
+const expressionScenes=new Map();
+const priority=new Set(learningLevels.starterScenes);
+for(const scene of [...ideas.scenes].sort((a,b)=>Number(priority.has(b.id))-Number(priority.has(a.id)))){
+ const key=scene.topic+'|'+learningLevels.scenes[scene.id];
+ if(!guideScenes.has(key))guideScenes.set(key,scene);
+ for(const question of guideFor(scene).questions){
+  if(!expressionScenes.has(question.phrase))expressionScenes.set(question.phrase,scene);
+ }
 }
-const extraGuideScenes=[
- ideas.scenes.find(scene=>scene.id==='conv-life-l3-200-1'),
- ideas.scenes.find(scene=>guideFor(scene).questions[1].phrase==='how can you tell')
-].filter(Boolean);
-for(const scene of new Set([...guideScenes.values(),...extraGuideScenes])){
- guideFor(scene).questions.forEach((question,step)=>addSource({
-  type:'idea-guide',id:scene.id,step,title:scene.ar,en:question.en,ar:question.ar,
-  patternIds:question.model?.id?[question.model.id]:[],sceneIds:[scene.id]
- }));
+const extraGuideScenes=ideas.scenes.filter(scene=>priority.has(scene.id)||scene.id==='conv-life-l3-200-1');
+for(const scene of new Set([...extraGuideScenes,...guideScenes.values(),...expressionScenes.values()])){
+ guideFor(scene).questions.forEach((question,step)=>{
+  const context={id:scene.id,step,title:scene.ar,patternIds:question.model?.id?[question.model.id]:[],sceneIds:[scene.id]};
+  addSource({...context,type:'idea-guide',en:question.en,ar:question.ar});
+  if(question.answer)addSource({...context,type:'idea-guide-reply',en:question.answer[0],ar:question.answer[1]});
+ });
 }
 const phrases=new Map(fs.readFileSync('production/vocabulary-phrases.tsv','utf8').trim().split(/\r?\n/).map(line=>{
  const [phrase,ar]=line.split('|');return [normalize(phrase),[phrase,ar]];

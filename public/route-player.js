@@ -42,7 +42,13 @@ class NasaqRoutePlayer{
    }
   }
   for(const [id,list] of this.dialoguesByPattern){
-   list.sort((left,right)=>Number(right.after===id)-Number(left.after===id));
+   const levels=['A1','A2','B1','B2'];
+   const target=levels.indexOf(data.learningLevels?.[id]);
+   const difficulty=dialogue=>{
+    const level=levels.indexOf(dialogue.learningLevel);
+    return target<0||level<0?0:level>target?levels.length+level-target:target-level;
+   };
+   list.sort((left,right)=>difficulty(left)-difficulty(right)||Number(right.after===id)-Number(left.after===id));
   }
   let previous;try{previous=JSON.parse(storage.getItem('nasaq-route-v2'))}catch{}
   this.session={schema:2,ids:[],cursor:0,phase:'sentence',offset:0,voice:'male',voiceMode:'alternate',rate:1,mode:'listen',completed:[],autoNextPattern:true,includeDialogues:false,readingSeconds:null,...previous};
@@ -71,18 +77,20 @@ class NasaqRoutePlayer{
   audio.addEventListener('error',()=>{this.error='تعذر تحميل التسجيل. لم نتجاوز الجملة؛ يمكنك المحاولة مجددًا.';this.running=false;this.emit()});
   root.addEventListener?.('pagehide',()=>this.pause());
  }
- queue({patternIds=this.data.pattern_order,stage=0,cefr='',sample=0}={}){
-  return [...new Set(patternIds)].filter(id=>this.data.pattern_order.includes(id)).flatMap(pid=>{
-   const rows=this.data.sentences.filter(s=>s.pattern_id===pid&&(!stage||s.difficulty.stage===+stage)&&(!cefr||s.difficulty.cefr===cefr));
+ queue({patternIds=this.data.pattern_order,stage=0,cefr='',learningLevel='',sample=0}={}){
+  return [...new Set(patternIds)].filter(id=>this.data.pattern_order.includes(id)&&
+   (!learningLevel||this.data.learningLevels?.[id]===learningLevel)).flatMap(pid=>{
+   const rows=this.data.sentences.filter(s=>s.pattern_id===pid&&(!stage||s.difficulty.stage===+stage)&&
+    (!cefr||s.difficulty.cefr===cefr)&&(!learningLevel||!this.data.sentenceLearningLevels?.[s.id]||this.data.sentenceLearningLevels[s.id]===learningLevel));
    if(sample===3)return rows.slice(0,3).map(s=>s.id);
    if(sample!==6||rows.length<=sample)return rows.map(s=>s.id);
    return Array.from({length:sample},(_,i)=>rows[Math.round(i*(rows.length-1)/(sample-1))].id);
   });
  }
- configure({patternIds=this.data.pattern_order,stage=0,cefr='',mode='listen',voiceMode='alternate',rate=1,autoNextPattern=true,routeId='',sample=0,includeDialogues=false,dialoguesPerPattern=includeDialogues?1:0,readingSeconds=null}={}){
-  this.pause();const ids=this.queue({patternIds,stage,cefr,sample});
+ configure({patternIds=this.data.pattern_order,stage=0,cefr='',learningLevel='',mode='listen',voiceMode='alternate',rate=1,autoNextPattern=true,routeId='',sample=0,includeDialogues=false,dialoguesPerPattern=includeDialogues?1:0,readingSeconds=null}={}){
+  this.pause();const ids=this.queue({patternIds,stage,cefr,learningLevel,sample});
   if(this.requireConversation&&!dialoguesPerPattern)dialoguesPerPattern=1;
-  this.session={schema:2,ids,cursor:0,phase:'sentence',offset:0,voice:voiceMode==='female'?'female':'male',voiceMode,mode,rate:+rate,completed:[],autoNextPattern,includeDialogues:dialoguesPerPattern!==0,dialoguesPerPattern,readingSeconds,fullCourse:!sample&&!stage&&!cefr&&!routeId&&new Set(patternIds).size===this.data.pattern_order.length,curriculumRevision:this.data.revision,filters:{patternIds,stage:+stage,cefr,routeId,sample}};this.error='';this.save();this.emit();return ids.length;
+  this.session={schema:2,ids,cursor:0,phase:'sentence',offset:0,voice:voiceMode==='female'?'female':'male',voiceMode,mode,rate:+rate,completed:[],autoNextPattern,includeDialogues:dialoguesPerPattern!==0,dialoguesPerPattern,readingSeconds,fullCourse:!sample&&!stage&&!cefr&&!learningLevel&&!routeId&&new Set(patternIds).size===this.data.pattern_order.length,curriculumRevision:this.data.revision,filters:{patternIds,stage:+stage,cefr,learningLevel,routeId,sample}};this.error='';this.save();this.emit();return ids.length;
  }
  get comparisonRemaining(){return this.comparisonEndsAt?Math.max(0,this.comparisonEndsAt-this.now()):Math.max(0,this.session.comparisonRemainingMs??this.session.comparisonDurationMs??25000)}
  get comparisonDuration(){return this.session.comparisonDurationMs||25000}
@@ -106,7 +114,7 @@ class NasaqRoutePlayer{
   return ids.length?100*(cursor+fraction)/ids.length:0;
  }
  get wordIndex(){const ms=this.session.offset*1000;return this.recording?.words?.findIndex(w=>w.start_ms<=ms&&ms<w.end_ms)??-1}
- save(){try{this.storage.setItem('nasaq-route-v2',JSON.stringify(this.session))}catch{this.error='تعذر حفظ موضعك على هذا المتصفح.'}}
+ save(){try{this.storage?.setItem('nasaq-route-v2',JSON.stringify(this.session))}catch{this.error='تعذر حفظ موضعك على هذا المتصفح.'}}
  emit(){this.onchange(this)}
  async play(){
   if(!this.sentence){this.error='اختر مسارًا يحتوي جملًا أولًا.';this.emit();return}

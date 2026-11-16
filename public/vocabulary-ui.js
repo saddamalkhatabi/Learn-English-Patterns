@@ -1,5 +1,5 @@
 let vocabularyData=null,vocabularyLoad=null,vocabularyPageNumber=0,vocabularyTerm=null,vocabularyAudio=null;
-let vocabularyQuery='',vocabularyType='',vocabularyCollection='',vocabularyPattern='',vocabularyVoice='male';
+let vocabularyQuery='',vocabularyType='',vocabularyCollection='',vocabularyPattern='',vocabularyLevel='',vocabularyVoice='male';
 let vocabularyEntriesByKey=new Map(),vocabularySearch=new Map(),vocabularyPreferredScene='';
 function loadVocabulary(){
  if(!vocabularyLoad)vocabularyLoad=fetch('vocabulary-index.json').then(response=>{
@@ -28,14 +28,7 @@ function loadVocabulary(){
 function vocabularyKey(en,pos){return EPVocabulary.normalize(en)+'|'+pos}
 function vocabularyEntryFor(word){return vocabularyEntriesByKey.get(vocabularyKey(word.en,EPVocabulary.posFor(word)))}
 function openVocabularyFromScene(id,sceneId=''){
- vocabularyPreferredScene=sceneId;
- vocabularyTerm=id;
- const entry=vocabularyData?.entries.find(entry=>entry.id===id);
- if(entry){
-  vocabularyQuery=entry.en;vocabularyPageNumber=0;
-  vocabularyType='';vocabularyCollection='';vocabularyPattern='';
- }
- navigate('vocabulary');
+ return openLinkedLearning('atlas',id,{scene:sceneId});
 }
 function wordTypeBadge(word){
  const type=EPVocabulary.types[EPVocabulary.posFor(word)]||EPVocabulary.types.X;
@@ -52,6 +45,7 @@ function vocabularyPage(){
     ${[['','كل المحتوى','All content'],['sentence','الجمل والدروس','Sentences and lessons'],['dialogue','المحادثات','Conversations'],['idea','مفردات المشاهد','Scene vocabulary']].map(([id,ar,en])=>`<option value="${id}" ${vocabularyCollection===id?'selected':''}>${T(ar,en)}</option>`).join('')}</select></label>
    <label>${T('النمط','Pattern')}<select onchange="vocabularyPattern=this.value;resetVocabulary()"><option value="">${T('كل الأنماط','All patterns')}</option>
     ${(PILOT?.patterns||[]).map(p=>`<option value="${p.id}" ${vocabularyPattern==p.id?'selected':''}>${H(p.form)}</option>`).join('')}</select></label>
+   <label>${T('مستوى التعلّم','Learning level')}<select onchange="vocabularyLevel=this.value;resetVocabulary()">${learningLevelOptions(vocabularyLevel)}</select></label>
    <label>${T('الصوت','Voice')}<select onchange="vocabularyVoice=this.value"><option value="male" ${vocabularyVoice==='male'?'selected':''}>Adam</option><option value="female" ${vocabularyVoice==='female'?'selected':''}>Bella</option></select></label>
   </div>
   <p class="lesson-hint">${T('قد تكون للكلمة أدوار مختلفة. راجع معناها ونوعها في المثال الظاهر.','A word may have different roles. Check its meaning and type in the example shown.')}</p>
@@ -60,7 +54,15 @@ function vocabularyPage(){
   <div class="buttonrow"><button class="secondary" id="vocabulary-prev" onclick="vocabularyPageNumber--;paintVocabulary()">${T('السابق','Previous')}</button>
    <button class="secondary" id="vocabulary-next" onclick="vocabularyPageNumber++;paintVocabulary()">${T('التالي','Next')}</button></div>`;
 }
-function resetVocabulary(){vocabularyPageNumber=0;paintVocabulary()}
+function resetVocabulary(){
+ vocabularyPageNumber=0;paintVocabulary();
+ if(vocabularyTerm)openVocabularyTerm(vocabularyTerm,vocabularyPreferredScene,false);
+}
+function vocabularyMatchesSource(source){
+ return (!vocabularyCollection||source.type.startsWith(vocabularyCollection))&&
+  (!vocabularyLevel||source.level===vocabularyLevel)&&
+  (!vocabularyPattern||source.patternIds.includes(Number(vocabularyPattern)));
+}
 function paintVocabulary(){
  const host=$('#vocabulary-results');
  if(!host)return;
@@ -70,10 +72,7 @@ function paintVocabulary(){
   (!vocabularyType||entry.pos===vocabularyType)&&
   (!vocabularyPattern||entry.patternIds.includes(Number(vocabularyPattern)))&&
   (!query||vocabularySearch.get(entry.id).includes(query))&&
-  (!vocabularyCollection||entry.sourceIds.some(id=>{
-   const source=vocabularyData.sources[id];
-   return source.type.startsWith(vocabularyCollection)&&(!vocabularyPattern||source.patternIds.includes(Number(vocabularyPattern)));
-  }))
+  (!(vocabularyCollection||vocabularyLevel||vocabularyPattern)||entry.sourceIds.some(id=>vocabularyMatchesSource(vocabularyData.sources[id])))
  ).sort((a,b)=>b.sourceIds.length-a.sourceIds.length||a.en.localeCompare(b.en));
  const pages=Math.max(1,Math.ceil(entries.length/size));
  vocabularyPageNumber=Math.max(0,Math.min(vocabularyPageNumber,pages-1));
@@ -85,11 +84,12 @@ function paintVocabulary(){
    <button class="secondary" onclick="playVocabularyEntry('${entry.id}')" aria-label="${T('انطق','Hear')} ${H(entry.en)}">▶</button></article>`
  ).join('');
 }
-function openVocabularyTerm(id,preferredScene=vocabularyPreferredScene){
+function openVocabularyTerm(id,preferredScene=vocabularyPreferredScene,scroll=true){
  vocabularyTerm=id;vocabularyPreferredScene=preferredScene;
  const entry=vocabularyData?.entries.find(entry=>entry.id===id),host=$('#vocabulary-detail');
  if(!entry||!host)return;
- const uses=entry.sourceIds.map(index=>({index,source:vocabularyData.sources[index]}));
+ const uses=entry.sourceIds.map(index=>({index,source:vocabularyData.sources[index]})).filter(({source})=>vocabularyMatchesSource(source));
+ if(!uses.length){host.replaceChildren();return}
  if(preferredScene)uses.sort((a,b)=>Number(b.source.id===preferredScene&&b.source.type==='idea-word')-
   Number(a.source.id===preferredScene&&a.source.type==='idea-word'));
  const byExample=new Map();
@@ -100,21 +100,20 @@ function openVocabularyTerm(id,preferredScene=vocabularyPreferredScene){
  host.innerHTML=`<article class="panel vocabulary-selected"><div class="buttonrow"><h2 lang="en" dir="ltr">${H(entry.en)}</h2>${wordTypeBadge(entry)}
    <button class="secondary" onclick="playVocabularyEntry('${entry.id}')">▶ ${T('استمع','Listen')}</button></div>
    ${EP.ar(entry.ar)}${entry.expansion?`<p lang="en" dir="ltr">${H(entry.expansion)}</p>`:''}
-   ${vocabularySceneLinks(entry)}
+   ${vocabularySceneLinks(uses)}
    <h3>${T('شاهدها في سياق','See it in context')}</h3>
    ${[...byExample.values()].slice(0,8).map(({source,index})=>{
     return `<div class="vocabulary-use"><p lang="en" dir="ltr">${vocabularyMarked(source.en,entry.en)}</p>${EP.ar(source.ar)}
-     <button class="textlink" onclick="openVocabularyUse(${index})">${source.type==='dialogue'?T('افتح المحادثة عند هذا الدور','Open this conversation turn'):source.type==='idea-guide'?T('افتح تدريب المشهد','Open scene practice'):source.type.startsWith('idea')?T('افتح المشهد','Open scene'):T('افتح الجملة وصورتها','Open sentence and scene')} ↗</button></div>`;
+     <small>${learningLevelLabel(source.level||'')}</small> <button class="textlink" onclick="openVocabularyUse(${index})">${source.type==='dialogue'?T('افتح المحادثة عند هذا الدور','Open this conversation turn'):source.type.startsWith('idea-guide')?T('افتح تدريب المشهد','Open scene practice'):source.type.startsWith('idea')?T('افتح المشهد','Open scene'):T('افتح الجملة وصورتها','Open sentence and scene')} ↗</button></div>`;
    }).join('')}
    <details><summary>${T('كل مواضع الاستخدام','All uses')} · ${uses.length}</summary>${uses.map(({source,index})=>
     `<button class="textlink vocabulary-source-link" onclick="openVocabularyUse(${index})">${H(source.en)}${source.type==='idea-word'?` <span class="ar-content" lang="ar" dir="rtl">${H(source.ar)}</span>`:''}</button>`
    ).join('')}</details></article>`;
- host.scrollIntoView({block:'start'});
+ if(scroll)host.scrollIntoView({block:'start'});
 }
-function vocabularySceneLinks(entry){
+function vocabularySceneLinks(examples){
  const uses=new Map();
- for(const index of entry.sourceIds){
-  const source=vocabularyData.sources[index];
+ for(const {index,source} of examples){
   for(const id of source.sceneIds)if(!uses.has(id))uses.set(id,{source,index});
  }
  const cards=[...uses].map(([id,use])=>{
@@ -126,7 +125,7 @@ function vocabularySceneLinks(entry){
    const scene=ideaLibrary?.scenes.find(scene=>scene.id===source.id);
    if(scene)photo=ideaPicture(scene);
   }else photo=pilotScene(dialogueScene(source.id));
-  const open=source.type!=='idea-guide'&&dialogueSceneLocations.has(id)?`openSmartSentence('${H(id)}')`:`openVocabularyUse(${use.index})`;
+  const open=!source.type.startsWith('idea-guide')&&dialogueSceneLocations.has(id)?`openLinkedLearning('photo','${H(id)}')`:`openVocabularyUse(${use.index})`;
   return photo?`<button class="vocabulary-scene-card" onclick="${open}">${photo}<small>${H(source.title||source.en)}</small></button>`:'';
  }).filter(Boolean);
  return cards.length?`<details class="vocabulary-scenes"><summary>${T('الصور المرتبطة','Linked scenes')} · ${cards.length}</summary><div class="vocabulary-scene-links">${cards.join('')}</div></details>`:'';
@@ -141,25 +140,16 @@ function vocabularyMarked(text,term){
   return selected?`<mark>${H(word)}</mark>`:H(word);
  }).join('');
 }
-async function openVocabularyUse(index){
+function openVocabularyUse(index){
  const source=vocabularyData?.sources[index];if(!source)return;
  if(source.type==='dialogue'){
-  await Promise.all([pilotReady,dialogueArchiveReady]);navigate('dialogues');
-  // The route renderer runs on hashchange.
-  requestAnimationFrame(()=>requestAnimationFrame(()=>{
-   openDialogue(source.id,false,'dialogue-player',true);
-   const audio=$('#dialogue-player audio'),turn=PILOT.dialogues.find(d=>d.id===source.id)?.audio?.turns[source.turn];
-   if(audio&&turn){audio.currentTime=turn.start_ms/1000;playDialogueMedia(audio)}
-  }));
- }else if(source.type==='idea-guide'){
-  await openSceneAssistantGuide(source.id,source.step);
+  return openLinkedLearning('dialogue',source.id,{turn:source.turn});
+ }else if(source.type.startsWith('idea-guide')){
+  return openSceneAssistantGuide(source.id,source.step);
  }else if(source.type.startsWith('idea')){
-  await Promise.all([ideaLibraryReady,dialogueArchiveReady]);
-  if(dialogueSceneLocations.has(source.id)){await openSmartSentence(source.id);return}
-  navigate('lab');
-  requestAnimationFrame(()=>chooseIdeaScene(source.id));
+  return openLinkedLearning(dialogueSceneLocations.has(source.id)?'photo':'scene',source.id);
  }else{
-  await Promise.all([pilotReady,archiveReady]);openSmartSentence(source.id);
+  return openLinkedLearning('photo',source.id);
  }
 }
 function vocabularyAudioFor(text,voice){

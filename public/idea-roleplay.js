@@ -179,26 +179,13 @@ function paintIdeaArchive(){
   <button class="textlink" onclick="removeIdeaArchivedDialogue()">${T('احذف من أرشيفي','Remove from my archive')}</button></div>`:'';
 }
 function openIdeaArchivedDialogue(id){ideaArchiveView=id;paintIdeaArchive()}
-async function openIdeaArchiveScene(){
- const id=ideaArchiveView;
- const entry=ideaArchive.find(row=>row.id===id);
- if(entry?.sceneId.startsWith('journey:')){
-  await openStudioJourney(entry.sceneId.slice(8));
-  ideaArchiveView=id;paintIdeaArchive();
-  const details=$('.idea-archive');if(details)details.open=true;
-  return;
- }
- if(entry?.sceneId.startsWith('studio:')){
-  await openSmartSentence(entry.sceneId.slice(7));ideaArchiveView=id;paintIdeaArchive();
-  const details=$('.idea-archive');if(details)details.open=true;
-  return;
- }
- if(!entry||!ideaLibrary?.scenes.some(scene=>scene.id===entry.sceneId))return;
- chooseIdeaScene(entry.sceneId);
- setIdeaAction('roleplay');
- ideaArchiveView=id;
- paintIdeaArchive();
- $('.idea-archive').open=true;
+function openIdeaArchiveScene(){
+ const entry=ideaArchive.find(row=>row.id===ideaArchiveView);
+ if(!entry)return;
+ const options={archive:entry.id};
+ if(entry.sceneId.startsWith('journey:'))return openLinkedLearning('journey',entry.sceneId.slice(8),options);
+ if(entry.sceneId.startsWith('studio:'))return openLinkedLearning('photo',entry.sceneId.slice(7),options);
+ return openLinkedLearning('scene',entry.sceneId,options);
 }
 function removeIdeaArchivedDialogue(){
  const entries=ideaArchive.filter(entry=>entry.id!==ideaArchiveView);

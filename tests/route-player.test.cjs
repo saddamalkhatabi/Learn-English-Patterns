@@ -12,6 +12,15 @@ test('visits all authored distinct sentences, all 12 per pattern, alternating ac
 test('pause and new instance restore exact sentence, audio offset and same voice',async()=>{const {p,audio,storage}=make();p.jumpTo('want-02');await p.play();audio.currentTime=1.42;audio.fire('timeupdate');p.pause();const saved=JSON.parse(storage.getItem('nasaq-route-v2'));const next=make(source,saved);assert.equal(next.p.sentence.id,'want-02');assert.equal(next.p.session.voice,'female');await next.p.play();assert.equal(next.audio.currentTime,1.42);assert.equal(next.audio.getAttribute('src'),'assets/audio/want-02-female.mp3')});
 test('interactive mode holds current sentence until learner continues',async()=>{const {p,audio}=make();p.configure({patternIds:[1],mode:'interactive'});await p.play();audio.fire('ended');assert.equal(p.session.phase,'exercise');assert.equal(p.session.cursor,0);assert.equal(p.running,false);p.continueAfterExercise();assert.equal(p.session.cursor,1);assert.equal(p.session.voice,'female')});
 test('selection and learning-stage filters preserve authored sequence',()=>{const {p}=make();assert.equal(p.configure({patternIds:[13,2],stage:3}),4);assert.deepEqual(p.session.ids,['need-05','need-06','have-05','have-06'])});
+test('teaching level filters patterns and examples and prioritises level-matched conversations',()=>{
+ const data={...source,learningLevels:{1:'A1',13:'A2'},sentenceLearningLevels:{'want-12':'A2'},
+  dialogues:[{id:'stretch',after:1,learningLevel:'B2'},{id:'starter',learningLevel:'A1',lines:[{patterns:[1]}]}]};
+ const {p}=make(data);
+ assert.equal(p.configure({patternIds:[13,1],learningLevel:'A1'}),11);
+ assert.equal(p.sentence.id,'want-01');
+ assert.equal(p.session.filters.learningLevel,'A1');
+ assert.deepEqual(p.dialoguesForPattern(1).map(d=>d.id),['starter','stretch']);
+});
 test('explicit other-voice replay does not advance and new sentences alternate by route index',async()=>{const {p,audio}=make();p.configure({patternIds:[1]});await p.play();p.otherVoice();assert.equal(p.sentence.id,'want-01');assert.equal(p.session.voice,'female');audio.fire('ended');assert.equal(p.sentence.id,'want-02');assert.equal(p.session.voice,'female')});
 test('unproduced recordings stop without skipping or fallback timing',async()=>{const {p}=make();delete p.recording.sha256;await p.play();assert.equal(p.running,false);assert.equal(p.session.cursor,0);assert.match(p.error,/لم يُنتج/) });
 test('audio speed changes use media playbackRate; cue lookup uses currentTime',()=>{const {p,audio}=make();p.setRate(.75);assert.equal(audio.playbackRate,.75);p.session.offset=.5;assert.equal(p.wordIndex,0);p.session.offset=2;assert.equal(p.wordIndex,-1)});

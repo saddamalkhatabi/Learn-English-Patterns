@@ -37,7 +37,7 @@ function ideaViewer(scene){
    </div>
    <p class="idea-picture-hint">${T('انقر الكلمة لتبديل لغتها لحظات، أو النقطة لإبراز موضعها. أثناء النطق تظهر الإنجليزية على الصورة والترجمة أسفلها.','Tap a word to switch its language briefly, or a dot to highlight its location. During audio, English appears on the photo and the translation below.')}</p>
    <div class="idea-zoom-audio">${ideaAudioControls()}</div></details>
-   ${sceneAssistantButton()}
+   ${sceneAssistantButton(scene)}
   </div></div>${sceneAssistantPanel(scene)}</div>`;
 }
 

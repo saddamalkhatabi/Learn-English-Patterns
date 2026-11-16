@@ -90,8 +90,9 @@ test('essential verbs, contractions and phrase units have Arabic meanings and re
 test('screen-sharing practice uses image annotations and authored patterns and indexes its reusable expressions',()=>{
  const guide=require('../public/scene-guide.js');
  const byId=new Map(require('../public/idea-scenes.json').scenes.map(scene=>[scene.id,scene]));
+ const levels=require('../public/learning-levels.json');
  const forms=new Map(['pilot','expansion-media'].flatMap(name=>require('../public/'+name+'.json').patterns.map(pattern=>[pattern.id,pattern.form])));
- const make=scene=>guide.make(scene,id=>forms.get(id));
+ const make=scene=>guide.make(scene,id=>forms.get(id),levels.scenes[scene.id]);
  const scene=byId.get('conv-life-l3-200-1'),practice=make(scene);
  assert.equal(practice.pattern.id,9163);
  assert.match(practice.questions[0].en,/empty shelf/);
@@ -100,6 +101,11 @@ test('screen-sharing practice uses image annotations and authored patterns and i
  const withoutAnchors=make({...scene,words:[{en:'object',ar:'شيء',kind:'object'}],patterns:[]});
  assert.doesNotMatch(withoutAnchors.questions[0].en,/“object”/);
  assert.match(withoutAnchors.pattern.form,/Could you/);
+ const beginner=make(byId.get(levels.starterScenes[0]));
+ assert.equal(beginner.questions.length,3);
+ assert(beginner.questions.every(question=>question.answer?.every(Boolean)));
+ assert.equal(beginner.questions[0].answer[0],beginner.questions[1].answer[0]);
+ assert(vocabulary.sources.some(source=>source.type==='idea-guide-reply'&&source.level==='A1'));
  for(const expression of Object.keys(guide.phrases)){
   const term=vocabulary.entries.find(entry=>normalize(entry.en)===expression&&entry.pos==='PHRASE');
   assert(term?.ar,expression);

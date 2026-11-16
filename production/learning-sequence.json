@@ -1,0 +1,38 @@
+{
+  "patterns": {
+    "A1": [113, 114, 103, 5, 102, 104, 9053, 9055, 105, 107, 109, 4, 9050, 9037, 9125, 9054, 117, 116, 118, 9066, 9067, 9069, 9068, 9041, 1, 3, 9135, 111, 112, 9035, 9036, 6, 9051, 9056, 9058, 9064, 9022, 9017, 9018, 9019, 9020, 9021, 9028, 9031, 9032, 9033, 9034, 9023, 9024, 9025, 9026, 9027],
+    "A2": [106, 13, 2, 9044, 9045, 9046, 9047, 9049, 9039, 9040, 9052, 9126, 9129, 9130, 9132, 9133, 9136, 9137, 9059, 9060, 9061, 9057, 9062, 9063, 9065, 9070, 9029, 9030, 9071, 9072, 9073, 9074, 9075, 9076, 9077, 9078, 9079, 9080, 9081, 9082, 9083, 9084, 9089, 9090, 9091, 9092, 9093, 9094, 9095, 9096, 9097, 9098, 9100, 9107, 9108, 9109, 9114, 9117, 9121, 9122, 10, 9140, 9142, 9145, 9148],
+    "B2": [9147, 9150, 9152, 9153, 9156, 9157, 9159, 9163, 9167, 9168, 9169, 9170, 9171, 9172, 9173, 9174, 9175]
+  },
+  "starterDialogues": [
+    ["new-neighbor", 1, 2, "قل اسمك واسأل عن اسم الطرف الآخر.", "Say your name and ask the other person's name."],
+    ["class-introduction", 1, 2, "حيِّ شخصًا وقل إنك طالب جديد.", "Greet someone and say you are a new student."],
+    ["cafe-order", 1, 2, "اطلب شيئًا واحدًا مستخدمًا I'd like.", "Order one drink with I'd like."],
+    ["breakfast-choices", 1, 2, "قل ما تحب وما لا تحب في الإفطار.", "Say what you like and don't like for breakfast."],
+    ["tea-with-a-guest", 1, 2, "اعرض الشاي أو القهوة واقبل العرض بأدب.", "Offer tea or coffee and accept politely."],
+    ["card-payment", 1, 2, "اسأل إن كان الدفع بالبطاقة ممكنًا.", "Ask whether you can pay by card."],
+    ["lend-a-pen", 3, 4, "اطلب استعارة قلم واستمع إلى الموافقة.", "Ask to borrow a pen and listen for agreement."],
+    ["bus-stop-directions", 1, 2, "اسأل أين تقع محطة الحافلات.", "Ask where the bus stop is."],
+    ["museum-entrance", 3, 4, "اسأل إن كنت تستطيع شراء تذكرة في ذلك المكان.", "Ask whether you can buy a ticket there."],
+    ["lesson-time", 1, 2, "اسأل عن موعد الدرس وكرّر الساعة.", "Ask when the lesson is and repeat the time."],
+    ["new-flat-tour", 1, 2, "صف ما يوجد في منزل مستخدمًا there is وthere are.", "Describe what is in a home with there is and there are."],
+    ["before-school", 1, 2, "قل أول شيء تفعله في الصباح.", "Say what you do first in the morning."],
+    ["bakery-two-loaves", 2, 4, "اذكر الكمية واسأل عن سعر القطعة.", "Give the quantity and ask the price per item."],
+    ["two-tickets", 1, 3, "اطلب تذكرتين وحدّد اليوم.", "Ask for two tickets and say which day."],
+    ["l2-027", 1, 3, "اقبل عرض شراب واطلب كوب ماء.", "Accept a drink offer and ask for water."],
+    ["clinic-desk", 2, 4, "اطلب موعدًا واستمع إلى الساعة المحددة.", "Ask for an appointment and listen for the time."],
+    ["finding-the-clinic-desk", 1, 2, "اسأل عن مكتب الاستقبال واستمع إلى مكانه.", "Ask for reception and listen for its location."],
+    ["hotel-checkin", 1, 3, "عرّف بنفسك في الفندق واسأل عن المصعد.", "Introduce yourself at the hotel and ask for the lift."],
+    ["library-book", 3, 4, "اطلب استعارة كتاب واستمع إلى ما يلزم إظهاره.", "Ask to borrow a book and listen for what you need to show."],
+    ["shoe-size", 3, 4, "اسأل إن كان يمكنك تجربة الحذاء.", "Ask to try on a pair of shoes."],
+    ["fruit-for-guests", 3, 4, "اسأل عن سعر الفاكهة بالكيلو.", "Ask how much the fruit costs per kilo."],
+    ["market-budget", 1, 2, "اسأل عن السعر واستمع إلى ردّ البائع.", "Ask the price and listen to the seller's reply."],
+    ["quiet-study-place", 1, 2, "اسأل إن كانت هناك مكتبة قريبة.", "Ask whether there is a library nearby."],
+    ["appointment-reminder", 1, 2, "تحقّق من يوم الموعد وساعته.", "Confirm the day and time of an appointment."]
+  ],
+  "dialogueLevels": {
+    "A2": ["phone-help", "bread-before-closing", "charger-included", "early-alarm", "night-routine", "find-the-key", "welcoming-intern", "early-flight-routine", "morning-at-the-hotel", "sleepover-toothbrush", "lunch-on-a-budget", "museum-audio-guide", "finding-the-host", "first-interview-introduction", "replacement-key-cut", "charging-before-the-trip", "shared-grocery-list", "group-book-exchange", "charging-at-the-library", "one-bag-overnight", "desk-near-the-window", "office-visitor-badge", "introducing-a-new-teammate", "l2-050"],
+    "B2": ["exam-mistake", "before-the-departure", "interview-feedback", "interview-handling-pressure", "first-club-session-memory", "listening-speed-progress", "l2-152", "l2-161", "l3-055", "l3-059"]
+  },
+  "starterScenes": ["idea-home-01", "idea-food-04", "idea-home-02", "idea-travel-09", "idea-home-03", "idea-home-09", "idea-food-02", "idea-food-01", "idea-home-05"]
+}

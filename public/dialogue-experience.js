@@ -100,12 +100,11 @@ function dialoguePatterns(ids){
  }).join('');
 }
 function openDialogueLesson(id){
- releaseDialoguePlayer();
- openLesson(id);
+ return openLinkedLearning('lesson',id);
 }
 function dialogueScene(id){
  if(id?.startsWith('ref-'))return REFERENCE_CORPUS?.sentences.find(row=>row.id===id);
- return PILOT?.sentences.find(row=>row.id===id);
+ return PILOT?.sentences.find(row=>row.id===id)||SUPPLEMENT?.sentences.find(row=>row.id===id);
 }
 function dialogueVisual(dialogue,index){
  const line=dialogue.lines[Math.max(index,0)];
@@ -142,9 +141,28 @@ function dialogueSourceNote(line){
  return `<small class="dialogue-source">${T(`من مكتبة الألف جملة · ${number}`,`From the 1,000-sentence library · ${number}`)}</small>`;
 }
 function openDialoguePhotoInLibrary(button,id){
- button.closest('.dialogue-image-dialog').close();
- if($('#lesson')?.open)closeLesson();
- return openSmartSentence(id);
+ return openLinkedLearning('photo',id);
+}
+function dialogueStarterPanel(dialogue){
+ const clip=learningLevels.starter[dialogue.id];
+ if(!clip||!dialogue.audio)return '';
+ const lines=dialogue.lines.slice(clip.from,clip.to+1);
+ return `<section class="panel dialogue-starter" data-dialogue-starter="${H(dialogue.id)}">
+  <h3>${T('ابدأ بهذا المقطع','Start with this exchange')}</h3>
+  <p>${H(T(clip.ar,clip.en))}</p>
+  <p>${T('اسمع المقطع، ثم أعده وقل العبارات بعد المتحدثين.','Listen once, then replay and say the lines after the speakers.')}</p>
+  <div class="buttonrow">
+   <button type="button" class="primary" onclick="playDialogueStarter(this,.85)">▶ ${T('استمع وكرّر ببطء','Listen and repeat slowly')}</button>
+   <button type="button" class="secondary" onclick="playDialogueStarter(this,1)">▶ ${T('استمع بالسرعة العادية','Listen at normal speed')}</button>
+  </div>
+  <ol start="${clip.from+1}">${lines.map((line,index)=>`<li data-studio-dialogue-turn="${clip.from+index}"><p lang="en" dir="ltr">${dialogueWords(line)}</p>${EP.ar(line.ar)}</li>`).join('')}</ol>
+ </section>`;
+}
+function playDialogueStarter(button,rate){
+ const host=button.closest('[data-dialogue-starter]');
+ const id=host.dataset.dialogueStarter,clip=learningLevels.starter[id];
+ const dialogue=PILOT?.dialogues.find(row=>row.id===id);
+ if(clip&&dialogue)playStudioDialogueRange(dialogue,clip.from,clip.to,host,true,rate);
 }
 function dialoguePanel(dialogue, jump){
  const patterns=[...new Set(dialogue.lines.flatMap(line=>line.patterns))];
@@ -152,8 +170,9 @@ function dialoguePanel(dialogue, jump){
  const life=dialogueLifecycles[dialogue.id];
  const priority=dialoguePriority;
  return `<section class="dialogue-panel" data-lifecycle="${Boolean(life)}" data-priority="${priority}"><div class="dialogue-panel-title"><h2>${H(T(dialogue.ar,dialogue.en))}</h2>${dialoguePriorityControl(dialogue)}</div>
+  ${learningLevels.dialogues[dialogue.id]?`<p class="lesson-hint">${learningLevelLabel(learningLevels.dialogues[dialogue.id])}</p>`:''}
   <button type="button" class="secondary dialogue-overview-toggle" aria-expanded="false" onclick="toggleDialogueOverview(this)">${T('عرض كل المشاهد','Show all scenes')}</button>
-  ${life?`<button type="button" class="secondary" onclick="openStudioJourney('${H(dialogue.id)}')">${T('تدرّب بتسلسل الصور','Practise with the photo sequence')} ↗</button>`:''}
+  ${life?`<button type="button" class="secondary" onclick="openLinkedLearning('journey','${H(dialogue.id)}')">${T('تدرّب بتسلسل الصور','Practise with the photo sequence')} ↗</button>`:''}
   <div class="dialogue-overview" hidden>${life?dialogueJourney(dialogue,jump):dialogueSceneGallery(dialogue,jump)}</div>
   <details class="dialogue-patterns"><summary>${T('الأنماط في هذه المحادثة','Patterns in this conversation')}</summary>
   ${patterns.length?`<div class="buttonrow">${dialoguePatterns(patterns)}</div>`:''}
@@ -223,7 +242,7 @@ function openDialogue(id,queued=false,hostId='dialogue-player',preview=false,res
  const key=dialogueResumeKey(hostId), saved=dialogueResume[key];
  const compatible=resume&&saved?.id===id&&saved.sha256===dialogue.audio?.sha256;
  const index=queued?dialogueQueue.index:0,total=queued?dialogueQueue.ids.length:0;
- host.innerHTML=(dialogue.audio?
+ host.innerHTML=(hostId==='dialogue-player'&&!queued?dialogueStarterPanel(dialogue):'')+(dialogue.audio?
   `<div class="dialogue-play-status" role="status">${queued?`${index+1} / ${total} · ${dialogueQueue.label}`:''}</div>
   <div class="dialogue-transport"><button type="button" class="primary" data-dialogue-toggle onclick="toggleDialogueTransport(this)">▶ ${T('تشغيل','Play')}</button>
   <audio controls preload="metadata" src="${H(dialogue.audio.path)}" aria-label="${T('مشغّل المحادثة','Conversation player')}"></audio></div>${queued?`<div class="buttonrow" data-dialogue-queue-controls>
@@ -237,7 +256,7 @@ function openDialogue(id,queued=false,hostId='dialogue-player',preview=false,res
   const offset=compatible?Math.min(Number(saved.offset)||0,Math.max(0,dialogue.audio.duration_ms/1000-.05)):0;
   let coverage=compatible?saved.coverage:undefined,lastSave=0;
   const storePosition=()=>{
-   if(host.querySelector('audio')!==audio)return;
+   if(host.querySelector('audio')!==audio||document.body.dataset.linkedLearning)return;
    const queue=dialogueQueue?.hostId===hostId?dialogueQueue:null;
    coverage=NasaqRoutePlayer.conversationCoverage(audio,coverage);
    dialogueResume[key]={id,sha256:dialogue.audio.sha256,offset:audio.ended?0:audio.currentTime,coverage:audio.ended?undefined:coverage,queue:queue?.ids};
@@ -253,6 +272,7 @@ function openDialogue(id,queued=false,hostId='dialogue-player',preview=false,res
   if(offset)audio.addEventListener('loadedmetadata',()=>{audio.currentTime=offset;paint()},{once:true});
   audio.addEventListener('play',()=>{
    pauseDialogueAudio(audio);
+   studioAudio?.pause();
    stopSpeechBeforeDialogues();
    paintButton();
   });
@@ -271,13 +291,18 @@ function openDialogue(id,queued=false,hostId='dialogue-player',preview=false,res
  }
  if(!preview&&hostId==='dialogue-player')host.scrollIntoView({block:'start'});
 }
+function openDialogueCard(id){
+ const starter=Boolean(learningLevels.starter[id]);
+ openDialogue(id,false,'dialogue-player',starter);
+ if(starter){stopSpeech();$('#dialogue-player').scrollIntoView({block:'start'})}
+}
 function playDialogueMedia(audio){audio?.play().catch(()=>{toast(T('اضغط تشغيل لإعادة المحاولة.','Press Play to try again.'))})}
 function toggleDialogueTransport(button){
  const audio=button.closest('[data-dialogue-player]').querySelector('audio');
  if(audio.paused)playDialogueMedia(audio);else audio.pause();
 }
 function playAllDialogues(filtered=false){
- const rows=filtered?filteredDialogueEntries().map(entry=>entry.dialogue):(PILOT?.dialogues||[]);
+ const rows=(filtered?filteredDialogueEntries():dialogueEntries()).map(entry=>entry.dialogue);
  const ids=rows.filter(dialogue=>dialogue?.audio).map(dialogue=>dialogue.id);
  if(!ids.length)return;
  const label=filtered?T('تشغيل نتائج البحث','Playing filtered results'):T('تشغيل كل المحادثات','Playing all conversations');
@@ -391,36 +416,32 @@ playCatalogSentence=function(id){
  pauseDialogueAudio();
  playCatalogBeforeDialogues(id);
 };
-function dialogueSeriesLabel(series){
- const ordinal={1:'الأول',2:'الثاني',3:'الثالث'};
- return T(`المستوى ${ordinal[series]??series}`,`Level ${series}`);
-}
+let dialogueLearningLevel='';
 function dialoguesPage(){
  const groups=new Map();
  for(const entry of dialogueEntries()){
-  if(entry.status!=='planned')groups.set(entry.series,(groups.get(entry.series)||0)+1);
+  if(entry.status!=='planned')groups.set(entry.level,(groups.get(entry.level)||0)+1);
  }
- const seriesChoices=Object.fromEntries([...groups.keys()].map(series=>[series,[dialogueSeriesLabel(series),dialogueSeriesLabel(series)]]));
  return head(T('المحادثات','Conversations'),T('استمع إلى عنوان كل محادثة ثم إلى شخصين يستخدمان الأنماط في موقف واحد. يتغيّر المشهد مع الأدوار، ويمكنك فتح النص الكامل في أي وقت.','Hear each title, then listen to two people use patterns in context. The scene follows the turns, and the full transcript is always available.'))+
   `<aside class="panel dialogue-story-entry"><div><b>${T('تدرّب مع قصة قصيرة','Practise with a short story')}</b>
    <p>${T('استمع إلى «مقهى في مدينة جديدة» ثم أجب عن سؤال الفهم.','Listen to “A café in a new city,” then answer a comprehension question.')}</p></div>
-   <a class="secondary" href="#stories">${T('افتح القصة','Open story')} ↗</a></aside>`+
-  `<div class="buttonrow dialogue-series">${[...groups].map(([series,count])=>
-   `<button class="secondary" onclick="selectDialogueSeries(${series})">${dialogueSeriesLabel(series)} · ${count}</button>`
+   <button class="secondary" onclick="openLinkedLearning('story')">${T('افتح القصة','Open story')} ↗</button></aside>`+
+  `<div class="buttonrow dialogue-series">${Object.keys(learningLevelNames).map(level=>
+   `<button type="button" class="secondary" data-dialogue-level="${level}" aria-pressed="${dialogueLearningLevel===level}" onclick="selectDialogueLevel('${level}')">${learningLevelLabel(level)} · ${groups.get(level)||0}</button>`
   ).join('')}</div>
   <form class="panel dialogue-filters" onsubmit="event.preventDefault()" onreset="requestAnimationFrame(resetDialogueCatalog)">
    <label class="dialogue-search">${T('البحث','Search')}<input type="search" id="dialogue-query" oninput="resetDialogueFilters()" placeholder="${T('عنوان، موقف، أو نمط…','Title, situation, or pattern…')}"></label>
    ${dialogueSelect('category',T('الموقف','Situation'),T('كل المواقف','All situations'),dialogueCategories)}
    ${dialogueSelect('purpose',T('هدف المحادثة','Speaking goal'),T('كل الأهداف','All goals'),dialoguePurposes)}
    ${dialogueSelect('visual',T('المشاهد','Visual journey'),T('كل المحادثات','All conversations'),{journey:[`دورة مصوّرة · ${Object.keys(dialogueLifecycles).length} محادثة`,`Illustrated journey · ${Object.keys(dialogueLifecycles).length} conversations`]})}
-   ${dialogueSelect('series',T('مستوى المحادثات','Conversation level'),T('كل المستويات','All conversation levels'),seriesChoices)}
-   ${dialogueSelect('level',T('صعوبة اللغة المقترحة','Suggested language difficulty'),T('كل درجات الصعوبة','All difficulties'),{A1:['A1','A1'],A2:['A2','A2'],B1:['B1','B1'],B2:['B2','B2']})}
+   <label>${T('مستوى التعلّم','Learning level')}<select id="dialogue-level" onchange="selectDialogueLevel(this.value)">${learningLevelOptions(dialogueLearningLevel)}</select></label>
    ${dialogueSelect('status',T('الجاهزية','Availability'),T('المحادثات المتاحة','Available conversations'),{
     audio:['مسجّلة','Recorded'],text:['نص فقط','Transcript only'],planned:['مواقف في خطة التوسّع','Planned situations']
    },'resetDialogueCatalog()')}
    <label>${T('النمط','Pattern')}<select id="dialogue-pattern" onchange="resetDialogueFilters()" dir="ltr"></select></label>
    <button class="secondary" type="reset">${T('مسح الفلاتر','Reset filters')}</button>
   </form>
+  <p id="dialogue-level-guide" class="lesson-hint"></p>
   <div class="buttonrow">
    <button class="secondary" data-dialogue-resume="catalog" onclick="resumeCatalogDialogue()" ${dialogueResume.catalog?.offset?'':'hidden'}>▶ ${T('استكمل من آخر موضع','Resume where you left off')}</button>
    <button class="primary" id="dialogue-play-all" onclick="playAllDialogues()">▷ ${T('شغّل كل المحادثات','Play all conversations')}</button>
@@ -445,27 +466,31 @@ function dialogueEntries(){
  for(const dialogue of dialogues.values()){
   if(!plan.has(dialogue.id))plan.set(dialogue.id,dialogue);
  }
- return [...plan.values()].map(entry=>{
+ const order=new Map(learningLevels.dialogueOrder.map((id,index)=>[id,index]));
+ return [...plan.values()].sort((a,b)=>(order.get(a.id)??Infinity)-(order.get(b.id)??Infinity)).map(entry=>{
   const dialogue=dialogues.get(entry.id);
   const patternIds=dialogue?dialogue.lines.flatMap(line=>line.patterns):entry.targets;
   const status=dialogue?(dialogue.audio?'audio':'text'):'planned';
-  return {...entry,series:entry.series??dialoguePlan?.defaultSeries??1,dialogue,status,patternIds:[...new Set(patternIds)]};
+  return {...entry,level:learningLevels.dialogues[entry.id]||entry.level,dialogue,status,patternIds:[...new Set(patternIds||[])]};
  });
 }
-function selectDialogueSeries(series){
- $('#dialogue-series').value=String(series);
- resetDialogueFilters();
+function selectDialogueLevel(level){
+ dialogueLearningLevel=level;
+ $('#dialogue-level').value=level;
+ resetDialogueCatalog();
 }
 function dialogueStatusMatches(entry,status){
  return status?entry.status===status:entry.status!=='planned';
 }
 function paintDialoguePatternOptions(){
  const status=$('#dialogue-status').value;
- const patternIds=new Set(dialogueEntries().filter(entry=>dialogueStatusMatches(entry,status)).flatMap(entry=>entry.patternIds));
+ const select=$('#dialogue-pattern'),previous=select.value,level=$('#dialogue-level').value;
+ const patternIds=new Set(dialogueEntries().filter(entry=>dialogueStatusMatches(entry,status)&&(!level||entry.level===level)).flatMap(entry=>entry.patternIds));
  const options=(PILOT?.patterns||[]).filter(pattern=>patternIds.has(pattern.id))
   .sort((left,right)=>left.form.localeCompare(right.form,'en'));
- $('#dialogue-pattern').innerHTML=`<option value="">${T('كل الأنماط','All patterns')}</option>`+
+ select.innerHTML=`<option value="">${T('كل الأنماط','All patterns')}</option>`+
   options.map(pattern=>`<option value="${pattern.id}">${H(pattern.form)}</option>`).join('');
+ if(patternIds.has(Number(previous)))select.value=previous;
 }
 function resetDialogueFilters(){
  dialogueCatalogPage=0;
@@ -486,7 +511,7 @@ function normalizeDialogueSearch(value){
 }
 function filteredDialogueEntries(){
  const status=$('#dialogue-status').value;
- const facets=['category','purpose','level','series'].map(key=>[key,$('#dialogue-'+key).value]);
+ const facets=['category','purpose','level'].map(key=>[key,$('#dialogue-'+key).value]);
  const patternId=Number($('#dialogue-pattern').value);
  const tokens=normalizeDialogueSearch($('#dialogue-query').value).trim().split(/\s+/).filter(Boolean);
  const patterns=new Map((PILOT?.patterns||[]).map(pattern=>[pattern.id,pattern]));
@@ -512,6 +537,10 @@ function paintDialogueCatalog(){
  const host=$('#dialogue-catalog');
  if(!host)return;
  const entries=filteredDialogueEntries();
+ dialogueLearningLevel=$('#dialogue-level').value;
+ $('#dialogue-level-guide').textContent=learningLevelGuide(dialogueLearningLevel);
+ document.querySelectorAll('[data-dialogue-level]').forEach(button=>
+  button.setAttribute('aria-pressed',String(button.dataset.dialogueLevel===dialogueLearningLevel)));
  const totalPages=Math.max(1,Math.ceil(entries.length/dialoguesPerPage));
  dialogueCatalogPage=Math.max(0,Math.min(dialogueCatalogPage,totalPages-1));
  const offset=dialogueCatalogPage*dialoguesPerPage;
@@ -531,10 +560,10 @@ function paintDialogueCatalog(){
  host.innerHTML=entries.slice(offset,offset+dialoguesPerPage).map(entry=>{
   const {dialogue,category,level,purpose}=entry;
   const visual=dialogue?dialogueImageButton(dialogue,-1):'';
-  const meta=[dialogueSeriesLabel(entry.series),T(...(dialogueCategories[category]||dialogueCategories.daily)),level,purpose&&T(...dialoguePurposes[purpose])].filter(Boolean).join(' · ');
+  const meta=[learningLevelLabel(level),T(...(dialogueCategories[category]||dialogueCategories.daily)),purpose&&T(...dialoguePurposes[purpose])].filter(Boolean).join(' · ');
   const label=dialogue?.audio?T('مسجّلة','Recorded'):dialogue?T('نص متاح','Transcript available'):T('ضمن الخطة','Planned');
-  const action=dialogue?`<button class="secondary" onclick="openDialogue('${H(dialogue.id)}')">
-    ${dialogue.audio?T('استمع','Listen'):T('اقرأ النص','Read transcript')} ↗</button>`:
+  const action=dialogue?`<button class="secondary" onclick="openDialogueCard('${H(dialogue.id)}')">
+    ${learningLevels.starter[dialogue.id]?T('ابدأ بالمقطع القصير','Start with the short exchange'):dialogue.audio?T('استمع','Listen'):T('اقرأ النص','Read transcript')} ↗</button>`:
    `<details><summary>${T('الأنماط المستهدفة','Target patterns')}</summary><div class="buttonrow">${dialoguePatterns(entry.patternIds)}</div></details>`;
   return `<article class="panel dialogue-cover">${visual}
    <div><small>${H(meta)}</small><span class="chip dialogue-status">${label}</span>
@@ -561,7 +590,7 @@ render=function(){
  if(page==='dialogues')resetDialogueCatalog();
  EP.decorate();
 };
-Promise.all([pilotReady,dialoguePlanReady,dialogueArchiveReady]).then(([,plan])=>{
+Promise.all([pilotReady,dialoguePlanReady,dialogueArchiveReady,learningLevelsReady]).then(([,plan])=>{
  dialoguePlan=plan;
  if(['dialogues','comparisons'].includes(page))render();
 });

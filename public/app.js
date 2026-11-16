@@ -2,11 +2,28 @@ const $=s=>document.querySelector(s), esc=s=>String(s).replace(/[&<>"']/g,c=>({'
 let saved;try{saved=JSON.parse(localStorage.getItem('nasaq-v1'))}catch{}let state=saved||{done:{},seen:[],last:1,stage:0,voice:0,rate:.85,minutes:0};let page='home',sources=[],sourcePage=0,sourceQuery='',current=patterns[0],stage=0,example=0,built=[],passed=false,auto=false,recordStream,recorder,recordURL,timer,reviewIndex=0,reviewRevealed=false;
 const labels={home:'رحلتك اليوم',path:'مسار التعلّم',library:'مكتبة الأنماط',lab:'مختبر الأفكار',stories:'قصص ومواقف',review:'مراجعتك الذكية',progress:'تقدّمك',settings:'إعدادات التعلّم',quality:'مرصد المحتوى',about:'عن English Patterns',coach:'المعلّم الآلي',catalog:'كتالوج المشاهد'};
 const navs=[['home','⌂'],['coach','▷'],['catalog','▦'],['path','⌁'],['library','▤'],['lab','✧'],['stories','▧'],['review','◷'],['progress','◴'],['settings','⚙']];
-function persist(){try{localStorage.setItem('nasaq-v1',JSON.stringify(state))}catch{toast('تعذر الحفظ على هذا المتصفح. صدّر تقدمك من الإعدادات.')}}
+function persist(){
+ try{
+  if(document.body.dataset.linkedLearning){
+   const saved=JSON.parse(localStorage.getItem('nasaq-v1')||'{}');
+   const {done,seen,dailyPractice,lessonConversations}=state;
+   localStorage.setItem('nasaq-v1',JSON.stringify({...state,...saved,done,seen,dailyPractice,lessonConversations}));
+  }else localStorage.setItem('nasaq-v1',JSON.stringify(state));
+ }catch{toast('تعذر الحفظ على هذا المتصفح. صدّر تقدمك من الإعدادات.')}
+}
+window.addEventListener('storage',event=>{
+ if(event.key!=='nasaq-v1'||!event.newValue)return;
+ try{
+  const saved=JSON.parse(event.newValue);
+  for(const key of ['done','seen','dailyPractice','lessonConversations']){
+   if(saved[key]!==undefined)state[key]=saved[key];
+  }
+ }catch{}
+});
 function toast(t){$('#toast').textContent=t;$('#toast').style.display='block';clearTimeout(timer);timer=setTimeout(()=>$('#toast').style.display='none',4000)}
 function navigate(p){location.hash=p;if(page===p)render()}
 function ideaPracticeButton(id){
- return `<button class="secondary idea-practice-link" onclick="openAdvancedIdea(${Number(id)})">✦ ${T('مارس النمط بالصور','Practise with original scenes')}</button>`;
+ return `<button class="secondary idea-practice-link" onclick="openLinkedLearning('pattern-photos',${Number(id)})">✦ ${T('مارس النمط بالصور','Practise with original scenes')}</button>`;
 }
 window.addEventListener('hashchange',()=>{page=location.hash.slice(1)||'home';if(!labels[page])page='home';render();window.scrollTo(0,0)});
 function head(title,desc,kicker='LEARN WITH PURPOSE'){return `<div class="pagehead"><div><span class="eyebrow">${kicker}</span><h1>${title}</h1><p>${desc}</p></div><span class="date">خطوة اليوم تصنع فرق الغد ✧</span></div>`}
