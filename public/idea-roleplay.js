@@ -113,12 +113,14 @@ function sendIdeaGuided(){
 function showIdeaDialoguePrompt(){
  const scene=currentIdeaScene(),box=ideaRoleplayRoot()?.querySelector('[data-scene-ai-prompt]');
  if(!scene||!box)return;
- const examples=(scene.patterns||[]).filter(pattern=>pattern.en).map(pattern=>pattern.en);
+ const examples=(scene.patterns||[]).filter(pattern=>pattern.en).map(pattern=>englishDisplay(pattern.en,pattern));
+ const model=englishDisplay(scene.sentenceEn,{ar:scene.sentenceAr});
  box.value=`Write a practical English role-play for an Arabic-speaking A2 learner.
-Scene: ${scene.sentenceEn}
-Task: ${ideaPracticeTask(scene)[1]}
-Useful vocabulary: ${scene.words.map(word=>word.en).join(', ')}.
-Optional example lines: ${examples.join(' / ')||scene.sentenceEn}
+${englishSessionInstruction()}
+Scene: ${model}
+Task: ${englishDisplay(ideaPracticeTask(scene)[1])}
+Useful vocabulary: ${scene.words.map(word=>englishDisplay(word.en,word)).join(', ')}.
+Optional example lines: ${examples.join(' / ')||model}
 Write 6 to 10 turns between two distinct named speakers. Include a follow-up question and one practical decision. Add a natural Arabic translation to each turn. Output only valid JSON using this exact structure:
 {"title":"Short title","turns":[{"speaker":"A","en":"English turn","ar":"الترجمة العربية"},{"speaker":"B","en":"English reply","ar":"الترجمة العربية"}]}`;
  box.hidden=false;

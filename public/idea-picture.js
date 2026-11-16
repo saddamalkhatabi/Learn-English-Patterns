@@ -130,7 +130,7 @@ function restoreIdeaZoom(){
 }
 
 function ideaLabelText(word,language){
- const en=`<span lang="en" dir="ltr">${H(word.en)}</span>`;
+ const en=`<span lang="en" dir="ltr">${H(englishDisplay(word.en,word))}</span>`;
  const ar=`<span lang="ar" dir="rtl">${H(word.ar)}</span>`;
  return language==='both'?en+ar:language==='ar'?ar:en;
 }
@@ -138,7 +138,7 @@ function ideaLabelText(word,language){
 function updateIdeaCaption(word,language){
  const caption=$('#idea-picture-caption');
  if(!caption)return;
- caption.innerHTML=word?ideaLabelText(word,language):'';
+ caption.innerHTML=word?ideaLabelText(word,language)+englishUsageButton(EPEnglish.analyze(word.en,word)):'';
 }
 
 function showIdeaMarker(index,{voice,fromList=false,clickedLanguage}={}){
@@ -219,7 +219,8 @@ function paintIdeaLabels(scene){
 }
 
 function pronounceIdeaWord(word,voice,onVoice){
- return playIdeaAudio(word.en,ideaWordCueId(word.en,voice),voice,onVoice);
+ const text=englishSpeakable(word.en,word);
+ return playIdeaAudio(text,ideaWordCueId(word.en,voice),voice,onVoice);
 }
 function playIdeaAudio(text,cueId,voice,onVoice=()=>{}){
  const recording=PILOT?.trainingAudio?.[cueId];
@@ -234,7 +235,7 @@ function playIdeaAudio(text,cueId,voice,onVoice=()=>{}){
   fallback=synthesizeTrainingCue(text,state.rate||1,voice);
   fallback.done.then(finish);
  };
- if(recording?.text===text){
+ if(recording&&EPEnglish.sameSpeech(recording.text,text)){
   audio=new Audio(recording.path);
   audio.playbackRate=state.rate||1;
   audio.onplaying=()=>onVoice(voice==='male'?'Adam':'Bella');

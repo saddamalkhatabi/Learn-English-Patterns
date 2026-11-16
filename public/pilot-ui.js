@@ -1,8 +1,8 @@
 /* One shared sentence registry powers coach, catalog, lesson examples, and Idea Lab. */
 let PILOT=null,route=null,pilotAudit=null,coachFrame=0,hideCoachText=false,hideCoachArabic=false,coachPaintKey='';
 const expansionReady=fetch('expansion-media.json').then(r=>r.ok?r.json():null).catch(()=>null);
-const dialogueReady=Promise.all(['dialogues.json','dialogue-audio.json'].map(path=>fetch(path).then(r=>r.ok?r.json():null).catch(()=>null)))
- .then(([source,media])=>(source?.dialogues||[]).map(dialogue=>{
+const dialogueReady=Promise.all(['dialogues.json','dialogue-audio.json','english-practice.json'].map(path=>fetch(path).then(r=>r.ok?r.json():null).catch(()=>null)))
+ .then(([source,media,practice])=>[...(source?.dialogues||[]),...(practice?.dialogues||[])].map(dialogue=>{
   const audio=media?.[dialogue.id];
   const signature=dialogue.lines.map(line=>[line.en,line.voice]);
   return {...dialogue,audio:audio&&JSON.stringify(audio.signature)===JSON.stringify(signature)?audio:null};
@@ -12,7 +12,7 @@ const trainingAudioReady=fetch('training-audio.json').then(r=>r.ok?r.json():{}).
 const courseScriptsReady=document.readyState==='loading'?
  new Promise(resolve=>document.addEventListener('DOMContentLoaded',resolve,{once:true})):Promise.resolve();
 const pilotReady=Promise.all([fetch('pilot.json').then(r=>{if(!r.ok)throw Error('pilot');return r.json()}),expansionReady,dialogueReady,trainingAudioReady,courseScriptsReady,
- courseScriptsReady.then(()=>Promise.all([dialogueArchiveReady,learningLevelsReady]))]).then(([data,expansion,dialogues,trainingAudio])=>{
+ courseScriptsReady.then(()=>Promise.all([dialogueArchiveReady,learningLevelsReady,englishAudioReady]))]).then(([data,expansion,dialogues,trainingAudio])=>{
  data.dialogues=dialogues;data.requireConversation=true;data.trainingAudio=trainingAudio;
  if(expansion?.schema===3){
   data.patterns.push(...expansion.patterns);
@@ -20,11 +20,12 @@ const pilotReady=Promise.all([fetch('pilot.json').then(r=>{if(!r.ok)throw Error(
   data.pattern_order.push(...expansion.patterns.map(p=>p.id));
   data.revision+='-expansion';
  }
+ data.sentences=data.sentences.map(projectEnglishSentence);
  data.pattern_order=orderLearningPatterns(data.pattern_order);
  data.learningLevels=learningLevels.patterns;
  data.sentenceLearningLevels=learningLevels.sentences;
  const dialogueOrder=new Map(learningLevels.dialogueOrder.map((id,index)=>[id,index]));
- data.dialogues=dialogues.map(dialogue=>({...dialogue,learningLevel:learningLevels.dialogues[dialogue.id]}))
+ data.dialogues=dialogues.map(dialogue=>({...projectEnglishDialogue(dialogue,dialogue.audio),learningLevel:learningLevels.dialogues[dialogue.id]}))
   .sort((a,b)=>(dialogueOrder.get(a.id)??Infinity)-(dialogueOrder.get(b.id)??Infinity));
  PILOT=data;for(const p of PILOT.patterns){let existing=patterns.find(x=>x.id===p.id);const rows=PILOT.sentences.filter(s=>s.pattern_id===p.id),examples=rows.map(s=>[s.en,s.ar]);const value={...(existing||{}),id:p.id,source:p.source||existing?.source||[],form:p.form,ar:p.title,meaning:p.explanation_ar||existing?.meaning||p.comparison.ar,topic:p.topic||existing?.topic||'أنماط مترابطة',level:rows[0]?.difficulty.cefr||'A1',examples,comparisonQuiz:p.comparisonQuiz,wrong:p.wrong||existing?.wrong||'',compare:p.comparison.ar,words:examples[0][0].split(' ')};if(existing)Object.assign(existing,value);else patterns.push(value)}
  for(const p of patterns)if(p.id===13)p.topic='الرغبات والخطط';

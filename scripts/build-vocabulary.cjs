@@ -3,9 +3,11 @@ const crypto=require('node:crypto');
 const nlp=require('wink-nlp')(require('wink-eng-lite-web-model'));
 const {normalize,tokens,posFor,includesTerm}=require('../public/vocabulary-core.js');
 const sceneGuide=require('../public/scene-guide.js');
+const english=require('../public/english-usage.js');
 const read=name=>require('../public/'+name+'.json');
-const ideas=read('idea-scenes'),dialogues=read('dialogues').dialogues,art=read('conversation-scenes').scenes;
+const ideas=read('idea-scenes'),dialogues=[...read('dialogues').dialogues,...read('english-practice').dialogues],art=read('conversation-scenes').scenes;
 const learningLevels=read('learning-levels');
+const regionalAudio=read('english-usage-audio');
 const imageWords=require('../production/scene-word-maps.json');
 const glossary=new Map(fs.readFileSync('production/vocabulary-glosses.tsv','utf8').trim().split(/\r?\n/).map(line=>{
  const [word,ar]=line.split('|');assert(word&&ar,line);return [normalize(word),ar];
@@ -116,11 +118,13 @@ for(const name of ['pilot','expansion-media','source-corpus','supplement'])for(c
  sceneWords[row.id]={reviewed:Boolean(mapped),words:mapped||words.filter(word=>['NOUN','PROPN','VERB','ADJ','ADV','CONTR'].includes(word.pos))};
 }
 for(const dialogue of dialogues){
- const recording=read('dialogue-audio')[dialogue.id];
+ const originalRecording=read('dialogue-audio')[dialogue.id];
+ const regional=regionalAudio.dialogues[dialogue.id];
  dialogue.lines.forEach((line,index)=>{
   const image=art[dialogue.id]?.turns[index+1]||art[dialogue.id]?.cover;
   const original=sentenceRows.get(line.scene)?.image;
   const sceneIds=image?[image.id]:original?.crop&&['assistant-reviewed','visually_reviewed','imported-unreviewed'].includes(original.status)?['scene-'+line.scene]:[];
+  const recording=regional?.signature[index]?.[0]===line.en?regional:originalRecording;
   const turn=recording?.turns[index],recordings=turn?{[line.voice]:{path:recording.path,words:turn.words}}:{};
   addSource({type:'dialogue',id:dialogue.id,turn:index,en:line.en,ar:line.ar,title:dialogue.ar,
    patternIds:line.patterns,sceneIds},recordings);
@@ -169,6 +173,7 @@ for(const [phrase,ar] of phrases.values()){
   if(sourceTokens[index].has(first)&&includesTerm(source.en,phrase)){
    const entry=add(phrase,'PHRASE',normalize(phrase),index,phraseRecordings(phrase,index));
    entry.ar=ar;entry.common=true;
+   if(english.shared.has(normalize(phrase)))entry.shared=true;
   }
  });
 }
@@ -179,7 +184,28 @@ for(const entry of entries.values()){
  }
  entry.sourceIds=[...entry.sourceIds];entry.sceneIds=[...entry.sceneIds];entry.patternIds=[...entry.patternIds];
 }
-const atlas={schema:1,classification:'contextual-automatic-with-reviewed-image-labels',sources,entries:[...entries.values()]};
+const regionalEntries=new Map();
+for(const [index,source] of sources.entries()){
+ for(const change of english.analyze(source.en,source).changes){
+  const rule=english.familyById.get(change.id);
+  const key=rule.id+'|'+normalize(change.us)+'|'+normalize(change.uk);
+  let entry=regionalEntries.get(key);
+  if(!entry){
+   entry={id:'use-'+crypto.createHash('sha256').update(key).digest('hex').slice(0,16),en:change.us,uk:change.uk,
+    family:rule.id,kind:change.kind,ar:rule.ar,pos:rule.pos,sourceIds:new Set(),sceneIds:new Set(),patternIds:new Set(),audio:{}};
+   regionalEntries.set(key,entry);
+  }
+  entry.sourceIds.add(index);
+  source.sceneIds.forEach(id=>entry.sceneIds.add(id));
+  source.patternIds.forEach(id=>entry.patternIds.add(id));
+  if(change.region==='us')for(const [voice,clip] of Object.entries(phraseRecordings(change.us,index)||{})){
+   if(!entry.audio[voice])entry.audio[voice]=clip;
+  }
+ }
+}
+const regional=[...regionalEntries.values()].map(entry=>({...entry,sourceIds:[...entry.sourceIds],
+ sceneIds:[...entry.sceneIds],patternIds:[...entry.patternIds]}));
+const atlas={schema:1,classification:'contextual-automatic-with-reviewed-image-labels',sources,entries:[...entries.values()],regional};
 fs.writeFileSync('public/vocabulary-index.json',JSON.stringify(atlas)+'\n');
 fs.writeFileSync('public/scene-vocabulary.json',JSON.stringify({schema:1,sentences:sceneWords})+'\n');
 console.log(JSON.stringify({vocabulary:entries.size,sources:sources.length,sentenceLists:Object.keys(sceneWords).length}));

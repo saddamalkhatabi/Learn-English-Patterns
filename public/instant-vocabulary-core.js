@@ -1,8 +1,9 @@
 (function(root,factory){
- const api=factory(typeof module!=='undefined'?require('./vocabulary-core.js'):root.EPVocabulary);
+ const api=typeof module!=='undefined'?factory(require('./vocabulary-core.js'),require('./english-usage.js')):
+  factory(root.EPVocabulary,root.EPEnglish);
  if(typeof module!=='undefined')module.exports=api;
  else root.EPInstantVocabulary=api;
-})(typeof window==='undefined'?globalThis:window,function(vocabulary){
+})(typeof window==='undefined'?globalThis:window,function(vocabulary,englishUsage){
  const arabic=/\p{Script=Arabic}/u;
  const articles=new Set(['a','an','the']);
  const normalize=value=>vocabulary.normalize(value).replace(/[\u064b-\u065f\u0670\u0640]/g,'').replace(/[أإآٱ]/g,'ا');
@@ -36,9 +37,10 @@
    if(!map.has(form))map.set(form,new Set());
    map.get(form).add(entry);
   };
-  for(const entry of atlas.entries){
+  for(const entry of [...atlas.entries,...(atlas.regional||[])]){
    const english=key(entry.en);
    add('en',english,entry);
+   if(entry.uk)add('en',key(entry.uk),entry);
    for(const meaning of meanings(entry.ar))for(const form of arabicForms(meaning))add('ar',form,entry);
    for(const id of entry.sourceIds){
     const source=atlas.sources[id];
@@ -80,15 +82,22 @@
  }
  function best(indexed,match,context,specific=null){
   const contextKey=key(context),wordKey=key(match.text);
-  const candidates=match.entries.map(entry=>{
+  const regional=match.lang==='en'?englishUsage.analyze(context,specific||{}).changes:[];
+  const candidates=match.entries.flatMap(entry=>{
    let score=Number(Boolean(entry.ar))*5+Number(entry.pos!=='X')*2+Math.log1p(entry.sourceIds.length);
+   if(entry.uk&&match.lang==='en'){
+    const matching=regional.some(change=>change.id===entry.family&&
+     change.sourceFrom<match.end&&change.sourceTo>match.start&&[entry.en,entry.uk].some(form=>key(form)===wordKey));
+    if(!matching)return [];
+    score+=65;
+   }
    const specificMatch=specific&&key(specific.en)===key(entry.en)&&vocabulary.posFor(specific)===entry.pos;
    const sources=entry.sourceIds.map(id=>indexed.sources[id]);
    if(sources.some(source=>key(source.en)===contextKey))score+=30;
    if(specificMatch)score+=50;
    if(match.lang==='en'&&entry.pos==='VERB'&&new RegExp('(?:^| )(?:to|can|could|will|would|should|must) '+wordKey+'(?: |$)').test(contextKey))score+=7;
    if(match.lang==='en'&&['NOUN','PROPN'].includes(entry.pos)&&new RegExp('(?:^| )(?:a|an|the|my|your|this|that) '+wordKey+'(?: |$)').test(contextKey))score+=7;
-   return {entry,score,ar:specificMatch&&specific.ar?specific.ar:entry.ar};
+   return [{entry,score,ar:specificMatch&&specific.ar?specific.ar:entry.ar}];
   });
   return candidates.sort((a,b)=>b.score-a.score)[0]||null;
  }

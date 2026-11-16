@@ -116,7 +116,7 @@ if(linkedType&&window.frameElement){
    }
   }else if(linkedType==='atlas'){
    const atlas=await loadVocabulary();
-   if(atlas?.entries.some(entry=>entry.id===id))return openVocabularyTerm(id,linkedParams.get('scene')||'');
+   if(atlas&&vocabularyById.has(id))return openVocabularyTerm(id,linkedParams.get('scene')||'');
   }else if(linkedType==='pattern-photos'){
    studioPattern=Number(id);
    studioNextLesson=Number(linkedParams.get('next'))||null;

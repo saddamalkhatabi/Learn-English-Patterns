@@ -1,0 +1,69 @@
+{
+  "dialogues": [
+    {
+      "id": "a1-nice-to-meet-you", "level": "A1", "category": "social", "purpose": "describe",
+      "en": "Nice to meet you", "ar": "تشرفت بمعرفتك",
+      "taskEn": "Say your name, greet someone new, and return the greeting.",
+      "taskAr": "قل اسمك، وحيِّ شخصًا تقابله لأول مرة، ثم ردّ على التحية.",
+      "clip": [1, 3],
+      "lines": [
+        {"voice":"male","en":"Hi, I'm Omar. What's your name?","ar":"مرحبًا، أنا عمر. ما اسمك؟","patterns":[103,114],"scene":"name-01"},
+        {"voice":"female","en":"I'm Sara. Nice to meet you.","ar":"أنا سارة. تشرفت بمعرفتك.","patterns":[103],"scene":"name-02"},
+        {"voice":"male","en":"Nice to meet you too, Sara.","ar":"وأنا أيضًا تشرفت بمعرفتك يا سارة.","patterns":[],"scene":"name-01"},
+        {"voice":"female","en":"See you in class.","ar":"أراك في الصف.","patterns":[],"scene":"name-02"}
+      ]
+    },
+    {
+      "id": "a1-say-that-again", "level": "A1", "category": "food", "purpose": "ask",
+      "en": "Could you say that again?", "ar": "هل يمكنك إعادة ما قلت؟",
+      "taskEn": "Ask for a repeat, then ask the speaker to slow down.",
+      "taskAr": "اطلب إعادة العبارة، ثم اطلب من المتحدث أن يتكلم ببطء أكثر.",
+      "clip": [1, 3],
+      "lines": [
+        {"voice":"male","en":"Could you say that again, please?","ar":"هل يمكنك إعادة ما قلت من فضلك؟","patterns":[9050],"scene":"like-02"},
+        {"voice":"female","en":"Sure. Your order is ready.","ar":"بالتأكيد. طلبك جاهز.","patterns":[],"scene":"like-02"},
+        {"voice":"male","en":"Could you speak more slowly?","ar":"هل يمكنك التحدث ببطء أكثر؟","patterns":[],"scene":"like-02"},
+        {"voice":"female","en":"Of course. Your order is ready.","ar":"طبعًا. طلبك جاهز.","patterns":[],"scene":"like-02"}
+      ]
+    },
+    {
+      "id": "a1-good-to-see-you", "level": "A1", "category": "social", "purpose": "ask",
+      "en": "Good to see you", "ar": "سعيد برؤيتك",
+      "taskEn": "Greet someone you already know and exchange a short reply.",
+      "taskAr": "حيِّ شخصًا تعرفه من قبل وتبادل معه ردًا قصيرًا.",
+      "clip": [1, 3],
+      "lines": [
+        {"voice":"male","en":"Hi, Sara. Good to see you.","ar":"مرحبًا يا سارة. سعيد برؤيتك.","patterns":[],"scene":"name-01"},
+        {"voice":"female","en":"Good to see you too! How's it going?","ar":"وأنا أيضًا سعيدة برؤيتك! كيف حالك؟","patterns":[],"scene":"name-02"},
+        {"voice":"male","en":"Pretty good, thanks. See you later!","ar":"بخير، شكرًا. أراك لاحقًا!","patterns":[],"scene":"name-01"},
+        {"voice":"female","en":"See you!","ar":"إلى اللقاء!","patterns":[],"scene":"name-02"}
+      ]
+    },
+    {
+      "id": "a1-ask-for-the-check", "level": "A1", "category": "food", "purpose": "request",
+      "en": "Asking for the check", "ar": "طلب الفاتورة",
+      "taskEn": "Ask for the restaurant check and say goodbye politely.",
+      "taskAr": "اطلب فاتورة المطعم ثم ودّع الطرف الآخر بأدب.",
+      "clip": [1, 3],
+      "lines": [
+        {"voice":"male","en":"Can I get the check, please?","ar":"هل يمكنني الحصول على الفاتورة، من فضلك؟","patterns":[4,9050],"scene":"like-02"},
+        {"voice":"female","en":"Sure. Here you go.","ar":"بالتأكيد. تفضل.","patterns":[],"scene":"like-02"},
+        {"voice":"male","en":"Thanks. Have a good day!","ar":"شكرًا. أتمنى لك يومًا سعيدًا!","patterns":[],"scene":"like-02"},
+        {"voice":"female","en":"You too!","ar":"ولك أيضًا!","patterns":[],"scene":"like-02"}
+      ]
+    },
+    {
+      "id": "a1-find-the-restroom", "level": "A1", "category": "travel", "purpose": "ask",
+      "en": "Finding the restroom", "ar": "العثور على دورة المياه",
+      "taskEn": "Ask where the restroom is and listen for its location.",
+      "taskAr": "اسأل عن مكان دورة المياه واستمع إلى وصف موقعها.",
+      "clip": [1, 2],
+      "lines": [
+        {"voice":"male","en":"Excuse me. Where's the restroom?","ar":"عذرًا. أين دورة المياه؟","patterns":[9125,9054],"scene":"pattern-9054-01"},
+        {"voice":"female","en":"It's next to the elevator.","ar":"إنها بجوار المصعد.","patterns":[104],"scene":"this-01"},
+        {"voice":"male","en":"Thanks for your help.","ar":"شكرًا لمساعدتك.","patterns":[],"scene":"name-01"},
+        {"voice":"female","en":"You're welcome.","ar":"على الرحب والسعة.","patterns":[9135],"scene":"name-02"}
+      ]
+    }
+  ]
+}

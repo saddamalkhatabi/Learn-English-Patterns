@@ -1,5 +1,5 @@
 let vocabularyData=null,vocabularyLoad=null,vocabularyPageNumber=0,vocabularyTerm=null,vocabularyAudio=null;
-let vocabularyQuery='',vocabularyType='',vocabularyCollection='',vocabularyPattern='',vocabularyLevel='',vocabularyVoice='male';
+let vocabularyQuery='',vocabularyType='',vocabularyCollection='',vocabularyPattern='',vocabularyLevel='',vocabularyVoice='male',vocabularyRegional='';
 let vocabularyEntriesByKey=new Map(),vocabularySearch=new Map(),vocabularyPreferredScene='';
 function loadVocabulary(){
  if(!vocabularyLoad)vocabularyLoad=fetch('vocabulary-index.json').then(response=>{
@@ -7,15 +7,18 @@ function loadVocabulary(){
   return response.json();
  }).then(data=>{
   vocabularyData=data;
+  vocabularyAllEntries=[...(data.regional||[]),...data.entries];
+  vocabularyById=new Map(vocabularyAllEntries.map(entry=>[entry.id,entry]));
   vocabularyEntriesByKey=new Map(data.entries.map(entry=>[vocabularyKey(entry.en,entry.pos),entry]));
-  vocabularySearch=new Map(data.entries.map(entry=>{
+  vocabularyRegionalByKey=new Map((data.regional||[]).map(entry=>[entry.family+'|'+EPVocabulary.normalize(entry.en),entry]));
+  vocabularySearch=new Map(vocabularyAllEntries.map(entry=>{
    const translations=new Set([entry.ar]);
    for(const index of entry.sourceIds){
     const source=data.sources[index];
     if(source.type==='idea-word'&&EPVocabulary.normalize(source.en)===EPVocabulary.normalize(entry.en)&&
      (!source.pos||source.pos===entry.pos))translations.add(source.ar);
    }
-   return [entry.id,normalizeSceneQuery(EPVocabulary.normalize([entry.en,entry.lemma,entry.expansion,...translations].join(' ')))];
+   return [entry.id,normalizeSceneQuery(EPVocabulary.normalize([entry.en,entry.uk,entry.lemma,entry.expansion,...translations].join(' ')))];
   }));
   return data;
  }).catch(()=>{
@@ -26,7 +29,23 @@ function loadVocabulary(){
  return vocabularyLoad;
 }
 function vocabularyKey(en,pos){return EPVocabulary.normalize(en)+'|'+pos}
-function vocabularyEntryFor(word){return vocabularyEntriesByKey.get(vocabularyKey(word.en,EPVocabulary.posFor(word)))}
+let vocabularyAllEntries=[],vocabularyById=new Map(),vocabularyRegionalByKey=new Map();
+function vocabularyEntryFor(word){
+ const usage=EPEnglish.analyze(word.en,{...word,pos:EPVocabulary.posFor(word)});
+ const change=usage.changes.find(change=>EPVocabulary.normalize(change.us)===EPVocabulary.normalize(usage.us));
+ return (change&&vocabularyRegionalByKey.get(change.id+'|'+EPVocabulary.normalize(change.us)))||
+  vocabularyEntriesByKey.get(vocabularyKey(word.en,EPVocabulary.posFor(word)));
+}
+function vocabularyEntryName(entry){return EP.prefs.englishUsage==='uk'&&entry.uk?entry.uk:entry.en}
+function vocabularyUsageTags(entry){
+ if(entry.uk)return `<span class="english-regional-tag" dir="ltr" lang="en">US · ${H(entry.en)} / UK · ${H(entry.uk)}</span>`;
+ return entry.shared?`<span class="english-regional-tag">${T('US/UK · مشترك','US/UK · Shared')}</span>`:'';
+}
+function matchesVocabularyRegional(entry){
+ if(!vocabularyRegional)return true;
+ if(vocabularyRegional==='shared')return Boolean(entry.shared);
+ return vocabularyRegional==='differences'?Boolean(entry.uk):entry.kind===vocabularyRegional;
+}
 function openVocabularyFromScene(id,sceneId=''){
  return openLinkedLearning('atlas',id,{scene:sceneId});
 }
@@ -46,6 +65,11 @@ function vocabularyPage(){
    <label>${T('النمط','Pattern')}<select onchange="vocabularyPattern=this.value;resetVocabulary()"><option value="">${T('كل الأنماط','All patterns')}</option>
     ${(PILOT?.patterns||[]).map(p=>`<option value="${p.id}" ${vocabularyPattern==p.id?'selected':''}>${H(p.form)}</option>`).join('')}</select></label>
    <label>${T('مستوى التعلّم','Learning level')}<select onchange="vocabularyLevel=this.value;resetVocabulary()">${learningLevelOptions(vocabularyLevel)}</select></label>
+   <label>${T('الاستعمال الأمريكي والبريطاني','American and British usage')}<select id="vocabulary-regional" onchange="vocabularyRegional=this.value;resetVocabulary()">
+    ${[['','كل المداخل','All entries'],['differences','أبرز الاختلافات','Regional differences'],['vocabulary','اختلاف المفردات','Vocabulary differences'],
+      ['spelling','اختلاف التهجئة','Spelling differences'],['construction','اختلاف التعبير','Usage and construction'],
+      ['shared','عبارات مشتركة','Shared expressions']].map(([id,ar,en])=>
+     `<option value="${id}" ${vocabularyRegional===id?'selected':''}>${T(ar,en)}</option>`).join('')}</select></label>
    <label>${T('الصوت','Voice')}<select onchange="vocabularyVoice=this.value"><option value="male" ${vocabularyVoice==='male'?'selected':''}>Adam</option><option value="female" ${vocabularyVoice==='female'?'selected':''}>Bella</option></select></label>
   </div>
   <p class="lesson-hint">${T('قد تكون للكلمة أدوار مختلفة. راجع معناها ونوعها في المثال الظاهر.','A word may have different roles. Check its meaning and type in the example shown.')}</p>
@@ -68,25 +92,26 @@ function paintVocabulary(){
  if(!host)return;
  if(!vocabularyData){$('#vocabulary-count').textContent=T('جارٍ تحميل الأطلس…','Loading the atlas…');return}
  const query=normalizeSceneQuery(EPVocabulary.normalize(vocabularyQuery)),size=36;
- const entries=vocabularyData.entries.filter(entry=>
+ const entries=vocabularyAllEntries.filter(entry=>
+  matchesVocabularyRegional(entry)&&
   (!vocabularyType||entry.pos===vocabularyType)&&
   (!vocabularyPattern||entry.patternIds.includes(Number(vocabularyPattern)))&&
   (!query||vocabularySearch.get(entry.id).includes(query))&&
   (!(vocabularyCollection||vocabularyLevel||vocabularyPattern)||entry.sourceIds.some(id=>vocabularyMatchesSource(vocabularyData.sources[id])))
- ).sort((a,b)=>b.sourceIds.length-a.sourceIds.length||a.en.localeCompare(b.en));
+ ).sort((a,b)=>(query?Number(Boolean(b.uk))-Number(Boolean(a.uk)):0)||b.sourceIds.length-a.sourceIds.length||a.en.localeCompare(b.en));
  const pages=Math.max(1,Math.ceil(entries.length/size));
  vocabularyPageNumber=Math.max(0,Math.min(vocabularyPageNumber,pages-1));
  $('#vocabulary-count').textContent=T(`${entries.length} مدخلًا · صفحة ${vocabularyPageNumber+1} من ${pages}`,`${entries.length} entries · page ${vocabularyPageNumber+1} of ${pages}`);
  $('#vocabulary-prev').disabled=vocabularyPageNumber===0;$('#vocabulary-next').disabled=vocabularyPageNumber+1>=pages;
  host.innerHTML=entries.slice(vocabularyPageNumber*size,(vocabularyPageNumber+1)*size).map(entry=>
-  `<article class="panel vocabulary-card">${wordTypeBadge(entry)}<button class="textlink" lang="en" dir="ltr" onclick="openVocabularyTerm('${entry.id}','')">${H(entry.en)}</button>
-   ${EP.ar(entry.ar)}<small>${entry.sourceIds.length} ${T('مواضع استخدام','uses')} · ${entry.sceneIds.length} ${T('صور','scenes')}</small>
+  `<article class="panel vocabulary-card">${wordTypeBadge(entry)}<button class="textlink" lang="en" dir="ltr" onclick="openVocabularyTerm('${entry.id}','')">${H(vocabularyEntryName(entry))}</button>
+   ${EP.ar(entry.ar)}${vocabularyUsageTags(entry)}<small>${entry.sourceIds.length} ${T('مواضع استخدام','uses')} · ${entry.sceneIds.length} ${T('صور','scenes')}</small>
    <button class="secondary" onclick="playVocabularyEntry('${entry.id}')" aria-label="${T('انطق','Hear')} ${H(entry.en)}">▶</button></article>`
  ).join('');
 }
 function openVocabularyTerm(id,preferredScene=vocabularyPreferredScene,scroll=true){
  vocabularyTerm=id;vocabularyPreferredScene=preferredScene;
- const entry=vocabularyData?.entries.find(entry=>entry.id===id),host=$('#vocabulary-detail');
+ const entry=vocabularyById.get(id),host=$('#vocabulary-detail');
  if(!entry||!host)return;
  const uses=entry.sourceIds.map(index=>({index,source:vocabularyData.sources[index]})).filter(({source})=>vocabularyMatchesSource(source));
  if(!uses.length){host.replaceChildren();return}
@@ -97,17 +122,17 @@ function openVocabularyTerm(id,preferredScene=vocabularyPreferredScene,scroll=tr
   const {source}=use,key=source.en+'|'+source.ar;
   if(!byExample.has(key))byExample.set(key,use);
  }
- host.innerHTML=`<article class="panel vocabulary-selected"><div class="buttonrow"><h2 lang="en" dir="ltr">${H(entry.en)}</h2>${wordTypeBadge(entry)}
+ host.innerHTML=`<article class="panel vocabulary-selected"><div class="buttonrow"><h2 lang="en" dir="ltr">${H(vocabularyEntryName(entry))}</h2>${wordTypeBadge(entry)}
    <button class="secondary" onclick="playVocabularyEntry('${entry.id}')">▶ ${T('استمع','Listen')}</button></div>
-   ${EP.ar(entry.ar)}${entry.expansion?`<p lang="en" dir="ltr">${H(entry.expansion)}</p>`:''}
+   ${EP.ar(entry.ar)}${vocabularyUsageTags(entry)}${entry.uk?englishUsageButton(EPEnglish.analyze(entry.en,entry)):''}${entry.expansion?`<p lang="en" dir="ltr">${H(entry.expansion)}</p>`:''}
    ${vocabularySceneLinks(uses)}
    <h3>${T('شاهدها في سياق','See it in context')}</h3>
    ${[...byExample.values()].slice(0,8).map(({source,index})=>{
-    return `<div class="vocabulary-use"><p lang="en" dir="ltr">${vocabularyMarked(source.en,entry.en)}</p>${EP.ar(source.ar)}
+    return `<div class="vocabulary-use"><p lang="en" dir="ltr">${vocabularyMarked(englishDisplay(source.en,source),vocabularyEntryName(entry))}${englishUsageButton(EPEnglish.analyze(source.en,source))}</p>${EP.ar(source.ar)}
      <small>${learningLevelLabel(source.level||'')}</small> <button class="textlink" onclick="openVocabularyUse(${index})">${source.type==='dialogue'?T('افتح المحادثة عند هذا الدور','Open this conversation turn'):source.type.startsWith('idea-guide')?T('افتح تدريب المشهد','Open scene practice'):source.type.startsWith('idea')?T('افتح المشهد','Open scene'):T('افتح الجملة وصورتها','Open sentence and scene')} ↗</button></div>`;
    }).join('')}
    <details><summary>${T('كل مواضع الاستخدام','All uses')} · ${uses.length}</summary>${uses.map(({source,index})=>
-    `<button class="textlink vocabulary-source-link" onclick="openVocabularyUse(${index})">${H(source.en)}${source.type==='idea-word'?` <span class="ar-content" lang="ar" dir="rtl">${H(source.ar)}</span>`:''}</button>`
+    `<button class="textlink vocabulary-source-link" onclick="openVocabularyUse(${index})">${H(englishDisplay(source.en,source))}${source.type==='idea-word'?` <span class="ar-content" lang="ar" dir="rtl">${H(source.ar)}</span>`:''}</button>`
    ).join('')}</details></article>`;
  if(scroll)host.scrollIntoView({block:'start'});
 }
@@ -154,7 +179,7 @@ function openVocabularyUse(index){
 }
 function vocabularyAudioFor(text,voice){
  const normal=EPVocabulary.normalize(text);
- return vocabularyData?.entries.find(entry=>EPVocabulary.normalize(entry.en)===normal&&entry.audio[voice])?.audio[voice];
+ return vocabularyAllEntries.find(entry=>EPVocabulary.normalize(entry.en)===normal&&entry.audio[voice])?.audio[voice];
 }
 function playVocabularyClip(clip){
  const audio=new Audio(clip.path);let finish,frame,timer,stopped=false;
@@ -173,10 +198,12 @@ function playVocabularyClip(clip){
  return {done,stop:()=>end(false)};
 }
 function playVocabularyEntry(id){
- const entry=vocabularyData?.entries.find(entry=>entry.id===id),clip=entry?.audio[vocabularyVoice];
+ const entry=vocabularyById.get(id);
  if(!entry)return;
+ const text=vocabularyEntryName(entry);
+ const clip=EPEnglish.sameSpeech(entry.en,text)?entry.audio[vocabularyVoice]:null;
  stopSpeech();vocabularyAudio?.stop();
- if(!clip){speak(entry.en,vocabularyVoice==='male'?0:1);return}
+ if(!clip){speak(text,vocabularyVoice==='male'?0:1);return}
  vocabularyAudio=playVocabularyClip(clip);
 }
 labels.vocabulary='أطلس المفردات والعبارات';

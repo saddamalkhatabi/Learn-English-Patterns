@@ -68,10 +68,12 @@ function visibleComparisons(){
    (!size||(size===5?count>=5:count===size));
  }).sort((left,right)=>levels.indexOf(left.level)-levels.indexOf(right.level));
 }
-function comparisonModel(example,pattern){
- const words=example.split(/\s+/);
- const fixed=new Set(pattern?EPTeaching.describe({en:example},pattern).highlight:[]);
- return words.map((word,i)=>`<span class="${fixed.has(i)?'pattern-token':''}">${H(word)}</span>`).join(' ');
+function comparisonModel(example,pattern,compare=true){
+ const render=text=>{
+  const fixed=new Set(pattern?EPTeaching.describe({en:text},pattern).highlight:[]);
+  return text.split(/\s+/).map((word,i)=>`<span class="${fixed.has(i)?'pattern-token':''}">${H(word)}</span>`).join(' ');
+ };
+ return compare?englishIndexedMarkup(example,pattern,render):render(example);
 }
 function comparisonStages(id){
  return `<details ontoggle="if(this.open&&this.closest('#comparison-guide'))pauseComparisonGuide()"><summary>${T('مراحل تدريب النمط','Pattern training stages')}</summary>

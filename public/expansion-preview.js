@@ -81,7 +81,7 @@ filterCurriculum=function(){if(!$('#curriculum-list')||!COURSE_CATALOG)return;
  $('#curriculum-list').querySelectorAll('details').forEach((item,index)=>item.addEventListener('toggle',()=>{if(item.open)renderExpansionDetail(item,rows[index])}));
  EP.decorate();
 };
-Promise.all([expansionReady,learningLevelsReady]).then(([d])=>{if(!d)return;
- expansionMediaById=new Map(d.sentences.map(s=>[s.id,s]));filterCurriculum()
+Promise.all([expansionReady,learningLevelsReady,englishAudioReady]).then(([d])=>{if(!d)return;
+ expansionMediaById=new Map(d.sentences.map(projectEnglishSentence).map(s=>[s.id,s]));filterCurriculum()
 }).catch(()=>{});
 window.addEventListener('hashchange',stopExpansionAudio);

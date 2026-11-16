@@ -35,9 +35,9 @@ function ideaSceneCueId(scene,pattern,voice){
  return `idea-example-${scene}-${pattern}-${voice}`;
 }
 function narrateTrainingCue(kind,pattern,rate=1){
- const text=spokenTrainingCue(kind,pattern,pattern&&learningMeta(pattern.id));
+ const text=englishAmerican(spokenTrainingCue(kind,pattern,pattern&&learningMeta(pattern.id)));
  const recording=PILOT?.trainingAudio?.[trainingCueId(kind,pattern)];
- if(recording?.text===text){
+ if(recording&&EPEnglish.sameSpeech(recording.text,text)){
   const audio=new Audio(recording.path);audio.playbackRate=rate;
   let finish,fallback,stopped=false;
   const done=new Promise(resolve=>{finish=resolve});
@@ -59,7 +59,7 @@ function synthesizeTrainingCue(text,rate,role='female'){
  const done=new Promise(resolve=>{finish=resolve});
  const voice=new SpeechSynthesisUtterance(text);
  voice.lang='en-US';voice.rate=rate;
- const available=synth.getVoices().filter(v=>/^en\b/i.test(v.lang));
+ const available=synth.getVoices().filter(v=>/^en[-_]us$/i.test(v.lang));
  const preferred=role==='male'?state.voiceFirst:state.voiceSecond;
  voice.voice=available.find(v=>v.name===preferred)||available.find(v=>v.localService)||available[0]||null;
  function end(result){if(settled)return;settled=true;clearTimeout(timer);finish(result)}

@@ -54,7 +54,8 @@ function sceneAssistantStep(scene){
   </div>
   ${question.model?`<p class="pattern-form" lang="en" dir="ltr">${H(question.model.form)}</p>`:''}
   <details class="idea-disclosure" open><summary>${T('السؤال الذي أقوله للمساعد','Question to ask your assistant')}</summary>
-   <p class="scene-assistant-question" lang="en" dir="ltr">${sceneAssistantQuestionMarkup(question)}</p>
+   <p class="scene-assistant-question" lang="en" dir="ltr">${englishIndexedMarkup(question.en,question,
+    text=>sceneAssistantQuestionMarkup({...question,en:text}))}</p>
    <div class="buttonrow scene-assistant-guide-actions">
     <button type="button" class="secondary" onclick="speakSceneAssistantQuestion()">▶ ${T('استمع إلى السؤال','Hear the question')}</button>
     ${question.answer?`<button type="button" class="primary" onclick="speakSceneAssistantQuestion(true)">▶ ${T('استمع إلى رد نموذجي','Hear a model reply')}</button>`:''}
@@ -64,7 +65,7 @@ function sceneAssistantStep(scene){
   </details>
   <details class="idea-disclosure"><summary>${T('الترجمة والتلميح','Translation and hint')}</summary>
    ${EP.ar(question.ar)}
-   ${question.answer?`<p lang="en" dir="ltr">${H(question.answer[0])}</p>${EP.ar(question.answer[1])}`:''}
+   ${question.answer?`<p lang="en" dir="ltr">${englishTextMarkup(question.answer[0],{ar:question.answer[1]})}</p>${EP.ar(question.answer[1])}`:''}
    ${question.model?`<p lang="en" dir="ltr">${comparisonModel(question.model.en,question.model)}</p>${EP.ar(question.model.ar)}
    <p>${T('طبّق التركيب في هذا الموقف','Use the pattern for this scene')}</p>
    ${EP.pair(scene.taskAr,scene.taskEn)}`:''}
@@ -123,7 +124,7 @@ function speakSceneAssistantQuestion(answer=false){
  if(!scene)return;
  const {questions}=sceneAssistantGuide(scene);
  const question=questions[sceneAssistantIndex(scene,questions.length)];
- const text=answer?question.answer?.[0]:question.en;
+ const text=answer?englishSpeakable(question.answer?.[0],{ar:question.answer?.[1]}):englishSpeakable(question.en,question);
  if(text)speak(text);
 }
 
@@ -140,11 +141,13 @@ function copySceneAssistantText(button,kind){
   B1:'Answer my cue in two brief sentences. Then ask one follow-up using the target pattern. Let me explain a detail or offer a reason. When we role-play, change one condition and wait for my reply.',
   B2:'Use my cues to practise a short role-play. Add one plausible complication, ask me to compare options and justify a choice, then help me rephrase one answer naturally.'
  };
- box.value=kind==='question'?question.en+(question.model?`\nTarget pattern: ${pattern.form}\nExample: ${pattern.en}`:''):`Help me practise at level ${level}. I speak Arabic.
+ const model=pattern?`Target pattern: ${englishDisplay(pattern.form)}\nExample: ${englishDisplay(pattern.en,pattern)}`:'';
+ box.value=kind==='question'?englishDisplay(question.en,question)+(question.model?`\n${model}`:''):`Help me practice at level ${level}. I speak Arabic.
+ ${englishSessionInstruction()}
  ${instructions[level]}
-Scene model: ${scene.sentenceEn}
-${pattern?`Target pattern: ${pattern.form}\nExample: ${pattern.en}\n`:''}Scene vocabulary: ${terms.map(word=>word.en).join(', ')||'use an obvious detail from the scene'}.
+Scene model: ${englishDisplay(scene.sentenceEn,{ar:scene.sentenceAr})}
+${model?model+'\n':''}Scene vocabulary: ${terms.map(word=>englishDisplay(word.en,word)).join(', ')||'use an obvious detail from the scene'}.
 Use visible details you can verify or the written context here. Treat role-play changes as imaginary.
-${questions.map((item,index)=>`${index+1}. ${item.en}${item.answer?` Model reply: ${item.answer[0]}`:''}`).join('\n')}`;
+${questions.map((item,index)=>`${index+1}. ${englishDisplay(item.en,item)}${item.answer?` Model reply: ${englishDisplay(item.answer[0],{ar:item.answer[1]})}`:''}`).join('\n')}`;
  return copySceneAiPrompt(button);
 }

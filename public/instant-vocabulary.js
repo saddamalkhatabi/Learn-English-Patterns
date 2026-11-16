@@ -1,6 +1,6 @@
 let instantIndexPromise,instantDictionaryPromise,instantLookup,instantAudio,instantFirstClick,instantLastGesture,instantPointerType;
 const instantTextControls='button,a[href],summary,label[for],[role="button"]';
-const instantTextSkip='script,style,[hidden],[aria-hidden="true"],select,input[type="password"],audio,video,.instant-vocabulary';
+const instantTextSkip='script,style,[hidden],[aria-hidden="true"],select,input[type="password"],audio,video,.instant-vocabulary,.english-usage-badge,.english-usage-audio-label';
 
 function loadInstantIndex(){
  if(!instantIndexPromise)instantIndexPromise=loadVocabulary().then(data=>{
@@ -128,6 +128,7 @@ function paintInstantVocabulary(session,indexed){
   ${value?`<p lang="${match.lang==='en'?'ar':'en'}" dir="auto">${H(value)}</p>`:
    `<p>${T('لا تتوفر ترجمة لهذه الصيغة في المعجم.','This form has no dictionary translation.')}</p>`}
   ${result?.entry?.expansion?`<p lang="en" dir="ltr">${H(result.entry.expansion)}</p>`:''}
+  ${entry?vocabularyUsageTags(entry):''}
   ${related.length||forms.length?`<strong>${T('تراكيب شائعة','Common expressions')}</strong><ul>${forms.map(pattern=>
    `<li class="pattern-token" lang="en" dir="ltr">${H(pattern.form)}</li>`).join('')}${related.slice(0,3-forms.length).map(item=>
    `<li><b lang="en" dir="ltr">${H(item.en)}</b><span lang="ar" dir="rtl">${H(item.ar)}</span></li>`).join('')}</ul>`:''}

@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "version": "eff5181184de9850",
+  "version": "92b834461c81eaff",
   "shell": [
     "app.js",
     "collection-experience.js",
@@ -17,6 +17,11 @@
     "dialogue-journey.js",
     "dialogue-plan.json",
     "dialogues.json",
+    "english-practice.json",
+    "english-usage-audio.json",
+    "english-usage-ui.js",
+    "english-usage.css",
+    "english-usage.js",
     "enhancements.js",
     "expansion-media.json",
     "expansion-preview.js",
@@ -6349,6 +6354,726 @@
       "path": "assets/audio/dislike-12-male.mp3",
       "sha256": "556f7b193922ad7e868c297ddd3cde5040e49eb675599fa380b6e00ce329b349",
       "bytes": 17733,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-a-note-for-the-neighbour-5f3425715939.mp3",
+      "sha256": "5f3425715939a34172f68baba0587906b7d3f52e528d77da91134b3315304d4b",
+      "bytes": 207404,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-a1-ask-for-the-check-c7ec146d8c44.mp3",
+      "sha256": "c7ec146d8c44208e5998f7e37795dc13792041e87c4fef0dbc1d2ddf872e6733",
+      "bytes": 89900,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-a1-find-the-restroom-a5afa1dc3686.mp3",
+      "sha256": "a5afa1dc3686144778bb6e992745ed8105d6b23062f0a5385f3b9c95c1fd5abd",
+      "bytes": 93740,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-a1-good-to-see-you-50d95c046fc9.mp3",
+      "sha256": "50d95c046fc95c51a504d458524f831ced05852e0fdb33b58ef619a39b613322",
+      "bytes": 98348,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-a1-nice-to-meet-you-65cd22a9204b.mp3",
+      "sha256": "65cd22a9204bd8c3477c0e3d903d434846130f346b5313159ec7147cfa57c650",
+      "bytes": 100844,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-a1-say-that-again-72d9e19fc624.mp3",
+      "sha256": "72d9e19fc624d7613a7916604c6a4496f96d5e194cc88329c0eb75ccfe1dae8b",
+      "bytes": 106988,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-book-recommendation-797e37b0a938.mp3",
+      "sha256": "797e37b0a938a4299b931920a57a33eb02a2b40ffb3845dad31465647fe3f314",
+      "bytes": 220460,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-choosing-a-course-b61e244155d2.mp3",
+      "sha256": "b61e244155d2e6ee309cecc945cddee5b9555016eeab3db3373498e272d4d94b",
+      "bytes": 193388,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-equipment-repair-e8629448f012.mp3",
+      "sha256": "e8629448f0129754934b5fd75ae36ac3a51ed7e460fd5eb74b5f0f1d300f7ee3",
+      "bytes": 244076,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-family-weekend-c1ee1d851c8d.mp3",
+      "sha256": "c1ee1d851c8dde8531d1878d8a4bc46aecf8de7d8d8c780b61f3466efb8fa516",
+      "bytes": 198764,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-first-interview-introduction-2a4fb212cfe5.mp3",
+      "sha256": "2a4fb212cfe569726efea232d36c1a9b53c37f8163dbd375ede88078be31c032",
+      "bytes": 247340,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-introducing-a-new-teammate-df3d08d8382a.mp3",
+      "sha256": "df3d08d8382a7a0a1b24b8fa4a56f8adf4a384a08e2badf30e2f73d5192293de",
+      "bytes": 215852,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-l2-005-d5a0023ea330.mp3",
+      "sha256": "d5a0023ea3305be836d2c14ad185efac3202446c93db654c0f1e4a6a71e7020b",
+      "bytes": 193004,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-l2-011-d74c3fb78c4d.mp3",
+      "sha256": "d74c3fb78c4dd4aa580a410f3e493447eedc337190338bf11b2458576c3b7865",
+      "bytes": 218348,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-l2-015-c4cc0f7a842e.mp3",
+      "sha256": "c4cc0f7a842e2646f466b618d6c6a6bc6b269ea8dce22fb18b3e88c0e6a3f37c",
+      "bytes": 213932,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-l2-019-7d73dddb27ed.mp3",
+      "sha256": "7d73dddb27ed51f1e2de94f4b587dd361ca4d344da9673e6622b1c040c970123",
+      "bytes": 206444,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-l2-033-1b00dc266566.mp3",
+      "sha256": "1b00dc266566d9904a4940d8fb7401d49d94dea9b291420fadc1a36fc570bfad",
+      "bytes": 224876,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-l2-044-0b9f15f58971.mp3",
+      "sha256": "0b9f15f58971dd4a44d58e0da5fc14f91adc89fe6124d78d898bc571be050ce2",
+      "bytes": 216044,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-l2-051-1783d4d2a1fe.mp3",
+      "sha256": "1783d4d2a1fe447c0beaf57c76404a9f95cc2255aceac9de6fd77bad818146ca",
+      "bytes": 220268,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-l2-053-8ebe859eb327.mp3",
+      "sha256": "8ebe859eb327dd2eb88163ff6bb584b350ebbe3dbecbb7af6bb400baabe0c79f",
+      "bytes": 222380,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-l2-061-6de6d0103de6.mp3",
+      "sha256": "6de6d0103de663dae7c2a16e55a4c70c13e1d3c07dd309c36a02a3059bce198e",
+      "bytes": 204716,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-l2-079-9a321fc86695.mp3",
+      "sha256": "9a321fc866950719102ed3966984e1073409cb7aa8fc9c0a6162d2432110ef8c",
+      "bytes": 187244,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-l2-088-71b4a5cfe1dc.mp3",
+      "sha256": "71b4a5cfe1dccef2c80ea5f06ca17a7138fcabe84fd5c7ca59f849e9d01d411d",
+      "bytes": 215084,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-l2-098-c4b970d94fb0.mp3",
+      "sha256": "c4b970d94fb038af4ec2926d2644bd4e3867dbb144a6c65e7dc0013c645549fe",
+      "bytes": 193772,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-l2-106-6396c60266a7.mp3",
+      "sha256": "6396c60266a73f928d53b72a785e3ecbb39a77c964e9e167ee3495f0a8c9451c",
+      "bytes": 227564,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-l2-124-d3af36c8ac14.mp3",
+      "sha256": "d3af36c8ac1450410b9517e85cc54330a9f608d593ab925f2a7b21300397326d",
+      "bytes": 200876,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-l2-126-9e5c8db0564f.mp3",
+      "sha256": "9e5c8db0564f6bf7efc19fd886ce2d35b73b268340f9c460566ba1cc6280afa6",
+      "bytes": 191660,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-l2-129-1befdb9c1045.mp3",
+      "sha256": "1befdb9c104514d485f0d6cd5b875d2a60504ffa3a1d656a31b7bec8f08c6a45",
+      "bytes": 211244,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-l2-141-07479be3d5cc.mp3",
+      "sha256": "07479be3d5cc8ac1f0736d7b4c9a454ce9cbc952a7c1b01e3003636388d26702",
+      "bytes": 182060,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-l2-152-daf1499893b8.mp3",
+      "sha256": "daf1499893b8c0add2fc8673168a4d60a7d9178b90df9e6c344b3a8fcade5fb3",
+      "bytes": 222380,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-l2-180-41b71c8807ed.mp3",
+      "sha256": "41b71c8807ed99113f8a69523999059f022c620e4d75f256ac45075a132fde58",
+      "bytes": 211244,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-l2-183-ad942fe284a7.mp3",
+      "sha256": "ad942fe284a7d546b1238cf1cf5b1b3c6fbeff1d2c79ca98b84db22687fdf253",
+      "bytes": 190124,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-l2-200-6b38617e5242.mp3",
+      "sha256": "6b38617e5242957bd15c07ce833eeadce2ca087266abc6d5a34accd206a43708",
+      "bytes": 216236,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-l3-008-872715b62e87.mp3",
+      "sha256": "872715b62e87d1c6c2a6a13668831be35b33d1f227e1dae627af115beb9ac744",
+      "bytes": 193580,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-l3-011-2bb2a0fc4161.mp3",
+      "sha256": "2bb2a0fc4161e8361621e3a9ee9fad3ea1e0ec1f56aed75d2817a8a7606a71fb",
+      "bytes": 204332,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-l3-015-7f1bdd0cd5ef.mp3",
+      "sha256": "7f1bdd0cd5efd4220ca957772f7e4177090e3cda77e0422d7decf062140a5b32",
+      "bytes": 202796,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-l3-020-b114a77a5b41.mp3",
+      "sha256": "b114a77a5b4140147997219756dace857ed9a82c279d04a1fdfcc2928c3658be",
+      "bytes": 291308,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-l3-049-e16778d00b8a.mp3",
+      "sha256": "e16778d00b8a91ad0d6361bb7aad791ed7aa274f0d626c0805eac10da2d4108e",
+      "bytes": 203948,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-l3-078-0781da1bb38b.mp3",
+      "sha256": "0781da1bb38b43314bee9427dfe5931499f6b99e91dada2994780cfd41edf2b5",
+      "bytes": 202028,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-l3-093-36d19e2e0485.mp3",
+      "sha256": "36d19e2e0485d85a704f8cfdf9ba9a57207cfa5e62013ff1c4c551922bcdab6a",
+      "bytes": 214892,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-l3-110-da77f6df4e10.mp3",
+      "sha256": "da77f6df4e10ca73794cf0466cb4f02fa90f568ca62b5cdcf8d4ef76b0bbd0b7",
+      "bytes": 208940,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-l3-114-c3b350c7a62c.mp3",
+      "sha256": "c3b350c7a62c1057919c6fed5b96ffacb7c9ca951b9b6e1d73f8978311e5826b",
+      "bytes": 192044,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-l3-162-fcc1f227e296.mp3",
+      "sha256": "fcc1f227e296f6d8d5d67e10ca6b4fea78f3b4dccc477d7916c665c21eee9ed6",
+      "bytes": 212780,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-l3-171-abff1c7e6f59.mp3",
+      "sha256": "abff1c7e6f59e76f2d2acba72ae5514ccb1a9b24edbfbda338a8e80a14e707c4",
+      "bytes": 235052,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-new-flat-tour-bb2c23a953f3.mp3",
+      "sha256": "bb2c23a953f3440b47ef8ab24f25e3f29c94164e569e782385f1891db8768d70",
+      "bytes": 194732,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-online-lesson-audio-bd8e4504ccd9.mp3",
+      "sha256": "bd8e4504ccd93facb1e4aa2cb80ad532c6e221125d9ec8684878457d3c35942d",
+      "bytes": 231788,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-quieter-carriage-a56cb0036eb6.mp3",
+      "sha256": "a56cb0036eb65ee436c6771c28674749d929696e74daa791566e0a5b1be5321e",
+      "bytes": 197804,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-saturday-train-plans-1e22b80423a8.mp3",
+      "sha256": "1e22b80423a8ac88e4505bb1c5013b13827c2cd1dec781f51b8529951fdc8356",
+      "bytes": 217772,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-seat-on-train-ccc4c33c00d8.mp3",
+      "sha256": "ccc4c33c00d84f6e7c26087a6fea72aad3381a78958041416713a5f0a6354649",
+      "bytes": 166508,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-tailor-pickup-12f4362c6c40.mp3",
+      "sha256": "12f4362c6c4017d7559441ddada30c6935f5fea3ea5b73d7ebbff67dcdd1a994",
+      "bytes": 194540,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-tea-with-a-guest-821d246f5dbb.mp3",
+      "sha256": "821d246f5dbbe599c9dab76f990b1c7f71fc9b417f7b527edff6fddbcf363da3",
+      "bytes": 183404,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-dialogue-team-options-c0530ca32bd6.mp3",
+      "sha256": "c0530ca32bd6644dad1c44ce7bd01f128b153003c0e594ad978eab11b270f258",
+      "bytes": 288044,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-feel-06-female-da14de0553cb.mp3",
+      "sha256": "da14de0553cbaa874fdc4a0ee4fb0faf018ff01431d2b5d647dbc4ab35cb4bc9",
+      "bytes": 13436,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-feel-06-male-725ce4bf4089.mp3",
+      "sha256": "725ce4bf408987e3703755c05b9d25f6ca21c40821f72a21402e94e9d03879c7",
+      "bytes": 15236,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-like-noun-09-female-c7c74cc1370b.mp3",
+      "sha256": "c7c74cc1370b920c5fac978d69160f06ab15275cbe8c2c8d751d3c0a4ecbcd12",
+      "bytes": 12068,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-like-noun-09-male-df64751eddee.mp3",
+      "sha256": "df64751eddeec246bff3f39f4278870cc3e982778d336b744268f2684875d8ff",
+      "bytes": 12788,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-pattern-9023-06-female-d4b756a63870.mp3",
+      "sha256": "d4b756a63870849fa66d4b3a41297f7569beea4dc7c4b1d374af4a8b47c0ae4f",
+      "bytes": 22316,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-pattern-9023-06-male-ded4b2cd4e0a.mp3",
+      "sha256": "ded4b2cd4e0a96426c7325374ade93b02379202cb6efadc44c15d20189702429",
+      "bytes": 21068,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-pattern-9027-09-female-8a81c3a25d5f.mp3",
+      "sha256": "8a81c3a25d5f15b169d6715e35aab338235faaa26d54266edada9de1c23a598a",
+      "bytes": 14084,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-pattern-9027-09-male-97b688315c43.mp3",
+      "sha256": "97b688315c432162584a37a0b5e319bfdc138426235f094d6d6600535adfa656",
+      "bytes": 14084,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-pattern-9028-09-female-39e90fda3f9d.mp3",
+      "sha256": "39e90fda3f9dd4ff786b13cf102baa3904f370409a2ce567d7e00244e4a7ce0c",
+      "bytes": 17276,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-pattern-9028-09-male-2e66c372ac24.mp3",
+      "sha256": "2e66c372ac24827b0ce3361c360cc6233494cd6a6d84f093315c8501da0c08a6",
+      "bytes": 17972,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-pattern-9056-09-female-4e9e0ba23ad3.mp3",
+      "sha256": "4e9e0ba23ad3b165a665acce659c9275f3bccec218d482cefc163f2214e9537c",
+      "bytes": 13076,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-pattern-9056-09-male-e4a9847aa217.mp3",
+      "sha256": "e4a9847aa217968797bdeaca3b6b082e24749c7d08c0492b5e7a02a069115792",
+      "bytes": 12428,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-pattern-9066-05-female-87d263ad9212.mp3",
+      "sha256": "87d263ad9212896778d8b9891e47731eadb8a0c269e3ac30917f47205d888dc9",
+      "bytes": 15140,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-pattern-9066-05-male-66329048eaa4.mp3",
+      "sha256": "66329048eaa4638cb77ea65754648c5a816e1b8c43a81e3cd35c1c4c8fc0b3e6",
+      "bytes": 15524,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-pattern-9069-06-female-70aa04a11dff.mp3",
+      "sha256": "70aa04a11dffb0e2168b5968ce20cc87eba568bcdab3948c68ecb861a89d443c",
+      "bytes": 16316,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-pattern-9069-06-male-3b67dd4064dd.mp3",
+      "sha256": "3b67dd4064ddadedce3ecefb55657639fbb21592cd2965d8a7ac30d6fabe5948",
+      "bytes": 17324,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-pattern-9076-02-female-dd146c2e4e93.mp3",
+      "sha256": "dd146c2e4e93e46624df8df33c2bafd6050fdca21d360dcd241d5ad77a360502",
+      "bytes": 13556,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-pattern-9076-02-male-d80a3ae3fd03.mp3",
+      "sha256": "d80a3ae3fd03feeda5ab2c04e4af3e91cc4cd8d883d951a2f53e6243582717fb",
+      "bytes": 14276,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-pattern-9079-05-female-2e19e65beb54.mp3",
+      "sha256": "2e19e65beb544957a86575b24c639efb7a38cb592976d58b69b6183610320ae7",
+      "bytes": 15236,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-pattern-9079-05-male-c79877ba3c48.mp3",
+      "sha256": "c79877ba3c48f504f62a4a6f9ebae0f033ad55d58c5ec5aa396f00f14ddea46e",
+      "bytes": 15476,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-pattern-9120-05-female-77e5acbc507a.mp3",
+      "sha256": "77e5acbc507a18d454ae3625a6c84d933ff7f09e9d97b1599454abe68b43df0b",
+      "bytes": 12740,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-pattern-9120-05-male-0be37846c05a.mp3",
+      "sha256": "0be37846c05a08ae1cde8f18d8257807d025c831e7bca67500a3a4d86ef01636",
+      "bytes": 13244,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-pattern-9155-07-female-05899c811908.mp3",
+      "sha256": "05899c811908040a20b2d24f3f5e52d2f77491ff387cd5ca6517d001e0f49eb7",
+      "bytes": 21884,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-pattern-9155-07-male-5003f30f7382.mp3",
+      "sha256": "5003f30f7382cbef2dcf06a6ca7a7a019ab8b71b84be770ac3d77db2a14c7db3",
+      "bytes": 21116,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-pattern-9163-09-female-05c6aaadd49f.mp3",
+      "sha256": "05c6aaadd49f5c4a5f0d40141a27c6afe95361096c748fda76cc2f34ecf2fa32",
+      "bytes": 18524,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-pattern-9163-09-male-f742740023b0.mp3",
+      "sha256": "f742740023b030a969e031c92f7fdc623e107c4fd6467e59026c0da39fd46d13",
+      "bytes": 19580,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-pattern-9174-01-female-086ee0a5a11a.mp3",
+      "sha256": "086ee0a5a11ab2bbb30084b27bab54fe9cb5cd0cb4059739658bf1cabd8fea34",
+      "bytes": 17636,
+      "groups": [
+        "course",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/english-pattern-9174-01-male-57df171788b8.mp3",
+      "sha256": "57df171788b8223ef1dd94249e33637a54161a4795bbe2b406f1c20a73bdb473",
+      "bytes": 18428,
       "groups": [
         "course",
         "all"

@@ -91,7 +91,8 @@ function dialogueWords(line){
   const pattern=PILOT?.patterns.find(p=>p.id===id);
   return dialogueAnchors[id]?EPTeaching.indices(line.en,dialogueAnchors[id]):EPTeaching.describe(line,pattern).highlight;
  }));
- return line.en.split(/\s+/).map((word,i)=>`<span data-dialogue-word="${i}" class="${highlighted.has(i)?'pattern-token':''}">${H(word)}</span>`).join(' ');
+ return englishIndexedMarkup(line.en,line,text=>text.split(/\s+/).map((word,i)=>
+  `<span data-dialogue-word="${i}" class="${highlighted.has(i)?'pattern-token':''}">${H(word)}</span>`).join(' '),{timed:true});
 }
 function dialoguePatterns(ids){
  return [...new Set(ids)].map(id=>{
@@ -126,7 +127,9 @@ function enlargeDialogueScene(button){
  const explanation=dialogue?dialogueSceneExplanation(dialogue,index):'';
  const entry=dialogueSceneArchive[dialogue?.id];
  const photo=entry?.turns[index+1]||entry?.cover;
- const libraryButton=photo?`<button class="secondary" onclick="openDialoguePhotoInLibrary(this,'${H(photo.id)}')">${T('افتح الصورة ومفرداتها','Open photo and vocabulary')} ↗</button>`:'';
+ const referenceId=line?.scene||dialogue?.lines[0]?.scene;
+ const photoId=photo?.id||(dialogueScene(referenceId)?.image?referenceId:null);
+ const libraryButton=photoId?`<button class="secondary" onclick="openDialoguePhotoInLibrary(this,'${H(photoId)}')">${T('افتح الصورة ومفرداتها','Open photo and vocabulary')} ↗</button>`:'';
  const dialog=document.createElement('dialog');
  dialog.className='dialogue-image-dialog';
  dialog.innerHTML=`<div class="dialogue-image-heading"><h2>${T('عرض المشهد','Scene view')}</h2><form method="dialog"><button class="secondary" autofocus aria-label="${T('إغلاق الصورة','Close image')}">×</button></form></div><figure>${button.innerHTML}<figcaption>${explanation}</figcaption></figure>${line?`<div class="dialogue-live-text"><p lang="en" dir="ltr">${dialogueWords(line)}</p>${EP.ar(line.ar)}</div>`:''}${libraryButton}`;
@@ -526,9 +529,9 @@ function filteredDialogueEntries(){
    return pattern?[pattern.form,pattern.title]:[];
   });
   const text=normalizeDialogueSearch([
-   entry.ar,entry.en,entry.taskAr,entry.taskEn,
+   entry.ar,entry.en,entry.dialogue?.englishUsage?.us,entry.dialogue?.englishUsage?.uk,entry.taskAr,entry.taskEn,
    ...(dialogueCategories[entry.category]||[]),...(dialoguePurposes[entry.purpose]||[]),...forms,
-   ...(entry.dialogue?.lines||[]).flatMap(line=>[line.en,line.ar])
+   ...(entry.dialogue?.lines||[]).flatMap(line=>[line.en,line.ar,line.englishUsage?.us,line.englishUsage?.uk])
   ].join(' '));
   return tokens.every(token=>text.includes(token));
  });
@@ -566,9 +569,9 @@ function paintDialogueCatalog(){
     ${learningLevels.starter[dialogue.id]?T('ابدأ بالمقطع القصير','Start with the short exchange'):dialogue.audio?T('استمع','Listen'):T('اقرأ النص','Read transcript')} ↗</button>`:
    `<details><summary>${T('الأنماط المستهدفة','Target patterns')}</summary><div class="buttonrow">${dialoguePatterns(entry.patternIds)}</div></details>`;
   return `<article class="panel dialogue-cover">${visual}
-   <div><small>${H(meta)}</small><span class="chip dialogue-status">${label}</span>
-   <h3>${H(T(entry.ar,entry.en))}</h3>
-   ${entry.taskEn&&T(entry.taskAr,entry.taskEn)!==T(entry.ar,entry.en)?`<p>${H(T(entry.taskAr,entry.taskEn))}</p>`:''}
+  <div><small>${H(meta)}</small><span class="chip dialogue-status">${label}</span>
+   <h3>${EP.prefs.language==='en'?englishTextMarkup(entry.en,entry):H(entry.ar)+' '+englishUsageButton(EPEnglish.analyze(entry.en,entry))}</h3>
+   ${entry.taskEn&&T(entry.taskAr,entry.taskEn)!==T(entry.ar,entry.en)?`<p>${H(T(entry.taskAr,englishDisplay(entry.taskEn)))}</p>`:''}
    ${action}</div></article>`;
  }).join('');
 }

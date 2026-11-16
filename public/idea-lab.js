@@ -164,15 +164,17 @@ function visibleIdeaWords(scene){
 function ideaPracticeTask(scene){return [scene.taskAr,scene.taskEn]}
 function ideaModel(en,ar,id){
  const pattern=PILOT?.patterns.find(p=>p.id===id);
- return `<div class="idea-model"><p lang="en" dir="ltr">${id==='model'?H(en):comparisonModel(en,pattern)}</p>${EP.ar(ar)}
+ return `<div class="idea-model"><p lang="en" dir="ltr">${englishIndexedMarkup(en,{ar},
+  text=>id==='model'?H(text):comparisonModel(text,pattern,false))}</p>${EP.ar(ar)}
   <button class="secondary" onclick="hearIdeaExample('${id}')">▶ ${T('استمع','Listen')}</button></div>`;
 }
 function ideaVocabulary(scene,open){
  const words=visibleIdeaWords(scene);
  const entries=words.map(word=>{
-  const term=scene.topic==='conversation'?vocabularyEntryFor(word):null;
+  const term=vocabularyEntryFor(word),usage=EPEnglish.analyze(word.en,word);
   return `<li data-idea-vocab="${word.index}">
-  <div><button type="button" class="idea-show-word" lang="en" dir="ltr" onclick="showIdeaMarker(${word.index},{clickedLanguage:'en',fromList:true})">${H(word.en)}</button>
+  <div><button type="button" class="idea-show-word" lang="en" dir="ltr" onclick="showIdeaMarker(${word.index},{clickedLanguage:'en',fromList:true})">${H(usage[EP.prefs.englishUsage])}</button>
+  ${englishUsageButton(usage)}
   ${hasIdeaPoint(word)?` <button type="button" class="idea-word-dot" onclick="showIdeaMarker(${word.index},{fromList:true})"
    aria-label="${H(T('أبرز في الصورة','Highlight in the picture')+' · '+word.en)}"></button>`:''}
   <span class="idea-vocab-meaning">${word.ar?`<button type="button" class="idea-show-word ar-content" lang="ar" dir="rtl"
@@ -226,8 +228,9 @@ function hearIdeaWriting(){
 }
 function hearIdeaExample(id){
  const scene=currentIdeaScene();
- const text=id==='model'?scene?.sentenceEn:scene?.patterns.find(p=>p.id===Number(id))?.en;
- if(!text)return;
+ const example=id==='model'?{en:scene?.sentenceEn,ar:scene?.sentenceAr}:scene?.patterns.find(p=>p.id===Number(id));
+ if(!example?.en)return;
+ const text=englishSpeakable(example.en,example);
  stopSpeech();
  const voice=ideaSoloVoice;
  const playback=playIdeaAudio(text,ideaSceneCueId(scene.id,id,voice),voice);

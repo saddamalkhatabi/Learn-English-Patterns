@@ -2,8 +2,11 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 const levels = require('../public/learning-levels.json');
 const plan = require('../production/learning-sequence.json');
-const dialogues = require('../public/dialogues.json').dialogues;
-const audio = require('../public/dialogue-audio.json');
+const { analyze } = require('../public/english-usage.js');
+const additions = require('../public/english-practice.json').dialogues;
+const dialogues = [...require('../public/dialogues.json').dialogues, ...additions];
+const localized = require('../public/english-usage-audio.json').dialogues;
+const audio = {...require('../public/dialogue-audio.json'), ...localized};
 const scenes = require('../public/conversation-scenes.json').scenes;
 const atlas = require('../public/vocabulary-index.json');
 
@@ -16,18 +19,21 @@ test('all conversations have a teaching level and photos inherit that level', ()
   const level = levels.dialogues[id], index = levelOrder.indexOf(level);
   assert(index >= last, id);
   last = index;
-  for (const photo of Object.values(scenes[id].turns)) assert.equal(levels.scenes[photo.id], level, photo.id);
+  for (const photo of Object.values(scenes[id]?.turns||{})) assert.equal(levels.scenes[photo.id], level, photo.id);
  }
  assert.equal(last, 3);
 });
 
 test('beginner excerpts lead the conversation sequence and have matching recorded turns', () => {
- assert.deepEqual(levels.dialogueOrder.slice(0, plan.starterDialogues.length), plan.starterDialogues.map(([id]) => id));
+ const sequence=[...additions.map(row=>row.id),...plan.starterDialogues.map(([id])=>id)];
+ assert.deepEqual(levels.dialogueOrder.slice(0,sequence.length),sequence);
  for (const [id, clip] of Object.entries(levels.starter)) {
   assert.equal(levels.dialogues[id], 'A1', id);
   const recording = audio[id];
   const dialogue = dialogues.find(row => row.id === id);
-  assert.deepEqual(recording.signature, dialogue.lines.map(line => [line.en, line.voice]));
+  assert.deepEqual(recording.signature, dialogue.lines.map(line => [
+   localized[id] ? analyze(line.en,line).us : line.en, line.voice
+  ]));
   assert(recording.turns[clip.from].start_ms < recording.turns[clip.to].end_ms, id);
   assert(clip.to - clip.from <= 2 && clip.ar && clip.en, id);
  }

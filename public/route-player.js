@@ -62,6 +62,9 @@ class NasaqRoutePlayer{
   if(resumeId&&this.session.phase!=='finished'&&this.session.ids.includes(resumeId))this.session.cursor=this.session.ids.indexOf(resumeId);
   if(!this.session.ids.length)this.configure({patternIds:data.pattern_order});
   this.session.cursor=Math.min(Math.max(0,this.session.cursor),Math.max(0,this.session.ids.length-1));
+  const updatedRecording=this.session.phase==='sentence'&&this.sentence?.regionalAudio||
+   this.session.phase==='dialogue'&&this.activeDialogue?.regionalAudio;
+  if(updatedRecording&&this.session.savedRecording!==this.recording?.sha256)this.session.offset=0;
   if((this.session.phase==='interlude'&&!this.session.includeDialogues)||
      (this.session.phase==='dialogue'&&(!this.session.includeDialogues||!this.activeDialogue?.audio))){
    if(this.requireConversation&&this.session.phase==='dialogue'){this.session.phase='conversation-pending';this.session.offset=0}
@@ -114,7 +117,12 @@ class NasaqRoutePlayer{
   return ids.length?100*(cursor+fraction)/ids.length:0;
  }
  get wordIndex(){const ms=this.session.offset*1000;return this.recording?.words?.findIndex(w=>w.start_ms<=ms&&ms<w.end_ms)??-1}
- save(){try{this.storage?.setItem('nasaq-route-v2',JSON.stringify(this.session))}catch{this.error='تعذر حفظ موضعك على هذا المتصفح.'}}
+ save(){
+  try{
+   const savedRecording=this.hasAudio?this.recording?.sha256:undefined;
+   this.storage?.setItem('nasaq-route-v2',JSON.stringify({...this.session,savedRecording}));
+  }catch{this.error='تعذر حفظ موضعك على هذا المتصفح.'}
+ }
  emit(){this.onchange(this)}
  async play(){
   if(!this.sentence){this.error='اختر مسارًا يحتوي جملًا أولًا.';this.emit();return}

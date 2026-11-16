@@ -13,9 +13,11 @@ const patternOrder = levels.flatMap(level => editorial.patterns[level] || ids.fi
 const patterns = Object.fromEntries(levels.flatMap(level =>
  (editorial.patterns[level] || ids.filter(id => !assigned.includes(id))).map(id => [id, level])));
 
-const plan = read('dialogue-plan').entries;
-const dialogueRows = new Map(read('dialogues').dialogues.map(dialogue => [dialogue.id, dialogue]));
-const starter = Object.fromEntries(editorial.starterDialogues.map(([id, from, to, ar, en]) => {
+const practice = read('english-practice').dialogues;
+const plan = [...practice, ...read('dialogue-plan').entries];
+const dialogueRows = new Map([...read('dialogues').dialogues, ...practice].map(dialogue => [dialogue.id, dialogue]));
+const starter = Object.fromEntries([...practice.map(row => [row.id, ...row.clip, row.taskAr, row.taskEn]),
+ ...editorial.starterDialogues].map(([id, from, to, ar, en]) => {
  assert(from >= 1 && to > from && to <= dialogueRows.get(id)?.lines.length, id);
  assert(plan.some(entry => entry.id === id && entry.level === 'A1'), id);
  return [id, { from: from - 1, to: to - 1, ar, en }];

@@ -1,0 +1,24 @@
+.english-usage-badge {
+  display: inline-block;
+  margin-inline-start: .45em;
+  padding: .14em .42em;
+  border: 1px solid #97b8ad;
+  border-radius: .35em;
+  color: #194f43;
+  background: #e7f3ee;
+  font: 600 .75rem/1.35 system-ui, sans-serif;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.english-usage-badge:hover { background: #cfe8df; }
+.english-usage-badge:focus-visible { outline: 2px solid #194f43; outline-offset: 2px; }
+.english-usage-primary,.english-usage-audio-label { display: block; }
+.english-usage-audio-label { font: 600 .75rem/1.35 system-ui, sans-serif; color: #52685d; }
+.english-usage-dialog { width: min(520px, calc(100vw - 26px)); padding: 18px; }
+.english-usage-dialog::backdrop { background: #19352cb5; }
+.english-usage-heading { display: flex; justify-content: space-between; gap: 12px; align-items: center; }
+.english-usage-heading h2 { font-size: 1.1rem; margin: 0; }
+.english-usage-dialog section { margin-top: 14px; padding-block: 12px; border-top: 1px solid var(--line); }
+.english-usage-dialog [lang^="en"] { text-align: start; font-size: 1.16rem; line-height: 1.65; }
+.english-usage-dialog mark { background: #faeab8; color: inherit; padding: 0 2px; }
+.english-regional-tag { display: inline-block; font-weight: 650; font-size: .75rem; }

@@ -111,7 +111,7 @@ function updateStudioJourneyPractice({dialogue,stages}){
  $('#studio-journey-selection').textContent=count>=2?
   T(`اخترت تفاصيل من ${count} لقطات. استخدمها في محاولتك.`,`You chose details from ${count} photos. Use them in your dialogue.`):
   T('اختر مفردة تحت لقطتين مختلفتين لتخصيص الأسئلة.','Choose a word under two different photos to personalize the prompts.');
- $('#studio-journey-chosen').textContent=words.map(word=>word.en).join(' · ');
+ $('#studio-journey-chosen').textContent=words.map(word=>englishDisplay(word.en,word)).join(' · ');
 }
 function paintStudioJourney(row){
  const host=$('#studio-journey-active');
@@ -160,7 +160,7 @@ function studioJourneyFrame({scene,from,to,ar,en,purposeAr,purposeEn},index,sele
     <p><small>${T('الأدوار','Turns')} <bdi>${from===to?from:from+'–'+to}</bdi></small></p>
     <ul class="studio-journey-labels">${scene.words.map((word,wordIndex)=>`<li>
      <label><input type="checkbox" ${selection.has(index+':'+wordIndex)?'checked':''} onchange="setStudioJourneyDetail(${index},${wordIndex},this.checked)">
-      <span><b lang="en" dir="ltr">${H(word.en)}</b> ${wordTypeBadge(word)}<span class="ar-content" lang="ar" dir="rtl">${H(word.ar)}</span></span></label>
+      <span><b lang="en" dir="ltr">${H(englishDisplay(word.en,word))}</b> ${wordTypeBadge(word)}<span class="ar-content" lang="ar" dir="rtl">${H(word.ar)}</span></span></label>
      <span data-studio-label-term="${index}:${wordIndex}"></span></li>`).join('')}</ul>
     <button type="button" class="textlink" onclick="openLinkedLearning('photo','${H(scene.id)}')">${T('افتح الصورة واستمع إلى مفرداتها','Open the photo and hear its vocabulary')} ↗</button>
    </details>
@@ -198,7 +198,7 @@ function paintStudioJourneyVocabulary({dialogue,stages}){
   if(!entries.length||!host)return;
   host.innerHTML=`<details class="idea-disclosure"><summary>${T('الأفعال والتراكيب والعبارات في هذه الأدوار','Verbs, structures and phrases in these turns')}</summary>
    <ul class="studio-journey-terms">${entries.map(entry=>`<li><button type="button" class="textlink" lang="en" dir="ltr"
-    onclick="openVocabularyFromScene('${entry.id}')">${H(entry.en)} ↗</button> ${wordTypeBadge(entry)}${EP.ar(entry.ar)}</li>`).join('')}</ul></details>`;
+    onclick="openVocabularyFromScene('${entry.id}')">${H(vocabularyEntryName(entry))} ↗</button> ${wordTypeBadge(entry)}${EP.ar(entry.ar)}</li>`).join('')}</ul></details>`;
  });
 }
 function hearStudioJourney(from,to){

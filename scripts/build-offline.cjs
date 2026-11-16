@@ -7,6 +7,10 @@ for(const dialogue of require('../public/dialogues.json').dialogues){
  const audio=require('../public/dialogue-audio.json')[dialogue.id];
  if(audio&&JSON.stringify(audio.signature)===JSON.stringify(dialogue.lines.map(line=>[line.en,line.voice])))sets.course.add(audio.path);
 }
+const englishAudio=require('../public/english-usage-audio.json');
+for(const recordings of Object.values(englishAudio.sentences))
+ for(const recording of Object.values(recordings))sets.course.add(recording.path);
+for(const recording of Object.values(englishAudio.dialogues))sets.course.add(recording.path);
 const cues=require('../public/training-audio.json');
 for(const [id,spoken] of Object.entries(require('./training-cues.cjs'))){
  const audio=cues[id];
