@@ -28,12 +28,14 @@ body[data-linked-learning] #sidebar,
 body[data-linked-learning] main > header,
 body[data-linked-learning] main > footer { display: none; }
 body[data-linked-learning] main { margin: 0; padding: 16px; }
-body[data-linked-learning="photo"] #app > :not(#scene-studio-active, #idea-zoom),
-body[data-linked-learning="scene"] #app > :not(#idea-lab-active, #idea-zoom),
-body[data-linked-learning="journey"] #app > :not(#studio-journey-active),
+body[data-linked-learning="photo"] #app > :not(#scene-studio-active, #scene-studio-gallery, #idea-zoom),
+body[data-linked-learning="scene"] #app > :not(#idea-lab-active, #idea-scene-picker, #idea-zoom),
+body[data-linked-learning="journey"] #app > :not(#studio-journey-active, #studio-journey-gallery),
 body[data-linked-learning="dialogue"] #app > :not(#dialogue-player),
-body[data-linked-learning="atlas"] #app > :not(#vocabulary-detail),
-body[data-linked-learning="pattern-photos"] #app > :is(.pagehead,.studio-tabs,.ep-section-links),
+body[data-linked-learning="atlas"]:not([data-atlas-browsing]) #app > :not(#vocabulary-detail),
+body[data-linked-learning="photo"] #scene-studio-gallery > .ep-section-links,
+body[data-linked-learning="pattern-photos"] #scene-studio-gallery > .ep-section-links,
+body[data-linked-learning="pattern-photos"] #app > :is(.pagehead,.studio-tabs),
 body[data-linked-learning="listen"] #app > :is(.pagehead,.route-config,.ep-section-links) { display: none; }
 body[data-linked-learning] .linked-learning { width: 100%; height: 100dvh; border-radius: 0; }
 .dialogue-starter { margin-bottom: 16px; }

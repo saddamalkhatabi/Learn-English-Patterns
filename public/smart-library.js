@@ -25,10 +25,8 @@ function matchesStudioContext(row){
  return !route||route.pattern_ids.some(id=>ids.includes(id));
 }
 function selectStudioPattern(value){
- studioPattern=Number(value)||null;studioPage=0;studioActiveId=null;studioOpenEpoch++;
- studioWordScene=null;stopSpeech();clearIdeaFlash();
+ studioPattern=Number(value)||null;studioPage=0;
  $('#scene-studio-query').value='';$('#scene-studio-topic').value='';
- $('#scene-studio-active').replaceChildren();
  paintSceneStudio();
 }
 function prepareSmartSelection(){
@@ -37,27 +35,36 @@ function prepareSmartSelection(){
  const pattern=PILOT?.patterns.find(p=>p.id===studioPattern);
  context.innerHTML=pattern?`<div class="panel studio-pattern-context"><b>${T('ممارسة النمط في صوره الأصلية','Practise the pattern in its original scenes')}</b>
   <strong class="pattern-form" lang="en" dir="ltr">${H(pattern.form)}</strong></div>`:'';
- if(!$('#scene-studio-active')?.children.length){
-  const id=studioActiveId||(pattern?studioMatches()[0]?.row.id:null);
-  if(id)openSmartScene(id);
- }
+ if(studioActiveId&&!$('#scene-studio-active').children.length)openSmartScene(studioActiveId,false);
 }
 function openAdvancedIdea(id,next=null){
  const pattern=PILOT?.patterns.find(p=>p.id===id);if(!pattern)return;
  return openLinkedLearning('pattern-photos',id,{next:next??undefined});
 }
-async function openSmartScene(id){
- const epoch=++studioOpenEpoch;
+function backToStudioGallery(){
+ const id=studioActiveId;
+ studioActiveId=null;
+ studioOpenEpoch++;
+ returnToSceneGallery($('#scene-studio-gallery'),$('#scene-studio-active'),id,'#scene-studio-suggest');
+ studioWordScene=null;
+}
+async function openSmartScene(id,focus=true){
+ const host=$('#scene-studio-active');
  const practice=ideaLibrary?.scenes.find(scene=>scene.id===id);
  const item=sceneArchive?.scenes.find(scene=>scene.id===id),row=dialogueScene(id);
- if(!row&&!practice)return;
- stopSpeech();studioAudio?.pause();clearIdeaFlash();ideaWordFilter='';ideaWordMode=practice?'visible':'hidden';
- const host=$('#scene-studio-active');if(!host)return;
- host.textContent=T('جارٍ تجهيز مفردات الصورة…','Preparing scene vocabulary…');
- await Promise.all([loadStudioVocabulary(),loadVocabulary()]);
- if(page!=='scene-studio'||studioMode!=='photos'||epoch!==studioOpenEpoch)return;
- const data=studioVocabulary?.[id]||{words:[]},crop=item?row?.image?.crop:null;
+ if(!host||(!row&&!practice))return;
+ const epoch=++studioOpenEpoch;
+ stopSpeech();clearIdeaFlash();ideaWordFilter='';ideaWordMode='visible';
  studioActiveId=id;
+ studioWordScene=null;
+ $('#scene-studio-gallery').hidden=true;
+ host.hidden=false;
+ $('#idea-zoom .idea-zoom-content')?.replaceChildren();
+ const back=sceneGalleryReturnButton('backToStudioGallery');
+ host.innerHTML=back+`<p role="status">${T('جارٍ تجهيز مفردات الصورة…','Preparing scene vocabulary…')}</p>`;
+ await Promise.all([loadStudioVocabulary(),loadVocabulary()]);
+ if(!host.isConnected||page!=='scene-studio'||studioMode!=='photos'||epoch!==studioOpenEpoch)return;
+ const data=studioVocabulary?.[id]||{words:[]},crop=row?.image?.crop;
  studioWordScene=practice?{...practice,id:'studio:'+id}:{id:'studio:'+id,sentenceId:id,en:item?.description||row.en,ar:item?.descriptionAr||row.ar,
   sentenceEn:row.en,sentenceAr:row.ar,words:data.words,reviewed:data.reviewed,
   taskEn:'Imagine two people in this scene. Write an opening, a reply, and a follow-up question.',
@@ -68,7 +75,7 @@ async function openSmartScene(id){
  const location=dialogueSceneLocations.get(id);
  const dialogue=location?PILOT?.dialogues.find(item=>item.id===location.id):null;
  const line=dialogue?.lines[location?.turn];
- host.innerHTML=`<article class="panel studio-exercise">
+ host.innerHTML=back+`<article class="panel studio-exercise">
   <div id="idea-viewer-home">${crop||practice?ideaViewer(studioWordScene):`<p>${T('لم تُضف صورة لهذه الجملة بعد.','This sentence has no scene yet.')}</p>`}</div>
   <div><section class="studio-original"><h2 tabindex="-1">${T('الجملة الأساسية للصورة','The photo’s original sentence')}</h2>
    ${practice?`<p lang="en" dir="ltr">${line?dialogueWords(line):H(practice.sentenceEn)}</p>${EP.ar(line?.ar||practice.sentenceAr)}
@@ -87,11 +94,14 @@ async function openSmartScene(id){
   </details>
   ${studioPattern?`<div class="buttonrow"><button class="secondary" onclick="recordDailyPractice('pattern-scene','${studioPattern}:${id}');this.textContent=T('✓ سُجّلت الممارسة','✓ Practice logged');this.disabled=true">${T('مارست النمط بصوتي','I practised the pattern aloud')}</button>
    ${studioNextLesson?`<button class="primary" onclick="openLinkedLearning('lesson',${studioNextLesson})">${T('الدرس التالي','Next lesson')} ↗</button>`:''}</div>`:''}</div></article>`;
- paintStudioWords(studioWordScene,Boolean(practice));
+ paintStudioWords(studioWordScene,true);
  if(crop||practice)mountIdeaViewer(studioWordScene);
  paintIdeaGuided();paintIdeaArchive();
  if(row)window.EPOffline?.rememberSentences([row]);
- host.scrollIntoView({block:'start'});
+ if(focus&&!$('#idea-zoom')?.open){
+  host.querySelector('h2').focus({preventScroll:true});
+  host.scrollIntoView({block:'start'});
+ }
 }
 ideaLibraryReady.then(()=>{if(page==='scene-studio')paintSceneStudio()});
 function paintStudioWords(scene,open=false){

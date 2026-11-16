@@ -1,6 +1,10 @@
 /* A searchable reference library; it never turns a source sentence into a completed course. */
 const stopBeforeReference=stopSpeech;
-stopSpeech=function(){referencePlayerOpen=false;referencePlayer?.pause();const bar=document.querySelector('#reference-player');if(bar)bar.hidden=true;stopBeforeReference()};
+stopSpeech=function(options){
+ if(options?.keepReferencePlayer)referencePlayer?.pause();
+ else if(referencePlayerOpen)closeReferencePlayer();
+ stopBeforeReference();
+};
 let REFERENCE_CORPUS=null,referencePlayer=null,referenceQuery='',referenceGrammar='',referenceDomain='',referencePurpose='',referenceLevel='',referenceReady=false,referencePage=0,referencePractice=null,referenceBuilt=[],referencePaint='',referencePlayerOpen=false;
 labels.references='الألف جملة';navs.splice(navs.findIndex(n=>n[0]==='library')+1,0,['references','◈']);
 const referenceRenderBefore=render;

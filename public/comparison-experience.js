@@ -372,8 +372,8 @@ function paintComparisonGuide(){
 }
 
 const stopSpeechBeforeComparison=stopSpeech;
-stopSpeech=function(){
+stopSpeech=function(options){
  pauseComparisonGuide();
- stopSpeechBeforeComparison();
+ stopSpeechBeforeComparison(options);
 };
 window.addEventListener('hashchange',()=>{if(location.hash!=='#comparisons')releaseComparisonGuide()});

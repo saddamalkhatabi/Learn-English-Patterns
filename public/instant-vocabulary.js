@@ -92,7 +92,7 @@ function moveInstantHighlight(session,match){
 function pronounceInstantVocabulary(session){
  if(instantLookup!==session)return;
  const {result,match}=session;
- stopSpeech();
+ stopSpeech({keepReferencePlayer:Boolean(session.context.target.closest('#reference-player'))});
  if(match.lang==='ar'){
   if(!('speechSynthesis' in window))return;
   const utterance=new SpeechSynthesisUtterance(match.text);
@@ -241,4 +241,4 @@ document.addEventListener('scroll',event=>{
  if(instantLookup&&!instantLookup.popup.contains(event.target))closeInstantVocabulary();
 },true);
 const stopBeforeInstantVocabulary=stopSpeech;
-stopSpeech=function(){instantAudio?.stop();instantAudio=null;stopBeforeInstantVocabulary()};
+stopSpeech=function(options){instantAudio?.stop();instantAudio=null;stopBeforeInstantVocabulary(options)};

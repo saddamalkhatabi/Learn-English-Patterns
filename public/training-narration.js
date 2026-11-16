@@ -81,5 +81,5 @@ function replayLessonStageCue(){stopSpeech();playLessonStageCue()}
 if(typeof module!=='undefined')module.exports={spokenTrainingCue,trainingCueId,spokenComparison,spokenComparisonNote,ideaWordCueId,ideaSceneCueId};
 else{
  const stopSpeechBeforeTrainingCue=stopSpeech;
- stopSpeech=function(){lessonCue?.stop();lessonCue=null;stopSpeechBeforeTrainingCue()};
+ stopSpeech=function(options){lessonCue?.stop();lessonCue=null;stopSpeechBeforeTrainingCue(options)};
 }

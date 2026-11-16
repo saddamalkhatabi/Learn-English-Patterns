@@ -57,20 +57,21 @@ function vocabularyPage(){
  return head(T('أطلس المفردات والعبارات','Words & phrases atlas'),
   T('ابحث عن كلمة، وتعرّف نوعها من استعمالها، ثم افتح جملها وصورها ومحادثاتها.','Find a word, see how it is used, then open its sentences, scenes and conversations.'))+
   `<div class="toolbar vocabulary-filters">
-   <label>${T('الكلمة أو المعنى','Word or meaning')}<input type="search" value="${H(vocabularyQuery)}" oninput="vocabularyQuery=this.value;resetVocabulary()"></label>
-   <label>${T('النوع','Type')}<select onchange="vocabularyType=this.value;resetVocabulary()"><option value="">${T('الكل','All')}</option>
+   <label>${T('الكلمة أو المعنى','Word or meaning')}<input type="search" id="vocabulary-query" data-atlas-filter value="${H(vocabularyQuery)}" oninput="vocabularyQuery=this.value;resetVocabulary()"></label>
+   <label>${T('النوع','Type')}<select data-atlas-filter onchange="vocabularyType=this.value;resetVocabulary()"><option value="">${T('الكل','All')}</option>
     ${Object.entries(EPVocabulary.types).map(([id,type])=>`<option value="${id}" ${vocabularyType===id?'selected':''}>${type.code} · ${T(type.ar,type.en)}</option>`).join('')}</select></label>
-   <label>${T('موضع الاستخدام','Used in')}<select onchange="vocabularyCollection=this.value;resetVocabulary()">
+   <label>${T('موضع الاستخدام','Used in')}<select data-atlas-filter onchange="vocabularyCollection=this.value;resetVocabulary()">
     ${[['','كل المحتوى','All content'],['sentence','الجمل والدروس','Sentences and lessons'],['dialogue','المحادثات','Conversations'],['idea','مفردات المشاهد','Scene vocabulary']].map(([id,ar,en])=>`<option value="${id}" ${vocabularyCollection===id?'selected':''}>${T(ar,en)}</option>`).join('')}</select></label>
-   <label>${T('النمط','Pattern')}<select onchange="vocabularyPattern=this.value;resetVocabulary()"><option value="">${T('كل الأنماط','All patterns')}</option>
+   <label>${T('النمط','Pattern')}<select data-atlas-filter onchange="vocabularyPattern=this.value;resetVocabulary()"><option value="">${T('كل الأنماط','All patterns')}</option>
     ${(PILOT?.patterns||[]).map(p=>`<option value="${p.id}" ${vocabularyPattern==p.id?'selected':''}>${H(p.form)}</option>`).join('')}</select></label>
-   <label>${T('مستوى التعلّم','Learning level')}<select onchange="vocabularyLevel=this.value;resetVocabulary()">${learningLevelOptions(vocabularyLevel)}</select></label>
-   <label>${T('الاستعمال الأمريكي والبريطاني','American and British usage')}<select id="vocabulary-regional" onchange="vocabularyRegional=this.value;resetVocabulary()">
+   <label>${T('مستوى التعلّم','Learning level')}<select data-atlas-filter onchange="vocabularyLevel=this.value;resetVocabulary()">${learningLevelOptions(vocabularyLevel)}</select></label>
+   <label>${T('الاستعمال الأمريكي والبريطاني','American and British usage')}<select id="vocabulary-regional" data-atlas-filter onchange="vocabularyRegional=this.value;resetVocabulary()">
     ${[['','كل المداخل','All entries'],['differences','أبرز الاختلافات','Regional differences'],['vocabulary','اختلاف المفردات','Vocabulary differences'],
       ['spelling','اختلاف التهجئة','Spelling differences'],['construction','اختلاف التعبير','Usage and construction'],
       ['shared','عبارات مشتركة','Shared expressions']].map(([id,ar,en])=>
      `<option value="${id}" ${vocabularyRegional===id?'selected':''}>${T(ar,en)}</option>`).join('')}</select></label>
    <label>${T('الصوت','Voice')}<select onchange="vocabularyVoice=this.value"><option value="male" ${vocabularyVoice==='male'?'selected':''}>Adam</option><option value="female" ${vocabularyVoice==='female'?'selected':''}>Bella</option></select></label>
+   <button type="button" class="secondary" onclick="clearVocabularyFilters()">${T('مسح البحث والفلاتر','Clear search and filters')}</button>
   </div>
   <p class="lesson-hint">${T('قد تكون للكلمة أدوار مختلفة. راجع معناها ونوعها في المثال الظاهر.','A word may have different roles. Check its meaning and type in the example shown.')}</p>
   <section id="vocabulary-detail"></section><p id="vocabulary-count" role="status"></p>
@@ -79,8 +80,23 @@ function vocabularyPage(){
    <button class="secondary" id="vocabulary-next" onclick="vocabularyPageNumber++;paintVocabulary()">${T('التالي','Next')}</button></div>`;
 }
 function resetVocabulary(){
- vocabularyPageNumber=0;paintVocabulary();
- if(vocabularyTerm)openVocabularyTerm(vocabularyTerm,vocabularyPreferredScene,false);
+ closeVocabularyTerm();
+ vocabularyPageNumber=0;
+ paintVocabulary();
+}
+function clearVocabularyFilters(){
+ vocabularyQuery=vocabularyType=vocabularyCollection=vocabularyPattern=vocabularyLevel=vocabularyRegional='';
+ if(document.body.dataset.linkedLearning==='atlas')document.body.dataset.atlasBrowsing='';
+ document.querySelectorAll('[data-atlas-filter]').forEach(input=>{input.value=''});
+ resetVocabulary();
+ $('#vocabulary-query')?.focus();
+}
+function closeVocabularyTerm(focus=false){
+ const id=vocabularyTerm;
+ vocabularyTerm=vocabularyPreferredScene='';
+ vocabularyAudio?.stop();
+ $('#vocabulary-detail')?.replaceChildren();
+ if(focus)($(`[data-atlas-entry="${CSS.escape(id)}"]`)||$('#vocabulary-query'))?.focus();
 }
 function vocabularyMatchesSource(source){
  return (!vocabularyCollection||source.type.startsWith(vocabularyCollection))&&
@@ -104,7 +120,7 @@ function paintVocabulary(){
  $('#vocabulary-count').textContent=T(`${entries.length} مدخلًا · صفحة ${vocabularyPageNumber+1} من ${pages}`,`${entries.length} entries · page ${vocabularyPageNumber+1} of ${pages}`);
  $('#vocabulary-prev').disabled=vocabularyPageNumber===0;$('#vocabulary-next').disabled=vocabularyPageNumber+1>=pages;
  host.innerHTML=entries.slice(vocabularyPageNumber*size,(vocabularyPageNumber+1)*size).map(entry=>
-  `<article class="panel vocabulary-card">${wordTypeBadge(entry)}<button class="textlink" lang="en" dir="ltr" onclick="openVocabularyTerm('${entry.id}','')">${H(vocabularyEntryName(entry))}</button>
+  `<article class="panel vocabulary-card">${wordTypeBadge(entry)}<button type="button" class="textlink" lang="en" dir="ltr" data-atlas-entry="${entry.id}" onclick="openVocabularyTerm(this.dataset.atlasEntry,'')">${H(vocabularyEntryName(entry))}</button>
    ${EP.ar(entry.ar)}${vocabularyUsageTags(entry)}<small>${entry.sourceIds.length} ${T('مواضع استخدام','uses')} · ${entry.sceneIds.length} ${T('صور','scenes')}</small>
    <button class="secondary" onclick="playVocabularyEntry('${entry.id}')" aria-label="${T('انطق','Hear')} ${H(entry.en)}">▶</button></article>`
  ).join('');
@@ -122,7 +138,10 @@ function openVocabularyTerm(id,preferredScene=vocabularyPreferredScene,scroll=tr
   const {source}=use,key=source.en+'|'+source.ar;
   if(!byExample.has(key))byExample.set(key,use);
  }
- host.innerHTML=`<article class="panel vocabulary-selected"><div class="buttonrow"><h2 lang="en" dir="ltr">${H(vocabularyEntryName(entry))}</h2>${wordTypeBadge(entry)}
+ const linkedEntry=document.body.dataset.linkedLearning==='atlas'&&!('atlasBrowsing' in document.body.dataset);
+ host.innerHTML=`<article class="panel vocabulary-selected">
+  <button type="button" class="secondary" onclick="${linkedEntry?'clearVocabularyFilters()':'closeVocabularyTerm(true)'}">${linkedEntry?T('تصفّح الأطلس','Browse the atlas'):T('العودة إلى النتائج','Back to results')}</button>
+  <div class="buttonrow"><h2 lang="en" dir="ltr" tabindex="-1">${H(vocabularyEntryName(entry))}</h2>${wordTypeBadge(entry)}
    <button class="secondary" onclick="playVocabularyEntry('${entry.id}')">▶ ${T('استمع','Listen')}</button></div>
    ${EP.ar(entry.ar)}${vocabularyUsageTags(entry)}${entry.uk?englishUsageButton(EPEnglish.analyze(entry.en,entry)):''}${entry.expansion?`<p lang="en" dir="ltr">${H(entry.expansion)}</p>`:''}
    ${vocabularySceneLinks(uses)}
@@ -134,7 +153,10 @@ function openVocabularyTerm(id,preferredScene=vocabularyPreferredScene,scroll=tr
    <details><summary>${T('كل مواضع الاستخدام','All uses')} · ${uses.length}</summary>${uses.map(({source,index})=>
     `<button class="textlink vocabulary-source-link" onclick="openVocabularyUse(${index})">${H(englishDisplay(source.en,source))}${source.type==='idea-word'?` <span class="ar-content" lang="ar" dir="rtl">${H(source.ar)}</span>`:''}</button>`
    ).join('')}</details></article>`;
- if(scroll)host.scrollIntoView({block:'start'});
+ if(scroll){
+  host.querySelector('h2').focus({preventScroll:true});
+  host.scrollIntoView({block:'start'});
+ }
 }
 function vocabularySceneLinks(examples){
  const uses=new Map();
@@ -215,5 +237,5 @@ render=function(){
  loadVocabulary().then(()=>{if(page==='vocabulary'){paintVocabulary();if(vocabularyTerm)openVocabularyTerm(vocabularyTerm)}});
 };
 const stopBeforeVocabulary=stopSpeech;
-stopSpeech=function(){vocabularyAudio?.stop();stopBeforeVocabulary()};
+stopSpeech=function(options){vocabularyAudio?.stop();stopBeforeVocabulary(options)};
 if(location.hash==='#vocabulary'){page='vocabulary';render()}

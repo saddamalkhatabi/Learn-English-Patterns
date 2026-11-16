@@ -25,17 +25,38 @@ function sceneStudioPage(){
   `<nav class="studio-tabs" aria-label="${T('أقسام مكتبة الصور','Photo library sections')}">
    <button type="button" class="secondary" data-studio-mode="photos" aria-pressed="${studioMode==='photos'}" onclick="setStudioMode(this.dataset.studioMode)">${T('تصفّح الصور','Browse photos')}</button>
    <button type="button" class="secondary" data-studio-mode="journeys" aria-pressed="${studioMode==='journeys'}" onclick="setStudioMode(this.dataset.studioMode)">${T('مشاهد المحادثات','Conversation scenes')}</button>
-  </nav>`+(studioMode==='journeys'?studioJourneysPage():epSectionLinks(['references','lab'])+
-  `<div class="toolbar"><input type="search" id="scene-studio-query" oninput="studioPage=0;paintSceneStudio()" placeholder="${T('مسبح، مكتبة، train…','Pool, library, قطار…')}" aria-label="${T('بحث المشاهد','Search scenes')}">
+  </nav>`+(studioMode==='journeys'?studioJourneysPage():
+  `<section class="scene-detail" id="scene-studio-active" hidden></section>
+  <dialog id="idea-zoom" aria-labelledby="idea-zoom-title" onclose="restoreIdeaZoom()"><div class="idea-zoom-header"><h2 id="idea-zoom-title"></h2><form method="dialog"><button class="secondary" aria-label="${T('إغلاق عرض المشهد','Close scene view')}">×</button></form></div><div class="idea-zoom-content"></div></dialog>
+  <section class="scene-gallery" id="scene-studio-gallery">
+  ${epSectionLinks(['references','lab'])}
+  <div class="toolbar"><input type="search" id="scene-studio-query" oninput="studioPage=0;paintSceneStudio()" placeholder="${T('مسبح، مكتبة، train…','Pool, library, قطار…')}" aria-label="${T('بحث المشاهد','Search scenes')}">
   <select id="scene-studio-topic" onchange="studioPage=0;paintSceneStudio()" aria-label="${T('موضوع المشهد','Scene topic')}"><option value="">${T('كل الموضوعات','All topics')}</option><option value="conversation">${T('مشاهد المحادثات','Conversation scenes')}</option>${[...topics.values()].map(t=>`<option value="${t.id}">${H(T(t.ar,t.en))}</option>`).join('')}</select>
   <label>${T('مستوى التعلّم','Learning level')}<select onchange="setStudioLearningLevel(this.value)">${learningLevelOptions(studioLearningLevel)}</select></label>
-  ${smartLibraryFilters()}<button class="secondary" onclick="surpriseScene()">${T('اقترح مشهدًا','Suggest a scene')}</button></div>
-  <section id="studio-pattern-context"></section><section id="scene-studio-active"></section>
-  <dialog id="idea-zoom" aria-labelledby="idea-zoom-title" onclose="restoreIdeaZoom()"><div class="idea-zoom-header"><h2 id="idea-zoom-title"></h2><form method="dialog"><button class="secondary" aria-label="${T('إغلاق عرض المشهد','Close scene view')}">×</button></form></div><div class="idea-zoom-content"></div></dialog>
+  ${smartLibraryFilters()}<button type="button" class="secondary" id="scene-studio-suggest" onclick="surpriseScene()">${T('اقترح مشهدًا','Suggest a scene')}</button></div>
+  <section id="studio-pattern-context"></section>
   <p id="scene-studio-count" role="status"></p>
   <div id="scene-studio-results" class="scene-studio-grid"></div><div class="buttonrow">
    <button class="secondary" id="scene-studio-prev" onclick="studioPage--;paintSceneStudio()">${T('السابق','Previous')}</button>
-   <button class="secondary" id="scene-studio-next" onclick="studioPage++;paintSceneStudio()">${T('التالي','Next')}</button></div>`);
+   <button class="secondary" id="scene-studio-next" onclick="studioPage++;paintSceneStudio()">${T('التالي','Next')}</button></div></section>`);
+}
+function sceneGalleryCard(id,picture,title,level,open){
+ return `<article class="panel"><button type="button" class="scene-gallery-card" data-scene-card="${H(id)}" onclick="${open}(this.dataset.sceneCard)">
+  <span class="scene-gallery-thumb">${picture}</span><b>${H(title)}</b><small>${H(level)}</small></button></article>`;
+}
+function sceneGalleryReturnButton(close,label=T('العودة إلى تصفّح الصور','Back to photos')){
+ return `<button type="button" class="secondary scene-gallery-return" onclick="${close}()">${label}</button>`;
+}
+function returnToSceneGallery(gallery,detail,id,fallback='input'){
+ stopSpeech();
+ clearIdeaFlash();
+ ideaFrameObserver?.disconnect();
+ if($('#idea-zoom')?.open)$('#idea-zoom').close();
+ $('#idea-zoom .idea-zoom-content')?.replaceChildren();
+ detail.hidden=true;
+ detail.replaceChildren();
+ gallery.hidden=false;
+ (gallery.querySelector(`[data-scene-card="${CSS.escape(id)}"]`)||gallery.querySelector(fallback))?.focus();
 }
 function setStudioMode(mode){
  if(mode===studioMode)return;
@@ -80,12 +101,6 @@ function studioMatches(){
 function setStudioLearningLevel(level){
  studioLearningLevel=level;
  studioPage=0;
- studioActiveId=null;
- studioOpenEpoch++;
- studioWordScene=null;
- stopSpeech();
- clearIdeaFlash();
- $('#scene-studio-active').replaceChildren();
  paintSceneStudio();
 }
 function paintSceneStudio(){
@@ -98,9 +113,8 @@ function paintSceneStudio(){
  $('#scene-studio-next').disabled=studioPage+1>=total;
  const topics=new Map(sceneArchive?.topics.map(t=>[t.id,t])||[]);
  $('#scene-studio-results').innerHTML=matches.slice(studioPage*24,studioPage*24+24).map(({item,row,scene,level})=>{
-  if(scene)return `<article class="panel">${ideaPicture(scene)}<button class="textlink" onclick="openStudioScene('${H(scene.id)}')">${H(T(scene.ar,scene.en))} ↗</button><small>${learningLevelLabel(level)}</small></article>`;
-  const {ar,en}=topics.get(item.topics[0]);
-  return `<article class="panel">${studioPicture(row,ar,en)}<button class="textlink" onclick="openStudioScene('${H(item.id)}')">${H(T(ar,en))} ↗</button><small>${learningLevelLabel(level)}</small></article>`;
+  const {ar,en}=scene||topics.get(item.topics[0]);
+  return sceneGalleryCard(item.id,scene?ideaPicture(scene):studioPicture(row,ar,en),T(ar,en),learningLevelLabel(level),'openStudioScene');
  }).join('');
  prepareSmartSelection();
 }
@@ -112,9 +126,21 @@ async function copySceneAiPrompt(button){
  try{await navigator.clipboard.writeText(box.value);status.textContent=T('نُسخ الطلب. الصقه في مساعدك المفضل.','Prompt copied. Paste it into your preferred assistant.')}
  catch{box.hidden=false;box.focus();box.select();status.textContent=T('حُدّد النص. انسخه يدويًا.','Text selected. Copy it manually.')}
 }
-function surpriseScene(){
+async function surpriseScene(){
+ const gallery=$('#scene-studio-gallery'),epoch=studioOpenEpoch;
+ if(!gallery||gallery.hidden)return;
+ await loadStudioVocabulary();
+ if(!gallery.isConnected||gallery.hidden||epoch!==studioOpenEpoch)return;
  const matches=studioMatches();
- if(matches.length)openStudioScene(matches[Math.floor(Math.random()*matches.length)].item.id);
+ const withWords=matches.map(entry=>({id:entry.item.id,words:entry.scene?.words||studioVocabulary?.[entry.item.id]?.words||[]}))
+  .filter(entry=>entry.words.length);
+ const labelled=withWords.filter(entry=>entry.words.some(hasIdeaPoint));
+ const candidates=labelled.length?labelled:withWords;
+ if(!candidates.length){
+  toast(T('لا توجد مشاهد بمفردات متاحة ضمن هذه الفلاتر.','No scenes with available vocabulary match these filters.'));
+  return;
+ }
+ return openStudioScene(candidates[Math.floor(Math.random()*candidates.length)].id);
 }
 function openStudioScene(id){return openSmartScene(id)}
 function playStudioSentence(id,voice){
@@ -134,7 +160,7 @@ function playStudioSentence(id,voice){
 labels['scene-studio']='مكتبة الصور الذكية';
 if(location.hash==='#scene-studio')page='scene-studio';
 const stopSpeechBeforeStudio=stopSpeech;
-stopSpeech=function(){studioAudio?.pause();stopSpeechBeforeStudio()};
+stopSpeech=function(options){studioAudio?.pause();stopSpeechBeforeStudio(options)};
 const renderBeforeSceneStudio=render;
 render=function(){
  studioAudio?.pause();

@@ -15,11 +15,12 @@ EP.pair=(ar,en)=>`<div class="learning-copy"><p class="en-content" lang="en" dir
 EP.set=function(key,value){if(key==='language'&&!['ar','en'].includes(value)||key==='englishUsage'&&!['us','uk'].includes(value))return;EP.prefs[key]=value;try{localStorage.setItem('patterns-preferences',JSON.stringify(EP.prefs))}catch{}EP.apply();if(typeof render==='function'){if(typeof coachPaintKey!=='undefined')coachPaintKey='';if(typeof referencePaint!=='undefined')referencePaint='';render();if(typeof referencePlayerOpen!=='undefined'&&referencePlayerOpen)paintReferencePlayer();if(document.querySelector('#lesson')?.open&&typeof renderLesson==='function')renderLesson()}};
 EP.apply=function(){const html=document.documentElement;html.lang=EP.prefs.language;html.dir=EP.prefs.language==='ar'?'rtl':'ltr';html.dataset.arabic=EP.prefs.arabic?'show':'hide';html.dataset.uiLanguage=EP.prefs.language;html.dataset.englishUsage=EP.prefs.englishUsage;html.dataset.instantVocabulary=EP.prefs.instantVocabulary?'on':'off'};EP.apply();
 EP.entry=s=>EP.teaching?.sentences?.[s?.id]||window.EPTeaching?.describe(s||{en:''});
-EP.words=function(s,attribute='',compare=Boolean(attribute)){
- const fixed=new Set(EP.entry(s)?.highlight||[]);
- return englishIndexedMarkup(s.en,s,text=>text.split(/\s+/).map((word,index)=>
-  `<span ${attribute?`${attribute}="${index}"`:''} class="${fixed.has(index)?'pattern-token':''}">${EP.escape(word)}</span>`).join(' '),
-  {timed:Boolean(attribute),compare});
+EP.words=function(s,attribute='',compare=Boolean(attribute),highlight=()=>EP.entry(s)?.highlight||[]){
+ return englishIndexedMarkup(s.en,s,text=>{
+  const fixed=new Set(highlight(text));
+  return text.split(/\s+/).map((word,index)=>
+   `<span ${attribute?`${attribute}="${index}"`:''} class="${fixed.has(index)?'pattern-token':''}">${EP.escape(word)}</span>`).join(' ');
+ },{timed:Boolean(attribute),compare});
 };
 EP.rule=function(s,{compact=false}={}){const e=EP.entry(s);if(!e)return '';return `<section class="rule-card ${compact?'compact-rule':''}" aria-label="${EP.t('قاعدة النمط','Pattern rule')}"><div class="rule-kicker">${EP.t('لاحظ البناء الثابت','NOTICE THE STRUCTURE')}</div><strong class="pattern-form" lang="en" dir="ltr">${EP.escape(e.form)}</strong>${EP.pair(e.rule_ar,e.rule_en)}${e.purpose_en?`<div class="purpose-note"><span>${EP.t('الغرض','Purpose')}</span> ${EP.escape(EP.t(e.purpose_ar,e.purpose_en))}</div>`:''}${!compact&&e.note_en?`<div class="essential-note"><b>${EP.t('فرق مهم','Remember')}</b>${EP.pair(e.note_ar,e.note_en)}</div>`:''}</section>`};
 EP.checkedData=new WeakSet();EP.dataTranslations=function(obj){if(!obj||typeof obj!=='object'||EP.checkedData.has(obj))return;EP.checkedData.add(obj);for(const [k,v]of Object.entries(obj)){if(typeof v==='string'&&k.endsWith('_ar')&&typeof obj[k.slice(0,-3)+'_en']==='string')EP.dictionary.set(v,obj[k.slice(0,-3)+'_en']);if(k==='ar'&&typeof v==='string'&&typeof obj.en==='string'){EP.dictionary.set(v,obj.en);EP.learningArabic.add(v)}if(v&&typeof v==='object')EP.dataTranslations(v)}};

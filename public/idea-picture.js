@@ -12,7 +12,9 @@ try{
 function ideaViewer(scene){
  const multiple=page==='scene-studio'?studioMatches().length>1:findIdeaScenes().length>1;
  return `<div id="idea-scene-viewer"><div class="idea-viewer-visual">
-  <div class="idea-picture-frame" style="--smart-ratio:${scene.width/scene.height}">${ideaPicture(scene)}<div id="idea-picture-labels"></div></div>
+  <div class="idea-picture-stage" style="--smart-ratio:${scene.width/scene.height}">
+   <div class="idea-picture-frame">${ideaPicture(scene)}<div id="idea-picture-labels"></div></div>
+  </div>
   <div id="idea-picture-caption" class="idea-picture-caption" aria-live="polite" aria-atomic="true"></div>
   <div class="idea-viewer-tools">
    <div class="idea-viewer-bar">
@@ -304,9 +306,9 @@ function startIdeaSequence(flash,sound,fromControl=false){
 }
 
 const stopSpeechBeforeIdeaWords=stopSpeech;
-stopSpeech=function(){
+stopSpeech=function(options){
  if(ideaVoice||ideaSequence?.sound)setIdeaWordMode('hidden',false);
- stopSpeechBeforeIdeaWords();
+ stopSpeechBeforeIdeaWords(options);
 };
 
 function positionIdeaLabels(){

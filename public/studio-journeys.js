@@ -3,17 +3,18 @@ let studioJourneyIndex=null;
 const studioJourneySelections=new Map();
 
 function studioJourneysPage(){
- return `<div class="toolbar studio-journey-filters">
+ return `<section class="scene-detail" id="studio-journey-active" hidden></section>
+  <section class="scene-gallery" id="studio-journey-gallery">
+  <div class="toolbar studio-journey-filters">
   <label>${T('ابحث عن محادثة أو مفردة من صورها','Find a conversation or a word from its photos')}
    <input type="search" id="studio-journey-query" value="${H(studioJourneyQuery)}" oninput="filterStudioJourneys(this.value,studioJourneyLevel)"></label>
   <label>${T('مستوى المحادثة','Conversation level')}<select id="studio-journey-level" onchange="filterStudioJourneys(studioJourneyQuery,this.value)">
    ${learningLevelOptions(studioJourneyLevel)}
   </select></label></div>
-  <section id="studio-journey-active"></section>
   <p id="studio-journey-count" role="status"></p>
   <div id="studio-journey-results" class="scene-studio-grid"></div>
   <div class="buttonrow"><button type="button" class="secondary" id="studio-journey-prev" onclick="studioJourneyPage--;paintStudioJourneys()">${T('السابق','Previous')}</button>
-   <button type="button" class="secondary" id="studio-journey-next" onclick="studioJourneyPage++;paintStudioJourneys()">${T('التالي','Next')}</button></div>`;
+   <button type="button" class="secondary" id="studio-journey-next" onclick="studioJourneyPage++;paintStudioJourneys()">${T('التالي','Next')}</button></div></section>`;
 }
 function studioJourneyRows(){
  const dialogues=PILOT?.dialogues;
@@ -36,11 +37,6 @@ function studioJourneyRows(){
  return rows;
 }
 function filterStudioJourneys(query,level){
- if(level!==studioJourneyLevel){
-  studioJourneyId='';
-  stopSpeech();
-  $('#studio-journey-active').replaceChildren();
- }
  studioJourneyQuery=query;studioJourneyLevel=level;studioJourneyPage=0;
  paintStudioJourneys();
 }
@@ -58,9 +54,9 @@ function paintStudioJourneys(){
  $('#studio-journey-prev').disabled=studioJourneyPage===0;
  $('#studio-journey-next').disabled=studioJourneyPage+1>=pages;
  host.innerHTML=matches.slice(studioJourneyPage*size,(studioJourneyPage+1)*size).map(({dialogue,stages,level})=>
-  `<article class="panel studio-journey-card">${studioJourneyPhoto(stages[0].scene,1)}
-   <button type="button" class="textlink" onclick="selectStudioJourney('${H(dialogue.id)}')">${H(T(dialogue.ar,dialogue.en))} ↗</button>
-   <small>${learningLevelLabel(level)} · ${T(`${stages.length} لقطات`,`${stages.length} photos`)}</small></article>`).join('');
+  sceneGalleryCard(dialogue.id,studioJourneyPhoto(stages[0].scene,1),T(dialogue.ar,dialogue.en),
+   learningLevelLabel(level)+' · '+T(`${stages.length} لقطات`,`${stages.length} photos`),'selectStudioJourney')
+ ).join('');
  const selected=index.find(row=>row.dialogue.id===studioJourneyId);
  if(selected&&!$('#studio-journey-active').firstElementChild)paintStudioJourney(selected);
 }
@@ -70,12 +66,16 @@ function selectStudioJourney(id){
  stopSpeech();
  studioJourneyId=id;
  paintStudioJourney(selected);
- focusStudioJourney();
+ const host=$('#studio-journey-active');
+ host.querySelector('h2').focus({preventScroll:true});
+ host.scrollIntoView({block:'start'});
 }
-function focusStudioJourney(){
- const heading=$('#studio-journey-title');
- heading?.focus({preventScroll:true});
- heading?.scrollIntoView({block:'start'});
+function backToStudioJourneys(){
+ const host=$('#studio-journey-active');
+ delete host.dataset.dialogue;
+ returnToSceneGallery($('#studio-journey-gallery'),host,studioJourneyId);
+ studioJourneyId='';
+ studioWordScene=null;
 }
 function studioJourneySelection(id){
  if(!studioJourneySelections.has(id))studioJourneySelections.set(id,new Set());
@@ -118,7 +118,9 @@ function paintStudioJourney(row){
  if(!host)return;
  const {dialogue,life,stages}=row,selection=studioJourneySelection(dialogue.id);
  host.dataset.dialogue=dialogue.id;
- host.innerHTML=`<article class="panel studio-journey-workspace">
+ $('#studio-journey-gallery').hidden=true;
+ host.hidden=false;
+ host.innerHTML=sceneGalleryReturnButton('backToStudioJourneys',T('العودة إلى مشاهد المحادثات','Back to conversation scenes'))+`<article class="panel studio-journey-workspace">
   <h2 id="studio-journey-title" tabindex="-1">${H(T(dialogue.ar,dialogue.en))}</h2>
   <p>${T('تأمّل الصور بالترتيب. ماذا تغيّر من لقطة إلى أخرى؟ حاول تخيّل ما قاله الشخصان قبل كشف الحوار.',
    'Look at the photos in order. What changes from one to the next? Imagine what the speakers said before revealing the dialogue.')}</p>

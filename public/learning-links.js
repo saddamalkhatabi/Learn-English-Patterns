@@ -14,8 +14,7 @@ function openLinkedLearning(type,id='',options={}){
  const target=linkedLearningTypes[type];
  if(!target)return;
  const trigger=document.activeElement;
- stopSpeech();
- referencePlayer?.pause();
+ stopSpeech({keepReferencePlayer:true});
  clearIdeaFlash();
  stopExpansionAudio();
  const dialog=document.createElement('dialog');
@@ -122,6 +121,8 @@ if(linkedType&&window.frameElement){
    studioNextLesson=Number(linkedParams.get('next'))||null;
    if(PILOT?.patterns.some(pattern=>pattern.id===studioPattern)){
     renderLinkedContent();
+    const first=studioMatches()[0];
+    if(first)await openSmartScene(first.item.id,false);
     return;
    }
   }else if(linkedType==='lesson'){

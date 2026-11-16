@@ -82,9 +82,9 @@ function releaseDialoguePlayer(){
  dialogueQueue=null;
 }
 const stopSpeechBeforeDialogues=stopSpeech;
-stopSpeech=function(){
+stopSpeech=function(options){
  pauseDialogueAudio();
- stopSpeechBeforeDialogues();
+ stopSpeechBeforeDialogues(options);
 };
 function dialogueWords(line){
  const highlighted=new Set(line.focus??line.patterns.flatMap(id=>{
