@@ -84,6 +84,10 @@ html[data-pattern-image="hidden"] .dialogue-thumb,html[data-pattern-image="hidde
 .idea-map-leaders{position:absolute;inset:0;width:100%;height:100%;overflow:visible;stroke:#fff;stroke-width:1.5;fill:#216a55;filter:drop-shadow(0 1px 1px #193d30)}
 .idea-map-point.selected .idea-pin{background:#8e401f}
 .idea-map-point.selected .idea-map-label{outline:2px solid #a85627}
+.idea-map-point.studio-speaking .idea-pin{outline:3px solid #ffd276}
+.idea-vocab li.studio-speaking{background:#ffe5b3}
+.studio-original [data-studio-word].speaking{background:#ffe5b3;border-radius:4px}
+.studio-scene-cue{position:absolute;z-index:3;inset:auto 8% 5%;width:max-content;max-width:84%;margin-inline:auto;padding:.2rem .6rem;border-radius:6px;background:#162b22;color:#fff;font-weight:700;text-align:center;overflow-wrap:anywhere;pointer-events:none}
 .idea-map-featured{position:absolute;z-index:2;inset:auto 10% 8%;width:fit-content;max-width:80%;margin-inline:auto;padding:.3rem .55rem;border:2px solid #a85627;border-radius:6px;background:#fffdf1;color:#193d30;font-size:.85rem;font-weight:700;text-align:center;overflow-wrap:anywhere}
 .idea-picture-caption{min-height:2.4rem;display:flex;align-items:center;justify-content:center;gap:.55rem;padding:.2rem .4rem;color:#193d30;font-weight:700}
 .idea-caption-kind{padding:.18rem .45rem;border-radius:20px;background:#e5eee2;color:#375846;font-size:.75rem}

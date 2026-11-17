@@ -1,8 +1,6 @@
 let ideaWordMode='hidden',ideaLabelLanguage='en';
 let ideaSoloVoice='male';
 let ideaFlashTimer,ideaRevealTimer,ideaSelected=null,ideaSequence=null,ideaVoice=null,ideaFlashVoice=false;
-const ideaIntroducedScenes=new Set();
-let ideaAutoFlash=true;
 let ideaFrameObserver;
 try{
  const language=localStorage.getItem('nasaq-idea-label-language');
@@ -10,17 +8,18 @@ try{
 }catch{}
 
 function ideaViewer(scene){
- const multiple=page==='scene-studio'?studioMatches().length>1:findIdeaScenes().length>1;
+ const multiple=studioMatches().length>1;
  return `<div id="idea-scene-viewer"><div class="idea-viewer-visual">
   <div class="idea-picture-stage" style="--smart-ratio:${scene.width/scene.height}">
-   <div class="idea-picture-frame">${ideaPicture(scene)}<div id="idea-picture-labels"></div></div>
+   <div class="idea-picture-frame">${ideaPicture(scene)}<div id="idea-picture-labels"></div>
+    ${scene.sentenceId?'<span class="studio-scene-cue" lang="en" dir="ltr" aria-hidden="true" hidden></span>':''}</div>
   </div>
   <div id="idea-picture-caption" class="idea-picture-caption" aria-live="polite" aria-atomic="true"></div>
   <div class="idea-viewer-tools">
    <div class="idea-viewer-bar">
-    <button class="secondary" data-idea-scene-step ${multiple?'':'disabled'} onclick="page==='scene-studio'?stepStudioScene(-1):stepIdeaScene(-1)" aria-label="${T('المشهد السابق','Previous scene')}">‹</button>
+    <button class="secondary" data-idea-scene-step ${multiple?'':'disabled'} onclick="stepStudioScene(-1)" aria-label="${T('المشهد السابق','Previous scene')}">‹</button>
     <button type="button" id="idea-zoom-button" class="secondary" onclick="toggleIdeaZoom()">⛶ ${T('تكبير','Enlarge')}</button>
-    <button class="secondary" data-idea-scene-step ${multiple?'':'disabled'} onclick="page==='scene-studio'?stepStudioScene(1):stepIdeaScene(1)" aria-label="${T('المشهد التالي','Next scene')}">›</button>
+    <button class="secondary" data-idea-scene-step ${multiple?'':'disabled'} onclick="stepStudioScene(1)" aria-label="${T('المشهد التالي','Next scene')}">›</button>
    </div>
    <details class="idea-disclosure idea-picture-options"><summary>${T('خيارات الكلمات على الصورة','Picture word options')}</summary>
    <div class="idea-viewer-options">
@@ -47,7 +46,7 @@ function ideaAudioControls(){
  return `<div class="idea-audio-tools">
   <button type="button" class="secondary" onclick="startIdeaSequence(ideaFlashVoice,true,true)">▷ ${T('انطق كل الكلمات','Play all words')}</button>
   <button type="button" class="secondary" data-idea-sync aria-pressed="${ideaFlashVoice}" onclick="toggleIdeaFlashVoice()">${T('مزامنة الوميض مع النطق','Sync flashes with audio')}</button>
-  <button type="button" class="secondary" data-idea-stop onclick="setIdeaWordMode('hidden',false)" hidden>${T('إيقاف','Stop')}</button>
+  <button type="button" class="secondary" data-idea-stop onclick="setIdeaWordMode('hidden')" hidden>${T('إيقاف','Stop')}</button>
   <small data-idea-audio-status role="status"></small></div>`;
 }
 
@@ -67,8 +66,7 @@ function updateIdeaPlayback(status=''){
  document.querySelectorAll('[data-idea-vocab]').forEach(row=>row.classList.toggle('active',+row.dataset.ideaVocab===ideaSelected));
 }
 
-function setIdeaWordMode(mode,user=true){
- if(mode==='hidden'&&user)ideaAutoFlash=false;
+function setIdeaWordMode(mode){
  clearIdeaFlash();
  ideaWordMode=mode;
  if(mode==='flash'){startIdeaSequence(true,ideaFlashVoice);return}
@@ -91,7 +89,7 @@ function toggleIdeaFlashVoice(){
 function setIdeaLabelLanguage(language){
  ideaLabelLanguage=language;
  try{localStorage.setItem('nasaq-idea-label-language',language)}catch{}
- setIdeaWordMode(language==='alternate'||ideaWordMode==='flash'?'flash':ideaWordMode,false);
+ setIdeaWordMode(language==='alternate'||ideaWordMode==='flash'?'flash':ideaWordMode);
 }
 
 function mountIdeaViewer(scene){
@@ -254,7 +252,7 @@ function startIdeaSequence(flash,sound,fromControl=false){
  if(sound)stopSpeech();
  clearIdeaFlash();
  const words=visibleIdeaWords(scene);
- if(!words.length){setIdeaWordMode('hidden',false);updateIdeaPlayback(T('لا توجد مفردات ضمن هذا الفلتر.','No vocabulary matches this filter.'));return}
+ if(!words.length){setIdeaWordMode('hidden');updateIdeaPlayback(T('لا توجد مفردات ضمن هذا الفلتر.','No vocabulary matches this filter.'));return}
  const sequence={flash,sound};
  ideaSequence=sequence;
  if(flash)ideaWordMode='flash';
@@ -264,7 +262,7 @@ function startIdeaSequence(flash,sound,fromControl=false){
   if(ideaSequence!==sequence||scene.id!==currentIdeaScene()?.id)return;
   if(index===words.length){
    if(sound)recordDailyPractice('words',scene.id);
-   if(flash)setIdeaWordMode('hidden',false);
+   if(flash)setIdeaWordMode('hidden');
    else{clearIdeaFlash();paintIdeaLabels(scene);updateIdeaPlayback()}
    return;
   }
@@ -273,7 +271,7 @@ function startIdeaSequence(flash,sound,fromControl=false){
   ideaSelected=word.index;
   const paint=label=>{
    if(sound){paintStudyWord(scene,word,'en',flash);return}
-   if(flash)paintIdeaPoints(hasIdeaPoint(word)?[word]:[],label);
+   if(flash)paintIdeaPoints(hasIdeaPoint(word)?[word]:[],label,label,word);
    updateIdeaCaption(word,label==='ar'?'both':'ar');
   };
   paint(language);
@@ -293,7 +291,7 @@ function startIdeaSequence(flash,sound,fromControl=false){
    const ok=await playback.done;
    if(ideaSequence!==sequence)return;
    ideaVoice=null;
-   if(!ok){setIdeaWordMode('hidden',false);updateIdeaPlayback(T('تعذّر النطق. شغّل الكلمات مرة أخرى.','Playback failed. Start the word list again.'));return}
+   if(!ok){setIdeaWordMode('hidden');updateIdeaPlayback(T('تعذّر النطق. شغّل الكلمات مرة أخرى.','Playback failed. Start the word list again.'));return}
   }
   const wait=sound?650:1550;
   ideaFlashTimer=setTimeout(()=>{
@@ -307,7 +305,7 @@ function startIdeaSequence(flash,sound,fromControl=false){
 
 const stopSpeechBeforeIdeaWords=stopSpeech;
 stopSpeech=function(options){
- if(ideaVoice||ideaSequence?.sound)setIdeaWordMode('hidden',false);
+ if(ideaVoice||ideaSequence?.sound)setIdeaWordMode('hidden');
  stopSpeechBeforeIdeaWords(options);
 };
 

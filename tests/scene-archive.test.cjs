@@ -66,6 +66,29 @@ test('scene archive covers every displayable binding with bilingual search topic
  assert(bilingual.keywords.includes('notebook')&&bilingual.keywords.includes('دفتر'));
  assert.match(bilingual.descriptionAr,/دفتر/);
 });
+test('every photo of a sentence has bilingual pins and matching timing for both voices',()=>{
+ const {sentences}=require('../public/scene-vocabulary.json');
+ const reviewed=require('../production/scene-word-maps.json');
+ const detected=require('../production/scene-detected-words.json').scenes;
+ const images=new Map(rows.map(row=>[row.id,row]));
+ assert.deepEqual([...Object.keys(reviewed),...Object.keys(detected)].sort(),archive.scenes.map(scene=>scene.id).sort());
+ for(const {id} of archive.scenes){
+  const expected=reviewed[id]||detected[id];
+  const {words,reviewed:manual}=sentences[id];
+  const pins=words.filter(word=>word.x!==undefined||word.y!==undefined);
+  assert(expected.length>0,id);
+  assert.equal(manual,Boolean(reviewed[id]),id);
+  assert.deepEqual(pins,expected,id);
+  for(const word of pins){
+   assert(word.en&&word.ar&&[word.x,word.y].every(point=>Number.isFinite(point)&&point>=0&&point<=100),id);
+  }
+  const row=images.get(id);
+  for(const voice of ['male','female']){
+   const recording=row.recordings[voice];
+   assert.equal(recording.words.length,(recording.text||row.en).trim().split(/\s+/).length,id);
+  }
+ }
+});
 test('comparison panels cover all course patterns and have recorded samples with scenes',()=>{
  const patterns=new Set([...require('../public/pilot.json').patterns,...require('../public/expansion-media.json').patterns].map(p=>p.id));
  const comparisons=require('../public/comparisons.json');

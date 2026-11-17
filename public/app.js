@@ -1,7 +1,7 @@
 const $=s=>document.querySelector(s), esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let saved;try{saved=JSON.parse(localStorage.getItem('nasaq-v1'))}catch{}let state=saved||{done:{},seen:[],last:1,stage:0,voice:0,rate:.85,minutes:0};let page='home',sources=[],sourcePage=0,sourceQuery='',current=patterns[0],stage=0,example=0,built=[],passed=false,auto=false,recordStream,recorder,recordURL,timer,reviewIndex=0,reviewRevealed=false;
 const labels={home:'رحلتك اليوم',path:'مسار التعلّم',library:'مكتبة الأنماط',lab:'مختبر الأفكار',stories:'قصص ومواقف',review:'مراجعتك الذكية',progress:'تقدّمك',settings:'إعدادات التعلّم',quality:'مرصد المحتوى',about:'عن English Patterns',coach:'المعلّم الآلي',catalog:'كتالوج المشاهد'};
-const navs=[['home','⌂'],['coach','▷'],['catalog','▦'],['path','⌁'],['library','▤'],['lab','✧'],['stories','▧'],['review','◷'],['progress','◴'],['settings','⚙']];
+const navs=[['home','⌂'],['coach','▷'],['catalog','▦'],['path','⌁'],['library','▤'],['stories','▧'],['review','◷'],['progress','◴'],['settings','⚙']];
 function persist(){
  try{
   if(document.body.dataset.linkedLearning){
@@ -21,11 +21,16 @@ window.addEventListener('storage',event=>{
  }catch{}
 });
 function toast(t){$('#toast').textContent=t;$('#toast').style.display='block';clearTimeout(timer);timer=setTimeout(()=>$('#toast').style.display='none',4000)}
-function navigate(p){location.hash=p;if(page===p)render()}
+function navigate(p){if(p==='lab')p='scene-studio';location.hash=p;if(page===p)render()}
 function ideaPracticeButton(id){
  return `<button class="secondary idea-practice-link" onclick="openLinkedLearning('pattern-photos',${Number(id)})">✦ ${T('مارس النمط بالصور','Practise with original scenes')}</button>`;
 }
-window.addEventListener('hashchange',()=>{page=location.hash.slice(1)||'home';if(!labels[page])page='home';render();window.scrollTo(0,0)});
+function pageFromHash(){
+ if(location.hash==='#lab')history.replaceState(history.state,'','#scene-studio');
+ const key=location.hash.slice(1);
+ return labels[key]?key:'home';
+}
+window.addEventListener('hashchange',()=>{page=pageFromHash();render();window.scrollTo(0,0)});
 function head(title,desc,kicker='LEARN WITH PURPOSE'){return `<div class="pagehead"><div><span class="eyebrow">${kicker}</span><h1>${title}</h1><p>${desc}</p></div><span class="date">خطوة اليوم تصنع فرق الغد ✧</span></div>`}
 function nav(){ $('#nav').innerHTML=navs.map(([k,i])=>`<a href="#${k}" class="${page===k?'active':''}"><span class="ico">${i}</span>${labels[k]}${k==='review'?`<span class="badge">${due().length}</span>`:''}</a>`).join('');$('#crumb').innerHTML=`مساحتك للتعلّم <span>/</span> ${labels[page]}`}
 const art=`<svg viewBox="0 0 480 310" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="رسم لمقهى هادئ يطل على المدينة" role="img"><circle cx="244" cy="151" r="119" fill="#dce6ce"/><path d="M87 257h316" stroke="#bdcaaa"/><rect x="170" y="44" width="173" height="162" rx="75" fill="#f9f8ed"/><path d="M178 124a78 78 0 0 1 157 0v74H178z" fill="#b4c9bd"/><path d="M255 45v153M178 130h157" stroke="#f9f8ed" stroke-width="9"/><path d="M190 194v-33h23v-32h23v65m36 0v-47h24v-25h24v72" fill="#8fae9d"/><path d="M309 257v-57m-5 37c-30-4-37-23-28-32 20-1 31 17 28 32m8-12c0-26 15-41 27-34 6 18-7 31-27 34" fill="#849b65"/><path d="M294 240h36l-5 25h-26z" fill="#b5a488"/><rect x="145" y="216" width="147" height="12" rx="6" fill="#a8916c"/><path d="M163 227l-9 45m121-45 8 45" stroke="#a8916c" stroke-width="8"/><path d="M202 214v-22h26v22z" fill="#fcfbef"/><path d="M228 194h5c13 0 13 14-5 14" stroke="#fcfbef" stroke-width="4"/><path d="M213 180c-8-8 7-12-1-22" stroke="#a8baa0" stroke-linecap="round" stroke-width="2"/><path d="M115 244h18v-61h-44v41c0 12 11 20 26 20z" fill="#637c63"/><path d="M99 243l-5 30m32-30 7 30" stroke="#637c63" stroke-width="5"/><path d="M359 245h-18v-62h44v42c0 12-11 20-26 20z" fill="#637c63"/><path d="M373 244l5 29m-32-29-6 29" stroke="#637c63" stroke-width="5"/><circle cx="108" cy="89" r="19" fill="#eedfba"/><path d="M102 88l4 5 9-12" stroke="#9a9875" stroke-width="2"/><path d="M369 82l5-10m7 17 11-2m-29-15-3-9" stroke="#a8bb8c" stroke-width="2"/><rect x="57" y="131" width="93" height="37" rx="9" fill="#fffdf4" transform="rotate(-9 57 131)"/><text x="71" y="150" transform="rotate(-9 71 150)" font-size="12" fill="#657e64" font-family="Georgia">A little, every day.</text></svg>`;
@@ -82,5 +87,5 @@ function toggleAuto(){auto=!auto;if(auto){$('#auto-btn').textContent='■ إيق
 async function toggleRecord(){if(recorder?.state==='recording'){recorder.stop();recordStream?.getTracks().forEach(t=>t.stop());return}if(!navigator.mediaDevices?.getUserMedia||!window.MediaRecorder){toast('التسجيل غير متاح على هذا المتصفح.');return}try{recordStream=await navigator.mediaDevices.getUserMedia({audio:true});let chunks=[];recorder=new MediaRecorder(recordStream);recorder.ondataavailable=e=>chunks.push(e.data);recorder.onstop=()=>{recordStream.getTracks().forEach(t=>t.stop());if(recordURL)URL.revokeObjectURL(recordURL);recordURL=URL.createObjectURL(new Blob(chunks,{type:recorder.mimeType}));if($('#record-playback'))$('#record-playback').innerHTML=`<audio controls src="${recordURL}" style="width:100%;margin-top:15px"></audio>`;if($('#record-btn')){$('#record-btn').textContent='● سجّل مجددًا';$('#record-btn').classList.remove('recording')}};recorder.start();$('#record-btn').textContent='■ إيقاف التسجيل';$('#record-btn').classList.add('recording')}catch{toast('لم يتوفر إذن الميكروفون. يمكنك متابعة التدريب كتابة.')}}
 fetch('source.json').then(r=>r.json()).then(d=>{sources=d;if(page==='library')renderSources()}).catch(()=>toast('تعذر تحميل الأرشيف. أعد المحاولة بعد الاتصال.'));
 if('speechSynthesis'in window)speechSynthesis.addEventListener('voiceschanged',populateVoices);
-page=location.hash.slice(1)||'home';if(!labels[page])page='home';render();
+page=pageFromHash();render();
 // Service worker registration and update preservation are managed by offline.js.

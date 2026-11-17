@@ -45,10 +45,3 @@ function orderedPatternRows(rows){
  const byId=new Map(rows.map(row=>[row.id,row]));
  return orderLearningPatterns(byId.keys()).map(id=>byId.get(id));
 }
-function orderLearningScenes(scenes){
- const levels=Object.keys(learningLevelNames);
- const first=new Map(learningLevels.starterScenes.map((id,index)=>[id,index]));
- const dialogues=new Map(learningLevels.dialogueOrder.map((id,index)=>[id,index]));
- const score=scene=>first.get(scene.id)??dialogues.get(dialogueSceneLocations.get(scene.id)?.id)??Infinity;
- return scenes.sort((a,b)=>levels.indexOf(sceneLearningLevel(a))-levels.indexOf(sceneLearningLevel(b))||score(a)-score(b));
-}

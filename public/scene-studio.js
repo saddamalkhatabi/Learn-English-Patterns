@@ -1,5 +1,5 @@
 /* Archive labels are derived from the original brief, sentence and course tags. */
-let sceneArchive, studioPage=0, studioAudio=null, studioMode='photos', studioLearningLevel='';
+let sceneArchive, studioPage=0, studioAudio=null, studioMode='photos', studioLearningLevel='',studioCollection='';
 const archiveReady=Promise.all([fetch('scene-archive.json').then(r=>r.ok?r.json():null).catch(()=>null),courseScriptsReady,learningLevelsReady]).then(([data])=>data);
 const normalizeSceneQuery=value=>String(value).normalize('NFKD').toLowerCase()
  .replace(/[\u064b-\u065f\u0670\u0640]/g,'').replace(/[أإآ]/g,'ا');
@@ -29,10 +29,13 @@ function sceneStudioPage(){
   `<section class="scene-detail" id="scene-studio-active" hidden></section>
   <dialog id="idea-zoom" aria-labelledby="idea-zoom-title" onclose="restoreIdeaZoom()"><div class="idea-zoom-header"><h2 id="idea-zoom-title"></h2><form method="dialog"><button class="secondary" aria-label="${T('إغلاق عرض المشهد','Close scene view')}">×</button></form></div><div class="idea-zoom-content"></div></dialog>
   <section class="scene-gallery" id="scene-studio-gallery">
-  ${epSectionLinks(['references','lab'])}
+  ${epSectionLinks(['references'])}
   <div class="toolbar"><input type="search" id="scene-studio-query" oninput="studioPage=0;paintSceneStudio()" placeholder="${T('مسبح، مكتبة، train…','Pool, library, قطار…')}" aria-label="${T('بحث المشاهد','Search scenes')}">
   <select id="scene-studio-topic" onchange="studioPage=0;paintSceneStudio()" aria-label="${T('موضوع المشهد','Scene topic')}"><option value="">${T('كل الموضوعات','All topics')}</option><option value="conversation">${T('مشاهد المحادثات','Conversation scenes')}</option>${[...topics.values()].map(t=>`<option value="${t.id}">${H(T(t.ar,t.en))}</option>`).join('')}</select>
   <label>${T('مستوى التعلّم','Learning level')}<select onchange="setStudioLearningLevel(this.value)">${learningLevelOptions(studioLearningLevel)}</select></label>
+  <label>${T('المجموعة','Collection')}<select onchange="studioCollection=this.value;studioPage=0;paintSceneStudio()">
+   ${[['','كل الصور','All photos'],['speaking','مشاهد ممارسة التحدث','Speaking practice scenes'],['saved','صور لها حوارات محفوظة','Photos with saved dialogues']].map(([id,ar,en])=>
+    `<option value="${id}" ${studioCollection===id?'selected':''}>${T(ar,en)}</option>`).join('')}</select></label>
   ${smartLibraryFilters()}<button type="button" class="secondary" id="scene-studio-suggest" onclick="surpriseScene()">${T('اقترح مشهدًا','Suggest a scene')}</button></div>
   <section id="studio-pattern-context"></section>
   <p id="scene-studio-count" role="status"></p>
@@ -68,22 +71,28 @@ function setStudioMode(mode){
 function studioMatches(){
  const tokens=normalizeSceneQuery($('#scene-studio-query')?.value||'').trim().split(/\s+/).filter(Boolean);
  const topic=$('#scene-studio-topic')?.value, topics=new Map(sceneArchive?.topics.map(t=>[t.id,t])||[]);
- const sentences=new Map([...(PILOT?.sentences||[]),...(REFERENCE_CORPUS?.sentences||[])].map(s=>[s.id,s]));
+ const sentences=new Map([...(PILOT?.sentences||[]),...(REFERENCE_CORPUS?.sentences||[]),...(SUPPLEMENT?.sentences||[])].map(s=>[s.id,s]));
  const dialogues=new Map((PILOT?.dialogues||[]).map(dialogue=>[dialogue.id,dialogue]));
- const originals=(sceneArchive?.scenes||[]).flatMap(item=>{
+ const saved=new Set(studioCollection==='saved'?ideaArchive.map(entry=>scenePhotoKey(entry.sceneId)):[]);
+ const inCollection=id=>studioCollection!=='saved'||saved.has(id);
+ const originals=(studioCollection==='speaking'?[]:sceneArchive?.scenes||[]).flatMap(item=>{
   const row=sentences.get(item.id);
-  if(!row||!matchesStudioContext(row)||topic&&!item.topics.includes(topic))return [];
+  if(!row||!inCollection(item.id)||!matchesStudioContext(row)||topic&&!item.topics.includes(topic))return [];
+  if(!tokens.length)return [{item,row,level:sentenceLearningLevel(row)}];
   const labels=item.topics.flatMap(id=>[topics.get(id).ar,topics.get(id).en]);
-  const text=normalizeSceneQuery([row.id,row.en,row.ar,item.description,item.descriptionAr,...item.keywords,...labels].join(' '));
+  const words=studioVocabulary?.[item.id]?.words.filter(hasIdeaPoint).flatMap(word=>[word.en,word.ar])||[];
+  const text=normalizeSceneQuery([row.id,row.en,row.ar,item.description,item.descriptionAr,...item.keywords,...labels,...words].join(' '));
   return tokens.every(word=>text.includes(word))?[{item,row,level:sentenceLearningLevel(row)}]:[];
  });
  const visualPractice=(ideaLibrary?.scenes||[]).flatMap(scene=>{
   const location=dialogueSceneLocations.get(scene.id);
-  if(topic&&(topic==='conversation'?!location:location||scene.topic!==topic))return [];
+  if(!inCollection(scene.id)||topic&&(topic==='conversation'?!location:scene.topic!==topic))return [];
   const dialogue=dialogues.get(location?.id);
   const row={id:scene.id,pattern_ids:scene.patterns.map(pattern=>pattern.id)};
   if(!matchesStudioContext(row))return [];
-  const text=normalizeSceneQuery([scene.en,scene.ar,scene.sentenceEn,scene.sentenceAr,dialogue?.en,dialogue?.ar,
+  if(!tokens.length)return [{item:scene,row,scene,level:sceneLearningLevel(scene)}];
+  const text=normalizeSceneQuery([scene.id,scene.en,scene.ar,scene.sentenceEn,scene.sentenceAr,scene.taskEn,scene.taskAr,
+   ...scene.patterns.flatMap(pattern=>[pattern.en,pattern.ar]),dialogue?.en,dialogue?.ar,
    ...scene.words.flatMap(word=>[word.en,word.ar])].join(' '));
   return tokens.every(word=>text.includes(word))?[{item:scene,row,scene,level:sceneLearningLevel(scene)}]:[];
  });
@@ -102,6 +111,9 @@ function setStudioLearningLevel(level){
  studioLearningLevel=level;
  studioPage=0;
  paintSceneStudio();
+}
+function refreshSavedPhotoResults(){
+ if(page==='scene-studio'&&studioMode==='photos'&&studioCollection==='saved')paintSceneStudio();
 }
 function paintSceneStudio(){
  if(studioMode==='journeys'){paintStudioJourneys();return}
@@ -144,29 +156,65 @@ async function surpriseScene(){
 }
 function openStudioScene(id){return openSmartScene(id)}
 function playStudioSentence(id,voice){
- const row=PILOT?.sentences.find(s=>s.id===id)||REFERENCE_CORPUS?.sentences.find(s=>s.id===id);
- const recording=row?.recordings[voice];
- if(!recording?.path)return;
- stopSpeech();studioAudio?.pause();
- studioAudio=new Audio(recording.path);
- const words=$('#scene-studio-active').querySelectorAll('[data-studio-word]');
- const audio=studioAudio;
- audio.addEventListener('timeupdate',()=>{
-  const cue=recording.words?.findIndex(w=>w.start_ms<=audio.currentTime*1000&&audio.currentTime*1000<w.end_ms);
-  words.forEach((word,i)=>word.classList.toggle('speaking',i===cue));
+ const scene=studioWordScene,row=dialogueScene(id);
+ const recording=row?.recordings?.[voice];
+ if(scene?.sentenceId!==id||!recording?.path)return;
+ stopSpeech();
+ if(ideaSequence||ideaSelected!==null)setIdeaWordMode(ideaWordMode==='flash'?'visible':ideaWordMode);
+ const audio=new Audio(recording.path),host=$('#scene-studio-active');
+ studioAudio=audio;
+ audio.playbackRate=state.rate||1;
+ const words=host.querySelectorAll('[data-studio-word]');
+ const overlay=$('#idea-scene-viewer .studio-scene-cue');
+ const cues=recording.words||[];
+ const transcript=(recording.text||row.en).trim().split(/\s+/);
+ const spokenWords=cues.map((cue,index)=>cue.text||transcript[index]||'');
+ const wordsInCue=text=>EPVocabulary.tokens(text).map(EPVocabulary.normalize);
+ const cueTerms=spokenWords.flatMap((text,cueIndex)=>wordsInCue(text).map(term=>({term,cueIndex})));
+ const vocabulary=cues.map(()=>new Set());
+ scene?.words.forEach((word,index)=>{
+  const parts=wordsInCue(word.en);
+  if(!parts.length)return;
+  cueTerms.forEach((_,start)=>{
+   if(parts.every((part,offset)=>cueTerms[start+offset]?.term===part))
+    parts.forEach((_,offset)=>vocabulary[cueTerms[start+offset].cueIndex].add(index));
+  });
  });
- studioAudio.play().catch(()=>toast(T('تعذّر تشغيل الصوت.','Audio could not play.')));
+ let frame=0,last=-1;
+ const paint=index=>{
+  if(index===last)return;
+  last=index;
+  const spoken=spokenWords[index]||'';
+  if(overlay){overlay.textContent=spoken;overlay.hidden=!spoken}
+  words.forEach((word,i)=>word.classList.toggle('speaking',i===index));
+  host.querySelectorAll('[data-idea-vocab]').forEach(item=>item.classList.toggle('studio-speaking',Boolean(vocabulary[index]?.has(+item.dataset.ideaVocab))));
+  overlay?.parentElement.querySelectorAll('.idea-map-point').forEach(point=>point.classList.toggle('studio-speaking',Boolean(vocabulary[index]?.has(+point.dataset.word))));
+ };
+ const tick=()=>{
+  if(audio.paused||audio.ended||studioAudio!==audio){paint(-1);return}
+  const ms=audio.currentTime*1000;
+  paint(cues.findIndex(cue=>cue.start_ms<=ms&&ms<cue.end_ms));
+  frame=requestAnimationFrame(tick);
+ };
+ const clear=()=>{cancelAnimationFrame(frame);paint(-1)};
+ audio.addEventListener('playing',()=>{cancelAnimationFrame(frame);tick()});
+ for(const event of ['pause','ended','waiting','error'])audio.addEventListener(event,clear);
+ audio.play().catch(()=>toast(T('تعذّر تشغيل الصوت.','Audio could not play.')));
 }
 labels['scene-studio']='مكتبة الصور الذكية';
-if(location.hash==='#scene-studio')page='scene-studio';
+if(location.hash==='#scene-studio')page=pageFromHash();
 const stopSpeechBeforeStudio=stopSpeech;
 stopSpeech=function(options){studioAudio?.pause();stopSpeechBeforeStudio(options)};
 const renderBeforeSceneStudio=render;
 render=function(){
  studioAudio?.pause();
+ if(typeof clearIdeaFlash==='function'){clearIdeaFlash();ideaFrameObserver?.disconnect()}
  if(page!=='scene-studio'){renderBeforeSceneStudio();return}
  releaseDialoguePlayer();stopSpeech();nav();
  $('#app').innerHTML=sceneStudioPage();paintSceneStudio();EP.decorate();
+ if(studioMode==='photos'&&!studioVocabulary)loadStudioVocabulary().then(()=>{
+  if(page==='scene-studio'&&$('#scene-studio-query')?.value)paintSceneStudio();
+ });
 };
 archiveReady.then(data=>{sceneArchive=data;if(page==='scene-studio')render()});
 pilotReady.then(()=>{if(page==='scene-studio')paintSceneStudio()});

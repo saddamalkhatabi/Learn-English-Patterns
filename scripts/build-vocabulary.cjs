@@ -13,6 +13,7 @@ const referenceStudy=makeReferenceStudy(referenceRows,[read('pilot'),read('expan
 const studyWords=new Map();
 const regionalAudio=read('english-usage-audio');
 const imageWords=require('../production/scene-word-maps.json');
+const detectedWords=require('../production/scene-detected-words.json').scenes;
 const glossary=new Map(fs.readFileSync('production/vocabulary-glosses.tsv','utf8').trim().split(/\r?\n/).map(line=>{
  const [word,ar]=line.split('|');assert(word&&ar,line);return [normalize(word),ar];
 }));
@@ -21,6 +22,7 @@ const senses=new Map(fs.readFileSync('production/vocabulary-senses.tsv','utf8').
 }));
 for(const scene of ideas.scenes)for(const word of scene.words)if(!glossary.has(normalize(word.en)))glossary.set(normalize(word.en),word.ar);
 for(const words of Object.values(imageWords))for(const word of words)if(!glossary.has(normalize(word.en)))glossary.set(normalize(word.en),word.ar);
+for(const words of Object.values(detectedWords))for(const word of words)if(!glossary.has(normalize(word.en)))glossary.set(normalize(word.en),word.ar);
 const contractions={
  "i'm":'I am',"you're":'you are',"we're":'we are',"they're":'they are',"he's":'he is',"she's":'she is',
  "it's":'it is',"that's":'that is',"there's":'there is',"what's":'what is',"who's":'who is',
@@ -116,11 +118,15 @@ for(const name of ['pilot','expansion-media','source-corpus','supplement'])for(c
  const source={type:'sentence',id:row.id,en:row.en,ar:row.ar,patternIds:patterns,sceneIds};
  const words=addSource(source,row.recordings);
  sentenceRows.set(row.id,row);
- const mapped=imageWords[row.id];
- if(mapped){
-  mapped.forEach(word=>add(word.en,word.pos,normalize(word.en),sources.length-1).ar=word.ar);
- }
- sceneWords[row.id]={reviewed:Boolean(mapped),words:mapped||words.filter(word=>['NOUN','PROPN','VERB','ADJ','ADV','CONTR'].includes(word.pos))};
+ const reviewed=imageWords[row.id],mapped=reviewed||detectedWords[row.id]||[];
+ const mappedTerms=new Set(mapped.map(word=>normalize(word.en)+'|'+word.pos));
+ mapped.forEach(word=>{
+  const entry=add(word.en,word.pos,normalize(word.en),sources.length-1);
+  if(!entry.ar)entry.ar=word.ar;
+ });
+ const sentenceVocabulary=words.filter(word=>['NOUN','PROPN','VERB','ADJ','ADV','CONTR'].includes(word.pos)&&
+  !mappedTerms.has(normalize(word.en)+'|'+word.pos));
+ sceneWords[row.id]={reviewed:Boolean(reviewed),words:[...mapped,...sentenceVocabulary]};
 }
 for(const {id,en,ar,uk,level,referenceId,patternIds} of Object.values(referenceStudy.examples)){
  addSource({type:'reference-example',id,en,ar,uk,level,referenceId,patternIds,sceneIds:[]});

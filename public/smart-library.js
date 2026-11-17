@@ -54,7 +54,10 @@ async function openSmartScene(id,focus=true){
  const item=sceneArchive?.scenes.find(scene=>scene.id===id),row=dialogueScene(id);
  if(!host||(!row&&!practice))return;
  const epoch=++studioOpenEpoch;
- stopSpeech();clearIdeaFlash();ideaWordFilter='';ideaWordMode='visible';
+ stopSpeech();clearIdeaFlash();
+ if(studioActiveId!==id){
+  ideaAction='observe';ideaWordFilter='';ideaWordMode='visible';ideaArchiveView=null;
+ }
  studioActiveId=id;
  studioWordScene=null;
  $('#scene-studio-gallery').hidden=true;
@@ -65,7 +68,7 @@ async function openSmartScene(id,focus=true){
  await Promise.all([loadStudioVocabulary(),loadVocabulary()]);
  if(!host.isConnected||page!=='scene-studio'||studioMode!=='photos'||epoch!==studioOpenEpoch)return;
  const data=studioVocabulary?.[id]||{words:[]},crop=row?.image?.crop;
- studioWordScene=practice?{...practice,id:'studio:'+id}:{id:'studio:'+id,sentenceId:id,en:item?.description||row.en,ar:item?.descriptionAr||row.ar,
+ studioWordScene=practice?{...practice}:{id:'studio:'+id,sentenceId:id,en:item?.description||row.en,ar:item?.descriptionAr||row.ar,
   topic:item?.topics[0],
   sentenceEn:row.en,sentenceAr:row.ar,words:data.words,reviewed:data.reviewed,
   taskEn:'Imagine two people in this scene. Write an opening, a reply, and a follow-up question.',
@@ -79,7 +82,7 @@ async function openSmartScene(id,focus=true){
  const line=dialogue?.lines[location?.turn];
  host.innerHTML=back+`<article class="panel studio-exercise">
   <div id="idea-viewer-home">${crop||practice?ideaViewer(studioWordScene):`<p>${T('لم تُضف صورة لهذه الجملة بعد.','This sentence has no scene yet.')}</p>`}</div>
-  <div><section class="studio-original"><h2 tabindex="-1">${T('الجملة الأساسية للصورة','The photo’s original sentence')}</h2>
+  <div><section class="studio-original"><h2 tabindex="-1">${practice?H(T(practice.ar,practice.en)):T('الجملة الأساسية للصورة','The photo’s original sentence')}</h2>
    ${practice?`<p lang="en" dir="ltr">${line?dialogueWords(line):H(practice.sentenceEn)}</p>${EP.ar(line?.ar||practice.sentenceAr)}
    ${dialogue?.audio?`<button class="primary" onclick="playStudioDialogueTurn('${H(id)}')">▶ ${T('استمع إلى دور المحادثة','Hear this conversation turn')}</button>`:''}
    ${!dialogue?`<button class="primary" onclick="hearIdeaExample('model')">▶ ${T('استمع إلى جملة المشهد','Hear the scene sentence')}</button>`:''}
@@ -88,17 +91,14 @@ async function openSmartScene(id,focus=true){
    `<p lang="en" dir="ltr">${EP.words(row,'data-studio-word')}</p>${EP.ar(row.ar)}
    <div class="buttonrow"><button class="primary" onclick="playStudioSentence('${H(id)}','male')">▶ Adam</button><button class="secondary" onclick="playStudioSentence('${H(id)}','female')">▶ Bella</button></div>`}
   <p class="lesson-hint">${learningLevelLabel(sceneLearningLevel(studioWordScene))}</p></section>
-  <div id="studio-words"></div>${practice?'':EP.rule(row,{compact:true})}
+  ${ideaPracticeControls()}<div id="idea-lab-task"></div>${practice?'':EP.rule(row,{compact:true})}
   ${same.length?`<details class="idea-disclosure"><summary>${T('جمل وصور النمط نفسه','More scenes using this pattern')} · ${same.length}</summary>
    ${same.map(sentence=>`<button class="textlink studio-related-line" onclick="openStudioScene('${sentence.id}')">${EP.words(sentence)}</button>`).join('')}</details>`:''}
-  <details class="studio-dialogue-area idea-disclosure" open><summary>${T('ابتكر محادثة من الصورة','Create a conversation from this scene')}</summary>
-   <div id="studio-dialogue">${renderIdeaRoleplay(studioWordScene)}</div>
-  </details>
   ${studioPattern?`<div class="buttonrow"><button class="secondary" onclick="recordDailyPractice('pattern-scene','${studioPattern}:${id}');this.textContent=T('✓ سُجّلت الممارسة','✓ Practice logged');this.disabled=true">${T('مارست النمط بصوتي','I practised the pattern aloud')}</button>
    ${studioNextLesson?`<button class="primary" onclick="openLinkedLearning('lesson',${studioNextLesson})">${T('الدرس التالي','Next lesson')} ↗</button>`:''}</div>`:''}</div></article>`;
- paintStudioWords(studioWordScene,true);
+ paintIdeaTask(studioWordScene,true);
  if(crop||practice)mountIdeaViewer(studioWordScene);
- paintIdeaGuided();paintIdeaArchive();
+ if(sceneAssistantIsOpen(studioWordScene))refreshSceneAssistant(studioWordScene,true);
  if(row)window.EPOffline?.rememberSentences([row]);
  if(focus&&!$('#idea-zoom')?.open){
   host.querySelector('h2').focus({preventScroll:true});
@@ -106,11 +106,9 @@ async function openSmartScene(id,focus=true){
  }
 }
 ideaLibraryReady.then(()=>{if(page==='scene-studio')paintSceneStudio()});
-function paintStudioWords(scene,open=false){
- const host=$('#studio-words');if(host)host.innerHTML=ideaVocabulary(scene,open);
-}
 function stepStudioScene(delta){
  const list=studioMatches(),index=list.findIndex(entry=>entry.row.id===studioActiveId);
  if(!list.length)return;
- openStudioScene(list[(index+delta+list.length)%list.length].row.id);
+ const next=index<0?(delta>0?0:list.length-1):(index+delta+list.length)%list.length;
+ openStudioScene(list[next].row.id);
 }

@@ -1,6 +1,6 @@
 const linkedLearningTypes={
  photo:['scene-studio','الصورة ومفرداتها','Photo and vocabulary'],
- scene:['lab','تحدّث من المشهد','Speak from the scene'],
+ scene:['scene-studio','تحدّث من المشهد','Speak from the scene'],
  journey:['scene-studio','تسلسل صور المحادثة','Conversation photo sequence'],
  dialogue:['dialogues','المحادثة','Conversation'],
  atlas:['vocabulary','أطلس المفردات','Vocabulary atlas'],
@@ -83,14 +83,9 @@ if(linkedType&&window.frameElement){
    sceneAssistantSteps.set(id,Number(linkedParams.get('step'))||0);
   }
   if(targetPage){page=targetPage;renderLinkedContent()}
-  if(linkedType==='photo'){
+  if(linkedType==='photo'||linkedType==='scene'){
    if(dialogueScene(id)||ideaLibrary?.scenes.some(scene=>scene.id===id)){
     await openSmartScene(id);
-    return revealArchive();
-   }
-  }else if(linkedType==='scene'){
-   if(ideaLibrary?.scenes.some(scene=>scene.id===id)){
-    chooseIdeaScene(id,false);
     if(archive)setIdeaAction('roleplay');
     return revealArchive();
    }

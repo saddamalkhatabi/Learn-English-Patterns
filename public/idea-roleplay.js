@@ -143,7 +143,7 @@ function archiveIdeaDialogue(draft,source){
  ideaArchive=entries;
  ideaArchiveView=entry.id;
  paintIdeaArchive();
- paintIdeaLibrary();
+ refreshSavedPhotoResults();
  $('.idea-archive').open=true;
  ideaDialogueStatus(T('حُفظ الحوار وظهر في الأرشيف.','The dialogue is saved and open in the archive.'));
  const heading=$('#idea-archive-view h4');
@@ -169,15 +169,16 @@ function saveIdeaGuided(){
 function paintIdeaArchive(){
  const list=$('#idea-archive-list'),view=$('#idea-archive-view');
  if(!list||!view)return;
- const currentId=currentIdeaScene()?.id;
- const rows=ideaArchive.filter(entry=>ideaArchiveScope==='all'||entry.sceneId===currentId);
+ const currentId=scenePhotoKey(currentIdeaScene()?.id);
+ const isCurrent=entry=>scenePhotoKey(entry.sceneId)===currentId;
+ const rows=ideaArchive.filter(entry=>ideaArchiveScope==='all'||isCurrent(entry));
  list.innerHTML=rows.length?`<ul>${rows.map(entry=>`<li><button class="textlink" data-archive-id="${H(entry.id)}" onclick="openIdeaArchivedDialogue(this.dataset.archiveId)">${H(entry.title)} ↗</button>
  <small>${entry.source==='written'?T('من كتابتي','Written'):entry.source==='guided'?T('موجّه','Guided'):T('مستورَد','Imported')} · ${entry.turns.length} ${T('أدوار','turns')}</small></li>`).join('')}</ul>`:
   `<p>${T('لا توجد حوارات محفوظة هنا بعد.','No dialogues saved here yet.')}</p>`;
  const entry=rows.find(row=>row.id===ideaArchiveView);
  view.innerHTML=entry?`<h4 dir="auto" tabindex="-1">${H(entry.title)}</h4>${ideaChatBubbles(entry.turns,'archive')}
   <div class="buttonrow"><button class="secondary" onclick="ideaArchiveView=null;paintIdeaArchive()">${T('أغلق النص','Close transcript')}</button>
-  ${entry.sceneId!==currentId?`<button class="secondary" onclick="openIdeaArchiveScene()">${T('افتح المشهد المرتبط','Open linked scene')}</button>`:''}
+  ${!isCurrent(entry)?`<button class="secondary" onclick="openIdeaArchiveScene()">${T('افتح المشهد المرتبط','Open linked scene')}</button>`:''}
   <button class="textlink" onclick="removeIdeaArchivedDialogue()">${T('احذف من أرشيفي','Remove from my archive')}</button></div>`:'';
 }
 function openIdeaArchivedDialogue(id){ideaArchiveView=id;paintIdeaArchive()}
@@ -196,7 +197,7 @@ function removeIdeaArchivedDialogue(){
  ideaArchive=entries;
  ideaArchiveView=null;
  paintIdeaArchive();
- paintIdeaLibrary();
+ refreshSavedPhotoResults();
  ideaDialogueStatus(T('حُذف الحوار من أرشيفك.','The dialogue was removed from your archive.'));
 }
 function hearIdeaDialogueTurn(kind,index){

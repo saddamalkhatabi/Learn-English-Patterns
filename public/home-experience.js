@@ -42,7 +42,7 @@ function homeAchievement(){
  const lesson=homeNextLesson(),reviews=due().length;
  const next=reviews?`<a class="primary" href="#review">${T('راجع نمطًا مستحقًا','Review a due pattern')} ←</a>`:
   lesson?`<button class="primary" onclick="openLesson(${lesson.id},${lesson.stage||0})">${lesson.resume?T('أكمل تدريبك','Resume your practice'):T('تدرّب على نمط','Practise a pattern')} ←</button>`:
-  `<a class="primary" href="#lab">${T('انطق مفردات مشهد','Practise a scene’s vocabulary')} ←</a>`;
+  `<a class="primary" href="#scene-studio">${T('انطق مفردات مشهد','Practise a scene’s vocabulary')} ←</a>`;
  return `<div class="home-goal">
   <span class="eyebrow">${T('خطوة اليوم','TODAY’S STEP')}</span>
   <h2>${T('مساعد الإنجاز','Progress assistant')}</h2>
@@ -68,11 +68,10 @@ function homeAchievement(){
 const homeServices=[
  ['library','study-01','تعلّم الأنماط','Pattern lessons','افهم القاعدة وطبّقها خطوة بخطوة.','Understand a structure and practise it step by step.'],
  ['coach','travel-01','الاستماع والتدريب','Listen & practise','اختر مسارًا واستمع إلى أمثلته وشرح قواعده.','Choose a route and hear its examples and rules.'],
+ ['scene-studio','workshop-01','مكتبة الصور الذكية','Smart photo library','استمع إلى مفردات الصورة، وصف ما تراه، أو تدرّب على حوار من المشهد.','Hear the words in a photo, describe what you see, or practise a scene dialogue.'],
  ['references','market-01','مكتبة الألف جملة','1,000 sentences','ابحث عن جملة بالغرض أو الموضوع أو البناء.','Find sentences by purpose, topic or structure.'],
  ['dialogues','care-01','المحادثات','Conversations','استمع إلى حوارات بصوتين وتابع النص والمشهد.','Listen to two voices and follow the transcript and scene.'],
  ['comparisons','classroom-01','المقارنات','Comparisons','ميّز الصيغ المتشابهة بالأمثلة والشرح.','Tell similar structures apart with examples and explanations.'],
- ['lab','workshop-01','تحدّث من المشهد','Speak from scenes','سمِّ ما تراه، ثم ابتكر وصفًا أو حوارًا من الصورة.','Name what you see, then create a description or dialogue.'],
- ['scene-studio','civic-01','مكتبة الصور الذكية','Smart photo library','مارس النمط مع صور جمله الأصلية، وتعلّم مفرداتها أو ابتكر حوارًا منها.','Practise a pattern with its original scenes, explore vocabulary, or create a dialogue.'],
  ['vocabulary','study-09','أطلس المفردات والعبارات','Words & phrases atlas','ابحث بالكلمة ونوعها، وتتبّع ظهورها في الصور والجمل والمحادثات.','Find a word by type and explore its scenes, sentences and conversations.'],
 ];
 
