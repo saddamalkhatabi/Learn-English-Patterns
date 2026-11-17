@@ -136,7 +136,8 @@
  }
  const shared=new Set(['nice to meet you','nice to meet you too','good to see you','good to see you too',
   'could you say that again','could you speak more slowly','how\'s it going','see you later','have a good day',
-  'can i pay by card','excuse me','you\'re welcome','what\'s your name']);
+  'can i pay by card','excuse me','you\'re welcome','what\'s your name',
+  'would you like','would you mind','as soon as','get used to','up all night','no need to']);
  const api={analyze,sameSpeech,rules,familyById,shared};
  if(typeof module==='object')module.exports=api;else root.EPEnglish=api;
 })(typeof globalThis==='undefined'?this:globalThis);

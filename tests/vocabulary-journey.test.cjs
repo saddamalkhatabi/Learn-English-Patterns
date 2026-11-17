@@ -2,8 +2,8 @@ const test=require('node:test'),assert=require('node:assert/strict'),fs=require(
 const vocabulary=require('../public/vocabulary-index.json');
 const {includesTerm,normalize,posFor,tokens}=require('../public/vocabulary-core.js');
 const {scenes,lifecycles}=require('../public/conversation-scenes.json');
-const dialogues=new Map(require('../public/dialogues.json').dialogues.map(d=>[d.id,d]));
-const audio=require('../public/dialogue-audio.json');
+const dialogues=new Map([...require('../public/dialogues.json').dialogues,...require('../public/english-practice.json').dialogues].map(d=>[d.id,d]));
+const audio={...require('../public/dialogue-audio.json'),...require('../public/english-usage-audio.json').dialogues};
 const trainingAudio=require('../public/training-audio.json');
 const {ideaWordCueId}=require('../public/training-narration.js');
 const offline=new Set(require('../public/offline-manifest.json').media.map(entry=>entry.path));
@@ -95,16 +95,16 @@ test('screen-sharing practice uses image annotations and authored patterns and i
  const make=scene=>guide.make(scene,id=>forms.get(id),levels.scenes[scene.id]);
  const scene=byId.get('conv-life-l3-200-1'),practice=make(scene);
  assert.equal(practice.pattern.id,9163);
- assert.match(practice.questions[0].en,/empty shelf/);
- assert.match(practice.questions[1].en,/blue shirt/);
+ assert(practice.questions.some(question=>question.en.includes('empty shelf')&&question.en.includes('blue shirt')));
  assert(practice.questions.every(question=>question.en&&question.ar));
  const withoutAnchors=make({...scene,words:[{en:'object',ar:'شيء',kind:'object'}],patterns:[]});
  assert.doesNotMatch(withoutAnchors.questions[0].en,/“object”/);
  assert.match(withoutAnchors.pattern.form,/Could you/);
  const beginner=make(byId.get(levels.starterScenes[0]));
- assert.equal(beginner.questions.length,3);
- assert(beginner.questions.every(question=>question.answer?.every(Boolean)));
- assert.equal(beginner.questions[0].answer[0],beginner.questions[1].answer[0]);
+ const other=make(byId.get(levels.starterScenes[1]));
+ assert.equal(beginner.questions.length,5);
+ assert(beginner.questions.every(question=>question.answer.every(Boolean)));
+ assert.notEqual(beginner.questions.find(question=>question.kind==='role').answer[0],other.questions.find(question=>question.kind==='role').answer[0]);
  assert(vocabulary.sources.some(source=>source.type==='idea-guide-reply'&&source.level==='A1'));
  for(const expression of Object.keys(guide.phrases)){
   const term=vocabulary.entries.find(entry=>normalize(entry.en)===expression&&entry.pos==='PHRASE');

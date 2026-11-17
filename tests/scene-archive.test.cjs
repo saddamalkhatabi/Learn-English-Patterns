@@ -41,7 +41,7 @@ test('Scene practice covers every lesson with bilingual examples and positioned 
   }
   assert((conversation||scene.patterns.length>=2)&&scene.patterns.every(pattern=>patternIds.has(pattern.id)),scene.id);
  }
- const dialogues=new Map(require('../public/dialogues.json').dialogues.map(d=>[d.id,d]));
+ const dialogues=new Map([...require('../public/dialogues.json').dialogues,...require('../public/english-practice.json').dialogues].map(d=>[d.id,d]));
  for(const [id,entry] of Object.entries(require('../public/conversation-scenes.json').scenes)){
   assert(dialogues.has(id),id);
   if(entry.cover)verify(entry.cover);

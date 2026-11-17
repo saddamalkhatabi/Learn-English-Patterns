@@ -57,6 +57,28 @@ test('new starter dialogues have valid pattern and illustrative scene references
  }
 });
 
+test('every starter dialogue has four dedicated photo turns sized for the scene library', () => {
+ const {scenes,lifecycles}=require('../public/conversation-scenes.json');
+ const ideas=new Map(require('../public/idea-scenes.json').scenes.map(scene=>[scene.id,scene]));
+ const {scenes:levels}=require('../public/learning-levels.json');
+ const used=new Set();
+ for(const dialogue of practice){
+  const record=scenes[dialogue.id];
+  assert.equal(record.cover.id,record.turns[1].id,dialogue.id);
+  assert.deepEqual(lifecycles[dialogue.id].stages.map(({from,to})=>[from,to]),[[1,1],[2,2],[3,3],[4,4]],dialogue.id);
+  for(const [index,image] of Object.values(record.turns).entries()){
+   assert(!used.has(image.path),image.path);
+   used.add(image.path);
+   assert.deepEqual([image.width,image.height],[390,242],image.path);
+   assert(offline.has(image.path),image.path);
+   const scene=ideas.get(image.id);
+   assert.equal(scene.sentenceEn,dialogue.lines[index].en,image.id);
+   assert.equal(levels[image.id],'A1',image.id);
+   assert(scene.words.every(word=>word.x>0&&word.x<100&&word.y>0&&word.y<100),image.id);
+  }
+ }
+});
+
 function checkAudio(recording, text){
  assert(offline.has(recording.path), recording.path);
  const digest = crypto.createHash('sha256').update(fs.readFileSync('public/' + recording.path)).digest('hex');

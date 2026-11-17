@@ -5,8 +5,12 @@ const {normalize,tokens,posFor,includesTerm}=require('../public/vocabulary-core.
 const sceneGuide=require('../public/scene-guide.js');
 const english=require('../public/english-usage.js');
 const read=name=>require('../public/'+name+'.json');
+const {makeReferenceStudy}=require('./reference-study.cjs');
 const ideas=read('idea-scenes'),dialogues=[...read('dialogues').dialogues,...read('english-practice').dialogues],art=read('conversation-scenes').scenes;
 const learningLevels=read('learning-levels');
+const referenceRows=read('source-corpus').sentences;
+const referenceStudy=makeReferenceStudy(referenceRows,[read('pilot'),read('expansion-media')],learningLevels.sentences);
+const studyWords=new Map();
 const regionalAudio=read('english-usage-audio');
 const imageWords=require('../production/scene-word-maps.json');
 const glossary=new Map(fs.readFileSync('production/vocabulary-glosses.tsv','utf8').trim().split(/\r?\n/).map(line=>{
@@ -45,7 +49,7 @@ function add(en,pos,lemma,sourceId,voiceAudio){
 }
 function addSource(source,recordings={}){
  const registry=source.type==='dialogue'?learningLevels.dialogues:source.type==='sentence'?learningLevels.sentences:learningLevels.scenes;
- source.level=registry[source.id];
+ source.level=source.level||registry[source.id];
  assert(source.level,`Missing learning level for ${source.type} ${source.id}`);
  const sourceId=sources.length;sources.push(source);
  if(Object.keys(recordings).length)sourceAudio.set(sourceId,recordings);
@@ -85,6 +89,7 @@ function addSource(source,recordings={}){
   return {en:word,ar:entry.ar,pos:tagged.pos,termId:entry.id};
  });
  sourceTokens.push(new Set(raw.map(normalize)));
+ if(source.type==='sentence'||source.type==='reference-example')studyWords.set(source.id,words);
  return words;
 }
 function phraseRecordings(phrase,sourceId){
@@ -116,6 +121,9 @@ for(const name of ['pilot','expansion-media','source-corpus','supplement'])for(c
   mapped.forEach(word=>add(word.en,word.pos,normalize(word.en),sources.length-1).ar=word.ar);
  }
  sceneWords[row.id]={reviewed:Boolean(mapped),words:mapped||words.filter(word=>['NOUN','PROPN','VERB','ADJ','ADV','CONTR'].includes(word.pos))};
+}
+for(const {id,en,ar,uk,level,referenceId,patternIds} of Object.values(referenceStudy.examples)){
+ addSource({type:'reference-example',id,en,ar,uk,level,referenceId,patternIds,sceneIds:[]});
 }
 for(const dialogue of dialogues){
  const originalRecording=read('dialogue-audio')[dialogue.id];
@@ -174,6 +182,7 @@ for(const [phrase,ar] of phrases.values()){
    const entry=add(phrase,'PHRASE',normalize(phrase),index,phraseRecordings(phrase,index));
    entry.ar=ar;entry.common=true;
    if(english.shared.has(normalize(phrase)))entry.shared=true;
+   studyWords.get(source.id)?.push({termId:entry.id});
   }
  });
 }
@@ -185,27 +194,56 @@ for(const entry of entries.values()){
  entry.sourceIds=[...entry.sourceIds];entry.sceneIds=[...entry.sceneIds];entry.patternIds=[...entry.patternIds];
 }
 const regionalEntries=new Map();
+function addRegional(source,index,{id,kind,ar,pos,us,uk}){
+ const key=id+'|'+normalize(us)+'|'+normalize(uk);
+ if(!regionalEntries.has(key))regionalEntries.set(key,{id:'use-'+crypto.createHash('sha256').update(key).digest('hex').slice(0,16),
+  en:us,uk,family:id,kind,ar,pos,sourceIds:new Set(),sceneIds:new Set(),patternIds:new Set(),audio:{}});
+ const entry=regionalEntries.get(key);
+ entry.sourceIds.add(index);
+ source.sceneIds.forEach(id=>entry.sceneIds.add(id));
+ source.patternIds.forEach(id=>entry.patternIds.add(id));
+ return entry;
+}
 for(const [index,source] of sources.entries()){
  for(const change of english.analyze(source.en,source).changes){
+  if(source.uk&&!includesTerm(source.uk,change.uk))continue;
   const rule=english.familyById.get(change.id);
-  const key=rule.id+'|'+normalize(change.us)+'|'+normalize(change.uk);
-  let entry=regionalEntries.get(key);
-  if(!entry){
-   entry={id:'use-'+crypto.createHash('sha256').update(key).digest('hex').slice(0,16),en:change.us,uk:change.uk,
-    family:rule.id,kind:change.kind,ar:rule.ar,pos:rule.pos,sourceIds:new Set(),sceneIds:new Set(),patternIds:new Set(),audio:{}};
-   regionalEntries.set(key,entry);
-  }
-  entry.sourceIds.add(index);
-  source.sceneIds.forEach(id=>entry.sceneIds.add(id));
-  source.patternIds.forEach(id=>entry.patternIds.add(id));
+  const entry=addRegional(source,index,{...change,ar:rule.ar,pos:rule.pos});
   if(change.region==='us')for(const [voice,clip] of Object.entries(phraseRecordings(change.us,index)||{})){
    if(!entry.audio[voice])entry.audio[voice]=clip;
   }
+ }
+ const pair=referenceStudy.examples[source.id]?.pair;
+ if(pair){
+  const [id,kind,us,uk,ar,pos]=pair;
+  addRegional(source,index,{id,kind,ar,pos,us,uk});
  }
 }
 const regional=[...regionalEntries.values()].map(entry=>({...entry,sourceIds:[...entry.sourceIds],
  sceneIds:[...entry.sceneIds],patternIds:[...entry.patternIds]}));
 const atlas={schema:1,classification:'contextual-automatic-with-reviewed-image-labels',sources,entries:[...entries.values()],regional};
+const termsById=new Map([...atlas.entries,...regional].map(entry=>[entry.id,entry]));
+for(const entry of regional)for(const index of entry.sourceIds)studyWords.get(sources[index].id)?.unshift({termId:entry.id});
+const studyPositions=new Set(['VERB','ADJ','NOUN','ADV','PHRASE']);
+const genericStudyWords=new Set(['be','do','go','get','have','say','thing','very','really','some']);
+for(const row of referenceRows){
+ const study=referenceStudy.rows[row.id],terms=new Map();
+ for(const id of [row.id,...study.examples]){
+  const words=studyWords.get(id)||[];
+  const usable=new Set(words.map(word=>word.termId));
+  for(const termId of usable){
+   const entry=termsById.get(termId);
+   if(!entry?.ar||!studyPositions.has(entry.pos)||genericStudyWords.has(entry.lemma))continue;
+   const key=entry.pos+'|'+entry.lemma;
+   if(!terms.has(key))terms.set(key,{id:entry.id,pos:entry.pos,count:0});
+   terms.get(key).count++;
+  }
+ }
+ const byFrequency=[...terms.values()].sort((a,b)=>b.count-a.count);
+ study.terms=[...studyPositions].flatMap(pos=>byFrequency.filter(term=>term.pos===pos).slice(0,3).map(term=>term.id));
+}
+for(const example of Object.values(referenceStudy.examples))delete example.pair;
 fs.writeFileSync('public/vocabulary-index.json',JSON.stringify(atlas)+'\n');
 fs.writeFileSync('public/scene-vocabulary.json',JSON.stringify({schema:1,sentences:sceneWords})+'\n');
+fs.writeFileSync('public/reference-study.json',JSON.stringify(referenceStudy)+'\n');
 console.log(JSON.stringify({vocabulary:entries.size,sources:sources.length,sentenceLists:Object.keys(sceneWords).length}));

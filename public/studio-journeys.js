@@ -102,16 +102,20 @@ function setStudioJourneyDetail(stage,index,checked){
  if(checked)selected.add(key);else selected.delete(key);
  updateStudioJourneyPractice(row);
 }
-function updateStudioJourneyPractice({dialogue,stages}){
+function updateStudioJourneyPractice(row){
+ const {dialogue,stages,level}=row;
  const selection=studioJourneySelection(dialogue.id),prompts=studioJourneyPrompts(stages,selection);
  studioWordScene={id:'journey:'+dialogue.id,ar:dialogue.ar,en:dialogue.en,topic:'conversation',
-  taskAr:prompts[0][0],taskEn:prompts[0][1],practiceFollowups:prompts.slice(1)};
+  taskAr:prompts[0][0],taskEn:prompts[0][1],practiceFollowups:prompts.slice(1),journey:row,learningLevel:level};
  const count=new Set([...selection].map(key=>key.split(':')[0])).size;
  const words=stages.flatMap(({scene},stage)=>scene.words.filter((_,index)=>selection.has(stage+':'+index)));
  $('#studio-journey-selection').textContent=count>=2?
   T(`اخترت تفاصيل من ${count} لقطات. استخدمها في محاولتك.`,`You chose details from ${count} photos. Use them in your dialogue.`):
   T('اختر مفردة تحت لقطتين مختلفتين لتخصيص الأسئلة.','Choose a word under two different photos to personalize the prompts.');
  $('#studio-journey-chosen').textContent=words.map(word=>englishDisplay(word.en,word)).join(' · ');
+ const coach=$('#studio-journey-coach');
+ if(!coach.firstElementChild)coach.innerHTML=sceneAssistantButton(studioWordScene)+sceneAssistantPanel(studioWordScene);
+ else if(sceneAssistantIsOpen(studioWordScene)){stopSceneAssistantAudio();refreshSceneAssistant(studioWordScene)}
 }
 function paintStudioJourney(row){
  const host=$('#studio-journey-active');
@@ -125,6 +129,7 @@ function paintStudioJourney(row){
   <p>${T('تأمّل الصور بالترتيب. ماذا تغيّر من لقطة إلى أخرى؟ حاول تخيّل ما قاله الشخصان قبل كشف الحوار.',
    'Look at the photos in order. What changes from one to the next? Imagine what the speakers said before revealing the dialogue.')}</p>
   <ol class="studio-journey-frames">${stages.map((stage,index)=>studioJourneyFrame(stage,index,selection)).join('')}</ol>
+  <section id="studio-journey-coach"></section>
   <section class="studio-journey-practice">
    <h3>${T('ابتكر حوارك','Write your own dialogue')}</h3>
    <p id="studio-journey-selection" role="status"></p>
@@ -143,7 +148,10 @@ function paintStudioJourney(row){
  $('#studio-dialogue').innerHTML=renderIdeaRoleplay(studioWordScene,false);
  paintIdeaGuided();paintIdeaArchive();
  loadVocabulary().then(data=>{
-  if(data&&host.isConnected&&host.dataset.dialogue===dialogue.id)paintStudioJourneyVocabulary(row);
+  if(data&&host.isConnected&&host.dataset.dialogue===dialogue.id){
+   paintStudioJourneyVocabulary(row);
+   if(sceneAssistantIsOpen(studioWordScene)&&!sceneAssistantAudio)refreshSceneAssistant(studioWordScene);
+  }
  });
 }
 function studioJourneyPhoto(scene,number){

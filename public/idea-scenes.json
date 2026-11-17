@@ -106721,6 +106721,823 @@
       "width": 390,
       "height": 243,
       "sha256": "4fa9e8f3d3cd6f3b75b06aa5dab63a9264b1fa0749e23a99f2c8de4654f59554"
+    },
+    {
+      "id": "conv-life-a1-nice-to-meet-you-1",
+      "topic": "conversation",
+      "en": "Nice to meet you · Say your name and ask theirs",
+      "ar": "تشرفت بمعرفتك · قل اسمك واسأل عن اسم الآخر",
+      "sentenceEn": "Hi, I'm Omar. What's your name?",
+      "sentenceAr": "مرحبًا، أنا عمر. ما اسمك؟",
+      "words": [
+        {
+          "en": "backpack",
+          "ar": "حقيبة ظهر",
+          "kind": "object",
+          "x": 9,
+          "y": 76
+        },
+        {
+          "en": "notebook",
+          "ar": "دفتر",
+          "kind": "object",
+          "x": 77,
+          "y": 67
+        },
+        {
+          "en": "wave",
+          "ar": "يلوّح",
+          "kind": "action",
+          "x": 45,
+          "y": 33
+        }
+      ],
+      "patterns": [
+        {
+          "id": 103,
+          "en": "Hi, I'm Omar. What's your name?",
+          "ar": "مرحبًا، أنا عمر. ما اسمك؟"
+        },
+        {
+          "id": 114,
+          "en": "Hi, I'm Omar. What's your name?",
+          "ar": "مرحبًا، أنا عمر. ما اسمك؟"
+        }
+      ],
+      "taskEn": "Say your name and ask theirs.",
+      "taskAr": "قل اسمك واسأل عن اسم الآخر.",
+      "path": "assets/scenes/conversations/life-a1-nice-to-meet-you-1.webp",
+      "width": 390,
+      "height": 242,
+      "sha256": "972a86da65c9b9ceab22d600e37ae00711acddfb97ab41707eaf31638eb55ed5"
+    },
+    {
+      "id": "conv-life-a1-nice-to-meet-you-2",
+      "topic": "conversation",
+      "en": "Nice to meet you · Introduce yourself and greet the other person",
+      "ar": "تشرفت بمعرفتك · عرّف بنفسك وحيِّ الشخص الآخر",
+      "sentenceEn": "I'm Sara. Nice to meet you.",
+      "sentenceAr": "أنا سارة. تشرفت بمعرفتك.",
+      "words": [
+        {
+          "en": "blue notebook",
+          "ar": "دفتر أزرق",
+          "kind": "object",
+          "x": 82,
+          "y": 71
+        },
+        {
+          "en": "doorway",
+          "ar": "مدخل",
+          "kind": "object",
+          "x": 48,
+          "y": 53
+        },
+        {
+          "en": "listen",
+          "ar": "يستمع",
+          "kind": "action",
+          "x": 24,
+          "y": 31
+        }
+      ],
+      "patterns": [
+        {
+          "id": 103,
+          "en": "I'm Sara. Nice to meet you.",
+          "ar": "أنا سارة. تشرفت بمعرفتك."
+        }
+      ],
+      "taskEn": "Introduce yourself and greet the other person.",
+      "taskAr": "عرّف بنفسك وحيِّ الشخص الآخر.",
+      "path": "assets/scenes/conversations/life-a1-nice-to-meet-you-2.webp",
+      "width": 390,
+      "height": 242,
+      "sha256": "1f4ba249efa572070922138bc17858f2c5e602a2ab9fd28e21b2ceb17e13d161"
+    },
+    {
+      "id": "conv-life-a1-nice-to-meet-you-3",
+      "topic": "conversation",
+      "en": "Nice to meet you · Return the greeting",
+      "ar": "تشرفت بمعرفتك · ردّ على التحية",
+      "sentenceEn": "Nice to meet you too, Sara.",
+      "sentenceAr": "وأنا أيضًا تشرفت بمعرفتك يا سارة.",
+      "words": [
+        {
+          "en": "bench",
+          "ar": "مقعد",
+          "kind": "object",
+          "x": 48,
+          "y": 78
+        },
+        {
+          "en": "notebook",
+          "ar": "دفتر",
+          "kind": "object",
+          "x": 82,
+          "y": 71
+        },
+        {
+          "en": "smile",
+          "ar": "يبتسم",
+          "kind": "action",
+          "x": 77,
+          "y": 34
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Return the greeting.",
+      "taskAr": "ردّ على التحية.",
+      "path": "assets/scenes/conversations/life-a1-nice-to-meet-you-3.webp",
+      "width": 390,
+      "height": 242,
+      "sha256": "aaac9fcbe29388d869c89912df7c196a408de5082384e0c4738ca05c0e2f4d57"
+    },
+    {
+      "id": "conv-life-a1-nice-to-meet-you-4",
+      "topic": "conversation",
+      "en": "Nice to meet you · Say goodbye before class",
+      "ar": "تشرفت بمعرفتك · ودّع قبل الصف",
+      "sentenceEn": "See you in class.",
+      "sentenceAr": "أراك في الصف.",
+      "words": [
+        {
+          "en": "backpack",
+          "ar": "حقيبة ظهر",
+          "kind": "object",
+          "x": 12,
+          "y": 68
+        },
+        {
+          "en": "desk",
+          "ar": "طاولة دراسية",
+          "kind": "object",
+          "x": 83,
+          "y": 79
+        },
+        {
+          "en": "point to",
+          "ar": "يشير إلى",
+          "kind": "action",
+          "x": 66,
+          "y": 47
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Say goodbye before class.",
+      "taskAr": "ودّع قبل الصف.",
+      "path": "assets/scenes/conversations/life-a1-nice-to-meet-you-4.webp",
+      "width": 390,
+      "height": 242,
+      "sha256": "21b9d677640a83cd8233dcbc945f1b9c8f189b5cc26a187ec62157543a040fa4"
+    },
+    {
+      "id": "conv-life-a1-say-that-again-1",
+      "topic": "conversation",
+      "en": "Could you say that again? · Ask the clerk to repeat",
+      "ar": "هل يمكنك إعادة ما قلت؟ · اطلب من الموظفة إعادة كلامها",
+      "sentenceEn": "Could you say that again, please?",
+      "sentenceAr": "هل يمكنك إعادة ما قلت من فضلك؟",
+      "words": [
+        {
+          "en": "paper bag",
+          "ar": "كيس ورقي",
+          "kind": "object",
+          "x": 55,
+          "y": 82
+        },
+        {
+          "en": "bakery counter",
+          "ar": "منضدة المخبز",
+          "kind": "object",
+          "x": 82,
+          "y": 92
+        },
+        {
+          "en": "listen",
+          "ar": "يستمع",
+          "kind": "action",
+          "x": 35,
+          "y": 34
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9050,
+          "en": "Could you say that again, please?",
+          "ar": "هل يمكنك إعادة ما قلت من فضلك؟"
+        }
+      ],
+      "taskEn": "Ask the clerk to repeat.",
+      "taskAr": "اطلب من الموظفة إعادة كلامها.",
+      "path": "assets/scenes/conversations/life-a1-say-that-again-1.webp",
+      "width": 390,
+      "height": 242,
+      "sha256": "fe04524c722f631cbae7415af719dcb3420f5589fcd15bd712dbd8efa74a6390"
+    },
+    {
+      "id": "conv-life-a1-say-that-again-2",
+      "topic": "conversation",
+      "en": "Could you say that again? · Repeat the order update",
+      "ar": "هل يمكنك إعادة ما قلت؟ · أعد العبارة عن حالة الطلب",
+      "sentenceEn": "Sure. Your order is ready.",
+      "sentenceAr": "بالتأكيد. طلبك جاهز.",
+      "words": [
+        {
+          "en": "paper bag",
+          "ar": "كيس ورقي",
+          "kind": "object",
+          "x": 53,
+          "y": 82
+        },
+        {
+          "en": "pastries",
+          "ar": "معجّنات",
+          "kind": "object",
+          "x": 39,
+          "y": 57
+        },
+        {
+          "en": "point to",
+          "ar": "يشير إلى",
+          "kind": "action",
+          "x": 67,
+          "y": 64
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Repeat the order update.",
+      "taskAr": "أعد العبارة عن حالة الطلب.",
+      "path": "assets/scenes/conversations/life-a1-say-that-again-2.webp",
+      "width": 390,
+      "height": 242,
+      "sha256": "96317e5508e250d68c3502bab133d08437e5030a7435447424fab28ebc9590d1"
+    },
+    {
+      "id": "conv-life-a1-say-that-again-3",
+      "topic": "conversation",
+      "en": "Could you say that again? · Ask the speaker to slow down",
+      "ar": "هل يمكنك إعادة ما قلت؟ · اطلب من المتحدثة أن تتكلّم ببطء",
+      "sentenceEn": "Could you speak more slowly?",
+      "sentenceAr": "هل يمكنك التحدث ببطء أكثر؟",
+      "words": [
+        {
+          "en": "paper bag",
+          "ar": "كيس ورقي",
+          "kind": "object",
+          "x": 54,
+          "y": 81
+        },
+        {
+          "en": "display case",
+          "ar": "واجهة عرض زجاجية",
+          "kind": "object",
+          "x": 44,
+          "y": 54
+        },
+        {
+          "en": "gesture",
+          "ar": "يشير بيده",
+          "kind": "action",
+          "x": 37,
+          "y": 59
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Ask the speaker to slow down.",
+      "taskAr": "اطلب من المتحدثة أن تتكلّم ببطء.",
+      "path": "assets/scenes/conversations/life-a1-say-that-again-3.webp",
+      "width": 390,
+      "height": 242,
+      "sha256": "3a66c8f2c33661a7760ced0f1b6906da9d652492b48af662b5040ac5c3e63cb7"
+    },
+    {
+      "id": "conv-life-a1-say-that-again-4",
+      "topic": "conversation",
+      "en": "Could you say that again? · Listen again and collect the order",
+      "ar": "هل يمكنك إعادة ما قلت؟ · استمع مجددًا واستلم الطلب",
+      "sentenceEn": "Of course. Your order is ready.",
+      "sentenceAr": "طبعًا. طلبك جاهز.",
+      "words": [
+        {
+          "en": "paper bag",
+          "ar": "كيس ورقي",
+          "kind": "object",
+          "x": 48,
+          "y": 76
+        },
+        {
+          "en": "counter",
+          "ar": "منضدة",
+          "kind": "object",
+          "x": 80,
+          "y": 92
+        },
+        {
+          "en": "hand over",
+          "ar": "يناول",
+          "kind": "action",
+          "x": 64,
+          "y": 87
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Listen again and collect the order.",
+      "taskAr": "استمع مجددًا واستلم الطلب.",
+      "path": "assets/scenes/conversations/life-a1-say-that-again-4.webp",
+      "width": 390,
+      "height": 242,
+      "sha256": "85336d6dae12898a4f64c3a2ebf40637c69738c0c6f658af09cee8c16542b951"
+    },
+    {
+      "id": "conv-life-a1-good-to-see-you-1",
+      "topic": "conversation",
+      "en": "Good to see you · Greet a friend you recognize",
+      "ar": "سعيد برؤيتك · حيِّ شخصًا تعرفه",
+      "sentenceEn": "Hi, Sara. Good to see you.",
+      "sentenceAr": "مرحبًا يا سارة. سعيد برؤيتك.",
+      "words": [
+        {
+          "en": "path",
+          "ar": "ممرّ",
+          "kind": "object",
+          "x": 65,
+          "y": 85
+        },
+        {
+          "en": "bench",
+          "ar": "مقعد",
+          "kind": "object",
+          "x": 49,
+          "y": 79
+        },
+        {
+          "en": "wave",
+          "ar": "يلوّح",
+          "kind": "action",
+          "x": 40,
+          "y": 33
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Greet a friend you recognize.",
+      "taskAr": "حيِّ شخصًا تعرفه.",
+      "path": "assets/scenes/conversations/life-a1-good-to-see-you-1.webp",
+      "width": 390,
+      "height": 242,
+      "sha256": "dd31fe0d05272408dfae7f525979c61c6025b8743e1934ea83fe587c53cbf578"
+    },
+    {
+      "id": "conv-life-a1-good-to-see-you-2",
+      "topic": "conversation",
+      "en": "Good to see you · Return the greeting and ask how they are",
+      "ar": "سعيد برؤيتك · ردّ على التحية واسأل عن الحال",
+      "sentenceEn": "Good to see you too! How's it going?",
+      "sentenceAr": "وأنا أيضًا سعيدة برؤيتك! كيف حالك؟",
+      "words": [
+        {
+          "en": "tote bag",
+          "ar": "حقيبة قماشية",
+          "kind": "object",
+          "x": 92,
+          "y": 79
+        },
+        {
+          "en": "bench",
+          "ar": "مقعد",
+          "kind": "object",
+          "x": 53,
+          "y": 79
+        },
+        {
+          "en": "smile",
+          "ar": "يبتسم",
+          "kind": "action",
+          "x": 74,
+          "y": 27
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Return the greeting and ask how they are.",
+      "taskAr": "ردّ على التحية واسأل عن الحال.",
+      "path": "assets/scenes/conversations/life-a1-good-to-see-you-2.webp",
+      "width": 390,
+      "height": 242,
+      "sha256": "4f093a97296f1c9487cdcf96dd463f302aa2bc4d7a94d49e87787152e45ab418"
+    },
+    {
+      "id": "conv-life-a1-good-to-see-you-3",
+      "topic": "conversation",
+      "en": "Good to see you · Answer and say goodbye",
+      "ar": "سعيد برؤيتك · أجب ثم ودّع",
+      "sentenceEn": "Pretty good, thanks. See you later!",
+      "sentenceAr": "بخير، شكرًا. أراك لاحقًا!",
+      "words": [
+        {
+          "en": "path",
+          "ar": "ممرّ",
+          "kind": "object",
+          "x": 92,
+          "y": 83
+        },
+        {
+          "en": "tree",
+          "ar": "شجرة",
+          "kind": "object",
+          "x": 54,
+          "y": 46
+        },
+        {
+          "en": "wave",
+          "ar": "يلوّح",
+          "kind": "action",
+          "x": 68,
+          "y": 25
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Answer and say goodbye.",
+      "taskAr": "أجب ثم ودّع.",
+      "path": "assets/scenes/conversations/life-a1-good-to-see-you-3.webp",
+      "width": 390,
+      "height": 242,
+      "sha256": "9f2c9890c891768ce0db6af1e47fad117836db65daad180e52504f53f7243ede"
+    },
+    {
+      "id": "conv-life-a1-good-to-see-you-4",
+      "topic": "conversation",
+      "en": "Good to see you · Return the farewell",
+      "ar": "سعيد برؤيتك · ردّ الوداع",
+      "sentenceEn": "See you!",
+      "sentenceAr": "إلى اللقاء!",
+      "words": [
+        {
+          "en": "path",
+          "ar": "ممرّ",
+          "kind": "object",
+          "x": 60,
+          "y": 85
+        },
+        {
+          "en": "tote bag",
+          "ar": "حقيبة قماشية",
+          "kind": "object",
+          "x": 24,
+          "y": 86
+        },
+        {
+          "en": "wave",
+          "ar": "يلوّح",
+          "kind": "action",
+          "x": 34,
+          "y": 42
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Return the farewell.",
+      "taskAr": "ردّ الوداع.",
+      "path": "assets/scenes/conversations/life-a1-good-to-see-you-4.webp",
+      "width": 390,
+      "height": 242,
+      "sha256": "64df1e74adc028076bffa8c0eb670fee99122be1172755e6d307529e2279dd7c"
+    },
+    {
+      "id": "conv-life-a1-ask-for-the-check-1",
+      "topic": "conversation",
+      "en": "Asking for the check · Ask for the check",
+      "ar": "طلب الفاتورة · اطلب الفاتورة",
+      "sentenceEn": "Can I get the check, please?",
+      "sentenceAr": "هل يمكنني الحصول على الفاتورة، من فضلك؟",
+      "words": [
+        {
+          "en": "empty plate",
+          "ar": "طبق فارغ",
+          "kind": "object",
+          "x": 30,
+          "y": 89
+        },
+        {
+          "en": "glass of water",
+          "ar": "كأس ماء",
+          "kind": "object",
+          "x": 47,
+          "y": 87
+        },
+        {
+          "en": "raise a hand",
+          "ar": "يرفع يده",
+          "kind": "action",
+          "x": 42,
+          "y": 59
+        }
+      ],
+      "patterns": [
+        {
+          "id": 4,
+          "en": "Can I get the check, please?",
+          "ar": "هل يمكنني الحصول على الفاتورة، من فضلك؟"
+        },
+        {
+          "id": 9050,
+          "en": "Can I get the check, please?",
+          "ar": "هل يمكنني الحصول على الفاتورة، من فضلك؟"
+        }
+      ],
+      "taskEn": "Ask for the check.",
+      "taskAr": "اطلب الفاتورة.",
+      "path": "assets/scenes/conversations/life-a1-ask-for-the-check-1.webp",
+      "width": 390,
+      "height": 242,
+      "sha256": "bd32a1fa2a83eb31de53ddf07fe2fa933d790c29f5a7a8e30d17aa4d44bcac90"
+    },
+    {
+      "id": "conv-life-a1-ask-for-the-check-2",
+      "topic": "conversation",
+      "en": "Asking for the check · Give the guest the check",
+      "ar": "طلب الفاتورة · قدّم الفاتورة للزبون",
+      "sentenceEn": "Sure. Here you go.",
+      "sentenceAr": "بالتأكيد. تفضل.",
+      "words": [
+        {
+          "en": "receipt",
+          "ar": "إيصال",
+          "kind": "object",
+          "x": 65,
+          "y": 90
+        },
+        {
+          "en": "bill folder",
+          "ar": "حامل الفاتورة",
+          "kind": "object",
+          "x": 64,
+          "y": 95
+        },
+        {
+          "en": "empty plate",
+          "ar": "طبق فارغ",
+          "kind": "object",
+          "x": 33,
+          "y": 89
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Give the guest the check.",
+      "taskAr": "قدّم الفاتورة للزبون.",
+      "path": "assets/scenes/conversations/life-a1-ask-for-the-check-2.webp",
+      "width": 390,
+      "height": 242,
+      "sha256": "81b18a2335f113e48440b52f09a1aa0edd7bd117e87e326feb56ac5f8e86c3c1"
+    },
+    {
+      "id": "conv-life-a1-ask-for-the-check-3",
+      "topic": "conversation",
+      "en": "Asking for the check · Thank the server",
+      "ar": "طلب الفاتورة · اشكر مقدّمة الخدمة",
+      "sentenceEn": "Thanks. Have a good day!",
+      "sentenceAr": "شكرًا. أتمنى لك يومًا سعيدًا!",
+      "words": [
+        {
+          "en": "bill folder",
+          "ar": "حامل الفاتورة",
+          "kind": "object",
+          "x": 56,
+          "y": 95
+        },
+        {
+          "en": "empty plate",
+          "ar": "طبق فارغ",
+          "kind": "object",
+          "x": 22,
+          "y": 96
+        },
+        {
+          "en": "server",
+          "ar": "مقدّمة خدمة",
+          "kind": "object",
+          "x": 75,
+          "y": 61
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Thank the server.",
+      "taskAr": "اشكر مقدّمة الخدمة.",
+      "path": "assets/scenes/conversations/life-a1-ask-for-the-check-3.webp",
+      "width": 390,
+      "height": 242,
+      "sha256": "d701af38c75150c9abd0088c71c0e8718c320c47750f68447bac122f47aadac6"
+    },
+    {
+      "id": "conv-life-a1-ask-for-the-check-4",
+      "topic": "conversation",
+      "en": "Asking for the check · Return the good wishes",
+      "ar": "طلب الفاتورة · ردّ التمنّي بيوم سعيد",
+      "sentenceEn": "You too!",
+      "sentenceAr": "ولك أيضًا!",
+      "words": [
+        {
+          "en": "doorway",
+          "ar": "مدخل",
+          "kind": "object",
+          "x": 46,
+          "y": 44
+        },
+        {
+          "en": "backpack",
+          "ar": "حقيبة ظهر",
+          "kind": "object",
+          "x": 58,
+          "y": 75
+        },
+        {
+          "en": "wave",
+          "ar": "يلوّح",
+          "kind": "action",
+          "x": 33,
+          "y": 57
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Return the good wishes.",
+      "taskAr": "ردّ التمنّي بيوم سعيد.",
+      "path": "assets/scenes/conversations/life-a1-ask-for-the-check-4.webp",
+      "width": 390,
+      "height": 242,
+      "sha256": "423190f9b98e427c177f162f7062454a13ba770e6a750cbd1e388c3fc887cf46"
+    },
+    {
+      "id": "conv-life-a1-find-the-restroom-1",
+      "topic": "conversation",
+      "en": "Finding the restroom · Ask where the restroom is",
+      "ar": "العثور على دورة المياه · اسأل أين دورة المياه",
+      "sentenceEn": "Excuse me. Where's the restroom?",
+      "sentenceAr": "عذرًا. أين دورة المياه؟",
+      "words": [
+        {
+          "en": "elevator",
+          "ar": "مصعد",
+          "kind": "object",
+          "x": 56,
+          "y": 52
+        },
+        {
+          "en": "backpack",
+          "ar": "حقيبة ظهر",
+          "kind": "object",
+          "x": 10,
+          "y": 66
+        },
+        {
+          "en": "side door",
+          "ar": "باب جانبي",
+          "kind": "object",
+          "x": 95,
+          "y": 80
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9125,
+          "en": "Excuse me. Where's the restroom?",
+          "ar": "عذرًا. أين دورة المياه؟"
+        },
+        {
+          "id": 9054,
+          "en": "Excuse me. Where's the restroom?",
+          "ar": "عذرًا. أين دورة المياه؟"
+        }
+      ],
+      "taskEn": "Ask where the restroom is in the library.",
+      "taskAr": "اسأل عن مكان دورة المياه في المكتبة.",
+      "path": "assets/scenes/conversations/life-a1-find-the-restroom-1.webp",
+      "width": 390,
+      "height": 242,
+      "sha256": "9832602f1fadbe38cb6925a4b126367e187d38221594df6df2f5281cf5ba825e"
+    },
+    {
+      "id": "conv-life-a1-find-the-restroom-2",
+      "topic": "conversation",
+      "en": "Finding the restroom · Explain that it is beside the elevator",
+      "ar": "العثور على دورة المياه · وضّح أنها بجوار المصعد",
+      "sentenceEn": "It's next to the elevator.",
+      "sentenceAr": "إنها بجوار المصعد.",
+      "words": [
+        {
+          "en": "elevator",
+          "ar": "مصعد",
+          "kind": "object",
+          "x": 61,
+          "y": 41
+        },
+        {
+          "en": "side door",
+          "ar": "باب جانبي",
+          "kind": "object",
+          "x": 95,
+          "y": 72
+        },
+        {
+          "en": "point to",
+          "ar": "يشير إلى",
+          "kind": "action",
+          "x": 80,
+          "y": 54
+        }
+      ],
+      "patterns": [
+        {
+          "id": 104,
+          "en": "It's next to the elevator.",
+          "ar": "إنها بجوار المصعد."
+        }
+      ],
+      "taskEn": "Explain that it is beside the elevator.",
+      "taskAr": "وضّح أنها بجوار المصعد.",
+      "path": "assets/scenes/conversations/life-a1-find-the-restroom-2.webp",
+      "width": 390,
+      "height": 242,
+      "sha256": "1715f4a0806e495651ac664bb3d1e372cc84b7b91f50e097c12a15d1d749abff"
+    },
+    {
+      "id": "conv-life-a1-find-the-restroom-3",
+      "topic": "conversation",
+      "en": "Finding the restroom · Thank the person for their help",
+      "ar": "العثور على دورة المياه · اشكر من ساعدك",
+      "sentenceEn": "Thanks for your help.",
+      "sentenceAr": "شكرًا لمساعدتك.",
+      "words": [
+        {
+          "en": "elevator",
+          "ar": "مصعد",
+          "kind": "object",
+          "x": 55,
+          "y": 58
+        },
+        {
+          "en": "backpack",
+          "ar": "حقيبة ظهر",
+          "kind": "object",
+          "x": 12,
+          "y": 83
+        },
+        {
+          "en": "smile",
+          "ar": "يبتسم",
+          "kind": "action",
+          "x": 78,
+          "y": 38
+        }
+      ],
+      "patterns": [],
+      "taskEn": "Thank the person for their help.",
+      "taskAr": "اشكر من ساعدك.",
+      "path": "assets/scenes/conversations/life-a1-find-the-restroom-3.webp",
+      "width": 390,
+      "height": 242,
+      "sha256": "d922351da63b02223f50ccc448b87a7aad6a23b9dcd946f1fa43c062e265790a"
+    },
+    {
+      "id": "conv-life-a1-find-the-restroom-4",
+      "topic": "conversation",
+      "en": "Finding the restroom · Acknowledge the thanks",
+      "ar": "العثور على دورة المياه · ردّ على الشكر",
+      "sentenceEn": "You're welcome.",
+      "sentenceAr": "على الرحب والسعة.",
+      "words": [
+        {
+          "en": "side door",
+          "ar": "باب جانبي",
+          "kind": "object",
+          "x": 94,
+          "y": 54
+        },
+        {
+          "en": "backpack",
+          "ar": "حقيبة ظهر",
+          "kind": "object",
+          "x": 71,
+          "y": 66
+        },
+        {
+          "en": "walk",
+          "ar": "يمشي",
+          "kind": "action",
+          "x": 78,
+          "y": 75
+        }
+      ],
+      "patterns": [
+        {
+          "id": 9135,
+          "en": "You're welcome.",
+          "ar": "على الرحب والسعة."
+        }
+      ],
+      "taskEn": "Acknowledge the thanks.",
+      "taskAr": "ردّ على الشكر.",
+      "path": "assets/scenes/conversations/life-a1-find-the-restroom-4.webp",
+      "width": 390,
+      "height": 242,
+      "sha256": "5f03b55bb8d11db596a4e00636cf3e7136151712f0864dc435174187e8424b93"
     }
   ]
 }

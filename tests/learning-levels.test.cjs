@@ -50,6 +50,10 @@ test('every pattern has a level and usable lessons, and atlas sources retain con
   assert(pattern.sentence_ids.some(id => levels.sentences[id] === levels.patterns[pattern.id]), pattern.id);
  }
  for (const source of atlas.sources) {
+  if(source.type==='reference-example'){
+   assert.equal(source.level,levels.sentences[source.referenceId],source.id);
+   continue;
+  }
   const registry = source.type === 'sentence' ? levels.sentences :
    source.type === 'dialogue' ? levels.dialogues : levels.scenes;
   assert.equal(source.level, registry[source.id], source.id);

@@ -81,7 +81,7 @@ assert.deepEqual(covered,patternIds,'Every lesson needs a contextual scene examp
 
 const dialogueTopics={id:'conversation',ar:'مشاهد المحادثات',en:'Conversation scenes'};
 const {lifecycles:dialogueStages,images:dialogueImages,words:batchWords}=require('./conversation-scene-sources.cjs');
-const dialogues=new Map(require('../public/dialogues.json').dialogues.map(dialogue=>[dialogue.id,dialogue]));
+const dialogues=new Map([...require('../public/dialogues.json').dialogues,...require('../public/english-practice.json').dialogues].map(dialogue=>[dialogue.id,dialogue]));
 const sceneLabels=new Map(batchWords);
 for(const line of text('production/conversation-scene-labels.tsv')){
  if(line.startsWith('#'))continue;

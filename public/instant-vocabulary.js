@@ -1,6 +1,6 @@
 let instantIndexPromise,instantDictionaryPromise,instantLookup,instantAudio,instantFirstClick,instantLastGesture,instantPointerType;
 const instantTextControls='button,a[href],summary,label[for],[role="button"]';
-const instantTextSkip='script,style,[hidden],[aria-hidden="true"],select,input[type="password"],audio,video,.instant-vocabulary,.english-usage-badge,.english-usage-audio-label';
+const instantTextSkip='script,style,[hidden],[aria-hidden="true"],[data-no-instant-lookup],select,input[type="password"],audio,video,.instant-vocabulary,.english-usage-badge,.english-usage-audio-label';
 
 function loadInstantIndex(){
  if(!instantIndexPromise)instantIndexPromise=loadVocabulary().then(data=>{

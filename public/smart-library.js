@@ -66,11 +66,13 @@ async function openSmartScene(id,focus=true){
  if(!host.isConnected||page!=='scene-studio'||studioMode!=='photos'||epoch!==studioOpenEpoch)return;
  const data=studioVocabulary?.[id]||{words:[]},crop=row?.image?.crop;
  studioWordScene=practice?{...practice,id:'studio:'+id}:{id:'studio:'+id,sentenceId:id,en:item?.description||row.en,ar:item?.descriptionAr||row.ar,
+  topic:item?.topics[0],
   sentenceEn:row.en,sentenceAr:row.ar,words:data.words,reviewed:data.reviewed,
   taskEn:'Imagine two people in this scene. Write an opening, a reply, and a follow-up question.',
   taskAr:'تخيّل شخصين في هذا المشهد واكتب افتتاحية وردًّا وسؤال متابعة.',
   width:crop?.width||500,height:crop?.height||300,
   patterns:smartSentencePatterns(row).map(id=>({id,en:row.en,ar:row.ar}))};
+ studioWordScene.practicePatternId=studioPattern;
  const same=studioPattern?PILOT.sentences.filter(sentence=>sentence.pattern_id===studioPattern):[];
  const location=dialogueSceneLocations.get(id);
  const dialogue=location?PILOT?.dialogues.find(item=>item.id===location.id):null;

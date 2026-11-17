@@ -61,7 +61,7 @@ function vocabularyPage(){
    <label>${T('النوع','Type')}<select data-atlas-filter onchange="vocabularyType=this.value;resetVocabulary()"><option value="">${T('الكل','All')}</option>
     ${Object.entries(EPVocabulary.types).map(([id,type])=>`<option value="${id}" ${vocabularyType===id?'selected':''}>${type.code} · ${T(type.ar,type.en)}</option>`).join('')}</select></label>
    <label>${T('موضع الاستخدام','Used in')}<select data-atlas-filter onchange="vocabularyCollection=this.value;resetVocabulary()">
-    ${[['','كل المحتوى','All content'],['sentence','الجمل والدروس','Sentences and lessons'],['dialogue','المحادثات','Conversations'],['idea','مفردات المشاهد','Scene vocabulary']].map(([id,ar,en])=>`<option value="${id}" ${vocabularyCollection===id?'selected':''}>${T(ar,en)}</option>`).join('')}</select></label>
+    ${[['','كل المحتوى','All content'],['sentence','الجمل والدروس','Sentences and lessons'],['reference-example','أمثلة بناء الجملة','Sentence structure examples'],['dialogue','المحادثات','Conversations'],['idea','مفردات المشاهد','Scene vocabulary']].map(([id,ar,en])=>`<option value="${id}" ${vocabularyCollection===id?'selected':''}>${T(ar,en)}</option>`).join('')}</select></label>
    <label>${T('النمط','Pattern')}<select data-atlas-filter onchange="vocabularyPattern=this.value;resetVocabulary()"><option value="">${T('كل الأنماط','All patterns')}</option>
     ${(PILOT?.patterns||[]).map(p=>`<option value="${p.id}" ${vocabularyPattern==p.id?'selected':''}>${H(p.form)}</option>`).join('')}</select></label>
    <label>${T('مستوى التعلّم','Learning level')}<select data-atlas-filter onchange="vocabularyLevel=this.value;resetVocabulary()">${learningLevelOptions(vocabularyLevel)}</select></label>
@@ -131,8 +131,9 @@ function openVocabularyTerm(id,preferredScene=vocabularyPreferredScene,scroll=tr
  if(!entry||!host)return;
  const uses=entry.sourceIds.map(index=>({index,source:vocabularyData.sources[index]})).filter(({source})=>vocabularyMatchesSource(source));
  if(!uses.length){host.replaceChildren();return}
- if(preferredScene)uses.sort((a,b)=>Number(b.source.id===preferredScene&&b.source.type==='idea-word')-
-  Number(a.source.id===preferredScene&&a.source.type==='idea-word'));
+ const rank=source=>source.id===preferredScene&&source.type==='idea-word'?3:
+  source.id===preferredScene||source.referenceId===preferredScene?2:entry.uk&&source.uk?1:0;
+ uses.sort((a,b)=>rank(b.source)-rank(a.source));
  const byExample=new Map();
  for(const use of uses){
   const {source}=use,key=source.en+'|'+source.ar;
@@ -147,11 +148,12 @@ function openVocabularyTerm(id,preferredScene=vocabularyPreferredScene,scroll=tr
    ${vocabularySceneLinks(uses)}
    <h3>${T('شاهدها في سياق','See it in context')}</h3>
    ${[...byExample.values()].slice(0,8).map(({source,index})=>{
-    return `<div class="vocabulary-use"><p lang="en" dir="ltr">${vocabularyMarked(englishDisplay(source.en,source),vocabularyEntryName(entry))}${englishUsageButton(EPEnglish.analyze(source.en,source))}</p>${EP.ar(source.ar)}
-     <small>${learningLevelLabel(source.level||'')}</small> <button class="textlink" onclick="openVocabularyUse(${index})">${source.type==='dialogue'?T('افتح المحادثة عند هذا الدور','Open this conversation turn'):source.type.startsWith('idea-guide')?T('افتح تدريب المشهد','Open scene practice'):source.type.startsWith('idea')?T('افتح المشهد','Open scene'):T('افتح الجملة وصورتها','Open sentence and scene')} ↗</button></div>`;
+    return `<div class="vocabulary-use">${referenceExampleEnglish(source,(text,region)=>
+     vocabularyMarked(text,region==='US'?entry.en:region==='UK'?entry.uk||entry.en:vocabularyEntryName(entry)))}${EP.ar(source.ar)}
+     <small>${learningLevelLabel(source.level||'')}</small> <button class="textlink" onclick="openVocabularyUse(${index})">${vocabularyUseLabel(source)} ↗</button></div>`;
    }).join('')}
    <details><summary>${T('كل مواضع الاستخدام','All uses')} · ${uses.length}</summary>${uses.map(({source,index})=>
-    `<button class="textlink vocabulary-source-link" onclick="openVocabularyUse(${index})">${H(englishDisplay(source.en,source))}${source.type==='idea-word'?` <span class="ar-content" lang="ar" dir="rtl">${H(source.ar)}</span>`:''}</button>`
+    `<button class="textlink vocabulary-source-link" onclick="openVocabularyUse(${index})">${H(source.uk&&EP.prefs.englishUsage==='uk'?source.uk:englishDisplay(source.en,source))}${source.type==='idea-word'?` <span class="ar-content" lang="ar" dir="rtl">${H(source.ar)}</span>`:''}</button>`
    ).join('')}</details></article>`;
  if(scroll){
   host.querySelector('h2').focus({preventScroll:true});
@@ -172,7 +174,9 @@ function vocabularySceneLinks(examples){
    const scene=ideaLibrary?.scenes.find(scene=>scene.id===source.id);
    if(scene)photo=ideaPicture(scene);
   }else photo=pilotScene(dialogueScene(source.id));
-  const open=!source.type.startsWith('idea-guide')&&dialogueSceneLocations.has(id)?`openLinkedLearning('photo','${H(id)}')`:`openVocabularyUse(${use.index})`;
+  const photoId=source.type==='sentence'&&source.id.startsWith('ref-')?source.id:
+   !source.type.startsWith('idea-guide')&&dialogueSceneLocations.has(id)?id:'';
+  const open=photoId?`openLinkedLearning('photo','${H(photoId)}')`:`openVocabularyUse(${use.index})`;
   return photo?`<button class="vocabulary-scene-card" onclick="${open}">${photo}<small>${H(source.title||source.en)}</small></button>`:'';
  }).filter(Boolean);
  return cards.length?`<details class="vocabulary-scenes"><summary>${T('الصور المرتبطة','Linked scenes')} · ${cards.length}</summary><div class="vocabulary-scene-links">${cards.join('')}</div></details>`:'';
@@ -187,6 +191,14 @@ function vocabularyMarked(text,term){
   return selected?`<mark>${H(word)}</mark>`:H(word);
  }).join('');
 }
+function vocabularyUseLabel(source){
+ if(source.type==='reference-example'||source.type==='sentence'&&source.id.startsWith('ref-'))
+  return T('افتح بناء الجملة وأمثلتها','Open sentence structure and examples');
+ if(source.type==='dialogue')return T('افتح المحادثة عند هذا الدور','Open this conversation turn');
+ if(source.type.startsWith('idea-guide'))return T('افتح تدريب المشهد','Open scene practice');
+ if(source.type.startsWith('idea'))return T('افتح المشهد','Open scene');
+ return T('افتح الجملة وصورتها','Open sentence and scene');
+}
 function openVocabularyUse(index){
  const source=vocabularyData?.sources[index];if(!source)return;
  if(source.type==='dialogue'){
@@ -195,6 +207,10 @@ function openVocabularyUse(index){
   return openSceneAssistantGuide(source.id,source.step);
  }else if(source.type.startsWith('idea')){
   return openLinkedLearning(dialogueSceneLocations.has(source.id)?'photo':'scene',source.id);
+ }else if(source.type==='reference-example'){
+  return openLinkedLearning('reference',source.referenceId,{example:source.id});
+ }else if(source.id.startsWith('ref-')){
+  return openLinkedLearning('reference',source.id);
  }else{
   return openLinkedLearning('photo',source.id);
  }

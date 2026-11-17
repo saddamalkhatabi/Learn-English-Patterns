@@ -4,6 +4,7 @@ const linkedLearningTypes={
  journey:['scene-studio','تسلسل صور المحادثة','Conversation photo sequence'],
  dialogue:['dialogues','المحادثة','Conversation'],
  atlas:['vocabulary','أطلس المفردات','Vocabulary atlas'],
+ reference:['references','بناء الجملة وأمثلتها','Sentence structure and examples'],
  'pattern-photos':['scene-studio','تطبيق النمط بالصور','Practise the pattern with photos'],
  lesson:['','درس النمط','Pattern lesson'],
  listen:['coach','الاستماع والتدريب','Listen and practise'],
@@ -116,6 +117,8 @@ if(linkedType&&window.frameElement){
   }else if(linkedType==='atlas'){
    const atlas=await loadVocabulary();
    if(atlas&&vocabularyById.has(id))return openVocabularyTerm(id,linkedParams.get('scene')||'');
+  }else if(linkedType==='reference'){
+   if(await renderLinkedReference(id,linkedParams.get('example')))return;
   }else if(linkedType==='pattern-photos'){
    studioPattern=Number(id);
    studioNextLesson=Number(linkedParams.get('next'))||null;

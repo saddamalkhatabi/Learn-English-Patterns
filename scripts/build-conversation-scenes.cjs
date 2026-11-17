@@ -2,7 +2,7 @@ const fs=require('node:fs'),assert=require('node:assert/strict'),crypto=require(
 const {asset,webpSize}=require('./media-validation.cjs');
 const {images:author,lifecycles}=require('./conversation-scene-sources.cjs');
 const ideas=new Map(require('../public/idea-scenes.json').scenes.map(s=>[s.id,s]));
-const dialogues=new Map(require('../public/dialogues.json').dialogues.map(d=>[d.id,d]));
+const dialogues=new Map([...require('../public/dialogues.json').dialogues,...require('../public/english-practice.json').dialogues].map(d=>[d.id,d]));
 function resolve(input){
  if(typeof input==='string'){
   const scene=ideas.get(input);

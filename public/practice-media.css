@@ -100,7 +100,18 @@ html[data-pattern-image="hidden"] .dialogue-thumb,html[data-pattern-image="hidde
 .scene-assistant h3,.scene-assistant p{margin:.3rem 0 .65rem}
 .scene-assistant-nav{justify-content:space-between;align-items:center}
 .scene-assistant-nav strong{display:flex;gap:.35rem;align-items:baseline}
+.scene-assistant button,.scene-assistant-toggle{touch-action:manipulation}
+.scene-assistant-modes button[aria-pressed="true"],.scene-assistant-journey [data-scene-guide-frame][aria-pressed="true"]{background:#17614e;color:#fff}
 .scene-assistant-question{padding:.55rem .7rem;border-inline-start:3px solid #267b67;background:white;border-radius:7px;overflow-wrap:anywhere}
+.scene-assistant-cue-label{font-weight:700;color:#285546}
+.scene-assistant-focus{display:grid;gap:.3rem;margin-block:.55rem;font-size:.85rem}
+.scene-assistant-focus select{min-width:0;width:100%}
+.scene-assistant-audio:empty{display:none}
+.scene-assistant-frames{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.45rem;margin-block:.55rem}
+.scene-assistant-frames figure{margin:0;min-width:0}
+.scene-assistant-frames img{width:100%;height:auto;aspect-ratio:5/3;object-fit:contain;background:#e7efe9;border-radius:8px}
+.scene-assistant-frames figcaption{font-size:.8rem;overflow-wrap:anywhere}
+#studio-journey-coach .scene-assistant{max-height:none}
 .scene-assistant-terms{display:flex;flex-wrap:wrap;gap:.4rem .8rem;list-style:none;padding:0}
 .scene-assistant-terms li{min-width:0;overflow-wrap:anywhere}
 .scene-assistant-terms p{margin:0}

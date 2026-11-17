@@ -1,10 +1,11 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const crypto = require('node:crypto');
+const english = require('../../public/english-usage.js');
 const root = path.resolve(__dirname, '../..');
 const hash = bytes => crypto.createHash('sha256').update(bytes).digest('hex');
 const names = ['pilot', 'supplement', 'expansion-media', 'source-corpus', 'curriculum', 'pattern-catalog',
-  'dialogues', 'dialogue-audio', 'comparisons', 'scene-archive', 'idea-scenes', 'conversation-scenes', 'training-audio','vocabulary-index'];
+  'dialogues', 'dialogue-audio', 'english-practice', 'english-usage-audio', 'comparisons', 'scene-archive', 'idea-scenes', 'conversation-scenes', 'training-audio','vocabulary-index'];
 const displayable = new Set(['visually_reviewed', 'assistant-reviewed', 'imported-unreviewed']);
 
 exports.seed = async db => {
@@ -53,16 +54,20 @@ exports.seed = async db => {
     }
   }
   const dialogueRows=[], turns=[], turnPatterns=[];
-  for(const dialogue of data.dialogues.dialogues){
-    const asset = data['dialogue-audio'][dialogue.id];
-    const audio = asset && JSON.stringify(asset.signature)===JSON.stringify(dialogue.lines.map(line=>[line.en,line.voice]))?asset:null;
+  const practice = new Set(data['english-practice'].dialogues.map(dialogue=>dialogue.id));
+  for(const dialogue of [...data.dialogues.dialogues,...data['english-practice'].dialogues]){
+    const additional=practice.has(dialogue.id);
+    const asset=additional?data['english-usage-audio'].dialogues[dialogue.id]:data['dialogue-audio'][dialogue.id];
+    const signature=dialogue.lines.map(line=>[additional?english.analyze(line.en,line).us:line.en,line.voice]);
+    const audio=asset&&JSON.stringify(asset.signature)===JSON.stringify(signature)?asset:null;
+    const pictures=additional?data['conversation-scenes'].scenes[dialogue.id]?.turns:null;
     if(audio)addMedia(audio,'dialogue');
     else gaps.push({entity_id:dialogue.id,kind:'dialogue-audio',reason:'pending'});
-    dialogueRows.push({id:dialogue.id,title_ar:dialogue.ar,title_en:dialogue.en,after_pattern_id:dialogue.after,media_path:audio?.path??null});
+    dialogueRows.push({id:dialogue.id,title_ar:dialogue.ar,title_en:dialogue.en,after_pattern_id:dialogue.after??null,media_path:audio?.path??null});
     dialogue.lines.forEach((line, position)=>{
       const id=dialogue.id+'/'+(position+1), time=audio?.turns[position];
-      turns.push({id,dialogue_id:dialogue.id,position,voice:line.voice,en:line.en,ar:line.ar,
-        scene_id:bySentence.get(line.scene)??null,start_ms:time?.start_ms??null,end_ms:time?.end_ms??null,
+      turns.push({id,dialogue_id:dialogue.id,position,voice:line.voice,en:audio?signature[position][0]:line.en,ar:line.ar,
+        scene_id:pictures?.[position+1]?.id??bySentence.get(line.scene)??null,start_ms:time?.start_ms??null,end_ms:time?.end_ms??null,
         word_cues_json:time?JSON.stringify(time.words):null});
       for(const pattern_id of line.patterns)turnPatterns.push({turn_id:id,pattern_id});
     });
