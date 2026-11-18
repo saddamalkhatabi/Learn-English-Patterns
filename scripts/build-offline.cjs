@@ -12,6 +12,7 @@ for(const recordings of Object.values(englishAudio.sentences))
  for(const recording of Object.values(recordings))sets.course.add(recording.path);
 for(const recording of Object.values(englishAudio.dialogues))sets.course.add(recording.path);
 const cues=require('../public/training-audio.json');
+for(const stage of ['base','rule','examples','words'])sets.library.add(`assets/audio/reference-stage-${stage}.mp3`);
 for(const [id,spoken] of Object.entries(require('./training-cues.cjs'))){
  const audio=cues[id];
  if(audio?.text===spoken)sets.course.add(audio.path);

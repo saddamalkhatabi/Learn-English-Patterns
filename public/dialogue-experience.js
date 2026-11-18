@@ -107,6 +107,12 @@ function dialogueScene(id){
  if(id?.startsWith('ref-'))return REFERENCE_CORPUS?.sentences.find(row=>row.id===id);
  return PILOT?.sentences.find(row=>row.id===id)||SUPPLEMENT?.sentences.find(row=>row.id===id);
 }
+function dialoguePhotoId(dialogue,index){
+ const entry=dialogueSceneArchive[dialogue.id];
+ const photo=entry?.turns?.[index+1]||entry?.cover;
+ const scene=dialogue.lines[Math.max(index,0)]?.scene;
+ return photo?.id||(dialogueScene(scene)?.image?scene:'');
+}
 function dialogueVisual(dialogue,index){
  const line=dialogue.lines[Math.max(index,0)];
  const entry=dialogueSceneArchive[dialogue.id];
@@ -125,10 +131,7 @@ function enlargeDialogueScene(button){
  const index=Number(button.dataset.dialogueTurn);
  const line=dialogue?.lines[index];
  const explanation=dialogue?dialogueSceneExplanation(dialogue,index):'';
- const entry=dialogueSceneArchive[dialogue?.id];
- const photo=entry?.turns[index+1]||entry?.cover;
- const referenceId=line?.scene||dialogue?.lines[0]?.scene;
- const photoId=photo?.id||(dialogueScene(referenceId)?.image?referenceId:null);
+ const photoId=dialogue&&dialoguePhotoId(dialogue,index);
  const libraryButton=photoId?`<button class="secondary" onclick="openDialoguePhotoInLibrary(this,'${H(photoId)}')">${T('افتح الصورة ومفرداتها','Open photo and vocabulary')} ↗</button>`:'';
  const dialog=document.createElement('dialog');
  dialog.className='dialogue-image-dialog';
@@ -206,7 +209,9 @@ function paintDialogue(panel,dialogue,ms){
   const visual=dialogueImageButton(dialogue,index);
   active.dataset.turn=turnKey;
   const speaker=line.voice==='male'?T('عمر','Omar'):T('سارة','Sara');
-  active.innerHTML=`<div class="dialogue-photo">${visual}${visual?dialogueSceneExplanation(dialogue,index):''}</div><div class="dialogue-live-text">
+  const explanation=visual?dialogueSceneExplanation(dialogue,index):'';
+  active.innerHTML=`<div class="dialogue-photo">${visual}${explanation&&panel.id==='coach-body'
+   ?`<details><summary>${T('وصف الصورة','Photo description')}</summary>${explanation}</details>`:explanation}</div><div class="dialogue-live-text">
    <small>${isTitle?T('عنوان المحادثة','Conversation title'):`${T('تتبّع النطق','Follow the spoken line')} · ${speaker} · ${index+1} / ${turns.length}`}</small>
    <p lang="en" dir="ltr">${dialogueWords(line)}</p>${EP.ar(line.ar)}${dialogueSourceNote(line)}
    <div class="dialogue-turn-patterns">${dialoguePatterns(line.patterns)}</div></div>`;
@@ -231,6 +236,7 @@ function jumpCoachDialogue(index){
  if(!turn)return;
  route.seek(turn.start_ms/1000);
  if(!route.running)route.play();
+ revealCoachContent();
 }
 function openDialogue(id,queued=false,hostId='dialogue-player',preview=false,resume=false){
  const dialogue=PILOT?.dialogues.find(d=>d.id===id);

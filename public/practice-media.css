@@ -51,6 +51,48 @@ html[data-pattern-image="hidden"] .dialogue-thumb,html[data-pattern-image="hidde
 .dialogue-panel .dialogue-transcript li{grid-template-columns:auto minmax(0,1fr) auto;align-items:center}
 .dialogue-panel .dialogue-transcript li:not(:has(.dialogue-turn-play)){grid-template-columns:minmax(0,1fr) auto}
 .dialogue-panel .dialogue-transcript li strong{font-size:.82rem}
+
+.coach-shell{overflow:visible}
+.coach-shell>.coach-controls{position:sticky;inset-block-start:0;z-index:4;padding:.65rem}
+#coach-practice-actions{margin:0;justify-content:center}
+#coach-practice-actions #coach-photo-practice:disabled{opacity:.5;cursor:default}
+.coach-dialogue-wrap .dialogue-active:not(:empty){grid-template-columns:minmax(90px,min(34%,215px)) minmax(0,1fr)}
+.coach-dialogue-wrap .dialogue-panel[data-priority="image"] .dialogue-active:not(:empty){grid-template-columns:minmax(95px,min(44%,300px)) minmax(0,1fr)}
+.coach-dialogue-wrap .dialogue-photo{align-self:start}
+.coach-dialogue-wrap .dialogue-photo summary{font-size:.8rem;cursor:pointer;margin-block-start:.3rem}
+.coach-dialogue-wrap .dialogue-live-text{min-height:6rem}
+.coach-dialogue-wrap .dialogue-panel .dialogue-active:has(.dialogue-photo:empty),
+html[data-pattern-image="hidden"] .coach-dialogue-wrap .dialogue-panel .dialogue-active:not(:empty){grid-template-columns:minmax(0,1fr)}
+
+.reference-library-options{display:flex;flex-wrap:wrap;align-items:center;gap:1rem;margin-block:1rem}
+.reference-library-options .buttonrow{margin:0;display:flex}
+.reference-library-options button[aria-pressed="true"],
+.reference-guided-steps button[aria-pressed="true"]{background:#dceee5;color:#173c36;border-color:#528672}
+.reference-foundation{color:#785006;background:#fff0cc;border-radius:1rem;padding:.2rem .55rem;font-weight:700}
+.reference-guided{width:min(950px,96vw);max-width:none;max-height:min(92dvh,850px);padding:0;border:1px solid var(--line);border-radius:16px;background:#fbfcf8;color:#173c36}
+.reference-guided[open]{display:flex;flex-direction:column}
+.reference-guided::backdrop{background:#122c26ae}
+.reference-guided-header,.reference-guided-steps,.reference-guided-transport{display:flex;flex-wrap:wrap;align-items:center;gap:.45rem;margin:0;padding:.6rem 1rem}
+.reference-guided-header{justify-content:space-between;border-bottom:1px solid var(--line)}
+.reference-guided-header h2{margin:0;font-size:clamp(1rem,3vw,1.35rem)}
+.reference-guided-transport{background:#edf4ef}
+.reference-guided-status{margin:0;padding-inline:1rem;color:#52685d}
+.reference-guided-content{min-height:0;overflow:auto;display:grid;grid-template-columns:minmax(0,2fr) minmax(0,3fr);align-items:start;gap:1rem;padding:1rem}
+.reference-guided-photo .scene-frame{max-width:min(100%,340px);margin-inline:auto}
+.reference-guided-photo small{display:block;text-align:center;margin-block:.35rem}
+.reference-guided-copy{min-width:0;overflow-wrap:anywhere}
+.reference-guided-copy h3{margin:0 0 .35rem}
+.reference-guided-copy .pattern-form{display:block;margin-block:.4rem;font-size:clamp(1rem,3vw,1.45rem)}
+.reference-guided-sentence{font-size:clamp(1rem,3vw,1.5rem);line-height:1.6}
+.reference-guided-vocabulary{list-style:none;padding:0;display:grid;gap:.3rem}
+.reference-guided-vocabulary li{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem;padding:.35rem .6rem;border-radius:8px;background:#ebf0ea}
+.reference-guided-vocabulary li.active{background:#ffedc8;outline:2px solid #ad7821}
+@media(max-width:520px){
+ .reference-guided-content{grid-template-columns:minmax(0,1fr);gap:.65rem;padding:.75rem}
+ .reference-guided-photo .scene-frame{max-width:min(100%,175px)}
+ .reference-guided-header,.reference-guided-steps,.reference-guided-transport{padding:.45rem .65rem}
+ .reference-guided-header button,.reference-guided-steps button,.reference-guided-transport button{padding:.4rem .55rem;font-size:.8rem}
+}
 .dialogue-panel .dialogue-transcript .dialogue-turn-play{background:#216a55;color:white;border:0;border-radius:50%;display:grid;place-items:center;width:36px;height:36px;padding:0;font-size:.85rem}
 .dialogue-panel .dialogue-transcript .dialogue-turn-play:hover{background:#164a3b}
 .dialogue-image-dialog{padding:1rem;border:0;border-radius:14px;width:min(840px,94vw);max-height:90vh}

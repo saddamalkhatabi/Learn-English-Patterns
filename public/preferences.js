@@ -1,5 +1,5 @@
 /* Interface language and Arabic learning content are independent preferences. */
-const EP={prefs:{language:'ar',englishUsage:'us',arabic:true,readingSeconds:0,instantVocabulary:true},teaching:null,dictionary:new Map(),learningArabic:new Set()};
+const EP={prefs:{language:'ar',englishUsage:'us',arabic:true,readingSeconds:0,instantVocabulary:true,referenceGuided:false},teaching:null,dictionary:new Map(),learningArabic:new Set()};
 try{Object.assign(EP.prefs,JSON.parse(localStorage.getItem('patterns-preferences')||'{}'))}catch{}
 if(!['ar','en'].includes(EP.prefs.language))EP.prefs.language='ar';
 if(!['us','uk'].includes(EP.prefs.englishUsage))EP.prefs.englishUsage='us';

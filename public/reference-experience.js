@@ -32,14 +32,14 @@ function referenceRule(s){
   <summary>${T('بناء الجملة','Sentence structure')} <b class="pattern-form" dir="ltr" lang="en">${H(guide.form)}</b></summary>
   ${EP.pair(guide.rule_ar,guide.rule_en)}<div class="reference-study-content"></div></details>`;
 }
-const referenceDefaults={query:'',grammar:'',domain:'',purpose:'',level:'',sort:'source',view:'cards',size:24};
+const referenceDefaults={query:'',grammar:'',domain:'',purpose:'',level:'',sort:'source',view:'cards',size:24,section:'sentences',patternScope:'',patternLevel:''};
 let epReference={...referenceDefaults};
 try{
  const saved=JSON.parse(localStorage.getItem('patterns-reference-view')||'{}');
  for(const key of Object.keys(referenceDefaults))if(Object.hasOwn(saved,key))epReference[key]=saved[key];
 }catch{}
-function epReferenceSet(key,value){epReference[key]=key==='size'?Number(value):value;referencePage=0;try{localStorage.setItem('patterns-reference-view',JSON.stringify(epReference))}catch{}renderReferenceRows()}
-function epReferenceReset(){epReference={...referenceDefaults};referencePage=0;localStorage.removeItem('patterns-reference-view');render()}
+function epReferenceSet(key,value,paint=true){epReference[key]=key==='size'?Number(value):value;referencePage=0;try{localStorage.setItem('patterns-reference-view',JSON.stringify(epReference))}catch{}if(paint)renderReferenceRows()}
+function epReferenceReset(){epReference={...referenceDefaults,section:epReference.section};epReferenceSet('query','',false);render()}
 const epFacetEnglish={learning:'Learning & languages',work:'Work & careers',food:'Food & dining',travel:'Travel & transport',family:'Family & relationships',home:'Home & daily life',health:'Health & feelings',money:'Money & shopping',leisure:'Hobbies & leisure',nature:'Nature & weather',technology:'Technology',community:'Places & community',everyday:'Everyday situations'};
 const referenceGrammarEnglish={
  accustomed:'Being accustomed', 'past-habit':'Past habit','lack-necessity':'Lack of necessity','polite-request':'Polite request or permission',
@@ -62,7 +62,65 @@ function epFacet(type,item){
  return T(item.ar,en);
 }
 function epReferenceSelect(type,key,ar,en){return `<label>${T(ar,en)}<select aria-label="${T(ar,en)}" onchange="epReferenceSet('${key}',this.value)"><option value="">${T('الكل','All')}</option>${referenceTaxonomy(type).map(x=>`<option value="${x.id}" ${epReference[key]===x.id?'selected':''}>${H(epFacet(type,x))}</option>`).join('')}</select></label>`}
-referencePageHTML=function(){if(!REFERENCE_CORPUS)return head(T('مكتبة الألف جملة','1,000-sentence library'),T('جارٍ التحميل…','Loading…'));const c=REFERENCE_CORPUS.counts;return `${head(T('ابحث عن المعنى. واسمع البناء.','Find the meaning. Hear the structure.'),T('كل جملة لها ترجمة وصوتان وقاعدة موجزة. استمع إلى النتائج بالترتيب الذي تختاره.','Every sentence has a translation, two voices and concise guidance. Listen to results in your chosen order.'),'1,000 SENTENCES · REAL CONNECTIONS')}${epSectionLinks(['scene-studio'])}<div class="reference-summary"><span><b>1000</b> ${T('جملة','sentences')}</span><span><b>2000</b> ${T('تسجيل','recordings')}</span><span><b>${c.scenes}</b> ${T('مشهدًا متاحًا','available scenes')}</span><span><b>${referenceTaxonomy('grammar').length}</b> ${T('تصنيفًا للبناء','structure categories')}</span></div><section class="panel reference-filters"><label>${T('ابحث بالعبارة أو المعنى','Search a phrase or meaning')}<input id="reference-search" class="search" value="${H(epReference.query)}" placeholder="${T('جملة، كلمة، معنى عربي أو قاعدة…','A sentence, word, Arabic meaning or structure…')}" oninput="epReferenceSet('query',this.value)"></label>${epReferenceSelect('grammar','grammar','البناء','Structure')}${epReferenceSelect('domains','domain','الموقف','Situation')}${epReferenceSelect('purposes','purpose','الغرض','Purpose')}<label>${T('المستوى التقريبي','Approximate level')}<select aria-label="${T('المستوى التقريبي','Approximate level')}" onchange="epReferenceSet('level',this.value)"><option value="">${T('الكل','All')}</option>${['A1–A2','A2–B1','B1–B2'].map(x=>`<option ${epReference.level===x?'selected':''}>${x}</option>`).join('')}</select></label></section><div class="reference-results-head"><p id="reference-count" role="status"></p><button class="secondary" onclick="resumeReference()">${T('استكمل موضعك','Resume listening')}</button><button class="primary" onclick="playReferenceResults()">▷ ${T('استماع متتابع للنتائج','Listen to these results')}</button></div><div class="reference-toolbar" id="reference-view-options"><label>${T('الترتيب','Sort')}<select aria-label="${T('ترتيب الجمل','Sentence sort order')}" onchange="epReferenceSet('sort',this.value)">${[['source','ترتيب المصدر','Source order'],['az','أبجدي إنجليزي','English A–Z'],['level','المستوى','Level'],['grammar','البناء','Structure']].map(([v,ar,en])=>`<option value="${v}" ${epReference.sort===v?'selected':''}>${T(ar,en)}</option>`).join('')}</select></label><label>${T('العرض','View')}<select aria-label="${T('طريقة عرض الجمل','Sentence layout')}" onchange="epReferenceSet('view',this.value)"><option value="cards" ${epReference.view==='cards'?'selected':''}>${T('بطاقات','Cards')}</option><option value="rows" ${epReference.view==='rows'?'selected':''}>${T('صفوف','Rows')}</option><option value="compact" ${epReference.view==='compact'?'selected':''}>${T('قائمة مختصرة','Compact list')}</option></select></label><label>${T('في الصفحة','Per page')}<select aria-label="${T('عدد النتائج في الصفحة','Results per page')}" onchange="epReferenceSet('size',this.value)">${[12,24,48,100].map(n=>`<option ${epReference.size===n?'selected':''}>${n}</option>`).join('')}</select></label><button class="filter-reset" onclick="epReferenceReset()">${T('مسح الفلاتر','Reset filters')}</button>${patternsImageControls()}</div><div id="reference-results" class="reference-grid"></div><div class="pagination"><button id="reference-prev" class="secondary" onclick="changeReferencePage(-1)">${T('السابق','Previous')}</button><span id="reference-pages"></span><button id="reference-next" class="secondary" onclick="changeReferencePage(1)">${T('التالي','Next')}</button></div><p class="lesson-hint">${T('الجمل المرجعية توسّع استعمالك؛ الدروس المتدرجة ذات الاثني عشر مثالًا تجدها في «تعلّم الأنماط».','Reference sentences broaden your usage. Guided lessons with twelve examples are in Pattern lessons.')}</p>`};
+function referenceLibraryTabs(){
+ const patternMode=epReference.section==='patterns';
+ return `<div class="reference-library-options">
+  <nav class="buttonrow" aria-label="${T('أقسام مكتبة الألف جملة','Sentence library sections')}">
+   <button class="secondary" type="button" data-reference-section="sentences" aria-pressed="${!patternMode}" onclick="setReferenceSection(this)">${T('الجمل المرجعية','Reference sentences')}</button>
+   <button class="secondary" type="button" data-reference-section="patterns" aria-pressed="${patternMode}" onclick="setReferenceSection(this)">${T('الأنماط الـ180','180 patterns')}</button>
+  </nav>
+  <label class="setting-toggle"><input id="reference-guided-setting" type="checkbox" ${EP.prefs.referenceGuided?'checked':''}
+   onchange="EP.set('referenceGuided',this.checked);$('#reference-guided-setting')?.focus({preventScroll:true})">
+   ${T('استخدم الشرح المصوّر عند الاستماع دائمًا','Always use illustrated study when listening')}</label>
+ </div>`;
+}
+function setReferenceSection(button){
+ const section=button.dataset.referenceSection;
+ if(epReference.section===section)return;
+ epReferenceSet('section',section,false);
+ render();
+ $(`[data-reference-section="${section}"]`)?.focus({preventScroll:true});
+}
+function referencePatternFilters(){
+ return `<label>${T('مجموعة الأنماط','Pattern collection')}<select onchange="epReferenceSet('patternScope',this.value)">
+  <option value="">${T('الأنماط الـ180 كلها','All 180 patterns')}</option>
+  <option value="foundation" ${epReference.patternScope==='foundation'?'selected':''}>${T('★ الأنماط التأسيسية','★ Foundation patterns')}</option>
+ </select></label>
+ <label>${T('مستوى التعلّم','Learning level')}<select onchange="epReferenceSet('patternLevel',this.value)">${learningLevelOptions(epReference.patternLevel)}</select></label>`;
+}
+function referenceSentenceFilters(){
+ return `${epReferenceSelect('grammar','grammar','البناء','Structure')}${epReferenceSelect('domains','domain','الموقف','Situation')}${epReferenceSelect('purposes','purpose','الغرض','Purpose')}
+  <label>${T('المستوى التقريبي','Approximate level')}<select onchange="epReferenceSet('level',this.value)">
+   <option value="">${T('الكل','All')}</option>${['A1–A2','A2–B1','B1–B2'].map(x=>`<option ${epReference.level===x?'selected':''}>${x}</option>`).join('')}
+  </select></label>`;
+}
+referencePageHTML=function(){
+ if(!REFERENCE_CORPUS)return head(T('مكتبة الألف جملة','1,000-sentence library'),T('جارٍ التحميل…','Loading…'));
+ const patternMode=epReference.section==='patterns';
+ const sortOptions=[['source','ترتيب المصدر','Source order'],['az','أبجدي إنجليزي','English A–Z'],['level','المستوى','Level'],['grammar','البناء','Structure']];
+ return `${head(T('ابحث عن المعنى. واسمع البناء.','Find the meaning. Hear the structure.'),
+  T('استمع إلى الجمل المرجعية أو تعلّم الأنماط بالصور والصوت.','Listen to reference sentences or study patterns with photos and audio.'),'1,000 SENTENCES · REAL CONNECTIONS')}
+  ${epSectionLinks(['scene-studio'])}${referenceLibraryTabs()}
+  ${patternMode?'':`<div class="reference-summary"><span><b>1000</b> ${T('جملة','sentences')}</span><span><b>2000</b> ${T('تسجيل','recordings')}</span><span><b>${REFERENCE_CORPUS.counts.scenes}</b> ${T('مشهدًا متاحًا','available scenes')}</span><span><b>${referenceTaxonomy('grammar').length}</b> ${T('تصنيفًا للبناء','structure categories')}</span></div>`}
+  <section class="panel reference-filters"><label>${T('ابحث بالعبارة أو المعنى','Search a phrase or meaning')}
+   <input id="reference-search" class="search" value="${H(epReference.query)}" placeholder="${T('جملة، كلمة، معنى عربي أو قاعدة…','A sentence, word, Arabic meaning or structure…')}" oninput="epReferenceSet('query',this.value)"></label>
+   ${patternMode?referencePatternFilters():referenceSentenceFilters()}</section>
+  <div class="reference-results-head"><p id="reference-count" role="status"></p>
+   ${patternMode||EP.prefs.referenceGuided?'':`<button class="secondary" onclick="resumeReference()">${T('استكمل موضعك','Resume listening')}</button>`}
+   <button id="reference-play-results" class="primary" onclick="playReferenceResults()">▷ ${patternMode?T('استمع إلى الأنماط المعروضة','Listen to these patterns'):T('استماع متتابع للنتائج','Listen to these results')}</button></div>
+  <div class="reference-toolbar" id="reference-view-options"><label>${T('الترتيب','Sort')}
+   <select aria-label="${T('ترتيب النتائج','Result order')}" onchange="epReferenceSet('sort',this.value)">
+    ${sortOptions.map(([v,ar,en])=>`<option value="${v}" ${epReference.sort===v?'selected':''}>${T(ar,en)}</option>`).join('')}</select></label>
+   <label>${T('العرض','View')}<select aria-label="${T('طريقة عرض النتائج','Result layout')}" onchange="epReferenceSet('view',this.value)">
+    ${[['cards','بطاقات','Cards'],['rows','صفوف','Rows'],['compact','قائمة مختصرة','Compact list']].map(([v,ar,en])=>`<option value="${v}" ${epReference.view===v?'selected':''}>${T(ar,en)}</option>`).join('')}
+   </select></label>
+   <label>${T('في الصفحة','Per page')}<select aria-label="${T('عدد النتائج في الصفحة','Results per page')}" onchange="epReferenceSet('size',this.value)">
+    ${[12,24,48,100].map(n=>`<option ${epReference.size===n?'selected':''}>${n}</option>`).join('')}</select></label>
+   <button class="filter-reset" onclick="epReferenceReset()">${T('مسح الفلاتر','Reset filters')}</button>${patternsImageControls()}</div>
+  <div id="reference-results" class="reference-grid"></div><div class="pagination">
+   <button id="reference-prev" class="secondary" onclick="changeReferencePage(-1)">${T('السابق','Previous')}</button>
+   <span id="reference-pages"></span><button id="reference-next" class="secondary" onclick="changeReferencePage(1)">${T('التالي','Next')}</button></div>`;
+};
 referenceRows=function(){
  if(!REFERENCE_CORPUS)return [];
  const normalize=value=>String(value).toLowerCase().normalize('NFKD').replace(/[\u064B-\u065F]/g,'').replace(/’/g,"'");
@@ -84,15 +142,20 @@ referenceRows=function(){
 renderReferenceRows=function(){
  const box=$("#reference-results");
  if(!box||!REFERENCE_CORPUS)return;
- const all=referenceRows(),size=[12,24,48,100].includes(epReference.size)?epReference.size:24,pages=Math.ceil(all.length/size);
+ const patternMode=epReference.section==='patterns';
+ const all=patternMode?referencePatterns():referenceRows(),size=[12,24,48,100].includes(epReference.size)?epReference.size:24,pages=Math.ceil(all.length/size);
  referencePage=Math.max(0,Math.min(referencePage,Math.max(0,pages-1)));
- $("#reference-count").textContent=T(`${all.length} جملة تطابق اختياراتك`,`${all.length} sentences match your filters`);
+ const loading=patternMode&&(!COURSE_CATALOG||!PILOT);
+ $("#reference-count").textContent=loading?T('جارٍ تحميل الأنماط…','Loading patterns…'):patternMode
+  ?T(`${all.length} نمطًا تطابق اختياراتك`,`${all.length} patterns match your filters`)
+  :T(`${all.length} جملة تطابق اختياراتك`,`${all.length} sentences match your filters`);
+ $("#reference-play-results").disabled=!all.length;
  $("#reference-pages").textContent=`${all.length?referencePage+1:0} / ${pages}`;
  $("#reference-prev").disabled=referencePage===0;$("#reference-next").disabled=referencePage+1>=pages;
  const visible=all.slice(referencePage*size,(referencePage+1)*size);
  box.dataset.view=epReference.view;
- box.innerHTML=visible.map(referenceCard).join('')||`<div class="empty">${T('لا توجد نتائج. غيّر البحث أو امسح الفلاتر.','No results. Change your search or reset the filters.')}</div>`;
- EP.decorate();window.EPOffline?.rememberSentences(visible);
+ box.innerHTML=loading?'':visible.map(patternMode?referencePatternCard:referenceCard).join('')||`<div class="empty">${T('لا توجد نتائج. غيّر البحث أو امسح الفلاتر.','No results. Change your search or reset the filters.')}</div>`;
+ EP.decorate();if(!patternMode)window.EPOffline?.rememberSentences(visible);
 };
 function referenceCard(s){
  return `<article class="reference-card panel" id="card-${s.id}">
@@ -106,6 +169,7 @@ function referenceCard(s){
   <div class="reference-card-actions buttonrow">
    <button class="secondary" onclick="playReference('${s.id}','male')">▷ Adam</button>
    <button class="secondary" onclick="playReference('${s.id}','female')">▷ Bella</button>
+   <button class="secondary" type="button" onclick="openReferenceGuided(['${H(s.id)}'])">${T('اشرح النمط بالصور','Explain the pattern with photos')}</button>
    <button class="textlink" onclick="practiceReference('${s.id}')">${T('تدرّب','Practise')} ←</button>
   </div></article>`;
 }

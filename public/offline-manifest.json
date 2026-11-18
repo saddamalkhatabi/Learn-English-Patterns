@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "version": "bf4a40f19093f7d2",
+  "version": "d3821c9d75472401",
   "shell": [
     "app.js",
     "collection-experience.js",
@@ -60,6 +60,7 @@
     "production-ui.js",
     "project.json",
     "reference-experience.js",
+    "reference-guided.js",
     "reference-study-ui.js",
     "reference-study.json",
     "release.json",
@@ -60660,6 +60661,42 @@
       "path": "assets/audio/ref-1000-male.mp3",
       "sha256": "f0e0f20968609b4aa1dd08bb2febbe17b36614579fc90c8a8f13b18155e40e3c",
       "bytes": 8901,
+      "groups": [
+        "library",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/reference-stage-base.mp3",
+      "sha256": "acea3e74a17aafb860b8939659d9fe6ee4f5715ae149101c3a3ab58e8f681f7a",
+      "bytes": 22796,
+      "groups": [
+        "library",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/reference-stage-examples.mp3",
+      "sha256": "000982f8347abf6396ba56643bce708d8fae73cb59fbf1b680f5f7b0b1a2e57a",
+      "bytes": 31886,
+      "groups": [
+        "library",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/reference-stage-rule.mp3",
+      "sha256": "0b9351c6ea790d22c23e09c70243dba59cc95eae00f10b3b1ff636cf43388a89",
+      "bytes": 13705,
+      "groups": [
+        "library",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/reference-stage-words.mp3",
+      "sha256": "8a5798e5bacb00aff36369565cf63ad1bd1ae02b739955ffb8968a32d0e3f8d2",
+      "bytes": 36118,
       "groups": [
         "library",
         "all"

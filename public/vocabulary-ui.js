@@ -219,11 +219,17 @@ function vocabularyAudioFor(text,voice){
  const normal=EPVocabulary.normalize(text);
  return vocabularyAllEntries.find(entry=>EPVocabulary.normalize(entry.en)===normal&&entry.audio[voice])?.audio[voice];
 }
-function playVocabularyClip(clip){
- const audio=new Audio(clip.path);let finish,frame,timer,stopped=false;
+function playVocabularyClip(clip,{audio=new Audio(),rate=state.rate||1}={}){
+ let finish,frame,timer,stopped=false;
  const done=new Promise(resolve=>{finish=resolve});
- const end=ok=>{if(stopped)return;stopped=true;clearTimeout(timer);cancelAnimationFrame(frame);audio.pause();finish(ok)};
- audio.playbackRate=state.rate||1;
+ const end=ok=>{
+  if(stopped)return;
+  stopped=true;clearTimeout(timer);cancelAnimationFrame(frame);
+  audio.onloadedmetadata=audio.onplaying=audio.onended=audio.onerror=null;
+  audio.pause();finish(ok);
+ };
+ audio.src=clip.path;
+ audio.playbackRate=rate;
  audio.onloadedmetadata=()=>{if(clip.start_ms!=null)audio.currentTime=clip.start_ms/1000};
  audio.onplaying=()=>{
   if(clip.end_ms==null)return;
