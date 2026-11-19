@@ -35,6 +35,11 @@ for (const directory of fs.readdirSync(incoming, {withFileTypes:true})) {
   assert(Object.hasOwn(expectedCues,id)&&!stagedCues.has(id),id);
   assert.equal(audio.text,expectedCues[id],id);
   assert(audio.duration_ms>0,id);
+  if(id.startsWith('reference-study-example-')){
+   assert.deepEqual(audio.words.map(word=>word.text),audio.text.split(/\s+/),id);
+   assert(audio.words.every((word,i)=>word.start_ms>=(audio.words[i-1]?.end_ms||0)&&
+    word.start_ms<word.end_ms&&word.end_ms<=audio.duration_ms),id);
+  }
   assert.match(audio.sha256,/^[a-f0-9]{64}$/);
   assert.equal(audio.path,`assets/audio/training-${id}-${audio.sha256.slice(0,12)}.mp3`);
   const source=path.join(root,audio.path);

@@ -26,5 +26,6 @@ const expected=Object.fromEntries([
   return examples.flatMap(example=>voices.map(voice=>[ideaSceneCueId(scene.id,example.id,voice),example.en]));
  }),
 ]);
+Object.assign(expected,require('./reference-study-cues.cjs')(expected));
 module.exports=expected;
 if(require.main===module)process.stdout.write(JSON.stringify(expected));

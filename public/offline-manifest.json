@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "version": "d3821c9d75472401",
+  "version": "3c2b2c2ad83e7273",
   "shell": [
     "app.js",
     "collection-experience.js",
@@ -61,6 +61,7 @@
     "project.json",
     "reference-experience.js",
     "reference-guided.js",
+    "reference-study-audio.js",
     "reference-study-ui.js",
     "reference-study.json",
     "release.json",
@@ -60667,42 +60668,6 @@
       ]
     },
     {
-      "path": "assets/audio/reference-stage-base.mp3",
-      "sha256": "acea3e74a17aafb860b8939659d9fe6ee4f5715ae149101c3a3ab58e8f681f7a",
-      "bytes": 22796,
-      "groups": [
-        "library",
-        "all"
-      ]
-    },
-    {
-      "path": "assets/audio/reference-stage-examples.mp3",
-      "sha256": "000982f8347abf6396ba56643bce708d8fae73cb59fbf1b680f5f7b0b1a2e57a",
-      "bytes": 31886,
-      "groups": [
-        "library",
-        "all"
-      ]
-    },
-    {
-      "path": "assets/audio/reference-stage-rule.mp3",
-      "sha256": "0b9351c6ea790d22c23e09c70243dba59cc95eae00f10b3b1ff636cf43388a89",
-      "bytes": 13705,
-      "groups": [
-        "library",
-        "all"
-      ]
-    },
-    {
-      "path": "assets/audio/reference-stage-words.mp3",
-      "sha256": "8a5798e5bacb00aff36369565cf63ad1bd1ae02b739955ffb8968a32d0e3f8d2",
-      "bytes": 36118,
-      "groups": [
-        "library",
-        "all"
-      ]
-    },
-    {
       "path": "assets/audio/supplement-dialogue-cafe-female.mp3",
       "sha256": "fa36c9c767a30f8b16fe59442cb6f35d87b0c7540c456e8e30ba4ecee1eb656e",
       "bytes": 21621,
@@ -66825,6 +66790,7 @@
       "bytes": 55148,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -66834,6 +66800,7 @@
       "bytes": 64748,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -66843,6 +66810,7 @@
       "bytes": 28676,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -66852,6 +66820,7 @@
       "bytes": 41156,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -66861,6 +66830,7 @@
       "bytes": 44468,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -66870,6 +66840,7 @@
       "bytes": 35516,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -66879,6 +66850,7 @@
       "bytes": 82340,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -66888,6 +66860,7 @@
       "bytes": 34220,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -66897,6 +66870,7 @@
       "bytes": 27380,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -66906,6 +66880,7 @@
       "bytes": 58220,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -66915,6 +66890,7 @@
       "bytes": 31916,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -66924,6 +66900,7 @@
       "bytes": 33908,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -66933,6 +66910,7 @@
       "bytes": 28340,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -66942,6 +66920,7 @@
       "bytes": 30884,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -66951,6 +66930,7 @@
       "bytes": 34244,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -66960,6 +66940,7 @@
       "bytes": 26828,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -66969,6 +66950,7 @@
       "bytes": 30884,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -66978,6 +66960,7 @@
       "bytes": 70868,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -66987,6 +66970,7 @@
       "bytes": 42812,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -66996,6 +66980,7 @@
       "bytes": 44828,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67005,6 +66990,7 @@
       "bytes": 53972,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67014,6 +67000,7 @@
       "bytes": 51212,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67023,6 +67010,7 @@
       "bytes": 77660,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67032,6 +67020,7 @@
       "bytes": 59972,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67041,6 +67030,7 @@
       "bytes": 49892,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67050,6 +67040,7 @@
       "bytes": 58316,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67059,6 +67050,7 @@
       "bytes": 46772,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67068,6 +67060,7 @@
       "bytes": 34940,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67077,6 +67070,7 @@
       "bytes": 32588,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67086,6 +67080,7 @@
       "bytes": 37460,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67095,6 +67090,7 @@
       "bytes": 31028,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67104,6 +67100,7 @@
       "bytes": 43532,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67113,6 +67110,7 @@
       "bytes": 37916,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67122,6 +67120,7 @@
       "bytes": 41276,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67131,6 +67130,7 @@
       "bytes": 34724,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67140,6 +67140,7 @@
       "bytes": 29036,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67149,6 +67150,7 @@
       "bytes": 34916,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67158,6 +67160,7 @@
       "bytes": 39188,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67167,6 +67170,7 @@
       "bytes": 36716,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67176,6 +67180,7 @@
       "bytes": 33092,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67185,6 +67190,7 @@
       "bytes": 37604,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67194,6 +67200,7 @@
       "bytes": 41780,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67203,6 +67210,7 @@
       "bytes": 29156,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67212,6 +67220,7 @@
       "bytes": 39260,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67221,6 +67230,7 @@
       "bytes": 39212,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67230,6 +67240,7 @@
       "bytes": 37820,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67239,6 +67250,7 @@
       "bytes": 40148,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67248,6 +67260,7 @@
       "bytes": 34004,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67257,6 +67270,7 @@
       "bytes": 31484,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67266,6 +67280,7 @@
       "bytes": 30980,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67275,6 +67290,7 @@
       "bytes": 25916,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67284,6 +67300,7 @@
       "bytes": 37988,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67293,6 +67310,7 @@
       "bytes": 31940,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67302,6 +67320,7 @@
       "bytes": 29276,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67311,6 +67330,7 @@
       "bytes": 28388,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67320,6 +67340,7 @@
       "bytes": 30212,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67329,6 +67350,7 @@
       "bytes": 40388,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67338,6 +67360,7 @@
       "bytes": 28220,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67347,6 +67370,7 @@
       "bytes": 32780,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67356,6 +67380,7 @@
       "bytes": 34316,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67365,6 +67390,7 @@
       "bytes": 32804,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67374,6 +67400,7 @@
       "bytes": 26708,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67383,6 +67410,7 @@
       "bytes": 27812,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67392,6 +67420,7 @@
       "bytes": 30212,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67401,6 +67430,7 @@
       "bytes": 37436,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67410,6 +67440,7 @@
       "bytes": 37820,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67419,6 +67450,7 @@
       "bytes": 35900,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67428,6 +67460,7 @@
       "bytes": 30740,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67437,6 +67470,7 @@
       "bytes": 25820,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67446,6 +67480,7 @@
       "bytes": 33452,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67455,6 +67490,7 @@
       "bytes": 39044,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67464,6 +67500,7 @@
       "bytes": 39308,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67473,6 +67510,7 @@
       "bytes": 37076,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67482,6 +67520,7 @@
       "bytes": 32972,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67491,6 +67530,7 @@
       "bytes": 30764,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67500,6 +67540,7 @@
       "bytes": 32828,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67509,6 +67550,7 @@
       "bytes": 32756,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67518,6 +67560,7 @@
       "bytes": 63548,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67527,6 +67570,7 @@
       "bytes": 28412,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67536,6 +67580,7 @@
       "bytes": 33212,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67545,6 +67590,7 @@
       "bytes": 56204,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67554,6 +67600,7 @@
       "bytes": 32420,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67563,6 +67610,7 @@
       "bytes": 39260,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67572,6 +67620,7 @@
       "bytes": 37532,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67581,6 +67630,7 @@
       "bytes": 32468,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67590,6 +67640,7 @@
       "bytes": 29996,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67599,6 +67650,7 @@
       "bytes": 34964,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67608,6 +67660,7 @@
       "bytes": 32876,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67617,6 +67670,7 @@
       "bytes": 64292,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67626,6 +67680,7 @@
       "bytes": 28724,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67635,6 +67690,7 @@
       "bytes": 35492,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67644,6 +67700,7 @@
       "bytes": 38732,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67653,6 +67710,7 @@
       "bytes": 33428,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67662,6 +67720,7 @@
       "bytes": 41756,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67671,6 +67730,7 @@
       "bytes": 46244,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67680,6 +67740,7 @@
       "bytes": 41756,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67689,6 +67750,7 @@
       "bytes": 35780,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67698,6 +67760,7 @@
       "bytes": 44228,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67707,6 +67770,7 @@
       "bytes": 36500,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67716,6 +67780,7 @@
       "bytes": 42260,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67725,6 +67790,7 @@
       "bytes": 41420,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67734,6 +67800,7 @@
       "bytes": 36812,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67743,6 +67810,7 @@
       "bytes": 35660,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67752,6 +67820,7 @@
       "bytes": 38324,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67761,6 +67830,7 @@
       "bytes": 33092,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67770,6 +67840,7 @@
       "bytes": 43556,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67779,6 +67850,7 @@
       "bytes": 48188,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67788,6 +67860,7 @@
       "bytes": 32204,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67797,6 +67870,7 @@
       "bytes": 30596,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67806,6 +67880,7 @@
       "bytes": 51284,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67815,6 +67890,7 @@
       "bytes": 49844,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67824,6 +67900,7 @@
       "bytes": 47036,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67833,6 +67910,7 @@
       "bytes": 55028,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67842,6 +67920,7 @@
       "bytes": 40148,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67851,6 +67930,7 @@
       "bytes": 37004,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67860,6 +67940,7 @@
       "bytes": 35276,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67869,6 +67950,7 @@
       "bytes": 45620,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67878,6 +67960,7 @@
       "bytes": 45044,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67887,6 +67970,7 @@
       "bytes": 47684,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67896,6 +67980,7 @@
       "bytes": 41516,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67905,6 +67990,7 @@
       "bytes": 40868,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67914,6 +68000,7 @@
       "bytes": 38324,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67923,6 +68010,7 @@
       "bytes": 43868,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67932,6 +68020,7 @@
       "bytes": 45572,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67941,6 +68030,7 @@
       "bytes": 48452,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67950,6 +68040,7 @@
       "bytes": 41804,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67959,6 +68050,7 @@
       "bytes": 39068,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67968,6 +68060,7 @@
       "bytes": 37604,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67977,6 +68070,7 @@
       "bytes": 42260,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67986,6 +68080,7 @@
       "bytes": 88988,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -67995,6 +68090,7 @@
       "bytes": 38708,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -68004,6 +68100,7 @@
       "bytes": 42668,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -68013,6 +68110,7 @@
       "bytes": 47660,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -68022,6 +68120,7 @@
       "bytes": 47948,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -68031,6 +68130,7 @@
       "bytes": 46916,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -68040,6 +68140,7 @@
       "bytes": 57788,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -68049,6 +68150,7 @@
       "bytes": 42620,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -68058,6 +68160,7 @@
       "bytes": 47252,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -68067,6 +68170,7 @@
       "bytes": 45596,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -68076,6 +68180,7 @@
       "bytes": 38828,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -68085,6 +68190,7 @@
       "bytes": 48092,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -68094,6 +68200,7 @@
       "bytes": 41708,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -68103,6 +68210,7 @@
       "bytes": 46628,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -68112,6 +68220,7 @@
       "bytes": 42452,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -68121,6 +68230,7 @@
       "bytes": 52988,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -68130,6 +68240,7 @@
       "bytes": 52676,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -68139,6 +68250,7 @@
       "bytes": 50924,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -68148,6 +68260,7 @@
       "bytes": 46340,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -68157,6 +68270,7 @@
       "bytes": 45956,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -68166,6 +68280,7 @@
       "bytes": 50900,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -68175,6 +68290,7 @@
       "bytes": 49484,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -68184,6 +68300,7 @@
       "bytes": 42956,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -68193,6 +68310,7 @@
       "bytes": 36860,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -68202,6 +68320,7 @@
       "bytes": 98636,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -68211,6 +68330,7 @@
       "bytes": 49148,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -68220,6 +68340,7 @@
       "bytes": 45884,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -68229,6 +68350,7 @@
       "bytes": 51980,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -68238,6 +68360,7 @@
       "bytes": 53036,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -68247,6 +68370,7 @@
       "bytes": 41252,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -68256,6 +68380,7 @@
       "bytes": 40388,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -68265,6 +68390,7 @@
       "bytes": 47060,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -68274,6 +68400,7 @@
       "bytes": 52700,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -68283,6 +68410,7 @@
       "bytes": 44540,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -68292,6 +68420,7 @@
       "bytes": 42068,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -68301,6 +68430,7 @@
       "bytes": 41588,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -68310,6 +68440,7 @@
       "bytes": 54620,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -68319,6 +68450,7 @@
       "bytes": 48284,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -68328,6 +68460,7 @@
       "bytes": 57212,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -68337,6 +68470,7 @@
       "bytes": 38660,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -68346,6 +68480,7 @@
       "bytes": 55364,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -68355,6 +68490,7 @@
       "bytes": 46244,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -68364,6 +68500,7 @@
       "bytes": 40772,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -68373,6 +68510,7 @@
       "bytes": 52220,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -68382,6 +68520,7 @@
       "bytes": 52220,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -68391,6 +68530,7 @@
       "bytes": 64052,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -68400,6 +68540,7 @@
       "bytes": 43388,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -68409,6 +68550,7 @@
       "bytes": 117044,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -68418,6 +68560,7 @@
       "bytes": 53012,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -68427,6 +68570,7 @@
       "bytes": 45764,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },
@@ -68436,6 +68580,7 @@
       "bytes": 43628,
       "groups": [
         "course",
+        "library",
         "all"
       ]
     },

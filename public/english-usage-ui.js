@@ -89,14 +89,7 @@ function decorateEnglishUsage(){
 }
 
 function projectEnglishSentence(row){
- const usage=EPEnglish.analyze(row.en,row);
- if(!usage.changes.length)return row;
- const replacement=englishAudio.sentences[row.id];
- if(replacement?.male?.text===usage.us&&replacement?.female?.text===usage.us)
-  return {...row,en:usage.us,sourceEn:row.en,englishUsage:usage,recordings:replacement,regionalAudio:true};
- if(EPEnglish.sameSpeech(row.en,usage.us))
-  return {...row,en:usage.us,sourceEn:row.en,englishUsage:usage};
- return {...row,englishUsage:usage};
+ return EPEnglish.projectSentence(row,englishAudio.sentences[row.id]);
 }
 function projectEnglishDialogue(row,audio){
  const title=EPEnglish.analyze(row.en,row);

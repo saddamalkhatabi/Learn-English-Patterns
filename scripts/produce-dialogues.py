@@ -144,7 +144,7 @@ def main():
             pending_index += 1
             if not selected:
                 continue
-            pipeline, _, write_clip = get_model()
+            pipeline, aligner, write_clip = get_model()
             clip = Path(directory) / f'{key}.mp3'
             voice = 'male' if key.endswith('-male') else 'female'
             write_clip(pipeline, VOICES[voice], text, clip)
@@ -154,6 +154,14 @@ def main():
             (destination / path).write_bytes(data)
             recorded_cues[key] = {'path': path, 'sha256': digest,
                                   'duration_ms': round(len(pcm(clip)) / 48), 'text': text}
+            if key.startswith('reference-study-example-'):
+                duration = recorded_cues[key]['duration_ms']
+                tokens = text.split()
+                words = [{'text': tokens[index], 'start_ms': start, 'end_ms': min(end, duration)}
+                         for index, start, end in aligner.align(clip, text)]
+                assert len(words) == len(tokens) and all(
+                    0 <= word['start_ms'] < word['end_ms'] <= duration for word in words), key
+                recorded_cues[key]['words'] = words
             print(f'{key}: recorded training cue', flush=True)
     (destination / cue_output.name).write_text(json.dumps(recorded_cues, indent=2, ensure_ascii=False) + '\n',
                                                encoding='utf-8', newline='\n')

@@ -76,6 +76,27 @@ test('both rule announcements are available for every taught pattern',()=>{
  }
 });
 
+test('reference study plans Adam and Bella for spoken transitions and additional examples',()=>{
+ const {cueId,stages,wordExcerpt}=require('../public/reference-study-audio.js');
+ const {analyze,sameSpeech}=require('../public/english-usage.js');
+ const expected=require('../scripts/training-cues.cjs');
+ const recorded=require('../public/training-audio.json');
+ const study=require('../public/reference-study.json');
+ for(const voice of ['male','female']){
+  for(const [,,,text] of stages)assert.equal(expected[cueId('stage',text,voice)],text);
+  for(const row of Object.values(study.examples)){
+   const text=analyze(row.en,row).us,id=cueId('example',text,voice);
+   assert.equal(expected[id],text);
+   if(recorded[id])assert.deepEqual(recorded[id].words.map(word=>word.text),text.split(/\s+/));
+  }
+ }
+ const row=foundation.sentences.find(sentence=>sentence.id==='want-01');
+ const clip=wordExcerpt({row},'English','female',sameSpeech);
+ assert.equal(clip.path,row.recordings.female.path);
+ assert(clip.end_ms>clip.start_ms);
+ assert.equal(wordExcerpt({row},'telephone','female',sameSpeech),null);
+});
+
 test('level one has 200 conversations, with multiple contexts for every course pattern', () => {
  const published = new Map(dialogues.map(dialogue => [dialogue.id,dialogue]));
  const entries = new Map(plan.entries.map(entry => [entry.id,entry]));

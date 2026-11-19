@@ -2,7 +2,29 @@ name: Record and align conversations
 on:
   push:
     branches: [main, codex/conversation-practice]
-    paths: [public/dialogues.json, public/comparisons.json, public/idea-scenes.json, public/teaching-index.json, public/training-narration.js, public/curriculum.json, public/pilot.json, public/expansion-media.json, scripts/training-cues.cjs, scripts/produce-dialogues.py, scripts/merge-dialogue-audio.cjs, .github/workflows/produce-dialogues.yml]
+    paths:
+      - public/dialogues.json
+      - public/comparisons.json
+      - public/idea-scenes.json
+      - public/teaching-index.json
+      - public/training-narration.js
+      - public/curriculum.json
+      - public/pilot.json
+      - public/expansion-media.json
+      - public/source-corpus.json
+      - public/reference-study.json
+      - public/reference-study-audio.js
+      - public/scene-vocabulary.json
+      - public/pattern-catalog.json
+      - public/english-usage.js
+      - public/english-usage-audio.json
+      - public/teaching-core.js
+      - public/vocabulary-core.js
+      - scripts/training-cues.cjs
+      - scripts/reference-study-cues.cjs
+      - scripts/produce-dialogues.py
+      - scripts/merge-dialogue-audio.cjs
+      - .github/workflows/produce-dialogues.yml
   workflow_dispatch:
 permissions:
   contents: write
@@ -99,5 +121,5 @@ jobs:
           git config user.email 'noreply@users.noreply.github.com'
           git add public/dialogue-audio.json public/training-audio.json public/assets/audio public/app-version.js public/app-version.json public/offline-manifest.json public/vocabulary-index.json public/scene-vocabulary.json
           if git diff --cached --quiet; then exit 0; fi
-          git commit -m 'Publish measured conversation audio and offline indexes'
+          git commit -m 'Publish measured learning audio and offline indexes'
           git push origin "HEAD:$TARGET_BRANCH"

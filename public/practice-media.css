@@ -76,6 +76,8 @@ html[data-pattern-image="hidden"] .coach-dialogue-wrap .dialogue-panel .dialogue
 .reference-guided-header{justify-content:space-between;border-bottom:1px solid var(--line)}
 .reference-guided-header h2{margin:0;font-size:clamp(1rem,3vw,1.35rem)}
 .reference-guided-transport{background:#edf4ef}
+.reference-guided-voice{display:flex;align-items:center;gap:.4rem}
+.reference-guided-voice select{padding:.4rem .55rem}
 .reference-guided-status{margin:0;padding-inline:1rem;color:#52685d}
 .reference-guided-content{min-height:0;overflow:auto;display:grid;grid-template-columns:minmax(0,2fr) minmax(0,3fr);align-items:start;gap:1rem;padding:1rem}
 .reference-guided-photo .scene-frame{max-width:min(100%,340px);margin-inline:auto}

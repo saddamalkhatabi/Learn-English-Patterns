@@ -71,7 +71,7 @@ function referenceLibraryTabs(){
   </nav>
   <label class="setting-toggle"><input id="reference-guided-setting" type="checkbox" ${EP.prefs.referenceGuided?'checked':''}
    onchange="EP.set('referenceGuided',this.checked);$('#reference-guided-setting')?.focus({preventScroll:true})">
-   ${T('استخدم الشرح المصوّر عند الاستماع دائمًا','Always use illustrated study when listening')}</label>
+   ${T('استخدم الشرح مع أمثلة إضافية عند الاستماع دائمًا','Always use explanations with additional examples when listening')}</label>
  </div>`;
 }
 function setReferenceSection(button){
@@ -169,7 +169,7 @@ function referenceCard(s){
   <div class="reference-card-actions buttonrow">
    <button class="secondary" onclick="playReference('${s.id}','male')">▷ Adam</button>
    <button class="secondary" onclick="playReference('${s.id}','female')">▷ Bella</button>
-   <button class="secondary" type="button" onclick="openReferenceGuided(['${H(s.id)}'])">${T('اشرح النمط بالصور','Explain the pattern with photos')}</button>
+   <button class="secondary" type="button" onclick="openReferenceGuided(['${H(s.id)}'])">${T('شرح مع أمثلة إضافية','Explanation with additional examples')}</button>
    <button class="textlink" onclick="practiceReference('${s.id}')">${T('تدرّب','Practise')} ←</button>
   </div></article>`;
 }
