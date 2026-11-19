@@ -38,8 +38,10 @@ jobs:
       needed: ${{ steps.audio.outputs.needed }}
       shards: ${{ steps.audio.outputs.shards }}
       count: ${{ steps.audio.outputs.count }}
+      revision: ${{ steps.audio.outputs.revision }}
     steps:
       - uses: actions/checkout@v4
+        with: {ref: '${{ github.ref }}'}
       - uses: actions/setup-node@v4
         with: {node-version: '22'}
       - id: audio
@@ -63,6 +65,7 @@ jobs:
           const shards=Array.from({length:count},(_,i)=>i);
           fs.appendFileSync(process.env.GITHUB_OUTPUT,`needed=${total>0}\ncount=${count}\nshards=${JSON.stringify(shards)}\n`);
           NODE
+          echo "revision=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
   record:
     needs: plan
     if: needs.plan.outputs.needed == 'true'
@@ -74,6 +77,7 @@ jobs:
         shard: ${{ fromJSON(needs.plan.outputs.shards) }}
     steps:
       - uses: actions/checkout@v4
+        with: {ref: '${{ needs.plan.outputs.revision }}'}
       - uses: actions/checkout@v4
         with: {ref: media-tools, path: .media-tools}
       - uses: actions/setup-python@v5
@@ -84,7 +88,11 @@ jobs:
             ~/.cache/huggingface
             ~/.cache/torch
           key: patterns-kokoro094-ctc-v1
-      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg espeak-ng
+      - name: Install ffmpeg and eSpeak
+        timeout-minutes: 3
+        run: |
+          sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=15 update -qq
+          sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=15 install -y -qq ffmpeg espeak-ng
       - run: pip install torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu
       - run: pip install -r .media-tools/scripts/audio-requirements.txt
       - run: python scripts/produce-dialogues.py --shard-index "$SHARD_INDEX" --shard-count "$SHARD_COUNT" --output-dir dialogue-shard
@@ -119,7 +127,7 @@ jobs:
           DIALOGUE_AUDIO_REQUIRED=1 npm test
           git config user.name 'English Patterns media'
           git config user.email 'noreply@users.noreply.github.com'
-          git add public/dialogue-audio.json public/training-audio.json public/assets/audio public/app-version.js public/app-version.json public/offline-manifest.json public/vocabulary-index.json public/scene-vocabulary.json
+          git add public/dialogue-audio.json public/training-audio.json public/assets/audio public/app-version.js public/app-version.json public/offline-manifest.json public/reference-study.json public/vocabulary-index.json public/scene-vocabulary.json
           if git diff --cached --quiet; then exit 0; fi
           git commit -m 'Publish measured learning audio and offline indexes'
           git push origin "HEAD:$TARGET_BRANCH"

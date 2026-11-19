@@ -134,6 +134,31 @@ test('instant vocabulary resolves contextual phrases, senses and translations in
  const name=glossary.best(indexed,glossary.select(indexed,'name',1),'name').entry;
  assert(glossary.related(indexed,name).some(entry=>/my name is/i.test(entry.en)));
 });
+test('the atlas and instant text selection share the full fed up expression and its reference',()=>{
+ const glossary=require('../public/instant-vocabulary-core.js');
+ const indexed=glossary.index(vocabulary),dictionary=require('../public/instant-dictionary.json');
+ const reference=vocabulary.sources.find(row=>row.id==='ref-0132');
+ const at=reference.en.indexOf('fed');
+ const clicked=glossary.select(indexed,reference.en,at+1);
+ assert.equal(clicked.text,'fed up with');
+ const contextual=glossary.best(indexed,clicked,reference.en);
+ assert.match(contextual.ar,/ضاق ذرعًا/);
+ assert(contextual.entry.sourceIds.some(id=>vocabulary.sources[id]===reference));
+ for(const voice of ['male','female'])assert(contextual.entry.audio[voice]?.end_ms>contextual.entry.audio[voice]?.start_ms);
+ const selected=glossary.selectRange(indexed,reference.en,at,at+'fed up'.length);
+ assert.equal(glossary.best(indexed,selected,reference.en).entry.en,'fed up');
+ assert.equal(glossary.selectRange(indexed,reference.en,0,reference.en.length).source.ar,reference.ar);
+ assert.equal(glossary.selectRange(indexed,reference.ar,0,reference.ar.length).source.en,reference.en);
+ const literal="I've fed my dog before.";
+ assert.equal(glossary.best(indexed,glossary.select(indexed,literal,literal.indexOf('fed')),literal).entry.lemma,'feed');
+ const partial='fed up with your complaining';
+ const parts=glossary.selectionParts(indexed,glossary.selectRange(indexed,partial,0,partial.length),partial,dictionary);
+ assert.equal(parts[0].text,'fed up with');
+ for(const expression of ['to be honest','all of a sudden','take advantage of','wide awake']){
+  const entry=vocabulary.entries.find(item=>item.en===expression&&item.pos==='PHRASE');
+  assert(entry?.ar&&entry.sourceIds.some(id=>vocabulary.sources[id].id.startsWith('ref-')),expression);
+ }
+});
 test('vocabulary keeps contextual roles, full words with accents, and valid content links',()=>{
  assert(vocabulary.entries.length>3000);
  assert.equal(new Set(vocabulary.entries.map(e=>e.id)).size,vocabulary.entries.length);

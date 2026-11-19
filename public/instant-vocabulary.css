@@ -12,6 +12,10 @@
 .instant-vocabulary li{padding-inline-start:.1rem}
 .instant-vocabulary li span{display:block}
 .instant-vocabulary a{color:#1a5b4b;text-decoration:underline}
+.instant-vocabulary:has(.instant-vocabulary-parts){max-height:min(22rem,calc(100dvh - 16px))}
+.instant-vocabulary-parts{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:.45rem;margin-block:.5rem}
+.instant-vocabulary-parts dt{font-weight:650}
+.instant-vocabulary-parts dd{margin:0}
 ::highlight(instant-vocabulary-selection){background:#ffe4a1;color:#422a0b}
 html[data-instant-vocabulary="on"]{touch-action:manipulation}
 .journey-center .journey-title-en{font-weight:700}

@@ -1,4 +1,5 @@
 let instantIndexPromise,instantDictionaryPromise,instantLookup,instantAudio,instantFirstClick,instantLastGesture,instantPointerType;
+let instantSelecting=false,instantSelectionTimer;
 const instantTextControls='button,a[href],summary,label[for],[role="button"]';
 const instantTextSkip='script,style,[hidden],[aria-hidden="true"],[data-no-instant-lookup],select,input[type="password"],audio,video,.instant-vocabulary,.english-usage-badge,.english-usage-audio-label';
 
@@ -19,6 +20,41 @@ function loadInstantDictionary(){
  return instantDictionaryPromise;
 }
 
+function instantTextBlock(node){
+ let block=node.nodeType===Node.ELEMENT_NODE?node:node.parentElement;
+ while(block?.parentElement&&['inline','contents'].includes(getComputedStyle(block).display)&&
+  !block.matches(instantTextControls))block=block.parentElement;
+ return block;
+}
+function instantTextRun(block){
+ const walker=document.createTreeWalker(block,NodeFilter.SHOW_TEXT,{acceptNode:part=>
+  part.parentElement.closest(instantTextSkip)||getComputedStyle(part.parentElement).display==='none'?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT});
+ let text='';
+ const nodes=[];
+ while(walker.nextNode()){
+  const part=walker.currentNode,start=text.length;
+  text+=part.data;
+  if(part.length)nodes.push({part,start,end:text.length});
+ }
+ function offsetFor(container,offset){
+  if(container.nodeType===Node.TEXT_NODE){
+   const item=nodes.find(node=>node.part===container);
+   return item?item.start+offset:-1;
+  }
+  const boundary=document.createRange();
+  boundary.setStart(container,offset);
+  boundary.collapse(true);
+  return nodes.find(({part})=>boundary.comparePoint(part,part.length)>=0)?.start??text.length;
+ }
+ function rangeFor(start,end){
+  const first=nodes.find(part=>part.start<=start&&start<part.end),last=nodes.find(part=>part.start<end&&end<=part.end);
+  if(!first||!last)return null;
+  const range=document.createRange();
+  range.setStart(first.part,start-first.start);range.setEnd(last.part,end-last.start);
+  return range;
+ }
+ return {text,offsetFor,rangeFor};
+}
 function instantTextContext(event){
  const target=event.target;
  if(!(target instanceof Element)||target.closest(instantTextSkip))return null;
@@ -30,25 +66,8 @@ function instantTextContext(event){
  const caret=document.caretPositionFromPoint?.(event.clientX,event.clientY)||document.caretRangeFromPoint?.(event.clientX,event.clientY);
  const node=caret?.offsetNode||caret?.startContainer,offset=caret?.offset??caret?.startOffset;
  if(node?.nodeType!==Node.TEXT_NODE||!target.contains(node)&&!node.parentElement.contains(target))return null;
- let block=node.parentElement;
- while(block.parentElement&&getComputedStyle(block).display==='inline'&&!block.matches(instantTextControls))block=block.parentElement;
- const walker=document.createTreeWalker(block,NodeFilter.SHOW_TEXT,{acceptNode:part=>
-  part.parentElement.closest(instantTextSkip)||getComputedStyle(part.parentElement).display==='none'?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT});
- let text='',position=-1;
- const nodes=[];
- while(walker.nextNode()){
-  const part=walker.currentNode,start=text.length;
-  if(part===node)position=start+offset;
-  text+=part.data;
-  if(part.length)nodes.push({part,start,end:text.length});
- }
- function rangeFor(start,end){
-  const first=nodes.find(part=>part.start<=start&&start<part.end),last=nodes.find(part=>part.start<end&&end<=part.end);
-  if(!first||!last)return null;
-  const range=document.createRange();
-  range.setStart(first.part,start-first.start);range.setEnd(last.part,end-last.start);
-  return range;
- }
+ const {text,offsetFor,rangeFor}=instantTextRun(instantTextBlock(node));
+ const position=offsetFor(node,offset);
  const nearby=EPInstantVocabulary.words(text).filter(word=>word.start<=position&&position<=word.end);
  const hit=nearby.find(word=>[...(rangeFor(word.start,word.end)?.getClientRects()||[])].some(rect=>
   rect.left-2<=event.clientX&&rect.right+2>=event.clientX&&rect.top-2<=event.clientY&&rect.bottom+2>=event.clientY));
@@ -56,6 +75,34 @@ function instantTextContext(event){
  const specificTarget=target.closest('[data-idea-vocab],[data-word].idea-map-point');
  const specific=specificTarget?currentIdeaScene()?.words[Number(specificTarget.dataset.ideaVocab??specificTarget.dataset.word)]:null;
  return {text,offset:Math.min(position,hit.end-1),target,rangeFor,specific,rect:rangeFor(hit.start,hit.end)?.getBoundingClientRect()};
+}
+
+function instantSelectionContext(){
+ const selection=window.getSelection();
+ if(!selection?.rangeCount||selection.isCollapsed)return null;
+ const range=selection.getRangeAt(0),{startContainer,endContainer}=range;
+ const target=instantTextBlock(startContainer);
+ if(!target||target===document.body||target.closest(instantTextSkip+',textarea,input')||target!==instantTextBlock(endContainer))return null;
+ const {text,offsetFor}=instantTextRun(target);
+ const start=offsetFor(startContainer,range.startOffset),end=offsetFor(endContainer,range.endOffset);
+ const rect=range.getBoundingClientRect();
+ if(start<0||end<=start||end-start>400||!rect.width||!EPInstantVocabulary.words(text.slice(start,end)).length)return null;
+ return {target,text,start,end,rect,selection:true};
+}
+function queueInstantSelection(){
+ clearTimeout(instantSelectionTimer);
+ if(!EP.prefs.instantVocabulary){closeInstantVocabulary();return}
+ if(instantSelecting)return;
+ instantSelectionTimer=setTimeout(()=>{
+  if(instantSelecting||!EP.prefs.instantVocabulary||performance.now()-(instantLastGesture?.time??-Infinity)<450)return;
+  const context=instantSelectionContext(),prior=instantLookup?.context;
+  if(!context){
+   if(prior?.selection)closeInstantVocabulary();
+   return;
+  }
+  if(prior?.selection&&prior.target===context.target&&prior.start===context.start&&prior.end===context.end)return;
+  showInstantVocabulary(context);
+ },260);
 }
 
 function closeInstantVocabulary(){
@@ -126,6 +173,8 @@ function paintInstantVocabulary(session,indexed){
  popup.querySelector('.instant-vocabulary-body').innerHTML=`
   <div class="instant-vocabulary-heading"><b lang="${match.lang}" dir="auto">${H(match.text)}</b>${type}</div>
   ${value?`<p lang="${match.lang==='en'?'ar':'en'}" dir="auto">${H(value)}</p>`:
+   result?.parts?.length?`<strong>${T('معاني الكلمات والتراكيب','Meanings of words and expressions')}</strong>
+    <dl class="instant-vocabulary-parts">${result.parts.map(part=>`<dt dir="auto">${H(part.text)}</dt><dd dir="auto">${H(part.value)}</dd>`).join('')}</dl>`:
    `<p>${T('لا تتوفر ترجمة لهذه الصيغة في المعجم.','This form has no dictionary translation.')}</p>`}
   ${result?.entry?.expansion?`<p lang="en" dir="ltr">${H(result.entry.expansion)}</p>`:''}
   ${entry?vocabularyUsageTags(entry):''}
@@ -139,7 +188,8 @@ function paintInstantVocabulary(session,indexed){
   ${result?.dictionary?`<small><a href="dictionaries/README.txt" target="_blank" rel="noopener noreferrer">FreeDict</a></small>`:''}`;
  popup.querySelector('[data-instant-audio]').addEventListener('click',()=>pronounceInstantVocabulary(session));
  popup.querySelector('[data-instant-atlas]')?.addEventListener('click',()=>{
-  closeInstantVocabulary();openVocabularyFromScene(result.entry.id);
+  const source=result.entry.sourceIds.map(id=>indexed.sources[id]).find(row=>EPInstantVocabulary.key(row[match.lang])===EPInstantVocabulary.key(session.context.text));
+  closeInstantVocabulary();openVocabularyFromScene(result.entry.id,source?.id||'');
  });
  positionInstantVocabulary(popup,session.anchor);
 }
@@ -160,18 +210,28 @@ async function showInstantVocabulary(context,initial){
  instantLookup=session;
  positionInstantVocabulary(popup,session.anchor);
  const indexed=await loadInstantIndex();
- if(instantLookup!==session||!context.target.isConnected){if(instantLookup===session)closeInstantVocabulary();return}
- const match=EPInstantVocabulary.select(indexed,context.text,context.offset);
+ if(instantLookup!==session||!context.target.isConnected||!EP.prefs.instantVocabulary){
+  if(instantLookup===session)closeInstantVocabulary();
+  return;
+ }
+ const match=context.selection?EPInstantVocabulary.selectRange(indexed,context.text,context.start,context.end):
+  EPInstantVocabulary.select(indexed,context.text,context.offset);
  if(!match){closeInstantVocabulary();return}
  session.match=match;
  session.result=EPInstantVocabulary.best(indexed,match,context.text,context.specific);
- moveInstantHighlight(session,match);
- pronounceInstantVocabulary(session);
- if(match.lang==='en'?!session.result?.ar:!session.result){
+ if(match.source&&(match.lang==='en'?!session.result?.ar:!session.result?.entry)){
+  session.result={...session.result,en:match.source.en,ar:match.source.ar};
+ }
+ if(!context.selection){
+  moveInstantHighlight(session,match);
+  pronounceInstantVocabulary(session);
+ }
+ if(match.lang==='en'?!session.result?.ar:!session.result?.entry&&!session.result?.en){
   const dictionary=await loadInstantDictionary();
   if(instantLookup!==session)return;
   const fallback=EPInstantVocabulary.dictionaryResult(dictionary,match);
   if(fallback)session.result={...session.result,...fallback,dictionary:true};
+  else if(context.selection)session.result={...session.result,parts:EPInstantVocabulary.selectionParts(indexed,match,context.text,dictionary)};
  }
  paintInstantVocabulary(session,indexed);
 }
@@ -230,8 +290,16 @@ document.addEventListener('dblclick',event=>{
 },true);
 document.addEventListener('pointerdown',event=>{
  instantPointerType=event.pointerType;
+ instantSelecting=event.isPrimary!==false&&!instantLookup?.popup.contains(event.target);
+ clearTimeout(instantSelectionTimer);
  if(instantLookup&&!instantLookup.popup.contains(event.target))closeInstantVocabulary();
 },true);
+for(const type of ['pointerup','pointercancel'])document.addEventListener(type,event=>{
+ if(!instantSelecting||event.isPrimary===false)return;
+ instantSelecting=false;
+ queueInstantSelection();
+},true);
+document.addEventListener('selectionchange',queueInstantSelection);
 document.addEventListener('keydown',event=>{
  if(event.key==='Escape'&&instantLookup){closeInstantVocabulary();event.preventDefault();event.stopPropagation()}
 },true);

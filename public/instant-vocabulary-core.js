@@ -56,7 +56,29 @@
     }
    }
   }
-  return {translations,expressions,sources:atlas.sources};
+  const sourceTexts={en:new Map(),ar:new Map()};
+  for(const source of atlas.sources){
+   if(!source.en||!source.ar||source.type==='idea-word')continue;
+   for(const lang of ['en','ar']){
+    const normalized=key(source[lang]);
+    if(!sourceTexts[lang].has(normalized))sourceTexts[lang].set(normalized,source);
+   }
+  }
+  return {translations,expressions,sources:atlas.sources,sourceTexts};
+ }
+ function selectRange(indexed,text,start,end){
+  const raw=text.slice(start,end),selected=raw.trim();
+  start+=raw.indexOf(selected);
+  end=start+selected.length;
+  const tokens=words(selected);
+  if(!tokens.length||tokens.length>40)return null;
+  const lang=language(tokens[0].text);
+  if(tokens.some(token=>language(token.text)!==lang))return null;
+  if(tokens.length===1)return select(indexed,text,start+tokens[0].start);
+  const normalized=key(selected);
+  const entries=[...(indexed.translations[lang].get(normalized)||[])];
+  const source=indexed.sourceTexts[lang].get(normalized);
+  return {lang,text:selected,start,end,entries,source};
  }
  function select(indexed,text,offset){
   const tokens=words(text);
@@ -118,5 +140,24 @@
   }
   return found.length?{en:found.join(', '),ar:match.text,speech:found[0]}:null;
  }
- return {index,select,best,related,dictionaryResult,words,key,arabicForms,language};
+ function selectionParts(indexed,match,context,dictionary){
+  const tokens=words(match.text),parts=[];
+  for(let i=0;i<tokens.length;){
+   let translated;
+   for(let end=Math.min(tokens.length,i+10);end>i;end--){
+    const first=tokens[i].start,last=tokens[end-1].end;
+    const text=match.text.slice(first,last);
+    if(/[.!?؟،؛,\n…:]/.test(text))continue;
+    const entries=[...(indexed.translations[match.lang].get(key(text))||[])];
+    const chunk={text,lang:match.lang,entries,start:match.start+first,end:match.start+last};
+    const result=best(indexed,chunk,context);
+    const value=match.lang==='en'?(result?.ar||dictionaryResult(dictionary,chunk)?.ar):result?.entry?.en;
+    if(!value)continue;
+    parts.push({text,value});i=end;translated=true;break;
+   }
+   if(!translated)i++;
+  }
+  return parts;
+ }
+ return {index,select,selectRange,best,related,dictionaryResult,selectionParts,words,key,arabicForms,language};
 });
