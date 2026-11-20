@@ -20,6 +20,9 @@ for(const [id,spoken] of Object.entries(require('./training-cues.cjs'))){
  if(id.startsWith('explanation-intro-'))sets.library.add(audio.path);
 }
 for(const scene of require('../public/idea-scenes.json').scenes)sets.course.add(scene.path);
+for(const image of fs.readdirSync(path.join(root,'assets/home')).filter(name=>name.endsWith('.webp'))){
+ sets.course.add('assets/home/'+image);
+}
 for(const entry of Object.values(require('../public/conversation-scenes.json').scenes)){
  for(const scene of [entry.cover,...Object.values(entry.turns)].filter(Boolean))sets.course.add(scene.path);
 }

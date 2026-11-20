@@ -165,8 +165,25 @@
   color: var(--red);
 }
 
-.song-lyrics h3, .song-patterns h3 {
+.song-patterns h3 {
   margin: 1rem 0 .35rem;
+}
+
+.song-lyrics {
+  scroll-margin-block-start: 5rem;
+}
+
+.song-lyrics-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: .4rem .65rem;
+  margin-block: 1rem .5rem;
+}
+
+.song-lyrics-heading h3 {
+  margin: 0;
 }
 
 .song-lyrics-text {

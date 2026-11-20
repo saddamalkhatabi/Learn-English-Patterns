@@ -367,6 +367,72 @@ html body .idea-picture-frame>.scene-frame>.scene-photo{width:100%!important;max
  flex-wrap: wrap;
 }
 
+.reference-strategies h2 {
+ margin: 0 0 .65rem;
+ font-size: 1.15rem;
+}
+
+.reference-strategy-options {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+ gap: .6rem;
+}
+
+.reference-strategy-options button {
+ display: flex;
+ align-items: center;
+ gap: .6rem;
+ min-height: 3.25rem;
+ padding: .55rem .7rem;
+ border: 1px solid var(--line);
+ border-radius: .65rem;
+ background: #fff;
+ color: var(--ink);
+ text-align: start;
+}
+
+.reference-strategy-options button:is(:hover, :focus-visible, [aria-pressed="true"]) {
+ border-color: var(--green);
+}
+
+.reference-strategy-options button[aria-pressed="true"] {
+ background: #eaf1e4;
+}
+
+.reference-strategy-icon {
+ display: grid;
+ flex: 0 0 1.85rem;
+ place-items: center;
+ min-height: 1.85rem;
+ border-radius: 50%;
+ background: #eaf1e4;
+ color: var(--green);
+}
+
+.reference-strategy-options button[aria-pressed="true"] .reference-strategy-icon {
+ background: var(--green);
+ color: #fff;
+}
+
+.reference-strategy-check {
+ visibility: hidden;
+ margin-inline-start: auto;
+ color: var(--green);
+ font-weight: 750;
+}
+
+.reference-strategy-options button[aria-pressed="true"] .reference-strategy-check {
+ visibility: visible;
+}
+
+#reference-strategy-help {
+ margin: .65rem 0;
+}
+
+.reference-strategies .buttonrow {
+ margin-block-end: 0;
+}
+
 .reference-guided-purpose {
  margin-block: .75rem;
  padding: .65rem .85rem;

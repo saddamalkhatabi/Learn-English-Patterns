@@ -6,7 +6,7 @@ try{
  const saved=localStorage.getItem('patterns-reference-guide-voice');
  if(referenceStudyAudio.voiceModes.includes(saved))referenceGuidedVoiceMode=saved;
 }catch{}
-trainingAudioReady.then(cues=>{referenceStudyRecordings=cues});
+trainingAudioReady.then(cues=>{referenceStudyRecordings=cues;refreshReferenceSummary()});
 
 function referenceStudyRecording(kind,text,voice){
  const cue=referenceStudyRecordings?.[referenceStudyAudio.cueId(kind,text,voice)];
@@ -50,24 +50,14 @@ function referencePatternCard(pattern){
   ${examples[0]?`<p lang="en" dir="ltr">${referenceGuidedSentenceWords(examples[0])}</p>`:''}</div>
   <div class="reference-card-actions buttonrow">
    <button class="primary" type="button" onclick="openReferenceGuided([${id}])">▷ ${T('شرح مع أمثلة إضافية','Explanation with additional examples')}</button>
-   ${EP.prefs.referenceGuided?'':`<button class="secondary" type="button" onclick="openReferenceGuided([${id}],{full:false})">▷ ${T('استمع إلى أمثلة النمط','Listen to pattern examples')}</button>`}
+   <button class="secondary" type="button" onclick="openReferenceGuided([${id}],{full:false})">▷ ${T('استمع إلى أمثلة النمط','Listen to pattern examples')}</button>
   </div></article>`;
 }
-pilotReady.then(()=>{if(page==='references'&&epReference.section==='patterns')renderReferenceRows()});
-
-const playReferenceSentence=playReference;
-playReference=function(id,voice){
- if(EP.prefs.referenceGuided)openReferenceGuided([id],{voice});
- else playReferenceSentence(id,voice);
-};
-const playReferenceSentences=playReferenceResults;
-playReferenceResults=function(){
- if(epReference.section==='patterns'){
-  openReferenceGuided(referencePatterns().map(referencePatternId),{full:EP.prefs.referenceGuided});
- }else if(EP.prefs.referenceGuided){
-  openReferenceGuided(referenceRows().map(row=>row.id));
- }else playReferenceSentences();
-};
+pilotReady.then(()=>{
+ if(page!=='references')return;
+ if(epReference.section==='patterns')renderReferenceRows();
+ else refreshReferenceSummary();
+});
 
 function referenceGuidedLesson(id){
  if(typeof id==='number'){

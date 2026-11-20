@@ -66,13 +66,14 @@ function homeAchievement(){
 }
 
 const homeServices=[
- ['library','study-01','تعلّم الأنماط','Pattern lessons','افهم القاعدة وطبّقها خطوة بخطوة.','Understand a structure and practise it step by step.'],
- ['coach','travel-01','الاستماع والتدريب','Listen & practise','اختر مسارًا واستمع إلى أمثلته وشرح قواعده.','Choose a route and hear its examples and rules.'],
- ['scene-studio','workshop-01','مكتبة الصور الذكية','Smart photo library','استمع إلى مفردات الصورة، وصف ما تراه، أو تدرّب على حوار من المشهد.','Hear the words in a photo, describe what you see, or practise a scene dialogue.'],
- ['references','market-01','مكتبة الألف جملة','1,000 sentences','ابحث عن جملة بالغرض أو الموضوع أو البناء.','Find sentences by purpose, topic or structure.'],
- ['dialogues','care-01','المحادثات','Conversations','استمع إلى حوارات بصوتين وتابع النص والمشهد.','Listen to two voices and follow the transcript and scene.'],
- ['comparisons','classroom-01','المقارنات','Comparisons','ميّز الصيغ المتشابهة بالأمثلة والشرح.','Tell similar structures apart with examples and explanations.'],
- ['vocabulary','study-09','أطلس المفردات والعبارات','Words & phrases atlas','ابحث بالكلمة ونوعها، وتتبّع ظهورها في الصور والجمل والمحادثات.','Find a word by type and explore its scenes, sentences and conversations.'],
+ ['library','تعلّم الأنماط','Pattern lessons','افهم القاعدة وطبّقها خطوة بخطوة.','Understand a structure and practise it step by step.'],
+ ['coach','الاستماع والتدريب','Listen & practise','اختر مسارًا واستمع إلى أمثلته وشرح قواعده.','Choose a route and hear its examples and rules.'],
+ ['songs','تعلّم الأنماط بالأغاني','Learn patterns with songs','استمع إلى الأغاني وتابع الكلمات المتزامنة، ثم ردّد الأنماط المميّزة.','Follow the synced lyrics as you listen, then sing the highlighted patterns.'],
+ ['scene-studio','مكتبة الصور الذكية','Smart photo library','استمع إلى مفردات الصورة، وصف ما تراه، أو تدرّب على حوار من المشهد.','Hear the words in a photo, describe what you see, or practise a scene dialogue.'],
+ ['references','مكتبة الألف جملة','1,000 sentences','ابحث عن جملة بالغرض أو الموضوع أو البناء.','Find sentences by purpose, topic or structure.'],
+ ['dialogues','المحادثات','Conversations','استمع إلى حوارات بصوتين وتابع النص والمشهد.','Listen to two voices and follow the transcript and scene.'],
+ ['comparisons','المقارنات','Comparisons','ميّز الصيغ المتشابهة بالأمثلة والشرح.','Tell similar structures apart with examples and explanations.'],
+ ['vocabulary','أطلس المفردات والعبارات','Words & phrases atlas','ابحث بالكلمة ونوعها، وتتبّع ظهورها في الصور والجمل والمحادثات.','Find a word by type and explore its scenes, sentences and conversations.'],
 ];
 
 home=function(){
@@ -90,8 +91,8 @@ home=function(){
   </section>
   <section id="home-achievement" class="home-achievement panel">${homeAchievement()}</section>
   <section id="home-services"><div class="sectionhead"><h2>${T('اختر كيف تتمرّن','Choose how to practise')}</h2></div>
-   <div class="home-services">${homeServices.map(([route,image,ar,en,arDesc,enDesc])=>
-    `<a class="home-service" href="#${route}"><img src="assets/scenes/idea-lab/${image}.webp" width="500" height="300" loading="lazy" alt="">
+   <div class="home-services">${homeServices.map(([route,ar,en,arDesc,enDesc])=>
+    `<a class="home-service" href="#${route}"><img src="assets/home/${route}.webp" width="780" height="520" loading="lazy" alt="">
      <div><h3>${T(ar,en)}</h3><p>${T(arDesc,enDesc)}</p><span class="textlink">${T('افتح','Open')} ↗</span></div></a>`
    ).join('')}</div>
   </section>`;

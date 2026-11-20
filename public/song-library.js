@@ -84,7 +84,9 @@ const renderSongLibrary=(()=>{
   root.querySelector('.song-topic').textContent=T(selected.topicAr,selected.topicEn);
   root.querySelector('.song-level').textContent=learningLevelLabel(selected.level);
   const lyricsPanel=root.querySelector('.song-lyrics-text');
-  lyricsPanel.innerHTML=lyricsMarkup(lyrics[selected.id],timings[selected.id]?.lines||[]);
+  const timeline=timings[selected.id]?.lines||[];
+  lyricsPanel.innerHTML=lyricsMarkup(lyrics[selected.id],timeline);
+  root.querySelector('.song-sync-label').hidden=!timeline.length;
   lyricsPanel.scrollTop=0;
   paintSongTiming();
   root.querySelector('.song-patterns').innerHTML=`
@@ -144,6 +146,7 @@ const renderSongLibrary=(()=>{
   root.querySelector('.song-layout').hidden=false;
   root.querySelector('#song-list-title').textContent=T('قائمة الأغاني','Songs');
   root.querySelector('#song-lyrics-title').textContent=T('كلمات الأغنية','Lyrics');
+  root.querySelector('.song-sync-label').textContent=T('متابعة مع الغناء','Synced to the vocals');
   const filters=root.querySelector('.song-filters');
   filters.setAttribute('aria-label',T('فلترة قائمة الأغاني حسب المستوى','Filter songs by level'));
   filters.innerHTML=['',...Object.keys(learningLevelNames)].map(value=>
@@ -252,7 +255,7 @@ const renderSongLibrary=(()=>{
        <p class="song-playback-status" role="status"></p>
       </div>
       <section class="song-lyrics" aria-labelledby="song-lyrics-title">
-       <h3 id="song-lyrics-title"></h3>
+       <div class="song-lyrics-heading"><h3 id="song-lyrics-title"></h3><small class="song-sync-label" hidden></small></div>
        <div class="song-lyrics-text" lang="en" dir="ltr" tabindex="0" role="region" aria-labelledby="song-lyrics-title"></div>
       </section>
       <div class="song-patterns"></div>
@@ -268,6 +271,9 @@ const renderSongLibrary=(()=>{
    stopOtherAudio();
    playbackFailed=false;
    paintPlaybackStatus();
+   root.querySelector('.song-lyrics').scrollIntoView({
+    block:'start',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'
+   });
   });
   player.addEventListener('playing',()=>{
    if(player!==audio)return;
