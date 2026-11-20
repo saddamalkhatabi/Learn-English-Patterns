@@ -230,8 +230,8 @@ const regional=[...regionalEntries.values()].map(entry=>({...entry,sourceIds:[..
 const atlas={schema:1,classification:'contextual-automatic-with-reviewed-image-labels',sources,entries:[...entries.values()],regional};
 const termsById=new Map([...atlas.entries,...regional].map(entry=>[entry.id,entry]));
 for(const entry of regional)for(const index of entry.sourceIds)studyWords.get(sources[index].id)?.unshift({termId:entry.id});
-const studyPositions=new Set(['VERB','ADJ','NOUN','ADV','PHRASE']);
-const genericStudyWords=new Set(['be','do','go','get','have','say','thing','very','really','some']);
+const studyPositions=['VERB','ADJ','NOUN','ADV','PHRASE'];
+const {eligibleWord}=require('../public/reference-study-audio.js');
 for(const row of referenceRows){
  const study=referenceStudy.rows[row.id],terms=new Map();
  for(const id of [row.id,...study.examples]){
@@ -239,7 +239,7 @@ for(const row of referenceRows){
   const usable=new Set(words.map(word=>word.termId));
   for(const termId of usable){
    const entry=termsById.get(termId);
-   if(!entry?.ar||!studyPositions.has(entry.pos)||genericStudyWords.has(entry.lemma))continue;
+   if(!eligibleWord(entry))continue;
    const key=entry.pos+'|'+entry.lemma;
    if(!terms.has(key))terms.set(key,{id:entry.id,pos:entry.pos,count:0});
    terms.get(key).count++;

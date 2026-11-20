@@ -70,15 +70,39 @@ function openCoachPhotoPractice(button){
 }
 function markTeacherSettings(){
  $('#teacher-selection-status').textContent=T('اختيار جديد. اضغط «طبّق الاختيار وابدأ» لتحديث التدريب.','New selection. Press Apply selection and start to update the route.');
+ paintTeacherFilterState();
 }
 function selectTeacherPatterns(checked){
  $('#teacher-route').value='';
  document.querySelectorAll('[name="route-pattern"]').forEach(input=>input.checked=checked);
  markTeacherSettings();
 }
-function filterTeacherPatterns(query){
+function filterTeacherPatterns(query=EPFilters.read('coach-patterns',{query:''}).query){
+ const search=$('.teacher-patterns input[type="search"]');
+ if(!search)return;
+ search.value=query;
+ if(!document.body.dataset.linkedLearning)EPFilters.save('coach-patterns',{query});
  const term=query.trim().toLowerCase();
  document.querySelectorAll('[data-teacher-pattern]').forEach(label=>label.hidden=!label.textContent.toLowerCase().includes(term));
+ paintTeacherFilterState();
+}
+function paintTeacherFilterState(){
+ const controls=$('.route-filters');
+ if(!controls)return;
+ const selection=[...controls.querySelectorAll('[name="route-pattern"]')];
+ EPFilters.show(controls,{
+  query:controls.querySelector('input[type="search"]').value,
+  purpose:!['','full-course'].includes($('#teacher-route').value),
+  stage:Number($('#route-stage').value),sample:Number($('#route-sample').value),
+  level:$('#route-level').value,patterns:!$('#teacher-route').value&&selection.some(input=>!input.checked)
+ },()=>{
+  $('#teacher-route').value=$('#route-level').value='';
+  $('#route-stage').value=$('#route-sample').value='0';
+  selection.forEach(input=>input.checked=true);
+  $('#teacher-level-guide').textContent='';
+  filterTeacherPatterns('');
+  configureRoute(false);
+ });
 }
 function chooseTeacherPurpose(id){
  const purpose=CURRICULUM?.routes.find(item=>item.id===id);
@@ -86,7 +110,7 @@ function chooseTeacherPurpose(id){
  const ids=new Set(id==='full-course'?PILOT.pattern_order:orderLearningPatterns(purpose.pattern_ids));
  document.querySelectorAll('[name="route-pattern"]').forEach(input=>input.checked=ids.has(+input.value));
 }
-configureRoute=function(){
+configureRoute=function(start=true){
  const routeId=$('#teacher-route').value;
  const purpose=CURRICULUM?.routes.find(item=>item.id===routeId);
  const patternIds=orderLearningPatterns((routeId==='full-course'?PILOT.pattern_order:purpose?.pattern_ids)||[...document.querySelectorAll('[name="route-pattern"]:checked')].map(input=>+input.value));
@@ -103,9 +127,12 @@ configureRoute=function(){
  route.configure(options);
  $('#teacher-selection-status').textContent=teacherSummary();
  $('#teacher-active-route').textContent=teacherSummary();
- document.querySelector('.route-config').open=false;
- route.play();
- revealCoachContent();
+ paintTeacherFilterState();
+ if(start){
+  document.querySelector('.route-config').open=false;
+  route.play();
+  revealCoachContent();
+ }
 };
 coach=function(){if(!PILOT||!route)return head(T('الاستماع والتدريب','Listen & practise'),T('جارٍ تحميل المسار…','Loading your route…'));const selected=new Set(route.session.filters?.patternIds||teacherOrder());return `${head(T('استمع للفكرة. وتوقف لتفهم البناء.','Hear the idea. Stop to notice the structure.'),T('اسمع تركيب النمط وقاعدته، راجعها بالوتيرة التي تختارها، ثم استمع إلى الأمثلة ومحادثة تطبّقها.','Hear how the pattern works, review it at your pace, then listen to examples and a conversation.'),'GUIDED LISTENING')}${epSectionLinks(['routes'])}<details class="panel route-config" open><summary>${T('اختيار المسار وإعدادات التدريب','Choose your route & practice settings')}</summary><div class="route-filters" onchange="markTeacherSettings()"><label class="field">${T('مسار حسب الغرض','Purpose route')}<select id="teacher-route" onchange="chooseTeacherPurpose(this.value)"><option value="">${T('اختيار يدوي','Manual selection')}</option>${(CURRICULUM?.routes||[]).map(r=>`<option value="${r.id}" ${route.session.filters?.routeId===r.id?'selected':''}>${T(r.title,EP.dictionary.get(r.title)||r.id.replace(/-/g,' '))}</option>`).join('')}</select></label><label class="field">${T('طريقة التدريب','Practice mode')}<select id="route-mode"><option value="listen" ${route.session.mode==='listen'?'selected':''}>${T('استماع متتابع','Continuous listening')}</option><option value="interactive" ${route.session.mode==='interactive'?'selected':''}>${T('إنتاج عبارة بعد كل جملة','Write a new idea after each sentence')}</option></select></label><label class="field">${T('سياسة الصوت','Voice selection')}<select id="route-voice"><option value="alternate">${T('تناوب Adam وBella','Alternate Adam & Bella')}</option><option value="male" ${route.session.voiceMode==='male'?'selected':''}>Adam</option><option value="female" ${route.session.voiceMode==='female'?'selected':''}>Bella</option></select></label><label class="field">${T('عدد الأمثلة لكل نمط','Examples per pattern')}<select id="route-sample">${[[0,'كل الأمثلة','All examples'],[3,'مراجعة سريعة · حتى 3','Quick review · up to 3'],[6,'مراجعة متنوعة · حتى 6','Varied review · up to 6']].map(([v,ar,en])=>`<option value="${v}" ${(route.session.filters?.sample||0)===v?'selected':''}>${T(ar,en)}</option>`).join('')}</select></label><label class="field">${T('مرحلة الأمثلة','Example stage')}<select id="route-stage"><option value="0">${T('جميع المراحل','All stages')}</option>${[1,2,3,4,5,6].map(n=>`<option value="${n}" ${route.session.filters?.stage===n?'selected':''}>${n}</option>`).join('')}</select></label><label class="field">${T('مستوى التعلّم','Learning level')}<select id="route-level" onchange="$('#teacher-level-guide').textContent=learningLevelGuide(this.value)">${learningLevelOptions(route.session.filters?.learningLevel)}</select><small id="teacher-level-guide">${learningLevelGuide(route.session.filters?.learningLevel)}</small></label><label class="field">${T('شرح القاعدة ووقت المراجعة','Rule explanation and review time')}<select id="route-reading-seconds"><option value="default" ${route.session.readingSeconds==null?'selected':''}>${T('استخدم إعداد الشرح العام','Use default rule settings')}</option>${ruleReviewOptions(route.session.readingSeconds??NaN)}</select></label>${teacherDialogueOptions()}<label class="setting-toggle"><input id="route-auto-next" type="checkbox" ${route.session.autoNextPattern!==false?'checked':''}>${T('بدء النمط التالي تلقائيًا بعد المحادثة','Start the next pattern automatically after conversation')}</label><details class="teacher-patterns"><summary>${T('اختيار الأنماط','Choose patterns')} · ${PILOT.patterns.length}</summary><div class="buttonrow"><button type="button" onclick="selectTeacherPatterns(true)">${T('اختيار الكل','Select all')}</button><button type="button" onclick="selectTeacherPatterns(false)">${T('إلغاء الكل','Clear all')}</button></div><input type="search" aria-label="${T('ابحث عن نمط','Find a pattern')}" placeholder="${T('اسم النمط أو معناه','Pattern or meaning')}" oninput="filterTeacherPatterns(this.value)"><fieldset aria-label="${T('الأنماط','Patterns')}">${PILOT.pattern_order.map(id=>PILOT.patterns.find(p=>p.id===id)).map(p=>`<label data-teacher-pattern><input onchange="$('#teacher-route').value=''" name="route-pattern" type="checkbox" value="${p.id}" ${selected.has(p.id)?'checked':''}><span class="pattern-form" style="font-size:15px" lang="en" dir="ltr">${H(p.form)}</span><small>${H(T(p.title,p.form))} · ${learningLevelLabel(learningLevels.patterns[p.id]||'')}</small></label>`).join('')}</fieldset></details><p id="teacher-selection-status" role="status">${teacherSummary()}</p><button class="primary" onclick="configureRoute()">${T('طبّق الاختيار وابدأ','Apply selection and start')}</button></div></details><p id="teacher-active-route" role="status">${teacherSummary()}</p><section class="coach-shell"><div class="coach-meta" id="coach-meta"></div><div class="progress-track" role="progressbar" aria-label="${T('تقدم التدريب','Practice progress')}" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i id="coach-progress"></i></div><div class="coach-body" id="coach-body"></div><div class="coach-controls"><div class="coach-playback-actions"><button class="secondary" onclick="coachPrevious()">← ${T('السابق','Previous')}</button><button class="primary" id="coach-toggle" onclick="toggleCoach()"></button><button class="secondary" id="coach-next" onclick="coachNext()">${T('التالي','Next')} →</button><button class="secondary" id="coach-other-voice" onclick="route.otherVoice()">${T('الصوت الآخر','Other voice')}</button><label class="speedlabel">${T('السرعة','Speed')}<select aria-label="${T('سرعة التدريب','Practice speed')}" onchange="route.setRate(this.value)">${[.75,.85,1,1.15].map(v=>`<option value="${v}" ${route.session.rate===v?'selected':''}>${v}×</option>`).join('')}</select></label><span id="coach-image-options">${patternsImageControls()}</span></div><div id="coach-practice-actions" role="group" aria-label="${T('تعلّم النمط ومارسه','Study and practise the pattern')}"><button class="secondary" id="coach-study-pattern" onclick="openPatternLesson(route.pattern.id,this)">${T('تعلّم النمط','Study the pattern')}</button><span id="coach-idea-practice"></span><button class="secondary" id="coach-photo-practice" onclick="openCoachPhotoPractice(this)" disabled>${T('مارس أكثر مع الصورة الظاهرة','Practise more with this photo')}</button></div></div><div class="seek-row"><span id="coach-time"></span><input type="range" min="0" step=".01" id="coach-seek" aria-label="${T('موضع التسجيل','Audio position')}" onchange="route.seek(this.value)"><span id="coach-duration"></span></div><div class="coach-options"><label><input type="checkbox" ${hideCoachText?'checked':''} onchange="hideCoachText=this.checked;paintTextVisibility()">${T('إخفاء النص الإنجليزي اختياريًا','Optionally hide English text')}</label><span id="coach-status" role="status"></span></div></section><div class="ep-section-title"><h2>${T('جمل النمط الحالي','Current pattern examples')}</h2><span>${T('انقر مثالًا من المسار للانتقال إليه','Choose an example from the route')}</span></div><div id="coach-sentences" class="sentence-strip"></div>`};
 toggleCoach=function(){if(!route)return;stopRecorded();catalogAudio?.pause();if(referencePlayerOpen)closeReferencePlayer();if(route.running)route.pause();else{if(referenceGuided?.playing)pauseReferenceGuided(referenceGuided);route.play();revealCoachContent()}};

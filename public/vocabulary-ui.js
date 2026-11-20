@@ -1,5 +1,8 @@
 let vocabularyData=null,vocabularyLoad=null,vocabularyPageNumber=0,vocabularyTerm=null,vocabularyAudio=null;
-let vocabularyQuery='',vocabularyType='',vocabularyCollection='',vocabularyPattern='',vocabularyLevel='',vocabularyVoice='male',vocabularyRegional='';
+const savedVocabularyFilters=EPFilters.read('vocabulary',{query:'',type:'',collection:'',pattern:'',level:'',regional:''});
+let vocabularyQuery=savedVocabularyFilters.query,vocabularyType=savedVocabularyFilters.type,
+ vocabularyCollection=savedVocabularyFilters.collection,vocabularyPattern=savedVocabularyFilters.pattern,
+ vocabularyLevel=savedVocabularyFilters.level,vocabularyVoice='male',vocabularyRegional=savedVocabularyFilters.regional;
 let vocabularyEntriesByKey=new Map(),vocabularySearch=new Map(),vocabularyPreferredScene='';
 function loadVocabulary(){
  if(!vocabularyLoad)vocabularyLoad=fetch('vocabulary-index.json').then(response=>{
@@ -71,7 +74,6 @@ function vocabularyPage(){
       ['shared','عبارات مشتركة','Shared expressions']].map(([id,ar,en])=>
      `<option value="${id}" ${vocabularyRegional===id?'selected':''}>${T(ar,en)}</option>`).join('')}</select></label>
    <label>${T('الصوت','Voice')}<select onchange="vocabularyVoice=this.value"><option value="male" ${vocabularyVoice==='male'?'selected':''}>Adam</option><option value="female" ${vocabularyVoice==='female'?'selected':''}>Bella</option></select></label>
-   <button type="button" class="secondary" onclick="clearVocabularyFilters()">${T('مسح البحث والفلاتر','Clear search and filters')}</button>
   </div>
   <p class="lesson-hint">${T('قد تكون للكلمة أدوار مختلفة. راجع معناها ونوعها في المثال الظاهر.','A word may have different roles. Check its meaning and type in the example shown.')}</p>
   <section id="vocabulary-detail"></section><p id="vocabulary-count" role="status"></p>
@@ -106,6 +108,10 @@ function vocabularyMatchesSource(source){
 function paintVocabulary(){
  const host=$('#vocabulary-results');
  if(!host)return;
+ const filters={query:vocabularyQuery,type:vocabularyType,collection:vocabularyCollection,
+  pattern:vocabularyPattern,level:vocabularyLevel,regional:vocabularyRegional};
+ if(!document.body.dataset.linkedLearning)EPFilters.save('vocabulary',filters);
+ EPFilters.show($('.vocabulary-filters'),filters,clearVocabularyFilters);
  if(!vocabularyData){$('#vocabulary-count').textContent=T('جارٍ تحميل الأطلس…','Loading the atlas…');return}
  const query=normalizeSceneQuery(EPVocabulary.normalize(vocabularyQuery)),size=36;
  const entries=vocabularyAllEntries.filter(entry=>

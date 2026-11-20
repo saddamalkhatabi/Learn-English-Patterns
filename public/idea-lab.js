@@ -1,12 +1,12 @@
 /* Guided practice used by the smart photo library. */
-let ideaLibrary=null,ideaAction='observe',ideaWordFilter='';
+let ideaLibrary=null,ideaAction='observe',ideaWordFilter=EPFilters.read('photo-vocabulary',{type:''}).type;
 const ideaActions=[
  ['observe','لاحظ وتذكّر','Notice & recall'],
  ['apply','عبّر بطريقتك','Say it your way'],
  ['roleplay','تحاور','Role-play']
 ];
 const ideaWriting=new Map(),ideaGuided=new Map();
-let ideaArchive=[],ideaArchiveScope='scene',ideaArchiveView=null;
+let ideaArchive=[],ideaArchiveScope=EPFilters.read('photo-dialogue-archive',{scope:'scene'}).scope,ideaArchiveView=null;
 try{
  const entries=JSON.parse(localStorage.getItem('nasaq-idea-dialogues-v1'));
  if(Array.isArray(entries))ideaArchive=entries.filter(entry=>entry?.id&&entry.sceneId&&Array.isArray(entry.turns));
@@ -45,10 +45,21 @@ function setIdeaAction(value,focus=false){
 }
 function setIdeaWordFilter(value){
  ideaWordFilter=value;
+ if(!document.body.dataset.linkedLearning)EPFilters.save('photo-vocabulary',{type:value});
+ paintIdeaWordFilter();
  clearIdeaFlash();
  const scene=currentIdeaScene();
  if(ideaAction==='observe')paintIdeaTask(scene,true);
  setIdeaWordMode(ideaWordMode);
+}
+function paintIdeaWordFilter(){
+ const picker=$('#idea-word-filter');
+ if(!picker)return;
+ EPFilters.show(picker.closest('.idea-viewer-options'),{type:ideaWordFilter},()=>{
+  picker.value='';
+  setIdeaWordFilter('');
+  picker.focus({preventScroll:true});
+ });
 }
 function visibleIdeaWords(scene){
  return scene.words.map((word,index)=>({ ...word,index })).filter(word=>{

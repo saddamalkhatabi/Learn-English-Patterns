@@ -1,4 +1,4 @@
-let referenceStudyLoad;
+let referenceStudyLoad,referenceStudyCourse,referenceStudyPilot,studySpeech,studySpeechRun=0;
 function loadReferenceStudy(){
  if(!referenceStudyLoad)referenceStudyLoad=fetch('reference-study.json').then(response=>{
   if(!response.ok)throw Error('reference study');
@@ -11,7 +11,16 @@ function loadReferenceStudy(){
 }
 
 function referenceExampleRow(id,data){
- return data.examples[id]||referencePlayer?.rows.get(id)||PILOT?.sentences.find(row=>row.id===id);
+ if(referenceStudyPilot!==PILOT||!referenceStudyCourse){
+  referenceStudyPilot=PILOT;
+  referenceStudyCourse=new Map(PILOT?.sentences.map(row=>[row.id,row]));
+ }
+ return data?.examples[id]||referencePlayer?.rows.get(id)||referenceStudyCourse.get(id);
+}
+
+function referenceContextWords(base,examples,data,atlas){
+ return referenceStudyAudio.studyWords(data?.rows[base.id]?.terms||[],vocabularyById,atlas?.sources||[],
+  id=>referenceExampleRow(id,data),[base,...examples]);
 }
 
 function referenceExampleEnglish(row,format=H){
@@ -24,19 +33,58 @@ function referenceExampleEnglish(row,format=H){
 function referenceExampleMarkup(row){
  return `<li class="reference-study-example" data-reference-example="${H(row.id)}" tabindex="-1">
   ${referenceExampleEnglish(row)}${EP.ar(row.ar)}
-  ${row.recordings?.male?.path?`<button type="button" class="secondary" data-example-id="${H(row.id)}" onclick="hearReferenceStudyExample(this.dataset.exampleId)">▶ ${T('استمع إلى المثال','Hear the example')}</button>`:''}
+  <button type="button" class="secondary" data-example-id="${H(row.id)}" onclick="hearReferenceStudyExample(this.dataset.exampleId)">▶ ${T('استمع إلى المثال','Hear the example')}</button>
   ${row.source?`<a class="textlink reference-study-source" href="${H(row.source)}" target="_blank" rel="noopener noreferrer">${T('مرجع الاستعمال','Usage source')}</a>`:''}</li>`;
 }
 
-function hearReferenceStudyExample(id){
- const row=referencePlayer?.rows.get(id)||PILOT?.sentences.find(sentence=>sentence.id===id);
- const recording=row?.recordings?.male;
- if(!recording?.path)return;
+async function playReferenceStudyTracks(resolveTracks,voice){
  stopSpeech({keepReferencePlayer:true});
- const audio=new Audio(recording.path);
- catalogAudio=audio;
- audio.playbackRate=state.rate||1;
- audio.play().catch(()=>toast(T('تعذّر تشغيل المثال.','Could not play the example.')));
+ const run=studySpeechRun;
+ const tracks=await resolveTracks();
+ if(run!==studySpeechRun)return;
+ for(const track of tracks){
+  const rate=state.rate||1;
+  studySpeech=track.recording?.path?playVocabularyClip(track.recording,{rate}):synthesizeTrainingCue(track.text,rate,voice);
+  let played=await studySpeech.done;
+  if(run!==studySpeechRun)return;
+  if(!played&&track.recording?.path){
+   studySpeech=synthesizeTrainingCue(track.text,rate,voice);
+   played=await studySpeech.done;
+   if(run!==studySpeechRun)return;
+  }
+  studySpeech=null;
+  if(!played){
+   toast(T('تعذّر تشغيل التسجيل.','Could not play the recording.'));
+   break;
+  }
+ }
+}
+
+const stopBeforeStudySpeech=stopSpeech;
+function stopReferenceStudySpeech(){
+ studySpeechRun++;
+ studySpeech?.stop();
+ studySpeech=null;
+}
+window.addEventListener('hashchange',stopReferenceStudySpeech);
+stopSpeech=function(options){
+ stopReferenceStudySpeech();
+ stopBeforeStudySpeech(options);
+};
+
+function referenceStudySentenceTrack(row,voice){
+ const text=englishAmerican(row.en,row);
+ return {text,recording:row.recordings?.[voice]||referenceStudyRecording('example',text,voice)};
+}
+
+function hearReferenceStudyExample(id,voice='male',term=''){
+ return playReferenceStudyTracks(async()=>{
+  const [data]=await Promise.all([loadReferenceStudy(),pilotReady,trainingAudioReady,term?loadVocabulary():null]);
+  const row=referenceExampleRow(id,data),entry=term&&vocabularyById.get(term);
+  if(!row)return [];
+  const sentence=referenceStudySentenceTrack(row,voice);
+  return entry?[{text:entry.en,recording:referenceGuidedWordRecording({...entry,row},entry.en,voice)},sentence]:[sentence];
+ },voice);
 }
 
 async function openReferenceStudy(detail){
@@ -54,7 +102,8 @@ async function openReferenceStudy(detail){
  const id=detail.dataset.referenceStudy,study=data.rows[id];
  if(!study)return;
  const group=data.groups[study.group];
- const examples=study.examples.map(id=>referenceExampleRow(id,data)).filter(Boolean);
+ const base=referenceExampleRow(id,data);
+ const examples=base?referenceGuidedExamples({base},data):[];
  const comparison=group?.comparison||study.comparison;
  host.innerHTML=`
   ${comparison?`<div class="reference-study-note"><strong>${T('قارن بين الاستعمالات','Compare usage')}</strong>${EP.pair(...comparison)}</div>`:''}
@@ -78,20 +127,28 @@ async function openReferenceStudyWords(detail){
   return;
  }
  host.dataset.loaded='ready';
- const referenceId=detail.dataset.referenceId,study=data.rows[referenceId];
- const ordered=[referenceId,...study.examples];
- host.innerHTML=study.terms.map(id=>{
-  const entry=vocabularyById.get(id);
-  if(!entry)return '';
-  const uses=new Map(entry.sourceIds.map(index=>[atlas.sources[index].id,atlas.sources[index]]));
-  const source=uses.get(ordered.find(id=>uses.has(id)));
-  const text=source?.uk&&EP.prefs.englishUsage==='uk'?source.uk:source&&englishDisplay(source.en,source);
+ const referenceId=detail.dataset.referenceId,base=referenceExampleRow(referenceId,data);
+ if(!base)return;
+ const examples=referenceGuidedExamples({base},data);
+ host.innerHTML=referenceContextWords(base,examples,data,atlas).map(entry=>{
+  const source=entry.row;
   const name=vocabularyEntryName(entry);
+  const displayed=EP.prefs.englishUsage==='uk'&&source.uk?source.uk:englishDisplay(source.en,source);
+  const text=EPVocabulary.includesTerm(displayed,name)?displayed:source.en;
+  const marked=EPVocabulary.includesTerm(text,name)?name:entry.en;
   return `<div class="reference-study-term">
-   <button type="button" class="textlink" data-term="${H(entry.id)}" data-source="${H(source?.id||referenceId)}"
+   <button type="button" class="textlink" data-term="${H(entry.id)}" data-source="${H(source.id)}"
     onclick="openVocabularyFromScene(this.dataset.term,this.dataset.source)" lang="en" dir="ltr">${H(name)} ↗</button>
    ${wordTypeBadge(entry)}${vocabularyUsageTags(entry)}${EP.ar(entry.ar)}
-   ${text?`<p lang="en" dir="ltr">${vocabularyMarked(text,name)}</p>`:''}</div>`;
+   <p lang="en" dir="ltr">${vocabularyMarked(text,marked)}</p>${EP.ar(source.ar)}
+   <div class="buttonrow">
+    <button type="button" class="secondary" data-example-id="${H(source.id)}" data-term="${H(entry.id)}"
+     onclick="hearReferenceStudyExample(this.dataset.exampleId,'male',this.dataset.term)">▶ ${T('المفردة ثم الجملة','Word then sentence')} · Adam</button>
+    <button type="button" class="secondary" data-example-id="${H(source.id)}" data-term="${H(entry.id)}"
+     onclick="hearReferenceStudyExample(this.dataset.exampleId,'female',this.dataset.term)">▶ ${T('المفردة ثم الجملة','Word then sentence')} · Bella</button>
+    <button type="button" class="textlink" data-example-id="${H(source.id)}"
+     onclick="hearReferenceStudyExample(this.dataset.exampleId)">▷ ${T('الجملة فقط','Sentence only')}</button>
+   </div></div>`;
  }).join('');
 }
 

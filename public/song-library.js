@@ -1,7 +1,8 @@
 const renderSongLibrary=(()=>{
- let tracks, lyrics, selected, level='', root, audio, language;
+ let tracks, lyrics, timings={}, selected, level=EPFilters.read('songs',{level:''}).level, root, audio, language;
  let loading=false, loadFailed=false, playbackFailed=false;
  let sequence='off';
+ let activeLine,activeWord,lyricFrame;
  const stopOtherAudio=stopSpeech;
  stopSpeech=function(options){
   audio?.pause();
@@ -24,16 +25,57 @@ const renderSongLibrary=(()=>{
    sequence==='finished'?T('اكتمل تشغيل جميع الأغاني.','All songs have finished playing.'):'';
  }
 
- function lyricsMarkup({text,highlights}){
+ function lyricsMarkup({text,highlights},timeline){
+  const timed=new Map(timeline.map(cue=>[cue.line,cue.words]));
   return text.split('\n').map((line,index)=>{
    if(/^\[(Verse \d+|Chorus)\]$/.test(line))return `<span class="song-verse">${H(line)}</span>`;
+   const words=timed.get(index);
+   const segment=(from,to)=>{
+    let cursor=from,html='';
+    for(const [word,[start,stop]] of (words||[]).entries()){
+     if(start<from||stop>to)continue;
+     html+=H(line.slice(cursor,start))+`<span data-song-word="${word}">${H(line.slice(start,stop))}</span>`;
+     cursor=stop;
+    }
+    return html+H(line.slice(cursor,to));
+   };
    let end=0, marked='';
    for(const [start,stop] of highlights[index]||[]){
-    marked+=H(line.slice(end,start))+`<strong class="pattern-token">${H(line.slice(start,stop))}</strong>`;
+    marked+=segment(end,start)+`<strong class="pattern-token">${segment(start,stop)}</strong>`;
     end=stop;
    }
-   return marked+H(line.slice(end));
+   marked+=segment(end,line.length);
+   return words?`<span class="song-lyric-line" data-song-line="${index}">${marked}</span>`:marked;
   }).join('\n');
+ }
+
+ function paintSongTiming(){
+  if(!root||!selected||!audio)return;
+  const time=audio.currentTime*1000;
+  const cue=timings[selected.id]?.lines.find(line=>line.start_ms<=time&&time<line.end_ms);
+  const panel=root.querySelector('.song-lyrics-text');
+  if(cue?.line!==Number(activeLine?.dataset.songLine)||!activeLine?.isConnected){
+   activeLine?.removeAttribute('aria-current');
+   activeLine=cue?panel.querySelector(`[data-song-line="${cue.line}"]`):null;
+   if(activeLine){
+    activeLine.setAttribute('aria-current','true');
+    const line=activeLine.getBoundingClientRect(), viewport=panel.getBoundingClientRect();
+    if(line.top<viewport.top+12||line.bottom>viewport.bottom-12){
+     panel.scrollTop+=line.top-viewport.top-viewport.height*.27;
+    }
+   }
+  }
+  const word=cue?.words.findIndex(([, ,start,end])=>start<=time&&time<end)??-1;
+  const current=word<0?null:activeLine?.querySelector(`[data-song-word="${word}"]`);
+  if(current===activeWord)return;
+  activeWord?.classList.remove('song-word-current');
+  activeWord=current;
+  activeWord?.classList.add('song-word-current');
+ }
+
+ function tickSongLyrics(){
+  paintSongTiming();
+  if(audio&&!audio.paused)lyricFrame=requestAnimationFrame(tickSongLyrics);
  }
 
  function paintSelection(){
@@ -42,8 +84,9 @@ const renderSongLibrary=(()=>{
   root.querySelector('.song-topic').textContent=T(selected.topicAr,selected.topicEn);
   root.querySelector('.song-level').textContent=learningLevelLabel(selected.level);
   const lyricsPanel=root.querySelector('.song-lyrics-text');
-  lyricsPanel.innerHTML=lyricsMarkup(lyrics[selected.id]);
+  lyricsPanel.innerHTML=lyricsMarkup(lyrics[selected.id],timings[selected.id]?.lines||[]);
   lyricsPanel.scrollTop=0;
+  paintSongTiming();
   root.querySelector('.song-patterns').innerHTML=`
    <h3>${T('أنماط وأمثلة للترديد','Patterns and examples to repeat')}</h3>
    <ul>${selected.patterns.map(({id,form,en,ar})=>`
@@ -67,6 +110,12 @@ const renderSongLibrary=(()=>{
    row.hidden=Boolean(level&&row.dataset.trackLevel!==level);
   }
   root.querySelector('.song-tracks').scrollTop=0;
+  EPFilters.save('songs',{level});
+  EPFilters.show(root.querySelector('.song-filters'),{level},()=>{
+   level='';
+   paintFilter();
+   root.querySelector('[data-song-level=""]').focus({preventScroll:true});
+  });
  }
 
  function revealPlayingTrack(){
@@ -95,7 +144,6 @@ const renderSongLibrary=(()=>{
   root.querySelector('.song-layout').hidden=false;
   root.querySelector('#song-list-title').textContent=T('قائمة الأغاني','Songs');
   root.querySelector('#song-lyrics-title').textContent=T('كلمات الأغنية','Lyrics');
-  root.querySelector('.song-lyrics-source').textContent=T('النص من طلب التوليد.','Lyrics from the generation prompt.');
   const filters=root.querySelector('.song-filters');
   filters.setAttribute('aria-label',T('فلترة قائمة الأغاني حسب المستوى','Filter songs by level'));
   filters.innerHTML=['',...Object.keys(learningLevelNames)].map(value=>
@@ -121,15 +169,19 @@ const renderSongLibrary=(()=>{
   loadFailed=false;
   paintPage();
   try{
-   const [data,texts]=await Promise.all(['song-library.json','song-lyrics.json'].map(async file=>{
+   const load=async file=>{
     const response=await fetch(file);
     if(!response.ok)throw Error(`Could not load ${file}`);
     return response.json();
-   }));
+   };
+   const [data,texts,lineTimes]=await Promise.all([
+    load('song-library.json'),load('song-lyrics.json'),load('song-timing.json').catch(()=>({}))
+   ]);
    if(!Array.isArray(data)||!data.length||!data.every(song=>texts?.[song.id]?.text)){
     throw Error('Song catalog or lyrics are unavailable');
    }
    lyrics=texts;
+   timings=lineTimes;
    tracks=data;
    selected=tracks[0];
   }catch{
@@ -201,7 +253,6 @@ const renderSongLibrary=(()=>{
       </div>
       <section class="song-lyrics" aria-labelledby="song-lyrics-title">
        <h3 id="song-lyrics-title"></h3>
-       <p class="song-lyrics-source"></p>
        <div class="song-lyrics-text" lang="en" dir="ltr" tabindex="0" role="region" aria-labelledby="song-lyrics-title"></div>
       </section>
       <div class="song-patterns"></div>
@@ -218,6 +269,14 @@ const renderSongLibrary=(()=>{
    playbackFailed=false;
    paintPlaybackStatus();
   });
+  player.addEventListener('playing',()=>{
+   if(player!==audio)return;
+   cancelAnimationFrame(lyricFrame);
+   tickSongLyrics();
+  });
+  for(const event of ['timeupdate','seeked','pause']){
+   player.addEventListener(event,()=>{if(player===audio)paintSongTiming()});
+  }
   player.addEventListener('error',()=>{
    if(player!==audio||!player.error)return;
    failPlayback();
@@ -254,6 +313,8 @@ const renderSongLibrary=(()=>{
  window.addEventListener('hashchange',()=>{
   if(location.hash==='#songs'||!root)return;
   audio.pause();
+  cancelAnimationFrame(lyricFrame);
+  activeLine=activeWord=null;
   audio=null;
   root=null;
   language=null;

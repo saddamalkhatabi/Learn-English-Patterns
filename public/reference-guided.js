@@ -1,5 +1,5 @@
 const referenceStudyAudio=EPReferenceStudyAudio;
-const referenceGuideStages=referenceStudyAudio.stages;
+const referenceGuideStages=[...referenceStudyAudio.stages,['purpose','الغرض والجملة','Purpose and sentence','']];
 let referenceGuided=null,referenceCourseSentences,referenceStudyRecordings=null;
 let referenceGuidedVoiceMode='pattern';
 try{
@@ -100,16 +100,22 @@ function referenceGuidedExamples(lesson,study){
 function referenceGuidedWordRecording(word,text,voice){
  const cue=referenceStudyRecordings?.[ideaWordCueId(word.en,voice)];
  if(cue&&EPEnglish.sameSpeech(cue.text,text))return cue;
- return referenceStudyRecording('word',text,voice)||referenceStudyAudio.wordExcerpt(word,text,voice,EPEnglish.sameSpeech);
+ const stored=word.audio?.[voice];
+ return referenceStudyRecording('word',text,voice)||
+  (stored&&EPEnglish.sameSpeech(stored.text,text)?stored:null)||
+  referenceStudyAudio.wordExcerpt(word,text,voice,EPEnglish.sameSpeech);
 }
 
 function referenceGuidedTrackList(session,stage,examples=[],words=[]){
  const {lesson,voice,full}=session;
  const [key,,,heading]=referenceGuideStages[stage];
- const sentence=(row,word)=>{
-  const text=englishAmerican(row.en,row);
-  return {kind:word?'context':'sentence',row,word,text,recording:row.recordings?.[voice]||referenceStudyRecording('example',text,voice)};
- };
+ const sentence=(row,word,role=voice)=>({kind:word?'context':'sentence',row,word,voice:role,...referenceStudySentenceTrack(row,role)});
+ if(key==='purpose'){
+  const {base}=lesson;
+  const prompt=referenceStudyAudio.purposePrompt(base,referenceGuide(base));
+  return [{kind:'purpose',prompt,text:prompt.en,voice:'female',recording:referenceStudyRecording('purpose',prompt.en,'female')},
+   sentence(base,null,'male')];
+ }
  const tracks=full||key==='base'?[{kind:'heading',text:heading,recording:referenceStudyRecording('stage',heading,voice)}]:[];
  if(key==='base'){
   tracks.unshift({kind:'title',text:lesson.titleSpeech,recording:referenceStudyRecording('title',lesson.titleSpeech,voice)});
@@ -135,7 +141,7 @@ function referenceGuidedTrackList(session,stage,examples=[],words=[]){
  return tracks;
 }
 
-function openReferenceGuided(ids,{voice,full=true}={}){
+function openReferenceGuided(ids,{voice,full=true,strategy='study'}={}){
  const lesson=referenceGuidedLesson(ids[0]);
  if(!lesson)return;
  if(referenceGuided)referenceGuided.dialog.close();
@@ -144,34 +150,35 @@ function openReferenceGuided(ids,{voice,full=true}={}){
  const dialog=document.createElement('dialog');
  dialog.className='reference-guided';
  dialog.setAttribute('aria-labelledby','reference-guided-title');
- const stages=full?[0,1,2,3]:[0,2];
+ const purpose=strategy==='purpose';
+ const stages=purpose?[4]:full?[0,1,2,3]:[0,2];
  dialog.innerHTML=`<div class="reference-guided-header">
-  <h2 id="reference-guided-title">${full?T('شرح الأنماط مع أمثلة إضافية','Pattern explanations with additional examples'):T('أمثلة الأنماط','Pattern examples')}</h2>
+  <h2 id="reference-guided-title">${purpose?T('الغرض ثم الجملة','Purpose then sentence'):full?T('شرح الأنماط مع أمثلة إضافية','Pattern explanations with additional examples'):T('أمثلة الأنماط','Pattern examples')}</h2>
   <div class="reference-guided-window-actions">
    <button class="secondary" type="button" data-guide-mini>${T('تصغير المشغّل','Minimize player')}</button>
    <form method="dialog"><button class="secondary" data-guide-close autofocus>${T('العودة إلى المكتبة','Back to the library')}</button></form>
   </div></div>
-  <div class="reference-guided-steps buttonrow" role="group" aria-label="${T('مراحل الشرح','Study stages')}">
-  ${stages.map(stage=>`<button class="secondary" type="button" data-guide-stage="${stage}">${stage+1} · ${T(...referenceGuideStages[stage].slice(1,3))}</button>`).join('')}</div>
+  ${purpose?'':`<div class="reference-guided-steps buttonrow" role="group" aria-label="${T('مراحل الشرح','Study stages')}">
+  ${stages.map(stage=>`<button class="secondary" type="button" data-guide-stage="${stage}">${stage+1} · ${T(...referenceGuideStages[stage].slice(1,3))}</button>`).join('')}</div>`}
   <div class="reference-guided-now"><b data-guide-mini-form lang="en" dir="ltr"></b><span data-guide-mini-stage></span></div>
   <div class="reference-guided-transport buttonrow">
    <button class="secondary" type="button" data-guide-move="-1">${T('النمط السابق','Previous pattern')}</button>
    <button class="primary" type="button" data-guide-play></button>
    <button class="secondary" type="button" data-guide-move="1">${T('النمط التالي','Next pattern')}</button>
-   <label class="reference-guided-voice">${T('طريقة اختيار الصوت','Voice selection')}
+   ${purpose?'':`<label class="reference-guided-voice">${T('طريقة اختيار الصوت','Voice selection')}
     <select data-guide-voice>
      <option value="pattern">${T('تناوب عند كل نمط','Alternate by pattern')}</option>
      <option value="stage">${T('تناوب عند كل مرحلة','Alternate by stage')}</option>
      <option value="male">Adam</option><option value="female">Bella</option>
-    </select></label>
+    </select></label>`}
    <bdi data-guide-voice-now></bdi>
    <span data-guide-position></span>
   </div><p class="reference-guided-status" data-guide-status role="status"></p>
   <section class="reference-guided-content" data-guide-content></section>`;
  const trigger=document.activeElement;
  const voiceMode=voice==='male'||voice==='female'?voice:referenceGuidedVoiceMode;
- const session={dialog,ids,index:0,stages,stage:0,track:0,voiceMode,firstVoice:referencePlayer?.state.voice||'male',
-  full,run:0,sound:null,audio:new Audio(),
+ const session={dialog,ids,index:0,stages,stage:stages[0],track:0,voiceMode,firstVoice:referencePlayer?.state.voice||'male',
+  full,purpose,run:0,sound:null,audio:new Audio(),
   rate:referencePlayer?.state.rate||1,lesson,ready:null,playing:false,complete:false};
  referenceGuided=session;
  dialog.addEventListener('close',()=>{
@@ -184,7 +191,7 @@ function openReferenceGuided(ids,{voice,full=true}={}){
  dialog.querySelector('[data-guide-mini]').onclick=()=>toggleReferenceGuidedMini(session);
  dialog.querySelector('[data-guide-play]').onclick=()=>{
   if(session.playing)return pauseReferenceGuided(session);
-  if(session.complete)positionReferenceGuided(session,0,0);
+  if(session.complete)positionReferenceGuided(session,0,stages[0]);
   runReferenceGuided(session);
  };
  dialog.querySelectorAll('[data-guide-stage]').forEach(button=>button.onclick=()=>{
@@ -192,19 +199,19 @@ function openReferenceGuided(ids,{voice,full=true}={}){
   runReferenceGuided(session);
  });
  dialog.querySelectorAll('[data-guide-move]').forEach(button=>button.onclick=()=>{
-  positionReferenceGuided(session,session.index+Number(button.dataset.guideMove),0);
+  positionReferenceGuided(session,session.index+Number(button.dataset.guideMove),stages[0]);
   runReferenceGuided(session);
  });
  const voicePicker=dialog.querySelector('[data-guide-voice]');
- voicePicker.value=voiceMode;
- voicePicker.onchange=()=>{
+ if(voicePicker)voicePicker.value=voiceMode;
+ voicePicker?.addEventListener('change',()=>{
   const wasPlaying=session.playing;
   pauseReferenceGuided(session);
   session.voiceMode=referenceGuidedVoiceMode=voicePicker.value;
   try{localStorage.setItem('patterns-reference-guide-voice',referenceGuidedVoiceMode)}catch{}
   updateReferenceGuidedControls(session);
   if(wasPlaying)runReferenceGuided(session);
- };
+ });
  const overlays=$('dialog[open]');
  (overlays||document.body).append(dialog);
  dialog.showModal();
@@ -239,7 +246,7 @@ function updateReferenceGuidedControls(session,status=''){
  dialog.querySelector('[data-guide-position]').textContent=`${index+1} / ${ids.length}`;
  dialog.querySelector('[data-guide-mini-form]').textContent=lesson.form;
  dialog.querySelector('[data-guide-mini-stage]').textContent=T(...referenceGuideStages[stage].slice(1,3));
- dialog.querySelector('[data-guide-voice-now]').textContent=session.voice==='female'?'Bella':'Adam';
+ dialog.querySelector('[data-guide-voice-now]').textContent=(session.purpose?(session.track%2?'male':'female'):session.voice)==='female'?'Bella':'Adam';
  dialog.querySelector('[data-guide-status]').textContent=status;
  dialog.querySelector('[data-guide-move="-1"]').disabled=index===0;
  dialog.querySelector('[data-guide-move="1"]').disabled=index===ids.length-1;
@@ -256,6 +263,7 @@ function paintReferenceGuided(session,track,examples,words){
  const {lesson,stage,dialog}=session,[key,ar,en]=referenceGuideStages[stage];
  const row=track.row||track.word?.row||lesson.base;
  const intro=track.kind==='title',word=track.word;
+ const prompt=key==='purpose'?referenceStudyAudio.purposePrompt(lesson.base,referenceGuide(lesson.base)):null;
  const written=word&&englishDisplay(word.en,row);
  const photo=row.image?row:lesson.photo;
  const visibleWords=key==='words'?words:[];
@@ -269,12 +277,13 @@ function paintReferenceGuided(session,track,examples,words){
    <div class="reference-card-meta">${lesson.foundation?`<span class="reference-foundation">★ ${T('تأسيسي','Foundation')} · ${H(lesson.level)}</span>`:H(lesson.level||'')}</div>
    <strong class="pattern-form" lang="en" dir="ltr">${H(lesson.form)}</strong>
    ${key==='rule'?EP.pair(lesson.ar,lesson.rule):''}
+   ${prompt?`<div class="reference-guided-purpose"><b>Bella</b>${EP.pair(prompt.ar,prompt.en)}</div>`:''}
    ${word?`<section class="reference-guided-term">
     <span>${words.indexOf(word)+1} / ${words.length} · ${track.kind==='word'?T('استمع إلى المفردة','Listen to the word'):T('استمع إليها في الجملة','Listen in context')}</span>
-    <bdi lang="en">${H(written)}</bdi>
+    <bdi lang="en">${H(written)}</bdi> ${wordTypeBadge(word)}
     ${EPEnglish.sameSpeech(written,word.en)?'':`<span>${T('نص التسجيل الصوتي','Audio transcript')} <bdi lang="en">${H(word.en)}</bdi></span>`}
     ${EP.ar(word.ar)}</section>`:''}
-   ${intro?'':`<p class="reference-guided-sentence" lang="en" dir="ltr">${referenceGuidedSentenceWords(row,'data-guide-word')}</p>${EP.ar(row.ar)}`}
+   ${intro||track.kind==='purpose'?'':`<p class="reference-guided-sentence" lang="en" dir="ltr">${referenceGuidedSentenceWords(row,'data-guide-word')}</p>${EP.ar(row.ar)}`}
    ${key==='words'?`<ul class="reference-guided-vocabulary">${visibleWords.map(word=>`<li class="${word===track.word?'active':''}">
     <bdi lang="en">${H(englishDisplay(word.en,word.row))}</bdi>${EP.prefs.arabic?`<bdi lang="ar">${H(word.ar)}</bdi>`:''}
    </li>`).join('')}</ul>`:''}</div>`;
@@ -290,7 +299,7 @@ function paintReferenceGuided(session,track,examples,words){
 
 function playReferenceGuidedRecording(session,track){
  const {audio,dialog,rate}=session,recording=track.recording;
- if(!recording?.path)return synthesizeTrainingCue(track.text,rate,session.voice);
+ if(!recording?.path)return synthesizeTrainingCue(track.text,rate,track.voice||session.voice);
  if(recording.start_ms!=null)return playVocabularyClip(recording,{audio,rate});
  let finish,settled=false,frame,last=-1;
  const done=new Promise(resolve=>{finish=resolve});
@@ -339,26 +348,30 @@ async function runReferenceGuided(session){
  session.playing=true;
  updateReferenceGuidedControls(session);
  if(!referenceStudyRecordings)await trainingAudioReady;
- if(session.full&&!session.ready)session.ready=Promise.all([
-  loadStudioVocabulary(),session.ids.some(id=>typeof id==='string')?loadReferenceStudy():null,pilotReady
- ]);
+ if(!session.purpose&&!session.ready){
+  const references=typeof session.ids[0]==='string';
+  session.ready=Promise.all([references?loadReferenceStudy():null,
+   session.full?(references?loadVocabulary():loadStudioVocabulary()):null,pilotReady]);
+ }
  while(session.run===run&&session.dialog.open){
   const {lesson,stage,track}=session;
   let examples=[],words=[];
   if(stage===2||stage===3){
-   const [,study]=await(session.ready||[]);
+   const [study,atlas]=await(session.ready||[]);
    if(session.run!==run)return;
    examples=lesson.relatedExamples??=referenceGuidedExamples(lesson,study);
-   if(stage===3)words=lesson.words??=referenceStudyAudio.words(lesson.base,examples,studioVocabulary);
+   if(stage===3)words=lesson.words??=study?
+    referenceContextWords(lesson.base,examples,study,atlas):referenceStudyAudio.words(lesson.base,examples,studioVocabulary);
   }
   const next=referenceGuidedTrackList(session,stage,examples,words)[track];
   if(next){
+   session.dialog.querySelector('[data-guide-voice-now]').textContent=(next.voice||session.voice)==='female'?'Bella':'Adam';
    paintReferenceGuided(session,next,examples,words);
    session.sound=playReferenceGuidedRecording(session,next);
    let played=await session.sound.done;
    if(session.run!==run)return;
    if(!played&&next.recording){
-    session.sound=synthesizeTrainingCue(next.text,session.rate,session.voice);
+    session.sound=synthesizeTrainingCue(next.text,session.rate,next.voice||session.voice);
     played=await session.sound.done;
     if(session.run!==run)return;
    }
@@ -380,7 +393,7 @@ async function runReferenceGuided(session){
    session.stage=session.stages[nextStage];
   }else if(session.index+1<session.ids.length){
    session.index++;
-   session.stage=0;
+   session.stage=session.stages[0];
    session.lesson=referenceGuidedLesson(session.ids[session.index]);
   }else{
    session.playing=false;

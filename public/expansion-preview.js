@@ -70,6 +70,7 @@ function renderExpansionDetail(item,p){const body=item.querySelector('.expansion
  EP.decorate();
 }
 filterCurriculum=function(){if(!$('#curriculum-list')||!COURSE_CATALOG)return;
+ paintCurriculumFilters();
  if(!expansionMediaById.size){expansionOldFilter();return}
  stopExpansionAudio();
  const byId=new Map(expansionRows().map(p=>[p.planned_pattern_id||p.id,p]));

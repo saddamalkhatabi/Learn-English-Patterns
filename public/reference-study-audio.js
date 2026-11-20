@@ -9,6 +9,75 @@
   ['examples','أمثلة النمط','Pattern examples','Pattern examples. Listen to how the structure is used.'],
   ['words','توسيع المفردات','Vocabulary expansion','Vocabulary expansion. Listen to words and phrases for this pattern.']
  ];
+ const lexicalTypes=new Set(['VERB','ADJ','NOUN','ADV','PHRASE']);
+ const genericWords=new Set(("be am is are was were been being i'm you're he's she's it's we're they're " +
+  "isn't aren't wasn't weren't ain't do does did done doing don't doesn't didn't " +
+  "have has had having go get say thing very really some will would shall should can can't could may might must").split(' '));
+ const structuralPhrases=new Set(['it is','it was','i am','there is','there are','is there','are there',
+  'do you','does he','does she','did you','can i','can you','would you','could you']);
+ function eligibleWord(word){
+  const pos=word&&vocabulary.posFor(word);
+  return Boolean(word?.ar&&(lexicalTypes.has(pos)||pos==='X'&&vocabulary.tokens(word.en).length>1)&&
+   !structuralPhrases.has(vocabulary.normalize(word.en))&&
+   ![word.en,word.lemma].some(text=>text&&genericWords.has(vocabulary.normalize(text))));
+ }
+ function studyWords(ids,entries,sources,lookup,priorRows){
+  const prior=new Set(priorRows.map(row=>vocabulary.normalize(row.en))), used=new Set();
+  const candidates=ids.map(id=>entries.get(id)).filter(eligibleWord).map(entry=>({
+   entry,rows:entry.sourceIds.flatMap(index=>{
+    const source=sources[index], row=source&&lookup(source.id);
+    return row&&vocabulary.includesTerm(row.en,entry.en)?[row]:[];
+   })
+  }));
+  const chosen=new Map();
+  // Give terms with few contexts first choice, then preserve the atlas display order.
+  for(const {entry,rows} of [...candidates].sort((a,b)=>a.rows.length-b.rows.length)){
+   const available=rows.filter(row=>!used.has(vocabulary.normalize(row.en)));
+   const row=available.find(row=>row.recordings?.male?.path&&row.recordings?.female?.path&&!prior.has(vocabulary.normalize(row.en)))||
+    available.find(row=>!prior.has(vocabulary.normalize(row.en)))||available[0];
+   if(!row)continue;
+   used.add(vocabulary.normalize(row.en));
+   chosen.set(entry.id,{...entry,row});
+  }
+  return ids.flatMap(id=>chosen.has(id)?[chosen.get(id)]:[]);
+ }
+ const specificPurpose={
+  'This is my house.':['Whose house is this?','لمن هذا المنزل؟'],
+  'I have a good job.':['How is your work situation?','كيف هو وضعك في العمل؟'],
+  "I've got a job.":['Do you have a job now?','هل لديك عمل الآن؟'],
+  'It was a joke.':['Were you being serious?','هل كنت تتحدث بجدية؟'],
+  "What's your name?":['Ask someone you just met for their name.','اسأل شخصًا التقيته للتو عن اسمه.'],
+  "I'm a student.":['What do you do?','ماذا تعمل؟'],
+  'I forgot to close the window.':['Why is the window still open?','لماذا لا تزال النافذة مفتوحة؟'],
+  "I'm from Yemen.":['Where are you from?','من أين أنت؟']
+ };
+ const questionPurposes=[
+  [/^where\b/i,'Ask about a place or location.','اسأل عن المكان أو الموقع.'],
+  [/^when\b/i,'Ask when something happens.','اسأل عن وقت حدوث شيء.'],
+  [/^why\b/i,'Ask for the reason.','اسأل عن السبب.'],
+  [/^who\b/i,'Ask about a person.','اسأل عن شخص.'],
+  [/^whose\b/i,'Ask who something belongs to.','اسأل عن صاحب الشيء.'],
+  [/^which\b/i,'Ask someone to choose between options.','اطلب الاختيار بين بدائل.'],
+  [/^how many\b/i,'Ask for a number.','اسأل عن العدد.'],
+  [/^how much\b.*\b(cost|pay|price)\b/i,'Ask about the price.','اسأل عن السعر.'],
+  [/^how much\b/i,'Ask about the amount.','اسأل عن الكمية.'],
+  [/^how long\b/i,'Ask about the duration or length.','اسأل عن المدة أو الطول.'],
+  [/^how often\b/i,'Ask how often something happens.','اسأل عن تكرار حدوث شيء.'],
+  [/^what (?:time|day)\b/i,'Ask for the time or day.','اسأل عن الوقت أو اليوم.']
+ ];
+ const descriptionPurposes=[
+  [/^(?:this is|that is|these are|those are)\b/i,'Point out a person or thing.','أشر إلى شخص أو شيء.'],
+  [/^(?:there (?:is|are|was|were)|there['’]s)\b/i,'Say what is or was there.','اذكر ما يوجد أو ما كان موجودًا.'],
+  [/\b(?:usually|often|always|every day|on weekends)\b/i,'Describe a habit or routine.','صِف عادةً أو روتينًا.'],
+  [/\b(?:look|looks|sound|sounds|seems)\b/i,'Describe an impression.','صِف انطباعًا.']
+ ];
+ function purposePrompt(row,guide){
+  const cues=guide.purpose_en==='Ask for information'?questionPurposes:
+   guide.purpose_en==='Describe or state a fact'?descriptionPurposes:[];
+  const cue=cues.find(([match])=>match.test(row.en));
+  const [en,ar]=specificPurpose[row.en]||cue?.slice(1)||[guide.purpose_en,guide.purpose_ar];
+  return {en:en.replace(/[.!?]?$/,mark=>mark||'.'),ar};
+ }
  function cueId(kind,text,voice){
   // Content-addressed names let the same rule or word reuse one recording across lessons.
   let key=0xcbf29ce484222325n;
@@ -48,7 +117,7 @@
  function words(base,examples,scenes){
   const chosen=new Map();
   for(const row of [base,...examples]){
-   const candidates=(scenes?.[row.id]?.words||[]).filter(word=>word.en&&word.ar&&vocabulary.includesTerm(row.en,word.en));
+   const candidates=(scenes?.[row.id]?.words||[]).filter(word=>eligibleWord(word)&&vocabulary.includesTerm(row.en,word.en));
    let count=0;
    for(const word of candidates){
     const key=vocabulary.normalize(word.en);
@@ -68,7 +137,7 @@
   return start<0?[]:[...new Set(tokens.slice(start,start+wanted.length).map(token=>token.index))];
  }
  function guideGap(kind){
-  return {title:500,heading:330,word:480,context:760,sentence:420,rule:550}[kind]||0;
+  return {title:500,heading:330,word:480,context:760,sentence:420,rule:550,purpose:500}[kind]||0;
  }
  const voiceModes=['pattern','stage','male','female'];
  function guideVoice(mode,first,index,stage,indexedStages){
@@ -88,5 +157,5 @@
   return {path:recording.path,start_ms:Math.max(cues[first-1]?.end_ms||0,cues[first].start_ms-25),
    end_ms:Math.min(cues[last+1]?.start_ms||recording.duration_ms,cues[last].end_ms+35)};
  }
- return {stages,cueId,patternTitle,examples,words,termIndexes,guideGap,voiceModes,guideVoice,wordExcerpt};
+ return {stages,cueId,patternTitle,examples,words,eligibleWord,studyWords,purposePrompt,termIndexes,guideGap,voiceModes,guideVoice,wordExcerpt};
 });

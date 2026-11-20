@@ -31,7 +31,7 @@ function renderIdeaRoleplay(scene,withAI=true){
   <p id="idea-dialogue-status" role="status"></p>
   <details class="idea-archive idea-disclosure"><summary>${T('حواراتي المحفوظة','Saved dialogues')}</summary>
    <p>${T('يُحفظ الأرشيف في هذا المتصفح.','Your archive is saved in this browser.')}</p>
-   <label>${T('اعرض حوارات','Show dialogues for')} <select onchange="ideaArchiveScope=this.value;paintIdeaArchive()">
+   <label>${T('اعرض حوارات','Show dialogues for')} <select id="idea-archive-scope" onchange="ideaArchiveScope=this.value;paintIdeaArchive()">
     <option value="scene" ${ideaArchiveScope==='scene'?'selected':''}>${T('هذا المشهد','This scene')}</option>
     <option value="all" ${ideaArchiveScope==='all'?'selected':''}>${T('كل المشاهد','All scenes')}</option></select></label>
    <div id="idea-archive-list"></div><div id="idea-archive-view"></div>
@@ -169,6 +169,13 @@ function saveIdeaGuided(){
 function paintIdeaArchive(){
  const list=$('#idea-archive-list'),view=$('#idea-archive-view');
  if(!list||!view)return;
+ const scope=$('#idea-archive-scope');
+ if(!document.body.dataset.linkedLearning)EPFilters.save('photo-dialogue-archive',{scope:ideaArchiveScope});
+ EPFilters.show(scope?.closest('label'),{scene:ideaArchiveScope==='scene'},()=>{
+  ideaArchiveScope=scope.value='all';
+  paintIdeaArchive();
+  scope.focus({preventScroll:true});
+ });
  const currentId=scenePhotoKey(currentIdeaScene()?.id);
  const isCurrent=entry=>scenePhotoKey(entry.sceneId)===currentId;
  const rows=ideaArchive.filter(entry=>ideaArchiveScope==='all'||isCurrent(entry));

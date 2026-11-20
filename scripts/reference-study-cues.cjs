@@ -16,6 +16,8 @@ module.exports=function referenceStudyCues(existing){
  const catalog=load('pattern-catalog').patterns;
  const curriculum=new Map(load('curriculum').patterns.map(row=>[row.id,row]));
  const study=load('reference-study'),scenes=load('scene-vocabulary').sentences;
+ const atlas=load('vocabulary-index');
+ const terms=new Map([...atlas.entries,...atlas.regional].map(entry=>[entry.id,entry]));
  const rows=new Map([...course,...references.map(row=>[row.id,row])]);
  const lookup=id=>study.examples[id]||rows.get(id);
  const guides=new Map(references.map(row=>[row.id,describeReference(row)]));
@@ -53,12 +55,21 @@ module.exports=function referenceStudyCues(existing){
  }
  for(const row of references){
   const guide=guides.get(row.id),rule=guide.rule_en;
+  add('purpose',audio.purposePrompt(row,guide).en,'female');
   for(const voice of voices)add('title',audio.patternTitle(guide.form,guide.construction),voice);
   if(rule){
    const text=english.analyze(spokenComparisonNote(rule),row).us;
    for(const voice of voices)add('rule',text,voice);
   }
   addLesson(row,audio.examples(row,study,lookup,references,example=>guides.get(example.id)));
+ }
+ for(const id of new Set(Object.values(study.rows).flatMap(row=>row.terms))){
+  const word=terms.get(id);
+  if(!audio.eligibleWord(word))continue;
+  for(const voice of voices){
+   const prior=existing[ideaWordCueId(word.en,voice)];
+   if(!prior||!english.sameSpeech(prior,word.en))add('word',word.en,voice);
+  }
  }
  return cues;
 };

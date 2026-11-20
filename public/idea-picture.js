@@ -21,7 +21,7 @@ function ideaViewer(scene){
     <button type="button" id="idea-zoom-button" class="secondary" onclick="toggleIdeaZoom()">⛶ ${T('تكبير','Enlarge')}</button>
     <button class="secondary" data-idea-scene-step ${multiple?'':'disabled'} onclick="stepStudioScene(1)" aria-label="${T('المشهد التالي','Next scene')}">›</button>
    </div>
-   <details class="idea-disclosure idea-picture-options"><summary>${T('خيارات الكلمات على الصورة','Picture word options')}</summary>
+   <details class="idea-disclosure idea-picture-options" ${ideaWordFilter?'open':''}><summary>${T('خيارات الكلمات على الصورة','Picture word options')}</summary>
    <div class="idea-viewer-options">
     <label class="idea-filter">${T('العرض','Display')} <select id="idea-word-mode" onchange="setIdeaWordMode(this.value)">
      ${[['hidden','إخفاء الكلمات','Hide words'],['visible','إظهار الكلمات','Show words'],['flash','ومضات الحفظ','Recall flashes']].map(([id,ar,en])=>
@@ -93,6 +93,7 @@ function setIdeaLabelLanguage(language){
 }
 
 function mountIdeaViewer(scene){
+ paintIdeaWordFilter();
  const dialog=$('#idea-zoom');
  const viewer=$('#idea-scene-viewer');
  if(dialog.open){

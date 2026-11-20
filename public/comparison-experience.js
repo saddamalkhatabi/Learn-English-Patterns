@@ -119,6 +119,9 @@ function comparisonExercise(item){
 function paintComparisonSelection(){
  const list=$('#comparison-list');
  if(!list)return;
+ EPFilters.controls('comparisons',$('.comparison-controls'),{
+  level:$('#comparison-level'),type:$('#comparison-type'),size:$('#comparison-size')
+ },resetComparisonSelection);
  const items=visibleComparisons();
  const count=items.length;
  $('#comparison-count').textContent=T(`${count} مقارنة من ${patternComparisons.length}`,`${count} of ${patternComparisons.length} comparisons`);

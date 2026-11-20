@@ -338,3 +338,46 @@ html body .idea-picture-frame>.scene-frame>.scene-photo{width:100%!important;max
 .vocabulary-scene-card small{display:block;line-height:1.5;margin-top:.3rem}
 .vocabulary-scenes{margin-block:.7rem}
 @media(max-width:540px){.idea-dialogue-choices{grid-template-columns:1fr}.vocabulary-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.vocabulary-card{padding:.65rem}.vocabulary-card>.textlink{font-size:1.1rem;overflow-wrap:anywhere}}
+.ep-filter-state:not([hidden]) {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ flex-wrap: wrap;
+ gap: .5rem .8rem;
+ margin-block: .5rem .8rem;
+ padding: .45rem .7rem;
+ border-inline-start: 3px solid var(--green);
+ border-radius: .4rem;
+ background: #eaf1e4;
+ color: var(--ink);
+ font-size: .85rem;
+}
+
+.ep-filter-state button {
+ min-height: 2.4rem;
+ font-size: .83rem;
+}
+
+#reference-summary {
+ grid-template-columns: repeat(auto-fit, minmax(min(9rem, 100%), 1fr));
+}
+
+#reference-summary > span {
+ min-width: 0;
+ flex-wrap: wrap;
+}
+
+.reference-guided-purpose {
+ margin-block: .75rem;
+ padding: .65rem .85rem;
+ background: #edf4ed;
+ border-inline-start: 3px solid var(--green);
+ border-radius: .45rem;
+}
+
+.reference-study-term mark,
+.reference-guided-sentence .reference-vocabulary-token:not(.speaking) {
+ color: #205847;
+ background: #dcebdc;
+ font-weight: 650;
+}

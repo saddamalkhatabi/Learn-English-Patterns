@@ -1,4 +1,5 @@
-let studioJourneyId='',studioJourneyQuery='',studioJourneyLevel='',studioJourneyPage=0;
+const savedJourneyFilters=EPFilters.read('studio-journeys',{query:'',level:''});
+let studioJourneyId='',studioJourneyQuery=savedJourneyFilters.query,studioJourneyLevel=savedJourneyFilters.level,studioJourneyPage=0;
 let studioJourneyIndex=null;
 const studioJourneySelections=new Map();
 
@@ -43,6 +44,13 @@ function filterStudioJourneys(query,level){
 function paintStudioJourneys(){
  const host=$('#studio-journey-results');
  if(!host)return;
+ const values={query:studioJourneyQuery,level:studioJourneyLevel};
+ if(!document.body.dataset.linkedLearning)EPFilters.save('studio-journeys',values);
+ EPFilters.show($('.studio-journey-filters'),values,()=>{
+  $('#studio-journey-query').value=$('#studio-journey-level').value='';
+  filterStudioJourneys('','');
+  $('#studio-journey-query').focus({preventScroll:true});
+ });
  const index=studioJourneyRows();
  const terms=normalizeSceneQuery(studioJourneyQuery).trim().split(/\s+/).filter(Boolean);
  const matches=index.filter(row=>(!studioJourneyLevel||studioJourneyLevel===String(row.level))&&terms.every(term=>row.search.includes(term)));

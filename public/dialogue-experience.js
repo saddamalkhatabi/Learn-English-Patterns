@@ -448,7 +448,6 @@ function dialoguesPage(){
     audio:['مسجّلة','Recorded'],text:['نص فقط','Transcript only'],planned:['مواقف في خطة التوسّع','Planned situations']
    },'resetDialogueCatalog()')}
    <label>${T('النمط','Pattern')}<select id="dialogue-pattern" onchange="resetDialogueFilters()" dir="ltr"></select></label>
-   <button class="secondary" type="reset">${T('مسح الفلاتر','Reset filters')}</button>
   </form>
   <p id="dialogue-level-guide" class="lesson-hint"></p>
   <div class="buttonrow">
@@ -505,7 +504,13 @@ function resetDialogueFilters(){
  dialogueCatalogPage=0;
  paintDialogueCatalog();
 }
+function syncDialogueFilters(){
+ return EPFilters.controls('conversations',$('.dialogue-filters'),Object.fromEntries(
+  ['query','category','purpose','visual','level','status','pattern'].map(key=>[key,$('#dialogue-'+key)])
+ ),resetDialogueCatalog);
+}
 function resetDialogueCatalog(){
+ syncDialogueFilters();
  paintDialoguePatternOptions();
  resetDialogueFilters();
 }
@@ -545,6 +550,7 @@ function filteredDialogueEntries(){
 function paintDialogueCatalog(){
  const host=$('#dialogue-catalog');
  if(!host)return;
+ syncDialogueFilters();
  const entries=filteredDialogueEntries();
  dialogueLearningLevel=$('#dialogue-level').value;
  $('#dialogue-level-guide').textContent=learningLevelGuide(dialogueLearningLevel);

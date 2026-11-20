@@ -56,7 +56,7 @@ async function openSmartScene(id,focus=true){
  const epoch=++studioOpenEpoch;
  stopSpeech();clearIdeaFlash();
  if(studioActiveId!==id){
-  ideaAction='observe';ideaWordFilter='';ideaWordMode='visible';ideaArchiveView=null;
+  ideaAction='observe';ideaWordMode='visible';ideaArchiveView=null;
  }
  studioActiveId=id;
  studioWordScene=null;

@@ -169,12 +169,6 @@
   margin: 1rem 0 .35rem;
 }
 
-.song-lyrics > p {
-  margin: 0 0 .55rem;
-  color: var(--muted);
-  font-size: .85rem;
-}
-
 .song-lyrics-text {
   max-height: 28rem;
   overflow-y: auto;
@@ -194,6 +188,17 @@
 
 .song-lyrics-text .pattern-token {
   color: var(--red);
+}
+
+.song-lyric-line[aria-current="true"] {
+  border-radius: .2rem;
+  background: #e3efd6;
+  box-decoration-break: clone;
+}
+
+.song-word-current {
+  border-radius: .15rem;
+  background: #ffd995;
 }
 
 .song-patterns li {

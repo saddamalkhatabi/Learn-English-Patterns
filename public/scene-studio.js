@@ -32,8 +32,8 @@ function sceneStudioPage(){
   ${epSectionLinks(['references'])}
   <div class="toolbar"><input type="search" id="scene-studio-query" oninput="studioPage=0;paintSceneStudio()" placeholder="${T('مسبح، مكتبة، train…','Pool, library, قطار…')}" aria-label="${T('بحث المشاهد','Search scenes')}">
   <select id="scene-studio-topic" onchange="studioPage=0;paintSceneStudio()" aria-label="${T('موضوع المشهد','Scene topic')}"><option value="">${T('كل الموضوعات','All topics')}</option><option value="conversation">${T('مشاهد المحادثات','Conversation scenes')}</option>${[...topics.values()].map(t=>`<option value="${t.id}">${H(T(t.ar,t.en))}</option>`).join('')}</select>
-  <label>${T('مستوى التعلّم','Learning level')}<select onchange="setStudioLearningLevel(this.value)">${learningLevelOptions(studioLearningLevel)}</select></label>
-  <label>${T('المجموعة','Collection')}<select onchange="studioCollection=this.value;studioPage=0;paintSceneStudio()">
+  <label>${T('مستوى التعلّم','Learning level')}<select id="scene-studio-level" onchange="setStudioLearningLevel(this.value)">${learningLevelOptions(studioLearningLevel)}</select></label>
+  <label>${T('المجموعة','Collection')}<select id="scene-studio-collection" onchange="studioCollection=this.value;studioPage=0;paintSceneStudio()">
    ${[['','كل الصور','All photos'],['speaking','مشاهد ممارسة التحدث','Speaking practice scenes'],['saved','صور لها حوارات محفوظة','Photos with saved dialogues']].map(([id,ar,en])=>
     `<option value="${id}" ${studioCollection===id?'selected':''}>${T(ar,en)}</option>`).join('')}</select></label>
   ${smartLibraryFilters()}<button type="button" class="secondary" id="scene-studio-suggest" onclick="surpriseScene()">${T('اقترح مشهدًا','Suggest a scene')}</button></div>
@@ -118,6 +118,14 @@ function refreshSavedPhotoResults(){
 function paintSceneStudio(){
  if(studioMode==='journeys'){paintStudioJourneys();return}
  if(!$('#scene-studio-results'))return;
+ const query=$('#scene-studio-query');
+ const filters=EPFilters.controls('photo-library',query.closest('.toolbar'),{
+  query,topic:$('#scene-studio-topic'),level:$('#scene-studio-level'),collection:$('#scene-studio-collection'),
+  pattern:$('#studio-pattern'),purpose:$('#studio-purpose')
+ },()=>{studioPage=0;paintSceneStudio()});
+ studioLearningLevel=filters.level;studioCollection=filters.collection;
+ if(!document.body.dataset.linkedLearning||$('#studio-pattern').options.length>1)studioPattern=Number(filters.pattern)||null;
+ studioPurpose=filters.purpose;
  const matches=studioMatches(), total=Math.max(1,Math.ceil(matches.length/24));
  studioPage=Math.max(0,Math.min(studioPage,total-1));
  $('#scene-studio-count').textContent=T(`${matches.length} مشهد · صفحة ${studioPage+1} من ${total}`,`${matches.length} scenes · Page ${studioPage+1} of ${total}`);

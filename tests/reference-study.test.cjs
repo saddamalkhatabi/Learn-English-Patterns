@@ -71,3 +71,34 @@ test('regional study pairs cite a usage source and are indexed with both forms i
   }
  }
 });
+
+test('contextual vocabulary uses different sentences and excludes basic auxiliaries and contractions',()=>{
+ const {studyWords,eligibleWord}=require('../public/reference-study-audio.js');
+ const entries=new Map([...atlas.entries,...atlas.regional].map(entry=>[entry.id,entry]));
+ const rows=new Map([...corpus,...course.flatMap(book=>book.sentences),...Object.values(study.examples)]
+  .map(row=>[row.id,row]));
+ for(const word of ['is',"it's",'was','be']){
+  assert(!eligibleWord({en:word,ar:'معنى',pos:'VERB'}),word);
+ }
+ for(const id of ['ref-0001','ref-0004','ref-0020','ref-0632']){
+  const {terms,examples}=study.rows[id];
+  const selected=studyWords(terms,entries,atlas.sources,key=>rows.get(key),[id,...examples].map(key=>rows.get(key)));
+  assert(selected.length>2,id);
+  assert.equal(new Set(selected.map(item=>normalize(item.row.en))).size,selected.length);
+  for(const term of selected)assert(includesTerm(term.row.en,term.en),term.en);
+ }
+});
+
+test('the purpose route gives each statement or question a recorded female cue and a male sentence recording',()=>{
+ const {cueId,purposePrompt}=require('../public/reference-study-audio.js');
+ const cues=require('../public/training-audio.json');
+ const offline=new Set(require('../public/offline-manifest.json').media
+  .filter(row=>row.groups.includes('library')).map(row=>row.path));
+ assert.equal(purposePrompt(corpus[0],describeReference(corpus[0])).en,'Whose house is this?');
+ for(const row of corpus){
+  const {en,ar}=purposePrompt(row,describeReference(row));
+  const cue=cues[cueId('purpose',en,'female')];
+  assert(ar&&cue?.text===en,row.id);
+  assert(offline.has(cue.path)&&offline.has(row.recordings.male.path),row.id);
+ }
+});
