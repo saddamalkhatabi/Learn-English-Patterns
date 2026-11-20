@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "version": "96af4d843fa2f08e",
+  "version": "17f769714c6cca29",
   "shell": [
     "app.js",
     "collection-experience.js",
@@ -73,6 +73,10 @@
     "scene-studio.js",
     "scene-vocabulary.json",
     "smart-library.js",
+    "song-library.css",
+    "song-library.js",
+    "song-library.json",
+    "song-lyrics.json",
     "source-corpus-audit.json",
     "source-corpus.json",
     "source.json",
@@ -60664,6 +60668,150 @@
       "bytes": 8901,
       "groups": [
         "library",
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/songs/a-paper-boat-afternoon.mp3",
+      "sha256": "1e5f0ae7c965e88e17eceb54c544f6ebfe00ab6472549d8f47f3060a25e3e818",
+      "bytes": 3457761,
+      "groups": [
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/songs/ask-me-how-and-why.mp3",
+      "sha256": "7c354ef96851eefb02aea2fa039b1fd57e716bdcf572dee667b894c9dd8c40ad",
+      "bytes": 3534247,
+      "groups": [
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/songs/asking-for-the-window.mp3",
+      "sha256": "01294aa9129307f1b83d1dc2d83726d1bcba9d8e7a8b2514630652add8b3e25b",
+      "bytes": 4395661,
+      "groups": [
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/songs/hear-me-out.mp3",
+      "sha256": "e24c11c1ffd993784ac4dcf0b8fb9c3fd9c8c0ea02e7877d72d8b19613b6c489",
+      "bytes": 3648977,
+      "groups": [
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/songs/i-sing-my-day.mp3",
+      "sha256": "d29148108e5b3ef26286a52721fe5302284ee9d53d9c1258a27811aac77d31ad",
+      "bytes": 4332967,
+      "groups": [
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/songs/in-my-own-words.mp3",
+      "sha256": "5c8e92e7ae579babf8ba4aae400131a400c4f6e61b53561152ab85d6cc6eafef",
+      "bytes": 3603837,
+      "groups": [
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/songs/join-the-lines.mp3",
+      "sha256": "2cdbcc21757ad4057975b823ef38d219b8c2b882fa353763a1e001e2a9bf6924",
+      "bytes": 3533620,
+      "groups": [
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/songs/kind-words-travel.mp3",
+      "sha256": "72d0b83476eb08b7584a9cb647dd63d31f9663154aa0058ef65b3e71b1c9cdc5",
+      "bytes": 3352435,
+      "groups": [
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/songs/one-little-sound.mp3",
+      "sha256": "c5ad3e377da0bf3fb397aa0a23729b826d31811cd356dc062bb9fc24677e9610",
+      "bytes": 3754303,
+      "groups": [
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/songs/please-tell-me.mp3",
+      "sha256": "4ec79f959a77964eba712d5357e6d2ee080f08ce6d86cd176b80c0449a72987b",
+      "bytes": 3091002,
+      "groups": [
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/songs/the-day-is-new.mp3",
+      "sha256": "3da86438979839bd5ec41e8df5cef0218e4fea9500300e2e0414f5ef33fe2491",
+      "bytes": 3360585,
+      "groups": [
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/songs/the-next-right-line.mp3",
+      "sha256": "f42481a22277a862783b882c33a09d5949648ecfce7c934a10e271e29626c8a5",
+      "bytes": 3395694,
+      "groups": [
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/songs/the-pieces-fit.mp3",
+      "sha256": "fe1b38280008aa3bd2220a5f083bb78799e328f8159cbea4e47faf517405f974",
+      "bytes": 4402557,
+      "groups": [
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/songs/tomorrow-s-on-my-mind.mp3",
+      "sha256": "a84aac5bfd6166cebf780bc876c619700d3611ed7f7c187cd1ac442f958f3a8f",
+      "bytes": 3621392,
+      "groups": [
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/songs/when-thoughts-collide.mp3",
+      "sha256": "d0cc16fc1a960537c08e5a426de9156f96cb214f2962187d2268355e9cd40510",
+      "bytes": 3751168,
+      "groups": [
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/songs/words-to-guide-the-way.mp3",
+      "sha256": "8d3aaf241df43c549a9e840ed424ef22e29a33cb48421459b2265415e8f719bc",
+      "bytes": 3590672,
+      "groups": [
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/songs/words-to-keep.mp3",
+      "sha256": "12689a70a3735beb86a3678af2eccc4b3d4cfce165d6c6f6023856ff5388850f",
+      "bytes": 3772484,
+      "groups": [
+        "all"
+      ]
+    },
+    {
+      "path": "assets/audio/songs/yesterday-is-bound-to-fade.mp3",
+      "sha256": "4ec043f92e97afce2cb9b4519e686898c365725419362acf7d30694177a402ff",
+      "bytes": 3484719,
+      "groups": [
         "all"
       ]
     },
