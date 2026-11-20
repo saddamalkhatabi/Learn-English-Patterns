@@ -116,6 +116,17 @@ test('reference study announces the specific pattern and pairs words with senten
  assert(guideGap('word')>=400&&guideGap('context')>guideGap('word'));
 });
 
+test('reference study can hold one voice for a pattern or alternate at stage boundaries',()=>{
+ const {guideVoice}=require('../public/reference-study-audio.js');
+ const full=[0,1,2,3],examples=[0,2];
+ assert.deepEqual(full.map(stage=>guideVoice('pattern','male',0,stage,full)),Array(4).fill('male'));
+ assert.deepEqual(full.map(stage=>guideVoice('pattern','male',1,stage,full)),Array(4).fill('female'));
+ assert.deepEqual(full.map(stage=>guideVoice('stage','female',1,stage,full)),['female','male','female','male']);
+ assert.equal(guideVoice('stage','male',0,2,examples),'female');
+ assert.equal(guideVoice('stage','male',1,0,examples),'male');
+ assert.equal(guideVoice('female','male',3,1,full),'female');
+});
+
 test('level one has 200 conversations, with multiple contexts for every course pattern', () => {
  const published = new Map(dialogues.map(dialogue => [dialogue.id,dialogue]));
  const entries = new Map(plan.entries.map(entry => [entry.id,entry]));

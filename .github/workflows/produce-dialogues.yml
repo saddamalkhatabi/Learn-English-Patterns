@@ -124,6 +124,7 @@ jobs:
           npm ci --no-audit --no-fund
           node scripts/merge-dialogue-audio.cjs dialogue-shards
           npm run build
+          node scripts/prune-unused-audio.cjs --delete
           DIALOGUE_AUDIO_REQUIRED=1 npm test
           git config user.name 'English Patterns media'
           git config user.email 'noreply@users.noreply.github.com'

@@ -70,6 +70,12 @@
  function guideGap(kind){
   return {title:500,heading:330,word:480,context:760,sentence:420,rule:550}[kind]||0;
  }
+ const voiceModes=['pattern','stage','male','female'];
+ function guideVoice(mode,first,index,stage,indexedStages){
+  if(mode==='male'||mode==='female')return mode;
+  const offset=mode==='stage'?index*indexedStages.length+indexedStages.indexOf(stage):index;
+  return offset%2===0?first:first==='male'?'female':'male';
+ }
  function wordExcerpt(word,text,voice,sameSpeech){
   const recording=word.row.recordings?.[voice],cues=recording?.words;
   if(!recording?.path||!cues?.length)return null;
@@ -82,5 +88,5 @@
   return {path:recording.path,start_ms:Math.max(cues[first-1]?.end_ms||0,cues[first].start_ms-25),
    end_ms:Math.min(cues[last+1]?.start_ms||recording.duration_ms,cues[last].end_ms+35)};
  }
- return {stages,cueId,patternTitle,examples,words,termIndexes,guideGap,wordExcerpt};
+ return {stages,cueId,patternTitle,examples,words,termIndexes,guideGap,voiceModes,guideVoice,wordExcerpt};
 });

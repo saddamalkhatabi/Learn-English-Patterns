@@ -42,9 +42,12 @@ function playExpansionAt(index){if(!expansionSequence)return;const state=expansi
 }
 function playExpansionSequence(id){const host=document.querySelector(`[data-expansion-pattern="${id}"]`);if(!host)return;
  const ids=[...host.querySelectorAll('[data-expansion-id]')].map(el=>el.dataset.expansionId);
- if(!ids.length)return;stopExpansionAudio();expansionSequence={id,index:0,ids};playExpansionAt(0);
+ if(!ids.length)return;
+ if(referenceGuided?.playing)pauseReferenceGuided(referenceGuided);
+ stopExpansionAudio();expansionSequence={id,index:0,ids};playExpansionAt(0);
 }
 function playExpansionPreview(id,gender){const s=expansionMediaById.get(id),r=s?.recordings?.[gender];if(!r)return;
+ if(referenceGuided?.playing)pauseReferenceGuided(referenceGuided);
  stopExpansionAudio();expansionAudio=new Audio(r.path);window.EPOffline?.rememberSentences([s]);
  bindExpansionCues(expansionAudio,s,r);
  expansionAudio.play().catch(()=>toast(EP.t('تعذر تشغيل التسجيل.','Could not play recording.')));

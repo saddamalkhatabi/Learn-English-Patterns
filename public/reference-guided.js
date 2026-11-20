@@ -1,6 +1,11 @@
 const referenceStudyAudio=EPReferenceStudyAudio;
 const referenceGuideStages=referenceStudyAudio.stages;
 let referenceGuided=null,referenceCourseSentences,referenceStudyRecordings=null;
+let referenceGuidedVoiceMode='pattern';
+try{
+ const saved=localStorage.getItem('patterns-reference-guide-voice');
+ if(referenceStudyAudio.voiceModes.includes(saved))referenceGuidedVoiceMode=saved;
+}catch{}
 trainingAudioReady.then(cues=>{referenceStudyRecordings=cues});
 
 function referenceStudyRecording(kind,text,voice){
@@ -130,7 +135,7 @@ function referenceGuidedTrackList(session,stage,examples=[],words=[]){
  return tracks;
 }
 
-function openReferenceGuided(ids,{voice=referencePlayer?.state.voice||'male',full=true}={}){
+function openReferenceGuided(ids,{voice,full=true}={}){
  const lesson=referenceGuidedLesson(ids[0]);
  if(!lesson)return;
  if(referenceGuided)referenceGuided.dialog.close();
@@ -142,28 +147,41 @@ function openReferenceGuided(ids,{voice=referencePlayer?.state.voice||'male',ful
  const stages=full?[0,1,2,3]:[0,2];
  dialog.innerHTML=`<div class="reference-guided-header">
   <h2 id="reference-guided-title">${full?T('شرح الأنماط مع أمثلة إضافية','Pattern explanations with additional examples'):T('أمثلة الأنماط','Pattern examples')}</h2>
-  <form method="dialog"><button class="secondary" autofocus>${T('العودة إلى المكتبة','Back to the library')}</button></form></div>
+  <div class="reference-guided-window-actions">
+   <button class="secondary" type="button" data-guide-mini>${T('تصغير المشغّل','Minimize player')}</button>
+   <form method="dialog"><button class="secondary" data-guide-close autofocus>${T('العودة إلى المكتبة','Back to the library')}</button></form>
+  </div></div>
   <div class="reference-guided-steps buttonrow" role="group" aria-label="${T('مراحل الشرح','Study stages')}">
   ${stages.map(stage=>`<button class="secondary" type="button" data-guide-stage="${stage}">${stage+1} · ${T(...referenceGuideStages[stage].slice(1,3))}</button>`).join('')}</div>
+  <div class="reference-guided-now"><b data-guide-mini-form lang="en" dir="ltr"></b><span data-guide-mini-stage></span></div>
   <div class="reference-guided-transport buttonrow">
    <button class="secondary" type="button" data-guide-move="-1">${T('النمط السابق','Previous pattern')}</button>
    <button class="primary" type="button" data-guide-play></button>
    <button class="secondary" type="button" data-guide-move="1">${T('النمط التالي','Next pattern')}</button>
-   <label class="reference-guided-voice">${T('الصوت','Voice')}
-    <select data-guide-voice><option value="male">Adam</option><option value="female">Bella</option></select></label>
+   <label class="reference-guided-voice">${T('طريقة اختيار الصوت','Voice selection')}
+    <select data-guide-voice>
+     <option value="pattern">${T('تناوب عند كل نمط','Alternate by pattern')}</option>
+     <option value="stage">${T('تناوب عند كل مرحلة','Alternate by stage')}</option>
+     <option value="male">Adam</option><option value="female">Bella</option>
+    </select></label>
+   <bdi data-guide-voice-now></bdi>
    <span data-guide-position></span>
   </div><p class="reference-guided-status" data-guide-status role="status"></p>
   <section class="reference-guided-content" data-guide-content></section>`;
  const trigger=document.activeElement;
- const session={dialog,ids,index:0,stages,stage:0,track:0,voice,full,run:0,sound:null,audio:new Audio(),
+ const voiceMode=voice==='male'||voice==='female'?voice:referenceGuidedVoiceMode;
+ const session={dialog,ids,index:0,stages,stage:0,track:0,voiceMode,firstVoice:referencePlayer?.state.voice||'male',
+  full,run:0,sound:null,audio:new Audio(),
   rate:referencePlayer?.state.rate||1,lesson,ready:null,playing:false,complete:false};
  referenceGuided=session;
  dialog.addEventListener('close',()=>{
+  if(dialog.open||!dialog.isConnected)return;
   pauseReferenceGuided(session);
   if(referenceGuided===session)referenceGuided=null;
   dialog.remove();
   if(trigger?.isConnected&&!referenceGuided)trigger.focus({preventScroll:true});
- },{once:true});
+ });
+ dialog.querySelector('[data-guide-mini]').onclick=()=>toggleReferenceGuidedMini(session);
  dialog.querySelector('[data-guide-play]').onclick=()=>{
   if(session.playing)return pauseReferenceGuided(session);
   if(session.complete)positionReferenceGuided(session,0,0);
@@ -178,17 +196,31 @@ function openReferenceGuided(ids,{voice=referencePlayer?.state.voice||'male',ful
   runReferenceGuided(session);
  });
  const voicePicker=dialog.querySelector('[data-guide-voice]');
- voicePicker.value=voice;
+ voicePicker.value=voiceMode;
  voicePicker.onchange=()=>{
   const wasPlaying=session.playing;
   pauseReferenceGuided(session);
-  session.voice=voicePicker.value;
+  session.voiceMode=referenceGuidedVoiceMode=voicePicker.value;
+  try{localStorage.setItem('patterns-reference-guide-voice',referenceGuidedVoiceMode)}catch{}
+  updateReferenceGuidedControls(session);
   if(wasPlaying)runReferenceGuided(session);
  };
  const overlays=$('dialog[open]');
  (overlays||document.body).append(dialog);
  dialog.showModal();
  runReferenceGuided(session);
+}
+
+function toggleReferenceGuidedMini(session){
+ const {dialog}=session,mini=dialog.dataset.mini!=='true';
+ dialog.close();
+ dialog.dataset.mini=String(mini);
+ const toggle=dialog.querySelector('[data-guide-mini]');
+ toggle.textContent=mini?T('توسيع المشغّل','Expand player'):T('تصغير المشغّل','Minimize player');
+ dialog.querySelector('[data-guide-close]').textContent=mini?T('إغلاق','Close'):T('العودة إلى المكتبة','Back to the library');
+ if(mini)dialog.show();
+ else dialog.showModal();
+ toggle.focus({preventScroll:true});
 }
 
 function positionReferenceGuided(session,index,stage){
@@ -201,9 +233,13 @@ function positionReferenceGuided(session,index,stage){
  session.dialog.querySelector('[data-guide-content]').scrollTop=0;
 }
 function updateReferenceGuidedControls(session,status=''){
- const {dialog,playing,complete,index,ids,stage}=session;
+ const {dialog,playing,complete,index,ids,stage,stages,lesson}=session;
+ session.voice=referenceStudyAudio.guideVoice(session.voiceMode,session.firstVoice,index,stage,stages);
  dialog.querySelector('[data-guide-play]').textContent=playing?T('Ⅱ إيقاف مؤقت','Ⅱ Pause'):complete?T('▷ أعد الاستماع','▷ Replay'):T('▷ تشغيل / استكمال','▷ Play / resume');
  dialog.querySelector('[data-guide-position]').textContent=`${index+1} / ${ids.length}`;
+ dialog.querySelector('[data-guide-mini-form]').textContent=lesson.form;
+ dialog.querySelector('[data-guide-mini-stage]').textContent=T(...referenceGuideStages[stage].slice(1,3));
+ dialog.querySelector('[data-guide-voice-now]').textContent=session.voice==='female'?'Bella':'Adam';
  dialog.querySelector('[data-guide-status]').textContent=status;
  dialog.querySelector('[data-guide-move="-1"]').disabled=index===0;
  dialog.querySelector('[data-guide-move="1"]').disabled=index===ids.length-1;
