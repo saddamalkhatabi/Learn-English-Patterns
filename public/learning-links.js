@@ -15,6 +15,7 @@ function openLinkedLearning(type,id='',options={}){
  const target=linkedLearningTypes[type];
  if(!target)return;
  const trigger=document.activeElement;
+ if(type==='lesson')return openPatternLesson(Number(id),trigger,options.stage??0);
  stopSpeech({keepReferencePlayer:true});
  clearIdeaFlash();
  stopExpansionAudio();

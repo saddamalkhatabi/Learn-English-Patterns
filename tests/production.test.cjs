@@ -1,6 +1,26 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),crypto=require('node:crypto');
 const plan=require('../production/plans/expansion-all-153.json');
 const rows=plan.manifest_paths.flatMap(p=>JSON.parse(fs.readFileSync(p)).sentences);
+test('polite request patterns use the original scenes for their own twelve scripts',()=>{
+ const geometry=require('../production/qa/webp-grid-overrides.json').atlases;
+ const published=require('../public/expansion-media.json').sentences;
+ for(const [pattern,donor] of [[9125,9127],[9126,9128],[9127,9126],[9128,9125]]){
+  const file=`pattern-${pattern}-atlas-v2.webp`,source=`pattern-${donor}-atlas-v1.webp`;
+  const registered=geometry[file],original=geometry[source];
+  assert.equal(registered.rebound_from,source);
+  assert.equal(registered.sha256,original.sha256);
+  assert.deepEqual(registered.crops,original.crops);
+  assert.equal(crypto.createHash('sha256').update(fs.readFileSync('public/assets/scenes/'+file)).digest('hex'),original.sha256);
+  const sentences=rows.filter(row=>row.pattern_id===pattern);
+  assert.equal(sentences.length,12);
+  sentences.forEach((row,cell)=>{
+   assert.equal(row.image.atlas,'assets/scenes/'+file,row.id);
+   assert.equal(row.image.cell,cell,row.id);
+   assert.deepEqual(row.image.crop,original.crops[cell],row.id);
+   assert.deepEqual(published.find(example=>example.id===row.id)?.image,row.image,row.id);
+  });
+ }
+});
 test('reviewed expansion scenes match their retained source, policy review and exact cell crop',()=>{
  for(const p of plan.patterns){
   const sentences=rows.filter(s=>s.pattern_id===p.id),reviewed=sentences.filter(s=>s.image.status==='assistant-reviewed');

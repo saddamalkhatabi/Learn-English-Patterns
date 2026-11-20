@@ -53,8 +53,11 @@ html[data-pattern-image="hidden"] .dialogue-thumb,html[data-pattern-image="hidde
 .dialogue-panel .dialogue-transcript li strong{font-size:.82rem}
 
 .coach-shell{overflow:visible}
-.coach-shell>.coach-controls{position:sticky;inset-block-start:0;z-index:4;padding:.65rem}
-#coach-practice-actions{margin:0;justify-content:center}
+.coach-shell>.coach-controls{position:sticky;inset-block-start:0;z-index:4;display:grid;grid-template-columns:minmax(0,1fr);gap:.45rem;padding:.65rem}
+.coach-playback-actions{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:.4rem}
+#coach-practice-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.4rem}
+#coach-idea-practice{display:contents}
+#coach-practice-actions button{min-width:0;padding:.45rem .55rem;font-size:clamp(.75rem,1.7vw,.92rem);line-height:1.4}
 #coach-practice-actions #coach-photo-practice:disabled{opacity:.5;cursor:default}
 .coach-dialogue-wrap .dialogue-active:not(:empty){grid-template-columns:minmax(90px,min(34%,215px)) minmax(0,1fr)}
 .coach-dialogue-wrap .dialogue-panel[data-priority="image"] .dialogue-active:not(:empty){grid-template-columns:minmax(95px,min(44%,300px)) minmax(0,1fr)}
