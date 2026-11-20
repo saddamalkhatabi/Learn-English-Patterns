@@ -31,10 +31,10 @@ module.exports=function referenceStudyCues(existing){
    for(const voice of voices)if(!row.recordings?.[voice]?.path)add('example',text,voice);
   }
   for(const word of audio.words(base,examples,scenes)){
-   const text=english.analyze(word.en,word.row).us;
+   const text=word.en;
    for(const voice of voices){
     const prior=existing[ideaWordCueId(word.en,voice)];
-    if((prior&&english.sameSpeech(prior,text))||audio.wordExcerpt(word,text,voice,english.sameSpeech))continue;
+    if(prior&&english.sameSpeech(prior,text))continue;
     add('word',text,voice);
    }
   }
@@ -45,13 +45,15 @@ module.exports=function referenceStudyCues(existing){
   if(!pattern)continue;
   const [base,...examples]=(row.published_sentence_ids||row.examples.map(example=>example.id)).map(key=>course.get(key)).filter(Boolean);
   if(!base)continue;
+  for(const voice of voices)add('title',audio.patternTitle(row.form),voice);
   const text=english.analyze(spokenTrainingCue('explanation-intro',pattern,curriculum.get(id)||pattern.lesson)).us;
   add('rule',text,'male');
   if(!english.sameSpeech(existing[`explanation-intro-${id}`]||'',text))add('rule',text,'female');
   addLesson(base,examples);
  }
  for(const row of references){
-  const rule=guides.get(row.id).rule_en;
+  const guide=guides.get(row.id),rule=guide.rule_en;
+  for(const voice of voices)add('title',audio.patternTitle(guide.form,guide.construction),voice);
   if(rule){
    const text=english.analyze(spokenComparisonNote(rule),row).us;
    for(const voice of voices)add('rule',text,voice);

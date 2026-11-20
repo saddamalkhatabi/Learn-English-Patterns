@@ -4,7 +4,7 @@
  else root.EPReferenceStudyAudio=api;
 })(globalThis,function(vocabulary){
  const stages=[
-  ['base','الجملة الأساسية','Main sentence','New pattern. Main sentence.'],
+  ['base','الجملة الأساسية','Main sentence','Main sentence.'],
   ['rule','شرح النمط','Rule explanation','Rule explanation.'],
   ['examples','أمثلة النمط','Pattern examples','Pattern examples. Listen to how the structure is used.'],
   ['words','توسيع المفردات','Vocabulary expansion','Vocabulary expansion. Listen to words and phrases for this pattern.']
@@ -14,6 +14,23 @@
   let key=0xcbf29ce484222325n;
   for(const unit of text.normalize('NFC'))key=BigInt.asUintN(64,(key^BigInt(unit.codePointAt(0)))*0x100000001b3n);
   return `reference-study-${kind}-${key.toString(16)}-${voice}`;
+ }
+ const formParts={
+  "فعل مثبت (بدون don't)":'affirmative verb',
+  'فعل بالمضارع البسيط':'simple present verb','جملة رئيسية':'main clause',
+  'الفعل الأساسي':'base verb','فعل أساسي':'base verb','فعل مضارع':'present tense verb',
+  'اسم مفرد أو غير معدود':'singular or uncountable noun','اسم مفرد':'singular noun',
+  'اسم جمع':'plural noun','اسم علم':'proper noun','اسم':'noun','صفة':'adjective',
+  'مكان':'place','جملة':'clause','فعل':'verb','أو':'or','مع':'with','،':','
+ };
+ function patternTitle(form,construction='statement'){
+  const title=(form||construction.replaceAll('-',' '))
+   .replace(/فعل مثبت \(بدون don't\)|فعل بالمضارع البسيط|جملة رئيسية|الفعل الأساسي|فعل أساسي|فعل مضارع|اسم مفرد أو غير معدود|اسم مفرد|اسم جمع|اسم علم|اسم|صفة|مكان|جملة|فعل|أو|مع|،/g,part=>formParts[part])
+   .replace(/\s*\+\s*/g,', followed by ').replace(/\s*\/\s*/g,' or ')
+   .replace(/\s*=\s*/g,', or ')
+   .replace(/(^|[\s(])-ing\b/g,'$1the I N G form').replace(/\.{3}|…/g,' ')
+   .replace(/\s+([,.!?])/g,'$1').replace(/\s+/g,' ').trim().replace(/[.!?]+$/,'');
+  return `New pattern. ${title}.`;
  }
  function examples(base,study,lookup,references,guideFor){
   const authored=(study?.rows[base.id]?.examples||[]).map(lookup).filter(row=>row&&row.id!==base.id);
@@ -31,12 +48,9 @@
  function words(base,examples,scenes){
   const chosen=new Map();
   for(const row of [base,...examples]){
-   const candidates=(scenes?.[row.id]?.words||[]).filter(word=>word.en&&word.ar);
-   const relevant=word=>vocabulary.includesTerm(row.en,word.en);
-   const ordered=[...candidates.filter(relevant),...candidates.filter(word=>
-    !relevant(word)&&Number.isFinite(word.x)&&Number.isFinite(word.y))];
+   const candidates=(scenes?.[row.id]?.words||[]).filter(word=>word.en&&word.ar&&vocabulary.includesTerm(row.en,word.en));
    let count=0;
-   for(const word of ordered){
+   for(const word of candidates){
     const key=vocabulary.normalize(word.en);
     if(chosen.has(key))continue;
     chosen.set(key,{...word,row});
@@ -45,6 +59,16 @@
    }
   }
   return [...chosen.values()];
+ }
+ function termIndexes(displayed,word){
+  const wanted=vocabulary.tokens(word).map(vocabulary.normalize);
+  const tokens=displayed.flatMap((part,index)=>vocabulary.tokens(part).map(value=>({index,word:vocabulary.normalize(value)})));
+  if(!wanted.length)return [];
+  const start=tokens.findIndex((_,i)=>wanted.every((value,j)=>tokens[i+j]?.word===value));
+  return start<0?[]:[...new Set(tokens.slice(start,start+wanted.length).map(token=>token.index))];
+ }
+ function guideGap(kind){
+  return {title:500,heading:330,word:480,context:760,sentence:420,rule:550}[kind]||0;
  }
  function wordExcerpt(word,text,voice,sameSpeech){
   const recording=word.row.recordings?.[voice],cues=recording?.words;
@@ -58,5 +82,5 @@
   return {path:recording.path,start_ms:Math.max(cues[first-1]?.end_ms||0,cues[first].start_ms-25),
    end_ms:Math.min(cues[last+1]?.start_ms||recording.duration_ms,cues[last].end_ms+35)};
  }
- return {stages,cueId,examples,words,wordExcerpt};
+ return {stages,cueId,patternTitle,examples,words,termIndexes,guideGap,wordExcerpt};
 });

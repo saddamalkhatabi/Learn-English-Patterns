@@ -97,6 +97,25 @@ test('reference study plans Adam and Bella for spoken transitions and additional
  assert.equal(wordExcerpt({row},'telephone','female',sameSpeech),null);
 });
 
+test('reference study announces the specific pattern and pairs words with sentences containing them',()=>{
+ const {cueId,patternTitle,words,termIndexes,guideGap}=require('../public/reference-study-audio.js');
+ const cues=require('../scripts/training-cues.cjs');
+ const catalog=require('../public/pattern-catalog.json').patterns;
+ for(const {form} of catalog){
+  const title=patternTitle(form);
+  assert.match(title,/^New pattern\. .{2,}\.$/);
+  assert(!/[\u0600-\u06ff]/.test(title),form);
+  for(const voice of ['male','female'])assert.equal(cues[cueId('title',title,voice)],title);
+ }
+ const base={id:'one',en:'Could you turn it off?'},example={id:'two',en:'We turn off the lights.'};
+ const scenes={one:{words:[{en:'lamp',ar:'مصباح',x:10,y:10}]},two:{words:[{en:'turn off',ar:'يطفئ'}]}};
+ const [term,...rest]=words(base,[example],scenes);
+ assert.equal(rest.length,0);
+ assert.equal(term.row,example);
+ assert.deepEqual(termIndexes(example.en.split(' '),term.en),[1,2]);
+ assert(guideGap('word')>=400&&guideGap('context')>guideGap('word'));
+});
+
 test('level one has 200 conversations, with multiple contexts for every course pattern', () => {
  const published = new Map(dialogues.map(dialogue => [dialogue.id,dialogue]));
  const entries = new Map(plan.entries.map(entry => [entry.id,entry]));

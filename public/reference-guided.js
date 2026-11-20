@@ -1,10 +1,10 @@
 const referenceStudyAudio=EPReferenceStudyAudio;
 const referenceGuideStages=referenceStudyAudio.stages;
-let referenceGuided=null,referenceCourseSentences,referenceStudyRecordings={};
+let referenceGuided=null,referenceCourseSentences,referenceStudyRecordings=null;
 trainingAudioReady.then(cues=>{referenceStudyRecordings=cues});
 
 function referenceStudyRecording(kind,text,voice){
- const cue=referenceStudyRecordings[referenceStudyAudio.cueId(kind,text,voice)];
+ const cue=referenceStudyRecordings?.[referenceStudyAudio.cueId(kind,text,voice)];
  return cue?.text===text?cue:null;
 }
 
@@ -76,12 +76,14 @@ function referenceGuidedLesson(id){
   return {id,base,examples:examples.slice(1),form:pattern.form,rule,ar:meta.explanation_ar||pattern.explanation_ar,
    photo:referencePatternPhoto(pattern,examples),level:learningLevels.patterns[id],
    foundation:pattern.lifecycle.published,
+   titleSpeech:referenceStudyAudio.patternTitle(pattern.form),
    ruleSpeech:englishAmerican(spokenTrainingCue('explanation-intro',spokenPattern,meta))};
  }
  const base=referencePlayer?.rows.get(id);
  if(!base)return null;
  const guide=referenceGuide(base);
- return {id,base,photo:base,form:guide.form||guide.construction,rule:guide.rule_en,ar:guide.rule_ar,
+ return {id,base,photo:base,form:guide.form||guide.construction.replaceAll('-',' '),rule:guide.rule_en,ar:guide.rule_ar,
+  titleSpeech:referenceStudyAudio.patternTitle(guide.form,guide.construction),
   ruleSpeech:guide.rule_en?englishAmerican(spokenComparisonNote(guide.rule_en),base):''};
 }
 
@@ -91,35 +93,38 @@ function referenceGuidedExamples(lesson,study){
 }
 
 function referenceGuidedWordRecording(word,text,voice){
- const cue=referenceStudyRecordings[ideaWordCueId(word.en,voice)];
+ const cue=referenceStudyRecordings?.[ideaWordCueId(word.en,voice)];
  if(cue&&EPEnglish.sameSpeech(cue.text,text))return cue;
- return referenceStudyAudio.wordExcerpt(word,text,voice,EPEnglish.sameSpeech)||referenceStudyRecording('word',text,voice);
+ return referenceStudyRecording('word',text,voice)||referenceStudyAudio.wordExcerpt(word,text,voice,EPEnglish.sameSpeech);
 }
 
 function referenceGuidedTrackList(session,stage,examples=[],words=[]){
  const {lesson,voice,full}=session;
  const [key,,,heading]=referenceGuideStages[stage];
- const sentence=row=>{
+ const sentence=(row,word)=>{
   const text=englishAmerican(row.en,row);
-  return {row,text,recording:row.recordings?.[voice]||referenceStudyRecording('example',text,voice)};
+  return {kind:word?'context':'sentence',row,word,text,recording:row.recordings?.[voice]||referenceStudyRecording('example',text,voice)};
  };
- const tracks=full?[{text:heading,recording:referenceStudyRecording('stage',heading,voice)}]:[];
- if(key==='base')tracks.push(sentence(lesson.base));
+ const tracks=full||key==='base'?[{kind:'heading',text:heading,recording:referenceStudyRecording('stage',heading,voice)}]:[];
+ if(key==='base'){
+  tracks.unshift({kind:'title',text:lesson.titleSpeech,recording:referenceStudyRecording('title',lesson.titleSpeech,voice)});
+  tracks.push(sentence(lesson.base));
+ }
  if(key==='rule'&&lesson.ruleSpeech){
   let recording=referenceStudyRecording('rule',lesson.ruleSpeech,voice);
   if(lesson.examples&&voice==='female'&&!recording){
-   const cue=referenceStudyRecordings[`explanation-intro-${lesson.id}`];
+   const cue=referenceStudyRecordings?.[`explanation-intro-${lesson.id}`];
    if(cue&&EPEnglish.sameSpeech(cue.text,lesson.ruleSpeech))recording=cue;
   }
-  const narration={text:lesson.ruleSpeech,recording};
+  const narration={kind:'rule',text:lesson.ruleSpeech,recording};
   if(lesson.examples)return [narration];
   tracks.push(narration);
  }
- if(key==='examples')tracks.push(...examples.map(sentence));
+ if(key==='examples')tracks.push(...examples.map(row=>sentence(row)));
  if(key==='words'){
   for(const word of words){
-   const text=englishAmerican(word.en,word.row);
-   tracks.push({word,text,recording:referenceGuidedWordRecording(word,text,voice)});
+   const text=word.en;
+   tracks.push({kind:'word',word,text,recording:referenceGuidedWordRecording(word,text,voice)},sentence(word.row,word));
   }
  }
  return tracks;
@@ -214,20 +219,35 @@ function pauseReferenceGuided(session){
 function paintReferenceGuided(session,track,examples,words){
  const {lesson,stage,dialog}=session,[key,ar,en]=referenceGuideStages[stage];
  const row=track.row||track.word?.row||lesson.base;
+ const intro=track.kind==='title',word=track.word;
+ const written=word&&englishDisplay(word.en,row);
  const photo=row.image?row:lesson.photo;
  const visibleWords=key==='words'?words:[];
  const alternate=photo&&photo.id!==row.id;
- dialog.querySelector('[data-guide-content]').innerHTML=`
+ const content=dialog.querySelector('[data-guide-content]');
+ content.dataset.guideTrack=track.kind;
+ content.innerHTML=`
   <div class="reference-guided-photo">${patternsSentenceScene(photo)}
    ${alternate?`<small>${T('صورة توضيحية مرتبطة بالنمط','Related illustrative scene')}</small>`:''}</div>
-  <div class="reference-guided-copy"><h3>${T(ar,en)} ${key==='examples'&&track.row?`· ${examples.indexOf(row)+1} / ${examples.length}`:''}</h3>
+  <div class="reference-guided-copy"><h3>${intro?T('بداية نمط جديد','New pattern'):T(ar,en)} ${key==='examples'&&track.row?`· ${examples.indexOf(row)+1} / ${examples.length}`:''}</h3>
    <div class="reference-card-meta">${lesson.foundation?`<span class="reference-foundation">★ ${T('تأسيسي','Foundation')} · ${H(lesson.level)}</span>`:H(lesson.level||'')}</div>
    <strong class="pattern-form" lang="en" dir="ltr">${H(lesson.form)}</strong>
    ${key==='rule'?EP.pair(lesson.ar,lesson.rule):''}
-   <p class="reference-guided-sentence" lang="en" dir="ltr">${referenceGuidedSentenceWords(row,'data-guide-word')}</p>${EP.ar(row.ar)}
+   ${word?`<section class="reference-guided-term">
+    <span>${words.indexOf(word)+1} / ${words.length} · ${track.kind==='word'?T('استمع إلى المفردة','Listen to the word'):T('استمع إليها في الجملة','Listen in context')}</span>
+    <bdi lang="en">${H(written)}</bdi>
+    ${EPEnglish.sameSpeech(written,word.en)?'':`<span>${T('نص التسجيل الصوتي','Audio transcript')} <bdi lang="en">${H(word.en)}</bdi></span>`}
+    ${EP.ar(word.ar)}</section>`:''}
+   ${intro?'':`<p class="reference-guided-sentence" lang="en" dir="ltr">${referenceGuidedSentenceWords(row,'data-guide-word')}</p>${EP.ar(row.ar)}`}
    ${key==='words'?`<ul class="reference-guided-vocabulary">${visibleWords.map(word=>`<li class="${word===track.word?'active':''}">
     <bdi lang="en">${H(englishDisplay(word.en,word.row))}</bdi>${EP.prefs.arabic?`<bdi lang="ar">${H(word.ar)}</bdi>`:''}
    </li>`).join('')}</ul>`:''}</div>`;
+ if(word){
+  const tokens=[...content.querySelectorAll('[data-guide-word]')];
+  const match=[word.en,englishDisplay(word.en,row),englishAmerican(word.en,row)]
+   .map(term=>referenceStudyAudio.termIndexes(tokens.map(token=>token.textContent),term)).find(indexes=>indexes.length)||[];
+  for(const i of match)tokens[i].classList.add('reference-vocabulary-token');
+ }
  window.EPOffline?.rememberSentences(photo&&photo!==row?[row,photo]:[row]);
  EP.decorate();
 }
@@ -236,18 +256,27 @@ function playReferenceGuidedRecording(session,track){
  const {audio,dialog,rate}=session,recording=track.recording;
  if(!recording?.path)return synthesizeTrainingCue(track.text,rate,session.voice);
  if(recording.start_ms!=null)return playVocabularyClip(recording,{audio,rate});
- let finish,settled=false;
+ let finish,settled=false,frame,last=-1;
  const done=new Promise(resolve=>{finish=resolve});
  const words=track.row&&recording.words?dialog.querySelectorAll('.reference-guided-sentence [data-guide-word]'):[];
  function mark(){
   const ms=audio.currentTime*1000;
-  const active=recording.words?.findIndex(word=>word.start_ms<=ms&&ms<word.end_ms);
-  words.forEach((word,index)=>word.classList.toggle('speaking',index===active));
+  const active=recording.words?.findIndex(word=>word.start_ms<=ms&&ms<word.end_ms)??-1;
+  if(active===last)return;
+  words[last]?.classList.remove('speaking');
+  words[active]?.classList.add('speaking');
+  last=active;
+ }
+ function tick(){
+  if(settled||audio.paused)return;
+  mark();
+  frame=requestAnimationFrame(tick);
  }
  function end(ok){
   if(settled)return;
   settled=true;
-  audio.onended=audio.onerror=audio.ontimeupdate=null;
+  cancelAnimationFrame(frame);
+  audio.onended=audio.onerror=audio.ontimeupdate=audio.onplaying=null;
   audio.pause();
   words.forEach(word=>word.classList.remove('speaking'));
   finish(ok);
@@ -255,16 +284,25 @@ function playReferenceGuidedRecording(session,track){
  audio.src=recording.path;
  audio.playbackRate=rate;
  audio.ontimeupdate=mark;
+ if(words.length)audio.onplaying=()=>{cancelAnimationFrame(frame);tick()};
  audio.onended=()=>end(true);
  audio.onerror=()=>end(false);
  audio.play().catch(()=>end(false));
  return {done,stop:()=>end(false)};
 }
 
+function waitReferenceGuided(ms){
+ let finish;
+ const done=new Promise(resolve=>{finish=resolve});
+ const timer=setTimeout(finish,ms);
+ return {done,stop(){clearTimeout(timer);finish()}};
+}
+
 async function runReferenceGuided(session){
  const run=++session.run;
  session.playing=true;
  updateReferenceGuidedControls(session);
+ if(!referenceStudyRecordings)await trainingAudioReady;
  if(session.full&&!session.ready)session.ready=Promise.all([
   loadStudioVocabulary(),session.ids.some(id=>typeof id==='string')?loadReferenceStudy():null,pilotReady
  ]);
@@ -274,8 +312,8 @@ async function runReferenceGuided(session){
   if(stage===2||stage===3){
    const [,study]=await(session.ready||[]);
    if(session.run!==run)return;
-   examples=referenceGuidedExamples(lesson,study);
-   if(stage===3)words=referenceStudyAudio.words(lesson.base,examples,studioVocabulary);
+   examples=lesson.relatedExamples??=referenceGuidedExamples(lesson,study);
+   if(stage===3)words=lesson.words??=referenceStudyAudio.words(lesson.base,examples,studioVocabulary);
   }
   const next=referenceGuidedTrackList(session,stage,examples,words)[track];
   if(next){
@@ -289,12 +327,16 @@ async function runReferenceGuided(session){
     if(session.run!==run)return;
    }
    session.sound=null;
-   if(!played&&next.recording){
+   if(!played){
     session.playing=false;
     updateReferenceGuidedControls(session,T('تعذّر تشغيل الصوت. اضغط تشغيل للمحاولة أو اختر مرحلة أخرى.','Audio could not play. Press Play to retry or choose another stage.'));
     return;
    }
    session.track++;
+   session.sound=waitReferenceGuided(referenceStudyAudio.guideGap(next.kind));
+   await session.sound.done;
+   if(session.run!==run)return;
+   session.sound=null;
    continue;
   }
   const nextStage=session.stages.indexOf(stage)+1;

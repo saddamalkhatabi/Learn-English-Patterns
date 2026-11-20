@@ -89,6 +89,12 @@ html[data-pattern-image="hidden"] .coach-dialogue-wrap .dialogue-panel .dialogue
 .reference-guided-copy h3{margin:0 0 .35rem}
 .reference-guided-copy .pattern-form{display:block;margin-block:.4rem;font-size:clamp(1rem,3vw,1.45rem)}
 .reference-guided-sentence{font-size:clamp(1rem,3vw,1.5rem);line-height:1.6}
+.reference-guided-sentence [data-guide-word].speaking{background:#ffe2a4;color:#462409!important;border-radius:.2em;text-decoration:underline;text-underline-offset:.2em}
+.reference-guided-sentence .reference-vocabulary-token{font-weight:750;border-block-end:2px solid #337862}
+.reference-guided-term{display:grid;gap:.2rem;margin-block:.7rem;padding:.45rem .65rem;border-inline-start:3px solid #337862;background:#eef5ed}
+.reference-guided-term span{font-size:.82rem;color:#436253}
+.reference-guided-term bdi{font-size:1.2rem;font-weight:750}
+.reference-guided-term p{margin:0}
 .reference-guided-vocabulary{list-style:none;padding:0;display:grid;gap:.3rem}
 .reference-guided-vocabulary li{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem;padding:.35rem .6rem;border-radius:8px;background:#ebf0ea}
 .reference-guided-vocabulary li.active{background:#ffedc8;outline:2px solid #ad7821}
