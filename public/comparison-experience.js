@@ -33,6 +33,7 @@ function comparisonsPage(){
    ${comparisonSelect('level',T('المستوى','Level'),T('كل المستويات','All levels'),comparisonLevels)}
    ${comparisonSelect('type',T('نوع المقارنة','Comparison type'),T('كل الأنواع','All types'),comparisonTypes)}
    ${comparisonSelect('size',T('عدد الصيغ','Number of forms'),T('الكل','All'),{2:['ثنائية','Two'],3:['ثلاثية','Three'],4:['رباعية','Four'],5:['خمسة فأكثر','Five or more']})}
+   <label>${T('الغرض','Purpose')}<select id="comparison-purpose" onchange="resetComparisonSelection()">${purposeOptions('','purpose:')}</select></label>
    <label>${T('وقفة القراءة','Reading break')} <select id="comparison-delay">
     <option value="8">8 s</option><option value="15" selected>15 s</option><option value="25">25 s</option><option value="45">45 s</option>
    </select></label>
@@ -60,11 +61,14 @@ function comparisonSelect(key,label,all,values){
 function visibleComparisons(){
  const size=Number($('#comparison-size')?.value);
  const level=$('#comparison-level')?.value;
- const type=$('#comparison-type')?.value;
+ const type=$('#comparison-type')?.value,purpose=$('#comparison-purpose')?.value;
  const levels=Object.keys(comparisonLevels);
  return patternComparisons.filter(item=>{
   const count=item.samples.length;
-  return (!level||item.level===level)&&(!type||item.type===type)&&
+  return (!purpose||matchesLearningPurpose(purpose,item.patterns)||item.samples.some(sample=>{
+   const row=sample.sentenceId&&referencePlayer?.rows.get(sample.sentenceId);
+   return row&&matchesLearningPurpose(purpose,[],sentencePurpose(row));
+  }))&&(!level||item.level===level)&&(!type||item.type===type)&&
    (!size||(size===5?count>=5:count===size));
  }).sort((left,right)=>levels.indexOf(left.level)-levels.indexOf(right.level));
 }
@@ -87,6 +91,7 @@ function comparisonCards(item,showExamples,showDetails){
   const pattern=PILOT?.patterns.find(p=>p.id===id);
   return `<article>
     <h3 class="pattern-form" dir="ltr" lang="en">${H(pattern?.form||item.examples[i])}</h3>
+    ${purposeTag(EPPurposes.forPattern(id))}
     ${showExamples?`<p dir="ltr" lang="en">${comparisonModel(item.examples[i],pattern)}</p>`:''}
     ${showDetails?`<details ontoggle="fillComparisonPattern(this,${id})">
      <summary>${T('القاعدة وأمثلة الدرس','Rule and lesson examples')}</summary><div></div>
@@ -98,7 +103,7 @@ function comparisonCards(item,showExamples,showDetails){
   cards.push(`<article>
    <h3 class="pattern-form" dir="ltr" lang="en">${H(sample.form)}</h3>
    <small>${T('من مكتبة الألف جملة','From the 1,000-sentence library')}</small>
-   ${showExamples&&sentence?`<p dir="ltr" lang="en">${EP.words(sentence)}</p>${EP.ar(sentence.ar)}`:''}
+   ${showExamples&&sentence?`<p dir="ltr" lang="en">${EP.words(sentence)}</p>${EP.ar(sentence.ar)}${sentencePurposeMarkup(sentence)}`:''}
    ${showDetails&&sentence?referenceRule(sentence):''}
   </article>`);
  }
@@ -120,7 +125,7 @@ function paintComparisonSelection(){
  const list=$('#comparison-list');
  if(!list)return;
  EPFilters.controls('comparisons',$('.comparison-controls'),{
-  level:$('#comparison-level'),type:$('#comparison-type'),size:$('#comparison-size')
+  level:$('#comparison-level'),type:$('#comparison-type'),size:$('#comparison-size'),purpose:$('#comparison-purpose')
  },resetComparisonSelection);
  const items=visibleComparisons();
  const count=items.length;

@@ -10,9 +10,9 @@ function smartLibraryFilters(){
    `<option value="${p.id}" ${studioPattern===p.id?'selected':''}>${H(p.form)}</option>`
   ).join('')}</select></label>
   <label>${T('الغرض','Purpose')}<select id="studio-purpose" onchange="studioPurpose=this.value;studioPage=0;paintSceneStudio()">
-   <option value="">${T('كل الأغراض','All purposes')}</option>${(CURRICULUM?.routes||[]).filter(route=>route.id!=='full-course').map(route=>
+   ${purposeOptions(studioPurpose,'purpose:')}<optgroup label="${T('مسارات المنهج','Course routes')}">${(CURRICULUM?.routes||[]).filter(route=>route.id!=='full-course').map(route=>
     `<option value="${route.id}" ${studioPurpose===route.id?'selected':''}>${H(T(route.title,EP.dictionary.get(route.title)||route.title))}</option>`
-   ).join('')}</select></label>`;
+   ).join('')}</optgroup></select></label>`;
 }
 function smartSentencePatterns(row){
  if(row.pattern_id)return [row.pattern_id];
@@ -21,8 +21,9 @@ function smartSentencePatterns(row){
 function matchesStudioContext(row){
  const ids=smartSentencePatterns(row);
  if(studioPattern&&!ids.includes(studioPattern))return false;
- const route=CURRICULUM?.routes.find(route=>route.id===studioPurpose);
- return !route||route.pattern_ids.some(id=>ids.includes(id));
+ const location=dialogueSceneLocations.get(row.id);
+ const dialogue=location&&PILOT?.dialogues.find(item=>item.id===location.id);
+ return matchesLearningPurpose(studioPurpose,ids,dialogue?EPPurposes.forDialogue(dialogue):sentencePurpose(row));
 }
 function selectStudioPattern(value){
  studioPattern=Number(value)||null;studioPage=0;
@@ -90,6 +91,7 @@ async function openSmartScene(id,focus=true){
    <p>${H(T(practice.taskAr,practice.taskEn))}</p>`:
    `<p lang="en" dir="ltr">${EP.words(row,'data-studio-word')}</p>${EP.ar(row.ar)}
    <div class="buttonrow"><button class="primary" onclick="playStudioSentence('${H(id)}','male')">▶ Adam</button><button class="secondary" onclick="playStudioSentence('${H(id)}','female')">▶ Bella</button></div>`}
+  ${dialogue?dialoguePurposeMarkup(EPPurposes.forDialogue(dialogue)):row?sentencePurposeMarkup(row):''}
   <p class="lesson-hint">${learningLevelLabel(sceneLearningLevel(studioWordScene))}</p></section>
   ${ideaPracticeControls()}<div id="idea-lab-task"></div>${practice?'':EP.rule(row,{compact:true})}
   ${same.length?`<details class="idea-disclosure"><summary>${T('جمل وصور النمط نفسه','More scenes using this pattern')} · ${same.length}</summary>

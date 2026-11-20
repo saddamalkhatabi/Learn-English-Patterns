@@ -10,6 +10,26 @@ const plan = require('../public/dialogue-plan.json');
 const corpus = require('../public/source-corpus.json');
 const references = new Map(corpus.sentences.map(row => [row.id, row]));
 
+test('each purpose leaf has its own verified recording and can be selected through its parent',()=>{
+ const purposes=require('../public/purpose-tree.js');
+ const cues=require('../public/training-audio.json');
+ const ids=new Set();
+ for(const group of purposes.groups){
+  for(const [id] of group.items){
+   assert(!ids.has(id),id);
+   ids.add(id);
+   assert(purposes.matches(group.id,id),id);
+   assert(purposes.matches(id,id),id);
+   assert(!purposes.matches(purposes.groups.find(other=>other!==group).id,id),id);
+   const cue=cues[`purpose-category-${id}-female`];
+   assert.equal(cue.text,purposes.spoken(id),id);
+   assert.equal(crypto.createHash('sha256').update(fs.readFileSync('public/'+cue.path)).digest('hex'),cue.sha256,id);
+  }
+ }
+ assert.equal(purposes.forPattern(9097),'schedule');
+ for(const pattern of [...foundation.patterns,...expansion.patterns])assert(ids.has(purposes.forPattern(pattern.id)),pattern.id);
+});
+
 test('conversation turns link to real patterns, scenes and measured cues within a single file', () => {
  const patterns = new Set([...foundation.patterns, ...expansion.patterns].map(p => p.id));
  const {scenes:archive} = require('../public/scene-archive.json');

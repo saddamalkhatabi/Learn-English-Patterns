@@ -1,8 +1,8 @@
 /* Shared navigation, reading preferences and pattern exploration. */
 const T=(ar,en)=>EP.t(ar,en),H=EP.escape;
-labels.curriculum='استكشف الأنماط';labels.library='تعلّم الأنماط';labels.references='مكتبة الألف جملة';labels.coach='الاستماع والتدريب';labels.settings='الإعدادات والتنزيل';labels.catalog='معرض المشاهد';labels.home='البداية';
+labels.curriculum='استكشف الأنماط';labels.library='تعلّم الأنماط';labels.references='مكتبة الألف جملة';labels.coach='الاستماع والتدريب';labels.settings='الإعدادات والتنزيل';labels.catalog='معرض المشاهد';labels.home='البداية';labels.purposes='أغراض التعبير';
 const epNavGroups=[
- ['تعلّم','LEARN',[['home','⌂','البداية','Home'],['library','▤','دروس الأنماط','Pattern lessons'],['coach','▷','الاستماع والتدريب','Listen & practise'],['songs','♪',labels.songs,'Learn Patterns with Songs']]],
+ ['تعلّم','LEARN',[['home','⌂','البداية','Home'],['library','▤','دروس الأنماط','Pattern lessons'],['coach','▷','الاستماع والتدريب','Listen & practise'],['purposes','◎','أغراض التعبير','Communicative purposes'],['songs','♪',labels.songs,'Learn Patterns with Songs']]],
  ['طبّق','PRACTISE',[['scene-studio','▦','مكتبة الصور الذكية','Smart photo library'],['dialogues','▧','المحادثات','Conversations'],['comparisons','⇄','المقارنات','Comparisons']]],
  ['ارجع وتابع','FIND & REVIEW',[['references','◈','الألف جملة (نمط)','1,000 sentences (patterns)'],['vocabulary','Aa','أطلس المفردات','Vocabulary atlas'],['progress','◴','تقدّمي ومراجعتي','Progress & review']]]
 ];

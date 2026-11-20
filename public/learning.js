@@ -60,7 +60,7 @@ function renderLesson(){const p=current,rows=sentenceRows(),s=lessonScene(),meta
  if(stage===0&&s?.teaching_note)$('#lesson .translation').insertAdjacentHTML('afterend',bilingual(s.teaching_note.ar,s.teaching_note.en));if(stage===1)markPatternStructure();if(stage===3)updateWords();if(stage===4&&lessonDrafts[p.id])checkProduction();if(stage===5)showSavedExam();
 }
 function selectLessonExample(n){stopSpeech();auto=false;example=n;built=[];passed=false;renderLesson();revealLessonTarget(stage===0?'.lesson-active-example':'.wordbank')}
-function playLessonExample(done){speak(current.examples[example][0],state.voice,done)}
+function playLessonExample(done){playPurposeBeforeLessonExample(done)}
 function toggleLessonAuto(){
  if(auto){stopSpeech();auto=false;renderLesson();revealLessonTarget('#auto-btn');return}
  stopSpeech();

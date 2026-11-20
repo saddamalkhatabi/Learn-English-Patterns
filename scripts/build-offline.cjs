@@ -18,6 +18,7 @@ for(const [id,spoken] of Object.entries(require('./training-cues.cjs'))){
  if(id.startsWith('reference-study-'))sets.library.add(audio.path);
  else sets.course.add(audio.path);
  if(id.startsWith('explanation-intro-'))sets.library.add(audio.path);
+ if(id.startsWith('purpose-category-'))sets.library.add(audio.path);
 }
 for(const scene of require('../public/idea-scenes.json').scenes)sets.course.add(scene.path);
 for(const image of fs.readdirSync(path.join(root,'assets/home')).filter(name=>name.endsWith('.webp'))){

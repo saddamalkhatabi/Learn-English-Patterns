@@ -23,6 +23,7 @@ function referencePatterns(){
  const rows=COURSE_CATALOG.patterns.filter(pattern=>
   (epReference.patternScope!=='foundation'||pattern.lifecycle.published)&&
   (!epReference.patternLevel||learningLevels.patterns[referencePatternId(pattern)]===epReference.patternLevel)&&
+  EPPurposes.matches(epReference.purpose,EPPurposes.forPattern(referencePatternId(pattern)))&&
   query.every(word=>normalizeSceneQuery([
    pattern.form,pattern.title,pattern.explanation_ar,pattern.explanation_en,...pattern.keywords
   ].join(' ')).includes(word)));
@@ -46,7 +47,7 @@ function referencePatternCard(pattern){
   <div class="reference-photo">${patternsSentenceScene(photo)}</div>
   <div class="reference-card-content"><div class="reference-card-meta">
    ${pattern.lifecycle.published?`<span class="reference-foundation">★ ${T('تأسيسي','Foundation')} · ${H(level)}</span>`:`<span>${H(level)}</span>`}
-  </div><h2 lang="en" dir="ltr">${H(pattern.form)}</h2>${EP.ar(pattern.title)}
+  </div><h2 lang="en" dir="ltr">${H(pattern.form)}</h2>${EP.ar(pattern.title)}${purposeTag(EPPurposes.forPattern(id))}
   ${examples[0]?`<p lang="en" dir="ltr">${referenceGuidedSentenceWords(examples[0])}</p>`:''}</div>
   <div class="reference-card-actions buttonrow">
    <button class="primary" type="button" onclick="openReferenceGuided([${id}])">▷ ${T('شرح مع أمثلة إضافية','Explanation with additional examples')}</button>
@@ -102,8 +103,7 @@ function referenceGuidedTrackList(session,stage,examples=[],words=[]){
  const sentence=(row,word,role=voice)=>({kind:word?'context':'sentence',row,word,voice:role,...referenceStudySentenceTrack(row,role)});
  if(key==='purpose'){
   const {base}=lesson;
-  const prompt=referenceStudyAudio.purposePrompt(base,referenceGuide(base));
-  return [{kind:'purpose',prompt,text:prompt.en,voice:'female',recording:referenceStudyRecording('purpose',prompt.en,'female')},
+  return [{kind:'purpose',...purposeTrack(base),voice:'female'},
    sentence(base,null,'male')];
  }
  const tracks=full||key==='base'?[{kind:'heading',text:heading,recording:referenceStudyRecording('stage',heading,voice)}]:[];
@@ -253,7 +253,7 @@ function paintReferenceGuided(session,track,examples,words){
  const {lesson,stage,dialog}=session,[key,ar,en]=referenceGuideStages[stage];
  const row=track.row||track.word?.row||lesson.base;
  const intro=track.kind==='title',word=track.word;
- const prompt=key==='purpose'?referenceStudyAudio.purposePrompt(lesson.base,referenceGuide(lesson.base)):null;
+ const prompt=key==='purpose'?purposeTrack(lesson.base).prompt:null;
  const written=word&&englishDisplay(word.en,row);
  const photo=row.image?row:lesson.photo;
  const visibleWords=key==='words'?words:[];

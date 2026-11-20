@@ -90,7 +90,7 @@ home=function(){
     <div class="ep-image-caption" lang="en" dir="ltr"><b class="pattern-form">I want to</b> learn something new.</div></div>
   </section>
   <section id="home-achievement" class="home-achievement panel">${homeAchievement()}</section>
-  <section id="home-services"><div class="sectionhead"><h2>${T('اختر كيف تتمرّن','Choose how to practise')}</h2></div>
+  <section id="home-services"><div class="sectionhead"><h2>${T('اختر كيف تتمرّن','Choose how to practise')}</h2><a class="secondary" href="#purposes">${T('أغراض التعبير','Communicative purposes')} ↗</a></div>
    <div class="home-services">${homeServices.map(([route,ar,en,arDesc,enDesc])=>
     `<a class="home-service" href="#${route}"><img src="assets/home/${route}.webp" width="780" height="520" loading="lazy" alt="">
      <div><h3>${T(ar,en)}</h3><p>${T(arDesc,enDesc)}</p><span class="textlink">${T('افتح','Open')} ↗</span></div></a>`

@@ -29,6 +29,35 @@ test('browser timer methods preserve their required host receiver',()=>{let call
 test('reading stops preserve remaining time while paused and can be extended before automatic transition',async()=>{let clock=1000,scheduled;const {p,audio}=make(source,null,{now:()=>clock,setTimer:(fn,delay)=>{scheduled={fn,delay};return 1},clearTimer:()=>{}});p.configure({patternIds:[1,13]});p.jumpTo('want-12');await p.play();audio.fire('ended');assert.equal(p.session.phase,'comparison');assert.equal(scheduled.delay,25000);clock+=5000;assert.equal(p.comparisonRemaining,20000);p.pause();clock+=10000;assert.equal(p.comparisonRemaining,20000);await p.play();assert.equal(scheduled.delay,20000);p.extendComparison(10000);assert.equal(scheduled.delay,30000);clock+=30000;scheduled.fn();assert.equal(p.sentence.id,'need-01')});
 test('progress never regresses when a sentence completes into comparison',async()=>{const {p,audio}=make();p.jumpTo('want-12');await p.play();p.session.offset=p.recording.duration_ms/1000;const before=p.progress;audio.fire('ended');assert.equal(p.session.phase,'comparison');assert(p.progress>=before)});
 test('purpose routes preserve their declared pattern order',async()=>{const {p,audio}=make();p.configure({patternIds:[4,12,3],routeId:'questions'});assert.equal(p.session.ids[0],'can-01');p.jumpTo('can-12');await p.play();audio.fire('ended');p.continueAfterComparison();assert.equal(p.sentence.id,'know-01');assert.equal(p.session.filters.routeId,'questions')});
+test('purpose filtering, spoken introductions and vocabulary share the saved training route',async()=>{
+ const purposes=require('../public/purpose-tree.js');
+ const steps=[];
+ const cue=()=>({done:Promise.resolve(true),stop(){}});
+ const options={
+  matchesPurpose:(filter,id)=>purposes.matches(filter,purposes.forPattern(id)),
+  narratePurpose:row=>{steps.push(['purpose',row.id]);return cue()},
+  narrateVocabulary:player=>{steps.push(['words',player.pattern.id]);return cue()}
+ };
+ const {p,audio,storage}=make(source,null,options);
+ p.configure({patternIds:[1,13],purposeId:'coordinate',stage:1,expandVocabulary:true});
+ assert.deepEqual(p.session.ids,['need-01','need-02']);
+ assert.equal(p.session.speakPurpose,true);
+ await p.play();
+ assert.equal(audio.getAttribute('src'),'assets/audio/need-01-male.mp3');
+ audio.fire('ended');
+ await Promise.resolve();
+ assert.equal(audio.getAttribute('src'),'assets/audio/need-02-female.mp3');
+ audio.fire('ended');
+ await Promise.resolve();
+ assert.deepEqual(steps,[['purpose','need-01'],['purpose','need-02'],['words',13]]);
+ const restored=make(source,JSON.parse(storage.getItem('nasaq-route-v2')),options).p;
+ assert.equal(restored.session.filters.purposeId,'coordinate');
+ assert.equal(restored.session.expandVocabulary,true);
+ restored.configure({patternIds:[1],speakPurpose:false,expandVocabulary:false});
+ steps.length=0;
+ await restored.play();
+ assert.deepEqual(steps,[]);
+});
 test('manual advance waits for the configured reading break and then requires a click',async()=>{
  const {p,audio,timer}=make();
  p.configure({patternIds:[1,13],autoNextPattern:false,readingSeconds:5});

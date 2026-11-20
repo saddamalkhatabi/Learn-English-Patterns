@@ -154,8 +154,9 @@ function openVocabularyTerm(id,preferredScene=vocabularyPreferredScene,scroll=tr
    ${vocabularySceneLinks(uses)}
    <h3>${T('شاهدها في سياق','See it in context')}</h3>
    ${[...byExample.values()].slice(0,8).map(({source,index})=>{
+    const sentence=lookupPurposeSentence(source.referenceId||source.id);
     return `<div class="vocabulary-use">${referenceExampleEnglish(source,(text,region)=>
-     vocabularyMarked(text,region==='US'?entry.en:region==='UK'?entry.uk||entry.en:vocabularyEntryName(entry)))}${EP.ar(source.ar)}
+     vocabularyMarked(text,region==='US'?entry.en:region==='UK'?entry.uk||entry.en:vocabularyEntryName(entry)))}${EP.ar(source.ar)}${sentence?sentencePurposeMarkup(sentence):''}
      <small>${learningLevelLabel(source.level||'')}</small> <button class="textlink" onclick="openVocabularyUse(${index})">${vocabularyUseLabel(source)} ↗</button></div>`;
    }).join('')}
    <details><summary>${T('كل مواضع الاستخدام','All uses')} · ${uses.length}</summary>${uses.map(({source,index})=>

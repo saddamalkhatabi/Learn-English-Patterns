@@ -72,7 +72,10 @@ function synthesizeTrainingCue(text,rate,role='female'){
 let lessonCue;
 function playLessonStageCue(){
  const kind=({0:'pattern-intro',1:'explanation-intro',6:'dialogue-intro'})[stage];
- if(!kind)return;
+ if(!kind){
+  if(stage>=2&&stage<=5&&route?.session.speakPurpose!==false&&lessonScene())hearSentencePurpose(lessonScene().id);
+  return;
+ }
  const pattern=PILOT?.patterns.find(p=>p.id===current.id)||current;
  lessonCue?.stop();
  lessonCue=narrateTrainingCue(kind,pattern,state.rate||1);

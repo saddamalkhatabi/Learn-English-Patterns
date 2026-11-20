@@ -31,7 +31,7 @@ const pilotReady=Promise.all([fetch('pilot.json').then(r=>{if(!r.ok)throw Error(
  for(const p of patterns)if(p.id===13)p.topic='الرغبات والخطط';
  for(const topic of new Set(patterns.map(p=>p.topic)))if(!units.some(u=>u.topic===topic))units.unshift({name:topic,desc:'تعرّف على البناء من خلال مواقف متنوعة، ثم كوّن أفكارك الخاصة.',topic,icon:'◎',color:'mint',time:'على إيقاعك'});
  const audio=document.createElement('audio');audio.id='route-audio';audio.preload='auto';document.body.appendChild(audio);
- route=new NasaqRoutePlayer({data:PILOT,audio,storage:document.body.dataset.linkedLearning?null:localStorage,narrate:narrateTrainingCue,readingDefault:()=>Number(EP.prefs.readingSeconds??25),onchange:()=>{if(route)updateCoach()}});
+ route=new NasaqRoutePlayer({data:PILOT,audio,storage:document.body.dataset.linkedLearning?null:localStorage,...teacherNarrationOptions(),readingDefault:()=>Number(EP.prefs.readingSeconds??25),onchange:()=>{if(route)updateCoach()}});
  audio.addEventListener('playing',()=>{cancelAnimationFrame(coachFrame);const tick=()=>{if(!route.running||audio.paused)return;if(page==='coach')paintCoachWords(audio.currentTime*1000);coachFrame=requestAnimationFrame(tick)};tick()});
  if(['coach','catalog','home','path','quality','library'].includes(page))render();
  return data;

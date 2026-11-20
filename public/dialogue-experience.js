@@ -177,6 +177,7 @@ function dialoguePanel(dialogue, jump){
  const priority=dialoguePriority;
  return `<section class="dialogue-panel" data-lifecycle="${Boolean(life)}" data-priority="${priority}"><div class="dialogue-panel-title"><h2>${H(T(dialogue.ar,dialogue.en))}</h2>${dialoguePriorityControl(dialogue)}</div>
   ${learningLevels.dialogues[dialogue.id]?`<p class="lesson-hint">${learningLevelLabel(learningLevels.dialogues[dialogue.id])}</p>`:''}
+  ${dialoguePurposeMarkup(EPPurposes.forDialogue(dialogue))}
   <button type="button" class="secondary dialogue-overview-toggle" aria-expanded="false" onclick="toggleDialogueOverview(this)">${T('عرض كل المشاهد','Show all scenes')}</button>
   ${life?`<button type="button" class="secondary" onclick="openLinkedLearning('journey','${H(dialogue.id)}')">${T('تدرّب بتسلسل الصور','Practise with the photo sequence')} ↗</button>`:''}
   <div class="dialogue-overview" hidden>${life?dialogueJourney(dialogue,jump):dialogueSceneGallery(dialogue,jump)}</div>
@@ -441,7 +442,8 @@ function dialoguesPage(){
   <form class="panel dialogue-filters" onsubmit="event.preventDefault()" onreset="requestAnimationFrame(resetDialogueCatalog)">
    <label class="dialogue-search">${T('البحث','Search')}<input type="search" id="dialogue-query" oninput="resetDialogueFilters()" placeholder="${T('عنوان، موقف، أو نمط…','Title, situation, or pattern…')}"></label>
    ${dialogueSelect('category',T('الموقف','Situation'),T('كل المواقف','All situations'),dialogueCategories)}
-   ${dialogueSelect('purpose',T('هدف المحادثة','Speaking goal'),T('كل الأهداف','All goals'),dialoguePurposes)}
+   <label>${T('غرض المحادثة','Conversation purpose')}<select id="dialogue-purpose" onchange="resetDialogueFilters()">${purposeOptions('','purpose:')}
+   <optgroup label="${T('تصنيفات المحادثات','Conversation collections')}">${Object.entries(dialoguePurposes).map(([id,names])=>`<option value="${id}">${T(...names)}</option>`).join('')}</optgroup></select></label>
    ${dialogueSelect('visual',T('المشاهد','Visual journey'),T('كل المحادثات','All conversations'),{journey:[`دورة مصوّرة · ${Object.keys(dialogueLifecycles).length} محادثة`,`Illustrated journey · ${Object.keys(dialogueLifecycles).length} conversations`]})}
    <label>${T('مستوى التعلّم','Learning level')}<select id="dialogue-level" onchange="selectDialogueLevel(this.value)">${learningLevelOptions(dialogueLearningLevel)}</select></label>
    ${dialogueSelect('status',T('الجاهزية','Availability'),T('المحادثات المتاحة','Available conversations'),{
@@ -479,7 +481,8 @@ function dialogueEntries(){
   const dialogue=dialogues.get(entry.id);
   const patternIds=dialogue?dialogue.lines.flatMap(line=>line.patterns):entry.targets;
   const status=dialogue?(dialogue.audio?'audio':'text'):'planned';
-  return {...entry,level:learningLevels.dialogues[entry.id]||entry.level,dialogue,status,patternIds:[...new Set(patternIds||[])]};
+  const sharedPurpose=EPPurposes.forDialogue({...dialogue,...entry,after:dialogue?.after||patternIds?.[0]});
+  return {...entry,sharedPurpose,level:learningLevels.dialogues[entry.id]||entry.level,dialogue,status,patternIds:[...new Set(patternIds||[])]};
  });
 }
 function selectDialogueLevel(level){
@@ -523,15 +526,20 @@ function normalizeDialogueSearch(value){
  return value.toLowerCase().replace(/[\u064b-\u065f\u0670\u0640]/g,'')
   .replace(/[أإآ]/g,'ا').replace(/’/g,"'");
 }
+function matchesDialoguePurpose(selection,entry){
+ return !selection||(selection.startsWith('purpose:')?EPPurposes.matches(selection.slice(8),entry.sharedPurpose):entry.purpose===selection);
+}
 function filteredDialogueEntries(){
  const status=$('#dialogue-status').value;
- const facets=['category','purpose','level'].map(key=>[key,$('#dialogue-'+key).value]);
+ const purpose=$('#dialogue-purpose').value;
+ const facets=['category','level'].map(key=>[key,$('#dialogue-'+key).value]);
  const patternId=Number($('#dialogue-pattern').value);
  const tokens=normalizeDialogueSearch($('#dialogue-query').value).trim().split(/\s+/).filter(Boolean);
  const patterns=new Map((PILOT?.patterns||[]).map(pattern=>[pattern.id,pattern]));
  return dialogueEntries().filter(entry=>{
   if(!dialogueStatusMatches(entry,status))return false;
   if($('#dialogue-visual')?.value==='journey'&&!dialogueLifecycles[entry.id])return false;
+  if(!matchesDialoguePurpose(purpose,entry))return false;
   if(facets.some(([key,value])=>value&&String(entry[key])!==value))return false;
   if(patternId&&!entry.patternIds.includes(patternId))return false;
   if(!tokens.length)return true;
@@ -575,7 +583,7 @@ function paintDialogueCatalog(){
  host.innerHTML=entries.slice(offset,offset+dialoguesPerPage).map(entry=>{
   const {dialogue,category,level,purpose}=entry;
   const visual=dialogue?dialogueImageButton(dialogue,-1):'';
-  const meta=[learningLevelLabel(level),T(...(dialogueCategories[category]||dialogueCategories.daily)),purpose&&T(...dialoguePurposes[purpose])].filter(Boolean).join(' · ');
+  const meta=[learningLevelLabel(level),T(...(dialogueCategories[category]||dialogueCategories.daily)),dialoguePurposes[purpose]&&T(...dialoguePurposes[purpose])].filter(Boolean).join(' · ');
   const label=dialogue?.audio?T('مسجّلة','Recorded'):dialogue?T('نص متاح','Transcript available'):T('ضمن الخطة','Planned');
   const action=dialogue?`<button class="secondary" onclick="openDialogueCard('${H(dialogue.id)}')">
     ${learningLevels.starter[dialogue.id]?T('ابدأ بالمقطع القصير','Start with the short exchange'):dialogue.audio?T('استمع','Listen'):T('اقرأ النص','Read transcript')} ↗</button>`:
@@ -584,7 +592,7 @@ function paintDialogueCatalog(){
   <div><small>${H(meta)}</small><span class="chip dialogue-status">${label}</span>
    <h3>${EP.prefs.language==='en'?englishTextMarkup(entry.en,entry):H(entry.ar)+' '+englishUsageButton(EPEnglish.analyze(entry.en,entry))}</h3>
    ${entry.taskEn&&T(entry.taskAr,entry.taskEn)!==T(entry.ar,entry.en)?`<p>${H(T(entry.taskAr,englishDisplay(entry.taskEn)))}</p>`:''}
-   ${action}</div></article>`;
+   ${dialoguePurposeMarkup(entry.sharedPurpose)}${action}</div></article>`;
  }).join('');
 }
 labels.dialogues='المحادثات';

@@ -21,6 +21,7 @@ function referenceAnnotations(s){
   <p class="reference-translation ar-content" lang="ar" dir="rtl">${H(s.ar)}</p>
   <ul class="reference-tags" aria-label="${T('غرض الجملة وتصنيفاتها','Sentence purpose and categories')}">
    <li class="reference-purpose-tag">${EP.prefs.arabic?`<bdi lang="ar">${H(guide.purpose_ar)}</bdi>`:''}<bdi lang="en">${H(guide.purpose_en)}</bdi></li>
+   <li>${purposeTag(sentencePurpose(s))}</li><li><button class="textlink" type="button" onclick="hearSentencePurpose('${H(s.id)}')">▷ ${T('اسمع الغرض','Hear the purpose')}</button></li>
    ${tags.map(tag=>`<li>${H(tag)}</li>`).join('')}</ul>
   ${guide.keywords.length?`<div class="reference-keywords"><b>${T('الكلمات المفتاحية','Keywords')}</b>
    <ul dir="ltr" lang="en">${guide.keywords.map(word=>`<li>${H(englishDisplay(word,s))}</li>`).join('')}</ul></div>`:''}`;
@@ -62,16 +63,16 @@ const referenceStrategyOptions={
   help:['ابدأ بالجملة، ثم استمع إلى شرح البناء وأمثلة متنوعة ومفردات في سياقها. اختر هذه الطريقة لتفهم النمط وتستخدمه في جمل جديدة.',
    'Hear the sentence, its structure explained, varied examples and vocabulary in context. Choose this to understand the pattern and use it in new sentences.']}
 };
-function referenceStrategyKeys(patternMode){return patternMode?['basic','study']:['basic','purpose','study']}
+const referenceStrategyKeys=['basic','purpose','study'];
 function referenceStrategy(patternMode){
  const key=epReference[patternMode?'patternStrategy':'sentenceStrategy'];
- return referenceStrategyKeys(patternMode).includes(key)?key:'basic';
+ return referenceStrategyKeys.includes(key)?key:'basic';
 }
 function referenceStrategyControls(patternMode){
  return `<section class="reference-strategies panel" aria-labelledby="reference-strategy-title">
   <h2 id="reference-strategy-title">${T('طريقة الاستماع','Listening strategy')}</h2>
   <div class="reference-strategy-options" role="group" aria-labelledby="reference-strategy-title">
-   ${referenceStrategyKeys(patternMode).map(key=>{
+   ${referenceStrategyKeys.map(key=>{
     const {icon,title}=referenceStrategyOptions[key];
     return `<button type="button" data-reference-strategy="${key}" aria-controls="reference-strategy-help"
      onclick="selectReferenceStrategy(this)">
@@ -118,7 +119,7 @@ function referenceResultSummary(all,patternMode){
  const host=$('#reference-summary');
  const strategy=referenceStrategy(patternMode);
  const rows=patternMode?all.flatMap(referenceCourseExamples):all;
- const active=patternMode?['query','patternScope','patternLevel']:['query','grammar','domain','purpose','level'];
+ const active=patternMode?['query','patternScope','patternLevel','purpose']:['query','grammar','domain','purpose','level'];
  EPFilters.show($('.reference-filters'),Object.fromEntries(active.map(key=>[key,epReference[key]])),epReferenceReset);
  if(strategy==='study'&&typeof loadReferenceStudy==='function'&&!referenceIndicatorStudy&&!referenceIndicatorsLoading){
   referenceIndicatorsLoading=true;
@@ -139,11 +140,12 @@ function referenceResultSummary(all,patternMode){
   const scenes=playable.filter(row=>['assistant-reviewed','visually_reviewed','imported-unreviewed'].includes(row.image?.status)).length;
   counts.push([recordings,T('تسجيلًا للجمل','sentence recordings')],[scenes,T('مشهدًا','scenes')]);
  }else if(strategy==='purpose'){
+  const mainRows=patternMode?all.map(pattern=>referenceCourseExamples(pattern)[0]).filter(Boolean):rows;
   if(referenceStudyRecordings){
-   const prompts=rows.filter(row=>referenceStudyRecording('purpose',referenceStudyAudio.purposePrompt(row,referenceGuide(row)).en,'female'));
+   const prompts=mainRows.filter(row=>purposeTrack(row).recording);
    counts.push([prompts.length,T('تمهيدًا بصوت Bella','Bella introductions')]);
   }
-  counts.push([rows.filter(row=>row.recordings?.male?.path).length,T('جملة بصوت Adam','Adam sentence recordings')]);
+  counts.push([mainRows.filter(row=>row.recordings?.male?.path).length,T('جملة بصوت Adam','Adam sentence recordings')]);
  }else{
   const lessons=(patternMode?all.map(referencePatternId):rows.map(row=>row.id)).map(referenceGuidedLesson).filter(Boolean);
   counts.push([lessons.filter(lesson=>lesson.ruleSpeech).length,T('شرحًا للبناء','structure explanations')]);
@@ -160,7 +162,7 @@ function referenceResultSummary(all,patternMode){
  host.innerHTML=counts.map(([count,label])=>`<span><b>${count}</b> ${label}</span>`).join('');
 }
 function playReferencePurposes(id){
- const ids=id?[id]:referenceRows().map(row=>row.id);
+ const ids=id?[id]:epReference.section==='patterns'?referencePatterns().map(referencePatternId):referenceRows().map(row=>row.id);
  if(ids.length)openReferenceGuided(ids,{strategy:'purpose'});
 }
 const epFacetEnglish={learning:'Learning & languages',work:'Work & careers',food:'Food & dining',travel:'Travel & transport',family:'Family & relationships',home:'Home & daily life',health:'Health & feelings',money:'Money & shopping',leisure:'Hobbies & leisure',nature:'Nature & weather',technology:'Technology',community:'Places & community',everyday:'Everyday situations'};
@@ -184,6 +186,9 @@ function epFacet(type,item){
  const en=type==='grammar'?referenceGrammarEnglish[item.id]||item.form:EPTeaching.purposes[item.id]?.[1]||epFacetEnglish[item.id]||item.id;
  return T(item.ar,en);
 }
+function referencePurposeFilter(){
+ return `<label>${T('الغرض','Purpose')}<select aria-label="${T('الغرض','Purpose')}" onchange="epReferenceSet('purpose',this.value)">${purposeOptions(epReference.purpose)}</select></label>`;
+}
 function epReferenceSelect(type,key,ar,en){return `<label>${T(ar,en)}<select aria-label="${T(ar,en)}" onchange="epReferenceSet('${key}',this.value)"><option value="">${T('الكل','All')}</option>${referenceTaxonomy(type).map(x=>`<option value="${x.id}" ${epReference[key]===x.id?'selected':''}>${H(epFacet(type,x))}</option>`).join('')}</select></label>`}
 function referenceLibraryTabs(){
  const patternMode=epReference.section==='patterns';
@@ -206,10 +211,11 @@ function referencePatternFilters(){
   <option value="">${T('الأنماط الـ180 كلها','All 180 patterns')}</option>
   <option value="foundation" ${epReference.patternScope==='foundation'?'selected':''}>${T('★ الأنماط التأسيسية','★ Foundation patterns')}</option>
  </select></label>
- <label>${T('مستوى التعلّم','Learning level')}<select onchange="epReferenceSet('patternLevel',this.value)">${learningLevelOptions(epReference.patternLevel)}</select></label>`;
+ <label>${T('مستوى التعلّم','Learning level')}<select onchange="epReferenceSet('patternLevel',this.value)">${learningLevelOptions(epReference.patternLevel)}</select></label>
+ ${referencePurposeFilter()}`;
 }
 function referenceSentenceFilters(){
- return `${epReferenceSelect('grammar','grammar','البناء','Structure')}${epReferenceSelect('domains','domain','الموقف','Situation')}${epReferenceSelect('purposes','purpose','الغرض','Purpose')}
+ return `${epReferenceSelect('grammar','grammar','البناء','Structure')}${epReferenceSelect('domains','domain','الموقف','Situation')}${referencePurposeFilter()}
   <label>${T('المستوى التقريبي','Approximate level')}<select onchange="epReferenceSet('level',this.value)">
    <option value="">${T('الكل','All')}</option>${['A1–A2','A2–B1','B1–B2'].map(x=>`<option ${epReference.level===x?'selected':''}>${x}</option>`).join('')}
   </select></label>`;
@@ -249,7 +255,7 @@ referenceRows=function(){
   const hay=normalize([s.en,s.englishUsage?.us,s.englishUsage?.uk,s.ar,guide.form,guide.purpose_ar,guide.purpose_en,
    grammar?.ar,referenceGrammarEnglish[guide.construction],...guide.keywords,...s.source_ids].join(' '));
   return (!epReference.grammar||guide.construction===epReference.grammar)&&
-   (!epReference.domain||s.domains.includes(epReference.domain))&&(!epReference.purpose||guide.purpose===epReference.purpose)&&
+   (!epReference.domain||s.domains.includes(epReference.domain))&&EPPurposes.matches(epReference.purpose,sentencePurpose(s))&&
    (!epReference.level||s.level===epReference.level)&&words.every(word=>hay.includes(word));
  });
  if(epReference.sort==='az')rows.sort((a,b)=>a.en.localeCompare(b.en));

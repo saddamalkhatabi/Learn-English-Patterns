@@ -96,6 +96,7 @@ const renderSongLibrary=(()=>{
      <small class="song-form" lang="en" dir="ltr">${H(form)}</small>
      <p class="song-example" lang="en" dir="ltr">${H(en)}</p>
      ${EP.ar(ar)}
+     ${dialoguePurposeMarkup(EPPurposes.forPattern(id))}
      <button class="textlink" type="button" data-song-lesson="${id}">${T('افتح درس النمط','Open pattern lesson')}</button>
     </li>`).join('')}</ul>`;
   for(const button of root.querySelectorAll('[data-song-track]')){

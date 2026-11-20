@@ -9,9 +9,12 @@ const {scenes}=require('../public/idea-scenes.json');
 const words=new Set([...scenes.flatMap(scene=>scene.words.map(word=>word.en)),
  ...Object.values(require('../production/scene-word-maps.json')).flatMap(words=>words.map(word=>word.en))]);
 const voices=['male','female'];
+const english=require('../public/english-usage.js');
+const purposes=require('../public/purpose-tree.js');
 const notes=new Set(comparisons.flatMap(item=>item.samples.map(sample=>sample.sentenceId)));
 const expected=Object.fromEntries([
- ...patterns.flatMap(p=>['pattern-intro','explanation-intro'].map(kind=>[trainingCueId(kind,p),spokenTrainingCue(kind,p,metadata.get(p.id))])),
+ ...patterns.flatMap(p=>['pattern-intro','explanation-intro'].map(kind=>[trainingCueId(kind,p),english.analyze(spokenTrainingCue(kind,p,metadata.get(p.id))).us])),
+ ...purposes.groups.flatMap(group=>group.items.map(([id])=>[`purpose-category-${id}-female`,purposes.spoken(id)])),
  ['dialogue-intro',spokenTrainingCue('dialogue-intro')],
  ...comparisons.flatMap(item=>voices.map(voice=>[`comparison-${item.id}-${voice}`,spokenComparison(item)])),
  ...[...notes].flatMap(id=>{
