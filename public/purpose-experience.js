@@ -1,9 +1,14 @@
-function purposeOptions(selected='',prefix=''){
- return `<option value="">${T('كل الأغراض','All purposes')}</option>${EPPurposes.groups.map(group=>
-  `<option value="${prefix+group.id}" ${selected===prefix+group.id?'selected':''}>${T(group.ar,group.en)} · ${T('الفرع كاملًا','whole branch')}</option>
-   <optgroup label="${H(T(group.ar,group.en))}">${group.items.map(([id,ar,en])=>
-    `<option value="${prefix+id}" ${selected===prefix+id?'selected':''}>${T(ar,en)}</option>`).join('')}</optgroup>`
+function purposeOptions(selected='',prefix='',answer=false){
+ const placeholder=answer?'اختر… / Choose…':'كل الأغراض / All purposes';
+ return `<option value="" data-no-translate>${placeholder}</option>${EPPurposes.groups.map(group=>
+  `${answer?'':`<option data-no-translate value="${prefix+group.id}" ${selected===prefix+group.id?'selected':''}>${H(purposeBilingual(group.id))}</option>`}
+   <optgroup label="${H(purposeBilingual(group.id))}">${group.items.map(([id])=>
+    `<option data-no-translate value="${prefix+id}" ${selected===prefix+id?'selected':''}>${H(purposeBilingual(id))}</option>`).join('')}</optgroup>`
  ).join('')}`;
+}
+function purposeBilingual(id){
+ const purpose=EPPurposes.get(id);
+ return purpose?`${purpose.ar} / ${purpose.en}`:'';
 }
 function purposeLabel(id){
  const purpose=EPPurposes.get(id);
@@ -27,7 +32,7 @@ function matchesLearningPurpose(selection,ids,actual){
 function makePurposeTrack(id,specific){
  const cue=(PILOT?.trainingAudio||referenceStudyRecordings)?.[`purpose-category-${id}-female`];
  const recorded=specific&&referenceStudyRecording('purpose',specific.en,'female');
- const prompt=recorded||specific&&!cue?specific:{ar:purposeLabel(id),en:EPPurposes.spoken(id)};
+ const prompt=recorded||specific&&!cue?specific:{ar:EPPurposes.get(id).ar,en:EPPurposes.spoken(id)};
  return {prompt,text:prompt.en,recording:recorded||cue};
 }
 function purposeTrack(row){
@@ -90,7 +95,23 @@ function selectPurpose(id){
 }
 function purposePage(){
  return `${head(T('أغراض التعبير','Communicative purposes'),T('استكشف لماذا نقول العبارة، ثم جرّب تحديد الغرض من مثال تسمعه أو تقرؤه.','Explore why we say a sentence, then identify the purpose in an example you read or hear.'))}
+  <div class="toolbar purpose-tree-filter"><label>${T('ابحث عن غرض','Search for a purpose')}
+   <input type="search" id="purpose-tree-query" oninput="filterPurposeTree()"></label></div>
   <div id="purpose-tree"></div>`;
+}
+function filterPurposeTree(){
+ const input=$('#purpose-tree-query');
+ if(!input)return;
+ EPFilters.controls('purpose-tree-search',input.closest('.toolbar'),{query:input},filterPurposeTree);
+ const query=normalizeSearchTerm(input.value).split(' ').filter(Boolean);
+ const matches=text=>query.every(word=>normalizeSearchTerm(text).includes(word));
+ for(const branch of document.querySelectorAll('.purpose-branch')){
+  const group=branch.querySelector('h2 button').dataset.purposeId;
+  const groupMatches=matches(purposeBilingual(group));
+  const leaves=[...branch.querySelectorAll('li')];
+  for(const leaf of leaves)leaf.hidden=!groupMatches&&!matches(purposeBilingual(leaf.querySelector('button').dataset.purposeId));
+  branch.hidden=!groupMatches&&leaves.every(leaf=>leaf.hidden);
+ }
 }
 function teacherPurposeOptions(purposeId){
  return {...route.session,...route.session.filters,patternIds:PILOT.pattern_order,routeId:'',learningLevel:'',stage:0,cefr:'',sample:0,purposeId};
@@ -122,7 +143,8 @@ function paintPurposeTree(){
   const references=sentenceCounts.get(id)||0,patterns=patternCounts.get(id)||0;
   const count=references?T(`${references} جملة`,`${references} sentences`):patterns?T(`${patterns} نمط`,`${patterns} patterns`):'';
   return `<button type="button" class="purpose-choice ${selectedPurpose===id?'active':''}" aria-pressed="${selectedPurpose===id}" data-purpose-id="${id}" onclick="selectPurpose('${id}')">
-   ${H(purposeLabel(id))}<span>${count}</span></button>`;
+   <span class="purpose-choice-label" data-no-translate><bdi lang="ar">${H(EPPurposes.get(id).ar)}</bdi>
+    <bdi lang="en">${H(EPPurposes.get(id).en)}</bdi></span><span>${count}</span></button>`;
  };
  const controls=Boolean(PILOT||REFERENCE_CORPUS);
  host.innerHTML=`<div class="purpose-branches">${EPPurposes.groups.map(group=>`<section class="panel purpose-branch">
@@ -134,6 +156,7 @@ function paintPurposeTree(){
    <button type="button" class="primary" onclick="trainPurpose()" ${PILOT&&(!selectedPurpose||patternCounts.has(selectedPurpose))?'':'disabled'}>${T('تدرّب على الأنماط','Practise patterns')} · ${selectedPurpose?patternCounts.get(selectedPurpose)||0:PILOT?.patterns.length||0}</button>
   </div><section class="panel purpose-practice" id="purpose-practice">${controls?'':T('جارٍ تحميل الأمثلة…','Loading examples…')}</section>`;
  paintPurposePractice();
+ filterPurposeTree();
 }
 function purposePracticeRow(){
  const fits=row=>EPPurposes.matches(selectedPurpose,sentencePurpose(row));
@@ -157,7 +180,7 @@ function paintPurposePractice(){
   <div class="buttonrow">
    <button type="button" class="secondary" onclick="playPurposePractice('${H(row.id)}')">▷ ${T('اسمع العبارة','Hear the sentence')}</button>
    <label>${T('اختر الغرض','Choose the purpose')}<select id="purpose-answer" onchange="checkPurposeAnswer('${id}',this.value)">
-    <option value="">${T('اختر…','Choose…')}</option>${EPPurposes.groups.map(group=>`<optgroup label="${H(T(group.ar,group.en))}">${group.items.map(([key])=>`<option value="${key}">${H(purposeLabel(key))}</option>`).join('')}</optgroup>`).join('')}
+    ${purposeOptions('','',true)}
    </select></label>
    <button type="button" class="secondary" onclick="nextPurposePractice()">${T('مثال آخر','Another example')}</button>
   </div><p id="purpose-feedback" role="status"></p>

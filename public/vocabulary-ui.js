@@ -105,6 +105,11 @@ function vocabularyMatchesSource(source){
   (!vocabularyLevel||source.level===vocabularyLevel)&&
   (!vocabularyPattern||source.patternIds.includes(Number(vocabularyPattern)));
 }
+function matchesVocabularyEntry(entry){
+ return matchesVocabularyRegional(entry)&&(!vocabularyType||entry.pos===vocabularyType)&&
+  (!vocabularyPattern||entry.patternIds.includes(Number(vocabularyPattern)))&&
+  (!(vocabularyCollection||vocabularyLevel||vocabularyPattern)||entry.sourceIds.some(id=>vocabularyMatchesSource(vocabularyData.sources[id])));
+}
 function paintVocabulary(){
  const host=$('#vocabulary-results');
  if(!host)return;
@@ -114,12 +119,8 @@ function paintVocabulary(){
  EPFilters.show($('.vocabulary-filters'),filters,clearVocabularyFilters);
  if(!vocabularyData){$('#vocabulary-count').textContent=T('جارٍ تحميل الأطلس…','Loading the atlas…');return}
  const query=normalizeSceneQuery(EPVocabulary.normalize(vocabularyQuery)),size=36;
- const entries=vocabularyAllEntries.filter(entry=>
-  matchesVocabularyRegional(entry)&&
-  (!vocabularyType||entry.pos===vocabularyType)&&
-  (!vocabularyPattern||entry.patternIds.includes(Number(vocabularyPattern)))&&
-  (!query||vocabularySearch.get(entry.id).includes(query))&&
-  (!(vocabularyCollection||vocabularyLevel||vocabularyPattern)||entry.sourceIds.some(id=>vocabularyMatchesSource(vocabularyData.sources[id])))
+ const entries=vocabularyAllEntries.filter(entry=>matchesVocabularyEntry(entry)&&
+  (!query||vocabularySearch.get(entry.id).includes(query))
  ).sort((a,b)=>(query?Number(Boolean(b.uk))-Number(Boolean(a.uk)):0)||b.sourceIds.length-a.sourceIds.length||a.en.localeCompare(b.en));
  const pages=Math.max(1,Math.ceil(entries.length/size));
  vocabularyPageNumber=Math.max(0,Math.min(vocabularyPageNumber,pages-1));

@@ -137,7 +137,8 @@
   return start<0?[]:[...new Set(tokens.slice(start,start+wanted.length).map(token=>token.index))];
  }
  function guideGap(kind){
-  return {title:500,heading:330,word:480,context:760,sentence:420,rule:550,purpose:500}[kind]||0;
+  return {title:500,heading:330,word:480,context:760,sentence:420,rule:550,
+   'pattern-purpose':380,'pattern-form':380,'example-purpose':500}[kind]||0;
  }
  const voiceModes=['pattern','stage','male','female'];
  function guideVoice(mode,first,index,stage,indexedStages){

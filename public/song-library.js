@@ -1,3 +1,11 @@
+let songSearchRows=[],songSearchQuery=EPFilters.read('songs',{query:''}).query;
+const songCatalogReady=fetch('song-library.json').then(response=>response.ok?response.json():null)
+ .then(rows=>{songSearchRows=Array.isArray(rows)?rows:[];return rows}).catch(()=>null);
+function filterSongsByTitle(title){
+ songSearchQuery=title;
+ const input=$('#song-search');
+ if(input){input.value=title;input.dispatchEvent(new Event('input',{bubbles:true}))}
+}
 const renderSongLibrary=(()=>{
  let tracks, lyrics, timings={}, selected, level=EPFilters.read('songs',{level:''}).level, root, audio, language;
  let loading=false, loadFailed=false, playbackFailed=false;
@@ -110,12 +118,16 @@ const renderSongLibrary=(()=>{
    button.setAttribute('aria-pressed',String(button.dataset.songLevel===level));
   }
   for(const row of root.querySelectorAll('[data-track-level]')){
-   row.hidden=Boolean(level&&row.dataset.trackLevel!==level);
+   const song=tracks.find(item=>item.id===row.querySelector('[data-song-track]').dataset.songTrack);
+   const match=normalizeSearchTerm([song.title,song.topicAr,song.topicEn].join(' '));
+   row.hidden=Boolean(level&&row.dataset.trackLevel!==level)||!normalizeSearchTerm(songSearchQuery).split(' ').every(term=>match.includes(term));
   }
   root.querySelector('.song-tracks').scrollTop=0;
-  EPFilters.save('songs',{level});
-  EPFilters.show(root.querySelector('.song-filters'),{level},()=>{
+  EPFilters.save('songs',{level,query:songSearchQuery});
+  EPFilters.show(root.querySelector('.song-filters'),{level,query:songSearchQuery},()=>{
    level='';
+   songSearchQuery='';
+   root.querySelector('#song-search').value='';
    paintFilter();
    root.querySelector('[data-song-level=""]').focus({preventScroll:true});
   });
@@ -152,6 +164,9 @@ const renderSongLibrary=(()=>{
   filters.setAttribute('aria-label',T('فلترة قائمة الأغاني حسب المستوى','Filter songs by level'));
   filters.innerHTML=['',...Object.keys(learningLevelNames)].map(value=>
    `<button type="button" data-song-level="${value}">${value||T('الكل','All')}</button>`).join('');
+  filters.insertAdjacentHTML('afterbegin',`<input type="search" id="song-search" value="${H(songSearchQuery)}"
+   aria-label="${T('ابحث في الأغاني','Search songs')}" placeholder="${T('عنوان الأغنية أو موضوعها','Song title or topic')}">`);
+  filters.querySelector('#song-search').oninput=event=>{songSearchQuery=event.target.value;paintFilter()};
   root.querySelector('.song-tracks').innerHTML=tracks.map(song=>`
    <li data-track-level="${song.level}">
     <button class="song-track" type="button" data-song-track="${song.id}">
@@ -179,7 +194,7 @@ const renderSongLibrary=(()=>{
     return response.json();
    };
    const [data,texts,lineTimes]=await Promise.all([
-    load('song-library.json'),load('song-lyrics.json'),load('song-timing.json').catch(()=>({}))
+    songCatalogReady.then(rows=>rows||load('song-library.json')),load('song-lyrics.json'),load('song-timing.json').catch(()=>({}))
    ]);
    if(!Array.isArray(data)||!data.length||!data.every(song=>texts?.[song.id]?.text)){
     throw Error('Song catalog or lyrics are unavailable');
@@ -187,6 +202,7 @@ const renderSongLibrary=(()=>{
    lyrics=texts;
    timings=lineTimes;
    tracks=data;
+   songSearchRows=tracks;
    selected=tracks[0];
   }catch{
    loadFailed=true;

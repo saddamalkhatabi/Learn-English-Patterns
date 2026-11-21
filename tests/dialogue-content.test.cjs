@@ -30,6 +30,32 @@ test('each purpose leaf has its own verified recording and can be selected throu
  for(const pattern of [...foundation.patterns,...expansion.patterns])assert(ids.has(purposes.forPattern(pattern.id)),pattern.id);
 });
 
+test('the purpose strategy pairs the general pattern with a distinct contextual prompt',()=>{
+ const audio=require('../public/reference-study-audio.js');
+ const purposes=require('../public/purpose-tree.js');
+ const course=require('../public/course-purpose-prompts.js');
+ const context=require('../public/reference-purpose-context.js');
+ const {describeReference}=require('../public/teaching-core.js');
+ const {sameSpeech}=require('../public/english-usage.js');
+ const plan=require('../scripts/training-cues.cjs');
+ const courseIds=[...foundation.patterns,...expansion.patterns].map(pattern=>pattern.id);
+ assert.equal(Object.keys(course).length,courseIds.length);
+ for(const id of courseIds){
+  const [ar,en]=course[id];
+  assert(ar&&en&&!sameSpeech(en,purposes.spoken(purposes.forPattern(id))),id);
+  assert.equal(plan[audio.cueId('purpose',en,'female')],en,id);
+ }
+ let overlap=0;
+ for(const sentence of corpus.sentences){
+  const guide=describeReference(sentence);
+  const general=purposes.forStructure(guide.construction,purposes.forReference(guide,sentence.en));
+  const en=context[sentence.id]?.[1]||audio.purposePrompt(sentence,guide).en;
+  if(sameSpeech(en,purposes.spoken(general)))overlap++;
+  assert.equal(plan[audio.cueId('purpose',en,'female')],en,sentence.id);
+ }
+ assert(overlap<20,`Too many contextual prompts repeat the general purpose: ${overlap}`);
+});
+
 test('conversation turns link to real patterns, scenes and measured cues within a single file', () => {
  const patterns = new Set([...foundation.patterns, ...expansion.patterns].map(p => p.id));
  const {scenes:archive} = require('../public/scene-archive.json');

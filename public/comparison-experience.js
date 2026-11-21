@@ -30,6 +30,7 @@ function comparisonsPage(){
   'ابدأ بالفروق الأساسية، أو اختر التسلسل وأساليب الكلام والأخطاء الشائعة. استمع إلى الأمثلة مع الصور أو خذ وقتك في القراءة.',
   'Start with essential distinctions, or explore sequences, speaking styles and common errors. Hear the examples with scenes or read at your own pace.'))+
   `<div class="toolbar comparison-controls">
+   <label>${T('ابحث في المقارنات','Search comparisons')}<input type="search" id="comparison-search" oninput="resetComparisonSelection()"></label>
    ${comparisonSelect('level',T('المستوى','Level'),T('كل المستويات','All levels'),comparisonLevels)}
    ${comparisonSelect('type',T('نوع المقارنة','Comparison type'),T('كل الأنواع','All types'),comparisonTypes)}
    ${comparisonSelect('size',T('عدد الصيغ','Number of forms'),T('الكل','All'),{2:['ثنائية','Two'],3:['ثلاثية','Three'],4:['رباعية','Four'],5:['خمسة فأكثر','Five or more']})}
@@ -62,9 +63,12 @@ function visibleComparisons(){
  const size=Number($('#comparison-size')?.value);
  const level=$('#comparison-level')?.value;
  const type=$('#comparison-type')?.value,purpose=$('#comparison-purpose')?.value;
+ const query=normalizeSearchTerm($('#comparison-search')?.value).split(' ').filter(Boolean);
  const levels=Object.keys(comparisonLevels);
  return patternComparisons.filter(item=>{
   const count=item.samples.length;
+  const searchable=query.length?normalizeSearchTerm([item.en,item.ar,item.noteAr,item.noteEn,...item.examples].join(' ')):'';
+  if(!query.every(token=>searchable.includes(token)))return false;
   return (!purpose||matchesLearningPurpose(purpose,item.patterns)||item.samples.some(sample=>{
    const row=sample.sentenceId&&referencePlayer?.rows.get(sample.sentenceId);
    return row&&matchesLearningPurpose(purpose,[],sentencePurpose(row));
@@ -125,7 +129,7 @@ function paintComparisonSelection(){
  const list=$('#comparison-list');
  if(!list)return;
  EPFilters.controls('comparisons',$('.comparison-controls'),{
-  level:$('#comparison-level'),type:$('#comparison-type'),size:$('#comparison-size'),purpose:$('#comparison-purpose')
+  query:$('#comparison-search'),level:$('#comparison-level'),type:$('#comparison-type'),size:$('#comparison-size'),purpose:$('#comparison-purpose')
  },resetComparisonSelection);
  const items=visibleComparisons();
  const count=items.length;

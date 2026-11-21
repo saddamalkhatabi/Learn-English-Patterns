@@ -1,5 +1,7 @@
 const assert=require('node:assert/strict');
 const audio=require('../public/reference-study-audio.js');
+const contextualPrompts=require('../public/course-purpose-prompts.js');
+const referenceContext=require('../public/reference-purpose-context.js');
 const english=require('../public/english-usage.js');
 const {describeReference}=require('../public/teaching-core.js');
 const {ideaWordCueId,spokenComparisonNote,spokenTrainingCue}=require('../public/training-narration.js');
@@ -47,6 +49,9 @@ module.exports=function referenceStudyCues(existing){
   if(!pattern)continue;
   const [base,...examples]=(row.published_sentence_ids||row.examples.map(example=>example.id)).map(key=>course.get(key)).filter(Boolean);
   if(!base)continue;
+  const context=contextualPrompts[id];
+  assert(context,`Missing contextual purpose for pattern ${id}`);
+  add('purpose',context[1],'female');
   for(const voice of voices)add('title',audio.patternTitle(row.form),voice);
   const text=english.analyze(spokenTrainingCue('explanation-intro',pattern,curriculum.get(id)||pattern.lesson)).us;
   add('rule',text,'male');
@@ -56,6 +61,7 @@ module.exports=function referenceStudyCues(existing){
  for(const row of references){
   const guide=guides.get(row.id),rule=guide.rule_en;
   add('purpose',audio.purposePrompt(row,guide).en,'female');
+  if(referenceContext[row.id])add('purpose',referenceContext[row.id][1],'female');
   for(const voice of voices)add('title',audio.patternTitle(guide.form,guide.construction),voice);
   if(rule){
    const text=english.analyze(spokenComparisonNote(rule),row).us;

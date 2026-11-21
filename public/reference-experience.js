@@ -57,8 +57,8 @@ const referenceStrategyOptions={
   patternHelp:['استمع إلى الجملة الأساسية ثم أمثلة النمط لتلاحظ كيف يتكرر البناء في سياقات مختلفة.',
    'Hear the main sentence and its examples to notice how the same pattern works in different contexts.']},
  purpose:{icon:'↳',title:['الغرض ثم الجملة','Purpose then sentence'],
-  help:['تقرأ Bella سؤالًا أو تمهيدًا موجزًا، ثم يقرأ Adam الجملة. اختر هذه الطريقة لتتدرّب على معرفة متى تستخدمها.',
-   'Bella reads a short prompt or question, then Adam reads the sentence. Choose this to practise knowing when to use it.']},
+  help:['اسمع الغرض العام وصيغة النمط، ثم اسمع غرض المثال في سياقه والجملة. يمكنك تخطي أي تمهيد من داخل المشغّل.',
+   'Hear the general purpose and structure, followed by the example’s contextual purpose and sentence. You can skip any introduction in the player.']},
  study:{icon:'≡',title:['شرح مع أمثلة إضافية','Explanation with additional examples'],
   help:['ابدأ بالجملة، ثم استمع إلى شرح البناء وأمثلة متنوعة ومفردات في سياقها. اختر هذه الطريقة لتفهم النمط وتستخدمه في جمل جديدة.',
    'Hear the sentence, its structure explained, varied examples and vocabulary in context. Choose this to understand the pattern and use it in new sentences.']}
@@ -132,7 +132,8 @@ function referenceResultSummary(all,patternMode){
  }
  const counts=[
   ...(patternMode?[[all.length,T('نمطًا','patterns')]]:[]),
-  [rows.length,T('جملة في النتائج','sentences in results')]
+  [patternMode&&strategy==='purpose'?all.filter(pattern=>referenceCourseExamples(pattern).length).length:rows.length,
+   strategy==='purpose'?T('جملة أساسية','main sentences'):T('جملة في النتائج','sentences in results')]
  ];
  if(strategy==='basic'){
   const playable=patternMode?rows:rows.filter(row=>row.lifecycle.available);
@@ -140,12 +141,11 @@ function referenceResultSummary(all,patternMode){
   const scenes=playable.filter(row=>['assistant-reviewed','visually_reviewed','imported-unreviewed'].includes(row.image?.status)).length;
   counts.push([recordings,T('تسجيلًا للجمل','sentence recordings')],[scenes,T('مشهدًا','scenes')]);
  }else if(strategy==='purpose'){
-  const mainRows=patternMode?all.map(pattern=>referenceCourseExamples(pattern)[0]).filter(Boolean):rows;
-  if(referenceStudyRecordings){
-   const prompts=mainRows.filter(row=>purposeTrack(row).recording);
-   counts.push([prompts.length,T('تمهيدًا بصوت Bella','Bella introductions')]);
-  }
-  counts.push([mainRows.filter(row=>row.recordings?.male?.path).length,T('جملة بصوت Adam','Adam sentence recordings')]);
+  const lessons=(patternMode?all.map(referencePatternId):rows.map(row=>row.id)).map(referenceGuidedLesson).filter(Boolean);
+  const totals=new Map();
+  for(const lesson of lessons)for(const track of referencePurposeTracks(lesson))if(track.recording)
+   totals.set(track.kind,(totals.get(track.kind)||0)+1);
+  for(const [kind,count] of totals)counts.push([count,T(...referencePurposeSteps[kind])]);
  }else{
   const lessons=(patternMode?all.map(referencePatternId):rows.map(row=>row.id)).map(referenceGuidedLesson).filter(Boolean);
   counts.push([lessons.filter(lesson=>lesson.ruleSpeech).length,T('شرحًا للبناء','structure explanations')]);
@@ -245,10 +245,10 @@ referencePageHTML=function(){
    <button id="reference-prev" class="secondary" onclick="changeReferencePage(-1)">${T('السابق','Previous')}</button>
    <span id="reference-pages"></span><button id="reference-next" class="secondary" onclick="changeReferencePage(1)">${T('التالي','Next')}</button></div>`;
 };
-referenceRows=function(){
+referenceRows=function(search=epReference.query){
  if(!REFERENCE_CORPUS)return [];
  const normalize=value=>String(value).toLowerCase().normalize('NFKD').replace(/[\u064B-\u065F]/g,'').replace(/’/g,"'");
- const words=normalize(epReference.query).trim().split(/\s+/).filter(Boolean);
+ const words=normalize(search).trim().split(/\s+/).filter(Boolean);
  const grammarNames=new Map(referenceTaxonomy('grammar').map(item=>[item.id,item]));
  const rows=REFERENCE_CORPUS.sentences.filter(s=>{
   const guide=referenceGuide(s),grammar=grammarNames.get(guide.construction);

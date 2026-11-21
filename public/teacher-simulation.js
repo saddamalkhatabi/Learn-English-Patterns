@@ -105,7 +105,16 @@ function openTeacherSimulation(){
   field.removeAttribute('id');
   field.removeAttribute('onchange');
   field.dataset.setting=id;
-  if(field.tagName==='SELECT')for(const option of field.options)option.toggleAttribute('selected',option.value===original.value);
+  if(field.tagName==='SELECT'){
+   if(field.classList.contains('select2-hidden-accessible')){
+    field.classList.remove('select2-hidden-accessible');
+    field.removeAttribute('tabindex');
+    field.removeAttribute('aria-hidden');
+    field.removeAttribute('data-select2-id');
+    for(const option of field.querySelectorAll('[data-select2-id]'))option.removeAttribute('data-select2-id');
+   }
+   for(const option of field.options)option.toggleAttribute('selected',option.value===original.value);
+  }
   else field.toggleAttribute('checked',original.checked);
   field.setAttribute('aria-describedby','simulation-help-'+id);
   return simulationField(id,H(label),field.outerHTML);

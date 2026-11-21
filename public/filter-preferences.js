@@ -1,3 +1,8 @@
+function normalizeSearchTerm(value){
+ return String(value??'').normalize('NFKD').toLowerCase()
+  .replace(/[\u0300-\u036f\u064b-\u065f\u0670\u0640]/g,'').replace(/[أإآٱ]/g,'ا')
+  .replace(/[’‘]/g,"'").replace(/[^\p{L}\p{N}']/gu,' ').trim();
+}
 const EPFilters=(()=>{
  const storageKey='patterns-filters-v1', mounted=new WeakSet(), notices=new WeakMap();
  let saved={};

@@ -529,12 +529,12 @@ function normalizeDialogueSearch(value){
 function matchesDialoguePurpose(selection,entry){
  return !selection||(selection.startsWith('purpose:')?EPPurposes.matches(selection.slice(8),entry.sharedPurpose):entry.purpose===selection);
 }
-function filteredDialogueEntries(){
+function filteredDialogueEntries(query=$('#dialogue-query').value){
  const status=$('#dialogue-status').value;
  const purpose=$('#dialogue-purpose').value;
  const facets=['category','level'].map(key=>[key,$('#dialogue-'+key).value]);
  const patternId=Number($('#dialogue-pattern').value);
- const tokens=normalizeDialogueSearch($('#dialogue-query').value).trim().split(/\s+/).filter(Boolean);
+ const tokens=normalizeDialogueSearch(query).trim().split(/\s+/).filter(Boolean);
  const patterns=new Map((PILOT?.patterns||[]).map(pattern=>[pattern.id,pattern]));
  return dialogueEntries().filter(entry=>{
   if(!dialogueStatusMatches(entry,status))return false;

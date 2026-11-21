@@ -60,6 +60,16 @@ const coursePurposeOverrides=new Map([
 function forCourseSentence(row){
  return coursePurposeOverrides.get(row.id)||forPattern(row.pattern_id||row.pattern_ids?.[0]);
 }
+const structurePurposes={
+ 'wh-question':'ask-information','yes-no-question':'ask-information','indirect-question':'ask-information',
+ 'reported-question':'narration','reported-command':'narration','past-habit':'routine','habit-frequency':'routine',
+ 'polite-request':'request','permission-let':'permission','offer-invitation':'offer',imperative:'instruction',
+ obligation:'obligation','lack-necessity':'obligation',ability:'ability',suggestion:'planning','future-intention':'planning',
+ demonstrative:'description',existence:'description',possession:'description',perception:'description',
+ 'relative-clause':'description',quantity:'description',comparison:'opinion','correlative-comparison':'opinion',
+ superlative:'opinion',concession:'opinion','reason-result':'explain',condition:'hypothetical',wish:'preference'
+};
+const forStructure=(construction,fallback)=>structurePurposes[construction]||fallback;
 function forReference(guide,sentence=''){
  const text=guide.purpose_en||'';
  if(/\b(?:ask for|give) permission\b/i.test(text))return 'permission';
@@ -86,6 +96,6 @@ function matches(selection,purpose){
 }
 const get=id=>byId.get(id);
 const spoken=id=>get(id).en.replace(/[.!?]$/,'')+'.';
-const api={groups,get,forPattern,forCourseSentence,forReference,forDialogue,matches,spoken};
+const api={groups,get,forPattern,forCourseSentence,forStructure,forReference,forDialogue,matches,spoken};
 if(typeof module==='object')module.exports=api;else root.EPPurposes=api;
 })(globalThis);

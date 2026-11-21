@@ -1,5 +1,6 @@
 const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');const root=path.resolve(__dirname,'../public'),sha=p=>crypto.createHash('sha256').update(fs.readFileSync(path.join(root,p))).digest('hex');
 const shell=fs.readdirSync(root).filter(p=>/\.(?:html|css|js|json|svg)$/.test(p)&&!['sw.js','app-version.js','app-version.json','offline-manifest.json','generation-index.json','release-volumes.json','qa-report.json','qa-report-v4.json'].includes(p));
+shell.push(...fs.readdirSync(path.join(root,'vendor')).filter(name=>/\.(?:js|css)$/.test(name)).map(name=>'vendor/'+name));
 const sets={course:new Set(),library:new Set(),all:new Set()},add=(rows,set)=>{for(const s of rows){for(const r of Object.values(s.recordings||{}))if(r.sha256)set.add(r.path);if(s.image&&['assistant-reviewed','visually_reviewed','imported-unreviewed'].includes(s.image.status))set.add(s.image.atlas)}};
 for(const p of ['pilot','supplement'])add(require('../public/'+p+'.json').sentences,sets.course);add(require('../public/source-corpus.json').sentences,sets.library);
 add(require('../public/expansion-media.json').sentences,sets.course);
