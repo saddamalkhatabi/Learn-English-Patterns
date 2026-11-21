@@ -10,7 +10,7 @@ function purposeLabel(id){
  return purpose?T(purpose.ar,purpose.en):'';
 }
 function sentencePurpose(row){
- if(row.pattern_id||!row.grammar)return EPPurposes.forPattern(row.pattern_id||row.pattern_ids?.[0]);
+ if(row.pattern_id||!row.grammar)return EPPurposes.forCourseSentence(row);
  return EPPurposes.forReference(referenceGuide(row),row.en);
 }
 function purposeTag(id){

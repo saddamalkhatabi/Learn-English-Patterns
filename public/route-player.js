@@ -27,11 +27,14 @@ class NasaqRoutePlayer{
   return false;
  }
  constructor({data,audio,storage,narrate,narratePurpose,narrateVocabulary,matchesPurpose=()=>true,observePageHide=true,
+  purposeOf=row=>row.pattern_id,patternPurposeOf=id=>id,
   readingDefault=()=>25,onchange=()=>{},now=()=>Date.now(),setTimer=setTimeout,clearTimer=clearTimeout}){
   this.data=data;this.audio=audio;this.storage=storage;this.onchange=onchange;this.now=now;this.setTimer=setTimer.bind(root);this.clearTimer=clearTimer.bind(root);this.timer=null;this.running=false;this.error='';this.boundary=null;this.lastSave=0;this.generation=0;
   this.dialoguesByPattern=new Map();
   this.narrate=narrate;
   this.narratePurpose=narratePurpose;
+  this.purposeOf=purposeOf;
+  this.patternPurposeOf=patternPurposeOf;
   this.narrateVocabulary=narrateVocabulary;
   this.matchesPurpose=matchesPurpose;
   this.readingDefault=readingDefault;
@@ -57,6 +60,11 @@ class NasaqRoutePlayer{
   let previous;try{previous=JSON.parse(storage.getItem('nasaq-route-v2'))}catch{}
   this.session={schema:2,ids:[],cursor:0,phase:'sentence',offset:0,voice:'male',voiceMode:'alternate',rate:1,mode:'listen',completed:[],autoNextPattern:true,includeDialogues:false,readingSeconds:null,
    speakPurpose:true,expandVocabulary:false,...previous};
+  if(this.session.purposeHeard){
+   const spoken=data.sentences.find(row=>row.id===this.session.purposeHeard);
+   if(spoken&&this.session.examplePurposePattern==null)this.rememberExamplePurpose(spoken);
+   delete this.session.purposeHeard;
+  }
   if(this.requireConversation){this.session.includeDialogues=true;if(!this.session.dialoguesPerPattern)this.session.dialoguesPerPattern=1}
   this.session.ids=this.session.ids.filter(id=>data.sentences.some(s=>s.id===id));
   const resumeId=this.session.ids[this.session.cursor];
@@ -114,7 +122,21 @@ class NasaqRoutePlayer{
  get sentence(){if(this.session.phase==='interlude'){const s=this.interludeRows[this.session.interludeCursor||0];return s?{...s,pattern_id:this.activeInterlude.after_pattern_id,group_id:this.data.patterns.find(p=>p.id===this.activeInterlude.after_pattern_id)?.group_id}:undefined}return this.data.sentences.find(s=>s.id===this.session.ids[this.session.cursor])}
  get pattern(){return this.data.patterns.find(p=>p.id===this.sentence?.pattern_id)}
  get activeDialogue(){return this.data.dialogues?.find(d=>d.id===this.session.dialogueId)}
- get isCue(){return ['pattern-intro','explanation-intro','dialogue-intro','purpose-intro','vocabulary'].includes(this.session.phase)}
+ get isPurposeCue(){return ['purpose-rule-intro','purpose-intro'].includes(this.session.phase)}
+ get isCue(){return this.isPurposeCue||['pattern-intro','explanation-intro','dialogue-intro','vocabulary'].includes(this.session.phase)}
+ get shouldSpeakPurpose(){return Boolean(this.narratePurpose&&this.session.speakPurpose)}
+ rememberExamplePurpose(row){
+  const purposes=this.session.examplePurposePattern===row.pattern_id?this.session.examplePurposes||[]:[];
+  this.session.examplePurposePattern=row.pattern_id;
+  const purpose=this.purposeOf(row);
+  this.session.examplePurposes=purposes.includes(purpose)?purposes:[...purposes,purpose];
+ }
+ get needsExamplePurpose(){
+  const row=this.sentence;
+  const purpose=this.purposeOf(row);
+  return this.session.examplePurposePattern!==row.pattern_id||
+   purpose!==this.patternPurposeOf(row.pattern_id)&&!this.session.examplePurposes?.includes(purpose);
+ }
  get heardPatternConversation(){return this.session.heardConversationPattern===this.pattern?.id}
  get dialogueLimit(){return this.session.dialoguesPerPattern??(this.session.includeDialogues?1:0)}
  dialoguesForPattern(id){return this.dialoguesByPattern.get(id)||[]}
@@ -141,22 +163,27 @@ class NasaqRoutePlayer{
   this.error='';this.running=true;
   if(this.session.phase==='sentence'&&this.narrate&&this.session.introducedPattern!==this.pattern?.id){
    this.session.resumeSentenceOffset=this.session.offset;
-   this.session.phase='pattern-intro';this.session.offset=0;this.save();
+   const openingPurpose=this.shouldSpeakPurpose&&!this.session.offset;
+   if(openingPurpose)delete this.session.examplePurposePattern;
+   this.session.phase=openingPurpose?'purpose-rule-intro':'pattern-intro';this.session.offset=0;this.save();
   }
-  if(this.session.phase==='sentence'&&this.narratePurpose&&this.session.speakPurpose&&
-     !this.session.offset&&this.session.purposeHeard!==this.sentence.id){
+  if(this.session.phase==='purpose-intro'&&(!this.shouldSpeakPurpose||!this.needsExamplePurpose)){
+   this.session.phase='sentence';this.save();
+  }
+  if(this.session.phase==='sentence'&&this.shouldSpeakPurpose&&!this.session.offset&&this.needsExamplePurpose){
    this.session.phase='purpose-intro';this.save();
   }
   if(this.isCue){
    const g=++this.generation,phase=this.session.phase;
    this.cue?.stop();
-   this.cue=phase==='purpose-intro'?this.narratePurpose?.(this.sentence,this.session.rate):
+   this.cue=this.isPurposeCue?this.narratePurpose?.(this.sentence,this.session.rate,phase):
     phase==='vocabulary'?this.narrateVocabulary?.(this):this.narrate?.(phase,this.pattern,this.session.rate);
    this.emit();
    await this.cue?.done;
    if(g!==this.generation||!this.running)return;
    this.cue=null;
-   if(phase==='pattern-intro'){
+   if(phase==='purpose-rule-intro')this.startCue('pattern-intro');
+   else if(phase==='pattern-intro'){
     this.session.introducedPattern=this.pattern?.id;
     const seconds=this.session.readingSeconds??this.readingDefault();
     if(seconds>0){
@@ -164,7 +191,7 @@ class NasaqRoutePlayer{
      this.beginReading(seconds);
     }else this.playFirstExample();
    }else if(phase==='purpose-intro'){
-    this.session.purposeHeard=this.sentence.id;
+    this.rememberExamplePurpose(this.sentence);
     this.playFirstExample();
    }else if(phase==='vocabulary')this.continueAfterComparison();
    else if(phase==='explanation-intro')this.startReading();
@@ -182,6 +209,9 @@ class NasaqRoutePlayer{
   const r=this.recording;
   const measured=this.session.phase==='dialogue'?r?.turns?.length:r?.words?.length&&['structurally_verified','auditory_sample_reviewed'].includes(r.status);
   if(!r?.sha256||!measured){this.running=false;this.error='هذا التسجيل لم يُنتج ويُتحقق منه بعد.';this.emit();return}
+  if(this.session.phase==='sentence'&&this.shouldSpeakPurpose){
+   this.rememberExamplePurpose(this.sentence);this.save();
+  }
   const g=++this.generation;const offset=this.session.offset;
   const seek=()=>{if(g!==this.generation)return;try{this.audio.currentTime=Math.max(0,Math.min(offset,(r.duration_ms-10)/1000))}catch{}};
   if(this.audio.getAttribute('src')!==r.path){this.audio.setAttribute('src',r.path);this.audio.load();if(this.audio.readyState>=1)seek();else this.audio.addEventListener('loadedmetadata',seek,{once:true})}else seek();
@@ -317,7 +347,7 @@ class NasaqRoutePlayer{
  jumpInterlude(index){const sequence=this.activeInterlude;if(!sequence?.items[index])return false;this.pause();this.session.phase='interlude';this.session.interludeCursor=index;this.session.offset=0;this.session.voice=sequence.items[index].voice;this.audio.removeAttribute('src');this.audio.load();this.save();this.emit();this.play();return true}
  continueAfterExercise(){this.session.phase='sentence';this.running=true;this.advance()}
  moveCursor(){const keepPlaying=this.running;this.generation++;this.audio.pause();if(this.session.cursor+1>=this.session.ids.length){this.session.phase='finished';this.running=false;this.session.offset=0;this.save();this.emit();return}this.session.cursor++;this.session.phase='sentence';this.session.offset=0;this.session.voice=this.session.voiceMode==='alternate'?(this.session.cursor%2?'female':'male'):this.session.voiceMode;this.audio.removeAttribute('src');this.audio.load();this.save();this.emit();if(keepPlaying)this.play()}
- jumpTo(id){const idx=this.session.ids.indexOf(id);if(idx<0)return false;this.pause();if(this.session.readingBeforeExamples)delete this.session.introducedPattern;delete this.session.readingBeforeExamples;delete this.session.resumeSentenceOffset;delete this.session.purposeHeard;this.session.cursor=idx;this.session.phase='sentence';this.session.offset=0;this.session.voice=this.session.voiceMode==='alternate'?(idx%2?'female':'male'):this.session.voiceMode;this.audio.removeAttribute('src');this.audio.load();this.save();this.emit();return true}
+ jumpTo(id){const idx=this.session.ids.indexOf(id);if(idx<0)return false;this.pause();if(this.session.readingBeforeExamples)delete this.session.introducedPattern;delete this.session.readingBeforeExamples;delete this.session.resumeSentenceOffset;this.session.cursor=idx;this.session.phase='sentence';this.session.offset=0;this.session.voice=this.session.voiceMode==='alternate'?(idx%2?'female':'male'):this.session.voiceMode;this.audio.removeAttribute('src');this.audio.load();this.save();this.emit();return true}
  otherVoice(){if(this.session.phase!=='sentence')return;const was=this.running;this.pause();this.session.voice=this.session.voice==='male'?'female':'male';this.session.offset=0;this.session.phase='sentence';this.audio.removeAttribute('src');this.audio.load();this.save();this.emit();if(was)this.play()}
  setRate(rate){this.session.rate=+rate;this.audio.playbackRate=+rate;this.save();this.emit()}
  seek(seconds){if(!this.hasAudio)return;const max=(this.recording?.duration_ms||0)/1000;this.session.offset=Math.max(0,Math.min(+seconds,max));if(this.audio.getAttribute('src')===this.recording?.path)this.audio.currentTime=this.session.offset;this.save();this.emit()}

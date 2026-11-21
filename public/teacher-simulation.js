@@ -1,7 +1,8 @@
 var teacherSimulation=null;
 function teacherNarrationOptions(){
  return {
-  narrate:narrateTrainingCue,narratePurpose:narrateSentencePurpose,narrateVocabulary:playCoachVocabulary,
+  narrate:narrateTrainingCue,narratePurpose:narrateCoachPurpose,narrateVocabulary:playCoachVocabulary,
+  purposeOf:sentencePurpose,patternPurposeOf:EPPurposes.forPattern,
   matchesPurpose:(selection,id)=>EPPurposes.matches(selection,EPPurposes.forPattern(id))
  };
 }
@@ -42,9 +43,16 @@ function playCoachVocabulary(player){
  })();
  return {done,stop};
 }
-function coachPurposePhase(row){
- return `<section class="comparison-view"><h2>${T('اسمع غرض العبارة','Hear the purpose of the sentence')}</h2>
-  ${purposeTag(sentencePurpose(row))}<p lang="en" dir="ltr">${H(EPPurposes.spoken(sentencePurpose(row)))}</p></section>`;
+function narrateCoachPurpose(row,rate,phase){
+ return phase==='purpose-rule-intro'?playPurposeTrack(makePurposeTrack(EPPurposes.forPattern(row.pattern_id)),rate):
+  narrateSentencePurpose(row,rate);
+}
+function coachPurposePhase(player){
+ const beforeRule=player.session.phase==='purpose-rule-intro';
+ const id=beforeRule?EPPurposes.forPattern(player.pattern.id):sentencePurpose(player.sentence);
+ const title=beforeRule?T('غرض النمط قبل شرح القاعدة','Pattern purpose before the rule'):T('غرض المثال','Purpose of the example');
+ return `<section class="comparison-view"><h2>${title}</h2>
+  ${purposeTag(id)}<p lang="en" dir="ltr">${H(EPPurposes.spoken(id))}</p></section>`;
 }
 function coachVocabularyPhase(player,showEnglish=true){
  const entry=player.activeVocabulary;
@@ -61,7 +69,7 @@ function vocabularyLine(row,term){
 }
 function teacherPurposeSettings(){
  return `<label class="field">${T('غرض التعبير','Communicative purpose')}<select id="route-purpose">${purposeOptions(route.session.filters?.purposeId)}</select></label>
-  <label class="setting-toggle"><input id="route-speak-purpose" type="checkbox" ${route.session.speakPurpose?'checked':''}>${T('انطق غرض العبارة قبل المثال','Speak the purpose before the example')}</label>
+  <label class="setting-toggle"><input id="route-speak-purpose" type="checkbox" ${route.session.speakPurpose?'checked':''}>${T('انطق الغرض قبل القاعدة وأول مثال','Speak the purpose before the rule and first example')}</label>
   <label class="setting-toggle"><input id="route-expand-vocabulary" type="checkbox" ${route.session.expandVocabulary?'checked':''}>${T('وسّع مفردات النمط بعد الأمثلة','Expand pattern vocabulary after the examples')}</label>`;
 }
 const teacherSettingHelp={
@@ -75,7 +83,7 @@ const teacherSettingHelp={
  'route-reading-seconds':['يضبط وقت المراجعة بعد الشرح الصوتي وقبل أول مثال. اختر صفرًا لتبدأ الأمثلة بعد الشرح مباشرة.','Sets the review time after the recorded rule and before the first example. Select zero to go straight to the examples after the rule.'],
  'route-dialogues':['يحدد عدد المحادثات المرتبطة المعروضة. أكمل محادثة واحدة قبل الانتقال إلى نمط جديد.','Sets how many related conversations you can choose from. Finish one conversation before moving to a new pattern.'],
  'route-auto-next':['بعد إكمال المحادثة يبدأ النمط التالي، أو يتوقف المسار حتى تضغط متابعة بحسب اختيارك.','After a completed conversation, this starts the next pattern or waits for you to resume.'],
- 'route-speak-purpose':['تسمع الغرض قبل الجملة. جرّب تشغيله ثم إيقافه لسماع الفرق في تسلسل الاستماع.','Hear the purpose before each sentence. Try turning it off and on to hear how the sequence changes.'],
+ 'route-speak-purpose':['تسمع غرض النمط قبل شرح القاعدة، ثم غرض أول مثال. في الأمثلة التالية تسمع تمهيدًا إذا ظهر غرض مختلف.','Hear the pattern purpose before the rule and the first example’s purpose before it plays. Later examples introduce a distinct purpose when it first appears.'],
  'route-expand-vocabulary':['بعد آخر مثال تستمع إلى ثلاث مفردات مفيدة. تسمع كل مفردة ثم الجملة التي وردت فيها، ويظهر نوعها بجانبها.','After the final example, hear up to three terms, each followed by its sentence, with the word type shown.'],
  'route-preview-pattern':['اترك الاختيار على بداية المسار لتجربة الانتقال بين نمطين، أو اختر نمطًا من النتائج لتسمع تسجيلاته.','Preview the first two matching patterns to try automatic progression, or choose a matching pattern to hear its recordings.'],
  'route-preview-rate':['غيّر سرعة التشغيل. يفيد الإبطاء عند مراجعة النطق وتقطيع الجمل.','Change playback speed. Slower speeds can help you review pronunciation and phrasing.'],
@@ -183,7 +191,7 @@ function paintTeacherSimulation(player){
  switch(phase){
   case 'pattern-intro':case 'explanation-intro':host.innerHTML=`<h4>${T(...trainingCueLabels[phase])}</h4>${EP.rule(row)}`;break;
   case 'comparison':host.innerHTML=`<h4>${T('مراجعة القاعدة','Rule review')} · ${wait}s</h4>${EP.rule(row)}`;break;
-  case 'purpose-intro':host.innerHTML=coachPurposePhase(row);break;
+  case 'purpose-rule-intro':case 'purpose-intro':host.innerHTML=coachPurposePhase(player);break;
   case 'vocabulary':host.innerHTML=coachVocabularyPhase(player,english);break;
   case 'exercise':
    host.innerHTML=`<label>${T('جرّب كتابة فكرة جديدة بنفس النمط.','Try writing a new idea using the pattern.')}

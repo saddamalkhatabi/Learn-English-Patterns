@@ -51,6 +51,15 @@ const patternGroups={
 };
 const byPattern=new Map(Object.entries(patternGroups).flatMap(([id,patterns])=>patterns.map(pattern=>[pattern,id])));
 const forPattern=id=>byPattern.get(Number(id))||'description';
+const coursePurposeOverrides=new Map([
+ ['know-11','description'],
+ ['can-12','request'],
+ ['pattern-9037-07','ability'],
+ ['pattern-9037-09','clarify']
+]);
+function forCourseSentence(row){
+ return coursePurposeOverrides.get(row.id)||forPattern(row.pattern_id||row.pattern_ids?.[0]);
+}
 function forReference(guide,sentence=''){
  const text=guide.purpose_en||'';
  if(/\b(?:ask for|give) permission\b/i.test(text))return 'permission';
@@ -77,6 +86,6 @@ function matches(selection,purpose){
 }
 const get=id=>byId.get(id);
 const spoken=id=>get(id).en.replace(/[.!?]$/,'')+'.';
-const api={groups,get,forPattern,forReference,forDialogue,matches,spoken};
+const api={groups,get,forPattern,forCourseSentence,forReference,forDialogue,matches,spoken};
 if(typeof module==='object')module.exports=api;else root.EPPurposes=api;
 })(globalThis);
