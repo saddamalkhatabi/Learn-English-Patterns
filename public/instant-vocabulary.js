@@ -113,13 +113,7 @@ function closeInstantVocabulary(){
  instantAudio?.stop();instantAudio=null;
 }
 
-function positionInstantVocabulary(popup,anchor){
- const gap=8,screenWidth=document.documentElement.clientWidth,screenHeight=window.innerHeight;
- const x=Math.max(gap,Math.min(anchor.left,screenWidth-popup.offsetWidth-gap));
- const bottom=anchor.bottom+gap;
- const y=bottom+popup.offsetHeight<=screenHeight-gap?bottom:Math.max(gap,anchor.top-popup.offsetHeight-gap);
- popup.style.left=x+'px';popup.style.top=y+'px';
-}
+function positionInstantVocabulary(popup,anchor){epPositionFloating(popup,anchor)}
 
 function moveInstantHighlight(session,match){
  const range=session.context.rangeFor?.(match.start,match.end);
@@ -304,7 +298,9 @@ document.addEventListener('keydown',event=>{
  if(event.key==='Escape'&&instantLookup){closeInstantVocabulary();event.preventDefault();event.stopPropagation()}
 },true);
 window.addEventListener('hashchange',closeInstantVocabulary);
-window.addEventListener('resize',closeInstantVocabulary);
+epOnViewportChange(()=>{
+ if(instantLookup)positionInstantVocabulary(instantLookup.popup,instantLookup.anchor);
+});
 document.addEventListener('scroll',event=>{
  if(instantLookup&&!instantLookup.popup.contains(event.target))closeInstantVocabulary();
 },true);

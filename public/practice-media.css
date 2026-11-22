@@ -87,7 +87,11 @@ html[data-pattern-image="hidden"] .coach-dialogue-wrap .dialogue-panel .dialogue
 .reference-guided-status:empty{display:none}
 .reference-guided[data-mini="true"]{position:fixed;inset:auto;inset-inline-end:12px;inset-block-end:12px;margin:0;z-index:65;width:min(29rem,calc(100vw - 24px));box-shadow:0 8px 28px #122c2640}
 body:has(#reference-player:not([hidden])) .reference-guided[data-mini="true"]{inset-block-start:12px;inset-block-end:auto}
-.reference-guided[data-mini="true"] :is(.reference-guided-steps,.reference-guided-content,.reference-guided-voice,[data-guide-move],.reference-guided-header h2){display:none}
+.reference-guided[data-mini="true"] .reference-guided-steps,
+.reference-guided[data-mini="true"] .reference-guided-content,
+.reference-guided[data-mini="true"] .reference-guided-voice,
+.reference-guided[data-mini="true"] [data-guide-move],
+.reference-guided[data-mini="true"] .reference-guided-header h2{display:none}
 .reference-guided[data-mini="true"] .reference-guided-now{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:.3rem .65rem;padding:.4rem .75rem;overflow-wrap:anywhere}
 .reference-guided[data-mini="true"] :is(.reference-guided-header,.reference-guided-transport){padding:.35rem .75rem}
 .reference-guided[data-mini="true"] .reference-guided-transport{justify-content:space-between}

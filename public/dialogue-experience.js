@@ -48,7 +48,7 @@ try{dialogueResume=JSON.parse(localStorage.getItem('nasaq-dialogue-resume-v1'))|
 let dialoguePriority=['image','text'].includes(dialogueResume.priority)?dialogueResume.priority:'image';
 let dialogueSceneArchive={},dialogueLifecycles={};
 const dialogueSceneLocations=new Map();
-const dialogueArchiveReady=fetch('conversation-scenes.json').then(r=>r.ok?r.json():{}).then(data=>{
+const dialogueArchiveReady=epFetchJSON('conversation-scenes.json').then(data=>{
  dialogueSceneArchive=data.scenes||{};dialogueLifecycles=data.lifecycles||{};
  for(const [id,entry] of Object.entries(dialogueSceneArchive)){
   for(const [position,image] of Object.entries(entry.turns)){
@@ -620,4 +620,3 @@ Promise.all([pilotReady,dialoguePlanReady,dialogueArchiveReady,learningLevelsRea
 window.addEventListener('pagehide',()=>{
  document.querySelectorAll('[data-dialogue-player] audio').forEach(audio=>{if(!audio.paused)audio.saveDialoguePosition?.()});
 });
-render();

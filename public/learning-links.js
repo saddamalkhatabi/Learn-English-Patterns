@@ -69,8 +69,10 @@ if(linkedType&&window.frameElement){
    returnFromLinkedLearning();
   }
  });
- Promise.all([pilotReady,learningReady,learningLevelsReady,archiveReady,ideaLibraryReady,referenceDataReady,
-  linkedType==='story'?supplementReady:null]).then(async()=>{
+ const contentReady=linkedType==='listen'?[pilotReady,learningReady]:
+  [pilotReady,learningReady,learningLevelsReady,archiveReady,ideaLibraryReady,referenceDataReady,
+   linkedType==='story'?supplementReady:null];
+ Promise.all(contentReady).then(async()=>{
   const archive=linkedParams.get('archive');
   const revealArchive=()=>{
    if(!archive)return;

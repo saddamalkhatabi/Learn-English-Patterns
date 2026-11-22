@@ -1,25 +1,27 @@
 /* One shared sentence registry powers coach, catalog, lesson examples, and Idea Lab. */
-let PILOT=null,route=null,pilotAudit=null,coachFrame=0,hideCoachText=false,hideCoachArabic=false,coachPaintKey='';
-const expansionReady=fetch('expansion-media.json').then(r=>r.ok?r.json():null).catch(()=>null);
-const dialogueReady=Promise.all(['dialogues.json','dialogue-audio.json','english-practice.json'].map(path=>fetch(path).then(r=>r.ok?r.json():null).catch(()=>null)))
+let PILOT=null,route=null,pilotAudit=null,coachFrame=0,hideCoachText=false,hideCoachArabic=false,coachPaintKey='',courseLoadFailed=false,courseMediaLimited=false;
+const expansionData=epFetchJSON('expansion-media.json',25000);
+const expansionReady=expansionData.catch(()=>null);
+const dialogueReady=Promise.all(['dialogues.json','dialogue-audio.json','english-practice.json'].map(path=>epFetchJSON(path).catch(()=>null)))
  .then(([source,media,practice])=>[...(source?.dialogues||[]),...(practice?.dialogues||[])].map(dialogue=>{
   const audio=media?.[dialogue.id];
   const signature=dialogue.lines.map(line=>[line.en,line.voice]);
   return {...dialogue,audio:audio&&JSON.stringify(audio.signature)===JSON.stringify(signature)?audio:null};
  }));
-const trainingAudioReady=fetch('training-audio.json').then(r=>r.ok?r.json():{}).catch(()=>({}));
 // Cached data can arrive before the later classic scripts have installed the coach and narration.
 const courseScriptsReady=document.readyState==='loading'?
  new Promise(resolve=>document.addEventListener('DOMContentLoaded',resolve,{once:true})):Promise.resolve();
-const pilotReady=Promise.all([fetch('pilot.json').then(r=>{if(!r.ok)throw Error('pilot');return r.json()}),expansionReady,dialogueReady,trainingAudioReady,courseScriptsReady,
- courseScriptsReady.then(()=>Promise.all([dialogueArchiveReady,learningLevelsReady,englishAudioReady]))]).then(([data,expansion,dialogues,trainingAudio])=>{
- data.dialogues=dialogues;data.requireConversation=true;data.trainingAudio=trainingAudio;
- if(expansion?.schema===3){
-  data.patterns.push(...expansion.patterns);
-  data.sentences.push(...expansion.sentences);
-  data.pattern_order.push(...expansion.patterns.map(p=>p.id));
-  data.revision+='-expansion';
- }
+const pilotReady=Promise.all([epFetchJSON('pilot.json'),expansionData,dialogueReady,
+ epFetchJSON('coach-cues.json',12000).catch(()=>null),
+ courseScriptsReady.then(()=>Promise.all([learningLevelsReady,englishAudioReady]))]).then(([data,expansion,dialogues,trainingAudio])=>{
+ if(expansion?.schema!==3)throw Error('Unsupported course data');
+ data.requireConversation=dialogues.some(dialogue=>dialogue.audio);
+ courseMediaLimited=!data.requireConversation||!trainingAudio;
+ data.trainingAudio=trainingAudio||{};
+ data.patterns.push(...expansion.patterns);
+ data.sentences.push(...expansion.sentences);
+ data.pattern_order.push(...expansion.patterns.map(p=>p.id));
+ data.revision+='-expansion';
  data.sentences=data.sentences.map(projectEnglishSentence);
  data.pattern_order=orderLearningPatterns(data.pattern_order);
  data.learningLevels=learningLevels.patterns;
@@ -31,14 +33,34 @@ const pilotReady=Promise.all([fetch('pilot.json').then(r=>{if(!r.ok)throw Error(
  for(const p of patterns)if(p.id===13)p.topic='الرغبات والخطط';
  for(const topic of new Set(patterns.map(p=>p.topic)))if(!units.some(u=>u.topic===topic))units.unshift({name:topic,desc:'تعرّف على البناء من خلال مواقف متنوعة، ثم كوّن أفكارك الخاصة.',topic,icon:'◎',color:'mint',time:'على إيقاعك'});
  const audio=document.createElement('audio');audio.id='route-audio';audio.preload='auto';document.body.appendChild(audio);
- route=new NasaqRoutePlayer({data:PILOT,audio,storage:document.body.dataset.linkedLearning?null:localStorage,...teacherNarrationOptions(),readingDefault:()=>Number(EP.prefs.readingSeconds??25),onchange:()=>{if(route)updateCoach()}});
+ let storage=null;
+ try{if(!document.body.dataset.linkedLearning)storage=localStorage}catch{}
+ route=new NasaqRoutePlayer({data:PILOT,audio,storage,...teacherNarrationOptions(),readingDefault:()=>Number(EP.prefs.readingSeconds??25),onchange:()=>{if(route)updateCoach()}});
  audio.addEventListener('playing',()=>{cancelAnimationFrame(coachFrame);const tick=()=>{if(!route.running||audio.paused)return;if(page==='coach')paintCoachWords(audio.currentTime*1000);coachFrame=requestAnimationFrame(tick)};tick()});
  if(['coach','catalog','home','path','quality','library'].includes(page))render();
  return data;
-}).catch(error=>{console.error('Course initialization failed',error);if(typeof toast==='function')toast('تعذر تحميل تجربة الأنماط الغنية. أعد المحاولة بعد الاتصال.');return null});
+}).catch(error=>{console.error('Course initialization failed',error);courseLoadFailed=true;if(page==='coach')render();return null});
+const trainingAudioReady=pilotReady.then(()=>epFetchJSON('training-audio.json',35000)).then(cues=>{
+ if(PILOT){
+  Object.assign(PILOT.trainingAudio,cues);
+  if(PILOT.requireConversation&&courseMediaLimited){
+   courseMediaLimited=false;
+   document.querySelector('.coach-media-notice')?.remove();
+  }
+ }
+ return cues;
+}).catch(()=>PILOT?.trainingAudio||{});
+function coachLoadingPanel(){
+ const title=T('الاستماع والتدريب','Listen & practise');
+ if(!courseLoadFailed)return head(title,T('جارٍ تحميل المسار…','Loading your route…'));
+ return `${head(title,'')}<div class="notice" role="alert"><p>${T('تعذّر تحميل مسار التدريب. تحقق من الاتصال وأعد المحاولة.','Your practice route could not load. Check your connection and try again.')}</p><button class="primary" type="button" onclick="location.reload()">${T('إعادة المحاولة','Try again')}</button></div>`;
+}
+function coachMediaNotice(){
+ return courseMediaLimited?`<div class="notice coach-media-notice" role="status">${T('مسار الجمل جاهز. تعذّر تحميل بعض ملفات الشرح أو المحادثة.','Sentence practice is ready. Some explanations or conversations could not load.')} <button type="button" onclick="location.reload()">${T('إعادة المحاولة','Try again')}</button></div>`:'';
+}
 fetch('pilot-audit.json').then(r=>r.ok?r.json():null).then(a=>{pilotAudit=a;if(page==='quality')render()}).catch(()=>{});
 function pilotCounts(){const s=PILOT?.sentences||[];return {sentences:s.length,patterns:PILOT?.patterns.length||0,audio:s.flatMap(s=>Object.values(s.recordings)).filter(r=>r.sha256&&r.words.length).length,images:s.filter(s=>['visually_reviewed','assistant-reviewed','imported-unreviewed'].includes(s.image?.status)).length}}
-function pilotScene(s,cls=''){if(!s?.image)return '';const i=s.image,w=i.width,h=i.height,c=i.crop||{x:(i.cell%i.columns)*w/i.columns,y:Math.floor(i.cell/i.columns)*h/i.rows,width:w/i.columns,height:h/i.rows};if(!(c.width>0&&c.height>0&&c.x>=0&&c.y>=0&&c.x+c.width<=w&&c.y+c.height<=h))return '';const sx=w/c.width*100,sy=h/c.height*100,x=w===c.width?0:c.x/(w-c.width)*100,y=h===c.height?0:c.y/(h-c.height)*100;return `<div class="scene-frame ${cls}" role="img" aria-label="${esc(typeof EP!=='undefined'&&(EP.prefs.language==='en'||!EP.prefs.arabic)?s.en:(s.context||'')+' — '+s.ar)}"><div class="scene-photo" style="--scene-ratio:${c.width/c.height};background-image:url('${esc(i.atlas)}');background-size:${sx}% ${sy}%;background-position:${x}% ${y}%"></div></div>`}
+function pilotScene(s,cls=''){if(!s?.image)return '';const i=s.image,w=i.width,h=i.height,c=i.crop||{x:(i.cell%i.columns)*w/i.columns,y:Math.floor(i.cell/i.columns)*h/i.rows,width:w/i.columns,height:h/i.rows};if(!(c.width>0&&c.height>0&&c.x>=0&&c.y>=0&&c.x+c.width<=w&&c.y+c.height<=h))return '';const sx=w/c.width*100,sy=h/c.height*100,x=w===c.width?0:c.x/(w-c.width)*100,y=h===c.height?0:c.y/(h-c.height)*100;return `<div class="scene-frame ${cls}" role="img" aria-label="${esc(typeof EP!=='undefined'&&(EP.prefs.language==='en'||!EP.prefs.arabic)?s.en:(s.context||'')+' — '+s.ar)}"><div class="scene-photo" style="--scene-ratio:${c.width/c.height};--ep-picture-width:${Math.min(100,100*c.width/c.height)}%;--ep-picture-padding:${Math.min(100,100*c.height/c.width)}%;--ep-landscape-width:${Math.min(100,200*c.width/(3*c.height))}%;--ep-landscape-padding:${Math.min(200/3,100*c.height/c.width)}%;background-image:url('${esc(i.atlas)}');background-size:${sx}% ${sy}%;background-position:${x}% ${y}%"></div></div>`}
 function pilotBanner(){const c=pilotCounts();return `<section class="pilot-banner"><div><span class="eyebrow">THE RICH PATTERN PILOT</span><h2>نمط واحد. اثنتا عشرة فكرة.</h2><p>${c.patterns} نمطًا مترابطًا: ${c.sentences} جملة مختلفة، ${c.audio} تسجيلًا مستقلًا، ومشاهد تتغير مع المعنى.</p></div><div class="buttonrow"><button class="primary" onclick="navigate('coach')">المعلّم الآلي ←</button><button class="secondary" onclick="navigate('catalog')">كتالوج المشاهد</button></div></section>`}
 function coach(){if(!PILOT||!route)return head('المعلّم الآلي','جارٍ تحميل المسار…');const selected=new Set(route.session.ids.map(id=>PILOT.sentences.find(s=>s.id===id)?.pattern_id));return `${head('اثبت على النمط. تنقّل بين الأفكار.','جمل مختلفة بالتتابع. يبدأ Adam، ثم Bella، دون إعادة الجملة نفسها تلقائيًا.','THE CONTINUOUS TEACHER')}<details class="panel route-config"><summary>اختيار المسار وإعدادات التعلّم</summary><div class="route-filters"><fieldset><legend>الأنماط المنشورة بالصوت والصورة</legend>${PILOT.patterns.map(p=>`<label><input type="checkbox" name="route-pattern" value="${p.id}" ${selected.has(p.id)?'checked':''}> <b dir="ltr">${esc(p.form)}</b></label>`).join('')}</fieldset><label class="field">مرحلة الأمثلة<select id="route-stage"><option value="0">جميع المراحل · 12 جملة للنمط</option>${['فهم النمط','توسيع النمط','المقارنة في موقف','الاستخدام الحقيقي','ترابط الأفكار','الإنتاج والطلاقة'].map((t,i)=>`<option value="${i+1}" ${route.session.filters?.stage===i+1?'selected':''}>${i+1} · ${t}</option>`).join('')}</select></label><label class="field">تصنيف صعوبة الجملة<select id="route-cefr"><option value="">جميع الجمل</option><option ${route.session.filters?.cefr==='A1'?'selected':''}>A1</option><option ${route.session.filters?.cefr==='A2'?'selected':''}>A2</option><option ${route.session.filters?.cefr==='B1'?'selected':''}>B1</option></select></label><label class="field">طريقة التدريب<select id="route-mode"><option value="listen" ${route.session.mode==='listen'?'selected':''}>استماع متواصل</option><option value="interactive" ${route.session.mode==='interactive'?'selected':''}>تدريب تفاعلي بعد كل جملة</option></select></label><label class="field">سياسة الصوت<select id="route-voice"><option value="alternate">تناوب Adam ثم Bella</option><option value="male" ${route.session.voiceMode==='male'?'selected':''}>Adam فقط</option><option value="female" ${route.session.voiceMode==='female'?'selected':''}>Bella فقط</option></select></label><button class="primary" onclick="configureRoute()">ابدأ مسارًا جديدًا</button></div><p>«جميع الأنماط» هنا هي الأنماط المتاحة في المنهج المنتج. بقية المكتبة لا تدخل المسار الصوتي حتى تكتمل مواردها.</p></details><div class="coach-shell"><div class="coach-meta" id="coach-meta"></div><div class="progress-track"><i id="coach-progress"></i></div><div class="coach-body" id="coach-body"></div><div class="coach-controls"><button class="secondary" onclick="coachPrevious()">→ السابق</button><button class="primary" id="coach-toggle" onclick="toggleCoach()">تشغيل / استكمال ▷</button><button class="secondary" onclick="coachNext()">التالي ←</button><button class="secondary" onclick="route.otherVoice()">الصوت الآخر للجملة الحالية</button><label class="speedlabel">السرعة<select aria-label="سرعة المعلم الآلي" onchange="route.setRate(this.value)"><option value=".75" ${route.session.rate===.75?'selected':''}>0.75×</option><option value="1" ${route.session.rate===1?'selected':''}>1×</option><option value="1.15" ${route.session.rate===1.15?'selected':''}>1.15×</option></select></label></div><div class="seek-row"><span id="coach-time">0:00</span><input type="range" min="0" max="100" step=".01" value="0" id="coach-seek" aria-label="موضع التسجيل" onchange="route.seek(this.value)"><span id="coach-duration"></span></div><div class="coach-options"><label><input type="checkbox" ${hideCoachText?'checked':''} onchange="hideCoachText=this.checked;paintTextVisibility()"> إخفاء النص الإنجليزي</label><label><input type="checkbox" ${hideCoachArabic?'checked':''} onchange="hideCoachArabic=this.checked;paintTextVisibility()"> إخفاء الترجمة</label><span id="coach-status" role="status"></span></div></div><div class="sectionhead"><h2>جمل النمط الحالي</h2><button class="textlink" onclick="navigate('catalog')">عرض الكتالوج البصري ←</button></div><div id="coach-sentences" class="sentence-strip"></div><div class="notice">يُحفظ معرّف الجملة، والصوت المختار، وموضع التسجيل الحقيقي في هذا المتصفح. بعد فتح الصفحة من جديد اضغط استكمال. القياسات الآلية تتحقق من اكتمال المحاذاة والروابط؛ لا تمثّل اعتمادًا تربويًا أو حكمًا على جودة النطق.</div>`}
 function configureRoute(){const patternIds=Array.from(document.querySelectorAll('[name="route-pattern"]:checked')).map(x=>+x.value);if(!patternIds.length){toast('اختر نمطًا واحدًا على الأقل.');return}route.configure({patternIds,stage:+$('#route-stage').value,cefr:$('#route-cefr').value,mode:$('#route-mode').value,voiceMode:$('#route-voice').value,rate:route.session.rate});coachPaintKey='';updateCoach();route.play()}

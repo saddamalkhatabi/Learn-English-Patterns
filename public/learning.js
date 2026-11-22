@@ -9,7 +9,7 @@ window.addEventListener('storage',event=>{
   if(event.key==='nasaq-exams-v1')examResults=JSON.parse(event.newValue);
  }catch{}
 });
-const learningReady=fetch('curriculum.json').then(r=>r.json()).then(d=>{CURRICULUM=d;applyLearningMetadata();render();return d}).catch(()=>null);
+const learningReady=epFetchJSON('curriculum.json').then(d=>{CURRICULUM=d;applyLearningMetadata();render();return d}).catch(()=>null);
 pilotReady.then(()=>{applyLearningMetadata();if(!['coach','catalog'].includes(page))render()});
 function learningMeta(id){return CURRICULUM?.patterns.find(p=>p.id===id)||PILOT?.patterns.find(p=>p.id===id)?.lesson}
 function applyLearningMetadata(){if(!CURRICULUM)return;patterns.forEach(p=>{const m=learningMeta(p.id);if(m){p.keywords=m.keywords;p.meaning=m.explanation_ar;p.compare=m.comparison_ar}});if(PILOT)patterns.sort((a,b)=>PILOT.pattern_order.indexOf(a.id)-PILOT.pattern_order.indexOf(b.id))}

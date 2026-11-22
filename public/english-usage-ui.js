@@ -1,5 +1,5 @@
 let englishAudio={sentences:{},dialogues:{}};
-const englishAudioReady=fetch('english-usage-audio.json').then(response=>response.ok?response.json():null)
+const englishAudioReady=epFetchJSON('english-usage-audio.json')
  .then(data=>{if(data?.schema===1)englishAudio=data}).catch(()=>{});
 
 function englishDisplay(text,context){

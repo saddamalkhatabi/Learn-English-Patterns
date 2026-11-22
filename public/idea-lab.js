@@ -21,14 +21,10 @@ window.addEventListener('storage',event=>{
   refreshSavedPhotoResults();
  }catch{}
 });
-const ideaLibraryReady=fetch('api/idea-scenes',{signal:AbortSignal.timeout?.(3500)})
- .then(async response=>{
-  if(!response.ok)return null;
-  const data=await response.json();
-  return data.schema===2&&Array.isArray(data.scenes)?data:null;
- })
+const ideaLibraryReady=epFetchJSON('api/idea-scenes',3500)
+ .then(data=>data.schema===2&&Array.isArray(data.scenes)?data:null)
  .catch(()=>null)
- .then(data=>data||fetch('idea-scenes.json').then(r=>r.ok?r.json():null).catch(()=>null))
+ .then(data=>data||epFetchJSON('idea-scenes.json').catch(()=>null))
  .then(data=>{ideaLibrary=data;return data});
 function currentIdeaScene(){return page==='scene-studio'?studioWordScene:null}
 function scenePhotoKey(id){return id?.replace(/^studio:/,'')||''}

@@ -7,7 +7,7 @@ npm ci
 npm start
 ```
 
-ثم افتح http://127.0.0.1:4180 . يحتاج التشغيل Node 22 أو أحدث. يشغّل `npm start` ترحيلات SQLite واستيراد المحتوى قبل بدء الخادم. للتشغيل الثابت دون تثبيت مكتبات npm استخدم `node server.js` أو `Start-English-Patterns.cmd` في Windows. [إعداد الاستضافة والتحقق من قاعدة البيانات](docs/CONTENT-DATABASE.md).
+ثم افتح http://127.0.0.1:4180 . يحتاج التشغيل Node 22 أو أحدث. يشغّل `npm start` ترحيلات SQLite واستيراد المحتوى قبل بدء الخادم. لتشغيل الخادم دون قاعدة البيانات استخدم `node server.js` أو `Start-English-Patterns.cmd` في Windows. ثبّت حزم المشروع لتفعيل صور JPEG البديلة للمتصفحات القديمة. [إعداد الاستضافة والتحقق من قاعدة البيانات](docs/CONTENT-DATABASE.md).
 
 ابدأ الاستكمال من **[HANDOFF.md](HANDOFF.md)**، ثم [قائمة النواقص](docs/COMPLETION-BACKLOG.md) و[حالة الفحص](docs/VERIFIED-STATUS.json).
 

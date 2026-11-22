@@ -67,14 +67,7 @@ const EPSearch=(()=>{
  }
  function reposition(){
   if(!menu||!field)return;
-  const rect=field.getBoundingClientRect(),available=window.innerHeight-rect.bottom;
-  const above=available<170&&rect.top>available;
-  const viewport=document.documentElement.clientWidth,maxWidth=viewport-20;
-  const width=Math.min(maxWidth,Math.max(rect.width,290));
-  menu.style.width=`${width}px`;
-  menu.style.left=`${Math.max(10,Math.min(rect.left,viewport-width-10))}px`;
-  menu.style.maxHeight=`${Math.max(70,Math.min(320,(above?rect.top:available)-12))}px`;
-  menu.style.top=above?`${Math.max(6,rect.top-menu.offsetHeight-4)}px`:`${rect.bottom+4}px`;
+  epPositionFloating(menu,field.getBoundingClientRect(),290);
  }
  function showSuggestions(input){
   const provider=libraries[input.id],query=normalize(input.value);
@@ -173,7 +166,7 @@ const EPSearch=(()=>{
   if(row.top<bounds.top)menu.scrollTop+=row.top-bounds.top;
   else if(row.bottom>bounds.bottom)menu.scrollTop+=row.bottom-bounds.bottom;
  });
- window.addEventListener('resize',reposition);
+ epOnViewportChange(reposition);
  document.addEventListener('scroll',reposition,true);
  window.addEventListener('hashchange',closeSuggestions);
 

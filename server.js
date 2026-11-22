@@ -1,7 +1,24 @@
 const http=require('node:http'),fs=require('node:fs'),path=require('node:path');
 const {previewHTML}=require('./share-preview.cjs');
+const {createGzip}=require('node:zlib');
+const {pipeline}=require('node:stream');
 const ROOT=path.resolve(__dirname,'public');
 const TYPES={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.svg':'image/svg+xml','.png':'image/png','.webp':'image/webp','.mp3':'audio/mpeg','.zip':'application/zip'};
+const jpegCache=new Map(),jpegPending=new Map();
+async function jpegVersion(file,stat){
+ const key=file+'|'+stat.mtimeMs;
+ if(jpegCache.has(key))return jpegCache.get(key);
+ if(jpegPending.has(key))return jpegPending.get(key);
+ const sharp=require('sharp');
+ const job=sharp(file,{limitInputPixels:24_000_000}).resize(1920,1920,{fit:'inside',withoutEnlargement:true})
+  .flatten({background:'#edf0e5'}).jpeg({quality:78}).toBuffer().then(bytes=>{
+   if(jpegCache.size>=48)jpegCache.delete(jpegCache.keys().next().value);
+   jpegCache.set(key,bytes);
+   return bytes;
+  }).finally(()=>jpegPending.delete(key));
+ jpegPending.set(key,job);
+ return job;
+}
 function createServer({ideaLibrary,publicOrigin=process.env.EP_PUBLIC_URL}={}){
  const index=fs.readFileSync(path.join(ROOT,'index.html'),'utf8');
  const endpoints=new Map([['/api/health',JSON.stringify({
@@ -27,7 +44,34 @@ function createServer({ideaLibrary,publicOrigin=process.env.EP_PUBLIC_URL}={}){
  if(file!==ROOT&&!file.startsWith(ROOT+path.sep)){res.writeHead(403).end();return}
  fs.stat(file,(error,stat)=>{
   if(error||!stat.isFile()){res.writeHead(404).end();return}
-  const size=stat.size,headers={'Content-Type':TYPES[path.extname(file)]||'application/octet-stream','Accept-Ranges':'bytes','Cache-Control':/\.(html|js|css|json)$/.test(file)?'no-cache':'public, max-age=86400','X-Content-Type-Options':'nosniff'};
+  const size=stat.size,compressible=/\.(html|js|css|json|svg)$/.test(file);
+  const headers={'Content-Type':TYPES[path.extname(file)]||'application/octet-stream','Accept-Ranges':'bytes','Cache-Control':compressible?'no-cache':'public, max-age=86400','X-Content-Type-Options':'nosniff'};
+  if(pathname.startsWith('/assets/')&&pathname.endsWith('.webp')){
+   const accept=req.headers.accept||'';
+   headers.Vary='Accept';
+   const jpeg=input.searchParams.get('format')==='jpeg'||(!req.headers.range&&accept.includes('image/')&&!accept.includes('image/webp'));
+   if(jpeg){
+    jpegVersion(file,stat).then(body=>{
+     if(res.destroyed)return;
+     delete headers['Accept-Ranges'];
+     res.writeHead(200,{...headers,'Content-Type':'image/jpeg','Content-Length':body.length});
+     res.end(req.method==='HEAD'?undefined:body);
+    }).catch(()=>{if(!res.destroyed)res.writeHead(500).end()});
+    return;
+   }
+  }
+  if(compressible&&size>1024){
+   headers.Vary='Accept-Encoding';
+   const gzip=(req.headers['accept-encoding']||'').split(',').some(value=>/^\s*gzip(?:\s*;\s*q=(?!0(?:\.0*)?\s*$)[\d.]+)?\s*$/i.test(value));
+   if(gzip&&!req.headers.range){
+    delete headers['Accept-Ranges'];
+    headers['Content-Encoding']='gzip';
+    res.writeHead(200,headers);
+    if(req.method==='HEAD'){res.end();return}
+    pipeline(fs.createReadStream(file),createGzip({level:4}),res,()=>{});
+    return;
+   }
+  }
   let start=0,end=size-1,status=200;
   if(req.headers.range){const match=/^bytes=(\d*)-(\d*)$/.exec(req.headers.range);let valid=!!match&&(match[1]||match[2]);
    if(valid){if(!match[1]){const suffix=Number(match[2]);valid=Number.isSafeInteger(suffix)&&suffix>0;start=Math.max(0,size-suffix)}else{start=Number(match[1]);end=match[2]?Math.min(Number(match[2]),size-1):size-1;valid=Number.isSafeInteger(start)&&Number.isSafeInteger(end)&&start>=0&&start<=end&&start<size}}

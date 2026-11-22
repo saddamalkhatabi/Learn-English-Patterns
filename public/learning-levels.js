@@ -5,10 +5,7 @@ const learningLevelNames={
  B2:['النقاش والمواقف المركّبة','Discussion and complex situations','ناقش الشروط والبدائل وادعم رأيك بتفاصيل واضحة.','Discuss conditions and alternatives and support an opinion.']
 };
 let learningLevels={patterns:{},patternOrder:[],dialogues:{},dialogueOrder:[],starter:{},sentences:{},scenes:{},starterScenes:[]};
-const learningLevelsReady=fetch('learning-levels.json').then(response=>{
- if(!response.ok)throw Error('Learning sequence unavailable');
- return response.json();
-}).then(data=>{learningLevels=data;return data}).catch(()=>null);
+const learningLevelsReady=epFetchJSON('learning-levels.json').then(data=>{learningLevels=data;return data}).catch(()=>null);
 function learningLevelLabel(level){
  const name=learningLevelNames[level];
  return name?`${level} · ${T(name[0],name[1])}`:level;

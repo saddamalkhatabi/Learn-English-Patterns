@@ -80,9 +80,16 @@
  }
  function cueId(kind,text,voice){
   // Content-addressed names let the same rule or word reuse one recording across lessons.
-  let key=0xcbf29ce484222325n;
-  for(const unit of text.normalize('NFC'))key=BigInt.asUintN(64,(key^BigInt(unit.codePointAt(0)))*0x100000001b3n);
-  return `reference-study-${kind}-${key.toString(16)}-${voice}`;
+  // FNV-1a 64-bit as two unsigned words, so existing recording IDs work without BigInt.
+  let high=0xcbf29ce4,low=0x84222325;
+  for(const unit of text.normalize('NFC')){
+   const word=(low^unit.codePointAt(0))>>>0;
+   const product=word*435;
+   high=(Math.imul(high,435)+Math.floor(product/0x100000000)+(word<<8))>>>0;
+   low=product>>>0;
+  }
+  const key=high?high.toString(16)+low.toString(16).padStart(8,'0'):low.toString(16);
+  return `reference-study-${kind}-${key}-${voice}`;
  }
  const formParts={
   "فعل مثبت (بدون don't)":'affirmative verb',

@@ -7,11 +7,15 @@ const audio={...require('../public/dialogue-audio.json'),...require('../public/e
 const trainingAudio=require('../public/training-audio.json');
 const {ideaWordCueId}=require('../public/training-narration.js');
 const offline=new Set(require('../public/offline-manifest.json').media.map(entry=>entry.path));
-test('the shipped browser scripts parse together as classic scripts',()=>{
- const vm=require('node:vm'),html=fs.readFileSync('public/index.html','utf8');
- const files=[...html.matchAll(/<script src="([^"]+)"/g)].map(match=>match[1]);
- assert(files.length>20);
- assert.doesNotThrow(()=>new vm.Script(files.map(file=>fs.readFileSync('public/'+file,'utf8')).join('\n;\n')));
+test('the shipped app and offline worker parse as classic ES2018 scripts',()=>{
+ const {parse}=require('acorn'),{build}=require('../scripts/build-browser-app.cjs');
+ const html=fs.readFileSync('public/index.html','utf8');
+ assert.match(html,/<script defer src="app-client\.js"><\/script>/);
+ const bundle=fs.readFileSync('public/app-client.js','utf8');
+ assert.equal(bundle,build(),'Run the browser build after changing a source script');
+ for(const code of [bundle,...['sw.js','offline-core.js'].map(file=>fs.readFileSync('public/'+file,'utf8'))]){
+  assert.doesNotThrow(()=>parse(code,{ecmaVersion:2018}));
+ }
 });
 test('reviewed conversation stages cover every turn and use their measured audio offsets',()=>{
  const {lifecycles:authored,words:reviewedAtlasWords}=require('../scripts/conversation-scene-sources.cjs');
