@@ -158,7 +158,8 @@ function changeReferencePurposeStep(session,key,enabled){
  const playing=session.playing;
  pauseReferenceGuided(session);
  referencePurposePrefs[key]=enabled;
- try{localStorage.setItem('patterns-reference-purpose-steps',JSON.stringify(referencePurposePrefs))}catch{}
+ if(document.body.dataset.sharedPlan!=='reference-plan')
+  try{localStorage.setItem('patterns-reference-purpose-steps',JSON.stringify(referencePurposePrefs))}catch{}
  const order=Object.keys(referencePurposeSteps);
  const tracks=referencePurposeTracks(session.lesson);
  const next=tracks.findIndex(track=>order.indexOf(track.kind)>=order.indexOf(previous));
@@ -240,7 +241,8 @@ function openReferenceGuided(ids,{voice,full=true,strategy='study'}={}){
   const wasPlaying=session.playing;
   pauseReferenceGuided(session);
   session.voiceMode=referenceGuidedVoiceMode=voicePicker.value;
-  try{localStorage.setItem('patterns-reference-guide-voice',referenceGuidedVoiceMode)}catch{}
+  if(document.body.dataset.sharedPlan!=='reference-plan')
+   try{localStorage.setItem('patterns-reference-guide-voice',referenceGuidedVoiceMode)}catch{}
   updateReferenceGuidedControls(session);
   if(wasPlaying)runReferenceGuided(session);
  });

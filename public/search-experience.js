@@ -37,6 +37,8 @@ const EPSearch=(()=>{
   open:()=>openFilteredPage('comparisons','comparisons',item.en,{level:'',type:'',size:'',purpose:''})}));
  const songsForSearch=()=>entries(songSearchRows,song=>({value:song.title,ar:song.topicAr,extra:song.topicEn,
   open:()=>{navigate('songs');filterSongsByTitle(song.title)}}));
+ const advancedForSearch=(section,rows)=>entries(rows,row=>({value:row.en,ar:row.ar,extra:[row.uk,row.ruleAr,row.ruleEn,row.example].join(' '),
+  open:()=>{navigate('advanced');openAdvancedItem(section,row.id)}}));
  const libraries={
   'pattern-search':()=>patternsForSearch(patterns.filter(pattern=>{
    const level=$('#level-filter')?.value;
@@ -48,8 +50,10 @@ const EPSearch=(()=>{
   'studio-journey-query':journeysForSearch,'dialogue-query':()=>dialoguesForSearch(filteredDialogueEntries('')),'purpose-search':routesForSearch,
   'ep-pattern-query':curriculumForSearch,'curriculum-search':curriculumForSearch,'source-search':originalsForSearch,
   'purpose-tree-query':purposesForSearch,'song-search':songsForSearch,'comparison-search':comparisonsForSearch,
+  'advanced-query':()=>advancedForSearch(advancedSection(),advancedRows('')),
   'site-search-input':()=>[...patternsForSearch(),...corpusForSearch(),...vocabularyForSearch(),...scenesForSearch(),
-   ...dialoguesForSearch().filter(item=>item.open),...purposesForSearch(),...songsForSearch(),...routesForSearch(),...comparisonsForSearch()]
+   ...dialoguesForSearch().filter(item=>item.open),...purposesForSearch(),...songsForSearch(),...routesForSearch(),...comparisonsForSearch(),
+   ...['phrases','grammar','idioms','comparisons'].flatMap(section=>advancedForSearch(section,EPAdvanced[section]))]
  };
  let field,menu,options=[],active=-1;
  function closeSuggestions(){

@@ -85,7 +85,8 @@ home=function(){
     <h2>${T('افهم النمط.<br><em>واصنع عبارتك.</em>','Notice the pattern.<br><em>Make it yours.</em>')}</h2>
     <p>${T('لاحظ الجزء الأحمر. غيّر ما حوله لتقول شيئًا جديدًا.','Notice the words in red. Change what comes around them to say something new.')}</p>
     <div class="buttonrow">${lesson?`<button class="primary" onclick="openLesson(${lesson.id},${lesson.stage||0})">${lesson.resume?T('أكمل درسك','Continue your lesson'):T('ابدأ بنمط واحد','Start with one pattern')} ←</button>`:''}
-    <button class="secondary" onclick="$('#home-services').scrollIntoView({block:'start'})">${T('استكشف الخدمات','Explore learning tools')} ↓</button></div>
+    <button class="secondary" onclick="$('#home-services').scrollIntoView({block:'start'})">${T('استكشف الخدمات','Explore learning tools')} ↓</button>
+    <a class="secondary" href="#advanced">${T('خدمات متقدمة','Advanced learning')} ↗</a></div>
    </div><div class="ep-home-image home-hero-photo"><img src="assets/scenes/idea-lab/study-01.webp" width="500" height="300" alt="">
     <div class="ep-image-caption" lang="en" dir="ltr"><b class="pattern-form">I want to</b> learn something new.</div></div>
   </section>

@@ -1,18 +1,26 @@
 const http=require('node:http'),fs=require('node:fs'),path=require('node:path');
+const {previewHTML}=require('./share-preview.cjs');
 const ROOT=path.resolve(__dirname,'public');
 const TYPES={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.svg':'image/svg+xml','.png':'image/png','.webp':'image/webp','.mp3':'audio/mpeg','.zip':'application/zip'};
-function createServer({ideaLibrary}={}){
+function createServer({ideaLibrary,publicOrigin=process.env.EP_PUBLIC_URL}={}){
+ const index=fs.readFileSync(path.join(ROOT,'index.html'),'utf8');
  const endpoints=new Map([['/api/health',JSON.stringify({
   status:'ok',ideaBackend:ideaLibrary?'sqlite':'static',ideaScenes:ideaLibrary?.scenes.length??null
  })]]);
  if(ideaLibrary)endpoints.set('/api/idea-scenes',JSON.stringify(ideaLibrary));
  return http.createServer((req,res)=>{
  if(!['GET','HEAD'].includes(req.method)){res.writeHead(405,{Allow:'GET, HEAD'}).end();return}
- let pathname;try{pathname=decodeURIComponent(new URL(req.url,'http://localhost').pathname)}catch{res.writeHead(400).end();return}
+ let input,pathname;try{input=new URL(req.url,'http://localhost');pathname=decodeURIComponent(input.pathname)}catch{res.writeHead(400).end();return}
  if(pathname.includes('\\')||pathname.includes('\0')){res.writeHead(400).end();return}
  if(endpoints.has(pathname)){
   const body=endpoints.get(pathname);
   res.writeHead(200,{'Content-Type':TYPES['.json'],'Content-Length':Buffer.byteLength(body),'Cache-Control':'no-store','X-Content-Type-Options':'nosniff'});
+  res.end(req.method==='HEAD'?undefined:body);return;
+ }
+ if((pathname==='/'||pathname==='/index.html')&&!req.headers.range){
+  const body=previewHTML(index,input,req,publicOrigin);
+  res.writeHead(200,{'Content-Type':TYPES['.html'],'Content-Length':Buffer.byteLength(body),
+   'Cache-Control':'no-cache','X-Content-Type-Options':'nosniff'});
   res.end(req.method==='HEAD'?undefined:body);return;
  }
  const file=path.resolve(ROOT,'.'+pathname+(pathname.endsWith('/')?'index.html':''));

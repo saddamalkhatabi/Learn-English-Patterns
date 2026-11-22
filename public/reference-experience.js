@@ -41,7 +41,7 @@ try{
  const saved=JSON.parse(localStorage.getItem('patterns-reference-view')||'{}');
  for(const key of Object.keys(referenceDefaults))if(Object.hasOwn(saved,key))epReference[key]=saved[key];
 }catch{}
-function saveReferenceView(){try{localStorage.setItem('patterns-reference-view',JSON.stringify(epReference))}catch{}}
+function saveReferenceView(){if(document.body.dataset.sharedPlan==='reference-plan')return;try{localStorage.setItem('patterns-reference-view',JSON.stringify(epReference))}catch{}}
 function epReferenceSet(key,value,paint=true){epReference[key]=key==='size'?Number(value):value;referencePage=0;saveReferenceView();if(paint)renderReferenceRows()}
 function epReferenceReset(){
  for(const key of ['query','grammar','domain','purpose','level','patternScope','patternLevel'])epReference[key]='';
@@ -83,6 +83,7 @@ function referenceStrategyControls(patternMode){
   <p id="reference-strategy-help" role="status"></p>
   <div class="buttonrow">
    <button id="reference-play-results" type="button" class="primary" onclick="startReferenceStrategy()">▷ ${T('شغّل النتائج بهذه الطريقة','Play results with this strategy')}</button>
+   <button class="secondary" type="button" data-share="reference-plan">${T('شارك خطة التدريب','Share study plan')}</button>
    ${patternMode?'':`<button id="reference-resume-results" type="button" class="secondary" onclick="resumeReference()">${T('استكمل الاستماع','Resume listening')}</button>`}
   </div>
  </section>`;

@@ -1,0 +1,106 @@
+.advanced-tabs {
+ display: flex;
+ flex-wrap: wrap;
+ gap: .45rem;
+ padding: .45rem;
+ margin-block-end: 1.35rem;
+ border: 1px solid #d5e0d6;
+ border-radius: .85rem;
+ background: #eaf0e7;
+}
+.advanced-tabs button {
+ flex: 1 1 10rem;
+ color: #20473c;
+ background: transparent;
+ border: 1px solid transparent;
+ border-radius: .55rem;
+ padding: .7rem .8rem;
+ font-weight: 650;
+}
+.advanced-tabs [aria-selected="true"] { background: #204f41; color: white; }
+.advanced-subtabs { margin-block: .75rem .9rem; }
+.advanced-subtabs [aria-pressed="true"] { background: #e4efe4; border-color: #43826c; font-weight: 700; }
+.advanced-filters { align-items: end; }
+.advanced-filters label { flex: 1 1 11rem; min-width: 0; }
+.advanced-filters input, .advanced-filters select { display: block; width: 100%; margin-block-start: .22rem; }
+.advanced-grid { display: grid; gap: .9rem; grid-template-columns: repeat(auto-fit,minmax(min(100%,19rem),1fr)); align-items: start; }
+.advanced-grid .empty { grid-column: 1 / -1; }
+.advanced-card { padding: 0; }
+.advanced-card summary {
+ display: flex;
+ justify-content: space-between;
+ align-items: start;
+ gap: .65rem;
+ min-height: 4.4rem;
+ padding: .95rem;
+ cursor: pointer;
+}
+.advanced-card summary::after { content: '＋'; color: #376250; }
+.advanced-card[open] summary::after { content: '−'; }
+.advanced-card-title { display: grid; gap: .25rem; flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.advanced-card-title b[lang="en"] { color: #a22237; font: 700 1rem/1.5 "Segoe UI",sans-serif; text-align: left; }
+.advanced-card-title small { color: #4e6659; font-size: .9rem; }
+.advanced-card summary .chip { white-space: normal; }
+.advanced-card-body { padding: 0 .95rem .95rem; overflow-wrap: anywhere; }
+.advanced-card-body .buttonrow, .advanced-dialog .buttonrow { margin-block-start: .8rem; }
+.advanced-model {
+ margin-block: .65rem;
+ padding: .65rem .8rem;
+ border-inline-start: 3px solid #97ae99;
+ border-radius: .35rem;
+ background: #f0f5ec;
+}
+.advanced-model p { margin-block: .1rem .35rem; }
+.advanced-model p[lang="en"] { font-size: 1rem; line-height: 1.6; text-align: left; }
+.advanced-comparison-examples { display: grid; gap: .55rem; }
+.advanced-comparison-examples h3 { margin-block: .35rem; font-size: 1rem; text-align: left; color: #a22237; }
+.advanced-regional { margin-block: .6rem; }
+.advanced-regional summary { font-weight: 650; cursor: pointer; }
+.advanced-usage { display: flex; gap: .45rem; flex-wrap: wrap; }
+.advanced-assessment { margin-block: 1rem; }
+.advanced-assessment h2, .advanced-dialog h2, .share-dialog h2 { margin: 0; }
+.advanced-exam-levels { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,7.2rem),1fr)); gap: .55rem; margin-block: 1rem; }
+.advanced-exam-levels button { display: flex; width: 100%; gap: .45rem; align-items: center; justify-content: space-between; }
+.advanced-review-list, .advanced-score-levels { list-style: none; padding: 0; display: grid; gap: .45rem; }
+.advanced-score-levels li { display: flex; justify-content: space-between; background: #eaf3e8; border-radius: .6rem; padding: .55rem .75rem; }
+.advanced-score { font-weight: 700; color: #174a3c; }
+.advanced-dialog, .share-dialog {
+ position: fixed;
+ inset: 0;
+ margin: auto;
+ width: min(44rem,calc(100vw - 1.6rem));
+ max-height: calc(100dvh - 1.6rem);
+ overflow-y: auto;
+ overscroll-behavior: contain;
+ border-radius: 1rem;
+ border: 1px solid #ccdacd;
+ background: #fbfcf8;
+ color: #173c36;
+ padding: clamp(.9rem,3vw,1.35rem);
+}
+.advanced-dialog::backdrop, .share-dialog::backdrop { background: #13302584; }
+.advanced-dialog-head { display: flex; justify-content: space-between; align-items: center; gap: .7rem; margin-block-end: .8rem; }
+.advanced-exam-progress { display: flex; align-items: center; gap: .9rem; }
+.advanced-exam-progress progress { flex: 1 1 auto; accent-color: #205747; }
+.advanced-options { display: grid; gap: .5rem; }
+.advanced-options button { text-align: left; padding: .66rem .85rem; }
+.advanced-options button:disabled { opacity: 1; }
+.advanced-options [data-result="correct"] { border-color: #367958; background: #e3f1e4; font-weight: 700; }
+.advanced-options [data-result="wrong"] { border-color: #a22237; background: #fdeef0; }
+.advanced-feedback { margin: .8rem 0; padding: .7rem; border-radius: .55rem; background: #eef4ec; }
+.share-dialog { width: min(32rem,calc(100vw - 1.6rem)); }
+.share-dialog input { width: 100%; display: block; margin: .35rem 0 .85rem; }
+.share-title { font-size: 1.12rem; font-weight: 700; }
+.ep-share-service { white-space: nowrap; }
+.ep-share-service .share-icon { margin-inline-end: .32em; }
+.shared-plan-banner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .7rem; margin-block-start: .8rem; border-inline-start: 4px solid #3b7b64; }
+.shared-plan-banner p { margin: .25rem 0 0; }
+.lesson-top .lesson-share { margin-inline-start: auto; font-size: .8rem; }
+@media (max-width:530px) {
+ .advanced-tabs button { flex-basis: 42%; }
+ .ep-share-service .share-label { display: none; }
+ .ep-share-service .share-icon { margin: 0; }
+ .ep-share-service { min-width: 2.35rem; }
+ .lesson-top { gap: .32rem; }
+ .lesson-top .lesson-share { font-size: .73rem; }
+}

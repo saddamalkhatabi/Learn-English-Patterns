@@ -83,7 +83,7 @@ class NasaqRoutePlayer{
    if(this.requireConversation&&this.session.phase==='dialogue'){this.session.phase='conversation-pending';this.session.offset=0}
    else this.moveCursor();
   }
-  audio.addEventListener('timeupdate',()=>{if(!this.hasAudio)return;this.session.offset=Number.isFinite(audio.currentTime)?audio.currentTime:0;if(this.now()-this.lastSave>250){this.rememberDialogueCoverage();this.save();this.lastSave=this.now()}this.emit()});
+  audio.addEventListener('timeupdate',()=>{if(!this.hasAudio||audio.getAttribute('src')!==this.recording?.path)return;this.session.offset=Number.isFinite(audio.currentTime)?audio.currentTime:0;if(this.now()-this.lastSave>250){this.rememberDialogueCoverage();this.save();this.lastSave=this.now()}this.emit()});
   audio.addEventListener('ended',()=>{
    if(!this.running)return;
    if(this.session.phase==='sentence')this.finishSentence();
