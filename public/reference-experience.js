@@ -57,8 +57,8 @@ const referenceStrategyOptions={
   patternHelp:['استمع إلى الجملة الأساسية ثم أمثلة النمط لتلاحظ كيف يتكرر البناء في سياقات مختلفة.',
    'Hear the main sentence and its examples to notice how the same pattern works in different contexts.']},
  purpose:{icon:'↳',title:['الغرض ثم الجملة','Purpose then sentence'],
-  help:['اسمع الغرض العام وصيغة النمط، ثم اسمع غرض المثال في سياقه والجملة. يمكنك تخطي أي تمهيد من داخل المشغّل.',
-   'Hear the general purpose and structure, followed by the example’s contextual purpose and sentence. You can skip any introduction in the player.']},
+  help:['ابدأ بغرض الجملة ومحفّز قصير لتجرب قولها، ثم اسمع الجملة الأساسية. يمكنك اختيار غرض الموقف وحده أو إضافة الغرض العام وصيغة النمط من المشغّل.',
+   'Start with the purpose and a short speaking prompt, then hear the main sentence. Use the player to choose context alone or add the general purpose and pattern structure.']},
  study:{icon:'≡',title:['شرح مع أمثلة إضافية','Explanation with additional examples'],
   help:['ابدأ بالجملة، ثم استمع إلى شرح البناء وأمثلة متنوعة ومفردات في سياقها. اختر هذه الطريقة لتفهم النمط وتستخدمه في جمل جديدة.',
    'Hear the sentence, its structure explained, varied examples and vocabulary in context. Choose this to understand the pattern and use it in new sentences.']}
@@ -81,6 +81,13 @@ function referenceStrategyControls(patternMode){
    }).join('')}
   </div>
   <p id="reference-strategy-help" role="status"></p>
+  <details class="reference-purpose-help"><summary>${T('شرح طرق الاستماع بأمثلة','Explain the listening strategies with examples')}</summary>
+   <ul>
+    <li>${T('الاستماع المتتابع يقرأ الجمل وراء بعضها للمراجعة.','Continuous listening plays sentences in sequence for review.')} <bdi lang="en">This is my house. That is my school.</bdi></li>
+    <li>${T('الغرض ثم الجملة يقدّم الموقف ومحفّز النطق، ثم تسمع المثال.','Purpose then sentence presents the situation and a speaking prompt before the example.')} <bdi lang="en">Whose house is this? This is my house.</bdi></li>
+    <li>${T('الشرح مع الأمثلة يوضّح القاعدة ويعرض استخدامات إضافية ومفردات.','Explanation with examples teaches the rule, additional uses and vocabulary.')} <bdi lang="en">Use this for something nearby. This is my house. This is my book.</bdi></li>
+   </ul>
+  </details>
   <div class="buttonrow">
    <button id="reference-play-results" type="button" class="primary" onclick="startReferenceStrategy()">▷ ${T('شغّل النتائج بهذه الطريقة','Play results with this strategy')}</button>
    <button class="secondary" type="button" data-share="reference-plan">${T('شارك خطة التدريب','Share study plan')}</button>
@@ -93,7 +100,10 @@ function paintReferenceStrategy(all,patternMode){
  document.querySelectorAll('[data-reference-strategy]').forEach(button=>
   button.setAttribute('aria-pressed',String(button.dataset.referenceStrategy===key)));
  $('#reference-strategy-help').textContent=T(...(patternMode&&option.patternHelp||option.help));
- $('#reference-play-results').disabled=!all.length||(key==='basic'&&!patternMode&&!all.some(row=>row.lifecycle.available));
+ const play=$('#reference-play-results');
+ play.textContent=key==='purpose'?T('▷ ابدأ بالغرض ثم الجملة','▷ Start with purpose then sentence'):
+  T('▷ شغّل النتائج بهذه الطريقة','▷ Play results with this strategy');
+ play.disabled=!all.length||(key==='basic'&&!patternMode&&!all.some(row=>row.lifecycle.available));
  const resume=$('#reference-resume-results');
  if(resume)resume.hidden=key!=='basic';
  referenceResultSummary(all,patternMode);

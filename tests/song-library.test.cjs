@@ -7,6 +7,7 @@ const songs = require('../public/song-library.json');
 const lyrics = require('../public/song-lyrics.json');
 const curriculum = require('../public/learning-levels.json');
 const offline = require('../public/offline-manifest.json');
+const {followLyrics}=require('../public/song-follow.js');
 
 test('the songs preserve their full source lyrics, pattern order and offline media', () => {
  const source = path.join(__dirname, '../handoff/music-pilot-20261120');
@@ -106,6 +107,24 @@ test('song timings match the shipped recordings and valid ranges in their lyrics
     wordEnd = end;
     offset = to;
    }
+  }
+ }
+});
+
+test('every sung line has Arabic text and an exact cue, estimated cue or nearby placement',()=>{
+ const timings=require('../public/song-timing.json');
+ for(const song of songs){
+  const {text,translations}=lyrics[song.id],lines=text.split('\n');
+  const measured=timings[song.id].lines;
+  const timeline=followLyrics(lines,measured,song.duration*1000);
+  const all=timeline.flatMap(cue=>[cue.line,...cue.nearby]).sort((a,b)=>a-b);
+  const sung=lines.flatMap((line,index)=>line.trim()&&!line.startsWith('[')?[index]:[]);
+  assert.deepEqual(all,sung,song.title);
+  for(const index of sung)assert.match(translations[index],/\p{Script=Arabic}/u);
+  for(const [i,cue] of timeline.entries()){
+   assert(cue.start_ms>=(timeline[i-1]?.end_ms||0)&&cue.end_ms>cue.start_ms);
+   if(cue.approximate)assert.deepEqual(cue.words,[]);
+   else assert.deepEqual(cue.words,measured.find(line=>line.line===cue.line).words);
   }
  }
 });

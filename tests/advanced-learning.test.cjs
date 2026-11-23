@@ -51,9 +51,11 @@ test('shared plans round-trip typed settings without copying learner progress',(
  assert.equal(url.hash,'#coach');assert(!url.searchParams.has('other'));
  assert.deepEqual(share.read(url.searchParams),coach);
  const library=share.normalize('reference-plan',{plan:{version:1,section:'patterns',patternStrategy:'purpose',
-  query:'  موعد الحصة  ',patternLevel:'A2',purposeSteps:{'pattern-form':false},size:48,voice:'female',rate:1.15}});
+  query:'  موعد الحصة  ',patternLevel:'A2',purposeSteps:{'pattern-form':false},purposeMode:'context',size:48,voice:'female',rate:1.15}});
  assert.equal(library.plan.query,'موعد الحصة');
- assert.deepEqual(library.plan.purposeSteps,{'pattern-purpose':true,'pattern-form':false,'example-purpose':true});
+ assert.deepEqual(library.plan.purposeSteps,{'pattern-purpose':false,'pattern-form':false,'example-purpose':true});
+ assert.equal(library.plan.purposeMode,'context');
+ assert.equal(share.normalize('reference-plan',{plan:{version:1}}).plan.purposeMode,'prompt');
  assert.deepEqual(share.read(share.link('https://english.example/',library).searchParams),library);
  assert.equal(share.read(new URLSearchParams('share=page&target=__proto__')),null);
  assert.equal(share.normalize('coach-plan',{plan:{version:1,patternIds:['no']}}),null);

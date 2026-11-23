@@ -48,6 +48,7 @@ module.exports=[
  "instant-vocabulary-core.js",
  "instant-vocabulary.js",
  "learning-links.js",
+ "song-follow.js",
  "song-library.js",
  "teacher-simulation.js",
  "vendor/jquery.slim.min.js",

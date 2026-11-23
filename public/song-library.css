@@ -298,25 +298,42 @@ html body .song-artwork .song-scene-frame > .scene-photo {
   text-underline-offset: .17em;
 }
 .song-stage[data-phase="example"] .song-phase { color: #9d2338; }
-.song-example-translation { font-size: 1rem; }
+.song-example-translation { font-size: .94rem !important; }
+.song-estimate:empty { display: none; }
+.song-estimate:not(:empty), .song-nearby b {
+  color: #785317 !important;
+  font-size: .85rem;
+}
+.song-stage[data-approximate="true"] .song-focus-line { color: #6d4c21; }
+.song-stage[data-approximate="true"] .song-focus-line > .pattern-token { color: #9d2338; }
+.song-nearby {
+  max-height: 9rem;
+  overflow-y: auto;
+  margin-top: .7rem;
+  border-top: 1px dashed #bf9c60;
+  padding-top: .55rem;
+}
+.song-nearby > div { margin-top: .3rem; }
 
 .song-transcript { margin-top: .85rem; }
-.song-transcript summary {
-  width: fit-content;
-  padding: .4rem 0;
-  color: var(--green);
-  font-weight: 650;
-  cursor: pointer;
-}
 .song-lyrics-text {
+  position: relative;
+  margin-top: .65rem;
   max-height: 28rem;
   overflow-y: auto;
   padding: .8rem 1rem;
   border: 1px solid var(--line);
   border-radius: .65rem;
   text-align: left;
-  white-space: pre-wrap;
   overflow-wrap: anywhere;
+}
+.song-transcript-row { margin-bottom: .4rem; }
+.song-lyric-line { display: block; }
+.song-translation {
+  display: block;
+  text-align: right;
+  color: #556153;
+  font-size: .85rem;
 }
 
 .song-verse {

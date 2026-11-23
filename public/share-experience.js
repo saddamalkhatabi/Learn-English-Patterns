@@ -12,7 +12,7 @@ function currentShareDescriptor(control){
  if(kind==='reference-plan'&&referencePlayer){
   const {voice,rate,auto}=referencePlayer.state;
   return EPShare.normalize(kind,{plan:{...epReference,version:1,voice,rate,auto,guideVoice:referenceGuidedVoiceMode,
-   purposeSteps:referencePurposePrefs,imageMode:patternsImageMode}});
+   purposeSteps:referencePurposePrefs,purposeMode:referencePurposeMode,imageMode:patternsImageMode}});
  }
  if(kind==='pattern'&&!PILOT?.patterns.some(row=>row.id===Number(target))&&!patterns.some(row=>row.id===Number(target)))return null;
  return EPShare.normalize(kind,{target,section});
@@ -108,7 +108,7 @@ function useSharedReferencePlan(plan){
  if(!referencePlayer)return null;
  stopSpeech();
  const previous={view:epReference,storage:referencePlayer.storage,player:referencePlayer.state,
-  guideVoice:referenceGuidedVoiceMode,purposeSteps:{...referencePurposePrefs},patternsImageMode};
+  guideVoice:referenceGuidedVoiceMode,purposeSteps:{...referencePurposePrefs},purposeMode:referencePurposeMode,patternsImageMode};
  epReference=Object.fromEntries(Object.keys(referenceDefaults).map(key=>[key,plan[key]]));
  epReference.purpose=EPPurposes.get(epReference.purpose)?epReference.purpose:'';
  referencePage=0;
@@ -116,6 +116,7 @@ function useSharedReferencePlan(plan){
  referencePlayer.state={...referencePlayer.state,ids:[],cursor:0,complete:false,offset:0,voice:plan.voice,rate:plan.rate,auto:plan.auto};
  referenceGuidedVoiceMode=plan.guideVoice;
  Object.assign(referencePurposePrefs,plan.purposeSteps);
+ referencePurposeMode=plan.purposeMode;
  patternsImageMode=plan.imageMode;applyPatternsImageMode();
  return ()=>{
   stopSpeech();
@@ -124,6 +125,7 @@ function useSharedReferencePlan(plan){
   referencePlayer.audio.removeAttribute('src');referencePlayer.audio.load();
   referencePlayer.state=previous.player;referencePlayer.storage=previous.storage;
   referenceGuidedVoiceMode=previous.guideVoice;Object.assign(referencePurposePrefs,previous.purposeSteps);
+  referencePurposeMode=previous.purposeMode;
   patternsImageMode=previous.patternsImageMode;applyPatternsImageMode();
  };
 }

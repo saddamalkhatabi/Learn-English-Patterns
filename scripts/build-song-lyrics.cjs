@@ -8,6 +8,7 @@ const sentences = [
  ...require('../public/expansion-media.json').sentences
 ];
 const source = path.join(__dirname, '../handoff/music-pilot-20261120');
+const arabic = require('../handoff/music-pilot-20261120/translations-ar.json');
 const prompts = fs.readdirSync(source).filter(name => /^EP-SONG-\d{2}-.+\.txt$/.test(name));
 const sentenceRows = new Map(sentences.map(row => [`${row.pattern_id}|${row.en}`, row]));
 const songPhotos = new Map(require('../production/qa/song-scenes.json').scenes.map(scene => [scene.sentenceId, scene.path]));
@@ -100,14 +101,20 @@ for (const song of songs) {
   .replace(/\r\n/g, '\n').split(/^Lyrics:\n/m)[1]?.trim();
  assert(text, `Lyrics section is missing in ${prompt}`);
  const lines = text.split('\n');
- const highlights = {}, scenes = [];
+ const highlights = {}, scenes = [], translations = {};
  for (const pattern of song.patterns) {
   const line = lines.indexOf(pattern.en);
   assert(line >= 0, `Song ${song.id} is missing "${pattern.en}"`);
   highlights[line] = highlightRanges(pattern);
   scenes.push(sceneFor(pattern, line, lines));
+  translations[line] = pattern.ar;
  }
- lyrics[song.id] = {text, highlights, scenes};
+ for(const [index,line] of lines.entries()){
+  if(!line.trim()||line.startsWith('[')||translations[index])continue;
+  assert(arabic[line], `Missing Arabic lyrics for song ${song.id}: ${line}`);
+  translations[index]=arabic[line];
+ }
+ lyrics[song.id] = {text, highlights, scenes, translations};
 }
 fs.writeFileSync(path.join(__dirname, '../public/song-lyrics.json'), JSON.stringify(lyrics, null, 2) + '\n');
 console.log(`Built lyrics for ${songs.length} songs`);

@@ -44,6 +44,7 @@ module.exports=function referenceStudyCues(existing){
   }
  }
  for(const [,,,text] of audio.stages)for(const voice of voices)add('stage',text,voice);
+ add('purpose',audio.purposeNudge[1],'female');
  for(const row of catalog){
   const id=row.planned_pattern_id||row.id,pattern=patterns.get(id);
   if(!pattern)continue;

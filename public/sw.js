@@ -14,12 +14,17 @@ function manifest(){
  })().catch(error=>{manifestPromise=null;throw error});
  return manifestPromise;
 }
+async function listedMedia(url){
+ if(!mediaIndex){
+  const m=await manifest();
+  if(!mediaIndex)mediaIndex=new Map(m.media.map(x=>[absolute(x.path),x]));
+ }
+ return mediaIndex.get(url);
+}
 self.addEventListener('install',event=>event.waitUntil((async()=>{const r=await fetch(absolute('offline-manifest.json'),{cache:'no-store'});if(!r.ok)throw Error('offline manifest unavailable');const m=await r.clone().json(),cache=await caches.open(SHELL);await cache.addAll(m.shell.map(p=>new Request(absolute(p),{cache:'reload'})));await cache.put(absolute('offline-manifest.json'),r);await self.skipWaiting()})()));
 self.addEventListener('activate',event=>event.waitUntil((async()=>{for(const name of await caches.keys())if(name.startsWith('ep-shell-')&&name!==SHELL)await caches.delete(name);await self.clients.claim();for(const client of await self.clients.matchAll({type:'window'}))client.postMessage({type:'EP_VERSION',version:self.EP_BUILD.version})})()));
 async function verifiedMedia(url){
- const m=await manifest();
- if(!mediaIndex)mediaIndex=new Map(m.media.map(x=>[absolute(x.path),x]));
- const entry=mediaIndex.get(url);
+ const entry=await listedMedia(url);
  if(!entry)throw Error('Unlisted media');
  const cache=await caches.open(MEDIA).catch(()=>null);
  const previous=cache&&await cache.match(url).catch(()=>null);
@@ -42,8 +47,21 @@ async function fullMedia(url,requireSaved=false){
  if(requireSaved&&!saved)throw Error('Media could not be saved');
  return response.clone();
 }
+async function streamSong(request,url){
+ try{
+  const cache=await caches.open(MEDIA),cached=await cache.match(url);
+  if(cached){
+   const entry=await listedMedia(url);
+   if(entry&&cached.headers.get('X-EP-Hash')===entry.sha256)return EPOfflineCore.ranged(cached,request.headers.get('Range'));
+  }
+ }catch(error){}
+ return fetch(request);
+}
 self.addEventListener('fetch',event=>{const request=event.request,url=new URL(request.url);if(request.method!=='GET'||url.origin!==BASE.origin||!url.href.startsWith(BASE.href))return;
  if(url.pathname.endsWith('.webp')&&url.searchParams.get('format')==='jpeg')return;
+ if(url.href.startsWith(absolute('assets/audio/songs/'))&&url.pathname.endsWith('.mp3')){
+  event.respondWith(streamSong(request,url.href));return;
+ }
  if(/\.(mp3|webp)$/.test(url.pathname)){
   event.respondWith(fullMedia(url.href).then(r=>EPOfflineCore.ranged(r,request.headers.get('Range'))).catch(()=>{
    if(url.pathname.endsWith('.webp'))return fetch(request);

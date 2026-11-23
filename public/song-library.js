@@ -10,6 +10,9 @@ const renderSongLibrary=(()=>{
  let tracks, lyrics, timings={}, selected, level=EPFilters.read('songs',{level:''}).level, root, audio, language;
  let loading=false, loadFailed=false, playbackFailed=false;
  let sequence='off';
+ const playlistKey='patterns-song-playlist';
+ let checkpoint,attempt,bufferTimer;
+ try{checkpoint=JSON.parse(localStorage.getItem(playlistKey)||'null')}catch{}
  let timeline=[],sceneCues=[],focusLines=[],shownCue,activeCue,activeScene,activeLine,activeWord,focusedWord,lyricFrame;
  let preloadedScenes=new Set();
  const stopOtherAudio=stopSpeech;
@@ -24,10 +27,16 @@ const renderSongLibrary=(()=>{
 
  function paintPlaybackStatus(){
   const status=root.querySelector('.song-playback-status');
-  status.textContent=playbackFailed?T('تعذّر تشغيل الأغنية. اختر عنوانها للمحاولة من جديد.','Could not play the song. Choose its title to retry.'):'';
+  status.textContent=playbackFailed?(sequence==='paused'?
+   T('توقف تشغيل القائمة. يمكنك الاستكمال من موضع التوقف.','The playlist stopped. You can continue where it left off.'):
+   T('تعذّر تشغيل الأغنية. اختر عنوانها للمحاولة من جديد.','Could not play the song. Choose its title to retry.')):'';
   const playAll=root.querySelector('[data-songs-play-all]');
   playAll.textContent=sequence==='playing'?
    T('إيقاف تشغيل الكل','Stop playlist'):T('▶ تشغيل الأغاني كلها','▶ Play all songs');
+  const savedTrack=tracks.find(track=>track.id===checkpoint?.id);
+  const resume=root.querySelector('[data-songs-resume]');
+  resume.hidden=!savedTrack||sequence==='playing'&&!audio.paused;
+  if(savedTrack)resume.textContent=T(`استكمال القائمة · ${savedTrack.title}`,`Resume playlist · ${savedTrack.title}`);
   const position=tracks.indexOf(selected)+1, total=tracks.length;
   root.querySelector('.song-queue-status').textContent=sequence==='playing'?
    T(`الأغنية ${position} من ${total}`,`Song ${position} of ${total}`):
@@ -54,26 +63,32 @@ const renderSongLibrary=(()=>{
  }
 
  function prepareSongStage(){
-  timeline=timings[selected.id]?.lines||[];
+  const {text,highlights,scenes=[],translations={}}=lyrics[selected.id];
+  const lines=text.split('\n');
+  timeline=EPSongFollow.followLyrics(lines,timings[selected.id]?.lines||[],selected.duration*1000);
   const byLine=new Map(timeline.map(cue=>[cue.line,cue]));
-  const {text,highlights,scenes=[]}=lyrics[selected.id];
-  focusLines=text.split('\n').map((line,index)=>lyricLine(line,highlights[index],byLine.get(index)?.words));
+  focusLines=lines.map((line,index)=>lyricLine(line,highlights[index],byLine.get(index)?.words));
   sceneCues=scenes.flatMap((scene,index)=>{
    const purpose=byLine.get(scene.purposeLine),example=byLine.get(scene.line);
    if(!purpose&&!example)return [];
    return [{...scene,pattern:selected.patterns[index],start:(purpose||example).start_ms,end:(example||purpose).end_ms}];
   });
   const panel=root.querySelector('.song-lyrics-text');
-  panel.innerHTML=focusLines.map((line,index)=>byLine.has(index)?
-   `<span class="song-lyric-line" data-song-line="${index}">${line}</span>`:line).join('\n');
+  panel.innerHTML=focusLines.map((line,index)=>line?`<div class="song-transcript-row">
+   <span class="song-lyric-line" data-song-line="${index}" lang="en" dir="ltr">${line}</span>
+   ${EP.prefs.arabic&&translations[index]?`<small class="song-translation" lang="ar" dir="rtl">${H(translations[index])}</small>`:''}
+  </div>`:'').join('');
   panel.scrollTop=0;
-  root.querySelector('.song-sync-label').hidden=!timeline.length;
+  root.querySelector('.song-sync-label').hidden=!timings[selected.id]?.lines.length;
   const stage=root.querySelector('.song-stage');
   const focus=stage.querySelector('.song-focus-line');
   showSongLead(focus);
   focus.removeAttribute('aria-current');
   delete stage.dataset.phase;
+  delete stage.dataset.approximate;
+  stage.querySelector('.song-estimate').textContent='';
   stage.querySelector('.song-example-translation').textContent='';
+  stage.querySelector('.song-nearby').hidden=true;
   shownCue=activeCue=activeLine=activeWord=focusedWord=undefined;
   activeScene=null;
   preloadedScenes.clear();
@@ -128,11 +143,14 @@ const renderSongLibrary=(()=>{
    stage.dataset.phase=phase;
    stage.querySelector('.song-phase').textContent=phase==='example'?T('جملة النمط','Pattern example'):
     phase==='purpose'?T('غرض الجملة','Why we say it'):'';
-   stage.querySelector('.song-example-translation').textContent=phase==='example'&&EP.prefs.arabic?scene.pattern.ar:'';
   }
   const focus=stage.querySelector('.song-focus-line');
   if(previous!==shownCue){
    shownCue=previous;
+   const translations=lyrics[selected.id].translations||{};
+   stage.dataset.approximate=String(Boolean(previous?.approximate));
+   stage.querySelector('.song-estimate').textContent=previous?.approximate?T('توقيت تقريبي','Estimated timing'):'';
+   stage.querySelector('.song-example-translation').textContent=EP.prefs.arabic&&previous?translations[previous.line]||'':'';
    if(previous){
     focus.innerHTML=focusLines[previous.line];
     focus.lang='en';
@@ -143,6 +161,14 @@ const renderSongLibrary=(()=>{
    activeCue=cue;
    if(cue)focus.setAttribute('aria-current','true');
    else focus.removeAttribute('aria-current');
+   const nearby=stage.querySelector('.song-nearby');
+   nearby.hidden=!cue?.nearby.length;
+   if(!nearby.hidden){
+    const translations=lyrics[selected.id].translations||{};
+    nearby.innerHTML=`<b>${T('سطور محتملة في هذا المقطع','Possible lines in this section')}</b>`
+     +cue.nearby.map(line=>`<div lang="en" dir="ltr">${focusLines[line]}</div>
+      ${EP.prefs.arabic&&translations[line]?`<small class="song-translation" lang="ar" dir="rtl">${H(translations[line])}</small>`:''}`).join('');
+   }
    activeLine?.removeAttribute('aria-current');
    const panel=root.querySelector('.song-lyrics-text');
    activeLine=cue?panel.querySelector(`[data-song-line="${cue.line}"]`):null;
@@ -240,7 +266,7 @@ const renderSongLibrary=(()=>{
   root.querySelector('#song-list-title').textContent=T('قائمة الأغاني','Songs');
   root.querySelector('[data-song-list]').textContent=T('قائمة الأغاني ↓','Song list ↓');
   root.querySelector('#song-lyrics-title').textContent=T('كلمات الأغنية','Lyrics');
-  root.querySelector('.song-transcript summary').textContent=T('كلمات الأغنية كاملة','Full lyrics');
+  paintTranscriptButton();
   root.querySelector('.song-sync-label').textContent=T('متابعة مع الغناء','Synced to the vocals');
   const filters=root.querySelector('.song-filters');
   filters.setAttribute('aria-label',T('فلترة قائمة الأغاني حسب المستوى','Filter songs by level'));
@@ -290,14 +316,62 @@ const renderSongLibrary=(()=>{
   }
  }
 
- function failPlayback(){
+ function storeCheckpoint(value){
+  checkpoint=value;
+  try{
+   if(value)localStorage.setItem(playlistKey,JSON.stringify(value));
+   else localStorage.removeItem(playlistKey);
+  }catch{}
+ }
+
+ function rememberPlaylist(force=false){
+  if(sequence!=='playing'||!selected||!audio)return;
+  const seconds=attempt?.offset??audio.currentTime;
+  if(audio.error&&seconds===0&&checkpoint?.id===selected.id)return;
+  if(!Number.isFinite(seconds)||!force&&checkpoint?.id===selected.id&&Math.abs(checkpoint.seconds-seconds)<2)return;
+  storeCheckpoint({id:selected.id,seconds});
+ }
+
+ function failPlayback(current,reason){
+  if(current!==attempt)return;
+  clearTimeout(bufferTimer);
+  if(sequence==='playing'){
+   rememberPlaylist(true);
+   if(!current?.retried&&reason!=='NotAllowedError'){
+    playTrack(selected,{offset:checkpoint.seconds,retried:true,reload:true});
+    return;
+   }
+   sequence='paused';
+  }
+  attempt=null;
   playbackFailed=true;
-  sequence='off';
+  audio.pause();
   paintPlaybackStatus();
  }
 
- function playTrack(track,{restart=false}={}){
+ function watchBuffer(){
+  clearTimeout(bufferTimer);
+  const current=attempt;
+  if(sequence==='playing'&&current&&!audio.paused){
+   const time=audio.currentTime;
+   bufferTimer=setTimeout(()=>{
+    if(attempt===current&&!audio.paused&&!audio.ended&&audio.currentTime===time)failPlayback(current,'timeout');
+   },12000);
+  }
+ }
+
+ function paintTranscriptButton(){
+  const transcript=root.querySelector('#song-full-lyrics');
+  const button=root.querySelector('[data-song-transcript]');
+  button.setAttribute('aria-expanded',String(!transcript.hidden));
+  button.textContent=transcript.hidden?T('عرض كل كلمات الأغنية ↓','Show all lyrics ↓'):T('إخفاء كلمات الأغنية الكاملة ↑','Hide full lyrics ↑');
+ }
+
+ function playTrack(track,{offset=0,retried=false,reload=false}={}){
   const player=audio;
+  clearTimeout(bufferTimer);
+  const current={offset:offset>0?offset:null,retried};
+  attempt=current;
   playbackFailed=false;
   if(track!==selected){
    selected=track;
@@ -305,27 +379,33 @@ const renderSongLibrary=(()=>{
    paintSelection();
    revealPlayingTrack();
   }else{
-   if(player.error)player.load();
-   if(restart)player.currentTime=0;
+   if(reload||player.error)player.load();
+   if(player.readyState>=1){
+    player.currentTime=Math.min(offset,Math.max(0,(player.duration||offset)-.05));
+    current.offset=null;
+   }
    paintPlaybackStatus();
   }
-  player.play().catch(error=>{
-   if(error.name==='AbortError'||player!==audio||selected!==track)return;
-   failPlayback();
+  if(sequence==='playing')storeCheckpoint({id:track.id,seconds:offset});
+  Promise.resolve(player.play()).catch(error=>{
+   if(error.name!=='AbortError')failPlayback(current,error.name);
   });
+  watchBuffer();
  }
 
- function toggleSequence(){
-  if(sequence==='playing'){
-   sequence='off';
+ function toggleSequence(resume=false){
+  if(!resume&&sequence==='playing'){
+   rememberPlaylist(true);
+   sequence='paused';
+   clearTimeout(bufferTimer);
+   attempt=null;
    audio.pause();
    paintPlaybackStatus();
    return;
   }
+  const saved=resume&&tracks.find(track=>track.id===checkpoint?.id);
   sequence='playing';
-  level='';
-  paintFilter();
-  playTrack(tracks[0],{restart:true});
+  playTrack(saved||tracks[0],{offset:saved&&Number.isFinite(checkpoint.seconds)?Math.max(0,checkpoint.seconds):0});
  }
 
  function mount(){
@@ -345,6 +425,7 @@ const renderSongLibrary=(()=>{
         <audio controls preload="none" dir="ltr" aria-labelledby="song-title"></audio>
         <div class="song-transport-actions">
          <button type="button" class="primary song-play-all" data-songs-play-all></button>
+         <button type="button" class="secondary" data-songs-resume hidden></button>
          <button type="button" class="secondary" data-song-list></button>
         </div>
         <p class="song-queue-status" role="status"></p>
@@ -357,15 +438,17 @@ const renderSongLibrary=(()=>{
         <figure class="song-artwork"></figure>
         <div class="song-readalong">
          <p class="song-phase"></p>
+         <small class="song-estimate"></small>
          <div class="song-focus-line"></div>
          <p class="song-example-translation" lang="ar" dir="rtl"></p>
+         <div class="song-nearby" hidden></div>
         </div>
        </div>
       </section>
-      <details class="song-transcript">
-       <summary></summary>
-       <div class="song-lyrics-text" lang="en" dir="ltr" tabindex="0" role="region" aria-labelledby="song-lyrics-title"></div>
-      </details>
+      <div class="song-transcript">
+       <button class="secondary" type="button" data-song-transcript aria-controls="song-full-lyrics"></button>
+       <div id="song-full-lyrics" class="song-lyrics-text" tabindex="0" role="region" aria-labelledby="song-lyrics-title" hidden></div>
+      </div>
      </section>
      <section class="panel song-list" aria-labelledby="song-list-title">
       <h2 id="song-list-title"></h2>
@@ -392,24 +475,42 @@ const renderSongLibrary=(()=>{
   });
   player.addEventListener('playing',()=>{
    if(player!==audio)return;
+   clearTimeout(bufferTimer);
    cancelAnimationFrame(lyricFrame);
    tickSongLyrics();
   });
+  player.addEventListener('loadedmetadata',()=>{
+   if(player!==audio||attempt?.offset==null)return;
+   player.currentTime=Math.min(attempt.offset,Math.max(0,player.duration-.05));
+   attempt.offset=null;
+  });
+  for(const event of ['waiting','stalled'])player.addEventListener(event,()=>{if(player===audio)watchBuffer()});
   for(const event of ['timeupdate','seeked','pause']){
-   player.addEventListener(event,()=>{if(player===audio)paintSongTiming()});
+   player.addEventListener(event,()=>{
+    if(player!==audio)return;
+    if(event==='pause'&&!player.error&&!player.ended){
+     clearTimeout(bufferTimer);
+     paintPlaybackStatus();
+    }
+    rememberPlaylist(event!=='timeupdate');
+    paintSongTiming();
+   });
   }
   player.addEventListener('error',()=>{
    if(player!==audio||!player.error)return;
-   failPlayback();
+   failPlayback(attempt,'media');
   });
   player.addEventListener('ended',()=>{
    if(player!==audio||!player.ended||sequence!=='playing')return;
+   clearTimeout(bufferTimer);
    const next=tracks[tracks.indexOf(selected)+1];
    if(next){
     playTrack(next);
     return;
    }
    sequence='finished';
+   attempt=null;
+   storeCheckpoint(null);
    paintPlaybackStatus();
   });
   root.addEventListener('click',event=>{
@@ -420,11 +521,20 @@ const renderSongLibrary=(()=>{
     paintFilter();
    }else if(button.hasAttribute('data-songs-play-all')){
     toggleSequence();
+   }else if(button.hasAttribute('data-songs-resume')){
+    toggleSequence(true);
    }else if(button.hasAttribute('data-song-list')){
     root.querySelector('.song-list').scrollIntoView({block:'start'});
+   }else if(button.hasAttribute('data-song-transcript')){
+    const transcript=root.querySelector('#song-full-lyrics');
+    transcript.hidden=!transcript.hidden;
+    paintTranscriptButton();
+    if(!transcript.hidden&&activeLine)transcript.scrollTop=activeLine.parentElement.offsetTop;
    }else if(button.dataset.songTrack){
+    rememberPlaylist(true);
     sequence='off';
-    playTrack(tracks.find(song=>song.id===button.dataset.songTrack));
+    const track=tracks.find(song=>song.id===button.dataset.songTrack);
+    playTrack(track,{offset:track===selected&&!audio.ended?audio.currentTime:0});
    }else if(button.dataset.songLesson){
     openLinkedLearning('lesson',Number(button.dataset.songLesson));
    }else if(button.hasAttribute('data-song-retry')){
@@ -435,6 +545,9 @@ const renderSongLibrary=(()=>{
 
  window.addEventListener('hashchange',()=>{
   if(location.hash==='#songs'||!root)return;
+  rememberPlaylist(true);
+  clearTimeout(bufferTimer);
+  attempt=null;
   audio.pause();
   cancelAnimationFrame(lyricFrame);
   activeLine=activeWord=null;
@@ -444,11 +557,13 @@ const renderSongLibrary=(()=>{
   playbackFailed=false;
   sequence='off';
  });
+ window.addEventListener('pagehide',()=>rememberPlaylist(true));
 
  return ()=>{
   if(!root?.isConnected)mount();
-  if(language===EP.prefs.language)return;
-  language=EP.prefs.language;
+  const display=`${EP.prefs.language}|${EP.prefs.arabic}`;
+  if(language===display)return;
+  language=display;
   if(tracks||loading||loadFailed)paintPage();
   else loadTracks();
  };
