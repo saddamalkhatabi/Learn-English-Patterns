@@ -9,7 +9,8 @@ const sentences = [
 ];
 const source = path.join(__dirname, '../handoff/music-pilot-20261120');
 const prompts = fs.readdirSync(source).filter(name => /^EP-SONG-\d{2}-.+\.txt$/.test(name));
-const sentenceIds = new Map(sentences.map(row => [`${row.pattern_id}|${row.en}`, row.id]));
+const sentenceRows = new Map(sentences.map(row => [`${row.pattern_id}|${row.en}`, row]));
+const songPhotos = new Map(require('../production/qa/song-scenes.json').scenes.map(scene => [scene.sentenceId, scene.path]));
 
 // The general teaching index marks lead-ins. These examples also need
 // connectors, the second part of a construction, or a more precise span.
@@ -61,7 +62,7 @@ function highlightRanges({id, en}) {
   }).sort(([a], [b]) => a - b);
  }
 
- const sentenceId = sentenceIds.get(`${id}|${en}`);
+ const sentenceId = sentenceRows.get(`${id}|${en}`)?.id;
  const indexes = teaching[sentenceId]?.highlight;
  assert(indexes?.length, `Song pattern ${id} needs a highlight for "${en}"`);
  const words = [...en.matchAll(/\S+/g)];
@@ -76,6 +77,20 @@ function highlightRanges({id, en}) {
  return ranges;
 }
 
+function sceneFor({id, en}, line, lines) {
+ const row = sentenceRows.get(`${id}|${en}`);
+ assert(row, `Song example ${id} has no matching course sentence: ${en}`);
+ const purposeLine = line - 1;
+ assert(lines[purposeLine]?.trim() && !lines[purposeLine].startsWith('['), `Missing introduction for ${row.id}`);
+ if (['assistant-reviewed', 'visually_reviewed', 'imported-unreviewed'].includes(row.image?.status)) {
+  const {atlas, width, height, cell, columns, rows, crop} = row.image;
+  return {line, purposeLine, sentenceId: row.id, context: row.context, image: {atlas, width, height, cell, columns, rows, crop}};
+ }
+ const photo = songPhotos.get(row.id);
+ assert(photo && fs.existsSync(path.join(__dirname, '../public', photo)), `Song example ${row.id} has no displayable image`);
+ return {line, purposeLine, sentenceId: row.id, photo};
+}
+
 const lyrics = {};
 assert.equal(prompts.length, songs.length);
 for (const song of songs) {
@@ -85,13 +100,14 @@ for (const song of songs) {
   .replace(/\r\n/g, '\n').split(/^Lyrics:\n/m)[1]?.trim();
  assert(text, `Lyrics section is missing in ${prompt}`);
  const lines = text.split('\n');
- const highlights = {};
+ const highlights = {}, scenes = [];
  for (const pattern of song.patterns) {
   const line = lines.indexOf(pattern.en);
   assert(line >= 0, `Song ${song.id} is missing "${pattern.en}"`);
   highlights[line] = highlightRanges(pattern);
+  scenes.push(sceneFor(pattern, line, lines));
  }
- lyrics[song.id] = {text, highlights};
+ lyrics[song.id] = {text, highlights, scenes};
 }
 fs.writeFileSync(path.join(__dirname, '../public/song-lyrics.json'), JSON.stringify(lyrics, null, 2) + '\n');
 console.log(`Built lyrics for ${songs.length} songs`);

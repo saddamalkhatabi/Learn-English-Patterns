@@ -50,6 +50,38 @@ test('highlighting isolates fixed words and both parts of paired patterns', () =
  assert.deepEqual(highlighted('18', 'We find that the more we practice, the more confident we become.'), ['the more', 'the more']);
 });
 
+test('each song scene uses the exact example, its purpose line, and downloadable visual media', () => {
+ const source = new Map([...require('../public/pilot.json').sentences, ...require('../public/expansion-media.json').sentences]
+  .map(sentence => [sentence.id, sentence]));
+ const extra = new Map(require('../production/qa/song-scenes.json').scenes.map(scene => [scene.sentenceId, scene]));
+ const media = new Map(offline.media.map(item => [item.path, item]));
+ for (const song of songs) {
+  const {text, scenes} = lyrics[song.id];
+  const lines = text.split('\n');
+  assert.equal(scenes.length, song.patterns.length);
+  for (const [index, {line, purposeLine, sentenceId, image, photo}] of scenes.entries()) {
+   const {id, en} = song.patterns[index];
+   const sentence = source.get(sentenceId);
+   assert.equal(sentence.pattern_id, id);
+   assert.equal(sentence.en, en);
+   assert.equal(lines[line], en);
+   assert.equal(purposeLine, line - 1);
+   assert(lines[purposeLine].trim() && !lines[purposeLine].startsWith('['));
+   if (image) {
+    assert.equal(image.atlas, sentence.image.atlas);
+    assert.equal(image.cell, sentence.image.cell);
+    assert.deepEqual(image.crop, sentence.image.crop);
+    assert(media.get(image.atlas)?.groups.includes('all'));
+   } else {
+    const asset = extra.get(sentenceId);
+    assert.equal(photo, asset.path);
+    assert.equal(media.get(photo)?.sha256, asset.sha256);
+    assert(media.get(photo)?.groups.includes('all'));
+   }
+  }
+ }
+});
+
 test('song timings match the shipped recordings and valid ranges in their lyrics', () => {
  const timings = require('../public/song-timing.json');
  assert.deepEqual(Object.keys(timings).sort(), songs.map(song => song.id).sort());

@@ -34,6 +34,9 @@ for(const entry of Object.values(require('../public/conversation-scenes.json').s
 }
 for(const set of [sets.course,sets.library])for(const p of set)sets.all.add(p);
 for(const song of require('../public/song-library.json'))sets.all.add(song.path);
+for(const track of Object.values(require('../public/song-lyrics.json'))){
+ for(const scene of track.scenes||[])sets.all.add(scene.photo||scene.image.atlas);
+}
 const plan=require('../production/plans/expansion-all-153.json');for(const file of plan.manifest_paths)add(JSON.parse(fs.readFileSync(file)).sentences,sets.all);
 const media=[...sets.all].sort().map(p=>({path:p,sha256:sha(p),bytes:fs.statSync(path.join(root,p)).size,groups:['course','library','all'].filter(g=>sets[g].has(p))}));
 for(const p of ['icon-192.png','icon-512.png'])if(fs.existsSync(path.join(root,p)))shell.push(p);
