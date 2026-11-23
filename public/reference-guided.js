@@ -5,22 +5,16 @@ let referenceGuidedVoiceMode='pattern';
 const referencePurposeSteps={
  'pattern-purpose':['الغرض العام من النمط','General pattern purpose'],
  'pattern-form':['صيغة النمط','Pattern structure'],
- 'example-purpose':['غرض الجملة الأساسية','Purpose of the main sentence'],
+ 'example-purpose':['غرض الجملة ومحفّز النطق','Purpose and speaking cue'],
  sentence:['الجملة الأساسية','Main sentence']
 };
 const referencePurposeOptions=Object.keys(referencePurposeSteps).slice(0,3);
 const referencePurposePrefs={'pattern-purpose':false,'pattern-form':false,'example-purpose':true};
-const referencePurposeModes={
- prompt:['الغرض ومحفّز النطق','Purpose and speaking prompt'],
- context:['غرض الجملة في سياقها','Sentence purpose in context']
-};
-let referencePurposeMode='prompt';
 try{
  const saved=localStorage.getItem('patterns-reference-guide-voice');
  if(referenceStudyAudio.voiceModes.includes(saved))referenceGuidedVoiceMode=saved;
  const purpose=JSON.parse(localStorage.getItem('patterns-reference-purpose-v2')||'{}');
  for(const key of referencePurposeOptions)if(typeof purpose.steps?.[key]==='boolean')referencePurposePrefs[key]=purpose.steps[key];
- if(Object.hasOwn(referencePurposeModes,purpose.mode))referencePurposeMode=purpose.mode;
 }catch{}
 trainingAudioReady.then(cues=>{referenceStudyRecordings=cues;refreshReferenceSummary()});
 
@@ -151,25 +145,22 @@ function referencePurposeTracks(lesson){
  const {prompt:general,text,recording}=makePurposeTrack(generalPurpose);
  const context=EPCoursePurposePrompts[lesson.id]||EPReferencePurposeContext[lesson.id];
  const example=context?{prompt:{ar:context[0],en:context[1]},text:context[1],
-  recording:referenceStudyRecording('purpose',context[1],'female')}:purposeTrack(base);
- const [ar,en]=referenceStudyAudio.purposeNudge;
- const nudge=referencePurposeMode==='prompt'?{ar,text:en,voice:'female',recording:referenceStudyRecording('purpose',en,'female')}:null;
+  hintAr:context[2],recording:referenceStudyRecording('purpose',context[1],'female')}:
+  {...purposeTrack(base),hintAr:base.ar};
  return [
   {kind:'pattern-purpose',prompt:general,text,recording,voice:'female'},
   {kind:'pattern-form',text:titleSpeech,recording:referenceStudyRecording('title',titleSpeech,'male'),voice:'male'},
-  {kind:'example-purpose',...example,voice:'female',nudge},
+  {kind:'example-purpose',...example,voice:'female'},
   {kind:'sentence',row:base,...referenceStudySentenceTrack(base,'male'),voice:'male'}
  ].filter(track=>referencePurposePrefs[track.kind]!==false);
 }
-function changeReferencePurpose(session,input){
+function changeReferencePurposeStep(session,key,enabled){
  const previous=referencePurposeTracks(session.lesson)[session.track]?.kind;
  const playing=session.playing;
  pauseReferenceGuided(session);
- if(input.dataset.purposeStep)referencePurposePrefs[input.dataset.purposeStep]=input.checked;
- else referencePurposeMode=input.value;
- session.dialog.querySelectorAll('[data-purpose-mode]').forEach(option=>option.disabled=!referencePurposePrefs['example-purpose']);
+ referencePurposePrefs[key]=enabled;
  if(document.body.dataset.sharedPlan!=='reference-plan')
-  try{localStorage.setItem('patterns-reference-purpose-v2',JSON.stringify({steps:referencePurposePrefs,mode:referencePurposeMode}))}catch{}
+  try{localStorage.setItem('patterns-reference-purpose-v2',JSON.stringify({steps:referencePurposePrefs}))}catch{}
  const order=Object.keys(referencePurposeSteps);
  const tracks=referencePurposeTracks(session.lesson);
  const next=tracks.findIndex(track=>order.indexOf(track.kind)>=order.indexOf(previous));
@@ -187,8 +178,8 @@ function referencePurposeHelp(){
  <ol>
   <li>${T('الغرض العام يبيّن متى تستخدم البناء: الإشارة إلى شيء قريب.','General purpose explains when to use the pattern: point to something nearby.')}</li>
   <li>${T('الصيغة توضّح ترتيب الكلمات.','Structure shows how to build it.')} <bdi lang="en">This is + noun.</bdi></li>
-  <li>${T('في «غرض الجملة في سياقها» تسمع سؤال الموقف.','In Context, hear the situation’s question.')} <bdi lang="en">Whose house is this?</bdi>
-   ${T('وفي «الغرض ومحفّز النطق» تسمع السؤال ثم دعوة لتجرب قول الجملة بنفسك.','In Purpose and speaking prompt, hear the question, then try to say the sentence yourself.')} <bdi lang="en">${H(referenceStudyAudio.purposeNudge[1])}</bdi></li>
+  <li>${T('غرض الجملة يضعك في موقف يدعوك إلى الرد. حين تحتاج إلى تذكّر المعنى افتح التلميح إذا ظهر.',
+   'The sentence purpose gives you a situation to respond to. Open the meaning hint if you need it.')} <bdi lang="en">Whose home are you pointing out?</bdi></li>
   <li>${T('تسمع في النهاية الجملة الأساسية بصوت Adam.','Finally, hear Adam say the main sentence.')} <bdi lang="en">This is my house.</bdi></li>
  </ol></details>`;
 }
@@ -198,9 +189,6 @@ function referencePurposeControls(){
  return `<fieldset class="reference-purpose-settings"><legend>${T('ترتيب الشرح والاستماع','Explanation and playback order')}</legend>
   <div class="reference-purpose-options">
    ${step('pattern-purpose',1)}${step('pattern-form',2)}${step('example-purpose',3)}
-   <fieldset class="reference-purpose-modes"><legend>${T('طريقة تقديم غرض الجملة','How to present the sentence purpose')}</legend>
-    ${Object.entries(referencePurposeModes).map(([mode,name])=>`<label><input type="radio" name="reference-purpose-mode" data-purpose-mode value="${mode}" ${referencePurposeMode===mode?'checked':''} ${referencePurposePrefs['example-purpose']?'':'disabled'}> ${T(...name)}</label>`).join('')}
-   </fieldset>
    <div class="reference-purpose-final">4 · ${T('الجملة الأساسية · تُقرأ دائمًا','Main sentence · always played')}</div>
   </div>
   ${referencePurposeHelp()}
@@ -247,8 +235,8 @@ function openReferenceGuided(ids,{voice,full=true,strategy='study'}={}){
   full,purpose,run:0,sound:null,audio:new Audio(),
   rate:referencePlayer?.state.rate||1,lesson,ready:null,playing:false,complete:false};
  referenceGuided=session;
- dialog.querySelectorAll('[data-purpose-step],[data-purpose-mode]').forEach(input=>input.onchange=()=>
-  changeReferencePurpose(session,input));
+ dialog.querySelectorAll('[data-purpose-step]').forEach(input=>input.onchange=()=>
+  changeReferencePurposeStep(session,input.dataset.purposeStep,input.checked));
  dialog.addEventListener('close',()=>{
   if(dialog.open||!dialog.isConnected)return;
   pauseReferenceGuided(session);
@@ -369,17 +357,20 @@ function paintReferenceGuided(session,track,examples,words){
 function paintReferencePurpose(session,active){
  const {lesson,dialog}=session;
  const content=dialog.querySelector('[data-guide-content]');
+ const hintOpen=content.dataset.purposeLesson===String(lesson.id)&&content.querySelector('.reference-purpose-hint')?.open;
+ content.dataset.purposeLesson=lesson.id;
  content.dataset.guideTrack=active.kind;
  const tracks=referencePurposeTracks(lesson);
  const revealed=tracks.slice(0,tracks.findIndex(track=>track.kind===active.kind)+1);
  content.innerHTML=`<div class="reference-guided-photo">${patternsSentenceScene(lesson.photo)}</div>
  <div class="reference-guided-copy"><ol class="reference-purpose-timeline">${revealed.map(track=>`
   <li data-purpose-phase="${track.kind}" ${track.kind===active.kind?'aria-current="step"':''}>
-   <h3>${T(...(track.kind==='example-purpose'?referencePurposeModes[referencePurposeMode]:referencePurposeSteps[track.kind]))}</h3>
+   <h3>${T(...referencePurposeSteps[track.kind])}</h3>
    ${track.prompt?EP.pair(track.prompt.ar,track.prompt.en):track.kind==='pattern-form'?
     `<strong class="pattern-form" lang="en" dir="ltr">${H(lesson.form)}</strong>`:
     `<p class="reference-guided-sentence" lang="en" dir="ltr">${referenceGuidedSentenceWords(lesson.base,'data-guide-word')}</p>${EP.ar(lesson.base.ar)}`}
-   ${track.nudge?`<div class="reference-speaking-prompt">${EP.pair(track.nudge.ar,track.nudge.text)}</div>`:''}
+   ${track.hintAr&&EP.prefs.arabic?`<details class="reference-purpose-hint" ${hintOpen?'open':''}>
+    <summary>${T('تلميح المعنى','Meaning hint')}</summary>${EP.ar(track.hintAr)}</details>`:''}
   </li>`).join('')}</ol></div>`;
  const current=content.querySelector('[aria-current="step"]');
  if(current.getBoundingClientRect().bottom>content.getBoundingClientRect().bottom)
@@ -473,18 +464,8 @@ async function runReferenceGuided(session){
     updateReferenceGuidedControls(session,T('تعذّر تشغيل الصوت. اضغط تشغيل للمحاولة أو اختر مرحلة أخرى.','Audio could not play. Press Play to retry or choose another stage.'));
     return;
    }
-   if(next.nudge){
-    session.sound=playReferenceGuidedRecording(session,next.nudge);
-    const prompted=await session.sound.done;
-    if(session.run!==run)return;
-    if(!prompted&&next.nudge.recording){
-     session.sound=synthesizeTrainingCue(next.nudge.text,session.rate,next.nudge.voice);
-     await session.sound.done;
-     if(session.run!==run)return;
-    }
-   }
    session.track++;
-   session.sound=waitReferenceGuided(next.nudge?1100:referenceStudyAudio.guideGap(next.kind));
+   session.sound=waitReferenceGuided(referenceStudyAudio.guideGap(next.kind));
    await session.sound.done;
    if(session.run!==run)return;
    session.sound=null;

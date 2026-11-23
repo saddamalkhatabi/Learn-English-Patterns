@@ -518,22 +518,11 @@ html body .idea-picture-frame>.scene-frame>.scene-photo{width:100%!important;max
 }
 .reference-purpose-options { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: .55rem .9rem; }
 .reference-purpose-settings label { display: flex; align-items: baseline; gap: .4rem; }
-.reference-purpose-modes, .reference-purpose-final, .reference-purpose-options > label:last-of-type { grid-column: 1 / -1; }
-.reference-purpose-modes {
- display: flex;
- flex-wrap: wrap;
- gap: .4rem 1rem;
- margin: 0;
- min-width: 0;
- border: 1px solid var(--line);
- border-radius: .45rem;
- padding: .35rem .6rem;
-}
 .reference-purpose-final { color: #315f51; }
 .reference-purpose-help summary { color: var(--green); font-weight: 650; cursor: pointer; padding: .4rem 0; }
 .reference-purpose-help ol, .reference-purpose-help ul { padding-inline-start: 1.4rem; }
 .reference-purpose-help li + li { margin-top: .35rem; }
-.reference-speaking-prompt { border-inline-start: 2px solid #6b8f55; padding-inline-start: .5rem; }
+.reference-purpose-hint summary { color: var(--green); font-size: .9rem; cursor: pointer; }
 @media (max-width: 520px) { .reference-purpose-options { grid-template-columns: minmax(0,1fr); } }
 .reference-guided[data-mini="true"] .reference-purpose-settings { display: none; }
 .reference-purpose-timeline { display: grid; gap: .65rem; list-style: none; padding: 0; margin: 0; }

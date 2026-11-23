@@ -63,8 +63,7 @@ function referencePlan(source){
   sentenceStrategy:strategy(source.sentenceStrategy),patternStrategy:strategy(source.patternStrategy),
   voice:list(source.voice,['male','female'],'male'),guideVoice:list(source.guideVoice,['pattern','stage','male','female'],'pattern'),
   rate:speed(source.rate),auto:flag(source.auto,true),imageMode:imageMode(source.imageMode),
-  purposeSteps:Object.fromEntries(purposeSteps.map(step=>[step,flag(source.purposeSteps?.[step],step==='example-purpose')])),
-  purposeMode:list(source.purposeMode,['prompt','context'],'prompt')
+  purposeSteps:Object.fromEntries(purposeSteps.map(step=>[step,flag(source.purposeSteps?.[step],step==='example-purpose')]))
  };
 }
 function normalize(kind,descriptor={}){

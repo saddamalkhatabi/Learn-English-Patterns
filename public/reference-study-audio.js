@@ -3,7 +3,6 @@
  if(typeof module==='object')module.exports=api;
  else root.EPReferenceStudyAudio=api;
 })(globalThis,function(vocabulary){
- const purposeNudge=['جرّب قولها بالإنجليزية.','Try saying it in English.'];
  const stages=[
   ['base','الجملة الأساسية','Main sentence','Main sentence.'],
   ['rule','شرح النمط','Rule explanation','Rule explanation.'],
@@ -146,7 +145,7 @@
  }
  function guideGap(kind){
   return {title:500,heading:330,word:480,context:760,sentence:420,rule:550,
-   'pattern-purpose':380,'pattern-form':380,'example-purpose':500}[kind]||0;
+   'pattern-purpose':380,'pattern-form':380,'example-purpose':1250}[kind]||0;
  }
  const voiceModes=['pattern','stage','male','female'];
  function guideVoice(mode,first,index,stage,indexedStages){
@@ -166,5 +165,5 @@
   return {path:recording.path,start_ms:Math.max(cues[first-1]?.end_ms||0,cues[first].start_ms-25),
    end_ms:Math.min(cues[last+1]?.start_ms||recording.duration_ms,cues[last].end_ms+35)};
  }
- return {stages,cueId,patternTitle,examples,words,eligibleWord,studyWords,purposePrompt,purposeNudge,termIndexes,guideGap,voiceModes,guideVoice,wordExcerpt};
+ return {stages,cueId,patternTitle,examples,words,eligibleWord,studyWords,purposePrompt,termIndexes,guideGap,voiceModes,guideVoice,wordExcerpt};
 });

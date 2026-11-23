@@ -57,8 +57,8 @@ const referenceStrategyOptions={
   patternHelp:['استمع إلى الجملة الأساسية ثم أمثلة النمط لتلاحظ كيف يتكرر البناء في سياقات مختلفة.',
    'Hear the main sentence and its examples to notice how the same pattern works in different contexts.']},
  purpose:{icon:'↳',title:['الغرض ثم الجملة','Purpose then sentence'],
-  help:['ابدأ بغرض الجملة ومحفّز قصير لتجرب قولها، ثم اسمع الجملة الأساسية. يمكنك اختيار غرض الموقف وحده أو إضافة الغرض العام وصيغة النمط من المشغّل.',
-   'Start with the purpose and a short speaking prompt, then hear the main sentence. Use the player to choose context alone or add the general purpose and pattern structure.']},
+  help:['اسمع موقفًا قصيرًا يساعدك على تذكّر الجملة وقولها، ثم استمع إلى المثال. يمكنك إضافة الغرض العام وصيغة النمط من المشغّل.',
+   'Hear a short situation to help you recall and say the sentence, then listen to the example. You can add the general purpose and pattern structure in the player.']},
  study:{icon:'≡',title:['شرح مع أمثلة إضافية','Explanation with additional examples'],
   help:['ابدأ بالجملة، ثم استمع إلى شرح البناء وأمثلة متنوعة ومفردات في سياقها. اختر هذه الطريقة لتفهم النمط وتستخدمه في جمل جديدة.',
    'Hear the sentence, its structure explained, varied examples and vocabulary in context. Choose this to understand the pattern and use it in new sentences.']}
@@ -84,7 +84,7 @@ function referenceStrategyControls(patternMode){
   <details class="reference-purpose-help"><summary>${T('شرح طرق الاستماع بأمثلة','Explain the listening strategies with examples')}</summary>
    <ul>
     <li>${T('الاستماع المتتابع يقرأ الجمل وراء بعضها للمراجعة.','Continuous listening plays sentences in sequence for review.')} <bdi lang="en">This is my house. That is my school.</bdi></li>
-    <li>${T('الغرض ثم الجملة يقدّم الموقف ومحفّز النطق، ثم تسمع المثال.','Purpose then sentence presents the situation and a speaking prompt before the example.')} <bdi lang="en">Whose house is this? This is my house.</bdi></li>
+    <li>${T('الغرض ثم الجملة يقدّم الموقف في سؤال أو توجيه، ثم تسمع المثال.','Purpose then sentence gives you a question or a situation, followed by the example.')} <bdi lang="en">Whose home are you pointing out? This is my house.</bdi></li>
     <li>${T('الشرح مع الأمثلة يوضّح القاعدة ويعرض استخدامات إضافية ومفردات.','Explanation with examples teaches the rule, additional uses and vocabulary.')} <bdi lang="en">Use this for something nearby. This is my house. This is my book.</bdi></li>
    </ul>
   </details>

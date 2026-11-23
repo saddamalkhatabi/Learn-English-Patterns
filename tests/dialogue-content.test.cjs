@@ -38,6 +38,7 @@ test('the purpose strategy pairs the general pattern with a distinct contextual 
  const {describeReference}=require('../public/teaching-core.js');
  const {sameSpeech}=require('../public/english-usage.js');
  const plan=require('../scripts/training-cues.cjs');
+ const recordings=require('../public/training-audio.json');
  const courseIds=[...foundation.patterns,...expansion.patterns].map(pattern=>pattern.id);
  assert.equal(Object.keys(course).length,courseIds.length);
  for(const id of courseIds){
@@ -54,6 +55,20 @@ test('the purpose strategy pairs the general pattern with a distinct contextual 
   assert.equal(plan[audio.cueId('purpose',en,'female')],en,sentence.id);
  }
  assert(overlap<20,`Too many contextual prompts repeat the general purpose: ${overlap}`);
+ assert.deepEqual(context['ref-0037'],[
+  'قبل أن يغادر شخص المنزل، ذكّره بإقفال الباب.',
+  'Before someone leaves the house, remind them to lock the door.'
+ ]);
+ assert.equal(context['ref-0109'][2],references.get('ref-0109').ar);
+ for(const [id,[ar,en,hint]] of Object.entries(context)){
+  assert(!/Try saying it in English|Think of how you would express the meaning/.test(en),id);
+  if(hint)assert.equal(hint,references.get(id).ar,id);
+  if(process.env.DIALOGUE_AUDIO_REQUIRED==='1'){
+   const {path,text}=recordings[audio.cueId('purpose',en,'female')];
+   assert.equal(text,en,id);
+   assert(fs.existsSync('public/'+path),id);
+  }
+ }
 });
 
 test('conversation turns link to real patterns, scenes and measured cues within a single file', () => {
