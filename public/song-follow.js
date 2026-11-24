@@ -1,4 +1,12 @@
 (function(root){
+ const reviewPractice={kind:'review'};
+
+ function practiceAt(windows,time,duration,ended=false){
+  const active=windows.find(({start_ms,end_ms})=>start_ms<=time&&time<end_ms);
+  if(active)return active;
+  return ended||duration>8000&&time>=duration-8000?reviewPractice:null;
+ }
+
  function followLyrics(lines,measured,duration,{measuredOnly=false}={}){
   const cues=measured.map(cue=>({...cue,nearby:[]}));
   if(measuredOnly)return cues.sort((a,b)=>a.start_ms-b.start_ms);
@@ -34,6 +42,7 @@
   addMissing();
   return cues.sort((a,b)=>a.start_ms-b.start_ms);
  }
- if(typeof module==='object')module.exports={followLyrics};
- else root.EPSongFollow={followLyrics};
+ const api={followLyrics,practiceAt,reviewPractice};
+ if(typeof module==='object')module.exports=api;
+ else root.EPSongFollow=api;
 })(globalThis);
