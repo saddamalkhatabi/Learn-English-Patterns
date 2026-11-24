@@ -1,6 +1,7 @@
 (function(root){
- function followLyrics(lines,measured,duration){
+ function followLyrics(lines,measured,duration,{measuredOnly=false}={}){
   const cues=measured.map(cue=>({...cue,nearby:[]}));
+  if(measuredOnly)return cues.sort((a,b)=>a.start_ms-b.start_ms);
   const byLine=new Map(cues.map(cue=>[cue.line,cue]));
   const missing=[];
   let previous;

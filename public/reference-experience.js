@@ -231,13 +231,28 @@ function referenceSentenceFilters(){
    <option value="">${T('الكل','All')}</option>${['A1–A2','A2–B1','B1–B2'].map(x=>`<option ${epReference.level===x?'selected':''}>${x}</option>`).join('')}
   </select></label>`;
 }
+function renderReferencePage(){
+ const app=$('#app');
+ if(!$('#reference-browser'))app.innerHTML=`
+  <div id="reference-heading"></div>
+  <section class="reference-song-entry" aria-label="${T('أغاني الأنماط','Pattern songs')}">
+   <button class="secondary" type="button" aria-expanded="false" aria-controls="reference-song-player" onclick="toggleReferenceSongs(this)"></button>
+   <div id="reference-song-player" hidden></div>
+  </section>
+  <div id="reference-browser"></div>`;
+ $('#reference-heading').innerHTML=head(T('ابحث عن المعنى. واسمع البناء.','Find the meaning. Hear the structure.'),
+  T('استمع إلى الجمل المرجعية أو تعلّم الأنماط بالصور والصوت.','Listen to reference sentences or study patterns with photos and audio.'),'1,000 SENTENCES · REAL CONNECTIONS');
+ const section=app.querySelector('.reference-song-entry');
+ section.setAttribute('aria-label',T('أغاني الأنماط','Pattern songs'));
+ paintReferenceSongButton(section.querySelector('button'));
+ const player=$('#reference-song-player');
+ if(!player.hidden)renderSongLibrary(player);
+ $('#reference-browser').innerHTML=REFERENCE_CORPUS?referencePageHTML():`<p role="status">${T('جارٍ تحميل الجمل…','Loading sentences…')}</p>`;
+}
 referencePageHTML=function(){
- if(!REFERENCE_CORPUS)return head(T('مكتبة الألف جملة','1,000-sentence library'),T('جارٍ التحميل…','Loading…'));
  const patternMode=epReference.section==='patterns';
  const sortOptions=[['source','ترتيب المصدر','Source order'],['az','أبجدي إنجليزي','English A–Z'],['level','المستوى','Level'],['grammar','البناء','Structure']];
- return `${head(T('ابحث عن المعنى. واسمع البناء.','Find the meaning. Hear the structure.'),
-  T('استمع إلى الجمل المرجعية أو تعلّم الأنماط بالصور والصوت.','Listen to reference sentences or study patterns with photos and audio.'),'1,000 SENTENCES · REAL CONNECTIONS')}
-  ${epSectionLinks(['scene-studio'])}${referenceLibraryTabs()}${referenceStrategyControls(patternMode)}
+ return `${epSectionLinks(['scene-studio'])}${referenceLibraryTabs()}${referenceStrategyControls(patternMode)}
   <div class="reference-summary" id="reference-summary" aria-label="${T('مؤشرات النتائج المعروضة','Result statistics')}"></div>
   <section class="panel reference-filters"><label>${T('ابحث بالعبارة أو المعنى','Search a phrase or meaning')}
    <input id="reference-search" class="search" value="${H(epReference.query)}" placeholder="${T('جملة، كلمة، معنى عربي أو قاعدة…','A sentence, word, Arabic meaning or structure…')}" oninput="epReferenceSet('query',this.value)"></label>

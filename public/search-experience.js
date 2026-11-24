@@ -36,7 +36,7 @@ const EPSearch=(()=>{
  const comparisonsForSearch=()=>entries(patternComparisons,item=>({value:item.en,ar:item.ar,extra:item.examples.join(' '),
   open:()=>openFilteredPage('comparisons','comparisons',item.en,{level:'',type:'',size:'',purpose:''})}));
  const songsForSearch=()=>entries(songSearchRows,song=>({value:song.title,ar:song.topicAr,extra:song.topicEn,
-  open:()=>{navigate('songs');filterSongsByTitle(song.title)}}));
+  open:()=>{navigate('songs');filterSongsByTitle(song.title,song.collection)}}));
  const advancedForSearch=(section,rows)=>entries(rows,row=>({value:row.en,ar:row.ar,extra:[row.uk,row.ruleAr,row.ruleEn,row.example].join(' '),
   open:()=>{navigate('advanced');openAdvancedItem(section,row.id)}}));
  const libraries={
