@@ -193,11 +193,13 @@ const renderSongLibrary=(()=>{
  function prepareSongStage(){
   const track=timings[selected.id];
   const reference=selected.collection==='reference';
+  const estimatesEnabled=EP.prefs.songEstimates!==false;
   const content=reference?EPSongFollow.withEstimatedExamples(
-   lyrics[selected.id],track,EP.prefs.songEstimates!==false?extras[selected.id]:null,selected.patterns):lyrics[selected.id];
+   lyrics[selected.id],track,estimatesEnabled?extras[selected.id]:null,selected.patterns):lyrics[selected.id];
   const {text,highlights,scenes=[],translations={}}=content;
   const lines=text.split('\n');
-  timeline=EPSongFollow.followLyrics(lines,content.lines||track?.lines||[],selected.duration*1000,{measuredOnly:reference});
+  timeline=EPSongFollow.followLyrics(lines,content.lines||track?.lines||[],selected.duration*1000,
+   {measuredOnly:reference||!estimatesEnabled});
   songTranslations=translations;
   const byLine=new Map(timeline.map(cue=>[cue.line,cue]));
   focusLines=lines.map((line,index)=>lyricLine(line,highlights[index],byLine.get(index)?.words));
@@ -302,7 +304,7 @@ const renderSongLibrary=(()=>{
    }else if(previous){
     focus.removeAttribute('lang');
     focus.removeAttribute('dir');
-    focus.textContent=T('تابع الاستماع. ستظهر الجملة التالية مع الغناء.','Keep listening. The next line will appear with the vocals.');
+    focus.textContent=T('تابع الاستماع إلى المقطع.','Keep listening to the track.');
    }else showSongLead(focus);
   }
   if(cue!==activeCue){
