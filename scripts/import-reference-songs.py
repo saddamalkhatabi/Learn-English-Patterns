@@ -15,7 +15,10 @@ PUBLIC = ROOT / 'public'
 HANDOFF = ROOT / 'handoff/music-corpus-20261124'
 QA = ROOT / 'production/qa'
 TOKEN = re.compile(r"\d+:\d+|[a-zA-Z0-9]+(?:['’][a-zA-Z]+)*")
-READINGS = {'2:30': ('two', 'thirty'), '2': ('two',), '15': ('fifteen',), '30': ('thirty',), 'atm': ('a', 't', 'm')}
+READINGS = {
+    '2:30': ('two', 'thirty'), '2': ('two',), '10': ('ten',), '13': ('thirteen',),
+    '15': ('fifteen',), '30': ('thirty',), 'atm': ('a', 't', 'm'),
+}
 TIMESTAMP_JITTER_MS = 100
 
 
@@ -165,6 +168,7 @@ def import_songs(mapping, source_dir, transcripts, minimum_passes):
     translations = read_json(QA / 'reference-song-lyrics-ar.json')
     topics = translations['topics']
     lines_ar = translations['lyrics']
+    recorded_lyrics = translations.get('recordedLyrics', {})
     focus = translations['patternFocus']
     catalog, lyrics, timings, audit, copies = [], {}, {}, [], []
     assert len({row['id'] for row in mapping}) == len(mapping)
@@ -190,6 +194,8 @@ def import_songs(mapping, source_dir, transcripts, minimum_passes):
         prompt = (HANDOFF / song['promptPath']).read_text(encoding='utf-8').split('\nLyrics:\n', 1)[1]
         entries = {line: {'english': line, 'arabic': lines_ar[line]} for line in prompt.splitlines()
                    if line in lines_ar}
+        entries.update({line: {'english': line, 'arabic': arabic}
+                        for line, arabic in recorded_lyrics.get(name, {}).items()})
         entries.update({entry['english']: entry for entry in song['examples']})
         candidates = [dict(entry=entry, cue=cue, confidence=confidence) for entry in entries.values()
                       for words in recognized for cue, confidence in matches(entry['english'], words)

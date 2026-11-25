@@ -3,7 +3,7 @@ const assert = require('node:assert/strict');
 const foundation = require('../public/song-library.json');
 const references = require('../public/reference-song-library.json');
 const foundationTiming = require('../public/song-timing.json');
-const referenceTiming = require('../public/reference-song-sync.json').timings;
+const { lyrics: referenceLyrics, timings: referenceTiming } = require('../public/reference-song-sync.json');
 const plan = require('../handoff/music-corpus-20261124/manifest.json');
 const offline = require('../public/offline-manifest.json');
 const practice = require('../public/song-practice.json');
@@ -31,7 +31,13 @@ test('timed practice prompts use examples and timestamps from their own recordin
    } else {
     assert.equal(step.kind, 'transfer');
     assert(step.promptAr && step.promptEn && (step.starter || targets.length));
-    if (lesson) assert.equal(step.promptEn, lesson.practice.transferCue);
+    if (lesson && step.promptEn !== lesson.practice.transferCue) {
+     const { text, translations } = referenceLyrics[songId];
+     const lines = text.split('\n');
+     assert(timing.lines.some(({ line, start_ms, end_ms }) =>
+      lines[line] === step.promptEn && translations[line] === step.promptAr &&
+      start_ms >= start && end_ms <= end), songId);
+    }
    }
    assert.equal(practiceAt(windows, start, song.duration * 1000), step);
    assert.equal(practiceAt(windows, end - 1, song.duration * 1000), step);
