@@ -42,7 +42,39 @@
   addMissing();
   return cues.sort((a,b)=>a.start_ms-b.start_ms);
  }
- const api={followLyrics,practiceAt,reviewPractice};
+ function withEstimatedExamples(content,timing,extra,patterns){
+  const lines=timing?.lines||[];
+  if(!lines.length||!extra||timing.sha256!==extra.sha256)return {...content,lines};
+  const byReference=new Map(patterns.map(pattern=>[pattern.referenceId,pattern]));
+  const measured=new Set(content.scenes.map(scene=>scene.referenceId));
+  const estimated=extra.examples.flatMap(example=>{
+   const pattern=byReference.get(example.referenceId);
+   return pattern&&!measured.has(example.referenceId)&&example.start_ms!=null?[{
+    cue:{start_ms:example.start_ms,end_ms:example.end_ms,words:[],approximate:true},
+    text:example.spoken?.en??pattern.en, translation:example.spoken?.ar??pattern.ar,
+    highlights:example.spoken?.highlights??example.highlights,
+    scene:{referenceId:example.referenceId,sentenceId:example.referenceId,image:example.image,
+     context:example.context,spoken:example.spoken}
+   }]:[];
+  });
+  if(!estimated.length)return {...content,lines};
+  const text=content.text.split('\n');
+  const scenes=new Map(content.scenes.map(scene=>[scene.line,scene]));
+  const entries=lines.map(cue=>({
+   cue,text:text[cue.line],translation:content.translations[cue.line],
+   highlights:content.highlights[cue.line],scene:scenes.get(cue.line)
+  })).concat(estimated).sort((a,b)=>a.cue.start_ms-b.cue.start_ms);
+  const merged={text:entries.map(entry=>entry.text).join('\n'),lines:[],scenes:[],translations:{},highlights:{}};
+  for(const [line,entry] of entries.entries()){
+   merged.lines.push({...entry.cue,line});
+   if(entry.scene)merged.scenes.push({...entry.scene,line});
+   if(entry.translation)merged.translations[line]=entry.translation;
+   if(entry.highlights?.length)merged.highlights[line]=entry.highlights;
+  }
+  return merged;
+ }
+
+ const api={followLyrics,withEstimatedExamples,practiceAt,reviewPractice};
  if(typeof module==='object')module.exports=api;
  else root.EPSongFollow=api;
 })(globalThis);

@@ -7,10 +7,11 @@ const plan = require('../handoff/music-corpus-20261124/manifest.json');
 const foundation = require('../public/song-library.json');
 const reference = require('../public/reference-song-library.json');
 const { lyrics, timings } = require('../public/reference-song-sync.json');
+const extras = require('../public/reference-song-extras.json');
 const { sentences } = require('../public/source-corpus.json');
 const offline = require('../public/offline-manifest.json');
 const audit = require('../production/qa/reference-songs-20261124.json');
-const { followLyrics } = require('../public/song-follow.js');
+const { followLyrics, withEstimatedExamples } = require('../public/song-follow.js');
 
 test('published reference songs use the planned order, exact MP3 names and offline assets', () => {
  assert(reference.length);
@@ -94,4 +95,51 @@ test('reference song words and scenes play only at measured times on the same re
   assert.equal(measuredExamples.size, matchedExamples);
   assert.deepEqual(song.patterns.map(pattern => pattern.referenceId).filter(id => !measuredExamples.has(id)), untimedReferences);
  }
+});
+
+test('estimated reference lines stay separate from measured lyrics and all review examples have their own scene', () => {
+ assert(offline.shell.includes('reference-song-extras.json'));
+ const source = new Map(sentences.map(sentence => [sentence.id, sentence]));
+ const offlineAssets = new Set(offline.media.filter(item => item.groups.includes('all')).map(item => item.path));
+ let estimated = 0;
+ for (const [index, song] of reference.entries()) {
+  const content = lyrics[song.id];
+  const timing = timings[song.id];
+  const review = extras[song.id];
+  const { untimedReferences, durationMs } = audit[index];
+  assert.deepEqual(review?.examples.map(example => example.referenceId) ?? [], untimedReferences);
+  if (!review) continue;
+  assert.equal(review.sha256, timing.sha256);
+  for (const example of review.examples) {
+   const row = source.get(example.referenceId);
+   const { atlas, width, height, crop } = row.image;
+   assert.deepEqual(example.image, { atlas, width, height, crop });
+   assert(offlineAssets.has(atlas));
+   assert(example.highlights.length && example.highlights.every(([start, end]) =>
+    Number.isInteger(start) && Number.isInteger(end) && start >= 0 && end > start && end <= row.en.length));
+  }
+  const merged = withEstimatedExamples(content, timing, review, song.patterns);
+  const text = merged.text.split('\n');
+  const measuredText = content.text.split('\n');
+  const keepTiming = ({ line, ...cue }, lines) => [cue, lines[line]];
+  assert.deepEqual(merged.lines.filter(line => !line.approximate).map(line => keepTiming(line, text)),
+   timing.lines.map(line => keepTiming(line, measuredText)));
+  let previousEnd = 0;
+  for (const cue of merged.lines) {
+   assert(cue.start_ms >= previousEnd && cue.end_ms <= durationMs, song.id);
+   previousEnd = cue.end_ms;
+   if (!cue.approximate) continue;
+   estimated++;
+   assert.deepEqual(cue.words, []);
+   const scene = merged.scenes.find(item => item.line === cue.line);
+   const row = source.get(scene.referenceId);
+   const expected = review.examples.find(example => example.referenceId === scene.referenceId);
+   assert.equal(text[cue.line], expected.spoken?.en ?? row.en);
+   assert.equal(merged.translations[cue.line], expected.spoken?.ar ?? row.ar);
+   assert(merged.highlights[cue.line]?.length);
+  }
+  assert.deepEqual(withEstimatedExamples(content, timing, {...review, sha256: 'different'}, song.patterns),
+   {...content, lines: timing.lines});
+ }
+ assert(estimated > 0);
 });

@@ -1,5 +1,6 @@
 const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');const root=path.resolve(__dirname,'../public'),sha=p=>crypto.createHash('sha256').update(fs.readFileSync(path.join(root,p))).digest('hex');
 require('./build-browser-app.cjs').write();
+require('./build-reference-song-extras.cjs');
 const cues=require('../public/training-audio.json');
 const coachCues=Object.fromEntries(Object.entries(cues).filter(([id])=>/^(pattern-intro-|explanation-intro-|purpose-category-|dialogue-intro$|comparison-)/.test(id)));
 fs.writeFileSync(path.join(root,'coach-cues.json'),JSON.stringify(coachCues)+'\n');
