@@ -15,7 +15,7 @@ PUBLIC = ROOT / 'public'
 HANDOFF = ROOT / 'handoff/music-corpus-20261124'
 QA = ROOT / 'production/qa'
 TOKEN = re.compile(r"\d+:\d+|[a-zA-Z0-9]+(?:['’][a-zA-Z]+)*")
-READINGS = {'2:30': ('two', 'thirty'), '2': ('two',), '30': ('thirty',), 'atm': ('a', 't', 'm')}
+READINGS = {'2:30': ('two', 'thirty'), '2': ('two',), '15': ('fifteen',), '30': ('thirty',), 'atm': ('a', 't', 'm')}
 TIMESTAMP_JITTER_MS = 100
 
 
@@ -185,6 +185,8 @@ def import_songs(mapping, source_dir, transcripts, minimum_passes):
                                      '-of', 'default=nw=1:nk=1', str(source)], text=True).strip())
         duration_ms = round(length * 1000)
         digest = sha256(source.read_bytes()).hexdigest()
+        if 'sha256' in intake and intake['sha256'] != digest:
+            raise ValueError(f"Recording changed after intake: {source.name}")
         prompt = (HANDOFF / song['promptPath']).read_text(encoding='utf-8').split('\nLyrics:\n', 1)[1]
         entries = {line: {'english': line, 'arabic': lines_ar[line]} for line in prompt.splitlines()
                    if line in lines_ar}

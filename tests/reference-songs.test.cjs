@@ -4,6 +4,7 @@ const { createHash } = require('node:crypto');
 const fs = require('node:fs');
 const path = require('node:path');
 const plan = require('../handoff/music-corpus-20261124/manifest.json');
+const foundation = require('../public/song-library.json');
 const reference = require('../public/reference-song-library.json');
 const { lyrics, timings } = require('../public/reference-song-sync.json');
 const { sentences } = require('../public/source-corpus.json');
@@ -13,7 +14,8 @@ const { followLyrics } = require('../public/song-follow.js');
 
 test('published reference songs use the planned order, exact MP3 names and offline assets', () => {
  assert(reference.length);
- const expected = plan.songs.slice(0, reference.length);
+ const published = new Set(reference.map(song => song.id));
+ const expected = plan.songs.filter(song => published.has(song.id));
  assert.deepEqual(reference.map(song => song.id), expected.map(song => song.id));
  assert.deepEqual(audit.map(song => song.id), reference.map(song => song.id));
  assert(offline.shell.includes('reference-song-library.json'));
@@ -21,7 +23,7 @@ test('published reference songs use the planned order, exact MP3 names and offli
  const media = new Map(offline.media.map(item => [item.path, item]));
  for (const [index, song] of reference.entries()) {
   assert.equal(song.collection, 'reference');
-  assert.equal(song.number, String(index + 1).padStart(3, '0'));
+  assert.equal(song.number, String(expected[index].songOrder).padStart(3, '0'));
   assert.equal(path.posix.basename(song.path), expected[index].expectedAudioFilename);
   assert.deepEqual(song.patterns.map(pattern => pattern.referenceId), expected[index].examples.map(example => example.referenceId));
   const digest = createHash('sha256').update(fs.readFileSync(path.join(__dirname, '../public', song.path))).digest('hex');
@@ -30,6 +32,24 @@ test('published reference songs use the planned order, exact MP3 names and offli
   assert.equal(digest, media.get(song.path).sha256);
   assert(media.get(song.path).groups.includes('all'));
  }
+});
+
+test('published foundation and reference songs share one audio directory and unique recordings', () => {
+ const directory = 'assets/audio/songs';
+ const files = new Set();
+ const assets = new Set();
+ const hashes = new Map(offline.media.map(item => [item.path, item.sha256]));
+ for (const song of [...foundation, ...reference]) {
+  assert.equal(path.posix.dirname(song.path), directory);
+  assert(!files.has(song.path), song.path);
+  files.add(song.path);
+  const hash = hashes.get(song.path);
+  assert(hash && !assets.has(hash), song.path);
+  assets.add(hash);
+ }
+ const onDisk = fs.readdirSync(path.join(__dirname, '../public', directory))
+  .filter(name => name.endsWith('.mp3')).map(name => `${directory}/${name}`);
+ assert.deepEqual(onDisk.sort(), [...files].sort());
 });
 
 test('reference song words and scenes play only at measured times on the same recording', () => {
