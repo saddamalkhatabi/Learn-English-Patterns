@@ -8,6 +8,7 @@ import json
 import os
 from pathlib import Path, PurePosixPath
 import ssl
+import string
 import subprocess
 import sys
 import urllib.parse
@@ -98,19 +99,79 @@ def runtime_files():
     return files
 
 
-def remote_inventory(client, folders):
+def partitioned_listing(client, folder, names):
+    files = {}
+    safe = set(string.ascii_letters + string.digits + '-_.')
+
+    def inspect(prefix, candidates):
+        if prefix and len(candidates) <= 2000:
+            lines = []
+            try:
+                reply = client.retrlines(f'LIST -lda {folder}/{prefix}*', lines.append)
+            except ftplib.error_perm as exc:
+                if not str(exc).startswith('550 '):
+                    raise
+                return
+            if 'truncated' not in reply.lower():
+                for line in lines:
+                    if not line.startswith('-'):
+                        continue
+                    columns = line.split(maxsplit=8)
+                    if len(columns) != 9:
+                        raise ValueError(f'Unrecognized FTP listing for {folder}.')
+                    name = PurePosixPath(columns[8]).name
+                    if name in candidates:
+                        files[name] = int(columns[4])
+                return
+        groups = {}
+        for name in candidates:
+            if len(name) == len(prefix) or name[len(prefix)] not in safe:
+                client.voidcmd('TYPE I')
+                try:
+                    size = client.size(f'{folder}/{name}')
+                except ftplib.error_perm as exc:
+                    if not str(exc).startswith('550 '):
+                        raise
+                else:
+                    if size is not None:
+                        files[name] = size
+            else:
+                groups.setdefault(name[len(prefix)], set()).add(name)
+        for next_char, group in sorted(groups.items()):
+            inspect(prefix + next_char, group)
+
+    inspect('', names)
+    return files
+
+
+def remote_inventory(client, paths):
+    folders = {}
+    for path in paths:
+        file = PurePosixPath(path)
+        folders.setdefault(file.parent.as_posix(), set()).add(file.name)
     inventory = {}
-    for folder in sorted(folders):
+    client.sendcmd('OPTS MLST type;size;')
+    for folder, names in sorted(folders.items()):
+        lines = []
         try:
-            listing = list(client.mlsd(folder, facts=['type', 'size']))
+            reply = client.retrlines(f'MLSD {folder}', lines.append)
         except ftplib.error_perm as exc:
             if not str(exc).startswith('550 '):
                 raise
             continue
-        for name, facts in listing:
+        listed = {}
+        for line in lines:
+            metadata, _, name = line.partition(' ')
+            facts = dict(fact.split('=', 1) for fact in metadata.lower().split(';') if '=' in fact)
             if facts.get('type') == 'file':
-                path = (PurePosixPath(folder) / name).as_posix()
-                inventory[path] = int(facts.get('size', -1))
+                listed[PurePosixPath(name).name] = int(facts.get('size', -1))
+        if 'truncated' in reply.lower():
+            print(f'FTPS shortened the listing for {folder}; listing by file prefix.', flush=True)
+            complete = partitioned_listing(client, folder, names)
+            if any(complete.get(name) != size for name, size in listed.items() if name in names and size >= 0):
+                raise ValueError(f'Could not verify the full FTPS listing for {folder}.')
+            listed.update(complete)
+        inventory.update({(PurePosixPath(folder) / name).as_posix(): size for name, size in listed.items()})
     return inventory
 
 
@@ -161,8 +222,7 @@ def deploy(client, site, mode):
     local_media = media_index(json.loads(Path(MANIFEST).read_text(encoding='utf-8')))
     remote_media = media_index(json.loads(retrieve(client, MANIFEST)))
     files = runtime_files()
-    folders = {PurePosixPath(path).parent.as_posix() for path in files}
-    inventory = remote_inventory(client, folders)
+    inventory = remote_inventory(client, files + [PENDING_MEDIA])
     pending = set(json.loads(retrieve(client, PENDING_MEDIA))) if PENDING_MEDIA in inventory else set()
     updates = planned_updates(client, files, inventory, local_media, remote_media, pending)
     songs = 'public/assets/audio/songs/'
