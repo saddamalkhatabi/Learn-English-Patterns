@@ -20,7 +20,7 @@ RUNTIME = ('public', 'db', 'server.js', 'share-preview.cjs', 'runtime-env.cjs',
 MANIFEST = 'public/offline-manifest.json'
 VERSION = 'public/app-version.json'
 PUBLISH_LAST = ('public/app-version.js', VERSION)
-PENDING_MEDIA = '.english-patterns-ftps-pending.json'
+PENDING_MEDIA = 'english-patterns-ftps-pending.json'
 
 
 def retrieve(client, path):
@@ -69,9 +69,27 @@ def atomic_upload(client, path, stream):
         raise
 
 
-def upload(client, path):
+def direct_upload(client, path, stream):
+    length = stream.seek(0, os.SEEK_END)
+    stream.seek(0)
+    client.storbinary(f'STOR {path}', stream, blocksize=128 * 1024)
+    if client.size(path) != length:
+        raise ValueError(f'FTPS reported an unexpected uploaded size for {path}.')
+
+
+def upload(client, path, writer, exists, reconnect):
+    original = retrieve(client, path) if writer is direct_upload and exists else None
     with Path(path).open('rb') as stream:
-        atomic_upload(client, path, stream)
+        try:
+            writer(client, path, stream)
+            if original is not None and remote_digest(client, path) != local_digest(path):
+                raise ValueError(f'FTPS did not replace {path} with the expected contents.')
+        except Exception:
+            if original is not None:
+                with reconnect() as recovery:
+                    direct_upload(recovery, path, io.BytesIO(original))
+                print(f'Restored {path} after an interrupted upload.', flush=True)
+            raise
 
 
 def prove_document_root(client, site):
@@ -80,10 +98,23 @@ def prove_document_root(client, site):
     path = 'public/' + name
     payload = token.encode('ascii')
     try:
-        atomic_upload(client, path, io.BytesIO(b'checking'))
-        atomic_upload(client, path, io.BytesIO(payload))
-        if public_file(site, name) != payload:
+        first = b'checking'
+        direct_upload(client, path, io.BytesIO(first))
+        if public_file(site, name) != first:
             raise ValueError('The FTPS directory did not serve the verification file at the specified site.')
+        writer = atomic_upload
+        try:
+            writer(client, path, io.BytesIO(payload))
+        except ftplib.error_perm as exc:
+            if not str(exc).startswith('550 '):
+                raise
+            writer = direct_upload
+            writer(client, path, io.BytesIO(payload))
+        if public_file(site, name) != payload:
+            raise ValueError('The host did not serve the replaced verification file.')
+        method = 'direct upload with a copy for recovery' if writer is direct_upload else 'temporary upload and rename'
+        print(f'Public folder and file replacement verified using {method}.', flush=True)
+        return writer
     finally:
         with contextlib.suppress(ftplib.Error, OSError):
             client.delete(path)
@@ -177,7 +208,7 @@ def ensure_directories(client, paths):
             client.cwd(base)
 
 
-def deploy(client, site, mode):
+def deploy(client, site, mode, reconnect=None):
     package = json.loads(retrieve(client, 'package.json'))
     if package.get('name') != 'learn-english-patterns':
         raise ValueError('The FTPS folder does not contain English Patterns.')
@@ -187,6 +218,7 @@ def deploy(client, site, mode):
     current_build = json.loads(retrieve(client, VERSION))['version']
     if json.loads(public_file(site, 'app-version.json'))['version'] != current_build:
         raise ValueError('The public site and FTPS directory report different application versions.')
+    writer = prove_document_root(client, site) if mode == 'publish' else None
     target_build = json.loads(Path(VERSION).read_text(encoding='utf-8'))['version']
     local_media = media_index(json.loads(Path(MANIFEST).read_text(encoding='utf-8')))
     remote_media = media_index(json.loads(retrieve(client, MANIFEST)))
@@ -205,10 +237,9 @@ def deploy(client, site, mode):
     if mode == 'plan' or not updates and not pending:
         return
 
-    prove_document_root(client, site)
     changed_media = pending | (local_media.keys() & set(updates))
     if changed_media:
-        atomic_upload(client, PENDING_MEDIA, io.BytesIO(json.dumps(sorted(changed_media)).encode('utf-8')))
+        writer(client, PENDING_MEDIA, io.BytesIO(json.dumps(sorted(changed_media)).encode('utf-8')))
     directories = {parent.as_posix() for path in updates for parent in PurePosixPath(path).parents
                    if parent != PurePosixPath('.')}
     ensure_directories(client, directories)
@@ -216,7 +247,15 @@ def deploy(client, site, mode):
     ordered = sorted((path for path in updates if path not in tail), key=lambda path: (path not in local_media, path))
     ordered.extend(path for path in tail if path in updates)
     for index, path in enumerate(ordered, 1):
-        upload(client, path)
+        exists = path in inventory
+        if writer is direct_upload and not exists:
+            client.voidcmd('TYPE I')
+            try:
+                exists = client.size(path) is not None
+            except ftplib.error_perm as exc:
+                if not str(exc).startswith('550 '):
+                    raise
+        upload(client, path, writer, exists, reconnect)
         if index % 100 == 0:
             print(f'Uploaded {index} of {len(updates)} files.', flush=True)
     if json.loads(public_file(site, 'app-version.json'))['version'] != target_build:
@@ -224,6 +263,16 @@ def deploy(client, site, mode):
     if changed_media:
         client.delete(PENDING_MEDIA)
     print(f'The site confirmed version {target_build}.', flush=True)
+
+
+@contextlib.contextmanager
+def connect(host, username, password, root):
+    with ftplib.FTP_TLS(context=ssl.create_default_context(), timeout=45) as client:
+        client.connect(host, 21)
+        client.login(username, password)
+        client.prot_p()
+        client.cwd(root)
+        yield client
 
 
 def main():
@@ -238,12 +287,14 @@ def main():
     password = os.environ['SMARTERASP_FTPS_PASSWORD']
     if not username or not password:
         raise ValueError('Set SMARTERASP_FTPS_USERNAME and SMARTERASP_FTPS_PASSWORD in GitHub Actions Secrets.')
-    with ftplib.FTP_TLS(context=ssl.create_default_context(), timeout=45) as client:
-        client.connect(os.environ['SMARTERASP_FTPS_HOST'], 21)
-        client.login(username, password)
-        client.prot_p()
-        client.cwd(os.environ.get('SMARTERASP_FTPS_ROOT') or '.')
-        deploy(client, site, mode)
+    host = os.environ['SMARTERASP_FTPS_HOST']
+    root = os.environ.get('SMARTERASP_FTPS_ROOT') or '.'
+
+    def reconnect():
+        return connect(host, username, password, root)
+
+    with reconnect() as client:
+        deploy(client, site, mode, reconnect)
 
 
 if __name__ == '__main__':
