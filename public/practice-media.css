@@ -471,6 +471,22 @@ html body .idea-picture-frame>.scene-frame>.scene-photo{width:100%!important;max
 .purpose-choice.active { color: #fff; background: #295342; border-color: #295342; }
 .purpose-choice span { font-size: .84rem; font-variant-numeric: tabular-nums; }
 .purpose-line { display: flex; flex-wrap: wrap; align-items: center; gap: .35rem .6rem; margin-block: .45rem; font-size: .92rem; }
+.lesson-pattern-purpose {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .35rem .6rem;
+  margin-block: .65rem;
+}
+.lesson-main-purpose {
+  margin-block: .45rem .65rem;
+  padding: .7rem .9rem;
+  border-inline-start: 3px solid var(--green);
+  border-radius: .55rem;
+  background: #edf4eb;
+}
+.lesson-main-purpose p { margin: .2rem 0; }
+.lesson-main-purpose .textlink { margin: .2rem 0 0; min-height: 2rem; }
 .purpose-chip { display: inline-block; color: #24463a; background: #e7f1e9; border-radius: 99px; padding: .22rem .7rem; font-size: .89rem; text-decoration: none; }
 .purpose-chip:hover { text-decoration: underline; }
 .purpose-actions, .purpose-practice { margin-block-start: 1rem; }

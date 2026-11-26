@@ -71,11 +71,25 @@ function dialoguePurposeMarkup(id){
  return `<div class="purpose-line"><span>${T('غرض التعبير','Purpose')}</span>${purposeTag(id)}
   <button class="textlink" type="button" onclick="hearPurpose('${id}')">▷ ${T('اسمع الغرض','Hear the purpose')}</button></div>`;
 }
-function playPurposeBeforeLessonExample(done){
- const row=lessonScene(),play=()=>speak(current.examples[example][0],state.voice,done);
- if(!row||route?.session.speakPurpose===false){play();return}
+function mainLessonPurpose(){
+ const prompt=EPCoursePurposePrompts[current?.id];
+ if(!prompt)return null;
+ const [ar,en]=prompt;
+ const cue=PILOT?.trainingAudio?.[referenceStudyAudio.cueId('purpose',en,'female')];
+ return {ar,text:en,recording:cue?.text===en?cue:null};
+}
+function hearMainLessonPurpose(){
+ const track=mainLessonPurpose();
+ if(!track)return;
  stopSpeech();
- const sound=purposeSpeech=narrateSentencePurpose(row,state.rate||1);
+ purposeSpeech=playPurposeTrack(track,state.rate||1);
+}
+function playPurposeBeforeLessonExample(done){
+ const play=()=>speak(current.examples[example][0],state.voice,done);
+ const track=example===0&&mainLessonPurpose();
+ if(!track||route?.session.speakPurpose===false){play();return}
+ stopSpeech();
+ const sound=purposeSpeech=playPurposeTrack(track,state.rate||1);
  sound.done.then(()=>{
   if(purposeSpeech!==sound)return;
   purposeSpeech=null;

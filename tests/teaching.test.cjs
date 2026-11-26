@@ -37,3 +37,21 @@ test('all 1000 references have bilingual purposes and keywords, with notes tied 
   assert.equal(Boolean(guide.rule_ar&&guide.rule_en&&guide.form),Boolean(guide.highlight.length),s.id);
  }
 });
+test('each full lesson has its main sentence’s recorded purpose in the course download',()=>{
+ const prompts=require('../public/course-purpose-prompts.js');
+ const {cueId}=require('../public/reference-study-audio.js');
+ const cues=require('../public/coach-cues.json');
+ const catalog=require('../public/pattern-catalog.json').patterns;
+ const sentences=['pilot','expansion-media'].flatMap(source=>require('../public/'+source+'.json').sentences);
+ const courseMedia=new Map(require('../public/offline-manifest.json').media.filter(asset=>asset.groups.includes('course')).map(asset=>[asset.path,asset.sha256]));
+ for(const pattern of catalog){
+  const id=pattern.planned_pattern_id||pattern.id;
+  const sentence=sentences.find(row=>row.pattern_id===id);
+  assert.equal(sentence.id,pattern.published_sentence_ids?.[0]||pattern.examples[0].id);
+  const [ar,text]=prompts[id];
+  assert(ar&&text);
+  const cue=cues[cueId('purpose',text,'female')];
+  assert.equal(cue.text,text);
+  assert.equal(courseMedia.get(cue.path),cue.sha256);
+ }
+});

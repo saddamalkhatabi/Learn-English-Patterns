@@ -128,3 +128,22 @@ test('every sung line has Arabic text and an exact cue, estimated cue or nearby 
   }
  }
 });
+
+test('Hear Me Out follows its opening, all examples and both choruses with timed words', () => {
+ const {text,scenes} = lyrics['14'];
+ const lines = text.split('\n');
+ const measured = require('../public/song-timing.json')['14'].lines;
+ const timeline = followLyrics(lines, measured, 152000, {measuredOnly:true});
+ assert.deepEqual(timeline.map(cue => cue.line), lines.flatMap((line, index) => line && !line.startsWith('[') ? [index] : []));
+ assert(timeline[0].start_ms >= 10000 && timeline[0].start_ms < 12000);
+ for (const {line,purposeLine} of scenes) {
+  const example = timeline.find(cue => cue.line === line);
+  const purpose = timeline.find(cue => cue.line === purposeLine);
+  assert(purpose.end_ms <= example.start_ms, lines[line]);
+  assert.deepEqual(example.words.map(([start,end]) => lines[line].slice(start,end)), lines[line].match(/\b[a-z]+(?:'[a-z]+)*\b/gi));
+ }
+ const chorus = timeline.filter(cue => lines[cue.line].startsWith('Hear me out'));
+ assert.equal(chorus.length, 2);
+ assert(chorus[0].start_ms > 40000 && chorus[0].start_ms < 43000);
+ assert(chorus[1].start_ms > 113000 && chorus[1].start_ms < 117000);
+});

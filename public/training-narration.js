@@ -70,15 +70,20 @@ function synthesizeTrainingCue(text,rate,role='female'){
  return {done,stop};
 }
 let lessonCue;
-function playLessonStageCue(){
+function playLessonStageCue(withPatternPurpose=false){
  const kind=({0:'pattern-intro',1:'explanation-intro',6:'dialogue-intro'})[stage];
- if(!kind){
-  if(stage>=2&&stage<=5&&route?.session.speakPurpose!==false&&lessonScene())hearSentencePurpose(lessonScene().id);
+ if(!kind)return;
+ const pattern=PILOT?.patterns.find(p=>p.id===current.id)||current;
+ const rate=state.rate||1;
+ lessonCue?.stop();
+ if(!withPatternPurpose||stage!==0||route?.session.speakPurpose===false){
+  lessonCue=narrateTrainingCue(kind,pattern,rate);
   return;
  }
- const pattern=PILOT?.patterns.find(p=>p.id===current.id)||current;
- lessonCue?.stop();
- lessonCue=narrateTrainingCue(kind,pattern,state.rate||1);
+ const purpose=lessonCue=playPurposeTrack(makePurposeTrack(EPPurposes.forPattern(pattern.id)),rate);
+ purpose.done.then(()=>{
+  if(lessonCue===purpose)lessonCue=narrateTrainingCue(kind,pattern,rate);
+ });
 }
 function replayLessonStageCue(){stopSpeech();playLessonStageCue()}
 if(typeof module!=='undefined')module.exports={spokenTrainingCue,trainingCueId,spokenComparison,spokenComparisonNote,ideaWordCueId,ideaSceneCueId};

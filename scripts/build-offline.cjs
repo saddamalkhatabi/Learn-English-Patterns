@@ -1,8 +1,16 @@
 const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');const root=path.resolve(__dirname,'../public'),sha=p=>crypto.createHash('sha256').update(fs.readFileSync(path.join(root,p))).digest('hex');
 require('./build-browser-app.cjs').write();
 require('./build-reference-song-extras.cjs');
+require('./build-song-study.cjs');
 const cues=require('../public/training-audio.json');
 const coachCues=Object.fromEntries(Object.entries(cues).filter(([id])=>/^(pattern-intro-|explanation-intro-|purpose-category-|dialogue-intro$|comparison-)/.test(id)));
+const {cueId}=require('../public/reference-study-audio.js');
+const lessonPurposeCues=Object.values(require('../public/course-purpose-prompts.js')).map(([,text])=>{
+ const id=cueId('purpose',text,'female'),cue=cues[id];
+ if(cue?.text!==text||!cue.sha256)throw Error('Missing main-lesson purpose recording: '+text);
+ coachCues[id]=cue;
+ return cue;
+});
 fs.writeFileSync(path.join(root,'coach-cues.json'),JSON.stringify(coachCues)+'\n');
 const bundled=new Set([...require('./browser-sources.cjs'),'browser-compat.js']);
 const shell=fs.readdirSync(root).filter(p=>/\.(?:html|css|js|json|svg)$/.test(p)&&!bundled.has(p)&&!['sw.js','app-version.js','app-version.json','offline-manifest.json','generation-index.json','release-volumes.json','qa-report.json','qa-report-v4.json'].includes(p));
@@ -26,6 +34,7 @@ for(const [id,spoken] of Object.entries(require('./training-cues.cjs'))){
  if(id.startsWith('explanation-intro-'))sets.library.add(audio.path);
  if(id.startsWith('purpose-category-'))sets.library.add(audio.path);
 }
+for(const cue of lessonPurposeCues)sets.course.add(cue.path);
 for(const scene of require('../public/idea-scenes.json').scenes)sets.course.add(scene.path);
 for(const image of fs.readdirSync(path.join(root,'assets/home')).filter(name=>name.endsWith('.webp'))){
  sets.course.add('assets/home/'+image);
@@ -41,6 +50,12 @@ for(const track of Object.values(require('../public/song-lyrics.json'))){
 for(const song of require('../public/reference-song-library.json'))sets.all.add(song.path);
 for(const track of Object.values(require('../public/reference-song-sync.json').lyrics)){
  for(const scene of track.scenes)sets.all.add(scene.image.atlas);
+}
+for(const entries of Object.values(require('../public/song-study.json'))){
+ for(const entry of entries){
+  sets.all.add(entry.sentence);
+  if(entry.purpose.path)sets.all.add(entry.purpose.path);
+ }
 }
 const plan=require('../production/plans/expansion-all-153.json');for(const file of plan.manifest_paths)add(JSON.parse(fs.readFileSync(file)).sentences,sets.all);
 const media=[...sets.all].sort().map(p=>({path:p,sha256:sha(p),bytes:fs.statSync(path.join(root,p)).size,groups:['course','library','all'].filter(g=>sets[g].has(p))}));

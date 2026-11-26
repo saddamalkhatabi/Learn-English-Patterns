@@ -7,6 +7,10 @@
   return ended||duration>8000&&time>=duration-8000?reviewPractice:null;
  }
 
+ function wordAt(words=[],time){
+  return words.findIndex(([, ,start,end])=>start<=time&&time<end);
+ }
+
  function followLyrics(lines,measured,duration,{measuredOnly=false}={}){
   const cues=measured.map(cue=>({...cue,nearby:[]}));
   if(measuredOnly)return cues.sort((a,b)=>a.start_ms-b.start_ms);
@@ -74,7 +78,17 @@
   return merged;
  }
 
- const api={followLyrics,withEstimatedExamples,practiceAt,reviewPractice};
+ function songStudySteps(mode,entries=[]){
+  if(mode!=='sentences'&&mode!=='purposes')return [];
+  return entries.flatMap((entry,index)=>{
+   const steps=[];
+   if(mode==='purposes'&&entry.purpose.path)steps.push({kind:'purpose',index,path:entry.purpose.path});
+   if(entry.sentence)steps.push({kind:'sentence',index,path:entry.sentence});
+   return steps;
+  });
+ }
+
+ const api={followLyrics,withEstimatedExamples,practiceAt,reviewPractice,songStudySteps,wordAt};
  if(typeof module==='object')module.exports=api;
  else root.EPSongFollow=api;
 })(globalThis);
