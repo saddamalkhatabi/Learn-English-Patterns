@@ -1,0 +1,44 @@
+name: Deploy to SmarterASP
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Plan the update or publish it
+        type: choice
+        options: [plan, publish]
+        default: plan
+      site_url:
+        description: Public HTTPS URL of the existing English Patterns site
+        type: string
+        required: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: smarterasp-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm ci --no-audit --no-fund
+      - run: npm run build
+      - run: python3 scripts/deploy-smarterasp.py
+        env:
+          DEPLOY_MODE: ${{ inputs.mode }}
+          SMARTERASP_SITE_URL: ${{ inputs.site_url }}
+          SMARTERASP_FTPS_HOST: linux6212.site4now.net
+          SMARTERASP_FTPS_ROOT: ${{ vars.SMARTERASP_FTPS_ROOT }}
+          SMARTERASP_FTPS_USERNAME: ${{ secrets.SMARTERASP_FTPS_USERNAME }}
+          SMARTERASP_FTPS_PASSWORD: ${{ secrets.SMARTERASP_FTPS_PASSWORD }}
