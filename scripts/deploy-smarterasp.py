@@ -47,7 +47,11 @@ def media_index(manifest):
 
 def public_file(site, path):
     url = urllib.parse.urljoin(site, path) + '?deploy-check=' + uuid.uuid4().hex
-    request = urllib.request.Request(url, headers={'Cache-Control': 'no-cache'})
+    request = urllib.request.Request(url, headers={
+        'Cache-Control': 'no-cache',
+        'User-Agent': 'English-Patterns-Deploy/1.0',
+        'Accept': 'application/json, text/plain;q=0.9, */*;q=0.1',
+    })
     with urllib.request.urlopen(request, timeout=30) as response:
         if urllib.parse.urlsplit(response.geturl()).scheme != 'https':
             raise ValueError('The site redirected the verification request away from HTTPS.')
