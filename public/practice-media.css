@@ -526,15 +526,18 @@ html body .idea-picture-frame>.scene-frame>.scene-photo{width:100%!important;max
 .learning-picture-choices { display: grid; gap: .5rem; }
 .learning-picture-choices button {
   width: 100%; min-height: 44px; margin: 0; padding: .65rem .8rem;
-  text-align: start; font-weight: 600; line-height: 1.5; overflow-wrap: anywhere;
+  text-align: start; font-size: clamp(1.06rem, .96rem + .32vw, 1.25rem);
+  font-weight: 600; line-height: 1.6; overflow-wrap: anywhere;
 }
 .practice-pattern-word {
-  color: var(--practice-pattern-ink, #852a49); background: var(--practice-pattern-bg, #f8e0e9);
-  border-radius: .2em; padding-inline: .12em; font-weight: 750;
+  color: var(--practice-pattern-ink, #74263f);
+  background: var(--practice-pattern-bg, #f8d6e2);
+  padding: .06em .22em .09em; border-radius: .13em; font-weight: 750;
+  box-decoration-break: clone; -webkit-box-decoration-break: clone;
 }
-.learning-picture-choices [data-practice-tone="1"] { --practice-pattern-ink: #234986; --practice-pattern-bg: #e2ebff; }
-.learning-picture-choices [data-practice-tone="2"] { --practice-pattern-ink: #684508; --practice-pattern-bg: #f7eacb; }
-.learning-picture-choices [data-practice-tone="3"] { --practice-pattern-ink: #56307a; --practice-pattern-bg: #eee3f7; }
+.learning-picture-choices [data-practice-tone="1"] { --practice-pattern-ink: #234986; --practice-pattern-bg: #d7e6ff; }
+.learning-picture-choices [data-practice-tone="2"] { --practice-pattern-ink: #684508; --practice-pattern-bg: #f7e5b7; }
+.learning-picture-choices [data-practice-tone="3"] { --practice-pattern-ink: #56307a; --practice-pattern-bg: #e9dcf6; }
 :is(.wordbank, .answerbank) button.practice-pattern-tile {
   background: #fae7ed; color: #812441; border-color: #c78a9f; font-weight: 750;
 }

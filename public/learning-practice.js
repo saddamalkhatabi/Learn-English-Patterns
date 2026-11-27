@@ -123,7 +123,16 @@
 
  function pictureOption(row){
   const text=englishDisplay(row.en,row),fixed=patternIndexes(row,text);
-  return text.trim().split(/\s+/).map((word,index)=>fixed.has(index)?`<span class="practice-pattern-word">${H(word)}</span>`:H(word)).join(' ');
+  const runs=[];
+  for(const [index,word] of text.trim().split(/\s+/).entries()){
+   const highlighted=fixed.has(index),last=runs.at(-1);
+   if(last?.highlighted===highlighted)last.words.push(word);
+   else runs.push({highlighted,words:[word]});
+  }
+  return runs.map(run=>{
+   const phrase=H(run.words.join(' '));
+   return run.highlighted?`<mark class="practice-pattern-word">${phrase}</mark>`:phrase;
+  }).join(' ');
  }
 
  function nextRows(rows,seen,limit=5){return rows.filter(row=>!seen.has(String(row.id))).slice(0,limit)}

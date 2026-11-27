@@ -68,14 +68,69 @@
    cue,text:text[cue.line],translation:content.translations[cue.line],
    highlights:content.highlights[cue.line],scene:scenes.get(cue.line)
   })).concat(estimated).sort((a,b)=>a.cue.start_ms-b.cue.start_ms);
-  const merged={text:entries.map(entry=>entry.text).join('\n'),lines:[],scenes:[],translations:{},highlights:{}};
+  return packVocalEntries(entries);
+ }
+
+ function packVocalEntries(entries){
+  const merged={text:entries.map(entry=>entry.text).join('\n'),lines:[],scenes:[],translations:{},highlights:{},unplaced:[]};
   for(const [line,entry] of entries.entries()){
-   merged.lines.push({...entry.cue,line});
-   if(entry.scene)merged.scenes.push({...entry.scene,line});
+   if(entry.cue)merged.lines.push({...entry.cue,line});
+   else merged.unplaced.push(line);
+   if(entry.scene){
+    const previous=entries[line-1];
+    const purposeLine=entry.scene.purposeLine!=null&&previous?.sourceLine===entry.scene.purposeLine?line-1:undefined;
+    merged.scenes.push({...entry.scene,line,purposeLine});
+   }
    if(entry.translation)merged.translations[line]=entry.translation;
    if(entry.highlights?.length)merged.highlights[line]=entry.highlights;
   }
   return merged;
+ }
+
+ function withVocalRecovery(content,timing,recovery,examples,patterns,{estimates=true,reference=false,duration}={}){
+  const baseline=content.lines||timing?.lines||[];
+  if(!recovery?.cues?.length||!timing||recovery.sha256!==timing.sha256)return content;
+  const lines=content.text.split('\n');
+  const scenes=new Map(content.scenes.map((scene,index)=>[scene.line,reference?scene:{...scene,patternId:patterns[index]?.id}]));
+  const referenceScenes=new Map([...examples,...content.scenes].map(scene=>[scene.referenceId,scene]));
+  const byReference=new Map(patterns.map(pattern=>[pattern.referenceId,pattern]));
+  const vocalEntry=(cue,sourceLine)=>({
+   cue,sourceLine,text:lines[sourceLine],translation:content.translations[sourceLine],
+   highlights:content.highlights[sourceLine],scene:scenes.get(sourceLine)
+  });
+  const entries=baseline.map(cue=>vocalEntry(cue,cue.line));
+  const clashes=cue=>entries.some(entry=>cue.start_ms<entry.cue.end_ms&&cue.end_ms>entry.cue.start_ms);
+  for(const {sourceLine,en,ar,referenceId,...cue} of recovery.cues){
+   if(cue.approximate&&!estimates||clashes(cue))continue;
+   if(!reference){
+    if(lines[sourceLine]===en)entries.push(vocalEntry(cue,sourceLine));
+    continue;
+   }
+   if(referenceId&&byReference.get(referenceId)?.en!==en)continue;
+   const scene=referenceScenes.get(referenceId);
+   entries.push({cue,text:en,translation:ar,scene,
+    highlights:scene&&(scene.highlights||content.highlights[scene.line])});
+  }
+  if(entries.length===baseline.length)return content;
+  const represented=new Set(entries.map(entry=>entry.text));
+  if(!reference&&estimates){
+   for(const cue of followLyrics(lines,baseline,duration)){
+    if(!cue.approximate||represented.has(lines[cue.line])||clashes(cue))continue;
+    entries.push(vocalEntry(cue,cue.line));
+    represented.add(lines[cue.line]);
+   }
+  }
+  entries.sort((a,b)=>a.cue.start_ms-b.cue.start_ms);
+  if(!reference){
+   for(const [index,text] of lines.entries()){
+    if(!text.trim()||/^\[.*\]$/.test(text.trim())||represented.has(text))continue;
+    entries.push(vocalEntry(undefined,index));
+   }
+  }
+  const merged=packVocalEntries(entries);
+  // The recording may repeat or rearrange the original verses.
+  for(const cue of merged.lines)delete cue.nearby;
+  return {...merged,recordedOrder:true};
  }
 
  function songStudySteps(mode,entries=[]){
@@ -100,7 +155,7 @@
   return pictures;
  }
 
- const api={followLyrics,withEstimatedExamples,practiceAt,reviewPractice,songStudySteps,studyPictures,wordAt};
+ const api={followLyrics,withEstimatedExamples,withVocalRecovery,practiceAt,reviewPractice,songStudySteps,studyPictures,wordAt};
  if(typeof module==='object')module.exports=api;
  else root.EPSongFollow=api;
 })(globalThis);

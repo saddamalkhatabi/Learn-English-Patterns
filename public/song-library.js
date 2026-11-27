@@ -34,7 +34,7 @@ function toggleReferenceSongs(button){
  paintReferenceSongButton(button);
 }
 const renderSongLibrary=(()=>{
- let tracks, visibleTracks=[], filters, lyrics, timings={}, extras={}, practice={}, study={}, selected, root, audio, language, host;
+ let tracks, visibleTracks=[], filters, lyrics, timings={}, extras={}, recovery={}, practice={}, study={}, selected, root, audio, language, host;
  let loading=false, loadFailed=false, playbackFailed=false, pendingStart=false;
  let sequence='off', studyMode='song', prelude=null;
  function playlistKey({collection,level,query}=filters){
@@ -50,6 +50,10 @@ const renderSongLibrary=(()=>{
  let practiceTrack, practiceWindows=[], practiceModels, practicePictures, shownPractice, dismissedPractice, manualPractice=false, practiceListChoice;
  let endReviewTimer=null;
  const patternKey=pattern=>String(pattern.referenceId??pattern.id);
+ function patternForScene(scene,index){
+  const identity=scene.referenceId??scene.patternId;
+  return identity==null?selected.patterns[index]:selected.patterns.find(pattern=>patternKey(pattern)===String(identity));
+ }
  let preloadedScenes=new Set();
  const stopOtherAudio=stopSpeech;
  stopSpeech=function(options){
@@ -116,7 +120,7 @@ const renderSongLibrary=(()=>{
   const byLine=new Map(timeline.map(cue=>[cue.line,cue]));
   practiceModels=new Map();
   for(const [index,scene] of scenes.entries()){
-   const pattern=scene.referenceId?selected.patterns.find(item=>item.referenceId===scene.referenceId):selected.patterns[index];
+   const pattern=patternForScene(scene,index);
    const cue=byLine.get(scene.line);
    if(!pattern||cue?.approximate||practiceModels.has(patternKey(pattern)))continue;
    const line=lines[scene.line],fixed=highlights[scene.line];
@@ -210,26 +214,31 @@ const renderSongLibrary=(()=>{
   const track=timings[selected.id];
   const reference=selected.collection==='reference';
   const estimatesEnabled=EP.prefs.songEstimates!==false;
-  const content=reference?EPSongFollow.withEstimatedExamples(
+  const base=reference?EPSongFollow.withEstimatedExamples(
    lyrics[selected.id],track,estimatesEnabled?extras[selected.id]:null,selected.patterns):lyrics[selected.id];
+  const duration=selected.duration*1000;
+  const content=EPSongFollow.withVocalRecovery(base,track,recovery[selected.id],extras[selected.id]?.examples||[],
+   selected.patterns,{reference,duration,estimates:estimatesEnabled});
   const {text,highlights,scenes=[],translations={}}=content;
   const lines=text.split('\n');
-  timeline=EPSongFollow.followLyrics(lines,content.lines||track?.lines||[],selected.duration*1000,
-   {measuredOnly:reference||!estimatesEnabled});
+  timeline=EPSongFollow.followLyrics(lines,content.lines||track?.lines||[],duration,
+   {measuredOnly:reference||content.recordedOrder||!estimatesEnabled});
   songTranslations=translations;
   const byLine=new Map(timeline.map(cue=>[cue.line,cue]));
   focusLines=lines.map((line,index)=>lyricLine(line,highlights[index],byLine.get(index)?.words));
   sceneCues=scenes.flatMap((scene,index)=>{
    const purpose=byLine.get(scene.purposeLine),example=byLine.get(scene.line);
    if(!purpose&&!example)return [];
-   const pattern=scene.referenceId?selected.patterns.find(item=>item.referenceId===scene.referenceId):selected.patterns[index];
+   const pattern=patternForScene(scene,index);
    return pattern?[{...scene,pattern,start:(purpose||example).start_ms,end:(example||purpose).end_ms,
     approximate:Boolean(example?.approximate)}]:[];
   });
   const panel=root.querySelector('.song-lyrics-text');
+  const unplaced=new Set(content.unplaced);
   panel.innerHTML=focusLines.map((line,index)=>line?`<div class="song-transcript-row">
    <span class="song-lyric-line" data-song-line="${index}" lang="en" dir="ltr">${line}</span>
-   ${byLine.get(index)?.approximate?`<small class="song-transcript-estimate">${T('توقيت تقديري','Estimated timing')}</small>`:''}
+   ${byLine.get(index)?.approximate?`<small class="song-transcript-estimate">${T('توقيت تقديري','Estimated timing')}</small>`:
+    unplaced.has(index)?`<small class="song-transcript-estimate">${T('في النص المكتوب · توقيته غير مؤكّد','From the script · Timing unconfirmed')}</small>`:''}
    ${EP.prefs.arabic&&translations[index]?`<small class="song-translation" lang="ar" dir="rtl">${H(translations[index])}</small>`:''}
   </div>`:'').join('');
   panel.scrollTop=0;
@@ -289,9 +298,9 @@ const renderSongLibrary=(()=>{
   if(prelude){paintSongStudyTiming();return}
   const time=audio.currentTime*1000;
   paintSongPractice(time);
-  let previous,cue;
+  let previous,cue,next;
   for(const line of timeline){
-   if(line.start_ms>time)break;
+   if(line.start_ms>time){next=line;break}
    previous=line;
    if(time<line.end_ms)cue=line;
   }
@@ -308,7 +317,8 @@ const renderSongLibrary=(()=>{
     phase==='purpose'?T('غرض الجملة','Why we say it'):'';
   }
   const focus=stage.querySelector('.song-focus-line');
-  const displayed=selected.collection==='reference'&&previous&&time-previous.end_ms>450?null:previous;
+  const shortPause=previous&&next&&next.start_ms-previous.end_ms<=3200;
+  const displayed=cue||(previous&&(shortPause||time-previous.end_ms<=900)?previous:null);
   if(displayed!==shownCue){
    shownCue=displayed;
    stage.dataset.approximate=String(Boolean(displayed?.approximate));
@@ -578,12 +588,13 @@ const renderSongLibrary=(()=>{
   loadFailed=false;
   paintPage();
   try{
-   const [data,texts,lineTimes,reference,referenceSync,practiceData,referenceExtras,studyData]=await Promise.all([
+   const [data,texts,lineTimes,reference,referenceSync,practiceData,referenceExtras,studyData,recoveredVocals]=await Promise.all([
     songCatalogReady.then(rows=>rows||epFetchJSON('song-library.json')),epFetchJSON('song-lyrics.json'),
     epFetchJSON('song-timing.json').catch(()=>({})),
     referenceSongCatalogReady.then(rows=>rows||epFetchJSON('reference-song-library.json')).catch(()=>null),
     epFetchJSON('reference-song-sync.json').catch(()=>null),epFetchJSON('song-practice.json').catch(()=>null),
-    epFetchJSON('reference-song-extras.json').catch(()=>null),epFetchJSON('song-study.json').catch(()=>null)
+    epFetchJSON('reference-song-extras.json').catch(()=>null),epFetchJSON('song-study.json').catch(()=>null),
+    epFetchJSON('song-vocal-recovery.json').catch(()=>null)
    ]);
    if(!Array.isArray(data)||!data.length||!data.every(song=>texts?.[song.id]?.text)){
     throw Error('Song catalog or lyrics are unavailable');
@@ -593,6 +604,7 @@ const renderSongLibrary=(()=>{
    timings={...lineTimes,...referenceSync?.timings};
    practice=practiceData?.tracks||{};
    extras=referenceExtras||{};
+   recovery=recoveredVocals||{};
    study=studyData||{};
    tracks=[...data,...references];
    songSearchRows=tracks;
