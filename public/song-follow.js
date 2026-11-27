@@ -1,10 +1,10 @@
 (function(root){
  const reviewPractice={kind:'review'};
 
- function practiceAt(windows,time,duration,ended=false){
+ function practiceAt(windows,time,duration,ended=false,vocalEnd=0){
   const active=windows.find(({start_ms,end_ms})=>start_ms<=time&&time<end_ms);
   if(active)return active;
-  return ended||duration>8000&&time>=duration-8000?reviewPractice:null;
+  return ended||duration>8000&&time>=Math.max(duration-8000,vocalEnd)?reviewPractice:null;
  }
 
  function wordAt(words=[],time){

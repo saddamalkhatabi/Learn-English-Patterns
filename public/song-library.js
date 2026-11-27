@@ -156,7 +156,7 @@ const renderSongLibrary=(()=>{
  function activeSongPractice(time=audio.currentTime*1000){
   if(audio.ended)return EPSongFollow.reviewPractice;
   const duration=Number.isFinite(audio.duration)?audio.duration:selected.duration;
-  return EPSongFollow.practiceAt(practiceWindows,time,duration*1000);
+  return EPSongFollow.practiceAt(practiceWindows,time,duration*1000,false,timeline.at(-1)?.end_ms);
  }
 
  function paintPracticeList(){

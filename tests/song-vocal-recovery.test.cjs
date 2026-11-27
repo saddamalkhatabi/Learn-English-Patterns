@@ -1,6 +1,6 @@
 const test=require('node:test');
 const assert=require('node:assert/strict');
-const {withEstimatedExamples,withVocalRecovery,followLyrics}=require('../public/song-follow.js');
+const {withEstimatedExamples,withVocalRecovery,followLyrics,practiceAt,reviewPractice}=require('../public/song-follow.js');
 const foundation=require('../public/song-library.json');
 const references=require('../public/reference-song-library.json');
 const authoredLyrics=require('../public/song-lyrics.json');
@@ -41,6 +41,9 @@ test('The Pieces Fit follows the repeated chorus, the last verse and the final c
  assert(scene.photo||scene.image);
  assert.equal(scene.line,at(158000).line);
  assert.equal(timeline.filter(cue=>lines[cue.line]==='The pieces fit when you sing with me.').length,3);
+ const vocalEnd=timeline.at(-1).end_ms;
+ assert.equal(practiceAt([],179000,song.duration*1000,false,vocalEnd),null);
+ assert.equal(practiceAt([],vocalEnd,song.duration*1000,false,vocalEnd),reviewPractice);
 });
 
 test('recovered lyrics preserve the original audio anchors and keep word timing separate from estimates',()=>{
