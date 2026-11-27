@@ -47,7 +47,8 @@ const renderSongLibrary=(()=>{
  let checkpoint,attempt,bufferTimer;
  let timeline=[],sceneCues=[],focusLines=[],songTranslations={},shownCue,activeCue,activeScene,activeLine,activeWord,focusedWord,lyricFrame;
  let studyLine,studyWord,studyWords=[];
- let practiceTrack, practiceWindows=[], practiceModels, shownPractice, dismissedPractice, manualPractice=false, practiceListChoice;
+ let practiceTrack, practiceWindows=[], practiceModels, practicePictures, shownPractice, dismissedPractice, manualPractice=false, practiceListChoice;
+ let endReviewTimer=null;
  const patternKey=pattern=>String(pattern.referenceId??pattern.id);
  let preloadedScenes=new Set();
  const stopOtherAudio=stopSpeech;
@@ -111,6 +112,7 @@ const renderSongLibrary=(()=>{
   const trackTiming=timings[selected.id];
   const guided=practice[selected.id];
   practiceWindows=guided&&guided.sha256===trackTiming?.sha256?guided.windows:[];
+  practicePictures=EPSongFollow.studyPictures(lyrics[selected.id].scenes||[],extras[selected.id]?.examples||[],selected.patterns);
   const byLine=new Map(timeline.map(cue=>[cue.line,cue]));
   practiceModels=new Map();
   for(const [index,scene] of scenes.entries()){
@@ -132,7 +134,7 @@ const renderSongLibrary=(()=>{
 
  function practiceExample(pattern,replay=false){
   const model=practiceModels.get(patternKey(pattern));
-  const picture=songExamplePicture(pattern,model?.scene);
+  const picture=songExamplePicture(pattern,practicePictures.get(patternKey(pattern)));
   return `<div class="song-practice-example${picture?' has-picture':''}">
    ${picture}
    <div class="song-practice-copy"><div class="song-practice-phrase" lang="en" dir="ltr">${model?.text??H(pattern.en)}</div>
@@ -148,8 +150,9 @@ const renderSongLibrary=(()=>{
  }
 
  function activeSongPractice(time=audio.currentTime*1000){
+  if(audio.ended)return EPSongFollow.reviewPractice;
   const duration=Number.isFinite(audio.duration)?audio.duration:selected.duration;
-  return EPSongFollow.practiceAt(practiceWindows,time,duration*1000,audio.ended);
+  return EPSongFollow.practiceAt(practiceWindows,time,duration*1000);
  }
 
  function paintPracticeList(){
@@ -166,6 +169,7 @@ const renderSongLibrary=(()=>{
   const button=root.querySelector('[data-song-practice-pause]');
   button.hidden=!shownPractice||audio.ended||(audio.paused&&audio.currentTime===0);
   button.textContent=audio.paused?T('تابع الأغنية','Continue song'):T('وقفة للترديد','Pause to practise');
+  root.querySelector('[data-song-next]').hidden=endReviewTimer===null;
  }
 
  function paintSongPractice(time){
@@ -389,7 +393,7 @@ const renderSongLibrary=(()=>{
    `الجملة ${step.index+1} من ${selected.patterns.length}`,`Sentence ${step.index+1} of ${selected.patterns.length}`);
   panel.querySelector('[data-song-skip-prelude]').textContent=T('انتقل إلى الأغنية','Skip to the song');
   const model=practiceModels.get(patternKey(pattern));
-  const picture=songExamplePicture(pattern,model?.scene,'eager');
+  const picture=songExamplePicture(pattern,practicePictures.get(patternKey(pattern)),'eager');
   const speakingPurpose=step.kind==='purpose';
   const fixed=model?.line===pattern.en?model.highlights:undefined;
   const example=panel.querySelector('.song-study-example');
@@ -534,6 +538,8 @@ const renderSongLibrary=(()=>{
   }
   root.querySelector('#song-list-title').textContent=T('قائمة الأغاني','Songs');
   root.querySelector('[data-song-list]').textContent=T('قائمة الأغاني والفلاتر','Songs and filters');
+  root.querySelector('[data-song-match]').textContent=T('اربط الجمل بالصور','Match sentences to pictures');
+  root.querySelector('[data-song-next]').textContent=T('الأغنية التالية','Next song');
   root.querySelector('[data-song-clear]').textContent=T('مسح الفلاتر','Clear filters');
   root.querySelector('.song-filter-empty').textContent=T('لا توجد أغانٍ تطابق هذه الفلاتر.','No songs match these filters.');
   root.querySelector('#song-lyrics-title').textContent=T('كلمات الأغنية','Lyrics');
@@ -680,6 +686,7 @@ const renderSongLibrary=(()=>{
  }
 
  function playTrack(track,{offset=0,retried=false,reload=false,intro=null,reveal=false}={}){
+  clearSongEndReview();
   const player=audio;
   clearTimeout(bufferTimer);
   const current={offset:offset>0?offset:null,retried,reveal};
@@ -714,6 +721,7 @@ const renderSongLibrary=(()=>{
  function toggleSequence(resume=false){
   if(!visibleTracks.length)return;
   if(!resume&&sequence==='playing'){
+   clearSongEndReview();
    rememberPlaylist(true);
    sequence='paused';
    clearTimeout(bufferTimer);
@@ -735,6 +743,7 @@ const renderSongLibrary=(()=>{
 
  function pauseSongPlayer(){
   if(!audio)return;
+  clearSongEndReview();
   pendingStart=false;
   if(sequence==='playing'){
    rememberPlaylist(true);
@@ -744,6 +753,44 @@ const renderSongLibrary=(()=>{
   attempt=null;
   audio.pause();
   if(tracks?.length)paintPlaybackStatus();
+ }
+
+ function songPictureRows(){
+  return selected.patterns.map(pattern=>{
+   const id=patternKey(pattern),scene=practicePictures.get(id);
+   return {...pattern,id,image:scene?.image,photo:scene?.photo};
+  });
+ }
+
+ function clearSongEndReview(){
+  if(endReviewTimer===null)return;
+  clearTimeout(endReviewTimer);
+  endReviewTimer=null;
+  root?.querySelector('[data-song-next]')?.setAttribute('hidden','');
+ }
+
+ function advanceSongPlaylist(){
+  clearSongEndReview();
+  if(sequence!=='playing')return;
+  const next=visibleTracks[visibleTracks.indexOf(selected)+1];
+  if(next){startTrack(next,null,false);return}
+  sequence='finished';
+  attempt=null;
+  storeCheckpoint(null);
+  paintPlaybackStatus();
+ }
+
+ function openSongPicturePractice(trigger){
+  const track=selected,player=audio,playing=!audio.paused,waiting=endReviewTimer!==null;
+  EPPractice.open('pictures',songPictureRows(),{trigger,
+   exitLabel:waiting?T('تابع قائمة الأغاني','Continue playlist'):T('ارجع إلى الأغنية','Return to the song'),
+   onStart(){clearSongEndReview();player.pause()},
+   onExit(){
+    if(player!==audio||track!==selected||!root?.isConnected)return;
+    if(waiting||player.ended&&sequence==='playing')advanceSongPlaylist();
+    else if(playing)player.play().catch(()=>paintPlaybackStatus());
+   }
+  });
  }
 
  function selectInitialTrack(){
@@ -832,6 +879,8 @@ const renderSongLibrary=(()=>{
         <div class="song-practice-actions">
          <button type="button" class="secondary" data-song-practice-pause hidden></button>
          <button type="button" class="secondary" data-song-practice-list aria-expanded="false" aria-controls="song-practice-examples"></button>
+         <button type="button" class="secondary" data-song-match></button>
+         <button type="button" class="secondary" data-song-next hidden></button>
         </div>
         <ol id="song-practice-examples" class="song-practice-examples" tabindex="0" hidden></ol>
        </section>
@@ -874,6 +923,7 @@ const renderSongLibrary=(()=>{
   const player=audio;
   player.addEventListener('play',()=>{
    if(player!==audio)return;
+   clearSongEndReview();
    stopOtherAudio();
    playbackFailed=false;
    paintPlaybackStatus();
@@ -922,19 +972,15 @@ const renderSongLibrary=(()=>{
     playTrack(selected,{intro:index<prelude.steps.length?{...prelude,index}:null});
     return;
    }
+   dismissedPractice=null;
    paintSongTiming();
    paintPracticeTransport();
    if(sequence!=='playing')return;
    clearTimeout(bufferTimer);
-   const next=visibleTracks[visibleTracks.indexOf(selected)+1];
-   if(next){
-    startTrack(next,null,false);
-    return;
-   }
-   sequence='finished';
-   attempt=null;
-   storeCheckpoint(null);
-   paintPlaybackStatus();
+   if(visibleTracks[visibleTracks.indexOf(selected)+1]&&EPPractice.distinctRows(songPictureRows(),'pictures').length>=2){
+    endReviewTimer=setTimeout(advanceSongPlaylist,6500);
+    paintPracticeTransport();
+   }else advanceSongPlaylist();
   });
   root.querySelector('[data-song-mode]').addEventListener('change',event=>changeSongStudyMode(event.target.value));
   root.addEventListener('click',event=>{
@@ -967,6 +1013,10 @@ const renderSongLibrary=(()=>{
    }else if(button.hasAttribute('data-song-practice-pause')){
     if(audio.paused)playTrack(selected,{offset:audio.currentTime});
     else audio.pause();
+   }else if(button.hasAttribute('data-song-match')){
+    openSongPicturePractice(button);
+   }else if(button.hasAttribute('data-song-next')){
+    advanceSongPlaylist();
    }else if(button.hasAttribute('data-song-transcript')){
     const transcript=root.querySelector('#song-full-lyrics');
     transcript.hidden=!transcript.hidden;

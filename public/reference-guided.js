@@ -227,13 +227,13 @@ function openReferenceGuided(ids,{voice,full=true,strategy='study'}={}){
     </select></label>`}
    <bdi data-guide-voice-now></bdi>
    <span data-guide-position></span>
-  </div><p class="reference-guided-status" data-guide-status role="status"></p>
+  </div><div data-guide-practice></div><p class="reference-guided-status" data-guide-status role="status"></p>
   <section class="reference-guided-content" data-guide-content></section>`;
  const trigger=document.activeElement;
  const voiceMode=voice==='male'||voice==='female'?voice:referenceGuidedVoiceMode;
  const session={dialog,ids,index:0,stages,stage:stages[0],track:0,voiceMode,firstVoice:referencePlayer?.state.voice||'male',
   full,purpose,run:0,sound:null,audio:new Audio(),
-  rate:referencePlayer?.state.rate||1,lesson,ready:null,playing:false,complete:false};
+  rate:referencePlayer?.state.rate||1,lesson,ready:null,playing:false,complete:false,heard:new Map(),practice:{}};
  referenceGuided=session;
  dialog.querySelectorAll('[data-purpose-step]').forEach(input=>input.onchange=()=>
   changeReferencePurposeStep(session,input.dataset.purposeStep,input.checked));
@@ -292,6 +292,7 @@ function positionReferenceGuided(session,index,stage){
  session.index=index;
  session.stage=stage;
  session.track=0;
+ session.activeSentence=session.activeRecording=session.practiceResume=null;
  session.complete=false;
  session.lesson=referenceGuidedLesson(session.ids[index]);
  session.dialog.querySelector('[data-guide-content]').scrollTop=0;
@@ -305,7 +306,12 @@ function updateReferenceGuidedControls(session,status=''){
  dialog.querySelector('[data-guide-mini-stage]').textContent=T(...referenceGuideStages[stage].slice(1,3));
  const activeVoice=session.purpose?referencePurposeTracks(lesson)[session.track]?.voice:session.voice;
  dialog.querySelector('[data-guide-voice-now]').textContent=activeVoice==='female'?'Bella':'Adam';
- dialog.querySelector('[data-guide-status]').textContent=status;
+ dialog.querySelector('[data-guide-status]').textContent=status||(complete?T('اكتمل الاستماع.','Listening complete.'):'');
+ const practice=dialog.querySelector('[data-guide-practice]');
+ if(practice.dataset.finished!==String(complete)){
+  practice.dataset.finished=String(complete);
+  practice.innerHTML=EPPractice.actions('openGuidedReferencePractice',{atEnd:complete});
+ }
  dialog.querySelector('[data-guide-move="-1"]').disabled=index===0;
  dialog.querySelector('[data-guide-move="1"]').disabled=index===ids.length-1;
  dialog.querySelectorAll('[data-guide-stage]').forEach(button=>button.setAttribute('aria-pressed',Number(button.dataset.guideStage)===stage));
@@ -316,6 +322,24 @@ function pauseReferenceGuided(session){
  session.sound?.stop();
  session.sound=null;
  updateReferenceGuidedControls(session);
+}
+function openGuidedReferencePractice(kind,trigger){
+ const session=referenceGuided;
+ if(!session)return;
+ const {ids,index,stage,track,lesson,audio,playing}=session;
+ const rows=[...session.heard.values()].reverse();
+ if(!session.complete)rows.unshift(session.activeSentence||lesson.base);
+ const alternatives=[lesson.base,...(lesson.examples||[]),...ids.slice(Math.max(0,index-3),index+4).map(id=>
+  typeof id==='number'?firstScene(id):referencePlayer?.rows.get(id))];
+ if(kind==='pictures'&&EPPractice.distinctRows([...rows,...alternatives],kind).length<2)alternatives.push(...referencePictureAlternatives(lesson.base));
+ EPPractice.open(kind,rows,{alternatives,seen:session.practice[kind]??=new Set(),trigger,onStart(){
+  if(playing&&!audio.paused&&audio.readyState>=1&&session.activeRecording?.path===audio.getAttribute('src')){
+   session.practiceResume={index,stage,track,seconds:audio.currentTime};
+  }
+  pauseReferenceGuided(session);
+ },onExit(){
+  if(referenceGuided===session&&session.dialog.open&&playing&&session.index===index&&session.stage===stage&&session.track===track)runReferenceGuided(session);
+ }});
 }
 function paintReferenceGuided(session,track,examples,words){
  if(session.purpose){paintReferencePurpose(session,track);return}
@@ -380,10 +404,10 @@ function paintReferencePurpose(session,active){
  EP.decorate();
 }
 
-function playReferenceGuidedRecording(session,track){
+function playReferenceGuidedRecording(session,track,offset){
  const {audio,dialog,rate}=session,recording=track.recording;
  if(!recording?.path)return synthesizeTrainingCue(track.text,rate,track.voice||session.voice);
- if(recording.start_ms!=null)return playVocabularyClip(recording,{audio,rate});
+ if(recording.start_ms!=null)return playVocabularyClip(offset?{...recording,start_ms:Math.max(recording.start_ms,offset*1000)}:recording,{audio,rate});
  let finish,settled=false,frame,last=-1;
  const done=new Promise(resolve=>{finish=resolve});
  const words=track.row&&recording.words?dialog.querySelectorAll('.reference-guided-sentence [data-guide-word]'):[];
@@ -404,12 +428,16 @@ function playReferenceGuidedRecording(session,track){
   if(settled)return;
   settled=true;
   cancelAnimationFrame(frame);
-  audio.onended=audio.onerror=audio.ontimeupdate=audio.onplaying=null;
+  audio.onended=audio.onerror=audio.ontimeupdate=audio.onplaying=audio.onloadedmetadata=null;
   audio.pause();
   words.forEach(word=>word.classList.remove('speaking'));
   finish(ok);
  }
- audio.src=recording.path;
+ const sameSource=audio.getAttribute('src')===recording.path;
+ const seek=()=>{audio.currentTime=Math.min(offset,Math.max(0,audio.duration-.025))};
+ if(sameSource&&audio.readyState>=1)seek();
+ else if(offset)audio.onloadedmetadata=seek;
+ if(!sameSource||audio.error)audio.src=recording.path;
  audio.playbackRate=rate;
  audio.ontimeupdate=mark;
  if(words.length)audio.onplaying=()=>{cancelAnimationFrame(frame);tick()};
@@ -448,9 +476,14 @@ async function runReferenceGuided(session){
   }
   const next=referenceGuidedTrackList(session,stage,examples,words)[track];
   if(next){
+   const resume=session.practiceResume;
+   const offset=resume?.index===session.index&&resume.stage===stage&&resume.track===track?resume.seconds:0;
+   session.practiceResume=null;
+   session.activeSentence=next.row||null;
+   session.activeRecording=next.recording||null;
    session.dialog.querySelector('[data-guide-voice-now]').textContent=(next.voice||session.voice)==='female'?'Bella':'Adam';
    paintReferenceGuided(session,next,examples,words);
-   session.sound=playReferenceGuidedRecording(session,next);
+   session.sound=playReferenceGuidedRecording(session,next,offset);
    let played=await session.sound.done;
    if(session.run!==run)return;
    if(!played&&next.recording){
@@ -464,6 +497,8 @@ async function runReferenceGuided(session){
     updateReferenceGuidedControls(session,T('تعذّر تشغيل الصوت. اضغط تشغيل للمحاولة أو اختر مرحلة أخرى.','Audio could not play. Press Play to retry or choose another stage.'));
     return;
    }
+   if(next.row&&(next.kind==='sentence'||next.kind==='context'))session.heard.set(String(next.row.id),next.row);
+   session.activeRecording=null;
    session.track++;
    session.sound=waitReferenceGuided(referenceStudyAudio.guideGap(next.kind));
    await session.sound.done;

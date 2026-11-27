@@ -88,7 +88,19 @@
   });
  }
 
- const api={followLyrics,withEstimatedExamples,practiceAt,reviewPractice,songStudySteps,wordAt};
+ function studyPictures(scenes,examples,patterns){
+  const pictures=new Map();
+  for(const [index,scene] of scenes.entries()){
+   const id=scene.referenceId??patterns[index]?.id;
+   if(id!=null&&(scene.photo||scene.image)&&!pictures.has(String(id)))pictures.set(String(id),scene);
+  }
+  for(const scene of examples){
+   if((scene.photo||scene.image)&&!pictures.has(scene.referenceId))pictures.set(scene.referenceId,scene);
+  }
+  return pictures;
+ }
+
+ const api={followLyrics,withEstimatedExamples,practiceAt,reviewPractice,songStudySteps,studyPictures,wordAt};
  if(typeof module==='object')module.exports=api;
  else root.EPSongFollow=api;
 })(globalThis);

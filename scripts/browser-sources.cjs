@@ -11,6 +11,7 @@ module.exports=[
  "purpose-experience.js",
  "app.js",
  "structure-rules.js",
+ "learning-practice.js",
  "learning.js",
  "enhancements.js",
  "production-ui.js",

@@ -12,3 +12,17 @@ test('stale audio events cannot overwrite the saved offset of a restored referen
  audio.currentTime=0;audio.emit('timeupdate');player.pause();
  assert.equal(player.state.offset,3.25);
 });
+test('a filtered reference route remembers heard items across reloads and resets on a new selection',()=>{
+ const audio=new FakeAudio(),saved=storage(),player=new CorpusPlayer({sentences:rows,audio,storage:saved});
+ player.start(['a','b','c'],'a');audio.metadata();
+ audio.emit('ended');audio.metadata();
+ player.move(1);audio.metadata();audio.emit('ended');
+ assert.deepEqual(player.state.heard,['a','c']);
+ player.state.practice={pictures:['a']};player.save();
+ const restored=new CorpusPlayer({sentences:rows,audio:new FakeAudio(),storage:saved});
+ assert.deepEqual(restored.state.heard,['a','c']);
+ assert.deepEqual(restored.state.practice.pictures,['a']);
+ restored.start(['b'],'b');
+ assert.deepEqual(restored.state.heard,[]);
+ assert.deepEqual(restored.state.practice,{});
+});

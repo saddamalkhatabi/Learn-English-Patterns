@@ -113,7 +113,7 @@ function useSharedReferencePlan(plan){
  epReference.purpose=EPPurposes.get(epReference.purpose)?epReference.purpose:'';
  referencePage=0;
  referencePlayer.storage=null;
- referencePlayer.state={...referencePlayer.state,ids:[],cursor:0,complete:false,offset:0,voice:plan.voice,rate:plan.rate,auto:plan.auto};
+ referencePlayer.state={...referencePlayer.state,ids:[],cursor:0,complete:false,offset:0,voice:plan.voice,rate:plan.rate,auto:plan.auto,heard:[],practice:{}};
  referenceGuidedVoiceMode=plan.guideVoice;
  Object.assign(referencePurposePrefs,plan.purposeSteps);
  patternsImageMode=plan.imageMode;applyPatternsImageMode();

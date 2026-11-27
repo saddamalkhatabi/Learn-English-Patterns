@@ -487,6 +487,47 @@ html body .idea-picture-frame>.scene-frame>.scene-photo{width:100%!important;max
 }
 .lesson-main-purpose p { margin: .2rem 0; }
 .lesson-main-purpose .textlink { margin: .2rem 0 0; min-height: 2rem; }
+
+.learning-practice-dialog {
+  width: min(94vw, 940px);
+  padding: clamp(.9rem, 2.6vw, 1.5rem);
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: #f9faf5;
+  color: var(--ink);
+}
+.learning-practice-dialog::backdrop { background: #183b35a6; }
+.learning-practice-header, .learning-practice-meta, .learning-practice-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .45rem .85rem;
+}
+.learning-practice-header, .learning-practice-meta { justify-content: space-between; }
+.learning-practice-header { margin-block-end: .6rem; }
+.learning-practice-header h2, .learning-practice-meta p { margin: 0; }
+.learning-practice-meta { margin-block: .65rem; color: var(--muted); }
+.learning-practice-question { display: grid; gap: 1rem; }
+.learning-practice-question.has-picture { grid-template-columns: minmax(0, 1fr) minmax(0, 1.35fr); align-items: center; }
+.learning-practice-picture { width: 100%; max-width: 21rem; justify-self: center; overflow: hidden; border-radius: .65rem; }
+.learning-practice-picture img { display: block; width: 100%; height: auto; }
+.learning-practice-answer { min-width: 0; }
+.learning-picture-choices { display: grid; gap: .5rem; }
+.learning-picture-choices button {
+  width: 100%; min-height: 44px; margin: 0; padding: .65rem .8rem;
+  text-align: start; font-weight: 600; line-height: 1.5; overflow-wrap: anywhere;
+}
+.learning-picture-choices button.correct { opacity: 1; border-color: var(--green); background: #dbeee0; color: var(--green); }
+.learning-picture-choices button.incorrect { opacity: 1; border-color: #ca7d7d; background: #f9e8e8; color: #85283a; }
+.learning-practice-feedback { min-height: 1.6em; margin: .55rem 0; }
+.learning-practice-feedback.correct { color: var(--green); font-weight: 650; }
+.learning-practice-actions button { min-height: 42px; margin: 0; }
+.learning-practice-answer .answerbank { justify-content: flex-start; min-height: 3rem; }
+.learning-practice-answer .wordbank button, .learning-practice-answer .answerbank button { min-height: 42px; }
+@media (max-width: 620px) {
+  .learning-practice-question.has-picture { grid-template-columns: minmax(0, 1fr); }
+  .learning-practice-picture { max-width: min(70vw, 14rem); }
+}
 .purpose-chip { display: inline-block; color: #24463a; background: #e7f1e9; border-radius: 99px; padding: .22rem .7rem; font-size: .89rem; text-decoration: none; }
 .purpose-chip:hover { text-decoration: underline; }
 .purpose-actions, .purpose-practice { margin-block-start: 1rem; }
