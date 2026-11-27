@@ -507,15 +507,36 @@ html body .idea-picture-frame>.scene-frame>.scene-photo{width:100%!important;max
 .learning-practice-header { margin-block-end: .6rem; }
 .learning-practice-header h2, .learning-practice-meta p { margin: 0; }
 .learning-practice-meta { margin-block: .65rem; color: var(--muted); }
+.learning-practice-meta bdi { font-variant-numeric: tabular-nums; }
+.learning-practice-options {
+  display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: .2rem 1rem;
+  margin-block-end: .8rem; color: var(--muted); font-size: .9rem;
+}
+.learning-practice-options label { display: inline-flex; align-items: center; gap: .45rem; min-height: 36px; cursor: pointer; }
+.learning-practice-options input[type="checkbox"] { width: 1.15rem; height: 1.15rem; margin: 0; accent-color: var(--green); }
 .learning-practice-question { display: grid; gap: 1rem; }
 .learning-practice-question.has-picture { grid-template-columns: minmax(0, 1fr) minmax(0, 1.35fr); align-items: center; }
-.learning-practice-picture { width: 100%; max-width: 21rem; justify-self: center; overflow: hidden; border-radius: .65rem; }
+.learning-practice-visual { min-width: 0; }
+.learning-practice-picture { width: 100%; max-width: 21rem; margin-inline: auto; overflow: hidden; border-radius: .65rem; }
 .learning-practice-picture img { display: block; width: 100%; height: auto; }
+.learning-practice-hint { max-width: 21rem; margin: .5rem auto 0; color: var(--muted); }
+.learning-practice-hint summary { cursor: pointer; min-height: 32px; }
+.learning-practice-hint p { margin-block: 0 .4rem; }
 .learning-practice-answer { min-width: 0; }
 .learning-picture-choices { display: grid; gap: .5rem; }
 .learning-picture-choices button {
   width: 100%; min-height: 44px; margin: 0; padding: .65rem .8rem;
   text-align: start; font-weight: 600; line-height: 1.5; overflow-wrap: anywhere;
+}
+.practice-pattern-word {
+  color: var(--practice-pattern-ink, #852a49); background: var(--practice-pattern-bg, #f8e0e9);
+  border-radius: .2em; padding-inline: .12em; font-weight: 750;
+}
+.learning-picture-choices [data-practice-tone="1"] { --practice-pattern-ink: #234986; --practice-pattern-bg: #e2ebff; }
+.learning-picture-choices [data-practice-tone="2"] { --practice-pattern-ink: #684508; --practice-pattern-bg: #f7eacb; }
+.learning-picture-choices [data-practice-tone="3"] { --practice-pattern-ink: #56307a; --practice-pattern-bg: #eee3f7; }
+:is(.wordbank, .answerbank) button.practice-pattern-tile {
+  background: #fae7ed; color: #812441; border-color: #c78a9f; font-weight: 750;
 }
 .learning-picture-choices button.correct { opacity: 1; border-color: var(--green); background: #dbeee0; color: var(--green); }
 .learning-picture-choices button.incorrect { opacity: 1; border-color: #ca7d7d; background: #f9e8e8; color: #85283a; }
@@ -524,9 +545,21 @@ html body .idea-picture-frame>.scene-frame>.scene-photo{width:100%!important;max
 .learning-practice-actions button { min-height: 42px; margin: 0; }
 .learning-practice-answer .answerbank { justify-content: flex-start; min-height: 3rem; }
 .learning-practice-answer .wordbank button, .learning-practice-answer .answerbank button { min-height: 42px; }
+.studio-picture-practice {
+  display: flex; align-items: end; flex-wrap: wrap; gap: .55rem .85rem;
+  padding: .7rem .85rem; margin-block: .7rem; background: #eff4eb; border: 1px solid var(--line); border-radius: .65rem;
+}
+.studio-picture-practice label { display: grid; gap: .22rem; min-width: 0; max-width: 100%; color: var(--muted); font-size: .88rem; }
+.studio-picture-practice select { min-height: 42px; max-width: 100%; }
+.studio-picture-practice > button { min-height: 42px; margin-block: 0; }
+.studio-picture-practice-current { margin-block-end: .7rem; }
+.learning-practice-dialog[data-picture-gallery] { width: min(94vw, 1040px); }
+.learning-practice-dialog[data-picture-gallery] .learning-practice-picture { max-width: 25rem; }
 @media (max-width: 620px) {
   .learning-practice-question.has-picture { grid-template-columns: minmax(0, 1fr); }
-  .learning-practice-picture { max-width: min(70vw, 14rem); }
+  .learning-practice-picture, .learning-practice-dialog[data-picture-gallery] .learning-practice-picture { max-width: min(70vw, 15rem); }
+  .studio-picture-practice label { flex: 1 1 9rem; }
+  .studio-picture-practice > button { flex: 1 0 100%; }
 }
 .purpose-chip { display: inline-block; color: #24463a; background: #e7f1e9; border-radius: 99px; padding: .22rem .7rem; font-size: .89rem; text-decoration: none; }
 .purpose-chip:hover { text-decoration: underline; }

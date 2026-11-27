@@ -37,6 +37,7 @@ function sceneStudioPage(){
    ${[['','كل الصور','All photos'],['speaking','مشاهد ممارسة التحدث','Speaking practice scenes'],['saved','صور لها حوارات محفوظة','Photos with saved dialogues']].map(([id,ar,en])=>
     `<option value="${id}" ${studioCollection===id?'selected':''}>${T(ar,en)}</option>`).join('')}</select></label>
   ${smartLibraryFilters()}<button type="button" class="secondary" id="scene-studio-suggest" onclick="surpriseScene()">${T('اقترح مشهدًا','Suggest a scene')}</button></div>
+  ${studioPicturePracticeControls()}
   <section id="studio-pattern-context"></section>
   <p id="scene-studio-count" role="status"></p>
   <div id="scene-studio-results" class="scene-studio-grid"></div><div class="buttonrow">
@@ -68,16 +69,18 @@ function setStudioMode(mode){
  render();
  $(`[data-studio-mode="${mode}"]`)?.focus();
 }
-function studioMatches(){
- const tokens=normalizeSceneQuery($('#scene-studio-query')?.value||'').trim().split(/\s+/).filter(Boolean);
- const topic=$('#scene-studio-topic')?.value, topics=new Map(sceneArchive?.topics.map(t=>[t.id,t])||[]);
+function studioMatches({all=false}={}){
+ const tokens=normalizeSceneQuery(all?'':$('#scene-studio-query')?.value||'').trim().split(/\s+/).filter(Boolean);
+ const topic=!all&&$('#scene-studio-topic')?.value, topics=new Map(sceneArchive?.topics.map(t=>[t.id,t])||[]);
+ const collection=all?'':studioCollection;
  const sentences=new Map([...(PILOT?.sentences||[]),...(REFERENCE_CORPUS?.sentences||[]),...(SUPPLEMENT?.sentences||[])].map(s=>[s.id,s]));
  const dialogues=new Map((PILOT?.dialogues||[]).map(dialogue=>[dialogue.id,dialogue]));
- const saved=new Set(studioCollection==='saved'?ideaArchive.map(entry=>scenePhotoKey(entry.sceneId)):[]);
- const inCollection=id=>studioCollection!=='saved'||saved.has(id);
- const originals=(studioCollection==='speaking'?[]:sceneArchive?.scenes||[]).flatMap(item=>{
+ const saved=new Set(collection==='saved'?ideaArchive.map(entry=>scenePhotoKey(entry.sceneId)):[]);
+ const inCollection=id=>collection!=='saved'||saved.has(id);
+ const inContext=row=>all||matchesStudioContext(row);
+ const originals=(collection==='speaking'?[]:sceneArchive?.scenes||[]).flatMap(item=>{
   const row=sentences.get(item.id);
-  if(!row||!inCollection(item.id)||!matchesStudioContext(row)||topic&&!item.topics.includes(topic))return [];
+  if(!row||!inCollection(item.id)||!inContext(row)||topic&&!item.topics.includes(topic))return [];
   if(!tokens.length)return [{item,row,level:sentenceLearningLevel(row)}];
   const labels=item.topics.flatMap(id=>[topics.get(id).ar,topics.get(id).en]);
   const words=studioVocabulary?.[item.id]?.words.filter(hasIdeaPoint).flatMap(word=>[word.en,word.ar])||[];
@@ -89,7 +92,7 @@ function studioMatches(){
   if(!inCollection(scene.id)||topic&&(topic==='conversation'?!location:scene.topic!==topic))return [];
   const dialogue=dialogues.get(location?.id);
   const row={id:scene.id,pattern_ids:scene.patterns.map(pattern=>pattern.id)};
-  if(!matchesStudioContext(row))return [];
+  if(!inContext(row))return [];
   if(!tokens.length)return [{item:scene,row,scene,level:sceneLearningLevel(scene)}];
   const text=normalizeSceneQuery([scene.id,scene.en,scene.ar,scene.sentenceEn,scene.sentenceAr,scene.taskEn,scene.taskAr,
    ...scene.patterns.flatMap(pattern=>[pattern.en,pattern.ar]),dialogue?.en,dialogue?.ar,
@@ -103,9 +106,70 @@ function studioMatches(){
   const dialogueRank=rank.get(dialogueSceneLocations.get(row.id)?.id)??Infinity;
   return firstScenes.get(row.id)??(firstScenes.size+dialogueRank);
  };
- return [...originals,...visualPractice].filter(row=>!studioLearningLevel||row.level===studioLearningLevel)
+ return [...originals,...visualPractice].filter(row=>all||!studioLearningLevel||row.level===studioLearningLevel)
   .sort((a,b)=>levels.indexOf(a.level)-levels.indexOf(b.level)||
-   (studioPattern?Number(Boolean(a.scene))-Number(Boolean(b.scene)):0)||priority(a)-priority(b));
+   (!all&&studioPattern?Number(Boolean(a.scene))-Number(Boolean(b.scene)):0)||priority(a)-priority(b));
+}
+
+const studioPracticeDefaults={scope:'filtered',difficulty:'study',order:'library'};
+const studioPracticeSeen=new Set();
+const studioPracticeProgress='patterns-studio-picture-progress';
+try{
+ const ids=JSON.parse(localStorage.getItem(studioPracticeProgress)||'[]');
+ if(Array.isArray(ids))for(const id of ids)if(typeof id==='string')studioPracticeSeen.add(id);
+}catch{}
+
+function studioPicturePracticeControls(){
+ const prefs=EPFilters.read('studio-picture-practice',studioPracticeDefaults);
+ const field=(name,ar,en,options)=>`<label>${T(ar,en)} <select name="${name}">${options.map(([value,ar,en])=>
+  `<option value="${value}" ${prefs[name]===value?'selected':''}>${T(ar,en)}</option>`).join('')}</select></label>`;
+ return `<div class="studio-picture-practice" id="studio-picture-practice" onchange="saveStudioPicturePractice()">
+  <button type="button" class="primary" data-studio-picture-practice onclick="openStudioPicturePractice(this)">${T('تمارين الصور','Photo exercises')}</button>
+  ${field('scope','مجموعة التمرين','Photo set',[
+   ['filtered','الصور المطابقة للفلاتر','Photos matching the filters'],['all','كل صور المكتبة','All library photos']])}
+  ${field('difficulty','الصعوبة','Difficulty',[
+   ['study','أساسي · عبارات متمايزة','Standard · Distinct sentences'],['challenge','تحدٍّ · عبارات متقاربة','Challenge · Similar sentences']])}
+  ${field('order','ترتيب الصور','Photo order',[
+   ['library','ترتيب المكتبة','Library order'],['shuffle','عشوائي','Shuffle']])}</div>`;
+}
+
+function saveStudioPicturePractice(){
+ const fields=$('#studio-picture-practice')?.querySelectorAll('select')||[];
+ if(fields.length)EPFilters.save('studio-picture-practice',Object.fromEntries([...fields].map(field=>[field.name,field.value])));
+}
+
+function studioPracticeRow({item,row,scene,level},dialogues){
+ const base={practiceTopics:item.topics||[scene?.topic],practicePatterns:smartSentencePatterns(row),practiceLevel:level};
+ if(!scene)return {...row,...base,practiceHint:item.description,practiceHintAr:item.descriptionAr};
+ const location=dialogueSceneLocations.get(scene.id),dialogue=dialogues.get(location?.id);
+ const line=dialogue?.lines[location?.turn];
+ const focus=line&&EPEnglish.sameSpeech(line.en,scene.sentenceEn)?line.focus??line.patterns.flatMap(id=>
+  EPTeaching.indices(line.en,dialogueAnchors[id])):[];
+ const title=dialogueCategories[dialogue?.category];
+ return {...base,id:scene.id,photo:scene.path,en:scene.sentenceEn,ar:scene.sentenceAr,
+  practiceTopics:[...base.practiceTopics,...(dialogue?.category?[dialogue.category]:[])],practiceDialogue:location?.id,
+  practiceFocus:focus,practiceAlternates:scene.patterns.map(pattern=>pattern.en).filter(Boolean),
+  practiceActions:scene.words.filter(word=>word.kind==='action').map(word=>word.en),
+  practiceHint:dialogue?scene.taskEn||title?.[1]:'',practiceHintAr:dialogue?scene.taskAr||title?.[0]:''};
+}
+
+async function openStudioPicturePractice(trigger,startId){
+ await Promise.allSettled([archiveReady,pilotReady,ideaLibraryReady,referenceDataReady,supplementReady,dialogueArchiveReady]);
+ if(page!=='scene-studio'||studioMode!=='photos'||startId&&studioActiveId!==startId)return;
+ if(!trigger.isConnected)trigger=$(startId?'[data-studio-practice-scene]':'[data-studio-picture-practice]');
+ const prefs=EPFilters.read('studio-picture-practice',studioPracticeDefaults);
+ const dialogues=new Map((PILOT?.dialogues||[]).map(dialogue=>[dialogue.id,dialogue]));
+ const all=studioMatches({all:true}).map(entry=>studioPracticeRow(entry,dialogues));
+ const photos=new Map(all.map(row=>[row.id,row]));
+ const rows=prefs.scope==='all'?all:studioMatches().map(({row})=>photos.get(row.id)).filter(Boolean);
+ if(startId&&!rows.some(row=>row.id===startId)&&photos.has(startId))rows.unshift(photos.get(startId));
+ if(!rows.length){toast(T('لا توجد صور مطابقة للفلاتر الحالية.','No photos match the current filters.'));return}
+ EPPractice.open('pictures',rows,{
+  gallery:{startId,challenge:prefs.difficulty==='challenge',shuffle:prefs.order==='shuffle'},
+  alternatives:all,seen:studioPracticeSeen,trigger,
+  exitLabel:T('العودة إلى مكتبة الصور','Back to the photo library'),onStart:stopSpeech,
+  onCorrect(){try{localStorage.setItem(studioPracticeProgress,JSON.stringify([...studioPracticeSeen]))}catch{}}
+ });
 }
 function setStudioLearningLevel(level){
  studioLearningLevel=level;

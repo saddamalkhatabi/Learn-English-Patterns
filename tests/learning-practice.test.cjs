@@ -1,7 +1,7 @@
 const test=require('node:test');
 const assert=require('node:assert/strict');
 const fs=require('node:fs');
-const {pictureKey,distinctRows,pictureChoices,nextRows,wordBank,wordOrderMatches}=require('../public/learning-practice.js');
+const {pictureKey,distinctRows,pictureChoices,pictureFeatures,galleryChoices,nextRows,wordBank,wordOrderMatches}=require('../public/learning-practice.js');
 const {studyPictures}=require('../public/song-follow.js');
 
 test('picture rounds use distinct photos and only schedule unpractised target sentences',()=>{
@@ -19,6 +19,25 @@ test('picture rounds use distinct photos and only schedule unpractised target se
  assert.equal(new Set(choices.map(pictureKey)).size,3);
  assert(choices.includes(rows[0]));
  assert.deepEqual(nextRows(rows,new Set(['a','b']),2).map(row=>row.id),['c','d']);
+});
+
+test('gallery challenge uses related scenes and rejects alternative captions for the same picture',()=>{
+ const photo=(id,en,ar,topic,extra={})=>({id,en,ar,photo:id+'.webp',practiceTopics:[topic],practiceLevel:'A2',...extra});
+ const target=photo('a','The customer is paying for bread.','الزبون يدفع ثمن الخبز.','shopping',{
+  practiceAlternates:['The customer is buying bread.'],practicePatterns:[1]});
+ const duplicate=photo('another-scene',target.en,target.ar,'shopping');
+ const accepted=photo('alternate','The customer is buying bread.','يشتري الزبون الخبز.','shopping');
+ const paraphrase=photo('paraphrase','The shopper pays for bread.',target.ar,'shopping');
+ const vague=photo('vague','The customer has bread.','لدى الزبون خبز.','shopping',{practicePatterns:[1]});
+ const close=[['tea','The customer is paying for tea.'],['fruit','The customer is paying for fruit.'],
+  ['coffee','The customer is paying for coffee.']].map(([id,en])=>photo(id,en,'يدفع ثمن '+id,'shopping',{practicePatterns:[1]}));
+ const unrelated=[photo('bus','The driver has started the bus.','شغل السائق الحافلة.','travel')];
+ const rows=[target,duplicate,accepted,paraphrase,vague,...close,...unrelated];
+ assert(distinctRows(rows,'pictures',{repeatText:true}).includes(duplicate));
+ const features=new Map(rows.map(row=>[row,pictureFeatures(row)]));
+ const choices=galleryChoices(target,features,true);
+ assert.deepEqual(new Set(choices),new Set([target,...close]));
+ assert.equal(galleryChoices(target,features,false).length,3);
 });
 
 test('sentence assembly accepts identical words in either slot without duplicating a tile',()=>{

@@ -81,7 +81,7 @@ async function openSmartScene(id,focus=true){
  const location=dialogueSceneLocations.get(id);
  const dialogue=location?PILOT?.dialogues.find(item=>item.id===location.id):null;
  const line=dialogue?.lines[location?.turn];
- host.innerHTML=back+`<article class="panel studio-exercise">
+ host.innerHTML=back+`<button type="button" class="secondary studio-picture-practice-current" data-studio-practice-scene="${H(id)}" onclick="openStudioPicturePractice(this,this.dataset.studioPracticeScene)">${T('تمارين الصور من هذا المشهد','Start photo exercises here')}</button><article class="panel studio-exercise">
   <div id="idea-viewer-home">${crop||practice?ideaViewer(studioWordScene):`<p>${T('لم تُضف صورة لهذه الجملة بعد.','This sentence has no scene yet.')}</p>`}</div>
   <div><section class="studio-original"><h2 tabindex="-1">${practice?H(T(practice.ar,practice.en)):T('الجملة الأساسية للصورة','The photo’s original sentence')}</h2>
    ${practice?`<p lang="en" dir="ltr">${line?dialogueWords(line):H(practice.sentenceEn)}</p>${EP.ar(line?.ar||practice.sentenceAr)}
